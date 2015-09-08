@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="suqv" modelUID="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" version="-1" />
+    </dependencies>
+    <rename id="suqv.6720495385597071406" type="CONCEPT" from="Layout_Node" to="Layout_Box" />
+  </StructureModification>
+</history>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="nnej" modelUID="r:41c447ce-0fca-4a98-ad9f-dc62c992880f(de.slisson.mps.tables.demolang.structure)" version="-1" />
+    </dependencies>
+    <rename id="nnej.1397920687865838792" type="CHILD" from="exprected" to="expected" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="nnej" modelUID="r:41c447ce-0fca-4a98-ad9f-dc62c992880f(de.slisson.mps.tables.demolang.structure)" version="0" />
+    </dependencies>
+    <rename id="nnej.1325130842798130132" type="PROPERTY" from="decription" to="description" />
+  </StructureModification>
+</history>
+

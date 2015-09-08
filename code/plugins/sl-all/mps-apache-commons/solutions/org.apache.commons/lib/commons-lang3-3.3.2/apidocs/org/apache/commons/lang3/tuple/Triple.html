@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Triple (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Triple (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Triple.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/tuple/Triple.html" target="_top">Frames</a></li>
+<li><a href="Triple.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3.tuple</div>
+<h2 title="Class Triple" class="title">Class Triple&lt;L,M,R&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.tuple.Triple&lt;L,M,R&gt;</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>L</code> - the left element type</dd><dd><code>M</code> - the middle element type</dd><dd><code>R</code> - the right element type</dd></dl>
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;L,M,R&gt;&gt;</dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../org/apache/commons/lang3/tuple/ImmutableTriple.html" title="class in org.apache.commons.lang3.tuple">ImmutableTriple</a>, <a href="../../../../../org/apache/commons/lang3/tuple/MutableTriple.html" title="class in org.apache.commons.lang3.tuple">MutableTriple</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">Triple&lt;L,M,R&gt;</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;L,M,R&gt;&gt;, <a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block"><p>A triple consisting of three elements.</p>
+
+ <p>This class is an abstract implementation defining the basic API.
+ It refers to the elements as 'left', 'middle' and 'right'.</p>
+
+ <p>Subclass implementations may be mutable or immutable.
+ However, there is no restriction on the type of the stored objects that may be stored.
+ If mutable objects are stored in the triple, then the triple itself effectively becomes mutable.</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: Triple.java 1557584 2014-01-12 18:26:49Z britter $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.commons.lang3.tuple.Triple">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#Triple()">Triple</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#compareTo(org.apache.commons.lang3.tuple.Triple)">compareTo</a></strong>(<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">L</a>,<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">M</a>,<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">R</a>&gt;&nbsp;other)</code>
+<div class="block">Compares the triple based on the left element, followed by the middle element,
+ finally the right element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Compares this triple to another based on the three elements.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">L</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#getLeft()">getLeft</a></strong>()</code>
+<div class="block">Gets the left element from this triple.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">M</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#getMiddle()">getMiddle</a></strong>()</code>
+<div class="block">Gets the middle element from this triple.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">R</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#getRight()">getRight</a></strong>()</code>
+<div class="block">Gets the right element from this triple.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Returns a suitable hash code.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;L,M,R&gt;&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;L,M,R&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#of(L, M, R)">of</a></strong>(L&nbsp;left,
+  M&nbsp;middle,
+  R&nbsp;right)</code>
+<div class="block">Obtains an immutable triple of from three objects inferring the generic types.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#toString()">toString</a></strong>()</code>
+<div class="block">Returns a String representation of this triple using the format <code>($left,$middle,$right)</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/Triple.html#toString(java.lang.String)">toString</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format)</code>
+<div class="block">Formats the receiver using the given format.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Triple()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Triple</h4>
+<pre>public&nbsp;Triple()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="of(java.lang.Object,java.lang.Object,java.lang.Object)">
+<!--   -->
+</a><a name="of(L, M, R)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre>public static&nbsp;&lt;L,M,R&gt;&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;L,M,R&gt;&nbsp;of(L&nbsp;left,
+                       M&nbsp;middle,
+                       R&nbsp;right)</pre>
+<div class="block"><p>Obtains an immutable triple of from three objects inferring the generic types.</p>
+
+ <p>This factory allows the triple to be created using inference to
+ obtain the generic types.</p></div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>L</code> - the left element type</dd><dd><code>M</code> - the middle element type</dd><dd><code>R</code> - the right element type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>left</code> - the left element, may be null</dd><dd><code>middle</code> - the middle element, may be null</dd><dd><code>right</code> - the right element, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a triple formed from the three parameters, not null</dd></dl>
+</li>
+</ul>
+<a name="getLeft()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLeft</h4>
+<pre>public abstract&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">L</a>&nbsp;getLeft()</pre>
+<div class="block"><p>Gets the left element from this triple.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the left element, may be null</dd></dl>
+</li>
+</ul>
+<a name="getMiddle()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMiddle</h4>
+<pre>public abstract&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">M</a>&nbsp;getMiddle()</pre>
+<div class="block"><p>Gets the middle element from this triple.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the middle element, may be null</dd></dl>
+</li>
+</ul>
+<a name="getRight()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRight</h4>
+<pre>public abstract&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">R</a>&nbsp;getRight()</pre>
+<div class="block"><p>Gets the right element from this triple.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the right element, may be null</dd></dl>
+</li>
+</ul>
+<a name="compareTo(org.apache.commons.lang3.tuple.Triple)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compareTo</h4>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">L</a>,<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">M</a>,<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">R</a>&gt;&nbsp;other)</pre>
+<div class="block"><p>Compares the triple based on the left element, followed by the middle element,
+ finally the right element.
+ The types must be <code>Comparable</code>.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="class in org.apache.commons.lang3.tuple">Triple</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">L</a>,<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">M</a>,<a href="../../../../../org/apache/commons/lang3/tuple/Triple.html" title="type parameter in Triple">R</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the other triple, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>negative if this is less, zero if equal, positive if greater</dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block"><p>Compares this triple to another based on the three elements.</p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - the object to compare to, null returns false</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the elements of the triple are equal</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block"><p>Returns a suitable hash code.</p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the hash code</dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block"><p>Returns a String representation of this triple using the format <code>($left,$middle,$right)</code>.</p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a string describing this object, not null</dd></dl>
+</li>
+</ul>
+<a name="toString(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format)</pre>
+<div class="block"><p>Formats the receiver using the given format.</p>
+
+ <p>This uses <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Formattable.html?is-external=true" title="class or interface in java.util"><code>Formattable</code></a> to perform the formatting. Three variables may
+ be used to embed the left and right elements. Use <code>%1$s</code> for the left
+ element, <code>%2$s</code> for the middle and <code>%3$s</code> for the right element.
+ The default format used by <code>toString()</code> is <code>(%1$s,%2$s,%3$s)</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>format</code> - the format string, optionally containing <code>%1$s</code>, <code>%2$s</code> and <code>%3$s</code>, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted string, not null</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Triple.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/tuple/Triple.html" target="_top">Frames</a></li>
+<li><a href="Triple.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

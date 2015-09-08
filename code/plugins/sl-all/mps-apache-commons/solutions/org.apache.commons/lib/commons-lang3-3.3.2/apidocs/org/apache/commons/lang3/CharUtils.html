@@ -1,0 +1,938 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>CharUtils (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CharUtils (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CharUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/commons/lang3/CharSetUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/commons/lang3/ClassPathUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/commons/lang3/CharUtils.html" target="_top">Frames</a></li>
+<li><a href="CharUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3</div>
+<h2 title="Class CharUtils" class="title">Class CharUtils</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.CharUtils</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">CharUtils</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><p>Operations on char primitives and Character objects.</p>
+
+ <p>This class tries to handle <code>null</code> input gracefully.
+ An exception will not be thrown for a <code>null</code> input.
+ Each method documents its behaviour in more detail.</p>
+ 
+ <p>#ThreadSafe#</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: CharUtils.java 1531257 2013-10-11 11:25:28Z britter $</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static char</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#CR">CR</a></strong></code>
+<div class="block"><code></code> carriage return CR ('\r').</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static char</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#LF">LF</a></strong></code>
+<div class="block"><code></code> linefeed LF ('\n').</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#CharUtils()">CharUtils</a></strong>()</code>
+<div class="block"><code>CharUtils</code> instances should NOT be constructed in standard programming.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAscii(char)">isAscii</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiAlpha(char)">isAsciiAlpha</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit alphabetic.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiAlphaLower(char)">isAsciiAlphaLower</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit alphabetic lower case.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiAlphanumeric(char)">isAsciiAlphanumeric</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit numeric.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiAlphaUpper(char)">isAsciiAlphaUpper</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit alphabetic upper case.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiControl(char)">isAsciiControl</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit control.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiNumeric(char)">isAsciiNumeric</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit numeric.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#isAsciiPrintable(char)">isAsciiPrintable</a></strong>(char&nbsp;ch)</code>
+<div class="block">Checks whether the character is ASCII 7 bit printable.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static char</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toChar(java.lang.Character)">toChar</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</code>
+<div class="block">Converts the Character to a char throwing an exception for <code>null</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static char</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toChar(java.lang.Character, char)">toChar</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch,
+      char&nbsp;defaultValue)</code>
+<div class="block">Converts the Character to a char handling <code>null</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static char</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toChar(java.lang.String)">toChar</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Converts the String to a char using the first character, throwing
+ an exception on empty Strings.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static char</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toChar(java.lang.String, char)">toChar</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+      char&nbsp;defaultValue)</code>
+<div class="block">Converts the String to a char using the first character, defaulting
+ the value on empty Strings.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toCharacterObject(char)">toCharacterObject</a></strong>(char&nbsp;ch)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>Java 5 introduced <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true#valueOf(char)" title="class or interface in java.lang"><code>Character.valueOf(char)</code></a> which caches chars 0 through 127.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toCharacterObject(java.lang.String)">toCharacterObject</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Converts the String to a Character using the first character, returning
+ null for empty Strings.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toIntValue(char)">toIntValue</a></strong>(char&nbsp;ch)</code>
+<div class="block">Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toIntValue(java.lang.Character)">toIntValue</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</code>
+<div class="block">Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toIntValue(java.lang.Character, int)">toIntValue</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch,
+          int&nbsp;defaultValue)</code>
+<div class="block">Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toIntValue(char, int)">toIntValue</a></strong>(char&nbsp;ch,
+          int&nbsp;defaultValue)</code>
+<div class="block">Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toString(char)">toString</a></strong>(char&nbsp;ch)</code>
+<div class="block">Converts the character to a String that contains the one character.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#toString(java.lang.Character)">toString</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</code>
+<div class="block">Converts the character to a String that contains the one character.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#unicodeEscaped(char)">unicodeEscaped</a></strong>(char&nbsp;ch)</code>
+<div class="block">Converts the string to the Unicode format ' '.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/CharUtils.html#unicodeEscaped(java.lang.Character)">unicodeEscaped</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</code>
+<div class="block">Converts the string to the Unicode format ' '.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="LF">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LF</h4>
+<pre>public static final&nbsp;char LF</pre>
+<div class="block"><code></code> linefeed LF ('\n').</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.6">JLF: Escape Sequences
+      for Character and String Literals</a>, 
+<a href="../../../../constant-values.html#org.apache.commons.lang3.CharUtils.LF">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="CR">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CR</h4>
+<pre>public static final&nbsp;char CR</pre>
+<div class="block"><code></code> carriage return CR ('\r').</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.6">JLF: Escape Sequences
+      for Character and String Literals</a>, 
+<a href="../../../../constant-values.html#org.apache.commons.lang3.CharUtils.CR">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="CharUtils()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CharUtils</h4>
+<pre>public&nbsp;CharUtils()</pre>
+<div class="block"><p><code>CharUtils</code> instances should NOT be constructed in standard programming.
+ Instead, the class should be used as <code>CharUtils.toString('c');</code>.</p>
+
+ <p>This constructor is public to permit tools that require a JavaBean instance
+ to operate.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="toCharacterObject(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toCharacterObject</h4>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;toCharacterObject(char&nbsp;ch)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Java 5 introduced <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true#valueOf(char)" title="class or interface in java.lang"><code>Character.valueOf(char)</code></a> which caches chars 0 through 127.</i></div>
+<div class="block"><p>Converts the character to a Character.</p>
+ 
+ <p>For ASCII 7 bit characters, this uses a cache that will return the
+ same Character object each time.</p>
+
+ <pre>
+   CharUtils.toCharacterObject(' ')  = ' '
+   CharUtils.toCharacterObject('A')  = 'A'
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a Character of the specified character</dd></dl>
+</li>
+</ul>
+<a name="toCharacterObject(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toCharacterObject</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;toCharacterObject(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Converts the String to a Character using the first character, returning
+ null for empty Strings.</p>
+ 
+ <p>For ASCII 7 bit characters, this uses a cache that will return the
+ same Character object each time.</p>
+ 
+ <pre>
+   CharUtils.toCharacterObject(null) = null
+   CharUtils.toCharacterObject("")   = null
+   CharUtils.toCharacterObject("A")  = 'A'
+   CharUtils.toCharacterObject("BA") = 'B'
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the Character value of the first letter of the String</dd></dl>
+</li>
+</ul>
+<a name="toChar(java.lang.Character)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toChar</h4>
+<pre>public static&nbsp;char&nbsp;toChar(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</pre>
+<div class="block"><p>Converts the Character to a char throwing an exception for <code>null</code>.</p>
+ 
+ <pre>
+   CharUtils.toChar(' ')  = ' '
+   CharUtils.toChar('A')  = 'A'
+   CharUtils.toChar(null) throws IllegalArgumentException
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the char value of the Character</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the Character is null</dd></dl>
+</li>
+</ul>
+<a name="toChar(java.lang.Character, char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toChar</h4>
+<pre>public static&nbsp;char&nbsp;toChar(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch,
+          char&nbsp;defaultValue)</pre>
+<div class="block"><p>Converts the Character to a char handling <code>null</code>.</p>
+ 
+ <pre>
+   CharUtils.toChar(null, 'X') = 'X'
+   CharUtils.toChar(' ', 'X')  = ' '
+   CharUtils.toChar('A', 'X')  = 'A'
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd><dd><code>defaultValue</code> - the value to use if the  Character is null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the char value of the Character or the default if null</dd></dl>
+</li>
+</ul>
+<a name="toChar(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toChar</h4>
+<pre>public static&nbsp;char&nbsp;toChar(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Converts the String to a char using the first character, throwing
+ an exception on empty Strings.</p>
+ 
+ <pre>
+   CharUtils.toChar("A")  = 'A'
+   CharUtils.toChar("BA") = 'B'
+   CharUtils.toChar(null) throws IllegalArgumentException
+   CharUtils.toChar("")   throws IllegalArgumentException
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the char value of the first letter of the String</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the String is empty</dd></dl>
+</li>
+</ul>
+<a name="toChar(java.lang.String, char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toChar</h4>
+<pre>public static&nbsp;char&nbsp;toChar(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+          char&nbsp;defaultValue)</pre>
+<div class="block"><p>Converts the String to a char using the first character, defaulting
+ the value on empty Strings.</p>
+ 
+ <pre>
+   CharUtils.toChar(null, 'X') = 'X'
+   CharUtils.toChar("", 'X')   = 'X'
+   CharUtils.toChar("A", 'X')  = 'A'
+   CharUtils.toChar("BA", 'X') = 'B'
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the character to convert</dd><dd><code>defaultValue</code> - the value to use if the  Character is null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the char value of the first letter of the String or the default if null</dd></dl>
+</li>
+</ul>
+<a name="toIntValue(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toIntValue</h4>
+<pre>public static&nbsp;int&nbsp;toIntValue(char&nbsp;ch)</pre>
+<div class="block"><p>Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</p>
+ 
+ <p>This method coverts the char '1' to the int 1 and so on.</p>
+
+ <pre>
+   CharUtils.toIntValue('3')  = 3
+   CharUtils.toIntValue('A')  throws IllegalArgumentException
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the int value of the character</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the character is not ASCII numeric</dd></dl>
+</li>
+</ul>
+<a name="toIntValue(char, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toIntValue</h4>
+<pre>public static&nbsp;int&nbsp;toIntValue(char&nbsp;ch,
+             int&nbsp;defaultValue)</pre>
+<div class="block"><p>Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</p>
+ 
+ <p>This method coverts the char '1' to the int 1 and so on.</p>
+
+ <pre>
+   CharUtils.toIntValue('3', -1)  = 3
+   CharUtils.toIntValue('A', -1)  = -1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd><dd><code>defaultValue</code> - the default value to use if the character is not numeric</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the int value of the character</dd></dl>
+</li>
+</ul>
+<a name="toIntValue(java.lang.Character)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toIntValue</h4>
+<pre>public static&nbsp;int&nbsp;toIntValue(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</pre>
+<div class="block"><p>Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</p>
+ 
+ <p>This method coverts the char '1' to the int 1 and so on.</p>
+
+ <pre>
+   CharUtils.toIntValue('3')  = 3
+   CharUtils.toIntValue(null) throws IllegalArgumentException
+   CharUtils.toIntValue('A')  throws IllegalArgumentException
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the int value of the character</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the Character is not ASCII numeric or is null</dd></dl>
+</li>
+</ul>
+<a name="toIntValue(java.lang.Character, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toIntValue</h4>
+<pre>public static&nbsp;int&nbsp;toIntValue(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch,
+             int&nbsp;defaultValue)</pre>
+<div class="block"><p>Converts the character to the Integer it represents, throwing an
+ exception if the character is not numeric.</p>
+ 
+ <p>This method coverts the char '1' to the int 1 and so on.</p>
+
+ <pre>
+   CharUtils.toIntValue(null, -1) = -1
+   CharUtils.toIntValue('3', -1)  = 3
+   CharUtils.toIntValue('A', -1)  = -1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd><dd><code>defaultValue</code> - the default value to use if the character is not numeric</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the int value of the character</dd></dl>
+</li>
+</ul>
+<a name="toString(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString(char&nbsp;ch)</pre>
+<div class="block"><p>Converts the character to a String that contains the one character.</p>
+ 
+ <p>For ASCII 7 bit characters, this uses a cache that will return the
+ same String object each time.</p>
+
+ <pre>
+   CharUtils.toString(' ')  = " "
+   CharUtils.toString('A')  = "A"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a String containing the one specified character</dd></dl>
+</li>
+</ul>
+<a name="toString(java.lang.Character)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</pre>
+<div class="block"><p>Converts the character to a String that contains the one character.</p>
+ 
+ <p>For ASCII 7 bit characters, this uses a cache that will return the
+ same String object each time.</p>
+ 
+ <p>If <code>null</code> is passed in, <code>null</code> will be returned.</p>
+
+ <pre>
+   CharUtils.toString(null) = null
+   CharUtils.toString(' ')  = " "
+   CharUtils.toString('A')  = "A"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a String containing the one specified character</dd></dl>
+</li>
+</ul>
+<a name="unicodeEscaped(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unicodeEscaped</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unicodeEscaped(char&nbsp;ch)</pre>
+<div class="block"><p>Converts the string to the Unicode format ' '.</p>
+ 
+ <p>This format is the Java source code format.</p>
+
+ <pre>
+   CharUtils.unicodeEscaped(' ') = " "
+   CharUtils.unicodeEscaped('A') = "A"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the escaped Unicode string</dd></dl>
+</li>
+</ul>
+<a name="unicodeEscaped(java.lang.Character)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unicodeEscaped</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unicodeEscaped(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html?is-external=true" title="class or interface in java.lang">Character</a>&nbsp;ch)</pre>
+<div class="block"><p>Converts the string to the Unicode format ' '.</p>
+ 
+ <p>This format is the Java source code format.</p>
+ 
+ <p>If <code>null</code> is passed in, <code>null</code> will be returned.</p>
+
+ <pre>
+   CharUtils.unicodeEscaped(null) = null
+   CharUtils.unicodeEscaped(' ')  = " "
+   CharUtils.unicodeEscaped('A')  = "A"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the escaped Unicode string, null if null input</dd></dl>
+</li>
+</ul>
+<a name="isAscii(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAscii</h4>
+<pre>public static&nbsp;boolean&nbsp;isAscii(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit.</p>
+
+ <pre>
+   CharUtils.isAscii('a')  = true
+   CharUtils.isAscii('A')  = true
+   CharUtils.isAscii('3')  = true
+   CharUtils.isAscii('-')  = true
+   CharUtils.isAscii('\n') = true
+   CharUtils.isAscii('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if less than 128</dd></dl>
+</li>
+</ul>
+<a name="isAsciiPrintable(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsciiPrintable</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiPrintable(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit printable.</p>
+
+ <pre>
+   CharUtils.isAsciiPrintable('a')  = true
+   CharUtils.isAsciiPrintable('A')  = true
+   CharUtils.isAsciiPrintable('3')  = true
+   CharUtils.isAsciiPrintable('-')  = true
+   CharUtils.isAsciiPrintable('\n') = false
+   CharUtils.isAsciiPrintable('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if between 32 and 126 inclusive</dd></dl>
+</li>
+</ul>
+<a name="isAsciiControl(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsciiControl</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiControl(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit control.</p>
+
+ <pre>
+   CharUtils.isAsciiControl('a')  = false
+   CharUtils.isAsciiControl('A')  = false
+   CharUtils.isAsciiControl('3')  = false
+   CharUtils.isAsciiControl('-')  = false
+   CharUtils.isAsciiControl('\n') = true
+   CharUtils.isAsciiControl('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if less than 32 or equals 127</dd></dl>
+</li>
+</ul>
+<a name="isAsciiAlpha(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsciiAlpha</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiAlpha(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit alphabetic.</p>
+
+ <pre>
+   CharUtils.isAsciiAlpha('a')  = true
+   CharUtils.isAsciiAlpha('A')  = true
+   CharUtils.isAsciiAlpha('3')  = false
+   CharUtils.isAsciiAlpha('-')  = false
+   CharUtils.isAsciiAlpha('\n') = false
+   CharUtils.isAsciiAlpha('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if between 65 and 90 or 97 and 122 inclusive</dd></dl>
+</li>
+</ul>
+<a name="isAsciiAlphaUpper(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsciiAlphaUpper</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiAlphaUpper(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit alphabetic upper case.</p>
+
+ <pre>
+   CharUtils.isAsciiAlphaUpper('a')  = false
+   CharUtils.isAsciiAlphaUpper('A')  = true
+   CharUtils.isAsciiAlphaUpper('3')  = false
+   CharUtils.isAsciiAlphaUpper('-')  = false
+   CharUtils.isAsciiAlphaUpper('\n') = false
+   CharUtils.isAsciiAlphaUpper('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if between 65 and 90 inclusive</dd></dl>
+</li>
+</ul>
+<a name="isAsciiAlphaLower(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsciiAlphaLower</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiAlphaLower(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit alphabetic lower case.</p>
+
+ <pre>
+   CharUtils.isAsciiAlphaLower('a')  = true
+   CharUtils.isAsciiAlphaLower('A')  = false
+   CharUtils.isAsciiAlphaLower('3')  = false
+   CharUtils.isAsciiAlphaLower('-')  = false
+   CharUtils.isAsciiAlphaLower('\n') = false
+   CharUtils.isAsciiAlphaLower('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if between 97 and 122 inclusive</dd></dl>
+</li>
+</ul>
+<a name="isAsciiNumeric(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsciiNumeric</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiNumeric(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit numeric.</p>
+
+ <pre>
+   CharUtils.isAsciiNumeric('a')  = false
+   CharUtils.isAsciiNumeric('A')  = false
+   CharUtils.isAsciiNumeric('3')  = true
+   CharUtils.isAsciiNumeric('-')  = false
+   CharUtils.isAsciiNumeric('\n') = false
+   CharUtils.isAsciiNumeric('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if between 48 and 57 inclusive</dd></dl>
+</li>
+</ul>
+<a name="isAsciiAlphanumeric(char)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isAsciiAlphanumeric</h4>
+<pre>public static&nbsp;boolean&nbsp;isAsciiAlphanumeric(char&nbsp;ch)</pre>
+<div class="block"><p>Checks whether the character is ASCII 7 bit numeric.</p>
+
+ <pre>
+   CharUtils.isAsciiAlphanumeric('a')  = true
+   CharUtils.isAsciiAlphanumeric('A')  = true
+   CharUtils.isAsciiAlphanumeric('3')  = true
+   CharUtils.isAsciiAlphanumeric('-')  = false
+   CharUtils.isAsciiAlphanumeric('\n') = false
+   CharUtils.isAsciiAlphanumeric('&copy;') = false
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ch</code> - the character to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if between 48 and 57 or 65 and 90 or 97 and 122 inclusive</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CharUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/commons/lang3/CharSetUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/commons/lang3/ClassPathUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/commons/lang3/CharUtils.html" target="_top">Frames</a></li>
+<li><a href="CharUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

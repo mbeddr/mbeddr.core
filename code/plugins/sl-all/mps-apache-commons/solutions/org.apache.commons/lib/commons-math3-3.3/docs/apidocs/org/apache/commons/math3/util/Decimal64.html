@@ -1,0 +1,1996 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Decimal64 (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Decimal64 (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Decimal64.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/util/ContinuedFraction.html" title="class in org.apache.commons.math3.util"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/util/Decimal64Field.html" title="class in org.apache.commons.math3.util"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/util/Decimal64.html" target="_top">Frames</a></li>
+<li><a href="Decimal64.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.util</div>
+<h2 title="Class Decimal64" class="title">Class Decimal64</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">java.lang.Number</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.util.Decimal64</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;, <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;, <a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">Decimal64</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>
+implements <a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</pre>
+<div class="block">This class wraps a <code>double</code> value in an object. It is similar to the
+ standard class <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang"><code>Double</code></a>, while also implementing the
+ <a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3"><code>RealFieldElement</code></a> interface.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: Decimal64.java 1462423 2013-03-29 07:25:18Z luc $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.commons.math3.util.Decimal64">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#NAN">NAN</a></strong></code>
+<div class="block">The constant value of <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#NaN" title="class or interface in java.lang"><code>Double.NaN</code></a> as a <code>Decimal64</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#NEGATIVE_INFINITY">NEGATIVE_INFINITY</a></strong></code>
+<div class="block">The constant value of <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#NEGATIVE_INFINITY" title="class or interface in java.lang"><code>Double.NEGATIVE_INFINITY</code></a> as a
+ <code>Decimal64</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#ONE">ONE</a></strong></code>
+<div class="block">The constant value of <code>1d</code> as a <code>Decimal64</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#POSITIVE_INFINITY">POSITIVE_INFINITY</a></strong></code>
+<div class="block">The constant value of <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#POSITIVE_INFINITY" title="class or interface in java.lang"><code>Double.POSITIVE_INFINITY</code></a> as a
+ <code>Decimal64</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#ZERO">ZERO</a></strong></code>
+<div class="block">The constant value of <code>0d</code> as a <code>Decimal64</code>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#Decimal64(double)">Decimal64</a></strong>(double&nbsp;x)</code>
+<div class="block">Creates a new instance of this class.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#abs()">abs</a></strong>()</code>
+<div class="block">absolute value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#acos()">acos</a></strong>()</code>
+<div class="block">Arc cosine operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#acosh()">acosh</a></strong>()</code>
+<div class="block">Inverse hyperbolic cosine operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#add(org.apache.commons.math3.util.Decimal64)">add</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</code>
+<div class="block">Compute this + a.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#add(double)">add</a></strong>(double&nbsp;a)</code>
+<div class="block">'+' operator.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#asin()">asin</a></strong>()</code>
+<div class="block">Arc sine operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#asinh()">asinh</a></strong>()</code>
+<div class="block">Inverse hyperbolic sine operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#atan()">atan</a></strong>()</code>
+<div class="block">Arc tangent operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#atan2(org.apache.commons.math3.util.Decimal64)">atan2</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;x)</code>
+<div class="block">Two arguments arc tangent operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#atanh()">atanh</a></strong>()</code>
+<div class="block">Inverse hyperbolic  tangent operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#byteValue()">byteValue</a></strong>()</code>
+<div class="block">
+
+ The current implementation performs casting to a <code>byte</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#cbrt()">cbrt</a></strong>()</code>
+<div class="block">Cubic root.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#ceil()">ceil</a></strong>()</code>
+<div class="block">Get the smallest whole number larger than instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#compareTo(org.apache.commons.math3.util.Decimal64)">compareTo</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;o)</code>
+<div class="block">
+
+ The current implementation returns the same value as
+  <code>new Double(this.doubleValue()).compareTo(new
+ Double(o.doubleValue()))</code> </div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#copySign(org.apache.commons.math3.util.Decimal64)">copySign</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;sign)</code>
+<div class="block">Returns the instance with the sign of the argument.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#copySign(double)">copySign</a></strong>(double&nbsp;sign)</code>
+<div class="block">Returns the instance with the sign of the argument.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#cos()">cos</a></strong>()</code>
+<div class="block">Cosine operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#cosh()">cosh</a></strong>()</code>
+<div class="block">Hyperbolic cosine operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#divide(org.apache.commons.math3.util.Decimal64)">divide</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</code>
+<div class="block">Compute this &divide; a.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#divide(double)">divide</a></strong>(double&nbsp;a)</code>
+<div class="block">'&divide;' operator.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#doubleValue()">doubleValue</a></strong>()</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#exp()">exp</a></strong>()</code>
+<div class="block">Exponential.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#expm1()">expm1</a></strong>()</code>
+<div class="block">Exponential minus 1.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#floatValue()">floatValue</a></strong>()</code>
+<div class="block">
+
+ The current implementation performs casting to a <code>float</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#floor()">floor</a></strong>()</code>
+<div class="block">Get the largest whole number smaller than instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#getField()">getField</a></strong>()</code>
+<div class="block">Get the <a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3"><code>Field</code></a> to which the instance belongs.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#getReal()">getReal</a></strong>()</code>
+<div class="block">Get the real value of the number.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">
+
+ The current implementation returns the same value as
+ <code>new Double(this.doubleValue()).hashCode()</code></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#hypot(org.apache.commons.math3.util.Decimal64)">hypot</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;y)</code>
+<div class="block">Returns the hypotenuse of a triangle with sides <code>this</code> and <code>y</code>
+ - sqrt(<i>this</i><sup>2</sup>&nbsp;+<i>y</i><sup>2</sup>)<br/>
+ avoiding intermediate overflow or underflow.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#intValue()">intValue</a></strong>()</code>
+<div class="block">
+
+ The current implementation performs casting to a <code>int</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#isInfinite()">isInfinite</a></strong>()</code>
+<div class="block">Returns <code>true</code> if <code>this</code> double precision number is infinite
+ (<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#POSITIVE_INFINITY" title="class or interface in java.lang"><code>Double.POSITIVE_INFINITY</code></a> or <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#NEGATIVE_INFINITY" title="class or interface in java.lang"><code>Double.NEGATIVE_INFINITY</code></a>).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#isNaN()">isNaN</a></strong>()</code>
+<div class="block">Returns <code>true</code> if <code>this</code> double precision number is
+ Not-a-Number (<code>NaN</code>), false otherwise.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(org.apache.commons.math3.util.Decimal64[], org.apache.commons.math3.util.Decimal64[])">linearCombination</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>[]&nbsp;a,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>[]&nbsp;b)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64)">linearCombination</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64)">linearCombination</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a3,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64)">linearCombination</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a3,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a4,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b4)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(double[], org.apache.commons.math3.util.Decimal64[])">linearCombination</a></strong>(double[]&nbsp;a,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>[]&nbsp;b)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64)">linearCombination</a></strong>(double&nbsp;a1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                 double&nbsp;a2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64)">linearCombination</a></strong>(double&nbsp;a1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                 double&nbsp;a2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                 double&nbsp;a3,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#linearCombination(double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64)">linearCombination</a></strong>(double&nbsp;a1,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                 double&nbsp;a2,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                 double&nbsp;a3,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3,
+                 double&nbsp;a4,
+                 <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b4)</code>
+<div class="block">Compute a linear combination.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#log()">log</a></strong>()</code>
+<div class="block">Natural logarithm.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#log10()">log10</a></strong>()</code>
+<div class="block">Base 10 logarithm.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#log1p()">log1p</a></strong>()</code>
+<div class="block">Shifted natural logarithm.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#longValue()">longValue</a></strong>()</code>
+<div class="block">
+
+ The current implementation performs casting to a <code>long</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#multiply(org.apache.commons.math3.util.Decimal64)">multiply</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</code>
+<div class="block">Compute this &times; a.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#multiply(double)">multiply</a></strong>(double&nbsp;a)</code>
+<div class="block">'&times;' operator.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#multiply(int)">multiply</a></strong>(int&nbsp;n)</code>
+<div class="block">Compute n &times; this.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#negate()">negate</a></strong>()</code>
+<div class="block">Returns the additive inverse of <code>this</code> element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#pow(org.apache.commons.math3.util.Decimal64)">pow</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;e)</code>
+<div class="block">Power operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#pow(double)">pow</a></strong>(double&nbsp;p)</code>
+<div class="block">Power operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#pow(int)">pow</a></strong>(int&nbsp;n)</code>
+<div class="block">Integer power operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#reciprocal()">reciprocal</a></strong>()</code>
+<div class="block">Returns the multiplicative inverse of <code>this</code> element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#remainder(org.apache.commons.math3.util.Decimal64)">remainder</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</code>
+<div class="block">IEEE remainder operator.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#remainder(double)">remainder</a></strong>(double&nbsp;a)</code>
+<div class="block">IEEE remainder operator.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#rint()">rint</a></strong>()</code>
+<div class="block">Get the whole number that is the nearest to the instance, or the even one if x is exactly half way between two integers.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#rootN(int)">rootN</a></strong>(int&nbsp;n)</code>
+<div class="block">N<sup>th</sup> root.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#round()">round</a></strong>()</code>
+<div class="block">Get the closest long to instance value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#scalb(int)">scalb</a></strong>(int&nbsp;n)</code>
+<div class="block">Multiply the instance by a power of 2.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#shortValue()">shortValue</a></strong>()</code>
+<div class="block">
+
+ The current implementation performs casting to a <code>short</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#signum()">signum</a></strong>()</code>
+<div class="block">Compute the signum of the instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#sin()">sin</a></strong>()</code>
+<div class="block">Sine operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#sinh()">sinh</a></strong>()</code>
+<div class="block">Hyperbolic sine operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#sqrt()">sqrt</a></strong>()</code>
+<div class="block">Square root.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#subtract(org.apache.commons.math3.util.Decimal64)">subtract</a></strong>(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</code>
+<div class="block">Compute this - a.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#subtract(double)">subtract</a></strong>(double&nbsp;a)</code>
+<div class="block">'-' operator.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#tan()">tan</a></strong>()</code>
+<div class="block">Tangent operation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#tanh()">tanh</a></strong>()</code>
+<div class="block">Hyperbolic tangent operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/util/Decimal64.html#toString()">toString</a></strong>()</code>
+<div class="block">
+
+ The returned <code>String</code> is equal to
+ <code>Double.toString(this.doubleValue())</code></div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ZERO</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a> ZERO</pre>
+<div class="block">The constant value of <code>0d</code> as a <code>Decimal64</code>.</div>
+</li>
+</ul>
+<a name="ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ONE</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a> ONE</pre>
+<div class="block">The constant value of <code>1d</code> as a <code>Decimal64</code>.</div>
+</li>
+</ul>
+<a name="NEGATIVE_INFINITY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NEGATIVE_INFINITY</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a> NEGATIVE_INFINITY</pre>
+<div class="block">The constant value of <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#NEGATIVE_INFINITY" title="class or interface in java.lang"><code>Double.NEGATIVE_INFINITY</code></a> as a
+ <code>Decimal64</code>.</div>
+</li>
+</ul>
+<a name="POSITIVE_INFINITY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>POSITIVE_INFINITY</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a> POSITIVE_INFINITY</pre>
+<div class="block">The constant value of <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#POSITIVE_INFINITY" title="class or interface in java.lang"><code>Double.POSITIVE_INFINITY</code></a> as a
+ <code>Decimal64</code>.</div>
+</li>
+</ul>
+<a name="NAN">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NAN</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a> NAN</pre>
+<div class="block">The constant value of <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#NaN" title="class or interface in java.lang"><code>Double.NaN</code></a> as a <code>Decimal64</code>.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Decimal64(double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Decimal64</h4>
+<pre>public&nbsp;Decimal64(double&nbsp;x)</pre>
+<div class="block">Creates a new instance of this class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>x</code> - the primitive <code>double</code> value of the object to be created</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getField()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getField</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;&nbsp;getField()</pre>
+<div class="block">Get the <a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3"><code>Field</code></a> to which the instance belongs.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#getField()">getField</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3"><code>Field</code></a> to which the instance belongs</dd></dl>
+</li>
+</ul>
+<a name="add(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;add(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</pre>
+<div class="block">Compute this + a.
+
+ The current implementation strictly enforces
+ <code>this.add(a).equals(new Decimal64(this.doubleValue()
+ + a.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#add(T)">add</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - element to add</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new element representing this + a</dd></dl>
+</li>
+</ul>
+<a name="subtract(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;subtract(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</pre>
+<div class="block">Compute this - a.
+
+ The current implementation strictly enforces
+ <code>this.subtract(a).equals(new Decimal64(this.doubleValue()
+ - a.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#subtract(T)">subtract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - element to subtract</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new element representing this - a</dd></dl>
+</li>
+</ul>
+<a name="negate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>negate</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;negate()</pre>
+<div class="block">Returns the additive inverse of <code>this</code> element.
+
+ The current implementation strictly enforces
+ <code>this.negate().equals(new Decimal64(-this.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#negate()">negate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the opposite of <code>this</code>.</dd></dl>
+</li>
+</ul>
+<a name="multiply(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>multiply</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;multiply(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</pre>
+<div class="block">Compute this &times; a.
+
+ The current implementation strictly enforces
+ <code>this.multiply(a).equals(new Decimal64(this.doubleValue()
+ * a.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#multiply(T)">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - element to multiply</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new element representing this &times; a</dd></dl>
+</li>
+</ul>
+<a name="multiply(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>multiply</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;multiply(int&nbsp;n)</pre>
+<div class="block">Compute n &times; this. Multiplication by an integer number is defined
+ as the following sum
+ <center>
+ n &times; this = &sum;<sub>i=1</sub><sup>n</sup> this.
+ </center>
+
+ The current implementation strictly enforces
+ <code>this.multiply(n).equals(new Decimal64(n * this.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#multiply(int)">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>n</code> - Number of times <code>this</code> must be added to itself.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>A new element representing n &times; this.</dd></dl>
+</li>
+</ul>
+<a name="divide(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>divide</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;divide(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</pre>
+<div class="block">Compute this &divide; a.
+
+ The current implementation strictly enforces
+ <code>this.divide(a).equals(new Decimal64(this.doubleValue()
+ / a.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#divide(T)">divide</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - element to add</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new element representing this &divide; a</dd></dl>
+</li>
+</ul>
+<a name="reciprocal()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reciprocal</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;reciprocal()</pre>
+<div class="block">Returns the multiplicative inverse of <code>this</code> element.
+
+ The current implementation strictly enforces
+ <code>this.reciprocal().equals(new Decimal64(1.0
+ / this.doubleValue()))</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/FieldElement.html#reciprocal()">reciprocal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#reciprocal()">reciprocal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the inverse of <code>this</code>.</dd></dl>
+</li>
+</ul>
+<a name="byteValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>byteValue</h4>
+<pre>public&nbsp;byte&nbsp;byteValue()</pre>
+<div class="block">
+
+ The current implementation performs casting to a <code>byte</code>.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#byteValue()" title="class or interface in java.lang">byteValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="shortValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shortValue</h4>
+<pre>public&nbsp;short&nbsp;shortValue()</pre>
+<div class="block">
+
+ The current implementation performs casting to a <code>short</code>.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#shortValue()" title="class or interface in java.lang">shortValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="intValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>intValue</h4>
+<pre>public&nbsp;int&nbsp;intValue()</pre>
+<div class="block">
+
+ The current implementation performs casting to a <code>int</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#intValue()" title="class or interface in java.lang">intValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="longValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>longValue</h4>
+<pre>public&nbsp;long&nbsp;longValue()</pre>
+<div class="block">
+
+ The current implementation performs casting to a <code>long</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#longValue()" title="class or interface in java.lang">longValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="floatValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>floatValue</h4>
+<pre>public&nbsp;float&nbsp;floatValue()</pre>
+<div class="block">
+
+ The current implementation performs casting to a <code>float</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#floatValue()" title="class or interface in java.lang">floatValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="doubleValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doubleValue</h4>
+<pre>public&nbsp;double&nbsp;doubleValue()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#doubleValue()" title="class or interface in java.lang">doubleValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="compareTo(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compareTo</h4>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;o)</pre>
+<div class="block">
+
+ The current implementation returns the same value as
+ <center> <code>new Double(this.doubleValue()).compareTo(new
+ Double(o.doubleValue()))</code> </center></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#compareTo(java.lang.Double)" title="class or interface in java.lang"><code>Double.compareTo(Double)</code></a></dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">
+
+ The current implementation returns the same value as
+ <code>new Double(this.doubleValue()).hashCode()</code></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#hashCode()" title="class or interface in java.lang"><code>Double.hashCode()</code></a></dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">
+
+ The returned <code>String</code> is equal to
+ <code>Double.toString(this.doubleValue())</code></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#toString(double)" title="class or interface in java.lang"><code>Double.toString(double)</code></a></dd></dl>
+</li>
+</ul>
+<a name="isInfinite()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInfinite</h4>
+<pre>public&nbsp;boolean&nbsp;isInfinite()</pre>
+<div class="block">Returns <code>true</code> if <code>this</code> double precision number is infinite
+ (<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#POSITIVE_INFINITY" title="class or interface in java.lang"><code>Double.POSITIVE_INFINITY</code></a> or <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true#NEGATIVE_INFINITY" title="class or interface in java.lang"><code>Double.NEGATIVE_INFINITY</code></a>).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> if <code>this</code> number is infinite</dd></dl>
+</li>
+</ul>
+<a name="isNaN()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isNaN</h4>
+<pre>public&nbsp;boolean&nbsp;isNaN()</pre>
+<div class="block">Returns <code>true</code> if <code>this</code> double precision number is
+ Not-a-Number (<code>NaN</code>), false otherwise.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> if <code>this</code> is <code>NaN</code></dd></dl>
+</li>
+</ul>
+<a name="getReal()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReal</h4>
+<pre>public&nbsp;double&nbsp;getReal()</pre>
+<div class="block">Get the real value of the number.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#getReal()">getReal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>real value</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="add(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;add(double&nbsp;a)</pre>
+<div class="block">'+' operator.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#add(double)">add</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - right hand side parameter of the operator</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this+a</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="subtract(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;subtract(double&nbsp;a)</pre>
+<div class="block">'-' operator.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#subtract(double)">subtract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - right hand side parameter of the operator</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this-a</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="multiply(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>multiply</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;multiply(double&nbsp;a)</pre>
+<div class="block">'&times;' operator.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#multiply(double)">multiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - right hand side parameter of the operator</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this&times;a</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="divide(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>divide</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;divide(double&nbsp;a)</pre>
+<div class="block">'&divide;' operator.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#divide(double)">divide</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - right hand side parameter of the operator</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this&divides;a</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="remainder(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>remainder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;remainder(double&nbsp;a)</pre>
+<div class="block">IEEE remainder operator.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#remainder(double)">remainder</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - right hand side parameter of the operator</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this - n &times; a where n is the closest integer to this/a
+ (the even integer is chosen for n if this/a is halfway between two integers)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="remainder(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>remainder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;remainder(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a)</pre>
+<div class="block">IEEE remainder operator.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#remainder(T)">remainder</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - right hand side parameter of the operator</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this - n &times; a where n is the closest integer to this/a
+ (the even integer is chosen for n if this/a is halfway between two integers)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="abs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>abs</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;abs()</pre>
+<div class="block">absolute value.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#abs()">abs</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>abs(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="ceil()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ceil</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;ceil()</pre>
+<div class="block">Get the smallest whole number larger than instance.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#ceil()">ceil</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>ceil(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="floor()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>floor</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;floor()</pre>
+<div class="block">Get the largest whole number smaller than instance.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#floor()">floor</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>floor(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="rint()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rint</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;rint()</pre>
+<div class="block">Get the whole number that is the nearest to the instance, or the even one if x is exactly half way between two integers.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#rint()">rint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a double number r such that r is an integer r - 0.5 <= this <= r + 0.5</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="round()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>round</h4>
+<pre>public&nbsp;long&nbsp;round()</pre>
+<div class="block">Get the closest long to instance value.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#round()">round</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>closest long to <a href="../../../../../org/apache/commons/math3/RealFieldElement.html#getReal()"><code>RealFieldElement.getReal()</code></a></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="signum()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>signum</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;signum()</pre>
+<div class="block">Compute the signum of the instance.
+ The signum is -1 for negative numbers, +1 for positive numbers and 0 otherwise</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#signum()">signum</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>-1.0, -0.0, +0.0, +1.0 or NaN depending on sign of a</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="copySign(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copySign</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;copySign(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;sign)</pre>
+<div class="block">Returns the instance with the sign of the argument.
+ A NaN <code>sign</code> argument is treated as positive.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#copySign(T)">copySign</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>sign</code> - the sign for the returned value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the instance with the same sign as the <code>sign</code> argument</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="copySign(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copySign</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;copySign(double&nbsp;sign)</pre>
+<div class="block">Returns the instance with the sign of the argument.
+ A NaN <code>sign</code> argument is treated as positive.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#copySign(double)">copySign</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>sign</code> - the sign for the returned value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the instance with the same sign as the <code>sign</code> argument</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="scalb(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>scalb</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;scalb(int&nbsp;n)</pre>
+<div class="block">Multiply the instance by a power of 2.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#scalb(int)">scalb</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>n</code> - power of 2</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this &times; 2<sup>n</sup></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="hypot(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hypot</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;hypot(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;y)</pre>
+<div class="block">Returns the hypotenuse of a triangle with sides <code>this</code> and <code>y</code>
+ - sqrt(<i>this</i><sup>2</sup>&nbsp;+<i>y</i><sup>2</sup>)<br/>
+ avoiding intermediate overflow or underflow.
+
+ <ul>
+ <li> If either argument is infinite, then the result is positive infinity.</li>
+ <li> else, if either argument is NaN then the result is NaN.</li>
+ </ul></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#hypot(T)">hypot</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>y</code> - a value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>sqrt(<i>this</i><sup>2</sup>&nbsp;+<i>y</i><sup>2</sup>)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="sqrt()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sqrt</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;sqrt()</pre>
+<div class="block">Square root.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#sqrt()">sqrt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>square root of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="cbrt()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cbrt</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;cbrt()</pre>
+<div class="block">Cubic root.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#cbrt()">cbrt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>cubic root of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="rootN(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rootN</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;rootN(int&nbsp;n)</pre>
+<div class="block">N<sup>th</sup> root.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#rootN(int)">rootN</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>n</code> - order of the root</dd>
+<dt><span class="strong">Returns:</span></dt><dd>n<sup>th</sup> root of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="pow(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pow</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;pow(double&nbsp;p)</pre>
+<div class="block">Power operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#pow(double)">pow</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>p</code> - power to apply</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this<sup>p</sup></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="pow(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pow</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;pow(int&nbsp;n)</pre>
+<div class="block">Integer power operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#pow(int)">pow</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>n</code> - power to apply</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this<sup>n</sup></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="pow(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pow</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;pow(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;e)</pre>
+<div class="block">Power operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#pow(T)">pow</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>e</code> - exponent</dd>
+<dt><span class="strong">Returns:</span></dt><dd>this<sup>e</sup></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="exp()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>exp</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;exp()</pre>
+<div class="block">Exponential.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#exp()">exp</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>exponential of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="expm1()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>expm1</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;expm1()</pre>
+<div class="block">Exponential minus 1.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#expm1()">expm1</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>exponential minus one of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="log()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;log()</pre>
+<div class="block">Natural logarithm.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#log()">log</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>logarithm of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="log1p()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log1p</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;log1p()</pre>
+<div class="block">Shifted natural logarithm.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#log1p()">log1p</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>logarithm of one plus the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="log10()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log10</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;log10()</pre>
+<div class="block">Base 10 logarithm.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>base 10 logarithm of the instance</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="cos()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cos</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;cos()</pre>
+<div class="block">Cosine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#cos()">cos</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>cos(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="sin()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sin</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;sin()</pre>
+<div class="block">Sine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#sin()">sin</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>sin(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="tan()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tan</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;tan()</pre>
+<div class="block">Tangent operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#tan()">tan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>tan(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="acos()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acos</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;acos()</pre>
+<div class="block">Arc cosine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#acos()">acos</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>acos(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="asin()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asin</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;asin()</pre>
+<div class="block">Arc sine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#asin()">asin</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>asin(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="atan()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atan</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;atan()</pre>
+<div class="block">Arc tangent operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#atan()">atan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>atan(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="atan2(org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atan2</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;atan2(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;x)</pre>
+<div class="block">Two arguments arc tangent operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#atan2(T)">atan2</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>x</code> - second argument of the arc tangent</dd>
+<dt><span class="strong">Returns:</span></dt><dd>atan2(this, x)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="cosh()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cosh</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;cosh()</pre>
+<div class="block">Hyperbolic cosine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#cosh()">cosh</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>cosh(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="sinh()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sinh</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;sinh()</pre>
+<div class="block">Hyperbolic sine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#sinh()">sinh</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>sinh(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="tanh()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tanh</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;tanh()</pre>
+<div class="block">Hyperbolic tangent operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#tanh()">tanh</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>tanh(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="acosh()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acosh</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;acosh()</pre>
+<div class="block">Inverse hyperbolic cosine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#acosh()">acosh</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>acosh(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="asinh()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asinh</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;asinh()</pre>
+<div class="block">Inverse hyperbolic sine operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#asinh()">asinh</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>asin(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="atanh()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atanh</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;atanh()</pre>
+<div class="block">Inverse hyperbolic  tangent operation.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#atanh()">atanh</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>atanh(this)</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="linearCombination(org.apache.commons.math3.util.Decimal64[], org.apache.commons.math3.util.Decimal64[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>[]&nbsp;a,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>[]&nbsp;b)
+                            throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T[], T[])">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - Factors.</dd><dd><code>b</code> - Factors.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>&Sigma;<sub>i</sub> a<sub>i</sub> b<sub>i</sub></code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if arrays dimensions don't match</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="linearCombination(double[], org.apache.commons.math3.util.Decimal64[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(double[]&nbsp;a,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>[]&nbsp;b)
+                            throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double[], T[])">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - Factors.</dd><dd><code>b</code> - Factors.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>&Sigma;<sub>i</sub> a<sub>i</sub> b<sub>i</sub></code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if arrays dimensions don't match</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="linearCombination(org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2)</pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T)">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a1</code> - first factor of the first term</dd><dd><code>b1</code> - second factor of the first term</dd><dd><code>a2</code> - first factor of the second term</dd><dd><code>b2</code> - second factor of the second term</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a<sub>1</sub>&times;b<sub>1</sub> +
+ a<sub>2</sub>&times;b<sub>2</sub></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T, T, T)"><code>RealFieldElement.linearCombination(Object, Object, Object, Object, Object, Object)</code></a>, 
+<a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T, T, T, T, T)"><code>RealFieldElement.linearCombination(Object, Object, Object, Object, Object, Object, Object, Object)</code></a></dd></dl>
+</li>
+</ul>
+<a name="linearCombination(double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(double&nbsp;a1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                          double&nbsp;a2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2)</pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T)">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a1</code> - first factor of the first term</dd><dd><code>b1</code> - second factor of the first term</dd><dd><code>a2</code> - first factor of the second term</dd><dd><code>b2</code> - second factor of the second term</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a<sub>1</sub>&times;b<sub>1</sub> +
+ a<sub>2</sub>&times;b<sub>2</sub></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T, double, T)"><code>RealFieldElement.linearCombination(double, Object, double, Object, double, Object)</code></a>, 
+<a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T, double, T, double, T)"><code>RealFieldElement.linearCombination(double, Object, double, Object, double, Object, double, Object)</code></a></dd></dl>
+</li>
+</ul>
+<a name="linearCombination(org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a3,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3)</pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T, T, T)">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a1</code> - first factor of the first term</dd><dd><code>b1</code> - second factor of the first term</dd><dd><code>a2</code> - first factor of the second term</dd><dd><code>b2</code> - second factor of the second term</dd><dd><code>a3</code> - first factor of the third term</dd><dd><code>b3</code> - second factor of the third term</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a<sub>1</sub>&times;b<sub>1</sub> +
+ a<sub>2</sub>&times;b<sub>2</sub> + a<sub>3</sub>&times;b<sub>3</sub></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T)"><code>RealFieldElement.linearCombination(Object, Object, Object, Object)</code></a>, 
+<a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T, T, T, T, T)"><code>RealFieldElement.linearCombination(Object, Object, Object, Object, Object, Object, Object, Object)</code></a></dd></dl>
+</li>
+</ul>
+<a name="linearCombination(double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(double&nbsp;a1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                          double&nbsp;a2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                          double&nbsp;a3,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3)</pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T, double, T)">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a1</code> - first factor of the first term</dd><dd><code>b1</code> - second factor of the first term</dd><dd><code>a2</code> - first factor of the second term</dd><dd><code>b2</code> - second factor of the second term</dd><dd><code>a3</code> - first factor of the third term</dd><dd><code>b3</code> - second factor of the third term</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a<sub>1</sub>&times;b<sub>1</sub> +
+ a<sub>2</sub>&times;b<sub>2</sub> + a<sub>3</sub>&times;b<sub>3</sub></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T)"><code>RealFieldElement.linearCombination(double, Object, double, Object)</code></a>, 
+<a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T, double, T, double, T)"><code>RealFieldElement.linearCombination(double, Object, double, Object, double, Object, double, Object)</code></a></dd></dl>
+</li>
+</ul>
+<a name="linearCombination(org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64, org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a3,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;a4,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b4)</pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T, T, T, T, T)">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a1</code> - first factor of the first term</dd><dd><code>b1</code> - second factor of the first term</dd><dd><code>a2</code> - first factor of the second term</dd><dd><code>b2</code> - second factor of the second term</dd><dd><code>a3</code> - first factor of the third term</dd><dd><code>b3</code> - second factor of the third term</dd><dd><code>a4</code> - first factor of the third term</dd><dd><code>b4</code> - second factor of the third term</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a<sub>1</sub>&times;b<sub>1</sub> +
+ a<sub>2</sub>&times;b<sub>2</sub> + a<sub>3</sub>&times;b<sub>3</sub> +
+ a<sub>4</sub>&times;b<sub>4</sub></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T)"><code>RealFieldElement.linearCombination(Object, Object, Object, Object)</code></a>, 
+<a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(T, T, T, T, T, T)"><code>RealFieldElement.linearCombination(Object, Object, Object, Object, Object, Object)</code></a></dd></dl>
+</li>
+</ul>
+<a name="linearCombination(double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64, double, org.apache.commons.math3.util.Decimal64)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>linearCombination</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;linearCombination(double&nbsp;a1,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b1,
+                          double&nbsp;a2,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b2,
+                          double&nbsp;a3,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b3,
+                          double&nbsp;a4,
+                          <a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&nbsp;b4)</pre>
+<div class="block">Compute a linear combination.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T, double, T, double, T)">linearCombination</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/RealFieldElement.html" title="interface in org.apache.commons.math3">RealFieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/util/Decimal64.html" title="class in org.apache.commons.math3.util">Decimal64</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>a1</code> - first factor of the first term</dd><dd><code>b1</code> - second factor of the first term</dd><dd><code>a2</code> - first factor of the second term</dd><dd><code>b2</code> - second factor of the second term</dd><dd><code>a3</code> - first factor of the third term</dd><dd><code>b3</code> - second factor of the third term</dd><dd><code>a4</code> - first factor of the third term</dd><dd><code>b4</code> - second factor of the third term</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a<sub>1</sub>&times;b<sub>1</sub> +
+ a<sub>2</sub>&times;b<sub>2</sub> + a<sub>3</sub>&times;b<sub>3</sub> +
+ a<sub>4</sub>&times;b<sub>4</sub></dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T)"><code>RealFieldElement.linearCombination(double, Object, double, Object)</code></a>, 
+<a href="../../../../../org/apache/commons/math3/RealFieldElement.html#linearCombination(double, T, double, T, double, T)"><code>RealFieldElement.linearCombination(double, Object, double, Object, double, Object)</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Decimal64.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/util/ContinuedFraction.html" title="class in org.apache.commons.math3.util"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/util/Decimal64Field.html" title="class in org.apache.commons.math3.util"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/util/Decimal64.html" target="_top">Frames</a></li>
+<li><a href="Decimal64.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

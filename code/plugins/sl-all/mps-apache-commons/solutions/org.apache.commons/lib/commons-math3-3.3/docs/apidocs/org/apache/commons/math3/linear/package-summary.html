@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>org.apache.commons.math3.linear (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="org.apache.commons.math3.linear (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/geometry/spherical/twod/package-summary.html">Prev Package</a></li>
+<li><a href="../../../../../org/apache/commons/math3/ml/package-summary.html">Next Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;org.apache.commons.math3.linear</h1>
+<div class="docSummary">
+<div class="block">Linear algebra support.</div>
+</div>
+<p>See:&nbsp;<a href="#package_description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/AnyMatrix.html" title="interface in org.apache.commons.math3.linear">AnyMatrix</a></td>
+<td class="colLast">
+<div class="block">Interface defining very basic matrix operations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</a></td>
+<td class="colLast">
+<div class="block">Interface handling decomposition algorithms that can solve A &times; X = B.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldDecompositionSolver.html" title="interface in org.apache.commons.math3.linear">FieldDecompositionSolver</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Interface handling decomposition algorithms that can solve A &times; X = B.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Interface defining field-valued matrix with basic algebraic operations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldMatrixChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldMatrixChangingVisitor</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;?&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Interface defining a visitor for matrix entries.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldMatrixPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldMatrixPreservingVisitor</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;?&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Interface defining a visitor for matrix entries.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Interface defining a field-valued vector with basic algebraic operations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;?&gt;&gt;</td>
+<td class="colLast">
+<div class="block">This interface defines a visitor for the entries of a vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;?&gt;&gt;</td>
+<td class="colLast">
+<div class="block">This interface defines a visitor for the entries of a vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></td>
+<td class="colLast">
+<div class="block">Interface defining a real-valued matrix with basic algebraic operations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealMatrixChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealMatrixChangingVisitor</a></td>
+<td class="colLast">
+<div class="block">Interface defining a visitor for matrix entries.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealMatrixPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealMatrixPreservingVisitor</a></td>
+<td class="colLast">
+<div class="block">Interface defining a visitor for matrix entries.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorChangingVisitor</a></td>
+<td class="colLast">
+<div class="block">This interface defines a visitor for the entries of a vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">RealVectorPreservingVisitor</a></td>
+<td class="colLast">
+<div class="block">This interface defines a visitor for the entries of a vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SparseRealMatrix.html" title="interface in org.apache.commons.math3.linear">SparseRealMatrix</a></td>
+<td class="colLast">
+<div class="block">Marker interface for <a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear"><code>RealMatrix</code></a> implementations that require sparse backing storage</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/AbstractFieldMatrix.html" title="class in org.apache.commons.math3.linear">AbstractFieldMatrix</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Basic implementation of <a href="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear"><code>FieldMatrix</code></a> methods regardless of the underlying storage.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/AbstractRealMatrix.html" title="class in org.apache.commons.math3.linear">AbstractRealMatrix</a></td>
+<td class="colLast">
+<div class="block">Basic implementation of RealMatrix methods regardless of the underlying storage.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/Array2DRowFieldMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowFieldMatrix</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Implementation of FieldMatrix<T> using a <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><code>FieldElement</code></a>[][] array to store entries.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear">Array2DRowRealMatrix</a></td>
+<td class="colLast">
+<div class="block">Implementation of <a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear"><code>RealMatrix</code></a> using a <code>double[][]</code> array to
+ store entries.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">This class implements the <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><code>FieldVector</code></a> interface with a <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><code>FieldElement</code></a> array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear">ArrayRealVector</a></td>
+<td class="colLast">
+<div class="block">This class implements the <a href="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><code>RealVector</code></a> interface with a double array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/BlockFieldMatrix.html" title="class in org.apache.commons.math3.linear">BlockFieldMatrix</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Cache-friendly implementation of FieldMatrix using a flat arrays to store
+ square blocks of the matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/BlockRealMatrix.html" title="class in org.apache.commons.math3.linear">BlockRealMatrix</a></td>
+<td class="colLast">
+<div class="block">Cache-friendly implementation of RealMatrix using a flat arrays to store
+ square blocks of the matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/CholeskyDecomposition.html" title="class in org.apache.commons.math3.linear">CholeskyDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the Cholesky decomposition of a matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/ConjugateGradient.html" title="class in org.apache.commons.math3.linear">ConjugateGradient</a></td>
+<td class="colLast">
+<div class="block">
+ This is an implementation of the conjugate gradient method for
+ <a href="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DefaultFieldMatrixChangingVisitor.html" title="class in org.apache.commons.math3.linear">DefaultFieldMatrixChangingVisitor</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Default implementation of the <a href="../../../../../org/apache/commons/math3/linear/FieldMatrixChangingVisitor.html" title="interface in org.apache.commons.math3.linear"><code>FieldMatrixChangingVisitor</code></a> interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DefaultFieldMatrixPreservingVisitor.html" title="class in org.apache.commons.math3.linear">DefaultFieldMatrixPreservingVisitor</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Default implementation of the <a href="../../../../../org/apache/commons/math3/linear/FieldMatrixPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><code>FieldMatrixPreservingVisitor</code></a> interface.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DefaultIterativeLinearSolverEvent.html" title="class in org.apache.commons.math3.linear">DefaultIterativeLinearSolverEvent</a></td>
+<td class="colLast">
+<div class="block">A default concrete implementation of the abstract class
+ <a href="../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html" title="class in org.apache.commons.math3.linear"><code>IterativeLinearSolverEvent</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DefaultRealMatrixChangingVisitor.html" title="class in org.apache.commons.math3.linear">DefaultRealMatrixChangingVisitor</a></td>
+<td class="colLast">
+<div class="block">Default implementation of the <a href="../../../../../org/apache/commons/math3/linear/RealMatrixChangingVisitor.html" title="interface in org.apache.commons.math3.linear"><code>RealMatrixChangingVisitor</code></a> interface.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DefaultRealMatrixPreservingVisitor.html" title="class in org.apache.commons.math3.linear">DefaultRealMatrixPreservingVisitor</a></td>
+<td class="colLast">
+<div class="block">Default implementation of the <a href="../../../../../org/apache/commons/math3/linear/RealMatrixPreservingVisitor.html" title="interface in org.apache.commons.math3.linear"><code>RealMatrixPreservingVisitor</code></a> interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/DiagonalMatrix.html" title="class in org.apache.commons.math3.linear">DiagonalMatrix</a></td>
+<td class="colLast">
+<div class="block">Implementation of a diagonal matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/EigenDecomposition.html" title="class in org.apache.commons.math3.linear">EigenDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the eigen decomposition of a real matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/FieldLUDecomposition.html" title="class in org.apache.commons.math3.linear">FieldLUDecomposition</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Calculates the LUP-decomposition of a square matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">IterativeLinearSolver</a></td>
+<td class="colLast">
+<div class="block">This abstract class defines an iterative solver for the linear system A
+ &middot; x = b.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/IterativeLinearSolverEvent.html" title="class in org.apache.commons.math3.linear">IterativeLinearSolverEvent</a></td>
+<td class="colLast">
+<div class="block">This is the base class for all events occurring during the iterations of a
+ <a href="../../../../../org/apache/commons/math3/linear/IterativeLinearSolver.html" title="class in org.apache.commons.math3.linear"><code>IterativeLinearSolver</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/JacobiPreconditioner.html" title="class in org.apache.commons.math3.linear">JacobiPreconditioner</a></td>
+<td class="colLast">
+<div class="block">This class implements the standard Jacobi (diagonal) preconditioner.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/LUDecomposition.html" title="class in org.apache.commons.math3.linear">LUDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the LUP-decomposition of a square matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/MatrixUtils.html" title="class in org.apache.commons.math3.linear">MatrixUtils</a></td>
+<td class="colLast">
+<div class="block">A collection of static methods that operate on or return matrices.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/OpenMapRealMatrix.html" title="class in org.apache.commons.math3.linear">OpenMapRealMatrix</a></td>
+<td class="colLast">
+<div class="block">Sparse matrix implementation based on an open addressed map.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/OpenMapRealVector.html" title="class in org.apache.commons.math3.linear">OpenMapRealVector</a></td>
+<td class="colLast">
+<div class="block">This class implements the <a href="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear"><code>RealVector</code></a> interface with a
+ <a href="../../../../../org/apache/commons/math3/util/OpenIntToDoubleHashMap.html" title="class in org.apache.commons.math3.util"><code>OpenIntToDoubleHashMap</code></a> backing store.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/PreconditionedIterativeLinearSolver.html" title="class in org.apache.commons.math3.linear">PreconditionedIterativeLinearSolver</a></td>
+<td class="colLast">
+<div class="block">
+ This abstract class defines preconditioned iterative solvers.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">QRDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the QR-decomposition of a matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear">RealLinearOperator</a></td>
+<td class="colLast">
+<div class="block">This class defines a linear operator operating on real (<code>double</code>)
+ vector spaces.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealMatrixFormat.html" title="class in org.apache.commons.math3.linear">RealMatrixFormat</a></td>
+<td class="colLast">
+<div class="block">Formats a <code>nxm</code> matrix in components list format
+ "{{a<sub>0</sub><sub>0</sub>,a<sub>0</sub><sub>1</sub>, ...,
+ a<sub>0</sub><sub>m-1</sub>},{a<sub>1</sub><sub>0</sub>,
+ a<sub>1</sub><sub>1</sub>, ..., a<sub>1</sub><sub>m-1</sub>},{...},{
+ a<sub>n-1</sub><sub>0</sub>, a<sub>n-1</sub><sub>1</sub>, ...,
+ a<sub>n-1</sub><sub>m-1</sub>}}".</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealVector.html" title="class in org.apache.commons.math3.linear">RealVector</a></td>
+<td class="colLast">
+<div class="block">Class defining a real-valued vector with basic algebraic operations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RealVectorFormat.html" title="class in org.apache.commons.math3.linear">RealVectorFormat</a></td>
+<td class="colLast">
+<div class="block">Formats a vector in components list format "{v0; v1; ...; vk-1}".</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RectangularCholeskyDecomposition.html" title="class in org.apache.commons.math3.linear">RectangularCholeskyDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the rectangular Cholesky decomposition of a matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html" title="class in org.apache.commons.math3.linear">RRQRDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the rank-revealing QR-decomposition of a matrix, with column pivoting.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html" title="class in org.apache.commons.math3.linear">SingularValueDecomposition</a></td>
+<td class="colLast">
+<div class="block">Calculates the compact Singular Value Decomposition of a matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SparseFieldMatrix.html" title="class in org.apache.commons.math3.linear">SparseFieldMatrix</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">Sparse matrix implementation based on an open addressed map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SparseFieldVector.html" title="class in org.apache.commons.math3.linear">SparseFieldVector</a>&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</td>
+<td class="colLast">
+<div class="block">This class implements the <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><code>FieldVector</code></a> interface with a <a href="../../../../../org/apache/commons/math3/util/OpenIntToFieldHashMap.html" title="class in org.apache.commons.math3.util"><code>OpenIntToFieldHashMap</code></a> backing store.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SparseRealVector.html" title="class in org.apache.commons.math3.linear">SparseRealVector</a></td>
+<td class="colLast">
+<div class="block">Marker class for RealVectors that require sparse backing storage</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SymmLQ.html" title="class in org.apache.commons.math3.linear">SymmLQ</a></td>
+<td class="colLast">
+<div class="block">
+ Implementation of the SYMMLQ iterative linear solver proposed by <a
+ href="#PAIG1975">Paige and Saunders (1975)</a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Exception Summary table, listing exceptions, and an explanation">
+<caption><span>Exception Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Exception</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</a></td>
+<td class="colLast">
+<div class="block">An exception to be thrown when the condition number of a
+ <a href="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a> is too high.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when either the number of rows or the number of
+ columns of a matrix do not match the expected values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteMatrixException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteMatrixException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a positive definite matrix is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a symmetric, definite positive
+ <a href="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a> is expected.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a self-adjoint <a href="../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a>
+ is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/NonSquareMatrixException.html" title="class in org.apache.commons.math3.linear">NonSquareMatrixException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a square matrix is expected.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a square linear operator is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/NonSymmetricMatrixException.html" title="class in org.apache.commons.math3.linear">NonSymmetricMatrixException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a symmetric matrix is expected.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when a non-singular matrix is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/math3/linear/SingularOperatorException.html" title="class in org.apache.commons.math3.linear">SingularOperatorException</a></td>
+<td class="colLast">
+<div class="block">Exception to be thrown when trying to invert a singular operator.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package_description">
+<!--   -->
+</a>
+<h2 title="Package org.apache.commons.math3.linear Description">Package org.apache.commons.math3.linear Description</h2>
+<div class="block">Linear algebra support.</div>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/geometry/spherical/twod/package-summary.html">Prev Package</a></li>
+<li><a href="../../../../../org/apache/commons/math3/ml/package-summary.html">Next Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

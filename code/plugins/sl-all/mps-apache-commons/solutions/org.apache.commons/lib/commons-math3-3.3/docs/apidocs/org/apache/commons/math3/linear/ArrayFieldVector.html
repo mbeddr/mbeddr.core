@@ -1,0 +1,1974 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ArrayFieldVector (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ArrayFieldVector (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ArrayFieldVector.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/ArrayFieldVector.html" target="_top">Frames</a></li>
+<li><a href="ArrayFieldVector.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.linear</div>
+<h2 title="Class ArrayFieldVector" class="title">Class ArrayFieldVector&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.linear.ArrayFieldVector&lt;T&gt;</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the field elements</dd></dl>
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;T&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ArrayFieldVector&lt;T extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;T&gt;&gt;</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;T&gt;, <a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">This class implements the <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear"><code>FieldVector</code></a> interface with a <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3"><code>FieldElement</code></a> array.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: ArrayFieldVector.java 1570536 2014-02-21 11:26:09Z luc $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.commons.math3.linear.ArrayFieldVector">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Construct a vector from another vector, using a deep copy.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, org.apache.commons.math3.linear.ArrayFieldVector)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>as of 3.2, replaced by <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, org.apache.commons.math3.linear.FieldVector)"><code>ArrayFieldVector(FieldVector, FieldVector)</code></a></i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, boolean)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v,
+                boolean&nbsp;deep)</code>
+<div class="block">Construct a vector from another vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, T[])">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>as of 3.2, replaced by <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, T[])"><code>ArrayFieldVector(FieldVector, FieldElement[])</code></a></i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field)</code>
+<div class="block">Build a 0-length vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, int)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                int&nbsp;size)</code>
+<div class="block">Construct a vector of zeroes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[])">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d)</code>
+<div class="block">Construct a vector from an array, copying the input array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], boolean)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                boolean&nbsp;copyArray)</code>
+<div class="block">Create a new ArrayFieldVector using the input array as the underlying
+ data array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], int, int)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                int&nbsp;pos,
+                int&nbsp;size)</code>
+<div class="block">Construct a vector from part of a array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], T[])">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)</code>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Construct a vector from another vector, using a deep copy.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, org.apache.commons.math3.linear.FieldVector)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)</code>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, T[])">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)</code>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(int, T)">ArrayFieldVector</a></strong>(int&nbsp;size,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;preset)</code>
+<div class="block">Construct a vector with preset values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[])">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d)</code>
+<div class="block">Construct a vector from an array, copying the input array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.ArrayFieldVector)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>as of 3.2, replaced by <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.FieldVector)"><code>ArrayFieldVector(FieldElement[], FieldVector)</code></a></i></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], boolean)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                boolean&nbsp;copyArray)</code>
+<div class="block">Create a new ArrayFieldVector using the input array as the underlying
+ data array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.FieldVector)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)</code>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], int, int)">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                int&nbsp;pos,
+                int&nbsp;size)</code>
+<div class="block">Construct a vector from part of a array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], T[])">ArrayFieldVector</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)</code>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#add(org.apache.commons.math3.linear.ArrayFieldVector)">add</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute the sum of <code>this</code> and <code>v</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#add(org.apache.commons.math3.linear.FieldVector)">add</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute the sum of <code>this</code> and <code>v</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#append(org.apache.commons.math3.linear.ArrayFieldVector)">append</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Construct a vector by appending a vector to this vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#append(org.apache.commons.math3.linear.FieldVector)">append</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Construct a vector by appending a vector to this vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#append(T)">append</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;in)</code>
+<div class="block">Construct a vector by appending a T to this vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#checkVectorDimensions(org.apache.commons.math3.linear.FieldVector)">checkVectorDimensions</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Check if instance and specified vectors have the same dimension.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#checkVectorDimensions(int)">checkVectorDimensions</a></strong>(int&nbsp;n)</code>
+<div class="block">Check if instance dimension is equal to some expected value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#copy()">copy</a></strong>()</code>
+<div class="block">Returns a (deep) copy of this.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#dotProduct(org.apache.commons.math3.linear.ArrayFieldVector)">dotProduct</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute the dot product.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#dotProduct(org.apache.commons.math3.linear.FieldVector)">dotProduct</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute the dot product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ebeDivide(org.apache.commons.math3.linear.ArrayFieldVector)">ebeDivide</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Element-by-element division.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ebeDivide(org.apache.commons.math3.linear.FieldVector)">ebeDivide</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Element-by-element division.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ebeMultiply(org.apache.commons.math3.linear.ArrayFieldVector)">ebeMultiply</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Element-by-element multiplication.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ebeMultiply(org.apache.commons.math3.linear.FieldVector)">ebeMultiply</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Element-by-element multiplication.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>
+<div class="block">Test for the equality of two vectors.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getData()">getData</a></strong>()</code>
+<div class="block">Returns vector entries as a T array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getDataRef()">getDataRef</a></strong>()</code>
+<div class="block">Returns a reference to the underlying data array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getDimension()">getDimension</a></strong>()</code>
+<div class="block">Returns the size of the vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getEntry(int)">getEntry</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the entry in the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getField()">getField</a></strong>()</code>
+<div class="block">Get the type of field elements of the vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#getSubVector(int, int)">getSubVector</a></strong>(int&nbsp;index,
+            int&nbsp;n)</code>
+<div class="block">Get a subvector from consecutive elements.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Get a hashCode for the real vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapAdd(T)">mapAdd</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map an addition operation to each entry.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapAddToSelf(T)">mapAddToSelf</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map an addition operation to each entry.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapDivide(T)">mapDivide</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map a division operation to each entry.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapDivideToSelf(T)">mapDivideToSelf</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map a division operation to each entry.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapInv()">mapInv</a></strong>()</code>
+<div class="block">Map the 1/x function to each entry.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapInvToSelf()">mapInvToSelf</a></strong>()</code>
+<div class="block">Map the 1/x function to each entry.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapMultiply(T)">mapMultiply</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map a multiplication operation to each entry.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapMultiplyToSelf(T)">mapMultiplyToSelf</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map a multiplication operation to each entry.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapSubtract(T)">mapSubtract</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map a subtraction operation to each entry.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#mapSubtractToSelf(T)">mapSubtractToSelf</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)</code>
+<div class="block">Map a subtraction operation to each entry.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#outerProduct(org.apache.commons.math3.linear.ArrayFieldVector)">outerProduct</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute the outer product.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#outerProduct(org.apache.commons.math3.linear.FieldVector)">outerProduct</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute the outer product.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#projection(org.apache.commons.math3.linear.ArrayFieldVector)">projection</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Find the orthogonal projection of this vector onto another vector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#projection(org.apache.commons.math3.linear.FieldVector)">projection</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Find the orthogonal projection of this vector onto another vector.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#set(int, org.apache.commons.math3.linear.ArrayFieldVector)">set</a></strong>(int&nbsp;index,
+   <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Set a set of consecutive elements.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#set(T)">set</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;value)</code>
+<div class="block">Set all elements to a single value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#setEntry(int, T)">setEntry</a></strong>(int&nbsp;index,
+        <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;value)</code>
+<div class="block">Set a single element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#setSubVector(int, org.apache.commons.math3.linear.FieldVector)">setSubVector</a></strong>(int&nbsp;index,
+            <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Set a set of consecutive elements.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#subtract(org.apache.commons.math3.linear.ArrayFieldVector)">subtract</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute <code>this</code> minus <code>v</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#subtract(org.apache.commons.math3.linear.FieldVector)">subtract</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</code>
+<div class="block">Compute <code>this</code> minus <code>v</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#toArray()">toArray</a></strong>()</code>
+<div class="block">Convert the vector to a T array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor)">walkInDefaultOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</code>
+<div class="block">Visits (and possibly alters) all entries of this vector in default order
+ (increasing index).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor, int, int)">walkInDefaultOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                  int&nbsp;start,
+                  int&nbsp;end)</code>
+<div class="block">Visits (and possibly alters) some entries of this vector in default order
+ (increasing index).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor)">walkInDefaultOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</code>
+<div class="block">Visits (but does not alter) all entries of this vector in default order
+ (increasing index).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor, int, int)">walkInDefaultOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                  int&nbsp;start,
+                  int&nbsp;end)</code>
+<div class="block">Visits (but does not alter) some entries of this vector in default order
+ (increasing index).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor)">walkInOptimizedOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</code>
+<div class="block">Visits (and possibly alters) all entries of this vector in optimized
+ order.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor, int, int)">walkInOptimizedOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                    int&nbsp;start,
+                    int&nbsp;end)</code>
+<div class="block">Visits (and possibly change) some entries of this vector in optimized
+ order.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor)">walkInOptimizedOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</code>
+<div class="block">Visits (but does not alter) all entries of this vector in optimized
+ order.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor, int, int)">walkInOptimizedOrder</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                    int&nbsp;start,
+                    int&nbsp;end)</code>
+<div class="block">Visits (but does not alter) some entries of this vector in optimized
+ order.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ArrayFieldVector(org.apache.commons.math3.Field)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field)</pre>
+<div class="block">Build a 0-length vector.
+ Zero-length vectors may be used to initialize construction of vectors
+ by data gathering. We start with zero-length and use either the <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, org.apache.commons.math3.linear.ArrayFieldVector)"><code>ArrayFieldVector(ArrayFieldVector, ArrayFieldVector)</code></a> constructor
+ or one of the <code>append</code> methods (<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#add(org.apache.commons.math3.linear.FieldVector)"><code>add(FieldVector)</code></a> or
+ <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#append(org.apache.commons.math3.linear.ArrayFieldVector)"><code>append(ArrayFieldVector)</code></a>) to gather data into this vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - field to which the elements belong</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.Field, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                int&nbsp;size)</pre>
+<div class="block">Construct a vector of zeroes.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - Field to which the elements belong.</dd><dd><code>size</code> - Size of the vector.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(int,org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="ArrayFieldVector(int, T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(int&nbsp;size,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;preset)</pre>
+<div class="block">Construct a vector with preset values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>size</code> - Size of the vector.</dd><dd><code>preset</code> - All entries will be set with this value.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.FieldElement[])">
+<!--   -->
+</a><a name="ArrayFieldVector(T[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                        <a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></pre>
+<div class="block">Construct a vector from an array, copying the input array.
+ This constructor needs a non-empty <code>d</code> array to retrieve
+ the field from its first element. This implies it cannot build
+ 0 length vectors. To build vectors from any size, one should
+ use the <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[])"><code>ArrayFieldVector(Field, FieldElement[])</code></a> constructor.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - Array.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></code> - if <code>d</code> is empty.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[])"><code>ArrayFieldVector(Field, FieldElement[])</code></a></dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.Field,org.apache.commons.math3.FieldElement[])">
+<!--   -->
+</a><a name="ArrayFieldVector(org.apache.commons.math3.Field, T[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector from an array, copying the input array.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - Field to which the elements belong.</dd><dd><code>d</code> - Array.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[])"><code>ArrayFieldVector(FieldElement[])</code></a></dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.FieldElement[],boolean)">
+<!--   -->
+</a><a name="ArrayFieldVector(T[], boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                boolean&nbsp;copyArray)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                        <a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></pre>
+<div class="block">Create a new ArrayFieldVector using the input array as the underlying
+ data array.
+ If an array is built specially in order to be embedded in a
+ ArrayFieldVector and not used directly, the <code>copyArray</code> may be
+ set to <code>false</code>. This will prevent the copying and improve
+ performance as no new array will be built and no data will be copied.
+ This constructor needs a non-empty <code>d</code> array to retrieve
+ the field from its first element. This implies it cannot build
+ 0 length vectors. To build vectors from any size, one should
+ use the <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], boolean)"><code>ArrayFieldVector(Field, FieldElement[], boolean)</code></a>
+ constructor.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - Data for the new vector.</dd><dd><code>copyArray</code> - If <code>true</code>, the input array will be copied,
+ otherwise it will be referenced.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></code> - if <code>d</code> is empty.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[])"><code>ArrayFieldVector(FieldElement[])</code></a>, 
+<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], boolean)"><code>ArrayFieldVector(Field, FieldElement[], boolean)</code></a></dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.Field,org.apache.commons.math3.FieldElement[],boolean)">
+<!--   -->
+</a><a name="ArrayFieldVector(org.apache.commons.math3.Field, T[], boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                boolean&nbsp;copyArray)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Create a new ArrayFieldVector using the input array as the underlying
+ data array.
+ If an array is built specially in order to be embedded in a
+ ArrayFieldVector and not used directly, the <code>copyArray</code> may be
+ set to <code>false</code>. This will prevent the copying and improve
+ performance as no new array will be built and no data will be copied.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - Field to which the elements belong.</dd><dd><code>d</code> - Data for the new vector.</dd><dd><code>copyArray</code> - If <code>true</code>, the input array will be copied,
+ otherwise it will be referenced.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], boolean)"><code>ArrayFieldVector(FieldElement[], boolean)</code></a></dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.FieldElement[],int,int)">
+<!--   -->
+</a><a name="ArrayFieldVector(T[], int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                int&nbsp;pos,
+                int&nbsp;size)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                        <a href="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</a></pre>
+<div class="block">Construct a vector from part of a array.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - Array.</dd><dd><code>pos</code> - Position of the first entry.</dd><dd><code>size</code> - Number of entries to copy.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</a></code> - if the size of <code>d</code> is less
+ than <code>pos + size</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.Field,org.apache.commons.math3.FieldElement[],int,int)">
+<!--   -->
+</a><a name="ArrayFieldVector(org.apache.commons.math3.Field, T[], int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;d,
+                int&nbsp;pos,
+                int&nbsp;size)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                        <a href="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</a></pre>
+<div class="block">Construct a vector from part of a array.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - Field to which the elements belong.</dd><dd><code>d</code> - Array.</dd><dd><code>pos</code> - Position of the first entry.</dd><dd><code>size</code> - Number of entries to copy.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</a></code> - if the size of <code>d</code> is less
+ than <code>pos + size</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector from another vector, using a deep copy.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - Vector to copy.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector from another vector, using a deep copy.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - Vector to copy.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v,
+                boolean&nbsp;deep)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector from another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - Vector to copy.</dd><dd><code>deep</code> - If <code>true</code> perform a deep copy, otherwise perform
+ a shallow copy</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                           <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>as of 3.2, replaced by <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, org.apache.commons.math3.linear.FieldVector)"><code>ArrayFieldVector(FieldVector, FieldVector)</code></a></i></div>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector,org.apache.commons.math3.FieldElement[])">
+<!--   -->
+</a><a name="ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector, T[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                           <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>as of 3.2, replaced by <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, T[])"><code>ArrayFieldVector(FieldVector, FieldElement[])</code></a></i></div>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.linear.FieldVector,org.apache.commons.math3.FieldElement[])">
+<!--   -->
+</a><a name="ArrayFieldVector(org.apache.commons.math3.linear.FieldVector, T[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.FieldElement[],org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a><a name="ArrayFieldVector(T[], org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                           <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>as of 3.2, replaced by <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], org.apache.commons.math3.linear.FieldVector)"><code>ArrayFieldVector(FieldElement[], FieldVector)</code></a></i></div>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.FieldElement[],org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a><a name="ArrayFieldVector(T[], org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.FieldElement[],org.apache.commons.math3.FieldElement[])">
+<!--   -->
+</a><a name="ArrayFieldVector(T[], T[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                        <a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></pre>
+<div class="block">Construct a vector by appending one vector to another vector.
+ This constructor needs at least one non-empty array to retrieve
+ the field from its first element. This implies it cannot build
+ 0 length vectors. To build vectors from any size, one should
+ use the <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], T[])"><code>ArrayFieldVector(Field, FieldElement[], FieldElement[])</code></a>
+ constructor.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></code> - if both arrays are empty.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(org.apache.commons.math3.Field, T[], T[])"><code>ArrayFieldVector(Field, FieldElement[], FieldElement[])</code></a></dd></dl>
+</li>
+</ul>
+<a name="ArrayFieldVector(org.apache.commons.math3.Field,org.apache.commons.math3.FieldElement[],org.apache.commons.math3.FieldElement[])">
+<!--   -->
+</a><a name="ArrayFieldVector(org.apache.commons.math3.Field, T[], T[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ArrayFieldVector</h4>
+<pre>public&nbsp;ArrayFieldVector(<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;field,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v1,
+                <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;v2)
+                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                        <a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></pre>
+<div class="block">Construct a vector by appending one vector to another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - Field to which the elements belong.</dd><dd><code>v1</code> - First vector (will be put in front of the new vector).</dd><dd><code>v2</code> - Second vector (will be put at back of the new vector).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>v1</code> or <code>v2</code> is
+ <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></code> - if both arrays are empty.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html#ArrayFieldVector(T[], T[])"><code>ArrayFieldVector(FieldElement[], FieldElement[])</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getField()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getField</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/Field.html" title="interface in org.apache.commons.math3">Field</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;getField()</pre>
+<div class="block">Get the type of field elements of the vector.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#getField()">getField</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>type of field elements of the vector</dd></dl>
+</li>
+</ul>
+<a name="copy()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copy</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;copy()</pre>
+<div class="block">Returns a (deep) copy of this.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#copy()">copy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>vector copy</dd></dl>
+</li>
+</ul>
+<a name="add(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;add(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                           throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute the sum of <code>this</code> and <code>v</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#add(org.apache.commons.math3.linear.FieldVector)">add</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to be added</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this + v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="add(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;add(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute the sum of <code>this</code> and <code>v</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to be added</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this + v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as
+ <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="subtract(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;subtract(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute <code>this</code> minus <code>v</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#subtract(org.apache.commons.math3.linear.FieldVector)">subtract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to be subtracted</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this - v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="subtract(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;subtract(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                     throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute <code>this</code> minus <code>v</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to be subtracted</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this - v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as
+ <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="mapAdd(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapAdd(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapAdd</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapAdd(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                              throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Map an addition operation to each entry.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapAdd(T)">mapAdd</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to be added to each entry</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this + d</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="mapAddToSelf(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapAddToSelf(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapAddToSelf</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapAddToSelf(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                    throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Map an addition operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapAddToSelf(T)">mapAddToSelf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to be added to each entry</dd>
+<dt><span class="strong">Returns:</span></dt><dd>for convenience, return <code>this</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="mapSubtract(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapSubtract(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapSubtract</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapSubtract(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                   throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Map a subtraction operation to each entry.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapSubtract(T)">mapSubtract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to be subtracted to each entry</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this - d</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code></dd></dl>
+</li>
+</ul>
+<a name="mapSubtractToSelf(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapSubtractToSelf(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapSubtractToSelf</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapSubtractToSelf(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                         throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Map a subtraction operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapSubtractToSelf(T)">mapSubtractToSelf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to be subtracted to each entry</dd>
+<dt><span class="strong">Returns:</span></dt><dd>for convenience, return <code>this</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code></dd></dl>
+</li>
+</ul>
+<a name="mapMultiply(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapMultiply(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapMultiply</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapMultiply(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                   throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Map a multiplication operation to each entry.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapMultiply(T)">mapMultiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to multiply all entries by</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this * d</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="mapMultiplyToSelf(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapMultiplyToSelf(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapMultiplyToSelf</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapMultiplyToSelf(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                         throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Map a multiplication operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapMultiplyToSelf(T)">mapMultiplyToSelf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to multiply all entries by</dd>
+<dt><span class="strong">Returns:</span></dt><dd>for convenience, return <code>this</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="mapDivide(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapDivide(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapDivide</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapDivide(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                 throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                                                        <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Map a division operation to each entry.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapDivide(T)">mapDivide</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to divide all entries by</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this / d</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if <code>d</code> is zero.</dd></dl>
+</li>
+</ul>
+<a name="mapDivideToSelf(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="mapDivideToSelf(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapDivideToSelf</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapDivideToSelf(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;d)
+                                                       throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a>,
+                                                              <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Map a division operation to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapDivideToSelf(T)">mapDivideToSelf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>d</code> - value to divide all entries by</dd>
+<dt><span class="strong">Returns:</span></dt><dd>for convenience, return <code>this</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>d</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if <code>d</code> is zero.</dd></dl>
+</li>
+</ul>
+<a name="mapInv()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapInv</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapInv()
+                                              throws <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Map the 1/x function to each entry.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapInv()">mapInv</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a vector containing the result of applying the function to each entry.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if one of the entries is zero.</dd></dl>
+</li>
+</ul>
+<a name="mapInvToSelf()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapInvToSelf</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;mapInvToSelf()
+                                                    throws <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Map the 1/x function to each entry.
+ <p>The instance <strong>is</strong> changed by this method.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#mapInvToSelf()">mapInvToSelf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>for convenience, return <code>this</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if one of the entries is zero.</dd></dl>
+</li>
+</ul>
+<a name="ebeMultiply(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ebeMultiply</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;ebeMultiply(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                   throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Element-by-element multiplication.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#ebeMultiply(org.apache.commons.math3.linear.FieldVector)">ebeMultiply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector by which instance elements must be multiplied</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a vector containing <code>this[i] * v[i]</code> for all <code>i</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="ebeMultiply(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ebeMultiply</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;ebeMultiply(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                        throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Element-by-element multiplication.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector by which instance elements must be multiplied</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a vector containing <code>this[i] * v[i]</code> for all <code>i</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as
+ <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="ebeDivide(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ebeDivide</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;ebeDivide(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                 throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a>,
+                                                        <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Element-by-element division.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#ebeDivide(org.apache.commons.math3.linear.FieldVector)">ebeDivide</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector by which instance elements must be divided</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a vector containing <code>this[i] / v[i]</code> for all <code>i</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as <code>this</code></dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if one entry of <code>v</code> is zero.</dd></dl>
+</li>
+</ul>
+<a name="ebeDivide(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ebeDivide</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;ebeDivide(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                      throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a>,
+                                                             <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Element-by-element division.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector by which instance elements must be divided</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a vector containing <code>this[i] / v[i]</code> for all <code>i</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as
+ <code>this</code></dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if one entry of <code>v</code> is zero.</dd></dl>
+</li>
+</ul>
+<a name="getData()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getData</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;getData()</pre>
+<div class="block">Returns vector entries as a T array.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#getData()">getData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>T array of entries</dd></dl>
+</li>
+</ul>
+<a name="getDataRef()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDataRef</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;getDataRef()</pre>
+<div class="block">Returns a reference to the underlying data array.
+ <p>Does not make a fresh copy of the underlying data.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>array of entries</dd></dl>
+</li>
+</ul>
+<a name="dotProduct(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dotProduct</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;dotProduct(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                     throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute the dot product.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#dotProduct(org.apache.commons.math3.linear.FieldVector)">dotProduct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector with which dot product should be computed</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the scalar dot product of <code>this</code> and <code>v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="dotProduct(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dotProduct</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;dotProduct(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                     throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Compute the dot product.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector with which dot product should be computed</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the scalar dot product of <code>this</code> and <code>v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as
+ <code>this</code></dd></dl>
+</li>
+</ul>
+<a name="projection(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>projection</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;projection(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                  throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a>,
+                                                         <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Find the orthogonal projection of this vector onto another vector.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#projection(org.apache.commons.math3.linear.FieldVector)">projection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector onto which <code>this</code> must be projected</dd>
+<dt><span class="strong">Returns:</span></dt><dd>projection of <code>this</code> onto <code>v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as <code>this</code></dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if <code>v</code> is the null vector.</dd></dl>
+</li>
+</ul>
+<a name="projection(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>projection</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;projection(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                                                       throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a>,
+                                                              <a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></pre>
+<div class="block">Find the orthogonal projection of this vector onto another vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector onto which <code>this</code> must be projected</dd>
+<dt><span class="strong">Returns:</span></dt><dd>projection of <code>this</code> onto <code>v</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if <code>v</code> is not the same size as
+ <code>this</code></dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></code> - if <code>v</code> is the null vector.</dd></dl>
+</li>
+</ul>
+<a name="outerProduct(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>outerProduct</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;outerProduct(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</pre>
+<div class="block">Compute the outer product.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#outerProduct(org.apache.commons.math3.linear.FieldVector)">outerProduct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector with which outer product should be computed</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the matrix outer product between instance and v</dd></dl>
+</li>
+</ul>
+<a name="outerProduct(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>outerProduct</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldMatrix.html" title="interface in org.apache.commons.math3.linear">FieldMatrix</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;outerProduct(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</pre>
+<div class="block">Compute the outer product.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector with which outer product should be computed</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the matrix outer product between instance and v</dd></dl>
+</li>
+</ul>
+<a name="getEntry(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntry</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;getEntry(int&nbsp;index)</pre>
+<div class="block">Returns the entry in the specified index.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#getEntry(int)">getEntry</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - Index location of entry to be fetched.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the vector entry at <code>index</code>.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#setEntry(int, T)"><code>FieldVector.setEntry(int, FieldElement)</code></a></dd></dl>
+</li>
+</ul>
+<a name="getDimension()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDimension</h4>
+<pre>public&nbsp;int&nbsp;getDimension()</pre>
+<div class="block">Returns the size of the vector.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#getDimension()">getDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>size</dd></dl>
+</li>
+</ul>
+<a name="append(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>append</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;append(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</pre>
+<div class="block">Construct a vector by appending a vector to this vector.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#append(org.apache.commons.math3.linear.FieldVector)">append</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to append to this one.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new vector</dd></dl>
+</li>
+</ul>
+<a name="append(org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>append</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;append(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)</pre>
+<div class="block">Construct a vector by appending a vector to this vector.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to append to this one.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new vector</dd></dl>
+</li>
+</ul>
+<a name="append(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="append(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>append</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;append(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;in)</pre>
+<div class="block">Construct a vector by appending a T to this vector.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#append(T)">append</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>in</code> - T to append.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new vector</dd></dl>
+</li>
+</ul>
+<a name="getSubVector(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSubVector</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;getSubVector(int&nbsp;index,
+                          int&nbsp;n)
+                                                    throws <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a>,
+                                                           <a href="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</a></pre>
+<div class="block">Get a subvector from consecutive elements.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#getSubVector(int, int)">getSubVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of first element.</dd><dd><code>n</code> - number of elements to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a vector containing n elements.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the index is not valid.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</a></code> - if the number of elements if not positive.</dd></dl>
+</li>
+</ul>
+<a name="setEntry(int,org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="setEntry(int, T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEntry</h4>
+<pre>public&nbsp;void&nbsp;setEntry(int&nbsp;index,
+            <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;value)</pre>
+<div class="block">Set a single element.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#setEntry(int, T)">setEntry</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - element index.</dd><dd><code>value</code> - new value for the element.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#getEntry(int)"><code>FieldVector.getEntry(int)</code></a></dd></dl>
+</li>
+</ul>
+<a name="setSubVector(int, org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSubVector</h4>
+<pre>public&nbsp;void&nbsp;setSubVector(int&nbsp;index,
+                <a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                  throws <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></pre>
+<div class="block">Set a set of consecutive elements.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#setSubVector(int, org.apache.commons.math3.linear.FieldVector)">setSubVector</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of first element to be set.</dd><dd><code>v</code> - vector containing the values to set.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the index is not valid.</dd></dl>
+</li>
+</ul>
+<a name="set(int, org.apache.commons.math3.linear.ArrayFieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>set</h4>
+<pre>public&nbsp;void&nbsp;set(int&nbsp;index,
+       <a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="class in org.apache.commons.math3.linear">ArrayFieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+         throws <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></pre>
+<div class="block">Set a set of consecutive elements.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of first element to be set.</dd><dd><code>v</code> - vector containing the values to set.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the index is invalid.</dd></dl>
+</li>
+</ul>
+<a name="set(org.apache.commons.math3.FieldElement)">
+<!--   -->
+</a><a name="set(T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>set</h4>
+<pre>public&nbsp;void&nbsp;set(<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;value)</pre>
+<div class="block">Set all elements to a single value.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#set(T)">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - single value to set for all elements</dd></dl>
+</li>
+</ul>
+<a name="toArray()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toArray</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>[]&nbsp;toArray()</pre>
+<div class="block">Convert the vector to a T array.
+ <p>The array is independent from vector data, it's elements
+ are copied.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html#toArray()">toArray</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a> extends <a href="../../../../../org/apache/commons/math3/FieldElement.html" title="interface in org.apache.commons.math3">FieldElement</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>array containing a copy of vector elements</dd></dl>
+</li>
+</ul>
+<a name="checkVectorDimensions(org.apache.commons.math3.linear.FieldVector)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkVectorDimensions</h4>
+<pre>protected&nbsp;void&nbsp;checkVectorDimensions(<a href="../../../../../org/apache/commons/math3/linear/FieldVector.html" title="interface in org.apache.commons.math3.linear">FieldVector</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;v)
+                              throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Check if instance and specified vectors have the same dimension.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - vector to compare instance with</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if the vectors do not
+ have the same dimensions</dd></dl>
+</li>
+</ul>
+<a name="checkVectorDimensions(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkVectorDimensions</h4>
+<pre>protected&nbsp;void&nbsp;checkVectorDimensions(int&nbsp;n)
+                              throws <a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></pre>
+<div class="block">Check if instance dimension is equal to some expected value.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>n</code> - Expected dimension.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if the dimension is not equal to the
+ size of <code>this</code> vector.</dd></dl>
+</li>
+</ul>
+<a name="walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInDefaultOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInDefaultOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</pre>
+<div class="block">Visits (but does not alter) all entries of this vector in default order
+ (increasing index).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - the visitor to be used to process the entries of this
+ vector</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html#end()"><code>FieldVectorPreservingVisitor.end()</code></a>
+ at the end of the walk</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInDefaultOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInDefaultOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                   int&nbsp;start,
+                   int&nbsp;end)
+                                             throws <a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a>,
+                                                    <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></pre>
+<div class="block">Visits (but does not alter) some entries of this vector in default order
+ (increasing index).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - visitor to be used to process the entries of this vector</dd><dd><code>start</code> - the index of the first entry to be visited</dd><dd><code>end</code> - the index of the last entry to be visited (inclusive)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html#end()"><code>FieldVectorPreservingVisitor.end()</code></a>
+ at the end of the walk</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a></code> - if <code>end &lt; start</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the indices are not valid.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInOptimizedOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInOptimizedOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</pre>
+<div class="block">Visits (but does not alter) all entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - the visitor to be used to process the entries of this
+ vector</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html#end()"><code>FieldVectorPreservingVisitor.end()</code></a>
+ at the end of the walk</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInOptimizedOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInOptimizedOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorPreservingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                     int&nbsp;start,
+                     int&nbsp;end)
+                                               throws <a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a>,
+                                                      <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></pre>
+<div class="block">Visits (but does not alter) some entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - visitor to be used to process the entries of this vector</dd><dd><code>start</code> - the index of the first entry to be visited</dd><dd><code>end</code> - the index of the last entry to be visited (inclusive)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorPreservingVisitor.html#end()"><code>FieldVectorPreservingVisitor.end()</code></a>
+ at the end of the walk</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a></code> - if <code>end &lt; start</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the indices are not valid.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInDefaultOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInDefaultOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</pre>
+<div class="block">Visits (and possibly alters) all entries of this vector in default order
+ (increasing index).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - the visitor to be used to process and modify the entries
+ of this vector</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html#end()"><code>FieldVectorChangingVisitor.end()</code></a>
+ at the end of the walk</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInDefaultOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInDefaultOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                   int&nbsp;start,
+                   int&nbsp;end)
+                                             throws <a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a>,
+                                                    <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></pre>
+<div class="block">Visits (and possibly alters) some entries of this vector in default order
+ (increasing index).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - visitor to be used to process the entries of this vector</dd><dd><code>start</code> - the index of the first entry to be visited</dd><dd><code>end</code> - the index of the last entry to be visited (inclusive)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html#end()"><code>FieldVectorChangingVisitor.end()</code></a>
+ at the end of the walk</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a></code> - if <code>end &lt; start</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the indices are not valid.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInOptimizedOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInOptimizedOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor)</pre>
+<div class="block">Visits (and possibly alters) all entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - the visitor to be used to process the entries of this
+ vector</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html#end()"><code>FieldVectorChangingVisitor.end()</code></a>
+ at the end of the walk</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkInOptimizedOrder</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&nbsp;walkInOptimizedOrder(<a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html" title="interface in org.apache.commons.math3.linear">FieldVectorChangingVisitor</a>&lt;<a href="../../../../../org/apache/commons/math3/linear/ArrayFieldVector.html" title="type parameter in ArrayFieldVector">T</a>&gt;&nbsp;visitor,
+                     int&nbsp;start,
+                     int&nbsp;end)
+                                               throws <a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a>,
+                                                      <a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></pre>
+<div class="block">Visits (and possibly change) some entries of this vector in optimized
+ order. The order in which the entries are visited is selected so as to
+ lead to the most efficient implementation; it might depend on the
+ concrete implementation of this abstract class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>visitor</code> - visitor to be used to process the entries of this vector</dd><dd><code>start</code> - the index of the first entry to be visited</dd><dd><code>end</code> - the index of the last entry to be visited (inclusive)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value returned by <a href="../../../../../org/apache/commons/math3/linear/FieldVectorChangingVisitor.html#end()"><code>FieldVectorChangingVisitor.end()</code></a>
+ at the end of the walk</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a></code> - if <code>end &lt; start</code>.</dd>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></code> - if the indices are not valid.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
+<div class="block">Test for the equality of two vectors.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - Object to test for equality.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if two vector objects are equal, <code>false</code>
+ otherwise.</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Get a hashCode for the real vector.
+ <p>All NaN values have the same hash code.</p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a hash code value for this object</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ArrayFieldVector.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/linear/Array2DRowRealMatrix.html" title="class in org.apache.commons.math3.linear"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/linear/ArrayRealVector.html" title="class in org.apache.commons.math3.linear"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/ArrayFieldVector.html" target="_top">Frames</a></li>
+<li><a href="ArrayFieldVector.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

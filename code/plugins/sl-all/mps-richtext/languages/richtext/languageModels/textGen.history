@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="mlaf" modelUID="r:1101f4ed-841e-4f34-bb3d-17fd9ac26a63(de.slisson.mps.wiki.editor)" version="-1" />
+      <model index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="0" />
+      <model index="62m1" modelUID="r:24ebb472-58a3-4e5e-9778-3dc7bb7e7352(de.slisson.mps.wiki.textGen)" version="-1" />
+      <model index="mb0i" modelUID="r:1a7d6571-b994-4c94-b318-fc0a54a71ead(de.slisson.mps.richtext.textGen)" version="0" />
+      <model index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="1" />
+      <model index="23h6" modelUID="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" version="0" />
+      <model index="2ivc" modelUID="r:e570e5e2-e6e7-4a92-a299-1c00d3ac5678(de.slisson.mps.wiki.behavior)" version="-1" />
+      <model index="q0t8" modelUID="r:64621ea8-86d0-4cf0-889f-9ed7a1311913(de.slisson.mps.wiki.structure)" version="-1" />
+    </dependencies>
+    <move id="87nw.3695793781940163289" to="q0t8.257181264606021597" />
+    <move id="87nw.3695793781940163290" to="q0t8.257181264606021598" />
+    <move id="87nw.3695793781940225035" to="q0t8.257181264606021600" />
+    <move id="87nw.3695793781940225037" to="q0t8.257181264606021601" />
+    <move id="87nw.3695793781940163288" to="q0t8.257181264606021596" />
+    <move id="87nw.3695793781940163291" to="q0t8.257181264606021599" />
+    <move id="mb0i.3695793781940166514" to="62m1.257181264606021605" />
+    <move id="mb0i.3695793781940165889" to="62m1.257181264606021603" />
+    <move id="mb0i.3695793781940166516" to="62m1.257181264606021606" />
+    <move id="mb0i.3695793781940165890" to="62m1.257181264606021604" />
+    <move id="mb0i.3695793781940166877" to="62m1.257181264606021608" />
+    <move id="mb0i.3695793781940166548" to="62m1.257181264606021611" />
+    <move id="mb0i.3695793781940166882" to="62m1.257181264606021610" />
+    <move id="mb0i.3695793781940166856" to="62m1.257181264606021609" />
+    <move id="mb0i.3695793781940166518" to="62m1.257181264606021607" />
+    <move id="mb0i.3695793781940165888" to="62m1.257181264606021602" />
+    <move id="tbr6.3695793781940232755" to="2ivc.257181264606021628" />
+    <move id="tbr6.3695793781940232631" to="2ivc.257181264606021619" />
+    <move id="tbr6.3695793781940232603" to="2ivc.257181264606021614" />
+    <move id="tbr6.3695793781940232653" to="2ivc.257181264606021616" />
+    <move id="tbr6.3695793781940232662" to="2ivc.257181264606021621" />
+    <move id="tbr6.3695793781940232604" to="2ivc.257181264606021615" />
+    <move id="tbr6.3695793781940232626" to="2ivc.257181264606021617" />
+    <move id="tbr6.3695793781940232711" to="2ivc.257181264606021623" />
+    <move id="tbr6.3695793781940232689" to="2ivc.257181264606021626" />
+    <move id="tbr6.3695793781940232663" to="2ivc.257181264606021625" />
+    <move id="tbr6.3695793781940232659" to="2ivc.257181264606021620" />
+    <move id="tbr6.3695793781940232605" to="2ivc.257181264606021618" />
+    <move id="tbr6.3695793781940232717" to="2ivc.257181264606021627" />
+    <move id="tbr6.3695793781940232601" to="2ivc.257181264606021612" />
+    <move id="tbr6.3695793781940232684" to="2ivc.257181264606021624" />
+    <move id="tbr6.3695793781940232602" to="2ivc.257181264606021613" />
+    <move id="tbr6.3695793781940232739" to="2ivc.257181264606021622" />
+    <move id="23h6.3695793781940163296" to="mlaf.257181264606021639" />
+    <move id="23h6.3695793781940163299" to="mlaf.257181264606021634" />
+    <move id="23h6.3695793781940163294" to="mlaf.257181264606021630" />
+    <move id="23h6.3695793781940163292" to="mlaf.257181264606021629" />
+    <move id="23h6.3695793781940232313" to="mlaf.257181264606021638" />
+    <move id="23h6.3695793781940166945" to="mlaf.257181264606021635" />
+    <move id="23h6.3695793781940232311" to="mlaf.257181264606021633" />
+    <move id="23h6.3695793781940163303" to="mlaf.257181264606021632" />
+    <move id="23h6.3695793781940163304" to="mlaf.257181264606021637" />
+    <move id="23h6.3695793781940163301" to="mlaf.257181264606021636" />
+    <move id="23h6.3695793781940163297" to="mlaf.257181264606021631" />
+  </StructureModification>
+</history>
+

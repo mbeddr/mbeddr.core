@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="p95z" modelUID="r:2722e860-5500-4f42-833a-7c360fc6b5b3(de.slisson.mps.javadoc.structure)" version="-1" />
+    </dependencies>
+    <rename id="p95z.842294157794129797" type="CONCEPT" from="SeeTag" to="SeeClassTag" />
+  </StructureModification>
+</history>
+
