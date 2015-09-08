@@ -349,6 +349,20 @@
   </registry>
   <node concept="312cEu" id="73BQep1N5pg">
     <property role="TrG5h" value="TestsSaver" />
+    <node concept="2tJIrI" id="71I9cJUfLbY" role="jymVt" />
+    <node concept="Wx3nA" id="71I9cJUfM1z" role="jymVt">
+      <property role="IEkAT" value="false" />
+      <property role="TrG5h" value="SHADOW_VARIABLES_PREFIX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="71I9cJUfJKi" role="1tU5fm" />
+      <node concept="3Tm6S6" id="71I9cJUfJKh" role="1B3o_S" />
+      <node concept="Xl_RD" id="71I9cJUfJKj" role="33vP2m">
+        <property role="Xl_RC" value="__s_" />
+      </node>
+      <node concept="NWlO9" id="71I9cJUfME0" role="lGtFl">
+        <property role="NWlVz" value="Marker for variables which will not be saved." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="73BQep1N5ph" role="jymVt" />
     <node concept="Wx3nA" id="1ENIgcpuXaJ" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -541,7 +555,7 @@
       <node concept="37vLTG" id="73BQep1N5sK" role="3clF46">
         <property role="TrG5h" value="tv" />
         <node concept="3uibUv" id="73BQep1N5sL" role="1tU5fm">
-          <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+          <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
         </node>
       </node>
       <node concept="37vLTG" id="73BQep1N5sM" role="3clF46">
@@ -579,7 +593,7 @@
       <node concept="37vLTG" id="73BQep1PKXx" role="3clF46">
         <property role="TrG5h" value="tv" />
         <node concept="3uibUv" id="73BQep1PKXy" role="1tU5fm">
-          <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+          <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
         </node>
       </node>
       <node concept="3clFbS" id="73BQep1PKTW" role="3clF47">
@@ -987,7 +1001,28 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="73BQep1PKVS" role="3cqZAp" />
+                <node concept="3clFbJ" id="71I9cJUfHWM" role="3cqZAp">
+                  <node concept="3clFbS" id="71I9cJUfHWO" role="3clFbx">
+                    <node concept="3N13vt" id="71I9cJUfMR1" role="3cqZAp" />
+                  </node>
+                  <node concept="2OqwBi" id="71I9cJUfIYW" role="3clFbw">
+                    <node concept="2OqwBi" id="71I9cJUfInj" role="2Oq$k0">
+                      <node concept="37vLTw" id="71I9cJUfIg3" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1ENIgcprGX9" resolve="assig" />
+                      </node>
+                      <node concept="liA8E" id="71I9cJUfIQY" role="2OqNvi">
+                        <ref role="37wK5l" to="e22t:7uiPZBC1oY9" resolve="getVarName" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="71I9cJUfJyV" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <node concept="37vLTw" id="71I9cJUfMJ_" role="37wK5m">
+                        <ref role="3cqZAo" node="71I9cJUfM1z" resolve="SHADOW_VARIABLES_PREFIX" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="71I9cJUfHxU" role="3cqZAp" />
                 <node concept="3clFbF" id="1ENIgcprHt8" role="3cqZAp">
                   <node concept="1rXfSq" id="1ENIgcprHt6" role="3clFbG">
                     <ref role="37wK5l" node="1ENIgcprCaf" resolve="debug" />
@@ -1208,7 +1243,7 @@
       <node concept="37vLTG" id="73BQep1N5sU" role="3clF46">
         <property role="TrG5h" value="tv" />
         <node concept="3uibUv" id="73BQep1N5sV" role="1tU5fm">
-          <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
+          <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
         </node>
       </node>
       <node concept="37vLTG" id="1ENIgcpsQ4H" role="3clF46">
