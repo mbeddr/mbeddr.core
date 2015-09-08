@@ -1,0 +1,1700 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>NumberUtils (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="NumberUtils (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/NumberUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html" title="class in org.apache.commons.lang3.math"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/math/NumberUtils.html" target="_top">Frames</a></li>
+<li><a href="NumberUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3.math</div>
+<h2 title="Class NumberUtils" class="title">Class NumberUtils</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.math.NumberUtils</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">NumberUtils</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><p>Provides extra functionality for Java Number classes.</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: NumberUtils.java 1582585 2014-03-28 03:10:27Z niallp $</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#BYTE_MINUS_ONE">BYTE_MINUS_ONE</a></strong></code>
+<div class="block">Reusable Byte constant for minus one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#BYTE_ONE">BYTE_ONE</a></strong></code>
+<div class="block">Reusable Byte constant for one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#BYTE_ZERO">BYTE_ZERO</a></strong></code>
+<div class="block">Reusable Byte constant for zero.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#DOUBLE_MINUS_ONE">DOUBLE_MINUS_ONE</a></strong></code>
+<div class="block">Reusable Double constant for minus one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#DOUBLE_ONE">DOUBLE_ONE</a></strong></code>
+<div class="block">Reusable Double constant for one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#DOUBLE_ZERO">DOUBLE_ZERO</a></strong></code>
+<div class="block">Reusable Double constant for zero.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#FLOAT_MINUS_ONE">FLOAT_MINUS_ONE</a></strong></code>
+<div class="block">Reusable Float constant for minus one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#FLOAT_ONE">FLOAT_ONE</a></strong></code>
+<div class="block">Reusable Float constant for one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#FLOAT_ZERO">FLOAT_ZERO</a></strong></code>
+<div class="block">Reusable Float constant for zero.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#INTEGER_MINUS_ONE">INTEGER_MINUS_ONE</a></strong></code>
+<div class="block">Reusable Integer constant for minus one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#INTEGER_ONE">INTEGER_ONE</a></strong></code>
+<div class="block">Reusable Integer constant for one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#INTEGER_ZERO">INTEGER_ZERO</a></strong></code>
+<div class="block">Reusable Integer constant for zero.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#LONG_MINUS_ONE">LONG_MINUS_ONE</a></strong></code>
+<div class="block">Reusable Long constant for minus one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#LONG_ONE">LONG_ONE</a></strong></code>
+<div class="block">Reusable Long constant for one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#LONG_ZERO">LONG_ZERO</a></strong></code>
+<div class="block">Reusable Long constant for zero.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#SHORT_MINUS_ONE">SHORT_MINUS_ONE</a></strong></code>
+<div class="block">Reusable Short constant for minus one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#SHORT_ONE">SHORT_ONE</a></strong></code>
+<div class="block">Reusable Short constant for one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#SHORT_ZERO">SHORT_ZERO</a></strong></code>
+<div class="block">Reusable Short constant for zero.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#NumberUtils()">NumberUtils</a></strong>()</code>
+<div class="block"><code>NumberUtils</code> instances should NOT be constructed in standard programming.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math">BigDecimal</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createBigDecimal(java.lang.String)">createBigDecimal</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>BigDecimal</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createBigInteger(java.lang.String)">createBigInteger</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>BigInteger</code>;
+ since 3.2 it handles hex (0x or #) and octal (0) notations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createDouble(java.lang.String)">createDouble</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>Double</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createFloat(java.lang.String)">createFloat</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>Float</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createInteger(java.lang.String)">createInteger</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>Integer</code>, handling
+ hex (0xhhhh) and octal (0dddd) notations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createLong(java.lang.String)">createLong</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>Long</code>; 
+ since 3.1 it handles hex (0Xhhhh) and octal (0ddd) notations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#createNumber(java.lang.String)">createNumber</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Turns a string value into a java.lang.Number.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#isDigits(java.lang.String)">isDigits</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Checks whether the <code>String</code> contains only
+ digit characters.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#isNumber(java.lang.String)">isNumber</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Checks whether the String a valid Java number.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(byte[])">max</a></strong>(byte[]&nbsp;array)</code>
+<div class="block">Returns the maximum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(byte, byte, byte)">max</a></strong>(byte&nbsp;a,
+   byte&nbsp;b,
+   byte&nbsp;c)</code>
+<div class="block">Gets the maximum of three <code>byte</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(double[])">max</a></strong>(double[]&nbsp;array)</code>
+<div class="block">Returns the maximum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(double, double, double)">max</a></strong>(double&nbsp;a,
+   double&nbsp;b,
+   double&nbsp;c)</code>
+<div class="block">Gets the maximum of three <code>double</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(float[])">max</a></strong>(float[]&nbsp;array)</code>
+<div class="block">Returns the maximum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(float, float, float)">max</a></strong>(float&nbsp;a,
+   float&nbsp;b,
+   float&nbsp;c)</code>
+<div class="block">Gets the maximum of three <code>float</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(int[])">max</a></strong>(int[]&nbsp;array)</code>
+<div class="block">Returns the maximum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(int, int, int)">max</a></strong>(int&nbsp;a,
+   int&nbsp;b,
+   int&nbsp;c)</code>
+<div class="block">Gets the maximum of three <code>int</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(long[])">max</a></strong>(long[]&nbsp;array)</code>
+<div class="block">Returns the maximum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(long, long, long)">max</a></strong>(long&nbsp;a,
+   long&nbsp;b,
+   long&nbsp;c)</code>
+<div class="block">Gets the maximum of three <code>long</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(short[])">max</a></strong>(short[]&nbsp;array)</code>
+<div class="block">Returns the maximum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#max(short, short, short)">max</a></strong>(short&nbsp;a,
+   short&nbsp;b,
+   short&nbsp;c)</code>
+<div class="block">Gets the maximum of three <code>short</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(byte[])">min</a></strong>(byte[]&nbsp;array)</code>
+<div class="block">Returns the minimum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(byte, byte, byte)">min</a></strong>(byte&nbsp;a,
+   byte&nbsp;b,
+   byte&nbsp;c)</code>
+<div class="block">Gets the minimum of three <code>byte</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(double[])">min</a></strong>(double[]&nbsp;array)</code>
+<div class="block">Returns the minimum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(double, double, double)">min</a></strong>(double&nbsp;a,
+   double&nbsp;b,
+   double&nbsp;c)</code>
+<div class="block">Gets the minimum of three <code>double</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(float[])">min</a></strong>(float[]&nbsp;array)</code>
+<div class="block">Returns the minimum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(float, float, float)">min</a></strong>(float&nbsp;a,
+   float&nbsp;b,
+   float&nbsp;c)</code>
+<div class="block">Gets the minimum of three <code>float</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(int[])">min</a></strong>(int[]&nbsp;array)</code>
+<div class="block">Returns the minimum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(int, int, int)">min</a></strong>(int&nbsp;a,
+   int&nbsp;b,
+   int&nbsp;c)</code>
+<div class="block">Gets the minimum of three <code>int</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(long[])">min</a></strong>(long[]&nbsp;array)</code>
+<div class="block">Returns the minimum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(long, long, long)">min</a></strong>(long&nbsp;a,
+   long&nbsp;b,
+   long&nbsp;c)</code>
+<div class="block">Gets the minimum of three <code>long</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(short[])">min</a></strong>(short[]&nbsp;array)</code>
+<div class="block">Returns the minimum value in an array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#min(short, short, short)">min</a></strong>(short&nbsp;a,
+   short&nbsp;b,
+   short&nbsp;c)</code>
+<div class="block">Gets the minimum of three <code>short</code> values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toByte(java.lang.String)">toByte</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>byte</code>, returning
+ <code>zero</code> if the conversion fails.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static byte</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toByte(java.lang.String, byte)">toByte</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+      byte&nbsp;defaultValue)</code>
+<div class="block">Convert a <code>String</code> to a <code>byte</code>, returning a
+ default value if the conversion fails.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toDouble(java.lang.String)">toDouble</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>double</code>, returning
+ <code>0.0d</code> if the conversion fails.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toDouble(java.lang.String, double)">toDouble</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+        double&nbsp;defaultValue)</code>
+<div class="block">Convert a <code>String</code> to a <code>double</code>, returning a
+ default value if the conversion fails.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toFloat(java.lang.String)">toFloat</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>float</code>, returning
+ <code>0.0f</code> if the conversion fails.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toFloat(java.lang.String, float)">toFloat</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+       float&nbsp;defaultValue)</code>
+<div class="block">Convert a <code>String</code> to a <code>float</code>, returning a
+ default value if the conversion fails.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toInt(java.lang.String)">toInt</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to an <code>int</code>, returning
+ <code>zero</code> if the conversion fails.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toInt(java.lang.String, int)">toInt</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+     int&nbsp;defaultValue)</code>
+<div class="block">Convert a <code>String</code> to an <code>int</code>, returning a
+ default value if the conversion fails.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toLong(java.lang.String)">toLong</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>long</code>, returning
+ <code>zero</code> if the conversion fails.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toLong(java.lang.String, long)">toLong</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+      long&nbsp;defaultValue)</code>
+<div class="block">Convert a <code>String</code> to a <code>long</code>, returning a
+ default value if the conversion fails.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toShort(java.lang.String)">toShort</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Convert a <code>String</code> to a <code>short</code>, returning
+ <code>zero</code> if the conversion fails.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/NumberUtils.html#toShort(java.lang.String, short)">toShort</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+       short&nbsp;defaultValue)</code>
+<div class="block">Convert a <code>String</code> to an <code>short</code>, returning a
+ default value if the conversion fails.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="LONG_ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LONG_ZERO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a> LONG_ZERO</pre>
+<div class="block">Reusable Long constant for zero.</div>
+</li>
+</ul>
+<a name="LONG_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LONG_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a> LONG_ONE</pre>
+<div class="block">Reusable Long constant for one.</div>
+</li>
+</ul>
+<a name="LONG_MINUS_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LONG_MINUS_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a> LONG_MINUS_ONE</pre>
+<div class="block">Reusable Long constant for minus one.</div>
+</li>
+</ul>
+<a name="INTEGER_ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INTEGER_ZERO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a> INTEGER_ZERO</pre>
+<div class="block">Reusable Integer constant for zero.</div>
+</li>
+</ul>
+<a name="INTEGER_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INTEGER_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a> INTEGER_ONE</pre>
+<div class="block">Reusable Integer constant for one.</div>
+</li>
+</ul>
+<a name="INTEGER_MINUS_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INTEGER_MINUS_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a> INTEGER_MINUS_ONE</pre>
+<div class="block">Reusable Integer constant for minus one.</div>
+</li>
+</ul>
+<a name="SHORT_ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SHORT_ZERO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a> SHORT_ZERO</pre>
+<div class="block">Reusable Short constant for zero.</div>
+</li>
+</ul>
+<a name="SHORT_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SHORT_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a> SHORT_ONE</pre>
+<div class="block">Reusable Short constant for one.</div>
+</li>
+</ul>
+<a name="SHORT_MINUS_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SHORT_MINUS_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a> SHORT_MINUS_ONE</pre>
+<div class="block">Reusable Short constant for minus one.</div>
+</li>
+</ul>
+<a name="BYTE_ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BYTE_ZERO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a> BYTE_ZERO</pre>
+<div class="block">Reusable Byte constant for zero.</div>
+</li>
+</ul>
+<a name="BYTE_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BYTE_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a> BYTE_ONE</pre>
+<div class="block">Reusable Byte constant for one.</div>
+</li>
+</ul>
+<a name="BYTE_MINUS_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BYTE_MINUS_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a> BYTE_MINUS_ONE</pre>
+<div class="block">Reusable Byte constant for minus one.</div>
+</li>
+</ul>
+<a name="DOUBLE_ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DOUBLE_ZERO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a> DOUBLE_ZERO</pre>
+<div class="block">Reusable Double constant for zero.</div>
+</li>
+</ul>
+<a name="DOUBLE_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DOUBLE_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a> DOUBLE_ONE</pre>
+<div class="block">Reusable Double constant for one.</div>
+</li>
+</ul>
+<a name="DOUBLE_MINUS_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DOUBLE_MINUS_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a> DOUBLE_MINUS_ONE</pre>
+<div class="block">Reusable Double constant for minus one.</div>
+</li>
+</ul>
+<a name="FLOAT_ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FLOAT_ZERO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a> FLOAT_ZERO</pre>
+<div class="block">Reusable Float constant for zero.</div>
+</li>
+</ul>
+<a name="FLOAT_ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FLOAT_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a> FLOAT_ONE</pre>
+<div class="block">Reusable Float constant for one.</div>
+</li>
+</ul>
+<a name="FLOAT_MINUS_ONE">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>FLOAT_MINUS_ONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a> FLOAT_MINUS_ONE</pre>
+<div class="block">Reusable Float constant for minus one.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="NumberUtils()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NumberUtils</h4>
+<pre>public&nbsp;NumberUtils()</pre>
+<div class="block"><p><code>NumberUtils</code> instances should NOT be constructed in standard programming.
+ Instead, the class should be used as <code>NumberUtils.toInt("6");</code>.</p>
+
+ <p>This constructor is public to permit tools that require a JavaBean instance
+ to operate.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="toInt(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toInt</h4>
+<pre>public static&nbsp;int&nbsp;toInt(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to an <code>int</code>, returning
+ <code>zero</code> if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, <code>zero</code> is returned.</p>
+
+ <pre>
+   NumberUtils.toInt(null) = 0
+   NumberUtils.toInt("")   = 0
+   NumberUtils.toInt("1")  = 1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the int represented by the string, or <code>zero</code> if
+  conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toInt(java.lang.String, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toInt</h4>
+<pre>public static&nbsp;int&nbsp;toInt(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+        int&nbsp;defaultValue)</pre>
+<div class="block"><p>Convert a <code>String</code> to an <code>int</code>, returning a
+ default value if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, the default value is returned.</p>
+
+ <pre>
+   NumberUtils.toInt(null, 1) = 1
+   NumberUtils.toInt("", 1)   = 1
+   NumberUtils.toInt("1", 0)  = 1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd><dd><code>defaultValue</code> - the default value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the int represented by the string, or the default if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toLong(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toLong</h4>
+<pre>public static&nbsp;long&nbsp;toLong(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>long</code>, returning
+ <code>zero</code> if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, <code>zero</code> is returned.</p>
+
+ <pre>
+   NumberUtils.toLong(null) = 0L
+   NumberUtils.toLong("")   = 0L
+   NumberUtils.toLong("1")  = 1L
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the long represented by the string, or <code>0</code> if
+  conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toLong(java.lang.String, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toLong</h4>
+<pre>public static&nbsp;long&nbsp;toLong(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+          long&nbsp;defaultValue)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>long</code>, returning a
+ default value if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, the default value is returned.</p>
+
+ <pre>
+   NumberUtils.toLong(null, 1L) = 1L
+   NumberUtils.toLong("", 1L)   = 1L
+   NumberUtils.toLong("1", 0L)  = 1L
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd><dd><code>defaultValue</code> - the default value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the long represented by the string, or the default if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toFloat(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toFloat</h4>
+<pre>public static&nbsp;float&nbsp;toFloat(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>float</code>, returning
+ <code>0.0f</code> if the conversion fails.</p>
+
+ <p>If the string <code>str</code> is <code>null</code>,
+ <code>0.0f</code> is returned.</p>
+
+ <pre>
+   NumberUtils.toFloat(null)   = 0.0f
+   NumberUtils.toFloat("")     = 0.0f
+   NumberUtils.toFloat("1.5")  = 1.5f
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the float represented by the string, or <code>0.0f</code>
+  if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toFloat(java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toFloat</h4>
+<pre>public static&nbsp;float&nbsp;toFloat(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+            float&nbsp;defaultValue)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>float</code>, returning a
+ default value if the conversion fails.</p>
+
+ <p>If the string <code>str</code> is <code>null</code>, the default
+ value is returned.</p>
+
+ <pre>
+   NumberUtils.toFloat(null, 1.1f)   = 1.0f
+   NumberUtils.toFloat("", 1.1f)     = 1.1f
+   NumberUtils.toFloat("1.5", 0.0f)  = 1.5f
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be <code>null</code></dd><dd><code>defaultValue</code> - the default value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the float represented by the string, or defaultValue
+  if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toDouble(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toDouble</h4>
+<pre>public static&nbsp;double&nbsp;toDouble(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>double</code>, returning
+ <code>0.0d</code> if the conversion fails.</p>
+
+ <p>If the string <code>str</code> is <code>null</code>,
+ <code>0.0d</code> is returned.</p>
+
+ <pre>
+   NumberUtils.toDouble(null)   = 0.0d
+   NumberUtils.toDouble("")     = 0.0d
+   NumberUtils.toDouble("1.5")  = 1.5d
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the double represented by the string, or <code>0.0d</code>
+  if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toDouble(java.lang.String, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toDouble</h4>
+<pre>public static&nbsp;double&nbsp;toDouble(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+              double&nbsp;defaultValue)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>double</code>, returning a
+ default value if the conversion fails.</p>
+
+ <p>If the string <code>str</code> is <code>null</code>, the default
+ value is returned.</p>
+
+ <pre>
+   NumberUtils.toDouble(null, 1.1d)   = 1.1d
+   NumberUtils.toDouble("", 1.1d)     = 1.1d
+   NumberUtils.toDouble("1.5", 0.0d)  = 1.5d
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be <code>null</code></dd><dd><code>defaultValue</code> - the default value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the double represented by the string, or defaultValue
+  if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="toByte(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toByte</h4>
+<pre>public static&nbsp;byte&nbsp;toByte(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>byte</code>, returning
+ <code>zero</code> if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, <code>zero</code> is returned.</p>
+
+ <pre>
+   NumberUtils.toByte(null) = 0
+   NumberUtils.toByte("")   = 0
+   NumberUtils.toByte("1")  = 1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the byte represented by the string, or <code>zero</code> if
+  conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.5</dd></dl>
+</li>
+</ul>
+<a name="toByte(java.lang.String, byte)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toByte</h4>
+<pre>public static&nbsp;byte&nbsp;toByte(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+          byte&nbsp;defaultValue)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>byte</code>, returning a
+ default value if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, the default value is returned.</p>
+
+ <pre>
+   NumberUtils.toByte(null, 1) = 1
+   NumberUtils.toByte("", 1)   = 1
+   NumberUtils.toByte("1", 0)  = 1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd><dd><code>defaultValue</code> - the default value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the byte represented by the string, or the default if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.5</dd></dl>
+</li>
+</ul>
+<a name="toShort(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toShort</h4>
+<pre>public static&nbsp;short&nbsp;toShort(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>short</code>, returning
+ <code>zero</code> if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, <code>zero</code> is returned.</p>
+
+ <pre>
+   NumberUtils.toShort(null) = 0
+   NumberUtils.toShort("")   = 0
+   NumberUtils.toShort("1")  = 1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the short represented by the string, or <code>zero</code> if
+  conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.5</dd></dl>
+</li>
+</ul>
+<a name="toShort(java.lang.String, short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toShort</h4>
+<pre>public static&nbsp;short&nbsp;toShort(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str,
+            short&nbsp;defaultValue)</pre>
+<div class="block"><p>Convert a <code>String</code> to an <code>short</code>, returning a
+ default value if the conversion fails.</p>
+
+ <p>If the string is <code>null</code>, the default value is returned.</p>
+
+ <pre>
+   NumberUtils.toShort(null, 1) = 1
+   NumberUtils.toShort("", 1)   = 1
+   NumberUtils.toShort("1", 0)  = 1
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to convert, may be null</dd><dd><code>defaultValue</code> - the default value</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the short represented by the string, or the default if conversion fails</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.5</dd></dl>
+</li>
+</ul>
+<a name="createNumber(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createNumber</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;createNumber(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)
+                           throws <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></pre>
+<div class="block"><p>Turns a string value into a java.lang.Number.</p>
+
+ <p>If the string starts with <code>0x</code> or <code>-0x</code> (lower or upper case) or <code>#</code> or <code>-#</code>, it
+ will be interpreted as a hexadecimal Integer - or Long, if the number of digits after the
+ prefix is more than 8 - or BigInteger if there are more than 16 digits.
+ </p>
+ <p>Then, the value is examined for a type qualifier on the end, i.e. one of
+ <code>'f','F','d','D','l','L'</code>.  If it is found, it starts 
+ trying to create successively larger types from the type specified
+ until one is found that can represent the value.</p>
+
+ <p>If a type specifier is not found, it will check for a decimal point
+ and then try successively larger types from <code>Integer</code> to
+ <code>BigInteger</code> and from <code>Float</code> to
+ <code>BigDecimal</code>.</p>
+ 
+ <p>
+ Integral values with a leading <code>0</code> will be interpreted as octal; the returned number will
+ be Integer, Long or BigDecimal as appropriate.
+ </p>
+
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p>
+
+ <p>This method does not trim the input string, i.e., strings with leading
+ or trailing spaces will generate NumberFormatExceptions.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - String containing a number, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>Number created from the string (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="createFloat(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createFloat</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang">Float</a>&nbsp;createFloat(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>Float</code>.</p>
+
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - a <code>String</code> to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>converted <code>Float</code> (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="createDouble(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDouble</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;createDouble(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>Double</code>.</p>
+ 
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - a <code>String</code> to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>converted <code>Double</code> (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="createInteger(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createInteger</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;createInteger(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>Integer</code>, handling
+ hex (0xhhhh) and octal (0dddd) notations.
+ N.B. a leading zero means octal; spaces are not trimmed.</p>
+
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - a <code>String</code> to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>converted <code>Integer</code> (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="createLong(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createLong</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;createLong(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>Long</code>; 
+ since 3.1 it handles hex (0Xhhhh) and octal (0ddd) notations.
+ N.B. a leading zero means octal; spaces are not trimmed.</p>
+ 
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - a <code>String</code> to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>converted <code>Long</code> (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="createBigInteger(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createBigInteger</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</a>&nbsp;createBigInteger(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>BigInteger</code>;
+ since 3.2 it handles hex (0x or #) and octal (0) notations.</p>
+
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - a <code>String</code> to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>converted <code>BigInteger</code> (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="createBigDecimal(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createBigDecimal</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html?is-external=true" title="class or interface in java.math">BigDecimal</a>&nbsp;createBigDecimal(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Convert a <code>String</code> to a <code>BigDecimal</code>.</p>
+ 
+ <p>Returns <code>null</code> if the string is <code>null</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - a <code>String</code> to convert, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>converted <code>BigDecimal</code> (or null if the input is null)</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the value cannot be converted</dd></dl>
+</li>
+</ul>
+<a name="min(long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;long&nbsp;min(long[]&nbsp;array)</pre>
+<div class="block"><p>Returns the minimum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="min(int[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;int&nbsp;min(int[]&nbsp;array)</pre>
+<div class="block"><p>Returns the minimum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="min(short[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;short&nbsp;min(short[]&nbsp;array)</pre>
+<div class="block"><p>Returns the minimum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="min(byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;byte&nbsp;min(byte[]&nbsp;array)</pre>
+<div class="block"><p>Returns the minimum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="min(double[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;double&nbsp;min(double[]&nbsp;array)</pre>
+<div class="block"><p>Returns the minimum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#min(double[])"><code>IEEE754rUtils for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="min(float[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;float&nbsp;min(float[]&nbsp;array)</pre>
+<div class="block"><p>Returns the minimum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#min(float[])"><code>IEEE754rUtils for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="max(long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;long&nbsp;max(long[]&nbsp;array)</pre>
+<div class="block"><p>Returns the maximum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="max(int[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;int&nbsp;max(int[]&nbsp;array)</pre>
+<div class="block"><p>Returns the maximum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="max(short[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;short&nbsp;max(short[]&nbsp;array)</pre>
+<div class="block"><p>Returns the maximum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="max(byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;byte&nbsp;max(byte[]&nbsp;array)</pre>
+<div class="block"><p>Returns the maximum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd></dl>
+</li>
+</ul>
+<a name="max(double[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;double&nbsp;max(double[]&nbsp;array)</pre>
+<div class="block"><p>Returns the maximum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#max(double[])"><code>IEEE754rUtils for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="max(float[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;float&nbsp;max(float[]&nbsp;array)</pre>
+<div class="block"><p>Returns the maximum value in an array.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>array</code> - an array, must not be null or empty</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value in the array</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>array</code> is empty</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#max(float[])"><code>IEEE754rUtils for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="min(long, long, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;long&nbsp;min(long&nbsp;a,
+       long&nbsp;b,
+       long&nbsp;c)</pre>
+<div class="block"><p>Gets the minimum of three <code>long</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest of the values</dd></dl>
+</li>
+</ul>
+<a name="min(int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;int&nbsp;min(int&nbsp;a,
+      int&nbsp;b,
+      int&nbsp;c)</pre>
+<div class="block"><p>Gets the minimum of three <code>int</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest of the values</dd></dl>
+</li>
+</ul>
+<a name="min(short, short, short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;short&nbsp;min(short&nbsp;a,
+        short&nbsp;b,
+        short&nbsp;c)</pre>
+<div class="block"><p>Gets the minimum of three <code>short</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest of the values</dd></dl>
+</li>
+</ul>
+<a name="min(byte, byte, byte)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;byte&nbsp;min(byte&nbsp;a,
+       byte&nbsp;b,
+       byte&nbsp;c)</pre>
+<div class="block"><p>Gets the minimum of three <code>byte</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest of the values</dd></dl>
+</li>
+</ul>
+<a name="min(double, double, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;double&nbsp;min(double&nbsp;a,
+         double&nbsp;b,
+         double&nbsp;c)</pre>
+<div class="block"><p>Gets the minimum of three <code>double</code> values.</p>
+ 
+ <p>If any value is <code>NaN</code>, <code>NaN</code> is
+ returned. Infinity is handled.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest of the values</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#min(double, double, double)"><code>for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="min(float, float, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>min</h4>
+<pre>public static&nbsp;float&nbsp;min(float&nbsp;a,
+        float&nbsp;b,
+        float&nbsp;c)</pre>
+<div class="block"><p>Gets the minimum of three <code>float</code> values.</p>
+ 
+ <p>If any value is <code>NaN</code>, <code>NaN</code> is
+ returned. Infinity is handled.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest of the values</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#min(float, float, float)"><code>for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="max(long, long, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;long&nbsp;max(long&nbsp;a,
+       long&nbsp;b,
+       long&nbsp;c)</pre>
+<div class="block"><p>Gets the maximum of three <code>long</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest of the values</dd></dl>
+</li>
+</ul>
+<a name="max(int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;int&nbsp;max(int&nbsp;a,
+      int&nbsp;b,
+      int&nbsp;c)</pre>
+<div class="block"><p>Gets the maximum of three <code>int</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest of the values</dd></dl>
+</li>
+</ul>
+<a name="max(short, short, short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;short&nbsp;max(short&nbsp;a,
+        short&nbsp;b,
+        short&nbsp;c)</pre>
+<div class="block"><p>Gets the maximum of three <code>short</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest of the values</dd></dl>
+</li>
+</ul>
+<a name="max(byte, byte, byte)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;byte&nbsp;max(byte&nbsp;a,
+       byte&nbsp;b,
+       byte&nbsp;c)</pre>
+<div class="block"><p>Gets the maximum of three <code>byte</code> values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest of the values</dd></dl>
+</li>
+</ul>
+<a name="max(double, double, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;double&nbsp;max(double&nbsp;a,
+         double&nbsp;b,
+         double&nbsp;c)</pre>
+<div class="block"><p>Gets the maximum of three <code>double</code> values.</p>
+ 
+ <p>If any value is <code>NaN</code>, <code>NaN</code> is
+ returned. Infinity is handled.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest of the values</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#max(double, double, double)"><code>for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="max(float, float, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>max</h4>
+<pre>public static&nbsp;float&nbsp;max(float&nbsp;a,
+        float&nbsp;b,
+        float&nbsp;c)</pre>
+<div class="block"><p>Gets the maximum of three <code>float</code> values.</p>
+ 
+ <p>If any value is <code>NaN</code>, <code>NaN</code> is
+ returned. Infinity is handled.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>a</code> - value 1</dd><dd><code>b</code> - value 2</dd><dd><code>c</code> - value 3</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest of the values</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html#max(float, float, float)"><code>for a version of this method that handles NaN differently</code></a></dd></dl>
+</li>
+</ul>
+<a name="isDigits(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDigits</h4>
+<pre>public static&nbsp;boolean&nbsp;isDigits(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Checks whether the <code>String</code> contains only
+ digit characters.</p>
+
+ <p><code>Null</code> and empty String will return
+ <code>false</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the <code>String</code> to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if str contains only Unicode numeric</dd></dl>
+</li>
+</ul>
+<a name="isNumber(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isNumber</h4>
+<pre>public static&nbsp;boolean&nbsp;isNumber(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Checks whether the String a valid Java number.</p>
+
+ <p>Valid numbers include hexadecimal marked with the <code>0x</code>
+ qualifier, scientific notation and numbers marked with a type
+ qualifier (e.g. 123L).</p>
+
+ <p><code>Null</code> and empty String will return
+ <code>false</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the <code>String</code> to check</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the string is a correctly formatted number</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3 the code supports hex <code>0Xhhh</code> and octal <code>0ddd</code> validation</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/NumberUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html" title="class in org.apache.commons.lang3.math"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/math/NumberUtils.html" target="_top">Frames</a></li>
+<li><a href="NumberUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>SingularValueDecomposition (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SingularValueDecomposition (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SingularValueDecomposition.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/linear/SingularOperatorException.html" title="class in org.apache.commons.math3.linear"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/linear/SparseFieldMatrix.html" title="class in org.apache.commons.math3.linear"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/SingularValueDecomposition.html" target="_top">Frames</a></li>
+<li><a href="SingularValueDecomposition.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.linear</div>
+<h2 title="Class SingularValueDecomposition" class="title">Class SingularValueDecomposition</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.linear.SingularValueDecomposition</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">SingularValueDecomposition</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Calculates the compact Singular Value Decomposition of a matrix.
+ <p>
+ The Singular Value Decomposition of matrix A is a set of three matrices: U,
+ &Sigma; and V such that A = U &times; &Sigma; &times; V<sup>T</sup>. Let A be
+ a m &times; n matrix, then U is a m &times; p orthogonal matrix, &Sigma; is a
+ p &times; p diagonal matrix with positive or null elements, V is a p &times;
+ n orthogonal matrix (hence V<sup>T</sup> is also orthogonal) where
+ p=min(m,n).
+ </p>
+ <p>This class is similar to the class with similar name from the
+ <a href="http://math.nist.gov/javanumerics/jama/">JAMA</a> library, with the
+ following changes:</p>
+ <ul>
+   <li>the <code>norm2</code> method which has been renamed as <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getNorm()"><code>getNorm</code></a>,</li>
+   <li>the <code>cond</code> method which has been renamed as <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getConditionNumber()"><code>getConditionNumber</code></a>,</li>
+   <li>the <code>rank</code> method which has been renamed as <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getRank()"><code>getRank</code></a>,</li>
+   <li>a <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getUT()"><code>getUT</code></a> method has been added,</li>
+   <li>a <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getVT()"><code>getVT</code></a> method has been added,</li>
+   <li>a <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getSolver()"><code>getSolver</code></a> method has been added,</li>
+   <li>a <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getCovariance(double)"><code>getCovariance</code></a> method has been added.</li>
+ </ul></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0 (changed to concrete class in 3.0)</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: SingularValueDecomposition.java 1538368 2013-11-03 13:57:37Z erans $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://mathworld.wolfram.com/SingularValueDecomposition.html">MathWorld</a>, 
+<a href="http://en.wikipedia.org/wiki/Singular_value_decomposition">Wikipedia</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#SingularValueDecomposition(org.apache.commons.math3.linear.RealMatrix)">SingularValueDecomposition</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;matrix)</code>
+<div class="block">Calculates the compact Singular Value Decomposition of the given matrix.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getConditionNumber()">getConditionNumber</a></strong>()</code>
+<div class="block">Return the condition number of the matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getCovariance(double)">getCovariance</a></strong>(double&nbsp;minSingularValue)</code>
+<div class="block">Returns the n &times; n covariance matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getInverseConditionNumber()">getInverseConditionNumber</a></strong>()</code>
+<div class="block">Computes the inverse of the condition number.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getNorm()">getNorm</a></strong>()</code>
+<div class="block">Returns the L<sub>2</sub> norm of the matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getRank()">getRank</a></strong>()</code>
+<div class="block">Return the effective numerical matrix rank.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getS()">getS</a></strong>()</code>
+<div class="block">Returns the diagonal matrix &Sigma; of the decomposition.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getSingularValues()">getSingularValues</a></strong>()</code>
+<div class="block">Returns the diagonal elements of the matrix &Sigma; of the decomposition.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getSolver()">getSolver</a></strong>()</code>
+<div class="block">Get a solver for finding the A &times; X = B solution in least square sense.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getU()">getU</a></strong>()</code>
+<div class="block">Returns the matrix U of the decomposition.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getUT()">getUT</a></strong>()</code>
+<div class="block">Returns the transpose of the matrix U of the decomposition.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getV()">getV</a></strong>()</code>
+<div class="block">Returns the matrix V of the decomposition.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getVT()">getVT</a></strong>()</code>
+<div class="block">Returns the transpose of the matrix V of the decomposition.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SingularValueDecomposition(org.apache.commons.math3.linear.RealMatrix)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SingularValueDecomposition</h4>
+<pre>public&nbsp;SingularValueDecomposition(<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;matrix)</pre>
+<div class="block">Calculates the compact Singular Value Decomposition of the given matrix.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>matrix</code> - Matrix to decompose.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getU()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getU</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getU()</pre>
+<div class="block">Returns the matrix U of the decomposition.
+ <p>U is an orthogonal matrix, i.e. its transpose is also its inverse.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the U matrix</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getUT()"><code>getUT()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getUT()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUT</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getUT()</pre>
+<div class="block">Returns the transpose of the matrix U of the decomposition.
+ <p>U is an orthogonal matrix, i.e. its transpose is also its inverse.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the U matrix (or null if decomposed matrix is singular)</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getU()"><code>getU()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getS()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getS</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getS()</pre>
+<div class="block">Returns the diagonal matrix &Sigma; of the decomposition.
+ <p>&Sigma; is a diagonal matrix. The singular values are provided in
+ non-increasing order, for compatibility with Jama.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the &Sigma; matrix</dd></dl>
+</li>
+</ul>
+<a name="getSingularValues()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSingularValues</h4>
+<pre>public&nbsp;double[]&nbsp;getSingularValues()</pre>
+<div class="block">Returns the diagonal elements of the matrix &Sigma; of the decomposition.
+ <p>The singular values are provided in non-increasing order, for
+ compatibility with Jama.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the diagonal elements of the &Sigma; matrix</dd></dl>
+</li>
+</ul>
+<a name="getV()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getV</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getV()</pre>
+<div class="block">Returns the matrix V of the decomposition.
+ <p>V is an orthogonal matrix, i.e. its transpose is also its inverse.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the V matrix (or null if decomposed matrix is singular)</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getVT()"><code>getVT()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getVT()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVT</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getVT()</pre>
+<div class="block">Returns the transpose of the matrix V of the decomposition.
+ <p>V is an orthogonal matrix, i.e. its transpose is also its inverse.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the V matrix (or null if decomposed matrix is singular)</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getV()"><code>getV()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getCovariance(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCovariance</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getCovariance(double&nbsp;minSingularValue)</pre>
+<div class="block">Returns the n &times; n covariance matrix.
+ <p>The covariance matrix is V &times; J &times; V<sup>T</sup>
+ where J is the diagonal matrix of the inverse of the squares of
+ the singular values.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>minSingularValue</code> - value below which singular values are ignored
+ (a 0 or negative value implies all singular value will be used)</dd>
+<dt><span class="strong">Returns:</span></dt><dd>covariance matrix</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if minSingularValue is larger than
+ the largest singular value, meaning all singular values are ignored</dd></dl>
+</li>
+</ul>
+<a name="getNorm()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNorm</h4>
+<pre>public&nbsp;double&nbsp;getNorm()</pre>
+<div class="block">Returns the L<sub>2</sub> norm of the matrix.
+ <p>The L<sub>2</sub> norm is max(|A &times; u|<sub>2</sub> /
+ |u|<sub>2</sub>), where |.|<sub>2</sub> denotes the vectorial 2-norm
+ (i.e. the traditional euclidian norm).</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>norm</dd></dl>
+</li>
+</ul>
+<a name="getConditionNumber()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConditionNumber</h4>
+<pre>public&nbsp;double&nbsp;getConditionNumber()</pre>
+<div class="block">Return the condition number of the matrix.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>condition number of the matrix</dd></dl>
+</li>
+</ul>
+<a name="getInverseConditionNumber()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInverseConditionNumber</h4>
+<pre>public&nbsp;double&nbsp;getInverseConditionNumber()</pre>
+<div class="block">Computes the inverse of the condition number.
+ In cases of rank deficiency, the <a href="../../../../../org/apache/commons/math3/linear/SingularValueDecomposition.html#getConditionNumber()"><code>condition
+ number</code></a> will become undefined.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the inverse of the condition number.</dd></dl>
+</li>
+</ul>
+<a name="getRank()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRank</h4>
+<pre>public&nbsp;int&nbsp;getRank()</pre>
+<div class="block">Return the effective numerical matrix rank.
+ <p>The effective numerical rank is the number of non-negligible
+ singular values. The threshold used to identify non-negligible
+ terms is max(m,n) &times; ulp(s<sub>1</sub>) where ulp(s<sub>1</sub>)
+ is the least significant bit of the largest singular value.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>effective numerical matrix rank</dd></dl>
+</li>
+</ul>
+<a name="getSolver()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getSolver</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</a>&nbsp;getSolver()</pre>
+<div class="block">Get a solver for finding the A &times; X = B solution in least square sense.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a solver</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SingularValueDecomposition.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/linear/SingularOperatorException.html" title="class in org.apache.commons.math3.linear"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/linear/SparseFieldMatrix.html" title="class in org.apache.commons.math3.linear"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/SingularValueDecomposition.html" target="_top">Frames</a></li>
+<li><a href="SingularValueDecomposition.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

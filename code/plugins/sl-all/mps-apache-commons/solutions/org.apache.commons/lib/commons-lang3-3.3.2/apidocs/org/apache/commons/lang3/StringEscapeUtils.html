@@ -1,0 +1,1130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>StringEscapeUtils (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StringEscapeUtils (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/StringEscapeUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/commons/lang3/SerializationUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/commons/lang3/StringUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/commons/lang3/StringEscapeUtils.html" target="_top">Frames</a></li>
+<li><a href="StringEscapeUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3</div>
+<h2 title="Class StringEscapeUtils" class="title">Class StringEscapeUtils</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.StringEscapeUtils</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">StringEscapeUtils</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><p>Escapes and unescapes <code>String</code>s for
+ Java, Java Script, HTML and XML.</p>
+
+ <p>#ThreadSafe#</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: StringEscapeUtils.java 1583482 2014-03-31 22:54:57Z niallp $</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_CSV">ESCAPE_CSV</a></strong></code>
+<div class="block">Translator object for escaping individual Comma Separated Values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_ECMASCRIPT">ESCAPE_ECMASCRIPT</a></strong></code>
+<div class="block">Translator object for escaping EcmaScript/JavaScript.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_HTML3">ESCAPE_HTML3</a></strong></code>
+<div class="block">Translator object for escaping HTML version 3.0.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_HTML4">ESCAPE_HTML4</a></strong></code>
+<div class="block">Translator object for escaping HTML version 4.0.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_JAVA">ESCAPE_JAVA</a></strong></code>
+<div class="block">Translator object for escaping Java.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_JSON">ESCAPE_JSON</a></strong></code>
+<div class="block">Translator object for escaping Json.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML">ESCAPE_XML</a></strong></code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>use <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML10"><code>ESCAPE_XML10</code></a> or <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML11"><code>ESCAPE_XML11</code></a> instead.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML10">ESCAPE_XML10</a></strong></code>
+<div class="block">Translator object for escaping XML 1.0.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML11">ESCAPE_XML11</a></strong></code>
+<div class="block">Translator object for escaping XML 1.1.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_CSV">UNESCAPE_CSV</a></strong></code>
+<div class="block">Translator object for unescaping escaped Comma Separated Value entries.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_ECMASCRIPT">UNESCAPE_ECMASCRIPT</a></strong></code>
+<div class="block">Translator object for unescaping escaped EcmaScript.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_HTML3">UNESCAPE_HTML3</a></strong></code>
+<div class="block">Translator object for unescaping escaped HTML 3.0.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_HTML4">UNESCAPE_HTML4</a></strong></code>
+<div class="block">Translator object for unescaping escaped HTML 4.0.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_JAVA">UNESCAPE_JAVA</a></strong></code>
+<div class="block">Translator object for unescaping escaped Java.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_JSON">UNESCAPE_JSON</a></strong></code>
+<div class="block">Translator object for unescaping escaped Json.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#UNESCAPE_XML">UNESCAPE_XML</a></strong></code>
+<div class="block">Translator object for unescaping escaped XML.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#StringEscapeUtils()">StringEscapeUtils</a></strong>()</code>
+<div class="block"><code>StringEscapeUtils</code> instances should NOT be constructed in
+ standard programming.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeCsv(java.lang.String)">escapeCsv</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Returns a <code>String</code> value for a CSV column enclosed in double quotes,
+ if required.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeEcmaScript(java.lang.String)">escapeEcmaScript</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using EcmaScript String rules.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml3(java.lang.String)">escapeHtml3</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using HTML entities.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml4(java.lang.String)">escapeHtml4</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using HTML entities.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeJava(java.lang.String)">escapeJava</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using Java String rules.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeJson(java.lang.String)">escapeJson</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using Json String rules.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml(java.lang.String)">escapeXml</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>use <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml10(java.lang.String)"><code>escapeXml10(java.lang.String)</code></a> or <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml11(java.lang.String)"><code>escapeXml11(java.lang.String)</code></a> instead.</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml10(java.lang.String)">escapeXml10</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using XML entities.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml11(java.lang.String)">escapeXml11</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Escapes the characters in a <code>String</code> using XML entities.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeCsv(java.lang.String)">unescapeCsv</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Returns a <code>String</code> value for an unescaped CSV column.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeEcmaScript(java.lang.String)">unescapeEcmaScript</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Unescapes any EcmaScript literals found in the <code>String</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeHtml3(java.lang.String)">unescapeHtml3</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Unescapes a string containing entity escapes to a string
+ containing the actual Unicode characters corresponding to the
+ escapes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeHtml4(java.lang.String)">unescapeHtml4</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Unescapes a string containing entity escapes to a string
+ containing the actual Unicode characters corresponding to the
+ escapes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeJava(java.lang.String)">unescapeJava</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Unescapes any Java literals found in the <code>String</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeJson(java.lang.String)">unescapeJson</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Unescapes any Json literals found in the <code>String</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeXml(java.lang.String)">unescapeXml</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
+<div class="block">Unescapes a string containing XML entity escapes to a string
+ containing the actual Unicode characters corresponding to the
+ escapes.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ESCAPE_JAVA">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_JAVA</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_JAVA</pre>
+<div class="block">Translator object for escaping Java. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeJava(java.lang.String)"><code>escapeJava(String)</code></a> is the expected method of use, this 
+ object allows the Java escaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_ECMASCRIPT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_ECMASCRIPT</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_ECMASCRIPT</pre>
+<div class="block">Translator object for escaping EcmaScript/JavaScript. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeEcmaScript(java.lang.String)"><code>escapeEcmaScript(String)</code></a> is the expected method of use, this 
+ object allows the EcmaScript escaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_JSON">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_JSON</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_JSON</pre>
+<div class="block">Translator object for escaping Json.
+
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeJson(java.lang.String)"><code>escapeJson(String)</code></a> is the expected method of use, this
+ object allows the Json escaping functionality to be used
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_XML">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_XML</h4>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_XML</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>use <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML10"><code>ESCAPE_XML10</code></a> or <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#ESCAPE_XML11"><code>ESCAPE_XML11</code></a> instead.</i></div>
+<div class="block">Translator object for escaping XML.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml(java.lang.String)"><code>escapeXml(String)</code></a> is the expected method of use, this 
+ object allows the XML escaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_XML10">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_XML10</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_XML10</pre>
+<div class="block">Translator object for escaping XML 1.0.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml10(java.lang.String)"><code>escapeXml10(String)</code></a> is the expected method of use, this
+ object allows the XML escaping functionality to be used
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_XML11">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_XML11</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_XML11</pre>
+<div class="block">Translator object for escaping XML 1.1.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml11(java.lang.String)"><code>escapeXml11(String)</code></a> is the expected method of use, this
+ object allows the XML escaping functionality to be used
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_HTML3">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_HTML3</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_HTML3</pre>
+<div class="block">Translator object for escaping HTML version 3.0.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml3(java.lang.String)"><code>escapeHtml3(String)</code></a> is the expected method of use, this 
+ object allows the HTML escaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_HTML4">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_HTML4</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_HTML4</pre>
+<div class="block">Translator object for escaping HTML version 4.0.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeHtml4(java.lang.String)"><code>escapeHtml4(String)</code></a> is the expected method of use, this 
+ object allows the HTML escaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="ESCAPE_CSV">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ESCAPE_CSV</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> ESCAPE_CSV</pre>
+<div class="block">Translator object for escaping individual Comma Separated Values. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeCsv(java.lang.String)"><code>escapeCsv(String)</code></a> is the expected method of use, this 
+ object allows the CSV escaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_JAVA">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNESCAPE_JAVA</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_JAVA</pre>
+<div class="block">Translator object for unescaping escaped Java. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeJava(java.lang.String)"><code>unescapeJava(String)</code></a> is the expected method of use, this 
+ object allows the Java unescaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_ECMASCRIPT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNESCAPE_ECMASCRIPT</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_ECMASCRIPT</pre>
+<div class="block">Translator object for unescaping escaped EcmaScript. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeEcmaScript(java.lang.String)"><code>unescapeEcmaScript(String)</code></a> is the expected method of use, this 
+ object allows the EcmaScript unescaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_JSON">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNESCAPE_JSON</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_JSON</pre>
+<div class="block">Translator object for unescaping escaped Json.
+
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeJson(java.lang.String)"><code>unescapeJson(String)</code></a> is the expected method of use, this
+ object allows the Json unescaping functionality to be used
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_HTML3">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNESCAPE_HTML3</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_HTML3</pre>
+<div class="block">Translator object for unescaping escaped HTML 3.0. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeHtml3(java.lang.String)"><code>unescapeHtml3(String)</code></a> is the expected method of use, this 
+ object allows the HTML unescaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_HTML4">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNESCAPE_HTML4</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_HTML4</pre>
+<div class="block">Translator object for unescaping escaped HTML 4.0. 
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeHtml4(java.lang.String)"><code>unescapeHtml4(String)</code></a> is the expected method of use, this 
+ object allows the HTML unescaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_XML">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNESCAPE_XML</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_XML</pre>
+<div class="block">Translator object for unescaping escaped XML.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeXml(java.lang.String)"><code>unescapeXml(String)</code></a> is the expected method of use, this 
+ object allows the XML unescaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="UNESCAPE_CSV">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UNESCAPE_CSV</h4>
+<pre>public static final&nbsp;<a href="../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" title="class in org.apache.commons.lang3.text.translate">CharSequenceTranslator</a> UNESCAPE_CSV</pre>
+<div class="block">Translator object for unescaping escaped Comma Separated Value entries.
+ 
+ While <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeCsv(java.lang.String)"><code>unescapeCsv(String)</code></a> is the expected method of use, this 
+ object allows the CSV unescaping functionality to be used 
+ as the foundation for a custom translator.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="StringEscapeUtils()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>StringEscapeUtils</h4>
+<pre>public&nbsp;StringEscapeUtils()</pre>
+<div class="block"><p><code>StringEscapeUtils</code> instances should NOT be constructed in
+ standard programming.</p>
+
+ <p>Instead, the class should be used as:</p>
+ <pre>StringEscapeUtils.escapeJava("foo");</pre>
+
+ <p>This constructor is public to permit tools that require a JavaBean
+ instance to operate.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="escapeJava(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeJava</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeJava(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using Java String rules.</p>
+
+ <p>Deals correctly with quotes and control-chars (tab, backslash, cr, ff, etc.) </p>
+
+ <p>So a tab becomes the characters <code>'\\'</code> and
+ <code>'t'</code>.</p>
+
+ <p>The only difference between Java strings and JavaScript strings
+ is that in JavaScript, a single quote and forward-slash (/) are escaped.</p>
+
+ <p>Example:</p>
+ <pre>
+ input string: He didn't say, "Stop!"
+ output string: He didn't say, \"Stop!\"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - String to escape values in, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>String with escaped values, <code>null</code> if null string input</dd></dl>
+</li>
+</ul>
+<a name="escapeEcmaScript(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeEcmaScript</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeEcmaScript(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using EcmaScript String rules.</p>
+ <p>Escapes any values it finds into their EcmaScript String form.
+ Deals correctly with quotes and control-chars (tab, backslash, cr, ff, etc.) </p>
+
+ <p>So a tab becomes the characters <code>'\\'</code> and
+ <code>'t'</code>.</p>
+
+ <p>The only difference between Java strings and EcmaScript strings
+ is that in EcmaScript, a single quote and forward-slash (/) are escaped.</p>
+
+ <p>Note that EcmaScript is best known by the JavaScript and ActionScript dialects. </p>
+
+ <p>Example:</p>
+ <pre>
+ input string: He didn't say, "Stop!"
+ output string: He didn\'t say, \"Stop!\"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - String to escape values in, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>String with escaped values, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="escapeJson(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeJson</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeJson(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using Json String rules.</p>
+ <p>Escapes any values it finds into their Json String form.
+ Deals correctly with quotes and control-chars (tab, backslash, cr, ff, etc.) </p>
+
+ <p>So a tab becomes the characters <code>'\\'</code> and
+ <code>'t'</code>.</p>
+
+ <p>The only difference between Java strings and Json strings
+ is that in Json, forward-slash (/) is escaped.</p>
+
+ <p>See http://www.ietf.org/rfc/rfc4627.txt for further details. </p>
+
+ <p>Example:</p>
+ <pre>
+ input string: He didn't say, "Stop!"
+ output string: He didn't say, \"Stop!\"
+ </pre></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - String to escape values in, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>String with escaped values, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+<a name="unescapeJava(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unescapeJava</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeJava(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Unescapes any Java literals found in the <code>String</code>.
+ For example, it will turn a sequence of <code>'\'</code> and
+ <code>'n'</code> into a newline character, unless the <code>'\'</code>
+ is preceded by another <code>'\'</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to unescape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new unescaped <code>String</code>, <code>null</code> if null string input</dd></dl>
+</li>
+</ul>
+<a name="unescapeEcmaScript(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unescapeEcmaScript</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeEcmaScript(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Unescapes any EcmaScript literals found in the <code>String</code>.</p>
+
+ <p>For example, it will turn a sequence of <code>'\'</code> and <code>'n'</code>
+ into a newline character, unless the <code>'\'</code> is preceded by another
+ <code>'\'</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to unescape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>A new unescaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeJava(java.lang.String)"><code>unescapeJava(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="unescapeJson(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unescapeJson</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeJson(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Unescapes any Json literals found in the <code>String</code>.</p>
+
+ <p>For example, it will turn a sequence of <code>'\'</code> and <code>'n'</code>
+ into a newline character, unless the <code>'\'</code> is preceded by another
+ <code>'\'</code>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to unescape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>A new unescaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeJava(java.lang.String)"><code>unescapeJava(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="escapeHtml4(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeHtml4</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeHtml4(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using HTML entities.</p>
+
+ <p>
+ For example:
+ </p> 
+ <p><code>"bread" &amp; "butter"</code></p>
+ becomes:
+ <p>
+ <code>&amp;quot;bread&amp;quot; &amp;amp; &amp;quot;butter&amp;quot;</code>.
+ </p>
+
+ <p>Supports all known HTML 4.0 entities, including funky accents.
+ Note that the commonly used apostrophe escape character (&amp;apos;)
+ is not a legal entity and so is not supported). </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to escape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new escaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://hotwired.lycos.com/webmonkey/reference/special_characters/">ISO Entities</a>, 
+<a href="http://www.w3.org/TR/REC-html32#latin1">HTML 3.2 Character Entities for ISO Latin-1</a>, 
+<a href="http://www.w3.org/TR/REC-html40/sgml/entities.html">HTML 4.0 Character entity references</a>, 
+<a href="http://www.w3.org/TR/html401/charset.html#h-5.3">HTML 4.01 Character References</a>, 
+<a href="http://www.w3.org/TR/html401/charset.html#code-position">HTML 4.01 Code positions</a></dd></dl>
+</li>
+</ul>
+<a name="escapeHtml3(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeHtml3</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeHtml3(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using HTML entities.</p>
+ <p>Supports only the HTML 3.0 entities. </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to escape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new escaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="unescapeHtml4(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unescapeHtml4</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeHtml4(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Unescapes a string containing entity escapes to a string
+ containing the actual Unicode characters corresponding to the
+ escapes. Supports HTML 4.0 entities.</p>
+
+ <p>For example, the string "&amp;lt;Fran&amp;ccedil;ais&amp;gt;"
+ will become "&lt;Fran&ccedil;ais&gt;"</p>
+
+ <p>If an entity is unrecognized, it is left alone, and inserted
+ verbatim into the result string. e.g. "&amp;gt;&amp;zzzz;x" will
+ become "&gt;&amp;zzzz;x".</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to unescape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new unescaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="unescapeHtml3(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unescapeHtml3</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeHtml3(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Unescapes a string containing entity escapes to a string
+ containing the actual Unicode characters corresponding to the
+ escapes. Supports only HTML 3.0 entities.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to unescape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new unescaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="escapeXml(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeXml</h4>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeXml(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>use <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml10(java.lang.String)"><code>escapeXml10(java.lang.String)</code></a> or <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml11(java.lang.String)"><code>escapeXml11(java.lang.String)</code></a> instead.</i></div>
+<div class="block"><p>Escapes the characters in a <code>String</code> using XML entities.</p>
+
+ <p>For example: <tt>"bread" &amp; "butter"</tt> =&gt;
+ <tt>&amp;quot;bread&amp;quot; &amp;amp; &amp;quot;butter&amp;quot;</tt>.
+ </p>
+
+ <p>Supports only the five basic XML entities (gt, lt, quot, amp, apos).
+ Does not support DTDs or external entities.</p>
+
+ <p>Note that Unicode characters greater than 0x7f are as of 3.0, no longer 
+    escaped. If you still wish this functionality, you can achieve it 
+    via the following: 
+ <code>StringEscapeUtils.ESCAPE_XML.with( NumericEntityEscaper.between(0x7f, Integer.MAX_VALUE) );</code></p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to escape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new escaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeXml(java.lang.String)"><code>unescapeXml(java.lang.String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="escapeXml10(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeXml10</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeXml10(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using XML entities.</p>
+
+ <p>For example: <tt>"bread" &amp; "butter"</tt> =&gt;
+ <tt>&amp;quot;bread&amp;quot; &amp;amp; &amp;quot;butter&amp;quot;</tt>.
+ </p>
+
+ <p>Note that XML 1.0 is a text-only format: it cannot represent control
+ characters or unpaired Unicode surrogate codepoints, even after escaping.
+ <code>escapeXml10</code> will remove characters that do not fit in the
+ following ranges:</p>
+ 
+ <p><code>#x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]</code></p>
+ 
+ <p>Though not strictly necessary, <code>escapeXml10</code> will escape
+ characters in the following ranges:</p>
+ 
+ <p><code>[#x7F-#x84] | [#x86-#x9F]</code></p>
+ 
+ <p>The returned string can be inserted into a valid XML 1.0 or XML 1.1
+ document. If you want to allow more non-text characters in an XML 1.1
+ document, use <a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml11(java.lang.String)"><code>escapeXml11(String)</code></a>.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to escape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new escaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeXml(java.lang.String)"><code>unescapeXml(java.lang.String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="escapeXml11(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeXml11</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeXml11(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Escapes the characters in a <code>String</code> using XML entities.</p>
+
+ <p>For example: <tt>"bread" &amp; "butter"</tt> =&gt;
+ <tt>&amp;quot;bread&amp;quot; &amp;amp; &amp;quot;butter&amp;quot;</tt>.
+ </p>
+
+ <p>XML 1.1 can represent certain control characters, but it cannot represent
+ the null byte or unpaired Unicode surrogate codepoints, even after escaping.
+ <code>escapeXml11</code> will remove characters that do not fit in the following
+ ranges:</p>
+ 
+ <p><code>[#x1-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]</code></p>
+ 
+ <p><code>escapeXml11</code> will escape characters in the following ranges:</p>
+ 
+ <p><code>[#x1-#x8] | [#xB-#xC] | [#xE-#x1F] | [#x7F-#x84] | [#x86-#x9F]</code></p>
+ 
+ <p>The returned string can be inserted into a valid XML 1.1 document. Do not
+ use it for XML 1.0 documents.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to escape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new escaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#unescapeXml(java.lang.String)"><code>unescapeXml(java.lang.String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="unescapeXml(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unescapeXml</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeXml(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Unescapes a string containing XML entity escapes to a string
+ containing the actual Unicode characters corresponding to the
+ escapes.</p>
+
+ <p>Supports only the five basic XML entities (gt, lt, quot, amp, apos).
+ Does not support DTDs or external entities.</p>
+
+ <p>Note that numerical \\u Unicode codes are unescaped to their respective 
+    Unicode characters. This may change in future releases. </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the <code>String</code> to unescape, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new unescaped <code>String</code>, <code>null</code> if null string input</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml(java.lang.String)"><code>escapeXml(String)</code></a>, 
+<a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml10(java.lang.String)"><code>escapeXml10(String)</code></a>, 
+<a href="../../../../org/apache/commons/lang3/StringEscapeUtils.html#escapeXml11(java.lang.String)"><code>escapeXml11(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="escapeCsv(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>escapeCsv</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;escapeCsv(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Returns a <code>String</code> value for a CSV column enclosed in double quotes,
+ if required.</p>
+
+ <p>If the value contains a comma, newline or double quote, then the
+    String value is returned enclosed in double quotes.</p>
+
+ <p>Any double quote characters in the value are escaped with another double quote.</p>
+
+ <p>If the value does not contain a comma, newline or double quote, then the
+    String value is returned unchanged.</p>
+
+ see <a href="http://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia</a> and
+ <a href="http://tools.ietf.org/html/rfc4180">RFC 4180</a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the input CSV column String, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the input String, enclosed in double quotes if the value contains a comma,
+ newline or double quote, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd></dl>
+</li>
+</ul>
+<a name="unescapeCsv(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>unescapeCsv</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;unescapeCsv(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
+<div class="block"><p>Returns a <code>String</code> value for an unescaped CSV column. </p>
+
+ <p>If the value is enclosed in double quotes, and contains a comma, newline 
+    or double quote, then quotes are removed. 
+ </p>
+
+ <p>Any double quote escaped characters (a pair of double quotes) are unescaped 
+    to just one double quote. </p>
+
+ <p>If the value is not enclosed in double quotes, or is and does not contain a 
+    comma, newline or double quote, then the String value is returned unchanged.</p>
+
+ see <a href="http://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia</a> and
+ <a href="http://tools.ietf.org/html/rfc4180">RFC 4180</a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>input</code> - the input CSV column String, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the input String, with enclosing double quotes removed and embedded double 
+ quotes unescaped, <code>null</code> if null string input</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/StringEscapeUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/commons/lang3/SerializationUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/commons/lang3/StringUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/commons/lang3/StringEscapeUtils.html" target="_top">Frames</a></li>
+<li><a href="StringEscapeUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

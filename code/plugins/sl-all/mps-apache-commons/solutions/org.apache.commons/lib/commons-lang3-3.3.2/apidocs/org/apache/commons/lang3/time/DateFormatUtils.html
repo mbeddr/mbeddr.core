@@ -1,0 +1,798 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>DateFormatUtils (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DateFormatUtils (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DateFormatUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/lang3/time/DateParser.html" title="interface in org.apache.commons.lang3.time"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/time/DateFormatUtils.html" target="_top">Frames</a></li>
+<li><a href="DateFormatUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3.time</div>
+<h2 title="Class DateFormatUtils" class="title">Class DateFormatUtils</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.time.DateFormatUtils</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">DateFormatUtils</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><p>Date and time formatting utilities and constants.</p>
+
+ <p>Formatting is performed using the thread-safe
+ <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time"><code>FastDateFormat</code></a> class.</p>
+
+ <p>Note that the JDK has a bug wherein calling Calendar.get(int) will 
+ override any previously called Calendar.clear() calls. See LANG-755.</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: DateFormatUtils.java 1436770 2013-01-22 07:09:45Z ggregory $</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_DATE_FORMAT">ISO_DATE_FORMAT</a></strong></code>
+<div class="block">ISO8601 formatter for date without time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_DATE_TIME_ZONE_FORMAT">ISO_DATE_TIME_ZONE_FORMAT</a></strong></code>
+<div class="block">ISO8601-like formatter for date with time zone.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_DATETIME_FORMAT">ISO_DATETIME_FORMAT</a></strong></code>
+<div class="block">ISO8601 formatter for date-time without time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_DATETIME_TIME_ZONE_FORMAT">ISO_DATETIME_TIME_ZONE_FORMAT</a></strong></code>
+<div class="block">ISO8601 formatter for date-time with time zone.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_TIME_FORMAT">ISO_TIME_FORMAT</a></strong></code>
+<div class="block">ISO8601 formatter for time without time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_TIME_NO_T_FORMAT">ISO_TIME_NO_T_FORMAT</a></strong></code>
+<div class="block">ISO8601-like formatter for time without time zone.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_TIME_NO_T_TIME_ZONE_FORMAT">ISO_TIME_NO_T_TIME_ZONE_FORMAT</a></strong></code>
+<div class="block">ISO8601-like formatter for time with time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#ISO_TIME_TIME_ZONE_FORMAT">ISO_TIME_TIME_ZONE_FORMAT</a></strong></code>
+<div class="block">ISO8601 formatter for time with time zone.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#SMTP_DATETIME_FORMAT">SMTP_DATETIME_FORMAT</a></strong></code>
+<div class="block">SMTP (and probably other) date headers.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#DateFormatUtils()">DateFormatUtils</a></strong>()</code>
+<div class="block">DateFormatUtils instances should NOT be constructed in standard programming.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Calendar, java.lang.String)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>
+<div class="block">Formats a calendar into a specific pattern.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Calendar, java.lang.String, java.util.Locale)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a calendar into a specific pattern in a locale.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Calendar, java.lang.String, java.util.TimeZone)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone)</code>
+<div class="block">Formats a calendar into a specific pattern in a time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Calendar, java.lang.String, java.util.TimeZone, java.util.Locale)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a calendar into a specific pattern in a time zone  and locale.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Date, java.lang.String)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>
+<div class="block">Formats a date/time into a specific pattern.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Date, java.lang.String, java.util.Locale)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a date/time into a specific pattern in a locale.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Date, java.lang.String, java.util.TimeZone)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone)</code>
+<div class="block">Formats a date/time into a specific pattern in a time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(java.util.Date, java.lang.String, java.util.TimeZone, java.util.Locale)">format</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a date/time into a specific pattern in a time zone  and locale.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(long, java.lang.String)">format</a></strong>(long&nbsp;millis,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>
+<div class="block">Formats a date/time into a specific pattern.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(long, java.lang.String, java.util.Locale)">format</a></strong>(long&nbsp;millis,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a date/time into a specific pattern in a locale.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(long, java.lang.String, java.util.TimeZone)">format</a></strong>(long&nbsp;millis,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone)</code>
+<div class="block">Formats a date/time into a specific pattern in a time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#format(long, java.lang.String, java.util.TimeZone, java.util.Locale)">format</a></strong>(long&nbsp;millis,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a date/time into a specific pattern in a time zone  and locale.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#formatUTC(java.util.Date, java.lang.String)">formatUTC</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+         <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>
+<div class="block">Formats a date/time into a specific pattern using the UTC time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#formatUTC(java.util.Date, java.lang.String, java.util.Locale)">formatUTC</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+         <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+         <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a date/time into a specific pattern using the UTC time zone.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#formatUTC(long, java.lang.String)">formatUTC</a></strong>(long&nbsp;millis,
+         <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>
+<div class="block">Formats a date/time into a specific pattern using the UTC time zone.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/time/DateFormatUtils.html#formatUTC(long, java.lang.String, java.util.Locale)">formatUTC</a></strong>(long&nbsp;millis,
+         <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+         <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</code>
+<div class="block">Formats a date/time into a specific pattern using the UTC time zone.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ISO_DATETIME_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_DATETIME_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_DATETIME_FORMAT</pre>
+<div class="block">ISO8601 formatter for date-time without time zone.
+ The format used is <tt>yyyy-MM-dd'T'HH:mm:ss</tt>.</div>
+</li>
+</ul>
+<a name="ISO_DATETIME_TIME_ZONE_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_DATETIME_TIME_ZONE_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_DATETIME_TIME_ZONE_FORMAT</pre>
+<div class="block">ISO8601 formatter for date-time with time zone.
+ The format used is <tt>yyyy-MM-dd'T'HH:mm:ssZZ</tt>.</div>
+</li>
+</ul>
+<a name="ISO_DATE_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_DATE_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_DATE_FORMAT</pre>
+<div class="block">ISO8601 formatter for date without time zone.
+ The format used is <tt>yyyy-MM-dd</tt>.</div>
+</li>
+</ul>
+<a name="ISO_DATE_TIME_ZONE_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_DATE_TIME_ZONE_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_DATE_TIME_ZONE_FORMAT</pre>
+<div class="block">ISO8601-like formatter for date with time zone.
+ The format used is <tt>yyyy-MM-ddZZ</tt>.
+ This pattern does not comply with the formal ISO8601 specification
+ as the standard does not allow a time zone  without a time.</div>
+</li>
+</ul>
+<a name="ISO_TIME_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_TIME_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_TIME_FORMAT</pre>
+<div class="block">ISO8601 formatter for time without time zone.
+ The format used is <tt>'T'HH:mm:ss</tt>.</div>
+</li>
+</ul>
+<a name="ISO_TIME_TIME_ZONE_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_TIME_TIME_ZONE_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_TIME_TIME_ZONE_FORMAT</pre>
+<div class="block">ISO8601 formatter for time with time zone.
+ The format used is <tt>'T'HH:mm:ssZZ</tt>.</div>
+</li>
+</ul>
+<a name="ISO_TIME_NO_T_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_TIME_NO_T_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_TIME_NO_T_FORMAT</pre>
+<div class="block">ISO8601-like formatter for time without time zone.
+ The format used is <tt>HH:mm:ss</tt>.
+ This pattern does not comply with the formal ISO8601 specification
+ as the standard requires the 'T' prefix for times.</div>
+</li>
+</ul>
+<a name="ISO_TIME_NO_T_TIME_ZONE_FORMAT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ISO_TIME_NO_T_TIME_ZONE_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> ISO_TIME_NO_T_TIME_ZONE_FORMAT</pre>
+<div class="block">ISO8601-like formatter for time with time zone.
+ The format used is <tt>HH:mm:ssZZ</tt>.
+ This pattern does not comply with the formal ISO8601 specification
+ as the standard requires the 'T' prefix for times.</div>
+</li>
+</ul>
+<a name="SMTP_DATETIME_FORMAT">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SMTP_DATETIME_FORMAT</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html" title="class in org.apache.commons.lang3.time">FastDateFormat</a> SMTP_DATETIME_FORMAT</pre>
+<div class="block">SMTP (and probably other) date headers.
+ The format used is <tt>EEE, dd MMM yyyy HH:mm:ss Z</tt> in US locale.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="DateFormatUtils()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DateFormatUtils</h4>
+<pre>public&nbsp;DateFormatUtils()</pre>
+<div class="block"><p>DateFormatUtils instances should NOT be constructed in standard programming.</p>
+
+ <p>This constructor is public to permit tools that require a JavaBean instance
+ to operate.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="formatUTC(long, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatUTC</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatUTC(long&nbsp;millis,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern using the UTC time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>millis</code> - the date to format expressed in milliseconds</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="formatUTC(java.util.Date, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatUTC</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatUTC(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern using the UTC time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>date</code> - the date to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="formatUTC(long, java.lang.String, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatUTC</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatUTC(long&nbsp;millis,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern using the UTC time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>millis</code> - the date to format expressed in milliseconds</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="formatUTC(java.util.Date, java.lang.String, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatUTC</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatUTC(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern using the UTC time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>date</code> - the date to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(long, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(long&nbsp;millis,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>millis</code> - the date to format expressed in milliseconds</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Date, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>date</code> - the date to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Calendar, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
+<div class="block"><p>Formats a calendar into a specific pattern.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>calendar</code> - the calendar to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the calendar, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted calendar</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html#format(java.util.Calendar)"><code>FastDateFormat.format(Calendar)</code></a></dd></dl>
+</li>
+</ul>
+<a name="format(long, java.lang.String, java.util.TimeZone)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(long&nbsp;millis,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern in a time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>millis</code> - the time expressed in milliseconds</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>timeZone</code> - the time zone  to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Date, java.lang.String, java.util.TimeZone)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern in a time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>date</code> - the date to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>timeZone</code> - the time zone  to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Calendar, java.lang.String, java.util.TimeZone)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone)</pre>
+<div class="block"><p>Formats a calendar into a specific pattern in a time zone.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>calendar</code> - the calendar to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the calendar, not null</dd><dd><code>timeZone</code> - the time zone  to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted calendar</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html#format(java.util.Calendar)"><code>FastDateFormat.format(Calendar)</code></a></dd></dl>
+</li>
+</ul>
+<a name="format(long, java.lang.String, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(long&nbsp;millis,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern in a locale.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>millis</code> - the date to format expressed in milliseconds</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Date, java.lang.String, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern in a locale.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>date</code> - the date to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Calendar, java.lang.String, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a calendar into a specific pattern in a locale.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>calendar</code> - the calendar to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the calendar, not null</dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted calendar</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html#format(java.util.Calendar)"><code>FastDateFormat.format(Calendar)</code></a></dd></dl>
+</li>
+</ul>
+<a name="format(long, java.lang.String, java.util.TimeZone, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(long&nbsp;millis,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern in a time zone  and locale.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>millis</code> - the date to format expressed in milliseconds</dd><dd><code>pattern</code> - the pattern to use to format the date, not null</dd><dd><code>timeZone</code> - the time zone  to use, may be <code>null</code></dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Date, java.lang.String, java.util.TimeZone, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a date/time into a specific pattern in a time zone  and locale.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>date</code> - the date to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the date, not null, not null</dd><dd><code>timeZone</code> - the time zone  to use, may be <code>null</code></dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted date</dd></dl>
+</li>
+</ul>
+<a name="format(java.util.Calendar, java.lang.String, java.util.TimeZone, java.util.Locale)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>format</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</a>&nbsp;calendar,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html?is-external=true" title="class or interface in java.util">TimeZone</a>&nbsp;timeZone,
+            <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;locale)</pre>
+<div class="block"><p>Formats a calendar into a specific pattern in a time zone  and locale.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>calendar</code> - the calendar to format, not null</dd><dd><code>pattern</code> - the pattern to use to format the calendar, not null</dd><dd><code>timeZone</code> - the time zone  to use, may be <code>null</code></dd><dd><code>locale</code> - the locale to use, may be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the formatted calendar</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/lang3/time/FastDateFormat.html#format(java.util.Calendar)"><code>FastDateFormat.format(Calendar)</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DateFormatUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/lang3/time/DateParser.html" title="interface in org.apache.commons.lang3.time"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/time/DateFormatUtils.html" target="_top">Frames</a></li>
+<li><a href="DateFormatUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

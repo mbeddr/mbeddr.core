@@ -1,0 +1,2520 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>SystemUtils (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SystemUtils (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SystemUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/commons/lang3/StringUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/commons/lang3/Validate.html" title="class in org.apache.commons.lang3"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/commons/lang3/SystemUtils.html" target="_top">Frames</a></li>
+<li><a href="SystemUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3</div>
+<h2 title="Class SystemUtils" class="title">Class SystemUtils</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.SystemUtils</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">SystemUtils</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><p>
+ Helpers for <code>java.lang.System</code>.
+ </p>
+ <p>
+ If a system property cannot be read due to security restrictions, the corresponding field in this class will be set
+ to <code>null</code> and a message will be written to <code>System.err</code>.
+ </p>
+ <p>
+ #ThreadSafe#
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>1.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: SystemUtils.java 1583482 2014-03-31 22:54:57Z niallp $</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#AWT_TOOLKIT">AWT_TOOLKIT</a></strong></code>
+<div class="block">
+ The <code>awt.toolkit</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#FILE_ENCODING">FILE_ENCODING</a></strong></code>
+<div class="block">
+ The <code>file.encoding</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#FILE_SEPARATOR">FILE_SEPARATOR</a></strong></code>
+<div class="block">
+ The <code>file.separator</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_1">IS_JAVA_1_1</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.1 (also 1.1.x versions).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_2">IS_JAVA_1_2</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.2 (also 1.2.x versions).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_3">IS_JAVA_1_3</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.3 (also 1.3.x versions).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_4">IS_JAVA_1_4</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.4 (also 1.4.x versions).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_5">IS_JAVA_1_5</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.5 (also 1.5.x versions).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_6">IS_JAVA_1_6</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.6 (also 1.6.x versions).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_7">IS_JAVA_1_7</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.7 (also 1.7.x versions).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_JAVA_1_8">IS_JAVA_1_8</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Java version 1.8 (also 1.8.x versions).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_400">IS_OS_400</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is IBM OS/400.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_AIX">IS_OS_AIX</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is AIX.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_FREE_BSD">IS_OS_FREE_BSD</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is FreeBSD.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_HP_UX">IS_OS_HP_UX</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is HP-UX.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_IRIX">IS_OS_IRIX</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Irix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_LINUX">IS_OS_LINUX</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Linux.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_MAC">IS_OS_MAC</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Mac.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_MAC_OSX">IS_OS_MAC_OSX</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Mac.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_NET_BSD">IS_OS_NET_BSD</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is NetBSD.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_OPEN_BSD">IS_OS_OPEN_BSD</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is OpenBSD.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_OS2">IS_OS_OS2</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is OS/2.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_SOLARIS">IS_OS_SOLARIS</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Solaris.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_SUN_OS">IS_OS_SUN_OS</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is SunOS.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_UNIX">IS_OS_UNIX</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is a UNIX like system, as in any of AIX, HP-UX, Irix, Linux, MacOSX, Solaris or SUN OS.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS">IS_OS_WINDOWS</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_2000">IS_OS_WINDOWS_2000</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 2000.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_2003">IS_OS_WINDOWS_2003</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 2003.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_2008">IS_OS_WINDOWS_2008</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 2008.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_7">IS_OS_WINDOWS_7</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 7.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_8">IS_OS_WINDOWS_8</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 8.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_95">IS_OS_WINDOWS_95</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 95.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_98">IS_OS_WINDOWS_98</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows 98.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_ME">IS_OS_WINDOWS_ME</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows ME.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_NT">IS_OS_WINDOWS_NT</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows NT.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_VISTA">IS_OS_WINDOWS_VISTA</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows Vista.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#IS_OS_WINDOWS_XP">IS_OS_WINDOWS_XP</a></strong></code>
+<div class="block">
+ Is <code>true</code> if this is Windows XP.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_FONTS">JAVA_AWT_FONTS</a></strong></code>
+<div class="block">
+ The <code>java.awt.fonts</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_GRAPHICSENV">JAVA_AWT_GRAPHICSENV</a></strong></code>
+<div class="block">
+ The <code>java.awt.graphicsenv</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_HEADLESS">JAVA_AWT_HEADLESS</a></strong></code>
+<div class="block">
+ The <code>java.awt.headless</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_PRINTERJOB">JAVA_AWT_PRINTERJOB</a></strong></code>
+<div class="block">
+ The <code>java.awt.printerjob</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_CLASS_PATH">JAVA_CLASS_PATH</a></strong></code>
+<div class="block">
+ The <code>java.class.path</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_CLASS_VERSION">JAVA_CLASS_VERSION</a></strong></code>
+<div class="block">
+ The <code>java.class.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_COMPILER">JAVA_COMPILER</a></strong></code>
+<div class="block">
+ The <code>java.compiler</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_ENDORSED_DIRS">JAVA_ENDORSED_DIRS</a></strong></code>
+<div class="block">
+ The <code>java.endorsed.dirs</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_EXT_DIRS">JAVA_EXT_DIRS</a></strong></code>
+<div class="block">
+ The <code>java.ext.dirs</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_HOME">JAVA_HOME</a></strong></code>
+<div class="block">
+ The <code>java.home</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_IO_TMPDIR">JAVA_IO_TMPDIR</a></strong></code>
+<div class="block">
+ The <code>java.io.tmpdir</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_LIBRARY_PATH">JAVA_LIBRARY_PATH</a></strong></code>
+<div class="block">
+ The <code>java.library.path</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_RUNTIME_NAME">JAVA_RUNTIME_NAME</a></strong></code>
+<div class="block">
+ The <code>java.runtime.name</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_RUNTIME_VERSION">JAVA_RUNTIME_VERSION</a></strong></code>
+<div class="block">
+ The <code>java.runtime.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_SPECIFICATION_NAME">JAVA_SPECIFICATION_NAME</a></strong></code>
+<div class="block">
+ The <code>java.specification.name</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_SPECIFICATION_VENDOR">JAVA_SPECIFICATION_VENDOR</a></strong></code>
+<div class="block">
+ The <code>java.specification.vendor</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_SPECIFICATION_VERSION">JAVA_SPECIFICATION_VERSION</a></strong></code>
+<div class="block">
+ The <code>java.specification.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_UTIL_PREFS_PREFERENCES_FACTORY">JAVA_UTIL_PREFS_PREFERENCES_FACTORY</a></strong></code>
+<div class="block">
+ The <code>java.util.prefs.PreferencesFactory</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VENDOR">JAVA_VENDOR</a></strong></code>
+<div class="block">
+ The <code>java.vendor</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VENDOR_URL">JAVA_VENDOR_URL</a></strong></code>
+<div class="block">
+ The <code>java.vendor.url</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION">JAVA_VERSION</a></strong></code>
+<div class="block">
+ The <code>java.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_INFO">JAVA_VM_INFO</a></strong></code>
+<div class="block">
+ The <code>java.vm.info</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_NAME">JAVA_VM_NAME</a></strong></code>
+<div class="block">
+ The <code>java.vm.name</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_SPECIFICATION_NAME">JAVA_VM_SPECIFICATION_NAME</a></strong></code>
+<div class="block">
+ The <code>java.vm.specification.name</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_SPECIFICATION_VENDOR">JAVA_VM_SPECIFICATION_VENDOR</a></strong></code>
+<div class="block">
+ The <code>java.vm.specification.vendor</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_SPECIFICATION_VERSION">JAVA_VM_SPECIFICATION_VERSION</a></strong></code>
+<div class="block">
+ The <code>java.vm.specification.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_VENDOR">JAVA_VM_VENDOR</a></strong></code>
+<div class="block">
+ The <code>java.vm.vendor</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VM_VERSION">JAVA_VM_VERSION</a></strong></code>
+<div class="block">
+ The <code>java.vm.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#LINE_SEPARATOR">LINE_SEPARATOR</a></strong></code>
+<div class="block">
+ The <code>line.separator</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#OS_ARCH">OS_ARCH</a></strong></code>
+<div class="block">
+ The <code>os.arch</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#OS_NAME">OS_NAME</a></strong></code>
+<div class="block">
+ The <code>os.name</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#OS_VERSION">OS_VERSION</a></strong></code>
+<div class="block">
+ The <code>os.version</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#PATH_SEPARATOR">PATH_SEPARATOR</a></strong></code>
+<div class="block">
+ The <code>path.separator</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#USER_COUNTRY">USER_COUNTRY</a></strong></code>
+<div class="block">
+ The <code>user.country</code> or <code>user.region</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#USER_DIR">USER_DIR</a></strong></code>
+<div class="block">
+ The <code>user.dir</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#USER_HOME">USER_HOME</a></strong></code>
+<div class="block">
+ The <code>user.home</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#USER_LANGUAGE">USER_LANGUAGE</a></strong></code>
+<div class="block">
+ The <code>user.language</code> System Property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#USER_NAME">USER_NAME</a></strong></code>
+<div class="block">
+ The <code>user.name</code> System Property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#USER_TIMEZONE">USER_TIMEZONE</a></strong></code>
+<div class="block">
+ The <code>user.timezone</code> System Property.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#SystemUtils()">SystemUtils</a></strong>()</code>
+<div class="block">
+ SystemUtils instances should NOT be constructed in standard programming.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#getJavaHome()">getJavaHome</a></strong>()</code>
+<div class="block">
+ Gets the Java home directory as a <code>File</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#getJavaIoTmpDir()">getJavaIoTmpDir</a></strong>()</code>
+<div class="block">
+ Gets the Java IO temporary directory as a <code>File</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#getUserDir()">getUserDir</a></strong>()</code>
+<div class="block">
+ Gets the user directory as a <code>File</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#getUserHome()">getUserHome</a></strong>()</code>
+<div class="block">
+ Gets the user home directory as a <code>File</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#isJavaAwtHeadless()">isJavaAwtHeadless</a></strong>()</code>
+<div class="block">Returns whether the <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_HEADLESS"><code>JAVA_AWT_HEADLESS</code></a> value is <code>true</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/commons/lang3/SystemUtils.html#isJavaVersionAtLeast(org.apache.commons.lang3.JavaVersion)">isJavaVersionAtLeast</a></strong>(<a href="../../../../org/apache/commons/lang3/JavaVersion.html" title="enum in org.apache.commons.lang3">JavaVersion</a>&nbsp;requiredVersion)</code>
+<div class="block">
+ Is the Java version at least the requested version.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="AWT_TOOLKIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AWT_TOOLKIT</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> AWT_TOOLKIT</pre>
+<div class="block"><p>
+ The <code>awt.toolkit</code> System Property.
+ </p>
+ <p>
+ Holds a class name, on Windows XP this is <code>sun.awt.windows.WToolkit</code>.
+ </p>
+ <p>
+ <b>On platforms without a GUI, this value is <code>null</code>.</b>
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="FILE_ENCODING">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FILE_ENCODING</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> FILE_ENCODING</pre>
+<div class="block"><p>
+ The <code>file.encoding</code> System Property.
+ </p>
+ <p>
+ File encoding, such as <code>Cp1252</code>.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0, Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="FILE_SEPARATOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FILE_SEPARATOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> FILE_SEPARATOR</pre>
+<div class="block"><p>
+ The <code>file.separator</code> System Property.
+ The file separator is:
+ </p>
+ <ul>
+ <li><code>"/"</code> on UNIX</li>
+ <li><code>"\"</code> on Windows.</li>
+ </ul>
+
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_AWT_FONTS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_AWT_FONTS</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_AWT_FONTS</pre>
+<div class="block"><p>
+ The <code>java.awt.fonts</code> System Property.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_AWT_GRAPHICSENV">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_AWT_GRAPHICSENV</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_AWT_GRAPHICSENV</pre>
+<div class="block"><p>
+ The <code>java.awt.graphicsenv</code> System Property.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_AWT_HEADLESS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_AWT_HEADLESS</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_AWT_HEADLESS</pre>
+<div class="block"><p>
+ The <code>java.awt.headless</code> System Property. The value of this property is the String <code>"true"</code> or
+ <code>"false"</code>.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1, Java 1.4</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/SystemUtils.html#isJavaAwtHeadless()"><code>isJavaAwtHeadless()</code></a></dd></dl>
+</li>
+</ul>
+<a name="JAVA_AWT_PRINTERJOB">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_AWT_PRINTERJOB</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_AWT_PRINTERJOB</pre>
+<div class="block"><p>
+ The <code>java.awt.printerjob</code> System Property.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_CLASS_PATH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_CLASS_PATH</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_CLASS_PATH</pre>
+<div class="block"><p>
+ The <code>java.class.path</code> System Property. Java class path.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_CLASS_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_CLASS_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_CLASS_VERSION</pre>
+<div class="block"><p>
+ The <code>java.class.version</code> System Property. Java class format version number.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_COMPILER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_COMPILER</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_COMPILER</pre>
+<div class="block"><p>
+ The <code>java.compiler</code> System Property. Name of JIT compiler to use. First in JDK version 1.2. Not used in Sun
+ JDKs after 1.2.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2. Not used in Sun versions after 1.2.</dd></dl>
+</li>
+</ul>
+<a name="JAVA_ENDORSED_DIRS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_ENDORSED_DIRS</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_ENDORSED_DIRS</pre>
+<div class="block"><p>
+ The <code>java.endorsed.dirs</code> System Property. Path of endorsed directory or directories.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.4</dd></dl>
+</li>
+</ul>
+<a name="JAVA_EXT_DIRS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_EXT_DIRS</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_EXT_DIRS</pre>
+<div class="block"><p>
+ The <code>java.ext.dirs</code> System Property. Path of extension directory or directories.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.3</dd></dl>
+</li>
+</ul>
+<a name="JAVA_HOME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_HOME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_HOME</pre>
+<div class="block"><p>
+ The <code>java.home</code> System Property. Java installation directory.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_IO_TMPDIR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_IO_TMPDIR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_IO_TMPDIR</pre>
+<div class="block"><p>
+ The <code>java.io.tmpdir</code> System Property. Default temp file path.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_LIBRARY_PATH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_LIBRARY_PATH</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_LIBRARY_PATH</pre>
+<div class="block"><p>
+ The <code>java.library.path</code> System Property. List of paths to search when loading libraries.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_RUNTIME_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_RUNTIME_NAME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_RUNTIME_NAME</pre>
+<div class="block"><p>
+ The <code>java.runtime.name</code> System Property. Java Runtime Environment name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0, Java 1.3</dd></dl>
+</li>
+</ul>
+<a name="JAVA_RUNTIME_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_RUNTIME_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_RUNTIME_VERSION</pre>
+<div class="block"><p>
+ The <code>java.runtime.version</code> System Property. Java Runtime Environment version.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0, Java 1.3</dd></dl>
+</li>
+</ul>
+<a name="JAVA_SPECIFICATION_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_SPECIFICATION_NAME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_SPECIFICATION_NAME</pre>
+<div class="block"><p>
+ The <code>java.specification.name</code> System Property. Java Runtime Environment specification name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_SPECIFICATION_VENDOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_SPECIFICATION_VENDOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_SPECIFICATION_VENDOR</pre>
+<div class="block"><p>
+ The <code>java.specification.vendor</code> System Property. Java Runtime Environment specification vendor.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_SPECIFICATION_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_SPECIFICATION_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_SPECIFICATION_VERSION</pre>
+<div class="block"><p>
+ The <code>java.specification.version</code> System Property. Java Runtime Environment specification version.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.3</dd></dl>
+</li>
+</ul>
+<a name="JAVA_UTIL_PREFS_PREFERENCES_FACTORY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_UTIL_PREFS_PREFERENCES_FACTORY</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_UTIL_PREFS_PREFERENCES_FACTORY</pre>
+<div class="block"><p>
+ The <code>java.util.prefs.PreferencesFactory</code> System Property. A class name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1, Java 1.4</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VENDOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VENDOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VENDOR</pre>
+<div class="block"><p>
+ The <code>java.vendor</code> System Property. Java vendor-specific string.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VENDOR_URL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VENDOR_URL</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VENDOR_URL</pre>
+<div class="block"><p>
+ The <code>java.vendor.url</code> System Property. Java vendor URL.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VERSION</pre>
+<div class="block"><p>
+ The <code>java.version</code> System Property. Java version number.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_INFO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_INFO</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_INFO</pre>
+<div class="block"><p>
+ The <code>java.vm.info</code> System Property. Java Virtual Machine implementation info.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0, Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_NAME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_NAME</pre>
+<div class="block"><p>
+ The <code>java.vm.name</code> System Property. Java Virtual Machine implementation name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_SPECIFICATION_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_SPECIFICATION_NAME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_SPECIFICATION_NAME</pre>
+<div class="block"><p>
+ The <code>java.vm.specification.name</code> System Property. Java Virtual Machine specification name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_SPECIFICATION_VENDOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_SPECIFICATION_VENDOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_SPECIFICATION_VENDOR</pre>
+<div class="block"><p>
+ The <code>java.vm.specification.vendor</code> System Property. Java Virtual Machine specification vendor.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_SPECIFICATION_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_SPECIFICATION_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_SPECIFICATION_VERSION</pre>
+<div class="block"><p>
+ The <code>java.vm.specification.version</code> System Property. Java Virtual Machine specification version.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_VENDOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_VENDOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_VENDOR</pre>
+<div class="block"><p>
+ The <code>java.vm.vendor</code> System Property. Java Virtual Machine implementation vendor.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="JAVA_VM_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JAVA_VM_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> JAVA_VM_VERSION</pre>
+<div class="block"><p>
+ The <code>java.vm.version</code> System Property. Java Virtual Machine implementation version.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="LINE_SEPARATOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LINE_SEPARATOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> LINE_SEPARATOR</pre>
+<div class="block"><p>
+ The <code>line.separator</code> System Property. Line separator (<code>&quot;\n&quot;</code> on UNIX).
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="OS_ARCH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OS_ARCH</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> OS_ARCH</pre>
+<div class="block"><p>
+ The <code>os.arch</code> System Property. Operating system architecture.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="OS_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OS_NAME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> OS_NAME</pre>
+<div class="block"><p>
+ The <code>os.name</code> System Property. Operating system name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="OS_VERSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OS_VERSION</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> OS_VERSION</pre>
+<div class="block"><p>
+ The <code>os.version</code> System Property. Operating system version.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="PATH_SEPARATOR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PATH_SEPARATOR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> PATH_SEPARATOR</pre>
+<div class="block"><p>
+ The <code>path.separator</code> System Property. Path separator (<code>&quot;:&quot;</code> on UNIX).
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="USER_COUNTRY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>USER_COUNTRY</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> USER_COUNTRY</pre>
+<div class="block"><p>
+ The <code>user.country</code> or <code>user.region</code> System Property. User's country code, such as <code>GB</code>. First
+ in Java version 1.2 as <code>user.region</code>. Renamed to <code>user.country</code> in 1.4
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0, Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="USER_DIR">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>USER_DIR</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> USER_DIR</pre>
+<div class="block"><p>
+ The <code>user.dir</code> System Property. User's current working directory.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="USER_HOME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>USER_HOME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> USER_HOME</pre>
+<div class="block"><p>
+ The <code>user.home</code> System Property. User's home directory.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="USER_LANGUAGE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>USER_LANGUAGE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> USER_LANGUAGE</pre>
+<div class="block"><p>
+ The <code>user.language</code> System Property. User's language code, such as <code>"en"</code>.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0, Java 1.2</dd></dl>
+</li>
+</ul>
+<a name="USER_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>USER_NAME</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> USER_NAME</pre>
+<div class="block"><p>
+ The <code>user.name</code> System Property. User's account name.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Java 1.1</dd></dl>
+</li>
+</ul>
+<a name="USER_TIMEZONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>USER_TIMEZONE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> USER_TIMEZONE</pre>
+<div class="block"><p>
+ The <code>user.timezone</code> System Property. For example: <code>"America/Los_Angeles"</code>.
+ </p>
+ <p>
+ Defaults to <code>null</code> if the runtime does not have security access to read this property or the property does
+ not exist.
+ </p>
+ <p>
+ This value is initialized when the class is loaded. If <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperty(java.lang.String, java.lang.String)" title="class or interface in java.lang"><code>System.setProperty(String,String)</code></a> or
+ <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#setProperties(java.util.Properties)" title="class or interface in java.lang"><code>System.setProperties(java.util.Properties)</code></a> is called after this class is loaded, the value will be out of
+ sync with that System property.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="IS_JAVA_1_1">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_1</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_1</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.1 (also 1.1.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+</li>
+</ul>
+<a name="IS_JAVA_1_2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_2</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_2</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.2 (also 1.2.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+</li>
+</ul>
+<a name="IS_JAVA_1_3">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_3</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_3</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.3 (also 1.3.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+</li>
+</ul>
+<a name="IS_JAVA_1_4">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_4</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_4</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.4 (also 1.4.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+</li>
+</ul>
+<a name="IS_JAVA_1_5">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_5</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_5</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.5 (also 1.5.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+</li>
+</ul>
+<a name="IS_JAVA_1_6">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_6</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_6</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.6 (also 1.6.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+</li>
+</ul>
+<a name="IS_JAVA_1_7">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_7</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_7</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.7 (also 1.7.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="IS_JAVA_1_8">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_JAVA_1_8</h4>
+<pre>public static final&nbsp;boolean IS_JAVA_1_8</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Java version 1.8 (also 1.8.x versions).
+ </p>
+ <p>
+ The field will return <code>false</code> if <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_VERSION"><code>JAVA_VERSION</code></a> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.3.2</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_AIX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_AIX</h4>
+<pre>public static final&nbsp;boolean IS_OS_AIX</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is AIX.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_HP_UX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_HP_UX</h4>
+<pre>public static final&nbsp;boolean IS_OS_HP_UX</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is HP-UX.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_400">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_400</h4>
+<pre>public static final&nbsp;boolean IS_OS_400</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is IBM OS/400.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_IRIX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_IRIX</h4>
+<pre>public static final&nbsp;boolean IS_OS_IRIX</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Irix.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_LINUX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_LINUX</h4>
+<pre>public static final&nbsp;boolean IS_OS_LINUX</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Linux.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_MAC">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_MAC</h4>
+<pre>public static final&nbsp;boolean IS_OS_MAC</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Mac.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_MAC_OSX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_MAC_OSX</h4>
+<pre>public static final&nbsp;boolean IS_OS_MAC_OSX</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Mac.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_FREE_BSD">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_FREE_BSD</h4>
+<pre>public static final&nbsp;boolean IS_OS_FREE_BSD</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is FreeBSD.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_OPEN_BSD">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_OPEN_BSD</h4>
+<pre>public static final&nbsp;boolean IS_OS_OPEN_BSD</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is OpenBSD.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_NET_BSD">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_NET_BSD</h4>
+<pre>public static final&nbsp;boolean IS_OS_NET_BSD</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is NetBSD.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_OS2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_OS2</h4>
+<pre>public static final&nbsp;boolean IS_OS_OS2</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is OS/2.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_SOLARIS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_SOLARIS</h4>
+<pre>public static final&nbsp;boolean IS_OS_SOLARIS</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Solaris.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_SUN_OS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_SUN_OS</h4>
+<pre>public static final&nbsp;boolean IS_OS_SUN_OS</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is SunOS.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_UNIX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_UNIX</h4>
+<pre>public static final&nbsp;boolean IS_OS_UNIX</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is a UNIX like system, as in any of AIX, HP-UX, Irix, Linux, MacOSX, Solaris or SUN OS.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_2000">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_2000</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_2000</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 2000.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_2003">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_2003</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_2003</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 2003.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_2008">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_2008</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_2008</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 2008.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_95">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_95</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_95</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 95.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_98">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_98</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_98</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 98.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_ME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_ME</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_ME</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows ME.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_NT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_NT</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_NT</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows NT.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_XP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_XP</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_XP</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows XP.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_VISTA">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_VISTA</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_VISTA</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows Vista.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.4</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_7">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_7</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_7</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 7.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd></dl>
+</li>
+</ul>
+<a name="IS_OS_WINDOWS_8">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>IS_OS_WINDOWS_8</h4>
+<pre>public static final&nbsp;boolean IS_OS_WINDOWS_8</pre>
+<div class="block"><p>
+ Is <code>true</code> if this is Windows 8.
+ </p>
+ <p>
+ The field will return <code>false</code> if <code>OS_NAME</code> is <code>null</code>.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SystemUtils()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SystemUtils</h4>
+<pre>public&nbsp;SystemUtils()</pre>
+<div class="block"><p>
+ SystemUtils instances should NOT be constructed in standard programming. Instead, the class should be used as
+ <code>SystemUtils.FILE_SEPARATOR</code>.
+ </p>
+ <p>
+ This constructor is public to permit tools that require a JavaBean instance to operate.
+ </p></div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getJavaHome()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJavaHome</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getJavaHome()</pre>
+<div class="block"><p>
+ Gets the Java home directory as a <code>File</code>.
+ </p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a directory</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - if a security manager exists and its <code>checkPropertyAccess</code> method doesn't allow
+ access to the specified system property.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#getProperty(java.lang.String)" title="class or interface in java.lang"><code>System.getProperty(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="getJavaIoTmpDir()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJavaIoTmpDir</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getJavaIoTmpDir()</pre>
+<div class="block"><p>
+ Gets the Java IO temporary directory as a <code>File</code>.
+ </p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a directory</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - if a security manager exists and its <code>checkPropertyAccess</code> method doesn't allow
+ access to the specified system property.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#getProperty(java.lang.String)" title="class or interface in java.lang"><code>System.getProperty(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="getUserDir()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUserDir</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getUserDir()</pre>
+<div class="block"><p>
+ Gets the user directory as a <code>File</code>.
+ </p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a directory</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - if a security manager exists and its <code>checkPropertyAccess</code> method doesn't allow
+ access to the specified system property.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#getProperty(java.lang.String)" title="class or interface in java.lang"><code>System.getProperty(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="getUserHome()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUserHome</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getUserHome()</pre>
+<div class="block"><p>
+ Gets the user home directory as a <code>File</code>.
+ </p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a directory</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - if a security manager exists and its <code>checkPropertyAccess</code> method doesn't allow
+ access to the specified system property.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/System.html?is-external=true#getProperty(java.lang.String)" title="class or interface in java.lang"><code>System.getProperty(String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="isJavaAwtHeadless()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isJavaAwtHeadless</h4>
+<pre>public static&nbsp;boolean&nbsp;isJavaAwtHeadless()</pre>
+<div class="block">Returns whether the <a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_HEADLESS"><code>JAVA_AWT_HEADLESS</code></a> value is <code>true</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> if <code>JAVA_AWT_HEADLESS</code> is <code>"true"</code>, <code>false</code> otherwise.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.1, Java 1.4</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../org/apache/commons/lang3/SystemUtils.html#JAVA_AWT_HEADLESS"><code>JAVA_AWT_HEADLESS</code></a></dd></dl>
+</li>
+</ul>
+<a name="isJavaVersionAtLeast(org.apache.commons.lang3.JavaVersion)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isJavaVersionAtLeast</h4>
+<pre>public static&nbsp;boolean&nbsp;isJavaVersionAtLeast(<a href="../../../../org/apache/commons/lang3/JavaVersion.html" title="enum in org.apache.commons.lang3">JavaVersion</a>&nbsp;requiredVersion)</pre>
+<div class="block"><p>
+ Is the Java version at least the requested version.
+ </p>
+ <p>
+ Example input:
+ </p>
+ <ul>
+ <li><code>1.2f</code> to test for Java 1.2</li>
+ <li><code>1.31f</code> to test for Java 1.3.1</li>
+ </ul></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>requiredVersion</code> - the required version, for example 1.31f</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the actual version is equal or greater than the required version</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SystemUtils.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../org/apache/commons/lang3/StringUtils.html" title="class in org.apache.commons.lang3"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../org/apache/commons/lang3/Validate.html" title="class in org.apache.commons.lang3"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?org/apache/commons/lang3/SystemUtils.html" target="_top">Frames</a></li>
+<li><a href="SystemUtils.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.mpl" folder="nativelibs" />
+      <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.dynsmodel/de.slisson.mps.dynsmodel.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="reflection" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.nativelibs.loader/de.itemis.mps.nativelibs.loader.msd" folder="nativelibs" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="reflection" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.reflection.sandbox/de.slisson.mps.reflection.sandbox.msd" folder="reflection" />
+    </projectModules>
+  </component>
+</project>

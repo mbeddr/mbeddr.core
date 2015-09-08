@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/diagram" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/diagram/adaptagrams" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/diagram/jgraphx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-apache-commons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-boolean-editor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-conditional-editor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-hacks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-math" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-multiline" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-richtext" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mps-tables" vcs="Git" />
+  </component>
+</project>

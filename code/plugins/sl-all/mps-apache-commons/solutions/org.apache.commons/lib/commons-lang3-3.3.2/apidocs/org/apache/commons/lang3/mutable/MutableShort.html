@@ -1,0 +1,698 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>MutableShort (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MutableShort (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MutableShort.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/mutable/MutableObject.html" title="class in org.apache.commons.lang3.mutable"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/mutable/MutableShort.html" target="_top">Frames</a></li>
+<li><a href="MutableShort.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3.mutable</div>
+<h2 title="Class MutableShort" class="title">Class MutableShort</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">java.lang.Number</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.mutable.MutableShort</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html" title="class in org.apache.commons.lang3.mutable">MutableShort</a>&gt;, <a href="../../../../../org/apache/commons/lang3/mutable/Mutable.html" title="interface in org.apache.commons.lang3.mutable">Mutable</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">MutableShort</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>
+implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html" title="class in org.apache.commons.lang3.mutable">MutableShort</a>&gt;, <a href="../../../../../org/apache/commons/lang3/mutable/Mutable.html" title="interface in org.apache.commons.lang3.mutable">Mutable</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</pre>
+<div class="block">A mutable <code>short</code> wrapper.
+ <p>
+ Note that as MutableShort does not extend Short, it is not treated by String.format as a Short parameter.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.1</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: MutableShort.java 1436770 2013-01-22 07:09:45Z ggregory $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang"><code>Short</code></a>, 
+<a href="../../../../../serialized-form.html#org.apache.commons.lang3.mutable.MutableShort">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#MutableShort()">MutableShort</a></strong>()</code>
+<div class="block">Constructs a new MutableShort with the default value of zero.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#MutableShort(java.lang.Number)">MutableShort</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;value)</code>
+<div class="block">Constructs a new MutableShort with the specified value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#MutableShort(short)">MutableShort</a></strong>(short&nbsp;value)</code>
+<div class="block">Constructs a new MutableShort with the specified value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#MutableShort(java.lang.String)">MutableShort</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Constructs a new MutableShort parsing the given string.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#add(java.lang.Number)">add</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;operand)</code>
+<div class="block">Adds a value to the value of this instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#add(short)">add</a></strong>(short&nbsp;operand)</code>
+<div class="block">Adds a value to the value of this instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#compareTo(org.apache.commons.lang3.mutable.MutableShort)">compareTo</a></strong>(<a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html" title="class in org.apache.commons.lang3.mutable">MutableShort</a>&nbsp;other)</code>
+<div class="block">Compares this mutable to another in ascending order.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#decrement()">decrement</a></strong>()</code>
+<div class="block">Decrements the value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#doubleValue()">doubleValue</a></strong>()</code>
+<div class="block">Returns the value of this MutableShort as a double.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Compares this object to the specified object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#floatValue()">floatValue</a></strong>()</code>
+<div class="block">Returns the value of this MutableShort as a float.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#getValue()">getValue</a></strong>()</code>
+<div class="block">Gets the value as a Short instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Returns a suitable hash code for this mutable.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#increment()">increment</a></strong>()</code>
+<div class="block">Increments the value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#intValue()">intValue</a></strong>()</code>
+<div class="block">Returns the value of this MutableShort as an int.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#longValue()">longValue</a></strong>()</code>
+<div class="block">Returns the value of this MutableShort as a long.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#setValue(java.lang.Number)">setValue</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;value)</code>
+<div class="block">Sets the value from any Number instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#setValue(short)">setValue</a></strong>(short&nbsp;value)</code>
+<div class="block">Sets the value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>short</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#shortValue()">shortValue</a></strong>()</code>
+<div class="block">Returns the value of this MutableShort as a short.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#subtract(java.lang.Number)">subtract</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;operand)</code>
+<div class="block">Subtracts a value from the value of this instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#subtract(short)">subtract</a></strong>(short&nbsp;operand)</code>
+<div class="block">Subtracts a value from the value of this instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#toShort()">toShort</a></strong>()</code>
+<div class="block">Gets this mutable as an instance of Short.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html#toString()">toString</a></strong>()</code>
+<div class="block">Returns the String value of this mutable.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Number">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#byteValue()" title="class or interface in java.lang">byteValue</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="MutableShort()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MutableShort</h4>
+<pre>public&nbsp;MutableShort()</pre>
+<div class="block">Constructs a new MutableShort with the default value of zero.</div>
+</li>
+</ul>
+<a name="MutableShort(short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MutableShort</h4>
+<pre>public&nbsp;MutableShort(short&nbsp;value)</pre>
+<div class="block">Constructs a new MutableShort with the specified value.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the initial value to store</dd></dl>
+</li>
+</ul>
+<a name="MutableShort(java.lang.Number)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MutableShort</h4>
+<pre>public&nbsp;MutableShort(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;value)</pre>
+<div class="block">Constructs a new MutableShort with the specified value.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the initial value to store, not null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the object is null</dd></dl>
+</li>
+</ul>
+<a name="MutableShort(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MutableShort</h4>
+<pre>public&nbsp;MutableShort(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)
+             throws <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></pre>
+<div class="block">Constructs a new MutableShort parsing the given string.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the string to parse, not null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the string cannot be parsed into a short</dd><dt><span class="strong">Since:</span></dt>
+  <dd>2.5</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValue</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&nbsp;getValue()</pre>
+<div class="block">Gets the value as a Short instance.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/lang3/mutable/Mutable.html#getValue()">getValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/lang3/mutable/Mutable.html" title="interface in org.apache.commons.lang3.mutable">Mutable</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the value as a Short, never null</dd></dl>
+</li>
+</ul>
+<a name="setValue(short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setValue</h4>
+<pre>public&nbsp;void&nbsp;setValue(short&nbsp;value)</pre>
+<div class="block">Sets the value.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the value to set</dd></dl>
+</li>
+</ul>
+<a name="setValue(java.lang.Number)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setValue</h4>
+<pre>public&nbsp;void&nbsp;setValue(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;value)</pre>
+<div class="block">Sets the value from any Number instance.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/lang3/mutable/Mutable.html#setValue(T)">setValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/commons/lang3/mutable/Mutable.html" title="interface in org.apache.commons.lang3.mutable">Mutable</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the value to set, not null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the object is null</dd></dl>
+</li>
+</ul>
+<a name="increment()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>increment</h4>
+<pre>public&nbsp;void&nbsp;increment()</pre>
+<div class="block">Increments the value.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Lang 2.2</dd></dl>
+</li>
+</ul>
+<a name="decrement()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>decrement</h4>
+<pre>public&nbsp;void&nbsp;decrement()</pre>
+<div class="block">Decrements the value.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Lang 2.2</dd></dl>
+</li>
+</ul>
+<a name="add(short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(short&nbsp;operand)</pre>
+<div class="block">Adds a value to the value of this instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>operand</code> - the value to add, not null</dd><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Lang 2.2</dd></dl>
+</li>
+</ul>
+<a name="add(java.lang.Number)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;operand)</pre>
+<div class="block">Adds a value to the value of this instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>operand</code> - the value to add, not null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the object is null</dd><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Lang 2.2</dd></dl>
+</li>
+</ul>
+<a name="subtract(short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;void&nbsp;subtract(short&nbsp;operand)</pre>
+<div class="block">Subtracts a value from the value of this instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>operand</code> - the value to subtract, not null</dd><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Lang 2.2</dd></dl>
+</li>
+</ul>
+<a name="subtract(java.lang.Number)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;void&nbsp;subtract(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;operand)</pre>
+<div class="block">Subtracts a value from the value of this instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>operand</code> - the value to subtract, not null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the object is null</dd><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Lang 2.2</dd></dl>
+</li>
+</ul>
+<a name="shortValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shortValue</h4>
+<pre>public&nbsp;short&nbsp;shortValue()</pre>
+<div class="block">Returns the value of this MutableShort as a short.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#shortValue()" title="class or interface in java.lang">shortValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the numeric value represented by this object after conversion to type short.</dd></dl>
+</li>
+</ul>
+<a name="intValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>intValue</h4>
+<pre>public&nbsp;int&nbsp;intValue()</pre>
+<div class="block">Returns the value of this MutableShort as an int.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#intValue()" title="class or interface in java.lang">intValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the numeric value represented by this object after conversion to type int.</dd></dl>
+</li>
+</ul>
+<a name="longValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>longValue</h4>
+<pre>public&nbsp;long&nbsp;longValue()</pre>
+<div class="block">Returns the value of this MutableShort as a long.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#longValue()" title="class or interface in java.lang">longValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the numeric value represented by this object after conversion to type long.</dd></dl>
+</li>
+</ul>
+<a name="floatValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>floatValue</h4>
+<pre>public&nbsp;float&nbsp;floatValue()</pre>
+<div class="block">Returns the value of this MutableShort as a float.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#floatValue()" title="class or interface in java.lang">floatValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the numeric value represented by this object after conversion to type float.</dd></dl>
+</li>
+</ul>
+<a name="doubleValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doubleValue</h4>
+<pre>public&nbsp;double&nbsp;doubleValue()</pre>
+<div class="block">Returns the value of this MutableShort as a double.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#doubleValue()" title="class or interface in java.lang">doubleValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the numeric value represented by this object after conversion to type double.</dd></dl>
+</li>
+</ul>
+<a name="toShort()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toShort</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&nbsp;toShort()</pre>
+<div class="block">Gets this mutable as an instance of Short.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a Short instance containing the value from this mutable, never null</dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block">Compares this object to the specified object. The result is <code>true</code> if and only if the argument
+ is not <code>null</code> and is a <code>MutableShort</code> object that contains the same <code>short</code>
+ value as this object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - the object to compare with, null returns false</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the objects are the same; <code>false</code> otherwise.</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Returns a suitable hash code for this mutable.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a suitable hash code</dd></dl>
+</li>
+</ul>
+<a name="compareTo(org.apache.commons.lang3.mutable.MutableShort)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compareTo</h4>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html" title="class in org.apache.commons.lang3.mutable">MutableShort</a>&nbsp;other)</pre>
+<div class="block">Compares this mutable to another in ascending order.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/mutable/MutableShort.html" title="class in org.apache.commons.lang3.mutable">MutableShort</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the other mutable to compare to, not null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>negative if this is less, zero if equal, positive if greater</dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Returns the String value of this mutable.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the mutable value as a string</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MutableShort.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/mutable/MutableObject.html" title="class in org.apache.commons.lang3.mutable"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/mutable/MutableShort.html" target="_top">Frames</a></li>
+<li><a href="MutableShort.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

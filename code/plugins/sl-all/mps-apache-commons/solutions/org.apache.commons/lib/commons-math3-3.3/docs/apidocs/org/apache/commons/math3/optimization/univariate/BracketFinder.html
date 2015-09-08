@@ -1,0 +1,454 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>BracketFinder (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BracketFinder (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/BracketFinder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BaseUnivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization.univariate"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BrentOptimizer.html" title="class in org.apache.commons.math3.optimization.univariate"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/commons/math3/optimization/univariate/BracketFinder.html" target="_top">Frames</a></li>
+<li><a href="BracketFinder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.optimization.univariate</div>
+<h2 title="Class BracketFinder" class="title">Class BracketFinder</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.optimization.univariate.BracketFinder</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>As of 3.1 (to be removed in 4.0).</i></div>
+</div>
+<br>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public class <span class="strong">BracketFinder</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Provide an interval that brackets a local optimum of a function.
+ This code is based on a Python implementation (from <em>SciPy</em>,
+ module <code>optimize.py</code> v0.5).</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.2</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: BracketFinder.java 1547633 2013-12-03 23:03:06Z tn $</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder()">BracketFinder</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Constructor with default values <code>100, 50</code> (see the
+ <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder(double, int)"><code>other constructor</code></a>).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder(double, int)">BracketFinder</a></strong>(double&nbsp;growLimit,
+             int&nbsp;maxEvaluations)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Create a bracketing interval finder.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getEvaluations()">getEvaluations</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFHi()">getFHi</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Get function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()"><code>getHi()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFLo()">getFLo</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Get function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()"><code>getLo()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFMid()">getFMid</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Get function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()"><code>getMid()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()">getHi</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()">getLo</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMaxEvaluations()">getMaxEvaluations</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()">getMid</a></strong>()</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#search(org.apache.commons.math3.analysis.UnivariateFunction, org.apache.commons.math3.optimization.GoalType, double, double)">search</a></strong>(<a href="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</a>&nbsp;func,
+      <a href="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</a>&nbsp;goal,
+      double&nbsp;xA,
+      double&nbsp;xB)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Search new points that bracket a local optimum of the function.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="BracketFinder()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BracketFinder</h4>
+<pre>public&nbsp;BracketFinder()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Constructor with default values <code>100, 50</code> (see the
+ <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#BracketFinder(double, int)"><code>other constructor</code></a>).</div>
+</li>
+</ul>
+<a name="BracketFinder(double, int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BracketFinder</h4>
+<pre>public&nbsp;BracketFinder(double&nbsp;growLimit,
+             int&nbsp;maxEvaluations)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Create a bracketing interval finder.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>growLimit</code> - Expanding factor.</dd><dd><code>maxEvaluations</code> - Maximum number of evaluations allowed for finding
+ a bracketing interval.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="search(org.apache.commons.math3.analysis.UnivariateFunction, org.apache.commons.math3.optimization.GoalType, double, double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>search</h4>
+<pre>public&nbsp;void&nbsp;search(<a href="../../../../../../org/apache/commons/math3/analysis/UnivariateFunction.html" title="interface in org.apache.commons.math3.analysis">UnivariateFunction</a>&nbsp;func,
+          <a href="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization">GoalType</a>&nbsp;goal,
+          double&nbsp;xA,
+          double&nbsp;xB)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Search new points that bracket a local optimum of the function.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>func</code> - Function whose optimum should be bracketed.</dd><dd><code>goal</code> - <a href="../../../../../../org/apache/commons/math3/optimization/GoalType.html" title="enum in org.apache.commons.math3.optimization"><code>Goal type</code></a>.</dd><dd><code>xA</code> - Initial point.</dd><dd><code>xB</code> - Initial point.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</a></code> - if the maximum number of evaluations
+ is exceeded.</dd></dl>
+</li>
+</ul>
+<a name="getMaxEvaluations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxEvaluations</h4>
+<pre>public&nbsp;int&nbsp;getMaxEvaluations()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of evalutations.</dd></dl>
+</li>
+</ul>
+<a name="getEvaluations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEvaluations</h4>
+<pre>public&nbsp;int&nbsp;getEvaluations()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of evalutations.</dd></dl>
+</li>
+</ul>
+<a name="getLo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLo</h4>
+<pre>public&nbsp;double&nbsp;getLo()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the lower bound of the bracket.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFLo()"><code>getFLo()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getFLo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFLo</h4>
+<pre>public&nbsp;double&nbsp;getFLo()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Get function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()"><code>getLo()</code></a>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getLo()"><code>getLo()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getHi()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHi</h4>
+<pre>public&nbsp;double&nbsp;getHi()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the higher bound of the bracket.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFHi()"><code>getFHi()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getFHi()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFHi</h4>
+<pre>public&nbsp;double&nbsp;getFHi()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Get function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()"><code>getHi()</code></a>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getHi()"><code>getHi()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getMid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMid</h4>
+<pre>public&nbsp;double&nbsp;getMid()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a point in the middle of the bracket.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getFMid()"><code>getFMid()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getFMid()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getFMid</h4>
+<pre>public&nbsp;double&nbsp;getFMid()</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Get function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()"><code>getMid()</code></a>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>function value at <a href="../../../../../../org/apache/commons/math3/optimization/univariate/BracketFinder.html#getMid()"><code>getMid()</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/BracketFinder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BaseUnivariateOptimizer.html" title="interface in org.apache.commons.math3.optimization.univariate"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/commons/math3/optimization/univariate/BrentOptimizer.html" title="class in org.apache.commons.math3.optimization.univariate"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/commons/math3/optimization/univariate/BracketFinder.html" target="_top">Frames</a></li>
+<li><a href="BracketFinder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.apache.commons/org.apache.commons.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

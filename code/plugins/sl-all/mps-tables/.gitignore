@@ -1,0 +1,14 @@
+classes_gen/
+classes_gen.caches/
+source_gen/
+source_gen.caches/
+test_gen/
+test_gen.caches/
+*.class
+*.iws
+/build/tmp/*
+/build/artifacts/*
+
+/.mps/workspace.xml
+
+editor_states

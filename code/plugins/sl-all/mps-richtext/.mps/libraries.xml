@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="multiline">
+          <value>
+            <Library>
+              <option name="name" value="multiline" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all/mps-multiline" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="overwrite">
+          <value>
+            <Library>
+              <option name="name" value="overwrite" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all/mps-editor-override" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
