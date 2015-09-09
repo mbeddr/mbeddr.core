@@ -299,7 +299,7 @@
     </node>
     <node concept="1TJgyj" id="5soFcYDHzQp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="dummyType" />
+      <property role="20kJfa" value="type" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="PrWs8" id="7RHXOmw5Ihe" role="PzmwI">
