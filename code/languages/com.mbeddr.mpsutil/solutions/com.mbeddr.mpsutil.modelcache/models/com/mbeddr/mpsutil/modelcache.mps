@@ -5,8 +5,9 @@
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -260,9 +261,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -319,6 +317,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1580,18 +1585,18 @@
       </node>
       <node concept="3Tmbuc" id="11S2AhtUJgA" role="1B3o_S" />
       <node concept="3clFbS" id="11S2AhtUazN" role="3clF47">
-        <node concept="3SKdUt" id="2IqJp3x$HB3" role="3cqZAp">
-          <node concept="3SKWN0" id="2IqJp3x$HB9" role="3SKWNk">
-            <node concept="3clFbF" id="2IqJp3x$Aae" role="3SKWNf">
-              <node concept="1rXfSq" id="2IqJp3x$Aad" role="3clFbG">
-                <ref role="37wK5l" node="2d2S5MRQqln" resolve="log" />
-                <node concept="3cpWs3" id="31lVBy2tTc2" role="37wK5m">
-                  <node concept="37vLTw" id="31lVBy2tTdX" role="3uHU7w">
-                    <ref role="3cqZAo" node="11S2AhtVwIa" resolve="key" />
-                  </node>
-                  <node concept="Xl_RD" id="31lVBy2tRbH" role="3uHU7B">
-                    <property role="Xl_RC" value="calculating: " />
-                  </node>
+        <node concept="1X3_iC" id="6T4R9n6NBm" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2IqJp3x$Aae" role="8Wnug">
+            <node concept="1rXfSq" id="2IqJp3x$Aad" role="3clFbG">
+              <ref role="37wK5l" node="2d2S5MRQqln" resolve="log" />
+              <node concept="3cpWs3" id="31lVBy2tTc2" role="37wK5m">
+                <node concept="37vLTw" id="31lVBy2tTdX" role="3uHU7w">
+                  <ref role="3cqZAo" node="11S2AhtVwIa" resolve="key" />
+                </node>
+                <node concept="Xl_RD" id="31lVBy2tRbH" role="3uHU7B">
+                  <property role="Xl_RC" value="calculating: " />
                 </node>
               </node>
             </node>
@@ -1990,18 +1995,18 @@
       <node concept="3clFbS" id="31lVBy2mAKF" role="3clF47">
         <node concept="3clFbJ" id="31lVBy2ufCB" role="3cqZAp">
           <node concept="3clFbS" id="31lVBy2ufCE" role="3clFbx">
-            <node concept="3SKdUt" id="2IqJp3x_rI_" role="3cqZAp">
-              <node concept="3SKWN0" id="2IqJp3x_rIF" role="3SKWNk">
-                <node concept="3clFbF" id="2d2S5MRQLTw" role="3SKWNf">
-                  <node concept="1rXfSq" id="2d2S5MRQLTv" role="3clFbG">
-                    <ref role="37wK5l" node="2d2S5MRQqln" resolve="log" />
-                    <node concept="3cpWs3" id="31lVBy2uyHo" role="37wK5m">
-                      <node concept="37vLTw" id="31lVBy2uyJ4" role="3uHU7w">
-                        <ref role="3cqZAo" node="31lVBy2mFTe" resolve="cacheKey" />
-                      </node>
-                      <node concept="Xl_RD" id="31lVBy2uynu" role="3uHU7B">
-                        <property role="Xl_RC" value="invalidating: " />
-                      </node>
+            <node concept="1X3_iC" id="6T4R9n6NBn" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="2d2S5MRQLTw" role="8Wnug">
+                <node concept="1rXfSq" id="2d2S5MRQLTv" role="3clFbG">
+                  <ref role="37wK5l" node="2d2S5MRQqln" resolve="log" />
+                  <node concept="3cpWs3" id="31lVBy2uyHo" role="37wK5m">
+                    <node concept="37vLTw" id="31lVBy2uyJ4" role="3uHU7w">
+                      <ref role="3cqZAo" node="31lVBy2mFTe" resolve="cacheKey" />
+                    </node>
+                    <node concept="Xl_RD" id="31lVBy2uynu" role="3uHU7B">
+                      <property role="Xl_RC" value="invalidating: " />
                     </node>
                   </node>
                 </node>

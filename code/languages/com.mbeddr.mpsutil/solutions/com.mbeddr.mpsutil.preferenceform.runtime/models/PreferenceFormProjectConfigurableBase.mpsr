@@ -2,10 +2,10 @@
 <model ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="mo84" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.extensions(MPS.IDEA/com.intellij.openapi.extensions@java_stub)" implicit="true" />
-    <import index="k39q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.options(MPS.IDEA/com.intellij.openapi.options@java_stub)" implicit="true" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" implicit="true" />
+    <import index="hq8m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.options(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -109,7 +109,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="X7OD3WtCfW" role="1B3o_S" />
       <node concept="3uibUv" id="X7OD3WtCfY" role="1tU5fm">
-        <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
       </node>
     </node>
     <node concept="2tJIrI" id="X7OD3WtCoP" role="jymVt" />
@@ -140,7 +140,7 @@
       <node concept="37vLTG" id="X7OD3WtC7N" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="X7OD3WtC7M" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="X7OD3WtC85" role="3clF46">
@@ -168,10 +168,10 @@
       </node>
       <node concept="3Tm1VV" id="X7OD3WtCKH" role="1B3o_S" />
       <node concept="3uibUv" id="X7OD3WtCNB" role="3clF45">
-        <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
       </node>
       <node concept="2AHcQZ" id="5YZamx7Jzlm" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="X7OD3WtDdy" role="jymVt" />
@@ -187,29 +187,29 @@
           <node concept="2OqwBi" id="X7OD3Wu11u" role="3clFbG">
             <node concept="2OqwBi" id="X7OD3Wu03P" role="2Oq$k0">
               <node concept="2YIFZM" id="X7OD3WtZuf" role="2Oq$k0">
-                <ref role="37wK5l" to="mo84:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
-                <ref role="1Pybhc" to="mo84:~Extensions" resolve="Extensions" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="1rXfSq" id="X7OD3WtZJa" role="37wK5m">
                   <ref role="37wK5l" node="X7OD3WtCNJ" resolve="getProject" />
                 </node>
               </node>
               <node concept="liA8E" id="X7OD3Wu0gP" role="2OqNvi">
-                <ref role="37wK5l" to="mo84:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="X7OD3Wu0$a" role="37wK5m">
-                  <ref role="1PxDUh" to="k39q:~Configurable" resolve="Configurable" />
-                  <ref role="3cqZAo" to="k39q:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
+                  <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
+                  <ref role="3cqZAo" to="hq8m:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="X7OD3Wu1O3" role="2OqNvi">
-              <ref role="37wK5l" to="mo84:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
               <node concept="Xjq3P" id="X7OD3Wu2gh" role="37wK5m" />
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="5YZamx7JzCq" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="X7OD3WtDS9" role="jymVt" />
@@ -225,29 +225,29 @@
           <node concept="2OqwBi" id="X7OD3Wu2sQ" role="3clFbG">
             <node concept="2OqwBi" id="X7OD3Wu2sR" role="2Oq$k0">
               <node concept="2YIFZM" id="X7OD3Wu2sS" role="2Oq$k0">
-                <ref role="37wK5l" to="mo84:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
-                <ref role="1Pybhc" to="mo84:~Extensions" resolve="Extensions" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getArea(com.intellij.openapi.extensions.AreaInstance):com.intellij.openapi.extensions.ExtensionsArea" resolve="getArea" />
+                <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
                 <node concept="1rXfSq" id="X7OD3Wu2sT" role="37wK5m">
                   <ref role="37wK5l" node="X7OD3WtCNJ" resolve="getProject" />
                 </node>
               </node>
               <node concept="liA8E" id="X7OD3Wu2sU" role="2OqNvi">
-                <ref role="37wK5l" to="mo84:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="X7OD3Wu2sV" role="37wK5m">
-                  <ref role="1PxDUh" to="k39q:~Configurable" resolve="Configurable" />
-                  <ref role="3cqZAo" to="k39q:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
+                  <ref role="1PxDUh" to="hq8m:~Configurable" resolve="Configurable" />
+                  <ref role="3cqZAo" to="hq8m:~Configurable.PROJECT_CONFIGURABLE" resolve="PROJECT_CONFIGURABLE" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="X7OD3Wu2sW" role="2OqNvi">
-              <ref role="37wK5l" to="mo84:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
               <node concept="Xjq3P" id="X7OD3Wu2sX" role="37wK5m" />
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="5YZamx7JzYB" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3Tm1VV" id="X7OD3WtC6_" role="1B3o_S" />
