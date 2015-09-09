@@ -574,6 +574,21 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4gq8yQBXS54" role="jymVt" />
+    <node concept="3clFb_" id="2haQN1YegIv" role="jymVt">
+      <property role="TrG5h" value="getViewId" />
+      <node concept="3uibUv" id="2haQN1YejJU" role="3clF45">
+        <ref role="3uigEE" to="imq3:3ZnFyBjwz$i" resolve="ViewId" />
+      </node>
+      <node concept="3Tm1VV" id="2haQN1YegIy" role="1B3o_S" />
+      <node concept="3clFbS" id="2haQN1YegIz" role="3clF47">
+        <node concept="3clFbF" id="2haQN1YemJ9" role="3cqZAp">
+          <node concept="37vLTw" id="2haQN1YemJ8" role="3clFbG">
+            <ref role="3cqZAo" node="VPgi8egMkg" resolve="myViewId" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2haQN1YefYz" role="jymVt" />
     <node concept="3clFb_" id="7diJr$Rjc_u" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="rebuild" />
@@ -704,6 +719,9 @@
                       <ref role="3cqZAo" node="7diJr$Rjd1F" resolve="myMpsProject" />
                     </node>
                     <node concept="10Nm6u" id="75_oBQVcffL" role="37wK5m" />
+                    <node concept="37vLTw" id="2haQN1Ye4Ie" role="37wK5m">
+                      <ref role="3cqZAo" node="VPgi8egMkg" resolve="myViewId" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6874,6 +6892,14 @@
                                         </node>
                                         <node concept="37vLTw" id="7PuCnELALid" role="37wK5m">
                                           <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+                                        </node>
+                                        <node concept="2OqwBi" id="2haQN1Yew1R" role="37wK5m">
+                                          <node concept="37vLTw" id="2haQN1Yevw0" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+                                          </node>
+                                          <node concept="liA8E" id="2haQN1Yewx0" role="2OqNvi">
+                                            <ref role="37wK5l" to="imq3:2haQN1Yeoi1" resolve="getViewId" />
+                                          </node>
                                         </node>
                                       </node>
                                     </node>

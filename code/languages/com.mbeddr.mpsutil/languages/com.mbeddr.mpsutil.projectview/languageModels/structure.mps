@@ -77,7 +77,7 @@
   </node>
   <node concept="1TIwiD" id="7diJr$RulqU">
     <property role="TrG5h" value="TreeNodeElement" />
-    <property role="34LRSv" value="node" />
+    <property role="34LRSv" value="treeNode" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ZnFyBjs8qn" role="1TKVEi">
       <property role="20lmBu" value="reference" />
