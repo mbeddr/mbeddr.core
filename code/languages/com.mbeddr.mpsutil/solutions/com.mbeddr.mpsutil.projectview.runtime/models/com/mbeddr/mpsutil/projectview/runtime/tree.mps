@@ -923,6 +923,14 @@
       <node concept="3Tm1VV" id="6B7erwvFBN2" role="1B3o_S" />
       <node concept="3cqZAl" id="6B7erwvFBN4" role="3clF45" />
       <node concept="3clFbS" id="6B7erwvFBN5" role="3clF47">
+        <node concept="3clFbJ" id="iBCgCYTE1c" role="3cqZAp">
+          <node concept="3clFbS" id="iBCgCYTE1e" role="3clFbx">
+            <node concept="3cpWs6" id="iBCgCYTGDL" role="3cqZAp" />
+          </node>
+          <node concept="1rXfSq" id="iBCgCYTFhX" role="3clFbw">
+            <ref role="37wK5l" to="7e8u:~MPSTree.isDisposed():boolean" resolve="isDisposed" />
+          </node>
+        </node>
         <node concept="3clFbF" id="7PuCnELx8dn" role="3cqZAp">
           <node concept="2OqwBi" id="7PuCnELx8Rw" role="3clFbG">
             <node concept="37vLTw" id="7PuCnELBMaJ" role="2Oq$k0">
@@ -1709,6 +1717,33 @@
         </node>
       </node>
       <node concept="3clFbS" id="75_oBQVxJL7" role="3clF47">
+        <node concept="3cpWs8" id="lS_7c3iqDM" role="3cqZAp">
+          <node concept="3cpWsn" id="lS_7c3iqDN" role="3cpWs9">
+            <property role="TrG5h" value="tree" />
+            <node concept="3uibUv" id="lS_7c3iqDL" role="1tU5fm">
+              <ref role="3uigEE" node="7diJr$RhsEC" resolve="CustomProjectTree" />
+            </node>
+            <node concept="1rXfSq" id="lS_7c3iqDO" role="33vP2m">
+              <ref role="37wK5l" node="4gq8yQBZ6QN" resolve="getTree" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="lS_7c3ivWr" role="3cqZAp">
+          <node concept="3clFbS" id="lS_7c3ivWt" role="3clFbx">
+            <node concept="3cpWs6" id="lS_7c3izLT" role="3cqZAp">
+              <node concept="2YIFZM" id="lS_7c3iIeP" role="3cqZAk">
+                <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="lS_7c3izdY" role="3clFbw">
+            <node concept="10Nm6u" id="lS_7c3izpO" role="3uHU7w" />
+            <node concept="37vLTw" id="lS_7c3iyDK" role="3uHU7B">
+              <ref role="3cqZAo" node="lS_7c3iqDN" resolve="tree" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="75_oBQVxJL9" role="3cqZAp">
           <node concept="3cpWsn" id="75_oBQVxJL8" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -1719,8 +1754,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="75_oBQVxJLc" role="33vP2m">
-              <node concept="1rXfSq" id="75_oBQVxJLd" role="2Oq$k0">
-                <ref role="37wK5l" node="4gq8yQBZ6QN" resolve="getTree" />
+              <node concept="37vLTw" id="lS_7c3iqDP" role="2Oq$k0">
+                <ref role="3cqZAo" node="lS_7c3iqDN" resolve="tree" />
               </node>
               <node concept="liA8E" id="75_oBQVxJLe" role="2OqNvi">
                 <ref role="37wK5l" to="dxuu:~JTree.getSelectionPaths():javax.swing.tree.TreePath[]" resolve="getSelectionPaths" />
@@ -3647,26 +3682,36 @@
                             <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                           </node>
                           <node concept="3clFbS" id="4gq8yQBZ6W2" role="3clF47">
-                            <node concept="3clFbF" id="4gq8yQBZ6W3" role="3cqZAp">
-                              <node concept="2OqwBi" id="4gq8yQBZ6W4" role="3clFbG">
-                                <node concept="1eOMI4" id="4gq8yQBZ6W5" role="2Oq$k0">
-                                  <node concept="10QFUN" id="4gq8yQBZ6W6" role="1eOMHV">
-                                    <node concept="37vLTw" id="4gq8yQBZ6W7" role="10QFUP">
-                                      <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
+                            <node concept="3clFbJ" id="lS_7c3h1h5" role="3cqZAp">
+                              <node concept="3clFbS" id="lS_7c3h1h7" role="3clFbx">
+                                <node concept="3clFbF" id="4gq8yQBZ6W3" role="3cqZAp">
+                                  <node concept="2OqwBi" id="4gq8yQBZ6W4" role="3clFbG">
+                                    <node concept="1eOMI4" id="4gq8yQBZ6W5" role="2Oq$k0">
+                                      <node concept="10QFUN" id="4gq8yQBZ6W6" role="1eOMHV">
+                                        <node concept="37vLTw" id="4gq8yQBZ6W7" role="10QFUP">
+                                          <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
+                                        </node>
+                                        <node concept="3uibUv" id="4gq8yQBZ6W8" role="10QFUM">
+                                          <ref role="3uigEE" to="7e8u:~MPSTree" resolve="MPSTree" />
+                                        </node>
+                                      </node>
                                     </node>
-                                    <node concept="3uibUv" id="4gq8yQBZ6W8" role="10QFUM">
-                                      <ref role="3uigEE" to="7e8u:~MPSTree" resolve="MPSTree" />
+                                    <node concept="liA8E" id="4gq8yQBZ6W9" role="2OqNvi">
+                                      <ref role="37wK5l" to="7e8u:~MPSTree.loadState(java.util.List,java.util.List):void" resolve="loadState" />
+                                      <node concept="37vLTw" id="4gq8yQBZ6Wa" role="37wK5m">
+                                        <ref role="3cqZAo" node="4gq8yQBZ6On" resolve="myExpandedPathsRaw" />
+                                      </node>
+                                      <node concept="37vLTw" id="4gq8yQBZ6Wb" role="37wK5m">
+                                        <ref role="3cqZAo" node="4gq8yQBZ6Ot" resolve="mySelectedPathsRaw" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="liA8E" id="4gq8yQBZ6W9" role="2OqNvi">
-                                  <ref role="37wK5l" to="7e8u:~MPSTree.loadState(java.util.List,java.util.List):void" resolve="loadState" />
-                                  <node concept="37vLTw" id="4gq8yQBZ6Wa" role="37wK5m">
-                                    <ref role="3cqZAo" node="4gq8yQBZ6On" resolve="myExpandedPathsRaw" />
-                                  </node>
-                                  <node concept="37vLTw" id="4gq8yQBZ6Wb" role="37wK5m">
-                                    <ref role="3cqZAo" node="4gq8yQBZ6Ot" resolve="mySelectedPathsRaw" />
-                                  </node>
+                              </node>
+                              <node concept="3y3z36" id="lS_7c3h2BA" role="3clFbw">
+                                <node concept="10Nm6u" id="lS_7c3h2UR" role="3uHU7w" />
+                                <node concept="37vLTw" id="lS_7c3h1MK" role="3uHU7B">
+                                  <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myTree" resolve="myTree" />
                                 </node>
                               </node>
                             </node>

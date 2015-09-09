@@ -40,6 +40,7 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="paf" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane.logicalview(MPS.Workbench/)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
+    <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4821,11 +4822,23 @@
                         </node>
                       </node>
                       <node concept="3clFbJ" id="6B7erwvEDiA" role="3cqZAp">
-                        <node concept="3y3z36" id="6B7erwvEDiB" role="3clFbw">
-                          <node concept="37vLTw" id="6B7erwvEDiC" role="3uHU7B">
-                            <ref role="3cqZAo" node="6B7erwvEDis" resolve="module" />
+                        <node concept="1Wc70l" id="6wPHEU$kMmB" role="3clFbw">
+                          <node concept="3fqX7Q" id="6wPHEU$kNne" role="3uHU7w">
+                            <node concept="2ZW3vV" id="6wPHEU$kNng" role="3fr31v">
+                              <node concept="3uibUv" id="6wPHEU$kNnh" role="2ZW6by">
+                                <ref role="3uigEE" to="tqvn:~TempModule" resolve="TempModule" />
+                              </node>
+                              <node concept="37vLTw" id="6wPHEU$kNni" role="2ZW6bz">
+                                <ref role="3cqZAo" node="6B7erwvEDis" resolve="module" />
+                              </node>
+                            </node>
                           </node>
-                          <node concept="10Nm6u" id="6B7erwvEDiD" role="3uHU7w" />
+                          <node concept="3y3z36" id="6B7erwvEDiB" role="3uHU7B">
+                            <node concept="37vLTw" id="6B7erwvEDiC" role="3uHU7B">
+                              <ref role="3cqZAo" node="6B7erwvEDis" resolve="module" />
+                            </node>
+                            <node concept="10Nm6u" id="6B7erwvEDiD" role="3uHU7w" />
+                          </node>
                         </node>
                         <node concept="3clFbS" id="6B7erwvEDiF" role="3clFbx">
                           <node concept="3clFbF" id="6B7erwvEDiG" role="3cqZAp">
