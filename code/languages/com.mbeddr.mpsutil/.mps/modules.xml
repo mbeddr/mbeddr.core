@@ -112,7 +112,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.runtime/com.mbeddr.mpsutil.process.runtime.msd" folder="process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.sandbox/com.mbeddr.mpsutil.process.sandbox.msd" folder="process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="projectview" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.sandbox/com.mbeddr.mpsutil.projectview.sandbox.msd" folder="projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.rcpconfig/com.mbeddr.mpsutil.rcpconfig.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="margincell_review" />
