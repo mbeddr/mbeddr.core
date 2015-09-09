@@ -82,6 +82,9 @@
       <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
         <reference id="3376775282622611130" name="constant" index="2DPCA0" />
       </concept>
+      <concept id="8444296659257696249" name="com.mbeddr.core.modules.structure.IArgumentLike" flags="ng" index="k8FjF">
+        <child id="883533952987441014" name="kind" index="3U$Ho4" />
+      </concept>
       <concept id="8551646674110395547" name="com.mbeddr.core.modules.structure.FunctionRefType" flags="ng" index="pFrBc">
         <child id="8551646674110395549" name="argTypes" index="pFrBa" />
         <child id="8551646674110395548" name="returnType" index="pFrBb" />
@@ -115,6 +118,9 @@
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
         <property id="6708182213627045681" name="extern" index="3mNisv" />
+      </concept>
+      <concept id="883533952987437678" name="com.mbeddr.core.modules.structure.ArgumentKindContainer" flags="ng" index="3U$IGs">
+        <property id="883533952987437954" name="value" index="3U$IFK" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1001,7 +1007,7 @@
   <node concept="rcWEw" id="41BTkV3WhIs">
     <property role="TrG5h" value="pthread" />
     <node concept="rcWE1" id="41BTkV3WhIt" role="rcWEr">
-      <property role="rcWEL" value="&quot;/Users/szabta/git/mbeddr.importer/code/testcode/core/pthread.h&quot;" />
+      <property role="rcWEL" value="&lt;pthread.h&gt;" />
     </node>
     <node concept="3GEVxB" id="41BTkV3Wi2s" role="2OODSX">
       <property role="3GEa6x" value="false" />
@@ -1905,6 +1911,9 @@
             <property role="2c7vTL" value="false" />
             <ref role="rcJHT" node="41BTkV3WhK1" resolve="pthread_t" />
           </node>
+        </node>
+        <node concept="3U$IGs" id="2z7On5_zn$h" role="3U$Ho4">
+          <property role="3U$IFK" value="1" />
         </node>
       </node>
       <node concept="19RgSI" id="41BTkV3WhSD" role="1UOdpc">
