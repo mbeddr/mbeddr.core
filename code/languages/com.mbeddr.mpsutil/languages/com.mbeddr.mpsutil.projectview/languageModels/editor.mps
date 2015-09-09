@@ -107,11 +107,17 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="24kQdi" id="7diJr$Rulu0">
+    <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="d04j:7diJr$Rulpu" resolve="ProjectView" />
     <node concept="3EZMnI" id="7diJr$Rulvs" role="2wV5jI">
       <node concept="3F0ifn" id="7diJr$RulvA" role="3EZMnx">

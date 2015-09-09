@@ -2817,11 +2817,8 @@
                             <node concept="37vLTw" id="6B7erwvEJaV" role="2Oq$k0">
                               <ref role="3cqZAo" node="6B7erwvED7e" resolve="node" />
                             </node>
-                            <node concept="liA8E" id="6B7erwvEJaX" role="2OqNvi">
-                              <ref role="37wK5l" to="uhdf:5TgxKE1Z_df" resolve="getObject" />
-                              <node concept="3VsKOn" id="5TgxKE1ZKTK" role="37wK5m">
-                                <ref role="3VsUkX" to="lui2:~SModule" resolve="SModule" />
-                              </node>
+                            <node concept="liA8E" id="7PuCnELCv5G" role="2OqNvi">
+                              <ref role="37wK5l" to="uhdf:5TgxKE1ZXQ7" resolve="getModule" />
                             </node>
                           </node>
                           <node concept="liA8E" id="6B7erwvED7$" role="2OqNvi">
@@ -4454,11 +4451,8 @@
                 <node concept="37vLTw" id="6B7erwvEJfV" role="2Oq$k0">
                   <ref role="3cqZAo" node="6B7erwvEDgG" resolve="node" />
                 </node>
-                <node concept="liA8E" id="6B7erwvEJfX" role="2OqNvi">
-                  <ref role="37wK5l" to="uhdf:5TgxKE1Z_df" resolve="getObject" />
-                  <node concept="3VsKOn" id="5TgxKE1ZIDf" role="37wK5m">
-                    <ref role="3VsUkX" to="mhbf:~SModel" resolve="SModel" />
-                  </node>
+                <node concept="liA8E" id="7PuCnELxX_9" role="2OqNvi">
+                  <ref role="37wK5l" to="uhdf:5TgxKE1ZSMM" resolve="getModel" />
                 </node>
               </node>
               <node concept="liA8E" id="6B7erwvEDgP" role="2OqNvi">
@@ -4751,11 +4745,8 @@
                 <node concept="37vLTw" id="6B7erwvEJuJ" role="2Oq$k0">
                   <ref role="3cqZAo" node="6B7erwvEDi8" resolve="node" />
                 </node>
-                <node concept="liA8E" id="6B7erwvEJuL" role="2OqNvi">
-                  <ref role="37wK5l" to="uhdf:5TgxKE1Z_df" resolve="getObject" />
-                  <node concept="3VsKOn" id="5TgxKE1ZJdf" role="37wK5m">
-                    <ref role="3VsUkX" to="lui2:~SModule" resolve="SModule" />
-                  </node>
+                <node concept="liA8E" id="7PuCnELxWzi" role="2OqNvi">
+                  <ref role="37wK5l" to="uhdf:5TgxKE1ZXQ7" resolve="getModule" />
                 </node>
               </node>
               <node concept="liA8E" id="6B7erwvEDih" role="2OqNvi">
