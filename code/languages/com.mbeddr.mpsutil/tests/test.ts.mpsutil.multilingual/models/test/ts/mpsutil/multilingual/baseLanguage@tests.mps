@@ -5,13 +5,13 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="spci" ref="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" />
     <import index="d6tz" ref="r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
@@ -335,8 +335,8 @@
             <node concept="liA8E" id="2GRHOLIITqx" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIITqy" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.ITALIAN" resolve="ITALIAN" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.ITALIAN" resolve="ITALIAN" />
               </node>
             </node>
           </node>
@@ -371,8 +371,8 @@
             <node concept="liA8E" id="2GRHOLIITt6" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIITt7" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.ENGLISH" resolve="ENGLISH" />
               </node>
             </node>
           </node>
@@ -407,8 +407,8 @@
             <node concept="liA8E" id="2GRHOLIITvH" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIITvI" role="37wK5m">
-                <ref role="3cqZAo" to="33ny:~Locale.GERMAN" resolve="GERMAN" />
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.GERMAN" resolve="GERMAN" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
               </node>
             </node>
           </node>
@@ -850,8 +850,8 @@
             <node concept="liA8E" id="2GRHOLIISaS" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIISbJ" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.ITALIAN" resolve="ITALIAN" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.ITALIAN" resolve="ITALIAN" />
               </node>
             </node>
           </node>
@@ -886,8 +886,8 @@
             <node concept="liA8E" id="2GRHOLIISvc" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIISvd" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.ENGLISH" resolve="ENGLISH" />
               </node>
             </node>
           </node>
@@ -922,8 +922,8 @@
             <node concept="liA8E" id="2GRHOLIISGE" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIISGF" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.GERMAN" resolve="GERMAN" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.GERMAN" resolve="GERMAN" />
               </node>
             </node>
           </node>
@@ -958,8 +958,8 @@
             <node concept="liA8E" id="2GRHOLIISQX" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIISQY" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.ITALIAN" resolve="ITALIAN" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.ITALIAN" resolve="ITALIAN" />
               </node>
             </node>
           </node>
@@ -994,8 +994,8 @@
             <node concept="liA8E" id="2GRHOLIISZS" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIISZT" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.ENGLISH" resolve="ENGLISH" />
               </node>
             </node>
           </node>
@@ -1030,8 +1030,8 @@
             <node concept="liA8E" id="2GRHOLIIT6B" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
               <node concept="10M0yZ" id="2GRHOLIIT6C" role="37wK5m">
-                <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
-                <ref role="3cqZAo" to="33ny:~Locale.GERMAN" resolve="GERMAN" />
+                <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+                <ref role="3cqZAo" to="k7g3:~Locale.GERMAN" resolve="GERMAN" />
               </node>
             </node>
           </node>

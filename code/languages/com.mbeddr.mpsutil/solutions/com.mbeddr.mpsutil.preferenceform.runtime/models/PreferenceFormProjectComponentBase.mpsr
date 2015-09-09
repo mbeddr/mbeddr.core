@@ -2,9 +2,9 @@
 <model ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
-    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
+    <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" implicit="true" />
+    <import index="iiw6" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.components(MPS.IDEA/com.intellij.openapi.components@java_stub)" implicit="true" />
+    <import index="jrbx" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(MPS.Platform/jetbrains.mps.project@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -97,7 +97,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="X7OD3WrVYj" role="1B3o_S" />
       <node concept="3uibUv" id="X7OD3WrVYl" role="1tU5fm">
-        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
       </node>
     </node>
     <node concept="2tJIrI" id="X7OD3WrW3n" role="jymVt" />
@@ -105,7 +105,7 @@
       <node concept="37vLTG" id="X7OD3Wriln" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="X7OD3Wrilm" role="1tU5fm">
-          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="3cqZAl" id="X7OD3WrUyl" role="3clF45" />
@@ -144,7 +144,7 @@
       </node>
       <node concept="3Tm1VV" id="X7OD3Ws25s" role="1B3o_S" />
       <node concept="3uibUv" id="X7OD3Ws27F" role="3clF45">
-        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
       </node>
     </node>
     <node concept="2tJIrI" id="X7OD3Ws2vS" role="jymVt" />
@@ -163,9 +163,9 @@
               </node>
             </node>
             <node concept="liA8E" id="X7OD3WtxQs" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+              <ref role="37wK5l" to="iiw6:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
               <node concept="3VsKOn" id="X7OD3Wty5c" role="37wK5m">
-                <ref role="3VsUkX" to="z1c3:~MPSProject" resolve="MPSProject" />
+                <ref role="3VsUkX" to="jrbx:~MPSProject" resolve="MPSProject" />
               </node>
             </node>
           </node>
@@ -173,7 +173,7 @@
       </node>
       <node concept="3Tm1VV" id="X7OD3Ws2ED" role="1B3o_S" />
       <node concept="3uibUv" id="X7OD3WtwH$" role="3clF45">
-        <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        <ref role="3uigEE" to="jrbx:~MPSProject" resolve="MPSProject" />
       </node>
     </node>
     <node concept="3Tm1VV" id="X7OD3WrUxb" role="1B3o_S" />
