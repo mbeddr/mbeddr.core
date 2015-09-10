@@ -24,8 +24,8 @@
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -7514,6 +7514,15 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="2iRkQZ" id="2cCHKvAHSi6" role="2iSdaV" />
+        <node concept="3EZMnI" id="5VnXdFkrmLi" role="3EZMnx">
+          <node concept="VPM3Z" id="5VnXdFkrmLk" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="PMmxH" id="5VnXdFkrmM9" role="3EZMnx">
+            <ref role="PMmxG" node="2OfxaHaxQ5D" resolve="ExternalFilesSettings" />
+          </node>
+          <node concept="2iRfu4" id="5VnXdFkrmLn" role="2iSdaV" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5S6wb2j5pg_" role="3EZMnx">
         <property role="3F0ifm" value="" />
@@ -7775,6 +7784,174 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2OfxaHaxQ5D">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="ExternalFilesSettings" />
+    <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="3EZMnI" id="2OfxaHaxQop" role="2wV5jI">
+      <node concept="3F0ifn" id="2OfxaHaxQoq" role="3EZMnx">
+        <property role="3F0ifm" value="External Files" />
+      </node>
+      <node concept="3EZMnI" id="2OfxaHaxQor" role="3EZMnx">
+        <node concept="VPM3Z" id="2OfxaHaxQos" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="2OfxaHaxQot" role="3EZMnx" />
+        <node concept="3F2HdR" id="5tDzxi6S15M" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:2OfxaHaxQ5e" />
+          <node concept="2iRkQZ" id="5tDzxi6S15P" role="2czzBx" />
+          <node concept="VPM3Z" id="5tDzxi6S15Q" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="2OfxaHaxQoF" role="2iSdaV" />
+      </node>
+      <node concept="2EHx9g" id="2OfxaHaxQoG" role="2iSdaV" />
+      <node concept="pkWqt" id="2OfxaHaxQoH" role="pqm2j">
+        <node concept="3clFbS" id="2OfxaHaxQoI" role="2VODD2">
+          <node concept="3clFbF" id="2OfxaHaxQoJ" role="3cqZAp">
+            <node concept="2OqwBi" id="2OfxaHaxQoK" role="3clFbG">
+              <node concept="pncrf" id="2OfxaHaxQoL" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5VnXdFkrQDu" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:2OfxaHayosY" resolve="hasExternalFilesSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5tDzxi6Rdl3">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="ExternalFilesSettingsDoc" />
+    <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="3EZMnI" id="5tDzxi6RdnJ" role="2wV5jI">
+      <node concept="3EZMnI" id="5tDzxi6RdnK" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RdnL" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RdnM" role="3EZMnx">
+          <property role="3F0ifm" value="external files      " />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RdnN" role="3EZMnx">
+          <property role="3F0ifm" value="- a set of single C files or directory containing C files which are given as arguments " />
+          <node concept="Vb9p2" id="5tDzxi6RdnO" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RdnP" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5tDzxi6RrCO" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RrCP" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RrCQ" role="3EZMnx">
+          <property role="3F0ifm" value="                       to CBMC. In the case when a directory is given, all C files contained in the directory" />
+          <node concept="Vb9p2" id="5tDzxi6RrCR" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RrCS" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5tDzxi6RdnQ" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RdnR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RdnS" role="3EZMnx">
+          <property role="3F0ifm" value="                       or subdirectories of that directory will be collected in a recursive manner." />
+          <node concept="Vb9p2" id="5tDzxi6RdnT" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RdnU" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5tDzxi6RrIo" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RrIp" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RrIq" role="3EZMnx">
+          <property role="3F0ifm" value="                       WARNING 1: if the verified system makes use of function defined in external files and " />
+          <node concept="Vb9p2" id="5tDzxi6RrIr" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RrIs" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5tDzxi6RrNQ" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RrNR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RrNS" role="3EZMnx">
+          <property role="3F0ifm" value="                        if these files are not given as 'external files', then CBMC wil considered those " />
+          <node concept="Vb9p2" id="5tDzxi6RrNT" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RrNU" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5tDzxi6RrPk" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RrPl" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RrPm" role="3EZMnx">
+          <property role="3F0ifm" value="                        functions to be uninterpreted." />
+          <node concept="Vb9p2" id="5tDzxi6RrPn" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RrPo" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5tDzxi6RrGy" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RrGz" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RrG$" role="3EZMnx">
+          <property role="3F0ifm" value="                       WARNING 2: the more C-files are given to CBMC, the more files CBMC has to process and " />
+          <node concept="Vb9p2" id="5tDzxi6RrG_" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RrGA" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="5tDzxi6Rdo6" role="2iSdaV" />
+      <node concept="3EZMnI" id="5tDzxi6RrEY" role="3EZMnx">
+        <node concept="VPM3Z" id="5tDzxi6RrEZ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5tDzxi6RrF0" role="3EZMnx">
+          <property role="3F0ifm" value="                        thereby the slower analyes will be." />
+          <node concept="Vb9p2" id="5tDzxi6RrF1" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="5tDzxi6RrF2" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5tDzxi6RrTa">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="OptionalCBMCSettings" />
+    <ref role="1XX52x" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    <node concept="3EZMnI" id="5tDzxi6RrTI" role="2wV5jI">
+      <node concept="PMmxH" id="5tDzxi6RrUn" role="3EZMnx">
+        <ref role="PMmxG" node="56VLVOUm_Oq" resolve="TimeoutSettings" />
+      </node>
+      <node concept="PMmxH" id="5tDzxi6RrVB" role="3EZMnx">
+        <ref role="PMmxG" node="2OfxaHaxQ5D" resolve="ExternalFilesSettings" />
+      </node>
+      <node concept="PMmxH" id="5tDzxi6RrUY" role="3EZMnx">
+        <ref role="PMmxG" node="fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+      </node>
+      <node concept="3F0ifn" id="28vOu_upIpF" role="3EZMnx">
+        <property role="3F0ifm" value="options end" />
+        <node concept="VechU" id="28vOu_uq8p8" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="5tDzxi6RrTL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5tDzxi6RrW3">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="OptionalCBMCSettingsDoc" />
+    <ref role="1XX52x" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    <node concept="3EZMnI" id="5tDzxi6RrWB" role="2wV5jI">
+      <node concept="PMmxH" id="5tDzxi6RrXP" role="3EZMnx">
+        <ref role="PMmxG" node="3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
+      </node>
+      <node concept="PMmxH" id="5tDzxi6RrZ5" role="3EZMnx">
+        <ref role="PMmxG" node="5tDzxi6Rdl3" resolve="ExternalFilesSettingsDoc" />
+      </node>
+      <node concept="PMmxH" id="5tDzxi6RrYs" role="3EZMnx">
+        <ref role="PMmxG" node="3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      </node>
+      <node concept="2iRkQZ" id="5tDzxi6RrWE" role="2iSdaV" />
     </node>
   </node>
 </model>

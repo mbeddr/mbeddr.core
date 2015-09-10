@@ -15,7 +15,7 @@
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="p8vh" ref="r:774ac595-6c08-4ec5-a945-c0e06119d39d(com.mbeddr.analyses.cbmc.rt.ui)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -92,7 +92,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -149,6 +149,12 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -475,7 +481,7 @@
         <node concept="YS8fn" id="4DO4XHFbbkQ" role="3cqZAp">
           <node concept="2ShNRf" id="4DO4XHFbbkR" role="YScLw">
             <node concept="1pGfFk" id="4DO4XHFbbkS" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="4DO4XHFbbkT" role="37wK5m">
                 <property role="Xl_RC" value="Not yet implemented" />
               </node>
@@ -975,7 +981,7 @@
         <node concept="YS8fn" id="2xh7o2ybh5W" role="3cqZAp">
           <node concept="2ShNRf" id="2xh7o2ybh7w" role="YScLw">
             <node concept="1pGfFk" id="2xh7o2ybhtX" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="2xh7o2ybhBX" role="37wK5m">
                 <property role="Xl_RC" value="Not yet implemented" />
               </node>
@@ -1007,7 +1013,7 @@
         <node concept="YS8fn" id="6KXBYUqDpHl" role="3cqZAp">
           <node concept="2ShNRf" id="6KXBYUqDpHm" role="YScLw">
             <node concept="1pGfFk" id="6KXBYUqDpHn" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6KXBYUqDpHo" role="37wK5m">
                 <property role="Xl_RC" value="Not yet implemented" />
               </node>
@@ -1666,6 +1672,78 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5VnXdFks$Up" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="externalFiles" />
+      <node concept="3Tm1VV" id="5VnXdFks$Uq" role="1B3o_S" />
+      <node concept="2I9FWS" id="5VnXdFksBp0" role="3clF45">
+        <ref role="2I9WkF" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
+      <node concept="3clFbS" id="5VnXdFks$Us" role="3clF47">
+        <node concept="3clFbJ" id="5VnXdFks$Ut" role="3cqZAp">
+          <node concept="3clFbS" id="5VnXdFks$Uu" role="3clFbx">
+            <node concept="3cpWs6" id="5VnXdFks$Uv" role="3cqZAp">
+              <node concept="2OqwBi" id="5VnXdFks$Uw" role="3cqZAk">
+                <node concept="13iPFW" id="5VnXdFks$Ux" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5VnXdFksBbE" role="2OqNvi">
+                  <ref role="3TtcxE" to="q5q6:2OfxaHaxQ5e" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5VnXdFks$Uz" role="3clFbw">
+            <node concept="13iPFW" id="5VnXdFks$U$" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5VnXdFks_Og" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:2OfxaHayosY" resolve="hasExternalFilesSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5VnXdFks$UA" role="3cqZAp">
+          <node concept="3clFbS" id="5VnXdFks$UB" role="3clFbx">
+            <node concept="3cpWs6" id="5VnXdFks$UC" role="3cqZAp">
+              <node concept="2OqwBi" id="5VnXdFks$UD" role="3cqZAk">
+                <node concept="2OqwBi" id="5VnXdFks$UE" role="2Oq$k0">
+                  <node concept="13iPFW" id="5VnXdFks$UF" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="5VnXdFks$UG" role="2OqNvi">
+                    <node concept="1xMEDy" id="5VnXdFks$UH" role="1xVPHs">
+                      <node concept="chp4Y" id="5VnXdFks$UI" role="ri$Ld">
+                        <ref role="cht4Q" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="5VnXdFks$UJ" role="2OqNvi">
+                  <ref role="37wK5l" node="5VnXdFks$Up" resolve="externalFiles" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5VnXdFks$UK" role="3clFbw">
+            <node concept="2OqwBi" id="5VnXdFks$UL" role="2Oq$k0">
+              <node concept="13iPFW" id="5VnXdFks$UM" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5VnXdFks$UN" role="2OqNvi">
+                <node concept="1xMEDy" id="5VnXdFks$UO" role="1xVPHs">
+                  <node concept="chp4Y" id="5VnXdFks$UP" role="ri$Ld">
+                    <ref role="cht4Q" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5VnXdFks$UQ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5VnXdFks$UT" role="3cqZAp">
+          <node concept="2ShNRf" id="5VnXdFksBHN" role="3cqZAk">
+            <node concept="2T8Vx0" id="5VnXdFksHcC" role="2ShVmc">
+              <node concept="2I9FWS" id="5VnXdFksHcE" role="2T96Bj">
+                <ref role="2I9WkF" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="jmYEA6F1X$" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -2022,6 +2100,19 @@
               <node concept="13iPFW" id="jmYEA6F7Ee" role="2Oq$k0" />
               <node concept="3TrcHB" id="jmYEA6F7Yq" role="2OqNvi">
                 <ref role="3TsBF5" to="q5q6:jmYEA6F408" resolve="hasLocalArchitectureSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2OfxaHayoRd" role="3cqZAp">
+          <node concept="37vLTI" id="2OfxaHayppF" role="3clFbG">
+            <node concept="3clFbT" id="2OfxaHaypta" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="2OfxaHayp0M" role="37vLTJ">
+              <node concept="13iPFW" id="2OfxaHayoRb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2OfxaHaypcq" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:2OfxaHayosY" resolve="hasExternalFilesSettings" />
               </node>
             </node>
           </node>

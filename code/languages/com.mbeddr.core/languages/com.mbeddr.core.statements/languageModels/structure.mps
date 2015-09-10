@@ -299,7 +299,7 @@
     </node>
     <node concept="1TJgyj" id="5soFcYDHzQp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="dummyType" />
+      <property role="20kJfa" value="type" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="PrWs8" id="7RHXOmw5Ihe" role="PzmwI">
@@ -829,6 +829,28 @@
     </node>
     <node concept="PrWs8" id="cwSfP$5QSv" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1wca57XTRsm">
+    <property role="TrG5h" value="DesignatedInitializer" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1wca57XTRss" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="index" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1wca57XTRsu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1wca57XTRsq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="1wca57Y3Vs7" role="PzmwI">
+      <ref role="PrY4T" node="5aZFu$853$j" resolve="IIndependentIinitExpression" />
     </node>
   </node>
 </model>
