@@ -1962,18 +1962,6 @@
             </node>
             <node concept="2iRfu4" id="6LsWDiKtmi$" role="2iSdaV" />
           </node>
-          <node concept="3EZMnI" id="6LsWDiKtmdE" role="3EZMnx">
-            <node concept="VPM3Z" id="6LsWDiKtmdF" role="3F10Kt">
-              <property role="VOm3f" value="false" />
-            </node>
-            <node concept="3F0ifn" id="6LsWDiKtmdG" role="3EZMnx">
-              <property role="3F0ifm" value="pointer diff type (size of pointer)  " />
-            </node>
-            <node concept="3F1sOY" id="6LsWDiKtmdH" role="3EZMnx">
-              <ref role="1NtTu8" to="mj1l:3jGRJVwqZnA" />
-            </node>
-            <node concept="2iRfu4" id="6LsWDiKtmdI" role="2iSdaV" />
-          </node>
           <node concept="3EZMnI" id="2WmgvBhtc3r" role="3EZMnx">
             <node concept="VPM3Z" id="2WmgvBhtc3s" role="3F10Kt">
               <property role="VOm3f" value="false" />
