@@ -4,9 +4,10 @@
   <languages>
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -164,12 +165,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -190,8 +185,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -524,22 +529,22 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3SKdUt" id="bHbw4jcZK" role="3cqZAp">
-                          <node concept="3SKWN0" id="bHbw4jcZL" role="3SKWNk">
-                            <node concept="3clFbF" id="1DZCyiI4s_v" role="3SKWNf">
-                              <node concept="2OqwBi" id="1DZCyiI4sG6" role="3clFbG">
-                                <node concept="37vLTw" id="1DZCyiI4s_t" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1DZCyiI4mAb" resolve="rootCell" />
+                        <node concept="1X3_iC" id="4O4MWU3Ugjo" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="3clFbF" id="1DZCyiI4s_v" role="8Wnug">
+                            <node concept="2OqwBi" id="1DZCyiI4sG6" role="3clFbG">
+                              <node concept="37vLTw" id="1DZCyiI4s_t" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1DZCyiI4mAb" resolve="rootCell" />
+                              </node>
+                              <node concept="liA8E" id="1DZCyiI4t2h" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell.paint(java.awt.Graphics,jetbrains.mps.nodeEditor.cells.ParentSettings):void" resolve="paint" />
+                                <node concept="37vLTw" id="3cT15Vc0IgK" role="37wK5m">
+                                  <ref role="3cqZAo" node="1DZCyiI4ukY" resolve="g" />
                                 </node>
-                                <node concept="liA8E" id="1DZCyiI4t2h" role="2OqNvi">
-                                  <ref role="37wK5l" to="g51k:~EditorCell.paint(java.awt.Graphics,jetbrains.mps.nodeEditor.cells.ParentSettings):void" resolve="paint" />
-                                  <node concept="37vLTw" id="3cT15Vc0IgK" role="37wK5m">
-                                    <ref role="3cqZAo" node="1DZCyiI4ukY" resolve="g" />
-                                  </node>
-                                  <node concept="2YIFZM" id="1DZCyiI4tgk" role="37wK5m">
-                                    <ref role="37wK5l" to="g51k:~ParentSettings.createDefaultSetting():jetbrains.mps.nodeEditor.cells.ParentSettings" resolve="createDefaultSetting" />
-                                    <ref role="1Pybhc" to="g51k:~ParentSettings" resolve="ParentSettings" />
-                                  </node>
+                                <node concept="2YIFZM" id="1DZCyiI4tgk" role="37wK5m">
+                                  <ref role="37wK5l" to="g51k:~ParentSettings.createDefaultSetting():jetbrains.mps.nodeEditor.cells.ParentSettings" resolve="createDefaultSetting" />
+                                  <ref role="1Pybhc" to="g51k:~ParentSettings" resolve="ParentSettings" />
                                 </node>
                               </node>
                             </node>

@@ -7,6 +7,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -179,12 +180,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -318,6 +313,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1051,28 +1053,28 @@
         <node concept="3clFbH" id="79AXByyzDko" role="3cqZAp" />
         <node concept="3clFbJ" id="79AXByyzBmj" role="3cqZAp">
           <node concept="3clFbS" id="79AXByyzBmm" role="3clFbx">
-            <node concept="3SKdUt" id="7o1blyuOqTq" role="3cqZAp">
-              <node concept="3SKWN0" id="7o1blyuOqT$" role="3SKWNk">
-                <node concept="3clFbF" id="16oY6Yu__x_" role="3SKWNf">
-                  <node concept="2OqwBi" id="16oY6Yu_EjN" role="3clFbG">
-                    <node concept="2YIFZM" id="16oY6Yu_DA8" role="2Oq$k0">
-                      <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project):jetbrains.mps.ide.projectPane.ProjectPane" resolve="getInstance" />
-                      <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
-                      <node concept="2OqwBi" id="16oY6Yu_DPc" role="37wK5m">
-                        <node concept="2WthIp" id="16oY6Yu_DPf" role="2Oq$k0" />
-                        <node concept="1DTwFV" id="16oY6Yu_DPh" role="2OqNvi">
-                          <ref role="2WH_rO" node="4oi2Bf2rHMM" resolve="project" />
-                        </node>
+            <node concept="1X3_iC" id="4O4MWU3SB4Y" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="16oY6Yu__x_" role="8Wnug">
+                <node concept="2OqwBi" id="16oY6Yu_EjN" role="3clFbG">
+                  <node concept="2YIFZM" id="16oY6Yu_DA8" role="2Oq$k0">
+                    <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project):jetbrains.mps.ide.projectPane.ProjectPane" resolve="getInstance" />
+                    <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
+                    <node concept="2OqwBi" id="16oY6Yu_DPc" role="37wK5m">
+                      <node concept="2WthIp" id="16oY6Yu_DPf" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="16oY6Yu_DPh" role="2OqNvi">
+                        <ref role="2WH_rO" node="4oi2Bf2rHMM" resolve="project" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="16oY6Yu_IR3" role="2OqNvi">
-                      <ref role="37wK5l" to="rvbb:~ProjectPane.selectModel(org.jetbrains.mps.openapi.model.SModel,boolean):void" resolve="selectModel" />
-                      <node concept="37vLTw" id="16oY6Yu_IV_" role="37wK5m">
-                        <ref role="3cqZAo" node="16oY6Yu_oBk" resolve="model" />
-                      </node>
-                      <node concept="3clFbT" id="16oY6Yu_JEW" role="37wK5m">
-                        <property role="3clFbU" value="false" />
-                      </node>
+                  </node>
+                  <node concept="liA8E" id="16oY6Yu_IR3" role="2OqNvi">
+                    <ref role="37wK5l" to="rvbb:~ProjectPane.selectModel(org.jetbrains.mps.openapi.model.SModel,boolean):void" resolve="selectModel" />
+                    <node concept="37vLTw" id="16oY6Yu_IV_" role="37wK5m">
+                      <ref role="3cqZAo" node="16oY6Yu_oBk" resolve="model" />
+                    </node>
+                    <node concept="3clFbT" id="16oY6Yu_JEW" role="37wK5m">
+                      <property role="3clFbU" value="false" />
                     </node>
                   </node>
                 </node>
