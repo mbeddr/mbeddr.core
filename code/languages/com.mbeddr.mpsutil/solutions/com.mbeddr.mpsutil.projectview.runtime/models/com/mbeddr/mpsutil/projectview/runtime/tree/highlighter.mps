@@ -1834,6 +1834,7 @@
         </node>
       </node>
       <node concept="3cqZAl" id="6B7erwvED2g" role="3clF45" />
+      <node concept="3Tm1VV" id="2PllHHQVjSj" role="1B3o_S" />
     </node>
     <node concept="3clFb_" id="6B7erwvED2h" role="jymVt">
       <property role="TrG5h" value="updateNodePresentation" />
@@ -6443,6 +6444,19 @@
             <node concept="liA8E" id="6B7erwvEDtv" role="2OqNvi">
               <ref role="37wK5l" node="6B7erwvEDkK" resolve="attach" />
               <node concept="37vLTw" id="6B7erwvEDtw" role="37wK5m">
+                <ref role="3cqZAo" node="6B7erwvEDto" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2PllHHQVkUm" role="3cqZAp">
+          <node concept="2OqwBi" id="2PllHHQVkVn" role="3clFbG">
+            <node concept="1rXfSq" id="2PllHHQVkUk" role="2Oq$k0">
+              <ref role="37wK5l" node="6B7erwvEDsJ" resolve="getModelListeners" />
+            </node>
+            <node concept="liA8E" id="2PllHHQVkX6" role="2OqNvi">
+              <ref role="37wK5l" node="6B7erwvED22" resolve="refreshTreeNodes" />
+              <node concept="37vLTw" id="2PllHHQVkZ3" role="37wK5m">
                 <ref role="3cqZAo" node="6B7erwvEDto" resolve="node" />
               </node>
             </node>
