@@ -69,6 +69,7 @@
     <import index="tcg7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.fileTypes(MPS.Platform/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="oi6x" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.nodesFs(MPS.Platform/)" />
+    <import index="yg2w" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util.containers(MPS.Core/)" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -104,6 +105,14 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
+        <child id="1153952416686" name="body" index="2GV8ay" />
+        <child id="1153952429843" name="finallyBody" index="2GVbov" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+        <child id="2820489544402271667" name="typeParameter" index="HU9BZ" />
       </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
@@ -382,6 +391,7 @@
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
+      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -10485,15 +10495,15 @@
       <property role="TrG5h" value="myChildrenRecorder" />
       <node concept="3Tm6S6" id="7PuCnEL_Cd1" role="1B3o_S" />
       <node concept="3uibUv" id="7PuCnEL_CgS" role="1tU5fm">
-        <ref role="3uigEE" to="w1kc:~DependencyRecorder" resolve="DependencyRecorder" />
+        <ref role="3uigEE" node="1RoeMOdaJhx" resolve="DependencyRecorder" />
         <node concept="3uibUv" id="7PuCnEL_Cmj" role="11_B2D">
           <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
         </node>
       </node>
       <node concept="2ShNRf" id="7PuCnEL_Crr" role="33vP2m">
-        <node concept="1pGfFk" id="7PuCnEL_Crn" role="2ShVmc">
-          <ref role="37wK5l" to="w1kc:~DependencyRecorder.&lt;init&gt;()" resolve="DependencyRecorder" />
-          <node concept="3uibUv" id="7PuCnEL_Cro" role="1pMfVU">
+        <node concept="HV5vD" id="1RoeMOdbkn1" role="2ShVmc">
+          <ref role="HV5vE" node="1RoeMOdaJhx" resolve="DependencyRecorder" />
+          <node concept="3uibUv" id="1RoeMOdbslI" role="HU9BZ">
             <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
           </node>
         </node>
@@ -10503,15 +10513,15 @@
       <property role="TrG5h" value="myPresentationRecorder" />
       <node concept="3Tm6S6" id="7PuCnEL_COJ" role="1B3o_S" />
       <node concept="3uibUv" id="7PuCnEL_COK" role="1tU5fm">
-        <ref role="3uigEE" to="w1kc:~DependencyRecorder" resolve="DependencyRecorder" />
+        <ref role="3uigEE" node="1RoeMOdaJhx" resolve="DependencyRecorder" />
         <node concept="3uibUv" id="7PuCnEL_COL" role="11_B2D">
           <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
         </node>
       </node>
       <node concept="2ShNRf" id="7PuCnEL_COM" role="33vP2m">
-        <node concept="1pGfFk" id="7PuCnEL_CON" role="2ShVmc">
-          <ref role="37wK5l" to="w1kc:~DependencyRecorder.&lt;init&gt;()" resolve="DependencyRecorder" />
-          <node concept="3uibUv" id="7PuCnEL_COO" role="1pMfVU">
+        <node concept="HV5vD" id="1RoeMOdbqAR" role="2ShVmc">
+          <ref role="HV5vE" node="1RoeMOdaJhx" resolve="DependencyRecorder" />
+          <node concept="3uibUv" id="1RoeMOdbtWI" role="HU9BZ">
             <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
           </node>
         </node>
@@ -10633,7 +10643,7 @@
               <ref role="3cqZAo" node="7PuCnEL_Cd0" resolve="myChildrenRecorder" />
             </node>
             <node concept="liA8E" id="7PuCnEL_D82" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~DependencyRecorder.rebuild(java.lang.Object,java.lang.Runnable):void" resolve="rebuild" />
+              <ref role="37wK5l" node="1RoeMOdaJiP" resolve="rebuild" />
               <node concept="37vLTw" id="7PuCnEL_DaI" role="37wK5m">
                 <ref role="3cqZAo" node="7PuCnEL_$41" resolve="treeNode" />
               </node>
@@ -10681,7 +10691,7 @@
               <ref role="3cqZAo" node="7PuCnEL_COI" resolve="myPresentationRecorder" />
             </node>
             <node concept="liA8E" id="7PuCnEL_DCR" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~DependencyRecorder.rebuild(java.lang.Object,java.lang.Runnable):void" resolve="rebuild" />
+              <ref role="37wK5l" node="1RoeMOdaJiP" resolve="rebuild" />
               <node concept="37vLTw" id="7PuCnEL_DFz" role="37wK5m">
                 <ref role="3cqZAo" node="7PuCnEL_CUB" resolve="treeNode" />
               </node>
@@ -10777,17 +10787,49 @@
           <node concept="3cpWsn" id="7PuCnEL_MzK" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="changedNodes" />
-            <node concept="3uibUv" id="7PuCnEL_MzL" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-              <node concept="3uibUv" id="7PuCnEL_MzM" role="11_B2D">
+            <node concept="2hMVRd" id="1RoeMOdcjvy" role="1tU5fm">
+              <node concept="3uibUv" id="1RoeMOdcjv$" role="2hN53Y">
                 <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
               </node>
             </node>
-            <node concept="1rXfSq" id="7PuCnELBCSc" role="33vP2m">
-              <ref role="37wK5l" node="7PuCnELBCS7" resolve="collectChangedNodes" />
-              <node concept="37vLTw" id="7PuCnELBCSb" role="37wK5m">
-                <ref role="3cqZAo" node="7PuCnEL_Jw6" resolve="events" />
+            <node concept="2ShNRf" id="1RoeMOdcc9M" role="33vP2m">
+              <node concept="2i4dXS" id="1RoeMOdckTE" role="2ShVmc">
+                <node concept="3uibUv" id="1RoeMOdcm5A" role="HW$YZ">
+                  <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1RoeMOdcoCm" role="3cqZAp">
+          <node concept="3cpWsn" id="1RoeMOdcoCn" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="changedModels" />
+            <node concept="2hMVRd" id="1RoeMOdcoCo" role="1tU5fm">
+              <node concept="3uibUv" id="1RoeMOdcpxB" role="2hN53Y">
+                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="1RoeMOdcoCq" role="33vP2m">
+              <node concept="2i4dXS" id="1RoeMOdcoCr" role="2ShVmc">
+                <node concept="3uibUv" id="1RoeMOdcpsX" role="HW$YZ">
+                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1RoeMOdcnBx" role="3cqZAp">
+          <node concept="1rXfSq" id="7PuCnELBCSc" role="3clFbG">
+            <ref role="37wK5l" node="7PuCnELBCS7" resolve="collectChanges" />
+            <node concept="37vLTw" id="7PuCnELBCSb" role="37wK5m">
+              <ref role="3cqZAo" node="7PuCnEL_Jw6" resolve="events" />
+            </node>
+            <node concept="37vLTw" id="1RoeMOdcpF7" role="37wK5m">
+              <ref role="3cqZAo" node="7PuCnEL_MzK" resolve="changedNodes" />
+            </node>
+            <node concept="37vLTw" id="1RoeMOdcpPV" role="37wK5m">
+              <ref role="3cqZAo" node="1RoeMOdcoCn" resolve="changedModels" />
             </node>
           </node>
         </node>
@@ -10853,7 +10895,7 @@
                       <ref role="3cqZAo" node="7PuCnEL_Cd0" resolve="myChildrenRecorder" />
                     </node>
                     <node concept="liA8E" id="7PuCnEL_MBg" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~DependencyRecorder.getDependOn(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getDependOn" />
+                      <ref role="37wK5l" node="1RoeMOdaJjI" resolve="getDependOn" />
                       <node concept="37vLTw" id="7PuCnEL_MBh" role="37wK5m">
                         <ref role="3cqZAo" node="7PuCnEL_MB2" resolve="changedNode" />
                       </node>
@@ -10873,9 +10915,63 @@
                       <ref role="3cqZAo" node="7PuCnEL_COI" resolve="myPresentationRecorder" />
                     </node>
                     <node concept="liA8E" id="7PuCnEL_RRf" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~DependencyRecorder.getDependOn(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getDependOn" />
+                      <ref role="37wK5l" node="1RoeMOdaJjI" resolve="getDependOn" />
                       <node concept="37vLTw" id="7PuCnEL_RRg" role="37wK5m">
                         <ref role="3cqZAo" node="7PuCnEL_MB2" resolve="changedNode" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="1RoeMOdcri3" role="3cqZAp">
+          <node concept="37vLTw" id="1RoeMOdcsQA" role="1DdaDG">
+            <ref role="3cqZAo" node="1RoeMOdcoCn" resolve="changedModels" />
+          </node>
+          <node concept="3cpWsn" id="1RoeMOdcri5" role="1Duv9x">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="changedModel" />
+            <node concept="3uibUv" id="1RoeMOdcxiS" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1RoeMOdcri7" role="2LFqv$">
+            <node concept="3clFbF" id="1RoeMOdcri8" role="3cqZAp">
+              <node concept="2OqwBi" id="1RoeMOdcri9" role="3clFbG">
+                <node concept="37vLTw" id="1RoeMOdcria" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7PuCnEL_MAQ" resolve="treeNodesToUpdateChildren" />
+                </node>
+                <node concept="X8dFx" id="1RoeMOdcrib" role="2OqNvi">
+                  <node concept="2OqwBi" id="1RoeMOdcric" role="25WWJ7">
+                    <node concept="37vLTw" id="1RoeMOdcrid" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7PuCnEL_Cd0" resolve="myChildrenRecorder" />
+                    </node>
+                    <node concept="liA8E" id="1RoeMOdcrie" role="2OqNvi">
+                      <ref role="37wK5l" node="1RoeMOdbLQv" resolve="getDependOn" />
+                      <node concept="37vLTw" id="1RoeMOdcrif" role="37wK5m">
+                        <ref role="3cqZAo" node="1RoeMOdcri5" resolve="changedModel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1RoeMOdcrig" role="3cqZAp">
+              <node concept="2OqwBi" id="1RoeMOdcrih" role="3clFbG">
+                <node concept="37vLTw" id="1RoeMOdcrii" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7PuCnEL_Se0" resolve="treeNodesToUpdatePresentation" />
+                </node>
+                <node concept="X8dFx" id="1RoeMOdcrij" role="2OqNvi">
+                  <node concept="2OqwBi" id="1RoeMOdcrik" role="25WWJ7">
+                    <node concept="37vLTw" id="1RoeMOdcril" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7PuCnEL_COI" resolve="myPresentationRecorder" />
+                    </node>
+                    <node concept="liA8E" id="1RoeMOdcrim" role="2OqNvi">
+                      <ref role="37wK5l" node="1RoeMOdbLQv" resolve="getDependOn" />
+                      <node concept="37vLTw" id="1RoeMOdcrin" role="37wK5m">
+                        <ref role="3cqZAo" node="1RoeMOdcri5" resolve="changedModel" />
                       </node>
                     </node>
                   </node>
@@ -10904,14 +11000,9 @@
     </node>
     <node concept="2tJIrI" id="7PuCnELBEaI" role="jymVt" />
     <node concept="3clFb_" id="7PuCnELBCS7" role="jymVt">
-      <property role="TrG5h" value="collectChangedNodes" />
+      <property role="TrG5h" value="collectChanges" />
       <node concept="3Tmbuc" id="7PuCnELBCS8" role="1B3o_S" />
-      <node concept="3uibUv" id="7PuCnELBCS9" role="3clF45">
-        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-        <node concept="3uibUv" id="7PuCnELBCSa" role="11_B2D">
-          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-        </node>
-      </node>
+      <node concept="3cqZAl" id="1RoeMOdbT_q" role="3clF45" />
       <node concept="37vLTG" id="7PuCnELBCRZ" role="3clF46">
         <property role="TrG5h" value="events" />
         <node concept="3uibUv" id="7PuCnELBCS0" role="1tU5fm">
@@ -10921,27 +11012,25 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbS" id="7PuCnELBCQ_" role="3clF47">
-        <node concept="3cpWs8" id="7PuCnELBCQC" role="3cqZAp">
-          <node concept="3cpWsn" id="7PuCnELBCQD" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="changedNodes" />
-            <node concept="3uibUv" id="7PuCnELBCQE" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-              <node concept="3uibUv" id="7PuCnELBCQF" role="11_B2D">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="7PuCnELBCQG" role="33vP2m">
-              <node concept="1pGfFk" id="7PuCnELBCQH" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~LinkedHashSet.&lt;init&gt;()" resolve="LinkedHashSet" />
-                <node concept="3uibUv" id="7PuCnELBCQI" role="1pMfVU">
-                  <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                </node>
-              </node>
-            </node>
+      <node concept="37vLTG" id="1RoeMOdbP$f" role="3clF46">
+        <property role="TrG5h" value="changedNodes" />
+        <property role="3TUv4t" value="true" />
+        <node concept="2hMVRd" id="1RoeMOdbQPk" role="1tU5fm">
+          <node concept="3uibUv" id="1RoeMOdbSYN" role="2hN53Y">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
           </node>
         </node>
+      </node>
+      <node concept="37vLTG" id="1RoeMOdbR6N" role="3clF46">
+        <property role="TrG5h" value="changesModels" />
+        <property role="3TUv4t" value="true" />
+        <node concept="2hMVRd" id="1RoeMOdbSCM" role="1tU5fm">
+          <node concept="3uibUv" id="1RoeMOdbSLm" role="2hN53Y">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="7PuCnELBCQ_" role="3clF47">
         <node concept="1DcWWT" id="7PuCnELBCQJ" role="3cqZAp">
           <node concept="37vLTw" id="7PuCnELBCS2" role="1DdaDG">
             <ref role="3cqZAo" node="7PuCnELBCRZ" resolve="events" />
@@ -10988,16 +11077,32 @@
                             <node concept="3clFbF" id="7PuCnELBCR1" role="3cqZAp">
                               <node concept="2OqwBi" id="7PuCnELBCR2" role="3clFbG">
                                 <node concept="37vLTw" id="7PuCnELBCR3" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7PuCnELBCQD" resolve="changedNodes" />
+                                  <ref role="3cqZAo" node="1RoeMOdbP$f" resolve="changedNodes" />
                                 </node>
-                                <node concept="liA8E" id="7PuCnELBCR4" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                                  <node concept="2OqwBi" id="7PuCnELBCR5" role="37wK5m">
+                                <node concept="TSZUe" id="1RoeMOdc6Bn" role="2OqNvi">
+                                  <node concept="2OqwBi" id="7PuCnELBCR5" role="25WWJ7">
                                     <node concept="37vLTw" id="7PuCnELBCR6" role="2Oq$k0">
                                       <ref role="3cqZAo" node="7PuCnELBCQY" resolve="event" />
                                     </node>
                                     <node concept="liA8E" id="7PuCnELBCR7" role="2OqNvi">
                                       <ref role="37wK5l" to="j9co:~SModelRootEvent.getRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getRoot" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="1RoeMOdbXGd" role="3cqZAp">
+                              <node concept="2OqwBi" id="1RoeMOdbY0k" role="3clFbG">
+                                <node concept="37vLTw" id="1RoeMOdbXGb" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1RoeMOdbR6N" resolve="changesModels" />
+                                </node>
+                                <node concept="TSZUe" id="1RoeMOdbYVm" role="2OqNvi">
+                                  <node concept="2OqwBi" id="1RoeMOdc6UA" role="25WWJ7">
+                                    <node concept="37vLTw" id="1RoeMOdc6KN" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="7PuCnELBCQY" resolve="event" />
+                                    </node>
+                                    <node concept="liA8E" id="1RoeMOdc77T" role="2OqNvi">
+                                      <ref role="37wK5l" to="j9co:~SModelEvent.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
                                     </node>
                                   </node>
                                 </node>
@@ -11025,11 +11130,10 @@
                             <node concept="3clFbF" id="7PuCnELBCRf" role="3cqZAp">
                               <node concept="2OqwBi" id="7PuCnELBCRg" role="3clFbG">
                                 <node concept="37vLTw" id="7PuCnELBCRh" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7PuCnELBCQD" resolve="changedNodes" />
+                                  <ref role="3cqZAo" node="1RoeMOdbP$f" resolve="changedNodes" />
                                 </node>
-                                <node concept="liA8E" id="7PuCnELBCRi" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                                  <node concept="2OqwBi" id="7PuCnELBCRj" role="37wK5m">
+                                <node concept="TSZUe" id="1RoeMOdc8i9" role="2OqNvi">
+                                  <node concept="2OqwBi" id="7PuCnELBCRj" role="25WWJ7">
                                     <node concept="37vLTw" id="7PuCnELBCRk" role="2Oq$k0">
                                       <ref role="3cqZAo" node="7PuCnELBCRc" resolve="event" />
                                     </node>
@@ -11043,11 +11147,10 @@
                             <node concept="3clFbF" id="7PuCnELBCRm" role="3cqZAp">
                               <node concept="2OqwBi" id="7PuCnELBCRn" role="3clFbG">
                                 <node concept="37vLTw" id="7PuCnELBCRo" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7PuCnELBCQD" resolve="changedNodes" />
+                                  <ref role="3cqZAo" node="1RoeMOdbP$f" resolve="changedNodes" />
                                 </node>
-                                <node concept="liA8E" id="7PuCnELBCRp" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                                  <node concept="2OqwBi" id="7PuCnELBCRq" role="37wK5m">
+                                <node concept="TSZUe" id="1RoeMOdc9yy" role="2OqNvi">
+                                  <node concept="2OqwBi" id="7PuCnELBCRq" role="25WWJ7">
                                     <node concept="37vLTw" id="7PuCnELBCRr" role="2Oq$k0">
                                       <ref role="3cqZAo" node="7PuCnELBCRc" resolve="event" />
                                     </node>
@@ -11080,11 +11183,10 @@
                             <node concept="3clFbF" id="7PuCnELBCR$" role="3cqZAp">
                               <node concept="2OqwBi" id="7PuCnELBCR_" role="3clFbG">
                                 <node concept="37vLTw" id="7PuCnELBCRA" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7PuCnELBCQD" resolve="changedNodes" />
+                                  <ref role="3cqZAo" node="1RoeMOdbP$f" resolve="changedNodes" />
                                 </node>
-                                <node concept="liA8E" id="7PuCnELBCRB" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                                  <node concept="2OqwBi" id="7PuCnELBCRC" role="37wK5m">
+                                <node concept="TSZUe" id="1RoeMOdcaJd" role="2OqNvi">
+                                  <node concept="2OqwBi" id="7PuCnELBCRC" role="25WWJ7">
                                     <node concept="37vLTw" id="7PuCnELBCRD" role="2Oq$k0">
                                       <ref role="3cqZAo" node="7PuCnELBCRx" resolve="event" />
                                     </node>
@@ -11117,11 +11219,10 @@
                             <node concept="3clFbF" id="7PuCnELBCRM" role="3cqZAp">
                               <node concept="2OqwBi" id="7PuCnELBCRN" role="3clFbG">
                                 <node concept="37vLTw" id="7PuCnELBCRO" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7PuCnELBCQD" resolve="changedNodes" />
+                                  <ref role="3cqZAo" node="1RoeMOdbP$f" resolve="changedNodes" />
                                 </node>
-                                <node concept="liA8E" id="7PuCnELBCRP" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                                  <node concept="2OqwBi" id="7PuCnELBCRQ" role="37wK5m">
+                                <node concept="TSZUe" id="1RoeMOdcbTO" role="2OqNvi">
+                                  <node concept="2OqwBi" id="7PuCnELBCRQ" role="25WWJ7">
                                     <node concept="2OqwBi" id="7PuCnELBCRR" role="2Oq$k0">
                                       <node concept="37vLTw" id="7PuCnELBCRS" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7PuCnELBCRJ" resolve="event" />
@@ -11147,11 +11248,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="7PuCnELBCRX" role="3cqZAp">
-          <node concept="37vLTw" id="7PuCnELBCRY" role="3cqZAk">
-            <ref role="3cqZAo" node="7PuCnELBCQD" resolve="changedNodes" />
           </node>
         </node>
       </node>
@@ -11932,7 +12028,7 @@
                   <ref role="3cqZAo" node="3jVbLyZGmOb" resolve="editorComponent" />
                 </node>
                 <node concept="liA8E" id="3jVbLyZGnqY" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorComponent.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
                 </node>
               </node>
             </node>
@@ -11942,6 +12038,745 @@
       <node concept="3Tm6S6" id="3jVbLyZGmOA" role="1B3o_S" />
       <node concept="3uibUv" id="3jVbLyZGmOB" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1RoeMOdaJhx">
+    <property role="TrG5h" value="DependencyRecorder" />
+    <property role="2bfB8j" value="true" />
+    <property role="1sVAO0" value="false" />
+    <property role="1EXbeo" value="false" />
+    <property role="3GE5qa" value="update" />
+    <node concept="3Tm1VV" id="1RoeMOdaJhz" role="1B3o_S" />
+    <node concept="16euLQ" id="1RoeMOdaJh$" role="16eVyc">
+      <property role="TrG5h" value="T" />
+    </node>
+    <node concept="312cEg" id="1RoeMOdaJiG" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myObjectsToNodes" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="1RoeMOdaJiI" role="1tU5fm">
+        <ref role="3uigEE" to="yg2w:~ManyToManyMap" resolve="ManyToManyMap" />
+        <node concept="16syzq" id="1RoeMOdaJiJ" role="11_B2D">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+        <node concept="3uibUv" id="1RoeMOdaJiK" role="11_B2D">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="1RoeMOdaKK8" role="33vP2m">
+        <node concept="1pGfFk" id="1RoeMOdaKK9" role="2ShVmc">
+          <ref role="37wK5l" to="yg2w:~ManyToManyMap.&lt;init&gt;()" resolve="ManyToManyMap" />
+          <node concept="16syzq" id="1RoeMOdaJiM" role="1pMfVU">
+            <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+          </node>
+          <node concept="3uibUv" id="1RoeMOdaJiN" role="1pMfVU">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="1RoeMOdaJiO" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="1RoeMOdbvyl" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myObjectsToModels" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="1RoeMOdbvym" role="1tU5fm">
+        <ref role="3uigEE" to="yg2w:~ManyToManyMap" resolve="ManyToManyMap" />
+        <node concept="16syzq" id="1RoeMOdbvyn" role="11_B2D">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+        <node concept="3uibUv" id="1RoeMOdbGLC" role="11_B2D">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="1RoeMOdbvyp" role="33vP2m">
+        <node concept="1pGfFk" id="1RoeMOdbvyq" role="2ShVmc">
+          <ref role="37wK5l" to="yg2w:~ManyToManyMap.&lt;init&gt;()" resolve="ManyToManyMap" />
+          <node concept="16syzq" id="1RoeMOdbvyr" role="1pMfVU">
+            <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+          </node>
+          <node concept="3uibUv" id="1RoeMOdbHhN" role="1pMfVU">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="1RoeMOdbvyt" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="1RoeMOdbv42" role="jymVt" />
+    <node concept="3clFb_" id="1RoeMOdaJiP" role="jymVt">
+      <property role="TrG5h" value="rebuild" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1RoeMOdaJiQ" role="3clF46">
+        <property role="TrG5h" value="t" />
+        <property role="3TUv4t" value="false" />
+        <node concept="16syzq" id="1RoeMOdaJiR" role="1tU5fm">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1RoeMOdaJiS" role="3clF46">
+        <property role="TrG5h" value="r" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="1RoeMOdaJiT" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1RoeMOdaJiU" role="3clF47">
+        <node concept="3cpWs8" id="1RoeMOdaJiW" role="3cqZAp">
+          <node concept="3cpWsn" id="1RoeMOdaJiV" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="listener" />
+            <node concept="3uibUv" id="1RoeMOdaJiX" role="1tU5fm">
+              <ref role="3uigEE" node="1RoeMOdaJh_" resolve="DependencyRecorder.MyNodeReadListener" />
+            </node>
+            <node concept="2ShNRf" id="1RoeMOdaKKa" role="33vP2m">
+              <node concept="HV5vD" id="1RoeMOdaKKb" role="2ShVmc">
+                <ref role="HV5vE" node="1RoeMOdaJh_" resolve="DependencyRecorder.MyNodeReadListener" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1RoeMOdaJiZ" role="3cqZAp">
+          <node concept="2YIFZM" id="1RoeMOdaKKl" role="3clFbG">
+            <ref role="1Pybhc" to="w1kc:~NodeReadEventsCaster" resolve="NodeReadEventsCaster" />
+            <ref role="37wK5l" to="w1kc:~NodeReadEventsCaster.setNodesReadListener(jetbrains.mps.smodel.INodesReadListener):void" resolve="setNodesReadListener" />
+            <node concept="37vLTw" id="1RoeMOdaJj1" role="37wK5m">
+              <ref role="3cqZAo" node="1RoeMOdaJiV" resolve="listener" />
+            </node>
+          </node>
+        </node>
+        <node concept="2GUZhq" id="1RoeMOdaJja" role="3cqZAp">
+          <node concept="3clFbS" id="1RoeMOdaJj7" role="2GVbov">
+            <node concept="3clFbF" id="1RoeMOdaJj8" role="3cqZAp">
+              <node concept="2YIFZM" id="1RoeMOdaKKv" role="3clFbG">
+                <ref role="1Pybhc" to="w1kc:~NodeReadEventsCaster" resolve="NodeReadEventsCaster" />
+                <ref role="37wK5l" to="w1kc:~NodeReadEventsCaster.removeNodesReadListener():void" resolve="removeNodesReadListener" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1RoeMOdaJj3" role="2GV8ay">
+            <node concept="3clFbF" id="1RoeMOdaJj4" role="3cqZAp">
+              <node concept="2OqwBi" id="1RoeMOdaKKE" role="3clFbG">
+                <node concept="37vLTw" id="1RoeMOdaKKD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1RoeMOdaJiS" resolve="r" />
+                </node>
+                <node concept="liA8E" id="1RoeMOdaKKF" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1RoeMOdaJjb" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdaKKQ" role="3clFbG">
+            <node concept="37vLTw" id="1RoeMOdaKKP" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdaJiG" resolve="myObjectsToNodes" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdaKKR" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.clearFirst(java.lang.Object):void" resolve="clearFirst" />
+              <node concept="37vLTw" id="1RoeMOdaJjd" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJiQ" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1RoeMOdbL0a" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdbL0b" role="3clFbG">
+            <node concept="37vLTw" id="1RoeMOdbLbd" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdbvyl" resolve="myObjectsToModels" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdbL0d" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.clearFirst(java.lang.Object):void" resolve="clearFirst" />
+              <node concept="37vLTw" id="1RoeMOdbL0e" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJiQ" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1RoeMOddpjI" role="3cqZAp">
+          <node concept="3cpWsn" id="1RoeMOddpjJ" role="3cpWs9">
+            <property role="TrG5h" value="nodeDependencies" />
+            <node concept="3uibUv" id="1RoeMOddpjC" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+              <node concept="3uibUv" id="1RoeMOddpjF" role="11_B2D">
+                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1RoeMOddpjK" role="33vP2m">
+              <node concept="37vLTw" id="1RoeMOddpjL" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdaJiV" resolve="listener" />
+              </node>
+              <node concept="liA8E" id="1RoeMOddpjM" role="2OqNvi">
+                <ref role="37wK5l" node="1RoeMOdaJhK" resolve="getNodeDependencies" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="1RoeMOdaJje" role="3cqZAp">
+          <node concept="37vLTw" id="1RoeMOddpjN" role="1DdaDG">
+            <ref role="3cqZAo" node="1RoeMOddpjJ" resolve="nodeDependencies" />
+          </node>
+          <node concept="3cpWsn" id="1RoeMOdaJjl" role="1Duv9x">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="node" />
+            <node concept="3uibUv" id="1RoeMOdd30G" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1RoeMOdaJjg" role="2LFqv$">
+            <node concept="3clFbF" id="1RoeMOdaJjh" role="3cqZAp">
+              <node concept="2OqwBi" id="1RoeMOdaKLe" role="3clFbG">
+                <node concept="37vLTw" id="1RoeMOdaKLd" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1RoeMOdaJiG" resolve="myObjectsToNodes" />
+                </node>
+                <node concept="liA8E" id="1RoeMOdaKLf" role="2OqNvi">
+                  <ref role="37wK5l" to="yg2w:~ManyToManyMap.addLink(java.lang.Object,java.lang.Object):void" resolve="addLink" />
+                  <node concept="37vLTw" id="1RoeMOdaJjj" role="37wK5m">
+                    <ref role="3cqZAo" node="1RoeMOdaJiQ" resolve="t" />
+                  </node>
+                  <node concept="37vLTw" id="1RoeMOdaJjk" role="37wK5m">
+                    <ref role="3cqZAo" node="1RoeMOdaJjl" resolve="node" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1RoeMOddpC3" role="3cqZAp">
+          <node concept="3cpWsn" id="1RoeMOddpC4" role="3cpWs9">
+            <property role="TrG5h" value="modelDependencies" />
+            <node concept="3uibUv" id="1RoeMOddpBS" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+              <node concept="3uibUv" id="1RoeMOddpBV" role="11_B2D">
+                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1RoeMOddpC5" role="33vP2m">
+              <node concept="37vLTw" id="1RoeMOddpC6" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdaJiV" resolve="listener" />
+              </node>
+              <node concept="liA8E" id="1RoeMOddpC7" role="2OqNvi">
+                <ref role="37wK5l" node="1RoeMOdbIJR" resolve="getModelDependencies" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="1RoeMOdbLcI" role="3cqZAp">
+          <node concept="37vLTw" id="1RoeMOddpC8" role="1DdaDG">
+            <ref role="3cqZAo" node="1RoeMOddpC4" resolve="modelDependencies" />
+          </node>
+          <node concept="3cpWsn" id="1RoeMOdbLcM" role="1Duv9x">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="1RoeMOdd3b1" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1RoeMOdbLcO" role="2LFqv$">
+            <node concept="3clFbF" id="1RoeMOdbLcP" role="3cqZAp">
+              <node concept="2OqwBi" id="1RoeMOdbLcQ" role="3clFbG">
+                <node concept="37vLTw" id="1RoeMOdbLOO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1RoeMOdbvyl" resolve="myObjectsToModels" />
+                </node>
+                <node concept="liA8E" id="1RoeMOdbLcS" role="2OqNvi">
+                  <ref role="37wK5l" to="yg2w:~ManyToManyMap.addLink(java.lang.Object,java.lang.Object):void" resolve="addLink" />
+                  <node concept="37vLTw" id="1RoeMOdbLcT" role="37wK5m">
+                    <ref role="3cqZAo" node="1RoeMOdaJiQ" resolve="t" />
+                  </node>
+                  <node concept="37vLTw" id="1RoeMOdbLcU" role="37wK5m">
+                    <ref role="3cqZAo" node="1RoeMOdbLcM" resolve="model" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1RoeMOdaJjp" role="1B3o_S" />
+      <node concept="3cqZAl" id="1RoeMOdaJjq" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1RoeMOdbwyy" role="jymVt" />
+    <node concept="3clFb_" id="1RoeMOdaJjr" role="jymVt">
+      <property role="TrG5h" value="remove" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1RoeMOdaJjs" role="3clF46">
+        <property role="TrG5h" value="t" />
+        <property role="3TUv4t" value="false" />
+        <node concept="16syzq" id="1RoeMOdaJjt" role="1tU5fm">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1RoeMOdaJju" role="3clF47">
+        <node concept="3clFbF" id="1RoeMOdaJjv" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdaKLq" role="3clFbG">
+            <node concept="37vLTw" id="1RoeMOdaKLp" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdaJiG" resolve="myObjectsToNodes" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdaKLr" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.clearFirst(java.lang.Object):void" resolve="clearFirst" />
+              <node concept="37vLTw" id="1RoeMOdaJjx" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJjs" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1RoeMOdbI6n" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdbI6o" role="3clFbG">
+            <node concept="37vLTw" id="1RoeMOdbIbr" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdbvyl" resolve="myObjectsToModels" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdbI6q" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.clearFirst(java.lang.Object):void" resolve="clearFirst" />
+              <node concept="37vLTw" id="1RoeMOdbI6r" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJjs" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1RoeMOdaJjy" role="1B3o_S" />
+      <node concept="3cqZAl" id="1RoeMOdaJjz" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1RoeMOdbx1T" role="jymVt" />
+    <node concept="3clFb_" id="1RoeMOdaJj$" role="jymVt">
+      <property role="TrG5h" value="getNodeDependencies" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1RoeMOdaJj_" role="3clF46">
+        <property role="TrG5h" value="t" />
+        <property role="3TUv4t" value="false" />
+        <node concept="16syzq" id="1RoeMOdaJjA" role="1tU5fm">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1RoeMOdaJjB" role="3clF47">
+        <node concept="3cpWs6" id="1RoeMOdaJjC" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdaKLA" role="3cqZAk">
+            <node concept="37vLTw" id="1RoeMOdaKL_" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdaJiG" resolve="myObjectsToNodes" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdaKLB" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.getByFirst(java.lang.Object):java.util.Set" resolve="getByFirst" />
+              <node concept="37vLTw" id="1RoeMOdaJjE" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJj_" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1RoeMOdaJjF" role="1B3o_S" />
+      <node concept="3uibUv" id="1RoeMOdaJjG" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+        <node concept="3uibUv" id="1RoeMOdaJjH" role="11_B2D">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="1RoeMOdbEka" role="jymVt">
+      <property role="TrG5h" value="getModelDependencies" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1RoeMOdbEkb" role="3clF46">
+        <property role="TrG5h" value="t" />
+        <property role="3TUv4t" value="false" />
+        <node concept="16syzq" id="1RoeMOdbEkc" role="1tU5fm">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1RoeMOdbEkd" role="3clF47">
+        <node concept="3cpWs6" id="1RoeMOdbEke" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdbEkf" role="3cqZAk">
+            <node concept="37vLTw" id="1RoeMOdbG9t" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdbvyl" resolve="myObjectsToModels" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdbEkh" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.getByFirst(java.lang.Object):java.util.Set" resolve="getByFirst" />
+              <node concept="37vLTw" id="1RoeMOdbEki" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdbEkb" resolve="t" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1RoeMOdbEkj" role="1B3o_S" />
+      <node concept="3uibUv" id="1RoeMOdbEkk" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+        <node concept="3uibUv" id="1RoeMOdbGCG" role="11_B2D">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1RoeMOdbxxi" role="jymVt" />
+    <node concept="3clFb_" id="1RoeMOdaJjI" role="jymVt">
+      <property role="TrG5h" value="getDependOn" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1RoeMOdaJjJ" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="1RoeMOdaJjK" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1RoeMOdaJjL" role="3clF47">
+        <node concept="3cpWs6" id="1RoeMOdaJjM" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdaKLM" role="3cqZAk">
+            <node concept="37vLTw" id="1RoeMOdaKLL" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdaJiG" resolve="myObjectsToNodes" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdaKLN" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.getBySecond(java.lang.Object):java.util.Set" resolve="getBySecond" />
+              <node concept="37vLTw" id="1RoeMOdaJjO" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJjJ" resolve="n" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1RoeMOdaJjP" role="1B3o_S" />
+      <node concept="3uibUv" id="1RoeMOdaJjQ" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+        <node concept="16syzq" id="1RoeMOdaJjR" role="11_B2D">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="1RoeMOdbLQv" role="jymVt">
+      <property role="TrG5h" value="getDependOn" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="1RoeMOdbLQw" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="1RoeMOdbMFh" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1RoeMOdbLQy" role="3clF47">
+        <node concept="3cpWs6" id="1RoeMOdbLQz" role="3cqZAp">
+          <node concept="2OqwBi" id="1RoeMOdbLQ$" role="3cqZAk">
+            <node concept="37vLTw" id="1RoeMOdbNiC" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RoeMOdbvyl" resolve="myObjectsToModels" />
+            </node>
+            <node concept="liA8E" id="1RoeMOdbLQA" role="2OqNvi">
+              <ref role="37wK5l" to="yg2w:~ManyToManyMap.getBySecond(java.lang.Object):java.util.Set" resolve="getBySecond" />
+              <node concept="37vLTw" id="1RoeMOdbLQB" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdbLQw" resolve="n" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1RoeMOdbLQC" role="1B3o_S" />
+      <node concept="3uibUv" id="1RoeMOdbLQD" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+        <node concept="16syzq" id="1RoeMOdbLQE" role="11_B2D">
+          <ref role="16sUi3" node="1RoeMOdaJh$" resolve="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1RoeMOdby0H" role="jymVt" />
+    <node concept="312cEu" id="1RoeMOdaJh_" role="jymVt">
+      <property role="TrG5h" value="MyNodeReadListener" />
+      <property role="2bfB8j" value="true" />
+      <property role="1sVAO0" value="false" />
+      <property role="1EXbeo" value="false" />
+      <node concept="3Tm6S6" id="1RoeMOdaJhB" role="1B3o_S" />
+      <node concept="3uibUv" id="1RoeMOdaJhC" role="1zkMxy">
+        <ref role="3uigEE" to="w1kc:~AbstractNodesReadListener" resolve="AbstractNodesReadListener" />
+      </node>
+      <node concept="312cEg" id="1RoeMOdaJhD" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="myNodeDependencies" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="1RoeMOdaJhF" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+          <node concept="3uibUv" id="1RoeMOdaJhG" role="11_B2D">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="1RoeMOdaKLO" role="33vP2m">
+          <node concept="1pGfFk" id="1RoeMOdaKLP" role="2ShVmc">
+            <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
+            <node concept="3uibUv" id="1RoeMOdaJhI" role="1pMfVU">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="1RoeMOdaJhJ" role="1B3o_S" />
+      </node>
+      <node concept="312cEg" id="1RoeMOdbAn5" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="myModelDependencies" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="1RoeMOdbAn6" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+          <node concept="3uibUv" id="1RoeMOdbCQt" role="11_B2D">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="1RoeMOdbAn8" role="33vP2m">
+          <node concept="1pGfFk" id="1RoeMOdbAn9" role="2ShVmc">
+            <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
+            <node concept="3uibUv" id="1RoeMOdbD6l" role="1pMfVU">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="1RoeMOdbAnb" role="1B3o_S" />
+      </node>
+      <node concept="2tJIrI" id="1RoeMOdb_4v" role="jymVt" />
+      <node concept="3clFb_" id="1RoeMOdaJhK" role="jymVt">
+        <property role="TrG5h" value="getNodeDependencies" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3clFbS" id="1RoeMOdaJhL" role="3clF47">
+          <node concept="3cpWs6" id="1RoeMOdaJhM" role="3cqZAp">
+            <node concept="2YIFZM" id="1RoeMOdaKM0" role="3cqZAk">
+              <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              <ref role="37wK5l" to="33ny:~Collections.unmodifiableSet(java.util.Set):java.util.Set" resolve="unmodifiableSet" />
+              <node concept="37vLTw" id="1RoeMOdaJhO" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdaJhD" resolve="myNodeDependencies" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="1RoeMOdaJhP" role="1B3o_S" />
+        <node concept="3uibUv" id="1RoeMOdaJhQ" role="3clF45">
+          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+          <node concept="3uibUv" id="1RoeMOdd2CK" role="11_B2D">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFb_" id="1RoeMOdbIJR" role="jymVt">
+        <property role="TrG5h" value="getModelDependencies" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3clFbS" id="1RoeMOdbIJS" role="3clF47">
+          <node concept="3cpWs6" id="1RoeMOdbIJT" role="3cqZAp">
+            <node concept="2YIFZM" id="1RoeMOdbIJU" role="3cqZAk">
+              <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+              <ref role="37wK5l" to="33ny:~Collections.unmodifiableSet(java.util.Set):java.util.Set" resolve="unmodifiableSet" />
+              <node concept="37vLTw" id="1RoeMOdbJR6" role="37wK5m">
+                <ref role="3cqZAo" node="1RoeMOdbAn5" resolve="myModelDependencies" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="1RoeMOdbIJW" role="1B3o_S" />
+        <node concept="3uibUv" id="1RoeMOdbIJX" role="3clF45">
+          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+          <node concept="3uibUv" id="1RoeMOdd2RZ" role="11_B2D">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1RoeMOdbzKY" role="jymVt" />
+      <node concept="3clFb_" id="1RoeMOdaJhS" role="jymVt">
+        <property role="TrG5h" value="nodeChildReadAccess" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="1RoeMOdaJhT" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJhU" role="3clF46">
+          <property role="TrG5h" value="node" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1RoeMOdaJhV" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJhW" role="3clF46">
+          <property role="TrG5h" value="childRole" />
+          <property role="3TUv4t" value="false" />
+          <node concept="17QB3L" id="1RoeMOdbHIp" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJhY" role="3clF46">
+          <property role="TrG5h" value="child" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1RoeMOdaJhZ" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1RoeMOdaJi0" role="3clF47">
+          <node concept="3clFbF" id="1RoeMOdaJi1" role="3cqZAp">
+            <node concept="2OqwBi" id="1RoeMOdaKMc" role="3clFbG">
+              <node concept="37vLTw" id="1RoeMOdaKMb" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdaJhD" resolve="myNodeDependencies" />
+              </node>
+              <node concept="liA8E" id="1RoeMOdaKMd" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                <node concept="37vLTw" id="1RoeMOdaJi3" role="37wK5m">
+                  <ref role="3cqZAo" node="1RoeMOdaJhU" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1RoeMOdaJi4" role="1B3o_S" />
+        <node concept="3cqZAl" id="1RoeMOdaJi5" role="3clF45" />
+      </node>
+      <node concept="2tJIrI" id="1RoeMOdbzsI" role="jymVt" />
+      <node concept="3clFb_" id="1RoeMOdaJi6" role="jymVt">
+        <property role="TrG5h" value="nodePropertyReadAccess" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="1RoeMOdaJi7" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJi8" role="3clF46">
+          <property role="TrG5h" value="node" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1RoeMOdaJi9" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJia" role="3clF46">
+          <property role="TrG5h" value="propertyName" />
+          <property role="3TUv4t" value="false" />
+          <node concept="17QB3L" id="1RoeMOdbHOq" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJic" role="3clF46">
+          <property role="TrG5h" value="value" />
+          <property role="3TUv4t" value="false" />
+          <node concept="17QB3L" id="1RoeMOdbHUw" role="1tU5fm" />
+        </node>
+        <node concept="3clFbS" id="1RoeMOdaJie" role="3clF47">
+          <node concept="3clFbF" id="1RoeMOdaJif" role="3cqZAp">
+            <node concept="2OqwBi" id="1RoeMOdaKMp" role="3clFbG">
+              <node concept="37vLTw" id="1RoeMOdaKMo" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdaJhD" resolve="myNodeDependencies" />
+              </node>
+              <node concept="liA8E" id="1RoeMOdaKMq" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                <node concept="37vLTw" id="1RoeMOdaJih" role="37wK5m">
+                  <ref role="3cqZAo" node="1RoeMOdaJi8" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1RoeMOdaJii" role="1B3o_S" />
+        <node concept="3cqZAl" id="1RoeMOdaJij" role="3clF45" />
+      </node>
+      <node concept="2tJIrI" id="1RoeMOdbz8w" role="jymVt" />
+      <node concept="3clFb_" id="1RoeMOdaJik" role="jymVt">
+        <property role="TrG5h" value="nodeReferentReadAccess" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="1RoeMOdaJil" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJim" role="3clF46">
+          <property role="TrG5h" value="node" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1RoeMOdaJin" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJio" role="3clF46">
+          <property role="TrG5h" value="referentRole" />
+          <property role="3TUv4t" value="false" />
+          <node concept="17QB3L" id="1RoeMOdbI0F" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJiq" role="3clF46">
+          <property role="TrG5h" value="referent" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1RoeMOdaJir" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1RoeMOdaJis" role="3clF47">
+          <node concept="3clFbF" id="1RoeMOdaJit" role="3cqZAp">
+            <node concept="2OqwBi" id="1RoeMOdaKMA" role="3clFbG">
+              <node concept="37vLTw" id="1RoeMOdaKM_" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdaJhD" resolve="myNodeDependencies" />
+              </node>
+              <node concept="liA8E" id="1RoeMOdaKMB" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                <node concept="37vLTw" id="1RoeMOdaJiv" role="37wK5m">
+                  <ref role="3cqZAo" node="1RoeMOdaJim" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1RoeMOdaJiw" role="1B3o_S" />
+        <node concept="3cqZAl" id="1RoeMOdaJix" role="3clF45" />
+      </node>
+      <node concept="2tJIrI" id="1RoeMOdbyOk" role="jymVt" />
+      <node concept="3clFb_" id="1RoeMOdaJiy" role="jymVt">
+        <property role="TrG5h" value="nodeUnclassifiedReadAccess" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="1RoeMOdaJiz" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="37vLTG" id="1RoeMOdaJi$" role="3clF46">
+          <property role="TrG5h" value="node" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1RoeMOdaJi_" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1RoeMOdaJiA" role="3clF47">
+          <node concept="3clFbF" id="1RoeMOdaJiB" role="3cqZAp">
+            <node concept="2OqwBi" id="1RoeMOdaKMN" role="3clFbG">
+              <node concept="37vLTw" id="1RoeMOdaKMM" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdaJhD" resolve="myNodeDependencies" />
+              </node>
+              <node concept="liA8E" id="1RoeMOdaKMO" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                <node concept="37vLTw" id="1RoeMOdaJiD" role="37wK5m">
+                  <ref role="3cqZAo" node="1RoeMOdaJi$" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1RoeMOdaJiE" role="1B3o_S" />
+        <node concept="3cqZAl" id="1RoeMOdaJiF" role="3clF45" />
+      </node>
+      <node concept="2tJIrI" id="1RoeMOdbywa" role="jymVt" />
+      <node concept="3clFb_" id="1RoeMOdbufK" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="modelNodesReadAccess" />
+        <property role="DiZV1" value="false" />
+        <property role="IEkAT" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3Tm1VV" id="1RoeMOdbufL" role="1B3o_S" />
+        <node concept="3cqZAl" id="1RoeMOdbufN" role="3clF45" />
+        <node concept="37vLTG" id="1RoeMOdbufO" role="3clF46">
+          <property role="TrG5h" value="model" />
+          <node concept="3uibUv" id="1RoeMOdbufP" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1RoeMOdbufQ" role="3clF47">
+          <node concept="3clFbF" id="1RoeMOdbAYg" role="3cqZAp">
+            <node concept="2OqwBi" id="1RoeMOdbBjv" role="3clFbG">
+              <node concept="37vLTw" id="1RoeMOdbAYf" role="2Oq$k0">
+                <ref role="3cqZAo" node="1RoeMOdbAn5" resolve="myModelDependencies" />
+              </node>
+              <node concept="liA8E" id="1RoeMOdbCs1" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                <node concept="37vLTw" id="1RoeMOdbCAY" role="37wK5m">
+                  <ref role="3cqZAo" node="1RoeMOdbufO" resolve="model" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2AHcQZ" id="1RoeMOdbufR" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
       </node>
     </node>
   </node>
