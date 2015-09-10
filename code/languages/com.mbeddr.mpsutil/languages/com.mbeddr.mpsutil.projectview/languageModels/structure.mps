@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -162,6 +163,16 @@
     </node>
     <node concept="PrWs8" id="1CDgnklRkGz" role="PzmwI">
       <ref role="PrY4T" to="tpee:SORzhOp6jM" resolve="IVariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="511fZqnpMVa">
+    <property role="TrG5h" value="ActionGroupIdReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="511fZqnpMVb" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actionGroup" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
     </node>
   </node>
 </model>

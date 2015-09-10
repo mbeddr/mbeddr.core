@@ -37,6 +37,8 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -481,6 +483,33 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="511fZqnpMVM">
+    <ref role="1XX52x" to="d04j:511fZqnpMVa" resolve="ActionGroupIdReference" />
+    <node concept="3EZMnI" id="511fZqnpMW0" role="2wV5jI">
+      <node concept="1iCGBv" id="511fZqnpMVO" role="3EZMnx">
+        <ref role="1NtTu8" to="d04j:511fZqnpMVb" />
+        <node concept="1sVBvm" id="511fZqnpMVQ" role="1sWHZn">
+          <node concept="3F0A7n" id="511fZqnpMVX" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="511fZqnpMWc" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="511fZqnpMY7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="511fZqnpMZO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="511fZqnpMWo" role="3EZMnx">
+        <property role="3F0ifm" value="ID" />
+      </node>
+      <node concept="2iRfu4" id="511fZqnpMW1" role="2iSdaV" />
     </node>
   </node>
 </model>
