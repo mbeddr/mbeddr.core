@@ -80,7 +80,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1761,6 +1761,37 @@
               <node concept="117lpO" id="58TcxRGEEAV" role="2Oq$k0" />
               <node concept="3TrEf2" id="58TcxRGEEAW" role="2OqNvi">
                 <ref role="3Tt5mk" to="c4fa:3CmSUB7Fw7R" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1wca57XU2CW">
+    <ref role="WuzLi" to="c4fa:1wca57XTRsm" resolve="DesignatedInitializer" />
+    <node concept="11bSqf" id="1wca57XU2CX" role="11c4hB">
+      <node concept="3clFbS" id="1wca57XU2CY" role="2VODD2">
+        <node concept="lc7rE" id="1wca57XU2D2" role="3cqZAp">
+          <node concept="la8eA" id="1wca57XU2D3" role="lcghm">
+            <property role="lacIc" value="[" />
+          </node>
+          <node concept="l9hG8" id="1wca57XU2JZ" role="lcghm">
+            <node concept="2OqwBi" id="1wca57XU2Rs" role="lb14g">
+              <node concept="117lpO" id="1wca57XU2K9" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1wca57XU37h" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:1wca57XTRss" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1wca57XU37x" role="lcghm">
+            <property role="lacIc" value="] = " />
+          </node>
+          <node concept="l9hG8" id="1wca57XU37R" role="lcghm">
+            <node concept="2OqwBi" id="1wca57XU3ce" role="lb14g">
+              <node concept="117lpO" id="1wca57XU386" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1wca57XU3s3" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:1wca57XTRsu" />
               </node>
             </node>
           </node>

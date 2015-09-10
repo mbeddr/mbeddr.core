@@ -58,7 +58,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1067,6 +1067,32 @@
                 <ref role="3TtcxE" to="mj1l:58TcxRGi7E1" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6LsWDiKtm8H">
+    <property role="3GE5qa" value="types" />
+    <ref role="WuzLi" to="mj1l:6LsWDiKtluA" resolve="UIntPtrT" />
+    <node concept="11bSqf" id="6LsWDiKtm8I" role="11c4hB">
+      <node concept="3clFbS" id="6LsWDiKtm8J" role="2VODD2">
+        <node concept="lc7rE" id="6LsWDiKtm8V" role="3cqZAp">
+          <node concept="la8eA" id="6LsWDiKtm8W" role="lcghm">
+            <property role="lacIc" value="uintptr_t" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6LsWDiKtl2r">
+    <property role="3GE5qa" value="types" />
+    <ref role="WuzLi" to="mj1l:6LsWDiKtfR7" resolve="IntPtrT" />
+    <node concept="11bSqf" id="6LsWDiKtl2s" role="11c4hB">
+      <node concept="3clFbS" id="6LsWDiKtl2t" role="2VODD2">
+        <node concept="lc7rE" id="6LsWDiKtl2D" role="3cqZAp">
+          <node concept="la8eA" id="6LsWDiKtl2E" role="lcghm">
+            <property role="lacIc" value="intptr_t" />
           </node>
         </node>
       </node>

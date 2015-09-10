@@ -331,6 +331,12 @@
   <node concept="PlHQZ" id="7ehmsbAuQbH">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="ICbmcSettings" />
+    <node concept="1TJgyj" id="2OfxaHaxQ5e" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="externalFiles" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
       <property role="TrG5h" value="hasLocalCbmcSettings" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -374,6 +380,10 @@
     <node concept="1TJgyi" id="7ehmsbAxlnk" role="1TKVEl">
       <property role="TrG5h" value="timeoutForSingleAnalysis" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2OfxaHayosY" role="1TKVEl">
+      <property role="TrG5h" value="hasExternalFilesSettings" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="jmYEA6F408" role="1TKVEl">
       <property role="TrG5h" value="hasLocalArchitectureSettings" />
