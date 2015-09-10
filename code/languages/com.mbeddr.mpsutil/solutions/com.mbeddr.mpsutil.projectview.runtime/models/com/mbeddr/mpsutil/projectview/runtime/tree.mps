@@ -11172,7 +11172,7 @@
                 <node concept="3clFbS" id="7PuCnELByiG" role="1bW5cS">
                   <node concept="3clFbF" id="7PuCnELByvj" role="3cqZAp">
                     <node concept="1rXfSq" id="7PuCnELByvi" role="3clFbG">
-                      <ref role="37wK5l" node="7PuCnELAhCs" resolve="updateChildren" />
+                      <ref role="37wK5l" node="7PuCnELAhCs" resolve="updateChildrenForParent" />
                       <node concept="37vLTw" id="7PuCnELBy$X" role="37wK5m">
                         <ref role="3cqZAo" node="7PuCnELByiH" resolve="it" />
                       </node>
@@ -11199,7 +11199,7 @@
     </node>
     <node concept="2tJIrI" id="7PuCnELAiyC" role="jymVt" />
     <node concept="3clFb_" id="7PuCnELAhCs" role="jymVt">
-      <property role="TrG5h" value="updateChildren" />
+      <property role="TrG5h" value="updateChildrenForParent" />
       <node concept="3cqZAl" id="7PuCnELAhCt" role="3clF45" />
       <node concept="3Tmbuc" id="7PuCnELAhCu" role="1B3o_S" />
       <node concept="3clFbS" id="7PuCnELAhCv" role="3clF47">
