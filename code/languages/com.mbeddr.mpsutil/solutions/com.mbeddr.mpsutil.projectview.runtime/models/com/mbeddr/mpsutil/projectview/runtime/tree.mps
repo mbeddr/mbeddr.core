@@ -234,7 +234,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1145,10 +1145,46 @@
         <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="3clFbS" id="2ZGhpRfeyB0" role="3clF47">
-        <node concept="3clFbF" id="2ZGhpRffgnE" role="3cqZAp">
-          <node concept="10M0yZ" id="2ZGhpRffgnD" role="3clFbG">
-            <ref role="3cqZAo" to="xnls:~IdeIcons.DEFAULT_ICON" resolve="DEFAULT_ICON" />
-            <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
+        <node concept="3cpWs8" id="511fZqnszP3" role="3cqZAp">
+          <node concept="3cpWsn" id="511fZqnszP4" role="3cpWs9">
+            <property role="TrG5h" value="icon" />
+            <node concept="3uibUv" id="511fZqnszP2" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+            </node>
+            <node concept="2EnYce" id="511fZqnszP5" role="33vP2m">
+              <node concept="2OqwBi" id="511fZqnszP6" role="2Oq$k0">
+                <node concept="2YIFZM" id="511fZqnszP7" role="2Oq$k0">
+                  <ref role="37wK5l" to="imq3:3ZnFyBjwwsd" resolve="getInstance" />
+                  <ref role="1Pybhc" to="imq3:3ZnFyBjty2p" resolve="ViewRegistry" />
+                </node>
+                <node concept="liA8E" id="511fZqnszP8" role="2OqNvi">
+                  <ref role="37wK5l" to="imq3:7eKnO66mXNz" resolve="getDescriptor" />
+                  <node concept="37vLTw" id="511fZqnszP9" role="37wK5m">
+                    <ref role="3cqZAo" node="VPgi8eiqeO" resolve="myViewId" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="511fZqnszPa" role="2OqNvi">
+                <ref role="37wK5l" to="imq3:511fZqnrrPt" resolve="getIcon" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="511fZqnsAAd" role="3cqZAp">
+          <node concept="3K4zz7" id="511fZqnsB0r" role="3clFbG">
+            <node concept="37vLTw" id="511fZqnsB9o" role="3K4E3e">
+              <ref role="3cqZAo" node="511fZqnszP4" resolve="icon" />
+            </node>
+            <node concept="3y3z36" id="511fZqnsAJ_" role="3K4Cdx">
+              <node concept="10Nm6u" id="511fZqnsASk" role="3uHU7w" />
+              <node concept="37vLTw" id="511fZqnsAAb" role="3uHU7B">
+                <ref role="3cqZAo" node="511fZqnszP4" resolve="icon" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="511fZqnsB9J" role="3K4GZi">
+              <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
+              <ref role="3cqZAo" to="xnls:~IdeIcons.DEFAULT_ICON" resolve="DEFAULT_ICON" />
+            </node>
           </node>
         </node>
       </node>

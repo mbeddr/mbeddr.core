@@ -67,6 +67,11 @@
       <property role="20kJfa" value="label" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="511fZqnrhSY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="7diJr$Rulso" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="extends" />
