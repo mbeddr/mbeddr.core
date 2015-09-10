@@ -175,6 +175,7 @@
         <reference id="8309912865649343723" name="parent" index="14a85i" />
         <reference id="4600337039046510231" name="extends" index="3GDMyY" />
         <child id="1885109890160687910" name="folders" index="fGNDj" />
+        <child id="8561578538984768808" name="loadLazy" index="2q6PdT" />
         <child id="8309912865649343738" name="label" index="14a853" />
         <child id="8309912865649578165" name="query" index="14bQOc" />
         <child id="8171045391088784356" name="actionGroupId" index="3a5v6p" />
@@ -995,6 +996,9 @@
         <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
         <ref role="3cqZAo" to="rvbb:~Icons.PROPERTY_ICON" resolve="PROPERTY_ICON" />
       </node>
+      <node concept="3clFbT" id="7rgP_7GOF6x" role="2q6PdT">
+        <property role="3clFbU" value="false" />
+      </node>
     </node>
     <node concept="14aYG3" id="75_oBQVGp1k" role="14aYEy">
       <property role="TrG5h" value="referencesGroup" />
@@ -1005,6 +1009,9 @@
       <node concept="10M0yZ" id="75_oBQVGpF1" role="3actZa">
         <ref role="3cqZAo" to="xnls:~IdeIcons.REFERENCE_ICON" resolve="REFERENCE_ICON" />
         <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
+      </node>
+      <node concept="3clFbT" id="7rgP_7GOF6W" role="2q6PdT">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="14aYG3" id="75_oBQVK55f" role="14aYEy">

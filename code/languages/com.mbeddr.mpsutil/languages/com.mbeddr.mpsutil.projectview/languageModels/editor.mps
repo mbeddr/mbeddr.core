@@ -401,6 +401,19 @@
             </node>
             <node concept="2iRfu4" id="7diJr$Rvt3p" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="7rgP_7GMSuG" role="3EZMnx">
+            <node concept="VPM3Z" id="7rgP_7GMSuH" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="7rgP_7GMSuI" role="3EZMnx">
+              <property role="3F0ifm" value="load children lazy:" />
+            </node>
+            <node concept="3F1sOY" id="7rgP_7GMSuJ" role="3EZMnx">
+              <property role="1$x2rV" value="true" />
+              <ref role="1NtTu8" to="d04j:7rgP_7GMSkC" />
+            </node>
+            <node concept="2iRfu4" id="7rgP_7GMSuK" role="2iSdaV" />
+          </node>
           <node concept="3EZMnI" id="7diJr$Rvhay" role="3EZMnx">
             <node concept="VPM3Z" id="7diJr$Rvhaz" role="3F10Kt">
               <property role="VOm3f" value="false" />

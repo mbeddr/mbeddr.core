@@ -234,7 +234,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7668,6 +7668,46 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="7rgP_7GMm20" role="jymVt" />
+    <node concept="3clFb_" id="7rgP_7GMkeF" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="onAdd" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tmbuc" id="7rgP_7GMkeG" role="1B3o_S" />
+      <node concept="3cqZAl" id="7rgP_7GMkeI" role="3clF45" />
+      <node concept="3clFbS" id="7rgP_7GMkeJ" role="3clF47">
+        <node concept="3clFbF" id="7rgP_7GMkeM" role="3cqZAp">
+          <node concept="3nyPlj" id="7rgP_7GMkeL" role="3clFbG">
+            <ref role="37wK5l" to="7e8u:~MPSTreeNode.onAdd():void" resolve="onAdd" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7rgP_7GMtYZ" role="3cqZAp">
+          <node concept="3clFbS" id="7rgP_7GMtZ1" role="3clFbx">
+            <node concept="3clFbF" id="7rgP_7GMvrz" role="3cqZAp">
+              <node concept="1rXfSq" id="7rgP_7GMvrx" role="3clFbG">
+                <ref role="37wK5l" to="7e8u:~MPSTreeNode.init():void" resolve="init" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7rgP_7GMuYy" role="3clFbw">
+            <node concept="2OqwBi" id="7rgP_7GMuY$" role="3fr31v">
+              <node concept="37vLTw" id="7rgP_7GMuY_" role="2Oq$k0">
+                <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+              </node>
+              <node concept="liA8E" id="7rgP_7GMuYA" role="2OqNvi">
+                <ref role="37wK5l" to="imq3:7rgP_7GMoft" resolve="loadLazy" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7rgP_7GMkeK" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7rgP_7GMl5l" role="jymVt" />
     <node concept="16euLQ" id="7PuCnELw8Ih" role="16eVyc">
       <property role="TrG5h" value="E" />
     </node>
