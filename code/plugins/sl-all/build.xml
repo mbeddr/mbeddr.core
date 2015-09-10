@@ -175,7 +175,9 @@
     <mkdir dir="${build.tmp}/default/org.apache.commons.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.apache.commons.jar/META-INF/module.xml">
       <module namespace="org.apache.commons" type="solution" uuid="b0f8641f-bd77-4421-8425-30d9088a82f7">
-        <dependencies />
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+        </dependencies>
         <library jar="../../lib/commons-io-2.4.jar" />
         <library jar="../../lib/commons-lang3-3.3.2.jar" />
         <library jar="../../lib/commons-math3-3.3.jar" />
