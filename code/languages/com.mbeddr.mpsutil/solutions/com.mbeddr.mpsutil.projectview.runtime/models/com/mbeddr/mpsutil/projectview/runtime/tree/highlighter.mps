@@ -3825,7 +3825,7 @@
               </node>
               <node concept="3cpWs6" id="6B7erwvED5m" role="3cqZAp">
                 <node concept="1rXfSq" id="6B7erwvED5n" role="3cqZAk">
-                  <ref role="37wK5l" node="6B7erwvEDcB" resolve="getGenerationStatus" />
+                  <ref role="37wK5l" node="6B7erwvEDcB" resolve="getGenerationStatusForModel" />
                   <node concept="37vLTw" id="6B7erwvED5o" role="37wK5m">
                     <ref role="3cqZAo" node="6B7erwvED3H" resolve="myModelNode" />
                   </node>
@@ -3843,7 +3843,7 @@
             <node concept="3clFbS" id="6B7erwvED5u" role="3clFbx">
               <node concept="3cpWs6" id="6B7erwvED5v" role="3cqZAp">
                 <node concept="1rXfSq" id="6B7erwvED5w" role="3cqZAk">
-                  <ref role="37wK5l" node="6B7erwvEDcB" resolve="getGenerationStatus" />
+                  <ref role="37wK5l" node="6B7erwvEDbS" resolve="getGenerationStatusForModule" />
                   <node concept="37vLTw" id="6B7erwvED5x" role="37wK5m">
                     <ref role="3cqZAo" node="6B7erwvED3L" resolve="myModuleNode" />
                   </node>
@@ -3927,14 +3927,14 @@
       <node concept="10P_77" id="6B7erwvEDbR" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="6B7erwvEDbS" role="jymVt">
-      <property role="TrG5h" value="getGenerationStatus" />
+      <property role="TrG5h" value="getGenerationStatusForModule" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="37vLTG" id="6B7erwvEDbT" role="3clF46">
         <property role="TrG5h" value="node" />
         <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="6B7erwvEDbU" role="1tU5fm">
-          <ref role="3uigEE" to="kxvg:~ProjectModuleTreeNode" resolve="ProjectModuleTreeNode" />
+        <node concept="3uibUv" id="1RoeMOdejz3" role="1tU5fm">
+          <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
         </node>
       </node>
       <node concept="3clFbS" id="6B7erwvEDbV" role="3clF47">
@@ -3950,7 +3950,7 @@
                 <ref role="3cqZAo" node="6B7erwvEDbT" resolve="node" />
               </node>
               <node concept="liA8E" id="6B7erwvEJeV" role="2OqNvi">
-                <ref role="37wK5l" to="kxvg:~ProjectModuleTreeNode.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                <ref role="37wK5l" to="uhdf:5TgxKE1ZXQ7" resolve="getModule" />
               </node>
             </node>
           </node>
@@ -4055,7 +4055,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="6B7erwvEDcB" role="jymVt">
-      <property role="TrG5h" value="getGenerationStatus" />
+      <property role="TrG5h" value="getGenerationStatusForModel" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="37vLTG" id="6B7erwvEDcC" role="3clF46">
