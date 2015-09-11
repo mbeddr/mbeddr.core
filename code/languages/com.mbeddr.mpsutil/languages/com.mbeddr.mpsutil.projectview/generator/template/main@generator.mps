@@ -1541,6 +1541,12 @@
                                   <node concept="3clFb_" id="75_oBQVRKn_" role="jymVt">
                                     <property role="1EzhhJ" value="false" />
                                     <property role="TrG5h" value="isApplicable" />
+                                    <node concept="37vLTG" id="FniR$CdWLw" role="3clF46">
+                                      <property role="TrG5h" value="mpsProject" />
+                                      <node concept="3uibUv" id="FniR$CdWLx" role="1tU5fm">
+                                        <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                      </node>
+                                    </node>
                                     <node concept="37vLTG" id="75_oBQVRKnA" role="3clF46">
                                       <property role="TrG5h" value="parentElement" />
                                       <node concept="3uibUv" id="75_oBQVRKnB" role="1tU5fm">
@@ -1607,6 +1613,12 @@
                                     <property role="TrG5h" value="isAssignable" />
                                     <node concept="10P_77" id="$6jtTwuaPd" role="3clF45" />
                                     <node concept="3Tm1VV" id="$6jtTwuaPe" role="1B3o_S" />
+                                    <node concept="37vLTG" id="FniR$Cedyz" role="3clF46">
+                                      <property role="TrG5h" value="mpsProject" />
+                                      <node concept="3uibUv" id="FniR$Cedy$" role="1tU5fm">
+                                        <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+                                      </node>
+                                    </node>
                                     <node concept="37vLTG" id="$6jtTwuaPf" role="3clF46">
                                       <property role="TrG5h" value="element" />
                                       <node concept="3uibUv" id="$6jtTwuaPg" role="1tU5fm">
@@ -1662,6 +1674,9 @@
                                           </node>
                                           <node concept="3nyPlj" id="$6jtTwuaPH" role="3uHU7B">
                                             <ref role="37wK5l" to="imq3:$6jtTwu1Rx" resolve="isAssignable" />
+                                            <node concept="37vLTw" id="FniR$Cempv" role="37wK5m">
+                                              <ref role="3cqZAo" node="FniR$Cedyz" resolve="mpsProject" />
+                                            </node>
                                             <node concept="37vLTw" id="$6jtTwuaPG" role="37wK5m">
                                               <ref role="3cqZAo" node="$6jtTwuaPf" resolve="element" />
                                             </node>

@@ -22,6 +22,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.mpl" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="extensionclass" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="projectview" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/solutions/pluginSolution/com.mbeddr.mpsutil.favourites.plugin.msd" folder="projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.forms/com.mbeddr.mpsutil.forms.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />

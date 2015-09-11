@@ -529,6 +529,12 @@
     <node concept="3clFb_" id="75_oBQVRE8b" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isApplicable" />
+      <node concept="37vLTG" id="FniR$Ce67l" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="FniR$Ce67m" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
       <node concept="37vLTG" id="75_oBQVREF_" role="3clF46">
         <property role="TrG5h" value="parentElement" />
         <node concept="3uibUv" id="75_oBQVREJZ" role="1tU5fm">
@@ -545,6 +551,12 @@
       <node concept="10P_77" id="$6jtTwu1px" role="3clF45" />
       <node concept="3Tm1VV" id="$6jtTwu0QU" role="1B3o_S" />
       <node concept="3clFbS" id="$6jtTwu0QV" role="3clF47" />
+      <node concept="37vLTG" id="FniR$Ce7I4" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="FniR$Ce7I5" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
       <node concept="37vLTG" id="$6jtTwu1qF" role="3clF46">
         <property role="TrG5h" value="element" />
         <node concept="3uibUv" id="$6jtTwu1qE" role="1tU5fm">
@@ -3249,6 +3261,12 @@
     <node concept="3clFb_" id="75_oBQVRF6P" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isApplicable" />
+      <node concept="37vLTG" id="VPgi8efqQo" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="VPgi8eh0$9" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
       <node concept="37vLTG" id="75_oBQVRF6Q" role="3clF46">
         <property role="TrG5h" value="parentElement" />
         <node concept="3uibUv" id="75_oBQVRF6R" role="1tU5fm">
@@ -3274,6 +3292,12 @@
       <property role="TrG5h" value="isAssignable" />
       <node concept="10P_77" id="$6jtTwu1Ry" role="3clF45" />
       <node concept="3Tm1VV" id="$6jtTwu1Rz" role="1B3o_S" />
+      <node concept="37vLTG" id="FniR$Ce8Ed" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="FniR$Ce8Ee" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
       <node concept="37vLTG" id="$6jtTwu1R_" role="3clF46">
         <property role="TrG5h" value="element" />
         <node concept="3uibUv" id="$6jtTwu1RA" role="1tU5fm">
@@ -3327,6 +3351,9 @@
           <node concept="1Wc70l" id="$6jtTwu5vJ" role="3clFbG">
             <node concept="1rXfSq" id="$6jtTwu5Fh" role="3uHU7w">
               <ref role="37wK5l" node="75_oBQVRF6P" resolve="isApplicable" />
+              <node concept="37vLTw" id="FniR$Ce9Q8" role="37wK5m">
+                <ref role="3cqZAo" node="FniR$Ce8Ed" resolve="mpsProject" />
+              </node>
               <node concept="37vLTw" id="$6jtTwu5Or" role="37wK5m">
                 <ref role="3cqZAo" node="$6jtTwu1R_" resolve="element" />
               </node>
@@ -4295,6 +4322,9 @@
                             </node>
                             <node concept="liA8E" id="$6jtTwCkco" role="2OqNvi">
                               <ref role="37wK5l" node="$6jtTwu0QR" resolve="isAssignable" />
+                              <node concept="37vLTw" id="FniR$CeohI" role="37wK5m">
+                                <ref role="3cqZAo" node="XZKPulBpOX" resolve="myProject" />
+                              </node>
                               <node concept="Xjq3P" id="$6jtTwCkl$" role="37wK5m" />
                             </node>
                           </node>
