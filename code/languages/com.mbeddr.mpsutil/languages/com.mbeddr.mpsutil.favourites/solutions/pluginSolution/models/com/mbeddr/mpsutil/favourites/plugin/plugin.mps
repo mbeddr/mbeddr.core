@@ -124,6 +124,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -140,6 +141,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -321,12 +326,17 @@
         <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_ICON" resolve="PROJECT_ICON" />
         <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
       </node>
-      <node concept="2OqwBi" id="7diJr$RwyyV" role="14a853">
-        <node concept="14b0Wr" id="7diJr$RwytN" role="2Oq$k0">
-          <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
+      <node concept="3cpWs3" id="FniR$CkoB6" role="14a853">
+        <node concept="Xl_RD" id="FniR$CkoB9" role="3uHU7w">
+          <property role="Xl_RC" value=" Favourites" />
         </node>
-        <node concept="liA8E" id="7diJr$RwzJ7" role="2OqNvi">
-          <ref role="37wK5l" to="z1c3:~MPSProject.getName():java.lang.String" resolve="getName" />
+        <node concept="2OqwBi" id="7diJr$RwyyV" role="3uHU7B">
+          <node concept="14b0Wr" id="7diJr$RwytN" role="2Oq$k0">
+            <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
+          </node>
+          <node concept="liA8E" id="7diJr$RwzJ7" role="2OqNvi">
+            <ref role="37wK5l" to="z1c3:~MPSProject.getName():java.lang.String" resolve="getName" />
+          </node>
         </node>
       </node>
     </node>

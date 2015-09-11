@@ -20010,6 +20010,15 @@
     <node concept="2flH9Z" id="3DoSIAt306m" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.java.workbench.actions.AnalyzeClasspath_Action" />
     </node>
+    <node concept="2flH9Z" id="FniR$ClU6F" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.favourites_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="FniR$ClUei" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.markAsFavourite_Action" />
+    </node>
+    <node concept="2flH9Z" id="FniR$ClUlV" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.removeFromFavourites_Action" />
+    </node>
   </node>
   <node concept="sE7Ow" id="4EItucYCCBf">
     <property role="TrG5h" value="ExportEditorImage" />
