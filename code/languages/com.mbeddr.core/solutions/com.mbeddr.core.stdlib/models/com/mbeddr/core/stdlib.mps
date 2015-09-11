@@ -7515,7 +7515,7 @@
     <node concept="rcWE1" id="2RIhi0HBZdu" role="rcWEr">
       <property role="rcWEL" value="&lt;string.h&gt;" />
     </node>
-    <node concept="4WHVk" id="137zkozycL4" role="N3F5h">
+    <node concept="2DPCBB" id="1IEbIdqRDty" role="N3F5h">
       <property role="TrG5h" value="NULL" />
       <property role="2OOxQR" value="true" />
       <node concept="1S8S4T" id="137zkozycL2" role="2DQcEM">
@@ -8260,6 +8260,30 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <node concept="biTqx" id="137zkozycOj" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnw" id="1IEbIdqRDtt" role="N3F5h">
+      <property role="TrG5h" value="strdup" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="1IEbIdqRDtv" role="1UOdpc">
+        <property role="TrG5h" value="s" />
+        <node concept="3wxxNl" id="1IEbIdqRDtx" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="biTqx" id="1IEbIdqREIJ" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="1IEbIdqRDtu" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="biTqx" id="1IEbIdqREIp" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>

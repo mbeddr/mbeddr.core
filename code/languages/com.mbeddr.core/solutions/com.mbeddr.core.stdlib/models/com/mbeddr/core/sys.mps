@@ -3029,7 +3029,7 @@
   <node concept="rcWEw" id="6LsWDiKmuVj">
     <property role="TrG5h" value="in" />
     <node concept="rcWE1" id="6LsWDiKmuVk" role="rcWEr">
-      <property role="rcWEL" value="&lt;in.h&gt;" />
+      <property role="rcWEL" value="&lt;netinet/in.h&gt;" />
     </node>
     <node concept="rcJHK" id="6LsWDiKmuVp" role="N3F5h">
       <property role="TrG5h" value="in_port_t" />
@@ -3520,7 +3520,7 @@
   <node concept="rcWEw" id="6LsWDiKmu_t">
     <property role="TrG5h" value="socket" />
     <node concept="rcWE1" id="6LsWDiKmu_u" role="rcWEr">
-      <property role="rcWEL" value="&lt;socket.h&gt;" />
+      <property role="rcWEL" value="&lt;sys/socket.h&gt;" />
     </node>
     <node concept="3GEVxB" id="6LsWDiKmuE3" role="2OODSX">
       <property role="3GEa6x" value="true" />
