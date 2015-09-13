@@ -3,8 +3,9 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mps-sl-all" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-sl-all" />
-  <property name="mps.home" location="${basedir}/../../../../../app/mps33_1283.app/Contents" />
+  <property name="mps.home" location="${basedir}/../../../../../app/mps33_1914.app/Contents" />
   <property name="diagram.home" location="${basedir}/diagram" />
+  <property name="versionNumber" value="2.0.2" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsBootstrapCore" location="${mps.home}" />
   <property name="artifacts.IDEA" location="${mps.home}" />
@@ -31,10 +32,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.all</id>
         <name>de.slisson.mps.all</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -74,10 +75,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.nativelibs</id>
         <name>de.itemis.mps.nativelibs</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -158,11 +159,11 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.apache.commons</id>
         <name>Apache Commons Library</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://commons.apache.org/">Apache Foundation</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -209,7 +210,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.diagram</id>
         <name>de.itemis.mps.editor.diagram</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
         <depends>org.apache.commons</depends>
@@ -217,7 +218,7 @@
         <depends>de.itemis.mps.tooltips</depends>
         <depends>de.itemis.mps.editor.widgets</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -545,10 +546,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.layout</id>
         <name>de.itemis.mps.editor.layout</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -647,12 +648,12 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.editor.multiline</id>
         <name>MPS Multiline Property Editor Component</name>
-        <version>2.0.1</version>
+        <version>${versionNumber}</version>
         <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         <description>An editor component for properties that supports wrapping of long lines and new lines by pressing ENTER.</description>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -754,13 +755,13 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.richtext</id>
         <name>MPS Richtext Editor Component</name>
-        <version>2.0.1</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-richtext">Sascha Lisson</vendor>
         <depends>jetbrains.mps.build</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.editor.multiline</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         <description>Mixing of plain text and MPS nodes.</description>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -881,13 +882,13 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.widgets</id>
         <name>MPS Editor Widgets</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-all">itemis AG</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>de.slisson.mps.hacks</depends>
         <depends>de.itemis.mps.tooltips</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1187,11 +1188,11 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.math</id>
         <name>MPS Math Editor</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-math">itemis AG</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1369,13 +1370,13 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.tables</id>
         <name>MPS Table Editor Component</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-tables">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.mps</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1480,10 +1481,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.selection</id>
         <name>Mouse Selection Support</name>
-        <version>2.0.1</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-all">itemis AG</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         <description>With this plugin you can select nodes in MPS using the mouse.</description>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -1585,10 +1586,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.conditionalEditor</id>
         <name>de.slisson.mps.conditionalEditor</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1738,9 +1739,9 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.hacks</id>
         <name>de.slisson.mps.hacks</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1865,10 +1866,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.tooltips</id>
         <name>de.itemis.mps.tooltips</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1975,7 +1976,7 @@
       <zipfileset dir="${basedir}/mps-multiline/solutions/de.slisson.mps.editor.multiline.runtime/lib" prefix="mps-multiline/lib" />
       <fileset dir="${build.tmp}/default/mps-sl-all.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">mps-sl-all.versionNumber=${versionNumber}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
