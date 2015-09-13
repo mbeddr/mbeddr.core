@@ -72,6 +72,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.dropdown.sandbox/de.itemis.mps.editor.dropdown.sandbox.msd" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="selection" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="tooltips" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build.repo/de.slisson.mps.all.build.repo.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.tabs.runtime/de.slisson.mps.editor.tabs.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.structurecheck.runtime/de.slisson.mps.structurecheck.runtime.msd" folder="structurecheck" />
