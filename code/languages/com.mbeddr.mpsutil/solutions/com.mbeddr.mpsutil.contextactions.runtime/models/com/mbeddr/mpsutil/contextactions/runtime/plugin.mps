@@ -36,6 +36,9 @@
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
       </concept>
+      <concept id="1208528650020" name="jetbrains.mps.lang.plugin.structure.ToolType" flags="in" index="1xUVSX">
+        <reference id="1208529537963" name="tool" index="1xYkEM" />
+      </concept>
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -113,6 +116,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -337,15 +341,37 @@
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
             <node concept="1bVj0M" id="5tr7YH$Ur7o" role="37wK5m">
               <node concept="3clFbS" id="5tr7YH$Ur7p" role="1bW5cS">
-                <node concept="3clFbF" id="5tr7YH$Uq6i" role="3cqZAp">
-                  <node concept="2OqwBi" id="5tr7YH$UqrT" role="3clFbG">
-                    <node concept="2OqwBi" id="5tr7YH$UqbQ" role="2Oq$k0">
-                      <node concept="37vLTw" id="5tr7YH$Uq6g" role="2Oq$k0">
+                <node concept="3cpWs8" id="1yMvtXVBoKK" role="3cqZAp">
+                  <node concept="3cpWsn" id="1yMvtXVBoKL" role="3cpWs9">
+                    <property role="TrG5h" value="tool" />
+                    <node concept="1xUVSX" id="1yMvtXVBoKH" role="1tU5fm">
+                      <ref role="1xYkEM" node="5tr7YH$U35C" resolve="ContextActionsTool" />
+                    </node>
+                    <node concept="2OqwBi" id="1yMvtXVBoKM" role="33vP2m">
+                      <node concept="37vLTw" id="1yMvtXVBoKN" role="2Oq$k0">
                         <ref role="3cqZAo" node="5tr7YH$Uku8" resolve="ideaProject" />
                       </node>
-                      <node concept="LR4U6" id="5tr7YH$UqqZ" role="2OqNvi">
+                      <node concept="LR4U6" id="1yMvtXVBoKO" role="2OqNvi">
                         <ref role="LR4U5" node="5tr7YH$U35C" resolve="ContextActionsTool" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="1yMvtXVBoVF" role="3cqZAp">
+                  <node concept="3clFbS" id="1yMvtXVBoVH" role="3clFbx">
+                    <node concept="3cpWs6" id="1yMvtXVBp5g" role="3cqZAp" />
+                  </node>
+                  <node concept="3clFbC" id="1yMvtXVBoZj" role="3clFbw">
+                    <node concept="10Nm6u" id="1yMvtXVBp0A" role="3uHU7w" />
+                    <node concept="37vLTw" id="1yMvtXVBoXv" role="3uHU7B">
+                      <ref role="3cqZAo" node="1yMvtXVBoKL" resolve="tool" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5tr7YH$Uq6i" role="3cqZAp">
+                  <node concept="2OqwBi" id="5tr7YH$UqrT" role="3clFbG">
+                    <node concept="37vLTw" id="1yMvtXVBoKP" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1yMvtXVBoKL" resolve="tool" />
                     </node>
                     <node concept="liA8E" id="5tr7YH$UqA4" role="2OqNvi">
                       <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable():void" resolve="makeAvailable" />
