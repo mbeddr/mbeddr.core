@@ -10,9 +10,9 @@
     <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="g0zr" ref="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -580,7 +580,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="dC6OCguVuH" role="2OqNvi">
-                              <ref role="37wK5l" to="ec5l:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode):void" resolve="removeChild" />
+                              <ref role="37wK5l" to="mhbf:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode):void" resolve="removeChild" />
                               <node concept="2GrUjf" id="dC6OCguVv$" role="37wK5m">
                                 <ref role="2Gs0qQ" node="3biQRBA41mm" resolve="c" />
                               </node>
@@ -595,7 +595,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="3biQRBA41mv" role="2OqNvi">
-                              <ref role="37wK5l" to="ec5l:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+                              <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
                               <node concept="37vLTw" id="dC6OCgr3KP" role="37wK5m">
                                 <ref role="3cqZAo" node="dC6OCgr3KL" resolve="r" />
                               </node>
@@ -622,7 +622,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3biQRBA41mJ" role="2OqNvi">
-                                  <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
                                   <node concept="2GrUjf" id="3biQRBA41mK" role="37wK5m">
                                     <ref role="2Gs0qQ" node="3biQRBA41mB" resolve="propName" />
                                   </node>
@@ -633,7 +633,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3biQRBA41mO" role="2OqNvi">
-                                      <ref role="37wK5l" to="ec5l:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                                      <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
                                       <node concept="2GrUjf" id="3biQRBA41mP" role="37wK5m">
                                         <ref role="2Gs0qQ" node="3biQRBA41mB" resolve="propName" />
                                       </node>
@@ -649,7 +649,7 @@
                                 <ref role="2Gs0qQ" node="3biQRBA41mB" resolve="propName" />
                               </node>
                               <node concept="liA8E" id="3biQRBA41mT" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="Xl_RD" id="3biQRBA41mU" role="37wK5m">
                                   <property role="Xl_RC" value="name" />
                                 </node>
@@ -665,7 +665,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="3biQRBA41mY" role="2OqNvi">
-                          <ref role="37wK5l" to="ec5l:~SNode.getPropertyNames():java.lang.Iterable" resolve="getPropertyNames" />
+                          <ref role="37wK5l" to="mhbf:~SNode.getPropertyNames():java.lang.Iterable" resolve="getPropertyNames" />
                         </node>
                       </node>
                     </node>

@@ -7,12 +7,12 @@
   </languages>
   <imports>
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="2yyc" ref="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)" />
-    <import index="22fg" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="y6af" ref="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" />
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" />
   </imports>
@@ -243,14 +243,14 @@
               <node concept="3cpWsn" id="GKLijSML_8" role="3cpWs9">
                 <property role="TrG5h" value="br" />
                 <node concept="3uibUv" id="GKLijSML_9" role="1tU5fm">
-                  <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+                  <ref role="3uigEE" to="guwi:~BufferedReader" resolve="BufferedReader" />
                 </node>
                 <node concept="2ShNRf" id="GKLijSMLFw" role="33vP2m">
                   <node concept="1pGfFk" id="GKLijSMMd$" role="2ShVmc">
-                    <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                    <ref role="37wK5l" to="guwi:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
                     <node concept="2ShNRf" id="GKLijSMMiT" role="37wK5m">
                       <node concept="1pGfFk" id="GKLijSMGLz" role="2ShVmc">
-                        <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.lang.String)" resolve="FileReader" />
+                        <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.lang.String)" resolve="FileReader" />
                         <node concept="37vLTw" id="GKLijSMHjA" role="37wK5m">
                           <ref role="3cqZAo" node="GKLijSMGX1" resolve="fn" />
                         </node>
@@ -271,7 +271,7 @@
                         <ref role="3cqZAo" node="GKLijSML_8" resolve="br" />
                       </node>
                       <node concept="liA8E" id="GKLijSMQ1p" role="2OqNvi">
-                        <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                        <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
                       </node>
                     </node>
                   </node>
@@ -282,11 +282,11 @@
                       <node concept="3cpWsn" id="GKLijSMVnA" role="3cpWs9">
                         <property role="TrG5h" value="st" />
                         <node concept="3uibUv" id="GKLijSN2j2" role="1tU5fm">
-                          <ref role="3uigEE" to="k7g3:~StringTokenizer" resolve="StringTokenizer" />
+                          <ref role="3uigEE" to="33ny:~StringTokenizer" resolve="StringTokenizer" />
                         </node>
                         <node concept="2ShNRf" id="GKLijSMVpU" role="33vP2m">
                           <node concept="1pGfFk" id="GKLijSMVpR" role="2ShVmc">
-                            <ref role="37wK5l" to="k7g3:~StringTokenizer.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="StringTokenizer" />
+                            <ref role="37wK5l" to="33ny:~StringTokenizer.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="StringTokenizer" />
                             <node concept="37vLTw" id="GKLijSMVrb" role="37wK5m">
                               <ref role="3cqZAo" node="GKLijSMPeJ" resolve="l" />
                             </node>
@@ -310,7 +310,7 @@
                               <ref role="3cqZAo" node="GKLijSMVnA" resolve="st" />
                             </node>
                             <node concept="liA8E" id="GKLijSTcwR" role="2OqNvi">
-                              <ref role="37wK5l" to="k7g3:~StringTokenizer.nextToken():java.lang.String" resolve="nextToken" />
+                              <ref role="37wK5l" to="33ny:~StringTokenizer.nextToken():java.lang.String" resolve="nextToken" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="GKLijSTcwS" role="1Lso8e">
@@ -318,7 +318,7 @@
                               <ref role="3cqZAo" node="GKLijSMVnA" resolve="st" />
                             </node>
                             <node concept="liA8E" id="GKLijSTcwU" role="2OqNvi">
-                              <ref role="37wK5l" to="k7g3:~StringTokenizer.nextToken():java.lang.String" resolve="nextToken" />
+                              <ref role="37wK5l" to="33ny:~StringTokenizer.nextToken():java.lang.String" resolve="nextToken" />
                             </node>
                           </node>
                         </node>
@@ -327,11 +327,11 @@
                     <node concept="3clFbF" id="GKLijSTdtE" role="3cqZAp">
                       <node concept="2OqwBi" id="GKLijSTdtA" role="3clFbG">
                         <node concept="10M0yZ" id="GKLijSTdtB" role="2Oq$k0">
-                          <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                          <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         </node>
                         <node concept="liA8E" id="GKLijSTdtC" role="2OqNvi">
-                          <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                           <node concept="3cpWs3" id="GKLijSTe5L" role="37wK5m">
                             <node concept="37vLTw" id="GKLijSTe5O" role="3uHU7w">
                               <ref role="3cqZAo" node="GKLijSTcwN" resolve="t" />
@@ -369,7 +369,7 @@
                   <ref role="3cqZAo" node="GKLijSML_8" resolve="br" />
                 </node>
                 <node concept="liA8E" id="GKLijSMPbh" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~BufferedReader.ready():boolean" resolve="ready" />
+                  <ref role="37wK5l" to="guwi:~BufferedReader.ready():boolean" resolve="ready" />
                 </node>
               </node>
             </node>
@@ -379,7 +379,7 @@
                   <ref role="3cqZAo" node="GKLijSML_8" resolve="br" />
                 </node>
                 <node concept="liA8E" id="GKLijSMNGw" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~BufferedReader.close():void" resolve="close" />
+                  <ref role="37wK5l" to="guwi:~BufferedReader.close():void" resolve="close" />
                 </node>
               </node>
             </node>
@@ -388,7 +388,7 @@
             <node concept="3cpWsn" id="GKLijSMXQ2" role="TDEfY">
               <property role="TrG5h" value="ex" />
               <node concept="3uibUv" id="GKLijSN0PM" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
             <node concept="3clFbS" id="GKLijSMXQ6" role="TDEfX">
@@ -398,7 +398,7 @@
                     <ref role="3cqZAo" node="GKLijSMXQ2" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="GKLijSN1Jd" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -442,7 +442,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="GKLijSNdQQ" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="37vLTw" id="GKLijSNefj" role="37wK5m">
                             <ref role="3cqZAo" node="GKLijSNe11" resolve="extID" />
                           </node>
@@ -550,7 +550,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="GKLijSNiEQ" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="37vLTw" id="GKLijSNj9t" role="37wK5m">
                             <ref role="3cqZAo" node="GKLijSNiYU" resolve="extID" />
                           </node>
@@ -600,7 +600,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="GKLijSQ67W" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                         <node concept="2OqwBi" id="GKLijSQ6p4" role="37wK5m">
                           <node concept="13iPFW" id="GKLijSQ6hO" role="2Oq$k0" />
                           <node concept="3TrcHB" id="GKLijSQ6RZ" role="2OqNvi">
@@ -688,11 +688,11 @@
         <node concept="3clFbF" id="2juwowPklFl" role="3cqZAp">
           <node concept="2OqwBi" id="2juwowPklFh" role="3clFbG">
             <node concept="10M0yZ" id="2juwowPklFi" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2juwowPklFj" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="2juwowPknY$" role="37wK5m">
                 <node concept="37vLTw" id="2juwowPknYF" role="3uHU7w">
                   <ref role="3cqZAo" node="2juwowPkmhn" resolve="address" />
@@ -719,11 +719,11 @@
               <node concept="3cpWsn" id="2juwowPjVtf" role="3cpWs9">
                 <property role="TrG5h" value="url" />
                 <node concept="3uibUv" id="2juwowPjVtg" role="1tU5fm">
-                  <ref role="3uigEE" to="22fg:~URL" resolve="URL" />
+                  <ref role="3uigEE" to="zf81:~URL" resolve="URL" />
                 </node>
                 <node concept="2ShNRf" id="2juwowPjVxy" role="33vP2m">
                   <node concept="1pGfFk" id="2juwowPjW3s" role="2ShVmc">
-                    <ref role="37wK5l" to="22fg:~URL.&lt;init&gt;(java.lang.String)" resolve="URL" />
+                    <ref role="37wK5l" to="zf81:~URL.&lt;init&gt;(java.lang.String)" resolve="URL" />
                     <node concept="37vLTw" id="2juwowPkmht" role="37wK5m">
                       <ref role="3cqZAo" node="2juwowPkmhn" resolve="address" />
                     </node>
@@ -735,20 +735,20 @@
               <node concept="3cpWsn" id="2juwowPjWI_" role="3cpWs9">
                 <property role="TrG5h" value="br" />
                 <node concept="3uibUv" id="2juwowPjWIA" role="1tU5fm">
-                  <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+                  <ref role="3uigEE" to="guwi:~BufferedReader" resolve="BufferedReader" />
                 </node>
                 <node concept="2ShNRf" id="2juwowPjWJc" role="33vP2m">
                   <node concept="1pGfFk" id="2juwowPjWJb" role="2ShVmc">
-                    <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                    <ref role="37wK5l" to="guwi:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
                     <node concept="2ShNRf" id="2juwowPjWNy" role="37wK5m">
                       <node concept="1pGfFk" id="2juwowPjXlg" role="2ShVmc">
-                        <ref role="37wK5l" to="fxg7:~InputStreamReader.&lt;init&gt;(java.io.InputStream)" resolve="InputStreamReader" />
+                        <ref role="37wK5l" to="guwi:~InputStreamReader.&lt;init&gt;(java.io.InputStream)" resolve="InputStreamReader" />
                         <node concept="2OqwBi" id="2juwowPjXoP" role="37wK5m">
                           <node concept="37vLTw" id="2juwowPjXm7" role="2Oq$k0">
                             <ref role="3cqZAo" node="2juwowPjVtf" resolve="url" />
                           </node>
                           <node concept="liA8E" id="2juwowPjXBF" role="2OqNvi">
-                            <ref role="37wK5l" to="22fg:~URL.openStream():java.io.InputStream" resolve="openStream" />
+                            <ref role="37wK5l" to="zf81:~URL.openStream():java.io.InputStream" resolve="openStream" />
                           </node>
                         </node>
                       </node>
@@ -770,7 +770,7 @@
                           <ref role="3cqZAo" node="2juwowPjWI_" resolve="br" />
                         </node>
                         <node concept="liA8E" id="2juwowPjZqb" role="2OqNvi">
-                          <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                          <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
                         </node>
                       </node>
                     </node>
@@ -785,7 +785,7 @@
                   <ref role="3cqZAo" node="2juwowPjWI_" resolve="br" />
                 </node>
                 <node concept="liA8E" id="2juwowPjYtf" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~BufferedReader.ready():boolean" resolve="ready" />
+                  <ref role="37wK5l" to="guwi:~BufferedReader.ready():boolean" resolve="ready" />
                 </node>
               </node>
             </node>
@@ -795,7 +795,7 @@
                   <ref role="3cqZAo" node="2juwowPjWI_" resolve="br" />
                 </node>
                 <node concept="liA8E" id="2juwowPk1e$" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~BufferedReader.close():void" resolve="close" />
+                  <ref role="37wK5l" to="guwi:~BufferedReader.close():void" resolve="close" />
                 </node>
               </node>
             </node>
@@ -804,7 +804,7 @@
             <node concept="3cpWsn" id="2juwowPk1FS" role="TDEfY">
               <property role="TrG5h" value="ex" />
               <node concept="3uibUv" id="2juwowPk36X" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
             <node concept="3clFbS" id="2juwowPk1FW" role="TDEfX">
@@ -814,7 +814,7 @@
                     <ref role="3cqZAo" node="2juwowPk1FS" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="2juwowPk3Qt" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -824,11 +824,11 @@
         <node concept="3clFbF" id="2juwowPk_qK" role="3cqZAp">
           <node concept="2OqwBi" id="2juwowPk_qG" role="3clFbG">
             <node concept="10M0yZ" id="2juwowPk_qH" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2juwowPk_qI" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="2juwowPk_qJ" role="37wK5m">
                 <property role="Xl_RC" value="result is:" />
               </node>
@@ -838,11 +838,11 @@
         <node concept="3clFbF" id="2juwowPkB8d" role="3cqZAp">
           <node concept="2OqwBi" id="2juwowPkB89" role="3clFbG">
             <node concept="10M0yZ" id="2juwowPkB8a" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2juwowPkB8b" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="37vLTw" id="2juwowPkC1g" role="37wK5m">
                 <ref role="3cqZAo" node="2juwowPjYuq" resolve="res" />
               </node>

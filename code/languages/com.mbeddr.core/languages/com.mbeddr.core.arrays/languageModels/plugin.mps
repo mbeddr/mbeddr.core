@@ -10,7 +10,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -128,7 +128,7 @@
       <node concept="3vetai" id="3VM1o5wbz9t" role="3vQZUl">
         <node concept="3cyPjZ" id="4mmKsQ9n6tP" role="3vdyny">
           <node concept="3uibUv" id="4mmKsQ9n6OM" role="3cLPLk">
-            <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
+            <ref role="3uigEE" to="wyt6:~Long" resolve="Long" />
           </node>
           <node concept="2OqwBi" id="3VM1o5wbz9w" role="3cyPjY">
             <node concept="2OqwBi" id="3VM1o5wbz9x" role="2Oq$k0">

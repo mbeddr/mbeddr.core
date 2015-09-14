@@ -319,6 +319,10 @@
     <property role="34LRSv" value="external" />
     <property role="R4oN_" value="module representing external H and O files" />
     <ref role="1TJDcQ" node="5_l8w1EmTcX" resolve="Module" />
+    <node concept="1TJgyi" id="7e09zBH54Yr" role="1TKVEl">
+      <property role="TrG5h" value="generateHeader" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5jyom5fOqJU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="descriptors" />
@@ -828,6 +832,10 @@
       <property role="TrG5h" value="hasEllipsis" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="4b64BCbOGUl" role="1TKVEl">
+      <property role="TrG5h" value="resultIsLValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5eg$WPOtR8R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
@@ -983,6 +991,10 @@
     <property role="TrG5h" value="AbstractDefineLike" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4b64BCbUGp8" role="1TKVEl">
+      <property role="TrG5h" value="resultIsLValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7q_8K_tuzAK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />

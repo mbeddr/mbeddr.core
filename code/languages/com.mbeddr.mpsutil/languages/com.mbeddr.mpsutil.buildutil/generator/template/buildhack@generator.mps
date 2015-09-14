@@ -10,7 +10,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="iuxj" ref="479c7a8c-02f9-43b5-9139-d910cb22f298/r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml/jetbrains.mps.core.xml.structure)" implicit="true" />
   </imports>
   <registry>
@@ -172,7 +172,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1$BAYQjjicc" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                       <node concept="Xl_RD" id="1$BAYQjjiuH" role="37wK5m">
                         <property role="Xl_RC" value="jvmargs" />
                       </node>
@@ -192,7 +192,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="1$BAYQjiYV_" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="Xl_RD" id="1$BAYQjiZ1Q" role="37wK5m">
                               <property role="Xl_RC" value="arg" />
                             </node>
@@ -254,7 +254,7 @@
                                                   </node>
                                                 </node>
                                                 <node concept="liA8E" id="1$BAYQjm_3Z" role="2OqNvi">
-                                                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                                   <node concept="Xl_RD" id="1$BAYQjm_40" role="37wK5m">
                                                     <property role="Xl_RC" value="-Xmx=2g -XX:MaxPermSize=512m" />
                                                   </node>
@@ -335,7 +335,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1$BAYQjjrhE" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="Xl_RD" id="1$BAYQjjrBF" role="37wK5m">
                     <property role="Xl_RC" value="generate" />
                   </node>
@@ -406,7 +406,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="1$BAYQjnYrQ" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                       <node concept="Xl_RD" id="1$BAYQjnZ9G" role="37wK5m">
                         <property role="Xl_RC" value="jvmargs" />
                       </node>
@@ -438,7 +438,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1$BAYQjofCz" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="Xl_RD" id="1$BAYQjogpB" role="37wK5m">
                       <property role="Xl_RC" value="generate" />
                     </node>

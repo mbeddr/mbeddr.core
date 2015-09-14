@@ -403,7 +403,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -20009,6 +20009,15 @@
     </node>
     <node concept="2flH9Z" id="3DoSIAt306m" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.java.workbench.actions.AnalyzeClasspath_Action" />
+    </node>
+    <node concept="2flH9Z" id="FniR$ClU6F" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.favourites_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="FniR$ClUei" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.markAsFavourite_Action" />
+    </node>
+    <node concept="2flH9Z" id="FniR$ClUlV" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.removeFromFavourites_Action" />
     </node>
   </node>
   <node concept="sE7Ow" id="4EItucYCCBf">

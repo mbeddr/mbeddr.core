@@ -7,15 +7,15 @@
   </languages>
   <imports>
     <import index="vj37" ref="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" />
-    <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="kssv" ref="r:982d5306-9d5e-426f-abf8-1a2ca4a0588a(mbeddr.tutorial.vectors.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -541,11 +541,11 @@
                 <node concept="2OqwBi" id="4LP87XueYPY" role="2Oq$k0">
                   <node concept="2QUAEa" id="4LP87XueYPZ" role="2Oq$k0" />
                   <node concept="liA8E" id="4LP87XueYQ0" role="2OqNvi">
-                    <ref role="37wK5l" to="ua2a:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4LP87XueYQ1" role="2OqNvi">
-                  <ref role="37wK5l" to="ua2a:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
                   <node concept="37vLTw" id="6Jhc0CXtUVc" role="37wK5m">
                     <ref role="3cqZAo" node="4LP87XueYP1" resolve="nodes" />
                   </node>
@@ -684,11 +684,11 @@
                 <node concept="2OqwBi" id="4LP87Xufq3l" role="2Oq$k0">
                   <node concept="2QUAEa" id="4LP87Xufq3m" role="2Oq$k0" />
                   <node concept="liA8E" id="4LP87Xufq3n" role="2OqNvi">
-                    <ref role="37wK5l" to="ua2a:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4LP87Xufq3o" role="2OqNvi">
-                  <ref role="37wK5l" to="ua2a:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
                   <node concept="37vLTw" id="6Jhc0CXtUW7" role="37wK5m">
                     <ref role="3cqZAo" node="4LP87Xufq2X" resolve="nodes" />
                   </node>
@@ -921,11 +921,11 @@
                 <node concept="2OqwBi" id="4LP87XufKS5" role="2Oq$k0">
                   <node concept="2QUAEa" id="4LP87XufKS6" role="2Oq$k0" />
                   <node concept="liA8E" id="4LP87XufKS7" role="2OqNvi">
-                    <ref role="37wK5l" to="ua2a:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                    <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4LP87XufKS8" role="2OqNvi">
-                  <ref role="37wK5l" to="ua2a:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
+                  <ref role="37wK5l" to="u78q:~SubtypingManager.leastCommonSupertypes(java.util.Set,boolean):java.util.Set" resolve="leastCommonSupertypes" />
                   <node concept="37vLTw" id="6Jhc0CXtUX6" role="37wK5m">
                     <ref role="3cqZAo" node="4LP87XufKRH" resolve="nodes" />
                   </node>
@@ -1567,11 +1567,11 @@
           <node concept="3clFbF" id="1J$x$3s7uRg" role="3cqZAp">
             <node concept="2OqwBi" id="1J$x$3s7uRc" role="3clFbG">
               <node concept="10M0yZ" id="1J$x$3s7uRd" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
               </node>
               <node concept="liA8E" id="1J$x$3s7uRe" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="1J$x$3s7BcR" role="37wK5m">
                   <node concept="2X3wrD" id="1J$x$3s7Dgf" role="3uHU7w">
                     <ref role="2X3Bk0" node="5TPCPz$cPoX" resolve="t" />

@@ -5,7 +5,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -76,11 +76,11 @@
       <node concept="3clFbS" id="44jZT9p0G5f" role="3clF47">
         <node concept="3clFbF" id="44jZT9p0Hld" role="3cqZAp">
           <node concept="2YIFZM" id="44jZT9p0HlR" role="3clFbG">
-            <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="v2t1:~StringUtils.rightPad(java.lang.String,int):java.lang.String" resolve="rightPad" />
+            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+            <ref role="37wK5l" to="btm1:~StringUtils.rightPad(java.lang.String,int):java.lang.String" resolve="rightPad" />
             <node concept="2YIFZM" id="44jZT9p0Ho2" role="37wK5m">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.abbreviate(java.lang.String,int):java.lang.String" resolve="abbreviate" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int):java.lang.String" resolve="abbreviate" />
               <node concept="37vLTw" id="44jZT9p0Hpj" role="37wK5m">
                 <ref role="3cqZAo" node="44jZT9p0GPT" resolve="str" />
               </node>
@@ -114,11 +114,11 @@
       <node concept="3clFbS" id="44jZT9p17H_" role="3clF47">
         <node concept="3clFbF" id="44jZT9p17HA" role="3cqZAp">
           <node concept="2YIFZM" id="44jZT9p17PO" role="3clFbG">
-            <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="v2t1:~StringUtils.leftPad(java.lang.String,int):java.lang.String" resolve="leftPad" />
+            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+            <ref role="37wK5l" to="btm1:~StringUtils.leftPad(java.lang.String,int):java.lang.String" resolve="leftPad" />
             <node concept="2YIFZM" id="44jZT9p17PP" role="37wK5m">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.abbreviate(java.lang.String,int):java.lang.String" resolve="abbreviate" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int):java.lang.String" resolve="abbreviate" />
               <node concept="37vLTw" id="44jZT9p17PQ" role="37wK5m">
                 <ref role="3cqZAo" node="44jZT9p17HI" resolve="str" />
               </node>
@@ -151,8 +151,8 @@
       <node concept="3clFbS" id="44jZT9pcpKw" role="3clF47">
         <node concept="3clFbF" id="44jZT9pcs7k" role="3cqZAp">
           <node concept="2YIFZM" id="44jZT9pcsxG" role="3clFbG">
-            <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="v2t1:~StringUtils.repeat(java.lang.String,int):java.lang.String" resolve="repeat" />
+            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+            <ref role="37wK5l" to="btm1:~StringUtils.repeat(java.lang.String,int):java.lang.String" resolve="repeat" />
             <node concept="Xl_RD" id="44jZT9pcsJc" role="37wK5m">
               <property role="Xl_RC" value=" " />
             </node>
@@ -161,8 +161,8 @@
                 <ref role="3cqZAo" node="44jZT9pcrFT" resolve="width" />
               </node>
               <node concept="2YIFZM" id="44jZT9pctW9" role="3uHU7w">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.length(java.lang.CharSequence):int" resolve="length" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.length(java.lang.CharSequence):int" resolve="length" />
                 <node concept="37vLTw" id="44jZT9pcuc7" role="37wK5m">
                   <ref role="3cqZAo" node="44jZT9pcpMC" resolve="str" />
                 </node>

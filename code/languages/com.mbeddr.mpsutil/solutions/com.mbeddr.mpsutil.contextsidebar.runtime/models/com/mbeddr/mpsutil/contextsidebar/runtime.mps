@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="8q6x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="xike" ref="r:698ffceb-aefa-44db-b54b-bfe095c94cee(com.mbeddr.mpsutil.contextsidebar.runtime.plugin)" />
   </imports>
   <registry>
@@ -241,7 +241,7 @@
       <property role="DiZV1" value="false" />
       <node concept="3Tm1VV" id="lRW__IuRp7" role="1B3o_S" />
       <node concept="3uibUv" id="lRW__IuRp8" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="3clFbS" id="lRW__IuRpa" role="3clF47">
         <node concept="3clFbF" id="lRW__IuRpc" role="3cqZAp">
@@ -295,7 +295,7 @@
           <ref role="3uigEE" node="lRW__IwuVQ" resolve="IContextAction" />
         </node>
         <node concept="3uibUv" id="lRW__IwGuy" role="3rvSg0">
-          <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+          <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
         </node>
       </node>
       <node concept="2ShNRf" id="lRW__IwvjZ" role="33vP2m">
@@ -304,7 +304,7 @@
             <ref role="3uigEE" node="lRW__IwuVQ" resolve="IContextAction" />
           </node>
           <node concept="3uibUv" id="lRW__IwIxt" role="3rHtpV">
-            <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+            <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
           </node>
         </node>
       </node>
@@ -327,7 +327,7 @@
       <property role="DiZV1" value="false" />
       <node concept="3Tm1VV" id="lRW__IwuuG" role="1B3o_S" />
       <node concept="3uibUv" id="lRW__IwuuH" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="3clFbS" id="lRW__IwuuJ" role="3clF47">
         <node concept="3clFbF" id="lRW__Iww3b" role="3cqZAp">
@@ -341,11 +341,11 @@
             <property role="TrG5h" value="result" />
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="lRW__IwR8x" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
+              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
             </node>
             <node concept="2ShNRf" id="lRW__IwR8_" role="33vP2m">
               <node concept="1pGfFk" id="lRW__IwR8A" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
               </node>
             </node>
           </node>
@@ -356,13 +356,13 @@
               <ref role="3cqZAo" node="lRW__IwR8$" resolve="result" />
             </node>
             <node concept="liA8E" id="3Yx5EQ49rn" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+              <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
               <node concept="2ShNRf" id="3Yx5EQ49tO" role="37wK5m">
                 <node concept="1pGfFk" id="76UtivgwuCE" role="2ShVmc">
                   <ref role="37wK5l" to="xike:5x8vmjSDiIY" resolve="WrapLayout" />
                   <node concept="10M0yZ" id="76UtivgwuHU" role="37wK5m">
                     <ref role="1PxDUh" to="xike:5x8vmjSDiIF" resolve="WrapLayout" />
-                    <ref role="3cqZAo" to="1t7x:~FlowLayout.LEFT" resolve="LEFT" />
+                    <ref role="3cqZAo" to="z60i:~FlowLayout.LEFT" resolve="LEFT" />
                   </node>
                 </node>
               </node>
@@ -382,7 +382,7 @@
                     <node concept="3cpWsn" id="lRW__IwRNW" role="3cpWs9">
                       <property role="TrG5h" value="actionComponent" />
                       <node concept="3uibUv" id="lRW__IwRNT" role="1tU5fm">
-                        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+                        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
                       </node>
                       <node concept="2OqwBi" id="lRW__IwRNX" role="33vP2m">
                         <node concept="2OqwBi" id="lRW__IwRNY" role="2Oq$k0">
@@ -416,7 +416,7 @@
                         <ref role="3cqZAo" node="lRW__IwR8$" resolve="result" />
                       </node>
                       <node concept="liA8E" id="lRW__IwTVC" role="2OqNvi">
-                        <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                        <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
                         <node concept="37vLTw" id="lRW__IwU76" role="37wK5m">
                           <ref role="3cqZAo" node="lRW__IwRNW" resolve="actionComponent" />
                         </node>
@@ -494,7 +494,7 @@
                       <node concept="3AV6Ez" id="3Yx5EPMXGk" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="3Yx5EPN1Qz" role="2OqNvi">
-                      <ref role="37wK5l" to="dbrf:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                      <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
                       <node concept="3clFbT" id="3Yx5EPN1SQ" role="37wK5m">
                         <property role="3clFbU" value="true" />
                       </node>
@@ -527,7 +527,7 @@
                         <node concept="3AV6Ez" id="3Yx5EPN2YN" role="2OqNvi" />
                       </node>
                       <node concept="liA8E" id="3Yx5EPN7a9" role="2OqNvi">
-                        <ref role="37wK5l" to="dbrf:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                        <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
                         <node concept="3clFbT" id="3Yx5EPN7cs" role="37wK5m">
                           <property role="3clFbU" value="false" />
                         </node>
@@ -595,7 +595,7 @@
           <ref role="3uigEE" node="lRW__IwuVQ" resolve="IContextAction" />
         </node>
         <node concept="3uibUv" id="lRW__IwISs" role="3rvSg0">
-          <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+          <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
         </node>
       </node>
     </node>
@@ -610,7 +610,7 @@
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="createJComponent" />
       <node concept="3uibUv" id="lRW__IwCpG" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="3Tm1VV" id="lRW__IwCoe" role="1B3o_S" />
       <node concept="3clFbS" id="lRW__IwCof" role="3clF47" />
@@ -685,7 +685,7 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createJComponent" />
       <node concept="3uibUv" id="lRW__IwXMT" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="3Tm1VV" id="lRW__IwXMU" role="1B3o_S" />
       <node concept="3clFbS" id="lRW__IwXMW" role="3clF47">
@@ -693,11 +693,11 @@
           <node concept="3cpWsn" id="lRW__IwZ$J" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="lRW__IwZ$F" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JButton" resolve="JButton" />
+              <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
             </node>
             <node concept="2ShNRf" id="lRW__IwZ$K" role="33vP2m">
               <node concept="1pGfFk" id="lRW__IwZ$L" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JButton.&lt;init&gt;(javax.swing.Icon)" resolve="JButton" />
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(javax.swing.Icon)" resolve="JButton" />
                 <node concept="1rXfSq" id="lRW__IwZ$N" role="37wK5m">
                   <ref role="37wK5l" node="lRW__IwZa$" resolve="getIcon" />
                 </node>
@@ -712,7 +712,7 @@
               <ref role="3cqZAo" node="lRW__IwZ$J" resolve="result" />
             </node>
             <node concept="liA8E" id="lRW__Ix2iK" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
               <node concept="1rXfSq" id="lRW__Ix2m9" role="37wK5m">
                 <ref role="37wK5l" node="lRW__IwY$G" resolve="getName" />
               </node>
@@ -726,7 +726,7 @@
               <ref role="3cqZAo" node="lRW__IwZ$J" resolve="result" />
             </node>
             <node concept="liA8E" id="lRW__Ix4Oh" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
               <node concept="1bVj0M" id="lRW__Ix5FA" role="37wK5m">
                 <node concept="3clFbS" id="lRW__Ix5FB" role="1bW5cS">
                   <node concept="3clFbF" id="lRW__Ixhm8" role="3cqZAp">
@@ -749,7 +749,7 @@
                 <node concept="37vLTG" id="lRW__Ixh13" role="1bW2Oz">
                   <property role="TrG5h" value="e" />
                   <node concept="3uibUv" id="lRW__Ixh12" role="1tU5fm">
-                    <ref role="3uigEE" to="8q6x:~ActionEvent" resolve="ActionEvent" />
+                    <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
                   </node>
                 </node>
               </node>
@@ -785,7 +785,7 @@
       <property role="TrG5h" value="getIcon" />
       <property role="1EzhhJ" value="true" />
       <node concept="3uibUv" id="lRW__IwZdy" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="3Tm1VV" id="lRW__IwZaB" role="1B3o_S" />
       <node concept="3clFbS" id="lRW__IwZaC" role="3clF47" />
@@ -827,7 +827,7 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createJComponent" />
       <node concept="3uibUv" id="lRW__IxHkW" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="3Tm1VV" id="lRW__IxHkX" role="1B3o_S" />
       <node concept="3clFbS" id="lRW__IxHkZ" role="3clF47">
@@ -888,7 +888,7 @@
       <property role="TrG5h" value="getIcon" />
       <property role="1EzhhJ" value="false" />
       <node concept="3uibUv" id="lRW__IyQgp" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="3Tm1VV" id="lRW__IyQgq" role="1B3o_S" />
       <node concept="3clFbS" id="lRW__IyQgs" role="3clF47">

@@ -13,7 +13,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="bzi2" ref="r:dbb33cb0-de09-428a-afb4-747855ac0e38(mbeddr.tutorial.smtrigger.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
   </imports>
   <registry>
@@ -296,7 +296,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="5r39rAsFlOd" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="2OqwBi" id="5r39rAsFlOe" role="37wK5m">
                               <node concept="30H73N" id="5r39rAsFlOf" role="2Oq$k0" />
                               <node concept="2qgKlT" id="5r39rAsFlOg" role="2OqNvi">

@@ -3,8 +3,9 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mps-sl-all" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-sl-all" />
-  <property name="mps.home" location="${basedir}/../../../../../app/mps33_1283.app/Contents" />
+  <property name="mps.home" location="${basedir}/../../../../../app/mps33_1914.app/Contents" />
   <property name="diagram.home" location="${basedir}/diagram" />
+  <property name="versionNumber" value="2.0.2" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsBootstrapCore" location="${mps.home}" />
   <property name="artifacts.IDEA" location="${mps.home}" />
@@ -31,10 +32,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.all</id>
         <name>de.slisson.mps.all</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -74,10 +75,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.nativelibs</id>
         <name>de.itemis.mps.nativelibs</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -158,11 +159,11 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.apache.commons</id>
         <name>Apache Commons Library</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://commons.apache.org/">Apache Foundation</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -175,7 +176,9 @@
     <mkdir dir="${build.tmp}/default/org.apache.commons.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.apache.commons.jar/META-INF/module.xml">
       <module namespace="org.apache.commons" type="solution" uuid="b0f8641f-bd77-4421-8425-30d9088a82f7">
-        <dependencies />
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+        </dependencies>
         <library jar="../../lib/commons-io-2.4.jar" />
         <library jar="../../lib/commons-lang3-3.3.2.jar" />
         <library jar="../../lib/commons-math3-3.3.jar" />
@@ -207,7 +210,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.diagram</id>
         <name>de.itemis.mps.editor.diagram</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
         <depends>org.apache.commons</depends>
@@ -215,7 +218,7 @@
         <depends>de.itemis.mps.tooltips</depends>
         <depends>de.itemis.mps.editor.widgets</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -543,10 +546,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.layout</id>
         <name>de.itemis.mps.editor.layout</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -645,12 +648,12 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.editor.multiline</id>
         <name>MPS Multiline Property Editor Component</name>
-        <version>2.0.1</version>
+        <version>${versionNumber}</version>
         <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         <description>An editor component for properties that supports wrapping of long lines and new lines by pressing ENTER.</description>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -752,13 +755,13 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.richtext</id>
         <name>MPS Richtext Editor Component</name>
-        <version>2.0.1</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-richtext">Sascha Lisson</vendor>
         <depends>jetbrains.mps.build</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.editor.multiline</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         <description>Mixing of plain text and MPS nodes.</description>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -879,13 +882,13 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.widgets</id>
         <name>MPS Editor Widgets</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-all">itemis AG</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>de.slisson.mps.hacks</depends>
         <depends>de.itemis.mps.tooltips</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1185,11 +1188,11 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.editor.math</id>
         <name>MPS Math Editor</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-math">itemis AG</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1367,13 +1370,13 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.tables</id>
         <name>MPS Table Editor Component</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-tables">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.intellij.modules.mps</depends>
         <depends>de.itemis.mps.selection</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1478,10 +1481,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.selection</id>
         <name>Mouse Selection Support</name>
-        <version>2.0.1</version>
+        <version>${versionNumber}</version>
         <vendor url="https://github.com/slisson/mps-all">itemis AG</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         <description>With this plugin you can select nodes in MPS using the mouse.</description>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -1583,10 +1586,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.conditionalEditor</id>
         <name>de.slisson.mps.conditionalEditor</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1736,9 +1739,9 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.hacks</id>
         <name>de.slisson.mps.hacks</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1863,10 +1866,10 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.itemis.mps.tooltips</id>
         <name>de.itemis.mps.tooltips</name>
-        <version>2.0.0</version>
+        <version>${versionNumber}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>de.slisson.mps.hacks</depends>
-        <idea-version since-build="139.1" until-build="140.1" />
+        <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1961,6 +1964,72 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.itemis.mps.tooltips-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.itemis.mps.tooltips-languageModels" prefix="module/languageModels" />
     </jar>
+    <mkdir dir="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo" />
+    <mkdir dir="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/META-INF" />
+    <echoxml file="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/META-INF/plugin.xml">
+      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>de.slisson.mps.pluginrepo</id>
+        <name>de.slisson.mps.pluginrepo</name>
+        <version>${versionNumber}</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.build</depends>
+        <idea-version since-build="141.1" until-build="142.1" />
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <mkdir dir="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages" />
+    <mkdir dir="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.pluginrepo.jar" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.pluginrepo.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.slisson.mps.pluginrepo.jar/META-INF/module.xml">
+      <module namespace="de.slisson.mps.pluginrepo" type="language" uuid="50e7e80d-8a4c-4bc0-a3fa-73e686aa0749">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="de.slisson.mps.pluginrepo-src.jar" descriptor="de.slisson.mps.pluginrepo.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.pluginrepo" />
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/de.slisson.mps.pluginrepo.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.pluginrepo#8198635589146411658" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.slisson.mps.pluginrepo-generator-template">
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.slisson.mps.pluginrepo-models">
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.slisson.mps.pluginrepo-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.slisson.mps.pluginrepo-models" prefix="module/models" />
+    </jar>
     <zip destfile="${build.layout}/mps-sl-all.zip">
       <zipfileset file="${basedir}/mps-apache-commons/solutions/org.apache.commons/lib/commons-io-2.4/commons-io-2.4.jar" prefix="mps-apache-commons/lib" />
       <zipfileset file="${basedir}/mps-apache-commons/solutions/org.apache.commons/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" prefix="mps-apache-commons/lib" />
@@ -1973,7 +2042,7 @@
       <zipfileset dir="${basedir}/mps-multiline/solutions/de.slisson.mps.editor.multiline.runtime/lib" prefix="mps-multiline/lib" />
       <fileset dir="${build.tmp}/default/mps-sl-all.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">mps-sl-all.versionNumber=${versionNumber}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -1987,7 +2056,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.de.slisson.mps.all.build, java.compile.de.itemis.mps.nativelibs, java.compile.de.itemis.mps.nativelibs#4185202470056722674, java.compile.de.itemis.mps.nativelibs.loader, java.compile.org.apache.commons, java.compile.de.slisson.mps.editor.multiline, java.compile.de.slisson.mps.editor.multiline#5792856961266375224, java.compile.de.slisson.mps.editor.multiline.runtime, java.compile.de.slisson.mps.richtext, java.compile.de.slisson.mps.richtext#1212807527450963095, java.compile.de.slisson.mps.richtext.customcell, java.compile.de.slisson.mps.richtext.customcell#2490242408670609648, java.compile.de.itemis.mps.editor.dropdown.runtime, java.compile.de.itemis.mps.editor.dropdown, java.compile.de.itemis.mps.editor.dropdown#671762723175669363, java.compile.de.itemis.mps.mouselistener.runtime, java.compile.de.itemis.mps.editor.bool.runtime, java.compile.de.itemis.mps.editor.bool, java.compile.de.itemis.mps.editor.bool#4900677560559654859, java.compile.de.itemis.mps.editor.collapsible.runtime, java.compile.de.itemis.mps.editor.collapsible, java.compile.de.itemis.mps.editor.collapsible#4767615435807736937, java.compile.java.modules.cycle.1, java.compile.de.itemis.mps.editor.math.runtime, java.compile.de.itemis.mps.editor.math.symbols, java.compile.de.itemis.mps.editor.math, java.compile.de.itemis.mps.editor.math#1546395981771464573, java.compile.de.itemis.mps.editor.math.notations, java.compile.de.itemis.mps.editor.math.notations#175930839491770475, java.compile.java.modules.cycle.2, java.compile.de.slisson.mps.tables.runtime, java.compile.de.slisson.mps.tables, java.compile.de.slisson.mps.tables#2318718871439220866, java.compile.de.itemis.mps.selection.runtime, java.compile.de.itemis.mps.selection.intentions, java.compile.de.itemis.mps.selection.intentions#6009478650970381565, java.compile.de.slisson.mps.conditionalEditor.runtime, java.compile.de.slisson.mps.conditionalEditor, java.compile.de.slisson.mps.conditionalEditor#2877762237605071651, java.compile.de.slisson.mps.conditionalEditor.hints, java.compile.de.slisson.mps.conditionalEditor.hints#2669483033691476665, java.compile.de.slisson.mps.hacks.editor, java.compile.de.slisson.mps.reflection.runtime, java.compile.de.slisson.mps.reflection, java.compile.de.slisson.mps.reflection#5820306262934157507, java.compile.de.itemis.mps.editor.diagram.runtime, java.compile.de.itemis.mps.editor.diagram.shapes, java.compile.de.itemis.mps.editor.diagram, java.compile.de.itemis.mps.editor.diagram#1110129820007083940, java.compile.de.itemis.mps.editor.diagram.styles, java.compile.de.itemis.mps.editor.diagram.styles#5014430417954750349, java.compile.de.itemis.mps.editor.diagram.layout, java.compile.de.itemis.mps.editor.diagram.layout#4341402299005877448, java.compile.de.slisson.mps.structurecheck.runtime, java.compile.de.slisson.mps.structurecheck, java.compile.de.slisson.mps.structurecheck#380240910834170735, java.compile.de.itemis.mps.editor.layout.runtime, java.compile.de.itemis.mps.editor.layout, java.compile.de.itemis.mps.editor.layout#4452438700753615293, java.compile.de.itemis.mps.tooltips.runtime, java.compile.de.itemis.mps.tooltips, java.compile.de.itemis.mps.tooltips#7561794385526429391" />
+  <target name="compileJava" depends="java.compile.de.slisson.mps.all.build, java.compile.de.itemis.mps.nativelibs, java.compile.de.itemis.mps.nativelibs#4185202470056722674, java.compile.de.itemis.mps.nativelibs.loader, java.compile.org.apache.commons, java.compile.de.slisson.mps.editor.multiline, java.compile.de.slisson.mps.editor.multiline#5792856961266375224, java.compile.de.slisson.mps.editor.multiline.runtime, java.compile.de.slisson.mps.richtext, java.compile.de.slisson.mps.richtext#1212807527450963095, java.compile.de.slisson.mps.richtext.customcell, java.compile.de.slisson.mps.richtext.customcell#2490242408670609648, java.compile.de.itemis.mps.editor.dropdown.runtime, java.compile.de.itemis.mps.editor.dropdown, java.compile.de.itemis.mps.editor.dropdown#671762723175669363, java.compile.de.itemis.mps.mouselistener.runtime, java.compile.de.itemis.mps.editor.bool.runtime, java.compile.de.itemis.mps.editor.bool, java.compile.de.itemis.mps.editor.bool#4900677560559654859, java.compile.de.itemis.mps.editor.collapsible.runtime, java.compile.de.itemis.mps.editor.collapsible, java.compile.de.itemis.mps.editor.collapsible#4767615435807736937, java.compile.java.modules.cycle.1, java.compile.de.itemis.mps.editor.math.runtime, java.compile.de.itemis.mps.editor.math.symbols, java.compile.de.itemis.mps.editor.math, java.compile.de.itemis.mps.editor.math#1546395981771464573, java.compile.de.itemis.mps.editor.math.notations, java.compile.de.itemis.mps.editor.math.notations#175930839491770475, java.compile.java.modules.cycle.2, java.compile.de.slisson.mps.tables.runtime, java.compile.de.slisson.mps.tables, java.compile.de.slisson.mps.tables#2318718871439220866, java.compile.de.itemis.mps.selection.runtime, java.compile.de.itemis.mps.selection.intentions, java.compile.de.itemis.mps.selection.intentions#6009478650970381565, java.compile.de.slisson.mps.conditionalEditor.runtime, java.compile.de.slisson.mps.conditionalEditor, java.compile.de.slisson.mps.conditionalEditor#2877762237605071651, java.compile.de.slisson.mps.conditionalEditor.hints, java.compile.de.slisson.mps.conditionalEditor.hints#2669483033691476665, java.compile.de.slisson.mps.hacks.editor, java.compile.de.slisson.mps.reflection.runtime, java.compile.de.slisson.mps.reflection, java.compile.de.slisson.mps.reflection#5820306262934157507, java.compile.de.itemis.mps.editor.diagram.runtime, java.compile.de.itemis.mps.editor.diagram.shapes, java.compile.de.itemis.mps.editor.diagram, java.compile.de.itemis.mps.editor.diagram#1110129820007083940, java.compile.de.itemis.mps.editor.diagram.styles, java.compile.de.itemis.mps.editor.diagram.styles#5014430417954750349, java.compile.de.itemis.mps.editor.diagram.layout, java.compile.de.itemis.mps.editor.diagram.layout#4341402299005877448, java.compile.de.slisson.mps.structurecheck.runtime, java.compile.de.slisson.mps.structurecheck, java.compile.de.slisson.mps.structurecheck#380240910834170735, java.compile.de.itemis.mps.editor.layout.runtime, java.compile.de.itemis.mps.editor.layout, java.compile.de.itemis.mps.editor.layout#4452438700753615293, java.compile.de.itemis.mps.tooltips.runtime, java.compile.de.itemis.mps.tooltips, java.compile.de.itemis.mps.tooltips#7561794385526429391, java.compile.de.slisson.mps.pluginrepo, java.compile.de.slisson.mps.pluginrepo#8198635589146411658" />
   
   <target name="processResources" />
   
@@ -2093,6 +2162,7 @@
         <module file="${basedir}/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" />
         <module file="${basedir}/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" />
         <module file="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor.hints/de.slisson.mps.conditionalEditor.hints.mpl" />
+        <module file="${basedir}/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.mpl" />
         <module file="${basedir}/mps-hacks/languages/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" />
         <module file="${basedir}/mps-hacks/solutions/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" />
         <module file="${basedir}/mps-richtext/languages/de.slisson.richtext.customcell/de.slisson.richtext.customcell.mpl" />
@@ -5063,6 +5133,95 @@
     </copy>
   </target>
   
+  <target name="java.compile.de.slisson.mps.pluginrepo" depends="fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.slisson.mps.pluginrepo" />
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.pluginrepo" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
+        <fileset file="${artifacts.IDEA}/lib/jdom.jar" />
+        <fileset file="${artifacts.IDEA}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.IDEA}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
+        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.pluginrepo">
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.slisson.mps.pluginrepo#8198635589146411658" depends="java.compile.de.slisson.mps.pluginrepo, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.slisson.mps.pluginrepo/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.slisson.mps.pluginrepo#8198635589146411658" />
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.pluginrepo#8198635589146411658" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.slisson.mps.pluginrepo/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.pluginrepo" />
+        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
+        <fileset file="${artifacts.IDEA}/lib/jdom.jar" />
+        <fileset file="${artifacts.IDEA}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.IDEA}/lib/trove4j.jar" />
+        <fileset file="${artifacts.IDEA}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.IDEA}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
+        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.pluginrepo#8198635589146411658">
+      <fileset dir="${basedir}/languages/de.slisson.mps.pluginrepo/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${basedir}/mps-boolean-editor/languages/de.itemis.mps.editor.bool/source_gen" />
     <delete dir="${basedir}/mps-boolean-editor/solutions/de.itemis.mps.editor.bool.runtime/source_gen" />
@@ -5074,6 +5233,7 @@
     <delete dir="${basedir}/languages/de.itemis.mps.tooltips/source_gen" />
     <delete dir="${basedir}/solutions/de.slisson.mps.all.build/source_gen" />
     <delete dir="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor.hints/source_gen" />
+    <delete dir="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen" />
     <delete dir="${basedir}/mps-hacks/languages/de.slisson.mps.reflection/source_gen" />
     <delete dir="${basedir}/mps-hacks/solutions/de.slisson.mps.reflection.runtime/source_gen" />
     <delete dir="${basedir}/mps-richtext/languages/de.slisson.richtext.customcell/source_gen" />
@@ -5103,6 +5263,7 @@
     <delete dir="${basedir}/mps-multiline/languages/multiline/generator/source_gen" />
     <delete dir="${basedir}/mps-multiline/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" />
     <delete dir="${basedir}/mps-hacks/solutions/de.slisson.mps.hacks.editor/source_gen" />
+    <delete dir="${basedir}/languages/de.slisson.mps.pluginrepo/generator/source_gen" />
     <delete dir="${basedir}/mps-hacks/languages/de.slisson.mps.reflection/generator/source_gen" />
     <delete dir="${basedir}/mps-richtext/languages/de.slisson.richtext.customcell/generator/source_gen" />
     <delete dir="${basedir}/languages/de.slisson.mps.structurecheck/source_gen" />

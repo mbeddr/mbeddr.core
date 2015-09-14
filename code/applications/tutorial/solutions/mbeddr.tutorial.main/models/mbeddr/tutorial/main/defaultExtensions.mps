@@ -7,6 +7,7 @@
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="-1" />
+    <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
@@ -145,6 +146,11 @@
         <property id="6638119994895244605" name="unwindingAssertions" index="1cekJa" />
         <property id="6638119994895244604" name="unwindingDepth" index="1cekJb" />
         <reference id="6638119994895244607" name="verificationEntryPoint" index="1cekJ8" />
+      </concept>
+    </language>
+    <language id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites">
+      <concept id="1259468517902790203" name="com.mbeddr.mpsutil.favourites.structure.FavouritesAnnotation" flags="ng" index="2Y6aBa">
+        <property id="1259468517902790204" name="category" index="2Y6aBd" />
       </concept>
     </language>
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
@@ -2962,6 +2968,9 @@
         </node>
       </node>
     </node>
+    <node concept="2Y6aBa" id="FniR$CkWVg" role="lGtFl">
+      <property role="2Y6aBd" value="C Extensions" />
+    </node>
   </node>
   <node concept="N3F5e" id="1w5Xuj1QYPN">
     <property role="TrG5h" value="Components" />
@@ -5351,6 +5360,9 @@
     </node>
     <node concept="3GEVxB" id="1VMOGozCjSR" role="2OODSX">
       <ref role="3GEb4d" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
+    </node>
+    <node concept="2Y6aBa" id="FniR$CkHZp" role="lGtFl">
+      <property role="2Y6aBd" value="C Extensions" />
     </node>
   </node>
   <node concept="N3F5e" id="4usdeMNVnYi">
@@ -8090,6 +8102,9 @@
     </node>
     <node concept="3GEVxB" id="1VMOGozC6r_" role="2OODSX">
       <ref role="3GEb4d" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
+    </node>
+    <node concept="2Y6aBa" id="FniR$Cl80t" role="lGtFl">
+      <property role="2Y6aBd" value="C Extensions" />
     </node>
   </node>
   <node concept="N3F5e" id="4usdeMNVog3">
@@ -10861,6 +10876,9 @@
     <node concept="3GEVxB" id="1VMOGozC6r6" role="2OODSX">
       <ref role="3GEb4d" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
     </node>
+    <node concept="2Y6aBa" id="FniR$CleAP" role="lGtFl">
+      <property role="2Y6aBd" value="PLE" />
+    </node>
   </node>
   <node concept="Idr$i" id="4I37X0YSE77">
     <property role="3GE5qa" value="config" />
@@ -11594,6 +11612,9 @@
     <node concept="2dvl_R" id="4KbglN_5LLZ" role="lGtFl">
       <ref role="2dvl_Q" node="4I37X0YSZr3" resolve="FlightProcessor" />
       <ref role="AiAcg" node="4I37X0YSZtj" resolve="cfgNullifyMaxAt200" />
+    </node>
+    <node concept="2Y6aBa" id="FniR$ClJLP" role="lGtFl">
+      <property role="2Y6aBd" value="PLE" />
     </node>
   </node>
   <node concept="N3F5e" id="5NYlgF0xW$c">
@@ -14674,6 +14695,9 @@
     </node>
     <node concept="2NXPZ9" id="7kmhBx3QJ$l" role="N3F5h">
       <property role="TrG5h" value="empty_1437758104238_39" />
+    </node>
+    <node concept="2Y6aBa" id="FniR$Cl1nk" role="lGtFl">
+      <property role="2Y6aBd" value="C Extensions" />
     </node>
   </node>
 </model>

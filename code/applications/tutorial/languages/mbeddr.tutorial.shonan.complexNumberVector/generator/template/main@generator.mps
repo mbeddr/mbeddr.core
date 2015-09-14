@@ -31,10 +31,10 @@
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="k70c" ref="r:122f5d34-6e32-4486-bf8d-4ad324aa3b1d(mbeddr.tutorial.shonan.complexNumberVector.structure)" />
-    <import index="9w0q" ref="r:53b3818c-04f2-432f-b16a-77fd1bc76004(mbeddr.tutorial.shonan.complexNumberVector.rt)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="9w0q" ref="r:53b3818c-04f2-432f-b16a-77fd1bc76004(mbeddr.tutorial.shonan.complexNumberVector.rt)" implicit="true" />
     <import index="c1zq" ref="r:a67b2d4b-eeac-43d0-8303-b0828f1b7a0f(mbeddr.tutorial.shonan.complexNumberVector.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">

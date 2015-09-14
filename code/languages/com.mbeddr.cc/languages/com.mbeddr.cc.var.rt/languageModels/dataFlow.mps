@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="yvrq" ref="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="k7f5" ref="r:663fc33a-b682-4927-800b-ea7c66e720f0(com.mbeddr.cc.var.rt.behavior)" />
   </imports>
   <registry>
@@ -187,7 +187,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="50VOb6Khs23" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                       <node concept="37vLTw" id="2AZbPfMaNvR" role="37wK5m">
                         <ref role="3cqZAo" node="50VOb6Khs2_" resolve="i" />
                       </node>
@@ -223,7 +223,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="50VOb6Khs2j" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>

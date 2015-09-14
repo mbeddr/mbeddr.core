@@ -93,7 +93,7 @@
           <property role="3F0ifm" value="show SectionIndices:" />
         </node>
         <node concept="3F0A7n" id="3JErwPFIqFD" role="3EZMnx">
-          <ref role="1NtTu8" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+          <ref role="1NtTu8" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
         </node>
         <node concept="2iRfu4" id="3JErwPFIqFE" role="2iSdaV" />
       </node>
@@ -105,7 +105,7 @@
           <property role="3F0ifm" value="show SectionIndex icons:" />
         </node>
         <node concept="3F0A7n" id="3JErwPFK_F1" role="3EZMnx">
-          <ref role="1NtTu8" to="yv4j:3JErwPFIqFg" resolve="showBookmarkIcons" />
+          <ref role="1NtTu8" to="yv4j:3JErwPFIqFg" resolve="showSectionIndexIcons" />
         </node>
         <node concept="2iRfu4" id="3JErwPFK_F2" role="2iSdaV" />
       </node>
@@ -117,7 +117,7 @@
           <property role="3F0ifm" value="SectionIndex panel width:" />
         </node>
         <node concept="3F0A7n" id="3JErwPFK_Gv" role="3EZMnx">
-          <ref role="1NtTu8" to="yv4j:3JErwPFIqFj" resolve="bookmarkPanelWidth" />
+          <ref role="1NtTu8" to="yv4j:3JErwPFIqFj" resolve="SectionIndexPanelWidth" />
         </node>
         <node concept="2iRfu4" id="3JErwPFK_Gw" role="2iSdaV" />
       </node>

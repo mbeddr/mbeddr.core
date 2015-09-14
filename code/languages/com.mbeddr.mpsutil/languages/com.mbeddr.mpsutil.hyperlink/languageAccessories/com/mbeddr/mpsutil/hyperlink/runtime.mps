@@ -5,10 +5,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ajxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
-    <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -150,12 +150,12 @@
       <property role="TrG5h" value="LOG" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="5A_Zlt6y2HF" role="1tU5fm">
-        <ref role="3uigEE" to="ajxo:~Logger" resolve="Logger" />
+        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
       </node>
       <node concept="3Tm6S6" id="5A_Zlt6y2Gw" role="1B3o_S" />
       <node concept="2YIFZM" id="5A_Zlt6y337" role="33vP2m">
-        <ref role="37wK5l" to="ajxo:~Logger.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
-        <ref role="1Pybhc" to="ajxo:~Logger" resolve="Logger" />
+        <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+        <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
         <node concept="3VsKOn" id="5A_Zlt6y34B" role="37wK5m">
           <ref role="3VsUkX" node="5A_Zlt6xR7j" resolve="HyperlinkUtil" />
         </node>
@@ -198,17 +198,17 @@
               <node concept="3cpWsn" id="3DAECxFHCVy" role="3cpWs9">
                 <property role="TrG5h" value="d" />
                 <node concept="3uibUv" id="3DAECxFHCVz" role="1tU5fm">
-                  <ref role="3uigEE" to="1t7x:~Desktop" resolve="Desktop" />
+                  <ref role="3uigEE" to="z60i:~Desktop" resolve="Desktop" />
                 </node>
                 <node concept="3K4zz7" id="3DAECxFHCV$" role="33vP2m">
                   <node concept="2YIFZM" id="3DAECxFHCV_" role="3K4E3e">
-                    <ref role="1Pybhc" to="1t7x:~Desktop" resolve="Desktop" />
-                    <ref role="37wK5l" to="1t7x:~Desktop.getDesktop():java.awt.Desktop" resolve="getDesktop" />
+                    <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop():java.awt.Desktop" resolve="getDesktop" />
                   </node>
                   <node concept="10Nm6u" id="3DAECxFHCVA" role="3K4GZi" />
                   <node concept="2YIFZM" id="3DAECxFHCVB" role="3K4Cdx">
-                    <ref role="1Pybhc" to="1t7x:~Desktop" resolve="Desktop" />
-                    <ref role="37wK5l" to="1t7x:~Desktop.isDesktopSupported():boolean" resolve="isDesktopSupported" />
+                    <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported():boolean" resolve="isDesktopSupported" />
                   </node>
                 </node>
               </node>
@@ -223,10 +223,10 @@
                           <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
                         </node>
                         <node concept="liA8E" id="58xH_U7jkJc" role="2OqNvi">
-                          <ref role="37wK5l" to="1t7x:~Desktop.browse(java.net.URI):void" resolve="browse" />
+                          <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI):void" resolve="browse" />
                           <node concept="2ShNRf" id="58xH_U7jkJd" role="37wK5m">
                             <node concept="1pGfFk" id="58xH_U7jkJe" role="2ShVmc">
-                              <ref role="37wK5l" to="22fg:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
+                              <ref role="37wK5l" to="zf81:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
                               <node concept="37vLTw" id="58xH_U7jkJf" role="37wK5m">
                                 <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                               </node>
@@ -242,7 +242,7 @@
                       <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                     </node>
                     <node concept="liA8E" id="58xH_U7jiQN" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                       <node concept="Xl_RD" id="58xH_U7jiRO" role="37wK5m">
                         <property role="Xl_RC" value="mailto:" />
                       </node>
@@ -274,7 +274,7 @@
                           <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                         </node>
                         <node concept="liA8E" id="gKFhvEOMdQ" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                           <node concept="Xl_RD" id="gKFhvEOMgg" role="37wK5m">
                             <property role="Xl_RC" value="https://" />
                           </node>
@@ -287,7 +287,7 @@
                           <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                         </node>
                         <node concept="liA8E" id="50N_nP$es9O" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                           <node concept="Xl_RD" id="50N_nP$es9P" role="37wK5m">
                             <property role="Xl_RC" value="http://" />
                           </node>
@@ -302,10 +302,10 @@
                       <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
                     </node>
                     <node concept="liA8E" id="3DAECxFHCVH" role="2OqNvi">
-                      <ref role="37wK5l" to="1t7x:~Desktop.browse(java.net.URI):void" resolve="browse" />
+                      <ref role="37wK5l" to="z60i:~Desktop.browse(java.net.URI):void" resolve="browse" />
                       <node concept="2ShNRf" id="50N_nP$dPHu" role="37wK5m">
                         <node concept="1pGfFk" id="50N_nP$e6K5" role="2ShVmc">
-                          <ref role="37wK5l" to="22fg:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
+                          <ref role="37wK5l" to="zf81:~URI.&lt;init&gt;(java.lang.String)" resolve="URI" />
                           <node concept="37vLTw" id="5A_Zlt6y4_V" role="37wK5m">
                             <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                           </node>
@@ -327,7 +327,7 @@
             <node concept="3cpWsn" id="3DAECxFHCVM" role="TDEfY">
               <property role="TrG5h" value="ex" />
               <node concept="3uibUv" id="3DAECxFHCVN" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
             <node concept="3clFbS" id="3DAECxFHCVO" role="TDEfX">
@@ -337,7 +337,7 @@
                     <ref role="3cqZAo" node="5A_Zlt6y3bR" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="5A_Zlt6y5au" role="2OqNvi">
-                    <ref role="37wK5l" to="ajxo:~Category.error(java.lang.Object,java.lang.Throwable):void" resolve="error" />
+                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable):void" resolve="error" />
                     <node concept="3cpWs3" id="5A_Zlt6y6H4" role="37wK5m">
                       <node concept="37vLTw" id="5A_Zlt6y6Hp" role="3uHU7w">
                         <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />

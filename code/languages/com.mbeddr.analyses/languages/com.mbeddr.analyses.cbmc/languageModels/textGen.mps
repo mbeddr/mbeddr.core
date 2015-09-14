@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -121,8 +121,8 @@
         <node concept="lc7rE" id="5E1$geGaGoX" role="3cqZAp">
           <node concept="l9hG8" id="5E1$geGaGqf" role="lcghm">
             <node concept="2YIFZM" id="5E1$geGaGWR" role="lb14g">
-              <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="5E1$geGaGsV" role="37wK5m">
                 <node concept="117lpO" id="5E1$geGaGru" role="2Oq$k0" />
                 <node concept="3TrcHB" id="5E1$geGaG_I" role="2OqNvi">
@@ -176,8 +176,8 @@
         <node concept="lc7rE" id="4DO4XHFbf30" role="3cqZAp">
           <node concept="l9hG8" id="4DO4XHFbf31" role="lcghm">
             <node concept="2YIFZM" id="4DO4XHFbf32" role="lb14g">
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-              <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
               <node concept="2OqwBi" id="4DO4XHFbf33" role="37wK5m">
                 <node concept="117lpO" id="4DO4XHFbf34" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4DO4XHFbfwM" role="2OqNvi">
@@ -195,8 +195,8 @@
         <node concept="lc7rE" id="4DO4XHFbfEM" role="3cqZAp">
           <node concept="l9hG8" id="4DO4XHFbfEN" role="lcghm">
             <node concept="2YIFZM" id="4DO4XHFbfEO" role="lb14g">
-              <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="4DO4XHFbfEP" role="37wK5m">
                 <node concept="117lpO" id="4DO4XHFbfEQ" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4DO4XHFbgpL" role="2OqNvi">

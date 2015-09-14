@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/diagram/devkits/de.itemis.mps.editor.diagram.devkit.devkit" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.collapsible/de.itemis.mps.editor.collapsible.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.diagram.demo.activity/de.itemis.mps.editor.diagram.demo.activity.mpl" folder="diagram" />
@@ -27,6 +30,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="selection" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="tooltips" />
       <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.editor.tabs/de.slisson.mps.editor.tabs.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.structurecheck/de.slisson.mps.structurecheck.mpl" folder="structurecheck" />
       <modulePath path="$PROJECT_DIR$/mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="apache-commons" />
       <modulePath path="$PROJECT_DIR$/mps-boolean-editor/languages/de.itemis.mps.editor.bool.demolang/de.itemis.mps.editor.bool.demolang.mpl" folder="bool" />
@@ -68,6 +72,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.dropdown.sandbox/de.itemis.mps.editor.dropdown.sandbox.msd" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="selection" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="tooltips" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build.repo/de.slisson.mps.all.build.repo.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.tabs.runtime/de.slisson.mps.editor.tabs.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.structurecheck.runtime/de.slisson.mps.structurecheck.runtime.msd" folder="structurecheck" />

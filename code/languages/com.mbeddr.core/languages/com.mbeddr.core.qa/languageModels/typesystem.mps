@@ -6,11 +6,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="vsqj" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="ene9" ref="r:2681561e-1819-4f50-88f9-9f55fdc1c6ea(com.mbeddr.core.qa.behavior)" />
     <import index="79wq" ref="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -148,7 +148,7 @@
           <property role="TrG5h" value="allLanguages" />
           <node concept="A3Dl8" id="jipk886TVh" role="1tU5fm">
             <node concept="3uibUv" id="jipk886TVi" role="A3Ik2">
-              <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+              <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
             </node>
           </node>
           <node concept="2YIFZM" id="6Xk4NhNpunQ" role="33vP2m">
@@ -176,7 +176,7 @@
                         <ref role="3cqZAo" node="3_hE8hnXdUu" resolve="it" />
                       </node>
                       <node concept="liA8E" id="3_hE8hnXdUt" role="2OqNvi">
-                        <ref role="37wK5l" to="vsqj:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                        <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                       </node>
                     </node>
                   </node>
@@ -226,7 +226,7 @@
                       <ref role="3cqZAo" node="3_hE8hnX9Xl" resolve="langName" />
                     </node>
                     <node concept="liA8E" id="5r_qjlFwNC" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                       <node concept="3cmrfG" id="5r_qjlFwTX" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -239,7 +239,7 @@
                             <ref role="3cqZAo" node="3_hE8hnX9Xl" resolve="langName" />
                           </node>
                           <node concept="liA8E" id="5r_qjlFyb3" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                            <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                           </node>
                         </node>
                       </node>
@@ -256,7 +256,7 @@
                 <ref role="3cqZAo" node="3_hE8hnX9Xl" resolve="langName" />
               </node>
               <node concept="liA8E" id="5r_qjlFvx5" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
                 <node concept="Xl_RD" id="5r_qjlFvy2" role="37wK5m">
                   <property role="Xl_RC" value="*" />
                 </node>
@@ -298,7 +298,7 @@
                             <ref role="3cqZAo" node="6Xk4NhOCkPJ" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6Xk4NhOCmy7" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                            <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                             <node concept="37vLTw" id="6Xk4NhOCmGA" role="37wK5m">
                               <ref role="3cqZAo" node="3_hE8hnX9Xl" resolve="langName" />
                             </node>

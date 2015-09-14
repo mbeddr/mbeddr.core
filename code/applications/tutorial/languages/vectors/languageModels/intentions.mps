@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="vj37" ref="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -212,7 +212,7 @@
           <node concept="2OqwBi" id="5TPCPz$cHLu" role="3clFbG">
             <node concept="1XNTG" id="5TPCPz$cHL9" role="2Oq$k0" />
             <node concept="liA8E" id="5TPCPz$cHU_" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
               <node concept="2OqwBi" id="5TPCPz$cHXx" role="37wK5m">
                 <node concept="2OqwBi" id="5TPCPz$cHX5" role="2Oq$k0">
                   <node concept="37vLTw" id="6Jhc0CXtUXG" role="2Oq$k0">

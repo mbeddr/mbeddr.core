@@ -8,7 +8,7 @@
   <imports>
     <import index="9btd" ref="r:932dea83-34df-4398-8397-98f20a1f45f8(com.mbeddr.core.dataflow.test.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="flgp" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/jetbrains.mps.lang.dataFlow.framework.instructions@java_stub)" />
+    <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -208,7 +208,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z6EbZ" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z6Ecf" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>
@@ -267,11 +267,11 @@
           <node concept="3cpWsn" id="3JNYr4Z78wm" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
             <node concept="3uibUv" id="3JNYr4Z795f" role="1tU5fm">
-              <ref role="3uigEE" to="flgp:~NopInstruction" resolve="NopInstruction" />
+              <ref role="3uigEE" to="dau9:~NopInstruction" resolve="NopInstruction" />
             </node>
             <node concept="2ShNRf" id="3JNYr4Z78wo" role="33vP2m">
               <node concept="1pGfFk" id="3JNYr4Z78wp" role="2ShVmc">
-                <ref role="37wK5l" to="flgp:~NopInstruction.&lt;init&gt;()" resolve="NopInstruction" />
+                <ref role="37wK5l" to="dau9:~NopInstruction.&lt;init&gt;()" resolve="NopInstruction" />
               </node>
             </node>
           </node>
@@ -293,7 +293,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z78wD" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z78wE" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>
@@ -310,7 +310,7 @@
       <node concept="3Tm1VV" id="3JNYr4Z5Sty" role="1B3o_S" />
       <node concept="_YKpA" id="3JNYr4Z5Vrg" role="3clF45">
         <node concept="3uibUv" id="3JNYr4Z5VWh" role="_ZDj9">
-          <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+          <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
         </node>
       </node>
       <node concept="3clFbS" id="3JNYr4Z5St$" role="3clF47">
@@ -319,13 +319,13 @@
             <property role="TrG5h" value="instructions" />
             <node concept="_YKpA" id="3JNYr4Z5VWW" role="1tU5fm">
               <node concept="3uibUv" id="3JNYr4Z5VZ_" role="_ZDj9">
-                <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+                <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
               </node>
             </node>
             <node concept="2ShNRf" id="3JNYr4Z5W6V" role="33vP2m">
               <node concept="Tc6Ow" id="3JNYr4Z5Wao" role="2ShVmc">
                 <node concept="3uibUv" id="3JNYr4Z5Wou" role="HW$YZ">
-                  <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+                  <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
                 </node>
               </node>
             </node>
@@ -394,11 +394,11 @@
           <node concept="3cpWsn" id="3JNYr4Z6Rnq" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
             <node concept="3uibUv" id="3JNYr4Z6UgX" role="1tU5fm">
-              <ref role="3uigEE" to="flgp:~JumpInstruction" resolve="JumpInstruction" />
+              <ref role="3uigEE" to="dau9:~JumpInstruction" resolve="JumpInstruction" />
             </node>
             <node concept="2ShNRf" id="3JNYr4Z76AI" role="33vP2m">
               <node concept="1pGfFk" id="3JNYr4Z76WK" role="2ShVmc">
-                <ref role="37wK5l" to="flgp:~JumpInstruction.&lt;init&gt;()" resolve="JumpInstruction" />
+                <ref role="37wK5l" to="dau9:~JumpInstruction.&lt;init&gt;()" resolve="JumpInstruction" />
               </node>
             </node>
           </node>
@@ -409,7 +409,7 @@
               <ref role="3cqZAo" node="3JNYr4Z6Rnq" resolve="instruction" />
             </node>
             <node concept="liA8E" id="3JNYr4Z6VFL" role="2OqNvi">
-              <ref role="37wK5l" to="flgp:~JumpInstruction.setJumpTo(int):void" resolve="setJumpTo" />
+              <ref role="37wK5l" to="dau9:~JumpInstruction.setJumpTo(int):void" resolve="setJumpTo" />
               <node concept="2OqwBi" id="3JNYr4Z6G4D" role="37wK5m">
                 <node concept="2OqwBi" id="3JNYr4Z6Ejw" role="2Oq$k0">
                   <node concept="13iPFW" id="3JNYr4Z6EeP" role="2Oq$k0" />
@@ -441,7 +441,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z6Xwb" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z6Xwc" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>
@@ -464,11 +464,11 @@
           <node concept="3cpWsn" id="3JNYr4Z77q_" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
             <node concept="3uibUv" id="3JNYr4Z77ZA" role="1tU5fm">
-              <ref role="3uigEE" to="flgp:~IfJumpInstruction" resolve="IfJumpInstruction" />
+              <ref role="3uigEE" to="dau9:~IfJumpInstruction" resolve="IfJumpInstruction" />
             </node>
             <node concept="2ShNRf" id="3JNYr4Z77qB" role="33vP2m">
               <node concept="1pGfFk" id="3JNYr4Z77qC" role="2ShVmc">
-                <ref role="37wK5l" to="flgp:~IfJumpInstruction.&lt;init&gt;()" resolve="IfJumpInstruction" />
+                <ref role="37wK5l" to="dau9:~IfJumpInstruction.&lt;init&gt;()" resolve="IfJumpInstruction" />
               </node>
             </node>
           </node>
@@ -479,7 +479,7 @@
               <ref role="3cqZAo" node="3JNYr4Z77q_" resolve="instruction" />
             </node>
             <node concept="liA8E" id="3JNYr4Z77qG" role="2OqNvi">
-              <ref role="37wK5l" to="flgp:~IfJumpInstruction.setJumpTo(int):void" resolve="setJumpTo" />
+              <ref role="37wK5l" to="dau9:~IfJumpInstruction.setJumpTo(int):void" resolve="setJumpTo" />
               <node concept="2OqwBi" id="3JNYr4Z77qH" role="37wK5m">
                 <node concept="2OqwBi" id="3JNYr4Z77qI" role="2Oq$k0">
                   <node concept="13iPFW" id="3JNYr4Z77qJ" role="2Oq$k0" />
@@ -511,7 +511,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z77qS" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z77qT" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>
@@ -534,11 +534,11 @@
           <node concept="3cpWsn" id="3JNYr4Z79jj" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
             <node concept="3uibUv" id="3JNYr4Z79vD" role="1tU5fm">
-              <ref role="3uigEE" to="flgp:~RetInstruction" resolve="RetInstruction" />
+              <ref role="3uigEE" to="dau9:~RetInstruction" resolve="RetInstruction" />
             </node>
             <node concept="2ShNRf" id="3JNYr4Z79jl" role="33vP2m">
               <node concept="1pGfFk" id="3JNYr4Z79jm" role="2ShVmc">
-                <ref role="37wK5l" to="flgp:~RetInstruction.&lt;init&gt;()" resolve="RetInstruction" />
+                <ref role="37wK5l" to="dau9:~RetInstruction.&lt;init&gt;()" resolve="RetInstruction" />
               </node>
             </node>
           </node>
@@ -560,7 +560,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z79jt" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z79ju" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>
@@ -583,11 +583,11 @@
           <node concept="3cpWsn" id="3JNYr4Z79zr" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
             <node concept="3uibUv" id="3JNYr4Z7lwj" role="1tU5fm">
-              <ref role="3uigEE" to="flgp:~ReadInstruction" resolve="ReadInstruction" />
+              <ref role="3uigEE" to="dau9:~ReadInstruction" resolve="ReadInstruction" />
             </node>
             <node concept="2ShNRf" id="3JNYr4Z79zt" role="33vP2m">
               <node concept="1pGfFk" id="3JNYr4Z79zu" role="2ShVmc">
-                <ref role="37wK5l" to="flgp:~ReadInstruction.&lt;init&gt;(java.lang.Object)" resolve="ReadInstruction" />
+                <ref role="37wK5l" to="dau9:~ReadInstruction.&lt;init&gt;(java.lang.Object)" resolve="ReadInstruction" />
                 <node concept="2OqwBi" id="3JNYr4Z7k9$" role="37wK5m">
                   <node concept="2OqwBi" id="3JNYr4Z7hG7" role="2Oq$k0">
                     <node concept="13iPFW" id="3JNYr4Z7hrb" role="2Oq$k0" />
@@ -620,7 +620,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z79z_" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z79zA" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>
@@ -643,11 +643,11 @@
           <node concept="3cpWsn" id="3JNYr4Z7lJr" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
             <node concept="3uibUv" id="3JNYr4Z7lJs" role="1tU5fm">
-              <ref role="3uigEE" to="flgp:~ReadInstruction" resolve="ReadInstruction" />
+              <ref role="3uigEE" to="dau9:~ReadInstruction" resolve="ReadInstruction" />
             </node>
             <node concept="2ShNRf" id="3JNYr4Z7lJt" role="33vP2m">
               <node concept="1pGfFk" id="3JNYr4Z7lJu" role="2ShVmc">
-                <ref role="37wK5l" to="flgp:~ReadInstruction.&lt;init&gt;(java.lang.Object)" resolve="ReadInstruction" />
+                <ref role="37wK5l" to="dau9:~ReadInstruction.&lt;init&gt;(java.lang.Object)" resolve="ReadInstruction" />
                 <node concept="2OqwBi" id="3JNYr4Z7lJv" role="37wK5m">
                   <node concept="2OqwBi" id="3JNYr4Z7lJw" role="2Oq$k0">
                     <node concept="13iPFW" id="3JNYr4Z7lJx" role="2Oq$k0" />
@@ -680,7 +680,7 @@
         <property role="TrG5h" value="instructions" />
         <node concept="_YKpA" id="3JNYr4Z7lJE" role="1tU5fm">
           <node concept="3uibUv" id="3JNYr4Z7lJF" role="_ZDj9">
-            <ref role="3uigEE" to="flgp:~Instruction" resolve="Instruction" />
+            <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
           </node>
         </node>
       </node>

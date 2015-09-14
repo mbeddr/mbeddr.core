@@ -9,7 +9,6 @@
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -897,6 +896,18 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="6LsWDiKtjXt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="intPtrType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="6LsWDiKtjXD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uintPtrType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
+    </node>
     <node concept="1TJgyj" id="7FZLineUJnj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sizeTType" />
@@ -1485,6 +1496,20 @@
   </node>
   <node concept="PlHQZ" id="5y_zf_M4pZD">
     <property role="TrG5h" value="IRestrictConstAndVolatile" />
+  </node>
+  <node concept="1TIwiD" id="6LsWDiKtluA">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="UIntPtrT" />
+    <property role="34LRSv" value="uintptr_t" />
+    <property role="R4oN_" value="unsigned integer type that can safely store a pointer regardless of the platform capacity" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="6LsWDiKtfR7">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="IntPtrT" />
+    <property role="34LRSv" value="intptr_t" />
+    <property role="R4oN_" value="signed integer type that can safely store a pointer regardless of the platform capacity" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
   </node>
 </model>
 

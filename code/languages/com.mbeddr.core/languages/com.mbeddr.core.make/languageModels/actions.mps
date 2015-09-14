@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -175,7 +175,7 @@
                 <node concept="2OqwBi" id="2Vizpn2M_gk" role="3clFbG">
                   <node concept="ub8z3" id="2Vizpn2M_gg" role="2Oq$k0" />
                   <node concept="liA8E" id="2Vizpn2M_go" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                     <node concept="Xl_RD" id="RitA4ARabg" role="37wK5m">
                       <property role="Xl_RC" value="[a-zA-Z[_]][a-zA-Z0-9[_]]*" />
                     </node>

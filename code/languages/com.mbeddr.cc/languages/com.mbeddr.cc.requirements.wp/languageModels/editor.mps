@@ -10,7 +10,7 @@
   </languages>
   <imports>
     <import index="6pek" ref="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="qyz6" ref="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.mbeddr.cc.requirements.wp.behavior)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
@@ -204,7 +204,7 @@
       <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" index="2aMyGU">
+      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
         <property id="7122083600696909496" name="falseText" index="2aYyvO" />
         <property id="7122083600696906118" name="trueText" index="2aYyza" />
       </concept>
@@ -445,11 +445,11 @@
                 <node concept="3cpWsn" id="vRfru3oZc7" role="3cpWs9">
                   <property role="TrG5h" value="c" />
                   <node concept="3uibUv" id="vRfru3oZc8" role="1tU5fm">
-                    <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
                   </node>
                   <node concept="10M0yZ" id="vRfru3oZcb" role="33vP2m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.white" resolve="white" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
                   </node>
                 </node>
               </node>
@@ -979,11 +979,11 @@
       <property role="TrG5h" value="RED" />
       <node concept="3Tm1VV" id="2ka6MWOtShe" role="1B3o_S" />
       <node concept="3uibUv" id="2ka6MWOtQw9" role="1tU5fm">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="2ShNRf" id="2ka6MWOtQwb" role="33vP2m">
         <node concept="1pGfFk" id="2ka6MWOtSgr" role="2ShVmc">
-          <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
           <node concept="3cmrfG" id="2ka6MWOtSgs" role="37wK5m">
             <property role="3cmrfH" value="255" />
           </node>
@@ -1000,11 +1000,11 @@
       <property role="TrG5h" value="GREEN" />
       <node concept="3Tm1VV" id="2ka6MWOtShg" role="1B3o_S" />
       <node concept="3uibUv" id="2ka6MWOtShh" role="1tU5fm">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="2ShNRf" id="2ka6MWOtShi" role="33vP2m">
         <node concept="1pGfFk" id="2ka6MWOtShj" role="2ShVmc">
-          <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
           <node concept="3cmrfG" id="2ka6MWOtShk" role="37wK5m">
             <property role="3cmrfH" value="45" />
           </node>
@@ -1021,11 +1021,11 @@
       <property role="TrG5h" value="ORANGE" />
       <node concept="3Tm1VV" id="2ka6MWOtSho" role="1B3o_S" />
       <node concept="3uibUv" id="2ka6MWOtShp" role="1tU5fm">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="2ShNRf" id="2ka6MWOtShq" role="33vP2m">
         <node concept="1pGfFk" id="2ka6MWOtShr" role="2ShVmc">
-          <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
           <node concept="3cmrfG" id="2ka6MWOtShs" role="37wK5m">
             <property role="3cmrfH" value="237" />
           </node>
@@ -1042,11 +1042,11 @@
       <property role="TrG5h" value="BLUE" />
       <node concept="3Tm1VV" id="2ka6MWOtShw" role="1B3o_S" />
       <node concept="3uibUv" id="2ka6MWOtShx" role="1tU5fm">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="2ShNRf" id="2ka6MWOtShy" role="33vP2m">
         <node concept="1pGfFk" id="2ka6MWOtShz" role="2ShVmc">
-          <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
           <node concept="3cmrfG" id="2ka6MWOtSh$" role="37wK5m">
             <property role="3cmrfH" value="55" />
           </node>
@@ -1062,7 +1062,7 @@
     <node concept="2YIFZL" id="4kXQNJTeAoB" role="jymVt">
       <property role="TrG5h" value="wpColor" />
       <node concept="3uibUv" id="4kXQNJTeApY" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="4kXQNJTeAoD" role="1B3o_S" />
       <node concept="3clFbS" id="4kXQNJTeAoE" role="3clF47">
@@ -1124,7 +1124,7 @@
         <node concept="3clFbF" id="4kXQNJTe$8w" role="3cqZAp">
           <node concept="2ShNRf" id="4kXQNJTe$8x" role="3clFbG">
             <node concept="1pGfFk" id="4kXQNJTeAlz" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
               <node concept="3cpWsa" id="4kXQNJTeAl$" role="37wK5m">
                 <ref role="3cqZAo" node="4kXQNJTe$7g" resolve="c" />
               </node>

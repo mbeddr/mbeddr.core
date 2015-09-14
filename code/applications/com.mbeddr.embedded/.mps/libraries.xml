@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="importer">
+          <value>
+            <Library>
+              <option name="name" value="importer" />
+              <option name="path" value="${mbeddr.importer.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="plugins">
+          <value>
+            <Library>
+              <option name="name" value="plugins" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

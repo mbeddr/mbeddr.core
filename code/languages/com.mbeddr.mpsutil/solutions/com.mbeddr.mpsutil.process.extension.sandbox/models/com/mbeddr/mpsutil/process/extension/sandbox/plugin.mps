@@ -11,10 +11,10 @@
   </languages>
   <imports>
     <import index="uis2" ref="r:9aef0d3c-87c9-4ce3-ad67-def9817c1ab4(com.mbeddr.mpsutil.process.sandbox.plugin)" />
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="oj8w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing.text(JDK/javax.swing.text@java_stub)" implicit="true" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" implicit="true" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -140,7 +140,7 @@
         <node concept="CxUut" id="7YSjiE86mZB" role="CxOK9">
           <property role="TrG5h" value="surname" />
           <node concept="3uibUv" id="7YSjiE87c_G" role="1tU5fm">
-            <ref role="3uigEE" to="dbrf:~JTextField" resolve="JTextField" />
+            <ref role="3uigEE" to="dxuu:~JTextField" resolve="JTextField" />
           </node>
         </node>
         <node concept="UJns9" id="7YSjiE86mZs" role="UIuLL">
@@ -149,7 +149,7 @@
               <node concept="37vLTI" id="1J_CuVjhm3e" role="3clFbG">
                 <node concept="2ShNRf" id="1J_CuVjhm94" role="37vLTx">
                   <node concept="1pGfFk" id="1J_CuVjhm3V" role="2ShVmc">
-                    <ref role="37wK5l" to="dbrf:~JTextField.&lt;init&gt;()" resolve="JTextField" />
+                    <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;()" resolve="JTextField" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="1J_CuVjhlNf" role="37vLTJ">
@@ -164,11 +164,11 @@
               <node concept="3cpWsn" id="rF8Sb8FG$M" role="3cpWs9">
                 <property role="TrG5h" value="label" />
                 <node concept="3uibUv" id="rF8Sb8FG$K" role="1tU5fm">
-                  <ref role="3uigEE" to="dbrf:~JLabel" resolve="JLabel" />
+                  <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                 </node>
                 <node concept="2ShNRf" id="rF8Sb8FG$N" role="33vP2m">
                   <node concept="1pGfFk" id="rF8Sb8FG$O" role="2ShVmc">
-                    <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                    <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                     <node concept="Xl_RD" id="rF8Sb8FG$P" role="37wK5m">
                       <property role="Xl_RC" value="The Name" />
                     </node>
@@ -182,7 +182,7 @@
                   <ref role="3cqZAo" node="rF8Sb8FG$M" resolve="label" />
                 </node>
                 <node concept="liA8E" id="1J_CuVjhyoO" role="2OqNvi">
-                  <ref role="37wK5l" to="dbrf:~JLabel.setLabelFor(java.awt.Component):void" resolve="setLabelFor" />
+                  <ref role="37wK5l" to="dxuu:~JLabel.setLabelFor(java.awt.Component):void" resolve="setLabelFor" />
                   <node concept="2OqwBi" id="1J_CuVjhywc" role="37wK5m">
                     <node concept="2WthIp" id="1J_CuVjhyvJ" role="2Oq$k0" />
                     <node concept="C_CzU" id="7YSjiE87dfI" role="2OqNvi">
@@ -196,7 +196,7 @@
               <node concept="2OqwBi" id="rF8Sb8FESQ" role="3clFbG">
                 <node concept="29H0B1" id="rF8Sb8FEGy" role="2Oq$k0" />
                 <node concept="liA8E" id="rF8Sb8FGgq" role="2OqNvi">
-                  <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
                   <node concept="37vLTw" id="rF8Sb8FGDq" role="37wK5m">
                     <ref role="3cqZAo" node="rF8Sb8FG$M" resolve="label" />
                   </node>
@@ -207,7 +207,7 @@
               <node concept="2OqwBi" id="1J_CuVjhzuP" role="3clFbG">
                 <node concept="29H0B1" id="1J_CuVjhzjj" role="2Oq$k0" />
                 <node concept="liA8E" id="1J_CuVjhAaO" role="2OqNvi">
-                  <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
                   <node concept="2OqwBi" id="1J_CuVjhAh2" role="37wK5m">
                     <node concept="2WthIp" id="1J_CuVjhAbv" role="2Oq$k0" />
                     <node concept="C_CzU" id="7YSjiE87dmz" role="2OqNvi">
@@ -230,7 +230,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7YSjiE87idT" role="2OqNvi">
-                  <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+                  <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
                   <node concept="3cpWs3" id="7YSjiE87isy" role="37wK5m">
                     <node concept="2OqwBi" id="7YSjiE8b06L" role="3uHU7w">
                       <node concept="CSfHN" id="7YSjiE8b023" role="2Oq$k0">
@@ -255,8 +255,8 @@
               <node concept="3clFbS" id="7YSjiE8b0x$" role="SfCbr">
                 <node concept="3clFbF" id="7YSjiE8b0wd" role="3cqZAp">
                   <node concept="2YIFZM" id="7YSjiE8b0wo" role="3clFbG">
-                    <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
-                    <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+                    <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                    <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
                     <node concept="3cmrfG" id="7YSjiE8b0w_" role="37wK5m">
                       <property role="3cmrfH" value="1000" />
                     </node>
@@ -268,7 +268,7 @@
                 <node concept="3cpWsn" id="7YSjiE8b0xE" role="TDEfY">
                   <property role="TrG5h" value="e" />
                   <node concept="3uibUv" id="7YSjiE8b0x_" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+                    <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
                   </node>
                 </node>
               </node>
@@ -289,10 +289,10 @@
               <node concept="2OqwBi" id="7YSjiE8b0Z$" role="3clFbG">
                 <node concept="29H0B1" id="7YSjiE8b0Q6" role="2Oq$k0" />
                 <node concept="liA8E" id="7YSjiE8b3MP" role="2OqNvi">
-                  <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
                   <node concept="2ShNRf" id="7YSjiE8b3Nk" role="37wK5m">
                     <node concept="1pGfFk" id="7YSjiE8b4GQ" role="2ShVmc">
-                      <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                      <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                       <node concept="Xl_RD" id="7YSjiE8b4IR" role="37wK5m">
                         <property role="Xl_RC" value="The is a before extension" />
                       </node>

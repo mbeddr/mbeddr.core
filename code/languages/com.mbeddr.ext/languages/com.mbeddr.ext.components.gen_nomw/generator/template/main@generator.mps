@@ -9,9 +9,9 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="b67a6ca0-735e-4903-b238-4b525bddf96a" name="com.mbeddr.mpsutil.genutil" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -217,6 +217,12 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
+      <concept id="5485104033529954230" name="com.mbeddr.core.statements.structure.TextAttributePrefix" flags="ng" index="3IwBUS">
+        <property id="5485104033529954231" name="text" index="3IwBUT" />
+      </concept>
+      <concept id="605413736672002878" name="com.mbeddr.core.statements.structure.IHasPrefixes" flags="ng" index="3O7dYF">
+        <child id="605413736672002881" name="prefixes" index="3O7dZk" />
+      </concept>
       <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
         <child id="8624890525768479139" name="textblock" index="3SJzmv" />
       </concept>
@@ -939,6 +945,23 @@
       <node concept="N3Fnx" id="71UKpntpGgK" role="N3F5h">
         <property role="TrG5h" value="runnableName" />
         <property role="2OOxQR" value="true" />
+        <node concept="3IwBUS" id="7e09zBHTFSi" role="3O7dZk">
+          <property role="3IwBUT" value="MOD" />
+          <node concept="2b32R4" id="7e09zBHTGSj" role="lGtFl">
+            <node concept="3JmXsc" id="7e09zBHTGSm" role="2P8S$">
+              <node concept="3clFbS" id="7e09zBHTGSn" role="2VODD2">
+                <node concept="3clFbF" id="7e09zBHTGSt" role="3cqZAp">
+                  <node concept="2OqwBi" id="7e09zBHTGSo" role="3clFbG">
+                    <node concept="3Tsc0h" id="7e09zBHTGSr" role="2OqNvi">
+                      <ref role="3TtcxE" to="c4fa:xAR9nWuwd1" />
+                    </node>
+                    <node concept="30H73N" id="7e09zBHTGSs" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3XIRFW" id="71UKpntpGgL" role="3XIRFX">
           <node concept="3XIRlf" id="675yyiz2bgu" role="3XIRFZ">
             <property role="TrG5h" value="cid" />
@@ -14081,17 +14104,17 @@
                       </node>
                       <node concept="3clFbF" id="29JE8qNw3UT" role="3cqZAp">
                         <node concept="2OqwBi" id="29JE8qNw3VF" role="3clFbG">
+                          <node concept="v3k3i" id="6jvaevO$GP7" role="2OqNvi">
+                            <node concept="chp4Y" id="6jvaevO$GP8" role="v3oSu">
+                              <ref role="cht4Q" to="v7ag:29JE8qNvJxx" resolve="ExternalStorageInitializer" />
+                            </node>
+                          </node>
                           <node concept="2OqwBi" id="29JE8qNw3Vf" role="2Oq$k0">
                             <node concept="3cpWsa" id="29JE8qNw3UU" role="2Oq$k0">
                               <ref role="3cqZAo" node="29JE8qNw3UM" resolve="instance" />
                             </node>
                             <node concept="3Tsc0h" id="29JE8qNw3Vl" role="2OqNvi">
                               <ref role="3TtcxE" to="v7ag:F_QT7XsuBZ" />
-                            </node>
-                          </node>
-                          <node concept="v3k3i" id="6jvaevO$GP7" role="2OqNvi">
-                            <node concept="chp4Y" id="6jvaevO$GP8" role="v3oSu">
-                              <ref role="cht4Q" to="v7ag:29JE8qNvJxx" resolve="ExternalStorageInitializer" />
                             </node>
                           </node>
                         </node>
@@ -20836,6 +20859,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3aamgX" id="1EZSCJhfDuM" role="3acgRq">
+      <ref role="30HIoZ" to="p7vm:1OLGDVff_yJ" resolve="NoMwComponentsGenStrategy" />
+      <node concept="b5Tf3" id="1EZSCJhg1qh" role="1lVwrX" />
     </node>
     <node concept="30QchW" id="wOd6nl4XG1" role="30SoJX">
       <ref role="30HIoZ" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />

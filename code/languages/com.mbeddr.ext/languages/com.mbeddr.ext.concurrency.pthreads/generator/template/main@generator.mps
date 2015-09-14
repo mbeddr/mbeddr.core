@@ -493,7 +493,7 @@
         <child id="562973772910893431" name="body" index="3JTKNu" />
         <child id="562973772911107592" name="specifiers" index="3JU$Ix" />
       </concept>
-      <concept id="562973772910893459" name="com.mbeddr.ext.concurrency.structure.AccessSpecifier" flags="ng" index="3JTKKU">
+      <concept id="562973772910893459" name="com.mbeddr.ext.concurrency.structure.GlobalVarAccessSpecifier" flags="ng" index="3JTKKU">
         <property id="562973772911107400" name="kind" index="3JU$zx" />
         <reference id="562973772911107402" name="var" index="3JU$zz" />
       </concept>

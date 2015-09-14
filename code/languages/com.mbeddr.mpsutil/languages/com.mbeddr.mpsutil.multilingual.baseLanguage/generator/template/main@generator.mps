@@ -12,10 +12,10 @@
     <import index="tnjx" ref="r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" />
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
     <import index="tp5r" ref="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="cixo" ref="r:c786bea3-0279-4249-85d3-b8ac44fb5e9a(com.mbeddr.mpsutil.multilingual.common.generator.template.main@generator)" />
     <import index="h1po" ref="r:0fbaf240-65fb-4f8e-9684-faa176c6e083(com.mbeddr.mpsutil.multilingual.baseLanguage.behavior)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
@@ -325,7 +325,7 @@
                 <node concept="3cpWsn" id="7Ssz$kYQN6F" role="3cpWs9">
                   <property role="TrG5h" value="obj" />
                   <node concept="3uibUv" id="7Ssz$kYQN6G" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                   </node>
                   <node concept="10Nm6u" id="7Ssz$kYQNii" role="33vP2m" />
                 </node>
@@ -358,8 +358,8 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="5YIFEcouSYX" role="37wK5m">
-                    <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
-                    <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+                    <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
+                    <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                     <node concept="Xl_RD" id="5YIFEcouSYY" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="2b32R4" id="5YIFEcouSYZ" role="lGtFl">
@@ -476,7 +476,7 @@
       <ref role="30HIoZ" to="tnjx:2bng37t32O$" resolve="MultilingualJavaStringType" />
       <node concept="gft3U" id="2bng37t3fIx" role="1lVwrX">
         <node concept="3uibUv" id="2bng37t3fIy" role="gfFT$">
-          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
     </node>
@@ -545,12 +545,12 @@
       <property role="DiZV1" value="false" />
       <node concept="3Tm1VV" id="3J1G4nNkbAa" role="1B3o_S" />
       <node concept="3uibUv" id="3J1G4nNkbAb" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~ResourceBundle" resolve="ResourceBundle" />
+        <ref role="3uigEE" to="33ny:~ResourceBundle" resolve="ResourceBundle" />
       </node>
       <node concept="37vLTG" id="3J1G4nNkbAc" role="3clF46">
         <property role="TrG5h" value="locale" />
         <node concept="3uibUv" id="3J1G4nNkbAd" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~Locale" resolve="Locale" />
+          <ref role="3uigEE" to="33ny:~Locale" resolve="Locale" />
         </node>
       </node>
       <node concept="3clFbS" id="3J1G4nNkbAe" role="3clF47">

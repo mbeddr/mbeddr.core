@@ -4,9 +4,9 @@
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -72,6 +72,7 @@
     </language>
     <language id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make">
       <concept id="3373914745211365206" name="com.mbeddr.core.make.structure.Variable" flags="ng" index="3G52F3">
+        <property id="7595578942777303019" name="assignmentType" index="12Lnk_" />
         <property id="3373914745211446888" name="value" index="3G5mJX" />
       </concept>
       <concept id="3373914745211590947" name="com.mbeddr.core.make.structure.TextCommandItem" flags="ng" index="3G69iQ">
@@ -80,12 +81,8 @@
       <concept id="5950410542643589987" name="com.mbeddr.core.make.structure.TextDependency" flags="ng" index="3O_EAZ">
         <property id="5950410542643589988" name="text" index="3O_EAS" />
       </concept>
-      <concept id="5950410542643587165" name="com.mbeddr.core.make.structure.Target" flags="ng" index="3O_Fa1">
-        <property id="5950410542643587166" name="label" index="3O_Fa2" />
-      </concept>
       <concept id="5950410542643585247" name="com.mbeddr.core.make.structure.Makefile" flags="ng" index="3O_FC3">
-        <child id="3373914745211365205" name="variables" index="3G52F0" />
-        <child id="5950410542643587173" name="targets" index="3O_FaT" />
+        <child id="7595578942777957190" name="content" index="12RR68" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -239,33 +236,17 @@
   </node>
   <node concept="3O_FC3" id="bzEfeAYKWU">
     <property role="TrG5h" value="Makefile" />
-    <node concept="3O_Fa1" id="bzEfeAYKXh" role="3O_FaT">
-      <property role="3O_Fa2" value="t" />
-      <node concept="2b32R4" id="bzEfeAYKXt" role="lGtFl">
-        <node concept="3JmXsc" id="bzEfeAYKXw" role="2P8S$">
-          <node concept="3clFbS" id="bzEfeAYKXx" role="2VODD2">
-            <node concept="3clFbF" id="bzEfeAYKXy" role="3cqZAp">
-              <node concept="2OqwBi" id="bzEfeAYKXz" role="3clFbG">
-                <node concept="3Tsc0h" id="bzEfeAYKX$" role="2OqNvi">
-                  <ref role="3TtcxE" to="i2y7:5ak6HMA0Ex_" />
-                </node>
-                <node concept="30H73N" id="bzEfeAYKX_" role="2Oq$k0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3G52F3" id="bzEfeAYKX6" role="3G52F0">
+    <node concept="3G52F3" id="bzEfeAYKX6" role="12RR68">
       <property role="TrG5h" value="V" />
       <property role="3G5mJX" value="V" />
+      <property role="12Lnk_" value="=" />
       <node concept="2b32R4" id="bzEfeAYKX8" role="lGtFl">
         <node concept="3JmXsc" id="bzEfeAYKXb" role="2P8S$">
           <node concept="3clFbS" id="bzEfeAYKXc" role="2VODD2">
             <node concept="3clFbF" id="bzEfeAYKXd" role="3cqZAp">
               <node concept="2OqwBi" id="bzEfeAYKXe" role="3clFbG">
-                <node concept="3Tsc0h" id="bzEfeAYKXf" role="2OqNvi">
-                  <ref role="3TtcxE" to="i2y7:2Vizpn2LEtl" />
+                <node concept="3Tsc0h" id="1EZSCJhkY5L" role="2OqNvi">
+                  <ref role="3TtcxE" to="i2y7:6_CUGSFHTH6" />
                 </node>
                 <node concept="30H73N" id="bzEfeAYKXg" role="2Oq$k0" />
               </node>

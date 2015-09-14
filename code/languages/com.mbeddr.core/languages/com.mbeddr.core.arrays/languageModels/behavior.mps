@@ -138,7 +138,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1983,6 +1983,9 @@
                           <property role="Xl_RC" value=")" />
                         </node>
                         <node concept="3cpWs3" id="F16UoWDf2K" role="3uHU7B">
+                          <node concept="37vLTw" id="1wca57Y94qJ" role="3uHU7w">
+                            <ref role="3cqZAo" node="1wca57Y6Spk" resolve="actualSize" />
+                          </node>
                           <node concept="3cpWs3" id="F16UoWDf2L" role="3uHU7B">
                             <node concept="3cpWs3" id="F16UoWDf2M" role="3uHU7B">
                               <node concept="Xl_RD" id="F16UoWDf2N" role="3uHU7B">
@@ -1995,9 +1998,6 @@
                             <node concept="Xl_RD" id="F16UoWDf2P" role="3uHU7w">
                               <property role="Xl_RC" value=" was: " />
                             </node>
-                          </node>
-                          <node concept="37vLTw" id="1wca57Y94qJ" role="3uHU7w">
-                            <ref role="3cqZAo" node="1wca57Y6Spk" resolve="actualSize" />
                           </node>
                         </node>
                       </node>
@@ -4266,6 +4266,19 @@
         </node>
       </node>
       <node concept="17QB3L" id="3xqp6yfaGjO" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4XMHJL4II9J" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFormatString" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <node concept="3clFbS" id="4XMHJL4II9M" role="3clF47">
+        <node concept="3clFbF" id="4XMHJL4II9P" role="3cqZAp">
+          <node concept="Xl_RD" id="4XMHJL4II9Q" role="3clFbG">
+            <property role="Xl_RC" value="%s" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4XMHJL4II9N" role="3clF45" />
+      <node concept="3Tm1VV" id="4XMHJL4II9O" role="1B3o_S" />
     </node>
     <node concept="13hLZK" id="2dQ321vzsSI" role="13h7CW">
       <node concept="3clFbS" id="2dQ321vzsSJ" role="2VODD2" />

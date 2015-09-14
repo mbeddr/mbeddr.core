@@ -8,7 +8,7 @@
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
@@ -588,7 +588,7 @@
                 <ref role="3cqZAo" node="4muUMBDp$MA" resolve="xExpressions" />
               </node>
               <node concept="liA8E" id="4muUMBDp_mW" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
               </node>
             </node>
           </node>
@@ -602,7 +602,7 @@
                 <ref role="3cqZAo" node="4muUMBDp_nr" resolve="yExpressions" />
               </node>
               <node concept="liA8E" id="4muUMBDp_o0" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
               </node>
             </node>
           </node>
@@ -624,7 +624,7 @@
                       <ref role="3cqZAo" node="4muUMBDp$MA" resolve="xExpressions" />
                     </node>
                     <node concept="liA8E" id="1GmHHn276PY" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                       <node concept="37vLTw" id="5Hxjapweq5P" role="37wK5m">
                         <ref role="3cqZAo" node="4muUMBDrdHN" resolve="x" />
                       </node>
@@ -654,7 +654,7 @@
                           <ref role="3cqZAo" node="4muUMBDp$MA" resolve="xExpressions" />
                         </node>
                         <node concept="liA8E" id="1GmHHn276Qb" role="2OqNvi">
-                          <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                          <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                           <node concept="3cpWs3" id="1GmHHn276Qy" role="37wK5m">
                             <node concept="3cmrfG" id="1GmHHn276Q_" role="3uHU7w">
                               <property role="3cmrfH" value="1" />
@@ -705,7 +705,7 @@
                             <ref role="3cqZAo" node="4muUMBDp_nr" resolve="yExpressions" />
                           </node>
                           <node concept="liA8E" id="1GmHHn276PM" role="2OqNvi">
-                            <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                            <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                             <node concept="37vLTw" id="5HxjapweqAi" role="37wK5m">
                               <ref role="3cqZAo" node="4muUMBDrHPZ" resolve="y" />
                             </node>
@@ -792,7 +792,7 @@
                                 <ref role="3cqZAo" node="4muUMBDp_nr" resolve="yExpressions" />
                               </node>
                               <node concept="liA8E" id="4muUMBDrHQk" role="2OqNvi">
-                                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                                 <node concept="37vLTw" id="5Hxjapweqdo" role="37wK5m">
                                   <ref role="3cqZAo" node="4muUMBDrHQm" resolve="y" />
                                 </node>
@@ -821,7 +821,7 @@
                                       <ref role="3cqZAo" node="1GmHHn26QKZ" resolve="cExpressions" />
                                     </node>
                                     <node concept="liA8E" id="1GmHHn27mVm" role="2OqNvi">
-                                      <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                                       <node concept="3cpWsa" id="1GmHHn27mVn" role="37wK5m">
                                         <ref role="3cqZAo" node="4muUMBDrPS7" resolve="i" />
                                       </node>
@@ -910,7 +910,7 @@
                                     <ref role="3cqZAo" node="1GmHHn26QKZ" resolve="cExpressions" />
                                   </node>
                                   <node concept="liA8E" id="1GmHHn26QLz" role="2OqNvi">
-                                    <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                                    <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                                     <node concept="3cpWsa" id="1GmHHn26QL$" role="37wK5m">
                                       <ref role="3cqZAo" node="4muUMBDrPUD" resolve="i" />
                                     </node>

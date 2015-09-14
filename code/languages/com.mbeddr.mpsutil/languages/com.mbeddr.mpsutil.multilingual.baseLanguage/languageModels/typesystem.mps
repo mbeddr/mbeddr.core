@@ -7,13 +7,13 @@
   </languages>
   <imports>
     <import index="tnjx" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" />
-    <import index="neyv" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.collect(MPS.Core/com.google.common.collect@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
     <import index="bwlt" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f7af3984-a112-4e63-b8bb-3a0771bf3a31(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.typesystem)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="ua2a" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
     <import index="xedy" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.behavior)" />
   </imports>
@@ -209,7 +209,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
     </language>
@@ -295,7 +295,7 @@
             <node concept="3Tqbb2" id="2bng37t32Pv" role="HW$YZ" />
             <node concept="2c44tf" id="2bng37t32Pw" role="HW$Y0">
               <node concept="3uibUv" id="2bng37t32Px" role="2c44tc">
-                <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
               </node>
             </node>
           </node>
@@ -315,19 +315,19 @@
         <node concept="3cpWsn" id="7Ssz$kYq6zl" role="3cpWs9">
           <property role="TrG5h" value="indices" />
           <node concept="3uibUv" id="7Ssz$kYq6zm" role="1tU5fm">
-            <ref role="3uigEE" to="neyv:~Multimap" resolve="Multimap" />
+            <ref role="3uigEE" to="3o3z:~Multimap" resolve="Multimap" />
             <node concept="3uibUv" id="7Ssz$kYqcJM" role="11_B2D">
-              <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
             </node>
             <node concept="3Tqbb2" id="7Ssz$kYq6Ru" role="11_B2D">
               <ref role="ehGHo" to="tnjx:7Ssz$kYeI2V" resolve="MultilingualInlineFormat" />
             </node>
           </node>
           <node concept="2YIFZM" id="7Ssz$kYq8ho" role="33vP2m">
-            <ref role="1Pybhc" to="neyv:~LinkedHashMultimap" resolve="LinkedHashMultimap" />
-            <ref role="37wK5l" to="neyv:~LinkedHashMultimap.create():com.google.common.collect.LinkedHashMultimap" resolve="create" />
+            <ref role="1Pybhc" to="3o3z:~LinkedHashMultimap" resolve="LinkedHashMultimap" />
+            <ref role="37wK5l" to="3o3z:~LinkedHashMultimap.create():com.google.common.collect.LinkedHashMultimap" resolve="create" />
             <node concept="3uibUv" id="7Ssz$kYr$vb" role="3PaCim">
-              <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
             </node>
             <node concept="3Tqbb2" id="7Ssz$kYq9iR" role="3PaCim">
               <ref role="ehGHo" to="tnjx:7Ssz$kYeI2V" resolve="MultilingualInlineFormat" />
@@ -378,7 +378,7 @@
                       <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                     </node>
                     <node concept="liA8E" id="7Ssz$kYqhhr" role="2OqNvi">
-                      <ref role="37wK5l" to="neyv:~Multimap.put(java.lang.Object,java.lang.Object):boolean" resolve="put" />
+                      <ref role="37wK5l" to="3o3z:~Multimap.put(java.lang.Object,java.lang.Object):boolean" resolve="put" />
                       <node concept="37vLTw" id="7Ssz$kYqhoP" role="37wK5m">
                         <ref role="3cqZAo" node="7Ssz$kYm9s5" resolve="argumentIndex" />
                       </node>
@@ -406,14 +406,14 @@
               <node concept="10Oyi0" id="7Ssz$kYqK6n" role="1tU5fm" />
               <node concept="2OqwBi" id="7Ssz$kYqIeb" role="33vP2m">
                 <node concept="2YIFZM" id="7Ssz$kYr_em" role="2Oq$k0">
-                  <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-                  <ref role="37wK5l" to="k7g3:~Collections.max(java.util.Collection,java.util.Comparator):java.lang.Object" resolve="max" />
+                  <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                  <ref role="37wK5l" to="33ny:~Collections.max(java.util.Collection,java.util.Comparator):java.lang.Object" resolve="max" />
                   <node concept="2OqwBi" id="7Ssz$kYr_en" role="37wK5m">
                     <node concept="37vLTw" id="7Ssz$kYr_eo" role="2Oq$k0">
                       <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                     </node>
                     <node concept="liA8E" id="7Ssz$kYr_ep" role="2OqNvi">
-                      <ref role="37wK5l" to="neyv:~Multimap.values():java.util.Collection" resolve="values" />
+                      <ref role="37wK5l" to="3o3z:~Multimap.values():java.util.Collection" resolve="values" />
                     </node>
                   </node>
                   <node concept="1bVj0M" id="7Ssz$kYr_eq" role="37wK5m">
@@ -421,8 +421,8 @@
                       <node concept="3clFbF" id="7Ssz$kYr_es" role="3cqZAp">
                         <node concept="2OqwBi" id="2F_EZZyyDlQ" role="3clFbG">
                           <node concept="2YIFZM" id="2F_EZZyyBEe" role="2Oq$k0">
-                            <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-                            <ref role="37wK5l" to="e2lb:~Integer.valueOf(int):java.lang.Integer" resolve="valueOf" />
+                            <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                            <ref role="37wK5l" to="wyt6:~Integer.valueOf(int):java.lang.Integer" resolve="valueOf" />
                             <node concept="2OqwBi" id="2F_EZZyyBEf" role="37wK5m">
                               <node concept="37vLTw" id="2F_EZZyyBEg" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7Ssz$kYr_e$" resolve="a" />
@@ -433,7 +433,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="2F_EZZyyEbG" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
+                            <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
                             <node concept="2OqwBi" id="2F_EZZyyBEi" role="37wK5m">
                               <node concept="37vLTw" id="2F_EZZyyBEj" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7Ssz$kYr_eA" resolve="b" />
@@ -497,7 +497,7 @@
                       <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                     </node>
                     <node concept="liA8E" id="7Ssz$kYqMWY" role="2OqNvi">
-                      <ref role="37wK5l" to="neyv:~Multimap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                      <ref role="37wK5l" to="3o3z:~Multimap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
                       <node concept="37vLTw" id="7Ssz$kYqN0c" role="37wK5m">
                         <ref role="3cqZAo" node="7Ssz$kYmf_Y" resolve="i" />
                       </node>
@@ -510,7 +510,7 @@
                       <node concept="3cpWsn" id="7Ssz$kYs6PI" role="3cpWs9">
                         <property role="TrG5h" value="entry" />
                         <node concept="3uibUv" id="7Ssz$kYs6Pt" role="1tU5fm">
-                          <ref role="3uigEE" to="k7g3:~Collection" resolve="Collection" />
+                          <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
                           <node concept="3Tqbb2" id="7Ssz$kYs6Pw" role="11_B2D">
                             <ref role="ehGHo" to="tnjx:7Ssz$kYeI2V" resolve="MultilingualInlineFormat" />
                           </node>
@@ -520,7 +520,7 @@
                             <ref role="3cqZAo" node="7Ssz$kYq6zl" resolve="indices" />
                           </node>
                           <node concept="liA8E" id="7Ssz$kYs6PL" role="2OqNvi">
-                            <ref role="37wK5l" to="neyv:~Multimap.get(java.lang.Object):java.util.Collection" resolve="get" />
+                            <ref role="37wK5l" to="3o3z:~Multimap.get(java.lang.Object):java.util.Collection" resolve="get" />
                             <node concept="37vLTw" id="7Ssz$kYs6PM" role="37wK5m">
                               <ref role="3cqZAo" node="7Ssz$kYmf_Y" resolve="i" />
                             </node>
@@ -563,7 +563,7 @@
                             <ref role="3cqZAo" node="7Ssz$kYs6PI" resolve="entry" />
                           </node>
                           <node concept="liA8E" id="7Ssz$kYqQ6d" role="2OqNvi">
-                            <ref role="37wK5l" to="k7g3:~Collection.size():int" resolve="size" />
+                            <ref role="37wK5l" to="33ny:~Collection.size():int" resolve="size" />
                           </node>
                         </node>
                       </node>
@@ -591,7 +591,7 @@
           <node concept="3cpWsn" id="7Ssz$kYSJLX" role="TDEfY">
             <property role="TrG5h" value="e" />
             <node concept="3uibUv" id="7Ssz$kYSKJw" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~NoSuchElementException" resolve="NoSuchElementException" />
+              <ref role="3uigEE" to="33ny:~NoSuchElementException" resolve="NoSuchElementException" />
             </node>
           </node>
           <node concept="3clFbS" id="7Ssz$kYSJLZ" role="TDEfX" />
@@ -793,12 +793,12 @@
             <node concept="3cpWsn" id="7Ssz$kYQi5v" role="3cpWs9">
               <property role="TrG5h" value="typeOf" />
               <node concept="3uibUv" id="7Ssz$kYQi5s" role="1tU5fm">
-                <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
+                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
               </node>
               <node concept="2OqwBi" id="7Ssz$kYQi5w" role="33vP2m">
                 <node concept="2QUAEa" id="7Ssz$kYQi5x" role="2Oq$k0" />
                 <node concept="liA8E" id="7Ssz$kYQi5y" role="2OqNvi">
-                  <ref role="37wK5l" to="ua2a:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf" />
+                  <ref role="37wK5l" to="u78q:~TypeChecker.getTypeOf(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.model.SNode" resolve="getTypeOf" />
                   <node concept="1y4W85" id="7Ssz$kYQi5z" role="37wK5m">
                     <node concept="37vLTw" id="7Ssz$kYQi5$" role="1y58nS">
                       <ref role="3cqZAo" node="7Ssz$kYvQtE" resolve="i" />

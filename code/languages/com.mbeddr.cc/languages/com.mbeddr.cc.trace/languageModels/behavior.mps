@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
@@ -273,13 +273,13 @@
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4cyIky40iAc" role="1B3o_S" />
       <node concept="3uibUv" id="4cyIky40iAf" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3clFbS" id="4cyIky40iAe" role="3clF47">
         <node concept="3cpWs6" id="4cyIky40iAg" role="3cqZAp">
           <node concept="10M0yZ" id="4cyIky40iAi" role="3cqZAk">
-            <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-            <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
           </node>
         </node>
       </node>
@@ -328,7 +328,7 @@
         <node concept="3clFbF" id="4cyIky40nPH" role="3cqZAp">
           <node concept="2ShNRf" id="4cyIky40nPI" role="3clFbG">
             <node concept="1pGfFk" id="4cyIky40o4l" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
               <node concept="3cmrfG" id="4cyIky40o4O" role="37wK5m">
                 <property role="3cmrfH" value="27" />
               </node>
@@ -343,7 +343,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="4cyIky40iAq" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="4cyIky40iAr" role="1B3o_S" />
     </node>
@@ -361,7 +361,7 @@
         <node concept="3clFbF" id="4cyIky40o5X" role="3cqZAp">
           <node concept="2ShNRf" id="4cyIky40o5Y" role="3clFbG">
             <node concept="1pGfFk" id="4cyIky40o60" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
               <node concept="3cmrfG" id="4cyIky40o61" role="37wK5m">
                 <property role="3cmrfH" value="27" />
               </node>
@@ -376,7 +376,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="4cyIky40iA_" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="4cyIky40iAA" role="1B3o_S" />
     </node>
@@ -393,13 +393,13 @@
       <node concept="3clFbS" id="2ka6MWOx8Aq" role="3clF47">
         <node concept="3clFbF" id="2ka6MWOx8At" role="3cqZAp">
           <node concept="10M0yZ" id="2ka6MWOx8Au" role="3clFbG">
-            <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-            <ref role="3cqZAo" to="1t7x:~Color.lightGray" resolve="lightGray" />
+            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
           </node>
         </node>
       </node>
       <node concept="3uibUv" id="2ka6MWOx8Ar" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="2ka6MWOx8As" role="1B3o_S" />
     </node>

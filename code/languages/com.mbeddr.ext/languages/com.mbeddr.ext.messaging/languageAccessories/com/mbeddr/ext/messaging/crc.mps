@@ -91,7 +91,7 @@
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
-      <concept id="159275153965489898" name="com.mbeddr.core.modules.structure.PragmaDeclaration" flags="ng" index="2vBkk2">
+      <concept id="159275153965489898" name="com.mbeddr.core.modules.structure.ModifierModuleContent" flags="ng" index="2vBkk2">
         <property id="159275153965499088" name="preText" index="2vBh$S" />
         <property id="159275153965499091" name="postText" index="2vBh$V" />
         <property id="159275153965489901" name="isSurrounding" index="2vBkk5" />

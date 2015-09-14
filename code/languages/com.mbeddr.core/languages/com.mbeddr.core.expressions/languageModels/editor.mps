@@ -1938,6 +1938,30 @@
             </node>
             <node concept="2iRfu4" id="3jGRJVwqZnP" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="6LsWDiKtmc9" role="3EZMnx">
+            <node concept="VPM3Z" id="6LsWDiKtmca" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="6LsWDiKtmcb" role="3EZMnx">
+              <property role="3F0ifm" value="intptr_t type" />
+            </node>
+            <node concept="3F1sOY" id="6LsWDiKtmcc" role="3EZMnx">
+              <ref role="1NtTu8" to="mj1l:6LsWDiKtjXt" />
+            </node>
+            <node concept="2iRfu4" id="6LsWDiKtmcd" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="6LsWDiKtmiw" role="3EZMnx">
+            <node concept="VPM3Z" id="6LsWDiKtmix" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="6LsWDiKtmiy" role="3EZMnx">
+              <property role="3F0ifm" value="uintptr_t type" />
+            </node>
+            <node concept="3F1sOY" id="6LsWDiKtmiz" role="3EZMnx">
+              <ref role="1NtTu8" to="mj1l:6LsWDiKtjXD" />
+            </node>
+            <node concept="2iRfu4" id="6LsWDiKtmi$" role="2iSdaV" />
+          </node>
           <node concept="3EZMnI" id="2WmgvBhtc3r" role="3EZMnx">
             <node concept="VPM3Z" id="2WmgvBhtc3s" role="3F10Kt">
               <property role="VOm3f" value="false" />

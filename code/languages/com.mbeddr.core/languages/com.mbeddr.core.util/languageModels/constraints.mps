@@ -2,9 +2,9 @@
 <model ref="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1653,6 +1653,7 @@
                         <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
                       </node>
                     </node>
+                    <node concept="1xIGOp" id="7M7KycvjEhi" role="1xVPHs" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="1UML6duKx$_" role="2OqNvi">
@@ -1830,6 +1831,33 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="1EZSCJhNJEL">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="1M2myG" to="k146:1EZSCJhI$Q7" resolve="LogExpressionWord" />
+    <node concept="nKS2y" id="1EZSCJhNK1$" role="1MLUbF">
+      <node concept="3clFbS" id="1EZSCJhNK1_" role="2VODD2">
+        <node concept="3clFbF" id="1EZSCJhNK6w" role="3cqZAp">
+          <node concept="2OqwBi" id="1EZSCJhNKZh" role="3clFbG">
+            <node concept="2OqwBi" id="1EZSCJhNKcx" role="2Oq$k0">
+              <node concept="nLn13" id="1EZSCJhNK6v" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1EZSCJhNKsT" role="2OqNvi">
+                <node concept="1xMEDy" id="1EZSCJhNKsV" role="1xVPHs">
+                  <node concept="chp4Y" id="1EZSCJhNKyc" role="ri$Ld">
+                    <ref role="cht4Q" to="k146:1EZSCJhF1F6" resolve="LogStatement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1EZSCJhNLIW" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1EZSCJhOFig">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="1M2myG" to="k146:1EZSCJhF1F6" resolve="LogStatement" />
   </node>
 </model>
 

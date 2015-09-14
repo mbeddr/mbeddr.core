@@ -9,13 +9,13 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="87nw" ref="92d2ea16-5a42-4fdf-a676-c7604efe3504/r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext/de.slisson.mps.richtext.structure)" />
     <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="xedy" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.behavior)" implicit="true" />
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tbr6" ref="92d2ea16-5a42-4fdf-a676-c7604efe3504/r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext/de.slisson.mps.richtext.behavior)" implicit="true" />
-    <import index="xedy" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -348,7 +348,7 @@
     <property role="TrG5h" value="reduce_RichStringType" />
     <ref role="3gUMe" to="spci:2UbT3C4cY3p" resolve="RichStringType" />
     <node concept="3uibUv" id="hP8d3av" role="13RCb5">
-      <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       <node concept="raruj" id="hP8d3aw" role="lGtFl" />
     </node>
   </node>
@@ -365,8 +365,8 @@
         <node concept="3clFbS" id="5YIFEcouHGK" role="3clF47">
           <node concept="3clFbF" id="5YIFEcouPJ1" role="3cqZAp">
             <node concept="2YIFZM" id="5YIFEcouPJr" role="3clFbG">
-              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="Xl_RD" id="5YIFEcouPL1" role="37wK5m">
                 <property role="Xl_RC" value="" />
                 <node concept="2b32R4" id="5YIFEcouR09" role="lGtFl">
@@ -412,18 +412,18 @@
             <node concept="3cpWsn" id="5YIFEcouWTG" role="3cpWs9">
               <property role="TrG5h" value="obj" />
               <node concept="3uibUv" id="5YIFEcouWTH" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
               </node>
               <node concept="10Nm6u" id="5YIFEcov345" role="33vP2m" />
             </node>
           </node>
           <node concept="3clFbF" id="5YIFEcouTOx" role="3cqZAp">
             <node concept="2YIFZM" id="5YIFEcouUf1" role="3clFbG">
-              <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="2YIFZM" id="5YIFEcouSYX" role="37wK5m">
-                <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Object...):java.lang.String" resolve="join" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                 <node concept="Xl_RD" id="5YIFEcouSYY" role="37wK5m">
                   <property role="Xl_RC" value="" />
                   <node concept="2b32R4" id="5YIFEcouSYZ" role="lGtFl">

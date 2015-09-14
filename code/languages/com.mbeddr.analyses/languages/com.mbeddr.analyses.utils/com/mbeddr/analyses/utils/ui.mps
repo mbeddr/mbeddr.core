@@ -6,9 +6,9 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -90,14 +90,14 @@
       <node concept="3clFbS" id="3kLBXRrt364" role="3clF47">
         <node concept="3clFbF" id="7LK0SHSpnb" role="3cqZAp">
           <node concept="2YIFZM" id="7LK0SHSpqr" role="3clFbG">
-            <ref role="37wK5l" to="e2lb:~Thread.dumpStack():void" resolve="dumpStack" />
-            <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+            <ref role="37wK5l" to="wyt6:~Thread.dumpStack():void" resolve="dumpStack" />
+            <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
           </node>
         </node>
         <node concept="3clFbF" id="3kLBXRrt367" role="3cqZAp">
           <node concept="2YIFZM" id="3kLBXRrt368" role="3clFbG">
-            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="3kLBXRrt369" role="37wK5m" />
             <node concept="3cpWs2" id="3kLBXRrt36a" role="37wK5m">
               <ref role="3cqZAo" node="3kLBXRrt36d" resolve="message" />
@@ -106,8 +106,8 @@
               <ref role="3cqZAo" node="3kLBXRrtd$t" resolve="title" />
             </node>
             <node concept="10M0yZ" id="3kLBXRrt36c" role="37wK5m">
-              <ref role="3cqZAo" to="dbrf:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
-              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             </node>
           </node>
         </node>
@@ -132,8 +132,8 @@
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="7Quig7_QEsd" role="1tU5fm" />
             <node concept="2YIFZM" id="7Quig7_QDn_" role="33vP2m">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,char):java.lang.String" resolve="join" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,char):java.lang.String" resolve="join" />
               <node concept="37vLTw" id="7Quig7_QDnA" role="37wK5m">
                 <ref role="3cqZAo" node="7Quig7_QtUW" resolve="messages" />
               </node>
@@ -145,8 +145,8 @@
         </node>
         <node concept="3clFbF" id="7Quig7_QtUO" role="3cqZAp">
           <node concept="2YIFZM" id="7Quig7_QtUP" role="3clFbG">
-            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="7Quig7_QtUQ" role="37wK5m" />
             <node concept="37vLTw" id="7Quig7_QEpc" role="37wK5m">
               <ref role="3cqZAo" node="7Quig7_QDn$" resolve="msg" />
@@ -155,8 +155,8 @@
               <ref role="3cqZAo" node="7Quig7_QtUU" resolve="title" />
             </node>
             <node concept="10M0yZ" id="7Quig7_QtUT" role="37wK5m">
-              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
-              <ref role="3cqZAo" to="dbrf:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
+              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+              <ref role="3cqZAo" to="dxuu:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
             </node>
           </node>
         </node>
@@ -183,8 +183,8 @@
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="615cGN$MG9o" role="1tU5fm" />
             <node concept="2YIFZM" id="615cGN$MG9p" role="33vP2m">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
               <node concept="37vLTw" id="615cGN$MG9q" role="37wK5m">
                 <ref role="3cqZAo" node="615cGN$MG9$" resolve="messages" />
               </node>
@@ -196,8 +196,8 @@
         </node>
         <node concept="3clFbF" id="615cGN$MG9s" role="3cqZAp">
           <node concept="2YIFZM" id="615cGN$MG9t" role="3clFbG">
-            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="615cGN$MG9u" role="37wK5m" />
             <node concept="37vLTw" id="615cGN$MG9v" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MG9n" resolve="msg" />
@@ -206,8 +206,8 @@
               <ref role="3cqZAo" node="615cGN$MG9y" resolve="title" />
             </node>
             <node concept="10M0yZ" id="615cGN$MG9x" role="37wK5m">
-              <ref role="3cqZAo" to="dbrf:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
-              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+              <ref role="3cqZAo" to="dxuu:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
+              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             </node>
           </node>
         </node>
@@ -234,8 +234,8 @@
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="7Quig7_QJQJ" role="1tU5fm" />
             <node concept="2YIFZM" id="7Quig7_QJQK" role="33vP2m">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,char):java.lang.String" resolve="join" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,char):java.lang.String" resolve="join" />
               <node concept="37vLTw" id="7Quig7_QJQL" role="37wK5m">
                 <ref role="3cqZAo" node="7Quig7_QJQV" resolve="messages" />
               </node>
@@ -247,8 +247,8 @@
         </node>
         <node concept="3clFbF" id="7Quig7_QJQN" role="3cqZAp">
           <node concept="2YIFZM" id="7Quig7_QJQO" role="3clFbG">
-            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="7Quig7_QJQP" role="37wK5m" />
             <node concept="37vLTw" id="7Quig7_QJQQ" role="37wK5m">
               <ref role="3cqZAo" node="7Quig7_QJQI" resolve="msg" />
@@ -257,8 +257,8 @@
               <ref role="3cqZAo" node="7Quig7_QJQT" resolve="title" />
             </node>
             <node concept="10M0yZ" id="7Quig7_QJQS" role="37wK5m">
-              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
-              <ref role="3cqZAo" to="dbrf:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
             </node>
           </node>
         </node>
@@ -285,8 +285,8 @@
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="615cGN$MQRm" role="1tU5fm" />
             <node concept="2YIFZM" id="615cGN$MQRn" role="33vP2m">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
               <node concept="37vLTw" id="615cGN$MQRo" role="37wK5m">
                 <ref role="3cqZAo" node="615cGN$MQRy" resolve="messages" />
               </node>
@@ -298,8 +298,8 @@
         </node>
         <node concept="3clFbF" id="615cGN$MQRq" role="3cqZAp">
           <node concept="2YIFZM" id="615cGN$MQRr" role="3clFbG">
-            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="615cGN$MQRs" role="37wK5m" />
             <node concept="37vLTw" id="615cGN$MQRt" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MQRl" resolve="msg" />
@@ -308,8 +308,8 @@
               <ref role="3cqZAo" node="615cGN$MQRw" resolve="title" />
             </node>
             <node concept="10M0yZ" id="615cGN$MQRv" role="37wK5m">
-              <ref role="3cqZAo" to="dbrf:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
-              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             </node>
           </node>
         </node>

@@ -10,6 +10,18 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -40,6 +52,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -52,6 +65,12 @@
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="a make file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6_CUGSFHTH6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
     <node concept="1TJgyi" id="7H7Z8UGpODB" role="1TKVEl">
       <property role="TrG5h" value="include" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -61,12 +80,14 @@
       <property role="20kJfa" value="variables" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2Vizpn2LEtm" resolve="Variable" />
+      <node concept="asaX9" id="6_CUGSFJ0GY" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="5ak6HMA0Ex_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targets" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
+      <node concept="asaX9" id="6_CUGSFJ0H0" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="5ak6HMA0E3w" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -91,6 +112,9 @@
     <node concept="1TJgyi" id="5ak6HMA0Exu" role="1TKVEl">
       <property role="TrG5h" value="label" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6_CUGSFIiil" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ak6HMA0Exv">
@@ -132,10 +156,18 @@
     <node concept="1TJgyi" id="1ViOc8L8idT" role="1TKVEl">
       <property role="TrG5h" value="conditional" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="6_CUGSFHqbH" role="lGtFl" />
+    </node>
+    <node concept="1TJgyi" id="6_CUGSFFpZF" role="1TKVEl">
+      <property role="TrG5h" value="assignmentType" />
+      <ref role="AX2Wp" node="6_CUGSFFpW0" resolve="VariableAssignmentType" />
     </node>
     <node concept="1TJgyi" id="2Vizpn2LYpC" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6_CUGSFIiiq" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
     <node concept="PrWs8" id="2Vizpn2LEtn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -256,6 +288,82 @@
   <node concept="PlHQZ" id="3s1LyzGfrMH">
     <property role="TrG5h" value="IMakePathProviderContainer" />
     <property role="3GE5qa" value="pathProvider" />
+  </node>
+  <node concept="1TIwiD" id="6_CUGSFDJ0J">
+    <property role="3GE5qa" value="var" />
+    <property role="TrG5h" value="Comment" />
+    <property role="34LRSv" value="#" />
+    <node concept="1TJgyi" id="6_CUGSFDJ0K" role="1TKVEl">
+      <property role="TrG5h" value="comment" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6_CUGSFHTGX" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6_CUGSFDJTf">
+    <property role="3GE5qa" value="var" />
+    <property role="TrG5h" value="EmptyLine" />
+    <node concept="PrWs8" id="6_CUGSFHTH2" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+    <node concept="PrWs8" id="6_CUGSFER5X" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="6_CUGSFFpW0">
+    <property role="3GE5qa" value="var" />
+    <property role="TrG5h" value="VariableAssignmentType" />
+    <property role="3lZH7k" value="custom" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="6_CUGSFFpW1" />
+    <node concept="M4N5e" id="6_CUGSFFpW1" role="M5hS2">
+      <property role="1uS6qo" value="=" />
+      <property role="1uS6qv" value="=" />
+      <property role="2fHolG" value="assign" />
+    </node>
+    <node concept="M4N5e" id="6_CUGSFFpWI" role="M5hS2">
+      <property role="1uS6qo" value=":=" />
+      <property role="1uS6qv" value=":=" />
+      <property role="2fHolG" value="expand" />
+    </node>
+    <node concept="M4N5e" id="6_CUGSFFpYb" role="M5hS2">
+      <property role="1uS6qo" value="?=" />
+      <property role="1uS6qv" value="?=" />
+      <property role="2fHolG" value="conditional" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6_CUGSFHTGe">
+    <property role="TrG5h" value="IMakefileContent" />
+  </node>
+  <node concept="1TIwiD" id="6_CUGSFJ0HT">
+    <property role="TrG5h" value="Define" />
+    <property role="34LRSv" value="define" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6_CUGSFJ0HU" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+    <node concept="PrWs8" id="6_CUGSFJ0IS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6_CUGSFJ0IW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6_CUGSFKkYj">
+    <property role="TrG5h" value="CommandContent" />
+    <property role="34LRSv" value="command" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6_CUGSFKl0i" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+    <node concept="1TJgyi" id="6_CUGSFKl0k" role="1TKVEl">
+      <property role="TrG5h" value="command" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

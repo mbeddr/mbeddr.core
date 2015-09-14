@@ -8,7 +8,7 @@
   <imports>
     <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
@@ -443,8 +443,8 @@
                       <ref role="37wK5l" to="r4b4:5gTlpakvelx" resolve="HorizLineCell" />
                       <node concept="pncrf" id="6Ce4x7Lw0A7" role="37wK5m" />
                       <node concept="10M0yZ" id="6Ce4x7Lw0A8" role="37wK5m">
-                        <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="1t7x:~Color.darkGray" resolve="darkGray" />
+                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                        <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
                       </node>
                       <node concept="3cmrfG" id="6Ce4x7Lw0A9" role="37wK5m">
                         <property role="3cmrfH" value="2" />
@@ -475,8 +475,8 @@
                     <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
                     <node concept="pncrf" id="6Ce4x7KMOmV" role="37wK5m" />
                     <node concept="10M0yZ" id="6Ce4x7KMOuQ" role="37wK5m">
-                      <ref role="3cqZAo" to="1t7x:~Color.darkGray" resolve="darkGray" />
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                     </node>
                     <node concept="3cmrfG" id="6Ce4x7KMOYu" role="37wK5m">
                       <property role="3cmrfH" value="0" />
@@ -512,8 +512,8 @@
                         <ref role="37wK5l" to="r4b4:5gTlpakvelx" resolve="HorizLineCell" />
                         <node concept="pncrf" id="6Ce4x7KNR62" role="37wK5m" />
                         <node concept="10M0yZ" id="6Ce4x7KNRi5" role="37wK5m">
-                          <ref role="3cqZAo" to="1t7x:~Color.darkGray" resolve="darkGray" />
-                          <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                          <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                         </node>
                         <node concept="3cmrfG" id="6Ce4x7KNRs9" role="37wK5m">
                           <property role="3cmrfH" value="2" />
@@ -560,8 +560,8 @@
                           <ref role="37wK5l" to="r4b4:5gTlpakvelx" resolve="HorizLineCell" />
                           <node concept="pncrf" id="6Ce4x7KNUI0" role="37wK5m" />
                           <node concept="10M0yZ" id="6Ce4x7KNUI1" role="37wK5m">
-                            <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                            <ref role="3cqZAo" to="1t7x:~Color.darkGray" resolve="darkGray" />
+                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                            <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
                           </node>
                           <node concept="3cmrfG" id="6Ce4x7KNUI2" role="37wK5m">
                             <property role="3cmrfH" value="2" />
@@ -858,8 +858,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="3Dgh5aYiKt7" role="37wK5m" />
                   <node concept="10M0yZ" id="3Dgh5aYiKt9" role="37wK5m">
-                    <ref role="3cqZAo" to="1t7x:~Color.black" resolve="black" />
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   </node>
                   <node concept="3cmrfG" id="3Dgh5aYiKtb" role="37wK5m">
                     <property role="3cmrfH" value="2" />
