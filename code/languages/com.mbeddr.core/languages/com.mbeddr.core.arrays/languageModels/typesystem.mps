@@ -314,12 +314,6 @@
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="5692182839349412519" name="jetbrains.mps.lang.smodel.structure.Reference_GetRoleOperation" flags="nn" index="90r25" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -767,9 +761,16 @@
             </node>
             <node concept="9aQIb" id="fwMInzpJ4n" role="9aQIa">
               <node concept="3clFbS" id="fwMInzpJ4o" role="9aQI4">
-                <node concept="34ab3g" id="fwMInzpJ4s" role="3cqZAp">
-                  <property role="35gtTG" value="error" />
-                  <node concept="3cpWs3" id="fwMInzpJ4v" role="34bqiv">
+                <node concept="2MkqsV" id="TiplXjWmmn" role="3cqZAp">
+                  <node concept="2OqwBi" id="TiplXjWmw1" role="2OEOjV">
+                    <node concept="1YBJjd" id="TiplXjWmpI" role="2Oq$k0">
+                      <ref role="1YBMHb" node="fwMInzpIds" resolve="de" />
+                    </node>
+                    <node concept="3TrEf2" id="TiplXjWnbx" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="fwMInzpJ4v" role="2MkJ7o">
                     <node concept="2X3wrD" id="fwMInzpJm9" role="3uHU7w">
                       <ref role="2X3Bk0" node="fwMInzpJm4" resolve="pt" />
                     </node>
