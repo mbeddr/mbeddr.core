@@ -124,6 +124,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -165,6 +168,7 @@
         <child id="8309912865649578165" name="query" index="14bQOc" />
         <child id="8171045391088784356" name="actionGroupId" index="3a5v6p" />
         <child id="8171045391086960055" name="icon" index="3actZa" />
+        <child id="797207570550895180" name="loadAsync" index="3dS793" />
         <child id="650292813705764058" name="childTreeNodes" index="1DVp44" />
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
@@ -338,6 +342,9 @@
             <ref role="37wK5l" to="z1c3:~MPSProject.getName():java.lang.String" resolve="getName" />
           </node>
         </node>
+      </node>
+      <node concept="3clFbT" id="Ggg0Z73231" role="3dS793">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="Xl_RD" id="FniR$C6ZQH" role="3GFWDq">
