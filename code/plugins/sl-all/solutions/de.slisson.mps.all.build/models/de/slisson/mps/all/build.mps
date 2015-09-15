@@ -3272,7 +3272,7 @@
           </node>
           <node concept="1SiIV0" id="4be$WTb1CRs" role="3bR37C">
             <node concept="3bR9La" id="4be$WTb1CRt" role="1SiIV1">
-              <property role="3bR36h" value="false" />
+              <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
             </node>
           </node>
@@ -3725,9 +3725,9 @@
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPNt" role="3989C9">
       <property role="1wNuhc" value="true" />
-      <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="16" />
       <property role="1wOHq$" value="true" />
+      <property role="1wNuhe" value="true" />
     </node>
     <node concept="10PD9b" id="2Xjt3l56m0W" role="10PD9s" />
     <node concept="3b7kt6" id="2Xjt3l56m0X" role="10PD9s" />
