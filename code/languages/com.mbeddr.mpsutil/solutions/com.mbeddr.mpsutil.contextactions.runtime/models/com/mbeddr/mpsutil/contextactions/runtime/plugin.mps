@@ -116,7 +116,6 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -335,53 +334,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5tr7YH$UqSp" role="3cqZAp">
-          <node concept="2YIFZM" id="5tr7YH$Ur6z" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable):void" resolve="runInUIThreadNoWait" />
-            <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
-            <node concept="1bVj0M" id="5tr7YH$Ur7o" role="37wK5m">
-              <node concept="3clFbS" id="5tr7YH$Ur7p" role="1bW5cS">
-                <node concept="3cpWs8" id="1yMvtXVBoKK" role="3cqZAp">
-                  <node concept="3cpWsn" id="1yMvtXVBoKL" role="3cpWs9">
-                    <property role="TrG5h" value="tool" />
-                    <node concept="1xUVSX" id="1yMvtXVBoKH" role="1tU5fm">
-                      <ref role="1xYkEM" node="5tr7YH$U35C" resolve="ContextActionsTool" />
-                    </node>
-                    <node concept="2OqwBi" id="1yMvtXVBoKM" role="33vP2m">
-                      <node concept="37vLTw" id="1yMvtXVBoKN" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5tr7YH$Uku8" resolve="ideaProject" />
-                      </node>
-                      <node concept="LR4U6" id="1yMvtXVBoKO" role="2OqNvi">
-                        <ref role="LR4U5" node="5tr7YH$U35C" resolve="ContextActionsTool" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="1yMvtXVBoVF" role="3cqZAp">
-                  <node concept="3clFbS" id="1yMvtXVBoVH" role="3clFbx">
-                    <node concept="3cpWs6" id="1yMvtXVBp5g" role="3cqZAp" />
-                  </node>
-                  <node concept="3clFbC" id="1yMvtXVBoZj" role="3clFbw">
-                    <node concept="10Nm6u" id="1yMvtXVBp0A" role="3uHU7w" />
-                    <node concept="37vLTw" id="1yMvtXVBoXv" role="3uHU7B">
-                      <ref role="3cqZAo" node="1yMvtXVBoKL" resolve="tool" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="5tr7YH$Uq6i" role="3cqZAp">
-                  <node concept="2OqwBi" id="5tr7YH$UqrT" role="3clFbG">
-                    <node concept="37vLTw" id="1yMvtXVBoKP" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1yMvtXVBoKL" resolve="tool" />
-                    </node>
-                    <node concept="liA8E" id="5tr7YH$UqA4" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable():void" resolve="makeAvailable" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2uRRBN" id="5tr7YH$U7jx" role="2uRRB_">
@@ -456,6 +408,41 @@
               <node concept="2WthIp" id="5tr7YH$U9kL" role="2Oq$k0" />
               <node concept="2BZ7hE" id="5tr7YH$U9kN" role="2OqNvi">
                 <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="QmW6bqNGmM" role="3cqZAp">
+          <node concept="3cpWsn" id="QmW6bqNGmN" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <property role="3TUv4t" value="true" />
+            <node concept="1xUVSX" id="QmW6bqNGmL" role="1tU5fm">
+              <ref role="1xYkEM" node="5tr7YH$U35C" resolve="ContextActionsTool" />
+            </node>
+            <node concept="2OqwBi" id="QmW6bqNGmO" role="33vP2m">
+              <node concept="2xqhHp" id="QmW6bqNGmP" role="2Oq$k0" />
+              <node concept="LR4U6" id="QmW6bqNGmQ" role="2OqNvi">
+                <ref role="LR4U5" node="5tr7YH$U35C" resolve="ContextActionsTool" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="QmW6bqNB94" role="3cqZAp">
+          <node concept="2YIFZM" id="QmW6bqNB9U" role="3clFbG">
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable):void" resolve="runInUIThreadNoWait" />
+            <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            <node concept="1bVj0M" id="QmW6bqNBa6" role="37wK5m">
+              <node concept="3clFbS" id="QmW6bqNBa7" role="1bW5cS">
+                <node concept="3clFbF" id="QmW6bqNBdN" role="3cqZAp">
+                  <node concept="2OqwBi" id="QmW6bqNBW6" role="3clFbG">
+                    <node concept="37vLTw" id="QmW6bqNGmR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
+                    </node>
+                    <node concept="liA8E" id="QmW6bqNCn0" role="2OqNvi">
+                      <ref role="37wK5l" to="71xd:~BaseTool.makeAvailableLater():void" resolve="makeAvailableLater" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
