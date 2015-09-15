@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/debugger-testing/debugger-testing.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/runtime.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.debug.test/test.mpl" folder="lang" />

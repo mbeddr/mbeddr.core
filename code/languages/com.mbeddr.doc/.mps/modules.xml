@@ -3,6 +3,9 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="" />

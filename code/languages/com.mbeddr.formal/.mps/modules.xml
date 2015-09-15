@@ -5,7 +5,6 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.migration.dotexpression/com.mbeddr.migration.dotexpression.mpl" folder="" />
     </projectModules>
   </component>
 </project>
