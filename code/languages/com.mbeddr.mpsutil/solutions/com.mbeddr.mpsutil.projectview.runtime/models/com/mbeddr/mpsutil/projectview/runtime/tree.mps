@@ -677,127 +677,20 @@
         <node concept="3cpWs8" id="VPgi8egRcW" role="3cqZAp">
           <node concept="3cpWsn" id="VPgi8egRcX" role="3cpWs9">
             <property role="TrG5h" value="rootNode" />
-            <node concept="3uibUv" id="VPgi8egRcT" role="1tU5fm">
-              <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
+            <node concept="3uibUv" id="nR2eIyBXqd" role="1tU5fm">
+              <ref role="3uigEE" node="nR2eIyBTxp" resolve="CustomRootTreeNode" />
             </node>
-            <node concept="2ShNRf" id="VPgi8egRcY" role="33vP2m">
-              <node concept="1pGfFk" id="VPgi8egRcZ" role="2ShVmc">
-                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
-                <node concept="Xl_RD" id="VPgi8egRd0" role="37wK5m">
-                  <property role="Xl_RC" value="Root" />
+            <node concept="2ShNRf" id="nR2eIyCkQn" role="33vP2m">
+              <node concept="1pGfFk" id="nR2eIyCkQm" role="2ShVmc">
+                <ref role="37wK5l" node="nR2eIyBT_K" resolve="CustomRootTreeNode" />
+                <node concept="37vLTw" id="nR2eIyCmqz" role="37wK5m">
+                  <ref role="3cqZAo" node="7diJr$Rjd1F" resolve="myMpsProject" />
+                </node>
+                <node concept="37vLTw" id="nR2eIyCokd" role="37wK5m">
+                  <ref role="3cqZAo" node="VPgi8egMkg" resolve="myViewId" />
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="VPgi8ehy$t" role="3cqZAp" />
-        <node concept="2Gpval" id="VPgi8egT$m" role="3cqZAp">
-          <node concept="2GrKxI" id="VPgi8egT$o" role="2Gsz3X">
-            <property role="TrG5h" value="rootElement" />
-          </node>
-          <node concept="3clFbS" id="VPgi8egT$q" role="2LFqv$">
-            <node concept="3clFbJ" id="75_oBQVRW8b" role="3cqZAp">
-              <node concept="3clFbS" id="75_oBQVRW8d" role="3clFbx">
-                <node concept="3N13vt" id="75_oBQVS0XF" role="3cqZAp" />
-              </node>
-              <node concept="3fqX7Q" id="75_oBQVS0gp" role="3clFbw">
-                <node concept="2OqwBi" id="75_oBQVS0gr" role="3fr31v">
-                  <node concept="2GrUjf" id="75_oBQVS0gs" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="VPgi8egT$o" resolve="rootElement" />
-                  </node>
-                  <node concept="liA8E" id="75_oBQVS0gt" role="2OqNvi">
-                    <ref role="37wK5l" to="imq3:75_oBQVRE8b" resolve="isApplicable" />
-                    <node concept="37vLTw" id="FniR$CfvLI" role="37wK5m">
-                      <ref role="3cqZAo" node="7diJr$Rjd1F" resolve="myMpsProject" />
-                    </node>
-                    <node concept="10Nm6u" id="75_oBQVS0gu" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="VPgi8eh2z9" role="3cqZAp">
-              <node concept="3cpWsn" id="VPgi8eh2za" role="3cpWs9">
-                <property role="TrG5h" value="elements" />
-                <node concept="A3Dl8" id="VPgi8eh2yH" role="1tU5fm">
-                  <node concept="3uibUv" id="VPgi8eh2yO" role="A3Ik2">
-                    <ref role="3uigEE" to="imq3:3ZnFyBjwIpN" resolve="ViewElement" />
-                    <node concept="3uibUv" id="VPgi8eh2yP" role="11_B2D">
-                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="VPgi8eh2zb" role="33vP2m">
-                  <node concept="2GrUjf" id="VPgi8eh2zc" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="VPgi8egT$o" resolve="rootElement" />
-                  </node>
-                  <node concept="liA8E" id="VPgi8eh2zd" role="2OqNvi">
-                    <ref role="37wK5l" to="imq3:3ZnFyBjtxQa" resolve="queryElements" />
-                    <node concept="37vLTw" id="VPgi8eh2ze" role="37wK5m">
-                      <ref role="3cqZAo" node="7diJr$Rjd1F" resolve="myMpsProject" />
-                    </node>
-                    <node concept="10Nm6u" id="75_oBQVcffL" role="37wK5m" />
-                    <node concept="37vLTw" id="2haQN1Ye4Ie" role="37wK5m">
-                      <ref role="3cqZAo" node="VPgi8egMkg" resolve="myViewId" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="VPgi8egUZI" role="3cqZAp">
-              <node concept="2OqwBi" id="VPgi8eh_vl" role="3clFbG">
-                <node concept="2OqwBi" id="VPgi8ehv_3" role="2Oq$k0">
-                  <node concept="37vLTw" id="VPgi8eh2zf" role="2Oq$k0">
-                    <ref role="3cqZAo" node="VPgi8eh2za" resolve="elements" />
-                  </node>
-                  <node concept="3$u5V9" id="VPgi8ehwmC" role="2OqNvi">
-                    <node concept="1bVj0M" id="VPgi8ehwmE" role="23t8la">
-                      <node concept="3clFbS" id="VPgi8ehwmF" role="1bW5cS">
-                        <node concept="3clFbF" id="VPgi8ehwDT" role="3cqZAp">
-                          <node concept="2ShNRf" id="VPgi8ehwDR" role="3clFbG">
-                            <node concept="1pGfFk" id="VPgi8ehxgP" role="2ShVmc">
-                              <ref role="37wK5l" node="VPgi8eh4ua" resolve="CustomTreeNode" />
-                              <node concept="37vLTw" id="VPgi8ehybe" role="37wK5m">
-                                <ref role="3cqZAo" node="VPgi8ehwmG" resolve="it" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Rh6nW" id="VPgi8ehwmG" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="VPgi8ehwmH" role="1tU5fm" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2es0OD" id="VPgi8ehBkL" role="2OqNvi">
-                  <node concept="1bVj0M" id="VPgi8ehBkN" role="23t8la">
-                    <node concept="3clFbS" id="VPgi8ehBkO" role="1bW5cS">
-                      <node concept="3clFbF" id="VPgi8ehBRe" role="3cqZAp">
-                        <node concept="2OqwBi" id="VPgi8ehCiG" role="3clFbG">
-                          <node concept="37vLTw" id="VPgi8ehBRd" role="2Oq$k0">
-                            <ref role="3cqZAo" node="VPgi8egRcX" resolve="rootNode" />
-                          </node>
-                          <node concept="liA8E" id="VPgi8ehDJz" role="2OqNvi">
-                            <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
-                            <node concept="37vLTw" id="VPgi8ehE5q" role="37wK5m">
-                              <ref role="3cqZAo" node="VPgi8ehBkP" resolve="it" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="VPgi8ehBkP" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="VPgi8ehBkQ" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="VPgi8egUkD" role="2GsD0m">
-            <ref role="3cqZAo" node="VPgi8egQdO" resolve="rootDescriptors" />
           </node>
         </node>
         <node concept="3clFbH" id="VPgi8egUos" role="3cqZAp" />
@@ -12890,6 +12783,45 @@
         </node>
         <node concept="2AHcQZ" id="1RoeMOdbufR" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="nR2eIyBTxp">
+    <property role="TrG5h" value="CustomRootTreeNode" />
+    <node concept="3Tm1VV" id="nR2eIyBTxq" role="1B3o_S" />
+    <node concept="3uibUv" id="nR2eIyBT_k" role="1zkMxy">
+      <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
+    </node>
+    <node concept="3clFbW" id="nR2eIyBT_K" role="jymVt">
+      <node concept="3cqZAl" id="nR2eIyBT_L" role="3clF45" />
+      <node concept="3Tm1VV" id="nR2eIyBT_M" role="1B3o_S" />
+      <node concept="3clFbS" id="nR2eIyBT_O" role="3clF47">
+        <node concept="XkiVB" id="nR2eIyBT_Q" role="3cqZAp">
+          <ref role="37wK5l" node="VPgi8eh4ua" resolve="CustomTreeNode" />
+          <node concept="2ShNRf" id="nR2eIyBTQA" role="37wK5m">
+            <node concept="1pGfFk" id="nR2eIyDh$F" role="2ShVmc">
+              <ref role="37wK5l" to="imq3:nR2eIyDfwY" resolve="RootViewElement" />
+              <node concept="37vLTw" id="nR2eIyDhOb" role="37wK5m">
+                <ref role="3cqZAo" node="nR2eIyBVMU" resolve="project" />
+              </node>
+              <node concept="37vLTw" id="nR2eIyDi4n" role="37wK5m">
+                <ref role="3cqZAo" node="nR2eIyBWkU" resolve="contextView" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="nR2eIyBVMU" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="nR2eIyBVMT" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="nR2eIyBWkU" role="3clF46">
+        <property role="TrG5h" value="contextView" />
+        <node concept="3uibUv" id="nR2eIyBWsE" role="1tU5fm">
+          <ref role="3uigEE" to="imq3:3ZnFyBjwz$i" resolve="ViewId" />
         </node>
       </node>
     </node>
