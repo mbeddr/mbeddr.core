@@ -63,7 +63,7 @@
           <value>
             <Library>
               <option name="name" value="sl-all" />
-              <option name="path" value="${mbeddr.github.core.home}/code/plugins" />
+              <option name="path" value="${sl-all}" />
             </Library>
           </value>
         </entry>
@@ -71,4 +71,3 @@
     </option>
   </component>
 </project>
-
