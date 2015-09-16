@@ -8,7 +8,6 @@
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
@@ -18,6 +17,8 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <generationPart ref="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
     <generationPart ref="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -137,9 +138,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -554,6 +552,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -5715,21 +5720,21 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="602uc2JSTG4" role="3cqZAp" />
-                <node concept="3SKdUt" id="602uc2JXY1g" role="3cqZAp">
-                  <node concept="3SKWN0" id="602uc2JXY1h" role="3SKWNk">
-                    <node concept="3clFbF" id="602uc2JSPDW" role="3SKWNf">
-                      <node concept="2YIFZM" id="602uc2JSPYP" role="3clFbG">
-                        <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                        <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
-                        <node concept="2GrUjf" id="602uc2JSPZ7" role="37wK5m">
-                          <ref role="2Gs0qQ" node="17MIiXb5Er1" resolve="j" />
-                        </node>
-                        <node concept="37vLTw" id="602uc2JSQMD" role="37wK5m">
-                          <ref role="3cqZAo" node="17MIiXb5GLK" resolve="newState" />
-                        </node>
-                        <node concept="3clFbT" id="602uc2JSSdE" role="37wK5m">
-                          <property role="3clFbU" value="false" />
-                        </node>
+                <node concept="1X3_iC" id="5GwePVE7yWW" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbF" id="602uc2JSPDW" role="8Wnug">
+                    <node concept="2YIFZM" id="602uc2JSPYP" role="3clFbG">
+                      <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                      <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                      <node concept="2GrUjf" id="602uc2JSPZ7" role="37wK5m">
+                        <ref role="2Gs0qQ" node="17MIiXb5Er1" resolve="j" />
+                      </node>
+                      <node concept="37vLTw" id="602uc2JSQMD" role="37wK5m">
+                        <ref role="3cqZAo" node="17MIiXb5GLK" resolve="newState" />
+                      </node>
+                      <node concept="3clFbT" id="602uc2JSSdE" role="37wK5m">
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>
@@ -5935,21 +5940,21 @@
                       </node>
                     </node>
                     <node concept="3clFbH" id="602uc2JXXE_" role="3cqZAp" />
-                    <node concept="3SKdUt" id="602uc2JXXPM" role="3cqZAp">
-                      <node concept="3SKWN0" id="602uc2JXXPN" role="3SKWNk">
-                        <node concept="3clFbF" id="602uc2JSXse" role="3SKWNf">
-                          <node concept="2YIFZM" id="602uc2JSXsf" role="3clFbG">
-                            <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                            <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
-                            <node concept="2GrUjf" id="602uc2JSXwE" role="37wK5m">
-                              <ref role="2Gs0qQ" node="16ykm_LQ0YF" resolve="et" />
-                            </node>
-                            <node concept="37vLTw" id="602uc2JSY8T" role="37wK5m">
-                              <ref role="3cqZAo" node="602uc2JSX9u" resolve="transition" />
-                            </node>
-                            <node concept="3clFbT" id="602uc2JSXsi" role="37wK5m">
-                              <property role="3clFbU" value="false" />
-                            </node>
+                    <node concept="1X3_iC" id="5GwePVE7yWX" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="602uc2JSXse" role="8Wnug">
+                        <node concept="2YIFZM" id="602uc2JSXsf" role="3clFbG">
+                          <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                          <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                          <node concept="2GrUjf" id="602uc2JSXwE" role="37wK5m">
+                            <ref role="2Gs0qQ" node="16ykm_LQ0YF" resolve="et" />
+                          </node>
+                          <node concept="37vLTw" id="602uc2JSY8T" role="37wK5m">
+                            <ref role="3cqZAo" node="602uc2JSX9u" resolve="transition" />
+                          </node>
+                          <node concept="3clFbT" id="602uc2JSXsi" role="37wK5m">
+                            <property role="3clFbU" value="false" />
                           </node>
                         </node>
                       </node>
@@ -6114,21 +6119,21 @@
                       </node>
                     </node>
                     <node concept="3clFbH" id="602uc2JTxT3" role="3cqZAp" />
-                    <node concept="3SKdUt" id="602uc2JXWTp" role="3cqZAp">
-                      <node concept="3SKWN0" id="602uc2JXWTq" role="3SKWNk">
-                        <node concept="3clFbF" id="602uc2JTzsP" role="3SKWNf">
-                          <node concept="2YIFZM" id="602uc2JTzsQ" role="3clFbG">
-                            <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                            <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
-                            <node concept="2GrUjf" id="602uc2JTzVL" role="37wK5m">
-                              <ref role="2Gs0qQ" node="16ykm_LSJ2C" resolve="s" />
-                            </node>
-                            <node concept="37vLTw" id="602uc2JT_NS" role="37wK5m">
-                              <ref role="3cqZAo" node="602uc2JTvsw" resolve="triggerSelf" />
-                            </node>
-                            <node concept="3clFbT" id="602uc2JTzsT" role="37wK5m">
-                              <property role="3clFbU" value="false" />
-                            </node>
+                    <node concept="1X3_iC" id="5GwePVE7yWY" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="602uc2JTzsP" role="8Wnug">
+                        <node concept="2YIFZM" id="602uc2JTzsQ" role="3clFbG">
+                          <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                          <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                          <node concept="2GrUjf" id="602uc2JTzVL" role="37wK5m">
+                            <ref role="2Gs0qQ" node="16ykm_LSJ2C" resolve="s" />
+                          </node>
+                          <node concept="37vLTw" id="602uc2JT_NS" role="37wK5m">
+                            <ref role="3cqZAo" node="602uc2JTvsw" resolve="triggerSelf" />
+                          </node>
+                          <node concept="3clFbT" id="602uc2JTzsT" role="37wK5m">
+                            <property role="3clFbU" value="false" />
                           </node>
                         </node>
                       </node>

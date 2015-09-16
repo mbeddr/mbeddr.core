@@ -202,7 +202,7 @@
       <node concept="3clFbS" id="75_oBQVYfcX" role="3clF47" />
     </node>
     <node concept="13i0hz" id="6p8q4IN2gK6" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getVisibleElements" />
       <node concept="3Tm1VV" id="6p8q4IN2gK7" role="1B3o_S" />
@@ -211,7 +211,17 @@
           <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
         </node>
       </node>
-      <node concept="3clFbS" id="6p8q4IN2gK9" role="3clF47" />
+      <node concept="3clFbS" id="6p8q4IN2gK9" role="3clF47">
+        <node concept="3clFbF" id="5ivVtWu9Fco" role="3cqZAp">
+          <node concept="2ShNRf" id="5ivVtWu9Fcm" role="3clFbG">
+            <node concept="kMnCb" id="5ivVtWu9GeM" role="2ShVmc">
+              <node concept="3Tqbb2" id="5ivVtWu9Gf2" role="kMuH3">
+                <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="7diJr$RwhVX" role="13h7CW">
       <node concept="3clFbS" id="7diJr$RwhVY" role="2VODD2" />

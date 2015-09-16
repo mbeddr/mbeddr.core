@@ -5,17 +5,17 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
-    <import index="as9o" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" />
-    <import index="9r3n" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.highlighter(MPS.Editor/jetbrains.mps.nodeEditor.highlighter@java_stub)" />
-    <import index="9a8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="f2bq" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.util.messages(MPS.IDEA/com.intellij.util.messages@java_stub)" />
-    <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
-    <import index="iiw6" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.components(MPS.IDEA/com.intellij.openapi.components@java_stub)" />
-    <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="rlg8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.highlighter(MPS.Editor/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="4b2m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.messages(MPS.IDEA/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="5usg" ref="r:3838bb8b-fecd-4f7c-841e-325717a43980(de.itemis.mps.tooltips.runtime)" />
   </imports>
   <registry>
@@ -154,7 +154,7 @@
       <property role="TrG5h" value="myConnection" />
       <node concept="3Tm6S6" id="2vJRo8g$$xh" role="1B3o_S" />
       <node concept="3uibUv" id="2vJRo8g$$xi" role="1tU5fm">
-        <ref role="3uigEE" to="f2bq:~MessageBusConnection" resolve="MessageBusConnection" />
+        <ref role="3uigEE" to="4b2m:~MessageBusConnection" resolve="MessageBusConnection" />
       </node>
     </node>
     <node concept="2uRRBT" id="2vJRo8g$$xj" role="2uRRB$">
@@ -163,11 +163,11 @@
           <node concept="3cpWsn" id="2vJRo8g$$xm" role="3cpWs9">
             <property role="TrG5h" value="ideaProject" />
             <node concept="3uibUv" id="2vJRo8g$$xn" role="1tU5fm">
-              <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
             </node>
             <node concept="2YIFZM" id="2vJRo8g$$xo" role="33vP2m">
-              <ref role="37wK5l" to="pt5l:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
-              <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="1KvdUw" id="2vJRo8g$$xp" role="37wK5m" />
             </node>
           </node>
@@ -186,11 +186,11 @@
                   <ref role="3cqZAo" node="2vJRo8g$$xm" resolve="ideaProject" />
                 </node>
                 <node concept="liA8E" id="2vJRo8g$$xy" role="2OqNvi">
-                  <ref role="37wK5l" to="iiw6:~ComponentManager.getMessageBus():com.intellij.util.messages.MessageBus" resolve="getMessageBus" />
+                  <ref role="37wK5l" to="1m72:~ComponentManager.getMessageBus():com.intellij.util.messages.MessageBus" resolve="getMessageBus" />
                 </node>
               </node>
               <node concept="liA8E" id="2vJRo8g$$xz" role="2OqNvi">
-                <ref role="37wK5l" to="f2bq:~MessageBus.connect():com.intellij.util.messages.MessageBusConnection" resolve="connect" />
+                <ref role="37wK5l" to="4b2m:~MessageBus.connect():com.intellij.util.messages.MessageBusConnection" resolve="connect" />
               </node>
             </node>
           </node>
@@ -204,17 +204,17 @@
               </node>
             </node>
             <node concept="liA8E" id="2vJRo8g$$xD" role="2OqNvi">
-              <ref role="37wK5l" to="f2bq:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
+              <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
               <node concept="10M0yZ" id="2vJRo8g$$xE" role="37wK5m">
-                <ref role="1PxDUh" to="9r3n:~EditorComponentCreateListener" resolve="EditorComponentCreateListener" />
-                <ref role="3cqZAo" to="9r3n:~EditorComponentCreateListener.EDITOR_COMPONENT_CREATION" resolve="EDITOR_COMPONENT_CREATION" />
+                <ref role="1PxDUh" to="rlg8:~EditorComponentCreateListener" resolve="EditorComponentCreateListener" />
+                <ref role="3cqZAo" to="rlg8:~EditorComponentCreateListener.EDITOR_COMPONENT_CREATION" resolve="EDITOR_COMPONENT_CREATION" />
               </node>
               <node concept="2ShNRf" id="2vJRo8g$$xF" role="37wK5m">
                 <node concept="YeOm9" id="2vJRo8g$$xG" role="2ShVmc">
                   <node concept="1Y3b0j" id="2vJRo8g$$xH" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="9r3n:~EditorComponentCreateListener" resolve="EditorComponentCreateListener" />
-                    <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                    <ref role="1Y3XeK" to="rlg8:~EditorComponentCreateListener" resolve="EditorComponentCreateListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="2vJRo8g$$xI" role="1B3o_S" />
                     <node concept="3clFb_" id="2vJRo8g$$xJ" role="jymVt">
                       <property role="1EzhhJ" value="false" />
@@ -226,10 +226,10 @@
                       <node concept="37vLTG" id="2vJRo8g$$xM" role="3clF46">
                         <property role="TrG5h" value="editorComponent" />
                         <node concept="3uibUv" id="2vJRo8g$$xN" role="1tU5fm">
-                          <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                         </node>
                         <node concept="2AHcQZ" id="2vJRo8g$$xO" role="2AJF6D">
-                          <ref role="2AI5Lk" to="as9o:~NotNull" resolve="NotNull" />
+                          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="2vJRo8g$$xP" role="3clF47">
@@ -259,10 +259,10 @@
                       <node concept="37vLTG" id="2vJRo8g$$xW" role="3clF46">
                         <property role="TrG5h" value="editorComponent" />
                         <node concept="3uibUv" id="2vJRo8g$$xX" role="1tU5fm">
-                          <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                         </node>
                         <node concept="2AHcQZ" id="2vJRo8g$$xY" role="2AJF6D">
-                          <ref role="2AI5Lk" to="as9o:~NotNull" resolve="NotNull" />
+                          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="2vJRo8g$$xZ" role="3clF47" />
@@ -288,7 +288,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2vJRo8g$$y7" role="2OqNvi">
-                  <ref role="37wK5l" to="f2bq:~MessageBusConnection.disconnect():void" resolve="disconnect" />
+                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.disconnect():void" resolve="disconnect" />
                 </node>
               </node>
             </node>
