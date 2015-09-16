@@ -8,13 +8,13 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
   </languages>
   <imports>
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="ajxo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
@@ -209,14 +209,14 @@
       <node concept="3Tm6S6" id="69mEcW04dD9" role="1B3o_S" />
       <node concept="3rvAFt" id="69mEcW04dDa" role="1tU5fm">
         <node concept="3uibUv" id="69mEcW04dDb" role="3rvQeY">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
         <node concept="3rvAFt" id="69mEcW0gzFN" role="3rvSg0">
           <node concept="3uibUv" id="69mEcW0g_sR" role="3rvQeY">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
           <node concept="3uibUv" id="69mEcW0gBht" role="3rvSg0">
-            <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+            <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
           </node>
         </node>
       </node>
@@ -224,14 +224,14 @@
         <node concept="1u7pXE" id="69mEcW04dDf" role="2ShVmc">
           <ref role="1u7pXB" to="z8iw:3TJnG96iD$S" resolve="weakHashMap" />
           <node concept="3uibUv" id="69mEcW04dDg" role="3rHrn6">
-            <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
           </node>
           <node concept="3rvAFt" id="69mEcW0gM3P" role="3rHtpV">
             <node concept="3uibUv" id="69mEcW0gNTR" role="3rvQeY">
-              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
             <node concept="3uibUv" id="69mEcW0gPFJ" role="3rvSg0">
-              <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+              <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
             </node>
           </node>
         </node>
@@ -243,19 +243,19 @@
       <node concept="37vLTG" id="69mEcW04p$6" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="69mEcW04p$7" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~EditableSModel" resolve="EditableSModel" />
+          <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
         </node>
       </node>
       <node concept="37vLTG" id="69mEcW04q2C" role="3clF46">
         <property role="TrG5h" value="uniquenessKey" />
         <node concept="3uibUv" id="69mEcW04q_x" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="69mEcW04p$8" role="3clF46">
         <property role="TrG5h" value="listener" />
         <node concept="3uibUv" id="69mEcW04p$9" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+          <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
         </node>
       </node>
       <node concept="3cqZAl" id="69mEcW04kZI" role="3clF45" />
@@ -266,10 +266,10 @@
             <property role="TrG5h" value="keyedListeners" />
             <node concept="3rvAFt" id="69mEcW0h3RW" role="1tU5fm">
               <node concept="3uibUv" id="69mEcW0h4N9" role="3rvQeY">
-                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
               </node>
               <node concept="3uibUv" id="69mEcW0hdgH" role="3rvSg0">
-                <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+                <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
               </node>
             </node>
             <node concept="3EllGN" id="69mEcW0h6sI" role="33vP2m">
@@ -292,10 +292,10 @@
                 <node concept="2ShNRf" id="69mEcW04qCS" role="37vLTx">
                   <node concept="3rGOSV" id="69mEcW0hbSE" role="2ShVmc">
                     <node concept="3uibUv" id="69mEcW0hcvJ" role="3rHrn6">
-                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
                     <node concept="3uibUv" id="69mEcW0hcYc" role="3rHtpV">
-                      <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+                      <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
                     </node>
                   </node>
                 </node>
@@ -329,7 +329,7 @@
           <node concept="3cpWsn" id="69mEcW0hh54" role="3cpWs9">
             <property role="TrG5h" value="existingListener" />
             <node concept="3uibUv" id="69mEcW0hh55" role="1tU5fm">
-              <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+              <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
             </node>
             <node concept="3EllGN" id="69mEcW0hk1d" role="33vP2m">
               <node concept="37vLTw" id="69mEcW0hky2" role="3ElVtu">
@@ -349,7 +349,7 @@
                   <ref role="3cqZAo" node="69mEcW04p$6" resolve="model" />
                 </node>
                 <node concept="liA8E" id="69mEcW0hufT" role="2OqNvi">
-                  <ref role="37wK5l" to="ec5l:~EditableSModel.removeChangeListener(org.jetbrains.mps.openapi.model.SModelChangeListener):void" resolve="removeChangeListener" />
+                  <ref role="37wK5l" to="mhbf:~EditableSModel.removeChangeListener(org.jetbrains.mps.openapi.model.SModelChangeListener):void" resolve="removeChangeListener" />
                   <node concept="37vLTw" id="69mEcW0huhE" role="37wK5m">
                     <ref role="3cqZAo" node="69mEcW0hh54" resolve="existingListener" />
                   </node>
@@ -370,7 +370,7 @@
               <ref role="3cqZAo" node="69mEcW04p$6" resolve="model" />
             </node>
             <node concept="liA8E" id="69mEcW0hwwH" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~EditableSModel.addChangeListener(org.jetbrains.mps.openapi.model.SModelChangeListener):void" resolve="addChangeListener" />
+              <ref role="37wK5l" to="mhbf:~EditableSModel.addChangeListener(org.jetbrains.mps.openapi.model.SModelChangeListener):void" resolve="addChangeListener" />
               <node concept="37vLTw" id="69mEcW0hwz6" role="37wK5m">
                 <ref role="3cqZAo" node="69mEcW04p$8" resolve="listener" />
               </node>
@@ -419,7 +419,7 @@
           <node concept="3fqX7Q" id="69mEcW03J7C" role="3clFbw">
             <node concept="2ZW3vV" id="69mEcW03J7E" role="3fr31v">
               <node concept="3uibUv" id="69mEcW03J7F" role="2ZW6by">
-                <ref role="3uigEE" to="ec5l:~EditableSModel" resolve="EditableSModel" />
+                <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
               </node>
               <node concept="37vLTw" id="69mEcW03J7G" role="2ZW6bz">
                 <ref role="3cqZAo" node="69mEcW03GB3" resolve="model" />
@@ -431,12 +431,12 @@
           <node concept="3cpWsn" id="69mEcW03Jc9" role="3cpWs9">
             <property role="TrG5h" value="editableModel" />
             <node concept="3uibUv" id="69mEcW03Jca" role="1tU5fm">
-              <ref role="3uigEE" to="ec5l:~EditableSModel" resolve="EditableSModel" />
+              <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
             </node>
             <node concept="1eOMI4" id="69mEcW03Je$" role="33vP2m">
               <node concept="10QFUN" id="69mEcW03Jex" role="1eOMHV">
                 <node concept="3uibUv" id="69mEcW03Jfd" role="10QFUM">
-                  <ref role="3uigEE" to="ec5l:~EditableSModel" resolve="EditableSModel" />
+                  <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
                 </node>
                 <node concept="37vLTw" id="69mEcW03JfZ" role="10QFUP">
                   <ref role="3cqZAo" node="69mEcW03GB3" resolve="model" />
@@ -467,13 +467,13 @@
       <node concept="37vLTG" id="69mEcW04WXy" role="3clF46">
         <property role="TrG5h" value="uniquenessKey" />
         <node concept="3uibUv" id="69mEcW04XKP" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="69mEcW03KpY" role="3clF46">
         <property role="TrG5h" value="listener" />
         <node concept="3uibUv" id="69mEcW03KIr" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+          <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
         </node>
       </node>
     </node>
@@ -538,7 +538,7 @@
       <node concept="37vLTG" id="69mEcW04VXN" role="3clF46">
         <property role="TrG5h" value="uniquenessKey" />
         <node concept="3uibUv" id="69mEcW04WUt" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="69mEcW04V8F" role="3clF46">
@@ -727,13 +727,13 @@
       <node concept="37vLTG" id="69mEcW0560o" role="3clF46">
         <property role="TrG5h" value="oldRef" />
         <node concept="3uibUv" id="69mEcW0560p" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SReference" resolve="SReference" />
+          <ref role="3uigEE" to="mhbf:~SReference" resolve="SReference" />
         </node>
       </node>
       <node concept="37vLTG" id="69mEcW0560q" role="3clF46">
         <property role="TrG5h" value="newRef" />
         <node concept="3uibUv" id="69mEcW0560r" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SReference" resolve="SReference" />
+          <ref role="3uigEE" to="mhbf:~SReference" resolve="SReference" />
         </node>
       </node>
       <node concept="3clFbS" id="69mEcW0560s" role="3clF47" />
@@ -741,7 +741,7 @@
     <node concept="2tJIrI" id="69mEcW055WP" role="jymVt" />
     <node concept="3Tm1VV" id="69mEcW055CO" role="1B3o_S" />
     <node concept="3uibUv" id="69mEcW055I1" role="EKbjA">
-      <ref role="3uigEE" to="ec5l:~SModelChangeListener" resolve="SModelChangeListener" />
+      <ref role="3uigEE" to="mhbf:~SModelChangeListener" resolve="SModelChangeListener" />
     </node>
   </node>
 </model>

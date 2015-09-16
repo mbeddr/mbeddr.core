@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="5a82b7b8-2303-45be-b960-4e3ff16e82ce" name="de.itemis.mps.editor.diagram.demo.activity" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -276,11 +276,11 @@
         <node concept="3clFbF" id="gKFhvEGOCA" role="3cqZAp">
           <node concept="2OqwBi" id="gKFhvEGOCy" role="3clFbG">
             <node concept="10M0yZ" id="gKFhvEGOCz" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="gKFhvEGOC$" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="gKFhvEGOXm" role="37wK5m">
                 <node concept="37vLTw" id="gKFhvEGOYM" role="3uHU7w">
                   <ref role="3cqZAo" node="4XPshStiL8M" resolve="sum" />
@@ -302,11 +302,11 @@
         <node concept="3clFbF" id="gKFhvEGP5b" role="3cqZAp">
           <node concept="2OqwBi" id="gKFhvEGP5c" role="3clFbG">
             <node concept="10M0yZ" id="gKFhvEGP5d" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="gKFhvEGP5e" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="gKFhvEGP5f" role="37wK5m">
                 <node concept="37vLTw" id="gKFhvEGPCv" role="3uHU7w">
                   <ref role="3cqZAo" node="gKFhvEGMEW" resolve="product" />
@@ -466,11 +466,11 @@
         <node concept="3clFbF" id="4EOrrTBLwIS" role="3cqZAp">
           <node concept="2OqwBi" id="4EOrrTBLwIO" role="3clFbG">
             <node concept="10M0yZ" id="4EOrrTBLwIP" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="4EOrrTBLwIQ" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="4EOrrTBLxOv" role="37wK5m">
                 <node concept="37vLTw" id="4EOrrTBLxWT" role="3uHU7w">
                   <ref role="3cqZAo" node="4XPshStiL8M" resolve="sum" />
@@ -494,11 +494,11 @@
             <node concept="3clFbF" id="5S8_I2GyJyT" role="3cqZAp">
               <node concept="2OqwBi" id="5S8_I2GyJyP" role="3clFbG">
                 <node concept="10M0yZ" id="5S8_I2GyJyQ" role="2Oq$k0">
-                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="5S8_I2GyJyR" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                   <node concept="Xl_RD" id="5S8_I2GyJyS" role="37wK5m">
                     <property role="Xl_RC" value="vvvvvvv" />
                   </node>
