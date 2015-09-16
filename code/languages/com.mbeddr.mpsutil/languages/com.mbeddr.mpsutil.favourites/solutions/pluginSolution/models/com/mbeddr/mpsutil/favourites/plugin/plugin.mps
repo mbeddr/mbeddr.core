@@ -165,6 +165,7 @@
       <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.TreeNodeElement" flags="ng" index="14aYG3">
         <child id="8309912865649343738" name="label" index="14a853" />
         <child id="8309912865649578165" name="query" index="14bQOc" />
+        <child id="6097853963019571868" name="autoUpdate" index="19oFX3" />
         <child id="8171045391088784356" name="actionGroupId" index="3a5v6p" />
         <child id="8171045391086960055" name="icon" index="3actZa" />
         <child id="797207570550895180" name="loadAsync" index="3dS793" />
@@ -271,6 +272,9 @@
             <ref role="14b0Uw" node="FniR$CbLj0" resolve="elementWithoutCat" />
           </node>
         </node>
+        <node concept="3clFbT" id="1D19qtQzrh3" role="19oFX3">
+          <property role="3clFbU" value="false" />
+        </node>
       </node>
       <node concept="14aYG3" id="FniR$C7bS4" role="1DVp44">
         <property role="TrG5h" value="category" />
@@ -321,6 +325,9 @@
           <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
           <ref role="3cqZAo" to="xnls:~IdeIcons.CLOSED_FOLDER" resolve="CLOSED_FOLDER" />
         </node>
+        <node concept="3clFbT" id="1D19qtQzrjj" role="19oFX3">
+          <property role="3clFbU" value="false" />
+        </node>
       </node>
       <node concept="14a6R6" id="7diJr$RvF9F" role="14bQOc" />
       <node concept="3uibUv" id="3ZnFyBjqnM2" role="3GGxor">
@@ -345,6 +352,9 @@
       </node>
       <node concept="3clFbT" id="Ggg0Z73231" role="3dS793">
         <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3clFbT" id="1D19qtQzr7a" role="19oFX3">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="Xl_RD" id="FniR$C6ZQH" role="3GFWDq">
