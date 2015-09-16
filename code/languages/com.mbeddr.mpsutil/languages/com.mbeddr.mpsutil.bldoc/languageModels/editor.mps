@@ -13,8 +13,8 @@
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="s9ok" ref="r:cd485f95-5a84-4e95-8a53-480ef712b00a(com.mbeddr.mpsutil.bldoc.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="s9ok" ref="r:cd485f95-5a84-4e95-8a53-480ef712b00a(com.mbeddr.mpsutil.bldoc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -235,7 +235,7 @@
     <ref role="1XX52x" to="s9ok:3QkagoxiNHp" resolve="BLDoc" />
     <node concept="3EZMnI" id="3QkagoxiVAF" role="2wV5jI">
       <node concept="3EZMnI" id="3QkagoxjxYf" role="3EZMnx">
-        <ref role="1ERwB7" node="3QkagoxjNmU" resolve="deleteDoc" />
+        <ref role="1ERwB7" node="3QkagoxjNmU" resolve="deleteDoc1" />
         <node concept="2iRfu4" id="3QkagoxjJ9d" role="2iSdaV" />
         <node concept="gc7cB" id="3Qkagoxjyjr" role="3EZMnx">
           <node concept="3VJUX4" id="3Qkagoxjyjt" role="3YsKMw">
@@ -1271,7 +1271,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="3QkagoxjNmU">
-    <property role="TrG5h" value="deleteDoc" />
+    <property role="TrG5h" value="deleteDoc1" />
     <ref role="1h_SK9" to="s9ok:3QkagoxiNHp" resolve="BLDoc" />
     <node concept="1hA7zw" id="3QkagoxjNmV" role="1h_SK8">
       <property role="1hAc7j" value="backspace_action_id" />
