@@ -164,6 +164,7 @@
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="312cEu" id="3ASzZs53yn9">
@@ -688,15 +689,28 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="7kzfSagLdid" role="3clF47">
         <node concept="3clFbF" id="7kzfSagM3BI" role="3cqZAp">
-          <node concept="3y3z36" id="7kzfSagM4b4" role="3clFbG">
-            <node concept="10Nm6u" id="7kzfSagM4dg" role="3uHU7w" />
-            <node concept="3EllGN" id="7kzfSagM3Sv" role="3uHU7B">
-              <node concept="37vLTw" id="7kzfSagM3UK" role="3ElVtu">
-                <ref role="3cqZAo" node="7kzfSagLdiJ" resolve="n" />
+          <node concept="1Wc70l" id="5$pwnI0_2OE" role="3clFbG">
+            <node concept="2OqwBi" id="5$pwnI0_3Cf" role="3uHU7w">
+              <node concept="3EllGN" id="5$pwnI0_3cK" role="2Oq$k0">
+                <node concept="37vLTw" id="5$pwnI0_3jF" role="3ElVtu">
+                  <ref role="3cqZAo" node="7kzfSagLdiJ" resolve="n" />
+                </node>
+                <node concept="37vLTw" id="5$pwnI0_2RF" role="3ElQJh">
+                  <ref role="3cqZAo" node="3ASzZs53yp5" resolve="results" />
+                </node>
               </node>
-              <node concept="37vLTw" id="7kzfSagM3BH" role="3ElQJh">
-                <ref role="3cqZAo" node="3ASzZs53yp5" resolve="results" />
+              <node concept="3GX2aA" id="5$pwnI0_4TL" role="2OqNvi" />
+            </node>
+            <node concept="3y3z36" id="7kzfSagM4b4" role="3uHU7B">
+              <node concept="3EllGN" id="7kzfSagM3Sv" role="3uHU7B">
+                <node concept="37vLTw" id="7kzfSagM3UK" role="3ElVtu">
+                  <ref role="3cqZAo" node="7kzfSagLdiJ" resolve="n" />
+                </node>
+                <node concept="37vLTw" id="7kzfSagM3BH" role="3ElQJh">
+                  <ref role="3cqZAo" node="3ASzZs53yp5" resolve="results" />
+                </node>
               </node>
+              <node concept="10Nm6u" id="7kzfSagM4dg" role="3uHU7w" />
             </node>
           </node>
         </node>
