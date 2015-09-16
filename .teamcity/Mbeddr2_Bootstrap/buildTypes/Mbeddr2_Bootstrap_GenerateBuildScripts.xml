@@ -11,7 +11,7 @@
     <build-runners>
       <runner id="RUNNER_73" name="Generate Build Scripts" type="Ant">
         <parameters>
-          <param name="ant.home" value="-Dmps.home=%teamcity.build.checkoutDir%/MPS -Dmps_home=%teamcity.build.checkoutDir%/MPS  -Dmbeddr.github.core.home=%teamcity.build.checkoutDir%/mbeddr.core" />
+          <param name="ant.home" value="-Dmps.home=MPS -Dmps_home=MPS  -Dmbeddr.github.core.home=%teamcity.build.checkoutDir%" />
           <param name="build-file-path" value="code/languages/build.xml" />
           <param name="target" value="build-allScripts" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
