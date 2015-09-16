@@ -214,7 +214,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4115,14 +4115,28 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="4Bw8ULeOVvl" role="3cqZAp">
-                    <node concept="2OqwBi" id="4Bw8ULeOVvm" role="3clFbG">
-                      <node concept="3cpWsa" id="4Bw8ULeOVvn" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                  <node concept="3clFbJ" id="GOHz9eqrNO" role="3cqZAp">
+                    <node concept="3clFbS" id="GOHz9eqrNQ" role="3clFbx">
+                      <node concept="3clFbF" id="EyZPkuQzJx" role="3cqZAp">
+                        <node concept="2OqwBi" id="EyZPkuQ$5e" role="3clFbG">
+                          <node concept="37vLTw" id="EyZPkuQzJv" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="EyZPkuQ_lQ" role="2OqNvi">
+                            <node concept="Xl_RD" id="EyZPkuQ_uO" role="25WWJ7">
+                              <property role="Xl_RC" value="--full-slice" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
-                      <node concept="TSZUe" id="4Bw8ULeOVvo" role="2OqNvi">
-                        <node concept="Xl_RD" id="4Bw8ULeOVvp" role="25WWJ7">
-                          <property role="Xl_RC" value="--full-slice" />
+                    </node>
+                    <node concept="3fqX7Q" id="GOHz9eqs4p" role="3clFbw">
+                      <node concept="2OqwBi" id="GOHz9eqssH" role="3fr31v">
+                        <node concept="37vLTw" id="GOHz9eqskb" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                        </node>
+                        <node concept="2S8uIT" id="GOHz9eqsU4" role="2OqNvi">
+                          <ref role="2S8YL0" node="oxt36$9nfo" resolve="showProperties" />
                         </node>
                       </node>
                     </node>
