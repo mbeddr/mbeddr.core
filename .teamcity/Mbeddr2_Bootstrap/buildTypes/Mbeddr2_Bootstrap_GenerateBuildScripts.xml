@@ -4,7 +4,6 @@
   <description />
   <settings>
     <options>
-      <option name="checkoutDirectory" value="%teamcity.build.checkoutDir%/mbeddr.core" />
       <option name="cleanBuild" value="true" />
     </options>
     <parameters />
