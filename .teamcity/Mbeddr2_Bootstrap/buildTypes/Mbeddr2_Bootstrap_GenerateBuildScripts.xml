@@ -28,6 +28,13 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
+    <build-extensions>
+      <extension id="jetbrains.agent.free.space" type="jetbrains.agent.free.space">
+        <parameters>
+          <param name="free-space-work" value="6gb" />
+        </parameters>
+      </extension>
+    </build-extensions>
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
