@@ -3,6 +3,9 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.spawner/spawner.msd" folder="" />
     </projectModules>
   </component>

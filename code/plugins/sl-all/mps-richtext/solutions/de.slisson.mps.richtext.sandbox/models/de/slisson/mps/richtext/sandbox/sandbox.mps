@@ -5,12 +5,12 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="4e0df6bd-e265-4d63-9ca0-ca97e44cf841" name="de.slisson.mps.javadoc" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="53gy" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent(JDK/java.util.concurrent@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -81,7 +81,7 @@
         </node>
         <node concept="3G19kp" id="4$G0AukZXji" role="19SJt6">
           <property role="3G19kM" value="Collection" />
-          <ref role="3G19kK" to="k7g3:~Collection" resolve="Collection" />
+          <ref role="3G19kK" to="33ny:~Collection" resolve="Collection" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiP" role="19SJt6">
           <property role="19SUeA" value=" operations,\nqueues provide additional insertion, extraction, and inspection\noperations.  Each of these methods exists in two forms: one throws\nan exception if the operation fails, the other returns a special\nvalue (either &lt;tt&gt;null&lt;/tt&gt; or &lt;tt&gt;false&lt;/tt&gt;, depending on the\noperation).  The latter form of the insert operation is deion fails, the other returns a special\nvalue (either &lt;tt&gt;null&lt;/tt&gt; or &lt;tt&gt;false&lt;/tt&gt;, depending on the\noperation).  The latter form of the insert operation is designed\nspecifically for use with capacity-restricted &lt;tt&gt;Queue&lt;/tt&gt;\nimplementations; in most implementations, insert operations cannot\nfail.\n\n&lt;p&gt;\n&lt;table BORDER CELLPADDING=3 CELLSPACING=1&gt;\n &lt;tr&gt;\n   &lt;td&gt;&lt;/td&gt;\n   &lt;td ALIGN=CENTER&gt;&lt;em&gt;Throws exception&lt;/em&gt;&lt;/td&gt;\n   &lt;td ALIGN=CENTER&gt;&lt;em&gt;Returns special value&lt;/em&gt;&lt;/td&gt;\n &lt;/tr&gt;\n &lt;tr&gt;\n   &lt;td&gt;" />
@@ -117,49 +117,49 @@
           <property role="19SUeA" value="&lt;\/td&gt;\n   &lt;td&gt;{@link #element element()}&lt;\/td&gt;\n   &lt;td&gt;{@link #peek peek()}&lt;\/td&gt;\n &lt;\/tr&gt;\n&lt;\/table&gt;\n\n&lt;p&gt;Queues typically, but do not necessarily, order elements in a\nFIFO (first-in-first-out) manner.  Among the exceptions are\npriority queues, which order elements according to a supplied\ncomparator, or the elements' natural ordering, and LIFO queues (or\nstacks) which order the elements LIFO (last-in-first-out).\nWhatever the ordering used, the &lt;em&gt;head&lt;\/em&gt; of the queue is that\nelement which would be removed by a call to {@link #remove() } or\n{@link #poll()}.  In a FIFO queue, all new elements are inserted at\nthe &lt;em&gt; tail&lt;\/em&gt; of the queue. Other kinds of queues may use\ndifferent placement rules.  Every &lt;tt&gt;Queue&lt;\/tt&gt; implementation\nmust specify its ordering properties.\n\n&lt;p&gt;The {@link #offer offer} method inserts an element if possible,\notherwise returning &lt;tt&gt;false&lt;\/tt&gt;.  This differs from the {@link\njava.util.Collection#add Collection.add} method, which can fail to\nadd an element only by throwing an unchecked exception.  The\n&lt;tt&gt;offer&lt;\/tt&gt; method is designed for use when failure is a normal,\nrather than exceptional occurrence, for example, in fixed-capacity\n(or &amp;quot;bounded&amp;quot;) queues.\n\n&lt;p&gt;The {@link #remove()} and {@link #poll()} methods remove and\nreturn the head of the queue.\nExactly which element is removed from the queue is a\nfunction of the queue's ordering policy, which differs from\nimplementation to implementation. The &lt;tt&gt;remove()&lt;\/tt&gt; and\n&lt;tt&gt;poll()&lt;\/tt&gt; methods differ only in their behavior when the\nqueue is empty: the &lt;tt&gt;remove()&lt;\/tt&gt; method throws an exception,\nwhile the &lt;tt&gt;poll()&lt;\/tt&gt; method returns &lt;tt&gt;null&lt;\/tt&gt;.\n\n&lt;p&gt;The {@link #element()} and {@link #peek()} methods return, but do\nnot remove, the head of the queue.\n\n&lt;p&gt;The &lt;tt&gt;Queue&lt;\/tt&gt; interface does not define the &lt;i&gt;blocking queue\nmethods&lt;\/i&gt;, which are common in concurrent programming.  These methods,\nwhich wait for elements to appear or for space to become available, are\ndefined in the {@link java.util.concurrent.BlockingQueue} interface, which\nextends this interface.\n\n&lt;p&gt;&lt;tt&gt;Queue&lt;\/tt&gt; implementations generally do not allow insertion\nof &lt;tt&gt;null&lt;\/tt&gt; elements, although some implementations, such as\n{@link LinkedList}, do not prohibit insertion of &lt;tt&gt;null&lt;\/tt&gt;.\nEven in the implementations that permit it, &lt;tt&gt;null&lt;\/tt&gt; should\nnot be inserted into a &lt;tt&gt;Queue&lt;\/tt&gt;, as &lt;tt&gt;null&lt;\/tt&gt; is also\nused as a special return value by the &lt;tt&gt;poll&lt;\/tt&gt; method to\nindicate that the queue contains no elements.\n\n&lt;p&gt;&lt;tt&gt;Queue&lt;\/tt&gt; implementations generally do not define\nelement-based versions of methods &lt;tt&gt;equals&lt;\/tt&gt; and\n&lt;tt&gt;hashCode&lt;\/tt&gt; but instead inherit the identity based versions\nfrom class &lt;tt&gt;Object&lt;\/tt&gt;, because element-based equality is not\nalways well-defined for queues with the same elements but different\nordering properties.\n\n\n&lt;p&gt;This interface is a member of the\n&lt;a href=\&quot;{@docRoot}\/..\/technotes\/guides\/collections\/index.html\&quot;&gt;\nJava Collections Framework&lt;\/a&gt;.\n\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj8" role="19SJt6">
-          <ref role="3G1dAs" to="k7g3:~Collection" resolve="Collection" />
+          <ref role="3G1dAs" to="33ny:~Collection" resolve="Collection" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiT" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj7" role="19SJt6">
-          <ref role="3G1dAs" to="k7g3:~LinkedList" resolve="LinkedList" />
+          <ref role="3G1dAs" to="33ny:~LinkedList" resolve="LinkedList" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiU" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj6" role="19SJt6">
-          <ref role="3G1dAs" to="k7g3:~PriorityQueue" resolve="PriorityQueue" />
+          <ref role="3G1dAs" to="33ny:~PriorityQueue" resolve="PriorityQueue" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiV" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj5" role="19SJt6">
-          <ref role="3G1dAs" to="53gy:~LinkedBlockingQueue" resolve="LinkedBlockingQueue" />
+          <ref role="3G1dAs" to="5zyv:~LinkedBlockingQueue" resolve="LinkedBlockingQueue" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiW" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj4" role="19SJt6">
-          <ref role="3G1dAs" to="53gy:~BlockingQueue" resolve="BlockingQueue" />
+          <ref role="3G1dAs" to="5zyv:~BlockingQueue" resolve="BlockingQueue" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiX" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj3" role="19SJt6">
-          <ref role="3G1dAs" to="53gy:~ArrayBlockingQueue" resolve="ArrayBlockingQueue" />
+          <ref role="3G1dAs" to="5zyv:~ArrayBlockingQueue" resolve="ArrayBlockingQueue" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiY" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj2" role="19SJt6">
-          <ref role="3G1dAs" to="53gy:~LinkedBlockingQueue" resolve="LinkedBlockingQueue" />
+          <ref role="3G1dAs" to="5zyv:~LinkedBlockingQueue" resolve="LinkedBlockingQueue" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXiZ" role="19SJt6">
           <property role="19SUeA" value="\n" />
         </node>
         <node concept="3G1dAn" id="4$G0AukZXj1" role="19SJt6">
-          <ref role="3G1dAs" to="53gy:~PriorityBlockingQueue" resolve="PriorityBlockingQueue" />
+          <ref role="3G1dAs" to="5zyv:~PriorityBlockingQueue" resolve="PriorityBlockingQueue" />
         </node>
         <node concept="19SUe$" id="4$G0AukZXj0" role="19SJt6">
           <property role="19SUeA" value="&#10;@since 1.5&#10;@author Doug Lea&#10;" />

@@ -2,12 +2,12 @@
 <model ref="r:748eba57-285a-4bef-8d61-fdc378bdf275(de.itemis.mps.editor.diagram.runtime.coordinates)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
-    <import index="ar19" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="zfc2" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.annotations(MPS.OpenAPI/org.jetbrains.mps.annotations@java_stub)" />
+    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="lhc4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.annotations(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -175,14 +175,14 @@
     <node concept="3clFb_" id="4xcnxwSzmu6" role="jymVt">
       <property role="TrG5h" value="getTransformation" />
       <node concept="3uibUv" id="4xcnxwSzmu7" role="3clF45">
-        <ref role="3uigEE" to="ar19:~AffineTransform" resolve="AffineTransform" />
+        <ref role="3uigEE" to="fbzs:~AffineTransform" resolve="AffineTransform" />
       </node>
       <node concept="3Tmbuc" id="4xcnxwSzmu8" role="1B3o_S" />
       <node concept="3clFbS" id="4xcnxwSzmu9" role="3clF47">
         <node concept="3clFbF" id="4xcnxwSzmua" role="3cqZAp">
           <node concept="2YIFZM" id="4xcnxwSzmub" role="3clFbG">
-            <ref role="37wK5l" to="ar19:~AffineTransform.getTranslateInstance(double,double):java.awt.geom.AffineTransform" resolve="getTranslateInstance" />
-            <ref role="1Pybhc" to="ar19:~AffineTransform" resolve="AffineTransform" />
+            <ref role="37wK5l" to="fbzs:~AffineTransform.getTranslateInstance(double,double):java.awt.geom.AffineTransform" resolve="getTranslateInstance" />
+            <ref role="1Pybhc" to="fbzs:~AffineTransform" resolve="AffineTransform" />
             <node concept="3b6qkQ" id="4xcnxwSzmuc" role="37wK5m">
               <property role="$nhwW" value="0.0" />
             </node>
@@ -215,18 +215,18 @@
             <node concept="YS8fn" id="4xcnxwSAs2e" role="3cqZAp">
               <node concept="2ShNRf" id="4xcnxwSAs7U" role="YScLw">
                 <node concept="1pGfFk" id="4xcnxwSAsiG" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="4xcnxwSAtHf" role="37wK5m">
                     <node concept="3cpWs3" id="4xcnxwSAu2T" role="3uHU7B">
                       <node concept="2OqwBi" id="4xcnxwSAuAk" role="3uHU7w">
                         <node concept="2OqwBi" id="4xcnxwSAujF" role="2Oq$k0">
                           <node concept="Xjq3P" id="4xcnxwSAu8y" role="2Oq$k0" />
                           <node concept="liA8E" id="4xcnxwSAume" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                           </node>
                         </node>
                         <node concept="liA8E" id="4xcnxwSAuJJ" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="4xcnxwSAvmQ" role="3uHU7B">
@@ -235,11 +235,11 @@
                             <node concept="2OqwBi" id="4xcnxwSAvPb" role="2Oq$k0">
                               <node concept="Xjq3P" id="4xcnxwSAvJM" role="2Oq$k0" />
                               <node concept="liA8E" id="4xcnxwSAvUA" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                               </node>
                             </node>
                             <node concept="liA8E" id="4xcnxwSAwmD" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="4xcnxwSAvmW" role="3uHU7B">
@@ -281,7 +281,7 @@
                     <ref role="37wK5l" node="4xcnxwSzmu6" resolve="getTransformation" />
                   </node>
                   <node concept="liA8E" id="4xcnxwSzmur" role="2OqNvi">
-                    <ref role="37wK5l" to="ar19:~AffineTransform.createInverse():java.awt.geom.AffineTransform" resolve="createInverse" />
+                    <ref role="37wK5l" to="fbzs:~AffineTransform.createInverse():java.awt.geom.AffineTransform" resolve="createInverse" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="4xcnxwSzmus" role="37wK5m">
@@ -298,7 +298,7 @@
               <node concept="YS8fn" id="4xcnxwSzmuw" role="3cqZAp">
                 <node concept="2ShNRf" id="4xcnxwSzmux" role="YScLw">
                   <node concept="1pGfFk" id="4xcnxwSzmuy" role="2ShVmc">
-                    <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
                     <node concept="37vLTw" id="4xcnxwSzmuz" role="37wK5m">
                       <ref role="3cqZAo" node="4xcnxwSzmu$" resolve="ex" />
                     </node>
@@ -309,7 +309,7 @@
             <node concept="3cpWsn" id="4xcnxwSzmu$" role="TDEfY">
               <property role="TrG5h" value="ex" />
               <node concept="3uibUv" id="4xcnxwSzmu_" role="1tU5fm">
-                <ref role="3uigEE" to="ar19:~NoninvertibleTransformException" resolve="NoninvertibleTransformException" />
+                <ref role="3uigEE" to="fbzs:~NoninvertibleTransformException" resolve="NoninvertibleTransformException" />
               </node>
             </node>
           </node>
@@ -361,11 +361,11 @@
           <node concept="3cpWsn" id="4xcnxwSzmuQ" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="4xcnxwSzmuR" role="1tU5fm">
-              <ref role="3uigEE" to="ar19:~Point2D" resolve="Point2D" />
+              <ref role="3uigEE" to="fbzs:~Point2D" resolve="Point2D" />
             </node>
             <node concept="2ShNRf" id="4xcnxwSzmuS" role="33vP2m">
               <node concept="1pGfFk" id="4xcnxwSzmuT" role="2ShVmc">
-                <ref role="37wK5l" to="ar19:~Point2D$Double.&lt;init&gt;()" resolve="Point2D.Double" />
+                <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;()" resolve="Point2D.Double" />
               </node>
             </node>
           </node>
@@ -376,10 +376,10 @@
               <ref role="3cqZAo" node="4xcnxwSzmvh" resolve="transformation" />
             </node>
             <node concept="liA8E" id="4xcnxwSzmuX" role="2OqNvi">
-              <ref role="37wK5l" to="ar19:~AffineTransform.transform(java.awt.geom.Point2D,java.awt.geom.Point2D):java.awt.geom.Point2D" resolve="transform" />
+              <ref role="37wK5l" to="fbzs:~AffineTransform.transform(java.awt.geom.Point2D,java.awt.geom.Point2D):java.awt.geom.Point2D" resolve="transform" />
               <node concept="2ShNRf" id="4xcnxwSzmuY" role="37wK5m">
                 <node concept="1pGfFk" id="4xcnxwSzmuZ" role="2ShVmc">
-                  <ref role="37wK5l" to="ar19:~Point2D$Double.&lt;init&gt;(double,double)" resolve="Point2D.Double" />
+                  <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" resolve="Point2D.Double" />
                   <node concept="2OqwBi" id="4xcnxwSzmv0" role="37wK5m">
                     <node concept="37vLTw" id="4xcnxwSzmv1" role="2Oq$k0">
                       <ref role="3cqZAo" node="4xcnxwSzmvj" resolve="coordinates" />
@@ -413,7 +413,7 @@
                   <ref role="3cqZAo" node="4xcnxwSzmuQ" resolve="result" />
                 </node>
                 <node concept="liA8E" id="4xcnxwSzmvc" role="2OqNvi">
-                  <ref role="37wK5l" to="ar19:~Point2D.getX():double" resolve="getX" />
+                  <ref role="37wK5l" to="fbzs:~Point2D.getX():double" resolve="getX" />
                 </node>
               </node>
               <node concept="2OqwBi" id="4xcnxwSzmvd" role="37wK5m">
@@ -421,7 +421,7 @@
                   <ref role="3cqZAo" node="4xcnxwSzmuQ" resolve="result" />
                 </node>
                 <node concept="liA8E" id="4xcnxwSzmvf" role="2OqNvi">
-                  <ref role="37wK5l" to="ar19:~Point2D.getY():double" resolve="getY" />
+                  <ref role="37wK5l" to="fbzs:~Point2D.getY():double" resolve="getY" />
                 </node>
               </node>
               <node concept="37vLTw" id="4xcnxwSzmvg" role="37wK5m">
@@ -434,7 +434,7 @@
       <node concept="37vLTG" id="4xcnxwSzmvh" role="3clF46">
         <property role="TrG5h" value="transformation" />
         <node concept="3uibUv" id="4xcnxwSzmvi" role="1tU5fm">
-          <ref role="3uigEE" to="ar19:~AffineTransform" resolve="AffineTransform" />
+          <ref role="3uigEE" to="fbzs:~AffineTransform" resolve="AffineTransform" />
         </node>
       </node>
       <node concept="37vLTG" id="4xcnxwSzmvj" role="3clF46">
@@ -596,7 +596,7 @@
     </node>
     <node concept="3Tm1VV" id="4xcnxwSzmwr" role="1B3o_S" />
     <node concept="2AHcQZ" id="4xcnxwSzmws" role="2AJF6D">
-      <ref role="2AI5Lk" to="zfc2:~Immutable" resolve="Immutable" />
+      <ref role="2AI5Lk" to="lhc4:~Immutable" resolve="Immutable" />
     </node>
     <node concept="3uibUv" id="4xcnxwSzmwt" role="EKbjA">
       <ref role="3uigEE" node="4xcnxwSzmx5" resolve="ICoordinates" />

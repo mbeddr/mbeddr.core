@@ -547,9 +547,6 @@
           <node concept="3SKdUq" id="1HS8Q$jJ3Kt" role="3SKWNk">
             <property role="3SKdUp" value="currently just a simple wrapper for this, " />
           </node>
-          <node concept="3SKdUq" id="1HS8Q$jJfZQ" role="3SKWNk">
-            <property role="3SKdUp" value=" " />
-          </node>
         </node>
         <node concept="3SKdUt" id="1HS8Q$jJgCB" role="3cqZAp">
           <node concept="3SKdUq" id="1HS8Q$jJgHr" role="3SKWNk">

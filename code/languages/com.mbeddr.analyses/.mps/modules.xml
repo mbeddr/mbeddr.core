@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.components/com.mbeddr.analyses.components.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />

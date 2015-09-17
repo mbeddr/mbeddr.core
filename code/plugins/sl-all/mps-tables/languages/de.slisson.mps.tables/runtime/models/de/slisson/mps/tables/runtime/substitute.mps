@@ -8,24 +8,24 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
   </languages>
   <imports>
     <import index="v2gd" ref="r:c6ef9172-b9db-4546-97ce-db76c1f2586f(de.slisson.mps.tables.runtime)" />
-    <import index="4ky7" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellMenu(jetbrains.mps.nodeEditor.cellMenu@java_stub)" />
-    <import index="7hml" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.smodel.action(jetbrains.mps.smodel.action@java_stub)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(java.util@java_stub)" />
-    <import index="nu8v" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="as9o" ref="f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(org.jetbrains.annotations@java_stub)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(jetbrains.mps.smodel@java_stub)" />
+    <import index="6lvu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellMenu()" />
+    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action()" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor()" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util()" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells()" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations()" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel()" />
     <import index="hm5v" ref="r:3d8b4628-659e-4af1-a607-3cc893005b62(de.slisson.mps.tables.runtime.cells)" />
     <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="sse1" ref="r:caea7020-da0a-4ba8-aff6-69334bbc9e02(de.slisson.mps.tables.runtime.simplegrid)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="jsgz" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" implicit="true" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -153,12 +153,12 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug" />
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -191,7 +191,7 @@
       <node concept="3Tm1VV" id="6T7OHMQjWz9" role="1B3o_S" />
       <node concept="3clFbS" id="6T7OHMQjWza" role="3clF47">
         <node concept="XkiVB" id="6T7OHMQjWE9" role="3cqZAp">
-          <ref role="37wK5l" to="4ky7:~AbstractNodeSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractNodeSubstituteInfo" />
+          <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractNodeSubstituteInfo" />
           <node concept="37vLTw" id="6T7OHMQjWF4" role="37wK5m">
             <ref role="3cqZAo" node="6T7OHMQjWAC" resolve="editorContext" />
           </node>
@@ -230,7 +230,7 @@
       <node concept="37vLTG" id="6T7OHMQjWAC" role="3clF46">
         <property role="TrG5h" value="editorContext" />
         <node concept="3uibUv" id="6T7OHMQjWAB" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="37vLTG" id="6T7OHMQk3EX" role="3clF46">
@@ -249,7 +249,7 @@
     <node concept="2tJIrI" id="6T7OHMQjVBj" role="jymVt" />
     <node concept="3Tm1VV" id="6T7OHMQjsAN" role="1B3o_S" />
     <node concept="3uibUv" id="6T7OHMQjUb2" role="1zkMxy">
-      <ref role="3uigEE" to="4ky7:~AbstractNodeSubstituteInfo" resolve="AbstractNodeSubstituteInfo" />
+      <ref role="3uigEE" to="6lvu:~AbstractNodeSubstituteInfo" resolve="AbstractNodeSubstituteInfo" />
     </node>
     <node concept="3clFb_" id="6T7OHMQjUHk" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -258,9 +258,9 @@
       <property role="IEkAT" value="false" />
       <node concept="3Tmbuc" id="6T7OHMQjUHl" role="1B3o_S" />
       <node concept="3uibUv" id="6T7OHMQjUHn" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="6T7OHMQjUHo" role="11_B2D">
-          <ref role="3uigEE" to="nu8v:~SubstituteAction" resolve="SubstituteAction" />
+          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
         </node>
       </node>
       <node concept="3clFbS" id="6T7OHMQjUHp" role="3clF47">
@@ -268,14 +268,14 @@
           <node concept="3cpWsn" id="6T7OHMQjV4P" role="3cpWs9">
             <property role="TrG5h" value="setter" />
             <node concept="3uibUv" id="6T7OHMQjV4Q" role="1tU5fm">
-              <ref role="3uigEE" to="7hml:~IChildNodeSetter" resolve="IChildNodeSetter" />
+              <ref role="3uigEE" to="zce0:~IChildNodeSetter" resolve="IChildNodeSetter" />
             </node>
             <node concept="2ShNRf" id="6T7OHMQjV6C" role="33vP2m">
               <node concept="YeOm9" id="6T7OHMQjVbY" role="2ShVmc">
                 <node concept="1Y3b0j" id="6T7OHMQjVc1" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="7hml:~AbstractChildNodeSetter" resolve="AbstractChildNodeSetter" />
-                  <ref role="37wK5l" to="7hml:~AbstractChildNodeSetter.&lt;init&gt;()" resolve="AbstractChildNodeSetter" />
+                  <ref role="1Y3XeK" to="zce0:~AbstractChildNodeSetter" resolve="AbstractChildNodeSetter" />
+                  <ref role="37wK5l" to="zce0:~AbstractChildNodeSetter.&lt;init&gt;()" resolve="AbstractChildNodeSetter" />
                   <node concept="3Tm1VV" id="6T7OHMQjVc2" role="1B3o_S" />
                   <node concept="3clFb_" id="6T7OHMQjWOG" role="jymVt">
                     <property role="1EzhhJ" value="false" />
@@ -299,10 +299,10 @@
                     <node concept="37vLTG" id="6T7OHMQjWOQ" role="3clF46">
                       <property role="TrG5h" value="scope" />
                       <node concept="3uibUv" id="4IfobgLsBgq" role="1tU5fm">
-                        <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+                        <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
                       </node>
                       <node concept="2AHcQZ" id="4IfobgLsBz7" role="2AJF6D">
-                        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+                        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="6T7OHMQjWOW" role="3clF47">
@@ -319,7 +319,7 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="6T7OHMQjWOX" role="2AJF6D">
-                      <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
                   <node concept="2tJIrI" id="6T7OHMQjXii" role="jymVt" />
@@ -330,8 +330,8 @@
         </node>
         <node concept="3cpWs6" id="6T7OHMQjVny" role="3cqZAp">
           <node concept="2YIFZM" id="6T7OHMQjVx7" role="3cqZAk">
-            <ref role="37wK5l" to="7hml:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.smodel.IOperationContext):java.util.List" resolve="createChildNodeSubstituteActions" />
-            <ref role="1Pybhc" to="7hml:~ModelActions" resolve="ModelActions" />
+            <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.smodel.IOperationContext):java.util.List" resolve="createChildNodeSubstituteActions" />
+            <ref role="1Pybhc" to="zce0:~ModelActions" resolve="ModelActions" />
             <node concept="37vLTw" id="6T7OHMQk40g" role="37wK5m">
               <ref role="3cqZAo" node="6T7OHMQk2Eo" resolve="myParentNode" />
             </node>
@@ -349,17 +349,17 @@
             </node>
             <node concept="2OqwBi" id="6T7OHMQkfcO" role="37wK5m">
               <node concept="1rXfSq" id="6T7OHMQkeGj" role="2Oq$k0">
-                <ref role="37wK5l" to="4ky7:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
               </node>
               <node concept="liA8E" id="6T7OHMQkgqF" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="6T7OHMQjWFw" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="6T7OHMQjXy8" role="jymVt" />
@@ -392,7 +392,7 @@
       <property role="TrG5h" value="myDelegate" />
       <node concept="3Tm6S6" id="4381QB0uHEB" role="1B3o_S" />
       <node concept="3uibUv" id="4381QB0uHPf" role="1tU5fm">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
     </node>
     <node concept="312cEg" id="4381QB0uLpI" role="jymVt">
@@ -475,7 +475,7 @@
     <node concept="3clFb_" id="66vYtX65G4V" role="jymVt">
       <property role="TrG5h" value="getEditorContext" />
       <node concept="3uibUv" id="66vYtX67cA6" role="3clF45">
-        <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+        <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
       </node>
       <node concept="3Tm1VV" id="66vYtX65G4Y" role="1B3o_S" />
       <node concept="3clFbS" id="66vYtX65G4Z" role="3clF47">
@@ -485,7 +485,7 @@
               <ref role="3cqZAo" node="4381QB0ydkk" resolve="myGridCell" />
             </node>
             <node concept="liA8E" id="66vYtX67Ikt" role="2OqNvi">
-              <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
             </node>
           </node>
         </node>
@@ -522,7 +522,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="40oIQyHX7Y5" role="2OqNvi">
-                    <ref role="37wK5l" to="nu8v:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                   </node>
                 </node>
               </node>
@@ -533,7 +533,7 @@
                   <node concept="37vLTI" id="40oIQyHXkoD" role="3clFbG">
                     <node concept="2ShNRf" id="40oIQyHXkpN" role="37vLTx">
                       <node concept="1pGfFk" id="40oIQyHXldA" role="2ShVmc">
-                        <ref role="37wK5l" to="4ky7:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
+                        <ref role="37wK5l" to="6lvu:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
                         <node concept="2OqwBi" id="40oIQyHXoTs" role="37wK5m">
                           <node concept="37vLTw" id="40oIQyHXoLm" role="2Oq$k0">
                             <ref role="3cqZAo" node="40oIQyHX6U_" resolve="wrappedNode" />
@@ -554,7 +554,7 @@
                             <ref role="3cqZAo" node="4381QB0ydkk" resolve="myGridCell" />
                           </node>
                           <node concept="liA8E" id="40oIQyHXAtJ" role="2OqNvi">
-                            <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
+                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
                           </node>
                         </node>
                       </node>
@@ -576,7 +576,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="40oIQyHXk1x" role="2OqNvi">
-                    <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="40oIQyHX8ea" role="3uHU7B">
@@ -635,7 +635,7 @@
     <node concept="3clFb_" id="4381QB0vp_j" role="jymVt">
       <property role="TrG5h" value="getDelegate" />
       <node concept="3uibUv" id="4381QB0vwlI" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
       <node concept="3Tm6S6" id="4381QB0vvUg" role="1B3o_S" />
       <node concept="3clFbS" id="4381QB0vp_n" role="3clF47">
@@ -654,7 +654,7 @@
     <node concept="2tJIrI" id="4381QB0vp7v" role="jymVt" />
     <node concept="3Tm1VV" id="4381QB0uEMq" role="1B3o_S" />
     <node concept="3uibUv" id="4381QB0uFW3" role="EKbjA">
-      <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+      <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
     </node>
     <node concept="3clFb_" id="4381QB0uFZu" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -663,9 +663,9 @@
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="4381QB0uFZv" role="1B3o_S" />
       <node concept="3uibUv" id="4381QB0uFZx" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="4381QB0uFZy" role="11_B2D">
-          <ref role="3uigEE" to="nu8v:~SubstituteAction" resolve="SubstituteAction" />
+          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
         </node>
       </node>
       <node concept="37vLTG" id="4381QB0uFZz" role="3clF46">
@@ -681,9 +681,9 @@
           <node concept="3cpWsn" id="HfK$99fvlo" role="3cpWs9">
             <property role="TrG5h" value="actions" />
             <node concept="3uibUv" id="HfK$99fvll" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="HfK$99fvs$" role="11_B2D">
-                <ref role="3uigEE" to="nu8v:~SubstituteAction" resolve="SubstituteAction" />
+                <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
               </node>
             </node>
             <node concept="2EnYce" id="4381QB0vzGi" role="33vP2m">
@@ -691,7 +691,7 @@
                 <ref role="37wK5l" node="4381QB0vp_j" resolve="getDelegate" />
               </node>
               <node concept="liA8E" id="4381QB0v$8X" role="2OqNvi">
-                <ref role="37wK5l" to="nu8v:~SubstituteInfo.getMatchingActions(java.lang.String,boolean):java.util.List" resolve="getMatchingActions" />
+                <ref role="37wK5l" to="f4zo:~SubstituteInfo.getMatchingActions(java.lang.String,boolean):java.util.List" resolve="getMatchingActions" />
                 <node concept="37vLTw" id="4381QB0v$gL" role="37wK5m">
                   <ref role="3cqZAo" node="4381QB0uFZz" resolve="string" />
                 </node>
@@ -706,7 +706,7 @@
           <node concept="3K4zz7" id="HfK$99fzWX" role="3cqZAk">
             <node concept="2ShNRf" id="HfK$99f$DD" role="3K4E3e">
               <node concept="1pGfFk" id="HfK$99fBYO" role="2ShVmc">
-                <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
               </node>
             </node>
             <node concept="37vLTw" id="HfK$99fBZH" role="3K4GZi">
@@ -736,7 +736,7 @@
               <ref role="37wK5l" node="4381QB0vp_j" resolve="getDelegate" />
             </node>
             <node concept="liA8E" id="4381QB0vldz" role="2OqNvi">
-              <ref role="37wK5l" to="nu8v:~SubstituteInfo.getOriginalText():java.lang.String" resolve="getOriginalText" />
+              <ref role="37wK5l" to="f4zo:~SubstituteInfo.getOriginalText():java.lang.String" resolve="getOriginalText" />
             </node>
           </node>
         </node>
@@ -749,9 +749,9 @@
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="4381QB0uFZM" role="1B3o_S" />
       <node concept="3uibUv" id="4381QB0uFZO" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="4381QB0uFZP" role="11_B2D">
-          <ref role="3uigEE" to="nu8v:~SubstituteAction" resolve="SubstituteAction" />
+          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
         </node>
       </node>
       <node concept="37vLTG" id="4381QB0uFZQ" role="3clF46">
@@ -765,7 +765,7 @@
       <node concept="37vLTG" id="4381QB0uFZU" role="3clF46">
         <property role="TrG5h" value="cell" />
         <node concept="3uibUv" id="4381QB0uFZV" role="1tU5fm">
-          <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
       </node>
       <node concept="3clFbS" id="4381QB0uFZW" role="3clF47">
@@ -773,9 +773,9 @@
           <node concept="3cpWsn" id="HfK$99g4V_" role="3cpWs9">
             <property role="TrG5h" value="actions" />
             <node concept="3uibUv" id="HfK$99g4VA" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="HfK$99g4VB" role="11_B2D">
-                <ref role="3uigEE" to="nu8v:~SubstituteAction" resolve="SubstituteAction" />
+                <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
               </node>
             </node>
             <node concept="2EnYce" id="HfK$99giUB" role="33vP2m">
@@ -783,7 +783,7 @@
                 <ref role="37wK5l" node="4381QB0vp_j" resolve="getDelegate" />
               </node>
               <node concept="liA8E" id="HfK$99giUD" role="2OqNvi">
-                <ref role="37wK5l" to="nu8v:~SubstituteInfo.getSmartMatchingActions(java.lang.String,boolean,jetbrains.mps.openapi.editor.cells.EditorCell):java.util.List" resolve="getSmartMatchingActions" />
+                <ref role="37wK5l" to="f4zo:~SubstituteInfo.getSmartMatchingActions(java.lang.String,boolean,jetbrains.mps.openapi.editor.cells.EditorCell):java.util.List" resolve="getSmartMatchingActions" />
                 <node concept="37vLTw" id="HfK$99giUE" role="37wK5m">
                   <ref role="3cqZAo" node="4381QB0uFZQ" resolve="string" />
                 </node>
@@ -801,7 +801,7 @@
           <node concept="3K4zz7" id="HfK$99g4VI" role="3cqZAk">
             <node concept="2ShNRf" id="HfK$99g4VJ" role="3K4E3e">
               <node concept="1pGfFk" id="HfK$99g4VK" role="2ShVmc">
-                <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
               </node>
             </node>
             <node concept="37vLTw" id="HfK$99g4VL" role="3K4GZi">
@@ -843,7 +843,7 @@
               <ref role="37wK5l" node="4381QB0vp_j" resolve="getDelegate" />
             </node>
             <node concept="liA8E" id="4381QB0vBMP" role="2OqNvi">
-              <ref role="37wK5l" to="nu8v:~SubstituteInfo.hasExactlyNActions(java.lang.String,boolean,int):boolean" resolve="hasExactlyNActions" />
+              <ref role="37wK5l" to="f4zo:~SubstituteInfo.hasExactlyNActions(java.lang.String,boolean,int):boolean" resolve="hasExactlyNActions" />
               <node concept="37vLTw" id="4381QB0vBTT" role="37wK5m">
                 <ref role="3cqZAo" node="4381QB0uG03" resolve="string" />
               </node>
@@ -872,7 +872,7 @@
               <ref role="37wK5l" node="4381QB0vp_j" resolve="getDelegate" />
             </node>
             <node concept="liA8E" id="4381QB0vDm5" role="2OqNvi">
-              <ref role="37wK5l" to="nu8v:~SubstituteInfo.invalidateActions():void" resolve="invalidateActions" />
+              <ref role="37wK5l" to="f4zo:~SubstituteInfo.invalidateActions():void" resolve="invalidateActions" />
             </node>
           </node>
         </node>
@@ -896,7 +896,7 @@
               <ref role="37wK5l" node="4381QB0vp_j" resolve="getDelegate" />
             </node>
             <node concept="liA8E" id="4381QB0vEqR" role="2OqNvi">
-              <ref role="37wK5l" to="nu8v:~SubstituteInfo.setOriginalText(java.lang.String):void" resolve="setOriginalText" />
+              <ref role="37wK5l" to="f4zo:~SubstituteInfo.setOriginalText(java.lang.String):void" resolve="setOriginalText" />
               <node concept="37vLTw" id="4381QB0vExV" role="37wK5m">
                 <ref role="3cqZAo" node="4381QB0uG0l" resolve="string" />
               </node>
@@ -913,7 +913,7 @@
       <property role="TrG5h" value="myEditorContext" />
       <node concept="3Tm6S6" id="lPJxik8WqE" role="1B3o_S" />
       <node concept="3uibUv" id="lPJxik8Wrj" role="1tU5fm">
-        <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+        <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
       </node>
     </node>
     <node concept="2tJIrI" id="lPJxik8PmF" role="jymVt" />
@@ -935,7 +935,7 @@
       <node concept="37vLTG" id="lPJxik8Wtr" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="lPJxik8WxK" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
     </node>
@@ -953,7 +953,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="lPJxik9kPw" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
       <node concept="3Tm1VV" id="lPJxik91BV" role="1B3o_S" />
       <node concept="3clFbS" id="lPJxik91BW" role="3clF47">
@@ -975,7 +975,7 @@
     <node concept="3clFb_" id="lPJxik90uY" role="jymVt">
       <property role="TrG5h" value="forChild" />
       <node concept="3uibUv" id="lPJxik9kAW" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
       <node concept="3Tm1VV" id="lPJxik90v1" role="1B3o_S" />
       <node concept="3clFbS" id="lPJxik90v2" role="3clF47">
@@ -1025,7 +1025,7 @@
     <node concept="3clFb_" id="lPJxik8Pm4" role="jymVt">
       <property role="TrG5h" value="forChild" />
       <node concept="3uibUv" id="lPJxik8Pmn" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
       <node concept="3Tm1VV" id="lPJxik8Pm7" role="1B3o_S" />
       <node concept="3clFbS" id="lPJxik8Pm8" role="3clF47">
@@ -1060,14 +1060,14 @@
     <node concept="3clFb_" id="lPJxik8Xgp" role="jymVt">
       <property role="TrG5h" value="forChild" />
       <node concept="3uibUv" id="lPJxik8Xig" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
       <node concept="3Tm1VV" id="lPJxik8Xgs" role="1B3o_S" />
       <node concept="3clFbS" id="lPJxik8Xgt" role="3clF47">
         <node concept="3clFbF" id="lPJxik8Ycn" role="3cqZAp">
           <node concept="2ShNRf" id="lPJxik8Ycl" role="3clFbG">
             <node concept="1pGfFk" id="lPJxik8YyQ" role="2ShVmc">
-              <ref role="37wK5l" to="4ky7:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
+              <ref role="37wK5l" to="6lvu:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
               <node concept="37vLTw" id="lPJxik8Y$q" role="37wK5m">
                 <ref role="3cqZAo" node="lPJxik8Xks" resolve="parent" />
               </node>
@@ -1103,7 +1103,7 @@
     <node concept="3clFb_" id="lPJxikihYi" role="jymVt">
       <property role="TrG5h" value="forWrapper" />
       <node concept="3uibUv" id="lPJxikiPf6" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
       </node>
       <node concept="3Tm1VV" id="lPJxikihYl" role="1B3o_S" />
       <node concept="3clFbS" id="lPJxikihYm" role="3clF47">
@@ -1202,7 +1202,7 @@
       <node concept="3Tm1VV" id="7C0FR5_dv2M" role="1B3o_S" />
       <node concept="3clFbS" id="7C0FR5_dv2N" role="3clF47">
         <node concept="XkiVB" id="7C0FR5_dv2O" role="3cqZAp">
-          <ref role="37wK5l" to="4ky7:~AbstractNodeSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractNodeSubstituteInfo" />
+          <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractNodeSubstituteInfo" />
           <node concept="37vLTw" id="7C0FR5_dv2P" role="37wK5m">
             <ref role="3cqZAo" node="7C0FR5_dv32" resolve="editorContext" />
           </node>
@@ -1251,7 +1251,7 @@
       <node concept="37vLTG" id="7C0FR5_dv32" role="3clF46">
         <property role="TrG5h" value="editorContext" />
         <node concept="3uibUv" id="7C0FR5_dv33" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="37vLTG" id="7C0FR5_dv34" role="3clF46">
@@ -1276,7 +1276,7 @@
     <node concept="2tJIrI" id="7C0FR5_dv3a" role="jymVt" />
     <node concept="3Tm1VV" id="7C0FR5_dv3b" role="1B3o_S" />
     <node concept="3uibUv" id="7C0FR5_dv3c" role="1zkMxy">
-      <ref role="3uigEE" to="4ky7:~AbstractNodeSubstituteInfo" resolve="AbstractNodeSubstituteInfo" />
+      <ref role="3uigEE" to="6lvu:~AbstractNodeSubstituteInfo" resolve="AbstractNodeSubstituteInfo" />
     </node>
     <node concept="3clFb_" id="7C0FR5_dv3d" role="jymVt">
       <property role="IEkAT" value="false" />
@@ -1285,9 +1285,9 @@
       <property role="DiZV1" value="false" />
       <node concept="3Tmbuc" id="7C0FR5_dv3e" role="1B3o_S" />
       <node concept="3uibUv" id="7C0FR5_dv3f" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="7C0FR5_dv3g" role="11_B2D">
-          <ref role="3uigEE" to="nu8v:~SubstituteAction" resolve="SubstituteAction" />
+          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
         </node>
       </node>
       <node concept="3clFbS" id="7C0FR5_dv3h" role="3clF47">
@@ -1295,14 +1295,14 @@
           <node concept="3cpWsn" id="7C0FR5_dv3j" role="3cpWs9">
             <property role="TrG5h" value="setter" />
             <node concept="3uibUv" id="7C0FR5_dv3k" role="1tU5fm">
-              <ref role="3uigEE" to="7hml:~IChildNodeSetter" resolve="IChildNodeSetter" />
+              <ref role="3uigEE" to="zce0:~IChildNodeSetter" resolve="IChildNodeSetter" />
             </node>
             <node concept="2ShNRf" id="7C0FR5_dv3l" role="33vP2m">
               <node concept="YeOm9" id="7C0FR5_dv3m" role="2ShVmc">
                 <node concept="1Y3b0j" id="7C0FR5_dv3n" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="7hml:~AbstractChildNodeSetter" resolve="AbstractChildNodeSetter" />
-                  <ref role="37wK5l" to="7hml:~AbstractChildNodeSetter.&lt;init&gt;()" resolve="AbstractChildNodeSetter" />
+                  <ref role="1Y3XeK" to="zce0:~AbstractChildNodeSetter" resolve="AbstractChildNodeSetter" />
+                  <ref role="37wK5l" to="zce0:~AbstractChildNodeSetter.&lt;init&gt;()" resolve="AbstractChildNodeSetter" />
                   <node concept="3Tm1VV" id="7C0FR5_dv3o" role="1B3o_S" />
                   <node concept="3clFb_" id="7C0FR5_dv3p" role="jymVt">
                     <property role="IEkAT" value="false" />
@@ -1326,10 +1326,10 @@
                     <node concept="37vLTG" id="7C0FR5_dv3y" role="3clF46">
                       <property role="TrG5h" value="scope" />
                       <node concept="3uibUv" id="7C0FR5_dv3z" role="1tU5fm">
-                        <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+                        <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
                       </node>
                       <node concept="2AHcQZ" id="7C0FR5_dv3$" role="2AJF6D">
-                        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+                        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="7C0FR5_dv3_" role="3clF47">
@@ -1351,7 +1351,7 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="7C0FR5_dv3A" role="2AJF6D">
-                      <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
                   <node concept="2tJIrI" id="7C0FR5_dv3B" role="jymVt" />
@@ -1362,8 +1362,8 @@
         </node>
         <node concept="3cpWs6" id="7C0FR5_dv3C" role="3cqZAp">
           <node concept="2YIFZM" id="7C0FR5_dv3D" role="3cqZAk">
-            <ref role="37wK5l" to="7hml:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.smodel.IOperationContext):java.util.List" resolve="createChildNodeSubstituteActions" />
-            <ref role="1Pybhc" to="7hml:~ModelActions" resolve="ModelActions" />
+            <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.smodel.IOperationContext):java.util.List" resolve="createChildNodeSubstituteActions" />
+            <ref role="1Pybhc" to="zce0:~ModelActions" resolve="ModelActions" />
             <node concept="37vLTw" id="7C0FR5_dv3E" role="37wK5m">
               <ref role="3cqZAo" node="7C0FR5_dv2A" resolve="myParentNode" />
             </node>
@@ -1378,17 +1378,17 @@
             </node>
             <node concept="2OqwBi" id="7C0FR5_dv3I" role="37wK5m">
               <node concept="1rXfSq" id="7C0FR5_dv3J" role="2Oq$k0">
-                <ref role="37wK5l" to="4ky7:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
               </node>
               <node concept="liA8E" id="7C0FR5_dv3K" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="7C0FR5_dv3L" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
