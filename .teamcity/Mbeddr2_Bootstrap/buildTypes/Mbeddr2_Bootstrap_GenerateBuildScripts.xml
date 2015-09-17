@@ -23,7 +23,7 @@
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
-        <checkout-rule rule="+:.=&gt;mbeddr.core" />
+        <checkout-rule rule="+:.=&gt;%teamcity.build.checkoutDir%/mbeddr.core" />
       </vcs-entry-ref>
     </vcs-settings>
     <requirements />
