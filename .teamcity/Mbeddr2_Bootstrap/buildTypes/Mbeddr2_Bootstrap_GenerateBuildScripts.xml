@@ -23,7 +23,9 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
+        <checkout-rule rule="+.=&gt;mbeddr.core" />
+      </vcs-entry-ref>
     </vcs-settings>
     <requirements />
     <build-triggers />
