@@ -18,6 +18,9 @@
       </concept>
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
+      <concept id="1118923038131914971" name="com.mbeddr.mpsutil.contextactions.structure.NewRootSource" flags="ng" index="_nrT8">
+        <child id="1118923038131914974" name="folder" index="_nrTd" />
+      </concept>
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
         <child id="6294660000051228527" name="sources" index="NGJ24" />
       </concept>
@@ -31,6 +34,11 @@
     <node concept="NGJ2U" id="5lGdLibZyEN" role="NGJ24">
       <node concept="Xl_RD" id="vR6ln0lJV1" role="37Ct4v">
         <property role="Xl_RC" value="Completion Menu" />
+      </node>
+    </node>
+    <node concept="_nrT8" id="Y7dDcERMgS" role="NGJ24">
+      <node concept="Xl_RD" id="Y7dDcERMhw" role="_nrTd">
+        <property role="Xl_RC" value="New Root" />
       </node>
     </node>
   </node>
