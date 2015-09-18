@@ -21,6 +21,9 @@
       <concept id="1118923038131914971" name="com.mbeddr.mpsutil.contextactions.structure.NewRootSource" flags="ng" index="_nrT8">
         <child id="1118923038131914974" name="folder" index="_nrTd" />
       </concept>
+      <concept id="1118923038132418619" name="com.mbeddr.mpsutil.contextactions.structure.SideTransformSource" flags="ng" index="_pgUC">
+        <child id="1118923038132418622" name="folder" index="_pgUH" />
+      </concept>
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
         <child id="6294660000051228527" name="sources" index="NGJ24" />
       </concept>
@@ -39,6 +42,11 @@
     <node concept="_nrT8" id="Y7dDcERMgS" role="NGJ24">
       <node concept="Xl_RD" id="Y7dDcERMhw" role="_nrTd">
         <property role="Xl_RC" value="New Root" />
+      </node>
+    </node>
+    <node concept="_pgUC" id="4q$a58Kskwk" role="NGJ24">
+      <node concept="Xl_RD" id="4q$a58Kskww" role="_pgUH">
+        <property role="Xl_RC" value="Side Transform" />
       </node>
     </node>
   </node>
