@@ -12110,8 +12110,13 @@
               <ref role="37wK5l" node="2ZGhpRfeyB3" resolve="getId" />
             </node>
           </node>
-          <node concept="3cmrfG" id="3jVbLyZGmL6" role="37wK5m">
-            <property role="3cmrfH" value="0" />
+          <node concept="2OqwBi" id="4mMeETlp4ZS" role="37wK5m">
+            <node concept="37vLTw" id="4mMeETlp4P$" role="2Oq$k0">
+              <ref role="3cqZAo" node="3jVbLyZGr6B" resolve="view" />
+            </node>
+            <node concept="liA8E" id="4mMeETlp5XG" role="2OqNvi">
+              <ref role="37wK5l" node="2ZGhpRfeyBk" resolve="getWeight" />
+            </node>
           </node>
           <node concept="2OqwBi" id="3jVbLyZGWPe" role="37wK5m">
             <node concept="37vLTw" id="3jVbLyZGWGI" role="2Oq$k0">
