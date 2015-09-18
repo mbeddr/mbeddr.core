@@ -7444,6 +7444,23 @@
             <ref role="3bR37D" node="4Wyno57pInE" resolve="com.mbeddr.mpsutil.suppresswarning" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2HihT2mnGeD" role="3bR37C">
+          <node concept="3bR9La" id="2HihT2mnGeE" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2VC4eVYcuJ9" resolve="com.mbeddr.mpsutil.blutil" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2HihT2mnGeF" role="3bR37C">
+          <node concept="3bR9La" id="2HihT2mnGeG" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2HihT2mnGeH" role="3bR37C">
+          <node concept="1Busua" id="2HihT2mnGeI" role="1SiIV1">
+            <ref role="1Busuk" node="2VC4eVYcuJ9" resolve="com.mbeddr.mpsutil.blutil" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Pr7tifzjKW" role="3989C9">
