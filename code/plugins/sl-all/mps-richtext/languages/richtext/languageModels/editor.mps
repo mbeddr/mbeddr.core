@@ -866,9 +866,6 @@
           <node concept="3SKdUq" id="2af7$rtzdtH" role="3SKWNk">
             <property role="3SKdUp" value="(where to wrap lines, no indentation after wrapping, ...)" />
           </node>
-          <node concept="3SKdUq" id="2af7$rtzF_V" role="3SKWNk">
-            <property role="3SKdUp" value=" " />
-          </node>
         </node>
         <node concept="SfApY" id="2af7$rtzdtK" role="3cqZAp">
           <node concept="3clFbS" id="2af7$rtzdtL" role="SfCbr">

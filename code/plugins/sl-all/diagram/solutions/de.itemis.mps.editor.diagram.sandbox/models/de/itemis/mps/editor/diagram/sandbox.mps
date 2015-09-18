@@ -5,14 +5,14 @@
     <use id="7cf26568-7255-45b6-b975-a44162a7e7e2" name="de.itemis.mps.editor.diagram.demolang" version="-1" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
     <use id="3ba72f2f-a5c2-46e4-8b7e-b7ef6fb0cfc7" name="de.itemis.mps.editor.diagram.demo.callgraph" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="dfb6e1a4-1796-48eb-8758-3c7205d3080e" name="de.itemis.mps.editor.multiInspector" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -965,7 +965,7 @@
     <node concept="3clFb_" id="5FQFTBpVs4o" role="jymVt">
       <property role="TrG5h" value="methodA" />
       <node concept="3uibUv" id="5kDpuTS5xKB" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~OutOfMemoryError" resolve="OutOfMemoryError" />
+        <ref role="3uigEE" to="wyt6:~OutOfMemoryError" resolve="OutOfMemoryError" />
       </node>
       <node concept="3Tm1VV" id="5FQFTBpVs4r" role="1B3o_S" />
       <node concept="3clFbS" id="5FQFTBpVs4s" role="3clF47">

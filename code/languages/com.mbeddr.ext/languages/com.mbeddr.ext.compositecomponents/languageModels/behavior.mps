@@ -1321,9 +1321,6 @@
           <node concept="3SKdUq" id="2qwvqnUByhk" role="3SKWNk">
             <property role="3SKdUp" value="Otherwise an init field initializer would be created by that constraint" />
           </node>
-          <node concept="3SKdUq" id="2qwvqnUByah" role="3SKWNk">
-            <property role="3SKdUp" value="    " />
-          </node>
         </node>
         <node concept="3clFbF" id="2qwvqnUyVXT" role="3cqZAp">
           <node concept="2OqwBi" id="2qwvqnUyWBK" role="3clFbG">

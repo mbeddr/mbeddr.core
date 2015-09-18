@@ -13,6 +13,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -493,9 +494,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -632,9 +630,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -9433,19 +9439,19 @@
               </node>
             </node>
           </node>
-          <node concept="3SKdUt" id="5Vn3AfUcfz3" role="3cqZAp">
-            <node concept="3SKWN0" id="5Vn3AfUcfz4" role="3SKWNk">
-              <node concept="3clFbF" id="NqpzEWGXuO" role="3SKWNf">
-                <node concept="2OqwBi" id="NqpzEWGXCE" role="3clFbG">
-                  <node concept="2OqwBi" id="NqpzEWGXwD" role="2Oq$k0">
-                    <node concept="1Q80Hx" id="NqpzEWGXuM" role="2Oq$k0" />
-                    <node concept="liA8E" id="NqpzEWGXBW" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
-                    </node>
+          <node concept="1X3_iC" id="5GwePVE6$gM" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="NqpzEWGXuO" role="8Wnug">
+              <node concept="2OqwBi" id="NqpzEWGXCE" role="3clFbG">
+                <node concept="2OqwBi" id="NqpzEWGXwD" role="2Oq$k0">
+                  <node concept="1Q80Hx" id="NqpzEWGXuM" role="2Oq$k0" />
+                  <node concept="liA8E" id="NqpzEWGXBW" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
                   </node>
-                  <node concept="liA8E" id="NqpzEWGXLL" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
-                  </node>
+                </node>
+                <node concept="liA8E" id="NqpzEWGXLL" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
                 </node>
               </node>
             </node>
