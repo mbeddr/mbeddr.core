@@ -93,5 +93,18 @@
       <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4q$a58Ktpz0">
+    <property role="TrG5h" value="IdeaActionsSource" />
+    <property role="34LRSv" value="actions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4q$a58Ktpz4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="folder" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4q$a58Ktpz1" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
 </model>
 

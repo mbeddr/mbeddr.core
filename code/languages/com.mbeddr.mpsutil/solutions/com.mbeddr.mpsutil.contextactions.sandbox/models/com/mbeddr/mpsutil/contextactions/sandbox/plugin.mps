@@ -30,6 +30,9 @@
       <concept id="6294660000051228497" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource" flags="ng" index="NGJ2U">
         <child id="573955333602854986" name="folder" index="37Ct4v" />
       </concept>
+      <concept id="5090237812300945600" name="com.mbeddr.mpsutil.contextactions.structure.IdeaActionsSource" flags="ng" index="1QOr2i">
+        <child id="5090237812300945604" name="folder" index="1QOr2m" />
+      </concept>
     </language>
   </registry>
   <node concept="NGJ2D" id="5tr7YH$UwTY">
@@ -47,6 +50,11 @@
     <node concept="_pgUC" id="4q$a58Kskwk" role="NGJ24">
       <node concept="Xl_RD" id="4q$a58Kskww" role="_pgUH">
         <property role="Xl_RC" value="Side Transform" />
+      </node>
+    </node>
+    <node concept="1QOr2i" id="4q$a58KvkpT" role="NGJ24">
+      <node concept="Xl_RD" id="4q$a58Kvkq9" role="1QOr2m">
+        <property role="Xl_RC" value="Actions" />
       </node>
     </node>
   </node>

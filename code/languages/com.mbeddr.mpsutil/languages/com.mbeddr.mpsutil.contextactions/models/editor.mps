@@ -224,5 +224,53 @@
       <node concept="l2Vlx" id="Y7dDcESzxF" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4q$a58Ktpzv">
+    <ref role="1XX52x" to="aozb:4q$a58Ktpz0" resolve="IdeaActionsSource" />
+    <node concept="3EZMnI" id="4q$a58Ktpzx" role="2wV5jI">
+      <node concept="PMmxH" id="4q$a58Ktpzy" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="4q$a58Ktpzz" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="3mYdg7" id="4q$a58Ktpz$" role="3F10Kt">
+          <property role="1413C4" value="parenthesis" />
+        </node>
+        <node concept="ljvvj" id="4q$a58Ktpz_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="4q$a58KtpzA" role="3EZMnx">
+        <node concept="VPM3Z" id="4q$a58KtpzB" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="lj46D" id="4q$a58KtpzC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3EZMnI" id="4q$a58KtpzD" role="3EZMnx">
+          <node concept="VPM3Z" id="4q$a58KtpzE" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="4q$a58KtpzF" role="3EZMnx">
+            <property role="3F0ifm" value="folder:" />
+          </node>
+          <node concept="3F1sOY" id="4q$a58KtpzG" role="3EZMnx">
+            <ref role="1NtTu8" to="aozb:4q$a58Ktpz4" />
+          </node>
+          <node concept="2iRfu4" id="4q$a58KtpzH" role="2iSdaV" />
+        </node>
+        <node concept="2EHx9g" id="4q$a58KtpzI" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="4q$a58KtpzJ" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="3mYdg7" id="4q$a58KtpzK" role="3F10Kt">
+          <property role="1413C4" value="parenthesis" />
+        </node>
+        <node concept="pVoyu" id="4q$a58KtpzL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4q$a58KtpzM" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
