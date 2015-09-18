@@ -4,14 +4,13 @@
   <description />
   <settings>
     <options>
-      <option name="checkoutDirectory" value="%teamcity.build.checkoutDir%/mbeddr.core" />
       <option name="cleanBuild" value="true" />
     </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_73" name="Generate Build Scripts" type="Ant">
         <parameters>
-          <param name="ant.home" value="-Dmps.home=MPS -Dmps_home=MPS  -Dmbeddr.github.core.home=%teamcity.build.checkoutDir%" />
+          <param name="ant.home" value="-Dmps.home=%teamcity.build.checkoutDir%/MPS -Dmps_home=%teamcity.build.checkoutDir%/MPS  -Dmbeddr.github.core.home=%teamcity.build.checkoutDir%/mbeddr.core" />
           <param name="build-file-path" value="code/languages/build.xml" />
           <param name="target" value="build-allScripts" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
@@ -23,10 +22,19 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
+        <checkout-rule rule="+:.=&gt;%teamcity.build.checkoutDir%/mbeddr.core" />
+      </vcs-entry-ref>
     </vcs-settings>
     <requirements />
     <build-triggers />
+    <build-extensions>
+      <extension id="jetbrains.agent.free.space" type="jetbrains.agent.free.space">
+        <parameters>
+          <param name="free-space-work" value="6gb" />
+        </parameters>
+      </extension>
+    </build-extensions>
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
