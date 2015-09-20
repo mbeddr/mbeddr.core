@@ -24,6 +24,7 @@
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -2106,6 +2107,43 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="57qKfjsjaEB">
+    <property role="3GE5qa" value="commenting" />
+    <property role="TrG5h" value="migrateManually" />
+    <ref role="2ZfgGC" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+    <node concept="2Sbjvc" id="57qKfjsjaEC" role="2ZfgGD">
+      <node concept="3clFbS" id="57qKfjsjaED" role="2VODD2">
+        <node concept="3clFbF" id="57qKfjsjcom" role="3cqZAp">
+          <node concept="2OqwBi" id="57qKfjsjcqi" role="3clFbG">
+            <node concept="2Sf5sV" id="57qKfjsjcol" role="2Oq$k0" />
+            <node concept="2qgKlT" id="57qKfjsjczI" role="2OqNvi">
+              <ref role="37wK5l" to="p15z:243ufko$Aur" resolve="performMigration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="57qKfjsjaEE" role="2ZfVej">
+      <node concept="3clFbS" id="57qKfjsjaEF" role="2VODD2">
+        <node concept="3clFbF" id="57qKfjsjaZx" role="3cqZAp">
+          <node concept="3cpWs3" id="57qKfjsjbCB" role="3clFbG">
+            <node concept="2OqwBi" id="57qKfjsjc1s" role="3uHU7w">
+              <node concept="2Sf5sV" id="57qKfjsjbUw" role="2Oq$k0" />
+              <node concept="2qgKlT" id="57qKfjsjcfE" role="2OqNvi">
+                <ref role="37wK5l" to="p15z:243ufko$Au9" resolve="getDeprecationMessage" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="57qKfjsjaZw" role="3uHU7B">
+              <property role="Xl_RC" value="Perform migration for: " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="57qKfjsjaMc" role="lGtFl">
+      <property role="1SWRpm" value="DEPRECATION" />
     </node>
   </node>
 </model>
