@@ -118,6 +118,7 @@
       </concept>
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
+      <concept id="5022141054904911899" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteActionExpression" flags="ng" index="gcnaP" />
       <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
       <concept id="5022141054903715575" name="com.mbeddr.mpsutil.contextactions.structure.AbstractActionSource" flags="ng" index="gKNLp">
         <child id="5022141054903715578" name="isApplicable" index="gKNLk" />
@@ -134,12 +135,14 @@
         <child id="1118923038131914974" name="folder" index="_nrTd" />
       </concept>
       <concept id="1118923038132418619" name="com.mbeddr.mpsutil.contextactions.structure.SideTransformSource" flags="ng" index="_pgUC">
+        <child id="5022141054905151601" name="include" index="gdcFv" />
         <child id="1118923038132418622" name="folder" index="_pgUH" />
       </concept>
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
         <child id="6294660000051228527" name="sources" index="NGJ24" />
       </concept>
       <concept id="6294660000051228497" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource" flags="ng" index="NGJ2U">
+        <child id="5022141054904911832" name="include" index="gcnPQ" />
         <child id="573955333602854986" name="folder" index="37Ct4v" />
       </concept>
       <concept id="5090237812300945600" name="com.mbeddr.mpsutil.contextactions.structure.IdeaActionsSource" flags="ng" index="1QOr2i">
@@ -164,6 +167,20 @@
         <node concept="1mIQ4w" id="4mMeETlsJPF" role="2OqNvi">
           <node concept="chp4Y" id="4mMeETlsJQo" role="cj9EA">
             <ref role="cht4Q" to="tpee:fz3vP1J" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="2OqwBi" id="4mMeETly5RL" role="gcnPQ">
+        <node concept="2OqwBi" id="4mMeETly5gP" role="2Oq$k0">
+          <node concept="gcnaP" id="4mMeETly5by" role="2Oq$k0" />
+          <node concept="liA8E" id="4mMeETly5zK" role="2OqNvi">
+            <ref role="37wK5l" to="1ne1:4mMeETlwVw5" resolve="getMatchingText" />
+          </node>
+        </node>
+        <node concept="liA8E" id="4mMeETly6zG" role="2OqNvi">
+          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+          <node concept="Xl_RD" id="4mMeETly6M8" role="37wK5m">
+            <property role="Xl_RC" value="!" />
           </node>
         </node>
       </node>
@@ -202,8 +219,27 @@
       </node>
     </node>
     <node concept="_pgUC" id="4q$a58Kskwk" role="NGJ24">
-      <node concept="Xl_RD" id="4q$a58Kskww" role="_pgUH">
-        <property role="Xl_RC" value="Side Transform" />
+      <node concept="3cpWs3" id="4mMeETly4vx" role="_pgUH">
+        <node concept="Xl_RD" id="4mMeETly4v$" role="3uHU7w">
+          <property role="Xl_RC" value="a" />
+        </node>
+        <node concept="Xl_RD" id="4q$a58Kskww" role="3uHU7B">
+          <property role="Xl_RC" value="Side Transform" />
+        </node>
+      </node>
+      <node concept="2OqwBi" id="4mMeETlyfl2" role="gdcFv">
+        <node concept="2OqwBi" id="4mMeETlyfl3" role="2Oq$k0">
+          <node concept="gcnaP" id="4mMeETlyfl4" role="2Oq$k0" />
+          <node concept="liA8E" id="4mMeETlyfl5" role="2OqNvi">
+            <ref role="37wK5l" to="1ne1:4mMeETlwVw5" resolve="getMatchingText" />
+          </node>
+        </node>
+        <node concept="liA8E" id="4mMeETlyfl6" role="2OqNvi">
+          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+          <node concept="Xl_RD" id="4mMeETlyfl7" role="37wK5m">
+            <property role="Xl_RC" value="!" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1QOr2i" id="4q$a58KvkpT" role="NGJ24">

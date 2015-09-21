@@ -3963,8 +3963,36 @@
               </node>
             </node>
             <node concept="2OqwBi" id="5lGdLibZeP9" role="33vP2m">
-              <node concept="37vLTw" id="5lGdLibZePa" role="2Oq$k0">
-                <ref role="3cqZAo" node="5lGdLibYulI" resolve="substituteActions" />
+              <node concept="2OqwBi" id="4mMeETlxood" role="2Oq$k0">
+                <node concept="37vLTw" id="5lGdLibZePa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5lGdLibYulI" resolve="substituteActions" />
+                </node>
+                <node concept="3zZkjj" id="4mMeETlxpXN" role="2OqNvi">
+                  <node concept="1bVj0M" id="4mMeETlxpXP" role="23t8la">
+                    <node concept="3clFbS" id="4mMeETlxpXQ" role="1bW5cS">
+                      <node concept="3clFbF" id="4mMeETlxqDN" role="3cqZAp">
+                        <node concept="1rXfSq" id="4mMeETlxqDM" role="3clFbG">
+                          <ref role="37wK5l" node="4mMeETlxmL$" resolve="includeAction" />
+                          <node concept="2ShNRf" id="4mMeETlxre9" role="37wK5m">
+                            <node concept="1pGfFk" id="4mMeETlxsVN" role="2ShVmc">
+                              <ref role="37wK5l" node="4mMeETlxc3Q" resolve="SubstituteActionAdapter" />
+                              <node concept="37vLTw" id="4mMeETlxtli" role="37wK5m">
+                                <ref role="3cqZAo" node="4mMeETlxpXR" resolve="it" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="4mMeETlxuOA" role="37wK5m">
+                            <ref role="3cqZAo" node="5lGdLibYsTW" resolve="context" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="4mMeETlxpXR" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="4mMeETlxpXS" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3$u5V9" id="5lGdLibZePb" role="2OqNvi">
                 <node concept="1bVj0M" id="5lGdLibZePc" role="23t8la">
@@ -4066,6 +4094,31 @@
       <node concept="37vLTG" id="vR6ln0lLQv" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="vR6ln0lLQu" role="1tU5fm">
+          <ref role="3uigEE" node="5tr7YH$Ux6m" resolve="IContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4mMeETlxn15" role="jymVt" />
+    <node concept="3clFb_" id="4mMeETlxmL$" role="jymVt">
+      <property role="TrG5h" value="includeAction" />
+      <node concept="10P_77" id="4mMeETlxmL_" role="3clF45" />
+      <node concept="3Tmbuc" id="4mMeETlxmLA" role="1B3o_S" />
+      <node concept="3clFbS" id="4mMeETlxmLB" role="3clF47">
+        <node concept="3clFbF" id="4mMeETlxmLC" role="3cqZAp">
+          <node concept="3clFbT" id="4mMeETlxmLD" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4mMeETlxmLE" role="3clF46">
+        <property role="TrG5h" value="action" />
+        <node concept="3uibUv" id="4mMeETlxmLF" role="1tU5fm">
+          <ref role="3uigEE" node="4mMeETlwOv7" resolve="ISubstituteAction" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4mMeETlxmLG" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="4mMeETlxmLH" role="1tU5fm">
           <ref role="3uigEE" node="5tr7YH$Ux6m" resolve="IContext" />
         </node>
       </node>
@@ -7672,6 +7725,9 @@
               <node concept="37vLTw" id="4q$a58Kt0vw" role="37wK5m">
                 <ref role="3cqZAo" node="4q$a58KsX5C" resolve="tag" />
               </node>
+              <node concept="37vLTw" id="4mMeETlxiB8" role="37wK5m">
+                <ref role="3cqZAo" node="4q$a58KrI17" resolve="context" />
+              </node>
             </node>
           </node>
         </node>
@@ -7703,6 +7759,9 @@
                   <node concept="37vLTw" id="4q$a58Kt1VD" role="37wK5m">
                     <ref role="3cqZAo" node="4q$a58KsX5C" resolve="tag" />
                   </node>
+                  <node concept="37vLTw" id="4mMeETlxlxj" role="37wK5m">
+                    <ref role="3cqZAo" node="4q$a58KrI17" resolve="context" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -7711,6 +7770,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4mMeETlx1qe" role="3cqZAp" />
         <node concept="3cpWs6" id="4q$a58KrI2e" role="3cqZAp">
           <node concept="37vLTw" id="4q$a58KrI2f" role="3cqZAk">
             <ref role="3cqZAo" node="4q$a58KrI1E" resolve="result" />
@@ -7760,6 +7820,12 @@
         <property role="TrG5h" value="tag" />
         <node concept="17QB3L" id="4q$a58KsYb1" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="4mMeETlx89$" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="4mMeETlx8w8" role="1tU5fm">
+          <ref role="3uigEE" node="5tr7YH$Ux6m" resolve="IContext" />
+        </node>
+      </node>
       <node concept="3clFbS" id="4q$a58Kssxd" role="3clF47">
         <node concept="3cpWs8" id="4q$a58Kssxg" role="3cqZAp">
           <node concept="3cpWsn" id="4q$a58Kssxh" role="3cpWs9">
@@ -7789,8 +7855,36 @@
         </node>
         <node concept="3cpWs6" id="4q$a58Kssy0" role="3cqZAp">
           <node concept="2OqwBi" id="4q$a58Kssxt" role="3cqZAk">
-            <node concept="37vLTw" id="4q$a58Kssxu" role="2Oq$k0">
-              <ref role="3cqZAo" node="4q$a58Kssxh" resolve="substituteActions" />
+            <node concept="2OqwBi" id="4mMeETlx3Ed" role="2Oq$k0">
+              <node concept="37vLTw" id="4q$a58Kssxu" role="2Oq$k0">
+                <ref role="3cqZAo" node="4q$a58Kssxh" resolve="substituteActions" />
+              </node>
+              <node concept="3zZkjj" id="4mMeETlx5in" role="2OqNvi">
+                <node concept="1bVj0M" id="4mMeETlx5ip" role="23t8la">
+                  <node concept="3clFbS" id="4mMeETlx5iq" role="1bW5cS">
+                    <node concept="3clFbF" id="4mMeETlx62_" role="3cqZAp">
+                      <node concept="1rXfSq" id="4mMeETlx62$" role="3clFbG">
+                        <ref role="37wK5l" node="4mMeETlwWOC" resolve="includeAction" />
+                        <node concept="2ShNRf" id="4mMeETlxdLg" role="37wK5m">
+                          <node concept="1pGfFk" id="4mMeETlxfyT" role="2ShVmc">
+                            <ref role="37wK5l" node="4mMeETlxc3Q" resolve="SubstituteActionAdapter" />
+                            <node concept="37vLTw" id="4mMeETlxg0u" role="37wK5m">
+                              <ref role="3cqZAo" node="4mMeETlx5ir" resolve="it" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="4mMeETlx9n4" role="37wK5m">
+                          <ref role="3cqZAo" node="4mMeETlx89$" resolve="context" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="4mMeETlx5ir" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="4mMeETlx5is" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="3$u5V9" id="4q$a58Kssxv" role="2OqNvi">
               <node concept="1bVj0M" id="4q$a58Kssxw" role="23t8la">
@@ -7888,6 +7982,31 @@
       <node concept="37vLTG" id="4q$a58KrI2n" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="4q$a58KrI2o" role="1tU5fm">
+          <ref role="3uigEE" node="5tr7YH$Ux6m" resolve="IContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4mMeETlwWt3" role="jymVt" />
+    <node concept="3clFb_" id="4mMeETlwWOC" role="jymVt">
+      <property role="TrG5h" value="includeAction" />
+      <node concept="10P_77" id="4mMeETlwYmr" role="3clF45" />
+      <node concept="3Tmbuc" id="4mMeETlwY2P" role="1B3o_S" />
+      <node concept="3clFbS" id="4mMeETlwWOG" role="3clF47">
+        <node concept="3clFbF" id="4mMeETlwYP_" role="3cqZAp">
+          <node concept="3clFbT" id="4mMeETlwYP$" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4mMeETlwZha" role="3clF46">
+        <property role="TrG5h" value="action" />
+        <node concept="3uibUv" id="4mMeETlwZh9" role="1tU5fm">
+          <ref role="3uigEE" node="4mMeETlwOv7" resolve="ISubstituteAction" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4mMeETlwZxT" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="4mMeETlwZTY" role="1tU5fm">
           <ref role="3uigEE" node="5tr7YH$Ux6m" resolve="IContext" />
         </node>
       </node>
@@ -9618,6 +9737,76 @@
       <node concept="2AHcQZ" id="4mMeETltEOD" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="4mMeETlwOv7">
+    <property role="TrG5h" value="ISubstituteAction" />
+    <node concept="3clFb_" id="4mMeETlwVw5" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getMatchingText" />
+      <node concept="17QB3L" id="4mMeETlwVyk" role="3clF45" />
+      <node concept="3Tm1VV" id="4mMeETlwVw8" role="1B3o_S" />
+      <node concept="3clFbS" id="4mMeETlwVw9" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="4mMeETlwOv8" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4mMeETlxa$Q">
+    <property role="TrG5h" value="SubstituteActionAdapter" />
+    <node concept="312cEg" id="4mMeETlxaDf" role="jymVt">
+      <property role="TrG5h" value="myAction" />
+      <node concept="3Tm6S6" id="4mMeETlxaDg" role="1B3o_S" />
+      <node concept="3uibUv" id="4mMeETlxaKU" role="1tU5fm">
+        <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4mMeETlxaL9" role="jymVt" />
+    <node concept="3clFbW" id="4mMeETlxc3Q" role="jymVt">
+      <node concept="3cqZAl" id="4mMeETlxc3R" role="3clF45" />
+      <node concept="3Tm1VV" id="4mMeETlxc3S" role="1B3o_S" />
+      <node concept="3clFbS" id="4mMeETlxc3U" role="3clF47">
+        <node concept="3clFbF" id="4mMeETlxc3Y" role="3cqZAp">
+          <node concept="37vLTI" id="4mMeETlxc40" role="3clFbG">
+            <node concept="37vLTw" id="4mMeETlxc44" role="37vLTJ">
+              <ref role="3cqZAo" node="4mMeETlxaDf" resolve="myAction" />
+            </node>
+            <node concept="37vLTw" id="4mMeETlxc45" role="37vLTx">
+              <ref role="3cqZAo" node="4mMeETlxc3X" resolve="action" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4mMeETlxc3X" role="3clF46">
+        <property role="TrG5h" value="action" />
+        <node concept="3uibUv" id="4mMeETlxc3W" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4mMeETlxaLe" role="jymVt" />
+    <node concept="3clFb_" id="4mMeETlxaLq" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getMatchingText" />
+      <node concept="17QB3L" id="4mMeETlxaLr" role="3clF45" />
+      <node concept="3Tm1VV" id="4mMeETlxaLs" role="1B3o_S" />
+      <node concept="3clFbS" id="4mMeETlxaLu" role="3clF47">
+        <node concept="3clFbF" id="4mMeETlxbgk" role="3cqZAp">
+          <node concept="2OqwBi" id="4mMeETlxbti" role="3clFbG">
+            <node concept="37vLTw" id="4mMeETlxbgj" role="2Oq$k0">
+              <ref role="3cqZAo" node="4mMeETlxaDf" resolve="myAction" />
+            </node>
+            <node concept="liA8E" id="4mMeETlxbBp" role="2OqNvi">
+              <ref role="37wK5l" to="f4zo:~SubstituteAction.getMatchingText(java.lang.String):java.lang.String" resolve="getMatchingText" />
+              <node concept="Xl_RD" id="4mMeETlxbTb" role="37wK5m">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4mMeETlxa$R" role="1B3o_S" />
+    <node concept="3uibUv" id="4mMeETlxa_h" role="EKbjA">
+      <ref role="3uigEE" node="4mMeETlwOv7" resolve="ISubstituteAction" />
     </node>
   </node>
 </model>
