@@ -458,6 +458,9 @@
           <node concept="3ygNvl" id="6ijKbgMg95n" role="39821P">
             <ref role="3ygNvj" to="p6ld:7eF9rfAuSO3" resolve="com.mbeddr.analyses.sat4j.zip" />
           </node>
+          <node concept="3ygNvl" id="2a$bfz5500G" role="39821P">
+            <ref role="3ygNvj" to="p6ld:vg5qBC2g65" resolve="com.mbeddr.ext.concurrency.zip" />
+          </node>
           <node concept="3ygNvl" id="1LnB5xdH$Qi" role="39821P">
             <ref role="3ygNvj" to="al5i:6ucYLjol7IB" resolve="com.mbeddr.doc.zip" />
           </node>
