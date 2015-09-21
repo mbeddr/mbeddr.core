@@ -8,7 +8,9 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -59,7 +61,7 @@
   <node concept="1TIwiD" id="5tr7YH$UuXh">
     <property role="TrG5h" value="SubstituteInfoSource" />
     <property role="34LRSv" value="completion menu" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="vR6ln0lGxa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folder" />
@@ -75,11 +77,17 @@
   <node concept="1TIwiD" id="Y7dDcEQCzr">
     <property role="TrG5h" value="NewRootSource" />
     <property role="34LRSv" value="new root" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="Y7dDcEQCzu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folder" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mMeETluCNb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="includes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4mMeETluCvu" resolve="INewRootInclude" />
     </node>
     <node concept="PrWs8" id="Y7dDcEQCzs" role="PzmwI">
       <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
@@ -88,7 +96,7 @@
   <node concept="1TIwiD" id="Y7dDcESzwV">
     <property role="TrG5h" value="SideTransformSource" />
     <property role="34LRSv" value="side transform" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="Y7dDcESzwY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folder" />
@@ -101,7 +109,7 @@
   <node concept="1TIwiD" id="4q$a58Ktpz0">
     <property role="TrG5h" value="IdeaActionsSource" />
     <property role="34LRSv" value="actions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="4q$a58Ktpz4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folder" />
@@ -143,6 +151,48 @@
     </node>
     <node concept="PrWs8" id="4mMeETlpMkS" role="PzmwI">
       <ref role="PrY4T" node="4mMeETlpes8" resolve="IActionId" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mMeETlsgbb">
+    <property role="TrG5h" value="ContextExpression" />
+    <property role="34LRSv" value="context" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4mMeETlsgrR">
+    <property role="TrG5h" value="AbstractActionSource" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4mMeETlsgrU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="isApplicable" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4mMeETlsgrS" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4mMeETluCvu">
+    <property role="TrG5h" value="INewRootInclude" />
+  </node>
+  <node concept="1TIwiD" id="4mMeETluCvv">
+    <property role="TrG5h" value="LanguageReference" />
+    <property role="34LRSv" value="language" />
+    <ref role="1TJDcQ" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    <node concept="PrWs8" id="4mMeETluCwl" role="PzmwI">
+      <ref role="PrY4T" node="4mMeETluCvu" resolve="INewRootInclude" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mMeETluFjI">
+    <property role="TrG5h" value="RootConceptRefExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4mMeETluGaZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="rootConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4mMeETluPDW" role="PzmwI">
+      <ref role="PrY4T" node="4mMeETluCvu" resolve="INewRootInclude" />
     </node>
   </node>
 </model>

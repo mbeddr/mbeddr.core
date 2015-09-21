@@ -11,7 +11,10 @@
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="9w4s" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util(MPS.IDEA/)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -94,16 +97,40 @@
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
+      <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
+      <concept id="5022141054903715575" name="com.mbeddr.mpsutil.contextactions.structure.AbstractActionSource" flags="ng" index="gKNLp">
+        <child id="5022141054903715578" name="isApplicable" index="gKNLk" />
+      </concept>
+      <concept id="5022141054904349934" name="com.mbeddr.mpsutil.contextactions.structure.RootConceptRefExpression" flags="ng" index="gM8T0">
+        <reference id="5022141054904353471" name="rootConcept" index="gMfwh" />
+      </concept>
+      <concept id="5022141054904338399" name="com.mbeddr.mpsutil.contextactions.structure.LanguageReference" flags="ng" index="gMbPL" />
       <concept id="5022141054903067959" name="com.mbeddr.mpsutil.contextactions.structure.ActionIdReference" flags="ng" index="gPhYp">
         <reference id="5022141054903067962" name="action" index="gPhYk" />
       </concept>
       <concept id="1118923038131914971" name="com.mbeddr.mpsutil.contextactions.structure.NewRootSource" flags="ng" index="_nrT8">
+        <child id="5022141054904339659" name="includes" index="gMbp_" />
         <child id="1118923038131914974" name="folder" index="_nrTd" />
       </concept>
       <concept id="1118923038132418619" name="com.mbeddr.mpsutil.contextactions.structure.SideTransformSource" flags="ng" index="_pgUC">
@@ -127,10 +154,51 @@
       <node concept="Xl_RD" id="vR6ln0lJV1" role="37Ct4v">
         <property role="Xl_RC" value="Completion Menu" />
       </node>
+      <node concept="2OqwBi" id="4mMeETlsIYq" role="gKNLk">
+        <node concept="2OqwBi" id="4mMeETlsIwt" role="2Oq$k0">
+          <node concept="gKNx_" id="4mMeETlsIv6" role="2Oq$k0" />
+          <node concept="liA8E" id="4mMeETlsIIM" role="2OqNvi">
+            <ref role="37wK5l" to="1ne1:5tr7YH$Ux7R" resolve="getSNode" />
+          </node>
+        </node>
+        <node concept="1mIQ4w" id="4mMeETlsJPF" role="2OqNvi">
+          <node concept="chp4Y" id="4mMeETlsJQo" role="cj9EA">
+            <ref role="cht4Q" to="tpee:fz3vP1J" resolve="Expression" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="_nrT8" id="Y7dDcERMgS" role="NGJ24">
       <node concept="Xl_RD" id="Y7dDcERMhw" role="_nrTd">
         <property role="Xl_RC" value="New Root" />
+      </node>
+      <node concept="gMbPL" id="4mMeETlwmot" role="gMbp_">
+        <node concept="2V$Bhx" id="4mMeETlwJEm" role="2V$M_3">
+          <property role="2V$B1T" value="6d11763d-483d-4b2b-8efc-09336c1b0001" />
+          <property role="2V$B1Q" value="com.mbeddr.core.modules" />
+        </node>
+      </node>
+      <node concept="gM8T0" id="4mMeETlwJEr" role="gMbp_">
+        <ref role="gMfwh" to="tpee:g7HP654" resolve="Interface" />
+      </node>
+      <node concept="2OqwBi" id="4mMeETlwLSU" role="gKNLk">
+        <node concept="2OqwBi" id="4mMeETlwLfB" role="2Oq$k0">
+          <node concept="2OqwBi" id="4mMeETlwL7e" role="2Oq$k0">
+            <node concept="gKNx_" id="4mMeETlwL5Q" role="2Oq$k0" />
+            <node concept="liA8E" id="4mMeETlwLc1" role="2OqNvi">
+              <ref role="37wK5l" to="1ne1:5tr7YH$UxYk" resolve="getModel" />
+            </node>
+          </node>
+          <node concept="liA8E" id="4mMeETlwLAx" role="2OqNvi">
+            <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+          </node>
+        </node>
+        <node concept="liA8E" id="4mMeETlwMy5" role="2OqNvi">
+          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+          <node concept="Xl_RD" id="4mMeETlwMMm" role="37wK5m">
+            <property role="Xl_RC" value="plugin" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="_pgUC" id="4q$a58Kskwk" role="NGJ24">
