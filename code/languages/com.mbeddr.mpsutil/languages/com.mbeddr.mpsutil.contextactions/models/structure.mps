@@ -219,5 +219,53 @@
   <node concept="PlHQZ" id="4mMeETlxvmt">
     <property role="TrG5h" value="ISubstituteActionBased" />
   </node>
+  <node concept="1TIwiD" id="4mMeETlyhwU">
+    <property role="TrG5h" value="GenericActionSource" />
+    <property role="34LRSv" value="generic" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
+    <node concept="1TJgyj" id="4mMeETlyhwX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterType" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="4mMeETlyhwZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterQuery" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mMeETlyhx2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="label" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mMeETlyhyo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="folder" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mMeETlyhyt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mMeETlyh$$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="execute" />
+      <ref role="20lvS9" node="4mMeETlyh$F" resolve="GenericActionSource_ExecuteFunction" />
+    </node>
+    <node concept="PrWs8" id="4mMeETlyhwV" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mMeETlyh$F">
+    <property role="TrG5h" value="GenericActionSource_ExecuteFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="4mMeETlyrbY">
+    <property role="TrG5h" value="ParameterObject" />
+    <property role="34LRSv" value="parameterObject" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

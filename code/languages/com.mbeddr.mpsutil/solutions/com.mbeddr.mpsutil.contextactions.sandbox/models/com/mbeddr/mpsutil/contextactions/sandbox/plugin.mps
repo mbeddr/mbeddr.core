@@ -60,6 +60,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -72,6 +75,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -119,6 +123,15 @@
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
       <concept id="5022141054904911899" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteActionExpression" flags="ng" index="gcnaP" />
+      <concept id="5022141054905292858" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource" flags="ng" index="geMak">
+        <child id="5022141054905292957" name="icon" index="geM8N" />
+        <child id="5022141054905292863" name="parameterQuery" index="geMah" />
+        <child id="5022141054905292861" name="parameterType" index="geMaj" />
+        <child id="5022141054905292866" name="label" index="geMbG" />
+        <child id="5022141054905293092" name="execute" index="geMea" />
+      </concept>
+      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ig" index="geMe5" />
+      <concept id="5022141054905332478" name="com.mbeddr.mpsutil.contextactions.structure.ParameterObject" flags="ng" index="geSxg" />
       <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
       <concept id="5022141054903715575" name="com.mbeddr.mpsutil.contextactions.structure.AbstractActionSource" flags="ng" index="gKNLp">
         <child id="5022141054903715578" name="isApplicable" index="gKNLk" />
@@ -149,6 +162,13 @@
         <child id="5022141054902920964" name="actionIds" index="gPHQE" />
         <child id="5090237812300945604" name="folder" index="1QOr2m" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
     </language>
   </registry>
   <node concept="NGJ2D" id="5tr7YH$UwTY">
@@ -219,13 +239,8 @@
       </node>
     </node>
     <node concept="_pgUC" id="4q$a58Kskwk" role="NGJ24">
-      <node concept="3cpWs3" id="4mMeETly4vx" role="_pgUH">
-        <node concept="Xl_RD" id="4mMeETly4v$" role="3uHU7w">
-          <property role="Xl_RC" value="a" />
-        </node>
-        <node concept="Xl_RD" id="4q$a58Kskww" role="3uHU7B">
-          <property role="Xl_RC" value="Side Transform" />
-        </node>
+      <node concept="Xl_RD" id="4q$a58Kskww" role="_pgUH">
+        <property role="Xl_RC" value="Side Transform" />
       </node>
       <node concept="2OqwBi" id="4mMeETlyfl2" role="gdcFv">
         <node concept="2OqwBi" id="4mMeETlyfl3" role="2Oq$k0">
@@ -248,6 +263,77 @@
       </node>
       <node concept="gPhYp" id="4mMeETlpNLr" role="gPHQE">
         <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
+      </node>
+    </node>
+    <node concept="geMak" id="6c435dJIjYZ" role="NGJ24">
+      <node concept="3cpWs3" id="6c435dJIwsj" role="geMbG">
+        <node concept="geSxg" id="6c435dJIwsB" role="3uHU7w" />
+        <node concept="Xl_RD" id="6c435dJIwiY" role="3uHU7B">
+          <property role="Xl_RC" value="Generic " />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="6c435dJIn8P" role="geMah">
+        <node concept="Tc6Ow" id="6c435dJIvKC" role="2ShVmc">
+          <node concept="17QB3L" id="6c435dJIvV6" role="HW$YZ" />
+          <node concept="Xl_RD" id="6c435dJIvVB" role="HW$Y0">
+            <property role="Xl_RC" value="A" />
+          </node>
+          <node concept="Xl_RD" id="6c435dJIw48" role="HW$Y0">
+            <property role="Xl_RC" value="B" />
+          </node>
+          <node concept="Xl_RD" id="6c435dJIwcu" role="HW$Y0">
+            <property role="Xl_RC" value="C" />
+          </node>
+        </node>
+      </node>
+      <node concept="geMe5" id="6c435dJIwDy" role="geMea">
+        <node concept="3clFbS" id="6c435dJIwDz" role="2VODD2">
+          <node concept="3clFbF" id="6c435dJIwTx" role="3cqZAp">
+            <node concept="2OqwBi" id="6c435dJIwTu" role="3clFbG">
+              <node concept="10M0yZ" id="6c435dJIwTv" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="6c435dJIwTw" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="6c435dJIxrG" role="37wK5m">
+                  <node concept="geSxg" id="6c435dJIxsY" role="3uHU7w" />
+                  <node concept="Xl_RD" id="6c435dJIwWK" role="3uHU7B">
+                    <property role="Xl_RC" value="Executed " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10M0yZ" id="6c435dJIT0M" role="geM8N">
+        <ref role="1PxDUh" to="9w4s:~Icons" resolve="Icons" />
+        <ref role="3cqZAo" to="9w4s:~PlatformIcons.UI_FORM_ICON" resolve="UI_FORM_ICON" />
+      </node>
+      <node concept="17QB3L" id="2h6oi93SCCI" role="geMaj" />
+    </node>
+    <node concept="geMak" id="6c435dJIVhr" role="NGJ24">
+      <node concept="Xl_RD" id="6c435dJIVlF" role="geMbG">
+        <property role="Xl_RC" value="Single Generic Action" />
+      </node>
+      <node concept="geMe5" id="6c435dJIVu4" role="geMea">
+        <node concept="3clFbS" id="6c435dJIVu5" role="2VODD2">
+          <node concept="3clFbF" id="6c435dJIVFh" role="3cqZAp">
+            <node concept="2OqwBi" id="6c435dJIVFe" role="3clFbG">
+              <node concept="10M0yZ" id="6c435dJIVFf" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="6c435dJIVFg" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="6c435dJIVIu" role="37wK5m">
+                  <property role="Xl_RC" value="Single Generic Action executed" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
