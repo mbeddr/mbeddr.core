@@ -17,6 +17,8 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
+    <import index="b9kz" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.ex(MPS.IDEA/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -66,6 +68,9 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1224573963862" name="jetbrains.mps.baseLanguage.structure.EnumValuesExpression" flags="nn" index="uiWXb">
+        <reference id="1224573974191" name="enumClass" index="uiZuM" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -74,6 +79,9 @@
       </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -100,6 +108,10 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -125,6 +137,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -140,6 +153,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -182,6 +198,16 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -374,6 +400,13 @@
         <ref role="3uigEE" to="1ne1:5lGdLibXIsq" resolve="ToolComponent" />
       </node>
     </node>
+    <node concept="2BZ0e9" id="7vUP_qcxjQT" role="2XNbBz">
+      <property role="TrG5h" value="myGearActionGroup" />
+      <node concept="3Tm6S6" id="7vUP_qcxjQU" role="1B3o_S" />
+      <node concept="3uibUv" id="7vUP_qcxspm" role="1tU5fm">
+        <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
+      </node>
+    </node>
     <node concept="2UmK3q" id="5tr7YH$U35D" role="2Um5zG">
       <node concept="3clFbS" id="5tr7YH$U35E" role="2VODD2">
         <node concept="3cpWs6" id="5tr7YH$Ug8u" role="3cqZAp">
@@ -436,6 +469,88 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7vUP_qcxoIy" role="3cqZAp" />
+        <node concept="3clFbF" id="7vUP_qcxkSF" role="3cqZAp">
+          <node concept="37vLTI" id="7vUP_qcxlj4" role="3clFbG">
+            <node concept="2OqwBi" id="7vUP_qcxkS_" role="37vLTJ">
+              <node concept="2WthIp" id="7vUP_qcxkSC" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="7vUP_qcxkSE" role="2OqNvi">
+                <ref role="2WH_rO" node="7vUP_qcxjQT" resolve="myGearActionGroup" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="7vUP_qcxll3" role="37vLTx">
+              <node concept="1pGfFk" id="7vUP_qcxll4" role="2ShVmc">
+                <ref role="37wK5l" to="qkt:~DefaultActionGroup.&lt;init&gt;()" resolve="DefaultActionGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="7vUP_qcyiil" role="3cqZAp">
+          <node concept="2GrKxI" id="7vUP_qcyiin" role="2Gsz3X">
+            <property role="TrG5h" value="type" />
+          </node>
+          <node concept="3clFbS" id="7vUP_qcyiip" role="2LFqv$">
+            <node concept="3clFbF" id="7vUP_qcxqyv" role="3cqZAp">
+              <node concept="2OqwBi" id="7vUP_qcxqST" role="3clFbG">
+                <node concept="2OqwBi" id="7vUP_qcxqyp" role="2Oq$k0">
+                  <node concept="2WthIp" id="7vUP_qcxqys" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="7vUP_qcxqyu" role="2OqNvi">
+                    <ref role="2WH_rO" node="7vUP_qcxjQT" resolve="myGearActionGroup" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7vUP_qcxt7X" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
+                  <node concept="2ShNRf" id="7vUP_qcyjXb" role="37wK5m">
+                    <node concept="1pGfFk" id="7vUP_qcykgP" role="2ShVmc">
+                      <ref role="37wK5l" to="1ne1:7vUP_qcxVPt" resolve="ChangeViewAction" />
+                      <node concept="2OqwBi" id="7vUP_qcykm1" role="37wK5m">
+                        <node concept="2WthIp" id="7vUP_qcykm4" role="2Oq$k0" />
+                        <node concept="2BZ7hE" id="7vUP_qcykm6" role="2OqNvi">
+                          <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
+                        </node>
+                      </node>
+                      <node concept="2GrUjf" id="7vUP_qcykLd" role="37wK5m">
+                        <ref role="2Gs0qQ" node="7vUP_qcyiin" resolve="type" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uiWXb" id="7vUP_qcyixS" role="2GsD0m">
+            <ref role="uiZuM" to="1ne1:7vUP_qcx$o$" resolve="ViewType" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7vUP_qcxcA4" role="3cqZAp">
+          <node concept="2OqwBi" id="7vUP_qcxdvH" role="3clFbG">
+            <node concept="1eOMI4" id="7vUP_qcxfPy" role="2Oq$k0">
+              <node concept="10QFUN" id="7vUP_qcxfPz" role="1eOMHV">
+                <node concept="2OqwBi" id="7vUP_qcxfPv" role="10QFUP">
+                  <node concept="37vLTw" id="7vUP_qcxfPw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
+                  </node>
+                  <node concept="liA8E" id="7vUP_qcxfPx" role="2OqNvi">
+                    <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow():com.intellij.openapi.wm.ToolWindow" resolve="getToolWindow" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="7vUP_qcxggA" role="10QFUM">
+                  <ref role="3uigEE" to="b9kz:~ToolWindowEx" resolve="ToolWindowEx" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="7vUP_qcxi0V" role="2OqNvi">
+              <ref role="37wK5l" to="b9kz:~ToolWindowEx.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup):void" resolve="setAdditionalGearActions" />
+              <node concept="2OqwBi" id="7vUP_qcxoai" role="37wK5m">
+                <node concept="2WthIp" id="7vUP_qcxoal" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="7vUP_qcxoan" role="2OqNvi">
+                  <ref role="2WH_rO" node="7vUP_qcxjQT" resolve="myGearActionGroup" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7vUP_qcxorB" role="3cqZAp" />
         <node concept="3clFbF" id="QmW6bqNB94" role="3cqZAp">
           <node concept="2YIFZM" id="QmW6bqNB9U" role="3clFbG">
             <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable):void" resolve="runInUIThreadNoWait" />
