@@ -149,6 +149,7 @@
       </concept>
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
         <child id="6294660000051228527" name="sources" index="NGJ24" />
+        <child id="8645458101902647485" name="isApplicable" index="3V_frF" />
       </concept>
       <concept id="6294660000051228497" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource" flags="ng" index="NGJ2U">
         <child id="573955333602854986" name="folder" index="37Ct4v" />
@@ -334,6 +335,9 @@
       <node concept="Xl_RD" id="7vUP_qcRHFx" role="3V80Gy">
         <property role="Xl_RC" value="Abc" />
       </node>
+    </node>
+    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF">
+      <property role="3clFbU" value="false" />
     </node>
   </node>
   <node concept="sE7Ow" id="4mMeETlpNKH">
