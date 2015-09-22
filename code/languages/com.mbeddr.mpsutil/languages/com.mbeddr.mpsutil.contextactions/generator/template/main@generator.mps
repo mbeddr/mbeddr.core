@@ -67,6 +67,7 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -1943,6 +1944,63 @@
       <node concept="2AHcQZ" id="4mMeETlt4VB" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="7vUP_qctpEu" role="jymVt" />
+    <node concept="3clFb_" id="7vUP_qctpQI" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isApplicable" />
+      <node concept="37vLTG" id="7vUP_qctpQJ" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7vUP_qctpQK" role="1tU5fm">
+          <ref role="3uigEE" to="1ne1:5tr7YH$Ux6m" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="10P_77" id="7vUP_qctpQL" role="3clF45" />
+      <node concept="3Tm1VV" id="7vUP_qctpQM" role="1B3o_S" />
+      <node concept="3clFbS" id="7vUP_qctpQQ" role="3clF47">
+        <node concept="3clFbF" id="7vUP_qctpQU" role="3cqZAp">
+          <node concept="3clFbT" id="7vUP_qctqvn" role="3clFbG">
+            <property role="3clFbU" value="false" />
+            <node concept="29HgVG" id="7vUP_qctqz$" role="lGtFl">
+              <node concept="3NFfHV" id="7vUP_qctqz_" role="3NFExx">
+                <node concept="3clFbS" id="7vUP_qctqzA" role="2VODD2">
+                  <node concept="3clFbF" id="7vUP_qctqzG" role="3cqZAp">
+                    <node concept="2OqwBi" id="7vUP_qctqzB" role="3clFbG">
+                      <node concept="3TrEf2" id="7vUP_qctqzE" role="2OqNvi">
+                        <ref role="3Tt5mk" to="aozb:7vUP_qcry2X" />
+                      </node>
+                      <node concept="30H73N" id="7vUP_qctqzF" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7vUP_qctpQR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="1W57fq" id="7vUP_qctr0B" role="lGtFl">
+        <node concept="3IZrLx" id="7vUP_qctr0D" role="3IZSJc">
+          <node concept="3clFbS" id="7vUP_qctr0F" role="2VODD2">
+            <node concept="3clFbF" id="7vUP_qctrnD" role="3cqZAp">
+              <node concept="2OqwBi" id="7vUP_qcts1A" role="3clFbG">
+                <node concept="2OqwBi" id="7vUP_qctrsb" role="2Oq$k0">
+                  <node concept="30H73N" id="7vUP_qctrnC" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7vUP_qctrKY" role="2OqNvi">
+                    <ref role="3Tt5mk" to="aozb:7vUP_qcry2X" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="7vUP_qctsi5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="7vUP_qctpy2" role="1zkMxy">
+      <ref role="3uigEE" to="1ne1:7vUP_qcto63" resolve="AbstractContextActionsDescriptor" />
     </node>
   </node>
   <node concept="bUwia" id="4mMeETlrfuu">
