@@ -124,6 +124,7 @@
         <child id="5022141054905292861" name="parameterType" index="geMaj" />
         <child id="5022141054905292866" name="label" index="geMbG" />
         <child id="5022141054905293092" name="execute" index="geMea" />
+        <child id="8645458101909773684" name="tooltip" index="3V80Gy" />
       </concept>
       <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ig" index="geMe5" />
       <concept id="5022141054905332478" name="com.mbeddr.mpsutil.contextactions.structure.ParameterObject" flags="ng" index="geSxg" />
@@ -301,6 +302,12 @@
         <ref role="3cqZAo" to="9w4s:~PlatformIcons.UI_FORM_ICON" resolve="UI_FORM_ICON" />
       </node>
       <node concept="17QB3L" id="2h6oi93SCCI" role="geMaj" />
+      <node concept="3cpWs3" id="7vUP_qcRIoD" role="3V80Gy">
+        <node concept="geSxg" id="7vUP_qcRItJ" role="3uHU7w" />
+        <node concept="Xl_RD" id="7vUP_qcRHOf" role="3uHU7B">
+          <property role="Xl_RC" value="Tooltip for " />
+        </node>
+      </node>
     </node>
     <node concept="geMak" id="6c435dJIVhr" role="NGJ24">
       <node concept="Xl_RD" id="6c435dJIVlF" role="geMbG">
@@ -323,6 +330,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="7vUP_qcRHFx" role="3V80Gy">
+        <property role="Xl_RC" value="Abc" />
       </node>
     </node>
   </node>
