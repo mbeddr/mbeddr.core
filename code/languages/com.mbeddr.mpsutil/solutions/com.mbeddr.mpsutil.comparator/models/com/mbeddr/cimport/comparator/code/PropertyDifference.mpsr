@@ -55,6 +55,9 @@
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -151,14 +154,15 @@
           </node>
         </node>
       </node>
+      <node concept="3Tmbuc" id="6fymoI4X$l6" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="DYlgnAAI2Y" role="jymVt" />
     <node concept="3clFb_" id="DYlgnAAJ$e" role="jymVt">
       <property role="TrG5h" value="getProperty" />
       <node concept="3Tm1VV" id="DYlgnAAJ$g" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnAAJ$h" role="3clF47">
-        <node concept="3clFbF" id="DYlgnAAJ$i" role="3cqZAp">
-          <node concept="2N2G$s" id="DYlgnAAJ$j" role="3clFbG">
+        <node concept="3cpWs6" id="6fymoI4X$HT" role="3cqZAp">
+          <node concept="2N2G$s" id="6fymoI4X$HU" role="3cqZAk">
             <ref role="3cqZAo" node="DYlgnAAI3f" resolve="property" />
           </node>
         </node>
@@ -172,70 +176,70 @@
       <node concept="17QB3L" id="DYlgnAAJ$l" role="3clF45" />
       <node concept="3Tmbuc" id="DYlgnAAJ$m" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnAAJ$n" role="3clF47">
-        <node concept="3clFbF" id="DYlgnAAJ$o" role="3cqZAp">
-          <node concept="3cpWs3" id="DYlgnAAJ$p" role="3clFbG">
-            <node concept="2OqwBi" id="DYlgnAAJ$q" role="3uHU7w">
-              <node concept="2JrnkZ" id="DYlgnAAJ$r" role="2Oq$k0">
-                <node concept="3P9mCS" id="DYlgnAAJ$s" role="2JrQYb">
+        <node concept="3cpWs6" id="6fymoI4X$p7" role="3cqZAp">
+          <node concept="3cpWs3" id="6fymoI4X$p8" role="3cqZAk">
+            <node concept="2OqwBi" id="6fymoI4X$p9" role="3uHU7w">
+              <node concept="2JrnkZ" id="6fymoI4X$pa" role="2Oq$k0">
+                <node concept="3P9mCS" id="6fymoI4X$pb" role="2JrQYb">
                   <ref role="37wK5l" node="DYlgnA$vtl" resolve="getActual" />
                 </node>
               </node>
-              <node concept="liA8E" id="DYlgnAAJ$t" role="2OqNvi">
+              <node concept="liA8E" id="6fymoI4X$pc" role="2OqNvi">
                 <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                <node concept="2N2G$s" id="DYlgnAAJ$u" role="37wK5m">
+                <node concept="2N2G$s" id="6fymoI4X$pd" role="37wK5m">
                   <ref role="3cqZAo" node="DYlgnAAI3f" resolve="property" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs3" id="DYlgnAAJ$v" role="3uHU7B">
-              <node concept="Xl_RD" id="DYlgnAAJ$w" role="3uHU7w">
+            <node concept="3cpWs3" id="6fymoI4X$pe" role="3uHU7B">
+              <node concept="Xl_RD" id="6fymoI4X$pf" role="3uHU7w">
                 <property role="Xl_RC" value=" it is " />
               </node>
-              <node concept="3cpWs3" id="DYlgnAAJ$x" role="3uHU7B">
-                <node concept="3cpWs3" id="DYlgnAAJ$y" role="3uHU7B">
-                  <node concept="3cpWs3" id="DYlgnAAJ$z" role="3uHU7B">
-                    <node concept="3cpWs3" id="DYlgnAAJ$$" role="3uHU7B">
-                      <node concept="Xl_RD" id="DYlgnAAJ$_" role="3uHU7w">
+              <node concept="3cpWs3" id="6fymoI4X$pg" role="3uHU7B">
+                <node concept="3cpWs3" id="6fymoI4X$ph" role="3uHU7B">
+                  <node concept="3cpWs3" id="6fymoI4X$pi" role="3uHU7B">
+                    <node concept="3cpWs3" id="6fymoI4X$pj" role="3uHU7B">
+                      <node concept="Xl_RD" id="6fymoI4X$pk" role="3uHU7w">
                         <property role="Xl_RC" value=" it is " />
                       </node>
-                      <node concept="3cpWs3" id="DYlgnAAJ$A" role="3uHU7B">
-                        <node concept="3cpWs3" id="DYlgnAAJ$B" role="3uHU7B">
-                          <node concept="3cpWs3" id="DYlgnAAJ$C" role="3uHU7B">
-                            <node concept="Xl_RD" id="DYlgnAAJ$D" role="3uHU7B">
+                      <node concept="3cpWs3" id="6fymoI4X$pl" role="3uHU7B">
+                        <node concept="3cpWs3" id="6fymoI4X$pm" role="3uHU7B">
+                          <node concept="3cpWs3" id="6fymoI4X$pn" role="3uHU7B">
+                            <node concept="Xl_RD" id="6fymoI4X$po" role="3uHU7B">
                               <property role="Xl_RC" value="property " />
                             </node>
-                            <node concept="2N2G$s" id="DYlgnAAJ$E" role="3uHU7w">
+                            <node concept="2N2G$s" id="6fymoI4X$pp" role="3uHU7w">
                               <ref role="3cqZAo" node="DYlgnAAI3f" resolve="property" />
                             </node>
                           </node>
-                          <node concept="Xl_RD" id="DYlgnAAJ$F" role="3uHU7w">
+                          <node concept="Xl_RD" id="6fymoI4X$pq" role="3uHU7w">
                             <property role="Xl_RC" value=" is different. For " />
                           </node>
                         </node>
-                        <node concept="3cpWs2" id="DYlgnAAJ$G" role="3uHU7w">
+                        <node concept="3cpWs2" id="6fymoI4X$pr" role="3uHU7w">
                           <ref role="3cqZAo" node="DYlgnAAJ$O" resolve="nameForA" />
                         </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="DYlgnAAJ$H" role="3uHU7w">
-                      <node concept="2JrnkZ" id="DYlgnAAJ$I" role="2Oq$k0">
-                        <node concept="3P9mCS" id="DYlgnAAJ$J" role="2JrQYb">
+                    <node concept="2OqwBi" id="6fymoI4X$ps" role="3uHU7w">
+                      <node concept="2JrnkZ" id="6fymoI4X$pt" role="2Oq$k0">
+                        <node concept="3P9mCS" id="6fymoI4X$pu" role="2JrQYb">
                           <ref role="37wK5l" node="DYlgnA$vsF" resolve="getExpected" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="DYlgnAAJ$K" role="2OqNvi">
+                      <node concept="liA8E" id="6fymoI4X$pv" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                        <node concept="2N2G$s" id="DYlgnAAJ$L" role="37wK5m">
+                        <node concept="2N2G$s" id="6fymoI4X$pw" role="37wK5m">
                           <ref role="3cqZAo" node="DYlgnAAI3f" resolve="property" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="DYlgnAAJ$M" role="3uHU7w">
+                  <node concept="Xl_RD" id="6fymoI4X$px" role="3uHU7w">
                     <property role="Xl_RC" value=", for " />
                   </node>
                 </node>
-                <node concept="3cpWs2" id="DYlgnAAJ$N" role="3uHU7w">
+                <node concept="3cpWs2" id="6fymoI4X$py" role="3uHU7w">
                   <ref role="3cqZAo" node="DYlgnAAJ$Q" resolve="nameForB" />
                 </node>
               </node>
@@ -258,16 +262,16 @@
       <node concept="17QB3L" id="DYlgnAAJ$T" role="3clF45" />
       <node concept="3Tm1VV" id="DYlgnAAJ$U" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnAAJ$V" role="3clF47">
-        <node concept="3clFbF" id="DYlgnAAJ$W" role="3cqZAp">
-          <node concept="2OqwBi" id="DYlgnAAJ$X" role="3clFbG">
-            <node concept="2JrnkZ" id="DYlgnAAJ$Y" role="2Oq$k0">
-              <node concept="3P9mCS" id="DYlgnAAJ$Z" role="2JrQYb">
+        <node concept="3cpWs6" id="6fymoI4X$$6" role="3cqZAp">
+          <node concept="2OqwBi" id="6fymoI4X$$7" role="3cqZAk">
+            <node concept="2JrnkZ" id="6fymoI4X$$8" role="2Oq$k0">
+              <node concept="3P9mCS" id="6fymoI4X$$9" role="2JrQYb">
                 <ref role="37wK5l" node="DYlgnA$vsF" resolve="getExpected" />
               </node>
             </node>
-            <node concept="liA8E" id="DYlgnAAJ_0" role="2OqNvi">
+            <node concept="liA8E" id="6fymoI4X$$a" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-              <node concept="2N2G$s" id="DYlgnAAJ_1" role="37wK5m">
+              <node concept="2N2G$s" id="6fymoI4X$$b" role="37wK5m">
                 <ref role="3cqZAo" node="DYlgnAAI3f" resolve="property" />
               </node>
             </node>
@@ -281,16 +285,16 @@
       <node concept="17QB3L" id="DYlgnAAJ_3" role="3clF45" />
       <node concept="3Tm1VV" id="DYlgnAAJ_4" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnAAJ_5" role="3clF47">
-        <node concept="3clFbF" id="DYlgnAAJ_6" role="3cqZAp">
-          <node concept="2OqwBi" id="DYlgnAAJ_7" role="3clFbG">
-            <node concept="2JrnkZ" id="DYlgnAAJ_8" role="2Oq$k0">
-              <node concept="3P9mCS" id="DYlgnAAJ_9" role="2JrQYb">
+        <node concept="3cpWs6" id="6fymoI4X$CZ" role="3cqZAp">
+          <node concept="2OqwBi" id="6fymoI4X$D0" role="3cqZAk">
+            <node concept="2JrnkZ" id="6fymoI4X$D1" role="2Oq$k0">
+              <node concept="3P9mCS" id="6fymoI4X$D2" role="2JrQYb">
                 <ref role="37wK5l" node="DYlgnA$vtl" resolve="getActual" />
               </node>
             </node>
-            <node concept="liA8E" id="DYlgnAAJ_a" role="2OqNvi">
+            <node concept="liA8E" id="6fymoI4X$D3" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-              <node concept="2N2G$s" id="DYlgnAAJ_b" role="37wK5m">
+              <node concept="2N2G$s" id="6fymoI4X$D4" role="37wK5m">
                 <ref role="3cqZAo" node="DYlgnAAI3f" resolve="property" />
               </node>
             </node>

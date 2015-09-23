@@ -53,6 +53,9 @@
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -189,14 +192,15 @@
         <property role="TrG5h" value="actualCount" />
         <node concept="10Oyi0" id="DYlgnA$SOV" role="1tU5fm" />
       </node>
+      <node concept="3Tmbuc" id="6fymoI4Xr_P" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="DYlgnA$S3J" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$U7C" role="jymVt">
       <property role="TrG5h" value="getAttribute" />
       <node concept="3Tm1VV" id="DYlgnA$U7E" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnA$U7F" role="3clF47">
-        <node concept="3clFbF" id="DYlgnA$U7G" role="3cqZAp">
-          <node concept="2N2G$s" id="DYlgnA$U7H" role="3clFbG">
+        <node concept="3cpWs6" id="6fymoI4XshL" role="3cqZAp">
+          <node concept="2N2G$s" id="6fymoI4XshM" role="3cqZAk">
             <ref role="3cqZAo" node="DYlgnA$S4f" resolve="attribute" />
           </node>
         </node>
@@ -210,50 +214,50 @@
       <node concept="17QB3L" id="DYlgnA$U7J" role="3clF45" />
       <node concept="3Tmbuc" id="DYlgnA$U7K" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnA$U7L" role="3clF47">
-        <node concept="3clFbF" id="DYlgnA$U7M" role="3cqZAp">
-          <node concept="3cpWs3" id="DYlgnA$U7N" role="3clFbG">
-            <node concept="2N2G$s" id="DYlgnA$U7O" role="3uHU7w">
+        <node concept="3cpWs6" id="6fymoI4Xslx" role="3cqZAp">
+          <node concept="3cpWs3" id="6fymoI4Xsly" role="3cqZAk">
+            <node concept="2N2G$s" id="6fymoI4Xslz" role="3uHU7w">
               <ref role="3cqZAo" node="DYlgnA$S4l" resolve="actualCount" />
             </node>
-            <node concept="3cpWs3" id="DYlgnA$U7P" role="3uHU7B">
-              <node concept="Xl_RD" id="DYlgnA$U7Q" role="3uHU7w">
+            <node concept="3cpWs3" id="6fymoI4Xsl$" role="3uHU7B">
+              <node concept="Xl_RD" id="6fymoI4Xsl_" role="3uHU7w">
                 <property role="Xl_RC" value=" has " />
               </node>
-              <node concept="3cpWs3" id="DYlgnA$U7R" role="3uHU7B">
-                <node concept="3cpWs3" id="DYlgnA$U7S" role="3uHU7B">
-                  <node concept="3cpWs3" id="DYlgnA$U7T" role="3uHU7B">
-                    <node concept="3cpWs3" id="DYlgnA$U7U" role="3uHU7B">
-                      <node concept="Xl_RD" id="DYlgnA$U7V" role="3uHU7w">
+              <node concept="3cpWs3" id="6fymoI4XslA" role="3uHU7B">
+                <node concept="3cpWs3" id="6fymoI4XslB" role="3uHU7B">
+                  <node concept="3cpWs3" id="6fymoI4XslC" role="3uHU7B">
+                    <node concept="3cpWs3" id="6fymoI4XslD" role="3uHU7B">
+                      <node concept="Xl_RD" id="6fymoI4XslE" role="3uHU7w">
                         <property role="Xl_RC" value=" has " />
                       </node>
-                      <node concept="3cpWs3" id="DYlgnA$U7W" role="3uHU7B">
-                        <node concept="3cpWs2" id="DYlgnA$U7X" role="3uHU7w">
+                      <node concept="3cpWs3" id="6fymoI4XslF" role="3uHU7B">
+                        <node concept="3cpWs2" id="6fymoI4XslG" role="3uHU7w">
                           <ref role="3cqZAo" node="DYlgnA$U86" resolve="expectedName" />
                         </node>
-                        <node concept="3cpWs3" id="DYlgnA$U7Y" role="3uHU7B">
-                          <node concept="3cpWs3" id="DYlgnA$U7Z" role="3uHU7B">
-                            <node concept="Xl_RD" id="DYlgnA$U80" role="3uHU7B">
+                        <node concept="3cpWs3" id="6fymoI4XslH" role="3uHU7B">
+                          <node concept="3cpWs3" id="6fymoI4XslI" role="3uHU7B">
+                            <node concept="Xl_RD" id="6fymoI4XslJ" role="3uHU7B">
                               <property role="Xl_RC" value="for role " />
                             </node>
-                            <node concept="2N2G$s" id="DYlgnA$U81" role="3uHU7w">
+                            <node concept="2N2G$s" id="6fymoI4XslK" role="3uHU7w">
                               <ref role="3cqZAo" node="DYlgnA$S4f" resolve="attribute" />
                             </node>
                           </node>
-                          <node concept="Xl_RD" id="DYlgnA$U82" role="3uHU7w">
+                          <node concept="Xl_RD" id="6fymoI4XslL" role="3uHU7w">
                             <property role="Xl_RC" value=" " />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="2N2G$s" id="DYlgnA$U83" role="3uHU7w">
+                    <node concept="2N2G$s" id="6fymoI4XslM" role="3uHU7w">
                       <ref role="3cqZAo" node="DYlgnA$S4i" resolve="expectedCount" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="DYlgnA$U84" role="3uHU7w">
+                  <node concept="Xl_RD" id="6fymoI4XslN" role="3uHU7w">
                     <property role="Xl_RC" value=" attributes, while " />
                   </node>
                 </node>
-                <node concept="3cpWs2" id="DYlgnA$U85" role="3uHU7w">
+                <node concept="3cpWs2" id="6fymoI4XslO" role="3uHU7w">
                   <ref role="3cqZAo" node="DYlgnA$U88" resolve="actualName" />
                 </node>
               </node>
