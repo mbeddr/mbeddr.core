@@ -7,6 +7,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="0223b1d5-49af-4976-a025-91dc8ecc8626" name="com.mbeddr.mpsutil.contextactions.sandboxlang" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +15,7 @@
     <import index="9w4s" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util(MPS.IDEA/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" />
+    <import index="tvob" ref="r:c029c62e-e2d7-4065-8788-5b2e0c631dfe(com.mbeddr.mpsutil.contextactions.sandboxlang.intentions)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" implicit="true" />
@@ -126,6 +128,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="0223b1d5-49af-4976-a025-91dc8ecc8626" name="com.mbeddr.mpsutil.contextactions.sandboxlang">
+      <concept id="5143518692707406270" name="com.mbeddr.mpsutil.contextactions.sandboxlang.structure.RootConcept" flags="ng" index="2p2md1" />
+    </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
       <concept id="5022141054904911899" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteActionExpression" flags="ng" index="gcnaP" />
       <concept id="5022141054905292858" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource" flags="ng" index="geMak">
@@ -148,6 +153,13 @@
       <concept id="5022141054904338399" name="com.mbeddr.mpsutil.contextactions.structure.LanguageReference" flags="ng" index="gMbPL" />
       <concept id="5022141054903067959" name="com.mbeddr.mpsutil.contextactions.structure.ActionIdReference" flags="ng" index="gPhYp">
         <reference id="5022141054903067962" name="action" index="gPhYk" />
+      </concept>
+      <concept id="5143518692707244814" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource" flags="ng" index="2p1eBL">
+        <child id="5143518692707244818" name="folder" index="2p1eBH" />
+        <child id="5143518692707272511" name="intentionIds" index="2p1Rn0" />
+      </concept>
+      <concept id="5143518692707292632" name="com.mbeddr.mpsutil.contextactions.structure.IntentionIdReference" flags="ng" index="2p1MsB">
+        <reference id="5143518692707296615" name="intention" index="2p1Luo" />
       </concept>
       <concept id="1118923038131914971" name="com.mbeddr.mpsutil.contextactions.structure.NewRootSource" flags="ng" index="_nrT8">
         <child id="5022141054904339659" name="includes" index="gMbp_" />
@@ -260,6 +272,14 @@
         <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
       </node>
     </node>
+    <node concept="2p1eBL" id="4txsJZup_g5" role="NGJ24">
+      <node concept="Xl_RD" id="4txsJZup_n7" role="2p1eBH">
+        <property role="Xl_RC" value="Intentions" />
+      </node>
+      <node concept="2p1MsB" id="657q32pChkk" role="2p1Rn0">
+        <ref role="2p1Luo" to="tvob:4txsJZuq17J" resolve="addAToName" />
+      </node>
+    </node>
     <node concept="geMak" id="6c435dJIjYZ" role="NGJ24">
       <node concept="3cpWs3" id="6c435dJIwsj" role="geMbG">
         <node concept="geSxg" id="6c435dJIwsB" role="3uHU7w" />
@@ -347,7 +367,7 @@
       </node>
     </node>
     <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF">
-      <property role="3clFbU" value="false" />
+      <property role="3clFbU" value="true" />
     </node>
   </node>
   <node concept="sE7Ow" id="4mMeETlpNKH">
@@ -413,5 +433,8 @@
     </node>
   </node>
   <node concept="2DaZZR" id="4mMeETlr7Di" />
+  <node concept="2p2md1" id="4txsJZuq7nY">
+    <property role="TrG5h" value="SanboxConcept" />
+  </node>
 </model>
 
