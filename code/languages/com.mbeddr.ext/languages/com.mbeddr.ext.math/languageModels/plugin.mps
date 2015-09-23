@@ -20,12 +20,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="9w4s" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util(MPS.IDEA/)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="9n6f" ref="r:beead070-9c8d-4934-b9f8-19d92848c40a(com.mbeddr.mpsutil.contextactions.sandbox.plugin)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -205,6 +200,13 @@
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
       <concept id="5022141054904911899" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteActionExpression" flags="ng" index="gcnaP" />
+      <concept id="5143518692707244814" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource" flags="ng" index="2p1eBL">
+        <child id="5143518692707244818" name="folder" index="2p1eBH" />
+        <child id="5143518692707272511" name="intentionIds" index="2p1Rn0" />
+      </concept>
+      <concept id="5143518692707296768" name="com.mbeddr.mpsutil.contextactions.structure.StringIntentionId" flags="ng" index="2p1LjZ">
+        <property id="5143518692707296778" name="id" index="2p1LjP" />
+      </concept>
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
         <child id="6294660000051228527" name="sources" index="NGJ24" />
         <child id="8645458101902647485" name="isApplicable" index="3V_frF" />
@@ -935,6 +937,20 @@
             <property role="Xl_RC" value="math" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2p1eBL" id="UN7CmpucZh" role="NGJ24">
+      <node concept="Xl_RD" id="UN7Cmpud0J" role="2p1eBH">
+        <property role="Xl_RC" value="Math Transformations" />
+      </node>
+      <node concept="2p1LjZ" id="UN7Cmpud1v" role="2p1Rn0">
+        <property role="2p1LjP" value="com.mbeddr.ext.math.intentions.makeDenominator_Intention" />
+      </node>
+      <node concept="2p1LjZ" id="UN7Cmpud1I" role="2p1Rn0">
+        <property role="2p1LjP" value="com.mbeddr.ext.math.intentions.makeNumerator_Intention" />
+      </node>
+      <node concept="2p1LjZ" id="UN7Cmpud1U" role="2p1Rn0">
+        <property role="2p1LjP" value="com.mbeddr.ext.math.intentions.removeAndUseThisOne_Intention" />
       </node>
     </node>
     <node concept="3clFbT" id="13LyZYiLqnI" role="3V_frF">
