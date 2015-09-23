@@ -106,6 +106,7 @@
       <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -217,6 +218,7 @@
         <property role="TrG5h" value="actualName" />
         <node concept="17QB3L" id="DYlgnAAtWt" role="1tU5fm" />
       </node>
+      <node concept="3Tmbuc" id="6fymoI4XyID" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="DYlgnAAtTP" role="jymVt" />
     <node concept="3clFb_" id="DYlgnAAwi4" role="jymVt">
@@ -519,7 +521,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="DYlgnAAtUg" role="jymVt" />
-    <node concept="2tJIrI" id="494SuRWLRaT" role="jymVt" />
     <node concept="3Tm1VV" id="494SuRWLRaO" role="1B3o_S" />
   </node>
 </model>

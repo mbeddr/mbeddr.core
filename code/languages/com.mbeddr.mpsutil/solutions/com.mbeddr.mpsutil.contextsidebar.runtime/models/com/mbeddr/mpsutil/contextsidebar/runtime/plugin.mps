@@ -263,6 +263,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -1773,14 +1776,23 @@
                   </node>
                   <node concept="9aQIb" id="i7Uxc2ojrW" role="9aQIa">
                     <node concept="3clFbS" id="i7Uxc2ojrX" role="9aQI4">
-                      <node concept="3clFbF" id="i7Uxc2ojzD" role="3cqZAp">
-                        <node concept="1rXfSq" id="i7Uxc2ojzC" role="3clFbG">
-                          <ref role="37wK5l" node="i7Uxc2oiVY" resolve="updateEnabled" />
-                          <node concept="37vLTw" id="i7Uxc2oj_r" role="37wK5m">
-                            <ref role="3cqZAo" node="i7Uxc2oj55" resolve="ideaProject" />
-                          </node>
-                          <node concept="37vLTw" id="i7Uxc2ojCT" role="37wK5m">
-                            <ref role="3cqZAo" node="i7Uxc2oj5i" resolve="enabled" />
+                      <node concept="3SKdUt" id="4txsJZunJwA" role="3cqZAp">
+                        <node concept="3SKdUq" id="4txsJZunJyl" role="3SKWNk">
+                          <property role="3SKdUp" value="This causes a flush on the the event queue to never return (queue will never be empty)" />
+                        </node>
+                      </node>
+                      <node concept="3SKdUt" id="4txsJZun_aZ" role="3cqZAp">
+                        <node concept="3SKWN0" id="4txsJZun_b0" role="3SKWNk">
+                          <node concept="3clFbF" id="i7Uxc2ojzD" role="3SKWNf">
+                            <node concept="1rXfSq" id="i7Uxc2ojzC" role="3clFbG">
+                              <ref role="37wK5l" node="i7Uxc2oiVY" resolve="updateEnabled" />
+                              <node concept="37vLTw" id="i7Uxc2oj_r" role="37wK5m">
+                                <ref role="3cqZAo" node="i7Uxc2oj55" resolve="ideaProject" />
+                              </node>
+                              <node concept="37vLTw" id="i7Uxc2ojCT" role="37wK5m">
+                                <ref role="3cqZAo" node="i7Uxc2oj5i" resolve="enabled" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>

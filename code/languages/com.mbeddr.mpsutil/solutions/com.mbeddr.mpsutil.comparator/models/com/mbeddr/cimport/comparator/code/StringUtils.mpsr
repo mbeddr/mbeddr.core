@@ -36,9 +36,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -60,12 +58,6 @@
   <node concept="312cEu" id="DYlgnAAVf1">
     <property role="TrG5h" value="StringUtils" />
     <node concept="2tJIrI" id="DYlgnAAVhd" role="jymVt" />
-    <node concept="3clFbW" id="DYlgnAAVhH" role="jymVt">
-      <node concept="3cqZAl" id="DYlgnAAVhI" role="3clF45" />
-      <node concept="3Tm1VV" id="DYlgnAAVhJ" role="1B3o_S" />
-      <node concept="3clFbS" id="DYlgnAAVhK" role="3clF47" />
-    </node>
-    <node concept="2tJIrI" id="DYlgnAAVhg" role="jymVt" />
     <node concept="2YIFZL" id="DYlgnAAVkz" role="jymVt">
       <property role="TrG5h" value="indent" />
       <node concept="17QB3L" id="DYlgnAAVk$" role="3clF45" />
@@ -91,6 +83,7 @@
         <property role="TrG5h" value="s" />
         <node concept="17QB3L" id="DYlgnAAVkH" role="1tU5fm" />
       </node>
+      <node concept="3Tm1VV" id="6fymoI4X_7m" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="DYlgnAAVhl" role="jymVt" />
     <node concept="3Tm1VV" id="DYlgnAAVf2" role="1B3o_S" />

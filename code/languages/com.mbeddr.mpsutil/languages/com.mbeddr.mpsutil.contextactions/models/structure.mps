@@ -8,6 +8,7 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
+    <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
@@ -276,6 +277,53 @@
     <property role="TrG5h" value="ParameterObject" />
     <property role="34LRSv" value="parameterObject" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4txsJZuppGe">
+    <property role="TrG5h" value="IntentionsActionSource" />
+    <property role="34LRSv" value="intentions" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
+    <node concept="1TJgyj" id="4txsJZuppGi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="folder" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4txsJZupwsZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="intentionIds" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4txsJZupwt4" resolve="IIntentionId" />
+    </node>
+    <node concept="PrWs8" id="4txsJZuppGf" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4txsJZupwt4">
+    <property role="TrG5h" value="IIntentionId" />
+  </node>
+  <node concept="1TIwiD" id="4txsJZup_no">
+    <property role="TrG5h" value="IntentionIdReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4txsJZupAlB" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="intention" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4txsJZup_np" role="PzmwI">
+      <ref role="PrY4T" node="4txsJZupwt4" resolve="IIntentionId" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4txsJZupAo0">
+    <property role="TrG5h" value="StringIntentionId" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4txsJZupAoa" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4txsJZupAo7" role="PzmwI">
+      <ref role="PrY4T" node="4txsJZupwt4" resolve="IIntentionId" />
+    </node>
   </node>
 </model>
 
