@@ -26,6 +26,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -50,6 +51,7 @@
     <property role="34LRSv" value="sum" />
     <property role="R4oN_" value="compute sum of expression ∑" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/sum.png" />
     <ref role="1TJDcQ" node="4r1mNB_fOp9" resolve="MathLoopExpression" />
     <node concept="PrWs8" id="7x2kTszdQCn" role="PzmwI">
       <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
@@ -117,6 +119,7 @@
     <property role="34LRSv" value="product" />
     <property role="R4oN_" value="compute product of expression ∏" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/product.png" />
     <ref role="1TJDcQ" node="4r1mNB_fOp9" resolve="MathLoopExpression" />
     <node concept="PrWs8" id="7x2kTszdQCc" role="PzmwI">
       <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
@@ -130,6 +133,7 @@
     <property role="34LRSv" value="sqrt" />
     <property role="R4oN_" value="square root √" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/sqrt.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4r1mNB_lBZi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -149,6 +153,7 @@
     <property role="34LRSv" value="pow" />
     <property role="R4oN_" value="n^m" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/pow.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4r1mNB_o5W9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -171,6 +176,7 @@
     <property role="34LRSv" value="log" />
     <property role="R4oN_" value="n log m" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/log.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4r1mNB_q7Br" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -193,6 +199,7 @@
     <property role="34LRSv" value="abs" />
     <property role="R4oN_" value="absolute value" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/abs.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4r1mNB_uhMz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -212,6 +219,7 @@
     <property role="34LRSv" value="frac" />
     <property role="R4oN_" value="fraction bar" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/frac.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4r1mNB_wZt0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
