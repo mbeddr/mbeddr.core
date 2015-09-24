@@ -356,6 +356,11 @@
       <property role="20kJfa" value="isApplicable" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7husA5YjPQ8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="M6xJ_" id="657q32pRgE7" role="lGtFl">
       <property role="Hh88m" value="contextAction" />
       <node concept="trNpa" id="657q32pRgEf" role="EQaZv">

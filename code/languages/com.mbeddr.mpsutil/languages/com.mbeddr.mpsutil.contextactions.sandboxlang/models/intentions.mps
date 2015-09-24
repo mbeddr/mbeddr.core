@@ -68,8 +68,16 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
+      <concept id="7009685902974585451" name="com.mbeddr.mpsutil.contextactions.structure.IntentionAnnotation" flags="ng" index="3SAA9r">
+        <child id="7009685902974586162" name="folder" index="3SAAk2" />
       </concept>
     </language>
   </registry>
@@ -133,6 +141,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3SAA9r" id="7husA5YkIho" role="lGtFl">
+      <node concept="Xl_RD" id="7husA5YnT9c" role="3SAAk2">
+        <property role="Xl_RC" value="Intentions" />
       </node>
     </node>
   </node>

@@ -1323,18 +1323,44 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="7husA5YkL5S" role="jymVt">
+      <property role="TrG5h" value="myModelNames" />
+      <node concept="3Tm6S6" id="7husA5YkL5T" role="1B3o_S" />
+      <node concept="10Q1$e" id="7husA5YkMrc" role="1tU5fm">
+        <node concept="17QB3L" id="7husA5YkMq4" role="10Q1$1" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5lGdLibWMJ9" role="jymVt" />
-    <node concept="3clFbW" id="5lGdLibWNuF" role="jymVt">
-      <node concept="3cqZAl" id="5lGdLibWNuG" role="3clF45" />
-      <node concept="3Tm1VV" id="5lGdLibWNuH" role="1B3o_S" />
-      <node concept="3clFbS" id="5lGdLibWNuJ" role="3clF47">
+    <node concept="3clFbW" id="7husA5YkNvb" role="jymVt">
+      <node concept="37vLTG" id="7husA5YkOK6" role="3clF46">
+        <property role="TrG5h" value="descriptorType" />
+        <node concept="3uibUv" id="7husA5YkOK7" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          <node concept="16syzq" id="7husA5YkOK8" role="11_B2D">
+            <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7husA5YkOK9" role="3clF46">
+        <property role="TrG5h" value="descriptorClassName" />
+        <node concept="17QB3L" id="7husA5YkOKa" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7husA5YkOOZ" role="3clF46">
+        <property role="TrG5h" value="modelNames" />
+        <node concept="10Q1$e" id="7husA5YkOS0" role="1tU5fm">
+          <node concept="17QB3L" id="7husA5YkOQC" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7husA5YkNvd" role="3clF45" />
+      <node concept="3Tm1VV" id="7husA5YkNve" role="1B3o_S" />
+      <node concept="3clFbS" id="7husA5YkNvf" role="3clF47">
         <node concept="3clFbF" id="5lGdLibWNuN" role="3cqZAp">
           <node concept="37vLTI" id="5lGdLibWNuP" role="3clFbG">
             <node concept="37vLTw" id="5lGdLibWNuT" role="37vLTJ">
               <ref role="3cqZAo" node="5lGdLibWMh8" resolve="myDescriptorClassName" />
             </node>
             <node concept="37vLTw" id="5lGdLibWNuU" role="37vLTx">
-              <ref role="3cqZAo" node="5lGdLibWNuM" resolve="descriptorClassName" />
+              <ref role="3cqZAo" node="7husA5YkOK9" resolve="descriptorClassName" />
             </node>
           </node>
         </node>
@@ -1344,7 +1370,41 @@
               <ref role="3cqZAo" node="5lGdLibWLiN" resolve="myDescriptorType" />
             </node>
             <node concept="37vLTw" id="5lGdLibWNv5" role="37vLTx">
-              <ref role="3cqZAo" node="5lGdLibWNuX" resolve="descriptorType" />
+              <ref role="3cqZAo" node="7husA5YkOK6" resolve="descriptorType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7husA5YkPa3" role="3cqZAp">
+          <node concept="37vLTI" id="7husA5YkPg5" role="3clFbG">
+            <node concept="37vLTw" id="7husA5YkP_J" role="37vLTx">
+              <ref role="3cqZAo" node="7husA5YkOOZ" resolve="modelNames" />
+            </node>
+            <node concept="37vLTw" id="7husA5YkPa2" role="37vLTJ">
+              <ref role="3cqZAo" node="7husA5YkL5S" resolve="myModelNames" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7husA5YkMG0" role="jymVt" />
+    <node concept="3clFbW" id="5lGdLibWNuF" role="jymVt">
+      <node concept="3cqZAl" id="5lGdLibWNuG" role="3clF45" />
+      <node concept="3Tm1VV" id="5lGdLibWNuH" role="1B3o_S" />
+      <node concept="3clFbS" id="5lGdLibWNuJ" role="3clF47">
+        <node concept="1VxSAg" id="7husA5YkQsh" role="3cqZAp">
+          <ref role="37wK5l" node="7husA5YkNvb" resolve="DescriptorCollector" />
+          <node concept="37vLTw" id="7husA5YkQBy" role="37wK5m">
+            <ref role="3cqZAo" node="5lGdLibWNuX" resolve="descriptorType" />
+          </node>
+          <node concept="37vLTw" id="7husA5YkQPk" role="37wK5m">
+            <ref role="3cqZAo" node="5lGdLibWNuM" resolve="descriptorClassName" />
+          </node>
+          <node concept="2ShNRf" id="7husA5YkRai" role="37wK5m">
+            <node concept="3g6Rrh" id="7husA5YljTn" role="2ShVmc">
+              <node concept="17QB3L" id="7husA5YljOS" role="3g7fb8" />
+              <node concept="Xl_RD" id="7husA5YljV0" role="3g7hyw">
+                <property role="Xl_RC" value="plugin" />
+              </node>
             </node>
           </node>
         </node>
@@ -1572,47 +1632,36 @@
       <node concept="3cqZAl" id="VPgi8egic5" role="3clF45" />
       <node concept="3Tmbuc" id="5lGdLibWJgd" role="1B3o_S" />
       <node concept="3clFbS" id="VPgi8egic7" role="3clF47">
-        <node concept="3cpWs8" id="VPgi8egy5w" role="3cqZAp">
-          <node concept="3cpWsn" id="VPgi8egy5x" role="3cpWs9">
+        <node concept="2Gpval" id="7husA5YmCKr" role="3cqZAp">
+          <node concept="2GrKxI" id="7husA5YmCKs" role="2Gsz3X">
             <property role="TrG5h" value="descriptor" />
-            <node concept="16syzq" id="5lGdLibWZoS" role="1tU5fm">
-              <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
-            </node>
-            <node concept="1rXfSq" id="VPgi8egy5z" role="33vP2m">
-              <ref role="37wK5l" node="VPgi8ewlrZ" resolve="getDescriptor" />
-              <node concept="37vLTw" id="VPgi8egy5$" role="37wK5m">
-                <ref role="3cqZAo" node="VPgi8egiX1" resolve="module" />
-              </node>
-            </node>
           </node>
-        </node>
-        <node concept="3clFbJ" id="VPgi8egy5_" role="3cqZAp">
-          <node concept="3clFbS" id="VPgi8egy5A" role="3clFbx">
-            <node concept="3clFbF" id="VPgi8egy5B" role="3cqZAp">
-              <node concept="1rXfSq" id="VPgi8egy5C" role="3clFbG">
+          <node concept="3clFbS" id="7husA5YmCKt" role="2LFqv$">
+            <node concept="3clFbF" id="7husA5YmCKu" role="3cqZAp">
+              <node concept="1rXfSq" id="7husA5YmCKv" role="3clFbG">
                 <ref role="37wK5l" node="VPgi8egs8c" resolve="loadDescriptor" />
-                <node concept="37vLTw" id="VPgi8egy5D" role="37wK5m">
-                  <ref role="3cqZAo" node="VPgi8egy5x" resolve="descriptor" />
+                <node concept="2GrUjf" id="7husA5YmCKw" role="37wK5m">
+                  <ref role="2Gs0qQ" node="7husA5YmCKs" resolve="descriptor" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5lGdLibXhN5" role="3cqZAp">
-              <node concept="2OqwBi" id="5lGdLibXi9s" role="3clFbG">
-                <node concept="37vLTw" id="5lGdLibXhN3" role="2Oq$k0">
+            <node concept="3clFbF" id="7husA5YmCKx" role="3cqZAp">
+              <node concept="2OqwBi" id="7husA5YmCKy" role="3clFbG">
+                <node concept="37vLTw" id="7husA5YmCKz" role="2Oq$k0">
                   <ref role="3cqZAo" node="5lGdLibXaj1" resolve="myLoadedDescriptors" />
                 </node>
-                <node concept="TSZUe" id="5lGdLibXj6_" role="2OqNvi">
-                  <node concept="37vLTw" id="5lGdLibXjn5" role="25WWJ7">
-                    <ref role="3cqZAo" node="VPgi8egy5x" resolve="descriptor" />
+                <node concept="TSZUe" id="7husA5YmFuI" role="2OqNvi">
+                  <node concept="2GrUjf" id="7husA5YmFuK" role="25WWJ7">
+                    <ref role="2Gs0qQ" node="7husA5YmCKs" resolve="descriptor" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3y3z36" id="VPgi8egy5E" role="3clFbw">
-            <node concept="10Nm6u" id="VPgi8egy5F" role="3uHU7w" />
-            <node concept="37vLTw" id="VPgi8egy5G" role="3uHU7B">
-              <ref role="3cqZAo" node="VPgi8egy5x" resolve="descriptor" />
+          <node concept="1rXfSq" id="7husA5YmCKA" role="2GsD0m">
+            <ref role="37wK5l" node="VPgi8ewlrZ" resolve="getDescriptors" />
+            <node concept="37vLTw" id="7husA5YmCKB" role="37wK5m">
+              <ref role="3cqZAo" node="VPgi8egiX1" resolve="module" />
             </node>
           </node>
         </node>
@@ -1630,27 +1679,16 @@
       <node concept="3cqZAl" id="VPgi8eginL" role="3clF45" />
       <node concept="3Tmbuc" id="5lGdLibWJtR" role="1B3o_S" />
       <node concept="3clFbS" id="VPgi8eginN" role="3clF47">
-        <node concept="3cpWs8" id="VPgi8egxpM" role="3cqZAp">
-          <node concept="3cpWsn" id="VPgi8egxpN" role="3cpWs9">
+        <node concept="2Gpval" id="7husA5Ymxnd" role="3cqZAp">
+          <node concept="2GrKxI" id="7husA5Ymxnf" role="2Gsz3X">
             <property role="TrG5h" value="descriptor" />
-            <node concept="16syzq" id="5lGdLibX9P2" role="1tU5fm">
-              <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
-            </node>
-            <node concept="1rXfSq" id="VPgi8egxpO" role="33vP2m">
-              <ref role="37wK5l" node="VPgi8ewlrZ" resolve="getDescriptor" />
-              <node concept="37vLTw" id="VPgi8egxpP" role="37wK5m">
-                <ref role="3cqZAo" node="VPgi8egj2C" resolve="module" />
-              </node>
-            </node>
           </node>
-        </node>
-        <node concept="3clFbJ" id="VPgi8egxBL" role="3cqZAp">
-          <node concept="3clFbS" id="VPgi8egxBN" role="3clFbx">
+          <node concept="3clFbS" id="7husA5Ymxnh" role="2LFqv$">
             <node concept="3clFbF" id="VPgi8egxXo" role="3cqZAp">
               <node concept="1rXfSq" id="VPgi8egxXm" role="3clFbG">
                 <ref role="37wK5l" node="VPgi8egtEe" resolve="unloadDescriptor" />
-                <node concept="37vLTw" id="VPgi8egxZK" role="37wK5m">
-                  <ref role="3cqZAo" node="VPgi8egxpN" resolve="descriptor" />
+                <node concept="2GrUjf" id="7husA5YmB7y" role="37wK5m">
+                  <ref role="2Gs0qQ" node="7husA5Ymxnf" resolve="descriptor" />
                 </node>
               </node>
             </node>
@@ -1660,17 +1698,17 @@
                   <ref role="3cqZAo" node="5lGdLibXaj1" resolve="myLoadedDescriptors" />
                 </node>
                 <node concept="3dhRuq" id="5lGdLibXl4X" role="2OqNvi">
-                  <node concept="37vLTw" id="5lGdLibXl_R" role="25WWJ7">
-                    <ref role="3cqZAo" node="VPgi8egxpN" resolve="descriptor" />
+                  <node concept="2GrUjf" id="7husA5YmBh1" role="25WWJ7">
+                    <ref role="2Gs0qQ" node="7husA5Ymxnf" resolve="descriptor" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3y3z36" id="VPgi8egxRF" role="3clFbw">
-            <node concept="10Nm6u" id="VPgi8egxVM" role="3uHU7w" />
-            <node concept="37vLTw" id="VPgi8egxIz" role="3uHU7B">
-              <ref role="3cqZAo" node="VPgi8egxpN" resolve="descriptor" />
+          <node concept="1rXfSq" id="7husA5YmBZY" role="2GsD0m">
+            <ref role="37wK5l" node="VPgi8ewlrZ" resolve="getDescriptors" />
+            <node concept="37vLTw" id="7husA5YmBZZ" role="37wK5m">
+              <ref role="3cqZAo" node="VPgi8egj2C" resolve="module" />
             </node>
           </node>
         </node>
@@ -1678,77 +1716,121 @@
     </node>
     <node concept="2tJIrI" id="VPgi8egujC" role="jymVt" />
     <node concept="3clFb_" id="VPgi8eguz7" role="jymVt">
-      <property role="TrG5h" value="getDescriptorClass" />
-      <node concept="3uibUv" id="VPgi8ew7n0" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
-        <node concept="16syzq" id="5lGdLibX2_F" role="11_B2D">
-          <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
-        </node>
-      </node>
+      <property role="TrG5h" value="getDescriptorClasses" />
       <node concept="3Tmbuc" id="5lGdLibX94N" role="1B3o_S" />
       <node concept="3clFbS" id="VPgi8eguzb" role="3clF47">
-        <node concept="3cpWs8" id="VPgi8egvHc" role="3cqZAp">
-          <node concept="3cpWsn" id="VPgi8egvHd" role="3cpWs9">
-            <property role="TrG5h" value="className" />
-            <node concept="17QB3L" id="VPgi8egvHe" role="1tU5fm" />
-            <node concept="3cpWs3" id="VPgi8egvHf" role="33vP2m">
-              <node concept="37vLTw" id="5lGdLibX4bZ" role="3uHU7w">
-                <ref role="3cqZAo" node="5lGdLibWMh8" resolve="myDescriptorClassName" />
-              </node>
-              <node concept="3cpWs3" id="VPgi8egvHh" role="3uHU7B">
-                <node concept="2OqwBi" id="VPgi8egvHi" role="3uHU7B">
-                  <node concept="37vLTw" id="VPgi8egvHj" role="2Oq$k0">
-                    <ref role="3cqZAo" node="VPgi8egvzc" resolve="module" />
-                  </node>
-                  <node concept="liA8E" id="VPgi8egvHk" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
-                  </node>
+        <node concept="3cpWs8" id="7husA5YlppK" role="3cqZAp">
+          <node concept="3cpWsn" id="7husA5YlppN" role="3cpWs9">
+            <property role="TrG5h" value="descriptors" />
+            <node concept="_YKpA" id="7husA5YlppG" role="1tU5fm">
+              <node concept="3uibUv" id="7husA5YlqlL" role="_ZDj9">
+                <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+                <node concept="16syzq" id="7husA5YlqlM" role="11_B2D">
+                  <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
                 </node>
-                <node concept="Xl_RD" id="VPgi8egvHl" role="3uHU7w">
-                  <property role="Xl_RC" value=".plugin." />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="7husA5YlqMV" role="33vP2m">
+              <node concept="Tc6Ow" id="7husA5YlqJ4" role="2ShVmc">
+                <node concept="3uibUv" id="7husA5YlqJ5" role="HW$YZ">
+                  <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+                  <node concept="16syzq" id="7husA5YlqJ6" role="11_B2D">
+                    <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="SfApY" id="VPgi8egvHo" role="3cqZAp">
-          <node concept="3clFbS" id="VPgi8egvHp" role="SfCbr">
-            <node concept="3cpWs6" id="VPgi8egw4x" role="3cqZAp">
-              <node concept="1eOMI4" id="VPgi8egwc5" role="3cqZAk">
-                <node concept="10QFUN" id="VPgi8egwc6" role="1eOMHV">
-                  <node concept="2OqwBi" id="VPgi8egwc1" role="10QFUP">
-                    <node concept="37vLTw" id="VPgi8egwc2" role="2Oq$k0">
-                      <ref role="3cqZAo" node="VPgi8egvzc" resolve="module" />
+        <node concept="2Gpval" id="7husA5YluhH" role="3cqZAp">
+          <node concept="2GrKxI" id="7husA5YluhJ" role="2Gsz3X">
+            <property role="TrG5h" value="modelName" />
+          </node>
+          <node concept="3clFbS" id="7husA5YluhL" role="2LFqv$">
+            <node concept="3cpWs8" id="VPgi8egvHc" role="3cqZAp">
+              <node concept="3cpWsn" id="VPgi8egvHd" role="3cpWs9">
+                <property role="TrG5h" value="className" />
+                <node concept="17QB3L" id="VPgi8egvHe" role="1tU5fm" />
+                <node concept="3cpWs3" id="VPgi8egvHf" role="33vP2m">
+                  <node concept="37vLTw" id="5lGdLibX4bZ" role="3uHU7w">
+                    <ref role="3cqZAo" node="5lGdLibWMh8" resolve="myDescriptorClassName" />
+                  </node>
+                  <node concept="3cpWs3" id="7husA5YlN_d" role="3uHU7B">
+                    <node concept="Xl_RD" id="7husA5YlLQV" role="3uHU7w">
+                      <property role="Xl_RC" value="." />
                     </node>
-                    <node concept="liA8E" id="VPgi8egwc3" role="2OqNvi">
-                      <ref role="37wK5l" to="j8aq:~ReloadableModule.getOwnClass(java.lang.String):java.lang.Class" resolve="getOwnClass" />
-                      <node concept="37vLTw" id="VPgi8egwc4" role="37wK5m">
-                        <ref role="3cqZAo" node="VPgi8egvHd" resolve="className" />
+                    <node concept="3cpWs3" id="7husA5YlLQN" role="3uHU7B">
+                      <node concept="3cpWs3" id="VPgi8egvHh" role="3uHU7B">
+                        <node concept="2OqwBi" id="VPgi8egvHi" role="3uHU7B">
+                          <node concept="37vLTw" id="VPgi8egvHj" role="2Oq$k0">
+                            <ref role="3cqZAo" node="VPgi8egvzc" resolve="module" />
+                          </node>
+                          <node concept="liA8E" id="VPgi8egvHk" role="2OqNvi">
+                            <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="7husA5YlLQT" role="3uHU7w">
+                          <property role="Xl_RC" value="." />
+                        </node>
+                      </node>
+                      <node concept="2GrUjf" id="7husA5YlOOM" role="3uHU7w">
+                        <ref role="2Gs0qQ" node="7husA5YluhJ" resolve="modelName" />
                       </node>
                     </node>
                   </node>
-                  <node concept="3uibUv" id="VPgi8ew0rw" role="10QFUM">
-                    <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
-                    <node concept="16syzq" id="5lGdLibX4SE" role="11_B2D">
-                      <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+                </node>
+              </node>
+            </node>
+            <node concept="SfApY" id="VPgi8egvHo" role="3cqZAp">
+              <node concept="3clFbS" id="VPgi8egvHp" role="SfCbr">
+                <node concept="3clFbF" id="7husA5YlC5v" role="3cqZAp">
+                  <node concept="2OqwBi" id="7husA5YlDEK" role="3clFbG">
+                    <node concept="37vLTw" id="7husA5YlC5t" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7husA5YlppN" resolve="descriptors" />
                     </node>
+                    <node concept="TSZUe" id="7husA5YlGV7" role="2OqNvi">
+                      <node concept="10QFUN" id="7husA5YlH0t" role="25WWJ7">
+                        <node concept="2OqwBi" id="7husA5YlH0u" role="10QFUP">
+                          <node concept="37vLTw" id="7husA5YlH0v" role="2Oq$k0">
+                            <ref role="3cqZAo" node="VPgi8egvzc" resolve="module" />
+                          </node>
+                          <node concept="liA8E" id="7husA5YlH0w" role="2OqNvi">
+                            <ref role="37wK5l" to="j8aq:~ReloadableModule.getOwnClass(java.lang.String):java.lang.Class" resolve="getOwnClass" />
+                            <node concept="37vLTw" id="7husA5YlH0x" role="37wK5m">
+                              <ref role="3cqZAo" node="VPgi8egvHd" resolve="className" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3uibUv" id="7husA5YlH0y" role="10QFUM">
+                          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+                          <node concept="16syzq" id="7husA5YlH0z" role="11_B2D">
+                            <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="VPgi8egvHv" role="TEbGg">
+                <node concept="3clFbS" id="VPgi8egvHw" role="TDEfX" />
+                <node concept="3cpWsn" id="VPgi8egvHx" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="7GyAnSs5zyc" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="VPgi8egvHv" role="TEbGg">
-            <node concept="3clFbS" id="VPgi8egvHw" role="TDEfX" />
-            <node concept="3cpWsn" id="VPgi8egvHx" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="7GyAnSs5zyc" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
+          <node concept="37vLTw" id="7husA5Yl$NP" role="2GsD0m">
+            <ref role="3cqZAo" node="7husA5YkL5S" resolve="myModelNames" />
           </node>
         </node>
         <node concept="3cpWs6" id="VPgi8egw_s" role="3cqZAp">
-          <node concept="10Nm6u" id="VPgi8egwTL" role="3cqZAk" />
+          <node concept="37vLTw" id="7husA5Ylsjv" role="3cqZAk">
+            <ref role="3cqZAo" node="7husA5YlppN" resolve="descriptors" />
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="VPgi8egvzc" role="3clF46">
@@ -1757,63 +1839,83 @@
           <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
         </node>
       </node>
+      <node concept="_YKpA" id="7husA5YlqVH" role="3clF45">
+        <node concept="3uibUv" id="7husA5YlqVJ" role="_ZDj9">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          <node concept="16syzq" id="7husA5YlqVK" role="11_B2D">
+            <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="VPgi8ewqwu" role="jymVt" />
     <node concept="3clFb_" id="VPgi8ewlrZ" role="jymVt">
-      <property role="TrG5h" value="getDescriptor" />
-      <node concept="16syzq" id="5lGdLibX0Ac" role="3clF45">
-        <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+      <property role="TrG5h" value="getDescriptors" />
+      <node concept="_YKpA" id="7husA5YlQEl" role="3clF45">
+        <node concept="16syzq" id="7husA5YlRte" role="_ZDj9">
+          <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+        </node>
       </node>
       <node concept="3Tmbuc" id="5lGdLibX8DP" role="1B3o_S" />
       <node concept="3clFbS" id="VPgi8ewls3" role="3clF47">
-        <node concept="3cpWs8" id="VPgi8ewxAT" role="3cqZAp">
-          <node concept="3cpWsn" id="VPgi8ewxAU" role="3cpWs9">
+        <node concept="3cpWs8" id="7husA5Ym0nn" role="3cqZAp">
+          <node concept="3cpWsn" id="7husA5Ym0nq" role="3cpWs9">
+            <property role="TrG5h" value="descriptors" />
+            <node concept="_YKpA" id="7husA5Ym0nj" role="1tU5fm">
+              <node concept="16syzq" id="7husA5Ym1jE" role="_ZDj9">
+                <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="7husA5Ym1wL" role="33vP2m">
+              <node concept="Tc6Ow" id="7husA5Ym1wl" role="2ShVmc">
+                <node concept="16syzq" id="7husA5Ym1wm" role="HW$YZ">
+                  <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="7husA5Ym1NN" role="3cqZAp">
+          <node concept="2GrKxI" id="7husA5Ym1NP" role="2Gsz3X">
             <property role="TrG5h" value="descriptorClass" />
-            <node concept="3uibUv" id="VPgi8ewxAP" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
-              <node concept="16syzq" id="5lGdLibX1Ul" role="11_B2D">
-                <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+          </node>
+          <node concept="3clFbS" id="7husA5Ym1NR" role="2LFqv$">
+            <node concept="3clFbF" id="7husA5YmlDp" role="3cqZAp">
+              <node concept="2OqwBi" id="7husA5YmmSg" role="3clFbG">
+                <node concept="37vLTw" id="7husA5YmlDo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7husA5Ym0nq" resolve="descriptors" />
+                </node>
+                <node concept="TSZUe" id="7husA5YmoTb" role="2OqNvi">
+                  <node concept="10QFUN" id="VPgi8ewIqD" role="25WWJ7">
+                    <node concept="2YIFZM" id="VPgi8ewIq$" role="10QFUP">
+                      <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
+                      <ref role="37wK5l" to="ycmz:7moa1g0RuMd" resolve="readField" />
+                      <node concept="2GrUjf" id="7husA5YmizD" role="37wK5m">
+                        <ref role="2Gs0qQ" node="7husA5Ym1NP" resolve="descriptorClass" />
+                      </node>
+                      <node concept="10Nm6u" id="VPgi8ewIqA" role="37wK5m" />
+                      <node concept="Xl_RD" id="VPgi8ewIqB" role="37wK5m">
+                        <property role="Xl_RC" value="INSTANCE" />
+                      </node>
+                    </node>
+                    <node concept="16syzq" id="5lGdLibX5xn" role="10QFUM">
+                      <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="1rXfSq" id="VPgi8ewxAV" role="33vP2m">
-              <ref role="37wK5l" node="VPgi8eguz7" resolve="getDescriptorClass" />
-              <node concept="37vLTw" id="VPgi8ewxAW" role="37wK5m">
-                <ref role="3cqZAo" node="VPgi8ewlsv" resolve="module" />
-              </node>
+          </node>
+          <node concept="1rXfSq" id="7husA5Ymep7" role="2GsD0m">
+            <ref role="37wK5l" node="VPgi8eguz7" resolve="getDescriptorClasses" />
+            <node concept="37vLTw" id="7husA5Ymep8" role="37wK5m">
+              <ref role="3cqZAo" node="VPgi8ewlsv" resolve="module" />
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="VPgi8ewzLG" role="3cqZAp">
-          <node concept="3clFbS" id="VPgi8ewzLI" role="3clFbx">
-            <node concept="3cpWs6" id="VPgi8ew$xn" role="3cqZAp">
-              <node concept="10Nm6u" id="VPgi8ew_bY" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="3clFbC" id="VPgi8ew$vX" role="3clFbw">
-            <node concept="10Nm6u" id="VPgi8ew$wF" role="3uHU7w" />
-            <node concept="37vLTw" id="VPgi8ew$oL" role="3uHU7B">
-              <ref role="3cqZAo" node="VPgi8ewxAU" resolve="descriptorClass" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="VPgi8ewHxI" role="3cqZAp">
-          <node concept="1eOMI4" id="VPgi8ewIqC" role="3cqZAk">
-            <node concept="10QFUN" id="VPgi8ewIqD" role="1eOMHV">
-              <node concept="2YIFZM" id="VPgi8ewIq$" role="10QFUP">
-                <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
-                <ref role="37wK5l" to="ycmz:7moa1g0RuMd" resolve="readField" />
-                <node concept="37vLTw" id="VPgi8ewIq_" role="37wK5m">
-                  <ref role="3cqZAo" node="VPgi8ewxAU" resolve="descriptorClass" />
-                </node>
-                <node concept="10Nm6u" id="VPgi8ewIqA" role="37wK5m" />
-                <node concept="Xl_RD" id="VPgi8ewIqB" role="37wK5m">
-                  <property role="Xl_RC" value="INSTANCE" />
-                </node>
-              </node>
-              <node concept="16syzq" id="5lGdLibX5xn" role="10QFUM">
-                <ref role="16sUi3" node="5lGdLibWJFW" resolve="E" />
-              </node>
-            </node>
+        <node concept="3cpWs6" id="7husA5Yms2D" role="3cqZAp">
+          <node concept="37vLTw" id="7husA5Ymu$W" role="3cqZAk">
+            <ref role="3cqZAo" node="7husA5Ym0nq" resolve="descriptors" />
           </node>
         </node>
       </node>
@@ -1902,7 +2004,7 @@
           <node concept="1Y3b0j" id="5lGdLibXq2q" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <ref role="1Y3XeK" node="VPgi8efWms" resolve="DescriptorCollector" />
-            <ref role="37wK5l" node="5lGdLibWNuF" resolve="DescriptorCollector" />
+            <ref role="37wK5l" node="7husA5YkNvb" resolve="DescriptorCollector" />
             <node concept="3Tm1VV" id="5lGdLibXq2r" role="1B3o_S" />
             <node concept="3clFb_" id="5lGdLibXq2s" role="jymVt">
               <property role="TrG5h" value="loadDescriptor" />
@@ -1979,6 +2081,17 @@
             <node concept="10M0yZ" id="5lGdLibXrWC" role="37wK5m">
               <ref role="1PxDUh" node="5lGdLibXq8i" resolve="IContextActionsDescriptor" />
               <ref role="3cqZAo" node="5lGdLibXrBs" resolve="CLASS_NAME" />
+            </node>
+            <node concept="2ShNRf" id="7husA5Ynz6_" role="37wK5m">
+              <node concept="3g6Rrh" id="7husA5Yn_PL" role="2ShVmc">
+                <node concept="17QB3L" id="7husA5Yn_nw" role="3g7fb8" />
+                <node concept="Xl_RD" id="7husA5YnAa6" role="3g7hyw">
+                  <property role="Xl_RC" value="plugin" />
+                </node>
+                <node concept="Xl_RD" id="7husA5YnAY7" role="3g7hyw">
+                  <property role="Xl_RC" value="intentions" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
