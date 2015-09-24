@@ -14371,6 +14371,53 @@
       </node>
     </node>
     <node concept="2tJIrI" id="657q32pCBg6" role="jymVt" />
+    <node concept="3clFb_" id="40NmswovUNg" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getTooltip" />
+      <node concept="37vLTG" id="40NmswovUNh" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="40NmswovUNi" role="1tU5fm">
+          <ref role="3uigEE" node="5tr7YH$Ux6m" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="40NmswovUNj" role="3clF45" />
+      <node concept="3Tm1VV" id="40NmswovUNk" role="1B3o_S" />
+      <node concept="2AHcQZ" id="40NmswovUNl" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="40NmswovUNq" role="3clF47">
+        <node concept="3clFbF" id="40NmswovVIu" role="3cqZAp">
+          <node concept="2OqwBi" id="40NmswovVM9" role="3clFbG">
+            <node concept="37vLTw" id="40NmswovVIt" role="2Oq$k0">
+              <ref role="3cqZAo" node="657q32pCBej" resolve="myIntention" />
+            </node>
+            <node concept="liA8E" id="40NmswovWbR" role="2OqNvi">
+              <ref role="37wK5l" to="91lp:~IntentionExecutable.getDescription(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext):java.lang.String" resolve="getDescription" />
+              <node concept="37vLTw" id="40NmswovWkj" role="37wK5m">
+                <ref role="3cqZAo" node="657q32pDNG6" resolve="mySNode" />
+              </node>
+              <node concept="2EnYce" id="40NmswovXlV" role="37wK5m">
+                <node concept="2OqwBi" id="40NmswovWu6" role="2Oq$k0">
+                  <node concept="37vLTw" id="40NmswovWsf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="40NmswovUNh" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="40NmswovWLd" role="2OqNvi">
+                    <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="40NmswovY0Y" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="40NmswovUNr" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="40NmswovV8U" role="jymVt" />
     <node concept="3clFb_" id="657q32pCBg_" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getId" />
