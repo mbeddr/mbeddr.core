@@ -284,6 +284,7 @@
         <property id="5022141054902924924" name="id" index="gPGNi" />
       </concept>
       <concept id="5143518692707244814" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource" flags="ng" index="2p1eBL">
+        <child id="8385265319268397715" name="label" index="aeO3M" />
         <child id="5143518692707244818" name="folder" index="2p1eBH" />
         <child id="5143518692707272511" name="intentionIds" index="2p1Rn0" />
         <child id="2111750937449315877" name="icon" index="tzsLJ" />
@@ -1304,6 +1305,65 @@
                                 </node>
                               </node>
                               <node concept="3x8VRR" id="1Pes$C0MkTO" role="2OqNvi" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFb_" id="7husA5YpBmg" role="jymVt">
+                    <property role="TrG5h" value="getLabel" />
+                    <property role="1EzhhJ" value="false" />
+                    <node concept="37vLTG" id="7husA5YpBmh" role="3clF46">
+                      <property role="TrG5h" value="intention" />
+                      <node concept="3uibUv" id="7husA5YpBmi" role="1tU5fm">
+                        <ref role="3uigEE" to="1ne1:657q32pEN93" resolve="IIntention" />
+                      </node>
+                    </node>
+                    <node concept="37vLTG" id="7husA5YpBmj" role="3clF46">
+                      <property role="TrG5h" value="context" />
+                      <node concept="3uibUv" id="7husA5YpBmk" role="1tU5fm">
+                        <ref role="3uigEE" to="1ne1:5tr7YH$Ux6m" resolve="IContext" />
+                      </node>
+                    </node>
+                    <node concept="17QB3L" id="7husA5YpBml" role="3clF45" />
+                    <node concept="3Tmbuc" id="7husA5YpBmm" role="1B3o_S" />
+                    <node concept="3clFbS" id="7husA5YpBmt" role="3clF47">
+                      <node concept="3clFbF" id="7husA5YpCO8" role="3cqZAp">
+                        <node concept="Xl_RD" id="7husA5YpCO7" role="3clFbG">
+                          <property role="Xl_RC" value="" />
+                          <node concept="29HgVG" id="7husA5YpD5U" role="lGtFl">
+                            <node concept="3NFfHV" id="7husA5YpD5V" role="3NFExx">
+                              <node concept="3clFbS" id="7husA5YpD5W" role="2VODD2">
+                                <node concept="3clFbF" id="7husA5YpD62" role="3cqZAp">
+                                  <node concept="2OqwBi" id="7husA5YpD5X" role="3clFbG">
+                                    <node concept="3TrEf2" id="7husA5YpD60" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="aozb:7husA5Ypjaj" />
+                                    </node>
+                                    <node concept="30H73N" id="7husA5YpD61" role="2Oq$k0" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="7husA5YpBmu" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                    <node concept="1W57fq" id="7husA5YpDs$" role="lGtFl">
+                      <node concept="3IZrLx" id="7husA5YpDsA" role="3IZSJc">
+                        <node concept="3clFbS" id="7husA5YpDsC" role="2VODD2">
+                          <node concept="3clFbF" id="7husA5YpDKQ" role="3cqZAp">
+                            <node concept="2OqwBi" id="7husA5YpFBY" role="3clFbG">
+                              <node concept="2OqwBi" id="7husA5YpDQm" role="2Oq$k0">
+                                <node concept="30H73N" id="7husA5YpDKP" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="7husA5YpE6y" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="aozb:7husA5Ypjaj" />
+                                </node>
+                              </node>
+                              <node concept="3x8VRR" id="7husA5YpGbe" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -2684,6 +2744,30 @@
                   </node>
                   <node concept="3TrEf2" id="7husA5Yk5mF" role="2OqNvi">
                     <ref role="3Tt5mk" to="aozb:7husA5YjPQ8" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Xl_RD" id="7husA5Yqrmu" role="aeO3M">
+        <property role="Xl_RC" value="" />
+        <node concept="29HgVG" id="7husA5YqrAe" role="lGtFl">
+          <node concept="3NFfHV" id="7husA5YqrAm" role="3NFExx">
+            <node concept="3clFbS" id="7husA5YqrAn" role="2VODD2">
+              <node concept="3clFbF" id="7husA5YqrB7" role="3cqZAp">
+                <node concept="2OqwBi" id="7husA5YqI4M" role="3clFbG">
+                  <node concept="2OqwBi" id="7husA5YqrFz" role="2Oq$k0">
+                    <node concept="30H73N" id="7husA5YqrB6" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="7husA5YqH3$" role="2OqNvi">
+                      <node concept="3CFYIy" id="7husA5YqHt4" role="3CFYIz">
+                        <ref role="3CFYIx" to="aozb:657q32pRgDF" resolve="IntentionAnnotation" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="7husA5YqX0p" role="2OqNvi">
+                    <ref role="3Tt5mk" to="aozb:7husA5Ypj4T" />
                   </node>
                 </node>
               </node>
