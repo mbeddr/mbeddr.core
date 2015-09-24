@@ -22,6 +22,8 @@
     <property name="mps-sl-all.build-path" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/artifacts/mps-sl-all" />
     <property name="mps-sl-all.build-tmp" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/tmp" />
 <!--    <property name="artifacts.mps-sl-all" value="${mps-sl-all.build-path}" /> -->
+	<property name="build.dir" value="${mbeddr.github.core.home}" />
+	<property name="artifacts.root" value="${build.dir}/artifacts" />
 
     <!-- com.mbeddr.mbeddr -->
     <property name="com.mbeddr.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.build/build/artifacts/mbeddr" />  
@@ -136,7 +138,8 @@
 </target>
 
 <target name="copy-spawner">
-   <unzip src="${com.mbeddr.build-path.postfix}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
+   <unzip src="${artifacts.root}/mbeddr/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
+<!--   <unzip src="${com.mbeddr.build-path.postfix}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" /> -->
 </target>
 
 <target name="clean">
@@ -221,7 +224,7 @@
 
 <target name="install-nativelibs-plugin" >
   <copy todir="${mps.home}/${plugins.folder.name}">
-    <zipfileset src="${mps-sl-all.build-path}/${mps-sl-all.zip-file.name}">
+    <zipfileset src="${artifacts.root}/mps-sl-all/${mps-sl-all.zip-file.name}">
       <patternset>
         <include name="de.itemis.mps.nativelibs.loader/" />
     </patternset>

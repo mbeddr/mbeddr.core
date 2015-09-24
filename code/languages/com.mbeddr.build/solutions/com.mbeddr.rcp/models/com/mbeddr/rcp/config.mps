@@ -156,6 +156,9 @@
     <property role="TrG5h" value="rcp" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
     <property role="turDy" value="build-mbeddr-distrib.xml" />
+    <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -894,6 +897,9 @@
     <property role="TrG5h" value="branding" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
     <property role="turDy" value="build-mbeddr-branding.xml" />
+    <node concept="398rNT" id="5ueaxoTn61n" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9Gly" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />

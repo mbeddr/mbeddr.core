@@ -9906,9 +9906,9 @@
     </node>
     <node concept="398rNT" id="6RmoJr9qF5L" role="1l3spd">
       <property role="TrG5h" value="platform.artifacts" />
-      <node concept="398BVA" id="4MR$$Qmq_Uz" role="398pKh">
+      <node concept="398BVA" id="5ueaxoTpkOm" role="398pKh">
         <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="4MR$$QmqAqA" role="iGT6I">
+        <node concept="2Ry0Ak" id="5ueaxoTpkOn" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
@@ -10670,6 +10670,9 @@
     <property role="2DA0ip" value="./../../../../../build/com.mbeddr.spawner.plugin.build" />
     <property role="TrG5h" value="spawnerpluginbuild" />
     <property role="turDy" value="spawnerpluginbuild.xml" />
+    <node concept="398rNT" id="5ueaxoTn612" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2sgV4H" id="3WFWoB5GG_w" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="3WFWoB5GG_x" role="2JcizS">
