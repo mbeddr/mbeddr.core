@@ -88,9 +88,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -153,13 +151,6 @@
       <concept id="5022141054904338399" name="com.mbeddr.mpsutil.contextactions.structure.LanguageReference" flags="ng" index="gMbPL" />
       <concept id="5022141054903067959" name="com.mbeddr.mpsutil.contextactions.structure.ActionIdReference" flags="ng" index="gPhYp">
         <reference id="5022141054903067962" name="action" index="gPhYk" />
-      </concept>
-      <concept id="5143518692707244814" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource" flags="ng" index="2p1eBL">
-        <child id="5143518692707244818" name="folder" index="2p1eBH" />
-        <child id="5143518692707272511" name="intentionIds" index="2p1Rn0" />
-      </concept>
-      <concept id="5143518692707292632" name="com.mbeddr.mpsutil.contextactions.structure.IntentionIdReference" flags="ng" index="2p1MsB">
-        <reference id="5143518692707296615" name="intention" index="2p1Luo" />
       </concept>
       <concept id="1118923038131914971" name="com.mbeddr.mpsutil.contextactions.structure.NewRootSource" flags="ng" index="_nrT8">
         <child id="5022141054904339659" name="includes" index="gMbp_" />
@@ -272,14 +263,6 @@
         <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
       </node>
     </node>
-    <node concept="2p1eBL" id="4txsJZup_g5" role="NGJ24">
-      <node concept="Xl_RD" id="4txsJZup_n7" role="2p1eBH">
-        <property role="Xl_RC" value="Intentions" />
-      </node>
-      <node concept="2p1MsB" id="657q32pChkk" role="2p1Rn0">
-        <ref role="2p1Luo" to="tvob:4txsJZuq17J" resolve="addAToName" />
-      </node>
-    </node>
     <node concept="geMak" id="6c435dJIjYZ" role="NGJ24">
       <node concept="3cpWs3" id="6c435dJIwsj" role="geMbG">
         <node concept="geSxg" id="6c435dJIwsB" role="3uHU7w" />
@@ -366,9 +349,7 @@
         <property role="Xl_RC" value="Abc" />
       </node>
     </node>
-    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF">
-      <property role="3clFbU" value="true" />
-    </node>
+    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF" />
   </node>
   <node concept="sE7Ow" id="4mMeETlpNKH">
     <property role="TrG5h" value="action1" />
@@ -434,7 +415,7 @@
   </node>
   <node concept="2DaZZR" id="4mMeETlr7Di" />
   <node concept="2p2md1" id="4txsJZuq7nY">
-    <property role="TrG5h" value="SanboxConcept" />
+    <property role="TrG5h" value="RootConceptA" />
   </node>
 </model>
 
