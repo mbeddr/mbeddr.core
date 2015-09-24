@@ -13,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb.editor/com.mbeddr.mpsutil.breadcrumb.editor.mpl" folder="breadcrumb" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.mpl" folder="breadcrumb" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare.pattern/com.mbeddr.mpsutil.compare.pattern.mpl" folder="comparator" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare/compare.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.conceptdiagram.sandbox/com.mbeddr.mpsutil.conceptdiagram.sandbox.mpl" folder="conceptdiagram" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.conceptdiagram/com.mbeddr.mpsutil.conceptdiagram.mpl" folder="conceptdiagram" />
@@ -84,6 +85,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator/comparator.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.compare.pattern.runtime/com.mbeddr.mpsutil.compare.pattern.runtime.msd" folder="comparator" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.runtime/com.mbeddr.mpsutil.contextactions.runtime.msd" folder="contextActions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.sandbox/com.mbeddr.mpsutil.contextactions.sandbox.msd" folder="contextActions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.runtime/com.mbeddr.mpsutil.contextsidebar.runtime.msd" folder="contextsidebar" />
