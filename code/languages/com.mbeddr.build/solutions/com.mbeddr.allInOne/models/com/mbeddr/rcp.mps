@@ -121,6 +121,9 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
     <property role="TrG5h" value="jetbrains.mps.standalone" />
     <property role="turDy" value="build-standalone-mps.xml" />
+    <node concept="398rNT" id="5ueaxoTn60U" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9GlK" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
