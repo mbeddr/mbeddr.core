@@ -13,7 +13,6 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
-      <concept id="7024921229556134722" name="com.mbeddr.core.statements.structure.CommentedStatement" flags="ng" index="vHFJx" />
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -83,9 +82,6 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="7024921229556133803" name="com.mbeddr.core.base.structure.ICommentedCode" flags="ng" index="vHEs8">
-        <child id="7024921229556133804" name="commentedCode" index="vHEsf" />
-      </concept>
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -164,9 +160,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -410,13 +414,15 @@
             </node>
           </node>
         </node>
-        <node concept="vHFJx" id="3yoEvFpjQNB" role="3XIRFZ">
-          <node concept="2BFjQ_" id="3yoEvFpjKIE" role="vHEsf">
-            <node concept="iiyQr" id="3yoEvFpjKLy" role="2BFjQA">
-              <node concept="1S7827" id="3yoEvFpjKUb" role="3TlMhJ">
+        <node concept="1X3_iC" id="1QqOo0pAy1l" role="lGtFl">
+          <property role="3V$3am" value="statements" />
+          <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
+          <node concept="2BFjQ_" id="1QqOo0pAy1h" role="8Wnug">
+            <node concept="iiyQr" id="1QqOo0pAy1i" role="2BFjQA">
+              <node concept="1S7827" id="1QqOo0pAy1j" role="3TlMhJ">
                 <ref role="1S7826" node="2SinpB2mINA" resolve="v2" />
               </node>
-              <node concept="1S7827" id="3yoEvFpjKK3" role="3TlMhI">
+              <node concept="1S7827" id="1QqOo0pAy1k" role="3TlMhI">
                 <ref role="1S7826" node="2SinpB2mAnv" resolve="v1" />
               </node>
             </node>
