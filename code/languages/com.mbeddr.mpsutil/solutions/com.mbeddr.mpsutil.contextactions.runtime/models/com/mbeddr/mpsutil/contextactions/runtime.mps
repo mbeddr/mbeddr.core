@@ -4433,6 +4433,21 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7vUP_qcCvNn" role="jymVt" />
+    <node concept="3clFb_" id="40NmswouV_4" role="jymVt">
+      <property role="TrG5h" value="getViewType" />
+      <node concept="3uibUv" id="40Nmswov3WR" role="3clF45">
+        <ref role="3uigEE" node="7vUP_qcx$o$" resolve="ViewType" />
+      </node>
+      <node concept="3Tm1VV" id="40NmswouV_7" role="1B3o_S" />
+      <node concept="3clFbS" id="40NmswouV_8" role="3clF47">
+        <node concept="3clFbF" id="40Nmswov5Ng" role="3cqZAp">
+          <node concept="37vLTw" id="40Nmswov5Nf" role="3clFbG">
+            <ref role="3cqZAo" node="7vUP_qcyfK$" resolve="myViewType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="40NmswouTG9" role="jymVt" />
     <node concept="312cEu" id="FmgK_vTOnv" role="jymVt">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="Item" />
@@ -12210,6 +12225,14 @@
         </node>
       </node>
       <node concept="3clFbS" id="7vUP_qcxugA" role="3clF47">
+        <node concept="3clFbF" id="40Nmswov7ol" role="3cqZAp">
+          <node concept="3nyPlj" id="40Nmswov7oj" role="3clFbG">
+            <ref role="37wK5l" to="qkt:~ToggleAction.update(com.intellij.openapi.actionSystem.AnActionEvent):void" resolve="update" />
+            <node concept="37vLTw" id="40Nmswov7_z" role="37wK5m">
+              <ref role="3cqZAo" node="7vUP_qcxugz" resolve="event" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7vUP_qcxuBz" role="3cqZAp">
           <node concept="2OqwBi" id="7vUP_qcxvq1" role="3clFbG">
             <node concept="2OqwBi" id="7vUP_qcxuNs" role="2Oq$k0">
@@ -12257,29 +12280,65 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7vUP_qcxSt2" role="jymVt" />
-    <node concept="3clFb_" id="7vUP_qcxu5B" role="jymVt">
+    <node concept="3clFb_" id="40Nmswov8nA" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="actionPerformed" />
+      <property role="TrG5h" value="isSelected" />
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="7vUP_qcxu5C" role="1B3o_S" />
-      <node concept="3cqZAl" id="7vUP_qcxu5E" role="3clF45" />
-      <node concept="37vLTG" id="7vUP_qcxu5F" role="3clF46">
+      <node concept="3Tm1VV" id="40Nmswov8nB" role="1B3o_S" />
+      <node concept="10P_77" id="40Nmswov8nD" role="3clF45" />
+      <node concept="37vLTG" id="40Nmswov8nE" role="3clF46">
         <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="7vUP_qcxu5G" role="1tU5fm">
+        <node concept="3uibUv" id="40Nmswov8nF" role="1tU5fm">
           <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
         </node>
       </node>
-      <node concept="3clFbS" id="7vUP_qcxu5I" role="3clF47">
-        <node concept="3clFbF" id="7vUP_qcyaQv" role="3cqZAp">
-          <node concept="2OqwBi" id="7vUP_qcybu$" role="3clFbG">
-            <node concept="37vLTw" id="7vUP_qcyaQu" role="2Oq$k0">
+      <node concept="3clFbS" id="40Nmswov8nG" role="3clF47">
+        <node concept="3clFbF" id="40NmswovbF1" role="3cqZAp">
+          <node concept="3clFbC" id="40NmswovbF3" role="3clFbG">
+            <node concept="37vLTw" id="40NmswovbF4" role="3uHU7w">
+              <ref role="3cqZAo" node="7vUP_qcxSSz" resolve="myType" />
+            </node>
+            <node concept="2OqwBi" id="40NmswovbF5" role="3uHU7B">
+              <node concept="37vLTw" id="40NmswovbF6" role="2Oq$k0">
+                <ref role="3cqZAo" node="7vUP_qcxVha" resolve="myToolComponent" />
+              </node>
+              <node concept="liA8E" id="40NmswovbF7" role="2OqNvi">
+                <ref role="37wK5l" node="40NmswouV_4" resolve="getViewType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="40Nmswov8nJ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setSelected" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="40Nmswov8nK" role="1B3o_S" />
+      <node concept="3cqZAl" id="40Nmswov8nM" role="3clF45" />
+      <node concept="37vLTG" id="40Nmswov8nN" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="40Nmswov8nO" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="40Nmswov8nP" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="10P_77" id="40Nmswov8nQ" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="40Nmswov8nR" role="3clF47">
+        <node concept="3clFbF" id="40Nmswov8RP" role="3cqZAp">
+          <node concept="2OqwBi" id="40Nmswov9c1" role="3clFbG">
+            <node concept="37vLTw" id="40Nmswov8RO" role="2Oq$k0">
               <ref role="3cqZAo" node="7vUP_qcxVha" resolve="myToolComponent" />
             </node>
-            <node concept="liA8E" id="7vUP_qcydp_" role="2OqNvi">
+            <node concept="liA8E" id="40Nmswovb5u" role="2OqNvi">
               <ref role="37wK5l" node="7vUP_qcy1We" resolve="setViewType" />
-              <node concept="37vLTw" id="7vUP_qcydGr" role="37wK5m">
+              <node concept="37vLTw" id="40Nmswovby1" role="37wK5m">
                 <ref role="3cqZAo" node="7vUP_qcxSSz" resolve="myType" />
               </node>
             </node>
@@ -12288,8 +12347,8 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="7vUP_qcxS3F" role="1B3o_S" />
-    <node concept="3uibUv" id="7vUP_qcxS9a" role="1zkMxy">
-      <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
+    <node concept="3uibUv" id="40Nmswov7E3" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
     </node>
   </node>
   <node concept="312cEu" id="7vUP_qcI0Jm">
