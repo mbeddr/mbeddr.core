@@ -61,6 +61,7 @@
     <import index="2kyo" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.tabs.impl(MPS.IDEA/)" />
     <import index="91lp" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.intentions(MPS.Editor/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
@@ -14057,8 +14058,11 @@
       </node>
       <node concept="3Tmbuc" id="1Pes$C0Ll2h" role="1B3o_S" />
       <node concept="3clFbS" id="1Pes$C0LiDf" role="3clF47">
-        <node concept="3clFbF" id="1Pes$C0Lm8W" role="3cqZAp">
-          <node concept="10Nm6u" id="1Pes$C0Lm8V" role="3clFbG" />
+        <node concept="3clFbF" id="40NmswovC0F" role="3cqZAp">
+          <node concept="10M0yZ" id="40NmswovCGb" role="3clFbG">
+            <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+            <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.IntentionBulb" resolve="IntentionBulb" />
+          </node>
         </node>
       </node>
     </node>
