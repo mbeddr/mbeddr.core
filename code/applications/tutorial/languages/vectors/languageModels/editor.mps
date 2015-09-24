@@ -3,6 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -32,19 +39,12 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
-      <concept id="1886960078078641793" name="jetbrains.mps.lang.editor.structure.CellLayout_Superscript" flags="nn" index="2t5PaK" />
       <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="8255250703325731016" name="jetbrains.mps.lang.editor.structure.ScriptKindClassItem" flags="ln" index="2P5D8e">
-        <property id="8255250703325731018" name="script" index="2P5D8c" />
-      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -199,6 +199,12 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
+    </language>
+    <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations">
+      <concept id="8658283006837849469" name="de.itemis.mps.editor.math.notations.structure.PowerEditor" flags="ng" index="jtDJS">
+        <child id="8658283006839229766" name="superscript" index="jn6J3" />
+        <child id="8658283006839229761" name="nomal" index="jn6J4" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1001,22 +1007,12 @@
   <node concept="24kQdi" id="5TPCPz$cOwc">
     <property role="3GE5qa" value="matrix" />
     <ref role="1XX52x" to="vj37:5TPCPz$cOwb" resolve="MatrixTransposeExpr" />
-    <node concept="3EZMnI" id="5TPCPz$cOwf" role="2wV5jI">
-      <node concept="2t5PaK" id="5TPCPz$cPg6" role="2iSdaV" />
-      <node concept="3F1sOY" id="5TPCPz$cOwe" role="3EZMnx">
+    <node concept="jtDJS" id="1Ct6iAa9ERl" role="2wV5jI">
+      <node concept="3F1sOY" id="1Ct6iAa9ERD" role="jn6J4">
         <ref role="1NtTu8" to="mj1l:6iIoqg1yDLg" />
       </node>
-      <node concept="3F0ifn" id="5TPCPz$cOwi" role="3EZMnx">
+      <node concept="3F0ifn" id="1Ct6iAa9ERH" role="jn6J3">
         <property role="3F0ifm" value="T" />
-        <node concept="Vb9p2" id="5TPCPz$cOwj" role="3F10Kt">
-          <property role="Vbekb" value="BOLD_ITALIC" />
-        </node>
-        <node concept="11L4FC" id="5TPCPz$cOwl" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2P5D8e" id="5m6Ww85tEq3" role="3F10Kt">
-          <property role="2P5D8c" value="SUPERSCRIPT" />
-        </node>
       </node>
     </node>
   </node>
