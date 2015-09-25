@@ -8,6 +8,7 @@
   <imports>
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -383,6 +384,27 @@
               </node>
               <node concept="3TrEf2" id="7vUP_qcQIuy" role="2OqNvi">
                 <ref role="3Tt5mk" to="aozb:7vUP_qcQHPO" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="6W_V$ebhSge" role="3cqZAp">
+        <node concept="mw_s8" id="6W_V$ebhSgf" role="1ZfhKB">
+          <node concept="2c44tf" id="6W_V$ebhSgg" role="mwGJk">
+            <node concept="3uibUv" id="6W_V$ebhTjc" role="2c44tc">
+              <ref role="3uigEE" to="kt01:~Transferable" resolve="Transferable" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6W_V$ebhSgi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6W_V$ebhSgj" role="mwGJk">
+            <node concept="2OqwBi" id="6W_V$ebhSgk" role="1Z2MuG">
+              <node concept="1YBJjd" id="6W_V$ebhSgl" role="2Oq$k0">
+                <ref role="1YBMHb" node="6c435dJJHrS" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="6W_V$ebhSTm" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:6W_V$ebhDAI" />
               </node>
             </node>
           </node>

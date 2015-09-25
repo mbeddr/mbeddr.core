@@ -314,13 +314,18 @@
       </node>
     </node>
     <node concept="3_Xt8R" id="6W_V$ebdCMc" role="NGJ24">
+      <node concept="3_Xt8R" id="6W_V$ebef3n" role="3_Xtdj">
+        <node concept="Xl_RD" id="6W_V$ebefds" role="3_Xtb6">
+          <property role="Xl_RC" value="A" />
+        </node>
+        <node concept="1QOr2i" id="4q$a58KvkpT" role="3_Xtdj">
+          <node concept="gPhYp" id="4mMeETlpNLr" role="gPHQE">
+            <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
+          </node>
+        </node>
+      </node>
       <node concept="Xl_RD" id="6W_V$ebdD39" role="3_Xtb6">
         <property role="Xl_RC" value="Actions" />
-      </node>
-      <node concept="1QOr2i" id="4q$a58KvkpT" role="3_Xtdj">
-        <node concept="gPhYp" id="4mMeETlpNLr" role="gPHQE">
-          <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
-        </node>
       </node>
     </node>
     <node concept="geMak" id="6c435dJIjYZ" role="NGJ24">

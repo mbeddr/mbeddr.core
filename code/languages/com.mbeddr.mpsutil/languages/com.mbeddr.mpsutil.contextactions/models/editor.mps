@@ -1082,6 +1082,46 @@
           </node>
           <node concept="2iRfu4" id="7vUP_qcQHFC" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="6W_V$ebhDKQ" role="3EZMnx">
+          <node concept="VPM3Z" id="6W_V$ebhDKR" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3EZMnI" id="6W_V$ebhDKS" role="3EZMnx">
+            <node concept="2iRfu4" id="6W_V$ebhDKT" role="2iSdaV" />
+            <node concept="3F0ifn" id="6W_V$ebhDKU" role="3EZMnx">
+              <property role="3F0ifm" value="transferable" />
+            </node>
+            <node concept="3F0ifn" id="6W_V$ebhDKV" role="3EZMnx">
+              <property role="3F0ifm" value="(parameterObject)" />
+              <node concept="pkWqt" id="6W_V$ebhDKW" role="pqm2j">
+                <node concept="3clFbS" id="6W_V$ebhDKX" role="2VODD2">
+                  <node concept="3clFbF" id="6W_V$ebhDKY" role="3cqZAp">
+                    <node concept="2OqwBi" id="6W_V$ebhDKZ" role="3clFbG">
+                      <node concept="2OqwBi" id="6W_V$ebhDL0" role="2Oq$k0">
+                        <node concept="pncrf" id="6W_V$ebhDL1" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="6W_V$ebhDL2" role="2OqNvi">
+                          <ref role="3Tt5mk" to="aozb:4mMeETlyhwZ" />
+                        </node>
+                      </node>
+                      <node concept="3x8VRR" id="6W_V$ebhDL3" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3F0ifn" id="6W_V$ebhDL4" role="3EZMnx">
+              <property role="3F0ifm" value=":" />
+              <node concept="11L4FC" id="6W_V$ebhDL5" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3F1sOY" id="6W_V$ebhDL6" role="3EZMnx">
+            <property role="1$x2rV" value="&lt;drag'n'drop disabled&gt;" />
+            <ref role="1NtTu8" to="aozb:6W_V$ebhDAI" />
+          </node>
+          <node concept="2iRfu4" id="6W_V$ebhDL7" role="2iSdaV" />
+        </node>
         <node concept="3EZMnI" id="4mMeETlyk1$" role="3EZMnx">
           <node concept="VPM3Z" id="4mMeETlyk1_" role="3F10Kt">
             <property role="VOm3f" value="false" />
