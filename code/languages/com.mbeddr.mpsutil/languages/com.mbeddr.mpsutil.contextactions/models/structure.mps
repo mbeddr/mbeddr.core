@@ -146,12 +146,13 @@
   </node>
   <node concept="1TIwiD" id="4q$a58Ktpz0">
     <property role="TrG5h" value="IdeaActionsSource" />
-    <property role="34LRSv" value="actions" />
+    <property role="34LRSv" value="action" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="4q$a58Ktpz4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folder" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+      <node concept="asaX9" id="6W_V$ebdq7n" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="4mMeETlpes4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

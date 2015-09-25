@@ -188,7 +188,6 @@
       </concept>
       <concept id="5090237812300945600" name="com.mbeddr.mpsutil.contextactions.structure.IdeaActionsSource" flags="ng" index="1QOr2i">
         <child id="5022141054902920964" name="actionIds" index="gPHQE" />
-        <child id="5090237812300945604" name="folder" index="1QOr2m" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -314,12 +313,14 @@
         </node>
       </node>
     </node>
-    <node concept="1QOr2i" id="4q$a58KvkpT" role="NGJ24">
-      <node concept="Xl_RD" id="4q$a58Kvkq9" role="1QOr2m">
+    <node concept="3_Xt8R" id="6W_V$ebdCMc" role="NGJ24">
+      <node concept="Xl_RD" id="6W_V$ebdD39" role="3_Xtb6">
         <property role="Xl_RC" value="Actions" />
       </node>
-      <node concept="gPhYp" id="4mMeETlpNLr" role="gPHQE">
-        <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
+      <node concept="1QOr2i" id="4q$a58KvkpT" role="3_Xtdj">
+        <node concept="gPhYp" id="4mMeETlpNLr" role="gPHQE">
+          <ref role="gPhYk" node="4mMeETlpNKH" resolve="action1" />
+        </node>
       </node>
     </node>
     <node concept="geMak" id="6c435dJIjYZ" role="NGJ24">
