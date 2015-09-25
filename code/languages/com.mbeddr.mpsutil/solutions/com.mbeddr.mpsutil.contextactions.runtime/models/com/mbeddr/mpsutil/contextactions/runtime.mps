@@ -6,10 +6,10 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -85,6 +85,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -265,6 +266,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -315,6 +317,9 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
@@ -2830,10 +2835,103 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="33en5x1Inrc" role="3cqZAp" />
       </node>
     </node>
     <node concept="2tJIrI" id="5lGdLibXOLL" role="jymVt" />
+    <node concept="3clFb_" id="6W_V$eb3zbE" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setBounds" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6W_V$eb3zbF" role="1B3o_S" />
+      <node concept="3cqZAl" id="6W_V$eb3zbH" role="3clF45" />
+      <node concept="37vLTG" id="6W_V$eb3zbI" role="3clF46">
+        <property role="TrG5h" value="x" />
+        <node concept="10Oyi0" id="6W_V$eb3zbJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6W_V$eb3zbK" role="3clF46">
+        <property role="TrG5h" value="y" />
+        <node concept="10Oyi0" id="6W_V$eb3zbL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6W_V$eb3zbM" role="3clF46">
+        <property role="TrG5h" value="w" />
+        <node concept="10Oyi0" id="6W_V$eb3zbN" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6W_V$eb3zbO" role="3clF46">
+        <property role="TrG5h" value="h" />
+        <node concept="10Oyi0" id="6W_V$eb3zbP" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6W_V$eb3zbU" role="3clF47">
+        <node concept="3SKdUt" id="6W_V$eb6UAk" role="3cqZAp">
+          <node concept="3SKdUq" id="6W_V$eb6UEc" role="3SKWNk">
+            <property role="3SKdUp" value="Relayout the folders after resizing the tool" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6W_V$eb6UG_" role="3cqZAp" />
+        <node concept="3cpWs8" id="6W_V$eb2sPi" role="3cqZAp">
+          <node concept="3cpWsn" id="6W_V$eb2sPj" role="3cpWs9">
+            <property role="TrG5h" value="widthChanged" />
+            <node concept="10P_77" id="6W_V$eb2sPd" role="1tU5fm" />
+            <node concept="3y3z36" id="6W_V$eb2sPk" role="33vP2m">
+              <node concept="2OqwBi" id="6W_V$eb2sPl" role="3uHU7w">
+                <node concept="1rXfSq" id="6W_V$eb2sPm" role="2Oq$k0">
+                  <ref role="37wK5l" to="z60i:~Component.getSize():java.awt.Dimension" resolve="getSize" />
+                </node>
+                <node concept="2OwXpG" id="6W_V$eb2sPn" role="2OqNvi">
+                  <ref role="2Oxat5" to="z60i:~Dimension.width" resolve="width" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="6W_V$eb3B90" role="3uHU7B">
+                <ref role="3cqZAo" node="6W_V$eb3zbM" resolve="w" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6W_V$eb3zc1" role="3cqZAp">
+          <node concept="3nyPlj" id="6W_V$eb3zc0" role="3clFbG">
+            <ref role="37wK5l" to="z60i:~Component.setBounds(int,int,int,int):void" resolve="setBounds" />
+            <node concept="37vLTw" id="6W_V$eb3zbW" role="37wK5m">
+              <ref role="3cqZAo" node="6W_V$eb3zbI" resolve="x" />
+            </node>
+            <node concept="37vLTw" id="6W_V$eb3zbX" role="37wK5m">
+              <ref role="3cqZAo" node="6W_V$eb3zbK" resolve="y" />
+            </node>
+            <node concept="37vLTw" id="6W_V$eb3zbY" role="37wK5m">
+              <ref role="3cqZAo" node="6W_V$eb3zbM" resolve="w" />
+            </node>
+            <node concept="37vLTw" id="6W_V$eb3zbZ" role="37wK5m">
+              <ref role="3cqZAo" node="6W_V$eb3zbO" resolve="h" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6W_V$eb6cBT" role="3cqZAp">
+          <node concept="3clFbS" id="6W_V$eb6cBV" role="3clFbx">
+            <node concept="3clFbF" id="6W_V$eb6dC6" role="3cqZAp">
+              <node concept="2YIFZM" id="6W_V$eb6eee" role="3clFbG">
+                <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable):void" resolve="runInUIThreadNoWait" />
+                <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+                <node concept="1bVj0M" id="6W_V$eb6exv" role="37wK5m">
+                  <node concept="3clFbS" id="6W_V$eb6exw" role="1bW5cS">
+                    <node concept="3clFbF" id="6W_V$eb6f4e" role="3cqZAp">
+                      <node concept="1rXfSq" id="6W_V$eb6f4d" role="3clFbG">
+                        <ref role="37wK5l" node="33en5x1IKG_" resolve="reloadItems" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="6W_V$eb6cZz" role="3clFbw">
+            <ref role="3cqZAo" node="6W_V$eb2sPj" resolve="widthChanged" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6W_V$eb3zbV" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="5lGdLibXPSt" role="jymVt">
       <property role="TrG5h" value="dispose" />
       <node concept="3cqZAl" id="5lGdLibXPSv" role="3clF45" />
@@ -6608,7 +6706,7 @@
         <node concept="3clFbF" id="XwFeF7YZ$b" role="3cqZAp">
           <node concept="37vLTI" id="XwFeF7YZ$c" role="3clFbG">
             <node concept="2ShNRf" id="XwFeF7YZ$d" role="37vLTx">
-              <node concept="1pGfFk" id="XwFeF7YZ$e" role="2ShVmc">
+              <node concept="1pGfFk" id="6W_V$eaXW4s" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
                 <node concept="2ShNRf" id="4mMeETlohKu" role="37wK5m">
                   <node concept="1pGfFk" id="4mMeETloiXg" role="2ShVmc">
@@ -6644,19 +6742,252 @@
                 <node concept="liA8E" id="7vUP_qcHJKy" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
                   <node concept="2ShNRf" id="7vUP_qcJnlf" role="37wK5m">
-                    <node concept="1pGfFk" id="7vUP_qcJnlg" role="2ShVmc">
-                      <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int,int,int)" resolve="GridLayout" />
-                      <node concept="3cmrfG" id="7vUP_qcJnlh" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
-                      </node>
-                      <node concept="3cmrfG" id="7vUP_qcJnli" role="37wK5m">
-                        <property role="3cmrfH" value="4" />
-                      </node>
-                      <node concept="3cmrfG" id="7vUP_qcJnlj" role="37wK5m">
-                        <property role="3cmrfH" value="3" />
-                      </node>
-                      <node concept="3cmrfG" id="7vUP_qcJnlk" role="37wK5m">
-                        <property role="3cmrfH" value="1" />
+                    <node concept="YeOm9" id="6W_V$eaXW8F" role="2ShVmc">
+                      <node concept="1Y3b0j" id="6W_V$eaXW8I" role="YeSDq">
+                        <property role="2bfB8j" value="true" />
+                        <ref role="1Y3XeK" to="z60i:~GridLayout" resolve="GridLayout" />
+                        <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int,int,int)" resolve="GridLayout" />
+                        <node concept="3Tm1VV" id="6W_V$eaXW8J" role="1B3o_S" />
+                        <node concept="3cmrfG" id="7vUP_qcJnlh" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="3cmrfG" id="7vUP_qcJnli" role="37wK5m">
+                          <property role="3cmrfH" value="4" />
+                        </node>
+                        <node concept="3cmrfG" id="7vUP_qcJnlj" role="37wK5m">
+                          <property role="3cmrfH" value="3" />
+                        </node>
+                        <node concept="3cmrfG" id="7vUP_qcJnlk" role="37wK5m">
+                          <property role="3cmrfH" value="1" />
+                        </node>
+                        <node concept="3clFb_" id="6W_V$eaXWce" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="preferredLayoutSize" />
+                          <property role="DiZV1" value="false" />
+                          <property role="IEkAT" value="false" />
+                          <property role="od$2w" value="false" />
+                          <node concept="3Tm1VV" id="6W_V$eaXWcf" role="1B3o_S" />
+                          <node concept="3uibUv" id="6W_V$eaXWch" role="3clF45">
+                            <ref role="3uigEE" to="z60i:~Dimension" resolve="Dimension" />
+                          </node>
+                          <node concept="37vLTG" id="6W_V$eaXWci" role="3clF46">
+                            <property role="TrG5h" value="container" />
+                            <node concept="3uibUv" id="6W_V$eaXWcj" role="1tU5fm">
+                              <ref role="3uigEE" to="z60i:~Container" resolve="Container" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6W_V$eaXWcl" role="3clF47">
+                            <node concept="3clFbF" id="6W_V$eaYmHL" role="3cqZAp">
+                              <node concept="1rXfSq" id="6W_V$eaYmHJ" role="3clFbG">
+                                <ref role="37wK5l" node="6W_V$eaYi1y" resolve="updateColumnNumber" />
+                                <node concept="37vLTw" id="6W_V$eaYmTP" role="37wK5m">
+                                  <ref role="3cqZAo" node="6W_V$eaXWci" resolve="container" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6W_V$eaXWcp" role="3cqZAp">
+                              <node concept="3nyPlj" id="6W_V$eaXWco" role="3clFbG">
+                                <ref role="37wK5l" to="z60i:~GridLayout.preferredLayoutSize(java.awt.Container):java.awt.Dimension" resolve="preferredLayoutSize" />
+                                <node concept="37vLTw" id="6W_V$eaXWcn" role="37wK5m">
+                                  <ref role="3cqZAo" node="6W_V$eaXWci" resolve="container" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="6W_V$eaXWcm" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="6W_V$eaYn8D" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="minimumLayoutSize" />
+                          <property role="DiZV1" value="false" />
+                          <property role="IEkAT" value="false" />
+                          <property role="od$2w" value="false" />
+                          <node concept="3Tm1VV" id="6W_V$eaYn8E" role="1B3o_S" />
+                          <node concept="3uibUv" id="6W_V$eaYn8G" role="3clF45">
+                            <ref role="3uigEE" to="z60i:~Dimension" resolve="Dimension" />
+                          </node>
+                          <node concept="37vLTG" id="6W_V$eaYn8H" role="3clF46">
+                            <property role="TrG5h" value="container" />
+                            <node concept="3uibUv" id="6W_V$eaYn8I" role="1tU5fm">
+                              <ref role="3uigEE" to="z60i:~Container" resolve="Container" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6W_V$eaYn8K" role="3clF47">
+                            <node concept="3clFbF" id="6W_V$eaYnUg" role="3cqZAp">
+                              <node concept="1rXfSq" id="6W_V$eaYnUe" role="3clFbG">
+                                <ref role="37wK5l" node="6W_V$eaYi1y" resolve="updateColumnNumber" />
+                                <node concept="37vLTw" id="6W_V$eaYnWo" role="37wK5m">
+                                  <ref role="3cqZAo" node="6W_V$eaYn8H" resolve="container" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6W_V$eaYn8O" role="3cqZAp">
+                              <node concept="3nyPlj" id="6W_V$eaYn8N" role="3clFbG">
+                                <ref role="37wK5l" to="z60i:~GridLayout.minimumLayoutSize(java.awt.Container):java.awt.Dimension" resolve="minimumLayoutSize" />
+                                <node concept="37vLTw" id="6W_V$eaYn8M" role="37wK5m">
+                                  <ref role="3cqZAo" node="6W_V$eaYn8H" resolve="container" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="6W_V$eaYn8L" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="6W_V$eaYobO" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="layoutContainer" />
+                          <property role="DiZV1" value="false" />
+                          <property role="IEkAT" value="false" />
+                          <property role="od$2w" value="false" />
+                          <node concept="3Tm1VV" id="6W_V$eaYobP" role="1B3o_S" />
+                          <node concept="3cqZAl" id="6W_V$eaYobR" role="3clF45" />
+                          <node concept="37vLTG" id="6W_V$eaYobS" role="3clF46">
+                            <property role="TrG5h" value="container" />
+                            <node concept="3uibUv" id="6W_V$eaYobT" role="1tU5fm">
+                              <ref role="3uigEE" to="z60i:~Container" resolve="Container" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6W_V$eaYobV" role="3clF47">
+                            <node concept="3clFbF" id="6W_V$eaYoYT" role="3cqZAp">
+                              <node concept="1rXfSq" id="6W_V$eaYoYR" role="3clFbG">
+                                <ref role="37wK5l" node="6W_V$eaYi1y" resolve="updateColumnNumber" />
+                                <node concept="37vLTw" id="6W_V$eaYp1p" role="37wK5m">
+                                  <ref role="3cqZAo" node="6W_V$eaYobS" resolve="container" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6W_V$eaYobZ" role="3cqZAp">
+                              <node concept="3nyPlj" id="6W_V$eaYobY" role="3clFbG">
+                                <ref role="37wK5l" to="z60i:~GridLayout.layoutContainer(java.awt.Container):void" resolve="layoutContainer" />
+                                <node concept="37vLTw" id="6W_V$eaYobX" role="37wK5m">
+                                  <ref role="3cqZAo" node="6W_V$eaYobS" resolve="container" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="6W_V$eaYobW" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="6W_V$eaYi1y" role="jymVt">
+                          <property role="TrG5h" value="updateColumnNumber" />
+                          <node concept="37vLTG" id="6W_V$eaYljB" role="3clF46">
+                            <property role="TrG5h" value="container" />
+                            <node concept="3uibUv" id="6W_V$eaYljC" role="1tU5fm">
+                              <ref role="3uigEE" to="z60i:~Container" resolve="Container" />
+                            </node>
+                          </node>
+                          <node concept="3cqZAl" id="6W_V$eaYi1$" role="3clF45" />
+                          <node concept="3Tm1VV" id="6W_V$eaYi1_" role="1B3o_S" />
+                          <node concept="3clFbS" id="6W_V$eaYi1A" role="3clF47">
+                            <node concept="3cpWs8" id="6W_V$eaXYVm" role="3cqZAp">
+                              <node concept="3cpWsn" id="6W_V$eaXYVn" role="3cpWs9">
+                                <property role="TrG5h" value="toolComponent" />
+                                <node concept="3uibUv" id="6W_V$eaXYVk" role="1tU5fm">
+                                  <ref role="3uigEE" to="z60i:~Container" resolve="Container" />
+                                </node>
+                                <node concept="2YIFZM" id="6W_V$eaXYVo" role="33vP2m">
+                                  <ref role="37wK5l" to="dxuu:~SwingUtilities.getAncestorOfClass(java.lang.Class,java.awt.Component):java.awt.Container" resolve="getAncestorOfClass" />
+                                  <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+                                  <node concept="3VsKOn" id="6W_V$eaXYVp" role="37wK5m">
+                                    <ref role="3VsUkX" node="5lGdLibXIsq" resolve="ToolComponent" />
+                                  </node>
+                                  <node concept="37vLTw" id="6W_V$eaXYVq" role="37wK5m">
+                                    <ref role="3cqZAo" node="XwFeF7YZyR" resolve="myComponent" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3cpWs8" id="6W_V$eaY7na" role="3cqZAp">
+                              <node concept="3cpWsn" id="6W_V$eaY7nb" role="3cpWs9">
+                                <property role="TrG5h" value="maxWidth" />
+                                <node concept="10Oyi0" id="6W_V$eaY7n2" role="1tU5fm" />
+                                <node concept="2OqwBi" id="6W_V$eaY7nc" role="33vP2m">
+                                  <node concept="37vLTw" id="6W_V$eaY7nd" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6W_V$eaXYVn" resolve="toolComponent" />
+                                  </node>
+                                  <node concept="liA8E" id="6W_V$eaY7ne" role="2OqNvi">
+                                    <ref role="37wK5l" to="z60i:~Component.getWidth():int" resolve="getWidth" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6W_V$eaY8gi" role="3cqZAp">
+                              <node concept="1rXfSq" id="6W_V$eaY8gg" role="3clFbG">
+                                <ref role="37wK5l" to="z60i:~GridLayout.setColumns(int):void" resolve="setColumns" />
+                                <node concept="3cmrfG" id="6W_V$eaY8km" role="37wK5m">
+                                  <property role="3cmrfH" value="1" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2$JKZl" id="6W_V$eaY8yJ" role="3cqZAp">
+                              <node concept="3clFbS" id="6W_V$eaY8yL" role="2LFqv$">
+                                <node concept="3clFbF" id="6W_V$eaYdUM" role="3cqZAp">
+                                  <node concept="1rXfSq" id="6W_V$eaYdUL" role="3clFbG">
+                                    <ref role="37wK5l" to="z60i:~GridLayout.setColumns(int):void" resolve="setColumns" />
+                                    <node concept="3cpWs3" id="6W_V$eaYe_l" role="37wK5m">
+                                      <node concept="3cmrfG" id="6W_V$eaYeOI" role="3uHU7w">
+                                        <property role="3cmrfH" value="1" />
+                                      </node>
+                                      <node concept="1rXfSq" id="6W_V$eaYebx" role="3uHU7B">
+                                        <ref role="37wK5l" to="z60i:~GridLayout.getColumns():int" resolve="getColumns" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="1Wc70l" id="6W_V$eaYbPU" role="2$JKZa">
+                                <node concept="3eOVzh" id="6W_V$eaYcM7" role="3uHU7w">
+                                  <node concept="3cmrfG" id="6W_V$eaYd1w" role="3uHU7w">
+                                    <property role="3cmrfH" value="100" />
+                                  </node>
+                                  <node concept="1rXfSq" id="6W_V$eaYcc5" role="3uHU7B">
+                                    <ref role="37wK5l" to="z60i:~GridLayout.getColumns():int" resolve="getColumns" />
+                                  </node>
+                                </node>
+                                <node concept="2dkUwp" id="6W_V$eaYbew" role="3uHU7B">
+                                  <node concept="2OqwBi" id="6W_V$eaY8Xa" role="3uHU7B">
+                                    <node concept="3nyPlj" id="6W_V$eaY8Uh" role="2Oq$k0">
+                                      <ref role="37wK5l" to="z60i:~GridLayout.preferredLayoutSize(java.awt.Container):java.awt.Dimension" resolve="preferredLayoutSize" />
+                                      <node concept="37vLTw" id="6W_V$eaYlUo" role="37wK5m">
+                                        <ref role="3cqZAo" node="6W_V$eaYljB" resolve="container" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OwXpG" id="6W_V$eaY9_x" role="2OqNvi">
+                                      <ref role="2Oxat5" to="z60i:~Dimension.width" resolve="width" />
+                                    </node>
+                                  </node>
+                                  <node concept="37vLTw" id="6W_V$eaYb1m" role="3uHU7w">
+                                    <ref role="3cqZAo" node="6W_V$eaY7nb" resolve="maxWidth" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6W_V$eaYfRT" role="3cqZAp">
+                              <node concept="1rXfSq" id="6W_V$eaYfRR" role="3clFbG">
+                                <ref role="37wK5l" to="z60i:~GridLayout.setColumns(int):void" resolve="setColumns" />
+                                <node concept="2YIFZM" id="6W_V$eb6zHN" role="37wK5m">
+                                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                                  <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
+                                  <node concept="3cmrfG" id="6W_V$eb6zNf" role="37wK5m">
+                                    <property role="3cmrfH" value="1" />
+                                  </node>
+                                  <node concept="3cpWsd" id="6W_V$eaYgIm" role="37wK5m">
+                                    <node concept="3cmrfG" id="6W_V$eaYgXJ" role="3uHU7w">
+                                      <property role="3cmrfH" value="1" />
+                                    </node>
+                                    <node concept="1rXfSq" id="6W_V$eaYgky" role="3uHU7B">
+                                      <ref role="37wK5l" to="z60i:~GridLayout.getColumns():int" resolve="getColumns" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
