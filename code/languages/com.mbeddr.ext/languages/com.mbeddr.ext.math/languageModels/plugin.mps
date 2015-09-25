@@ -10,6 +10,7 @@
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -118,6 +119,9 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
       <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
@@ -924,7 +928,7 @@
       <node concept="Xl_RD" id="vR6ln0lJV1" role="37Ct4v">
         <property role="Xl_RC" value="Math Expressions" />
       </node>
-      <node concept="2OqwBi" id="13LyZYiLfwR" role="gcnPQ">
+      <node concept="2EnYce" id="6W_V$eaXQzr" role="gcnPQ">
         <node concept="2OqwBi" id="13LyZYiLeRB" role="2Oq$k0">
           <node concept="gcnaP" id="13LyZYiLeOf" role="2Oq$k0" />
           <node concept="liA8E" id="13LyZYiLfmB" role="2OqNvi">
