@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -23,6 +24,8 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -73,6 +76,9 @@
     <node concept="PrWs8" id="5tr7YH$UuZo" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6W_V$ebeILb" role="PzmwI">
+      <ref role="PrY4T" node="657q32pRmdh" resolve="IContextProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tr7YH$UuXh">
     <property role="TrG5h" value="SubstituteInfoSource" />
@@ -116,6 +122,9 @@
     <node concept="PrWs8" id="Y7dDcEQCzs" role="PzmwI">
       <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
     </node>
+    <node concept="PrWs8" id="6W_V$eaOsrI" role="PzmwI">
+      <ref role="PrY4T" node="6W_V$eaOsrn" resolve="IGeneratorOnly" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Y7dDcESzwV">
     <property role="TrG5h" value="SideTransformSource" />
@@ -140,12 +149,13 @@
   </node>
   <node concept="1TIwiD" id="4q$a58Ktpz0">
     <property role="TrG5h" value="IdeaActionsSource" />
-    <property role="34LRSv" value="actions" />
+    <property role="34LRSv" value="action" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="4q$a58Ktpz4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="folder" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+      <node concept="asaX9" id="6W_V$ebdq7n" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="4mMeETlpes4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -192,12 +202,15 @@
   </node>
   <node concept="1TIwiD" id="4mMeETlsgrR">
     <property role="TrG5h" value="AbstractActionSource" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4mMeETlsgrU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="isApplicable" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+      <node concept="asaX9" id="6W_V$eaXovk" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="4mMeETlsgrS" role="PzmwI">
       <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
@@ -273,6 +286,11 @@
       <property role="20kJfa" value="tooltip" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="6W_V$ebhDAI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="transferable" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="4mMeETlyh$$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="execute" />
@@ -318,6 +336,9 @@
     </node>
     <node concept="PrWs8" id="4txsJZuppGf" role="PzmwI">
       <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="6W_V$eaUUOs" role="PzmwI">
+      <ref role="PrY4T" node="6W_V$eaOsrn" resolve="IGeneratorOnly" />
     </node>
   </node>
   <node concept="PlHQZ" id="4txsJZupwt4">
@@ -383,6 +404,90 @@
   </node>
   <node concept="PlHQZ" id="657q32pRmdh">
     <property role="TrG5h" value="IContextProvider" />
+  </node>
+  <node concept="1TIwiD" id="6W_V$eaO3LO">
+    <property role="TrG5h" value="ActionSourceWithFolder" />
+    <property role="34LRSv" value="folder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6W_V$eaO3M5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="folder" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6W_V$eaO3Og" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sources" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="6W_V$eaO3M1" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="6W_V$eaO45a" role="PzmwI">
+      <ref role="PrY4T" node="657q32pRmdh" resolve="IContextProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6W_V$eaOeT2">
+    <property role="TrG5h" value="ActionSourceWithCondition" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6W_V$eaOeYx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6W_V$eaOeZi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sources" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="6W_V$eaOeY_" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6W_V$eaOsrn">
+    <property role="TrG5h" value="IGeneratorOnly" />
+  </node>
+  <node concept="1TIwiD" id="6W_V$eaOsrQ">
+    <property role="TrG5h" value="NewRootSource_Compact" />
+    <property role="34LRSv" value="new root" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6W_V$eaOss6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="include" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="4mMeETluCvu" resolve="INewRootInclude" />
+    </node>
+    <node concept="PrWs8" id="6W_V$eaOsvU" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6W_V$eaUUNO">
+    <property role="TrG5h" value="IntentionsActionSource_Compact" />
+    <property role="34LRSv" value="intention" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6W_V$eaUUO5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="label" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6W_V$eaUUO7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="intentionId" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4txsJZupwt4" resolve="IIntentionId" />
+    </node>
+    <node concept="1TJgyj" id="6W_V$eaUUO8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6W_V$eaUUO1" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
   </node>
 </model>
 

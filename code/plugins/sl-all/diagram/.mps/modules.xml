@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.layout/de.itemis.mps.editor.layout.mpl" folder="layout" />
       <modulePath path="$PROJECT_DIR$/languages/test.de.itemis.mps.editor.diagram.lang/test.de.itemis.mps.editor.diagram.lang.mpl" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.collapsible.runtime/de.itemis.mps.editor.collapsible.runtime.msd" folder="collapsible" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.diagram.contextactions/de.itemis.mps.editor.diagram.contextactions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.diagram.demo.activity.sandbox/de.itemis.mps.editor.diagram.demo.activity.sandbox.msd" folder="activity" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.diagram.demoentities.sandbox/de.itemis.mps.editor.diagram.demoentities.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.diagram.runtime/de.itemis.mps.editor.diagram.runtime.msd" folder="" />

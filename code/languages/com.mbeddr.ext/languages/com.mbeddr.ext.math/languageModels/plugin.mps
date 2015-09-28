@@ -10,6 +10,7 @@
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,6 +22,7 @@
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
+    <import index="jis6" ref="r:fb57de7d-dde6-4baf-ad70-af9d8cced199(com.mbeddr.ext.math.intentions)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -119,6 +121,9 @@
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
       <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
         <child id="7019451652831666945" name="language" index="cpn$n" />
@@ -200,12 +205,8 @@
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
       <concept id="5022141054904911899" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteActionExpression" flags="ng" index="gcnaP" />
-      <concept id="5143518692707244814" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource" flags="ng" index="2p1eBL">
-        <child id="5143518692707244818" name="folder" index="2p1eBH" />
-        <child id="5143518692707272511" name="intentionIds" index="2p1Rn0" />
-      </concept>
-      <concept id="5143518692707296768" name="com.mbeddr.mpsutil.contextactions.structure.StringIntentionId" flags="ng" index="2p1LjZ">
-        <property id="5143518692707296778" name="id" index="2p1LjP" />
+      <concept id="5143518692707292632" name="com.mbeddr.mpsutil.contextactions.structure.IntentionIdReference" flags="ng" index="2p1MsB">
+        <reference id="5143518692707296615" name="intention" index="2p1Luo" />
       </concept>
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
         <child id="6294660000051228527" name="sources" index="NGJ24" />
@@ -214,6 +215,14 @@
       <concept id="6294660000051228497" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource" flags="ng" index="NGJ2U">
         <child id="5022141054904911832" name="include" index="gcnPQ" />
         <child id="573955333602854986" name="folder" index="37Ct4v" />
+      </concept>
+      <concept id="8009069486209215732" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource_Compact" flags="ng" index="3_N$aR">
+        <child id="8009069486209215751" name="intentionId" index="3_N$d4" />
+        <child id="8009069486209215749" name="label" index="3_N$d6" />
+      </concept>
+      <concept id="8009069486207417460" name="com.mbeddr.mpsutil.contextactions.structure.ActionSourceWithFolder" flags="ng" index="3_Xt8R">
+        <child id="8009069486207417477" name="folder" index="3_Xtb6" />
+        <child id="8009069486207417616" name="sources" index="3_Xtdj" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -919,12 +928,12 @@
     </node>
   </node>
   <node concept="NGJ2D" id="5tr7YH$UwTY">
-    <property role="TrG5h" value="SandboxActions" />
+    <property role="TrG5h" value="MathContextActions" />
     <node concept="NGJ2U" id="5lGdLibZyEN" role="NGJ24">
       <node concept="Xl_RD" id="vR6ln0lJV1" role="37Ct4v">
         <property role="Xl_RC" value="Math Expressions" />
       </node>
-      <node concept="2OqwBi" id="13LyZYiLfwR" role="gcnPQ">
+      <node concept="2EnYce" id="6W_V$eaXQzr" role="gcnPQ">
         <node concept="2OqwBi" id="13LyZYiLeRB" role="2Oq$k0">
           <node concept="gcnaP" id="13LyZYiLeOf" role="2Oq$k0" />
           <node concept="liA8E" id="13LyZYiLfmB" role="2OqNvi">
@@ -939,18 +948,33 @@
         </node>
       </node>
     </node>
-    <node concept="2p1eBL" id="UN7CmpucZh" role="NGJ24">
-      <node concept="Xl_RD" id="UN7Cmpud0J" role="2p1eBH">
+    <node concept="3_Xt8R" id="6W_V$ebdi1w" role="NGJ24">
+      <node concept="3_N$aR" id="6W_V$ebdioO" role="3_Xtdj">
+        <node concept="2p1MsB" id="6W_V$ebditK" role="3_N$d4">
+          <ref role="2p1Luo" to="jis6:3bfDwHbD2mo" resolve="makeDenominator" />
+        </node>
+        <node concept="Xl_RD" id="6W_V$ebdkQS" role="3_N$d6">
+          <property role="Xl_RC" value="Denominator in Fraction" />
+        </node>
+      </node>
+      <node concept="3_N$aR" id="6W_V$ebditP" role="3_Xtdj">
+        <node concept="2p1MsB" id="6W_V$ebdiu9" role="3_N$d4">
+          <ref role="2p1Luo" to="jis6:3bfDwHbCLPI" resolve="makeNumerator" />
+        </node>
+        <node concept="Xl_RD" id="6W_V$ebdl0S" role="3_N$d6">
+          <property role="Xl_RC" value="Numerator in Fraction" />
+        </node>
+      </node>
+      <node concept="3_N$aR" id="6W_V$ebdiue" role="3_Xtdj">
+        <node concept="2p1MsB" id="6W_V$ebdiuC" role="3_N$d4">
+          <ref role="2p1Luo" to="jis6:48QUcYJwk16" resolve="removeAndUseThisOne" />
+        </node>
+        <node concept="Xl_RD" id="6W_V$ebdlku" role="3_N$d6">
+          <property role="Xl_RC" value="Remove Fraction" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="6W_V$ebdimh" role="3_Xtb6">
         <property role="Xl_RC" value="Math Transformations" />
-      </node>
-      <node concept="2p1LjZ" id="UN7Cmpud1v" role="2p1Rn0">
-        <property role="2p1LjP" value="com.mbeddr.ext.math.intentions.makeDenominator_Intention" />
-      </node>
-      <node concept="2p1LjZ" id="UN7Cmpud1I" role="2p1Rn0">
-        <property role="2p1LjP" value="com.mbeddr.ext.math.intentions.makeNumerator_Intention" />
-      </node>
-      <node concept="2p1LjZ" id="UN7Cmpud1U" role="2p1Rn0">
-        <property role="2p1LjP" value="com.mbeddr.ext.math.intentions.removeAndUseThisOne_Intention" />
       </node>
     </node>
     <node concept="3clFbT" id="13LyZYiLqnI" role="3V_frF">
