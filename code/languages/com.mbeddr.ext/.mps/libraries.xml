@@ -35,6 +35,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="plugins">
+          <value>
+            <Library>
+              <option name="name" value="plugins" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
