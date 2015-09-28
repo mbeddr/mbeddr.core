@@ -8,6 +8,7 @@
   <imports>
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -388,10 +389,87 @@
           </node>
         </node>
       </node>
+      <node concept="1ZobV4" id="6W_V$ebhSge" role="3cqZAp">
+        <node concept="mw_s8" id="6W_V$ebhSgf" role="1ZfhKB">
+          <node concept="2c44tf" id="6W_V$ebhSgg" role="mwGJk">
+            <node concept="3uibUv" id="6W_V$ebhTjc" role="2c44tc">
+              <ref role="3uigEE" to="kt01:~Transferable" resolve="Transferable" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6W_V$ebhSgi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6W_V$ebhSgj" role="mwGJk">
+            <node concept="2OqwBi" id="6W_V$ebhSgk" role="1Z2MuG">
+              <node concept="1YBJjd" id="6W_V$ebhSgl" role="2Oq$k0">
+                <ref role="1YBMHb" node="6c435dJJHrS" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="6W_V$ebhSTm" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:6W_V$ebhDAI" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="6c435dJJHrS" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="aozb:4mMeETlyhwU" resolve="GenericActionSource" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6W_V$eaO4kg">
+    <property role="TrG5h" value="typeof_ActionSourceWithFolder" />
+    <node concept="3clFbS" id="6W_V$eaO4kh" role="18ibNy">
+      <node concept="1ZobV4" id="6W_V$eaO57q" role="3cqZAp">
+        <node concept="mw_s8" id="6W_V$eaO57t" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6W_V$eaO4kG" role="mwGJk">
+            <node concept="2OqwBi" id="6W_V$eaO4np" role="1Z2MuG">
+              <node concept="1YBJjd" id="6W_V$eaO4le" role="2Oq$k0">
+                <ref role="1YBMHb" node="6W_V$eaO4kj" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="6W_V$eaO4IT" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:6W_V$eaO3M5" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6W_V$eaO5Tm" role="1ZfhKB">
+          <node concept="2c44tf" id="6W_V$eaO5Ti" role="mwGJk">
+            <node concept="17QB3L" id="6W_V$eaO5Ul" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6W_V$eaO4kj" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="aozb:6W_V$eaO3LO" resolve="ActionSourceWithFolder" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6W_V$eaOkmm">
+    <property role="TrG5h" value="typeof_ActionSourceWithCondition" />
+    <node concept="3clFbS" id="6W_V$eaOkmn" role="18ibNy">
+      <node concept="1ZobV4" id="6W_V$eaOkoL" role="3cqZAp">
+        <node concept="mw_s8" id="6W_V$eaOkpl" role="1ZfhKB">
+          <node concept="2c44tf" id="6W_V$eaOkph" role="mwGJk">
+            <node concept="10P_77" id="6W_V$eaOldV" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="6W_V$eaOkoO" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6W_V$eaOkmS" role="mwGJk">
+            <node concept="2OqwBi" id="6W_V$eaOkr_" role="1Z2MuG">
+              <node concept="1YBJjd" id="6W_V$eaOknq" role="2Oq$k0">
+                <ref role="1YBMHb" node="6W_V$eaOkmp" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="6W_V$eaOkSb" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:6W_V$eaOeYx" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6W_V$eaOkmp" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="aozb:6W_V$eaOeT2" resolve="ActionSourceWithCondition" />
     </node>
   </node>
 </model>
