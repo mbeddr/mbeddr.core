@@ -25,6 +25,12 @@
     <import index="50zn" ref="r:5f372c0d-445c-45f3-99eb-c6c0b6dfd07d(com.mbeddr.mpsutil.interpreter.documentation.support)" />
     <import index="v54s" ref="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" />
     <import index="6f5b" ref="47f075a6-558e-4640-a606-7ce0236c8023/r:9ffe1487-be32-45f7-abe0-e5fa20142da5(com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.plugin)" />
+    <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
+    <import index="jtst" ref="r:94684e53-e178-4b85-9402-d0df7f2c7994(com.mbeddr.core.util.plugin)" />
+    <import index="lkz5" ref="r:409e9269-8e01-4311-a25d-780598b0c00c(com.mbeddr.core.modules.plugin)" />
+    <import index="pmum" ref="r:be293a79-c9de-44c7-848a-150147010751(com.mbeddr.core.statements.plugin)" />
+    <import index="wtmk" ref="r:62fa0cc1-0a94-41cf-95db-5a63aba38f91(com.mbeddr.core.pointers.plugin)" />
+    <import index="dd6z" ref="r:3bf31f06-8688-4afb-86f9-058f442c0f79(com.mbeddr.ext.math.plugin)" />
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
@@ -249,8 +255,8 @@
           </node>
           <node concept="3z_lpY" id="1d83w5bBoe3" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBoe4" role="3z_lpZ">
-              <node concept="2NCMab" id="1d83w5bBoej" role="2NCMaf">
-                <ref role="2NCMaa" to="hga8:6CABoWpWVk0" resolve="CInterpreter" />
+              <node concept="2NCMab" id="ofotRr33hN" role="2NCMaf">
+                <ref role="2NCMaa" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
               </node>
             </node>
           </node>
@@ -259,38 +265,68 @@
           </node>
           <node concept="3z_lpY" id="1d83w5bBolx" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBoly" role="3z_lpZ">
-              <node concept="2NCMab" id="1d83w5bBolL" role="2NCMaf">
-                <ref role="2NCMaa" to="hga8:6CABoWpWVhE" resolve="CExtInterpreter" />
+              <node concept="2NCMab" id="ofotRr345r" role="2NCMaf">
+                <ref role="2NCMaa" to="jtst:3VM1o5wb$BS" resolve="CExtInterpreter" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="1d83w5bBolw" role="19SJt6">
             <property role="19SUeA" value=", " />
           </node>
+          <node concept="3z_lpY" id="ofotRr351T" role="19SJt6">
+            <node concept="2NCZwO" id="ofotRr351U" role="3z_lpZ">
+              <node concept="2NCMab" id="ofotRr352n" role="2NCMaf">
+                <ref role="2NCMaa" to="wtmk:3VM1o5wbz9l" resolve="CPointerInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="ofotRr351S" role="19SJt6">
+            <property role="19SUeA" value=", " />
+          </node>
           <node concept="3z_lpY" id="1d83w5bBolO" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBolP" role="3z_lpZ">
-              <node concept="2NCMab" id="1d83w5bBom8" role="2NCMaf">
-                <ref role="2NCMaa" to="hga8:6CABoWpWVj$" resolve="CFunctionInterpreter" />
+              <node concept="2NCMab" id="ofotRr34kr" role="2NCMaf">
+                <ref role="2NCMaa" to="lkz5:3VM1o5wbzoX" resolve="CFunctionInterpreter" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="1d83w5bBolN" role="19SJt6">
             <property role="19SUeA" value=", " />
           </node>
+          <node concept="3z_lpY" id="ofotRr351s" role="19SJt6">
+            <node concept="2NCZwO" id="ofotRr351t" role="3z_lpZ">
+              <node concept="2NCMab" id="ofotRr351Q" role="2NCMaf">
+                <ref role="2NCMaa" to="lkz5:3VM1o5wblft" resolve="CModulesInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="ofotRr351r" role="19SJt6">
+            <property role="19SUeA" value=", " />
+          </node>
           <node concept="3z_lpY" id="1d83w5bBomb" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBomc" role="3z_lpZ">
-              <node concept="2NCMab" id="1d83w5bBomz" role="2NCMaf">
-                <ref role="2NCMaa" to="hga8:6CABoWpWVne" resolve="CStatementInterpreter" />
+              <node concept="2NCMab" id="ofotRr34zr" role="2NCMaf">
+                <ref role="2NCMaa" to="pmum:3VM1o5wbxvn" resolve="CStatementInterpreter" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="1d83w5bBoma" role="19SJt6">
+            <property role="19SUeA" value=", " />
+          </node>
+          <node concept="3z_lpY" id="ofotRr35hn" role="19SJt6">
+            <node concept="2NCZwO" id="ofotRr35ho" role="3z_lpZ">
+              <node concept="2NCMab" id="ofotRr35hT" role="2NCMaf">
+                <ref role="2NCMaa" to="dd6z:6KLCBzAUjHf" resolve="CMathInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="ofotRr35hm" role="19SJt6">
             <property role="19SUeA" value=" and " />
           </node>
           <node concept="3z_lpY" id="1d83w5bBomT" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBomU" role="3z_lpZ">
-              <node concept="2NCMab" id="1d83w5bBonh" role="2NCMaf">
-                <ref role="2NCMaa" to="zrc8:24ZS0JTHvsU" resolve="RequirementsInterpreter" />
+              <node concept="2NCMab" id="ofotRr34Mr" role="2NCMaf">
+                <ref role="2NCMaa" to="zrc8:61$ycjqFdF9" resolve="ReqirementsInterpreter" />
               </node>
             </node>
           </node>
