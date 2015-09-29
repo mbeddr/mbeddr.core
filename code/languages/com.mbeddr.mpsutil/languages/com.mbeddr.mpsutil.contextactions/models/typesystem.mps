@@ -489,5 +489,103 @@
       <ref role="1YaFvo" to="aozb:6W_V$eaOeT2" resolve="ActionSourceWithCondition" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3luFbs2MR5P">
+    <property role="TrG5h" value="typeof_RefactoringSource" />
+    <node concept="3clFbS" id="3luFbs2MR5Q" role="18ibNy">
+      <node concept="1ZobV4" id="3luFbs2MTmw" role="3cqZAp">
+        <node concept="mw_s8" id="3luFbs2MTmx" role="1ZfhKB">
+          <node concept="2c44tf" id="3luFbs2MTmy" role="mwGJk">
+            <node concept="3uibUv" id="3luFbs2MTmz" role="2c44tc">
+              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3luFbs2MTm$" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3luFbs2MTm_" role="mwGJk">
+            <node concept="2OqwBi" id="3luFbs2MTmA" role="1Z2MuG">
+              <node concept="1YBJjd" id="3luFbs2MTu2" role="2Oq$k0">
+                <ref role="1YBMHb" node="3luFbs2MR5S" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="3luFbs2MUlz" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:3luFbs2M08d" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="3luFbs2MTmD" role="3cqZAp">
+        <node concept="mw_s8" id="3luFbs2MTmE" role="1ZfhKB">
+          <node concept="2c44tf" id="3luFbs2MTmF" role="mwGJk">
+            <node concept="17QB3L" id="3luFbs2MTmG" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3luFbs2MTmH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3luFbs2MTmI" role="mwGJk">
+            <node concept="2OqwBi" id="3luFbs2MTmJ" role="1Z2MuG">
+              <node concept="1YBJjd" id="3luFbs2MTDB" role="2Oq$k0">
+                <ref role="1YBMHb" node="3luFbs2MR5S" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="3luFbs2MVbK" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:3luFbs2M08b" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3luFbs2MR5S" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="aozb:54sr1JE49TG" resolve="RefactoringSource" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3luFbs2MRbS">
+    <property role="TrG5h" value="typeof_IntentionsActionSource_Compact" />
+    <node concept="3clFbS" id="3luFbs2MRbT" role="18ibNy">
+      <node concept="1ZobV4" id="3luFbs2MSlj" role="3cqZAp">
+        <node concept="mw_s8" id="3luFbs2MSmf" role="1ZfhKB">
+          <node concept="2c44tf" id="3luFbs2MSmb" role="mwGJk">
+            <node concept="3uibUv" id="3luFbs2MSn3" role="2c44tc">
+              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3luFbs2MSlm" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3luFbs2MRcn" role="mwGJk">
+            <node concept="2OqwBi" id="3luFbs2MRjC" role="1Z2MuG">
+              <node concept="1YBJjd" id="3luFbs2MRdK" role="2Oq$k0">
+                <ref role="1YBMHb" node="3luFbs2MRbV" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="3luFbs2MRLW" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:6W_V$eaUUO8" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="3luFbs2MSns" role="3cqZAp">
+        <node concept="mw_s8" id="3luFbs2MSnt" role="1ZfhKB">
+          <node concept="2c44tf" id="3luFbs2MSnu" role="mwGJk">
+            <node concept="17QB3L" id="3luFbs2MTgO" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3luFbs2MSnw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3luFbs2MSnx" role="mwGJk">
+            <node concept="2OqwBi" id="3luFbs2MSny" role="1Z2MuG">
+              <node concept="1YBJjd" id="3luFbs2MSnz" role="2Oq$k0">
+                <ref role="1YBMHb" node="3luFbs2MRbV" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="3luFbs2MSSw" role="2OqNvi">
+                <ref role="3Tt5mk" to="aozb:6W_V$eaUUO5" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3luFbs2MRbV" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="aozb:6W_V$eaUUNO" resolve="IntentionsActionSource_Compact" />
+    </node>
+  </node>
 </model>
 

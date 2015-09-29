@@ -16,6 +16,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" />
     <import index="tvob" ref="r:c029c62e-e2d7-4065-8788-5b2e0c631dfe(com.mbeddr.mpsutil.contextactions.sandboxlang.intentions)" />
+    <import index="sndx" ref="r:f084153f-d944-4301-a18b-560e825c4955(com.mbeddr.mpsutil.contextactions.sandboxlang.refactorings)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" implicit="true" />
@@ -84,7 +85,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -158,6 +161,12 @@
       </concept>
       <concept id="6294660000051228497" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource" flags="ng" index="NGJ2U">
         <child id="573955333602854986" name="folder" index="37Ct4v" />
+      </concept>
+      <concept id="5844665283566935660" name="com.mbeddr.mpsutil.contextactions.structure.RefactoringSource" flags="ng" index="2V3f9R">
+        <child id="5844665283566946768" name="refactoring" index="2V3anb" />
+      </concept>
+      <concept id="5844665283566935815" name="com.mbeddr.mpsutil.contextactions.structure.RefactoringReference" flags="ng" index="2V3fcs">
+        <reference id="5844665283566935858" name="refactoring" index="2V3fcD" />
       </concept>
       <concept id="8009069486209215732" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource_Compact" flags="ng" index="3_N$aR">
         <child id="8009069486209215751" name="intentionId" index="3_N$d4" />
@@ -249,6 +258,11 @@
           <node concept="10M0yZ" id="6W_V$eaV7kd" role="3_N$db">
             <ref role="1PxDUh" to="9w4s:~Icons" resolve="Icons" />
             <ref role="3cqZAo" to="9w4s:~PlatformIcons.ADD_ICON" resolve="ADD_ICON" />
+          </node>
+        </node>
+        <node concept="2V3f9R" id="54sr1JE4mkA" role="3_Xg6h">
+          <node concept="2V3fcs" id="54sr1JE4o6g" role="2V3anb">
+            <ref role="2V3fcD" to="sndx:12GcxOVDThU" resolve="Refactoring1" />
           </node>
         </node>
         <node concept="2OqwBi" id="6W_V$eaOqQC" role="3_Xg7y">
@@ -403,7 +417,9 @@
         <property role="Xl_RC" value="Abc" />
       </node>
     </node>
-    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF" />
+    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF">
+      <property role="3clFbU" value="true" />
+    </node>
   </node>
   <node concept="sE7Ow" id="4mMeETlpNKH">
     <property role="TrG5h" value="action1" />
