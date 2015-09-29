@@ -85,9 +85,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -417,9 +415,7 @@
         <property role="Xl_RC" value="Abc" />
       </node>
     </node>
-    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF">
-      <property role="3clFbU" value="true" />
-    </node>
+    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF" />
   </node>
   <node concept="sE7Ow" id="4mMeETlpNKH">
     <property role="TrG5h" value="action1" />

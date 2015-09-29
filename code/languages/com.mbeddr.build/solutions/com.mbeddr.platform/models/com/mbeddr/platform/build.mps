@@ -6953,6 +6953,18 @@
             <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4IZABA$CbL6" role="3bR37C">
+          <node concept="3bR9La" id="4IZABA$CbL7" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7vUP_qcXuSh" resolve="com.mbeddr.mpsutil.contextactions.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4IZABA$CbL8" role="3bR37C">
+          <node concept="3bR9La" id="4IZABA$CbL9" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4gGXGcLV$l$" role="3989C9">

@@ -1329,8 +1329,15 @@
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
       <node concept="3clFbS" id="5tr7YH$UG$v" role="3clF47">
-        <node concept="3clFbF" id="5tr7YH$UG$x" role="3cqZAp">
-          <node concept="10Nm6u" id="5tr7YH$UG$w" role="3clFbG" />
+        <node concept="3clFbF" id="4IZABA$xi5u" role="3cqZAp">
+          <node concept="2OqwBi" id="4IZABA$xi5Z" role="3clFbG">
+            <node concept="1rXfSq" id="4IZABA$xi5t" role="2Oq$k0">
+              <ref role="37wK5l" node="5tr7YH$UyCa" resolve="getCell" />
+            </node>
+            <node concept="liA8E" id="4IZABA$xiti" role="2OqNvi">
+              <ref role="37wK5l" to="f4zo:~EditorCell.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="4mMeETlt4AB" role="2AJF6D">
@@ -15924,6 +15931,68 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="4IZABA$xaDA">
+    <property role="TrG5h" value="EditorCellContext" />
+    <node concept="312cEg" id="4IZABA$xhfx" role="jymVt">
+      <property role="TrG5h" value="myCell" />
+      <node concept="3Tm6S6" id="4IZABA$xhfy" role="1B3o_S" />
+      <node concept="3uibUv" id="4IZABA$xhny" role="1tU5fm">
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4IZABA$xhdn" role="jymVt" />
+    <node concept="3clFbW" id="4IZABA$xiwR" role="jymVt">
+      <node concept="3cqZAl" id="4IZABA$xiwS" role="3clF45" />
+      <node concept="3Tm1VV" id="4IZABA$xiwT" role="1B3o_S" />
+      <node concept="3clFbS" id="4IZABA$xiwV" role="3clF47">
+        <node concept="3clFbF" id="4IZABA$xiwZ" role="3cqZAp">
+          <node concept="37vLTI" id="4IZABA$xix1" role="3clFbG">
+            <node concept="37vLTw" id="4IZABA$xix5" role="37vLTJ">
+              <ref role="3cqZAo" node="4IZABA$xhfx" resolve="myCell" />
+            </node>
+            <node concept="37vLTw" id="4IZABA$xix6" role="37vLTx">
+              <ref role="3cqZAo" node="4IZABA$xiwY" resolve="cell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4IZABA$xiwY" role="3clF46">
+        <property role="TrG5h" value="cell" />
+        <node concept="3uibUv" id="4IZABA$xiwX" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4IZABA$xiEu" role="jymVt" />
+    <node concept="3clFb_" id="4IZABA$xhxo" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getCells" />
+      <node concept="_YKpA" id="4IZABA$xhxp" role="3clF45">
+        <node concept="3uibUv" id="4IZABA$xhxq" role="_ZDj9">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4IZABA$xhxr" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4IZABA$xhxx" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="4IZABA$xhxy" role="3clF47">
+        <node concept="3clFbF" id="4IZABA$xhBG" role="3cqZAp">
+          <node concept="2YIFZM" id="4IZABA$xhDv" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+            <node concept="37vLTw" id="4IZABA$xhGI" role="37wK5m">
+              <ref role="3cqZAo" node="4IZABA$xhfx" resolve="myCell" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4IZABA$xaDB" role="1B3o_S" />
+    <node concept="3uibUv" id="4IZABA$xgWw" role="1zkMxy">
+      <ref role="3uigEE" node="5tr7YH$UyAW" resolve="ContextBase" />
     </node>
   </node>
 </model>
