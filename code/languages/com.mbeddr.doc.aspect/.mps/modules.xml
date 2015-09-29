@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.lang.exampleLanguage/com.mbeddr.doc.lang.exampleLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.lang.exampleLanguage/sandbox/com.mbeddr.doc.lang.exampleLanguage.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.lang/com.mbeddr.doc.lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.lang.runtime/com.mbeddr.doc.lang.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.lang.ui/com.mbeddr.doc.lang.ui.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
