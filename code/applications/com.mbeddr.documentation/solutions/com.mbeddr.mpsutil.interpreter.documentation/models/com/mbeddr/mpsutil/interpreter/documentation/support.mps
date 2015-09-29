@@ -2,20 +2,20 @@
 <model ref="r:5f372c0d-445c-45f3-99eb-c6c0b6dfd07d(com.mbeddr.mpsutil.interpreter.documentation.support)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
     <use id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions" version="0" />
     <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="0" />
     <use id="5344b781-2242-4d23-be90-673ee10bea46" name="com.mbeddr.doc.qa" version="0" />
     <use id="d7145000-936a-47e8-95a5-71f220e623f9" name="com.mbeddr.doc.self" version="0" />
     <use id="c61970b4-87fb-4429-8a3a-c87719f000a3" name="com.mbeddr.doc.terms" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="otza" ref="r:b3f0edd8-0c64-4d95-88ed-fdcbeaadca40(com.mbeddr.mpsutil.interpreter.documentation.docs)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -99,9 +99,7 @@
       </concept>
       <concept id="2515196518060811313" name="com.mbeddr.mpsutil.interpreter.structure.DummyEvaluator" flags="ng" index="lHU7p" />
       <concept id="5293529713177831489" name="com.mbeddr.mpsutil.interpreter.structure.NodeExpression" flags="ng" index="oxGPV" />
-      <concept id="8615074351687435493" name="com.mbeddr.mpsutil.interpreter.structure.InterpretExpression" flags="ng" index="qpA2v">
-        <child id="5293529713176663275" name="node" index="oEb7h" />
-      </concept>
+      <concept id="8615074351687435493" name="com.mbeddr.mpsutil.interpreter.structure.InterpretExpression" flags="ng" index="qpA2v" />
       <concept id="8615074351687425563" name="com.mbeddr.mpsutil.interpreter.structure.TypedChildConstraint" flags="ng" index="qpFDx">
         <reference id="8615074351687425566" name="child" index="qpFD$" />
         <child id="5293529713185083481" name="type" index="rajlz" />
@@ -116,9 +114,7 @@
       <concept id="8615074351687301435" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluator" flags="ng" index="qq9P1">
         <reference id="8615074351687302216" name="concept" index="qq9wM" />
       </concept>
-      <concept id="5293529713180742448" name="com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression" flags="ng" index="rqRoa">
-        <reference id="5293529713180742449" name="child" index="rqRob" />
-      </concept>
+      <concept id="5293529713180742448" name="com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression" flags="ng" index="rqRoa" />
       <concept id="5293529713179149388" name="com.mbeddr.mpsutil.interpreter.structure.AbstractTypeMapping" flags="ng" index="rsE5Q">
         <child id="5293529713185081187" name="fromType" index="rai9p" />
       </concept>
@@ -149,6 +145,12 @@
       </concept>
       <concept id="6663324787725038318" name="com.mbeddr.mpsutil.interpreter.structure.InterpretAfterRelationship" flags="ng" index="1J7L1T" />
       <concept id="6663324787724987491" name="com.mbeddr.mpsutil.interpreter.structure.InterpretBeforeRelationship" flags="ng" index="1J7WVO" />
+      <concept id="8511326569641889031" name="com.mbeddr.mpsutil.interpreter.structure.AbstractRecursionExpression" flags="ng" index="3SLKdG">
+        <child id="8511326569641873009" name="node" index="3SLO0q" />
+      </concept>
+      <concept id="8511326569641917307" name="com.mbeddr.mpsutil.interpreter.structure.AbstractConstraintRecursionExpression" flags="ng" index="3SLZkg">
+        <reference id="5293529713180742449" name="child" index="rqRob" />
+      </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="4208238404719201400" name="com.mbeddr.doc.structure.NameAnnotation" flags="ng" index="1h5QrK" />
@@ -349,8 +351,8 @@
       <ref role="qq9wM" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
       <node concept="3vetai" id="1T7O9iX7jvL" role="3vQZUl">
         <node concept="2YIFZM" id="1T7O9iX7qJ4" role="3vdyny">
-          <ref role="1Pybhc" to="e2lb:~Long" resolve="Long" />
-          <ref role="37wK5l" to="e2lb:~Long.valueOf(java.lang.String):java.lang.Long" resolve="valueOf" />
+          <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
+          <ref role="37wK5l" to="wyt6:~Long.valueOf(java.lang.String):java.lang.Long" resolve="valueOf" />
           <node concept="2OqwBi" id="1T7O9iX7jAn" role="37wK5m">
             <node concept="oxGPV" id="1T7O9iX7jwl" role="2Oq$k0">
               <node concept="1h5QrK" id="1d83w5bFmrM" role="lGtFl">
@@ -445,7 +447,7 @@
                   <node concept="3cpWsn" id="1T7O9iX7Gbo" role="3cpWs9">
                     <property role="TrG5h" value="result" />
                     <node concept="3uibUv" id="1T7O9iX7Gbp" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
                     <node concept="10Nm6u" id="1T7O9iX7Gc2" role="33vP2m" />
                   </node>
@@ -467,7 +469,7 @@
                           <ref role="3cqZAo" node="1T7O9iX7Gbo" resolve="result" />
                         </node>
                         <node concept="qpA2v" id="1d83w5bF7Tb" role="37vLTx">
-                          <node concept="2GrUjf" id="1d83w5bF7Tv" role="oEb7h">
+                          <node concept="2GrUjf" id="ofotRr2Swr" role="3SLO0q">
                             <ref role="2Gs0qQ" node="1T7O9iX7EKl" resolve="statement" />
                           </node>
                         </node>

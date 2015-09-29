@@ -5,13 +5,13 @@
     <use id="1c897ba5-9d43-4035-ac7f-0306495743ac" name="com.mbeddr.mpsutil.interpreter.test" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="-1" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -55,10 +55,10 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
@@ -81,15 +81,15 @@
         <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
         <property id="126932837435324910" name="title" index="WqcPg" />
@@ -133,9 +133,6 @@
       </concept>
     </language>
     <language id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta">
-      <concept id="4715820023543872565" name="com.mbeddr.doc.meta.structure.LangDefWord" flags="ng" index="Ls4_A">
-        <property id="4715820023543874788" name="textOverride" index="Ls36R" />
-      </concept>
       <concept id="4411878964391860302" name="com.mbeddr.doc.meta.structure.SolutionRefWord" flags="ng" index="XCBN5" />
       <concept id="4411878964391805161" name="com.mbeddr.doc.meta.structure.AbstractModuleRefWord" flags="ng" index="XFqhy">
         <child id="4411878964391805166" name="moduleRef" index="XFqh_" />
@@ -214,7 +211,6 @@
                   <property role="19SUeA" value="The " />
                 </node>
                 <node concept="XCBN5" id="1T7O9iWSE4I" role="19SJt6">
-                  <property role="Ls36R" value="Interpreter runtime" />
                   <node concept="A2Dkr" id="1T7O9iWSHRt" role="XFqh_">
                     <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.rt" />
                     <property role="A2Dkq" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
@@ -231,7 +227,6 @@
                   <property role="19SUeA" value="The " />
                 </node>
                 <node concept="3R4DFk" id="1T7O9iWSJey" role="19SJt6">
-                  <property role="Ls36R" value="Interpreter test support" />
                   <node concept="A2Dkr" id="1T7O9iWSJeB" role="XFqh_">
                     <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.test" />
                     <property role="A2Dkq" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
@@ -386,7 +381,6 @@
             <property role="19SUeA" value=", a Java class based on the " />
           </node>
           <node concept="XCBN5" id="1d83w5bFauk" role="19SJt6">
-            <property role="Ls36R" value="Interpreter runtime" />
             <node concept="A2Dkr" id="1d83w5bFfzt" role="XFqh_">
               <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.rt" />
               <property role="A2Dkq" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
