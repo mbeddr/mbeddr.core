@@ -6882,6 +6882,42 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="6W_V$ebn_ik" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.itemis.mps.editor.diagram.contextactions" />
+        <property role="3LESm3" value="7c7a76fa-e158-4c86-9c6a-3608e494598c" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6W_V$ebnR_6" role="3LF7KH">
+          <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+          <node concept="2Ry0Ak" id="6W_V$ebnSVG" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="6W_V$ebnTB4" role="2Ry0An">
+              <property role="2Ry0Am" value="plugins" />
+              <node concept="2Ry0Ak" id="6W_V$ebnUXD" role="2Ry0An">
+                <property role="2Ry0Am" value="sl-all" />
+                <node concept="2Ry0Ak" id="6W_V$ebnWke" role="2Ry0An">
+                  <property role="2Ry0Am" value="diagram" />
+                  <node concept="2Ry0Ak" id="6W_V$ebnXEN" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="6W_V$ebnZ1o" role="2Ry0An">
+                      <property role="2Ry0Am" value="de.itemis.mps.editor.diagram.contextactions" />
+                      <node concept="2Ry0Ak" id="6W_V$ebo0nX" role="2Ry0An">
+                        <property role="2Ry0Am" value="de.itemis.mps.editor.diagram.contextactions.msd" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6W_V$ebo13f" role="3bR37C">
+          <node concept="3bR9La" id="6W_V$ebo13g" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="4gGXGcLV$l$" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.multilingual" />
