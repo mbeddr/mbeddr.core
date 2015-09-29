@@ -3857,6 +3857,20 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="4IZABA$CI_a" role="3cqZAp">
+                  <node concept="2OqwBi" id="4IZABA$CJdb" role="3clFbG">
+                    <node concept="37vLTw" id="4IZABA$CI_8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="FmgK_vTElB" resolve="jlabel" />
+                    </node>
+                    <node concept="liA8E" id="4IZABA$COs8" role="2OqNvi">
+                      <ref role="37wK5l" to="dxuu:~JLabel.setHorizontalAlignment(int):void" resolve="setHorizontalAlignment" />
+                      <node concept="10M0yZ" id="4IZABA$COsP" role="37wK5m">
+                        <ref role="1PxDUh" to="dxuu:~JLabel" resolve="JLabel" />
+                        <ref role="3cqZAo" to="dxuu:~SwingConstants.CENTER" resolve="CENTER" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3clFbC" id="7vUP_qc$7RR" role="3clFbw">
                 <node concept="Rm8GO" id="7vUP_qc$8lt" role="3uHU7w">
