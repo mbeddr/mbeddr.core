@@ -2160,7 +2160,6 @@
         <module file="${basedir}/mps-hacks/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.mpl" />
         <module file="${basedir}/mps-hacks/solutions/de.itemis.mps.nativelibs.loader/de.itemis.mps.nativelibs.loader.msd" />
         <module file="${basedir}/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" />
-        <module file="${basedir}/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" />
         <module file="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor.hints/de.slisson.mps.conditionalEditor.hints.mpl" />
         <module file="${basedir}/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.mpl" />
         <module file="${basedir}/mps-hacks/languages/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" />
@@ -2182,6 +2181,7 @@
         <module file="${basedir}/languages/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" />
         <module file="${basedir}/solutions/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" />
         <module file="${basedir}/solutions/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" />
+        <module file="${basedir}/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" />
         <module file="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.mpl" />
         <module file="${basedir}/mps-conditional-editor/solutions/de.slisson.mps.conditionalEditor.runtime/de.slisson.mps.conditionalEditor.runtime.msd" />
         <module file="${basedir}/mps-multiline/languages/multiline/multiline.mpl" />
@@ -5231,7 +5231,6 @@
     <delete dir="${basedir}/mps-hacks/languages/de.itemis.mps.nativelibs/source_gen" />
     <delete dir="${basedir}/mps-hacks/solutions/de.itemis.mps.nativelibs.loader/source_gen" />
     <delete dir="${basedir}/languages/de.itemis.mps.tooltips/source_gen" />
-    <delete dir="${basedir}/solutions/de.slisson.mps.all.build/source_gen" />
     <delete dir="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor.hints/source_gen" />
     <delete dir="${basedir}/languages/de.slisson.mps.pluginrepo/source_gen" />
     <delete dir="${basedir}/mps-hacks/languages/de.slisson.mps.reflection/source_gen" />
@@ -5256,6 +5255,7 @@
     <delete dir="${basedir}/solutions/de.itemis.mps.selection.runtime/source_gen" />
     <delete dir="${basedir}/languages/de.itemis.mps.tooltips/generator/source_gen" />
     <delete dir="${basedir}/solutions/de.itemis.mps.tooltips.runtime/source_gen" />
+    <delete dir="${basedir}/solutions/de.slisson.mps.all.build/source_gen" />
     <delete dir="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor/source_gen" />
     <delete dir="${basedir}/mps-conditional-editor/languages/de.slisson.mps.conditionalEditor.hints/generator/source_gen" />
     <delete dir="${basedir}/mps-conditional-editor/solutions/de.slisson.mps.conditionalEditor.runtime/source_gen" />
