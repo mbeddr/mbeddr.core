@@ -2,11 +2,11 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.lang.exampleLanguage/com.mbeddr.doc.lang.exampleLanguage.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.lang.exampleLanguage/sandbox/com.mbeddr.doc.lang.exampleLanguage.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.lang/com.mbeddr.doc.lang.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.lang.runtime/com.mbeddr.doc.lang.runtime.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.lang.ui/com.mbeddr.doc.lang.ui.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.aspect.exampleLanguage/com.mbeddr.doc.aspect.exampleLanguage.mpl" folder="example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.aspect.exampleLanguage/sandbox/com.mbeddr.doc.aspect.exampleLanguage.sandbox.msd" folder="example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.aspect/com.mbeddr.doc.aspect.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.aspect.runtime/com.mbeddr.doc.aspect.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.aspect.ui/com.mbeddr.doc.aspect.ui.msd" folder="" />
     </projectModules>
   </component>
 </project>
