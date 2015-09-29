@@ -306,7 +306,9 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
+        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
+      </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -9263,6 +9265,7 @@
       </node>
       <node concept="37vLTG" id="4q$a58Kssy4" role="3clF46">
         <property role="TrG5h" value="side" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4q$a58Kssy5" role="1tU5fm">
           <ref role="3uigEE" to="exr9:~CellSide" resolve="CellSide" />
         </node>
@@ -9329,9 +9332,18 @@
                         <ref role="37wK5l" node="4mMeETlwWOC" resolve="includeAction" />
                         <node concept="2ShNRf" id="4mMeETlxdLg" role="37wK5m">
                           <node concept="1pGfFk" id="4mMeETlxfyT" role="2ShVmc">
-                            <ref role="37wK5l" node="4mMeETlxc3Q" resolve="SubstituteActionAdapter" />
+                            <ref role="37wK5l" node="6W_V$eboIUd" resolve="SideTransformActionAdapter" />
                             <node concept="37vLTw" id="4mMeETlxg0u" role="37wK5m">
                               <ref role="3cqZAo" node="4mMeETlx5ir" resolve="it" />
+                            </node>
+                            <node concept="3clFbC" id="6W_V$eboXPP" role="37wK5m">
+                              <node concept="37vLTw" id="6W_V$eboXPQ" role="3uHU7B">
+                                <ref role="3cqZAo" node="4q$a58Kssy4" resolve="side" />
+                              </node>
+                              <node concept="Rm8GO" id="6W_V$eboXPR" role="3uHU7w">
+                                <ref role="1Px2BO" to="exr9:~CellSide" resolve="CellSide" />
+                                <ref role="Rm8GQ" to="exr9:~CellSide.LEFT" resolve="LEFT" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -9386,9 +9398,18 @@
                                         <ref role="37wK5l" node="7vUP_qcvTOy" resolve="getFolder" />
                                         <node concept="2ShNRf" id="7vUP_qcvY8g" role="37wK5m">
                                           <node concept="1pGfFk" id="7vUP_qcvZIV" role="2ShVmc">
-                                            <ref role="37wK5l" node="4mMeETlxc3Q" resolve="SubstituteActionAdapter" />
+                                            <ref role="37wK5l" node="6W_V$eboIUd" resolve="SideTransformActionAdapter" />
                                             <node concept="37vLTw" id="7vUP_qcvZSm" role="37wK5m">
                                               <ref role="3cqZAo" node="4q$a58KssxY" resolve="it" />
+                                            </node>
+                                            <node concept="3clFbC" id="6W_V$eboS2L" role="37wK5m">
+                                              <node concept="37vLTw" id="6W_V$eboSmC" role="3uHU7B">
+                                                <ref role="3cqZAo" node="4q$a58Kssy4" resolve="side" />
+                                              </node>
+                                              <node concept="Rm8GO" id="6W_V$eboQba" role="3uHU7w">
+                                                <ref role="Rm8GQ" to="exr9:~CellSide.LEFT" resolve="LEFT" />
+                                                <ref role="1Px2BO" to="exr9:~CellSide" resolve="CellSide" />
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
@@ -9542,8 +9563,8 @@
       </node>
       <node concept="37vLTG" id="4mMeETlxH56" role="3clF46">
         <property role="TrG5h" value="action" />
-        <node concept="3uibUv" id="4mMeETlxH57" role="1tU5fm">
-          <ref role="3uigEE" node="4mMeETlwOv7" resolve="ISubstituteAction" />
+        <node concept="3uibUv" id="6W_V$ebpi6j" role="1tU5fm">
+          <ref role="3uigEE" node="6W_V$eboGW7" resolve="ISideTransformAction" />
         </node>
       </node>
       <node concept="37vLTG" id="7vUP_qcvTOC" role="3clF46">
@@ -9567,8 +9588,8 @@
       </node>
       <node concept="37vLTG" id="4mMeETlwZha" role="3clF46">
         <property role="TrG5h" value="action" />
-        <node concept="3uibUv" id="4mMeETlwZh9" role="1tU5fm">
-          <ref role="3uigEE" node="4mMeETlwOv7" resolve="ISubstituteAction" />
+        <node concept="3uibUv" id="6W_V$ebpiEm" role="1tU5fm">
+          <ref role="3uigEE" node="6W_V$eboGW7" resolve="ISideTransformAction" />
         </node>
       </node>
       <node concept="37vLTG" id="4mMeETlwZxT" role="3clF46">
@@ -15345,6 +15366,106 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="6W_V$eboGW7">
+    <property role="TrG5h" value="ISideTransformAction" />
+    <node concept="3clFb_" id="6W_V$eboH3E" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="isLeftSide" />
+      <node concept="10P_77" id="6W_V$eboHba" role="3clF45" />
+      <node concept="3Tm1VV" id="6W_V$eboH3H" role="1B3o_S" />
+      <node concept="3clFbS" id="6W_V$eboH3I" role="3clF47" />
+    </node>
+    <node concept="3clFb_" id="6W_V$eboHeH" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="isRightSide" />
+      <node concept="10P_77" id="6W_V$eboHeI" role="3clF45" />
+      <node concept="3Tm1VV" id="6W_V$eboHeJ" role="1B3o_S" />
+      <node concept="3clFbS" id="6W_V$eboHeK" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="6W_V$eboGW8" role="1B3o_S" />
+    <node concept="3uibUv" id="6W_V$eboGWG" role="3HQHJm">
+      <ref role="3uigEE" node="4mMeETlwOv7" resolve="ISubstituteAction" />
+    </node>
+  </node>
+  <node concept="312cEu" id="6W_V$eboHJo">
+    <property role="TrG5h" value="SideTransformActionAdapter" />
+    <node concept="2tJIrI" id="6W_V$eboHWt" role="jymVt" />
+    <node concept="312cEg" id="6W_V$eboIsZ" role="jymVt">
+      <property role="TrG5h" value="myIsLeft" />
+      <node concept="3Tm6S6" id="6W_V$eboIt0" role="1B3o_S" />
+      <node concept="10P_77" id="6W_V$eboIym" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="6W_V$eboJqr" role="jymVt" />
+    <node concept="3clFbW" id="6W_V$eboIUd" role="jymVt">
+      <node concept="3cqZAl" id="6W_V$eboIUe" role="3clF45" />
+      <node concept="3Tm1VV" id="6W_V$eboIUf" role="1B3o_S" />
+      <node concept="3clFbS" id="6W_V$eboIUh" role="3clF47">
+        <node concept="XkiVB" id="6W_V$eboIUj" role="3cqZAp">
+          <ref role="37wK5l" node="4mMeETlxc3Q" resolve="SubstituteActionAdapter" />
+          <node concept="37vLTw" id="6W_V$eboIUn" role="37wK5m">
+            <ref role="3cqZAo" node="6W_V$eboIUk" resolve="action" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6W_V$eboIUq" role="3cqZAp">
+          <node concept="37vLTI" id="6W_V$eboIUs" role="3clFbG">
+            <node concept="37vLTw" id="6W_V$eboIUw" role="37vLTJ">
+              <ref role="3cqZAo" node="6W_V$eboIsZ" resolve="myIsLeft" />
+            </node>
+            <node concept="37vLTw" id="6W_V$eboIUx" role="37vLTx">
+              <ref role="3cqZAo" node="6W_V$eboIUp" resolve="isLeft" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6W_V$eboIUk" role="3clF46">
+        <property role="TrG5h" value="action" />
+        <node concept="3uibUv" id="6W_V$eboIUm" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6W_V$eboIUp" role="3clF46">
+        <property role="TrG5h" value="isLeft" />
+        <node concept="10P_77" id="6W_V$eboIUo" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6W_V$eboIku" role="jymVt" />
+    <node concept="3clFb_" id="6W_V$eboHZX" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isLeftSide" />
+      <node concept="10P_77" id="6W_V$eboHZY" role="3clF45" />
+      <node concept="3Tm1VV" id="6W_V$eboHZZ" role="1B3o_S" />
+      <node concept="3clFbS" id="6W_V$eboI02" role="3clF47">
+        <node concept="3clFbF" id="6W_V$eboJKH" role="3cqZAp">
+          <node concept="37vLTw" id="6W_V$eboJKG" role="3clFbG">
+            <ref role="3cqZAo" node="6W_V$eboIsZ" resolve="myIsLeft" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6W_V$eboLzF" role="jymVt" />
+    <node concept="3clFb_" id="6W_V$eboI05" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isRightSide" />
+      <node concept="10P_77" id="6W_V$eboI06" role="3clF45" />
+      <node concept="3Tm1VV" id="6W_V$eboI07" role="1B3o_S" />
+      <node concept="3clFbS" id="6W_V$eboI0a" role="3clF47">
+        <node concept="3clFbF" id="6W_V$eboKJ2" role="3cqZAp">
+          <node concept="3fqX7Q" id="6W_V$eboKJ0" role="3clFbG">
+            <node concept="1rXfSq" id="6W_V$eboL7z" role="3fr31v">
+              <ref role="37wK5l" node="6W_V$eboHZX" resolve="isLeftSide" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6W_V$eboHJp" role="1B3o_S" />
+    <node concept="3uibUv" id="6W_V$eboHPf" role="1zkMxy">
+      <ref role="3uigEE" node="4mMeETlxa$Q" resolve="SubstituteActionAdapter" />
+    </node>
+    <node concept="3uibUv" id="6W_V$eboHSX" role="EKbjA">
+      <ref role="3uigEE" node="6W_V$eboGW7" resolve="ISideTransformAction" />
     </node>
   </node>
 </model>

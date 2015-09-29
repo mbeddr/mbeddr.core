@@ -9,6 +9,7 @@
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
+    <import index="imty" ref="r:78643160-19ee-44da-8bf6-6551be599cfd(com.mbeddr.mpsutil.contextactions.behavior)" implicit="true" />
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -22,6 +23,9 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -71,6 +75,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -158,10 +163,22 @@
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="4mMeETlwOFP" role="1ZfhKB">
-          <node concept="2c44tf" id="4mMeETlwOFQ" role="mwGJk">
-            <node concept="3uibUv" id="4mMeETlwOFR" role="2c44tc">
-              <ref role="3uigEE" to="1ne1:4mMeETlwOv7" resolve="ISubstituteAction" />
+        <node concept="mw_s8" id="6W_V$ebpjp8" role="1ZfhKB">
+          <node concept="2OqwBi" id="6W_V$ebpk0w" role="mwGJk">
+            <node concept="2OqwBi" id="6W_V$ebpjqR" role="2Oq$k0">
+              <node concept="1YBJjd" id="6W_V$ebpjp6" role="2Oq$k0">
+                <ref role="1YBMHb" node="4mMeETlwOxj" resolve="node" />
+              </node>
+              <node concept="2Xjw5R" id="6W_V$ebpjTJ" role="2OqNvi">
+                <node concept="1xMEDy" id="6W_V$ebpjTL" role="1xVPHs">
+                  <node concept="chp4Y" id="6W_V$ebpjUm" role="ri$Ld">
+                    <ref role="cht4Q" to="aozb:4mMeETlxvmt" resolve="ISubstituteActionBased" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6W_V$ebpllw" role="2OqNvi">
+              <ref role="37wK5l" to="imty:6W_V$ebpjfe" resolve="getEntryType" />
             </node>
           </node>
         </node>
