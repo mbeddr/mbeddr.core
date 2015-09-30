@@ -73,12 +73,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
@@ -102,12 +96,6 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
-      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
-        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
-      </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -121,23 +109,6 @@
       <ref role="1N5Vy1" to="748g:70oIz4ajhZh" />
       <node concept="13QW63" id="70oIz4alOJH" role="1N6uqs">
         <node concept="3clFbS" id="70oIz4alOJI" role="2VODD2">
-          <node concept="3cpWs8" id="70oIz4alV0A" role="3cqZAp">
-            <node concept="3cpWsn" id="70oIz4alV0B" role="3cpWs9">
-              <property role="TrG5h" value="node" />
-              <node concept="3Tqbb2" id="70oIz4alV0_" role="1tU5fm">
-                <ref role="ehGHo" to="hfbu:2Y$EcRKMr1Q" resolve="SimpleLanguageAspectDescriptor" />
-              </node>
-              <node concept="3B5_sB" id="70oIz4alV0C" role="33vP2m">
-                <ref role="3B5MYn" to="pgte:70oIz4aiOJd" resolve="documentation" />
-              </node>
-            </node>
-          </node>
-          <node concept="3SKdUt" id="70oIz4amchi" role="3cqZAp">
-            <node concept="3SKdUq" id="70oIz4amckN" role="3SKWNk">
-              <property role="3SKdUp" value="todo: how to check &lt;&lt;Documentation&gt;&gt; aspect of the parent model" />
-            </node>
-          </node>
-          <node concept="3clFbH" id="70oIz4alREq" role="3cqZAp" />
           <node concept="3cpWs8" id="6Uen3WBS92q" role="3cqZAp">
             <node concept="3cpWsn" id="6Uen3WBS92r" role="3cpWs9">
               <property role="TrG5h" value="structure" />
