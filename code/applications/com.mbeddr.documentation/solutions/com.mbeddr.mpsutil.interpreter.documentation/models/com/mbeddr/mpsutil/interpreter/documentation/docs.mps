@@ -2696,6 +2696,193 @@
         </node>
       </node>
     </node>
+    <node concept="1_0VNX" id="1Y3rEQ3p8QJ" role="1_0VJ0">
+      <property role="TrG5h" value="persistentInterpreter" />
+      <property role="1_0VJr" value="Persistent Interpreters" />
+      <node concept="1_0LV8" id="1Y3rEQ3p9py" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3p9pz" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3p9p$" role="19SJt6">
+            <property role="19SUeA" value="An " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9pD" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9pE" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9pK" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4N5UlZRk7Ni" resolve="PersistentInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9pF" role="19SJt6">
+            <property role="19SUeA" value=" is a wrapper around an arbitrary IInterpreter that keeps all intermediate results for evaluated nodes. " />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1Y3rEQ3p9sn" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3p9so" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3p9sp" role="19SJt6">
+            <property role="19SUeA" value="In order to leverage this feature, we need to wrap our original " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9s$" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9s_" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9sF" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9sA" role="19SJt6">
+            <property role="19SUeA" value=" as a constructor parameter into a " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9sH" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9sI" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9sS" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4N5UlZRk7Ni" resolve="PersistentInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9sJ" role="19SJt6">
+            <property role="19SUeA" value=". Some of the exposed interfaces are also subclassed:" />
+          </node>
+        </node>
+      </node>
+      <node concept="3X6WG5" id="1Y3rEQ3p9_b" role="1_0VJ0">
+        <node concept="3X6T9g" id="1Y3rEQ3p9_c" role="3Xp5NH">
+          <node concept="OjmMv" id="1Y3rEQ3p9_d" role="3X6T9h">
+            <node concept="19SGf9" id="1Y3rEQ3p9_e" role="OjmMu">
+              <node concept="19SUe$" id="1Y3rEQ3p9_H" role="19SJt6" />
+              <node concept="3z_lpY" id="1Y3rEQ3p9_F" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9_G" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9_P" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:4N5UlZR9geE" resolve="IPersistentContext" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9_I" role="19SJt6">
+                <property role="19SUeA" value=" replaces " />
+              </node>
+              <node concept="3z_lpY" id="1Y3rEQ3p9_R" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9_S" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9A2" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9_T" role="19SJt6">
+                <property role="19SUeA" value=", with " />
+              </node>
+              <node concept="3z_lpY" id="1Y3rEQ3p9A4" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9A5" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9Aj" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:4N5UlZR9g7s" resolve="PersistentContextImpl" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9A6" role="19SJt6">
+                <property role="19SUeA" value=" as suitable default implementation." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="1Y3rEQ3p9Al" role="3Xp5NH">
+          <node concept="OjmMv" id="1Y3rEQ3p9Am" role="3X6T9h">
+            <node concept="19SGf9" id="1Y3rEQ3p9An" role="OjmMu">
+              <node concept="19SUe$" id="1Y3rEQ3p9AJ" role="19SJt6" />
+              <node concept="3z_lpY" id="1Y3rEQ3p9AH" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9AI" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9AP" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:4N5UlZR9g6J" resolve="IPersistentEnvironment" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9AK" role="19SJt6">
+                <property role="19SUeA" value=" replaces " />
+              </node>
+              <node concept="3z_lpY" id="1Y3rEQ3p9AR" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9AS" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9B2" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:7F2vPZ3KyDX" resolve="IEnvironment" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9AT" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="1Y3rEQ3p9B4" role="3Xp5NH">
+          <node concept="OjmMv" id="1Y3rEQ3p9B5" role="3X6T9h">
+            <node concept="19SGf9" id="1Y3rEQ3p9B6" role="OjmMu">
+              <node concept="19SUe$" id="1Y3rEQ3p9BE" role="19SJt6" />
+              <node concept="3z_lpY" id="1Y3rEQ3p9BC" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9BD" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9E5" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:4N5UlZR9gf5" resolve="IPersistentNodeValueCache" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9BF" role="19SJt6">
+                <property role="19SUeA" value=" replaces " />
+              </node>
+              <node concept="3z_lpY" id="1Y3rEQ3p9E7" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3p9E8" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3p9Ei" role="2NCMaf">
+                    <ref role="2NCMaa" to="2ahs:5I6_y3YPQsg" resolve="INodeValueCache" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3p9E9" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1Y3rEQ3p9$s" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3p9$t" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3p9$u" role="19SJt6">
+            <property role="19SUeA" value="After a call to " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9Ro" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9Rp" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9Rv" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+              </node>
+              <node concept="2NCMab" id="1Y3rEQ3p9R$" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:2X4$XGmegKw" resolve="evaluate" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9Rq" role="19SJt6">
+            <property role="19SUeA" value=", we may retrieve the intermediate results from the passed " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9RC" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9RD" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9RO" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4N5UlZR9geE" resolve="IPersistentContext" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9RE" role="19SJt6">
+            <property role="19SUeA" value=". They are stored per " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9Uh" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9Ui" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9Ux" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4N5UlZR9g6J" resolve="IPersistentEnvironment" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9Uj" role="19SJt6">
+            <property role="19SUeA" value=" in the associated " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9Uz" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9U$" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3p9UR" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:4N5UlZR9gf5" resolve="IPersistentNodeValueCache" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9U_" role="19SJt6">
+            <property role="19SUeA" value="." />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2SbYGP" id="3OU98G0uUxs">
     <property role="TrG5h" value="DocumentConfig" />
