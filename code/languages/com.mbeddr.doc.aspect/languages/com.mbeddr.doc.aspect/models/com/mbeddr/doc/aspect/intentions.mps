@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="748g" ref="r:85fc9553-7d9a-4019-83cc-9f8169da83fb(com.mbeddr.doc.aspect.structure)" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="e61n" ref="r:febb8817-2b8e-49d8-97c3-a9fdf02c5b29(com.mbeddr.doc.aspect.utils)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
   </imports>
   <registry>
@@ -23,6 +25,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -43,15 +48,26 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
@@ -59,6 +75,11 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -121,7 +142,37 @@
       <node concept="3clFbS" id="6TuvEpVGBnK" role="2VODD2">
         <node concept="3clFbF" id="6TuvEpVGBvx" role="3cqZAp">
           <node concept="Xl_RD" id="6TuvEpVGBvw" role="3clFbG">
-            <property role="Xl_RC" value="Add Documented Concept Reference" />
+            <property role="Xl_RC" value="Add Reference to Documented Concept" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="agjuZpbVDA" role="2ZfVeh">
+      <node concept="3clFbS" id="agjuZpbVDB" role="2VODD2">
+        <node concept="3clFbF" id="4jXS_uRpWXo" role="3cqZAp">
+          <node concept="1Wc70l" id="4jXS_uRq0tX" role="3clFbG">
+            <node concept="2OqwBi" id="4jXS_uRpY4D" role="3uHU7B">
+              <node concept="2OqwBi" id="4jXS_uRpX6M" role="2Oq$k0">
+                <node concept="2Sf5sV" id="4jXS_uRpWXm" role="2Oq$k0" />
+                <node concept="3CFZ6_" id="4jXS_uRpXMj" role="2OqNvi">
+                  <node concept="3CFYIy" id="4jXS_uRpXUu" role="3CFYIz">
+                    <ref role="3CFYIx" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="4jXS_uRpYM9" role="2OqNvi" />
+            </node>
+            <node concept="2YIFZM" id="agjuZpbX_d" role="3uHU7w">
+              <ref role="37wK5l" to="e61n:1XXGcSTYFLY" resolve="isAspectOfLanguage" />
+              <ref role="1Pybhc" to="e61n:agjuZpbn5a" resolve="LanguageAspectRuntimeUtils" />
+              <node concept="2OqwBi" id="agjuZpbVUT" role="37wK5m">
+                <node concept="2Sf5sV" id="agjuZpbVDN" role="2Oq$k0" />
+                <node concept="I4A8Y" id="agjuZpbWVb" role="2OqNvi" />
+              </node>
+              <node concept="35c_gC" id="agjuZpbYor" role="37wK5m">
+                <ref role="35c_gD" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
