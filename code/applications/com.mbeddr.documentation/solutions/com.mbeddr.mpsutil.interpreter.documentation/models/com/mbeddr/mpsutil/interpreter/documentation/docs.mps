@@ -32,6 +32,9 @@
     <import index="wtmk" ref="r:62fa0cc1-0a94-41cf-95db-5a63aba38f91(com.mbeddr.core.pointers.plugin)" />
     <import index="dd6z" ref="r:3bf31f06-8688-4afb-86f9-058f442c0f79(com.mbeddr.ext.math.plugin)" />
     <import index="ehh0" ref="r:a2cc3304-9365-4e1b-a42e-ff1363ea6df8(com.mbeddr.mpsutil.interpreter.intentions)" />
+    <import index="7cx9" ref="r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test.structure)" />
+    <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
+    <import index="fac3" ref="r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -93,6 +96,7 @@
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <reference id="6955693250238922828" name="path" index="3z_lp$" />
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
@@ -387,6 +391,7 @@
       </node>
       <node concept="3z_lpz" id="1d83w5bBosY" role="1_0VJ0">
         <property role="TrG5h" value="expressionInterpreter" />
+        <ref role="3z_lp$" node="3OU98G0uUxt" resolve="source_gen" />
         <node concept="2NCZwO" id="1d83w5bBot2" role="3z_lpI">
           <node concept="2NCMab" id="1d83w5bBotX" role="2NCMaf">
             <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
@@ -401,6 +406,7 @@
       </node>
       <node concept="3z_lpz" id="1d83w5bBou0" role="1_0VJ0">
         <property role="TrG5h" value="variableInterpreter" />
+        <ref role="3z_lp$" node="3OU98G0uUxt" resolve="source_gen" />
         <node concept="2NCZwO" id="1d83w5bBou4" role="3z_lpI">
           <node concept="2NCMab" id="1d83w5bBov3" role="2NCMaf">
             <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
@@ -415,6 +421,7 @@
       </node>
       <node concept="3z_lpz" id="1d83w5bBovP" role="1_0VJ0">
         <property role="TrG5h" value="functionCallInterpreter" />
+        <ref role="3z_lp$" node="3OU98G0uUxt" resolve="source_gen" />
         <node concept="2NCZwO" id="1d83w5bBovR" role="3z_lpI">
           <node concept="2NCMab" id="1d83w5bBowP" role="2NCMaf">
             <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
@@ -424,6 +431,36 @@
         <node concept="OjmMv" id="1d83w5bBovX" role="3z_lpS">
           <node concept="19SGf9" id="1d83w5bBovY" role="OjmMu">
             <node concept="19SUe$" id="1d83w5bBovZ" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="3z_lpz" id="1Y3rEQ3rkJU" role="1_0VJ0">
+        <property role="TrG5h" value="conditionalInterpreterExample" />
+        <ref role="3z_lp$" node="3OU98G0uUxt" resolve="source_gen" />
+        <node concept="2NCZwO" id="1Y3rEQ3rkJW" role="3z_lpI">
+          <node concept="2NCMab" id="1Y3rEQ3rkL5" role="2NCMaf">
+            <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
+          </node>
+        </node>
+        <node concept="2bctqb" id="1Y3rEQ3rkK0" role="3z_lpT" />
+        <node concept="OjmMv" id="1Y3rEQ3rkK2" role="3z_lpS">
+          <node concept="19SGf9" id="1Y3rEQ3rkK3" role="OjmMu">
+            <node concept="19SUe$" id="1Y3rEQ3rkK4" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="3z_lpz" id="1Y3rEQ3rkMo" role="1_0VJ0">
+        <property role="TrG5h" value="exampleTest" />
+        <ref role="3z_lp$" node="3OU98G0uUxt" resolve="source_gen" />
+        <node concept="2NCZwO" id="1Y3rEQ3rkMq" role="3z_lpI">
+          <node concept="2NCMab" id="1Y3rEQ3rkNE" role="2NCMaf">
+            <ref role="2NCMaa" to="50zn:1Y3rEQ3q4SL" resolve="ExampleTest" />
+          </node>
+        </node>
+        <node concept="2bctqb" id="1Y3rEQ3rkMu" role="3z_lpT" />
+        <node concept="OjmMv" id="1Y3rEQ3rkMw" role="3z_lpS">
+          <node concept="19SGf9" id="1Y3rEQ3rkMx" role="OjmMu">
+            <node concept="19SUe$" id="1Y3rEQ3rkMy" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -2327,6 +2364,193 @@
     <node concept="1_0VNX" id="1Y3rEQ3ovfQ" role="1_0VJ0">
       <property role="TrG5h" value="test" />
       <property role="1_0VJr" value="Interpreter Test" />
+      <node concept="1_0LV8" id="1Y3rEQ3p9VD" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3p9VE" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3p9VF" role="19SJt6">
+            <property role="19SUeA" value="The " />
+          </node>
+          <node concept="3R4DFk" id="1Y3rEQ3p9VK" role="19SJt6">
+            <node concept="A2Dkr" id="1Y3rEQ3p9WS" role="XFqh_">
+              <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.test" />
+              <property role="A2Dkq" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9VL" role="19SJt6">
+            <property role="19SUeA" value=" language provides the basis for custom test languages for the Interpreted Language. An example for a custom test language would be " />
+          </node>
+          <node concept="3R4DFk" id="1Y3rEQ3p9WU" role="19SJt6">
+            <node concept="A2Dkr" id="1Y3rEQ3p9X2" role="XFqh_">
+              <property role="A2Dkp" value="com.mbeddr.core.cinterpreter" />
+              <property role="A2Dkq" value="390de4af-0c8d-4716-8dec-3d05ca751b28" />
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9WV" role="19SJt6">
+            <property role="19SUeA" value=", examples for tests can be found at " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3p9X4" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3p9X5" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3q6IE" role="2NCMaf">
+                <ref role="2NCMaa" to="50zn:1Y3rEQ3q4SL" resolve="ExampleTest" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3p9X6" role="19SJt6">
+            <property role="19SUeA" value="." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1Y3rEQ3rdj7" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3rdj8" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3rdj9" role="19SJt6">
+            <property role="19SUeA" value="The " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3rdjq" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3rdjr" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3rdjx" role="2NCMaf">
+                <ref role="2NCMaa" to="7cx9:65E6xpGS32M" resolve="AbstractInterpreterEvaluation" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3rdjs" role="19SJt6">
+            <property role="19SUeA" value=" concept provides a NodeAnnotation that checks if the evaluation result of the node conforms to an expected value. Similarly, the " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3rdjz" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3rdj$" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3rdjI" role="2NCMaf">
+                <ref role="2NCMaa" to="7cx9:2pogikRx2nv" resolve="AbstractInterpreterCondition" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3rdj_" role="19SJt6">
+            <property role="19SUeA" value=" concept provides a NodeAnnotation that checks for the expected result of " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3rdkd" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3rdke" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3rdku" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+              </node>
+              <node concept="2NCMab" id="1Y3rEQ3rdkz" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:7oujAIft2qt" resolve="isEvaluable" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3rdjN" role="19SJt6">
+            <property role="19SUeA" value=". If the expected result is not met, a typesystem error is flagged, which can be checked in a " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3rdkB" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3rdkC" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3rgc9" role="2NCMaf">
+                <ref role="2NCMaa" to="tp5g:hHlH9T6" resolve="NodesTestCase" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3rdkD" role="19SJt6">
+            <property role="19SUeA" value="." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1Y3rEQ3rgcb" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3rgcc" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3rgcd" role="19SJt6">
+            <property role="19SUeA" value="In order to use these concepts, we need to create a sub-concept and implement the following behaviors:" />
+          </node>
+        </node>
+      </node>
+      <node concept="3X6WG5" id="1Y3rEQ3rgXH" role="1_0VJ0">
+        <node concept="3X6T9g" id="1Y3rEQ3rgXI" role="3Xp5NH">
+          <node concept="OjmMv" id="1Y3rEQ3rgXJ" role="3X6T9h">
+            <node concept="19SGf9" id="1Y3rEQ3rgXK" role="OjmMu">
+              <node concept="19SUe$" id="1Y3rEQ3rgYI" role="19SJt6" />
+              <node concept="3z_lpY" id="1Y3rEQ3rgYG" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3rgYH" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3rgYO" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGSh7e" resolve="AbstractInterpreterEvaluation_Behavior" />
+                  </node>
+                  <node concept="2NCMab" id="1Y3rEQ3rh57" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGSh8P" resolve="getExpected" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3rgYJ" role="19SJt6">
+                <property role="19SUeA" value=": Returns the " />
+              </node>
+              <node concept="28N2ik" id="1Y3rEQ3rhsC" role="19SJt6">
+                <node concept="19SGf9" id="1Y3rEQ3rhsD" role="$DsGW">
+                  <node concept="19SUe$" id="1Y3rEQ3rhsE" role="19SJt6">
+                    <property role="19SUeA" value="BaseLanguage" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3rhsF" role="19SJt6">
+                <property role="19SUeA" value=" representation of the expected value. Usually, we implement this by calling " />
+              </node>
+              <node concept="3z_lpY" id="1Y3rEQ3rhsQ" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3rhsR" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3rht6" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGSh7e" resolve="AbstractInterpreterEvaluation_Behavior" />
+                  </node>
+                  <node concept="2NCMab" id="1Y3rEQ3rhtb" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGSh9S" resolve="evaluate" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3rhsS" role="19SJt6">
+                <property role="19SUeA" value=" on a child containing the expected value as node." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="1Y3rEQ3rhtf" role="3Xp5NH">
+          <node concept="OjmMv" id="1Y3rEQ3rhtg" role="3X6T9h">
+            <node concept="19SGf9" id="1Y3rEQ3rhth" role="OjmMu">
+              <node concept="19SUe$" id="1Y3rEQ3rhtF" role="19SJt6" />
+              <node concept="3z_lpY" id="1Y3rEQ3rhtD" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3rhtE" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3rhtL" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGSh7e" resolve="AbstractInterpreterEvaluation_Behavior" />
+                  </node>
+                  <node concept="2NCMab" id="1Y3rEQ3rhwe" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGVdh9" resolve="getNodeRendering" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3rhtG" role="19SJt6">
+                <property role="19SUeA" value=": Returns a text representation of the annotated node to be used in the error message." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="1Y3rEQ3rjyK" role="3Xp5NH">
+          <node concept="OjmMv" id="1Y3rEQ3rjyL" role="3X6T9h">
+            <node concept="19SGf9" id="1Y3rEQ3rjyM" role="OjmMu">
+              <node concept="19SUe$" id="1Y3rEQ3rjzl" role="19SJt6" />
+              <node concept="3z_lpY" id="1Y3rEQ3rjzj" role="19SJt6">
+                <node concept="2NCZwO" id="1Y3rEQ3rjzk" role="3z_lpZ">
+                  <node concept="2NCMab" id="1Y3rEQ3rjzr" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGSh7e" resolve="AbstractInterpreterEvaluation_Behavior" />
+                  </node>
+                  <node concept="2NCMab" id="1Y3rEQ3rj$_" role="2NCMaf">
+                    <ref role="2NCMaa" to="fac3:65E6xpGShbD" resolve="getInterpreter" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3rjzm" role="19SJt6">
+                <property role="19SUeA" value=": Returns an " />
+              </node>
+              <node concept="1jUjqm" id="1Y3rEQ3rj$D" role="19SJt6">
+                <node concept="19SGf9" id="1Y3rEQ3rj$E" role="$DsGW">
+                  <node concept="19SUe$" id="1Y3rEQ3rj$F" role="19SJt6">
+                    <property role="19SUeA" value="IInterpreter" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1Y3rEQ3rj$G" role="19SJt6">
+                <property role="19SUeA" value=" suitable for interpreting the annotated node." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1_0VNX" id="1Y3rEQ3ovSz" role="1_0VJ0">
       <property role="TrG5h" value="conditionInterpreter" />
@@ -2887,9 +3111,9 @@
   <node concept="2SbYGP" id="3OU98G0uUxs">
     <property role="TrG5h" value="DocumentConfig" />
     <node concept="2SbYGw" id="3OU98G0uUxt" role="Cbewh">
-      <property role="TrG5h" value="tmp" />
+      <property role="TrG5h" value="source_gen" />
       <node concept="9PVaO" id="3OU98G0uUxu" role="9PVG_">
-        <property role="3N1Lgt" value="tmp" />
+        <property role="3N1Lgt" value="source_gen" />
       </node>
     </node>
   </node>
@@ -2901,7 +3125,7 @@
     </node>
     <node concept="2SbEIf" id="3OU98G0wufx" role="30Gjbg">
       <property role="2SbEId" value="tmp" />
-      <ref role="2SbEIe" node="3OU98G0uUxt" resolve="tmp" />
+      <ref role="2SbEIe" node="3OU98G0uUxt" resolve="source_gen" />
     </node>
     <node concept="1_07dB" id="1T7O9iX3ZAa" role="30GjaH" />
   </node>
