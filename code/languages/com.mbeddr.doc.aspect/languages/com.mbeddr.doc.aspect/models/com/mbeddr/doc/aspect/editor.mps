@@ -15,7 +15,12 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
+      </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
@@ -25,6 +30,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -141,6 +147,53 @@
       <node concept="3F1sOY" id="6Y6aL9pZcKx" role="3EZMnx">
         <ref role="1NtTu8" to="748g:70oIz4aji0F" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="UK_oBpA4F6">
+    <ref role="1XX52x" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+    <node concept="3EZMnI" id="UK_oBpA4Fb" role="2wV5jI">
+      <node concept="3EZMnI" id="UK_oBpA4H8" role="3EZMnx">
+        <node concept="2iRfu4" id="UK_oBpA4H9" role="2iSdaV" />
+        <node concept="3F0ifn" id="UK_oBpA4Fo" role="3EZMnx">
+          <property role="3F0ifm" value="[Documents" />
+          <node concept="Vb9p2" id="UK_oBpA4H3" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
+          <node concept="VechU" id="UK_oBpA4Kn" role="3F10Kt">
+            <property role="Vb096" value="DARK_GREEN" />
+          </node>
+        </node>
+        <node concept="1iCGBv" id="UK_oBpA4Hn" role="3EZMnx">
+          <ref role="1NtTu8" to="748g:UK_oBpA4EG" />
+          <node concept="1sVBvm" id="UK_oBpA4Hp" role="1sWHZn">
+            <node concept="3F0A7n" id="UK_oBpA4Hy" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <node concept="VechU" id="UK_oBpA4NH" role="3F10Kt">
+                <property role="Vb096" value="blue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="UK_oBpAt3_" role="3EZMnx">
+          <property role="3F0ifm" value="]" />
+          <node concept="Vb9p2" id="UK_oBpAt3A" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
+          <node concept="VechU" id="UK_oBpAt3B" role="3F10Kt">
+            <property role="Vb096" value="DARK_GREEN" />
+          </node>
+        </node>
+      </node>
+      <node concept="2SsqMj" id="UK_oBpA4Fi" role="3EZMnx" />
+      <node concept="2iRkQZ" id="UK_oBpA4Fe" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="agjuZp0xrR">
+    <ref role="1XX52x" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+    <node concept="2SsqMj" id="agjuZp0xs0" role="2wV5jI" />
+    <node concept="2aJ2om" id="agjuZp0xrT" role="CpUAK">
+      <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
 </model>

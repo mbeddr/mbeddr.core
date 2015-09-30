@@ -193,5 +193,66 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="agjuZpaO3U">
+    <ref role="1M2myG" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+    <node concept="1N5Pfh" id="agjuZpaO6J" role="1Mr941">
+      <ref role="1N5Vy1" to="748g:UK_oBpA4EG" />
+      <node concept="13QW63" id="agjuZpaOcB" role="1N6uqs">
+        <node concept="3clFbS" id="agjuZpaOcC" role="2VODD2">
+          <node concept="3cpWs8" id="agjuZpaOd0" role="3cqZAp">
+            <node concept="3cpWsn" id="agjuZpaOd1" role="3cpWs9">
+              <property role="TrG5h" value="structureModel" />
+              <node concept="2EnYce" id="agjuZpaOd2" role="33vP2m">
+                <node concept="2YIFZM" id="agjuZpaOd3" role="2Oq$k0">
+                  <ref role="1Pybhc" to="w1kc:~Language" resolve="Language" />
+                  <ref role="37wK5l" to="w1kc:~Language.getLanguageForLanguageAspect(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.smodel.Language" resolve="getLanguageForLanguageAspect" />
+                  <node concept="2JrnkZ" id="agjuZpaOd4" role="37wK5m">
+                    <node concept="1Q6Npb" id="agjuZpaOd5" role="2JrQYb" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="agjuZpaOd6" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~Language.getStructureModelDescriptor():org.jetbrains.mps.openapi.model.SModel" resolve="getStructureModelDescriptor" />
+                </node>
+              </node>
+              <node concept="H_c77" id="agjuZpaOd7" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="agjuZpaOd8" role="3cqZAp">
+            <node concept="3clFbS" id="agjuZpaOd9" role="3clFbx">
+              <node concept="3cpWs6" id="agjuZpaOda" role="3cqZAp">
+                <node concept="2ShNRf" id="agjuZpaOdb" role="3cqZAk">
+                  <node concept="1pGfFk" id="agjuZpaOdc" role="2ShVmc">
+                    <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="agjuZpaOdd" role="3clFbw">
+              <node concept="10Nm6u" id="agjuZpaOde" role="3uHU7w" />
+              <node concept="37vLTw" id="agjuZpaOdf" role="3uHU7B">
+                <ref role="3cqZAo" node="agjuZpaOd1" resolve="structureModel" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="agjuZpaOdg" role="3cqZAp" />
+          <node concept="3cpWs6" id="agjuZpaOdh" role="3cqZAp">
+            <node concept="2ShNRf" id="agjuZpaOdi" role="3cqZAk">
+              <node concept="1pGfFk" id="agjuZpaOdj" role="2ShVmc">
+                <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
+                <node concept="2OqwBi" id="agjuZpaOdk" role="37wK5m">
+                  <node concept="37vLTw" id="agjuZpaOdl" role="2Oq$k0">
+                    <ref role="3cqZAo" node="agjuZpaOd1" resolve="structureModel" />
+                  </node>
+                  <node concept="2RRcyG" id="agjuZpaOdm" role="2OqNvi">
+                    <ref role="2RRcyH" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

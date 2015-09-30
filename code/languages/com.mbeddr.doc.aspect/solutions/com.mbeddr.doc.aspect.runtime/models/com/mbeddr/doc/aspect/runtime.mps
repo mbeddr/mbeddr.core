@@ -8,6 +8,7 @@
   <imports>
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -40,9 +41,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -59,9 +58,7 @@
         <property role="TrG5h" value="concept" />
         <node concept="3bZ5Sz" id="tBHOvWeyoU" role="1tU5fm" />
       </node>
-      <node concept="3Tqbb2" id="tBHOvWez_9" role="3clF45">
-        <ref role="ehGHo" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-      </node>
+      <node concept="3Tqbb2" id="tBHOvWez_9" role="3clF45" />
       <node concept="3Tm1VV" id="tBHOvWexSI" role="1B3o_S" />
       <node concept="3clFbS" id="tBHOvWexSJ" role="3clF47" />
     </node>
