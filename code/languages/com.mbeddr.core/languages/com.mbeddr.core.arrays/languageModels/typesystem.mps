@@ -2315,65 +2315,57 @@
           </node>
         </node>
         <node concept="3clFbS" id="7tm$oh3nUeO" role="3clFbx">
-          <node concept="3cpWs8" id="7tm$oh3nUf2" role="3cqZAp">
-            <node concept="3cpWsn" id="7tm$oh3nUf3" role="3cpWs9">
-              <property role="TrG5h" value="parentArray" />
-              <node concept="3Tqbb2" id="7tm$oh3nUf4" role="1tU5fm">
-                <ref role="ehGHo" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+          <node concept="3clFbJ" id="C7lj4lX9pO" role="3cqZAp">
+            <node concept="3clFbS" id="C7lj4lX9pP" role="3clFbx">
+              <node concept="2MkqsV" id="C7lj4lX9pQ" role="3cqZAp">
+                <node concept="Xl_RD" id="C7lj4lX9pR" role="2MkJ7o">
+                  <property role="Xl_RC" value="nested arrays must have a defined size" />
+                </node>
+                <node concept="1YBJjd" id="C7lj4lX9pS" role="2OEOjV">
+                  <ref role="1YBMHb" node="7tm$oh3nSaF" resolve="at" />
+                </node>
               </node>
-              <node concept="1PxgMI" id="7tm$oh3nUfg" role="33vP2m">
-                <ref role="1PxNhF" to="yq40:4VhroexOKM1" resolve="ArrayType" />
-                <node concept="2OqwBi" id="7tm$oh3nUf7" role="1PxMeX">
-                  <node concept="1YBJjd" id="7tm$oh3nUf6" role="2Oq$k0">
+            </node>
+            <node concept="3clFbC" id="C7lj4lX9pT" role="3clFbw">
+              <node concept="10Nm6u" id="C7lj4lX9pU" role="3uHU7w" />
+              <node concept="2OqwBi" id="C7lj4lX9pV" role="3uHU7B">
+                <node concept="1YBJjd" id="C7lj4lX9pW" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7tm$oh3nSaF" resolve="at" />
+                </node>
+                <node concept="3TrEf2" id="C7lj4lX9pX" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="9aQIb" id="C7lj4lWAnY" role="9aQIa">
+          <node concept="3clFbS" id="C7lj4lWAnZ" role="9aQI4">
+            <node concept="3SKdUt" id="C7lj4lWApz" role="3cqZAp">
+              <node concept="3SKdUq" id="C7lj4lWApA" role="3SKWNk">
+                <property role="3SKdUp" value="TODO Don't perform this check for Argument parents" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7tm$oh3nUfT" role="3cqZAp">
+              <node concept="3clFbS" id="7tm$oh3nUfU" role="3clFbx">
+                <node concept="2MkqsV" id="7tm$oh3nUg7" role="3cqZAp">
+                  <node concept="Xl_RD" id="7tm$oh3nUga" role="2MkJ7o">
+                    <property role="Xl_RC" value="arrays must have a defined size" />
+                  </node>
+                  <node concept="1YBJjd" id="7tm$oh3nUgb" role="2OEOjV">
                     <ref role="1YBMHb" node="7tm$oh3nSaF" resolve="at" />
                   </node>
-                  <node concept="1mfA1w" id="7tm$oh3nUfb" role="2OqNvi" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="7tm$oh3nUfT" role="3cqZAp">
-            <node concept="3clFbS" id="7tm$oh3nUfU" role="3clFbx">
-              <node concept="2MkqsV" id="7tm$oh3nUg7" role="3cqZAp">
-                <node concept="Xl_RD" id="7tm$oh3nUga" role="2MkJ7o">
-                  <property role="Xl_RC" value="nested arrays need size spec" />
-                </node>
-                <node concept="1YBJjd" id="7tm$oh3nUgb" role="2OEOjV">
-                  <ref role="1YBMHb" node="7tm$oh3nSaF" resolve="at" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbC" id="7tm$oh3nUg3" role="3clFbw">
-              <node concept="10Nm6u" id="7tm$oh3nUg6" role="3uHU7w" />
-              <node concept="2OqwBi" id="7tm$oh3nUfY" role="3uHU7B">
-                <node concept="1YBJjd" id="7tm$oh3nUfX" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7tm$oh3nSaF" resolve="at" />
-                </node>
-                <node concept="3TrEf2" id="2zhwXA$GDE_" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="7tm$oh3nUge" role="3cqZAp">
-            <node concept="3clFbS" id="7tm$oh3nUgf" role="3clFbx">
-              <node concept="2MkqsV" id="7tm$oh3nUgg" role="3cqZAp">
-                <node concept="Xl_RD" id="7tm$oh3nUgh" role="2MkJ7o">
-                  <property role="Xl_RC" value="nested arrays need size spec" />
-                </node>
-                <node concept="37vLTw" id="5Hxjapweq7r" role="2OEOjV">
-                  <ref role="3cqZAo" node="7tm$oh3nUf3" resolve="parentArray" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbC" id="7tm$oh3nUgj" role="3clFbw">
-              <node concept="10Nm6u" id="7tm$oh3nUgk" role="3uHU7w" />
-              <node concept="2OqwBi" id="7tm$oh3nUgl" role="3uHU7B">
-                <node concept="3cpWsa" id="7tm$oh3nUgo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7tm$oh3nUf3" resolve="parentArray" />
-                </node>
-                <node concept="3TrEf2" id="2zhwXA$GDEy" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
+              <node concept="3clFbC" id="7tm$oh3nUg3" role="3clFbw">
+                <node concept="10Nm6u" id="7tm$oh3nUg6" role="3uHU7w" />
+                <node concept="2OqwBi" id="7tm$oh3nUfY" role="3uHU7B">
+                  <node concept="1YBJjd" id="7tm$oh3nUfX" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7tm$oh3nSaF" resolve="at" />
+                  </node>
+                  <node concept="3TrEf2" id="2zhwXA$GDE_" role="2OqNvi">
+                    <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
+                  </node>
                 </node>
               </node>
             </node>

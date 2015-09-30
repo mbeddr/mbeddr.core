@@ -22,6 +22,9 @@
         <dependency reexport="false">1d6e05d7-9de9-40a7-9dad-7b8444280942(jetbrains.mps.lang.plugin#1203080439937)</dependency>
         <dependency reexport="false">d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)</dependency>
         <dependency reexport="false">79a2d464-32b0-48d2-96f9-b40717277a07(jetbrains.mps.lang.intentions#1192798684353)</dependency>
+        <dependency reexport="false">3ecd7c84-cde3-45de-886c-135ecc69b742(jetbrains.mps.lang.refactoring)</dependency>
+        <dependency reexport="false">8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)</dependency>
+        <dependency reexport="false">071dc6d3-9172-49bc-9ecd-8487bb9112a4(jetbrains.mps.lang.refactoring#1189697379687)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -68,6 +71,9 @@
                 <mapping-set-element>
                   <mapping-node modelUID="r:068c003c-9335-46e4-b1e5-6882d42fe753(com.mbeddr.mpsutil.contextactions.generator.template.main@generator)" nodeID="7009685902971623748" />
                 </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:068c003c-9335-46e4-b1e5-6882d42fe753(com.mbeddr.mpsutil.contextactions.generator.template.main@generator)" nodeID="5844665283567052194" />
+                </mapping-set-element>
               </mapping-set>
             </external-mapping>
           </greater-priority-mapping>
@@ -106,6 +112,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="before_or_together">
+          <greater-priority-mapping>
+            <generator generatorUID="470f89ff-55ea-4981-afda-87a37a86628c(com.mbeddr.mpsutil.contextactions#3020443573906038699)" />
+            <external-mapping>
+              <mapping-node modelUID="r:068c003c-9335-46e4-b1e5-6882d42fe753(com.mbeddr.mpsutil.contextactions.generator.template.main@generator)" nodeID="5844665283567052194" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="071dc6d3-9172-49bc-9ecd-8487bb9112a4(jetbrains.mps.lang.refactoring#1189697379687)" />
+            <external-mapping>
+              <mapping-node modelUID="r:00000000-0000-4000-0000-011c8959031a(jetbrains.mps.lang.refactoring.generator.baseLanguage.template.main@generator)" nodeID="478744034994715795" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -120,6 +140,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">3ecd7c84-cde3-45de-886c-135ecc69b742(jetbrains.mps.lang.refactoring)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

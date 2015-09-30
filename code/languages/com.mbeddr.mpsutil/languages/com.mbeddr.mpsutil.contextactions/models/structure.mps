@@ -9,6 +9,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
     <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" />
+    <import index="tp1h" ref="r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
@@ -487,6 +488,58 @@
     </node>
     <node concept="PrWs8" id="6W_V$eaUUO1" role="PzmwI">
       <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="54sr1JE49TG">
+    <property role="TrG5h" value="RefactoringSource" />
+    <property role="34LRSv" value="refactoring" />
+    <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
+    <node concept="1TJgyj" id="54sr1JE4cBg" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refactoring" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="54sr1JE49Wq" resolve="IRefactoringClassName" />
+    </node>
+    <node concept="1TJgyj" id="3luFbs2M08b" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="label" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3luFbs2M08d" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="54sr1JE49Vi" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="54sr1JE49W7">
+    <property role="TrG5h" value="RefactoringReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="54sr1JE49WM" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="refactoring" />
+      <ref role="20lvS9" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+    </node>
+    <node concept="PrWs8" id="54sr1JE49WH" role="PzmwI">
+      <ref role="PrY4T" node="54sr1JE49Wq" resolve="IRefactoringClassName" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="54sr1JE49Wq">
+    <property role="TrG5h" value="IRefactoringClassName" />
+  </node>
+  <node concept="1TIwiD" id="54sr1JE4o6K">
+    <property role="TrG5h" value="StringRefactoringClassName" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="54sr1JE4o72" role="1TKVEl">
+      <property role="TrG5h" value="className" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="54sr1JE4o6X" role="PzmwI">
+      <ref role="PrY4T" node="54sr1JE49Wq" resolve="IRefactoringClassName" />
     </node>
   </node>
 </model>

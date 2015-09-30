@@ -16,6 +16,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" />
     <import index="tvob" ref="r:c029c62e-e2d7-4065-8788-5b2e0c631dfe(com.mbeddr.mpsutil.contextactions.sandboxlang.intentions)" />
+    <import index="sndx" ref="r:f084153f-d944-4301-a18b-560e825c4955(com.mbeddr.mpsutil.contextactions.sandboxlang.refactorings)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" implicit="true" />
@@ -44,7 +45,6 @@
       <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
         <reference id="1203088061055" name="action" index="tCJdB" />
       </concept>
-      <concept id="1205679047295" name="jetbrains.mps.lang.plugin.structure.ActionParameterDeclaration" flags="ig" index="2S4$dB" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
         <reference id="1217252646389" name="key" index="1DUlNI" />
@@ -79,9 +79,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
-        <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -98,10 +95,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
-        <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -116,9 +109,6 @@
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
-      </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -169,6 +159,12 @@
       </concept>
       <concept id="6294660000051228497" name="com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource" flags="ng" index="NGJ2U">
         <child id="573955333602854986" name="folder" index="37Ct4v" />
+      </concept>
+      <concept id="5844665283566935660" name="com.mbeddr.mpsutil.contextactions.structure.RefactoringSource" flags="ng" index="2V3f9R">
+        <child id="5844665283566946768" name="refactoring" index="2V3anb" />
+      </concept>
+      <concept id="5844665283566935815" name="com.mbeddr.mpsutil.contextactions.structure.RefactoringReference" flags="ng" index="2V3fcs">
+        <reference id="5844665283566935858" name="refactoring" index="2V3fcD" />
       </concept>
       <concept id="8009069486209215732" name="com.mbeddr.mpsutil.contextactions.structure.IntentionsActionSource_Compact" flags="ng" index="3_N$aR">
         <child id="8009069486209215751" name="intentionId" index="3_N$d4" />
@@ -260,6 +256,11 @@
           <node concept="10M0yZ" id="6W_V$eaV7kd" role="3_N$db">
             <ref role="1PxDUh" to="9w4s:~Icons" resolve="Icons" />
             <ref role="3cqZAo" to="9w4s:~PlatformIcons.ADD_ICON" resolve="ADD_ICON" />
+          </node>
+        </node>
+        <node concept="2V3f9R" id="54sr1JE4mkA" role="3_Xg6h">
+          <node concept="2V3fcs" id="54sr1JE4o6g" role="2V3anb">
+            <ref role="2V3fcD" to="sndx:12GcxOVDThU" resolve="Refactoring1" />
           </node>
         </node>
         <node concept="2OqwBi" id="6W_V$eaOqQC" role="3_Xg7y">
@@ -454,14 +455,6 @@
       <property role="TrG5h" value="node" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.NODE" resolve="NODE" />
       <node concept="1oajcY" id="4mMeETlroWM" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="6vxclkwRLPE" role="1NuT2Z">
-      <property role="TrG5h" value="node2" />
-      <node concept="3Tm6S6" id="6vxclkwRLPF" role="1B3o_S" />
-      <node concept="1oajcY" id="6vxclkwRLPG" role="1oa70y" />
-      <node concept="3Tqbb2" id="6vxclkwRLJO" role="1tU5fm">
-        <ref role="ehGHo" to="aozb:Y7dDcESzwV" resolve="SideTransformSource" />
-      </node>
     </node>
     <node concept="1QGGSu" id="4mMeETlrjh3" role="3Uehp1">
       <node concept="10M0yZ" id="4mMeETlrndU" role="3xaMm5">

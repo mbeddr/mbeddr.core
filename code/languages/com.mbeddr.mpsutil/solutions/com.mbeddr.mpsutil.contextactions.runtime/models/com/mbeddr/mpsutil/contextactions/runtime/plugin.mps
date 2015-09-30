@@ -36,6 +36,7 @@
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
         <child id="8096638938275469615" name="toolDisposeBlock" index="uR5co" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
+        <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
       </concept>
       <concept id="1208528650020" name="jetbrains.mps.lang.plugin.structure.ToolType" flags="in" index="1xUVSX">
@@ -194,6 +195,7 @@
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
+      <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -393,6 +395,35 @@
     <property role="TrG5h" value="ContextActionsTool" />
     <property role="2XNbzY" value="Context Actions" />
     <property role="2bmUCM" value="RIGHT" />
+    <node concept="2XrIbr" id="4IZABA$xIx4" role="2XNbBy">
+      <property role="TrG5h" value="changeContext" />
+      <node concept="37vLTG" id="4IZABA$xIUn" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="4IZABA$xIXy" role="1tU5fm">
+          <ref role="3uigEE" to="1ne1:5tr7YH$Ux6m" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4IZABA$xIOj" role="3clF45" />
+      <node concept="3clFbS" id="4IZABA$xIx6" role="3clF47">
+        <node concept="3clFbF" id="4IZABA$xJ40" role="3cqZAp">
+          <node concept="2OqwBi" id="4IZABA$xJsN" role="3clFbG">
+            <node concept="2OqwBi" id="4IZABA$xJ3U" role="2Oq$k0">
+              <node concept="2WthIp" id="4IZABA$xJ3X" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="4IZABA$xJ3Z" role="2OqNvi">
+                <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4IZABA$xKHq" role="2OqNvi">
+              <ref role="37wK5l" to="1ne1:5lGdLibXIB7" resolve="update" />
+              <node concept="37vLTw" id="4IZABA$xKI3" role="37wK5m">
+                <ref role="3cqZAo" node="4IZABA$xIUn" resolve="context" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4IZABA$xILf" role="1B3o_S" />
+    </node>
     <node concept="2BZ0e9" id="5tr7YH$U8Tk" role="2XNbBz">
       <property role="TrG5h" value="myComponent" />
       <node concept="3Tm6S6" id="5tr7YH$U8Tl" role="1B3o_S" />
