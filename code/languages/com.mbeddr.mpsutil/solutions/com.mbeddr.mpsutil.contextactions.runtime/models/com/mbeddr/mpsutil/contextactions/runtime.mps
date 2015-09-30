@@ -2145,8 +2145,23 @@
                 <node concept="Xl_RD" id="7husA5YnAa6" role="3g7hyw">
                   <property role="Xl_RC" value="plugin" />
                 </node>
-                <node concept="Xl_RD" id="7husA5YnAY7" role="3g7hyw">
-                  <property role="Xl_RC" value="intentions" />
+                <node concept="2OqwBi" id="2hz1PZpJelv" role="3g7hyw">
+                  <node concept="Rm8GO" id="2hz1PZpJdS0" role="2Oq$k0">
+                    <ref role="Rm8GQ" to="w1kc:~LanguageAspect.INTENTIONS" resolve="INTENTIONS" />
+                    <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
+                  </node>
+                  <node concept="liA8E" id="2hz1PZpJg2E" role="2OqNvi">
+                    <ref role="37wK5l" to="w1kc:~LanguageAspect.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2hz1PZpJgbm" role="3g7hyw">
+                  <node concept="Rm8GO" id="2hz1PZpJgB7" role="2Oq$k0">
+                    <ref role="Rm8GQ" to="w1kc:~LanguageAspect.REFACTORINGS" resolve="REFACTORINGS" />
+                    <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
+                  </node>
+                  <node concept="liA8E" id="2hz1PZpJgbo" role="2OqNvi">
+                    <ref role="37wK5l" to="w1kc:~LanguageAspect.getName():java.lang.String" resolve="getName" />
+                  </node>
                 </node>
               </node>
             </node>

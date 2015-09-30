@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3ecd7c84-cde3-45de-886c-135ecc69b742" name="jetbrains.mps.lang.refactoring" version="0" />
+    <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -59,8 +60,17 @@
       <concept id="1189694053795" name="jetbrains.mps.lang.refactoring.structure.DoRefactorClause" flags="in" index="3ZiDMR" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
+      <concept id="7009685902974585451" name="com.mbeddr.mpsutil.contextactions.structure.IntentionAnnotation" flags="ng" index="3SAA9r">
+        <child id="8385265319268397369" name="label" index="aeOdo" />
+        <child id="7009685902974586162" name="folder" index="3SAAk2" />
       </concept>
     </language>
   </registry>
@@ -95,6 +105,14 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3SAA9r" id="2hz1PZpJi7R" role="lGtFl">
+      <node concept="Xl_RD" id="2hz1PZpJi82" role="aeOdo">
+        <property role="Xl_RC" value="Refact 1" />
+      </node>
+      <node concept="Xl_RD" id="2hz1PZpJii0" role="3SAAk2">
+        <property role="Xl_RC" value="From Annotation" />
       </node>
     </node>
   </node>

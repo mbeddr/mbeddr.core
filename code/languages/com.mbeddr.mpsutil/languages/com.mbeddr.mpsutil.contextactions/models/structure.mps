@@ -398,6 +398,9 @@
       <node concept="trNpa" id="657q32pRgEf" role="EQaZv">
         <ref role="trN6q" to="tp3j:2c3oNEsfcpP" resolve="BaseIntentionDeclaration" />
       </node>
+      <node concept="trNpa" id="2hz1PZpFa6W" role="EQaZv">
+        <ref role="trN6q" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+      </node>
     </node>
     <node concept="PrWs8" id="657q32pRpm2" role="PzmwI">
       <ref role="PrY4T" node="657q32pRmdh" resolve="IContextProvider" />
