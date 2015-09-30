@@ -120,7 +120,9 @@
         <property id="3350625596580064225" name="text" index="1_0VJr" />
       </concept>
       <concept id="3350625596580064455" name="com.mbeddr.doc.structure.Section" flags="ng" index="1_0VNX" />
-      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa" />
+      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
+        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
+      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -153,6 +155,7 @@
   </registry>
   <node concept="1_1swa" id="3OU98G0uTdn">
     <property role="TrG5h" value="Interpreter" />
+    <property role="yApLE" value="1" />
     <ref role="G9hjw" node="3OU98G0uUxs" resolve="DocumentConfig" />
     <node concept="Wq1Bs" id="3OU98G0uVw7" role="Wq1Bf">
       <property role="Wq1Bt" value="Niko Stotz" />
@@ -182,8 +185,45 @@
         </node>
       </node>
       <node concept="1_0VNX" id="1d83w5bFag0" role="1_0VJ0">
-        <property role="TrG5h" value="asdf" />
-        <property role="1_0VJr" value="define interpreted language" />
+        <property role="TrG5h" value="interpretedLanguage" />
+        <property role="1_0VJr" value="Interpreted Language" />
+        <node concept="1_0LV8" id="1Y3rEQ3omxi" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3omxj" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3omxk" role="19SJt6">
+              <property role="19SUeA" value="We describe the set of MPS Language(s) defining the concepts of the evaluated nodes in one Interpreter as &quot;Interpreted Language&quot;. For example, the Interpreted Language of " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3omxp" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3omxq" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3omxw" role="2NCMaf">
+                  <ref role="2NCMaa" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3omxr" role="19SJt6">
+              <property role="19SUeA" value=", " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3omxy" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3omxz" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3omxH" role="2NCMaf">
+                  <ref role="2NCMaa" to="lkz5:3VM1o5wbzoX" resolve="CFunctionInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3omx$" role="19SJt6">
+              <property role="19SUeA" value=" and " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3omxJ" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3omxK" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3omxY" role="2NCMaf">
+                  <ref role="2NCMaa" to="dd6z:6KLCBzAUjHf" resolve="CMathInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3omxL" role="19SJt6">
+              <property role="19SUeA" value=" is mbeddr C." />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1_0VNX" id="3OU98G0uY7N" role="1_0VJ0">
         <property role="TrG5h" value="parts" />
@@ -1586,6 +1626,40 @@
       <node concept="1_0VNX" id="1d83w5bFqb2" role="1_0VJ0">
         <property role="TrG5h" value="cache" />
         <property role="1_0VJr" value="Node Value Cache" />
+        <node concept="1_0LV8" id="1Y3rEQ3omy0" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3omy1" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3omy2" role="19SJt6">
+              <property role="19SUeA" value="The IContext may contain a " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3omBc" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3omBd" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3omBi" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:5I6_y3YPQsg" resolve="INodeValueCache" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3omBb" role="19SJt6">
+              <property role="19SUeA" value=" of evaluated result per node. If we request the evaluation of a node that's contained in the cache, the cached result is returned and no evaluation occurs." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="1Y3rEQ3omBk" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3omBl" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3omBm" role="19SJt6">
+              <property role="19SUeA" value="The interpreter runtime tries to invalidate the cache on useful occations, like " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3onic" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3onid" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3onij" role="2NCMaf">
+                  <ref role="2NCMaa" to="3673:7F2vPZ3JZkw" resolve="OperationCallExpression" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3omBy" role="19SJt6">
+              <property role="19SUeA" value=" and Environment changes." />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1_0VNX" id="1d83w5bFqlR" role="1_0VJ0">
