@@ -31,6 +31,7 @@
     <import index="pmum" ref="r:be293a79-c9de-44c7-848a-150147010751(com.mbeddr.core.statements.plugin)" />
     <import index="wtmk" ref="r:62fa0cc1-0a94-41cf-95db-5a63aba38f91(com.mbeddr.core.pointers.plugin)" />
     <import index="dd6z" ref="r:3bf31f06-8688-4afb-86f9-058f442c0f79(com.mbeddr.ext.math.plugin)" />
+    <import index="ehh0" ref="r:a2cc3304-9365-4e1b-a42e-ff1363ea6df8(com.mbeddr.mpsutil.interpreter.intentions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -267,7 +268,9 @@
                     <property role="A2Dkq" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
                   </node>
                 </node>
-                <node concept="19SUe$" id="1T7O9iWSE4J" role="19SJt6" />
+                <node concept="19SUe$" id="1T7O9iWSE4J" role="19SJt6">
+                  <property role="19SUeA" value=" runtime solution" />
+                </node>
               </node>
             </node>
           </node>
@@ -283,7 +286,9 @@
                     <property role="A2Dkq" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
                   </node>
                 </node>
-                <node concept="19SUe$" id="1T7O9iWSJez" role="19SJt6" />
+                <node concept="19SUe$" id="1T7O9iWSJez" role="19SJt6">
+                  <property role="19SUeA" value=" interpreter test language" />
+                </node>
               </node>
             </node>
           </node>
@@ -1073,6 +1078,112 @@
             </node>
           </node>
           <node concept="3X6WG5" id="1d83w5bFlk3" role="1_0VJ0">
+            <node concept="3X6T9g" id="1Y3rEQ3oZdi" role="3Xp5NH">
+              <node concept="OjmMv" id="1Y3rEQ3oZdj" role="3X6T9h">
+                <node concept="19SGf9" id="1Y3rEQ3oZdk" role="OjmMu">
+                  <node concept="19SUe$" id="1Y3rEQ3oZih" role="19SJt6" />
+                  <node concept="3z_lpY" id="1Y3rEQ3oZif" role="19SJt6">
+                    <node concept="2NCZwO" id="1Y3rEQ3oZig" role="3z_lpZ">
+                      <node concept="2NCMab" id="1Y3rEQ3oZin" role="2NCMaf">
+                        <ref role="2NCMaa" to="3673:4_QpjDi7hcK" resolve="InterpretConstraintExpression" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3oZii" role="19SJt6">
+                    <property role="19SUeA" value=" (displayed as " />
+                  </node>
+                  <node concept="3z_lpY" id="1Y3rEQ3oZip" role="19SJt6">
+                    <node concept="2NCZwO" id="1Y3rEQ3oZiq" role="3z_lpZ">
+                      <node concept="2NCMab" id="1Y3rEQ3oZi$" role="2NCMaf">
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
+                      </node>
+                      <node concept="2NCMab" id="1Y3rEQ3p27c" role="2NCMaf">
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p1bx" resolve="interpretConstraintExpression" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3oZir" role="19SJt6">
+                    <property role="19SUeA" value=" " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p27g" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p27h" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p27i" role="19SJt6">
+                        <property role="19SUeA" value="#(«childReference»)" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p27j" role="19SJt6">
+                    <property role="19SUeA" value=") invokes the interpreter on the selected child and returns the evaluation result. If the selected child was constrained to a type by the containing evaluator, the evaluation result is of BaseLanguage type mapped to this constrained type in " />
+                  </node>
+                  <node concept="1_0GAv" id="1Y3rEQ3p27J" role="19SJt6">
+                    <ref role="1_0GAl" node="1d83w5bFgPT" resolve="typeMappings" />
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p27K" role="19SJt6">
+                    <property role="19SUeA" value=" section. As an example, the type of " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p2wL" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p2wM" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p2wN" role="19SJt6">
+                        <property role="19SUeA" value="right" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p2wO" role="19SJt6">
+                    <property role="19SUeA" value=" is constrained to " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p2x9" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p2xa" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p2xb" role="19SJt6">
+                        <property role="19SUeA" value="int16" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p2xc" role="19SJt6">
+                    <property role="19SUeA" value=", and " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p2x_" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p2xA" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p2xB" role="19SJt6">
+                        <property role="19SUeA" value="int16" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p2xC" role="19SJt6">
+                    <property role="19SUeA" value=" is mapped to " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p2y5" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p2y6" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p2y7" role="19SJt6">
+                        <property role="19SUeA" value="int" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p2y8" role="19SJt6">
+                    <property role="19SUeA" value=". Thus, the result type of " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p2yD" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p2yE" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p2yF" role="19SJt6">
+                        <property role="19SUeA" value="#right" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p2yG" role="19SJt6">
+                    <property role="19SUeA" value=" is " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3p2zh" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3p2zi" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3p2zj" role="19SJt6">
+                        <property role="19SUeA" value="int" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3p2zk" role="19SJt6">
+                    <property role="19SUeA" value="." />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3X6T9g" id="1d83w5bFlk4" role="3Xp5NH">
               <node concept="OjmMv" id="1d83w5bFlk5" role="3X6T9h">
                 <node concept="19SGf9" id="1d83w5bFlk6" role="OjmMu">
@@ -1093,7 +1204,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFlE9" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFllc" resolve="interpretExpression" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p0Kb" resolve="interpretExpression" />
                       </node>
                     </node>
                   </node>
@@ -1315,6 +1426,66 @@
                     </node>
                   </node>
                   <node concept="19SUe$" id="1d83w5bFnhD" role="19SJt6">
+                    <property role="19SUeA" value="." />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X6T9g" id="1Y3rEQ3oo1T" role="3Xp5NH">
+              <node concept="OjmMv" id="1Y3rEQ3oo1U" role="3X6T9h">
+                <node concept="19SGf9" id="1Y3rEQ3oo1V" role="OjmMu">
+                  <node concept="19SUe$" id="1Y3rEQ3oo3F" role="19SJt6" />
+                  <node concept="3z_lpY" id="1Y3rEQ3oo3D" role="19SJt6">
+                    <node concept="2NCZwO" id="1Y3rEQ3oo3E" role="3z_lpZ">
+                      <node concept="2NCMab" id="1Y3rEQ3oo3L" role="2NCMaf">
+                        <ref role="2NCMaa" to="3673:4mmKsQ97pkM" resolve="CastUpExpression" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3oo3G" role="19SJt6">
+                    <property role="19SUeA" value=" (displayed as " />
+                  </node>
+                  <node concept="3z_lpY" id="1Y3rEQ3oo7r" role="19SJt6">
+                    <node concept="2NCZwO" id="1Y3rEQ3oo7s" role="3z_lpZ">
+                      <node concept="2NCMab" id="1Y3rEQ3osA9" role="2NCMaf">
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
+                      </node>
+                      <node concept="2NCMab" id="1Y3rEQ3osAe" role="2NCMaf">
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3oswS" resolve="castUpExpression" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3oo7t" role="19SJt6">
+                    <property role="19SUeA" value=" " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3osAi" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3osAj" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3osAk" role="19SJt6">
+                        <property role="19SUeA" value="castUp(«value», «TargetType»)" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3osAl" role="19SJt6">
+                    <property role="19SUeA" value=") cares for boxing/unboxing primitive types and automatic compatible conversion, e. g. " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3ov2d" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3ov2e" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3ov2f" role="19SJt6">
+                        <property role="19SUeA" value="int" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3ov2g" role="19SJt6">
+                    <property role="19SUeA" value=" --&gt; " />
+                  </node>
+                  <node concept="1jUjqm" id="1Y3rEQ3ov2z" role="19SJt6">
+                    <node concept="19SGf9" id="1Y3rEQ3ov2$" role="$DsGW">
+                      <node concept="19SUe$" id="1Y3rEQ3ov2_" role="19SJt6">
+                        <property role="19SUeA" value="long" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="19SUe$" id="1Y3rEQ3ov2A" role="19SJt6">
                     <property role="19SUeA" value="." />
                   </node>
                 </node>
@@ -1657,6 +1828,23 @@
             </node>
             <node concept="19SUe$" id="1Y3rEQ3omBy" role="19SJt6">
               <property role="19SUeA" value=" and Environment changes." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="1Y3rEQ3oXUR" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3oXUS" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3oXUT" role="19SJt6">
+              <property role="19SUeA" value="The cache can be disabled for single evaluators via the " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3oXVV" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3oXVW" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3oYgf" role="2NCMaf">
+                  <ref role="2NCMaa" to="ehh0:7F2vPZ3BGzt" resolve="ToggleCaching" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oXVX" role="19SJt6">
+              <property role="19SUeA" value=" intention or the inspector." />
             </node>
           </node>
         </node>
@@ -2133,6 +2321,378 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_0VNX" id="1Y3rEQ3ovfQ" role="1_0VJ0">
+      <property role="TrG5h" value="test" />
+      <property role="1_0VJr" value="Interpreter Test" />
+    </node>
+    <node concept="1_0VNX" id="1Y3rEQ3ovSz" role="1_0VJ0">
+      <property role="TrG5h" value="conditionInterpreter" />
+      <property role="1_0VJr" value="Conditional Interpreters" />
+      <node concept="1_0LV8" id="1Y3rEQ3ow5u" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3ow5v" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3ow5w" role="19SJt6">
+            <property role="19SUeA" value="An extended version of an Interpreter is a " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3ow5_" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3ow5A" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3ow5G" role="2NCMaf">
+                <ref role="2NCMaa" to="3673:7oujAIeONTA" resolve="ConditionalInterpreter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3ow5B" role="19SJt6">
+            <property role="19SUeA" value=". It allows to define a " />
+          </node>
+          <node concept="3z_lpY" id="1Y3rEQ3owov" role="19SJt6">
+            <node concept="2NCZwO" id="1Y3rEQ3owow" role="3z_lpZ">
+              <node concept="2NCMab" id="1Y3rEQ3owoD" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+              </node>
+              <node concept="2NCMab" id="1Y3rEQ3owoI" role="2NCMaf">
+                <ref role="2NCMaa" to="2ahs:7oujAIft2qt" resolve="isEvaluable" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1Y3rEQ3owou" role="19SJt6">
+            <property role="19SUeA" value=" method that decides if a node can be evaluated." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1Y3rEQ3p2Di" role="1_0VJ0">
+        <property role="TrG5h" value="definitionTime" />
+        <property role="1_0VJr" value="Definition Time Additions" />
+        <node concept="1_0LV8" id="1Y3rEQ3oYgq" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3oYgr" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3oYgs" role="19SJt6">
+              <property role="19SUeA" value="The " />
+            </node>
+            <node concept="1jUjqm" id="1Y3rEQ3oYgJ" role="19SJt6">
+              <node concept="19SGf9" id="1Y3rEQ3oYgK" role="$DsGW">
+                <node concept="19SUe$" id="1Y3rEQ3oYgL" role="19SJt6">
+                  <property role="19SUeA" value="isEvaluable()" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oYgM" role="19SJt6">
+              <property role="19SUeA" value=" operation can be added to any Evaluator inside a ConditionalInterpreter by using the " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3oYgS" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3oYgT" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3oYh3" role="2NCMaf">
+                  <ref role="2NCMaa" to="ehh0:7oujAIePUkk" resolve="addCondition" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oYgU" role="19SJt6">
+              <property role="19SUeA" value=" intention. If no " />
+            </node>
+            <node concept="1jUjqm" id="1Y3rEQ3oYh5" role="19SJt6">
+              <node concept="19SGf9" id="1Y3rEQ3oYh6" role="$DsGW">
+                <node concept="19SUe$" id="1Y3rEQ3oYh7" role="19SJt6">
+                  <property role="19SUeA" value="isEvaluable()" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oYh8" role="19SJt6">
+              <property role="19SUeA" value=" operation is present, it's assumed to return " />
+            </node>
+            <node concept="1jUjqm" id="1Y3rEQ3oYhm" role="19SJt6">
+              <node concept="19SGf9" id="1Y3rEQ3oYhn" role="$DsGW">
+                <node concept="19SUe$" id="1Y3rEQ3oYho" role="19SJt6">
+                  <property role="19SUeA" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oYhp" role="19SJt6">
+              <property role="19SUeA" value=" if and only if all its children are evaluable." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="1Y3rEQ3oYhF" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3oYhG" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3oYhH" role="19SJt6">
+              <property role="19SUeA" value="The " />
+            </node>
+            <node concept="1jUjqm" id="1Y3rEQ3oYij" role="19SJt6">
+              <node concept="19SGf9" id="1Y3rEQ3oYik" role="$DsGW">
+                <node concept="19SUe$" id="1Y3rEQ3oYil" role="19SJt6">
+                  <property role="19SUeA" value="isEvaluable()" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oYim" role="19SJt6">
+              <property role="19SUeA" value=" operation can be implemented as single-line BaseLanguage expression or multi-line BaseLanguage statements. In addition to the expressions described in " />
+            </node>
+            <node concept="1_0GAv" id="1Y3rEQ3oYPH" role="19SJt6">
+              <ref role="1_0GAl" node="1d83w5bFkVv" resolve="implementation" />
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3oYPI" role="19SJt6">
+              <property role="19SUeA" value=", we can use the following expressions:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3X6WG5" id="1Y3rEQ3oYQz" role="1_0VJ0">
+          <node concept="3X6T9g" id="1Y3rEQ3oYQ$" role="3Xp5NH">
+            <node concept="OjmMv" id="1Y3rEQ3oYQ_" role="3X6T9h">
+              <node concept="19SGf9" id="1Y3rEQ3oYQA" role="OjmMu">
+                <node concept="19SUe$" id="1Y3rEQ3oYRr" role="19SJt6" />
+                <node concept="3z_lpY" id="1Y3rEQ3oYRp" role="19SJt6">
+                  <node concept="2NCZwO" id="1Y3rEQ3oYRq" role="3z_lpZ">
+                    <node concept="2NCMab" id="1Y3rEQ3oZcE" role="2NCMaf">
+                      <ref role="2NCMaa" to="3673:7oujAIeQgTP" resolve="IsEvaluableConstraintExpression" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3oYRs" role="19SJt6">
+                  <property role="19SUeA" value=" (shown as " />
+                </node>
+                <node concept="3z_lpY" id="1Y3rEQ3oZcG" role="19SJt6">
+                  <node concept="2NCZwO" id="1Y3rEQ3oZcH" role="3z_lpZ">
+                    <node concept="2NCMab" id="1Y3rEQ3oZcR" role="2NCMaf">
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
+                    </node>
+                    <node concept="2NCMab" id="1Y3rEQ3oZcW" role="2NCMaf">
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oTVa" resolve="isEvaluableConstraintExpression" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3oZcI" role="19SJt6">
+                  <property role="19SUeA" value=" " />
+                </node>
+                <node concept="1jUjqm" id="1Y3rEQ3oZd0" role="19SJt6">
+                  <node concept="19SGf9" id="1Y3rEQ3oZd1" role="$DsGW">
+                    <node concept="19SUe$" id="1Y3rEQ3oZd2" role="19SJt6">
+                      <property role="19SUeA" value="#?«childReference»" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3oZd3" role="19SJt6">
+                  <property role="19SUeA" value=") returns if the referenced child is evaluable by this interpreter." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="1Y3rEQ3p2zX" role="3Xp5NH">
+            <node concept="OjmMv" id="1Y3rEQ3p2zY" role="3X6T9h">
+              <node concept="19SGf9" id="1Y3rEQ3p2zZ" role="OjmMu">
+                <node concept="19SUe$" id="1Y3rEQ3p2$0" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="3z_lpY" id="1Y3rEQ3p2$n" role="19SJt6">
+                  <node concept="2NCZwO" id="1Y3rEQ3p2$o" role="3z_lpZ">
+                    <node concept="2NCMab" id="1Y3rEQ3p2$N" role="2NCMaf">
+                      <ref role="2NCMaa" to="3673:7oujAIeQgTG" resolve="IsEvaluableExpression" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3p2$q" role="19SJt6">
+                  <property role="19SUeA" value=" (shown as " />
+                </node>
+                <node concept="3z_lpY" id="1Y3rEQ3p2$r" role="19SJt6">
+                  <node concept="2NCZwO" id="1Y3rEQ3p2$s" role="3z_lpZ">
+                    <node concept="2NCMab" id="1Y3rEQ3p2$t" role="2NCMaf">
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
+                    </node>
+                    <node concept="2NCMab" id="1Y3rEQ3p2$Q" role="2NCMaf">
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oVVa" resolve="isEvaluableExpression" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3p2$v" role="19SJt6">
+                  <property role="19SUeA" value=" " />
+                </node>
+                <node concept="1jUjqm" id="1Y3rEQ3p2$w" role="19SJt6">
+                  <node concept="19SGf9" id="1Y3rEQ3p2$x" role="$DsGW">
+                    <node concept="19SUe$" id="1Y3rEQ3p2$y" role="19SJt6">
+                      <property role="19SUeA" value="#?(«expression»)" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3p2$z" role="19SJt6">
+                  <property role="19SUeA" value=") returns if the result of the contained expression is evaluable by this interpreter. The contained expression must evaluate to " />
+                </node>
+                <node concept="1jUjqm" id="1Y3rEQ3p2$V" role="19SJt6">
+                  <node concept="19SGf9" id="1Y3rEQ3p2$W" role="$DsGW">
+                    <node concept="19SUe$" id="1Y3rEQ3p2$X" role="19SJt6">
+                      <property role="19SUeA" value="node&lt;&gt;" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="1Y3rEQ3p2$Y" role="19SJt6">
+                  <property role="19SUeA" value="." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1Y3rEQ3p2Ii" role="1_0VJ0">
+        <property role="TrG5h" value="compileTime" />
+        <property role="1_0VJr" value="Compile Time Additions" />
+        <node concept="1_0LV8" id="1Y3rEQ3p2Pa" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3p2Pb" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3p2Pc" role="19SJt6">
+              <property role="19SUeA" value="An ConditionalInterpreter implements " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p2Ph" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p2Pi" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p2Po" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p2Pj" role="19SJt6">
+              <property role="19SUeA" value=", containing one additional method " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p2R3" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p2R4" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p2Re" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+                </node>
+                <node concept="2NCMab" id="1Y3rEQ3p2Rj" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7oujAIft2qt" resolve="isEvaluable" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p2R5" role="19SJt6">
+              <property role="19SUeA" value=". It takes the same arguments as " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p2Rn" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p2Ro" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p2RB" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2NCMab" id="1Y3rEQ3p2RG" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:2X4$XGmegKw" resolve="evaluate" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p2Rp" role="19SJt6">
+              <property role="19SUeA" value=" and returns whether this interpreter can evaluate the given node." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1Y3rEQ3p2L1" role="1_0VJ0">
+        <property role="TrG5h" value="instantiationTime" />
+        <property role="1_0VJr" value="Instantiation Time Additions" />
+        <node concept="1_0LV8" id="1Y3rEQ3p5V3" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3p5V4" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3p5V5" role="19SJt6">
+              <property role="19SUeA" value="We provide conditional variants of " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p5Vj" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p5Vk" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p5Vp" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:2yaxsm5jIAm" resolve="CombinedInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p5Vc" role="19SJt6">
+              <property role="19SUeA" value=" and " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p5Vr" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p5Vs" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p5VA" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7F2vPZ4jnis" resolve="CombinedVisibleInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p5Vt" role="19SJt6">
+              <property role="19SUeA" value=", named " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p5VC" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p5VD" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p5VR" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:2pogikRxDor" resolve="CombinedConditionalInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p5VE" role="19SJt6">
+              <property role="19SUeA" value=" and " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p5VT" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p5VU" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p5Wc" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:2pogikRze2z" resolve="CombinedVisibleConditionalInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p5VV" role="19SJt6">
+              <property role="19SUeA" value=", respectively. They provide the same semantics, limited to Conditional Interpreters." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1Y3rEQ3p2NL" role="1_0VJ0">
+        <property role="TrG5h" value="evaluationTime" />
+        <property role="1_0VJr" value="Evaluation Time Additions" />
+        <node concept="1_0LV8" id="1Y3rEQ3p8tP" role="1_0VJ0">
+          <node concept="19SGf9" id="1Y3rEQ3p8tQ" role="1_0LWR">
+            <node concept="19SUe$" id="1Y3rEQ3p8tR" role="19SJt6">
+              <property role="19SUeA" value="We aquire our Conditional Interpreter as described in " />
+            </node>
+            <node concept="1_0GAv" id="1Y3rEQ3p8u5" role="19SJt6">
+              <ref role="1_0GAl" node="1Y3rEQ3ju8j" resolve="aquireIInterpreter" />
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p8u6" role="19SJt6">
+              <property role="19SUeA" value=" and need to cast it to the " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p8tW" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p8tX" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p8u3" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p8ur" role="19SJt6">
+              <property role="19SUeA" value=" interface. We might check the " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p8uz" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p8u$" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p8uK" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+                </node>
+                <node concept="2NCMab" id="1Y3rEQ3p8uP" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:7oujAIft2qt" resolve="isEvaluable" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p8u_" role="19SJt6">
+              <property role="19SUeA" value=" method result " />
+            </node>
+            <node concept="28N2ik" id="1Y3rEQ3p8uT" role="19SJt6">
+              <node concept="19SGf9" id="1Y3rEQ3p8uU" role="$DsGW">
+                <node concept="19SUe$" id="1Y3rEQ3p8uV" role="19SJt6">
+                  <property role="19SUeA" value="before" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p8uW" role="19SJt6">
+              <property role="19SUeA" value=" calling " />
+            </node>
+            <node concept="3z_lpY" id="1Y3rEQ3p8ve" role="19SJt6">
+              <node concept="2NCZwO" id="1Y3rEQ3p8vf" role="3z_lpZ">
+                <node concept="2NCMab" id="1Y3rEQ3p8vz" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+                </node>
+                <node concept="2NCMab" id="1Y3rEQ3p8vC" role="2NCMaf">
+                  <ref role="2NCMaa" to="2ahs:2X4$XGmegKw" resolve="evaluate" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1Y3rEQ3p8vd" role="19SJt6">
+              <property role="19SUeA" value=", as it will not be called automatically.&#10;" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1Y3rEQ3owoM" role="1_0VJ0">
+        <node concept="19SGf9" id="1Y3rEQ3owoN" role="1_0LWR">
+          <node concept="19SUe$" id="1Y3rEQ3owoO" role="19SJt6" />
         </node>
       </node>
     </node>
