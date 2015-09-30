@@ -18,6 +18,7 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -163,6 +164,9 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
@@ -1477,9 +1481,13 @@
         <node concept="3clFbS" id="T6zAqDYd3M" role="2VODD2">
           <node concept="3clFbF" id="T6zAqDYhPk" role="3cqZAp">
             <node concept="3cpWs3" id="T6zAqDYi_u" role="3clFbG">
-              <node concept="2OqwBi" id="T6zAqDYiJi" role="3uHU7w">
-                <node concept="EsrRn" id="T6zAqDYi_F" role="2Oq$k0" />
-                <node concept="2bSWHS" id="T6zAqDYj_9" role="2OqNvi" />
+              <node concept="2OqwBi" id="1Fd_UL3CbtL" role="3uHU7w">
+                <node concept="2JrnkZ" id="1Fd_UL3CbkG" role="2Oq$k0">
+                  <node concept="EsrRn" id="T6zAqDYi_F" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="1Fd_UL3Cc7v" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                </node>
               </node>
               <node concept="Xl_RD" id="T6zAqDYhPj" role="3uHU7B">
                 <property role="Xl_RC" value="comment_" />
