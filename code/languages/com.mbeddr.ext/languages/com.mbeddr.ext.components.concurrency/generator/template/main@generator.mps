@@ -173,7 +173,6 @@
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
         <reference id="1200916687663" name="labelDeclaration" index="2sdACS" />
-        <child id="1184374535435" name="contextNodeQuery" index="32ejgo" />
       </concept>
       <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
         <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
@@ -194,8 +193,6 @@
         <child id="1169570368028" name="ruleConsequence" index="1fOSGc" />
         <child id="1184616230853" name="contextNodeQuery" index="3gCiVm" />
       </concept>
-      <concept id="1184373935793" name="jetbrains.mps.lang.generator.structure.TemplateFragment_ContextNodeQuery" flags="in" index="32c0Yy" />
-      <concept id="1184374096829" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_mainContextNode" flags="nn" index="32cCaI" />
       <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
         <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
         <child id="1092060348987" name="contentNode" index="13RCb5" />
@@ -2065,6 +2062,53 @@
       <ref role="2rTdP9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
       <ref role="2rZz_L" to="v7ag:4v7hlN6x1z2" resolve="PortAdapter" />
     </node>
+    <node concept="2rT7sh" id="1obaueK2Zkc" role="2rTMjI">
+      <property role="TrG5h" value="internalRunnablesInterface" />
+      <ref role="2rTdP9" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+      <ref role="2rZz_L" to="v7ag:3TmmsQkC_PU" resolve="ClientServerInterface" />
+    </node>
+    <node concept="30QchW" id="1obaueK2p$q" role="30SoJX">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+      <node concept="3gB$ML" id="1obaueK2p$r" role="3gCiVm">
+        <node concept="3clFbS" id="1obaueK2p$s" role="2VODD2">
+          <node concept="3clFbF" id="1obaueK2p$t" role="3cqZAp">
+            <node concept="2OqwBi" id="1obaueK2qsQ" role="3clFbG">
+              <node concept="2OqwBi" id="1obaueK2p$u" role="2Oq$k0">
+                <node concept="1iwH7S" id="1obaueK2p$v" role="2Oq$k0" />
+                <node concept="2f_y7m" id="1obaueK2p$w" role="2OqNvi">
+                  <node concept="30H73N" id="1obaueK2p$x" role="2f_y78" />
+                </node>
+              </node>
+              <node concept="2Xjw5R" id="1obaueK2scA" role="2OqNvi">
+                <node concept="1xMEDy" id="1obaueK2scC" role="1xVPHs">
+                  <node concept="chp4Y" id="1obaueK2se0" role="ri$Ld">
+                    <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="1obaueK2p$y" role="30HLyM">
+        <node concept="3clFbS" id="1obaueK2p$z" role="2VODD2">
+          <node concept="3clFbF" id="1obaueK2p$$" role="3cqZAp">
+            <node concept="2OqwBi" id="1obaueK2p$_" role="3clFbG">
+              <node concept="2YIFZM" id="1obaueK2p$A" role="2Oq$k0">
+                <ref role="37wK5l" to="ndiz:7tWSY$OPJHX" resolve="getCalledRunnablesWithoutInterface" />
+                <ref role="1Pybhc" to="ndiz:7tWSY$OGLD1" resolve="ComponentConcurrencyUtil" />
+                <node concept="30H73N" id="1obaueK2p$B" role="37wK5m" />
+              </node>
+              <node concept="3GX2aA" id="1obaueK2p$C" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="1obaueK2p$D" role="1fOSGc">
+        <ref role="v9R2y" node="7tWSY$OPJ8P" resolve="weave_interfaceForInternalRunnables" />
+      </node>
+    </node>
     <node concept="30QchW" id="7tWSY$OPBxq" role="30SoJX">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="v7ag:3TmmsQkCzn9" resolve="Component" />
@@ -2094,8 +2138,8 @@
           </node>
         </node>
       </node>
-      <node concept="j$656" id="7tWSY$OPJ99" role="1fOSGc">
-        <ref role="v9R2y" node="7tWSY$OPJ8P" resolve="weave_interfaceForInternalRunnables" />
+      <node concept="j$656" id="1obaueK2$Dp" role="1fOSGc">
+        <ref role="v9R2y" node="1obaueK2sgw" resolve="weave_interfaceForInternalRunnables_provides" />
       </node>
     </node>
     <node concept="30QchW" id="7tWSY$OQpP9" role="30SoJX">
@@ -2353,22 +2397,7 @@
           </node>
         </node>
         <node concept="raruj" id="7tWSY$OQ8yV" role="lGtFl">
-          <node concept="32c0Yy" id="7tWSY$OQ_Al" role="32ejgo">
-            <node concept="3clFbS" id="7tWSY$OQ_Am" role="2VODD2">
-              <node concept="3clFbF" id="7tWSY$OQA7N" role="3cqZAp">
-                <node concept="2OqwBi" id="7tWSY$OQAgO" role="3clFbG">
-                  <node concept="32cCaI" id="7tWSY$OQGpU" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="7tWSY$OQBwh" role="2OqNvi">
-                    <node concept="1xMEDy" id="7tWSY$OQBwj" role="1xVPHs">
-                      <node concept="chp4Y" id="7tWSY$OQByf" role="ri$Ld">
-                        <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+          <ref role="2sdACS" node="1obaueK2Zkc" resolve="internalRunnablesInterface" />
         </node>
         <node concept="17Uvod" id="7tWSY$OQ8yY" role="lGtFl">
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -2402,65 +2431,6 @@
       </node>
       <node concept="2NXPZ9" id="7tWSY$OQCBn" role="N3F5h">
         <property role="TrG5h" value="empty_1439749601347_22" />
-      </node>
-      <node concept="2EWCuY" id="7tWSY$OQ8vh" role="N3F5h">
-        <property role="2OOxQR" value="true" />
-        <property role="TrG5h" value="C" />
-        <node concept="2EWHp_" id="7tWSY$OQB_Y" role="2RW2fA">
-          <property role="TrG5h" value="_i_C_InternalRunnables" />
-          <ref role="2EX0h9" node="7tWSY$OQ8xg" resolve="_I_C_InternalRunnables" />
-          <node concept="raruj" id="7tWSY$OQGpO" role="lGtFl">
-            <ref role="2sdACS" node="7tWSY$OQGVN" resolve="portForInternalRunnables" />
-          </node>
-          <node concept="17Uvod" id="7tWSY$OUfOq" role="lGtFl">
-            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-            <property role="2qtEX9" value="name" />
-            <node concept="3zFVjK" id="7tWSY$OUfOr" role="3zH0cK">
-              <node concept="3clFbS" id="7tWSY$OUfOs" role="2VODD2">
-                <node concept="3clFbF" id="7tWSY$OUfUa" role="3cqZAp">
-                  <node concept="3cpWs3" id="7tWSY$OUfUb" role="3clFbG">
-                    <node concept="Xl_RD" id="7tWSY$OUfUc" role="3uHU7w">
-                      <property role="Xl_RC" value="_InternalRunnables" />
-                    </node>
-                    <node concept="3cpWs3" id="7tWSY$OUfUd" role="3uHU7B">
-                      <node concept="Xl_RD" id="7tWSY$OUfUe" role="3uHU7B">
-                        <property role="Xl_RC" value="_i_" />
-                      </node>
-                      <node concept="2OqwBi" id="7tWSY$OUfUf" role="3uHU7w">
-                        <node concept="30H73N" id="7tWSY$OUfUg" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="7tWSY$OUfUh" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3Khz0B" id="7tWSY$OQFOh" role="2RW2fA" />
-        <node concept="2EWDwb" id="7tWSY$OQ8vx" role="2RW2fA">
-          <property role="TrG5h" value="_I_C_InternalRunnables_f" />
-          <node concept="3XIRFW" id="7tWSY$OQ8vy" role="2EWMhI">
-            <node concept="2BFjQ_" id="7tWSY$OQ8wN" role="3XIRFZ">
-              <node concept="3ZUYvv" id="7tWSY$OQBTo" role="2BFjQA">
-                <ref role="3ZUYvu" node="7tWSY$OQBTO" resolve="p" />
-              </node>
-            </node>
-          </node>
-          <node concept="26Vqp4" id="7tWSY$OQBTG" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="19RgSI" id="7tWSY$OQBTO" role="1UOdpc">
-            <property role="TrG5h" value="p" />
-            <node concept="26Vqp4" id="7tWSY$OQBTP" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
@@ -3569,6 +3539,117 @@
                 </node>
                 <node concept="3x8VRR" id="2kF1PD7v9gR" role="2OqNvi" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="1obaueK2sgw">
+    <property role="TrG5h" value="weave_interfaceForInternalRunnables_provides" />
+    <ref role="3gUMe" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+    <node concept="N3F5e" id="1obaueK2sgx" role="13RCb5">
+      <property role="TrG5h" value="M" />
+      <node concept="2EX0iR" id="1obaueK2sgy" role="N3F5h">
+        <property role="2OOxQR" value="true" />
+        <property role="TrG5h" value="_I_C_InternalRunnables" />
+        <node concept="2EX0iL" id="1obaueK2sgz" role="2EX0iN">
+          <property role="TrG5h" value="f" />
+          <node concept="2EWNYT" id="1obaueK2sg$" role="1UOdpc">
+            <property role="TrG5h" value="p" />
+            <node concept="26Vqp4" id="1obaueK2sg_" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="26Vqp4" id="1obaueK2sgV" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2NXPZ9" id="1obaueK2sh$" role="N3F5h">
+        <property role="TrG5h" value="empty_1439748654165_16" />
+      </node>
+      <node concept="2NXPZ9" id="1obaueK2sh_" role="N3F5h">
+        <property role="TrG5h" value="empty_1439749601347_22" />
+      </node>
+      <node concept="2EWCuY" id="1obaueK2shA" role="N3F5h">
+        <property role="2OOxQR" value="true" />
+        <property role="TrG5h" value="C" />
+        <node concept="2EWHp_" id="1obaueK2shB" role="2RW2fA">
+          <property role="TrG5h" value="_i_C_InternalRunnables" />
+          <ref role="2EX0h9" node="1obaueK2sgy" resolve="_I_C_InternalRunnables" />
+          <node concept="raruj" id="1obaueK2shC" role="lGtFl">
+            <ref role="2sdACS" node="7tWSY$OQGVN" resolve="portForInternalRunnables" />
+          </node>
+          <node concept="17Uvod" id="1obaueK2shD" role="lGtFl">
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <property role="2qtEX9" value="name" />
+            <node concept="3zFVjK" id="1obaueK2shE" role="3zH0cK">
+              <node concept="3clFbS" id="1obaueK2shF" role="2VODD2">
+                <node concept="3clFbF" id="1obaueK2shG" role="3cqZAp">
+                  <node concept="3cpWs3" id="1obaueK2shH" role="3clFbG">
+                    <node concept="Xl_RD" id="1obaueK2shI" role="3uHU7w">
+                      <property role="Xl_RC" value="_InternalRunnables" />
+                    </node>
+                    <node concept="3cpWs3" id="1obaueK2shJ" role="3uHU7B">
+                      <node concept="Xl_RD" id="1obaueK2shK" role="3uHU7B">
+                        <property role="Xl_RC" value="_i_" />
+                      </node>
+                      <node concept="2OqwBi" id="1obaueK2shL" role="3uHU7w">
+                        <node concept="30H73N" id="1obaueK2shM" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1obaueK2shN" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ZhdrF" id="1obaueK31Fn" role="lGtFl">
+            <property role="P3scX" value="97d24244-51db-4e2e-97fc-7bd73b1f5f40/4491876417845484930/4491876417845484932" />
+            <property role="2qtEX8" value="intf" />
+            <node concept="3$xsQk" id="1obaueK31Fo" role="3$ytzL">
+              <node concept="3clFbS" id="1obaueK31Fp" role="2VODD2">
+                <node concept="3clFbF" id="1obaueK31Ql" role="3cqZAp">
+                  <node concept="2OqwBi" id="1obaueK31Z4" role="3clFbG">
+                    <node concept="1iwH7S" id="1obaueK31Qk" role="2Oq$k0" />
+                    <node concept="1iwH70" id="1obaueK32b7" role="2OqNvi">
+                      <ref role="1iwH77" node="1obaueK2Zkc" resolve="internalRunnablesInterface" />
+                      <node concept="30H73N" id="1obaueK32ff" role="1iwH7V" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Khz0B" id="1obaueK2shO" role="2RW2fA" />
+        <node concept="2EWDwb" id="1obaueK2shP" role="2RW2fA">
+          <property role="TrG5h" value="_i_C_InternalRunnables_f" />
+          <node concept="3XIRFW" id="1obaueK2shQ" role="2EWMhI">
+            <node concept="2BFjQ_" id="1obaueK2shR" role="3XIRFZ">
+              <node concept="3ZUYvv" id="1obaueK2shS" role="2BFjQA">
+                <ref role="3ZUYvu" node="1obaueK2z$t" resolve="p" />
+              </node>
+            </node>
+          </node>
+          <node concept="2EWDw0" id="1obaueK2zzD" role="2EWDeT">
+            <ref role="1ZwSu5" node="1obaueK2shB" resolve="_i_C_InternalRunnables" />
+            <ref role="1ZwxE2" node="1obaueK2sgz" resolve="f" />
+          </node>
+          <node concept="26Vqp4" id="1obaueK2z$s" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="19RgSI" id="1obaueK2z$t" role="1UOdpc">
+            <property role="TrG5h" value="p" />
+            <node concept="26Vqp4" id="1obaueK2z$u" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
             </node>
           </node>
         </node>
