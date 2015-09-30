@@ -404,7 +404,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="1d83w5bFaqB" role="19SJt6">
-            <property role="19SUeA" value=" exists with a name, e. g. \&quot;SampleInterpreter\&quot;. When the concept instance is being build at " />
+            <property role="19SUeA" value=" exists with a name, e. g. &quot;SampleInterpreter&quot;. When the concept instance is being build at " />
           </node>
           <node concept="28N2ik" id="1d83w5bFasp" role="19SJt6">
             <node concept="19SGf9" id="1d83w5bFasq" role="$DsGW">
@@ -423,7 +423,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="1d83w5bFaul" role="19SJt6">
-            <property role="19SUeA" value=" is created; following our example it would be named \&quot;Interpreter_SampleInterpreter\&quot;. An interpreter is used by querying " />
+            <property role="19SUeA" value=" is created; following our example it would be named &quot;Interpreter_SampleInterpreter&quot;. An interpreter is used by querying " />
           </node>
           <node concept="3z_lpY" id="1d83w5bFf_c" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bFf_d" role="3z_lpZ">
@@ -823,7 +823,7 @@
                     </node>
                   </node>
                   <node concept="19SUe$" id="1d83w5bFkwd" role="19SJt6">
-                    <property role="19SUeA" value=". When the evaluator encounters an instance of " />
+                    <property role="19SUeA" value=". When the interpretation encounters an instance of " />
                   </node>
                   <node concept="1jUjqm" id="1d83w5bFkwE" role="19SJt6">
                     <node concept="19SGf9" id="1d83w5bFkwF" role="$DsGW">
@@ -843,7 +843,7 @@
                     </node>
                   </node>
                   <node concept="19SUe$" id="1d83w5bFkx9" role="19SJt6">
-                    <property role="19SUeA" value=" is triggered. When the evaluator encounters an instance of " />
+                    <property role="19SUeA" value=" is triggered. When the interpretation encounters an instance of " />
                   </node>
                   <node concept="1jUjqm" id="1d83w5bFkxI" role="19SJt6">
                     <node concept="19SGf9" id="1d83w5bFkxJ" role="$DsGW">
@@ -955,7 +955,7 @@
                     </node>
                   </node>
                   <node concept="19SUe$" id="1d83w5bFkLx" role="19SJt6">
-                    <property role="19SUeA" value="." />
+                    <property role="19SUeA" value=")." />
                   </node>
                 </node>
               </node>
@@ -997,7 +997,7 @@
           <node concept="1_0LV8" id="1d83w5bFl2J" role="1_0VJ0">
             <node concept="19SGf9" id="1d83w5bFl2K" role="1_0LWR">
               <node concept="19SUe$" id="1d83w5bFl2L" role="19SJt6">
-                <property role="19SUeA" value="We may use any appropriate BaseLanguage constructs in the evaluator implementation. \&quot;Appropriate\&quot; meaning any BaseLanguage expression in " />
+                <property role="19SUeA" value="We may use any appropriate BaseLanguage constructs in the evaluator implementation. &quot;Appropriate&quot; meaning any BaseLanguage expression in " />
               </node>
               <node concept="3z_lpY" id="1d83w5bFl2Q" role="19SJt6">
                 <node concept="2NCZwO" id="1d83w5bFl2R" role="3z_lpZ">
@@ -1058,7 +1058,7 @@
                   <node concept="1jUjqm" id="1d83w5bFlMg" role="19SJt6">
                     <node concept="19SGf9" id="1d83w5bFlMh" role="$DsGW">
                       <node concept="19SUe$" id="1d83w5bFlMi" role="19SJt6">
-                        <property role="19SUeA" value="#(\u00ABexpression\u00BB)" />
+                        <property role="19SUeA" value="#(«expression»)" />
                       </node>
                     </node>
                   </node>
@@ -1118,7 +1118,7 @@
                   <node concept="1jUjqm" id="1d83w5bFm0P" role="19SJt6">
                     <node concept="19SGf9" id="1d83w5bFm0Q" role="$DsGW">
                       <node concept="19SUe$" id="1d83w5bFm0R" role="19SJt6">
-                        <property role="19SUeA" value="#-&gt;\u00ABfunctionRoleName\u00BB(\u00ABactualParametersRoleName\u00BB =&gt; \u00ABformalParametersRoleName\u00BB)" />
+                        <property role="19SUeA" value="#-&gt;«functionRoleName»(«actualParametersRoleName» =&gt; «formalParametersRoleName»)" />
                       </node>
                     </node>
                   </node>
@@ -1466,7 +1466,7 @@
                 <node concept="1jUjqm" id="1d83w5bFpcI" role="19SJt6">
                   <node concept="19SGf9" id="1d83w5bFpcJ" role="$DsGW">
                     <node concept="19SUe$" id="1d83w5bFpcK" role="19SJt6">
-                      <property role="19SUeA" value="(node&lt;&gt;-&gt;Object)" />
+                      <property role="19SUeA" value="(node&lt;&gt; -&gt; Object)" />
                     </node>
                   </node>
                 </node>
@@ -1496,7 +1496,7 @@
                 <node concept="1jUjqm" id="1d83w5bFpvX" role="19SJt6">
                   <node concept="19SGf9" id="1d83w5bFpvY" role="$DsGW">
                     <node concept="19SUe$" id="1d83w5bFpvZ" role="19SJt6">
-                      <property role="19SUeA" value="env.push(\u00ABanchorNode\u00BB, \u00ABinitialEntries\u00BB)" />
+                      <property role="19SUeA" value="env.push(«anchorNode», «initialEntries»)" />
                     </node>
                   </node>
                 </node>
@@ -1506,7 +1506,7 @@
                 <node concept="1jUjqm" id="1d83w5bFpCH" role="19SJt6">
                   <node concept="19SGf9" id="1d83w5bFpCI" role="$DsGW">
                     <node concept="19SUe$" id="1d83w5bFpCJ" role="19SJt6">
-                      <property role="19SUeA" value="env.pop(\u00ABanchorNode\u00BB)" />
+                      <property role="19SUeA" value="env.pop(«anchorNode»)" />
                     </node>
                   </node>
                 </node>
