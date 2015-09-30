@@ -2893,7 +2893,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.itemis.mps.mouselistener.runtime" depends="java.compile.de.slisson.mps.reflection.runtime, fetchDependencies">
+  <target name="java.compile.de.itemis.mps.mouselistener.runtime" depends="java.compile.de.slisson.mps.hacks.editor, java.compile.de.slisson.mps.reflection.runtime, fetchDependencies">
     <mkdir dir="${diagram.home}/solutions/de.itemis.mps.mouselistener.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.itemis.mps.mouselistener.runtime" />
     <javac destdir="${build.tmp}/java/out/de.itemis.mps.mouselistener.runtime" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
@@ -2902,7 +2902,6 @@
         <path location="${diagram.home}/solutions/de.itemis.mps.mouselistener.runtime/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/de.slisson.mps.reflection.runtime" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -2913,6 +2912,8 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.hacks.editor" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.reflection.runtime" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
