@@ -15,6 +15,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -153,6 +162,10 @@
     <property role="TrG5h" value="PatternBuilderList" />
     <property role="34LRSv" value="[list]" />
     <ref role="1TJDcQ" to="tp3r:76efOMRCHWM" resolve="NodeBuilderList" />
+    <node concept="1TJgyi" id="4oNjwzxoYgs" role="1TKVEl">
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="4oNjwzxp3wx" resolve="PatternBuilderListKind" />
+    </node>
     <node concept="PrWs8" id="53_zXRSPi6" role="PzmwI">
       <ref role="PrY4T" node="53_zXRSI6_" resolve="IPatternContext" />
     </node>
@@ -194,6 +207,20 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="4oNjwzxp3wx">
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="PatternBuilderListKind" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="4oNjwzxp3wy" role="M5hS2">
+      <property role="1uS6qo" value="EXACT" />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="4oNjwzxp3wz" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="CONTAINS" />
     </node>
   </node>
 </model>

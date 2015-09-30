@@ -12,6 +12,7 @@
     <import index="tp3r" ref="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="xpog" ref="r:fe8ac1c2-4441-43ed-8c6b-75093fa00e66(com.mbeddr.mpsutil.compare.pattern.runtime.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -30,7 +31,6 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -65,6 +65,9 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -340,25 +343,25 @@
     <property role="TrG5h" value="typeof_Pattern" />
     <property role="3GE5qa" value="pattern" />
     <node concept="3clFbS" id="53_zXRUvSZ" role="18ibNy">
-      <node concept="3cpWs8" id="53_zXRUGIk" role="3cqZAp">
-        <node concept="3cpWsn" id="53_zXRUGIl" role="3cpWs9">
+      <node concept="3cpWs8" id="4AFyx2s7lSj" role="3cqZAp">
+        <node concept="3cpWsn" id="4AFyx2s7lSk" role="3cpWs9">
           <property role="TrG5h" value="concept" />
-          <node concept="3Tqbb2" id="53_zXRUGIe" role="1tU5fm">
-            <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+          <node concept="3Tqbb2" id="4AFyx2s7lSd" role="1tU5fm">
+            <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
           </node>
-          <node concept="2OqwBi" id="53_zXRUGIm" role="33vP2m">
-            <node concept="1PxgMI" id="53_zXRUGIn" role="2Oq$k0">
+          <node concept="2OqwBi" id="4AFyx2s7lSl" role="33vP2m">
+            <node concept="1PxgMI" id="4AFyx2s7lSm" role="2Oq$k0">
               <ref role="1PxNhF" to="iqxq:35E98Eq3U8I" resolve="PatternBuilderNode" />
-              <node concept="2OqwBi" id="53_zXRUGIo" role="1PxMeX">
-                <node concept="1YBJjd" id="53_zXRUGIp" role="2Oq$k0">
+              <node concept="2OqwBi" id="4AFyx2s7lSn" role="1PxMeX">
+                <node concept="1YBJjd" id="4AFyx2s7lSo" role="2Oq$k0">
                   <ref role="1YBMHb" node="53_zXRUvT1" resolve="pattern" />
                 </node>
-                <node concept="3TrEf2" id="53_zXRUGIq" role="2OqNvi">
+                <node concept="3TrEf2" id="4AFyx2s7lSp" role="2OqNvi">
                   <ref role="3Tt5mk" to="tp3r:4IP40Bi2$Eu" />
                 </node>
               </node>
             </node>
-            <node concept="3TrEf2" id="53_zXRVlQi" role="2OqNvi">
+            <node concept="3TrEf2" id="4AFyx2s7lSq" role="2OqNvi">
               <ref role="3Tt5mk" to="iqxq:53_zXRVaZm" />
             </node>
           </node>
@@ -372,8 +375,8 @@
               <node concept="2pIpSj" id="53_zXRUGQw" role="2pJxcM">
                 <ref role="2pIpSl" to="iqxq:53_zXRThzA" />
                 <node concept="36biLy" id="53_zXRUGQU" role="2pJxcZ">
-                  <node concept="37vLTw" id="53_zXRUGR9" role="36biLW">
-                    <ref role="3cqZAo" node="53_zXRUGIl" resolve="concept" />
+                  <node concept="37vLTw" id="4AFyx2s7lYm" role="36biLW">
+                    <ref role="3cqZAo" node="4AFyx2s7lSk" resolve="concept" />
                   </node>
                 </node>
               </node>
@@ -632,7 +635,9 @@
       <node concept="1Z5TYs" id="1xH_Y2TxH9m" role="3cqZAp">
         <node concept="mw_s8" id="1xH_Y2TxH9M" role="1ZfhKB">
           <node concept="2c44tf" id="1xH_Y2TxHbD" role="mwGJk">
-            <node concept="10P_77" id="1xH_Y2TxHc2" role="2c44tc" />
+            <node concept="3uibUv" id="4AFyx2s3JNd" role="2c44tc">
+              <ref role="3uigEE" to="xpog:4AFyx2s3BGL" resolve="MatchResult" />
+            </node>
           </node>
         </node>
         <node concept="mw_s8" id="1xH_Y2TxH9p" role="1ZfhK$">
@@ -647,6 +652,24 @@
     <node concept="1YaCAy" id="1xH_Y2TxH3o" role="1YuTPh">
       <property role="TrG5h" value="operation" />
       <ref role="1YaFvo" to="iqxq:1xH_Y2TxGO7" resolve="MatchOperation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4oNjwzxpyT7">
+    <property role="TrG5h" value="typeof_PatternBuilderList" />
+    <property role="3GE5qa" value="pattern" />
+    <node concept="3clFbS" id="4oNjwzxpyT8" role="18ibNy" />
+    <node concept="1YaCAy" id="4oNjwzxpyTs" role="1YuTPh">
+      <property role="TrG5h" value="list" />
+      <ref role="1YaFvo" to="iqxq:53_zXRSOXY" resolve="PatternBuilderList" />
+    </node>
+    <node concept="bXqS6" id="4oNjwzxpyTt" role="bX4a1">
+      <node concept="3clFbS" id="4oNjwzxpyTu" role="2VODD2">
+        <node concept="3cpWs6" id="4oNjwzxpyTv" role="3cqZAp">
+          <node concept="3clFbT" id="4oNjwzxpyTw" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

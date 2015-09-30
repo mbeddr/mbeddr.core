@@ -2651,6 +2651,12 @@
             <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4oNjwzxqi8b" role="3bR37C">
+          <node concept="3bR9La" id="4oNjwzxqi8c" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43K6" role="2G$12L">
         <property role="BnDLt" value="true" />
