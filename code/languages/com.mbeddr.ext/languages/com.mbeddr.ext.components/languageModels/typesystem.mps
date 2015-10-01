@@ -1091,6 +1091,51 @@
                         <node concept="3clFbS" id="71UKpntoZZ9" role="2LFqv$">
                           <node concept="3clFbJ" id="LUz4xArbFW" role="3cqZAp">
                             <node concept="3clFbS" id="LUz4xArbFX" role="3clFbx">
+                              <node concept="3clFbJ" id="C7lj4lZwsw" role="3cqZAp">
+                                <node concept="3clFbS" id="C7lj4lZwsy" role="3clFbx">
+                                  <node concept="2MkqsV" id="C7lj4lZyYc" role="3cqZAp">
+                                    <node concept="2GrUjf" id="C7lj4lZEjt" role="2OEOjV">
+                                      <ref role="2Gs0qQ" node="71UKpntoZZ7" resolve="t" />
+                                    </node>
+                                    <node concept="3cpWs3" id="C7lj4lZyYA" role="2MkJ7o">
+                                      <node concept="Xl_RD" id="C7lj4lZyYB" role="3uHU7w">
+                                        <property role="Xl_RC" value=" can only have one implementation in this component" />
+                                      </node>
+                                      <node concept="3cpWs3" id="C7lj4lZyYC" role="3uHU7B">
+                                        <node concept="2OqwBi" id="C7lj4lZyYD" role="3uHU7w">
+                                          <node concept="2GrUjf" id="C7lj4lZyYE" role="2Oq$k0">
+                                            <ref role="2Gs0qQ" node="71UKpntoZUd" resolve="port" />
+                                          </node>
+                                          <node concept="3TrcHB" id="C7lj4lZyYF" role="2OqNvi">
+                                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                          </node>
+                                        </node>
+                                        <node concept="3cpWs3" id="C7lj4lZyYG" role="3uHU7B">
+                                          <node concept="3cpWs3" id="C7lj4lZyYH" role="3uHU7B">
+                                            <node concept="Xl_RD" id="C7lj4lZyYI" role="3uHU7B">
+                                              <property role="Xl_RC" value="operation " />
+                                            </node>
+                                            <node concept="2OqwBi" id="C7lj4lZyYJ" role="3uHU7w">
+                                              <node concept="2GrUjf" id="C7lj4lZyYK" role="2Oq$k0">
+                                                <ref role="2Gs0qQ" node="71UKpntoZXH" resolve="op" />
+                                              </node>
+                                              <node concept="3TrcHB" id="C7lj4lZyYL" role="2OqNvi">
+                                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="C7lj4lZyYM" role="3uHU7w">
+                                            <property role="Xl_RC" value=" for port " />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="C7lj4lZw$2" role="3clFbw">
+                                  <ref role="3cqZAo" node="71UKpntoZZh" resolve="found" />
+                                </node>
+                              </node>
                               <node concept="3clFbF" id="71UKpntp004" role="3cqZAp">
                                 <node concept="37vLTI" id="71UKpntp006" role="3clFbG">
                                   <node concept="3clFbT" id="71UKpntp009" role="37vLTx">
@@ -1101,7 +1146,6 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3zACq4" id="71UKpntp00b" role="3cqZAp" />
                             </node>
                             <node concept="1Wc70l" id="1JaQUuHwKwp" role="3clFbw">
                               <node concept="3clFbC" id="LUz4xArbGx" role="3uHU7w">
