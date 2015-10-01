@@ -13,14 +13,9 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
-      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
-        <reference id="1169127628841" name="intfc" index="PrY4T" />
-      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
-        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -43,25 +38,24 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="children" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6TuvEpVGx4g" resolve="ChildConcept" />
+      <ref role="20lvS9" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TuvEpVGx1e">
     <property role="TrG5h" value="DocumentedChild1" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6TuvEpVGx4h" role="PzmwI">
-      <ref role="PrY4T" node="6TuvEpVGx4g" resolve="ChildConcept" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="6TuvEpVGx4g">
-    <property role="TrG5h" value="ChildConcept" />
+    <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
   </node>
   <node concept="1TIwiD" id="6TuvEpVGx7v">
     <property role="TrG5h" value="DocumentedChild2" />
+    <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
+  </node>
+  <node concept="1TIwiD" id="4jXS_uRrfu2">
+    <property role="TrG5h" value="BaseChildConcept" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6TuvEpVGx7w" role="PzmwI">
-      <ref role="PrY4T" node="6TuvEpVGx4g" resolve="ChildConcept" />
-    </node>
+  </node>
+  <node concept="1TIwiD" id="4jXS_uRrhkX">
+    <property role="TrG5h" value="AnotherChild" />
+    <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
   </node>
 </model>
 
