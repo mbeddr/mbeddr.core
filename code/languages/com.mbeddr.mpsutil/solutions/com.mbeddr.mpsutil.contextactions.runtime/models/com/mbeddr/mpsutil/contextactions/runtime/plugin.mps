@@ -469,22 +469,6 @@
     </node>
     <node concept="2xpIHi" id="5lGdLibXP9H" role="uR5cp">
       <node concept="3clFbS" id="5lGdLibXP9I" role="2VODD2">
-        <node concept="3clFbF" id="5tr7YH$U9kO" role="3cqZAp">
-          <node concept="37vLTI" id="5tr7YH$U9Il" role="3clFbG">
-            <node concept="2ShNRf" id="5tr7YH$U9Wn" role="37vLTx">
-              <node concept="1pGfFk" id="5lGdLibXUq1" role="2ShVmc">
-                <ref role="37wK5l" to="1ne1:5lGdLibXS2F" resolve="ToolComponent" />
-                <node concept="2xqhHp" id="5lGdLibXUqr" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="5tr7YH$U9kI" role="37vLTJ">
-              <node concept="2WthIp" id="5tr7YH$U9kL" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="5tr7YH$U9kN" role="2OqNvi">
-                <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="QmW6bqNGmM" role="3cqZAp">
           <node concept="3cpWsn" id="QmW6bqNGmN" role="3cpWs9">
             <property role="TrG5h" value="tool" />
@@ -496,6 +480,25 @@
               <node concept="2xqhHp" id="QmW6bqNGmP" role="2Oq$k0" />
               <node concept="LR4U6" id="QmW6bqNGmQ" role="2OqNvi">
                 <ref role="LR4U5" node="5tr7YH$U35C" resolve="ContextActionsTool" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5tr7YH$U9kO" role="3cqZAp">
+          <node concept="37vLTI" id="5tr7YH$U9Il" role="3clFbG">
+            <node concept="2ShNRf" id="5tr7YH$U9Wn" role="37vLTx">
+              <node concept="1pGfFk" id="5lGdLibXUq1" role="2ShVmc">
+                <ref role="37wK5l" to="1ne1:5lGdLibXS2F" resolve="ToolComponent" />
+                <node concept="2xqhHp" id="5lGdLibXUqr" role="37wK5m" />
+                <node concept="37vLTw" id="4kYnSKvcOAY" role="37wK5m">
+                  <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5tr7YH$U9kI" role="37vLTJ">
+              <node concept="2WthIp" id="5tr7YH$U9kL" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="5tr7YH$U9kN" role="2OqNvi">
+                <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
               </node>
             </node>
           </node>
