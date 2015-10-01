@@ -218,5 +218,25 @@
       </node>
     </node>
   </node>
+  <node concept="1_1swa" id="4jXS_uRroBV">
+    <property role="yApLE" value="1" />
+    <property role="3GE5qa" value="document" />
+    <property role="TrG5h" value="AnotherDoc" />
+    <ref role="G9hjw" node="UK_oBpA4O0" resolve="DocumentConfig" />
+    <node concept="1_0VNX" id="4jXS_uRroBW" role="1_0VJ0">
+      <property role="TrG5h" value="Section" />
+      <property role="1_0VJr" value="AnotherChild" />
+      <node concept="1_0LV8" id="4jXS_uRroBY" role="1_0VJ0">
+        <node concept="19SGf9" id="4jXS_uRroBZ" role="1_0LWR">
+          <node concept="19SUe$" id="4jXS_uRroC0" role="19SJt6">
+            <property role="19SUeA" value="Another document section" />
+          </node>
+        </node>
+      </node>
+      <node concept="3n9NSn" id="4jXS_uRroC5" role="lGtFl">
+        <ref role="3nadW_" to="hauh:4jXS_uRrhkX" resolve="AnotherChild" />
+      </node>
+    </node>
+  </node>
 </model>
 
