@@ -15,10 +15,6 @@
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
-      <concept id="8077410651477969217" name="com.mbeddr.doc.aspect.structure.ConceptDocumentation" flags="ng" index="1UlrdK">
-        <reference id="8077410651477974993" name="concept" index="1Ulqnw" />
-        <child id="8077410651477975083" name="text" index="1UlpCq" />
-      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -78,30 +74,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1UlrdK" id="tBHOvWffvU">
-    <ref role="1Ulqnw" to="hauh:tBHOvWfftF" resolve="SampleDocumentedConcept" />
-    <node concept="19SGf9" id="tBHOvWffvV" role="1UlpCq">
-      <node concept="19SUe$" id="tBHOvWffvW" role="19SJt6">
-        <property role="19SUeA" value="Documentation Text for SampleDocumentedConcept  " />
-      </node>
-    </node>
-  </node>
-  <node concept="1UlrdK" id="6TuvEpVGx1f">
-    <ref role="1Ulqnw" to="hauh:6TuvEpVGx1e" resolve="DocumentedChild1" />
-    <node concept="19SGf9" id="6TuvEpVGx1g" role="1UlpCq">
-      <node concept="19SUe$" id="6TuvEpVGx1h" role="19SJt6">
-        <property role="19SUeA" value="Documented Child 1 documentation:&#10;- properties:&#10;- children:" />
-      </node>
-    </node>
-  </node>
-  <node concept="1UlrdK" id="6TuvEpVGx7s">
-    <ref role="1Ulqnw" to="hauh:6TuvEpVGx7v" resolve="DocumentedChild2" />
-    <node concept="19SGf9" id="6TuvEpVGx7t" role="1UlpCq">
-      <node concept="19SUe$" id="6TuvEpVGx7u" role="19SJt6">
-        <property role="19SUeA" value="Documentation for DocumentedChild2" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="UK_oBpA4NZ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="SampleDocument" />
@@ -152,7 +124,47 @@
           </node>
         </node>
       </node>
-      <node concept="1_1sxE" id="UK_oBpCxhd" role="1_0VJ0">
+      <node concept="1_1sxE" id="4jXS_uRrou6" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_1sxE" id="4jXS_uRrouR" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="4jXS_uRrcFF" role="1_0VJ0">
+        <property role="TrG5h" value="BaseChild" />
+        <property role="1_0VJr" value="BaseDocumentedChild" />
+        <node concept="3n9NSn" id="4jXS_uRrcGh" role="lGtFl">
+          <ref role="3nadW_" to="hauh:4jXS_uRrfu2" resolve="BaseChildConcept" />
+        </node>
+        <node concept="1_0LV8" id="4jXS_uRrfC6" role="1_0VJ0">
+          <node concept="19SGf9" id="4jXS_uRrfC7" role="1_0LWR">
+            <node concept="19SUe$" id="4jXS_uRrfC8" role="19SJt6">
+              <property role="19SUeA" value="Documentation for the base" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="4jXS_uRrfCd" role="1_0VJ0">
+          <node concept="19SGf9" id="4jXS_uRrfCe" role="1_0LWR">
+            <node concept="19SUe$" id="4jXS_uRrfCf" role="19SJt6">
+              <property role="19SUeA" value="See also: " />
+            </node>
+            <node concept="1_0GAv" id="4jXS_uRrfCm" role="19SJt6">
+              <ref role="1_0GAl" node="UK_oBpA4O5" resolve="ConceptDoc1" />
+            </node>
+            <node concept="19SUe$" id="4jXS_uRrfCn" role="19SJt6">
+              <property role="19SUeA" value=", " />
+            </node>
+            <node concept="1_0GAv" id="4jXS_uRrfCr" role="19SJt6">
+              <ref role="1_0GAl" node="UK_oBpCt_h" resolve="ConceptDoc2" />
+            </node>
+            <node concept="19SUe$" id="4jXS_uRrfCs" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="4jXS_uRq4FD" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_1sxE" id="4jXS_uRrovD" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="1_0VNX" id="UK_oBpCt_h" role="1_0VJ0">
