@@ -11,6 +11,8 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -43,11 +45,15 @@
     <property role="TrG5h" value="ActionsProfile" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5ReuVUpcb8U" role="1TKVEl">
+      <property role="TrG5h" value="isRemoveActionsMode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5FJiYrlIpAq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="removeActions" />
+      <property role="20kJfa" value="actions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5FJiYrlIpAp" resolve="RemoveAction" />
+      <ref role="20lvS9" node="5ReuVUpc9zA" resolve="ActionBase" />
     </node>
     <node concept="PrWs8" id="5FJiYrlIp_E" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -56,11 +62,26 @@
   <node concept="1TIwiD" id="5FJiYrlIpAp">
     <property role="TrG5h" value="RemoveAction" />
     <property role="34LRSv" value="removeAction" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5ReuVUpc9zA" resolve="ActionBase" />
     <node concept="1TJgyi" id="5FJiYrlIpAw" role="1TKVEl">
       <property role="TrG5h" value="actionId" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5ReuVUpc9z_">
+    <property role="TrG5h" value="AllowAction" />
+    <property role="34LRSv" value="allowAction" />
+    <ref role="1TJDcQ" node="5ReuVUpc9zA" resolve="ActionBase" />
+    <node concept="1TJgyi" id="5ReuVUpc9R6" role="1TKVEl">
+      <property role="TrG5h" value="actionId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ReuVUpc9zA">
+    <property role="TrG5h" value="ActionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
