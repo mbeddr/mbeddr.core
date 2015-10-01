@@ -115,21 +115,30 @@
     <property name="run-tests.task" value="check" />      
 
     <!-- validations -->
-    <fail unless="mps.home">mps.home must be set in your build.properties</fail>
-    <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
-    <fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
-      <condition>
-        <not>
-          <resourcecount count="1">
-            <dirset dir="${mps.home}" >
-             <include name="${plugins.folder.name}"/>
-         </dirset> 
-     </resourcecount>
- </not>
-</condition>
-</fail> 
+<target name="check-mps.home" >
+	<fail unless="mps.home">mps.home must be set in your build.properties</fail>
+</target>
 
-<target name="clean-and-build" >
+<target name="check-mps" >
+    <fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
+        <condition>
+            <not>
+                <resourcecount count="1">
+                    <dirset dir="${mps.home}" >
+                        <include name="${plugins.folder.name}"/>
+                    </dirset> 
+                </resourcecount>
+            </not>
+        </condition>
+    </fail>
+</target>
+
+<target name="check-mbeddr.github.core.home" >
+	<fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
+</target>
+
+
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="clean-and-build" >
     <antcall target="build-allScripts" />
     <antcall target="clean" />
     <antcall target="build-languages" />	
@@ -212,11 +221,11 @@
 
 </target>    
 
-<target name="build-allScripts">
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="build-allScripts">
   <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
 </target>
 
-<target name="build-sl-all">
+<target name="build-sl-all" depends="check-mps,check-mps.home">
   <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${generate-code.task}" />
   <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${build-plugin.task}" />
   <delete dir="${mps-sl-all.build-tmp}" />
@@ -232,13 +241,13 @@
 </copy>
 </target>
 
-<target name="build-platform">
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="build-platform">
   <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
   <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />   
 </target>  
 
 
-<target name="build-mbeddr">
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="build-mbeddr">
   <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
   <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${build-plugin.task}" />	  
 </target>  
@@ -249,15 +258,17 @@
  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
 </target>	
 
-<target name="build-languages" >
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="build-languages" >
  <antcall target="build-sl-all" />
+ <antcall target="build-platform-and-mbeddr" />
+</target> 
+
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="build-platform-and-mbeddr" >
  <antcall target="build-platform" />
  <antcall target="build-mbeddr" />
- <antcall target="build-debugger-testing" />
-</target>	 
+</target>
 
-
-<target name="build-and-run-tests" >
+<target depends="check-mbeddr.github.core.home,check-mps,check-mps.home" name="build-and-run-tests" >
  <antcall target="test-platform" /> 
  <antcall target="test-debugger" />
  <antcall target="test-core" /> 
