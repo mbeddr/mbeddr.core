@@ -6849,23 +6849,15 @@
         </node>
         <node concept="9aQIb" id="4LXxPGcsXyB" role="9aQIa">
           <node concept="3clFbS" id="4LXxPGcsXyC" role="9aQI4">
-            <node concept="3cpWs8" id="4LXxPGcsWTA" role="3cqZAp">
-              <node concept="3cpWsn" id="4LXxPGcsWTB" role="3cpWs9">
-                <property role="TrG5h" value="ancestor" />
-                <node concept="3Tqbb2" id="4LXxPGcsWTC" role="1tU5fm">
-                  <ref role="ehGHo" to="c4fa:6o2p2Z0DOCt" resolve="IAllowsIncompleteTypes" />
-                </node>
-                <node concept="2OqwBi" id="4LXxPGcsWTD" role="33vP2m">
-                  <node concept="1YBJjd" id="4LXxPGcsYj4" role="2Oq$k0">
+            <node concept="3cpWs8" id="3LtIbWJHE0Z" role="3cqZAp">
+              <node concept="3cpWsn" id="3LtIbWJHE10" role="3cpWs9">
+                <property role="TrG5h" value="parent" />
+                <node concept="3Tqbb2" id="3LtIbWJHE0W" role="1tU5fm" />
+                <node concept="2OqwBi" id="3LtIbWJHE11" role="33vP2m">
+                  <node concept="1YBJjd" id="3LtIbWJHE12" role="2Oq$k0">
                     <ref role="1YBMHb" node="2UQ055YKqXo" resolve="sat" />
                   </node>
-                  <node concept="2Xjw5R" id="4LXxPGcsWTF" role="2OqNvi">
-                    <node concept="1xMEDy" id="4LXxPGcsWTG" role="1xVPHs">
-                      <node concept="chp4Y" id="4LXxPGcsWTH" role="ri$Ld">
-                        <ref role="cht4Q" to="c4fa:6o2p2Z0DOCt" resolve="IAllowsIncompleteTypes" />
-                      </node>
-                    </node>
-                  </node>
+                  <node concept="1mfA1w" id="3LtIbWJHE13" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -6881,19 +6873,28 @@
                 </node>
               </node>
               <node concept="22lmx$" id="4LXxPGcsWTN" role="3clFbw">
-                <node concept="2OqwBi" id="4LXxPGcsWTO" role="3uHU7B">
-                  <node concept="3cpWsa" id="4LXxPGcsWTP" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4LXxPGcsWTB" resolve="ancestor" />
+                <node concept="3fqX7Q" id="3LtIbWJHFIy" role="3uHU7B">
+                  <node concept="2OqwBi" id="3LtIbWJHFI$" role="3fr31v">
+                    <node concept="37vLTw" id="3LtIbWJHFI_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3LtIbWJHE10" resolve="parent" />
+                    </node>
+                    <node concept="1mIQ4w" id="3LtIbWJHFIA" role="2OqNvi">
+                      <node concept="chp4Y" id="3LtIbWJHFIB" role="cj9EA">
+                        <ref role="cht4Q" to="c4fa:6o2p2Z0DOCt" resolve="IAllowsIncompleteTypes" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3w_OXm" id="4LXxPGcsWTQ" role="2OqNvi" />
                 </node>
                 <node concept="3fqX7Q" id="4LXxPGcsWTR" role="3uHU7w">
                   <node concept="2OqwBi" id="4LXxPGcsWTS" role="3fr31v">
                     <node concept="2qgKlT" id="4LXxPGcsWTT" role="2OqNvi">
                       <ref role="37wK5l" to="rj8d:3_EX3WibiOp" resolve="isIncompleteTypeAllowed" />
                     </node>
-                    <node concept="3cpWsa" id="4LXxPGcsWTU" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4LXxPGcsWTB" resolve="ancestor" />
+                    <node concept="1PxgMI" id="3LtIbWJHG3A" role="2Oq$k0">
+                      <ref role="1PxNhF" to="c4fa:6o2p2Z0DOCt" resolve="IAllowsIncompleteTypes" />
+                      <node concept="37vLTw" id="3LtIbWJHG06" role="1PxMeX">
+                        <ref role="3cqZAo" node="3LtIbWJHE10" resolve="parent" />
+                      </node>
                     </node>
                   </node>
                 </node>
