@@ -9,7 +9,6 @@
     <import index="fac3" ref="r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
-    <import index="7k10" ref="r:6de0fec9-28ce-4092-a00d-c37c6ae81d03(com.mbeddr.mpsutil.javainterpreter.plugin)" />
     <import index="5ay" ref="r:fef3c8cb-43c1-4a85-9226-c4ad6bb9ce39(com.mbeddr.mpsutil.javainterpreter.test.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
@@ -37,6 +36,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -110,13 +110,16 @@
       </concept>
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
-        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
-      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -125,6 +128,14 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
     </language>
   </registry>
   <node concept="13h7C7" id="1V2ngNhBmix">
@@ -336,79 +347,45 @@
       <ref role="13i0hy" to="fac3:65E6xpGShbD" resolve="getInterpreter" />
       <node concept="3Tmbuc" id="5rU7RIw_fDY" role="1B3o_S" />
       <node concept="3clFbS" id="5rU7RIw_fE1" role="3clF47">
-        <node concept="3cpWs6" id="65E6xpGSoKE" role="3cqZAp">
-          <node concept="2ShNRf" id="M6L5HuGCyx" role="3cqZAk">
-            <node concept="1pGfFk" id="M6L5HuGCG3" role="2ShVmc">
+        <node concept="3cpWs6" id="2pogikRzIed" role="3cqZAp">
+          <node concept="2ShNRf" id="2pogikRzImK" role="3cqZAk">
+            <node concept="1pGfFk" id="2pogikRzNEc" role="2ShVmc">
               <ref role="37wK5l" to="2ahs:2yaxsm5jILI" resolve="CombinedInterpreter" />
-              <node concept="2YIFZM" id="M6L5HuGD9O" role="37wK5m">
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <node concept="3B5_sB" id="M6L5HuGDcX" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:M6L5Huv01K" resolve="JavaInterpreterBase" />
+              <node concept="2OqwBi" id="40eYuE1yzVC" role="37wK5m">
+                <node concept="2OqwBi" id="40eYuE1yyhh" role="2Oq$k0">
+                  <node concept="2OqwBi" id="15Er3QytrWK" role="2Oq$k0">
+                    <node concept="2YIFZM" id="15Er3QytrWL" role="2Oq$k0">
+                      <ref role="1Pybhc" to="2ahs:6t6gMvcKSR1" resolve="CachedInterpreterFinder" />
+                      <ref role="37wK5l" to="2ahs:6t6gMvcMFOM" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="15Er3QytrWM" role="2OqNvi">
+                      <ref role="37wK5l" to="2ahs:6t6gMvcMGiv" resolve="findInterpretersForCategory" />
+                      <node concept="Xl_RD" id="7xtsKqWlq7Z" role="37wK5m">
+                        <property role="Xl_RC" value="java" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3$u5V9" id="40eYuE1yyCe" role="2OqNvi">
+                    <node concept="1bVj0M" id="40eYuE1yyCg" role="23t8la">
+                      <node concept="3clFbS" id="40eYuE1yyCh" role="1bW5cS">
+                        <node concept="3clFbF" id="40eYuE1yz45" role="3cqZAp">
+                          <node concept="2YIFZM" id="7FtvAFycdiI" role="3clFbG">
+                            <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                            <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                            <node concept="37vLTw" id="7FtvAFycdiJ" role="37wK5m">
+                              <ref role="3cqZAo" node="40eYuE1yyCi" resolve="it" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="40eYuE1yyCi" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="40eYuE1yyCj" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-              </node>
-              <node concept="2YIFZM" id="M6L5HuGDtZ" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="M6L5HuGDu0" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:M6L5Hu$HQS" resolve="JavaInterpreterBoolean" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5AiVk6HCF9j" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="5AiVk6HCF9k" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:5AiVk6HAOKr" resolve="JavaInterpreterInt" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5AiVk6HCFa1" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="5AiVk6HCFa2" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:M6L5HuChwW" resolve="JavaInterpreterLong" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="M6L5HuGDxw" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="M6L5HuGDxx" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:5AiVk6HE7h1" resolve="JavaInterpreterFloat" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5AiVk6HEYBt" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="5AiVk6HEYBu" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:M6L5HuEXaW" resolve="JavaInterpreterDouble" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="M6L5HuGDxE" role="37wK5m">
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <node concept="3B5_sB" id="M6L5HuGDxF" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:M6L5HuG9nP" resolve="JavaInterpreterString" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5rU7RIwA6JX" role="37wK5m">
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <node concept="3B5_sB" id="5rU7RIwA6JY" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:5rU7RIw$LgU" resolve="JavaInterpreterVariable" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5rU7RIwA$9Y" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="5rU7RIwA$9Z" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:5rU7RIwAjcV" resolve="JavaInterpreterStatement" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5rU7RIwA$i$" role="37wK5m">
-                <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                <node concept="3B5_sB" id="5rU7RIwA$i_" role="37wK5m">
-                  <ref role="3B5MYn" to="7k10:5rU7RIwApG8" resolve="JavaInterpreterMethod" />
-                </node>
+                <node concept="3_kTaI" id="40eYuE1y$Y7" role="2OqNvi" />
               </node>
             </node>
           </node>
