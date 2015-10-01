@@ -1,6 +1,9 @@
   <project name="mbeddr download and deploy plugins" default="clean-and-build" >
+	<!-- import properties -->
     <property file="build.properties"/>  
-      <!-- validations -->
+
+    <!-- validations -->
+    <property name="plugins.folder.name" value="plugins"/>
   	<fail unless="mps.home">mps.home must be set in your build.properties</fail>
   	<fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
   	<fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
@@ -19,7 +22,6 @@
     <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/TeamcityMakeTests.jar" />
 
     <!-- url/mps properties -->
-    <property name="plugins.folder.name" value="plugins"/>
     <property name="latest-build" value="status:SUCCESS"/> 
     <property name="branch.spawner" value="branch:master"/>
     <property name="server.url" value="http://build.mbeddr.com"/>   
