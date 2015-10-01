@@ -85,7 +85,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -95,6 +97,9 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -219,8 +224,8 @@
           <property role="2V$B1Q" value="com.mbeddr.core.modules" />
         </node>
       </node>
-      <node concept="2OqwBi" id="4mMeETlwLSU" role="gKNLk">
-        <node concept="2OqwBi" id="4mMeETlwLfB" role="2Oq$k0">
+      <node concept="2EnYce" id="4kYnSKv963X" role="gKNLk">
+        <node concept="2EnYce" id="4kYnSKv95y_" role="2Oq$k0">
           <node concept="2OqwBi" id="4mMeETlwL7e" role="2Oq$k0">
             <node concept="gKNx_" id="4mMeETlwL5Q" role="2Oq$k0" />
             <node concept="liA8E" id="4mMeETlwLc1" role="2OqNvi">
@@ -415,7 +420,9 @@
         <property role="Xl_RC" value="Abc" />
       </node>
     </node>
-    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF" />
+    <node concept="3clFbT" id="7vUP_qcXrzF" role="3V_frF">
+      <property role="3clFbU" value="true" />
+    </node>
   </node>
   <node concept="sE7Ow" id="4mMeETlpNKH">
     <property role="TrG5h" value="action1" />
