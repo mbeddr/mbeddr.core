@@ -199,6 +199,13 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="4PtxuK92A0C">
+    <node concept="22gAW6" id="2OfxaHaxq0o" role="2AWWZH">
+      <property role="2AWWZJ" value="goto-cc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+    </node>
     <node concept="2Q9Fgs" id="4PtxuK92A0E" role="2Q9xDr">
       <node concept="2Q9FjX" id="4PtxuK92A0F" role="2Q9FjI" />
     </node>
@@ -211,13 +218,6 @@
       <node concept="2v9HqM" id="4PtxuK92AsI" role="2eOfOg">
         <ref role="2v9HqP" node="4PtxuK92A2K" resolve="file1" />
       </node>
-    </node>
-    <node concept="22gAW6" id="2OfxaHaxq0o" role="2AWWZH">
-      <property role="2AWWZJ" value="goto-cc" />
-      <property role="3r8Kw1" value="gdb" />
-      <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g" />
     </node>
   </node>
   <node concept="N3F5e" id="4PtxuK92A2A">
@@ -393,7 +393,7 @@
       </node>
     </node>
     <node concept="rcWE1" id="4PtxuK92A2P" role="rcWEr">
-      <property role="rcWEL" value="&quot;..\..\external_files\file1.h&quot;" />
+      <property role="rcWEL" value="&quot;../../external_files/file1.h&quot;" />
     </node>
   </node>
   <node concept="29QVxn" id="4PtxuK92A2Q" />
