@@ -26,6 +26,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="h23j" ref="r:bbbfeb3c-4321-4879-a3bb-77f1152cdb6b(com.mbeddr.cc.requirements.actions)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2034,12 +2035,22 @@
                     <node concept="3Tqbb2" id="4gxFsDiRO78" role="1tU5fm">
                       <ref role="ehGHo" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
                     </node>
-                    <node concept="2OqwBi" id="4gxFsDiRO79" role="33vP2m">
-                      <node concept="12_Ws6" id="4gxFsDiRO7a" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="4gxFsDiRO7b" role="2OqNvi">
-                        <node concept="1xMEDy" id="4gxFsDiRO7c" role="1xVPHs">
-                          <node concept="chp4Y" id="4gxFsDiRO7d" role="ri$Ld">
-                            <ref role="cht4Q" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+                    <node concept="2YIFZM" id="1TS1BLOUtng" role="33vP2m">
+                      <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                      <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                      <node concept="1bVj0M" id="1TS1BLOUtnh" role="37wK5m">
+                        <node concept="3clFbS" id="1TS1BLOUtni" role="1bW5cS">
+                          <node concept="3clFbF" id="1TS1BLOUtnj" role="3cqZAp">
+                            <node concept="2OqwBi" id="1TS1BLOUtnk" role="3clFbG">
+                              <node concept="12_Ws6" id="1TS1BLOUtnl" role="2Oq$k0" />
+                              <node concept="2Xjw5R" id="1TS1BLOUtnm" role="2OqNvi">
+                                <node concept="1xMEDy" id="1TS1BLOUtnn" role="1xVPHs">
+                                  <node concept="chp4Y" id="1TS1BLOUtno" role="ri$Ld">
+                                    <ref role="cht4Q" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>

@@ -30,6 +30,7 @@
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -3113,18 +3114,28 @@
                     <node concept="3cpWs3" id="3PT6Z48Mczt" role="3clFbG">
                       <node concept="3cpWs3" id="3PT6Z48Mczz" role="3uHU7B">
                         <node concept="2OqwBi" id="3PT6Z48Mc$q" role="3uHU7B">
-                          <node concept="2OqwBi" id="3PT6Z48MczV" role="2Oq$k0">
-                            <node concept="pncrf" id="3PT6Z48MczA" role="2Oq$k0" />
-                            <node concept="2Xjw5R" id="3PT6Z48Mc$1" role="2OqNvi">
-                              <node concept="1xMEDy" id="3PT6Z48Mc$2" role="1xVPHs">
-                                <node concept="chp4Y" id="3PT6Z48Mc$5" role="ri$Ld">
-                                  <ref role="cht4Q" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+                          <node concept="3TrcHB" id="3PT6Z48Mc$v" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                          <node concept="2YIFZM" id="1TS1BLOXr1d" role="2Oq$k0">
+                            <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                            <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                            <node concept="1bVj0M" id="1TS1BLOXr1e" role="37wK5m">
+                              <node concept="3clFbS" id="1TS1BLOXr1f" role="1bW5cS">
+                                <node concept="3clFbF" id="1TS1BLOXr1g" role="3cqZAp">
+                                  <node concept="2OqwBi" id="1TS1BLOXr1h" role="3clFbG">
+                                    <node concept="pncrf" id="1TS1BLOXr1i" role="2Oq$k0" />
+                                    <node concept="2Xjw5R" id="1TS1BLOXr1j" role="2OqNvi">
+                                      <node concept="1xMEDy" id="1TS1BLOXr1k" role="1xVPHs">
+                                        <node concept="chp4Y" id="1TS1BLOXr1l" role="ri$Ld">
+                                          <ref role="cht4Q" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
-                          </node>
-                          <node concept="3TrcHB" id="3PT6Z48Mc$v" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="3PT6Z48Mczw" role="3uHU7w">

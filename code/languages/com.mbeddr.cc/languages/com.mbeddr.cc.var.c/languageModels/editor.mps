@@ -12,6 +12,7 @@
     <import index="7rpm" ref="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt()" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
   </imports>
   <registry>
@@ -123,6 +124,11 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -323,21 +329,31 @@
             <node concept="3clFbS" id="5aNdPeN2da1" role="2VODD2">
               <node concept="3clFbF" id="5aNdPeN2$V9" role="3cqZAp">
                 <node concept="2OqwBi" id="5aNdPeN2$VY" role="3clFbG">
-                  <node concept="2OqwBi" id="5aNdPeN2$Vv" role="2Oq$k0">
-                    <node concept="12_Ws6" id="5aNdPeN2$Va" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="5aNdPeN2$V_" role="2OqNvi">
-                      <node concept="1xMEDy" id="5aNdPeN2$VA" role="1xVPHs">
-                        <node concept="chp4Y" id="5aNdPeN2$VD" role="ri$Ld">
-                          <ref role="cht4Q" to="vxuc:5aNdPeN1XXb" resolve="IVariantAware" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2qgKlT" id="5aNdPeN2$W4" role="2OqNvi">
                     <ref role="37wK5l" to="kmnf:5aNdPeN2daX" resolve="isApplicableCase" />
                     <node concept="2OqwBi" id="5aNdPeN2$Wq" role="37wK5m">
                       <node concept="12_Ws6" id="5aNdPeN2$W5" role="2Oq$k0" />
                       <node concept="2bSWHS" id="5aNdPeN2$Ww" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="1TS1BLOWWI6" role="2Oq$k0">
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                    <node concept="1bVj0M" id="1TS1BLOWWI7" role="37wK5m">
+                      <node concept="3clFbS" id="1TS1BLOWWI8" role="1bW5cS">
+                        <node concept="3clFbF" id="1TS1BLOWWI9" role="3cqZAp">
+                          <node concept="2OqwBi" id="1TS1BLOWWIa" role="3clFbG">
+                            <node concept="12_Ws6" id="1TS1BLOWWIb" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="1TS1BLOWWIc" role="2OqNvi">
+                              <node concept="1xMEDy" id="1TS1BLOWWId" role="1xVPHs">
+                                <node concept="chp4Y" id="1TS1BLOWWIe" role="ri$Ld">
+                                  <ref role="cht4Q" to="vxuc:5aNdPeN1XXb" resolve="IVariantAware" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -540,21 +556,31 @@
             <node concept="3clFbS" id="5aNdPeN46WM" role="2VODD2">
               <node concept="3clFbF" id="5aNdPeN46WN" role="3cqZAp">
                 <node concept="2OqwBi" id="5aNdPeN46WO" role="3clFbG">
-                  <node concept="2OqwBi" id="5aNdPeN46WP" role="2Oq$k0">
-                    <node concept="12_Ws6" id="5aNdPeN46WQ" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="5aNdPeN46WR" role="2OqNvi">
-                      <node concept="1xMEDy" id="5aNdPeN46WS" role="1xVPHs">
-                        <node concept="chp4Y" id="5aNdPeN46WT" role="ri$Ld">
-                          <ref role="cht4Q" to="vxuc:5aNdPeN1XXb" resolve="IVariantAware" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2qgKlT" id="5aNdPeN46WU" role="2OqNvi">
                     <ref role="37wK5l" to="kmnf:5aNdPeN2daX" resolve="isApplicableCase" />
                     <node concept="2OqwBi" id="5aNdPeN46WV" role="37wK5m">
                       <node concept="12_Ws6" id="5aNdPeN46WW" role="2Oq$k0" />
                       <node concept="2bSWHS" id="5aNdPeN46WX" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="1TS1BLOWUS2" role="2Oq$k0">
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                    <node concept="1bVj0M" id="1TS1BLOWUS3" role="37wK5m">
+                      <node concept="3clFbS" id="1TS1BLOWUS4" role="1bW5cS">
+                        <node concept="3clFbF" id="1TS1BLOWUS5" role="3cqZAp">
+                          <node concept="2OqwBi" id="1TS1BLOWUS6" role="3clFbG">
+                            <node concept="12_Ws6" id="1TS1BLOWUS7" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="1TS1BLOWUS8" role="2OqNvi">
+                              <node concept="1xMEDy" id="1TS1BLOWUS9" role="1xVPHs">
+                                <node concept="chp4Y" id="1TS1BLOWUSa" role="ri$Ld">
+                                  <ref role="cht4Q" to="vxuc:5aNdPeN1XXb" resolve="IVariantAware" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

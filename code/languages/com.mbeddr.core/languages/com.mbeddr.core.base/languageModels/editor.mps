@@ -3751,18 +3751,28 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="5OvWdTSlFvA" role="3clFbw">
-                <node concept="2OqwBi" id="5OvWdTSlDxu" role="2Oq$k0">
-                  <node concept="12_Ws6" id="5OvWdTSlDaU" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="5OvWdTSlEUz" role="2OqNvi">
-                    <node concept="1xMEDy" id="5OvWdTSlEU_" role="1xVPHs">
-                      <node concept="chp4Y" id="5OvWdTSlF8E" role="ri$Ld">
-                        <ref role="cht4Q" to="vs0r:K292flwCEW" resolve="Assessment" />
+                <node concept="3TrcHB" id="5OvWdTSlI63" role="2OqNvi">
+                  <ref role="3TsBF5" to="vs0r:7McwK6mrL3z" resolve="hideOkOnes" />
+                </node>
+                <node concept="2YIFZM" id="1TS1BLOWtGR" role="2Oq$k0">
+                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                  <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                  <node concept="1bVj0M" id="1TS1BLOWtGS" role="37wK5m">
+                    <node concept="3clFbS" id="1TS1BLOWtGT" role="1bW5cS">
+                      <node concept="3clFbF" id="1TS1BLOWtGU" role="3cqZAp">
+                        <node concept="2OqwBi" id="1TS1BLOWtGV" role="3clFbG">
+                          <node concept="12_Ws6" id="1TS1BLOWtGW" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="1TS1BLOWtGX" role="2OqNvi">
+                            <node concept="1xMEDy" id="1TS1BLOWtGY" role="1xVPHs">
+                              <node concept="chp4Y" id="1TS1BLOWtGZ" role="ri$Ld">
+                                <ref role="cht4Q" to="vs0r:K292flwCEW" resolve="Assessment" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="3TrcHB" id="5OvWdTSlI63" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:7McwK6mrL3z" resolve="hideOkOnes" />
                 </node>
               </node>
               <node concept="9aQIb" id="5OvWdTSlI$L" role="9aQIa">
@@ -4167,18 +4177,28 @@
             <node concept="3clFbS" id="5nb$pd3o_Nx" role="2VODD2">
               <node concept="3clFbF" id="5nb$pd3oAd4" role="3cqZAp">
                 <node concept="2OqwBi" id="5nb$pd3oB5T" role="3clFbG">
-                  <node concept="2OqwBi" id="5nb$pd3oAhc" role="2Oq$k0">
-                    <node concept="pncrf" id="5nb$pd3oAd3" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="5nb$pd3oAFM" role="2OqNvi">
-                      <node concept="1xMEDy" id="5nb$pd3oAFO" role="1xVPHs">
-                        <node concept="chp4Y" id="5nb$pd3oAQM" role="ri$Ld">
-                          <ref role="cht4Q" to="vs0r:K292flwCEW" resolve="Assessment" />
+                  <node concept="3TrcHB" id="5nb$pd3oBKs" role="2OqNvi">
+                    <ref role="3TsBF5" to="vs0r:3jNX2XuL9g9" resolve="mustBeOk" />
+                  </node>
+                  <node concept="2YIFZM" id="1TS1BLOWs33" role="2Oq$k0">
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                    <node concept="1bVj0M" id="1TS1BLOWs34" role="37wK5m">
+                      <node concept="3clFbS" id="1TS1BLOWs35" role="1bW5cS">
+                        <node concept="3clFbF" id="1TS1BLOWs36" role="3cqZAp">
+                          <node concept="2OqwBi" id="1TS1BLOWs37" role="3clFbG">
+                            <node concept="pncrf" id="1TS1BLOWs38" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="1TS1BLOWs39" role="2OqNvi">
+                              <node concept="1xMEDy" id="1TS1BLOWs3a" role="1xVPHs">
+                                <node concept="chp4Y" id="1TS1BLOWs3b" role="ri$Ld">
+                                  <ref role="cht4Q" to="vs0r:K292flwCEW" resolve="Assessment" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="3TrcHB" id="5nb$pd3oBKs" role="2OqNvi">
-                    <ref role="3TsBF5" to="vs0r:3jNX2XuL9g9" resolve="mustBeOk" />
                   </node>
                 </node>
               </node>
