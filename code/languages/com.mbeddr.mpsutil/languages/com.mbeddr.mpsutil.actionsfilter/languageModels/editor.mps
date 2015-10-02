@@ -42,9 +42,11 @@
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1164052439493" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_MatchingText" flags="in" index="6VE3a" />
       <concept id="1164052588708" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_DescriptionText" flags="in" index="6WeAF" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
@@ -283,6 +285,9 @@
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -348,8 +353,8 @@
               <node concept="3clFbF" id="5ReuVUpd0sP" role="3cqZAp">
                 <node concept="2OqwBi" id="5ReuVUpd0xn" role="3clFbG">
                   <node concept="pncrf" id="5ReuVUpd0sO" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="5ReuVUpd0Yn" role="2OqNvi">
-                    <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
+                  <node concept="2qgKlT" id="1TS1BLOSXv9" role="2OqNvi">
+                    <ref role="37wK5l" to="jm5d:1TS1BLORxU1" resolve="isRemoveMode" />
                   </node>
                 </node>
               </node>
@@ -364,12 +369,10 @@
           <node concept="pkWqt" id="5ReuVUpcYMm" role="pqm2j">
             <node concept="3clFbS" id="5ReuVUpcYMn" role="2VODD2">
               <node concept="3clFbF" id="5ReuVUpcYOV" role="3cqZAp">
-                <node concept="3fqX7Q" id="5ReuVUpd009" role="3clFbG">
-                  <node concept="2OqwBi" id="5ReuVUpd00b" role="3fr31v">
-                    <node concept="pncrf" id="5ReuVUpd00c" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="5ReuVUpd00d" role="2OqNvi">
-                      <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
-                    </node>
+                <node concept="2OqwBi" id="5ReuVUpd00b" role="3clFbG">
+                  <node concept="pncrf" id="5ReuVUpd00c" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1TS1BLORA9q" role="2OqNvi">
+                    <ref role="37wK5l" to="jm5d:1TS1BLORzSI" resolve="isAllowMode" />
                   </node>
                 </node>
               </node>
@@ -382,6 +385,34 @@
       <node concept="3F2HdR" id="7LkwBl9HKIt" role="3EZMnx">
         <ref role="1NtTu8" to="au0v:5FJiYrlIpAq" />
         <node concept="2iRkQZ" id="7LkwBl9HKIv" role="2czzBx" />
+        <node concept="4$FPG" id="1TS1BLORAfK" role="4_6I_">
+          <node concept="3clFbS" id="1TS1BLORAfL" role="2VODD2">
+            <node concept="3clFbF" id="1TS1BLORAgs" role="3cqZAp">
+              <node concept="3K4zz7" id="1TS1BLORARd" role="3clFbG">
+                <node concept="2ShNRf" id="1TS1BLORLMD" role="3K4GZi">
+                  <node concept="3zrR0B" id="1TS1BLORM6_" role="2ShVmc">
+                    <node concept="3Tqbb2" id="1TS1BLORM6B" role="3zrR0E">
+                      <ref role="ehGHo" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="1TS1BLORAS9" role="3K4E3e">
+                  <node concept="3zrR0B" id="1TS1BLORLIQ" role="2ShVmc">
+                    <node concept="3Tqbb2" id="1TS1BLORLIS" role="3zrR0E">
+                      <ref role="ehGHo" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1TS1BLORAiH" role="3K4Cdx">
+                  <node concept="pncrf" id="1TS1BLORAgr" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1TS1BLORADK" role="2OqNvi">
+                    <ref role="37wK5l" to="jm5d:1TS1BLORzSI" resolve="isAllowMode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="7LkwBl9HKH4" role="3EZMnx" />
       <node concept="3F0ifn" id="7LkwBl9HKJ3" role="3EZMnx" />
@@ -1218,8 +1249,8 @@
                                         <node concept="37vLTw" id="5ReuVUpdtzR" role="2Oq$k0">
                                           <ref role="3cqZAo" node="7LkwBl9I0MB" resolve="myNode" />
                                         </node>
-                                        <node concept="3TrcHB" id="5ReuVUpdv00" role="2OqNvi">
-                                          <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
+                                        <node concept="2qgKlT" id="1TS1BLOROhf" role="2OqNvi">
+                                          <ref role="37wK5l" to="jm5d:1TS1BLORxU1" resolve="isRemoveMode" />
                                         </node>
                                       </node>
                                       <node concept="9aQIb" id="5ReuVUpdwZS" role="9aQIa">

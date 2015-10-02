@@ -45,8 +45,10 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -106,7 +108,7 @@
                 <node concept="2OqwBi" id="5ReuVUpcmcf" role="37vLTJ">
                   <node concept="2Sf5sV" id="5ReuVUpcma$" role="2Oq$k0" />
                   <node concept="3TrcHB" id="5ReuVUpcmui" role="2OqNvi">
-                    <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
+                    <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isAllowActionsMode" />
                   </node>
                 </node>
               </node>
@@ -133,8 +135,8 @@
                   </node>
                 </node>
                 <node concept="v3k3i" id="5ReuVUpcu_e" role="2OqNvi">
-                  <node concept="chp4Y" id="5ReuVUpcuBe" role="v3oSu">
-                    <ref role="cht4Q" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
+                  <node concept="chp4Y" id="1TS1BLOROUz" role="v3oSu">
+                    <ref role="cht4Q" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
                   </node>
                 </node>
               </node>
@@ -143,7 +145,7 @@
           <node concept="2OqwBi" id="5ReuVUpclHy" role="3clFbw">
             <node concept="2Sf5sV" id="5ReuVUpclFv" role="2Oq$k0" />
             <node concept="3TrcHB" id="5ReuVUpclZt" role="2OqNvi">
-              <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
+              <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isAllowActionsMode" />
             </node>
           </node>
           <node concept="9aQIb" id="5ReuVUpcAxP" role="9aQIa">
@@ -155,8 +157,8 @@
                   </node>
                   <node concept="2OqwBi" id="5ReuVUpdiie" role="37vLTJ">
                     <node concept="2Sf5sV" id="5ReuVUpdiif" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="5ReuVUpdiig" role="2OqNvi">
-                      <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
+                    <node concept="3TrcHB" id="1TS1BLORON8" role="2OqNvi">
+                      <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isAllowActionsMode" />
                     </node>
                   </node>
                 </node>
@@ -183,8 +185,8 @@
                     </node>
                   </node>
                   <node concept="v3k3i" id="5ReuVUpcA_R" role="2OqNvi">
-                    <node concept="chp4Y" id="5ReuVUpcADl" role="v3oSu">
-                      <ref role="cht4Q" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
+                    <node concept="chp4Y" id="1TS1BLOROX7" role="v3oSu">
+                      <ref role="cht4Q" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
                     </node>
                   </node>
                 </node>
@@ -196,24 +198,20 @@
     </node>
     <node concept="2S6ZIM" id="5ReuVUpchao" role="2ZfVej">
       <node concept="3clFbS" id="5ReuVUpchap" role="2VODD2">
-        <node concept="3clFbJ" id="5ReuVUpchnQ" role="3cqZAp">
-          <node concept="3clFbS" id="5ReuVUpchnR" role="3clFbx">
-            <node concept="3cpWs6" id="5ReuVUpcjfl" role="3cqZAp">
-              <node concept="Xl_RD" id="5ReuVUpcjnL" role="3cqZAk">
-                <property role="Xl_RC" value="Use allow actions" />
+        <node concept="3clFbF" id="1TS1BLORPpB" role="3cqZAp">
+          <node concept="3K4zz7" id="1TS1BLORPKg" role="3clFbG">
+            <node concept="2OqwBi" id="5ReuVUpcibM" role="3K4Cdx">
+              <node concept="2Sf5sV" id="5ReuVUpci7i" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5ReuVUpciBJ" role="2OqNvi">
+                <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isAllowActionsMode" />
               </node>
             </node>
-          </node>
-          <node concept="2OqwBi" id="5ReuVUpcibM" role="3clFbw">
-            <node concept="2Sf5sV" id="5ReuVUpci7i" role="2Oq$k0" />
-            <node concept="3TrcHB" id="5ReuVUpciBJ" role="2OqNvi">
-              <ref role="3TsBF5" to="au0v:5ReuVUpcb8U" resolve="isRemoveActionsMode" />
+            <node concept="Xl_RD" id="1TS1BLORPQy" role="3K4E3e">
+              <property role="Xl_RC" value="Use remove actions" />
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="5ReuVUpcjTm" role="3cqZAp">
-          <node concept="Xl_RD" id="5ReuVUpck4X" role="3cqZAk">
-            <property role="Xl_RC" value="Use remove actions" />
+            <node concept="Xl_RD" id="1TS1BLORPWB" role="3K4GZi">
+              <property role="Xl_RC" value="Use allow actions" />
+            </node>
           </node>
         </node>
       </node>
