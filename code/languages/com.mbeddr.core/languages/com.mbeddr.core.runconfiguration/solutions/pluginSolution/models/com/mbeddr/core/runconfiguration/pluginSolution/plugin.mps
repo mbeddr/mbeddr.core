@@ -71,8 +71,9 @@
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
-    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
+    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -6293,19 +6294,7 @@
                     <node concept="2OqwBi" id="4k8klQzATA3" role="37wK5m">
                       <node concept="2ShNRf" id="4k8klQzATA4" role="2Oq$k0">
                         <node concept="1pGfFk" id="4k8klQzATA5" role="2ShVmc">
-                          <ref role="37wK5l" to="m0f7:~ModelsToResources.&lt;init&gt;(jetbrains.mps.smodel.IOperationContext,java.lang.Iterable)" resolve="ModelsToResources" />
-                          <node concept="2ShNRf" id="4k8klQzATA6" role="37wK5m">
-                            <node concept="1pGfFk" id="4k8klQzATA7" role="2ShVmc">
-                              <ref role="37wK5l" to="z1c3:~ProjectOperationContext.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="ProjectOperationContext" />
-                              <node concept="2YIFZM" id="4k8klQzATA8" role="37wK5m">
-                                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                                <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
-                                <node concept="3cpWs2" id="4k8klQzATEZ" role="37wK5m">
-                                  <ref role="3cqZAo" node="4k8klQzATET" resolve="project" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
+                          <ref role="37wK5l" to="m0f7:~ModelsToResources.&lt;init&gt;(java.lang.Iterable)" resolve="ModelsToResources" />
                           <node concept="3cpWs2" id="4k8klQzATF2" role="37wK5m">
                             <ref role="3cqZAo" node="4k8klQzATAZ" resolve="modelDescriptors" />
                           </node>
