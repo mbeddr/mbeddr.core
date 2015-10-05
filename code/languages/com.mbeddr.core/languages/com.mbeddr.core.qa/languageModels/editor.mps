@@ -150,6 +150,11 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
       <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
@@ -427,20 +432,30 @@
                   <node concept="3Tqbb2" id="6Xk4NhOuCQ_" role="1tU5fm">
                     <ref role="ehGHo" to="tpf8:gZaamkM" resolve="Reduction_MappingRule" />
                   </node>
-                  <node concept="2OqwBi" id="6Xk4NhOuDiu" role="33vP2m">
-                    <node concept="2OqwBi" id="6Xk4NhOuCQC" role="2Oq$k0">
-                      <node concept="pncrf" id="6Xk4NhOuCQD" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="6Xk4NhOuCQE" role="2OqNvi">
-                        <ref role="3Tt5mk" to="79wq:6Xk4NhNlKoA" />
-                      </node>
-                    </node>
-                    <node concept="2Xjw5R" id="6Xk4NhOuE0_" role="2OqNvi">
-                      <node concept="1xMEDy" id="6Xk4NhOuE0B" role="1xVPHs">
-                        <node concept="chp4Y" id="6Xk4NhOuEez" role="ri$Ld">
-                          <ref role="cht4Q" to="tpf8:gZaamkM" resolve="Reduction_MappingRule" />
+                  <node concept="2YIFZM" id="1TS1BLOXaTw" role="33vP2m">
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                    <node concept="1bVj0M" id="1TS1BLOXaTx" role="37wK5m">
+                      <node concept="3clFbS" id="1TS1BLOXaTy" role="1bW5cS">
+                        <node concept="3clFbF" id="1TS1BLOXaTz" role="3cqZAp">
+                          <node concept="2OqwBi" id="1TS1BLOXaT$" role="3clFbG">
+                            <node concept="2OqwBi" id="1TS1BLOXaT_" role="2Oq$k0">
+                              <node concept="pncrf" id="1TS1BLOXaTA" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="1TS1BLOXaTB" role="2OqNvi">
+                                <ref role="3Tt5mk" to="79wq:6Xk4NhNlKoA" />
+                              </node>
+                            </node>
+                            <node concept="2Xjw5R" id="1TS1BLOXaTC" role="2OqNvi">
+                              <node concept="1xMEDy" id="1TS1BLOXaTD" role="1xVPHs">
+                                <node concept="chp4Y" id="1TS1BLOXaTE" role="ri$Ld">
+                                  <ref role="cht4Q" to="tpf8:gZaamkM" resolve="Reduction_MappingRule" />
+                                </node>
+                              </node>
+                              <node concept="1xIGOp" id="1TS1BLOXaTF" role="1xVPHs" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                      <node concept="1xIGOp" id="6Xk4NhOuEEZ" role="1xVPHs" />
                     </node>
                   </node>
                 </node>

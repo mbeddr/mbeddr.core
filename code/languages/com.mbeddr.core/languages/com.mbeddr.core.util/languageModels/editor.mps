@@ -20,8 +20,9 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -286,6 +287,11 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1925286362805506099" name="de.slisson.mps.tables.structure.RowShadeColor" flags="lg" index="bmIQc" />
@@ -3658,23 +3664,33 @@
                   <node concept="3y3z36" id="7CzZuMWStl3" role="3uHU7w">
                     <node concept="10Nm6u" id="7CzZuMWStl4" role="3uHU7w" />
                     <node concept="2OqwBi" id="7CzZuMWStl5" role="3uHU7B">
-                      <node concept="2OqwBi" id="7CzZuMWStl6" role="2Oq$k0">
-                        <node concept="2OqwBi" id="7CzZuMWStl7" role="2Oq$k0">
-                          <node concept="pncrf" id="7CzZuMWStl8" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="7CzZuMWTEfe" role="2OqNvi">
-                            <ref role="3Tt5mk" to="k146:7CzZuMWSt1c" />
-                          </node>
-                        </node>
-                        <node concept="2Xjw5R" id="7CzZuMWStla" role="2OqNvi">
-                          <node concept="1xMEDy" id="7CzZuMWStlb" role="1xVPHs">
-                            <node concept="chp4Y" id="7CzZuMWStlc" role="ri$Ld">
-                              <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                      <node concept="3TrEf2" id="7CzZuMWStld" role="2OqNvi">
+                        <ref role="3Tt5mk" to="k146:5u_UblP1DK" />
+                      </node>
+                      <node concept="2YIFZM" id="1TS1BLOXj4_" role="2Oq$k0">
+                        <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                        <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                        <node concept="1bVj0M" id="1TS1BLOXj4A" role="37wK5m">
+                          <node concept="3clFbS" id="1TS1BLOXj4B" role="1bW5cS">
+                            <node concept="3clFbF" id="1TS1BLOXj4C" role="3cqZAp">
+                              <node concept="2OqwBi" id="1TS1BLOXj4D" role="3clFbG">
+                                <node concept="2OqwBi" id="1TS1BLOXj4E" role="2Oq$k0">
+                                  <node concept="pncrf" id="1TS1BLOXj4F" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1TS1BLOXj4G" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="k146:7CzZuMWSt1c" />
+                                  </node>
+                                </node>
+                                <node concept="2Xjw5R" id="1TS1BLOXj4H" role="2OqNvi">
+                                  <node concept="1xMEDy" id="1TS1BLOXj4I" role="1xVPHs">
+                                    <node concept="chp4Y" id="1TS1BLOXj4J" role="ri$Ld">
+                                      <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
-                      </node>
-                      <node concept="3TrEf2" id="7CzZuMWStld" role="2OqNvi">
-                        <ref role="3Tt5mk" to="k146:5u_UblP1DK" />
                       </node>
                     </node>
                   </node>

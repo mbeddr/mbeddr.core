@@ -74,11 +74,11 @@ public class Util {
 	public Process createMakeTestProcess(File workingDirectory,
 			ITeamcityLogger logger) throws IOException {
 		List<String> commandList = new ArrayList<String>();
-        commandList.add("make");
-        commandList.add("clean");
-        this.createProcess(workingDirectory,
-                this.createPlatformSpecificProcessBuilder(commandList), logger);
-        commandList.clear();
+//        commandList.add("make");
+//        commandList.add("clean");
+//        this.createProcess(workingDirectory,
+//                this.createPlatformSpecificProcessBuilder(commandList), logger);
+//        commandList.clear();
 		commandList.add("make");
 		commandList.add("test");
 		return this.createProcess(workingDirectory,
@@ -119,6 +119,7 @@ public class Util {
 				}
 				currentLine = reader.readLine();
 			}
+			reader.close();
 		} catch (Exception e) {
 			throw new BuildException("Could not read Makefile: "
 					+ file.getAbsolutePath());

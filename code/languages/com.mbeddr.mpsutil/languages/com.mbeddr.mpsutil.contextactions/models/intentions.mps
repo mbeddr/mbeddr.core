@@ -9,6 +9,7 @@
   <imports>
     <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" implicit="true" />
     <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" implicit="true" />
+    <import index="tp1h" ref="r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -79,6 +80,36 @@
       <node concept="3clFbS" id="657q32pRqkT" role="2VODD2">
         <node concept="3clFbF" id="657q32pRqKn" role="3cqZAp">
           <node concept="Xl_RD" id="657q32pRqKm" role="3clFbG">
+            <property role="Xl_RC" value="Make Available as Context Action" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2hz1PZpJhwW">
+    <property role="TrG5h" value="refactoringAsContextAction" />
+    <ref role="2ZfgGC" to="tp1h:5YKiRiBue95" resolve="Refactoring" />
+    <node concept="2Sbjvc" id="2hz1PZpJhwX" role="2ZfgGD">
+      <node concept="3clFbS" id="2hz1PZpJhwY" role="2VODD2">
+        <node concept="3clFbF" id="2hz1PZpJhwZ" role="3cqZAp">
+          <node concept="2OqwBi" id="2hz1PZpJhx0" role="3clFbG">
+            <node concept="2OqwBi" id="2hz1PZpJhx1" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2hz1PZpJhx2" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2hz1PZpJhx3" role="2OqNvi">
+                <node concept="3CFYIy" id="2hz1PZpJhx4" role="3CFYIz">
+                  <ref role="3CFYIx" to="aozb:657q32pRgDF" resolve="IntentionAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="zfrQC" id="2hz1PZpJhx5" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="2hz1PZpJhx6" role="2ZfVej">
+      <node concept="3clFbS" id="2hz1PZpJhx7" role="2VODD2">
+        <node concept="3clFbF" id="2hz1PZpJhx8" role="3cqZAp">
+          <node concept="Xl_RD" id="2hz1PZpJhx9" role="3clFbG">
             <property role="Xl_RC" value="Make Available as Context Action" />
           </node>
         </node>

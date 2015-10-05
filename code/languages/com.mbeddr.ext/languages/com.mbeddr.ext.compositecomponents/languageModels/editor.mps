@@ -28,9 +28,10 @@
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -873,23 +874,33 @@
             <node concept="3clFbF" id="6JVEnxIjbXS" role="3cqZAp">
               <node concept="2OqwBi" id="6JVEnxIjc1t" role="3clFbG">
                 <node concept="2OqwBi" id="6JVEnxIjc11" role="2Oq$k0">
-                  <node concept="2OqwBi" id="6JVEnxIjc0A" role="2Oq$k0">
-                    <node concept="2OqwBi" id="6JVEnxIjbYe" role="2Oq$k0">
-                      <node concept="pncrf" id="6JVEnxIjbXT" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="6JVEnxIjbYk" role="2OqNvi">
-                        <node concept="1xMEDy" id="6JVEnxIjbYl" role="1xVPHs">
-                          <node concept="chp4Y" id="6JVEnxIjbYo" role="ri$Ld">
-                            <ref role="cht4Q" to="g88q:6JVEnxIhbeK" resolve="CompositeComponent" />
+                  <node concept="3Tsc0h" id="6JVEnxIjc17" role="2OqNvi">
+                    <ref role="3TtcxE" to="g88q:6JVEnxIj0hA" />
+                  </node>
+                  <node concept="2YIFZM" id="1TS1BLOXwW0" role="2Oq$k0">
+                    <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                    <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                    <node concept="1bVj0M" id="1TS1BLOXwW1" role="37wK5m">
+                      <node concept="3clFbS" id="1TS1BLOXwW2" role="1bW5cS">
+                        <node concept="3clFbF" id="1TS1BLOXwW3" role="3cqZAp">
+                          <node concept="2OqwBi" id="1TS1BLOXwW4" role="3clFbG">
+                            <node concept="2OqwBi" id="1TS1BLOXwW5" role="2Oq$k0">
+                              <node concept="pncrf" id="1TS1BLOXwW6" role="2Oq$k0" />
+                              <node concept="2Xjw5R" id="1TS1BLOXwW7" role="2OqNvi">
+                                <node concept="1xMEDy" id="1TS1BLOXwW8" role="1xVPHs">
+                                  <node concept="chp4Y" id="1TS1BLOXwW9" role="ri$Ld">
+                                    <ref role="cht4Q" to="g88q:6JVEnxIhbeK" resolve="CompositeComponent" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="1TS1BLOXwWa" role="2OqNvi">
+                              <ref role="37wK5l" to="l32i:6JVEnxIjbYq" resolve="innerInstanceConfig" />
+                            </node>
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="6JVEnxIjc0G" role="2OqNvi">
-                      <ref role="37wK5l" to="l32i:6JVEnxIjbYq" resolve="innerInstanceConfig" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="6JVEnxIjc17" role="2OqNvi">
-                    <ref role="3TtcxE" to="g88q:6JVEnxIj0hA" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="6JVEnxIjc1y" role="2OqNvi" />

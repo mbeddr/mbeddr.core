@@ -987,8 +987,25 @@
             <ref role="37wK5l" node="6ENu_m7tE9k" resolve="listEvaluators" />
           </node>
           <node concept="3clFbS" id="6ENu_m7uqUO" role="2LFqv$">
+            <node concept="34ab3g" id="1ok_lNniwT7" role="3cqZAp">
+              <property role="35gtTG" value="trace" />
+              <node concept="3cpWs3" id="1ok_lNnixuI" role="34bqiv">
+                <node concept="2GrUjf" id="1ok_lNnixBf" role="3uHU7w">
+                  <ref role="2Gs0qQ" node="6ENu_m7uqUK" resolve="evaluator" />
+                </node>
+                <node concept="Xl_RD" id="1ok_lNniwT9" role="3uHU7B">
+                  <property role="Xl_RC" value="checking evaluator match for: " />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="6ENu_m7urWz" role="3cqZAp">
               <node concept="3clFbS" id="6ENu_m7urW$" role="3clFbx">
+                <node concept="34ab3g" id="1ok_lNniy3I" role="3cqZAp">
+                  <property role="35gtTG" value="trace" />
+                  <node concept="Xl_RD" id="1ok_lNniy3K" role="34bqiv">
+                    <property role="Xl_RC" value="evaluator matched" />
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="5I6_y3Z1Jrj" role="3cqZAp">
                   <node concept="3cpWsn" id="5I6_y3Z1Jrk" role="3cpWs9">
                     <property role="TrG5h" value="result" />

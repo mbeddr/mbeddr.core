@@ -7,10 +7,10 @@
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="1" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
   <imports />
@@ -199,6 +199,13 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="4PtxuK92A0C">
+    <node concept="22gAW6" id="2OfxaHaxq0o" role="2AWWZH">
+      <property role="2AWWZJ" value="goto-cc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+    </node>
     <node concept="2Q9Fgs" id="4PtxuK92A0E" role="2Q9xDr">
       <node concept="2Q9FjX" id="4PtxuK92A0F" role="2Q9FjI" />
     </node>
@@ -211,13 +218,6 @@
       <node concept="2v9HqM" id="4PtxuK92AsI" role="2eOfOg">
         <ref role="2v9HqP" node="4PtxuK92A2K" resolve="file1" />
       </node>
-    </node>
-    <node concept="22gAW6" id="2OfxaHaxq0o" role="2AWWZH">
-      <property role="2AWWZJ" value="goto-cc" />
-      <property role="3r8Kw1" value="gdb" />
-      <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g" />
     </node>
   </node>
   <node concept="N3F5e" id="4PtxuK92A2A">
@@ -393,7 +393,7 @@
       </node>
     </node>
     <node concept="rcWE1" id="4PtxuK92A2P" role="rcWEr">
-      <property role="rcWEL" value="&quot;..\..\external_files\file1.h&quot;" />
+      <property role="rcWEL" value="&quot;../../external_files/file1.h&quot;" />
     </node>
   </node>
   <node concept="29QVxn" id="4PtxuK92A2Q" />

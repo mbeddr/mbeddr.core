@@ -1304,17 +1304,23 @@
             <ref role="3bR37D" to="p6ld:7uZw0yZ43K1" resolve="com.mbeddr.core.debug" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2coa6XmppYH" role="3bR37C">
-          <node concept="1BurEX" id="2coa6XmppYI" role="1SiIV1">
-            <node concept="398BVA" id="2coa6XmppYw" role="1BurEY">
+        <node concept="1SiIV0" id="3llkta9N9TE" role="3bR37C">
+          <node concept="3bR9La" id="3llkta9N9TF" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="a9ss:7eF9rfAuv4P" resolve="test.debugger.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7b9rVbi0$8j" role="3bR37C">
+          <node concept="1BurEX" id="7b9rVbi0$8k" role="1SiIV1">
+            <node concept="398BVA" id="7b9rVbi0$7Y" role="1BurEY">
               <ref role="398BVh" node="2coa6XmppPi" resolve="mbeddr.debugger" />
-              <node concept="2Ry0Ak" id="2coa6XmppYx" role="iGT6I">
+              <node concept="2Ry0Ak" id="7b9rVbi0$7Z" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="2coa6XmppYy" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7b9rVbi0$80" role="2Ry0An">
                   <property role="2Ry0Am" value="test.debugger.core" />
-                  <node concept="2Ry0Ak" id="2coa6XmppYz" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7b9rVbi0$81" role="2Ry0An">
                     <property role="2Ry0Am" value="libs" />
-                    <node concept="2Ry0Ak" id="2coa6XmppY$" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="7b9rVbi0$82" role="2Ry0An">
                       <property role="2Ry0Am" value="easymock-3.1.jar" />
                     </node>
                   </node>
@@ -1323,29 +1329,23 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2coa6XmppYW" role="3bR37C">
-          <node concept="1BurEX" id="2coa6XmppYX" role="1SiIV1">
-            <node concept="398BVA" id="2coa6XmppYJ" role="1BurEY">
+        <node concept="1SiIV0" id="7b9rVbi0$8E" role="3bR37C">
+          <node concept="1BurEX" id="7b9rVbi0$8F" role="1SiIV1">
+            <node concept="398BVA" id="7b9rVbi0$8l" role="1BurEY">
               <ref role="398BVh" node="2coa6XmppPi" resolve="mbeddr.debugger" />
-              <node concept="2Ry0Ak" id="2coa6XmppYK" role="iGT6I">
+              <node concept="2Ry0Ak" id="7b9rVbi0$8m" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="2coa6XmppYL" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7b9rVbi0$8n" role="2Ry0An">
                   <property role="2Ry0Am" value="test.debugger.core" />
-                  <node concept="2Ry0Ak" id="2coa6XmppYM" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7b9rVbi0$8o" role="2Ry0An">
                     <property role="2Ry0Am" value="libs" />
-                    <node concept="2Ry0Ak" id="2coa6XmppYN" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="7b9rVbi0$8p" role="2Ry0An">
                       <property role="2Ry0Am" value="mockito-all-1.9.0.jar" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3llkta9N9TE" role="3bR37C">
-          <node concept="3bR9La" id="3llkta9N9TF" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="a9ss:7eF9rfAuv4P" resolve="test.debugger.core" />
           </node>
         </node>
       </node>
@@ -1427,6 +1427,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="RAi2_rS$6r" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.platform" />
+      <node concept="398BVA" id="RAi2_rS$9j" role="398pKh">
+        <ref role="398BVh" node="62XMcUo5H0L" resolve="mbeddr.github.core.home" />
       </node>
     </node>
     <node concept="398rNT" id="6RmoJr95Igg" role="1l3spd">

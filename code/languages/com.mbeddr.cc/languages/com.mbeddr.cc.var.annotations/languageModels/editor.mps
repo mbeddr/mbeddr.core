@@ -21,9 +21,10 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1641,18 +1642,28 @@
           <node concept="3nzxsE" id="3biQRBA28Z_" role="1uO$qD">
             <node concept="3clFbS" id="3biQRBA28ZB" role="2VODD2">
               <node concept="3clFbF" id="3biQRBA2gPj" role="3cqZAp">
-                <node concept="2OqwBi" id="3biQRBA2igL" role="3clFbG">
-                  <node concept="2OqwBi" id="3biQRBA2gVX" role="2Oq$k0">
-                    <node concept="pncrf" id="3biQRBA2gPd" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="3biQRBA2hFK" role="2OqNvi">
-                      <node concept="1xMEDy" id="3biQRBA2hFM" role="1xVPHs">
-                        <node concept="chp4Y" id="3biQRBA2i31" role="ri$Ld">
-                          <ref role="cht4Q" to="qdv7:2h6lNbWo01H" resolve="FeatureCondition" />
+                <node concept="2YIFZM" id="1TS1BLOWJAy" role="3clFbG">
+                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                  <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                  <node concept="1bVj0M" id="1TS1BLOWJAz" role="37wK5m">
+                    <node concept="3clFbS" id="1TS1BLOWJA$" role="1bW5cS">
+                      <node concept="3clFbF" id="1TS1BLOWJA_" role="3cqZAp">
+                        <node concept="2OqwBi" id="1TS1BLOWJAA" role="3clFbG">
+                          <node concept="2OqwBi" id="1TS1BLOWJAB" role="2Oq$k0">
+                            <node concept="pncrf" id="1TS1BLOWJAC" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="1TS1BLOWJAD" role="2OqNvi">
+                              <node concept="1xMEDy" id="1TS1BLOWJAE" role="1xVPHs">
+                                <node concept="chp4Y" id="1TS1BLOWJAF" role="ri$Ld">
+                                  <ref role="cht4Q" to="qdv7:2h6lNbWo01H" resolve="FeatureCondition" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3w_OXm" id="1TS1BLOWJAG" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3w_OXm" id="3biQRBA2iKP" role="2OqNvi" />
                 </node>
               </node>
             </node>
