@@ -7,13 +7,15 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.mpsutil.compare.pattern#3560698633098117280" uuid="9bd710ee-b327-4b50-8552-ecd3829a9d2b">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.compare.pattern#3560698633098117280" uuid="9bd710ee-b327-4b50-8552-ecd3829a9d2b">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
+      </external-templates>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
@@ -33,7 +35,22 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="9bd710ee-b327-4b50-8552-ecd3829a9d2b(com.mbeddr.mpsutil.compare.pattern#3560698633098117280)" />
+            <external-mapping>
+              <mapping-node modelUID="r:77a1f13f-8b60-493a-85be-0cd342d922f6(com.mbeddr.mpsutil.compare.pattern.generator.template.main@generator)" nodeID="3560698633098117281" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
