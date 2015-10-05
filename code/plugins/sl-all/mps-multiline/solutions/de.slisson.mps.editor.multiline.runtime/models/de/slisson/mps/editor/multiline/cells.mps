@@ -5553,6 +5553,116 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3gsTsycx91Z" role="jymVt" />
+    <node concept="3clFb_" id="3gsTsycx3Qu" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="indexOf" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="3gsTsycx3Qv" role="1B3o_S" />
+      <node concept="10Oyi0" id="3gsTsycx3Qx" role="3clF45" />
+      <node concept="37vLTG" id="3gsTsycx3Qy" role="3clF46">
+        <property role="TrG5h" value="cell" />
+        <node concept="3uibUv" id="3gsTsycx3Qz" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3gsTsycx3Q$" role="3clF47">
+        <node concept="3clFbJ" id="3gsTsycxepA" role="3cqZAp">
+          <node concept="3clFbS" id="3gsTsycxepC" role="3clFbx">
+            <node concept="3cpWs8" id="5sIlSbsXQeF" role="3cqZAp">
+              <node concept="3cpWsn" id="5sIlSbsXQeG" role="3cpWs9">
+                <property role="TrG5h" value="index" />
+                <node concept="10Oyi0" id="5sIlSbsXQeD" role="1tU5fm" />
+                <node concept="2OqwBi" id="5sIlSbsXQeH" role="33vP2m">
+                  <node concept="1eOMI4" id="5sIlSbsXQeI" role="2Oq$k0">
+                    <node concept="10QFUN" id="5sIlSbsXQeJ" role="1eOMHV">
+                      <node concept="37vLTw" id="5sIlSbsXQeK" role="10QFUP">
+                        <ref role="3cqZAo" node="3gsTsycx3Qy" resolve="cell" />
+                      </node>
+                      <node concept="3uibUv" id="5sIlSbsXQeL" role="10QFUM">
+                        <ref role="3uigEE" node="5lTqPuSd937" resolve="EditorCell_Word" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5sIlSbsXQeM" role="2OqNvi">
+                    <ref role="37wK5l" node="3gsTsycwRXJ" resolve="getWordNum" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5sIlSbsY7$q" role="3cqZAp">
+              <node concept="3clFbS" id="5sIlSbsY7$s" role="3clFbx">
+                <node concept="YS8fn" id="5sIlSbsYcl7" role="3cqZAp">
+                  <node concept="2ShNRf" id="5sIlSbsYcKp" role="YScLw">
+                    <node concept="1pGfFk" id="5sIlSbsYvKc" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="3cpWs3" id="5sIlSbsYyfY" role="37wK5m">
+                        <node concept="3nyPlj" id="5sIlSbsYysZ" role="3uHU7w">
+                          <ref role="37wK5l" to="g51k:~EditorCell_Collection.indexOf(jetbrains.mps.openapi.editor.cells.EditorCell):int" resolve="indexOf" />
+                          <node concept="37vLTw" id="5sIlSbsYz3k" role="37wK5m">
+                            <ref role="3cqZAo" node="3gsTsycx3Qy" resolve="cell" />
+                          </node>
+                        </node>
+                        <node concept="3cpWs3" id="5sIlSbsYx4J" role="3uHU7B">
+                          <node concept="3cpWs3" id="5sIlSbsYweW" role="3uHU7B">
+                            <node concept="Xl_RD" id="5sIlSbsYvWY" role="3uHU7B">
+                              <property role="Xl_RC" value="Cell with word number " />
+                            </node>
+                            <node concept="37vLTw" id="5sIlSbsYwuS" role="3uHU7w">
+                              <ref role="3cqZAo" node="5sIlSbsXQeG" resolve="index" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="5sIlSbsYxgW" role="3uHU7w">
+                            <property role="Xl_RC" value=" is at index " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="5sIlSbsYbaw" role="3clFbw">
+                <node concept="1rXfSq" id="5sIlSbsYbD0" role="3uHU7w">
+                  <ref role="37wK5l" node="5lTqPuSdd32" resolve="getCellAt" />
+                  <node concept="37vLTw" id="5sIlSbsYbVo" role="37wK5m">
+                    <ref role="3cqZAo" node="5sIlSbsXQeG" resolve="index" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5sIlSbsYaRX" role="3uHU7B">
+                  <ref role="3cqZAo" node="3gsTsycx3Qy" resolve="cell" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3gsTsycxfHi" role="3cqZAp">
+              <node concept="37vLTw" id="5sIlSbsXQeN" role="3cqZAk">
+                <ref role="3cqZAo" node="5sIlSbsXQeG" resolve="index" />
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="3gsTsycxf3l" role="3clFbw">
+            <node concept="3uibUv" id="3gsTsycxfjC" role="2ZW6by">
+              <ref role="3uigEE" node="5lTqPuSd937" resolve="EditorCell_Word" />
+            </node>
+            <node concept="37vLTw" id="3gsTsycxeKO" role="2ZW6bz">
+              <ref role="3cqZAo" node="3gsTsycx3Qy" resolve="cell" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3gsTsycx3QC" role="3cqZAp">
+          <node concept="3nyPlj" id="3gsTsycx3QB" role="3clFbG">
+            <ref role="37wK5l" to="g51k:~EditorCell_Collection.indexOf(jetbrains.mps.openapi.editor.cells.EditorCell):int" resolve="indexOf" />
+            <node concept="37vLTw" id="3gsTsycx3QA" role="37wK5m">
+              <ref role="3cqZAo" node="3gsTsycx3Qy" resolve="cell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3gsTsycx3Q_" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5lTqPuSd937">
     <property role="TrG5h" value="EditorCell_Word" />
@@ -8960,6 +9070,19 @@
       </node>
       <node concept="2AHcQZ" id="qYnRr58SGH" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3gsTsycugHN" role="jymVt" />
+    <node concept="3clFb_" id="3gsTsycwRXJ" role="jymVt">
+      <property role="TrG5h" value="getWordNum" />
+      <node concept="10Oyi0" id="3gsTsycwY4a" role="3clF45" />
+      <node concept="3Tm1VV" id="3gsTsycwRXM" role="1B3o_S" />
+      <node concept="3clFbS" id="3gsTsycwRXN" role="3clF47">
+        <node concept="3clFbF" id="3gsTsycx02B" role="3cqZAp">
+          <node concept="37vLTw" id="3gsTsycx02A" role="3clFbG">
+            <ref role="3cqZAo" node="7AUW7IrF3DM" resolve="myWordNum" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
