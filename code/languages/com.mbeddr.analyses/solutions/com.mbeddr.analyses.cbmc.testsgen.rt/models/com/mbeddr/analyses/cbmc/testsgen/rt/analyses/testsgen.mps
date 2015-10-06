@@ -741,40 +741,23 @@
                                     <node concept="3clFbS" id="6Yc5p6qDZK2" role="9aQI4">
                                       <node concept="3clFbJ" id="73BQep1QuTw" role="3cqZAp">
                                         <node concept="3clFbS" id="73BQep1QuTy" role="3clFbx">
-                                          <node concept="3clFbF" id="7bMk_RTQNBX" role="3cqZAp">
-                                            <node concept="1rXfSq" id="7bMk_RTQNBY" role="3clFbG">
-                                              <ref role="37wK5l" node="42G5eOpSOWe" resolve="debug" />
-                                              <node concept="Xl_RD" id="7bMk_RTQNBZ" role="37wK5m">
-                                                <property role="Xl_RC" value="saving test vector" />
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="3clFbF" id="6h8aqNePHMI" role="3cqZAp">
-                                            <node concept="2YIFZM" id="6h8aqNePHYG" role="3clFbG">
-                                              <ref role="1Pybhc" to="g4f5:73BQep1N5pg" resolve="TestsSaver" />
-                                              <ref role="37wK5l" to="g4f5:73BQep1N5pi" resolve="saveTests" />
-                                              <node concept="37vLTw" id="6h8aqNePI7A" role="37wK5m">
+                                          <node concept="3clFbF" id="1UHnSpz_JUn" role="3cqZAp">
+                                            <node concept="1rXfSq" id="1UHnSpz_JUl" role="3clFbG">
+                                              <ref role="37wK5l" node="1UHnSpz_FNW" resolve="doSaveTests" />
+                                              <node concept="37vLTw" id="1UHnSpz_K6l" role="37wK5m">
                                                 <ref role="3cqZAo" node="67iKQ7omoSU" resolve="tvr" />
                                               </node>
-                                              <node concept="2YIFZM" id="3rqorKKkfe$" role="37wK5m">
-                                                <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                              <node concept="2YIFZM" id="1UHnSpz_K6m" role="37wK5m">
                                                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                                <node concept="3uNrnE" id="73BQep1LjI1" role="37wK5m">
-                                                  <node concept="37vLTw" id="73BQep1LjI3" role="2$L3a6">
+                                                <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                                                <node concept="3uNrnE" id="1UHnSpz_K6n" role="37wK5m">
+                                                  <node concept="37vLTw" id="1UHnSpz_K6o" role="2$L3a6">
                                                     <ref role="3cqZAo" node="73BQep1LgjQ" resolve="currentTestVector" />
                                                   </node>
                                                 </node>
                                               </node>
-                                              <node concept="37vLTw" id="73BQep1QF_m" role="37wK5m">
+                                              <node concept="37vLTw" id="1UHnSpz_K6p" role="37wK5m">
                                                 <ref role="3cqZAo" node="73BQep1QxIE" resolve="analysisConfig" />
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="3clFbF" id="7bMk_RTQOg4" role="3cqZAp">
-                                            <node concept="1rXfSq" id="7bMk_RTQOg5" role="3clFbG">
-                                              <ref role="37wK5l" node="42G5eOpSOWe" resolve="debug" />
-                                              <node concept="Xl_RD" id="7bMk_RTQOg6" role="37wK5m">
-                                                <property role="Xl_RC" value="test vector saved" />
                                               </node>
                                             </node>
                                           </node>
@@ -871,6 +854,64 @@
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oef5V" role="jymVt" />
+    <node concept="3clFb_" id="1UHnSpz_FNW" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="doSaveTests" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1UHnSpz_FNZ" role="3clF47">
+        <node concept="3clFbF" id="7bMk_RTQNBX" role="3cqZAp">
+          <node concept="1rXfSq" id="7bMk_RTQNBY" role="3clFbG">
+            <ref role="37wK5l" node="42G5eOpSOWe" resolve="debug" />
+            <node concept="Xl_RD" id="7bMk_RTQNBZ" role="37wK5m">
+              <property role="Xl_RC" value="saving test vector" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6h8aqNePHMI" role="3cqZAp">
+          <node concept="2YIFZM" id="6h8aqNePHYG" role="3clFbG">
+            <ref role="1Pybhc" to="g4f5:73BQep1N5pg" resolve="TestsSaver" />
+            <ref role="37wK5l" to="g4f5:73BQep1N5pi" resolve="saveTests" />
+            <node concept="37vLTw" id="6h8aqNePI7A" role="37wK5m">
+              <ref role="3cqZAo" node="1UHnSpz_GCr" resolve="tvr" />
+            </node>
+            <node concept="37vLTw" id="1UHnSpz_KVF" role="37wK5m">
+              <ref role="3cqZAo" node="1UHnSpz_Hbd" resolve="vec" />
+            </node>
+            <node concept="37vLTw" id="1UHnSpz_Ld_" role="37wK5m">
+              <ref role="3cqZAo" node="1UHnSpz_HQp" resolve="ac" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7bMk_RTQOg4" role="3cqZAp">
+          <node concept="1rXfSq" id="7bMk_RTQOg5" role="3clFbG">
+            <ref role="37wK5l" node="42G5eOpSOWe" resolve="debug" />
+            <node concept="Xl_RD" id="7bMk_RTQOg6" role="37wK5m">
+              <property role="Xl_RC" value="test vector saved" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="1UHnSpz_F1G" role="1B3o_S" />
+      <node concept="3cqZAl" id="1UHnSpz_FLp" role="3clF45" />
+      <node concept="37vLTG" id="1UHnSpz_GCr" role="3clF46">
+        <property role="TrG5h" value="tvr" />
+        <node concept="3uibUv" id="1UHnSpz_GCq" role="1tU5fm">
+          <ref role="3uigEE" node="67iKQ7oe8kf" resolve="TestTraceResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1UHnSpz_Hbd" role="3clF46">
+        <property role="TrG5h" value="vec" />
+        <node concept="17QB3L" id="1UHnSpz_HOr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1UHnSpz_HQp" role="3clF46">
+        <property role="TrG5h" value="ac" />
+        <node concept="3Tqbb2" id="1UHnSpz_J20" role="1tU5fm">
+          <ref role="ehGHo" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="67iKQ7oef7G" role="jymVt" />
     <node concept="3clFb_" id="4fvA6ORD1sm" role="jymVt">
       <property role="1EzhhJ" value="false" />

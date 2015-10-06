@@ -1667,7 +1667,7 @@
             <node concept="3Tqbb2" id="73BQep1N5vm" role="1tU5fm" />
             <node concept="2YIFZM" id="1ENIgcph1MO" role="33vP2m">
               <ref role="1Pybhc" node="73BQep1QHEM" resolve="ValuesLifter" />
-              <ref role="37wK5l" node="1ENIgcph1MJ" resolve="doLiftValue" />
+              <ref role="37wK5l" node="1ENIgcph1MJ" resolve="liftValueWithType" />
               <node concept="37vLTw" id="1ENIgcph1MM" role="37wK5m">
                 <ref role="3cqZAo" node="1ENIgcpgb74" resolve="tpe" />
               </node>
@@ -1701,9 +1701,11 @@
     </node>
     <node concept="2tJIrI" id="1ENIgcph1TT" role="jymVt" />
     <node concept="2YIFZL" id="1ENIgcph1MJ" role="jymVt">
-      <property role="TrG5h" value="doLiftValue" />
-      <node concept="3Tm6S6" id="1ENIgcph1MK" role="1B3o_S" />
-      <node concept="3Tqbb2" id="1ENIgcph1ML" role="3clF45" />
+      <property role="TrG5h" value="liftValueWithType" />
+      <node concept="3Tm1VV" id="1UHnSpzIM3N" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1ENIgcph1ML" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
       <node concept="37vLTG" id="1ENIgcph1MA" role="3clF46">
         <property role="TrG5h" value="tpe" />
         <node concept="3Tqbb2" id="1ENIgcph1MB" role="1tU5fm">
@@ -1718,7 +1720,9 @@
         <node concept="3cpWs8" id="1ENIgcph1LW" role="3cqZAp">
           <node concept="3cpWsn" id="1ENIgcph1LX" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="3Tqbb2" id="1ENIgcph1LY" role="1tU5fm" />
+            <node concept="3Tqbb2" id="1ENIgcph1LY" role="1tU5fm">
+              <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+            </node>
             <node concept="10Nm6u" id="1ENIgcph1LZ" role="33vP2m" />
           </node>
         </node>
