@@ -1,4 +1,3 @@
-<!--comment-->
 <project name="com.mbeddr.core download mps" default="download">
 	
   <property name="MPS-Base-URL" value="http://download.jetbrains.com/mps/33"/> 
