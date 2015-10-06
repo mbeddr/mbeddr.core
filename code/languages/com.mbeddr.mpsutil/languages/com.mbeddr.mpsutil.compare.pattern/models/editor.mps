@@ -201,8 +201,8 @@
     <node concept="3EZMnI" id="53_zXRSEpy" role="2wV5jI">
       <node concept="3F0ifn" id="53_zXRSEpz" role="3EZMnx">
         <property role="3F0ifm" value="ancestor" />
-        <node concept="Vb9p2" id="53_zXRUUSm" role="3F10Kt">
-          <property role="Vbekb" value="PLAIN" />
+        <node concept="Vb9p2" id="1ho_jHB_XYx" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
         </node>
       </node>
       <node concept="3EZMnI" id="1QgHHLXCLjj" role="3EZMnx">
@@ -255,7 +255,7 @@
       <node concept="3F0ifn" id="53_zXRSEpo" role="3EZMnx">
         <property role="3F0ifm" value="type" />
         <node concept="Vb9p2" id="53_zXRUTAF" role="3F10Kt">
-          <property role="Vbekb" value="PLAIN" />
+          <property role="Vbekb" value="BOLD" />
         </node>
       </node>
       <node concept="3EZMnI" id="1QgHHLXCLpT" role="3EZMnx">
@@ -307,8 +307,8 @@
     <node concept="3EZMnI" id="53_zXRSEpO" role="2wV5jI">
       <node concept="3F0ifn" id="53_zXRSEpP" role="3EZMnx">
         <property role="3F0ifm" value="parent" />
-        <node concept="Vb9p2" id="53_zXRUUfI" role="3F10Kt">
-          <property role="Vbekb" value="PLAIN" />
+        <node concept="Vb9p2" id="1ho_jHB_XSE" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
         </node>
       </node>
       <node concept="3EZMnI" id="1QgHHLXCLwv" role="3EZMnx">
