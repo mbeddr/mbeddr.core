@@ -127,9 +127,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -548,15 +545,10 @@
     <node concept="2UmK3q" id="70oIz4ajkob" role="2Um5zG">
       <node concept="3clFbS" id="70oIz4ajkoc" role="2VODD2">
         <node concept="3cpWs6" id="70oIz4aklCz" role="3cqZAp">
-          <node concept="2OqwBi" id="agjuZp1uFN" role="3cqZAk">
-            <node concept="2OqwBi" id="70oIz4al4i5" role="2Oq$k0">
-              <node concept="2WthIp" id="70oIz4al4i8" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="70oIz4al4ia" role="2OqNvi">
-                <ref role="2WH_rO" node="70oIz4ak0cm" resolve="editorComponent" />
-              </node>
-            </node>
-            <node concept="liA8E" id="agjuZp1wKA" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.getExternalComponent():javax.swing.JComponent" resolve="getExternalComponent" />
+          <node concept="2OqwBi" id="70oIz4al4i5" role="3cqZAk">
+            <node concept="2WthIp" id="70oIz4al4i8" role="2Oq$k0" />
+            <node concept="2BZ7hE" id="YJrcxt5QWJ" role="2OqNvi">
+              <ref role="2WH_rO" node="4jXS_uRuvmE" resolve="panel" />
             </node>
           </node>
         </node>
@@ -658,27 +650,30 @@
             </node>
           </node>
         </node>
-        <node concept="u8gfJ" id="4jXS_uRvU3q" role="3cqZAp">
-          <node concept="3clFbF" id="4jXS_uRuWw9" role="u8lrQ">
-            <node concept="2OqwBi" id="4jXS_uRuXgO" role="3clFbG">
-              <node concept="2OqwBi" id="4jXS_uRuWzX" role="2Oq$k0">
-                <node concept="2WthIp" id="4jXS_uRuWw7" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="4jXS_uRuWQb" role="2OqNvi">
-                  <ref role="2WH_rO" node="4jXS_uRuvmE" resolve="panel" />
-                </node>
+        <node concept="3clFbF" id="4jXS_uRuWw9" role="3cqZAp">
+          <node concept="2OqwBi" id="4jXS_uRuXgO" role="3clFbG">
+            <node concept="2OqwBi" id="4jXS_uRuWzX" role="2Oq$k0">
+              <node concept="2WthIp" id="4jXS_uRuWw7" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="4jXS_uRuWQb" role="2OqNvi">
+                <ref role="2WH_rO" node="4jXS_uRuvmE" resolve="panel" />
               </node>
-              <node concept="liA8E" id="4jXS_uRuYZs" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-                <node concept="2OqwBi" id="4jXS_uRuYZY" role="37wK5m">
+            </node>
+            <node concept="liA8E" id="4jXS_uRuYZs" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+              <node concept="2OqwBi" id="YJrcxt6bGa" role="37wK5m">
+                <node concept="2OqwBi" id="4jXS_uRuYZY" role="2Oq$k0">
                   <node concept="2WthIp" id="4jXS_uRuZ01" role="2Oq$k0" />
                   <node concept="2BZ7hE" id="4jXS_uRuZ03" role="2OqNvi">
                     <ref role="2WH_rO" node="70oIz4ak0cm" resolve="editorComponent" />
                   </node>
                 </node>
-                <node concept="10M0yZ" id="4jXS_uRuZrN" role="37wK5m">
-                  <ref role="1PxDUh" to="z60i:~BorderLayout" resolve="BorderLayout" />
-                  <ref role="3cqZAo" to="z60i:~BorderLayout.CENTER" resolve="CENTER" />
+                <node concept="liA8E" id="YJrcxt6dB6" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getExternalComponent():javax.swing.JComponent" resolve="getExternalComponent" />
                 </node>
+              </node>
+              <node concept="10M0yZ" id="4jXS_uRuZrN" role="37wK5m">
+                <ref role="1PxDUh" to="z60i:~BorderLayout" resolve="BorderLayout" />
+                <ref role="3cqZAo" to="z60i:~BorderLayout.CENTER" resolve="CENTER" />
               </node>
             </node>
           </node>
@@ -848,6 +843,26 @@
               <ref role="37wK5l" to="exr9:~EditorComponent.addUpperComponent(javax.swing.JComponent):void" resolve="addUpperComponent" />
               <node concept="37vLTw" id="4jXS_uRvCR7" role="37wK5m">
                 <ref role="3cqZAo" node="4jXS_uRv_Il" resolve="toolbar" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="YJrcxt5TdI" role="3cqZAp">
+          <node concept="2OqwBi" id="YJrcxt5TNc" role="3clFbG">
+            <node concept="2OqwBi" id="YJrcxt5TdC" role="2Oq$k0">
+              <node concept="2WthIp" id="YJrcxt5TdF" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="YJrcxt5TdH" role="2OqNvi">
+                <ref role="2WH_rO" node="4jXS_uRuvmE" resolve="panel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="YJrcxt5Vr3" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,int):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="YJrcxt5Vr8" role="37wK5m">
+                <ref role="3cqZAo" node="4jXS_uRv_Il" resolve="toolbar" />
+              </node>
+              <node concept="10M0yZ" id="6JP69lPx1j_" role="37wK5m">
+                <ref role="1PxDUh" to="z60i:~BorderLayout" resolve="BorderLayout" />
+                <ref role="3cqZAo" to="z60i:~BorderLayout.WEST" resolve="WEST" />
               </node>
             </node>
           </node>
