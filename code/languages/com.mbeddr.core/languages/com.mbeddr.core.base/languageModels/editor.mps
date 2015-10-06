@@ -3619,14 +3619,6 @@
         <node concept="27S6Sx" id="2mxBqli4bdC" role="3EZMnx">
           <ref role="1NtTu8" to="vs0r:7McwK6mrL3z" resolve="hideOkOnes" />
         </node>
-        <node concept="3XFhqQ" id="2mxBqli5oaV" role="3EZMnx" />
-        <node concept="3XFhqQ" id="30hqvrsTImr" role="3EZMnx" />
-        <node concept="3F0ifn" id="30hqvrsTIoW" role="3EZMnx">
-          <property role="3F0ifm" value="export as XML:" />
-        </node>
-        <node concept="27S6Sx" id="30hqvrsTIn$" role="3EZMnx">
-          <ref role="1NtTu8" to="vs0r:30hqvrsTGsn" resolve="exportAsXML" />
-        </node>
       </node>
       <node concept="3EZMnI" id="SZmm_$GqLS" role="3EZMnx">
         <node concept="VPM3Z" id="SZmm_$GqLT" role="3F10Kt">

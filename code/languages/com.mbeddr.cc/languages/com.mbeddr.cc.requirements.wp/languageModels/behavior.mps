@@ -14,7 +14,6 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="i9nw" ref="r:94759640-cb45-42d0-8958-8d6d11c7b791(com.mbeddr.mpsutil.nodeviewer.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -484,22 +483,6 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7sHl0myf3IB" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="7tiQa3SMGYq" role="13h7CS">
-      <property role="TrG5h" value="getInfoNode" />
-      <ref role="13i0hy" to="i9nw:10IovSqdniH" resolve="getInfoNode" />
-      <node concept="3clFbS" id="7tiQa3SMGYt" role="3clF47">
-        <node concept="3clFbF" id="7tiQa3SMHf_" role="3cqZAp">
-          <node concept="2OqwBi" id="7tiQa3SMHhZ" role="3clFbG">
-            <node concept="13iPFW" id="7tiQa3SMHf$" role="2Oq$k0" />
-            <node concept="3TrEf2" id="7tiQa3SMHB7" role="2OqNvi">
-              <ref role="3Tt5mk" to="6pek:7sHl0myf3Ii" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="7tiQa3SMHfw" role="3clF45" />
-      <node concept="3Tm1VV" id="7tiQa3SMHfx" role="1B3o_S" />
     </node>
   </node>
   <node concept="13h7C7" id="7sHl0myf3Lc">

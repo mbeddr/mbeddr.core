@@ -61,8 +61,8 @@
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -3082,19 +3082,6 @@
       <node concept="37vLTG" id="7hIyKqbGtku" role="3clF46">
         <property role="TrG5h" value="id" />
         <node concept="17QB3L" id="7hIyKqbGtkv" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="6iaOvgbxrZO" role="13h7CS">
-      <property role="TrG5h" value="getXMLRepresentation" />
-      <property role="13i0it" value="true" />
-      <node concept="3Tm1VV" id="6iaOvgbxrZP" role="1B3o_S" />
-      <node concept="3clFbS" id="6iaOvgbxrZQ" role="3clF47">
-        <node concept="3clFbF" id="6iaOvgbxs74" role="3cqZAp">
-          <node concept="10Nm6u" id="6iaOvgbxs73" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="6iaOvgbxs6L" role="3clF45">
-        <ref role="ehGHo" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
       </node>
     </node>
     <node concept="13hLZK" id="K292flwHwc" role="13h7CW">

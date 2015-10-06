@@ -400,7 +400,6 @@
         <property id="4423545983997787056" name="lastUdpatedBy" index="2iEaKi" />
         <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
         <property id="8691429746170824734" name="sorted" index="1Ema5g" />
-        <property id="3463666097413605143" name="exportAsXML" index="3GXUVx" />
         <child id="671216505796427450" name="summaries" index="q3PPx" />
         <child id="865293814733115677" name="query" index="3pwbkY" />
         <child id="865293814733118687" name="results" index="3pwbzW" />
@@ -12736,7 +12735,6 @@
     <node concept="3pwaUv" id="26F1Swi93S_" role="3pwaUu">
       <property role="TrG5h" value="TracesForFlightJudgementRules" />
       <property role="1Ema5g" value="true" />
-      <property role="3GXUVx" value="true" />
       <node concept="NGhCe" id="26F1Swi93SB" role="3pwbkY">
         <ref role="NGhyX" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
       </node>
