@@ -25,6 +25,7 @@
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -77,9 +78,6 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -105,6 +103,9 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support">
       <concept id="210803258685954773" name="test.com.mbeddr.mpsutil.xml.fix.support.structure.TestConcept" flags="ng" index="1__7qB" />
@@ -115,6 +116,13 @@
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+      <concept id="1172017222794" name="jetbrains.mps.baseLanguage.unitTest.structure.Fail" flags="nn" index="3xETmq" />
+      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
+        <child id="1172073511101" name="message" index="3_1BAH" />
+      </concept>
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
+        <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
@@ -158,16 +166,40 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="3Q7Z7lbKdDM" role="3cqZAp">
+              <node concept="3cpWsn" id="3Q7Z7lbKdDN" role="3cpWs9">
+                <property role="TrG5h" value="facet" />
+                <node concept="3uibUv" id="3Q7Z7lbKdDJ" role="1tU5fm">
+                  <ref role="3uigEE" to="b0pz:~TestsFacet" resolve="TestsFacet" />
+                </node>
+                <node concept="2OqwBi" id="3Q7Z7lbKdDO" role="33vP2m">
+                  <node concept="37vLTw" id="3Q7Z7lbKdDP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="bGV79Bu$Sq" resolve="module" />
+                  </node>
+                  <node concept="liA8E" id="3Q7Z7lbKdDQ" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getFacet(java.lang.Class):org.jetbrains.mps.openapi.module.SModuleFacet" resolve="getFacet" />
+                    <node concept="3VsKOn" id="3Q7Z7lbKdDR" role="37wK5m">
+                      <ref role="3VsUkX" to="b0pz:~TestsFacet" resolve="TestsFacet" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="bGV79Buy_g" role="3cqZAp">
               <node concept="3cpWsn" id="bGV79Buy_h" role="3cpWs9">
                 <property role="TrG5h" value="outputPath" />
                 <node concept="17QB3L" id="bGV79BuMO8" role="1tU5fm" />
-                <node concept="2OqwBi" id="bGV79Buy_i" role="33vP2m">
-                  <node concept="37vLTw" id="bGV79Bu$Sx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="bGV79Bu$Sq" resolve="module" />
+                <node concept="2OqwBi" id="3Q7Z7lbKetS" role="33vP2m">
+                  <node concept="2OqwBi" id="3Q7Z7lbKdWq" role="2Oq$k0">
+                    <node concept="37vLTw" id="3Q7Z7lbKdDS" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3Q7Z7lbKdDN" resolve="facet" />
+                    </node>
+                    <node concept="liA8E" id="3Q7Z7lbKeoZ" role="2OqNvi">
+                      <ref role="37wK5l" to="b0pz:~TestsFacet.getTestsOutputPath():jetbrains.mps.vfs.IFile" resolve="getTestsOutputPath" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="bGV79Buy_p" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getTestsGeneratorOutputPath():java.lang.String" resolve="getTestsGeneratorOutputPath" />
+                  <node concept="liA8E" id="3Q7Z7lbKe$I" role="2OqNvi">
+                    <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
                   </node>
                 </node>
               </node>
@@ -246,13 +278,15 @@
           </node>
           <node concept="TDmWw" id="bGV79Buqhi" role="TEbGg">
             <node concept="3clFbS" id="bGV79Buqhj" role="TDEfX">
-              <node concept="3clFbF" id="bGV79Burfc" role="3cqZAp">
-                <node concept="2OqwBi" id="bGV79BurfT" role="3clFbG">
-                  <node concept="37vLTw" id="bGV79Burfb" role="2Oq$k0">
-                    <ref role="3cqZAo" node="bGV79Buqhk" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="bGV79Burwu" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+              <node concept="3xETmq" id="3Q7Z7lbKsjt" role="3cqZAp">
+                <node concept="3_1$Yv" id="3Q7Z7lbKslt" role="3_9lra">
+                  <node concept="2OqwBi" id="3Q7Z7lbKso9" role="3_1BAH">
+                    <node concept="37vLTw" id="3Q7Z7lbKsne" role="2Oq$k0">
+                      <ref role="3cqZAo" node="bGV79Buqhk" resolve="e" />
+                    </node>
+                    <node concept="liA8E" id="3Q7Z7lbKssk" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    </node>
                   </node>
                 </node>
               </node>
