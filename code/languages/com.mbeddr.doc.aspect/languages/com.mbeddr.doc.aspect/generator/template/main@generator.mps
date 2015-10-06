@@ -27,7 +27,7 @@
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
-    <import index="e61n" ref="r:febb8817-2b8e-49d8-97c3-a9fdf02c5b29(com.mbeddr.doc.aspect.utils)" />
+    <import index="6cih" ref="r:5d7453d6-e6d4-40dd-b5cb-83ecc2648d3e(com.mbeddr.doc.aspect.generator.template.util)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -387,29 +387,29 @@
       <node concept="30G5F_" id="6Y6aL9q0$I9" role="30HLyM">
         <node concept="3clFbS" id="6Y6aL9q0$Ia" role="2VODD2">
           <node concept="3clFbF" id="6Y6aL9q0A2Z" role="3cqZAp">
-            <node concept="2YIFZM" id="agjuZpbVjh" role="3clFbG">
-              <ref role="37wK5l" to="e61n:1XXGcSTYFLY" resolve="isAspectOfLanguage" />
-              <ref role="1Pybhc" to="e61n:agjuZpbn5a" resolve="LanguageAspectRuntimeUtils" />
-              <node concept="2OqwBi" id="agjuZpbVji" role="37wK5m">
-                <node concept="v3LJS" id="agjuZpbVjj" role="2Oq$k0">
+            <node concept="2YIFZM" id="YJrcxt8vYO" role="3clFbG">
+              <ref role="37wK5l" to="6cih:1XXGcSTYFLY" resolve="isAspectOfLanguage" />
+              <ref role="1Pybhc" to="6cih:agjuZpbn5a" resolve="LanguageRuntimeGenUtils" />
+              <node concept="2OqwBi" id="YJrcxt8vYP" role="37wK5m">
+                <node concept="v3LJS" id="YJrcxt8vYQ" role="2Oq$k0">
                   <ref role="v3LJV" node="6Y6aL9q0$9E" resolve="modelRef" />
                 </node>
-                <node concept="liA8E" id="agjuZpbVjk" role="2OqNvi">
+                <node concept="liA8E" id="YJrcxt8vYR" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
-                  <node concept="2OqwBi" id="agjuZpbVjl" role="37wK5m">
-                    <node concept="2OqwBi" id="agjuZpbVjm" role="2Oq$k0">
-                      <node concept="1Q79dO" id="agjuZpbVjn" role="2Oq$k0" />
-                      <node concept="liA8E" id="agjuZpbVjo" role="2OqNvi">
+                  <node concept="2OqwBi" id="YJrcxt8vYS" role="37wK5m">
+                    <node concept="2OqwBi" id="YJrcxt8vYT" role="2Oq$k0">
+                      <node concept="1Q79dO" id="YJrcxt8vYU" role="2Oq$k0" />
+                      <node concept="liA8E" id="YJrcxt8vYV" role="2OqNvi">
                         <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="agjuZpbVjp" role="2OqNvi">
+                    <node concept="liA8E" id="YJrcxt8vYW" role="2OqNvi">
                       <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="35c_gC" id="agjuZpbVjr" role="37wK5m">
+              <node concept="35c_gC" id="YJrcxt8vYX" role="37wK5m">
                 <ref role="35c_gD" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
               </node>
             </node>
