@@ -41,15 +41,35 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+    </language>
+    <language id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern">
+      <concept id="3560698633098314023" name="com.mbeddr.mpsutil.compare.pattern.structure.Pattern" flags="ng" index="2FommH">
+        <child id="5455284157993863838" name="builderNode" index="2pJPEn" />
+      </concept>
+      <concept id="3560698633098601006" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternBuilderNode" flags="ng" index="2Fpoq$">
+        <reference id="91081616816648150" name="concept" index="1QFNBD" />
+      </concept>
+      <concept id="91081616816150757" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternType" flags="ig" index="1QDCVq">
+        <reference id="91081616816150758" name="concept" index="1QDCVp" />
+      </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
@@ -146,7 +166,19 @@
       <property role="TrG5h" value="testPatterns" />
       <node concept="3cqZAl" id="35E98Eq3aP0" role="3clF45" />
       <node concept="3clFbS" id="35E98Eq3aP4" role="3clF47">
-        <node concept="3clFbH" id="53_zXRT0ZT" role="3cqZAp" />
+        <node concept="3cpWs8" id="1ho_jHBA0Vb" role="3cqZAp">
+          <node concept="3cpWsn" id="1ho_jHBA0Vh" role="3cpWs9">
+            <property role="TrG5h" value="pattern" />
+            <node concept="1QDCVq" id="1ho_jHBA0Vj" role="1tU5fm">
+              <ref role="1QDCVp" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+            <node concept="2FommH" id="1ho_jHBA0VW" role="33vP2m">
+              <node concept="2Fpoq$" id="1ho_jHBA17V" role="2pJPEn">
+                <ref role="1QFNBD" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="65E6xpGUqQM" role="1SKRRt">
