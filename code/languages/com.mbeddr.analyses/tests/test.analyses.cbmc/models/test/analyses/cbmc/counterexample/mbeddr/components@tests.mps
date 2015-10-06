@@ -545,9 +545,6 @@
           <node concept="38rIoz" id="8FyjeteZdN" role="38rM$J">
             <property role="38rIoG" value="aPar" />
             <property role="38rMdH" value="2" />
-            <node concept="3Tqbb2" id="76de8fhp6Zc" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-            </node>
           </node>
           <node concept="38rIoz" id="8FyjeteZdP" role="38rM$J">
             <property role="38rIoG" value="as.inner.b" />

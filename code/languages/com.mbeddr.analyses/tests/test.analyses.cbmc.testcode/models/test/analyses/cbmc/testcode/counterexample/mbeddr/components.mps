@@ -91,6 +91,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
@@ -2499,8 +2500,27 @@
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="13FtHz69dHZ" resolve="entryPointComp5" />
     </node>
+    <node concept="1nvAUJ" id="1GDKzvUkUi6" role="3V$2$K">
+      <property role="2lelRm" value="true" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="3jtKiJDjmzi" resolve="entry" />
+    </node>
     <node concept="3GEVxB" id="2UdC0h0PRVa" role="3W6d8T">
       <ref role="3GEb4d" node="13FtHz696Vm" resolve="Comp5" />
+    </node>
+    <node concept="3GEVxB" id="1GDKzvUkUhZ" role="3W6d8T">
+      <ref role="3GEb4d" node="3jtKiJDjmyO" resolve="StatefulComponents" />
     </node>
   </node>
 </model>
