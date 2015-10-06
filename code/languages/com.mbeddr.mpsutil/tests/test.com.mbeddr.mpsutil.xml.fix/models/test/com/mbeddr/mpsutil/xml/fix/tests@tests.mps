@@ -47,9 +47,6 @@
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
       </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
@@ -82,7 +79,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -95,13 +91,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
@@ -185,64 +176,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="bGV79Buy_g" role="3cqZAp">
-              <node concept="3cpWsn" id="bGV79Buy_h" role="3cpWs9">
-                <property role="TrG5h" value="outputPath" />
-                <node concept="17QB3L" id="bGV79BuMO8" role="1tU5fm" />
-                <node concept="2OqwBi" id="3Q7Z7lbKetS" role="33vP2m">
-                  <node concept="2OqwBi" id="3Q7Z7lbKdWq" role="2Oq$k0">
-                    <node concept="37vLTw" id="3Q7Z7lbKdDS" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3Q7Z7lbKdDN" resolve="facet" />
+            <node concept="3cpWs8" id="lMaDrUhMVa" role="3cqZAp">
+              <node concept="3cpWsn" id="lMaDrUhMVb" role="3cpWs9">
+                <property role="TrG5h" value="path" />
+                <node concept="17QB3L" id="lMaDrUhN7K" role="1tU5fm" />
+                <node concept="2OqwBi" id="lMaDrUhMVc" role="33vP2m">
+                  <node concept="2OqwBi" id="lMaDrUhMVd" role="2Oq$k0">
+                    <node concept="BaHAS" id="lMaDrUhMVe" role="2Oq$k0">
+                      <property role="BaHAW" value="test.com.mbeddr.mpsutil.xml.fix.tests" />
+                      <property role="BaGAP" value="tests" />
                     </node>
-                    <node concept="liA8E" id="3Q7Z7lbKeoZ" role="2OqNvi">
-                      <ref role="37wK5l" to="b0pz:~TestsFacet.getTestsOutputPath():jetbrains.mps.vfs.IFile" resolve="getTestsOutputPath" />
-                    </node>
+                    <node concept="LkI2h" id="lMaDrUhMVf" role="2OqNvi" />
                   </node>
-                  <node concept="liA8E" id="3Q7Z7lbKe$I" role="2OqNvi">
-                    <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="bGV79BuWSf" role="3cqZAp">
-              <node concept="3cpWsn" id="bGV79BuWSg" role="3cpWs9">
-                <property role="TrG5h" value="file" />
-                <node concept="3uibUv" id="bGV79BuWSd" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
-                </node>
-                <node concept="2ShNRf" id="bGV79BuWSh" role="33vP2m">
-                  <node concept="1pGfFk" id="bGV79BuWSi" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
-                    <node concept="2ShNRf" id="bGV79BuWSj" role="37wK5m">
-                      <node concept="1pGfFk" id="bGV79BuWSk" role="2ShVmc">
-                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                        <node concept="37vLTw" id="bGV79BuWSl" role="37wK5m">
-                          <ref role="3cqZAo" node="bGV79Buy_h" resolve="outputPath" />
-                        </node>
-                      </node>
+                  <node concept="liA8E" id="lMaDrUhMVg" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                    <node concept="Xl_RD" id="lMaDrUhMVh" role="37wK5m">
+                      <property role="Xl_RC" value="." />
                     </node>
-                    <node concept="3cpWs3" id="bGV79BuZnb" role="37wK5m">
-                      <node concept="Xl_RD" id="bGV79BuZne" role="3uHU7w">
-                        <property role="Xl_RC" value="/testXmlFile.xml" />
-                      </node>
-                      <node concept="2OqwBi" id="bGV79BuWSm" role="3uHU7B">
-                        <node concept="2OqwBi" id="bGV79BuWSn" role="2Oq$k0">
-                          <node concept="BaHAS" id="bGV79BuWSo" role="2Oq$k0">
-                            <property role="BaHAW" value="test.com.mbeddr.mpsutil.xml.fix.tests" />
-                            <property role="BaGAP" value="tests" />
-                          </node>
-                          <node concept="LkI2h" id="bGV79BuWSp" role="2OqNvi" />
-                        </node>
-                        <node concept="liA8E" id="bGV79BuWSq" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                          <node concept="Xl_RD" id="bGV79BuWSr" role="37wK5m">
-                            <property role="Xl_RC" value="." />
-                          </node>
-                          <node concept="Xl_RD" id="bGV79BuWSs" role="37wK5m">
-                            <property role="Xl_RC" value="/" />
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="Xl_RD" id="lMaDrUhMVi" role="37wK5m">
+                      <property role="Xl_RC" value="/" />
                     </node>
                   </node>
                 </node>
@@ -255,12 +207,33 @@
                 <node concept="2YIFZM" id="bGV79Buq4p" role="33vP2m">
                   <ref role="37wK5l" to="8oaq:~IOUtils.toString(java.io.InputStream):java.lang.String" resolve="toString" />
                   <ref role="1Pybhc" to="8oaq:~IOUtils" resolve="IOUtils" />
-                  <node concept="2ShNRf" id="bGV79BuX9Z" role="37wK5m">
-                    <node concept="1pGfFk" id="bGV79BuXtj" role="2ShVmc">
-                      <ref role="37wK5l" to="guwi:~FileInputStream.&lt;init&gt;(java.io.File)" resolve="FileInputStream" />
-                      <node concept="37vLTw" id="bGV79BuXvJ" role="37wK5m">
-                        <ref role="3cqZAo" node="bGV79BuWSg" resolve="file" />
+                  <node concept="2OqwBi" id="lMaDrUhMLP" role="37wK5m">
+                    <node concept="2OqwBi" id="lMaDrUhNge" role="2Oq$k0">
+                      <node concept="2OqwBi" id="lMaDrUhMDF" role="2Oq$k0">
+                        <node concept="2OqwBi" id="3Q7Z7lbKdWq" role="2Oq$k0">
+                          <node concept="37vLTw" id="3Q7Z7lbKdDS" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3Q7Z7lbKdDN" resolve="facet" />
+                          </node>
+                          <node concept="liA8E" id="3Q7Z7lbKeoZ" role="2OqNvi">
+                            <ref role="37wK5l" to="b0pz:~TestsFacet.getTestsOutputPath():jetbrains.mps.vfs.IFile" resolve="getTestsOutputPath" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="lMaDrUhMJ4" role="2OqNvi">
+                          <ref role="37wK5l" to="3ju5:~IFile.getDescendant(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getDescendant" />
+                          <node concept="37vLTw" id="lMaDrUhNcK" role="37wK5m">
+                            <ref role="3cqZAo" node="lMaDrUhMVb" resolve="path" />
+                          </node>
+                        </node>
                       </node>
+                      <node concept="liA8E" id="lMaDrUhNlN" role="2OqNvi">
+                        <ref role="37wK5l" to="3ju5:~IFile.getDescendant(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getDescendant" />
+                        <node concept="Xl_RD" id="lMaDrUhNuO" role="37wK5m">
+                          <property role="Xl_RC" value="testXmlFile.xml" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="lMaDrUhMR_" role="2OqNvi">
+                      <ref role="37wK5l" to="3ju5:~IFile.openInputStream():java.io.InputStream" resolve="openInputStream" />
                     </node>
                   </node>
                 </node>
