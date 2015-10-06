@@ -38,6 +38,10 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -67,6 +71,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -75,7 +80,14 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -200,6 +212,67 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="lMaDrUhOtD" role="3cqZAp">
+              <node concept="3cpWsn" id="lMaDrUhOtE" role="3cpWs9">
+                <property role="TrG5h" value="testsOutputPath" />
+                <node concept="3uibUv" id="lMaDrUhOt_" role="1tU5fm">
+                  <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
+                </node>
+                <node concept="2OqwBi" id="lMaDrUhOtF" role="33vP2m">
+                  <node concept="37vLTw" id="lMaDrUhOtG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Q7Z7lbKdDN" resolve="facet" />
+                  </node>
+                  <node concept="liA8E" id="lMaDrUhOtH" role="2OqNvi">
+                    <ref role="37wK5l" to="b0pz:~TestsFacet.getTestsOutputPath():jetbrains.mps.vfs.IFile" resolve="getTestsOutputPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="lMaDrUhT19" role="3cqZAp">
+              <node concept="3clFbS" id="lMaDrUhT1b" role="3clFbx">
+                <node concept="3clFbF" id="lMaDrUhTXS" role="3cqZAp">
+                  <node concept="37vLTI" id="lMaDrUhU0u" role="3clFbG">
+                    <node concept="2OqwBi" id="lMaDrUhU8M" role="37vLTx">
+                      <node concept="2OqwBi" id="lMaDrUhU3r" role="2Oq$k0">
+                        <node concept="37vLTw" id="lMaDrUhU2V" role="2Oq$k0">
+                          <ref role="3cqZAo" node="lMaDrUhOtE" resolve="testsOutputPath" />
+                        </node>
+                        <node concept="liA8E" id="lMaDrUhU84" role="2OqNvi">
+                          <ref role="37wK5l" to="3ju5:~IFile.getParent():jetbrains.mps.vfs.IFile" resolve="getParent" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="lMaDrUhUdL" role="2OqNvi">
+                        <ref role="37wK5l" to="3ju5:~IFile.getParent():jetbrains.mps.vfs.IFile" resolve="getParent" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="lMaDrUhTXQ" role="37vLTJ">
+                      <ref role="3cqZAo" node="lMaDrUhOtE" resolve="testsOutputPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="lMaDrUhTsh" role="3clFbw">
+                <node concept="2OqwBi" id="lMaDrUhTjq" role="2Oq$k0">
+                  <node concept="2OqwBi" id="lMaDrUhTdl" role="2Oq$k0">
+                    <node concept="37vLTw" id="lMaDrUhTaN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="lMaDrUhOtE" resolve="testsOutputPath" />
+                    </node>
+                    <node concept="liA8E" id="lMaDrUhTgG" role="2OqNvi">
+                      <ref role="37wK5l" to="3ju5:~IFile.getParent():jetbrains.mps.vfs.IFile" resolve="getParent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="lMaDrUhTo5" role="2OqNvi">
+                    <ref role="37wK5l" to="3ju5:~IFile.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="lMaDrUhTEr" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="lMaDrUhTHd" role="37wK5m">
+                    <property role="Xl_RC" value="META-INF" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="bGV79Buq4n" role="3cqZAp">
               <node concept="3cpWsn" id="bGV79Buq4o" role="3cpWs9">
                 <property role="TrG5h" value="content" />
@@ -210,13 +283,8 @@
                   <node concept="2OqwBi" id="lMaDrUhMLP" role="37wK5m">
                     <node concept="2OqwBi" id="lMaDrUhNge" role="2Oq$k0">
                       <node concept="2OqwBi" id="lMaDrUhMDF" role="2Oq$k0">
-                        <node concept="2OqwBi" id="3Q7Z7lbKdWq" role="2Oq$k0">
-                          <node concept="37vLTw" id="3Q7Z7lbKdDS" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3Q7Z7lbKdDN" resolve="facet" />
-                          </node>
-                          <node concept="liA8E" id="3Q7Z7lbKeoZ" role="2OqNvi">
-                            <ref role="37wK5l" to="b0pz:~TestsFacet.getTestsOutputPath():jetbrains.mps.vfs.IFile" resolve="getTestsOutputPath" />
-                          </node>
+                        <node concept="37vLTw" id="lMaDrUhOtI" role="2Oq$k0">
+                          <ref role="3cqZAo" node="lMaDrUhOtE" resolve="testsOutputPath" />
                         </node>
                         <node concept="liA8E" id="lMaDrUhMJ4" role="2OqNvi">
                           <ref role="37wK5l" to="3ju5:~IFile.getDescendant(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getDescendant" />
