@@ -2,12 +2,12 @@
 <model ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -42,6 +42,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
         <child id="1169127546356" name="extends" index="PrDN$" />
@@ -71,6 +72,7 @@
   <node concept="PlHQZ" id="vymDPxT3Jf">
     <property role="TrG5h" value="ISteppable" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="1774622316" />
     <node concept="PrWs8" id="1d7Vth$qIMq" role="PrDN$">
       <ref role="PrY4T" node="1d7Vth$qHPp" resolve="ISuspendableNode" />
     </node>
@@ -78,26 +80,32 @@
   <node concept="PlHQZ" id="2LXb$uuiv7q">
     <property role="TrG5h" value="IStackFrameContributor" />
     <property role="3GE5qa" value="callstack" />
+    <property role="1pbfSe" value="892919775" />
   </node>
   <node concept="PlHQZ" id="7QLGLLtiESZ">
     <property role="TrG5h" value="IWatchablesProvider" />
     <property role="3GE5qa" value="watches" />
+    <property role="1pbfSe" value="620994213" />
   </node>
   <node concept="PlHQZ" id="3SnnFeub0mq">
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="IWatchablesProviderContext" />
+    <property role="1pbfSe" value="599563187" />
   </node>
   <node concept="PlHQZ" id="7DakfXFco7$">
     <property role="TrG5h" value="IBreakpointSupport" />
     <property role="3GE5qa" value="breakpoint" />
+    <property role="1pbfSe" value="444869917" />
   </node>
   <node concept="PlHQZ" id="2R5TvtOl$CY">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="IStepIntoable" />
+    <property role="1pbfSe" value="1575210955" />
   </node>
   <node concept="PlHQZ" id="2R5TvtOlFs8">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="ISteppableContext" />
+    <property role="1pbfSe" value="1575183105" />
     <node concept="PrWs8" id="1d7Vth$qIIv" role="PrDN$">
       <ref role="PrY4T" node="1d7Vth$qHPp" resolve="ISuspendableNode" />
     </node>
@@ -105,10 +113,12 @@
   <node concept="PlHQZ" id="26BCBMXyK6_">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="ISteppableUnit" />
+    <property role="1pbfSe" value="550329311" />
   </node>
   <node concept="PlHQZ" id="UWuwz3o4rv">
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="IVirtualStackFrameContributor" />
+    <property role="1pbfSe" value="769867545" />
     <node concept="PrWs8" id="UWuwz3o4tq" role="PrDN$">
       <ref role="PrY4T" node="2LXb$uuiv7q" resolve="IStackFrameContributor" />
     </node>
@@ -116,6 +126,7 @@
   <node concept="PlHQZ" id="UWuwz3o4sj">
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="IRealStackFrameContributor" />
+    <property role="1pbfSe" value="769867493" />
     <node concept="PrWs8" id="UWuwz3o4tt" role="PrDN$">
       <ref role="PrY4T" node="2LXb$uuiv7q" resolve="IStackFrameContributor" />
     </node>
@@ -123,16 +134,19 @@
   <node concept="PlHQZ" id="2by6456Kf3p">
     <property role="TrG5h" value="IMappableType" />
     <property role="3GE5qa" value="watches" />
+    <property role="1pbfSe" value="1772292378" />
   </node>
   <node concept="PlHQZ" id="7oVAz7YD2vL">
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="IChildrenResolver" />
+    <property role="1pbfSe" value="1960821282" />
   </node>
   <node concept="1TIwiD" id="3D3g9moHPOe">
     <property role="TrG5h" value="MPrimitiveValue" />
     <property role="3GE5qa" value="icon-provider" />
     <property role="MwhBj" value="${language_descriptor}/icons/primitiveValue.png" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="755327581" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3D3g9moHPOg">
@@ -140,15 +154,18 @@
     <property role="3GE5qa" value="icon-provider" />
     <property role="MwhBj" value="${language_descriptor}/icons/complexValue.png" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="755327579" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="6ey1bOhyw73">
     <property role="TrG5h" value="IPermanentBreakpointsProvider" />
     <property role="3GE5qa" value="breakpoint" />
+    <property role="1pbfSe" value="1965819520" />
   </node>
   <node concept="PlHQZ" id="1d7Vth$qHPp">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="ISuspendableNode" />
+    <property role="1pbfSe" value="2008206125" />
   </node>
   <node concept="3HP615" id="1brT1d_Fq9I">
     <property role="3GE5qa" value="callstack" />
@@ -185,14 +202,17 @@
   <node concept="PlHQZ" id="7v8$3Aj2hNr">
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="IStackFrameInjector" />
+    <property role="1pbfSe" value="181513492" />
   </node>
   <node concept="PlHQZ" id="7v8$3Aj2hMM">
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="IInjectStackFrameDelegatee" />
+    <property role="1pbfSe" value="181513451" />
   </node>
   <node concept="PlHQZ" id="7BzY1RqMheT">
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="ICanBeInlined" />
+    <property role="1pbfSe" value="1420626902" />
   </node>
   <node concept="1TIwiD" id="6B_gG2NdoVp">
     <property role="3GE5qa" value="icon-provider" />
@@ -200,6 +220,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="MwhBj" value="${module}/icons/stack_icon.png" />
+    <property role="1pbfSe" value="488296857" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

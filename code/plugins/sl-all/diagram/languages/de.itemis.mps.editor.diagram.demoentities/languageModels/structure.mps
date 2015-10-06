@@ -2,7 +2,7 @@
 <model ref="r:43b0e924-5173-4445-8181-a3a123cc36df(de.itemis.mps.editor.diagram.demoentities.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -52,6 +53,7 @@
   </registry>
   <node concept="1TIwiD" id="4_qW8fWLd9k">
     <property role="TrG5h" value="Entity" />
+    <property role="1pbfSe" value="1176486615" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4_qW8fWLenQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -76,6 +78,7 @@
   </node>
   <node concept="1TIwiD" id="4_qW8fWLecy">
     <property role="TrG5h" value="Attribute" />
+    <property role="1pbfSe" value="1176490917" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4_qW8fWLeIu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -83,6 +86,7 @@
   </node>
   <node concept="1TIwiD" id="4_qW8fWLecz">
     <property role="TrG5h" value="Reference" />
+    <property role="1pbfSe" value="1176490918" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4_qW8fWLenJ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -113,6 +117,7 @@
   <node concept="1TIwiD" id="4_qW8fWLenU">
     <property role="TrG5h" value="Package" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1176491645" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4_qW8fWLenX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -132,11 +137,13 @@
   <node concept="1TIwiD" id="4_qW8fWLMYX">
     <property role="TrG5h" value="EntityDiagram" />
     <property role="3GE5qa" value="diagram" />
+    <property role="1pbfSe" value="1176641600" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4_qW8fWQRJF">
     <property role="3GE5qa" value="diagram" />
     <property role="TrG5h" value="ExtendsConnection" />
+    <property role="1pbfSe" value="1177971822" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4_qW8fWQRJG" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -2,7 +2,7 @@
 <model ref="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -54,6 +55,7 @@
     <property role="3GE5qa" value="participants" />
     <property role="34LRSv" value="data" />
     <property role="R4oN_" value="a data item owned by the component" />
+    <property role="1pbfSe" value="1496252966" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89u3vp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -74,11 +76,13 @@
   <node concept="PlHQZ" id="4YQM_89u3vm">
     <property role="TrG5h" value="IDataContent" />
     <property role="3GE5qa" value="participants" />
+    <property role="1pbfSe" value="1496252968" />
   </node>
   <node concept="1TIwiD" id="4YQM_89u3Ck">
     <property role="TrG5h" value="Participant" />
     <property role="3GE5qa" value="participants" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1496253542" />
     <ref role="1TJDcQ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
     <node concept="1TJgyj" id="4YQM_89u6y1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -96,12 +100,14 @@
   <node concept="PlHQZ" id="4YQM_89u3Cl">
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="IParticipantContent" />
+    <property role="1pbfSe" value="1496253543" />
   </node>
   <node concept="1TIwiD" id="4YQM_89u6y2">
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="Actor" />
     <property role="34LRSv" value="actor" />
     <property role="R4oN_" value="an actor for a scenario" />
+    <property role="1pbfSe" value="1496265428" />
     <ref role="1TJDcQ" node="4YQM_89u3Ck" resolve="Participant" />
   </node>
   <node concept="1TIwiD" id="4YQM_89u6yb">
@@ -109,6 +115,7 @@
     <property role="TrG5h" value="Component" />
     <property role="34LRSv" value="component" />
     <property role="R4oN_" value="a functional component of an application" />
+    <property role="1pbfSe" value="1496265437" />
     <ref role="1TJDcQ" node="4YQM_89u3Ck" resolve="Participant" />
   </node>
   <node concept="1TIwiD" id="4YQM_89u6y_">
@@ -116,6 +123,7 @@
     <property role="TrG5h" value="Capability" />
     <property role="R4oN_" value="a functionality or a service" />
     <property role="34LRSv" value="capability" />
+    <property role="1pbfSe" value="1496265463" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89u6yM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -141,6 +149,7 @@
     <property role="TrG5h" value="Collaboration" />
     <property role="R4oN_" value="a collaboration with another component" />
     <property role="34LRSv" value="collaborates" />
+    <property role="1pbfSe" value="1496298761" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4YQM_89uGrq" role="1TKVEl">
       <property role="TrG5h" value="description" />
@@ -163,6 +172,7 @@
     <property role="TrG5h" value="ComponentRequirementKind" />
     <property role="R4oN_" value="a thing with data and capabilities" />
     <property role="34LRSv" value="participant" />
+    <property role="1pbfSe" value="1496426808" />
     <ref role="1TJDcQ" to="75wo:7JeEMfT1LzR" resolve="RequirementsKind" />
   </node>
   <node concept="1TIwiD" id="4YQM_89uIg9">
@@ -170,6 +180,7 @@
     <property role="3GE5qa" value="scenario" />
     <property role="R4oN_" value="a typical application scenario" />
     <property role="34LRSv" value="scenario" />
+    <property role="1pbfSe" value="1496428123" />
     <ref role="1TJDcQ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
     <node concept="1TJgyj" id="4YQM_89uIhY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -187,6 +198,7 @@
   <node concept="1TIwiD" id="4YQM_89uIga">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="ParticipantRef" />
+    <property role="1pbfSe" value="1496428124" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89uIgb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -198,6 +210,7 @@
   <node concept="1TIwiD" id="4YQM_89uIgT">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="InitialContext" />
+    <property role="1pbfSe" value="1496428171" />
     <node concept="1TJgyj" id="4YQM_89uIgU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="initiator" />
@@ -212,12 +225,14 @@
     <property role="TrG5h" value="ScenarioRequirementKind" />
     <property role="R4oN_" value="a scenario, sth. like a sequence diagram" />
     <property role="34LRSv" value="scenario" />
+    <property role="1pbfSe" value="1496439602" />
     <ref role="1TJDcQ" to="75wo:7JeEMfT1LzR" resolve="RequirementsKind" />
   </node>
   <node concept="1TIwiD" id="4YQM_89uMGK">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="Call" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1496446338" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89vk$M" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -249,12 +264,14 @@
     <property role="TrG5h" value="SequentialCall" />
     <property role="R4oN_" value="invoking another participant's capability" />
     <property role="34LRSv" value="-&gt;" />
+    <property role="1pbfSe" value="1496446340" />
     <ref role="1TJDcQ" node="4YQM_89uOtH" resolve="NonSelfCall" />
   </node>
   <node concept="1TIwiD" id="4YQM_89uOtH">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="NonSelfCall" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1496453567" />
     <ref role="1TJDcQ" node="4YQM_89uMGK" resolve="Call" />
     <node concept="1TJgyj" id="4YQM_89uOtI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -266,6 +283,7 @@
   <node concept="PlHQZ" id="4YQM_89uRD8">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="ICallContext" />
+    <property role="1pbfSe" value="1496466586" />
     <node concept="1TJgyj" id="4YQM_89uRD9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -281,11 +299,13 @@
     <property role="TrG5h" value="SelfCall" />
     <property role="R4oN_" value="use your own capability" />
     <property role="34LRSv" value="&lt;&lt;" />
+    <property role="1pbfSe" value="1496560534" />
     <ref role="1TJDcQ" node="4YQM_89uMGK" resolve="Call" />
   </node>
   <node concept="1TIwiD" id="4YQM_89vmZL">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="DataItemRef" />
+    <property role="1pbfSe" value="1496595011" />
     <node concept="1TJgyj" id="4YQM_89vmZM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="item" />
@@ -299,6 +319,7 @@
   <node concept="PlHQZ" id="4YQM_89vW7R">
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="ICCContent" />
+    <property role="1pbfSe" value="1496747081" />
     <node concept="PrWs8" id="4YQM_89vW9Y" role="PrDN$">
       <ref role="PrY4T" to="vs0r:6xkj9mMr79" resolve="IVisualizationParticipant" />
     </node>
@@ -311,6 +332,7 @@
     <property role="TrG5h" value="Loop" />
     <property role="34LRSv" value="loop" />
     <property role="R4oN_" value="iterate over something" />
+    <property role="1pbfSe" value="1496747084" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89vW7W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -331,6 +353,7 @@
     <property role="TrG5h" value="Alternative" />
     <property role="R4oN_" value="an alternative" />
     <property role="34LRSv" value="alt" />
+    <property role="1pbfSe" value="1496803934" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89wa0q" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -355,6 +378,7 @@
   <node concept="1TIwiD" id="4YQM_89wdhe">
     <property role="3GE5qa" value="scenario.logic" />
     <property role="TrG5h" value="AlternativeElse" />
+    <property role="1pbfSe" value="1496817312" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4YQM_89wdig" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -372,6 +396,7 @@
     <property role="TrG5h" value="Heading" />
     <property role="R4oN_" value="a section in the scenario" />
     <property role="34LRSv" value="==" />
+    <property role="1pbfSe" value="1152021233" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="72IKZbjYUW0" role="PzmwI">
       <ref role="PrY4T" node="4YQM_89vW7R" resolve="ICCContent" />
@@ -386,6 +411,7 @@
     <property role="3GE5qa" value="scenario.logic" />
     <property role="34LRSv" value="!" />
     <property role="R4oN_" value="an error" />
+    <property role="1pbfSe" value="1152168516" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="72IKZbjZuTt" role="1TKVEl">
       <property role="TrG5h" value="message" />
@@ -400,6 +426,7 @@
     <property role="TrG5h" value="Pause" />
     <property role="34LRSv" value="..." />
     <property role="R4oN_" value="a pause in the scenario" />
+    <property role="1pbfSe" value="524858274" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="uFBNcnBhhK" role="PzmwI">
       <ref role="PrY4T" node="4YQM_89vW7R" resolve="ICCContent" />
@@ -414,6 +441,7 @@
     <property role="TrG5h" value="Comment" />
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="a comment for the current participant" />
+    <property role="1pbfSe" value="524894574" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="uFBNcnBq8W" role="PzmwI">
       <ref role="PrY4T" node="4YQM_89vW7R" resolve="ICCContent" />
@@ -428,6 +456,7 @@
     <property role="TrG5h" value="ImplStep" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="a (private) implementation step" />
+    <property role="1pbfSe" value="1116321788" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6WCyKlejrO0" role="PzmwI">
       <ref role="PrY4T" node="4YQM_89vW7R" resolve="ICCContent" />
@@ -442,6 +471,7 @@
     <property role="TrG5h" value="ScenarioCall" />
     <property role="R4oN_" value="calling another scenario" />
     <property role="34LRSv" value="ref" />
+    <property role="1pbfSe" value="2136076977" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5YZjOkv$EdL" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -456,11 +486,13 @@
   <node concept="PlHQZ" id="5_PV_QzO3If">
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="IDataType" />
+    <property role="1pbfSe" value="45733396" />
   </node>
   <node concept="1TIwiD" id="5_PV_QzOkqy">
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="Status" />
     <property role="34LRSv" value="status" />
+    <property role="1pbfSe" value="45665025" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5_PV_QzOkqz" role="PzmwI">
       <ref role="PrY4T" node="5_PV_QzO3If" resolve="IDataType" />
@@ -470,6 +502,7 @@
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="Value" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="45654852" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5_PV_QzOmZv">
@@ -477,6 +510,7 @@
     <property role="TrG5h" value="OwnedData" />
     <property role="R4oN_" value="an instance owned this component" />
     <property role="34LRSv" value="owns" />
+    <property role="1pbfSe" value="45654468" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5_PV_QzOmZB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -498,6 +532,7 @@
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="StatusValue" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="45624489" />
     <ref role="1TJDcQ" node="5_PV_QzOmTv" resolve="Value" />
   </node>
   <node concept="1TIwiD" id="5_PV_QzOujW">
@@ -505,6 +540,7 @@
     <property role="TrG5h" value="StatusValueOK" />
     <property role="R4oN_" value="successful status" />
     <property role="34LRSv" value="ok" />
+    <property role="1pbfSe" value="45624487" />
     <ref role="1TJDcQ" node="5_PV_QzOmTv" resolve="Value" />
   </node>
   <node concept="1TIwiD" id="5_PV_QzOuk1">
@@ -512,6 +548,7 @@
     <property role="TrG5h" value="StatusValueError" />
     <property role="34LRSv" value="error" />
     <property role="R4oN_" value="failed status" />
+    <property role="1pbfSe" value="45624482" />
     <ref role="1TJDcQ" node="5_PV_QzOmTv" resolve="Value" />
     <node concept="1TJgyi" id="5_PV_QzOuk3" role="1TKVEl">
       <property role="TrG5h" value="msg" />
@@ -523,6 +560,7 @@
     <property role="TrG5h" value="AnonymousInstance" />
     <property role="R4oN_" value="new (temporary) date item" />
     <property role="34LRSv" value="new" />
+    <property role="1pbfSe" value="45613966" />
     <ref role="1TJDcQ" node="5_PV_QzOmTv" resolve="Value" />
     <node concept="1TJgyj" id="5_PV_QzOwSn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -542,6 +580,7 @@
     <property role="TrG5h" value="OwnedItemRef" />
     <property role="34LRSv" value="owned" />
     <property role="R4oN_" value="an owned data item" />
+    <property role="1pbfSe" value="45550001" />
     <ref role="1TJDcQ" node="5_PV_QzOmTv" resolve="Value" />
     <node concept="1TJgyj" id="5_PV_QzOKvO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -558,6 +597,7 @@
     <property role="TrG5h" value="ReceivedItemRef" />
     <property role="34LRSv" value="received" />
     <property role="R4oN_" value="data received via previous calls" />
+    <property role="1pbfSe" value="45529348" />
     <ref role="1TJDcQ" node="5_PV_QzOmTv" resolve="Value" />
     <node concept="1TJgyj" id="5_PV_QzOPyA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -572,11 +612,13 @@
   <node concept="PlHQZ" id="5_PV_QzOPyz">
     <property role="3GE5qa" value="participants" />
     <property role="TrG5h" value="IDataInstance" />
+    <property role="1pbfSe" value="45529344" />
   </node>
   <node concept="1TIwiD" id="5DCgtXuH5vz">
     <property role="TrG5h" value="UseCase" />
     <property role="3GE5qa" value="usecase" />
     <property role="34LRSv" value="use case" />
+    <property role="1pbfSe" value="1189307966" />
     <ref role="1TJDcQ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
     <node concept="1TJgyj" id="5DCgtXuH8qj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -596,16 +638,19 @@
     <property role="3GE5qa" value="usecase" />
     <property role="R4oN_" value="a use case for the system" />
     <property role="34LRSv" value="use case" />
+    <property role="1pbfSe" value="1189307963" />
     <ref role="1TJDcQ" to="75wo:7JeEMfT1LzR" resolve="RequirementsKind" />
   </node>
   <node concept="PlHQZ" id="5DCgtXuH8qi">
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="IUCContent" />
+    <property role="1pbfSe" value="1189296015" />
   </node>
   <node concept="1TIwiD" id="5DCgtXuH8qx">
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="UseCaseActiveActor" />
     <property role="34LRSv" value="active" />
+    <property role="1pbfSe" value="1189296000" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5DCgtXuH8qz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -621,6 +666,7 @@
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="UseCaseExtension" />
     <property role="34LRSv" value="extends" />
+    <property role="1pbfSe" value="1189295990" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5DCgtXuH8qH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -636,6 +682,7 @@
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="UseCasePrecondition" />
     <property role="34LRSv" value="pre" />
+    <property role="1pbfSe" value="1189295975" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5DCgtXuH8qW" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -649,6 +696,7 @@
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="UseCasePassiveActor" />
     <property role="34LRSv" value="passive" />
+    <property role="1pbfSe" value="1189274326" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5DCgtXuHdHc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -664,6 +712,7 @@
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="UseCaseInclude" />
     <property role="34LRSv" value="includes" />
+    <property role="1pbfSe" value="1189201835" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5DCgtXuHvpR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -679,6 +728,7 @@
     <property role="3GE5qa" value="scenario" />
     <property role="TrG5h" value="Return" />
     <property role="34LRSv" value="return" />
+    <property role="1pbfSe" value="1253876841" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7Wto0sQ9vIi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -694,6 +744,7 @@
     <property role="3GE5qa" value="usecase" />
     <property role="TrG5h" value="UseCaseSummary" />
     <property role="34LRSv" value="use case summary (children)" />
+    <property role="1pbfSe" value="1592456156" />
     <ref role="1TJDcQ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
     <node concept="PrWs8" id="2HzhasNxV19" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />

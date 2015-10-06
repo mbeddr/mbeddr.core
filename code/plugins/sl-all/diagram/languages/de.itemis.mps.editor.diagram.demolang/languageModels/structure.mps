@@ -2,13 +2,13 @@
 <model ref="r:120be759-a4d3-4f3c-b9c0-033221c73671(de.itemis.mps.editor.diagram.demolang.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="2qld" ref="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -23,6 +23,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -57,6 +58,7 @@
   <node concept="1TIwiD" id="52mpOXfjC3e">
     <property role="TrG5h" value="RootConcept" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1612388323" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qgNcfDnNz1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,6 +78,7 @@
   <node concept="1TIwiD" id="5qgNcfDjUdu">
     <property role="TrG5h" value="Component" />
     <property role="34LRSv" value="component" />
+    <property role="1pbfSe" value="1071673377" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3P47XPYx5Nb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -91,6 +94,7 @@
   </node>
   <node concept="1TIwiD" id="5qgNcfDm_E4">
     <property role="TrG5h" value="Connection" />
+    <property role="1pbfSe" value="1072375623" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1FlH1cK2y8I" role="1TKVEl">
       <property role="TrG5h" value="fromPort" />
@@ -126,6 +130,7 @@
   </node>
   <node concept="1TIwiD" id="5qgNcfDnzGH">
     <property role="TrG5h" value="Diagram" />
+    <property role="1pbfSe" value="1072629744" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qgNcfDnzGI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -142,6 +147,7 @@
   </node>
   <node concept="1TIwiD" id="4KKQOHJ7C3u">
     <property role="TrG5h" value="ComponentDeclaration" />
+    <property role="1pbfSe" value="1152426967" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6I91F6s$bQr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -161,6 +167,7 @@
   </node>
   <node concept="1TIwiD" id="4KKQOHJ7Kq6">
     <property role="TrG5h" value="ComponentReference" />
+    <property role="1pbfSe" value="1152392751" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4KKQOHJ85K6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -174,10 +181,12 @@
   </node>
   <node concept="PlHQZ" id="4KKQOHJ7Kqo">
     <property role="TrG5h" value="IComponent" />
+    <property role="1pbfSe" value="1152392733" />
   </node>
   <node concept="1TIwiD" id="6I91F6s$bA6">
     <property role="TrG5h" value="PortDeclaration" />
     <property role="34LRSv" value="port" />
+    <property role="1pbfSe" value="135905335" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6I91F6s$bAQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -185,6 +194,7 @@
   </node>
   <node concept="1TIwiD" id="30_McRiYM9_">
     <property role="TrG5h" value="ComponentAnnotation" />
+    <property role="1pbfSe" value="52489010" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="30_McRj0pq3" role="lGtFl">
       <property role="Hh88m" value="componentAnnotation" />
@@ -195,6 +205,7 @@
   </node>
   <node concept="1TIwiD" id="6OhZPz3aYYS">
     <property role="TrG5h" value="ComponentAnnotation2" />
+    <property role="1pbfSe" value="809365264" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="6OhZPz3aYZT" role="lGtFl">
       <property role="Hh88m" value="componentAnnotation2" />

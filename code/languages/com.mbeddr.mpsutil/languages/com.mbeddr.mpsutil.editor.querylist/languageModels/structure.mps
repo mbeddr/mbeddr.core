@@ -2,7 +2,7 @@
 <model ref="120e1c9d-4e27-4478-b2af-b2c3bd3850b0/r:ea4f2df6-5e5c-49de-8679-6112ec7dd9c3(com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -48,6 +49,7 @@
   <node concept="1TIwiD" id="5oklODadopi">
     <property role="TrG5h" value="CellModel_QueryList" />
     <property role="34LRSv" value="querylist" />
+    <property role="1pbfSe" value="1605771876" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyi" id="gAczwbW" role="1TKVEl">
       <property role="TrG5h" value="usesBraces" />
@@ -164,53 +166,64 @@
   </node>
   <node concept="1TIwiD" id="5oklODadpyz">
     <property role="TrG5h" value="Function_GetElements" />
+    <property role="1pbfSe" value="1605767187" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="535SrlQ6ZQc">
     <property role="TrG5h" value="Function_InsertNewNode" />
+    <property role="1pbfSe" value="958275775" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="535SrlQ9ooh">
     <property role="TrG5h" value="Parameter_AnchorNode" />
     <property role="34LRSv" value="anchorNode" />
+    <property role="1pbfSe" value="957651002" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="535SrlQade6">
     <property role="TrG5h" value="Paramter_insertBefore" />
     <property role="34LRSv" value="insertBefore" />
+    <property role="1pbfSe" value="957434565" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="535SrlQaP0B">
     <property role="TrG5h" value="Function_DeleteElement" />
+    <property role="1pbfSe" value="957271588" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="puVMIbw93K">
     <property role="TrG5h" value="Parameter_ChildNode" />
     <property role="34LRSv" value="childNode" />
+    <property role="1pbfSe" value="1847623653" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="puVMIbwgYa">
     <property role="TrG5h" value="Parameter_NodeToDelete" />
     <property role="34LRSv" value="nodeToDelete" />
+    <property role="1pbfSe" value="1847591243" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="lPJxik6yHd">
     <property role="TrG5h" value="Function_GetSubstituteInfo" />
+    <property role="1pbfSe" value="1718621855" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="lPJxik98M2">
     <property role="TrG5h" value="Parameter_SubstituteInfoFactory" />
     <property role="34LRSv" value="factory" />
+    <property role="1pbfSe" value="1717941610" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="6hPjX46YnED">
     <property role="TrG5h" value="QueryListInlineEditorComponent" />
+    <property role="1pbfSe" value="1802422906" />
     <ref role="1TJDcQ" to="tpc2:fPsVBsF" resolve="InlineEditorComponent" />
   </node>
   <node concept="1TIwiD" id="Op$R490zSx">
     <property role="TrG5h" value="CellModel_QueryLink" />
     <property role="34LRSv" value="querylink" />
     <property role="3GE5qa" value="link" />
+    <property role="1pbfSe" value="370921874" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="Op$R494Obt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -236,26 +249,31 @@
   <node concept="1TIwiD" id="Op$R494_Vp">
     <property role="TrG5h" value="Function_LoadQueryLinkData" />
     <property role="3GE5qa" value="link" />
+    <property role="1pbfSe" value="371978826" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="Op$R494DV1">
     <property role="TrG5h" value="Parameter_QueryLinkData" />
     <property role="34LRSv" value="queryLinkData" />
     <property role="3GE5qa" value="link" />
+    <property role="1pbfSe" value="371995186" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="6QZo_pQbn1D">
     <property role="TrG5h" value="CellModel_DefaultEditor" />
     <property role="34LRSv" value="default editor" />
+    <property role="1pbfSe" value="471018817" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
   </node>
   <node concept="PlHQZ" id="Op$R499pt$">
     <property role="TrG5h" value="IInlineEditorContainer" />
+    <property role="1pbfSe" value="373238485" />
   </node>
   <node concept="1TIwiD" id="8dI1zL1m1P">
     <property role="TrG5h" value="CellModel_QueryLinkList" />
     <property role="34LRSv" value="querylinklist" />
     <property role="3GE5qa" value="linklist" />
+    <property role="1pbfSe" value="216852339" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyi" id="gEGOrZx" role="1TKVEl">
       <property role="TrG5h" value="reverse" />
@@ -360,18 +378,21 @@
   <node concept="1TIwiD" id="8dI1zL1AIk">
     <property role="TrG5h" value="Function_LoadQueryLinkListData" />
     <property role="3GE5qa" value="linklist" />
+    <property role="1pbfSe" value="216783956" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="8dI1zL1Ch3">
     <property role="TrG5h" value="Parameter_QueryLinkListData" />
     <property role="34LRSv" value="queryData" />
     <property role="3GE5qa" value="linklist" />
+    <property role="1pbfSe" value="216777637" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="3IFXLmit$MS">
     <property role="TrG5h" value="CellModel_QueryProperty" />
     <property role="34LRSv" value="queryproperty" />
     <property role="3GE5qa" value="property" />
+    <property role="1pbfSe" value="836615219" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="3IFXLmitGXp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -383,12 +404,14 @@
   <node concept="1TIwiD" id="3IFXLmitBYG">
     <property role="3GE5qa" value="property" />
     <property role="TrG5h" value="Function_LoadQueryPropertyData" />
+    <property role="1pbfSe" value="836602175" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="3IFXLmitC2q">
     <property role="3GE5qa" value="property" />
     <property role="TrG5h" value="Parameter_QueryPropertyData" />
     <property role="34LRSv" value="queryPropertyData" />
+    <property role="1pbfSe" value="836601937" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>

@@ -2,7 +2,7 @@
 <model ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -24,6 +24,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -55,6 +56,7 @@
   </registry>
   <node concept="1TIwiD" id="opE5jFg8Hy">
     <property role="TrG5h" value="TraceAnnotation" />
+    <property role="1pbfSe" value="245746762" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="3Y7ywckFIr1" role="PzmwI">
       <ref role="PrY4T" node="3Y7ywckFIr0" resolve="ITrace" />
@@ -73,23 +75,27 @@
     <property role="TrG5h" value="TraceKind" />
     <property role="3GE5qa" value="tracekind" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="245746757" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="opE5jFg8HD">
     <property role="3GE5qa" value="tracekind" />
     <property role="TrG5h" value="TestsTraceKind" />
     <property role="34LRSv" value="test" />
+    <property role="1pbfSe" value="245746755" />
     <ref role="1TJDcQ" node="opE5jFg8HB" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="opE5jFg8HF">
     <property role="3GE5qa" value="tracekind" />
     <property role="TrG5h" value="ImplementsTraceKind" />
     <property role="34LRSv" value="implements" />
+    <property role="1pbfSe" value="245746753" />
     <ref role="1TJDcQ" node="opE5jFg8HB" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="opE5jFg8MN">
     <property role="TrG5h" value="TraceTargetRef" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="245746425" />
     <ref role="1TJDcQ" node="GKLijSDr01" resolve="GenericTraceTarget" />
     <node concept="1TJgyj" id="opE5jFgg97" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -100,18 +106,21 @@
   </node>
   <node concept="PlHQZ" id="opE5jFg8Ph">
     <property role="TrG5h" value="ITraceTarget" />
+    <property role="1pbfSe" value="245746267" />
     <node concept="PrWs8" id="opE5jFg8Qu" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="opE5jFgfm$">
     <property role="TrG5h" value="ITraceTargetProvider" />
+    <property role="1pbfSe" value="245719560" />
     <node concept="PrWs8" id="opE5jFgfm_" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="opE5jFgg8Y">
     <property role="TrG5h" value="TraceTargetProviderRef" />
+    <property role="1pbfSe" value="245716334" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="opE5jFgg8Z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -122,6 +131,7 @@
   </node>
   <node concept="PlHQZ" id="3Y7ywckFIr0">
     <property role="TrG5h" value="ITrace" />
+    <property role="1pbfSe" value="1412853955" />
     <node concept="1TJgyj" id="3Y7ywckFJXc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tracekind" />
@@ -139,6 +149,7 @@
     <property role="TrG5h" value="TraceWord" />
     <property role="R4oN_" value="trace to a requirements (or other traceable)" />
     <property role="34LRSv" value="@trace" />
+    <property role="1pbfSe" value="1412860241" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Y7ywckFLcp" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -151,12 +162,14 @@
     <property role="3GE5qa" value="tracekind" />
     <property role="TrG5h" value="ExemplifiesTraceKind" />
     <property role="34LRSv" value="exemplifies" />
+    <property role="1pbfSe" value="1502516546" />
     <ref role="1TJDcQ" node="opE5jFg8HB" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="7uQ0U6v8oLq">
     <property role="TrG5h" value="TracingConfigItem" />
     <property role="34LRSv" value="tracing" />
     <property role="R4oN_" value="use requirements tracing" />
+    <property role="1pbfSe" value="383225851" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7uQ0U6v8rc3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -166,6 +179,7 @@
     <property role="TrG5h" value="GenericTraceTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="64386341" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

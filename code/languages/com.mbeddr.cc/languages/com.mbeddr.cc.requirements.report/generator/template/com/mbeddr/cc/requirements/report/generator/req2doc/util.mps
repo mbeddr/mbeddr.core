@@ -138,6 +138,16 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA" />
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -159,6 +169,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -613,7 +626,7 @@
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="resolve" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="true" />
+        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIvh" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvj" role="3clF45">
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
@@ -642,12 +655,17 @@
             </node>
           </node>
         </node>
+        <node concept="P$JXv" id="6muL4PTSGl" role="lGtFl">
+          <node concept="TZ5HI" id="6muL4PTSGm" role="3nqlJM">
+            <node concept="TZ5HA" id="6muL4PTSGn" role="3HnX3l" />
+          </node>
+        </node>
       </node>
       <node concept="3clFb_" id="2AZbPfOrIvq" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="resolve" />
         <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="true" />
+        <property role="IEkAT" value="false" />
         <node concept="3Tm1VV" id="2AZbPfOrIvr" role="1B3o_S" />
         <node concept="3uibUv" id="2AZbPfOrIvt" role="3clF45">
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
@@ -674,6 +692,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="P$JXv" id="6muL4PTSGo" role="lGtFl">
+          <node concept="TZ5HI" id="6muL4PTSGp" role="3nqlJM">
+            <node concept="TZ5HA" id="6muL4PTSGq" role="3HnX3l" />
           </node>
         </node>
       </node>

@@ -2,7 +2,7 @@
 <model ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -50,6 +51,7 @@
     <property role="TrG5h" value="MultilingualJavaString" />
     <property role="34LRSv" value="@&quot;" />
     <property role="3GE5qa" value="" />
+    <property role="1pbfSe" value="1872557" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="2bng37t32Oz" role="PzmwI">
       <ref role="PrY4T" to="sxyo:2bng37t1yrr" resolve="IMessageKeyHolder" />
@@ -59,12 +61,14 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="MultilingualJavaStringType" />
     <property role="34LRSv" value="multilingual string" />
+    <property role="1pbfSe" value="1872555" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7Ssz$kY9Uz$">
     <property role="TrG5h" value="MultilingualJavaRichString" />
     <property role="34LRSv" value="@'''" />
     <property role="3GE5qa" value="richstring" />
+    <property role="1pbfSe" value="1136380119" />
     <ref role="1TJDcQ" node="2bng37t32Oy" resolve="MultilingualJavaString" />
     <node concept="1TJgyj" id="7Ssz$kYl4OE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -85,6 +89,7 @@
   <node concept="1TIwiD" id="7Ssz$kY9UUa">
     <property role="TrG5h" value="RichStringMessageKey" />
     <property role="3GE5qa" value="richstring" />
+    <property role="1pbfSe" value="1136378673" />
     <ref role="1TJDcQ" to="sxyo:vzhXZP_pZm" resolve="MessageKey" />
     <node concept="1TJgyj" id="7Ssz$kYb9jR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -97,6 +102,7 @@
     <property role="TrG5h" value="MultilingualInlineFormat" />
     <property role="34LRSv" value="%" />
     <property role="3GE5qa" value="richstring" />
+    <property role="1pbfSe" value="1135120640" />
     <ref role="1TJDcQ" to="spci:2UbT3C4elwQ" resolve="InlineFormat" />
     <node concept="1TJgyj" id="7Ssz$kYeQ8p" role="1TKVEi">
       <property role="20lmBu" value="reference" />

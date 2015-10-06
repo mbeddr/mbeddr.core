@@ -2,7 +2,7 @@
 <model ref="r:41330c28-0e9e-31f5-90fc-47bc02602c20(com.mbeddr.core.__spreferences.CodeReviewPreferences)">
   <persistence version="9" />
   <languages>
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
   </languages>
   <imports />
   <registry>

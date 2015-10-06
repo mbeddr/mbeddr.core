@@ -2,7 +2,7 @@
 <model ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -26,6 +26,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -64,6 +65,7 @@
     <property role="MwhBj" value="${language_descriptor}/makefile.gif" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="a make file" />
+    <property role="1pbfSe" value="124339269" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6_CUGSFHTH6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -96,6 +98,7 @@
   <node concept="1TIwiD" id="5ak6HMA0Ext">
     <property role="TrG5h" value="Target" />
     <property role="R4oN_" value="a make target" />
+    <property role="1pbfSe" value="124337351" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ak6HMA0Exz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -122,12 +125,14 @@
     <property role="3GE5qa" value="dependency" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="124337349" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5ak6HMA0Exx">
     <property role="TrG5h" value="Command" />
     <property role="3GE5qa" value="command" />
     <property role="R4oN_" value="a command (exectuable call)" />
+    <property role="1pbfSe" value="124337347" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Vizpn2Mx$v" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -141,6 +146,7 @@
     <property role="3GE5qa" value="dependency" />
     <property role="R4oN_" value="textual dependency" />
     <property role="34LRSv" value="t" />
+    <property role="1pbfSe" value="124334529" />
     <ref role="1TJDcQ" node="5ak6HMA0Exv" resolve="Dependency" />
     <node concept="1TJgyi" id="5ak6HMA0Fd$" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -152,6 +158,7 @@
     <property role="3GE5qa" value="var" />
     <property role="34LRSv" value="var" />
     <property role="R4oN_" value="a make file variable" />
+    <property role="1pbfSe" value="241617685" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1ViOc8L8idT" role="1TKVEl">
       <property role="TrG5h" value="conditional" />
@@ -178,12 +185,14 @@
     <property role="3GE5qa" value="command" />
     <property role="R4oN_" value="a command item" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="241391947" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2Vizpn2Mx$z">
     <property role="TrG5h" value="TextCommandItem" />
     <property role="3GE5qa" value="command" />
     <property role="R4oN_" value="text command item" />
+    <property role="1pbfSe" value="241391944" />
     <ref role="1TJDcQ" node="2Vizpn2Mx$w" resolve="CommandItem" />
     <node concept="1TJgyi" id="2Vizpn2Mx$$" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -195,6 +204,7 @@
     <property role="3GE5qa" value="var" />
     <property role="R4oN_" value="a variable reference" />
     <property role="34LRSv" value="$" />
+    <property role="1pbfSe" value="241391922" />
     <ref role="1TJDcQ" node="2Vizpn2Mx$w" resolve="CommandItem" />
     <node concept="1TJgyj" id="2Vizpn2Mx$U" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -207,6 +217,7 @@
     <property role="TrG5h" value="ModuleRefCommandItem" />
     <property role="3GE5qa" value="command" />
     <property role="R4oN_" value="module reference" />
+    <property role="1pbfSe" value="1445164234" />
     <ref role="1TJDcQ" node="2Vizpn2Mx$w" resolve="CommandItem" />
     <node concept="1TJgyj" id="bzEfeAYe94" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -219,6 +230,7 @@
     <property role="TrG5h" value="ModuleRefDependency" />
     <property role="3GE5qa" value="dependency" />
     <property role="R4oN_" value="module reference" />
+    <property role="1pbfSe" value="1445144000" />
     <ref role="1TJDcQ" node="5ak6HMA0Exv" resolve="Dependency" />
     <node concept="1TJgyj" id="bzEfeAYj5B" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -231,6 +243,7 @@
     <property role="3GE5qa" value="dependency" />
     <property role="TrG5h" value="TargetDependency" />
     <property role="R4oN_" value="dependency to another target" />
+    <property role="1pbfSe" value="1594348148" />
     <ref role="1TJDcQ" node="5ak6HMA0Exv" resolve="Dependency" />
     <node concept="1TJgyj" id="Dp4TemBLBU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -244,6 +257,7 @@
     <property role="TrG5h" value="MacroAt" />
     <property role="34LRSv" value="$@" />
     <property role="R4oN_" value="target name macro" />
+    <property role="1pbfSe" value="103301509" />
     <ref role="1TJDcQ" node="7CaEhHZNn5r" resolve="Macro" />
   </node>
   <node concept="1TIwiD" id="7CaEhHZNhlJ">
@@ -251,6 +265,7 @@
     <property role="TrG5h" value="MacroQuestion" />
     <property role="34LRSv" value="$?" />
     <property role="R4oN_" value="changed dependencies macro" />
+    <property role="1pbfSe" value="103301494" />
     <ref role="1TJDcQ" node="7CaEhHZNn5r" resolve="Macro" />
   </node>
   <node concept="1TIwiD" id="7CaEhHZNhlQ">
@@ -258,6 +273,7 @@
     <property role="TrG5h" value="MacroLess" />
     <property role="34LRSv" value="$&lt;" />
     <property role="R4oN_" value="first dependency macro" />
+    <property role="1pbfSe" value="103301487" />
     <ref role="1TJDcQ" node="7CaEhHZNn5r" resolve="Macro" />
   </node>
   <node concept="1TIwiD" id="7CaEhHZNhlU">
@@ -265,6 +281,7 @@
     <property role="TrG5h" value="MacroStar" />
     <property role="34LRSv" value="$*" />
     <property role="R4oN_" value="wildcard macro" />
+    <property role="1pbfSe" value="103301483" />
     <ref role="1TJDcQ" node="7CaEhHZNn5r" resolve="Macro" />
   </node>
   <node concept="1TIwiD" id="7CaEhHZNn5r">
@@ -272,6 +289,7 @@
     <property role="TrG5h" value="Macro" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="103277962" />
     <ref role="1TJDcQ" node="2Vizpn2Mx$w" resolve="CommandItem" />
   </node>
   <node concept="1TIwiD" id="30P21CaoY0X">
@@ -279,20 +297,24 @@
     <property role="TrG5h" value="MacroAll" />
     <property role="34LRSv" value="$^" />
     <property role="R4oN_" value="all dependencies macro" />
+    <property role="1pbfSe" value="983099479" />
     <ref role="1TJDcQ" node="7CaEhHZNn5r" resolve="Macro" />
   </node>
   <node concept="PlHQZ" id="3s1LyzGeK9o">
     <property role="TrG5h" value="IMakePathProvider" />
     <property role="3GE5qa" value="pathProvider" />
+    <property role="1pbfSe" value="591186048" />
   </node>
   <node concept="PlHQZ" id="3s1LyzGfrMH">
     <property role="TrG5h" value="IMakePathProviderContainer" />
     <property role="3GE5qa" value="pathProvider" />
+    <property role="1pbfSe" value="591364821" />
   </node>
   <node concept="1TIwiD" id="6_CUGSFDJ0J">
     <property role="3GE5qa" value="var" />
     <property role="TrG5h" value="Comment" />
     <property role="34LRSv" value="#" />
+    <property role="1pbfSe" value="1794123011" />
     <node concept="1TJgyi" id="6_CUGSFDJ0K" role="1TKVEl">
       <property role="TrG5h" value="comment" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -304,6 +326,7 @@
   <node concept="1TIwiD" id="6_CUGSFDJTf">
     <property role="3GE5qa" value="var" />
     <property role="TrG5h" value="EmptyLine" />
+    <property role="1pbfSe" value="1794119395" />
     <node concept="PrWs8" id="6_CUGSFHTH2" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
     </node>
@@ -335,10 +358,12 @@
   </node>
   <node concept="PlHQZ" id="6_CUGSFHTGe">
     <property role="TrG5h" value="IMakefileContent" />
+    <property role="1pbfSe" value="1793030692" />
   </node>
   <node concept="1TIwiD" id="6_CUGSFJ0HT">
     <property role="TrG5h" value="Define" />
     <property role="34LRSv" value="define" />
+    <property role="1pbfSe" value="1792739769" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6_CUGSFJ0HU" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
@@ -356,6 +381,7 @@
   <node concept="1TIwiD" id="6_CUGSFKkYj">
     <property role="TrG5h" value="CommandContent" />
     <property role="34LRSv" value="command" />
+    <property role="1pbfSe" value="1792394655" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6_CUGSFKl0i" role="PzmwI">
       <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />

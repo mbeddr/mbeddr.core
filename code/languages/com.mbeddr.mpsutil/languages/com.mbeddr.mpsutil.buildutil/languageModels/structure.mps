@@ -2,7 +2,7 @@
 <model ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -19,6 +19,7 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -46,6 +47,7 @@
   </registry>
   <node concept="1TIwiD" id="5IpIYYkniKo">
     <property role="TrG5h" value="BuildConsistencyAnnotation" />
+    <property role="1pbfSe" value="269031417" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="5IpIYYknIp1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -71,6 +73,7 @@
   </node>
   <node concept="1TIwiD" id="5IpIYYkwZoQ">
     <property role="TrG5h" value="IgnoredModule" />
+    <property role="1pbfSe" value="266489307" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5IpIYYkMPHr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -81,6 +84,7 @@
   </node>
   <node concept="1TIwiD" id="49Lg2nD1EQF">
     <property role="TrG5h" value="RunReloadModulesAnnotation" />
+    <property role="1pbfSe" value="729279952" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="49Lg2nD1EQQ" role="lGtFl">
       <property role="Hh88m" value="reloadModules" />

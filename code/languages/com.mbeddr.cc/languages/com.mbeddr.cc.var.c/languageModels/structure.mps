@@ -2,7 +2,7 @@
 <model ref="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -41,6 +42,7 @@
   </registry>
   <node concept="PlHQZ" id="5aNdPeN1XXb">
     <property role="TrG5h" value="IVariantAware" />
+    <property role="1pbfSe" value="96147102" />
     <node concept="1TJgyj" id="5aNdPeN1Y5K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conditions" />
@@ -50,6 +52,7 @@
   </node>
   <node concept="1TIwiD" id="5aNdPeN1XXc">
     <property role="TrG5h" value="VariantAwareType" />
+    <property role="1pbfSe" value="96147103" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="5aNdPeN2by6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -69,6 +72,7 @@
   </node>
   <node concept="1TIwiD" id="5aNdPeN2JOx">
     <property role="TrG5h" value="VariantAwareExpression" />
+    <property role="1pbfSe" value="96351348" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5aNdPeN2JOy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -90,6 +94,7 @@
     <property role="TrG5h" value="CVariabilityConfigItem" />
     <property role="34LRSv" value="c-level variability" />
     <property role="R4oN_" value="c-specific aspects of PLE variability" />
+    <property role="1pbfSe" value="96787961" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5aNdPeN4qrD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />

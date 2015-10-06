@@ -2,7 +2,7 @@
 <model ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -29,6 +29,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -66,6 +67,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1647297554" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyi" id="3N$tYyGbKra" role="1TKVEl">
       <property role="TrG5h" value="fileExtension" />
@@ -101,6 +103,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1647297557" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="4Pack3zOoGA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -122,6 +125,7 @@
     <property role="TrG5h" value="GenImplModuleImport" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1193024147" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyj" id="19a6$uAAsGB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -138,6 +142,7 @@
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
     <property role="34LRSv" value="header" />
+    <property role="1pbfSe" value="1310361741" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyi" id="3kEjc_WIMEF" role="1TKVEl">
       <property role="TrG5h" value="haeaderFileName" />
@@ -149,6 +154,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="589654911" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="3BLvzpMQtkP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -170,6 +176,7 @@
     <property role="TrG5h" value="GenExtModuleImport" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="589752050" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyj" id="7RiewQ_laNA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -185,18 +192,21 @@
     <property role="TrG5h" value="CFunctionPointerArgument" />
     <property role="3GE5qa" value="functionpointer" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1732458560" />
     <ref role="1TJDcQ" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
   </node>
   <node concept="1TIwiD" id="1qFzXhgAhhS">
     <property role="3GE5qa" value="functionpointer" />
     <property role="TrG5h" value="CFunctionPointerLocalVariableDeclaration" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1732551756" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="5cBbx58ne90">
     <property role="3GE5qa" value="functionpointer" />
     <property role="TrG5h" value="CFunctionPointerGlobalVariableDeclaration" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1685843887" />
     <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
     <node concept="PrWs8" id="5HxjapwgqUE" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -206,6 +216,7 @@
     <property role="3GE5qa" value="functionpointer" />
     <property role="TrG5h" value="CFunctionPointerTypedef" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="266899485" />
     <ref role="1TJDcQ" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
     <node concept="PrWs8" id="5HxjapwgqSn" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -218,6 +229,7 @@
     <property role="3GE5qa" value="functionpointer" />
     <property role="TrG5h" value="CFunctionPointerStructMember" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="976528439" />
     <ref role="1TJDcQ" to="clbe:56ytRgsLg$o" resolve="Member" />
   </node>
   <node concept="1TIwiD" id="34x64NyTNWu">
@@ -225,17 +237,20 @@
     <property role="TrG5h" value="GenModuleImport" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="336090986" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="7lqvH8EmCAQ">
     <property role="TrG5h" value="ICareAboutImportingMyself" />
     <property role="3GE5qa" value="extending" />
+    <property role="1pbfSe" value="1615525752" />
   </node>
   <node concept="1TIwiD" id="24KoSSjx2OU">
     <property role="TrG5h" value="NameShorteningConfiguration" />
     <property role="3GE5qa" value="config" />
     <property role="34LRSv" value="prevent name mangling" />
     <property role="R4oN_" value="prevent name mangling for unique names" />
+    <property role="1pbfSe" value="884248776" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="24KoSSjxspb" role="1TKVEl">
       <property role="TrG5h" value="allowNameShortening" />
@@ -248,6 +263,7 @@
   <node concept="1TIwiD" id="5tbhN$5U4Dv">
     <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="IWantToBeC90" />
+    <property role="1pbfSe" value="1563660696" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5tbhN$5U4E4" role="lGtFl">
       <property role="Hh88m" value="iWantToBe90" />
@@ -263,6 +279,7 @@
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="NameShorteingRoot" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="2025716980" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7dfuMW5rC7I" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -274,6 +291,7 @@
     <property role="34LRSv" value="ForceImportReferencedElements" />
     <property role="R4oN_" value="used in type system tests to force copying imported root nodes from other models" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="14976623" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

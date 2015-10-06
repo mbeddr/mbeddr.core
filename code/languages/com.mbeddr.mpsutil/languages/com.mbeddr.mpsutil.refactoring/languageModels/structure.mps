@@ -2,8 +2,8 @@
 <model ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="tp1h" ref="3ecd7c84-cde3-45de-886c-135ecc69b742/r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring/jetbrains.mps.lang.refactoring.structure)" />
@@ -18,6 +18,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
   <node concept="1TIwiD" id="6xlxoSXcYuh">
     <property role="TrG5h" value="RefactoringAction" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1517720289" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xlxoSXcYuj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -75,6 +77,7 @@
   </node>
   <node concept="1TIwiD" id="6xlxoSXcYuk">
     <property role="TrG5h" value="RefactoringParameter" />
+    <property role="1pbfSe" value="1517720286" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xlxoSXcYum" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -92,6 +95,7 @@
   <node concept="1TIwiD" id="6xlxoSXdwNr">
     <property role="TrG5h" value="Chooser" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1517579671" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6xlxoSXdyqN" role="1TKVEl">
       <property role="TrG5h" value="title" />
@@ -101,11 +105,13 @@
   <node concept="1TIwiD" id="6xlxoSXdwNt">
     <property role="TrG5h" value="StringChooser" />
     <property role="34LRSv" value="string" />
+    <property role="1pbfSe" value="1517579669" />
     <ref role="1TJDcQ" node="6xlxoSXdwNr" resolve="Chooser" />
   </node>
   <node concept="1TIwiD" id="6xlxoSXdwNy">
     <property role="TrG5h" value="NodeChooser" />
     <property role="34LRSv" value="node" />
+    <property role="1pbfSe" value="1517579664" />
     <ref role="1TJDcQ" node="6xlxoSXdwNr" resolve="Chooser" />
     <node concept="1TJgyj" id="6xlxoSXdwNC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -117,17 +123,20 @@
   <node concept="1TIwiD" id="6xlxoSXdwNz">
     <property role="TrG5h" value="FilterClause" />
     <property role="34LRSv" value="filter" />
+    <property role="1pbfSe" value="1517579663" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="6xlxoSXd$tc">
     <property role="TrG5h" value="FilterInputParam" />
     <property role="34LRSv" value="nodesToRefactor" />
+    <property role="1pbfSe" value="1517564710" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="3onExzPlFXS">
     <property role="TrG5h" value="ProjectionModeSwitcher" />
     <property role="3GE5qa" value="projectionMode" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="728656272" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7s1RrJAh7Kv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -161,6 +170,7 @@
     <property role="3GE5qa" value="projectionMode" />
     <property role="TrG5h" value="PushHintOption" />
     <property role="34LRSv" value="option" />
+    <property role="1pbfSe" value="728659533" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3onExzPlXp7" role="1TKVEl">
       <property role="TrG5h" value="menuLabel" />
@@ -182,6 +192,7 @@
   <node concept="1TIwiD" id="3e2grRPHlIu">
     <property role="TrG5h" value="ProjectTreeNodeChooser" />
     <property role="34LRSv" value="project tree node" />
+    <property role="1pbfSe" value="691510619" />
     <ref role="1TJDcQ" node="6xlxoSXdwNy" resolve="NodeChooser" />
   </node>
 </model>

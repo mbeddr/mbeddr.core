@@ -2,7 +2,7 @@
 <model ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
     <property role="TrG5h" value="ProjectView" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="" />
+    <property role="1pbfSe" value="1429466089" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="75_oBQVGpJj" role="1TKVEl">
       <property role="TrG5h" value="priority" />
@@ -84,6 +86,7 @@
   <node concept="1TIwiD" id="7diJr$RulqU">
     <property role="TrG5h" value="TreeNodeElement" />
     <property role="34LRSv" value="treeNode" />
+    <property role="1pbfSe" value="1429465997" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ZnFyBjs8qn" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -163,6 +166,7 @@
   </node>
   <node concept="PlHQZ" id="7diJr$Rulsw">
     <property role="TrG5h" value="IViewElement" />
+    <property role="1pbfSe" value="1429465895" />
     <node concept="PrWs8" id="7diJr$RuzNI" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -170,10 +174,12 @@
   <node concept="1TIwiD" id="7diJr$RuH1Z">
     <property role="TrG5h" value="MPSProjectExpression" />
     <property role="34LRSv" value="mpsProject" />
+    <property role="1pbfSe" value="1429369288" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7diJr$RvFay">
     <property role="TrG5h" value="QueryElementReference" />
+    <property role="1pbfSe" value="1429114789" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="7diJr$RvFcp" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -187,6 +193,7 @@
   </node>
   <node concept="1TIwiD" id="511fZqnpMVa">
     <property role="TrG5h" value="ActionGroupIdReference" />
+    <property role="1pbfSe" value="408392000" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="511fZqnpMVb" role="1TKVEi">
       <property role="20lmBu" value="reference" />

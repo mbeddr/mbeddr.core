@@ -2,7 +2,7 @@
 <model ref="r:7d4741f1-b780-4151-bf5a-811bc0aa7587(com.mbeddr.cc.var.composition.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,6 +23,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -54,6 +55,7 @@
     <property role="TrG5h" value="CompositionConfigItem" />
     <property role="34LRSv" value="compositon" />
     <property role="3GE5qa" value="build" />
+    <property role="1pbfSe" value="207367560" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3YyHFqO0LwK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,12 +78,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="build" />
+    <property role="1pbfSe" value="207318023" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3YyHFqO0tP4">
     <property role="TrG5h" value="BinaryCompositionScope" />
     <property role="34LRSv" value="binary" />
     <property role="3GE5qa" value="build" />
+    <property role="1pbfSe" value="207318022" />
     <ref role="1TJDcQ" node="3YyHFqO0tP3" resolve="CompositionScope" />
     <node concept="1TJgyj" id="3YyHFqO0tTi" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -92,6 +96,7 @@
   </node>
   <node concept="1TIwiD" id="3YyHFqO14vI">
     <property role="TrG5h" value="ComposeOnlyAnnotation" />
+    <property role="1pbfSe" value="207159644" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3YyHFqO14vJ" role="lGtFl">
       <property role="Hh88m" value="composeOnly" />
@@ -103,6 +108,7 @@
   <node concept="1TIwiD" id="3YyHFqO1fOH">
     <property role="TrG5h" value="ComposeChunkRef" />
     <property role="3GE5qa" value="build" />
+    <property role="1pbfSe" value="207113245" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3YyHFqO1fOI" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -114,6 +120,7 @@
   <node concept="1TIwiD" id="3YyHFqO5xUb">
     <property role="TrG5h" value="MatchAnnotation" />
     <property role="3GE5qa" value="" />
+    <property role="1pbfSe" value="205990591" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="3YyHFqO5xVY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -142,6 +149,7 @@
     <property role="TrG5h" value="MatchStrategy" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="205990477" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5B$wwdfmUtU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -153,6 +161,7 @@
     <property role="3GE5qa" value="match" />
     <property role="TrG5h" value="MatchSameConceptByRef" />
     <property role="34LRSv" value="same concept by ref" />
+    <property role="1pbfSe" value="205976104" />
     <ref role="1TJDcQ" node="3YyHFqO5xVX" resolve="MatchStrategy" />
     <node concept="1TJgyj" id="3YyHFqO5_sz" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -166,33 +175,39 @@
     <property role="TrG5h" value="CompositionStrategy" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="205780067" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3YyHFqO6xdn">
     <property role="TrG5h" value="ReplaceCompositionStrategy" />
     <property role="34LRSv" value="replace" />
     <property role="3GE5qa" value="compose" />
+    <property role="1pbfSe" value="205731315" />
     <ref role="1TJDcQ" node="3YyHFqO6ljB" resolve="CompositionStrategy" />
   </node>
   <node concept="PlHQZ" id="3YyHFqO8SAp">
     <property role="TrG5h" value="ICompositionControl" />
+    <property role="1pbfSe" value="205111217" />
   </node>
   <node concept="1TIwiD" id="5be2k4jWbNL">
     <property role="3GE5qa" value="match" />
     <property role="TrG5h" value="MatchAllSameConcepts" />
     <property role="34LRSv" value="all same concepts" />
+    <property role="1pbfSe" value="1723778610" />
     <ref role="1TJDcQ" node="3YyHFqO5xVX" resolve="MatchStrategy" />
   </node>
   <node concept="1TIwiD" id="5be2k4jXEh2">
     <property role="3GE5qa" value="compose" />
     <property role="TrG5h" value="ChildControlledCompositionStrategy" />
     <property role="34LRSv" value="child-controlled" />
+    <property role="1pbfSe" value="1724165507" />
     <ref role="1TJDcQ" node="3YyHFqO6ljB" resolve="CompositionStrategy" />
   </node>
   <node concept="1TIwiD" id="5be2k4jXNNn">
     <property role="TrG5h" value="ChildControlAnnotation" />
     <property role="34LRSv" value="CC" />
     <property role="3GE5qa" value="cc" />
+    <property role="1pbfSe" value="1724204568" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="5be2k4jYbg1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -215,12 +230,14 @@
     <property role="TrG5h" value="ChildControlOp" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1724300609" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5be2k4jYbg8">
     <property role="3GE5qa" value="cc.add" />
     <property role="TrG5h" value="ChildControlAdd" />
     <property role="34LRSv" value="ADD" />
+    <property role="1pbfSe" value="1724300617" />
     <ref role="1TJDcQ" node="5be2k4jYbg0" resolve="ChildControlOp" />
     <node concept="1TJgyj" id="5be2k4jZ3D4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -234,22 +251,26 @@
     <property role="TrG5h" value="AddLocation" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1724531530" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5be2k4jZ3Ca">
     <property role="3GE5qa" value="cc.add" />
     <property role="TrG5h" value="AddLocationFront" />
     <property role="34LRSv" value="front" />
+    <property role="1pbfSe" value="1724531531" />
     <ref role="1TJDcQ" node="5be2k4jZ3C9" resolve="AddLocation" />
   </node>
   <node concept="1TIwiD" id="5be2k4jZ3CB">
     <property role="3GE5qa" value="cc.add" />
     <property role="TrG5h" value="AddLocationEnd" />
     <property role="34LRSv" value="end" />
+    <property role="1pbfSe" value="1724531560" />
     <ref role="1TJDcQ" node="5be2k4jZ3C9" resolve="AddLocation" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfidC5">
     <property role="TrG5h" value="HookAnnotation" />
+    <property role="1pbfSe" value="1456645112" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5B$wwdfidDu" role="lGtFl">
       <property role="Hh88m" value="hook" />
@@ -264,6 +285,7 @@
   <node concept="1TIwiD" id="5B$wwdfoXIt">
     <property role="3GE5qa" value="pointcut" />
     <property role="TrG5h" value="Pointcut" />
+    <property role="1pbfSe" value="1454875232" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

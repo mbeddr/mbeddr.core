@@ -2,7 +2,7 @@
 <model ref="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
     <property role="TrG5h" value="VectorType" />
     <property role="3GE5qa" value="vectors" />
     <property role="34LRSv" value="vector" />
+    <property role="1pbfSe" value="1431303045" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="WxZteubh6Y" role="PzmwI">
       <ref role="PrY4T" node="WxZteubh6W" resolve="IMatrixType" />
@@ -61,6 +63,7 @@
     <property role="3GE5qa" value="vectors" />
     <property role="34LRSv" value="x" />
     <property role="R4oN_" value="cross-product" />
+    <property role="1pbfSe" value="1431032221" />
     <ref role="1TJDcQ" to="mj1l:4ZVDCZCaQ85" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="4LP87XufLdW">
@@ -68,6 +71,7 @@
     <property role="3GE5qa" value="matrix" />
     <property role="R4oN_" value="matrix" />
     <property role="34LRSv" value="matrix" />
+    <property role="1pbfSe" value="1431030789" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyi" id="4LP87XufLdX" role="1TKVEl">
       <property role="TrG5h" value="dimensionsCols" />
@@ -82,6 +86,7 @@
     <property role="TrG5h" value="MatrixLiteral" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="matrix" />
+    <property role="1pbfSe" value="1431030690" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
     <node concept="1TJgyj" id="4LP87XufLjV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -93,6 +98,7 @@
   <node concept="1TIwiD" id="4LP87XufLjM">
     <property role="3GE5qa" value="matrix" />
     <property role="TrG5h" value="MatrixLiteralCol" />
+    <property role="1pbfSe" value="1431030415" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4LP87XufLjN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -106,6 +112,7 @@
     <property role="TrG5h" value="MatrixTransposeExpr" />
     <property role="R4oN_" value="transpose" />
     <property role="34LRSv" value="T" />
+    <property role="1pbfSe" value="1118366563" />
     <ref role="1TJDcQ" to="mj1l:3MUk0N5szEG" resolve="UnaryArithmeticExpression" />
     <node concept="PrWs8" id="6Jhc0CXvJm2" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -113,6 +120,7 @@
   </node>
   <node concept="PlHQZ" id="WxZteubh6W">
     <property role="TrG5h" value="IMatrixType" />
+    <property role="1pbfSe" value="1387327601" />
     <node concept="1TJgyi" id="WxZteubncR" role="1TKVEl">
       <property role="TrG5h" value="dimensionsRows" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -125,6 +133,7 @@
     <property role="3GE5qa" value="matrix" />
     <property role="TrG5h" value="MatrixAccessExpression" />
     <property role="R4oN_" value="matrix access" />
+    <property role="1pbfSe" value="305913722" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="3yoEvFpCOE9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -2,7 +2,7 @@
 <model ref="r:34e48600-25da-4c7c-b6a4-8cd6f6deb117(mbeddr.tutorial.osconfig.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -46,6 +47,7 @@
   <node concept="1TIwiD" id="6URxCt9pDC_">
     <property role="TrG5h" value="OSConfig" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1205985108" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6URxCt9pDD2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -62,6 +64,7 @@
   </node>
   <node concept="PlHQZ" id="6URxCt9pDCA">
     <property role="TrG5h" value="IOSConfigContents" />
+    <property role="1pbfSe" value="1205985107" />
     <node concept="PrWs8" id="6URxCt9pDCB" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -69,6 +72,7 @@
   <node concept="1TIwiD" id="6URxCt9pDCD">
     <property role="TrG5h" value="TaskDef" />
     <property role="34LRSv" value="task" />
+    <property role="1pbfSe" value="1205985104" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6URxCt9pDCF" role="1TKVEl">
       <property role="TrG5h" value="prio" />

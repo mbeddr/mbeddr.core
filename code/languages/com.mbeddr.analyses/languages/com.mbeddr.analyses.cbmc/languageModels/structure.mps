@@ -2,7 +2,7 @@
 <model ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -31,6 +31,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -66,6 +67,7 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="CProverBasedAnalysis" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="65349149" />
     <ref role="1TJDcQ" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
     <node concept="PrWs8" id="7ehmsbAuQhC" role="PzmwI">
       <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
@@ -81,6 +83,7 @@
     <property role="TrG5h" value="CPROVERassume" />
     <property role="3GE5qa" value="cbmc_macros" />
     <property role="34LRSv" value="__CPROVER_assume" />
+    <property role="1pbfSe" value="1832713402" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="4fjBjwDqlY3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -94,12 +97,14 @@
     <property role="3GE5qa" value="expressions" />
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="logical implication" />
+    <property role="1pbfSe" value="1832746930" />
     <ref role="1TJDcQ" to="mj1l:7igR0Vu9I16" resolve="BinaryLogicalExpression" />
   </node>
   <node concept="1TIwiD" id="637qsduSbtp">
     <property role="TrG5h" value="Assert" />
     <property role="3GE5qa" value="statements" />
     <property role="34LRSv" value="assert" />
+    <property role="1pbfSe" value="1079500516" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMSlV" role="PzmwI">
       <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
@@ -119,6 +124,7 @@
     <property role="TrG5h" value="VerificationConditionBase" />
     <property role="3GE5qa" value="verification_condition" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1295546110" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="7erX1gT1KjQ" role="1TKVEl">
       <property role="TrG5h" value="disabled" />
@@ -134,18 +140,21 @@
     <property role="TrG5h" value="AfterPThenQ" />
     <property role="34LRSv" value="after then" />
     <property role="R4oN_" value="after p, from the next pass on then q" />
+    <property role="1pbfSe" value="1295546108" />
     <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
   </node>
   <node concept="1TIwiD" id="6qmmy97ZJIi">
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="BeforePMustQ" />
     <property role="34LRSv" value="before must" />
+    <property role="1pbfSe" value="1365944908" />
     <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
   </node>
   <node concept="1TIwiD" id="6qmmy97ZWGO">
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="BinaryVerificationCondition" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1365891754" />
     <ref role="1TJDcQ" node="6$qhYL9Fk4m" resolve="VerificationConditionBase" />
     <node concept="1TJgyj" id="6qmmy97ZWGP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -164,12 +173,14 @@
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="AfterQUntilRMustP" />
     <property role="34LRSv" value="after until must" />
+    <property role="1pbfSe" value="1959136203" />
     <ref role="1TJDcQ" node="5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
   </node>
   <node concept="1TIwiD" id="5XIKRVIuY$_">
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="TernaryVerificationCondition" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1307225251" />
     <ref role="1TJDcQ" node="6$qhYL9Fk4m" resolve="VerificationConditionBase" />
     <node concept="1TJgyj" id="5XIKRVIuY$A" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -194,6 +205,7 @@
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="NondetVarAssignment" />
     <property role="34LRSv" value="nondet assign" />
+    <property role="1pbfSe" value="1835944884" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="2h3YlM50Uuq" role="1TKVEl">
       <property role="TrG5h" value="constraintsEnabled" />
@@ -216,6 +228,7 @@
     <property role="TrG5h" value="HarnessModule" />
     <property role="3GE5qa" value="harness" />
     <property role="34LRSv" value="harness" />
+    <property role="1pbfSe" value="1835944882" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     <node concept="PrWs8" id="58I4robP8VO" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
@@ -228,6 +241,7 @@
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="GuardedNonDeterministicChoice" />
     <property role="34LRSv" value="nondeterministic_choice" />
+    <property role="1pbfSe" value="1836104605" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="7MOa6vKJ9cR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -240,6 +254,7 @@
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="GuardedCall" />
     <property role="34LRSv" value="choice" />
+    <property role="1pbfSe" value="1836124379" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2h3YlM50CCl" role="1TKVEl">
       <property role="TrG5h" value="hasGuard" />
@@ -262,18 +277,21 @@
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="AfterQUntilRExistsP" />
     <property role="34LRSv" value="after until exists" />
+    <property role="1pbfSe" value="752763445" />
     <ref role="1TJDcQ" node="5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
   </node>
   <node concept="1TIwiD" id="2gQe_W8E0vC">
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="BeforePExistsQ" />
     <property role="34LRSv" value="before exists" />
+    <property role="1pbfSe" value="752763463" />
     <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
   </node>
   <node concept="1TIwiD" id="2gQe_W8E0vR">
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="PImmediatelyPrecedesQ" />
     <property role="34LRSv" value="immediately precedes" />
+    <property role="1pbfSe" value="752763478" />
     <ref role="1TJDcQ" node="6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
   </node>
   <node concept="1TIwiD" id="7Bqs07i8Hdj">
@@ -281,17 +299,20 @@
     <property role="TrG5h" value="CProverBasedMbeddrAnalysis" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1274889044" />
     <ref role="1TJDcQ" node="5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
   </node>
   <node concept="1TIwiD" id="7XSydr3fiZ">
     <property role="TrG5h" value="VerificationOnlyDepConstraint" />
     <property role="34LRSv" value="verification-only" />
+    <property role="1pbfSe" value="1560991458" />
     <ref role="1TJDcQ" to="vs0r:7XSydqUPm9" resolve="ChunkDependencyConstraint" />
   </node>
   <node concept="1TIwiD" id="5E1$geGaBk_">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERbitvector" />
     <property role="34LRSv" value="bitvector" />
+    <property role="1pbfSe" value="111937064" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="5E1$geGaBru" role="1TKVEl">
       <property role="TrG5h" value="unsigned" />
@@ -306,6 +327,7 @@
     <property role="3GE5qa" value="cbmc_macros" />
     <property role="TrG5h" value="CPROVERasync1" />
     <property role="34LRSv" value="__CPROVER_async1" />
+    <property role="1pbfSe" value="1129317662" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="2dCXJephYl8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -318,6 +340,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERfloatbv" />
     <property role="34LRSv" value="floatbv" />
+    <property role="1pbfSe" value="1247786932" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="4DO4XHFbeDO" role="1TKVEl">
       <property role="TrG5h" value="totalSize" />
@@ -331,6 +354,7 @@
   <node concept="PlHQZ" id="7ehmsbAuQbH">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="ICbmcSettings" />
+    <property role="1pbfSe" value="1510784175" />
     <node concept="1TJgyj" id="2OfxaHaxQ5e" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="externalFiles" />
@@ -398,6 +422,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERbool" />
     <property role="34LRSv" value="bool" />
+    <property role="1pbfSe" value="114827039" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="1Qze4b32ew4">
@@ -405,6 +430,7 @@
     <property role="TrG5h" value="CBMCAnalysisConfiguration" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="cbmc analysis configuration" />
+    <property role="1pbfSe" value="525590458" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
     <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
       <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
@@ -412,6 +438,7 @@
   </node>
   <node concept="1TIwiD" id="jmYEA6_9mJ">
     <property role="TrG5h" value="CProverPlatform" />
+    <property role="1pbfSe" value="1955884968" />
     <ref role="1TJDcQ" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
   </node>
   <node concept="AxPO7" id="jmYEA6H9sv">
@@ -445,6 +472,7 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="ValidEnumerationValue" />
     <property role="34LRSv" value="valid_enum" />
+    <property role="1pbfSe" value="399627092" />
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
   </node>
   <node concept="1TIwiD" id="73FH1Bco8fg">
@@ -452,6 +480,7 @@
     <property role="TrG5h" value="CPROVERassert" />
     <property role="34LRSv" value="__CPROVER_assert" />
     <property role="R4oN_" value="assert with message in case of violation" />
+    <property role="1pbfSe" value="1028405225" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="73FH1Bco8D_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -469,6 +498,7 @@
     <property role="TrG5h" value="CPROVERatomic" />
     <property role="34LRSv" value="__CPROVER_atomic" />
     <property role="R4oN_" value="atomic section" />
+    <property role="1pbfSe" value="491026679" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="3V3CJZuwwng" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -480,21 +510,25 @@
   <node concept="PlHQZ" id="3V3CJZuMScE">
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="IAssertLike" />
+    <property role="1pbfSe" value="495920681" />
   </node>
   <node concept="1TIwiD" id="i5tJSHdtYB">
     <property role="3GE5qa" value="cbmc_macros" />
     <property role="TrG5h" value="CPROVERthreadId" />
     <property role="34LRSv" value="__CPROVER_thread_id" />
+    <property role="1pbfSe" value="834360997" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="7DvJ5MZ1ag1">
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="IHarnessLike" />
+    <property role="1pbfSe" value="962879581" />
   </node>
   <node concept="1TIwiD" id="7DvJ5MZf4YH">
     <property role="TrG5h" value="StubsConfiguration" />
     <property role="34LRSv" value="stubs configuration" />
     <property role="3GE5qa" value="stubbing" />
+    <property role="1pbfSe" value="966528009" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7DvJ5MZf54t" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -509,6 +543,7 @@
   <node concept="1TIwiD" id="7DvJ5MZf5j_">
     <property role="TrG5h" value="SingleStubConfig" />
     <property role="3GE5qa" value="stubbing" />
+    <property role="1pbfSe" value="966529345" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7DvJ5MZf5jA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -528,6 +563,7 @@
     <property role="TrG5h" value="AnalysisConfigItem" />
     <property role="34LRSv" value="analysis configuration item" />
     <property role="R4oN_" value="pointer to the analysis configuration" />
+    <property role="1pbfSe" value="172263116" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7AXwte8Dbfu" role="1TKVEi">
       <property role="20lmBu" value="reference" />

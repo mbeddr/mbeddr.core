@@ -2,7 +2,7 @@
 <model ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,6 +27,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -66,6 +67,7 @@
     <property role="TrG5h" value="PreferenceForm" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Preference Form" />
+    <property role="1pbfSe" value="1840382682" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="X7OD3WvjpT" role="1TKVEl">
       <property role="TrG5h" value="scope" />
@@ -114,6 +116,7 @@
   <node concept="PlHQZ" id="86yKXFFVPT">
     <property role="TrG5h" value="IPreferenceFormProperty" />
     <property role="3GE5qa" value="property" />
+    <property role="1pbfSe" value="1840662664" />
     <node concept="PrWs8" id="86yKXFWfMU" role="PrDN$">
       <ref role="PrY4T" to="tp4f:hyWqYN0" resolve="IMember" />
     </node>
@@ -123,6 +126,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="property" />
+    <property role="1pbfSe" value="1841157946" />
     <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     <node concept="1TJgyj" id="7Hbe8h6YX0T" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -138,6 +142,7 @@
     <property role="TrG5h" value="TextFieldPreferenceFormProperty" />
     <property role="3GE5qa" value="property" />
     <property role="34LRSv" value="text field" />
+    <property role="1pbfSe" value="1841157955" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
     <node concept="1TJgyi" id="86yKXFHOKP" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
@@ -148,6 +153,7 @@
     <property role="TrG5h" value="CheckBoxPreferenceFormProperty" />
     <property role="3GE5qa" value="property" />
     <property role="34LRSv" value="checkbox" />
+    <property role="1pbfSe" value="1841312779" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
     <node concept="1TJgyi" id="86yKXFIqzX" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
@@ -158,6 +164,7 @@
     <property role="TrG5h" value="GetPreferenceFormInProjectOperation" />
     <property role="34LRSv" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
     <property role="3GE5qa" value="getter" />
+    <property role="1pbfSe" value="1844694117" />
     <ref role="1TJDcQ" to="tp4k:2TmYHHddPWB" resolve="BaseProjectOperation" />
     <node concept="PrWs8" id="2DIWO7Y817z" role="PzmwI">
       <ref role="PrY4T" node="2DIWO7Y817r" resolve="IPreferenceFormExpression" />
@@ -166,6 +173,7 @@
   <node concept="1TIwiD" id="86yKXFV_6e">
     <property role="TrG5h" value="PreferenceFormType" />
     <property role="34LRSv" value="preferenceForm&lt;&lt;{preferenceForm}&gt;&gt;" />
+    <property role="1pbfSe" value="1844763805" />
     <ref role="1TJDcQ" to="tp4f:hyWtXx5" resolve="BaseClassifierType" />
     <node concept="1TJgyj" id="86yKXFVA3h" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -178,6 +186,7 @@
     <property role="3GE5qa" value="property" />
     <property role="TrG5h" value="PreferenceFormPropertyReference" />
     <property role="R4oN_" value="reference to externalizable form property" />
+    <property role="1pbfSe" value="1845422687" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="86yKXFY5Xj" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -195,6 +204,7 @@
     <property role="TrG5h" value="AbstractComboBoxPreferenceFormProperty" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="353591694" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
   </node>
   <node concept="AxPO7" id="X7OD3Wvjw1">
@@ -216,12 +226,14 @@
     <property role="3GE5qa" value="Preference.Members" />
     <property role="2_RsDV" value="none" />
     <property role="34LRSv" value="before write" />
+    <property role="1pbfSe" value="504104636" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="77gEP6zgLdb">
     <property role="3GE5qa" value="property.combobox" />
     <property role="TrG5h" value="PredefinedComboBoxPreferenceFormProperty" />
     <property role="34LRSv" value="predefined combobox" />
+    <property role="1pbfSe" value="353615516" />
     <ref role="1TJDcQ" node="77gEP6zgFoX" resolve="AbstractComboBoxPreferenceFormProperty" />
     <node concept="1TJgyj" id="77gEP6zgLdc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -233,6 +245,7 @@
   <node concept="1TIwiD" id="77gEP6zgLdF">
     <property role="3GE5qa" value="property.combobox" />
     <property role="TrG5h" value="PredefinedComboBoxEntry" />
+    <property role="1pbfSe" value="353615548" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="77gEP6zgLqd" role="1TKVEl">
       <property role="TrG5h" value="key" />
@@ -245,6 +258,7 @@
   <node concept="PlHQZ" id="2DIWO7Y817r">
     <property role="3GE5qa" value="getter" />
     <property role="TrG5h" value="IPreferenceFormExpression" />
+    <property role="1pbfSe" value="680461596" />
     <node concept="1TJgyj" id="86yKXFVl2p" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="formDeclaration" />
@@ -256,6 +270,7 @@
     <property role="3GE5qa" value="property" />
     <property role="TrG5h" value="IntegerFieldPreferenceFormProperty" />
     <property role="34LRSv" value="integer field" />
+    <property role="1pbfSe" value="1900926034" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
     <node concept="1TJgyi" id="46uejXd54j2" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
@@ -265,12 +280,14 @@
   <node concept="1TIwiD" id="77gEP6zh7j7">
     <property role="3GE5qa" value="property.combobox" />
     <property role="TrG5h" value="DynamicComboBoxDefaultEntryFunctionParameter" />
+    <property role="1pbfSe" value="353706008" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="5YZamx7K_J4">
     <property role="3GE5qa" value="getter" />
     <property role="TrG5h" value="GetPreferenceFormInApplicationExpression" />
     <property role="34LRSv" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
+    <property role="1pbfSe" value="1484683988" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="2DIWO7Y817B" role="PzmwI">
       <ref role="PrY4T" node="2DIWO7Y817r" resolve="IPreferenceFormExpression" />
@@ -280,6 +297,7 @@
     <property role="3GE5qa" value="property.combobox" />
     <property role="TrG5h" value="DynamicComboBoxPreferenceFormProperty" />
     <property role="34LRSv" value="dynamic combobox" />
+    <property role="1pbfSe" value="353690285" />
     <ref role="1TJDcQ" node="77gEP6zgFoX" resolve="AbstractComboBoxPreferenceFormProperty" />
     <node concept="1TJgyj" id="77gEP6zh6SY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -297,6 +315,7 @@
   <node concept="1TIwiD" id="77gEP6zh6UN">
     <property role="3GE5qa" value="property.combobox" />
     <property role="TrG5h" value="DynamicComboBoxDefaultEntryFunction" />
+    <property role="1pbfSe" value="353704452" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="hBxXM2A">
@@ -306,17 +325,20 @@
     <property role="3GE5qa" value="Preference.Members" />
     <property role="2_RsDV" value="none" />
     <property role="34LRSv" value="after read" />
+    <property role="1pbfSe" value="503897665" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="77gEP6zh3ul">
     <property role="3GE5qa" value="property.combobox" />
     <property role="TrG5h" value="DynamicComboBoxEntriesFunction" />
+    <property role="1pbfSe" value="353690342" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="fFi6Pd8j6">
     <property role="TrG5h" value="PassWordFieldPreferenceFormProperty" />
     <property role="3GE5qa" value="property" />
     <property role="34LRSv" value="Password field" />
+    <property role="1pbfSe" value="1253821977" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
     <node concept="1TJgyi" id="fFi6Pd8j7" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
@@ -327,12 +349,14 @@
     <property role="3GE5qa" value="Preference.Members" />
     <property role="TrG5h" value="MemoryDataParameter" />
     <property role="34LRSv" value="memoryData" />
+    <property role="1pbfSe" value="1266014208" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="1BL2OuqAhNe">
     <property role="3GE5qa" value="Preference.Members" />
     <property role="TrG5h" value="DataFromDiskParameter" />
     <property role="34LRSv" value="diskData" />
+    <property role="1pbfSe" value="1266014187" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>

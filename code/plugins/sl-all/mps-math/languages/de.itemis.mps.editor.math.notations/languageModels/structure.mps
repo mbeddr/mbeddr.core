@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:98c96203-129a-452b-86c3-5a06ed0a0d9e(de.itemis.mps.editor.math.notations.structure)" concise="true">
+<model ref="r:98c96203-129a-452b-86c3-5a06ed0a0d9e(de.itemis.mps.editor.math.notations.structure)">
   <persistence version="9" />
+  <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="x4fh" ref="r:6d7e624e-8f0d-49a1-aae8-a4cb94dbe189(de.itemis.mps.editor.math.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -46,21 +47,25 @@
   <node concept="1TIwiD" id="9L22EoWnyF">
     <property role="TrG5h" value="SumEditor" />
     <property role="34LRSv" value="math.sum" />
+    <property role="1pbfSe" value="1688043307" />
     <ref role="1TJDcQ" node="7UiI8Op1nK9" resolve="AbstractLoopEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnHKj">
     <property role="TrG5h" value="AbsEditor" />
     <property role="34LRSv" value="math.abs" />
+    <property role="1pbfSe" value="477674856" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnJs$">
     <property role="TrG5h" value="CurlyBracketsEditor" />
     <property role="34LRSv" value="math.curly-brackets" />
+    <property role="1pbfSe" value="477667927" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnJxD">
     <property role="TrG5h" value="DivisionEditor" />
     <property role="34LRSv" value="math.division" />
+    <property role="1pbfSe" value="477667602" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFoxlR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -78,6 +83,7 @@
   <node concept="1TIwiD" id="7wCpClFnJAI">
     <property role="TrG5h" value="IntegralEditor" />
     <property role="34LRSv" value="math.integral" />
+    <property role="1pbfSe" value="477667277" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyi" id="QvUN5N4Szt" role="1TKVEl">
       <property role="TrG5h" value="showParentheses" />
@@ -110,6 +116,7 @@
   <node concept="1TIwiD" id="7wCpClFnJFN">
     <property role="TrG5h" value="NRootEditor" />
     <property role="34LRSv" value="math.nroot" />
+    <property role="1pbfSe" value="477666952" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFoTNR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -127,11 +134,13 @@
   <node concept="1TIwiD" id="7wCpClFnJKS">
     <property role="TrG5h" value="ParenthesesEditor" />
     <property role="34LRSv" value="math.parentheses" />
+    <property role="1pbfSe" value="477666627" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnJPX">
     <property role="TrG5h" value="PowerEditor" />
     <property role="34LRSv" value="math.superscript" />
+    <property role="1pbfSe" value="477666302" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFt0P1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -149,6 +158,7 @@
   <node concept="1TIwiD" id="7wCpClFnJV2">
     <property role="TrG5h" value="SqrtEditor" />
     <property role="34LRSv" value="math.sqrt" />
+    <property role="1pbfSe" value="477665977" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFoU95" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -160,11 +170,13 @@
   <node concept="1TIwiD" id="7wCpClFnK07">
     <property role="TrG5h" value="SquareBracketsEditor" />
     <property role="34LRSv" value="math.square-brackets" />
+    <property role="1pbfSe" value="477665652" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7UiI8OnHLfb">
     <property role="TrG5h" value="LoopEditor" />
     <property role="34LRSv" value="math.loop" />
+    <property role="1pbfSe" value="1773548456" />
     <ref role="1TJDcQ" node="7UiI8Op1nK9" resolve="AbstractLoopEditor" />
     <node concept="1TJgyi" id="QvUN5N1Ano" role="1TKVEl">
       <property role="TrG5h" value="showParentheses" />
@@ -200,6 +212,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="math.abstract-loop" />
+    <property role="1pbfSe" value="1751632746" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7UiI8Op1nPe" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -223,12 +236,14 @@
   <node concept="1TIwiD" id="7UiI8Oph8GX">
     <property role="TrG5h" value="ProductEditor" />
     <property role="34LRSv" value="math.product" />
+    <property role="1pbfSe" value="1747500086" />
     <ref role="1TJDcQ" node="7UiI8Op1nK9" resolve="AbstractLoopEditor" />
   </node>
   <node concept="1TIwiD" id="7UiI8OpiHxh">
     <property role="TrG5h" value="AbstractBracketsEditor" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1747087138" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7UiI8OpiHGj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -240,6 +255,7 @@
   <node concept="1TIwiD" id="7UiI8OpiHL1">
     <property role="TrG5h" value="BracketsEditor" />
     <property role="34LRSv" value="math.brackets" />
+    <property role="1pbfSe" value="1747086130" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
     <node concept="1TJgyj" id="7UiI8OpiN_2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -257,6 +273,7 @@
   <node concept="1TIwiD" id="2_93Dm8d21u">
     <property role="TrG5h" value="AboveEditor" />
     <property role="34LRSv" value="math.above" />
+    <property role="1pbfSe" value="1317196045" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="73f6OzXtcxF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -274,6 +291,7 @@
   <node concept="1TIwiD" id="4r1mNB_oAsj">
     <property role="TrG5h" value="SubscriptEditor" />
     <property role="34LRSv" value="math.subscript" />
+    <property role="1pbfSe" value="740541004" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="4r1mNB_oAvD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -291,6 +309,7 @@
   <node concept="1TIwiD" id="4r1mNB_qwqE">
     <property role="TrG5h" value="SubscriptedFunctionEditor" />
     <property role="34LRSv" value="math.subscriped-function" />
+    <property role="1pbfSe" value="741040611" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="4r1mNB_qwrb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -314,6 +333,7 @@
   <node concept="1TIwiD" id="4r1mNB_GBCV">
     <property role="TrG5h" value="CustomSymbolIntegralEditor" />
     <property role="34LRSv" value="math.integral-custom" />
+    <property role="1pbfSe" value="745788788" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyi" id="QvUN5N4qHZ" role="1TKVEl">
       <property role="TrG5h" value="showParentheses" />
@@ -352,6 +372,7 @@
   <node concept="1TIwiD" id="3p9OysaCeUt">
     <property role="TrG5h" value="OverreachingBracketsEditor" />
     <property role="34LRSv" value="math.overreachingBrackets" />
+    <property role="1pbfSe" value="1089126596" />
     <ref role="1TJDcQ" node="7UiI8OpiHL1" resolve="BracketsEditor" />
     <node concept="1TJgyi" id="3p9OysaCeVh" role="1TKVEl">
       <property role="TrG5h" value="overreachTop" />
@@ -377,6 +398,7 @@
   <node concept="1TIwiD" id="3p9OysaNeo3">
     <property role="TrG5h" value="OverreachingLoopEditor" />
     <property role="34LRSv" value="math.overreachingLoop" />
+    <property role="1pbfSe" value="1092007978" />
     <ref role="1TJDcQ" node="7UiI8OnHLfb" resolve="LoopEditor" />
     <node concept="1TJgyi" id="3p9OysaNepe" role="1TKVEl">
       <property role="TrG5h" value="overreachTop" />

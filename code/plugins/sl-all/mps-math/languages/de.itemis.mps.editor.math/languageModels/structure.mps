@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6d7e624e-8f0d-49a1-aae8-a4cb94dbe189(de.itemis.mps.editor.math.structure)" concise="true">
+<model ref="r:6d7e624e-8f0d-49a1-aae8-a4cb94dbe189(de.itemis.mps.editor.math.structure)">
   <persistence version="9" />
+  <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -46,6 +47,7 @@
   <node concept="1TIwiD" id="1lPTJf7_6lc">
     <property role="TrG5h" value="CellModel_MathBase" />
     <property role="34LRSv" value="math" />
+    <property role="1pbfSe" value="586527681" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="9L22EoWidO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -93,30 +95,36 @@
   <node concept="1TIwiD" id="9L22EoWidN">
     <property role="TrG5h" value="LayoutFunction" />
     <property role="34LRSv" value="layout" />
+    <property role="1pbfSe" value="1688065123" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="9L22EoWidT">
     <property role="TrG5h" value="PaintFunction" />
     <property role="34LRSv" value="paint" />
+    <property role="1pbfSe" value="1688065117" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="9L22EoXbM_">
     <property role="TrG5h" value="Parameter_ChildCells" />
     <property role="34LRSv" value="childCells" />
+    <property role="1pbfSe" value="1687829297" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="9L22EoXFdE">
     <property role="TrG5h" value="Parameter_ThisLayoutableCell" />
     <property role="34LRSv" value="cell" />
+    <property role="1pbfSe" value="1687700588" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="9L22Ep23lK">
     <property role="TrG5h" value="Parameter_Graphics" />
     <property role="34LRSv" value="g" />
+    <property role="1pbfSe" value="1686553190" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="19RCnNmEwGZ">
     <property role="TrG5h" value="ChildCellDecl" />
+    <property role="1pbfSe" value="383669061" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="19RCnNmEwKp" role="1TKVEl">
       <property role="TrG5h" value="scale" />
@@ -134,6 +142,7 @@
   </node>
   <node concept="1TIwiD" id="19RCnNmES40">
     <property role="TrG5h" value="ChildCellRef" />
+    <property role="1pbfSe" value="383573380" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="19RCnNmES5t" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -145,11 +154,13 @@
   <node concept="1TIwiD" id="70CVChRcu9X">
     <property role="TrG5h" value="GetCenterYFunction" />
     <property role="34LRSv" value="getCenterY" />
+    <property role="1pbfSe" value="413478655" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="7UiI8OnHTLk">
     <property role="TrG5h" value="PredefinedMathSymbol" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1773513503" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7UiI8OnJH$u" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -168,15 +179,18 @@
   </node>
   <node concept="1TIwiD" id="7UiI8OnHTRi">
     <property role="TrG5h" value="SymbolPaintFunction" />
+    <property role="1pbfSe" value="1773513121" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="7UiI8OnHTWb">
     <property role="TrG5h" value="Parameter_Bounds" />
     <property role="34LRSv" value="bounds" />
+    <property role="1pbfSe" value="1773512808" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="7UiI8OnMkHk">
     <property role="TrG5h" value="SymbolLayoutElement" />
+    <property role="1pbfSe" value="1772354591" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7UiI8OnMkRZ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -187,6 +201,7 @@
   </node>
   <node concept="1TIwiD" id="7UiI8OnRv$x">
     <property role="TrG5h" value="SharedVariableDeclaration" />
+    <property role="1pbfSe" value="1770999378" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7UiI8OnRvEd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -200,6 +215,7 @@
   </node>
   <node concept="1TIwiD" id="7UiI8OnT22p">
     <property role="TrG5h" value="SharedVariableReference" />
+    <property role="1pbfSe" value="1770596058" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="7UiI8OnT289" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -210,15 +226,18 @@
   </node>
   <node concept="1TIwiD" id="7UiI8Oo5kHL">
     <property role="TrG5h" value="UpdateDimensionFunction" />
+    <property role="1pbfSe" value="1767373826" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="7UiI8Oo5kOn">
     <property role="TrG5h" value="Parameter_Dimension" />
     <property role="34LRSv" value="dimension" />
+    <property role="1pbfSe" value="1767373404" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="7UiI8Oo8WIm">
     <property role="TrG5h" value="PredefinedMathSymbolReference" />
+    <property role="1pbfSe" value="1766423517" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7UiI8Oo8Xal" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -232,9 +251,11 @@
   </node>
   <node concept="PlHQZ" id="7UiI8Oo8WZA">
     <property role="TrG5h" value="IMathSymbol" />
+    <property role="1pbfSe" value="1766422413" />
   </node>
   <node concept="1TIwiD" id="7UiI8Oo9CUJ">
     <property role="TrG5h" value="MathSymbolDecl" />
+    <property role="1pbfSe" value="1766242500" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4r1mNB_X30F" role="1TKVEl">
       <property role="TrG5h" value="dontDraw" />
@@ -252,6 +273,7 @@
   </node>
   <node concept="1TIwiD" id="7UiI8Ooc2LE">
     <property role="TrG5h" value="MathSymbolReferenceExpression" />
+    <property role="1pbfSe" value="1765612297" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="7UiI8OocF8U" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -262,6 +284,7 @@
   </node>
   <node concept="1TIwiD" id="7UiI8Op0LqL">
     <property role="TrG5h" value="InlineMathSymbol" />
+    <property role="1pbfSe" value="1751789762" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7UiI8Op0LyJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -281,14 +304,17 @@
   <node concept="1TIwiD" id="2d15myJeBOL">
     <property role="TrG5h" value="Parameter_Symbols" />
     <property role="34LRSv" value="symbols" />
+    <property role="1pbfSe" value="763653479" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="7sJd_4rZNOZ">
     <property role="TrG5h" value="BooleanFunction" />
+    <property role="1pbfSe" value="1825672304" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="7sJd_4s1VjR">
     <property role="TrG5h" value="InitFunction" />
+    <property role="1pbfSe" value="1825117368" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>

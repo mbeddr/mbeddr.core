@@ -2,7 +2,7 @@
 <model ref="r:ea8e2f7a-cc5b-4bf7-a282-46a98c41b7b5(com.mbeddr.mpsutil.extensionclass.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -40,6 +41,7 @@
   <node concept="1TIwiD" id="4X7wieq8jk5">
     <property role="TrG5h" value="ExtensionClass" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="379013592" />
     <ref role="1TJDcQ" to="uigu:6XkcKt_cJmj" resolve="SimpleExtensionMethodsContainer" />
     <node concept="1TJgyj" id="4X7wiequnHl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -59,6 +61,7 @@
   </node>
   <node concept="1TIwiD" id="4X7wieq8Uik">
     <property role="TrG5h" value="ExtensionClassMethodCall" />
+    <property role="1pbfSe" value="378853961" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1m3OroNnQsi" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
@@ -76,6 +79,7 @@
   </node>
   <node concept="1TIwiD" id="4X7wieqsg3v">
     <property role="TrG5h" value="ExtensionClassMethodAnnotation" />
+    <property role="1pbfSe" value="373784062" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4X7wieqsgeg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -92,6 +96,7 @@
   </node>
   <node concept="1TIwiD" id="4X7wieqsg8d">
     <property role="TrG5h" value="ExtensionClassMethodParameterAnnotation" />
+    <property role="1pbfSe" value="373783760" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4X7wieqsg8q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

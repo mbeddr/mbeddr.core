@@ -2,7 +2,7 @@
 <model ref="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
     <property role="TrG5h" value="VariableDef" />
     <property role="R4oN_" value="defines an inline variable" />
     <property role="34LRSv" value="$var" />
+    <property role="1pbfSe" value="40361072" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="PrWs8" id="4E$PniRKKrZ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -53,6 +55,7 @@
     <property role="TrG5h" value="Equation" />
     <property role="R4oN_" value="an equation using variables" />
     <property role="34LRSv" value="$eq" />
+    <property role="1pbfSe" value="40363211" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="4E$PniRKKXp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -69,6 +72,7 @@
   </node>
   <node concept="1TIwiD" id="4E$PniRKKXH">
     <property role="TrG5h" value="VarRef" />
+    <property role="1pbfSe" value="40363233" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4E$PniRKKXI" role="1TKVEi">
       <property role="20lmBu" value="reference" />

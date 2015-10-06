@@ -2,7 +2,7 @@
 <model ref="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,6 +23,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -56,17 +57,20 @@
     <property role="TrG5h" value="HasEffortFilter" />
     <property role="R4oN_" value="requirements that have estimated effort" />
     <property role="34LRSv" value="hasEstimatedEffort" />
+    <property role="1pbfSe" value="1123979802" />
     <ref role="1TJDcQ" to="75wo:5liZiKqQ1XL" resolve="RequirementsFilter" />
   </node>
   <node concept="1TIwiD" id="N634JYHMEE">
     <property role="TrG5h" value="Technote" />
     <property role="34LRSv" value="technote" />
+    <property role="1pbfSe" value="192755445" />
     <ref role="1TJDcQ" to="75wo:N634JYHMEF" resolve="TextReqData" />
   </node>
   <node concept="1TIwiD" id="7sHl0myeX2w">
     <property role="TrG5h" value="WorkPackage" />
     <property role="3GE5qa" value="wp" />
     <property role="34LRSv" value="workpackage" />
+    <property role="1pbfSe" value="426321061" />
     <ref role="1TJDcQ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
     <node concept="1TJgyj" id="7sHl0myeX2U" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -112,6 +116,7 @@
     <property role="TrG5h" value="WorkPackagesAssQuery" />
     <property role="3GE5qa" value="wp" />
     <property role="34LRSv" value="workpackages" />
+    <property role="1pbfSe" value="426348408" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyi" id="7sHl0myf3HO" role="1TKVEl">
       <property role="TrG5h" value="scope" />
@@ -137,6 +142,7 @@
   <node concept="1TIwiD" id="7sHl0myf3Ib">
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="WorkPackagesAssResult" />
+    <property role="1pbfSe" value="426348432" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="7sHl0myf3Ii" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -148,6 +154,7 @@
   <node concept="1TIwiD" id="7sHl0myf4Dz">
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="WorkPackagesAssSummary" />
+    <property role="1pbfSe" value="426352232" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyi" id="7sHl0myf4DA" role="1TKVEl">
       <property role="TrG5h" value="estimatedEffort" />
@@ -162,6 +169,7 @@
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="ReqWithoutWPQuery" />
     <property role="34LRSv" value="requirements without workpackage" />
+    <property role="1pbfSe" value="1741341201" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="6QfbJ5POvXP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -172,6 +180,7 @@
   <node concept="1TIwiD" id="3greo4NFSys">
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="ReqWithoutWPResult" />
+    <property role="1pbfSe" value="1741341213" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="3greo4NFSyt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -184,6 +193,7 @@
     <property role="TrG5h" value="WPActualWork" />
     <property role="3GE5qa" value="wp" />
     <property role="34LRSv" value="worked" />
+    <property role="1pbfSe" value="1956998741" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="vRfru3oPfP" role="1TKVEl">
       <property role="TrG5h" value="hours" />

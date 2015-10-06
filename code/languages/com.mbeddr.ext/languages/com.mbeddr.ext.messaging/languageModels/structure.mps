@@ -2,7 +2,7 @@
 <model ref="r:030bc2d0-ab1f-4013-9326-cb8d964c9de2(com.mbeddr.ext.messaging.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -44,6 +45,7 @@
   <node concept="1TIwiD" id="6MQ2rNXIlg1">
     <property role="TrG5h" value="MessageDeclaration" />
     <property role="34LRSv" value="message" />
+    <property role="1pbfSe" value="1785683389" />
     <node concept="1TJgyj" id="6MQ2rNXJFfn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="id" />
@@ -65,6 +67,7 @@
   </node>
   <node concept="1TIwiD" id="6MQ2rNXJAO$">
     <property role="TrG5h" value="MessageType" />
+    <property role="1pbfSe" value="1786017504" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="2hvQkqcLEjv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -78,6 +81,7 @@
   </node>
   <node concept="1TIwiD" id="6MQ2rNXJFf4">
     <property role="TrG5h" value="MessageMember" />
+    <property role="1pbfSe" value="1786035584" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6MQ2rNXJFf5" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -88,6 +92,7 @@
   </node>
   <node concept="1TIwiD" id="2hvQkqcPm0v">
     <property role="TrG5h" value="MessageMemberInitExpr" />
+    <property role="1pbfSe" value="1321911963" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="2hvQkqcRa5B" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -108,6 +113,7 @@
   <node concept="1TIwiD" id="2hvQkqcWqnP">
     <property role="TrG5h" value="SendDotTarget" />
     <property role="34LRSv" value="send" />
+    <property role="1pbfSe" value="1320059077" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2hvQkqcWqnU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -123,6 +129,7 @@
     <property role="TrG5h" value="MessageReceiveStatement" />
     <property role="34LRSv" value="receive from" />
     <property role="3GE5qa" value="receive" />
+    <property role="1pbfSe" value="1319138803" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="2hvQkqcZVlB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -140,6 +147,7 @@
   <node concept="1TIwiD" id="2hvQkqcZV6v">
     <property role="TrG5h" value="MessageReceiveHandler" />
     <property role="3GE5qa" value="receive" />
+    <property role="1pbfSe" value="1319138587" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2hvQkqd0JfY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -158,10 +166,12 @@
     <property role="TrG5h" value="MessageExpression" />
     <property role="34LRSv" value="msg" />
     <property role="3GE5qa" value="receive" />
+    <property role="1pbfSe" value="1318839771" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="2hvQkqd1$WE">
     <property role="TrG5h" value="MessageMemberTarget" />
+    <property role="1pbfSe" value="1318705040" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2hvQkqd1$WL" role="PzmwI">
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
@@ -176,6 +186,7 @@
   <node concept="1TIwiD" id="2hvQkqd3RcE">
     <property role="TrG5h" value="AnonymousMessageType" />
     <property role="34LRSv" value="message" />
+    <property role="1pbfSe" value="1318106000" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>
 </model>

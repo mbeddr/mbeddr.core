@@ -2,7 +2,7 @@
 <model ref="r:20269589-2670-4f99-b5ae-af443d8a5c29(com.mbeddr.ext.components.concurrency.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,6 +18,7 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -51,6 +52,7 @@
     <property role="TrG5h" value="SectionInComponent" />
     <property role="34LRSv" value="section" />
     <property role="3GE5qa" value="internal" />
+    <property role="1pbfSe" value="1965728811" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsb2sPNCoG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -71,6 +73,7 @@
   <node concept="1TIwiD" id="3Xsb2sPPld7">
     <property role="TrG5h" value="TaskInComponent" />
     <property role="34LRSv" value="task" />
+    <property role="1pbfSe" value="1966178158" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsb2sPPldm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -94,6 +97,7 @@
   <node concept="1TIwiD" id="3qlQk_geMGE">
     <property role="TrG5h" value="ScheduleSpecificationInComponent" />
     <property role="34LRSv" value="schedule" />
+    <property role="1pbfSe" value="2033122189" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3qlQk_geNrz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -116,10 +120,12 @@
   </node>
   <node concept="PlHQZ" id="3qlQk_ggqr3">
     <property role="TrG5h" value="IConcurrencyInComponent" />
+    <property role="1pbfSe" value="2032697332" />
   </node>
   <node concept="1TIwiD" id="7tWSY$OC418">
     <property role="TrG5h" value="TaskInComponentReference" />
     <property role="34LRSv" value="&lt;{componentInstance}&gt;" />
+    <property role="1pbfSe" value="1407376335" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7tWSY$OC42X" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -140,6 +146,7 @@
   <node concept="1TIwiD" id="7tWSY$ONv9C">
     <property role="TrG5h" value="ComponentInstanceFieldRef" />
     <property role="3GE5qa" value="internal" />
+    <property role="1pbfSe" value="1404381615" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="2kF1PD7cs2o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -167,6 +174,7 @@
   <node concept="1TIwiD" id="7tWSY$ONvgr">
     <property role="TrG5h" value="ComponentInstanceRunnableCall" />
     <property role="3GE5qa" value="internal" />
+    <property role="1pbfSe" value="1404381180" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7tWSY$ONvg$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -200,6 +208,7 @@
   <node concept="1TIwiD" id="5NTfFgKis1A">
     <property role="TrG5h" value="ComponentsConcurrencyConfigItem" />
     <property role="34LRSv" value="concurrency in components" />
+    <property role="1pbfSe" value="1924989158" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5NTfFgKis2X" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -208,6 +217,7 @@
   <node concept="1TIwiD" id="5NTfFgKog$i">
     <property role="TrG5h" value="NameOfComponentInstanceFunction" />
     <property role="3GE5qa" value="internal" />
+    <property role="1pbfSe" value="1923463226" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="2kF1PD7jTkU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -228,6 +238,7 @@
   <node concept="1TIwiD" id="2kF1PD7crtS">
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="ComponentInstanceReference" />
+    <property role="1pbfSe" value="1818017490" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2kF1PD7crwd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -242,6 +253,7 @@
   <node concept="PlHQZ" id="2kF1PD7cru$">
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="IComponentInstanceReference" />
+    <property role="1pbfSe" value="1818017534" />
     <node concept="PrWs8" id="2SCoDaNoPXP" role="PrDN$">
       <ref role="PrY4T" node="2SCoDaNoNQE" resolve="IGeneratorOnlyConcept" />
     </node>
@@ -249,6 +261,7 @@
   <node concept="1TIwiD" id="2kF1PD7cruM">
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="InternalComponentInstanceReference" />
+    <property role="1pbfSe" value="1818017548" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2kF1PD7crw0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -269,6 +282,7 @@
   <node concept="PlHQZ" id="2SCoDaNoNQE">
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="IGeneratorOnlyConcept" />
+    <property role="1pbfSe" value="510943172" />
   </node>
 </model>
 

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:711fe6f5-9341-4fad-8566-f7d70e151a24(de.slisson.mps.editor.multiline.demolang.structure)" concise="true">
+<model ref="r:711fe6f5-9341-4fad-8566-f7d70e151a24(de.slisson.mps.editor.multiline.demolang.structure)">
   <persistence version="9" />
+  <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -36,6 +37,7 @@
   </registry>
   <node concept="1TIwiD" id="6Wsm6VK0frh">
     <property role="TrG5h" value="ConceptA" />
+    <property role="1pbfSe" value="1595756351" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4WxvFC4UpxR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -55,6 +57,7 @@
   <node concept="1TIwiD" id="6Wsm6VK0g4w">
     <property role="TrG5h" value="RootConcept" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1595758990" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6Wsm6VK0g4x" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -65,6 +68,7 @@
   </node>
   <node concept="1TIwiD" id="4WxvFC4UpxE">
     <property role="TrG5h" value="ConceptB" />
+    <property role="1pbfSe" value="1410012964" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4WxvFC4UpxF" role="1TKVEl">
       <property role="TrG5h" value="text" />

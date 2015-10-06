@@ -2,7 +2,7 @@
 <model ref="r:e1f1298d-1e7f-441a-863f-048e9e23739d(com.mbeddr.analyses.cbmc.testsgen.testing.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -38,6 +39,7 @@
   <node concept="1TIwiD" id="73BQep1SfHe">
     <property role="TrG5h" value="TestVectorOracle" />
     <property role="34LRSv" value="test_vector_oracle" />
+    <property role="1pbfSe" value="1295461324" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="73BQep1Sm3n" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -54,6 +56,7 @@
   </node>
   <node concept="1TIwiD" id="73BQep1Sm3a">
     <property role="TrG5h" value="TestVectorStep" />
+    <property role="1pbfSe" value="1295435344" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="73BQep1Sm3b" role="1TKVEl">
       <property role="TrG5h" value="textualRepresentation" />

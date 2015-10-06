@@ -2,9 +2,9 @@
 <model ref="r:d4a8f9bc-78fb-4fb4-8fad-f65eb374c6c1(com.mbeddr.analyses.cbmc.testing.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -29,6 +29,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -57,6 +58,7 @@
   <node concept="1TIwiD" id="49Y2Xia4eRR">
     <property role="TrG5h" value="CBMCCounterexampleStateTest" />
     <property role="34LRSv" value="state" />
+    <property role="1pbfSe" value="863045173" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="49Y2Xia4uOS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -94,6 +96,7 @@
   <node concept="1TIwiD" id="49Y2Xia4hId">
     <property role="TrG5h" value="CBMCCounterexampleTest" />
     <property role="34LRSv" value="counterexample_test" />
+    <property role="1pbfSe" value="863033503" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="49Y2Xia4ibV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -111,6 +114,7 @@
   <node concept="1TIwiD" id="1aReOC$6jBX">
     <property role="TrG5h" value="GeneratorOutputPath" />
     <property role="34LRSv" value="generator-output-path" />
+    <property role="1pbfSe" value="919631175" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyi" id="v3WHCwUiHA" role="1TKVEl">
       <property role="TrG5h" value="name" />

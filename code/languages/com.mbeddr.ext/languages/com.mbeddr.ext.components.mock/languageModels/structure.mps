@@ -2,7 +2,7 @@
 <model ref="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -21,6 +21,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -58,6 +59,7 @@
     <property role="MwhBj" value="${language_descriptor}/icons/mock.png" />
     <property role="34LRSv" value="mock" />
     <property role="R4oN_" value="component with expectations" />
+    <property role="1pbfSe" value="1533518223" />
     <ref role="1TJDcQ" to="v7ag:3TmmsQkCzn9" resolve="Component" />
     <node concept="PrWs8" id="7kTwNYev7tz" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
@@ -75,6 +77,7 @@
     <property role="3GE5qa" value="mock.expectations" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1533610414" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5fn4FV$bI24" role="PzmwI">
       <ref role="PrY4T" to="v7ag:71UKpntm630" resolve="IComponentContent" />
@@ -88,6 +91,7 @@
     <property role="3GE5qa" value="mock.expectations.calls" />
     <property role="34LRSv" value="no call" />
     <property role="R4oN_" value="expect no calls on this component" />
+    <property role="1pbfSe" value="1533610418" />
     <ref role="1TJDcQ" node="1Rr52SXzvm0" resolve="Expectation" />
     <node concept="PrWs8" id="4MTwk$13QjT" role="PzmwI">
       <ref role="PrY4T" node="4MTwk$13QjF" resolve="CallExpectation" />
@@ -98,6 +102,7 @@
     <property role="3GE5qa" value="mock" />
     <property role="R4oN_" value="check if all expectations are correct" />
     <property role="34LRSv" value="validate mock" />
+    <property role="1pbfSe" value="1533765130" />
     <ref role="1TJDcQ" to="yz9a:1Rr52SXzYA6" resolve="TestSpecificStatement" />
     <node concept="PrWs8" id="7Uz1bYM5R0U" role="PzmwI">
       <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
@@ -112,6 +117,7 @@
     <property role="MwhBj" value="${language_descriptor}/icons/CallCount.png" />
     <property role="34LRSv" value="total no." />
     <property role="R4oN_" value="constrain the number of total calls" />
+    <property role="1pbfSe" value="2111349706" />
     <ref role="1TJDcQ" node="1Rr52SXzvm0" resolve="Expectation" />
     <node concept="PrWs8" id="4MTwk$13QjS" role="PzmwI">
       <ref role="PrY4T" node="4MTwk$13QjF" resolve="CallExpectation" />
@@ -126,6 +132,7 @@
     <property role="TrG5h" value="SequenceExpectation" />
     <property role="34LRSv" value="sequence" />
     <property role="R4oN_" value="a list of sequential operation calls" />
+    <property role="1pbfSe" value="2111375714" />
     <ref role="1TJDcQ" node="1Rr52SXzvm0" resolve="Expectation" />
     <node concept="1TJgyj" id="4jc_TWT3776" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -140,6 +147,7 @@
     <property role="MwhBj" value="${language_descriptor}/icons/Steps.png" />
     <property role="R4oN_" value="a step in a sequence" />
     <property role="34LRSv" value="step" />
+    <property role="1pbfSe" value="2111375716" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6BPqFthIipi" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
@@ -207,6 +215,7 @@
     <property role="TrG5h" value="ParamterAssertion" />
     <property role="34LRSv" value="parameter" />
     <property role="R4oN_" value="check validity of parameter" />
+    <property role="1pbfSe" value="2112038627" />
     <ref role="1TJDcQ" node="4jc_TWT5CXo" resolve="StepAssertion" />
     <node concept="PrWs8" id="39uR9NmOUG3" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
@@ -227,6 +236,7 @@
     <property role="MwhBj" value="${language_descriptor}/icons/AssertStep.png" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="2112038647" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="WMIrWR4jaM" role="PzmwI">
       <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
@@ -245,6 +255,7 @@
     <property role="3GE5qa" value="mock.expectations.assertions" />
     <property role="TrG5h" value="ParamRefExpression" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="647760185" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="3Krj9Itiddb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -261,6 +272,7 @@
     <property role="3GE5qa" value="stub" />
     <property role="34LRSv" value="stub component" />
     <property role="R4oN_" value="a component that has counters" />
+    <property role="1pbfSe" value="1609437271" />
     <ref role="1TJDcQ" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
     <node concept="1TJgyj" id="20McjG52B$4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -274,6 +286,7 @@
     <property role="3GE5qa" value="stub" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1609529486" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5u7uvg8pZUs">
@@ -281,6 +294,7 @@
     <property role="3GE5qa" value="stub" />
     <property role="34LRSv" value="opCallCount" />
     <property role="R4oN_" value="total number of calls of this operation" />
+    <property role="1pbfSe" value="1609529488" />
     <ref role="1TJDcQ" node="5u7uvg8pZUq" resolve="StubCounterExpr" />
   </node>
   <node concept="1TIwiD" id="5u7uvg8pZUx">
@@ -288,6 +302,7 @@
     <property role="3GE5qa" value="stub" />
     <property role="34LRSv" value="portCallCount" />
     <property role="R4oN_" value="total number of calls on this port" />
+    <property role="1pbfSe" value="1609529493" />
     <ref role="1TJDcQ" node="5u7uvg8pZUq" resolve="StubCounterExpr" />
   </node>
   <node concept="1TIwiD" id="5u7uvg8pZUz">
@@ -295,11 +310,13 @@
     <property role="3GE5qa" value="stub" />
     <property role="R4oN_" value="total number of calls on this instance" />
     <property role="34LRSv" value="compCallCount" />
+    <property role="1pbfSe" value="1609529495" />
     <ref role="1TJDcQ" node="5u7uvg8pZUq" resolve="StubCounterExpr" />
   </node>
   <node concept="1TIwiD" id="20McjG52Bz$">
     <property role="3GE5qa" value="stub" />
     <property role="TrG5h" value="StubPhase" />
+    <property role="1pbfSe" value="624732703" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="20McjG52B$0" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -309,6 +326,7 @@
     <property role="3GE5qa" value="stub" />
     <property role="TrG5h" value="PhaseExpression" />
     <property role="34LRSv" value="phase" />
+    <property role="1pbfSe" value="624732743" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="20McjG52B$d" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -321,6 +339,7 @@
     <property role="3GE5qa" value="stub" />
     <property role="TrG5h" value="PhaseChangeStatement" />
     <property role="34LRSv" value="changephase" />
+    <property role="1pbfSe" value="624787528" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="1yKRj6BOjK6" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
@@ -342,12 +361,14 @@
     <property role="3GE5qa" value="stub" />
     <property role="TrG5h" value="PhaseChangeTrigger" />
     <property role="34LRSv" value="phase change" />
+    <property role="1pbfSe" value="626302802" />
     <ref role="1TJDcQ" to="v7ag:3TmmsQkDc79" resolve="RunnableTrigger" />
   </node>
   <node concept="1TIwiD" id="5vll4VdvOG9">
     <property role="3GE5qa" value="stub" />
     <property role="TrG5h" value="PhaseType" />
     <property role="34LRSv" value="phase" />
+    <property role="1pbfSe" value="626302807" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="5vll4VdwfaG" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7FQByU3C_31" resolve="IComparable" />
@@ -356,6 +377,7 @@
   <node concept="1TIwiD" id="5vll4Vdw3f3">
     <property role="3GE5qa" value="stub" />
     <property role="TrG5h" value="PhaseRefExpression" />
+    <property role="1pbfSe" value="626362385" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5vll4Vdw3f4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -370,6 +392,7 @@
   <node concept="PlHQZ" id="4MTwk$13QjF">
     <property role="3GE5qa" value="mock.expectations.calls" />
     <property role="TrG5h" value="CallExpectation" />
+    <property role="1pbfSe" value="1305011764" />
   </node>
 </model>
 

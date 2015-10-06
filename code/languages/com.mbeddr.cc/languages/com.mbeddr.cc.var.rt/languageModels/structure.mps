@@ -2,7 +2,7 @@
 <model ref="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -49,6 +50,7 @@
   <node concept="1TIwiD" id="7H6_Qip4Mjj">
     <property role="TrG5h" value="RtFeatureModel" />
     <property role="34LRSv" value="feature model @ runtime for" />
+    <property role="1pbfSe" value="341425207" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7H6_Qip4OQ4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -67,6 +69,7 @@
     <property role="TrG5h" value="VarRTConfigItem" />
     <property role="34LRSv" value="variability @ runtime" />
     <property role="R4oN_" value="support variability decisions at runtime" />
+    <property role="1pbfSe" value="341660341" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7H6_Qip5FJt" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -75,6 +78,7 @@
   <node concept="1TIwiD" id="7H6_Qip5JI_">
     <property role="TrG5h" value="RtFeatureModelType" />
     <property role="34LRSv" value="fmconfig" />
+    <property role="1pbfSe" value="341676809" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="7H6_Qip5JIA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -86,6 +90,7 @@
   <node concept="1TIwiD" id="7H6_Qip5KIN">
     <property role="TrG5h" value="StoreRtConfigStatement" />
     <property role="34LRSv" value="store config" />
+    <property role="1pbfSe" value="341680919" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="7H6_Qip5MP8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -101,6 +106,7 @@
     <property role="TrG5h" value="VariantSwitch" />
     <property role="3GE5qa" value="switch" />
     <property role="34LRSv" value="variant" />
+    <property role="1pbfSe" value="341719029" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="7H6_Qip5U2m" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -125,6 +131,7 @@
     <property role="3GE5qa" value="switch" />
     <property role="TrG5h" value="VariantCase" />
     <property role="34LRSv" value="case" />
+    <property role="1pbfSe" value="341719030" />
     <ref role="1TJDcQ" node="7H6_Qip5U2j" resolve="VariantOption" />
     <node concept="1TJgyj" id="7H6_Qip5U2L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -137,6 +144,7 @@
     <property role="3GE5qa" value="switch" />
     <property role="TrG5h" value="VariantOption" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="341719031" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7H6_Qip5U2S" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -155,11 +163,13 @@
     <property role="3GE5qa" value="switch" />
     <property role="TrG5h" value="VariantDefault" />
     <property role="34LRSv" value="default" />
+    <property role="1pbfSe" value="341719032" />
     <ref role="1TJDcQ" node="7H6_Qip5U2j" resolve="VariantOption" />
   </node>
   <node concept="1TIwiD" id="7H6_Qip5Y4e">
     <property role="3GE5qa" value="switch" />
     <property role="TrG5h" value="FeatureRef" />
+    <property role="1pbfSe" value="341735538" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7H6_Qip5Y4f" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -174,6 +184,7 @@
   <node concept="1TIwiD" id="6W8yq39nYpW">
     <property role="3GE5qa" value="switch" />
     <property role="TrG5h" value="FeatureAttrRefExpr" />
+    <property role="1pbfSe" value="946368540" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="6W8yq39nYpY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -196,6 +207,7 @@
   </node>
   <node concept="PlHQZ" id="6W8yq39oHsC">
     <property role="TrG5h" value="IConfigModelSelector" />
+    <property role="1pbfSe" value="946561224" />
     <node concept="1TJgyj" id="6W8yq39oIaH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rtFeatureModel" />

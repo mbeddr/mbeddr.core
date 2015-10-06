@@ -2,7 +2,7 @@
 <model ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -24,6 +24,7 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
   </registry>
   <node concept="1TIwiD" id="7L$rKAVfLie">
     <property role="TrG5h" value="LayoutMap" />
+    <property role="1pbfSe" value="933462935" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="7L$rKAVfLiw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -67,6 +69,7 @@
   </node>
   <node concept="1TIwiD" id="7L$rKAVfLiv">
     <property role="TrG5h" value="LayoutMapEntry" />
+    <property role="1pbfSe" value="933462952" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7L$rKAVfMS4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -80,6 +83,7 @@
   </node>
   <node concept="1TIwiD" id="20KyIMr0tM4">
     <property role="TrG5h" value="Layout_Connection" />
+    <property role="1pbfSe" value="1154324624" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="20KyIMr0tPX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -111,6 +115,7 @@
   </node>
   <node concept="1TIwiD" id="5P3ZJ9da_0I">
     <property role="TrG5h" value="Layout_Box" />
+    <property role="1pbfSe" value="1435611360" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="D0N6DjqlKw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -150,6 +155,7 @@
   </node>
   <node concept="1TIwiD" id="20KyIMr0tK7">
     <property role="TrG5h" value="Point" />
+    <property role="1pbfSe" value="1154324749" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="20KyIMr0tMd" role="1TKVEl">
       <property role="TrG5h" value="x" />
@@ -162,6 +168,7 @@
   </node>
   <node concept="1TIwiD" id="2O_8o3dg4T1">
     <property role="TrG5h" value="RelativePosition" />
+    <property role="1pbfSe" value="94015551" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2O_8o3dg4TP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -178,6 +185,7 @@
   </node>
   <node concept="1TIwiD" id="48DYfEsvqeV">
     <property role="TrG5h" value="Layout_EdgeLabel" />
+    <property role="1pbfSe" value="559440715" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="48DYfEsvqfp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -192,6 +200,7 @@
   </node>
   <node concept="1TIwiD" id="D0N6Djqfyx">
     <property role="TrG5h" value="Layout_Port" />
+    <property role="1pbfSe" value="1571407115" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="D0N6Djqfz3" role="1TKVEl">
       <property role="TrG5h" value="portName" />
