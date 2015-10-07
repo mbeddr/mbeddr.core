@@ -1990,8 +1990,13 @@
                     <node concept="Xl_RD" id="7XsZSrHaG4" role="3uHU7B">
                       <property role="Xl_RC" value="----------- Raw result from claims collection ----------\n" />
                     </node>
-                    <node concept="37vLTw" id="7XsZSrHdd1" role="3uHU7w">
-                      <ref role="3cqZAo" node="mb65_hzPrl" resolve="rawResult" />
+                    <node concept="2OqwBi" id="7XsZSrHj3$" role="3uHU7w">
+                      <node concept="37vLTw" id="7XsZSrHdd1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="mb65_hzPrl" resolve="rawResult" />
+                      </node>
+                      <node concept="liA8E" id="7XsZSrHjaS" role="2OqNvi">
+                        <ref role="37wK5l" to="rbq9:6izRX52HX30" resolve="getRawOutput" />
+                      </node>
                     </node>
                   </node>
                 </node>
