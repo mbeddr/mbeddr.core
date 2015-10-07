@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="hauh" ref="r:489c719c-7616-403c-a112-c95a57d1fcd3(com.mbeddr.doc.aspect.exampleLanguage.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -19,9 +20,16 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -59,6 +67,23 @@
         <node concept="3F2HdR" id="6TuvEpVG_jA" role="3EZMnx">
           <ref role="1NtTu8" to="hauh:6TuvEpVGx4e" />
           <node concept="2iRkQZ" id="6TuvEpVG_jH" role="2czzBx" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="YJrcxt8BiR">
+    <ref role="1XX52x" to="hauh:YJrcxt8Bis" resolve="DocumentedChildWithRef" />
+    <node concept="3EZMnI" id="YJrcxt8BiW" role="2wV5jI">
+      <node concept="2iRfu4" id="YJrcxt8BiX" role="2iSdaV" />
+      <node concept="3F0ifn" id="YJrcxt8BiT" role="3EZMnx">
+        <property role="3F0ifm" value="Child with ref: " />
+      </node>
+      <node concept="1iCGBv" id="YJrcxt8F9P" role="3EZMnx">
+        <ref role="1NtTu8" to="hauh:YJrcxt8Bit" />
+        <node concept="1sVBvm" id="YJrcxt8F9R" role="1sWHZn">
+          <node concept="PMmxH" id="YJrcxt8Fak" role="2wV5jI">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+          </node>
         </node>
       </node>
     </node>

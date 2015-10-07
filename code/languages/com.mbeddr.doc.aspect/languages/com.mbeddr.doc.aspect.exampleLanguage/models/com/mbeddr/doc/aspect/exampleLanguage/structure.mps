@@ -11,6 +11,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -43,10 +44,12 @@
   </node>
   <node concept="1TIwiD" id="6TuvEpVGx1e">
     <property role="TrG5h" value="DocumentedChild1" />
+    <property role="34LRSv" value="Child1" />
     <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
   </node>
   <node concept="1TIwiD" id="6TuvEpVGx7v">
     <property role="TrG5h" value="DocumentedChild2" />
+    <property role="34LRSv" value="Child2" />
     <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
   </node>
   <node concept="1TIwiD" id="4jXS_uRrfu2">
@@ -56,6 +59,15 @@
   <node concept="1TIwiD" id="4jXS_uRrhkX">
     <property role="TrG5h" value="AnotherChild" />
     <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
+  </node>
+  <node concept="1TIwiD" id="YJrcxt8Bis">
+    <property role="TrG5h" value="DocumentedChildWithRef" />
+    <ref role="1TJDcQ" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
+    <node concept="1TJgyj" id="YJrcxt8Bit" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refChild" />
+      <ref role="20lvS9" node="4jXS_uRrfu2" resolve="BaseChildConcept" />
+    </node>
   </node>
 </model>
 
