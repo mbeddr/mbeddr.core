@@ -293,7 +293,7 @@
       <node concept="10Oyi0" id="1kjPA_ypYwn" role="1tU5fm" />
       <node concept="3Tm1VV" id="1kjPA_ypYwm" role="1B3o_S" />
       <node concept="3cmrfG" id="1kjPA_ypYwo" role="33vP2m">
-        <property role="3cmrfH" value="10" />
+        <property role="3cmrfH" value="1" />
       </node>
       <node concept="NWlO9" id="1kjPA_yqDv7" role="lGtFl">
         <property role="NWlVz" value="The maximum number of threads that can be used for running the tests." />

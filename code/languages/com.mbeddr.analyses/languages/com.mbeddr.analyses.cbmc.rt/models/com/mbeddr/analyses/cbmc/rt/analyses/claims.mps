@@ -14,6 +14,7 @@
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -90,6 +91,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1352,6 +1356,32 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="7XsZSrFU$R" role="3cqZAp" />
+            <node concept="3clFbF" id="7XsZSrFW0E" role="3cqZAp">
+              <node concept="2OqwBi" id="7XsZSrFW0B" role="3clFbG">
+                <node concept="10M0yZ" id="7XsZSrFW0C" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="7XsZSrFW0D" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="7XsZSrFWR2" role="37wK5m">
+                    <node concept="2OqwBi" id="7XsZSrFX3x" role="3uHU7w">
+                      <node concept="37vLTw" id="7XsZSrFX23" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4fvA6ORBuFg" resolve="claim" />
+                      </node>
+                      <node concept="2S8uIT" id="7XsZSrFXva" role="2OqNvi">
+                        <ref role="2S8YL0" to="rbq9:mb65_hvOyZ" resolve="description" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="7XsZSrFW_7" role="3uHU7B">
+                      <property role="Xl_RC" value="------- ClaimsAnalyzer -- adding job for claim: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7XsZSrFVr4" role="3cqZAp" />
             <node concept="3clFbF" id="4fvA6ORA6A9" role="3cqZAp">
               <node concept="2OqwBi" id="4fvA6ORA7gl" role="3clFbG">
                 <node concept="37vLTw" id="4fvA6ORBizA" role="2Oq$k0">
@@ -1507,6 +1537,32 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="3clFbH" id="7XsZSrFXxv" role="3cqZAp" />
+                            <node concept="3clFbF" id="7XsZSrFYJP" role="3cqZAp">
+                              <node concept="2OqwBi" id="7XsZSrFYJQ" role="3clFbG">
+                                <node concept="10M0yZ" id="7XsZSrFYJR" role="2Oq$k0">
+                                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                </node>
+                                <node concept="liA8E" id="7XsZSrFYJS" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <node concept="3cpWs3" id="7XsZSrFYJT" role="37wK5m">
+                                    <node concept="2OqwBi" id="7XsZSrFYJU" role="3uHU7w">
+                                      <node concept="37vLTw" id="7XsZSrFYJV" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="4fvA6ORBuFg" resolve="claim" />
+                                      </node>
+                                      <node concept="2S8uIT" id="7XsZSrFYJW" role="2OqNvi">
+                                        <ref role="2S8YL0" to="rbq9:mb65_hvOyZ" resolve="description" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="7XsZSrFYJX" role="3uHU7B">
+                                      <property role="Xl_RC" value="------- ClaimsAnalyzer -- running CProver for claim: " />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbH" id="7XsZSrFXSM" role="3cqZAp" />
                             <node concept="3cpWs8" id="3d5MwV8vZuc" role="3cqZAp">
                               <node concept="3cpWsn" id="3d5MwV8vZud" role="3cpWs9">
                                 <property role="TrG5h" value="rawResult" />
