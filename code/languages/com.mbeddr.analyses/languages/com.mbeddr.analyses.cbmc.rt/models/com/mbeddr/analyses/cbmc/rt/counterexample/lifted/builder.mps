@@ -440,7 +440,9 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="4Ow3NnwT4jw" role="1B3o_S" />
       <node concept="10P_77" id="6GZ1x5GshiV" role="1tU5fm" />
-      <node concept="3clFbT" id="6GZ1x5GshiW" role="33vP2m" />
+      <node concept="3clFbT" id="6GZ1x5GshiW" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
       <node concept="NWlO9" id="7oz0hCw0QpG" role="lGtFl">
         <property role="NWlVz" value="Should we debug?" />
       </node>
