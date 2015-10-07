@@ -33,7 +33,7 @@
 	<property name="run-tests.task" value="check" />
 	
 	<!-- de.slisson.mps.all -->
-	<property name="de.slisson.mps.all.build-file.location" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+	<property name="de.slisson.mps.all.build-file.location" value="${sl-all.scripts.base-path}/sl-all" />
 	<property name="de.slisson.mps.all.build-file.name" value="build.xml" />
 	<property name="mps-sl-all.zip-file.name" value="mps-sl-all.zip" />
 	<property name="mps-sl-all.expanded-folder.name" value="mps-sl-all" />
