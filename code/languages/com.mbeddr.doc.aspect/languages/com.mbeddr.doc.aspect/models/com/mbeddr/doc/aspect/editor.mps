@@ -295,7 +295,7 @@
   <node concept="24kQdi" id="agjuZp0xrR">
     <ref role="1XX52x" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
     <node concept="2SsqMj" id="agjuZp0xs0" role="2wV5jI" />
-    <node concept="2aJ2om" id="agjuZp0xrT" role="CpUAK">
+    <node concept="2aJ2om" id="1UEcrCk8gSo" role="CpUAK">
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
@@ -414,6 +414,30 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2UZ9O9PWCif">
+    <ref role="1XX52x" to="748g:2UZ9O9PWChM" resolve="ExampleInstanceWord" />
+    <node concept="3EZMnI" id="2UZ9O9PWCik" role="2wV5jI">
+      <node concept="2iRfu4" id="2UZ9O9PWCil" role="2iSdaV" />
+      <node concept="3F0ifn" id="2UZ9O9PWCih" role="3EZMnx">
+        <property role="3F0ifm" value="\sample{" />
+      </node>
+      <node concept="3F1sOY" id="2UZ9O9PXtW8" role="3EZMnx">
+        <ref role="1NtTu8" to="748g:2UZ9O9PWChP" />
+      </node>
+      <node concept="3F0ifn" id="2UZ9O9PXuhA" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1UEcrCk89OW">
+    <ref role="1XX52x" to="748g:2UZ9O9PWChM" resolve="ExampleInstanceWord" />
+    <node concept="3F1sOY" id="1UEcrCk89Pe" role="2wV5jI">
+      <ref role="1NtTu8" to="748g:2UZ9O9PWChP" />
+    </node>
+    <node concept="2aJ2om" id="1UEcrCk8ndc" role="CpUAK">
+      <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
 </model>
