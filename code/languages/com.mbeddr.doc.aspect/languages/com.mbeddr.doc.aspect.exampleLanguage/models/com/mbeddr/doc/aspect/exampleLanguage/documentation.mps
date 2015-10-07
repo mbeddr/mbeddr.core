@@ -5,6 +5,7 @@
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +15,9 @@
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
+      </concept>
+      <concept id="3368454212696573042" name="com.mbeddr.doc.aspect.structure.ExampleInstanceWord" flags="ng" index="1rjqcK">
+        <child id="3368454212696573045" name="sampleInstance" index="1rjqcR" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -79,6 +83,9 @@
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
+    </language>
+    <language id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage">
+      <concept id="7952933245487813087" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChild2" flags="ng" index="lV6XT" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -191,9 +198,6 @@
       <node concept="1_1sxE" id="4jXS_uRq4FD" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
-      <node concept="1_1sxE" id="4jXS_uRrovD" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
       <node concept="1_0VNX" id="UK_oBpCt_h" role="1_0VJ0">
         <property role="TrG5h" value="ConceptDoc2" />
         <property role="1_0VJr" value="DocumentedChild2" />
@@ -202,6 +206,17 @@
             <node concept="19SUe$" id="UK_oBpCt_E" role="19SJt6">
               <property role="19SUeA" value="Documentation for the documented child 2" />
             </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="1UEcrCk89GS" role="1_0VJ0">
+          <node concept="19SGf9" id="1UEcrCk89GT" role="1_0LWR">
+            <node concept="19SUe$" id="1UEcrCk89O8" role="19SJt6">
+              <property role="19SUeA" value="Example: " />
+            </node>
+            <node concept="1rjqcK" id="1UEcrCk89Op" role="19SJt6">
+              <node concept="lV6XT" id="1UEcrCk89Ox" role="1rjqcR" />
+            </node>
+            <node concept="19SUe$" id="1UEcrCk89Oq" role="19SJt6" />
           </node>
         </node>
         <node concept="1_0LV8" id="UK_oBpCt_J" role="1_0VJ0">
