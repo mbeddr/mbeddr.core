@@ -1003,44 +1003,6 @@
             </node>
           </node>
         </node>
-        <node concept="SfApY" id="1GDKzvUoHI2" role="3cqZAp">
-          <node concept="3clFbS" id="1GDKzvUoHI3" role="SfCbr">
-            <node concept="3SKdUt" id="1GDKzvUoIlT" role="3cqZAp">
-              <node concept="3SKdUq" id="1GDKzvUoInc" role="3SKWNk">
-                <property role="3SKdUp" value="make sure that for dec-tabs all analyses were published" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="1GDKzvUoHhC" role="3cqZAp">
-              <node concept="2YIFZM" id="1GDKzvUoH$z" role="3clFbG">
-                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
-                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                <node concept="3cmrfG" id="1GDKzvUoHGG" role="37wK5m">
-                  <property role="3cmrfH" value="500" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="1GDKzvUoHHY" role="TEbGg">
-            <node concept="3clFbS" id="1GDKzvUoHHZ" role="TDEfX">
-              <node concept="3clFbF" id="1GDKzvUoI6R" role="3cqZAp">
-                <node concept="2OqwBi" id="1GDKzvUoI83" role="3clFbG">
-                  <node concept="37vLTw" id="1GDKzvUoI6Q" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1GDKzvUoHI0" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="1GDKzvUoIe5" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="1GDKzvUoHI0" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="1GDKzvUoHI1" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6mJYm3jJF4f" role="3cqZAp">
           <node concept="2OqwBi" id="6mJYm3jJHRC" role="3clFbG">
             <node concept="37vLTw" id="6mJYm3jJF4e" role="2Oq$k0">
