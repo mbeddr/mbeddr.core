@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="nwd3" ref="b1deed8c-68b2-424a-806a-664b47188e43/r:76cf7cce-8556-4192-bb11-38b013a3547b(com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="nwd3" ref="b1deed8c-68b2-424a-806a-664b47188e43/r:76cf7cce-8556-4192-bb11-38b013a3547b(com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.structure)" implicit="true" />
     <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -22,7 +22,6 @@
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
-      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -30,15 +29,10 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
-      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
@@ -121,23 +115,6 @@
     <ref role="1XX52x" to="nwd3:4AhMPNYlUI$" resolve="TextAreaContextSection" />
     <node concept="3EZMnI" id="4AhMPNYr4Q$" role="2wV5jI">
       <node concept="l2Vlx" id="4AhMPNYr4Q_" role="2iSdaV" />
-      <node concept="3F0ifn" id="4ZPP$ML4CGl" role="3EZMnx">
-        <property role="3F0ifm" value="use com.mbeddr.mpsutil.contextactions instead" />
-        <node concept="VechU" id="4ZPP$ML4CGm" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
-        </node>
-        <node concept="30gYXW" id="4ZPP$ML4CGn" role="3F10Kt">
-          <property role="Vb096" value="red" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4ZPP$ML4CGo" role="3EZMnx">
-        <node concept="ljvvj" id="4ZPP$ML4CGp" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="4ZPP$ML4CGq" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="4AhMPNYr4QA" role="3EZMnx">
         <property role="3F0ifm" value="text area context section" />
       </node>
@@ -218,23 +195,6 @@
     <property role="3GE5qa" value="section" />
     <ref role="1XX52x" to="nwd3:lRW__Is3Hv" resolve="ContextActionContextSection" />
     <node concept="3EZMnI" id="4AhMPNYmFvK" role="2wV5jI">
-      <node concept="3F0ifn" id="4ZPP$ML4$5S" role="3EZMnx">
-        <property role="3F0ifm" value="use com.mbeddr.mpsutil.contextactions instead" />
-        <node concept="VechU" id="4ZPP$ML4$ah" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
-        </node>
-        <node concept="30gYXW" id="4ZPP$ML4$cb" role="3F10Kt">
-          <property role="Vb096" value="red" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4ZPP$ML4B4c" role="3EZMnx">
-        <node concept="ljvvj" id="4ZPP$ML4B6Y" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="4ZPP$ML4B8L" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="l2Vlx" id="4AhMPNYmFvL" role="2iSdaV" />
       <node concept="3F0ifn" id="4AhMPNYmFvM" role="3EZMnx">
         <property role="3F0ifm" value="context action context section" />
@@ -295,23 +255,6 @@
     <ref role="1XX52x" to="nwd3:lRW__Is3Dp" resolve="JComponentContextSection" />
     <node concept="3EZMnI" id="4AhMPNYmFxO" role="2wV5jI">
       <node concept="l2Vlx" id="4AhMPNYmFxP" role="2iSdaV" />
-      <node concept="3F0ifn" id="4ZPP$ML4CEJ" role="3EZMnx">
-        <property role="3F0ifm" value="use com.mbeddr.mpsutil.contextactions instead" />
-        <node concept="VechU" id="4ZPP$ML4CEK" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
-        </node>
-        <node concept="30gYXW" id="4ZPP$ML4CEL" role="3F10Kt">
-          <property role="Vb096" value="red" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4ZPP$ML4CEM" role="3EZMnx">
-        <node concept="ljvvj" id="4ZPP$ML4CEN" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="4ZPP$ML4CEO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="4AhMPNYmFxQ" role="3EZMnx">
         <property role="3F0ifm" value="JComponent context section" />
       </node>
