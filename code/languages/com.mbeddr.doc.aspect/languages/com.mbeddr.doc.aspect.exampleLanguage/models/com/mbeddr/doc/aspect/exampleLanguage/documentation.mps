@@ -31,6 +31,16 @@
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
+      <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
+        <property id="8730648445434174368" name="center" index="1DKIkx" />
+        <child id="6386504476136278696" name="description" index="2SaI5j" />
+        <child id="6386504476136531838" name="resource" index="2SbwM5" />
+        <child id="8624890525767908695" name="sizeSpec" index="3SHJ_F" />
+      </concept>
+      <concept id="6386504476136521407" name="com.mbeddr.doc.structure.Resource" flags="ng" index="2Sb_l4">
+        <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
+        <reference id="6386504476136521409" name="path" index="2Sb_kU" />
+      </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
@@ -56,9 +66,15 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
+      <concept id="8624890525767555426" name="com.mbeddr.doc.structure.ScalingSizeSpec" flags="ng" index="3SG1Pu">
+        <property id="8624890525767555427" name="percentage" index="3SG1Pv" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
@@ -74,6 +90,17 @@
       </concept>
     </language>
   </registry>
+  <node concept="2SbYGP" id="UK_oBpA4O0">
+    <property role="TrG5h" value="DocumentConfig" />
+    <property role="3GE5qa" value="document" />
+    <node concept="2SbYGw" id="UK_oBpA4O1" role="Cbewh">
+      <property role="TrG5h" value="tmp" />
+      <node concept="9PVaO" id="UK_oBpA4O2" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+      </node>
+    </node>
+  </node>
   <node concept="1_1swa" id="UK_oBpA4NZ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="SampleDocument" />
@@ -207,17 +234,6 @@
       </node>
     </node>
   </node>
-  <node concept="2SbYGP" id="UK_oBpA4O0">
-    <property role="TrG5h" value="DocumentConfig" />
-    <property role="3GE5qa" value="document" />
-    <node concept="2SbYGw" id="UK_oBpA4O1" role="Cbewh">
-      <property role="TrG5h" value="tmp" />
-      <node concept="9PVaO" id="UK_oBpA4O2" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="4jXS_uRroBV">
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="document" />
@@ -231,6 +247,22 @@
           <node concept="19SUe$" id="4jXS_uRroC0" role="19SJt6">
             <property role="19SUeA" value="Another document section" />
           </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="YJrcxt4NuH" role="1_0VJ0">
+        <property role="TrG5h" value="imageParagraph" />
+        <property role="1DKIkx" value="true" />
+        <node concept="OjmMv" id="YJrcxt4NuJ" role="2SaI5j">
+          <node concept="19SGf9" id="YJrcxt4NuK" role="OjmMu">
+            <node concept="19SUe$" id="YJrcxt4NuL" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="2Sb_l4" id="YJrcxt4Nvk" role="2SbwM5">
+          <property role="2Sb_kV" value="images\20141103_142727.jpg" />
+          <ref role="2Sb_kU" node="UK_oBpA4O1" resolve="tmp" />
+        </node>
+        <node concept="3SG1Pu" id="YJrcxt4Ogw" role="3SHJ_F">
+          <property role="3SG1Pv" value="10" />
         </node>
       </node>
       <node concept="3n9NSn" id="4jXS_uRroC5" role="lGtFl">
