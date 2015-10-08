@@ -483,7 +483,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="1CDgnklGVIa" role="3EZMnx">
-              <property role="3F0ifm" value="folders:" />
+              <property role="3F0ifm" value="folder path:" />
             </node>
             <node concept="3F1sOY" id="1CDgnklGVIb" role="3EZMnx">
               <ref role="1NtTu8" to="d04j:1CDgnklABGA" />
