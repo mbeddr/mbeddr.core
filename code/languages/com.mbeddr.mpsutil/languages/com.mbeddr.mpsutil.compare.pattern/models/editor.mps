@@ -811,7 +811,7 @@
         <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
       </node>
       <node concept="3F0ifn" id="4oNjwzxoYBq" role="3EZMnx">
-        <property role="3F0ifm" value="@" />
+        <property role="3F0ifm" value="\" />
         <node concept="11L4FC" id="4oNjwzxoZ0S" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

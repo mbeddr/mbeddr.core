@@ -164,6 +164,7 @@
         <child id="665537614208925694" name="annotation" index="uEg$h" />
       </concept>
       <concept id="3560698633098301854" name="com.mbeddr.mpsutil.compare.pattern.structure.ParentMember" flags="ng" index="2Fojkk" />
+      <concept id="3560698633098301852" name="com.mbeddr.mpsutil.compare.pattern.structure.TypeMember" flags="ng" index="2Fojkm" />
       <concept id="3560698633098314023" name="com.mbeddr.mpsutil.compare.pattern.structure.Pattern" flags="ng" index="2FommH">
         <child id="5455284157993863838" name="builderNode" index="2pJPEn" />
       </concept>
@@ -240,6 +241,7 @@
       <property role="TrG5h" value="basicTest" />
       <node concept="3cqZAl" id="Um6saBVyXy" role="3clF45" />
       <node concept="3clFbS" id="Um6saBVyXA" role="3clF47">
+        <node concept="3clFbH" id="7tfd0TDiAAO" role="3cqZAp" />
         <node concept="3cpWs8" id="d5uH5c0HjB" role="3cqZAp">
           <node concept="3cpWsn" id="d5uH5c0HjH" role="3cpWs9">
             <property role="TrG5h" value="pattern" />
@@ -259,10 +261,27 @@
                     <property role="TrG5h" value="name" />
                   </node>
                 </node>
+                <node concept="2Fojkm" id="7eUZPevua0O" role="2pJxcM">
+                  <node concept="2Fpoq$" id="7eUZPevuaa$" role="2pJxcZ">
+                    <ref role="1QFNBD" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                    <node concept="2FpdTS" id="7eUZPevuaaF" role="2pJxcM">
+                      <ref role="2pIpSl" to="tpee:f_0Q1BS" />
+                      <node concept="2Fpoq$" id="7eUZPevuaaU" role="2pJxcZ">
+                        <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="2FpdTS" id="1ho_jHB_5CE" role="2pJxcM">
                   <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
-                  <node concept="2Fpoq$" id="1ho_jHB_5Da" role="2pJxcZ">
-                    <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
+                  <node concept="2Fpoq$" id="7tfd0TDiDhR" role="2pJxcZ">
+                    <ref role="1QFNBD" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                    <node concept="2FpdTS" id="7tfd0TDiDiv" role="2pJxcM">
+                      <ref role="2pIpSl" to="tpee:f_0Q1BS" />
+                      <node concept="2Fpoq$" id="7tfd0TDiDjg" role="2pJxcZ">
+                        <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
+                      </node>
+                    </node>
                   </node>
                   <node concept="uEgwc" id="1ho_jHB_ejT" role="uEg$h">
                     <property role="TrG5h" value="type" />

@@ -897,6 +897,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7eUZPevvXMa" role="3bR37C">
+          <node concept="3bR9La" id="7eUZPevvXMb" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4oNjwzxq9X5" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9384,6 +9390,9 @@
       <node concept="L2wRC" id="4X7wieqKkD2" role="39821P">
         <ref role="L2wRA" node="4X7wieqKka$" resolve="test.com.mbeddr.mpsutil.extensionclass" />
       </node>
+      <node concept="L2wRC" id="7eUZPevvU80" role="39821P">
+        <ref role="L2wRA" node="Um6saBVXnk" resolve="com.mbeddr.mpsutil.compare.pattern.test" />
+      </node>
       <node concept="398223" id="2GRHOLIUBUT" role="39821P">
         <node concept="3_J27D" id="2GRHOLIUBUV" role="Nbhlr">
           <node concept="3Mxwew" id="2GRHOLIUC5d" role="3MwsjC">
@@ -9991,6 +10000,9 @@
       </node>
       <node concept="22LTRM" id="4X7wieqKkYa" role="22LTRK">
         <ref role="22LTRN" node="4X7wieqKka$" resolve="test.com.mbeddr.mpsutil.extensionclass" />
+      </node>
+      <node concept="22LTRM" id="7eUZPevvUva" role="22LTRK">
+        <ref role="22LTRN" node="Um6saBVXnk" resolve="com.mbeddr.mpsutil.compare.pattern.test" />
       </node>
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
