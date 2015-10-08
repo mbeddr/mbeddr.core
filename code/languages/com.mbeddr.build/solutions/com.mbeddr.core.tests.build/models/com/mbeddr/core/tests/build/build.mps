@@ -508,6 +508,18 @@
             <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1wkAd7zLz1l" role="3bR37C">
+          <node concept="3bR9La" id="1wkAd7zLz1m" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7tfd0TDd0e_" role="3bR37C">
+          <node concept="3bR9La" id="7tfd0TDd0eA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7Ny2UQeBujh" role="2G$12L">
         <property role="BnDLt" value="true" />
