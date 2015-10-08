@@ -7254,13 +7254,13 @@
           <property role="2GAjPV" value="false" />
           <node concept="1SiIV0" id="t9Ud9KD5Od" role="3bR37C">
             <node concept="3bR9La" id="t9Ud9KD5Oe" role="1SiIV1">
-              <property role="3bR36h" value="false" />
+              <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="5qO$P$PrHbq" resolve="com.mbeddr.cc.requirements" />
             </node>
           </node>
           <node concept="1SiIV0" id="t9Ud9KD5Oj" role="3bR37C">
             <node concept="3bR9La" id="t9Ud9KD5Ok" role="1SiIV1">
-              <property role="3bR36h" value="false" />
+              <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="5qO$P$PrHb_" resolve="com.mbeddr.cc.trace" />
             </node>
           </node>
