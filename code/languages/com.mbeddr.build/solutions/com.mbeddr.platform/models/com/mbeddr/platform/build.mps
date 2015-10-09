@@ -7731,6 +7731,12 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1bs45UrTiAh" role="3bR37C">
+          <node concept="3bR9La" id="1bs45UrTiAi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Pr7tifzjKW" role="3989C9">
