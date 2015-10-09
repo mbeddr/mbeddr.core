@@ -16,7 +16,6 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">17566462-d837-4552-874c-64e45c10778a(com.mbeddr.mpsutil.compare.pattern)</dependency>
-        <dependency reexport="false">9bd710ee-b327-4b50-8552-ecd3829a9d2b(com.mbeddr.mpsutil.compare.pattern#3560698633098117280)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
