@@ -861,12 +861,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4oNjwzxqgc2" role="3bR37C">
-          <node concept="3bR9La" id="4oNjwzxqgc3" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4oNjwzxqgc8" role="3bR37C">
           <node concept="3bR9La" id="4oNjwzxqgc9" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -897,10 +891,13 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7eUZPevvXMa" role="3bR37C">
-          <node concept="3bR9La" id="7eUZPevvXMb" role="1SiIV1">
+        <node concept="1E0d5M" id="5dYb5krUuAX" role="1E1XAP">
+          <ref role="1E0d5P" node="5dYb5krUnP_" resolve="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
+        </node>
+        <node concept="1SiIV0" id="5dYb5krUATe" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krUATf" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            <ref role="3bR37D" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
           </node>
         </node>
       </node>
@@ -931,6 +928,175 @@
           <node concept="3bR9La" id="7h4r8m41aKL" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="5dYb5krTMRa" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.compare.pattern.baselang" />
+        <property role="3LESm3" value="36590f48-d68b-4c16-bfba-c769260bbac0" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="5dYb5krTMRb" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="5dYb5krTMRc" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5dYb5krTMRd" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.compare.pattern.baselang" />
+              <node concept="2Ry0Ak" id="5dYb5krTTtD" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.compare.pattern.baselang.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krTMRp" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krTMRq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="5dYb5krTMRr" role="1E1XAP">
+          <ref role="1E0d5P" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+        </node>
+        <node concept="1SiIV0" id="5dYb5krTMRs" role="3bR37C">
+          <node concept="1Busua" id="5dYb5krTMRt" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krTMRu" role="3bR37C">
+          <node concept="1Busua" id="5dYb5krTMRv" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="5dYb5krTMRw" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.compare.pattern.baselang#8339258394654016690" />
+          <property role="3LESm3" value="ece2f1c9-4525-4f65-8f41-378fad118eea" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="5dYb5krUuBA" role="3bR37C">
+            <node concept="3bR9La" id="5dYb5krUuBB" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dYb5krUGyq" role="3bR37C">
+            <node concept="3bR9La" id="5dYb5krUGyr" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4oNjwzxqgch" resolve="com.mbeddr.mpsutil.compare.pattern#3560698633098117280" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krUuBz" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krUuB$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="5dYb5krUuB_" role="1E1XAP">
+          <ref role="1E0d5P" node="5dYb5krUnP_" resolve="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
+        </node>
+        <node concept="1SiIV0" id="5dYb5krUATN" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krUATO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="5dYb5krTX3B" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.compare.pattern.generator" />
+        <property role="3LESm3" value="dc1e48dd-9462-45bd-b16c-fb5ec3fdb3bb" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="5dYb5krTX3C" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="5dYb5krTX3D" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5dYb5krTX3E" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.compare.pattern.generator" />
+              <node concept="2Ry0Ak" id="5dYb5krU3yP" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.compare.pattern.generator.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krTX3M" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krTX3N" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krTX3Q" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krTX3R" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="5dYb5krTX3S" role="1E1XAP">
+          <ref role="1E0d5P" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+        </node>
+        <node concept="1SiIV0" id="5dYb5krTX3V" role="3bR37C">
+          <node concept="1Busua" id="5dYb5krTX3W" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="5dYb5krTX3X" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.compare.pattern.generator#8339258394654012058" />
+          <property role="3LESm3" value="061ef218-57ee-4790-80b3-7fbdddd73f64" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="5dYb5krUAUi" role="3bR37C">
+            <node concept="3bR9La" id="5dYb5krUAUj" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dYb5krUAUk" role="3bR37C">
+            <node concept="3bR9La" id="5dYb5krUAUl" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krU4$3" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krU4$4" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krUAUd" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krUAUe" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5dYb5krUnP_" resolve="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krUAUf" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krUAUg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="5dYb5krUAUh" role="1E1XAP">
+          <ref role="1E0d5P" node="5dYb5krUnP_" resolve="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
+        </node>
+      </node>
+      <node concept="1E1JtA" id="5dYb5krUnP_" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
+        <property role="3LESm3" value="98c9c105-d602-4d30-920f-ede2039bca65" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="5dYb5krUnPA" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="5dYb5krUnPB" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="5dYb5krUnPC" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
+              <node concept="2Ry0Ak" id="5dYb5krUtpP" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.compare.pattern.generator.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dYb5krUuC0" role="3bR37C">
+          <node concept="3bR9La" id="5dYb5krUuC1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>
