@@ -8,6 +8,7 @@
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="-1" />
+    <use id="afed1bc3-c9b1-4628-ba94-11b81c70cba9" name="com.mbeddr.mpsutil.compare.pattern.generator.test" version="0" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -264,14 +265,8 @@
                   </node>
                 </node>
                 <node concept="2Fojkm" id="7eUZPevua0O" role="2pJxcM">
-                  <node concept="2Fpoq$" id="7eUZPevuaa$" role="2pJxcZ">
-                    <ref role="1QFNBD" to="tpee:f_0Q1BR" resolve="ArrayType" />
-                    <node concept="2FpdTS" id="7eUZPevuaaF" role="2pJxcM">
-                      <ref role="2pIpSl" to="tpee:f_0Q1BS" />
-                      <node concept="2Fpoq$" id="7eUZPevuaaU" role="2pJxcZ">
-                        <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
-                      </node>
-                    </node>
+                  <node concept="2Fpoq$" id="5dYb5krRZXN" role="2pJxcZ">
+                    <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
                   </node>
                 </node>
                 <node concept="2FpdTS" id="1ho_jHB_5CE" role="2pJxcM">
@@ -1084,7 +1079,7 @@
         <node concept="3cpWs6" id="1ho_jHB_kwh" role="3cqZAp">
           <node concept="2FommH" id="1ho_jHB_kwT" role="3cqZAk">
             <node concept="2Fpoq$" id="1ho_jHB_kxg" role="2pJPEn">
-              <ref role="1QFNBD" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+              <ref role="1QFNBD" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
               <node concept="2FpdTS" id="1ho_jHB_kxz" role="2pJxcM">
                 <ref role="2pIpSl" to="tpee:h9B3oxE" />
                 <node concept="2Fpoq$" id="1ho_jHB_ky9" role="2pJxcZ">
@@ -1103,7 +1098,7 @@
       </node>
       <node concept="3Tm1VV" id="1ho_jHB_kuy" role="1B3o_S" />
       <node concept="1QDCVq" id="1ho_jHB_kuV" role="3clF45">
-        <ref role="1QDCVp" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+        <ref role="1QDCVp" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
       </node>
     </node>
     <node concept="2tJIrI" id="1ho_jHB_kuf" role="jymVt" />

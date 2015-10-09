@@ -619,7 +619,7 @@
                       <ref role="3cqZAo" node="6Clmpmuh$Np" resolve="_context" />
                     </node>
                     <node concept="liA8E" id="6ClmpmuhARt" role="2OqNvi">
-                      <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getSessionObject(java.lang.Object):java.lang.Object" resolve="getSessionObject" />
+                      <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getStepObject(java.lang.Object):java.lang.Object" resolve="getStepObject" />
                       <node concept="10M0yZ" id="5dYb5krQf4u" role="37wK5m">
                         <ref role="1PxDUh" to="6mqi:6ClmpmugRzP" resolve="GeneratorUtils" />
                         <ref role="3cqZAo" to="6mqi:5dYb5krQecE" resolve="MATCH_RESULT" />
@@ -863,7 +863,7 @@
               <ref role="3cqZAo" node="6Clmpmugwxp" resolve="_context" />
             </node>
             <node concept="liA8E" id="6ClmpmugwKW" role="2OqNvi">
-              <ref role="37wK5l" to="q1l7:~TemplateQueryContext.putSessionObject(java.lang.Object,java.lang.Object):java.lang.Object" resolve="putSessionObject" />
+              <ref role="37wK5l" to="q1l7:~TemplateQueryContext.putStepObject(java.lang.Object,java.lang.Object):java.lang.Object" resolve="putStepObject" />
               <node concept="10M0yZ" id="5dYb5krQemO" role="37wK5m">
                 <ref role="1PxDUh" to="6mqi:6ClmpmugRzP" resolve="GeneratorUtils" />
                 <ref role="3cqZAo" to="6mqi:5dYb5krQecE" resolve="MATCH_RESULT" />
