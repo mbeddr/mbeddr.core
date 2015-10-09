@@ -12,8 +12,8 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="60h8" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:857a6546-37fb-474e-832b-f04fdfe124ab(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.behavior)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" implicit="true" />
+    <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -543,7 +543,7 @@
             <property role="VOm3f" value="false" />
           </node>
           <node concept="3F0ifn" id="5f$4wDDtIIO" role="3EZMnx">
-            <property role="3F0ifm" value="initalize/update:" />
+            <property role="3F0ifm" value="initialize/update:" />
           </node>
           <node concept="3F1sOY" id="5f$4wDDtIOF" role="3EZMnx">
             <ref role="1NtTu8" to="tmud:5f$4wDDtuUo" />
