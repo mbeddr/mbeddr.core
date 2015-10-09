@@ -7,7 +7,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="-1" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -140,25 +140,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern">
-      <concept id="665537614209771411" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternHint" flags="ng" index="uBx5W">
-        <reference id="665537614209771460" name="pattern" index="uBx4F" />
-        <child id="665537614210671828" name="expression" index="uz58V" />
-      </concept>
-      <concept id="665537614208854349" name="com.mbeddr.mpsutil.compare.pattern.structure.MatchResultType" flags="ig" index="uE1Yy">
-        <reference id="665537614209425697" name="pattern" index="uClve" />
-      </concept>
       <concept id="665537614208925411" name="com.mbeddr.mpsutil.compare.pattern.structure.MemberAnnotation" flags="ng" index="uEgwc" />
-      <concept id="665537614208925379" name="com.mbeddr.mpsutil.compare.pattern.structure.NamedGetTarget" flags="ng" index="uEgwG" />
-      <concept id="665537614208925361" name="com.mbeddr.mpsutil.compare.pattern.structure.GetOperation" flags="ng" index="uEgxu">
-        <child id="665537614209029384" name="target" index="uEQfB" />
-      </concept>
-      <concept id="665537614208899015" name="com.mbeddr.mpsutil.compare.pattern.structure.IsMatchOperation" flags="ng" index="uEm4C" />
-      <concept id="665537614209060996" name="com.mbeddr.mpsutil.compare.pattern.structure.AnnotationTarget" flags="ng" index="uEYpF">
-        <reference id="665537614209061000" name="annotation" index="uEYpB" />
-      </concept>
-      <concept id="1760230020812819719" name="com.mbeddr.mpsutil.compare.pattern.structure.MatchOperation" flags="ng" index="2xUPFB">
-        <child id="1760230020812819720" name="expression" index="2xUPFC" />
-      </concept>
       <concept id="3560698633098300404" name="com.mbeddr.mpsutil.compare.pattern.structure.IInitPart" flags="ng" index="2FoiXY">
         <child id="5455284157993911094" name="expression" index="2pJxcZ" />
         <child id="665537614208925694" name="annotation" index="uEg$h" />
@@ -234,6 +216,26 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
+    <language id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang">
+      <concept id="665537614209771411" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.PatternHint" flags="ng" index="uBx5W">
+        <reference id="665537614209771460" name="pattern" index="uBx4F" />
+        <child id="665537614210671828" name="expression" index="uz58V" />
+      </concept>
+      <concept id="665537614208854349" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.MatchResultType" flags="ig" index="uE1Yy">
+        <reference id="665537614209425697" name="pattern" index="uClve" />
+      </concept>
+      <concept id="665537614208925379" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.NamedGetTarget" flags="ng" index="uEgwG" />
+      <concept id="665537614208925361" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.GetOperation" flags="ng" index="uEgxu">
+        <child id="665537614209029384" name="target" index="uEQfB" />
+      </concept>
+      <concept id="665537614208899015" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.IsMatchOperation" flags="ng" index="uEm4C" />
+      <concept id="665537614209060996" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.AnnotationTarget" flags="ng" index="uEYpF">
+        <reference id="665537614209061000" name="annotation" index="uEYpB" />
+      </concept>
+      <concept id="1760230020812819719" name="com.mbeddr.mpsutil.compare.pattern.baselang.structure.MatchOperation" flags="ng" index="2xUPFB">
+        <child id="1760230020812819720" name="expression" index="2xUPFC" />
+      </concept>
+    </language>
   </registry>
   <node concept="1lH9Xt" id="Um6saBVnIb">
     <property role="TrG5h" value="BasicTest" />
@@ -274,14 +276,8 @@
                 </node>
                 <node concept="2FpdTS" id="1ho_jHB_5CE" role="2pJxcM">
                   <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
-                  <node concept="2Fpoq$" id="7tfd0TDiDhR" role="2pJxcZ">
-                    <ref role="1QFNBD" to="tpee:f_0Q1BR" resolve="ArrayType" />
-                    <node concept="2FpdTS" id="7tfd0TDiDiv" role="2pJxcM">
-                      <ref role="2pIpSl" to="tpee:f_0Q1BS" />
-                      <node concept="2Fpoq$" id="7tfd0TDiDjg" role="2pJxcZ">
-                        <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
-                      </node>
-                    </node>
+                  <node concept="2Fpoq$" id="5dYb5krQkk7" role="2pJxcZ">
+                    <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
                   </node>
                   <node concept="uEgwc" id="1ho_jHB_ejT" role="uEg$h">
                     <property role="TrG5h" value="type" />

@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -246,18 +245,6 @@
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1xH_Y2TxGO7">
-    <property role="TrG5h" value="MatchOperation" />
-    <property role="34LRSv" value="match" />
-    <property role="3GE5qa" value="usage" />
-    <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
-    <node concept="1TJgyj" id="1xH_Y2TxGO8" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-  </node>
   <node concept="AxPO7" id="4oNjwzxp3wx">
     <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="PatternBuilderListKind" />
@@ -272,59 +259,6 @@
       <property role="1uS6qo" value="CONTAINS" />
     </node>
   </node>
-  <node concept="1TIwiD" id="$WtIWn_6_d">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="MatchResultType" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="1TJgyj" id="$WtIWnBi4x" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="pattern" />
-      <ref role="20lvS9" node="35E98Eq2O4B" resolve="Pattern" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="$WtIWn_hv7">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="IsMatchOperation" />
-    <property role="34LRSv" value="isMatch" />
-    <property role="R4oN_" value="isMatch" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="$WtIWn_hv8" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="$WtIWn_nUL">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="GetOperation" />
-    <property role="34LRSv" value="get" />
-    <property role="R4oN_" value="get" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="$WtIWn_Lk8" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="$WtIWn_nV2" resolve="IGetTarget" />
-    </node>
-    <node concept="PrWs8" id="$WtIWn_nUM" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="$WtIWn_nV2">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="IGetTarget" />
-  </node>
-  <node concept="1TIwiD" id="$WtIWn_nV3">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="NamedGetTarget" />
-    <property role="34LRSv" value="&quot;" />
-    <property role="R4oN_" value="named target" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="$WtIWn_nV4" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="$WtIWn_nVf" role="PzmwI">
-      <ref role="PrY4T" node="$WtIWn_nV2" resolve="IGetTarget" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="$WtIWn_nVz">
     <property role="3GE5qa" value="member" />
     <property role="TrG5h" value="MemberAnnotation" />
@@ -333,41 +267,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="$WtIWn_nVJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="$WtIWn_T24">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="AnnotationTarget" />
-    <property role="34LRSv" value="&lt;{annotation}&gt;" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="$WtIWn_T28" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="annotation" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="$WtIWn_nVz" resolve="MemberAnnotation" />
-    </node>
-    <node concept="PrWs8" id="$WtIWn_T25" role="PzmwI">
-      <ref role="PrY4T" node="$WtIWn_nV2" resolve="IGetTarget" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="$WtIWnCAuj">
-    <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="PatternHint" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="$WtIWnG2jk" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="$WtIWnCAv4" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="pattern" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="35E98Eq2O4B" resolve="Pattern" />
-    </node>
-    <node concept="PrWs8" id="$WtIWnG2jh" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
