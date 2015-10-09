@@ -249,12 +249,12 @@
           <node concept="3cpWsn" id="d5uH5c0HjH" role="3cpWs9">
             <property role="TrG5h" value="pattern" />
             <node concept="1QDCVq" id="d5uH5c0HjJ" role="1tU5fm">
-              <ref role="1QDCVp" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+              <ref role="1QDCVp" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
             </node>
             <node concept="2FommH" id="d5uH5c0HrX" role="33vP2m">
               <property role="TrG5h" value="meta_pattern" />
               <node concept="2Fpoq$" id="d5uH5c0Hsc" role="2pJPEn">
-                <ref role="1QFNBD" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+                <ref role="1QFNBD" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
                 <node concept="2FpdTX" id="d5uH5c0Hsp" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                   <node concept="Xl_RD" id="d5uH5c0HsE" role="2pJxcZ">
@@ -313,7 +313,7 @@
           <node concept="3cpWsn" id="1ho_jHB_4Ti" role="3cpWs9">
             <property role="TrG5h" value="a" />
             <node concept="3Tqbb2" id="1ho_jHB_4T2" role="1tU5fm">
-              <ref role="ehGHo" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+              <ref role="ehGHo" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
             </node>
             <node concept="2OqwBi" id="1ho_jHB_4Tj" role="33vP2m">
               <node concept="2OqwBi" id="1ho_jHB_4Tk" role="2Oq$k0">
@@ -322,8 +322,8 @@
                 </node>
                 <node concept="2Rf3mk" id="1ho_jHB_4Tm" role="2OqNvi">
                   <node concept="1xMEDy" id="1ho_jHB_4Tn" role="1xVPHs">
-                    <node concept="chp4Y" id="1ho_jHB_4To" role="ri$Ld">
-                      <ref role="cht4Q" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+                    <node concept="chp4Y" id="5dYb5ks6eHh" role="ri$Ld">
+                      <ref role="cht4Q" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -363,7 +363,7 @@
           <node concept="3cpWsn" id="1ho_jHB_57a" role="3cpWs9">
             <property role="TrG5h" value="b" />
             <node concept="3Tqbb2" id="1ho_jHB_57b" role="1tU5fm">
-              <ref role="ehGHo" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+              <ref role="ehGHo" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
             </node>
             <node concept="2OqwBi" id="1ho_jHB_57c" role="33vP2m">
               <node concept="2OqwBi" id="1ho_jHB_57d" role="2Oq$k0">
@@ -372,8 +372,8 @@
                 </node>
                 <node concept="2Rf3mk" id="1ho_jHB_57f" role="2OqNvi">
                   <node concept="1xMEDy" id="1ho_jHB_57g" role="1xVPHs">
-                    <node concept="chp4Y" id="1ho_jHB_57h" role="ri$Ld">
-                      <ref role="cht4Q" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+                    <node concept="chp4Y" id="5dYb5ks6eYh" role="ri$Ld">
+                      <ref role="cht4Q" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
                     </node>
                   </node>
                 </node>
