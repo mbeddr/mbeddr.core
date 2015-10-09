@@ -2,7 +2,7 @@
 <model ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -34,6 +34,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -75,6 +76,7 @@
     <property role="3GE5qa" value="comp" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="755462250" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3TmmsQkC_PQ" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -121,6 +123,7 @@
     <property role="3GE5qa" value="intf" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="755452092" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3TmmsQkC_PS" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -148,6 +151,7 @@
     <property role="MwhBj" value="${module}/icons/csinterface.png" />
     <property role="34LRSv" value="cs interface" />
     <property role="R4oN_" value="interface with operations" />
+    <property role="1pbfSe" value="755452089" />
     <ref role="1TJDcQ" node="3TmmsQkC_PR" resolve="Interface" />
     <node concept="1TJgyj" id="5oFMniD99CR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -192,6 +196,7 @@
     <property role="MwhBj" value="${module}/icons/operation.png" />
     <property role="34LRSv" value="operation" />
     <property role="R4oN_" value="an operation that is part of an interface" />
+    <property role="1pbfSe" value="755452087" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3TmmsQkDmpS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -246,6 +251,7 @@
     <property role="TrG5h" value="Port" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="755452081" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1lsyexBNOqm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -272,6 +278,7 @@
     <property role="MwhBj" value="${module}/icons/providedport.png" />
     <property role="R4oN_" value="services provided by component" />
     <property role="34LRSv" value="provides" />
+    <property role="1pbfSe" value="755308171" />
     <ref role="1TJDcQ" node="3TmmsQkC_Q2" resolve="Port" />
     <node concept="1TJgyi" id="5meTu9orykl" role="1TKVEl">
       <property role="TrG5h" value="singleClientOnly" />
@@ -289,6 +296,7 @@
     <property role="MwhBj" value="${module}/icons/requiredport.png" />
     <property role="34LRSv" value="requires" />
     <property role="R4oN_" value="services used by component" />
+    <property role="1pbfSe" value="755308170" />
     <ref role="1TJDcQ" node="3TmmsQkC_Q2" resolve="Port" />
     <node concept="1TJgyj" id="2ZUGF54knHd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -312,6 +320,7 @@
     <property role="MwhBj" value="${module}/icons/runnable.png" />
     <property role="34LRSv" value="runnable" />
     <property role="R4oN_" value="a &quot;function&quot; in a component" />
+    <property role="1pbfSe" value="755295341" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3TmmsQkDl9b" role="1TKVEl">
       <property role="TrG5h" value="abstract" />
@@ -386,6 +395,7 @@
     <property role="TrG5h" value="RunnableTrigger" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="755295338" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2SU$CK2$ZXd" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
@@ -396,6 +406,7 @@
     <property role="TrG5h" value="OperationTrigger" />
     <property role="R4oN_" value="triggered by operation call" />
     <property role="34LRSv" value="op" />
+    <property role="1pbfSe" value="755295334" />
     <ref role="1TJDcQ" node="3TmmsQkDc79" resolve="RunnableTrigger" />
     <node concept="PrWs8" id="3U_nJP19GIy" role="PzmwI">
       <ref role="PrY4T" node="3U_nJP19GDu" resolve="IOperationTriggerLike" />
@@ -406,6 +417,7 @@
     <property role="TrG5h" value="TimedTrigger" />
     <property role="34LRSv" value="timer" />
     <property role="R4oN_" value="time-based invocation" />
+    <property role="1pbfSe" value="755295332" />
     <ref role="1TJDcQ" node="3TmmsQkDc79" resolve="RunnableTrigger" />
   </node>
   <node concept="1TIwiD" id="3TmmsQkDdTN">
@@ -414,6 +426,7 @@
     <property role="MwhBj" value="${module}/icons/component.png" />
     <property role="34LRSv" value="component" />
     <property role="R4oN_" value="component with no instances inside" />
+    <property role="1pbfSe" value="755288000" />
     <ref role="1TJDcQ" node="3TmmsQkCzn9" resolve="Component" />
     <node concept="PrWs8" id="26BCBMXyKuy" role="PzmwI">
       <ref role="PrY4T" to="2gv2:26BCBMXyK6_" resolve="ISteppableUnit" />
@@ -432,6 +445,7 @@
     <property role="TrG5h" value="ComponentInstance" />
     <property role="34LRSv" value="instance" />
     <property role="R4oN_" value="instance of component" />
+    <property role="1pbfSe" value="755287997" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="F_QT7XsuBZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -472,6 +486,7 @@
     <property role="TrG5h" value="AssemblyConnector" />
     <property role="R4oN_" value="connector between ports" />
     <property role="34LRSv" value="connect" />
+    <property role="1pbfSe" value="755287995" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3TmmsQkDdTW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -499,6 +514,7 @@
     <property role="3GE5qa" value="comp.instances.portref" />
     <property role="TrG5h" value="InstancePortRef" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="755287994" />
     <ref role="1TJDcQ" node="2ZeMBoiZnWl" resolve="PortRef" />
     <node concept="1TJgyj" id="3TmmsQkDdTU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -519,6 +535,7 @@
     <property role="MwhBj" value="${module}/icons/instanceConfiguration.png" />
     <property role="R4oN_" value="a set of instances and connectors" />
     <property role="34LRSv" value="instance config" />
+    <property role="1pbfSe" value="755287987" />
     <ref role="1TJDcQ" node="6JVEnxIhAG0" resolve="AbstractInstanceConfiguration" />
     <node concept="PrWs8" id="3TmmsQkDdU1" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -561,6 +578,7 @@
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="OperationParameter" />
     <property role="R4oN_" value="a parameter for an operation" />
+    <property role="1pbfSe" value="755253183" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3TmmsQkDmpP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -578,6 +596,7 @@
   <node concept="PlHQZ" id="71UKpntm630">
     <property role="3GE5qa" value="comp" />
     <property role="TrG5h" value="IComponentContent" />
+    <property role="1pbfSe" value="1305682517" />
     <node concept="PrWs8" id="71UKpntm635" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -601,6 +620,7 @@
     <property role="TrG5h" value="PortAdapterRefExpr" />
     <property role="3GE5qa" value="adapter" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1306248110" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="71UKpntog8q" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -617,6 +637,7 @@
     <property role="TrG5h" value="InterfaceType" />
     <property role="34LRSv" value="interface" />
     <property role="R4oN_" value="a type that represents interfaces" />
+    <property role="1pbfSe" value="1306263601" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="71UKpntojUt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -633,6 +654,7 @@
     <property role="TrG5h" value="InterfaceOperationCallExpr" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1306280858" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="71UKpntoo88" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -663,6 +685,7 @@
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="PortRefExpr" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1306417471" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="71UKpntoTuF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -678,6 +701,7 @@
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="PortAdapterOpCallExpr" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="851640300" />
     <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
     <node concept="1TJgyj" id="pTHqv6KODI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -691,6 +715,7 @@
     <property role="3GE5qa" value="comp.runnable" />
     <property role="TrG5h" value="RequiredPortOpCallExpr" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="851608144" />
     <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
     <node concept="1TJgyj" id="pTHqv6KWwa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -704,6 +729,7 @@
     <property role="TrG5h" value="InitializeConfiguration" />
     <property role="34LRSv" value="initialize" />
     <property role="R4oN_" value="initialize the instances in a configuration" />
+    <property role="1pbfSe" value="582476618" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="wOd6nl4Yxi" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -717,6 +743,7 @@
     <property role="MwhBj" value="${module}/icons/field.png" />
     <property role="34LRSv" value="field" />
     <property role="R4oN_" value="field in component" />
+    <property role="1pbfSe" value="1389415642" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="WcM3IIyEvh" role="PzmwI">
       <ref role="PrY4T" to="c4fa:4Ixybz5aK1O" resolve="IValueLike" />
@@ -763,6 +790,7 @@
     <property role="3GE5qa" value="comp.field" />
     <property role="TrG5h" value="FieldRef" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1389362100" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4AGl5dzwUZU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -779,6 +807,7 @@
     <property role="TrG5h" value="WhenPortConnectedStatement" />
     <property role="34LRSv" value="when port connected" />
     <property role="R4oN_" value="safety for optional ports" />
+    <property role="1pbfSe" value="1389264130" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="4AGl5dzxiUH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -814,6 +843,7 @@
     <property role="3GE5qa" value="comp.runnable" />
     <property role="TrG5h" value="InternalRunnableCall" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="929576883" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="18l4N2QwFku" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -841,6 +871,7 @@
     <property role="3GE5qa" value="comp.runnable" />
     <property role="TrG5h" value="PortContentRef" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="929478092" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="18l4N2Qx3s6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -853,6 +884,7 @@
     <property role="3GE5qa" value="comp.runnable" />
     <property role="TrG5h" value="PortContentRefHelper" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1325091350" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4robRdEb8pS" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -870,6 +902,7 @@
     <property role="TrG5h" value="RequiredPortRestriction" />
     <property role="34LRSv" value="restricted" />
     <property role="R4oN_" value="restrict the required port to a component" />
+    <property role="1pbfSe" value="671299371" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7JjETeGbSIp" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -889,6 +922,7 @@
     <property role="TrG5h" value="OnInitTrigger" />
     <property role="34LRSv" value="on init" />
     <property role="R4oN_" value="triggered on component init" />
+    <property role="1pbfSe" value="214515485" />
     <ref role="1TJDcQ" node="3TmmsQkDc79" resolve="RunnableTrigger" />
   </node>
   <node concept="1TIwiD" id="5HTuIUP_k1N">
@@ -896,6 +930,7 @@
     <property role="TrG5h" value="PrePostCondition" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="286178145" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5HTuIUP_k1S" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -912,12 +947,14 @@
     <property role="TrG5h" value="PreCondition" />
     <property role="R4oN_" value="constrain the parameters of operations" />
     <property role="34LRSv" value="pre" />
+    <property role="1pbfSe" value="286178149" />
     <ref role="1TJDcQ" node="5HTuIUP_k1N" resolve="PrePostCondition" />
   </node>
   <node concept="1TIwiD" id="5HTuIUP_mky">
     <property role="3GE5qa" value="intf.cs.ppc" />
     <property role="TrG5h" value="PPCParamRef" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="286187536" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5HTuIUP_mkz" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -934,6 +971,7 @@
     <property role="TrG5h" value="PostCondition" />
     <property role="R4oN_" value="constrain the return values of an operation" />
     <property role="34LRSv" value="post" />
+    <property role="1pbfSe" value="286434459" />
     <ref role="1TJDcQ" node="5HTuIUP_k1N" resolve="PrePostCondition" />
   </node>
   <node concept="1TIwiD" id="5HTuIUPAiAJ">
@@ -942,12 +980,14 @@
     <property role="MwhBj" value="${module}/icons/resultexpression.png" />
     <property role="R4oN_" value="refer to the result of an operation" />
     <property role="34LRSv" value="result" />
+    <property role="1pbfSe" value="286434461" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5HTuIUPDB1h">
     <property role="3GE5qa" value="intf.cs.ppc" />
     <property role="TrG5h" value="QueryOpCall" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="287304511" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5HTuIUPDB1u" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -964,6 +1004,7 @@
     <property role="TrG5h" value="OldQueryOpCall" />
     <property role="34LRSv" value="old" />
     <property role="R4oN_" value="refer to a query value from before the call" />
+    <property role="1pbfSe" value="12150607" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5oFMniD6GXe" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -977,6 +1018,7 @@
     <property role="TrG5h" value="ProtocolSpec" />
     <property role="R4oN_" value="constrain the sequence of operation calls" />
     <property role="34LRSv" value="protocol" />
+    <property role="1pbfSe" value="11557176" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5oFMniD8XPG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -996,6 +1038,7 @@
     <property role="TrG5h" value="PsmState" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="11557175" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5oFMniD8XPn">
@@ -1003,6 +1046,7 @@
     <property role="TrG5h" value="PsmNewState" />
     <property role="34LRSv" value="new" />
     <property role="R4oN_" value="create a new state" />
+    <property role="1pbfSe" value="11557173" />
     <ref role="1TJDcQ" node="5oFMniD8XPl" resolve="PsmState" />
     <node concept="PrWs8" id="5oFMniD8XPo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -1013,6 +1057,7 @@
     <property role="TrG5h" value="PsmInitState" />
     <property role="R4oN_" value="default, initial state" />
     <property role="34LRSv" value="init" />
+    <property role="1pbfSe" value="11557163" />
     <ref role="1TJDcQ" node="5oFMniD8XPl" resolve="PsmState" />
   </node>
   <node concept="1TIwiD" id="5oFMniD8XPB">
@@ -1020,12 +1065,14 @@
     <property role="TrG5h" value="PsmAnyState" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="shorthand for any state" />
+    <property role="1pbfSe" value="11557157" />
     <ref role="1TJDcQ" node="5oFMniD8XPl" resolve="PsmState" />
   </node>
   <node concept="1TIwiD" id="5oFMniD8XPW">
     <property role="3GE5qa" value="intf.cs.psm" />
     <property role="TrG5h" value="PsmRefState" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="11557136" />
     <ref role="1TJDcQ" node="5oFMniD8XPl" resolve="PsmState" />
     <node concept="1TJgyj" id="5oFMniD8XPX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1037,6 +1084,7 @@
   <node concept="1TIwiD" id="F_QT7XsuCt">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="InitFieldInitializer" />
+    <property role="1pbfSe" value="139969966" />
     <ref role="1TJDcQ" node="29JE8qNtlUh" resolve="AbstractComponentInitializer" />
     <node concept="PrWs8" id="62XMcUocG0h" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
@@ -1057,6 +1105,7 @@
   <node concept="1TIwiD" id="4v7hlN6uuSU">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="InstanceConfigRef" />
+    <property role="1pbfSe" value="239154070" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4v7hlN6uuSV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1070,6 +1119,7 @@
     <property role="TrG5h" value="PortAdapter" />
     <property role="34LRSv" value="adapt" />
     <property role="R4oN_" value="port adapter in instance configuation" />
+    <property role="1pbfSe" value="239820318" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1ijJyTDpEa_" role="1TKVEl">
       <property role="TrG5h" value="reconnectable" />
@@ -1099,6 +1149,7 @@
     <property role="3GE5qa" value="config" />
     <property role="34LRSv" value="components" />
     <property role="R4oN_" value="use components, instances, connectors" />
+    <property role="1pbfSe" value="328359194" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1OLGDVffrKn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1114,12 +1165,14 @@
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="ComponentsGenStrategy" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="328359191" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6KS8PoxkOzX">
     <property role="TrG5h" value="ComponentMappingDebugHelper" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="debug" />
+    <property role="1pbfSe" value="1920242605" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6KS8PoxkO$6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1137,6 +1190,7 @@
   <node concept="1TIwiD" id="2ylZ3tIpRa3">
     <property role="3GE5qa" value="debug" />
     <property role="TrG5h" value="InterfaceToImplementationMapping" />
+    <property role="1pbfSe" value="1761775942" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2ylZ3tIpRa5" role="1TKVEl">
       <property role="TrG5h" value="interfaceName" />
@@ -1154,6 +1208,7 @@
   <node concept="1TIwiD" id="5JgQ5vqXSDQ">
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="AdapterInstancePortRef" />
+    <property role="1pbfSe" value="919102157" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5JgQ5vqXSDR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1171,6 +1226,7 @@
   <node concept="1TIwiD" id="7oI7FI6q2Us">
     <property role="3GE5qa" value="comp" />
     <property role="TrG5h" value="EmptyComponentContent" />
+    <property role="1pbfSe" value="57258665" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7oI7FI6q2Ut" role="PzmwI">
       <ref role="PrY4T" node="71UKpntm630" resolve="IComponentContent" />
@@ -1182,6 +1238,7 @@
   <node concept="PlHQZ" id="5fn4FV$bX67">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="InstanceConfigContents" />
+    <property role="1pbfSe" value="939975749" />
     <node concept="PrWs8" id="58NNGt3cGlo" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
@@ -1195,6 +1252,7 @@
   <node concept="1TIwiD" id="WtRjgwxLl_">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="EmptyInstanceConfigContent" />
+    <property role="1pbfSe" value="799339161" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="WtRjgwxLlC" role="PzmwI">
       <ref role="PrY4T" node="5fn4FV$bX67" resolve="InstanceConfigContents" />
@@ -1209,6 +1267,7 @@
   <node concept="1TIwiD" id="58NNGt3cxey">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="CommentedConfigContent" />
+    <property role="1pbfSe" value="1788485015" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="58NNGt3cxeA" role="PzmwI">
       <ref role="PrY4T" node="5fn4FV$bX67" resolve="InstanceConfigContents" />
@@ -1226,6 +1285,7 @@
   <node concept="PlHQZ" id="5Xnv3$Q_DjT">
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="ICSInterfaceContents" />
+    <property role="1pbfSe" value="1779560142" />
     <node concept="PrWs8" id="3RtPbXKO1Z4" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
@@ -1233,6 +1293,7 @@
   <node concept="1TIwiD" id="5Xnv3$QABtA">
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="EmptyInterfaceContents" />
+    <property role="1pbfSe" value="1779305569" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5Xnv3$QABtB" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
@@ -1244,6 +1305,7 @@
   <node concept="1TIwiD" id="3PT6Z48LOzA">
     <property role="3GE5qa" value="comp.runnable" />
     <property role="TrG5h" value="ImplementRunnableRef" />
+    <property role="1pbfSe" value="1178625239" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3PT6Z48LOzB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1256,6 +1318,7 @@
     <property role="3GE5qa" value="comp" />
     <property role="TrG5h" value="PortAsValueExpression" />
     <property role="34LRSv" value="port" />
+    <property role="1pbfSe" value="27641517" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="3yeYUb95GHe" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1271,18 +1334,21 @@
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="InterfaceTypeOpCallExpr" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="27697716" />
     <ref role="1TJDcQ" node="71UKpntoo85" resolve="InterfaceOperationCallExpr" />
   </node>
   <node concept="1TIwiD" id="1lsyexBNOob">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="PortCharacteristic" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="2100023027" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1lsyexBO0OA">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="TagPortCharacteristic" />
     <property role="34LRSv" value="tag" />
+    <property role="1pbfSe" value="2100073998" />
     <ref role="1TJDcQ" node="1lsyexBNOob" resolve="PortCharacteristic" />
     <node concept="1TJgyi" id="1lsyexBO0OB" role="1TKVEl">
       <property role="TrG5h" value="tag" />
@@ -1292,6 +1358,7 @@
   <node concept="1TIwiD" id="2ZUGF54knGY">
     <property role="3GE5qa" value="comp.ports" />
     <property role="TrG5h" value="ReqPortCardinality" />
+    <property role="1pbfSe" value="1951149551" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2ofiXe_s$YN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1311,6 +1378,7 @@
     <property role="TrG5h" value="ReconnectAdapterStatement" />
     <property role="R4oN_" value="reconnects a port adapter to a new target" />
     <property role="34LRSv" value="reconnect adapter" />
+    <property role="1pbfSe" value="2113595306" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="1ijJyTDqygI" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1330,6 +1398,7 @@
   </node>
   <node concept="PlHQZ" id="1ijJyTDpXkK">
     <property role="TrG5h" value="IReferencesInstance" />
+    <property role="1pbfSe" value="2113639262" />
     <node concept="1TJgyj" id="1ijJyTDpXkL" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="config" />
@@ -1350,11 +1419,13 @@
     <property role="3GE5qa" value="comp.instances.portref" />
     <property role="TrG5h" value="PortRef" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1120684427" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7VsgA5L5UoU">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="DummyCompRef" />
+    <property role="1pbfSe" value="269227877" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7VsgA5L5UoV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1366,12 +1437,14 @@
   <node concept="PlHQZ" id="6JVEnxIiSo9">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="ISatisfiesPort" />
+    <property role="1pbfSe" value="632868991" />
   </node>
   <node concept="1TIwiD" id="7M388_GyEh8">
     <property role="3GE5qa" value="comp.compType" />
     <property role="TrG5h" value="ComponentType" />
     <property role="34LRSv" value="component" />
     <property role="R4oN_" value="a type that represents a component" />
+    <property role="1pbfSe" value="384973615" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="PrWs8" id="4WY_RKGDIPK" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7oVAz7YD2vL" resolve="IChildrenResolver" />
@@ -1386,6 +1459,7 @@
   <node concept="1TIwiD" id="7XQHhkHda6d">
     <property role="3GE5qa" value="comp.compType" />
     <property role="TrG5h" value="ComponentCallExpr" />
+    <property role="1pbfSe" value="1398057310" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="7XQHhkHdxo4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1403,6 +1477,7 @@
   <node concept="1TIwiD" id="7XQHhkHf7fF">
     <property role="3GE5qa" value="comp.compType" />
     <property role="TrG5h" value="ComponentInstanceRefExpr" />
+    <property role="1pbfSe" value="1397544704" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7XQHhkHf7fG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1417,6 +1492,7 @@
   <node concept="1TIwiD" id="7XQHhkHdxoc">
     <property role="3GE5qa" value="comp.compType" />
     <property role="TrG5h" value="ComponentRunnableRef" />
+    <property role="1pbfSe" value="1397961951" />
     <ref role="1TJDcQ" node="7XQHhkHdxo2" resolve="ComponentContentRef" />
     <node concept="1TJgyj" id="7XQHhkHdyqS" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1438,6 +1514,7 @@
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="AbstractInstanceConfiguration" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="633203592" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6JVEnxIhAG1" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
@@ -1461,6 +1538,7 @@
   <node concept="1TIwiD" id="7XQHhkHe3kr">
     <property role="3GE5qa" value="comp.compType" />
     <property role="TrG5h" value="ComponentFieldRef" />
+    <property role="1pbfSe" value="1397822928" />
     <ref role="1TJDcQ" node="7XQHhkHdxo2" resolve="ComponentContentRef" />
     <node concept="1TJgyj" id="7XQHhkHe3ks" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1473,6 +1551,7 @@
     <property role="3GE5qa" value="comp.compType" />
     <property role="TrG5h" value="ComponentContentRef" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1397961961" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="RsLjUnMNv4">
@@ -1480,6 +1559,7 @@
     <property role="TrG5h" value="SenderReceiverInterface" />
     <property role="34LRSv" value="sr interface" />
     <property role="R4oN_" value="sender/receiver interface" />
+    <property role="1pbfSe" value="1515717374" />
     <ref role="1TJDcQ" node="3TmmsQkC_PR" resolve="Interface" />
     <node concept="1TJgyi" id="3lVSx$8FRDn" role="1TKVEl">
       <property role="TrG5h" value="strict" />
@@ -1504,6 +1584,7 @@
   <node concept="1TIwiD" id="RsLjUnMNva">
     <property role="3GE5qa" value="intf.sr" />
     <property role="TrG5h" value="DataElement" />
+    <property role="1pbfSe" value="1515717368" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1PvAkX2tdDN" role="1TKVEl">
       <property role="TrG5h" value="atomic" />
@@ -1525,6 +1606,7 @@
   <node concept="1TIwiD" id="RsLjUnO2bV">
     <property role="3GE5qa" value="intf.sr" />
     <property role="TrG5h" value="DataElementRefExpr" />
+    <property role="1pbfSe" value="1515395015" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="RsLjUnO2bX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1543,6 +1625,7 @@
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <property role="TrG5h" value="WhenPortsConnectedExpr" />
     <property role="34LRSv" value="wpc" />
+    <property role="1pbfSe" value="125657009" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4paRqaMdWaI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1563,21 +1646,25 @@
   <node concept="PlHQZ" id="4paRqaMe436">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
     <property role="TrG5h" value="IConnectedCheck" />
+    <property role="1pbfSe" value="125624728" />
   </node>
   <node concept="1TIwiD" id="AQ_pw8xkW0">
     <property role="3GE5qa" value="intf.sr" />
     <property role="TrG5h" value="InterfaceTypeDataRefExpr" />
+    <property role="1pbfSe" value="305915032" />
     <ref role="1TJDcQ" node="RsLjUnO2bV" resolve="DataElementRefExpr" />
   </node>
   <node concept="1TIwiD" id="29JE8qNtlUh">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="AbstractComponentInitializer" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="706410729" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="29JE8qNuWkv">
     <property role="3GE5qa" value="intf.sr" />
     <property role="TrG5h" value="ExternalStorageLocation" />
+    <property role="1pbfSe" value="705991259" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="29JE8qNvthC" role="PzmwI">
       <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
@@ -1592,10 +1679,12 @@
   <node concept="PlHQZ" id="29JE8qNvth_">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="IMayRequiresComponentInitializer" />
+    <property role="1pbfSe" value="705856277" />
   </node>
   <node concept="1TIwiD" id="29JE8qNvJxx">
     <property role="3GE5qa" value="intf.sr" />
     <property role="TrG5h" value="ExternalStorageInitializer" />
+    <property role="1pbfSe" value="705781529" />
     <ref role="1TJDcQ" node="29JE8qNtlUh" resolve="AbstractComponentInitializer" />
     <node concept="1TJgyj" id="29JE8qNvJxz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1613,6 +1702,7 @@
   <node concept="PlHQZ" id="3NJ7rfmYe2W">
     <property role="3GE5qa" value="comp.debug" />
     <property role="TrG5h" value="ITriggeredByOperation" />
+    <property role="1pbfSe" value="333971055" />
     <node concept="PrWs8" id="6ExsrkyPUeH" role="PrDN$">
       <ref role="PrY4T" to="2gv2:1d7Vth$qHPp" resolve="ISuspendableNode" />
     </node>
@@ -1620,6 +1710,7 @@
   <node concept="1TIwiD" id="7t5Rr8f8Wy8">
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="PortAdapterElementRefExpr" />
+    <property role="1pbfSe" value="2039896518" />
     <ref role="1TJDcQ" node="RsLjUnO2bV" resolve="DataElementRefExpr" />
     <node concept="1TJgyj" id="7t5Rr8f8ZVi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1632,6 +1723,7 @@
   <node concept="1TIwiD" id="3XxRpIb9yjO">
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="SinglePortRefExpr" />
+    <property role="1pbfSe" value="897056113" />
     <ref role="1TJDcQ" node="71UKpntoTuE" resolve="PortRefExpr" />
     <node concept="1TJgyj" id="3XxRpIb9yCD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1646,10 +1738,12 @@
   <node concept="PlHQZ" id="4WiM1nVj1Bm">
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="ICanOnlyBeUsedInComponent" />
+    <property role="1pbfSe" value="1247732203" />
   </node>
   <node concept="PlHQZ" id="3U_nJP19GDu">
     <property role="3GE5qa" value="comp.runnable" />
     <property role="TrG5h" value="IOperationTriggerLike" />
+    <property role="1pbfSe" value="2144086363" />
     <node concept="1TJgyj" id="3U_nJP19H_S" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="providedPort" />
@@ -1665,12 +1759,14 @@
   </node>
   <node concept="PlHQZ" id="7mgpfAOt0hZ">
     <property role="TrG5h" value="InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig" />
+    <property role="1pbfSe" value="704932216" />
     <node concept="PrWs8" id="7mgpfAOxIrS" role="PrDN$">
       <ref role="PrY4T" node="5fn4FV$bX67" resolve="InstanceConfigContents" />
     </node>
   </node>
   <node concept="1TIwiD" id="7moPk051DVV">
     <property role="TrG5h" value="DirectRunnableCallable" />
+    <property role="1pbfSe" value="2057270331" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="7moPk051DVW" role="lGtFl">
       <property role="Hh88m" value="directCallable" />
@@ -1685,16 +1781,20 @@
   <node concept="PlHQZ" id="5hYHEwZAyxP">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="IComponentInstanceAware" />
+    <property role="1pbfSe" value="1810309347" />
   </node>
   <node concept="PlHQZ" id="5hYHEwZIii2">
     <property role="TrG5h" value="IComponentIDAware" />
+    <property role="1pbfSe" value="1808278742" />
   </node>
   <node concept="PlHQZ" id="7DNX50_2aso">
     <property role="TrG5h" value="IComponentWatchableResolver" />
+    <property role="1pbfSe" value="1619223704" />
   </node>
   <node concept="1TIwiD" id="3KKPUg5FDRy">
     <property role="TrG5h" value="PreventConstructorCall" />
     <property role="34LRSv" value="@preventConstructorCall" />
+    <property role="1pbfSe" value="1105163654" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3KKPUg5FDX8" role="lGtFl">
       <property role="Hh88m" value="preventConstructorCall" />
@@ -1706,6 +1806,7 @@
   <node concept="1TIwiD" id="3RtPbXKO3Xq">
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="CommentedCSInterfaceContent" />
+    <property role="1pbfSe" value="1364323303" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RtPbXKO3Xr" role="PzmwI">
       <ref role="PrY4T" node="5Xnv3$Q_DjT" resolve="ICSInterfaceContents" />
@@ -1720,6 +1821,7 @@
   <node concept="1TIwiD" id="7oI7FI6qb0b">
     <property role="3GE5qa" value="comp" />
     <property role="TrG5h" value="CommentedComponentContent" />
+    <property role="1pbfSe" value="57225530" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7oI7FI6qb0c" role="PzmwI">
       <ref role="PrY4T" node="71UKpntm630" resolve="IComponentContent" />

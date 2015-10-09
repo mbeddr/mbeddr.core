@@ -9,9 +9,9 @@
     <import index="tpc2" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure)" />
     <import index="1oap" ref="982eb8df-2c96-4bd7-9963-11712ea622e5/r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources/jetbrains.mps.lang.resources.structure)" />
     <import index="tp3j" ref="d7a92d38-f7db-40d0-8431-763b0c3c9f20/r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions/jetbrains.mps.lang.intentions.structure)" />
+    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -30,6 +30,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -68,11 +69,13 @@
   <node concept="PlHQZ" id="lRW__Is3De">
     <property role="TrG5h" value="IContextSection" />
     <property role="3GE5qa" value="common" />
+    <property role="1pbfSe" value="1944595623" />
   </node>
   <node concept="1TIwiD" id="lRW__Is3Dp">
     <property role="TrG5h" value="JComponentContextSection" />
     <property role="3GE5qa" value="section" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1944595634" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="lRW__IufA2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -97,6 +100,7 @@
     <property role="TrG5h" value="ContextActionContextSection" />
     <property role="3GE5qa" value="section" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1944595896" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="lRW__IwusC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -114,10 +118,12 @@
   <node concept="PlHQZ" id="lRW__Is3HT">
     <property role="TrG5h" value="IContextAction" />
     <property role="3GE5qa" value="action" />
+    <property role="1pbfSe" value="1944595922" />
   </node>
   <node concept="1TIwiD" id="lRW__Is3Lf">
     <property role="TrG5h" value="ConceptContextAction" />
     <property role="3GE5qa" value="action" />
+    <property role="1pbfSe" value="1944596136" />
     <ref role="1TJDcQ" node="lRW__IwVOu" resolve="AbstractButtonContextAction" />
     <node concept="1TJgyj" id="lRW__Is3Lo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -130,6 +136,7 @@
     <property role="TrG5h" value="NodeContextAction" />
     <property role="3GE5qa" value="action" />
     <property role="34LRSv" value="nodeContextAction" />
+    <property role="1pbfSe" value="1944596232" />
     <ref role="1TJDcQ" node="lRW__IwVOu" resolve="AbstractButtonContextAction" />
     <node concept="1TJgyj" id="lRW__IyH1y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -141,6 +148,7 @@
   <node concept="1TIwiD" id="lRW__Is3N2">
     <property role="TrG5h" value="CellContextAction" />
     <property role="3GE5qa" value="action" />
+    <property role="1pbfSe" value="1944596251" />
     <ref role="1TJDcQ" node="lRW__IwVOu" resolve="AbstractButtonContextAction" />
     <node concept="1TJgyj" id="lRW__Is3Nb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -152,17 +160,20 @@
   <node concept="1TIwiD" id="lRW__IudLv">
     <property role="3GE5qa" value="section" />
     <property role="TrG5h" value="JComponentFunction" />
+    <property role="1pbfSe" value="1945161400" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="lRW__IuEuK">
     <property role="3GE5qa" value="common" />
     <property role="TrG5h" value="IsApplicableFunction" />
+    <property role="1pbfSe" value="1945278985" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="lRW__IuEuP">
     <property role="3GE5qa" value="common" />
     <property role="TrG5h" value="ContextParameter" />
     <property role="34LRSv" value="context" />
+    <property role="1pbfSe" value="1945278990" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="lRW__IwVOu">
@@ -170,6 +181,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="AbstractButtonContextAction" />
+    <property role="1pbfSe" value="1945874295" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="lRW__IwVOH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -196,11 +208,13 @@
   <node concept="1TIwiD" id="lRW__IwXF2">
     <property role="3GE5qa" value="action" />
     <property role="TrG5h" value="ExecuteFunction" />
+    <property role="1pbfSe" value="1945881883" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="PlHQZ" id="5neAOh$6qgL">
     <property role="3GE5qa" value="action" />
     <property role="TrG5h" value="IReusableContextAction" />
+    <property role="1pbfSe" value="1175961739" />
     <node concept="PrWs8" id="5neAOh$6B1W" role="PrDN$">
       <ref role="PrY4T" node="lRW__Is3HT" resolve="IContextAction" />
     </node>
@@ -209,6 +223,7 @@
     <property role="3GE5qa" value="action.intention" />
     <property role="TrG5h" value="CreateIntentionAnnotation" />
     <property role="34LRSv" value="@createIntention" />
+    <property role="1pbfSe" value="949271399" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2B6gS0eNOdv" role="lGtFl">
       <property role="Hh88m" value="createIntention" />
@@ -224,6 +239,7 @@
     <property role="3GE5qa" value="action.intention" />
     <property role="TrG5h" value="OriginatesFromActionAnnotation" />
     <property role="34LRSv" value="@originatesFromAction" />
+    <property role="1pbfSe" value="951378837" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="2B6gS0eVE7T" role="1TKVEl">
       <property role="TrG5h" value="actionId" />
@@ -243,18 +259,21 @@
     <property role="3GE5qa" value="section.icon" />
     <property role="TrG5h" value="DummyIconSectionClosed" />
     <property role="MwhBj" value="${module}/icons/sectionClosed.png" />
+    <property role="1pbfSe" value="1657890150" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3y2Rjl$EYH_">
     <property role="3GE5qa" value="section.icon" />
     <property role="TrG5h" value="DummyIconSectionOpen" />
     <property role="MwhBj" value="${module}/icons/sectionOpen.png" />
+    <property role="1pbfSe" value="1657878374" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4AhMPNYlUI$">
     <property role="3GE5qa" value="section" />
     <property role="TrG5h" value="TextAreaContextSection" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1206482688" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4AhMPNYmE0s" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -278,6 +297,7 @@
   <node concept="1TIwiD" id="4AhMPNYm6hs">
     <property role="3GE5qa" value="section" />
     <property role="TrG5h" value="TextAreaFunction" />
+    <property role="1pbfSe" value="1206529976" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>

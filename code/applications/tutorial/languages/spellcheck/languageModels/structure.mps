@@ -2,7 +2,7 @@
 <model ref="r:1b6ed767-f17d-4530-9544-0113fe65d4d5(spellcheck.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -47,6 +48,7 @@
   </registry>
   <node concept="1TIwiD" id="2eNFjNPHAcn">
     <property role="TrG5h" value="SpellingMistakesAttribute" />
+    <property role="1pbfSe" value="426381395" />
     <ref role="1TJDcQ" to="tpce:2A8AB0r$C6l" resolve="AttributeInfo" />
     <node concept="1TJgyj" id="55YMheoaiO9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -63,6 +65,7 @@
   </node>
   <node concept="1TIwiD" id="55YMheoaiOh">
     <property role="TrG5h" value="SpellingMistake" />
+    <property role="1pbfSe" value="374868444" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="55YMheoaiOi" role="1TKVEl">
       <property role="TrG5h" value="wrongSpelling" />
@@ -77,6 +80,7 @@
   </node>
   <node concept="1TIwiD" id="55YMheoeGD1">
     <property role="TrG5h" value="Alternative" />
+    <property role="1pbfSe" value="373714092" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="55YMheoeGD2" role="1TKVEl">
       <property role="TrG5h" value="text" />

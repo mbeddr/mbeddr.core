@@ -2,7 +2,7 @@
 <model ref="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
   <node concept="1TIwiD" id="4Kv0gUyBmVn">
     <property role="TrG5h" value="TaskImpl" />
     <property role="34LRSv" value="task" />
+    <property role="1pbfSe" value="289640475" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4Kv0gUyBmVA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -61,6 +63,7 @@
   <node concept="1TIwiD" id="7HJwNEvjDMB">
     <property role="TrG5h" value="SharedResource" />
     <property role="34LRSv" value="shared" />
+    <property role="1pbfSe" value="448667617" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7HJwNEvjK_l" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -72,6 +75,7 @@
   <node concept="1TIwiD" id="7HJwNEvkK8j">
     <property role="TrG5h" value="CriticalSection" />
     <property role="34LRSv" value="critical" />
+    <property role="1pbfSe" value="448955725" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="7HJwNEvm2po" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -91,6 +95,7 @@
   </node>
   <node concept="1TIwiD" id="7HJwNEvkKar">
     <property role="TrG5h" value="SharedResourceRef" />
+    <property role="1pbfSe" value="448955861" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7HJwNEvkKas" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -2,7 +2,7 @@
 <model ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,8 +10,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -27,6 +27,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -66,6 +67,7 @@
     <property role="TrG5h" value="Document" />
     <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${language_descriptor}/icons/document.png" />
+    <property role="1pbfSe" value="2046421098" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4PmkglJNWPJ" role="1TKVEl">
       <property role="TrG5h" value="chapterStartIndex" />
@@ -90,6 +92,7 @@
   <node concept="PlHQZ" id="2TZO3DbuxwP">
     <property role="TrG5h" value="IDocumentContent" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="2046421103" />
     <node concept="PrWs8" id="2TZO3Dbv5pF" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -99,6 +102,7 @@
   </node>
   <node concept="1TIwiD" id="2TZO3Dbuxxg">
     <property role="TrG5h" value="EmptyDocContent" />
+    <property role="1pbfSe" value="2046421130" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2TZO3Dbuxxh" role="PzmwI">
       <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
@@ -112,6 +116,7 @@
     <property role="3GE5qa" value="structure" />
     <property role="R5$K7" value="true" />
     <property role="MwhBj" value="${module}/icons/section.png" />
+    <property role="1pbfSe" value="2046573592" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2TZO3Dbv6Jx" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -142,6 +147,7 @@
   <node concept="PlHQZ" id="2TZO3Dbv6JT">
     <property role="TrG5h" value="IDocContentContainer" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="2046573619" />
     <node concept="1TJgyj" id="2TZO3Dbv6JU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -157,6 +163,7 @@
     <property role="3GE5qa" value="structure" />
     <property role="34LRSv" value="section" />
     <property role="R4oN_" value="a section in the document" />
+    <property role="1pbfSe" value="2046573825" />
     <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
     <node concept="PrWs8" id="2en8HnCuQbk" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
@@ -166,6 +173,7 @@
     <property role="TrG5h" value="AbstractParagraph" />
     <property role="3GE5qa" value="paragraphs" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="2046598953" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2TZO3DbvcVK" role="PzmwI">
       <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
@@ -177,6 +185,7 @@
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="a regular text paragraph" />
     <property role="MwhBj" value="${module}/icons/paragraph.png" />
+    <property role="1pbfSe" value="2046598956" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="4vQSg$Ar0eC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -203,6 +212,7 @@
     <property role="TrG5h" value="DocumentWord" />
     <property role="3GE5qa" value="words" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="2046618076" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2TZO3DbvhAz" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -213,6 +223,7 @@
     <property role="TrG5h" value="SectRefWord" />
     <property role="R4oN_" value="references a section" />
     <property role="34LRSv" value="@sect" />
+    <property role="1pbfSe" value="2046618079" />
     <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyi" id="QRmqzHer_D" role="1TKVEl">
       <property role="TrG5h" value="prefixed" />
@@ -231,6 +242,7 @@
   </node>
   <node concept="1TIwiD" id="2TZO3DbvI5D">
     <property role="TrG5h" value="DocumentRef" />
+    <property role="1pbfSe" value="2046734755" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2TZO3DbvI5E" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -244,6 +256,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="export" />
     <property role="MwhBj" value="${language_descriptor}/icons/documentExport.png" />
+    <property role="1pbfSe" value="2046765736" />
     <ref role="1TJDcQ" node="5gTlpaky5gD" resolve="AbstractExport" />
     <node concept="1TJgyi" id="72XbSXEzBI" role="1TKVEl">
       <property role="TrG5h" value="title" />
@@ -263,12 +276,14 @@
     <property role="3GE5qa" value="export" />
     <property role="TrG5h" value="DocumentRenderer" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="2046778541" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2TZO3DbvSLP">
     <property role="3GE5qa" value="export" />
     <property role="TrG5h" value="NullRenderer" />
     <property role="34LRSv" value="/dev/null" />
+    <property role="1pbfSe" value="2046778543" />
     <ref role="1TJDcQ" node="2TZO3DbvSLN" resolve="DocumentRenderer" />
   </node>
   <node concept="1TIwiD" id="5yxqZJwyOSj">
@@ -277,6 +292,7 @@
     <property role="R4oN_" value="an image embedded from the file system" />
     <property role="34LRSv" value="image" />
     <property role="MwhBj" value="${module}/icons/image.png" />
+    <property role="1pbfSe" value="959232526" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="2fBMM_3qVvX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -334,6 +350,7 @@
     <property role="TrG5h" value="ImgRefWord" />
     <property role="R4oN_" value="a reference to a figure" />
     <property role="34LRSv" value="@fig" />
+    <property role="1pbfSe" value="959389498" />
     <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="5yxqZJwzrde" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -347,6 +364,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="config" />
     <property role="MwhBj" value="${language_descriptor}/icons/documentConfig.png" />
+    <property role="1pbfSe" value="959442121" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="519ky_SprCS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -394,6 +412,7 @@
   <node concept="1TIwiD" id="5yxqZJwzC3r">
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="PathDefinition" />
+    <property role="1pbfSe" value="959442134" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2iGZqsHuOq2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -407,6 +426,7 @@
   </node>
   <node concept="1TIwiD" id="5yxqZJwzNUZ">
     <property role="TrG5h" value="Resource" />
+    <property role="1pbfSe" value="959490746" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5yxqZJwzNV1" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -422,6 +442,7 @@
   <node concept="1TIwiD" id="5yxqZJwzW1O">
     <property role="3GE5qa" value="export" />
     <property role="TrG5h" value="PathMapping" />
+    <property role="1pbfSe" value="959523951" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5yxqZJwzW1Q" role="1TKVEl">
       <property role="TrG5h" value="mappedPath" />
@@ -439,11 +460,13 @@
     <property role="TrG5h" value="CodeFormattedText" />
     <property role="R4oN_" value="text formatted in code font" />
     <property role="34LRSv" value="\code" />
+    <property role="1pbfSe" value="1408153450" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="3RseghIejGv">
     <property role="TrG5h" value="Shortcut" />
     <property role="3GE5qa" value="config" />
+    <property role="1pbfSe" value="1407880157" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RseghIejGw" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -466,6 +489,7 @@
     <property role="TrG5h" value="ShortcutRefWord" />
     <property role="R4oN_" value="embeds and expands a shortcut" />
     <property role="34LRSv" value="@short" />
+    <property role="1pbfSe" value="1407867040" />
     <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="3RseghIeOsT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -483,6 +507,7 @@
   <node concept="1TIwiD" id="3RseghIeuKp">
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="CompositeWord" />
+    <property role="1pbfSe" value="1407834851" />
     <ref role="1TJDcQ" to="87nw:2dWzqxEBMSc" resolve="Word" />
     <node concept="1TJgyj" id="3RseghIeuKq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -494,6 +519,7 @@
   <node concept="1TIwiD" id="3RseghIeCOL">
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="ShortcutArg" />
+    <property role="1pbfSe" value="1407793611" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RseghIeCOM" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -504,6 +530,7 @@
     <property role="TrG5h" value="ShortcutArgRef" />
     <property role="R4oN_" value="referenes an argument" />
     <property role="34LRSv" value="@arg" />
+    <property role="1pbfSe" value="1407793593" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3RseghIeCP5" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -520,6 +547,7 @@
     <property role="TrG5h" value="ItemList" />
     <property role="R4oN_" value="bullet points" />
     <property role="34LRSv" value="itemlist" />
+    <property role="1pbfSe" value="40104933" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyi" id="QRmqzKIeCg" role="1TKVEl">
       <property role="TrG5h" value="ordered" />
@@ -536,6 +564,7 @@
     <property role="3GE5qa" value="paragraphs" />
     <property role="TrG5h" value="Item" />
     <property role="34LRSv" value="*" />
+    <property role="1pbfSe" value="40115352" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4E$PniRJOs_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -555,12 +584,14 @@
     <property role="TrG5h" value="MathFormattedText" />
     <property role="R4oN_" value="text formatted as math" />
     <property role="34LRSv" value="\math" />
+    <property role="1pbfSe" value="960933830" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="5mf_X_La_N$">
     <property role="3GE5qa" value="words.formatted" />
     <property role="TrG5h" value="FormattedText" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="960891715" />
     <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="5mf_X_La_N_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -573,6 +604,7 @@
     <property role="TrG5h" value="DocumentInclude" />
     <property role="34LRSv" value="include" />
     <property role="R4oN_" value="include another document" />
+    <property role="1pbfSe" value="960676679" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="hZfTLLrEWd" role="1TKVEl">
       <property role="TrG5h" value="referenceOnly" />
@@ -591,6 +623,7 @@
   <node concept="1TIwiD" id="5mf_X_LbOnj">
     <property role="3GE5qa" value="paragraphs" />
     <property role="TrG5h" value="CodeParagraph" />
+    <property role="1pbfSe" value="960569940" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="2fBMM_3hr0V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -619,10 +652,12 @@
   <node concept="PlHQZ" id="47ZkZt5XzTh">
     <property role="TrG5h" value="IInterspersed" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="2013949368" />
   </node>
   <node concept="PlHQZ" id="47ZkZt5YzN8">
     <property role="TrG5h" value="IFloating" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="2013687617" />
     <node concept="PrWs8" id="47ZkZt5YzN9" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -633,10 +668,12 @@
   <node concept="PlHQZ" id="3UlEobTHU0C">
     <property role="TrG5h" value="IUsesExternalPath" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="944589226" />
   </node>
   <node concept="1TIwiD" id="72XbSXEIPy">
     <property role="TrG5h" value="Author" />
     <property role="34LRSv" value="author" />
+    <property role="1pbfSe" value="1064165920" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="72XbSXEIPz" role="1TKVEl">
       <property role="TrG5h" value="name" />
@@ -651,12 +688,14 @@
     <property role="3GE5qa" value="config.scaling" />
     <property role="TrG5h" value="FigureSizeSpec" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="112434588" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7uLL3Mf0t_y">
     <property role="3GE5qa" value="config.scaling" />
     <property role="TrG5h" value="ScalingSizeSpec" />
     <property role="34LRSv" value="scale" />
+    <property role="1pbfSe" value="112434590" />
     <ref role="1TJDcQ" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
     <node concept="1TJgyi" id="7uLL3Mf0t_z" role="1TKVEl">
       <property role="TrG5h" value="percentage" />
@@ -667,6 +706,7 @@
     <property role="3GE5qa" value="config.scaling" />
     <property role="TrG5h" value="PageWidthSizeSpec" />
     <property role="34LRSv" value="width" />
+    <property role="1pbfSe" value="112517140" />
     <ref role="1TJDcQ" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
     <node concept="1TJgyi" id="7uLL3Mf0LJp" role="1TKVEl">
       <property role="TrG5h" value="percentage" />
@@ -676,6 +716,7 @@
   <node concept="1TIwiD" id="7uLL3Mf0OPs">
     <property role="3GE5qa" value="config.scaling" />
     <property role="TrG5h" value="InheritSizeSpec" />
+    <property role="1pbfSe" value="112529816" />
     <ref role="1TJDcQ" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
     <node concept="1TJgyj" id="7uLL3Mf1pvM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -687,6 +728,7 @@
   <node concept="1TIwiD" id="7uLL3Mf1pvT">
     <property role="3GE5qa" value="config.scaling" />
     <property role="TrG5h" value="NamedSizeSpec" />
+    <property role="1pbfSe" value="112679989" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7uLL3Mf1pvV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -702,6 +744,7 @@
     <property role="3GE5qa" value="export" />
     <property role="TrG5h" value="AbstractExport" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="389961285" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5gTlpaky6sZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -736,6 +779,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="export" />
     <property role="MwhBj" value="${language_descriptor}/icons/documentExport.png" />
+    <property role="1pbfSe" value="389956393" />
     <ref role="1TJDcQ" node="5gTlpaky5gD" resolve="AbstractExport" />
     <node concept="PrWs8" id="1uL8CIttCpY" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
@@ -747,6 +791,7 @@
     <property role="R4oN_" value="a pasted in textual code paragraph" />
     <property role="34LRSv" value="listing" />
     <property role="MwhBj" value="${module}/icons/code.png" />
+    <property role="1pbfSe" value="1978458008" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyi" id="7$DvC4gUq7D" role="1TKVEl">
       <property role="TrG5h" value="language" />
@@ -766,6 +811,7 @@
   <node concept="1TIwiD" id="4vQSg$Ar0eu">
     <property role="3GE5qa" value="paragraphs" />
     <property role="TrG5h" value="TextParHeader" />
+    <property role="1pbfSe" value="1851974823" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4vQSg$Ar0ev" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -780,6 +826,7 @@
     <property role="3GE5qa" value="table" />
     <property role="R4oN_" value="a floating table" />
     <property role="34LRSv" value="table" />
+    <property role="1pbfSe" value="1852173557" />
     <ref role="1TJDcQ" node="519ky_SkDrE" resolve="AbstractTableParagraph" />
     <node concept="1TJgyj" id="519ky_SjBNL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -799,6 +846,7 @@
     <property role="TrG5h" value="TableRow" />
     <property role="R4oN_" value="a row" />
     <property role="34LRSv" value="&lt;" />
+    <property role="1pbfSe" value="1852173559" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="519ky_SjQMt" role="1TKVEl">
       <property role="TrG5h" value="lineAbove" />
@@ -819,6 +867,7 @@
     <property role="3GE5qa" value="table" />
     <property role="TrG5h" value="TableCell" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1852173560" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="519ky_SjvBI" role="1TKVEl">
       <property role="TrG5h" value="isheader" />
@@ -830,6 +879,7 @@
     <property role="TrG5h" value="StringTableCell" />
     <property role="R4oN_" value="a simple string" />
     <property role="34LRSv" value="(" />
+    <property role="1pbfSe" value="1852173567" />
     <ref role="1TJDcQ" node="4vQSg$ArKJJ" resolve="TableCell" />
     <node concept="1TJgyi" id="4vQSg$ArKJS" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -843,6 +893,7 @@
     <property role="3GE5qa" value="table" />
     <property role="TrG5h" value="AbstractTableParagraph" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="929306349" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyi" id="519ky_SkGwq" role="1TKVEl">
       <property role="TrG5h" value="numCols" />
@@ -867,6 +918,7 @@
     <property role="3GE5qa" value="table" />
     <property role="34LRSv" value="inline table" />
     <property role="R4oN_" value="an inlined table" />
+    <property role="1pbfSe" value="929293755" />
     <ref role="1TJDcQ" node="519ky_SkDrE" resolve="AbstractTableParagraph" />
     <node concept="PrWs8" id="519ky_Slkb4" role="PzmwI">
       <ref role="PrY4T" node="47ZkZt5XzTh" resolve="IInterspersed" />
@@ -877,6 +929,7 @@
     <property role="TrG5h" value="TextBlockTableCell" />
     <property role="R4oN_" value="a text paragraph" />
     <property role="34LRSv" value="[" />
+    <property role="1pbfSe" value="928956685" />
     <ref role="1TJDcQ" node="4vQSg$ArKJJ" resolve="TableCell" />
     <node concept="1TJgyj" id="519ky_SlYNb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -893,6 +946,7 @@
     <property role="TrG5h" value="Invisble" />
     <property role="R4oN_" value="a concept useful in generators" />
     <property role="34LRSv" value="invisble paragraph" />
+    <property role="1pbfSe" value="1592598800" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="2HzhasNzlMy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -906,6 +960,7 @@
     <property role="TrG5h" value="EmphFormattedText" />
     <property role="R4oN_" value="emphasized text" />
     <property role="34LRSv" value="\emph" />
+    <property role="1pbfSe" value="219064556" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="2fGuOSYbvYU">
@@ -913,6 +968,7 @@
     <property role="34LRSv" value="visualization" />
     <property role="R4oN_" value="include visualized image" />
     <property role="MwhBj" value="${module}/icons/visualization.png" />
+    <property role="1pbfSe" value="1645902600" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2fGuOSYbvYV" role="PzmwI">
       <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
@@ -960,6 +1016,7 @@
   <node concept="PlHQZ" id="5L$H31Kgq3f">
     <property role="TrG5h" value="IDocumentLike" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="861514497" />
     <node concept="1TJgyj" id="5L$H31Kgq3g" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="config" />
@@ -988,11 +1045,13 @@
   <node concept="PlHQZ" id="2U5fsQei4zf">
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="IDocConfigItem" />
+    <property role="1pbfSe" value="1127381348" />
   </node>
   <node concept="1TIwiD" id="3JD5OqKQc7d">
     <property role="3GE5qa" value="config.scaling" />
     <property role="TrG5h" value="ScaleDownNotUp100" />
     <property role="34LRSv" value="scale down not up 100" />
+    <property role="1pbfSe" value="322840301" />
     <ref role="1TJDcQ" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
   </node>
   <node concept="1TIwiD" id="6VFmq3I3EUm">
@@ -1000,6 +1059,7 @@
     <property role="3GE5qa" value="paragraphs" />
     <property role="R4oN_" value="a regular text paragraph" />
     <property role="34LRSv" value="greybox" />
+    <property role="1pbfSe" value="1559889974" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="6VFmq3I3EUo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1016,12 +1076,14 @@
     <property role="TrG5h" value="BoldFormattedText" />
     <property role="R4oN_" value="bold text" />
     <property role="34LRSv" value="\bold" />
+    <property role="1pbfSe" value="1600497243" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="2iGZqsHZev0">
     <property role="TrG5h" value="AttachmentWord" />
     <property role="3GE5qa" value="words" />
     <property role="34LRSv" value="@attachment" />
+    <property role="1pbfSe" value="1386866023" />
     <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="2iGZqsHZev5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1037,6 +1099,7 @@
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="FootnoteWord" />
     <property role="34LRSv" value="\footnote" />
+    <property role="1pbfSe" value="1432302597" />
     <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="2nto7GJwth7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1049,6 +1112,7 @@
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="ToDoWord" />
     <property role="34LRSv" value="\todo" />
+    <property role="1pbfSe" value="840189172" />
     <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="3EhlX7RwJXK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1063,6 +1127,7 @@
   <node concept="1TIwiD" id="3DAECxFssLS">
     <property role="TrG5h" value="NameAnnotation" />
     <property role="3GE5qa" value="embed" />
+    <property role="1pbfSe" value="1512540416" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="3DAECxFssLT" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -1079,6 +1144,7 @@
     <property role="TrG5h" value="UrlFormattedText" />
     <property role="R4oN_" value="text formatted as a URL" />
     <property role="34LRSv" value="\url" />
+    <property role="1pbfSe" value="1508146684" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="3DAECxG6nQE">
@@ -1086,6 +1152,7 @@
     <property role="3GE5qa" value="structure" />
     <property role="34LRSv" value="chapter" />
     <property role="R4oN_" value="a chapter in the document" />
+    <property role="1pbfSe" value="1501550542" />
     <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
     <node concept="PrWs8" id="3DAECxG6nQF" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
@@ -1099,6 +1166,7 @@
     <property role="TrG5h" value="KeyPressFormattedText" />
     <property role="R4oN_" value="text formatted in keyboard font" />
     <property role="34LRSv" value="\key" />
+    <property role="1pbfSe" value="879486836" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="1YUFCeFVcA4">
@@ -1106,11 +1174,13 @@
     <property role="TrG5h" value="MenuFormattedText" />
     <property role="R4oN_" value="text formatted in menu font" />
     <property role="34LRSv" value="\menu" />
+    <property role="1pbfSe" value="878217209" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="1YUFCeG6lqR">
     <property role="TrG5h" value="ModelContentPointer" />
     <property role="3GE5qa" value="modelContentPointer" />
+    <property role="1pbfSe" value="875297478" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1YUFCeG6oKc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1122,6 +1192,7 @@
   <node concept="1TIwiD" id="1YUFCeG6oK8">
     <property role="3GE5qa" value="modelContentPointer" />
     <property role="TrG5h" value="NamedNodeModelContentPointerElement" />
+    <property role="1pbfSe" value="875283829" />
     <ref role="1TJDcQ" node="7IDbqDzNoQ" resolve="AbstractModelContentPointerElement" />
     <node concept="1TJgyj" id="1YUFCeG6oK9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1135,12 +1206,14 @@
     <property role="TrG5h" value="AbstractModelContentPointerElement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1417815316" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="627_yy34G14">
     <property role="TrG5h" value="AbstractModelContentParagraph" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="modelContent" />
+    <property role="1pbfSe" value="476424596" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="627_yy34G15" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1175,6 +1248,7 @@
     <property role="R4oN_" value="embed model content as an image" />
     <property role="MwhBj" value="${module}/icons/code.png" />
     <property role="3GE5qa" value="modelContent" />
+    <property role="1pbfSe" value="476424589" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
     <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1210,6 +1284,7 @@
     <property role="34LRSv" value="embed model content as text" />
     <property role="MwhBj" value="${module}/icons/code.png" />
     <property role="3GE5qa" value="modelContent" />
+    <property role="1pbfSe" value="476424582" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
     <node concept="1TJgyi" id="627_yy34G1j" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -1227,6 +1302,7 @@
     <property role="TrG5h" value="ModelContentRefWord" />
     <property role="34LRSv" value="@node" />
     <property role="3GE5qa" value="modelContent" />
+    <property role="1pbfSe" value="476424578" />
     <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="627_yy34G1n" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1240,6 +1316,7 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="34LRSv" value="n" />
     <property role="R4oN_" value="filter by node/name" />
+    <property role="1pbfSe" value="476424576" />
     <ref role="1TJDcQ" node="1SYZy6Qh7iS" resolve="AbstractModelContentRemoval" />
     <node concept="1TJgyj" id="627_yy34G1p" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1251,16 +1328,19 @@
   <node concept="PlHQZ" id="627_yy3SjeX">
     <property role="TrG5h" value="IQAReview" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="462894619" />
   </node>
   <node concept="1TIwiD" id="627_yy3Sjm$">
     <property role="TrG5h" value="QAAssessmentQuery" />
     <property role="34LRSv" value="QA relevant stuff in documents" />
     <property role="3GE5qa" value="assessment" />
+    <property role="1pbfSe" value="462894132" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
   </node>
   <node concept="1TIwiD" id="627_yy3SoY7">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="QAAssessmentResult" />
+    <property role="1pbfSe" value="462871121" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="627_yy3SoZQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1274,6 +1354,7 @@
     <property role="TrG5h" value="AbstractModelContentRemoval" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="729582887" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1SYZy6QhKtE">
@@ -1281,6 +1362,7 @@
     <property role="TrG5h" value="ConceptModelContentRemoval" />
     <property role="34LRSv" value="c" />
     <property role="R4oN_" value="filter by concept" />
+    <property role="1pbfSe" value="729414261" />
     <ref role="1TJDcQ" node="1SYZy6Qh7iS" resolve="AbstractModelContentRemoval" />
     <node concept="1TJgyj" id="1SYZy6QhPtj" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1292,6 +1374,7 @@
   <node concept="1TIwiD" id="1SYZy6QSg06">
     <property role="3GE5qa" value="modelContent" />
     <property role="TrG5h" value="ModelContentEmbeddingPrefix" />
+    <property role="1pbfSe" value="719323609" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="1SYZy6QSh$Z" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1308,6 +1391,7 @@
   </node>
   <node concept="1TIwiD" id="3KN5gxXu83C">
     <property role="TrG5h" value="DocumentKeeper" />
+    <property role="1pbfSe" value="1179937296" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3KN5gxXu83F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1329,6 +1413,7 @@
     <property role="TrG5h" value="TableOfContents" />
     <property role="34LRSv" value="TOC" />
     <property role="R4oN_" value="Table of Contents" />
+    <property role="1pbfSe" value="89848575" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="QRmqzHsCFF" role="PzmwI">
       <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
@@ -1344,15 +1429,18 @@
     <property role="3GE5qa" value="structure" />
     <property role="TrG5h" value="Introduction" />
     <property role="34LRSv" value="intro" />
+    <property role="1pbfSe" value="81140560" />
     <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
   </node>
   <node concept="PlHQZ" id="6jiGbW_JBH_">
     <property role="TrG5h" value="IDocReferencable" />
     <property role="3GE5qa" value="ifaces" />
+    <property role="1pbfSe" value="1970197468" />
   </node>
   <node concept="PlHQZ" id="3mn43GP7FF7">
     <property role="3GE5qa" value="ifaces" />
     <property role="TrG5h" value="ITextOverride" />
+    <property role="1pbfSe" value="1790298882" />
     <node concept="1TJgyi" id="3mn43GP7FF8" role="1TKVEl">
       <property role="TrG5h" value="textOverride" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1362,6 +1450,7 @@
     <property role="TrG5h" value="AbstractRefWord" />
     <property role="3GE5qa" value="words" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1792719920" />
     <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="PrWs8" id="3mn43GPgUJQ" role="PzmwI">
       <ref role="PrY4T" node="3mn43GP7FF7" resolve="ITextOverride" />

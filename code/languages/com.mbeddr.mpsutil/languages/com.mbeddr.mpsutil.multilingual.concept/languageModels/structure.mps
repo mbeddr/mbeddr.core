@@ -2,7 +2,7 @@
 <model ref="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d/r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -49,6 +50,7 @@
   <node concept="1TIwiD" id="2bng37sXCCl">
     <property role="TrG5h" value="StringTranslation" />
     <property role="3GE5qa" value="infrastructure" />
+    <property role="1pbfSe" value="3290554" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2bng37sXCCn" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -61,6 +63,7 @@
   <node concept="1TIwiD" id="2bng37sXCCo">
     <property role="TrG5h" value="TextTranslation" />
     <property role="3GE5qa" value="infrastructure" />
+    <property role="1pbfSe" value="3290551" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2bng37sXCCp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -74,6 +77,7 @@
   </node>
   <node concept="PlHQZ" id="2bng37sXCCt">
     <property role="TrG5h" value="IMultilingualNamedConcept" />
+    <property role="1pbfSe" value="3290546" />
     <node concept="1TJgyj" id="2bng37sXCCu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="multiName" />
@@ -86,6 +90,7 @@
   </node>
   <node concept="1TIwiD" id="2bng37sXCCI">
     <property role="TrG5h" value="MultilingualString" />
+    <property role="1pbfSe" value="3290529" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2bng37sXCCK" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -104,6 +109,7 @@
   </node>
   <node concept="1TIwiD" id="2bng37sXCCN">
     <property role="TrG5h" value="MultilingualText" />
+    <property role="1pbfSe" value="3290524" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2bng37sXCCP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -119,6 +125,7 @@
   <node concept="PlHQZ" id="2Hv7KkRkw0$">
     <property role="3GE5qa" value="infrastructure" />
     <property role="TrG5h" value="ITranslation" />
+    <property role="1pbfSe" value="1655775017" />
     <node concept="1TJgyj" id="2Hv7KkRk$Y2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="language" />
@@ -128,6 +135,7 @@
   </node>
   <node concept="PlHQZ" id="2Hv7KkRk_25">
     <property role="TrG5h" value="IMultilingualContent" />
+    <property role="1pbfSe" value="1655795594" />
     <node concept="1TJgyj" id="2Hv7KkRk_2d" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />

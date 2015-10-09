@@ -2,7 +2,7 @@
 <model ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,9 +10,9 @@
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
     <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" />
     <import index="tp1h" ref="r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -28,6 +28,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -62,6 +63,7 @@
   <node concept="1TIwiD" id="5tr7YH$UuX2">
     <property role="TrG5h" value="ContextActions" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1136324819" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5tr7YH$UuXJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -84,6 +86,7 @@
   <node concept="1TIwiD" id="5tr7YH$UuXh">
     <property role="TrG5h" value="SubstituteInfoSource" />
     <property role="34LRSv" value="completion menu" />
+    <property role="1pbfSe" value="1136324804" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="vR6ln0lGxa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -104,10 +107,12 @@
   </node>
   <node concept="PlHQZ" id="5tr7YH$UuXw">
     <property role="TrG5h" value="IActionSource" />
+    <property role="1pbfSe" value="1136324789" />
   </node>
   <node concept="1TIwiD" id="Y7dDcEQCzr">
     <property role="TrG5h" value="NewRootSource" />
     <property role="34LRSv" value="new root" />
+    <property role="1pbfSe" value="979484526" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="Y7dDcEQCzu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -130,6 +135,7 @@
   <node concept="1TIwiD" id="Y7dDcESzwV">
     <property role="TrG5h" value="SideTransformSource" />
     <property role="34LRSv" value="side transform" />
+    <property role="1pbfSe" value="979988174" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="Y7dDcESzwY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -151,6 +157,7 @@
   <node concept="1TIwiD" id="4q$a58Ktpz0">
     <property role="TrG5h" value="IdeaActionsSource" />
     <property role="34LRSv" value="action" />
+    <property role="1pbfSe" value="1998176530" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="4q$a58Ktpz4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -170,10 +177,12 @@
   </node>
   <node concept="PlHQZ" id="4mMeETlpes8">
     <property role="TrG5h" value="IActionId" />
+    <property role="1pbfSe" value="1692982858" />
   </node>
   <node concept="1TIwiD" id="4mMeETlpfpT">
     <property role="TrG5h" value="StringActionId" />
     <property role="34LRSv" value="#" />
+    <property role="1pbfSe" value="1692978905" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4mMeETlpfpW" role="1TKVEl">
       <property role="TrG5h" value="id" />
@@ -185,6 +194,7 @@
   </node>
   <node concept="1TIwiD" id="4mMeETlpMkR">
     <property role="TrG5h" value="ActionIdReference" />
+    <property role="1pbfSe" value="1692835867" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4mMeETlpMkU" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -199,12 +209,14 @@
   <node concept="1TIwiD" id="4mMeETlsgbb">
     <property role="TrG5h" value="ContextExpression" />
     <property role="34LRSv" value="context" />
+    <property role="1pbfSe" value="1692189319" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="4mMeETlsgrR">
     <property role="TrG5h" value="AbstractActionSource" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1692188251" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4mMeETlsgrU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -222,10 +234,12 @@
   </node>
   <node concept="PlHQZ" id="4mMeETluCvu">
     <property role="TrG5h" value="INewRootInclude" />
+    <property role="1pbfSe" value="1691565428" />
   </node>
   <node concept="1TIwiD" id="4mMeETluCvv">
     <property role="TrG5h" value="LanguageReference" />
     <property role="34LRSv" value="language" />
+    <property role="1pbfSe" value="1691565427" />
     <ref role="1TJDcQ" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     <node concept="PrWs8" id="4mMeETluCwl" role="PzmwI">
       <ref role="PrY4T" node="4mMeETluCvu" resolve="INewRootInclude" />
@@ -233,6 +247,7 @@
   </node>
   <node concept="1TIwiD" id="4mMeETluFjI">
     <property role="TrG5h" value="RootConceptRefExpression" />
+    <property role="1pbfSe" value="1691553892" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4mMeETluGaZ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -247,14 +262,17 @@
   <node concept="1TIwiD" id="4mMeETlwOwr">
     <property role="TrG5h" value="SubstituteActionExpression" />
     <property role="34LRSv" value="entry" />
+    <property role="1pbfSe" value="1690991927" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="4mMeETlxvmt">
     <property role="TrG5h" value="ISubstituteActionBased" />
+    <property role="1pbfSe" value="1690816437" />
   </node>
   <node concept="1TIwiD" id="4mMeETlyhwU">
     <property role="TrG5h" value="GenericActionSource" />
     <property role="34LRSv" value="generic" />
+    <property role="1pbfSe" value="1690610968" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="4mMeETlyhwX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -303,16 +321,19 @@
   </node>
   <node concept="1TIwiD" id="4mMeETlyh$F">
     <property role="TrG5h" value="GenericActionSource_ExecuteFunction" />
+    <property role="1pbfSe" value="1690610727" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="4mMeETlyrbY">
     <property role="TrG5h" value="ParameterObject" />
     <property role="34LRSv" value="parameterObject" />
+    <property role="1pbfSe" value="1690571348" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="4txsJZuppGe">
     <property role="TrG5h" value="IntentionsActionSource" />
     <property role="34LRSv" value="intentions" />
+    <property role="1pbfSe" value="633802253" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="7husA5Ypjaj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -344,9 +365,11 @@
   </node>
   <node concept="PlHQZ" id="4txsJZupwt4">
     <property role="TrG5h" value="IIntentionId" />
+    <property role="1pbfSe" value="633829955" />
   </node>
   <node concept="1TIwiD" id="4txsJZup_no">
     <property role="TrG5h" value="IntentionIdReference" />
+    <property role="1pbfSe" value="633850071" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4txsJZupAlB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -361,6 +384,7 @@
   <node concept="1TIwiD" id="4txsJZupAo0">
     <property role="TrG5h" value="StringIntentionId" />
     <property role="34LRSv" value="#" />
+    <property role="1pbfSe" value="633854207" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4txsJZupAoa" role="1TKVEl">
       <property role="TrG5h" value="id" />
@@ -372,6 +396,7 @@
   </node>
   <node concept="1TIwiD" id="657q32pRgDF">
     <property role="TrG5h" value="IntentionAnnotation" />
+    <property role="1pbfSe" value="81497445" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="657q32pRgOM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -408,10 +433,12 @@
   </node>
   <node concept="PlHQZ" id="657q32pRmdh">
     <property role="TrG5h" value="IContextProvider" />
+    <property role="1pbfSe" value="81474687" />
   </node>
   <node concept="1TIwiD" id="6W_V$eaO3LO">
     <property role="TrG5h" value="ActionSourceWithFolder" />
     <property role="34LRSv" value="folder" />
+    <property role="1pbfSe" value="101307721" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6W_V$eaO3M5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -435,6 +462,7 @@
   <node concept="1TIwiD" id="6W_V$eaOeT2">
     <property role="TrG5h" value="ActionSourceWithCondition" />
     <property role="34LRSv" value="if" />
+    <property role="1pbfSe" value="101262203" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6W_V$eaOeYx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -454,10 +482,12 @@
   </node>
   <node concept="PlHQZ" id="6W_V$eaOsrn">
     <property role="TrG5h" value="IGeneratorOnly" />
+    <property role="1pbfSe" value="101206758" />
   </node>
   <node concept="1TIwiD" id="6W_V$eaOsrQ">
     <property role="TrG5h" value="NewRootSource_Compact" />
     <property role="34LRSv" value="new root" />
+    <property role="1pbfSe" value="101206727" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6W_V$eaOss6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -472,6 +502,7 @@
   <node concept="1TIwiD" id="6W_V$eaUUNO">
     <property role="TrG5h" value="IntentionsActionSource_Compact" />
     <property role="34LRSv" value="intention" />
+    <property role="1pbfSe" value="99509449" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6W_V$eaUUO5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -496,6 +527,7 @@
   <node concept="1TIwiD" id="54sr1JE49TG">
     <property role="TrG5h" value="RefactoringSource" />
     <property role="34LRSv" value="refactoring" />
+    <property role="1pbfSe" value="992807559" />
     <ref role="1TJDcQ" node="4mMeETlsgrR" resolve="AbstractActionSource" />
     <node concept="1TJgyj" id="54sr1JE4cBg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -519,6 +551,7 @@
   </node>
   <node concept="1TIwiD" id="54sr1JE49W7">
     <property role="TrG5h" value="RefactoringReference" />
+    <property role="1pbfSe" value="992807714" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="54sr1JE49WM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -532,10 +565,12 @@
   </node>
   <node concept="PlHQZ" id="54sr1JE49Wq">
     <property role="TrG5h" value="IRefactoringClassName" />
+    <property role="1pbfSe" value="992807733" />
   </node>
   <node concept="1TIwiD" id="54sr1JE4o6K">
     <property role="TrG5h" value="StringRefactoringClassName" />
     <property role="34LRSv" value="#" />
+    <property role="1pbfSe" value="992865739" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="54sr1JE4o72" role="1TKVEl">
       <property role="TrG5h" value="className" />

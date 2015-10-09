@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c83abd98-3982-4341-b913-7083d86baf99(de.itemis.mps.editor.math.java.structure)" concise="true">
+<model ref="r:c83abd98-3982-4341-b913-7083d86baf99(de.itemis.mps.editor.math.java.structure)">
   <persistence version="9" />
+  <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
   <node concept="1TIwiD" id="7OTEScInvy$">
     <property role="TrG5h" value="SumExpression" />
     <property role="34LRSv" value="sum" />
+    <property role="1pbfSe" value="1416125401" />
     <ref role="1TJDcQ" node="4CDVPmpGfJC" resolve="MathLoop" />
     <node concept="PrWs8" id="7OTEScInvOY" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -48,6 +50,7 @@
   </node>
   <node concept="1TIwiD" id="7OTEScIojck">
     <property role="TrG5h" value="MathLoopVarRef" />
+    <property role="1pbfSe" value="1415913833" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="7OTEScIojel" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -59,6 +62,7 @@
   <node concept="1TIwiD" id="7OTEScIoGim">
     <property role="TrG5h" value="FractionExpression" />
     <property role="34LRSv" value="frac" />
+    <property role="1pbfSe" value="1415811047" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="d4eZmVx0UI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,22 +80,26 @@
   <node concept="1TIwiD" id="4CDVPmpG7E2">
     <property role="TrG5h" value="SquareBrackets" />
     <property role="34LRSv" value="[" />
+    <property role="1pbfSe" value="472225321" />
     <ref role="1TJDcQ" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
   </node>
   <node concept="1TIwiD" id="4CDVPmpG7G_">
     <property role="TrG5h" value="CurlyBrackets" />
     <property role="34LRSv" value="{" />
+    <property role="1pbfSe" value="472225158" />
     <ref role="1TJDcQ" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
   </node>
   <node concept="1TIwiD" id="4CDVPmpGfIF">
     <property role="TrG5h" value="Product" />
     <property role="34LRSv" value="product" />
+    <property role="1pbfSe" value="472192256" />
     <ref role="1TJDcQ" node="4CDVPmpGfJC" resolve="MathLoop" />
   </node>
   <node concept="1TIwiD" id="4CDVPmpGfJC">
     <property role="TrG5h" value="MathLoop" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="472192195" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4CDVPmpGfJP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -118,6 +126,7 @@
   <node concept="1TIwiD" id="4Ajzui6QFZa">
     <property role="TrG5h" value="Sqrt" />
     <property role="34LRSv" value="sqrt" />
+    <property role="1pbfSe" value="798077522" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4Ajzui6QG0$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -129,6 +138,7 @@
   <node concept="1TIwiD" id="4Ajzui6QSvq">
     <property role="TrG5h" value="NRoot" />
     <property role="34LRSv" value="nroot" />
+    <property role="1pbfSe" value="798026306" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4Ajzui6QSvr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -146,6 +156,7 @@
   <node concept="1TIwiD" id="4Ajzui6R4QY">
     <property role="TrG5h" value="Abs" />
     <property role="34LRSv" value="abs" />
+    <property role="1pbfSe" value="797975646" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4Ajzui6R4QZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -157,6 +168,7 @@
   <node concept="1TIwiD" id="4Ajzui6R4Tl">
     <property role="TrG5h" value="Power" />
     <property role="34LRSv" value="pow" />
+    <property role="1pbfSe" value="797975495" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4Ajzui6Ratz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -174,6 +186,7 @@
   <node concept="1TIwiD" id="4Ajzui6RsB6">
     <property role="TrG5h" value="LogN" />
     <property role="34LRSv" value="logn" />
+    <property role="1pbfSe" value="797878358" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4Ajzui6RsBU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -191,16 +204,19 @@
   <node concept="1TIwiD" id="4Ajzui6RGbh">
     <property role="TrG5h" value="Integral" />
     <property role="34LRSv" value="integral" />
+    <property role="1pbfSe" value="797814603" />
     <ref role="1TJDcQ" node="4CDVPmpGfJC" resolve="MathLoop" />
   </node>
   <node concept="1TIwiD" id="4Ajzui6S0_W">
     <property role="TrG5h" value="PiConstant" />
     <property role="34LRSv" value="pi" />
+    <property role="1pbfSe" value="797730976" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="4Ajzui6SjSZ">
     <property role="TrG5h" value="Sine" />
     <property role="34LRSv" value="sin" />
+    <property role="1pbfSe" value="797651933" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4$yggntGDSN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -212,6 +228,7 @@
   <node concept="1TIwiD" id="4$yggntIoE0">
     <property role="TrG5h" value="Cosine" />
     <property role="34LRSv" value="cos" />
+    <property role="1pbfSe" value="651938693" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4$yggntIpIM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

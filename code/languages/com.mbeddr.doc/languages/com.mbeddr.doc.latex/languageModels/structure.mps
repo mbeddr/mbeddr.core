@@ -2,7 +2,7 @@
 <model ref="r:c66b6ed4-08e6-4cce-9020-c9aa6a1039e3(com.mbeddr.doc.latex.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +14,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -45,6 +46,7 @@
   <node concept="1TIwiD" id="3RseghIcqSc">
     <property role="TrG5h" value="LatexDocument" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1408375024" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3RseghIcR1W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -68,10 +70,12 @@
   </node>
   <node concept="PlHQZ" id="3RseghIcqSy">
     <property role="TrG5h" value="ILine" />
+    <property role="1pbfSe" value="1408375002" />
   </node>
   <node concept="1TIwiD" id="3RseghIctmZ">
     <property role="TrG5h" value="SimpleTextualLine" />
     <property role="34LRSv" value="line" />
+    <property role="1pbfSe" value="1408364861" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3RseghIctn1" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -84,6 +88,7 @@
   <node concept="1TIwiD" id="3RseghIctMN">
     <property role="TrG5h" value="LineList" />
     <property role="34LRSv" value="{" />
+    <property role="1pbfSe" value="1408363081" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RseghIctMO" role="PzmwI">
       <ref role="PrY4T" node="3RseghIcqSy" resolve="ILine" />
@@ -98,6 +103,7 @@
   <node concept="1TIwiD" id="3RseghIcuho">
     <property role="TrG5h" value="WordLine" />
     <property role="34LRSv" value="&lt;" />
+    <property role="1pbfSe" value="1408361124" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3RseghIcuht" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -120,11 +126,13 @@
   <node concept="1TIwiD" id="3RseghIcuhq">
     <property role="TrG5h" value="Word" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1408361122" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3RseghIcuhH">
     <property role="TrG5h" value="CommandWord" />
     <property role="34LRSv" value="\" />
+    <property role="1pbfSe" value="1408361103" />
     <ref role="1TJDcQ" node="3RseghIcuhq" resolve="Word" />
     <node concept="1TJgyj" id="3RseghIcuhU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -158,6 +166,7 @@
   <node concept="1TIwiD" id="3RseghIcukW">
     <property role="TrG5h" value="TextWord" />
     <property role="34LRSv" value="t" />
+    <property role="1pbfSe" value="1408360896" />
     <ref role="1TJDcQ" node="3RseghIcuhq" resolve="Word" />
     <node concept="1TJgyi" id="3RseghIcukX" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -167,6 +176,7 @@
   <node concept="1TIwiD" id="3RseghIcygR">
     <property role="TrG5h" value="WordList" />
     <property role="34LRSv" value="&lt;" />
+    <property role="1pbfSe" value="1408344773" />
     <ref role="1TJDcQ" node="3RseghIcuhq" resolve="Word" />
     <node concept="1TJgyj" id="3RseghIcygT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -178,6 +188,7 @@
   <node concept="1TIwiD" id="3RseghIcHkQ">
     <property role="TrG5h" value="EmptyLine" />
     <property role="34LRSv" value="empty" />
+    <property role="1pbfSe" value="1408299462" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RseghIcHkR" role="PzmwI">
       <ref role="PrY4T" node="3RseghIcqSy" resolve="ILine" />
@@ -186,6 +197,7 @@
   <node concept="1TIwiD" id="1ZiHc0gKksi">
     <property role="TrG5h" value="LatexIncludable" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="815004626" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1ZiHc0gKksk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

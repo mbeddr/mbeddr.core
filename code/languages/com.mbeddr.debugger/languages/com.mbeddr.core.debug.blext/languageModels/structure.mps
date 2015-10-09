@@ -2,7 +2,7 @@
 <model ref="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -32,6 +32,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -67,11 +68,13 @@
   <node concept="PlHQZ" id="2by6456KadQ">
     <property role="TrG5h" value="IWatchStuff" />
     <property role="3GE5qa" value="watches" />
+    <property role="1pbfSe" value="1772272567" />
   </node>
   <node concept="1TIwiD" id="7mVHCj34c5D">
     <property role="3GE5qa" value="watches.hiding" />
     <property role="TrG5h" value="HideById" />
     <property role="34LRSv" value="hide" />
+    <property role="1pbfSe" value="952924141" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyi" id="79iwimZ$5SM" role="1TKVEl">
       <property role="TrG5h" value="variableKind" />
@@ -95,6 +98,7 @@
     <property role="3GE5qa" value="watches.mapping" />
     <property role="TrG5h" value="MapByNameStatement" />
     <property role="34LRSv" value="map by name" />
+    <property role="1pbfSe" value="952954306" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyi" id="5TKboO2co5y" role="1TKVEl">
       <property role="TrG5h" value="variableKind" />
@@ -159,6 +163,7 @@
     <property role="3GE5qa" value="watches.type-translation" />
     <property role="TrG5h" value="ChildrenToWatchablesStatement" />
     <property role="34LRSv" value="children" />
+    <property role="1pbfSe" value="392491766" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="1JD0ifcGwJC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -180,12 +185,14 @@
     <property role="3GE5qa" value="watches.type-translation" />
     <property role="TrG5h" value="IndexExpression" />
     <property role="34LRSv" value="index" />
+    <property role="1pbfSe" value="392426299" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="1JD0ifcHd50">
     <property role="3GE5qa" value="watches.type-translation" />
     <property role="TrG5h" value="IdentifierExpression" />
     <property role="34LRSv" value="identifier" />
+    <property role="1pbfSe" value="392310173" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="AxPO7" id="79czkGCIx5H">
@@ -208,6 +215,7 @@
   <node concept="1TIwiD" id="4ln$YqgQn2a">
     <property role="3GE5qa" value="watches.values" />
     <property role="TrG5h" value="ValueMappingStatement" />
+    <property role="1pbfSe" value="701430672" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="4ln$YqgQn2v" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -226,11 +234,13 @@
     <property role="3GE5qa" value="watches.values" />
     <property role="TrG5h" value="CVariableValueExpression" />
     <property role="34LRSv" value="c-value" />
+    <property role="1pbfSe" value="549516994" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="6BOHQEQNDI7">
     <property role="3GE5qa" value="watches.values" />
     <property role="TrG5h" value="IValueMappingRule" />
+    <property role="1pbfSe" value="549671665" />
     <node concept="1TJgyj" id="4ln$YqgQn38" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
@@ -241,6 +251,7 @@
   <node concept="1TIwiD" id="4ln$YqgQn2n">
     <property role="3GE5qa" value="watches.values" />
     <property role="TrG5h" value="ValueMappingRule" />
+    <property role="1pbfSe" value="701430659" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4ln$YqgQn37" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -255,6 +266,7 @@
   <node concept="1TIwiD" id="6BOHQEQNDJ3">
     <property role="3GE5qa" value="watches.values" />
     <property role="TrG5h" value="DefaultValueMappingRule" />
+    <property role="1pbfSe" value="549671725" />
     <node concept="PrWs8" id="6BOHQEQNJsG" role="PzmwI">
       <ref role="PrY4T" node="6BOHQEQNDI7" resolve="IValueMappingRule" />
     </node>
@@ -262,6 +274,7 @@
   <node concept="1TIwiD" id="6_yU7sVVs4i">
     <property role="3GE5qa" value="watches.type-translation.mapper" />
     <property role="TrG5h" value="SingleTypeMapper" />
+    <property role="1pbfSe" value="1521440375" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6_yU7sVVs4s" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -282,6 +295,7 @@
   <node concept="1TIwiD" id="6_yU7sVVs4t">
     <property role="3GE5qa" value="watches.type-translation.mapper" />
     <property role="TrG5h" value="MultiTypeMapper" />
+    <property role="1pbfSe" value="1521440364" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6_yU7sVVs4w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -296,11 +310,13 @@
   <node concept="PlHQZ" id="6_yU7sVVuke">
     <property role="3GE5qa" value="watches.type-translation" />
     <property role="TrG5h" value="ITypeMapper" />
+    <property role="1pbfSe" value="1521431163" />
   </node>
   <node concept="1TIwiD" id="6_yU7sVVKv4">
     <property role="3GE5qa" value="watches.type-translation.mapper" />
     <property role="TrG5h" value="AddTypeStatement" />
     <property role="34LRSv" value="add mapping" />
+    <property role="1pbfSe" value="1521356741" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="6_yU7sVVKv9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -332,6 +348,7 @@
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="AddNodesFromSubtreeStatement" />
     <property role="34LRSv" value="break on nodes to step-into/over" />
+    <property role="1pbfSe" value="1543047580" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyi" id="4SaNiz0iOg" role="1TKVEl">
       <property role="TrG5h" value="steppingCommand" />
@@ -355,10 +372,12 @@
   <node concept="PlHQZ" id="4SaNiySow5">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="IDebugStrategyStatement" />
+    <property role="1pbfSe" value="1541819591" />
   </node>
   <node concept="1TIwiD" id="7kGecLJAHIi">
     <property role="TrG5h" value="BreakOnFirstSuspendableStatement" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="456715170" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="7kGecLJAHIj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -371,6 +390,7 @@
     <property role="TrG5h" value="StepOverItselfStatement" />
     <property role="34LRSv" value="break on next" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="1774927022" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="1d7Vth$thBR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -386,6 +406,7 @@
     <property role="TrG5h" value="BreakOnNodeStatement" />
     <property role="34LRSv" value="break on node" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="2039893131" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="1d7VthAj_Xw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -397,6 +418,7 @@
     <property role="TrG5h" value="BreakOnNodesStatement" />
     <property role="34LRSv" value="break on nodes" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="2040232637" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="1d7VthAkSRa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -408,6 +430,7 @@
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="BreakInOuterFrame" />
     <property role="34LRSv" value="break in outer frame" />
+    <property role="1pbfSe" value="2047223325" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="PrWs8" id="1d7VthAJzxX" role="PzmwI">
       <ref role="PrY4T" node="4SaNiySow5" resolve="IDebugStrategyStatement" />
@@ -417,6 +440,7 @@
     <property role="TrG5h" value="BreakOnNextSteppable" />
     <property role="34LRSv" value="break on next steppable" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="2067678052" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyi" id="$YquQzPpRg" role="1TKVEl">
       <property role="TrG5h" value="checkHierarchyConsistency" />
@@ -439,6 +463,7 @@
     <property role="TrG5h" value="LoadIconExpression" />
     <property role="34LRSv" value="load-icon" />
     <property role="3GE5qa" value="generic" />
+    <property role="1pbfSe" value="1378496832" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="$YquQ$Abqm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -451,6 +476,7 @@
     <property role="TrG5h" value="PropertiesFromTraceExpression" />
     <property role="34LRSv" value="trace-property" />
     <property role="3GE5qa" value="generic" />
+    <property role="1pbfSe" value="2026992823" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyi" id="1brT1dANxLZ" role="1TKVEl">
       <property role="TrG5h" value="manyCardinality" />
@@ -466,6 +492,7 @@
     <property role="TrG5h" value="ContributeFrameMappingStatement" />
     <property role="3GE5qa" value="callstack" />
     <property role="34LRSv" value="contribute frame mapping" />
+    <property role="1pbfSe" value="2061999987" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="1brT1dC7$wS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -484,6 +511,7 @@
     <property role="34LRSv" value="construct mangled name" />
     <property role="R4oN_" value="concatinates all elemetns with an underscore" />
     <property role="3GE5qa" value="generic" />
+    <property role="1pbfSe" value="864796123" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="2H$DUA8qzL9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -512,6 +540,7 @@
   <node concept="1TIwiD" id="EAFuLF3fL1">
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="DelegateWatchableContribution" />
+    <property role="1pbfSe" value="1974708781" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="EAFuLF3fNh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -523,6 +552,7 @@
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="SelectVariableOperation" />
     <property role="34LRSv" value="selectVar" />
+    <property role="1pbfSe" value="1976109900" />
     <ref role="1TJDcQ" to="tp2q:gKAMqbp" resolve="SequenceOperation" />
     <node concept="1TJgyj" id="EAFuLFd_E5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -537,6 +567,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="state" />
+    <property role="1pbfSe" value="1977333346" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6xOTwspif0f" role="1TKVEl">
       <property role="TrG5h" value="state" />
@@ -555,6 +586,7 @@
     <property role="TrG5h" value="SelectNameFilter" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1977333400" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="EAFuLFdgyK" role="PzmwI">
       <ref role="PrY4T" node="EAFuLFdgyJ" resolve="ISelectVarFilter" />
@@ -563,6 +595,7 @@
   <node concept="PlHQZ" id="EAFuLFdgyJ">
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="ISelectVarFilter" />
+    <property role="1pbfSe" value="1977333403" />
   </node>
   <node concept="AxPO7" id="6xOTwspif0a">
     <property role="3GE5qa" value="watches" />
@@ -589,6 +622,7 @@
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="SelectKindFilter" />
     <property role="34LRSv" value="kind" />
+    <property role="1pbfSe" value="2116011945" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6xOTwspr1xw" role="1TKVEl">
       <property role="TrG5h" value="kind" />
@@ -601,6 +635,7 @@
   <node concept="1TIwiD" id="3CMDERQUHEk">
     <property role="TrG5h" value="WatchableOpRequiresTransformationAnnotation" />
     <property role="3GE5qa" value="watches" />
+    <property role="1pbfSe" value="824017217" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="3CMDERQUHEn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -619,6 +654,7 @@
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="SelectSingleNameFilter" />
     <property role="34LRSv" value="name" />
+    <property role="1pbfSe" value="896445279" />
     <ref role="1TJDcQ" node="EAFuLFdgyG" resolve="SelectNameFilter" />
     <node concept="1TJgyj" id="EAFuLFdgyM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -630,6 +666,7 @@
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="SelectOneOfManyNamesFilter" />
     <property role="34LRSv" value="names" />
+    <property role="1pbfSe" value="896455216" />
     <ref role="1TJDcQ" node="EAFuLFdgyG" resolve="SelectNameFilter" />
     <node concept="1TJgyj" id="3aTeyG2Hpya" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -642,6 +679,7 @@
     <property role="3GE5qa" value="watches" />
     <property role="TrG5h" value="WatchableExpression" />
     <property role="34LRSv" value="watchable" />
+    <property role="1pbfSe" value="1294486203" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="3BC$6wjgiXr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -675,6 +713,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="watches.type-translation" />
+    <property role="1pbfSe" value="1300360317" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="3BC$6wjAnJq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -686,6 +725,7 @@
     <property role="TrG5h" value="MapTypeFromConceptExpr" />
     <property role="34LRSv" value="maptype from concept" />
     <property role="3GE5qa" value="watches.type-translation" />
+    <property role="1pbfSe" value="1310588726" />
     <ref role="1TJDcQ" node="3BC$6wjAlKl" resolve="MapTypeExpr" />
     <node concept="1TJgyj" id="h3TV0KE" role="1TKVEi">
       <property role="20kJfa" value="conceptDeclaration" />
@@ -697,6 +737,7 @@
     <property role="TrG5h" value="MapTypeFromNodeExpr" />
     <property role="34LRSv" value="maptype from node" />
     <property role="3GE5qa" value="watches.type-translation" />
+    <property role="1pbfSe" value="1310671795" />
     <ref role="1TJDcQ" node="3BC$6wjAlKl" resolve="MapTypeExpr" />
     <node concept="1TJgyj" id="3BC$6wkdFdc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -708,6 +749,7 @@
     <property role="TrG5h" value="ComplexValueExpr" />
     <property role="34LRSv" value="complex value" />
     <property role="3GE5qa" value="watches.values.complex" />
+    <property role="1pbfSe" value="1588564352" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="38XGACG$o4Y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -724,6 +766,7 @@
     <property role="TrG5h" value="LazyComplexValueExpr" />
     <property role="34LRSv" value="lazy-complex value" />
     <property role="3GE5qa" value="watches.values.complex" />
+    <property role="1pbfSe" value="1591445300" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="38XGACGBtjl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -739,11 +782,13 @@
   <node concept="PlHQZ" id="7ecc3KABRbu">
     <property role="3GE5qa" value="callstack.select-frame" />
     <property role="TrG5h" value="ISelectFrameFilter" />
+    <property role="1pbfSe" value="1708416230" />
   </node>
   <node concept="1TIwiD" id="6xcreYbtkzO">
     <property role="3GE5qa" value="callstack.select-frame" />
     <property role="TrG5h" value="SelectFrameNameFilter" />
     <property role="34LRSv" value="name" />
+    <property role="1pbfSe" value="205408797" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xcreYbtkzT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -758,6 +803,7 @@
     <property role="3GE5qa" value="callstack.select-frame" />
     <property role="TrG5h" value="SelectStackFrameOperation" />
     <property role="34LRSv" value="selectFrame" />
+    <property role="1pbfSe" value="204884903" />
     <ref role="1TJDcQ" to="tp2q:gKAMqbp" resolve="SequenceOperation" />
     <node concept="1TJgyj" id="6xcreYbvktF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -770,60 +816,70 @@
     <property role="3GE5qa" value="callstack.stack-frame" />
     <property role="TrG5h" value="StackFrameExpr" />
     <property role="34LRSv" value="frame" />
+    <property role="1pbfSe" value="203959325" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="6xcreYb_pWO">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="UnitNameMemberExpr" />
     <property role="34LRSv" value="unit-name" />
+    <property role="1pbfSe" value="203289565" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxbm">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="34LRSv" value="arguments" />
     <property role="TrG5h" value="ArgumentsMemberExpr" />
+    <property role="1pbfSe" value="200638523" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxbp">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="LocalVariablesMemberExpr" />
     <property role="34LRSv" value="local-variables" />
+    <property role="1pbfSe" value="200638520" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxbs">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="IndexMemberExpr" />
     <property role="34LRSv" value="index" />
+    <property role="1pbfSe" value="200638517" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxby">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="FileNameMemberExpr" />
     <property role="34LRSv" value="file-name" />
+    <property role="1pbfSe" value="200638511" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxb_">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="RoutineNameMemberExpr" />
     <property role="34LRSv" value="routine-name" />
+    <property role="1pbfSe" value="200638508" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxbC">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="CurrentNodeMemberExpr" />
     <property role="34LRSv" value="current-node" />
+    <property role="1pbfSe" value="200638505" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbJxbF">
     <property role="3GE5qa" value="callstack.stack-frame.member" />
     <property role="TrG5h" value="LineNumberMemberExpr" />
     <property role="34LRSv" value="line-number" />
+    <property role="1pbfSe" value="200638502" />
     <ref role="1TJDcQ" node="6w4ttwTgQLi" resolve="StackFrameMemberExpr" />
   </node>
   <node concept="1TIwiD" id="6xcreYbKLqx">
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="LineNumberFrameMapping" />
     <property role="34LRSv" value="line-number" />
+    <property role="1pbfSe" value="200309872" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbKLrK" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -832,6 +888,7 @@
   <node concept="PlHQZ" id="6xcreYbKLrx">
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="IFrameMappingElement" />
+    <property role="1pbfSe" value="200309808" />
     <node concept="1TJgyj" id="6xcreYbKZZR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="element" />
@@ -842,6 +899,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="UnitNameFrameMapping" />
     <property role="34LRSv" value="unit-name" />
+    <property role="1pbfSe" value="199326974" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOxp7" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -851,6 +909,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="StackFrameContributorFrameMapping" />
     <property role="34LRSv" value="stackframecontributor" />
+    <property role="1pbfSe" value="199326910" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOxpk" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -860,6 +919,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="ArgumentsFrameMapping" />
     <property role="34LRSv" value="arguments" />
+    <property role="1pbfSe" value="199326897" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOxpx" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -869,6 +929,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="LocalVariablesFrameMapping" />
     <property role="34LRSv" value="local-variables" />
+    <property role="1pbfSe" value="199325837" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOxE5" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -878,6 +939,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="IndexFrameMapping" />
     <property role="34LRSv" value="index" />
+    <property role="1pbfSe" value="199325814" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOxEI" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -887,6 +949,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="CurrentNodeFrameMapping" />
     <property role="34LRSv" value="current-node" />
+    <property role="1pbfSe" value="199279756" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOGU6" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -896,6 +959,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="RoutineNameFrameMapping" />
     <property role="34LRSv" value="routine-name" />
+    <property role="1pbfSe" value="199279743" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOGUj" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -905,6 +969,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="FileNameMappingElement" />
     <property role="34LRSv" value="file-name" />
+    <property role="1pbfSe" value="199279730" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbOGUw" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -914,6 +979,7 @@
     <property role="3GE5qa" value="callstack.mappings" />
     <property role="TrG5h" value="EmptyFrameMapping" />
     <property role="34LRSv" value=" " />
+    <property role="1pbfSe" value="197525747" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xcreYbVp9i" role="PzmwI">
       <ref role="PrY4T" node="6xcreYbKLrx" resolve="IFrameMappingElement" />
@@ -924,12 +990,14 @@
     <property role="TrG5h" value="StackFrameMemberExpr" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1589124566" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="6w4ttwTNPT0">
     <property role="3GE5qa" value="callstack.select-frame" />
     <property role="TrG5h" value="SelectFrameStateFilter" />
     <property role="34LRSv" value="state" />
+    <property role="1pbfSe" value="1579953128" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6w4ttwTNR$I" role="1TKVEl">
       <property role="TrG5h" value="state" />
@@ -959,6 +1027,7 @@
   <node concept="1TIwiD" id="4kIkO5ycfyp">
     <property role="TrG5h" value="InjectDebuggingInformationDebugger" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1486926886" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4kIkO5ycf_Y" role="1TKVEl">
       <property role="TrG5h" value="active" />
@@ -969,6 +1038,7 @@
     <property role="3GE5qa" value="watches.mapping" />
     <property role="TrG5h" value="VariableKindExpression" />
     <property role="34LRSv" value="variable kind" />
+    <property role="1pbfSe" value="1278017553" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7ekR8t0fydD" role="1TKVEl">
       <property role="TrG5h" value="variableKind" />
@@ -979,6 +1049,7 @@
     <property role="3GE5qa" value="watches.type-translation" />
     <property role="TrG5h" value="ParseNumberExpression" />
     <property role="34LRSv" value="parse-number" />
+    <property role="1pbfSe" value="293402104" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="5nt$m6oDuJS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -996,6 +1067,7 @@
     <property role="TrG5h" value="FirstExecutableOperation" />
     <property role="34LRSv" value="firstExecutable" />
     <property role="R4oN_" value="returns the first executable ISteppable, that is not optimized." />
+    <property role="1pbfSe" value="768556930" />
     <ref role="1TJDcQ" to="tp2q:gKAMqbp" resolve="SequenceOperation" />
   </node>
 </model>

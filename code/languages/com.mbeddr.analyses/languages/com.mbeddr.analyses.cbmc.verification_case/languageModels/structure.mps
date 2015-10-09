@@ -2,7 +2,7 @@
 <model ref="r:0e12ef42-60cb-4fd0-a25c-973475a4894e(com.mbeddr.analyses.cbmc.verification_case.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,6 +18,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -53,6 +54,7 @@
     <property role="3GE5qa" value="verification_case" />
     <property role="34LRSv" value="verification case" />
     <property role="R4oN_" value="container for harness and properties to check" />
+    <property role="1pbfSe" value="962881357" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
     <node concept="1TJgyi" id="2L0t9wIXGQy" role="1TKVEl">
       <property role="TrG5h" value="showFunctionsStubs" />
@@ -89,6 +91,7 @@
     <property role="3GE5qa" value="verification_case" />
     <property role="TrG5h" value="DataEnvironment" />
     <property role="34LRSv" value="data_environment" />
+    <property role="1pbfSe" value="1530792409" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     <node concept="1TJgyj" id="2L0t9wJ0hAO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -110,6 +113,7 @@
     <property role="3GE5qa" value="verification_case" />
     <property role="TrG5h" value="FunctionEnvironment" />
     <property role="34LRSv" value="function_environment" />
+    <property role="1pbfSe" value="1536648260" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="2L0t9wJlIYH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -127,11 +131,13 @@
   <node concept="PlHQZ" id="7Kh7qAAalBf">
     <property role="3GE5qa" value="verification_case" />
     <property role="TrG5h" value="ISUVRef" />
+    <property role="1pbfSe" value="574257016" />
   </node>
   <node concept="1TIwiD" id="7Kh7qAAalBv">
     <property role="3GE5qa" value="verification_case" />
     <property role="TrG5h" value="FunctionsSUV" />
     <property role="34LRSv" value="functions" />
+    <property role="1pbfSe" value="574257032" />
     <node concept="1TJgyj" id="HiHa_$mPN4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="funRefs" />
@@ -146,6 +152,7 @@
     <property role="3GE5qa" value="verification_case" />
     <property role="TrG5h" value="InitialState" />
     <property role="34LRSv" value="initial_state" />
+    <property role="1pbfSe" value="1872716023" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="HiHa_$jbln" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -161,6 +168,7 @@
     <property role="3GE5qa" value="verification_case" />
     <property role="TrG5h" value="VerificationRun" />
     <property role="34LRSv" value="verification_step" />
+    <property role="1pbfSe" value="1873549386" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="HiHa_$mmeI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -181,6 +189,7 @@
     <property role="3GE5qa" value="verification_case" />
     <property role="34LRSv" value="change_frequency" />
     <property role="TrG5h" value="ChangeFrequency" />
+    <property role="1pbfSe" value="1639444209" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="XYEPTiep_x" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

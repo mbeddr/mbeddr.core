@@ -2,7 +2,7 @@
 <model ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:c45fab0b-1678-4fc1-9187-107d1188f675(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -21,6 +21,7 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -43,6 +44,7 @@
   <node concept="1TIwiD" id="7SskZNdv5_D">
     <property role="TrG5h" value="EcoreSpecification" />
     <property role="3GE5qa" value="meta" />
+    <property role="1pbfSe" value="1268297061" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="7SskZNdv5_E" role="1TKVEl">
       <property role="TrG5h" value="packagename" />
@@ -68,6 +70,7 @@
   </node>
   <node concept="1TIwiD" id="re4HSgppue">
     <property role="TrG5h" value="EmfSpecification" />
+    <property role="1pbfSe" value="389261932" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="re4HSgppQM" role="1TKVEl">
       <property role="TrG5h" value="path" />
@@ -90,6 +93,7 @@
   <node concept="1TIwiD" id="1ECTgSR9gel">
     <property role="TrG5h" value="MC" />
     <property role="3GE5qa" value="meta" />
+    <property role="1pbfSe" value="1372448931" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

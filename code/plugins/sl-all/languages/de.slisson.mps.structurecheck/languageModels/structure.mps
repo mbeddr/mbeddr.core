@@ -2,7 +2,7 @@
 <model ref="r:d4a954d0-fb17-418d-bfe1-8fc917bd27a1(de.slisson.mps.structurecheck.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,6 +21,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
   <node concept="1TIwiD" id="l6SLw3lTkI">
     <property role="TrG5h" value="CheckStructureStatement" />
     <property role="34LRSv" value="check structure" />
+    <property role="1pbfSe" value="144603206" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="l6SLw3lTJY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -70,10 +72,12 @@
   </node>
   <node concept="PlHQZ" id="l6SLw3lTN$">
     <property role="TrG5h" value="IChecker" />
+    <property role="1pbfSe" value="144605180" />
   </node>
   <node concept="1TIwiD" id="l6SLw3lTQe">
     <property role="TrG5h" value="PropertyChecker" />
     <property role="34LRSv" value="property" />
+    <property role="1pbfSe" value="144605350" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="l6SLw3lTQL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -94,6 +98,7 @@
   <node concept="1TIwiD" id="l6SLw3lTU7">
     <property role="TrG5h" value="ConditionChecker" />
     <property role="34LRSv" value="condition" />
+    <property role="1pbfSe" value="144605599" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="l6SLw3lTUb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -108,6 +113,7 @@
   <node concept="1TIwiD" id="l6SLw3lTXk">
     <property role="TrG5h" value="SequenceChecker" />
     <property role="34LRSv" value="sequence" />
+    <property role="1pbfSe" value="144605804" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="l6SLw3lU0m" role="1TKVEl">
       <property role="TrG5h" value="ordered" />
@@ -155,10 +161,12 @@
   </node>
   <node concept="PlHQZ" id="l6SLw3lUE7">
     <property role="TrG5h" value="IElement" />
+    <property role="1pbfSe" value="144608671" />
   </node>
   <node concept="1TIwiD" id="l6SLw3m1u9">
     <property role="TrG5h" value="Element" />
     <property role="34LRSv" value="element" />
+    <property role="1pbfSe" value="144636577" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="l6SLw3m22j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -189,13 +197,16 @@
   <node concept="1TIwiD" id="l6SLw3nxk$">
     <property role="TrG5h" value="ThisElementExpression" />
     <property role="34LRSv" value="thisElement" />
+    <property role="1pbfSe" value="145029180" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="l6SLw3nxnb">
     <property role="TrG5h" value="IThisElementScope" />
+    <property role="1pbfSe" value="145029347" />
   </node>
   <node concept="1TIwiD" id="l6SLw3paDi">
     <property role="TrG5h" value="CompositeChecker" />
+    <property role="1pbfSe" value="145460586" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="l6SLw3paDU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

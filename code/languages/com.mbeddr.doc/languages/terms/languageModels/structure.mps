@@ -2,7 +2,7 @@
 <model ref="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -23,6 +23,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -55,6 +56,7 @@
   <node concept="1TIwiD" id="7rXn3flJtYw">
     <property role="TrG5h" value="TermRefWord" />
     <property role="34LRSv" value="[" />
+    <property role="1pbfSe" value="1287338963" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7rXn3flJtYx" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -73,6 +75,7 @@
   <node concept="1TIwiD" id="7rXn3flJFxh">
     <property role="TrG5h" value="TermDefParagraph" />
     <property role="34LRSv" value="term" />
+    <property role="1pbfSe" value="1287394436" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="7rXn3flJFxk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -91,10 +94,12 @@
   <node concept="1TIwiD" id="14uWAurimdc">
     <property role="TrG5h" value="TermRelationshipText" />
     <property role="34LRSv" value="-&gt;" />
+    <property role="1pbfSe" value="1402448461" />
     <ref role="1TJDcQ" to="2c95:5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="3EwB7OlCGlH">
     <property role="TrG5h" value="GlossaryPointer" />
+    <property role="1pbfSe" value="1346593258" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="3EwB7OlCGlI" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -113,6 +118,7 @@
     <property role="TrG5h" value="TermsConfigItem" />
     <property role="34LRSv" value="terms" />
     <property role="R4oN_" value="use the glossary and term definitions" />
+    <property role="1pbfSe" value="1645720749" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2fGuOSYaN_w" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />

@@ -2,7 +2,7 @@
 <model ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +26,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -55,6 +56,7 @@
   <node concept="1TIwiD" id="DYlgnAyXkO">
     <property role="TrG5h" value="AssertNodeEquals" />
     <property role="34LRSv" value="assert node equals" />
+    <property role="1pbfSe" value="250992071" />
     <ref role="1TJDcQ" to="tpe3:7jPoEeD$ZOX" resolve="BinaryAssert" />
     <node concept="1TJgyj" id="2lpUxXMduaL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -65,6 +67,7 @@
   <node concept="1TIwiD" id="3C6_kMLO68Y">
     <property role="TrG5h" value="AssertHasElements" />
     <property role="34LRSv" value="assert has n elements" />
+    <property role="1pbfSe" value="338233462" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="3C6_kMLP2FL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -81,6 +84,7 @@
     <property role="TrG5h" value="IgnorePropertiesAnnotation" />
     <property role="34LRSv" value="ignore" />
     <property role="R4oN_" value="ignore a property for tests" />
+    <property role="1pbfSe" value="1991490652" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="5uUCR4L$O2l" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -108,6 +112,7 @@
   </node>
   <node concept="1TIwiD" id="5uUCR4L$O4d">
     <property role="TrG5h" value="PropertyOrReferenceReference" />
+    <property role="1pbfSe" value="1991383938" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5uUCR4L$O4e" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -118,6 +123,7 @@
   </node>
   <node concept="PlHQZ" id="_QVyJyxpbR">
     <property role="TrG5h" value="IgnoredPropertiesProvider" />
+    <property role="1pbfSe" value="335773406" />
     <node concept="1TJgyj" id="3C6_kMLMVd3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredProperties" />
@@ -128,6 +134,7 @@
     <property role="TrG5h" value="AreEqualExpression" />
     <property role="34LRSv" value="areEqual" />
     <property role="R4oN_" value="compares two nodes" />
+    <property role="1pbfSe" value="1942553586" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="1TJgyj" id="1_DWnhqnLaj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

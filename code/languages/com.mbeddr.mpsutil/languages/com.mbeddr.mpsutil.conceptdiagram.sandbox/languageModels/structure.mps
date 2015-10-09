@@ -2,9 +2,9 @@
 <model ref="r:90fb00a7-f318-4957-80af-5ff5b4d8f74b(com.mbeddr.mpsutil.conceptdiagram.sandbox.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="9d1cb9f8-2ae0-4895-91c8-ff32e8afc27d" name="com.mbeddr.mpsutil.conceptdiagram" version="-1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,6 +21,7 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -92,6 +93,7 @@
   </registry>
   <node concept="1TIwiD" id="6vp$_2v0IPY">
     <property role="TrG5h" value="MyConcept" />
+    <property role="1pbfSe" value="115113934" />
     <ref role="1TJDcQ" node="6vp$_2v0IQ6" resolve="Super" />
     <node concept="PrWs8" id="6vp$_2v0IPZ" role="PzmwI">
       <ref role="PrY4T" node="6vp$_2v0IQ3" resolve="MyIface" />
@@ -113,6 +115,7 @@
   </node>
   <node concept="PlHQZ" id="6vp$_2v0IQ3">
     <property role="TrG5h" value="MyIface" />
+    <property role="1pbfSe" value="115113939" />
     <node concept="PrWs8" id="6vp$_2v0IQ4" role="PrDN$">
       <ref role="PrY4T" node="6vp$_2v0IQ9" resolve="SuperIface1" />
     </node>
@@ -128,6 +131,7 @@
   </node>
   <node concept="1TIwiD" id="6vp$_2v0IQ6">
     <property role="TrG5h" value="Super" />
+    <property role="1pbfSe" value="115113942" />
     <node concept="1TJgyi" id="6vp$_2viiwk" role="1TKVEl">
       <property role="TrG5h" value="count" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -143,6 +147,7 @@
   </node>
   <node concept="PlHQZ" id="6vp$_2v0IQ9">
     <property role="TrG5h" value="SuperIface1" />
+    <property role="1pbfSe" value="115113945" />
     <node concept="1TJgyi" id="6vp$_2viirs" role="1TKVEl">
       <property role="TrG5h" value="propertyName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -150,6 +155,7 @@
   </node>
   <node concept="PlHQZ" id="6vp$_2v0IQa">
     <property role="TrG5h" value="SuperIface2" />
+    <property role="1pbfSe" value="115113946" />
   </node>
   <node concept="3X0abY" id="6vp$_2v0IQb">
     <property role="TrG5h" value="Test Diagram" />
@@ -1327,6 +1333,7 @@
   </node>
   <node concept="PlHQZ" id="6vp$_2v0IS$">
     <property role="TrG5h" value="TestIface" />
+    <property role="1pbfSe" value="115114100" />
     <node concept="1TJgyj" id="6vp$_2vCrhS" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <ref role="20lvS9" node="6vp$_2v0IQ6" resolve="Super" />

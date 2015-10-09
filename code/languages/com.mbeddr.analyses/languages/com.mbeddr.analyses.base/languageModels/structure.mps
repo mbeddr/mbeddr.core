@@ -2,7 +2,7 @@
 <model ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -14,6 +14,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -43,6 +44,7 @@
   </registry>
   <node concept="1TIwiD" id="4jq$txdSYPw">
     <property role="TrG5h" value="ExpressionsPair" />
+    <property role="1pbfSe" value="1833009352" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4jq$txdSYPx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -61,6 +63,7 @@
     <property role="TrG5h" value="AnalysisConfiguration" />
     <property role="3GE5qa" value="configuration.base" />
     <property role="MwhBj" value="${module}/icons/analysisconfig.png" />
+    <property role="1pbfSe" value="65568465" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="v5nKjVRoOX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -82,10 +85,12 @@
     <property role="TrG5h" value="Analysis" />
     <property role="3GE5qa" value="configuration.base" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="65456591" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1XFitunPKbT">
     <property role="TrG5h" value="NodesPair" />
+    <property role="1pbfSe" value="1220391728" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1XFitunPKbU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -104,10 +109,12 @@
     <property role="19KtqR" value="true" />
     <property role="TrG5h" value="ModelUsedForAnalysesTestsMarker" />
     <property role="34LRSv" value="analyses test-data marker" />
+    <property role="1pbfSe" value="1444690073" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2lA5DP6lomC">
     <property role="TrG5h" value="NodesCollection" />
+    <property role="1pbfSe" value="1807457349" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2lA5DP6losI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -118,6 +125,7 @@
   </node>
   <node concept="1TIwiD" id="2lA5DP6loqf">
     <property role="TrG5h" value="NodeRef" />
+    <property role="1pbfSe" value="1807457580" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2lA5DP6losD" role="1TKVEi">
       <property role="20lmBu" value="reference" />

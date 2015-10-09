@@ -2,7 +2,7 @@
 <model ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -17,6 +17,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
     <property role="TrG5h" value="SizeOfExpr" />
     <property role="34LRSv" value="sizeof[" />
     <property role="R4oN_" value="get the size of a type" />
+    <property role="1pbfSe" value="414843028" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="fwMInzpji9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -64,6 +66,7 @@
     <property role="3GE5qa" value="pointers" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="pointer type" />
+    <property role="1pbfSe" value="414736107" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="3TE6JCmbIko" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7FQByU3C_31" resolve="IComparable" />
@@ -89,6 +92,7 @@
     <property role="3GE5qa" value="pointers" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="dereference" />
+    <property role="1pbfSe" value="414732916" />
     <ref role="1TJDcQ" node="1o_zCoCBfqY" resolve="PointerExpr" />
   </node>
   <node concept="1TIwiD" id="1o_zCoCBfqX">
@@ -96,6 +100,7 @@
     <property role="3GE5qa" value="pointers" />
     <property role="34LRSv" value="&amp;" />
     <property role="R4oN_" value="get address" />
+    <property role="1pbfSe" value="1052935491" />
     <ref role="1TJDcQ" node="1o_zCoCBfqY" resolve="PointerExpr" />
   </node>
   <node concept="1TIwiD" id="1o_zCoCBfqY">
@@ -103,12 +108,14 @@
     <property role="3GE5qa" value="pointers" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1052935492" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="4VhroexOKM1">
     <property role="TrG5h" value="ArrayType" />
     <property role="3GE5qa" value="arrays" />
     <property role="R4oN_" value="array type" />
+    <property role="1pbfSe" value="257656316" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="1gDNXlE1$cN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -139,6 +146,7 @@
     <property role="TrG5h" value="ArrayAccessExpr" />
     <property role="3GE5qa" value="arrays" />
     <property role="R4oN_" value="array access" />
+    <property role="1pbfSe" value="1321298971" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="5sJgLFR$y$3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -161,12 +169,14 @@
     <property role="TrG5h" value="NullExpression" />
     <property role="34LRSv" value="null" />
     <property role="R4oN_" value="the null pointer" />
+    <property role="1pbfSe" value="1389284455" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
   </node>
   <node concept="1TIwiD" id="$mHaGow4hS">
     <property role="3GE5qa" value="pointers" />
     <property role="TrG5h" value="NullType" />
     <property role="R4oN_" value="type for the null pointer" />
+    <property role="1pbfSe" value="563542307" />
     <ref role="1TJDcQ" node="fwMInzpHoK" resolve="PointerType" />
     <node concept="PrWs8" id="7JMgLzaZB8j" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -176,6 +186,7 @@
     <property role="TrG5h" value="SizeOfExprForExpressions" />
     <property role="R4oN_" value="get the size of an expression" />
     <property role="34LRSv" value="sizeof(" />
+    <property role="1pbfSe" value="1001774420" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="5jmmCdx$f5R">
@@ -183,6 +194,7 @@
     <property role="3GE5qa" value="literals" />
     <property role="R4oN_" value="string literal" />
     <property role="34LRSv" value="&quot;" />
+    <property role="1pbfSe" value="1234744326" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
     <node concept="PrWs8" id="5MaVmNI4zkR" role="PzmwI">
       <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
@@ -200,6 +212,7 @@
     <property role="3GE5qa" value="types" />
     <property role="R4oN_" value="a shortcut for char*" />
     <property role="34LRSv" value="string" />
+    <property role="1pbfSe" value="1232808569" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="5jmmCdxFBG5" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
@@ -210,6 +223,7 @@
     <property role="3GE5qa" value="types" />
     <property role="R4oN_" value="a shortcut for char[]" />
     <property role="34LRSv" value="string&lt;" />
+    <property role="1pbfSe" value="1534001032" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="4VxFbWczlbe" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -224,10 +238,12 @@
   <node concept="PlHQZ" id="2Qo$Q2I7Rcd">
     <property role="TrG5h" value="ISelfTypingInArrayAccessExpression" />
     <property role="3GE5qa" value="ClassesSupport" />
+    <property role="1pbfSe" value="608696723" />
   </node>
   <node concept="PlHQZ" id="6bzSKoI1uCr">
     <property role="3GE5qa" value="literals" />
     <property role="TrG5h" value="IStringLiteralLike" />
+    <property role="1pbfSe" value="1863725791" />
   </node>
 </model>
 

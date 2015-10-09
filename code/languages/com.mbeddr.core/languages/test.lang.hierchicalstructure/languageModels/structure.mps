@@ -2,7 +2,7 @@
 <model ref="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
     <property role="TrG5h" value="TestHierarchicalStructureRoot" />
     <property role="34LRSv" value="root" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1595054433" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1pmorAa_L9a" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -59,15 +61,18 @@
     <property role="TrG5h" value="TestHierarchicalStructureWithIcon" />
     <property role="34LRSv" value="with icon" />
     <property role="MwhBj" value="${module}/icons/externalmodule.png" />
+    <property role="1pbfSe" value="1595054341" />
     <ref role="1TJDcQ" node="1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
   </node>
   <node concept="1TIwiD" id="1pmorAa_L6k">
     <property role="TrG5h" value="TestHierarchicalStructureWithoutIcon" />
     <property role="34LRSv" value="without icon" />
+    <property role="1pbfSe" value="1595051187" />
     <ref role="1TJDcQ" node="1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
   </node>
   <node concept="1TIwiD" id="1pmorAa_L6X">
     <property role="TrG5h" value="TestHierarchicalStructureHidden" />
+    <property role="1pbfSe" value="1595051146" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1pmorAa_LbJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -86,6 +91,7 @@
     <property role="TrG5h" value="TestHierarchicalStructureRootWithoutIcons" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="root without icons" />
+    <property role="1pbfSe" value="1595026762" />
     <ref role="1TJDcQ" node="1pmorAa_KjA" resolve="TestHierarchicalStructureRoot" />
   </node>
 </model>

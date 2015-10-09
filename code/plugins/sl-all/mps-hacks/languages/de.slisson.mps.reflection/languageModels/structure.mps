@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -37,6 +38,7 @@
   </registry>
   <node concept="1TIwiD" id="7moa1g0LEhk">
     <property role="TrG5h" value="ReflectionFieldAccess" />
+    <property role="1pbfSe" value="1985924200" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="hqOxapj" role="1TKVEi">
       <property role="20kJfa" value="fieldDeclaration" />
@@ -49,6 +51,7 @@
   </node>
   <node concept="1TIwiD" id="7moa1g0TXNe">
     <property role="TrG5h" value="ReflectionMethodCall" />
+    <property role="1pbfSe" value="1988101346" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="hwllgre" role="1TKVEi">
       <property role="20kJfa" value="instanceMethodDeclaration" />
@@ -65,6 +68,7 @@
   </node>
   <node concept="1TIwiD" id="7oXGHkvAuQL">
     <property role="TrG5h" value="ReflectionStaticMethodCall" />
+    <property role="1pbfSe" value="1781030778" />
     <ref role="1TJDcQ" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
     <node concept="1TJgyj" id="gDPybl6" role="1TKVEi">
       <property role="20kJfa" value="classConcept" />
@@ -80,6 +84,7 @@
   </node>
   <node concept="1TIwiD" id="7oXGHkvDI9E">
     <property role="TrG5h" value="ReflectionStaticFieldReference" />
+    <property role="1pbfSe" value="1780181697" />
     <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
     <node concept="1TJgyj" id="gDPxDYr" role="1TKVEi">
       <property role="20kJfa" value="classifier" />

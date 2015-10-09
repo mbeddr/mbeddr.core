@@ -2,13 +2,13 @@
 <model ref="r:5eb7ec10-0d6c-42c0-9b79-129d7d125c7b(test.analyses.var.testcode.var_c)">
   <persistence version="9" />
   <languages>
-    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
   <imports />
@@ -1057,6 +1057,117 @@
       <ref role="2dvl_Q" node="44j14BH1ANL" resolve="FM1" />
     </node>
   </node>
+  <node concept="N3F5e" id="Ryij7AnIbE">
+    <property role="TrG5h" value="FM2_02" />
+    <node concept="N3Fnx" id="Ryij7AnJe6" role="N3F5h">
+      <property role="TrG5h" value="fun3" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="Ryij7AnJe8" role="3XIRFX">
+        <node concept="3XISUE" id="Ryij7AnJe9" role="3XIRFZ" />
+      </node>
+      <node concept="19Rifw" id="Ryij7AnIZf" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="30EbCg" id="Ryij7AnJrk" role="lGtFl" />
+    </node>
+    <node concept="2NXPZ9" id="Ryij7AnIMJ" role="N3F5h">
+      <property role="TrG5h" value="empty_1443994027125_10" />
+    </node>
+    <node concept="N3Fnx" id="Ryij7AnIbF" role="N3F5h">
+      <property role="TrG5h" value="fun3_" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="Ryij7AnIbG" role="3XIRFX">
+        <node concept="1QiMYF" id="Ryij7AnIbH" role="3XIRFZ">
+          <node concept="OjmMv" id="Ryij7AnIbI" role="3SJzmv">
+            <node concept="19SGf9" id="Ryij7AnIbJ" role="OjmMu">
+              <node concept="19SUe$" id="Ryij7AnIbK" role="19SJt6">
+                <property role="19SUeA" value="the feature model requires first2 and second2 to be together - thereby, the code below is NOT OK" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="Ryij7AnIbL" role="3XIRFZ" />
+        <node concept="1QiMYF" id="Ryij7AnIbM" role="3XIRFZ">
+          <node concept="OjmMv" id="Ryij7AnIbN" role="3SJzmv">
+            <node concept="19SGf9" id="Ryij7AnIbO" role="OjmMu">
+              <node concept="19SUe$" id="Ryij7AnIbP" role="19SJt6">
+                <property role="19SUeA" value="presence condition: first2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="Ryij7AnIbQ" role="3XIRFZ">
+          <property role="TrG5h" value="aVar" />
+          <node concept="3TlMh9" id="Ryij7AnIbR" role="3XIe9u">
+            <property role="2hmy$m" value="0" />
+          </node>
+          <node concept="26Vqqz" id="Ryij7AnIbS" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2dvt44" id="Ryij7AnIbT" role="lGtFl">
+            <node concept="3o9_tv" id="Ryij7AnIbU" role="2dvt70">
+              <node concept="2qVrgw" id="Ryij7AnIbV" role="3o9_ts">
+                <ref role="2qVrgz" node="44j14BH88Qc" resolve="first2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="Ryij7AnIbW" role="3XIRFZ" />
+        <node concept="3XISUE" id="Ryij7AnIbX" role="3XIRFZ" />
+        <node concept="1QiMYF" id="Ryij7AnIbY" role="3XIRFZ">
+          <node concept="OjmMv" id="Ryij7AnIbZ" role="3SJzmv">
+            <node concept="19SGf9" id="Ryij7AnIc0" role="OjmMu">
+              <node concept="19SUe$" id="Ryij7AnIc1" role="19SJt6">
+                <property role="19SUeA" value="presence condition: !second2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="Ryij7AnIc2" role="3XIRFZ">
+          <node concept="2BOciq" id="Ryij7AnIc3" role="1_9egR">
+            <node concept="3TlMh9" id="Ryij7AnIc4" role="3TlMhJ">
+              <property role="2hmy$m" value="3" />
+            </node>
+            <node concept="3ZVu4v" id="Ryij7AnIc5" role="3TlMhI">
+              <ref role="3ZVs_2" node="Ryij7AnIbQ" resolve="aVar" />
+            </node>
+          </node>
+          <node concept="2dvt44" id="Ryij7AnIc6" role="lGtFl">
+            <node concept="3o9_tv" id="Ryij7AnIc7" role="2dvt70">
+              <node concept="19$8ne" id="Ryij7AnJrO" role="3o9_ts">
+                <node concept="2qVrgw" id="Ryij7AnIc8" role="1_9fRO">
+                  <ref role="2qVrgz" node="44j14BH88Qd" resolve="second2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="Ryij7AnIc9" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="37e6TO" id="Ryij7AnJr3" role="lGtFl">
+        <ref role="37e6UO" node="Ryij7AnJe6" resolve="fun3" />
+        <node concept="3o9_tv" id="Ryij7AnJr4" role="37e6UM">
+          <node concept="2qVrgw" id="Ryij7AnJrA" role="3o9_ts">
+            <ref role="2qVrgz" node="44j14BH88Qc" resolve="first2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="Ryij7AnIca" role="N3F5h">
+      <property role="TrG5h" value="empty_1399217203819_1" />
+    </node>
+    <node concept="3GEVxB" id="Ryij7AnIcb" role="2OODSX">
+      <ref role="3GEb4d" node="5aNdPeN2d6f" resolve="VarDef" />
+    </node>
+    <node concept="2dvl_R" id="Ryij7AnIcc" role="lGtFl">
+      <ref role="2dvl_Q" node="44j14BH88Q9" resolve="FM2" />
+    </node>
+  </node>
   <node concept="N3F5e" id="Ryij7AlBSU">
     <property role="TrG5h" value="FM1_08" />
     <node concept="2B_Gvg" id="Ryij7AlDuc" role="N3F5h">
@@ -1182,117 +1293,6 @@
     </node>
     <node concept="2dvl_R" id="Ryij7AlBTl" role="lGtFl">
       <ref role="2dvl_Q" node="44j14BH1ANL" resolve="FM1" />
-    </node>
-  </node>
-  <node concept="N3F5e" id="Ryij7AnIbE">
-    <property role="TrG5h" value="FM2_02" />
-    <node concept="N3Fnx" id="Ryij7AnJe6" role="N3F5h">
-      <property role="TrG5h" value="fun3" />
-      <property role="2OOxQR" value="false" />
-      <node concept="3XIRFW" id="Ryij7AnJe8" role="3XIRFX">
-        <node concept="3XISUE" id="Ryij7AnJe9" role="3XIRFZ" />
-      </node>
-      <node concept="19Rifw" id="Ryij7AnIZf" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="30EbCg" id="Ryij7AnJrk" role="lGtFl" />
-    </node>
-    <node concept="2NXPZ9" id="Ryij7AnIMJ" role="N3F5h">
-      <property role="TrG5h" value="empty_1443994027125_10" />
-    </node>
-    <node concept="N3Fnx" id="Ryij7AnIbF" role="N3F5h">
-      <property role="TrG5h" value="fun3_" />
-      <property role="2OOxQR" value="false" />
-      <node concept="3XIRFW" id="Ryij7AnIbG" role="3XIRFX">
-        <node concept="1QiMYF" id="Ryij7AnIbH" role="3XIRFZ">
-          <node concept="OjmMv" id="Ryij7AnIbI" role="3SJzmv">
-            <node concept="19SGf9" id="Ryij7AnIbJ" role="OjmMu">
-              <node concept="19SUe$" id="Ryij7AnIbK" role="19SJt6">
-                <property role="19SUeA" value="the feature model requires first2 and second2 to be together - thereby, the code below is NOT OK" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="Ryij7AnIbL" role="3XIRFZ" />
-        <node concept="1QiMYF" id="Ryij7AnIbM" role="3XIRFZ">
-          <node concept="OjmMv" id="Ryij7AnIbN" role="3SJzmv">
-            <node concept="19SGf9" id="Ryij7AnIbO" role="OjmMu">
-              <node concept="19SUe$" id="Ryij7AnIbP" role="19SJt6">
-                <property role="19SUeA" value="presence condition: first2" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="Ryij7AnIbQ" role="3XIRFZ">
-          <property role="TrG5h" value="aVar" />
-          <node concept="3TlMh9" id="Ryij7AnIbR" role="3XIe9u">
-            <property role="2hmy$m" value="0" />
-          </node>
-          <node concept="26Vqqz" id="Ryij7AnIbS" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="2dvt44" id="Ryij7AnIbT" role="lGtFl">
-            <node concept="3o9_tv" id="Ryij7AnIbU" role="2dvt70">
-              <node concept="2qVrgw" id="Ryij7AnIbV" role="3o9_ts">
-                <ref role="2qVrgz" node="44j14BH88Qc" resolve="first2" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="Ryij7AnIbW" role="3XIRFZ" />
-        <node concept="3XISUE" id="Ryij7AnIbX" role="3XIRFZ" />
-        <node concept="1QiMYF" id="Ryij7AnIbY" role="3XIRFZ">
-          <node concept="OjmMv" id="Ryij7AnIbZ" role="3SJzmv">
-            <node concept="19SGf9" id="Ryij7AnIc0" role="OjmMu">
-              <node concept="19SUe$" id="Ryij7AnIc1" role="19SJt6">
-                <property role="19SUeA" value="presence condition: !second2" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_9egQ" id="Ryij7AnIc2" role="3XIRFZ">
-          <node concept="2BOciq" id="Ryij7AnIc3" role="1_9egR">
-            <node concept="3TlMh9" id="Ryij7AnIc4" role="3TlMhJ">
-              <property role="2hmy$m" value="3" />
-            </node>
-            <node concept="3ZVu4v" id="Ryij7AnIc5" role="3TlMhI">
-              <ref role="3ZVs_2" node="Ryij7AnIbQ" resolve="aVar" />
-            </node>
-          </node>
-          <node concept="2dvt44" id="Ryij7AnIc6" role="lGtFl">
-            <node concept="3o9_tv" id="Ryij7AnIc7" role="2dvt70">
-              <node concept="19$8ne" id="Ryij7AnJrO" role="3o9_ts">
-                <node concept="2qVrgw" id="Ryij7AnIc8" role="1_9fRO">
-                  <ref role="2qVrgz" node="44j14BH88Qd" resolve="second2" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="19Rifw" id="Ryij7AnIc9" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="37e6TO" id="Ryij7AnJr3" role="lGtFl">
-        <ref role="37e6UO" node="Ryij7AnJe6" resolve="fun3" />
-        <node concept="3o9_tv" id="Ryij7AnJr4" role="37e6UM">
-          <node concept="2qVrgw" id="Ryij7AnJrA" role="3o9_ts">
-            <ref role="2qVrgz" node="44j14BH88Qc" resolve="first2" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="Ryij7AnIca" role="N3F5h">
-      <property role="TrG5h" value="empty_1399217203819_1" />
-    </node>
-    <node concept="3GEVxB" id="Ryij7AnIcb" role="2OODSX">
-      <ref role="3GEb4d" node="5aNdPeN2d6f" resolve="VarDef" />
-    </node>
-    <node concept="2dvl_R" id="Ryij7AnIcc" role="lGtFl">
-      <ref role="2dvl_Q" node="44j14BH88Q9" resolve="FM2" />
     </node>
   </node>
 </model>

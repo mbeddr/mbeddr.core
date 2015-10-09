@@ -2,7 +2,7 @@
 <model ref="r:071dfb19-bba7-4a45-a209-478de09a1fc8(com.mbeddr.analyses.cbmc.concurrency.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
     <property role="TrG5h" value="AssertSeq" />
     <property role="34LRSv" value="assert_seq" />
     <property role="R4oN_" value="this code runs only on one thread" />
+    <property role="1pbfSe" value="834314572" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMTCa" role="PzmwI">
       <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
@@ -50,6 +52,7 @@
     <property role="TrG5h" value="HappensAfterPair" />
     <property role="34LRSv" value="happens_after_pair" />
     <property role="R4oN_" value="checks if a portion of code happens after another one" />
+    <property role="1pbfSe" value="495105655" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="3V3CJZuKQVQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />

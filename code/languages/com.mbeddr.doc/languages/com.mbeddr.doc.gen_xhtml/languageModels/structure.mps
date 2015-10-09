@@ -2,7 +2,7 @@
 <model ref="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -47,11 +48,13 @@
   <node concept="1TIwiD" id="7EoKaS7Ee78">
     <property role="TrG5h" value="XHTMLFile" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="2109627786" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5j9j0" resolve="XmlFile" />
   </node>
   <node concept="1TIwiD" id="2TZO3DbvUdt">
     <property role="TrG5h" value="HTMLRenderer" />
     <property role="34LRSv" value="html" />
+    <property role="1pbfSe" value="2046784407" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
     <node concept="1TJgyj" id="QRmqzIqw10" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -66,12 +69,14 @@
   <node concept="1TIwiD" id="1T7O9iX4wD_">
     <property role="TrG5h" value="InlineXmlElement" />
     <property role="34LRSv" value="&lt;inlineElement/&gt;" />
+    <property role="1pbfSe" value="614868231" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
   </node>
   <node concept="1TIwiD" id="5wmuVxvC2gr">
     <property role="TrG5h" value="CssSpecification" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="css" />
+    <property role="1pbfSe" value="1212768301" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzIpg44" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -86,6 +91,7 @@
   <node concept="1TIwiD" id="QRmqzIpdtE">
     <property role="TrG5h" value="CssRuleset" />
     <property role="3GE5qa" value="css" />
+    <property role="1pbfSe" value="65261294" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzIpg47" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -103,6 +109,7 @@
   <node concept="1TIwiD" id="QRmqzIpg3m">
     <property role="TrG5h" value="CssSelector" />
     <property role="3GE5qa" value="css" />
+    <property role="1pbfSe" value="65250690" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzIpg4f" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -112,6 +119,7 @@
   <node concept="1TIwiD" id="QRmqzIpg3J">
     <property role="TrG5h" value="CssDeclaration" />
     <property role="3GE5qa" value="css" />
+    <property role="1pbfSe" value="65250665" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzIpg4v" role="1TKVEl">
       <property role="TrG5h" value="property" />
@@ -124,6 +132,7 @@
   </node>
   <node concept="1TIwiD" id="QRmqzJj_2W">
     <property role="TrG5h" value="TocEntry" />
+    <property role="1pbfSe" value="49960348" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzJj_30" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -140,6 +149,7 @@
   </node>
   <node concept="1TIwiD" id="QRmqzJj_qE">
     <property role="TrG5h" value="TocStart" />
+    <property role="1pbfSe" value="49958830" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzJj_qF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -150,6 +160,7 @@
   </node>
   <node concept="1TIwiD" id="QRmqzKqjsY">
     <property role="TrG5h" value="KeyPress" />
+    <property role="1pbfSe" value="31420186" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzKqjto" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -160,6 +171,7 @@
   </node>
   <node concept="1TIwiD" id="QRmqzKqjtk">
     <property role="TrG5h" value="Key" />
+    <property role="1pbfSe" value="31420164" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzKqjtl" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -168,6 +180,7 @@
   </node>
   <node concept="1TIwiD" id="QRmqzKAgfz">
     <property role="TrG5h" value="MenuClick" />
+    <property role="1pbfSe" value="28287605" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzKAgfF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -178,6 +191,7 @@
   </node>
   <node concept="1TIwiD" id="QRmqzKAgf$">
     <property role="TrG5h" value="MenuItem" />
+    <property role="1pbfSe" value="28287604" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzKAgf_" role="1TKVEl">
       <property role="TrG5h" value="text" />

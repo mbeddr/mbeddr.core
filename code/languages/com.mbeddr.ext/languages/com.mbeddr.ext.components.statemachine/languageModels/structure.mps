@@ -2,7 +2,7 @@
 <model ref="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -16,6 +16,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -42,6 +43,7 @@
     <property role="TrG5h" value="StatemachineComponentAdapter" />
     <property role="34LRSv" value="statemachine" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="970229748" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7wVKixdVVsm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -65,6 +67,7 @@
   <node concept="1TIwiD" id="1oIA7EcBLW0">
     <property role="TrG5h" value="InternalRunnableBinding" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1563576454" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1oIA7EcBLW2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -83,6 +86,7 @@
     <property role="TrG5h" value="StatemachineInCompsConfigItem" />
     <property role="34LRSv" value="statemachines in components" />
     <property role="R4oN_" value="use state machine in components" />
+    <property role="1pbfSe" value="765467651" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1rXJcsmC_Z3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -92,6 +96,7 @@
     <property role="TrG5h" value="ProvidedOperationBinding" />
     <property role="34LRSv" value="op" />
     <property role="R4oN_" value="triggered by operation call" />
+    <property role="1pbfSe" value="2143148052" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3U_nJP167Cm" role="PzmwI">
       <ref role="PrY4T" to="clqz:41KMvfcjScv" resolve="IInEventBinding" />
@@ -104,6 +109,7 @@
     <property role="TrG5h" value="RequiredOperationBinding" />
     <property role="34LRSv" value="op" />
     <property role="R4oN_" value="calls operation" />
+    <property role="1pbfSe" value="1751984322" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xLvLBZYUAG" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -2,7 +2,7 @@
 <model ref="r:3f86baf5-195f-493c-8564-191d759abee5(com.mbeddr.slides.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -51,6 +52,7 @@
   <node concept="1TIwiD" id="4IRvlq8cC5U">
     <property role="TrG5h" value="SlideDeck" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="739639600" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4IRvlq8d507" role="1TKVEl">
       <property role="TrG5h" value="title" />
@@ -71,6 +73,7 @@
   </node>
   <node concept="1TIwiD" id="4IRvlq8cC5V">
     <property role="TrG5h" value="Slide" />
+    <property role="1pbfSe" value="739639599" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IRvlq8cIof" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -85,11 +88,13 @@
   <node concept="PlHQZ" id="4IRvlq8cIoe">
     <property role="TrG5h" value="ISlideContent" />
     <property role="3GE5qa" value="slidecontent" />
+    <property role="1pbfSe" value="739613852" />
   </node>
   <node concept="1TIwiD" id="4IRvlq8cIQq">
     <property role="TrG5h" value="TextSlideContent" />
     <property role="3GE5qa" value="slidecontent" />
     <property role="34LRSv" value="paragraph" />
+    <property role="1pbfSe" value="739611920" />
     <ref role="1TJDcQ" node="4IRvlq8d5Q7" resolve="AbstractParagraphSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cIQr" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -99,6 +104,7 @@
     <property role="TrG5h" value="SlideWord" />
     <property role="3GE5qa" value="words" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="739608871" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="5mf_X_La_N_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -115,12 +121,14 @@
     <property role="TrG5h" value="SmallWord" />
     <property role="R4oN_" value="text formatted in &lt;small&gt;" />
     <property role="34LRSv" value="\small" />
+    <property role="1pbfSe" value="739608869" />
     <ref role="1TJDcQ" node="4IRvlq8cJA3" resolve="SlideWord" />
   </node>
   <node concept="1TIwiD" id="4IRvlq8cJGq">
     <property role="3GE5qa" value="slidecontent" />
     <property role="TrG5h" value="H1" />
     <property role="34LRSv" value="h1" />
+    <property role="1pbfSe" value="739608464" />
     <ref role="1TJDcQ" node="4IRvlq8d5Q7" resolve="AbstractParagraphSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cJGr" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -130,6 +138,7 @@
     <property role="3GE5qa" value="slidecontent" />
     <property role="TrG5h" value="H2" />
     <property role="34LRSv" value="h2" />
+    <property role="1pbfSe" value="739608462" />
     <ref role="1TJDcQ" node="4IRvlq8d5Q7" resolve="AbstractParagraphSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cJGt" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -139,6 +148,7 @@
     <property role="3GE5qa" value="slidecontent" />
     <property role="TrG5h" value="H3" />
     <property role="34LRSv" value="h3" />
+    <property role="1pbfSe" value="739608460" />
     <ref role="1TJDcQ" node="4IRvlq8cIQq" resolve="TextSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cJGv" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -149,6 +159,7 @@
     <property role="TrG5h" value="LinkWord" />
     <property role="R4oN_" value="text formatted as a link" />
     <property role="34LRSv" value="@link" />
+    <property role="1pbfSe" value="739542206" />
     <ref role="1TJDcQ" node="4IRvlq8cJA3" resolve="SlideWord" />
     <node concept="1TJgyi" id="4IRvlq8cZRJ" role="1TKVEl">
       <property role="TrG5h" value="url" />
@@ -158,6 +169,7 @@
   <node concept="1TIwiD" id="4IRvlq8d0BJ">
     <property role="3GE5qa" value="slidecontent" />
     <property role="TrG5h" value="ImageSlideContent" />
+    <property role="1pbfSe" value="739539131" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5yxqZJwzQtY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -188,12 +200,14 @@
   <node concept="1TIwiD" id="7EoKaS7Ee78">
     <property role="TrG5h" value="XHTMLFile" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="2109627786" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5j9j0" resolve="XmlFile" />
   </node>
   <node concept="1TIwiD" id="4IRvlq8d5Q7">
     <property role="3GE5qa" value="slidecontent" />
     <property role="TrG5h" value="AbstractParagraphSlideContent" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="739517731" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IRvlq8d5Q8" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -37,6 +38,7 @@
   <node concept="1TIwiD" id="4g2H4r3SHDB">
     <property role="TrG5h" value="CellModel_Checkbox" />
     <property role="34LRSv" value="checkbox{&lt;{propertyDeclaration}&gt;}" />
+    <property role="1pbfSe" value="132484781" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyi" id="gSMwhzt" role="1TKVEl">
       <property role="TrG5h" value="iconPathTrue" />
@@ -58,6 +60,7 @@
   <node concept="1TIwiD" id="6bmIkNC799Q">
     <property role="TrG5h" value="CellModel_BooleanText" />
     <property role="34LRSv" value="bool{&lt;{propertyDeclaration}&gt;}" />
+    <property role="1pbfSe" value="1257458626" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyi" id="6bmIkNCb966" role="1TKVEl">
       <property role="TrG5h" value="trueText" />
@@ -71,6 +74,7 @@
   <node concept="1TIwiD" id="4JS9aP7oxy8">
     <property role="19KtqR" value="true" />
     <property role="TrG5h" value="CheckboxDefaultIcons" />
+    <property role="1pbfSe" value="1822802635" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4JS9aP7oOyi" role="1TKVEl">
       <property role="TrG5h" value="iconPathTrue" />
@@ -91,6 +95,7 @@
   </node>
   <node concept="1TIwiD" id="n5YDls8hbY">
     <property role="TrG5h" value="StubCellModel_Checkbox" />
+    <property role="1pbfSe" value="1642532243" />
     <ref role="1TJDcQ" node="4g2H4r3SHDB" resolve="CellModel_Checkbox" />
     <node concept="PrWs8" id="n5YDls8hcc" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -101,6 +106,7 @@
   </node>
   <node concept="1TIwiD" id="n5YDls8PEA">
     <property role="TrG5h" value="StubCellModel_BooleanText" />
+    <property role="1pbfSe" value="1642681659" />
     <ref role="1TJDcQ" node="6bmIkNC799Q" resolve="CellModel_BooleanText" />
     <node concept="PrWs8" id="n5YDls8PEB" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />

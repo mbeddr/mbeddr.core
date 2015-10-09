@@ -2,7 +2,7 @@
 <model ref="r:7f45f3a9-c768-43c9-bd6b-1388795a845f(de.itemis.mps.selection.intentions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
   <node concept="1TIwiD" id="5d_XfTkoABv">
     <property role="TrG5h" value="SelectionIntention" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1480040739" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5d_XfTkoABw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -72,27 +74,32 @@
   <node concept="1TIwiD" id="5d_XfTkoANf">
     <property role="TrG5h" value="Description" />
     <property role="34LRSv" value="description" />
+    <property role="1pbfSe" value="1480039987" />
     <ref role="1TJDcQ" node="630t2b83bX0" resolve="SelectionIntentionFunction" />
   </node>
   <node concept="1TIwiD" id="5d_XfTkoAOj">
     <property role="TrG5h" value="IsApplicable" />
     <property role="34LRSv" value="isApplicable" />
+    <property role="1pbfSe" value="1480039919" />
     <ref role="1TJDcQ" node="630t2b83bX0" resolve="SelectionIntentionFunction" />
   </node>
   <node concept="1TIwiD" id="5d_XfTkoAPM">
     <property role="TrG5h" value="Execute" />
     <property role="34LRSv" value="execute" />
+    <property role="1pbfSe" value="1480039824" />
     <ref role="1TJDcQ" node="630t2b83bX0" resolve="SelectionIntentionFunction" />
   </node>
   <node concept="1TIwiD" id="5d_XfTkoAQ0">
     <property role="TrG5h" value="Parameter_Selection" />
     <property role="34LRSv" value="selection" />
+    <property role="1pbfSe" value="1480039810" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="630t2b83bX0">
     <property role="TrG5h" value="SelectionIntentionFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="684536674" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>

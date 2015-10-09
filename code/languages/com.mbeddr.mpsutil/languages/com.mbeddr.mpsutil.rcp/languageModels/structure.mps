@@ -2,7 +2,7 @@
 <model ref="r:3f408a86-cd9f-4c3c-80d9-d614915b49c9(com.mbeddr.mpsutil.rcp.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -47,6 +48,7 @@
   <node concept="1TIwiD" id="7o1blyuFOT2">
     <property role="TrG5h" value="NewModelDialogConfig" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="347110298" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7o1blyuFPT4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -84,24 +86,29 @@
     <property role="TrG5h" value="Persistence" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="347110318" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7o1blyuFPT7">
     <property role="TrG5h" value="PerRootPersistence" />
     <property role="34LRSv" value="file per root persitence" />
+    <property role="1pbfSe" value="347114399" />
     <ref role="1TJDcQ" node="7o1blyuFOTm" resolve="Persistence" />
   </node>
   <node concept="1TIwiD" id="7o1blyuFQhP">
     <property role="TrG5h" value="SingleFilePersistence" />
     <property role="34LRSv" value="file per model persistence" />
+    <property role="1pbfSe" value="347115981" />
     <ref role="1TJDcQ" node="7o1blyuFOTm" resolve="Persistence" />
   </node>
   <node concept="PlHQZ" id="7o1blyuG26$">
     <property role="TrG5h" value="IDevKitSelector" />
+    <property role="1pbfSe" value="347164412" />
   </node>
   <node concept="1TIwiD" id="7o1blyuG26S">
     <property role="TrG5h" value="DevKitSelectorFunction" />
     <property role="34LRSv" value="select devkit programatically" />
+    <property role="1pbfSe" value="347164432" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
     <node concept="PrWs8" id="7o1blyuG2ct" role="PzmwI">
       <ref role="PrY4T" node="7o1blyuG26$" resolve="IDevKitSelector" />
@@ -110,10 +117,12 @@
   <node concept="1TIwiD" id="7o1blyuG2cE">
     <property role="TrG5h" value="DevKitParameter" />
     <property role="34LRSv" value="devkit" />
+    <property role="1pbfSe" value="347164802" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="7o1blyuG7yD">
     <property role="TrG5h" value="DevKitList" />
+    <property role="1pbfSe" value="347186689" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7o1blyuG7yL" role="PzmwI">
       <ref role="PrY4T" node="7o1blyuG26$" resolve="IDevKitSelector" />
@@ -127,6 +136,7 @@
   </node>
   <node concept="1TIwiD" id="7o1blyuG7yO">
     <property role="TrG5h" value="DefKitRef" />
+    <property role="1pbfSe" value="347186700" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7o1blyuG7yW" role="1TKVEi">
       <property role="20lmBu" value="reference" />

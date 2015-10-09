@@ -2,7 +2,7 @@
 <model ref="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +26,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -61,6 +62,7 @@
   <node concept="1TIwiD" id="3NI0$JEby1x">
     <property role="TrG5h" value="Block" />
     <property role="34LRSv" value="block" />
+    <property role="1pbfSe" value="656155308" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3NI0$JEby1C" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -91,6 +93,7 @@
     <property role="TrG5h" value="Port" />
     <property role="3GE5qa" value="intf" />
     <property role="34LRSv" value="port" />
+    <property role="1pbfSe" value="656155310" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3NI0$JEby1K" role="1TKVEl">
       <property role="TrG5h" value="dir" />
@@ -120,6 +123,7 @@
   <node concept="PlHQZ" id="3NI0$JEby1V">
     <property role="TrG5h" value="IBlockInterfaceElement" />
     <property role="3GE5qa" value="intf" />
+    <property role="1pbfSe" value="656155334" />
     <node concept="PrWs8" id="3NI0$JEby1Y" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -128,6 +132,7 @@
     <property role="TrG5h" value="Property" />
     <property role="3GE5qa" value="intf" />
     <property role="34LRSv" value="property" />
+    <property role="1pbfSe" value="656155350" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3NI0$JEby2c" role="PzmwI">
       <ref role="PrY4T" node="3NI0$JEby1V" resolve="IBlockInterfaceElement" />
@@ -140,6 +145,7 @@
     <property role="TrG5h" value="Variable" />
     <property role="3GE5qa" value="impl" />
     <property role="34LRSv" value="var" />
+    <property role="1pbfSe" value="656217417" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3NI0$JEbLbZ" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -152,6 +158,7 @@
     <property role="TrG5h" value="BlockState" />
     <property role="3GE5qa" value="impl" />
     <property role="34LRSv" value="state" />
+    <property role="1pbfSe" value="656225007" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3NI0$JEbN2T" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -167,12 +174,14 @@
     <property role="TrG5h" value="BlockStateImpl" />
     <property role="3GE5qa" value="impl" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="656225026" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3NI0$JEbOkD">
     <property role="TrG5h" value="SameAsOtherStateBSI" />
     <property role="3GE5qa" value="impl" />
     <property role="34LRSv" value="=" />
+    <property role="1pbfSe" value="656230260" />
     <ref role="1TJDcQ" node="3NI0$JEbN2R" resolve="BlockStateImpl" />
     <node concept="1TJgyj" id="3NI0$JEbOkE" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -185,6 +194,7 @@
     <property role="TrG5h" value="CalcMethodBSI" />
     <property role="3GE5qa" value="impl" />
     <property role="34LRSv" value="{" />
+    <property role="1pbfSe" value="656234517" />
     <ref role="1TJDcQ" node="3NI0$JEbN2R" resolve="BlockStateImpl" />
     <node concept="1TJgyj" id="3NI0$JEbPnc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -196,6 +206,7 @@
   <node concept="1TIwiD" id="3NI0$JEbQEP">
     <property role="3GE5qa" value="impl.expr" />
     <property role="TrG5h" value="VarRef" />
+    <property role="1pbfSe" value="656239872" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="3NI0$JEbQFR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -213,10 +224,12 @@
   <node concept="PlHQZ" id="3NI0$JEbQEQ">
     <property role="3GE5qa" value="impl.expr" />
     <property role="TrG5h" value="IBlockExpression" />
+    <property role="1pbfSe" value="656239873" />
   </node>
   <node concept="1TIwiD" id="3NI0$JEbQG9">
     <property role="3GE5qa" value="impl.expr" />
     <property role="TrG5h" value="PortRef" />
+    <property role="1pbfSe" value="656239956" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="PrWs8" id="3NI0$JEbQGa" role="PzmwI">
       <ref role="PrY4T" node="3NI0$JEbQEQ" resolve="IBlockExpression" />
@@ -234,6 +247,7 @@
   <node concept="1TIwiD" id="3NI0$JEbQM1">
     <property role="3GE5qa" value="impl.expr" />
     <property role="TrG5h" value="PropertyRef" />
+    <property role="1pbfSe" value="656240332" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="3NI0$JEbQM3" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
@@ -14,6 +14,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -33,10 +34,12 @@
     <property role="TrG5h" value="CellModel_Multiline" />
     <property role="34LRSv" value="{&lt;{propertyDeclaration}&gt;}\n" />
     <property role="R4oN_" value="multiline property" />
+    <property role="1pbfSe" value="1595750989" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
   </node>
   <node concept="1TIwiD" id="7wXnfGDY5ln">
     <property role="TrG5h" value="StubCellModel_Multiline" />
+    <property role="1pbfSe" value="1573539246" />
     <ref role="1TJDcQ" node="6Wsm6VK0e7v" resolve="CellModel_Multiline" />
     <node concept="PrWs8" id="7wXnfGDY5lp" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />

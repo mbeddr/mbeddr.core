@@ -2,7 +2,7 @@
 <model ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -27,6 +27,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -63,6 +64,7 @@
   <node concept="1TIwiD" id="5USXI9Kzba5">
     <property role="TrG5h" value="AttributeValue" />
     <property role="3GE5qa" value="cm" />
+    <property role="1pbfSe" value="817518233" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5USXI9Kzba6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -85,6 +87,7 @@
     <property role="3GE5qa" value="cm" />
     <property role="MwhBj" value="${language_descriptor}/icons/cm.png" />
     <property role="34LRSv" value="configuration model" />
+    <property role="1pbfSe" value="817518230" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5USXI9Kzba9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -112,6 +115,7 @@
     <property role="TrG5h" value="SelectedFeature" />
     <property role="3GE5qa" value="cm" />
     <property role="MwhBj" value="${language_descriptor}/icons/feature.png" />
+    <property role="1pbfSe" value="817518224" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5USXI9Kzbaf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -139,6 +143,7 @@
     <property role="TrG5h" value="Feature" />
     <property role="3GE5qa" value="fm" />
     <property role="MwhBj" value="${language_descriptor}/icons/feature.png" />
+    <property role="1pbfSe" value="817518220" />
     <ref role="1TJDcQ" node="3UhOf8WVJG2" resolve="AbstractFeature" />
     <node concept="PrWs8" id="1apscrrvEpE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6xkj9mMr79" resolve="IVisualizationParticipant" />
@@ -183,6 +188,7 @@
     <property role="TrG5h" value="FeatureAttribute" />
     <property role="3GE5qa" value="fm" />
     <property role="MwhBj" value="${language_descriptor}/icons/attribute.png" />
+    <property role="1pbfSe" value="817518215" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5USXI9Kzbao" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -196,6 +202,7 @@
     <property role="3GE5qa" value="fm" />
     <property role="MwhBj" value="${language_descriptor}/icons/fm.png" />
     <property role="34LRSv" value="feature model" />
+    <property role="1pbfSe" value="817518212" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5USXI9Kzbar" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -235,49 +242,58 @@
     <property role="TrG5h" value="ChildrenConstraint" />
     <property role="3GE5qa" value="fm.constraints" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="817498023" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5USXI9Kzg5T">
     <property role="3GE5qa" value="fm.constraints" />
     <property role="TrG5h" value="MandatoryConstraint" />
     <property role="34LRSv" value="!" />
+    <property role="1pbfSe" value="817498021" />
     <ref role="1TJDcQ" node="5USXI9Kzg5Z" resolve="StdChildrenConstraint" />
   </node>
   <node concept="1TIwiD" id="5USXI9Kzg5V">
     <property role="3GE5qa" value="fm.constraints" />
     <property role="TrG5h" value="OptionalConstraint" />
     <property role="34LRSv" value="?" />
+    <property role="1pbfSe" value="817498019" />
     <ref role="1TJDcQ" node="5USXI9Kzg5Z" resolve="StdChildrenConstraint" />
   </node>
   <node concept="1TIwiD" id="5USXI9Kzg5X">
     <property role="3GE5qa" value="fm.constraints" />
     <property role="TrG5h" value="OrConstraint" />
     <property role="34LRSv" value="or" />
+    <property role="1pbfSe" value="817498017" />
     <ref role="1TJDcQ" node="5USXI9Kzg5Z" resolve="StdChildrenConstraint" />
   </node>
   <node concept="1TIwiD" id="5USXI9Kzg5Z">
     <property role="TrG5h" value="StdChildrenConstraint" />
     <property role="3GE5qa" value="fm.constraints" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="817498015" />
     <ref role="1TJDcQ" node="5USXI9Kzg5R" resolve="ChildrenConstraint" />
   </node>
   <node concept="1TIwiD" id="5USXI9Kzg61">
     <property role="3GE5qa" value="fm.constraints" />
     <property role="TrG5h" value="XorConstraint" />
     <property role="34LRSv" value="xor" />
+    <property role="1pbfSe" value="817498013" />
     <ref role="1TJDcQ" node="5USXI9Kzg5Z" resolve="StdChildrenConstraint" />
   </node>
   <node concept="PlHQZ" id="5USXI9KzkZI">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="IMapping" />
+    <property role="1pbfSe" value="817477936" />
   </node>
   <node concept="PlHQZ" id="5USXI9KzkZJ">
     <property role="TrG5h" value="IVarSupportContent" />
+    <property role="1pbfSe" value="817477935" />
   </node>
   <node concept="1TIwiD" id="5USXI9KzkZK">
     <property role="TrG5h" value="VariabilitySupport" />
     <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/var.png" />
+    <property role="1pbfSe" value="817477934" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="4tuc85_gckE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -305,6 +321,7 @@
     <property role="3GE5qa" value="fm.constraints.cross" />
     <property role="TrG5h" value="CrossConstraint" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1347344787" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7k8WEKUE3f4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -317,17 +334,20 @@
     <property role="3GE5qa" value="fm.constraints.cross" />
     <property role="TrG5h" value="RequiresConstraint" />
     <property role="34LRSv" value="requires" />
+    <property role="1pbfSe" value="1347344785" />
     <ref role="1TJDcQ" node="7k8WEKUE3f1" resolve="CrossConstraint" />
   </node>
   <node concept="1TIwiD" id="7k8WEKUE3fh">
     <property role="3GE5qa" value="fm.constraints.cross" />
     <property role="TrG5h" value="ConflictsConstraint" />
     <property role="34LRSv" value="conflicts" />
+    <property role="1pbfSe" value="1347344771" />
     <ref role="1TJDcQ" node="7k8WEKUE3f1" resolve="CrossConstraint" />
   </node>
   <node concept="1TIwiD" id="1UlxOSesyDW">
     <property role="TrG5h" value="ExtraConstraint" />
     <property role="3GE5qa" value="fm" />
+    <property role="1pbfSe" value="755478986" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1UlxOSesyDY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -349,6 +369,7 @@
     <property role="3GE5qa" value="fm" />
     <property role="34LRSv" value="derive" />
     <property role="MwhBj" value="${module}/icons/feature.png" />
+    <property role="1pbfSe" value="755325800" />
     <ref role="1TJDcQ" node="3UhOf8WVJG2" resolve="AbstractFeature" />
     <node concept="1TJgyj" id="1UlxOSesr$R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -364,6 +385,7 @@
     <property role="3GE5qa" value="fm" />
     <property role="TrG5h" value="ConfigurationDependantExpression" />
     <property role="34LRSv" value="configuration dependant" />
+    <property role="1pbfSe" value="123028315" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7CssUDYz$zW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -389,6 +411,7 @@
     <property role="3GE5qa" value="fm" />
     <property role="TrG5h" value="AbstractFeature" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="2072038388" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3UhOf8WVJG6" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -406,6 +429,7 @@
   <node concept="1TIwiD" id="6Ce4x7KSUoL">
     <property role="3GE5qa" value="programannotations" />
     <property role="TrG5h" value="FeatureRef" />
+    <property role="1pbfSe" value="1525790786" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="6Ce4x7KSUoM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -419,10 +443,12 @@
   </node>
   <node concept="PlHQZ" id="6Ce4x7LdEfN">
     <property role="TrG5h" value="IFeatureConditionsOnly" />
+    <property role="1pbfSe" value="1531229700" />
   </node>
   <node concept="1TIwiD" id="7mpzbZX8qsx">
     <property role="3GE5qa" value="fm" />
     <property role="TrG5h" value="RootFeature" />
+    <property role="1pbfSe" value="1924871136" />
     <ref role="1TJDcQ" node="5USXI9Kzbai" resolve="Feature" />
     <node concept="PrWs8" id="7mpzbZX8CFT" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />

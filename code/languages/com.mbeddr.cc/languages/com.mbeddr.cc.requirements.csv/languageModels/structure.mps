@@ -2,7 +2,7 @@
 <model ref="r:20cee3e2-df96-404a-be3a-836206054a3f(com.mbeddr.cc.requirements.csv.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
@@ -18,6 +18,7 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -46,6 +47,7 @@
   </registry>
   <node concept="1TIwiD" id="vcqV8fDyCb">
     <property role="TrG5h" value="CvsImportAnnotation" />
+    <property role="1pbfSe" value="393385405" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="vcqV8fDzb3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -82,6 +84,7 @@
   </node>
   <node concept="PlHQZ" id="4uSWKme5rV1">
     <property role="TrG5h" value="IRequirementMapper" />
+    <property role="1pbfSe" value="707874362" />
   </node>
 </model>
 

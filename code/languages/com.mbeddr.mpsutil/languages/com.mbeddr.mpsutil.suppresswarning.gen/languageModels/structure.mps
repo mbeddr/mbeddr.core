@@ -2,7 +2,7 @@
 <model ref="r:66daf7bf-1a21-494f-a67b-89edb7cdf1b9(com.mbeddr.mpsutil.suppresswarning.gen.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -43,6 +44,7 @@
   </registry>
   <node concept="1TIwiD" id="7U3Fobb_Ynz">
     <property role="TrG5h" value="CheckCategoryAnnotation" />
+    <property role="1pbfSe" value="1243321189" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="4Wyno57pjqq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -59,6 +61,7 @@
   </node>
   <node concept="1TIwiD" id="7U3FobbBed$">
     <property role="TrG5h" value="KindReference" />
+    <property role="1pbfSe" value="1243648230" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7U3FobbBed_" role="1TKVEi">
       <property role="20lmBu" value="reference" />

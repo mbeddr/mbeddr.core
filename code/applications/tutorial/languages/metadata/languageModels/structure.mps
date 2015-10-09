@@ -2,7 +2,7 @@
 <model ref="r:3cf56826-6fbe-46d2-acbd-1aca19d54159(mbeddr.tutorial.metadata.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -30,6 +30,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -63,6 +64,7 @@
   </registry>
   <node concept="1TIwiD" id="2zx$mQQxDoa">
     <property role="TrG5h" value="AccessSpec" />
+    <property role="1pbfSe" value="546822281" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="2zx$mQQxDog" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -79,6 +81,7 @@
   </node>
   <node concept="1TIwiD" id="2zx$mQQxDoe">
     <property role="TrG5h" value="Permission" />
+    <property role="1pbfSe" value="546822277" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2zx$mQQxDpy" role="1TKVEl">
       <property role="TrG5h" value="activity" />
@@ -95,6 +98,7 @@
     <property role="TrG5h" value="RoleSpec" />
     <property role="3GE5qa" value="spec" />
     <property role="34LRSv" value="role" />
+    <property role="1pbfSe" value="546822256" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2zx$mQQxDo_" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -104,6 +108,7 @@
     <property role="TrG5h" value="AccessDataSpecification" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="spec" />
+    <property role="1pbfSe" value="546822230" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2zx$mQQxDoY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -130,6 +135,7 @@
   </node>
   <node concept="1TIwiD" id="2zx$mQQxEXF">
     <property role="TrG5h" value="ModuleRoleSpec" />
+    <property role="1pbfSe" value="546815784" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="2zx$mQQxEXG" role="1TKVEi">
       <property role="20lmBu" value="reference" />

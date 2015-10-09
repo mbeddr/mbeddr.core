@@ -2,7 +2,7 @@
 <model ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -44,6 +45,7 @@
   </registry>
   <node concept="1TIwiD" id="1m7X3OEB6Lg">
     <property role="TrG5h" value="ModuleSettings" />
+    <property role="1pbfSe" value="1076125837" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1m7X3OEBM0x" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -66,25 +68,30 @@
   </node>
   <node concept="1TIwiD" id="5f$4wDDttCI">
     <property role="TrG5h" value="InitPageNode" />
+    <property role="1pbfSe" value="1118180296" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="5f$4wDDttE2">
     <property role="TrG5h" value="Parameter_PageNode" />
     <property role="34LRSv" value="node" />
+    <property role="1pbfSe" value="1118180212" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="1oM0ei23Esn">
     <property role="TrG5h" value="Parameter_Project" />
     <property role="34LRSv" value="project" />
+    <property role="1pbfSe" value="1740593157" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="1oM0ei25xwg">
     <property role="TrG5h" value="Function_Enabled" />
+    <property role="1pbfSe" value="1740105484" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="4RGMQ_4mCl4">
     <property role="TrG5h" value="PreferencesRootExpression" />
     <property role="34LRSv" value="preferencesRoot" />
+    <property role="1pbfSe" value="1840820051" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4RGMQ_4mKvG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -102,11 +109,13 @@
   <node concept="1TIwiD" id="4AbBRTN6DKC">
     <property role="TrG5h" value="Parameter_IsInit" />
     <property role="34LRSv" value="isInit" />
+    <property role="1pbfSe" value="1129956442" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="5FuuJYqk2Ci">
     <property role="TrG5h" value="PreferencePageDescription" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="181492463" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1m7X3OEB6Lh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

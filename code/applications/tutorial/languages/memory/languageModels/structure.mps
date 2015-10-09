@@ -2,7 +2,7 @@
 <model ref="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -41,6 +42,7 @@
   <node concept="1TIwiD" id="4Kv0gUyBAg3">
     <property role="TrG5h" value="MemoryLayout" />
     <property role="34LRSv" value="memory layout" />
+    <property role="1pbfSe" value="289577711" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4Kv0gUyBAgo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -55,6 +57,7 @@
   <node concept="1TIwiD" id="4Kv0gUyBAg8">
     <property role="TrG5h" value="Region" />
     <property role="34LRSv" value="region" />
+    <property role="1pbfSe" value="289577706" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4Kv0gUyBAga" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -75,21 +78,25 @@
   <node concept="1TIwiD" id="4Kv0gUyBAQ8">
     <property role="TrG5h" value="StartOfExpr" />
     <property role="34LRSv" value="startOf" />
+    <property role="1pbfSe" value="289575274" />
     <ref role="1TJDcQ" node="4Kv0gUyBJzn" resolve="RegionRefExpr" />
   </node>
   <node concept="1TIwiD" id="4Kv0gUyBChI">
     <property role="TrG5h" value="EndOfExpr" />
     <property role="34LRSv" value="endOf" />
+    <property role="1pbfSe" value="289569412" />
     <ref role="1TJDcQ" node="4Kv0gUyBJzn" resolve="RegionRefExpr" />
   </node>
   <node concept="1TIwiD" id="4Kv0gUyBFiz">
     <property role="TrG5h" value="SizeOfExpr" />
     <property role="34LRSv" value="sizeOf" />
+    <property role="1pbfSe" value="289557071" />
     <ref role="1TJDcQ" node="4Kv0gUyBJzn" resolve="RegionRefExpr" />
   </node>
   <node concept="1TIwiD" id="4Kv0gUyBJzn">
     <property role="TrG5h" value="RegionRefExpr" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="289539611" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4Kv0gUyBJzo" role="1TKVEi">
       <property role="20lmBu" value="reference" />

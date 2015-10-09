@@ -2,7 +2,7 @@
 <model ref="r:67780e06-1d33-4077-a6c9-86b0b425435c(mbeddr.tutorial.complex.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -40,10 +41,12 @@
   <node concept="1TIwiD" id="7wlBVIeFwW3">
     <property role="TrG5h" value="ComplexType" />
     <property role="34LRSv" value="complex" />
+    <property role="1pbfSe" value="113487550" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7wlBVIeFwW7">
     <property role="TrG5h" value="ComplexLiteral" />
+    <property role="1pbfSe" value="113487554" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
     <node concept="1TJgyj" id="7wlBVIeFwW8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -65,6 +68,7 @@
     <property role="TrG5h" value="ComplexTypeAccess" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="306281424" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3yoEvFpEd9C" role="PzmwI">
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
@@ -73,11 +77,13 @@
   <node concept="1TIwiD" id="3yoEvFpEnyw">
     <property role="TrG5h" value="RealAccess" />
     <property role="34LRSv" value="r" />
+    <property role="1pbfSe" value="306324122" />
     <ref role="1TJDcQ" node="3yoEvFpEd7m" resolve="ComplexTypeAccess" />
   </node>
   <node concept="1TIwiD" id="3yoEvFpEny_">
     <property role="TrG5h" value="ImgAccess" />
     <property role="34LRSv" value="i" />
+    <property role="1pbfSe" value="306324127" />
     <ref role="1TJDcQ" node="3yoEvFpEd7m" resolve="ComplexTypeAccess" />
   </node>
 </model>

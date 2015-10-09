@@ -2,7 +2,7 @@
 <model ref="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
@@ -25,6 +25,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -55,6 +56,7 @@
     <property role="TrG5h" value="NoMwComponentsGenStrategy" />
     <property role="34LRSv" value="no middleware" />
     <property role="R4oN_" value="no middleware" />
+    <property role="1pbfSe" value="328201395" />
     <ref role="1TJDcQ" to="v7ag:1OLGDVfeZ1b" resolve="ComponentsGenStrategy" />
     <node concept="1TJgyi" id="1mfTBng0JlH" role="1TKVEl">
       <property role="TrG5h" value="wireStatically" />
@@ -74,6 +76,7 @@
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="RunnableProcessed" />
     <property role="34LRSv" value="@runnableProcessed" />
+    <property role="1pbfSe" value="1102456257" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3KKPUg5xkT2" role="lGtFl">
       <property role="Hh88m" value="runnableProcessed" />

@@ -2,7 +2,7 @@
 <model ref="r:e0910d3c-837f-4722-ba2b-addd925805d7(com.mbeddr.cc.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
   <languages>
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="0" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
   </languages>
   <imports />
   <registry>
@@ -40,6 +40,8 @@
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
+        <child id="7808382574383152989" name="intPtrType" index="3sasR9" />
+        <child id="7808382574383153001" name="uintPtrType" index="3sasRX" />
         <child id="5598157691785092886" name="vaList" index="3EM3Bk" />
         <child id="6658270785788810330" name="minFloatValue" index="3LaRDq" />
         <child id="6658270785788810339" name="maxDoubleValue" index="3LaRDz" />
@@ -230,6 +232,14 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+    </node>
+    <node concept="1X9cn3" id="4M3QoIFYqD1" role="3sasR9">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
+    </node>
+    <node concept="26VBNf" id="4M3QoIFYqD2" role="3sasRX">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
     </node>
   </node>
 </model>
