@@ -222,7 +222,7 @@
       <node concept="398BVA" id="3vzyAKELmfZ" role="398pKh">
         <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="3vzyAKELmg0" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.rcp" />
+          <property role="2Ry0Am" value="branding" />
         </node>
       </node>
     </node>
