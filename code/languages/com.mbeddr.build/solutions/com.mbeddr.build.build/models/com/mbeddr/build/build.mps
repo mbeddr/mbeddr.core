@@ -1031,7 +1031,7 @@
       <node concept="398BVA" id="7sTP4TZypNn" role="398pKh">
         <ref role="398BVh" node="5ueaxoTn610" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="7sTP4TZypNo" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.tutorial" />
+          <property role="2Ry0Am" value="com.mbeddr.tutorial-solutions.build" />
         </node>
       </node>
     </node>
@@ -1040,7 +1040,7 @@
       <node concept="398BVA" id="7sTP4TZypOE" role="398pKh">
         <ref role="398BVh" node="5ueaxoTn610" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="7sTP4TZypOF" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.tutorial" />
+          <property role="2Ry0Am" value="com.mbeddr.tutorial-languages.build" />
         </node>
       </node>
     </node>
@@ -1224,7 +1224,7 @@
       <node concept="398BVA" id="7sTP4TZypXg" role="398pKh">
         <ref role="398BVh" node="5ueaxoTn611" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="7sTP4TZypXh" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.tutorial" />
+          <property role="2Ry0Am" value="com.mbeddr.tutorial-languages.build" />
         </node>
       </node>
     </node>
