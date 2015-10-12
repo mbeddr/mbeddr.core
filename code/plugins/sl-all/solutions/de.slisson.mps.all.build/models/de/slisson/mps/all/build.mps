@@ -3364,10 +3364,10 @@
           <property role="3LESm3" value="50fd4dec-4494-4a71-a0ca-d35c48af6670" />
           <property role="2GAjPV" value="false" />
         </node>
-        <node concept="1SiIV0" id="5VXqMlub0fK" role="3bR37C">
-          <node concept="3bR9La" id="5VXqMlub0fL" role="1SiIV1">
+        <node concept="1SiIV0" id="1bs45UrTjqO" role="3bR37C">
+          <node concept="3bR9La" id="1bs45UrTjqP" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            <ref role="3bR37D" node="7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
           </node>
         </node>
       </node>
