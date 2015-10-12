@@ -1026,6 +1026,24 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="7sTP4TZypNm" role="1l3spd">
+      <property role="TrG5h" value="tutorial-solutions.artifacts" />
+      <node concept="398BVA" id="7sTP4TZypNn" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn610" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="7sTP4TZypNo" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.tutorial" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="7sTP4TZypOD" role="1l3spd">
+      <property role="TrG5h" value="tutorial-languages.artifacts" />
+      <node concept="398BVA" id="7sTP4TZypOE" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn610" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="7sTP4TZypOF" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.tutorial" />
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="1cfjnjdGZ92" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="1cfjnjdGZ93" role="2JcizS">
@@ -1046,9 +1064,15 @@
     </node>
     <node concept="2sgV4H" id="1cfjnjdH8Za" role="1l3spa">
       <ref role="1l3spb" node="44QTgQqTl__" resolve="com.mbeddr.tutorial-languages.build" />
+      <node concept="398BVA" id="7sTP4TZypUW" role="2JcizS">
+        <ref role="398BVh" node="7sTP4TZypOD" resolve="tutorial-languages.artifacts" />
+      </node>
     </node>
     <node concept="2sgV4H" id="1cfjnjdI6DU" role="1l3spa">
       <ref role="1l3spb" node="1cfjnjdI1i0" resolve="com.mbeddr.tutorial-solutions.build" />
+      <node concept="398BVA" id="7sTP4TZypVz" role="2JcizS">
+        <ref role="398BVh" node="7sTP4TZypNm" resolve="tutorial-solutions.artifacts" />
+      </node>
     </node>
     <node concept="2sgV4H" id="4hvHh3QYg0N" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
@@ -1195,6 +1219,15 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="7sTP4TZypXf" role="1l3spd">
+      <property role="TrG5h" value="tutorial-languages.artifacts" />
+      <node concept="398BVA" id="7sTP4TZypXg" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn611" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="7sTP4TZypXh" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.tutorial" />
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="1cfjnjdI1iy" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="1cfjnjdI1iz" role="2JcizS">
@@ -1209,6 +1242,9 @@
     </node>
     <node concept="2sgV4H" id="1cfjnjdI5Y1" role="1l3spa">
       <ref role="1l3spb" node="44QTgQqTl__" resolve="com.mbeddr.tutorial-languages.build" />
+      <node concept="398BVA" id="7sTP4TZypYb" role="2JcizS">
+        <ref role="398BVh" node="7sTP4TZypXf" resolve="tutorial-languages.artifacts" />
+      </node>
     </node>
     <node concept="2sgV4H" id="4hvHh3QYfKr" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
