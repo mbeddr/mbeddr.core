@@ -17,6 +17,7 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
   <registry>
@@ -58,12 +59,17 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -76,6 +82,12 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -111,6 +123,9 @@
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -144,6 +159,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="53jX6NPopJZ" role="3cqZAp">
+          <node concept="3clFbS" id="53jX6NPopK1" role="3clFbx">
+            <node concept="3SKdUt" id="53jX6NPos7E" role="3cqZAp">
+              <node concept="3SKdUq" id="53jX6NPosiv" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: we are now on server; it is unclear how to test this on the server" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="53jX6NPorLX" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="53jX6NPorqF" role="3clFbw">
+            <node concept="2JrnkZ" id="53jX6NPoroH" role="2Oq$k0">
+              <node concept="37vLTw" id="53jX6NPopUd" role="2JrQYb">
+                <ref role="3cqZAo" node="1_cCL2G2g7s" resolve="model" />
+              </node>
+            </node>
+            <node concept="liA8E" id="53jX6NPorLu" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="53jX6NPotQ2" role="3cqZAp" />
         <node concept="3cpWs8" id="1_cCL2G2_vH" role="3cqZAp">
           <node concept="3cpWsn" id="1_cCL2G2_vI" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -164,7 +200,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1_cCL2G2gew" role="3cqZAp" />
         <node concept="3clFbF" id="1_cCL2G28Vc" role="3cqZAp">
           <node concept="2YIFZM" id="1_cCL2G28Vd" role="3clFbG">
             <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -326,6 +361,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="53jX6NPout2" role="3cqZAp">
+          <node concept="3clFbS" id="53jX6NPout3" role="3clFbx">
+            <node concept="3SKdUt" id="53jX6NPout4" role="3cqZAp">
+              <node concept="3SKdUq" id="53jX6NPout5" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: we are now on server; it is unclear how to test this on the server" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="53jX6NPout6" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="53jX6NPout7" role="3clFbw">
+            <node concept="2JrnkZ" id="53jX6NPout8" role="2Oq$k0">
+              <node concept="37vLTw" id="53jX6NPout9" role="2JrQYb">
+                <ref role="3cqZAo" node="28vOu_uryPK" resolve="model" />
+              </node>
+            </node>
+            <node concept="liA8E" id="53jX6NPouta" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="53jX6NPoum_" role="3cqZAp" />
         <node concept="3cpWs8" id="28vOu_uryPN" role="3cqZAp">
           <node concept="3cpWsn" id="28vOu_uryPO" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -414,6 +470,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="53jX6NPouGQ" role="3cqZAp">
+          <node concept="3clFbS" id="53jX6NPouGR" role="3clFbx">
+            <node concept="3SKdUt" id="53jX6NPouGS" role="3cqZAp">
+              <node concept="3SKdUq" id="53jX6NPouGT" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: we are now on server; it is unclear how to test this on the server" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="53jX6NPouGU" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="53jX6NPouGV" role="3clFbw">
+            <node concept="2JrnkZ" id="53jX6NPouGW" role="2Oq$k0">
+              <node concept="37vLTw" id="53jX6NPouGX" role="2JrQYb">
+                <ref role="3cqZAo" node="28vOu_ur$ug" resolve="model" />
+              </node>
+            </node>
+            <node concept="liA8E" id="53jX6NPouGY" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="53jX6NPou$H" role="3cqZAp" />
         <node concept="3cpWs8" id="28vOu_ur$uj" role="3cqZAp">
           <node concept="3cpWsn" id="28vOu_ur$uk" role="3cpWs9">
             <property role="TrG5h" value="results" />
