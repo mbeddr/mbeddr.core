@@ -10,9 +10,9 @@
     <import index="iqxq" ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -488,13 +488,8 @@
               <node concept="1Z5TYs" id="$WtIWnA0QV" role="3cqZAp">
                 <node concept="mw_s8" id="$WtIWnA0RH" role="1ZfhKB">
                   <node concept="1Z2H0r" id="$WtIWnA0RD" role="mwGJk">
-                    <node concept="2OqwBi" id="$WtIWnA0Tn" role="1Z2MuG">
-                      <node concept="37vLTw" id="$WtIWnA0S1" role="2Oq$k0">
-                        <ref role="3cqZAo" node="$WtIWnA0Kq" resolve="part" />
-                      </node>
-                      <node concept="3TrEf2" id="$WtIWnA14w" role="2OqNvi">
-                        <ref role="3Tt5mk" to="iqxq:4IP40Bi2KcQ" />
-                      </node>
+                    <node concept="37vLTw" id="$WtIWnA0S1" role="1Z2MuG">
+                      <ref role="3cqZAo" node="$WtIWnA0Kq" resolve="part" />
                     </node>
                   </node>
                 </node>
