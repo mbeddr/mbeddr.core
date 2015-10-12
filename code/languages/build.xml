@@ -427,7 +427,7 @@
 		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	
 	</target>
 
-	<target name="build-tutorial" depends="build-sl-all">	  	   	  	  
+	<target name="build-tutorial" >	  	   	  	  
 		<ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
 		<ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
 
