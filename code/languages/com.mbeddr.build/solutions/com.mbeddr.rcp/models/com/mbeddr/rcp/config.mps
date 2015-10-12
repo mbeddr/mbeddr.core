@@ -176,11 +176,14 @@
     <node concept="2sgV4H" id="5N2iUpkaTtb" role="1l3spa">
       <ref role="1l3spb" to="xsd6:5qO$P$PtiTw" resolve="com.mbeddr.allInOne" />
       <node concept="398BVA" id="5kaST7qEwe1" role="2JcizS">
-        <ref role="398BVh" node="5kaST7qEwdo" resolve="mbeddr.allInOne.artifacts" />
+        <ref role="398BVh" node="3AVJcIMlF95" resolve="artifacts.allInOne" />
       </node>
     </node>
     <node concept="2sgV4H" id="505a8HIkc9N" role="1l3spa">
       <ref role="1l3spb" node="505a8HIkc0G" resolve="branding" />
+      <node concept="398BVA" id="3vzyAKELmgr" role="2JcizS">
+        <ref role="398BVh" node="3vzyAKELmfY" resolve="artifacts.branding" />
+      </node>
     </node>
     <node concept="398rNT" id="5msqZjqR9E5" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -205,9 +208,23 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="5kaST7qEwdo" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.allInOne.artifacts" />
-      <node concept="55IIr" id="5kaST7qF8te" role="398pKh" />
+    <node concept="398rNT" id="3AVJcIMlF95" role="1l3spd">
+      <property role="TrG5h" value="artifacts.allInOne" />
+      <node concept="398BVA" id="4MR$$QmqtJh" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="4MR$$QmqtJm" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3vzyAKELmfY" role="1l3spd">
+      <property role="TrG5h" value="artifacts.branding" />
+      <node concept="398BVA" id="3vzyAKELmfZ" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="3vzyAKELmg0" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.rcp" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
