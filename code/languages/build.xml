@@ -235,6 +235,15 @@
 		<antcall target="build-mbeddr" />
 	</target>
 
+	<target name="test-mbeddr" >
+		<antcall target="test-platform" /> 
+		<antcall target="test-debugger" />
+		<antcall target="test-core" /> 
+		<antcall target="test-performance" />
+		<antcall target="test-cc" />
+		<antcall target="test-ext" />
+	</target>
+	
 	<target name="build-and-run-tests" >
 		<antcall target="test-platform" /> 
 		<antcall target="test-debugger" />
@@ -245,7 +254,7 @@
 		<antcall target="test-analyses" />
 		<antcall target="build-tutorial" />	   	   
 		<antcall target="test-tutorial" />
-	</target>	  
+	</target>
 	
 	<target name="generate-ex-tests">
 		<antcall target="test-core-ex-aLibrary-generate" />
