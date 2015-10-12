@@ -5,6 +5,7 @@
 distros/*
 MPS/*
 mps-distrib/*
+artifacts/*
 
 .ant_targets
 .DS_Store
