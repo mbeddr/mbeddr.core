@@ -2,10 +2,10 @@
 <model ref="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -35,6 +35,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -72,6 +73,7 @@
   <node concept="1TIwiD" id="3CMDERQUHEk">
     <property role="TrG5h" value="ProgramMarkerAnnotation" />
     <property role="3GE5qa" value="suspendLocation" />
+    <property role="1pbfSe" value="824017217" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="3CMDERQUHEn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -90,6 +92,7 @@
     <property role="TrG5h" value="MarkerRef" />
     <property role="3GE5qa" value="validation.suspended" />
     <property role="R4oN_" value="Suspension Point" />
+    <property role="1pbfSe" value="824017233" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5S3xvtjDcR" role="1TKVEl">
       <property role="TrG5h" value="name" />
@@ -109,6 +112,7 @@
     <property role="TrG5h" value="DebuggerTest" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="63292775" />
     <ref role="1TJDcQ" to="tp5g:hHlH9T6" resolve="NodesTestCase" />
     <node concept="PrWs8" id="3ESKAEuEf_3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:36EXhjbTUWn" resolve="IGeneratesCodeForIDE" />
@@ -131,6 +135,7 @@
     <property role="TrG5h" value="ValidateDebuggerSuspended" />
     <property role="3GE5qa" value="validation.suspended" />
     <property role="34LRSv" value="suspended at" />
+    <property role="1pbfSe" value="63474479" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="67gjJAxY3KR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -146,6 +151,7 @@
     <property role="TrG5h" value="StepOutCommand" />
     <property role="34LRSv" value="step out" />
     <property role="R4oN_" value="performs step out 'n' times" />
+    <property role="1pbfSe" value="647806895" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ESKAEuEBRC" role="PzmwI">
       <ref role="PrY4T" node="4r78KUsjp7o" resolve="ISteppingCommand" />
@@ -159,6 +165,7 @@
     <property role="TrG5h" value="StepIntoCommand" />
     <property role="34LRSv" value="step into" />
     <property role="R4oN_" value="performs step into 'n' times" />
+    <property role="1pbfSe" value="647806900" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ESKAEuEBRz" role="PzmwI">
       <ref role="PrY4T" node="4r78KUsjp7o" resolve="ISteppingCommand" />
@@ -171,6 +178,7 @@
     <property role="3GE5qa" value="validation.stack-frames" />
     <property role="TrG5h" value="StackFramesValidationList" />
     <property role="34LRSv" value="call stack declaration" />
+    <property role="1pbfSe" value="1453228753" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3M3l$fn_oo7" role="PzmwI">
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
@@ -182,6 +190,7 @@
   <node concept="PlHQZ" id="4r78KUsjp7o">
     <property role="TrG5h" value="ISteppingCommand" />
     <property role="3GE5qa" value="stepping" />
+    <property role="1pbfSe" value="485182234" />
     <node concept="1TJgyi" id="xTAOoa4eOf" role="1TKVEl">
       <property role="TrG5h" value="times" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -190,6 +199,7 @@
   <node concept="1TIwiD" id="4r78KUsjNTz">
     <property role="TrG5h" value="BinaryRef" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="485072527" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="67gjJAxYn6l" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -202,6 +212,7 @@
     <property role="3GE5qa" value="validation.stack-frames" />
     <property role="TrG5h" value="StackFrame" />
     <property role="34LRSv" value="stack frame" />
+    <property role="1pbfSe" value="1453238455" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3W_lGXEf01Y" role="1TKVEl">
       <property role="TrG5h" value="name" />
@@ -213,6 +224,7 @@
     <property role="TrG5h" value="StepOverCommand" />
     <property role="R4oN_" value="performs step over 'n' times" />
     <property role="34LRSv" value="step over" />
+    <property role="1pbfSe" value="647806905" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ESKAEuEBRu" role="PzmwI">
       <ref role="PrY4T" node="4r78KUsjp7o" resolve="ISteppingCommand" />
@@ -225,6 +237,7 @@
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="WatchablesValidationList" />
     <property role="34LRSv" value="watchables" />
+    <property role="1pbfSe" value="1453681648" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3W_lGXEdrSz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -245,6 +258,7 @@
   <node concept="PlHQZ" id="5S3xvt8bfv">
     <property role="TrG5h" value="IDebuggerTestContent" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="560414218" />
     <node concept="1TJgyi" id="7Jr7T0w6mAd" role="1TKVEl">
       <property role="TrG5h" value="exported" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -254,6 +268,7 @@
     <property role="TrG5h" value="EmptyDebuggerContent" />
     <property role="34LRSv" value=" " />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="558794221" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5S3xvtemKz" role="PzmwI">
       <ref role="PrY4T" node="5S3xvt8bfv" resolve="IDebuggerTestContent" />
@@ -263,6 +278,7 @@
     <property role="3GE5qa" value="testcase" />
     <property role="TrG5h" value="DebuggerTestcase" />
     <property role="34LRSv" value="test" />
+    <property role="1pbfSe" value="557726176" />
     <ref role="1TJDcQ" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
     <node concept="1TJgyi" id="5S3xvtjRLp" role="1TKVEl">
       <property role="TrG5h" value="abstract" />
@@ -298,14 +314,17 @@
   <node concept="PlHQZ" id="5S3xvtjRLj">
     <property role="3GE5qa" value="testcase" />
     <property role="TrG5h" value="IDebuggerTestcaseConfigurationElement" />
+    <property role="1pbfSe" value="557348246" />
   </node>
   <node concept="PlHQZ" id="5S3xvtjZNw">
     <property role="3GE5qa" value="testcase" />
     <property role="TrG5h" value="IDebuggerTestcaseConfiguration" />
+    <property role="1pbfSe" value="557315337" />
   </node>
   <node concept="1TIwiD" id="5S3xvtjZNx">
     <property role="3GE5qa" value="suspend" />
     <property role="TrG5h" value="SuspensionPointConfiguration" />
+    <property role="1pbfSe" value="557315336" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5S3xvtjZNK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -319,6 +338,7 @@
   <node concept="1TIwiD" id="5S3xvtjZNL">
     <property role="3GE5qa" value="suspend" />
     <property role="TrG5h" value="MarkerReference" />
+    <property role="1pbfSe" value="557315320" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5S3xvtk5R4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -335,6 +355,7 @@
     <property role="TrG5h" value="SuperConfigurationElement" />
     <property role="R4oN_" value="Invokes configuration of extended test case" />
     <property role="34LRSv" value="super" />
+    <property role="1pbfSe" value="557315318" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5S3xvtkie6" role="PzmwI">
       <ref role="PrY4T" node="5S3xvtkie2" resolve="ISuspensionConfigurationElement" />
@@ -349,6 +370,7 @@
   <node concept="PlHQZ" id="5S3xvtkie2">
     <property role="3GE5qa" value="suspend" />
     <property role="TrG5h" value="ISuspensionConfigurationElement" />
+    <property role="1pbfSe" value="557239911" />
     <node concept="PrWs8" id="5S3xvtkie4" role="PrDN$">
       <ref role="PrY4T" node="5S3xvtjRLj" resolve="IDebuggerTestcaseConfigurationElement" />
     </node>
@@ -356,6 +378,7 @@
   <node concept="PlHQZ" id="5S3xvtkvmT">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="ISteppingConfigurationElement" />
+    <property role="1pbfSe" value="557186096" />
     <node concept="PrWs8" id="5S3xvtkvmX" role="PrDN$">
       <ref role="PrY4T" node="5S3xvtjRLj" resolve="IDebuggerTestcaseConfigurationElement" />
     </node>
@@ -363,6 +386,7 @@
   <node concept="1TIwiD" id="5S3xvtkvmV">
     <property role="3GE5qa" value="stepping" />
     <property role="TrG5h" value="SteppingConfiguration" />
+    <property role="1pbfSe" value="557186094" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5S3xvtkvmY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -377,6 +401,7 @@
   <node concept="1TIwiD" id="3M3l$fn_bWG">
     <property role="3GE5qa" value="validation" />
     <property role="TrG5h" value="ValidationConfiguration" />
+    <property role="1pbfSe" value="337122671" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3M3l$fn_bXa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -391,6 +416,7 @@
   <node concept="PlHQZ" id="3M3l$fn_bXb">
     <property role="3GE5qa" value="validation" />
     <property role="TrG5h" value="IValidationConfigurationElement" />
+    <property role="1pbfSe" value="337122702" />
     <node concept="PrWs8" id="3M3l$fn_bXd" role="PrDN$">
       <ref role="PrY4T" node="5S3xvtjRLj" resolve="IDebuggerTestcaseConfigurationElement" />
     </node>
@@ -398,6 +424,7 @@
   <node concept="PlHQZ" id="7Jr7T0w5cWg">
     <property role="TrG5h" value="IDebuggerTestDeclaration" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="1678774624" />
     <node concept="PrWs8" id="7Jr7T0w5cWi" role="PrDN$">
       <ref role="PrY4T" node="5S3xvt8bfv" resolve="IDebuggerTestContent" />
     </node>
@@ -408,6 +435,7 @@
   <node concept="1TIwiD" id="7Jr7T0w5VNK">
     <property role="TrG5h" value="DebuggerTestReference" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="1678582656" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7Jr7T0w5VNL" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -420,6 +448,7 @@
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="WatchableExpression" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1852947146" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5YGS28LYBDH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -429,12 +458,14 @@
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="WatchableNameExpression" />
     <property role="34LRSv" value="name" />
+    <property role="1pbfSe" value="1852947144" />
     <ref role="1TJDcQ" node="5YGS28LSmkk" resolve="WatchableExpression" />
   </node>
   <node concept="1TIwiD" id="5YGS28LSmkr">
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="WatchableWithValueExpression" />
     <property role="34LRSv" value="=" />
+    <property role="1pbfSe" value="1852947139" />
     <ref role="1TJDcQ" node="5YGS28LSmkk" resolve="WatchableExpression" />
     <node concept="1TJgyj" id="5YGS28LSmks" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -453,12 +484,14 @@
     <property role="3GE5qa" value="validation.watches.values" />
     <property role="TrG5h" value="ValueExpression" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1852947136" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5YGS28LSmkI">
     <property role="3GE5qa" value="validation.watches.values" />
     <property role="TrG5h" value="PrimitiveValueExpression" />
     <property role="34LRSv" value="primitive value" />
+    <property role="1pbfSe" value="1852947120" />
     <ref role="1TJDcQ" node="5YGS28LSmku" resolve="ValueExpression" />
     <node concept="1TJgyj" id="5YGS28LTIdp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -470,6 +503,7 @@
     <property role="3GE5qa" value="validation.watches.values" />
     <property role="TrG5h" value="ComplexValueExpression" />
     <property role="34LRSv" value="complex value" />
+    <property role="1pbfSe" value="1852621463" />
     <ref role="1TJDcQ" node="5YGS28LSmku" resolve="ValueExpression" />
     <node concept="1TJgyj" id="5YGS28LT_Pa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -487,6 +521,7 @@
     <property role="3GE5qa" value="validation.watches.values.literals" />
     <property role="TrG5h" value="LiteralValue" />
     <property role="34LRSv" value="literal" />
+    <property role="1pbfSe" value="1852587235" />
     <ref role="1TJDcQ" node="5YGS28LTIbW" resolve="WatchableValue" />
     <node concept="1TJgyi" id="5YGS28LTIdl" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -497,12 +532,14 @@
     <property role="3GE5qa" value="validation.watches.values.literals" />
     <property role="TrG5h" value="WatchableValue" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1852587234" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5YGS28LTIbZ">
     <property role="3GE5qa" value="validation.watches.values.literals" />
     <property role="TrG5h" value="RegexValue" />
     <property role="34LRSv" value="regular expression" />
+    <property role="1pbfSe" value="1852587231" />
     <ref role="1TJDcQ" node="5YGS28LTIbW" resolve="WatchableValue" />
     <node concept="1TJgyj" id="5YGS28LTIc0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -515,6 +552,7 @@
     <property role="3GE5qa" value="watchables" />
     <property role="TrG5h" value="WatchablesDeclaration" />
     <property role="34LRSv" value="specific watchables" />
+    <property role="1pbfSe" value="1618734219" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4WY_RKGyy8M" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -538,6 +576,7 @@
   <node concept="1TIwiD" id="13C5RDf_2qZ">
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="WatchableDeclarationReference" />
+    <property role="1pbfSe" value="1618755129" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="13C5RDf_8kE" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -553,6 +592,7 @@
     <property role="3GE5qa" value="stackframe" />
     <property role="TrG5h" value="StackFramesDeclaration" />
     <property role="34LRSv" value="call stack" />
+    <property role="1pbfSe" value="1619252150" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="13C5RDfAVKX" role="PzmwI">
       <ref role="PrY4T" node="7Jr7T0w5cWg" resolve="IDebuggerTestDeclaration" />
@@ -564,6 +604,7 @@
   <node concept="PlHQZ" id="13C5RDfAVMM">
     <property role="3GE5qa" value="validation.stack-frames" />
     <property role="TrG5h" value="IStackFrameList" />
+    <property role="1pbfSe" value="1619252268" />
     <node concept="1TJgyj" id="13C5RDfAVMN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stackFrames" />
@@ -575,6 +616,7 @@
     <property role="3GE5qa" value="validation.stack-frames" />
     <property role="TrG5h" value="StackFramesReference" />
     <property role="34LRSv" value="call stack reference" />
+    <property role="1pbfSe" value="1619328866" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="13C5RDfBevD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -589,6 +631,7 @@
     <property role="TrG5h" value="DebuggerTestLibrary" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="2076268681" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4WY_RKGwG4h" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -603,6 +646,7 @@
   <node concept="PlHQZ" id="4WY_RKGwTn2">
     <property role="TrG5h" value="IDebuggerTest" />
     <property role="3GE5qa" value="module" />
+    <property role="1pbfSe" value="2076323134" />
     <node concept="1TJgyj" id="4WY_RKGwVTo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -623,6 +667,7 @@
     <property role="3GE5qa" value="validation" />
     <property role="TrG5h" value="DebuggerDetachedValidation" />
     <property role="34LRSv" value="detached" />
+    <property role="1pbfSe" value="430665393" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1WWn8BUrL8D" role="PzmwI">
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
@@ -633,6 +678,7 @@
     <property role="TrG5h" value="ResumeCommand" />
     <property role="34LRSv" value="resume" />
     <property role="R4oN_" value="resumes debugger" />
+    <property role="1pbfSe" value="860920721" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2Zy_zYsNcSL" role="PzmwI">
       <ref role="PrY4T" node="5S3xvtkvmT" resolve="ISteppingConfigurationElement" />
@@ -642,6 +688,7 @@
     <property role="3GE5qa" value="validation" />
     <property role="TrG5h" value="OnPlatform" />
     <property role="34LRSv" value="on platform" />
+    <property role="1pbfSe" value="1459486784" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4TbX0$8GCcQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -682,6 +729,7 @@
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="ElseOnPlatform" />
     <property role="34LRSv" value="else" />
+    <property role="1pbfSe" value="1460172883" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4TbX0$8JaJF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -701,6 +749,7 @@
   <node concept="PlHQZ" id="4TbX0$8SAJ9">
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="PlatformValidationElement" />
+    <property role="1pbfSe" value="1462656978" />
     <node concept="1TJgyi" id="4TbX0$8SAVy" role="1TKVEl">
       <property role="TrG5h" value="platform" />
       <ref role="AX2Wp" node="4TbX0$8Gx8Q" resolve="Platforms" />
@@ -710,6 +759,7 @@
     <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="EmptyValidationConfigurationElement" />
     <property role="34LRSv" value=" " />
+    <property role="1pbfSe" value="1463178634" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4TbX0$8UA6P" role="PzmwI">
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
@@ -718,11 +768,13 @@
   <node concept="PlHQZ" id="5t7wq7uqigT">
     <property role="TrG5h" value="IDebuggerBackend" />
     <property role="3GE5qa" value="backend" />
+    <property role="1pbfSe" value="900769242" />
   </node>
   <node concept="1TIwiD" id="5t7wq7uqihH">
     <property role="TrG5h" value="GdbDebuggerBackend" />
     <property role="34LRSv" value="gdb" />
     <property role="3GE5qa" value="backend" />
+    <property role="1pbfSe" value="900769294" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5t7wq7uqihI" role="PzmwI">
       <ref role="PrY4T" node="5t7wq7uqigT" resolve="IDebuggerBackend" />
@@ -732,6 +784,7 @@
     <property role="3GE5qa" value="validation" />
     <property role="TrG5h" value="DebuggerRunningValidation" />
     <property role="34LRSv" value="running" />
+    <property role="1pbfSe" value="1875014100" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6g5LwObJaLz" role="PzmwI">
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
@@ -740,6 +793,7 @@
   <node concept="1TIwiD" id="7GeSf11WKhV">
     <property role="TrG5h" value="DebuggerTestcaseReference" />
     <property role="3GE5qa" value="testcase" />
+    <property role="1pbfSe" value="1123949205" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7GeSf11WW5t" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -752,6 +806,7 @@
     <property role="TrG5h" value="LevelStackDeclaration" />
     <property role="34LRSv" value="level stack" />
     <property role="3GE5qa" value="level" />
+    <property role="1pbfSe" value="273031268" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ELV2aP28nk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -774,6 +829,7 @@
   <node concept="1TIwiD" id="3ELV2aP28jy">
     <property role="3GE5qa" value="level" />
     <property role="TrG5h" value="LevelDeclaration" />
+    <property role="1pbfSe" value="272994044" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ELV2aP9B$L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -787,6 +843,7 @@
   <node concept="PlHQZ" id="3ELV2aP9B$O">
     <property role="3GE5qa" value="level" />
     <property role="TrG5h" value="ICallStack" />
+    <property role="1pbfSe" value="271030954" />
     <node concept="1TJgyj" id="3ELV2aQBCA3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stackFrames" />
@@ -806,6 +863,7 @@
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="CallStackDeclaration" />
     <property role="34LRSv" value="call stack declaration" />
+    <property role="1pbfSe" value="246385248" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ELV2aQBC_Z" role="PzmwI">
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
@@ -821,6 +879,7 @@
     <property role="3GE5qa" value="stackframe" />
     <property role="TrG5h" value="ExtendedStackFrame" />
     <property role="34LRSv" value="extended stack frame" />
+    <property role="1pbfSe" value="246385244" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ELV2aQBEAn" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -836,6 +895,7 @@
     <property role="3GE5qa" value="stackframe" />
     <property role="TrG5h" value="StackFrameDeclaration" />
     <property role="34LRSv" value="stack frame declaration" />
+    <property role="1pbfSe" value="1676109390" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4UpzItLCfK" role="PzmwI">
       <ref role="PrY4T" node="4UpzItKmJc" resolve="IStackFrame" />
@@ -844,6 +904,7 @@
   <node concept="1TIwiD" id="6kCxLkT8ihX">
     <property role="TrG5h" value="CallStackReferencee" />
     <property role="3GE5qa" value="callstack" />
+    <property role="1pbfSe" value="1639339118" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kCxLkT8ii8" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -856,6 +917,7 @@
     <property role="TrG5h" value="AnyLocation" />
     <property role="34LRSv" value="&lt;any location&gt;" />
     <property role="3GE5qa" value="suspendLocation" />
+    <property role="1pbfSe" value="1619762441" />
     <node concept="PrWs8" id="6kCxLkUvEym" role="PzmwI">
       <ref role="PrY4T" node="6kCxLkUvEyl" resolve="ISuspendLocation" />
     </node>
@@ -863,11 +925,13 @@
   <node concept="PlHQZ" id="6kCxLkUvEyl">
     <property role="TrG5h" value="ISuspendLocation" />
     <property role="3GE5qa" value="suspendLocation" />
+    <property role="1pbfSe" value="1616433238" />
   </node>
   <node concept="1TIwiD" id="6kCxLkUIb9D">
     <property role="TrG5h" value="SpecificStackFrameName" />
     <property role="34LRSv" value="specific stack frame" />
     <property role="3GE5qa" value="stackframe" />
+    <property role="1pbfSe" value="1612629634" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6kCxLkUIb9E" role="1TKVEl">
       <property role="TrG5h" value="name" />
@@ -880,11 +944,13 @@
   <node concept="PlHQZ" id="6kCxLkUWty9">
     <property role="TrG5h" value="IStackFrameName" />
     <property role="3GE5qa" value="stackframe" />
+    <property role="1pbfSe" value="1608884322" />
   </node>
   <node concept="1TIwiD" id="6kCxLkUWtGn">
     <property role="TrG5h" value="AnyStackFrameName" />
     <property role="34LRSv" value="&lt;any stack frame name&gt;" />
     <property role="3GE5qa" value="stackframe" />
+    <property role="1pbfSe" value="1608883668" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6kCxLkV1bya" role="PzmwI">
       <ref role="PrY4T" node="6kCxLkUWty9" resolve="IStackFrameName" />
@@ -894,6 +960,7 @@
     <property role="TrG5h" value="AnyWatchables" />
     <property role="34LRSv" value="&lt;any watchables&gt;" />
     <property role="3GE5qa" value="watchables" />
+    <property role="1pbfSe" value="1601128758" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6kCxLkVq35D" role="PzmwI">
       <ref role="PrY4T" node="6kCxLkVq32h" resolve="IWatchables" />
@@ -902,10 +969,12 @@
   <node concept="PlHQZ" id="6kCxLkVq32h">
     <property role="TrG5h" value="IWatchables" />
     <property role="3GE5qa" value="watchables" />
+    <property role="1pbfSe" value="1601128538" />
   </node>
   <node concept="PlHQZ" id="4UpzItKmJc">
     <property role="3GE5qa" value="stackframe" />
     <property role="TrG5h" value="IStackFrame" />
+    <property role="1pbfSe" value="1627663865" />
     <node concept="1TJgyj" id="6kCxLkVtMXz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="watches" />
@@ -925,10 +994,12 @@
   <node concept="PlHQZ" id="4UpzIuJLhy">
     <property role="TrG5h" value="IExtendedWatchables" />
     <property role="3GE5qa" value="watchables" />
+    <property role="1pbfSe" value="1611040099" />
   </node>
   <node concept="1TIwiD" id="5Wc0QVxnu$I">
     <property role="3GE5qa" value="level" />
     <property role="TrG5h" value="LevelStackReference" />
+    <property role="1pbfSe" value="1080683676" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5Wc0QVxnu_7" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -941,6 +1012,7 @@
     <property role="3GE5qa" value="level" />
     <property role="TrG5h" value="ExtendedCallStack" />
     <property role="34LRSv" value="extended call stack" />
+    <property role="1pbfSe" value="1083109685" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="43ZV6u9gz4d" role="1TKVEi">
       <property role="20lmBu" value="reference" />

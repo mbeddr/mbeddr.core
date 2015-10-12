@@ -2,7 +2,7 @@
 <model ref="r:8dacfd33-5fda-4226-ab2e-b324448953c1(com.mbeddr.core.debug.util.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -28,6 +31,7 @@
   <node concept="1TIwiD" id="7W4QWPKBV5B">
     <property role="TrG5h" value="MbeddrClassConcept" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="274428620" />
     <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
     <node concept="PrWs8" id="7W4QWPKBV5C" role="PzmwI">
       <ref role="PrY4T" to="vs0r:36EXhjbTUWn" resolve="IGeneratesCodeForIDE" />

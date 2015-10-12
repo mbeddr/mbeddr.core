@@ -2,13 +2,13 @@
 <model ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -26,6 +26,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -59,6 +60,7 @@
   <node concept="PlHQZ" id="35E98Eq2KJO">
     <property role="TrG5h" value="IInitPart" />
     <property role="3GE5qa" value="member" />
+    <property role="1pbfSe" value="881512322" />
     <node concept="1TJgyj" id="4IP40Bi2KcQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
@@ -76,6 +78,7 @@
     <property role="TrG5h" value="AncestorMember" />
     <property role="34LRSv" value="ancestor" />
     <property role="R4oN_" value="ancestor : expression" />
+    <property role="1pbfSe" value="881510891" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35E98Eq2L6c" role="PzmwI">
       <ref role="PrY4T" node="35E98Eq2KJO" resolve="IInitPart" />
@@ -86,6 +89,7 @@
     <property role="TrG5h" value="TypeMember" />
     <property role="34LRSv" value="type" />
     <property role="R4oN_" value="type : concept" />
+    <property role="1pbfSe" value="881510874" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35E98Eq2L6t" role="PzmwI">
       <ref role="PrY4T" node="35E98Eq2KJO" resolve="IInitPart" />
@@ -96,6 +100,7 @@
     <property role="TrG5h" value="ParentMember" />
     <property role="34LRSv" value="parent" />
     <property role="R4oN_" value="parent : expression" />
+    <property role="1pbfSe" value="881510872" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35E98Eq2L6v" role="PzmwI">
       <ref role="PrY4T" node="35E98Eq2KJO" resolve="IInitPart" />
@@ -108,6 +113,7 @@
     <property role="TrG5h" value="Pattern" />
     <property role="34LRSv" value="&lt;pattern&gt;" />
     <property role="R4oN_" value="pattern" />
+    <property role="1pbfSe" value="881498703" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4IP40Bi2$Eu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -130,6 +136,7 @@
     <property role="TrG5h" value="LinkMember" />
     <property role="R4oN_" value="link : expression" />
     <property role="34LRSv" value="&lt;{link}&gt;" />
+    <property role="1pbfSe" value="881254532" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IP40Bi38Ss" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -146,6 +153,7 @@
     <property role="TrG5h" value="PropertyMember" />
     <property role="R4oN_" value="property : value" />
     <property role="34LRSv" value="&lt;{property}&gt;" />
+    <property role="1pbfSe" value="881254527" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IP40Bi2KcA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -160,6 +168,7 @@
   <node concept="1TIwiD" id="35E98Eq3U8I">
     <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="PatternBuilderNode" />
+    <property role="1pbfSe" value="881211720" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="4IP40Bi2KcV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -182,11 +191,13 @@
   </node>
   <node concept="PlHQZ" id="53_zXRSI6_">
     <property role="TrG5h" value="IPatternContext" />
+    <property role="1pbfSe" value="2032564196" />
   </node>
   <node concept="1TIwiD" id="53_zXRSKfJ">
     <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="PatternBuilderExpression" />
     <property role="34LRSv" value="#" />
+    <property role="1pbfSe" value="2032572974" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="76efOMRCLcK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -202,6 +213,7 @@
     <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="PatternBuilderList" />
     <property role="34LRSv" value="[list]" />
+    <property role="1pbfSe" value="2032592317" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="76efOMRCHWN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -222,6 +234,7 @@
     <property role="TrG5h" value="PatternRefExpression" />
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="pattern ref" />
+    <property role="1pbfSe" value="2032604671" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="53_zXRSRZ1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -237,6 +250,7 @@
     <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="PatternType" />
     <property role="34LRSv" value="Pattern" />
+    <property role="1pbfSe" value="2032709412" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="53_zXRThzA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -262,6 +276,7 @@
   <node concept="1TIwiD" id="$WtIWn_nVz">
     <property role="3GE5qa" value="member" />
     <property role="TrG5h" value="MemberAnnotation" />
+    <property role="1pbfSe" value="550630866" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="$WtIWn_nV$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

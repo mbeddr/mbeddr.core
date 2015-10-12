@@ -833,6 +833,9 @@
       <node concept="m$_yC" id="4opyGmdCDDq" role="m$_yJ">
         <ref role="m$_y1" node="6Y0V2RJk3uw" resolve="de.itemis.mps.selection" />
       </node>
+      <node concept="m$_yC" id="1x69Amk7MyO" role="m$_yJ">
+        <ref role="m$_y1" node="7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
+      </node>
       <node concept="3_J27D" id="4be$WTb1MZK" role="m_cZH">
         <node concept="3Mxwew" id="4be$WTb1MZL" role="3MwsjC">
           <property role="3MwjfP" value="de.itemis.mps.editor.diagram" />

@@ -718,6 +718,7 @@
       <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips" />
       <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips" />
       <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor" />
+      <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor" />
       <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks" />
       <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks" />
       <pathelement location="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons" />
@@ -771,6 +772,9 @@
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor">
           <include name="**/lib/*.jar" />
         </fileset>
         <fileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor">

@@ -221,6 +221,7 @@
         <depends>de.itemis.mps.tooltips</depends>
         <depends>de.itemis.mps.editor.widgets</depends>
         <depends>de.itemis.mps.selection</depends>
+        <depends>de.slisson.mps.conditionalEditor</depends>
         <idea-version since-build="141.1" until-build="142.1" />
         
         <extensions defaultExtensionNs="com.intellij">
