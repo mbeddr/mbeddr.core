@@ -126,6 +126,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -767,6 +768,85 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="LQ9d6zvvr0" role="1SL9yI">
+      <property role="TrG5h" value="deepRecursiveFunctionCall" />
+      <node concept="3cqZAl" id="LQ9d6zvvr1" role="3clF45" />
+      <node concept="3clFbS" id="LQ9d6zvvr2" role="3clF47">
+        <node concept="3cpWs8" id="LQ9d6zvvr3" role="3cqZAp">
+          <node concept="3cpWsn" id="LQ9d6zvvr4" role="3cpWs9">
+            <property role="TrG5h" value="interpreter" />
+            <node concept="3uibUv" id="LQ9d6zvvr5" role="1tU5fm">
+              <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+            </node>
+            <node concept="2OqwBi" id="LQ9d6zvvr6" role="33vP2m">
+              <node concept="2WthIp" id="LQ9d6zvvr7" role="2Oq$k0" />
+              <node concept="2XshWL" id="LQ9d6zvvr8" role="2OqNvi">
+                <ref role="2WH_rO" node="5kiZIBgBuTP" resolve="getCInterpreter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="LQ9d6zvvr9" role="3cqZAp">
+          <node concept="3cpWsn" id="LQ9d6zvvra" role="3cpWs9">
+            <property role="TrG5h" value="context" />
+            <node concept="3uibUv" id="LQ9d6zvvrb" role="1tU5fm">
+              <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+            </node>
+            <node concept="2ShNRf" id="LQ9d6zvvrc" role="33vP2m">
+              <node concept="1pGfFk" id="LQ9d6zvvrd" role="2ShVmc">
+                <ref role="37wK5l" to="2ahs:27SkbdzdAWl" resolve="ContextImpl" />
+                <node concept="37vLTw" id="LQ9d6zvvre" role="37wK5m">
+                  <ref role="3cqZAo" node="LQ9d6zvvr4" resolve="interpreter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="LQ9d6zvvrf" role="3cqZAp">
+          <node concept="3cpWsn" id="LQ9d6zvvrg" role="3cpWs9">
+            <property role="TrG5h" value="code" />
+            <node concept="1ajhzC" id="LQ9d6zvvrh" role="1tU5fm">
+              <node concept="3cqZAl" id="LQ9d6zvvri" role="1ajl9A" />
+            </node>
+            <node concept="1bVj0M" id="LQ9d6zvvrj" role="33vP2m">
+              <node concept="3clFbS" id="LQ9d6zvvrk" role="1bW5cS">
+                <node concept="3clFbF" id="LQ9d6zvvrl" role="3cqZAp">
+                  <node concept="2OqwBi" id="LQ9d6zvvrm" role="3clFbG">
+                    <node concept="37vLTw" id="LQ9d6zvvrn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="LQ9d6zvvr4" resolve="interpreter" />
+                    </node>
+                    <node concept="liA8E" id="LQ9d6zvvro" role="2OqNvi">
+                      <ref role="37wK5l" to="2ahs:2X4$XGmegKw" resolve="evaluate" />
+                      <node concept="3xONca" id="LQ9d6zv$Pk" role="37wK5m">
+                        <ref role="3xOPvv" node="LQ9d6zvpck" resolve="deepRecursiveFunctionCall" />
+                      </node>
+                      <node concept="37vLTw" id="LQ9d6zvvrq" role="37wK5m">
+                        <ref role="3cqZAo" node="LQ9d6zvvra" resolve="context" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="LQ9d6zvvrr" role="3cqZAp">
+          <node concept="2YIFZM" id="LQ9d6zvvrs" role="3clFbG">
+            <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
+            <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
+            <node concept="3cmrfG" id="LQ9d6zvvrt" role="37wK5m">
+              <property role="3cmrfH" value="100" />
+            </node>
+            <node concept="37vLTw" id="LQ9d6zvvru" role="37wK5m">
+              <ref role="3cqZAo" node="LQ9d6zvvrg" resolve="code" />
+            </node>
+            <node concept="Xl_RD" id="LQ9d6zvvrv" role="37wK5m">
+              <property role="Xl_RC" value="deepRecursiveFunctionCallEvaluation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="4QsoB8VJJzY" role="1SKRRt">
       <node concept="2BOciq" id="4QsoB8VJJzZ" role="1qenE9">
         <node concept="3TlMh9" id="4QsoB8VJJ$0" role="3TlMhJ">
@@ -976,6 +1056,18 @@
                 </node>
                 <node concept="7CXmI" id="4yevF$U0dw1" role="lGtFl">
                   <node concept="7OXhh" id="4yevF$U0jGY" role="7EUXB" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="LQ9d6zvmHJ" role="3XIRFZ" />
+            <node concept="1_9egQ" id="LQ9d6zvmIp" role="3XIRFZ">
+              <node concept="3O_q_g" id="LQ9d6zvmIn" role="1_9egR">
+                <ref role="3O_q_h" node="5kiZIBgBjwd" resolve="fac" />
+                <node concept="3TlMh9" id="LQ9d6zvnPy" role="3O_q_j">
+                  <property role="2hmy$m" value="500" />
+                </node>
+                <node concept="3xLA65" id="LQ9d6zvpck" role="lGtFl">
+                  <property role="TrG5h" value="deepRecursiveFunctionCall" />
                 </node>
               </node>
             </node>
