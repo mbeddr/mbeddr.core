@@ -1,461 +1,457 @@
-  <project name="mbeddr download and deploy plugins" default="clean-and-build" >
+<project name="mbeddr download and deploy plugins" default="clean-and-build" >
+	<!-- import properties -->
+	<property file="build.properties"/>  
 
-    <property file="build.properties"/>  
-    <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/TeamcityMakeTests.jar" />
+	<!-- validations -->
+	<property name="plugins.folder.name" value="plugins"/>
+	<fail unless="mps.home">mps.home must be set in your build.properties</fail>
+	<fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
+	<fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
+		<condition>
+			<not>
+				<resourcecount count="1">
+					<dirset dir="${mps.home}" >
+						<include name="${plugins.folder.name}"/>
+					</dirset> 
+				</resourcecount>
+			</not>
+		</condition>
+	</fail>
+	  
+	<!-- custom ant tasks -->
+	<taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/TeamcityMakeTests.jar" />
 
-    <!-- url/mps properties -->
-    <property name="plugins.folder.name" value="plugins"/>
-    <property name="latest-build" value="status:SUCCESS"/> 
-    <property name="branch.spawner" value="branch:master"/>
-    <property name="server.url" value="http://build.mbeddr.com"/>   
-    <property name="server.port" value="80"/>    
-    <property name="base-url" value="https://build.mbeddr.com/guestAuth/app/rest/builds"/>
+	<!-- misc properties -->
+	<property name="mbeddr.scripts.base-path" value="${mbeddr.github.core.home}/build" />
+	<property name="sl-all.scripts.base-path" value="${mbeddr.github.core.home}/code/plugins" />
+	<property name="build.dir" value="${mbeddr.github.core.home}" />
+	<property name="artifacts.root" value="${build.dir}/artifacts" />
+	<property name="clean-generated-code.task" value="cleanSources" /> 
+	<property name="clean-plugins.task" value="clean" /> 
+	<property name="generate-code.task" value="generate" /> 
+	<property name="build-plugin.task" value="assemble" /> 
+	<property name="run-tests.task" value="check" />
+	
+	<!-- de.slisson.mps.all -->
+	<property name="de.slisson.mps.all.build-file.location" value="${sl-all.scripts.base-path}/sl-all" />
+	<property name="de.slisson.mps.all.build-file.name" value="build.xml" />
+	<property name="mps-sl-all.zip-file.name" value="mps-sl-all.zip" />
+	<property name="mps-sl-all.expanded-folder.name" value="mps-sl-all" />
 
-    <!-- de.slisson.mps.all -->
-    <property name="de.slisson.mps.all.build-path.postfix" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/artifacts/mps-sl-all" />
-    <property name="de.slisson.mps.all.build-file.location" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
-    <property name="de.slisson.mps.all.build-file.name" value="build.xml" />
-    <property name="de.slisson.mps.all.working-dir" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
-    <property name="mps-sl-all.zip-file.name" value="mps-sl-all.zip" />
-    <property name="mps-sl-all.expanded-folder.name" value="mps-sl-all" />
-    <property name="mps-sl-all.build-id" value="buildType:RichtextTables_MpsSlAll" />
-    <property name="mps-sl-all.build-path" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/artifacts/mps-sl-all" />
-    <property name="mps-sl-all.build-tmp" value="${mbeddr.github.core.home}/code/plugins/sl-all/build/tmp" />
-    <property name="artifacts.mps-sl-all" value="${mps-sl-all.build-path}" />
-
-    <!-- com.mbeddr.mbeddr -->
-    <property name="com.mbeddr.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.build/build/artifacts/mbeddr" />  
-    <property name="com.mbeddr.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.build" />    
-    <property name="com.mbeddr.build-file.name" value="build.xml" />  
-    <property name="com.mbeddr.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />  
-    <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
+	<!-- com.mbeddr.mbeddr -->
+	<property name="com.mbeddr.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.build" />    
+	<property name="com.mbeddr.build-file.name" value="build.xml" />  
+	<property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
     
-
-    <!-- com.mbeddr.debugger -->  
-    <property name="com.mbeddr.debugger.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />  
-    <property name="com.mbeddr.debugger.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger" />    
-    <property name="com.mbeddr.debugger.tests-build-file.name" value="build-tests.xml" />  
-    <property name="com.mbeddr.debugger.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />  
-
-    <!-- com.mbeddr.core -->  
-    <property name="com.mbeddr.core.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />  
-    <property name="com.mbeddr.core.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.core" />    
-    <property name="com.mbeddr.core.ts-tests-build-file.name" value="build-ts-tests.xml" />  
-    <property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
-    <property name="com.mbeddr.core.aLibrary-build-file.name" value="build-aLibrary.xml" />    
-    <property name="com.mbeddr.core.ex-tests-build-file.name" value="build-ex-tests.xml" />  
-    <property name="com.mbeddr.core.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />  
-
-    <!-- com.mbeddr.doc -->  
-    <property name="com.mbeddr.doc.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.doc/build/artifacts/com.mbeddr.doc.build" />  
-    <property name="com.mbeddr.doc.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.doc" />    
-    <property name="com.mbeddr.doc.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />  
-
-    <!-- com.mbeddr.cc -->  
-    <property name="com.mbeddr.cc.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.cc/build/artifacts/com.mbeddr.cc.build" />  
-    <property name="com.mbeddr.cc.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.cc" />    
-    <property name="com.mbeddr.cc.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
-    <property name="com.mbeddr.cc.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
-    <property name="com.mbeddr.cc.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />  
-
-    <!-- com.mbeddr.debugger.testing -->  
-    <property name="com.mbeddr.debugger.testing.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger.testing.build" />  
-    <property name="com.mbeddr.debugger.testing.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.debugger.testing" />     
-    <property name="com.mbeddr.debugger.testing.runtime-tests-build-file.name" value="debugger-testing.tests.runtime.xml" /> 
-    <property name="com.mbeddr.debugger.testing.runtime-build-file.name" value="debugger-testing.xml" /> 
-    <property name="com.mbeddr.debugger.testing.cross-build-file.name" value="debugger.testing.tests.cross.xml" /> 
-    <property name="com.mbeddr.debugger.testing.core-tests-build-file.name" value="debugger.testing.tests.core.xml" /> 
-    <property name="com.mbeddr.debugger.testing.statemachine-tests-build-file.name" value="debugger.testing.tests.ext.statemachines.xml" /> 
-    <property name="com.mbeddr.debugger.testing.physical-units-tests-build-file.name" value="debugger.testing.tests.ext.physical-units.xml" /> 
-    <property name="com.mbeddr.debugger.testing.components-tests-build-file.name" value="debugger.testing.tests.ext.components.xml" /> 
-    <property name="com.mbeddr.debugger.testing.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.testing" />  
-
-    <!-- com.mbeddr.ext -->  
-    <property name="com.mbeddr.ext.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.ext/build/artifacts/com.mbeddr.ext.build" />  
-    <property name="com.mbeddr.ext.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.ext" />     
-    <property name="com.mbeddr.ext.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
-    <property name="com.mbeddr.ext.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
-    <property name="com.mbeddr.ext.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />  
-
-    <!-- com.mbeddr.analyses -->  
-    <property name="com.mbeddr.analyses.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.analyses/build/artifacts/com.mbeddr.analyses.build" />  
-    <property name="com.mbeddr.analyses.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.analyses" />     
-    <property name="com.mbeddr.analyses.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
-    <property name="com.mbeddr.analyses.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
-    <property name="com.mbeddr.analyses.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses" />  
-
-    <!-- mbeddr.tutorial -->
-    <property name="com.mbeddr.tutorial.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.tutorial/build/artifacts/com.mbeddr.tutorial" />  
-    <property name="com.mbeddr.tutorial.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.tutorial" />    
-    <property name="com.mbeddr.tutorial.languages-build-file.name" value="build-languages.xml" /> 
-    <property name="com.mbeddr.tutorial.solutions-build-file.name" value="build-solutions.xml" /> 
-    <property name="com.mbeddr.tutorial.tests-build-file.name" value="build-tests.xml" /> 
-    <property name="com.mbeddr.tutorial.working-dir" value="${mbeddr.github.core.home}/applications/tutorial" />  
-
-    <!-- mbeddr.platform -->
-    <property name="com.mbeddr.platform.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform" />  
-    <property name="com.mbeddr.platform.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.platform" />    
-    <property name="com.mbeddr.platform.build-file.name" value="build.xml" /> 
-    <property name="com.mbeddr.platform.test-build-file.name" value="build-ts-tests.xml" /> 
-    <property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
-
-    <!-- mbeddr.allScripts -->
-    <property name="com.mbeddr.allScripts.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.allScripts/build/artifacts/com.mbeddr.allScripts" />  
-    <property name="com.mbeddr.allScripts.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.allScripts" />    
-    <property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
-    <property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />  
-
-    <!-- misc -->
-    <property name="clean-generated-code.task" value="cleanSources" /> 
-    <property name="clean-plugins.task" value="clean" /> 
-    <property name="generate-code.task" value="generate" /> 
-    <property name="build-plugin.task" value="assemble" /> 
-    <property name="run-tests.task" value="check" />      
-
-    <!-- validations -->
-    <fail unless="mps.home">mps.home must be set in your build.properties</fail>
-    <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
-    <fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
-      <condition>
-        <not>
-          <resourcecount count="1">
-            <dirset dir="${mps.home}" >
-             <include name="${plugins.folder.name}"/>
-         </dirset> 
-     </resourcecount>
- </not>
-</condition>
-</fail> 
-
-<target name="clean-and-build" >
-    <antcall target="build-allScripts" />
-    <antcall target="clean" />
-    <antcall target="build-languages" />	
-    <antcall target="copy-spawner" />
-    <antcall target="install-nativelibs-plugin" />
-</target>
-
-<target name="copy-spawner">
-   <unzip src="${com.mbeddr.build-path.postfix}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
-</target>
-
-<target name="clean">
-   <antcall target="clean-languages" />
-   <antcall target="clean-tests" />
-   <antcall target="clean-tutorial" />
-   <echo message=""/>
-   <echo message="Deleting all source_gen, source_gen.caches, classes_gen, test_gen and test_gen.caches directories..."/>
-   <delete includeemptydirs="true">
-    <fileset dir="." includes="**/source_gen/,**/source_gen.caches/,**/classes_gen/,**/test_gen/,**/test_gen.caches/" defaultexcludes="false"/>
-</delete>
-<echo message="... Done"/>
-</target>	
-
-<target name="clean-tutorial">
- <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	 
-
- <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  		  
-
- <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  		  
-</target>	
-
-<target name="clean-tests">
- <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />	  
-
- <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-generated-code.task}" />	  
-
- <ant antfile="${com.mbeddr.cc.ex-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.cc.ex-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-generated-code.task}" />	  
-
- <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-generated-code.task}" />	 		 
-
- <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />			   
- <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />	 				   
-
- <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />			   
- <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />	 				   
-</target>	  
-
-<target name="clean-languages">
- <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-plugins.task}" />	  
- <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />   
-
- <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
-
-</target>    
-
-<target name="build-allScripts">
-  <ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
-</target>
-
-<target name="build-sl-all">
-  <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${generate-code.task}" />
-  <ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${build-plugin.task}" />
-  <delete dir="${mps-sl-all.build-tmp}" />
-</target>
-
-<target name="install-nativelibs-plugin" >
-  <copy todir="${mps.home}/${plugins.folder.name}">
-    <zipfileset src="${mps-sl-all.build-path}/${mps-sl-all.zip-file.name}">
-      <patternset>
-        <include name="de.itemis.mps.nativelibs.loader/" />
-    </patternset>
-</zipfileset>
-</copy>
-</target>
-
-<target name="build-platform">
-  <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
-  <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />   
-</target>  
-
-
-<target name="build-mbeddr">
-  <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
-  <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${build-plugin.task}" />	  
-</target>  
-
-<target name="build-debugger-testing" >
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
-</target>	
-
-<target name="build-languages" >
- <antcall target="build-sl-all" />
- <antcall target="build-platform" />
- <antcall target="build-mbeddr" />
- <antcall target="build-debugger-testing" />
-</target>	 
-
-
-<target name="build-and-run-tests" >
- <antcall target="test-platform" /> 
- <antcall target="test-debugger" />
- <antcall target="test-core" /> 
- <antcall target="test-performance" />
- <antcall target="test-cc" />
- <antcall target="test-ext" />
- <antcall target="test-analyses" />
- <antcall target="build-tutorial" />	   	   
- <antcall target="test-tutorial" />
- <!-- <antcall target="test-debugging" /> -->
-</target>	  
-<target name="generate-ex-tests">
-    <antcall target="test-core-ex-aLibrary-generate" />
-    <antcall target="test-core-ex-aLibrary-run" />
-    <antcall target="test-core-ex-generate" />
-    <antcall target="make-tests">
-   <param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary/source_gen/aLibrary/lib"/>
-    </antcall>
-    <antcall target="test-ext-ex-generate" />
-    <antcall target="test-cc-ex-generate" />
-</target> 
-<target name="run-ex-tests">
-    <antcall target="test-core-ex-aLibrary-run" />
-    <antcall target="test-core-ex-run" />
-    <antcall target="test-ext-ex-run" />
-    <antcall target="test-cc-ex-run" />
-</target> 
-<target name="run-test-on-arm">
-    <antcall target="make-tests">
-     <param name="make-tests.dir" value="${mbeddr.github.core.home}/tests"/>
- </antcall>
-</target>    
-
-<target name="test-debugging">
-  <antcall target="test-debugging-generate"/>
-  <antcall target="test-debugging-run"/>
-</target> 
-
-<target name="test-debugging-generate">	  
- <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
-
- <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	  
- <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	
-</target>
-
-<target name="test-debugging-run">	  	
- <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
-</target>
-
-<target name="test-core">
-  <antcall target="test-core-ts"/>
-  <antcall target="test-core-ex-aLibrary-generate"/>
-  <antcall target="test-core-ex-aLibrary-run" />
-  <antcall target="test-core-ex-generate"/>
-  <antcall target="test-core-ex-run" />
-</target>
-
-<target name="test-core-ex-aLibrary-generate">
- <ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
-</target>
-
-<target name="test-core-ex-generate">
- <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
-</target>
-
-<target name="test-core-ex-aLibrary-run">
- <antcall target="make-tests">
-   <param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary/source_gen/aLibrary/lib"/>
-</antcall>
-</target>
-<target name="test-core-ex-run">
-<antcall target="make-tests">
-   <param name="make-tests.dir" value="${com.mbeddr.core.working-dir}"/>
-</antcall>
-</target>
-
-<target name="test-core-ts">
- <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />	  
- <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
-</target>
-
-<target name="test-platform">	  
- <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />	  
- <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${run-tests.task}" />
-</target>
-
-<target name="test-performance">    
-  <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
-  <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />    
-  <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
-</target>
-
-<target name="test-debugger">  
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" /> 
-</target>
-
-<target name="test-cc">	
-  <antcall target="test-cc-ts" />
-  <antcall target="test-cc-ex-generate" />
-  <antcall target="test-cc-ex-run" />
-  <!-- FIXME: remove when test-platform has been migrated to all branches -->
-  <antcall target="test-platform" /> 
-</target>
-<target name="test-cc-ts">  
- <ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${build-plugin.task}" />
- <ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${run-tests.task}" />	
-</target>
-<target name="test-cc-ex-generate">	  
- <ant antfile="${com.mbeddr.cc.ex-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />  
-</target>
-<target name="test-cc-ex-run">
- <antcall target="make-tests">
-   <param name="make-tests.dir" value="${com.mbeddr.cc.working-dir}"/>
-</antcall>
-</target>
-
-<target name="test-ext">
-    <antcall target="test-ext-ts" />
-    <antcall target="test-ext-ex-generate" />
-    <antcall target="test-ext-ex-run" />
-</target>
-
-<target name="test-ext-ex-generate">				  
- <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
- <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
-</target>
-<target name="test-ext-ex-run">
- <antcall target="make-tests">
-   <param name="make-tests.dir" value="${com.mbeddr.ext.working-dir}"/>
-</antcall>
-</target>
-
-<target name="test-ext-ts">
-   <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
-   <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />	  
-   <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${run-tests.task}" />	
-</target>
-
-<target name="test-analyses">	  
- <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />	 	 			   
- <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	 	  	  
- <antcall target="make-tests">
-   <param name="make-tests.dir" value="${com.mbeddr.analyses.working-dir}"/>
-</antcall>
-
-<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />	 	 			   
-<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" /> 	 
-<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	
-</target>
-
-<target name="build-tutorial" depends="build-sl-all">	  	   	  	  
- <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
-
- <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
-</target>     
-
-<target name="test-tutorial"  >	  
- <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
- <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
-</target>     
-
-<target name="make-tests" description="Run 'make test' for child Makefiles">
- <echo message="path=${make-tests.dir}"/>
- <make-tests workingDirectory="${make-tests.dir}"/>
-</target>
+	<!-- com.mbeddr.debugger -->  
+	<property name="com.mbeddr.debugger.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.debugger" />    
+	<property name="com.mbeddr.debugger.tests-build-file.name" value="build-tests.xml" />  
+
+	<!-- com.mbeddr.core -->  
+	<property name="com.mbeddr.core.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.core" />    
+	<property name="com.mbeddr.core.ts-tests-build-file.name" value="build-ts-tests.xml" />  
+	<property name="com.mbeddr.core.performance-tests-build-file.name" value="build-performance-tests.xml" />  
+	<property name="com.mbeddr.core.aLibrary-build-file.name" value="build-aLibrary.xml" />    
+	<property name="com.mbeddr.core.ex-tests-build-file.name" value="build-ex-tests.xml" />  
+	<property name="com.mbeddr.core.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />  
+
+	<!-- com.mbeddr.doc -->  
+	<property name="com.mbeddr.doc.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.doc" />    
+	<property name="com.mbeddr.doc.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />  
+
+	<!-- com.mbeddr.cc -->  
+	<property name="com.mbeddr.cc.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.cc" />    
+	<property name="com.mbeddr.cc.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
+	<property name="com.mbeddr.cc.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
+	<property name="com.mbeddr.cc.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />  
+
+	<!-- com.mbeddr.debugger.testing -->   
+	<property name="com.mbeddr.debugger.testing.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.debugger.testing" />     
+	<property name="com.mbeddr.debugger.testing.runtime-tests-build-file.name" value="debugger-testing.tests.runtime.xml" /> 
+	<property name="com.mbeddr.debugger.testing.runtime-build-file.name" value="debugger-testing.xml" /> 
+	<property name="com.mbeddr.debugger.testing.cross-build-file.name" value="debugger.testing.tests.cross.xml" /> 
+	<property name="com.mbeddr.debugger.testing.core-tests-build-file.name" value="debugger.testing.tests.core.xml" /> 
+	<property name="com.mbeddr.debugger.testing.statemachine-tests-build-file.name" value="debugger.testing.tests.ext.statemachines.xml" /> 
+	<property name="com.mbeddr.debugger.testing.physical-units-tests-build-file.name" value="debugger.testing.tests.ext.physical-units.xml" /> 
+	<property name="com.mbeddr.debugger.testing.components-tests-build-file.name" value="debugger.testing.tests.ext.components.xml" /> 
+
+	<!-- com.mbeddr.ext -->  
+	<property name="com.mbeddr.ext.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.ext" />     
+	<property name="com.mbeddr.ext.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
+	<property name="com.mbeddr.ext.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
+	<property name="com.mbeddr.ext.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />  
+
+	<!-- com.mbeddr.analyses -->  
+	<property name="com.mbeddr.analyses.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.analyses" />     
+	<property name="com.mbeddr.analyses.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
+	<property name="com.mbeddr.analyses.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
+	<property name="com.mbeddr.analyses.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses" />  
+
+	<!-- mbeddr.tutorial -->
+	<property name="com.mbeddr.tutorial.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.tutorial" />    
+	<property name="com.mbeddr.tutorial.languages-build-file.name" value="build-languages.xml" /> 
+	<property name="com.mbeddr.tutorial.solutions-build-file.name" value="build-solutions.xml" /> 
+	<property name="com.mbeddr.tutorial.tests-build-file.name" value="build-tests.xml" /> 
+	<property name="com.mbeddr.tutorial.working-dir" value="${mbeddr.github.core.home}/applications/tutorial" />  
+
+	<!-- mbeddr.platform -->
+	<property name="com.mbeddr.platform.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.platform" />    
+	<property name="com.mbeddr.platform.build-file.name" value="build.xml" /> 
+	<property name="com.mbeddr.platform.test-build-file.name" value="build-ts-tests.xml" /> 
+	<property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
+
+	<!-- mbeddr.allScripts -->
+	<property name="com.mbeddr.allScripts.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.allScripts" />    
+	<property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
+	<property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />      
+	
+	<!-- targets --> 
+	<target name="clean-and-build" >
+		<antcall target="build-allScripts" />
+		<antcall target="clean" />
+		<antcall target="build-languages" />	
+		<antcall target="copy-spawner" />
+		<antcall target="install-nativelibs-plugin" />
+	</target>
+
+	<target name="copy-spawner">
+		<unzip src="${artifacts.root}/mbeddr/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
+	</target>
+
+	<target name="clean">
+		<antcall target="clean-languages" />
+		<antcall target="clean-tests" />
+		<antcall target="clean-tutorial" />
+		<echo message=""/>
+		<echo message="Deleting all source_gen, source_gen.caches, classes_gen, test_gen and test_gen.caches directories..."/>
+		<delete includeemptydirs="true">
+			<fileset dir="." includes="**/source_gen/,**/source_gen.caches/,**/classes_gen/,**/test_gen/,**/test_gen.caches/" defaultexcludes="false"/>
+		</delete>
+		<echo message="... Done"/>
+	</target>	
+
+	<target name="clean-tutorial">
+		<ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	 
+
+		<ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  		  
+
+		<ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${clean-generated-code.task}" />	  		  
+	</target>	
+
+	<target name="clean-tests">
+		<ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />	  
+
+		<ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-generated-code.task}" />	  
+
+		<ant antfile="${com.mbeddr.cc.ex-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.cc.ex-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean-generated-code.task}" />	  
+
+		<ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-generated-code.task}" />	 		 
+
+		<ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />			   
+		<ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />	 				   
+
+		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />			   
+		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />	 				   
+	</target>	  
+
+	<target name="clean-languages">
+		<ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-plugins.task}" />	  
+		<ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />   
+
+		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
+
+	</target>    
+
+	<target name="build-allScripts">
+		<ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
+	</target>
+
+	<target name="build-sl-all">
+		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${build-plugin.task}" />
+		<delete dir="${mps-sl-all.build-tmp}" />
+	</target>
+
+	<target name="install-nativelibs-plugin" >
+		<copy todir="${mps.home}/${plugins.folder.name}">
+			<zipfileset src="${artifacts.root}/mps-sl-all/${mps-sl-all.zip-file.name}">
+				<patternset>
+					<include name="de.itemis.mps.nativelibs.loader/" />
+				</patternset>
+			</zipfileset>
+		</copy>
+	</target>
+
+	<target name="build-platform">
+		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />   
+	</target>  
+
+
+	<target name="build-mbeddr">
+		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${build-plugin.task}" />	  
+	</target>  
+
+	<target name="build-debugger-testing" >
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+	</target>	
+
+	<target name="build-languages" >
+		<antcall target="build-sl-all" />
+		<antcall target="build-platform-and-mbeddr" />
+	</target> 
+
+	<target name="build-platform-and-mbeddr" >
+		<antcall target="build-platform" />
+		<antcall target="build-mbeddr" />
+	</target>
+
+	<target name="test-mbeddr" >
+		<antcall target="test-platform" /> 
+		<antcall target="test-debugger" />
+		<antcall target="test-core" /> 
+		<antcall target="test-performance" />
+		<antcall target="test-cc" />
+		<antcall target="test-ext" />
+	</target>
+	
+	<target name="build-and-run-tests" >
+		<antcall target="test-platform" /> 
+		<antcall target="test-debugger" />
+		<antcall target="test-core" /> 
+		<antcall target="test-performance" />
+		<antcall target="test-cc" />
+		<antcall target="test-ext" />
+		<antcall target="test-analyses" />
+		<antcall target="build-tutorial" />	   	   
+		<antcall target="test-tutorial" />
+	</target>
+	
+	<target name="generate-ex-tests">
+		<antcall target="test-core-ex-aLibrary-generate" />
+		<antcall target="test-core-ex-aLibrary-run" />
+		<antcall target="test-core-ex-generate" />
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary/source_gen/aLibrary/lib"/>
+		</antcall>
+		<antcall target="test-ext-ex-generate" />
+		<antcall target="test-cc-ex-generate" />
+	</target> 
+	
+	<target name="run-ex-tests">
+		<antcall target="test-core-ex-aLibrary-run" />
+		<antcall target="test-core-ex-run" />
+		<antcall target="test-ext-ex-run" />
+		<antcall target="test-cc-ex-run" />
+	</target> 
+	
+	<target name="run-test-on-arm">
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${mbeddr.github.core.home}/tests"/>
+		</antcall>
+	</target>    
+
+	<target name="test-debugging">
+		<antcall target="test-debugging-generate"/>
+		<antcall target="test-debugging-run"/>
+	</target> 
+
+	<target name="test-debugging-generate">	  
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	  
+		<ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	
+	</target>
+
+	<target name="test-debugging-run">	  	
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+	</target>
+
+	<target name="test-core">
+		<antcall target="test-core-ts"/>
+		<antcall target="test-core-ex-aLibrary-generate"/>
+		<antcall target="test-core-ex-aLibrary-run" />
+		<antcall target="test-core-ex-generate"/>
+		<antcall target="test-core-ex-run" />
+	</target>
+
+	<target name="test-core-ex-aLibrary-generate">
+		<ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.core.aLibrary-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
+	</target>
+
+	<target name="test-core-ex-generate">
+		<ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
+	</target>
+
+	<target name="test-core-ex-aLibrary-run">
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary/source_gen/aLibrary/lib"/>
+		</antcall>
+	</target>
+	
+	<target name="test-core-ex-run">
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.core.working-dir}"/>
+		</antcall>
+	</target>
+
+	<target name="test-core-ts">
+		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />	  
+		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
+	</target>
+
+	<target name="test-platform">	  
+		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />	  
+		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${run-tests.task}" />
+	</target>
+
+	<target name="test-performance">    
+		<ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />    
+		<ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
+	</target>
+
+	<target name="test-debugger">  
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" /> 
+	</target>
+
+	<target name="test-cc">	
+		<antcall target="test-cc-ts" />
+		<antcall target="test-cc-ex-generate" />
+		<antcall target="test-cc-ex-run" />
+		<antcall target="test-platform" /> 
+	</target>
+	
+	<target name="test-cc-ts">  
+		<ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${build-plugin.task}" />
+		<ant antfile="${com.mbeddr.cc.ts-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${run-tests.task}" />	
+	</target>
+	
+	<target name="test-cc-ex-generate">	  
+		<ant antfile="${com.mbeddr.cc.ex-tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />  
+	</target>
+	
+	<target name="test-cc-ex-run">
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.cc.working-dir}"/>
+		</antcall>
+	</target>
+
+	<target name="test-ext">
+		<antcall target="test-ext-ts" />
+		<antcall target="test-ext-ex-generate" />
+		<antcall target="test-ext-ex-run" />
+	</target>
+
+	<target name="test-ext-ex-generate">				  
+		<ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
+		<ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
+	</target>
+	
+	<target name="test-ext-ex-run">
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.ext.working-dir}"/>
+		</antcall>
+	</target>
+
+	<target name="test-ext-ts">
+		<ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
+		<ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />	  
+		<ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${run-tests.task}" />	
+	</target>
+
+	<target name="test-analyses">	  
+		<ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />	 	 			   
+		<ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	 	  	  
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.analyses.working-dir}"/>
+		</antcall>
+
+		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />	 	 			   
+		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" /> 	 
+		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	
+	</target>
+
+	<target name="build-tutorial" >	  	   	  	  
+		<ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
+
+		<ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
+	</target>     
+
+	<target name="test-tutorial"  >	  
+		<ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
+	</target>     
+
+	<target name="make-tests" description="Run 'make test' for child Makefiles">
+		<echo message="path=${make-tests.dir}"/>
+		<make-tests workingDirectory="${make-tests.dir}"/>
+	</target>
 
 </project>

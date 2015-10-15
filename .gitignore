@@ -5,6 +5,7 @@
 distros/*
 MPS/*
 mps-distrib/*
+artifacts/*
 
 .ant_targets
 .DS_Store
@@ -149,6 +150,7 @@ build/com.mbeddr.allScripts/build.xml
 # tutorial build
 
 build/com.mbeddr.tutorial/null/*.puml
+applications/tutorial/solutions/mbeddr.tutorial.main/temp/
 
 # -----------------------------------------------------------
 # IntelliJ debugging info
