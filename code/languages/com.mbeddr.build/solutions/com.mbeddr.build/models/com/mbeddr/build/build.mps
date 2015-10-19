@@ -8050,11 +8050,6 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1yeLz9" id="O6jIvxIbPK" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.analyses.cbmc.components#807751914255907994" />
-          <property role="3LESm3" value="d89d0a39-b901-4ce1-acca-68e236adc9da" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="1SiIV0" id="4gFRqcy1sfM" role="3bR37C">
           <node concept="1Busua" id="4gFRqcy1sfN" role="1SiIV1">
             <ref role="1Busuk" node="7eF9rfAuFwr" resolve="com.mbeddr.analyses.cbmc" />
