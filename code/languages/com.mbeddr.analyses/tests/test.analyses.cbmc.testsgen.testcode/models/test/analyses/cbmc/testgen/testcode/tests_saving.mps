@@ -85,6 +85,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
@@ -112,8 +113,8 @@
     </language>
     <language id="66fa30ae-4b73-4f2b-b199-9a072902ec06" name="com.mbeddr.analyses.cbmc.testsgen">
       <concept id="7048911191792283825" name="com.mbeddr.analyses.cbmc.testsgen.structure.TestsgenCBMCAnalysis" flags="ng" index="2TRNfg" />
-      <concept id="2210528022910280591" name="com.mbeddr.analyses.cbmc.testsgen.structure.null" flags="ng" index="1Xc7K9">
-        <property id="7048911191795882643" name="" index="2T_xBM" />
+      <concept id="2210528022910280591" name="com.mbeddr.analyses.cbmc.testsgen.structure.ITestgenAnalysis" flags="ng" index="1Xc7K9">
+        <property id="7048911191795882643" name="coverageCriterion" index="2T_xBM" />
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
@@ -186,6 +187,9 @@
       </concept>
       <concept id="7851711690674263345" name="com.mbeddr.ext.statemachines.structure.StatemachineType" flags="ng" index="3lBjsv">
         <reference id="7851711690674263346" name="machine" index="3lBjss" />
+      </concept>
+      <concept id="4709703140582114943" name="com.mbeddr.ext.statemachines.structure.StatemachineConfigItem" flags="ng" index="3yF7LM">
+        <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
       </concept>
       <concept id="1270667558200936379" name="com.mbeddr.ext.statemachines.structure.AbstractTransition" flags="ng" index="1zz5ri">
         <reference id="1270667558201034238" name="targetState" index="1zztin" />
@@ -260,7 +264,7 @@
       <property role="TrG5h" value="empty_1439964486242_1" />
     </node>
     <node concept="N3Fnx" id="6h8aqNeN9Vc" role="N3F5h">
-      <property role="TrG5h" value="testEnv1" />
+      <property role="TrG5h" value="testEnv01" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="6h8aqNeN9Ve" role="3XIRFX">
         <node concept="3XIRlf" id="6h8aqNeNbbu" role="3XIRFZ">
@@ -341,6 +345,9 @@
     <node concept="2Q9Fgs" id="6h8aqNeMOK$" role="2Q9xDr">
       <node concept="2Q9FjX" id="6h8aqNeMOK_" role="2Q9FjI" />
     </node>
+    <node concept="3yF7LM" id="6qlyx4U2NYU" role="2Q9xDr">
+      <property role="3yF7Mc" value="true" />
+    </node>
     <node concept="29Nb31" id="6h8aqNeMOKA" role="2ePNbc">
       <property role="TrG5h" value="lib" />
       <node concept="2v9HqM" id="6h8aqNeMOKB" role="2eOfOg">
@@ -369,6 +376,9 @@
       </node>
       <node concept="2v9HqM" id="71I9cJUg6CV" role="2eOfOg">
         <ref role="2v9HqP" node="71I9cJUfN48" resolve="env09_nondet_choice" />
+      </node>
+      <node concept="2v9HqM" id="6qlyx4U2Im0" role="2eOfOg">
+        <ref role="2v9HqP" node="2g2rJI7ZOcK" resolve="env10_sm" />
       </node>
     </node>
   </node>
@@ -400,7 +410,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="2T_xBM" value="branch" />
-      <ref role="3V$Cn$" node="6h8aqNeN9Vc" resolve="testEnv1" />
+      <ref role="3V$Cn$" node="6h8aqNeN9Vc" resolve="testEnv01" />
     </node>
     <node concept="2TRNfg" id="1ENIgcpefyb" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -416,7 +426,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="2T_xBM" value="branch" />
-      <ref role="3V$Cn$" node="1ENIgcpebCm" resolve="testEnv2" />
+      <ref role="3V$Cn$" node="1ENIgcpebCm" resolve="testEnv02" />
     </node>
     <node concept="2TRNfg" id="1ENIgcpg11O" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -431,7 +441,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1ENIgcpe5RQ" resolve="testEnv3" />
+      <ref role="3V$Cn$" node="1ENIgcpe5RQ" resolve="testEnv03" />
     </node>
     <node concept="2TRNfg" id="1ENIgcphmtO" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -446,7 +456,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1ENIgcphiTq" resolve="testEnv4" />
+      <ref role="3V$Cn$" node="1ENIgcphiTq" resolve="testEnv04" />
     </node>
     <node concept="2TRNfg" id="1ENIgcphyUw" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -461,7 +471,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1ENIgcphtWL" resolve="testEnv5" />
+      <ref role="3V$Cn$" node="1ENIgcphtWL" resolve="testEnv05" />
     </node>
     <node concept="2TRNfg" id="1ENIgcplij8" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -476,7 +486,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1ENIgcplfcQ" resolve="testEnv6" />
+      <ref role="3V$Cn$" node="1ENIgcplfcQ" resolve="testEnv06" />
     </node>
     <node concept="2TRNfg" id="1ENIgcpnlgi" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -491,7 +501,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1ENIgcpnhE_" resolve="testEnv7" />
+      <ref role="3V$Cn$" node="1ENIgcpnhE_" resolve="testEnv07" />
     </node>
     <node concept="2TRNfg" id="71I9cJUg6Eh" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -506,7 +516,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1ENIgcppCJY" resolve="testEnv8" />
+      <ref role="3V$Cn$" node="1ENIgcppCJY" resolve="testEnv08" />
     </node>
     <node concept="2TRNfg" id="1ENIgcppSc3" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -521,7 +531,23 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="71I9cJUfN4g" resolve="testEnv9" />
+      <ref role="3V$Cn$" node="71I9cJUfN4g" resolve="testEnv09" />
+    </node>
+    <node concept="2TRNfg" id="6qlyx4U2Ikx" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="2g2rJI7ZOcM" resolve="testEnv10" />
     </node>
     <node concept="3GEVxB" id="6h8aqNeMOKG" role="3W6d8T">
       <ref role="3GEb4d" node="6h8aqNeMOKi" resolve="env01_smoke" />
@@ -550,6 +576,9 @@
     <node concept="3GEVxB" id="71I9cJUg6DO" role="3W6d8T">
       <ref role="3GEb4d" node="71I9cJUfN48" resolve="env09_nondet_choice" />
     </node>
+    <node concept="3GEVxB" id="6qlyx4U2Ilw" role="3W6d8T">
+      <ref role="3GEb4d" node="2g2rJI7ZOcK" resolve="env10_sm" />
+    </node>
   </node>
   <node concept="N3F5e" id="1ENIgcpe5RO">
     <property role="TrG5h" value="env03_arrays" />
@@ -557,7 +586,7 @@
       <property role="TrG5h" value="empty_1439964486242_1" />
     </node>
     <node concept="N3Fnx" id="1ENIgcpe5RQ" role="N3F5h">
-      <property role="TrG5h" value="testEnv3" />
+      <property role="TrG5h" value="testEnv03" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcpe5RR" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcpe5RS" role="3XIRFZ">
@@ -659,7 +688,7 @@
       <property role="TrG5h" value="empty_1439964486242_1" />
     </node>
     <node concept="N3Fnx" id="1ENIgcpebCm" role="N3F5h">
-      <property role="TrG5h" value="testEnv2" />
+      <property role="TrG5h" value="testEnv02" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcpebCn" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcpebCo" role="3XIRFZ">
@@ -803,7 +832,7 @@
       <property role="TrG5h" value="empty_1439964486242_1" />
     </node>
     <node concept="N3Fnx" id="1ENIgcphiTq" role="N3F5h">
-      <property role="TrG5h" value="testEnv4" />
+      <property role="TrG5h" value="testEnv04" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcphiTr" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcphiTs" role="3XIRFZ">
@@ -941,7 +970,7 @@
       <property role="TrG5h" value="empty_1440148332651_1" />
     </node>
     <node concept="N3Fnx" id="1ENIgcphtWL" role="N3F5h">
-      <property role="TrG5h" value="testEnv5" />
+      <property role="TrG5h" value="testEnv05" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcphtWM" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcphtWN" role="3XIRFZ">
@@ -1070,7 +1099,7 @@
       <property role="TrG5h" value="empty_1440159844850_3" />
     </node>
     <node concept="N3Fnx" id="1ENIgcplfcQ" role="N3F5h">
-      <property role="TrG5h" value="testEnv6" />
+      <property role="TrG5h" value="testEnv06" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcplfcR" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcplfcS" role="3XIRFZ">
@@ -1203,7 +1232,7 @@
       <property role="TrG5h" value="empty_1440159844850_3" />
     </node>
     <node concept="N3Fnx" id="1ENIgcpnhE_" role="N3F5h">
-      <property role="TrG5h" value="testEnv7" />
+      <property role="TrG5h" value="testEnv07" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcpnhEA" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcpnhEB" role="3XIRFZ">
@@ -1323,7 +1352,7 @@
       <property role="TrG5h" value="empty_1440159844850_3" />
     </node>
     <node concept="N3Fnx" id="1ENIgcppCJY" role="N3F5h">
-      <property role="TrG5h" value="testEnv8" />
+      <property role="TrG5h" value="testEnv08" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="1ENIgcppCJZ" role="3XIRFX">
         <node concept="3XIRlf" id="1ENIgcppCK0" role="3XIRFZ">
@@ -1471,7 +1500,7 @@
       <property role="TrG5h" value="empty_1440159844850_3" />
     </node>
     <node concept="N3Fnx" id="71I9cJUfN4g" role="N3F5h">
-      <property role="TrG5h" value="testEnv9" />
+      <property role="TrG5h" value="testEnv09" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="71I9cJUfN4h" role="3XIRFX">
         <node concept="3XIRlf" id="71I9cJUfWlD" role="3XIRFZ">
