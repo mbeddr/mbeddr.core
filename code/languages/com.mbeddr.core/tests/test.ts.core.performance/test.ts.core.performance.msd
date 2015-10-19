@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.core.performance" uuid="15647c29-db71-4cfd-8aee-149f84bd12f4" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.core.performance" uuid="15647c29-db71-4cfd-8aee-149f84bd12f4" pluginKind="PLUGIN_CORE" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

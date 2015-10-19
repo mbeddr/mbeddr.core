@@ -156,6 +156,9 @@
   <node concept="1l3spW" id="7_NZ0_L2FUN">
     <property role="TrG5h" value="mps-minimal" />
     <property role="2DA0ip" value="../../../../../build/jetbrains.mps.minmal" />
+    <node concept="398rNT" id="5ueaxoTn61o" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9Gl$" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -1191,6 +1194,9 @@
     <property role="2DA0ip" value="../../../../../build/jetbrains.mps.minmal" />
     <property role="TrG5h" value="superslim-mps" />
     <property role="turDy" value="build-slim-mps.xml" />
+    <node concept="398rNT" id="5ueaxoTn61p" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2sgV4H" id="3n18qQys_5_" role="1l3spa">
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="3n18qQys_5A" role="2JcizS">

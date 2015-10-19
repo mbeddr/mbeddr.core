@@ -1064,7 +1064,7 @@
               <node concept="3O_q_g" id="LQ9d6zvmIn" role="1_9egR">
                 <ref role="3O_q_h" node="5kiZIBgBjwd" resolve="fac" />
                 <node concept="3TlMh9" id="LQ9d6zvnPy" role="3O_q_j">
-                  <property role="2hmy$m" value="500" />
+                  <property role="2hmy$m" value="300" />
                 </node>
                 <node concept="3xLA65" id="LQ9d6zvpck" role="lGtFl">
                   <property role="TrG5h" value="deepRecursiveFunctionCall" />
