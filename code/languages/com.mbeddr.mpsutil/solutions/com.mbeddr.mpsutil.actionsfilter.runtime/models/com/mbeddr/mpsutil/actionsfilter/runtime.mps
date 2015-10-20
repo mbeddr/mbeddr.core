@@ -4398,32 +4398,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4EB7X9kixaM" role="3cqZAp">
-          <node concept="2OqwBi" id="4EB7X9kiBPy" role="3clFbG">
-            <node concept="2OqwBi" id="4EB7X9kixoC" role="2Oq$k0">
-              <node concept="1eOMI4" id="4EB7X9kixaK" role="2Oq$k0">
-                <node concept="10QFUN" id="4EB7X9kixaH" role="1eOMHV">
-                  <node concept="37vLTw" id="4EB7X9kixmn" role="10QFUP">
-                    <ref role="3cqZAo" node="4EB7X9kifRc" resolve="application" />
-                  </node>
-                  <node concept="3uibUv" id="4EB7X9kixc3" role="10QFUM">
-                    <ref role="3uigEE" to="pisw:~ComponentManagerImpl" resolve="ComponentManagerImpl" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1PnCL0" id="4EB7X9ki_Vi" role="2OqNvi">
-                <ref role="2Oxat5" to="pisw:~ComponentManagerImpl.myInitializedComponents" resolve="myInitializedComponents" />
-              </node>
-            </node>
-            <node concept="liA8E" id="4EB7X9kiCw5" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="3VsKOn" id="4EB7X9kiC$Z" role="37wK5m">
-                <ref role="3VsUkX" to="qkt:~ActionManager" resolve="ActionManager" />
-              </node>
-              <node concept="37vLTw" id="4EB7X9kiCE4" role="37wK5m">
-                <ref role="3cqZAo" node="4EB7X9kibA7" resolve="manager" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="7ZVqLB$uWKv" role="3cqZAp">
+          <node concept="3SKdUq" id="7ZVqLB$uWKT" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: re-iterrate the question of valideness of this code:" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7ZVqLB$uTQl" role="3cqZAp">
+          <node concept="3SKdUq" id="7ZVqLB$uTQH" role="3SKWNk">
+            <property role="3SKdUp" value="was ((ComponentManagerImpl) application). myInitializedComponents.put(ActionManager.class, manager);" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7ZVqLB$uWXw" role="3cqZAp">
+          <node concept="3SKdUq" id="7ZVqLB$uX0g" role="3SKWNk">
+            <property role="3SKdUp" value="was commented-out because of latest changes in new IDEA platform" />
           </node>
         </node>
       </node>
