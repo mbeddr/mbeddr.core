@@ -4091,48 +4091,6 @@
       <ref role="1YaFvo" to="x27k:7qHzltJ0ucx" resolve="FunctionRefCallExpr" />
     </node>
   </node>
-  <node concept="18kY7G" id="MEgWBzNHpW">
-    <property role="TrG5h" value="check_FunctionRefTypeInCasts" />
-    <property role="3GE5qa" value="functionrefs" />
-    <node concept="3clFbS" id="MEgWBzNHpX" role="18ibNy">
-      <node concept="3clFbJ" id="MEgWBzNHpZ" role="3cqZAp">
-        <node concept="2OqwBi" id="MEgWBzNHqN" role="3clFbw">
-          <node concept="2OqwBi" id="MEgWBzNHqn" role="2Oq$k0">
-            <node concept="1YBJjd" id="MEgWBzNHq2" role="2Oq$k0">
-              <ref role="1YBMHb" node="MEgWBzNHpY" resolve="ce" />
-            </node>
-            <node concept="3TrEf2" id="MEgWBzNHqt" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHu" />
-            </node>
-          </node>
-          <node concept="1mIQ4w" id="MEgWBzNHqT" role="2OqNvi">
-            <node concept="chp4Y" id="MEgWBzNHqV" role="cj9EA">
-              <ref role="cht4Q" to="x27k:7qHzltJ03ir" resolve="FunctionRefType" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="MEgWBzNHq1" role="3clFbx">
-          <node concept="2MkqsV" id="MEgWBzNHqW" role="3cqZAp">
-            <node concept="Xl_RD" id="MEgWBzNHqZ" role="2MkJ7o">
-              <property role="Xl_RC" value="cannot be used in casts" />
-            </node>
-            <node concept="2OqwBi" id="MEgWBzNHrl" role="2OEOjV">
-              <node concept="1YBJjd" id="MEgWBzNHr0" role="2Oq$k0">
-                <ref role="1YBMHb" node="MEgWBzNHpY" resolve="ce" />
-              </node>
-              <node concept="3TrEf2" id="MEgWBzNHrr" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHu" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="MEgWBzNHpY" role="1YuTPh">
-      <property role="TrG5h" value="ce" />
-      <ref role="1YaFvo" to="mj1l:5IYyAOzBgHk" resolve="CastExpression" />
-    </node>
-  </node>
   <node concept="18kY7G" id="IrwlmWxNbh">
     <property role="TrG5h" value="check_LabelStatement" />
     <property role="3GE5qa" value="goto" />

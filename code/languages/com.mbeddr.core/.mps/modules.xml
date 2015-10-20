@@ -3,8 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="core" />
@@ -37,6 +37,7 @@
       <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/sandbox/test.lang.hierchicalstructure.sandbox.msd" folder="tests.hierarchicalstructure" />
       <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/test.lang.hierchicalstructure.mpl" folder="tests.hierarchicalstructure" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.debugger.default/com.mbeddr.core.debugger.default.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.runtime/com.mbeddr.core.expressions.runtime.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.interpreterdebugger.rt/com.mbeddr.core.interpreterdebugger.rt.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.stdlib/com.mbeddr.core.stdlib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />

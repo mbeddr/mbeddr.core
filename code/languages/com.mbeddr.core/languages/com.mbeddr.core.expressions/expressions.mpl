@@ -70,6 +70,7 @@
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</dependency>
     <dependency reexport="false">e78f91af-08a8-4a7a-bed6-b22739ed069a(com.mbeddr.mpsutil.spreferences.runtime)</dependency>
+    <dependency reexport="false">984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -121,6 +122,7 @@
   </languageVersions>
   <runtime>
     <dependency reexport="false">e78f91af-08a8-4a7a-bed6-b22739ed069a(com.mbeddr.mpsutil.spreferences.runtime)</dependency>
+    <dependency reexport="false">984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>

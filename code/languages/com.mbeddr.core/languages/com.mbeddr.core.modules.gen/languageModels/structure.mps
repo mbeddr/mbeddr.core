@@ -188,50 +188,6 @@
       <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1qFzXhg_UxG">
-    <property role="TrG5h" value="CFunctionPointerArgument" />
-    <property role="3GE5qa" value="functionpointer" />
-    <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1732458560" />
-    <ref role="1TJDcQ" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
-  </node>
-  <node concept="1TIwiD" id="1qFzXhgAhhS">
-    <property role="3GE5qa" value="functionpointer" />
-    <property role="TrG5h" value="CFunctionPointerLocalVariableDeclaration" />
-    <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1732551756" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-  </node>
-  <node concept="1TIwiD" id="5cBbx58ne90">
-    <property role="3GE5qa" value="functionpointer" />
-    <property role="TrG5h" value="CFunctionPointerGlobalVariableDeclaration" />
-    <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1685843887" />
-    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-    <node concept="PrWs8" id="5HxjapwgqUE" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1TZvYzh_YZV">
-    <property role="3GE5qa" value="functionpointer" />
-    <property role="TrG5h" value="CFunctionPointerTypedef" />
-    <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="266899485" />
-    <ref role="1TJDcQ" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
-    <node concept="PrWs8" id="5HxjapwgqSn" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="QIgxOHxA82" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3VlwR$fEpF9" resolve="IInstantiatedOnlyInGenerators" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5BN3yNwgpob">
-    <property role="3GE5qa" value="functionpointer" />
-    <property role="TrG5h" value="CFunctionPointerStructMember" />
-    <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="976528439" />
-    <ref role="1TJDcQ" to="clbe:56ytRgsLg$o" resolve="Member" />
-  </node>
   <node concept="1TIwiD" id="34x64NyTNWu">
     <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="GenModuleImport" />
