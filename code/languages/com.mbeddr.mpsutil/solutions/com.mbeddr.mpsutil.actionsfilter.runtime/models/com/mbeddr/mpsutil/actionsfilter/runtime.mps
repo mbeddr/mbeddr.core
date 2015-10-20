@@ -11644,59 +11644,45 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2sTruyVSTw3" role="3cqZAp">
-          <node concept="3cpWsn" id="2sTruyVSTw4" role="3cpWs9">
-            <property role="TrG5h" value="components" />
-            <node concept="3uibUv" id="2sTruyVSTvK" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-              <node concept="17QB3L" id="4Eo$hUJiy0Y" role="11_B2D" />
-              <node concept="3uibUv" id="2sTruyVSTvQ" role="11_B2D">
-                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2sTruyVSTw5" role="33vP2m">
-              <node concept="37vLTw" id="2sTruyVSTw6" role="2Oq$k0">
-                <ref role="3cqZAo" node="1bSDGAM8ONw" resolve="stateStore" />
-              </node>
-              <node concept="1PnCL0" id="2sTruyVSTw7" role="2OqNvi">
-                <ref role="2Oxat5" to="dz3k:~ComponentStoreImpl.myComponents" resolve="myComponents" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="4ybTCbxPr02" role="3cqZAp">
+          <node concept="3SKdUq" id="4ybTCbxPr9F" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: remove all usages of private methods from IDEA platform" />
           </node>
         </node>
-        <node concept="3cpWs8" id="2sTruyVSTWi" role="3cqZAp">
-          <node concept="3cpWsn" id="2sTruyVSTWj" role="3cpWs9">
-            <property role="TrG5h" value="name" />
-            <node concept="17QB3L" id="4Eo$hUJixOM" role="1tU5fm" />
-            <node concept="2OqwBi" id="2sTruyVSTWk" role="33vP2m">
-              <node concept="2OqwBi" id="2sTruyVSTWl" role="2Oq$k0">
-                <node concept="1rXfSq" id="2sTruyVSTWm" role="2Oq$k0">
-                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                </node>
-                <node concept="liA8E" id="2sTruyVSTWn" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Class.getAnnotation(java.lang.Class):java.lang.annotation.Annotation" resolve="getAnnotation" />
-                  <node concept="3VsKOn" id="2sTruyVSTWo" role="37wK5m">
-                    <ref role="3VsUkX" to="1m72:~State" resolve="State" />
+        <node concept="3SKdUt" id="4ybTCbxPqe8" role="3cqZAp">
+          <node concept="3SKdUq" id="4ybTCbxPqnV" role="3SKWNk">
+            <property role="3SKdUp" value="was: Map&lt;string, Object&gt; components = stateStore. myComponents;" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4ybTCbxPtJo" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2sTruyVSTWi" role="8Wnug">
+            <node concept="3cpWsn" id="2sTruyVSTWj" role="3cpWs9">
+              <property role="TrG5h" value="name" />
+              <node concept="17QB3L" id="4Eo$hUJixOM" role="1tU5fm" />
+              <node concept="2OqwBi" id="2sTruyVSTWk" role="33vP2m">
+                <node concept="2OqwBi" id="2sTruyVSTWl" role="2Oq$k0">
+                  <node concept="1rXfSq" id="2sTruyVSTWm" role="2Oq$k0">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                  <node concept="liA8E" id="2sTruyVSTWn" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getAnnotation(java.lang.Class):java.lang.annotation.Annotation" resolve="getAnnotation" />
+                    <node concept="3VsKOn" id="2sTruyVSTWo" role="37wK5m">
+                      <ref role="3VsUkX" to="1m72:~State" resolve="State" />
+                    </node>
                   </node>
                 </node>
-              </node>
-              <node concept="liA8E" id="2sTruyVSTWp" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~State.name()" resolve="name" />
+                <node concept="liA8E" id="2sTruyVSTWp" role="2OqNvi">
+                  <ref role="37wK5l" to="1m72:~State.name()" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1bSDGAM7$Kd" role="3cqZAp">
-          <node concept="2OqwBi" id="1bSDGAM90eC" role="3clFbG">
-            <node concept="37vLTw" id="2sTruyVSTw8" role="2Oq$k0">
-              <ref role="3cqZAo" node="2sTruyVSTw4" resolve="components" />
-            </node>
-            <node concept="liA8E" id="1bSDGAM91$D" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
-              <node concept="37vLTw" id="2sTruyVSTWq" role="37wK5m">
-                <ref role="3cqZAo" node="2sTruyVSTWj" resolve="name" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="4ybTCbxPsNV" role="3cqZAp">
+          <node concept="3SKdUq" id="4ybTCbxPsWj" role="3SKWNk">
+            <property role="3SKdUp" value="was: components.remove(name);" />
           </node>
         </node>
       </node>
