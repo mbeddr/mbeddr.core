@@ -11623,30 +11623,34 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1bSDGAM8ONv" role="3cqZAp">
-          <node concept="3cpWsn" id="1bSDGAM8ONw" role="3cpWs9">
-            <property role="TrG5h" value="stateStore" />
-            <node concept="3uibUv" id="1bSDGAM8PoS" role="1tU5fm">
-              <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
-            </node>
-            <node concept="10QFUN" id="1bSDGAM8PqH" role="33vP2m">
-              <node concept="3uibUv" id="1bSDGAM8VAp" role="10QFUM">
-                <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
-              </node>
-              <node concept="2OqwBi" id="1bSDGAM8ONx" role="10QFUP">
-                <node concept="37vLTw" id="1bSDGAM8ONy" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1bSDGAM7$Aw" resolve="application" />
-                </node>
-                <node concept="liA8E" id="1bSDGAM8ONz" role="2OqNvi">
-                  <ref role="37wK5l" to="3fye:~ApplicationImpl.getStateStore():com.intellij.openapi.components.impl.stores.IApplicationStore" resolve="getStateStore" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3SKdUt" id="4ybTCbxPr02" role="3cqZAp">
           <node concept="3SKdUq" id="4ybTCbxPr9F" role="3SKWNk">
             <property role="3SKdUp" value="TODO: remove all usages of private methods from IDEA platform" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4oOcJZGBlQj" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="1bSDGAM8ONv" role="8Wnug">
+            <node concept="3cpWsn" id="1bSDGAM8ONw" role="3cpWs9">
+              <property role="TrG5h" value="stateStore" />
+              <node concept="3uibUv" id="1bSDGAM8PoS" role="1tU5fm">
+                <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
+              </node>
+              <node concept="10QFUN" id="1bSDGAM8PqH" role="33vP2m">
+                <node concept="3uibUv" id="1bSDGAM8VAp" role="10QFUM">
+                  <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
+                </node>
+                <node concept="2OqwBi" id="1bSDGAM8ONx" role="10QFUP">
+                  <node concept="37vLTw" id="1bSDGAM8ONy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1bSDGAM7$Aw" resolve="application" />
+                  </node>
+                  <node concept="liA8E" id="1bSDGAM8ONz" role="2OqNvi">
+                    <ref role="37wK5l" to="3fye:~ApplicationImpl.getStateStore():com.intellij.openapi.components.impl.stores.IApplicationStore" resolve="getStateStore" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="4ybTCbxPqe8" role="3cqZAp">
