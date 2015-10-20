@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <buildtype-graphs>
+    <graph title="Static Evaluator Performance (Deep Recursive Function)" defaultFilters="" hideFilters="" id="customGraph11" seriesTitle="Recursive Function">
+      <valueType key="deepRecursiveFunctionCallEvaluation_min" title="Min" />
+      <valueType key="deepRecursiveFunctionCallEvaluation_avg" title="Average" />
+      <valueType key="deepRecursiveFunctionCallEvaluation_max" title="Max" />
+    </graph>
+  </buildtype-graphs>
+</settings>
+
