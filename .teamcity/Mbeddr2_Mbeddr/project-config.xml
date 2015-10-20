@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="47ffa04a-a434-4e56-808f-210415ea2d38" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>mbeddr</name>
-  <parameters>
-    <param name="mbeddr.build-number" value="mbeddr-%build.counter%" />
-  </parameters>
-  <cleanup />
-</project>
-
