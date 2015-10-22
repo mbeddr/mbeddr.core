@@ -34,6 +34,7 @@
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="zo10" ref="r:cc0fed3b-091b-4783-9fab-36d8c8df8004(com.mbeddr.analyses.cbmc.testsgen.behavior)" implicit="true" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" implicit="true" />
   </imports>
   <registry>
@@ -451,8 +452,8 @@
                     <node concept="37vLTw" id="73BQep1N5pu" role="2Oq$k0">
                       <ref role="3cqZAo" node="73BQep1N5sO" resolve="config" />
                     </node>
-                    <node concept="3TrEf2" id="73BQep1QEQf" role="2OqNvi">
-                      <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+                    <node concept="2qgKlT" id="CybYPU2J8v" role="2OqNvi">
+                      <ref role="37wK5l" to="zo10:CybYPU2IMq" resolve="getEntryPoint" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="73BQep1N5pw" role="37vLTJ">
@@ -568,7 +569,7 @@
         <property role="TrG5h" value="config" />
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="73BQep1QEoj" role="1tU5fm">
-          <ref role="ehGHo" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+          <ref role="ehGHo" to="iq83:1UHnSpzBief" resolve="ITestgenAnalysis" />
         </node>
       </node>
       <node concept="NWlO9" id="73BQep1PRzG" role="lGtFl">

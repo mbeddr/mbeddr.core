@@ -330,7 +330,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="MynG9Rr3g1" role="1B3o_S" />
       <node concept="3Tqbb2" id="MynG9Rr5N8" role="1tU5fm">
-        <ref role="ehGHo" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+        <ref role="ehGHo" to="iq83:1UHnSpzBief" resolve="ITestgenAnalysis" />
       </node>
     </node>
     <node concept="2tJIrI" id="MynG9Rr23c" role="jymVt" />
@@ -490,7 +490,7 @@
                     <ref role="3cqZAo" node="MynG9Rr4vg" resolve="analysisConfig" />
                   </node>
                   <node concept="1PxgMI" id="MynG9Rr7S7" role="37vLTx">
-                    <ref role="1PxNhF" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+                    <ref role="1PxNhF" to="iq83:1UHnSpzBief" resolve="ITestgenAnalysis" />
                     <node concept="2OqwBi" id="MynG9Rr7S8" role="1PxMeX">
                       <node concept="37vLTw" id="MynG9Rr7S9" role="2Oq$k0">
                         <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
@@ -949,7 +949,7 @@
       <node concept="37vLTG" id="1UHnSpz_HQp" role="3clF46">
         <property role="TrG5h" value="ac" />
         <node concept="3Tqbb2" id="1UHnSpz_J20" role="1tU5fm">
-          <ref role="ehGHo" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+          <ref role="ehGHo" to="iq83:1UHnSpzBief" resolve="ITestgenAnalysis" />
         </node>
       </node>
     </node>
