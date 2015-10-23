@@ -106,6 +106,7 @@
   <node concept="1TIwiD" id="5$rtDhYADUQ">
     <property role="TrG5h" value="LangRelEntry" />
     <property role="3GE5qa" value="langRel" />
+    <property role="1pbfSe" value="675932854" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5$rtDhYADUR" role="1TKVEl">
       <property role="TrG5h" value="langName" />
@@ -118,6 +119,7 @@
   </node>
   <node concept="PlHQZ" id="5$rtDhYu38y">
     <property role="TrG5h" value="IStatistic" />
+    <property role="1pbfSe" value="678188874" />
     <node concept="1TJgyj" id="5$rtDhYzITR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="languages" />
@@ -128,6 +130,7 @@
   <node concept="1TIwiD" id="5$rtDhYBjf7">
     <property role="TrG5h" value="ConceptRelationship" />
     <property role="3GE5qa" value="conceptRel" />
+    <property role="1pbfSe" value="675763621" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5$rtDhYBjf8" role="1TKVEl">
       <property role="TrG5h" value="plantUmlString" />
@@ -149,6 +152,7 @@
   <node concept="1TIwiD" id="5$rtDhYv9d_">
     <property role="3GE5qa" value="lang" />
     <property role="TrG5h" value="LangEntry" />
+    <property role="1pbfSe" value="677901831" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5$rtDhYv9e2" role="1TKVEl">
       <property role="TrG5h" value="noRoots" />
@@ -181,6 +185,7 @@
   <node concept="1TIwiD" id="5$rtDhYBjf4">
     <property role="TrG5h" value="ConceptRelEntry" />
     <property role="3GE5qa" value="conceptRel" />
+    <property role="1pbfSe" value="675763624" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5$rtDhYNaMO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -200,6 +205,7 @@
   <node concept="1TIwiD" id="5$rtDhYu38u">
     <property role="TrG5h" value="StatisticsContainer" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="678188878" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5$rtDhYu38z" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -214,6 +220,7 @@
   <node concept="1TIwiD" id="5$rtDhYubOs">
     <property role="TrG5h" value="LanguageStatistics" />
     <property role="3GE5qa" value="lang" />
+    <property role="1pbfSe" value="678153296" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5$rtDhYyPrd" role="1TKVEl">
       <property role="TrG5h" value="noRoots" />
@@ -252,6 +259,7 @@
   <node concept="1TIwiD" id="5$rtDhYzISY">
     <property role="TrG5h" value="LangRelationship" />
     <property role="3GE5qa" value="langRel" />
+    <property role="1pbfSe" value="676698926" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5$rtDhY$66D" role="1TKVEl">
       <property role="TrG5h" value="plantUmlString" />

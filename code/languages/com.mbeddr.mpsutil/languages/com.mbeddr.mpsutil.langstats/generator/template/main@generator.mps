@@ -27,6 +27,9 @@
     <node concept="aNPBN" id="2orFXO3GK_c" role="aQYdv">
       <ref role="aOQi4" to="gbcn:2orFXO3FUQi" resolve="Counter" />
     </node>
+    <node concept="aNPBN" id="6xSvWSVI8tW" role="aQYdv">
+      <ref role="aOQi4" to="gbcn:5$rtDhYu38u" resolve="StatisticsContainer" />
+    </node>
   </node>
 </model>
 
