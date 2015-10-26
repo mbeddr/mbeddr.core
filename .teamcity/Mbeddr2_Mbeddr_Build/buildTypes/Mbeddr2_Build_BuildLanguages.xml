@@ -7,7 +7,9 @@
       <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
-    <parameters />
+    <parameters>
+      <param name="mbeddr-scripts.path-properties" value="-Dmbeddr.scripts.base-path=%teamcity.build.checkoutDir%/scripts -Dplugins-all.scripts.base-path=%teamcity.build.checkoutDir%/scripts" />
+    </parameters>
     <build-runners order="RUNNER_87">
       <runner id="RUNNER_87" name="" type="Ant">
         <parameters>
