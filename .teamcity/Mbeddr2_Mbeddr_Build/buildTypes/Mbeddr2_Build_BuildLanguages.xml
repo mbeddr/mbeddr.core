@@ -22,6 +22,15 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_116" name="set build script status pending" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[curl -H "Authorization: token %github.token%" \
+    -d "{\"state\":\"pending\", \"description\": \"Buildscript generation started.\", \"context\": \"teamcity/build/script\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Bootstrap_GenerateBuildScripts\"}"\
+    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
