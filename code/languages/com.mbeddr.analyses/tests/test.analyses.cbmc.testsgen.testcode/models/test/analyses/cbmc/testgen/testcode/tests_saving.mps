@@ -133,6 +133,7 @@
       <concept id="7048911191792283825" name="com.mbeddr.analyses.cbmc.testsgen.structure.TestsgenCBMCAnalysis" flags="ng" index="2TRNfg" />
       <concept id="2210528022910280591" name="com.mbeddr.analyses.cbmc.testsgen.structure.ITestgenAnalysis" flags="ng" index="1Xc7K9">
         <property id="7048911191795882643" name="coverageCriterion" index="2T_xBM" />
+        <reference id="8135709735326818420" name="saveIntoModule" index="Lc7yi" />
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
@@ -152,6 +153,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -524,6 +526,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="1ENIgcpnhE_" resolve="testEnv07" />
+      <ref role="Lc7yi" node="4W6rLhnu_1w" resolve="saved_vectors" />
     </node>
     <node concept="2TRNfg" id="71I9cJUg6Eh" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -1214,6 +1217,7 @@
     <property role="TrG5h" value="env07_structure_with_array" />
     <node concept="1sgJKc" id="1ENIgcpnhEp" role="N3F5h">
       <property role="TrG5h" value="Point" />
+      <property role="2OOxQR" value="true" />
       <node concept="1dpRTG" id="1ENIgcpnhEq" role="HszBJ">
         <property role="TrG5h" value="x" />
         <node concept="26Vqqz" id="1ENIgcpnhEr" role="2C2TGm">
@@ -1234,6 +1238,7 @@
     </node>
     <node concept="1sgJKc" id="1ENIgcpnhEv" role="N3F5h">
       <property role="TrG5h" value="Triangle" />
+      <property role="2OOxQR" value="true" />
       <node concept="1dpRTG" id="1ENIgcpnhEw" role="HszBJ">
         <property role="TrG5h" value="points" />
         <node concept="3J0A42" id="1ENIgcpnjjh" role="2C2TGm">
@@ -2012,6 +2017,12 @@
     </node>
     <node concept="2NXPZ9" id="2g2rJI7ZOdK" role="N3F5h">
       <property role="TrG5h" value="empty_1441744924329_2" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="4W6rLhnu_1w">
+    <property role="TrG5h" value="saved_vectors" />
+    <node concept="3GEVxB" id="4W6rLhnuNt$" role="2OODSX">
+      <ref role="3GEb4d" node="1ENIgcpnhEo" resolve="env07_structure_with_array" />
     </node>
   </node>
 </model>
