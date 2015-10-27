@@ -9,15 +9,6 @@
     </options>
     <parameters />
     <build-runners order="RUNNER_111, RUNNER_87">
-      <runner id="RUNNER_111" name="Set Github Check Pending" type="simpleRunner">
-        <parameters>
-          <param name="script.content"><![CDATA[curl -H "Authorization: token %github.token%" \
-    -d "{\"state\":\"pending\", \"description\": \"Build started\", \"context\": \"teamcity/build/languages\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Build_BuildLanguages\"}"\
-    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_87" name="" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />
