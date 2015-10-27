@@ -29,6 +29,13 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_120" name="set build ok" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo &quot;##teamcity[setParameter name='build.state' value='ok']&quot;" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
