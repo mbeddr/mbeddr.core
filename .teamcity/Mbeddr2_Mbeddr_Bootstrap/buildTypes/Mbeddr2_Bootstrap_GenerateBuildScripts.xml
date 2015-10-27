@@ -37,7 +37,7 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_114" name="Set Buildscript status result" type="simpleRunner">
+      <runner id="RUNNER_114" name="set build scripts status result" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[if [ "%build.state%" = "ok" ]; then 
 curl -H "Authorization: token %github.token%" \
@@ -48,7 +48,7 @@ curl -H "Authorization: token %github.token%" \
     -d "{\"state\":\"failure\", \"description\": \"Buildscript generation failed.\", \"context\": \"teamcity/build/script\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Bootstrap_GenerateBuildScripts\"}"\
     https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
 fi]]></param>
-          <param name="teamcity.step.mode" value="default" />
+          <param name="teamcity.step.mode" value="execute_if_failed" />
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
