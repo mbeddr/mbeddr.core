@@ -2,9 +2,9 @@
 <model ref="r:95792b17-23d0-4889-a401-c18694fce2bf(com.mbeddr.core.dependencies.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -130,7 +130,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -511,7 +511,7 @@
               <ref role="3cqZAo" node="6o2p2Z1qMmd" resolve="f" />
             </node>
             <node concept="liA8E" id="6o2p2Z1qMmk" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.setLocation(int,int):void" resolve="setLocation" />
+              <ref role="37wK5l" to="z60i:~Window.setLocation(int,int):void" resolve="setLocation" />
               <node concept="3cmrfG" id="6o2p2Z1qMml" role="37wK5m">
                 <property role="3cmrfH" value="300" />
               </node>
@@ -606,8 +606,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6o2p2Z1qMmS" role="3cqZAp" />
-        <node concept="3clFbH" id="6o2p2Z1qMmT" role="3cqZAp" />
         <node concept="3clFbF" id="6o2p2Z1qMmU" role="3cqZAp">
           <node concept="2OqwBi" id="6o2p2Z1qMmV" role="3clFbG">
             <node concept="37vLTw" id="6o2p2Z1qMmW" role="2Oq$k0">

@@ -1065,5 +1065,120 @@
       <ref role="1YaFvo" to="qdv7:1wLq5fNouG6" resolve="ConditionalSwitch" />
     </node>
   </node>
+  <node concept="18kY7G" id="1YpC__$KvL4">
+    <property role="TrG5h" value="check_GenerateSingleProductStrategy" />
+    <property role="3GE5qa" value="trafo" />
+    <node concept="3clFbS" id="1YpC__$KvL5" role="18ibNy">
+      <node concept="3clFbJ" id="1YpC__$KvLh" role="3cqZAp">
+        <node concept="3clFbS" id="1YpC__$KvLi" role="3clFbx">
+          <node concept="2MkqsV" id="1YpC__$KvLj" role="3cqZAp">
+            <node concept="Xl_RD" id="1YpC__$KvLk" role="2MkJ7o">
+              <property role="Xl_RC" value="Feature model mappings are missing; use the 'Discover Feature Models' intention to add them." />
+            </node>
+            <node concept="1YBJjd" id="1YpC__$KvLl" role="2OEOjV">
+              <ref role="1YBMHb" node="4omMoHUAG4z" resolve="vci" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="1YpC__$KvLm" role="3clFbw">
+          <node concept="2OqwBi" id="1YpC__$KvLn" role="2Oq$k0">
+            <node concept="1YBJjd" id="1YpC__$KvVC" role="2Oq$k0">
+              <ref role="1YBMHb" node="1YpC__$KvL7" resolve="gsps" />
+            </node>
+            <node concept="2qgKlT" id="1YpC__$KvLp" role="2OqNvi">
+              <ref role="37wK5l" to="rpdm:4omMoHU$nz_" resolve="missingMappings" />
+            </node>
+          </node>
+          <node concept="3GX2aA" id="1YpC__$KvLq" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbF" id="1YpC__$KvLr" role="3cqZAp">
+        <node concept="2OqwBi" id="1YpC__$KvLs" role="3clFbG">
+          <node concept="2OqwBi" id="1YpC__$KvLt" role="2Oq$k0">
+            <node concept="1YBJjd" id="1YpC__$Kw28" role="2Oq$k0">
+              <ref role="1YBMHb" node="1YpC__$KvL7" resolve="gsps" />
+            </node>
+            <node concept="3Tsc0h" id="1YpC__$KwU_" role="2OqNvi">
+              <ref role="3TtcxE" to="qdv7:1YpC__$K7Em" />
+            </node>
+          </node>
+          <node concept="2es0OD" id="1YpC__$KvLw" role="2OqNvi">
+            <node concept="1bVj0M" id="1YpC__$KvLx" role="23t8la">
+              <node concept="3clFbS" id="1YpC__$KvLy" role="1bW5cS">
+                <node concept="3clFbJ" id="1YpC__$KvLz" role="3cqZAp">
+                  <node concept="3clFbS" id="1YpC__$KvL$" role="3clFbx">
+                    <node concept="2MkqsV" id="1YpC__$KvL_" role="3cqZAp">
+                      <node concept="Xl_RD" id="1YpC__$KvLA" role="2MkJ7o">
+                        <property role="Xl_RC" value="cannot have two mappings for a single feature model" />
+                      </node>
+                      <node concept="37vLTw" id="1YpC__$KvLB" role="2OEOjV">
+                        <ref role="3cqZAo" node="1YpC__$KvLX" resolve="m" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3eOSWO" id="1YpC__$KvLC" role="3clFbw">
+                    <node concept="3cmrfG" id="1YpC__$KvLD" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="2OqwBi" id="1YpC__$KvLE" role="3uHU7B">
+                      <node concept="2OqwBi" id="1YpC__$KvLF" role="2Oq$k0">
+                        <node concept="2OqwBi" id="1YpC__$KvLG" role="2Oq$k0">
+                          <node concept="1YBJjd" id="1YpC__$Kwaz" role="2Oq$k0">
+                            <ref role="1YBMHb" node="1YpC__$KvL7" resolve="gsps" />
+                          </node>
+                          <node concept="3Tsc0h" id="1YpC__$KxaV" role="2OqNvi">
+                            <ref role="3TtcxE" to="qdv7:1YpC__$K7Em" />
+                          </node>
+                        </node>
+                        <node concept="3zZkjj" id="1YpC__$KvLJ" role="2OqNvi">
+                          <node concept="1bVj0M" id="1YpC__$KvLK" role="23t8la">
+                            <node concept="3clFbS" id="1YpC__$KvLL" role="1bW5cS">
+                              <node concept="3clFbF" id="1YpC__$KvLM" role="3cqZAp">
+                                <node concept="3clFbC" id="1YpC__$KvLN" role="3clFbG">
+                                  <node concept="2OqwBi" id="1YpC__$KvLO" role="3uHU7w">
+                                    <node concept="37vLTw" id="1YpC__$KvLP" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1YpC__$KvLX" resolve="m" />
+                                    </node>
+                                    <node concept="3TrEf2" id="1YpC__$KvLQ" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="qdv7:5JmNU9PAaLi" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="1YpC__$KvLR" role="3uHU7B">
+                                    <node concept="37vLTw" id="1YpC__$KvLS" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1YpC__$KvLU" resolve="it" />
+                                    </node>
+                                    <node concept="3TrEf2" id="1YpC__$KvLT" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="qdv7:5JmNU9PAaLi" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="1YpC__$KvLU" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="1YpC__$KvLV" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="1YpC__$KvLW" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="1YpC__$KvLX" role="1bW2Oz">
+                <property role="TrG5h" value="m" />
+                <node concept="2jxLKc" id="1YpC__$KvLY" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1YpC__$KvL7" role="1YuTPh">
+      <property role="TrG5h" value="gsps" />
+      <ref role="1YaFvo" to="qdv7:1YpC__$K7El" resolve="GenerateSingleProductStrategy" />
+    </node>
+  </node>
 </model>
 

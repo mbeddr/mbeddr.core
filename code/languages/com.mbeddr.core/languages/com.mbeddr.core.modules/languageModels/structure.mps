@@ -2,7 +2,7 @@
 <model ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -14,6 +14,7 @@
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
+    <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -926,6 +927,9 @@
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="938767865" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="73rNuZmHSmq" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+    </node>
     <node concept="1TJgyj" id="5eg$WPOuSCs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
@@ -937,9 +941,6 @@
       <property role="20kJfa" value="constant" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5eg$WPOtR8F" resolve="GlobalConstantFunctionDeclaration" />
-    </node>
-    <node concept="PrWs8" id="73rNuZmHSmq" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="5eg$WPOuoHl">
@@ -1449,6 +1450,9 @@
     <property role="R4oN_" value="#pragma" />
     <property role="1pbfSe" value="936995277" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="1$baREjLD_n" role="lGtFl">
+      <property role="YLQ7P" value="since 2015-11-19" />
+    </node>
     <node concept="1TJgyi" id="IrwlmWyLjw" role="1TKVEl">
       <property role="TrG5h" value="pragmaText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1458,9 +1462,6 @@
     </node>
     <node concept="PrWs8" id="1$baREjLD$Y" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="asaX9" id="1$baREjLD_n" role="lGtFl">
-      <property role="YLQ7P" value="since 2015-11-19" />
     </node>
   </node>
   <node concept="1TIwiD" id="20xms4A94u9">
@@ -1548,6 +1549,154 @@
       <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
         <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3btyUb9ZHAa">
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashCaseContent" />
+    <property role="34LRSv" value="#elif" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3btyUb9ZHAe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3btyUb9ZHAb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6DA9edN3Vi4">
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="Defined_Expression" />
+    <property role="34LRSv" value="defined" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6DA9edN3Vi5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="58l7RC3lpw7">
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfReplacement" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="58l7RC3lpwa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="58l7RC3lpwc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="3GQkOVSpeY2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elifs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3GQkOVSpfj9" resolve="HashIfReplacementCase" />
+    </node>
+    <node concept="1TJgyj" id="58l7RC3lpwf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="58l7RC3yIXK" role="PzmwI">
+      <ref role="PrY4T" to="tpf8:6pv6r6HKtLr" resolve="PersistGeneration" />
+    </node>
+    <node concept="PrWs8" id="58l7RC3yIY8" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="M6xJ_" id="58l7RC3yIXP" role="lGtFl">
+      <property role="Hh88m" value="hashIfReplacements" />
+      <node concept="tn0Fv" id="58l7RC3yJDY" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="58l7RC3$U5V" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3btyUb9Zcjf">
+    <property role="TrG5h" value="HashIfContent" />
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="34LRSv" value="#if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3btyUb9Zcjr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3btyUb9Zcjg" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="58l7RC3nGVR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="1TJgyj" id="3btyUb9Zcjj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="3btyUb9ZHDa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cases" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3btyUb9ZHAa" resolve="HashCaseContent" />
+    </node>
+    <node concept="1TJgyj" id="3btyUb9Zcjm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3GQkOVSpfj9">
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfReplacementCase" />
+    <property role="34LRSv" value="#elif" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3GQkOVSpfja" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3GQkOVSpfjc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="58l7RC3nGVJ">
+    <property role="3GE5qa" value="preprocessor" />
+    <property role="TrG5h" value="HashIfReplacementRef" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="58l7RC3nGVK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="replacement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="58l7RC3lpw7" resolve="HashIfReplacement" />
+    </node>
+    <node concept="M6xJ_" id="58l7RC3tjfn" role="lGtFl">
+      <property role="Hh88m" value="hashIfReplacementRef" />
+      <node concept="trNpa" id="58l7RC3tjfp" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="58l7RC3tjiY" role="PzmwI">
+      <ref role="PrY4T" to="tpf8:6pv6r6HKtLr" resolve="PersistGeneration" />
     </node>
   </node>
 </model>

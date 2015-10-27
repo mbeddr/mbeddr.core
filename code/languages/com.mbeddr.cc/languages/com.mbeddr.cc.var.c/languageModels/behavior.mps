@@ -2,7 +2,7 @@
 <model ref="r:e1ae1b28-1a87-4465-9845-f4edf139cc0b(com.mbeddr.cc.var.c.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,6 +10,7 @@
     <import index="qdv7" ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -69,8 +70,11 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -407,6 +411,27 @@
         </node>
       </node>
       <node concept="2I9FWS" id="5aNdPeN4lgY" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1YpC__$Lqpv">
+    <ref role="13h7C2" to="vxuc:1YpC__$LkCw" resolve="CPresenceCondition" />
+    <node concept="13hLZK" id="1YpC__$Lqpw" role="13h7CW">
+      <node concept="3clFbS" id="1YpC__$Lqpx" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1YpC__$Lqpy" role="13h7CS">
+      <property role="TrG5h" value="isCurrentlyVisible" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:5aNdPeN2Pp4" resolve="isCurrentlyVisible" />
+      <node concept="3Tm1VV" id="1YpC__$Lqpz" role="1B3o_S" />
+      <node concept="3clFbS" id="1YpC__$LqpA" role="3clF47">
+        <node concept="3clFbF" id="1YpC__$Lqsf" role="3cqZAp">
+          <node concept="3clFbT" id="1YpC__$Lqse" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1YpC__$LqpB" role="3clF45" />
     </node>
   </node>
 </model>

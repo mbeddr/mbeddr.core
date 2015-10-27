@@ -2,16 +2,18 @@
 <model ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -21,6 +23,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -72,6 +76,9 @@
     </node>
     <node concept="PrWs8" id="5DBke2vxOrf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
+    </node>
+    <node concept="PrWs8" id="5mj9eYuoRsL" role="PzmwI">
+      <ref role="PrY4T" to="tpf8:6pv6r6HKtLr" resolve="PersistGeneration" />
     </node>
   </node>
   <node concept="1TIwiD" id="$GQ7u4ko40">
@@ -261,7 +268,7 @@
     <node concept="1TJgyj" id="1wLq5fNouH9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="replacement" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
@@ -272,6 +279,7 @@
     <property role="R4oN_" value="select configurations for feature models" />
     <property role="1pbfSe" value="102187213" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="1YpC__$K7Ea" role="lGtFl" />
     <node concept="1TJgyj" id="4ha9sSdKUSm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="mappings" />
@@ -283,6 +291,9 @@
     </node>
     <node concept="PrWs8" id="4ha9sSdKUSc" role="PzmwI">
       <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
+    </node>
+    <node concept="PrWs8" id="1YpC__$K7Eg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ixWMI$2k$V">
@@ -338,6 +349,43 @@
       <ref role="20lvS9" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
     </node>
     <node concept="PrWs8" id="1HBb4ql6EAg" role="PzmwI">
+      <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1YpC__$JMMj">
+    <property role="3GE5qa" value="trafo" />
+    <property role="TrG5h" value="VariabiliyConfigItemWithStrategy" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1YpC__$K6Ad" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1YpC__$JMMe" resolve="Strategy" />
+    </node>
+    <node concept="PrWs8" id="1YpC__$K5sQ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7P$_wJpwSfc" resolve="IConfigurationItemWithImport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1YpC__$JMMe">
+    <property role="3GE5qa" value="trafo" />
+    <property role="TrG5h" value="Strategy" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1YpC__$K7El">
+    <property role="TrG5h" value="GenerateSingleProductStrategy" />
+    <property role="34LRSv" value="variability mappings" />
+    <property role="3GE5qa" value="trafo" />
+    <property role="R4oN_" value="select configurations for feature models" />
+    <ref role="1TJDcQ" node="1YpC__$JMMe" resolve="Strategy" />
+    <node concept="1TJgyj" id="1YpC__$K7Em" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mappings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5JmNU9PAaLg" resolve="ConfigurationMapping" />
+    </node>
+    <node concept="PrWs8" id="1YpC__$K7Eo" role="PzmwI">
       <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
     </node>
   </node>

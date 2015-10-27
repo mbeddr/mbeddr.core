@@ -90,7 +90,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1668,14 +1668,14 @@
     <property role="19KtqR" value="true" />
     <property role="1pbfSe" value="44852289" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1ir19b4JZNn" role="PzmwI">
+      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
     <node concept="1TJgyj" id="gjBy3ThgKr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="concepts" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="gjBy3ThgJz" resolve="ConceptDeclarationReference" />
-    </node>
-    <node concept="PrWs8" id="1ir19b4JZNn" role="PzmwI">
-      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="gjBy3ThgJz">
@@ -1823,6 +1823,13 @@
     <property role="1pbfSe" value="1290649825" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="PlHQZ" id="1S6A2cmQVtM">
+    <property role="1pbfSe" value="887246741" />
+    <property role="TrG5h" value="ICallable" />
+    <node concept="PrWs8" id="1S6A2cmTjKM" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="6Kj2zNC66Q5">
     <property role="TrG5h" value="SuppressWarnings" />
     <property role="3GE5qa" value="suppress" />
@@ -1841,12 +1848,9 @@
       </node>
     </node>
   </node>
-  <node concept="PlHQZ" id="1S6A2cmQVtM">
-    <property role="1pbfSe" value="887246741" />
-    <property role="TrG5h" value="ICallable" />
-    <node concept="PrWs8" id="1S6A2cmTjKM" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+  <node concept="1TIwiD" id="7lps4k_OPhM">
+    <property role="TrG5h" value="ICanBeRemovedFromAST" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

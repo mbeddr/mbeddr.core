@@ -2,8 +2,8 @@
 <model ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
   </languages>
   <imports>
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
@@ -1846,9 +1846,6 @@
             <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
-        <node concept="1E0d5M" id="2W1GNPBwWUp" role="1E1XAP">
-          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
-        </node>
         <node concept="1SiIV0" id="4OmSVnTpRwN" role="3bR37C">
           <node concept="3bR9La" id="4OmSVnTpRwO" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -1860,6 +1857,9 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="2W1GNPBwWUp" role="1E1XAP">
+          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
         </node>
       </node>
       <node concept="1E1JtA" id="2W1GNPBwUiB" role="2G$12L">
@@ -2213,9 +2213,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1E0d5M" id="2W1GNPBwWVy" role="1E1XAP">
-          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
-        </node>
         <node concept="1SiIV0" id="52dnnqbJhvr" role="3bR37C">
           <node concept="3bR9La" id="52dnnqbJhvs" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2233,6 +2230,9 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="2W1GNPBwWVy" role="1E1XAP">
+          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43K6" role="2G$12L">
@@ -2359,14 +2359,14 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1E0d5M" id="4D1XYOmWcKo" role="1E1XAP">
-          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
-        </node>
         <node concept="1SiIV0" id="y9rglfjUVK" role="3bR37C">
           <node concept="3bR9La" id="y9rglfjUVL" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="4D1XYOmWcKo" role="1E1XAP">
+          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43Lo" role="2G$12L">
@@ -5954,6 +5954,18 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="31y00eIvY$$" role="3bR37C">
+          <node concept="3bR9La" id="31y00eIvY$_" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6jAgxfidcyc" role="3bR37C">
+          <node concept="3bR9La" id="6jAgxfidcyd" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7eF9rfAnuj$" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6206,6 +6218,12 @@
           <node concept="3bR9La" id="6ixWMI$m0A_" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3CfFqyAP7lY" role="3bR37C">
+          <node concept="3bR9La" id="3CfFqyAP7lZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
           </node>
         </node>
       </node>
@@ -10715,213 +10733,6 @@
     <node concept="10PD9b" id="4i9pOwKTId0" role="10PD9s" />
     <node concept="3b7kt6" id="4i9pOwKTId5" role="10PD9s" />
   </node>
-  <node concept="1l3spW" id="5CDsLVFi0p_">
-    <property role="2DA0ip" value="../../../../../build/com.mbeddr.build" />
-    <property role="TrG5h" value="colorSchemes" />
-    <property role="turDy" value="build-color-schemes.xml" />
-    <node concept="55IIr" id="5CDsLVFi0pA" role="auvoZ" />
-    <node concept="1l3spV" id="5CDsLVFi0pB" role="1l3spN">
-      <node concept="3981dG" id="5CDsLVFi0sM" role="39821P">
-        <node concept="3_J27D" id="5CDsLVFi0sO" role="Nbhlr">
-          <node concept="3Mxwew" id="5CDsLVFi0t0" role="3MwsjC">
-            <property role="3MwjfP" value="com.mbeddr.core.colorschemes.zip" />
-          </node>
-        </node>
-        <node concept="398223" id="5CDsLVFk81E" role="39821P">
-          <node concept="398223" id="5CDsLVFk7S5" role="39821P">
-            <node concept="3_J27D" id="5CDsLVFk7S7" role="Nbhlr">
-              <node concept="3Mxwew" id="5CDsLVFk7Vh" role="3MwsjC">
-                <property role="3MwjfP" value="META-INF" />
-              </node>
-            </node>
-            <node concept="1kKnMu" id="5CDsLVFk7Vn" role="39821P">
-              <node concept="3_J27D" id="5CDsLVFk7Vo" role="1kKnMs">
-                <node concept="3Mxwew" id="5CDsLVFk7VD" role="3MwsjC">
-                  <property role="3MwjfP" value="plugin.xml" />
-                </node>
-              </node>
-              <node concept="2pNNFK" id="5CDsLVFk7VJ" role="1kKnMX">
-                <property role="2pNNFO" value="idea-plugin" />
-                <node concept="2pNUuL" id="5CDsLVFk7W1" role="2pNNFR">
-                  <property role="2pNUuO" value="version" />
-                  <node concept="2pMdtt" id="5CDsLVFk7W7" role="2pMdts">
-                    <property role="2pMdty" value="2" />
-                  </node>
-                </node>
-                <node concept="2pNNFK" id="5CDsLVFk7Wo" role="3o6s8t">
-                  <property role="2pNNFO" value="id" />
-                  <node concept="3o6iSG" id="5CDsLVFk7X7" role="3o6s8t">
-                    <property role="3o6i5n" value="com.mbeddr.core.colorschemes" />
-                  </node>
-                </node>
-                <node concept="2pNNFK" id="5CDsLVFk7Xt" role="3o6s8t">
-                  <property role="2pNNFO" value="name" />
-                  <node concept="3o6iSG" id="5CDsLVFk7XH" role="3o6s8t">
-                    <property role="3o6i5n" value="com.mbeddr.core.colorschemes" />
-                  </node>
-                </node>
-                <node concept="2pNNFK" id="5CDsLVFk7Yd" role="3o6s8t">
-                  <property role="2pNNFO" value="version" />
-                  <node concept="3o6iSG" id="5CDsLVFk7YB" role="3o6s8t">
-                    <property role="3o6i5n" value="1.0" />
-                  </node>
-                </node>
-                <node concept="2pNNFK" id="5CDsLVFk7Zh" role="3o6s8t">
-                  <property role="2pNNFO" value="extensions" />
-                  <node concept="2pNNFK" id="5CDsLVFk7Zi" role="3o6s8t">
-                    <property role="2pNNFO" value="bundledColorScheme" />
-                    <node concept="2pNUuL" id="5CDsLVFk7Zj" role="2pNNFR">
-                      <property role="2pNUuO" value="path" />
-                      <node concept="2pMdtt" id="5CDsLVFk7Zk" role="2pMdts">
-                        <property role="2pMdty" value="/mbeddrColorSchemes/defaultMbeddr" />
-                      </node>
-                    </node>
-                    <node concept="3o6iSG" id="5CDsLVFk7Zl" role="3o6s8t" />
-                  </node>
-                  <node concept="2pNUuL" id="5CDsLVFk7Zm" role="2pNNFR">
-                    <property role="2pNUuO" value="defaultExtensionNs" />
-                    <node concept="2pMdtt" id="5CDsLVFk7Zn" role="2pMdts">
-                      <property role="2pMdty" value="com.intellij" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="398223" id="5CDsLVFj456" role="39821P">
-            <node concept="3_J27D" id="5CDsLVFj457" role="Nbhlr">
-              <node concept="3Mxwew" id="5CDsLVFj45i" role="3MwsjC">
-                <property role="3MwjfP" value="lib" />
-              </node>
-            </node>
-            <node concept="3981dx" id="5CDsLVFj45o" role="39821P">
-              <node concept="398223" id="5CDsLVFj4iu" role="39821P">
-                <node concept="3_J27D" id="5CDsLVFj4iv" role="Nbhlr">
-                  <node concept="3Mxwew" id="5CDsLVFj4iw" role="3MwsjC">
-                    <property role="3MwjfP" value="mbeddrColorSchemes" />
-                  </node>
-                </node>
-                <node concept="1kKnMu" id="5CDsLVFj4ix" role="39821P">
-                  <node concept="3_J27D" id="5CDsLVFj4iy" role="1kKnMs">
-                    <node concept="3Mxwew" id="5CDsLVFj4iz" role="3MwsjC">
-                      <property role="3MwjfP" value="defaultMbeddr.xml" />
-                    </node>
-                  </node>
-                  <node concept="2pNNFK" id="5CDsLVFj4i$" role="1kKnMX">
-                    <property role="2pNNFO" value="scheme" />
-                    <node concept="2pNNFK" id="5CDsLVFj4i_" role="3o6s8t">
-                      <property role="2pNNFO" value="attributes" />
-                      <node concept="2pNNFK" id="5CDsLVFj4iA" role="3o6s8t">
-                        <property role="2pNNFO" value="option" />
-                        <node concept="2pNUuL" id="5CDsLVFj4iB" role="2pNNFR">
-                          <property role="2pNUuO" value="name" />
-                          <node concept="2pMdtt" id="5CDsLVFj4iC" role="2pMdts">
-                            <property role="2pMdty" value="com.mbeddr.mpsutil.userstyles.sandboxlang.editor.StyleSheet123.style2" />
-                          </node>
-                        </node>
-                        <node concept="2pNNFK" id="5CDsLVFj4iD" role="3o6s8t">
-                          <property role="2pNNFO" value="value" />
-                          <node concept="2pNNFK" id="5CDsLVFj4iE" role="3o6s8t">
-                            <property role="2pNNFO" value="option" />
-                            <node concept="2pNUuL" id="5CDsLVFj4iF" role="2pNNFR">
-                              <property role="2pNUuO" value="name" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iG" role="2pMdts">
-                                <property role="2pMdty" value="FOREGROUND" />
-                              </node>
-                            </node>
-                            <node concept="2pNUuL" id="5CDsLVFj4iH" role="2pNNFR">
-                              <property role="2pNUuO" value="value" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iI" role="2pMdts">
-                                <property role="2pMdty" value="ff2038" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="2pNNFK" id="5CDsLVFj4iJ" role="3o6s8t">
-                            <property role="2pNNFO" value="option" />
-                            <node concept="2pNUuL" id="5CDsLVFj4iK" role="2pNNFR">
-                              <property role="2pNUuO" value="name" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iL" role="2pMdts">
-                                <property role="2pMdty" value="BACKGROUND" />
-                              </node>
-                            </node>
-                            <node concept="2pNUuL" id="5CDsLVFj4iM" role="2pNNFR">
-                              <property role="2pNUuO" value="value" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iN" role="2pMdts">
-                                <property role="2pMdty" value="5bff0f" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="2pNNFK" id="5CDsLVFj4iO" role="3o6s8t">
-                            <property role="2pNNFO" value="option" />
-                            <node concept="2pNUuL" id="5CDsLVFj4iP" role="2pNNFR">
-                              <property role="2pNUuO" value="name" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iQ" role="2pMdts">
-                                <property role="2pMdty" value="FONT_TYPE" />
-                              </node>
-                            </node>
-                            <node concept="2pNUuL" id="5CDsLVFj4iR" role="2pNNFR">
-                              <property role="2pNUuO" value="value" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iS" role="2pMdts">
-                                <property role="2pMdty" value="2" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="2pNNFK" id="5CDsLVFj4iT" role="3o6s8t">
-                            <property role="2pNNFO" value="option" />
-                            <node concept="2pNUuL" id="5CDsLVFj4iU" role="2pNNFR">
-                              <property role="2pNUuO" value="name" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iV" role="2pMdts">
-                                <property role="2pMdty" value="EFFECT_TYPE" />
-                              </node>
-                            </node>
-                            <node concept="2pNUuL" id="5CDsLVFj4iW" role="2pNNFR">
-                              <property role="2pNUuO" value="value" />
-                              <node concept="2pMdtt" id="5CDsLVFj4iX" role="2pMdts">
-                                <property role="2pMdty" value="3" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pNUuL" id="5CDsLVFj4iY" role="2pNNFR">
-                      <property role="2pNUuO" value="name" />
-                      <node concept="2pMdtt" id="5CDsLVFj4iZ" role="2pMdts">
-                        <property role="2pMdty" value="mbeddr Default" />
-                      </node>
-                    </node>
-                    <node concept="2pNUuL" id="5CDsLVFj4j0" role="2pNNFR">
-                      <property role="2pNUuO" value="parent_scheme" />
-                      <node concept="2pMdtt" id="5CDsLVFj4j1" role="2pMdts">
-                        <property role="2pMdty" value="Default" />
-                      </node>
-                    </node>
-                    <node concept="2pNUuL" id="5CDsLVFj4j2" role="2pNNFR">
-                      <property role="2pNUuO" value="version" />
-                      <node concept="2pMdtt" id="5CDsLVFj4j3" role="2pMdts">
-                        <property role="2pMdty" value="1" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3_J27D" id="5CDsLVFj45p" role="Nbhlr">
-                <node concept="3Mxwew" id="5CDsLVFj45$" role="3MwsjC">
-                  <property role="3MwjfP" value="com.mbeddr.core.colorschemes.jar" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3_J27D" id="5CDsLVFk81G" role="Nbhlr">
-            <node concept="3Mxwew" id="5CDsLVFk81X" role="3MwsjC">
-              <property role="3MwjfP" value="com.mbeddr.core.colorschemes" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3b7kt6" id="5CDsLVFi0ui" role="10PD9s" />
-  </node>
   <node concept="1l3spW" id="6YaWssNZ9op">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.build" />
     <property role="TrG5h" value="spawner" />
@@ -12113,6 +11924,213 @@
     </node>
     <node concept="10PD9b" id="6YaWssNZ9os" role="10PD9s" />
     <node concept="3b7kt6" id="6YaWssNZ9oB" role="10PD9s" />
+  </node>
+  <node concept="1l3spW" id="5CDsLVFi0p_">
+    <property role="2DA0ip" value="../../../../../build/com.mbeddr.build" />
+    <property role="TrG5h" value="colorSchemes" />
+    <property role="turDy" value="build-color-schemes.xml" />
+    <node concept="55IIr" id="5CDsLVFi0pA" role="auvoZ" />
+    <node concept="1l3spV" id="5CDsLVFi0pB" role="1l3spN">
+      <node concept="3981dG" id="5CDsLVFi0sM" role="39821P">
+        <node concept="3_J27D" id="5CDsLVFi0sO" role="Nbhlr">
+          <node concept="3Mxwew" id="5CDsLVFi0t0" role="3MwsjC">
+            <property role="3MwjfP" value="com.mbeddr.core.colorschemes.zip" />
+          </node>
+        </node>
+        <node concept="398223" id="5CDsLVFk81E" role="39821P">
+          <node concept="398223" id="5CDsLVFk7S5" role="39821P">
+            <node concept="3_J27D" id="5CDsLVFk7S7" role="Nbhlr">
+              <node concept="3Mxwew" id="5CDsLVFk7Vh" role="3MwsjC">
+                <property role="3MwjfP" value="META-INF" />
+              </node>
+            </node>
+            <node concept="1kKnMu" id="5CDsLVFk7Vn" role="39821P">
+              <node concept="3_J27D" id="5CDsLVFk7Vo" role="1kKnMs">
+                <node concept="3Mxwew" id="5CDsLVFk7VD" role="3MwsjC">
+                  <property role="3MwjfP" value="plugin.xml" />
+                </node>
+              </node>
+              <node concept="2pNNFK" id="5CDsLVFk7VJ" role="1kKnMX">
+                <property role="2pNNFO" value="idea-plugin" />
+                <node concept="2pNUuL" id="5CDsLVFk7W1" role="2pNNFR">
+                  <property role="2pNUuO" value="version" />
+                  <node concept="2pMdtt" id="5CDsLVFk7W7" role="2pMdts">
+                    <property role="2pMdty" value="2" />
+                  </node>
+                </node>
+                <node concept="2pNNFK" id="5CDsLVFk7Wo" role="3o6s8t">
+                  <property role="2pNNFO" value="id" />
+                  <node concept="3o6iSG" id="5CDsLVFk7X7" role="3o6s8t">
+                    <property role="3o6i5n" value="com.mbeddr.core.colorschemes" />
+                  </node>
+                </node>
+                <node concept="2pNNFK" id="5CDsLVFk7Xt" role="3o6s8t">
+                  <property role="2pNNFO" value="name" />
+                  <node concept="3o6iSG" id="5CDsLVFk7XH" role="3o6s8t">
+                    <property role="3o6i5n" value="com.mbeddr.core.colorschemes" />
+                  </node>
+                </node>
+                <node concept="2pNNFK" id="5CDsLVFk7Yd" role="3o6s8t">
+                  <property role="2pNNFO" value="version" />
+                  <node concept="3o6iSG" id="5CDsLVFk7YB" role="3o6s8t">
+                    <property role="3o6i5n" value="1.0" />
+                  </node>
+                </node>
+                <node concept="2pNNFK" id="5CDsLVFk7Zh" role="3o6s8t">
+                  <property role="2pNNFO" value="extensions" />
+                  <node concept="2pNNFK" id="5CDsLVFk7Zi" role="3o6s8t">
+                    <property role="2pNNFO" value="bundledColorScheme" />
+                    <node concept="2pNUuL" id="5CDsLVFk7Zj" role="2pNNFR">
+                      <property role="2pNUuO" value="path" />
+                      <node concept="2pMdtt" id="5CDsLVFk7Zk" role="2pMdts">
+                        <property role="2pMdty" value="/mbeddrColorSchemes/defaultMbeddr" />
+                      </node>
+                    </node>
+                    <node concept="3o6iSG" id="5CDsLVFk7Zl" role="3o6s8t" />
+                  </node>
+                  <node concept="2pNUuL" id="5CDsLVFk7Zm" role="2pNNFR">
+                    <property role="2pNUuO" value="defaultExtensionNs" />
+                    <node concept="2pMdtt" id="5CDsLVFk7Zn" role="2pMdts">
+                      <property role="2pMdty" value="com.intellij" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="398223" id="5CDsLVFj456" role="39821P">
+            <node concept="3_J27D" id="5CDsLVFj457" role="Nbhlr">
+              <node concept="3Mxwew" id="5CDsLVFj45i" role="3MwsjC">
+                <property role="3MwjfP" value="lib" />
+              </node>
+            </node>
+            <node concept="3981dx" id="5CDsLVFj45o" role="39821P">
+              <node concept="398223" id="5CDsLVFj4iu" role="39821P">
+                <node concept="3_J27D" id="5CDsLVFj4iv" role="Nbhlr">
+                  <node concept="3Mxwew" id="5CDsLVFj4iw" role="3MwsjC">
+                    <property role="3MwjfP" value="mbeddrColorSchemes" />
+                  </node>
+                </node>
+                <node concept="1kKnMu" id="5CDsLVFj4ix" role="39821P">
+                  <node concept="3_J27D" id="5CDsLVFj4iy" role="1kKnMs">
+                    <node concept="3Mxwew" id="5CDsLVFj4iz" role="3MwsjC">
+                      <property role="3MwjfP" value="defaultMbeddr.xml" />
+                    </node>
+                  </node>
+                  <node concept="2pNNFK" id="5CDsLVFj4i$" role="1kKnMX">
+                    <property role="2pNNFO" value="scheme" />
+                    <node concept="2pNNFK" id="5CDsLVFj4i_" role="3o6s8t">
+                      <property role="2pNNFO" value="attributes" />
+                      <node concept="2pNNFK" id="5CDsLVFj4iA" role="3o6s8t">
+                        <property role="2pNNFO" value="option" />
+                        <node concept="2pNUuL" id="5CDsLVFj4iB" role="2pNNFR">
+                          <property role="2pNUuO" value="name" />
+                          <node concept="2pMdtt" id="5CDsLVFj4iC" role="2pMdts">
+                            <property role="2pMdty" value="com.mbeddr.mpsutil.userstyles.sandboxlang.editor.StyleSheet123.style2" />
+                          </node>
+                        </node>
+                        <node concept="2pNNFK" id="5CDsLVFj4iD" role="3o6s8t">
+                          <property role="2pNNFO" value="value" />
+                          <node concept="2pNNFK" id="5CDsLVFj4iE" role="3o6s8t">
+                            <property role="2pNNFO" value="option" />
+                            <node concept="2pNUuL" id="5CDsLVFj4iF" role="2pNNFR">
+                              <property role="2pNUuO" value="name" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iG" role="2pMdts">
+                                <property role="2pMdty" value="FOREGROUND" />
+                              </node>
+                            </node>
+                            <node concept="2pNUuL" id="5CDsLVFj4iH" role="2pNNFR">
+                              <property role="2pNUuO" value="value" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iI" role="2pMdts">
+                                <property role="2pMdty" value="ff2038" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pNNFK" id="5CDsLVFj4iJ" role="3o6s8t">
+                            <property role="2pNNFO" value="option" />
+                            <node concept="2pNUuL" id="5CDsLVFj4iK" role="2pNNFR">
+                              <property role="2pNUuO" value="name" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iL" role="2pMdts">
+                                <property role="2pMdty" value="BACKGROUND" />
+                              </node>
+                            </node>
+                            <node concept="2pNUuL" id="5CDsLVFj4iM" role="2pNNFR">
+                              <property role="2pNUuO" value="value" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iN" role="2pMdts">
+                                <property role="2pMdty" value="5bff0f" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pNNFK" id="5CDsLVFj4iO" role="3o6s8t">
+                            <property role="2pNNFO" value="option" />
+                            <node concept="2pNUuL" id="5CDsLVFj4iP" role="2pNNFR">
+                              <property role="2pNUuO" value="name" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iQ" role="2pMdts">
+                                <property role="2pMdty" value="FONT_TYPE" />
+                              </node>
+                            </node>
+                            <node concept="2pNUuL" id="5CDsLVFj4iR" role="2pNNFR">
+                              <property role="2pNUuO" value="value" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iS" role="2pMdts">
+                                <property role="2pMdty" value="2" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pNNFK" id="5CDsLVFj4iT" role="3o6s8t">
+                            <property role="2pNNFO" value="option" />
+                            <node concept="2pNUuL" id="5CDsLVFj4iU" role="2pNNFR">
+                              <property role="2pNUuO" value="name" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iV" role="2pMdts">
+                                <property role="2pMdty" value="EFFECT_TYPE" />
+                              </node>
+                            </node>
+                            <node concept="2pNUuL" id="5CDsLVFj4iW" role="2pNNFR">
+                              <property role="2pNUuO" value="value" />
+                              <node concept="2pMdtt" id="5CDsLVFj4iX" role="2pMdts">
+                                <property role="2pMdty" value="3" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pNUuL" id="5CDsLVFj4iY" role="2pNNFR">
+                      <property role="2pNUuO" value="name" />
+                      <node concept="2pMdtt" id="5CDsLVFj4iZ" role="2pMdts">
+                        <property role="2pMdty" value="mbeddr Default" />
+                      </node>
+                    </node>
+                    <node concept="2pNUuL" id="5CDsLVFj4j0" role="2pNNFR">
+                      <property role="2pNUuO" value="parent_scheme" />
+                      <node concept="2pMdtt" id="5CDsLVFj4j1" role="2pMdts">
+                        <property role="2pMdty" value="Default" />
+                      </node>
+                    </node>
+                    <node concept="2pNUuL" id="5CDsLVFj4j2" role="2pNNFR">
+                      <property role="2pNUuO" value="version" />
+                      <node concept="2pMdtt" id="5CDsLVFj4j3" role="2pMdts">
+                        <property role="2pMdty" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3_J27D" id="5CDsLVFj45p" role="Nbhlr">
+                <node concept="3Mxwew" id="5CDsLVFj45$" role="3MwsjC">
+                  <property role="3MwjfP" value="com.mbeddr.core.colorschemes.jar" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3_J27D" id="5CDsLVFk81G" role="Nbhlr">
+            <node concept="3Mxwew" id="5CDsLVFk81X" role="3MwsjC">
+              <property role="3MwjfP" value="com.mbeddr.core.colorschemes" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3b7kt6" id="5CDsLVFi0ui" role="10PD9s" />
   </node>
 </model>
 
