@@ -9,7 +9,7 @@
     </options>
     <parameters />
     <build-runners order="RUNNER_112, RUNNER_92, RUNNER_113, RUNNER_114">
-      <runner id="RUNNER_112" name="Set Buildscript status pending" type="simpleRunner">
+      <runner id="RUNNER_112" name="set build script status pending" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[curl -H "Authorization: token %github.token%" \
     -d "{\"state\":\"pending\", \"description\": \"Buildscript generation started.\", \"context\": \"teamcity/build/script\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Bootstrap_GenerateBuildScripts\"}"\
