@@ -22,6 +22,15 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_111" name="Set Github Check Pending" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[curl -H "Authorization: token %github.token%" \
+    -d "{\"state\":\"pending\", \"description\": \"Build started\", \"context\": \"teamcity/build/languages\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Build_BuildLanguages\"}"\
+    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
