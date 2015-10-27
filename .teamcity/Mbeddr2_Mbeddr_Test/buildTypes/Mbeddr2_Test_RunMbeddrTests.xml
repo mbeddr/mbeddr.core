@@ -40,11 +40,11 @@
         <parameters>
           <param name="script.content"><![CDATA[if [ "%build.state%" = "ok" ]; then 
 curl -H "Authorization: token %github.token%" \
-    -d "{\"state\":\"success\", \"description\": \"Build languages successful.\", \"context\": \"teamcity/build/languages\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Build_BuildLanguages&branch_Mbeddr2_Mbeddr_Build\"}"\
+    -d "{\"state\":\"success\", \"description\": \"Tests successful.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
     https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
 else
 curl -H "Authorization: token %github.token%" \
-    -d "{\"state\":\"failure\", \"description\": \"Build languages failed.\", \"context\": \"teamcity/build/languages\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Build_BuildLanguages&branch_Mbeddr2_Mbeddr_Build\"}"\
+    -d "{\"state\":\"failure\", \"description\": \"Tests failed.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
     https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
 fi]]></param>
           <param name="teamcity.step.mode" value="execute_if_failed" />
