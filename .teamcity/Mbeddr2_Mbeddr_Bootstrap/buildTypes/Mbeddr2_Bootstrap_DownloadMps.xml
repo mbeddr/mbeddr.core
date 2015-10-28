@@ -6,6 +6,7 @@
     <options>
       <option name="artifactRules" value="%teamcity.build.workingDir%/mbeddr.core/MPS" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
+      <option name="cleanBuild" value="false" />
     </options>
     <parameters />
     <build-runners order="RUNNER_94, RUNNER_41">
