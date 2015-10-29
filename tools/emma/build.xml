@@ -10,7 +10,7 @@
   <taskdef resource="emma_ant.properties" classpathref="emma.lib" />
   
   <property name="mbeddr.code.dir" value="${basedir}/../../code/languages"/>  
-  <property name="mbeddr.classes.location" value="${mbeddr.code.dir}/com.mbeddr.core/" />
+  <property name="mbeddr.classes.location" value="${mbeddr.code.dir}/" />
 
   <property name="coverage.dir" value="${basedir}/coverage" />
   <property name="coverage_report.dir" value="${basedir}/coverage_report" />
