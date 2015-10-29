@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!-- ============= build file for instrumenting mbeddr code with emma ========= -->
+
+<project name="mbeddr instrument" default="instrument" basedir="." >
+  <property name="emma.dir" value="${basedir}" />
+  <path id="emma.lib" >
+    <pathelement location="${emma.dir}/emma.jar" />
+    <pathelement location="${emma.dir}/emma_ant.jar" />
+  </path>
+  <taskdef resource="emma_ant.properties" classpathref="emma.lib" />
+  
+  <property name="mbeddr.code.dir" value="${basedir}/../../code/languages"/>  
+  <property name="mbeddr.classes.location" value="${mbeddr.code.dir}/com.mbeddr.core/" />
+
+  <property name="coverage.dir" value="${basedir}/coverage" />
+  <property name="coverage_report.dir" value="${basedir}/coverage_report" />
+  
+  <!-- ============= mbeddr.core ========= -->
+  <property name="mbeddr.core.lang.dir" value="${mbeddr.code.dir}/com.mbeddr.core/languages/"/>
+  <property name="expressions.src" value="${mbeddr.core.lang.dir}/com.mbeddr.core.expressions/source_gen"/>
+  <property name="modules.src"     value="${mbeddr.core.lang.dir}/com.mbeddr.core.modules/source_gen" />
+  <property name="pointers.src"    value="${mbeddr.core.lang.dir}/com.mbeddr.core.pointers/source_gen" />
+  <property name="arrays.src"      value="${mbeddr.core.lang.dir}/com.mbeddr.core.arrays/source_gen" />
+  <property name="statements.src"  value="${mbeddr.core.lang.dir}/com.mbeddr.core.statements/source_gen" />
+  <property name="udt.src"  value="${mbeddr.code.dir}/com.mbeddr.core/languages/com.mbeddr.core.udt/source_gen" />
+  <property name="mbeddr.core.src"  value="${expressions.src};${modules.src};${pointers.src};${arrays.src};${statements.src};${udt.src}" />
+
+  <!-- ============= mbeddr.ext ========= -->
+  <property name="mbeddr.ext.lang.dir" value="${mbeddr.code.dir}/com.mbeddr.ext/languages/"/>
+  <property name="statemachines.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.statemachines/source_gen"/>
+  <property name="math.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.math/source_gen"/>
+  <property name="physicalunits.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.physicalunits/source_gen"/>
+  <property name="physicalunits.c.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.physicalunits.c/source_gen"/>
+  <property name="components.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.components/source_gen"/>
+  <property name="compositecomponents.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.compositecomponents/source_gen"/>
+  <property name="components.gen_nomw.src" value="${mbeddr.ext.lang.dir}/com.mbeddr.ext.components.gen_nomw/source_gen"/>
+  <property name="mbeddr.ext.src"  value="${statemachiness.src};${math.src};${physicalunits.src};${physicalunits.c.src};${components.src};${compositecomponents.src};${components.gen_nomw.src};" />
+  
+  <!-- ============= mbeddr.analyses ========= -->
+  <!-- ============= languages ========= -->
+  <property name="mbeddr.analyses.lang.dir" value="${mbeddr.code.dir}/com.mbeddr.analyses/languages/"/>
+  <property name="base.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.base/source_gen"/>
+  <property name="acsl.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.acsl/source_gen"/>
+  <property name="acsl.cbmc.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.acsl.cbmc.gen/source_gen"/>
+  <property name="cbmc.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.cbmc/source_gen"/>
+  <property name="cbmc.core.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.cbmc.core/source_gen"/>
+  <property name="cbmc.statemachines.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.cbmc.statemachines/source_gen"/>
+  <property name="cbmc.components.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.cbmc.components/source_gen"/>
+  <property name="cbmc.testsgen.src" value="${mbeddr.analyses.lang.dir}/com.mbeddr.analyses.cbmc.testsgen/source_gen"/>
+  <property name="mbeddr.analyses.lang.src"  value="${acsl.src};${acsl.cbmc.src};${base.src};${cbmc.src};${cbmc.core.src};${cbmc.statemachines.src};${cbmc.components.src}" />
+  <!-- ============= solutions ========= -->
+  <property name="mbeddr.analyses.solutions.dir" value="${mbeddr.code.dir}/com.mbeddr.analyses/solutions/"/>
+  <property name="acsl.cbmc.rt.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.acsl.cbmc.rt/source_gen"/>
+  <property name="cbmc.core.rt.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.cbmc.core.rt/source_gen"/>
+  <property name="cbmc.components.rt.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.cbmc.components.rt/source_gen"/>
+  <property name="cbmc.statemachines.rt.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.cbmc.statemachines.rt/source_gen"/>
+  <property name="cbmc.sat4j.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.sat4j/source_gen"/>
+  <property name="cbmc.sat4j.fm.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.sat4j.fm/source_gen"/>
+  <property name="cbmc.testsgen.src" value="${mbeddr.analyses.solutions.dir}/com.mbeddr.analyses.cbmc.testsgen/source_gen"/>
+  <property name="mbeddr.analyses.sol.src"  value="${acsl.cbmc.rt.src};${cbmc.core.rt.src};${cbmc.components.rt.src};${cbmc.statemachines.rt.src};${cbmc.sat4j.src};${cbmc.sat4j.fm.src};${cbmc.testsgen.src}" />
+  
+  <property name="mbeddr.analyses.src"  value="${mbeddr.analyses.lang.src};${mbeddr.analyses.sol.src}" />
+  
+  
+  <!-- ============= mbeddr.all.sources ========= -->
+  <property name="sources.path" value="${mbeddr.core.src};${mbeddr.ext.src};${mbeddr.analyses.src};" />  
+  
+  <path id="emma.lib" >
+    <pathelement location="emma.jar" />
+    <pathelement location="emma_ant.jar" />
+  </path>
+
+  <target name="init" >
+    <path id="run.classpath" >
+      <pathelement location="${mbeddr.classes.location}" />
+    </path>
+  </target>
+  
+  <target name="instrument" depends="init" description="instrumenting code" >
+    <emma enabled="true" >
+      <instr instrpathref="run.classpath"
+             metadatafile="${coverage.dir}/metadata.emma"
+             mode="overwrite"/>
+    </emma>
+   </target>
+
+   <target name="report" depends="init" description="generating the report" >
+    <emma enabled="true" >
+      <report sourcepath="${sources.path}" sort="+block,+name,+method,+class" metrics="method:70,block:80,line:80,class:100">
+		<infileset dir="." includes="*.em, *.ec" />
+		<fileset dir="${coverage.dir}" >
+          <include name="*.emma" />
+        </fileset>
+        <txt outfile="${coverage_report.dir}/coverage.txt" depth="package" columns="class,method,block,line,name" />
+        <xml outfile="${coverage_report.dir}/coverage.xml" depth="method"/>
+        <html outfile="${coverage_report.dir}/coverage.html" depth="method" columns="name,class,method,block,line"/>
+      </report>
+    </emma>
+  </target>
+  
+</project>  
