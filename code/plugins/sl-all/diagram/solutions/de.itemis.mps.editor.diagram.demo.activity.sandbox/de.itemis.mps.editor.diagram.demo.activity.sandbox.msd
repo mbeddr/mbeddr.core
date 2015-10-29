@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.itemis.mps.editor.diagram.demo.activity.sandbox" uuid="32505440-8493-4ca5-a95b-0d257a22763e" compileInMPS="true">
+<solution name="de.itemis.mps.editor.diagram.demo.activity.sandbox" uuid="32505440-8493-4ca5-a95b-0d257a22763e" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -35,5 +35,9 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="32505440-8493-4ca5-a95b-0d257a22763e(de.itemis.mps.editor.diagram.demo.activity.sandbox)" version="0" />
+  </dependencyVersions>
 </solution>
 

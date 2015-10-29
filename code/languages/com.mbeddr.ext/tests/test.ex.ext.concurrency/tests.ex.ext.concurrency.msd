@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ex.ext.concurrency" uuid="0b681e67-1f30-4d18-a3fd-d036ab581a70" compileInMPS="true">
+<solution name="test.ex.ext.concurrency" uuid="0b681e67-1f30-4d18-a3fd-d036ab581a70" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -59,5 +59,9 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
+    <module reference="0b681e67-1f30-4d18-a3fd-d036ab581a70(test.ex.ext.concurrency)" version="0" />
+  </dependencyVersions>
 </solution>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.editor.core" uuid="696c96f6-5b95-4072-8731-0a7c9fd47d40" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.editor.core" uuid="696c96f6-5b95-4072-8731-0a7c9fd47d40" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -64,5 +64,10 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)" version="0" />
+    <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
+    <module reference="696c96f6-5b95-4072-8731-0a7c9fd47d40(test.editor.core)" version="0" />
+  </dependencyVersions>
 </solution>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mbeddr.tutorial.typesystemtests" uuid="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="mbeddr.tutorial.typesystemtests" uuid="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -57,5 +57,8 @@
     <language id="7fc59e55-0f30-4694-b8e3-d334e472c924" fqName="mbeddr.tutorial.metadata" version="0" />
     <language id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" fqName="mbeddr.tutorial.vectors" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09(mbeddr.tutorial.typesystemtests)" version="0" />
+  </dependencyVersions>
 </solution>
 
