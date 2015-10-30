@@ -13,6 +13,7 @@
       <runner id="RUNNER_94" name="" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/download.xml" />
+          <param name="runnerArgs" value="-Ddownload-dir=../download" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
