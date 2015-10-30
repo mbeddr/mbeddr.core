@@ -416,10 +416,30 @@
                                 <node concept="3Tm1VV" id="39h1xietdMv" role="1B3o_S" />
                                 <node concept="3cqZAl" id="39h1xietdMw" role="3clF45" />
                                 <node concept="3clFbS" id="39h1xietdMx" role="3clF47">
+                                  <node concept="3cpWs8" id="3zAWwLKh7Xy" role="3cqZAp">
+                                    <node concept="3cpWsn" id="3zAWwLKh7X_" role="3cpWs9">
+                                      <property role="TrG5h" value="port" />
+                                      <node concept="10Oyi0" id="3zAWwLKh7Xw" role="1tU5fm" />
+                                      <node concept="2OqwBi" id="3zAWwLKh87U" role="33vP2m">
+                                        <node concept="2YIFZM" id="3zAWwLKh854" role="2Oq$k0">
+                                          <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
+                                          <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
+                                        </node>
+                                        <node concept="liA8E" id="3zAWwLKh8zt" role="2OqNvi">
+                                          <ref role="37wK5l" to="r85u:3vXSZsAPOM5" resolve="getPort" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                   <node concept="34ab3g" id="39h1xietdMy" role="3cqZAp">
                                     <property role="35gtTG" value="info" />
-                                    <node concept="Xl_RD" id="39h1xietdMz" role="34bqiv">
-                                      <property role="Xl_RC" value="Starting server on port 8080" />
+                                    <node concept="3cpWs3" id="3zAWwLKh8BV" role="34bqiv">
+                                      <node concept="37vLTw" id="3zAWwLKh8Co" role="3uHU7w">
+                                        <ref role="3cqZAo" node="3zAWwLKh7X_" resolve="port" />
+                                      </node>
+                                      <node concept="Xl_RD" id="39h1xietdMz" role="3uHU7B">
+                                        <property role="Xl_RC" value="Starting server on port " />
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="3cpWs8" id="v1nXS808SW" role="3cqZAp">
@@ -434,8 +454,8 @@
                                           <node concept="Xl_RD" id="v1nXS80jX_" role="37wK5m">
                                             <property role="Xl_RC" value="localhost" />
                                           </node>
-                                          <node concept="3cmrfG" id="v1nXS80lqG" role="37wK5m">
-                                            <property role="3cmrfH" value="8080" />
+                                          <node concept="37vLTw" id="3zAWwLKh8Id" role="37wK5m">
+                                            <ref role="3cqZAo" node="3zAWwLKh7X_" resolve="port" />
                                           </node>
                                         </node>
                                       </node>
