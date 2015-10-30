@@ -188,6 +188,9 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -873,6 +876,7 @@
         </node>
         <node concept="sxT6M" id="1U5gor3YnPp" role="3cqZAp">
           <property role="sxT66" value="absoluteBasePath():string" />
+          <property role="3ahEGn" value="true" />
           <node concept="BsUDl" id="7c_RIoB5TpB" role="sxT64">
             <ref role="37wK5l" node="7c_RIoB5OQQ" resolve="getPath" />
           </node>

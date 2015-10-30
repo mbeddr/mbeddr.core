@@ -225,6 +225,9 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -626,6 +629,7 @@
         </node>
         <node concept="sxT6M" id="4X7wieqmSR9" role="3cqZAp">
           <property role="sxT66" value="methodsToShow" />
+          <property role="3ahEGn" value="true" />
           <node concept="3cpWsa" id="4X7wieqmSRa" role="sxT64">
             <ref role="3cqZAo" node="4X7wieqmSH$" resolve="methodsToShow" />
           </node>
@@ -665,6 +669,7 @@
         </node>
         <node concept="sxT6M" id="4X7wieqnHY1" role="3cqZAp">
           <property role="sxT66" value="node" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="4X7wieqwm49" role="sxT64">
             <ref role="3cqZAo" node="4X7wieqwm47" resolve="methodCall" />
           </node>
@@ -680,6 +685,7 @@
         </node>
         <node concept="sxT6M" id="4X7wieqnJ56" role="3cqZAp">
           <property role="sxT66" value="parameterObject" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="4X7wieqwn03" role="sxT64">
             <ref role="3cqZAo" node="4X7wieqwn01" resolve="method" />
           </node>
@@ -815,6 +821,7 @@
         </node>
         <node concept="sxT6M" id="4X7wieqnJFv" role="3cqZAp">
           <property role="sxT66" value="selectedActualArgument" />
+          <property role="3ahEGn" value="true" />
           <node concept="3cpWsa" id="4X7wieqnJFw" role="sxT64">
             <ref role="3cqZAo" node="4X7wieqlHB3" resolve="selectedActualArgument" />
           </node>
@@ -849,6 +856,7 @@
         </node>
         <node concept="sxT6M" id="4X7wieqnJXR" role="3cqZAp">
           <property role="sxT66" value="argumentIndex" />
+          <property role="3ahEGn" value="true" />
           <node concept="3cpWsa" id="4X7wieqnJXS" role="sxT64">
             <ref role="3cqZAo" node="LBlPJUzc4k" resolve="argumentIndex" />
           </node>
@@ -1088,6 +1096,7 @@
         <node concept="3clFbH" id="4X7wieqlD3L" role="3cqZAp" />
         <node concept="sxT6M" id="4X7wieqmTRk" role="3cqZAp">
           <property role="sxT66" value="styledText" />
+          <property role="3ahEGn" value="true" />
           <node concept="1unZQo" id="4X7wieqmTRl" role="sxT64" />
         </node>
       </node>

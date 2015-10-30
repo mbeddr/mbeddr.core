@@ -8008,7 +8008,12 @@
       <node concept="3clFbS" id="5EEZu1pwkbl" role="3clF47">
         <node concept="3SKdUt" id="5EEZu1pwlhV" role="3cqZAp">
           <node concept="3SKdUq" id="5EEZu1pwli2" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: review" />
+            <property role="3SKdUp" value="TODO: remove, this method was deleted from the interface" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3MF_xiWG3Fp" role="3cqZAp">
+          <node concept="3SKdUq" id="3MF_xiWG3Fy" role="3SKWNk">
+            <property role="3SKdUp" value="use: canInsert()" />
           </node>
         </node>
         <node concept="3clFbF" id="5EEZu1pwkbn" role="3cqZAp">
@@ -8016,6 +8021,9 @@
             <property role="3clFbU" value="true" />
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="3MF_xiWG3eE" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="3clFb_" id="5EEZu1pwkbo" role="jymVt">
@@ -8030,6 +8038,66 @@
       <node concept="3clFbS" id="5EEZu1pwkbu" role="3clF47">
         <node concept="3SKdUt" id="5EEZu1pwli6" role="3cqZAp">
           <node concept="3SKdUq" id="5EEZu1pwli7" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: remove, this method was deleted from the interface" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3MF_xiWG3T7" role="3cqZAp">
+          <node concept="3SKdUq" id="3MF_xiWG3Tc" role="3SKWNk">
+            <property role="3SKdUp" value="use: insertNode()" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3MF_xiWG3mk" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3MF_xiWFYHr" role="jymVt" />
+    <node concept="3clFb_" id="3MF_xiWFYLc" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canInsert" />
+      <node concept="37vLTG" id="3MF_xiWFYLd" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="3MF_xiWFYLe" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3MF_xiWFYLf" role="3clF46">
+        <property role="TrG5h" value="nodeToMove" />
+        <node concept="3Tqbb2" id="3MF_xiWFYLg" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="3MF_xiWFYLh" role="3clF45" />
+      <node concept="3Tm1VV" id="3MF_xiWFYLi" role="1B3o_S" />
+      <node concept="3clFbS" id="3MF_xiWFYLk" role="3clF47">
+        <node concept="3SKdUt" id="3MF_xiWG2WN" role="3cqZAp">
+          <node concept="3SKdUq" id="3MF_xiWG2WO" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: review" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MF_xiWFYLm" role="3cqZAp">
+          <node concept="3clFbT" id="3MF_xiWFYLl" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3MF_xiWFYLn" role="jymVt">
+      <property role="TrG5h" value="insertNode" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="37vLTG" id="3MF_xiWFYLo" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="3MF_xiWFYLp" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3MF_xiWFYLq" role="3clF45" />
+      <node concept="3Tm1VV" id="3MF_xiWFYLr" role="1B3o_S" />
+      <node concept="37vLTG" id="3MF_xiWFYLt" role="3clF46">
+        <property role="TrG5h" value="nodeToMove" />
+        <node concept="3Tqbb2" id="3MF_xiWFYLu" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="3MF_xiWFYLv" role="3clF47">
+        <node concept="3SKdUt" id="3MF_xiWG2X2" role="3cqZAp">
+          <node concept="3SKdUq" id="3MF_xiWG2X3" role="3SKWNk">
             <property role="3SKdUp" value="TODO: review" />
           </node>
         </node>

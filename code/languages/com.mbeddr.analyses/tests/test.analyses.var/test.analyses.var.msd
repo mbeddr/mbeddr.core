@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.analyses.var" uuid="81e58733-0eca-428e-a3cc-a69fe333a876" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.analyses.var" uuid="81e58733-0eca-428e-a3cc-a69fe333a876" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -27,5 +27,10 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e(com.mbeddr.analyses.sat4j)" version="0" />
+    <module reference="c34744c1-dc64-4da4-9850-885dee7d4a0c(com.mbeddr.analyses.sat4j.fm)" version="0" />
+    <module reference="81e58733-0eca-428e-a3cc-a69fe333a876(test.analyses.var)" version="0" />
+  </dependencyVersions>
 </solution>
 

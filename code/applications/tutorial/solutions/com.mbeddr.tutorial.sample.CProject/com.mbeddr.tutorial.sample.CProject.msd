@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.tutorial.sample.CProject" uuid="2bd5059a-12b0-4f35-8cc0-1327110664f0" compileInMPS="true">
+<solution name="com.mbeddr.tutorial.sample.CProject" uuid="2bd5059a-12b0-4f35-8cc0-1327110664f0" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -52,5 +52,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="2bd5059a-12b0-4f35-8cc0-1327110664f0(com.mbeddr.tutorial.sample.CProject)" version="0" />
+  </dependencyVersions>
 </solution>
 

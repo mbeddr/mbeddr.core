@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ex.ext.statemachine" uuid="3ef85fa6-42d3-4b91-b2be-19b37203ff69" compileInMPS="true">
+<solution name="test.ex.ext.statemachine" uuid="3ef85fa6-42d3-4b91-b2be-19b37203ff69" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="." />
@@ -50,5 +50,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="3ef85fa6-42d3-4b91-b2be-19b37203ff69(test.ex.ext.statemachine)" version="0" />
+  </dependencyVersions>
 </solution>
 

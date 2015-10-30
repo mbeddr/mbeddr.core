@@ -4,8 +4,8 @@
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.concurrency/com.mbeddr.concurrency.devkit" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.components/components.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.math/com.mbeddr.math.devkit" folder="" />

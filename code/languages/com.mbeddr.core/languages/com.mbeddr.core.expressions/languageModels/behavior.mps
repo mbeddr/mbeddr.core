@@ -282,6 +282,9 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -20062,6 +20065,7 @@
         </node>
         <node concept="sxT6M" id="7x2kTsyKNZF" role="3cqZAp">
           <property role="sxT66" value="role" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="7x2kTsyKOaZ" role="sxT64">
             <ref role="3cqZAo" node="7x2kTsyFCcX" resolve="role" />
           </node>
@@ -20080,12 +20084,14 @@
         </node>
         <node concept="sxT6M" id="7x2kTsyLHet" role="3cqZAp">
           <property role="sxT66" value="expr" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="7x2kTsyLHpH" role="sxT64">
             <ref role="3cqZAo" node="3bfDwHbRG77" resolve="expr" />
           </node>
         </node>
         <node concept="sxT6M" id="7x2kTsyLHvA" role="3cqZAp">
           <property role="sxT66" value="expr.copy" />
+          <property role="3ahEGn" value="true" />
           <node concept="2OqwBi" id="7x2kTsyLHNS" role="sxT64">
             <node concept="37vLTw" id="7x2kTsyLHvB" role="2Oq$k0">
               <ref role="3cqZAo" node="3bfDwHbRG77" resolve="expr" />
@@ -20095,12 +20101,14 @@
         </node>
         <node concept="sxT6M" id="7x2kTsyOER0" role="3cqZAp">
           <property role="sxT66" value="instance" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="7x2kTsyOFqE" role="sxT64">
             <ref role="3cqZAo" node="3bfDwHbRK4y" resolve="instance" />
           </node>
         </node>
         <node concept="sxT6M" id="7x2kTsyRirU" role="3cqZAp">
           <property role="sxT66" value="instance.parent" />
+          <property role="3ahEGn" value="true" />
           <node concept="2OqwBi" id="7x2kTsyRjcO" role="sxT64">
             <node concept="37vLTw" id="7x2kTsyRj7Y" role="2Oq$k0">
               <ref role="3cqZAo" node="3bfDwHbRK4y" resolve="instance" />

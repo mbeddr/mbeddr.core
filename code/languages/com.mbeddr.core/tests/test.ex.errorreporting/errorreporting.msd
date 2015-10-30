@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ex.errorreporting" uuid="c07b5f13-ad5f-4d20-8135-e779258a1721" compileInMPS="true">
+<solution name="test.ex.errorreporting" uuid="c07b5f13-ad5f-4d20-8135-e779258a1721" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -56,5 +56,9 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)" version="0" />
+    <module reference="c07b5f13-ad5f-4d20-8135-e779258a1721(test.ex.errorreporting)" version="0" />
+  </dependencyVersions>
 </solution>
 
