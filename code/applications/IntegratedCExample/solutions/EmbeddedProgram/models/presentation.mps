@@ -432,7 +432,7 @@
       <node concept="1_0LV8" id="2fb5Xw7IIJ8" role="1_0VJ0">
         <node concept="19SGf9" id="2fb5Xw7IIJ9" role="1_0LWR">
           <node concept="19SUe$" id="2fb5Xw7IIJa" role="19SJt6">
-            <property role="19SUeA" value="Signal processing and analysis " />
+            <property role="19SUeA" value="Signal processing " />
           </node>
         </node>
       </node>
@@ -520,7 +520,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="FpE4o7eCTN" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="State machine abstraction (1)" />
       <node concept="2SaynC" id="2fb5Xw7KhBl" role="1_0VJ0">
         <property role="TrG5h" value="statebehaviour" />
         <property role="1DKIkx" value="true" />
@@ -619,7 +619,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="6fRanKDQ4Q7" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="Component activation/deactivation abstraction (1)" />
       <node concept="2SaynC" id="2fb5Xw7KhF2" role="1_0VJ0">
         <property role="TrG5h" value="Power" />
         <property role="1DKIkx" value="true" />
@@ -719,7 +719,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="6fRanKDQ9io" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="Decision tables" />
       <node concept="2SaynC" id="2fb5Xw7KhGV" role="1_0VJ0">
         <property role="TrG5h" value="Decisions" />
         <property role="1DKIkx" value="true" />
@@ -822,7 +822,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="2fb5Xw7KhJ0" role="1_0VJ0">
       <property role="TrG5h" value="Signals" />
-      <property role="1_0VJr" value="Signals" />
+      <property role="1_0VJr" value="Signal processing" />
       <node concept="2SaynC" id="2fb5Xw7KhIe" role="1_0VJ0">
         <property role="TrG5h" value="Signals" />
         <property role="1DKIkx" value="true" />
@@ -1094,7 +1094,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="66_5lNP9q2i" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="Starting point: C program" />
       <node concept="3z_lpU" id="FpE4o7el4O" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpJ" value="true" />
@@ -1163,7 +1163,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="66_5lNP9pYH" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="State machine abstraction (2)" />
       <node concept="2SaynC" id="2fb5Xw7KhCH" role="1_0VJ0">
         <property role="TrG5h" value="statebehaviour" />
         <property role="1DKIkx" value="true" />
@@ -1253,7 +1253,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="66_5lNP9xk4" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="State machine abstraction (3)" />
       <node concept="2SaynC" id="2fb5Xw7KhDE" role="1_0VJ0">
         <property role="TrG5h" value="statebehaviour" />
         <property role="1DKIkx" value="true" />
@@ -1358,7 +1358,7 @@
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
     <node concept="1mvXsy" id="66_5lNP9GWR" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <property role="1_0VJr" value="Component activation/deactivation abstraction (2)" />
       <node concept="2SaynC" id="2fb5Xw7KhFV" role="1_0VJ0">
         <property role="TrG5h" value="Power" />
         <property role="1DKIkx" value="true" />
