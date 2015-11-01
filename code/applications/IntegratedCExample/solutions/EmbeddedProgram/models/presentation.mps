@@ -973,7 +973,7 @@
           <node concept="OjmMv" id="6fRanKDQYuJ" role="3X6T9h">
             <node concept="19SGf9" id="6fRanKDQYuK" role="OjmMu">
               <node concept="19SUe$" id="6fRanKDQYuL" role="19SJt6">
-                <property role="19SUeA" value="Introduce abstractions strategically (where it hurts) for:\n - readiability\n - compactness\n - maintainability\n - understandability by non-programmers  " />
+                <property role="19SUeA" value="Introduce abstractions strategically (where it hurts) for:\n - readability\n - compactness\n - maintainability\n - understandability by non-programmers  " />
               </node>
             </node>
           </node>
@@ -991,7 +991,7 @@
           <node concept="OjmMv" id="6fRanKDQYuR" role="3X6T9h">
             <node concept="19SGf9" id="6fRanKDQYuS" role="OjmMu">
               <node concept="19SUe$" id="6fRanKDQYuT" role="19SJt6">
-                <property role="19SUeA" value="We think this is the future:\n - programmer != developer\n - cross-language IDEs (GPLS as well as DSL)\n - everything relevant modeled, verifiable, correct" />
+                <property role="19SUeA" value="We think this is the future:\n - programmer != developer\n - cross-language IDEs (GPLs as well as DSLs)\n - everything relevant modeled, verifiable, correct" />
               </node>
             </node>
           </node>
