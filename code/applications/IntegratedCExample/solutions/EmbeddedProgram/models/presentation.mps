@@ -106,9 +106,6 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
-        <child id="4052432714772608243" name="text" index="1w35rA" />
-      </concept>
       <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
@@ -121,9 +118,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -378,110 +372,110 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1_0LV8" id="2fb5Xw7IIqZ" role="1_0VJ0">
-      <node concept="19SGf9" id="2fb5Xw7IIr0" role="1_0LWR">
-        <node concept="19SUe$" id="2fb5Xw7IIr1" role="19SJt6">
-          <property role="19SUeA" value="Drone program aspects." />
-        </node>
-      </node>
-    </node>
-    <node concept="1_0LV8" id="2fb5Xw7IIrV" role="1_0VJ0">
-      <node concept="19SGf9" id="2fb5Xw7IIrW" role="1_0LWR">
-        <node concept="19SUe$" id="2fb5Xw7IIrX" role="19SJt6">
-          <property role="19SUeA" value="High level behaviour designed with statemachines" />
-        </node>
-      </node>
-    </node>
-    <node concept="2SaynC" id="2fb5Xw7IHMc" role="1_0VJ0">
-      <property role="TrG5h" value="statebehaviour" />
-      <property role="1DKIkx" value="true" />
-      <property role="2Sbq$t" value="true" />
-      <node concept="OjmMv" id="2fb5Xw7IHMe" role="2SaI5j">
-        <node concept="19SGf9" id="2fb5Xw7IHMf" role="OjmMu">
-          <node concept="19SUe$" id="2fb5Xw7IHMg" role="19SJt6">
-            <property role="19SUeA" value="State behaviour" />
+      <node concept="1_0LV8" id="2fb5Xw7IIqZ" role="1_0VJ0">
+        <node concept="19SGf9" id="2fb5Xw7IIr0" role="1_0LWR">
+          <node concept="19SUe$" id="2fb5Xw7IIr1" role="19SJt6">
+            <property role="19SUeA" value="Drone program aspects." />
           </node>
         </node>
       </node>
-      <node concept="2Sb_l4" id="2fb5Xw7II5E" role="2SbwM5">
-        <property role="2Sb_kV" value="img\behavior.png" />
-        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
-      </node>
-      <node concept="3SGC_w" id="2fb5Xw7II5R" role="3SHJ_F">
-        <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
-      </node>
-    </node>
-    <node concept="1_0LV8" id="2fb5Xw7IItQ" role="1_0VJ0">
-      <node concept="19SGf9" id="2fb5Xw7IItR" role="1_0LWR">
-        <node concept="19SUe$" id="2fb5Xw7IJ05" role="19SJt6">
-          <property role="19SUeA" value="Reduce power consumption by disabling power-using components  " />
-        </node>
-      </node>
-    </node>
-    <node concept="2SaynC" id="2fb5Xw7IIdK" role="1_0VJ0">
-      <property role="TrG5h" value="Power" />
-      <property role="1DKIkx" value="true" />
-      <property role="2Sbq$t" value="true" />
-      <node concept="OjmMv" id="2fb5Xw7IIdM" role="2SaI5j">
-        <node concept="19SGf9" id="2fb5Xw7IIdN" role="OjmMu">
-          <node concept="19SUe$" id="2fb5Xw7IIdO" role="19SJt6">
-            <property role="19SUeA" value="Power management" />
+      <node concept="1_0LV8" id="2fb5Xw7IIrV" role="1_0VJ0">
+        <node concept="19SGf9" id="2fb5Xw7IIrW" role="1_0LWR">
+          <node concept="19SUe$" id="2fb5Xw7IIrX" role="19SJt6">
+            <property role="19SUeA" value="High level behaviour designed with statemachines" />
           </node>
         </node>
       </node>
-      <node concept="2bctqb" id="2fb5Xw7IIdQ" role="3SHJ_F" />
-      <node concept="2Sb_l4" id="2fb5Xw7IIq5" role="2SbwM5">
-        <property role="2Sb_kV" value="img\power.png" />
-        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
-      </node>
-    </node>
-    <node concept="1_0LV8" id="2fb5Xw7IIJ8" role="1_0VJ0">
-      <node concept="19SGf9" id="2fb5Xw7IIJ9" role="1_0LWR">
-        <node concept="19SUe$" id="2fb5Xw7IIJa" role="19SJt6">
-          <property role="19SUeA" value="Signal processing and analysis " />
+      <node concept="2SaynC" id="2fb5Xw7IHMc" role="1_0VJ0">
+        <property role="TrG5h" value="statebehaviour" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7IHMe" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7IHMf" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7IHMg" role="19SJt6">
+              <property role="19SUeA" value="State behaviour" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Sb_l4" id="2fb5Xw7II5E" role="2SbwM5">
+          <property role="2Sb_kV" value="img\behavior.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+        <node concept="3SGC_w" id="2fb5Xw7II5R" role="3SHJ_F">
+          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
         </node>
       </node>
-    </node>
-    <node concept="2SaynC" id="2fb5Xw7IIwT" role="1_0VJ0">
-      <property role="TrG5h" value="Signals" />
-      <property role="1DKIkx" value="true" />
-      <property role="2Sbq$t" value="true" />
-      <node concept="OjmMv" id="2fb5Xw7IIwV" role="2SaI5j">
-        <node concept="19SGf9" id="2fb5Xw7IIwW" role="OjmMu">
-          <node concept="19SUe$" id="2fb5Xw7IIwX" role="19SJt6">
-            <property role="19SUeA" value="Signal processing" />
+      <node concept="1_0LV8" id="2fb5Xw7IItQ" role="1_0VJ0">
+        <node concept="19SGf9" id="2fb5Xw7IItR" role="1_0LWR">
+          <node concept="19SUe$" id="2fb5Xw7IJ05" role="19SJt6">
+            <property role="19SUeA" value="Reduce power consumption by disabling power-using components  " />
           </node>
         </node>
       </node>
-      <node concept="2bctqb" id="2fb5Xw7IIwZ" role="3SHJ_F" />
-      <node concept="2Sb_l4" id="2fb5Xw7IIC3" role="2SbwM5">
-        <property role="2Sb_kV" value="img\signal.png" />
-        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
-      </node>
-    </node>
-    <node concept="1_0LV8" id="2fb5Xw7IIQi" role="1_0VJ0">
-      <node concept="19SGf9" id="2fb5Xw7IIQj" role="1_0LWR">
-        <node concept="19SUe$" id="2fb5Xw7IIQk" role="19SJt6">
-          <property role="19SUeA" value="Decisions based on conditions" />
+      <node concept="2SaynC" id="2fb5Xw7IIdK" role="1_0VJ0">
+        <property role="TrG5h" value="Power" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7IIdM" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7IIdN" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7IIdO" role="19SJt6">
+              <property role="19SUeA" value="Power management" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2fb5Xw7IIdQ" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7IIq5" role="2SbwM5">
+          <property role="2Sb_kV" value="img\power.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
         </node>
       </node>
-    </node>
-    <node concept="2SaynC" id="2fb5Xw7IIVv" role="1_0VJ0">
-      <property role="TrG5h" value="Decisions" />
-      <property role="1DKIkx" value="true" />
-      <property role="2Sbq$t" value="true" />
-      <node concept="OjmMv" id="2fb5Xw7IIVx" role="2SaI5j">
-        <node concept="19SGf9" id="2fb5Xw7IIVy" role="OjmMu">
-          <node concept="19SUe$" id="2fb5Xw7IIVz" role="19SJt6">
-            <property role="19SUeA" value="Decision tables" />
+      <node concept="1_0LV8" id="2fb5Xw7IIJ8" role="1_0VJ0">
+        <node concept="19SGf9" id="2fb5Xw7IIJ9" role="1_0LWR">
+          <node concept="19SUe$" id="2fb5Xw7IIJa" role="19SJt6">
+            <property role="19SUeA" value="Signal processing and analysis " />
           </node>
         </node>
       </node>
-      <node concept="2bctqb" id="2fb5Xw7IIV_" role="3SHJ_F" />
-      <node concept="2Sb_l4" id="2fb5Xw7IJ6r" role="2SbwM5">
-        <property role="2Sb_kV" value="img\decisions.png" />
-        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+      <node concept="2SaynC" id="2fb5Xw7IIwT" role="1_0VJ0">
+        <property role="TrG5h" value="Signals" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7IIwV" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7IIwW" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7IIwX" role="19SJt6">
+              <property role="19SUeA" value="Signal processing" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2fb5Xw7IIwZ" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7IIC3" role="2SbwM5">
+          <property role="2Sb_kV" value="img\signal.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+      </node>
+      <node concept="1_0LV8" id="2fb5Xw7IIQi" role="1_0VJ0">
+        <node concept="19SGf9" id="2fb5Xw7IIQj" role="1_0LWR">
+          <node concept="19SUe$" id="2fb5Xw7IIQk" role="19SJt6">
+            <property role="19SUeA" value="Decisions based on conditions" />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2fb5Xw7IIVv" role="1_0VJ0">
+        <property role="TrG5h" value="Decisions" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7IIVx" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7IIVy" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7IIVz" role="19SJt6">
+              <property role="19SUeA" value="Decision tables" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2fb5Xw7IIV_" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7IJ6r" role="2SbwM5">
+          <property role="2Sb_kV" value="img\decisions.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
       </node>
     </node>
     <node concept="1_0LV8" id="2fb5Xw7IISK" role="1_0VJ0">
@@ -527,6 +521,25 @@
     <node concept="1mvXsy" id="FpE4o7eCTN" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <node concept="2SaynC" id="2fb5Xw7KhBl" role="1_0VJ0">
+        <property role="TrG5h" value="statebehaviour" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhBm" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhBn" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhBo" role="19SJt6">
+              <property role="19SUeA" value="State behaviour" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Sb_l4" id="2fb5Xw7KhBp" role="2SbwM5">
+          <property role="2Sb_kV" value="img\behavior.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+        <node concept="3SGC_w" id="2fb5Xw7KhBq" role="3SHJ_F">
+          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+        </node>
+      </node>
       <node concept="3X6WG5" id="FpE4o7eCUr" role="1_0VJ0">
         <node concept="3X6T9g" id="FpE4o7eCUs" role="3Xp5NH">
           <node concept="OjmMv" id="FpE4o7eCUt" role="3X6T9h">
@@ -607,6 +620,26 @@
     <node concept="1mvXsy" id="6fRanKDQ4Q7" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <node concept="2SaynC" id="2fb5Xw7KhF2" role="1_0VJ0">
+        <property role="TrG5h" value="Power" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhF3" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhF4" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhF5" role="19SJt6">
+              <property role="19SUeA" value="Power management" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2fb5Xw7KhF6" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7KhF7" role="2SbwM5">
+          <property role="2Sb_kV" value="img\power.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KhE_" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
       <node concept="3X6WG5" id="6fRanKDQ4Qm" role="1_0VJ0">
         <node concept="3X6T9g" id="6fRanKDQ4Qn" role="3Xp5NH">
           <node concept="OjmMv" id="6fRanKDQ4Qo" role="3X6T9h">
@@ -687,6 +720,26 @@
     <node concept="1mvXsy" id="6fRanKDQ9io" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <node concept="2SaynC" id="2fb5Xw7KhGV" role="1_0VJ0">
+        <property role="TrG5h" value="Decisions" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhGW" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhGX" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhGY" role="19SJt6">
+              <property role="19SUeA" value="Decision tables" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2fb5Xw7KhGZ" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7KhH0" role="2SbwM5">
+          <property role="2Sb_kV" value="img\decisions.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KhGt" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
       <node concept="3X6WG5" id="6fRanKDQ9iF" role="1_0VJ0">
         <node concept="3X6T9g" id="6fRanKDQ9iG" role="3Xp5NH">
           <node concept="OjmMv" id="6fRanKDQ9iH" role="3X6T9h">
@@ -710,13 +763,6 @@
           </node>
           <node concept="2NCMab" id="6fRanKDQ9iO" role="2NCMaf">
             <ref role="2NCMaa" to="3i8q:31ZMwFtV6WA" resolve="handleStateSwitchingToEcMode" />
-          </node>
-        </node>
-      </node>
-      <node concept="1z9TsT" id="6fRanKDSxeB" role="lGtFl">
-        <node concept="OjmMv" id="6fRanKDSxeC" role="1w35rA">
-          <node concept="19SGf9" id="6fRanKDSxeD" role="OjmMu">
-            <node concept="19SUe$" id="6fRanKDSxeE" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -774,30 +820,54 @@
     <property role="yApLE" value="7" />
     <property role="TrG5h" value="Pres_Ch7_Math" />
     <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
-    <node concept="3z_lpU" id="6fRanKDQU1c" role="1_0VJ0">
-      <property role="3z_lpW" value="mbeddr" />
-      <property role="3z_lpJ" value="true" />
-      <node concept="2NCZwO" id="6fRanKDSWAr" role="3z_lpI">
-        <node concept="2NCMab" id="6fRanKDSWAv" role="2NCMaf">
-          <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
+    <node concept="1mvXsy" id="2fb5Xw7KhJ0" role="1_0VJ0">
+      <property role="TrG5h" value="Signals" />
+      <property role="1_0VJr" value="Signals" />
+      <node concept="2SaynC" id="2fb5Xw7KhIe" role="1_0VJ0">
+        <property role="TrG5h" value="Signals" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhIf" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhIg" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhIh" role="19SJt6">
+              <property role="19SUeA" value="Signal processing" />
+            </node>
+          </node>
         </node>
-        <node concept="2NCMab" id="6fRanKDSWAC" role="2NCMaf">
-          <ref role="2NCMaa" to="qdz5:3YoJoyKi5Qg" resolve="calculateSignalStrength" />
+        <node concept="2bctqb" id="2fb5Xw7KhIi" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7KhIj" role="2SbwM5">
+          <property role="2Sb_kV" value="img\signal.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
         </node>
       </node>
-    </node>
-    <node concept="1_1sxE" id="6fRanKDQU1g" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="3z_lpU" id="6fRanKDQU1h" role="1_0VJ0">
-      <property role="3z_lpW" value="mbeddr" />
-      <property role="3z_lpJ" value="true" />
-      <node concept="2NCZwO" id="6fRanKDQU1i" role="3z_lpI">
-        <node concept="2NCMab" id="6fRanKDQU1j" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
+      <node concept="1_1sxE" id="2fb5Xw7KhHG" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="3z_lpU" id="6fRanKDQU1c" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="2NCZwO" id="6fRanKDSWAr" role="3z_lpI">
+          <node concept="2NCMab" id="6fRanKDSWAv" role="2NCMaf">
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
+          </node>
+          <node concept="2NCMab" id="6fRanKDSWAC" role="2NCMaf">
+            <ref role="2NCMaa" to="qdz5:3YoJoyKi5Qg" resolve="calculateSignalStrength" />
+          </node>
         </node>
-        <node concept="2NCMab" id="6fRanKDQU1k" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXk7Z" resolve="calculateSignalStrength" />
+      </node>
+      <node concept="1_1sxE" id="6fRanKDQU1g" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="3z_lpU" id="6fRanKDQU1h" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="2NCZwO" id="6fRanKDQU1i" role="3z_lpI">
+          <node concept="2NCMab" id="6fRanKDQU1j" role="2NCMaf">
+            <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
+          </node>
+          <node concept="2NCMab" id="6fRanKDQU1k" role="2NCMaf">
+            <ref role="2NCMaa" to="ooh3:7iLD7IPXk7Z" resolve="calculateSignalStrength" />
+          </node>
         </node>
       </node>
     </node>
@@ -1094,6 +1164,28 @@
     <node concept="1mvXsy" id="66_5lNP9pYH" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <node concept="2SaynC" id="2fb5Xw7KhCH" role="1_0VJ0">
+        <property role="TrG5h" value="statebehaviour" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhCI" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhCJ" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhCK" role="19SJt6">
+              <property role="19SUeA" value="State behaviour" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Sb_l4" id="2fb5Xw7KhCL" role="2SbwM5">
+          <property role="2Sb_kV" value="img\behavior.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+        <node concept="3SGC_w" id="2fb5Xw7KhCM" role="3SHJ_F">
+          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KhCe" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
       <node concept="3X6WG5" id="66_5lNP9pZ0" role="1_0VJ0">
         <node concept="3X6T9g" id="66_5lNP9pZ1" role="3Xp5NH">
           <node concept="OjmMv" id="66_5lNP9pZ2" role="3X6T9h">
@@ -1162,7 +1254,26 @@
     <node concept="1mvXsy" id="66_5lNP9xk4" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
-      <node concept="1_1sxE" id="66_5lNP9xkf" role="1_0VJ0">
+      <node concept="2SaynC" id="2fb5Xw7KhDE" role="1_0VJ0">
+        <property role="TrG5h" value="statebehaviour" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhDF" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhDG" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhDH" role="19SJt6">
+              <property role="19SUeA" value="State behaviour" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Sb_l4" id="2fb5Xw7KhDI" role="2SbwM5">
+          <property role="2Sb_kV" value="img\behavior.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+        <node concept="3SGC_w" id="2fb5Xw7KhDJ" role="3SHJ_F">
+          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KhD5" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="3X6WG5" id="66_5lNP9xkg" role="1_0VJ0">
@@ -1248,6 +1359,26 @@
     <node concept="1mvXsy" id="66_5lNP9GWR" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
+      <node concept="2SaynC" id="2fb5Xw7KhFV" role="1_0VJ0">
+        <property role="TrG5h" value="Power" />
+        <property role="1DKIkx" value="true" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="2fb5Xw7KhFW" role="2SaI5j">
+          <node concept="19SGf9" id="2fb5Xw7KhFX" role="OjmMu">
+            <node concept="19SUe$" id="2fb5Xw7KhFY" role="19SJt6">
+              <property role="19SUeA" value="Power management" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2fb5Xw7KhFZ" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2fb5Xw7KhG0" role="2SbwM5">
+          <property role="2Sb_kV" value="img\power.png" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KhFo" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
       <node concept="3X6WG5" id="66_5lNP9GX1" role="1_0VJ0">
         <node concept="3X6T9g" id="66_5lNP9GX2" role="3Xp5NH">
           <node concept="OjmMv" id="66_5lNP9GX3" role="3X6T9h">
