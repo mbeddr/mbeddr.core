@@ -72,6 +72,9 @@
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
+      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
+        <child id="3350625596580089613" name="text" index="1_0LWR" />
+      </concept>
       <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
@@ -375,11 +378,118 @@
           </node>
         </node>
       </node>
-      <node concept="1_1sxE" id="6fRanKDV6Az" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="1_0LV8" id="2fb5Xw7IIqZ" role="1_0VJ0">
+      <node concept="19SGf9" id="2fb5Xw7IIr0" role="1_0LWR">
+        <node concept="19SUe$" id="2fb5Xw7IIr1" role="19SJt6">
+          <property role="19SUeA" value="Drone program aspects." />
+        </node>
       </node>
     </node>
-    <node concept="1_1sxE" id="gYOmwFidbt" role="1_0VJ0">
+    <node concept="1_0LV8" id="2fb5Xw7IIrV" role="1_0VJ0">
+      <node concept="19SGf9" id="2fb5Xw7IIrW" role="1_0LWR">
+        <node concept="19SUe$" id="2fb5Xw7IIrX" role="19SJt6">
+          <property role="19SUeA" value="High level behaviour designed with statemachines" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SaynC" id="2fb5Xw7IHMc" role="1_0VJ0">
+      <property role="TrG5h" value="statebehaviour" />
+      <property role="1DKIkx" value="true" />
+      <property role="2Sbq$t" value="true" />
+      <node concept="OjmMv" id="2fb5Xw7IHMe" role="2SaI5j">
+        <node concept="19SGf9" id="2fb5Xw7IHMf" role="OjmMu">
+          <node concept="19SUe$" id="2fb5Xw7IHMg" role="19SJt6">
+            <property role="19SUeA" value="State behaviour" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Sb_l4" id="2fb5Xw7II5E" role="2SbwM5">
+        <property role="2Sb_kV" value="img\behavior.png" />
+        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+      </node>
+      <node concept="3SGC_w" id="2fb5Xw7II5R" role="3SHJ_F">
+        <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+      </node>
+    </node>
+    <node concept="1_0LV8" id="2fb5Xw7IItQ" role="1_0VJ0">
+      <node concept="19SGf9" id="2fb5Xw7IItR" role="1_0LWR">
+        <node concept="19SUe$" id="2fb5Xw7IJ05" role="19SJt6">
+          <property role="19SUeA" value="Reduce power consumption by disabling power-using components  " />
+        </node>
+      </node>
+    </node>
+    <node concept="2SaynC" id="2fb5Xw7IIdK" role="1_0VJ0">
+      <property role="TrG5h" value="Power" />
+      <property role="1DKIkx" value="true" />
+      <property role="2Sbq$t" value="true" />
+      <node concept="OjmMv" id="2fb5Xw7IIdM" role="2SaI5j">
+        <node concept="19SGf9" id="2fb5Xw7IIdN" role="OjmMu">
+          <node concept="19SUe$" id="2fb5Xw7IIdO" role="19SJt6">
+            <property role="19SUeA" value="Power management" />
+          </node>
+        </node>
+      </node>
+      <node concept="2bctqb" id="2fb5Xw7IIdQ" role="3SHJ_F" />
+      <node concept="2Sb_l4" id="2fb5Xw7IIq5" role="2SbwM5">
+        <property role="2Sb_kV" value="img\power.png" />
+        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+      </node>
+    </node>
+    <node concept="1_0LV8" id="2fb5Xw7IIJ8" role="1_0VJ0">
+      <node concept="19SGf9" id="2fb5Xw7IIJ9" role="1_0LWR">
+        <node concept="19SUe$" id="2fb5Xw7IIJa" role="19SJt6">
+          <property role="19SUeA" value="Signal processing and analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2SaynC" id="2fb5Xw7IIwT" role="1_0VJ0">
+      <property role="TrG5h" value="Signals" />
+      <property role="1DKIkx" value="true" />
+      <property role="2Sbq$t" value="true" />
+      <node concept="OjmMv" id="2fb5Xw7IIwV" role="2SaI5j">
+        <node concept="19SGf9" id="2fb5Xw7IIwW" role="OjmMu">
+          <node concept="19SUe$" id="2fb5Xw7IIwX" role="19SJt6">
+            <property role="19SUeA" value="Signal processing" />
+          </node>
+        </node>
+      </node>
+      <node concept="2bctqb" id="2fb5Xw7IIwZ" role="3SHJ_F" />
+      <node concept="2Sb_l4" id="2fb5Xw7IIC3" role="2SbwM5">
+        <property role="2Sb_kV" value="img\signal.png" />
+        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+      </node>
+    </node>
+    <node concept="1_0LV8" id="2fb5Xw7IIQi" role="1_0VJ0">
+      <node concept="19SGf9" id="2fb5Xw7IIQj" role="1_0LWR">
+        <node concept="19SUe$" id="2fb5Xw7IIQk" role="19SJt6">
+          <property role="19SUeA" value="Decisions based on conditions" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SaynC" id="2fb5Xw7IIVv" role="1_0VJ0">
+      <property role="TrG5h" value="Decisions" />
+      <property role="1DKIkx" value="true" />
+      <property role="2Sbq$t" value="true" />
+      <node concept="OjmMv" id="2fb5Xw7IIVx" role="2SaI5j">
+        <node concept="19SGf9" id="2fb5Xw7IIVy" role="OjmMu">
+          <node concept="19SUe$" id="2fb5Xw7IIVz" role="19SJt6">
+            <property role="19SUeA" value="Decision tables" />
+          </node>
+        </node>
+      </node>
+      <node concept="2bctqb" id="2fb5Xw7IIV_" role="3SHJ_F" />
+      <node concept="2Sb_l4" id="2fb5Xw7IJ6r" role="2SbwM5">
+        <property role="2Sb_kV" value="img\decisions.png" />
+        <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+      </node>
+    </node>
+    <node concept="1_0LV8" id="2fb5Xw7IISK" role="1_0VJ0">
+      <node concept="19SGf9" id="2fb5Xw7IISL" role="1_0LWR">
+        <node concept="19SUe$" id="2fb5Xw7IISM" role="19SJt6" />
+      </node>
+    </node>
+    <node concept="1_1sxE" id="2fb5Xw7IIvS" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
     </node>
     <node concept="J09bk" id="gYOmwFiddK" role="1_0VJ0">
