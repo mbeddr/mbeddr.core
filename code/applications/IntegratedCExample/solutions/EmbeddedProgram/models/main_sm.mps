@@ -520,7 +520,7 @@
       <node concept="1LFebX" id="6EVEFV$jBOA" role="1_Iowf">
         <property role="TrG5h" value="uninitialized" />
         <node concept="1LFeb9" id="56xEliHxdyE" role="1KoBSX">
-          <ref role="1zztin" node="6EVEFV$jC5x" resolve="initializing" />
+          <ref role="1zztin" node="6EVEFV$jC5N" resolve="preparing_standby" />
           <node concept="349iI2" id="56xEliHxdyK" role="2qxFSM">
             <ref role="1bNv6r" node="31ZMwFtVq$z" resolve="input" />
           </node>
