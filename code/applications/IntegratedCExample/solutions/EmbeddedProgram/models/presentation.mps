@@ -584,6 +584,38 @@
       <node concept="1_1sxE" id="6fRanKDUD3Y" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
+      <node concept="3X6WG5" id="66_5lNP9pZ0" role="1_0VJ0">
+        <node concept="3X6T9g" id="66_5lNP9pZ1" role="3Xp5NH">
+          <node concept="OjmMv" id="66_5lNP9pZ2" role="3X6T9h">
+            <node concept="19SGf9" id="66_5lNP9pZ3" role="OjmMu">
+              <node concept="19SUe$" id="66_5lNP9pZ4" role="19SJt6">
+                <property role="19SUeA" value="Next we look at the transitions in a specific state\nThis just lists the next state based on some guards" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="66_5lNP9pZ5" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="3z_lpU" id="66_5lNP9pZ6" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="2NCZwO" id="66_5lNP9pZ7" role="3z_lpI">
+          <node concept="2NCMab" id="66_5lNP9pZ8" role="2NCMaf">
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
+          </node>
+          <node concept="2NCMab" id="66_5lNP9pZ9" role="2NCMaf">
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV7rI" resolve="handleStateDisconnected" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KGMH" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_1sxE" id="2fb5Xw7KGN7" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
     </node>
     <node concept="1_1sxE" id="gYOmwFii3d" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -594,7 +626,7 @@
     </node>
     <node concept="J09bk" id="gYOmwFii6h" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="66_5lNP9pYG" resolve="Pres_Ch4a_StateMachines" />
+      <ref role="J03fB" node="66_5lNP9xk3" resolve="Pres_Ch4b_StateMachines" />
     </node>
     <node concept="J09bk" id="66_5lNP9Kss" role="1_0VJ0">
       <property role="TrG5h" value="End" />
@@ -1157,96 +1189,6 @@
       <property role="Wq1Bq" value="remi.bosman@sioux.eu" />
     </node>
   </node>
-  <node concept="1_1swa" id="66_5lNP9pYG">
-    <property role="yApLE" value="4" />
-    <property role="TrG5h" value="Pres_Ch4a_StateMachines" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
-    <node concept="1mvXsy" id="66_5lNP9pYH" role="1_0VJ0">
-      <property role="TrG5h" value="Case" />
-      <property role="1_0VJr" value="State machine abstraction (2)" />
-      <node concept="2SaynC" id="2fb5Xw7KhCH" role="1_0VJ0">
-        <property role="TrG5h" value="statebehaviour" />
-        <property role="1DKIkx" value="true" />
-        <property role="2Sbq$t" value="true" />
-        <node concept="OjmMv" id="2fb5Xw7KhCI" role="2SaI5j">
-          <node concept="19SGf9" id="2fb5Xw7KhCJ" role="OjmMu">
-            <node concept="19SUe$" id="2fb5Xw7KhCK" role="19SJt6">
-              <property role="19SUeA" value="State behaviour" />
-            </node>
-          </node>
-        </node>
-        <node concept="2Sb_l4" id="2fb5Xw7KhCL" role="2SbwM5">
-          <property role="2Sb_kV" value="img\behavior.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
-        </node>
-        <node concept="3SGC_w" id="2fb5Xw7KhCM" role="3SHJ_F">
-          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
-        </node>
-      </node>
-      <node concept="1_1sxE" id="2fb5Xw7KhCe" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="3X6WG5" id="66_5lNP9pZ0" role="1_0VJ0">
-        <node concept="3X6T9g" id="66_5lNP9pZ1" role="3Xp5NH">
-          <node concept="OjmMv" id="66_5lNP9pZ2" role="3X6T9h">
-            <node concept="19SGf9" id="66_5lNP9pZ3" role="OjmMu">
-              <node concept="19SUe$" id="66_5lNP9pZ4" role="19SJt6">
-                <property role="19SUeA" value="Next we look at the transitions in a specific state\nThis just lists the next state based on some guards" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="66_5lNP9pZ5" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="3z_lpU" id="66_5lNP9pZ6" role="1_0VJ0">
-        <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpJ" value="true" />
-        <node concept="2NCZwO" id="66_5lNP9pZ7" role="3z_lpI">
-          <node concept="2NCMab" id="66_5lNP9pZ8" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
-          </node>
-          <node concept="2NCMab" id="66_5lNP9pZ9" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV7rI" resolve="handleStateDisconnected" />
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="66_5lNP9pZa" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-    </node>
-    <node concept="1_1sxE" id="66_5lNP9pZr" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="J09bk" id="66_5lNP9pZs" role="1_0VJ0">
-      <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7eCTM" resolve="Pres_Ch4_StateMachines" />
-    </node>
-    <node concept="J09bk" id="66_5lNP9pZt" role="1_0VJ0">
-      <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="66_5lNP9xk3" resolve="Pres_Ch4b_StateMachines" />
-    </node>
-    <node concept="J09bk" id="66_5lNP9Ktw" role="1_0VJ0">
-      <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
-    </node>
-    <node concept="1_1sxE" id="66_5lNP9Ktc" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="Wq1Bs" id="66_5lNP9pZu" role="Wq1Bf">
-      <property role="Wq1Bt" value="Eugen Schindler" />
-      <property role="Wq1Bq" value="eugen@schindlerweb.net" />
-    </node>
-    <node concept="Wq1Bs" id="66_5lNP9pZv" role="Wq1Bf">
-      <property role="Wq1Bt" value="Klemens Schindler" />
-      <property role="Wq1Bq" value="klemens@schindlerweb.net" />
-    </node>
-    <node concept="Wq1Bs" id="66_5lNP9pZw" role="Wq1Bf">
-      <property role="Wq1Bt" value="Remi Bosman" />
-      <property role="Wq1Bq" value="remi.bosman@sioux.eu" />
-    </node>
-  </node>
   <node concept="1_1swa" id="66_5lNP9xk3">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="Pres_Ch4b_StateMachines" />
@@ -1326,7 +1268,7 @@
     </node>
     <node concept="J09bk" id="66_5lNP9xkx" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="66_5lNP9pYG" resolve="Pres_Ch4a_StateMachines" />
+      <ref role="J03fB" node="FpE4o7eCTM" resolve="Pres_Ch4_StateMachines" />
     </node>
     <node concept="J09bk" id="66_5lNP9xky" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
