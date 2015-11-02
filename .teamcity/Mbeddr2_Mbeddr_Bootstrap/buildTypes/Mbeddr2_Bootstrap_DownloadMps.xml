@@ -6,8 +6,12 @@
     <options>
       <option name="artifactRules" value="%teamcity.build.workingDir%/mbeddr.core/MPS" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
+      <option name="checkoutMode" value="ON_SERVER" />
       <option name="cleanBuild" value="false" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_41" />
+    </disabled-settings>
     <parameters />
     <build-runners order="RUNNER_94, RUNNER_41">
       <runner id="RUNNER_94" name="" type="Ant">
@@ -31,7 +35,8 @@
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
-        <checkout-rule rule="%mbeddr.checkout-rules%" />
+        <checkout-rule rule="+:download.xml=&gt;mbeddr.core/download.xml" />
+        <checkout-rule rule="+:log.xml=&gt;mbeddr.core/log.xml" />
       </vcs-entry-ref>
     </vcs-settings>
     <requirements />

@@ -12,6 +12,7 @@
           <param name="LevelMax" value="TRACE"/>
       </filter>
   </appender>
+  
 
   <appender name="CONSOLE-DEBUG" class="org.apache.log4j.ConsoleAppender">
       <param name="follow" value="true"/>
