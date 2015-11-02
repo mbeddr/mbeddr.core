@@ -31,7 +31,7 @@
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
-        <checkout-rule rule="%mbeddr.checkout-rules%" />
+        <checkout-rule rule="+:download.xml=&gt;mbeddr.core" />
       </vcs-entry-ref>
     </vcs-settings>
     <requirements />
