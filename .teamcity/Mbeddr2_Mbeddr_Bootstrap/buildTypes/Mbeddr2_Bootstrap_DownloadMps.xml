@@ -33,6 +33,7 @@
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
         <checkout-rule rule="+:download.xml=&gt;mbeddr.core/download.xml" />
+        <checkout-rule rule="+:log.xml=&gt;mbeddr.core/log.xml" />
       </vcs-entry-ref>
     </vcs-settings>
     <requirements />
