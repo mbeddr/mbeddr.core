@@ -2090,8 +2090,21 @@
                 </node>
                 <node concept="liA8E" id="4_Ba8HNXQgc" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="Xl_RD" id="4_Ba8HNSpv9" role="37wK5m">
-                    <property role="Xl_RC" value="The clone method in CBMC Analysis Config has not been updated, after adding new fields!" />
+                  <node concept="3cpWs3" id="3CqL$IpHzJr" role="37wK5m">
+                    <node concept="Xl_RD" id="4_Ba8HNSpv9" role="3uHU7B">
+                      <property role="Xl_RC" value="The clone method in CBMC Analysis Config has not been updated, after adding new fields! Number of expected fields: " />
+                    </node>
+                    <node concept="2OqwBi" id="3CqL$IpH_Lt" role="3uHU7w">
+                      <node concept="2OqwBi" id="3CqL$IpH_Lu" role="2Oq$k0">
+                        <node concept="3VsKOn" id="3CqL$IpH_Lv" role="2Oq$k0">
+                          <ref role="3VsUkX" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+                        </node>
+                        <node concept="liA8E" id="3CqL$IpH_Lw" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Class.getDeclaredFields():java.lang.reflect.Field[]" resolve="getDeclaredFields" />
+                        </node>
+                      </node>
+                      <node concept="1Rwk04" id="3CqL$IpH_Lx" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>
