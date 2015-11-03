@@ -1658,7 +1658,7 @@
       </node>
     </node>
     <node concept="3yqqq6" id="2H5doxulXat" role="3yq$HY">
-      <property role="TrG5h" value="CProver Preference" />
+      <property role="TrG5h" value="CProverPreference" />
       <node concept="10M0yZ" id="7xDyb4PqsmM" role="3yzNdQ">
         <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
         <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />

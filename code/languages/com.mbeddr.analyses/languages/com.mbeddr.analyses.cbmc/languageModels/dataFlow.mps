@@ -6,9 +6,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -275,6 +275,22 @@
             <node concept="3__QtB" id="XYEPTipykC" role="2Oq$k0" />
             <node concept="3TrEf2" id="XYEPTipz57" role="2OqNvi">
               <ref role="3Tt5mk" to="q5q6:4fjBjwDqlY3" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="3GsLLDwqk0i">
+    <property role="3GE5qa" value="statements" />
+    <ref role="3_znuS" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <node concept="3__wT9" id="3GsLLDwqk0j" role="3_A6iZ">
+      <node concept="3clFbS" id="3GsLLDwqk0k" role="2VODD2">
+        <node concept="3AgYrR" id="3GsLLDwqk0v" role="3cqZAp">
+          <node concept="2OqwBi" id="3GsLLDwqk5v" role="3Ah4Yx">
+            <node concept="3__QtB" id="3GsLLDwqk0M" role="2Oq$k0" />
+            <node concept="3TrEf2" id="3GsLLDwqkuc" role="2OqNvi">
+              <ref role="3Tt5mk" to="q5q6:637qsduSbtq" />
             </node>
           </node>
         </node>

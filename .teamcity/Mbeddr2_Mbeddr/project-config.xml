@@ -2,6 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="47ffa04a-a434-4e56-808f-210415ea2d38" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>mbeddr</name>
   <parameters>
+    <param name="mbeddr-github.path-properties" value="-Dmbeddr.github.core.home=%teamcity.build.checkoutDir%/mbeddr.core -Dmbeddr.github.core.home=%teamcity.build.checkoutDir%/mbeddr.core -Dmps.incquery=%teamcity.build.checkoutDir%/mbeddr.core/code/plugins/mps-incquery" />
     <param name="mbeddr.build-number" value="mbeddr-%build.counter%" />
   </parameters>
   <cleanup />

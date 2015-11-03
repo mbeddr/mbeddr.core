@@ -165,6 +165,9 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
+      </concept>
       <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
         <reference id="4481811096720976619" name="concept" index="1shVQp" />
       </concept>
@@ -3274,6 +3277,7 @@
                       <node concept="3clFbS" id="vMpGaXmqCV" role="2VODD2">
                         <node concept="sxT6M" id="5rtsVMmnOGL" role="3cqZAp">
                           <property role="sxT66" value="parent" />
+                          <property role="3ahEGn" value="true" />
                           <node concept="2OqwBi" id="5rtsVMmnPEb" role="sxT64">
                             <node concept="30H73N" id="5rtsVMmnPw9" role="2Oq$k0" />
                             <node concept="1mfA1w" id="5rtsVMmo6xC" role="2OqNvi" />
@@ -3281,6 +3285,7 @@
                         </node>
                         <node concept="sxT6M" id="5rtsVMmqpMr" role="3cqZAp">
                           <property role="sxT66" value="parentConcept" />
+                          <property role="3ahEGn" value="true" />
                           <node concept="2OqwBi" id="5rtsVMmqr9F" role="sxT64">
                             <node concept="2OqwBi" id="5rtsVMmqpMs" role="2Oq$k0">
                               <node concept="30H73N" id="5rtsVMmqpMt" role="2Oq$k0" />

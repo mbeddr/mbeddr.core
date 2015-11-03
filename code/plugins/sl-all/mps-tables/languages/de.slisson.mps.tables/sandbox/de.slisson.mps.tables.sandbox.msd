@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.slisson.mps.tables.sandbox" uuid="2fd17677-b74d-4eb3-8597-c79c1a4079e7" compileInMPS="true" generatorOutputPath="${module}/source_gen">
+<solution name="de.slisson.mps.tables.sandbox" uuid="2fd17677-b74d-4eb3-8597-c79c1a4079e7" moduleVersion="0" compileInMPS="true" generatorOutputPath="${module}/source_gen">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -28,5 +28,8 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="2fd17677-b74d-4eb3-8597-c79c1a4079e7(de.slisson.mps.tables.sandbox)" version="0" />
+  </dependencyVersions>
 </solution>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.lantest.results" uuid="713f461e-ea20-43f2-8bc5-c76a080ce8ac" compileInMPS="true">
+<solution name="com.mbeddr.lantest.results" uuid="713f461e-ea20-43f2-8bc5-c76a080ce8ac" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -37,5 +37,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="713f461e-ea20-43f2-8bc5-c76a080ce8ac(com.mbeddr.lantest.results)" version="0" />
+  </dependencyVersions>
 </solution>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.cc.var.c" uuid="7155c081-a292-4e73-b275-f5d60082f861" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.cc.var.c" uuid="7155c081-a292-4e73-b275-f5d60082f861" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -45,5 +45,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="7155c081-a292-4e73-b275-f5d60082f861(test.ts.cc.var.c)" version="0" />
+  </dependencyVersions>
 </solution>
 

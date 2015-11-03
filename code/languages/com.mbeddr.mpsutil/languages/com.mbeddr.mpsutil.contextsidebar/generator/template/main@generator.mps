@@ -5,12 +5,12 @@
     <use id="b1deed8c-68b2-424a-806a-664b47188e43" name="com.mbeddr.mpsutil.contextsidebar" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -33,6 +33,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -175,20 +176,8 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
-      <concept id="7036359038356050927" name="jetbrains.mps.lang.extension.structure.ExtensionFunction" flags="in" index="20X7yG" />
-      <concept id="7036359038356115097" name="jetbrains.mps.lang.extension.structure.ExtensionFieldDeclaration" flags="ng" index="20Xmnq">
-        <child id="7036359038356115101" name="fieldType" index="20Xmnu" />
-      </concept>
-      <concept id="7036359038356115102" name="jetbrains.mps.lang.extension.structure.ExtensionFieldReference" flags="nn" index="20Xmnt">
-        <reference id="7036359038356115103" name="declaration" index="20Xmns" />
-      </concept>
-      <concept id="8029776554053043557" name="jetbrains.mps.lang.extension.structure.ExtensionObjectGetter" flags="in" index="lufDu" />
-      <concept id="3729007189729192404" name="jetbrains.mps.lang.extension.structure.ExtensionDeclaration" flags="ng" index="vrV6s">
-        <reference id="3729007189729192405" name="extensionPoint" index="vrV6t" />
-        <child id="7036359038356050926" name="activator" index="20X7yH" />
-        <child id="7036359038356050934" name="deactivator" index="20X7yP" />
-        <child id="7036359038356115164" name="fieldDeclaration" index="20Xmmv" />
-        <child id="8029776554053057811" name="objectGetter" index="luc8C" />
+      <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
+        <reference id="126958800891274597" name="extensionPoint" index="1lYe$Y" />
       </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
@@ -287,6 +276,15 @@
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
+      </concept>
+    </language>
+    <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
+      <concept id="3751132065236767083" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.DependentTypeInstance" flags="ig" index="q3mfm">
+        <reference id="3751132065236767084" name="decl" index="q3mfh" />
+        <reference id="9097849371505568270" name="point" index="1QQUv3" />
+      </concept>
+      <concept id="3751132065236767060" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" flags="ig" index="q3mfD">
+        <reference id="19209059688387895" name="decl" index="2VtyIY" />
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
@@ -616,85 +614,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="vrV6s" id="lRW__IvYF2">
-    <property role="TrG5h" value="map_JComponentContextSection" />
-    <property role="3GE5qa" value="common" />
-    <ref role="vrV6t" to="xike:5T3_DgT3PQD" resolve="ContextSidebarExtensionPoint" />
-    <node concept="20Xmnq" id="7TgUh0gUq$J" role="20Xmmv">
-      <property role="TrG5h" value="contextSection" />
-      <node concept="3uibUv" id="7TgUh0gUqJn" role="20Xmnu">
-        <ref role="3uigEE" to="xike:5x8vmjSDN77" resolve="IContextSection" />
-      </node>
-    </node>
-    <node concept="lufDu" id="lRW__IvYF3" role="luc8C">
-      <node concept="3clFbS" id="lRW__IvYF4" role="2VODD2">
-        <node concept="3clFbF" id="7TgUh0gUrkw" role="3cqZAp">
-          <node concept="20Xmnt" id="7TgUh0gUrkv" role="3clFbG">
-            <ref role="20Xmns" node="7TgUh0gUq$J" resolve="contextSection" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="n94m4" id="lRW__IvYF5" role="lGtFl">
-      <ref role="n9lRv" to="nwd3:lRW__Is3De" resolve="IContextSection" />
-    </node>
-    <node concept="20X7yG" id="7TgUh0gUqJt" role="20X7yH">
-      <node concept="3clFbS" id="7TgUh0gUqJu" role="2VODD2">
-        <node concept="3clFbF" id="7TgUh0gUqUm" role="3cqZAp">
-          <node concept="37vLTI" id="7TgUh0gUqVe" role="3clFbG">
-            <node concept="20Xmnt" id="7TgUh0gUqUl" role="37vLTJ">
-              <ref role="20Xmns" node="7TgUh0gUq$J" resolve="contextSection" />
-            </node>
-            <node concept="2ShNRf" id="lRW__IvZPI" role="37vLTx">
-              <node concept="HV5vD" id="lRW__IvZPJ" role="2ShVmc">
-                <ref role="HV5vE" to="fiq3:lRW__IuRoj" resolve="DummyContextSectionBase" />
-                <node concept="1ZhdrF" id="lRW__IvZPK" role="lGtFl">
-                  <property role="2qtEX8" value="classifier" />
-                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/2820489544401957797/2820489544401957798" />
-                  <node concept="3$xsQk" id="lRW__IvZPL" role="3$ytzL">
-                    <node concept="3clFbS" id="lRW__IvZPM" role="2VODD2">
-                      <node concept="3clFbF" id="lRW__IvZPN" role="3cqZAp">
-                        <node concept="2OqwBi" id="lRW__IvZPO" role="3clFbG">
-                          <node concept="30H73N" id="lRW__IvZPP" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="lRW__IxxYj" role="2OqNvi">
-                            <ref role="37wK5l" to="qexa:lRW__IxxnB" resolve="concatClassName" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="i7Uxc2RFnp" role="3cqZAp">
-          <node concept="2YIFZM" id="i7Uxc2RNQK" role="3clFbG">
-            <ref role="37wK5l" to="xike:5x8vmjSDirc" resolve="reloadAllInstances" />
-            <ref role="1Pybhc" to="xike:5x8vmjSDiqg" resolve="ContextSidebarManager" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="20X7yG" id="7TgUh0gUr21" role="20X7yP">
-      <node concept="3clFbS" id="7TgUh0gUr22" role="2VODD2">
-        <node concept="3clFbF" id="7TgUh0gUrc0" role="3cqZAp">
-          <node concept="37vLTI" id="7TgUh0gUrcS" role="3clFbG">
-            <node concept="10Nm6u" id="7TgUh0gUrde" role="37vLTx" />
-            <node concept="20Xmnt" id="7TgUh0gUrbZ" role="37vLTJ">
-              <ref role="20Xmns" node="7TgUh0gUq$J" resolve="contextSection" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="i7Uxc2RNR2" role="3cqZAp">
-          <node concept="2YIFZM" id="i7Uxc2RNR3" role="3clFbG">
-            <ref role="37wK5l" to="xike:5x8vmjSDirc" resolve="reloadAllInstances" />
-            <ref role="1Pybhc" to="xike:5x8vmjSDiqg" resolve="ContextSidebarManager" />
           </node>
         </node>
       </node>
@@ -2279,6 +2198,102 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lYeZD" id="lRW__IvYF2">
+    <property role="2bfB8j" value="true" />
+    <property role="TrG5h" value="ContextSidebarExtensionPoint_extension" />
+    <ref role="1lYe$Y" to="xike:5T3_DgT3PQD" resolve="ContextSidebarExtensionPoint" />
+    <node concept="3Tm1VV" id="6XfQs9tKcEb" role="1B3o_S" />
+    <node concept="2tJIrI" id="6XfQs9tKcEc" role="jymVt" />
+    <node concept="312cEg" id="7TgUh0gUq$J" role="jymVt">
+      <property role="TrG5h" value="contextSection" />
+      <node concept="3Tm6S6" id="6XfQs9tKcDY" role="1B3o_S" />
+      <node concept="3uibUv" id="7TgUh0gUqJn" role="1tU5fm">
+        <ref role="3uigEE" to="xike:5x8vmjSDN77" resolve="IContextSection" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6XfQs9tKcEd" role="jymVt" />
+    <node concept="q3mfD" id="7TgUh0gUqJt" role="jymVt">
+      <property role="TrG5h" value="activate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0CPy" resolve="activate" />
+      <node concept="3Tm1VV" id="6XfQs9tKcE3" role="1B3o_S" />
+      <node concept="3clFbS" id="6XfQs9tKcE4" role="3clF47">
+        <node concept="3clFbF" id="7TgUh0gUqUm" role="3cqZAp">
+          <node concept="37vLTI" id="7TgUh0gUqVe" role="3clFbG">
+            <node concept="37vLTw" id="7TgUh0gUqUl" role="37vLTJ">
+              <ref role="3cqZAo" node="7TgUh0gUq$J" resolve="contextSection" />
+            </node>
+            <node concept="2ShNRf" id="lRW__IvZPI" role="37vLTx">
+              <node concept="HV5vD" id="lRW__IvZPJ" role="2ShVmc">
+                <ref role="HV5vE" to="fiq3:lRW__IuRoj" resolve="DummyContextSectionBase" />
+                <node concept="1ZhdrF" id="lRW__IvZPK" role="lGtFl">
+                  <property role="2qtEX8" value="classifier" />
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/2820489544401957797/2820489544401957798" />
+                  <node concept="3$xsQk" id="lRW__IvZPL" role="3$ytzL">
+                    <node concept="3clFbS" id="lRW__IvZPM" role="2VODD2">
+                      <node concept="3clFbF" id="lRW__IvZPN" role="3cqZAp">
+                        <node concept="2OqwBi" id="lRW__IvZPO" role="3clFbG">
+                          <node concept="30H73N" id="lRW__IvZPP" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="lRW__IxxYj" role="2OqNvi">
+                            <ref role="37wK5l" to="qexa:lRW__IxxnB" resolve="concatClassName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="i7Uxc2RFnp" role="3cqZAp">
+          <node concept="2YIFZM" id="i7Uxc2RNQK" role="3clFbG">
+            <ref role="37wK5l" to="xike:5x8vmjSDirc" resolve="reloadAllInstances" />
+            <ref role="1Pybhc" to="xike:5x8vmjSDiqg" resolve="ContextSidebarManager" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6XfQs9tKcE5" role="3clF45" />
+    </node>
+    <node concept="q3mfD" id="7TgUh0gUr21" role="jymVt">
+      <property role="TrG5h" value="deactivate" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+      <node concept="3Tm1VV" id="6XfQs9tKcE7" role="1B3o_S" />
+      <node concept="3clFbS" id="6XfQs9tKcE8" role="3clF47">
+        <node concept="3clFbF" id="7TgUh0gUrc0" role="3cqZAp">
+          <node concept="37vLTI" id="7TgUh0gUrcS" role="3clFbG">
+            <node concept="10Nm6u" id="7TgUh0gUrde" role="37vLTx" />
+            <node concept="37vLTw" id="7TgUh0gUrbZ" role="37vLTJ">
+              <ref role="3cqZAo" node="7TgUh0gUq$J" resolve="contextSection" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="i7Uxc2RNR2" role="3cqZAp">
+          <node concept="2YIFZM" id="i7Uxc2RNR3" role="3clFbG">
+            <ref role="37wK5l" to="xike:5x8vmjSDirc" resolve="reloadAllInstances" />
+            <ref role="1Pybhc" to="xike:5x8vmjSDiqg" resolve="ContextSidebarManager" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6XfQs9tKcE9" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6XfQs9tKcEe" role="jymVt" />
+    <node concept="q3mfD" id="6XfQs9tKcEf" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="6XfQs9tKcEg" role="1B3o_S" />
+      <node concept="3clFbS" id="6XfQs9tKcEh" role="3clF47">
+        <node concept="3clFbF" id="7TgUh0gUrkw" role="3cqZAp">
+          <node concept="37vLTw" id="7TgUh0gUrkv" role="3clFbG">
+            <ref role="3cqZAo" node="7TgUh0gUq$J" resolve="contextSection" />
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="6XfQs9tKcEi" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="6XfQs9tKcEf" resolve="get" />
       </node>
     </node>
   </node>

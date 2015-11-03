@@ -7,7 +7,16 @@
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
-    <build-runners order="RUNNER_95">
+    <build-runners order="RUNNER_119, RUNNER_95, RUNNER_120, RUNNER_121">
+      <runner id="RUNNER_119" name="set build script status pending" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[curl -H "Authorization: token %github.token%" \
+    -d "{\"state\":\"pending\", \"description\": \"Running tests.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
+    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_95" name="Build and run Tests" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />
@@ -18,6 +27,28 @@
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
           <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_120" name="set build ok" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo &quot;##teamcity[setParameter name='build.state' value='ok']&quot;" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_121" name="set build scripts status result" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[if [ "%build.state%" = "ok" ]; then 
+curl -H "Authorization: token %github.token%" \
+    -d "{\"state\":\"success\", \"description\": \"Tests successful.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
+    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
+else
+curl -H "Authorization: token %github.token%" \
+    -d "{\"state\":\"failure\", \"description\": \"Tests failed.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
+    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
+fi]]></param>
+          <param name="teamcity.step.mode" value="execute_if_failed" />
+          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
     </build-runners>
