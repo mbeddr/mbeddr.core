@@ -1009,6 +1009,52 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
+    <node concept="N3Fnw" id="7_kHFWoeCXl" role="N3F5h">
+      <property role="TrG5h" value="getline" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2O5j3L" id="7_kHFWoeBNa" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="7_kHFWoeE79" role="1UOdpc">
+        <property role="TrG5h" value="lineptr" />
+        <node concept="3wxxNl" id="7_kHFWoeE7X" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="3wxxNl" id="7_kHFWoeE7G" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="biTqx" id="7_kHFWoeE78" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="7_kHFWoeEil" role="1UOdpc">
+        <property role="TrG5h" value="n" />
+        <node concept="3wxxNl" id="7_kHFWoeEiY" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="2O5j3L" id="7_kHFWoeEij" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="7_kHFWoeEkP" role="1UOdpc">
+        <property role="TrG5h" value="stream" />
+        <node concept="3wxxNl" id="7_kHFWoeElN" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="7_kHFWoeEkN" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="137zkozycEG" resolve="FILE" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="N3Fnw" id="137zkozycHQ" role="N3F5h">
       <property role="TrG5h" value="gets" />
       <property role="2OOxQR" value="true" />
