@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="iqxq" ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -52,6 +52,9 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -288,6 +291,42 @@
                 <node concept="Xl_RD" id="$WtIWnCkTc" role="3cqZAk">
                   <property role="Xl_RC" value="Delete Name" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5sAZ2ylKpFW">
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="PatternBuilderNode_ToogleExact" />
+    <ref role="2ZfgGC" to="iqxq:35E98Eq3U8I" resolve="PatternBuilderNode" />
+    <node concept="2S6ZIM" id="5sAZ2ylKpFX" role="2ZfVej">
+      <node concept="3clFbS" id="5sAZ2ylKpFY" role="2VODD2">
+        <node concept="3clFbF" id="5sAZ2ylKpHl" role="3cqZAp">
+          <node concept="Xl_RD" id="5sAZ2ylKpHk" role="3clFbG">
+            <property role="Xl_RC" value="Toogle Exact" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5sAZ2ylKpFZ" role="2ZfgGD">
+      <node concept="3clFbS" id="5sAZ2ylKpG0" role="2VODD2">
+        <node concept="3clFbF" id="5sAZ2ylKpKD" role="3cqZAp">
+          <node concept="37vLTI" id="5sAZ2ylKq5u" role="3clFbG">
+            <node concept="3fqX7Q" id="5sAZ2ylKq5N" role="37vLTx">
+              <node concept="2OqwBi" id="5sAZ2ylKq9L" role="3fr31v">
+                <node concept="2Sf5sV" id="5sAZ2ylKq6_" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5sAZ2ylKql7" role="2OqNvi">
+                  <ref role="3TsBF5" to="iqxq:5sAZ2ylKpoR" resolve="exact" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5sAZ2ylKpN1" role="37vLTJ">
+              <node concept="2Sf5sV" id="5sAZ2ylKpKC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5sAZ2ylKpYa" role="2OqNvi">
+                <ref role="3TsBF5" to="iqxq:5sAZ2ylKpoR" resolve="exact" />
               </node>
             </node>
           </node>

@@ -170,6 +170,10 @@
     <property role="TrG5h" value="PatternBuilderNode" />
     <property role="1pbfSe" value="881211720" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyi" id="5sAZ2ylKpoR" role="1TKVEl">
+      <property role="TrG5h" value="exact" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="4IP40Bi2KcV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />

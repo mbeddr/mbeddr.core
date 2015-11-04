@@ -177,6 +177,7 @@
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
       </concept>
       <concept id="3560698633098601006" name="com.mbeddr.mpsutil.compare.pattern.structure.PatternBuilderNode" flags="ng" index="2Fpoq$">
+        <property id="6279983981656118839" name="exact" index="32TQCv" />
         <reference id="91081616816648150" name="concept" index="1QFNBD" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
@@ -248,6 +249,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
     <language id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang">
@@ -1491,6 +1493,21 @@
       <node concept="3cqZAl" id="4mypyst6T9$" role="3clF45" />
       <node concept="3clFbS" id="4mypyst6T9_" role="3clF47">
         <node concept="3clFbH" id="4mypyst6T9A" role="3cqZAp" />
+        <node concept="3cpWs8" id="5sAZ2ylL5NN" role="3cqZAp">
+          <node concept="3cpWsn" id="5sAZ2ylL5NT" role="3cpWs9">
+            <property role="TrG5h" value="cp" />
+            <node concept="1QDCVq" id="5sAZ2ylL5NV" role="1tU5fm">
+              <ref role="1QDCVp" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+            </node>
+            <node concept="2FommH" id="5sAZ2ylL5QX" role="33vP2m">
+              <node concept="2Fpoq$" id="5sAZ2ylL5Re" role="2pJPEn">
+                <property role="32TQCv" value="true" />
+                <ref role="1QFNBD" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5sAZ2ylL5Lc" role="3cqZAp" />
         <node concept="3cpWs8" id="4mypyst6T9B" role="3cqZAp">
           <node concept="3cpWsn" id="4mypyst6T9C" role="3cpWs9">
             <property role="TrG5h" value="if1p" />
@@ -1498,11 +1515,14 @@
               <ref role="1QDCVp" to="tpee:fzclF8n" resolve="IfStatement" />
             </node>
             <node concept="2FommH" id="4mypyst6T9E" role="33vP2m">
+              <property role="TrG5h" value="if1pm" />
               <node concept="2Fpoq$" id="4mypyst6T9F" role="2pJPEn">
                 <ref role="1QFNBD" to="tpee:fzclF8n" resolve="IfStatement" />
                 <node concept="2FpdTS" id="4mypyst6Vx4" role="2pJxcM">
                   <ref role="2pIpSl" to="tpee:hzeNLa7" />
-                  <node concept="1QCd_1" id="4mypyst7xVq" role="2pJxcZ" />
+                  <node concept="uEgwc" id="5sAZ2ylL1Eu" role="uEg$h">
+                    <property role="TrG5h" value="elseifClauses" />
+                  </node>
                 </node>
                 <node concept="2FpdTS" id="4mypyst6VzJ" role="2pJxcM">
                   <ref role="2pIpSl" to="tpee:fK9aQHQ" />
@@ -1524,11 +1544,15 @@
               <ref role="1QDCVp" to="tpee:fzclF8n" resolve="IfStatement" />
             </node>
             <node concept="2FommH" id="4mypyst6XuN" role="33vP2m">
+              <property role="TrG5h" value="if2pm" />
               <node concept="2Fpoq$" id="4mypyst6XuO" role="2pJPEn">
+                <property role="32TQCv" value="true" />
                 <ref role="1QFNBD" to="tpee:fzclF8n" resolve="IfStatement" />
                 <node concept="2FpdTS" id="4mypyst6XuP" role="2pJxcM">
                   <ref role="2pIpSl" to="tpee:hzeNLa7" />
-                  <node concept="1QCd_1" id="4mypyst6XuQ" role="2pJxcZ" />
+                  <node concept="uEgwc" id="5sAZ2ylL2wa" role="uEg$h">
+                    <property role="TrG5h" value="elseifClauses" />
+                  </node>
                 </node>
                 <node concept="2FpdTS" id="4mypyst6XuR" role="2pJxcM">
                   <ref role="2pIpSl" to="tpee:fK9aQHQ" />
@@ -1565,6 +1589,25 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5sAZ2ylL6_z" role="3cqZAp" />
+        <node concept="1gVbGN" id="5sAZ2ylL6HO" role="3cqZAp">
+          <node concept="3fqX7Q" id="5sAZ2ylL8VI" role="1gVkn0">
+            <node concept="2OqwBi" id="5sAZ2ylL8VK" role="3fr31v">
+              <node concept="2OqwBi" id="5sAZ2ylL8VL" role="2Oq$k0">
+                <node concept="37vLTw" id="5sAZ2ylL8VM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4mypyst6WRf" resolve="if1" />
+                </node>
+                <node concept="2xUPFB" id="5sAZ2ylL8VN" role="2OqNvi">
+                  <node concept="37vLTw" id="5sAZ2ylL8VO" role="2xUPFC">
+                    <ref role="3cqZAo" node="5sAZ2ylL5NT" resolve="cp" />
+                  </node>
+                </node>
+              </node>
+              <node concept="uEm4C" id="5sAZ2ylL8VP" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5sAZ2ylL6EZ" role="3cqZAp" />
         <node concept="1gVbGN" id="4mypyst6VBj" role="3cqZAp">
           <node concept="2OqwBi" id="4mypyst6Xjt" role="1gVkn0">
             <node concept="2OqwBi" id="4mypyst6VDb" role="2Oq$k0">
@@ -1578,6 +1621,31 @@
               </node>
             </node>
             <node concept="uEm4C" id="4mypyst6Xkq" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="1gVbGN" id="5sAZ2ylL1kI" role="3cqZAp">
+          <node concept="2OqwBi" id="5sAZ2ylL1UH" role="1gVkn0">
+            <node concept="2OqwBi" id="5sAZ2ylL1Bq" role="2Oq$k0">
+              <node concept="2OqwBi" id="5sAZ2ylL1s_" role="2Oq$k0">
+                <node concept="37vLTw" id="5sAZ2ylL1oN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4mypyst6WRf" resolve="if1" />
+                </node>
+                <node concept="2xUPFB" id="5sAZ2ylL1Aq" role="2OqNvi">
+                  <node concept="uBx5W" id="5sAZ2ylL1RR" role="2xUPFC">
+                    <ref role="uBx4F" node="4mypyst6T9E" resolve="if1pm" />
+                    <node concept="37vLTw" id="5sAZ2ylL1AU" role="uz58V">
+                      <ref role="3cqZAo" node="4mypyst6T9C" resolve="if1p" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="uEgxu" id="5sAZ2ylL1Ct" role="2OqNvi">
+                <node concept="uEYpF" id="5sAZ2ylL1SY" role="uEQfB">
+                  <ref role="uEYpB" node="5sAZ2ylL1Eu" resolve="elseifClauses" />
+                </node>
+              </node>
+            </node>
+            <node concept="1v1jN8" id="5sAZ2ylL1ZY" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="4mypyst6XkI" role="3cqZAp" />
@@ -1617,7 +1685,31 @@
             <node concept="uEm4C" id="4mypyst6XmO" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3clFbH" id="4mypyst6XlD" role="3cqZAp" />
+        <node concept="1gVbGN" id="5sAZ2ylL20a" role="3cqZAp">
+          <node concept="2OqwBi" id="5sAZ2ylL20b" role="1gVkn0">
+            <node concept="2OqwBi" id="5sAZ2ylL20c" role="2Oq$k0">
+              <node concept="2OqwBi" id="5sAZ2ylL20d" role="2Oq$k0">
+                <node concept="37vLTw" id="5sAZ2ylL257" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4mypyst6XmB" resolve="if2" />
+                </node>
+                <node concept="2xUPFB" id="5sAZ2ylL20f" role="2OqNvi">
+                  <node concept="uBx5W" id="5sAZ2ylL20g" role="2xUPFC">
+                    <ref role="uBx4F" node="4mypyst6XuN" resolve="if2pm" />
+                    <node concept="37vLTw" id="5sAZ2ylL25J" role="uz58V">
+                      <ref role="3cqZAo" node="4mypyst6XuL" resolve="if2p" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="uEgxu" id="5sAZ2ylL20i" role="2OqNvi">
+                <node concept="uEYpF" id="5sAZ2ylL20j" role="uEQfB">
+                  <ref role="uEYpB" node="5sAZ2ylL2wa" resolve="elseifClauses" />
+                </node>
+              </node>
+            </node>
+            <node concept="1v1jN8" id="5sAZ2ylL20k" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="4mypyst6TcY" role="1SKRRt">
