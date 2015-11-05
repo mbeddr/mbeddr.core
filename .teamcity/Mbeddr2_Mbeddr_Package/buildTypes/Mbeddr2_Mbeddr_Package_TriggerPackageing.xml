@@ -10,6 +10,36 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
+    <dependencies>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageDistribution">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackagePlatform">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageAllPlugins">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+    </dependencies>
     <cleanup />
   </settings>
 </build-type>
