@@ -5974,6 +5974,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3Ymokd9JHOV" role="jymVt" />
+    <node concept="312cEg" id="7_kHFWoipzc" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="usedCStandardSpinner" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="7_kHFWoipzd" role="1B3o_S" />
+      <node concept="3uibUv" id="7_kHFWoipze" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JSpinner" resolve="JSpinner" />
+      </node>
+      <node concept="2ShNRf" id="7_kHFWoipzf" role="33vP2m">
+        <node concept="1pGfFk" id="7_kHFWoipzg" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JSpinner.&lt;init&gt;(javax.swing.SpinnerModel)" resolve="JSpinner" />
+          <node concept="2OqwBi" id="7_kHFWoipzh" role="37wK5m">
+            <node concept="37vLTw" id="7_kHFWoipzi" role="2Oq$k0">
+              <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+            </node>
+            <node concept="2OwXpG" id="7_kHFWoiqWl" role="2OqNvi">
+              <ref role="2Oxat5" node="7_kHFWoi7YB" resolve="usedCStandardModel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7_kHFWoiomm" role="jymVt" />
     <node concept="3clFbW" id="7xDyb4Pkmwn" role="jymVt">
       <node concept="3Tm6S6" id="cchPmXBWDQ" role="1B3o_S" />
       <node concept="3cqZAl" id="7xDyb4Pkmwo" role="3clF45" />
@@ -6275,6 +6299,51 @@
           </node>
         </node>
         <node concept="3clFbH" id="6oWe_39teGN" role="3cqZAp" />
+        <node concept="3clFbF" id="7_kHFWoiuRN" role="3cqZAp">
+          <node concept="2OqwBi" id="7_kHFWoiuRO" role="3clFbG">
+            <node concept="37vLTw" id="7_kHFWoiuRP" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4PkmwI" resolve="basicSettings" />
+            </node>
+            <node concept="liA8E" id="7_kHFWoiuRQ" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="2ShNRf" id="7_kHFWoiuRR" role="37wK5m">
+                <node concept="1pGfFk" id="7_kHFWoiuRS" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="7_kHFWoiuRT" role="37wK5m">
+                    <property role="Xl_RC" value="Used C standard: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7_kHFWoiuRU" role="3cqZAp">
+          <node concept="2OqwBi" id="7_kHFWoiuRV" role="3clFbG">
+            <node concept="37vLTw" id="7_kHFWoiuRW" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4PkmwI" resolve="basicSettings" />
+            </node>
+            <node concept="liA8E" id="7_kHFWoiuRX" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="7_kHFWoiwrE" role="37wK5m">
+                <ref role="3cqZAo" node="7_kHFWoipzc" resolve="usedCStandardSpinner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7_kHFWoiuRZ" role="3cqZAp">
+          <node concept="2OqwBi" id="7_kHFWoiuS0" role="3clFbG">
+            <node concept="37vLTw" id="7_kHFWoiwGL" role="2Oq$k0">
+              <ref role="3cqZAo" node="7_kHFWoipzc" resolve="usedCStandardSpinner" />
+            </node>
+            <node concept="liA8E" id="7_kHFWoiuS2" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="7_kHFWoiuS5" role="37wK5m">
+                <property role="Xl_RC" value="Informs CBMC about the C dialect of the input (supported dialects are C89, C99 and C11)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7_kHFWoitJn" role="3cqZAp" />
         <node concept="3clFbF" id="3_HSwtdawfZ" role="3cqZAp">
           <node concept="2OqwBi" id="3_HSwtdawg0" role="3clFbG">
             <node concept="37vLTw" id="3_HSwtdaySy" role="2Oq$k0">
@@ -7773,6 +7842,17 @@
             </node>
             <node concept="liA8E" id="FDeiXqAir3" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JCheckBox.updateUI():void" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7_kHFWoit_D" role="3cqZAp" />
+        <node concept="3clFbF" id="7_kHFWoisev" role="3cqZAp">
+          <node concept="2OqwBi" id="7_kHFWoisAb" role="3clFbG">
+            <node concept="37vLTw" id="7_kHFWoiset" role="2Oq$k0">
+              <ref role="3cqZAo" node="7_kHFWoipzc" resolve="usedCStandardSpinner" />
+            </node>
+            <node concept="liA8E" id="7_kHFWoitr7" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JSpinner.updateUI():void" resolve="updateUI" />
             </node>
           </node>
         </node>
@@ -10085,6 +10165,34 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3OhBgB4hwPL" role="jymVt" />
+    <node concept="312cEg" id="7_kHFWoi7YB" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="usedCStandardModel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="7_kHFWoi7YC" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~SpinnerListModel" resolve="SpinnerListModel" />
+      </node>
+      <node concept="2ShNRf" id="7_kHFWoi7YD" role="33vP2m">
+        <node concept="1pGfFk" id="7_kHFWoi7YE" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~SpinnerListModel.&lt;init&gt;(java.util.List)" resolve="SpinnerListModel" />
+          <node concept="2YIFZM" id="7_kHFWoi7YF" role="37wK5m">
+            <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+            <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+            <node concept="Xl_RD" id="7_kHFWoi7YG" role="37wK5m">
+              <property role="Xl_RC" value="C89" />
+            </node>
+            <node concept="Xl_RD" id="7_kHFWoi7YH" role="37wK5m">
+              <property role="Xl_RC" value="C99" />
+            </node>
+            <node concept="Xl_RD" id="7_kHFWoiitF" role="37wK5m">
+              <property role="Xl_RC" value="C11" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7_kHFWoi7u5" role="jymVt" />
     <node concept="3clFbW" id="3OhBgB4hwPM" role="jymVt">
       <node concept="3Tm6S6" id="3OhBgB4hwPN" role="1B3o_S" />
       <node concept="3cqZAl" id="3OhBgB4hwPO" role="3clF45" />
@@ -10702,6 +10810,61 @@
         <ref role="3uigEE" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7_kHFWoi3Gl" role="jymVt" />
+    <node concept="3clFb_" id="7_kHFWoi4Ds" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setUsedCStandard" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="7_kHFWoi4Dt" role="3clF47">
+        <node concept="3clFbF" id="7_kHFWoi4Du" role="3cqZAp">
+          <node concept="2OqwBi" id="7_kHFWoi4Dv" role="3clFbG">
+            <node concept="37vLTw" id="7_kHFWoiiD8" role="2Oq$k0">
+              <ref role="3cqZAo" node="7_kHFWoi7YB" resolve="usedCStandardModel" />
+            </node>
+            <node concept="liA8E" id="7_kHFWoi4Dx" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~SpinnerListModel.setValue(java.lang.Object):void" resolve="setValue" />
+              <node concept="37vLTw" id="7_kHFWoi4Dy" role="37wK5m">
+                <ref role="3cqZAo" node="7_kHFWoi4D_" resolve="std" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7_kHFWoi4Dz" role="1B3o_S" />
+      <node concept="3cqZAl" id="7_kHFWoi4D$" role="3clF45" />
+      <node concept="37vLTG" id="7_kHFWoi4D_" role="3clF46">
+        <property role="TrG5h" value="std" />
+        <node concept="17QB3L" id="7_kHFWoi4DA" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7_kHFWoi4DB" role="jymVt" />
+    <node concept="3clFb_" id="7_kHFWoi4DC" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getUsedCStandard" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="7_kHFWoi4DD" role="3clF47">
+        <node concept="3cpWs6" id="7_kHFWoi4DE" role="3cqZAp">
+          <node concept="1eOMI4" id="7_kHFWoi4DF" role="3cqZAk">
+            <node concept="10QFUN" id="7_kHFWoi4DG" role="1eOMHV">
+              <node concept="17QB3L" id="7_kHFWoi4DH" role="10QFUM" />
+              <node concept="2OqwBi" id="7_kHFWoi4DI" role="10QFUP">
+                <node concept="37vLTw" id="7_kHFWoilmt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7_kHFWoi7YB" resolve="usedCStandardModel" />
+                </node>
+                <node concept="liA8E" id="7_kHFWoi4DK" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~SpinnerListModel.getValue():java.lang.Object" resolve="getValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7_kHFWoi4DL" role="1B3o_S" />
+      <node concept="17QB3L" id="7_kHFWoi4DM" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="7_kHFWoi4aR" role="jymVt" />
     <node concept="3Tm1VV" id="3OhBgB4hx56" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4wNvmgr9OM6">

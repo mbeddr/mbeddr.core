@@ -24,8 +24,8 @@
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -7882,7 +7882,7 @@
   <node concept="PKFIW" id="5tDzxi6RrTa">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="OptionalCBMCSettings" />
-    <ref role="1XX52x" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    <ref role="1XX52x" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
     <node concept="3EZMnI" id="5tDzxi6RrTI" role="2wV5jI">
       <node concept="PMmxH" id="5tDzxi6RrUn" role="3EZMnx">
         <ref role="PMmxG" node="56VLVOUm_Oq" resolve="TimeoutSettings" />

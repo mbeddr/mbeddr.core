@@ -68,7 +68,7 @@
   </registry>
   <node concept="1lYeZD" id="58S6eLQJ3ha">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="AssignmentsLifterProvider_extension" />
+    <property role="TrG5h" value="AssignmentsCoreLifterProvider_extension" />
     <ref role="1lYe$Y" to="4pdp:58S6eLQM0$n" resolve="AssignmentsLifterProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2e" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2f" role="jymVt" />
@@ -103,7 +103,7 @@
   </node>
   <node concept="1lYeZD" id="58S6eLQNVBI">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="FunctionCallsLifterProvider_extension" />
+    <property role="TrG5h" value="FunctionCallsCoreLifterProvider_extension" />
     <ref role="1lYe$Y" to="4pdp:58S6eLQNVyr" resolve="FunctionCallsLifterProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2p" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2q" role="jymVt" />
@@ -138,7 +138,7 @@
   </node>
   <node concept="1lYeZD" id="58S6eLQNVQN">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="FunctionReturnsLifterProvider_extension" />
+    <property role="TrG5h" value="FunctionReturnsCoreLifterProvider_extension" />
     <ref role="1lYe$Y" to="4pdp:58S6eLQNVBz" resolve="FunctionReturnsLifterProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2$" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2_" role="jymVt" />
@@ -173,7 +173,7 @@
   </node>
   <node concept="1lYeZD" id="16yBdWg2CBB">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="FunctionCallsLifterProvider_extension" />
+    <property role="TrG5h" value="FunctionCallsDecTabLifterProvider_extension" />
     <ref role="1lYe$Y" to="4pdp:58S6eLQNVyr" resolve="FunctionCallsLifterProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2J" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2K" role="jymVt" />
@@ -208,7 +208,7 @@
   </node>
   <node concept="1lYeZD" id="16yBdWg2INN">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="FunctionReturnsLifterProvider_extension" />
+    <property role="TrG5h" value="FunctionReturnsDecTabLifterProvider_extension" />
     <ref role="1lYe$Y" to="4pdp:58S6eLQNVBz" resolve="FunctionReturnsLifterProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2U" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2V" role="jymVt" />
@@ -243,7 +243,7 @@
   </node>
   <node concept="1lYeZD" id="4cM$kBlq9gp">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="AssignmentsLifterProvider_extension" />
+    <property role="TrG5h" value="AssignmentsDecTabLifterProvider_extension" />
     <ref role="1lYe$Y" to="4pdp:58S6eLQM0$n" resolve="AssignmentsLifterProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX35" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX36" role="jymVt" />
