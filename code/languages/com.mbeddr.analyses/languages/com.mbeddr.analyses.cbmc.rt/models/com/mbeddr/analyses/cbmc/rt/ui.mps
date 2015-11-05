@@ -3061,7 +3061,7 @@
               <node concept="1pGfFk" id="3_HSwtcTpMB" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                 <node concept="Xl_RD" id="3_HSwtcTpMC" role="37wK5m">
-                  <property role="Xl_RC" value="Re-run analysis" />
+                  <property role="Xl_RC" value="Re-run" />
                 </node>
               </node>
             </node>
