@@ -9,7 +9,19 @@
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
     </vcs-settings>
     <requirements />
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="branchFilter"><![CDATA[-:*
++:<default>
++:v-1.5-*]]></param>
+          <param name="groupCheckinsByCommitter" value="true" />
+          <param name="perCheckinTriggering" value="true" />
+          <param name="quietPeriod" value="91" />
+          <param name="quietPeriodMode" value="USE_CUSTOM" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <dependencies>
       <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageDistribution">
         <options>
