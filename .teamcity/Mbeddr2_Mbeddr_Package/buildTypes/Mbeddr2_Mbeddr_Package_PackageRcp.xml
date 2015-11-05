@@ -52,7 +52,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageAllPlugins" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="com.mbeddr.allInOne.zip=&gt;artifacts/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
+        <artifact sourcePath="com.mbeddr.allInOne.zip=&gt;artifacts/com.mbeddr.allInOne/" />
       </dependency>
     </artifact-dependencies>
     <dependencies>
