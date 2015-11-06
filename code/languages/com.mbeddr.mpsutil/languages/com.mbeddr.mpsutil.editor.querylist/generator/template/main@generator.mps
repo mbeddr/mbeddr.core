@@ -4049,33 +4049,17 @@
               </node>
             </node>
             <node concept="3clFbS" id="g_CeiMC" role="3clFbx">
-              <node concept="3cpWs8" id="g_CeiMD" role="3cqZAp">
-                <node concept="3cpWsn" id="g_CeiME" role="3cpWs9">
-                  <property role="TrG5h" value="opContext" />
-                  <node concept="3uibUv" id="g_CeiMF" role="1tU5fm">
-                    <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
-                  </node>
-                  <node concept="2OqwBi" id="h_XJ7bP" role="33vP2m">
-                    <node concept="37vLTw" id="2BHiRxglgu5" role="2Oq$k0">
-                      <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
-                    </node>
-                    <node concept="liA8E" id="h_XJ7bQ" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="g_CeiMI" role="3cqZAp">
                 <node concept="3cpWsn" id="g_CeiMJ" role="3cpWs9">
                   <property role="TrG5h" value="manager" />
                   <node concept="3uibUv" id="g_CeiMK" role="1tU5fm">
                     <ref role="3uigEE" to="exr9:~EditorManager" resolve="EditorManager" />
                   </node>
-                  <node concept="2YIFZM" id="g_CeiML" role="33vP2m">
-                    <ref role="37wK5l" to="exr9:~EditorManager.getInstanceFromContext(jetbrains.mps.smodel.IOperationContext):jetbrains.mps.nodeEditor.EditorManager" resolve="getInstanceFromContext" />
+                  <node concept="2YIFZM" id="1bzdWTcJNNs" role="33vP2m">
+                    <ref role="37wK5l" to="exr9:~EditorManager.getInstanceFromContext(jetbrains.mps.openapi.editor.EditorContext):jetbrains.mps.nodeEditor.EditorManager" resolve="getInstanceFromContext" />
                     <ref role="1Pybhc" to="exr9:~EditorManager" resolve="EditorManager" />
-                    <node concept="37vLTw" id="3GM_nagTyco" role="37wK5m">
-                      <ref role="3cqZAo" node="g_CeiME" resolve="opContext" />
+                    <node concept="37vLTw" id="1bzdWTcJOjL" role="37wK5m">
+                      <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
                     </node>
                   </node>
                 </node>
