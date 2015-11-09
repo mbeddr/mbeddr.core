@@ -357,6 +357,7 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+      <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
       <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
     <language id="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" name="com.mbeddr.mpsutil.runconfiguration">
@@ -614,7 +615,6 @@
       <concept id="1172650591544" name="jetbrains.mps.baseLanguage.collections.structure.SkipOperation" flags="nn" index="7r0gD">
         <child id="1172658456740" name="elementsToSkip" index="7T0AP" />
       </concept>
-      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -8175,41 +8175,40 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="4a0ow32keZt" role="3cqZAp">
-              <node concept="2OqwBi" id="4a0ow32kfmR" role="3clFbG">
-                <node concept="2OqwBi" id="4a0ow32kf1u" role="2Oq$k0">
-                  <node concept="37vLTw" id="4a0ow32keZr" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4a0ow32kezg" resolve="sorted" />
-                  </node>
-                  <node concept="7r0gD" id="4a0ow32kfax" role="2OqNvi">
-                    <node concept="3cmrfG" id="4a0ow32kfjf" role="7T0AP">
-                      <property role="3cmrfH" value="2" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2es0OD" id="4a0ow32kfwb" role="2OqNvi">
-                  <node concept="1bVj0M" id="4a0ow32kfwd" role="23t8la">
-                    <node concept="3clFbS" id="4a0ow32kfwe" role="1bW5cS">
-                      <node concept="3clFbF" id="4a0ow32kg4l" role="3cqZAp">
-                        <node concept="2OqwBi" id="4a0ow32kgwK" role="3clFbG">
-                          <node concept="3EllGN" id="4a0ow32kgjy" role="2Oq$k0">
-                            <node concept="37vLTw" id="4a0ow32kgtc" role="3ElVtu">
-                              <ref role="3cqZAo" node="4a0ow32kfwf" resolve="it" />
+            <node concept="2Gpval" id="4a0ow32qtqG" role="3cqZAp">
+              <node concept="2GrKxI" id="4a0ow32qtqI" role="2Gsz3X">
+                <property role="TrG5h" value="timestamp" />
+              </node>
+              <node concept="3clFbS" id="4a0ow32qtqK" role="2LFqv$">
+                <node concept="1QHqEM" id="4a0ow32qu9_" role="3cqZAp">
+                  <node concept="1QHqEC" id="4a0ow32qu9A" role="1QHqEI">
+                    <node concept="3clFbS" id="4a0ow32qu9B" role="1bW5cS">
+                      <node concept="3clFbF" id="4a0ow32quGZ" role="3cqZAp">
+                        <node concept="2OqwBi" id="4a0ow32qvhy" role="3clFbG">
+                          <node concept="3EllGN" id="4a0ow32quTD" role="2Oq$k0">
+                            <node concept="2GrUjf" id="4a0ow32qvc3" role="3ElVtu">
+                              <ref role="2Gs0qQ" node="4a0ow32qtqI" resolve="timestamp" />
                             </node>
-                            <node concept="37vLTw" id="4a0ow32kg4k" role="3ElQJh">
+                            <node concept="37vLTw" id="4a0ow32quGY" role="3ElQJh">
                               <ref role="3cqZAo" node="4a0ow32k1mC" resolve="fileMap" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="4a0ow32kg_R" role="2OqNvi">
+                          <node concept="liA8E" id="4a0ow32qvoM" role="2OqNvi">
                             <ref role="37wK5l" to="3ju5:~IFile.delete():boolean" resolve="delete" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="4a0ow32kfwf" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="4a0ow32kfwg" role="1tU5fm" />
-                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4a0ow32qttj" role="2GsD0m">
+                <node concept="37vLTw" id="4a0ow32qttk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4a0ow32kezg" resolve="sorted" />
+                </node>
+                <node concept="7r0gD" id="4a0ow32qttl" role="2OqNvi">
+                  <node concept="3cmrfG" id="4a0ow32qttm" role="7T0AP">
+                    <property role="3cmrfH" value="2" />
                   </node>
                 </node>
               </node>
@@ -8262,13 +8261,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4a0ow32iSYC" role="3cqZAp">
-          <node concept="2OqwBi" id="4a0ow32iTgg" role="3clFbG">
-            <node concept="37vLTw" id="4a0ow32iSYA" role="2Oq$k0">
-              <ref role="3cqZAo" node="4a0ow32h8An" resolve="output" />
-            </node>
-            <node concept="liA8E" id="4a0ow32iTqY" role="2OqNvi">
-              <ref role="37wK5l" to="3ju5:~IFile.createNewFile():boolean" resolve="createNewFile" />
+        <node concept="1QHqEM" id="4a0ow32qV_l" role="3cqZAp">
+          <node concept="1QHqEC" id="4a0ow32qV_n" role="1QHqEI">
+            <node concept="3clFbS" id="4a0ow32qV_p" role="1bW5cS">
+              <node concept="3clFbF" id="4a0ow32iSYC" role="3cqZAp">
+                <node concept="2OqwBi" id="4a0ow32iTgg" role="3clFbG">
+                  <node concept="37vLTw" id="4a0ow32iSYA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4a0ow32h8An" resolve="output" />
+                  </node>
+                  <node concept="liA8E" id="4a0ow32iTqY" role="2OqNvi">
+                    <ref role="37wK5l" to="3ju5:~IFile.createNewFile():boolean" resolve="createNewFile" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
