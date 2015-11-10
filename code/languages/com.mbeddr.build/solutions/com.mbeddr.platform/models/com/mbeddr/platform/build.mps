@@ -7697,6 +7697,9 @@
     </node>
     <node concept="10PD9b" id="3AVJcIMlF8n" role="10PD9s" />
     <node concept="3b7kt6" id="3AVJcIMlF8o" role="10PD9s" />
+    <node concept="398rNT" id="y88tjWugEB" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="398rNT" id="3AVJcIMlF8p" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
       <node concept="55IIr" id="3AVJcIMlF8q" role="398pKh">
@@ -7845,30 +7848,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="3AVJcIMlF95" role="1l3spd">
-      <property role="TrG5h" value="sl.all" />
-      <node concept="398BVA" id="3AVJcIMlF96" role="398pKh">
-        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="3AVJcIMlF97" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="3AVJcIMlF98" role="2Ry0An">
-            <property role="2Ry0Am" value="plugins" />
-            <node concept="2Ry0Ak" id="3AVJcIMlF99" role="2Ry0An">
-              <property role="2Ry0Am" value="sl-all" />
-              <node concept="2Ry0Ak" id="3AVJcIMlF9a" role="2Ry0An">
-                <property role="2Ry0Am" value="build" />
-                <node concept="2Ry0Ak" id="3AVJcIMlF9b" role="2Ry0An">
-                  <property role="2Ry0Am" value="artifacts" />
-                  <node concept="2Ry0Ak" id="3AVJcIMlF9c" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps-sl-all" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="3AVJcIMlF9d" role="1l3spd">
       <property role="TrG5h" value="doc.artifacts" />
       <node concept="398BVA" id="3AVJcIMlF9e" role="398pKh">
@@ -7935,6 +7914,15 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="2Xjt3l5c8Xb" role="1l3spd">
+      <property role="TrG5h" value="sl.all" />
+      <node concept="398BVA" id="y88tjWuhhl" role="398pKh">
+        <ref role="398BVh" node="y88tjWugEB" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuhix" role="iGT6I">
+          <property role="2Ry0Am" value="mps-sl-all" />
+        </node>
+      </node>
+    </node>
     <node concept="2kB4xC" id="2HHioL2N8dt" role="1l3spd">
       <property role="TrG5h" value="major.version" />
       <node concept="aVJcg" id="2HHioL2Ncpe" role="aVJcv">
@@ -7989,7 +7977,7 @@
     <node concept="2sgV4H" id="6ucYLjotvKQ" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
       <node concept="398BVA" id="6ucYLjotvKR" role="2JcizS">
-        <ref role="398BVh" node="3AVJcIMlF95" resolve="sl.all" />
+        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="sl.all" />
       </node>
     </node>
     <node concept="1l3spV" id="3AVJcIMlF9x" role="1l3spN">
@@ -8227,6 +8215,9 @@
         <property role="3LWZYw" value="**/*.info" />
       </node>
     </node>
+    <node concept="398rNT" id="y88tjWuFj_" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="398rNT" id="6ucYLjosfLw" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
       <node concept="55IIr" id="6ucYLjosfLx" role="398pKh">
@@ -8256,48 +8247,21 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="6ucYLjotydi" role="1l3spd">
+    <node concept="398rNT" id="y88tjWuFkz" role="1l3spd">
       <property role="TrG5h" value="sl.all" />
-      <node concept="398BVA" id="6ucYLjotydj" role="398pKh">
-        <ref role="398BVh" node="6ucYLjosfLw" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="6ucYLjotydk" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="6ucYLjotydl" role="2Ry0An">
-            <property role="2Ry0Am" value="plugins" />
-            <node concept="2Ry0Ak" id="6ucYLjotydm" role="2Ry0An">
-              <property role="2Ry0Am" value="sl-all" />
-              <node concept="2Ry0Ak" id="6ucYLjotydn" role="2Ry0An">
-                <property role="2Ry0Am" value="build" />
-                <node concept="2Ry0Ak" id="6ucYLjotydo" role="2Ry0An">
-                  <property role="2Ry0Am" value="artifacts" />
-                  <node concept="2Ry0Ak" id="6ucYLjotydp" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps-sl-all" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="398BVA" id="y88tjWuFk$" role="398pKh">
+        <ref role="398BVh" node="y88tjWuFj_" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuFk_" role="iGT6I">
+          <property role="2Ry0Am" value="mps-sl-all" />
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="6RmoJr9Cop$" role="1l3spd">
+    <node concept="398rNT" id="6RmoJr9qF5L" role="1l3spd">
       <property role="TrG5h" value="platform.artifacts" />
-      <node concept="398BVA" id="6RmoJr9Cop_" role="398pKh">
-        <ref role="398BVh" node="6ucYLjosfLw" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="6RmoJr9CopA" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="6RmoJr9CopB" role="2Ry0An">
-            <property role="2Ry0Am" value="com.mbeddr.platform" />
-            <node concept="2Ry0Ak" id="6RmoJr9CopC" role="2Ry0An">
-              <property role="2Ry0Am" value="build" />
-              <node concept="2Ry0Ak" id="6RmoJr9CopD" role="2Ry0An">
-                <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="6RmoJr9Gmik" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.platform" />
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="398BVA" id="y88tjWuhjH" role="398pKh">
+        <ref role="398BVh" node="y88tjWuFj_" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuhkT" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -8424,13 +8388,13 @@
     <node concept="2sgV4H" id="6ucYLjosdav" role="1l3spa">
       <ref role="1l3spb" node="3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9DmSL" role="2JcizS">
-        <ref role="398BVh" node="6RmoJr9Cop$" resolve="platform.artifacts" />
+        <ref role="398BVh" node="6RmoJr9qF5L" resolve="platform.artifacts" />
       </node>
     </node>
     <node concept="2sgV4H" id="3AVJcIMlF9v" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
       <node concept="398BVA" id="3AVJcIMlF9w" role="2JcizS">
-        <ref role="398BVh" node="6ucYLjotydi" resolve="sl.all" />
+        <ref role="398BVh" node="y88tjWuFkz" resolve="sl.all" />
       </node>
     </node>
   </node>
@@ -8449,6 +8413,9 @@
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
+    </node>
+    <node concept="398rNT" id="y88tjWuFzA" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
     </node>
     <node concept="398rNT" id="7eF9rfAnzTR" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -8529,48 +8496,21 @@
         <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
       </node>
     </node>
-    <node concept="398rNT" id="4hvHh3QXKHO" role="1l3spd">
+    <node concept="398rNT" id="y88tjWuFs5" role="1l3spd">
       <property role="TrG5h" value="sl.all" />
-      <node concept="398BVA" id="4hvHh3QXKHP" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="4hvHh3QXKHQ" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="4hvHh3QXKHR" role="2Ry0An">
-            <property role="2Ry0Am" value="plugins" />
-            <node concept="2Ry0Ak" id="4hvHh3QXKHS" role="2Ry0An">
-              <property role="2Ry0Am" value="sl-all" />
-              <node concept="2Ry0Ak" id="4hvHh3QXKHT" role="2Ry0An">
-                <property role="2Ry0Am" value="build" />
-                <node concept="2Ry0Ak" id="4hvHh3QXKHU" role="2Ry0An">
-                  <property role="2Ry0Am" value="artifacts" />
-                  <node concept="2Ry0Ak" id="4hvHh3QXKHV" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps-sl-all" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="398BVA" id="y88tjWuFs6" role="398pKh">
+        <ref role="398BVh" node="y88tjWuFzA" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuFs7" role="iGT6I">
+          <property role="2Ry0Am" value="mps-sl-all" />
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="6RmoJr9td1v" role="1l3spd">
+    <node concept="398rNT" id="y88tjWuFs8" role="1l3spd">
       <property role="TrG5h" value="platform.artifacts" />
-      <node concept="398BVA" id="6RmoJr9td1w" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="6RmoJr9td1x" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="6RmoJr9td1y" role="2Ry0An">
-            <property role="2Ry0Am" value="com.mbeddr.platform" />
-            <node concept="2Ry0Ak" id="6RmoJr9td1z" role="2Ry0An">
-              <property role="2Ry0Am" value="build" />
-              <node concept="2Ry0Ak" id="6RmoJr9td1$" role="2Ry0An">
-                <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="6RmoJr9td1_" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.platform" />
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="398BVA" id="y88tjWuFs9" role="398pKh">
+        <ref role="398BVh" node="y88tjWuFzA" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuFsa" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -8586,13 +8526,13 @@
     <node concept="2sgV4H" id="6RmoJr9td8z" role="1l3spa">
       <ref role="1l3spb" node="3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9tddi" role="2JcizS">
-        <ref role="398BVh" node="6RmoJr9td1v" resolve="platform.artifacts" />
+        <ref role="398BVh" node="y88tjWuFs8" resolve="platform.artifacts" />
       </node>
     </node>
     <node concept="2sgV4H" id="4hvHh3QXKNz" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
       <node concept="398BVA" id="4hvHh3QXKSB" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QXKHO" resolve="sl.all" />
+        <ref role="398BVh" node="y88tjWuFs5" resolve="sl.all" />
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzV1" role="1l3spN">

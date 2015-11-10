@@ -3,11 +3,12 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.allScripts.build" />
+  <property name="artifacts.root" location="" />
   <property name="mps.home" location="${basedir}/../../../../../.." />
   <property name="mbeddr.github.core.home" location="${basedir}/../.." />
   <property name="mbeddr.build" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
-  <property name="sl.all" location="${mbeddr.github.core.home}/code/plugins/sl-all/build/artifacts/mps-sl-all" />
+  <property name="sl.all" location="${artifacts.root}/mps-sl-all" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -442,6 +443,7 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
+      <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="mbeddr.build" path="${mbeddr.build}" />
@@ -603,7 +605,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
+  <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
@@ -612,6 +614,7 @@
         <path location="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
       </src>
       <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />

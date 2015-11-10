@@ -173,11 +173,17 @@
     <node concept="2sgV4H" id="5N2iUpkaTtb" role="1l3spa">
       <ref role="1l3spb" to="xsd6:5qO$P$PtiTw" resolve="com.mbeddr.allInOne" />
       <node concept="398BVA" id="5kaST7qEwe1" role="2JcizS">
-        <ref role="398BVh" node="5kaST7qEwdo" resolve="mbeddr.allInOne.artifacts" />
+        <ref role="398BVh" node="5kaST7qEwdo" resolve="artifacts.allInOne" />
       </node>
     </node>
     <node concept="2sgV4H" id="505a8HIkc9N" role="1l3spa">
       <ref role="1l3spb" node="505a8HIkc0G" resolve="branding" />
+      <node concept="398BVA" id="y88tjWuH5b" role="2JcizS">
+        <ref role="398BVh" node="y88tjWuH44" resolve="artifacts.branding" />
+      </node>
+    </node>
+    <node concept="398rNT" id="y88tjWugEB" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
     </node>
     <node concept="398rNT" id="5msqZjqR9E5" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -203,8 +209,22 @@
       </node>
     </node>
     <node concept="398rNT" id="5kaST7qEwdo" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.allInOne.artifacts" />
-      <node concept="55IIr" id="5kaST7qF8te" role="398pKh" />
+      <property role="TrG5h" value="artifacts.allInOne" />
+      <node concept="398BVA" id="y88tjWuH3Y" role="398pKh">
+        <ref role="398BVh" node="y88tjWugEB" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuH42" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="y88tjWuH44" role="1l3spd">
+      <property role="TrG5h" value="artifacts.branding" />
+      <node concept="398BVA" id="y88tjWuH45" role="398pKh">
+        <ref role="398BVh" node="y88tjWugEB" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="y88tjWuH46" role="iGT6I">
+          <property role="2Ry0Am" value="branding" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
