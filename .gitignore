@@ -30,6 +30,7 @@ junit*.properties
 classes_gen
 source_gen
 source_gen.caches
+result_gen
 
 # -----------------------------------------------------------
 # Type Size Config
