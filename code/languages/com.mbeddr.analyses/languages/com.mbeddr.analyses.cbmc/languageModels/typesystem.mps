@@ -2,8 +2,6 @@
 <model ref="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -11,6 +9,8 @@
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -28,8 +28,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -241,6 +241,7 @@
       <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
         <child id="1174657509053" name="term" index="1Z2MuG" />
       </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
@@ -1336,6 +1337,22 @@
           </node>
         </node>
       </node>
+      <node concept="1Z5TYs" id="3kEjc_WIG$x" role="3cqZAp">
+        <node concept="mw_s8" id="3kEjc_WIG$$" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3kEjc_WIG$u" role="mwGJk">
+            <node concept="1YBJjd" id="636FvLn0bGH" role="1Z2MuG">
+              <ref role="1YBMHb" node="7CSU6RRZLZY" resolve="implies" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3kEjc_WIG$_" role="1ZfhKB">
+          <node concept="2pJPEk" id="9mFkazbjm8" role="mwGJk">
+            <node concept="2pJPED" id="9mFkazbjm7" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="7CSU6RRZLZY" role="1YuTPh">
       <property role="TrG5h" value="implies" />
@@ -2237,6 +2254,32 @@
     <node concept="1YaCAy" id="3V3CJZuxqEM" role="1YuTPh">
       <property role="TrG5h" value="cpa" />
       <ref role="1YaFvo" to="q5q6:73FH1Bco8fg" resolve="CPROVERassert" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="636FvLn07Zx">
+    <property role="TrG5h" value="typeof_ValidEnumerationValue" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="636FvLn07Zy" role="18ibNy">
+      <node concept="1Z5TYs" id="636FvLn0bHx" role="3cqZAp">
+        <node concept="mw_s8" id="636FvLn0bHy" role="1ZfhK$">
+          <node concept="1Z2H0r" id="636FvLn0bHz" role="mwGJk">
+            <node concept="1YBJjd" id="636FvLn0bJT" role="1Z2MuG">
+              <ref role="1YBMHb" node="636FvLn07Z$" resolve="ve" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="636FvLn0bH_" role="1ZfhKB">
+          <node concept="2pJPEk" id="636FvLn0bHA" role="mwGJk">
+            <node concept="2pJPED" id="636FvLn0bHB" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="636FvLn07Z$" role="1YuTPh">
+      <property role="TrG5h" value="ve" />
+      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
     </node>
   </node>
 </model>
