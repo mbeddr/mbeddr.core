@@ -8329,24 +8329,10 @@
                       <property role="3MwjfP" value="com.mbeddr.platform.build" />
                     </node>
                   </node>
-                  <node concept="2HvfSZ" id="4wFUPnO6veK" role="39821P">
-                    <node concept="398BVA" id="4wFUPnO6vW0" role="2HvfZ0">
-                      <ref role="398BVh" node="6ucYLjosfLw" resolve="mbeddr.github.core.home" />
-                      <node concept="2Ry0Ak" id="4wFUPnO6vW4" role="iGT6I">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="4wFUPnO6vW8" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.platform" />
-                          <node concept="2Ry0Ak" id="4wFUPnO6vWc" role="2Ry0An">
-                            <property role="2Ry0Am" value="build" />
-                            <node concept="2Ry0Ak" id="4wFUPnO6vWg" role="2Ry0An">
-                              <property role="2Ry0Am" value="artifacts" />
-                              <node concept="2Ry0Ak" id="4wFUPnO6vWk" role="2Ry0An">
-                                <property role="2Ry0Am" value="com.mbeddr.platform" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                  <node concept="3ygNvl" id="3vzyAKEKnHO" role="39821P">
+                    <ref role="3ygNvj" node="3AVJcIMlF9x" />
+                    <node concept="3LWZYx" id="3vzyAKEKnUG" role="1juEy9">
+                      <property role="3LWZYw" value="*.zip" />
                     </node>
                   </node>
                 </node>
