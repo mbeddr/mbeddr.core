@@ -19,6 +19,7 @@
     <use id="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" name="com.mbeddr.mpsutil.runconfiguration" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -388,6 +389,18 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="22e72e4c-0f69-46ce-8403-6750153aa615" name="jetbrains.mps.execution.configurations">
@@ -11939,13 +11952,12 @@
                                       <node concept="3cmrfG" id="2PE2z0oLg7A" role="3uHU7w">
                                         <property role="3cmrfH" value="-1" />
                                       </node>
-                                      <node concept="2YIFZM" id="2PE2z0oLeR2" role="3uHU7B">
-                                        <ref role="37wK5l" to="wyt6:~Long.compare(long,long):int" resolve="compare" />
-                                        <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                                        <node concept="37vLTw" id="2PE2z0oLfaQ" role="37wK5m">
+                                      <node concept="1rXfSq" id="62Nyq0g7onv" role="3uHU7B">
+                                        <ref role="37wK5l" node="62Nyq0g7kTq" resolve="compareTo" />
+                                        <node concept="37vLTw" id="62Nyq0g7oIL" role="37wK5m">
                                           <ref role="3cqZAo" node="2PE2z0oLcOy" resolve="a" />
                                         </node>
-                                        <node concept="37vLTw" id="2PE2z0oLfFd" role="37wK5m">
+                                        <node concept="37vLTw" id="62Nyq0g7pix" role="37wK5m">
                                           <ref role="3cqZAo" node="2PE2z0oLcO$" resolve="b" />
                                         </node>
                                       </node>
@@ -12041,6 +12053,75 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2PE2z0oIsmN" role="jymVt" />
+    <node concept="2YIFZL" id="62Nyq0g7kTq" role="jymVt">
+      <property role="TrG5h" value="compareTo" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="62Nyq0g7kTt" role="3clF47">
+        <node concept="3clFbJ" id="62Nyq0g7lRj" role="3cqZAp">
+          <node concept="3clFbS" id="62Nyq0g7lRl" role="3clFbx">
+            <node concept="3cpWs6" id="62Nyq0g7mj8" role="3cqZAp">
+              <node concept="3cmrfG" id="62Nyq0g7mmX" role="3cqZAk">
+                <property role="3cmrfH" value="-1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eOVzh" id="62Nyq0g7m4T" role="3clFbw">
+            <node concept="37vLTw" id="62Nyq0g7m8_" role="3uHU7w">
+              <ref role="3cqZAo" node="62Nyq0g7l9k" resolve="b" />
+            </node>
+            <node concept="37vLTw" id="62Nyq0g7lVc" role="3uHU7B">
+              <ref role="3cqZAo" node="62Nyq0g7l90" resolve="a" />
+            </node>
+          </node>
+          <node concept="3eNFk2" id="62Nyq0g7mnc" role="3eNLev">
+            <node concept="3clFbC" id="62Nyq0g7mxJ" role="3eO9$A">
+              <node concept="37vLTw" id="62Nyq0g7m_F" role="3uHU7w">
+                <ref role="3cqZAo" node="62Nyq0g7l9k" resolve="b" />
+              </node>
+              <node concept="37vLTw" id="62Nyq0g7mrC" role="3uHU7B">
+                <ref role="3cqZAo" node="62Nyq0g7l90" resolve="a" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="62Nyq0g7mne" role="3eOfB_">
+              <node concept="3cpWs6" id="62Nyq0g7mJW" role="3cqZAp">
+                <node concept="3cmrfG" id="62Nyq0g7mNM" role="3cqZAk">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="62Nyq0g7mO8" role="9aQIa">
+            <node concept="3clFbS" id="62Nyq0g7mO9" role="9aQI4">
+              <node concept="3cpWs6" id="62Nyq0g7mYS" role="3cqZAp">
+                <node concept="3cmrfG" id="62Nyq0g7n2A" role="3cqZAk">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="62Nyq0g7k_a" role="1B3o_S" />
+      <node concept="10Oyi0" id="62Nyq0g7kTo" role="3clF45" />
+      <node concept="37vLTG" id="62Nyq0g7l90" role="3clF46">
+        <property role="TrG5h" value="a" />
+        <node concept="3cpWsb" id="62Nyq0g7l8Z" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="62Nyq0g7l9k" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="3cpWsb" id="62Nyq0g7lek" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="62Nyq0g7lwe" role="lGtFl">
+        <node concept="TZ5HA" id="62Nyq0g7lwf" role="TZ5H$">
+          <node concept="1dT_AC" id="62Nyq0g7lwg" role="1dT_Ay">
+            <property role="1dT_AB" value="Java 6 and below does not support the Long.compareTo method. " />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="62Nyq0g79ty" role="jymVt" />
     <node concept="3Tm1VV" id="4a0ow32tChs" role="1B3o_S" />
   </node>
 </model>
