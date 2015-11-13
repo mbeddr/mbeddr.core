@@ -9,6 +9,7 @@
     <disabled-settings>
       <setting-ref ref="RUNNER_119" />
       <setting-ref ref="RUNNER_120" />
+      <setting-ref ref="RUNNER_121" />
     </disabled-settings>
     <parameters />
     <build-runners order="RUNNER_119, RUNNER_95, RUNNER_120, RUNNER_121">
