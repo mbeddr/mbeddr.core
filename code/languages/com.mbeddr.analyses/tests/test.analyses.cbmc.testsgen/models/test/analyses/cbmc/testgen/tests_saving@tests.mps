@@ -435,7 +435,7 @@
             <property role="L1FwH" value="aBoolean = true" />
           </node>
           <node concept="L1FwG" id="1ENIgcpgiXX" role="L1FwL">
-            <property role="L1FwH" value="aChar = 97" />
+            <property role="L1FwH" value="aChar = 'a'" />
           </node>
           <node concept="L1FwG" id="1ENIgcpgiXY" role="L1FwL">
             <property role="L1FwH" value="simpleBranch(aDouble, aBoolean, aChar)" />

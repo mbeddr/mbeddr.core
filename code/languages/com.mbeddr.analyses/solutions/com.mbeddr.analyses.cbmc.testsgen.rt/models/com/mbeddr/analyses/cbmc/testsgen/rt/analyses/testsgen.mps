@@ -204,6 +204,7 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
+      <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -639,6 +640,20 @@
                                     </node>
                                   </node>
                                 </node>
+                                <node concept="3clFbJ" id="6tpIASsBWMH" role="3cqZAp">
+                                  <node concept="3clFbS" id="6tpIASsBWMJ" role="3clFbx">
+                                    <node concept="3N13vt" id="6tpIASsC4nf" role="3cqZAp" />
+                                  </node>
+                                  <node concept="1rXfSq" id="6tpIASsC2Sg" role="3clFbw">
+                                    <ref role="37wK5l" node="6tpIASsBZ4B" resolve="shouldIgnoreResult" />
+                                    <node concept="2GrUjf" id="6tpIASsC3kf" role="37wK5m">
+                                      <ref role="2Gs0qQ" node="67iKQ7omhLI" resolve="crtRawRes" />
+                                    </node>
+                                    <node concept="37vLTw" id="6tpIASsC3Rt" role="37wK5m">
+                                      <ref role="3cqZAo" node="MynG9RoHxt" resolve="explanation" />
+                                    </node>
+                                  </node>
+                                </node>
                                 <node concept="3cpWs8" id="67iKQ7omoST" role="3cqZAp">
                                   <node concept="3cpWsn" id="67iKQ7omoSU" role="3cpWs9">
                                     <property role="TrG5h" value="tvr" />
@@ -761,6 +776,36 @@
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oef5V" role="jymVt" />
+    <node concept="3clFb_" id="6tpIASsBZ4B" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="shouldIgnoreResult" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="6tpIASsBZOQ" role="3clF46">
+        <property role="TrG5h" value="crtRawRes" />
+        <node concept="3uibUv" id="6tpIASsBZOR" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:6iM0fX1N0qr" resolve="CBMCRawResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6tpIASsBZOS" role="3clF46">
+        <property role="TrG5h" value="explanation" />
+        <node concept="17QB3L" id="6tpIASsBZOT" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6tpIASsBZ4E" role="3clF47">
+        <node concept="3clFbF" id="6tpIASsC0Bv" role="3cqZAp">
+          <node concept="3clFbT" id="6tpIASsC0Bu" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="6tpIASsBYh6" role="1B3o_S" />
+      <node concept="10P_77" id="6tpIASsBZ24" role="3clF45" />
+      <node concept="NWlO9" id="6tpIASsC1mB" role="lGtFl">
+        <property role="NWlVz" value="Returns true if this test vector should be ignored - e.g. if it represents a goal from the harness." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6tpIASsC0BE" role="jymVt" />
     <node concept="3clFb_" id="MynG9RqDpd" role="jymVt">
       <property role="TrG5h" value="liftAndSaveResults" />
       <node concept="3Tmbuc" id="MynG9RqDpe" role="1B3o_S" />
@@ -915,6 +960,9 @@
             <ref role="3cqZAo" node="MynG9RqQWP" resolve="tvr" />
           </node>
         </node>
+      </node>
+      <node concept="NWlO9" id="6tpIASsC1S$" role="lGtFl">
+        <property role="NWlVz" value="Lifts and saves this result." />
       </node>
     </node>
     <node concept="2tJIrI" id="MynG9RqCe0" role="jymVt" />
