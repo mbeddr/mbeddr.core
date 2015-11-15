@@ -6331,6 +6331,18 @@
             <ref role="1Busuk" to="ffeo:3MI1gu0Qmnt" resolve="jetbrains.mps.baseLanguage.extensionMethods" />
           </node>
         </node>
+        <node concept="1SiIV0" id="Pu8Vy2c7jX" role="3bR37C">
+          <node concept="3bR9La" id="Pu8Vy2c7jY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Pu8Vy2c7jZ" role="3bR37C">
+          <node concept="3bR9La" id="Pu8Vy2c7k0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
         <node concept="1yeLz9" id="4X7wieqKjiH" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.extensionclass#5712676642251909534" />
           <property role="3LESm3" value="48a6601d-ba0a-4255-9bb4-da8a0a080574" />
@@ -9577,16 +9589,16 @@
             <ref role="1Busuk" node="2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
           </node>
         </node>
+        <node concept="1yeLz9" id="15E$Thf_6lK" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.javainterpreter.test#6267356447275018447" />
+          <property role="3LESm3" value="da16ac82-9662-4cb8-b6de-3c95e21b838e" />
+          <property role="2GAjPV" value="false" />
+        </node>
         <node concept="1SiIV0" id="3zAWwLKfJD7" role="3bR37C">
           <node concept="3bR9La" id="3zAWwLKfJD8" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
-        </node>
-        <node concept="1yeLz9" id="15E$Thf_6lK" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.javainterpreter.test#6267356447275018447" />
-          <property role="3LESm3" value="da16ac82-9662-4cb8-b6de-3c95e21b838e" />
-          <property role="2GAjPV" value="false" />
         </node>
       </node>
       <node concept="1E1JtA" id="4gGXGcLVuHu" role="2G$12L">
