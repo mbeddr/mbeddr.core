@@ -3736,17 +3736,12 @@
                   <node concept="3cmrfG" id="3xqp6yf7Wi1" role="3uHU7w">
                     <property role="3cmrfH" value="1" />
                   </node>
-                  <node concept="2OqwBi" id="3xqp6yf7Wi2" role="3uHU7B">
-                    <node concept="2OqwBi" id="3xqp6yf7Wi3" role="2Oq$k0">
-                      <node concept="1YBJjd" id="3xqp6yf7Wi4" role="2Oq$k0">
-                        <ref role="1YBMHb" node="5jmmCdx$f6D" resolve="stringLiteral" />
-                      </node>
-                      <node concept="3TrcHB" id="3xqp6yf7Wi5" role="2OqNvi">
-                        <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
-                      </node>
+                  <node concept="2OqwBi" id="3xqp6yf7Wi3" role="3uHU7B">
+                    <node concept="1YBJjd" id="3xqp6yf7Wi4" role="2Oq$k0">
+                      <ref role="1YBMHb" node="5jmmCdx$f6D" resolve="stringLiteral" />
                     </node>
-                    <node concept="liA8E" id="3xqp6yf7Wi6" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                    <node concept="2qgKlT" id="4FYctDz1A2s" role="2OqNvi">
+                      <ref role="37wK5l" to="1s42:4FYctDz1tF0" resolve="getUnescapedValueLength" />
                     </node>
                   </node>
                 </node>
