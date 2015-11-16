@@ -430,6 +430,9 @@
     <node concept="PrWs8" id="cwSfPzAupX" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_Ujti" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
     <node concept="1TJgyj" id="2I09F8VKBaJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />

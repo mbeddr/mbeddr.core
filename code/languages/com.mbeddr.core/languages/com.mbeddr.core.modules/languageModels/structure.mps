@@ -359,6 +359,9 @@
       <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_TK8$" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJu">
     <property role="3GE5qa" value="external" />
@@ -845,6 +848,9 @@
     <node concept="PrWs8" id="1DVNPtFPUDG" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1DVNPtFPUDE" resolve="IHideFromOutline" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_V_ZP" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5DwX9xlExfL">
     <property role="TrG5h" value="Section" />
@@ -1310,6 +1316,9 @@
     </node>
     <node concept="PrWs8" id="T6zAqDO5$S" role="PzmwI">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_UW9l" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="AxPO7" id="3_CPcn39dht">

@@ -64,6 +64,9 @@
     <node concept="PrWs8" id="3o2OLGv70Oi" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
+    <node concept="PrWs8" id="3zr7o0AeeWa" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7H6_Qip5FHh">
     <property role="TrG5h" value="VarRTConfigItem" />
@@ -139,6 +142,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="3zr7o0AeeY4" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7H6_Qip5U2j">
     <property role="3GE5qa" value="switch" />
@@ -165,6 +171,9 @@
     <property role="34LRSv" value="default" />
     <property role="1pbfSe" value="341719032" />
     <ref role="1TJDcQ" node="7H6_Qip5U2j" resolve="VariantOption" />
+    <node concept="PrWs8" id="3zr7o0AeeY6" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7H6_Qip5Y4e">
     <property role="3GE5qa" value="switch" />

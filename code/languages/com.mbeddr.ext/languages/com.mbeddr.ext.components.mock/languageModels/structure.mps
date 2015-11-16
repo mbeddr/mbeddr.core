@@ -96,6 +96,9 @@
     <node concept="PrWs8" id="4MTwk$13QjT" role="PzmwI">
       <ref role="PrY4T" node="4MTwk$13QjF" resolve="CallExpectation" />
     </node>
+    <node concept="PrWs8" id="3zr7o0AfoMW" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1Rr52SX$57s">
     <property role="TrG5h" value="ValidateMock" />
@@ -121,6 +124,9 @@
     <ref role="1TJDcQ" node="1Rr52SXzvm0" resolve="Expectation" />
     <node concept="PrWs8" id="4MTwk$13QjS" role="PzmwI">
       <ref role="PrY4T" node="4MTwk$13QjF" resolve="CallExpectation" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0AeQAy" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="1TJgyi" id="4jc_TWT31p1" role="1TKVEl">
       <property role="TrG5h" value="noOfCalls" />
@@ -222,6 +228,9 @@
     </node>
     <node concept="PrWs8" id="39uR9NmOUG5" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0AfolY" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="1TJgyj" id="4jc_TWT5CX7" role="1TKVEi">
       <property role="20lmBu" value="reference" />

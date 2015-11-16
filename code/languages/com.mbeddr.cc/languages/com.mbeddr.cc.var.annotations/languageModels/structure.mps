@@ -73,6 +73,9 @@
     <node concept="PrWs8" id="5DBke2vxOrf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_yRkV" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="$GQ7u4ko40">
     <property role="3GE5qa" value="programannotations" />
@@ -162,6 +165,9 @@
       <property role="20kJfa" value="configurationModel" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_ntZC" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="1Jq6Hv0f2B">

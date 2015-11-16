@@ -416,6 +416,9 @@
     <node concept="PrWs8" id="4$RjoMN4gh1" role="PzmwI">
       <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
     </node>
+    <node concept="PrWs8" id="3zr7o0AfZld" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="41KMvfcjSct">
     <property role="3GE5qa" value="machine" />
@@ -513,6 +516,9 @@
     <node concept="PrWs8" id="7J_m0rEZ4_7" role="PzmwI">
       <ref role="PrY4T" node="6MWlM491tWA" resolve="IStatemachineContents" />
     </node>
+    <node concept="PrWs8" id="3zr7o0A8E_B" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="47Sr75PmD_X">
     <property role="3GE5qa" value="machine" />
@@ -551,6 +557,9 @@
     </node>
     <node concept="PrWs8" id="47Sr75PnHau" role="PzmwI">
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0AfpfZ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="47Sr75PnWI7">

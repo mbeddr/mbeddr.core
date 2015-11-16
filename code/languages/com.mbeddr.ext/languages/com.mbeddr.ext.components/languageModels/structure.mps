@@ -941,6 +941,9 @@
     <node concept="PrWs8" id="IrwlmWzdBA" role="PzmwI">
       <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_PhJW" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5HTuIUP_k1R">
     <property role="3GE5qa" value="intf.cs.ppc" />
@@ -1031,6 +1034,9 @@
       <property role="20kJfa" value="to" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5oFMniD8XPl" resolve="PsmState" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0AefnL" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5oFMniD8XPl">
@@ -1602,6 +1608,9 @@
     <node concept="PrWs8" id="1sHR4zGRRg5" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_O7hK" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="RsLjUnO2bV">
     <property role="3GE5qa" value="intf.sr" />
@@ -1776,6 +1785,9 @@
       <node concept="tn0Fv" id="7moPk051DVY" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
+    </node>
+    <node concept="PrWs8" id="3zr7o0_OX_4" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="5hYHEwZAyxP">

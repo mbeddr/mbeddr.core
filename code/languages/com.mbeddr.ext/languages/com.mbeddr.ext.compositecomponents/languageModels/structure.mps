@@ -78,6 +78,9 @@
     <node concept="PrWs8" id="6JVEnxIhTOb" role="PzmwI">
       <ref role="PrY4T" to="v7ag:71UKpntm630" resolve="IComponentContent" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_Nj7g" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6JVEnxIiE6u">
     <property role="TrG5h" value="DelegatingConnector" />

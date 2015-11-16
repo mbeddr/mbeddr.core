@@ -103,6 +103,9 @@
     <node concept="PrWs8" id="2zx$mQQxDo_" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="5dPmiSXPwl8" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2zx$mQQxDoX">
     <property role="TrG5h" value="AccessDataSpecification" />
@@ -118,6 +121,9 @@
     </node>
     <node concept="PrWs8" id="6Jhc0CXDvk6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5dPmiSXNztM" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="AxPO7" id="2zx$mQQxDpv">

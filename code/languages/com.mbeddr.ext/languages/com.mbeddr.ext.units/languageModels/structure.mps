@@ -135,6 +135,9 @@
     <node concept="PrWs8" id="7eOyx9raabu" role="PzmwI">
       <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_JENA" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9raacU">
     <property role="TrG5h" value="MetaUnitDeclaration" />
@@ -176,6 +179,9 @@
     </node>
     <node concept="PrWs8" id="yGiRIETWOj" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_rmzo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3jsW">
@@ -328,6 +334,9 @@
     <node concept="PrWs8" id="21cGQ$hAigW" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_qKZ4" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3$KQaHc3Aa5">
     <property role="3GE5qa" value="conversion" />
@@ -409,6 +418,9 @@
     <node concept="PrWs8" id="1wGuEUw7mQy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_qL2h" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6CnXAkqMGJU">
     <property role="3GE5qa" value="definition" />
@@ -423,6 +435,9 @@
     </node>
     <node concept="PrWs8" id="6CnXAkqMGKI" role="PzmwI">
       <ref role="PrY4T" node="5jgivonKfzW" resolve="IUnitContainerContent" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_uJlm" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="6mzZsELfLSn">

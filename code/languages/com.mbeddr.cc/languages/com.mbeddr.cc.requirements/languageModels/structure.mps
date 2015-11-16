@@ -148,6 +148,9 @@
     <node concept="PrWs8" id="3skJLyQdHLa" role="PzmwI">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_BrYd" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7_tU7IQsFfx">
     <property role="TrG5h" value="RequirementsModule" />
@@ -231,6 +234,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7_tU7IQsCy_" resolve="Requirement" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_EoAB" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7_tU7IQtN5A">
     <property role="TrG5h" value="ConflictsWithLink" />
@@ -312,6 +318,9 @@
     <node concept="1TJgyi" id="2WRRjDdohEk" role="1TKVEl">
       <property role="TrG5h" value="timingSpec" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_Bqpo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="10GsATRG3Rc">

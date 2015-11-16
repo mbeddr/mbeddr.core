@@ -442,6 +442,9 @@
     <node concept="PrWs8" id="5awSL8g4CUS" role="PzmwI">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_UR73" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
     <node concept="1TJgyi" id="6QawkaIMrjd" role="1TKVEl">
       <property role="TrG5h" value="transparent" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />

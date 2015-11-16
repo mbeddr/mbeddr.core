@@ -38,8 +38,8 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -5184,6 +5184,21 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="3zr7o0A8Nfw" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getLOCEquivalent" />
+      <ref role="13i0hy" to="hwgx:6brBMefRfO0" resolve="getLOCEquivalent" />
+      <node concept="3Tm1VV" id="3zr7o0A8Nfx" role="1B3o_S" />
+      <node concept="3clFbS" id="3zr7o0A8NfA" role="3clF47">
+        <node concept="3clFbF" id="3zr7o0A8NVy" role="3cqZAp">
+          <node concept="3cmrfG" id="3zr7o0A8NVx" role="3clFbG">
+            <property role="3cmrfH" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="3zr7o0A8NfB" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4itX8XV7Fwl">

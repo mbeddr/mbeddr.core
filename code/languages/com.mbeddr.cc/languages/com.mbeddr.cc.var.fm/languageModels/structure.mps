@@ -196,6 +196,9 @@
     <node concept="PrWs8" id="5USXI9Kzbap" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_rlRH" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5USXI9Kzbaq">
     <property role="TrG5h" value="FeatureModel" />

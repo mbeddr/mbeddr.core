@@ -999,5 +999,27 @@
       <node concept="10Oyi0" id="2BbcAuJ4Exh" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="5dPmiSXPX8Y">
+    <property role="3GE5qa" value="calc" />
+    <ref role="13h7C2" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
+    <node concept="13hLZK" id="5dPmiSXPX8Z" role="13h7CW">
+      <node concept="3clFbS" id="5dPmiSXPX90" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5dPmiSXPX91" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getLOCEquivalent" />
+      <ref role="13i0hy" to="hwgx:6brBMefRfO0" resolve="getLOCEquivalent" />
+      <node concept="3Tm1VV" id="5dPmiSXPX92" role="1B3o_S" />
+      <node concept="3clFbS" id="5dPmiSXPX97" role="3clF47">
+        <node concept="3cpWs6" id="5dPmiSXPXbo" role="3cqZAp">
+          <node concept="3cmrfG" id="5dPmiSXPXb_" role="3cqZAk">
+            <property role="3cmrfH" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="5dPmiSXPX98" role="3clF45" />
+    </node>
+  </node>
 </model>
 

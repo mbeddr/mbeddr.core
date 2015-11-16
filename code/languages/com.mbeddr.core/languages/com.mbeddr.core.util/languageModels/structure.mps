@@ -12,8 +12,8 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -300,6 +300,9 @@
     <node concept="PrWs8" id="2lgwE2U2X_K" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_F8uC" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="AxPO7" id="2lgwE2U2X_M">
     <property role="3GE5qa" value="reporting" />
@@ -566,6 +569,9 @@
     <property role="34LRSv" value="printf" />
     <property role="1pbfSe" value="911816451" />
     <ref role="1TJDcQ" node="3R$6B6bKEUa" resolve="ReportingStrategy" />
+    <node concept="PrWs8" id="3zr7o0_ojq0" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3R$6B6bKEUh">
     <property role="3GE5qa" value="reporting.config" />
@@ -903,6 +909,9 @@
     <node concept="PrWs8" id="3o2OLGv70vj" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
+    <node concept="PrWs8" id="3zr7o0A8HFF" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6viY8n0hYkZ">
     <property role="3GE5qa" value="range" />
@@ -949,6 +958,9 @@
     <node concept="PrWs8" id="1lBH0hH6CkM" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="3zr7o0A8MLH" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1lBH0hH6D6C">
     <property role="3GE5qa" value="datalogger" />
@@ -983,6 +995,9 @@
     </node>
     <node concept="PrWs8" id="4itX8XUPkj8" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0Aa1PI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="4itX8XV7A5P">
@@ -1073,6 +1088,9 @@
     </node>
     <node concept="PrWs8" id="3o2OLGv70P3" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0A8F_9" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="gaSsNU97gv">
@@ -1367,6 +1385,9 @@
     <node concept="PrWs8" id="4mSSgpjxLME" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
+    <node concept="PrWs8" id="3zr7o0A8JMi" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4mSSgpjxUsy">
     <property role="3GE5qa" value="queue" />
@@ -1455,6 +1476,9 @@
     <node concept="PrWs8" id="C7pKq6jWaU" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="3zr7o0_UXVC" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="C7pKq6$38E">
     <property role="3GE5qa" value="errorHandling" />
@@ -1473,6 +1497,9 @@
       <property role="20kJfa" value="errors" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="C7pKq6$38L" resolve="ErrorRef" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_V01Q" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="C7pKq6$38L">
@@ -1539,6 +1566,9 @@
       <property role="20kJfa" value="error" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="C7pKq6jTD2" resolve="ErrorDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3zr7o0_Vd_2" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="1EZSCJhF1F6">
