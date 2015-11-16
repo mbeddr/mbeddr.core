@@ -739,7 +739,7 @@
                   <ref role="3cqZAo" node="48DYfEthlDj" resolve="myShowCollapsedAlways" />
                 </node>
                 <node concept="1rXfSq" id="42_DJ9jX3KM" role="3uHU7B">
-                  <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsed" />
+                  <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsibleCollapsed" />
                 </node>
               </node>
             </node>
@@ -750,7 +750,7 @@
               </node>
               <node concept="3fqX7Q" id="42_DJ9jX4gs" role="3K4Cdx">
                 <node concept="1rXfSq" id="42_DJ9jX4gu" role="3fr31v">
-                  <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsed" />
+                  <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsibleCollapsed" />
                 </node>
               </node>
             </node>
@@ -1349,7 +1349,7 @@
             </node>
             <node concept="3fqX7Q" id="48DYfEtnwmO" role="3uHU7w">
               <node concept="1rXfSq" id="48DYfEtnwmQ" role="3fr31v">
-                <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsed" />
+                <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsibleCollapsed" />
               </node>
             </node>
           </node>
@@ -1519,7 +1519,7 @@
     </node>
     <node concept="2tJIrI" id="48DYfEt2u6S" role="jymVt" />
     <node concept="3clFb_" id="48DYfEt2W1p" role="jymVt">
-      <property role="TrG5h" value="isCollapsed" />
+      <property role="TrG5h" value="isCollapsibleCollapsed" />
       <node concept="10P_77" id="48DYfEt2W1q" role="3clF45" />
       <node concept="3Tm1VV" id="48DYfEt2W1r" role="1B3o_S" />
       <node concept="3clFbS" id="48DYfEt2W1s" role="3clF47">
@@ -1567,7 +1567,7 @@
     </node>
     <node concept="2tJIrI" id="48DYfEt2VKw" role="jymVt" />
     <node concept="3clFb_" id="48DYfEt32$T" role="jymVt">
-      <property role="TrG5h" value="setCollapsed" />
+      <property role="TrG5h" value="setCollapsibleCollapsed" />
       <node concept="37vLTG" id="48DYfEt35uT" role="3clF46">
         <property role="TrG5h" value="newValue" />
         <node concept="10P_77" id="48DYfEt361p" role="1tU5fm" />
@@ -1580,7 +1580,7 @@
             <property role="TrG5h" value="old" />
             <node concept="10P_77" id="48DYfEt376b" role="1tU5fm" />
             <node concept="1rXfSq" id="48DYfEt376e" role="33vP2m">
-              <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsed" />
+              <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsibleCollapsed" />
             </node>
           </node>
         </node>
@@ -2004,14 +2004,14 @@
               <ref role="3cqZAo" node="48DYfEt2U3g" resolve="myCollapsibleCell" />
             </node>
             <node concept="liA8E" id="48DYfEtDLJc" role="2OqNvi">
-              <ref role="37wK5l" node="48DYfEt32$T" resolve="setCollapsed" />
+              <ref role="37wK5l" node="48DYfEt32$T" resolve="setCollapsibleCollapsed" />
               <node concept="3fqX7Q" id="48DYfEtDLJd" role="37wK5m">
                 <node concept="2OqwBi" id="48DYfEtDLJe" role="3fr31v">
                   <node concept="37vLTw" id="48DYfEtDLJf" role="2Oq$k0">
                     <ref role="3cqZAo" node="48DYfEt2U3g" resolve="myCollapsibleCell" />
                   </node>
                   <node concept="liA8E" id="48DYfEtDLJg" role="2OqNvi">
-                    <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsed" />
+                    <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsibleCollapsed" />
                   </node>
                 </node>
               </node>
@@ -2522,7 +2522,7 @@
                 </node>
               </node>
               <node concept="1rXfSq" id="48DYfEt2V9T" role="3clFbw">
-                <ref role="37wK5l" node="48DYfEt2RE9" resolve="isCollapsed" />
+                <ref role="37wK5l" node="48DYfEt2RE9" resolve="isCollapsibleCollapsed" />
               </node>
             </node>
           </node>
@@ -2716,7 +2716,7 @@
     </node>
     <node concept="2tJIrI" id="48DYfEt4oc1" role="jymVt" />
     <node concept="3clFb_" id="48DYfEt2RE9" role="jymVt">
-      <property role="TrG5h" value="isCollapsed" />
+      <property role="TrG5h" value="isCollapsibleCollapsed" />
       <node concept="10P_77" id="48DYfEt2S49" role="3clF45" />
       <node concept="3Tm1VV" id="48DYfEt2REc" role="1B3o_S" />
       <node concept="3clFbS" id="48DYfEt2REd" role="3clF47">
@@ -2726,7 +2726,7 @@
               <ref role="3cqZAo" node="48DYfEt2U3g" resolve="myCollapsibleCell" />
             </node>
             <node concept="liA8E" id="48DYfEt2Y1d" role="2OqNvi">
-              <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsed" />
+              <ref role="37wK5l" node="48DYfEt2W1p" resolve="isCollapsibleCollapsed" />
             </node>
           </node>
         </node>
