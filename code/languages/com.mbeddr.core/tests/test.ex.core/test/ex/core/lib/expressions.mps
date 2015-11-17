@@ -5,12 +5,12 @@
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
   </languages>
   <imports>
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
@@ -66,7 +66,6 @@
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
         <child id="6282313788306893059" name="index" index="2wJmCp" />
       </concept>
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
@@ -141,11 +140,11 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -265,153 +264,124 @@
   </node>
   <node concept="N3F5e" id="5CQ$U_OAkY9">
     <property role="TrG5h" value="Driver" />
-    <node concept="N3Fnx" id="5CQ$U_OAkYa" role="N3F5h">
+    <node concept="lIfQi" id="6TAwvhVWkim" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="5CQ$U_OAkYb" role="3XIRFX">
-        <node concept="2BFjQ_" id="5CQ$U_OAkYc" role="3XIRFZ">
-          <node concept="3rBj6X" id="5CQ$U_OAkYd" role="2BFjQA">
-            <node concept="3cM6IN" id="5CQ$U_OAkYe" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAkZ5" resolve="addNumbers" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYf" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl0t" resolve="logicalOperators" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYg" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl1s" resolve="boolAndInt" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYh" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl22" resolve="charTest" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYi" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl34" resolve="testBitwiseAnd" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYj" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl49" resolve="testBitwiseOR" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYk" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl4N" resolve="testBitwiseXOR" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYl" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl5t" resolve="testBitwiseRightShift" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYm" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl66" resolve="testBitwiseLeftShift" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYn" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl6J" resolve="testUnaryIncrementOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYo" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl7d" resolve="testUnaryDecrementOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYp" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl7G" resolve="testUnaryMinusOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYq" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl85" resolve="testUnaryArithmeticNotOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYr" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAliA" resolve="testModuloOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYs" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAliX" resolve="testAndOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYt" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAljw" resolve="testOrOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYu" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlk2" resolve="testNotOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYv" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlkj" resolve="testEqualsOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYw" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlkK" resolve="testNotEqualsOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYx" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlm$" resolve="testGreaterEqualsOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYy" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlmb" resolve="testGreaterOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYz" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAllL" resolve="testLessEqualsOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkY$" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAllc" resolve="testLessOperator" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkY_" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl8P" resolve="testDirectAssignment" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYA" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl8o" resolve="testParens" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYB" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAl94" resolve="testDirectPlusAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYC" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlao" resolve="testDirectMinusAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYD" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlbJ" resolve="testDirectMultiAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYE" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAld6" resolve="testDirectDivAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYF" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAleq" resolve="testDirectModuloAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYG" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlfi" resolve="testDirectBitwiseANDAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYH" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlhV" resolve="testDirectBitwiseLeftShiftAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYI" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlfW" resolve="testDirectBitwiseORAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYJ" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlhg" resolve="testDirectBitwiseRightShiftAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYK" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlgA" resolve="testDirectBitwiseXORAssignmentExpression" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYL" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlqm" resolve="testUnaryOperatorOnArray" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYM" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlqA" resolve="testUnaryOperatorOnFunction" />
-            </node>
-            <node concept="3cM6IN" id="5CQ$U_OAkYN" role="3cM6Hi">
-              <ref role="3cM6IK" node="5CQ$U_OAlqY" resolve="testUnaryOperatorOnPointerDeref" />
-            </node>
-            <node concept="3cM6IN" id="3SmHfhIKNDu" role="3cM6Hi">
-              <ref role="3cM6IK" node="3SmHfhIAKpw" resolve="testFloatLiteralsSuffix" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkin" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAkZ5" resolve="addNumbers" />
       </node>
-      <node concept="26Vqph" id="6PCgYL5qJ4t" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="6TAwvhVWkio" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl0t" resolve="logicalOperators" />
       </node>
-      <node concept="19RgSI" id="6PCgYL5qJ4v" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="6PCgYL5qJ4u" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkip" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl1s" resolve="boolAndInt" />
       </node>
-      <node concept="19RgSI" id="6PCgYL5qJ4y" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="6PCgYL5qJ4x" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="6PCgYL5qJ4w" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiq" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl22" resolve="charTest" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkir" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl34" resolve="testBitwiseAnd" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkis" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl49" resolve="testBitwiseOR" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkit" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl4N" resolve="testBitwiseXOR" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiu" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl5t" resolve="testBitwiseRightShift" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiv" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl66" resolve="testBitwiseLeftShift" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiw" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl6J" resolve="testUnaryIncrementOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkix" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl7d" resolve="testUnaryDecrementOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiy" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl7G" resolve="testUnaryMinusOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiz" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl85" resolve="testUnaryArithmeticNotOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWki$" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAliA" resolve="testModuloOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWki_" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAliX" resolve="testAndOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiA" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAljw" resolve="testOrOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiB" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlk2" resolve="testNotOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiC" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlkj" resolve="testEqualsOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiD" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlkK" resolve="testNotEqualsOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiE" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlm$" resolve="testGreaterEqualsOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiF" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlmb" resolve="testGreaterOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiG" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAllL" resolve="testLessEqualsOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiH" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAllc" resolve="testLessOperator" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiI" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl8P" resolve="testDirectAssignment" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiJ" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl8o" resolve="testParens" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiK" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAl94" resolve="testDirectPlusAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiL" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlao" resolve="testDirectMinusAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiM" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlbJ" resolve="testDirectMultiAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiN" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAld6" resolve="testDirectDivAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiO" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAleq" resolve="testDirectModuloAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiP" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlfi" resolve="testDirectBitwiseANDAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiQ" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlhV" resolve="testDirectBitwiseLeftShiftAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiR" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlfW" resolve="testDirectBitwiseORAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiS" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlhg" resolve="testDirectBitwiseRightShiftAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiT" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlgA" resolve="testDirectBitwiseXORAssignmentExpression" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiU" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlqm" resolve="testUnaryOperatorOnArray" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiV" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlqA" resolve="testUnaryOperatorOnFunction" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiW" role="lIfQt">
+        <ref role="3cM6IK" node="5CQ$U_OAlqY" resolve="testUnaryOperatorOnPointerDeref" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkiX" role="lIfQt">
+        <ref role="3cM6IK" node="3SmHfhIAKpw" resolve="testFloatLiteralsSuffix" />
       </node>
     </node>
     <node concept="3GEVxB" id="3SmHfhIKNpD" role="2OODSX">
