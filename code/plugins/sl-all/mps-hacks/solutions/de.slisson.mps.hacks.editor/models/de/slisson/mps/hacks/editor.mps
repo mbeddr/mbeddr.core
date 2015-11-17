@@ -22,8 +22,8 @@
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -848,13 +848,33 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="4WvEEB$poT_" role="3cqZAp">
-                  <node concept="2OqwBi" id="4WvEEB$poTA" role="3clFbG">
-                    <node concept="37vLTw" id="4WvEEB$poTB" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4WvEEB$poTT" resolve="runnable" />
-                    </node>
-                    <node concept="liA8E" id="4WvEEB$poTC" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+                <node concept="3clFbF" id="Xrn1RszxvB" role="3cqZAp">
+                  <node concept="1rXfSq" id="Xrn1Rszxv_" role="3clFbG">
+                    <ref role="37wK5l" node="4WvEEB$ojFj" resolve="ensureContextToOldCellMapInitialized" />
+                    <node concept="1bVj0M" id="Xrn1Rszx_Q" role="37wK5m">
+                      <property role="3yWfEV" value="true" />
+                      <node concept="3clFbS" id="Xrn1Rszx_R" role="1bW5cS">
+                        <node concept="3clFbF" id="Xrn1Rszuxa" role="3cqZAp">
+                          <node concept="1rXfSq" id="Xrn1Rszux8" role="3clFbG">
+                            <ref role="37wK5l" node="4WvEEB$o9pE" resolve="enterNodeContext" />
+                            <node concept="1bVj0M" id="Xrn1RszuCl" role="37wK5m">
+                              <property role="3yWfEV" value="true" />
+                              <node concept="3clFbS" id="Xrn1RszuCm" role="1bW5cS">
+                                <node concept="3clFbF" id="4WvEEB$poT_" role="3cqZAp">
+                                  <node concept="2OqwBi" id="4WvEEB$poTA" role="3clFbG">
+                                    <node concept="37vLTw" id="4WvEEB$poTB" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4WvEEB$poTT" resolve="runnable" />
+                                    </node>
+                                    <node concept="liA8E" id="4WvEEB$poTC" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
