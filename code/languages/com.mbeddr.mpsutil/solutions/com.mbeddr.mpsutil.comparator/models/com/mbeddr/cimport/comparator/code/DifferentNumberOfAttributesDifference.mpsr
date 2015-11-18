@@ -17,9 +17,6 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -40,8 +37,6 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
-        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -69,9 +64,6 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
-      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
-        <property id="8355037393041754995" name="isNative" index="2aFKle" />
-      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -90,26 +82,13 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
-      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
-    </language>
   </registry>
   <node concept="312cEu" id="DYlgnA$QEW">
     <property role="TrG5h" value="DifferentNumberOfAttributesDifference" />
-    <property role="3GE5qa" value="difference" />
     <node concept="2tJIrI" id="DYlgnA$S3E" role="jymVt" />
     <node concept="312cEg" id="DYlgnA$S4f" role="jymVt">
       <property role="TrG5h" value="attribute" />
@@ -229,31 +208,6 @@
       <node concept="17QB3L" id="1rBPbD3KDNG" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="1rBPbD3K4kF" role="jymVt" />
-    <node concept="3clFb_" id="Pu8Vy2djlL" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getNestedDifferences" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3Tm1VV" id="Pu8Vy2djlN" role="1B3o_S" />
-      <node concept="_YKpA" id="Pu8Vy2djlO" role="3clF45">
-        <node concept="3uibUv" id="Pu8Vy2djlP" role="_ZDj9">
-          <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="Pu8Vy2djlQ" role="3clF47">
-        <node concept="3clFbF" id="Pu8Vy2djuT" role="3cqZAp">
-          <node concept="2ShNRf" id="Pu8Vy2djuU" role="3clFbG">
-            <node concept="Tc6Ow" id="Pu8Vy2djuV" role="2ShVmc">
-              <node concept="3uibUv" id="Pu8Vy2djuW" role="HW$YZ">
-                <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="Pu8Vy2djMk" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$U7I" role="jymVt">
       <property role="TrG5h" value="getDescription" />
       <property role="1EzhhJ" value="false" />
