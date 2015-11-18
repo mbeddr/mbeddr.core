@@ -77,6 +77,15 @@
     <dependency reexport="false">5dc5fc0d-37ef-4782-8192-8b5ce1f69f80(jetbrains.mps.baseLanguage.extensionMethods)</dependency>
     <dependency reexport="false">cd6ee994-5ea3-4b72-9d40-a3e80432a522(de.itemis.mps.editor.dropdown)</dependency>
     <dependency reexport="false">31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)</dependency>
+    <dependency reexport="false">bb0ad88b-63cd-45fd-ae27-8662d274cf3c(com.mbeddr.ext.serialization)</dependency>
+    <dependency reexport="false">d6943f81-8340-4661-9d57-8fc1e2d23b36(com.mbeddr.ext.concurrency.plainC)</dependency>
+    <dependency reexport="false">3f445ef3-54ad-4ae5-a22d-91c3ce06375e(com.mbeddr.ext.components.concurrency)</dependency>
+    <dependency reexport="false">f8f68d92-c6d2-44b3-8d63-c00ade75ec86(com.mbeddr.doc.latex)</dependency>
+    <dependency reexport="false">2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)</dependency>
+    <dependency reexport="false">390de4af-0c8d-4716-8dec-3d05ca751b28(com.mbeddr.core.cinterpreter)</dependency>
+    <dependency reexport="false">d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</dependency>
+    <dependency reexport="false">dce6c938-92a0-4619-a1d8-62fdb4b872e8(com.mbeddr.analyses.cbmc.verification_case)</dependency>
+    <dependency reexport="false">0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)</dependency>
   </dependencies>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="3" />
@@ -105,13 +114,17 @@
     <module reference="3c648e74-bfd0-47ab-a27b-a7ece174dc55(com.mbeddr.analyses.acsl)" version="0" />
     <module reference="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" version="0" />
     <module reference="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" version="0" />
+    <module reference="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" version="0" />
+    <module reference="dce6c938-92a0-4619-a1d8-62fdb4b872e8(com.mbeddr.analyses.cbmc.verification_case)" version="0" />
     <module reference="e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)" version="0" />
     <module reference="f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)" version="0" />
+    <module reference="d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)" version="0" />
     <module reference="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" version="0" />
     <module reference="017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)" version="0" />
     <module reference="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
+    <module reference="390de4af-0c8d-4716-8dec-3d05ca751b28(com.mbeddr.core.cinterpreter)" version="0" />
     <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
     <module reference="ebb5e132-d298-4649-b320-b3f4d7f3acff(com.mbeddr.core.debug.blext)" version="0" />
     <module reference="89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)" version="0" />
@@ -129,12 +142,18 @@
     <module reference="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" version="0" />
     <module reference="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" version="0" />
     <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />
+    <module reference="2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)" version="0" />
+    <module reference="f8f68d92-c6d2-44b3-8d63-c00ade75ec86(com.mbeddr.doc.latex)" version="0" />
+    <module reference="e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)" version="0" />
     <module reference="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" version="0" />
+    <module reference="3f445ef3-54ad-4ae5-a22d-91c3ce06375e(com.mbeddr.ext.components.concurrency)" version="0" />
     <module reference="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)" version="0" />
     <module reference="36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)" version="0" />
     <module reference="13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)" version="0" />
     <module reference="41911c23-eb23-4ee6-872f-bc7f7ebce290(com.mbeddr.ext.components.test)" version="0" />
     <module reference="b879012d-402b-40e0-8df7-e6fa93b9b711(com.mbeddr.ext.concurrency)" version="0" />
+    <module reference="d6943f81-8340-4661-9d57-8fc1e2d23b36(com.mbeddr.ext.concurrency.plainC)" version="0" />
+    <module reference="bb0ad88b-63cd-45fd-ae27-8662d274cf3c(com.mbeddr.ext.serialization)" version="0" />
     <module reference="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" version="0" />
     <module reference="0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)" version="0" />
     <module reference="c38abce1-4c09-44cb-9ebf-2a764e824bb5(com.mbeddr.mpsutil.actionsfilter)" version="0" />
@@ -152,6 +171,7 @@
     <module reference="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9(com.mbeddr.mpsutil.httpsupport)" version="0" />
     <module reference="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" version="0" />
     <module reference="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" version="0" />
+    <module reference="1c897ba5-9d43-4035-ac7f-0306495743ac(com.mbeddr.mpsutil.interpreter.test)" version="0" />
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="d82aaaf7-aca2-49d2-aa7c-0e289736dca3(com.mbeddr.mpsutil.langstats.plugin)" version="0" />
     <module reference="92f195b6-a209-4804-ad65-f5248ecd5873(com.mbeddr.mpsutil.margincell)" version="0" />
@@ -229,6 +249,7 @@
     <module reference="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" version="0" />
     <module reference="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" version="0" />
     <module reference="ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)" version="0" />
+    <module reference="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" version="0" />
     <module reference="3ecd7c84-cde3-45de-886c-135ecc69b742(jetbrains.mps.lang.refactoring)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" version="0" />

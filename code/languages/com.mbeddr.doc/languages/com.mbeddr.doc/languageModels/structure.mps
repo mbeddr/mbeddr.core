@@ -88,6 +88,9 @@
     <node concept="PrWs8" id="4zsoa5EdazX" role="PzmwI">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
+    <node concept="PrWs8" id="6DuCB56arAI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2TZO3DbuxwP">
     <property role="TrG5h" value="IDocumentContent" />

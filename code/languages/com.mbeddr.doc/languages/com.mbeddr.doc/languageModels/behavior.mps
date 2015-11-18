@@ -1330,6 +1330,43 @@
         <ref role="3uigEE" to="hwgx:7NyyyjNtce8" resolve="NodeTreeViewNode" />
       </node>
     </node>
+    <node concept="13i0hz" id="6DuCB56asaL" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getLOCEquivalent" />
+      <ref role="13i0hy" to="hwgx:6brBMefRfO0" resolve="getLOCEquivalent" />
+      <node concept="3Tm1VV" id="6DuCB56asaM" role="1B3o_S" />
+      <node concept="3clFbS" id="6DuCB56asaR" role="3clF47">
+        <node concept="3clFbF" id="6DuCB56av28" role="3cqZAp">
+          <node concept="3cpWs3" id="6DuCB56ayVI" role="3clFbG">
+            <node concept="2OqwBi" id="6DuCB56a$nF" role="3uHU7w">
+              <node concept="2OqwBi" id="6DuCB56az6m" role="2Oq$k0">
+                <node concept="13iPFW" id="6DuCB56ayW6" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6DuCB56azCJ" role="2OqNvi">
+                  <ref role="3TtcxE" to="2c95:7$DvC4gRxZ6" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="6DuCB56a_Xf" role="2OqNvi" />
+            </node>
+            <node concept="3cpWs3" id="6DuCB56av7j" role="3uHU7B">
+              <node concept="3cmrfG" id="6DuCB56av27" role="3uHU7B">
+                <property role="3cmrfH" value="2" />
+              </node>
+              <node concept="2OqwBi" id="6DuCB56awtv" role="3uHU7w">
+                <node concept="2OqwBi" id="6DuCB56avhc" role="2Oq$k0">
+                  <node concept="13iPFW" id="6DuCB56av7q" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="6DuCB56avIY" role="2OqNvi">
+                    <ref role="3TtcxE" to="2c95:72XbSXEIPL" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="6DuCB56ay0E" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="6DuCB56asaS" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="2TZO3DbvVvX">
     <property role="3GE5qa" value="structure" />
