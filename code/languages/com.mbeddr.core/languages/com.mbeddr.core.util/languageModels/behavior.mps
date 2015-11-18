@@ -38,8 +38,8 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -5421,6 +5421,29 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="70kXLV4LGV_" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2smAryHLly7" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="2smAryHLly8" role="1B3o_S" />
+      <node concept="3clFbS" id="2smAryHLlyv" role="3clF47">
+        <node concept="3clFbF" id="2smAryHLly$" role="3cqZAp">
+          <node concept="2OqwBi" id="2smAryHLmlt" role="3clFbG">
+            <node concept="2OqwBi" id="2smAryHLlJS" role="2Oq$k0">
+              <node concept="13iPFW" id="2smAryHLlFD" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2smAryHLm2r" role="2OqNvi">
+                <ref role="3Tt5mk" to="k146:6l691cEnEJx" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="2smAryHLmIB" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2smAryHLlyw" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="gaSsNU8L_a">
