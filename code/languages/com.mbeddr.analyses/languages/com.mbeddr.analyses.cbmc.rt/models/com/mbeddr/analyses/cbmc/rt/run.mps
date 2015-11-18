@@ -1480,8 +1480,13 @@
         </node>
         <node concept="3clFbF" id="4Org$to_9US" role="3cqZAp">
           <node concept="37vLTI" id="4Org$to_qLb" role="3clFbG">
-            <node concept="3clFbT" id="4Org$to_r2m" role="37vLTx">
-              <property role="3clFbU" value="false" />
+            <node concept="2OqwBi" id="1H8VqTvY1u0" role="37vLTx">
+              <node concept="37vLTw" id="1H8VqTvY1q0" role="2Oq$k0">
+                <ref role="3cqZAo" node="7xDyb4PlcpF" resolve="preference" />
+              </node>
+              <node concept="liA8E" id="1H8VqTvY1wA" role="2OqNvi">
+                <ref role="37wK5l" to="p8vh:1H8VqTvXv58" resolve="getSaveCBMCRawResults" />
+              </node>
             </node>
             <node concept="338YkY" id="4Org$to_9UR" role="37vLTJ">
               <ref role="338YkT" node="4Org$toxm21" resolve="isPersistableAnalysis" />
@@ -2457,21 +2462,6 @@
         <node concept="3kxDZ6" id="40ZXlOnHSn9" role="3cqZAp">
           <node concept="9aQIb" id="40ZXlOnHSna" role="3kxCCa">
             <node concept="3clFbS" id="7q0zW8lsQOe" role="9aQI4">
-              <node concept="3clFbF" id="4Org$toEl68" role="3cqZAp">
-                <node concept="37vLTI" id="4Org$toELhh" role="3clFbG">
-                  <node concept="3clFbT" id="4Org$toELCU" role="37vLTx">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                  <node concept="2OqwBi" id="4Org$toElK_" role="37vLTJ">
-                    <node concept="37vLTw" id="4Org$toEl67" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5BkFC2yiYoA" resolve="conf" />
-                    </node>
-                    <node concept="2S8uIT" id="4Org$toEC6Z" role="2OqNvi">
-                      <ref role="2S8YL0" node="4Org$toxm21" resolve="isPersistableAnalysis" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="40PV5hA2r0h" role="3cqZAp">
                 <node concept="37vLTI" id="40PV5hA2r0Z" role="3clFbG">
                   <node concept="Rm8GO" id="40PV5hA2r1O" role="37vLTx">

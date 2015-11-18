@@ -5886,6 +5886,22 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3JyX84yLTGw" role="jymVt" />
+    <node concept="312cEg" id="1H8VqTvY7_M" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="saveCBMCRawResultsCheckbox" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1H8VqTvY7_N" role="1B3o_S" />
+      <node concept="3uibUv" id="1H8VqTvY7_O" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JCheckBox" resolve="JCheckBox" />
+      </node>
+      <node concept="2ShNRf" id="1H8VqTvY7_P" role="33vP2m">
+        <node concept="1pGfFk" id="1H8VqTvY7_Q" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1H8VqTvYhbc" role="jymVt" />
     <node concept="312cEg" id="7xDyb4Plstd" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -6587,6 +6603,125 @@
           </node>
         </node>
         <node concept="3clFbH" id="7GloF9XRUyq" role="3cqZAp" />
+        <node concept="3clFbF" id="1H8VqTvYmex" role="3cqZAp">
+          <node concept="2OqwBi" id="1H8VqTvYmey" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTvYmez" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4PkmwI" resolve="basicSettings" />
+            </node>
+            <node concept="liA8E" id="1H8VqTvYme$" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="2ShNRf" id="1H8VqTvYme_" role="37wK5m">
+                <node concept="1pGfFk" id="1H8VqTvYmeA" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="1H8VqTvYmeB" role="37wK5m">
+                    <property role="Xl_RC" value="Save raw results:" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1H8VqTvYmeC" role="3cqZAp">
+          <node concept="2OqwBi" id="1H8VqTvYmeD" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTvYmeE" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4PkmwI" resolve="basicSettings" />
+            </node>
+            <node concept="liA8E" id="1H8VqTvYmeF" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="1H8VqTvYpAy" role="37wK5m">
+                <ref role="3cqZAo" node="1H8VqTvY7_M" resolve="saveCBMCRawResultsCheckbox" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1H8VqTvYmeH" role="3cqZAp">
+          <node concept="2OqwBi" id="1H8VqTvYmeI" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTvYq9j" role="2Oq$k0">
+              <ref role="3cqZAo" node="1H8VqTvY7_M" resolve="saveCBMCRawResultsCheckbox" />
+            </node>
+            <node concept="liA8E" id="1H8VqTvYmeK" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="1H8VqTvYmeN" role="37wK5m">
+                <property role="Xl_RC" value="If enabled then the raw output of CBMC is saved and can be subsequently loaded." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1H8VqTvYmeO" role="3cqZAp">
+          <node concept="2OqwBi" id="1H8VqTvYmeP" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTvYrAW" role="2Oq$k0">
+              <ref role="3cqZAo" node="1H8VqTvY7_M" resolve="saveCBMCRawResultsCheckbox" />
+            </node>
+            <node concept="liA8E" id="1H8VqTvYmeR" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setSelected(boolean):void" resolve="setSelected" />
+              <node concept="2OqwBi" id="1H8VqTvYmeS" role="37wK5m">
+                <node concept="37vLTw" id="1H8VqTvYmeT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                </node>
+                <node concept="2OwXpG" id="1H8VqTvYr4R" role="2OqNvi">
+                  <ref role="2Oxat5" node="1H8VqTvXKTo" resolve="saveCBMCRawResults" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1H8VqTvYmeV" role="3cqZAp">
+          <node concept="2OqwBi" id="1H8VqTvYmeW" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTvYsn8" role="2Oq$k0">
+              <ref role="3cqZAo" node="1H8VqTvY7_M" resolve="saveCBMCRawResultsCheckbox" />
+            </node>
+            <node concept="liA8E" id="1H8VqTvYmeY" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
+              <node concept="2ShNRf" id="1H8VqTvYmeZ" role="37wK5m">
+                <node concept="YeOm9" id="1H8VqTvYmf0" role="2ShVmc">
+                  <node concept="1Y3b0j" id="1H8VqTvYmf1" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="gsia:~ChangeListener" resolve="ChangeListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="1H8VqTvYmf2" role="1B3o_S" />
+                    <node concept="3clFb_" id="1H8VqTvYmf3" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="stateChanged" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="1H8VqTvYmf4" role="1B3o_S" />
+                      <node concept="3cqZAl" id="1H8VqTvYmf5" role="3clF45" />
+                      <node concept="37vLTG" id="1H8VqTvYmf6" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="1H8VqTvYmf7" role="1tU5fm">
+                          <ref role="3uigEE" to="gsia:~ChangeEvent" resolve="ChangeEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="1H8VqTvYmf8" role="3clF47">
+                        <node concept="3clFbF" id="1H8VqTvYmf9" role="3cqZAp">
+                          <node concept="37vLTI" id="1H8VqTvYmfa" role="3clFbG">
+                            <node concept="2OqwBi" id="1H8VqTvYmfb" role="37vLTx">
+                              <node concept="37vLTw" id="1H8VqTvYsPO" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1H8VqTvY7_M" resolve="saveCBMCRawResultsCheckbox" />
+                              </node>
+                              <node concept="liA8E" id="1H8VqTvYmfd" role="2OqNvi">
+                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="1H8VqTvYmfe" role="37vLTJ">
+                              <node concept="37vLTw" id="1H8VqTvYmff" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                              </node>
+                              <node concept="2OwXpG" id="1H8VqTvYsUF" role="2OqNvi">
+                                <ref role="2Oxat5" node="1H8VqTvXKTo" resolve="saveCBMCRawResults" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1H8VqTvYkYX" role="3cqZAp" />
         <node concept="3cpWs8" id="7xDyb4Plki1" role="3cqZAp">
           <node concept="3cpWsn" id="7xDyb4Plki0" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -10193,6 +10328,17 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7_kHFWoi7u5" role="jymVt" />
+    <node concept="312cEg" id="1H8VqTvXKTo" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="saveCBMCRawResults" />
+      <property role="3TUv4t" value="false" />
+      <node concept="10P_77" id="1H8VqTvXKlg" role="1tU5fm" />
+      <node concept="3clFbT" id="1H8VqTvXLvL" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1H8VqTvXLvW" role="jymVt" />
     <node concept="3clFbW" id="3OhBgB4hwPM" role="jymVt">
       <node concept="3Tm6S6" id="3OhBgB4hwPN" role="1B3o_S" />
       <node concept="3cqZAl" id="3OhBgB4hwPO" role="3clF45" />
@@ -10865,6 +11011,47 @@
       <node concept="17QB3L" id="7_kHFWoi4DM" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="7_kHFWoi4aR" role="jymVt" />
+    <node concept="3clFb_" id="1H8VqTvXv4W" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setSaveCBMCRawResults" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="1H8VqTvXv4X" role="3clF47">
+        <node concept="3clFbF" id="1H8VqTvXMgI" role="3cqZAp">
+          <node concept="37vLTI" id="1H8VqTvXMls" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTvXMqN" role="37vLTx">
+              <ref role="3cqZAo" node="1H8VqTvXv55" resolve="saveRawResults" />
+            </node>
+            <node concept="37vLTw" id="1H8VqTvXMgG" role="37vLTJ">
+              <ref role="3cqZAo" node="1H8VqTvXKTo" resolve="saveCBMCRawResults" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1H8VqTvXv53" role="1B3o_S" />
+      <node concept="3cqZAl" id="1H8VqTvXv54" role="3clF45" />
+      <node concept="37vLTG" id="1H8VqTvXv55" role="3clF46">
+        <property role="TrG5h" value="saveRawResults" />
+        <node concept="10P_77" id="1H8VqTvXG$W" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1H8VqTvXv57" role="jymVt" />
+    <node concept="3clFb_" id="1H8VqTvXv58" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getSaveCBMCRawResults" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="1H8VqTvXv59" role="3clF47">
+        <node concept="3cpWs6" id="1H8VqTvXv5a" role="3cqZAp">
+          <node concept="37vLTw" id="1H8VqTvXNfB" role="3cqZAk">
+            <ref role="3cqZAo" node="1H8VqTvXKTo" resolve="saveCBMCRawResults" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1H8VqTvXv5h" role="1B3o_S" />
+      <node concept="10P_77" id="1H8VqTvXMtJ" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1H8VqTvXuzi" role="jymVt" />
     <node concept="3Tm1VV" id="3OhBgB4hx56" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4wNvmgr9OM6">

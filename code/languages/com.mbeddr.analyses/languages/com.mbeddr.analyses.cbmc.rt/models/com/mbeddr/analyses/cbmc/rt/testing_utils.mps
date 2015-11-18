@@ -800,6 +800,21 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="1H8VqTvZjtr" role="3cqZAp">
+                <node concept="37vLTI" id="1H8VqTvZk8E" role="3clFbG">
+                  <node concept="3clFbT" id="1H8VqTvZklM" role="37vLTx">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="2OqwBi" id="1H8VqTvZjGZ" role="37vLTJ">
+                    <node concept="37vLTw" id="1H8VqTvZjtp" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3_HSwtcYjpB" resolve="config" />
+                    </node>
+                    <node concept="2S8uIT" id="1H8VqTvZjUR" role="2OqNvi">
+                      <ref role="2S8YL0" to="tzyt:4Org$toxm21" resolve="isPersistableAnalysis" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="3_HSwtcYjpF" role="3cqZAp">
                 <node concept="37vLTI" id="3_HSwtcYjpG" role="3clFbG">
                   <node concept="37vLTw" id="2tzgwZjImPs" role="37vLTx">
