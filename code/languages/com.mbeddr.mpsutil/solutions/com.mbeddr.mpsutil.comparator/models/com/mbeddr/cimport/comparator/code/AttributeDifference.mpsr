@@ -41,6 +41,8 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -65,6 +67,10 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -84,6 +90,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -96,6 +105,7 @@
   </registry>
   <node concept="312cEu" id="DYlgnA$0Yo">
     <property role="TrG5h" value="AttributeDifference" />
+    <property role="3GE5qa" value="difference" />
     <node concept="2tJIrI" id="DYlgnA$hQw" role="jymVt" />
     <node concept="312cEg" id="DYlgnA$hR5" role="jymVt">
       <property role="TrG5h" value="attribute" />
@@ -253,6 +263,27 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1rBPbD3J_tD" role="jymVt" />
+    <node concept="3clFb_" id="Pu8Vy2dhLK" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getNestedDifferences" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="Pu8Vy2dhLM" role="1B3o_S" />
+      <node concept="_YKpA" id="Pu8Vy2dhLN" role="3clF45">
+        <node concept="3uibUv" id="Pu8Vy2dhLO" role="_ZDj9">
+          <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="Pu8Vy2dhLP" role="3clF47">
+        <node concept="3clFbF" id="Pu8Vy2di78" role="3cqZAp">
+          <node concept="1rXfSq" id="Pu8Vy2di77" role="3clFbG">
+            <ref role="37wK5l" node="DYlgnA$j__" resolve="getAttributeDifferences" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="Pu8Vy2dhWi" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$j_I" role="jymVt">
       <property role="TrG5h" value="getDescription" />
       <property role="1EzhhJ" value="false" />
