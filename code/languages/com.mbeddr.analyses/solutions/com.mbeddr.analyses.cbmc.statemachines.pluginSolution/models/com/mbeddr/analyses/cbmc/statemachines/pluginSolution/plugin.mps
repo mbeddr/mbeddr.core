@@ -33,6 +33,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -150,7 +151,8 @@
   </registry>
   <node concept="sE7Ow" id="4arT0cnA1Ap">
     <property role="TrG5h" value="CbmcVerifyStatemachineAction" />
-    <property role="2uzpH1" value="Check state-machine (starting from 'main')" />
+    <property role="2uzpH1" value="Verify State-machine (Starting From 'main')" />
+    <property role="1WHSii" value="Verifies properties of this statemachine by starting from 'main'" />
     <node concept="2ScWuX" id="17FqOSBxd3U" role="tmbBb">
       <node concept="3clFbS" id="17FqOSBxd3V" role="2VODD2">
         <node concept="3clFbF" id="17FqOSBxheF" role="3cqZAp">
@@ -190,16 +192,6 @@
       <property role="TrG5h" value="modelDescriptor" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="4arT0cnA1Az" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="4arT0cnA1A$" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="4arT0cnA1A_" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="4arT0cnA1AA" role="1NuT2Z">
-      <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
-      <node concept="1oajcY" id="4arT0cnA1AB" role="1oa70y" />
     </node>
     <node concept="tnohg" id="4arT0cnA1AC" role="tncku">
       <node concept="3clFbS" id="4arT0cnA1AD" role="2VODD2">

@@ -41,6 +41,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -210,7 +211,8 @@
   </node>
   <node concept="sE7Ow" id="3x0R1LJ5JY0">
     <property role="TrG5h" value="CbmcVerifyAssertsAction" />
-    <property role="2uzpH1" value="Check Assertions (from this Function)" />
+    <property role="2uzpH1" value="Check Assertions (From This Function)" />
+    <property role="1WHSii" value="Check assertions which are reachable from the selected function" />
     <node concept="1DS2jV" id="3x0R1LJ5JY1" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -228,11 +230,6 @@
       <property role="TrG5h" value="model" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="3x0R1LJ5JYa" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="3x0R1LJ5JYb" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="3x0R1LJ5JYc" role="1oa70y" />
     </node>
     <node concept="tnohg" id="3x0R1LJ5JYf" role="tncku">
       <node concept="3clFbS" id="3x0R1LJ5JYg" role="2VODD2">
@@ -396,7 +393,8 @@
   </node>
   <node concept="sE7Ow" id="3x0R1LJ5JZN">
     <property role="TrG5h" value="CbmcVerifyDecisionTableAction" />
-    <property role="2uzpH1" value="Verify decision table (starting from 'main')" />
+    <property role="2uzpH1" value="Verify Decision Table (Starting From 'main')" />
+    <property role="1WHSii" value="Verifies properties of this decision table by starting from the 'main' function" />
     <node concept="2ScWuX" id="KRRLnplqcw" role="tmbBb">
       <node concept="3clFbS" id="KRRLnplqcx" role="2VODD2">
         <node concept="3clFbF" id="KRRLnplqIf" role="3cqZAp">
@@ -438,16 +436,6 @@
       <property role="TrG5h" value="modelDescriptor" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="3x0R1LJ5JZX" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="3x0R1LJ5JZY" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="3x0R1LJ5JZZ" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="3x0R1LJ5K00" role="1NuT2Z">
-      <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
-      <node concept="1oajcY" id="3x0R1LJ5K01" role="1oa70y" />
     </node>
     <node concept="tnohg" id="3x0R1LJ5K02" role="tncku">
       <node concept="3clFbS" id="3x0R1LJ5K03" role="2VODD2">
@@ -571,7 +559,8 @@
   </node>
   <node concept="sE7Ow" id="3x0R1LJ5K1b">
     <property role="TrG5h" value="CbmcRobustnessAction" />
-    <property role="2uzpH1" value="Check Robustness (from this Function)" />
+    <property role="2uzpH1" value="Check Robustness (From This Function)" />
+    <property role="1WHSii" value="Checks robustness properties of code starting from the selected function" />
     <node concept="1DS2jV" id="3x0R1LJ5K1c" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -589,11 +578,6 @@
       <property role="TrG5h" value="model" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="3x0R1LJ5K1l" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="3x0R1LJ5K1m" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="3x0R1LJ5K1n" role="1oa70y" />
     </node>
     <node concept="tnohg" id="3x0R1LJ5K1q" role="tncku">
       <node concept="3clFbS" id="3x0R1LJ5K1r" role="2VODD2">
@@ -761,7 +745,8 @@
   </node>
   <node concept="sE7Ow" id="7yN$Xh8pdGQ">
     <property role="TrG5h" value="CbmcVerifyGSwitchAction" />
-    <property role="2uzpH1" value="Verify GSwitchExpression (starting from 'main')" />
+    <property role="2uzpH1" value="Verify GSwitchExpression (Starting From 'main')" />
+    <property role="1WHSii" value="Verifies this GSwitchExpression by starting from 'main'" />
     <node concept="1DS2jV" id="7yN$Xh8pdGR" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -779,16 +764,6 @@
       <property role="TrG5h" value="modelDescriptor" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="7yN$Xh8pdGY" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7yN$Xh8pdGZ" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="7yN$Xh8pdH0" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7yN$Xh8pdH1" role="1NuT2Z">
-      <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
-      <node concept="1oajcY" id="7yN$Xh8pdH2" role="1oa70y" />
     </node>
     <node concept="tnohg" id="7yN$Xh8pdH3" role="tncku">
       <node concept="3clFbS" id="7yN$Xh8pdH4" role="2VODD2">
