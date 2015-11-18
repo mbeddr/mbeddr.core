@@ -44,6 +44,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -523,7 +524,8 @@
   </node>
   <node concept="sE7Ow" id="5BkFC2yhAHm">
     <property role="TrG5h" value="CbmcVerifyAnalysisConfigurationAction" />
-    <property role="2uzpH1" value="Verify analysis configuration" />
+    <property role="2uzpH1" value="Verify Analysis Configuration" />
+    <property role="1WHSii" value="Starts CBMC on this configuration" />
     <node concept="1DS2jV" id="5BkFC2yhAHn" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -541,11 +543,6 @@
       <property role="TrG5h" value="model" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="5BkFC2yhAHw" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="5BkFC2yhAHx" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="5BkFC2yhAHy" role="1oa70y" />
     </node>
     <node concept="tnohg" id="5BkFC2yhAH_" role="tncku">
       <node concept="3clFbS" id="5BkFC2yhAHA" role="2VODD2">
@@ -702,32 +699,11 @@
     <node concept="1QGGSu" id="5BkFC2yhAJ4" role="3Uehp1">
       <property role="1QGGTI" value="${solution_descriptor}/icons/verify.png" />
     </node>
-    <node concept="2ScWuX" id="5BkFC2yhAJ5" role="tmbBb">
-      <node concept="3clFbS" id="5BkFC2yhAJ6" role="2VODD2">
-        <node concept="3clFbF" id="5BkFC2yhAJ7" role="3cqZAp">
-          <node concept="2OqwBi" id="6NsiZXS6WRu" role="3clFbG">
-            <node concept="2OqwBi" id="6NsiZXS6hyT" role="2Oq$k0">
-              <node concept="2OqwBi" id="6NsiZXS67yW" role="2Oq$k0">
-                <node concept="2WthIp" id="6NsiZXS67yZ" role="2Oq$k0" />
-                <node concept="3gHZIF" id="6NsiZXS67z1" role="2OqNvi">
-                  <ref role="2WH_rO" node="5BkFC2yhAHp" resolve="analysisConfig" />
-                </node>
-              </node>
-              <node concept="3NT_Vc" id="6NsiZXS6VGx" role="2OqNvi" />
-            </node>
-            <node concept="3O6GUB" id="6NsiZXS6Z3J" role="2OqNvi">
-              <node concept="chp4Y" id="3y5ubmctS7N" role="3QVz_e">
-                <ref role="cht4Q" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="sE7Ow" id="6w9LZ1hC3Vl">
     <property role="TrG5h" value="CbmcVerifySingleAnalysisConfigurationAction" />
-    <property role="2uzpH1" value="Verify analysis configuration" />
+    <property role="2uzpH1" value="Verify Analysis Configuration" />
+    <property role="1WHSii" value="Starts CBMC on this configuration" />
     <node concept="1DS2jV" id="6w9LZ1hC3Vm" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -738,18 +714,13 @@
       <node concept="3Tm6S6" id="6w9LZ1hC3Vp" role="1B3o_S" />
       <node concept="1oajcY" id="6w9LZ1hC3Vq" role="1oa70y" />
       <node concept="3Tqbb2" id="6w9LZ1hC3Vr" role="1tU5fm">
-        <ref role="ehGHo" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+        <ref role="ehGHo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
       </node>
     </node>
     <node concept="1DS2jV" id="6w9LZ1hC3Vu" role="1NuT2Z">
       <property role="TrG5h" value="model" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="6w9LZ1hC3Vv" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="6w9LZ1hC3Vw" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
-      <node concept="1oajcY" id="6w9LZ1hC3Vx" role="1oa70y" />
     </node>
     <node concept="tnohg" id="6w9LZ1hC3V$" role="tncku">
       <node concept="3clFbS" id="6w9LZ1hC3V_" role="2VODD2">
