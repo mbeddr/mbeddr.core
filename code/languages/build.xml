@@ -107,8 +107,8 @@
 	
 	<!-- targets --> 
 	<target name="clean-and-build" >
-		<antcall target="build-allScripts" />
 		<antcall target="clean" />
+		<antcall target="build-allScripts" />
 		<antcall target="build-languages" />	
 		<antcall target="copy-spawner" />
 		<antcall target="install-nativelibs-plugin" />
