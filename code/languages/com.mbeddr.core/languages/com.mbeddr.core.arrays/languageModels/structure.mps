@@ -167,8 +167,8 @@
   <node concept="1TIwiD" id="4AGl5dzxdX6">
     <property role="3GE5qa" value="pointers" />
     <property role="TrG5h" value="NullExpression" />
-    <property role="34LRSv" value="null" />
-    <property role="R4oN_" value="the null pointer" />
+    <property role="34LRSv" value="NULL" />
+    <property role="R4oN_" value="the NULL pointer" />
     <property role="1pbfSe" value="1389284455" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
   </node>

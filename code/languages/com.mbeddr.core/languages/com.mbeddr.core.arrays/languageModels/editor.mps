@@ -582,10 +582,10 @@
     <property role="3GE5qa" value="pointers" />
     <ref role="1XX52x" to="yq40:4AGl5dzxdX6" resolve="NullExpression" />
     <node concept="3F0ifn" id="4AGl5dzxdXa" role="2wV5jI">
-      <property role="3F0ifm" value="null" />
+      <property role="3F0ifm" value="NULL" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       <node concept="VPxyj" id="5l13tQ4vmw9" role="3F10Kt">
-        <property role="VOm3f" value="false" />
+        <property role="VOm3f" value="true" />
       </node>
     </node>
     <node concept="PMmxH" id="5CDgsyZck1T" role="6VMZX">
