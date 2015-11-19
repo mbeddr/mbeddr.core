@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%teamcity.build.checkoutDir%/mbeddr.core/build/**/*.xml&#xA;%teamcity.build.workingDir%/mbeddr.core/code/plugins/**/*.xml" />
+      <option name="artifactRules" value="%teamcity.build.checkoutDir%/mbeddr.core/build/**/*.xml&#xA;%teamcity.build.workingDir%/mbeddr.core/code/plugins/**/*.xml&#xA;%teamcity.build.checkoutDir%/mbeddr.core/artifacts/" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
