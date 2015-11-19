@@ -301,6 +301,83 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.analyses.dev.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.minimal.jar" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.minimal.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains.mps.minimal.jar/META-INF/module.xml">
+      <module namespace="jetbrains.mps.minimal" type="solution" uuid="ea27f6eb-9fc6-4dc6-b3c4-15795bea000c">
+        <dependencies />
+        <sources jar="jetbrains.mps.minimal-src.jar" descriptor="jetbrains.mps.minimal.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr/jetbrains.mps.minimal.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/jetbrains.mps.minimal" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/jetbrains.mps.minimal.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.minimal-models">
+      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr/jetbrains.mps.minimal-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.minimal-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.rcp.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.rcp.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.rcp.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.rcp" type="solution" uuid="4fe640a5-f027-47b6-a81c-85e480b0ecd4">
+        <dependencies />
+        <sources jar="com.mbeddr.rcp-src.jar" descriptor="com.mbeddr.rcp.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr/com.mbeddr.rcp.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.rcp" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.rcp.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.rcp-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr/com.mbeddr.rcp-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.rcp-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.build.jar1" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.build.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.build.jar1/META-INF/module.xml">
+      <module namespace="com.mbeddr.build" type="solution" uuid="7ac0dfb8-7d5f-4573-ab80-81af2106ce03">
+        <dependencies />
+        <sources jar="com.mbeddr.build-src.jar" descriptor="com.mbeddr.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr/com.mbeddr.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.build.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.build-models1">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr/com.mbeddr.build-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.build-models1" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts/languages/mbeddr-platform" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.platform.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.platform.jar/META-INF" />
@@ -413,7 +490,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.plan.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.migration.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.migration.runtime.jar" />
@@ -428,6 +504,7 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />

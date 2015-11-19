@@ -168,6 +168,9 @@
       <node concept="m$f5U" id="2coa6XmWpWi" role="m$_yh">
         <ref role="m$f5T" node="2coa6XmWkq8" resolve="com.mbeddr.tests" />
       </node>
+      <node concept="m$f5U" id="7XWYXGzp1$8" role="m$_yh">
+        <ref role="m$f5T" node="3AVJcIMl$pT" resolve="mbeddr" />
+      </node>
       <node concept="m$f5U" id="6ucYLjoxZTQ" role="m$_yh">
         <ref role="m$f5T" node="6ucYLjoxZtg" resolve="mbeddr-platform" />
       </node>
