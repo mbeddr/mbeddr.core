@@ -18,6 +18,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -1449,6 +1452,12 @@
     </node>
     <node concept="PrWs8" id="xN636rYFQ6" role="PzmwI">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1$baREjLD$Y" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="asaX9" id="1$baREjLD_n" role="lGtFl">
+      <property role="YLQ7P" value="since 2015-11-19" />
     </node>
   </node>
   <node concept="1TIwiD" id="20xms4A94u9">
