@@ -23,10 +23,9 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="45ke" ref="r:40ee9130-2844-4f59-96e6-d12b358ca46c(com.mbeddr.mpsutil.conceptdiagram.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -805,26 +804,6 @@
                 </node>
               </node>
               <node concept="3clFbH" id="7nHDAjUC8te" role="3cqZAp" />
-              <node concept="3clFbF" id="7nHDAjUCf7P" role="3cqZAp">
-                <node concept="2OqwBi" id="7nHDAjUCf7L" role="3clFbG">
-                  <node concept="10M0yZ" id="7nHDAjUCf7M" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                  </node>
-                  <node concept="liA8E" id="7nHDAjUCf7N" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="7nHDAjUCnXs" role="37wK5m">
-                      <node concept="37vLTw" id="7nHDAjUCpnC" role="3uHU7w">
-                        <ref role="3cqZAo" node="7nHDAjUC6oS" resolve="seq" />
-                      </node>
-                      <node concept="Xl_RD" id="7nHDAjUCf7O" role="3uHU7B">
-                        <property role="Xl_RC" value="SEQ: " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="7nHDAjUCbHy" role="3cqZAp" />
               <node concept="3clFbF" id="3OnN3di64Ay" role="3cqZAp">
                 <node concept="2OqwBi" id="3OnN3di656O" role="3clFbG">
                   <node concept="37vLTw" id="3OnN3di64Aw" role="2Oq$k0">
