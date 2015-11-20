@@ -4,7 +4,6 @@
   <languages>
     <use id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" name="com.mbeddr.analyses.acsl" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
@@ -17,13 +16,17 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
+    <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
+    <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -45,6 +48,12 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -65,14 +74,31 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
+      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="7830515785164764091" name="condition" index="avys_" />
+        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
+      </concept>
+      <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+      </concept>
+      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
+        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
         <child id="1195501105008" name="codeBlock" index="1pqMTA" />
@@ -88,6 +114,10 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -97,6 +127,9 @@
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -110,11 +143,18 @@
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
+        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -132,9 +172,56 @@
     </language>
   </registry>
   <node concept="bUwia" id="3i$cQqpAZ4H">
-    <property role="TrG5h" value="main" />
+    <property role="TrG5h" value="acslGenerationAsText" />
     <node concept="1puMqW" id="5Tz48EVNrd4" role="1pvy6N">
       <ref role="1puQsG" node="47VdeCsLKz5" resolve="wrapFunctionsIntoFunctionWithContract" />
+    </node>
+    <node concept="avzCv" id="5OLOS2sRbKK" role="avys_">
+      <node concept="3clFbS" id="5OLOS2sRbKL" role="2VODD2">
+        <node concept="3cpWs8" id="5OLOS2sRcQ5" role="3cqZAp">
+          <node concept="3cpWsn" id="5OLOS2sRcQ6" role="3cpWs9">
+            <property role="TrG5h" value="rc" />
+            <node concept="3Tqbb2" id="5OLOS2sRcQ7" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+            </node>
+            <node concept="2YIFZM" id="78Ts1skpDF$" role="33vP2m">
+              <ref role="37wK5l" to="ahli:78Ts1skpDBH" resolve="expectBCConfigItem" />
+              <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+              <node concept="2OqwBi" id="78Ts1skpDF_" role="37wK5m">
+                <node concept="1iwH7S" id="78Ts1skpDFA" role="2Oq$k0" />
+                <node concept="1r8y6K" id="78Ts1skpDFB" role="2OqNvi" />
+              </node>
+              <node concept="1iwH7S" id="78Ts1skpDFC" role="37wK5m" />
+              <node concept="Xl_RD" id="78Ts1skq3qR" role="37wK5m">
+                <property role="Xl_RC" value="com.mbeddr.analyses.acsl/main.acslGenerationAsText" />
+              </node>
+              <node concept="3TUQnm" id="78Ts1skpDFD" role="37wK5m">
+                <ref role="3TV0OU" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3R$6B6bL1Rb" role="3cqZAp">
+          <node concept="2OqwBi" id="5OLOS2sRbci" role="3cqZAk">
+            <node concept="2OqwBi" id="5OLOS2sRbv$" role="2Oq$k0">
+              <node concept="1PxgMI" id="5OLOS2sRb5y" role="2Oq$k0">
+                <ref role="1PxNhF" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
+                <node concept="37vLTw" id="5OLOS2sRb1y" role="1PxMeX">
+                  <ref role="3cqZAo" node="5OLOS2sRcQ6" resolve="rc" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5OLOS2sRbBW" role="2OqNvi">
+                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5OLOS2sRbqk" role="2OqNvi">
+              <node concept="chp4Y" id="5OLOS2sRbUO" role="cj9EA">
+                <ref role="cht4Q" to="97v6:5OLOS2sQlhq" resolve="ACSLContractsGenerationAsText" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1pmfR0" id="47VdeCsLKz5">
@@ -313,6 +400,60 @@
                   <property role="TrG5h" value="it" />
                   <node concept="2jxLKc" id="47VdeCsM5LN" role="1tU5fm" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="bUwia" id="5OLOS2sRFlq">
+    <property role="TrG5h" value="acslGenerationDoNothing" />
+    <node concept="3aamgX" id="7PLQ5$qaDOg" role="3acgRq">
+      <ref role="30HIoZ" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
+      <node concept="b5Tf3" id="7PLQ5$qaN91" role="1lVwrX" />
+    </node>
+    <node concept="avzCv" id="5OLOS2sRFlr" role="avys_">
+      <node concept="3clFbS" id="5OLOS2sRFls" role="2VODD2">
+        <node concept="3cpWs8" id="5OLOS2sRJ62" role="3cqZAp">
+          <node concept="3cpWsn" id="5OLOS2sRJ63" role="3cpWs9">
+            <property role="TrG5h" value="rc" />
+            <node concept="3Tqbb2" id="5OLOS2sRJ64" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+            </node>
+            <node concept="2YIFZM" id="5OLOS2sRJ65" role="33vP2m">
+              <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+              <ref role="37wK5l" to="ahli:78Ts1skpDBH" resolve="expectBCConfigItem" />
+              <node concept="2OqwBi" id="5OLOS2sRJ66" role="37wK5m">
+                <node concept="1iwH7S" id="5OLOS2sRJ67" role="2Oq$k0" />
+                <node concept="1r8y6K" id="5OLOS2sRJ68" role="2OqNvi" />
+              </node>
+              <node concept="1iwH7S" id="5OLOS2sRJ69" role="37wK5m" />
+              <node concept="Xl_RD" id="5OLOS2sRJ6a" role="37wK5m">
+                <property role="Xl_RC" value="com.mbeddr.analyses.acsl/main.acslGenerationDoNothing" />
+              </node>
+              <node concept="3TUQnm" id="5OLOS2sRJ6b" role="37wK5m">
+                <ref role="3TV0OU" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5OLOS2sRJ6c" role="3cqZAp">
+          <node concept="2OqwBi" id="5OLOS2sRJ6d" role="3cqZAk">
+            <node concept="2OqwBi" id="5OLOS2sRJ6e" role="2Oq$k0">
+              <node concept="1PxgMI" id="5OLOS2sRJ6f" role="2Oq$k0">
+                <ref role="1PxNhF" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
+                <node concept="37vLTw" id="5OLOS2sRJ6g" role="1PxMeX">
+                  <ref role="3cqZAo" node="5OLOS2sRJ63" resolve="rc" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5OLOS2sRJ6h" role="2OqNvi">
+                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5OLOS2sRJ6i" role="2OqNvi">
+              <node concept="chp4Y" id="5OLOS2sRJFl" role="cj9EA">
+                <ref role="cht4Q" to="97v6:5OLOS2sRFnL" resolve="ACSLContractsGenerationDoNothing" />
               </node>
             </node>
           </node>

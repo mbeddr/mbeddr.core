@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:69fea920-925b-4481-9797-2ce4ddde54f5(test.analyses.acsl.function_contracts)">
+<model ref="r:69fea920-925b-4481-9797-2ce4ddde54f5(test.analyses.acsl.acsl_to_cbmc)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
@@ -404,7 +404,7 @@
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <node concept="BaHAS" id="2$KQXNUNlQN" role="37wK5m">
-                <property role="BaHAW" value="function_contracts" />
+                <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
                 <property role="BaBD8" value="ass" />
               </node>
@@ -453,7 +453,7 @@
                 <ref role="3cqZAo" node="2$KQXNUNlQJ" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2$KQXNUNnpX" role="37wK5m">
-                <property role="Xl_RC" value="Assert: behavior 'zero' is fulfilled" />
+                <property role="Xl_RC" value="Assert: assertion !(__assume_zero) || __result == 0" />
               </node>
             </node>
           </node>
@@ -482,7 +482,7 @@
                 <ref role="3cqZAo" node="2$KQXNUNlQJ" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2$KQXNUNvsO" role="37wK5m">
-                <property role="Xl_RC" value="Assert: behavior 'one' is fulfilled" />
+                <property role="Xl_RC" value="Assert: assertion !(__assume_one) || __result == 0" />
               </node>
             </node>
           </node>
