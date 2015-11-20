@@ -7341,7 +7341,8 @@
   <node concept="24kQdi" id="1Qze4b32f60">
     <property role="3GE5qa" value="configuration.cbmc" />
     <ref role="1XX52x" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
-    <node concept="3EZMnI" id="6GqYvBOf2Xy" role="2wV5jI">
+    <node concept="3EZMnI" id="1H8VqTw7U76" role="2wV5jI">
+      <node concept="2iRkQZ" id="1H8VqTw7U77" role="2iSdaV" />
       <node concept="3EZMnI" id="3r83Ks0g9P$" role="3EZMnx">
         <node concept="VPM3Z" id="3r83Ks0g9P_" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -7423,9 +7424,6 @@
           <node concept="l2Vlx" id="3r83Ks0g9PK" role="2iSdaV" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5BkFC2yh8uN" role="3EZMnx">
-        <ref role="1k5W1q" to="r4b4:7TAjv1QUX$w" resolve="heading" />
-      </node>
       <node concept="gc7cB" id="gaSsNU6AyN" role="3EZMnx">
         <node concept="3VJUX4" id="gaSsNU6AyP" role="3YsKMw">
           <node concept="3clFbS" id="gaSsNU6AyR" role="2VODD2">
@@ -7489,15 +7487,6 @@
           <node concept="2iRfu4" id="5VnXdFkrmLn" role="2iSdaV" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5S6wb2j5pg_" role="3EZMnx">
-        <property role="3F0ifm" value="" />
-        <node concept="ljvvj" id="5S6wb2j5pgA" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="5S6wb2j5pgE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F2HdR" id="3R$6B6bKxEG" role="3EZMnx">
         <property role="2czwfO" value="\n" />
         <ref role="1NtTu8" to="q46j:5BkFC2yh8uK" />
@@ -7515,7 +7504,6 @@
           </node>
         </node>
       </node>
-      <node concept="l2Vlx" id="7apEgWbHX3P" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6KXBYUqACk9">
