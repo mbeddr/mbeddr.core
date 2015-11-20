@@ -7,6 +7,7 @@
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -225,6 +226,18 @@
         <child id="4481811096720588312" name="value" index="1snq_E" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
@@ -321,6 +334,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -3823,32 +3837,119 @@
       <property role="TrG5h" value="getUnescapedValueLength" />
       <node concept="3Tm1VV" id="4FYctDz1tF1" role="1B3o_S" />
       <node concept="3clFbS" id="4FYctDz1tF2" role="3clF47">
-        <node concept="3clFbF" id="4FYctDz1ugp" role="3cqZAp">
-          <node concept="2OqwBi" id="4FYctDz1vRG" role="3clFbG">
-            <node concept="2OqwBi" id="4FYctDz1uTE" role="2Oq$k0">
-              <node concept="2OqwBi" id="4FYctDz1ulv" role="2Oq$k0">
-                <node concept="13iPFW" id="4FYctDz1ugo" role="2Oq$k0" />
-                <node concept="3TrcHB" id="4FYctDz1uG4" role="2OqNvi">
-                  <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
-                </node>
+        <node concept="3cpWs8" id="1$baREjNy7Y" role="3cqZAp">
+          <node concept="3cpWsn" id="1$baREjNy81" role="3cpWs9">
+            <property role="TrG5h" value="actualLengthSubstitute" />
+            <node concept="17QB3L" id="1$baREjNy7W" role="1tU5fm" />
+            <node concept="2OqwBi" id="1$baREjNygJ" role="33vP2m">
+              <node concept="13iPFW" id="1$baREjNybC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1$baREjNyBm" role="2OqNvi">
+                <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
               </node>
-              <node concept="liA8E" id="4FYctDz1v19" role="2OqNvi">
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1$baREjN_Ax" role="3cqZAp" />
+        <node concept="3SKdUt" id="1$baREjN_fw" role="3cqZAp">
+          <node concept="3SKdUq" id="1$baREjN_ke" role="3SKWNk">
+            <property role="3SKdUp" value="Substitute octal numbers" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$baREjNyF$" role="3cqZAp">
+          <node concept="37vLTI" id="1$baREjNyM6" role="3clFbG">
+            <node concept="2OqwBi" id="1$baREjNz6G" role="37vLTx">
+              <node concept="37vLTw" id="1$baREjNz4_" role="2Oq$k0">
+                <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+              </node>
+              <node concept="liA8E" id="1$baREjNzif" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                <node concept="Xl_RD" id="4FYctDz1vil" role="37wK5m">
-                  <property role="Xl_RC" value="\\\\(.)" />
+                <node concept="Xl_RD" id="1$baREjNziX" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\\\d+" />
                 </node>
-                <node concept="Xl_RD" id="4FYctDz1vJ0" role="37wK5m">
-                  <property role="Xl_RC" value="$1" />
+                <node concept="Xl_RD" id="1$baREjNzxC" role="37wK5m">
+                  <property role="Xl_RC" value="n" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="4FYctDz1wq_" role="2OqNvi">
+            <node concept="37vLTw" id="1$baREjNyFy" role="37vLTJ">
+              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1$baREjN_Fq" role="3cqZAp" />
+        <node concept="3SKdUt" id="1$baREjN_kj" role="3cqZAp">
+          <node concept="3SKdUq" id="1$baREjN_kk" role="3SKWNk">
+            <property role="3SKdUp" value="Substitute hexadecimal numbers" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$baREjNzQB" role="3cqZAp">
+          <node concept="37vLTI" id="1$baREjN$5L" role="3clFbG">
+            <node concept="2OqwBi" id="1$baREjN$b2" role="37vLTx">
+              <node concept="37vLTw" id="1$baREjN$8v" role="2Oq$k0">
+                <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+              </node>
+              <node concept="liA8E" id="1$baREjN$n1" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="1$baREjN$pq" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\x\\d+" />
+                </node>
+                <node concept="Xl_RD" id="1$baREjN$pr" role="37wK5m">
+                  <property role="Xl_RC" value="n" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1$baREjNzQ_" role="37vLTJ">
+              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1$baREjN_Kl" role="3cqZAp" />
+        <node concept="3SKdUt" id="1$baREjN_sL" role="3cqZAp">
+          <node concept="3SKdUq" id="1$baREjN_sM" role="3SKWNk">
+            <property role="3SKdUp" value="Substitute special characters" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$baREjN$xe" role="3cqZAp">
+          <node concept="37vLTI" id="1$baREjN$xf" role="3clFbG">
+            <node concept="2OqwBi" id="1$baREjN$xg" role="37vLTx">
+              <node concept="37vLTw" id="1$baREjN$xh" role="2Oq$k0">
+                <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+              </node>
+              <node concept="liA8E" id="1$baREjN$xi" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="1$baREjN$BK" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\." />
+                </node>
+                <node concept="Xl_RD" id="1$baREjN$BL" role="37wK5m">
+                  <property role="Xl_RC" value="x" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1$baREjN$xl" role="37vLTJ">
+              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1$baREjN_Pi" role="3cqZAp" />
+        <node concept="3cpWs6" id="1$baREjNzGt" role="3cqZAp">
+          <node concept="2OqwBi" id="1$baREjN$Sw" role="3cqZAk">
+            <node concept="37vLTw" id="1$baREjNzNa" role="2Oq$k0">
+              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+            </node>
+            <node concept="liA8E" id="1$baREjN_79" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
             </node>
           </node>
         </node>
       </node>
       <node concept="10Oyi0" id="4FYctDz1ugj" role="3clF45" />
+      <node concept="P$JXv" id="1$baREjN0fa" role="lGtFl">
+        <node concept="TZ5HA" id="1$baREjN0fb" role="TZ5H$">
+          <node concept="1dT_AC" id="1$baREjN0fc" role="1dT_Ay">
+            <property role="1dT_AB" value="See https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences for details." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="5jmmCdx$f68" role="13h7CW">
       <node concept="3clFbS" id="5jmmCdx$f69" role="2VODD2" />
