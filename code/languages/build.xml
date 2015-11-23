@@ -107,8 +107,8 @@
 	
 	<!-- targets --> 
 	<target name="clean-and-build" >
-		<antcall target="clean" />
 		<antcall target="build-allScripts" />
+		<antcall target="clean" />		
 		<antcall target="build-languages" />	
 		<antcall target="copy-spawner" />
 		<antcall target="install-nativelibs-plugin" />
@@ -174,9 +174,6 @@
 	</target>	  
 
 	<target name="clean-languages">
-		<ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-plugins.task}" />	  
-		<ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${clean-generated-code.task}" />
-
 		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-generated-code.task}" />
 
@@ -185,7 +182,6 @@
 
 		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
-
 	</target>    
 
 	<target name="build-allScripts">
