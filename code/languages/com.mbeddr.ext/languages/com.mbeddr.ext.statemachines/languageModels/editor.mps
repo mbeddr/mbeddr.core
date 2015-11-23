@@ -52,6 +52,9 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="7651593722933768974" name="jetbrains.mps.lang.editor.structure.MaxWidthStyleClassItem" flags="ln" index="nf9zX">
+        <property id="7651593722933768975" name="value" index="nf9zW" />
+      </concept>
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -4937,7 +4940,7 @@
       </node>
       <node concept="238au4" id="4UHO8tvHzq0" role="3kqczz">
         <node concept="3EZMnI" id="4UHO8tvHzT3" role="2wV5jI">
-          <node concept="2iRfu4" id="4UHO8tvHzT4" role="2iSdaV" />
+          <node concept="l2Vlx" id="7hiaG7TNFei" role="2iSdaV" />
           <node concept="3F1sOY" id="4UHO8tvH_Ou" role="3EZMnx">
             <ref role="1NtTu8" to="clqz:3bLw7MCtNTe" />
           </node>
@@ -4961,6 +4964,9 @@
             <node concept="1wgc9g" id="WK5e1TWRie" role="3XvnJa">
               <ref role="1wgcnl" node="WK5e1TWxJg" resolve="smallerText" />
             </node>
+          </node>
+          <node concept="nf9zX" id="7hiaG7TOzfT" role="3F10Kt">
+            <property role="nf9zW" value="225" />
           </node>
         </node>
       </node>
