@@ -816,12 +816,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="776vT$mRexF" role="3bR37C">
-          <node concept="3bR9La" id="776vT$mRexG" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="4oNjwzxq1FR" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -978,12 +972,6 @@
             <node concept="3bR9La" id="5dYb5krUuBB" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="5dYb5krUGyq" role="3bR37C">
-            <node concept="3bR9La" id="5dYb5krUGyr" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4oNjwzxqgch" resolve="com.mbeddr.mpsutil.compare.pattern#3560698633098117280" />
             </node>
           </node>
         </node>
@@ -4174,6 +4162,17 @@
           <node concept="3bR9La" id="5UUpo4vG3$W" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5q2yETTw8b" resolve="com.mbeddr.mpsutil.margincell.editor" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4rtqL27$TJ3" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.review#5106355271246187087" />
+          <property role="3LESm3" value="bd1ae64e-b2f4-4aea-96c4-acde67310ee9" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4rtqL27$TJ4" role="3bR37C">
+            <node concept="3bR9La" id="4rtqL27$TJ5" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1qdZ14g6roG" resolve="com.mbeddr.mpsutil.review" />
+            </node>
           </node>
         </node>
       </node>
