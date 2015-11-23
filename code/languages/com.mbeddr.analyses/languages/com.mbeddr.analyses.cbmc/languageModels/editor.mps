@@ -120,6 +120,7 @@
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -1902,6 +1903,7 @@
     <property role="TrG5h" value="CBMCSpecificSettings" />
     <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
     <node concept="3EZMnI" id="fjZ33TpCNN" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="pkWqt" id="7ehmsbAEeZS" role="pqm2j">
         <node concept="3clFbS" id="7ehmsbAEeZT" role="2VODD2">
           <node concept="3clFbF" id="7ehmsbAEfeL" role="3cqZAp">
@@ -2076,6 +2078,12 @@
         </node>
       </node>
       <node concept="2EHx9g" id="2hmLFg9Kal8" role="2iSdaV" />
+      <node concept="3F0ifn" id="3YHIg3ZGW3r" role="AHCbl">
+        <property role="3F0ifm" value="CBMC Settings ..." />
+        <node concept="VechU" id="3YHIg3ZGW6o" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5E1$geGaBtr">
@@ -2127,6 +2135,7 @@
     <property role="TrG5h" value="TimeoutSettings" />
     <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
     <node concept="3EZMnI" id="56VLVOUmArc" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="56VLVOUuUTK" role="3EZMnx">
         <property role="3F0ifm" value="Timeout-Settings:" />
       </node>
@@ -2178,6 +2187,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3YHIg3ZGFZM" role="AHCbl">
+        <property role="3F0ifm" value="Timeout Settings ..." />
+        <node concept="VechU" id="3YHIg3ZGG29" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
         </node>
       </node>
     </node>
@@ -7745,6 +7760,7 @@
     <property role="TrG5h" value="ExternalFilesSettings" />
     <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
     <node concept="3EZMnI" id="2OfxaHaxQop" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="2OfxaHaxQoq" role="3EZMnx">
         <property role="3F0ifm" value="External Files" />
       </node>
@@ -7773,6 +7789,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3YHIg3ZGVRu" role="AHCbl">
+        <property role="3F0ifm" value="External Files ..." />
+        <node concept="VechU" id="3YHIg3ZGVUx" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
         </node>
       </node>
     </node>
