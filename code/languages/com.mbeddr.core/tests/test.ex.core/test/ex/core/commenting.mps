@@ -9,6 +9,17 @@
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
+      </concept>
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
         <child id="6275792049641600984" name="condition" index="c0U16" />
@@ -132,6 +143,13 @@
       </concept>
       <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
         <child id="5686538669182341016" name="tests" index="3cM6Hi" />
+      </concept>
+    </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -727,6 +745,26 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2f$52y" id="4rtqL27$Rum" role="lGtFl">
+      <node concept="3vAitl" id="4rtqL27$Run" role="2f$52z">
+        <property role="3ajGZW" value="domenik" />
+        <property role="3ajGZ3" value="23.11.2015 14:34:23" />
+        <property role="19LeSh" value="property_name" />
+        <ref role="19LoX1" node="3jCcpnp1H9E" />
+        <node concept="19SGf9" id="4rtqL27$Ruo" role="3ajGZ5">
+          <node concept="19SUe$" id="4rtqL27$Rup" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="3vAitl" id="4rtqL27$RAs" role="2f$52z">
+        <property role="3ajGZW" value="domenik" />
+        <property role="3ajGZ3" value="23.11.2015 14:34:31" />
+        <property role="19LeSh" value="Constant_vs3hgk_a0" />
+        <ref role="19LoX1" node="6v4$knuuzxg" />
+        <node concept="19SGf9" id="4rtqL27$RAt" role="3ajGZ5">
+          <node concept="19SUe$" id="4rtqL27$RAu" role="19SJt6" />
         </node>
       </node>
     </node>
