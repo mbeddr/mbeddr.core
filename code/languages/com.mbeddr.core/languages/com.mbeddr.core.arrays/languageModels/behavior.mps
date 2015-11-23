@@ -3864,7 +3864,7 @@
               <node concept="liA8E" id="1$baREjN$xi" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
                 <node concept="Xl_RD" id="1$baREjN$BK" role="37wK5m">
-                  <property role="Xl_RC" value="\\\\(a|b|f|n|r|t|v|\\\\|'|\&quot;|\\?)" />
+                  <property role="Xl_RC" value="\\\\[abfnrtv\\\\'\&quot;\\?]" />
                 </node>
                 <node concept="Xl_RD" id="1$baREjN$BL" role="37wK5m">
                   <property role="Xl_RC" value="x" />

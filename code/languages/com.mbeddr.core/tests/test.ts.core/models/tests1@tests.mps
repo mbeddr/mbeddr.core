@@ -12632,14 +12632,72 @@
         <node concept="2NXPZ9" id="1$baREjNnAR" role="N3F5h">
           <property role="TrG5h" value="empty_1448026694189_20" />
         </node>
-        <node concept="2NXPZ9" id="1$baREjKI1z" role="N3F5h">
-          <property role="TrG5h" value="empty_1447948753165_8" />
+        <node concept="1S7NMz" id="1$baREjP58k" role="N3F5h">
+          <property role="TrG5h" value="stringWithMissingTerminatingDoubleQuoteCharacter" />
+          <node concept="12rfTQ" id="1$baREjP58i" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="3TlMh9" id="1$baREjP5gQ" role="12rfTL">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="1$baREjP5mP" role="1cecVj">
+            <property role="PhEJT" value="1234\" />
+          </node>
+          <node concept="7CXmI" id="1$baREjU8kC" role="lGtFl">
+            <node concept="1TM$A" id="1$baREjU8kD" role="7EUXB" />
+          </node>
         </node>
-        <node concept="2NXPZ9" id="2UQ055YzZ8F" role="N3F5h">
-          <property role="TrG5h" value="empty_1410207350110_10" />
+        <node concept="1S7NMz" id="1$baREjQs55" role="N3F5h">
+          <property role="TrG5h" value="stringWithInvalidEscapeSequence" />
+          <node concept="12rfTQ" id="1$baREjQs56" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="3TlMh9" id="1$baREjQs57" role="12rfTL">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="1$baREjQs58" role="1cecVj">
+            <property role="PhEJT" value="123\i" />
+          </node>
+          <node concept="7CXmI" id="1$baREjU8mT" role="lGtFl">
+            <node concept="29bkU" id="1$baREjU8mU" role="7EUXB" />
+          </node>
         </node>
-        <node concept="2NXPZ9" id="2UQ055YznTl" role="N3F5h">
-          <property role="TrG5h" value="empty_1410206721517_5" />
+        <node concept="1S7NMz" id="1$baREjTFbE" role="N3F5h">
+          <property role="TrG5h" value="stringWithIncompleteHexadecimalNumber" />
+          <node concept="12rfTQ" id="1$baREjTFbF" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="3TlMh9" id="1$baREjTFbG" role="12rfTL">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="1$baREjTFbH" role="1cecVj">
+            <property role="PhEJT" value="ab\xe" />
+          </node>
+          <node concept="7CXmI" id="1$baREjU8pa" role="lGtFl">
+            <node concept="1TM$A" id="1$baREjU8pb" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="1S7NMz" id="1$baREjU43N" role="N3F5h">
+          <property role="TrG5h" value="stringWithIncompleteHexadecimalNumberAtLineEnd" />
+          <node concept="12rfTQ" id="1$baREjU43O" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="3TlMh9" id="1$baREjU43P" role="12rfTL">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+          <node concept="PhEJO" id="1$baREjU43Q" role="1cecVj">
+            <property role="PhEJT" value="abc\x" />
+          </node>
+          <node concept="7CXmI" id="1$baREjU8rr" role="lGtFl">
+            <node concept="1TM$A" id="1$baREjU8rs" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="1$baREjU7Y9" role="N3F5h">
+          <property role="TrG5h" value="empty_1448040993453_30" />
         </node>
       </node>
     </node>
