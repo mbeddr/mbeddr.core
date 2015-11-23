@@ -6123,13 +6123,37 @@
               </node>
               <node concept="3clFbJ" id="4pq1Cg6HqBi" role="3cqZAp">
                 <node concept="3clFbS" id="4pq1Cg6HqBl" role="3clFbx">
-                  <node concept="3cpWs6" id="5jGyeU5XzqK" role="3cqZAp">
-                    <node concept="2YIFZM" id="6wvhQs7ncAD" role="3cqZAk">
-                      <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                      <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-                      <node concept="37vLTw" id="5HxjapwgwvM" role="37wK5m">
-                        <ref role="3cqZAo" node="5PEfzHER1GP" resolve="node" />
+                  <node concept="3cpWs8" id="Gsh2Ugpdpi" role="3cqZAp">
+                    <node concept="3cpWsn" id="Gsh2Ugpdpj" role="3cpWs9">
+                      <property role="TrG5h" value="icon" />
+                      <node concept="3uibUv" id="Gsh2Ugpdph" role="1tU5fm">
+                        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
                       </node>
+                    </node>
+                  </node>
+                  <node concept="1QHqEK" id="Gsh2UgpKfS" role="3cqZAp">
+                    <node concept="1QHqEC" id="Gsh2UgpKfU" role="1QHqEI">
+                      <node concept="3clFbS" id="Gsh2UgpKfW" role="1bW5cS">
+                        <node concept="3clFbF" id="Gsh2UgpdCY" role="3cqZAp">
+                          <node concept="37vLTI" id="Gsh2UgpdD0" role="3clFbG">
+                            <node concept="2YIFZM" id="Gsh2Ugpdpk" role="37vLTx">
+                              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+                              <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+                              <node concept="37vLTw" id="Gsh2Ugpdpl" role="37wK5m">
+                                <ref role="3cqZAo" node="5PEfzHER1GP" resolve="node" />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="Gsh2UgpdD4" role="37vLTJ">
+                              <ref role="3cqZAo" node="Gsh2Ugpdpj" resolve="icon" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs6" id="5jGyeU5XzqK" role="3cqZAp">
+                    <node concept="37vLTw" id="Gsh2Ugpdpm" role="3cqZAk">
+                      <ref role="3cqZAo" node="Gsh2Ugpdpj" resolve="icon" />
                     </node>
                   </node>
                 </node>
