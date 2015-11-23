@@ -106,6 +106,7 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -7246,6 +7247,22 @@
     <property role="TrG5h" value="check_StringLiteral" />
     <property role="3GE5qa" value="literals" />
     <node concept="3clFbS" id="1$baREjPqqm" role="18ibNy">
+      <node concept="3clFbJ" id="3n5vksRU_W5" role="3cqZAp">
+        <node concept="3clFbS" id="3n5vksRU_W7" role="3clFbx">
+          <node concept="3cpWs6" id="3n5vksRUAXh" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="3n5vksRUAGP" role="3clFbw">
+          <node concept="2OqwBi" id="3n5vksRUA4q" role="2Oq$k0">
+            <node concept="1YBJjd" id="3n5vksRU_Zp" role="2Oq$k0">
+              <ref role="1YBMHb" node="1$baREjPqqo" resolve="stringLiteral" />
+            </node>
+            <node concept="3TrcHB" id="3n5vksRUAu5" role="2OqNvi">
+              <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
+            </node>
+          </node>
+          <node concept="17RlXB" id="3n5vksRUAX3" role="2OqNvi" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="1$baREjPsbm" role="3cqZAp">
         <node concept="3clFbS" id="1$baREjPsbn" role="3clFbx">
           <node concept="2MkqsV" id="1$baREjPt6b" role="3cqZAp">
