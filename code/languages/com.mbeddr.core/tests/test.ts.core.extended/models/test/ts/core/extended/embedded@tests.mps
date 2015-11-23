@@ -9,6 +9,7 @@
   <imports>
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
     <import index="e3eu" ref="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)" />
+    <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -201,8 +202,8 @@
                 <node concept="3V49S3" id="7pg8HYlqBkF" role="1_9fRO">
                   <ref role="3V49S0" node="7pg8HYlq_Vq" resolve="reg8" />
                   <node concept="7CXmI" id="7pg8HYlqC6G" role="lGtFl">
-                    <node concept="1TM$A" id="3YIXnYMRK8a" role="7EUXB">
-                      <node concept="2PYRI3" id="3YIXnYMRK8b" role="3lydEf">
+                    <node concept="1TM$A" id="3n5vksRQqE0" role="7EUXB">
+                      <node concept="2PYRI3" id="3n5vksRQqE1" role="3lydEf">
                         <ref role="39XzEq" to="e3eu:5W7baq$60md" />
                       </node>
                     </node>
@@ -223,8 +224,13 @@
                 <node concept="3ZVu4v" id="7pg8HYlqCtD" role="1_9fRO">
                   <ref role="3ZVs_2" node="7pg8HYlqC7o" resolve="a" />
                   <node concept="7CXmI" id="7pg8HYlqDlW" role="lGtFl">
-                    <node concept="1TM$A" id="3YIXnYMMk0s" role="7EUXB">
-                      <node concept="2PYRI3" id="3YIXnYMMk0t" role="3lydEf">
+                    <node concept="1TM$A" id="3n5vksRHRX9" role="7EUXB">
+                      <node concept="2PYRI3" id="3n5vksRHRXa" role="3lydEf">
+                        <ref role="39XzEq" to="p3tm:7d9zFs_$Rwp" />
+                      </node>
+                    </node>
+                    <node concept="1TM$A" id="3n5vksRHRXb" role="7EUXB">
+                      <node concept="2PYRI3" id="3n5vksRHRXc" role="3lydEf">
                         <ref role="39XzEq" to="e3eu:5W7baq$60md" />
                       </node>
                     </node>
