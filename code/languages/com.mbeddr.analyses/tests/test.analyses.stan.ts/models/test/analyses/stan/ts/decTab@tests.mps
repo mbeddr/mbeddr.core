@@ -12,17 +12,10 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
-        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
-      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
-      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
-        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
-      </concept>
-      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -179,9 +172,7 @@
                 <node concept="3TlMh9" id="4Bw8ULfNmwC" role="34rlYt">
                   <property role="2hmy$m" value="0" />
                 </node>
-                <node concept="7CXmI" id="4Bw8ULfNmwD" role="lGtFl">
-                  <node concept="1TM$A" id="4Bw8ULfNmwE" role="7EUXB" />
-                </node>
+                <node concept="7CXmI" id="4Bw8ULfNmwD" role="lGtFl" />
               </node>
             </node>
             <node concept="3XISUE" id="4Bw8ULfNm9i" role="3XIRFZ" />
@@ -235,13 +226,7 @@
                 <node concept="3TlMh9" id="4Bw8ULfNo9y" role="34rlYt">
                   <property role="2hmy$m" value="0" />
                 </node>
-                <node concept="7CXmI" id="4Bw8ULfNo9z" role="lGtFl">
-                  <node concept="1TM$A" id="4Bw8ULfNo9$" role="7EUXB">
-                    <node concept="2PYRI3" id="4Bw8ULfNo9_" role="3lydEf">
-                      <ref role="39XzEq" to="7q6a:4gj0Jzo2$3" />
-                    </node>
-                  </node>
-                </node>
+                <node concept="7CXmI" id="4Bw8ULfNo9z" role="lGtFl" />
               </node>
             </node>
             <node concept="3XISUE" id="4Bw8ULfNnDD" role="3XIRFZ" />

@@ -6,13 +6,22 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="6aju" ref="r:724cc566-d774-473f-8057-7531582dca82(com.mbeddr.analyses.base.typesystem)" />
+    <import index="cvx4" ref="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
@@ -62,7 +71,16 @@
         <property role="2l50Mm" value="false" />
         <property role="TrG5h" value="AC" />
         <node concept="7CXmI" id="YjU9tueOy8" role="lGtFl">
-          <node concept="1TM$A" id="YjU9tueOy9" role="7EUXB" />
+          <node concept="1TM$A" id="6qOUCDpMuoH" role="7EUXB">
+            <node concept="2PYRI3" id="6qOUCDpMuoI" role="3lydEf">
+              <ref role="39XzEq" to="6aju:4Q_gQO1RX2c" />
+            </node>
+          </node>
+          <node concept="1TM$A" id="6qOUCDpMuoJ" role="7EUXB">
+            <node concept="2PYRI3" id="6qOUCDpMuoK" role="3lydEf">
+              <ref role="39XzEq" to="cvx4:3i$cQqpw8n7" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
