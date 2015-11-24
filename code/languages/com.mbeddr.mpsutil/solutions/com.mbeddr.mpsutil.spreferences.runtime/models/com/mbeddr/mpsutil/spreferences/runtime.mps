@@ -54,6 +54,7 @@
     <import index="z1c4" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.project(MPS.Workbench/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -270,7 +271,6 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
-      <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
@@ -4086,42 +4086,36 @@
             </node>
           </node>
         </node>
-        <node concept="1QHqEM" id="2bnm$tmh5u2" role="3cqZAp">
-          <node concept="1QHqEC" id="2bnm$tmh5u4" role="1QHqEI">
-            <node concept="3clFbS" id="2bnm$tmh5u6" role="1bW5cS">
-              <node concept="3clFbF" id="2bnm$tmeK98" role="3cqZAp">
-                <node concept="2OqwBi" id="2bnm$tmfCzD" role="3clFbG">
-                  <node concept="2ShNRf" id="2bnm$tmeK96" role="2Oq$k0">
-                    <node concept="1pGfFk" id="2bnm$tmfC1C" role="2ShVmc">
-                      <ref role="37wK5l" to="k3nr:~MPSEditorOpener.&lt;init&gt;(com.intellij.openapi.project.Project)" resolve="MPSEditorOpener" />
-                      <node concept="2YIFZM" id="2bnm$tmfCpd" role="37wK5m">
-                        <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
-                        <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                        <node concept="37vLTw" id="2bnm$tmfCsB" role="37wK5m">
-                          <ref role="3cqZAo" node="4RbRvogcSVg" resolve="myProject" />
-                        </node>
-                      </node>
+        <node concept="3clFbF" id="6qOUCDpNoqD" role="3cqZAp">
+          <node concept="2OqwBi" id="6qOUCDpNOye" role="3clFbG">
+            <node concept="2OqwBi" id="6qOUCDpNS9P" role="2Oq$k0">
+              <node concept="2OqwBi" id="6qOUCDpNN31" role="2Oq$k0">
+                <node concept="2ShNRf" id="6qOUCDpNoqz" role="2Oq$k0">
+                  <node concept="1pGfFk" id="6qOUCDpNLVK" role="2ShVmc">
+                    <ref role="37wK5l" to="kz9k:~EditorNavigator.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="EditorNavigator" />
+                    <node concept="37vLTw" id="6qOUCDpNMY5" role="37wK5m">
+                      <ref role="3cqZAo" node="4RbRvogcSVg" resolve="myProject" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="2bnm$tmfCQ5" role="2OqNvi">
-                    <ref role="37wK5l" to="k3nr:~MPSEditorOpener.openNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.IOperationContext,boolean,boolean):jetbrains.mps.openapi.editor.Editor" resolve="openNode" />
-                    <node concept="37vLTw" id="2bnm$tmg4w4" role="37wK5m">
-                      <ref role="3cqZAo" node="2bnm$tmfQ$X" resolve="myNode" />
-                    </node>
-                    <node concept="2OqwBi" id="2bnm$tmg5cB" role="37wK5m">
-                      <node concept="37vLTw" id="2bnm$tmg4GO" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5aAhNV4cgl" resolve="nodeEditor" />
-                      </node>
-                      <node concept="liA8E" id="2bnm$tmg6w_" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                      </node>
-                    </node>
-                    <node concept="3clFbT" id="2bnm$tmg9p2" role="37wK5m">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="3clFbT" id="2bnm$tmgabD" role="37wK5m">
-                      <property role="3clFbU" value="false" />
-                    </node>
+                </node>
+                <node concept="liA8E" id="6qOUCDpNO5n" role="2OqNvi">
+                  <ref role="37wK5l" to="kz9k:~EditorNavigator.shallFocus(boolean):jetbrains.mps.openapi.navigation.EditorNavigator" resolve="shallFocus" />
+                  <node concept="3clFbT" id="6qOUCDpNOuV" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="6qOUCDpNSgd" role="2OqNvi">
+                <ref role="37wK5l" to="kz9k:~EditorNavigator.selectIfChild():jetbrains.mps.openapi.navigation.EditorNavigator" resolve="selectIfChild" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6qOUCDpNOF$" role="2OqNvi">
+              <ref role="37wK5l" to="kz9k:~EditorNavigator.open(org.jetbrains.mps.openapi.model.SNodeReference):void" resolve="open" />
+              <node concept="2ShNRf" id="6qOUCDpNP5p" role="37wK5m">
+                <node concept="1pGfFk" id="6qOUCDpNR9p" role="2ShVmc">
+                  <ref role="37wK5l" to="w1kc:~SNodePointer.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="SNodePointer" />
+                  <node concept="37vLTw" id="6qOUCDpNRU9" role="37wK5m">
+                    <ref role="3cqZAo" node="2bnm$tmfQ$X" resolve="myNode" />
                   </node>
                 </node>
               </node>
