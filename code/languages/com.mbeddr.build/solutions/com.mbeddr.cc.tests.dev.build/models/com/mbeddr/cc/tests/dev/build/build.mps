@@ -412,6 +412,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6qOUCDpMrFe" role="3bR37C">
+          <node concept="3bR9La" id="6qOUCDpMrFf" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">

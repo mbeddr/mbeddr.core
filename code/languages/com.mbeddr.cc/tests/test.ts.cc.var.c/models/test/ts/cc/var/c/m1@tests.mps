@@ -15,7 +15,9 @@
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
   </languages>
-  <imports />
+  <imports>
+    <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
@@ -327,7 +329,7 @@
           <node concept="3TlMh9" id="KDB3Gfg3iS" role="1cecVj">
             <property role="2hmy$m" value="10.33" />
             <node concept="7CXmI" id="KDB3Gfg3iT" role="lGtFl">
-              <node concept="2DdRWr" id="KDB3Gfg3iU" role="7EUXB" />
+              <node concept="2DdRWr" id="6qOUCDpMpQ7" role="7EUXB" />
             </node>
           </node>
         </node>
