@@ -172,7 +172,6 @@
                 <node concept="3TlMh9" id="4Bw8ULfNmwC" role="34rlYt">
                   <property role="2hmy$m" value="0" />
                 </node>
-                <node concept="7CXmI" id="4Bw8ULfNmwD" role="lGtFl" />
               </node>
             </node>
             <node concept="3XISUE" id="4Bw8ULfNm9i" role="3XIRFZ" />
@@ -226,7 +225,6 @@
                 <node concept="3TlMh9" id="4Bw8ULfNo9y" role="34rlYt">
                   <property role="2hmy$m" value="0" />
                 </node>
-                <node concept="7CXmI" id="4Bw8ULfNo9z" role="lGtFl" />
               </node>
             </node>
             <node concept="3XISUE" id="4Bw8ULfNnDD" role="3XIRFZ" />
