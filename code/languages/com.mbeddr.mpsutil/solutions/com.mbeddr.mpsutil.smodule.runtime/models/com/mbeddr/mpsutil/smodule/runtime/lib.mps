@@ -19,9 +19,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -168,6 +168,7 @@
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -902,32 +903,38 @@
             <node concept="10Nm6u" id="sa5eTsu85K" role="33vP2m" />
           </node>
         </node>
-        <node concept="1DcWWT" id="sa5eTsu7EQ" role="3cqZAp">
-          <node concept="3clFbS" id="sa5eTsu7ER" role="2LFqv$">
-            <node concept="3clFbF" id="sa5eTsu7ES" role="3cqZAp">
-              <node concept="37vLTI" id="sa5eTsu7ET" role="3clFbG">
-                <node concept="37vLTw" id="sa5eTsu7EU" role="37vLTx">
-                  <ref role="3cqZAo" node="sa5eTsu7EX" resolve="dummy" />
+        <node concept="1QHqEK" id="6hQmb$TzzBd" role="3cqZAp">
+          <node concept="1QHqEC" id="6hQmb$TzzBf" role="1QHqEI">
+            <node concept="3clFbS" id="6hQmb$TzzBh" role="1bW5cS">
+              <node concept="1DcWWT" id="sa5eTsu7EQ" role="3cqZAp">
+                <node concept="3clFbS" id="sa5eTsu7ER" role="2LFqv$">
+                  <node concept="3clFbF" id="sa5eTsu7ES" role="3cqZAp">
+                    <node concept="37vLTI" id="sa5eTsu7ET" role="3clFbG">
+                      <node concept="37vLTw" id="sa5eTsu7EU" role="37vLTx">
+                        <ref role="3cqZAo" node="sa5eTsu7EX" resolve="dummy" />
+                      </node>
+                      <node concept="37vLTw" id="sa5eTsu7Ff" role="37vLTJ">
+                        <ref role="3cqZAo" node="sa5eTsu7Fd" resolve="mr" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3zACq4" id="sa5eTsu7EW" role="3cqZAp" />
                 </node>
-                <node concept="37vLTw" id="sa5eTsu7Ff" role="37vLTJ">
-                  <ref role="3cqZAo" node="sa5eTsu7Fd" resolve="mr" />
+                <node concept="3cpWsn" id="sa5eTsu7EX" role="1Duv9x">
+                  <property role="TrG5h" value="dummy" />
+                  <node concept="3uibUv" id="sa5eTsu7EY" role="1tU5fm">
+                    <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="sa5eTsu7EZ" role="1DdaDG">
+                  <node concept="37vLTw" id="sa5eTsu7F6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="sa5eTsu7F4" resolve="module" />
+                  </node>
+                  <node concept="liA8E" id="sa5eTsu7F1" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
+                  </node>
                 </node>
               </node>
-            </node>
-            <node concept="3zACq4" id="sa5eTsu7EW" role="3cqZAp" />
-          </node>
-          <node concept="3cpWsn" id="sa5eTsu7EX" role="1Duv9x">
-            <property role="TrG5h" value="dummy" />
-            <node concept="3uibUv" id="sa5eTsu7EY" role="1tU5fm">
-              <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="sa5eTsu7EZ" role="1DdaDG">
-            <node concept="37vLTw" id="sa5eTsu7F6" role="2Oq$k0">
-              <ref role="3cqZAo" node="sa5eTsu7F4" resolve="module" />
-            </node>
-            <node concept="liA8E" id="sa5eTsu7F1" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~AbstractModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
             </node>
           </node>
         </node>
