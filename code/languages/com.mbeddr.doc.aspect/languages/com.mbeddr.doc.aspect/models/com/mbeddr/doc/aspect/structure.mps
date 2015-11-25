@@ -2,14 +2,14 @@
 <model ref="r:85fc9553-7d9a-4019-83cc-9f8169da83fb(com.mbeddr.doc.aspect.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -26,6 +26,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -55,6 +56,7 @@
   <node concept="1TIwiD" id="70oIz4ajg_1">
     <property role="TrG5h" value="ConceptDocumentation" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="2053489522" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="70oIz4ajhZh" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -71,6 +73,7 @@
   </node>
   <node concept="1TIwiD" id="UK_oBp_UIu">
     <property role="TrG5h" value="DocumentedConceptAnnotation" />
+    <property role="1pbfSe" value="397917913" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="UK_oBpA4EG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -91,6 +94,7 @@
   <node concept="1TIwiD" id="2UZ9O9PWChM">
     <property role="TrG5h" value="SampleInstanceWord" />
     <property role="34LRSv" value="\sample" />
+    <property role="1pbfSe" value="1531860044" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="2UZ9O9PWChP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
