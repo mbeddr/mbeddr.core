@@ -332,6 +332,18 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6qOUCDpMuCZ" role="3bR37C">
+          <node concept="3bR9La" id="6qOUCDpMuD0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:4gFRqcy1Vdg" resolve="com.mbeddr.analyses.cbmc.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6qOUCDpMuD1" role="3bR37C">
+          <node concept="3bR9La" id="6qOUCDpMuD2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7eF9rfAuFwr" resolve="com.mbeddr.analyses.cbmc" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5Lx3sEEsJEw" role="2G$12L">
         <property role="BnDLt" value="true" />

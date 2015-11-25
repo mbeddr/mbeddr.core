@@ -18,6 +18,7 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -109,13 +110,16 @@
         <node concept="3GEVxB" id="7CSU6RRUA5Z" role="2OODSX">
           <ref role="3GEb4d" node="7CSU6RRUA4J" resolve="aVerificationOnlyModule" />
           <node concept="7CXmI" id="7CSU6RRUA6k" role="lGtFl">
-            <node concept="1TM$A" id="3YIXnYN1Zzj" role="7EUXB">
-              <node concept="2PYRI3" id="3YIXnYN1Zzk" role="3lydEf">
+            <node concept="1TM$A" id="6qOUCDpMQrm" role="7EUXB">
+              <node concept="2PYRI3" id="6qOUCDpMQrn" role="3lydEf">
                 <ref role="39XzEq" to="9zoj:7XSydrbDje" />
               </node>
             </node>
           </node>
         </node>
+      </node>
+      <node concept="7CXmI" id="6qOUCDpMTxj" role="lGtFl">
+        <node concept="7OXhh" id="6qOUCDpMTxm" role="7EUXB" />
       </node>
     </node>
   </node>
