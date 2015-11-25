@@ -1136,24 +1136,40 @@
           </node>
         </node>
         <node concept="3clFbH" id="5x8vmjSDisb" role="3cqZAp" />
-        <node concept="3clFbF" id="5x8vmjSDisc" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDisd" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDivn" resolve="enableContextSidebarTool" />
+        <node concept="3SKdUt" id="SgBekEwO4r" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwO4s" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDisc" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDisd" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDivn" resolve="enableContextSidebarTool" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5x8vmjSDise" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDisf" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDiu$" resolve="attachToAllOpenEditors" />
+        <node concept="3SKdUt" id="SgBekEwO77" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwO78" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDise" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDisf" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDiu$" resolve="attachToAllOpenEditors" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5x8vmjSDisg" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDish" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDitO" resolve="connectEditorMessageBus" />
+        <node concept="3SKdUt" id="SgBekEwO9Q" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwO9R" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDisg" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDish" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDitO" resolve="connectEditorMessageBus" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5x8vmjSDisi" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDisj" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDirv" resolve="register" />
+        <node concept="3SKdUt" id="SgBekEwOaY" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwOaZ" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDisi" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDisj" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDirv" resolve="register" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1167,24 +1183,40 @@
       <node concept="3Tm1VV" id="5x8vmjSDism" role="1B3o_S" />
       <node concept="3cqZAl" id="5x8vmjSDisn" role="3clF45" />
       <node concept="3clFbS" id="5x8vmjSDiso" role="3clF47">
-        <node concept="3clFbF" id="5x8vmjSDisp" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDisq" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDirF" resolve="unregister" />
+        <node concept="3SKdUt" id="SgBekEwOe0" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwOe1" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDisp" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDisq" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDirF" resolve="unregister" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5x8vmjSDisr" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDiss" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDiui" resolve="disconnectEditorMessageBus" />
+        <node concept="3SKdUt" id="SgBekEwOeU" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwOeV" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDisr" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDiss" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDiui" resolve="disconnectEditorMessageBus" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5x8vmjSDist" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDisu" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDiuX" resolve="detachFromAllOpenEditors" />
+        <node concept="3SKdUt" id="SgBekEwOhq" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwOhr" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDist" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDisu" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDiuX" resolve="detachFromAllOpenEditors" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5x8vmjSDisv" role="3cqZAp">
-          <node concept="1rXfSq" id="5x8vmjSDisw" role="3clFbG">
-            <ref role="37wK5l" node="5x8vmjSDivC" resolve="disableContextSidebarTool" />
+        <node concept="3SKdUt" id="SgBekEwOis" role="3cqZAp">
+          <node concept="3SKWN0" id="SgBekEwOit" role="3SKWNk">
+            <node concept="3clFbF" id="5x8vmjSDisv" role="3SKWNf">
+              <node concept="1rXfSq" id="5x8vmjSDisw" role="3clFbG">
+                <ref role="37wK5l" node="5x8vmjSDivC" resolve="disableContextSidebarTool" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="5x8vmjSDisx" role="3cqZAp" />
