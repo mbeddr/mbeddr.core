@@ -12,6 +12,7 @@
   <imports>
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
     <import index="aem4" ref="r:6c0b77b6-881f-476d-bc54-25e7cf0f8740(com.mbeddr.mpsutil.interpreter.test.typesystem)" />
+    <import index="wayc" ref="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -25,12 +26,16 @@
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="7691029917083831655" name="jetbrains.mps.lang.test.structure.UnknownRuleReference" flags="ng" index="2u4KIi" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
+      <concept id="8333855927540283103" name="jetbrains.mps.lang.test.structure.NodeConstraintsErrorCheckOperation" flags="ng" index="39XrGg">
+        <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -241,8 +246,8 @@
                   </node>
                 </node>
                 <node concept="7CXmI" id="3lIakVHn6je" role="lGtFl">
-                  <node concept="1TM$A" id="3YIXnYMFyZJ" role="7EUXB">
-                    <node concept="2PYRI3" id="3YIXnYMFyZK" role="3lydEf">
+                  <node concept="1TM$A" id="3n5vksRPJra" role="7EUXB">
+                    <node concept="2PYRI3" id="3n5vksRPJrb" role="3lydEf">
                       <ref role="39XzEq" to="aem4:65E6xpGTQ2M" />
                     </node>
                   </node>
@@ -342,8 +347,8 @@
                   </node>
                 </node>
                 <node concept="7CXmI" id="3lIakVHn9T0" role="lGtFl">
-                  <node concept="1TM$A" id="3YIXnYMOYlY" role="7EUXB">
-                    <node concept="2PYRI3" id="3YIXnYMOYlZ" role="3lydEf">
+                  <node concept="1TM$A" id="3n5vksROxDs" role="7EUXB">
+                    <node concept="2PYRI3" id="3n5vksROxDt" role="3lydEf">
                       <ref role="39XzEq" to="aem4:65E6xpGTQ2M" />
                     </node>
                   </node>
@@ -400,9 +405,14 @@
                   </node>
                 </node>
                 <node concept="7CXmI" id="3lIakVHna7V" role="lGtFl">
-                  <node concept="1TM$A" id="3YIXnYMLvJK" role="7EUXB">
-                    <node concept="2PYRI3" id="3YIXnYMLvJL" role="3lydEf">
+                  <node concept="1TM$A" id="3n5vksRQdJk" role="7EUXB">
+                    <node concept="2PYRI3" id="3n5vksRQdJl" role="3lydEf">
                       <ref role="39XzEq" to="aem4:65E6xpGTQ2M" />
+                    </node>
+                  </node>
+                  <node concept="39XrGg" id="3n5vksRQdJm" role="7EUXB">
+                    <node concept="2u4KIi" id="3n5vksRQdJn" role="39rjcI">
+                      <ref role="39XzEq" to="wayc:3wl2bMU44vZ" />
                     </node>
                   </node>
                 </node>
@@ -507,8 +517,8 @@
                   </node>
                 </node>
                 <node concept="7CXmI" id="3lIakVHnasA" role="lGtFl">
-                  <node concept="1TM$A" id="3YIXnYMMdX8" role="7EUXB">
-                    <node concept="2PYRI3" id="3YIXnYMMdX9" role="3lydEf">
+                  <node concept="1TM$A" id="3n5vksRIOYX" role="7EUXB">
+                    <node concept="2PYRI3" id="3n5vksRIOYY" role="3lydEf">
                       <ref role="39XzEq" to="aem4:65E6xpGTQ2M" />
                     </node>
                   </node>
@@ -624,8 +634,8 @@
                   </node>
                 </node>
                 <node concept="7CXmI" id="3lIakVHnaZR" role="lGtFl">
-                  <node concept="1TM$A" id="3YIXnYMS9g9" role="7EUXB">
-                    <node concept="2PYRI3" id="3YIXnYMS9ga" role="3lydEf">
+                  <node concept="1TM$A" id="3n5vksRJht2" role="7EUXB">
+                    <node concept="2PYRI3" id="3n5vksRJht3" role="3lydEf">
                       <ref role="39XzEq" to="aem4:65E6xpGTQ2M" />
                     </node>
                   </node>
