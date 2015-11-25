@@ -170,6 +170,10 @@
     <property role="TrG5h" value="PatternBuilderNode" />
     <property role="1pbfSe" value="881211720" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyi" id="5sAZ2ylKpoR" role="1TKVEl">
+      <property role="TrG5h" value="exact" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="4IP40Bi2KcV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="values" />
@@ -283,6 +287,26 @@
     </node>
     <node concept="PrWs8" id="$WtIWn_nVJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mypyst6kZC">
+    <property role="1pbfSe" value="1656469007" />
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="NullLiteral" />
+    <property role="34LRSv" value="null" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="4mypyst6kZD" role="PzmwI">
+      <ref role="PrY4T" node="53_zXRSI6_" resolve="IPatternContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mypyst6kZG">
+    <property role="1pbfSe" value="1656469011" />
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="NotNullLiteral" />
+    <property role="34LRSv" value="notnull" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="4mypyst6kZH" role="PzmwI">
+      <ref role="PrY4T" node="53_zXRSI6_" resolve="IPatternContext" />
     </node>
   </node>
 </model>

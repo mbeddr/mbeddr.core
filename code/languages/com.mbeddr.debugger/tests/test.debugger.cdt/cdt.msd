@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.debugger.cdt" uuid="1c78eae5-6fae-4ae8-a6f2-8a34ea9ab06f" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.debugger.cdt" uuid="1c78eae5-6fae-4ae8-a6f2-8a34ea9ab06f" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -23,5 +23,13 @@
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" fqName="jetbrains.mps.lang.test" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="85d9f97b-1654-4692-b61c-fcc40db03653(Eclipse.Debugger)" version="0" />
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="1c78eae5-6fae-4ae8-a6f2-8a34ea9ab06f(test.debugger.cdt)" version="0" />
+  </dependencyVersions>
 </solution>
 

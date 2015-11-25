@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.concurrency" uuid="1150a9b6-68b1-44b7-a7e5-cba98fe879c1" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.ext.concurrency" uuid="1150a9b6-68b1-44b7-a7e5-cba98fe879c1" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -55,5 +55,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="1150a9b6-68b1-44b7-a7e5-cba98fe879c1(test.ts.ext.concurrency)" version="0" />
+  </dependencyVersions>
 </solution>
 

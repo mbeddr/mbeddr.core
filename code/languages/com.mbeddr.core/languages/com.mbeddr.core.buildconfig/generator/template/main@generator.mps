@@ -1135,13 +1135,16 @@
         </node>
       </node>
     </node>
-    <node concept="3O_Fa1" id="6GqYvBOfomM" role="12RR68">
-      <property role="3O_Fa2" value="$(ODIR)/%.o" />
-      <node concept="3O_FaX" id="5IYyAOzC6ZV" role="3O_FaS">
-        <node concept="3G69iQ" id="5IYyAOzC6ZX" role="3G69ia">
-          <property role="3G69iL" value="&#9;mkdir -p $(ODIR)" />
+    <node concept="3O_Fa1" id="7x67PKvS1CN" role="12RR68">
+      <property role="3O_Fa2" value="$(ODIR)" />
+      <node concept="3O_FaX" id="7x67PKvS8aP" role="3O_FaS">
+        <node concept="3G69iQ" id="7x67PKvS8aV" role="3G69ia">
+          <property role="3G69iL" value="mkdir -p $(ODIR)" />
         </node>
       </node>
+    </node>
+    <node concept="3O_Fa1" id="6GqYvBOfomM" role="12RR68">
+      <property role="3O_Fa2" value="$(ODIR)/%.o" />
       <node concept="3O_FaX" id="6GqYvBOfomN" role="3O_FaS">
         <node concept="3G69iQ" id="4oh1JoZ_v52" role="3G69ia">
           <property role="3G69iL" value="$(CC) $(CFLAGS)" />
@@ -1302,14 +1305,12 @@
       <node concept="3O_EAZ" id="6GqYvBOfqY8" role="3O_FaZ">
         <property role="3O_EAS" value="%.c" />
       </node>
+      <node concept="2sLwDE" id="7x67PKvV4J7" role="3O_FaZ">
+        <ref role="2sLwDD" node="7x67PKvS1CN" />
+      </node>
     </node>
     <node concept="3O_Fa1" id="30nrkhNTMuJ" role="12RR68">
       <property role="3O_Fa2" value="$(ODIR)/%.o" />
-      <node concept="3O_FaX" id="30nrkhNTMuK" role="3O_FaS">
-        <node concept="3G69iQ" id="30nrkhNTMuL" role="3G69ia">
-          <property role="3G69iL" value="&#9;mkdir -p $(ODIR)" />
-        </node>
-      </node>
       <node concept="3O_FaX" id="30nrkhNTMuM" role="3O_FaS">
         <node concept="3G69iQ" id="30nrkhNTMuN" role="3G69ia">
           <property role="3G69iL" value="$(CC) $(CFLAGS)" />
@@ -1469,6 +1470,9 @@
       </node>
       <node concept="3O_EAZ" id="30nrkhNTMvN" role="3O_FaZ">
         <property role="3O_EAS" value="%.cpp" />
+      </node>
+      <node concept="2sLwDE" id="7x67PKvV53W" role="3O_FaZ">
+        <ref role="2sLwDD" node="7x67PKvS1CN" />
       </node>
     </node>
     <node concept="3O_Fa1" id="2nSRgleEQqp" role="12RR68">

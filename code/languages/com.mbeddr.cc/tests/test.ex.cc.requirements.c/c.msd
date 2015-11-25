@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ex.cc.requirements.c" uuid="573b21f7-42a0-49fb-9b0f-c30c63a6ba81" compileInMPS="true">
+<solution name="test.ex.cc.requirements.c" uuid="573b21f7-42a0-49fb-9b0f-c30c63a6ba81" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -47,5 +47,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="573b21f7-42a0-49fb-9b0f-c30c63a6ba81(test.ex.cc.requirements.c)" version="0" />
+  </dependencyVersions>
 </solution>
 

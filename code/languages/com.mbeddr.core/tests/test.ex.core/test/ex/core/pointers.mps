@@ -27,7 +27,7 @@
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
         <child id="3830958861296879115" name="items" index="19_wF2" />
-        <child id="6275956088646286745" name="dummyType" index="3YFD5m" />
+        <child id="6275956088646286745" name="type" index="3YFD5m" />
       </concept>
       <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
         <child id="8850915533694634146" name="elements" index="3o3WLE" />
@@ -86,6 +86,7 @@
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
         <child id="6282313788306893059" name="index" index="2wJmCp" />
       </concept>
+      <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
         <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
@@ -1038,6 +1039,9 @@
       </node>
       <node concept="2v9HqM" id="6Pt2vx4_5o1" role="2eOfOg">
         <ref role="2v9HqP" node="6Pt2vx4_4hM" resolve="string" />
+      </node>
+      <node concept="2v9HqM" id="2W1GNPB4rei" role="2eOfOg">
+        <ref role="2v9HqP" node="2W1GNPB4nJt" resolve="SignalHandler" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgvT" role="2Q9xDr">
@@ -6368,6 +6372,236 @@
     </node>
     <node concept="rcWE1" id="6Pt2vx4_4hN" role="rcWEr">
       <property role="rcWEL" value="&lt;string.h&gt;" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="2W1GNPB4nJt">
+    <property role="TrG5h" value="SignalHandler" />
+    <node concept="rcJHK" id="2W1GNPB4nJu" role="N3F5h">
+      <property role="TrG5h" value="SignalHandler" />
+      <node concept="pFrBc" id="2W1GNPB4nJD" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="26Vqph" id="2W1GNPB4nMu" role="pFrBa">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19Rifw" id="2W1GNPB4nK0" role="pFrBb">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="rcJHK" id="2W1GNPB4nWs" role="N3F5h">
+      <property role="TrG5h" value="SignalType" />
+      <node concept="pFrBc" id="2W1GNPB4nX5" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="26Vqph" id="2W1GNPB4nYx" role="pFrBa">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="rcJHQ" id="2W1GNPB4nZt" role="pFrBa">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="2W1GNPB4nJu" resolve="SignalHandler" />
+        </node>
+        <node concept="rcJHQ" id="2W1GNPB4nXs" role="pFrBb">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="2W1GNPB4nJu" resolve="SignalHandler" />
+        </node>
+      </node>
+    </node>
+    <node concept="rcJHK" id="2W1GNPBae$f" role="N3F5h">
+      <property role="TrG5h" value="ExpandedSignalType" />
+      <node concept="pFrBc" id="2W1GNPBaeNc" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="26Vqph" id="2W1GNPBaePe" role="pFrBa">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="pFrBc" id="2W1GNPBaeQQ" role="pFrBa">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqph" id="2W1GNPBaeQR" role="pFrBa">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="19Rifw" id="2W1GNPBaeQS" role="pFrBb">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="pFrBc" id="2W1GNPBaeNz" role="pFrBb">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqph" id="2W1GNPBaeN$" role="pFrBa">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="19Rifw" id="2W1GNPBaeN_" role="pFrBb">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2W1GNPBaels" role="N3F5h">
+      <property role="TrG5h" value="empty_1445350269212_9" />
+    </node>
+    <node concept="1S7NMz" id="2W1GNPB4oH0" role="N3F5h">
+      <property role="TrG5h" value="signal2" />
+      <node concept="rcJHQ" id="2W1GNPB4oGY" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="rcJHT" node="2W1GNPB4nWs" resolve="SignalType" />
+      </node>
+      <node concept="pF0ck" id="2W1GNPB4oPy" role="1cecVj">
+        <ref role="pF0ci" node="2W1GNPB4nQe" resolve="signal1" />
+      </node>
+    </node>
+    <node concept="N3Fnx" id="2W1GNPB4nQe" role="N3F5h">
+      <property role="TrG5h" value="signal1" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="2W1GNPB4nQg" role="3XIRFX">
+        <node concept="2BFjQ_" id="2W1GNPB4oEQ" role="3XIRFZ">
+          <node concept="Ea8Gl" id="2W1GNPB4oFS" role="2BFjQA" />
+        </node>
+      </node>
+      <node concept="rcJHQ" id="2W1GNPB4nNg" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="rcJHT" node="2W1GNPB4nJu" resolve="SignalHandler" />
+      </node>
+      <node concept="19RgSI" id="2W1GNPB4nRp" role="1UOdpc">
+        <property role="TrG5h" value="signum" />
+        <node concept="26Vqph" id="2W1GNPB4nRo" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="2W1GNPB4nTs" role="1UOdpc">
+        <property role="TrG5h" value="handler" />
+        <node concept="rcJHQ" id="2W1GNPB4nTq" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="2W1GNPB4nJu" resolve="SignalHandler" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2W1GNPB4p12" role="N3F5h">
+      <property role="TrG5h" value="empty_1445349712747_7" />
+    </node>
+    <node concept="N3Fnx" id="2W1GNPB4pd8" role="N3F5h">
+      <property role="TrG5h" value="check" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="2W1GNPB4pda" role="3XIRFX">
+        <node concept="1_9egQ" id="2W1GNPB4phq" role="3XIRFZ">
+          <node concept="pF6TQ" id="2W1GNPB4plD" role="1_9egR">
+            <node concept="1S8S4T" id="2W1GNPB4phl" role="pF6TP">
+              <node concept="2BPB98" id="2W1GNPB4phm" role="1S8S4V">
+                <node concept="1S7827" id="2W1GNPB4pjw" role="1_9fRO">
+                  <ref role="1S7826" node="2W1GNPB4oH0" resolve="signal2" />
+                </node>
+              </node>
+              <node concept="rcJHQ" id="2W1GNPB4phG" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="rcJHT" node="2W1GNPB4nWs" resolve="SignalType" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="2W1GNPB4pql" role="pFKh$">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="Ea8Gl" id="2W1GNPB4p$L" role="pFKh$" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="2W1GNPB4pFn" role="3XIRFZ">
+          <node concept="pF6TQ" id="2W1GNPB4pI_" role="1_9egR">
+            <node concept="1S8S4T" id="2W1GNPB4pFi" role="pF6TP">
+              <node concept="2BPB98" id="2W1GNPB4pFj" role="1S8S4V">
+                <node concept="1S7827" id="2W1GNPB4pHA" role="1_9fRO">
+                  <ref role="1S7826" node="2W1GNPB4oH0" resolve="signal2" />
+                </node>
+              </node>
+              <node concept="pFrBc" id="2W1GNPB4pFT" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <node concept="26Vqph" id="2W1GNPB4pFU" role="pFrBa">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+                <node concept="rcJHQ" id="2W1GNPB4pFV" role="pFrBa">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <ref role="rcJHT" node="2W1GNPB4nJu" resolve="SignalHandler" />
+                </node>
+                <node concept="rcJHQ" id="2W1GNPB4pFW" role="pFrBb">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <ref role="rcJHT" node="2W1GNPB4nJu" resolve="SignalHandler" />
+                </node>
+              </node>
+            </node>
+            <node concept="3TlMh9" id="2W1GNPB4pRf" role="pFKh$">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="Ea8Gl" id="2W1GNPB4q6L" role="pFKh$" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="2W1GNPB4qfP" role="3XIRFZ">
+          <node concept="pF6TQ" id="2W1GNPB4qfQ" role="1_9egR">
+            <node concept="1S8S4T" id="2W1GNPB4qfR" role="pF6TP">
+              <node concept="2BPB98" id="2W1GNPB4qfS" role="1S8S4V">
+                <node concept="1S7827" id="2W1GNPB4qfT" role="1_9fRO">
+                  <ref role="1S7826" node="2W1GNPB4oH0" resolve="signal2" />
+                </node>
+              </node>
+              <node concept="pFrBc" id="2W1GNPB4qfU" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <node concept="26Vqph" id="2W1GNPB4qfV" role="pFrBa">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+                <node concept="pFrBc" id="2W1GNPB4qkK" role="pFrBa">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <node concept="19Rifw" id="2W1GNPB4qvC" role="pFrBb">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                  <node concept="26Vqph" id="2W1GNPB4qEq" role="pFrBa">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                </node>
+                <node concept="pFrBc" id="2W1GNPB4r1u" role="pFrBb">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <node concept="19Rifw" id="2W1GNPB4r1v" role="pFrBb">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                  <node concept="26Vqph" id="2W1GNPB4r1w" role="pFrBa">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TlMh9" id="2W1GNPB4qfY" role="pFKh$">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="Ea8Gl" id="2W1GNPB4qfZ" role="pFKh$" />
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="2W1GNPB4p8Q" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
     </node>
   </node>
 </model>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.richstring" uuid="9dc1a5e9-95eb-4eda-9aa7-fa55c4ee8c31" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.richstring" uuid="9dc1a5e9-95eb-4eda-9aa7-fa55c4ee8c31" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -23,5 +23,9 @@
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" fqName="jetbrains.mps.lang.test" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="9dc1a5e9-95eb-4eda-9aa7-fa55c4ee8c31(test.ts.richstring)" version="0" />
+  </dependencyVersions>
 </solution>
 

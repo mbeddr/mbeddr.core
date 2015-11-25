@@ -12,6 +12,7 @@
           <param name="LevelMax" value="TRACE"/>
       </filter>
   </appender>
+  
 
   <appender name="CONSOLE-DEBUG" class="org.apache.log4j.ConsoleAppender">
       <param name="follow" value="true"/>
@@ -116,7 +117,8 @@
     <priority value="INFO"/>
     <appender-ref ref="CONSOLE-INFO"/>
   </category>
-  <category name="jetbrains.mps.library" additivity="true">
+  
+  <!--<category name="jetbrains.mps.library" additivity="true">
     <priority value="TRACE"/>
     <appender-ref ref="CONSOLE-TRACE"/>
     <appender-ref ref="CONSOLE-DEBUG"/>
@@ -125,7 +127,7 @@
 	<priority value="TRACE"/>
 	<appender-ref ref="CONSOLE-TRACE"/>
 	<appender-ref ref="CONSOLE-DEBUG"/>
-  </category>
+  </category>-->
   <category name="#com.intellij" additivity="false">
       <priority value="WARN"/>
       <appender-ref ref="CONSOLE-WARN"/>

@@ -38,6 +38,7 @@
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util()" />
     <import index="b3bi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.impl.cellActions(MPS.Editor/)" />
+    <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
@@ -281,6 +282,9 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -301,7 +305,10 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+        <child id="8465538089690917625" name="param" index="TUOzN" />
+      </concept>
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -3370,44 +3377,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="6o2p2Z0FKb_" role="13h7CS">
-      <property role="TrG5h" value="requiresSpecialTextGenLogic" />
-      <property role="13i0it" value="true" />
-      <node concept="3Tm1VV" id="6o2p2Z0FKbA" role="1B3o_S" />
-      <node concept="10P_77" id="6o2p2Z0FMtx" role="3clF45" />
-      <node concept="3clFbS" id="6o2p2Z0FKbC" role="3clF47">
-        <node concept="3clFbF" id="6o2p2Z0FNgl" role="3cqZAp">
-          <node concept="3clFbT" id="6o2p2Z0FNgk" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="6o2p2Z0FNgN" role="13h7CS">
-      <property role="TrG5h" value="createSpecialTextGenString" />
-      <property role="13i0it" value="true" />
-      <node concept="3Tm1VV" id="6o2p2Z0FNgO" role="1B3o_S" />
-      <node concept="A3Dl8" id="6o2p2Z0JdAQ" role="3clF45">
-        <node concept="3uibUv" id="6o2p2Z0Jevh" role="A3Ik2">
-          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="6o2p2Z0FNgQ" role="3clF47">
-        <node concept="3clFbF" id="6o2p2Z0FO$L" role="3cqZAp">
-          <node concept="2ShNRf" id="6o2p2Z0JfNx" role="3clFbG">
-            <node concept="Tc6Ow" id="6o2p2Z0JmIj" role="2ShVmc">
-              <node concept="3uibUv" id="6o2p2Z0JnXy" role="HW$YZ">
-                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6o2p2Z0FO$i" role="3clF46">
-        <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="6o2p2Z0FO$h" role="1tU5fm" />
-      </node>
-    </node>
     <node concept="13i0hz" id="1PWW75unXc0" role="13h7CS">
       <property role="TrG5h" value="isSubtypeOf" />
       <node concept="3Tm1VV" id="1PWW75unXc1" role="1B3o_S" />
@@ -3449,6 +3418,67 @@
             <property role="3clFbU" value="true" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="29BUUxcmPiw" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getToken" />
+      <ref role="13i0hy" node="6AaN29SvfIf" resolve="getToken" />
+      <node concept="3Tm1VV" id="29BUUxcmPix" role="1B3o_S" />
+      <node concept="3clFbS" id="29BUUxcmPiA" role="3clF47">
+        <node concept="3cpWs6" id="29BUUxcmPJ9" role="3cqZAp">
+          <node concept="2OqwBi" id="nSuNKi8ENI" role="3cqZAk">
+            <node concept="2OqwBi" id="nSuNKi8F1l" role="2Oq$k0">
+              <node concept="2OqwBi" id="nSuNKi8EiU" role="2Oq$k0">
+                <node concept="2ShNRf" id="nSuNKi8DV3" role="2Oq$k0">
+                  <node concept="1pGfFk" id="nSuNKi8DV4" role="2ShVmc">
+                    <ref role="37wK5l" to="iq8l:1YPL71Ylnlc" resolve="CompositeToken" />
+                    <node concept="Rm8GO" id="nSuNKi8DV5" role="37wK5m">
+                      <ref role="1Px2BO" to="iq8l:1YPL71YmUJE" resolve="TypeKind" />
+                      <ref role="Rm8GQ" to="iq8l:1YPL71YmUJW" resolve="NONE" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="nSuNKi8EH7" role="2OqNvi">
+                  <ref role="37wK5l" to="iq8l:1YPL71Yln2O" resolve="add" />
+                  <node concept="2ShNRf" id="nSuNKi8EJW" role="37wK5m">
+                    <node concept="1pGfFk" id="nSuNKi8EJX" role="2ShVmc">
+                      <ref role="37wK5l" to="iq8l:1YPL71YlrIu" resolve="AtomicToken" />
+                      <node concept="13iPFW" id="nSuNKi8EJY" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="nSuNKi8F7x" role="2OqNvi">
+                <ref role="37wK5l" to="iq8l:1YPL71Yln2O" resolve="add" />
+                <node concept="2ShNRf" id="nSuNKi8FaZ" role="37wK5m">
+                  <node concept="1pGfFk" id="nSuNKi8Fb0" role="2ShVmc">
+                    <ref role="37wK5l" to="iq8l:1YPL71YlrIu" resolve="AtomicToken" />
+                    <node concept="Xl_RD" id="nSuNKi8Fb1" role="37wK5m">
+                      <property role="Xl_RC" value=" " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="nSuNKi8ETT" role="2OqNvi">
+              <ref role="37wK5l" to="iq8l:1YPL71Yln2O" resolve="add" />
+              <node concept="37vLTw" id="nSuNKi8EXb" role="37wK5m">
+                <ref role="3cqZAo" node="29BUUxcmPiB" resolve="child" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="29BUUxcmPiB" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3uibUv" id="29BUUxcmPiC" role="1tU5fm">
+          <ref role="3uigEE" to="iq8l:1YPL71YljyH" resolve="IToken" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="29BUUxcmPiD" role="3clF45">
+        <ref role="3uigEE" to="iq8l:1YPL71YljyH" resolve="IToken" />
       </node>
     </node>
   </node>
@@ -20035,6 +20065,7 @@
         </node>
         <node concept="sxT6M" id="7x2kTsyKNZF" role="3cqZAp">
           <property role="sxT66" value="role" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="7x2kTsyKOaZ" role="sxT64">
             <ref role="3cqZAo" node="7x2kTsyFCcX" resolve="role" />
           </node>
@@ -20053,12 +20084,14 @@
         </node>
         <node concept="sxT6M" id="7x2kTsyLHet" role="3cqZAp">
           <property role="sxT66" value="expr" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="7x2kTsyLHpH" role="sxT64">
             <ref role="3cqZAo" node="3bfDwHbRG77" resolve="expr" />
           </node>
         </node>
         <node concept="sxT6M" id="7x2kTsyLHvA" role="3cqZAp">
           <property role="sxT66" value="expr.copy" />
+          <property role="3ahEGn" value="true" />
           <node concept="2OqwBi" id="7x2kTsyLHNS" role="sxT64">
             <node concept="37vLTw" id="7x2kTsyLHvB" role="2Oq$k0">
               <ref role="3cqZAo" node="3bfDwHbRG77" resolve="expr" />
@@ -20068,12 +20101,14 @@
         </node>
         <node concept="sxT6M" id="7x2kTsyOER0" role="3cqZAp">
           <property role="sxT66" value="instance" />
+          <property role="3ahEGn" value="true" />
           <node concept="37vLTw" id="7x2kTsyOFqE" role="sxT64">
             <ref role="3cqZAo" node="3bfDwHbRK4y" resolve="instance" />
           </node>
         </node>
         <node concept="sxT6M" id="7x2kTsyRirU" role="3cqZAp">
           <property role="sxT66" value="instance.parent" />
+          <property role="3ahEGn" value="true" />
           <node concept="2OqwBi" id="7x2kTsyRjcO" role="sxT64">
             <node concept="37vLTw" id="7x2kTsyRj7Y" role="2Oq$k0">
               <ref role="3cqZAo" node="3bfDwHbRK4y" resolve="instance" />
@@ -21871,6 +21906,45 @@
     </node>
     <node concept="13hLZK" id="6LsWDiKtk_n" role="13h7CW">
       <node concept="3clFbS" id="6LsWDiKtk_o" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6AaN29SvfIc">
+    <property role="3GE5qa" value="types" />
+    <ref role="13h7C2" to="mj1l:6AaN29SvfIb" resolve="ITypeTextGenContext" />
+    <node concept="13i0hz" id="6AaN29SvfIf" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getToken" />
+      <node concept="3Tm1VV" id="6AaN29SvfIg" role="1B3o_S" />
+      <node concept="3uibUv" id="6AaN29SvhHc" role="3clF45">
+        <ref role="3uigEE" to="iq8l:1YPL71YljyH" resolve="IToken" />
+      </node>
+      <node concept="3clFbS" id="6AaN29SvfIi" role="3clF47" />
+      <node concept="37vLTG" id="6AaN29SvigP" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3uibUv" id="6AaN29SvigO" role="1tU5fm">
+          <ref role="3uigEE" to="iq8l:1YPL71YljyH" resolve="IToken" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="2W1GNPBd9e2" role="lGtFl">
+        <node concept="TZ5HA" id="2W1GNPBd9e3" role="TZ5H$">
+          <node concept="1dT_AC" id="2W1GNPBd9e4" role="1dT_Ay">
+            <property role="1dT_AB" value="Produces the text gen stream while reversing the containment hierarchy of the special types. " />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2W1GNPBd9e5" role="TUOzN">
+          <property role="TUZQ4" value="the child token that was produced by the type's parent" />
+          <node concept="zr_55" id="2W1GNPBd9e7" role="zr_5Q">
+            <ref role="zr_51" node="6AaN29SvigP" resolve="child" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2W1GNPBd9e8" role="x79VK">
+          <property role="x79VB" value="the parent token that belongs to this type" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="6AaN29SvfId" role="13h7CW">
+      <node concept="3clFbS" id="6AaN29SvfIe" role="2VODD2" />
     </node>
   </node>
 </model>

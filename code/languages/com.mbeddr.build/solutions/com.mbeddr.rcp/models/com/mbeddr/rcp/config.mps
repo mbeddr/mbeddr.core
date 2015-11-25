@@ -134,7 +134,6 @@
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
-        <child id="6108265972537335222" name="welcomeSlogan" index="2EtnoZ" />
         <child id="6108265972537335245" name="updateWebsite" index="2Etnp4" />
         <child id="6108265972537372847" name="shortName" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
@@ -143,7 +142,6 @@
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
-        <child id="7753544965996489990" name="welcomeCaption" index="1zDKOn" />
       </concept>
       <concept id="7753544965996489991" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingUpdateSite" flags="ng" index="1zDKOm">
         <child id="6108265972537335225" name="updateUrl" index="2EtnoK" />
@@ -156,6 +154,9 @@
     <property role="TrG5h" value="rcp" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
     <property role="turDy" value="build-mbeddr-distrib.xml" />
+    <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -173,11 +174,14 @@
     <node concept="2sgV4H" id="5N2iUpkaTtb" role="1l3spa">
       <ref role="1l3spb" to="xsd6:5qO$P$PtiTw" resolve="com.mbeddr.allInOne" />
       <node concept="398BVA" id="5kaST7qEwe1" role="2JcizS">
-        <ref role="398BVh" node="5kaST7qEwdo" resolve="mbeddr.allInOne.artifacts" />
+        <ref role="398BVh" node="3AVJcIMlF95" resolve="artifacts.allInOne" />
       </node>
     </node>
     <node concept="2sgV4H" id="505a8HIkc9N" role="1l3spa">
       <ref role="1l3spb" node="505a8HIkc0G" resolve="branding" />
+      <node concept="398BVA" id="3vzyAKELmgr" role="2JcizS">
+        <ref role="398BVh" node="3vzyAKELmfY" resolve="artifacts.branding" />
+      </node>
     </node>
     <node concept="398rNT" id="5msqZjqR9E5" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -202,9 +206,23 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="5kaST7qEwdo" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.allInOne.artifacts" />
-      <node concept="55IIr" id="5kaST7qF8te" role="398pKh" />
+    <node concept="398rNT" id="3AVJcIMlF95" role="1l3spd">
+      <property role="TrG5h" value="artifacts.allInOne" />
+      <node concept="398BVA" id="4MR$$QmqtJh" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="4MR$$QmqtJm" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3vzyAKELmfY" role="1l3spd">
+      <property role="TrG5h" value="artifacts.branding" />
+      <node concept="398BVA" id="3vzyAKELmfZ" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="3vzyAKELmg0" role="iGT6I">
+          <property role="2Ry0Am" value="branding" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
@@ -894,6 +912,9 @@
     <property role="TrG5h" value="branding" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
     <property role="turDy" value="build-mbeddr-branding.xml" />
+    <node concept="398rNT" id="5ueaxoTn61n" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9Gly" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -1044,18 +1065,6 @@
           </node>
         </node>
       </node>
-      <node concept="398BVA" id="4QlxUWMXVX2" role="1zDKOn">
-        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="4QlxUWMXVX5" role="iGT6I">
-          <property role="2Ry0Am" value="rcp" />
-          <node concept="2Ry0Ak" id="4QlxUWMXVX8" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="4QlxUWMXVXb" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr-logo.png" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="398BVA" id="4QlxUWMXVWQ" role="2t3ecf">
         <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
         <node concept="2Ry0Ak" id="4QlxUWMXVWT" role="iGT6I">
@@ -1091,18 +1100,6 @@
       <node concept="NbPM2" id="3ZOtQcaipZc" role="2Mmf0a">
         <node concept="3Mxwew" id="3ZOtQcaipZb" role="3MwsjC">
           <property role="3MwjfP" value="http://itemis.de" />
-        </node>
-      </node>
-      <node concept="398BVA" id="3jq9Ivkc6$k" role="2EtnoZ">
-        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="3jq9Ivkc6$l" role="iGT6I">
-          <property role="2Ry0Am" value="rcp" />
-          <node concept="2Ry0Ak" id="3jq9Ivkc6$m" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="3jq9Ivkc6$n" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr-logo.png" />
-            </node>
-          </node>
         </node>
       </node>
       <node concept="398BVA" id="3jq9Ivkc6$C" role="3vi$VU">

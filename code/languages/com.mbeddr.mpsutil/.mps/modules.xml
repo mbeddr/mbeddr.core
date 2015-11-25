@@ -2,9 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="actionsfilter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="blutil" />
@@ -79,6 +76,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.suppresswarning.gen/com.mbeddr.mpsutil.suppresswarning.gen.mpl" folder="suppresswarning" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.suppresswarning/com.mbeddr.mpsutil.suppresswarning.mpl" folder="suppresswarning" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.testScope/com.mbeddr.mpsutil.testScope.mpl" folder="testScope" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="xml.fix" />
@@ -141,10 +139,13 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="javainterpreter" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.targetchooser/test.com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope.negative/test.com.mbeddr.mpsutil.testScope.negative.msd" folder="testScope" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope/test.com.mbeddr.mpsutil.testScope.msd" folder="testScope" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix.support/test.com.mbeddr.mpsutil.xml.fix.support.mpl" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix/test.com.mbeddr.mpsutil.xml.fix.msd" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.javainterpreter/test.ts.javainterpreter.msd" folder="javainterpreter" />

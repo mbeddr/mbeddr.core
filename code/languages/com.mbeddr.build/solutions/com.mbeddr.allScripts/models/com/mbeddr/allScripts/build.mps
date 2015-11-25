@@ -121,6 +121,9 @@
   <node concept="1l3spW" id="7uZw0yZ43Jk">
     <property role="TrG5h" value="com.mbeddr.allScripts.build" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.allScripts" />
+    <node concept="398rNT" id="5ueaxoTn60W" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+    </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -164,6 +167,9 @@
       </node>
       <node concept="m$f5U" id="2coa6XmWpWi" role="m$_yh">
         <ref role="m$f5T" node="2coa6XmWkq8" resolve="com.mbeddr.tests" />
+      </node>
+      <node concept="m$f5U" id="7XWYXGzp1$8" role="m$_yh">
+        <ref role="m$f5T" node="3AVJcIMl$pT" resolve="mbeddr" />
       </node>
       <node concept="m$f5U" id="6ucYLjoxZTQ" role="m$_yh">
         <ref role="m$f5T" node="6ucYLjoxZtg" resolve="mbeddr-platform" />
@@ -949,26 +955,11 @@
       </node>
     </node>
     <node concept="398rNT" id="2Xjt3l5c8Xb" role="1l3spd">
-      <property role="TrG5h" value="sl.all" />
-      <node concept="398BVA" id="2Xjt3l5caa_" role="398pKh">
-        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="2Xjt3l5cavd" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="4hvHh3QUBi0" role="2Ry0An">
-            <property role="2Ry0Am" value="plugins" />
-            <node concept="2Ry0Ak" id="4hvHh3QUBvg" role="2Ry0An">
-              <property role="2Ry0Am" value="sl-all" />
-              <node concept="2Ry0Ak" id="4hvHh3QUBvm" role="2Ry0An">
-                <property role="2Ry0Am" value="build" />
-                <node concept="2Ry0Ak" id="4hvHh3QUBvv" role="2Ry0An">
-                  <property role="2Ry0Am" value="artifacts" />
-                  <node concept="2Ry0Ak" id="4hvHh3QUBGO" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps-sl-all" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+      <property role="TrG5h" value="platform.sl-all" />
+      <node concept="398BVA" id="5ueaxoTp$u9" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn60W" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="5ueaxoTp$ua" role="iGT6I">
+          <property role="2Ry0Am" value="mps-sl-all" />
         </node>
       </node>
     </node>

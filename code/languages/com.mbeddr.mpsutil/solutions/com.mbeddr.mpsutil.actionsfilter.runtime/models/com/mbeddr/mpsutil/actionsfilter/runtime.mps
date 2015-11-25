@@ -4398,32 +4398,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4EB7X9kixaM" role="3cqZAp">
-          <node concept="2OqwBi" id="4EB7X9kiBPy" role="3clFbG">
-            <node concept="2OqwBi" id="4EB7X9kixoC" role="2Oq$k0">
-              <node concept="1eOMI4" id="4EB7X9kixaK" role="2Oq$k0">
-                <node concept="10QFUN" id="4EB7X9kixaH" role="1eOMHV">
-                  <node concept="37vLTw" id="4EB7X9kixmn" role="10QFUP">
-                    <ref role="3cqZAo" node="4EB7X9kifRc" resolve="application" />
-                  </node>
-                  <node concept="3uibUv" id="4EB7X9kixc3" role="10QFUM">
-                    <ref role="3uigEE" to="pisw:~ComponentManagerImpl" resolve="ComponentManagerImpl" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1PnCL0" id="4EB7X9ki_Vi" role="2OqNvi">
-                <ref role="2Oxat5" to="pisw:~ComponentManagerImpl.myInitializedComponents" resolve="myInitializedComponents" />
-              </node>
-            </node>
-            <node concept="liA8E" id="4EB7X9kiCw5" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="3VsKOn" id="4EB7X9kiC$Z" role="37wK5m">
-                <ref role="3VsUkX" to="qkt:~ActionManager" resolve="ActionManager" />
-              </node>
-              <node concept="37vLTw" id="4EB7X9kiCE4" role="37wK5m">
-                <ref role="3cqZAo" node="4EB7X9kibA7" resolve="manager" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="7ZVqLB$uWKv" role="3cqZAp">
+          <node concept="3SKdUq" id="7ZVqLB$uWKT" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: re-iterrate the question of valideness of this code:" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7ZVqLB$uTQl" role="3cqZAp">
+          <node concept="3SKdUq" id="7ZVqLB$uTQH" role="3SKWNk">
+            <property role="3SKdUp" value="was ((ComponentManagerImpl) application). myInitializedComponents.put(ActionManager.class, manager);" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7ZVqLB$uWXw" role="3cqZAp">
+          <node concept="3SKdUq" id="7ZVqLB$uX0g" role="3SKWNk">
+            <property role="3SKdUp" value="was commented-out because of latest changes in new IDEA platform" />
           </node>
         </node>
       </node>
@@ -4842,29 +4829,6 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4EB7X9ki3aR" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="4EB7X9kg36h" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="disposeComponent" />
-      <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
-      <node concept="3Tm1VV" id="4EB7X9kg36i" role="1B3o_S" />
-      <node concept="3cqZAl" id="4EB7X9kg36k" role="3clF45" />
-      <node concept="3clFbS" id="4EB7X9kg36p" role="3clF47">
-        <node concept="3clFbF" id="4EB7X9kh5Fk" role="3cqZAp">
-          <node concept="2OqwBi" id="4EB7X9kh5If" role="3clFbG">
-            <node concept="37vLTw" id="4EB7X9kh5Fj" role="2Oq$k0">
-              <ref role="3cqZAo" node="4EB7X9kgdnw" resolve="myWrapped" />
-            </node>
-            <node concept="liA8E" id="4EB7X9kh6a3" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~BaseComponent.disposeComponent():void" resolve="disposeComponent" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4EB7X9ki3b8" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -5348,29 +5312,6 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4EB7X9ki3aV" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="4EB7X9kg38I" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="initComponent" />
-      <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
-      <node concept="3Tm1VV" id="4EB7X9kg38J" role="1B3o_S" />
-      <node concept="3cqZAl" id="4EB7X9kg38L" role="3clF45" />
-      <node concept="3clFbS" id="4EB7X9kg38Q" role="3clF47">
-        <node concept="3clFbF" id="4EB7X9kh$ta" role="3cqZAp">
-          <node concept="2OqwBi" id="4EB7X9kh$w5" role="3clFbG">
-            <node concept="37vLTw" id="4EB7X9kh$t9" role="2Oq$k0">
-              <ref role="3cqZAo" node="4EB7X9kgdnw" resolve="myWrapped" />
-            </node>
-            <node concept="liA8E" id="4EB7X9kh_em" role="2OqNvi">
-              <ref role="37wK5l" to="1m72:~BaseComponent.initComponent():void" resolve="initComponent" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4EB7X9ki3bj" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -5913,9 +5854,29 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="41joaxK2jO$" role="jymVt" />
     <node concept="3Tm1VV" id="4EB7X9kg2BV" role="1B3o_S" />
     <node concept="3uibUv" id="4EB7X9kg2Xd" role="1zkMxy">
       <ref role="3uigEE" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
+    </node>
+    <node concept="3clFb_" id="41joaxK2iAQ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="disposeComponent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="41joaxK2iAR" role="1B3o_S" />
+      <node concept="3cqZAl" id="41joaxK2iAT" role="3clF45" />
+      <node concept="3clFbS" id="41joaxK2iAY" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="41joaxK2kVs" role="jymVt" />
+    <node concept="3clFb_" id="41joaxK2iAZ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="initComponent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="41joaxK2iB0" role="1B3o_S" />
+      <node concept="3cqZAl" id="41joaxK2iB2" role="3clF45" />
+      <node concept="3clFbS" id="41joaxK2iB7" role="3clF47" />
     </node>
   </node>
   <node concept="312cEu" id="5FJiYrlC5Ry">
@@ -11636,80 +11597,70 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1bSDGAM8ONv" role="3cqZAp">
-          <node concept="3cpWsn" id="1bSDGAM8ONw" role="3cpWs9">
-            <property role="TrG5h" value="stateStore" />
-            <node concept="3uibUv" id="1bSDGAM8PoS" role="1tU5fm">
-              <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
-            </node>
-            <node concept="10QFUN" id="1bSDGAM8PqH" role="33vP2m">
-              <node concept="3uibUv" id="1bSDGAM8VAp" role="10QFUM">
+        <node concept="3SKdUt" id="4ybTCbxPr02" role="3cqZAp">
+          <node concept="3SKdUq" id="4ybTCbxPr9F" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: remove all usages of private methods from IDEA platform" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4oOcJZGBlQj" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="1bSDGAM8ONv" role="8Wnug">
+            <node concept="3cpWsn" id="1bSDGAM8ONw" role="3cpWs9">
+              <property role="TrG5h" value="stateStore" />
+              <node concept="3uibUv" id="1bSDGAM8PoS" role="1tU5fm">
                 <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
               </node>
-              <node concept="2OqwBi" id="1bSDGAM8ONx" role="10QFUP">
-                <node concept="37vLTw" id="1bSDGAM8ONy" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1bSDGAM7$Aw" resolve="application" />
+              <node concept="10QFUN" id="1bSDGAM8PqH" role="33vP2m">
+                <node concept="3uibUv" id="1bSDGAM8VAp" role="10QFUM">
+                  <ref role="3uigEE" to="dz3k:~ComponentStoreImpl" resolve="ComponentStoreImpl" />
                 </node>
-                <node concept="liA8E" id="1bSDGAM8ONz" role="2OqNvi">
-                  <ref role="37wK5l" to="3fye:~ApplicationImpl.getStateStore():com.intellij.openapi.components.impl.stores.IApplicationStore" resolve="getStateStore" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2sTruyVSTw3" role="3cqZAp">
-          <node concept="3cpWsn" id="2sTruyVSTw4" role="3cpWs9">
-            <property role="TrG5h" value="components" />
-            <node concept="3uibUv" id="2sTruyVSTvK" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-              <node concept="17QB3L" id="4Eo$hUJiy0Y" role="11_B2D" />
-              <node concept="3uibUv" id="2sTruyVSTvQ" role="11_B2D">
-                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2sTruyVSTw5" role="33vP2m">
-              <node concept="37vLTw" id="2sTruyVSTw6" role="2Oq$k0">
-                <ref role="3cqZAo" node="1bSDGAM8ONw" resolve="stateStore" />
-              </node>
-              <node concept="1PnCL0" id="2sTruyVSTw7" role="2OqNvi">
-                <ref role="2Oxat5" to="dz3k:~ComponentStoreImpl.myComponents" resolve="myComponents" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2sTruyVSTWi" role="3cqZAp">
-          <node concept="3cpWsn" id="2sTruyVSTWj" role="3cpWs9">
-            <property role="TrG5h" value="name" />
-            <node concept="17QB3L" id="4Eo$hUJixOM" role="1tU5fm" />
-            <node concept="2OqwBi" id="2sTruyVSTWk" role="33vP2m">
-              <node concept="2OqwBi" id="2sTruyVSTWl" role="2Oq$k0">
-                <node concept="1rXfSq" id="2sTruyVSTWm" role="2Oq$k0">
-                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                </node>
-                <node concept="liA8E" id="2sTruyVSTWn" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Class.getAnnotation(java.lang.Class):java.lang.annotation.Annotation" resolve="getAnnotation" />
-                  <node concept="3VsKOn" id="2sTruyVSTWo" role="37wK5m">
-                    <ref role="3VsUkX" to="1m72:~State" resolve="State" />
+                <node concept="2OqwBi" id="1bSDGAM8ONx" role="10QFUP">
+                  <node concept="37vLTw" id="1bSDGAM8ONy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1bSDGAM7$Aw" resolve="application" />
+                  </node>
+                  <node concept="liA8E" id="1bSDGAM8ONz" role="2OqNvi">
+                    <ref role="37wK5l" to="3fye:~ApplicationImpl.getStateStore():com.intellij.openapi.components.impl.stores.IApplicationStore" resolve="getStateStore" />
                   </node>
                 </node>
               </node>
-              <node concept="liA8E" id="2sTruyVSTWp" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~State.name()" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4ybTCbxPqe8" role="3cqZAp">
+          <node concept="3SKdUq" id="4ybTCbxPqnV" role="3SKWNk">
+            <property role="3SKdUp" value="was: Map&lt;string, Object&gt; components = stateStore. myComponents;" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4ybTCbxPtJo" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2sTruyVSTWi" role="8Wnug">
+            <node concept="3cpWsn" id="2sTruyVSTWj" role="3cpWs9">
+              <property role="TrG5h" value="name" />
+              <node concept="17QB3L" id="4Eo$hUJixOM" role="1tU5fm" />
+              <node concept="2OqwBi" id="2sTruyVSTWk" role="33vP2m">
+                <node concept="2OqwBi" id="2sTruyVSTWl" role="2Oq$k0">
+                  <node concept="1rXfSq" id="2sTruyVSTWm" role="2Oq$k0">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                  <node concept="liA8E" id="2sTruyVSTWn" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getAnnotation(java.lang.Class):java.lang.annotation.Annotation" resolve="getAnnotation" />
+                    <node concept="3VsKOn" id="2sTruyVSTWo" role="37wK5m">
+                      <ref role="3VsUkX" to="1m72:~State" resolve="State" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="2sTruyVSTWp" role="2OqNvi">
+                  <ref role="37wK5l" to="1m72:~State.name()" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1bSDGAM7$Kd" role="3cqZAp">
-          <node concept="2OqwBi" id="1bSDGAM90eC" role="3clFbG">
-            <node concept="37vLTw" id="2sTruyVSTw8" role="2Oq$k0">
-              <ref role="3cqZAo" node="2sTruyVSTw4" resolve="components" />
-            </node>
-            <node concept="liA8E" id="1bSDGAM91$D" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
-              <node concept="37vLTw" id="2sTruyVSTWq" role="37wK5m">
-                <ref role="3cqZAo" node="2sTruyVSTWj" resolve="name" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="4ybTCbxPsNV" role="3cqZAp">
+          <node concept="3SKdUq" id="4ybTCbxPsWj" role="3SKWNk">
+            <property role="3SKdUp" value="was: components.remove(name);" />
           </node>
         </node>
       </node>

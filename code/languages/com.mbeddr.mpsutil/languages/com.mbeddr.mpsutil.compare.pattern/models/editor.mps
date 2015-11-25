@@ -7,10 +7,11 @@
   </languages>
   <imports>
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="iqxq" ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="iqxq" ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -507,6 +508,24 @@
           <property role="Vbekb" value="BOLD" />
         </node>
       </node>
+      <node concept="3F0ifn" id="5sAZ2ylKpkw" role="3EZMnx">
+        <property role="3F0ifm" value="\EXACT" />
+        <node concept="pkWqt" id="5sAZ2ylKpvh" role="pqm2j">
+          <node concept="3clFbS" id="5sAZ2ylKpvi" role="2VODD2">
+            <node concept="3cpWs6" id="5sAZ2ylKpvY" role="3cqZAp">
+              <node concept="2OqwBi" id="5sAZ2ylKp$h" role="3cqZAk">
+                <node concept="pncrf" id="5sAZ2ylKpwK" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5sAZ2ylKpF1" role="2OqNvi">
+                  <ref role="3TsBF5" to="iqxq:5sAZ2ylKpoR" resolve="exact" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="11L4FC" id="5sAZ2ylKGUf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="1QoScp" id="76efOMRC9pW" role="3EZMnx">
         <property role="1QpmdY" value="true" />
         <node concept="3F0ifn" id="76efOMRC9q1" role="1QoS34">
@@ -817,9 +836,15 @@
         <node concept="11LMrY" id="4oNjwzxoZ2F" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="Vb9p2" id="5sAZ2ylKJtw" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
       <node concept="3F0A7n" id="4oNjwzxoYRi" role="3EZMnx">
         <ref role="1NtTu8" to="iqxq:4oNjwzxoYgs" resolve="kind" />
+        <node concept="Vb9p2" id="5sAZ2ylKJtC" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
     </node>
   </node>
@@ -842,6 +867,34 @@
     <ref role="1XX52x" to="iqxq:$WtIWn_nVz" resolve="MemberAnnotation" />
     <node concept="3F0A7n" id="$WtIWn_nVY" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4mypyst6kZN">
+    <property role="3GE5qa" value="pattern" />
+    <ref role="1XX52x" to="iqxq:4mypyst6kZC" resolve="NullLiteral" />
+    <node concept="3F0ifn" id="4mypyst6kZP" role="2wV5jI">
+      <property role="3F0ifm" value="null" />
+      <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      <node concept="VPxyj" id="4mypyst7hMU" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VPM3Z" id="4mypyst7hMV" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4mypyst6kZY">
+    <property role="3GE5qa" value="pattern" />
+    <ref role="1XX52x" to="iqxq:4mypyst6kZG" resolve="NotNullLiteral" />
+    <node concept="3F0ifn" id="4mypyst6l00" role="2wV5jI">
+      <property role="3F0ifm" value="notnull" />
+      <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      <node concept="VPxyj" id="4mypyst7hJU" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VPM3Z" id="4mypyst7hML" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
 </model>

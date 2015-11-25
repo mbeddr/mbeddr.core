@@ -1,16 +1,15 @@
 <project name="com.mbeddr.core download mps" default="download">
 	
   <property name="MPS-Base-URL" value="http://download.jetbrains.com/mps/33"/> 
-  <property name="MPS-File" value="MPS-3.3-EAP4-141.2591.zip"/>
+  <property name="MPS-File" value="MPS-3.3-EAP4-142.230.zip"/>
   <property name="MPS-Zip-Folder" value="MPS 3.3 EAP"/>
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
+  <property name="download-dir" value="${basedir}" />
   <target name="download">
-	<delete dir="${MPS-Dir}" />
-	<mkdir dir="${MPS-Dir}"/>
-	<delete file="${MPS-Dir}/${MPS-File}"/>	
-	<get src="${MPS-Base-URL}/${MPS-File}" dest="${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	<unzip src="${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
+	<mkdir dir="${download-dir}/${MPS-Dir}"/>
+	<get src="${MPS-Base-URL}/${MPS-File}" dest="${download-dir}/${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	<unzip src="${download-dir}/${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
   <copy file="log.xml" todir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/bin" overwrite="true" />
 	<delete file="${MPS-Dir}/${MPS-File}"/>	

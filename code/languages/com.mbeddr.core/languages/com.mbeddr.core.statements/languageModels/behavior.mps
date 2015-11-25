@@ -242,6 +242,9 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
+      </concept>
       <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
         <child id="734120071946422047" name="expr" index="3kUt_f" />
       </concept>
@@ -3505,6 +3508,7 @@
       <node concept="3clFbS" id="1PWMZrg6Xwa" role="3clF47">
         <node concept="sxT6M" id="1pM_z_gwqbO" role="3cqZAp">
           <property role="sxT66" value="contributeStepOverStrategiesForChildren" />
+          <property role="3ahEGn" value="true" />
           <node concept="Xl_RD" id="1pM_z_gwqmq" role="sxT64">
             <property role="Xl_RC" value="-&gt;" />
           </node>
@@ -3545,6 +3549,7 @@
         </node>
         <node concept="sxT6M" id="1pM_z_gwqmR" role="3cqZAp">
           <property role="sxT66" value="contributeStepOverStrategiesForChildren" />
+          <property role="3ahEGn" value="true" />
           <node concept="Xl_RD" id="1pM_z_gwqmS" role="sxT64">
             <property role="Xl_RC" value="&lt;-" />
           </node>
@@ -3584,6 +3589,7 @@
       <node concept="3clFbS" id="2O5hZqd3Aq" role="3clF47">
         <node concept="sxT6M" id="1pM_z_gwqGP" role="3cqZAp">
           <property role="sxT66" value="contributeStepOverStrategiesForChildren" />
+          <property role="3ahEGn" value="true" />
           <node concept="Xl_RD" id="1pM_z_gwqGQ" role="sxT64">
             <property role="Xl_RC" value="-&gt;" />
           </node>
@@ -3624,6 +3630,7 @@
         </node>
         <node concept="sxT6M" id="1pM_z_gwqy5" role="3cqZAp">
           <property role="sxT66" value="contributeStepOverStrategiesForChildren" />
+          <property role="3ahEGn" value="true" />
           <node concept="Xl_RD" id="1pM_z_gwqy6" role="sxT64">
             <property role="Xl_RC" value="&lt;-" />
           </node>
