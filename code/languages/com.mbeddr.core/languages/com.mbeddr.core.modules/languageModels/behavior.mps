@@ -2,12 +2,12 @@
 <model ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2372,27 +2372,30 @@
               </node>
             </node>
             <node concept="2OqwBi" id="6uZAbUKmrcx" role="33vP2m">
-              <node concept="v3k3i" id="6jvaevO$09E" role="2OqNvi">
-                <node concept="chp4Y" id="6jvaevO$09F" role="v3oSu">
-                  <ref role="cht4Q" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6uZAbUKmr9O" role="2Oq$k0">
-                <node concept="2OqwBi" id="6uZAbUKmr9P" role="2Oq$k0">
-                  <node concept="13iPFW" id="6uZAbUKmr9Q" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="6uZAbUKmr9R" role="2OqNvi">
-                    <node concept="1xMEDy" id="6uZAbUKmr9S" role="1xVPHs">
-                      <node concept="chp4Y" id="6uZAbUKmr9T" role="ri$Ld">
-                        <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+              <node concept="2OqwBi" id="7hpKUiMJR6" role="2Oq$k0">
+                <node concept="2OqwBi" id="6uZAbUKmr9O" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6uZAbUKmr9P" role="2Oq$k0">
+                    <node concept="13iPFW" id="6uZAbUKmr9Q" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="6uZAbUKmr9R" role="2OqNvi">
+                      <node concept="1xMEDy" id="6uZAbUKmr9S" role="1xVPHs">
+                        <node concept="chp4Y" id="6uZAbUKmr9T" role="ri$Ld">
+                          <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                        </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="2qgKlT" id="6uZAbUKmr9U" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="6uZAbUKmr9V" role="37wK5m">
-                    <ref role="3TV0OU" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                  <node concept="2qgKlT" id="6uZAbUKmr9U" role="2OqNvi">
+                    <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                    <node concept="3TUQnm" id="6uZAbUKmr9V" role="37wK5m">
+                      <ref role="3TV0OU" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                    </node>
                   </node>
+                </node>
+                <node concept="ANE8D" id="7hpKUiMK5t" role="2OqNvi" />
+              </node>
+              <node concept="v3k3i" id="6jvaevO$09E" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$09F" role="v3oSu">
+                  <ref role="cht4Q" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
                 </node>
               </node>
             </node>

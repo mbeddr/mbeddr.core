@@ -196,7 +196,6 @@
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
-        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
       </concept>
@@ -210,9 +209,6 @@
       </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
-      </concept>
-      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
-        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
       </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
@@ -517,9 +513,6 @@
   <node concept="bUwia" id="5so5TTr6V0z">
     <property role="TrG5h" value="main" />
     <property role="3GE5qa" value="" />
-    <node concept="CY16f" id="7RL_RDaRNEJ" role="CYSdJ">
-      <ref role="CY16a" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
-    </node>
     <node concept="1puMqW" id="4JYoVJb53be" role="1puA0r">
       <ref role="1puQsG" node="4JYoVJb56bR" resolve="resetMessageCountBeforeTest" />
     </node>

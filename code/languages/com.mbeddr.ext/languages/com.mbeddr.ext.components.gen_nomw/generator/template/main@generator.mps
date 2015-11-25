@@ -275,7 +275,6 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
-        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
@@ -298,9 +297,6 @@
       </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
-      </concept>
-      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
-        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
       </concept>
       <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
@@ -1588,9 +1584,6 @@
   <node concept="bUwia" id="5oFMniD58l_">
     <property role="TrG5h" value="ppc" />
     <property role="3GE5qa" value="ppc" />
-    <node concept="CY16f" id="7RL_RDaSxuK" role="CYSdJ">
-      <ref role="CY16a" to="p7vm:3KKPUg5xkSt" resolve="RunnableProcessed" />
-    </node>
     <node concept="1puMqW" id="vMpGaWkeBT" role="1puA0r">
       <ref role="1puQsG" node="5oFMniD6Feb" resolve="addReturnAtEndOfVoidRunnable" />
     </node>

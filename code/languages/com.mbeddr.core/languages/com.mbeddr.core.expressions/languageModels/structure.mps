@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
@@ -1510,6 +1511,7 @@
       </node>
       <node concept="tn0Fv" id="31sj9RQ_DGY" role="HhnKV" />
     </node>
+    <node concept="asaX9" id="5WBKiSs7L4F" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="314RTCzrdIv">
     <property role="TrG5h" value="IncompleteRightParethesis" />
@@ -1525,6 +1527,7 @@
       </node>
       <node concept="tn0Fv" id="31sj9RQ_DL$" role="HhnKV" />
     </node>
+    <node concept="asaX9" id="5WBKiSs7L4S" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="1LDGRqyQFAa">
     <property role="3GE5qa" value="localvar" />

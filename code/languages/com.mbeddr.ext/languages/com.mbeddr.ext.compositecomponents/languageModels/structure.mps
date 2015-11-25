@@ -156,6 +156,7 @@
   <node concept="1TIwiD" id="4dKKrcEbMGX">
     <property role="TrG5h" value="ComponentRefExpr" />
     <property role="1pbfSe" value="1839197424" />
+    <property role="34LRSv" value="&lt;{instance}&gt;" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4dKKrcEbMHL" role="1TKVEi">
       <property role="20lmBu" value="reference" />
