@@ -6834,21 +6834,21 @@
   </node>
   <node concept="35pCF_" id="3xqp6yfhXQZ">
     <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="replaceTooSmallStringLiteralWithPointer" />
+    <property role="TrG5h" value="replaceTooSmallStringArrayWithPointer" />
     <node concept="3clFbS" id="3xqp6yfhXR0" role="2sgrp5" />
     <node concept="1YaCAy" id="3xqp6yfhXR1" role="35pZ6h">
       <property role="TrG5h" value="pointerType" />
       <ref role="1YaFvo" to="yq40:fwMInzpHoK" resolve="PointerType" />
     </node>
     <node concept="1YaCAy" id="3xqp6yfhXR2" role="1YuTPh">
-      <property role="TrG5h" value="sat" />
+      <property role="TrG5h" value="stringArrayType" />
       <ref role="1YaFvo" to="yq40:4VxFbWczlb9" resolve="StringArrayType" />
     </node>
     <node concept="1xSnZT" id="3xqp6yfhXR3" role="1xSnZW">
       <node concept="3clFbS" id="3xqp6yfhXR4" role="2VODD2">
         <node concept="3cpWs8" id="3xqp6yfhXR5" role="3cqZAp">
           <node concept="3cpWsn" id="3xqp6yfhXR6" role="3cpWs9">
-            <property role="TrG5h" value="baseType" />
+            <property role="TrG5h" value="pointerBaseType" />
             <node concept="3Tqbb2" id="3xqp6yfhXR7" role="1tU5fm">
               <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
             </node>
@@ -6874,7 +6874,7 @@
             <node concept="22lmx$" id="3xqp6yfhXRN" role="1eOMHV">
               <node concept="2OqwBi" id="3xqp6yfhXRO" role="3uHU7w">
                 <node concept="37vLTw" id="3xqp6yfhXRP" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3xqp6yfhXR6" resolve="baseType" />
+                  <ref role="3cqZAo" node="3xqp6yfhXR6" resolve="pointerBaseType" />
                 </node>
                 <node concept="1mIQ4w" id="3xqp6yfhXRQ" role="2OqNvi">
                   <node concept="chp4Y" id="3xqp6yfhXRR" role="cj9EA">
@@ -6884,7 +6884,7 @@
               </node>
               <node concept="2OqwBi" id="3xqp6yfhXRS" role="3uHU7B">
                 <node concept="37vLTw" id="3xqp6yfhXRT" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3xqp6yfhXR6" resolve="baseType" />
+                  <ref role="3cqZAo" node="3xqp6yfhXR6" resolve="pointerBaseType" />
                 </node>
                 <node concept="1mIQ4w" id="3xqp6yfhXRU" role="2OqNvi">
                   <node concept="chp4Y" id="3xqp6yfhXRV" role="cj9EA">
