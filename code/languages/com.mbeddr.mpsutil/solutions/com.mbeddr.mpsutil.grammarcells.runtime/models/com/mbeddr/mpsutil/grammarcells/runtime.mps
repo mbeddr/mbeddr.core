@@ -23205,26 +23205,6 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="20mebiUT75W" role="3clF47">
-        <node concept="3cpWs8" id="20mebiUT75X" role="3cqZAp">
-          <node concept="3cpWsn" id="20mebiUT75Y" role="3cpWs9">
-            <property role="TrG5h" value="conceptDescriptor" />
-            <node concept="3uibUv" id="20mebiUT75Z" role="1tU5fm">
-              <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
-            </node>
-            <node concept="2OqwBi" id="20mebiUT760" role="33vP2m">
-              <node concept="2YIFZM" id="20mebiUT761" role="2Oq$k0">
-                <ref role="1Pybhc" to="vndm:~ConceptRegistry" resolve="ConceptRegistry" />
-                <ref role="37wK5l" to="vndm:~ConceptRegistry.getInstance():jetbrains.mps.smodel.language.ConceptRegistry" resolve="getInstance" />
-              </node>
-              <node concept="liA8E" id="20mebiUT762" role="2OqNvi">
-                <ref role="37wK5l" to="vndm:~ConceptRegistry.getConceptDescriptor(org.jetbrains.mps.openapi.language.SAbstractConcept):jetbrains.mps.smodel.runtime.ConceptDescriptor" resolve="getConceptDescriptor" />
-                <node concept="37vLTw" id="20mebiUT763" role="37wK5m">
-                  <ref role="3cqZAo" node="20mebiUT76a" resolve="concept" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="20mebiUT764" role="3cqZAp">
           <node concept="2OqwBi" id="20mebiUT765" role="3cqZAk">
             <node concept="2ShNRf" id="20mebiUT766" role="2Oq$k0">
@@ -23233,9 +23213,9 @@
               </node>
             </node>
             <node concept="liA8E" id="20mebiUT768" role="2OqNvi">
-              <ref role="37wK5l" to="gkj1:20mebiU_fU5" resolve="getEditor" />
-              <node concept="37vLTw" id="20mebiUT769" role="37wK5m">
-                <ref role="3cqZAo" node="20mebiUT75Y" resolve="conceptDescriptor" />
+              <ref role="37wK5l" to="gkj1:5094wKnoHAQ" resolve="getEditor" />
+              <node concept="37vLTw" id="5094wKnpHcW" role="37wK5m">
+                <ref role="3cqZAo" node="20mebiUT76a" resolve="concept" />
               </node>
             </node>
           </node>
@@ -23274,7 +23254,7 @@
           <node concept="3clFbS" id="75yNFwrTFmv" role="3clFbx">
             <node concept="3cpWs6" id="75yNFwrTFwE" role="3cqZAp">
               <node concept="3clFbT" id="75yNFwrTFAG" role="3cqZAk">
-                <property role="3clFbU" value="false" />
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
