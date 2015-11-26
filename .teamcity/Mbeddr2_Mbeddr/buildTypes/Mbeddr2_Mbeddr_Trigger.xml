@@ -12,7 +12,8 @@
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
-          <param name="branchFilter" value="+:*" />
+          <param name="branchFilter"><![CDATA[+:*
+-:refs/pull/*/head]]></param>
           <param name="groupCheckinsByCommitter" value="true" />
           <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriod" value="91" />
