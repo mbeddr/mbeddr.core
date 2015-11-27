@@ -25,8 +25,8 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -366,6 +366,7 @@
       </concept>
       <concept id="3155126767690989914" name="de.itemis.mps.editor.diagram.structure.Content_GenericBoxQuery" flags="ng" index="ahg9e">
         <child id="6554619383004026644" name="editorComponent" index="23bJyd" />
+        <child id="6160055369550084122" name="allowScaling" index="3RIt6y" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
@@ -5469,6 +5470,9 @@
           <node concept="2xQOud" id="QramcdmRPH" role="3Uta5s">
             <ref role="2xQOue" node="4XPshStkKxh" resolve="StartState" />
           </node>
+          <node concept="3clFbT" id="7hiaG7TPYi4" role="3RIt6y">
+            <property role="3clFbU" value="false" />
+          </node>
         </node>
         <node concept="2M4Efz" id="Qramcdr2ma" role="aCds2">
           <node concept="Xl_RD" id="Qramcdr3vx" role="2M4AHK">
@@ -5698,6 +5702,11 @@
               </node>
             </node>
             <node concept="3XFhqQ" id="7$cwLzjYq_Q" role="3EZMnx" />
+            <node concept="3Xmtl4" id="7hiaG7TPmrG" role="3F10Kt">
+              <node concept="1wgc9g" id="7hiaG7TPmrK" role="3XvnJa">
+                <ref role="1wgcnl" node="WK5e1TWxJg" resolve="smallerText" />
+              </node>
+            </node>
           </node>
           <node concept="2iRkQZ" id="7$cwLzjYq_R" role="2iSdaV" />
         </node>
@@ -6337,24 +6346,40 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7hiaG7TPYvV" role="3cqZAp">
+          <node concept="3cpWsn" id="7hiaG7TPYvW" role="3cpWs9">
+            <property role="TrG5h" value="min" />
+            <node concept="10P55v" id="7hiaG7TPYvR" role="1tU5fm" />
+            <node concept="2YIFZM" id="7hiaG7TPYvX" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~Math.min(double,double):double" resolve="min" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+              <node concept="2OqwBi" id="7hiaG7TPYvY" role="37wK5m">
+                <node concept="2xDkLB" id="7hiaG7TPYvZ" role="2Oq$k0" />
+                <node concept="liA8E" id="7hiaG7TPYw0" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth():double" resolve="getWidth" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7hiaG7TPYw1" role="37wK5m">
+                <node concept="2xDkLB" id="7hiaG7TPYw2" role="2Oq$k0" />
+                <node concept="liA8E" id="7hiaG7TPYw3" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight():double" resolve="getHeight" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4XPshStkWNN" role="3cqZAp">
           <node concept="3cpWsn" id="4XPshStkWNO" role="3cpWs9">
             <property role="TrG5h" value="diameter" />
             <node concept="10P55v" id="4XPshStkWNP" role="1tU5fm" />
-            <node concept="2YIFZM" id="4XPshStkWNQ" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~Math.min(double,double):double" resolve="min" />
+            <node concept="2YIFZM" id="7hiaG7TPYEY" role="33vP2m">
               <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-              <node concept="2OqwBi" id="4XPshStkWNR" role="37wK5m">
-                <node concept="2xDkLB" id="4XPshStkWNS" role="2Oq$k0" />
-                <node concept="liA8E" id="4XPshStkWNT" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth():double" resolve="getWidth" />
-                </node>
+              <ref role="37wK5l" to="wyt6:~Math.min(double,double):double" resolve="min" />
+              <node concept="37vLTw" id="7hiaG7TPYJk" role="37wK5m">
+                <ref role="3cqZAo" node="7hiaG7TPYvW" resolve="min" />
               </node>
-              <node concept="2OqwBi" id="4XPshStkWNU" role="37wK5m">
-                <node concept="2xDkLB" id="4XPshStkWNV" role="2Oq$k0" />
-                <node concept="liA8E" id="4XPshStkWNW" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight():double" resolve="getHeight" />
-                </node>
+              <node concept="3cmrfG" id="7hiaG7TPYTe" role="37wK5m">
+                <property role="3cmrfH" value="20" />
               </node>
             </node>
           </node>
