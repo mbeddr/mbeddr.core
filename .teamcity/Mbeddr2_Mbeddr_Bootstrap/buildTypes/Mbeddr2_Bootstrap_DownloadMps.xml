@@ -41,14 +41,7 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
-    <cleanup>
-      <policy type="daysAndBuilds" cleanup-level="ARTIFACTS">
-        <parameters>
-          <param name="keepBuilds.count" value="1" />
-          <param name="keepDays.count" value="14" />
-        </parameters>
-      </policy>
-    </cleanup>
+    <cleanup />
   </settings>
 </build-type>
 
