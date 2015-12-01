@@ -30,7 +30,7 @@
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Accent_Trigger" cleanDestination="true">
+      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
