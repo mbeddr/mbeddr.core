@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/" />
+      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/mps-sl-all =&gt; mps-sl-all" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
