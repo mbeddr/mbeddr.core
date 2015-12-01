@@ -4,16 +4,11 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%generic-plugins.publish-rule%" />
+      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial-languages.build =&gt; com.mbeddr.tutorial-languages.build %teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial-solutions.build =&gt; com.mbeddr.tutorial-solutions.build" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
-    <parameters>
-      <param name="mbeddr.languages.artifact-paths"><![CDATA[build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build/*.zip=>build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build
-build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/build/artifacts/mbeddr
-build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
-code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
-    </parameters>
-    <build-runners order="">
+    <parameters />
+    <build-runners order="RUNNER_73">
       <runner id="RUNNER_73" name="Build Tutorial" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />
