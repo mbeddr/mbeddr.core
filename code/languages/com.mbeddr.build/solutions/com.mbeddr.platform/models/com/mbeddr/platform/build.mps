@@ -1090,6 +1090,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="q5kkysAmgw" role="3bR37C">
+          <node concept="3bR9La" id="q5kkysAmgx" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3zYUNYHJ2S3" role="2G$12L">
         <property role="BnDLt" value="true" />
