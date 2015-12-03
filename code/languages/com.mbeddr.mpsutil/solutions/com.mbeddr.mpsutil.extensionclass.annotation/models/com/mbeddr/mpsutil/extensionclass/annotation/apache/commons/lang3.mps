@@ -2,7 +2,7 @@
 <model ref="r:686182fd-9ca1-4655-9067-70612a7b2a68(com.mbeddr.mpsutil.extensionclass.annotation.apache.commons.lang3)">
   <persistence version="9" />
   <languages>
-    <use id="f39336d3-1288-47ee-bbfe-ad2ea7e4504e" name="com.mbeddr.mpsutil.extensionclass" version="-1" />
+    <use id="f39336d3-1288-47ee-bbfe-ad2ea7e4504e" name="com.mbeddr.mpsutil.extensionclass" version="1" />
   </languages>
   <imports>
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
