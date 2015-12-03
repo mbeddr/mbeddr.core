@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/" />
+      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/com.mbeddr.platform =&gt; com.mbeddr.platform&#xA;%teamcity.build.checkoutDir%/artifacts/mbeddr =&gt; mbeddr" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />

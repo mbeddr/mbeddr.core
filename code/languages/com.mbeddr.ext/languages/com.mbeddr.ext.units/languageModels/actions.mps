@@ -1140,5 +1140,66 @@
       </node>
     </node>
   </node>
+  <node concept="3UOs0u" id="55q2bUZ2TLR">
+    <property role="3GE5qa" value="definition.meta" />
+    <property role="TrG5h" value="addGenUnitMapping" />
+    <node concept="3UNGvq" id="55q2bUZ2TLS" role="3UOs0v">
+      <ref role="3UNGvu" to="qlb5:7eOyx9r3kR5" resolve="UnitReference" />
+      <node concept="3kRJcU" id="55q2bUZ2UwV" role="3kShCk">
+        <node concept="3clFbS" id="55q2bUZ2UwW" role="2VODD2">
+          <node concept="3clFbF" id="55q2bUZ2Uy1" role="3cqZAp">
+            <node concept="2OqwBi" id="55q2bUZ3byj" role="3clFbG">
+              <node concept="2OqwBi" id="55q2bUZ3byk" role="2Oq$k0">
+                <node concept="Cj7Ep" id="55q2bUZ3byl" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="55q2bUZ3bym" role="2OqNvi">
+                  <node concept="1xMEDy" id="55q2bUZ3byn" role="1xVPHs">
+                    <node concept="chp4Y" id="55q2bUZ3byo" role="ri$Ld">
+                      <ref role="cht4Q" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="55q2bUZ3byp" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tYCnQ" id="55q2bUZ2Vfi" role="_1QTJ">
+        <ref role="uz4UX" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
+        <node concept="Cmt7Y" id="55q2bUZ2Vh_" role="uz6Si">
+          <node concept="Cnhdc" id="55q2bUZ2VhA" role="Cncma">
+            <node concept="3clFbS" id="55q2bUZ2VhB" role="2VODD2">
+              <node concept="3clFbF" id="55q2bUZ2VkC" role="3cqZAp">
+                <node concept="2OqwBi" id="55q2bUZ3bR8" role="3clFbG">
+                  <node concept="2OqwBi" id="55q2bUZ3bD5" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="55q2bUZ3bAt" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="55q2bUZ3bLB" role="2OqNvi">
+                      <node concept="1xMEDy" id="55q2bUZ3bLD" role="1xVPHs">
+                        <node concept="chp4Y" id="55q2bUZ3bNN" role="ri$Ld">
+                          <ref role="cht4Q" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="HtI8k" id="55q2bUZ3bY9" role="2OqNvi">
+                    <node concept="2ShNRf" id="55q2bUZ3cda" role="HtI8F">
+                      <node concept="3zrR0B" id="55q2bUZ3dku" role="2ShVmc">
+                        <node concept="3Tqbb2" id="55q2bUZ3dkw" role="3zrR0E">
+                          <ref role="ehGHo" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="55q2bUZ2Vkz" role="Cn2iK">
+            <property role="2h1i$Z" value="," />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -41,12 +41,23 @@
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
     </artifact-dependencies>
     <dependencies>
       <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Build_BuildTutorial">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="run-build-if-dependency-failed-to-start" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Build_BuildSlAll">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>

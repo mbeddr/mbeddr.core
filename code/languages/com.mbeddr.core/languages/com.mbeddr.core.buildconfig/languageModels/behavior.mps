@@ -2327,6 +2327,18 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="bwlJLAh1je" role="13h7CS">
+      <property role="TrG5h" value="requiresPlatformConfig" />
+      <node concept="3Tm1VV" id="bwlJLAh1jf" role="1B3o_S" />
+      <node concept="3clFbS" id="bwlJLAh1jg" role="3clF47">
+        <node concept="3clFbF" id="bwlJLAh4hQ" role="3cqZAp">
+          <node concept="3clFbT" id="bwlJLAh4hP" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="bwlJLAh4hL" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5KH1ziO6otd">
     <ref role="13h7C2" to="51wr:6GqYvBOf2Xb" resolve="ModuleRef" />

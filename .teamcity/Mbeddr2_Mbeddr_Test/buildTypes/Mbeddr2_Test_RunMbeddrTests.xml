@@ -60,10 +60,6 @@ fi]]></param>
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="true">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="%generic.artifact-rule%" />
-      </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
@@ -72,12 +68,27 @@ fi]]></param>
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%buildscripts.artifact-rule%" />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="true">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
     </artifact-dependencies>
     <dependencies>
       <depend-on sourceBuildTypeId="Mbeddr2_Build_BuildLanguages">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="run-build-if-dependency-failed-to-start" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Build_BuildSlAll">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>
