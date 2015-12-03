@@ -13,7 +13,6 @@
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
           <param name="branchFilter"><![CDATA[+:refs/heads/master
--:refs/heads/*
 +:refs/heads/feature/*
 +:refs/heads/refactor/*
 +:refs/heads/milestone/*
