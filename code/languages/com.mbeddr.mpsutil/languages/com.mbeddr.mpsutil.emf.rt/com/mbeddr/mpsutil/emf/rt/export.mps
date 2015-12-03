@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
@@ -19,6 +19,8 @@
     <import index="tz6t" ref="58436410-8239-4105-b947-336d2bc568a9/java:org.eclipse.emf.ecore.xmi.impl(com.mbeddr.mpsutil.emf.rt/)" />
     <import index="hulx" ref="58436410-8239-4105-b947-336d2bc568a9/java:org.eclipse.emf.ecore.resource.impl(com.mbeddr.mpsutil.emf.rt/)" />
     <import index="roop" ref="58436410-8239-4105-b947-336d2bc568a9/java:org.eclipse.emf.ecore.resource(com.mbeddr.mpsutil.emf.rt/)" />
+    <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2301,8 +2303,12 @@
                           <node concept="32TBzR" id="3nflyGmpO5Y" role="2OqNvi">
                             <node concept="1aIX9F" id="3nflyGmpO5Z" role="1xVPHs">
                               <node concept="25Kdxt" id="3nflyGmpO60" role="1aIX9E">
-                                <node concept="37vLTw" id="2BrillriRho" role="25KhWn">
-                                  <ref role="3cqZAo" node="re4HSgpGM$" resolve="link" />
+                                <node concept="2YIFZM" id="29L9c1qpQKC" role="25KhWn">
+                                  <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                                  <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+                                  <node concept="37vLTw" id="29L9c1qpQKD" role="37wK5m">
+                                    <ref role="3cqZAo" node="re4HSgpGM$" resolve="link" />
+                                  </node>
                                 </node>
                               </node>
                             </node>

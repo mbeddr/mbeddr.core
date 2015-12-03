@@ -57,9 +57,6 @@
     </node>
     <node concept="M6xJ_" id="75yNFwrT_e3" role="lGtFl">
       <property role="Hh88m" value="userConfigurable" />
-      <node concept="trNpa" id="75yNFwrTAfT" role="EQaZv">
-        <ref role="trN6q" to="tpc2:hgV6hR6" resolve="StyleClassItem" />
-      </node>
       <node concept="trNpa" id="1gJuyfgBDLe" role="EQaZv">
         <ref role="trN6q" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
       </node>

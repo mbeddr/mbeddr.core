@@ -2,8 +2,8 @@
 <model ref="r:85bb4a3a-3e32-4db8-bb76-46f04e6ce84d(com.mbeddr.mpsutil.userstyles.sandboxlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -93,16 +93,6 @@
   </node>
   <node concept="V5hpn" id="75yNFwrUn$r">
     <property role="TrG5h" value="StyleSheet123" />
-    <node concept="14StLt" id="75yNFwrUn$s" role="V601i">
-      <property role="TrG5h" value="style1" />
-      <node concept="VechU" id="5l2JxZPajh9" role="3F10Kt">
-        <property role="Vb096" value="blue" />
-        <node concept="1Ex9Rl" id="5l2JxZPannC" role="lGtFl">
-          <property role="34HCRG" value="Abcde" />
-          <property role="34GvKv" value="This is the description for Abcde" />
-        </node>
-      </node>
-    </node>
     <node concept="14StLt" id="1gJuyfgBvu4" role="V601i">
       <property role="TrG5h" value="style2" />
       <node concept="VechU" id="1gJuyfgBvu5" role="3F10Kt">

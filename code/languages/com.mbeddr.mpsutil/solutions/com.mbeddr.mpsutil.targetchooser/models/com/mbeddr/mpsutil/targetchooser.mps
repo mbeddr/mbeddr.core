@@ -67,9 +67,6 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1224573963862" name="jetbrains.mps.baseLanguage.structure.EnumValuesExpression" flags="nn" index="uiWXb">
         <reference id="1224573974191" name="enumClass" index="uiZuM" />
       </concept>
@@ -367,6 +364,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1978,8 +1982,10 @@
             <property role="3SKdUp" value="Transient models are not allowed as a target" />
           </node>
         </node>
-        <node concept="u8gfJ" id="2Nt6prol1EJ" role="3cqZAp">
-          <node concept="3clFbJ" id="2Nt6pro7irF" role="u8lrQ">
+        <node concept="1X3_iC" id="29L9c1qcauk" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbJ" id="2Nt6pro7irF" role="8Wnug">
             <node concept="3fqX7Q" id="2Nt6pro7irG" role="3clFbw">
               <node concept="2YIFZM" id="2Nt6pro7iwV" role="3fr31v">
                 <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
@@ -2335,8 +2341,10 @@
             </node>
           </node>
         </node>
-        <node concept="u8gfJ" id="66R$0mlT_vu" role="3cqZAp">
-          <node concept="3clFbJ" id="8mo7j29obg" role="u8lrQ">
+        <node concept="1X3_iC" id="29L9c1qca_Z" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbJ" id="8mo7j29obg" role="8Wnug">
             <node concept="3clFbS" id="8mo7j29obi" role="3clFbx">
               <node concept="3cpWs8" id="8mo7j29qcu" role="3cqZAp">
                 <node concept="3cpWsn" id="8mo7j29qcv" role="3cpWs9">
@@ -6525,8 +6533,10 @@
             <property role="3SKdUp" value="We don't need the runtime modules here" />
           </node>
         </node>
-        <node concept="u8gfJ" id="6yXTMcU9_XJ" role="3cqZAp">
-          <node concept="3cpWs8" id="2Nt6prob_h5" role="u8lrQ">
+        <node concept="1X3_iC" id="29L9c1qcaA0" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2Nt6prob_h5" role="8Wnug">
             <node concept="3cpWsn" id="2Nt6prob_h4" role="3cpWs9">
               <property role="3TUv4t" value="false" />
               <property role="TrG5h" value="languageRuntime" />
@@ -6540,7 +6550,11 @@
               </node>
             </node>
           </node>
-          <node concept="1DcWWT" id="2Nt6prob_h8" role="u8lrQ">
+        </node>
+        <node concept="1X3_iC" id="29L9c1qcaA1" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="1DcWWT" id="2Nt6prob_h8" role="8Wnug">
             <node concept="2OqwBi" id="2Nt6prob_h$" role="1DdaDG">
               <node concept="1rXfSq" id="2Nt6prob_h_" role="2Oq$k0">
                 <ref role="37wK5l" to="kxvg:~ProjectLanguageTreeNode.getModule():jetbrains.mps.smodel.Language" resolve="getModule" />
@@ -6622,7 +6636,11 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="2Nt6prob_hB" role="u8lrQ">
+        </node>
+        <node concept="1X3_iC" id="29L9c1qcaA2" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2Nt6prob_hB" role="8Wnug">
             <node concept="1rXfSq" id="2Nt6prob_hC" role="3clFbG">
               <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
               <node concept="37vLTw" id="2Nt6prob_hD" role="37wK5m">

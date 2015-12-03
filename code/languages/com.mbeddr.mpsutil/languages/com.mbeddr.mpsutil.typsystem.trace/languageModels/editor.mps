@@ -2,7 +2,7 @@
 <model ref="2e589a6f-51c3-423f-8ea2-0d769a5cc288/r:4b2568c9-8d38-4331-a7bb-769375488409(com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>

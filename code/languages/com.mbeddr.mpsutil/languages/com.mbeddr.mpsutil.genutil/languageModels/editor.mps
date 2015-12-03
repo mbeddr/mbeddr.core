@@ -2,7 +2,7 @@
 <model ref="b67a6ca0-735e-4903-b238-4b525bddf96a/r:e8caf70a-514c-442f-a89b-18f98ec6b757(com.mbeddr.mpsutil.genutil/com.mbeddr.mpsutil.genutil.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
   </languages>
   <imports>
     <import index="jphc" ref="b67a6ca0-735e-4903-b238-4b525bddf96a/r:f5e22059-6c2f-430a-9e46-6dae72a4d73d(com.mbeddr.mpsutil.genutil/com.mbeddr.mpsutil.genutil.structure)" />
