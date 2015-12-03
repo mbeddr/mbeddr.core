@@ -101,6 +101,7 @@
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" fqName="com.mbeddr.mpsutil.intentions" version="0" />
     <language id="d2a1d976-43a2-462f-ac3a-9b258ced839d" fqName="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <language id="23f985f2-965f-4af1-aee8-a32677429514" fqName="com.mbeddr.mpsutil.multilingual.common" version="0" />
+    <language id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" fqName="com.mbeddr.mpsutil.richstring" version="0" />
     <language id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" fqName="com.mbeddr.mpsutil.spreferences" version="0" />
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" fqName="de.itemis.mps.editor.bool" version="0" />
     <language id="a0ab8c10-c118-4755-ba27-3853435cf524" fqName="de.itemis.mps.tooltips" version="0" />
