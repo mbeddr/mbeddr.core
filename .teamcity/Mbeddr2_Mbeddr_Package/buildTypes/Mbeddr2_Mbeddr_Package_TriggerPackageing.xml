@@ -14,11 +14,13 @@
         <parameters>
           <param name="branchFilter"><![CDATA[-:*
 +:<default>
-+:v-1.5-*]]></param>
++:master]]></param>
           <param name="groupCheckinsByCommitter" value="true" />
           <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriod" value="91" />
           <param name="quietPeriodMode" value="USE_CUSTOM" />
+          <param name="triggerRules"><![CDATA[+:*
+-:/.teamcity/*]]></param>
         </parameters>
       </build-trigger>
     </build-triggers>
