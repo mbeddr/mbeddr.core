@@ -412,8 +412,8 @@
         <node concept="3cpWs8" id="5lTqPuSdcYe" role="3cqZAp">
           <node concept="3cpWsn" id="5lTqPuSdcYf" role="3cpWs9">
             <property role="TrG5h" value="editorCell" />
-            <node concept="3uibUv" id="53UazCqipeL" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+            <node concept="3uibUv" id="3$dAZlRFUhA" role="1tU5fm">
+              <ref role="3uigEE" to="93vl:7cgOZHrhAS_" resolve="EditorCell_Multiline" />
             </node>
             <node concept="2YIFZM" id="5lTqPuSdcYj" role="33vP2m">
               <ref role="1Pybhc" to="93vl:7cgOZHrhAS_" resolve="EditorCell_Multiline" />
@@ -426,6 +426,19 @@
               </node>
               <node concept="1rXfSq" id="1rfeXz7xsd6" role="37wK5m">
                 <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3$dAZlRFUDx" role="3cqZAp">
+          <node concept="2OqwBi" id="3$dAZlRFUQ9" role="3clFbG">
+            <node concept="37vLTw" id="3$dAZlRFUDv" role="2Oq$k0">
+              <ref role="3cqZAo" node="5lTqPuSdcYf" resolve="editorCell" />
+            </node>
+            <node concept="liA8E" id="3$dAZlRFVHf" role="2OqNvi">
+              <ref role="37wK5l" to="93vl:3$dAZlRF86Z" resolve="setPlaceholderText" />
+              <node concept="37vLTw" id="3$dAZlRFW1U" role="37wK5m">
+                <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myNoTargetText" resolve="myNoTargetText" />
               </node>
             </node>
           </node>

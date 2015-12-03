@@ -52,6 +52,7 @@
         <child id="3982520150113092206" name="valueType" index="3t5Oan" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
@@ -344,6 +345,7 @@
   <node concept="24kQdi" id="2dWzqxEBMSf">
     <ref role="1XX52x" to="87nw:2dWzqxEBMSc" resolve="Word" />
     <node concept="2v7bAL" id="3da6dOfDgpW" role="2wV5jI">
+      <property role="39s7Ar" value="true" />
       <ref role="1NtTu8" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
     </node>
   </node>
