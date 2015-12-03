@@ -2,22 +2,22 @@
 <model ref="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="apd" ref="r:3f86baf5-195f-493c-8564-191d759abee5(com.mbeddr.slides.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="a2je" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.image(JDK/java.awt.image@java_stub)" />
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="k5e6" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.imageio(JDK/javax.imageio@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -254,8 +254,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="3Dgh5aYjqYo" role="37wK5m" />
                   <node concept="10M0yZ" id="3Dgh5aYjqYp" role="37wK5m">
-                    <ref role="3cqZAo" to="1t7x:~Color.black" resolve="black" />
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   </node>
                   <node concept="3cmrfG" id="3Dgh5aYjqYq" role="37wK5m">
                     <property role="3cmrfH" value="2" />
@@ -456,11 +456,11 @@
                     <node concept="3cpWsn" id="5yxqZJwz93B" role="3cpWs9">
                       <property role="TrG5h" value="l" />
                       <node concept="3uibUv" id="5yxqZJwz93C" role="1tU5fm">
-                        <ref role="3uigEE" to="dbrf:~JLabel" resolve="JLabel" />
+                        <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                       </node>
                       <node concept="2ShNRf" id="5yxqZJwz93D" role="33vP2m">
                         <node concept="1pGfFk" id="5yxqZJwz93E" role="2ShVmc">
-                          <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                          <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                           <node concept="Xl_RD" id="5yxqZJwz93K" role="37wK5m">
                             <property role="Xl_RC" value="Invalid Path" />
                           </node>
@@ -495,14 +495,14 @@
                           <node concept="3cpWsn" id="3RseghIdPNC" role="3cpWs9">
                             <property role="TrG5h" value="imeg" />
                             <node concept="3uibUv" id="3RseghIdPND" role="1tU5fm">
-                              <ref role="3uigEE" to="a2je:~BufferedImage" resolve="BufferedImage" />
+                              <ref role="3uigEE" to="jan3:~BufferedImage" resolve="BufferedImage" />
                             </node>
                             <node concept="2YIFZM" id="3RseghIdPNE" role="33vP2m">
-                              <ref role="1Pybhc" to="k5e6:~ImageIO" resolve="ImageIO" />
-                              <ref role="37wK5l" to="k5e6:~ImageIO.read(java.io.File):java.awt.image.BufferedImage" resolve="read" />
+                              <ref role="1Pybhc" to="oqcp:~ImageIO" resolve="ImageIO" />
+                              <ref role="37wK5l" to="oqcp:~ImageIO.read(java.io.File):java.awt.image.BufferedImage" resolve="read" />
                               <node concept="2ShNRf" id="3RseghIdPNF" role="37wK5m">
                                 <node concept="1pGfFk" id="3RseghIdPNG" role="2ShVmc">
-                                  <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                                   <node concept="2OqwBi" id="3RseghIdPNH" role="37wK5m">
                                     <node concept="2OqwBi" id="3RseghIdPNI" role="2Oq$k0">
                                       <node concept="pncrf" id="3RseghIdPNJ" role="2Oq$k0" />
@@ -523,14 +523,14 @@
                           <node concept="3cpWsn" id="5yxqZJwyQDa" role="3cpWs9">
                             <property role="TrG5h" value="l" />
                             <node concept="3uibUv" id="5yxqZJwyQDb" role="1tU5fm">
-                              <ref role="3uigEE" to="dbrf:~JLabel" resolve="JLabel" />
+                              <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                             </node>
                             <node concept="2ShNRf" id="5yxqZJwyQDd" role="33vP2m">
                               <node concept="1pGfFk" id="5yxqZJwyQDe" role="2ShVmc">
-                                <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(javax.swing.Icon)" resolve="JLabel" />
+                                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(javax.swing.Icon)" resolve="JLabel" />
                                 <node concept="2ShNRf" id="3RseghIdPNQ" role="37wK5m">
                                   <node concept="1pGfFk" id="3RseghIdPNS" role="2ShVmc">
-                                    <ref role="37wK5l" to="dbrf:~ImageIcon.&lt;init&gt;(java.awt.Image)" resolve="ImageIcon" />
+                                    <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.awt.Image)" resolve="ImageIcon" />
                                     <node concept="37vLTw" id="5Hxjapw9vhf" role="37wK5m">
                                       <ref role="3cqZAo" node="3RseghIdPNC" resolve="imeg" />
                                     </node>
@@ -550,7 +550,7 @@
                         <node concept="3cpWsn" id="3RseghIdSP5" role="TDEfY">
                           <property role="TrG5h" value="ex" />
                           <node concept="3uibUv" id="3RseghIdSPe" role="1tU5fm">
-                            <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                            <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="3RseghIdSP7" role="TDEfX">
@@ -560,7 +560,7 @@
                                 <ref role="3cqZAo" node="3RseghIdSP5" resolve="ex" />
                               </node>
                               <node concept="liA8E" id="3RseghIdSPH" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                               </node>
                             </node>
                           </node>
@@ -568,11 +568,11 @@
                             <node concept="3cpWsn" id="3RseghIdSPM" role="3cpWs9">
                               <property role="TrG5h" value="l" />
                               <node concept="3uibUv" id="3RseghIdSPN" role="1tU5fm">
-                                <ref role="3uigEE" to="dbrf:~JLabel" resolve="JLabel" />
+                                <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                               </node>
                               <node concept="2ShNRf" id="3RseghIdSPO" role="33vP2m">
                                 <node concept="1pGfFk" id="3RseghIdSPP" role="2ShVmc">
-                                  <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                                   <node concept="3cpWs3" id="3RseghIdSQe" role="37wK5m">
                                     <node concept="Xl_RD" id="3RseghIdSPQ" role="3uHU7B">
                                       <property role="Xl_RC" value="Exception: " />
@@ -582,7 +582,7 @@
                                         <ref role="3cqZAo" node="3RseghIdSP5" resolve="ex" />
                                       </node>
                                       <node concept="liA8E" id="3RseghIdSQI" role="2OqNvi">
-                                        <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                                       </node>
                                     </node>
                                   </node>

@@ -50,9 +50,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -9479,8 +9476,10 @@
               <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
             </node>
           </node>
-          <node concept="u8gfJ" id="4PVmln3n1Se" role="3cqZAp">
-            <node concept="3cpWs8" id="2mhTzLINf7v" role="u8lrQ">
+          <node concept="1X3_iC" id="3AWqwDsprpb" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs8" id="2mhTzLINf7v" role="8Wnug">
               <node concept="3cpWsn" id="2mhTzLINf7w" role="3cpWs9">
                 <property role="TrG5h" value="wireStatically" />
                 <node concept="10P_77" id="2mhTzLINf7x" role="1tU5fm" />
@@ -9491,7 +9490,11 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2mhTzLINf7$" role="u8lrQ">
+          </node>
+          <node concept="1X3_iC" id="3AWqwDsprpc" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="2mhTzLINf7$" role="8Wnug">
               <node concept="1Wc70l" id="2mhTzLIQiT4" role="3clFbG">
                 <node concept="3clFbC" id="2mhTzLINf7C" role="3uHU7w">
                   <node concept="10Nm6u" id="2mhTzLINf7D" role="3uHU7w" />
@@ -9874,8 +9877,10 @@
               <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
             </node>
           </node>
-          <node concept="u8gfJ" id="4PVmln3ogNy" role="3cqZAp">
-            <node concept="3cpWs8" id="2mhTzLIXS$F" role="u8lrQ">
+          <node concept="1X3_iC" id="3AWqwDsprpd" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs8" id="2mhTzLIXS$F" role="8Wnug">
               <node concept="3cpWsn" id="2mhTzLIXS$G" role="3cpWs9">
                 <property role="TrG5h" value="wireStatically" />
                 <node concept="10P_77" id="2mhTzLIXS$H" role="1tU5fm" />
@@ -9886,7 +9891,11 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2mhTzLIXS$K" role="u8lrQ">
+          </node>
+          <node concept="1X3_iC" id="3AWqwDsprpe" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="2mhTzLIXS$K" role="8Wnug">
               <node concept="22lmx$" id="2mhTzLIXS$L" role="3clFbG">
                 <node concept="3fqX7Q" id="2mhTzLIXS$M" role="3uHU7B">
                   <node concept="3cpWsa" id="2mhTzLIXS$N" role="3fr31v">

@@ -2,13 +2,13 @@
 <model ref="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="8zu2" ref="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -186,7 +186,7 @@
                   <node concept="pncrf" id="7rXn3flJFZg" role="37wK5m" />
                   <node concept="2ShNRf" id="3EwB7OlCYQU" role="37wK5m">
                     <node concept="1pGfFk" id="3EwB7OlDft1" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="3EwB7OlDft2" role="37wK5m">
                         <property role="3cmrfH" value="200" />
                       </node>
@@ -229,7 +229,7 @@
                   <node concept="pncrf" id="3EwB7OlDgCv" role="37wK5m" />
                   <node concept="2ShNRf" id="3EwB7OlDgCw" role="37wK5m">
                     <node concept="1pGfFk" id="3EwB7OlDgCx" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="3EwB7OlDgCy" role="37wK5m">
                         <property role="3cmrfH" value="200" />
                       </node>

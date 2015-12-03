@@ -2,14 +2,14 @@
 <model ref="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheat.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="gnwj" ref="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheat.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="9a8" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="watd" ref="r:1a1284ce-37a2-4d35-b38f-a54d85ba3c77(com.mbeddr.spreadsheat.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -510,7 +510,7 @@
                 <node concept="3cpWs6" id="1LnB5xdvSVR" role="3cqZAp">
                   <node concept="2ShNRf" id="1LnB5xdvSVS" role="3cqZAk">
                     <node concept="1pGfFk" id="1LnB5xdvSVT" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="2OqwBi" id="1LnB5xdvSVU" role="37wK5m">
                         <node concept="37vLTw" id="5Hxjapw9v8b" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvSVM" resolve="c" />
@@ -543,8 +543,8 @@
                 <node concept="3clFbS" id="1LnB5xdvSW4" role="9aQI4">
                   <node concept="3cpWs6" id="1LnB5xdvSW5" role="3cqZAp">
                     <node concept="10M0yZ" id="1LnB5xdvSW6" role="3cqZAk">
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
                     </node>
                   </node>
                 </node>
@@ -590,7 +590,7 @@
                 <node concept="3cpWs6" id="1LnB5xdvSYM" role="3cqZAp">
                   <node concept="2ShNRf" id="1LnB5xdvSYN" role="3cqZAk">
                     <node concept="1pGfFk" id="1LnB5xdvSYO" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="2OqwBi" id="1LnB5xdvSYP" role="37wK5m">
                         <node concept="37vLTw" id="5Hxjapw9v6B" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvSYG" resolve="c" />
@@ -623,8 +623,8 @@
                 <node concept="3clFbS" id="1LnB5xdvSYZ" role="9aQI4">
                   <node concept="3cpWs6" id="1LnB5xdvSZ0" role="3cqZAp">
                     <node concept="10M0yZ" id="1LnB5xdvSZ1" role="3cqZAk">
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
                     </node>
                   </node>
                 </node>
@@ -654,8 +654,8 @@
               <node concept="3clFbS" id="1LnB5xdvXYm" role="3clFbx">
                 <node concept="3cpWs6" id="1LnB5xdvXZC" role="3cqZAp">
                   <node concept="10M0yZ" id="1LnB5xdvXZV" role="3cqZAk">
-                    <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                    <ref role="3cqZAo" to="9a8:~MPSFonts.BOLD_ITALIC" resolve="BOLD_ITALIC" />
+                    <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                    <ref role="3cqZAo" to="exr9:~MPSFonts.BOLD_ITALIC" resolve="BOLD_ITALIC" />
                   </node>
                 </node>
               </node>
@@ -682,8 +682,8 @@
               <node concept="3clFbS" id="1LnB5xdvXZX" role="3clFbx">
                 <node concept="3cpWs6" id="1LnB5xdvXZY" role="3cqZAp">
                   <node concept="10M0yZ" id="1LnB5xdvXZZ" role="3cqZAk">
-                    <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                    <ref role="3cqZAo" to="9a8:~MPSFonts.BOLD" resolve="BOLD" />
+                    <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                    <ref role="3cqZAo" to="exr9:~MPSFonts.BOLD" resolve="BOLD" />
                   </node>
                 </node>
               </node>
@@ -700,8 +700,8 @@
               <node concept="3clFbS" id="1LnB5xdvY08" role="3clFbx">
                 <node concept="3cpWs6" id="1LnB5xdvY09" role="3cqZAp">
                   <node concept="10M0yZ" id="1LnB5xdvY0a" role="3cqZAk">
-                    <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                    <ref role="3cqZAo" to="9a8:~MPSFonts.ITALIC" resolve="ITALIC" />
+                    <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                    <ref role="3cqZAo" to="exr9:~MPSFonts.ITALIC" resolve="ITALIC" />
                   </node>
                 </node>
               </node>
@@ -716,8 +716,8 @@
             </node>
             <node concept="3cpWs6" id="1LnB5xdvY0h" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdvY0k" role="3cqZAk">
-                <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                <ref role="3cqZAo" to="9a8:~MPSFonts.PLAIN" resolve="PLAIN" />
+                <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                <ref role="3cqZAo" to="exr9:~MPSFonts.PLAIN" resolve="PLAIN" />
               </node>
             </node>
             <node concept="3clFbH" id="1LnB5xdvY0g" role="3cqZAp" />

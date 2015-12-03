@@ -2,9 +2,9 @@
 <model ref="r:24e5d177-f282-40c2-ae7e-c52db64f5eb0(de.itemis.mps.editor.dropdown.demolang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="cd6ee994-5ea3-4b72-9d40-a3e80432a522" name="de.itemis.mps.editor.dropdown" version="0" />
     <use id="8f20f615-2fa8-4116-9731-37208a2ac2b8" name="de.slisson.mps.editor.tabs" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>

@@ -7,7 +7,6 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" fqName="com.mbeddr.mpsutil.margincell" version="0" />
     <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" fqName="com.mbeddr.mpsutil.review" version="0" />
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" fqName="com.mbeddr.mpsutil.review.annotation" version="0" />
     <language id="97f9a38a-5b19-4147-9eac-e1a8cab31065" fqName="com.mbeddr.mpsutil.review.readonly" version="0" />
