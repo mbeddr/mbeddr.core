@@ -42,8 +42,8 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="vux5" ref="r:d4785159-376e-4d99-a1d3-5a6f377de3e6(de.itemis.mps.editor.diagram.demo.activity.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="1njx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.view(de.itemis.mps.editor.diagram.runtime/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -2132,8 +2132,8 @@
         </node>
         <node concept="3clFbF" id="l6SLw4h174" role="3cqZAp">
           <node concept="2YIFZM" id="l6SLw4h175" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):boolean" resolve="runInUIThreadAndWait" />
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):java.lang.Exception" resolve="runInUIThreadAndWait" />
             <node concept="1bVj0M" id="l6SLw4h176" role="37wK5m">
               <property role="3yWfEV" value="true" />
               <node concept="3clFbS" id="l6SLw4h177" role="1bW5cS">
@@ -2413,8 +2413,8 @@
           </node>
           <node concept="3clFbF" id="5fm34X2$dbC" role="3cqZAp">
             <node concept="2YIFZM" id="5fm34X2$d$Y" role="3clFbG">
-              <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):boolean" resolve="runInUIThreadAndWait" />
               <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+              <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):java.lang.Exception" resolve="runInUIThreadAndWait" />
               <node concept="1bVj0M" id="5fm34X2$d_b" role="37wK5m">
                 <node concept="3clFbS" id="5fm34X2$d_c" role="1bW5cS">
                   <node concept="3cpWs8" id="l6SLw4jJDJ" role="3cqZAp">
@@ -4042,7 +4042,7 @@
         <node concept="3clFbF" id="l6SLw4hEdI" role="3cqZAp">
           <node concept="2YIFZM" id="l6SLw4hEdJ" role="3clFbG">
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):boolean" resolve="runInUIThreadAndWait" />
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):java.lang.Exception" resolve="runInUIThreadAndWait" />
             <node concept="1bVj0M" id="l6SLw4hEdK" role="37wK5m">
               <property role="3yWfEV" value="true" />
               <node concept="3clFbS" id="l6SLw4hEdL" role="1bW5cS">
@@ -4138,8 +4138,8 @@
         </node>
         <node concept="3clFbF" id="l6SLw4hNLR" role="3cqZAp">
           <node concept="2YIFZM" id="l6SLw4hNLS" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):boolean" resolve="runInUIThreadAndWait" />
             <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):java.lang.Exception" resolve="runInUIThreadAndWait" />
             <node concept="1bVj0M" id="l6SLw4hNLT" role="37wK5m">
               <property role="3yWfEV" value="true" />
               <node concept="3clFbS" id="l6SLw4hNLU" role="1bW5cS">
@@ -6308,8 +6308,8 @@
       </node>
       <node concept="3clFbF" id="50fzH4xe3d8" role="3cqZAp">
         <node concept="2YIFZM" id="50fzH4xe3kz" role="3clFbG">
-          <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):boolean" resolve="runInUIThreadAndWait" />
           <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+          <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):java.lang.Exception" resolve="runInUIThreadAndWait" />
           <node concept="1bVj0M" id="50fzH4xe3kM" role="37wK5m">
             <node concept="3clFbS" id="50fzH4xe3kN" role="1bW5cS">
               <node concept="3clFbF" id="50fzH4xcRax" role="3cqZAp">
@@ -8107,8 +8107,8 @@
           </node>
           <node concept="3clFbF" id="6$6tsX_yj_m" role="3cqZAp">
             <node concept="2YIFZM" id="6$6tsX_yjS7" role="3clFbG">
-              <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):boolean" resolve="runInUIThreadAndWait" />
               <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+              <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadAndWait(java.lang.Runnable):java.lang.Exception" resolve="runInUIThreadAndWait" />
               <node concept="1bVj0M" id="6$6tsX_yjSm" role="37wK5m">
                 <node concept="3clFbS" id="6$6tsX_yjSn" role="1bW5cS">
                   <node concept="3clFbF" id="24zrZPPG$bO" role="3cqZAp">
