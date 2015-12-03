@@ -1046,7 +1046,7 @@
           </node>
           <node concept="1SiIV0" id="2rSlnb0YxYZ" role="3bR37C">
             <node concept="3bR9La" id="2rSlnb0YxZ0" role="1SiIV1">
-              <property role="3bR36h" value="false" />
+              <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="5dYb5krUnP_" resolve="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
             </node>
           </node>
@@ -1059,7 +1059,7 @@
         </node>
         <node concept="1SiIV0" id="5dYb5krUAUd" role="3bR37C">
           <node concept="3bR9La" id="5dYb5krUAUe" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="5dYb5krUnP_" resolve="com.mbeddr.mpsutil.compare.pattern.generator.runtime" />
           </node>
         </node>
