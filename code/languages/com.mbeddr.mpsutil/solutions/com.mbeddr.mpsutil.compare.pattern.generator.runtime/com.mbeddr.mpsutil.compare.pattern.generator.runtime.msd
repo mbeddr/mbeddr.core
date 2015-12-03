@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.compare.pattern.generator.runtime" uuid="98c9c105-d602-4d30-920f-ede2039bca65" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.compare.pattern.generator.runtime" uuid="98c9c105-d602-4d30-920f-ede2039bca65" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

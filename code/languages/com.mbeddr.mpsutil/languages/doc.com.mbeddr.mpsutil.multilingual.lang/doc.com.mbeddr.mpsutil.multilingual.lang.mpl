@@ -15,7 +15,6 @@
       </models>
       <external-templates />
       <languageVersions>
-        <language id="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d" fqName="com.mbeddr.mpsutil.multilingual.concept" version="0" />
         <language id="ea7c5f4a-5621-4b35-a7bb-9aaab820eaf7" fqName="doc.com.mbeddr.mpsutil.multilingual.lang" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
