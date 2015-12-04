@@ -300,6 +300,7 @@
       </concept>
       <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
       <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
+        <property id="2704268044258142829" name="placeholderText" index="1YXhso" />
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
         <child id="2199447184406843652" name="columnHeaders" index="2YiT2b" />
       </concept>
@@ -955,6 +956,7 @@
     <ref role="1XX52x" to="nnej:1dAqnm8oBxc" resolve="RequirementsCollection" />
     <node concept="2rfBfz" id="1dAqnm8o6CS" role="2wV5jI">
       <node concept="2reSaE" id="3vizsF8spxX" role="2rf8GZ">
+        <property role="1YXhso" value="Press enter to add the first requirement" />
         <ref role="2reCK$" to="nnej:1dAqnm8oYDx" />
         <node concept="2rfbtV" id="1U60oYwR10g" role="2YiT2b">
           <property role="2rfbtB" value="Requirements" />
