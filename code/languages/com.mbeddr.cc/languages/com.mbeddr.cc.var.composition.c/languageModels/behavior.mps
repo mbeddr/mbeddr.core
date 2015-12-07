@@ -119,8 +119,8 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
-      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -206,8 +206,10 @@
             <node concept="37vLTw" id="5B$wwdfboQ_" role="2Oq$k0">
               <ref role="3cqZAo" node="5B$wwdfboPf" resolve="m" />
             </node>
-            <node concept="1j9C0f" id="5B$wwdfboZL" role="2OqNvi">
-              <ref role="1j9C0d" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            <node concept="2SmgA7" id="1KWs$eZQZ5n" role="2OqNvi">
+              <node concept="chp4Y" id="1KWs$eZQZ5D" role="1dBWTz">
+                <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+              </node>
             </node>
           </node>
         </node>
