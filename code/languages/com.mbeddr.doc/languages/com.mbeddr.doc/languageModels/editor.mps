@@ -221,6 +221,9 @@
         <child id="3982520150122341379" name="query" index="3tD6jU" />
       </concept>
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
+      <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
+        <reference id="1227861587090" name="link" index="3ygfmf" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
@@ -9076,17 +9079,8 @@
     </node>
     <node concept="1HlG4h" id="2rKfGsW6B$4" role="2wV5jI">
       <ref role="1k5W1q" node="aiIotXrYWY" resolve="ref" />
-      <node concept="3tD6jV" id="2rKfGsW4bLM" role="3F10Kt">
-        <ref role="3tD7wE" to="tj7y:80_psBRB9K" resolve="hyperlink-reference" />
-        <node concept="3sjG9q" id="2rKfGsW4bLO" role="3tD6jU">
-          <node concept="3clFbS" id="2rKfGsW4bLQ" role="2VODD2">
-            <node concept="3clFbF" id="2rKfGsW4bVR" role="3cqZAp">
-              <node concept="3clFbT" id="2rKfGsW4bVQ" role="3clFbG">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3yfXC2" id="4jXS_uRsYZu" role="3F10Kt">
+        <ref role="3ygfmf" to="2c95:2TZO3DbvhAJ" />
       </node>
       <node concept="1HfYo3" id="2rKfGsW6B$6" role="1HlULh">
         <node concept="3TQlhw" id="2rKfGsW6B$8" role="1Hhtcw">
