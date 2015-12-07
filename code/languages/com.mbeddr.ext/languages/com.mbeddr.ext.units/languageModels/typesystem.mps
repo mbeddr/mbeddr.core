@@ -8824,26 +8824,8 @@
     </node>
   </node>
   <node concept="18kY7G" id="5hN682joCuM">
-    <property role="TrG5h" value="Check_AnnotatedType" />
+    <property role="TrG5h" value="Check_ArrayTypeUnit" />
     <node concept="3clFbS" id="5hN682joCuN" role="18ibNy">
-      <node concept="3cpWs8" id="5hN682joMS9" role="3cqZAp">
-        <node concept="3cpWsn" id="5hN682joMSa" role="3cpWs9">
-          <property role="TrG5h" value="allowedToAddUnit" />
-          <node concept="10P_77" id="5hN682joMS8" role="1tU5fm" />
-          <node concept="2YIFZM" id="5hN682joMSb" role="33vP2m">
-            <ref role="37wK5l" to="ndfg:5hN682jnh6U" resolve="isAllowedToAddUnit" />
-            <ref role="1Pybhc" to="ndfg:5hN682jn7Qd" resolve="UnitUtils" />
-            <node concept="2OqwBi" id="5hN682joMSc" role="37wK5m">
-              <node concept="1YBJjd" id="5hN682joMSd" role="2Oq$k0">
-                <ref role="1YBMHb" node="5hN682joDkY" resolve="type" />
-              </node>
-              <node concept="3TrEf2" id="5hN682joMSe" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3clFbJ" id="5hN682joMWZ" role="3cqZAp">
         <node concept="3clFbS" id="5hN682joMX1" role="3clFbx">
           <node concept="2MkqsV" id="5hN682joOFT" role="3cqZAp">
@@ -8851,13 +8833,23 @@
               <ref role="1YBMHb" node="5hN682joDkY" resolve="type" />
             </node>
             <node concept="Xl_RD" id="5hN682joOG8" role="2MkJ7o">
-              <property role="Xl_RC" value="The unit declaration is incorrect. The usage is datatype/unit/[array_size]" />
+              <property role="Xl_RC" value="The unit declaration is incorrect. The usage is type/unit/[size]" />
             </node>
           </node>
         </node>
-        <node concept="3fqX7Q" id="5hN682joNP3" role="3clFbw">
-          <node concept="37vLTw" id="5hN682joOFF" role="3fr31v">
-            <ref role="3cqZAo" node="5hN682joMSa" resolve="allowedToAddUnit" />
+        <node concept="2OqwBi" id="SHmKFQjvuf" role="3clFbw">
+          <node concept="2OqwBi" id="SHmKFQjuUU" role="2Oq$k0">
+            <node concept="1YBJjd" id="SHmKFQjuPO" role="2Oq$k0">
+              <ref role="1YBMHb" node="5hN682joDkY" resolve="type" />
+            </node>
+            <node concept="3TrEf2" id="SHmKFQjvin" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="SHmKFQjv_R" role="2OqNvi">
+            <node concept="chp4Y" id="SHmKFQjvAA" role="cj9EA">
+              <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+            </node>
           </node>
         </node>
       </node>
