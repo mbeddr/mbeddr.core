@@ -311,8 +311,8 @@
             </node>
             <node concept="2OqwBi" id="7tHQrcrQ2gd" role="33vP2m">
               <node concept="2YIFZM" id="1KfSgTa_tEx" role="2Oq$k0">
-                <ref role="1Pybhc" to="ykkq:4_ta0wI0tzV" resolve="ActionsConfigurable" />
                 <ref role="37wK5l" to="ykkq:4_ta0wI29QY" resolve="getInstance" />
+                <ref role="1Pybhc" to="ykkq:4_ta0wI0tzV" resolve="ActionsConfigurable" />
               </node>
               <node concept="liA8E" id="7tHQrcrQ2gf" role="2OqNvi">
                 <ref role="37wK5l" to="ykkq:4_ta0wI19O5" resolve="getState" />
