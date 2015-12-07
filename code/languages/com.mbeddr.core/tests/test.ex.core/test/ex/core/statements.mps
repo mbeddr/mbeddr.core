@@ -40,9 +40,6 @@
         <child id="3134547887598524959" name="cases" index="ggJMH" />
         <child id="3134547887598524925" name="expression" index="ggJXf" />
       </concept>
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
       <concept id="3779779187805893258" name="com.mbeddr.core.statements.structure.ForVarRef" flags="ng" index="uSsIJ">
         <child id="3779779187805893261" name="init" index="uSsIC" />
         <child id="3779779187805926915" name="var" index="uS$WA" />
@@ -104,8 +101,6 @@
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
         <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
-      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
@@ -191,6 +186,9 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="1937609356306123790" name="com.mbeddr.core.unittest.structure.FailStatement" flags="ng" index="2eY$_Z" />
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
         <child id="7755897872837031765" name="actual" index="2N2GHg" />
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
@@ -203,9 +201,6 @@
       </concept>
       <concept id="186853311768108744" name="com.mbeddr.core.unittest.structure.ReportNodeAnnotation" flags="ng" index="3rBczg">
         <property id="186853311768108813" name="label" index="3rBc$l" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -807,57 +802,28 @@
     <node concept="2NXPZ9" id="xN636rYvdN" role="N3F5h">
       <property role="TrG5h" value="empty_1430819482989_2" />
     </node>
-    <node concept="N3Fnx" id="2I09F8VKR90" role="N3F5h">
+    <node concept="lIfQi" id="6TAwvhVWkhw" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="2I09F8VKR91" role="3XIRFX">
-        <node concept="2BFjQ_" id="4VEDcE28IVi" role="3XIRFZ">
-          <node concept="3rBj6X" id="4VEDcE28IVj" role="2BFjQA">
-            <node concept="3cM6IN" id="4VEDcE28IVk" role="3cM6Hi">
-              <ref role="3cM6IK" node="2I09F8VKRhz" resolve="doWhileStatement" />
-            </node>
-            <node concept="3cM6IN" id="4VEDcE28IVm" role="3cM6Hi">
-              <ref role="3cM6IK" node="7k_CvRMnl1m" resolve="forStatement" />
-            </node>
-            <node concept="3cM6IN" id="4VEDcE28IVo" role="3cM6Hi">
-              <ref role="3cM6IK" node="2I09F8VKSP1" resolve="ifAndElseIf" />
-            </node>
-            <node concept="3cM6IN" id="4VEDcE28IVq" role="3cM6Hi">
-              <ref role="3cM6IK" node="1FzLn6k6qEE" resolve="switchStatement" />
-            </node>
-            <node concept="3cM6IN" id="7VR7M8vDXzK" role="3cM6Hi">
-              <ref role="3cM6IK" node="7m5QaK8UDUl" resolve="forOverflowTesting" />
-            </node>
-            <node concept="3cM6IN" id="4VEDcE28IVs" role="3cM6Hi">
-              <ref role="3cM6IK" node="2I09F8VKR9b" resolve="whileStatement" />
-            </node>
-            <node concept="3cM6IN" id="3_fgNoLAYa3" role="3cM6Hi">
-              <ref role="3cM6IK" node="3_fgNoLAY9E" resolve="testStatic" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhx" role="lIfQt">
+        <ref role="3cM6IK" node="2I09F8VKRhz" resolve="doWhileStatement" />
       </node>
-      <node concept="26Vqph" id="5L_EpN3IDXV" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="6TAwvhVWkhy" role="lIfQt">
+        <ref role="3cM6IK" node="7k_CvRMnl1m" resolve="forStatement" />
       </node>
-      <node concept="19RgSI" id="5L_EpN3IDXX" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="5L_EpN3IDXW" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhz" role="lIfQt">
+        <ref role="3cM6IK" node="2I09F8VKSP1" resolve="ifAndElseIf" />
       </node>
-      <node concept="19RgSI" id="5L_EpN3IDY0" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="5L_EpN3IDXZ" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="5L_EpN3IDXY" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh$" role="lIfQt">
+        <ref role="3cM6IK" node="1FzLn6k6qEE" resolve="switchStatement" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh_" role="lIfQt">
+        <ref role="3cM6IK" node="7m5QaK8UDUl" resolve="forOverflowTesting" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhA" role="lIfQt">
+        <ref role="3cM6IK" node="2I09F8VKR9b" resolve="whileStatement" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhB" role="lIfQt">
+        <ref role="3cM6IK" node="3_fgNoLAY9E" resolve="testStatic" />
       </node>
     </node>
     <node concept="3GEVxB" id="2N1CSr$Bh4H" role="2OODSX">
