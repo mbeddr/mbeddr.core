@@ -546,6 +546,9 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
         <child id="7755897872837031765" name="actual" index="2N2GHg" />
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
@@ -553,9 +556,6 @@
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
       <concept id="8230733038425966121" name="com.mbeddr.core.unittest.structure.TestHelperFunctionAnnotation" flags="ng" index="1AiJoY" />
     </language>
@@ -1065,75 +1065,46 @@
   </registry>
   <node concept="N3F5e" id="7VsgA5L654u">
     <property role="TrG5h" value="Main" />
-    <node concept="N3Fnx" id="7VsgA5L654v" role="N3F5h">
+    <node concept="lIfQi" id="4Ru$s7zMArg" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="7VsgA5L654w" role="3XIRFX">
-        <node concept="2BFjQ_" id="7VsgA5L654x" role="3XIRFZ">
-          <node concept="3rBj6X" id="7VsgA5L654y" role="2BFjQA">
-            <node concept="3cM6IN" id="7VsgA5L65xj" role="3cM6Hi">
-              <ref role="3cM6IK" node="7VsgA5L65uE" resolve="testProcessing" />
-            </node>
-            <node concept="3cM6IN" id="4usdeMNUnmG" role="3cM6Hi">
-              <ref role="3cM6IK" node="4usdeMNUnk_" resolve="testLambdaProcessing" />
-            </node>
-            <node concept="3cM6IN" id="6Fkja4chfBD" role="3cM6Hi">
-              <ref role="3cM6IK" node="6Fkja4ceTX6" resolve="testNullerOK" />
-            </node>
-            <node concept="3cM6IN" id="1w5Xuj1S8q7" role="3cM6Hi">
-              <ref role="3cM6IK" node="1w5Xuj1S5Ie" resolve="testInterpolator" />
-            </node>
-            <node concept="3cM6IN" id="4usdeMNSU3T" role="3cM6Hi">
-              <ref role="3cM6IK" node="4usdeMNSGkI" resolve="testJudging" />
-            </node>
-            <node concept="3cM6IN" id="4usdeMNSU3V" role="3cM6Hi">
-              <ref role="3cM6IK" node="4usdeMNSK9i" resolve="testInterpolatorWithMock" />
-            </node>
-            <node concept="3cM6IN" id="6GXPbpLjwwd" role="3cM6Hi">
-              <ref role="3cM6IK" node="6GXPbpLibrx" resolve="testPrintf" />
-            </node>
-            <node concept="3cM6IN" id="6GXPbpLjwwe" role="3cM6Hi">
-              <ref role="3cM6IK" node="6GXPbpLjseN" resolve="testFlightAnalyzer" />
-            </node>
-            <node concept="3cM6IN" id="4I37X0YT4Ls" role="3cM6Hi">
-              <ref role="3cM6IK" node="4I37X0YSZr8" resolve="testRuntimeVar" />
-            </node>
-            <node concept="3cM6IN" id="KfIhkXdWvE" role="3cM6Hi">
-              <ref role="3cM6IK" node="KfIhkXddmZ" resolve="testPresenceConditions" />
-            </node>
-            <node concept="3cM6IN" id="4KbglN_9uDt" role="3cM6Hi">
-              <ref role="3cM6IK" node="4KbglN_7Dll" resolve="testConditionalAlternative" />
-            </node>
-            <node concept="3cM6IN" id="4KbglN_7BVD" role="3cM6Hi">
-              <ref role="3cM6IK" node="4KbglN_6Vgh" resolve="testConditionalReplacement" />
-            </node>
-            <node concept="3cM6IN" id="5NYlgF0y0Jh" role="3cM6Hi">
-              <ref role="3cM6IK" node="5NYlgF0xXPz" resolve="testFlightRecorder" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArh" role="lIfQt">
+        <ref role="3cM6IK" node="7VsgA5L65uE" resolve="testProcessing" />
       </node>
-      <node concept="26Vqph" id="7VsgA5L654$" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="4Ru$s7zMAri" role="lIfQt">
+        <ref role="3cM6IK" node="4usdeMNUnk_" resolve="testLambdaProcessing" />
       </node>
-      <node concept="19RgSI" id="7VsgA5L654_" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="7VsgA5L654A" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArj" role="lIfQt">
+        <ref role="3cM6IK" node="6Fkja4ceTX6" resolve="testNullerOK" />
       </node>
-      <node concept="19RgSI" id="7VsgA5L654B" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="7VsgA5L654C" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="7VsgA5L654E" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArk" role="lIfQt">
+        <ref role="3cM6IK" node="1w5Xuj1S5Ie" resolve="testInterpolator" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArl" role="lIfQt">
+        <ref role="3cM6IK" node="4usdeMNSGkI" resolve="testJudging" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArm" role="lIfQt">
+        <ref role="3cM6IK" node="4usdeMNSK9i" resolve="testInterpolatorWithMock" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArn" role="lIfQt">
+        <ref role="3cM6IK" node="6GXPbpLibrx" resolve="testPrintf" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMAro" role="lIfQt">
+        <ref role="3cM6IK" node="6GXPbpLjseN" resolve="testFlightAnalyzer" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArp" role="lIfQt">
+        <ref role="3cM6IK" node="4I37X0YSZr8" resolve="testRuntimeVar" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArq" role="lIfQt">
+        <ref role="3cM6IK" node="KfIhkXddmZ" resolve="testPresenceConditions" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArr" role="lIfQt">
+        <ref role="3cM6IK" node="4KbglN_7Dll" resolve="testConditionalAlternative" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArs" role="lIfQt">
+        <ref role="3cM6IK" node="4KbglN_6Vgh" resolve="testConditionalReplacement" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArt" role="lIfQt">
+        <ref role="3cM6IK" node="5NYlgF0xXPz" resolve="testFlightRecorder" />
       </node>
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsei" role="2OODSX">
@@ -13379,42 +13350,13 @@
     <node concept="2NXPZ9" id="11TWfQr5SHC" role="N3F5h">
       <property role="TrG5h" value="empty_1383325220110_16" />
     </node>
-    <node concept="N3Fnx" id="11TWfQr5SYH" role="N3F5h">
+    <node concept="lIfQi" id="4Ru$s7zMAru" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="11TWfQr5SYJ" role="3XIRFX">
-        <node concept="2BFjQ_" id="11TWfQr5SYR" role="3XIRFZ">
-          <node concept="3rBj6X" id="11TWfQr5TcB" role="2BFjQA">
-            <node concept="3cM6IN" id="11TWfQr5Td4" role="3cM6Hi">
-              <ref role="3cM6IK" node="11TWfQr5SmA" resolve="testAdding" />
-            </node>
-            <node concept="3cM6IN" id="2ncjLWke8nf" role="3cM6Hi">
-              <ref role="3cM6IK" node="11TWfQr5TNK" resolve="testDivision" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArv" role="lIfQt">
+        <ref role="3cM6IK" node="11TWfQr5SmA" resolve="testAdding" />
       </node>
-      <node concept="26Vqph" id="11TWfQr5SYL" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="19RgSI" id="11TWfQr5SYM" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="11TWfQr5SYN" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="19RgSI" id="11TWfQr5SYO" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="11TWfQr5SYP" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="11TWfQr5SYQ" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArw" role="lIfQt">
+        <ref role="3cM6IK" node="11TWfQr5TNK" resolve="testDivision" />
       </node>
     </node>
   </node>

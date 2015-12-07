@@ -14,9 +14,6 @@
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
         <child id="3134547887598486571" name="elsePart" index="ggAap" />
       </concept>
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
       <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
         <child id="1494329074535283249" name="body" index="1ly_ph" />
       </concept>
@@ -66,10 +63,6 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
-    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
-      <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
-    </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
@@ -118,9 +111,6 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
-      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
-        <child id="4185783222026475860" name="body" index="3XIRFX" />
-      </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
@@ -140,6 +130,9 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
         <child id="7755897872837031765" name="actual" index="2N2GHg" />
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
@@ -147,9 +140,6 @@
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
@@ -565,73 +555,43 @@
   </node>
   <node concept="N3F5e" id="34XnDxOSMGv">
     <property role="TrG5h" value="Main" />
-    <node concept="N3Fnx" id="34XnDxOSMEi" role="N3F5h">
+    <node concept="lIfQi" id="4Ru$s7zAKdk" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="34XnDxOSMEj" role="3XIRFX">
-        <node concept="3XISUE" id="34XnDxOSMEk" role="3XIRFZ" />
-        <node concept="2BFjQ_" id="34XnDxOSMEl" role="3XIRFZ">
-          <node concept="3rBj6X" id="34XnDxOSMGx" role="2BFjQA">
-            <node concept="3cM6IN" id="34XnDxOSMGy" role="3cM6Hi">
-              <ref role="3cM6IK" node="34XnDxOSMG6" resolve="correctWiringWithOneInstances" />
-            </node>
-            <node concept="3cM6IN" id="34XnDxOSOeD" role="3cM6Hi">
-              <ref role="3cM6IK" node="34XnDxOSOaZ" resolve="correctWiringWithMultipleInstances" />
-            </node>
-            <node concept="3cM6IN" id="34XnDxOSOKQ" role="3cM6Hi">
-              <ref role="3cM6IK" node="34XnDxOSOv2" resolve="correctWiringWithAssemblyConnector" />
-            </node>
-            <node concept="3cM6IN" id="34XnDxOSPzy" role="3cM6Hi">
-              <ref role="3cM6IK" node="34XnDxOSPy6" resolve="correctWiringWith2Levels" />
-            </node>
-            <node concept="3cM6IN" id="223R3D2fOJM" role="3cM6Hi">
-              <ref role="3cM6IK" node="223R3D2fOIG" resolve="correctWiringWithOneInstancesAndAdapter" />
-            </node>
-            <node concept="3cM6IN" id="223R3D2fZ$3" role="3cM6Hi">
-              <ref role="3cM6IK" node="223R3D2fZyP" resolve="correctWiringWith2LevelsAndAdapter" />
-            </node>
-            <node concept="3cM6IN" id="7M388_Gyovy" role="3cM6Hi">
-              <ref role="3cM6IK" node="7M388_Gyoud" resolve="constructorCallOneInstances" />
-            </node>
-            <node concept="3cM6IN" id="2LSSMkCIRxM" role="3cM6Hi">
-              <ref role="3cM6IK" node="2LSSMkCIRwi" resolve="constructorCallMultipleInstances" />
-            </node>
-            <node concept="3cM6IN" id="2LSSMkCIS_x" role="3cM6Hi">
-              <ref role="3cM6IK" node="2LSSMkCISxa" resolve="initParams" />
-            </node>
-            <node concept="3cM6IN" id="7mgpfAOksqb" role="3cM6Hi">
-              <ref role="3cM6IK" node="7mgpfAOjgyF" resolve="constructorCallAbstractComponent" />
-            </node>
-            <node concept="3cM6IN" id="7kKzL6whV4o" role="3cM6Hi">
-              <ref role="3cM6IK" node="7kKzL6whRFx" resolve="testWarapper" />
-            </node>
-            <node concept="3cM6IN" id="6AXziRbMyDF" role="3cM6Hi">
-              <ref role="3cM6IK" node="6AXziRbMy1t" resolve="testCallFromCompositeComponentToInnerComponent" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdl" role="lIfQt">
+        <ref role="3cM6IK" node="34XnDxOSMG6" resolve="correctWiringWithOneInstances" />
       </node>
-      <node concept="26Vqph" id="34XnDxOSMEn" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="4Ru$s7zAKdm" role="lIfQt">
+        <ref role="3cM6IK" node="34XnDxOSOaZ" resolve="correctWiringWithMultipleInstances" />
       </node>
-      <node concept="19RgSI" id="34XnDxOSMEo" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="34XnDxOSMEp" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdn" role="lIfQt">
+        <ref role="3cM6IK" node="34XnDxOSOv2" resolve="correctWiringWithAssemblyConnector" />
       </node>
-      <node concept="19RgSI" id="34XnDxOSMEq" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3wxxNl" id="34XnDxOSMEs" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="34XnDxOSMEt" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdo" role="lIfQt">
+        <ref role="3cM6IK" node="34XnDxOSPy6" resolve="correctWiringWith2Levels" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdp" role="lIfQt">
+        <ref role="3cM6IK" node="223R3D2fOIG" resolve="correctWiringWithOneInstancesAndAdapter" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdq" role="lIfQt">
+        <ref role="3cM6IK" node="223R3D2fZyP" resolve="correctWiringWith2LevelsAndAdapter" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdr" role="lIfQt">
+        <ref role="3cM6IK" node="7M388_Gyoud" resolve="constructorCallOneInstances" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKds" role="lIfQt">
+        <ref role="3cM6IK" node="2LSSMkCIRwi" resolve="constructorCallMultipleInstances" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdt" role="lIfQt">
+        <ref role="3cM6IK" node="2LSSMkCISxa" resolve="initParams" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdu" role="lIfQt">
+        <ref role="3cM6IK" node="7mgpfAOjgyF" resolve="constructorCallAbstractComponent" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdv" role="lIfQt">
+        <ref role="3cM6IK" node="7kKzL6whRFx" resolve="testWarapper" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKdw" role="lIfQt">
+        <ref role="3cM6IK" node="6AXziRbMy1t" resolve="testCallFromCompositeComponentToInnerComponent" />
       </node>
     </node>
     <node concept="3GEVxB" id="734bZETuhPE" role="2OODSX">

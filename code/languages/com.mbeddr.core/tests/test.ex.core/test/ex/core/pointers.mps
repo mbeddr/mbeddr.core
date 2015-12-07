@@ -266,6 +266,9 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
         <child id="7755897872837031765" name="actual" index="2N2GHg" />
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
@@ -276,9 +279,6 @@
       </concept>
       <concept id="186853311768108744" name="com.mbeddr.core.unittest.structure.ReportNodeAnnotation" flags="ng" index="3rBczg">
         <property id="186853311768108813" name="label" index="3rBc$l" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -828,87 +828,58 @@
   </node>
   <node concept="N3F5e" id="4Y0lNFa3gJV">
     <property role="TrG5h" value="Driver" />
-    <node concept="N3Fnx" id="4Y0lNFa3gJW" role="N3F5h">
+    <node concept="lIfQi" id="6TAwvhVWkh1" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="4Y0lNFa3gJX" role="3XIRFX">
-        <node concept="2BFjQ_" id="7qHzltJ0L7k" role="3XIRFZ">
-          <node concept="3rBj6X" id="4Y0lNFa3gK1" role="2BFjQA">
-            <node concept="3cM6IN" id="7qHzltJ0WKN" role="3cM6Hi">
-              <ref role="3cM6IK" node="4Y0lNFa3gJa" resolve="arrayTest" />
-            </node>
-            <node concept="3cM6IN" id="7qHzltJ0WO$" role="3cM6Hi">
-              <ref role="3cM6IK" node="6OxpEKG0Aez" resolve="casting" />
-            </node>
-            <node concept="3cM6IN" id="7qHzltJ0WSq" role="3cM6Hi">
-              <ref role="3cM6IK" node="5IYyAOzBgH9" resolve="mallocTest" />
-            </node>
-            <node concept="3cM6IN" id="7qHzltJ0X0l" role="3cM6Hi">
-              <ref role="3cM6IK" node="7qHzltJ0oHI" resolve="testFC" />
-            </node>
-            <node concept="3cM6IN" id="7qHzltJ0X4l" role="3cM6Hi">
-              <ref role="3cM6IK" node="5IYyAOzBdTS" resolve="pointerTest" />
-            </node>
-            <node concept="3cM6IN" id="7apEgWbJwDT" role="3cM6Hi">
-              <ref role="3cM6IK" node="7apEgWbJpJx" resolve="testClosures" />
-            </node>
-            <node concept="3cM6IN" id="3pWy65PLSP4" role="3cM6Hi">
-              <ref role="3cM6IK" node="3pWy65PLS9S" resolve="testFunctionMacro" />
-            </node>
-            <node concept="3cM6IN" id="3pWy65PLW3U" role="3cM6Hi">
-              <ref role="3cM6IK" node="3pWy65PLVEV" resolve="testFunctionWithEllipses" />
-            </node>
-            <node concept="3cM6IN" id="4VxFbWczdv_" role="3cM6Hi">
-              <ref role="3cM6IK" node="4VxFbWczdvt" resolve="stringtypes" />
-            </node>
-            <node concept="3cM6IN" id="3$tYugdX404" role="3cM6Hi">
-              <ref role="3cM6IK" node="eSkzRgLO1I" resolve="testInitializeArray" />
-            </node>
-            <node concept="3cM6IN" id="3$tYuge5b7V" role="3cM6Hi">
-              <ref role="3cM6IK" node="7tm$oh3nWYv" resolve="arrayTest2" />
-            </node>
-            <node concept="3cM6IN" id="3$tYuge5b7W" role="3cM6Hi">
-              <ref role="3cM6IK" node="3$tYuge5b5r" resolve="testInitializeStructByPosition" />
-            </node>
-            <node concept="3cM6IN" id="34d3$NxQd1A" role="3cM6Hi">
-              <ref role="3cM6IK" node="34d3$NxQcVv" resolve="testInitializeStructByName" />
-            </node>
-            <node concept="3cM6IN" id="34d3$NxRv5u" role="3cM6Hi">
-              <ref role="3cM6IK" node="34d3$NxRv3z" resolve="testUnion" />
-            </node>
-            <node concept="3cM6IN" id="BZ96AQHX8j" role="3cM6Hi">
-              <ref role="3cM6IK" node="3N4bYGmPdV5" resolve="fCallTest" />
-            </node>
-            <node concept="3cM6IN" id="7m5QaK8GCXp" role="3cM6Hi">
-              <ref role="3cM6IK" node="7m5QaK8GCwL" resolve="arraysAndPointers" />
-            </node>
-            <node concept="3cM6IN" id="6Pt2vx4qeKu" role="3cM6Hi">
-              <ref role="3cM6IK" node="6Pt2vx4lYx_" resolve="testConcat" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh2" role="lIfQt">
+        <ref role="3cM6IK" node="4Y0lNFa3gJa" resolve="arrayTest" />
       </node>
-      <node concept="26Vqph" id="6PCgYL5qJ3o" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="6TAwvhVWkh3" role="lIfQt">
+        <ref role="3cM6IK" node="6OxpEKG0Aez" resolve="casting" />
       </node>
-      <node concept="19RgSI" id="6PCgYL5qJ3q" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="6PCgYL5qJ3p" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh4" role="lIfQt">
+        <ref role="3cM6IK" node="5IYyAOzBgH9" resolve="mallocTest" />
       </node>
-      <node concept="19RgSI" id="6PCgYL5qJ3t" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="6PCgYL5qJ3s" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="6PCgYL5qJ3r" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh5" role="lIfQt">
+        <ref role="3cM6IK" node="7qHzltJ0oHI" resolve="testFC" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh6" role="lIfQt">
+        <ref role="3cM6IK" node="5IYyAOzBdTS" resolve="pointerTest" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh7" role="lIfQt">
+        <ref role="3cM6IK" node="7apEgWbJpJx" resolve="testClosures" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh8" role="lIfQt">
+        <ref role="3cM6IK" node="3pWy65PLS9S" resolve="testFunctionMacro" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkh9" role="lIfQt">
+        <ref role="3cM6IK" node="3pWy65PLVEV" resolve="testFunctionWithEllipses" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkha" role="lIfQt">
+        <ref role="3cM6IK" node="4VxFbWczdvt" resolve="stringtypes" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhb" role="lIfQt">
+        <ref role="3cM6IK" node="eSkzRgLO1I" resolve="testInitializeArray" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhc" role="lIfQt">
+        <ref role="3cM6IK" node="7tm$oh3nWYv" resolve="arrayTest2" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhd" role="lIfQt">
+        <ref role="3cM6IK" node="3$tYuge5b5r" resolve="testInitializeStructByPosition" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhe" role="lIfQt">
+        <ref role="3cM6IK" node="34d3$NxQcVv" resolve="testInitializeStructByName" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhf" role="lIfQt">
+        <ref role="3cM6IK" node="34d3$NxRv3z" resolve="testUnion" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhg" role="lIfQt">
+        <ref role="3cM6IK" node="3N4bYGmPdV5" resolve="fCallTest" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhh" role="lIfQt">
+        <ref role="3cM6IK" node="7m5QaK8GCwL" resolve="arraysAndPointers" />
+      </node>
+      <node concept="3cM6IN" id="6TAwvhVWkhi" role="lIfQt">
+        <ref role="3cM6IK" node="6Pt2vx4lYx_" resolve="testConcat" />
       </node>
     </node>
     <node concept="3GEVxB" id="6o2p2Z1mDlu" role="2OODSX">

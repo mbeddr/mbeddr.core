@@ -1159,5 +1159,34 @@
       <property role="2BUmq6" value="Pointer Decorations" />
     </node>
   </node>
+  <node concept="24kQdi" id="4Ru$s7z$wWn">
+    <property role="3GE5qa" value="literals" />
+    <ref role="1XX52x" to="yq40:4DjlAm4JWli" resolve="VerbatimStringLiteral" />
+    <node concept="1WcQYu" id="4Ru$s7z$wWt" role="2wV5jI">
+      <node concept="2ElW$n" id="4Ru$s7z$wWu" role="2El2Yn" />
+      <node concept="3EZMnI" id="4Ru$s7z$wWv" role="1LiK7o">
+        <node concept="3F0ifn" id="4Ru$s7z$wWw" role="3EZMnx">
+          <property role="3F0ifm" value="@&quot;" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dgSqd" resolve="String" />
+          <node concept="11LMrY" id="4Ru$s7z$wWx" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2lNzut" id="4Ru$s7z$wWy" role="3EZMnx">
+          <ref role="1k5W1q" to="r4b4:2CEi94dgSqd" resolve="String" />
+          <ref role="1NtTu8" to="yq40:5jmmCdx$f5U" resolve="value" />
+          <node concept="bYqrx" id="4Ru$s7z$wWz" role="2lD6_D" />
+        </node>
+        <node concept="3F0ifn" id="4Ru$s7z$wW$" role="3EZMnx">
+          <property role="3F0ifm" value="&quot;" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dgSqd" resolve="String" />
+          <node concept="11L4FC" id="4Ru$s7z$wW_" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="4Ru$s7z$wWA" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
 </model>
 

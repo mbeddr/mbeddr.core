@@ -13,6 +13,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -136,6 +137,9 @@
     </node>
     <node concept="PrWs8" id="5hYHEwYi0Li" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
+    </node>
+    <node concept="PrWs8" id="6TAwvhVRLe8" role="PzmwI">
+      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
     </node>
     <node concept="1TJgyj" id="4VEDcE28GYo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -452,6 +456,24 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7tWSY$P9Oes" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TAwvhVRBLA">
+    <property role="1pbfSe" value="364577190" />
+    <property role="TrG5h" value="TestCollection" />
+    <property role="34LRSv" value="testcollection" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6TAwvhVRBLD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tests" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2MbfxrZIHSm" resolve="ICanBeExecutedAsTest" />
+    </node>
+    <node concept="PrWs8" id="6TAwvhVRBLB" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="6TAwvhVSitS" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2MbfxrZI9YU" resolve="IMayActAsMainFunction" />
     </node>
   </node>
 </model>

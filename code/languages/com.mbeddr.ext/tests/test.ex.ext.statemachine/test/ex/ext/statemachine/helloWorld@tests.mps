@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
@@ -12,13 +11,11 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
   </languages>
   <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -57,10 +54,6 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
-    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
-      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
-    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -77,9 +70,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
-        <child id="8967919205527146150" name="expression" index="2BFjQA" />
-      </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -113,11 +103,11 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
@@ -1440,60 +1430,31 @@
   </node>
   <node concept="N3F5e" id="KU5KLY2jUJ">
     <property role="TrG5h" value="Main" />
-    <node concept="N3Fnx" id="1RMTzGHzhw" role="N3F5h">
+    <node concept="lIfQi" id="4Ru$s7zAKQV" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="1RMTzGHzhx" role="3XIRFX">
-        <node concept="2BFjQ_" id="1RMTzGHzhH" role="3XIRFZ">
-          <node concept="3rBj6X" id="1RMTzGHzhI" role="2BFjQA">
-            <node concept="3cM6IN" id="1RMTzGHzhJ" role="3cM6Hi">
-              <ref role="3cM6IK" node="3TE6JCmbZMF" resolve="testTheWrapper" />
-            </node>
-            <node concept="3cM6IN" id="KU5KLY2jUP" role="3cM6Hi">
-              <ref role="3cM6IK" node="KU5KLY2jGF" resolve="testEntryActions" />
-            </node>
-            <node concept="3cM6IN" id="5aNdPeN30bb" role="3cM6Hi">
-              <ref role="3cM6IK" node="5aNdPeN2YzC" resolve="testSelfTrigger" />
-            </node>
-            <node concept="3cM6IN" id="7gVrg_0wAoQ" role="3cM6Hi">
-              <ref role="3cM6IK" node="7gVrg_0w_l3" resolve="testSelfTriggerInInitial" />
-            </node>
-            <node concept="3cM6IN" id="WbtL4faGb" role="3cM6Hi">
-              <ref role="3cM6IK" node="WbtL4f5JN" resolve="SMWithEventArgs" />
-            </node>
-            <node concept="3cM6IN" id="5jCi3tJ6q0k" role="3cM6Hi">
-              <ref role="3cM6IK" node="5jCi3tJ6i31" resolve="oldWayOfVarAccess" />
-            </node>
-            <node concept="3cM6IN" id="5jCi3tJq4SN" role="3cM6Hi">
-              <ref role="3cM6IK" node="5jCi3tJ6ro9" resolve="newWayOfVarAccess" />
-            </node>
-            <node concept="3cM6IN" id="4ZnMRYV0ZCP" role="3cM6Hi">
-              <ref role="3cM6IK" node="5jCi3tKm4PK" resolve="testNewTriggering" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKQW" role="lIfQt">
+        <ref role="3cM6IK" node="3TE6JCmbZMF" resolve="testTheWrapper" />
       </node>
-      <node concept="26Vqph" id="6PCgYL5xRpd" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="4Ru$s7zAKQX" role="lIfQt">
+        <ref role="3cM6IK" node="KU5KLY2jGF" resolve="testEntryActions" />
       </node>
-      <node concept="19RgSI" id="6PCgYL5xRpf" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="6PCgYL5xRpe" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKQY" role="lIfQt">
+        <ref role="3cM6IK" node="5aNdPeN2YzC" resolve="testSelfTrigger" />
       </node>
-      <node concept="19RgSI" id="6PCgYL5xRpi" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="6PCgYL5xRph" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="6PCgYL5xRpg" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKQZ" role="lIfQt">
+        <ref role="3cM6IK" node="7gVrg_0w_l3" resolve="testSelfTriggerInInitial" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKR0" role="lIfQt">
+        <ref role="3cM6IK" node="WbtL4f5JN" resolve="SMWithEventArgs" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKR1" role="lIfQt">
+        <ref role="3cM6IK" node="5jCi3tJ6i31" resolve="oldWayOfVarAccess" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKR2" role="lIfQt">
+        <ref role="3cM6IK" node="5jCi3tJ6ro9" resolve="newWayOfVarAccess" />
+      </node>
+      <node concept="3cM6IN" id="4Ru$s7zAKR3" role="lIfQt">
+        <ref role="3cM6IK" node="5jCi3tKm4PK" resolve="testNewTriggering" />
       </node>
     </node>
     <node concept="3GEVxB" id="WbtL4faBx" role="2OODSX">
