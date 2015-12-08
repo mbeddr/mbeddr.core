@@ -1651,32 +1651,6 @@
             <property role="TrG5h" value="module" />
           </node>
           <node concept="3clFbS" id="VPgi8egiRe" role="2LFqv$">
-            <node concept="3clFbJ" id="4jHuzb0Ele6" role="3cqZAp">
-              <node concept="3clFbS" id="4jHuzb0Ele8" role="3clFbx">
-                <node concept="3clFbF" id="4jHuzb0Enay" role="3cqZAp">
-                  <node concept="1rXfSq" id="4jHuzb0Enaw" role="3clFbG">
-                    <ref role="37wK5l" node="VPgi8egh6x" resolve="dispose" />
-                  </node>
-                </node>
-                <node concept="3cpWs6" id="4jHuzb0EnuA" role="3cqZAp" />
-              </node>
-              <node concept="17R0WA" id="4jHuzb0EmcC" role="3clFbw">
-                <node concept="37shsh" id="4jHuzb0Em_2" role="3uHU7w">
-                  <node concept="20RdaH" id="4jHuzb0EmAp" role="37shsm">
-                    <property role="20Rdg5" value="28583149-5b6e-4663-9c02-b9a8fa3cb099" />
-                    <property role="20Rdg7" value="com.mbeddr.mpsutil.contextactions.runtime" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4jHuzb0ElMT" role="3uHU7B">
-                  <node concept="2GrUjf" id="4jHuzb0ElAm" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="VPgi8egiRd" resolve="module" />
-                  </node>
-                  <node concept="liA8E" id="4jHuzb0Embu" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="VPgi8egiV_" role="3cqZAp">
               <node concept="1rXfSq" id="VPgi8egiV$" role="3clFbG">
                 <ref role="37wK5l" node="VPgi8egic3" resolve="loadModule" />
@@ -1720,6 +1694,32 @@
             <property role="TrG5h" value="module" />
           </node>
           <node concept="3clFbS" id="VPgi8egj9g" role="2LFqv$">
+            <node concept="3clFbJ" id="4jHuzb0Ele6" role="3cqZAp">
+              <node concept="3clFbS" id="4jHuzb0Ele8" role="3clFbx">
+                <node concept="3clFbF" id="4jHuzb0Enay" role="3cqZAp">
+                  <node concept="1rXfSq" id="4jHuzb0Enaw" role="3clFbG">
+                    <ref role="37wK5l" node="VPgi8egh6x" resolve="dispose" />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="4jHuzb0EnuA" role="3cqZAp" />
+              </node>
+              <node concept="17R0WA" id="4jHuzb0EmcC" role="3clFbw">
+                <node concept="37shsh" id="4jHuzb0Em_2" role="3uHU7w">
+                  <node concept="20RdaH" id="4jHuzb0EmAp" role="37shsm">
+                    <property role="20Rdg5" value="28583149-5b6e-4663-9c02-b9a8fa3cb099" />
+                    <property role="20Rdg7" value="com.mbeddr.mpsutil.contextactions.runtime" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4jHuzb0ElMT" role="3uHU7B">
+                  <node concept="2GrUjf" id="5iT8KGXpSGX" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="VPgi8egj9f" resolve="module" />
+                  </node>
+                  <node concept="liA8E" id="4jHuzb0Embu" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="VPgi8egj9h" role="3cqZAp">
               <node concept="1rXfSq" id="VPgi8egj9i" role="3clFbG">
                 <ref role="37wK5l" node="VPgi8eginJ" resolve="unloadModule" />
