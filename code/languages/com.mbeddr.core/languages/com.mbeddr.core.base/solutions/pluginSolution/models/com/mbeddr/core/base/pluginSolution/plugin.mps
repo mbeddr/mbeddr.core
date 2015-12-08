@@ -739,33 +739,6 @@
       <property role="pLAjf" value="VK_A" />
     </node>
   </node>
-  <node concept="1lpA8v" id="6xlxoSXdgd1">
-    <property role="TrG5h" value="Comment In" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:65XyadYNwBF" resolve="commentBackInCode" />
-    <node concept="pLAjd" id="6xlxoSXdgd2" role="1lpA8t">
-      <property role="pLAjf" value="VK_C" />
-      <property role="pLAjc" value="ctrl+alt" />
-    </node>
-  </node>
-  <node concept="1lpA8v" id="6xlxoSXdgd3">
-    <property role="TrG5h" value="Comment In" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:MGIVVaAnY" resolve="commentBackInCodeOnOriginal" />
-    <node concept="pLAjd" id="6xlxoSXdgd4" role="1lpA8t">
-      <property role="pLAjf" value="VK_C" />
-      <property role="pLAjc" value="ctrl+alt" />
-    </node>
-  </node>
-  <node concept="1lpA8v" id="6xlxoSXdgd7">
-    <property role="TrG5h" value="Comment Out" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:65XyadYMNlZ" resolve="commentedOutCode" />
-    <node concept="pLAjd" id="6xlxoSXdgd8" role="1lpA8t">
-      <property role="pLAjf" value="VK_C" />
-      <property role="pLAjc" value="ctrl+alt" />
-    </node>
-  </node>
   <node concept="312cEu" id="58syclRv9F3">
     <property role="TrG5h" value="MbeddrTodoFinder" />
     <property role="3GE5qa" value="todoAndLOC" />
