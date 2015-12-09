@@ -311,11 +311,11 @@
             </node>
             <node concept="2OqwBi" id="7tHQrcrQ2gd" role="33vP2m">
               <node concept="2YIFZM" id="1KfSgTa_tEx" role="2Oq$k0">
-                <ref role="37wK5l" to="ykkq:4_ta0wI29QY" resolve="getInstance" />
-                <ref role="1Pybhc" to="ykkq:4_ta0wI0tzV" resolve="ActionsConfigurable" />
+                <ref role="1Pybhc" to="ykkq:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                <ref role="37wK5l" to="ykkq:5vQUrnx8UbS" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="7tHQrcrQ2gf" role="2OqNvi">
-                <ref role="37wK5l" to="ykkq:4_ta0wI19O5" resolve="getState" />
+                <ref role="37wK5l" to="ykkq:5vQUrnx8UdY" resolve="getState" />
               </node>
             </node>
           </node>
@@ -522,14 +522,9 @@
               <node concept="3clFbS" id="1KfSgTa_zOo" role="3clFbx">
                 <node concept="3clFbF" id="1KfSgTa_$nl" role="3cqZAp">
                   <node concept="2OqwBi" id="1KfSgTa_$nn" role="3clFbG">
-                    <node concept="2OqwBi" id="1KfSgTa_$no" role="2Oq$k0">
-                      <node concept="2YIFZM" id="1KfSgTa_$np" role="2Oq$k0">
-                        <ref role="1Pybhc" to="ykkq:4EB7X9ki7CF" resolve="FilteringActionManager" />
-                        <ref role="37wK5l" to="ykkq:2P0hLWpHTkD" resolve="getInstance" />
-                      </node>
-                      <node concept="liA8E" id="1KfSgTa_$nq" role="2OqNvi">
-                        <ref role="37wK5l" to="ykkq:5wzRHNZC2Xt" resolve="getFilter" />
-                      </node>
+                    <node concept="2YIFZM" id="1KfSgTa_$np" role="2Oq$k0">
+                      <ref role="1Pybhc" to="ykkq:5wzRHNZvnP_" resolve="ActionFilter" />
+                      <ref role="37wK5l" to="ykkq:3_otpeV6DTU" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="1KfSgTa_$nr" role="2OqNvi">
                       <ref role="37wK5l" to="ykkq:5wzRHNZwPoP" resolve="setFilters" />
@@ -611,14 +606,9 @@
           <node concept="3clFbS" id="55swOgiJlWK" role="3clFbx">
             <node concept="3clFbF" id="55swOgiJn4e" role="3cqZAp">
               <node concept="2OqwBi" id="55swOgiJn4g" role="3clFbG">
-                <node concept="2OqwBi" id="55swOgiJn4h" role="2Oq$k0">
-                  <node concept="2YIFZM" id="55swOgiJn4i" role="2Oq$k0">
-                    <ref role="1Pybhc" to="ykkq:4EB7X9ki7CF" resolve="FilteringActionManager" />
-                    <ref role="37wK5l" to="ykkq:2P0hLWpHTkD" resolve="getInstance" />
-                  </node>
-                  <node concept="liA8E" id="55swOgiJn4j" role="2OqNvi">
-                    <ref role="37wK5l" to="ykkq:5wzRHNZC2Xt" resolve="getFilter" />
-                  </node>
+                <node concept="2YIFZM" id="55swOgiJn4i" role="2Oq$k0">
+                  <ref role="1Pybhc" to="ykkq:5wzRHNZvnP_" resolve="ActionFilter" />
+                  <ref role="37wK5l" to="ykkq:3_otpeV6DTU" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="55swOgiJn4k" role="2OqNvi">
                   <ref role="37wK5l" to="ykkq:5wzRHNZwPoP" resolve="setFilters" />
