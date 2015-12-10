@@ -14,6 +14,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor(MPS.Editor/)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="cmsr" ref="r:ad2e4832-0577-46d7-b0a6-761102effa9f(com.mbeddr.mpsutil.grammarcells.generatorutils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -145,6 +146,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -1594,6 +1598,62 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VjNOn_D4kv">
+    <property role="TrG5h" value="componentCellInlineWarning" />
+    <node concept="3clFbS" id="7VjNOn_D4kw" role="18ibNy">
+      <node concept="3clFbJ" id="7VjNOn_D4kM" role="3cqZAp">
+        <node concept="3clFbS" id="7VjNOn_D4kN" role="3clFbx">
+          <node concept="a7r0C" id="7VjNOn_DbKX" role="3cqZAp">
+            <node concept="1YBJjd" id="7VjNOn_DbL_" role="2OEOjV">
+              <ref role="1YBMHb" node="7VjNOn_D4ky" resolve="node" />
+            </node>
+            <node concept="Xl_RD" id="7VjNOn_DbKZ" role="a7wSD">
+              <property role="Xl_RC" value="Will be inlined. Override will not work." />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="7VjNOn_D4z3" role="3clFbw">
+          <ref role="37wK5l" to="cmsr:7VjNOn_CDwO" resolve="componentCellRequiresInline" />
+          <ref role="1Pybhc" to="cmsr:73exJLGGbPM" resolve="GeneratorUtils" />
+          <node concept="1YBJjd" id="7VjNOn_D4zq" role="37wK5m">
+            <ref role="1YBMHb" node="7VjNOn_D4ky" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VjNOn_D4ky" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VjNOn_D4B5">
+    <property role="TrG5h" value="componentInlineWarning" />
+    <node concept="3clFbS" id="7VjNOn_D4B6" role="18ibNy">
+      <node concept="3clFbJ" id="7VjNOn_D4B7" role="3cqZAp">
+        <node concept="3clFbS" id="7VjNOn_D4B8" role="3clFbx">
+          <node concept="a7r0C" id="7VjNOn_DbJi" role="3cqZAp">
+            <node concept="1YBJjd" id="7VjNOn_DbJX" role="2OEOjV">
+              <ref role="1YBMHb" node="7VjNOn_D4Bd" resolve="node" />
+            </node>
+            <node concept="Xl_RD" id="7VjNOn_DbJI" role="a7wSD">
+              <property role="Xl_RC" value="Will be inlined. Override will not work." />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="7VjNOn_D4FP" role="3clFbw">
+          <ref role="37wK5l" to="cmsr:7VjNOn_CUaJ" resolve="componentRequiresInline" />
+          <ref role="1Pybhc" to="cmsr:73exJLGGbPM" resolve="GeneratorUtils" />
+          <node concept="1YBJjd" id="7VjNOn_D4FQ" role="37wK5m">
+            <ref role="1YBMHb" node="7VjNOn_D4Bd" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VjNOn_D4Bd" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="tpc2:fGPKFH7" resolve="EditorComponentDeclaration" />
     </node>
   </node>
 </model>

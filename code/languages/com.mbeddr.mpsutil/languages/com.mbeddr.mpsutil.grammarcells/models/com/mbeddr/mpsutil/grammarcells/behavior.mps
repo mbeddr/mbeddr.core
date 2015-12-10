@@ -2423,6 +2423,39 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7VjNOn_zHvR" role="3cqZAp">
+          <node concept="37vLTI" id="7VjNOn_zIde" role="3clFbG">
+            <node concept="2YIFZM" id="7VjNOn_zImA" role="37vLTx">
+              <ref role="37wK5l" to="cmsr:7VjNOn_zFK8" resolve="inlineComponents" />
+              <ref role="1Pybhc" to="cmsr:4eBi5gdAicV" resolve="CellModelTraversalUtil" />
+              <node concept="37vLTw" id="7VjNOn_zInR" role="37wK5m">
+                <ref role="3cqZAo" node="5ewxJLJn3LT" resolve="symbols" />
+              </node>
+              <node concept="1bVj0M" id="7VjNOn_zItR" role="37wK5m">
+                <node concept="37vLTG" id="7VjNOn_zIw9" role="1bW2Oz">
+                  <property role="TrG5h" value="componentRoot" />
+                  <node concept="3Tqbb2" id="7VjNOn_zIzk" role="1tU5fm">
+                    <ref role="ehGHo" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7VjNOn_zItT" role="1bW5cS">
+                  <node concept="3clFbF" id="7VjNOn_zIN7" role="3cqZAp">
+                    <node concept="2YIFZM" id="7VjNOn_zITZ" role="3clFbG">
+                      <ref role="37wK5l" to="cmsr:5OsvY4gxRdc" resolve="collectDescendantLeafs" />
+                      <ref role="1Pybhc" to="cmsr:4eBi5gdAicV" resolve="CellModelTraversalUtil" />
+                      <node concept="37vLTw" id="7VjNOn_zJ4L" role="37wK5m">
+                        <ref role="3cqZAo" node="7VjNOn_zIw9" resolve="componentRoot" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="7VjNOn_zHvP" role="37vLTJ">
+              <ref role="3cqZAo" node="5ewxJLJn3LT" resolve="symbols" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="5ewxJLJn4aL" role="3cqZAp">
           <node concept="2OqwBi" id="5$jJV5eohdj" role="3cqZAk">
             <node concept="2OqwBi" id="5$jJV5eo9e7" role="2Oq$k0">
@@ -2762,7 +2795,7 @@
   </node>
   <node concept="13h7C7" id="3pFNVizE$9N">
     <property role="3GE5qa" value="cells" />
-    <ref role="13h7C2" to="teg0:3pFNVizDvwD" resolve="SplitableCell" />
+    <ref role="13h7C2" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
     <node concept="13hLZK" id="3pFNVizE$9O" role="13h7CW">
       <node concept="3clFbS" id="3pFNVizE$9P" role="2VODD2" />
     </node>
