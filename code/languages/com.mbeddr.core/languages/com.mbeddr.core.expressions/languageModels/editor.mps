@@ -573,15 +573,9 @@
       </node>
       <node concept="PMmxH" id="2zhwXA$TG_o" role="3EZMnx">
         <ref role="PMmxG" node="2zhwXA$RHx8" resolve="constFlag" />
-        <node concept="VPM3Z" id="2zhwXA$TG_p" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
       </node>
       <node concept="PMmxH" id="2zhwXA_2C0S" role="3EZMnx">
         <ref role="PMmxG" node="2zhwXA_2C0s" resolve="volatileFlag" />
-        <node concept="VPM3Z" id="2zhwXA_2C0T" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
       </node>
       <node concept="VPM3Z" id="7xjZ2Jfwx7T" role="3F10Kt">
         <property role="VOm3f" value="false" />
