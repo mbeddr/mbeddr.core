@@ -61,8 +61,8 @@
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
-    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -3873,6 +3873,29 @@
           <node concept="2ShNRf" id="5HxjapwgqMf" role="3cqZAk">
             <node concept="Tc6Ow" id="5HxjapwgqMg" role="2ShVmc">
               <node concept="3Tqbb2" id="5HxjapwgqMh" role="HW$YZ">
+                <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4g_6LpiKVx6" role="13h7CS">
+      <property role="TrG5h" value="getSubConfigItem" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="13i0is" value="false" />
+      <node concept="3Tm1VV" id="4g_6LpiKVx7" role="1B3o_S" />
+      <node concept="_YKpA" id="4g_6LpiKVx8" role="3clF45">
+        <node concept="3Tqbb2" id="4g_6LpiLMw7" role="_ZDj9">
+          <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4g_6LpiKVxa" role="3clF47">
+        <node concept="3cpWs6" id="4g_6LpiKVxb" role="3cqZAp">
+          <node concept="2ShNRf" id="4g_6LpiKVxc" role="3cqZAk">
+            <node concept="Tc6Ow" id="4g_6LpiKVxd" role="2ShVmc">
+              <node concept="3Tqbb2" id="4g_6LpiKVxe" role="HW$YZ">
                 <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
               </node>
             </node>
