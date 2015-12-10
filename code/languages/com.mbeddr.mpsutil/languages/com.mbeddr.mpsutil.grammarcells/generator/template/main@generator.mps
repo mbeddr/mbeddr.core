@@ -2,15 +2,15 @@
 <model ref="r:0e2d0780-27a1-4dda-a429-65b192261fcc(com.mbeddr.mpsutil.grammarcells.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -98,11 +98,11 @@
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
         <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
@@ -231,7 +231,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -19493,6 +19493,54 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="7VjNOn_$Mk9">
+    <property role="TrG5h" value="template_inlineEditorComponent" />
+    <ref role="3gUMe" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+    <node concept="3EZMnI" id="7VjNOn_$Mxl" role="13RCb5">
+      <node concept="3F0ifn" id="7VjNOn_$Mxp" role="3EZMnx">
+        <node concept="raruj" id="7VjNOn_$Mxs" role="lGtFl" />
+        <node concept="29HgVG" id="7VjNOn_$Mxy" role="lGtFl">
+          <node concept="3NFfHV" id="7VjNOn_$MxC" role="3NFExx">
+            <node concept="3clFbS" id="7VjNOn_$MxD" role="2VODD2">
+              <node concept="3clFbF" id="7VjNOn_$Myk" role="3cqZAp">
+                <node concept="2OqwBi" id="7VjNOn_$N7c" role="3clFbG">
+                  <node concept="2OqwBi" id="7VjNOn_$MAu" role="2Oq$k0">
+                    <node concept="30H73N" id="7VjNOn_$Myj" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7VjNOn_$MTt" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpc2:fGPMmyn" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="7VjNOn_$NtR" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpc2:fIwV5gl" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="bUwia" id="73X2hQ54SYI">
+    <property role="TrG5h" value="mc02_inlineComponents" />
+    <node concept="3aamgX" id="7VjNOn_$siP" role="3acgRq">
+      <ref role="30HIoZ" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+      <node concept="30G5F_" id="7VjNOn_$siV" role="30HLyM">
+        <node concept="3clFbS" id="7VjNOn_$siW" role="2VODD2">
+          <node concept="3clFbF" id="7VjNOn_CDUw" role="3cqZAp">
+            <node concept="2YIFZM" id="7VjNOn_CDWq" role="3clFbG">
+              <ref role="37wK5l" to="cmsr:7VjNOn_CDwO" resolve="componentCellRequiresInline" />
+              <ref role="1Pybhc" to="cmsr:73exJLGGbPM" resolve="GeneratorUtils" />
+              <node concept="30H73N" id="7VjNOn_CE0i" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="7VjNOn_$Mkb" role="1lVwrX">
+        <ref role="v9R2y" node="7VjNOn_$Mk9" resolve="template_inlineEditorComponent" />
       </node>
     </node>
   </node>
