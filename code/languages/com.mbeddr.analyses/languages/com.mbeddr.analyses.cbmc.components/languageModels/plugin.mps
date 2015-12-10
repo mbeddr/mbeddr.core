@@ -9,6 +9,8 @@
   <imports>
     <import index="4pdp" ref="r:60051af9-b174-4776-bea6-8ff622317104(com.mbeddr.analyses.cbmc.plugin)" />
     <import index="v1t" ref="r:2b84bd38-e7f0-40db-aa8f-50189fe395ca(com.mbeddr.analyses.cbmc.components.rt.counterexample.lifted.builder)" />
+    <import index="6uxc" ref="r:8564e26e-914d-4165-af7f-adaea77095b5(com.mbeddr.analyses.base.plugin)" />
+    <import index="59rt" ref="r:41bd99a2-e0fb-4b1a-addf-5eb525452eb4(com.mbeddr.analyses.cbmc.components.rt.call_graph)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>
@@ -200,6 +202,39 @@
       <node concept="q3mfm" id="4imEbjrxX28" role="3clF45">
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="4imEbjrxX25" resolve="get" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lYeZD" id="153zJclLoUF">
+    <property role="TrG5h" value="ComponentsAccessibleCodeProvider" />
+    <ref role="1lYe$Y" to="6uxc:6lrp79e8eP0" resolve="AccessibleCodeProvider" />
+    <node concept="3Tm1VV" id="153zJclLoUG" role="1B3o_S" />
+    <node concept="2tJIrI" id="153zJclLoUH" role="jymVt" />
+    <node concept="3tTeZs" id="153zJclLoUI" role="jymVt">
+      <property role="3tTeZt" value="activate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
+    </node>
+    <node concept="3tTeZs" id="153zJclLoUJ" role="jymVt">
+      <property role="3tTeZt" value="deactivate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+    </node>
+    <node concept="2tJIrI" id="153zJclLoUK" role="jymVt" />
+    <node concept="q3mfD" id="153zJclLoUL" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="153zJclLoUN" role="1B3o_S" />
+      <node concept="3clFbS" id="153zJclLoUP" role="3clF47">
+        <node concept="3clFbF" id="153zJclLpdl" role="3cqZAp">
+          <node concept="2ShNRf" id="153zJclLpdj" role="3clFbG">
+            <node concept="HV5vD" id="153zJclNFex" role="2ShVmc">
+              <ref role="HV5vE" to="59rt:6lrp79e8vmE" resolve="ComponentsLevelCodeCollector" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="153zJclLoUQ" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="153zJclLoUL" resolve="get" />
       </node>
     </node>
   </node>
