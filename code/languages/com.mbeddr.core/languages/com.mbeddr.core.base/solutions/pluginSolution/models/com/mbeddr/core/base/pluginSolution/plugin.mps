@@ -6843,6 +6843,97 @@
           </node>
         </node>
         <node concept="3clFbH" id="5mPyAfcPs6T" role="3cqZAp" />
+        <node concept="3cpWs8" id="5mPyAfd50l3" role="3cqZAp">
+          <node concept="3cpWsn" id="5mPyAfd50l4" role="3cpWs9">
+            <property role="TrG5h" value="rootsByCategoryGroup" />
+            <node concept="3uibUv" id="5mPyAfd50l5" role="1tU5fm">
+              <ref role="3uigEE" to="7bx7:~BaseGroup" resolve="BaseGroup" />
+            </node>
+            <node concept="2ShNRf" id="5mPyAfd50l6" role="33vP2m">
+              <node concept="1pGfFk" id="5mPyAfd50l7" role="2ShVmc">
+                <ref role="37wK5l" to="7bx7:~BaseGroup.&lt;init&gt;(java.lang.String)" resolve="BaseGroup" />
+                <node concept="Xl_RD" id="5mPyAfd5sI4" role="37wK5m">
+                  <property role="Xl_RC" value="CategoryRoots" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5mPyAfd518k" role="3cqZAp">
+          <node concept="2OqwBi" id="5mPyAfd521_" role="3clFbG">
+            <node concept="37vLTw" id="5mPyAfd518i" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PMOMKdiLNY" resolve="parent" />
+            </node>
+            <node concept="liA8E" id="5mPyAfd52GX" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
+              <node concept="37vLTw" id="5mPyAfd52Uy" role="37wK5m">
+                <ref role="3cqZAo" node="5mPyAfd50l4" resolve="rootsByCategoryGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5mPyAfd70LJ" role="3cqZAp">
+          <node concept="2OqwBi" id="5mPyAfd71Fe" role="3clFbG">
+            <node concept="37vLTw" id="5mPyAfd70LH" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PMOMKdiLNY" resolve="parent" />
+            </node>
+            <node concept="liA8E" id="5mPyAfd72rB" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~DefaultActionGroup.addSeparator(java.lang.String):void" resolve="addSeparator" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5mPyAfd52Vd" role="3cqZAp">
+          <node concept="3cpWsn" id="5mPyAfd52Ve" role="3cpWs9">
+            <property role="TrG5h" value="otherRootsGroup" />
+            <node concept="3uibUv" id="5mPyAfd52Vf" role="1tU5fm">
+              <ref role="3uigEE" to="7bx7:~BaseGroup" resolve="BaseGroup" />
+            </node>
+            <node concept="2ShNRf" id="5mPyAfd52Vg" role="33vP2m">
+              <node concept="1pGfFk" id="5mPyAfd52Vh" role="2ShVmc">
+                <ref role="37wK5l" to="7bx7:~BaseGroup.&lt;init&gt;(java.lang.String)" resolve="BaseGroup" />
+                <node concept="Xl_RD" id="5mPyAfd86XC" role="37wK5m">
+                  <property role="Xl_RC" value="OtherRoots" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5mPyAfd52V8" role="3cqZAp">
+          <node concept="2OqwBi" id="5mPyAfd52V9" role="3clFbG">
+            <node concept="37vLTw" id="5mPyAfd52Va" role="2Oq$k0">
+              <ref role="3cqZAo" node="1PMOMKdiLNY" resolve="parent" />
+            </node>
+            <node concept="liA8E" id="5mPyAfd52Vb" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
+              <node concept="37vLTw" id="5mPyAfd6fJ7" role="37wK5m">
+                <ref role="3cqZAo" node="5mPyAfd52Ve" resolve="otherRootsGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5mPyAfd50bw" role="3cqZAp" />
+        <node concept="3cpWs8" id="5mPyAfcVYth" role="3cqZAp">
+          <node concept="3cpWsn" id="5mPyAfcVYti" role="3cpWs9">
+            <property role="TrG5h" value="popupsByCategoryName" />
+            <node concept="3uibUv" id="5mPyAfcVYtj" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~TreeMap" resolve="TreeMap" />
+              <node concept="17QB3L" id="5mPyAfcVYtk" role="11_B2D" />
+              <node concept="3uibUv" id="5mPyAfcVYtl" role="11_B2D">
+                <ref role="3uigEE" to="7bx7:~BaseGroup" resolve="BaseGroup" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="5mPyAfcVYtm" role="33vP2m">
+              <node concept="1pGfFk" id="5mPyAfcVYtn" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~TreeMap.&lt;init&gt;()" resolve="TreeMap" />
+                <node concept="17QB3L" id="5mPyAfcVYto" role="1pMfVU" />
+                <node concept="3uibUv" id="5mPyAfcVYtp" role="1pMfVU">
+                  <ref role="3uigEE" to="7bx7:~BaseGroup" resolve="BaseGroup" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5mPyAfd8TzH" role="3cqZAp" />
         <node concept="3clFbF" id="5mPyAfcPs6U" role="3cqZAp">
           <node concept="2OqwBi" id="5mPyAfcPs6V" role="3clFbG">
             <node concept="2OqwBi" id="5mPyAfcPs6Y" role="2Oq$k0">
@@ -6867,12 +6958,16 @@
                       <node concept="2ShNRf" id="5mPyAfcVYsF" role="33vP2m">
                         <node concept="1pGfFk" id="5mPyAfcVYsG" role="2ShVmc">
                           <ref role="37wK5l" to="7bx7:~BaseGroup.&lt;init&gt;(java.lang.String)" resolve="BaseGroup" />
-                          <node concept="2OqwBi" id="5mPyAfcVYsH" role="37wK5m">
-                            <node concept="37vLTw" id="5mPyAfcVYsI" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5mPyAfcVYw3" resolve="it" />
-                            </node>
-                            <node concept="liA8E" id="5mPyAfcVYsJ" role="2OqNvi">
-                              <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                          <node concept="2YIFZM" id="5mPyAfd9GHR" role="37wK5m">
+                            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                            <ref role="37wK5l" to="18ew:~NameUtil.compactNamespace(java.lang.String):java.lang.String" resolve="compactNamespace" />
+                            <node concept="2OqwBi" id="5mPyAfcVYsH" role="37wK5m">
+                              <node concept="37vLTw" id="5mPyAfcVYsI" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5mPyAfcVYw3" resolve="it" />
+                              </node>
+                              <node concept="liA8E" id="5mPyAfcVYsJ" role="2OqNvi">
+                                <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -6943,27 +7038,6 @@
                           <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                           <node concept="3uibUv" id="5mPyAfcVYtg" role="1pMfVU">
                             <ref role="3uigEE" node="3EDTYYV2zJC" resolve="NodeIdeValue" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs8" id="5mPyAfcVYth" role="3cqZAp">
-                    <node concept="3cpWsn" id="5mPyAfcVYti" role="3cpWs9">
-                      <property role="TrG5h" value="popupsByName" />
-                      <node concept="3uibUv" id="5mPyAfcVYtj" role="1tU5fm">
-                        <ref role="3uigEE" to="33ny:~TreeMap" resolve="TreeMap" />
-                        <node concept="17QB3L" id="5mPyAfcVYtk" role="11_B2D" />
-                        <node concept="3uibUv" id="5mPyAfcVYtl" role="11_B2D">
-                          <ref role="3uigEE" to="7bx7:~BaseGroup" resolve="BaseGroup" />
-                        </node>
-                      </node>
-                      <node concept="2ShNRf" id="5mPyAfcVYtm" role="33vP2m">
-                        <node concept="1pGfFk" id="5mPyAfcVYtn" role="2ShVmc">
-                          <ref role="37wK5l" to="33ny:~TreeMap.&lt;init&gt;()" resolve="TreeMap" />
-                          <node concept="17QB3L" id="5mPyAfcVYto" role="1pMfVU" />
-                          <node concept="3uibUv" id="5mPyAfcVYtp" role="1pMfVU">
-                            <ref role="3uigEE" to="7bx7:~BaseGroup" resolve="BaseGroup" />
                           </node>
                         </node>
                       </node>
@@ -7079,7 +7153,7 @@
                                   <node concept="3clFbF" id="5mPyAfcVYuj" role="3cqZAp">
                                     <node concept="2OqwBi" id="5mPyAfcVYuk" role="3clFbG">
                                       <node concept="37vLTw" id="5mPyAfcVYul" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByName" />
+                                        <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByCategoryName" />
                                       </node>
                                       <node concept="liA8E" id="5mPyAfcVYum" role="2OqNvi">
                                         <ref role="37wK5l" to="33ny:~TreeMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
@@ -7098,7 +7172,7 @@
                                     <node concept="10Nm6u" id="5mPyAfcVYur" role="3uHU7w" />
                                     <node concept="2OqwBi" id="5mPyAfcVYus" role="3uHU7B">
                                       <node concept="37vLTw" id="5mPyAfcVYut" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByName" />
+                                        <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByCategoryName" />
                                       </node>
                                       <node concept="liA8E" id="5mPyAfcVYuu" role="2OqNvi">
                                         <ref role="37wK5l" to="33ny:~TreeMap.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -7283,42 +7357,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2Gpval" id="5mPyAfcVYuW" role="3cqZAp">
-                    <node concept="2GrKxI" id="5mPyAfcVYuX" role="2Gsz3X">
-                      <property role="TrG5h" value="popupName" />
-                    </node>
-                    <node concept="2OqwBi" id="5mPyAfcVYuY" role="2GsD0m">
-                      <node concept="37vLTw" id="5mPyAfcVYuZ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByName" />
-                      </node>
-                      <node concept="liA8E" id="5mPyAfcVYv0" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~TreeMap.keySet():java.util.Set" resolve="keySet" />
-                      </node>
-                    </node>
-                    <node concept="3clFbS" id="5mPyAfcVYv1" role="2LFqv$">
-                      <node concept="3clFbF" id="5mPyAfcVYv2" role="3cqZAp">
-                        <node concept="2OqwBi" id="5mPyAfcVYv3" role="3clFbG">
-                          <node concept="37vLTw" id="5mPyAfcVYv4" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5mPyAfcVYsD" resolve="devKitGroup" />
-                          </node>
-                          <node concept="liA8E" id="5mPyAfcVYv5" role="2OqNvi">
-                            <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
-                            <node concept="2OqwBi" id="5mPyAfcVYv6" role="37wK5m">
-                              <node concept="37vLTw" id="5mPyAfcVYv7" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByName" />
-                              </node>
-                              <node concept="liA8E" id="5mPyAfcVYv8" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~TreeMap.get(java.lang.Object):java.lang.Object" resolve="get" />
-                                <node concept="2GrUjf" id="5mPyAfcVYv9" role="37wK5m">
-                                  <ref role="2Gs0qQ" node="5mPyAfcVYuX" resolve="popupName" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbH" id="5mPyAfcVYva" role="3cqZAp" />
                   <node concept="3clFbF" id="5mPyAfcVYvb" role="3cqZAp">
                     <node concept="2YIFZM" id="5mPyAfcVYvc" role="3clFbG">
@@ -7428,7 +7466,7 @@
                               <node concept="2OqwBi" id="5mPyAfcVYvT" role="3clFbG">
                                 <node concept="2OqwBi" id="5mPyAfcVYvU" role="2Oq$k0">
                                   <node concept="37vLTw" id="5mPyAfcVYvV" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByName" />
+                                    <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByCategoryName" />
                                   </node>
                                   <node concept="liA8E" id="5mPyAfcVYvW" role="2OqNvi">
                                     <ref role="37wK5l" to="33ny:~TreeMap.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -7460,8 +7498,8 @@
                     <node concept="3clFbS" id="5mPyAfd1oLI" role="3clFbx">
                       <node concept="3clFbF" id="5mPyAfcVYsP" role="3cqZAp">
                         <node concept="2OqwBi" id="5mPyAfcVYsQ" role="3clFbG">
-                          <node concept="37vLTw" id="5mPyAfcVYsR" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1PMOMKdiLNY" resolve="parent" />
+                          <node concept="37vLTw" id="5mPyAfd55ho" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5mPyAfd52Ve" resolve="otherRootsGroup" />
                           </node>
                           <node concept="liA8E" id="5mPyAfcVYsS" role="2OqNvi">
                             <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
@@ -7497,6 +7535,42 @@
           </node>
         </node>
         <node concept="3clFbH" id="5mPyAfcPro6" role="3cqZAp" />
+        <node concept="2Gpval" id="5mPyAfcVYuW" role="3cqZAp">
+          <node concept="2GrKxI" id="5mPyAfcVYuX" role="2Gsz3X">
+            <property role="TrG5h" value="popupName" />
+          </node>
+          <node concept="2OqwBi" id="5mPyAfcVYuY" role="2GsD0m">
+            <node concept="37vLTw" id="5mPyAfcVYuZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByCategoryName" />
+            </node>
+            <node concept="liA8E" id="5mPyAfcVYv0" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~TreeMap.keySet():java.util.Set" resolve="keySet" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5mPyAfcVYv1" role="2LFqv$">
+            <node concept="3clFbF" id="5mPyAfcVYv2" role="3cqZAp">
+              <node concept="2OqwBi" id="5mPyAfcVYv3" role="3clFbG">
+                <node concept="37vLTw" id="5mPyAfd545q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5mPyAfd50l4" resolve="rootsByCategoryGroup" />
+                </node>
+                <node concept="liA8E" id="5mPyAfcVYv5" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
+                  <node concept="2OqwBi" id="5mPyAfcVYv6" role="37wK5m">
+                    <node concept="37vLTw" id="5mPyAfcVYv7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5mPyAfcVYti" resolve="popupsByCategoryName" />
+                    </node>
+                    <node concept="liA8E" id="5mPyAfcVYv8" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~TreeMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                      <node concept="2GrUjf" id="5mPyAfcVYv9" role="37wK5m">
+                        <ref role="2Gs0qQ" node="5mPyAfcVYuX" resolve="popupName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="1PMOMKdiKKZ" role="1B3o_S" />
       <node concept="3cqZAl" id="1PMOMKdiKZZ" role="3clF45" />
@@ -7899,6 +7973,8 @@
     <property role="3GE5qa" value="ideEnhancement" />
     <property role="TrG5h" value="CreateMbeddrRoots" />
     <property role="2f7twF" value="Mbeddr" />
+    <property role="1XlLyE" value="true" />
+    <property role="1rdrE6" value="true" />
     <node concept="tT9cl" id="Iviav56X2" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
       <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
@@ -7906,20 +7982,6 @@
     <node concept="2OiAzN" id="IviauYoeP" role="ftER_">
       <node concept="2OiTZ2" id="IviauYoeR" role="2Oj6PV">
         <node concept="3clFbS" id="IviauYoeT" role="2VODD2">
-          <node concept="1X3_iC" id="3AWqwDsosIy" role="lGtFl">
-            <property role="3V$3am" value="statement" />
-            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="3clFbF" id="1PMOMKdiW6T" role="8Wnug">
-              <node concept="2YIFZM" id="1PMOMKdiWg2" role="3clFbG">
-                <ref role="37wK5l" node="1PMOMKdiL0d" resolve="attachMebberRootMenu" />
-                <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
-                <node concept="37vLTw" id="1PMOMKdiWmO" role="37wK5m">
-                  <ref role="3cqZAo" node="IviauYqHf" resolve="model" />
-                </node>
-                <node concept="2WthIp" id="1PMOMKdiWo0" role="37wK5m" />
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="3EDTYYULw_U" role="3cqZAp">
             <node concept="2OqwBi" id="3EDTYYULx7q" role="3clFbG">
               <node concept="2WthIp" id="3EDTYYULw_S" role="2Oq$k0" />
@@ -8049,6 +8111,53 @@
                 <node concept="3clFbT" id="1uL8CIsGT1j" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="5mPyAfd3VN5" role="3cqZAp" />
+          <node concept="3clFbF" id="5mPyAfd9j4Y" role="3cqZAp">
+            <node concept="2YIFZM" id="1PMOMKdiWg2" role="3clFbG">
+              <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
+              <ref role="37wK5l" node="1PMOMKdiL0d" resolve="attachMebberRootMenu" />
+              <node concept="37vLTw" id="1PMOMKdiWmO" role="37wK5m">
+                <ref role="3cqZAo" node="IviauYqHf" resolve="model" />
+              </node>
+              <node concept="2WthIp" id="1PMOMKdiWo0" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="5mPyAfdbapO" role="3cqZAp" />
+          <node concept="3SKdUt" id="5mPyAfdbazm" role="3cqZAp">
+            <node concept="3SKdUq" id="5mPyAfdbazo" role="3SKWNk">
+              <property role="3SKdUp" value="temporary disable" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="5mPyAfdb9XE" role="3cqZAp">
+            <node concept="2OqwBi" id="5mPyAfdbahv" role="3clFbG">
+              <node concept="2OqwBi" id="5mPyAfdba5I" role="2Oq$k0">
+                <node concept="tl45R" id="5mPyAfdb9XC" role="2Oq$k0" />
+                <node concept="liA8E" id="5mPyAfdbagy" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5mPyAfdbaov" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~Presentation.setEnabled(boolean):void" resolve="setEnabled" />
+                <node concept="3clFbT" id="5mPyAfdbap1" role="37wK5m">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="zmvBW4frZ1" role="3cqZAp">
+            <node concept="2OqwBi" id="zmvBW4frZ2" role="3clFbG">
+              <node concept="2OqwBi" id="zmvBW4frZ3" role="2Oq$k0">
+                <node concept="tl45R" id="zmvBW4frZ4" role="2Oq$k0" />
+                <node concept="liA8E" id="zmvBW4frZ5" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
+                </node>
+              </node>
+              <node concept="liA8E" id="zmvBW4frZ6" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~Presentation.setVisible(boolean):void" resolve="setVisible" />
+                <node concept="3clFbT" id="zmvBW4frZ7" role="37wK5m" />
               </node>
             </node>
           </node>
