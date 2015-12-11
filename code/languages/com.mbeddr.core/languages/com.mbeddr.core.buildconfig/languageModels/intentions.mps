@@ -12,6 +12,7 @@
   <imports>
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -176,6 +177,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -397,6 +399,18 @@
     </node>
     <node concept="1SWQZ3" id="3TftwIKHSKb" role="lGtFl">
       <property role="1SWRpm" value="BUILD" />
+    </node>
+    <node concept="2SaL7w" id="3D9$r$Xd_b" role="2ZfVeh">
+      <node concept="3clFbS" id="3D9$r$Xd_c" role="2VODD2">
+        <node concept="3clFbF" id="3D9$r$XdBq" role="3cqZAp">
+          <node concept="2OqwBi" id="3D9$r$XdEt" role="3clFbG">
+            <node concept="2Sf5sV" id="3D9$r$XdBp" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3D9$r$XdQz" role="2OqNvi">
+              <ref role="37wK5l" to="ahli:3D9$r$Xa4L" resolve="canHandlePostprocessors" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2S6QgY" id="7i$VjwrI_cU">
