@@ -931,6 +931,25 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5Ljw4ONn083" role="jymVt" />
+    <node concept="3clFb_" id="65GtCaX62Ir" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getSelection" />
+      <node concept="3uibUv" id="65GtCaX62Is" role="3clF45">
+        <ref role="3uigEE" to="lwvz:~Selection" resolve="Selection" />
+      </node>
+      <node concept="3Tm1VV" id="65GtCaX62It" role="1B3o_S" />
+      <node concept="2AHcQZ" id="65GtCaX62Ix" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="65GtCaX62Iy" role="3clF47">
+        <node concept="3clFbF" id="65GtCaX6oFy" role="3cqZAp">
+          <node concept="37vLTw" id="65GtCaX6oFx" role="3clFbG">
+            <ref role="3cqZAo" node="5tr7YH$UEfM" resolve="mySelection" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="65GtCaX6oIu" role="jymVt" />
     <node concept="3clFb_" id="5Ljw4ONn1eA" role="jymVt">
       <property role="TrG5h" value="equals" />
       <node concept="10P_77" id="5Ljw4ONn1eB" role="3clF45" />
