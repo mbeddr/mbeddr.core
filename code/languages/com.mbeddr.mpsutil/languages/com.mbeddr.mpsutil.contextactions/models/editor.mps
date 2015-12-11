@@ -20,8 +20,10 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="6046489571270834038" name="foldedCellModel" index="3EmGlc" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -1555,6 +1557,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="6W_V$eaO3On" role="3EZMnx">
+        <property role="S$F3r" value="true" />
         <ref role="1NtTu8" to="aozb:6W_V$eaO3Og" />
         <node concept="l2Vlx" id="6W_V$eaO3Op" role="2czzBx" />
         <node concept="lj46D" id="6W_V$eaO3Xa" role="3F10Kt">
@@ -1562,6 +1565,9 @@
         </node>
         <node concept="pj6Ft" id="6W_V$eaO3YX" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="5Zn2KFQSjG0" role="3EmGlc">
+          <property role="3F0ifm" value="{...}" />
         </node>
       </node>
       <node concept="3F0ifn" id="6W_V$eaO3NM" role="3EZMnx">
