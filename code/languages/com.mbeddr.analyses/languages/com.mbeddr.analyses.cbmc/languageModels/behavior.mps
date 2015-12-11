@@ -15,6 +15,7 @@
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="p8vh" ref="r:774ac595-6c08-4ec5-a945-c0e06119d39d(com.mbeddr.analyses.cbmc.rt.ui)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
+    <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -92,7 +93,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2183,6 +2184,21 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="3D9$r$Xdue" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="canHandlePostprocessors" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ahli:3D9$r$Xa4L" resolve="canHandlePostprocessors" />
+      <node concept="3Tm1VV" id="3D9$r$Xduf" role="1B3o_S" />
+      <node concept="3clFbS" id="3D9$r$Xduk" role="3clF47">
+        <node concept="3clFbF" id="3D9$r$Xdy4" role="3cqZAp">
+          <node concept="3clFbT" id="3D9$r$Xdy3" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3D9$r$Xdul" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3V3CJZuzjbw">

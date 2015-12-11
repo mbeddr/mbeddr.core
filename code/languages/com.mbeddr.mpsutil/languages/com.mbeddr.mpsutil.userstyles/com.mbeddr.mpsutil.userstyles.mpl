@@ -80,7 +80,7 @@
           <greater-priority-mapping>
             <generator generatorUID="863ac3df-9ae2-40b2-ba60-59a3b59eb762(com.mbeddr.mpsutil.userstyles#8170319964140874928)" />
             <external-mapping>
-              <mapping-node modelUID="r:3b44d09e-7501-4e64-ba2e-52cb3733ec99(com.mbeddr.mpsutil.userstyles.generator.template.main@generator)" nodeID="8170319964140874929" />
+              <mapping-node modelUID="r:3b44d09e-7501-4e64-ba2e-52cb3733ec99(com.mbeddr.mpsutil.userstyles.generator.template.main@generator)" nodeID="*" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -94,6 +94,34 @@
                   <mapping-node modelUID="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" nodeID="1096629760203" />
                 </mapping-set-element>
               </mapping-set>
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="863ac3df-9ae2-40b2-ba60-59a3b59eb762(com.mbeddr.mpsutil.userstyles#8170319964140874928)" />
+            <external-mapping>
+              <mapping-node modelUID="r:3b44d09e-7501-4e64-ba2e-52cb3733ec99(com.mbeddr.mpsutil.userstyles.generator.template.main@generator)" nodeID="1072158555906277631" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="863ac3df-9ae2-40b2-ba60-59a3b59eb762(com.mbeddr.mpsutil.userstyles#8170319964140874928)" />
+            <external-mapping>
+              <mapping-node modelUID="r:3b44d09e-7501-4e64-ba2e-52cb3733ec99(com.mbeddr.mpsutil.userstyles.generator.template.main@generator)" nodeID="8170319964140874929" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="863ac3df-9ae2-40b2-ba60-59a3b59eb762(com.mbeddr.mpsutil.userstyles#8170319964140874928)" />
+            <external-mapping>
+              <mapping-node modelUID="r:3b44d09e-7501-4e64-ba2e-52cb3733ec99(com.mbeddr.mpsutil.userstyles.generator.template.main@generator)" nodeID="8170319964140874929" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="863ac3df-9ae2-40b2-ba60-59a3b59eb762(com.mbeddr.mpsutil.userstyles#8170319964140874928)" />
+            <external-mapping>
+              <mapping-node modelUID="r:3b44d09e-7501-4e64-ba2e-52cb3733ec99(com.mbeddr.mpsutil.userstyles.generator.template.main@generator)" nodeID="1072158555907422464" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
