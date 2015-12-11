@@ -14409,9 +14409,7 @@
             </node>
             <node concept="liA8E" id="657q32pDDF1" role="2OqNvi">
               <ref role="37wK5l" to="91lp:~IntentionsManager$QueryDescriptor.setCurrentNodeOnly(boolean):void" resolve="setCurrentNodeOnly" />
-              <node concept="3clFbT" id="657q32pDDF2" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+              <node concept="3clFbT" id="657q32pDDF2" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -14963,13 +14961,8 @@
             </node>
             <node concept="liA8E" id="657q32pCRGY" role="2OqNvi">
               <ref role="37wK5l" to="91lp:~IntentionExecutable.execute(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext):void" resolve="execute" />
-              <node concept="2OqwBi" id="657q32pCRXI" role="37wK5m">
-                <node concept="37vLTw" id="657q32pCRP9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="657q32pCBeD" resolve="context" />
-                </node>
-                <node concept="liA8E" id="657q32pCS8G" role="2OqNvi">
-                  <ref role="37wK5l" node="5tr7YH$Ux7R" resolve="getSNode" />
-                </node>
+              <node concept="37vLTw" id="1yC42OGwDy" role="37wK5m">
+                <ref role="3cqZAo" node="657q32pDNG6" resolve="mySNode" />
               </node>
               <node concept="2EnYce" id="657q32pCSUp" role="37wK5m">
                 <node concept="2OqwBi" id="657q32pCSrk" role="2Oq$k0">

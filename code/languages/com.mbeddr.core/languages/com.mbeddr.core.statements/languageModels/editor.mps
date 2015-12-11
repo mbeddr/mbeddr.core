@@ -397,6 +397,7 @@
     <node concept="3EZMnI" id="3CmSUB7FprG" role="2wV5jI">
       <node concept="1kHk_G" id="6ASs6LmXVey" role="3EZMnx">
         <ref role="1NtTu8" to="c4fa:3_fgNoLA7XY" resolve="static" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         <node concept="3gMsPO" id="qT5MFmtH$7" role="3gMvMa">
           <node concept="3clFbS" id="qT5MFmtH$8" role="2VODD2">
             <node concept="3clFbF" id="qT5MFmtHAl" role="3cqZAp">
@@ -2200,6 +2201,7 @@
     <node concept="1kHk_G" id="6ASs6LmXVZy" role="2wV5jI">
       <property role="ZjSer" value="register" />
       <ref role="1NtTu8" to="c4fa:52l0VUuN5OB" resolve="storeInRegister" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
   <node concept="24kQdi" id="IrwlmWyLjx">
@@ -2629,6 +2631,7 @@
       <ref role="1ERwB7" node="58TcxRGslYj" resolve="deleteForVarDecl" />
       <node concept="1kHk_G" id="6ASs6LmYwvn" role="3EZMnx">
         <ref role="1NtTu8" to="c4fa:3_fgNoLA7XY" resolve="static" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         <node concept="3gMsPO" id="qT5MFmtHkv" role="3gMvMa">
           <node concept="3clFbS" id="qT5MFmtHkw" role="2VODD2">
             <node concept="3clFbF" id="qT5MFmtHlJ" role="3cqZAp">
