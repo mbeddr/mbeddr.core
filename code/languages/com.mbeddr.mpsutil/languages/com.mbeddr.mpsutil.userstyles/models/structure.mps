@@ -19,7 +19,9 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -32,6 +34,12 @@
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -68,6 +76,18 @@
   <node concept="PlHQZ" id="1gJuyfgAD8m">
     <property role="1pbfSe" value="456520647" />
     <property role="TrG5h" value="IGeneratesUserStyleItem" />
+  </node>
+  <node concept="1TIwiD" id="Vx4CqFKsla">
+    <property role="1pbfSe" value="1163733040" />
+    <property role="TrG5h" value="InlineStyle" />
+    <property role="34LRSv" value="inlineStyle" />
+    <ref role="1TJDcQ" to="tpc2:hgV6hR6" resolve="StyleClassItem" />
+    <node concept="1TJgyj" id="Vx4CqFKsle" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="style" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
+    </node>
   </node>
 </model>
 
