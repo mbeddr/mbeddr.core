@@ -5,6 +5,7 @@
     <param name="artifacts-root.path-properties" value="%teamcity.build.checkoutDir%/artefacts" />
     <param name="build-dir.path-properties" value="-Dbuild.dir=%teamcity.build.checkoutDir%" />
     <param name="build.state" value="" />
+    <param name="buildscripts.artifact-rule" value="**=&gt;%teamcity.build.checkoutDir%/scripts" />
     <param name="github.token" value="" />
     <param name="mbeddr.build-number" value="mbeddr-%build.counter%" />
     <param name="mbeddr.checkout-rules" value="+:.=&gt;mbeddr.core" />
