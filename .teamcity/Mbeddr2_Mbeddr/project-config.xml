@@ -5,7 +5,8 @@
     <param name="artifacts-root.path-properties" value="-Dartifacts.root=%teamcity.build.checkoutDir%/artifacts" />
     <param name="build-dir.path-properties" value="-Dbuild.dir=%teamcity.build.checkoutDir%" />
     <param name="build.state" value="" />
-    <param name="buildscripts.artifact-rule" value="**=&gt;%teamcity.build.checkoutDir%/scripts" />
+    <param name="buildscripts.artifact-rule"><![CDATA[**/*.xml=>%teamcity.build.checkoutDir%/scripts
+**/*.zip=>%teamcity.build.checkoutDir%/artifacts]]></param>
     <param name="generic.artifact-rule" value="**=&gt;%teamcity.build.checkoutDir%/artifacts" />
     <param name="github.token" value="" />
     <param name="mbeddr-github.path-properties" value="%mbeddr.path-properties%" />
