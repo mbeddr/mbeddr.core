@@ -4,7 +4,6 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%generic-plugins.publish-rule%" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters>
