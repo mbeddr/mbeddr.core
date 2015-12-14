@@ -3,9 +3,6 @@
   <name>Trigger</name>
   <description />
   <settings>
-    <disabled-settings>
-      <setting-ref ref="vcsTrigger" />
-    </disabled-settings>
     <parameters />
     <build-runners />
     <vcs-settings>
