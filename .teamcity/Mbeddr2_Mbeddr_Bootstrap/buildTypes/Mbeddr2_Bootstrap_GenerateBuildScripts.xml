@@ -58,9 +58,7 @@ fi]]></param>
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
-        <checkout-rule rule="%mbeddr.checkout-rules%" />
-      </vcs-entry-ref>
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
     </vcs-settings>
     <requirements />
     <build-triggers />
