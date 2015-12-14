@@ -8,7 +8,6 @@
     <param name="buildscripts.artifact-rule"><![CDATA[**/*.xml=>%teamcity.build.checkoutDir%/scripts
 **/*.zip=>%teamcity.build.checkoutDir%/artifacts]]></param>
     <param name="generic.artifact-rule" value="**=&gt;%teamcity.build.checkoutDir%/artifacts" />
-    <param name="github.token" value="" />
     <param name="mbeddr-github.path-properties" value="%mbeddr.path-properties%" />
     <param name="mbeddr-scripts.path-properties" value="-Dmbeddr.scripts.base-path=%teamcity.build.checkoutDir%/scripts" />
     <param name="mbeddr.build-number" value="mbeddr-%build.counter%" />
