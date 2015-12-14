@@ -15,7 +15,7 @@
           <param name="branchFilter"><![CDATA[+:master
 +:feature/*
 +:refactor/*
-+:milestone/*
++:milestone/v-1.5-2
 +:integration/*
 -:pull/*/head
 -:tags/*]]></param>
