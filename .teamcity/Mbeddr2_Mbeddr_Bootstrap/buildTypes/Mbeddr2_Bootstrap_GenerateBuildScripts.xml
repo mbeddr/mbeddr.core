@@ -9,9 +9,7 @@
       <option name="checkoutMode" value="ON_AGENT" />
       <option name="cleanBuild" value="true" />
     </options>
-    <parameters>
-      <param name="mbeddr.checkout-rules" value="+:.=&gt;mbeddr.core" />
-    </parameters>
+    <parameters />
     <build-runners order="RUNNER_112, RUNNER_92, RUNNER_113, RUNNER_114">
       <runner id="RUNNER_112" name="set build script status pending" type="simpleRunner">
         <parameters>
