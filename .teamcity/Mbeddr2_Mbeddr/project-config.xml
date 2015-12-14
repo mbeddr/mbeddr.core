@@ -16,7 +16,7 @@
     <param name="mps.artifact-paths" value="MPS-mbeddr=&gt;%teamcity.build.checkoutDir%/MPS-mbeddr" />
     <param name="mps.artifact-rule" value="%mps.artifact-paths%" />
     <param name="mps.path-properties" value="-Dmps_home=%teamcity.build.checkoutDir%/MPS-mbeddr -Dmps.home=%teamcity.build.checkoutDir%/MPS-mbeddr" />
-    <param name="sl-all.path-properties" value="-Dsl-all.scripts.base-path=%teamcity.build.checkoutDir%/scripts" />
+    <param name="sl-all.path-properties" value="-Dsl-all.scripts.base-path=%teamcity.build.checkoutDir%/scripts -Dsl-all.home=%teamcity.build.checkoutDir%/mbeddr.core/code/plugins/sl-all" />
   </parameters>
   <cleanup />
 </project>
