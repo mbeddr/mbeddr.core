@@ -33,6 +33,10 @@
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%buildscripts.artifact-rule%" />
+      </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
