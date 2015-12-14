@@ -16,6 +16,7 @@
 +:master
 +:feature/*
 +:refactor/*
++:maintenance/*
 +:milestone/v-1.5-2
 +:integration/*]]></param>
           <param name="groupCheckinsByCommitter" value="true" />
