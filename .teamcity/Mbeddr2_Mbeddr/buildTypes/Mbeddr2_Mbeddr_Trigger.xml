@@ -12,13 +12,13 @@
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
-          <param name="branchFilter"><![CDATA[+:refs/heads/master
-+:refs/heads/feature/*
-+:refs/heads/refactor/*
-+:refs/heads/milestone/*
-+:refs/heads/integration/*
--:refs/pull/*/head
--:refs/tags/*]]></param>
+          <param name="branchFilter"><![CDATA[+:master
++:feature/*
++:refactor/*
++:milestone/*
++:integration/*
+-:pull/*/head
+-:tags/*]]></param>
           <param name="groupCheckinsByCommitter" value="true" />
           <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriod" value="91" />
