@@ -10,7 +10,7 @@
       <option name="cleanBuild" value="true" />
     </options>
     <parameters>
-      <param name="mbeddr.checkout-rules" value="+:*=&gt;%teamcity.build.checkoutDir%/mbeddr.core" />
+      <param name="mbeddr.checkout-rules" value="+:.=&gt;%teamcity.build.checkoutDir%/mbeddr.core" />
     </parameters>
     <build-runners order="RUNNER_112, RUNNER_92, RUNNER_113, RUNNER_114">
       <runner id="RUNNER_112" name="set build script status pending" type="simpleRunner">
