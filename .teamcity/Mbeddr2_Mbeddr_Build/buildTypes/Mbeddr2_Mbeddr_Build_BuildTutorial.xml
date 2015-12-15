@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial-languages.build =&gt; com.mbeddr.tutorial-languages.build %teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial-solutions.build =&gt; com.mbeddr.tutorial-solutions.build" />
+      <option name="artifactRules" value="%teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial-languages.build =&gt; com.mbeddr.tutorial-languages.build&#xA;%teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial-solutions.build =&gt; com.mbeddr.tutorial-solutions.build" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
