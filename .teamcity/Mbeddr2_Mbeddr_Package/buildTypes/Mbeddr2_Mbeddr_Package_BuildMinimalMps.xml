@@ -13,11 +13,11 @@ build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/buil
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
 code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
     </parameters>
-    <build-runners order="">
+    <build-runners order="RUNNER_80">
       <runner id="RUNNER_80" name="Package minimal MPS" type="Ant">
         <parameters>
           <param name="build-file-path" value="scripts/jetbrains.mps.minmal/build.xml" />
-          <param name="runnerArgs" value="%platform-caches.path-property% %application-build.path-property% %mps.path-properties% %mbeddr.path-properties% %accent-scripts.path-properties% %artifacts-root.path-properties% %build-dir.path-properties%" />
+          <param name="runnerArgs" value="%mps.path-properties% %mbeddr.path-properties%  %artifacts-root.path-properties% %build-dir.path-properties%" />
           <param name="target" value="clean,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />

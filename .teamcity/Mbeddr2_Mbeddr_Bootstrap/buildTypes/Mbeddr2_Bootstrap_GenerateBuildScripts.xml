@@ -6,6 +6,8 @@
     <options>
       <option name="artifactRules" value="%teamcity.build.checkoutDir%/mbeddr.core/build/**/*.xml&#xA;%teamcity.build.workingDir%/mbeddr.core/code/plugins/**/*.xml&#xA;%teamcity.build.checkoutDir%/mbeddr.core/artifacts/" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
+      <option name="checkoutMode" value="ON_AGENT" />
+      <option name="cleanBuild" value="true" />
     </options>
     <parameters />
     <build-runners order="RUNNER_112, RUNNER_92, RUNNER_113, RUNNER_114">

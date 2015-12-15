@@ -320,12 +320,6 @@
   </node>
   <node concept="24kQdi" id="1dAqnm8mHYA">
     <ref role="1XX52x" to="bnk3:1dAqnm8m1Em" resolve="Table" />
-    <node concept="3EZMnI" id="5X6T0_NE_t$" role="6VMZX">
-      <node concept="l2Vlx" id="5X6T0_NE_t_" role="2iSdaV" />
-      <node concept="PMmxH" id="5X6T0_NE_tA" role="3EZMnx">
-        <ref role="PMmxG" node="4UkcdCuFJuE" resolve="IStylable_StyleComponent" />
-      </node>
-    </node>
     <node concept="3EZMnI" id="1dAqnm8mHYC" role="2wV5jI">
       <node concept="b$f91" id="1dAqnm8mHYM" role="3EZMnx">
         <node concept="3F0ifn" id="1dAqnm8mHYU" role="b$u42">
@@ -444,6 +438,28 @@
       <node concept="VPXOz" id="1dAqnm8o6Fp" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
+    </node>
+    <node concept="3EZMnI" id="BILoO2KL5Y" role="6VMZX">
+      <node concept="3EZMnI" id="BILoO2KL8a" role="3EZMnx">
+        <node concept="VPM3Z" id="BILoO2KL8c" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="BILoO2KL8e" role="3EZMnx">
+          <property role="3F0ifm" value="header alignment disabled:" />
+        </node>
+        <node concept="3F0A7n" id="BILoO2KL8r" role="3EZMnx">
+          <ref role="1NtTu8" to="bnk3:BILoO2KL1_" resolve="headerAlignmentDisabled" />
+        </node>
+        <node concept="2iRfu4" id="BILoO2KL8f" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="BILoO2KL84" role="3EZMnx" />
+      <node concept="3EZMnI" id="5X6T0_NE_t$" role="3EZMnx">
+        <node concept="l2Vlx" id="5X6T0_NE_t_" role="2iSdaV" />
+        <node concept="PMmxH" id="5X6T0_NE_tA" role="3EZMnx">
+          <ref role="PMmxG" node="4UkcdCuFJuE" resolve="IStylable_StyleComponent" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="BILoO2KL5Z" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1dAqnm8nsgp">
