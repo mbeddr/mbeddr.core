@@ -186,7 +186,7 @@
     <property role="turDy" value="build-mbeddr-distrib.xml" />
     <node concept="1E1JtA" id="60Ph1pcA2qD" role="3989C9">
       <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="com.mbeddr.rcp" />
+      <property role="TrG5h" value="com.mbeddr.rcp.actions" />
       <property role="3LESm3" value="062f3b10-3aa8-4ab3-a588-37ba2141428e" />
       <property role="2GAjPV" value="false" />
       <node concept="398BVA" id="60Ph1pcA2qR" role="3LF7KH">
@@ -201,8 +201,8 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="60Ph1pcA2rr" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                  <node concept="2Ry0Ak" id="pdbBRzdoBE" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.rcp.msd" />
+                  <node concept="2Ry0Ak" id="2$f$kYNqFqM" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.rcp.actions.msd" />
                   </node>
                 </node>
               </node>
@@ -232,7 +232,7 @@
         </node>
       </node>
       <node concept="m$_yB" id="60Ph1pcA2tC" role="m$_yh">
-        <ref role="m$_yA" node="60Ph1pcA2qD" resolve="com.mbeddr.rcp" />
+        <ref role="m$_yA" node="60Ph1pcA2qD" resolve="com.mbeddr.rcp.actions" />
       </node>
       <node concept="m$_yC" id="pdbBRzdoCb" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
