@@ -223,7 +223,7 @@
       </node>
       <node concept="3_J27D" id="60Ph1pcA2sl" role="m$_w8">
         <node concept="3Mxwew" id="60Ph1pcA2tu" role="3MwsjC">
-          <property role="3MwjfP" value="&lt;empty&gt;" />
+          <property role="3MwjfP" value="1.0" />
         </node>
       </node>
       <node concept="3_J27D" id="60Ph1pcA2sn" role="m$_yQ">
