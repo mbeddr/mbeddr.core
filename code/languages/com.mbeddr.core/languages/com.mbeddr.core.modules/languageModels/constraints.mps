@@ -19,6 +19,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1740,6 +1741,33 @@
                   <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaText" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="76hx8dKhyvE">
+    <ref role="1M2myG" to="x27k:76hx8dKhwZW" resolve="AbritraryTextContent" />
+    <node concept="EnEH3" id="76hx8dKm$67" role="1MhHOB">
+      <ref role="EomxK" to="x27k:19a6$uAA0vK" resolve="exported" />
+      <node concept="Eqf_E" id="76hx8dKm$69" role="EtsB7">
+        <node concept="3clFbS" id="76hx8dKm$6a" role="2VODD2">
+          <node concept="3clFbF" id="76hx8dKm$7f" role="3cqZAp">
+            <node concept="3clFbT" id="76hx8dKm$7e" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="76hx8dKhyvO" role="1MLUbF">
+      <node concept="3clFbS" id="76hx8dKhyvP" role="2VODD2">
+        <node concept="3clFbF" id="76hx8dKhywU" role="3cqZAp">
+          <node concept="2OqwBi" id="76hx8dKhyyF" role="3clFbG">
+            <node concept="nLn13" id="76hx8dKhywT" role="2Oq$k0" />
+            <node concept="2qgKlT" id="76hx8dKhyBj" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
             </node>
           </node>
         </node>

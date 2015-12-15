@@ -152,6 +152,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -5339,6 +5340,36 @@
       </node>
       <node concept="VPM3Z" id="4b64BCbUJiu" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="76hx8dKhyE4">
+    <ref role="1XX52x" to="x27k:76hx8dKhwZW" resolve="AbritraryTextContent" />
+    <node concept="3EZMnI" id="3kEjc_WJ2qE" role="2wV5jI">
+      <node concept="3F0ifn" id="3kEjc_WJ2qH" role="3EZMnx">
+        <property role="3F0ifm" value="[|" />
+      </node>
+      <node concept="3F2HdR" id="3kEjc_WJ4od" role="3EZMnx">
+        <ref role="1NtTu8" to="x27k:3kEjc_WJ4ob" />
+        <node concept="l2Vlx" id="3kEjc_WJ4oe" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="3kEjc_WJ2qG" role="2iSdaV" />
+      <node concept="3F0ifn" id="3kEjc_WJ2qN" role="3EZMnx">
+        <property role="3F0ifm" value="|]" />
+        <ref role="1ERwB7" to="j4gk:7apEgWbJM1a" resolve="deleteStatement" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="5soFcYDHzQq" role="6VMZX">
+      <node concept="2iRkQZ" id="5soFcYDHzQr" role="2iSdaV" />
+      <node concept="3EZMnI" id="5soFcYDGhXE" role="3EZMnx">
+        <node concept="l2Vlx" id="5soFcYDGhXF" role="2iSdaV" />
+        <node concept="3F0ifn" id="5soFcYDGhXG" role="3EZMnx">
+          <property role="3F0ifm" value="required header" />
+        </node>
+        <node concept="3F0A7n" id="5soFcYDGhXI" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="x27k:5soFcYDEU27" resolve="requiredStdHeader" />
+        </node>
       </node>
     </node>
   </node>
