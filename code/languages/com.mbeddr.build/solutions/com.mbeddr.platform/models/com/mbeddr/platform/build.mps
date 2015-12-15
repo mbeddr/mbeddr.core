@@ -893,7 +893,7 @@
         </node>
         <node concept="1SiIV0" id="5dYb5krUATe" role="3bR37C">
           <node concept="3bR9La" id="5dYb5krUATf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
           </node>
         </node>
