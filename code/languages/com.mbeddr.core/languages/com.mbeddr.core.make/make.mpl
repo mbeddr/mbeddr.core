@@ -89,22 +89,7 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
       </dependencyVersions>
-      <mapping-priorities>
-        <mapping-priority-rule kind="strictly_before">
-          <greater-priority-mapping>
-            <generator generatorUID="e81cdd11-7c9c-4a4f-a905-3cb577782797(com.mbeddr.core.make#208195772221165171)" />
-            <external-mapping>
-              <all-local-mappings />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1758019824472882133" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-      </mapping-priorities>
+      <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />

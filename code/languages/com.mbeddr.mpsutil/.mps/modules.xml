@@ -125,6 +125,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.msd" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.settings.runtime/com.mbeddr.mpsutil.multilingual.settings.runtime.msd" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodediff/com.mbeddr.mpsutil.nodediff.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodes_tracing.pluginSolution/com.mbeddr.mpsutil.nodes_tracing.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime.msd" folder="preferenceform" />

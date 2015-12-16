@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.rcp" uuid="062f3b10-3aa8-4ab3-a588-37ba2141428e" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="com.mbeddr.rcp.actions" uuid="062f3b10-3aa8-4ab3-a588-37ba2141428e" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -23,7 +23,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="062f3b10-3aa8-4ab3-a588-37ba2141428e(com.mbeddr.rcp)" version="0" />
+    <module reference="062f3b10-3aa8-4ab3-a588-37ba2141428e(com.mbeddr.rcp.actions)" version="0" />
   </dependencyVersions>
 </solution>
 

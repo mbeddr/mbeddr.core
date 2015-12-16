@@ -29,7 +29,7 @@
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" fqName="com.mbeddr.core.pointers" version="0" />
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" fqName="com.mbeddr.core.statements" version="1" />
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" fqName="com.mbeddr.core.udt" version="1" />
-    <language id="06d68b77-b699-4918-83b8-857e63787800" fqName="com.mbeddr.core.unittest" version="0" />
+    <language id="06d68b77-b699-4918-83b8-857e63787800" fqName="com.mbeddr.core.unittest" version="1" />
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" fqName="com.mbeddr.core.util" version="0" />
     <language id="b879012d-402b-40e0-8df7-e6fa93b9b711" fqName="com.mbeddr.ext.concurrency" version="0" />
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" fqName="com.mbeddr.ext.concurrency.plainC" version="0" />

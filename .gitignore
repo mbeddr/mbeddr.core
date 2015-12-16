@@ -165,3 +165,4 @@ tools/ant/ant-task-workspace/MakeTestsTask/out/artifacts
 tools/ant/ant-task-workspace/TeamcityMakeTests/bin/com
 code/plugins/sl-all/build-tests.xml
 code/plugins/sl-all/build.xml
+tmp

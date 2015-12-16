@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" folder="debugger" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.build/build.msd" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="platform" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.build.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="build.test" />

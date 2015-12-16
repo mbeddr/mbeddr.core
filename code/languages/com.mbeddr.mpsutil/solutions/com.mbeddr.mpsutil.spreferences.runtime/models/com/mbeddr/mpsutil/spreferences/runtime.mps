@@ -452,7 +452,7 @@
                                     <ref role="3cqZAo" node="2TKicqwoj9R" resolve="myInspector" />
                                   </node>
                                   <node concept="liA8E" id="2TKicqwojbX" role="2OqNvi">
-                                    <ref role="37wK5l" to="zyr2:~InspectorEditorComponent.editNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="editNode" />
+                                    <ref role="37wK5l" to="exr9:~EditorComponent.editNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="editNode" />
                                     <node concept="2OqwBi" id="2TKicqwoja$" role="37wK5m">
                                       <node concept="2OqwBi" id="2TKicqwojc1" role="2Oq$k0">
                                         <node concept="37vLTw" id="2TKicqwojc0" role="2Oq$k0">

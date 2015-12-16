@@ -121,6 +121,7 @@
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
+        <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
       </concept>
@@ -130,9 +131,16 @@
       <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
         <reference id="6592112598314499037" name="target" index="m$_yA" />
       </concept>
+      <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
+        <reference id="6592112598314499066" name="target" index="m$_y1" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <child id="5253498789149547704" name="dependencies" index="3bR37C" />
+      </concept>
+      <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
+        <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
         <property id="4297162197620978188" name="strict" index="1wNuhc" />
@@ -178,7 +186,7 @@
     <property role="turDy" value="build-mbeddr-distrib.xml" />
     <node concept="1E1JtA" id="60Ph1pcA2qD" role="3989C9">
       <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="com.mbeddr.rcp" />
+      <property role="TrG5h" value="com.mbeddr.rcp.actions" />
       <property role="3LESm3" value="062f3b10-3aa8-4ab3-a588-37ba2141428e" />
       <property role="2GAjPV" value="false" />
       <node concept="398BVA" id="60Ph1pcA2qR" role="3LF7KH">
@@ -193,14 +201,17 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="60Ph1pcA2rr" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                  <node concept="2Ry0Ak" id="60Ph1pcA2ry" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.rcp.msd" />
+                  <node concept="2Ry0Ak" id="2$f$kYNqFqM" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.rcp.actions.msd" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3bR9La" id="pdbBRzdoBY" role="3bR37C">
+        <ref role="3bR37D" to="al5i:5FJiYrlOTtx" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
       </node>
     </node>
     <node concept="m$_wf" id="60Ph1pcA2sh" role="3989C9">
@@ -212,7 +223,7 @@
       </node>
       <node concept="3_J27D" id="60Ph1pcA2sl" role="m$_w8">
         <node concept="3Mxwew" id="60Ph1pcA2tu" role="3MwsjC">
-          <property role="3MwjfP" value="&lt;empty&gt;" />
+          <property role="3MwjfP" value="1.0" />
         </node>
       </node>
       <node concept="3_J27D" id="60Ph1pcA2sn" role="m$_yQ">
@@ -221,7 +232,13 @@
         </node>
       </node>
       <node concept="m$_yB" id="60Ph1pcA2tC" role="m$_yh">
-        <ref role="m$_yA" node="60Ph1pcA2qD" resolve="com.mbeddr.rcp" />
+        <ref role="m$_yA" node="60Ph1pcA2qD" resolve="com.mbeddr.rcp.actions" />
+      </node>
+      <node concept="m$_yC" id="pdbBRzdoCb" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="m$_yC" id="6bah82dOH6Y" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
     </node>
     <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">

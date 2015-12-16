@@ -222,6 +222,12 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -234,6 +240,15 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
+        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
+        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+      </concept>
+      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
+        <child id="1678062499342629861" name="moduleId" index="37shsm" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -5565,6 +5580,14 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="4jHuzb0E2cg" role="jymVt">
+      <property role="TrG5h" value="myIsDisposed" />
+      <node concept="3Tm6S6" id="4jHuzb0E2ch" role="1B3o_S" />
+      <node concept="10P_77" id="4jHuzb0E6pn" role="1tU5fm" />
+      <node concept="3clFbT" id="4jHuzb0E6JT" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="VPgi8egh0M" role="jymVt" />
     <node concept="3clFb_" id="VPgi8ehHG4" role="jymVt">
       <property role="TrG5h" value="registerProject" />
@@ -6264,6 +6287,14 @@
       <node concept="3cqZAl" id="VPgi8egh6z" role="3clF45" />
       <node concept="3Tm1VV" id="VPgi8egh6$" role="1B3o_S" />
       <node concept="3clFbS" id="VPgi8egh6_" role="3clF47">
+        <node concept="3clFbJ" id="4jHuzb0EcvF" role="3cqZAp">
+          <node concept="3clFbS" id="4jHuzb0EcvH" role="3clFbx">
+            <node concept="3cpWs6" id="4jHuzb0EdYQ" role="3cqZAp" />
+          </node>
+          <node concept="37vLTw" id="4jHuzb0EdgG" role="3clFbw">
+            <ref role="3cqZAo" node="4jHuzb0E2cg" resolve="myIsDisposed" />
+          </node>
+        </node>
         <node concept="3clFbF" id="VPgi8eghQA" role="3cqZAp">
           <node concept="2OqwBi" id="VPgi8eghRK" role="3clFbG">
             <node concept="2YIFZM" id="VPgi8eghR3" role="2Oq$k0">
@@ -6321,6 +6352,17 @@
               <ref role="3cqZAo" node="VPgi8ehRQY" resolve="myViewInstances" />
             </node>
             <node concept="ANE8D" id="3WhiLkabgHF" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4jHuzb0E6N8" role="3cqZAp" />
+        <node concept="3clFbF" id="4jHuzb0E8e5" role="3cqZAp">
+          <node concept="37vLTI" id="4jHuzb0E8Wp" role="3clFbG">
+            <node concept="3clFbT" id="4jHuzb0E9Av" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="37vLTw" id="4jHuzb0E8e3" role="37vLTJ">
+              <ref role="3cqZAo" node="4jHuzb0E2cg" resolve="myIsDisposed" />
+            </node>
           </node>
         </node>
       </node>
@@ -6399,6 +6441,58 @@
             <property role="TrG5h" value="module" />
           </node>
           <node concept="3clFbS" id="VPgi8egj9g" role="2LFqv$">
+            <node concept="3SKdUt" id="4jHuzb0Dok$" role="3cqZAp">
+              <node concept="3SKdUq" id="4jHuzb0DokA" role="3SKWNk">
+                <property role="3SKdUp" value="In PluginLoaderRegistry.unloadPlugins/loadPlugins the plugin are unloaded/loaded asynchronously." />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4jHuzb0DozH" role="3cqZAp">
+              <node concept="3SKdUq" id="4jHuzb0DozI" role="3SKWNk">
+                <property role="3SKdUp" value="That means, the dispose method if this class is called after the modules are reloaded " />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4jHuzb0DoLy" role="3cqZAp">
+              <node concept="3SKdUq" id="4jHuzb0DoLz" role="3SKWNk">
+                <property role="3SKdUp" value="(afterClassLoaded is called)." />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4jHuzb0DplO" role="3cqZAp">
+              <node concept="3SKdUq" id="4jHuzb0DplQ" role="3SKWNk">
+                <property role="3SKdUp" value="While the new descriptors already use the new classes from this module, the listener is still an old" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4jHuzb0DpUG" role="3cqZAp">
+              <node concept="3SKdUq" id="4jHuzb0DpUI" role="3SKWNk">
+                <property role="3SKdUp" value="class. This causes ClassCastExceptions. To fix this, we detect the reload of this module on our own." />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4jHuzb0CHB_" role="3cqZAp">
+              <node concept="3clFbS" id="4jHuzb0CHBB" role="3clFbx">
+                <node concept="3clFbF" id="4jHuzb0CQxg" role="3cqZAp">
+                  <node concept="1rXfSq" id="4jHuzb0CQxe" role="3clFbG">
+                    <ref role="37wK5l" node="VPgi8egh6x" resolve="dispose" />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="4jHuzb0Dm$g" role="3cqZAp" />
+              </node>
+              <node concept="17R0WA" id="4jHuzb0CQ$R" role="3clFbw">
+                <node concept="2OqwBi" id="4jHuzb0CKio" role="3uHU7B">
+                  <node concept="2GrUjf" id="4jHuzb0DmFu" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="VPgi8egj9f" resolve="module" />
+                  </node>
+                  <node concept="liA8E" id="4jHuzb0CKm$" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                  </node>
+                </node>
+                <node concept="37shsh" id="4jHuzb0CKHK" role="3uHU7w">
+                  <node concept="20RdaH" id="4jHuzb0CKJf" role="37shsm">
+                    <property role="20Rdg5" value="732373f1-0d48-4122-bb43-c1606db4baca" />
+                    <property role="20Rdg7" value="com.mbeddr.mpsutil.projectview.runtime" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4jHuzb0Dm2v" role="3cqZAp" />
             <node concept="3clFbF" id="VPgi8egj9h" role="3cqZAp">
               <node concept="1rXfSq" id="VPgi8egj9i" role="3clFbG">
                 <ref role="37wK5l" node="VPgi8eginJ" resolve="unloadModule" />

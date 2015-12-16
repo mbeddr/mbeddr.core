@@ -227,6 +227,27 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="3caaaa06-4186-4d6e-8cb4-37c75a1dbcaf(com.mbeddr.mpsutil.grammarcells#1749127723000258530)" />
+            <external-mapping>
+              <mapping-node modelUID="r:0e2d0780-27a1-4dda-a429-65b192261fcc(com.mbeddr.mpsutil.grammarcells.generator.template.main@generator)" nodeID="8141673723747078062" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="3caaaa06-4186-4d6e-8cb4-37c75a1dbcaf(com.mbeddr.mpsutil.grammarcells#1749127723000258530)" />
+            <external-mapping>
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:0e2d0780-27a1-4dda-a429-65b192261fcc(com.mbeddr.mpsutil.grammarcells.generator.template.main@generator)" nodeID="5083944728298919313" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:0e2d0780-27a1-4dda-a429-65b192261fcc(com.mbeddr.mpsutil.grammarcells.generator.template.main@generator)" nodeID="7228295058352198619" />
+                </mapping-set-element>
+              </mapping-set>
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -243,6 +264,7 @@
     <dependency reexport="false">7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
+    <dependency reexport="false">52733268-be24-4f5f-ab84-a73b7c0c03b0(de.slisson.mps.richtext.customcell)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -281,6 +303,7 @@
     <module reference="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" version="0" />
     <module reference="b4f35ed8-45af-4efa-abe4-00ac26956e69(com.mbeddr.mpsutil.grammarcells.runtimelang)" version="0" />
     <module reference="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" version="0" />
+    <module reference="52733268-be24-4f5f-ab84-a73b7c0c03b0(de.slisson.mps.richtext.customcell)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />

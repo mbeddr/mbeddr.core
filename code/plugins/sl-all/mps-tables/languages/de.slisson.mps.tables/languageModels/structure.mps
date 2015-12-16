@@ -68,6 +68,10 @@
     <property role="34LRSv" value="table" />
     <property role="1pbfSe" value="1682013173" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyi" id="BILoO2KL1_" role="1TKVEl">
+      <property role="TrG5h" value="headerAlignmentDisabled" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5X6T0_NE_dS" role="PzmwI">
       <ref role="PrY4T" node="4UkcdCu_Hbr" resolve="IStylable" />
     </node>

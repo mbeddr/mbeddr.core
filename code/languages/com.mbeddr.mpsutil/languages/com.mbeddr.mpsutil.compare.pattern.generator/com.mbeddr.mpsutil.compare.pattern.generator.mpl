@@ -122,6 +122,7 @@
     <module reference="17566462-d837-4552-874c-64e45c10778a(com.mbeddr.mpsutil.compare.pattern)" version="0" />
     <module reference="dc1e48dd-9462-45bd-b16c-fb5ec3fdb3bb(com.mbeddr.mpsutil.compare.pattern.generator)" version="0" />
     <module reference="98c9c105-d602-4d30-920f-ede2039bca65(com.mbeddr.mpsutil.compare.pattern.generator.runtime)" version="0" />
+    <module reference="5e650e02-4c45-4821-aabb-7fce53462924(com.mbeddr.mpsutil.compare.pattern.runtime)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />

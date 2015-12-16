@@ -7,8 +7,8 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
   </languages>
   <imports>
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
@@ -4088,6 +4088,7 @@
       <ref role="3GEb4d" node="5ZBezCNdZIN" resolve="pthreadtypes" />
     </node>
     <node concept="3GEVxB" id="4VPUKkrrgmj" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="types" />
     </node>
     <node concept="1S7NMz" id="4VPUKkrr8B6" role="N3F5h">
@@ -6735,10 +6736,10 @@
           <node concept="3wxxNl" id="4VPUKkrsfJD" role="pFrBa">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <node concept="1sgJKr" id="4VPUKkrsfJE" role="2umbIo">
+            <node concept="rcJHQ" id="4VPUKkrsqTF" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="4VPUKkrsfKw" resolve="__siginfo" />
+              <ref role="rcJHT" node="4VPUKkrsfKS" resolve="siginfo_t" />
             </node>
           </node>
           <node concept="3wxxNl" id="4VPUKkrsfJF" role="pFrBa">
