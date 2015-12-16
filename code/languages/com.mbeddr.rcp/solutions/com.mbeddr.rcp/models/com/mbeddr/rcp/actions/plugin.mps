@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2f0637ea-d91b-4fb2-af58-666974e8debb(com.mbeddr.rcp.plugin)">
+<model ref="r:2f0637ea-d91b-4fb2-af58-666974e8debb(com.mbeddr.rcp.actions.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />

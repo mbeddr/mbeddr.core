@@ -24,6 +24,7 @@
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
         <child id="3830958861296879115" name="items" index="19_wF2" />
+        <child id="6275956088646286745" name="type" index="3YFD5m" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -315,6 +316,14 @@
         <node concept="19_wF0" id="137zkozycEw" role="19_wF2">
           <property role="19_wF3" value="&lt;pointer to FILE rvalue&gt;" />
         </node>
+        <node concept="3wxxNl" id="wqhs8mVh6N" role="3YFD5m">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqph" id="wqhs8mVh6A" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2DPCBB" id="6Iiej_Uhrd2" role="N3F5h">
@@ -325,6 +334,14 @@
         <node concept="19_wF0" id="137zkozycE$" role="19_wF2">
           <property role="19_wF3" value="&lt;pointer to FILE rvalue&gt;" />
         </node>
+        <node concept="3wxxNl" id="wqhs8mV8eX" role="3YFD5m">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqph" id="wqhs8mV8eK" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2DPCBB" id="6Iiej_Uhsyk" role="N3F5h">
@@ -334,6 +351,14 @@
       <node concept="19_ADJ" id="137zkozycEB" role="2DQcEM">
         <node concept="19_wF0" id="137zkozycEC" role="19_wF2">
           <property role="19_wF3" value="&lt;pointer to FILE rvalue&gt;" />
+        </node>
+        <node concept="3wxxNl" id="wqhs8mVeac" role="3YFD5m">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqph" id="wqhs8mVe9Z" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
         </node>
       </node>
     </node>
