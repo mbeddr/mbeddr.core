@@ -302,23 +302,6 @@
                           </node>
                         </node>
                         <node concept="3clFbH" id="bHbw4aRRa" role="3cqZAp" />
-                        <node concept="3cpWs8" id="3cT15Vc0Skb" role="3cqZAp">
-                          <node concept="3cpWsn" id="3cT15Vc0Skc" role="3cpWs9">
-                            <property role="TrG5h" value="clipBounds" />
-                            <node concept="3uibUv" id="3cT15Vc0Sk6" role="1tU5fm">
-                              <ref role="3uigEE" to="z60i:~Rectangle" resolve="Rectangle" />
-                            </node>
-                            <node concept="2OqwBi" id="3cT15Vc0Skd" role="33vP2m">
-                              <node concept="37vLTw" id="3cT15Vc0Ske" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1DZCyiI4ukY" resolve="g" />
-                              </node>
-                              <node concept="liA8E" id="3cT15Vc0Skf" role="2OqNvi">
-                                <ref role="37wK5l" to="z60i:~Graphics.getClipBounds():java.awt.Rectangle" resolve="getClipBounds" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbH" id="1DZCyiI4tXK" role="3cqZAp" />
                         <node concept="3cpWs8" id="3cT15VbZR96" role="3cqZAp">
                           <node concept="3cpWsn" id="3cT15VbZR99" role="3cpWs9">
                             <property role="TrG5h" value="width" />
@@ -361,12 +344,12 @@
                             <property role="TrG5h" value="scale" />
                             <node concept="10P55v" id="3cT15VbZMPj" role="1tU5fm" />
                             <node concept="FJ1c_" id="3cT15VbZMPv" role="33vP2m">
-                              <node concept="2OqwBi" id="3cT15Vc0R$I" role="3uHU7B">
-                                <node concept="37vLTw" id="3cT15Vc0Skg" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3cT15Vc0Skc" resolve="clipBounds" />
+                              <node concept="2OqwBi" id="1MUu1mkRTNO" role="3uHU7B">
+                                <node concept="37vLTw" id="1MUu1mkRT_l" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1DZCyiI4qrJ" resolve="format" />
                                 </node>
-                                <node concept="liA8E" id="3cT15Vc0S9q" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Rectangle.getWidth():double" resolve="getWidth" />
+                                <node concept="liA8E" id="1MUu1mkRTW_" role="2OqNvi">
+                                  <ref role="37wK5l" to="h7u9:~PageFormat.getImageableWidth():double" resolve="getImageableWidth" />
                                 </node>
                               </node>
                               <node concept="37vLTw" id="3cT15VbZX$P" role="3uHU7w">
@@ -387,12 +370,12 @@
                                 <node concept="37vLTw" id="bHbw4dWOd" role="3uHU7w">
                                   <ref role="3cqZAo" node="3cT15VbZMPu" resolve="scale" />
                                 </node>
-                                <node concept="2OqwBi" id="bHbw4dASc" role="3uHU7B">
-                                  <node concept="37vLTw" id="bHbw4dASd" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3cT15Vc0Skc" resolve="clipBounds" />
+                                <node concept="2OqwBi" id="1MUu1mkRUCg" role="3uHU7B">
+                                  <node concept="37vLTw" id="1MUu1mkRUoA" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1DZCyiI4qrJ" resolve="format" />
                                   </node>
-                                  <node concept="liA8E" id="bHbw4dASe" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~Rectangle.getHeight():double" resolve="getHeight" />
+                                  <node concept="liA8E" id="1MUu1mkRUKu" role="2OqNvi">
+                                    <ref role="37wK5l" to="h7u9:~PageFormat.getImageableHeight():double" resolve="getImageableHeight" />
                                   </node>
                                 </node>
                               </node>
@@ -441,20 +424,20 @@
                             </node>
                             <node concept="liA8E" id="3cT15VbZAyp" role="2OqNvi">
                               <ref role="37wK5l" to="z60i:~Graphics2D.translate(double,double):void" resolve="translate" />
-                              <node concept="2OqwBi" id="3cT15Vc0Xf$" role="37wK5m">
-                                <node concept="37vLTw" id="3cT15Vc0X92" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3cT15Vc0Skc" resolve="clipBounds" />
+                              <node concept="2OqwBi" id="1MUu1mkRW7O" role="37wK5m">
+                                <node concept="37vLTw" id="1MUu1mkRVX2" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1DZCyiI4qrJ" resolve="format" />
                                 </node>
-                                <node concept="liA8E" id="3cT15Vc0Z3c" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Rectangle.getX():double" resolve="getX" />
+                                <node concept="liA8E" id="1MUu1mkRWcu" role="2OqNvi">
+                                  <ref role="37wK5l" to="h7u9:~PageFormat.getImageableX():double" resolve="getImageableX" />
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="3cT15Vc0V0A" role="37wK5m">
-                                <node concept="37vLTw" id="3cT15Vc0UVf" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3cT15Vc0Skc" resolve="clipBounds" />
+                              <node concept="2OqwBi" id="1MUu1mkRVs5" role="37wK5m">
+                                <node concept="37vLTw" id="1MUu1mkRVhC" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1DZCyiI4qrJ" resolve="format" />
                                 </node>
-                                <node concept="liA8E" id="3cT15Vc0WW8" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Rectangle.getY():double" resolve="getY" />
+                                <node concept="liA8E" id="1MUu1mkRVwU" role="2OqNvi">
+                                  <ref role="37wK5l" to="h7u9:~PageFormat.getImageableY():double" resolve="getImageableY" />
                                 </node>
                               </node>
                             </node>
