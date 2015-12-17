@@ -68,6 +68,8 @@
     <property role="34LRSv" value="annotated type" />
     <property role="3GE5qa" value="definition" />
     <property role="1pbfSe" value="824366477" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7eOyx9r35RK">
