@@ -64,7 +64,6 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
-    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -351,6 +350,9 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
+      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupAnchor" flags="lg" index="2Zfapc">
+        <property id="1856959976861964583" name="groupId" index="2Zfap_" />
+      </concept>
       <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="lg" index="30SVEG">
         <property id="3826319847679982768" name="archor" index="30T2Og" />
       </concept>
@@ -5510,9 +5512,9 @@
         <ref role="tCJdB" node="2cNe_D15R0j" resolve="createNewMbeddrProject" />
       </node>
     </node>
-    <node concept="30SVEG" id="2YKCKZ22ZY7" role="2f5YQi">
-      <property role="30T2Og" value="MPSProjectActions" />
-      <ref role="tU$_T" to="tprs:hF$mal1" resolve="IDEAFile" />
+    <node concept="2Zfapc" id="4FCdWxTJ0dE" role="2f5YQi">
+      <property role="2Zfap_" value="FileOpenGroup" />
+      <property role="30T2Og" value="OpenFile" />
     </node>
   </node>
   <node concept="UJCsY" id="2cNe_D14_dz">
