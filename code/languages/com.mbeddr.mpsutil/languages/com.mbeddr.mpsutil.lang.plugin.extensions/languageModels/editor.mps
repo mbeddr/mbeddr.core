@@ -6,9 +6,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="gaxt" ref="r:ff7cab72-4f58-4133-a2c4-5d907d3fafb0(com.mbeddr.mpsutil.lang.plugin.extensions.structure)" implicit="true" />
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="gaxt" ref="r:ff7cab72-4f58-4133-a2c4-5d907d3fafb0(com.mbeddr.mpsutil.lang.plugin.extensions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -77,6 +77,25 @@
       <node concept="3F0ifn" id="3kpOq3PZAnN" role="3EZMnx">
         <property role="3F0ifm" value="exception." />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1B5fOaAYp_1">
+    <ref role="1XX52x" to="gaxt:1B5fOaAYp$e" resolve="AddToGroupAnchor" />
+    <node concept="3EZMnI" id="1B5fOaAYp_3" role="2wV5jI">
+      <property role="3EZMnw" value="false" />
+      <node concept="3F0ifn" id="1B5fOaAYp_4" role="3EZMnx">
+        <property role="3F0ifm" value="add to" />
+      </node>
+      <node concept="3F0A7n" id="1B5fOaAYp_v" role="3EZMnx">
+        <ref role="1NtTu8" to="gaxt:1B5fOaAYp$B" resolve="groupId" />
+      </node>
+      <node concept="3F0ifn" id="1B5fOaAYp_8" role="3EZMnx">
+        <property role="3F0ifm" value="at position" />
+      </node>
+      <node concept="3F0A7n" id="1B5fOaAYp_9" role="3EZMnx">
+        <ref role="1NtTu8" to="gaxt:3kpOq3PZvMK" resolve="archor" />
+      </node>
+      <node concept="2iRfu4" id="1B5fOaAYp_a" role="2iSdaV" />
     </node>
   </node>
 </model>
