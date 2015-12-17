@@ -229,6 +229,7 @@
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
+        <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -741,6 +742,15 @@
               <node concept="3clFbF" id="4bJ6BpHf5lo" role="3cqZAp">
                 <node concept="37vLTw" id="4bJ6BpHf5lm" role="3clFbG">
                   <ref role="3cqZAo" node="4bJ6BpHf4T5" resolve="res" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ee1ZP" id="4bJ6BpHrkqO" role="2ee62g">
+            <node concept="3clFbS" id="4bJ6BpHrkqP" role="2VODD2">
+              <node concept="3clFbF" id="4bJ6BpHrkrE" role="3cqZAp">
+                <node concept="Xl_RD" id="4bJ6BpHrkrD" role="3clFbG">
+                  <property role="Xl_RC" value="[" />
                 </node>
               </node>
             </node>
