@@ -10,6 +10,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -29,6 +33,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -42,6 +47,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -63,6 +71,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -132,6 +143,41 @@
         <node concept="3clFbF" id="6LfBX8YgLEG" role="3cqZAp">
           <node concept="Xl_RD" id="6LfBX8YgLEF" role="3clFbG">
             <property role="Xl_RC" value="Wrap" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1MpR5BkUKlm">
+    <property role="TrG5h" value="forceAbstract" />
+    <ref role="2ZfgGC" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
+    <node concept="2Sbjvc" id="1MpR5BkUKln" role="2ZfgGD">
+      <node concept="3clFbS" id="1MpR5BkUKlo" role="2VODD2">
+        <node concept="3clFbF" id="1MpR5BkUKt$" role="3cqZAp">
+          <node concept="37vLTI" id="1MpR5BkUKUJ" role="3clFbG">
+            <node concept="3fqX7Q" id="1MpR5BkUKV4" role="37vLTx">
+              <node concept="2OqwBi" id="1MpR5BkUL07" role="3fr31v">
+                <node concept="2Sf5sV" id="1MpR5BkUKWP" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1MpR5BkUL7u" role="2OqNvi">
+                  <ref role="3TsBF5" to="d04j:1MpR5BkUKkW" resolve="forceAbstract" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1MpR5BkUKw1" role="37vLTJ">
+              <node concept="2Sf5sV" id="1MpR5BkUKtz" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1MpR5BkUKM4" role="2OqNvi">
+                <ref role="3TsBF5" to="d04j:1MpR5BkUKkW" resolve="forceAbstract" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="1MpR5BkUKlp" role="2ZfVej">
+      <node concept="3clFbS" id="1MpR5BkUKlq" role="2VODD2">
+        <node concept="3clFbF" id="1MpR5BkUKmH" role="3cqZAp">
+          <node concept="Xl_RD" id="1MpR5BkUKmG" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Force Abstract" />
           </node>
         </node>
       </node>
