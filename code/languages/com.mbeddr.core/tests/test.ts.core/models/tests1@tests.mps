@@ -293,10 +293,6 @@
         <child id="1430983428344024335" name="targetType" index="2Yclbn" />
         <child id="1430983428344023784" name="expr" index="2YclkK" />
       </concept>
-      <concept id="1049346859912632490" name="com.mbeddr.core.udt.structure.StructCastExpression" flags="ng" index="31OTZ2">
-        <child id="1049346859912643850" name="expr" index="31OW9y" />
-        <child id="1049346859912887605" name="targetType" index="31PRDt" />
-      </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="5882395403881907205" name="com.mbeddr.core.udt.structure.UnionType" flags="ng" index="1dpZdL">
         <reference id="5882395403881907207" name="union" index="1dpZdN" />
@@ -3316,11 +3312,13 @@
             </node>
             <node concept="1_9egQ" id="Ug1QzfhRO$" role="3XIRFZ">
               <node concept="3pqW6w" id="Ug1QzfhUzI" role="1_9egR">
-                <node concept="31OTZ2" id="Ug1QzfhUzM" role="3TlMhJ">
-                  <node concept="3ZVu4v" id="Ug1QzfhUzL" role="31OW9y">
+                <node concept="1S8S4T" id="1zouAv$2qgI" role="3TlMhJ">
+                  <node concept="3ZVu4v" id="1zouAv$2qga" role="1S8S4V">
                     <ref role="3ZVs_2" node="Ug1QzfhROm" resolve="t" />
                   </node>
-                  <node concept="1sgJKr" id="Ug1QzfhUzN" role="31PRDt">
+                  <node concept="1sgJKr" id="1zouAv$2qhi" role="1S8S4N">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
                     <ref role="1sgJKq" node="Dp4TemBRmQ" resolve="Point" />
                   </node>
                 </node>
@@ -3353,14 +3351,14 @@
             </node>
             <node concept="1_9egQ" id="2S$9xq_ElQb" role="3XIRFZ">
               <node concept="3pqW6w" id="2S$9xq_Enin" role="1_9egR">
-                <node concept="31OTZ2" id="2S$9xq_Enks" role="3TlMhJ">
-                  <node concept="3ZVu4v" id="2S$9xq_Enru" role="31OW9y">
+                <node concept="1S8S4T" id="1zouAv$2r7W" role="3TlMhJ">
+                  <node concept="3ZVu4v" id="1zouAv$2qO4" role="1S8S4V">
                     <ref role="3ZVs_2" node="1cUQByJhb2N" resolve="tp" />
                   </node>
-                  <node concept="3wxxNl" id="2S$9xq_EnoV" role="31PRDt">
+                  <node concept="3wxxNl" id="1zouAv$2rcf" role="1S8S4N">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                    <node concept="1sgJKr" id="2S$9xq_EnmI" role="2umbIo">
+                    <node concept="1sgJKr" id="1zouAv$2r9m" role="2umbIo">
                       <property role="2caQfQ" value="false" />
                       <property role="2c7vTL" value="false" />
                       <ref role="1sgJKq" node="Dp4TemBRmQ" resolve="Point" />

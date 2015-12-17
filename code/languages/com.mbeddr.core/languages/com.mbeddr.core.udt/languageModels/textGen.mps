@@ -856,44 +856,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="Ug1QzfhRdZ">
-    <property role="3GE5qa" value="su.struct" />
-    <ref role="WuzLi" to="clbe:Ug1QzfgTyE" resolve="StructCastExpression" />
-    <node concept="11bSqf" id="Ug1QzfhRe0" role="11c4hB">
-      <node concept="3clFbS" id="Ug1QzfhRe1" role="2VODD2">
-        <node concept="lc7rE" id="Ug1QzfhRe2" role="3cqZAp">
-          <node concept="la8eA" id="24lM_j3_wmC" role="lcghm">
-            <property role="lacIc" value="(" />
-          </node>
-          <node concept="la8eA" id="24lM_j3_wmF" role="lcghm">
-            <property role="lacIc" value="(" />
-          </node>
-          <node concept="l9hG8" id="24lM_j3_wmG" role="lcghm">
-            <node concept="2OqwBi" id="24lM_j3_wn3" role="lb14g">
-              <node concept="117lpO" id="24lM_j3_wmI" role="2Oq$k0" />
-              <node concept="3TrEf2" id="24lM_j3_wn9" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:Ug1QzfhROP" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="24lM_j3_wnb" role="lcghm">
-            <property role="lacIc" value=") " />
-          </node>
-          <node concept="l9hG8" id="Ug1QzfhRe4" role="lcghm">
-            <node concept="2OqwBi" id="Ug1QzfhRer" role="lb14g">
-              <node concept="117lpO" id="Ug1QzfhRe6" role="2Oq$k0" />
-              <node concept="3TrEf2" id="Ug1QzfhRex" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:Ug1QzfgWka" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="24lM_j3_wnd" role="lcghm">
-            <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="2ZsiEbNAY">
     <property role="3GE5qa" value="opaque" />
     <ref role="WuzLi" to="clbe:2ZsiEbECc" resolve="OpaqueType" />
