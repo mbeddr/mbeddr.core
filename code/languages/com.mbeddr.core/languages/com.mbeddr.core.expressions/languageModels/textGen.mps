@@ -503,24 +503,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="5K77MGvGz1z">
-    <property role="3GE5qa" value="types.cast" />
-    <ref role="WuzLi" to="mj1l:5K77MGvFACU" resolve="Int2Boolean" />
-    <node concept="11bSqf" id="5K77MGvGz1$" role="11c4hB">
-      <node concept="3clFbS" id="5K77MGvGz1_" role="2VODD2">
-        <node concept="lc7rE" id="5K77MGvGz1A" role="3cqZAp">
-          <node concept="l9hG8" id="5K77MGvGz1C" role="lcghm">
-            <node concept="2OqwBi" id="5K77MGvGz1F" role="lb14g">
-              <node concept="117lpO" id="5K77MGvGz1E" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5K77MGvGz1J" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:5K77MGvFD7B" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="3IvO3vpQSXm">
     <property role="3GE5qa" value="literals" />
     <ref role="WuzLi" to="mj1l:1spqZOskLyG" resolve="CharLiteral" />

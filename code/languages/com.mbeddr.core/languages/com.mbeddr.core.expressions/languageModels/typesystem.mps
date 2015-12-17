@@ -2425,54 +2425,6 @@
       <ref role="1YaFvo" to="mj1l:5IYyAOzBgHk" resolve="CastExpression" />
     </node>
   </node>
-  <node concept="1YbPZF" id="5K77MGvFJ2X">
-    <property role="TrG5h" value="typeof_IntToBoolean" />
-    <property role="3GE5qa" value="types.cast" />
-    <node concept="3clFbS" id="5K77MGvFJ2Y" role="18ibNy">
-      <node concept="1Z5TYs" id="5K77MGvFJ34" role="3cqZAp">
-        <node concept="mw_s8" id="5K77MGvFJ38" role="1ZfhKB">
-          <node concept="2pJPEk" id="9mFkazbgFs" role="mwGJk">
-            <node concept="2pJPED" id="9mFkazbgFr" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="5K77MGvFJ37" role="1ZfhK$">
-          <node concept="1Z2H0r" id="5K77MGvFJ31" role="mwGJk">
-            <node concept="1YBJjd" id="5K77MGvFJ33" role="1Z2MuG">
-              <ref role="1YBMHb" node="5K77MGvFJ2Z" resolve="int2bool" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1ZobV4" id="3IvO3vpQUbS" role="3cqZAp">
-        <property role="3wDh2S" value="true" />
-        <node concept="mw_s8" id="3IvO3vpQUbT" role="1ZfhK$">
-          <node concept="1Z2H0r" id="3IvO3vpQUbU" role="mwGJk">
-            <node concept="2OqwBi" id="3IvO3vpQUbV" role="1Z2MuG">
-              <node concept="1YBJjd" id="3IvO3vpQUbW" role="2Oq$k0">
-                <ref role="1YBMHb" node="5K77MGvFJ2Z" resolve="int2bool" />
-              </node>
-              <node concept="3TrEf2" id="3IvO3vpQUbX" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:5K77MGvFD7B" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="3IvO3vpQUbY" role="1ZfhKB">
-          <node concept="2pJPEk" id="9mFkazbgJk" role="mwGJk">
-            <node concept="2pJPED" id="9mFkazbgJj" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyd" resolve="Int64tType" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5K77MGvFJ2Z" role="1YuTPh">
-      <property role="TrG5h" value="int2bool" />
-      <ref role="1YaFvo" to="mj1l:5K77MGvFACU" resolve="Int2Boolean" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="1spqZOskLyX">
     <property role="TrG5h" value="typeof_CharLiteral" />
     <property role="3GE5qa" value="literals" />

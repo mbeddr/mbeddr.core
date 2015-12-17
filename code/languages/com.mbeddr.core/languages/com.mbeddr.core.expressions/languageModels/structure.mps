@@ -435,20 +435,6 @@
       <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5K77MGvFACU">
-    <property role="3GE5qa" value="types.cast" />
-    <property role="TrG5h" value="Int2Boolean" />
-    <property role="34LRSv" value="int2bool" />
-    <property role="R4oN_" value="cast an int to boolean" />
-    <property role="1pbfSe" value="2075494757" />
-    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="5K77MGvFD7B" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2APHWiztz8M">
     <property role="3GE5qa" value="expr" />
     <property role="TrG5h" value="UnaryExpression" />
