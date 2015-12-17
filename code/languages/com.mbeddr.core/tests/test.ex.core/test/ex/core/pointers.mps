@@ -42,6 +42,10 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
+      <concept id="1732804289248065302" name="com.mbeddr.core.statements.structure.DesignatedInitializer" flags="ng" index="3_UPX7">
+        <child id="1732804289248065308" name="index" index="3_UPXd" />
+        <child id="1732804289248065310" name="value" index="3_UPXf" />
+      </concept>
       <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
         <child id="8624890525768479139" name="textblock" index="3SJzmv" />
       </concept>
@@ -689,7 +693,72 @@
             </node>
           </node>
         </node>
+        <node concept="3XIRlf" id="1zouAv$1xBm" role="3XIRFZ">
+          <property role="TrG5h" value="arrayWithDesignatedInitializers" />
+          <node concept="3o3WLD" id="1zouAv$1xBn" role="3XIe9u">
+            <node concept="3_UPX7" id="1zouAv$1z8b" role="3o3WLE">
+              <node concept="3TlMh9" id="1zouAv$1xBo" role="3_UPXf">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="3TlMh9" id="1zouAv$1zdh" role="3_UPXd">
+                <property role="2hmy$m" value="4" />
+              </node>
+            </node>
+            <node concept="3_UPX7" id="1zouAv$1ziE" role="3o3WLE">
+              <node concept="3TlMh9" id="1zouAv$1xBp" role="3_UPXf">
+                <property role="2hmy$m" value="20" />
+              </node>
+              <node concept="3TlMh9" id="1zouAv$1zo7" role="3_UPXd">
+                <property role="2hmy$m" value="3" />
+              </node>
+            </node>
+            <node concept="3_UPX7" id="1zouAv$1ztN" role="3o3WLE">
+              <node concept="3TlMh9" id="1zouAv$1xBq" role="3_UPXf">
+                <property role="2hmy$m" value="30" />
+              </node>
+              <node concept="3TlMh9" id="1zouAv$1zzB" role="3_UPXd">
+                <property role="2hmy$m" value="2" />
+              </node>
+            </node>
+            <node concept="3_UPX7" id="1zouAv$1zD4" role="3o3WLE">
+              <node concept="3TlMh9" id="1zouAv$1xBr" role="3_UPXf">
+                <property role="2hmy$m" value="40" />
+              </node>
+              <node concept="3TlMh9" id="1zouAv$1zJf" role="3_UPXd">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
+            <node concept="3_UPX7" id="1zouAv$1zOZ" role="3o3WLE">
+              <node concept="3TlMh9" id="1zouAv$1xBs" role="3_UPXf">
+                <property role="2hmy$m" value="50" />
+              </node>
+              <node concept="3TlMh9" id="1zouAv$1zVu" role="3_UPXd">
+                <property role="2hmy$m" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="3J0A42" id="1zouAv$1xBt" role="2C2TGm">
+            <node concept="26Vqqz" id="1zouAv$1xBu" role="2umbIo" />
+            <node concept="4ZOvp" id="1zouAv$1xBv" role="1YbSNA">
+              <ref role="2DPCA0" node="6ioAFJ$pRLQ" resolve="arrSize" />
+            </node>
+          </node>
+        </node>
         <node concept="3XISUE" id="35JkqCBiQ$y" role="3XIRFZ" />
+        <node concept="2N2KuS" id="1zouAv$1$S6" role="3XIRFZ">
+          <node concept="3TlMh9" id="1zouAv$1_bq" role="2N2GHh">
+            <property role="2hmy$m" value="50" />
+          </node>
+          <node concept="2wJmCr" id="1zouAv$1$Wv" role="2N2GHg">
+            <node concept="3TlMh9" id="1zouAv$1_30" role="2wJmCp">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3ZVu4v" id="1zouAv$1$Wg" role="1_9fRO">
+              <ref role="3ZVs_2" node="1zouAv$1xBm" resolve="arrayWithDesignatedInitializers" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="1zouAv$1wXO" role="3XIRFZ" />
         <node concept="c0Tn9" id="4Y0lNFa3gJc" role="3XIRFZ">
           <node concept="3TlM44" id="4Y0lNFa3gJh" role="c0Tn6">
             <node concept="2wJmCr" id="4Y0lNFa3gJf" role="3TlMhI">
