@@ -597,6 +597,34 @@
             </node>
           </node>
         </node>
+        <node concept="1QiMYF" id="3_xiDtIQL0V" role="3XIRFZ">
+          <node concept="OjmMv" id="3_xiDtIQL0X" role="3SJzmv">
+            <node concept="19SGf9" id="3_xiDtIQL0Y" role="OjmMu">
+              <node concept="19SUe$" id="3_xiDtIQL0Z" role="19SJt6">
+                <property role="19SUeA" value="set the opening root element" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="3_xiDtIQJVw" role="3XIRFZ">
+          <node concept="3O_q_g" id="3_xiDtIQJVx" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <node concept="1S7827" id="3_xiDtIQJVy" role="3O_q_j">
+              <ref role="1S7826" node="171BYjwcnyZ" resolve="assert_fd" />
+            </node>
+            <node concept="PhEJO" id="241FcDpmxC3" role="3O_q_j">
+              <property role="PhEJT" value="&lt;result&gt;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="3_xiDtIRR8W" role="3XIRFZ">
+          <node concept="3O_q_g" id="3_xiDtIRR8U" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <node concept="1S7827" id="3_xiDtIRR9Y" role="3O_q_j">
+              <ref role="1S7826" node="171BYjwcnyZ" resolve="assert_fd" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="19Rifw" id="4DjlAm4JTNJ" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -1395,6 +1423,26 @@
       <property role="TrG5h" value="finish_testsuite" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="4DjlAm4JTXW" role="3XIRFX">
+        <node concept="1QiMYF" id="3_xiDtIQLfZ" role="3XIRFZ">
+          <node concept="OjmMv" id="3_xiDtIQLg0" role="3SJzmv">
+            <node concept="19SGf9" id="3_xiDtIQLg1" role="OjmMu">
+              <node concept="19SUe$" id="3_xiDtIQLg2" role="19SJt6">
+                <property role="19SUeA" value="set the closing root element" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="3_xiDtIQLg3" role="3XIRFZ">
+          <node concept="3O_q_g" id="3_xiDtIQLg4" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <node concept="1S7827" id="3_xiDtIQLg5" role="3O_q_j">
+              <ref role="1S7826" node="171BYjwcnyZ" resolve="assert_fd" />
+            </node>
+            <node concept="3eV9cR" id="3_xiDtIQLg6" role="3O_q_j">
+              <property role="PhEJT" value="&lt;/result&gt;" />
+            </node>
+          </node>
+        </node>
         <node concept="1_9egQ" id="3Ojsb45bERf" role="3XIRFZ">
           <node concept="3O_q_g" id="3Ojsb45bERd" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycF3" resolve="fclose" />
@@ -1444,8 +1492,6 @@
           </node>
         </node>
         <node concept="3XISUE" id="3Ojsb45aP0A" role="3XIRFZ" />
-        <node concept="3XISUE" id="3Ojsb45aP4U" role="3XIRFZ" />
-        <node concept="3XISUE" id="3Ojsb45aP9f" role="3XIRFZ" />
         <node concept="1_9egQ" id="4DjlAm4MtZ8" role="3XIRFZ">
           <node concept="3O_q_g" id="4DjlAm4MtZ6" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycKc" resolve="sprintf" />
