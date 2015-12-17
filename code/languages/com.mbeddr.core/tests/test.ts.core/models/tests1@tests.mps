@@ -368,6 +368,7 @@
       </concept>
       <concept id="6021475212425916971" name="com.mbeddr.core.modules.structure.GlobalConstantFunctionDeclaration" flags="ng" index="BTY7A">
         <property id="1990329643454481074" name="hasEllipsis" index="3z_X3L" />
+        <child id="8655966904682451042" name="content" index="2_0FLF" />
         <child id="6021475212425916983" name="arguments" index="BTY7U" />
       </concept>
       <concept id="6021475212426054485" name="com.mbeddr.core.modules.structure.GlobalConstantFunctionArgument" flags="ng" index="BUhyo" />
@@ -403,8 +404,12 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+      <concept id="7308356872494660981" name="com.mbeddr.core.modules.structure.GlobalConstantFuntionArgumentRef" flags="ng" index="39I4aJ">
+        <reference id="7308356872494660982" name="arg" index="39I4aG" />
+      </concept>
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="8389787570822353384" name="com.mbeddr.core.modules.structure.ClosureStatementList" flags="ng" index="1fH1aK" />
+      <concept id="1990329643457632473" name="com.mbeddr.core.modules.structure.HashOperator" flags="ng" index="3zDWEq" />
       <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
         <reference id="5950410542643524493" name="function" index="3O_q_h" />
         <child id="5950410542643524495" name="actuals" index="3O_q_j" />
@@ -1877,6 +1882,9 @@
         </node>
         <node concept="2NXPZ9" id="2VzPqUCqFoK" role="N3F5h">
           <property role="TrG5h" value="empty_1343751194617_3" />
+        </node>
+        <node concept="2NXPZ9" id="1zouAvzY3bY" role="N3F5h">
+          <property role="TrG5h" value="empty_1450362103110_8" />
         </node>
         <node concept="rcJHK" id="20McjG55jkP" role="N3F5h">
           <property role="TrG5h" value="zahl" />
@@ -26853,6 +26861,24 @@
             <property role="PhEJT" value="STRING" />
           </node>
         </node>
+        <node concept="2NXPZ9" id="1zouAvzY9ji" role="N3F5h">
+          <property role="TrG5h" value="empty_1450362141247_10" />
+        </node>
+        <node concept="BTY7A" id="1zouAvzY9l6" role="N3F5h">
+          <property role="TrG5h" value="SOME_MACRO" />
+          <node concept="BUhyo" id="1zouAvzY9ma" role="BTY7U">
+            <property role="TrG5h" value="a" />
+            <node concept="26Vqpk" id="1zouAvzY9mb" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="3zDWEq" id="1zouAvzY9mx" role="2_0FLF">
+            <node concept="39I4aJ" id="1zouAvzY9mO" role="1_9fRO">
+              <ref role="39I4aG" node="1zouAvzY9ma" resolve="a" />
+            </node>
+          </node>
+        </node>
         <node concept="2NXPZ9" id="6Pt2vx4BT_n" role="N3F5h">
           <property role="TrG5h" value="empty_1429268786445_6" />
         </node>
@@ -26894,7 +26920,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3XISUE" id="6Pt2vx4BLje" role="3XIRFZ" />
             <node concept="3XIRlf" id="6Pt2vx4BLrA" role="3XIRFZ">
               <property role="TrG5h" value="chrPtr" />
               <node concept="3wxxNl" id="6Pt2vx4BLzK" role="2C2TGm">
