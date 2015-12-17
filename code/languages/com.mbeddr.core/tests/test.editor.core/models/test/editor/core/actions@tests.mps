@@ -3700,8 +3700,13 @@
       <node concept="2TK7Tu" id="qT5MFmUDiL" role="3cqZAp">
         <property role="2TTd_B" value="uint8[10" />
       </node>
-      <node concept="yd1bK" id="qT5MFmUGmz" role="3cqZAp">
-        <node concept="pLAjd" id="qT5MFmUGm_" role="yd6KS">
+      <node concept="yd1bK" id="4bJ6BpHrV3Y" role="3cqZAp">
+        <node concept="pLAjd" id="4bJ6BpHrV3Z" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="4bJ6BpHrV7N" role="3cqZAp">
+        <node concept="pLAjd" id="4bJ6BpHrV7O" role="yd6KS">
           <property role="pLAjf" value="VK_TAB" />
         </node>
       </node>
