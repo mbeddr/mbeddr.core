@@ -235,8 +235,12 @@
       <concept id="3926162927329926113" name="com.mbeddr.core.modules.structure.TypeExpression" flags="ng" index="13G_e0">
         <child id="3926162927330036867" name="type" index="13F0jy" />
       </concept>
+      <concept id="7308356872494660981" name="com.mbeddr.core.modules.structure.GlobalConstantFuntionArgumentRef" flags="ng" index="39I4aJ">
+        <reference id="7308356872494660982" name="arg" index="39I4aG" />
+      </concept>
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="8389787570822353384" name="com.mbeddr.core.modules.structure.ClosureStatementList" flags="ng" index="1fH1aK" />
+      <concept id="1990329643457632473" name="com.mbeddr.core.modules.structure.HashOperator" flags="ng" index="3zDWEq" />
       <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
         <reference id="5950410542643524493" name="function" index="3O_q_h" />
         <child id="5950410542643524495" name="actuals" index="3O_q_j" />
@@ -3905,6 +3909,24 @@
   </node>
   <node concept="N3F5e" id="4VxFbWczdvs">
     <property role="TrG5h" value="Strings" />
+    <node concept="BTY7A" id="1zouAvzYkT2" role="N3F5h">
+      <property role="TrG5h" value="SOME_MACRO" />
+      <node concept="BUhyo" id="1zouAvzYldy" role="BTY7U">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqpk" id="1zouAvzYldz" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="3zDWEq" id="1zouAvzYldT" role="2_0FLF">
+        <node concept="39I4aJ" id="1zouAvzYlec" role="1_9fRO">
+          <ref role="39I4aG" node="1zouAvzYldy" resolve="a" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1zouAvzYk_2" role="N3F5h">
+      <property role="TrG5h" value="empty_1450362286160_2" />
+    </node>
     <node concept="c0Qz5" id="4VxFbWczdvt" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="stringtypes" />
