@@ -107,6 +107,12 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
@@ -922,7 +928,13 @@
     <property role="3GE5qa" value="typeSizeSpec" />
     <ref role="WuzLi" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
     <node concept="11bSqf" id="5S7KXTzDso_" role="11c4hB">
-      <node concept="3clFbS" id="5S7KXTzDsoA" role="2VODD2" />
+      <node concept="3clFbS" id="5S7KXTzDsoA" role="2VODD2">
+        <node concept="3SKdUt" id="8PQYyu8tyk" role="3cqZAp">
+          <node concept="3SKdUq" id="8PQYyu8tyn" role="3SKWNk">
+            <property role="3SKdUp" value="do nothing. is abandoned implicitly" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="WtQ9Q" id="UslQezBEpq">
