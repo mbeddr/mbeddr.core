@@ -238,7 +238,7 @@
     <node concept="1TJgyj" id="7eOyx9r3qG3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="components" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7eOyx9r3kR5" resolve="UnitReference" />
     </node>
   </node>
