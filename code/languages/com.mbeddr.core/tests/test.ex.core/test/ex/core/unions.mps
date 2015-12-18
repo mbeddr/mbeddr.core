@@ -29,6 +29,14 @@
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
@@ -62,9 +70,13 @@
         <reference id="4202685725779391329" name="element" index="2xZoc7" />
         <child id="4202685725779390438" name="value" index="2xZpY0" />
       </concept>
+      <concept id="1803113332147436562" name="com.mbeddr.core.udt.structure.InnerSUDeclarationRef" flags="ng" index="2HrGSn">
+        <reference id="1803113332147436686" name="ref" index="2HrGUb" />
+      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
+      <concept id="8685795338482702883" name="com.mbeddr.core.udt.structure.AnonymousUnionDeclaration" flags="ng" index="QyRVO" />
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="5882395403881907205" name="com.mbeddr.core.udt.structure.UnionType" flags="ng" index="1dpZdL">
         <reference id="5882395403881907207" name="union" index="1dpZdN" />
@@ -75,11 +87,17 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="1028666136487545270" name="com.mbeddr.core.modules.structure.CommentModuleContent" flags="ng" index="2B_Gvg">
+        <child id="1028666136487550078" name="text" index="2B_H8o" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
@@ -109,10 +127,12 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -125,6 +145,10 @@
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
+      <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
+        <property id="2941277002445651368" name="const" index="2c7vTL" />
+        <property id="2941277002448691247" name="volatile" index="2caQfQ" />
+      </concept>
       <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
@@ -147,12 +171,6 @@
     </node>
     <node concept="2NXPZ9" id="5GWsyuECPQk" role="N3F5h">
       <property role="TrG5h" value="empty_1334830259718_1" />
-    </node>
-    <node concept="2NXPZ9" id="56ytRgsLtA2" role="N3F5h">
-      <property role="TrG5h" value="empty_1334829298582_5" />
-    </node>
-    <node concept="2NXPZ9" id="56ytRgsLtA3" role="N3F5h">
-      <property role="TrG5h" value="empty_1334829298718_6" />
     </node>
     <node concept="c0Qz5" id="56ytRgsLt$D" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -269,12 +287,99 @@
             </node>
           </node>
         </node>
-        <node concept="3XISUE" id="2EBw14y1NyO" role="3XIRFZ" />
-        <node concept="3XISUE" id="2EBw14y1NyP" role="3XIRFZ" />
       </node>
     </node>
     <node concept="2NXPZ9" id="56ytRgsLt_5" role="N3F5h">
       <property role="TrG5h" value="empty_1334829264931_1" />
+    </node>
+    <node concept="2B_Gvg" id="1JA5qgmxsRy" role="N3F5h">
+      <node concept="OjmMv" id="1JA5qgmxsR$" role="2B_H8o">
+        <node concept="19SGf9" id="1JA5qgmxsR_" role="OjmMu">
+          <node concept="19SUe$" id="1JA5qgmxsRA" role="19SJt6">
+            <property role="19SUeA" value="normally anonymous unions are not allowed in implementation modules - we test here their textgen" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1dpZge" id="1JA5qgmxmYk" role="N3F5h">
+      <property role="TrG5h" value="imbricatedUnions" />
+      <node concept="1dpRTG" id="1JA5qgmxn1b" role="HszBJ">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="1JA5qgmxn1a" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="QyRVO" id="1JA5qgmxn1B" role="HszBJ">
+        <property role="TrG5h" value="inner" />
+        <node concept="1dpRTG" id="1JA5qgmxn1Z" role="HszBJ">
+          <property role="TrG5h" value="b" />
+          <node concept="26Vqpq" id="1JA5qgmxn1Y" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="1dpRTG" id="1JA5qgmxn2z" role="HszBJ">
+          <property role="TrG5h" value="c" />
+          <node concept="2fgwQN" id="1JA5qgmxn2x" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1JA5qgmxn2Y" role="N3F5h">
+      <property role="TrG5h" value="empty_1450456241680_1" />
+    </node>
+    <node concept="c0Qz5" id="1JA5qgmxsZO" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testAnonymousUnions" />
+      <node concept="19Rifw" id="1JA5qgmxsZP" role="2C2TGm" />
+      <node concept="3XIRFW" id="1JA5qgmxsZQ" role="c0Qz3">
+        <node concept="3XIRlf" id="1JA5qgmxngO" role="3XIRFZ">
+          <property role="TrG5h" value="iu1" />
+          <node concept="1dpZdL" id="1JA5qgmxnqb" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1dpZdN" node="1JA5qgmxmYk" resolve="imbricatedUnions" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="1JA5qgmxngQ" role="3XIRFZ">
+          <node concept="3pqW6w" id="1JA5qgmxngR" role="1_9egR">
+            <node concept="2qmXGp" id="1JA5qgmxnEU" role="3TlMhI">
+              <node concept="1E4Tgc" id="1JA5qgmxnFT" role="1ESnxz">
+                <ref role="1E4Tge" node="1JA5qgmxn1b" resolve="a" />
+              </node>
+              <node concept="3ZVu4v" id="1JA5qgmxngT" role="1_9fRO">
+                <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="1JA5qgmxngV" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="c0Tn9" id="1JA5qgmxnPW" role="3XIRFZ">
+          <node concept="3TlM44" id="1JA5qgmxoig" role="c0Tn6">
+            <node concept="2qmXGp" id="1JA5qgmxnXj" role="3TlMhI">
+              <node concept="1E4Tgc" id="1JA5qgmxo1$" role="1ESnxz">
+                <ref role="1E4Tge" node="1JA5qgmxn1Z" resolve="b" />
+              </node>
+              <node concept="2qmXGp" id="1JA5qgmxnTc" role="1_9fRO">
+                <node concept="2HrGSn" id="1JA5qgmxnX9" role="1ESnxz">
+                  <ref role="2HrGUb" node="1JA5qgmxn1B" resolve="inner" />
+                </node>
+                <node concept="3ZVu4v" id="1JA5qgmxnT0" role="1_9fRO">
+                  <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
+                </node>
+              </node>
+            </node>
+            <node concept="3TlMh9" id="1JA5qgmxo70" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="56ytRgsLt_6" role="N3F5h">
       <property role="TrG5h" value="empty_1334829265095_2" />
@@ -283,6 +388,9 @@
       <property role="TrG5h" value="main" />
       <node concept="3cM6IN" id="6TAwvhVWkgT" role="lIfQt">
         <ref role="3cM6IK" node="56ytRgsLt$D" resolve="testUnions" />
+      </node>
+      <node concept="3cM6IN" id="1JA5qgmxvlw" role="lIfQt">
+        <ref role="3cM6IK" node="1JA5qgmxsZO" resolve="testAnonymousUnions" />
       </node>
     </node>
   </node>
