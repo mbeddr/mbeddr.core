@@ -437,6 +437,12 @@
       <property role="20kJfa" value="expr2" />
       <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
     </node>
+    <node concept="1TJgyj" id="6bvh$IxY8n5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
     <node concept="PrWs8" id="3efHud92zm1" role="PzmwI">
       <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
     </node>

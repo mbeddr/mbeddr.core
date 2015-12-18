@@ -22,6 +22,7 @@
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -870,6 +871,11 @@
         </node>
         <node concept="3F0ifn" id="3efHud92zoc" role="3EZMnx">
           <property role="3F0ifm" value="(" />
+        </node>
+        <node concept="3F2HdR" id="6bvh$IxY8qI" role="3EZMnx">
+          <property role="2czwfO" value="," />
+          <ref role="1NtTu8" to="ibwz:6bvh$IxY8n5" />
+          <node concept="l2Vlx" id="6bvh$IxY8qK" role="2czzBx" />
         </node>
         <node concept="3F0ifn" id="3efHud92zow" role="3EZMnx">
           <property role="3F0ifm" value=")" />

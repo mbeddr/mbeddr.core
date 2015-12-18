@@ -12507,6 +12507,41 @@
                                     </node>
                                   </node>
                                   <node concept="3clFbH" id="6bvh$IxNWpW" role="3cqZAp" />
+                                  <node concept="3clFbJ" id="65G7Yo_0cB2" role="3cqZAp">
+                                    <node concept="3clFbS" id="65G7Yo_0cB4" role="3clFbx">
+                                      <node concept="3N13vt" id="65G7Yo_0BI1" role="3cqZAp" />
+                                    </node>
+                                    <node concept="3fqX7Q" id="65G7Yo_0Bzt" role="3clFbw">
+                                      <node concept="2OqwBi" id="65G7Yo_0Bzv" role="3fr31v">
+                                        <node concept="2YIFZM" id="65G7Yo_0Bzw" role="2Oq$k0">
+                                          <ref role="37wK5l" to="czm:20mebiUT5Xl" resolve="getInstance" />
+                                          <ref role="1Pybhc" to="czm:20mebiUT0Ry" resolve="EditorHierachyCache" />
+                                        </node>
+                                        <node concept="liA8E" id="65G7Yo_0Bzx" role="2OqNvi">
+                                          <ref role="37wK5l" to="czm:20mebiUT6$I" resolve="isActiveEditor" />
+                                          <node concept="10Nm6u" id="65G7Yo_0Bzy" role="37wK5m">
+                                            <node concept="5jKBG" id="65G7Yo_0Bzz" role="lGtFl">
+                                              <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
+                                            </node>
+                                          </node>
+                                          <node concept="2OqwBi" id="65G7Yo_0Bz$" role="37wK5m">
+                                            <node concept="2OqwBi" id="65G7Yo_0Bz_" role="2Oq$k0">
+                                              <node concept="37vLTw" id="65G7Yo_1_3j" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="6bvh$IxNW7n" resolve="redirectedContext" />
+                                              </node>
+                                              <node concept="liA8E" id="65G7Yo_0BzB" role="2OqNvi">
+                                                <ref role="37wK5l" to="zce0:~SideTransformActionsBuilderContext.getSourceNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSourceNode" />
+                                              </node>
+                                            </node>
+                                            <node concept="liA8E" id="65G7Yo_0BzC" role="2OqNvi">
+                                              <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbH" id="65G7Yo_0cv$" role="3cqZAp" />
                                   <node concept="3clFbF" id="6bvh$IxNWpX" role="3cqZAp">
                                     <node concept="1rXfSq" id="6bvh$IxNWpY" role="3clFbG">
                                       <ref role="37wK5l" node="4eBi5gdtuOp" resolve="withRedirectedContext" />
