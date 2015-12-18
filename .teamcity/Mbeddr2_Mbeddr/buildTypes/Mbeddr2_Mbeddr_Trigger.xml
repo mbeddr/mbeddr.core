@@ -12,8 +12,7 @@
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
-          <param name="branchFilter"><![CDATA[-:*
-+:master
+          <param name="branchFilter"><![CDATA[+:master
 +:feature/*
 +:refactor/*
 +:maintenance/*
@@ -23,7 +22,7 @@
           <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriod" value="91" />
           <param name="quietPeriodMode" value="USE_CUSTOM" />
-          <param name="triggerRules"><![CDATA[+:*
+          <param name="triggerRules"><![CDATA[+:.
 -:/.teamcity/*]]></param>
         </parameters>
       </build-trigger>
