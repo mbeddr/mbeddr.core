@@ -1,5 +1,5 @@
 <project name="mbeddr download and deploy plugins" default="clean-and-build" >
-	<!-- import properties -->
+ 	<!-- import properties -->
 	<property file="build.properties"/>  
 
 	<!-- validations -->
