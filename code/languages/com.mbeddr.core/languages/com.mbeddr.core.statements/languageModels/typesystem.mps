@@ -2126,5 +2126,45 @@
       <ref role="1YaFvo" to="c4fa:1wca57XTRsm" resolve="DesignatedInitializer" />
     </node>
   </node>
+  <node concept="18kY7G" id="6T3uXzTgIE1">
+    <property role="TrG5h" value="check_LocalVariableDeclarationStorrageClass" />
+    <property role="3GE5qa" value="localvar" />
+    <node concept="3clFbS" id="6T3uXzTgIE2" role="18ibNy">
+      <node concept="3clFbJ" id="6T3uXzTgIE8" role="3cqZAp">
+        <node concept="3clFbS" id="6T3uXzTgIE9" role="3clFbx">
+          <node concept="2MkqsV" id="6T3uXzTgMdV" role="3cqZAp">
+            <node concept="Xl_RD" id="6T3uXzTgMe7" role="2MkJ7o">
+              <property role="Xl_RC" value="cannot be static and register at the same time" />
+            </node>
+            <node concept="1YBJjd" id="6T3uXzTgMfh" role="2OEOjV">
+              <ref role="1YBMHb" node="6T3uXzTgIE4" resolve="localVariableDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="6T3uXzTgJSa" role="3clFbw">
+          <node concept="2OqwBi" id="6T3uXzTgIOf" role="3uHU7B">
+            <node concept="1YBJjd" id="6T3uXzTgIEk" role="2Oq$k0">
+              <ref role="1YBMHb" node="6T3uXzTgIE4" resolve="localVariableDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="6T3uXzTgJuG" role="2OqNvi">
+              <ref role="3TsBF5" to="c4fa:3_fgNoLA7XY" resolve="static" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6T3uXzTgK5n" role="3uHU7w">
+            <node concept="1YBJjd" id="6T3uXzTgJVh" role="2Oq$k0">
+              <ref role="1YBMHb" node="6T3uXzTgIE4" resolve="localVariableDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="6T3uXzTgKM$" role="2OqNvi">
+              <ref role="3TsBF5" to="c4fa:52l0VUuN5OB" resolve="storeInRegister" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6T3uXzTgIE4" role="1YuTPh">
+      <property role="TrG5h" value="localVariableDeclaration" />
+      <ref role="1YaFvo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    </node>
+  </node>
 </model>
 
