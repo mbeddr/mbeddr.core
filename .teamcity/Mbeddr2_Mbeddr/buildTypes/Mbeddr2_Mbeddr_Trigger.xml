@@ -22,7 +22,7 @@
           <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriod" value="91" />
           <param name="quietPeriodMode" value="USE_CUSTOM" />
-          <param name="triggerRules"><![CDATA[+:*
+          <param name="triggerRules"><![CDATA[+:.
 -:/.teamcity/*]]></param>
         </parameters>
       </build-trigger>
