@@ -20,7 +20,6 @@
       </usedDevKits>
       <languageVersions>
         <language id="0316e52b-aaa9-47f4-9c0b-ca0d60cdc961" fqName="com.mbeddr.analyses.lantest" version="0" />
-        <language id="5ef691b5-60ce-4ece-a04e-25e642dfa128" fqName="com.mbeddr.mpsutil.lantest" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />

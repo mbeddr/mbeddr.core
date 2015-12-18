@@ -1173,11 +1173,9 @@
       <property role="TrG5h" value="entryComponentTypes" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="34Ib7$WTf0p" role="3XIRFX">
-        <node concept="1_9egQ" id="34Ib7$WTitb" role="3XIRFZ">
-          <node concept="3rBj6X" id="34Ib7$WTit9" role="1_9egR">
-            <node concept="3cM6IN" id="34Ib7$WTiv5" role="3cM6Hi">
-              <ref role="3cM6IK" node="7XQHhkHfxHu" resolve="testComponentTypes" />
-            </node>
+        <node concept="1_9egQ" id="12A_y2iporZ" role="3XIRFZ">
+          <node concept="3O_q_g" id="12A_y2iporY" role="1_9egR">
+            <ref role="3O_q_h" node="12A_y2ipoii" resolve="testComponentTypes" />
           </node>
         </node>
       </node>
@@ -1189,28 +1187,28 @@
     <node concept="2NXPZ9" id="34Ib7$WTf4Z" role="N3F5h">
       <property role="TrG5h" value="empty_1401519031081_2" />
     </node>
-    <node concept="c0Qz5" id="7XQHhkHfxHu" role="N3F5h">
-      <property role="2OOxQR" value="true" />
+    <node concept="2NXPZ9" id="12A_y2ipoaw" role="N3F5h">
+      <property role="TrG5h" value="empty_1450435291144_13" />
+    </node>
+    <node concept="N3Fnx" id="12A_y2ipoii" role="N3F5h">
       <property role="TrG5h" value="testComponentTypes" />
-      <node concept="19Rifw" id="7XQHhkHfxHv" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="7XQHhkHfxHw" role="c0Qz3">
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="12A_y2ipoik" role="3XIRFX">
         <node concept="3t9XKO" id="7XQHhkHfxHx" role="3XIRFZ">
           <ref role="3t9XKR" node="7XQHhkHda6b" resolve="wiring" />
         </node>
-        <node concept="3XISUE" id="34Ib7$WTiyp" role="3XIRFZ" />
+        <node concept="3XISUE" id="12A_y2ipnLz" role="3XIRFZ" />
         <node concept="3XIRlf" id="34Ib7$WTiyC" role="3XIRFZ">
           <property role="TrG5h" value="vl" />
           <node concept="26Vqp4" id="34Ib7$WTiyA" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="1AmG6P" id="7XQHhkHfxH_" role="3XIe9u">
-            <ref role="1XX6Gs" node="7XQHhkHf7fC" resolve="usingType" />
-            <ref role="1XX6Gv" node="7XQHhkHda6b" resolve="wiring" />
-            <ref role="2YB7zn" node="7XQHhkHda60" resolve="getValueOfCallable" />
+          <node concept="30IJZa" id="12A_y2ipnRl" role="3XIe9u">
+            <ref role="2H6Oet" node="12A_y2ipnvU" resolve="getValue" />
+            <node concept="2H6Wec" id="12A_y2ipnOD" role="1_9fRO">
+              <ref role="2H6Wef" node="12A_y2ipnMl" resolve="valueGetter" />
+            </node>
           </node>
         </node>
         <node concept="Y9XUq" id="34Ib7$WTiAu" role="3XIRFZ">
@@ -1223,6 +1221,10 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="19Rifw" id="12A_y2ipoeL" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
     <node concept="2NXPZ9" id="7XQHhkHda5F" role="N3F5h">
@@ -1247,6 +1249,13 @@
           </node>
         </node>
       </node>
+      <node concept="21gPQu" id="12A_y2ipnMl" role="5JtDH">
+        <property role="TrG5h" value="valueGetter" />
+        <node concept="219P8x" id="12A_y2ipnMm" role="21ad3a">
+          <ref role="219P8w" node="7XQHhkHf7fC" resolve="usingType" />
+          <ref role="219P8J" node="12A_y2ipnyR" resolve="valueGetter" />
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="7XQHhkHda6a" role="N3F5h">
       <property role="TrG5h" value="empty_1351845868678_7" />
@@ -1263,8 +1272,13 @@
           <ref role="g2oj0" node="7XQHhkHda5H" resolve="ComponentUsedAsType" />
         </node>
       </node>
+      <node concept="3Khz0B" id="12A_y2ipnwd" role="2RW2fA" />
+      <node concept="2EWHp_" id="12A_y2ipnyR" role="2RW2fA">
+        <property role="TrG5h" value="valueGetter" />
+        <ref role="2EX0h9" node="12A_y2ipnt1" resolve="ValueGetter" />
+      </node>
       <node concept="2EWDwb" id="7XQHhkHda60" role="2RW2fA">
-        <property role="TrG5h" value="getValueOfCallable" />
+        <property role="TrG5h" value="valueGetter_getValue" />
         <node concept="3XIRFW" id="7XQHhkHda61" role="2EWMhI">
           <node concept="1_9egQ" id="7XQHhkHeJY_" role="3XIRFZ">
             <node concept="3pqW6w" id="7XQHhkHf7fy" role="1_9egR">
@@ -1292,11 +1306,14 @@
             </node>
           </node>
         </node>
-        <node concept="26Vqp4" id="7XQHhkHda5Z" role="2C2TGm">
+        <node concept="2EWDw0" id="12A_y2ipnBl" role="2EWDeT">
+          <ref role="1ZwSu5" node="12A_y2ipnyR" resolve="valueGetter" />
+          <ref role="1ZwxE2" node="12A_y2ipnvU" resolve="getValue" />
+        </node>
+        <node concept="26Vqp4" id="12A_y2ipnHt" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="1KB$IV" id="7moPk04QkBL" role="lGtFl" />
       </node>
     </node>
     <node concept="2NXPZ9" id="7XQHhkHda5S" role="N3F5h">
@@ -1322,6 +1339,20 @@
           </node>
         </node>
         <node concept="26Vqp4" id="7XQHhkHda5K" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="12A_y2ipnpm" role="N3F5h">
+      <property role="TrG5h" value="empty_1450435168213_11" />
+    </node>
+    <node concept="2EX0iR" id="12A_y2ipnt1" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ValueGetter" />
+      <node concept="2EX0iL" id="12A_y2ipnvU" role="2EX0iN">
+        <property role="TrG5h" value="getValue" />
+        <node concept="26Vqp4" id="12A_y2ipnvT" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
