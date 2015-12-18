@@ -19,6 +19,7 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2164,6 +2165,47 @@
     <node concept="1YaCAy" id="6T3uXzTgIE4" role="1YuTPh">
       <property role="TrG5h" value="localVariableDeclaration" />
       <ref role="1YaFvo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6T3uXzTi8ua">
+    <property role="TrG5h" value="check_StatementList" />
+    <node concept="3clFbS" id="6T3uXzTi8ub" role="18ibNy">
+      <node concept="3clFbJ" id="6T3uXzTi8uz" role="3cqZAp">
+        <node concept="3clFbS" id="6T3uXzTi8u$" role="3clFbx">
+          <node concept="2MkqsV" id="6T3uXzTi9_3" role="3cqZAp">
+            <node concept="Xl_RD" id="6T3uXzTi9_f" role="2MkJ7o">
+              <property role="Xl_RC" value="invisible statement lists are only allowed in the generator" />
+            </node>
+            <node concept="1YBJjd" id="6T3uXzTi9Ai" role="2OEOjV">
+              <ref role="1YBMHb" node="6T3uXzTi8ud" resolve="statementList" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="6T3uXzTi96B" role="3clFbw">
+          <node concept="2OqwBi" id="6T3uXzTi9gQ" role="3uHU7B">
+            <node concept="1YBJjd" id="6T3uXzTi9a5" role="2Oq$k0">
+              <ref role="1YBMHb" node="6T3uXzTi8ud" resolve="statementList" />
+            </node>
+            <node concept="3TrcHB" id="6T3uXzTi9xD" role="2OqNvi">
+              <ref role="3TsBF5" to="c4fa:41KMvfcgiZ1" resolve="isInvisible" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="6T3uXzTi93n" role="3uHU7w">
+            <node concept="2OqwBi" id="6T3uXzTi93p" role="3fr31v">
+              <node concept="1YBJjd" id="6T3uXzTi93q" role="2Oq$k0">
+                <ref role="1YBMHb" node="6T3uXzTi8ud" resolve="statementList" />
+              </node>
+              <node concept="2qgKlT" id="6T3uXzTi93r" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6T3uXzTi8ud" role="1YuTPh">
+      <property role="TrG5h" value="statementList" />
+      <ref role="1YaFvo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
   </node>
 </model>

@@ -6225,6 +6225,36 @@
           </node>
         </node>
       </node>
+      <node concept="2Mj0R9" id="6T3uXzTiOWN" role="3cqZAp">
+        <node concept="3fqX7Q" id="6T3uXzTiQha" role="2MkoU_">
+          <node concept="2OqwBi" id="6T3uXzTiQhc" role="3fr31v">
+            <node concept="2OqwBi" id="6T3uXzTiQhd" role="2Oq$k0">
+              <node concept="1YBJjd" id="6T3uXzTiQhe" role="2Oq$k0">
+                <ref role="1YBMHb" node="1zouAv$65JD" resolve="queueDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="6T3uXzTiQhf" role="2OqNvi">
+                <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="6T3uXzTiQhg" role="2OqNvi">
+              <node concept="chp4Y" id="6T3uXzTiQhh" role="cj9EA">
+                <ref role="cht4Q" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6T3uXzTiQoH" role="2MkJ7o">
+          <property role="Xl_RC" value="must not be void type" />
+        </node>
+        <node concept="2OqwBi" id="6T3uXzTiQAd" role="2OEOjV">
+          <node concept="1YBJjd" id="6T3uXzTiQtG" role="2Oq$k0">
+            <ref role="1YBMHb" node="1zouAv$65JD" resolve="queueDeclaration" />
+          </node>
+          <node concept="3TrEf2" id="6T3uXzTiR8_" role="2OqNvi">
+            <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="1zouAv$65JD" role="1YuTPh">
       <property role="TrG5h" value="queueDeclaration" />

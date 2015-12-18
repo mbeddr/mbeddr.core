@@ -130,6 +130,7 @@
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+        <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
     </language>
@@ -159,6 +160,9 @@
         <reference id="2721957369897614810" name="varmacro" index="1bhEwk" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
+        <property id="7430509679014182818" name="contextVarName" index="1qCSqd" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="5308710777891716348" name="com.mbeddr.core.modules.structure.NoOp" flags="ng" index="EaqyJ" />
@@ -330,18 +334,12 @@
                                       <node concept="3cpWsa" id="6z$fwMcSdjx" role="37wK5m">
                                         <ref role="3cqZAo" node="6z$fwMcSdjl" resolve="decTab" />
                                       </node>
-                                      <node concept="10M0yZ" id="6z$fwMcSdjy" role="37wK5m">
-                                        <ref role="3cqZAo" to="72ct:3x0R1LJ5DpG" resolve="orderOfNondererminismExpression" />
-                                        <ref role="1PxDUh" to="72ct:3x0R1LJ5Dp2" resolve="DecTabUtils" />
+                                      <node concept="2OqwBi" id="6T3uXzTkXoi" role="37wK5m">
+                                        <node concept="1iwH7S" id="6T3uXzTkX2I" role="2Oq$k0" />
+                                        <node concept="1qCSth" id="6T3uXzTkXHG" role="2OqNvi">
+                                          <property role="1qCSqd" value="orderOfNondererminismExpression" />
+                                        </node>
                                       </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="6z$fwMcSdjz" role="3cqZAp">
-                                  <node concept="3uNrnE" id="6z$fwMcSdj$" role="3clFbG">
-                                    <node concept="10M0yZ" id="6z$fwMcSdj_" role="2$L3a6">
-                                      <ref role="1PxDUh" to="72ct:3x0R1LJ5Dp2" resolve="DecTabUtils" />
-                                      <ref role="3cqZAo" to="72ct:3x0R1LJ5DpG" resolve="orderOfNondererminismExpression" />
                                     </node>
                                   </node>
                                 </node>
@@ -380,19 +378,9 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="6z$fwMcSdjE" role="lGtFl">
+                        <property role="1qytDF" value="orderOfNondererminismExpression" />
                         <node concept="3JmXsc" id="6z$fwMcSdjF" role="3Jn$fo">
                           <node concept="3clFbS" id="6z$fwMcSdjG" role="2VODD2">
-                            <node concept="3clFbF" id="6z$fwMcSdjH" role="3cqZAp">
-                              <node concept="37vLTI" id="6z$fwMcSdjI" role="3clFbG">
-                                <node concept="3cmrfG" id="6z$fwMcSdjJ" role="37vLTx">
-                                  <property role="3cmrfH" value="0" />
-                                </node>
-                                <node concept="10M0yZ" id="6z$fwMcSdjK" role="37vLTJ">
-                                  <ref role="3cqZAo" to="72ct:3x0R1LJ5DpG" resolve="orderOfNondererminismExpression" />
-                                  <ref role="1PxDUh" to="72ct:3x0R1LJ5Dp2" resolve="DecTabUtils" />
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3clFbF" id="6z$fwMcSdk0" role="3cqZAp">
                               <node concept="2YIFZM" id="6z$fwMcSdk1" role="3clFbG">
                                 <ref role="37wK5l" to="72ct:3x0R1LJ5DpK" resolve="computeNondeterminismExpressions" />
@@ -552,18 +540,12 @@
                                       <node concept="3cpWsa" id="2S1OXleJPJe" role="37wK5m">
                                         <ref role="3cqZAo" node="2S1OXleJFso" resolve="decTab" />
                                       </node>
-                                      <node concept="10M0yZ" id="2S1OXleJPJf" role="37wK5m">
-                                        <ref role="1PxDUh" to="72ct:3x0R1LJ5Dp2" resolve="DecTabUtils" />
-                                        <ref role="3cqZAo" to="72ct:2S1OXleJQs2" resolve="orderOfActivationExpression" />
+                                      <node concept="2OqwBi" id="6T3uXzTlbow" role="37wK5m">
+                                        <node concept="1iwH7S" id="6T3uXzTlb9w" role="2Oq$k0" />
+                                        <node concept="1qCSth" id="6T3uXzTlbW6" role="2OqNvi">
+                                          <property role="1qCSqd" value="orderOfActivationExpression" />
+                                        </node>
                                       </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="2S1OXleJFsA" role="3cqZAp">
-                                  <node concept="3uNrnE" id="2S1OXleJFsB" role="3clFbG">
-                                    <node concept="10M0yZ" id="2S1OXleJFsC" role="2$L3a6">
-                                      <ref role="1PxDUh" to="72ct:3x0R1LJ5Dp2" resolve="DecTabUtils" />
-                                      <ref role="3cqZAo" to="72ct:2S1OXleJQs2" resolve="orderOfActivationExpression" />
                                     </node>
                                   </node>
                                 </node>
@@ -636,19 +618,9 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="2S1OXleJzFw" role="lGtFl">
+                        <property role="1qytDF" value="orderOfActivationExpression" />
                         <node concept="3JmXsc" id="2S1OXleJzFy" role="3Jn$fo">
                           <node concept="3clFbS" id="2S1OXleJzF$" role="2VODD2">
-                            <node concept="3clFbF" id="2S1OXleJT1A" role="3cqZAp">
-                              <node concept="37vLTI" id="2S1OXleJT1B" role="3clFbG">
-                                <node concept="3cmrfG" id="2S1OXleJT1C" role="37vLTx">
-                                  <property role="3cmrfH" value="0" />
-                                </node>
-                                <node concept="10M0yZ" id="2S1OXleJT1D" role="37vLTJ">
-                                  <ref role="1PxDUh" to="72ct:3x0R1LJ5Dp2" resolve="DecTabUtils" />
-                                  <ref role="3cqZAo" to="72ct:2S1OXleJQs2" resolve="orderOfActivationExpression" />
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3clFbF" id="2S1OXleJCv9" role="3cqZAp">
                               <node concept="2YIFZM" id="2S1OXleJCOZ" role="3clFbG">
                                 <ref role="37wK5l" to="72ct:2S1OXleJ_kn" resolve="computeCellsActivationExpressions" />

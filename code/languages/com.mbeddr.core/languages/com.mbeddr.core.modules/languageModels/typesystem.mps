@@ -444,6 +444,10 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1144195091934" name="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" flags="nn" index="1BlSNk">
+        <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
+        <reference id="1144195396777" name="linkInParent" index="1Bn3mz" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -11231,6 +11235,82 @@
     <node concept="1YaCAy" id="6T3uXzTgOe_" role="1YuTPh">
       <property role="TrG5h" value="gvd" />
       <ref role="1YaFvo" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6T3uXzThDHS">
+    <property role="TrG5h" value="check_GlobalConstantFunctionRefCheckContext" />
+    <property role="3GE5qa" value="global" />
+    <node concept="3clFbS" id="6T3uXzThDHT" role="18ibNy">
+      <node concept="3clFbJ" id="6T3uXzThDIb" role="3cqZAp">
+        <node concept="3clFbS" id="6T3uXzThDIc" role="3clFbx">
+          <node concept="2Mj0R9" id="6T3uXzThEKF" role="3cqZAp">
+            <node concept="2OqwBi" id="6T3uXzThFQ6" role="2MkoU_">
+              <node concept="2OqwBi" id="6T3uXzThFh4" role="2Oq$k0">
+                <node concept="2OqwBi" id="6T3uXzThEPe" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6T3uXzThEKZ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6T3uXzThDHV" resolve="gcfr" />
+                  </node>
+                  <node concept="3TrEf2" id="6T3uXzThEZR" role="2OqNvi">
+                    <ref role="3Tt5mk" to="x27k:5eg$WPOuJoW" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6T3uXzThFyR" role="2OqNvi">
+                  <ref role="3Tt5mk" to="x27k:7wwb0Bt8D1y" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6T3uXzThG6u" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="6T3uXzThG6F" role="2MkJ7o">
+              <property role="Xl_RC" value="empty macro cannot be used in this place" />
+            </node>
+            <node concept="1YBJjd" id="6T3uXzThG99" role="2OEOjV">
+              <ref role="1YBMHb" node="6T3uXzThDHV" resolve="gcfr" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="6T3uXzThEJZ" role="3clFbw">
+          <node concept="2OqwBi" id="6T3uXzThEK1" role="3fr31v">
+            <node concept="1YBJjd" id="6T3uXzThEK2" role="2Oq$k0">
+              <ref role="1YBMHb" node="6T3uXzThDHV" resolve="gcfr" />
+            </node>
+            <node concept="1BlSNk" id="6T3uXzThEK3" role="2OqNvi">
+              <ref role="1BmUXE" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+              <ref role="1Bn3mz" to="c4fa:6iIoqg1yCmj" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6T3uXzThDHV" role="1YuTPh">
+      <property role="TrG5h" value="gcfr" />
+      <ref role="1YaFvo" to="x27k:5eg$WPOuJoU" resolve="GlobalConstantFunctionRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6T3uXzTilOG">
+    <property role="TrG5h" value="check_NoOp" />
+    <property role="3GE5qa" value="functionrefs" />
+    <node concept="3clFbS" id="6T3uXzTilOH" role="18ibNy">
+      <node concept="2Mj0R9" id="6T3uXzTilON" role="3cqZAp">
+        <node concept="2OqwBi" id="6T3uXzTilSU" role="2MkoU_">
+          <node concept="1YBJjd" id="6T3uXzTilP7" role="2Oq$k0">
+            <ref role="1YBMHb" node="6T3uXzTilOJ" resolve="noOp" />
+          </node>
+          <node concept="1BlSNk" id="6T3uXzTimaz" role="2OqNvi">
+            <ref role="1BmUXE" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            <ref role="1Bn3mz" to="c4fa:6iIoqg1yCmj" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6T3uXzTimbC" role="2MkJ7o">
+          <property role="Xl_RC" value="noop can only be used in an expression statement" />
+        </node>
+        <node concept="1YBJjd" id="6T3uXzTimdx" role="2OEOjV">
+          <ref role="1YBMHb" node="6T3uXzTilOJ" resolve="noOp" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6T3uXzTilOJ" role="1YuTPh">
+      <property role="TrG5h" value="noOp" />
+      <ref role="1YaFvo" to="x27k:4AGl5dzxvNW" resolve="NoOp" />
     </node>
   </node>
 </model>
