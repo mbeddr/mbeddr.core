@@ -4971,6 +4971,30 @@
     <property role="TrG5h" value="check_TrySequentiallyStatement" />
     <property role="3GE5qa" value="tryseq" />
     <node concept="3clFbS" id="7vXEDSflpyA" role="18ibNy">
+      <node concept="2Mj0R9" id="6T3uXzTgudI" role="3cqZAp">
+        <node concept="2d3UOw" id="6T3uXzTgA3r" role="2MkoU_">
+          <node concept="2OqwBi" id="6T3uXzTgvPf" role="3uHU7B">
+            <node concept="2OqwBi" id="6T3uXzTgum6" role="2Oq$k0">
+              <node concept="1YBJjd" id="6T3uXzTgugZ" role="2Oq$k0">
+                <ref role="1YBMHb" node="7vXEDSflpyC" resolve="tss" />
+              </node>
+              <node concept="3Tsc0h" id="6T3uXzTguz3" role="2OqNvi">
+                <ref role="3TtcxE" to="k146:7vXEDSfl0Kh" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="6T3uXzTgzWV" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="6T3uXzTgA7u" role="3uHU7w">
+            <property role="3cmrfH" value="2" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6T3uXzTgAgo" role="2MkJ7o">
+          <property role="Xl_RC" value="must have at least two calls" />
+        </node>
+        <node concept="1YBJjd" id="6T3uXzTgAsP" role="2OEOjV">
+          <ref role="1YBMHb" node="7vXEDSflpyC" resolve="tss" />
+        </node>
+      </node>
       <node concept="2Gpval" id="7vXEDSflx4s" role="3cqZAp">
         <node concept="2GrKxI" id="7vXEDSflx4t" role="2Gsz3X">
           <property role="TrG5h" value="call" />
