@@ -11082,5 +11082,97 @@
       <ref role="1YaFvo" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
   </node>
+  <node concept="18kY7G" id="6T3uXzTfssl">
+    <property role="TrG5h" value="check_GlobalConstantFunctionDeclaration" />
+    <property role="3GE5qa" value="global" />
+    <node concept="3clFbS" id="6T3uXzTfssm" role="18ibNy">
+      <node concept="3clFbJ" id="6T3uXzTftn3" role="3cqZAp">
+        <node concept="3clFbS" id="6T3uXzTftn4" role="3clFbx">
+          <node concept="2Mj0R9" id="6T3uXzTftYZ" role="3cqZAp">
+            <node concept="3eOSWO" id="6T3uXzTfzPN" role="2MkoU_">
+              <node concept="3cmrfG" id="6T3uXzTfzPQ" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="6T3uXzTfvmj" role="3uHU7B">
+                <node concept="2OqwBi" id="6T3uXzTfu5O" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6T3uXzTftZj" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6T3uXzTfsso" resolve="globalConstantFunctionDeclaration" />
+                  </node>
+                  <node concept="3Tsc0h" id="6T3uXzTfun_" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:5eg$WPOtR8R" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="6T3uXzTfyin" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6T3uXzTfzTO" role="2MkJ7o">
+              <property role="Xl_RC" value="must have at least one argument if ellipsis are used" />
+            </node>
+            <node concept="1YBJjd" id="6T3uXzTfzY8" role="2OEOjV">
+              <ref role="1YBMHb" node="6T3uXzTfsso" resolve="globalConstantFunctionDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6T3uXzTfttE" role="3clFbw">
+          <node concept="1YBJjd" id="6T3uXzTftnf" role="2Oq$k0">
+            <ref role="1YBMHb" node="6T3uXzTfsso" resolve="globalConstantFunctionDeclaration" />
+          </node>
+          <node concept="3TrcHB" id="6T3uXzTftXf" role="2OqNvi">
+            <ref role="3TsBF5" to="x27k:1Iv4$fS2caM" resolve="hasEllipsis" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6T3uXzTfsso" role="1YuTPh">
+      <property role="TrG5h" value="globalConstantFunctionDeclaration" />
+      <ref role="1YaFvo" to="x27k:5eg$WPOtR8F" resolve="GlobalConstantFunctionDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6T3uXzTgalc">
+    <property role="TrG5h" value="check_FunctionSignatureForEllipsis" />
+    <property role="3GE5qa" value="functions" />
+    <node concept="3clFbS" id="6T3uXzTgald" role="18ibNy">
+      <node concept="3clFbJ" id="6T3uXzTgalX" role="3cqZAp">
+        <node concept="3clFbS" id="6T3uXzTgalY" role="3clFbx">
+          <node concept="2Mj0R9" id="6T3uXzTgalZ" role="3cqZAp">
+            <node concept="3eOSWO" id="6T3uXzTgam0" role="2MkoU_">
+              <node concept="3cmrfG" id="6T3uXzTgam1" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="6T3uXzTgam2" role="3uHU7B">
+                <node concept="2OqwBi" id="6T3uXzTgam3" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6T3uXzTgaxS" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6T3uXzTgalf" resolve="functionSignature" />
+                  </node>
+                  <node concept="3Tsc0h" id="6T3uXzTgbkk" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="6T3uXzTgam6" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6T3uXzTgam7" role="2MkJ7o">
+              <property role="Xl_RC" value="must have at least one argument if ellipsis are used" />
+            </node>
+            <node concept="1YBJjd" id="6T3uXzTgbxV" role="2OEOjV">
+              <ref role="1YBMHb" node="6T3uXzTgalf" resolve="functionSignature" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6T3uXzTgam9" role="3clFbw">
+          <node concept="1YBJjd" id="6T3uXzTgaqR" role="2Oq$k0">
+            <ref role="1YBMHb" node="6T3uXzTgalf" resolve="functionSignature" />
+          </node>
+          <node concept="3TrcHB" id="6T3uXzTgamb" role="2OqNvi">
+            <ref role="3TsBF5" to="x27k:7RiewQ_kDL5" resolve="hasEllipsis" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6T3uXzTgalf" role="1YuTPh">
+      <property role="TrG5h" value="functionSignature" />
+      <ref role="1YaFvo" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+    </node>
+  </node>
 </model>
 
