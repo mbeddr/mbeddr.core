@@ -2544,12 +2544,32 @@
                                               </node>
                                               <node concept="liA8E" id="7N3ui_8gChf" role="2OqNvi">
                                                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                                <node concept="3cpWs3" id="7N3ui_8gMhf" role="37wK5m">
-                                                  <node concept="37vLTw" id="7N3ui_8gNz4" role="3uHU7w">
+                                                <node concept="3cpWs3" id="7zPqVHhTa_I" role="37wK5m">
+                                                  <node concept="37vLTw" id="7zPqVHhTbqo" role="3uHU7w">
                                                     <ref role="3cqZAo" node="47Q8L756Gtn" resolve="newFraction" />
                                                   </node>
-                                                  <node concept="Xl_RD" id="7N3ui_8gChg" role="3uHU7B">
-                                                    <property role="Xl_RC" value="ModelsGenerator --- progress: " />
+                                                  <node concept="3cpWs3" id="7zPqVHhT9dh" role="3uHU7B">
+                                                    <node concept="3cpWs3" id="5eRunXsUoy0" role="3uHU7B">
+                                                      <node concept="3cpWs3" id="5eRunXsUh0D" role="3uHU7B">
+                                                        <node concept="3cpWs3" id="7zPqVHhSSNb" role="3uHU7B">
+                                                          <node concept="Xl_RD" id="7zPqVHhSToX" role="3uHU7B">
+                                                            <property role="Xl_RC" value="ModelsGenerator --- currentTry " />
+                                                          </node>
+                                                          <node concept="37vLTw" id="7zPqVHhSOTs" role="3uHU7w">
+                                                            <ref role="3cqZAo" node="2P6psD9$gYW" resolve="currentTry" />
+                                                          </node>
+                                                        </node>
+                                                        <node concept="Xl_RD" id="5eRunXsUhK3" role="3uHU7w">
+                                                          <property role="Xl_RC" value="\t\t\tnumberOfSavedModels: " />
+                                                        </node>
+                                                      </node>
+                                                      <node concept="37vLTw" id="5eRunXsUpjh" role="3uHU7w">
+                                                        <ref role="3cqZAo" node="2A9nHKBRKSA" resolve="numberOfSavedModels" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="Xl_RD" id="7N3ui_8gChg" role="3uHU7w">
+                                                      <property role="Xl_RC" value="\t\t progress: " />
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>
