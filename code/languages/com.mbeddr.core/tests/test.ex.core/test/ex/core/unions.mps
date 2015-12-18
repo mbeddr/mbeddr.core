@@ -117,6 +117,11 @@
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
+      <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
+        <child id="7755897872837031765" name="actual" index="2N2GHg" />
+        <child id="7755897872837031764" name="expected" index="2N2GHh" />
+      </concept>
+      <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
@@ -127,7 +132,6 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
-      <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -314,7 +318,7 @@
         <property role="TrG5h" value="inner" />
         <node concept="1dpRTG" id="1JA5qgmxn1Z" role="HszBJ">
           <property role="TrG5h" value="b" />
-          <node concept="26Vqpq" id="1JA5qgmxn1Y" role="2C2TGm">
+          <node concept="26Vqqz" id="7halHeUy44S" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -359,26 +363,25 @@
             </node>
           </node>
         </node>
-        <node concept="c0Tn9" id="1JA5qgmxnPW" role="3XIRFZ">
-          <node concept="3TlM44" id="1JA5qgmxoig" role="c0Tn6">
-            <node concept="2qmXGp" id="1JA5qgmxnXj" role="3TlMhI">
-              <node concept="1E4Tgc" id="1JA5qgmxo1$" role="1ESnxz">
-                <ref role="1E4Tge" node="1JA5qgmxn1Z" resolve="b" />
-              </node>
-              <node concept="2qmXGp" id="1JA5qgmxnTc" role="1_9fRO">
-                <node concept="2HrGSn" id="1JA5qgmxnX9" role="1ESnxz">
-                  <ref role="2HrGUb" node="1JA5qgmxn1B" resolve="inner" />
-                </node>
-                <node concept="3ZVu4v" id="1JA5qgmxnT0" role="1_9fRO">
-                  <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
-                </node>
-              </node>
+        <node concept="2N2KuS" id="7halHeUxTAm" role="3XIRFZ">
+          <node concept="3TlMh9" id="7halHeUxTBM" role="2N2GHh">
+            <property role="2hmy$m" value="10" />
+          </node>
+          <node concept="2qmXGp" id="7halHeUxTAM" role="2N2GHg">
+            <node concept="1E4Tgc" id="7halHeUxTAN" role="1ESnxz">
+              <ref role="1E4Tge" node="1JA5qgmxn1Z" resolve="b" />
             </node>
-            <node concept="3TlMh9" id="1JA5qgmxo70" role="3TlMhJ">
-              <property role="2hmy$m" value="10" />
+            <node concept="2qmXGp" id="7halHeUxTAO" role="1_9fRO">
+              <node concept="2HrGSn" id="7halHeUxTAP" role="1ESnxz">
+                <ref role="2HrGUb" node="1JA5qgmxn1B" resolve="inner" />
+              </node>
+              <node concept="3ZVu4v" id="7halHeUxTAQ" role="1_9fRO">
+                <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="7halHeUxTHw" role="3XIRFZ" />
       </node>
     </node>
     <node concept="2NXPZ9" id="56ytRgsLt_6" role="N3F5h">
