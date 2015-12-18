@@ -419,5 +419,27 @@
     <property role="34LRSv" value="++" />
     <ref role="1TJDcQ" node="6B579NFHqZT" resolve="UnaryExpression" />
   </node>
+  <node concept="1TIwiD" id="3efHud92zm0">
+    <property role="1pbfSe" value="2090462051" />
+    <property role="TrG5h" value="TEST_OptionalNextToRenderingConditon" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3efHud92zmT" role="1TKVEl">
+      <property role="TrG5h" value="condition" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="3efHud92zmN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="1TJgyj" id="3efHud944qp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr2" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="PrWs8" id="3efHud92zm1" role="PzmwI">
+      <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
+    </node>
+  </node>
 </model>
 
