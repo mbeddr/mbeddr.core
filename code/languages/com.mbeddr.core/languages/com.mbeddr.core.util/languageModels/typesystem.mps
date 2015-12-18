@@ -6143,5 +6143,69 @@
       <ref role="1YaFvo" to="k146:1EZSCJhI$Q7" resolve="LogExpressionWord" />
     </node>
   </node>
+  <node concept="18kY7G" id="1zouAv$65JA">
+    <property role="TrG5h" value="check_QueueDeclaration" />
+    <property role="3GE5qa" value="queue" />
+    <node concept="3clFbS" id="1zouAv$65JB" role="18ibNy">
+      <node concept="2Mj0R9" id="1zouAv$65JU" role="3cqZAp">
+        <node concept="3fqX7Q" id="1zouAv$67db" role="2MkoU_">
+          <node concept="2OqwBi" id="1zouAv$67dd" role="3fr31v">
+            <node concept="2OqwBi" id="1zouAv$67de" role="2Oq$k0">
+              <node concept="1YBJjd" id="1zouAv$67df" role="2Oq$k0">
+                <ref role="1YBMHb" node="1zouAv$65JD" resolve="queueDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="1zouAv$67dg" role="2OqNvi">
+                <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="1zouAv$67dh" role="2OqNvi">
+              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="1zouAv$67gC" role="2MkJ7o">
+          <property role="Xl_RC" value="queue type must not be const" />
+        </node>
+        <node concept="2OqwBi" id="1zouAv$67qI" role="2OEOjV">
+          <node concept="1YBJjd" id="1zouAv$67kX" role="2Oq$k0">
+            <ref role="1YBMHb" node="1zouAv$65JD" resolve="queueDeclaration" />
+          </node>
+          <node concept="3TrEf2" id="1zouAv$67SV" role="2OqNvi">
+            <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="1zouAv$67W6" role="3cqZAp">
+        <node concept="2OqwBi" id="1zouAv$68Nr" role="2MkoU_">
+          <node concept="2OqwBi" id="1zouAv$683I" role="2Oq$k0">
+            <node concept="1YBJjd" id="1zouAv$67X_" role="2Oq$k0">
+              <ref role="1YBMHb" node="1zouAv$65JD" resolve="queueDeclaration" />
+            </node>
+            <node concept="3TrEf2" id="1zouAv$68yB" role="2OqNvi">
+              <ref role="3Tt5mk" to="k146:4mSSgpjxLMB" />
+            </node>
+          </node>
+          <node concept="2qgKlT" id="1zouAv$6967" role="2OqNvi">
+            <ref role="37wK5l" to="ywuz:3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="1zouAv$697V" role="2MkJ7o">
+          <property role="Xl_RC" value="queue size must be statically evaluatable" />
+        </node>
+        <node concept="2OqwBi" id="1zouAv$69lI" role="2OEOjV">
+          <node concept="1YBJjd" id="1zouAv$69f8" role="2Oq$k0">
+            <ref role="1YBMHb" node="1zouAv$65JD" resolve="queueDeclaration" />
+          </node>
+          <node concept="3TrEf2" id="1zouAv$69Ql" role="2OqNvi">
+            <ref role="3Tt5mk" to="k146:4mSSgpjxLMB" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1zouAv$65JD" role="1YuTPh">
+      <property role="TrG5h" value="queueDeclaration" />
+      <ref role="1YaFvo" to="k146:4mSSgpjxLMA" resolve="QueueDeclaration" />
+    </node>
+  </node>
 </model>
 

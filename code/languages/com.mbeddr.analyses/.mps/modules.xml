@@ -38,6 +38,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.testsgen.rt/com.mbeddr.analyses.cbmc.testsgen.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.lantest.pluginSolution/com.mbeddr.analyses.lantest.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />

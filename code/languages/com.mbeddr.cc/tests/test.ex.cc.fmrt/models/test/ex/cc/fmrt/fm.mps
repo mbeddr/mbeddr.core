@@ -71,9 +71,6 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
-      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
-        <child id="4185783222026475860" name="body" index="3XIRFX" />
-      </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
@@ -261,26 +258,6 @@
     <node concept="2NXPZ9" id="3el1Vh3VU21" role="N3F5h">
       <property role="TrG5h" value="empty_1350820160345_3" />
     </node>
-    <node concept="N3Fnx" id="3el1Vh3VU25" role="N3F5h">
-      <property role="TrG5h" value="setupTestFeaturesOnly" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="3el1Vh3VU27" role="3XIRFX">
-        <node concept="3ykpNn" id="3el1Vh3VU29" role="3XIRFZ">
-          <ref role="2AqAGd" node="7H6_Qip5rIF" resolve="someFM" />
-          <ref role="2AqAHA" node="7H6_Qip5BSE" resolve="Cfg2" />
-          <node concept="1S7827" id="3el1Vh3VU2b" role="3ykrCG">
-            <ref role="1S7826" node="7H6_Qip5R_5" resolve="cfg" />
-          </node>
-        </node>
-      </node>
-      <node concept="19Rifw" id="3el1Vh3VU24" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="7H6_Qip5rIB" role="N3F5h">
-      <property role="TrG5h" value="empty_1350766593744_2" />
-    </node>
     <node concept="c0Qz5" id="7H6_Qip5rHN" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testSingleCase" />
@@ -289,6 +266,13 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="7H6_Qip5rHP" role="c0Qz3">
+        <node concept="3ykpNn" id="18imJx9d_XC" role="3XIRFZ">
+          <ref role="2AqAGd" node="7H6_Qip5rIF" resolve="someFM" />
+          <ref role="2AqAHA" node="7H6_Qip5BSE" resolve="Cfg2" />
+          <node concept="1S7827" id="18imJx9d_XD" role="3ykrCG">
+            <ref role="1S7826" node="7H6_Qip5R_5" resolve="cfg" />
+          </node>
+        </node>
         <node concept="3XIRlf" id="7H6_Qip6eoO" role="3XIRFZ">
           <property role="TrG5h" value="x" />
           <node concept="26Vqqz" id="7H6_Qip6eoP" role="2C2TGm">
@@ -344,6 +328,13 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="3el1Vh3VTM6" role="c0Qz3">
+        <node concept="3ykpNn" id="18imJx9dA2q" role="3XIRFZ">
+          <ref role="2AqAHA" node="7H6_Qip5BSE" resolve="Cfg2" />
+          <ref role="2AqAGd" node="7H6_Qip5rIF" resolve="someFM" />
+          <node concept="1S7827" id="18imJx9dA2r" role="3ykrCG">
+            <ref role="1S7826" node="7H6_Qip5R_5" resolve="cfg" />
+          </node>
+        </node>
         <node concept="3XIRlf" id="3el1Vh3VTM7" role="3XIRFZ">
           <property role="TrG5h" value="x" />
           <node concept="26Vqqz" id="3el1Vh3VTM8" role="2C2TGm">
