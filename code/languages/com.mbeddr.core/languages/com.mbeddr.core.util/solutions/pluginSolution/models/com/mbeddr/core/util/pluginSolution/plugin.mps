@@ -350,10 +350,11 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
-      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupAnchor" flags="lg" index="2Zfapc">
+      <concept id="1856959976861964558" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupIdAnchor" flags="lg" index="2Zfapc">
         <property id="1856959976861964583" name="groupId" index="2Zfap_" />
       </concept>
       <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="lg" index="30SVEG">
+        <property id="3023910107019687778" name="anchor" index="2Sq25q" />
         <property id="3826319847679982768" name="archor" index="30T2Og" />
       </concept>
     </language>
@@ -5515,6 +5516,7 @@
     <node concept="2Zfapc" id="4FCdWxTJ0dE" role="2f5YQi">
       <property role="2Zfap_" value="FileOpenGroup" />
       <property role="30T2Og" value="OpenFile" />
+      <property role="2Sq25q" value="2" />
     </node>
   </node>
   <node concept="UJCsY" id="2cNe_D14_dz">
