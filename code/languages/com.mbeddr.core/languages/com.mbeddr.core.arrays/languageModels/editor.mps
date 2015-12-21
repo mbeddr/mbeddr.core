@@ -2,10 +2,10 @@
 <model ref="r:9a326681-7a8d-435d-989e-2781eecc297d(com.mbeddr.core.pointers.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -213,7 +213,7 @@
       <concept id="1381973545438177151" name="com.mbeddr.mpsutil.grammarcells.structure.StringLiteralTokenizer" flags="ng" index="bYqrx" />
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
-      <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplitableCell" flags="sg" stub="3921456275302774831" index="2lNzut">
+      <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="sg" stub="3921456275302774831" index="2lNzut">
         <child id="3921456275305506525" name="tokenizer" index="2lD6_D" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
@@ -1157,6 +1157,35 @@
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="pointerDecorations" />
       <property role="2BUmq6" value="Pointer Decorations" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Ru$s7z$wWn">
+    <property role="3GE5qa" value="literals" />
+    <ref role="1XX52x" to="yq40:4DjlAm4JWli" resolve="VerbatimStringLiteral" />
+    <node concept="1WcQYu" id="4Ru$s7z$wWt" role="2wV5jI">
+      <node concept="2ElW$n" id="4Ru$s7z$wWu" role="2El2Yn" />
+      <node concept="3EZMnI" id="4Ru$s7z$wWv" role="1LiK7o">
+        <node concept="3F0ifn" id="4Ru$s7z$wWw" role="3EZMnx">
+          <property role="3F0ifm" value="@&quot;" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dgSqd" resolve="String" />
+          <node concept="11LMrY" id="4Ru$s7z$wWx" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2lNzut" id="4Ru$s7z$wWy" role="3EZMnx">
+          <ref role="1k5W1q" to="r4b4:2CEi94dgSqd" resolve="String" />
+          <ref role="1NtTu8" to="yq40:5jmmCdx$f5U" resolve="value" />
+          <node concept="bYqrx" id="4Ru$s7z$wWz" role="2lD6_D" />
+        </node>
+        <node concept="3F0ifn" id="4Ru$s7z$wW$" role="3EZMnx">
+          <property role="3F0ifm" value="&quot;" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dgSqd" resolve="String" />
+          <node concept="11L4FC" id="4Ru$s7z$wW_" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="4Ru$s7z$wWA" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>

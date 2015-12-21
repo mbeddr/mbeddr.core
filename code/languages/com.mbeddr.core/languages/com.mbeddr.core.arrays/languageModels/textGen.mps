@@ -114,20 +114,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="4Y0lNFa3xW0">
-    <property role="3GE5qa" value="arrays" />
-    <ref role="WuzLi" to="yq40:4VhroexOKM1" resolve="ArrayType" />
-    <node concept="11bSqf" id="4Y0lNFa3xW1" role="11c4hB">
-      <node concept="3clFbS" id="4Y0lNFa3xW2" role="2VODD2">
-        <node concept="lc7rE" id="29BUUxcz0AS" role="3cqZAp">
-          <node concept="1bDJIP" id="29BUUxcz1fb" role="lcghm">
-            <ref role="1rvKf6" to="dylp:29BUUxcsb$1" resolve="genType" />
-            <node concept="117lpO" id="29BUUxcz1fo" role="1ryhcI" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="4Y0lNFa3RA_">
     <property role="3GE5qa" value="pointers" />
     <ref role="WuzLi" to="yq40:fwMInzpIaB" resolve="DerefExpr" />
@@ -191,7 +177,7 @@
       <node concept="3clFbS" id="4AGl5dzxFV7" role="2VODD2">
         <node concept="lc7rE" id="4AGl5dzxFV8" role="3cqZAp">
           <node concept="la8eA" id="4AGl5dzxFVa" role="lcghm">
-            <property role="lacIc" value="(void*)0" />
+            <property role="lacIc" value="NULL" />
           </node>
         </node>
       </node>

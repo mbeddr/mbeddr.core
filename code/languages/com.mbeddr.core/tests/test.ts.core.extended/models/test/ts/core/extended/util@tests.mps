@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -199,6 +199,9 @@
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6777508457268164807" name="com.mbeddr.core.modules.structure.SuppressDataFlowWarning" flags="ng" index="BCzjf" />
+      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
+        <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
@@ -210,6 +213,9 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
+        <reference id="5950410542643524493" name="function" index="3O_q_h" />
+      </concept>
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -1374,6 +1380,43 @@
                 <ref role="3ZVs_2" node="5B8LY2_m74y" resolve="res" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="18imJx9c42i" role="N3F5h">
+          <property role="TrG5h" value="empty_1450371351900_1" />
+        </node>
+        <node concept="mfZQw" id="18imJx9c43H" role="N3F5h">
+          <property role="TrG5h" value="myBrokenQueue" />
+          <node concept="3O_q_g" id="18imJx9c4gU" role="mfZQx">
+            <ref role="3O_q_h" node="18imJx9c4dK" resolve="foo" />
+            <node concept="7CXmI" id="18imJx9cduX" role="lGtFl">
+              <node concept="1TM$A" id="18imJx9cduY" role="7EUXB" />
+            </node>
+          </node>
+          <node concept="26Vqpq" id="18imJx9c44F" role="mfZQI">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="true" />
+            <node concept="7CXmI" id="18imJx9c4va" role="lGtFl">
+              <node concept="1TM$A" id="18imJx9cdoV" role="7EUXB" />
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="18imJx9c4b4" role="N3F5h">
+          <property role="TrG5h" value="empty_1450371367210_3" />
+        </node>
+        <node concept="N3Fnx" id="18imJx9c4dK" role="N3F5h">
+          <property role="TrG5h" value="foo" />
+          <property role="2OOxQR" value="false" />
+          <node concept="3XIRFW" id="18imJx9c4dM" role="3XIRFX">
+            <node concept="2BFjQ_" id="18imJx9c4f5" role="3XIRFZ">
+              <node concept="3TlMh9" id="18imJx9c4fp" role="2BFjQA">
+                <property role="2hmy$m" value="12" />
+              </node>
+            </node>
+          </node>
+          <node concept="26Vqpq" id="18imJx9c4cB" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
         </node>
         <node concept="2NXPZ9" id="7cvwcG64NzP" role="N3F5h">

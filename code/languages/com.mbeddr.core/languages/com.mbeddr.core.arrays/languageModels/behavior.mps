@@ -3837,108 +3837,126 @@
       <property role="TrG5h" value="getUnescapedValueLength" />
       <node concept="3Tm1VV" id="4FYctDz1tF1" role="1B3o_S" />
       <node concept="3clFbS" id="4FYctDz1tF2" role="3clF47">
-        <node concept="3cpWs8" id="1$baREjNy7Y" role="3cqZAp">
-          <node concept="3cpWsn" id="1$baREjNy81" role="3cpWs9">
-            <property role="TrG5h" value="actualLengthSubstitute" />
-            <node concept="17QB3L" id="1$baREjNy7W" role="1tU5fm" />
-            <node concept="2OqwBi" id="1$baREjNygJ" role="33vP2m">
-              <node concept="13iPFW" id="1$baREjNybC" role="2Oq$k0" />
-              <node concept="3TrcHB" id="1$baREjNyBm" role="2OqNvi">
+        <node concept="3clFbJ" id="5mUdhRMmGmL" role="3cqZAp">
+          <node concept="3clFbS" id="5mUdhRMmGmN" role="3clFbx">
+            <node concept="3cpWs8" id="1$baREjNy7Y" role="3cqZAp">
+              <node concept="3cpWsn" id="1$baREjNy81" role="3cpWs9">
+                <property role="TrG5h" value="actualLengthSubstitute" />
+                <node concept="17QB3L" id="1$baREjNy7W" role="1tU5fm" />
+                <node concept="2OqwBi" id="1$baREjNygJ" role="33vP2m">
+                  <node concept="13iPFW" id="1$baREjNybC" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1$baREjNyBm" role="2OqNvi">
+                    <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1$baREjN_Kl" role="3cqZAp" />
+            <node concept="3SKdUt" id="1$baREjN_sL" role="3cqZAp">
+              <node concept="3SKdUq" id="1$baREjN_sM" role="3SKWNk">
+                <property role="3SKdUp" value="Substitute special characters" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1$baREjN$xe" role="3cqZAp">
+              <node concept="37vLTI" id="1$baREjN$xf" role="3clFbG">
+                <node concept="2OqwBi" id="1$baREjN$xg" role="37vLTx">
+                  <node concept="37vLTw" id="1$baREjN$xh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                  </node>
+                  <node concept="liA8E" id="1$baREjN$xi" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="1$baREjN$BK" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\[abfnrtv\\\\'\&quot;\\?]" />
+                    </node>
+                    <node concept="Xl_RD" id="1$baREjN$BL" role="37wK5m">
+                      <property role="Xl_RC" value="x" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1$baREjN$xl" role="37vLTJ">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1$baREjN_Ax" role="3cqZAp" />
+            <node concept="3SKdUt" id="1$baREjN_fw" role="3cqZAp">
+              <node concept="3SKdUq" id="1$baREjN_ke" role="3SKWNk">
+                <property role="3SKdUp" value="Substitute octal numbers" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1$baREjNyF$" role="3cqZAp">
+              <node concept="37vLTI" id="1$baREjNyM6" role="3clFbG">
+                <node concept="2OqwBi" id="1$baREjNz6G" role="37vLTx">
+                  <node concept="37vLTw" id="1$baREjNz4_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                  </node>
+                  <node concept="liA8E" id="1$baREjNzif" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="1$baREjNziX" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\\\d+" />
+                    </node>
+                    <node concept="Xl_RD" id="1$baREjNzxC" role="37wK5m">
+                      <property role="Xl_RC" value="n" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1$baREjNyFy" role="37vLTJ">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1$baREjN_Fq" role="3cqZAp" />
+            <node concept="3SKdUt" id="1$baREjN_kj" role="3cqZAp">
+              <node concept="3SKdUq" id="1$baREjN_kk" role="3SKWNk">
+                <property role="3SKdUp" value="Substitute hexadecimal numbers" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1$baREjNzQB" role="3cqZAp">
+              <node concept="37vLTI" id="1$baREjN$5L" role="3clFbG">
+                <node concept="2OqwBi" id="1$baREjN$b2" role="37vLTx">
+                  <node concept="37vLTw" id="1$baREjN$8v" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                  </node>
+                  <node concept="liA8E" id="1$baREjN$n1" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="1$baREjN$pq" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\x\\d+" />
+                    </node>
+                    <node concept="Xl_RD" id="1$baREjN$pr" role="37wK5m">
+                      <property role="Xl_RC" value="n" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1$baREjNzQ_" role="37vLTJ">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1$baREjN_Pi" role="3cqZAp" />
+            <node concept="3cpWs6" id="1$baREjNzGt" role="3cqZAp">
+              <node concept="2OqwBi" id="1$baREjN$Sw" role="3cqZAk">
+                <node concept="37vLTw" id="1$baREjNzNa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+                <node concept="liA8E" id="1$baREjN_79" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="5mUdhRMmI6J" role="3clFbw">
+            <node concept="2OqwBi" id="5mUdhRMmGx4" role="3uHU7B">
+              <node concept="13iPFW" id="5mUdhRMmGrZ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5mUdhRMmGRE" role="2OqNvi">
                 <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
               </node>
             </node>
+            <node concept="10Nm6u" id="5mUdhRMmHrv" role="3uHU7w" />
           </node>
         </node>
-        <node concept="3clFbH" id="1$baREjN_Kl" role="3cqZAp" />
-        <node concept="3SKdUt" id="1$baREjN_sL" role="3cqZAp">
-          <node concept="3SKdUq" id="1$baREjN_sM" role="3SKWNk">
-            <property role="3SKdUp" value="Substitute special characters" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="1$baREjN$xe" role="3cqZAp">
-          <node concept="37vLTI" id="1$baREjN$xf" role="3clFbG">
-            <node concept="2OqwBi" id="1$baREjN$xg" role="37vLTx">
-              <node concept="37vLTw" id="1$baREjN$xh" role="2Oq$k0">
-                <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-              </node>
-              <node concept="liA8E" id="1$baREjN$xi" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                <node concept="Xl_RD" id="1$baREjN$BK" role="37wK5m">
-                  <property role="Xl_RC" value="\\\\[abfnrtv\\\\'\&quot;\\?]" />
-                </node>
-                <node concept="Xl_RD" id="1$baREjN$BL" role="37wK5m">
-                  <property role="Xl_RC" value="x" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="1$baREjN$xl" role="37vLTJ">
-              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1$baREjN_Ax" role="3cqZAp" />
-        <node concept="3SKdUt" id="1$baREjN_fw" role="3cqZAp">
-          <node concept="3SKdUq" id="1$baREjN_ke" role="3SKWNk">
-            <property role="3SKdUp" value="Substitute octal numbers" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="1$baREjNyF$" role="3cqZAp">
-          <node concept="37vLTI" id="1$baREjNyM6" role="3clFbG">
-            <node concept="2OqwBi" id="1$baREjNz6G" role="37vLTx">
-              <node concept="37vLTw" id="1$baREjNz4_" role="2Oq$k0">
-                <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-              </node>
-              <node concept="liA8E" id="1$baREjNzif" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                <node concept="Xl_RD" id="1$baREjNziX" role="37wK5m">
-                  <property role="Xl_RC" value="\\\\\\d+" />
-                </node>
-                <node concept="Xl_RD" id="1$baREjNzxC" role="37wK5m">
-                  <property role="Xl_RC" value="n" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="1$baREjNyFy" role="37vLTJ">
-              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1$baREjN_Fq" role="3cqZAp" />
-        <node concept="3SKdUt" id="1$baREjN_kj" role="3cqZAp">
-          <node concept="3SKdUq" id="1$baREjN_kk" role="3SKWNk">
-            <property role="3SKdUp" value="Substitute hexadecimal numbers" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="1$baREjNzQB" role="3cqZAp">
-          <node concept="37vLTI" id="1$baREjN$5L" role="3clFbG">
-            <node concept="2OqwBi" id="1$baREjN$b2" role="37vLTx">
-              <node concept="37vLTw" id="1$baREjN$8v" role="2Oq$k0">
-                <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-              </node>
-              <node concept="liA8E" id="1$baREjN$n1" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                <node concept="Xl_RD" id="1$baREjN$pq" role="37wK5m">
-                  <property role="Xl_RC" value="\\\\x\\d+" />
-                </node>
-                <node concept="Xl_RD" id="1$baREjN$pr" role="37wK5m">
-                  <property role="Xl_RC" value="n" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="1$baREjNzQ_" role="37vLTJ">
-              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1$baREjN_Pi" role="3cqZAp" />
-        <node concept="3cpWs6" id="1$baREjNzGt" role="3cqZAp">
-          <node concept="2OqwBi" id="1$baREjN$Sw" role="3cqZAk">
-            <node concept="37vLTw" id="1$baREjNzNa" role="2Oq$k0">
-              <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-            </node>
-            <node concept="liA8E" id="1$baREjN_79" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
-            </node>
+        <node concept="3cpWs6" id="5mUdhRMmHt3" role="3cqZAp">
+          <node concept="3cmrfG" id="5mUdhRMmHtk" role="3cqZAk">
+            <property role="3cmrfH" value="0" />
           </node>
         </node>
       </node>
@@ -3950,6 +3968,28 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="J0Y$7B64qW" role="13h7CS">
+      <property role="TrG5h" value="getSize" />
+      <node concept="3Tm1VV" id="J0Y$7B64qX" role="1B3o_S" />
+      <node concept="3clFbS" id="J0Y$7B64qY" role="3clF47">
+        <node concept="3SKdUt" id="J0Y$7B64Jl" role="3cqZAp">
+          <node concept="3SKdUq" id="J0Y$7B64L_" role="3SKWNk">
+            <property role="3SKdUp" value="Add one additional byte for terminating '\0' character" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="J0Y$7B64_j" role="3cqZAp">
+          <node concept="3cpWs3" id="J0Y$7B64EL" role="3cqZAk">
+            <node concept="3cmrfG" id="J0Y$7B64EO" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="BsUDl" id="J0Y$7B64_x" role="3uHU7B">
+              <ref role="37wK5l" node="4FYctDz1tF0" resolve="getUnescapedValueLength" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="J0Y$7B64_g" role="3clF45" />
     </node>
     <node concept="13hLZK" id="5jmmCdx$f68" role="13h7CW">
       <node concept="3clFbS" id="5jmmCdx$f69" role="2VODD2" />

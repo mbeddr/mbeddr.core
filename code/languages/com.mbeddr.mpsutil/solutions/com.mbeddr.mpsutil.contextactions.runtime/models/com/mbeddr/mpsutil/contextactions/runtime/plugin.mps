@@ -6,7 +6,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
@@ -59,9 +59,6 @@
       <concept id="481983775135178819" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDisposeBlock" flags="in" index="2uRRBN" />
       <concept id="481983775135178825" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginInitBlock" flags="in" index="2uRRBT" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
-      <concept id="681855071694758165" name="jetbrains.mps.lang.plugin.standalone.structure.GetToolInProjectOperation" flags="nn" index="LR4U6">
-        <reference id="681855071694758166" name="tool" index="LR4U5" />
-      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -476,12 +473,7 @@
             <node concept="1xUVSX" id="QmW6bqNGmL" role="1tU5fm">
               <ref role="1xYkEM" node="5tr7YH$U35C" resolve="ContextActionsTool" />
             </node>
-            <node concept="2OqwBi" id="QmW6bqNGmO" role="33vP2m">
-              <node concept="2xqhHp" id="QmW6bqNGmP" role="2Oq$k0" />
-              <node concept="LR4U6" id="QmW6bqNGmQ" role="2OqNvi">
-                <ref role="LR4U5" node="5tr7YH$U35C" resolve="ContextActionsTool" />
-              </node>
-            </node>
+            <node concept="2WthIp" id="7MNKXiIOLYE" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbF" id="5tr7YH$U9kO" role="3cqZAp">
@@ -584,7 +576,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7vUP_qcxorB" role="3cqZAp" />
+        <node concept="3clFbH" id="7MNKXiIOLBT" role="3cqZAp" />
         <node concept="3clFbF" id="QmW6bqNB94" role="3cqZAp">
           <node concept="2YIFZM" id="QmW6bqNB9U" role="3clFbG">
             <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable):void" resolve="runInUIThreadNoWait" />

@@ -2,7 +2,7 @@
 <model ref="r:34838764-df6d-423e-8a2f-80a26962ac8c(com.mbeddr.mpsutil.grammarcells.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1858,14 +1858,14 @@
   </node>
   <node concept="24kQdi" id="3pFNVizDvwM">
     <property role="3GE5qa" value="cells" />
-    <ref role="1XX52x" to="teg0:3pFNVizDvwJ" resolve="StubSplitableCell" />
+    <ref role="1XX52x" to="teg0:3pFNVizDvwJ" resolve="StubSplittableCell" />
     <node concept="PMmxH" id="3pFNVizDvwN" role="2wV5jI">
       <ref role="PMmxG" to="tpco:37EzmTDC95l" resolve="ImplementationRemovedInStubMessage" />
     </node>
   </node>
   <node concept="24kQdi" id="3pFNVizDwRX">
     <property role="3GE5qa" value="cells" />
-    <ref role="1XX52x" to="teg0:3pFNVizDvwD" resolve="SplitableCell" />
+    <ref role="1XX52x" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
     <node concept="3EZMnI" id="3pFNVizDwRY" role="2wV5jI">
       <property role="3EZMnw" value="false" />
       <ref role="1k5W1q" to="tpc5:i0pPgF8" resolve="rootCellModelStyle" />

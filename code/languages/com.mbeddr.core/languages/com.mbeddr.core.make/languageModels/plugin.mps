@@ -26,10 +26,10 @@
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
-    <import index="w0gx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure.modules(MPS.Core/)" implicit="true" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
+    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
+    <import index="w0gx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure.modules(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -132,7 +132,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -1184,6 +1187,18 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbH" id="26HFG8DN$PV" role="3cqZAp" />
+                    <node concept="3clFbF" id="26HFG8DNzCq" role="3cqZAp">
+                      <node concept="37vLTI" id="26HFG8DNzYv" role="3clFbG">
+                        <node concept="37vLTw" id="26HFG8DN$5p" role="37vLTx">
+                          <ref role="3cqZAo" node="4OhLxlrFtrJ" resolve="exitValue" />
+                        </node>
+                        <node concept="10M0yZ" id="26HFG8DNzCp" role="37vLTJ">
+                          <ref role="1PxDUh" node="NZpyw1Asrf" resolve="MakeUtil" />
+                          <ref role="3cqZAo" node="26HFG8DNyQP" resolve="MAKE_EXIT_CODE" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="5zgShfbCz6y" role="3cqZAp">
                       <node concept="3clFbS" id="5zgShfbCz6z" role="3clFbx">
                         <node concept="34ab3g" id="5zgShfbCz6$" role="3cqZAp">
@@ -1323,6 +1338,15 @@
   <node concept="312cEu" id="NZpyw1Asrf">
     <property role="TrG5h" value="MakeUtil" />
     <node concept="2tJIrI" id="NZpyw1AZON" role="jymVt" />
+    <node concept="Wx3nA" id="26HFG8DNyQP" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="MAKE_EXIT_CODE" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="26HFG8DNyGv" role="1B3o_S" />
+      <node concept="10Oyi0" id="26HFG8DNyXX" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="26HFG8DNy_v" role="jymVt" />
     <node concept="2YIFZL" id="NZpyw1B0_o" role="jymVt">
       <property role="TrG5h" value="isNumber" />
       <property role="od$2w" value="false" />

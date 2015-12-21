@@ -2,13 +2,13 @@
 <model ref="r:4c5dc454-b4d3-41a4-98ed-1d11730310f6(com.mbeddr.analyses.cbmc.testsgen.testing.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="zdl0" ref="r:e1f1298d-1e7f-441a-863f-048e9e23739d(com.mbeddr.analyses.cbmc.testsgen.testing.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="zdl0" ref="r:e1f1298d-1e7f-441a-863f-048e9e23739d(com.mbeddr.analyses.cbmc.testsgen.testing.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

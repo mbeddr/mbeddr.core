@@ -66,9 +66,6 @@
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -940,8 +937,10 @@
             <property role="3SKdUp" value="TODO this does not work because the C Spec specifies an enum to be of type INT. We could improve here by generating more efficient code" />
           </node>
         </node>
-        <node concept="u8gfJ" id="4Ck4ndR3rwd" role="3cqZAp">
-          <node concept="3clFbF" id="7x9Z_y1St87" role="u8lrQ">
+        <node concept="1X3_iC" id="3AWqwDsoG_j" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="7x9Z_y1St87" role="8Wnug">
             <node concept="1PxgMI" id="7x9Z_y1St8y" role="3clFbG">
               <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
               <node concept="2YIFZM" id="7x9Z_y1St89" role="1PxMeX">

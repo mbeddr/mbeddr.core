@@ -220,7 +220,7 @@
     <property role="1pbfSe" value="848265773" />
     <property role="3GE5qa" value="cells" />
     <property role="TrG5h" value="BracketsCell" />
-    <property role="34LRSv" value="brackets" />
+    <property role="34LRSv" value="grammar.brackets" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="1vi_twqJeLv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -248,6 +248,9 @@
     </node>
     <node concept="PrWs8" id="2LwGNVbewpC" role="PzmwI">
       <ref role="PrY4T" node="2uT2PLmXqYk" resolve="IGrammarCell" />
+    </node>
+    <node concept="PrWs8" id="5l1k7_Rb0e3" role="PzmwI">
+      <ref role="PrY4T" node="5l1k7_Rb0dH" resolve="IRequiresRules" />
     </node>
   </node>
   <node concept="1TIwiD" id="2BcfhHlZPa5">
@@ -759,8 +762,8 @@
   <node concept="1TIwiD" id="3pFNVizDvwD">
     <property role="1pbfSe" value="636368931" />
     <property role="3GE5qa" value="cells" />
-    <property role="TrG5h" value="SplitableCell" />
-    <property role="34LRSv" value="grammar.splitable" />
+    <property role="TrG5h" value="SplittableCell" />
+    <property role="34LRSv" value="grammar.splittable" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyj" id="3pFNVizNUrt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -771,11 +774,15 @@
     <node concept="PrWs8" id="3pFNVizDvwE" role="PzmwI">
       <ref role="PrY4T" node="6oKG1kMyAVO" resolve="IActionGeneratingCell" />
     </node>
+    <node concept="PrWs8" id="5l1k7_Rb0e$" role="PzmwI">
+      <ref role="PrY4T" node="5l1k7_Rb0dH" resolve="IRequiresRules" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3pFNVizDvwJ">
-    <property role="TrG5h" value="StubSplitableCell" />
+    <property role="TrG5h" value="StubSplittableCell" />
     <property role="3GE5qa" value="cells" />
-    <ref role="1TJDcQ" node="3pFNVizDvwD" resolve="SplitableCell" />
+    <property role="1pbfSe" value="636368925" />
+    <ref role="1TJDcQ" node="3pFNVizDvwD" resolve="SplittableCell" />
     <node concept="PrWs8" id="3pFNVizDvwK" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
@@ -852,6 +859,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5l1k7_Rb0dH">
+    <property role="1pbfSe" value="865250330" />
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="IRequiresRules" />
   </node>
 </model>
 

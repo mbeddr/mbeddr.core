@@ -66,6 +66,7 @@
       </concept>
       <concept id="1177413954598" name="jetbrains.mps.lang.actions.structure.QueryFunction_RemoveBy_Condition" flags="in" index="zlMOO" />
       <concept id="1177414026667" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_concept" flags="nn" index="zm4iT" />
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
         <child id="1158700779049" name="nodeFactory" index="37WGs$" />
@@ -178,6 +179,24 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="37WvkG" id="5l1k7_Rb4sZ" role="37WGs$">
+      <ref role="37XkoT" to="teg0:2BcfhHlZPa5" resolve="GrammarInfoCell" />
+      <node concept="37Y9Zx" id="5l1k7_Rb4t0" role="37ZfLb">
+        <node concept="3clFbS" id="5l1k7_Rb4t1" role="2VODD2">
+          <node concept="3clFbF" id="5l1k7_Rb4vR" role="3cqZAp">
+            <node concept="2OqwBi" id="5l1k7_Rb59g" role="3clFbG">
+              <node concept="2OqwBi" id="5l1k7_Rb4yE" role="2Oq$k0">
+                <node concept="1r4Lsj" id="5l1k7_Rb4vQ" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5l1k7_Rb4Dy" role="2OqNvi">
+                  <ref role="3TtcxE" to="teg0:77A3HzrGy5f" />
+                </node>
+              </node>
+              <node concept="2DeJg1" id="5l1k7_Rb6O_" role="2OqNvi" />
             </node>
           </node>
         </node>

@@ -1,1 +1,1 @@
-http://download.jetbrains.com/mps/33/MPS-3.3-EAP4-142.230-macos.dmg
+http://download.jetbrains.com/mps/33/MPS-3.3-RC1.exe

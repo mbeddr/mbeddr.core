@@ -68,6 +68,10 @@
     <property role="34LRSv" value="table" />
     <property role="1pbfSe" value="1682013173" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyi" id="BILoO2KL1_" role="1TKVEl">
+      <property role="TrG5h" value="headerAlignmentDisabled" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="5X6T0_NE_dS" role="PzmwI">
       <ref role="PrY4T" node="4UkcdCu_Hbr" resolve="IStylable" />
     </node>
@@ -232,6 +236,10 @@
     <property role="R5$K7" value="true" />
     <property role="1pbfSe" value="1681631822" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2m7vnlrsADH" role="1TKVEl">
+      <property role="TrG5h" value="placeholderText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="1dAqnm8s8AA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="headers" />

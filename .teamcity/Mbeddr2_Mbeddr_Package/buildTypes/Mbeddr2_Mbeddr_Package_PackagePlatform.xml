@@ -7,13 +7,8 @@
       <option name="artifactRules" value="artifacts/**/com.mbeddr.platform.distribution/*.zip" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
-    <parameters>
-      <param name="mbeddr.languages.artifact-paths"><![CDATA[build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build/*.zip=>build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build
-build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/build/artifacts/mbeddr
-build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
-code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
-    </parameters>
-    <build-runners order="">
+    <parameters />
+    <build-runners order="RUNNER_96">
       <runner id="RUNNER_96" name="Package Platform" type="Ant">
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.platform/build-distribution.xml" />
@@ -44,6 +39,10 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
         <artifact sourcePath="%buildscripts.artifact-rule%" />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="true">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>

@@ -164,7 +164,6 @@
         <child id="6282313788306893059" name="index" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="279446265608352903" name="com.mbeddr.core.pointers.structure.SizeOfExpr" flags="ng" index="3wxvTy">
         <child id="279446265608352905" name="type2Calculate" index="3wxvTG" />
       </concept>
@@ -333,6 +332,9 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
         <child id="7755897872837031765" name="actual" index="2N2GHg" />
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
@@ -340,9 +342,6 @@
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="a577a05d-67ad-41db-9547-6e5f0730b85d" name="mbeddr.tutorial.osconfig">
@@ -1050,39 +1049,10 @@
   </node>
   <node concept="N3F5e" id="zSFqGmbqdm">
     <property role="TrG5h" value="Main" />
-    <node concept="N3Fnx" id="zSFqGmbqdn" role="N3F5h">
+    <node concept="lIfQi" id="4Ru$s7zMAre" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="zSFqGmbqdo" role="3XIRFX">
-        <node concept="2BFjQ_" id="zSFqGmbqdq" role="3XIRFZ">
-          <node concept="3rBj6X" id="zSFqGmbqdz" role="2BFjQA">
-            <node concept="3cM6IN" id="2qGv$isaYoW" role="3cM6Hi">
-              <ref role="3cM6IK" node="7vXEDSfqWYS" resolve="testGotoFail" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="26Vqph" id="zSFqGmbqds" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="19RgSI" id="zSFqGmbqdt" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="zSFqGmbqdu" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="19RgSI" id="zSFqGmbqdv" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="zSFqGmbqdw" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="zSFqGmbqdy" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Ru$s7zMArf" role="lIfQt">
+        <ref role="3cM6IK" node="7vXEDSfqWYS" resolve="testGotoFail" />
       </node>
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsgI" role="2OODSX">

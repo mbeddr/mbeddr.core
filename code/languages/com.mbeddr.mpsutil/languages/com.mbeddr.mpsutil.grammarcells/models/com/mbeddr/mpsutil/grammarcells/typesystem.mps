@@ -13,8 +13,9 @@
     <import index="tpdg" ref="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor(MPS.Editor/)" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="cmsr" ref="r:ad2e4832-0577-46d7-b0a6-761102effa9f(com.mbeddr.mpsutil.grammarcells.generatorutils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -145,6 +146,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -192,6 +196,7 @@
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
+      <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -202,6 +207,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -229,11 +235,15 @@
         <reference id="6973815483243564601" name="enum" index="3f7vo2" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
+        <reference id="1139867957129" name="concept" index="1_rbq0" />
       </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
@@ -288,6 +298,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
@@ -1479,6 +1490,170 @@
     <node concept="1YaCAy" id="20mebiUzEPq" role="1YuTPh">
       <property role="TrG5h" value="conceptEditorClassReference" />
       <ref role="1YaFvo" to="teg0:20mebiUzEPg" resolve="ConceptEditorClassReference" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5l1k7_Rb0eK">
+    <property role="TrG5h" value="check_IRequiresRules" />
+    <node concept="3clFbS" id="5l1k7_Rb0eL" role="18ibNy">
+      <node concept="3clFbJ" id="5l1k7_Rb0$p" role="3cqZAp">
+        <node concept="3clFbS" id="5l1k7_Rb0$q" role="3clFbx">
+          <node concept="2MkqsV" id="5l1k7_Rb0AM" role="3cqZAp">
+            <node concept="Xl_RD" id="5l1k7_Rb0Ba" role="2MkJ7o">
+              <property role="Xl_RC" value="You need to define a grammar rule" />
+            </node>
+            <node concept="1YBJjd" id="5l1k7_Rb0E1" role="2OEOjV">
+              <ref role="1YBMHb" node="5l1k7_Rb0eN" resolve="node" />
+            </node>
+            <node concept="3Cnw8n" id="5l1k7_RbH6S" role="2OEOjU">
+              <ref role="QpYPw" node="5l1k7_Rb0Eu" resolve="addGrammarRule" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5l1k7_Rb0rK" role="3clFbw">
+          <node concept="2OqwBi" id="5l1k7_Rb0hr" role="2Oq$k0">
+            <node concept="1YBJjd" id="5l1k7_Rb0gj" role="2Oq$k0">
+              <ref role="1YBMHb" node="5l1k7_Rb0eN" resolve="node" />
+            </node>
+            <node concept="2Xjw5R" id="5l1k7_Rb0mG" role="2OqNvi">
+              <node concept="1xMEDy" id="5l1k7_Rb0mI" role="1xVPHs">
+                <node concept="chp4Y" id="5l1k7_Rb0nu" role="ri$Ld">
+                  <ref role="cht4Q" to="teg0:2BcfhHlZPa5" resolve="GrammarInfoCell" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3w_OXm" id="5l1k7_Rb0zK" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5l1k7_Rb0eN" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="teg0:5l1k7_Rb0dH" resolve="IRequiresRules" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="5l1k7_Rb0Eu">
+    <property role="TrG5h" value="addGrammarRule" />
+    <node concept="Q5ZZ6" id="5l1k7_Rb0Ev" role="Q6x$H">
+      <node concept="3clFbS" id="5l1k7_Rb0Ew" role="2VODD2">
+        <node concept="3cpWs8" id="5l1k7_Rb3TS" role="3cqZAp">
+          <node concept="3cpWsn" id="5l1k7_Rb3TT" role="3cpWs9">
+            <property role="TrG5h" value="rootCell" />
+            <node concept="3Tqbb2" id="5l1k7_Rb3TR" role="1tU5fm">
+              <ref role="ehGHo" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+            </node>
+            <node concept="2OqwBi" id="5l1k7_Rb3TU" role="33vP2m">
+              <node concept="2OqwBi" id="5l1k7_Rb3TW" role="2Oq$k0">
+                <node concept="Q6c8r" id="5l1k7_Rb3TX" role="2Oq$k0" />
+                <node concept="z$bX8" id="5l1k7_Rb3TY" role="2OqNvi">
+                  <node concept="1xMEDy" id="5l1k7_RbQuO" role="1xVPHs">
+                    <node concept="chp4Y" id="5l1k7_RbQxS" role="ri$Ld">
+                      <ref role="cht4Q" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="5l1k7_RbMuQ" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="1yVyf7" id="5l1k7_Rb3U1" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5l1k7_RbHkZ" role="3cqZAp">
+          <node concept="3cpWsn" id="5l1k7_RbHl0" role="3cpWs9">
+            <property role="TrG5h" value="grammar" />
+            <node concept="3Tqbb2" id="5l1k7_RbHkY" role="1tU5fm">
+              <ref role="ehGHo" to="teg0:2BcfhHlZPa5" resolve="GrammarInfoCell" />
+            </node>
+            <node concept="2OqwBi" id="5l1k7_RbHl1" role="33vP2m">
+              <node concept="37vLTw" id="5l1k7_RbHl2" role="2Oq$k0">
+                <ref role="3cqZAo" node="5l1k7_Rb3TT" resolve="rootCell" />
+              </node>
+              <node concept="2DeJnW" id="5l1k7_RbHl3" role="2OqNvi">
+                <ref role="1_rbq0" to="teg0:2BcfhHlZPa5" resolve="GrammarInfoCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5l1k7_Rb3YT" role="3cqZAp">
+          <node concept="37vLTI" id="5l1k7_RbHF9" role="3clFbG">
+            <node concept="37vLTw" id="5l1k7_RbHHz" role="37vLTx">
+              <ref role="3cqZAo" node="5l1k7_Rb3TT" resolve="rootCell" />
+            </node>
+            <node concept="2OqwBi" id="5l1k7_RbHqH" role="37vLTJ">
+              <node concept="37vLTw" id="5l1k7_RbHl4" role="2Oq$k0">
+                <ref role="3cqZAo" node="5l1k7_RbHl0" resolve="grammar" />
+              </node>
+              <node concept="3TrEf2" id="5l1k7_RbHxI" role="2OqNvi">
+                <ref role="3Tt5mk" to="teg0:2uT2PLmWwE4" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="5l1k7_RbH9J" role="QzAvj">
+      <node concept="3clFbS" id="5l1k7_RbH9K" role="2VODD2">
+        <node concept="3clFbF" id="5l1k7_RbHb4" role="3cqZAp">
+          <node concept="Xl_RD" id="5l1k7_RbHb3" role="3clFbG">
+            <property role="Xl_RC" value="Add grammar rule" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VjNOn_D4kv">
+    <property role="TrG5h" value="componentCellInlineWarning" />
+    <node concept="3clFbS" id="7VjNOn_D4kw" role="18ibNy">
+      <node concept="3clFbJ" id="7VjNOn_D4kM" role="3cqZAp">
+        <node concept="3clFbS" id="7VjNOn_D4kN" role="3clFbx">
+          <node concept="a7r0C" id="7VjNOn_DbKX" role="3cqZAp">
+            <node concept="1YBJjd" id="7VjNOn_DbL_" role="2OEOjV">
+              <ref role="1YBMHb" node="7VjNOn_D4ky" resolve="node" />
+            </node>
+            <node concept="Xl_RD" id="7VjNOn_DbKZ" role="a7wSD">
+              <property role="Xl_RC" value="Will be inlined. Override will not work." />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="7VjNOn_D4z3" role="3clFbw">
+          <ref role="37wK5l" to="cmsr:7VjNOn_CDwO" resolve="componentCellRequiresInline" />
+          <ref role="1Pybhc" to="cmsr:73exJLGGbPM" resolve="GeneratorUtils" />
+          <node concept="1YBJjd" id="7VjNOn_D4zq" role="37wK5m">
+            <ref role="1YBMHb" node="7VjNOn_D4ky" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VjNOn_D4ky" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VjNOn_D4B5">
+    <property role="TrG5h" value="componentInlineWarning" />
+    <node concept="3clFbS" id="7VjNOn_D4B6" role="18ibNy">
+      <node concept="3clFbJ" id="7VjNOn_D4B7" role="3cqZAp">
+        <node concept="3clFbS" id="7VjNOn_D4B8" role="3clFbx">
+          <node concept="a7r0C" id="7VjNOn_DbJi" role="3cqZAp">
+            <node concept="1YBJjd" id="7VjNOn_DbJX" role="2OEOjV">
+              <ref role="1YBMHb" node="7VjNOn_D4Bd" resolve="node" />
+            </node>
+            <node concept="Xl_RD" id="7VjNOn_DbJI" role="a7wSD">
+              <property role="Xl_RC" value="Will be inlined. Override will not work." />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="7VjNOn_D4FP" role="3clFbw">
+          <ref role="37wK5l" to="cmsr:7VjNOn_CUaJ" resolve="componentRequiresInline" />
+          <ref role="1Pybhc" to="cmsr:73exJLGGbPM" resolve="GeneratorUtils" />
+          <node concept="1YBJjd" id="7VjNOn_D4FQ" role="37wK5m">
+            <ref role="1YBMHb" node="7VjNOn_D4Bd" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VjNOn_D4Bd" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="tpc2:fGPKFH7" resolve="EditorComponentDeclaration" />
     </node>
   </node>
 </model>

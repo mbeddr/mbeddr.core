@@ -1,5 +1,5 @@
 <project name="mbeddr download and deploy plugins" default="clean-and-build" >
-	<!-- import properties -->
+ 	<!-- import properties -->
 	<property file="build.properties"/>  
 
 	<!-- validations -->
@@ -111,7 +111,7 @@
 		<antcall target="clean" />		
 		<antcall target="build-languages" />	
 		<antcall target="copy-spawner" />
-		<antcall target="install-nativelibs-plugin" />
+		<antcall target="install-idea-plugins" />
 	</target>
 
 	<target name="copy-spawner">
@@ -195,12 +195,16 @@
 		<delete dir="${mps-sl-all.build-tmp}" />
 	</target>
 
-	<target name="install-nativelibs-plugin" >
+	<target name="install-idea-plugins" >
 		<copy todir="${mps.home}/${plugins.folder.name}">
 			<zipfileset src="${artifacts.root}/mps-sl-all/${mps-sl-all.zip-file.name}">
 				<patternset>
 					<include name="de.itemis.mps.nativelibs.loader/" />
 				</patternset>
+			</zipfileset>
+		</copy>
+		<copy todir="${mps.home}/${plugins.folder.name}">
+			<zipfileset src="${artifacts.root}/com.mbeddr.platform/com.mbeddr.mpsutil.actionsfilter.zip">
 			</zipfileset>
 		</copy>
 	</target>

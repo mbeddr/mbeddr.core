@@ -245,5 +245,12 @@
     <property role="TrG5h" value="IStringLiteralLike" />
     <property role="1pbfSe" value="1863725791" />
   </node>
+  <node concept="1TIwiD" id="4DjlAm4JWli">
+    <property role="1pbfSe" value="820831305" />
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="VerbatimStringLiteral" />
+    <property role="34LRSv" value="@&quot;" />
+    <ref role="1TJDcQ" node="5jmmCdx$f5R" resolve="StringLiteral" />
+  </node>
 </model>
 

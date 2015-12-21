@@ -3,18 +3,18 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
-    <import index="zpe6" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.ide.editor.util(MPS.Editor/jetbrains.mps.ide.editor.util@java_stub)" />
-    <import index="xq6g" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.editor.runtime(MPS.Editor/jetbrains.mps.editor.runtime@java_stub)" />
+    <import index="d155" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor.util(MPS.Editor/)" />
+    <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
+    <import index="wfif" ref="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="njmu" ref="r:1b386250-86de-4ea6-8d77-819aebd33e4a(de.itemis.mps.editor.bool.behavior)" implicit="true" />
-    <import index="wfif" ref="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -360,8 +360,8 @@
             <node concept="3clFbS" id="h7Gq5aj" role="2VODD2">
               <node concept="3cpWs6" id="h7GrovA" role="3cqZAp">
                 <node concept="2YIFZM" id="h7Grtu2" role="3cqZAk">
-                  <ref role="1Pybhc" to="xq6g:~EditorUtil" resolve="EditorUtil" />
-                  <ref role="37wK5l" to="xq6g:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
+                  <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
+                  <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                   <node concept="pncrf" id="h7Gruda" role="37wK5m" />
                   <node concept="pqAIu" id="1tyjSjK5Gdo" role="37wK5m">
                     <ref role="pqAIh" to="wfif:4g2H4r3SHDB" resolve="CellModel_Checkbox" />
@@ -518,8 +518,8 @@
             <node concept="3clFbS" id="20OtND1DIrm" role="2VODD2">
               <node concept="3cpWs6" id="20OtND1DIrn" role="3cqZAp">
                 <node concept="2YIFZM" id="115coIS92Tc" role="3cqZAk">
-                  <ref role="1Pybhc" to="xq6g:~EditorUtil" resolve="EditorUtil" />
-                  <ref role="37wK5l" to="xq6g:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
+                  <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
+                  <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                   <node concept="pncrf" id="115coIS92Td" role="37wK5m" />
                   <node concept="pqAIu" id="115coIS92Te" role="37wK5m">
                     <ref role="pqAIh" to="wfif:4g2H4r3SHDB" resolve="CellModel_Checkbox" />
@@ -950,8 +950,8 @@
               <node concept="3clFbS" id="4JS9aP7pPIi" role="2VODD2">
                 <node concept="3cpWs6" id="4JS9aP7pPIj" role="3cqZAp">
                   <node concept="2YIFZM" id="115coIS97gU" role="3cqZAk">
-                    <ref role="1Pybhc" to="xq6g:~EditorUtil" resolve="EditorUtil" />
-                    <ref role="37wK5l" to="xq6g:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
+                    <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
+                    <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                     <node concept="pncrf" id="115coIS97gV" role="37wK5m" />
                     <node concept="pqAIu" id="115coIS97gW" role="37wK5m">
                       <ref role="pqAIh" to="wfif:4JS9aP7oxy8" resolve="CheckboxDefaultIcons" />
@@ -990,8 +990,8 @@
               <node concept="3clFbS" id="4JS9aP7pPIy" role="2VODD2">
                 <node concept="3cpWs6" id="4JS9aP7pPIz" role="3cqZAp">
                   <node concept="2YIFZM" id="115coIS986J" role="3cqZAk">
-                    <ref role="1Pybhc" to="xq6g:~EditorUtil" resolve="EditorUtil" />
-                    <ref role="37wK5l" to="xq6g:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
+                    <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
+                    <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                     <node concept="pncrf" id="115coIS986K" role="37wK5m" />
                     <node concept="pqAIu" id="115coIS986L" role="37wK5m">
                       <ref role="pqAIh" to="wfif:4JS9aP7oxy8" resolve="CheckboxDefaultIcons" />

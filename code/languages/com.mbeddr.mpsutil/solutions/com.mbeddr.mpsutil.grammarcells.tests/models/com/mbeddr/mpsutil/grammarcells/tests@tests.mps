@@ -5,8 +5,8 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="a257f68c-93a3-47b0-838b-6905dd9c20f6" name="com.mbeddr.mpsutil.grammarcells.sandboxlang" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -197,6 +197,11 @@
       </concept>
       <concept id="5020734785399285455" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.FractionExpression" flags="ng" index="3QxHPw" />
       <concept id="5020734785399285456" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.DivExpression" flags="ng" index="3QxHPZ" />
+      <concept id="3715388205391558016" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.TEST_OptionalNextToRenderingConditon" flags="ng" index="1Uxo1z">
+        <property id="3715388205391558073" name="condition" index="1Uxo1q" />
+        <child id="3715388205391558067" name="expr" index="1Uxo1g" />
+        <child id="3715388205391955609" name="expr2" index="1UBZdU" />
+      </concept>
     </language>
     <language id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang">
       <concept id="5083944728301309881" name="com.mbeddr.mpsutil.grammarcells.runtimelang.structure.ArbitraryTextAnnotation" flags="ng" index="y$OdM">
@@ -1615,6 +1620,104 @@
     <node concept="3clFbS" id="20mebiUGvHB" role="LjaKd">
       <node concept="2TK7Tu" id="20mebiUGvHC" role="3cqZAp">
         <property role="2TTd_B" value=" ++" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3efHud93lht">
+    <property role="TrG5h" value="OptionalNextToRenderingConditionA" />
+    <node concept="2cssWn" id="3efHud93lhv" role="LiRBU">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3efHud93lhw" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3efHud93lhx" role="2cssWr">
+          <node concept="1Uxo1z" id="3efHud95COS" role="2cssZA">
+            <property role="1Uxo1q" value="true" />
+            <node concept="yA7Z4" id="3efHud99IhK" role="1Uxo1g">
+              <property role="yA7Zo" value="1" />
+            </node>
+            <node concept="LIFWc" id="65G7Yo_4AsT" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="1" />
+              <property role="p6zMs" value="1" />
+              <property role="LIFWd" value="Constant_84ih13_c2a" />
+            </node>
+          </node>
+        </node>
+        <node concept="yzEQC" id="3efHud93lhB" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3efHud93lhC" role="2cssWm" />
+    </node>
+    <node concept="2cssWn" id="3efHud99Iij" role="LiZbd">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3efHud99Iik" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3efHud99Iil" role="2cssWr">
+          <node concept="1Uxo1z" id="3efHud99Iim" role="2cssZA">
+            <property role="1Uxo1q" value="true" />
+            <node concept="yA7Z4" id="3efHud99Iin" role="1Uxo1g">
+              <property role="yA7Zo" value="1" />
+            </node>
+            <node concept="yA7Z4" id="3efHud99IjB" role="1UBZdU">
+              <property role="yA7Zo" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="yzEQC" id="3efHud99Iio" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3efHud99Iip" role="2cssWm" />
+    </node>
+    <node concept="3clFbS" id="3efHud99IkJ" role="LjaKd">
+      <node concept="2TK7Tu" id="3efHud99IkI" role="3cqZAp">
+        <property role="2TTd_B" value="as2" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3efHud99Il0">
+    <property role="TrG5h" value="OptionalNextToRenderingConditionB" />
+    <node concept="2cssWn" id="3efHud99Il1" role="LiRBU">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3efHud99Il2" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3efHud99Il3" role="2cssWr">
+          <node concept="1Uxo1z" id="3efHud99Il4" role="2cssZA">
+            <node concept="yA7Z4" id="3efHud99Il5" role="1Uxo1g">
+              <property role="yA7Zo" value="1" />
+              <node concept="LIFWc" id="65G7Yo_4AsX" role="lGtFl">
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="1" />
+                <property role="p6zMs" value="1" />
+                <property role="LIFWd" value="property_value" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="yzEQC" id="3efHud99Il7" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3efHud99Il8" role="2cssWm" />
+    </node>
+    <node concept="2cssWn" id="3efHud99Il9" role="LiZbd">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3efHud99Ila" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3efHud99Ilb" role="2cssWr">
+          <node concept="1Uxo1z" id="3efHud99Ilc" role="2cssZA">
+            <node concept="yA7Z4" id="3efHud99Ild" role="1Uxo1g">
+              <property role="yA7Zo" value="1" />
+            </node>
+            <node concept="yA7Z4" id="3efHud99Ile" role="1UBZdU">
+              <property role="yA7Zo" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="yzEQC" id="3efHud99Ilf" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3efHud99Ilg" role="2cssWm" />
+    </node>
+    <node concept="3clFbS" id="3efHud99Ilh" role="LjaKd">
+      <node concept="2TK7Tu" id="3efHud99Ili" role="3cqZAp">
+        <property role="2TTd_B" value="as2" />
       </node>
     </node>
   </node>

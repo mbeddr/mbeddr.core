@@ -51,6 +51,10 @@
       <property role="TrG5h" value="isAllowActionsMode" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="2N0FrS4t$CB" role="1TKVEl">
+      <property role="TrG5h" value="isActiveByDefault" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5FJiYrlIpAq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />

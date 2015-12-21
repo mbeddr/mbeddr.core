@@ -2,14 +2,14 @@
 <model ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="qe67" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.style(MPS.Editor/jetbrains.mps.openapi.editor.style@java_stub)" />
-    <import index="as9o" ref="f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="1y6f" ref="r:a425f003-07f2-4ded-ad56-54c06b501569(de.itemis.mps.editor.diagram.styles.structure)" implicit="true" />
   </imports>
   <registry>
@@ -208,11 +208,11 @@
     <node concept="3t5Usi" id="4mmPun56RuD" role="V601i">
       <property role="TrG5h" value="__line-width" />
       <node concept="3uibUv" id="4mmPun56RuE" role="3t5Oan">
-        <ref role="3uigEE" to="e2lb:~Float" resolve="Float" />
+        <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
       </node>
       <node concept="2YIFZM" id="4mmPun56RuF" role="3t49C2">
-        <ref role="1Pybhc" to="e2lb:~Float" resolve="Float" />
-        <ref role="37wK5l" to="e2lb:~Float.valueOf(float):java.lang.Float" resolve="valueOf" />
+        <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+        <ref role="37wK5l" to="wyt6:~Float.valueOf(float):java.lang.Float" resolve="valueOf" />
         <node concept="2$xPTn" id="4opyGmeaqbj" role="37wK5m">
           <property role="2$xPTl" value="1.0f" />
         </node>
@@ -221,11 +221,11 @@
     <node concept="3t5Usi" id="4mmPun56RuH" role="V601i">
       <property role="TrG5h" value="__line-color" />
       <node concept="3uibUv" id="4mmPun56RuI" role="3t5Oan">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="2ShNRf" id="4mmPun56RuJ" role="3t49C2">
         <node concept="1pGfFk" id="4mmPun56RuK" role="2ShVmc">
-          <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
           <node concept="2nou5x" id="4mmPun56RuL" role="37wK5m">
             <property role="2noCCI" value="64" />
           </node>
@@ -242,7 +242,7 @@
       <property role="TrG5h" value="__shade-color" />
       <property role="iBDjm" value="true" />
       <node concept="3uibUv" id="4opyGmearPi" role="3t5Oan">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
   </node>
@@ -250,11 +250,11 @@
     <property role="TrG5h" value="LineStyle" />
     <node concept="QsSxf" id="4mmPun57bLv" role="Qtgdg">
       <property role="TrG5h" value="SOLID" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="4mmPun57bLw" role="Qtgdg">
       <property role="TrG5h" value="DASHED" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="4mmPun57bLx" role="1B3o_S" />
   </node>
@@ -283,13 +283,13 @@
               <ref role="3cqZAo" node="4mmPun57bMB" resolve="g" />
             </node>
             <node concept="liA8E" id="4mmPun57bLC" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
               <node concept="2OqwBi" id="4mmPun57bLD" role="37wK5m">
                 <node concept="37vLTw" id="4mmPun57bLE" role="2Oq$k0">
                   <ref role="3cqZAo" node="4mmPun57bMD" resolve="style" />
                 </node>
                 <node concept="liA8E" id="4mmPun57bLF" role="2OqNvi">
-                  <ref role="37wK5l" to="qe67:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
                   <node concept="1Z6Ecs" id="4mmPun57bLG" role="37wK5m">
                     <ref role="1Z6EpT" node="4mmPun56RuH" resolve="__line-color" />
                   </node>
@@ -316,7 +316,7 @@
                   <ref role="3cqZAo" node="4mmPun57bMD" resolve="style" />
                 </node>
                 <node concept="liA8E" id="4mmPun57bLM" role="2OqNvi">
-                  <ref role="37wK5l" to="qe67:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
                   <node concept="1Z6Ecs" id="4mmPun57bLN" role="37wK5m">
                     <ref role="1Z6EpT" node="4mmPun56RuD" resolve="__line-width" />
                   </node>
@@ -336,7 +336,7 @@
                 <ref role="3cqZAo" node="4mmPun57bMD" resolve="style" />
               </node>
               <node concept="liA8E" id="4mmPun57bLT" role="2OqNvi">
-                <ref role="37wK5l" to="qe67:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
                 <node concept="1Z6Ecs" id="4mmPun57bLU" role="37wK5m">
                   <ref role="1Z6EpT" node="4mmPun56RuA" resolve="__line-style" />
                 </node>
@@ -374,7 +374,7 @@
               <ref role="3cqZAo" node="4mmPun57bMB" resolve="g" />
             </node>
             <node concept="liA8E" id="4opyGmegcH7" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Graphics2D.setStroke(java.awt.Stroke):void" resolve="setStroke" />
+              <ref role="37wK5l" to="z60i:~Graphics2D.setStroke(java.awt.Stroke):void" resolve="setStroke" />
               <node concept="1rXfSq" id="4opyGmegd59" role="37wK5m">
                 <ref role="37wK5l" node="4opyGmegcHQ" resolve="createStroke" />
                 <node concept="37vLTw" id="4opyGmegd6b" role="37wK5m">
@@ -391,16 +391,16 @@
       <node concept="37vLTG" id="4mmPun57bMB" role="3clF46">
         <property role="TrG5h" value="g" />
         <node concept="3uibUv" id="4mmPun57bMC" role="1tU5fm">
-          <ref role="3uigEE" to="1t7x:~Graphics2D" resolve="Graphics2D" />
+          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
         </node>
       </node>
       <node concept="37vLTG" id="4mmPun57bMD" role="3clF46">
         <property role="TrG5h" value="style" />
         <node concept="3uibUv" id="5_d_hjegsqF" role="1tU5fm">
-          <ref role="3uigEE" to="qe67:~Style" resolve="Style" />
+          <ref role="3uigEE" to="hox0:~Style" resolve="Style" />
         </node>
         <node concept="2AHcQZ" id="519t3kwFu18" role="2AJF6D">
-          <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
         </node>
       </node>
       <node concept="37vLTG" id="ru$G4ivt7r" role="3clF46">
@@ -425,7 +425,7 @@
             <node concept="YS8fn" id="4opyGmeg9OP" role="3cqZAp">
               <node concept="2ShNRf" id="4opyGmeg9OQ" role="YScLw">
                 <node concept="1pGfFk" id="4opyGmeg9OR" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="4opyGmeg9OS" role="37wK5m">
                     <node concept="37vLTw" id="4opyGmeg9OT" role="3uHU7w">
                       <ref role="3cqZAo" node="4opyGmeg9KL" resolve="lineStyle" />
@@ -447,17 +447,17 @@
               <node concept="3cpWs6" id="4opyGmegbb6" role="3cqZAp">
                 <node concept="2ShNRf" id="4opyGmeg9P2" role="3cqZAk">
                   <node concept="1pGfFk" id="4opyGmeg9P3" role="2ShVmc">
-                    <ref role="37wK5l" to="1t7x:~BasicStroke.&lt;init&gt;(float,int,int,float,float[],float)" resolve="BasicStroke" />
+                    <ref role="37wK5l" to="z60i:~BasicStroke.&lt;init&gt;(float,int,int,float,float[],float)" resolve="BasicStroke" />
                     <node concept="37vLTw" id="4opyGmeg9P4" role="37wK5m">
                       <ref role="3cqZAo" node="4opyGmeg9K1" resolve="lineWidth" />
                     </node>
                     <node concept="10M0yZ" id="4opyGmeg9P5" role="37wK5m">
-                      <ref role="1PxDUh" to="1t7x:~BasicStroke" resolve="BasicStroke" />
-                      <ref role="3cqZAo" to="1t7x:~BasicStroke.CAP_BUTT" resolve="CAP_BUTT" />
+                      <ref role="1PxDUh" to="z60i:~BasicStroke" resolve="BasicStroke" />
+                      <ref role="3cqZAo" to="z60i:~BasicStroke.CAP_BUTT" resolve="CAP_BUTT" />
                     </node>
                     <node concept="10M0yZ" id="4opyGmeg9P6" role="37wK5m">
-                      <ref role="3cqZAo" to="1t7x:~BasicStroke.JOIN_MITER" resolve="JOIN_MITER" />
-                      <ref role="1PxDUh" to="1t7x:~BasicStroke" resolve="BasicStroke" />
+                      <ref role="3cqZAo" to="z60i:~BasicStroke.JOIN_MITER" resolve="JOIN_MITER" />
+                      <ref role="1PxDUh" to="z60i:~BasicStroke" resolve="BasicStroke" />
                     </node>
                     <node concept="2$xPTn" id="4opyGmeg9P7" role="37wK5m">
                       <property role="2$xPTl" value="10.0f" />
@@ -500,7 +500,7 @@
               <node concept="3cpWs6" id="4opyGmegbJT" role="3cqZAp">
                 <node concept="2ShNRf" id="4opyGmeg9Pq" role="3cqZAk">
                   <node concept="1pGfFk" id="4opyGmeg9Pr" role="2ShVmc">
-                    <ref role="37wK5l" to="1t7x:~BasicStroke.&lt;init&gt;(float)" resolve="BasicStroke" />
+                    <ref role="37wK5l" to="z60i:~BasicStroke.&lt;init&gt;(float)" resolve="BasicStroke" />
                     <node concept="37vLTw" id="4opyGmeg9Ps" role="37wK5m">
                       <ref role="3cqZAo" node="4opyGmeg9K1" resolve="lineWidth" />
                     </node>
@@ -522,7 +522,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="4opyGmegarJ" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Stroke" resolve="Stroke" />
+        <ref role="3uigEE" to="z60i:~Stroke" resolve="Stroke" />
       </node>
       <node concept="3Tm1VV" id="4opyGmeg9_Y" role="1B3o_S" />
     </node>
@@ -532,15 +532,15 @@
     <property role="TrG5h" value="VerticalAlign" />
     <node concept="QsSxf" id="4mmPun57bMJ" role="Qtgdg">
       <property role="TrG5h" value="TOP" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="4mmPun57bMK" role="Qtgdg">
       <property role="TrG5h" value="CENTER" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="4mmPun57bML" role="Qtgdg">
       <property role="TrG5h" value="BOTTOM" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="4mmPun57bMM" role="1B3o_S" />
   </node>

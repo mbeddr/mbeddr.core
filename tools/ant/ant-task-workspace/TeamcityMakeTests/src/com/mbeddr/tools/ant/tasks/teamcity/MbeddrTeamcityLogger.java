@@ -13,6 +13,6 @@ public class MbeddrTeamcityLogger implements ITeamcityLogger {
 
 	@Override
 	public void log(ITeamcityMessage msg) {
-		antProject.log(msg.getText());
+		//antProject.log(msg.getText());
 	}
 }

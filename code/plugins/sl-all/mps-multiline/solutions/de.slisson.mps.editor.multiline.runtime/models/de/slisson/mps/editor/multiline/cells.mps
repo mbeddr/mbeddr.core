@@ -10,7 +10,7 @@
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="mywg" ref="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(de.slisson.mps.editor.multiline.runtime)" />
@@ -41,9 +41,9 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" implicit="true" />
-    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
+    <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -163,6 +163,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -775,6 +776,14 @@
         <ref role="3uigEE" node="5lTqPuSdk5G" resolve="MultilineText" />
       </node>
     </node>
+    <node concept="312cEg" id="3$dAZlREfeS" role="jymVt">
+      <property role="TrG5h" value="myPlaceholderText" />
+      <node concept="3Tm6S6" id="3$dAZlREfeT" role="1B3o_S" />
+      <node concept="17QB3L" id="3$dAZlREl9S" role="1tU5fm" />
+      <node concept="Xl_RD" id="3$dAZlRF1g4" role="33vP2m">
+        <property role="Xl_RC" value="" />
+      </node>
+    </node>
     <node concept="312cEg" id="4WdkpBdiNiu" role="jymVt">
       <property role="TrG5h" value="myWordCellInitializers" />
       <node concept="3Tm6S6" id="4WdkpBdiNiv" role="1B3o_S" />
@@ -920,6 +929,39 @@
       <node concept="37vLTG" id="7cgOZHrhAST" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="7cgOZHrhASV" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3$dAZlRF1mj" role="jymVt" />
+    <node concept="3clFb_" id="3$dAZlRF86Z" role="jymVt">
+      <property role="TrG5h" value="setPlaceholderText" />
+      <node concept="37vLTG" id="3$dAZlRFG8e" role="3clF46">
+        <property role="TrG5h" value="placeholderText" />
+        <node concept="17QB3L" id="3$dAZlRFIxI" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="3$dAZlRF871" role="3clF45" />
+      <node concept="3Tm1VV" id="3$dAZlRF872" role="1B3o_S" />
+      <node concept="3clFbS" id="3$dAZlRF873" role="3clF47">
+        <node concept="3clFbF" id="3$dAZlRFJgL" role="3cqZAp">
+          <node concept="37vLTI" id="3$dAZlRFJWP" role="3clFbG">
+            <node concept="3K4zz7" id="3$dAZlRFLdM" role="37vLTx">
+              <node concept="Xl_RD" id="3$dAZlRFLs6" role="3K4E3e">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="37vLTw" id="3$dAZlRFLSq" role="3K4GZi">
+                <ref role="3cqZAo" node="3$dAZlRFG8e" resolve="placeholderText" />
+              </node>
+              <node concept="3clFbC" id="3$dAZlRFKJs" role="3K4Cdx">
+                <node concept="10Nm6u" id="3$dAZlRFKXz" role="3uHU7w" />
+                <node concept="37vLTw" id="3$dAZlRFKsZ" role="3uHU7B">
+                  <ref role="3cqZAo" node="3$dAZlRFG8e" resolve="placeholderText" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3$dAZlRFJgK" role="37vLTJ">
+              <ref role="3cqZAo" node="3$dAZlREfeS" resolve="myPlaceholderText" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="dJX1uxkIcz" role="jymVt" />
@@ -1434,6 +1476,50 @@
               <ref role="37wK5l" node="453OnIlrZxB" resolve="setNewLine" />
               <node concept="3clFbT" id="453OnIlrZGu" role="37wK5m">
                 <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3$dAZlRDwxP" role="3cqZAp" />
+        <node concept="3cpWs8" id="3$dAZlRD_1P" role="3cqZAp">
+          <node concept="3cpWsn" id="3$dAZlRD_1Q" role="3cpWs9">
+            <property role="TrG5h" value="firstWordCell" />
+            <node concept="3uibUv" id="3$dAZlRD_1N" role="1tU5fm">
+              <ref role="3uigEE" node="5lTqPuSd937" resolve="EditorCell_Word" />
+            </node>
+            <node concept="1rXfSq" id="3$dAZlRD_1R" role="33vP2m">
+              <ref role="37wK5l" node="5lTqPuSdd32" resolve="getCellAt" />
+              <node concept="3cmrfG" id="3$dAZlRD_1S" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3$dAZlRD$GO" role="3cqZAp">
+          <node concept="2OqwBi" id="3$dAZlRD_vj" role="3clFbG">
+            <node concept="37vLTw" id="3$dAZlRD_1T" role="2Oq$k0">
+              <ref role="3cqZAo" node="3$dAZlRD_1Q" resolve="firstWordCell" />
+            </node>
+            <node concept="liA8E" id="3$dAZlRD_N2" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
+              <node concept="3K4zz7" id="3$dAZlRDBqf" role="37wK5m">
+                <node concept="37vLTw" id="3$dAZlRG3Qy" role="3K4E3e">
+                  <ref role="3cqZAo" node="3$dAZlREfeS" resolve="myPlaceholderText" />
+                </node>
+                <node concept="Xl_RD" id="3$dAZlRDBWg" role="3K4GZi">
+                  <property role="Xl_RC" value="" />
+                </node>
+                <node concept="2OqwBi" id="3$dAZlRDBaN" role="3K4Cdx">
+                  <node concept="2OqwBi" id="3$dAZlRDBaO" role="2Oq$k0">
+                    <node concept="37vLTw" id="3$dAZlRDBaP" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5lTqPuSdd55" resolve="myMultilineText" />
+                    </node>
+                    <node concept="liA8E" id="3$dAZlRDBaQ" role="2OqNvi">
+                      <ref role="37wK5l" node="6tLsdkfInk0" resolve="getText" />
+                    </node>
+                  </node>
+                  <node concept="17RlXB" id="3$dAZlRDBaR" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>

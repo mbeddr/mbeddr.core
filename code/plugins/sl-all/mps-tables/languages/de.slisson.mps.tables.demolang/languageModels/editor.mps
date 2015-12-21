@@ -2,9 +2,9 @@
 <model ref="r:ad2d15f5-a50a-447f-9147-3d81056dc384(de.slisson.mps.tables.demolang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,17 +16,17 @@
     <import index="18rm" ref="r:32e7668a-cc1d-445f-a538-678c22b2fafb(de.slisson.mps.tables.runtime.substitute)" />
     <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="reoo" ref="r:1e59a084-7ebe-4e95-89ab-c58a7e396583(de.slisson.mps.tables.editor)" />
-    <import index="4ky7" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellMenu(MPS.Editor/jetbrains.mps.nodeEditor.cellMenu@java_stub)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="as9o" ref="f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="7hml" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.smodel.action(MPS.Editor/jetbrains.mps.smodel.action@java_stub)" />
-    <import index="ajxo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="nu8v" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
+    <import index="6lvu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellMenu(MPS.Editor/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -300,6 +300,7 @@
       </concept>
       <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
       <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
+        <property id="2704268044258142829" name="placeholderText" index="1YXhso" />
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
         <child id="2199447184406843652" name="columnHeaders" index="2YiT2b" />
       </concept>
@@ -366,6 +367,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
+        <reference id="1204851882689" name="link" index="26LbJp" />
+      </concept>
       <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
         <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
         <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
@@ -377,6 +381,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -388,7 +393,9 @@
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
+        <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -456,6 +463,7 @@
       </concept>
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="24kQdi" id="1dAqnm8o5L1">
@@ -948,6 +956,7 @@
     <ref role="1XX52x" to="nnej:1dAqnm8oBxc" resolve="RequirementsCollection" />
     <node concept="2rfBfz" id="1dAqnm8o6CS" role="2wV5jI">
       <node concept="2reSaE" id="3vizsF8spxX" role="2rf8GZ">
+        <property role="1YXhso" value="Press enter to add the first requirement" />
         <ref role="2reCK$" to="nnej:1dAqnm8oYDx" />
         <node concept="2rfbtV" id="1U60oYwR10g" role="2YiT2b">
           <property role="2rfbtB" value="Requirements" />
@@ -1293,7 +1302,7 @@
                               <node concept="1Y3b0j" id="7C0FR5_gA4S" role="YeSDq">
                                 <property role="2bfB8j" value="true" />
                                 <ref role="1Y3XeK" to="18rm:lPJxikiclE" resolve="NodeSubstituter" />
-                                <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                 <node concept="3Tm1VV" id="7C0FR5_gA4T" role="1B3o_S" />
                                 <node concept="3clFb_" id="7C0FR5_gA4U" role="jymVt">
                                   <property role="TrG5h" value="substituteNode" />
@@ -1469,7 +1478,7 @@
                 <node concept="3K4zz7" id="1ERZrWiyh1O" role="3clFbG">
                   <node concept="2ShNRf" id="1ERZrWiyh1P" role="3K4E3e">
                     <node concept="1pGfFk" id="1ERZrWiyh1Q" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
+                      <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="1ERZrWiyh1R" role="37wK5m">
                         <property role="3cmrfH" value="255" />
                       </node>
@@ -1609,14 +1618,18 @@
             <node concept="pkWqt" id="1rJc_ytNRbB" role="pqm2j">
               <node concept="3clFbS" id="1rJc_ytNRbC" role="2VODD2">
                 <node concept="3clFbF" id="1rJc_ytNRom" role="3cqZAp">
-                  <node concept="2OqwBi" id="1rJc_ytNT9W" role="3clFbG">
+                  <node concept="2OqwBi" id="1M9xj9ULfE0" role="3clFbG">
                     <node concept="2OqwBi" id="1rJc_ytNRtA" role="2Oq$k0">
                       <node concept="pncrf" id="1rJc_ytNRol" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="1rJc_ytNSfO" role="2OqNvi">
-                        <ref role="3Tt5mk" to="nnej:1dAqnm8uyzZ" />
+                      <node concept="Bykcj" id="1M9xj9ULfDX" role="2OqNvi">
+                        <node concept="1aIX9F" id="1M9xj9ULfDY" role="1xVPHs">
+                          <node concept="26LbJo" id="1M9xj9ULfDZ" role="1aIX9E">
+                            <ref role="26LbJp" to="nnej:1dAqnm8uyzZ" />
+                          </node>
+                        </node>
                       </node>
                     </node>
-                    <node concept="3x8VRR" id="1rJc_ytNUMf" role="2OqNvi" />
+                    <node concept="3GX2aA" id="1M9xj9ULfE1" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -1908,14 +1921,14 @@
               <node concept="3clFbF" id="4izrigqu1hd" role="3cqZAp">
                 <node concept="2OqwBi" id="4izrigquvjq" role="3clFbG">
                   <node concept="2YIFZM" id="4izrigqu2aG" role="2Oq$k0">
-                    <ref role="37wK5l" to="ajxo:~Logger.getLogger(java.lang.String):org.apache.log4j.Logger" resolve="getLogger" />
-                    <ref role="1Pybhc" to="ajxo:~Logger" resolve="Logger" />
+                    <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.String):org.apache.log4j.Logger" resolve="getLogger" />
+                    <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
                     <node concept="Xl_RD" id="4izrigqu37q" role="37wK5m">
                       <property role="Xl_RC" value="StateMachine_Editor_SubstituteNode" />
                     </node>
                   </node>
                   <node concept="liA8E" id="4izrigquwUv" role="2OqNvi">
-                    <ref role="37wK5l" to="ajxo:~Category.info(java.lang.Object):void" resolve="info" />
+                    <ref role="37wK5l" to="q7tw:~Category.info(java.lang.Object):void" resolve="info" />
                     <node concept="3cpWs3" id="4izrigqvsta" role="37wK5m">
                       <node concept="3oseBL" id="4izrigqvtUQ" role="3uHU7w" />
                       <node concept="3cpWs3" id="4izrigqvhOY" role="3uHU7B">
@@ -3493,14 +3506,14 @@
             <node concept="3clFbF" id="40oIQyIfKs4" role="3cqZAp">
               <node concept="2OqwBi" id="40oIQyImA80" role="3clFbG">
                 <node concept="2YIFZM" id="40oIQyIfLcd" role="2Oq$k0">
-                  <ref role="37wK5l" to="ajxo:~Logger.getLogger(java.lang.String):org.apache.log4j.Logger" resolve="getLogger" />
-                  <ref role="1Pybhc" to="ajxo:~Logger" resolve="Logger" />
+                  <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.String):org.apache.log4j.Logger" resolve="getLogger" />
+                  <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
                   <node concept="Xl_RD" id="40oIQyImuOD" role="37wK5m">
                     <property role="Xl_RC" value="DecTab Substitute" />
                   </node>
                 </node>
                 <node concept="liA8E" id="40oIQyImBwi" role="2OqNvi">
-                  <ref role="37wK5l" to="ajxo:~Category.info(java.lang.Object):void" resolve="info" />
+                  <ref role="37wK5l" to="q7tw:~Category.info(java.lang.Object):void" resolve="info" />
                   <node concept="3cpWs3" id="40oIQyIgAkQ" role="37wK5m">
                     <node concept="3oseBL" id="40oIQyIgC8d" role="3uHU7w" />
                     <node concept="3cpWs3" id="40oIQyIgv58" role="3uHU7B">

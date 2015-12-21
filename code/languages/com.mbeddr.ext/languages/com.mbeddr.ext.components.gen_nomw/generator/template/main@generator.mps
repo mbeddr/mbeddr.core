@@ -50,9 +50,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -275,6 +272,7 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
+        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
@@ -297,6 +295,9 @@
       </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
+      </concept>
+      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
+        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
       </concept>
       <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
@@ -1584,6 +1585,9 @@
   <node concept="bUwia" id="5oFMniD58l_">
     <property role="TrG5h" value="ppc" />
     <property role="3GE5qa" value="ppc" />
+    <node concept="CY16f" id="7RL_RDaSxuK" role="CYSdJ">
+      <ref role="CY16a" to="p7vm:3KKPUg5xkSt" resolve="RunnableProcessed" />
+    </node>
     <node concept="1puMqW" id="vMpGaWkeBT" role="1puA0r">
       <ref role="1puQsG" node="5oFMniD6Feb" resolve="addReturnAtEndOfVoidRunnable" />
     </node>
@@ -9472,8 +9476,10 @@
               <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
             </node>
           </node>
-          <node concept="u8gfJ" id="4PVmln3n1Se" role="3cqZAp">
-            <node concept="3cpWs8" id="2mhTzLINf7v" role="u8lrQ">
+          <node concept="1X3_iC" id="3AWqwDsprpb" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs8" id="2mhTzLINf7v" role="8Wnug">
               <node concept="3cpWsn" id="2mhTzLINf7w" role="3cpWs9">
                 <property role="TrG5h" value="wireStatically" />
                 <node concept="10P_77" id="2mhTzLINf7x" role="1tU5fm" />
@@ -9484,7 +9490,11 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2mhTzLINf7$" role="u8lrQ">
+          </node>
+          <node concept="1X3_iC" id="3AWqwDsprpc" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="2mhTzLINf7$" role="8Wnug">
               <node concept="1Wc70l" id="2mhTzLIQiT4" role="3clFbG">
                 <node concept="3clFbC" id="2mhTzLINf7C" role="3uHU7w">
                   <node concept="10Nm6u" id="2mhTzLINf7D" role="3uHU7w" />
@@ -9867,8 +9877,10 @@
               <property role="3SKdUp" value="TODO: works only if expression inside multiport access ist statically evaluatable" />
             </node>
           </node>
-          <node concept="u8gfJ" id="4PVmln3ogNy" role="3cqZAp">
-            <node concept="3cpWs8" id="2mhTzLIXS$F" role="u8lrQ">
+          <node concept="1X3_iC" id="3AWqwDsprpd" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs8" id="2mhTzLIXS$F" role="8Wnug">
               <node concept="3cpWsn" id="2mhTzLIXS$G" role="3cpWs9">
                 <property role="TrG5h" value="wireStatically" />
                 <node concept="10P_77" id="2mhTzLIXS$H" role="1tU5fm" />
@@ -9879,7 +9891,11 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2mhTzLIXS$K" role="u8lrQ">
+          </node>
+          <node concept="1X3_iC" id="3AWqwDsprpe" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="2mhTzLIXS$K" role="8Wnug">
               <node concept="22lmx$" id="2mhTzLIXS$L" role="3clFbG">
                 <node concept="3fqX7Q" id="2mhTzLIXS$M" role="3uHU7B">
                   <node concept="3cpWsa" id="2mhTzLIXS$N" role="3fr31v">

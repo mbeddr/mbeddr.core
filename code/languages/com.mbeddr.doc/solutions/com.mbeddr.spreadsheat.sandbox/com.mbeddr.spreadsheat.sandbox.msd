@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <usedLanguages>
-    <usedLanguage>1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</usedLanguage>
-  </usedLanguages>
   <languageVersions>
     <language id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" fqName="com.mbeddr.spreadsheat" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />

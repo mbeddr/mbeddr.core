@@ -48,9 +48,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -321,6 +318,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
@@ -3605,13 +3609,19 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="2qwvqnUEyGN" role="3cqZAp" />
-                <node concept="u8gfJ" id="2qwvqnUCW4n" role="3cqZAp">
-                  <node concept="3SKdUt" id="2qwvqnUFNx0" role="u8lrQ">
+                <node concept="1X3_iC" id="3AWqwDsprOF" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3SKdUt" id="2qwvqnUFNx0" role="8Wnug">
                     <node concept="3SKdUq" id="2qwvqnUFO5f" role="3SKWNk">
                       <property role="3SKdUp" value="old code" />
                     </node>
                   </node>
-                  <node concept="3clFbF" id="3ejBUtVm4pr" role="u8lrQ">
+                </node>
+                <node concept="1X3_iC" id="3AWqwDsprOG" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbF" id="3ejBUtVm4pr" role="8Wnug">
                     <node concept="37vLTI" id="3ejBUtVm4ps" role="3clFbG">
                       <node concept="2OqwBi" id="3ejBUtVm4pt" role="37vLTJ">
                         <node concept="2GrUjf" id="3ejBUtVm4pu" role="2Oq$k0">
@@ -3626,7 +3636,11 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="3KKPUg5Deoo" role="u8lrQ">
+                </node>
+                <node concept="1X3_iC" id="3AWqwDsprOH" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbF" id="3KKPUg5Deoo" role="8Wnug">
                     <node concept="2OqwBi" id="3KKPUg5Dffu" role="3clFbG">
                       <node concept="2OqwBi" id="3KKPUg5Dew5" role="2Oq$k0">
                         <node concept="2GrUjf" id="3KKPUg5Deom" role="2Oq$k0">

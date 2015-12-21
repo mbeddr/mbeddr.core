@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -412,8 +412,8 @@
         <node concept="3cpWs8" id="5lTqPuSdcYe" role="3cqZAp">
           <node concept="3cpWsn" id="5lTqPuSdcYf" role="3cpWs9">
             <property role="TrG5h" value="editorCell" />
-            <node concept="3uibUv" id="53UazCqipeL" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+            <node concept="3uibUv" id="3$dAZlRFUhA" role="1tU5fm">
+              <ref role="3uigEE" to="93vl:7cgOZHrhAS_" resolve="EditorCell_Multiline" />
             </node>
             <node concept="2YIFZM" id="5lTqPuSdcYj" role="33vP2m">
               <ref role="1Pybhc" to="93vl:7cgOZHrhAS_" resolve="EditorCell_Multiline" />
@@ -426,6 +426,19 @@
               </node>
               <node concept="1rXfSq" id="1rfeXz7xsd6" role="37wK5m">
                 <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3$dAZlRFUDx" role="3cqZAp">
+          <node concept="2OqwBi" id="3$dAZlRFUQ9" role="3clFbG">
+            <node concept="37vLTw" id="3$dAZlRFUDv" role="2Oq$k0">
+              <ref role="3cqZAo" node="5lTqPuSdcYf" resolve="editorCell" />
+            </node>
+            <node concept="liA8E" id="3$dAZlRFVHf" role="2OqNvi">
+              <ref role="37wK5l" to="93vl:3$dAZlRF86Z" resolve="setPlaceholderText" />
+              <node concept="37vLTw" id="3$dAZlRFW1U" role="37wK5m">
+                <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myNoTargetText" resolve="myNoTargetText" />
               </node>
             </node>
           </node>

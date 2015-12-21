@@ -163,6 +163,10 @@
     <node concept="PrWs8" id="1CDgnklRkUA" role="PzmwI">
       <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
     </node>
+    <node concept="1TJgyi" id="1MpR5BkUKkW" role="1TKVEl">
+      <property role="TrG5h" value="forceAbstract" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7diJr$Rulsw">
     <property role="TrG5h" value="IViewElement" />

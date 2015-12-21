@@ -2,7 +2,7 @@
 <model ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:c473d4a9-f86e-463a-bf76-f8263f085aec(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -51,6 +51,11 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="4XCJ8CcQ6UK">
     <ref role="1XX52x" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
@@ -90,14 +95,8 @@
         <node concept="3F0ifn" id="4XCJ8CcQ6Xd" role="3EZMnx">
           <property role="3F0ifm" value="starting module:" />
         </node>
-        <node concept="1iCGBv" id="4XCJ8CcQjIJ" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:4XCJ8CcQh9w" />
-          <node concept="1sVBvm" id="4XCJ8CcQjIK" role="1sWHZn">
-            <node concept="3F0A7n" id="4XCJ8CcQjIS" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
+        <node concept="3F1sOY" id="2A9nHKANPHC" role="3EZMnx">
+          <ref role="1NtTu8" to="gfdq:2A9nHKANPH8" />
         </node>
         <node concept="l2Vlx" id="4XCJ8CcQ6WG" role="2iSdaV" />
       </node>
@@ -219,6 +218,25 @@
     <ref role="1XX52x" to="gfdq:5aWlhTu2ZzL" resolve="LanguagePrefix" />
     <node concept="3F0A7n" id="5aWlhTu2ZBB" role="2wV5jI">
       <ref role="1NtTu8" to="gfdq:5aWlhTu2Z$m" resolve="prefix" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2A9nHKANPHS">
+    <property role="3GE5qa" value="seed" />
+    <ref role="1XX52x" to="gfdq:2A9nHKANPGv" resolve="SingleModelSeed" />
+    <node concept="3EZMnI" id="2A9nHKANPHU" role="2wV5jI">
+      <node concept="3F0ifn" id="2A9nHKANPI7" role="3EZMnx">
+        <property role="3F0ifm" value="single seed:" />
+      </node>
+      <node concept="1iCGBv" id="2A9nHKANPIj" role="3EZMnx">
+        <ref role="1NtTu8" to="gfdq:2A9nHKANPGS" />
+        <node concept="1sVBvm" id="2A9nHKANPIl" role="1sWHZn">
+          <node concept="3F0A7n" id="2A9nHKANPI_" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2A9nHKANPHX" role="2iSdaV" />
     </node>
   </node>
 </model>

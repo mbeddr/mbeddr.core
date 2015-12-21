@@ -58,6 +58,9 @@
     <zip destfile="${build.layout}/repo/de.itemis.mps.tooltips-${versionNumber}.zip">
       <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.tooltips" prefix="de.itemis.mps.tooltips" />
     </zip>
+    <zip destfile="${build.layout}/repo/de.slisson.mps.pluginrepo-${versionNumber}.zip">
+      <zipfileset dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.pluginrepo" prefix="de.slisson.mps.pluginrepo" />
+    </zip>
     <echoxml file="${build.layout}/repo/repo.xml">
       <plugin-repository>
         
@@ -67,7 +70,7 @@
             <name>de.slisson.mps.all</name>
             <id>de.slisson.mps.all</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <download-url>http://slisson.de/mps/repo/de.slisson.mps.all-${versionNumber}.zip</download-url>
@@ -76,7 +79,7 @@
             <name>de.itemis.mps.nativelibs</name>
             <id>de.itemis.mps.nativelibs</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <download-url>http://slisson.de/mps/repo/de.itemis.mps.nativelibs-${versionNumber}.zip</download-url>
@@ -85,7 +88,7 @@
             <name>Apache Commons Library</name>
             <id>org.apache.commons</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <download-url>http://slisson.de/mps/repo/org.apache.commons-${versionNumber}.zip</download-url>
@@ -94,7 +97,7 @@
             <name>de.itemis.mps.editor.diagram</name>
             <id>de.itemis.mps.editor.diagram</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>de.slisson.mps.hacks</depends>
             <depends>org.apache.commons</depends>
@@ -102,13 +105,14 @@
             <depends>de.itemis.mps.tooltips</depends>
             <depends>de.itemis.mps.editor.widgets</depends>
             <depends>de.itemis.mps.selection</depends>
+            <depends>de.slisson.mps.conditionalEditor</depends>
             <download-url>http://slisson.de/mps/repo/de.itemis.mps.editor.diagram-${versionNumber}.zip</download-url>
           </idea-plugin>
           <idea-plugin>
             <name>de.itemis.mps.editor.layout</name>
             <id>de.itemis.mps.editor.layout</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>de.slisson.mps.hacks</depends>
             <download-url>http://slisson.de/mps/repo/de.itemis.mps.editor.layout-${versionNumber}.zip</download-url>
@@ -117,7 +121,7 @@
             <name>MPS Multiline Property Editor Component</name>
             <id>de.slisson.mps.editor.multiline</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <depends>de.itemis.mps.selection</depends>
@@ -127,7 +131,7 @@
             <name>MPS Richtext Editor Component</name>
             <id>de.slisson.mps.richtext</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.build</depends>
             <depends>jetbrains.mps.core</depends>
             <depends>de.slisson.mps.editor.multiline</depends>
@@ -138,7 +142,7 @@
             <name>MPS Editor Widgets</name>
             <id>de.itemis.mps.editor.widgets</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <depends>de.slisson.mps.hacks</depends>
@@ -149,7 +153,7 @@
             <name>MPS Math Editor</name>
             <id>de.itemis.mps.editor.math</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <download-url>http://slisson.de/mps/repo/de.itemis.mps.editor.math-${versionNumber}.zip</download-url>
@@ -158,7 +162,7 @@
             <name>MPS Table Editor Component</name>
             <id>de.slisson.mps.tables</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>jetbrains.mps.build</depends>
             <depends>com.intellij.modules.mps</depends>
@@ -169,7 +173,7 @@
             <name>Mouse Selection Support</name>
             <id>de.itemis.mps.selection</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <download-url>http://slisson.de/mps/repo/de.itemis.mps.selection-${versionNumber}.zip</download-url>
           </idea-plugin>
@@ -177,7 +181,7 @@
             <name>de.slisson.mps.conditionalEditor</name>
             <id>de.slisson.mps.conditionalEditor</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>de.slisson.mps.hacks</depends>
             <download-url>http://slisson.de/mps/repo/de.slisson.mps.conditionalEditor-${versionNumber}.zip</download-url>
@@ -186,7 +190,7 @@
             <name>de.slisson.mps.hacks</name>
             <id>de.slisson.mps.hacks</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <download-url>http://slisson.de/mps/repo/de.slisson.mps.hacks-${versionNumber}.zip</download-url>
           </idea-plugin>
@@ -194,10 +198,19 @@
             <name>de.itemis.mps.tooltips</name>
             <id>de.itemis.mps.tooltips</id>
             <version>${versionNumber}</version>
-            <idea-version since-build="141.1914" until-build="141.1914"></idea-version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
             <depends>jetbrains.mps.core</depends>
             <depends>de.slisson.mps.hacks</depends>
             <download-url>http://slisson.de/mps/repo/de.itemis.mps.tooltips-${versionNumber}.zip</download-url>
+          </idea-plugin>
+          <idea-plugin>
+            <name>de.slisson.mps.pluginrepo</name>
+            <id>de.slisson.mps.pluginrepo</id>
+            <version>${versionNumber}</version>
+            <idea-version since-build="143.527" until-build="143.527"></idea-version>
+            <depends>jetbrains.mps.core</depends>
+            <depends>jetbrains.mps.build</depends>
+            <download-url>http://slisson.de/mps/repo/de.slisson.mps.pluginrepo-${versionNumber}.zip</download-url>
           </idea-plugin>
         </category>
       </plugin-repository>

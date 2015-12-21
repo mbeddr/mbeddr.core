@@ -857,18 +857,6 @@
       <ref role="20lvS9" node="3CmSUB7Fp_l" resolve="StatementList" />
     </node>
   </node>
-  <node concept="1TIwiD" id="58TcxRGrgC2">
-    <property role="3GE5qa" value="loopsNStuff" />
-    <property role="TrG5h" value="AdditionalForVarDecl" />
-    <property role="1pbfSe" value="1051081759" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="58TcxRGrgC3" role="PzmwI">
-      <ref role="PrY4T" node="3hOuikE$B96" resolve="Iterator" />
-    </node>
-    <node concept="PrWs8" id="58TcxRGrgCb" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="cwSfPzy1fj">
     <property role="3GE5qa" value="if" />
     <property role="TrG5h" value="CommentedElseIfPart" />

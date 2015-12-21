@@ -3,9 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="dc1e48dd-9462-45bd-b16c-fb5ec3fdb3bb" name="com.mbeddr.mpsutil.compare.pattern.generator" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -44,10 +41,6 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -609,21 +602,11 @@
               <node concept="2YIFZM" id="7eUZPevAJcV" role="3clFbG">
                 <ref role="37wK5l" to="xpog:d5uH5c3bBH" resolve="safeGet" />
                 <ref role="1Pybhc" to="xpog:d5uH5c3bAI" resolve="Runtime" />
-                <node concept="10QFUN" id="6ClmpmuhC6y" role="37wK5m">
-                  <node concept="3uibUv" id="6ClmpmuhC6w" role="10QFUM">
-                    <ref role="3uigEE" to="xpog:4AFyx2s3BGL" resolve="MatchResult" />
-                  </node>
-                  <node concept="2OqwBi" id="6ClmpmuhAyI" role="10QFUP">
-                    <node concept="37vLTw" id="6ClmpmuhAq1" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6Clmpmuh$Np" resolve="_context" />
-                    </node>
-                    <node concept="liA8E" id="6ClmpmuhARt" role="2OqNvi">
-                      <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getStepObject(java.lang.Object):java.lang.Object" resolve="getStepObject" />
-                      <node concept="10M0yZ" id="5dYb5krQf4u" role="37wK5m">
-                        <ref role="1PxDUh" to="6mqi:6ClmpmugRzP" resolve="GeneratorUtils" />
-                        <ref role="3cqZAo" to="6mqi:5dYb5krQecE" resolve="MATCH_RESULT" />
-                      </node>
-                    </node>
+                <node concept="2YIFZM" id="7P2BN5H766h" role="37wK5m">
+                  <ref role="37wK5l" to="6mqi:7P2BN5H75QW" resolve="GetResultFromContext" />
+                  <ref role="1Pybhc" to="6mqi:6ClmpmugRzP" resolve="GeneratorUtils" />
+                  <node concept="37vLTw" id="7P2BN5H76h3" role="37wK5m">
+                    <ref role="3cqZAo" node="6Clmpmuh$Np" resolve="_context" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="7eUZPevAJdO" role="37wK5m">
@@ -856,23 +839,18 @@
           </node>
           <node concept="raruj" id="6ClmpmueTmU" role="lGtFl" />
         </node>
-        <node concept="3clFbF" id="6ClmpmugwD_" role="3cqZAp">
-          <node concept="2OqwBi" id="6ClmpmugwGr" role="3clFbG">
-            <node concept="37vLTw" id="6ClmpmugwDz" role="2Oq$k0">
+        <node concept="3clFbF" id="7P2BN5H72$z" role="3cqZAp">
+          <node concept="2YIFZM" id="7P2BN5H72Gs" role="3clFbG">
+            <ref role="37wK5l" to="6mqi:7P2BN5H6MSL" resolve="AddResultToContext" />
+            <ref role="1Pybhc" to="6mqi:6ClmpmugRzP" resolve="GeneratorUtils" />
+            <node concept="37vLTw" id="7P2BN5H72KE" role="37wK5m">
               <ref role="3cqZAo" node="6Clmpmugwxp" resolve="_context" />
             </node>
-            <node concept="liA8E" id="6ClmpmugwKW" role="2OqNvi">
-              <ref role="37wK5l" to="q1l7:~TemplateQueryContext.putStepObject(java.lang.Object,java.lang.Object):java.lang.Object" resolve="putStepObject" />
-              <node concept="10M0yZ" id="5dYb5krQemO" role="37wK5m">
-                <ref role="1PxDUh" to="6mqi:6ClmpmugRzP" resolve="GeneratorUtils" />
-                <ref role="3cqZAo" to="6mqi:5dYb5krQecE" resolve="MATCH_RESULT" />
-              </node>
-              <node concept="37vLTw" id="6ClmpmugwSF" role="37wK5m">
-                <ref role="3cqZAo" node="6ClmpmueT6C" resolve="result" />
-              </node>
+            <node concept="37vLTw" id="7P2BN5H72Mo" role="37wK5m">
+              <ref role="3cqZAo" node="6ClmpmueT6C" resolve="result" />
             </node>
           </node>
-          <node concept="raruj" id="6ClmpmugzFG" role="lGtFl" />
+          <node concept="raruj" id="7P2BN5H72Xc" role="lGtFl" />
         </node>
         <node concept="3cpWs6" id="6ClmpmueTuK" role="3cqZAp">
           <node concept="2OqwBi" id="6ClmpmueTD8" role="3cqZAk">
