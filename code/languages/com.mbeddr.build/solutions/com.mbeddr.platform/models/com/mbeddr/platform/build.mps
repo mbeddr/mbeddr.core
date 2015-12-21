@@ -710,6 +710,78 @@
               <ref role="3bR37D" to="ffeo:7YI57w6K0nr" resolve="jetbrains.mps.lang.plugin#1203080439937" />
             </node>
           </node>
+          <node concept="1SiIV0" id="78gmXoW84J9" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Ja" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jb" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Jc" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KZ0" resolve="jetbrains.mps.baseLanguageInternal" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jd" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Je" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jf" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Jg" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jh" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Ji" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jj" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Jk" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jl" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Jm" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6Kc$w" resolve="jetbrains.mps.lang.plugin.standalone#481983775135098857" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jn" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Jo" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jp" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Jq" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:2eDSGe9d1pJ" resolve="jetbrains.mps.lang.plugin.standalone" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jr" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Js" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="78gmXoW84Jt" role="3bR37C">
+            <node concept="3bR9La" id="78gmXoW84Ju" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="3kpOq3Q2KtL" resolve="com.mbeddr.mpsutil.lang.plugin.extensions" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="78gmXoW84J7" role="3bR37C">
+          <node concept="3bR9La" id="78gmXoW84J8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="VC7Rv4v0AU" role="2G$12L">
