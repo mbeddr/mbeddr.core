@@ -65,6 +65,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
+    <import index="e4sx" ref="r:61fb604a-2ab8-423c-94bd-dec61f3a6b61(com.mbeddr.mpsutil.lang.plugin.extensions.dummy)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -73,6 +74,7 @@
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
@@ -86,7 +88,6 @@
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1205160812895" name="mnemonic" index="2pbE17" />
-        <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -6585,10 +6586,10 @@
   <node concept="tC5Ba" id="2YKCKZ22MXe">
     <property role="3GE5qa" value="wizards" />
     <property role="TrG5h" value="mbeddrNewWizards" />
-    <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="New" />
     <property role="2pbE17" value="n" />
     <node concept="ftmFs" id="2YKCKZ22N3L" role="ftER_">
+      <node concept="2a7GMi" id="eRZjv$U_OF" role="ftvYc" />
       <node concept="tCFHf" id="2YKCKZ22N3P" role="ftvYc">
         <ref role="tCJdB" node="7sfu2B6B1Zz" resolve="createNewMbeddrSolution" />
       </node>
@@ -6596,10 +6597,11 @@
         <ref role="tCJdB" node="2cNe_D15R0j" resolve="createNewMbeddrProject" />
       </node>
     </node>
-    <node concept="2Zfapc" id="4FCdWxTJ0dE" role="2f5YQi">
-      <property role="2Zfap_" value="FileOpenGroup" />
-      <property role="30T2Og" value="OpenFile" />
-      <property role="2Sq25q" value="2" />
+    <node concept="2Zfapc" id="eRZjv$WZnN" role="2f5YQi">
+      <property role="2Zfap_" value="NewProjectOrModuleGroup" />
+      <property role="30T2Og" value="NewProject" />
+      <property role="2Sq25q" value="3" />
+      <ref role="tU$_T" to="e4sx:eRZjv$WKyw" resolve="dummy" />
     </node>
   </node>
   <node concept="UJCsY" id="7sfu2B6BEb_">
