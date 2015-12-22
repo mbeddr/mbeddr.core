@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
+    <import index="31w4" ref="r:4a507c26-8937-4800-9fc0-b1f57bd47387(com.mbeddr.analyses.utils.call_graph)" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -25,12 +26,23 @@
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
   <node concept="2DaZZR" id="3Hq87cj$2Yi" />
   <node concept="vrV6u" id="58S6eLQM0$n">
     <property role="20vvCb" value="ToolsSanityCheckerProvider" />
     <node concept="3uibUv" id="7GloF9XTjPA" role="luc8K">
       <ref role="3uigEE" to="8e9v:7GloF9XTgpa" resolve="ToolsAvailabilityChecker" />
+    </node>
+  </node>
+  <node concept="vrV6u" id="6lrp79e8eP0">
+    <property role="TrG5h" value="AccessibleCodeProvider" />
+    <node concept="3uibUv" id="6lrp79e8eXT" role="luc8K">
+      <ref role="3uigEE" to="31w4:6lrp79e8eKO" resolve="IAccessibleCodeCollector" />
     </node>
   </node>
 </model>

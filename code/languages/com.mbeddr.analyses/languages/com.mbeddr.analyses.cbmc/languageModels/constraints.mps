@@ -64,9 +64,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
-        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -111,14 +108,20 @@
     <ref role="1M2myG" to="q5q6:7MOa6vKJ9cQ" resolve="GuardedNonDeterministicChoice" />
     <node concept="nKS2y" id="7MOa6vKJtQq" role="1MLUbF">
       <node concept="3clFbS" id="7MOa6vKJtQr" role="2VODD2">
-        <node concept="3clFbF" id="7MOa6vKJtQs" role="3cqZAp">
-          <node concept="2OqwBi" id="7MOa6vKJtQI" role="3clFbG">
-            <node concept="nLn13" id="7MOa6vKJtQt" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="7MOa6vKJtQN" role="2OqNvi">
-              <node concept="chp4Y" id="7DvJ5MZ4ZBe" role="cj9EA">
-                <ref role="cht4Q" to="q5q6:7DvJ5MZ1ag1" resolve="IHarnessLike" />
+        <node concept="3clFbF" id="694Tbl9d$Oz" role="3cqZAp">
+          <node concept="2OqwBi" id="694Tbl9d_EB" role="3clFbG">
+            <node concept="2OqwBi" id="694Tbl9d$RD" role="2Oq$k0">
+              <node concept="nLn13" id="694Tbl9d$Ox" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="694Tbl9d__0" role="2OqNvi">
+                <node concept="1xMEDy" id="694Tbl9d__2" role="1xVPHs">
+                  <node concept="chp4Y" id="694Tbl9d_Bh" role="ri$Ld">
+                    <ref role="cht4Q" to="q5q6:7DvJ5MZ1ag1" resolve="IHarnessLike" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="694Tbl9dCo2" role="1xVPHs" />
               </node>
             </node>
+            <node concept="3x8VRR" id="694Tbl9d_LD" role="2OqNvi" />
           </node>
         </node>
       </node>

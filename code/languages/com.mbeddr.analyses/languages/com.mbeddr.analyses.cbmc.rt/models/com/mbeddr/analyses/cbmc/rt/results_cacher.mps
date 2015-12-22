@@ -85,6 +85,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -701,16 +704,21 @@
               </node>
               <node concept="3GX2aA" id="5$pwnI0_4TL" role="2OqNvi" />
             </node>
-            <node concept="3y3z36" id="7kzfSagM4b4" role="3uHU7B">
-              <node concept="3EllGN" id="7kzfSagM3Sv" role="3uHU7B">
-                <node concept="37vLTw" id="7kzfSagM3UK" role="3ElVtu">
-                  <ref role="3cqZAo" node="7kzfSagLdiJ" resolve="n" />
-                </node>
-                <node concept="37vLTw" id="7kzfSagM3BH" role="3ElQJh">
-                  <ref role="3cqZAo" node="3ASzZs53yp5" resolve="results" />
-                </node>
+            <node concept="1Wc70l" id="1H8VqTw0LI0" role="3uHU7B">
+              <node concept="37vLTw" id="1H8VqTw0LLh" role="3uHU7B">
+                <ref role="3cqZAo" node="1H8VqTw0LkH" resolve="editorMarkingEnabled" />
               </node>
-              <node concept="10Nm6u" id="7kzfSagM4dg" role="3uHU7w" />
+              <node concept="3y3z36" id="7kzfSagM4b4" role="3uHU7w">
+                <node concept="3EllGN" id="7kzfSagM3Sv" role="3uHU7B">
+                  <node concept="37vLTw" id="7kzfSagM3UK" role="3ElVtu">
+                    <ref role="3cqZAo" node="7kzfSagLdiJ" resolve="n" />
+                  </node>
+                  <node concept="37vLTw" id="7kzfSagM3BH" role="3ElQJh">
+                    <ref role="3cqZAo" node="3ASzZs53yp5" resolve="results" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="7kzfSagM4dg" role="3uHU7w" />
+              </node>
             </node>
           </node>
         </node>
@@ -747,6 +755,48 @@
       </node>
     </node>
     <node concept="2tJIrI" id="148xcJ45UOj" role="jymVt" />
+    <node concept="Wx3nA" id="1H8VqTw0LkH" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="editorMarkingEnabled" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1H8VqTw0L8c" role="1B3o_S" />
+      <node concept="10P_77" id="1H8VqTw0LkD" role="1tU5fm" />
+      <node concept="3clFbT" id="1H8VqTw0Lyb" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
+      <node concept="NWlO9" id="1H8VqTw0LBQ" role="lGtFl">
+        <property role="NWlVz" value="Should we display the marking in the editor?" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1H8VqTw0KVp" role="jymVt" />
+    <node concept="2YIFZL" id="1H8VqTw0Kwd" role="jymVt">
+      <property role="TrG5h" value="toggleEditorMarkings" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1H8VqTw0Kwg" role="3clF47">
+        <node concept="3clFbF" id="1H8VqTw0Lzq" role="3cqZAp">
+          <node concept="37vLTI" id="1H8VqTw0L_V" role="3clFbG">
+            <node concept="37vLTw" id="1H8VqTw0LBv" role="37vLTx">
+              <ref role="3cqZAo" node="1H8VqTw0KHC" resolve="markingsEnabled" />
+            </node>
+            <node concept="37vLTw" id="1H8VqTw0Lzp" role="37vLTJ">
+              <ref role="3cqZAo" node="1H8VqTw0LkH" resolve="editorMarkingEnabled" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1H8VqTw0Kk4" role="1B3o_S" />
+      <node concept="3cqZAl" id="1H8VqTw0Kw9" role="3clF45" />
+      <node concept="37vLTG" id="1H8VqTw0KHC" role="3clF46">
+        <property role="TrG5h" value="markingsEnabled" />
+        <node concept="10P_77" id="1H8VqTw0KHB" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="1H8VqTw0KV4" role="lGtFl">
+        <property role="NWlVz" value="Inhibits/Allows marking of results in the editor." />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="3ASzZs53yna" role="1B3o_S" />
     <node concept="NWlO9" id="148xcJ461dx" role="lGtFl">
       <property role="NWlVz" value="Cache for the analyses results." />

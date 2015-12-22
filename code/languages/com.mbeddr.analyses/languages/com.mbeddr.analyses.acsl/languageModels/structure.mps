@@ -8,8 +8,8 @@
   <imports>
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -22,6 +22,8 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -192,6 +194,44 @@
     <node concept="PrWs8" id="41uzL3EMZQM" role="PzmwI">
       <ref role="PrY4T" node="41uzL3EMZP6" resolve="IFunctionContractMember" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5OLOS2sQlgV">
+    <property role="1pbfSe" value="99932229" />
+    <property role="TrG5h" value="ACSLContractsGenerationConfigItem" />
+    <property role="34LRSv" value="ACSL contracts" />
+    <property role="3GE5qa" value="config_item" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5OLOS2sQzpO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="generationKind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5OLOS2sQlhp" resolve="ACSLContractGenerationStrategyBase" />
+    </node>
+    <node concept="PrWs8" id="5OLOS2sQlgW" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5OLOS2sQlhp">
+    <property role="1pbfSe" value="99932199" />
+    <property role="3GE5qa" value="config_item" />
+    <property role="TrG5h" value="ACSLContractGenerationStrategyBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5OLOS2sQlhq">
+    <property role="1pbfSe" value="99932198" />
+    <property role="3GE5qa" value="config_item" />
+    <property role="TrG5h" value="ACSLContractsGenerationAsText" />
+    <property role="34LRSv" value="ACSL-style textual documentation" />
+    <ref role="1TJDcQ" node="5OLOS2sQlhp" resolve="ACSLContractGenerationStrategyBase" />
+  </node>
+  <node concept="1TIwiD" id="5OLOS2sRFnL">
+    <property role="1pbfSe" value="99579535" />
+    <property role="3GE5qa" value="config_item" />
+    <property role="TrG5h" value="ACSLContractsGenerationDoNothing" />
+    <property role="34LRSv" value="do nothing" />
+    <ref role="1TJDcQ" node="5OLOS2sQlhp" resolve="ACSLContractGenerationStrategyBase" />
   </node>
 </model>
 

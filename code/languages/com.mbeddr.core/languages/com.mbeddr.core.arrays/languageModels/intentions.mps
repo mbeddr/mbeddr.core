@@ -12,6 +12,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -36,6 +37,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
@@ -56,16 +60,19 @@
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -122,6 +129,23 @@
         </node>
       </node>
     </node>
+    <node concept="2SaL7w" id="5IEKNgLLkLL" role="2ZfVeh">
+      <node concept="3clFbS" id="5IEKNgLLkLM" role="2VODD2">
+        <node concept="3clFbF" id="5IEKNgLLkPZ" role="3cqZAp">
+          <node concept="2OqwBi" id="5IEKNgLLlQ8" role="3clFbG">
+            <node concept="2OqwBi" id="5IEKNgLLl0$" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5IEKNgLLkPY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5IEKNgLLloN" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5IEKNgLLm0I" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:7qvNMV90Ws8" resolve="canBeUsedAsPointer" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2S6QgY" id="MD1ksBCtBQ">
     <property role="TrG5h" value="addArray2LocalVar" />
@@ -164,6 +188,23 @@
               <node concept="3TrEf2" id="MD1ksBCywg" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5PTmEnH06ih" role="2ZfVeh">
+      <node concept="3clFbS" id="5PTmEnH06ii" role="2VODD2">
+        <node concept="3clFbF" id="5PTmEnH06mW" role="3cqZAp">
+          <node concept="2OqwBi" id="5PTmEnH07Fr" role="3clFbG">
+            <node concept="2OqwBi" id="5PTmEnH06xx" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5PTmEnH06mV" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5PTmEnH07g_" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5PTmEnH07Q_" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:7qvNMV90Ws8" resolve="canBeUsedAsPointer" />
             </node>
           </node>
         </node>

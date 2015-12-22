@@ -72,6 +72,10 @@
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
       </concept>
       <concept id="3793213301909615745" name="com.mbeddr.analyses.acsl.structure.Requires" flags="ng" index="2HfWvB" />
+      <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
+        <child id="6715381068726941300" name="generationKind" index="31UYnO" />
+      </concept>
+      <concept id="6715381068726883418" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationAsText" flags="ng" index="31U8vq" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -240,6 +244,9 @@
     </node>
     <node concept="2Q9Fgs" id="10dmWHgy0vk" role="2Q9xDr">
       <node concept="2Q9FjX" id="10dmWHgy0vl" role="2Q9FjI" />
+    </node>
+    <node concept="31U8uV" id="5OLOS2sRZrI" role="2Q9xDr">
+      <node concept="31U8vq" id="5OLOS2sRZrT" role="31UYnO" />
     </node>
     <node concept="29Nb31" id="10dmWHgy0vq" role="2ePNbc">
       <property role="TrG5h" value="lib" />

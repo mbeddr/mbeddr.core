@@ -23,6 +23,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="31w4" ref="r:4a507c26-8937-4800-9fc0-b1f57bd47387(com.mbeddr.analyses.utils.call_graph)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -480,8 +481,8 @@
                 </node>
                 <node concept="X8dFx" id="HiHa_$n$$G" role="2OqNvi">
                   <node concept="NRdvd" id="HiHa_$n$$H" role="25WWJ7">
-                    <ref role="1Pybhc" to="8fsg:2cY39x2216p" resolve="CallGraphUtils" />
-                    <ref role="37wK5l" to="8fsg:2cY39x22172" resolve="collectRecursivelyCalledFunctions" />
+                    <ref role="1Pybhc" to="31w4:2cY39x2216p" resolve="CallGraphUtils" />
+                    <ref role="37wK5l" to="31w4:2cY39x22172" resolve="collectRecursivelyCalledFunctions" />
                     <node concept="1PxgMI" id="HiHa_$n$$I" role="37wK5m">
                       <ref role="1PxNhF" to="x27k:5_l8w1EmTvx" resolve="Function" />
                       <node concept="2OqwBi" id="HiHa_$n$$J" role="1PxMeX">

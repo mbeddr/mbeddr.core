@@ -11,6 +11,7 @@
   </usedDevKits>
   <languageVersions>
     <language id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" fqName="com.mbeddr.analyses.acsl" version="0" />
+    <language id="1a857f23-abc6-4154-8fb9-f23dbfc65145" fqName="com.mbeddr.analyses.acsl.assertions.gen" version="0" />
     <language id="f47ddd18-d113-4647-938b-1d9b2e1910dc" fqName="com.mbeddr.analyses.acsl.cbmc.gen" version="0" />
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" fqName="com.mbeddr.analyses.base" version="0" />
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" fqName="com.mbeddr.analyses.cbmc" version="0" />

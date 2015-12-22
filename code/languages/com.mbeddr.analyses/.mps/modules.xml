@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.assertions.gen/com.mbeddr.analyses.acsl.assertions.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.cbmc.gen/com.mbeddr.analyses.acsl.cbmc.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl/com.mbeddr.analyses.acsl.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />

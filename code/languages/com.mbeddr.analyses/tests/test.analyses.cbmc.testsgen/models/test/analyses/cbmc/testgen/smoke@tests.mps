@@ -6,8 +6,8 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -27,6 +27,10 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -44,6 +48,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -55,7 +60,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -260,6 +265,25 @@
             <property role="3cmrfH" value="2" />
           </node>
         </node>
+        <node concept="3clFbH" id="6tpIASsCHsx" role="3cqZAp" />
+        <node concept="3cpWs8" id="6tpIASsCHCU" role="3cqZAp">
+          <node concept="3cpWsn" id="6tpIASsCHCV" role="3cpWs9">
+            <property role="TrG5h" value="ttr1" />
+            <node concept="3uibUv" id="6tpIASsCHCW" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="NRdvd" id="6tpIASsCHCX" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="6tpIASsCHCY" role="37wK5m">
+                <ref role="3cqZAo" node="2jb6dmWQqjq" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="6tpIASsCHCZ" role="37wK5m">
+                <property role="Xl_RC" value="function branch2_simpleBranchNotTaken block 1 branch  taken" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3vwNmj" id="2jb6dmWQu4f" role="3cqZAp">
           <node concept="2OqwBi" id="2jb6dmWQu4g" role="3vwVQn">
             <node concept="2OqwBi" id="2jb6dmWQu4h" role="2Oq$k0">
@@ -277,17 +301,36 @@
             </node>
           </node>
         </node>
-        <node concept="3vwNmj" id="2jb6dmWQu4m" role="3cqZAp">
-          <node concept="2OqwBi" id="2jb6dmWQu4n" role="3vwVQn">
-            <node concept="2OqwBi" id="2jb6dmWQu4o" role="2Oq$k0">
-              <node concept="37vLTw" id="2jb6dmWQu4p" role="2Oq$k0">
+        <node concept="3clFbH" id="6tpIASsCHmg" role="3cqZAp" />
+        <node concept="3cpWs8" id="6tpIASsCH2o" role="3cqZAp">
+          <node concept="3cpWsn" id="6tpIASsCH2p" role="3cpWs9">
+            <property role="TrG5h" value="ttr2" />
+            <node concept="3uibUv" id="6tpIASsCH2q" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6tpIASsCHUg" role="3cqZAp">
+          <node concept="37vLTI" id="6tpIASsCHUi" role="3clFbG">
+            <node concept="NRdvd" id="6tpIASsCHkt" role="37vLTx">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="6tpIASsCHku" role="37wK5m">
                 <ref role="3cqZAo" node="2jb6dmWQqjq" resolve="results" />
               </node>
-              <node concept="34jXtK" id="2jb6dmWQu4q" role="2OqNvi">
-                <node concept="3cmrfG" id="2jb6dmWQu4r" role="25WWJ7">
-                  <property role="3cmrfH" value="1" />
-                </node>
+              <node concept="Xl_RD" id="6tpIASsCHkv" role="37wK5m">
+                <property role="Xl_RC" value="function branch2_simpleBranchNotTaken block 1 branch not taken" />
               </node>
+            </node>
+            <node concept="37vLTw" id="6tpIASsCHUm" role="37vLTJ">
+              <ref role="3cqZAo" node="6tpIASsCH2p" resolve="ttr2" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2jb6dmWQu4m" role="3cqZAp">
+          <node concept="2OqwBi" id="2jb6dmWQu4n" role="3vwVQn">
+            <node concept="37vLTw" id="6tpIASsCHk8" role="2Oq$k0">
+              <ref role="3cqZAo" node="6tpIASsCH2p" resolve="ttr2" />
             </node>
             <node concept="liA8E" id="2jb6dmWQu4s" role="2OqNvi">
               <ref role="37wK5l" to="mog:4QaxHTo8Q4V" resolve="propertyFails" />
