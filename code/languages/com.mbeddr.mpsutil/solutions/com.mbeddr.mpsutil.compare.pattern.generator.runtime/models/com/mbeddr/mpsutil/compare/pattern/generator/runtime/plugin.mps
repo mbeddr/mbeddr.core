@@ -2,12 +2,12 @@
 <model ref="r:74c995d3-66e7-4589-b2ce-24f3319e9c33(com.mbeddr.mpsutil.compare.pattern.generator.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -63,7 +63,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -214,6 +214,9 @@
                 <node concept="37vLTw" id="235WQ3Sf$oA" role="1Lso8e">
                   <ref role="3cqZAo" node="5dYb5krQecE" resolve="MATCH_RESULT" />
                 </node>
+                <node concept="37vLTw" id="2rSlnb0RGLM" role="1Lso8e">
+                  <ref role="3cqZAo" node="2rSlnb0RGBb" resolve="matchId" />
+                </node>
                 <node concept="2OqwBi" id="235WQ3Sf$Bo" role="1Lso8e">
                   <node concept="37vLTw" id="235WQ3Sf$$c" role="2Oq$k0">
                     <ref role="3cqZAo" node="7P2BN5H6NH5" resolve="_context" />
@@ -237,6 +240,10 @@
         <node concept="3uibUv" id="7P2BN5H8ch7" role="1tU5fm">
           <ref role="3uigEE" to="q1l7:~TemplateQueryContext" resolve="TemplateQueryContext" />
         </node>
+      </node>
+      <node concept="37vLTG" id="2rSlnb0RGBb" role="3clF46">
+        <property role="TrG5h" value="matchId" />
+        <node concept="17QB3L" id="2rSlnb0RGDS" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="7P2BN5H6Wzw" role="3clF46">
         <property role="TrG5h" value="result" />
@@ -263,6 +270,9 @@
                     <node concept="37vLTw" id="235WQ3Sf_ou" role="1Lso8e">
                       <ref role="3cqZAo" node="5dYb5krQecE" resolve="MATCH_RESULT" />
                     </node>
+                    <node concept="37vLTw" id="2rSlnb0RGRH" role="1Lso8e">
+                      <ref role="3cqZAo" node="2rSlnb0RGFh" resolve="matchId" />
+                    </node>
                     <node concept="2OqwBi" id="235WQ3Sf_ov" role="1Lso8e">
                       <node concept="37vLTw" id="235WQ3Sf_ow" role="2Oq$k0">
                         <ref role="3cqZAo" node="7P2BN5H74gJ" resolve="_context" />
@@ -286,6 +296,10 @@
         <node concept="3uibUv" id="7P2BN5H8clr" role="1tU5fm">
           <ref role="3uigEE" to="q1l7:~TemplateQueryContext" resolve="TemplateQueryContext" />
         </node>
+      </node>
+      <node concept="37vLTG" id="2rSlnb0RGFh" role="3clF46">
+        <property role="TrG5h" value="matchId" />
+        <node concept="17QB3L" id="2rSlnb0RGI3" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="7P2BN5H74ap" role="3clF45">
         <ref role="3uigEE" to="xpog:4AFyx2s3BGL" resolve="MatchResult" />

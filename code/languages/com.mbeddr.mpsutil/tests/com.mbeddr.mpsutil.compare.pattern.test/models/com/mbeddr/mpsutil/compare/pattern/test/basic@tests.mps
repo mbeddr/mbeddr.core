@@ -2,12 +2,18 @@
 <model ref="r:ed3e0c43-ec95-4718-8427-6204fc60e5a9(com.mbeddr.mpsutil.compare.pattern.test.basic@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -115,7 +121,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1173,7 +1179,7 @@
   <node concept="1lH9Xt" id="1KJPJGe2VuU">
     <property role="TrG5h" value="GetterTest" />
     <node concept="1LZb2c" id="1KJPJGe2VuV" role="1SL9yI">
-      <property role="TrG5h" value="basicTest" />
+      <property role="TrG5h" value="getterTest" />
       <node concept="3cqZAl" id="1KJPJGe2VuW" role="3clF45" />
       <node concept="3clFbS" id="1KJPJGe2VuX" role="3clF47">
         <node concept="3clFbH" id="1KJPJGe2VuY" role="3cqZAp" />
@@ -1505,7 +1511,7 @@
   <node concept="1lH9Xt" id="4mypyst6T9y">
     <property role="TrG5h" value="IfTest" />
     <node concept="1LZb2c" id="4mypyst6T9z" role="1SL9yI">
-      <property role="TrG5h" value="basicTest" />
+      <property role="TrG5h" value="ifTest" />
       <node concept="3cqZAl" id="4mypyst6T9$" role="3clF45" />
       <node concept="3clFbS" id="4mypyst6T9_" role="3clF47">
         <node concept="3clFbH" id="4mypyst6T9A" role="3cqZAp" />
@@ -1591,13 +1597,20 @@
               <ref role="ehGHo" to="tpee:fzclF8n" resolve="IfStatement" />
             </node>
             <node concept="10QFUN" id="4mypyst6X0J" role="33vP2m">
-              <node concept="2OqwBi" id="4mypyst6WRg" role="10QFUP">
-                <node concept="3xONca" id="4mypyst6WRh" role="2Oq$k0">
-                  <ref role="3xOPvv" node="4mypyst6Tdr" resolve="if1" />
+              <node concept="2OqwBi" id="3nY2pN6VpNp" role="10QFUP">
+                <node concept="2OqwBi" id="4mypyst6WRg" role="2Oq$k0">
+                  <node concept="3xONca" id="4mypyst6WRh" role="2Oq$k0">
+                    <ref role="3xOPvv" node="4mypyst6Tdr" resolve="if1" />
+                  </node>
+                  <node concept="2Rf3mk" id="3nY2pN6VoFy" role="2OqNvi">
+                    <node concept="1xMEDy" id="3nY2pN6VoF$" role="1xVPHs">
+                      <node concept="chp4Y" id="3nY2pN6VoVe" role="ri$Ld">
+                        <ref role="cht4Q" to="tpee:fzclF8n" resolve="IfStatement" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="4mypyst6Xfl" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp5g:hHqenIi" />
-                </node>
+                <node concept="1uHKPH" id="3nY2pN6Vtt9" role="2OqNvi" />
               </node>
               <node concept="3Tqbb2" id="4mypyst6X0K" role="10QFUM">
                 <ref role="ehGHo" to="tpee:fzclF8n" resolve="IfStatement" />
@@ -1672,13 +1685,20 @@
               <ref role="ehGHo" to="tpee:fzclF8n" resolve="IfStatement" />
             </node>
             <node concept="10QFUN" id="4mypyst6XmD" role="33vP2m">
-              <node concept="2OqwBi" id="4mypyst6XmE" role="10QFUP">
-                <node concept="3xONca" id="4mypyst6XpN" role="2Oq$k0">
-                  <ref role="3xOPvv" node="4mypyst6VrS" resolve="if2" />
+              <node concept="2OqwBi" id="3nY2pN6VuyO" role="10QFUP">
+                <node concept="2OqwBi" id="4mypyst6XmE" role="2Oq$k0">
+                  <node concept="3xONca" id="4mypyst6XpN" role="2Oq$k0">
+                    <ref role="3xOPvv" node="4mypyst6VrS" resolve="if2" />
+                  </node>
+                  <node concept="2Rf3mk" id="3nY2pN6Vt_u" role="2OqNvi">
+                    <node concept="1xMEDy" id="3nY2pN6Vt_w" role="1xVPHs">
+                      <node concept="chp4Y" id="3nY2pN6VtFn" role="ri$Ld">
+                        <ref role="cht4Q" to="tpee:fzclF8n" resolve="IfStatement" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="4mypyst6XmG" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp5g:hHqenIi" />
-                </node>
+                <node concept="1uHKPH" id="3nY2pN6VwoQ" role="2OqNvi" />
               </node>
               <node concept="3Tqbb2" id="4mypyst6XmH" role="10QFUM">
                 <ref role="ehGHo" to="tpee:fzclF8n" resolve="IfStatement" />

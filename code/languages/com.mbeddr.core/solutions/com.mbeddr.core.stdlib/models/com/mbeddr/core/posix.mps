@@ -4088,7 +4088,6 @@
       <ref role="3GEb4d" node="5ZBezCNdZIN" resolve="pthreadtypes" />
     </node>
     <node concept="3GEVxB" id="4VPUKkrrgmj" role="2OODSX">
-      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" to="ml7g:41BTkV3Wh_r" resolve="types" />
     </node>
     <node concept="1S7NMz" id="4VPUKkrr8B6" role="N3F5h">
@@ -6736,10 +6735,10 @@
           <node concept="3wxxNl" id="4VPUKkrsfJD" role="pFrBa">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <node concept="rcJHQ" id="4VPUKkrsqTF" role="2umbIo">
+            <node concept="1sgJKr" id="4VPUKkrsfJE" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="4VPUKkrsfKS" resolve="siginfo_t" />
+              <ref role="1sgJKq" node="4VPUKkrsfKw" resolve="__siginfo" />
             </node>
           </node>
           <node concept="3wxxNl" id="4VPUKkrsfJF" role="pFrBa">
