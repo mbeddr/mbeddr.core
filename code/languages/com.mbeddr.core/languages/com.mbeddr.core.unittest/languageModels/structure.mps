@@ -85,6 +85,9 @@
     <node concept="PrWs8" id="2h5hmpsJe_S" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
+    <node concept="PrWs8" id="3Rzs0kGBKkr" role="PzmwI">
+      <ref role="PrY4T" node="3Rzs0kGBKjV" resolve="IRequireUnitTestFramework" />
+    </node>
     <node concept="PrWs8" id="2h5hmpsJeAI" role="PzmwI">
       <ref role="PrY4T" to="x27k:2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
     </node>
@@ -472,9 +475,16 @@
     <node concept="PrWs8" id="6TAwvhVRBLB" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="3Rzs0kGBKl5" role="PzmwI">
+      <ref role="PrY4T" node="3Rzs0kGBKjV" resolve="IRequireUnitTestFramework" />
+    </node>
     <node concept="PrWs8" id="6TAwvhVSitS" role="PzmwI">
       <ref role="PrY4T" to="x27k:2MbfxrZI9YU" resolve="IMayActAsMainFunction" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3Rzs0kGBKjV">
+    <property role="1pbfSe" value="1786934528" />
+    <property role="TrG5h" value="IRequireUnitTestFramework" />
   </node>
 </model>
 
