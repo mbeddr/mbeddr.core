@@ -3554,7 +3554,7 @@
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="Argument_SetKind" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+    <ref role="2ZfgGC" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
     <node concept="38BcoT" id="6t992PQ47sV" role="3dlsAV">
       <node concept="3clFbS" id="6t992PQ47sW" role="2VODD2">
         <node concept="3cpWs8" id="6t992PQ47sX" role="3cqZAp">
