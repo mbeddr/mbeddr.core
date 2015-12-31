@@ -60,6 +60,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -141,13 +142,14 @@
               </node>
             </node>
             <node concept="liA8E" id="4XCJ8CcSS6m" role="2OqNvi">
-              <ref role="37wK5l" to="9n5q:4XCJ8CcR2VJ" resolve="generateTests" />
+              <ref role="37wK5l" to="9n5q:4XCJ8CcR2VJ" resolve="generateValidModels" />
               <node concept="2OqwBi" id="3CoVb8q5NBa" role="37wK5m">
                 <node concept="2WthIp" id="3CoVb8q5NBd" role="2Oq$k0" />
                 <node concept="1DTwFV" id="3CoVb8q5NBf" role="2OqNvi">
                   <ref role="2WH_rO" node="3CoVb8q5LAw" resolve="proj" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="7CJl_1eImm0" role="37wK5m" />
             </node>
           </node>
         </node>

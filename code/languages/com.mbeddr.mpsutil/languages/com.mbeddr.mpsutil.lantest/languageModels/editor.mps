@@ -191,19 +191,16 @@
     </node>
   </node>
   <node concept="24kQdi" id="2P6psD9DHgv">
+    <property role="3GE5qa" value="concept_seed" />
     <ref role="1XX52x" to="gfdq:2P6psD9D$Jx" resolve="ConceptSeed" />
     <node concept="3EZMnI" id="2P6psD9DHhk" role="2wV5jI">
       <node concept="3F0ifn" id="2P6psD9DHhr" role="3EZMnx">
         <property role="3F0ifm" value="concept" />
       </node>
-      <node concept="1iCGBv" id="2P6psD9DHhx" role="3EZMnx">
-        <ref role="1NtTu8" to="gfdq:2P6psD9DHgb" />
-        <node concept="1sVBvm" id="2P6psD9DHhy" role="1sWHZn">
-          <node concept="3F0A7n" id="2P6psD9DHhC" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="3F2HdR" id="7K2NL56H6ST" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="gfdq:7K2NL56H6S_" />
+        <node concept="l2Vlx" id="7K2NL56H6SV" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="2P6psD9DHhn" role="2iSdaV" />
     </node>
@@ -237,6 +234,19 @@
         </node>
       </node>
       <node concept="l2Vlx" id="2A9nHKANPHX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7K2NL56H6Ru">
+    <property role="3GE5qa" value="concept_seed" />
+    <ref role="1XX52x" to="gfdq:7K2NL56H6Rb" resolve="AbstractConceptDeclarationRef" />
+    <node concept="1iCGBv" id="7K2NL56H6RD" role="2wV5jI">
+      <ref role="1NtTu8" to="gfdq:7K2NL56H6Rl" />
+      <node concept="1sVBvm" id="7K2NL56H6RF" role="1sWHZn">
+        <node concept="3F0A7n" id="7K2NL56H6RS" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
