@@ -194,7 +194,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -17417,6 +17417,34 @@
                 </node>
                 <node concept="2qgKlT" id="3ewEEwfcxIz" role="2OqNvi">
                   <ref role="37wK5l" node="6OxpEKG0KPv" resolve="evaluateStatically" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="59PiwCJoRSt" role="3cqZAp">
+          <node concept="3clFbS" id="59PiwCJoRSv" role="3clFbx">
+            <node concept="3cpWs6" id="59PiwCJoTc_" role="3cqZAp">
+              <node concept="10Nm6u" id="59PiwCJoTsA" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3y3z36" id="59PiwCJoT9D" role="3clFbw">
+            <node concept="3cmrfG" id="59PiwCJoTbi" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="59PiwCJoSS5" role="3uHU7B">
+              <node concept="37vLTw" id="59PiwCJoSP1" role="2Oq$k0">
+                <ref role="3cqZAo" node="4U93QumWqOC" resolve="rightNumber" />
+              </node>
+              <node concept="liA8E" id="59PiwCJoUbI" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                <node concept="2ShNRf" id="59PiwCJoUcC" role="37wK5m">
+                  <node concept="1pGfFk" id="59PiwCJp7qI" role="2ShVmc">
+                    <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                    <node concept="Xl_RD" id="59PiwCJp7rN" role="37wK5m">
+                      <property role="Xl_RC" value="0" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
