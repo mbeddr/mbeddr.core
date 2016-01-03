@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -55,6 +56,16 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="model" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="30nlpkLb$Zl">
+    <property role="1pbfSe" value="1631954282" />
+    <property role="TrG5h" value="SpecificConcepts" />
+    <property role="34LRSv" value="explicit_concepts" />
+    <property role="R4oN_" value="enumerates the concepts to choose for testing purposes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="30nlpkLb$Zm" role="PzmwI">
+      <ref role="PrY4T" to="gfdq:30nlpkLbzJw" resolve="IConceptChooser" />
     </node>
   </node>
 </model>

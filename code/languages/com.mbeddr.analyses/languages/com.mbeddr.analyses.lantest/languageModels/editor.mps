@@ -49,5 +49,11 @@
       <node concept="l2Vlx" id="2A9nHKAOvR6" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="30nlpkLb$Zv">
+    <ref role="1XX52x" to="fowb:30nlpkLb$Zl" resolve="SpecificConcepts" />
+    <node concept="3F0ifn" id="30nlpkLb$Zx" role="2wV5jI">
+      <property role="3F0ifm" value="concecpts_chooser_testing" />
+    </node>
+  </node>
 </model>
 
