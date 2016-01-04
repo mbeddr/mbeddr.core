@@ -5617,8 +5617,8 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="bhVSeElkcd" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="bhVSeElkce" role="3clF45">
-        <ref role="3uigEE" node="7NyyyjNtce8" resolve="NodeTreeViewNode" />
+      <node concept="3uibUv" id="3RyTuhdwPJ7" role="3clF45">
+        <ref role="3uigEE" node="2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
       </node>
     </node>
     <node concept="13i0hz" id="59HbAIP5xBI" role="13h7CS">
@@ -17569,8 +17569,8 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="6SQk4GjUKbd" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="6SQk4GjUKbe" role="3clF45">
-        <ref role="3uigEE" node="7NyyyjNtce8" resolve="NodeTreeViewNode" />
+      <node concept="3uibUv" id="3RyTuhdwQbS" role="3clF45">
+        <ref role="3uigEE" node="2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
       </node>
     </node>
     <node concept="13hLZK" id="6SQk4GjV1MX" role="13h7CW">
