@@ -16249,25 +16249,61 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5gfY2gOq3Ga" role="3cqZAp">
+          <node concept="3cpWsn" id="5gfY2gOq3Gb" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="5gfY2gOq3G9" role="1tU5fm">
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+            </node>
+            <node concept="3K4zz7" id="5gfY2gOq3Gc" role="33vP2m">
+              <node concept="2YIFZM" id="5gfY2gOq3Gd" role="3K4GZi">
+                <ref role="37wK5l" to="f4zo:~CellTraversalUtil.getPrevLeaf(jetbrains.mps.openapi.editor.cells.EditorCell):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getPrevLeaf" />
+                <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+                <node concept="37vLTw" id="5gfY2gOq3Ge" role="37wK5m">
+                  <ref role="3cqZAo" node="76BPPvEie_C" resolve="cell" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="5gfY2gOq3Gf" role="3K4E3e">
+                <ref role="37wK5l" to="f4zo:~CellTraversalUtil.getNextLeaf(jetbrains.mps.openapi.editor.cells.EditorCell):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getNextLeaf" />
+                <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+                <node concept="37vLTw" id="5gfY2gOq3Gg" role="37wK5m">
+                  <ref role="3cqZAo" node="76BPPvEie_C" resolve="cell" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="5gfY2gOq3Gh" role="3K4Cdx">
+                <ref role="3cqZAo" node="76BPPvEieJh" resolve="next" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5gfY2gOqbIL" role="3cqZAp">
+          <node concept="3clFbS" id="5gfY2gOqbIN" role="3clFbx">
+            <node concept="3SKdUt" id="5gfY2gOqkIL" role="3cqZAp">
+              <node concept="3SKdUq" id="5gfY2gOqkIN" role="3SKWNk">
+                <property role="3SKdUp" value="This would cause an endless loop. It actually happens when the cell is a bracket cell," />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="5gfY2gOqp8L" role="3cqZAp">
+              <node concept="3SKdUq" id="5gfY2gOqp8N" role="3SKWNk">
+                <property role="3SKdUp" value="because of a bug in MPS." />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5gfY2gOqdZk" role="3cqZAp">
+              <node concept="10Nm6u" id="5gfY2gOqgcZ" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="5gfY2gOqdVL" role="3clFbw">
+            <node concept="37vLTw" id="5gfY2gOqdXN" role="3uHU7w">
+              <ref role="3cqZAo" node="76BPPvEie_C" resolve="cell" />
+            </node>
+            <node concept="37vLTw" id="5gfY2gOqdTH" role="3uHU7B">
+              <ref role="3cqZAo" node="5gfY2gOq3Gb" resolve="result" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="76BPPvEifbK" role="3cqZAp">
-          <node concept="3K4zz7" id="76BPPvEifen" role="3clFbG">
-            <node concept="2YIFZM" id="76BPPvEifix" role="3K4GZi">
-              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.getPrevLeaf(jetbrains.mps.openapi.editor.cells.EditorCell):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getPrevLeaf" />
-              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
-              <node concept="37vLTw" id="76BPPvEifjs" role="37wK5m">
-                <ref role="3cqZAo" node="76BPPvEie_C" resolve="cell" />
-              </node>
-            </node>
-            <node concept="2YIFZM" id="76BPPvEifg4" role="3K4E3e">
-              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.getNextLeaf(jetbrains.mps.openapi.editor.cells.EditorCell):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getNextLeaf" />
-              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
-              <node concept="37vLTw" id="76BPPvEifgG" role="37wK5m">
-                <ref role="3cqZAo" node="76BPPvEie_C" resolve="cell" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="76BPPvEifbJ" role="3K4Cdx">
-              <ref role="3cqZAo" node="76BPPvEieJh" resolve="next" />
-            </node>
+          <node concept="37vLTw" id="5gfY2gOq3Gi" role="3clFbG">
+            <ref role="3cqZAo" node="5gfY2gOq3Gb" resolve="result" />
           </node>
         </node>
       </node>
