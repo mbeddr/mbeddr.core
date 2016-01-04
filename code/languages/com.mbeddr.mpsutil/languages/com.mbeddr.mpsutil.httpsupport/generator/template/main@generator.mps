@@ -144,6 +144,12 @@
         <reference id="6478870542308703669" name="decl" index="3tTeZr" />
       </concept>
     </language>
+    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1218047638031" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CreateUniqueName" flags="nn" index="2piZGk">
+        <child id="1218047638032" name="baseName" index="2piZGb" />
+      </concept>
+      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -528,6 +534,25 @@
       <node concept="q3mfm" id="6XfQs9tKcEF" role="3clF45">
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="6XfQs9tKcEC" resolve="get" />
+      </node>
+    </node>
+    <node concept="n94m4" id="4JqtTEfdz7R" role="lGtFl" />
+    <node concept="17Uvod" id="4JqtTEfdzq8" role="lGtFl">
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+      <property role="2qtEX9" value="name" />
+      <node concept="3zFVjK" id="4JqtTEfdzq9" role="3zH0cK">
+        <node concept="3clFbS" id="4JqtTEfdzqa" role="2VODD2">
+          <node concept="3clFbF" id="4JqtTEfdzUp" role="3cqZAp">
+            <node concept="2OqwBi" id="4JqtTEfd$iW" role="3clFbG">
+              <node concept="1iwH7S" id="4JqtTEfdzUo" role="2Oq$k0" />
+              <node concept="2piZGk" id="4JqtTEfd$l6" role="2OqNvi">
+                <node concept="Xl_RD" id="4JqtTEfd$mG" role="2piZGb">
+                  <property role="Xl_RC" value="HttpRequestHandlers_extension" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
