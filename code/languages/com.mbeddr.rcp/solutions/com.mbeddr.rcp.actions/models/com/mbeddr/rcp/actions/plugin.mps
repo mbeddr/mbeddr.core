@@ -658,9 +658,6 @@
     <node concept="2flH9Z" id="6XvT233IsLX" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.ShowErrorMessage_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233IuTm" role="2flH9W">
-      <property role="2flH96" value="com.mbeddr.core.base.pluginSolution.plugin.CreateMbeddrRoots_ActionGroup" />
-    </node>
     <node concept="2flH9Z" id="6XvT233IuWF" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
     </node>
@@ -768,6 +765,9 @@
     </node>
     <node concept="2flH9Z" id="FniR$ClUlV" role="2flH9W">
       <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.removeFromFavourites_Action" />
+    </node>
+    <node concept="2flH9Z" id="2zyvt0HGdvd" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroup" />
     </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">
