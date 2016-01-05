@@ -14,9 +14,6 @@
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -110,21 +107,6 @@
   </registry>
   <node concept="1M2fIO" id="4XCJ8CcQ$3z">
     <ref role="1M2myG" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
-    <node concept="1N5Pfh" id="4XCJ8CcQCmp" role="1Mr941">
-      <ref role="1N5Vy1" to="gfdq:4XCJ8CcQBPm" />
-      <node concept="1MUpDS" id="4XCJ8CcQCmU" role="1N6uqs">
-        <node concept="3clFbS" id="4XCJ8CcQCmV" role="2VODD2">
-          <node concept="3clFbF" id="2RbC5CY9Dw9" role="3cqZAp">
-            <node concept="2OqwBi" id="2RbC5CY9DBk" role="3clFbG">
-              <node concept="1Q6Npb" id="2RbC5CY9Dw7" role="2Oq$k0" />
-              <node concept="3lApI0" id="2RbC5CY9DKM" role="2OqNvi">
-                <ref role="3lApI3" to="tpck:h0TrEE$" resolve="INamedConcept" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="2P6psD9DHhE">
     <property role="3GE5qa" value="concept_seed" />

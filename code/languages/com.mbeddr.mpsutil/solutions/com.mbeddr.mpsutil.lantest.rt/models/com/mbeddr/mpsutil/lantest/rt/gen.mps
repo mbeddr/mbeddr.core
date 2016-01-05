@@ -1381,10 +1381,10 @@
     <node concept="312cEg" id="2RbC5CYaCjv" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="savingTarget" />
+      <property role="TrG5h" value="savingModel" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="2RbC5CYaCjw" role="1B3o_S" />
-      <node concept="3Tqbb2" id="2RbC5CYaCjx" role="1tU5fm" />
+      <node concept="H_c77" id="3acDVtIDZ8M" role="1tU5fm" />
       <node concept="NWlO9" id="2RbC5CYaCjy" role="lGtFl">
         <property role="NWlVz" value="Where the models should be saved." />
       </node>
@@ -1532,14 +1532,14 @@
               <node concept="37vLTw" id="2RbC5CYaR3Y" role="2Oq$k0">
                 <ref role="3cqZAo" node="2RbC5CYad1I" resolve="conf" />
               </node>
-              <node concept="3TrEf2" id="2RbC5CYaSan" role="2OqNvi">
-                <ref role="3Tt5mk" to="gfdq:4XCJ8CcQBPm" />
+              <node concept="2qgKlT" id="3acDVtIDYW6" role="2OqNvi">
+                <ref role="37wK5l" to="uu96:2WJ8cS_vWVE" resolve="targetModel" />
               </node>
             </node>
             <node concept="2OqwBi" id="2RbC5CYaMQb" role="37vLTJ">
               <node concept="Xjq3P" id="2RbC5CYaMt0" role="2Oq$k0" />
               <node concept="2OwXpG" id="2RbC5CYaO_E" role="2OqNvi">
-                <ref role="2Oxat5" node="2RbC5CYaCjv" resolve="savingTarget" />
+                <ref role="2Oxat5" node="2RbC5CYaCjv" resolve="savingModel" />
               </node>
             </node>
           </node>
@@ -3088,11 +3088,8 @@
                             <node concept="37vLTw" id="3acDVtIvzzo" role="37wK5m">
                               <ref role="3cqZAo" node="433ob2Tk9By" resolve="proj" />
                             </node>
-                            <node concept="2OqwBi" id="3acDVtIvzzp" role="37wK5m">
-                              <node concept="37vLTw" id="3acDVtIvzzq" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2RbC5CYaCjv" resolve="savingTarget" />
-                              </node>
-                              <node concept="I4A8Y" id="3acDVtIvzzr" role="2OqNvi" />
+                            <node concept="37vLTw" id="3acDVtIvzzq" role="37wK5m">
+                              <ref role="3cqZAo" node="2RbC5CYaCjv" resolve="savingModel" />
                             </node>
                             <node concept="37vLTw" id="3acDVtIvzzt" role="37wK5m">
                               <ref role="3cqZAo" node="433ob2TiSBH" resolve="currentMutatedStartingPoint" />

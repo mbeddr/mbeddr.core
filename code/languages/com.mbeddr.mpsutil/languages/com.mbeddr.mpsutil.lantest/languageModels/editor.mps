@@ -107,24 +107,18 @@
         </node>
         <node concept="l2Vlx" id="4XCJ8CcQ6WG" role="2iSdaV" />
       </node>
-      <node concept="3EZMnI" id="4XCJ8CcQCTB" role="3EZMnx">
-        <node concept="VPM3Z" id="4XCJ8CcQCTC" role="3F10Kt">
+      <node concept="3EZMnI" id="3acDVtIDSxL" role="3EZMnx">
+        <node concept="VPM3Z" id="3acDVtIDSxM" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3XFhqQ" id="4XCJ8CcQCTD" role="3EZMnx" />
-        <node concept="3F0ifn" id="4XCJ8CcQCTE" role="3EZMnx">
-          <property role="3F0ifm" value="save result in model containing node:" />
+        <node concept="3XFhqQ" id="3acDVtIDSxN" role="3EZMnx" />
+        <node concept="3F0ifn" id="3acDVtIDSxO" role="3EZMnx">
+          <property role="3F0ifm" value="save result in model:" />
         </node>
-        <node concept="1iCGBv" id="4XCJ8CcQCTF" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:4XCJ8CcQBPm" />
-          <node concept="1sVBvm" id="4XCJ8CcQCTG" role="1sWHZn">
-            <node concept="3F0A7n" id="4XCJ8CcQCTH" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
+        <node concept="3F1sOY" id="3acDVtIDSDe" role="3EZMnx">
+          <ref role="1NtTu8" to="gfdq:3acDVtIDSu6" />
         </node>
-        <node concept="l2Vlx" id="4XCJ8CcQCTI" role="2iSdaV" />
+        <node concept="l2Vlx" id="3acDVtIDSxS" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="4XCJ8CcQ6XM" role="3EZMnx">
         <node concept="VPM3Z" id="4XCJ8CcQ6XN" role="3F10Kt">

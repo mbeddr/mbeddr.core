@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -92,6 +93,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="30nlpkLbzJw" resolve="IConceptChooser" />
     </node>
+    <node concept="1TJgyj" id="3acDVtIDSu6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="modelWhereResultsAreSaved" />
+      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
     <node concept="1TJgyi" id="4XCJ8CcQCV$" role="1TKVEl">
       <property role="TrG5h" value="maximumNumberOfTries" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -103,11 +110,6 @@
     <node concept="1TJgyi" id="3acDVtI_Wt4" role="1TKVEl">
       <property role="TrG5h" value="cloneOriginalNodeRatio" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="4XCJ8CcQBPm" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="savingResults" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="4XCJ8CcQ6V_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
