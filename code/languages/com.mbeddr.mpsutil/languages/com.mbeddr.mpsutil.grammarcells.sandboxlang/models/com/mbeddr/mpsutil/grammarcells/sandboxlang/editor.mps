@@ -938,5 +938,35 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4JqtTEfgLJW">
+    <ref role="1XX52x" to="ibwz:4JqtTEfgLJB" resolve="TEST_FlagNextToChild" />
+    <node concept="3EZMnI" id="4JqtTEfgLK9" role="2wV5jI">
+      <node concept="1kHk_G" id="4JqtTEfh_gv" role="3EZMnx">
+        <ref role="1NtTu8" to="ibwz:4JqtTEfgLJM" resolve="flagA" />
+      </node>
+      <node concept="3F1sOY" id="4JqtTEfgLKC" role="3EZMnx">
+        <ref role="1NtTu8" to="ibwz:4JqtTEfgLJH" />
+      </node>
+      <node concept="3F0ifn" id="4JqtTEfgLKZ" role="3EZMnx">
+        <property role="3F0ifm" value="TEST_FlagNextToChild" />
+      </node>
+      <node concept="l2Vlx" id="4JqtTEfgLKc" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="4JqtTEfimAf" role="6VMZX">
+      <node concept="2iRkQZ" id="4JqtTEfimAg" role="2iSdaV" />
+      <node concept="3EZMnI" id="4JqtTEfimAp" role="3EZMnx">
+        <node concept="2iRfu4" id="4JqtTEfimAq" role="2iSdaV" />
+        <node concept="VPM3Z" id="4JqtTEfimAr" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="4JqtTEfimAC" role="3EZMnx">
+          <property role="3F0ifm" value="flagA:" />
+        </node>
+        <node concept="3F0A7n" id="4JqtTEfimAQ" role="3EZMnx">
+          <ref role="1NtTu8" to="ibwz:4JqtTEfgLJM" resolve="flagA" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
