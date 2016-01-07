@@ -325,8 +325,17 @@
   <node concept="24kQdi" id="tJrHRTVPJL">
     <ref role="1XX52x" to="gfdq:tJrHRTVPJ_" resolve="ExceptionAnnotation" />
     <node concept="3EZMnI" id="tJrHRTVPJN" role="2wV5jI">
-      <node concept="3F0ifn" id="tJrHRTVPJX" role="3EZMnx">
-        <property role="3F0ifm" value="ERROR" />
+      <node concept="3EZMnI" id="64cByBTL3mo" role="3EZMnx">
+        <node concept="2iRfu4" id="64cByBTL3mp" role="2iSdaV" />
+        <node concept="3F0ifn" id="tJrHRTVPJX" role="3EZMnx">
+          <property role="3F0ifm" value="ERROR" />
+          <node concept="Veino" id="3OCr4RAR13W" role="3F10Kt">
+            <property role="Vb096" value="red" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="64cByBTL3mK" role="3EZMnx">
+          <ref role="1NtTu8" to="gfdq:64cByBTL3ml" resolve="message" />
+        </node>
       </node>
       <node concept="2SsqMj" id="tJrHRTVPK6" role="3EZMnx" />
       <node concept="2iRkQZ" id="tJrHRTVPJQ" role="2iSdaV" />

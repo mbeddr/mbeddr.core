@@ -237,6 +237,10 @@
     <property role="1pbfSe" value="22989506" />
     <property role="TrG5h" value="ExceptionAnnotation" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="64cByBTL3ml" role="1TKVEl">
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="M6xJ_" id="tJrHRTVPJA" role="lGtFl">
       <property role="Hh88m" value="exception" />
       <node concept="trNpa" id="tJrHRTVPJD" role="EQaZv">
