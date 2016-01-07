@@ -287,6 +287,7 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -638,15 +639,20 @@
       <ref role="2rTdP9" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
+    <node concept="2rT7sh" id="1mrpzsISlgf" role="2rTMjI">
+      <property role="TrG5h" value="map_ComponentState" />
+      <ref role="2rTdP9" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
+      <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
+    </node>
     <node concept="2rT7sh" id="4vnGofEwEH6" role="2rTMjI">
-      <property role="TrG5h" value="mapPersistedField" />
+      <property role="TrG5h" value="map_PersistedField" />
       <ref role="2rZz_L" to="tpee:fz12cDC" resolve="FieldDeclaration" />
       <ref role="2rTdP9" to="3iid:86yKXFFVPT" resolve="IPreferenceFormProperty" />
     </node>
     <node concept="3aamgX" id="ty4hbPBcY2" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="3iid:86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
-      <ref role="2sgKRv" node="4vnGofEwEH6" resolve="mapPersistedField" />
+      <ref role="2sgKRv" node="4vnGofEwEH6" resolve="map_PersistedField" />
       <node concept="30G5F_" id="4vnGofEwZH2" role="30HLyM">
         <node concept="3clFbS" id="4vnGofEwZH3" role="2VODD2">
           <node concept="3clFbF" id="4vnGofEx08z" role="3cqZAp">
@@ -3569,7 +3575,7 @@
                         <node concept="2OqwBi" id="hHhSYuI" role="3clFbG">
                           <node concept="1iwH7S" id="hHiVjw9" role="2Oq$k0" />
                           <node concept="1iwH70" id="hHiVicR" role="2OqNvi">
-                            <ref role="1iwH77" node="4vnGofEwEH6" resolve="mapPersistedField" />
+                            <ref role="1iwH77" node="4vnGofEwEH6" resolve="map_PersistedField" />
                             <node concept="2OqwBi" id="hB4rh7C" role="1iwH7V">
                               <node concept="1PxgMI" id="hI3$gfx" role="2Oq$k0">
                                 <ref role="1PxNhF" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
@@ -4097,7 +4103,7 @@
       <node concept="312cEg" id="hI35qLW" role="jymVt">
         <property role="TrG5h" value="externalizableProperty" />
         <node concept="2b32R4" id="hI35qLZ" role="lGtFl">
-          <ref role="2rW$FS" node="4vnGofEwEH6" resolve="mapPersistedField" />
+          <ref role="2rW$FS" node="4vnGofEwEH6" resolve="map_PersistedField" />
           <node concept="3JmXsc" id="hI35qM0" role="2P8S$">
             <node concept="3clFbS" id="hI35qM1" role="2VODD2">
               <node concept="3clFbF" id="hI35qM2" role="3cqZAp">
@@ -4121,6 +4127,9 @@
       </node>
       <node concept="3uibUv" id="4vnGofEE7w0" role="1zkMxy">
         <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+      </node>
+      <node concept="2ZBi8u" id="1mrpzsISkPo" role="lGtFl">
+        <ref role="2rW$FS" node="1mrpzsISlgf" resolve="map_ComponentState" />
       </node>
     </node>
     <node concept="3Tm1VV" id="hB4myvL" role="1B3o_S" />
@@ -4631,7 +4640,7 @@
       <node concept="312cEg" id="X7OD3WwKZr" role="jymVt">
         <property role="TrG5h" value="externalizableProperty" />
         <node concept="2b32R4" id="X7OD3WwKZs" role="lGtFl">
-          <ref role="2rW$FS" to="tp4l:hB4p6DO" resolve="map_PersistentField" />
+          <ref role="2rW$FS" node="4vnGofEwEH6" resolve="map_PersistedField" />
           <node concept="3JmXsc" id="X7OD3WwKZt" role="2P8S$">
             <node concept="3clFbS" id="X7OD3WwKZu" role="2VODD2">
               <node concept="3clFbF" id="X7OD3WwKZv" role="3cqZAp">
@@ -4655,6 +4664,9 @@
       </node>
       <node concept="3uibUv" id="4vnGofEDXkG" role="1zkMxy">
         <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+      </node>
+      <node concept="2ZBi8u" id="1mrpzsISqJC" role="lGtFl">
+        <ref role="2rW$FS" node="1mrpzsISlgf" resolve="map_ComponentState" />
       </node>
     </node>
     <node concept="3Tm1VV" id="X7OD3WwKZD" role="1B3o_S" />
@@ -4804,27 +4816,12 @@
           <node concept="3$xsQk" id="4vnGofEFCpF" role="3$ytzL">
             <node concept="3clFbS" id="4vnGofEFCpG" role="2VODD2">
               <node concept="3clFbF" id="4vnGofEFCCF" role="3cqZAp">
-                <node concept="2OqwBi" id="4vnGofEFXkx" role="3clFbG">
-                  <node concept="2OqwBi" id="4vnGofEFVxT" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4vnGofEFDiw" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4vnGofEFCG8" role="2Oq$k0">
-                        <node concept="1iwH7S" id="4vnGofEFCCE" role="2Oq$k0" />
-                        <node concept="1iwH70" id="4vnGofEFCVi" role="2OqNvi">
-                          <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
-                          <node concept="30H73N" id="4vnGofEFD5K" role="1iwH7V" />
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="4vnGofEFV4r" role="2OqNvi">
-                        <ref role="37wK5l" to="tpek:1hodSy8nQmC" resolve="members" />
-                      </node>
-                    </node>
-                    <node concept="v3k3i" id="4vnGofEFWzq" role="2OqNvi">
-                      <node concept="chp4Y" id="4vnGofEFWJP" role="v3oSu">
-                        <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
-                      </node>
-                    </node>
+                <node concept="2OqwBi" id="4vnGofEFCG8" role="3clFbG">
+                  <node concept="1iwH7S" id="4vnGofEFCCE" role="2Oq$k0" />
+                  <node concept="1iwH70" id="4vnGofEFCVi" role="2OqNvi">
+                    <ref role="1iwH77" node="1mrpzsISlgf" resolve="map_ComponentState" />
+                    <node concept="30H73N" id="4vnGofEFD5K" role="1iwH7V" />
                   </node>
-                  <node concept="1uHKPH" id="4vnGofEFZCw" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -4845,27 +4842,12 @@
                   <node concept="3$xsQk" id="4vnGofEHjLI" role="3$ytzL">
                     <node concept="3clFbS" id="4vnGofEHjLJ" role="2VODD2">
                       <node concept="3clFbF" id="4vnGofEHjW5" role="3cqZAp">
-                        <node concept="2OqwBi" id="4vnGofEHjW6" role="3clFbG">
-                          <node concept="2OqwBi" id="4vnGofEHjW7" role="2Oq$k0">
-                            <node concept="2OqwBi" id="4vnGofEHjW8" role="2Oq$k0">
-                              <node concept="2OqwBi" id="4vnGofEHjW9" role="2Oq$k0">
-                                <node concept="1iwH7S" id="4vnGofEHjWa" role="2Oq$k0" />
-                                <node concept="1iwH70" id="4vnGofEHjWb" role="2OqNvi">
-                                  <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
-                                  <node concept="30H73N" id="4vnGofEHjWc" role="1iwH7V" />
-                                </node>
-                              </node>
-                              <node concept="2qgKlT" id="4vnGofEHjWd" role="2OqNvi">
-                                <ref role="37wK5l" to="tpek:1hodSy8nQmC" resolve="members" />
-                              </node>
-                            </node>
-                            <node concept="v3k3i" id="4vnGofEHjWe" role="2OqNvi">
-                              <node concept="chp4Y" id="4vnGofEHjWf" role="v3oSu">
-                                <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
-                              </node>
-                            </node>
+                        <node concept="2OqwBi" id="4vnGofEHjW9" role="3clFbG">
+                          <node concept="1iwH7S" id="4vnGofEHjWa" role="2Oq$k0" />
+                          <node concept="1iwH70" id="4vnGofEHjWb" role="2OqNvi">
+                            <ref role="1iwH77" node="1mrpzsISlgf" resolve="map_ComponentState" />
+                            <node concept="30H73N" id="4vnGofEHjWc" role="1iwH7V" />
                           </node>
-                          <node concept="1uHKPH" id="4vnGofEHjWg" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
@@ -6503,27 +6485,12 @@
           <node concept="3$xsQk" id="4vnGofEIxE2" role="3$ytzL">
             <node concept="3clFbS" id="4vnGofEIxE3" role="2VODD2">
               <node concept="3clFbF" id="4vnGofEIxE4" role="3cqZAp">
-                <node concept="2OqwBi" id="4vnGofEIxE5" role="3clFbG">
-                  <node concept="2OqwBi" id="4vnGofEIxE6" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4vnGofEIxE7" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4vnGofEIxE8" role="2Oq$k0">
-                        <node concept="1iwH7S" id="4vnGofEIxE9" role="2Oq$k0" />
-                        <node concept="1iwH70" id="4vnGofEIxEa" role="2OqNvi">
-                          <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
-                          <node concept="30H73N" id="4vnGofEIxEb" role="1iwH7V" />
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="4vnGofEIxEc" role="2OqNvi">
-                        <ref role="37wK5l" to="tpek:1hodSy8nQmC" resolve="members" />
-                      </node>
-                    </node>
-                    <node concept="v3k3i" id="4vnGofEIxEd" role="2OqNvi">
-                      <node concept="chp4Y" id="4vnGofEIxEe" role="v3oSu">
-                        <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
-                      </node>
-                    </node>
+                <node concept="2OqwBi" id="4vnGofEIxE8" role="3clFbG">
+                  <node concept="1iwH7S" id="4vnGofEIxE9" role="2Oq$k0" />
+                  <node concept="1iwH70" id="4vnGofEIxEa" role="2OqNvi">
+                    <ref role="1iwH77" node="1mrpzsISlgf" resolve="map_ComponentState" />
+                    <node concept="30H73N" id="4vnGofEIxEb" role="1iwH7V" />
                   </node>
-                  <node concept="1uHKPH" id="4vnGofEIxEf" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -6544,27 +6511,12 @@
                   <node concept="3$xsQk" id="4vnGofEIxEn" role="3$ytzL">
                     <node concept="3clFbS" id="4vnGofEIxEo" role="2VODD2">
                       <node concept="3clFbF" id="4vnGofEIxEp" role="3cqZAp">
-                        <node concept="2OqwBi" id="4vnGofEIxEq" role="3clFbG">
-                          <node concept="2OqwBi" id="4vnGofEIxEr" role="2Oq$k0">
-                            <node concept="2OqwBi" id="4vnGofEIxEs" role="2Oq$k0">
-                              <node concept="2OqwBi" id="4vnGofEIxEt" role="2Oq$k0">
-                                <node concept="1iwH7S" id="4vnGofEIxEu" role="2Oq$k0" />
-                                <node concept="1iwH70" id="4vnGofEIxEv" role="2OqNvi">
-                                  <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
-                                  <node concept="30H73N" id="4vnGofEIxEw" role="1iwH7V" />
-                                </node>
-                              </node>
-                              <node concept="2qgKlT" id="4vnGofEIxEx" role="2OqNvi">
-                                <ref role="37wK5l" to="tpek:1hodSy8nQmC" resolve="members" />
-                              </node>
-                            </node>
-                            <node concept="v3k3i" id="4vnGofEIxEy" role="2OqNvi">
-                              <node concept="chp4Y" id="4vnGofEIxEz" role="v3oSu">
-                                <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
-                              </node>
-                            </node>
+                        <node concept="2OqwBi" id="4vnGofEIxEt" role="3clFbG">
+                          <node concept="1iwH7S" id="4vnGofEIxEu" role="2Oq$k0" />
+                          <node concept="1iwH70" id="4vnGofEIxEv" role="2OqNvi">
+                            <ref role="1iwH77" node="1mrpzsISlgf" resolve="map_ComponentState" />
+                            <node concept="30H73N" id="4vnGofEIxEw" role="1iwH7V" />
                           </node>
-                          <node concept="1uHKPH" id="4vnGofEIxE$" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
@@ -7812,7 +7764,7 @@
                         <node concept="2OqwBi" id="4vnGofEwSEY" role="3clFbG">
                           <node concept="1iwH7S" id="4vnGofEwSEZ" role="2Oq$k0" />
                           <node concept="1iwH70" id="4vnGofEwSF0" role="2OqNvi">
-                            <ref role="1iwH77" node="4vnGofEwEH6" resolve="mapPersistedField" />
+                            <ref role="1iwH77" node="4vnGofEwEH6" resolve="map_PersistedField" />
                             <node concept="2OqwBi" id="4vnGofEwSF1" role="1iwH7V">
                               <node concept="1PxgMI" id="4vnGofEwSF2" role="2Oq$k0">
                                 <ref role="1PxNhF" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
