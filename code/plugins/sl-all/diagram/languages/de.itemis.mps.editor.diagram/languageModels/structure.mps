@@ -1311,6 +1311,16 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6uo2fN6gOXK" resolve="IShape" />
     </node>
+    <node concept="1TJgyj" id="2cyQj2NWVYi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="width" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2cyQj2NWVYr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="height" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="gKFhvEzf3v">
     <property role="TrG5h" value="CellModel_DiagramContent" />
