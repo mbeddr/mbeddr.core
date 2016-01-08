@@ -1316,7 +1316,7 @@
               <ref role="1Pybhc" node="630t2b86nFa" resolve="SelectionIntentionsManager" />
             </node>
             <node concept="liA8E" id="630t2b8dcPO" role="2OqNvi">
-              <ref role="37wK5l" node="630t2b8bDVI" resolve="getIntentions" />
+              <ref role="37wK5l" node="630t2b8dGzk" resolve="getApplicableIntentions" />
               <node concept="37vLTw" id="630t2b8dcPP" role="37wK5m">
                 <ref role="3cqZAo" node="630t2b8dcPU" resolve="selection" />
               </node>
