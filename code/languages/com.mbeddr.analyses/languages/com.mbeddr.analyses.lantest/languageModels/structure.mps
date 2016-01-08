@@ -49,7 +49,7 @@
   </node>
   <node concept="1TIwiD" id="2A9nHKAOvQN">
     <property role="1pbfSe" value="1348164751" />
-    <property role="TrG5h" value="RandomChooserFromModel" />
+    <property role="TrG5h" value="RandomImplementationModuleFromModelSeed" />
     <ref role="1TJDcQ" to="gfdq:2A9nHKANPGu" resolve="AbstractSeedModel" />
     <node concept="1TJgyj" id="2A9nHKAOvQS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

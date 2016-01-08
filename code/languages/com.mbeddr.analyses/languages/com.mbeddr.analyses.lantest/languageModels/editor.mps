@@ -38,10 +38,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="2A9nHKAOvR1">
-    <ref role="1XX52x" to="fowb:2A9nHKAOvQN" resolve="RandomChooserFromModel" />
+    <ref role="1XX52x" to="fowb:2A9nHKAOvQN" resolve="RandomImplementationModuleFromModelSeed" />
     <node concept="3EZMnI" id="2A9nHKAOvR3" role="2wV5jI">
       <node concept="3F0ifn" id="2A9nHKAOvRg" role="3EZMnx">
-        <property role="3F0ifm" value="random root from model:" />
+        <property role="3F0ifm" value="random module from model:" />
       </node>
       <node concept="3F1sOY" id="2A9nHKAOvRs" role="3EZMnx">
         <ref role="1NtTu8" to="fowb:2A9nHKAOvQS" />
