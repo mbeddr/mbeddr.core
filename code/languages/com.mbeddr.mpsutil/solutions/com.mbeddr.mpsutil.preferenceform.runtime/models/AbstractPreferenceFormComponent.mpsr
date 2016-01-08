@@ -66,6 +66,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -73,6 +76,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -304,6 +310,22 @@
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
         <node concept="10Nm6u" id="4vnGofEzfGe" role="33vP2m" />
+      </node>
+      <node concept="3clFb_" id="m3C9PXHXtU" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="getProperty" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="m3C9PXHXtX" role="3clF47">
+          <node concept="3cpWs6" id="m3C9PXHXFM" role="3cqZAp">
+            <node concept="10Nm6u" id="m3C9PXHXMI" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="m3C9PXHXmT" role="1B3o_S" />
+        <node concept="3uibUv" id="m3C9PXHXtI" role="3clF45">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
       </node>
       <node concept="3Tm1VV" id="4vnGofEDRto" role="1B3o_S" />
     </node>
