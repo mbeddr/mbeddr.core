@@ -532,7 +532,7 @@
                 <ref role="3cqZAo" node="6R7PIUqdvzl" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_ynCc1" role="37wK5m">
-                <property role="Xl_RC" value="post(2) result == (&lt;TernaryExpression&gt;)" />
+                <property role="Xl_RC" value="post(2) result == ((a == b &amp;&amp; b == c)?Equilateral:(a == b || b == c || a == c)?Isosceles:Scalene)" />
               </node>
             </node>
           </node>
@@ -784,7 +784,7 @@
                 <ref role="3cqZAo" node="7hfS_9mlDR2" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_ynPBN" role="37wK5m">
-                <property role="Xl_RC" value="post(2) result == (&lt;TernaryExpression&gt;)" />
+                <property role="Xl_RC" value="post(2) result == ((a == b &amp;&amp; b == c)?Equilateral:(a == b || b == c || a == c)?Isosceles:Scalene)" />
               </node>
             </node>
           </node>
@@ -1031,7 +1031,7 @@
                 <ref role="3cqZAo" node="1kjPA_ylGDp" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_ynZVb" role="37wK5m">
-                <property role="Xl_RC" value="post(2) result == (&lt;TernaryExpression&gt;)" />
+                <property role="Xl_RC" value="post(2) result == ((a == b &amp;&amp; b == c)?Equilateral:(a == b || b == c || a == c)?Isosceles:Scalene)" />
               </node>
             </node>
           </node>
