@@ -55,5 +55,17 @@
       <property role="3F0ifm" value="concecpts_chooser_testing" />
     </node>
   </node>
+  <node concept="24kQdi" id="52eR6w5Pjou">
+    <ref role="1XX52x" to="fowb:52eR6w5Pjok" resolve="RandomImplementationModuleFromSolution" />
+    <node concept="3EZMnI" id="52eR6w5Pjow" role="2wV5jI">
+      <node concept="3F0ifn" id="52eR6w5Pjox" role="3EZMnx">
+        <property role="3F0ifm" value="random module from solution:" />
+      </node>
+      <node concept="3F1sOY" id="52eR6w5Pjoy" role="3EZMnx">
+        <ref role="1NtTu8" to="fowb:52eR6w5Pjol" />
+      </node>
+      <node concept="l2Vlx" id="52eR6w5Pjoz" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

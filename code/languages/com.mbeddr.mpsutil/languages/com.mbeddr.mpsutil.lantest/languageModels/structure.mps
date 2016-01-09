@@ -99,6 +99,12 @@
       <property role="20kJfa" value="modelWhereResultsAreSaved" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
     </node>
+    <node concept="1TJgyj" id="52eR6w5Qnsd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="temporaryModel" />
+      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
     <node concept="1TJgyi" id="4XCJ8CcQCV$" role="1TKVEl">
       <property role="TrG5h" value="maximumNumberOfTries" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />

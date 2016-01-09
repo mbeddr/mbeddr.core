@@ -68,5 +68,16 @@
       <ref role="PrY4T" to="gfdq:30nlpkLbzJw" resolve="IConceptChooser" />
     </node>
   </node>
+  <node concept="1TIwiD" id="52eR6w5Pjok">
+    <property role="1pbfSe" value="1449398908" />
+    <property role="TrG5h" value="RandomImplementationModuleFromSolution" />
+    <ref role="1TJDcQ" to="gfdq:2A9nHKANPGu" resolve="AbstractSeedModel" />
+    <node concept="1TJgyj" id="52eR6w5Pjol" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
+    </node>
+  </node>
 </model>
 
