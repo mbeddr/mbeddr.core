@@ -6120,7 +6120,12 @@
                 </node>
                 <node concept="3SKdUt" id="7KZa521gjdd" role="3cqZAp">
                   <node concept="3SKdUq" id="7KZa521gjdf" role="3SKWNk">
-                    <property role="3SKdUp" value="in this case do not guess but add a child of that child" />
+                    <property role="3SKdUp" value="in this case do not guess but add a child of that child with a probability of 50% (default return type  " />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="5pBHv2Jemq8" role="3cqZAp">
+                  <node concept="3SKdUq" id="5pBHv2Jemqa" role="3SKWNk">
+                    <property role="3SKdUp" value="of a function is void - we might need also other types" />
                   </node>
                 </node>
                 <node concept="3cpWs8" id="7KZa521gBiK" role="3cqZAp">
@@ -6170,48 +6175,57 @@
                 </node>
                 <node concept="3N13vt" id="7KZa521gjq9" role="3cqZAp" />
               </node>
-              <node concept="1Wc70l" id="7KZa521gvkR" role="3clFbw">
-                <node concept="2OqwBi" id="7KZa521gwtD" role="3uHU7B">
-                  <node concept="2OqwBi" id="7KZa521gvLb" role="2Oq$k0">
-                    <node concept="2GrUjf" id="7KZa521gv$H" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3acDVtIwdFi" resolve="cl" />
-                    </node>
-                    <node concept="3TrcHB" id="7KZa521gwbf" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpce:fA0lm$B" resolve="metaClass" />
-                    </node>
-                  </node>
-                  <node concept="3t7uKx" id="7KZa521gwPM" role="2OqNvi">
-                    <node concept="uoxfO" id="7KZa521gwPO" role="3t7uKA">
-                      <ref role="uo_Cq" to="tpce:fLJjDmT" />
-                    </node>
+              <node concept="1Wc70l" id="5pBHv2Jejri" role="3clFbw">
+                <node concept="NRdvd" id="5pBHv2JexFj" role="3uHU7w">
+                  <ref role="1Pybhc" node="2P6psD9DNdu" resolve="Utils" />
+                  <ref role="37wK5l" node="2ksdigwlVBE" resolve="decide" />
+                  <node concept="3cmrfG" id="5pBHv2JexFk" role="37wK5m">
+                    <property role="3cmrfH" value="50" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="7KZa521gAw7" role="3uHU7w">
-                  <node concept="2OqwBi" id="7KZa521g$Fv" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7KZa521gyXs" role="2Oq$k0">
-                      <node concept="2JrnkZ" id="7KZa521gyLr" role="2Oq$k0">
-                        <node concept="37vLTw" id="7KZa521gtWQ" role="2JrQYb">
-                          <ref role="3cqZAo" node="3acDVtIwdER" resolve="currentParent" />
-                        </node>
+                <node concept="1Wc70l" id="7KZa521gvkR" role="3uHU7B">
+                  <node concept="2OqwBi" id="7KZa521gwtD" role="3uHU7B">
+                    <node concept="2OqwBi" id="7KZa521gvLb" role="2Oq$k0">
+                      <node concept="2GrUjf" id="7KZa521gv$H" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3acDVtIwdFi" resolve="cl" />
                       </node>
-                      <node concept="liA8E" id="7KZa521g$0Q" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getChildren(java.lang.String):java.lang.Iterable" resolve="getChildren" />
-                        <node concept="2OqwBi" id="7KZa521g_73" role="37wK5m">
-                          <node concept="2GrUjf" id="7KZa521g$qC" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="3acDVtIwdFi" resolve="cl" />
-                          </node>
-                          <node concept="3TrcHB" id="7KZa521g_Bg" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
-                          </node>
-                        </node>
+                      <node concept="3TrcHB" id="7KZa521gwbf" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpce:fA0lm$B" resolve="metaClass" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7KZa521gAh5" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                    <node concept="3t7uKx" id="7KZa521gwPM" role="2OqNvi">
+                      <node concept="uoxfO" id="7KZa521gwPO" role="3t7uKA">
+                        <ref role="uo_Cq" to="tpce:fLJjDmT" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="liA8E" id="7KZa521gAK7" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                  <node concept="2OqwBi" id="7KZa521gAw7" role="3uHU7w">
+                    <node concept="2OqwBi" id="7KZa521g$Fv" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7KZa521gyXs" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="7KZa521gyLr" role="2Oq$k0">
+                          <node concept="37vLTw" id="7KZa521gtWQ" role="2JrQYb">
+                            <ref role="3cqZAo" node="3acDVtIwdER" resolve="currentParent" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7KZa521g$0Q" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getChildren(java.lang.String):java.lang.Iterable" resolve="getChildren" />
+                          <node concept="2OqwBi" id="7KZa521g_73" role="37wK5m">
+                            <node concept="2GrUjf" id="7KZa521g$qC" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="3acDVtIwdFi" resolve="cl" />
+                            </node>
+                            <node concept="3TrcHB" id="7KZa521g_Bg" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="7KZa521gAh5" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7KZa521gAK7" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+                    </node>
                   </node>
                 </node>
               </node>
