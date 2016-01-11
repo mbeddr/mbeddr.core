@@ -1795,6 +1795,26 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
+    <node concept="N3Fnw" id="2y8cGnjVxx$" role="N3F5h">
+      <property role="TrG5h" value="fileno" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3TlMh2" id="2y8cGnjVwYR" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="2y8cGnjVy45" role="1UOdpc">
+        <property role="TrG5h" value="stream" />
+        <node concept="3wxxNl" id="2y8cGnjVy4t" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="2y8cGnjVy44" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="137zkozycEG" resolve="FILE" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="rcWE1" id="1WTn9U1aZnj" role="rcWEr">
       <property role="rcWEL" value="&lt;stdio.h&gt;" />
     </node>
