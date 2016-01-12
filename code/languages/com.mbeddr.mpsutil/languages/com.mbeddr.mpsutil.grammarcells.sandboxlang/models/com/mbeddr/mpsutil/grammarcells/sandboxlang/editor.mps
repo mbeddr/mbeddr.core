@@ -968,5 +968,13 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7FkgTXZtQf_">
+    <ref role="1XX52x" to="ibwz:7FkgTXZtQe1" resolve="TEST_EnumWrapper" />
+    <node concept="1kIj98" id="7FkgTXZtQg5" role="2wV5jI">
+      <node concept="3F0A7n" id="7FkgTXZtQgm" role="1kIj9b">
+        <ref role="1NtTu8" to="ibwz:7FkgTXZtQgh" resolve="enum1" />
+      </node>
+    </node>
+  </node>
 </model>
 
