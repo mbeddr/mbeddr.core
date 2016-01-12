@@ -10141,6 +10141,9 @@
         <node concept="3LEDTM" id="3Z5D5F3sNZs" role="3LEDUa">
           <ref role="3LEDTN" node="7eF9rfAuSQI" resolve="com.mbeddr.analyses.sat4j.fm.pluginSolution" />
         </node>
+        <node concept="3LEDTy" id="2x4tvDgdPAL" role="3LEDUa">
+          <ref role="3LEDTV" node="4Q07H0PRtb8" resolve="com.mbeddr.analyses.fm.base" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5dchr4Qjb5x" role="3989C9">
