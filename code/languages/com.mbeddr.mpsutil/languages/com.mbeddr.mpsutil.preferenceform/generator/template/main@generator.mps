@@ -3716,6 +3716,40 @@
   <node concept="312cEu" id="hB4myvK">
     <property role="TrG5h" value="MyProjectPreferenceComponent" />
     <property role="3GE5qa" value="project" />
+    <node concept="Wx3nA" id="3qLkBCDQu$7" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="PREF_COMP_KEY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3qLkBCDQsiK" role="1B3o_S" />
+      <node concept="3uibUv" id="3qLkBCDQBFE" role="1tU5fm">
+        <ref role="3uigEE" to="zn9m:~Key" resolve="Key" />
+      </node>
+      <node concept="2YIFZM" id="3qLkBCDQC2$" role="33vP2m">
+        <ref role="37wK5l" to="zn9m:~Key.create(java.lang.String):com.intellij.openapi.util.Key" resolve="create" />
+        <ref role="1Pybhc" to="zn9m:~Key" resolve="Key" />
+        <node concept="Xl_RD" id="3qLkBCDQFdI" role="37wK5m">
+          <property role="Xl_RC" value="" />
+          <node concept="17Uvod" id="3qLkBCDQFvr" role="lGtFl">
+            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+            <property role="2qtEX9" value="value" />
+            <node concept="3zFVjK" id="3qLkBCDQFvs" role="3zH0cK">
+              <node concept="3clFbS" id="3qLkBCDQFvt" role="2VODD2">
+                <node concept="3clFbF" id="3qLkBCDQFyJ" role="3cqZAp">
+                  <node concept="2OqwBi" id="3qLkBCDQFyL" role="3clFbG">
+                    <node concept="30H73N" id="3qLkBCDQFyM" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3qLkBCDQFyN" role="2OqNvi">
+                      <ref role="37wK5l" to="to3j:86yKXFUAXV" resolve="getPreferenceComponentName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3qLkBCDQ_RG" role="jymVt" />
     <node concept="Wx3nA" id="6BjjH1XGnM$" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -4428,6 +4462,40 @@
   <node concept="312cEu" id="X7OD3WwKWK">
     <property role="TrG5h" value="MyApplicationPreferenceComponent" />
     <property role="3GE5qa" value="application" />
+    <node concept="Wx3nA" id="3qLkBCDR$mr" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="PREF_COMP_KEY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3qLkBCDRzcP" role="1B3o_S" />
+      <node concept="3uibUv" id="3qLkBCDR$kR" role="1tU5fm">
+        <ref role="3uigEE" to="zn9m:~Key" resolve="Key" />
+      </node>
+      <node concept="2YIFZM" id="3qLkBCDR_yU" role="33vP2m">
+        <ref role="37wK5l" to="zn9m:~Key.create(java.lang.String):com.intellij.openapi.util.Key" resolve="create" />
+        <ref role="1Pybhc" to="zn9m:~Key" resolve="Key" />
+        <node concept="Xl_RD" id="3qLkBCDR_Bn" role="37wK5m">
+          <property role="Xl_RC" value="" />
+          <node concept="17Uvod" id="3qLkBCDR_DI" role="lGtFl">
+            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+            <property role="2qtEX9" value="value" />
+            <node concept="3zFVjK" id="3qLkBCDR_DJ" role="3zH0cK">
+              <node concept="3clFbS" id="3qLkBCDR_DK" role="2VODD2">
+                <node concept="3clFbF" id="3qLkBCDRBoA" role="3cqZAp">
+                  <node concept="2OqwBi" id="3qLkBCDRBoC" role="3clFbG">
+                    <node concept="30H73N" id="3qLkBCDRBoD" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3qLkBCDRBoE" role="2OqNvi">
+                      <ref role="37wK5l" to="to3j:86yKXFUAXV" resolve="getPreferenceComponentName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3qLkBCDRykB" role="jymVt" />
     <node concept="Wx3nA" id="5MwYr7OpeMz" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -6561,37 +6629,6 @@
         </node>
       </node>
     </node>
-    <node concept="2BZ0e9" id="1mrpzsIXFpL" role="2uRRBA">
-      <property role="TrG5h" value="PREF_COMP_KEY" />
-      <node concept="3Tm6S6" id="1mrpzsIXFpM" role="1B3o_S" />
-      <node concept="3uibUv" id="1mrpzsIXFwf" role="1tU5fm">
-        <ref role="3uigEE" to="zn9m:~Key" resolve="Key" />
-      </node>
-      <node concept="2ShNRf" id="1mrpzsIXFwp" role="33vP2m">
-        <node concept="1pGfFk" id="1mrpzsIXGeB" role="2ShVmc">
-          <ref role="37wK5l" to="zn9m:~Key.&lt;init&gt;(java.lang.String)" resolve="Key" />
-          <node concept="Xl_RD" id="1mrpzsIXGeF" role="37wK5m">
-            <property role="Xl_RC" value="" />
-            <node concept="17Uvod" id="1mrpzsIXGeI" role="lGtFl">
-              <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-              <property role="2qtEX9" value="value" />
-              <node concept="3zFVjK" id="1mrpzsIXGeJ" role="3zH0cK">
-                <node concept="3clFbS" id="1mrpzsIXGeK" role="2VODD2">
-                  <node concept="3clFbF" id="1mrpzsIXHia" role="3cqZAp">
-                    <node concept="2OqwBi" id="1mrpzsIXHO0" role="3clFbG">
-                      <node concept="30H73N" id="1mrpzsIXHi9" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1mrpzsIXI1N" role="2OqNvi">
-                        <ref role="37wK5l" to="to3j:86yKXFUAXV" resolve="getPreferenceComponentName" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="n94m4" id="1DjGUwRh5uU" role="lGtFl">
       <ref role="n9lRv" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
     </node>
@@ -6693,10 +6730,38 @@
             </node>
             <node concept="liA8E" id="1mrpzsIXIHU" role="2OqNvi">
               <ref role="37wK5l" to="zn9m:~UserDataHolder.putUserData(com.intellij.openapi.util.Key,java.lang.Object):void" resolve="putUserData" />
-              <node concept="2OqwBi" id="1mrpzsIXII1" role="37wK5m">
-                <node concept="2WthIp" id="1mrpzsIXII4" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="1mrpzsIXII6" role="2OqNvi">
-                  <ref role="2WH_rO" node="1mrpzsIXFpL" resolve="PREF_COMP_KEY" />
+              <node concept="10M0yZ" id="3qLkBCDQGUt" role="37wK5m">
+                <ref role="1PxDUh" node="hB4myvK" resolve="MyProjectPreferenceComponent" />
+                <ref role="3cqZAo" node="3qLkBCDQu$7" resolve="PREF_COMP_KEY" />
+                <node concept="1ZhdrF" id="3qLkBCDQH9O" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                  <property role="2qtEX8" value="classifier" />
+                  <node concept="3$xsQk" id="3qLkBCDQH9P" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDQH9Q" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDQI1O" role="3cqZAp">
+                        <node concept="2OqwBi" id="3qLkBCDQI1R" role="3clFbG">
+                          <node concept="1iwH7S" id="3qLkBCDQI1S" role="2Oq$k0" />
+                          <node concept="1iwH70" id="3qLkBCDQI1T" role="2OqNvi">
+                            <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
+                            <node concept="30H73N" id="3qLkBCDQI1U" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1ZhdrF" id="3qLkBCDQI$z" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                  <property role="2qtEX8" value="variableDeclaration" />
+                  <node concept="3$xsQk" id="3qLkBCDQI$$" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDQI$_" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDQITq" role="3cqZAp">
+                        <node concept="Xl_RD" id="3qLkBCDQITp" role="3clFbG">
+                          <property role="Xl_RC" value="PREF_COMP_KEY" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="2OqwBi" id="1mrpzsIXJhE" role="37wK5m">
@@ -6762,10 +6827,38 @@
             </node>
             <node concept="liA8E" id="1mrpzsIXKEa" role="2OqNvi">
               <ref role="37wK5l" to="zn9m:~UserDataHolder.putUserData(com.intellij.openapi.util.Key,java.lang.Object):void" resolve="putUserData" />
-              <node concept="2OqwBi" id="1mrpzsIXKEh" role="37wK5m">
-                <node concept="2WthIp" id="1mrpzsIXKEk" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="1mrpzsIXKEm" role="2OqNvi">
-                  <ref role="2WH_rO" node="1mrpzsIXFpL" resolve="PREF_COMP_KEY" />
+              <node concept="10M0yZ" id="3qLkBCDRuUL" role="37wK5m">
+                <ref role="3cqZAo" node="3qLkBCDQu$7" resolve="PREF_COMP_KEY" />
+                <ref role="1PxDUh" node="hB4myvK" resolve="MyProjectPreferenceComponent" />
+                <node concept="1ZhdrF" id="3qLkBCDRuUM" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                  <property role="2qtEX8" value="classifier" />
+                  <node concept="3$xsQk" id="3qLkBCDRuUN" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDRuUO" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDRuUP" role="3cqZAp">
+                        <node concept="2OqwBi" id="3qLkBCDRuUQ" role="3clFbG">
+                          <node concept="1iwH7S" id="3qLkBCDRuUR" role="2Oq$k0" />
+                          <node concept="1iwH70" id="3qLkBCDRuUS" role="2OqNvi">
+                            <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
+                            <node concept="30H73N" id="3qLkBCDRuUT" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1ZhdrF" id="3qLkBCDRuUU" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                  <property role="2qtEX8" value="variableDeclaration" />
+                  <node concept="3$xsQk" id="3qLkBCDRuUV" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDRuUW" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDRuUX" role="3cqZAp">
+                        <node concept="Xl_RD" id="3qLkBCDRuUY" role="3clFbG">
+                          <property role="Xl_RC" value="PREF_COMP_KEY" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="10Nm6u" id="1mrpzsIXKFs" role="37wK5m" />
@@ -6803,29 +6896,39 @@
                     <node concept="3uibUv" id="2i1sIFOyPtf" role="1tU5fm">
                       <ref role="3uigEE" to="zn9m:~Key" resolve="Key" />
                     </node>
-                    <node concept="2ShNRf" id="2i1sIFOyPtg" role="33vP2m">
-                      <node concept="1pGfFk" id="2i1sIFOyPth" role="2ShVmc">
-                        <ref role="37wK5l" to="zn9m:~Key.&lt;init&gt;(java.lang.String)" resolve="Key" />
-                        <node concept="Xl_RD" id="2i1sIFOyPti" role="37wK5m">
-                          <property role="Xl_RC" value="" />
-                          <node concept="17Uvod" id="2i1sIFOyPtj" role="lGtFl">
-                            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                            <property role="2qtEX9" value="value" />
-                            <node concept="3zFVjK" id="2i1sIFOyPtk" role="3zH0cK">
-                              <node concept="3clFbS" id="2i1sIFOyPtl" role="2VODD2">
-                                <node concept="3clFbF" id="2i1sIFOyPtm" role="3cqZAp">
-                                  <node concept="2OqwBi" id="2i1sIFOyPtn" role="3clFbG">
-                                    <node concept="2OqwBi" id="2i1sIFOyPto" role="2Oq$k0">
-                                      <node concept="30H73N" id="2i1sIFOyPA_" role="2Oq$k0" />
-                                      <node concept="3TrEf2" id="2i1sIFOyPJx" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="3iid:86yKXFVl2p" />
-                                      </node>
-                                    </node>
-                                    <node concept="2qgKlT" id="2i1sIFOyPtu" role="2OqNvi">
-                                      <ref role="37wK5l" to="to3j:86yKXFUAXV" resolve="getPreferenceComponentName" />
+                    <node concept="10M0yZ" id="3qLkBCDRFhi" role="33vP2m">
+                      <ref role="1PxDUh" node="X7OD3WwKWK" resolve="MyApplicationPreferenceComponent" />
+                      <ref role="3cqZAo" node="3qLkBCDR$mr" resolve="PREF_COMP_KEY" />
+                      <node concept="1ZhdrF" id="3qLkBCDRFhj" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                        <property role="2qtEX8" value="classifier" />
+                        <node concept="3$xsQk" id="3qLkBCDRFhk" role="3$ytzL">
+                          <node concept="3clFbS" id="3qLkBCDRFhl" role="2VODD2">
+                            <node concept="3clFbF" id="3qLkBCDRGwP" role="3cqZAp">
+                              <node concept="2OqwBi" id="3qLkBCDRGwQ" role="3clFbG">
+                                <node concept="1iwH7S" id="3qLkBCDRGwR" role="2Oq$k0" />
+                                <node concept="1iwH70" id="3qLkBCDRGwS" role="2OqNvi">
+                                  <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
+                                  <node concept="2OqwBi" id="3qLkBCDRGwT" role="1iwH7V">
+                                    <node concept="30H73N" id="3qLkBCDRGwU" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="3qLkBCDRGwV" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="3iid:86yKXFVl2p" />
                                     </node>
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1ZhdrF" id="3qLkBCDRFhr" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                        <property role="2qtEX8" value="variableDeclaration" />
+                        <node concept="3$xsQk" id="3qLkBCDRFhs" role="3$ytzL">
+                          <node concept="3clFbS" id="3qLkBCDRFht" role="2VODD2">
+                            <node concept="3clFbF" id="3qLkBCDRFhu" role="3cqZAp">
+                              <node concept="Xl_RD" id="3qLkBCDRFhv" role="3clFbG">
+                                <property role="Xl_RC" value="PREF_COMP_KEY" />
                               </node>
                             </node>
                           </node>
@@ -6907,37 +7010,47 @@
                     <node concept="3uibUv" id="1mrpzsIXNyx" role="1tU5fm">
                       <ref role="3uigEE" to="zn9m:~Key" resolve="Key" />
                     </node>
-                    <node concept="2ShNRf" id="1mrpzsIXNy_" role="33vP2m">
-                      <node concept="1pGfFk" id="1mrpzsIXNyA" role="2ShVmc">
-                        <ref role="37wK5l" to="zn9m:~Key.&lt;init&gt;(java.lang.String)" resolve="Key" />
-                        <node concept="Xl_RD" id="1mrpzsIXNyB" role="37wK5m">
-                          <property role="Xl_RC" value="" />
-                          <node concept="17Uvod" id="1mrpzsIXNyC" role="lGtFl">
-                            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                            <property role="2qtEX9" value="value" />
-                            <node concept="3zFVjK" id="1mrpzsIXNyD" role="3zH0cK">
-                              <node concept="3clFbS" id="1mrpzsIXNyE" role="2VODD2">
-                                <node concept="3clFbF" id="1mrpzsIXNyF" role="3cqZAp">
-                                  <node concept="2OqwBi" id="1mrpzsIXNyG" role="3clFbG">
-                                    <node concept="2OqwBi" id="1mrpzsIXNyH" role="2Oq$k0">
-                                      <node concept="1PxgMI" id="1mrpzsIXNyI" role="2Oq$k0">
-                                        <ref role="1PxNhF" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
-                                        <node concept="2OqwBi" id="1mrpzsIXNyJ" role="1PxMeX">
-                                          <node concept="30H73N" id="1mrpzsIXNyK" role="2Oq$k0" />
-                                          <node concept="3TrEf2" id="1mrpzsIXNyL" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
-                                          </node>
+                    <node concept="10M0yZ" id="3qLkBCDQU_j" role="33vP2m">
+                      <ref role="1PxDUh" node="hB4myvK" resolve="MyProjectPreferenceComponent" />
+                      <ref role="3cqZAo" node="3qLkBCDQu$7" resolve="PREF_COMP_KEY" />
+                      <node concept="1ZhdrF" id="3qLkBCDQWJf" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                        <property role="2qtEX8" value="classifier" />
+                        <node concept="3$xsQk" id="3qLkBCDQWJg" role="3$ytzL">
+                          <node concept="3clFbS" id="3qLkBCDQWJh" role="2VODD2">
+                            <node concept="3clFbF" id="3qLkBCDQYUm" role="3cqZAp">
+                              <node concept="2OqwBi" id="3qLkBCDQYUn" role="3clFbG">
+                                <node concept="1iwH7S" id="3qLkBCDQYUo" role="2Oq$k0" />
+                                <node concept="1iwH70" id="3qLkBCDQYUp" role="2OqNvi">
+                                  <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
+                                  <node concept="2OqwBi" id="3qLkBCDQYUq" role="1iwH7V">
+                                    <node concept="1PxgMI" id="3qLkBCDQYUr" role="2Oq$k0">
+                                      <ref role="1PxNhF" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
+                                      <node concept="2OqwBi" id="3qLkBCDQYUs" role="1PxMeX">
+                                        <node concept="30H73N" id="3qLkBCDQYUt" role="2Oq$k0" />
+                                        <node concept="3TrEf2" id="3qLkBCDQYUu" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                                         </node>
                                       </node>
-                                      <node concept="3TrEf2" id="1mrpzsIXNyM" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="3iid:86yKXFVl2p" />
-                                      </node>
                                     </node>
-                                    <node concept="2qgKlT" id="1mrpzsIXNyN" role="2OqNvi">
-                                      <ref role="37wK5l" to="to3j:86yKXFUAXV" resolve="getPreferenceComponentName" />
+                                    <node concept="3TrEf2" id="3qLkBCDQYUv" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="3iid:86yKXFVl2p" />
                                     </node>
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1ZhdrF" id="3qLkBCDR16H" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                        <property role="2qtEX8" value="variableDeclaration" />
+                        <node concept="3$xsQk" id="3qLkBCDR16I" role="3$ytzL">
+                          <node concept="3clFbS" id="3qLkBCDR16J" role="2VODD2">
+                            <node concept="3clFbF" id="3qLkBCDR2mf" role="3cqZAp">
+                              <node concept="Xl_RD" id="3qLkBCDR2me" role="3clFbG">
+                                <property role="Xl_RC" value="PREF_COMP_KEY" />
                               </node>
                             </node>
                           </node>
@@ -8607,37 +8720,6 @@
         </node>
       </node>
     </node>
-    <node concept="2BZ0e9" id="2i1sIFOyHYD" role="2uRRBG">
-      <property role="TrG5h" value="PREF_COMP_KEY" />
-      <node concept="3Tm6S6" id="2i1sIFOyHYE" role="1B3o_S" />
-      <node concept="3uibUv" id="2i1sIFOyHYF" role="1tU5fm">
-        <ref role="3uigEE" to="zn9m:~Key" resolve="Key" />
-      </node>
-      <node concept="2ShNRf" id="2i1sIFOyHYG" role="33vP2m">
-        <node concept="1pGfFk" id="2i1sIFOyHYH" role="2ShVmc">
-          <ref role="37wK5l" to="zn9m:~Key.&lt;init&gt;(java.lang.String)" resolve="Key" />
-          <node concept="Xl_RD" id="2i1sIFOyHYI" role="37wK5m">
-            <property role="Xl_RC" value="" />
-            <node concept="17Uvod" id="2i1sIFOyHYJ" role="lGtFl">
-              <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-              <property role="2qtEX9" value="value" />
-              <node concept="3zFVjK" id="2i1sIFOyHYK" role="3zH0cK">
-                <node concept="3clFbS" id="2i1sIFOyHYL" role="2VODD2">
-                  <node concept="3clFbF" id="2i1sIFOyHYM" role="3cqZAp">
-                    <node concept="2OqwBi" id="2i1sIFOyHYN" role="3clFbG">
-                      <node concept="30H73N" id="2i1sIFOyHYO" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="2i1sIFOyHYP" role="2OqNvi">
-                        <ref role="37wK5l" to="to3j:86yKXFUAXV" resolve="getPreferenceComponentName" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="n94m4" id="1DjGUwRfWot" role="lGtFl">
       <ref role="n9lRv" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
     </node>
@@ -8735,10 +8817,38 @@
             </node>
             <node concept="liA8E" id="2i1sIFOyJCq" role="2OqNvi">
               <ref role="37wK5l" to="zn9m:~UserDataHolder.putUserData(com.intellij.openapi.util.Key,java.lang.Object):void" resolve="putUserData" />
-              <node concept="2OqwBi" id="2i1sIFOyJCR" role="37wK5m">
-                <node concept="2WthIp" id="2i1sIFOyJCU" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="2i1sIFOyJCW" role="2OqNvi">
-                  <ref role="2WH_rO" node="2i1sIFOyHYD" resolve="PREF_COMP_KEY" />
+              <node concept="10M0yZ" id="3qLkBCDRCVp" role="37wK5m">
+                <ref role="1PxDUh" node="X7OD3WwKWK" resolve="MyApplicationPreferenceComponent" />
+                <ref role="3cqZAo" node="3qLkBCDR$mr" resolve="PREF_COMP_KEY" />
+                <node concept="1ZhdrF" id="3qLkBCDRDPX" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                  <property role="2qtEX8" value="classifier" />
+                  <node concept="3$xsQk" id="3qLkBCDRDPY" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDRDPZ" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDRDXz" role="3cqZAp">
+                        <node concept="2OqwBi" id="3qLkBCDRDX$" role="3clFbG">
+                          <node concept="1iwH7S" id="3qLkBCDRDX_" role="2Oq$k0" />
+                          <node concept="1iwH70" id="3qLkBCDRDXA" role="2OqNvi">
+                            <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
+                            <node concept="30H73N" id="3qLkBCDRDXB" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1ZhdrF" id="3qLkBCDRE9d" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                  <property role="2qtEX8" value="variableDeclaration" />
+                  <node concept="3$xsQk" id="3qLkBCDRE9e" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDRE9f" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDREtI" role="3cqZAp">
+                        <node concept="Xl_RD" id="3qLkBCDREtH" role="3clFbG">
+                          <property role="Xl_RC" value="PREF_COMP_KEY" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="2OqwBi" id="2i1sIFOyJE5" role="37wK5m">
@@ -8803,10 +8913,38 @@
             </node>
             <node concept="liA8E" id="2i1sIFOyKs6" role="2OqNvi">
               <ref role="37wK5l" to="zn9m:~UserDataHolder.putUserData(com.intellij.openapi.util.Key,java.lang.Object):void" resolve="putUserData" />
-              <node concept="2OqwBi" id="2i1sIFOyKs7" role="37wK5m">
-                <node concept="2WthIp" id="2i1sIFOyKs8" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="2i1sIFOyKs9" role="2OqNvi">
-                  <ref role="2WH_rO" node="2i1sIFOyHYD" resolve="PREF_COMP_KEY" />
+              <node concept="10M0yZ" id="3qLkBCDREBF" role="37wK5m">
+                <ref role="1PxDUh" node="X7OD3WwKWK" resolve="MyApplicationPreferenceComponent" />
+                <ref role="3cqZAo" node="3qLkBCDR$mr" resolve="PREF_COMP_KEY" />
+                <node concept="1ZhdrF" id="3qLkBCDREBG" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070533707846/1144433057691" />
+                  <property role="2qtEX8" value="classifier" />
+                  <node concept="3$xsQk" id="3qLkBCDREBH" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDREBI" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDREBJ" role="3cqZAp">
+                        <node concept="2OqwBi" id="3qLkBCDREBK" role="3clFbG">
+                          <node concept="1iwH7S" id="3qLkBCDREBL" role="2Oq$k0" />
+                          <node concept="1iwH70" id="3qLkBCDREBM" role="2OqNvi">
+                            <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
+                            <node concept="30H73N" id="3qLkBCDREBN" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1ZhdrF" id="3qLkBCDREBO" role="lGtFl">
+                  <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                  <property role="2qtEX8" value="variableDeclaration" />
+                  <node concept="3$xsQk" id="3qLkBCDREBP" role="3$ytzL">
+                    <node concept="3clFbS" id="3qLkBCDREBQ" role="2VODD2">
+                      <node concept="3clFbF" id="3qLkBCDREBR" role="3cqZAp">
+                        <node concept="Xl_RD" id="3qLkBCDREBS" role="3clFbG">
+                          <property role="Xl_RC" value="PREF_COMP_KEY" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="10Nm6u" id="2i1sIFOyL0a" role="37wK5m" />
