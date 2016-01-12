@@ -20,6 +20,7 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
+    <import index="6pd5" ref="r:6005cceb-001a-4834-9044-19c5b9e838f3(com.mbeddr.analyses.cbmc.statemachines.rt.counterexample.lifted.model)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -1364,6 +1365,180 @@
           </node>
         </node>
         <node concept="3clFbH" id="1fLSIrNnaWn" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="38xi_3mwZTO">
+    <property role="TrG5h" value="SM0" />
+    <node concept="1LZb2c" id="38xi_3mwZTU" role="1SL9yI">
+      <property role="TrG5h" value="testSM0Counterexample" />
+      <node concept="3cqZAl" id="38xi_3mwZTV" role="3clF45" />
+      <node concept="3clFbS" id="38xi_3mwZTW" role="3clF47">
+        <node concept="3cpWs8" id="38xi_3mwZTX" role="3cqZAp">
+          <node concept="3cpWsn" id="38xi_3mwZTY" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="38xi_3mwZTZ" role="1tU5fm" />
+            <node concept="BaHAS" id="38xi_3mwZU0" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.scomponents" />
+              <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.statemachines" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="38xi_3mzRKI" role="3cqZAp" />
+        <node concept="3cpWs8" id="38xi_3mwZU1" role="3cqZAp">
+          <node concept="3cpWsn" id="38xi_3mwZU2" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="2OqwBi" id="38xi_3mwZU3" role="33vP2m">
+              <node concept="NRdvd" id="38xi_3mwZU4" role="2Oq$k0">
+                <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="37vLTw" id="38xi_3mwZU5" role="37wK5m">
+                  <ref role="3cqZAo" node="38xi_3mwZTY" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="38xi_3mwZU6" role="37wK5m">
+                  <property role="Xl_RC" value="SM0" />
+                </node>
+                <node concept="Xl_RD" id="38xi_3mwZU7" role="37wK5m">
+                  <property role="Xl_RC" value="testCounterexample" />
+                </node>
+              </node>
+              <node concept="34jXtK" id="38xi_3mwZU8" role="2OqNvi">
+                <node concept="3cmrfG" id="38xi_3mwZU9" role="25WWJ7">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="3uibUv" id="38xi_3mwZUa" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="38xi_3m$ZsA" role="3cqZAp" />
+        <node concept="3clFbF" id="38xi_3m$Zxw" role="3cqZAp">
+          <node concept="2YIFZM" id="38xi_3m$ZFD" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="38xi_3m$ZHY" role="37wK5m">
+              <ref role="3cqZAo" node="38xi_3mwZU2" resolve="res" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="38xi_3m$ZIW" role="3cqZAp" />
+        <node concept="38rL1p" id="38xi_3mwZUh" role="3cqZAp">
+          <node concept="38rIoz" id="38xi_3mwZUi" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="testCounterexample" />
+            <node concept="3Tqbb2" id="38xi_3m$0i1" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUj" role="38rM$J">
+            <property role="38rIoG" value="state" />
+            <property role="38rMdH" value="S1" />
+            <node concept="3Tqbb2" id="38xi_3mwZUk" role="38rYrG">
+              <ref role="ehGHo" to="clqz:50Lk78xBraf" resolve="State" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUl" role="38rM$J">
+            <property role="38rIoG" value="cnt.localVar" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="38xi_3mwZUm" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUn" role="38rM$J">
+            <property role="38rIoG" value="initialize statemachine" />
+            <property role="38rMdH" value="cnt" />
+            <node concept="3Tqbb2" id="38xi_3mwZUo" role="38rYrG">
+              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUp" role="38rM$J">
+            <property role="38rIoG" value="state" />
+            <property role="38rMdH" value="S1" />
+            <node concept="3Tqbb2" id="38xi_3mwZUq" role="38rYrG">
+              <ref role="ehGHo" to="clqz:50Lk78xBraf" resolve="State" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUr" role="38rM$J">
+            <property role="38rIoG" value="cnt.localVar" />
+            <property role="38rMdH" value="1" />
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUs" role="38rM$J">
+            <property role="38rIoG" value="leave statemachine init" />
+            <property role="38rMdH" value="cnt" />
+            <node concept="3Tqbb2" id="38xi_3mwZUt" role="38rYrG">
+              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3m_nbo" role="38rM$J">
+            <property role="38rIoG" value="arg" />
+            <property role="38rMdH" value="1" />
+            <node concept="3Tqbb2" id="38xi_3m_ndp" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUu" role="38rM$J">
+            <property role="38rIoG" value="trigger event" />
+            <property role="38rMdH" value="cnt-&gt;e" />
+            <node concept="3Tqbb2" id="38xi_3mwZUv" role="38rYrG">
+              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUw" role="38rM$J">
+            <property role="38rIoG" value="state" />
+            <property role="38rMdH" value="S2" />
+            <node concept="3Tqbb2" id="38xi_3mwZUx" role="38rYrG">
+              <ref role="ehGHo" to="clqz:50Lk78xBraf" resolve="State" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUy" role="38rM$J">
+            <property role="38rIoG" value="leave trigger event" />
+            <property role="38rMdH" value="e" />
+            <node concept="3Tqbb2" id="38xi_3mwZUz" role="38rYrG">
+              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3m_nin" role="38rM$J">
+            <property role="38rIoG" value="arg" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="38xi_3m_nio" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZU$" role="38rM$J">
+            <property role="38rIoG" value="trigger event" />
+            <property role="38rMdH" value="cnt-&gt;e" />
+            <node concept="3Tqbb2" id="38xi_3mwZU_" role="38rYrG">
+              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3m__KU" role="38rM$J">
+            <property role="38rIoG" value="state" />
+            <property role="38rMdH" value="S1" />
+            <node concept="3Tqbb2" id="38xi_3m__KV" role="38rYrG">
+              <ref role="ehGHo" to="clqz:50Lk78xBraf" resolve="State" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUC" role="38rM$J">
+            <property role="38rIoG" value="leave trigger event" />
+            <property role="38rMdH" value="e" />
+            <node concept="3Tqbb2" id="38xi_3mwZUD" role="38rYrG">
+              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="38xi_3mwZUE" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="Assertion Violated" />
+            <node concept="3Tqbb2" id="38xi_3mwZUF" role="38rYrG">
+              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="38xi_3mwZUG" role="2v6RBE">
+            <ref role="3cqZAo" node="38xi_3mwZU2" resolve="res" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

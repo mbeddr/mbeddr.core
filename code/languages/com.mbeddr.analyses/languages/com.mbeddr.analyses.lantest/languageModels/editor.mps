@@ -38,15 +38,33 @@
     </node>
   </node>
   <node concept="24kQdi" id="2A9nHKAOvR1">
-    <ref role="1XX52x" to="fowb:2A9nHKAOvQN" resolve="RandomChooserFromModel" />
+    <ref role="1XX52x" to="fowb:2A9nHKAOvQN" resolve="RandomImplementationModuleFromModelSeed" />
     <node concept="3EZMnI" id="2A9nHKAOvR3" role="2wV5jI">
       <node concept="3F0ifn" id="2A9nHKAOvRg" role="3EZMnx">
-        <property role="3F0ifm" value="random root from model:" />
+        <property role="3F0ifm" value="random module from model:" />
       </node>
       <node concept="3F1sOY" id="2A9nHKAOvRs" role="3EZMnx">
         <ref role="1NtTu8" to="fowb:2A9nHKAOvQS" />
       </node>
       <node concept="l2Vlx" id="2A9nHKAOvR6" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="30nlpkLb$Zv">
+    <ref role="1XX52x" to="fowb:30nlpkLb$Zl" resolve="SpecificConcepts" />
+    <node concept="3F0ifn" id="30nlpkLb$Zx" role="2wV5jI">
+      <property role="3F0ifm" value="concecpts_chooser_testing" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="52eR6w5Pjou">
+    <ref role="1XX52x" to="fowb:52eR6w5Pjok" resolve="RandomImplementationModuleFromSolution" />
+    <node concept="3EZMnI" id="52eR6w5Pjow" role="2wV5jI">
+      <node concept="3F0ifn" id="52eR6w5Pjox" role="3EZMnx">
+        <property role="3F0ifm" value="random module from solution:" />
+      </node>
+      <node concept="3F1sOY" id="52eR6w5Pjoy" role="3EZMnx">
+        <ref role="1NtTu8" to="fowb:52eR6w5Pjol" />
+      </node>
+      <node concept="l2Vlx" id="52eR6w5Pjoz" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -143,7 +143,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -351,6 +350,18 @@
       </node>
     </node>
     <node concept="2tJIrI" id="33cGTVo65vP" role="jymVt" />
+    <node concept="312cEg" id="38xi_3mEBy$" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="numberOfSavedModels" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="38xi_3mEB6I" role="1B3o_S" />
+      <node concept="10Oyi0" id="38xi_3mEBxk" role="1tU5fm" />
+      <node concept="NWlO9" id="38xi_3mECnG" role="lGtFl">
+        <property role="NWlVz" value="Number of saved models." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="38xi_3mEBX8" role="jymVt" />
     <node concept="3clFb_" id="33cGTVo65vQ" role="jymVt">
       <property role="TrG5h" value="saveRootModule" />
       <property role="IEkAT" value="false" />
@@ -371,7 +382,11 @@
         </node>
         <node concept="3clFbJ" id="33cGTVo65vS" role="3cqZAp">
           <node concept="3clFbS" id="33cGTVo65vT" role="3clFbx">
-            <node concept="3cpWs6" id="33cGTVo65vU" role="3cqZAp" />
+            <node concept="3cpWs6" id="33cGTVo65vU" role="3cqZAp">
+              <node concept="37vLTw" id="3acDVtIxBaN" role="3cqZAk">
+                <ref role="3cqZAo" node="38xi_3mEBy$" resolve="numberOfSavedModels" />
+              </node>
+            </node>
           </node>
           <node concept="1rXfSq" id="33cGTVo65vV" role="3clFbw">
             <ref role="37wK5l" node="33cGTVo65wT" resolve="checkIfModuleAlreadyExists" />
@@ -428,7 +443,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="33cGTVo65wn" role="3cqZAp" />
+        <node concept="3clFbF" id="3acDVtIvxy7" role="3cqZAp">
+          <node concept="3uNrnE" id="3acDVtIvxY8" role="3clFbG">
+            <node concept="37vLTw" id="3acDVtIvxYa" role="2$L3a6">
+              <ref role="3cqZAo" node="38xi_3mEBy$" resolve="numberOfSavedModels" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3acDVtIvyhK" role="3cqZAp" />
         <node concept="1X3_iC" id="26HFG8DLpHN" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -532,6 +554,11 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs6" id="3acDVtIvwVK" role="3cqZAp">
+          <node concept="37vLTw" id="3acDVtIvxhR" role="3cqZAk">
+            <ref role="3cqZAo" node="38xi_3mEBy$" resolve="numberOfSavedModels" />
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="3CoVb8q5wFO" role="3clF46">
         <property role="TrG5h" value="proj" />
@@ -550,7 +577,7 @@
           <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
-      <node concept="3cqZAl" id="33cGTVo65wP" role="3clF45" />
+      <node concept="10Oyi0" id="3acDVtIvwp1" role="3clF45" />
       <node concept="3Tm1VV" id="33cGTVo65wQ" role="1B3o_S" />
       <node concept="NWlO9" id="33cGTVo65wR" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
