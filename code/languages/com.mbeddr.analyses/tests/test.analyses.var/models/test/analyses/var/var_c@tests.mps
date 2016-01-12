@@ -1487,8 +1487,8 @@
           <node concept="3cpWsn" id="1X8myJOIgNF" role="3cpWs9">
             <property role="TrG5h" value="r" />
             <node concept="_YKpA" id="1X8myJOIgNG" role="1tU5fm">
-              <node concept="3uibUv" id="1X8myJOIgNH" role="_ZDj9">
-                <ref role="3uigEE" to="vy7l:1X8myJOPCj$" resolve="VariabilityAnalysisResult" />
+              <node concept="3uibUv" id="4Q07H0PQQVw" role="_ZDj9">
+                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
               </node>
             </node>
             <node concept="NRdvd" id="1X8myJOVGc8" role="33vP2m">
@@ -1517,8 +1517,8 @@
           <node concept="3cpWsn" id="1X8myJOIQVk" role="3cpWs9">
             <property role="TrG5h" value="successfulResults" />
             <node concept="A3Dl8" id="1X8myJOIQV1" role="1tU5fm">
-              <node concept="3uibUv" id="1X8myJOIQV4" role="A3Ik2">
-                <ref role="3uigEE" to="vy7l:1X8myJOPCj$" resolve="VariabilityAnalysisResult" />
+              <node concept="3uibUv" id="4Q07H0PQR1S" role="A3Ik2">
+                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
               </node>
             </node>
             <node concept="2OqwBi" id="1X8myJOIQVl" role="33vP2m">
