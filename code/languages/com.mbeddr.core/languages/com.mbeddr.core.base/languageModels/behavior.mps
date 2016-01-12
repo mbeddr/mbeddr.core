@@ -6281,16 +6281,74 @@
             <node concept="3cpWs8" id="4Wn4fzjJqF1" role="3cqZAp">
               <node concept="3cpWsn" id="4Wn4fzjJqF2" role="3cpWs9">
                 <property role="TrG5h" value="s" />
-                <node concept="3uibUv" id="4Wn4fzjJqF3" role="1tU5fm">
-                  <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+                <node concept="3uibUv" id="1M11zW0wAh0" role="1tU5fm">
+                  <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                 </node>
                 <node concept="1eOMI4" id="4Wn4fzjJqF4" role="33vP2m">
                   <node concept="10QFUN" id="4Wn4fzjJqF5" role="1eOMHV">
-                    <node concept="3uibUv" id="4Wn4fzjJqF6" role="10QFUM">
-                      <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+                    <node concept="3uibUv" id="1M11zW0wAaT" role="10QFUM">
+                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                     </node>
                     <node concept="37vLTw" id="4Wn4fzjJqF7" role="10QFUP">
                       <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1M11zW0wBTj" role="3cqZAp">
+              <node concept="3clFbS" id="1M11zW0wBTl" role="3clFbx">
+                <node concept="3cpWs6" id="1M11zW0wCxq" role="3cqZAp">
+                  <node concept="2OqwBi" id="1M11zW0wDZo" role="3cqZAk">
+                    <node concept="2OqwBi" id="1M11zW0wDTN" role="2Oq$k0">
+                      <node concept="2YIFZM" id="1M11zW0wDTO" role="2Oq$k0">
+                        <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
+                        <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
+                      </node>
+                      <node concept="liA8E" id="1M11zW0wDTP" role="2OqNvi">
+                        <ref role="37wK5l" to="3ju5:~FileSystem.getBundleHome(jetbrains.mps.vfs.IFile):jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
+                        <node concept="2OqwBi" id="1M11zW0wDTQ" role="37wK5m">
+                          <node concept="37vLTw" id="1M11zW0wDTR" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
+                          </node>
+                          <node concept="liA8E" id="1M11zW0wDTS" role="2OqNvi">
+                            <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="1M11zW0wE7n" role="2OqNvi">
+                      <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="1M11zW0wDCe" role="3clFbw">
+                <node concept="2OqwBi" id="1M11zW0wC2C" role="3uHU7B">
+                  <node concept="37vLTw" id="1M11zW0wC0H" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
+                  </node>
+                  <node concept="liA8E" id="1M11zW0wCiA" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.isPackaged():boolean" resolve="isPackaged" />
+                  </node>
+                </node>
+                <node concept="3y3z36" id="1M11zW0wDIe" role="3uHU7w">
+                  <node concept="10Nm6u" id="1M11zW0wDNM" role="3uHU7w" />
+                  <node concept="2OqwBi" id="1M11zW0wCWe" role="3uHU7B">
+                    <node concept="2YIFZM" id="1M11zW0wCSf" role="2Oq$k0">
+                      <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
+                      <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="1M11zW0wD17" role="2OqNvi">
+                      <ref role="37wK5l" to="3ju5:~FileSystem.getBundleHome(jetbrains.mps.vfs.IFile):jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
+                      <node concept="2OqwBi" id="1M11zW0wDdK" role="37wK5m">
+                        <node concept="37vLTw" id="1M11zW0wD8O" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
+                        </node>
+                        <node concept="liA8E" id="1M11zW0wDx0" role="2OqNvi">
+                          <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6313,55 +6371,10 @@
             </node>
           </node>
           <node concept="2ZW3vV" id="2iGZqsHIJpQ" role="3clFbw">
-            <node concept="3uibUv" id="2iGZqsHIJsf" role="2ZW6by">
-              <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+            <node concept="3uibUv" id="1M11zW0wA8m" role="2ZW6by">
+              <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
             </node>
             <node concept="37vLTw" id="2iGZqsHIJlH" role="2ZW6bz">
-              <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2iGZqsHIKhp" role="3cqZAp">
-          <node concept="3clFbS" id="2iGZqsHIKhs" role="3clFbx">
-            <node concept="3cpWs8" id="2iGZqsHIKzk" role="3cqZAp">
-              <node concept="3cpWsn" id="2iGZqsHIKzl" role="3cpWs9">
-                <property role="TrG5h" value="s" />
-                <node concept="3uibUv" id="2iGZqsHIKBO" role="1tU5fm">
-                  <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
-                </node>
-                <node concept="1eOMI4" id="2iGZqsHIKzn" role="33vP2m">
-                  <node concept="10QFUN" id="2iGZqsHIKzo" role="1eOMHV">
-                    <node concept="3uibUv" id="2iGZqsHIKJA" role="10QFUM">
-                      <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
-                    </node>
-                    <node concept="37vLTw" id="2iGZqsHIKzq" role="10QFUP">
-                      <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="2iGZqsHIKzr" role="3cqZAp">
-              <node concept="2OqwBi" id="2iGZqsHIKzs" role="3cqZAk">
-                <node concept="2OqwBi" id="2iGZqsHIKzt" role="2Oq$k0">
-                  <node concept="37vLTw" id="2iGZqsHIKzu" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2iGZqsHIKzl" resolve="s" />
-                  </node>
-                  <node concept="liA8E" id="2iGZqsHIKzv" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="2iGZqsHIKzw" role="2OqNvi">
-                  <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="2iGZqsHIKst" role="3clFbw">
-            <node concept="3uibUv" id="2iGZqsHIKv2" role="2ZW6by">
-              <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
-            </node>
-            <node concept="37vLTw" id="2iGZqsHIKnN" role="2ZW6bz">
               <ref role="3cqZAo" node="4Wn4fzjJqEW" resolve="module" />
             </node>
           </node>
