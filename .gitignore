@@ -17,6 +17,7 @@ artifacts/*
 *.*.synctex.gz
 *.*.aux
 *.*.log
+*.class
 
 .idea
 workspace.xml

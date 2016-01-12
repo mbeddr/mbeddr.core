@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pluginmanager" default="buildzip">
+
+    <import file="${basedir}/pluginmanager.xml"/>
+
+    <target name="buildzip" depends="all" description="Build plugin zip">
+        <zip destfile="pluginmanager.zip" duplicate="preserve">
+            <zipfileset file="${module.pluginmanager.basedir}/pluginmanager.jar" prefix="pluginmanager/lib"/>
+            <zipfileset file="${module.pluginmanager.basedir}/META-INF/plugin.xml" prefix="pluginmanager/META-INF"/>
+        </zip>
+    </target>
+</project>
