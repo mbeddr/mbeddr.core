@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp.actions/com.mbeddr.rcp.actions.msd" folder="" />
     </projectModules>
   </component>
 </project>

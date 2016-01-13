@@ -200,7 +200,7 @@
               <node concept="2Ry0Ak" id="60Ph1pcA2rk" role="2Ry0An">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="60Ph1pcA2rr" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.rcp" />
+                  <property role="2Ry0Am" value="com.mbeddr.rcp.actions" />
                   <node concept="2Ry0Ak" id="2$f$kYNqFqM" role="2Ry0An">
                     <property role="2Ry0Am" value="com.mbeddr.rcp.actions.msd" />
                   </node>

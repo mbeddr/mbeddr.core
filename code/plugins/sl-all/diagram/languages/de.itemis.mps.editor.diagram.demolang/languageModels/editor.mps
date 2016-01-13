@@ -222,6 +222,7 @@
         <child id="6554619383005758749" name="shape" index="2316E4" />
         <child id="6554619383005758751" name="positionY" index="2316E6" />
         <child id="6554619383005758750" name="positionX" index="2316E7" />
+        <child id="7885261101689690611" name="tooltip" index="321kF2" />
       </concept>
       <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm" />
@@ -702,6 +703,25 @@
           </node>
           <node concept="3b6qkQ" id="1HYYbxG04d3" role="2316E6">
             <property role="$nhwW" value="0.3" />
+          </node>
+          <node concept="238au4" id="33A4pGYQrJB" role="321kF2">
+            <node concept="3EZMnI" id="5gfY2gOvf7T" role="2wV5jI">
+              <node concept="2iRfu4" id="5gfY2gOvf7U" role="2iSdaV" />
+              <node concept="3F0ifn" id="33A4pGYQrOe" role="3EZMnx">
+                <property role="3F0ifm" value="inport" />
+              </node>
+              <node concept="1HlG4h" id="5gfY2gOvf9I" role="3EZMnx">
+                <node concept="1HfYo3" id="5gfY2gOvf9K" role="1HlULh">
+                  <node concept="3TQlhw" id="5gfY2gOvf9M" role="1Hhtcw">
+                    <node concept="3clFbS" id="5gfY2gOvf9O" role="2VODD2">
+                      <node concept="3clFbF" id="5gfY2gOvfbw" role="3cqZAp">
+                        <node concept="15kUEO" id="5gfY2gOvfbv" role="3clFbG" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

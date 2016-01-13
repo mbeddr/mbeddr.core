@@ -1259,8 +1259,8 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="4WlWim9tuHD" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="4WlWim9tuHE" role="3clF45">
-        <ref role="3uigEE" to="hwgx:7NyyyjNtce8" resolve="NodeTreeViewNode" />
+      <node concept="3uibUv" id="3RyTuhdwzsg" role="3clF45">
+        <ref role="3uigEE" to="hwgx:2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
       </node>
     </node>
   </node>
@@ -2852,8 +2852,8 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="2bPPn52cAFU" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="2bPPn52cAFV" role="3clF45">
-        <ref role="3uigEE" to="hwgx:7NyyyjNtce8" resolve="NodeTreeViewNode" />
+      <node concept="3uibUv" id="3RyTuhdwMO7" role="3clF45">
+        <ref role="3uigEE" to="hwgx:2bPPn51Sxsu" resolve="AbstractTreeViewNode" />
       </node>
     </node>
     <node concept="13i0hz" id="2xLRh2R4eOh" role="13h7CS">
