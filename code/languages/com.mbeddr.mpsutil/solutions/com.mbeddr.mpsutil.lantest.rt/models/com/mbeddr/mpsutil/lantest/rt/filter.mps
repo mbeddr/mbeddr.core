@@ -74,13 +74,13 @@
         <property role="NWlVz" value="Filters the uninteresting concepts." />
       </node>
       <node concept="2I9FWS" id="7sjDQ2_sYTi" role="3clF45">
-        <ref role="2I9WkF" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+        <ref role="2I9WkF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
       </node>
       <node concept="37vLTG" id="4CieeTLjLZe" role="3clF46">
         <property role="TrG5h" value="concepts" />
         <node concept="A3Dl8" id="4CieeTLjLZc" role="1tU5fm">
           <node concept="3Tqbb2" id="4CieeTLjNhe" role="A3Ik2">
-            <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+            <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
           </node>
         </node>
       </node>

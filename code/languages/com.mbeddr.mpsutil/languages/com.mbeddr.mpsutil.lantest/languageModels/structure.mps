@@ -109,6 +109,10 @@
       <property role="TrG5h" value="maximumNumberOfTries" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3HDVcqVU4f8" role="1TKVEl">
+      <property role="TrG5h" value="minimalDepth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyi" id="4XCJ8CcQZiq" role="1TKVEl">
       <property role="TrG5h" value="maximalDepth" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
