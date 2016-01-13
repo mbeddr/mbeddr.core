@@ -251,6 +251,9 @@
     <node concept="PrWs8" id="5hYHEwYdDkD" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
+    <node concept="PrWs8" id="3gtkyPJjLO4" role="PzmwI">
+      <ref role="PrY4T" node="3Rzs0kGBKjV" resolve="IRequireUnitTestFramework" />
+    </node>
     <node concept="M6xJ_" id="5GEPw8vxAsb" role="lGtFl">
       <property role="Hh88m" value="testHelperFunction" />
       <node concept="trNpa" id="5GEPw8vxAsc" role="EQaZv">

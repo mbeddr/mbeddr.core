@@ -74,6 +74,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -83,6 +86,7 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -1156,6 +1160,43 @@
     <node concept="1YaCAy" id="x1qBkTy4v" role="1YuTPh">
       <property role="TrG5h" value="sboas" />
       <ref role="1YaFvo" to="yz9a:6Iyv0noEbti" resolve="StructuredBinOpAssertStatement" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5xim$7tIFm2">
+    <property role="TrG5h" value="check_TestCollection" />
+    <node concept="3clFbS" id="5xim$7tIFm3" role="18ibNy">
+      <node concept="3clFbJ" id="5xim$7tIFm9" role="3cqZAp">
+        <node concept="3clFbS" id="5xim$7tIFma" role="3clFbx">
+          <node concept="2MkqsV" id="5xim$7tIKQX" role="3cqZAp">
+            <node concept="Xl_RD" id="5xim$7tIKR9" role="2MkJ7o">
+              <property role="Xl_RC" value="the maximum amount of tests per binary is 256" />
+            </node>
+            <node concept="1YBJjd" id="5xim$7tIKSQ" role="2OEOjV">
+              <ref role="1YBMHb" node="5xim$7tIFm5" resolve="testCollection" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="5xim$7tIKKl" role="3clFbw">
+          <node concept="3cmrfG" id="5xim$7tIKKo" role="3uHU7w">
+            <property role="3cmrfH" value="256" />
+          </node>
+          <node concept="2OqwBi" id="5xim$7tIGDP" role="3uHU7B">
+            <node concept="2OqwBi" id="5xim$7tIFsE" role="2Oq$k0">
+              <node concept="1YBJjd" id="5xim$7tIFml" role="2Oq$k0">
+                <ref role="1YBMHb" node="5xim$7tIFm5" resolve="testCollection" />
+              </node>
+              <node concept="3Tsc0h" id="5xim$7tIFE6" role="2OqNvi">
+                <ref role="3TtcxE" to="yz9a:6TAwvhVRBLD" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="5xim$7tIJkA" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5xim$7tIFm5" role="1YuTPh">
+      <property role="TrG5h" value="testCollection" />
+      <ref role="1YaFvo" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
     </node>
   </node>
 </model>
