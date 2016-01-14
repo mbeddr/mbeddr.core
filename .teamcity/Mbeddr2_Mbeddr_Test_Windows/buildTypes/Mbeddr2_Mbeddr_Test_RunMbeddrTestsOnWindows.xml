@@ -8,15 +8,6 @@
     </options>
     <parameters />
     <build-runners order="RUNNER_2, RUNNER_3, RUNNER_4, RUNNER_5">
-      <runner id="RUNNER_2" name="set build script status pending" type="simpleRunner">
-        <parameters>
-          <param name="script.content"><![CDATA[curl -H "Authorization: token %github.token%" \
-    -d "{\"state\":\"pending\", \"description\": \"Running tests.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
-    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_3" name="Build and run Tests" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />
