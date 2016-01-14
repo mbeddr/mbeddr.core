@@ -20,21 +20,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_5" name="set build scripts status result" type="simpleRunner">
-        <parameters>
-          <param name="script.content"><![CDATA[if [ "%build.state%" = "ok" ]; then 
-curl -H "Authorization: token %github.token%" \
-    -d "{\"state\":\"success\", \"description\": \"Tests successful.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
-    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
-else
-curl -H "Authorization: token %github.token%" \
-    -d "{\"state\":\"failure\", \"description\": \"Tests failed.\", \"context\": \"teamcity/tests\", \"target_url\":\"https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Test_RunMbeddrTests\"}"\
-    https://api.github.com/repos/mbeddr/mbeddr.core/statuses/%build.vcs.number%
-fi]]></param>
-          <param name="teamcity.step.mode" value="execute_if_failed" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
