@@ -4129,6 +4129,24 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="yDA1uKcLV7" role="3clF47">
+                            <node concept="3clFbJ" id="1w_x2MyLbu7" role="3cqZAp">
+                              <node concept="3clFbS" id="1w_x2MyLbu9" role="3clFbx">
+                                <node concept="3cpWs6" id="1w_x2MyLdZc" role="3cqZAp" />
+                              </node>
+                              <node concept="3eOSWO" id="1w_x2MyLcIh" role="3clFbw">
+                                <node concept="3cmrfG" id="1w_x2MyLd7W" role="3uHU7w">
+                                  <property role="3cmrfH" value="1" />
+                                </node>
+                                <node concept="2OqwBi" id="1w_x2MyLcsD" role="3uHU7B">
+                                  <node concept="37vLTw" id="1w_x2MyLbXL" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="yDA1uKcLV4" resolve="event" />
+                                  </node>
+                                  <node concept="liA8E" id="1w_x2MyLcBy" role="2OqNvi">
+                                    <ref role="37wK5l" to="hyam:~MouseEvent.getClickCount():int" resolve="getClickCount" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3cpWs8" id="65GtCaX8PDI" role="3cqZAp">
                               <node concept="3cpWsn" id="65GtCaX8PDJ" role="3cpWs9">
                                 <property role="TrG5h" value="editorComponent" />
