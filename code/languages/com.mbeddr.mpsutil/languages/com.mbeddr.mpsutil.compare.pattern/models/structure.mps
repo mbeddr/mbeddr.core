@@ -269,12 +269,12 @@
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="4oNjwzxp3wy" role="M5hS2">
-      <property role="1uS6qo" value="EXACT" />
+      <property role="1uS6qo" value="EXACT_MEMBERS" />
       <property role="1uS6qv" value="0" />
     </node>
     <node concept="M4N5e" id="4oNjwzxp3wz" role="M5hS2">
       <property role="1uS6qv" value="1" />
-      <property role="1uS6qo" value="CONTAINS" />
+      <property role="1uS6qo" value="CONTAINS_MEMBERS" />
     </node>
   </node>
   <node concept="1TIwiD" id="$WtIWn_nVz">
