@@ -60,6 +60,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.editor/com.mbeddr.mpsutil.multilingual.editor.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.mpl" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.placeholderTextList/com.mbeddr.mpsutil.placeholderTextList.mpl" folder="greyTextList" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.process/com.mbeddr.mpsutil.process.mpl" folder="process" />
@@ -127,6 +128,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodediff/com.mbeddr.mpsutil.nodediff.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodes_tracing.pluginSolution/com.mbeddr.mpsutil.nodes_tracing.pluginSolution.msd" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.placeholderTextList.runtime/com.mbeddr.mpsutil.placeholderTextList.runtime.msd" folder="greyTextList" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime.msd" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.msd" folder="" />
@@ -155,6 +157,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="iconchar" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.placeholderTextList.testlang/test.com.mbeddr.mpsutil.placeholderTextList.testlang.mpl" folder="greyTextList" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.placeholderTextList/test.com.mbeddr.mpsutil.placeholderTextList.msd" folder="greyTextList" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.targetchooser/test.com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope.negative/test.com.mbeddr.mpsutil.testScope.negative.msd" folder="testScope" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope/test.com.mbeddr.mpsutil.testScope.msd" folder="testScope" />
