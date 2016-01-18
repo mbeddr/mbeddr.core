@@ -197,6 +197,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -241,6 +247,10 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -277,6 +287,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1225730411176" name="jetbrains.mps.baseLanguage.collections.structure.FindLastOperation" flags="nn" index="1zesIP" />
     </language>
@@ -1564,6 +1575,73 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="43arP_Gf45z" role="jymVt" />
+    <node concept="2YIFZL" id="43arP_GfhfF" role="jymVt">
+      <property role="TrG5h" value="getCommentAnnotationContainer" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="43arP_GfhfG" role="3clF47">
+        <node concept="3cpWs8" id="43arP_GfhfH" role="3cqZAp">
+          <node concept="3cpWsn" id="43arP_GfhfI" role="3cpWs9">
+            <property role="TrG5h" value="rootNode" />
+            <node concept="3Tqbb2" id="43arP_GfhfJ" role="1tU5fm" />
+            <node concept="2OqwBi" id="43arP_GfhfK" role="33vP2m">
+              <node concept="2OqwBi" id="43arP_GfhfL" role="2Oq$k0">
+                <node concept="37vLTw" id="43arP_GfhfM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="43arP_Gfhg0" resolve="editorComponent" />
+                </node>
+                <node concept="liA8E" id="43arP_GfhfN" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getRootCell" />
+                </node>
+              </node>
+              <node concept="liA8E" id="43arP_GfhfO" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="43arP_GfhfP" role="3cqZAp">
+          <node concept="3clFbS" id="43arP_GfhfQ" role="3clFbx">
+            <node concept="3cpWs6" id="43arP_GfhfR" role="3cqZAp">
+              <node concept="1PxgMI" id="43arP_Gf6oY" role="3cqZAk">
+                <ref role="1PxNhF" to="oqy7:7lmVLrULFYO" resolve="CommentAnnotationContainer" />
+                <node concept="37vLTw" id="43arP_Gf6ch" role="1PxMeX">
+                  <ref role="3cqZAo" node="43arP_GfhfI" resolve="rootNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="43arP_GfhfS" role="3clFbw">
+            <node concept="37vLTw" id="43arP_GfhfT" role="2Oq$k0">
+              <ref role="3cqZAo" node="43arP_GfhfI" resolve="rootNode" />
+            </node>
+            <node concept="1mIQ4w" id="43arP_GfhfU" role="2OqNvi">
+              <node concept="chp4Y" id="43arP_GfhfV" role="cj9EA">
+                <ref role="cht4Q" to="oqy7:7lmVLrULFYO" resolve="CommentAnnotationContainer" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="43arP_GfhfW" role="9aQIa">
+            <node concept="3clFbS" id="43arP_GfhfX" role="9aQI4">
+              <node concept="3cpWs6" id="43arP_GfhfY" role="3cqZAp">
+                <node concept="10Nm6u" id="43arP_Gf70z" role="3cqZAk" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="43arP_GfhfZ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="43arP_Gfa8y" role="3clF45">
+        <ref role="ehGHo" to="oqy7:7lmVLrULFYO" resolve="CommentAnnotationContainer" />
+      </node>
+      <node concept="37vLTG" id="43arP_Gfhg0" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="43arP_Gfhg1" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="43arP_Gf4dG" role="jymVt" />
     <node concept="2tJIrI" id="7lmVLrULGfm" role="jymVt" />
     <node concept="2YIFZL" id="7lmVLrULGfn" role="jymVt">
       <property role="TrG5h" value="findReviewNoteRecursive" />
@@ -1870,6 +1948,46 @@
               <ref role="3cqZAo" node="7lmVLrULGhy" resolve="node" />
             </node>
             <node concept="1PgB_6" id="7lmVLrULGhv" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="43arP_GfyvV" role="3cqZAp">
+          <node concept="3SKdUq" id="43arP_GfyvX" role="3SKWNk">
+            <property role="3SKdUp" value="if this was the last note, then we delete the commenting container as well" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="43arP_Gf1PF" role="3cqZAp">
+          <node concept="3clFbS" id="43arP_Gf1PH" role="3clFbx">
+            <node concept="3clFbF" id="43arP_Gfh$E" role="3cqZAp">
+              <node concept="2OqwBi" id="43arP_GfhCj" role="3clFbG">
+                <node concept="1rXfSq" id="43arP_Gfh$C" role="2Oq$k0">
+                  <ref role="37wK5l" node="43arP_GfhfF" resolve="getCommentAnnotationContainer" />
+                  <node concept="37vLTw" id="43arP_GfhA3" role="37wK5m">
+                    <ref role="3cqZAo" node="3cilTABRoE9" resolve="editorComponent" />
+                  </node>
+                </node>
+                <node concept="1PgB_6" id="43arP_GfhOn" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="5KNM5FfpshN" role="3clFbw">
+            <node concept="2OqwBi" id="43arP_Gf2Qx" role="3uHU7B">
+              <node concept="1rXfSq" id="43arP_Gf2l1" role="2Oq$k0">
+                <ref role="37wK5l" node="3cilTABRcpd" resolve="getReviewNotes" />
+                <node concept="37vLTw" id="43arP_Gf2l2" role="37wK5m">
+                  <ref role="3cqZAo" node="3cilTABRoE9" resolve="editorComponent" />
+                </node>
+              </node>
+              <node concept="1v1jN8" id="43arP_Gf44p" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5KNM5Ffpsqw" role="3uHU7w">
+              <node concept="1rXfSq" id="5KNM5Ffpsm0" role="2Oq$k0">
+                <ref role="37wK5l" node="43arP_GfhfF" resolve="getCommentAnnotationContainer" />
+                <node concept="37vLTw" id="5KNM5Ffpsm1" role="37wK5m">
+                  <ref role="3cqZAo" node="3cilTABRoE9" resolve="editorComponent" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5KNM5FfpsCq" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>
