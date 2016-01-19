@@ -43,6 +43,7 @@
     <language id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers">
       <concept id="95073643532950038" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerRunnerCreator" flags="nn" index="2v6lVJ">
         <reference id="95073643532950039" name="analyzer" index="2v6lVI" />
+        <child id="3993089038374473158" name="parameters" index="3fIO2k" />
         <child id="178770917832625312" name="nodeToCheck" index="3vVDej" />
       </concept>
     </language>
@@ -6740,23 +6741,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="321ojDtkXwr" role="3cqZAp">
-            <node concept="2OqwBi" id="321ojDtkZpJ" role="3clFbG">
-              <node concept="10M0yZ" id="321ojDtkXwq" role="2Oq$k0">
-                <ref role="1PxDUh" to="9xhd:7PgKJZvfe2t" resolve="PointerAnalyzerHelper" />
-                <ref role="3cqZAo" to="9xhd:321ojDtkPEO" resolve="resultMap" />
-              </node>
-              <node concept="liA8E" id="321ojDtl1ua" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-                <node concept="1YBJjd" id="321ojDtqD7_" role="37wK5m">
-                  <ref role="1YBMHb" node="2GqtAvyKZ4G" resolve="statements" />
-                </node>
-                <node concept="37vLTw" id="321ojDtvope" role="37wK5m">
-                  <ref role="3cqZAo" node="321ojDtvopa" resolve="pointerAnalyzerResult" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbH" id="7PgKJZviTp2" role="3cqZAp" />
           <node concept="3SKdUt" id="7t5t4TsykIh" role="3cqZAp">
             <node concept="3SKdUq" id="7t5t4Tsyl7J" role="3SKWNk">
@@ -6779,6 +6763,9 @@
                 <ref role="2v6lVI" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariablesAnalyzer" />
                 <node concept="1YBJjd" id="2GqtAvyMzld" role="3vVDej">
                   <ref role="1YBMHb" node="2GqtAvyKZ4G" resolve="statements" />
+                </node>
+                <node concept="37vLTw" id="_oDvx5PFZa" role="3fIO2k">
+                  <ref role="3cqZAo" node="321ojDtvopa" resolve="pointerAnalyzerResult" />
                 </node>
               </node>
             </node>

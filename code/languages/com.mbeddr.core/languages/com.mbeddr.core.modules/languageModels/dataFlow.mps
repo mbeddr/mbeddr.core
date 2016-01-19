@@ -46,6 +46,7 @@
       </concept>
       <concept id="6618572076229093257" name="jetbrains.mps.lang.dataFlow.analyzers.structure.Analyzer" flags="ng" index="38boeP">
         <child id="3325264799421088056" name="instruction" index="2ZJRuf" />
+        <child id="3993089038373544707" name="constructorParameters" index="3fEaTh" />
         <child id="4746038179140588765" name="initialFunction" index="1fK8h9" />
         <child id="4746038179140588766" name="funFunction" index="1fK8ha" />
         <child id="4746038179140586188" name="mergeFunction" index="1fK9Do" />
@@ -61,6 +62,8 @@
       <concept id="4943044633101449694" name="jetbrains.mps.lang.dataFlow.analyzers.structure.ConceptCondition" flags="ng" index="3cs84T">
         <reference id="4943044633101738901" name="concept" index="3ctLHM" />
       </concept>
+      <concept id="3993089038373626360" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerConstructorParameterReference" flags="ng" index="3fFAME" />
+      <concept id="3993089038373626032" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerConstructorParameter" flags="ng" index="3fFARy" />
       <concept id="4746038179140566716" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerParameterProgram" flags="nn" index="1fK2SC" />
       <concept id="4746038179140566725" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerMergeParameterInput" flags="nn" index="1fK2Th" />
       <concept id="4746038179140588756" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerFunParameterInput" flags="nn" index="1fK8h0" />
@@ -274,6 +277,9 @@
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -1670,6 +1676,24 @@
   <node concept="38boeP" id="7vcqB$mvpmV">
     <property role="3GE5qa" value="analyzers.init" />
     <property role="TrG5h" value="InitializedVariablesAnalyzer" />
+    <node concept="3fFARy" id="_oDvx5PCQg" role="3fEaTh">
+      <property role="TrG5h" value="pointerAnalysisResult" />
+      <node concept="3uibUv" id="_oDvx5PHvy" role="1tU5fm">
+        <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
+        <node concept="3uibUv" id="_oDvx5PHvz" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+          <node concept="3uibUv" id="_oDvx5PHv$" role="11_B2D">
+            <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
+          </node>
+          <node concept="3uibUv" id="_oDvx5PHv_" role="11_B2D">
+            <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+            <node concept="3uibUv" id="_oDvx5PHvA" role="11_B2D">
+              <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="38boeQ" id="7vcqB$mv$mt" role="2ZJRuf">
       <property role="TrG5h" value="defInit" />
       <node concept="2SCD3b" id="5kXaxjH1ftJ" role="2ZJRvN">
@@ -1837,53 +1861,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="4zFXTqqqDM0" role="3cqZAp">
-                <node concept="3cpWsn" id="4zFXTqqqDM1" role="3cpWs9">
-                  <property role="TrG5h" value="root" />
-                  <node concept="3Tqbb2" id="4zFXTqqqDM2" role="1tU5fm">
-                    <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-                  </node>
-                  <node concept="2YIFZM" id="4zFXTqqqDM3" role="33vP2m">
-                    <ref role="37wK5l" node="321ojDtuLZs" resolve="getRootStatementList" />
-                    <ref role="1Pybhc" node="321ojDtuLZq" resolve="AnalyzerHelper" />
-                    <node concept="37vLTw" id="7Ehk3$1Fxq$" role="37wK5m">
-                      <ref role="3cqZAo" node="7Ehk3$1Cbpx" resolve="source" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWs8" id="4zFXTqqqDM5" role="3cqZAp">
-                <node concept="3cpWsn" id="4zFXTqqqDM6" role="3cpWs9">
-                  <property role="TrG5h" value="pointerAnalysisResult" />
-                  <node concept="3uibUv" id="4zFXTqqqDM7" role="1tU5fm">
-                    <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
-                    <node concept="3uibUv" id="4zFXTqqqDM8" role="11_B2D">
-                      <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-                      <node concept="3uibUv" id="4zFXTqqqDM9" role="11_B2D">
-                        <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
-                      </node>
-                      <node concept="3uibUv" id="4zFXTqqqDMa" role="11_B2D">
-                        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-                        <node concept="3uibUv" id="4zFXTqqqDMb" role="11_B2D">
-                          <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="4zFXTqqqDMc" role="33vP2m">
-                    <node concept="10M0yZ" id="4zFXTqqqDMd" role="2Oq$k0">
-                      <ref role="3cqZAo" node="321ojDtkPEO" resolve="resultMap" />
-                      <ref role="1PxDUh" node="7PgKJZvfe2t" resolve="PointerAnalyzerHelper" />
-                    </node>
-                    <node concept="liA8E" id="4zFXTqqqDMe" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                      <node concept="37vLTw" id="4zFXTqqqDMf" role="37wK5m">
-                        <ref role="3cqZAo" node="4zFXTqqqDM1" resolve="root" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbH" id="4zFXTqqpBf7" role="3cqZAp" />
               <node concept="3clFbJ" id="5kXaxjH0GHA" role="3cqZAp">
                 <node concept="3clFbS" id="5kXaxjH0GHD" role="3clFbx">
@@ -2039,8 +2016,8 @@
                               <node concept="37vLTw" id="3ieSxUOn2dr" role="37wK5m">
                                 <ref role="3cqZAo" node="5kXaxjH08$N" resolve="instruction" />
                               </node>
-                              <node concept="37vLTw" id="4zFXTqqqO3C" role="37wK5m">
-                                <ref role="3cqZAo" node="4zFXTqqqDM6" resolve="pointerAnalysisResult" />
+                              <node concept="3fFAME" id="_oDvx5PK3M" role="37wK5m">
+                                <ref role="1M0zk5" node="_oDvx5PCQg" resolve="pointerAnalysisResult" />
                               </node>
                               <node concept="3cpWsd" id="4zFXTqqqV$R" role="37wK5m">
                                 <node concept="2YIFZM" id="4zFXTqqqYNs" role="3uHU7w">
@@ -2255,8 +2232,8 @@
                                           <ref role="3cqZAo" node="321ojDtld$C" resolve="genInstruction" />
                                         </node>
                                       </node>
-                                      <node concept="37vLTw" id="3ieSxUOmIIR" role="37wK5m">
-                                        <ref role="3cqZAo" node="4zFXTqqqDM6" resolve="pointerAnalysisResult" />
+                                      <node concept="3fFAME" id="_oDvx5PK3Y" role="37wK5m">
+                                        <ref role="1M0zk5" node="_oDvx5PCQg" resolve="pointerAnalysisResult" />
                                       </node>
                                       <node concept="3cmrfG" id="3ieSxUOmIIS" role="37wK5m">
                                         <property role="3cmrfH" value="1" />
@@ -3330,79 +3307,6 @@
     <property role="3GE5qa" value="analyzers.pointer" />
     <property role="TrG5h" value="PointerAnalyzerHelper" />
     <node concept="2tJIrI" id="321ojDtkSwK" role="jymVt" />
-    <node concept="Wx3nA" id="321ojDtkPEO" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="resultMap" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="321ojDtkLV5" role="1B3o_S" />
-      <node concept="3uibUv" id="321ojDtkMzY" role="1tU5fm">
-        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-        <node concept="3Tqbb2" id="321ojDtqy5X" role="11_B2D">
-          <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-        </node>
-        <node concept="3uibUv" id="7PgKJZviZ_$" role="11_B2D">
-          <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
-          <node concept="3uibUv" id="7PgKJZvj1Or" role="11_B2D">
-            <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-            <node concept="3uibUv" id="4zFXTqq0PkB" role="11_B2D">
-              <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
-            </node>
-            <node concept="3uibUv" id="7PgKJZvj2e5" role="11_B2D">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-              <node concept="3uibUv" id="4zFXTqq0PM6" role="11_B2D">
-                <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2YIFZM" id="321ojDtkQ02" role="33vP2m">
-        <ref role="37wK5l" to="33ny:~Collections.synchronizedMap(java.util.Map):java.util.Map" resolve="synchronizedMap" />
-        <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-        <node concept="2ShNRf" id="321ojDtkQbJ" role="37wK5m">
-          <node concept="1pGfFk" id="321ojDtkRfT" role="2ShVmc">
-            <ref role="37wK5l" to="33ny:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
-            <node concept="3Tqbb2" id="321ojDtqz4u" role="1pMfVU">
-              <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-            </node>
-            <node concept="3uibUv" id="321ojDtkS61" role="1pMfVU">
-              <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
-              <node concept="3uibUv" id="321ojDtkS62" role="11_B2D">
-                <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-                <node concept="3uibUv" id="4zFXTqq0QfB" role="11_B2D">
-                  <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
-                </node>
-                <node concept="3uibUv" id="321ojDtkS64" role="11_B2D">
-                  <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-                  <node concept="3uibUv" id="4zFXTqq0QGO" role="11_B2D">
-                    <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="z59LJ" id="321ojDtkT2k" role="lGtFl">
-        <node concept="TZ5HA" id="321ojDtkT2l" role="TZ5H$">
-          <node concept="1dT_AC" id="321ojDtkT2m" role="1dT_Ay">
-            <property role="1dT_AB" value="This map is a workaround for making the analyses results available between consecutive analyzer runs." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="321ojDtkTqm" role="TZ5H$">
-          <node concept="1dT_AC" id="321ojDtkTqn" role="1dT_Ay">
-            <property role="1dT_AB" value="On of the usages is to make the result of a points-to analysis accessible inside the uninitialized" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="321ojDtkTqs" role="TZ5H$">
-          <node concept="1dT_AC" id="321ojDtkTqt" role="1dT_Ay">
-            <property role="1dT_AB" value="read analyzer. " />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="321ojDtkLLH" role="jymVt" />
     <node concept="Wx3nA" id="L2WnbQM5Oz" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
