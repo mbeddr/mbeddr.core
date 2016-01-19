@@ -12,6 +12,7 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -123,6 +124,7 @@
           <property role="TrG5h" value="foo" />
           <property role="2OOxQR" value="false" />
           <node concept="3XIRFW" id="1vdVyJtytmf" role="3XIRFX">
+            <node concept="3XISUE" id="7YWlEjTrGey" role="3XIRFZ" />
             <node concept="1_9egQ" id="4Bw8ULfNmwm" role="3XIRFZ">
               <node concept="eGNQo" id="4Bw8ULfNmwn" role="1_9egR">
                 <node concept="3Tl9Jn" id="4Bw8ULfNmwo" role="eGNQr">
@@ -171,6 +173,9 @@
                 </node>
                 <node concept="3TlMh9" id="4Bw8ULfNmwC" role="34rlYt">
                   <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="7CXmI" id="7YWlEjTrwCM" role="lGtFl">
+                  <node concept="1TM$A" id="7YWlEjTrwCN" role="7EUXB" />
                 </node>
               </node>
             </node>
@@ -224,6 +229,9 @@
                 </node>
                 <node concept="3TlMh9" id="4Bw8ULfNo9y" role="34rlYt">
                   <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="7CXmI" id="7YWlEjTrx8l" role="lGtFl">
+                  <node concept="1TM$A" id="7YWlEjTrx8m" role="7EUXB" />
                 </node>
               </node>
             </node>
