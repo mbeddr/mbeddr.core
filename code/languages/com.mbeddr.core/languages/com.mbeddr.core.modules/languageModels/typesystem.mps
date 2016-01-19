@@ -2,12 +2,12 @@
 <model ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
-    <use id="9a64cf6b-cacc-4231-bf69-dddc8eb0f265" name="com.mbeddr.mpsutil.suppresswarning.gen" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="-1" />
+    <use id="9a64cf6b-cacc-4231-bf69-dddc8eb0f265" name="com.mbeddr.mpsutil.suppresswarning.gen" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -43,6 +43,7 @@
     <language id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers">
       <concept id="95073643532950038" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerRunnerCreator" flags="nn" index="2v6lVJ">
         <reference id="95073643532950039" name="analyzer" index="2v6lVI" />
+        <child id="3993089038374473158" name="parameters" index="3fIO2k" />
         <child id="178770917832625312" name="nodeToCheck" index="3vVDej" />
       </concept>
     </language>
@@ -146,7 +147,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6740,23 +6741,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="321ojDtkXwr" role="3cqZAp">
-            <node concept="2OqwBi" id="321ojDtkZpJ" role="3clFbG">
-              <node concept="10M0yZ" id="321ojDtkXwq" role="2Oq$k0">
-                <ref role="1PxDUh" to="9xhd:7PgKJZvfe2t" resolve="PointerAnalyzerHelper" />
-                <ref role="3cqZAo" to="9xhd:321ojDtkPEO" resolve="resultMap" />
-              </node>
-              <node concept="liA8E" id="321ojDtl1ua" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-                <node concept="1YBJjd" id="321ojDtqD7_" role="37wK5m">
-                  <ref role="1YBMHb" node="2GqtAvyKZ4G" resolve="statements" />
-                </node>
-                <node concept="37vLTw" id="321ojDtvope" role="37wK5m">
-                  <ref role="3cqZAo" node="321ojDtvopa" resolve="pointerAnalyzerResult" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbH" id="7PgKJZviTp2" role="3cqZAp" />
           <node concept="3SKdUt" id="7t5t4TsykIh" role="3cqZAp">
             <node concept="3SKdUq" id="7t5t4Tsyl7J" role="3SKWNk">
@@ -6777,6 +6761,9 @@
               </node>
               <node concept="2v6lVJ" id="3ivm4e3BU9U" role="33vP2m">
                 <ref role="2v6lVI" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariablesAnalyzer" />
+                <node concept="37vLTw" id="_oDvx5PFZa" role="3fIO2k">
+                  <ref role="3cqZAo" node="321ojDtvopa" resolve="pointerAnalyzerResult" />
+                </node>
                 <node concept="1YBJjd" id="2GqtAvyMzld" role="3vVDej">
                   <ref role="1YBMHb" node="2GqtAvyKZ4G" resolve="statements" />
                 </node>
