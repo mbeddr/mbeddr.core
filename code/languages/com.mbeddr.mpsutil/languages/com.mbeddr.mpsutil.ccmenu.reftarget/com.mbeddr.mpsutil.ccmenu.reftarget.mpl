@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.mpsutil.ccmenu.reftarget#6243347984996277355" uuid="faae0313-5530-412f-afce-cac153df0b02">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.ccmenu.reftarget#6243347984996277355" uuid="faae0313-5530-412f-afce-cac153df0b02">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+        <dependency reexport="false">15dce592-52f0-45cd-be47-3539aaa2ed68(com.mbeddr.mpsutil.ccmenu#3441511210711546263)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -47,6 +48,7 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+        <module reference="15dce592-52f0-45cd-be47-3539aaa2ed68(com.mbeddr.mpsutil.ccmenu#3441511210711546263)" version="0" />
         <module reference="f92af8d7-1fae-4067-8109-17acf80f8e58(com.mbeddr.mpsutil.ccmenu.reftarget)" version="0" />
         <module reference="faae0313-5530-412f-afce-cac153df0b02(com.mbeddr.mpsutil.ccmenu.reftarget#6243347984996277355)" version="0" />
         <module reference="3ab9bd46-be60-4c45-806b-37a5b96358a2(com.mbeddr.mpsutil.ccmenu.reftarget.runtime)" version="0" />
@@ -58,7 +60,22 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="faae0313-5530-412f-afce-cac153df0b02(com.mbeddr.mpsutil.ccmenu.reftarget#6243347984996277355)" />
+            <external-mapping>
+              <mapping-node modelUID="r:396f76ec-aaab-4fa5-ab86-9e825f5746de(com.mbeddr.mpsutil.ccmenu.reftarget.generator.template.main@generator)" nodeID="6243347984996277356" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="15dce592-52f0-45cd-be47-3539aaa2ed68(com.mbeddr.mpsutil.ccmenu#3441511210711546263)" />
+            <external-mapping>
+              <mapping-node modelUID="r:857a6149-79f8-402e-bfa4-afd942bb40e7(com.mbeddr.mpsutil.ccmenu.generator.template.main@generator)" nodeID="3441511210711546264" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
