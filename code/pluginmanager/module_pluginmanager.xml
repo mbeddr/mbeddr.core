@@ -56,7 +56,7 @@
   
   <target name="compile.module.pluginmanager.production" depends="register.custom.compilers" description="Compile module pluginmanager; production classes">
     <mkdir dir="${pluginmanager.output.dir}"/>
-    <javac2 destdir="${pluginmanager.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.pluginmanager}/javac">
+    <javac2 target="1.6" source="1.6" destdir="${pluginmanager.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.pluginmanager}/javac">
       <compilerarg line="${compiler.args.pluginmanager}"/>
       <bootclasspath refid="pluginmanager.module.bootclasspath"/>
       <classpath refid="pluginmanager.module.production.classpath"/>

@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.mbeddr.pluginmanager</id>
   <name>mbeddr Plugin Manager</name>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <vendor email="mbeddr@itemis.de" url="http://mbeddr.com">mbeddr</vendor>
 
   <description><![CDATA[
@@ -10,7 +10,7 @@
     ]]></description>
 
   <change-notes><![CDATA[
-
+      1.0.1: Support for Java 6
     ]]>
   </change-notes>
 
