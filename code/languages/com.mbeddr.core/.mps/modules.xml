@@ -15,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.checks/com.mbeddr.core.checks.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cinterpreter/com.mbeddr.core.cinterpreter.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow.test/com.mbeddr.core.dataflow.test.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow/com.mbeddr.core.dataflow.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dependencies/com.mbeddr.core.dependencies.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
@@ -36,6 +37,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/sandbox/test.lang.hierchicalstructure.sandbox.msd" folder="tests.hierarchicalstructure" />
       <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/test.lang.hierchicalstructure.mpl" folder="tests.hierarchicalstructure" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.dataflow.runtime/com.mbeddr.core.dataflow.runtime.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.debugger.default/com.mbeddr.core.debugger.default.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.expressions.runtime/com.mbeddr.core.expressions.runtime.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.interpreterdebugger.rt/com.mbeddr.core.interpreterdebugger.rt.msd" folder="core.solutions" />
