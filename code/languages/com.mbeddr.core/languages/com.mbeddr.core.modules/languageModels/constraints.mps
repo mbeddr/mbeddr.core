@@ -190,6 +190,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -1788,6 +1791,25 @@
             <node concept="nLn13" id="76hx8dKhywT" role="2Oq$k0" />
             <node concept="2qgKlT" id="76hx8dKhyBj" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4ykl818iNI2">
+    <ref role="1M2myG" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    <node concept="osYL8" id="4ykl818iNI3" role="1MLXOK">
+      <node concept="3clFbS" id="4ykl818iNI4" role="2VODD2">
+        <node concept="3clFbF" id="4ykl818iNJ9" role="3cqZAp">
+          <node concept="3fqX7Q" id="4ykl818iNWg" role="3clFbG">
+            <node concept="2OqwBi" id="4ykl818iNWi" role="3fr31v">
+              <node concept="otxO1" id="4ykl818iNWj" role="2Oq$k0" />
+              <node concept="3O6GUB" id="4ykl818iNWk" role="2OqNvi">
+                <node concept="chp4Y" id="4ykl818iNWl" role="3QVz_e">
+                  <ref role="cht4Q" to="mj1l:58TcxRGi40Z" resolve="ExpressionList" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
