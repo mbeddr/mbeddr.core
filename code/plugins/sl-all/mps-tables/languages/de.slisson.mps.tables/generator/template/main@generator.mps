@@ -174,7 +174,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -276,9 +276,6 @@
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
         <reference id="1112820671508" name="modifiedSwitch" index="phYkn" />
         <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
-      </concept>
-      <concept id="1112731569622" name="jetbrains.mps.lang.generator.structure.SwitchMacro" flags="ln" index="jY4Nl">
-        <reference id="1112731629154" name="templateSwitch" index="jYjtx" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
         <reference id="1200916687663" name="labelDeclaration" index="2sdACS" />
@@ -9494,8 +9491,8 @@
               </node>
               <node concept="3cmrfG" id="3iamoN_IOpv" role="37wK5m">
                 <property role="3cmrfH" value="123456789" />
-                <node concept="jY4Nl" id="3iamoN_IVDB" role="lGtFl">
-                  <ref role="jYjtx" node="3iamoN_IWck" resolve="switch_TableStyleItem_Value" />
+                <node concept="1sPUBX" id="Egbl7VnhFz" role="lGtFl">
+                  <ref role="v9R2y" node="3iamoN_IWck" resolve="switch_TableStyleItem_Value" />
                 </node>
               </node>
             </node>

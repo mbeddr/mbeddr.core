@@ -229,10 +229,6 @@
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
-      <concept id="1112731569622" name="jetbrains.mps.lang.generator.structure.SwitchMacro" flags="ln" index="jY4Nl">
-        <reference id="1112731629154" name="templateSwitch" index="jYjtx" />
-        <child id="1168380395224" name="sourceNodeQuery" index="8TvZ8" />
-      </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
         <reference id="1200916687663" name="labelDeclaration" index="2sdACS" />
       </concept>
@@ -259,6 +255,9 @@
       </concept>
       <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="ln" index="1pdMLZ">
         <child id="1168281849769" name="sourceNodeQuery" index="31$UT" />
+      </concept>
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
+        <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
@@ -420,8 +419,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="jY4Nl" id="2dv1ickEbvR" role="lGtFl">
-                <ref role="jYjtx" to="tpc3:2dv1ick$axh" resolve="StyleClassItemQueryMethods" />
+              <node concept="1sPUBX" id="Egbl7VmR0U" role="lGtFl">
+                <ref role="v9R2y" to="tpc3:2dv1ick$axh" resolve="StyleClassItemQueryMethods" />
               </node>
             </node>
             <node concept="3clFbH" id="48TKAW3Vg0h" role="3cqZAp">
@@ -578,8 +577,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="jY4Nl" id="8dI1zL4xNP" role="lGtFl">
-                <ref role="jYjtx" to="tpc3:2dv1ick$axh" resolve="StyleClassItemQueryMethods" />
+              <node concept="1sPUBX" id="Egbl7VmQXJ" role="lGtFl">
+                <ref role="v9R2y" to="tpc3:2dv1ick$axh" resolve="StyleClassItemQueryMethods" />
               </node>
             </node>
             <node concept="3clFbH" id="8dI1zL4xNQ" role="3cqZAp">
@@ -2449,13 +2448,13 @@
                 <node concept="liA8E" id="5hGzT1zWLYZ" role="2OqNvi">
                   <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
                   <node concept="10Nm6u" id="5hGzT1zWLZ0" role="37wK5m">
-                    <node concept="jY4Nl" id="5hGzT1zWOCK" role="lGtFl">
-                      <ref role="jYjtx" to="tpc3:5hGzT1$4cwp" resolve="StyleAttribute" />
+                    <node concept="1sPUBX" id="Egbl7VncWK" role="lGtFl">
+                      <ref role="v9R2y" to="tpc3:5hGzT1$4cwp" resolve="StyleAttribute" />
                     </node>
                   </node>
                   <node concept="10Nm6u" id="5hGzT1zWLZ1" role="37wK5m">
-                    <node concept="jY4Nl" id="4A7H4Ezuymz" role="lGtFl">
-                      <ref role="jYjtx" to="tpc3:hgVfGhP" resolve="StyleAttributeValue" />
+                    <node concept="1sPUBX" id="Egbl7Vndro" role="lGtFl">
+                      <ref role="v9R2y" to="tpc3:hgVfGhP" resolve="StyleAttributeValue" />
                     </node>
                   </node>
                 </node>
@@ -5520,13 +5519,13 @@
                 <node concept="liA8E" id="8dI1zL4mGS" role="2OqNvi">
                   <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
                   <node concept="10Nm6u" id="8dI1zL4mGT" role="37wK5m">
-                    <node concept="jY4Nl" id="8dI1zL4mGU" role="lGtFl">
-                      <ref role="jYjtx" to="tpc3:5hGzT1$4cwp" resolve="StyleAttribute" />
+                    <node concept="1sPUBX" id="Egbl7VmTwy" role="lGtFl">
+                      <ref role="v9R2y" to="tpc3:5hGzT1$4cwp" resolve="StyleAttribute" />
                     </node>
                   </node>
                   <node concept="10Nm6u" id="8dI1zL4mGV" role="37wK5m">
-                    <node concept="jY4Nl" id="8dI1zL4mGW" role="lGtFl">
-                      <ref role="jYjtx" to="tpc3:hgVfGhP" resolve="StyleAttributeValue" />
+                    <node concept="1sPUBX" id="Egbl7VmTWS" role="lGtFl">
+                      <ref role="v9R2y" to="tpc3:hgVfGhP" resolve="StyleAttributeValue" />
                     </node>
                   </node>
                 </node>
@@ -5855,9 +5854,9 @@
           </node>
         </node>
         <node concept="2tJIrI" id="4R_sg7WWPg_" role="jymVt">
-          <node concept="jY4Nl" id="4R_sg7WXjht" role="lGtFl">
-            <ref role="jYjtx" to="tpc3:4b_UkfrJBBl" resolve="ContextHintsSpecificationQueryMethod" />
-            <node concept="3NFfHV" id="4R_sg7WYUhc" role="8TvZ8">
+          <node concept="1sPUBX" id="Egbl7VmTRR" role="lGtFl">
+            <ref role="v9R2y" to="tpc3:4b_UkfrJBBl" resolve="ContextHintsSpecificationQueryMethod" />
+            <node concept="3NFfHV" id="4R_sg7WYUhc" role="1sPUBK">
               <node concept="3clFbS" id="4R_sg7WYUhd" role="2VODD2">
                 <node concept="3clFbF" id="4R_sg7WZwZd" role="3cqZAp">
                   <node concept="2OqwBi" id="4R_sg7WZx8V" role="3clFbG">
@@ -5872,9 +5871,9 @@
           </node>
         </node>
         <node concept="2tJIrI" id="4R_sg7X0wV4" role="jymVt">
-          <node concept="jY4Nl" id="4R_sg7X0wV5" role="lGtFl">
-            <ref role="jYjtx" to="tpc3:4b_UkfrJBBl" resolve="ContextHintsSpecificationQueryMethod" />
-            <node concept="3NFfHV" id="4R_sg7X0wV6" role="8TvZ8">
+          <node concept="1sPUBX" id="Egbl7VmTXO" role="lGtFl">
+            <ref role="v9R2y" to="tpc3:4b_UkfrJBBl" resolve="ContextHintsSpecificationQueryMethod" />
+            <node concept="3NFfHV" id="4R_sg7X0wV6" role="1sPUBK">
               <node concept="3clFbS" id="4R_sg7X0wV7" role="2VODD2">
                 <node concept="3clFbF" id="4R_sg7X0wV8" role="3cqZAp">
                   <node concept="2OqwBi" id="4R_sg7X0wV9" role="3clFbG">

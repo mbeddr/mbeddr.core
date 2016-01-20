@@ -249,10 +249,6 @@
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
         <child id="1168558750579" name="defaultConsequence" index="jxRDz" />
       </concept>
-      <concept id="1112731569622" name="jetbrains.mps.lang.generator.structure.SwitchMacro" flags="ln" index="jY4Nl">
-        <reference id="1112731629154" name="templateSwitch" index="jYjtx" />
-        <child id="1168380395224" name="sourceNodeQuery" index="8TvZ8" />
-      </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
         <reference id="1200916687663" name="labelDeclaration" index="2sdACS" />
       </concept>
@@ -308,6 +304,9 @@
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
       <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
+      </concept>
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
+        <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
@@ -1413,9 +1412,9 @@
                           <ref role="3ZUYvu" node="7kKaL9x5gxh" resolve="instance" />
                         </node>
                       </node>
-                      <node concept="jY4Nl" id="6dhOyaNkM7c" role="lGtFl">
-                        <ref role="jYjtx" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
-                        <node concept="3NFfHV" id="6dhOyaNkW$Z" role="8TvZ8">
+                      <node concept="1sPUBX" id="Egbl7VmQ$S" role="lGtFl">
+                        <ref role="v9R2y" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
+                        <node concept="3NFfHV" id="6dhOyaNkW$Z" role="1sPUBK">
                           <node concept="3clFbS" id="6dhOyaNkW_0" role="2VODD2">
                             <node concept="3clFbF" id="6dhOyaNl1Sj" role="3cqZAp">
                               <node concept="2OqwBi" id="4oSz90jo2da" role="3clFbG">
@@ -1504,9 +1503,9 @@
                                     <ref role="3ZUYvu" node="7kKaL9x5gxh" resolve="instance" />
                                   </node>
                                 </node>
-                                <node concept="jY4Nl" id="6dhOyaLZjP_" role="lGtFl">
-                                  <ref role="jYjtx" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
-                                  <node concept="3NFfHV" id="6dhOyaLZuea" role="8TvZ8">
+                                <node concept="1sPUBX" id="Egbl7VmQFi" role="lGtFl">
+                                  <ref role="v9R2y" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
+                                  <node concept="3NFfHV" id="6dhOyaLZuea" role="1sPUBK">
                                     <node concept="3clFbS" id="6dhOyaLZueb" role="2VODD2">
                                       <node concept="3clFbF" id="6dhOyaLZASR" role="3cqZAp">
                                         <node concept="2OqwBi" id="6dhOyaLVMuE" role="3clFbG">
@@ -1768,9 +1767,9 @@
                                     <ref role="3ZUYvu" node="7kKaL9x5gxh" resolve="instance" />
                                   </node>
                                 </node>
-                                <node concept="jY4Nl" id="6dhOyaLYTC8" role="lGtFl">
-                                  <ref role="jYjtx" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
-                                  <node concept="3NFfHV" id="6dhOyaLZ2gE" role="8TvZ8">
+                                <node concept="1sPUBX" id="Egbl7VmQuH" role="lGtFl">
+                                  <ref role="v9R2y" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
+                                  <node concept="3NFfHV" id="6dhOyaLZ2gE" role="1sPUBK">
                                     <node concept="3clFbS" id="6dhOyaLZ2gF" role="2VODD2">
                                       <node concept="3clFbF" id="6dhOyaLZaUP" role="3cqZAp">
                                         <node concept="2OqwBi" id="4oSz90jn8cm" role="3clFbG">
@@ -1821,9 +1820,9 @@
                                     <ref role="3ZUYvu" node="7kKaL9x5gxh" resolve="instance" />
                                   </node>
                                 </node>
-                                <node concept="jY4Nl" id="6dhOyaLYvth" role="lGtFl">
-                                  <ref role="jYjtx" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
-                                  <node concept="3NFfHV" id="6dhOyaLYC5N" role="8TvZ8">
+                                <node concept="1sPUBX" id="Egbl7VmQ0R" role="lGtFl">
+                                  <ref role="v9R2y" node="6dhOyaLTVuA" resolve="actionCallSwitch" />
+                                  <node concept="3NFfHV" id="6dhOyaLYC5N" role="1sPUBK">
                                     <node concept="3clFbS" id="6dhOyaLYC5O" role="2VODD2">
                                       <node concept="3clFbF" id="6dhOyaLYHnS" role="3cqZAp">
                                         <node concept="2OqwBi" id="6dhOyaLWRYc" role="3clFbG">
