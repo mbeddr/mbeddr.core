@@ -8220,27 +8220,32 @@
             </node>
             <node concept="3clFbS" id="2Z2H3pkZi_U" role="3clFbx">
               <node concept="3cpWs6" id="2Z2H3pkZi_V" role="3cqZAp">
-                <node concept="1eOMI4" id="2Z2H3pkZiA2" role="3cqZAk">
-                  <node concept="10QFUN" id="2Z2H3pkZi_W" role="1eOMHV">
-                    <node concept="2OqwBi" id="2Z2H3pkZi_X" role="10QFUP">
-                      <node concept="2OqwBi" id="2Z2H3pkZ_mr" role="2Oq$k0">
-                        <node concept="1rXfSq" id="SU4UtHd$EP" role="2Oq$k0">
-                          <ref role="37wK5l" node="SU4UtHdoUz" resolve="getActiveList" />
+                <node concept="2OqwBi" id="5wZqzKSbaEK" role="3cqZAk">
+                  <node concept="1eOMI4" id="2Z2H3pkZiA2" role="2Oq$k0">
+                    <node concept="10QFUN" id="2Z2H3pkZi_W" role="1eOMHV">
+                      <node concept="2OqwBi" id="2Z2H3pkZi_X" role="10QFUP">
+                        <node concept="2OqwBi" id="2Z2H3pkZ_mr" role="2Oq$k0">
+                          <node concept="1rXfSq" id="SU4UtHd$EP" role="2Oq$k0">
+                            <ref role="37wK5l" node="SU4UtHdoUz" resolve="getActiveList" />
+                          </node>
+                          <node concept="liA8E" id="2Z2H3pkZ_ms" role="2OqNvi">
+                            <ref role="37wK5l" to="dxuu:~JList.getModel():javax.swing.ListModel" resolve="getModel" />
+                          </node>
                         </node>
-                        <node concept="liA8E" id="2Z2H3pkZ_ms" role="2OqNvi">
-                          <ref role="37wK5l" to="dxuu:~JList.getModel():javax.swing.ListModel" resolve="getModel" />
+                        <node concept="liA8E" id="2Z2H3pkZi_Z" role="2OqNvi">
+                          <ref role="37wK5l" to="dxuu:~ListModel.getElementAt(int):java.lang.Object" resolve="getElementAt" />
+                          <node concept="37vLTw" id="2Z2H3pkZiA0" role="37wK5m">
+                            <ref role="3cqZAo" node="2Z2H3pkZi_K" resolve="selectionIndex" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="2Z2H3pkZi_Z" role="2OqNvi">
-                        <ref role="37wK5l" to="dxuu:~ListModel.getElementAt(int):java.lang.Object" resolve="getElementAt" />
-                        <node concept="37vLTw" id="2Z2H3pkZiA0" role="37wK5m">
-                          <ref role="3cqZAo" node="2Z2H3pkZi_K" resolve="selectionIndex" />
-                        </node>
+                      <node concept="3uibUv" id="5wZqzKSb42X" role="10QFUM">
+                        <ref role="3uigEE" node="1uZEtAiku4e" resolve="MenuEntry" />
                       </node>
                     </node>
-                    <node concept="3uibUv" id="2Z2H3pkZiA1" role="10QFUM">
-                      <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
-                    </node>
+                  </node>
+                  <node concept="liA8E" id="5wZqzKSbhwc" role="2OqNvi">
+                    <ref role="37wK5l" node="1uZEtAil5uL" resolve="getSubstituteAction" />
                   </node>
                 </node>
               </node>
