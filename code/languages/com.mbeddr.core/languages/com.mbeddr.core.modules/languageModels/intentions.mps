@@ -3462,7 +3462,7 @@
           <node concept="3clFbS" id="6t992PQ41Qm" role="3clFbx">
             <node concept="3cpWs6" id="6t992PQ43ba" role="3cqZAp">
               <node concept="Xl_RD" id="6t992PQ43bb" role="3cqZAk">
-                <property role="Xl_RC" value="Mark as IN Argument" />
+                <property role="Xl_RC" value="Mark as IN Parameter" />
               </node>
             </node>
           </node>
@@ -3479,7 +3479,7 @@
             <node concept="3clFbS" id="6t992PQ43Du" role="9aQI4">
               <node concept="3cpWs6" id="6t992PQ43J7" role="3cqZAp">
                 <node concept="Xl_RD" id="6t992PQ43J8" role="3cqZAk">
-                  <property role="Xl_RC" value="Mark as OUT Argument" />
+                  <property role="Xl_RC" value="Mark as OUT Parameter" />
                 </node>
               </node>
             </node>
@@ -3692,7 +3692,7 @@
           <node concept="3clFbS" id="6t992PQ47uq" role="3clFbx">
             <node concept="3cpWs6" id="6t992PQ47ur" role="3cqZAp">
               <node concept="Xl_RD" id="6t992PQ47us" role="3cqZAk">
-                <property role="Xl_RC" value="Mark as IN Argument" />
+                <property role="Xl_RC" value="Mark as IN Parameter" />
               </node>
             </node>
           </node>
@@ -3709,7 +3709,7 @@
             <node concept="3clFbS" id="6t992PQ47uE" role="9aQI4">
               <node concept="3cpWs6" id="6t992PQ47uF" role="3cqZAp">
                 <node concept="Xl_RD" id="6t992PQ47uG" role="3cqZAk">
-                  <property role="Xl_RC" value="Mark as OUT Argument" />
+                  <property role="Xl_RC" value="Mark as OUT Parameter" />
                 </node>
               </node>
             </node>
@@ -3926,7 +3926,7 @@
           <node concept="3clFbS" id="1fLWRClraqG" role="3clFbx">
             <node concept="3cpWs6" id="1fLWRClraqH" role="3cqZAp">
               <node concept="Xl_RD" id="1fLWRClraqI" role="3cqZAk">
-                <property role="Xl_RC" value="Mark Ellipsis as IN Argument" />
+                <property role="Xl_RC" value="Mark Ellipsis as IN" />
               </node>
             </node>
           </node>
@@ -3943,7 +3943,7 @@
             <node concept="3clFbS" id="1fLWRClraqW" role="9aQI4">
               <node concept="3cpWs6" id="1fLWRClraqX" role="3cqZAp">
                 <node concept="Xl_RD" id="1fLWRClraqY" role="3cqZAk">
-                  <property role="Xl_RC" value="Mark Ellipsis as OUT Argument" />
+                  <property role="Xl_RC" value="Mark Ellipsis as OUT" />
                 </node>
               </node>
             </node>

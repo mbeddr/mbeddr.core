@@ -25,6 +25,9 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -80,9 +83,23 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
+    <language id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow">
+      <concept id="1206442055221" name="jetbrains.mps.lang.dataFlow.structure.DataFlowBuilderDeclaration" flags="ig" index="3_zdsH">
+        <reference id="1206442096288" name="conceptDeclaration" index="3_znuS" />
+        <child id="1206442812839" name="builderBlock" index="3_A6iZ" />
+      </concept>
+      <concept id="1206442659665" name="jetbrains.mps.lang.dataFlow.structure.BuilderBlock" flags="in" index="3__wT9" />
+      <concept id="1206442747519" name="jetbrains.mps.lang.dataFlow.structure.NodeParameter" flags="nn" index="3__QtB" />
+      <concept id="1206454052847" name="jetbrains.mps.lang.dataFlow.structure.EmitCodeForStatement" flags="nn" index="3AgYrR">
+        <child id="1206454079161" name="codeFor" index="3Ah4Yx" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -208,6 +225,46 @@
         <property role="TrG5h" value="initExpression" />
         <node concept="3Tqbb2" id="5lHQMoFTxvQ" role="1tU5fm">
           <ref role="ehGHo" to="mj1l:7oI7FI6okEX" resolve="IOnlyInInitialization" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="25K78YYrlIc">
+    <property role="3GE5qa" value="enum" />
+    <ref role="3_znuS" to="clbe:1frRXyHUCE1" resolve="Int2Enum" />
+    <node concept="3__wT9" id="25K78YYrlId" role="3_A6iZ">
+      <node concept="3clFbS" id="25K78YYrlIe" role="2VODD2">
+        <node concept="3AgYrR" id="25K78YYrlLp" role="3cqZAp">
+          <node concept="2OqwBi" id="25K78YYrlOW" role="3Ah4Yx">
+            <node concept="3__QtB" id="25K78YYrlLG" role="2Oq$k0" />
+            <node concept="3TrEf2" id="25K78YYrm6x" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:1frRXyHUCOf" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="25K78YYrm8m" role="3cqZAp">
+          <node concept="2OqwBi" id="25K78YYrmdb" role="3Ah4Yx">
+            <node concept="3__QtB" id="25K78YYrm9T" role="2Oq$k0" />
+            <node concept="3TrEf2" id="25K78YYrmmh" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:1frRXyHUCFC" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="25K78YYrmn$">
+    <property role="3GE5qa" value="enum" />
+    <ref role="3_znuS" to="clbe:5aaBiRoxDVn" resolve="Enum2Int" />
+    <node concept="3__wT9" id="25K78YYrmn_" role="3_A6iZ">
+      <node concept="3clFbS" id="25K78YYrmnA" role="2VODD2">
+        <node concept="3AgYrR" id="25K78YYrmnL" role="3cqZAp">
+          <node concept="2OqwBi" id="25K78YYrmrm" role="3Ah4Yx">
+            <node concept="3__QtB" id="25K78YYrmo4" role="2Oq$k0" />
+            <node concept="3TrEf2" id="25K78YYrm$s" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:5aaBiRoxDVo" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
