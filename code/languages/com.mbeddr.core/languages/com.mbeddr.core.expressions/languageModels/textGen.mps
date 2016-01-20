@@ -76,7 +76,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -139,7 +139,7 @@
         <child id="1233922432965" name="operation" index="1bwxVq" />
         <child id="1234526822589" name="function" index="1Jy66y" />
       </concept>
-      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" index="1bwezc" />
+      <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
       <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
         <reference id="1234190664409" name="function" index="1rvKf6" />
         <child id="1234191323697" name="parameter" index="1ryhcI" />
@@ -475,9 +475,6 @@
           <node concept="la8eA" id="1yhDrW7s2rt" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
-          <node concept="la8eA" id="1yhDrW7s2ru" role="lcghm">
-            <property role="lacIc" value="(" />
-          </node>
           <node concept="l9hG8" id="1yhDrW7s2rv" role="lcghm">
             <node concept="2OqwBi" id="1yhDrW7s2rw" role="lb14g">
               <node concept="117lpO" id="1yhDrW7s2rx" role="2Oq$k0" />
@@ -485,9 +482,6 @@
                 <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHm" />
               </node>
             </node>
-          </node>
-          <node concept="la8eA" id="1yhDrW7s2rz" role="lcghm">
-            <property role="lacIc" value=")" />
           </node>
           <node concept="la8eA" id="1yhDrW7s2r$" role="lcghm">
             <property role="lacIc" value=")" />
