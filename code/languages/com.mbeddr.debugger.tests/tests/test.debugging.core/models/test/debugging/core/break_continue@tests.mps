@@ -2,15 +2,15 @@
 <model ref="r:ec072759-75fe-4f3c-afb3-b3ec4bcbec24(test.debugging.core.break_continue@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
@@ -93,9 +93,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
-        <child id="8967919205527146150" name="expression" index="2BFjQA" />
-      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -103,9 +100,6 @@
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
-      </concept>
-      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
-        <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
@@ -116,11 +110,11 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -801,24 +795,13 @@
     <node concept="2NXPZ9" id="4PM5ysquhDk" role="N3F5h">
       <property role="TrG5h" value="empty_1358345826727_30" />
     </node>
-    <node concept="N3Fnx" id="4PM5ysquhDm" role="N3F5h">
+    <node concept="lIfQi" id="4Tiud0TdXFZ" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="4PM5ysquhDn" role="3XIRFX">
-        <node concept="2BFjQ_" id="4PM5ysquhDx" role="3XIRFZ">
-          <node concept="3rBj6X" id="4PM5ysquhDy" role="2BFjQA">
-            <node concept="3cM6IN" id="4PM5ysquhDz" role="3cM6Hi">
-              <ref role="3cM6IK" node="7k_CvRMnl1m" resolve="breakTests" />
-            </node>
-            <node concept="3cM6IN" id="4PM5ysquhDB" role="3cM6Hi">
-              <ref role="3cM6IK" node="1FzLn6k6qEE" resolve="continueTests" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Tiud0TdXFX" role="lIfQt">
+        <ref role="3cM6IK" node="7k_CvRMnl1m" resolve="breakTests" />
       </node>
-      <node concept="26Vqph" id="4PM5ysquhDr" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="4Tiud0TdXFY" role="lIfQt">
+        <ref role="3cM6IK" node="1FzLn6k6qEE" resolve="continueTests" />
       </node>
     </node>
     <node concept="2NXPZ9" id="73rdeY8X4vr" role="N3F5h">

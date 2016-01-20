@@ -2,9 +2,9 @@
 <model ref="r:637b1058-d96f-462f-9bdd-173de77a3b9b(mbeddr.tutorial.main.shonan)">
   <persistence version="9" />
   <languages>
-    <use id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" name="mbeddr.tutorial.vectors" version="-1" />
-    <use id="01cd75cf-892b-47a7-b594-744f9e06e5e4" name="mbeddr.tutorial.complex" version="-1" />
-    <use id="29594ca3-9b56-49a1-b776-aaae43264253" name="mbeddr.tutorial.shonan.complexNumberVector" version="-1" />
+    <use id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" name="mbeddr.tutorial.vectors" version="0" />
+    <use id="01cd75cf-892b-47a7-b594-744f9e06e5e4" name="mbeddr.tutorial.complex" version="0" />
+    <use id="29594ca3-9b56-49a1-b776-aaae43264253" name="mbeddr.tutorial.shonan.complexNumberVector" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports />

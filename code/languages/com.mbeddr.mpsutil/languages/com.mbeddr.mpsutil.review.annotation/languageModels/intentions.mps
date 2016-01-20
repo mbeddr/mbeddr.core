@@ -2,7 +2,7 @@
 <model ref="7a060fae-09e0-4372-be36-6696d6554c0e/r:f1e92e05-2816-4c9f-9b40-292c5e3fec2a(com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>

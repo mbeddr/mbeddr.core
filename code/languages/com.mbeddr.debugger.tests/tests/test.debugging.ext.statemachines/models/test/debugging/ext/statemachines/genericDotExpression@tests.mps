@@ -2,7 +2,7 @@
 <model ref="r:812c72ef-fef0-491c-99c9-3de81652063e(test.debugging.ext.statemachines.genericDotExpression@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <devkit ref="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
@@ -66,18 +66,12 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
-        <child id="8967919205527146150" name="expression" index="2BFjQA" />
-      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
-      </concept>
-      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
-        <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
@@ -88,11 +82,11 @@
       <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
@@ -249,26 +243,10 @@
   </registry>
   <node concept="N3F5e" id="7kKaL9x5o5C">
     <property role="TrG5h" value="HelloSMWorld" />
-    <node concept="N3Fnx" id="2IP1L8NjkCm" role="N3F5h">
+    <node concept="lIfQi" id="4Tiud0TdTKC" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="2IP1L8NjkCo" role="3XIRFX">
-        <node concept="1_9egQ" id="2IP1L8Njv0W" role="3XIRFZ">
-          <node concept="3rBj6X" id="2IP1L8Njv0U" role="1_9egR">
-            <node concept="3cM6IN" id="2IP1L8Njv3O" role="3cM6Hi">
-              <ref role="3cM6IK" node="2IP1L8NjoI0" resolve="useSM" />
-            </node>
-          </node>
-        </node>
-        <node concept="2BFjQ_" id="2IP1L8NjkCw" role="3XIRFZ">
-          <node concept="3TlMh9" id="2IP1L8NjkCx" role="2BFjQA">
-            <property role="2hmy$m" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="26Vqph" id="2IP1L8NjkCq" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="4Tiud0TdTKB" role="lIfQt">
+        <ref role="3cM6IK" node="2IP1L8NjoI0" resolve="useSM" />
       </node>
     </node>
     <node concept="2NXPZ9" id="2IP1L8Njn4v" role="N3F5h">

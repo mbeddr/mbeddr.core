@@ -3,17 +3,17 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" name="de.itemis.mps.selection.intentions" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" name="de.itemis.mps.selection.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="nnej" ref="r:41c447ce-0fca-4a98-ad9f-dc62c992880f(de.slisson.mps.tables.demolang.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="9p8b" ref="r:2a738fcb-23b4-4d1d-9f52-870528559e28(de.slisson.mps.tables.runtime.selection)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -429,11 +429,11 @@
             <property role="TrG5h" value="rand" />
             <node concept="2ShNRf" id="1dAqnm9dQAL" role="33vP2m">
               <node concept="1pGfFk" id="1dAqnm9dQJr" role="2ShVmc">
-                <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;()" resolve="Random" />
+                <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;()" resolve="Random" />
               </node>
             </node>
             <node concept="3uibUv" id="1dAqnm9dQAd" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~Random" resolve="Random" />
+              <ref role="3uigEE" to="33ny:~Random" resolve="Random" />
             </node>
           </node>
         </node>
@@ -459,7 +459,7 @@
             <node concept="1y4W85" id="1dAqnm9dV6b" role="37vLTx">
               <node concept="2OqwBi" id="1dAqnm9dVgL" role="1y58nS">
                 <node concept="liA8E" id="1dAqnm9dWm3" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Random.nextInt(int):int" resolve="nextInt" />
+                  <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
                   <node concept="2OqwBi" id="1dAqnm9dZ6g" role="37wK5m">
                     <node concept="34oBXx" id="1dAqnm9eb7M" role="2OqNvi" />
                     <node concept="2OqwBi" id="1dAqnm9dWxO" role="2Oq$k0">
@@ -496,7 +496,7 @@
             <node concept="1y4W85" id="1dAqnm9ebxs" role="37vLTx">
               <node concept="2OqwBi" id="1dAqnm9ebxt" role="1y58nS">
                 <node concept="liA8E" id="1dAqnm9ebxu" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Random.nextInt(int):int" resolve="nextInt" />
+                  <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
                   <node concept="2OqwBi" id="1dAqnm9ebxv" role="37wK5m">
                     <node concept="34oBXx" id="1dAqnm9ebxw" role="2OqNvi" />
                     <node concept="2OqwBi" id="1dAqnm9ebxx" role="2Oq$k0">
@@ -541,7 +541,7 @@
             <node concept="1y4W85" id="1dAqnm9efBb" role="37vLTx">
               <node concept="2OqwBi" id="1dAqnm9efBc" role="1y58nS">
                 <node concept="liA8E" id="1dAqnm9efBd" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Random.nextInt(int):int" resolve="nextInt" />
+                  <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
                   <node concept="2OqwBi" id="1dAqnm9efBe" role="37wK5m">
                     <node concept="34oBXx" id="1dAqnm9efBf" role="2OqNvi" />
                     <node concept="2OqwBi" id="1dAqnm9efBg" role="2Oq$k0">
@@ -863,11 +863,11 @@
         <node concept="3clFbF" id="630t2b85Dlp" role="3cqZAp">
           <node concept="2OqwBi" id="630t2b85Dlm" role="3clFbG">
             <node concept="10M0yZ" id="630t2b85Dln" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="630t2b85Dlo" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="630t2b8619B" role="37wK5m">
                 <node concept="Xl_RD" id="630t2b8619E" role="3uHU7w">
                   <property role="Xl_RC" value=")" />

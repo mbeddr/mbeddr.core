@@ -32,7 +32,7 @@
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" fqName="jetbrains.mps.lang.test" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
-    <language id="a71fc24a-23c8-4871-87d3-e77b414b28d2" fqName="test.com.mbeddr.mpsutil.xml.fix.support" version="-1" />
+    <language id="a71fc24a-23c8-4871-87d3-e77b414b28d2" fqName="test.com.mbeddr.mpsutil.xml.fix.support" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

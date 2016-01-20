@@ -2,12 +2,12 @@
 <model ref="r:03986bce-dbde-4386-87b6-49957d7959d7(com.mbeddr.doc.latex.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tis3" ref="r:c66b6ed4-08e6-4cce-9020-c9aa6a1039e3(com.mbeddr.doc.latex.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -112,11 +112,11 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2bUgBpZU0rO" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.trim():java.lang.String" resolve="trim" />
+                  <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
                 </node>
               </node>
               <node concept="liA8E" id="2bUgBpZU0sf" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="2bUgBpZU0sg" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -140,7 +140,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2bUgBpZU0q$" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="Xl_RD" id="2bUgBpZU0q_" role="37wK5m">
                     <property role="Xl_RC" value="" />
                   </node>

@@ -2,21 +2,21 @@
 <model ref="r:d27c2e6f-c729-4f98-a538-a8b3388b8365(de.itemis.mps.editor.math.java.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="6ce9daa6-c7bc-4847-a19c-5cd82a4a13fc" name="de.itemis.mps.editor.math.java" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="6ce9daa6-c7bc-4847-a19c-5cd82a4a13fc" name="de.itemis.mps.editor.math.java" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="rcub" ref="r:c83abd98-3982-4341-b913-7083d86baf99(de.itemis.mps.editor.math.java.structure)" />
-    <import index="ah4u" ref="f:java_stub#6ce9daa6-c7bc-4847-a19c-5cd82a4a13fc#org.apache.commons.math3.analysis.integration(de.itemis.mps.editor.math.java/org.apache.commons.math3.analysis.integration@java_stub)" />
-    <import index="byag" ref="f:java_stub#6ce9daa6-c7bc-4847-a19c-5cd82a4a13fc#org.apache.commons.math3.analysis(de.itemis.mps.editor.math.java/org.apache.commons.math3.analysis@java_stub)" />
+    <import index="3rlt" ref="6ce9daa6-c7bc-4847-a19c-5cd82a4a13fc/java:org.apache.commons.math3.analysis.integration(de.itemis.mps.editor.math.java/)" />
+    <import index="zl0b" ref="6ce9daa6-c7bc-4847-a19c-5cd82a4a13fc/java:org.apache.commons.math3.analysis(de.itemis.mps.editor.math.java/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -698,8 +698,8 @@
       <ref role="30HIoZ" to="rcub:4Ajzui6S0_W" resolve="PiConstant" />
       <node concept="gft3U" id="4$yggntJx60" role="1lVwrX">
         <node concept="10M0yZ" id="4$yggntJx69" role="gfFT$">
-          <ref role="1PxDUh" to="e2lb:~Math" resolve="Math" />
-          <ref role="3cqZAo" to="e2lb:~Math.PI" resolve="PI" />
+          <ref role="1PxDUh" to="wyt6:~Math" resolve="Math" />
+          <ref role="3cqZAo" to="wyt6:~Math.PI" resolve="PI" />
         </node>
       </node>
     </node>
@@ -713,8 +713,8 @@
       <ref role="30HIoZ" to="rcub:4Ajzui6QFZa" resolve="Sqrt" />
       <node concept="1Koe21" id="2979S3pyTVM" role="1lVwrX">
         <node concept="2YIFZM" id="2979S3pyTW7" role="1Koe22">
-          <ref role="37wK5l" to="e2lb:~Math.sqrt(double):double" resolve="sqrt" />
-          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+          <ref role="37wK5l" to="wyt6:~Math.sqrt(double):double" resolve="sqrt" />
+          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="3cmrfG" id="2979S3pyTWm" role="37wK5m">
             <property role="3cmrfH" value="10" />
             <node concept="29HgVG" id="2979S3pyTXC" role="lGtFl">
@@ -740,8 +740,8 @@
       <ref role="30HIoZ" to="rcub:4Ajzui6R4QY" resolve="Abs" />
       <node concept="1Koe21" id="2979S3pyW10" role="1lVwrX">
         <node concept="2YIFZM" id="2979S3pyW2R" role="1Koe22">
-          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
-          <ref role="37wK5l" to="e2lb:~Math.abs(int):int" resolve="abs" />
+          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+          <ref role="37wK5l" to="wyt6:~Math.abs(int):int" resolve="abs" />
           <node concept="3cmrfG" id="2979S3pyW36" role="37wK5m">
             <property role="3cmrfH" value="10" />
             <node concept="29HgVG" id="2979S3pyX$7" role="lGtFl">
@@ -767,8 +767,8 @@
       <ref role="30HIoZ" to="rcub:4$yggntIoE0" resolve="Cosine" />
       <node concept="1Koe21" id="2979S3pyYOK" role="1lVwrX">
         <node concept="2YIFZM" id="2979S3pyYRH" role="1Koe22">
-          <ref role="37wK5l" to="e2lb:~Math.cos(double):double" resolve="cos" />
-          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+          <ref role="37wK5l" to="wyt6:~Math.cos(double):double" resolve="cos" />
+          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="3cmrfG" id="2979S3pyYWS" role="37wK5m">
             <property role="3cmrfH" value="10" />
             <node concept="29HgVG" id="2979S3pyYYa" role="lGtFl">
@@ -794,8 +794,8 @@
       <ref role="30HIoZ" to="rcub:4Ajzui6SjSZ" resolve="Sine" />
       <node concept="1Koe21" id="2979S3pz2Uh" role="1lVwrX">
         <node concept="2YIFZM" id="2979S3pz2UA" role="1Koe22">
-          <ref role="37wK5l" to="e2lb:~Math.sin(double):double" resolve="sin" />
-          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+          <ref role="37wK5l" to="wyt6:~Math.sin(double):double" resolve="sin" />
+          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="3cmrfG" id="2979S3pz2UP" role="37wK5m">
             <property role="3cmrfH" value="10" />
             <node concept="29HgVG" id="2979S3pz2W7" role="lGtFl">
@@ -821,8 +821,8 @@
       <ref role="30HIoZ" to="rcub:4Ajzui6R4Tl" resolve="Power" />
       <node concept="1Koe21" id="2979S3pz1bK" role="1lVwrX">
         <node concept="2YIFZM" id="2979S3pz1c3" role="1Koe22">
-          <ref role="37wK5l" to="e2lb:~Math.pow(double,double):double" resolve="pow" />
-          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+          <ref role="37wK5l" to="wyt6:~Math.pow(double,double):double" resolve="pow" />
+          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="3cmrfG" id="2979S3pz1hq" role="37wK5m">
             <property role="3cmrfH" value="1" />
             <node concept="29HgVG" id="2979S3pz1ju" role="lGtFl">
@@ -865,8 +865,8 @@
       <ref role="30HIoZ" to="rcub:4Ajzui6QSvq" resolve="NRoot" />
       <node concept="1Koe21" id="2979S3pzcpV" role="1lVwrX">
         <node concept="2YIFZM" id="2979S3pzc_T" role="1Koe22">
-          <ref role="37wK5l" to="e2lb:~Math.pow(double,double):double" resolve="pow" />
-          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+          <ref role="37wK5l" to="wyt6:~Math.pow(double,double):double" resolve="pow" />
+          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
           <node concept="3cmrfG" id="2979S3pzcA8" role="37wK5m">
             <property role="3cmrfH" value="10" />
             <node concept="29HgVG" id="2979S3pzcXl" role="lGtFl">
@@ -923,8 +923,8 @@
         <node concept="1eOMI4" id="2979S3pzWoR" role="1Koe22">
           <node concept="FJ1c_" id="2979S3pzWpp" role="1eOMHV">
             <node concept="2YIFZM" id="2979S3pzW$e" role="3uHU7w">
-              <ref role="37wK5l" to="e2lb:~Math.log(double):double" resolve="log" />
-              <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+              <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
               <node concept="3cmrfG" id="2979S3pzW_v" role="37wK5m">
                 <property role="3cmrfH" value="10" />
                 <node concept="29HgVG" id="2979S3pzWSc" role="lGtFl">
@@ -944,8 +944,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="2979S3pzWxP" role="3uHU7B">
-              <ref role="37wK5l" to="e2lb:~Math.log(double):double" resolve="log" />
-              <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+              <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
               <node concept="3cmrfG" id="2979S3pzWyo" role="37wK5m">
                 <property role="3cmrfH" value="10" />
                 <node concept="29HgVG" id="2979S3pzWF4" role="lGtFl">
@@ -980,11 +980,11 @@
             <node concept="3cpWsn" id="2979S3pviDX" role="3cpWs9">
               <property role="TrG5h" value="integrator" />
               <node concept="3uibUv" id="2979S3pviDY" role="1tU5fm">
-                <ref role="3uigEE" to="ah4u:~TrapezoidIntegrator" resolve="TrapezoidIntegrator" />
+                <ref role="3uigEE" to="3rlt:~TrapezoidIntegrator" resolve="TrapezoidIntegrator" />
               </node>
               <node concept="2ShNRf" id="2979S3pviTX" role="33vP2m">
                 <node concept="1pGfFk" id="2979S3pviTW" role="2ShVmc">
-                  <ref role="37wK5l" to="ah4u:~TrapezoidIntegrator.&lt;init&gt;()" resolve="TrapezoidIntegrator" />
+                  <ref role="37wK5l" to="3rlt:~TrapezoidIntegrator.&lt;init&gt;()" resolve="TrapezoidIntegrator" />
                 </node>
               </node>
             </node>
@@ -998,7 +998,7 @@
                   <ref role="3cqZAo" node="2979S3pviDX" resolve="integrator" />
                 </node>
                 <node concept="liA8E" id="2979S3pvkD8" role="2OqNvi">
-                  <ref role="37wK5l" to="ah4u:~BaseAbstractUnivariateIntegrator.integrate(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double):double" resolve="integrate" />
+                  <ref role="37wK5l" to="3rlt:~BaseAbstractUnivariateIntegrator.integrate(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double):double" resolve="integrate" />
                   <node concept="3cmrfG" id="2979S3pvkLE" role="37wK5m">
                     <property role="3cmrfH" value="100000" />
                   </node>
@@ -1006,8 +1006,8 @@
                     <node concept="YeOm9" id="2979S3pvpc$" role="2ShVmc">
                       <node concept="1Y3b0j" id="2979S3pvpcB" role="YeSDq">
                         <property role="2bfB8j" value="true" />
-                        <ref role="1Y3XeK" to="byag:~UnivariateFunction" resolve="UnivariateFunction" />
-                        <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                        <ref role="1Y3XeK" to="zl0b:~UnivariateFunction" resolve="UnivariateFunction" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="2979S3pvpcC" role="1B3o_S" />
                         <node concept="3clFb_" id="2979S3pvpcD" role="jymVt">
                           <property role="1EzhhJ" value="false" />

@@ -2,7 +2,7 @@
 <model ref="r:04fb223a-65e0-44e9-af51-ae11ca16eb12(com.mbeddr.mpsutil.modellisteners.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="4cbe8d8b-9aa4-4342-8d1a-f3bcd858d0e8" name="com.mbeddr.mpsutil.modellisteners.sandboxlang" version="-1" />
+    <use id="4cbe8d8b-9aa4-4342-8d1a-f3bcd858d0e8" name="com.mbeddr.mpsutil.modellisteners.sandboxlang" version="0" />
   </languages>
   <imports />
   <registry>

@@ -2,7 +2,7 @@
 <model ref="r:0f88175d-0d71-4dd9-959e-de9a0a3db56a(de.itemis.mps.editor.diagram.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,7 +11,7 @@
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
-    <import index="msyo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -522,8 +522,8 @@
               <property role="Xl_RC" value="Deprecated concept " />
             </node>
             <node concept="2YIFZM" id="56Tfdun3eU0" role="3uHU7w">
-              <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
               <node concept="2OqwBi" id="56Tfdun3eU1" role="37wK5m">
                 <node concept="1YBJjd" id="56Tfdun3eU2" role="2Oq$k0">
                   <ref role="1YBMHb" node="1aXvPdDj6_l" resolve="node" />
@@ -557,8 +557,8 @@
               <property role="Xl_RC" value="Deprecated concept " />
             </node>
             <node concept="2YIFZM" id="56Tfdun3gTo" role="3uHU7w">
-              <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
               <node concept="2OqwBi" id="56Tfdun3gTp" role="37wK5m">
                 <node concept="1YBJjd" id="56Tfdun3gTq" role="2Oq$k0">
                   <ref role="1YBMHb" node="1aXvPdDmYZG" resolve="node" />
@@ -592,8 +592,8 @@
               <property role="Xl_RC" value="Deprecated concept " />
             </node>
             <node concept="2YIFZM" id="56Tfdun3h9B" role="3uHU7w">
-              <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
               <node concept="2OqwBi" id="56Tfdun3h9C" role="37wK5m">
                 <node concept="1YBJjd" id="56Tfdun3h9D" role="2Oq$k0">
                   <ref role="1YBMHb" node="1aXvPdDmZ0d" resolve="node" />
@@ -627,8 +627,8 @@
               <property role="Xl_RC" value="Deprecated concept " />
             </node>
             <node concept="2YIFZM" id="56Tfdun3hqc" role="3uHU7w">
-              <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
               <node concept="2OqwBi" id="56Tfdun3hqd" role="37wK5m">
                 <node concept="1YBJjd" id="56Tfdun3hqe" role="2Oq$k0">
                   <ref role="1YBMHb" node="1aXvPdDmZ0I" resolve="node" />
@@ -662,8 +662,8 @@
               <property role="Xl_RC" value="Deprecated concept " />
             </node>
             <node concept="2YIFZM" id="56Tfdun3hEm" role="3uHU7w">
-              <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
               <node concept="2OqwBi" id="56Tfdun3hEn" role="37wK5m">
                 <node concept="1YBJjd" id="56Tfdun3hEo" role="2Oq$k0">
                   <ref role="1YBMHb" node="1aXvPdDmZ1f" resolve="node" />

@@ -2,19 +2,19 @@
 <model ref="r:cdf8abcb-99f2-4fb6-8a28-6093dbc129ae(de.itemis.mps.nativelibs.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
-    <import index="wqua" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.classloading(MPS.Core/jetbrains.mps.classloading@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
     <import index="o3n2" ref="r:26eadcf0-f275-4e90-be37-e4432772a74d(jetbrains.mps.build.util)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="msyo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
-    <import index="vsqj" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="9lvj" ref="r:96ef99ad-4777-4e07-b5ac-713fe7c8396a(de.itemis.mps.nativelibs.structure)" />
-    <import index="42ru" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.module(MPS.Core/jetbrains.mps.module@java_stub)" />
+    <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -126,7 +126,7 @@
         <node concept="3cpWsn" id="6r4GR4a3RJ0" role="3cpWs9">
           <property role="TrG5h" value="model" />
           <node concept="3uibUv" id="6r4GR4a3RIU" role="1tU5fm">
-            <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
           </node>
           <node concept="2JrnkZ" id="6r4GR4a3RJ1" role="33vP2m">
             <node concept="2OqwBi" id="6r4GR4a3RJ2" role="2JrQYb">
@@ -142,14 +142,14 @@
         <node concept="3cpWsn" id="6r4GR4a3Sv$" role="3cpWs9">
           <property role="TrG5h" value="module" />
           <node concept="3uibUv" id="6r4GR4a3Svx" role="1tU5fm">
-            <ref role="3uigEE" to="88zw:~SModule" resolve="SModule" />
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
           </node>
           <node concept="2OqwBi" id="6r4GR4a3Sv_" role="33vP2m">
             <node concept="37vLTw" id="6r4GR4a3SvA" role="2Oq$k0">
               <ref role="3cqZAo" node="6r4GR4a3RJ0" resolve="model" />
             </node>
             <node concept="liA8E" id="6r4GR4a3SvB" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+              <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
             </node>
           </node>
         </node>
@@ -168,7 +168,7 @@
                 <ref role="3cqZAo" node="6r4GR4a3Sv$" resolve="module" />
               </node>
               <node concept="liA8E" id="6r4GR4a3XGN" role="2OqNvi">
-                <ref role="37wK5l" to="88zw:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
               </node>
             </node>
           </node>
@@ -196,7 +196,7 @@
               <ref role="3cqZAo" node="6r4GR4a3RJ0" resolve="model" />
             </node>
             <node concept="liA8E" id="6r4GR4a3TJW" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+              <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
             </node>
           </node>
           <node concept="37vLTw" id="6r4GR4a3XGO" role="3uHU7B">
@@ -217,7 +217,7 @@
                   <ref role="3cqZAo" node="6r4GR4a3Sv$" resolve="module" />
                 </node>
                 <node concept="liA8E" id="6r4GR4a6$S4" role="2OqNvi">
-                  <ref role="37wK5l" to="88zw:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                  <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
                 </node>
               </node>
             </node>
@@ -229,7 +229,7 @@
         <node concept="3fqX7Q" id="6r4GR4a6z_P" role="3clFbw">
           <node concept="2ZW3vV" id="7wXnfGE7iIE" role="3fr31v">
             <node concept="3uibUv" id="7wXnfGE7iJh" role="2ZW6by">
-              <ref role="3uigEE" to="42ru:~ReloadableModule" resolve="ReloadableModule" />
+              <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
             </node>
             <node concept="37vLTw" id="7wXnfGE7iHH" role="2ZW6bz">
               <ref role="3cqZAo" node="6r4GR4a3Sv$" resolve="module" />
@@ -250,7 +250,7 @@
         <node concept="3cpWsn" id="6r4GR4adwuf" role="3cpWs9">
           <property role="TrG5h" value="module" />
           <node concept="3uibUv" id="6r4GR4adwud" role="1tU5fm">
-            <ref role="3uigEE" to="88zw:~SModule" resolve="SModule" />
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
           </node>
           <node concept="2OqwBi" id="6r4GR4adwug" role="33vP2m">
             <node concept="2JrnkZ" id="6r4GR4adwuh" role="2Oq$k0">
@@ -262,7 +262,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6r4GR4adwul" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+              <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
             </node>
           </node>
         </node>
@@ -271,18 +271,18 @@
         <node concept="3cpWsn" id="6r4GR4adxUH" role="3cpWs9">
           <property role="TrG5h" value="file" />
           <node concept="3uibUv" id="6r4GR4adxUC" role="1tU5fm">
-            <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+            <ref role="3uigEE" to="guwi:~File" resolve="File" />
           </node>
           <node concept="2ShNRf" id="6r4GR4adxUI" role="33vP2m">
             <node concept="1pGfFk" id="6r4GR4adxUJ" role="2ShVmc">
-              <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
               <node concept="2OqwBi" id="6r4GR4adxUK" role="37wK5m">
                 <node concept="2YIFZM" id="6r4GR4adxUL" role="2Oq$k0">
-                  <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
-                  <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+                  <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
+                  <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
                   <node concept="10QFUN" id="6r4GR4adxUM" role="37wK5m">
                     <node concept="3uibUv" id="6r4GR4adxUN" role="10QFUM">
-                      <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                     </node>
                     <node concept="37vLTw" id="6r4GR4adxUO" role="10QFUP">
                       <ref role="3cqZAo" node="6r4GR4adwuf" resolve="module" />
@@ -290,7 +290,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6r4GR4adxUP" role="2OqNvi">
-                  <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                  <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
                   <node concept="3cpWs3" id="6r4GR4adxUQ" role="37wK5m">
                     <node concept="2OqwBi" id="6r4GR4adxUR" role="3uHU7w">
                       <node concept="1YBJjd" id="6r4GR4adxUS" role="2Oq$k0">
@@ -322,7 +322,7 @@
                   <ref role="3cqZAo" node="6r4GR4adxUH" resolve="file" />
                 </node>
                 <node concept="liA8E" id="6r4GR4ad$yV" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                 </node>
               </node>
               <node concept="Xl_RD" id="6r4GR4adzrX" role="3uHU7B">
@@ -337,7 +337,7 @@
               <ref role="3cqZAo" node="6r4GR4adxUH" resolve="file" />
             </node>
             <node concept="liA8E" id="6r4GR4adzpR" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
             </node>
           </node>
         </node>
@@ -355,7 +355,7 @@
         <node concept="3cpWsn" id="6r4GR4adIYR" role="3cpWs9">
           <property role="TrG5h" value="module" />
           <node concept="3uibUv" id="6r4GR4adIYS" role="1tU5fm">
-            <ref role="3uigEE" to="88zw:~SModule" resolve="SModule" />
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
           </node>
           <node concept="2OqwBi" id="6r4GR4adIYT" role="33vP2m">
             <node concept="2JrnkZ" id="6r4GR4adIYU" role="2Oq$k0">
@@ -367,7 +367,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6r4GR4adIYY" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+              <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
             </node>
           </node>
         </node>
@@ -376,18 +376,18 @@
         <node concept="3cpWsn" id="6r4GR4adIZ0" role="3cpWs9">
           <property role="TrG5h" value="file" />
           <node concept="3uibUv" id="6r4GR4adIZ1" role="1tU5fm">
-            <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+            <ref role="3uigEE" to="guwi:~File" resolve="File" />
           </node>
           <node concept="2ShNRf" id="6r4GR4adIZ2" role="33vP2m">
             <node concept="1pGfFk" id="6r4GR4adIZ3" role="2ShVmc">
-              <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
               <node concept="2OqwBi" id="6r4GR4adIZ4" role="37wK5m">
                 <node concept="2YIFZM" id="6r4GR4adIZ5" role="2Oq$k0">
-                  <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
-                  <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+                  <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+                  <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
                   <node concept="10QFUN" id="6r4GR4adIZ6" role="37wK5m">
                     <node concept="3uibUv" id="6r4GR4adIZ7" role="10QFUM">
-                      <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                     </node>
                     <node concept="37vLTw" id="6r4GR4adIZ8" role="10QFUP">
                       <ref role="3cqZAo" node="6r4GR4adIYR" resolve="module" />
@@ -395,7 +395,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6r4GR4adIZ9" role="2OqNvi">
-                  <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                  <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
                   <node concept="3cpWs3" id="6r4GR4adIZa" role="37wK5m">
                     <node concept="2OqwBi" id="6r4GR4adIZb" role="3uHU7w">
                       <node concept="1YBJjd" id="6r4GR4adIZc" role="2Oq$k0">
@@ -427,7 +427,7 @@
                   <ref role="3cqZAo" node="6r4GR4adIZ0" resolve="file" />
                 </node>
                 <node concept="liA8E" id="6r4GR4adIZm" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                 </node>
               </node>
               <node concept="Xl_RD" id="6r4GR4adIZn" role="3uHU7B">
@@ -442,7 +442,7 @@
               <ref role="3cqZAo" node="6r4GR4adIZ0" resolve="file" />
             </node>
             <node concept="liA8E" id="6r4GR4adIZr" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
             </node>
           </node>
         </node>
