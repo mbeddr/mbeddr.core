@@ -13,19 +13,40 @@
          */
 
         $build = isset($_GET['build']) ? $_GET['build'] : "MPS-143.795";
-        $requiredVersion = getVersionFromBuild($build);
+        $requiredMpsVersion = getVersionFromBuild($build);
 
         $dir = './';
-        processFolders($dir, $requiredVersion);
+        processMPSVersionFolders($dir, $requiredMpsVersion);
 
-        function processFolders($basePath, $requiredVersion) {
-            $versionedPath = $basePath . $requiredVersion . '/';
+        function processMPSVersionFolders($basePath, $requiredMpsVersion) {
+            $versionedPath = $basePath . $requiredMpsVersion . '/';
             if (file_exists($versionedPath)) {
-                processFolder($versionedPath, $requiredVersion);
+                processPluginVersionFolders($versionedPath, $requiredMpsVersion);
             }
         }
 
-        function processFolder($folder, $requiredVersion) {
+        function processPluginVersionFolders($folder, $requiredMpsVersion) {
+            $newest = getNewestVersion(scandir($folder));
+            if ($newest != "") {
+                processPluginsFolder($folder . $newest ."/", $requiredMpsVersion, $newest);
+            }
+        }
+
+        function getNewestVersion($folders) {
+            $newest = "";
+
+            foreach ($folders as $version) {
+                if ($newest == "") {
+                    $newest = $version;
+                } elseif (isVersionBeforeOrEqual($newest, $version)) {
+                    $newest = $version;
+                }
+            }
+
+            return $newest;
+        }
+
+        function processPluginsFolder($folder, $requiredMpsVersion, $pluginsVersion) {
             $files = scandir($folder);
             foreach ($files as $zipfile) {
                 if (pathinfo($zipfile, PATHINFO_EXTENSION) == 'zip') {
@@ -38,13 +59,12 @@
                             $stream = $za->getStream($pluginXmlFile);
                             $content = stream_get_contents($stream);
                             $xml = simplexml_load_string($content);
-
-                            if (fixPluginXml($xml, $requiredVersion)) {
+                            if (fixPluginXml($xml, $requiredMpsVersion, $pluginsVersion)) {
                                 $za->deleteName($pluginXmlFile);
                                 $za->addFromString($pluginXmlFile, $xml->asXML());
                             }
 
-                            printPluginXml($xml, $zipfile, $requiredVersion);
+                            printPluginXml($xml, $zipfile, $requiredMpsVersion, $pluginsVersion);
                             break;
                         }
                     }
@@ -53,28 +73,32 @@
             }
         }
 
-        function fixPluginXml($xml, $requiredVersion) {
+        function fixPluginXml($xml, $requiredMpsVersion, $pluginsVersion) {
             $anyChange = false;
             if (is_null($xml->{'idea-version'})) {
                 $xml->addChild('idea-version');
                 $anyChange = true;
             }
-            if ($xml->{'idea-version'}['since-build'] != $requiredVersion) {
-                $xml->{'idea-version'}['since-build'] = $requiredVersion;
+            if ($xml->{'idea-version'}['since-build'] != $requiredMpsVersion) {
+                $xml->{'idea-version'}['since-build'] = $requiredMpsVersion;
                 $anyChange = true;
             }
-            if ($xml->{'idea-version'}['until-build'] != $requiredVersion) {
-                $xml->{'idea-version'}['until-build'] = $requiredVersion;
+            if ($xml->{'idea-version'}['until-build'] != $requiredMpsVersion) {
+                $xml->{'idea-version'}['until-build'] = $requiredMpsVersion;
+                $anyChange = true;
+            }
+            if ($xml->version != $pluginsVersion) {
+                $xml->version = $pluginsVersion;
                 $anyChange = true;
             }
             return $anyChange;
         }
 
-        function printPluginXml($xml, $zipfile, $requiredVersion) {
+        function printPluginXml($xml, $zipfile, $requiredMpsVersion, $pluginsVersion) {
             $sincebuild = $xml->{'idea-version'}['since-build'];
             $untilbuild = $xml->{'idea-version'}['until-build'];
 
-            if (!isVersionInRange($requiredVersion, $sincebuild, $untilbuild)) {
+            if (!isVersionInRange($requiredMpsVersion, $sincebuild, $untilbuild)) {
                 echo "Out\n";
                 return;
             }
@@ -90,7 +114,7 @@
 
             $dirname = dirname($_SERVER['PHP_SELF']);
             if ($dirname == '/') $dirname = '';
-            $url = 'http://' . $_SERVER['HTTP_HOST'] . $dirname . '/' . basename($zipfile);
+            $url = 'http://' . $_SERVER['HTTP_HOST'] . $dirname . '/' . $requiredMpsVersion . "/" . $pluginsVersion . "/" . basename($zipfile);
             echo '            <download-url>' . $url . '</download-url>' . PHP_EOL;
             echo '            <idea-version since-build="' . $sincebuild . '" until-build="' . $untilbuild . '" />' . PHP_EOL;
             echo '        </idea-plugin>' . PHP_EOL;
