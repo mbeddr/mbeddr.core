@@ -361,7 +361,7 @@
     </language>
     <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
       <concept id="673470630035214411" name="com.mbeddr.core.dataflow.structure.EmitInlineStatement" flags="ng" index="1cGfmN">
-        <child id="673470630035224866" name="label" index="1cGdNq" />
+        <child id="673470630035224866" name="point" index="1cGdNq" />
         <child id="673470630035214744" name="target" index="1cGfhw" />
       </concept>
       <concept id="2090780709295708596" name="com.mbeddr.core.dataflow.structure.IsContextSensitiveExpression" flags="ng" index="1lNaxe" />
