@@ -64,7 +64,7 @@
   <node concept="1TIwiD" id="2PH7Shh7lAZ">
     <property role="1pbfSe" value="2123004227" />
     <property role="TrG5h" value="Parameter_TargetLink" />
-    <property role="34LRSv" value="targetLink" />
+    <property role="34LRSv" value="target" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2PH7Shh7oUt">
@@ -180,6 +180,12 @@
     <property role="1pbfSe" value="952547701" />
     <property role="TrG5h" value="TargetSetupExtension_CreatedNode" />
     <property role="34LRSv" value="createdNode" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="1WjrBsNG3xs">
+    <property role="1pbfSe" value="1388553939" />
+    <property role="TrG5h" value="Parameter_referenceParent" />
+    <property role="34LRSv" value="referenceParent" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>

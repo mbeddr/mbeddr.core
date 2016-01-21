@@ -641,6 +641,12 @@
                                 <node concept="2GrUjf" id="2CPtIILXsqC" role="37wK5m">
                                   <ref role="2Gs0qQ" node="4UuUKLR0ost" resolve="conceptToCreate" />
                                 </node>
+                                <node concept="2OqwBi" id="1WjrBsNFLFc" role="37wK5m">
+                                  <node concept="37vLTw" id="1WjrBsNFLwD" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2CFqHq6pHoJ" resolve="nodeToSubstitute" />
+                                  </node>
+                                  <node concept="1mfA1w" id="1WjrBsNFLQ8" role="2OqNvi" />
+                                </node>
                               </node>
                             </node>
                             <node concept="37vLTw" id="2CPtIILXpin" role="37vLTJ">
@@ -3401,6 +3407,10 @@
       <node concept="37vLTG" id="2CPtIILXse6" role="3clF46">
         <property role="TrG5h" value="conceptToCreate" />
         <node concept="3bZ5Sz" id="2CPtIILXse7" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1WjrBsNFKE1" role="3clF46">
+        <property role="TrG5h" value="referenceParent" />
+        <node concept="3Tqbb2" id="1WjrBsNFKKQ" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="2CPtIILXfKp" role="3clF45">
         <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
