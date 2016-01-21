@@ -2,7 +2,7 @@
 <model ref="r:020d46e4-ad30-482a-a806-d503750dc47f(test.ex.cc.v_production)">
   <persistence version="9" />
   <languages>
-    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="-1" />
+    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="0" />
     <generationPart ref="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>

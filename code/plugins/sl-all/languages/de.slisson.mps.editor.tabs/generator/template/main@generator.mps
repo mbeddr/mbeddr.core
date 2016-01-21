@@ -2,21 +2,21 @@
 <model ref="r:48299095-5fa4-4dfa-a4b2-ca64619e53da(de.slisson.mps.editor.tabs.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="8f20f615-2fa8-4116-9731-37208a2ac2b8" name="de.slisson.mps.editor.tabs" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="8f20f615-2fa8-4116-9731-37208a2ac2b8" name="de.slisson.mps.editor.tabs" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpc3" ref="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
     <import index="7zpv" ref="r:43def638-2287-459b-83c7-80fa6364d6ca(de.slisson.mps.editor.tabs.runtime)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="evwm" ref="r:394f6642-a91e-4a8e-8653-0fa92d002563(de.slisson.mps.editor.tabs.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -254,7 +254,7 @@
       <node concept="3clFb_" id="g_CeiMb" role="jymVt">
         <property role="TrG5h" value="_cell_factory_method_" />
         <node concept="3uibUv" id="5Hr2i_R23Rv" role="3clF45">
-          <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
         <node concept="raruj" id="g_CeiMW" role="lGtFl">
           <ref role="2sdACS" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
@@ -288,7 +288,7 @@
                     <node concept="1Y3b0j" id="7szUFELQdxp" role="YeSDq">
                       <property role="2bfB8j" value="true" />
                       <ref role="1Y3XeK" to="7zpv:7szUFELPtcc" resolve="ITab" />
-                      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                       <node concept="3Tm1VV" id="7szUFELQdxq" role="1B3o_S" />
                       <node concept="3clFb_" id="7szUFELQdxr" role="jymVt">
                         <property role="1EzhhJ" value="false" />
@@ -325,7 +325,7 @@
                         <node concept="37vLTG" id="7szUFELQdxy" role="3clF46">
                           <property role="TrG5h" value="editorContext" />
                           <node concept="3uibUv" id="7szUFELQdxz" role="1tU5fm">
-                            <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+                            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
                           </node>
                         </node>
                         <node concept="37vLTG" id="7szUFELQdx$" role="3clF46">
@@ -333,7 +333,7 @@
                           <node concept="3Tqbb2" id="7szUFELQdx_" role="1tU5fm" />
                         </node>
                         <node concept="3uibUv" id="7szUFELQdxA" role="3clF45">
-                          <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+                          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                         </node>
                         <node concept="3Tm1VV" id="7szUFELQdxB" role="1B3o_S" />
                         <node concept="3clFbS" id="7szUFELQdxD" role="3clF47">
@@ -396,7 +396,7 @@
             <node concept="3cpWsn" id="g_CeiMo" role="3cpWs9">
               <property role="TrG5h" value="editorCell" />
               <node concept="3uibUv" id="5Hr2i_R1ZQa" role="1tU5fm">
-                <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+                <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
               </node>
               <node concept="2ShNRf" id="3_TG3j97kDd" role="33vP2m">
                 <node concept="1pGfFk" id="3_TG3j97$_b" role="2ShVmc">
@@ -432,7 +432,7 @@
         <node concept="37vLTG" id="g_CeiMc" role="3clF46">
           <property role="TrG5h" value="editorContext" />
           <node concept="3uibUv" id="3BkXqO9qb4X" role="1tU5fm">
-            <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
           </node>
         </node>
         <node concept="37vLTG" id="g_CeiMe" role="3clF46">

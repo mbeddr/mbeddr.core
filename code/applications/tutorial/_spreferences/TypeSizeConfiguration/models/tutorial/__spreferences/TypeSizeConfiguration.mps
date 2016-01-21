@@ -2,7 +2,7 @@
 <model ref="r:749e0262-c211-48eb-932a-9a0f921d73cc(tutorial.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
   <languages>
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="0" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
   </languages>
   <imports />
   <registry>

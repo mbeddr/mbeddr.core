@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="cab214f9-7127-4f03-923a-c64fb67fed05" name="com.mbeddr.mpsutil.dependenciesdiagram" version="0" />
-    <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="-1" />
+    <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports />

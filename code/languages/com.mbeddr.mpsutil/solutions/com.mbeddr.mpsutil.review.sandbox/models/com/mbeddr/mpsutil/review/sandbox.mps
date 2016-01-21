@@ -2,10 +2,10 @@
 <model ref="8e0adbed-6d43-435c-a42b-c9029503826b/r:bd2551f1-6185-4fff-9cb1-68a433e4cb67(com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="97f9a38a-5b19-4147-9eac-e1a8cab31065" name="com.mbeddr.mpsutil.review.readonly" version="-1" />
-    <use id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation" version="-1" />
+    <use id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="97f9a38a-5b19-4147-9eac-e1a8cab31065" name="com.mbeddr.mpsutil.review.readonly" version="0" />
+    <use id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports />

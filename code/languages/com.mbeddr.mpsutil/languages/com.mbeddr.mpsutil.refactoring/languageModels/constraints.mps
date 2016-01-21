@@ -2,7 +2,7 @@
 <model ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:fd0cc321-e6dd-49bd-96d2-901dc8b2796c(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>

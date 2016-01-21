@@ -2,15 +2,15 @@
 <model ref="r:55a3759f-94fe-43a0-beb2-c5b6a97cd573(test.debugging.core.ifstatement@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -88,9 +88,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
-        <child id="8967919205527146150" name="expression" index="2BFjQA" />
-      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
@@ -114,11 +111,11 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="1937609356306123790" name="com.mbeddr.core.unittest.structure.FailStatement" flags="ng" index="2eY$_Z" />
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -887,25 +884,17 @@
     <node concept="2NXPZ9" id="4PM5ysqt6b4" role="N3F5h">
       <property role="TrG5h" value="empty_1358335411972_16" />
     </node>
-    <node concept="N3Fnx" id="2I09F8VKR90" role="N3F5h">
+    <node concept="lIfQi" id="4Tiud0TdXFR" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="2I09F8VKR91" role="3XIRFX">
-        <node concept="2BFjQ_" id="4VEDcE28IVi" role="3XIRFZ">
-          <node concept="3rBj6X" id="4VEDcE28IVj" role="2BFjQA">
-            <node concept="3cM6IN" id="4VEDcE28IVo" role="3cM6Hi">
-              <ref role="3cM6IK" node="2I09F8VKSP1" resolve="ifAndElseIf" />
-            </node>
-            <node concept="3cM6IN" id="4PM5ysqt6bx" role="3cM6Hi">
-              <ref role="3cM6IK" node="4PM5ysqt6bk" resolve="singleIfStatementInTest" />
-            </node>
-            <node concept="3cM6IN" id="6J1IxNXqdzj" role="3cM6Hi">
-              <ref role="3cM6IK" node="6J1IxNWOEqP" resolve="ifWithElse" />
-            </node>
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Tiud0TdXFO" role="lIfQt">
+        <ref role="3cM6IK" node="2I09F8VKSP1" resolve="ifAndElseIf" />
       </node>
-      <node concept="26Vqph" id="4WTYg$PQmOC" role="2C2TGm" />
+      <node concept="3cM6IN" id="4Tiud0TdXFP" role="lIfQt">
+        <ref role="3cM6IK" node="4PM5ysqt6bk" resolve="singleIfStatementInTest" />
+      </node>
+      <node concept="3cM6IN" id="4Tiud0TdXFQ" role="lIfQt">
+        <ref role="3cM6IK" node="6J1IxNWOEqP" resolve="ifWithElse" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="4PM5ysqt6b6" role="N3F5h">
       <property role="TrG5h" value="empty_1358335427898_18" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="26a9201d-e70b-4755-acd6-40baf7a63b3a" name="de.slisson.mps.editor.multiline.demolang" version="-1" />
+    <use id="26a9201d-e70b-4755-acd6-40baf7a63b3a" name="de.slisson.mps.editor.multiline.demolang" version="0" />
   </languages>
   <imports />
   <registry>

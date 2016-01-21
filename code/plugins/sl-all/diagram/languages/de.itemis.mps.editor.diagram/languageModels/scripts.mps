@@ -2,18 +2,18 @@
 <model ref="r:94fe9097-3dad-4286-a6dd-a011892b8abf(de.itemis.mps.editor.diagram.scripts)">
   <persistence version="9" />
   <languages>
-    <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="-1" />
+    <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="2qld" ref="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="51te" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.extapi.model(MPS.Core/jetbrains.mps.extapi.model@java_stub)" />
-    <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
-    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -218,7 +218,7 @@
             <node concept="3cpWsn" id="56Tfdun3mTb" role="3cpWs9">
               <property role="TrG5h" value="model" />
               <node concept="3uibUv" id="56Tfdun3mTc" role="1tU5fm">
-                <ref role="3uigEE" to="51te:~SModelBase" resolve="SModelBase" />
+                <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
               </node>
               <node concept="10QFUN" id="56Tfdun3mTd" role="33vP2m">
                 <node concept="2JrnkZ" id="56Tfdun3mTe" role="10QFUP">
@@ -228,7 +228,7 @@
                   </node>
                 </node>
                 <node concept="3uibUv" id="56Tfdun3mTi" role="10QFUM">
-                  <ref role="3uigEE" to="51te:~SModelBase" resolve="SModelBase" />
+                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
                 </node>
               </node>
             </node>
@@ -239,13 +239,13 @@
                 <ref role="3cqZAo" node="56Tfdun3mTb" resolve="model" />
               </node>
               <node concept="liA8E" id="56Tfdun3mTm" role="2OqNvi">
-                <ref role="37wK5l" to="51te:~SModelDescriptorStub.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
+                <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
                 <node concept="2OqwBi" id="56Tfdun3mTn" role="37wK5m">
                   <node concept="3rM5sP" id="56Tfdun3mTo" role="2Oq$k0">
                     <property role="3rM5sR" value="b1972fb0-9171-4e58-8cee-05866bb91ec2" />
                   </node>
                   <node concept="liA8E" id="56Tfdun3mTp" role="2OqNvi">
-                    <ref role="37wK5l" to="88zw:~SModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                    <ref role="37wK5l" to="lui2:~SModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
                   </node>
                 </node>
               </node>
@@ -351,7 +351,7 @@
             <node concept="3cpWsn" id="56Tfdun3mEK" role="3cpWs9">
               <property role="TrG5h" value="model" />
               <node concept="3uibUv" id="56Tfdun3mEL" role="1tU5fm">
-                <ref role="3uigEE" to="51te:~SModelBase" resolve="SModelBase" />
+                <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
               </node>
               <node concept="10QFUN" id="56Tfdun3mEM" role="33vP2m">
                 <node concept="2JrnkZ" id="56Tfdun3mEN" role="10QFUP">
@@ -361,7 +361,7 @@
                   </node>
                 </node>
                 <node concept="3uibUv" id="56Tfdun3mER" role="10QFUM">
-                  <ref role="3uigEE" to="51te:~SModelBase" resolve="SModelBase" />
+                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
                 </node>
               </node>
             </node>
@@ -372,13 +372,13 @@
                 <ref role="3cqZAo" node="56Tfdun3mEK" resolve="model" />
               </node>
               <node concept="liA8E" id="56Tfdun3mEV" role="2OqNvi">
-                <ref role="37wK5l" to="51te:~SModelDescriptorStub.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
+                <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
                 <node concept="2OqwBi" id="56Tfdun3mEW" role="37wK5m">
                   <node concept="3rM5sP" id="56Tfdun3mEX" role="2Oq$k0">
                     <property role="3rM5sR" value="b1972fb0-9171-4e58-8cee-05866bb91ec2" />
                   </node>
                   <node concept="liA8E" id="56Tfdun3mEY" role="2OqNvi">
-                    <ref role="37wK5l" to="88zw:~SModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                    <ref role="37wK5l" to="lui2:~SModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
                   </node>
                 </node>
               </node>
@@ -503,7 +503,7 @@
             <node concept="3cpWsn" id="56Tfdun1kog" role="3cpWs9">
               <property role="TrG5h" value="model" />
               <node concept="3uibUv" id="56Tfdun32BY" role="1tU5fm">
-                <ref role="3uigEE" to="51te:~SModelBase" resolve="SModelBase" />
+                <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
               </node>
               <node concept="10QFUN" id="56Tfdun33e7" role="33vP2m">
                 <node concept="2JrnkZ" id="56Tfdun1koh" role="10QFUP">
@@ -513,7 +513,7 @@
                   </node>
                 </node>
                 <node concept="3uibUv" id="56Tfdun33e8" role="10QFUM">
-                  <ref role="3uigEE" to="51te:~SModelBase" resolve="SModelBase" />
+                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
                 </node>
               </node>
             </node>
@@ -524,13 +524,13 @@
                 <ref role="3cqZAo" node="56Tfdun1kog" resolve="model" />
               </node>
               <node concept="liA8E" id="56Tfdun33LR" role="2OqNvi">
-                <ref role="37wK5l" to="51te:~SModelDescriptorStub.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
+                <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
                 <node concept="2OqwBi" id="56Tfdun356E" role="37wK5m">
                   <node concept="3rM5sP" id="56Tfdun352E" role="2Oq$k0">
                     <property role="3rM5sR" value="b1972fb0-9171-4e58-8cee-05866bb91ec2" />
                   </node>
                   <node concept="liA8E" id="56Tfdun35rd" role="2OqNvi">
-                    <ref role="37wK5l" to="88zw:~SModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                    <ref role="37wK5l" to="lui2:~SModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
                   </node>
                 </node>
               </node>

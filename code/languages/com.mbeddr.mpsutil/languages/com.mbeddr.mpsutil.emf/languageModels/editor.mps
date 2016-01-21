@@ -2,7 +2,7 @@
 <model ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:3c6acf8c-1911-4c08-bc27-b164ec3f3d05(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>

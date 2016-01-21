@@ -2,13 +2,13 @@
 <model ref="r:b1829bc1-5615-478b-87a3-55032e34acfd(de.itemis.mps.selection.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -132,14 +132,14 @@
           <node concept="3cpWsn" id="6Y0V2RJu5RL" role="3cpWs9">
             <property role="TrG5h" value="tl" />
             <node concept="3uibUv" id="6Y0V2RJu5RH" role="1tU5fm">
-              <ref role="3uigEE" to="jsgz:~TextLine" resolve="TextLine" />
+              <ref role="3uigEE" to="g51k:~TextLine" resolve="TextLine" />
             </node>
             <node concept="2OqwBi" id="6Y0V2RJu5RM" role="33vP2m">
               <node concept="37vLTw" id="6Y0V2RJu5RN" role="2Oq$k0">
                 <ref role="3cqZAo" node="6Y0V2RJtN5b" resolve="label" />
               </node>
               <node concept="1PnCL0" id="6Y0V2RJu5RO" role="2OqNvi">
-                <ref role="2Oxat5" to="jsgz:~EditorCell_Label.myTextLine" resolve="myTextLine" />
+                <ref role="2Oxat5" to="g51k:~EditorCell_Label.myTextLine" resolve="myTextLine" />
               </node>
             </node>
           </node>
@@ -156,7 +156,7 @@
                     <ref role="3cqZAo" node="6Y0V2RJtN5b" resolve="label" />
                   </node>
                   <node concept="liA8E" id="6Y0V2RJviY7" role="2OqNvi">
-                    <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getX():int" resolve="getX" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX():int" resolve="getX" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6Y0V2RJtWIE" role="3uHU7B">
@@ -168,7 +168,7 @@
                   <ref role="3cqZAo" node="6Y0V2RJu5RL" resolve="tl" />
                 </node>
                 <node concept="liA8E" id="6Y0V2RJuarZ" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~TextLine.getPaddingLeft():int" resolve="getPaddingLeft" />
+                  <ref role="37wK5l" to="g51k:~TextLine.getPaddingLeft():int" resolve="getPaddingLeft" />
                 </node>
               </node>
             </node>
@@ -179,14 +179,14 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="metrics" />
             <node concept="3uibUv" id="6Y0V2RJtWII" role="1tU5fm">
-              <ref role="3uigEE" to="1t7x:~FontMetrics" resolve="FontMetrics" />
+              <ref role="3uigEE" to="z60i:~FontMetrics" resolve="FontMetrics" />
             </node>
             <node concept="2OqwBi" id="6Y0V2RJuaID" role="33vP2m">
               <node concept="37vLTw" id="6Y0V2RJua_C" role="2Oq$k0">
                 <ref role="3cqZAo" node="6Y0V2RJu5RL" resolve="tl" />
               </node>
               <node concept="liA8E" id="6Y0V2RJub49" role="2OqNvi">
-                <ref role="37wK5l" to="jsgz:~TextLine.getFontMetrics():java.awt.FontMetrics" resolve="getFontMetrics" />
+                <ref role="37wK5l" to="g51k:~TextLine.getFontMetrics():java.awt.FontMetrics" resolve="getFontMetrics" />
               </node>
             </node>
           </node>
@@ -204,11 +204,11 @@
                   <ref role="3cqZAo" node="6Y0V2RJu5RL" resolve="tl" />
                 </node>
                 <node concept="liA8E" id="6Y0V2RJubKn" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~TextLine.getText():java.lang.String" resolve="getText" />
+                  <ref role="37wK5l" to="g51k:~TextLine.getText():java.lang.String" resolve="getText" />
                 </node>
               </node>
               <node concept="liA8E" id="6Y0V2RJtWIQ" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.toCharArray():char[]" resolve="toCharArray" />
+                <ref role="37wK5l" to="wyt6:~String.toCharArray():char[]" resolve="toCharArray" />
               </node>
             </node>
           </node>
@@ -223,11 +223,11 @@
                   <ref role="3cqZAo" node="6Y0V2RJu5RL" resolve="tl" />
                 </node>
                 <node concept="liA8E" id="6Y0V2RJudeq" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~TextLine.getText():java.lang.String" resolve="getText" />
+                  <ref role="37wK5l" to="g51k:~TextLine.getText():java.lang.String" resolve="getText" />
                 </node>
               </node>
               <node concept="liA8E" id="6Y0V2RJuean" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
               </node>
             </node>
           </node>
@@ -261,11 +261,11 @@
                   <ref role="3cqZAo" node="6Y0V2RJu5RL" resolve="tl" />
                 </node>
                 <node concept="liA8E" id="6Y0V2RJugaa" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~TextLine.getText():java.lang.String" resolve="getText" />
+                  <ref role="37wK5l" to="g51k:~TextLine.getText():java.lang.String" resolve="getText" />
                 </node>
               </node>
               <node concept="liA8E" id="6Y0V2RJufM0" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
               </node>
             </node>
           </node>
@@ -285,7 +285,7 @@
                     <ref role="3cqZAo" node="6Y0V2RJtWIG" resolve="metrics" />
                   </node>
                   <node concept="liA8E" id="6Y0V2RJtWKc" role="2OqNvi">
-                    <ref role="37wK5l" to="1t7x:~FontMetrics.charsWidth(char[],int,int):int" resolve="charsWidth" />
+                    <ref role="37wK5l" to="z60i:~FontMetrics.charsWidth(char[],int,int):int" resolve="charsWidth" />
                     <node concept="37vLTw" id="6Y0V2RJtWJf" role="37wK5m">
                       <ref role="3cqZAo" node="6Y0V2RJtWIK" resolve="chars" />
                     </node>
@@ -365,7 +365,7 @@
       <node concept="37vLTG" id="6Y0V2RJtN5b" role="3clF46">
         <property role="TrG5h" value="label" />
         <node concept="3uibUv" id="6Y0V2RJtN5a" role="1tU5fm">
-          <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+          <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
         </node>
       </node>
       <node concept="37vLTG" id="6Y0V2RJtQ13" role="3clF46">

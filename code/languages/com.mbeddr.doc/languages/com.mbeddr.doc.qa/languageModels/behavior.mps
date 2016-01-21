@@ -2,13 +2,13 @@
 <model ref="r:6d98dd29-662a-4975-b0ac-2c0fcb27a380(com.mbeddr.doc.qa.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="ene9" ref="r:2681561e-1819-4f50-88f9-9f55fdc1c6ea(com.mbeddr.core.qa.behavior)" />
     <import index="79wq" ref="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
@@ -171,7 +171,7 @@
             <property role="TrG5h" value="allLangs" />
             <node concept="A3Dl8" id="5r_qjlUXBf" role="1tU5fm">
               <node concept="3uibUv" id="5r_qjlUXBg" role="A3Ik2">
-                <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+                <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
               </node>
             </node>
             <node concept="2YIFZM" id="5r_qjlUXBh" role="33vP2m">
@@ -207,7 +207,7 @@
             <property role="TrG5h" value="referencedCode" />
             <node concept="A3Dl8" id="5r_qjlUZ8h" role="1tU5fm">
               <node concept="3Tqbb2" id="5r_qjlUZ8i" role="A3Ik2">
-                <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
               </node>
             </node>
             <node concept="2OqwBi" id="5r_qjlVg$S" role="33vP2m">
@@ -221,13 +221,13 @@
                 <node concept="2qgKlT" id="5r_qjlV3dR" role="2OqNvi">
                   <ref role="37wK5l" to="ene9:jipk886TYE" resolve="findInstances" />
                   <node concept="3TUQnm" id="5r_qjlV3hH" role="37wK5m">
-                    <ref role="3TV0OU" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                    <ref role="3TV0OU" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
                   </node>
                 </node>
               </node>
               <node concept="v3k3i" id="5r_qjlVhii" role="2OqNvi">
                 <node concept="chp4Y" id="5r_qjlVhCC" role="v3oSu">
-                  <ref role="cht4Q" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                  <ref role="cht4Q" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
                 </node>
               </node>
             </node>
@@ -430,7 +430,7 @@
             <property role="TrG5h" value="allLangs" />
             <node concept="A3Dl8" id="5r_qjlVNgm" role="1tU5fm">
               <node concept="3uibUv" id="5r_qjlVNgn" role="A3Ik2">
-                <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+                <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
               </node>
             </node>
             <node concept="2YIFZM" id="5r_qjlVNgo" role="33vP2m">
@@ -466,7 +466,7 @@
             <property role="TrG5h" value="referencedCode" />
             <node concept="A3Dl8" id="5r_qjlVNg$" role="1tU5fm">
               <node concept="3Tqbb2" id="5r_qjlVNg_" role="A3Ik2">
-                <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
               </node>
             </node>
             <node concept="2OqwBi" id="5r_qjlVNgA" role="33vP2m">
@@ -480,13 +480,13 @@
                 <node concept="2qgKlT" id="5r_qjlVNgF" role="2OqNvi">
                   <ref role="37wK5l" to="ene9:jipk886TYE" resolve="findInstances" />
                   <node concept="3TUQnm" id="5r_qjlVNgG" role="37wK5m">
-                    <ref role="3TV0OU" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                    <ref role="3TV0OU" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
                   </node>
                 </node>
               </node>
               <node concept="v3k3i" id="5r_qjlVNgH" role="2OqNvi">
                 <node concept="chp4Y" id="5r_qjlVNgI" role="v3oSu">
-                  <ref role="cht4Q" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                  <ref role="cht4Q" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
                 </node>
               </node>
             </node>
