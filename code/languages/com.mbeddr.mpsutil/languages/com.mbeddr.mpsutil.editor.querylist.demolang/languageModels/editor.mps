@@ -14,6 +14,7 @@
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vj5k" ref="120e1c9d-4e27-4478-b2af-b2c3bd3850b0/r:b64b11b6-7734-4b5f-812e-47396d726968(com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -223,6 +224,7 @@
       <concept id="4299801941278870712" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryProperty" flags="ng" index="2DRrIH">
         <child id="4299801941278904153" name="query" index="2DRjxc" />
       </concept>
+      <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListNodeExpression" flags="ng" index="GFMny" />
       <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
       <concept id="147976780035481717" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryLinkList" flags="ng" index="3N2dxH">
         <reference id="147976780035572837" name="elementConcept" index="3N2RLX" />
@@ -252,6 +254,9 @@
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
@@ -716,8 +721,18 @@
                             <property role="Xl_RC" value=": " />
                           </node>
                           <node concept="3cpWs3" id="6QZo_pQb7sr" role="3uHU7B">
-                            <node concept="Xl_RD" id="6QZo_pQb76U" role="3uHU7B">
-                              <property role="Xl_RC" value="" />
+                            <node concept="3cpWs3" id="1WjrBsNIVX7" role="3uHU7B">
+                              <node concept="2OqwBi" id="1WjrBsNIZqG" role="3uHU7B">
+                                <node concept="2JrnkZ" id="1WjrBsNIZmj" role="2Oq$k0">
+                                  <node concept="GFMny" id="1WjrBsNJotP" role="2JrQYb" />
+                                </node>
+                                <node concept="liA8E" id="1WjrBsNIZwA" role="2OqNvi">
+                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="6QZo_pQb76U" role="3uHU7w">
+                                <property role="Xl_RC" value=" # " />
+                              </node>
                             </node>
                             <node concept="2OqwBi" id="6QZo_pQbiOh" role="3uHU7w">
                               <node concept="2OqwBi" id="6QZo_pQb7Hz" role="2Oq$k0">
