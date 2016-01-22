@@ -2645,8 +2645,13 @@
             </node>
             <node concept="3x8VRR" id="XSZx7AgNmF" role="2OqNvi" />
           </node>
-          <node concept="Xl_RD" id="1MHf7FkbqMb" role="1gVpfI">
-            <property role="Xl_RC" value="could not find any node to replace" />
+          <node concept="3cpWs3" id="1Xy3YuR6Isk" role="1gVpfI">
+            <node concept="37vLTw" id="1Xy3YuR6IOO" role="3uHU7w">
+              <ref role="3cqZAo" node="52eR6w5S3NV" resolve="startingPointName" />
+            </node>
+            <node concept="Xl_RD" id="1MHf7FkbqMb" role="3uHU7B">
+              <property role="Xl_RC" value="could not find any node to replace in scope: " />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="433ob2TjaGw" role="3cqZAp">
