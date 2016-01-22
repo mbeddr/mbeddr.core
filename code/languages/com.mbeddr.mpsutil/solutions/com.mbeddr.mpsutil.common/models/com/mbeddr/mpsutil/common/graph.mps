@@ -100,7 +100,9 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -149,6 +151,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -278,7 +283,7 @@
     <node concept="3UR2Jj" id="9NO9Tq8VQJ" role="lGtFl">
       <node concept="TZ5HA" id="9NO9Tq8VQL" role="TZ5H$">
         <node concept="1dT_AC" id="9NO9Tq8VQM" role="1dT_Ay">
-          <property role="1dT_AB" value="5A simple directed graph data structure with forward and backward edge mappings. " />
+          <property role="1dT_AB" value="A simple directed graph data structure with forward and backward edge mappings. " />
         </node>
       </node>
       <node concept="TZ5HA" id="9NO9Tq8VQN" role="TZ5H$">
@@ -1386,6 +1391,128 @@
       </node>
       <node concept="3Tm1VV" id="9NO9Tq8VQH" role="1B3o_S" />
       <node concept="17QB3L" id="9NO9Tq9dFE" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="EypHlhWR2K" role="jymVt" />
+    <node concept="3clFb_" id="EypHlhWWED" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="generateDot" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="EypHlhWWEG" role="3clF47">
+        <node concept="3cpWs8" id="EypHlhWYPM" role="3cqZAp">
+          <node concept="3cpWsn" id="EypHlhWYPN" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="EypHlhWYPO" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+            </node>
+            <node concept="2ShNRf" id="EypHlhWYRX" role="33vP2m">
+              <node concept="1pGfFk" id="EypHlhWYRK" role="2ShVmc">
+                <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="EypHlhWYTw" role="3cqZAp">
+          <node concept="2OqwBi" id="EypHlhWYVo" role="3clFbG">
+            <node concept="37vLTw" id="EypHlhWYTu" role="2Oq$k0">
+              <ref role="3cqZAo" node="EypHlhWYPN" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="EypHlhWYZ9" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="Xl_RD" id="EypHlhWZ0m" role="37wK5m">
+                <property role="Xl_RC" value="digraph g {\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="EypHlhXaOW" role="3cqZAp">
+          <node concept="2GrKxI" id="EypHlhXaOX" role="2Gsz3X">
+            <property role="TrG5h" value="source" />
+          </node>
+          <node concept="3clFbS" id="EypHlhXaOY" role="2LFqv$">
+            <node concept="2Gpval" id="EypHlhXaOZ" role="3cqZAp">
+              <node concept="2GrKxI" id="EypHlhXaP0" role="2Gsz3X">
+                <property role="TrG5h" value="target" />
+              </node>
+              <node concept="3clFbS" id="EypHlhXaP1" role="2LFqv$">
+                <node concept="3clFbF" id="EypHlhXaP2" role="3cqZAp">
+                  <node concept="2OqwBi" id="EypHlhXaP3" role="3clFbG">
+                    <node concept="37vLTw" id="EypHlhXhTb" role="2Oq$k0">
+                      <ref role="3cqZAo" node="EypHlhWYPN" resolve="builder" />
+                    </node>
+                    <node concept="liA8E" id="EypHlhXaP5" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                      <node concept="3cpWs3" id="EypHlhXaP6" role="37wK5m">
+                        <node concept="3cpWs3" id="EypHlhXaP7" role="3uHU7B">
+                          <node concept="3cpWs3" id="EypHlhXaP8" role="3uHU7B">
+                            <node concept="3cpWs3" id="EypHlhXsfy" role="3uHU7B">
+                              <node concept="Xl_RD" id="EypHlhXsmB" role="3uHU7B">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="2GrUjf" id="EypHlhXaP9" role="3uHU7w">
+                                <ref role="2Gs0qQ" node="EypHlhXaOX" resolve="source" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="EypHlhXaPa" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot; -&gt; \&quot;" />
+                            </node>
+                          </node>
+                          <node concept="2GrUjf" id="EypHlhXaPb" role="3uHU7w">
+                            <ref role="2Gs0qQ" node="EypHlhXaP0" resolve="target" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="EypHlhXaPc" role="3uHU7w">
+                          <property role="Xl_RC" value="\&quot;;\n" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3EllGN" id="EypHlhXaPd" role="2GsD0m">
+                <node concept="2GrUjf" id="EypHlhXaPe" role="3ElVtu">
+                  <ref role="2Gs0qQ" node="EypHlhXaOX" resolve="source" />
+                </node>
+                <node concept="37vLTw" id="EypHlhXaPf" role="3ElQJh">
+                  <ref role="3cqZAo" node="9NO9Tq8VKi" resolve="forwardMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="EypHlhXaPg" role="2GsD0m">
+            <node concept="37vLTw" id="EypHlhXaPh" role="2Oq$k0">
+              <ref role="3cqZAo" node="9NO9Tq8VKi" resolve="forwardMap" />
+            </node>
+            <node concept="3lbrtF" id="EypHlhXaPi" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="EypHlhWZbD" role="3cqZAp">
+          <node concept="2OqwBi" id="EypHlhWZdZ" role="3clFbG">
+            <node concept="37vLTw" id="EypHlhWZbB" role="2Oq$k0">
+              <ref role="3cqZAo" node="EypHlhWYPN" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="EypHlhWZi8" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="Xl_RD" id="EypHlhWZjl" role="37wK5m">
+                <property role="Xl_RC" value="}" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="EypHlhWZqU" role="3cqZAp">
+          <node concept="2OqwBi" id="EypHlhX0UK" role="3cqZAk">
+            <node concept="37vLTw" id="EypHlhWZsU" role="2Oq$k0">
+              <ref role="3cqZAo" node="EypHlhWYPN" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="EypHlhX2JU" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="EypHlhWUIt" role="1B3o_S" />
+      <node concept="17QB3L" id="EypHlhWWE6" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="59VTJR_XXJb">
