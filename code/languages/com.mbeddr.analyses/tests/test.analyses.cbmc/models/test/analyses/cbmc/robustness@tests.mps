@@ -480,14 +480,14 @@
         <node concept="3cpWs8" id="1iGXuG00jHx" role="3cqZAp">
           <node concept="3cpWsn" id="1iGXuG00jHy" role="3cpWs9">
             <property role="TrG5h" value="resOverflow1" />
-            <node concept="2YIFZM" id="32RREvGOGI6" role="33vP2m">
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+            <node concept="2YIFZM" id="57B2v3DA9Cd" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5kHkJcGJQBv" resolve="findResultByMessagePrefix" />
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <node concept="37vLTw" id="32RREvGOGJB" role="37wK5m">
+              <node concept="37vLTw" id="57B2v3DA9Ce" role="37wK5m">
                 <ref role="3cqZAo" node="1iGXuFZV1By" resolve="results" />
               </node>
-              <node concept="Xl_RD" id="41thbhvmxRl" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)(3 / x)" />
+              <node concept="Xl_RD" id="57B2v3DA9Cf" role="37wK5m">
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in" />
               </node>
             </node>
             <node concept="3uibUv" id="1iGXuG00jHz" role="1tU5fm">
