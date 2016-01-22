@@ -2,30 +2,30 @@
 <model ref="r:1c698dc1-0d14-425b-8c35-6d4f27e74333(de.itemis.mps.editor.diagram.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="nu8v" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tc27" ref="r:92d28f3c-6acc-431a-94ba-30cd184d2da4(de.itemis.mps.editor.diagram.runtime.substitute)" />
     <import index="2qld" ref="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="ar19" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="swi3" ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -198,7 +198,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -525,7 +525,7 @@
         <node concept="3clFbF" id="4KKQOHIYwxR" role="3cqZAp">
           <node concept="2c44tf" id="4KKQOHIYwxP" role="3clFbG">
             <node concept="3uibUv" id="4KKQOHIYw_Z" role="2c44tc">
-              <ref role="3uigEE" to="nu8v:~SubstituteInfo" resolve="SubstituteInfo" />
+              <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
             </node>
           </node>
         </node>
@@ -741,7 +741,7 @@
         <node concept="3clFbF" id="1FlH1cK7seA" role="3cqZAp">
           <node concept="2c44tf" id="1FlH1cK7se$" role="3clFbG">
             <node concept="3uibUv" id="1FlH1cK8H3q" role="2c44tc">
-              <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="1FlH1cK9oxC" role="11_B2D">
                 <ref role="3uigEE" to="nkm5:1FlH1cK9gX3" resolve="Port" />
               </node>
@@ -844,7 +844,7 @@
         <node concept="3clFbF" id="6uo2fN6fzmQ" role="3cqZAp">
           <node concept="2c44tf" id="6uo2fN6fzmO" role="3clFbG">
             <node concept="3uibUv" id="6uo2fN6iTTV" role="2c44tc">
-              <ref role="3uigEE" to="ar19:~Rectangle2D" resolve="Rectangle2D" />
+              <ref role="3uigEE" to="fbzs:~Rectangle2D" resolve="Rectangle2D" />
             </node>
           </node>
         </node>
@@ -910,7 +910,7 @@
         <node concept="3clFbF" id="6uo2fN6fIoP" role="3cqZAp">
           <node concept="2c44tf" id="6uo2fN6fIoN" role="3clFbG">
             <node concept="3uibUv" id="6uo2fN6gOKR" role="2c44tc">
-              <ref role="3uigEE" to="1t7x:~Graphics2D" resolve="Graphics2D" />
+              <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
             </node>
           </node>
         </node>
@@ -963,7 +963,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4Te4zGtmUxM" role="2OqNvi">
-                  <ref role="37wK5l" to="ec5l:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
                 </node>
               </node>
             </node>
@@ -1029,7 +1029,7 @@
         <node concept="3clFbF" id="6uo2fN6x_If" role="3cqZAp">
           <node concept="2c44tf" id="6uo2fN6x_Id" role="3clFbG">
             <node concept="3uibUv" id="6uo2fN6x_JZ" role="2c44tc">
-              <ref role="3uigEE" to="1t7x:~Shape" resolve="Shape" />
+              <ref role="3uigEE" to="z60i:~Shape" resolve="Shape" />
             </node>
           </node>
         </node>
@@ -1287,7 +1287,7 @@
         <node concept="3clFbF" id="5P3ZJ9cQk8O" role="3cqZAp">
           <node concept="2c44tf" id="5P3ZJ9cQk8M" role="3clFbG">
             <node concept="3uibUv" id="5P3ZJ9cQkac" role="2c44tc">
-              <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="17QB3L" id="5P3ZJ9cQkbm" role="11_B2D" />
             </node>
           </node>
@@ -1532,7 +1532,7 @@
                 </node>
               </node>
               <node concept="3uibUv" id="5S8_I2Fm6gT" role="2usUpS">
-                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 <node concept="2c44te" id="5S8_I2Fm6im" role="lGtFl">
                   <node concept="2OqwBi" id="5S8_I2Fm6j0" role="2c44t1">
                     <node concept="37vLTw" id="5S8_I2Fm6qe" role="2Oq$k0">

@@ -363,6 +363,9 @@
         <node concept="Xl_RD" id="4WLtQa9hIvs" role="2BsfMF">
           <property role="Xl_RC" value="auto" />
         </node>
+        <node concept="Xl_RD" id="4U17i_awSMw" role="2BsfMF">
+          <property role="Xl_RC" value="bool" />
+        </node>
         <node concept="Xl_RD" id="4WLtQa9hIvM" role="2BsfMF">
           <property role="Xl_RC" value="break" />
         </node>

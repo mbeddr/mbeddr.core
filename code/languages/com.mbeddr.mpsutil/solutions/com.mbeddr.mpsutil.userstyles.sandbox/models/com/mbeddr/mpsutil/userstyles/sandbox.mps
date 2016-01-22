@@ -2,7 +2,7 @@
 <model ref="r:8ec1db19-039c-4341-ac33-e4aee4796499(com.mbeddr.mpsutil.userstyles.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="33745ab7-37dd-4c72-914d-eee6d52b9b33" name="com.mbeddr.mpsutil.userstyles.sandboxlang" version="-1" />
+    <use id="33745ab7-37dd-4c72-914d-eee6d52b9b33" name="com.mbeddr.mpsutil.userstyles.sandboxlang" version="0" />
   </languages>
   <imports />
   <registry>

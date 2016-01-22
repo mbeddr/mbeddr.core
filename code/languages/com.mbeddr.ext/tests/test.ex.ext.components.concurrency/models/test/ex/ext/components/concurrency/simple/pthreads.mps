@@ -2,7 +2,7 @@
 <model ref="r:2d84c5db-6271-46dc-a34f-885f55c8e4af(test.ex.ext.components.concurrency.simple.pthreads)">
   <persistence version="9" />
   <languages>
-    <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="-1" />
+    <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="0" />
     <generationPart ref="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
     <generationPart ref="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
     <generationPart ref="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />

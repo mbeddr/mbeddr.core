@@ -2,8 +2,8 @@
 <model ref="r:1e59a084-7ebe-4e95-89ab-c58a7e396583(de.slisson.mps.tables.editor)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -141,7 +141,10 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
+        <property id="16410578721444372" name="customizeEmptyCell" index="2ru_X1" />
+        <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
+      </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1163613035599" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_Query" flags="in" index="3GJtP1" />
       <concept id="1163613549566" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_parameterObject" flags="nn" index="3GLrbK" />
@@ -1961,25 +1964,13 @@
       </node>
       <node concept="3F1sOY" id="hLd8kdq" role="3EZMnx">
         <property role="1cu_pB" value="3" />
+        <property role="2ru_X1" value="true" />
         <ref role="1NtTu8" to="bnk3:hLd8cI8" />
-        <node concept="pkWqt" id="hLm2xOl" role="pqm2j">
-          <node concept="3clFbS" id="hLm2xOm" role="2VODD2">
-            <node concept="3clFbF" id="hLm2H4d" role="3cqZAp">
-              <node concept="2OqwBi" id="1M9xj9UK_Dt" role="3clFbG">
-                <node concept="2OqwBi" id="hLm2Hog" role="2Oq$k0">
-                  <node concept="pncrf" id="hLm2H4e" role="2Oq$k0" />
-                  <node concept="Bykcj" id="1M9xj9UK_Dq" role="2OqNvi">
-                    <node concept="1aIX9F" id="1M9xj9UK_Dr" role="1xVPHs">
-                      <node concept="26LbJo" id="1M9xj9UK_Ds" role="1aIX9E">
-                        <ref role="26LbJp" to="bnk3:hLd8cI8" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3GX2aA" id="1M9xj9UK_Du" role="2OqNvi" />
-              </node>
-            </node>
+        <node concept="3EZMnI" id="4Tiud0Td6Qo" role="2ruayu">
+          <node concept="VPM3Z" id="4Tiud0Td6Qp" role="3F10Kt">
+            <property role="VOm3f" value="false" />
           </node>
+          <node concept="l2Vlx" id="4Tiud0Td6Qq" role="2iSdaV" />
         </node>
       </node>
       <node concept="2iRfu4" id="i2IxuPy" role="2iSdaV" />

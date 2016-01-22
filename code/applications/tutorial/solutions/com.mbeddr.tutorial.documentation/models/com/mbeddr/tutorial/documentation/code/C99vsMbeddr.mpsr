@@ -101,8 +101,9 @@
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
-      <concept id="6631303246401923642" name="com.mbeddr.core.expressions.structure.Int2Boolean" flags="ng" index="13Enkh">
-        <child id="6631303246401933799" name="expr" index="13EoVc" />
+      <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
+        <child id="6610873504380029790" name="targetType" index="1S8S4N" />
+        <child id="6610873504380029782" name="expr" index="1S8S4V" />
       </concept>
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -176,8 +177,9 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-            <node concept="13Enkh" id="37qjepTtyPw" role="3XIe9u">
-              <node concept="3ZVu4v" id="37qjepTtzdW" role="13EoVc">
+            <node concept="1S8S4T" id="4Tiud0TefnF" role="3XIe9u">
+              <node concept="3TlMgk" id="4Tiud0TefnG" role="1S8S4N" />
+              <node concept="3ZVu4v" id="4Tiud0TefnE" role="1S8S4V">
                 <ref role="3ZVs_2" node="37qjepTtsHb" resolve="aInt16" />
               </node>
             </node>

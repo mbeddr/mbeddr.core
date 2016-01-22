@@ -2,13 +2,13 @@
 <model ref="r:7f3a9fb8-0c98-46df-95ec-5dc88de44705(de.itemis.mps.editor.layout.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="f938" ref="f:java_stub#776efd50-4c6d-4d39-90b3-7f994c98f819#net.miginfocom.layout(de.itemis.mps.editor.layout.runtime/net.miginfocom.layout@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="7cyn" ref="776efd50-4c6d-4d39-90b3-7f994c98f819/java:net.miginfocom.layout(de.itemis.mps.editor.layout.runtime/)" />
     <import index="fu06" ref="r:3e994e3f-0a98-45e0-a45a-13167140e86f(de.itemis.mps.editor.layout.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -99,8 +99,8 @@
             <node concept="3clFbS" id="2lyMrCuFIeU" role="SfCbr">
               <node concept="3clFbF" id="2lyMrCuFIpz" role="3cqZAp">
                 <node concept="2YIFZM" id="2lyMrCuFHkm" role="3clFbG">
-                  <ref role="37wK5l" to="f938:~ConstraintParser.parseLayoutConstraint(java.lang.String):net.miginfocom.layout.LC" resolve="parseLayoutConstraint" />
-                  <ref role="1Pybhc" to="f938:~ConstraintParser" resolve="ConstraintParser" />
+                  <ref role="37wK5l" to="7cyn:~ConstraintParser.parseLayoutConstraint(java.lang.String):net.miginfocom.layout.LC" resolve="parseLayoutConstraint" />
+                  <ref role="1Pybhc" to="7cyn:~ConstraintParser" resolve="ConstraintParser" />
                   <node concept="2OqwBi" id="2lyMrCuFP2M" role="37wK5m">
                     <node concept="1YBJjd" id="2lyMrCuFOYU" role="2Oq$k0">
                       <ref role="1YBMHb" node="2lyMrCuFOHN" resolve="node" />
@@ -116,7 +116,7 @@
               <node concept="3cpWsn" id="2lyMrCuFIeW" role="TDEfY">
                 <property role="TrG5h" value="ex" />
                 <node concept="3uibUv" id="2lyMrCuFI$t" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
                 </node>
               </node>
               <node concept="3clFbS" id="2lyMrCuFIeY" role="TDEfX">
@@ -126,7 +126,7 @@
                       <ref role="3cqZAo" node="2lyMrCuFIeW" resolve="ex" />
                     </node>
                     <node concept="liA8E" id="2lyMrCuFPLo" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="1YBJjd" id="2lyMrCuFPNR" role="2OEOjV">
@@ -158,8 +158,8 @@
             <node concept="3clFbS" id="2lyMrCuG3ML" role="SfCbr">
               <node concept="3clFbF" id="2lyMrCuG3MM" role="3cqZAp">
                 <node concept="2YIFZM" id="2lyMrCuG54O" role="3clFbG">
-                  <ref role="37wK5l" to="f938:~ConstraintParser.parseColumnConstraints(java.lang.String):net.miginfocom.layout.AC" resolve="parseColumnConstraints" />
-                  <ref role="1Pybhc" to="f938:~ConstraintParser" resolve="ConstraintParser" />
+                  <ref role="37wK5l" to="7cyn:~ConstraintParser.parseColumnConstraints(java.lang.String):net.miginfocom.layout.AC" resolve="parseColumnConstraints" />
+                  <ref role="1Pybhc" to="7cyn:~ConstraintParser" resolve="ConstraintParser" />
                   <node concept="2OqwBi" id="2lyMrCuG54P" role="37wK5m">
                     <node concept="1YBJjd" id="2lyMrCuG54Q" role="2Oq$k0">
                       <ref role="1YBMHb" node="2lyMrCuFOHN" resolve="node" />
@@ -175,7 +175,7 @@
               <node concept="3cpWsn" id="2lyMrCuG3MS" role="TDEfY">
                 <property role="TrG5h" value="ex" />
                 <node concept="3uibUv" id="2lyMrCuG3MT" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
                 </node>
               </node>
               <node concept="3clFbS" id="2lyMrCuG3MU" role="TDEfX">
@@ -185,7 +185,7 @@
                       <ref role="3cqZAo" node="2lyMrCuG3MS" resolve="ex" />
                     </node>
                     <node concept="liA8E" id="2lyMrCuG3MY" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="1YBJjd" id="2lyMrCuG3MZ" role="2OEOjV">
@@ -217,8 +217,8 @@
             <node concept="3clFbS" id="2lyMrCuG3ZB" role="SfCbr">
               <node concept="3clFbF" id="2lyMrCuG3ZC" role="3cqZAp">
                 <node concept="2YIFZM" id="2lyMrCuG5Ha" role="3clFbG">
-                  <ref role="37wK5l" to="f938:~ConstraintParser.parseRowConstraints(java.lang.String):net.miginfocom.layout.AC" resolve="parseRowConstraints" />
-                  <ref role="1Pybhc" to="f938:~ConstraintParser" resolve="ConstraintParser" />
+                  <ref role="37wK5l" to="7cyn:~ConstraintParser.parseRowConstraints(java.lang.String):net.miginfocom.layout.AC" resolve="parseRowConstraints" />
+                  <ref role="1Pybhc" to="7cyn:~ConstraintParser" resolve="ConstraintParser" />
                   <node concept="2OqwBi" id="2lyMrCuG5Hb" role="37wK5m">
                     <node concept="1YBJjd" id="2lyMrCuG5Hc" role="2Oq$k0">
                       <ref role="1YBMHb" node="2lyMrCuFOHN" resolve="node" />
@@ -234,7 +234,7 @@
               <node concept="3cpWsn" id="2lyMrCuG3ZI" role="TDEfY">
                 <property role="TrG5h" value="ex" />
                 <node concept="3uibUv" id="2lyMrCuG3ZJ" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
                 </node>
               </node>
               <node concept="3clFbS" id="2lyMrCuG3ZK" role="TDEfX">
@@ -244,7 +244,7 @@
                       <ref role="3cqZAo" node="2lyMrCuG3ZI" resolve="ex" />
                     </node>
                     <node concept="liA8E" id="2lyMrCuG3ZO" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="1YBJjd" id="2lyMrCuG3ZP" role="2OEOjV">
@@ -285,8 +285,8 @@
             <node concept="3clFbS" id="2lyMrCuG9zQ" role="SfCbr">
               <node concept="3clFbF" id="2lyMrCuG9zR" role="3cqZAp">
                 <node concept="2YIFZM" id="2lyMrCuGasi" role="3clFbG">
-                  <ref role="37wK5l" to="f938:~ConstraintParser.parseComponentConstraint(java.lang.String):net.miginfocom.layout.CC" resolve="parseComponentConstraint" />
-                  <ref role="1Pybhc" to="f938:~ConstraintParser" resolve="ConstraintParser" />
+                  <ref role="37wK5l" to="7cyn:~ConstraintParser.parseComponentConstraint(java.lang.String):net.miginfocom.layout.CC" resolve="parseComponentConstraint" />
+                  <ref role="1Pybhc" to="7cyn:~ConstraintParser" resolve="ConstraintParser" />
                   <node concept="2OqwBi" id="2lyMrCuGasj" role="37wK5m">
                     <node concept="1YBJjd" id="2lyMrCuGask" role="2Oq$k0">
                       <ref role="1YBMHb" node="2lyMrCuG9$V" resolve="node" />
@@ -302,7 +302,7 @@
               <node concept="3cpWsn" id="2lyMrCuG9zX" role="TDEfY">
                 <property role="TrG5h" value="ex" />
                 <node concept="3uibUv" id="2lyMrCuG9zY" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
                 </node>
               </node>
               <node concept="3clFbS" id="2lyMrCuG9zZ" role="TDEfX">
@@ -312,7 +312,7 @@
                       <ref role="3cqZAo" node="2lyMrCuG9zX" resolve="ex" />
                     </node>
                     <node concept="liA8E" id="2lyMrCuG9$3" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                     </node>
                   </node>
                   <node concept="1YBJjd" id="2lyMrCuG9$4" role="2OEOjV">

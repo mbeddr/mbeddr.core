@@ -2,7 +2,7 @@
 <model ref="r:3025abe7-1803-43f8-8d3a-b2cf3629bc2d(test.ex.ext.math.simple@tests)">
   <persistence version="9" />
   <languages>
-    <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="-1" />
+    <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="8eb39fd6-60ad-48f0-8c8e-0ea1c36c2d65" name="de.itemis.mps.editor.bool.demolang" version="-1" />
+    <use id="8eb39fd6-60ad-48f0-8c8e-0ea1c36c2d65" name="de.itemis.mps.editor.bool.demolang" version="0" />
   </languages>
   <imports />
   <registry>

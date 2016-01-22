@@ -15,7 +15,7 @@
   </usedDevKits>
   <languageVersions>
     <language id="e0dc4b58-6648-4617-8514-abfaa6d77043" fqName="com.mbeddr.analyses.stan" version="0" />
-    <language id="8577ff67-8aae-422e-b831-9d78b9a8045a" fqName="com.mbeddr.analyses.z3.testing" version="-1" />
+    <language id="8577ff67-8aae-422e-b831-9d78b9a8045a" fqName="com.mbeddr.analyses.z3.testing" version="0" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="2" />
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" fqName="com.mbeddr.core.buildconfig" version="0" />
     <language id="b2da2e1a-b542-47f5-9be0-4dc21efe74a4" fqName="com.mbeddr.core.checks" version="0" />

@@ -4,7 +4,7 @@
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="-1" />
+    <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
@@ -378,6 +378,11 @@
             <property role="TrG5h" value="conceptToCreate" />
             <property role="3TUv4t" value="true" />
             <node concept="3bZ5Sz" id="2CPtIILX__U" role="1tU5fm" />
+          </node>
+          <node concept="37vLTG" id="1WjrBsNG3Ly" role="3clF46">
+            <property role="TrG5h" value="referenceParent" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3Tqbb2" id="1WjrBsNG4vB" role="1tU5fm" />
           </node>
           <node concept="3uibUv" id="2CPtIILX__V" role="3clF45">
             <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
@@ -804,6 +809,11 @@
                     <property role="TrG5h" value="conceptToCreate" />
                     <property role="3TUv4t" value="true" />
                     <node concept="3bZ5Sz" id="2CPtIILXvIR" role="1tU5fm" />
+                  </node>
+                  <node concept="37vLTG" id="1WjrBsNFKE1" role="3clF46">
+                    <property role="TrG5h" value="referenceParent" />
+                    <property role="3TUv4t" value="true" />
+                    <node concept="3Tqbb2" id="1WjrBsNFKKQ" role="1tU5fm" />
                   </node>
                   <node concept="3uibUv" id="2CPtIILXvMH" role="3clF45">
                     <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />

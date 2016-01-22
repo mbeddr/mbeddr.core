@@ -2,11 +2,11 @@
 <model ref="r:46801d97-c3c4-4ecd-82ca-44e1f74de5ab(de.itemis.mps.editor.diagram.demolang.shapes)">
   <persistence version="9" />
   <languages>
-    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ar19" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
+    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -53,29 +53,29 @@
         <node concept="3clFbF" id="4Te4zGtlJMS" role="3cqZAp">
           <node concept="2ShNRf" id="4Te4zGtlJMT" role="3clFbG">
             <node concept="1pGfFk" id="4Te4zGtlJMU" role="2ShVmc">
-              <ref role="37wK5l" to="ar19:~Ellipse2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Ellipse2D.Double" />
+              <ref role="37wK5l" to="fbzs:~Ellipse2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Ellipse2D.Double" />
               <node concept="2OqwBi" id="4Te4zGtlJMV" role="37wK5m">
                 <node concept="2xDkLB" id="4Te4zGtlJMW" role="2Oq$k0" />
                 <node concept="liA8E" id="4Te4zGtlJMX" role="2OqNvi">
-                  <ref role="37wK5l" to="ar19:~RectangularShape.getX():double" resolve="getX" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX():double" resolve="getX" />
                 </node>
               </node>
               <node concept="2OqwBi" id="4Te4zGtlJMY" role="37wK5m">
                 <node concept="2xDkLB" id="4Te4zGtlJMZ" role="2Oq$k0" />
                 <node concept="liA8E" id="4Te4zGtlJN0" role="2OqNvi">
-                  <ref role="37wK5l" to="ar19:~RectangularShape.getY():double" resolve="getY" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY():double" resolve="getY" />
                 </node>
               </node>
               <node concept="2OqwBi" id="4Te4zGtlJN1" role="37wK5m">
                 <node concept="2xDkLB" id="4Te4zGtlJN2" role="2Oq$k0" />
                 <node concept="liA8E" id="4Te4zGtlJN3" role="2OqNvi">
-                  <ref role="37wK5l" to="ar19:~RectangularShape.getWidth():double" resolve="getWidth" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth():double" resolve="getWidth" />
                 </node>
               </node>
               <node concept="2OqwBi" id="4Te4zGtlJN4" role="37wK5m">
                 <node concept="2xDkLB" id="4Te4zGtlJN5" role="2Oq$k0" />
                 <node concept="liA8E" id="4Te4zGtlJN6" role="2OqNvi">
-                  <ref role="37wK5l" to="ar19:~RectangularShape.getHeight():double" resolve="getHeight" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight():double" resolve="getHeight" />
                 </node>
               </node>
             </node>

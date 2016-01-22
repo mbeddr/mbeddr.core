@@ -2,7 +2,7 @@
 <model ref="r:cfa1d9ef-7736-49ec-b6f2-288d50154105(acsl_as_comments)">
   <persistence version="9" />
   <languages>
-    <use id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" name="com.mbeddr.analyses.acsl" version="-1" />
+    <use id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" name="com.mbeddr.analyses.acsl" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports />

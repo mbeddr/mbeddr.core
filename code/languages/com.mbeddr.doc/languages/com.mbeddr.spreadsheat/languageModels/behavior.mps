@@ -2,12 +2,12 @@
 <model ref="r:1a1284ce-37a2-4d35-b38f-a54d85ba3c77(com.mbeddr.spreadsheat.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="gnwj" ref="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheat.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -170,7 +170,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -246,8 +246,8 @@
           <node concept="3clFbS" id="1LnB5xdvNog" role="SfCbr">
             <node concept="3clFbF" id="1LnB5xdvNop" role="3cqZAp">
               <node concept="2YIFZM" id="1LnB5xdvNos" role="3clFbG">
-                <ref role="37wK5l" to="e2lb:~Double.parseDouble(java.lang.String):double" resolve="parseDouble" />
-                <ref role="1Pybhc" to="e2lb:~Double" resolve="Double" />
+                <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String):double" resolve="parseDouble" />
+                <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
                 <node concept="2OqwBi" id="1LnB5xdvNoM" role="37wK5m">
                   <node concept="13iPFW" id="1LnB5xdvNot" role="2Oq$k0" />
                   <node concept="3TrcHB" id="1LnB5xdvNoS" role="2OqNvi">
@@ -269,7 +269,7 @@
             <node concept="3cpWsn" id="1LnB5xdvNoj" role="TDEfY">
               <property role="TrG5h" value="ex" />
               <node concept="3uibUv" id="1LnB5xd$cyx" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
             <node concept="3clFbS" id="1LnB5xdvNol" role="TDEfX">
@@ -299,7 +299,7 @@
                 <property role="Xl_RC" value="false" />
               </node>
               <node concept="liA8E" id="1LnB5xdvNrb" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="2OqwBi" id="1LnB5xdvNrx" role="37wK5m">
                   <node concept="13iPFW" id="1LnB5xdvNrc" role="2Oq$k0" />
                   <node concept="3TrcHB" id="1LnB5xdvNrA" role="2OqNvi">
@@ -313,7 +313,7 @@
                 <property role="Xl_RC" value="true" />
               </node>
               <node concept="liA8E" id="1LnB5xdvNpX" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="2OqwBi" id="1LnB5xdvNqj" role="37wK5m">
                   <node concept="13iPFW" id="1LnB5xdvNpY" role="2Oq$k0" />
                   <node concept="3TrcHB" id="1LnB5xdvNqo" role="2OqNvi">

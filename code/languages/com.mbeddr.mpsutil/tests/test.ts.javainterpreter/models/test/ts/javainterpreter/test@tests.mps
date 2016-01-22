@@ -2,9 +2,9 @@
 <model ref="r:77149972-58bc-4fbf-9f05-0198741a5378(test.ts.javainterpreter.test@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="2a99790c-a7e4-470f-9488-b37851ebf826" name="com.mbeddr.mpsutil.javainterpreter.test" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="2a99790c-a7e4-470f-9488-b37851ebf826" name="com.mbeddr.mpsutil.javainterpreter.test" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>

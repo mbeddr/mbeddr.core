@@ -2,7 +2,7 @@
 <model ref="r:0f8e4b0e-6e74-4bcd-864c-2d81806092e2(test.analyses.cbmc.testgen.testcode.smoke)">
   <persistence version="9" />
   <languages>
-    <use id="66fa30ae-4b73-4f2b-b199-9a072902ec06" name="com.mbeddr.analyses.cbmc.testsgen" version="-1" />
+    <use id="66fa30ae-4b73-4f2b-b199-9a072902ec06" name="com.mbeddr.analyses.cbmc.testsgen" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
@@ -57,8 +57,8 @@
     </language>
     <language id="66fa30ae-4b73-4f2b-b199-9a072902ec06" name="com.mbeddr.analyses.cbmc.testsgen">
       <concept id="7048911191792283825" name="com.mbeddr.analyses.cbmc.testsgen.structure.TestsgenCBMCAnalysis" flags="ng" index="2TRNfg" />
-      <concept id="2210528022910280591" name="com.mbeddr.analyses.cbmc.testsgen.structure.null" flags="ng" index="1Xc7K9">
-        <property id="7048911191795882643" name="" index="2T_xBM" />
+      <concept id="2210528022910280591" name="com.mbeddr.analyses.cbmc.testsgen.structure.ITestgenAnalysis" flags="ng" index="1Xc7K9">
+        <property id="7048911191795882643" name="coverageCriterion" index="2T_xBM" />
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">

@@ -20,7 +20,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
     </language>
@@ -65,6 +65,29 @@
               </node>
             </node>
             <node concept="3x8VRR" id="6QZo_pQhjJH" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1WjrBsNJoAC">
+    <ref role="1M2myG" to="bbp5:1WjrBsNJ4Il" resolve="QueryListNodeExpression" />
+    <node concept="nKS2y" id="1WjrBsNJoQV" role="1MLUbF">
+      <node concept="3clFbS" id="1WjrBsNJoQW" role="2VODD2">
+        <node concept="3clFbF" id="1WjrBsNJoS1" role="3cqZAp">
+          <node concept="2OqwBi" id="1WjrBsNJp8W" role="3clFbG">
+            <node concept="2OqwBi" id="1WjrBsNJoUj" role="2Oq$k0">
+              <node concept="nLn13" id="1WjrBsNJoS0" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1WjrBsNJoYv" role="2OqNvi">
+                <node concept="1xMEDy" id="1WjrBsNJoYx" role="1xVPHs">
+                  <node concept="chp4Y" id="1WjrBsNJp09" role="ri$Ld">
+                    <ref role="cht4Q" to="bbp5:5oklODadopi" resolve="CellModel_QueryList" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="1WjrBsNJp4n" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1WjrBsNJpnv" role="2OqNvi" />
           </node>
         </node>
       </node>

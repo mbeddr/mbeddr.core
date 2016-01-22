@@ -2,7 +2,7 @@
 <model ref="r:9a0e2a70-fa4f-4ca6-b3c5-42cca4181ae9(test.ex.ext.messaging.tests)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
-    <use id="7f1d94f2-798c-49d9-bd54-78999a20832c" name="com.mbeddr.ext.messaging" version="-1" />
+    <use id="7f1d94f2-798c-49d9-bd54-78999a20832c" name="com.mbeddr.ext.messaging" version="0" />
     <use id="bb0ad88b-63cd-45fd-ae27-8662d274cf3c" name="com.mbeddr.ext.serialization" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>

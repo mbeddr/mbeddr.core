@@ -2,7 +2,7 @@
 <model ref="r:b5434033-54ff-4ac5-82b4-8a617d0de4f4(com.mbeddr.debugger.tests.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
   <languages>
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="0" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
   </languages>
   <imports />
   <registry>

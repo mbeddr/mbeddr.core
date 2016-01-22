@@ -414,5 +414,11 @@
     <property role="1pbfSe" value="836601937" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="1WjrBsNJ4Il">
+    <property role="1pbfSe" value="1389345292" />
+    <property role="TrG5h" value="QueryListNodeExpression" />
+    <property role="34LRSv" value="queryListNode" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

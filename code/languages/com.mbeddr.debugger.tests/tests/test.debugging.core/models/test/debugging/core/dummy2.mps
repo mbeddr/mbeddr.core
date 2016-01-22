@@ -2,15 +2,15 @@
 <model ref="r:cfe7dab7-768f-4dbe-b5cd-9398ab4e844c(test.debugging.core.dummy2)">
   <persistence version="9" />
   <languages>
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="0" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
   </languages>
   <imports>
     <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" implicit="true" />
@@ -61,9 +61,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
-        <child id="8967919205527146150" name="expression" index="2BFjQA" />
-      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
@@ -87,15 +84,15 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="1937609356306123790" name="com.mbeddr.core.unittest.structure.FailStatement" flags="ng" index="2eY$_Z" />
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <child id="7955188678846741609" name="tests" index="lIfQt" />
+      </concept>
       <concept id="8551646674110384354" name="com.mbeddr.core.unittest.structure.SameTypeTestStatement" flags="ng" index="pFomP">
         <child id="8551646674110384358" name="right" index="pFomL" />
         <child id="8551646674110384357" name="left" index="pFomM" />
       </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
-      </concept>
-      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
-        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
       <concept id="8230733038425966121" name="com.mbeddr.core.unittest.structure.TestHelperFunctionAnnotation" flags="ng" index="1AiJoY" />
     </language>
@@ -151,37 +148,13 @@
   </node>
   <node concept="N3F5e" id="2s7Bv57Qoc5">
     <property role="TrG5h" value="UnitTest" />
-    <node concept="N3Fnx" id="2s7Bv57Qoc6" role="N3F5h">
+    <node concept="lIfQi" id="4Tiud0TdXER" role="N3F5h">
       <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="2s7Bv57Qoc7" role="3XIRFX">
-        <node concept="3XIRlf" id="2s7Bv57Qoc8" role="3XIRFZ">
-          <property role="TrG5h" value="a" />
-          <node concept="26Vqpq" id="2s7Bv57Qoc9" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3TlMh9" id="2s7Bv57Qoca" role="3XIe9u">
-            <property role="2hmy$m" value="0" />
-          </node>
-        </node>
-        <node concept="2BFjQ_" id="2s7Bv57Qocb" role="3XIRFZ">
-          <node concept="3rBj6X" id="2s7Bv57Qocc" role="2BFjQA">
-            <node concept="3cM6IN" id="2s7Bv57Qocd" role="3cM6Hi">
-              <ref role="3cM6IK" node="2s7Bv57Qoc_" resolve="testCase1" />
-            </node>
-            <node concept="3cM6IN" id="2s7Bv57Qoce" role="3cM6Hi">
-              <ref role="3cM6IK" node="2s7Bv57Qoco" resolve="testCase2" />
-            </node>
-          </node>
-          <node concept="3cQ7KT" id="2s7Bv57Qocf" role="lGtFl">
-            <property role="TrG5h" value="testInvocation" />
-          </node>
-        </node>
+      <node concept="3cM6IN" id="4Tiud0TdXEP" role="lIfQt">
+        <ref role="3cM6IK" node="2s7Bv57Qoc_" resolve="testCase1" />
       </node>
-      <node concept="26Vqph" id="2s7Bv57Qocg" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
+      <node concept="3cM6IN" id="4Tiud0TdXEQ" role="lIfQt">
+        <ref role="3cM6IK" node="2s7Bv57Qoco" resolve="testCase2" />
       </node>
     </node>
     <node concept="2NXPZ9" id="2s7Bv57Qocn" role="N3F5h">

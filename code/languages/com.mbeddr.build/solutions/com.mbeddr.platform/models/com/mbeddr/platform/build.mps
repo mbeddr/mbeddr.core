@@ -8121,6 +8121,12 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1WjrBsNH3p6" role="3bR37C">
+            <node concept="3bR9La" id="1WjrBsNH3p7" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="3n7FoehtTB8" resolve="com.mbeddr.mpsutil.ccmenu#3441511210711546263" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="3n7FoehtFPI" role="2G$12L">
