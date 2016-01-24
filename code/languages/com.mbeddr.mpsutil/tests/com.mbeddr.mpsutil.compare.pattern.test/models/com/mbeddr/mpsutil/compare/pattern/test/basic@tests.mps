@@ -182,6 +182,7 @@
     </language>
     <language id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern">
       <concept id="665537614208925411" name="com.mbeddr.mpsutil.compare.pattern.structure.MemberAnnotation" flags="ng" index="uEgwc" />
+      <concept id="3935692745220220029" name="com.mbeddr.mpsutil.compare.pattern.structure.GetConceptOperation" flags="ng" index="xs8ve" />
       <concept id="3560698633098300404" name="com.mbeddr.mpsutil.compare.pattern.structure.IInitPart" flags="ng" index="2FoiXY">
         <child id="5455284157993911094" name="expression" index="2pJxcZ" />
         <child id="665537614208925694" name="annotation" index="uEg$h" />
@@ -221,6 +222,13 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
+      <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
+        <child id="8427750732757990725" name="actual" index="3tpDZA" />
+        <child id="8427750732757990724" name="expected" index="3tpDZB" />
+      </concept>
+      <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
         <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
@@ -235,6 +243,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -499,6 +510,29 @@
           </node>
         </node>
         <node concept="3clFbH" id="1ho_jHB$W4P" role="3cqZAp" />
+        <node concept="3vlDli" id="3quoVcnW5fE" role="3cqZAp">
+          <node concept="35c_gC" id="3quoVcnW5Nr" role="3tpDZB">
+            <ref role="35c_gD" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
+          </node>
+          <node concept="2OqwBi" id="3quoVcnW6Gz" role="3tpDZA">
+            <node concept="37vLTw" id="3quoVcnW6Ak" role="2Oq$k0">
+              <ref role="3cqZAo" node="d5uH5c0HjH" resolve="pattern" />
+            </node>
+            <node concept="xs8ve" id="3quoVcnW7me" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="3quoVcnW7HR" role="3cqZAp">
+          <node concept="35c_gC" id="3quoVcnW7HS" role="3tpDZB">
+            <ref role="35c_gD" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+          </node>
+          <node concept="2OqwBi" id="3quoVcnW7HT" role="3tpDZA">
+            <node concept="37vLTw" id="3quoVcnW7X3" role="2Oq$k0">
+              <ref role="3cqZAo" node="1KJPJGe2keW" resolve="p" />
+            </node>
+            <node concept="xs8ve" id="3quoVcnW7HV" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3quoVcnW4F1" role="3cqZAp" />
         <node concept="1gVbGN" id="1ho_jHB_8Xn" role="3cqZAp">
           <node concept="2OqwBi" id="1ho_jHB_93a" role="1gVkn0">
             <node concept="37vLTw" id="1ho_jHB_92X" role="2Oq$k0">

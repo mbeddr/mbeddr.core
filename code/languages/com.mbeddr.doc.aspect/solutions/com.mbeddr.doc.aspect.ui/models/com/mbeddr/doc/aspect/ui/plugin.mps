@@ -11,6 +11,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -509,7 +510,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="UK_oBpzHVU" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/toc_closed.gif" />
+      <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="69s3uhHThi8">
@@ -1832,7 +1833,7 @@
               <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon):void" resolve="setIcon" />
               <node concept="1QGGTA" id="1IUlN8Q3WKA" role="37wK5m">
                 <node concept="1QGGSu" id="1IUlN8Q3WKB" role="1QGGTw">
-                  <property role="1QGGTI" value="${module}/icons/toc_closed.gif" />
+                  <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
                 </node>
               </node>
             </node>
@@ -1888,7 +1889,7 @@
               <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon):void" resolve="setIcon" />
               <node concept="1QGGTA" id="7r8qu42xWDv" role="37wK5m">
                 <node concept="1QGGSu" id="7r8qu42xWDw" role="1QGGTw">
-                  <property role="1QGGTI" value="${module}/icons/toc_closed.gif" />
+                  <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
                 </node>
               </node>
             </node>
@@ -2507,7 +2508,7 @@
                 </node>
                 <node concept="1QGGTA" id="1IUlN8Q5qpc" role="2BLOvy">
                   <node concept="1QGGSu" id="1IUlN8Q5qpf" role="1QGGTw">
-                    <property role="1QGGTI" value="${module}/icons/toc_closed.gif" />
+                    <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
                   </node>
                 </node>
               </node>
@@ -2548,7 +2549,7 @@
                 </node>
                 <node concept="1QGGTA" id="7r8qu42xUal" role="2BLOvy">
                   <node concept="1QGGSu" id="7r8qu42xUam" role="1QGGTw">
-                    <property role="1QGGTI" value="${module}/icons/toc_closed.gif" />
+                    <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
                   </node>
                 </node>
               </node>
@@ -2566,7 +2567,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="1KDc5EfI0Ce" role="1nVCmq">
-      <property role="1QGGTI" value="${module}/icons/toc_closed.gif" />
+      <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
     </node>
   </node>
 </model>

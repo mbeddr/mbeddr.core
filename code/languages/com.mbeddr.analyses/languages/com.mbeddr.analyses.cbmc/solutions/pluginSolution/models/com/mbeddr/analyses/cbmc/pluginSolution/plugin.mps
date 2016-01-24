@@ -2723,7 +2723,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3Ymokd9HTEP" role="1nVCmq">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/verify.png" />
+      <property role="1QGGTI" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="312cEu" id="3Ymokd9EUau">
