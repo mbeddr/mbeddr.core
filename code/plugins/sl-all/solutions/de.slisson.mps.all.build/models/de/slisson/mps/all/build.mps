@@ -2870,6 +2870,18 @@
             <ref role="3bR37D" node="2Xjt3l57hht" resolve="de.slisson.mps.reflection.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5P1DsEq4IMo" role="3bR37C">
+          <node concept="3bR9La" id="5P1DsEq4IMp" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5P1DsEq4IMq" role="3bR37C">
+          <node concept="3bR9La" id="5P1DsEq4IMr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2Xjt3l57hht" role="2G$12L">
         <property role="BnDLt" value="true" />
