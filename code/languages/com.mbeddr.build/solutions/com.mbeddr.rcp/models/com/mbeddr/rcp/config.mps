@@ -241,9 +241,6 @@
         <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
     </node>
-    <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
-    </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -268,6 +265,26 @@
       <ref role="1l3spb" node="505a8HIkc0G" resolve="branding" />
       <node concept="398BVA" id="3vzyAKELmgr" role="2JcizS">
         <ref role="398BVh" node="3vzyAKELmfY" resolve="artifacts.branding" />
+      </node>
+    </node>
+    <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <node concept="55IIr" id="5kaST7qF8uh" role="398pKh">
+        <node concept="2Ry0Ak" id="5kaST7qF8ui" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5kaST7qF8uj" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="6qYq$PFV3NY" role="398pKh">
+        <ref role="398BVh" node="5kaST7qF8ug" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="6qYq$PFV3Ov" role="iGT6I">
+          <property role="2Ry0Am" value="artifacts" />
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="5msqZjqR9E5" role="1l3spd">
@@ -308,17 +325,6 @@
         <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="3vzyAKELmg0" role="iGT6I">
           <property role="2Ry0Am" value="branding" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
-      <node concept="55IIr" id="5kaST7qF8uh" role="398pKh">
-        <node concept="2Ry0Ak" id="5kaST7qF8ui" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5kaST7qF8uj" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-          </node>
         </node>
       </node>
     </node>
@@ -594,6 +600,27 @@
               </node>
             </node>
           </node>
+          <node concept="398223" id="6qYq$PFV3Ib" role="39821P">
+            <node concept="3_J27D" id="6qYq$PFV3Id" role="Nbhlr">
+              <node concept="3Mxwew" id="6qYq$PFV3Jo" role="3MwsjC">
+                <property role="3MwjfP" value="jre" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6qYq$PFV3Jq" role="39821P">
+              <node concept="398BVA" id="6qYq$PFV3J_" role="2HvfZ0">
+                <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
+                <node concept="2Ry0Ak" id="6qYq$PFV3OC" role="iGT6I">
+                  <property role="2Ry0Am" value="jre-download" />
+                  <node concept="2Ry0Ak" id="6qYq$PFV3OO" role="2Ry0An">
+                    <property role="2Ry0Am" value="windows" />
+                    <node concept="2Ry0Ak" id="6qYq$PFV3OT" role="2Ry0An">
+                      <property role="2Ry0Am" value="jre" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="398223" id="5msqZjqQD1q" role="39821P">
             <node concept="3_J27D" id="5msqZjqQD1r" role="Nbhlr">
               <node concept="3Mxwew" id="5msqZjqQD1s" role="3MwsjC">
@@ -853,6 +880,27 @@
               </node>
               <node concept="3LWZYq" id="ZY9ibph0Sd" role="1juEy9">
                 <property role="3LWZYl" value="bin/idea.properties" />
+              </node>
+            </node>
+            <node concept="398223" id="6qYq$PFV3Qt" role="39821P">
+              <node concept="3_J27D" id="6qYq$PFV3Qv" role="Nbhlr">
+                <node concept="3Mxwew" id="6qYq$PFV3S3" role="3MwsjC">
+                  <property role="3MwjfP" value="jre" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="6qYq$PFV3S5" role="39821P">
+                <node concept="398BVA" id="6qYq$PFV3Sg" role="2HvfZ0">
+                  <ref role="398BVh" node="5ueaxoTn61m" resolve="artifacts.root" />
+                  <node concept="2Ry0Ak" id="6qYq$PFV3St" role="iGT6I">
+                    <property role="2Ry0Am" value="jre-download" />
+                    <node concept="2Ry0Ak" id="6qYq$PFV3Sy" role="2Ry0An">
+                      <property role="2Ry0Am" value="osx" />
+                      <node concept="2Ry0Ak" id="6qYq$PFV3SB" role="2Ry0An">
+                        <property role="2Ry0Am" value="jre" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="398223" id="7tOXKyZvkJZ" role="39821P">
@@ -1498,6 +1546,27 @@
               </node>
             </node>
           </node>
+          <node concept="398223" id="6qYq$PFV3X3" role="39821P">
+            <node concept="3_J27D" id="6qYq$PFV3X4" role="Nbhlr">
+              <node concept="3Mxwew" id="6qYq$PFV3X5" role="3MwsjC">
+                <property role="3MwjfP" value="jre" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6qYq$PFV3X6" role="39821P">
+              <node concept="398BVA" id="6qYq$PFV3X7" role="2HvfZ0">
+                <ref role="398BVh" node="AyMfzoGqLm" resolve="artifacts.root" />
+                <node concept="2Ry0Ak" id="6qYq$PFV3X8" role="iGT6I">
+                  <property role="2Ry0Am" value="jre-download" />
+                  <node concept="2Ry0Ak" id="6qYq$PFV3X9" role="2Ry0An">
+                    <property role="2Ry0Am" value="windows" />
+                    <node concept="2Ry0Ak" id="6qYq$PFV3Xa" role="2Ry0An">
+                      <property role="2Ry0Am" value="jre" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="398223" id="AyMfzoGqNj" role="39821P">
             <node concept="3_J27D" id="AyMfzoGqNk" role="Nbhlr">
               <node concept="3Mxwew" id="AyMfzoGqNl" role="3MwsjC">
@@ -1750,6 +1819,27 @@
             <node concept="3_J27D" id="AyMfzoGqP3" role="Nbhlr">
               <node concept="3Mxwew" id="AyMfzoGqP4" role="3MwsjC">
                 <property role="3MwjfP" value="Contents" />
+              </node>
+            </node>
+            <node concept="398223" id="6qYq$PFV3SD" role="39821P">
+              <node concept="3_J27D" id="6qYq$PFV3SE" role="Nbhlr">
+                <node concept="3Mxwew" id="6qYq$PFV3SF" role="3MwsjC">
+                  <property role="3MwjfP" value="jre" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="6qYq$PFV3SG" role="39821P">
+                <node concept="398BVA" id="6qYq$PFV3SH" role="2HvfZ0">
+                  <ref role="398BVh" node="AyMfzoGqLm" resolve="artifacts.root" />
+                  <node concept="2Ry0Ak" id="6qYq$PFV3SI" role="iGT6I">
+                    <property role="2Ry0Am" value="jre-download" />
+                    <node concept="2Ry0Ak" id="6qYq$PFV3SJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="osx" />
+                      <node concept="2Ry0Ak" id="6qYq$PFV3SK" role="2Ry0An">
+                        <property role="2Ry0Am" value="jre" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="398223" id="AyMfzoGqP5" role="39821P">
