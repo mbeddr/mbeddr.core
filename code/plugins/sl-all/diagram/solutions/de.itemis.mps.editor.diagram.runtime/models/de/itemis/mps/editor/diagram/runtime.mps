@@ -118,6 +118,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -1552,6 +1555,54 @@
           <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="5P1DsEpUmIF" role="jymVt" />
+    <node concept="2YIFZL" id="5P1DsEpUnuH" role="jymVt">
+      <property role="TrG5h" value="checkInUpdateSession" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="5P1DsEpUnCk" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="5P1DsEpUnIA" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5P1DsEpUn3p" role="3clF47">
+        <node concept="3clFbJ" id="5P1DsEpTTpg" role="3cqZAp">
+          <property role="TyiWK" value="true" />
+          <property role="TyiWL" value="false" />
+          <node concept="3clFbS" id="5P1DsEpTTpi" role="3clFbx">
+            <node concept="YS8fn" id="5P1DsEpTUwX" role="3cqZAp">
+              <node concept="2ShNRf" id="5P1DsEpTUwY" role="YScLw">
+                <node concept="1pGfFk" id="5P1DsEpTUwZ" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <node concept="Xl_RD" id="5P1DsEpTUx0" role="37wK5m">
+                    <property role="Xl_RC" value="Not in an update session" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5P1DsEpTUda" role="3clFbw">
+            <node concept="10Nm6u" id="5P1DsEpTUnd" role="3uHU7w" />
+            <node concept="2OqwBi" id="5P1DsEpTU11" role="3uHU7B">
+              <node concept="2OqwBi" id="5P1DsEpTU12" role="2Oq$k0">
+                <node concept="37vLTw" id="5P1DsEpUnQ9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5P1DsEpUnCk" resolve="editorComponent" />
+                </node>
+                <node concept="liA8E" id="5P1DsEpTU14" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5P1DsEpTU15" role="2OqNvi">
+                <ref role="37wK5l" to="22ra:~Updater.getCurrentUpdateSession():jetbrains.mps.openapi.editor.update.UpdateSession" resolve="getCurrentUpdateSession" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5P1DsEpUn3n" role="3clF45" />
+      <node concept="3Tm1VV" id="5P1DsEpUn3o" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="7L$rKAVcmAi" role="1B3o_S" />
   </node>
