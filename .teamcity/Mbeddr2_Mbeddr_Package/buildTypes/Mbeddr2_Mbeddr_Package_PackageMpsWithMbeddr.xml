@@ -27,7 +27,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
       </runner>
       <runner id="RUNNER_7" name="Build mbeddr RCP" type="Ant">
         <parameters>
-          <param name="build-file-path" value="scripts/com.mbeddr.rcp/bbuild-mbeddr-langDev-distrib.xml" />
+          <param name="build-file-path" value="scripts/com.mbeddr.rcp/build-mbeddr-langDev-distrib.xml" />
           <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties%" />
           <param name="target" value="clean,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
