@@ -46,6 +46,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="fyhl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps(MPS.Core/)" />
     <import index="z1c5" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="2sud" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.treeStructure(MPS.IDEA/)" implicit="true" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1699,6 +1701,34 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2F_rKqEdPJt" role="jymVt" />
+    <node concept="3clFb_" id="6lqhpl_evrM" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="processKeyEvent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6lqhpl_ewpE" role="1B3o_S" />
+      <node concept="3cqZAl" id="6lqhpl_evrP" role="3clF45" />
+      <node concept="37vLTG" id="6lqhpl_evrQ" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6lqhpl_evrR" role="1tU5fm">
+          <ref role="3uigEE" to="hyam:~KeyEvent" resolve="KeyEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6lqhpl_evrY" role="3clF47">
+        <node concept="3clFbF" id="6lqhpl_evs2" role="3cqZAp">
+          <node concept="3nyPlj" id="6lqhpl_evs1" role="3clFbG">
+            <ref role="37wK5l" to="2sud:~Tree.processKeyEvent(java.awt.event.KeyEvent):void" resolve="processKeyEvent" />
+            <node concept="37vLTw" id="6lqhpl_evs0" role="37wK5m">
+              <ref role="3cqZAo" node="6lqhpl_evrQ" resolve="event" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6lqhpl_evrZ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6lqhpl_ez5j" role="jymVt" />
     <node concept="3clFb_" id="2Nt6pro7iqe" role="jymVt">
       <property role="TrG5h" value="rebuild" />
       <property role="DiZV1" value="false" />

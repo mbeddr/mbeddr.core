@@ -23,12 +23,10 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="rgfa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.tree(JDK/)" />
     <import index="u42p" ref="r:986938bb-bdb1-4307-b062-e4647a4db0f9(jetbrains.mps.ide.platform.refactoring)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
-    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
-      <concept id="8473566765277240526" name="de.slisson.mps.reflection.structure.ReflectionMethodCall" flags="ng" index="1PvZjq" />
-    </language>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
         <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
@@ -317,12 +315,12 @@
                           </node>
                           <node concept="3clFbS" id="72neNfy9nk_" role="2LFqv$">
                             <node concept="3clFbF" id="72neNfy9b0g" role="3cqZAp">
-                              <node concept="2OqwBi" id="72neNfy9bqV" role="3clFbG">
+                              <node concept="2OqwBi" id="6lqhpl_e_ox" role="3clFbG">
                                 <node concept="37vLTw" id="72neNfy9b0e" role="2Oq$k0">
                                   <ref role="3cqZAo" node="72neNfy7vvB" resolve="tree" />
                                 </node>
-                                <node concept="1PvZjq" id="72neNfy9i_z" role="2OqNvi">
-                                  <ref role="37wK5l" to="2sud:~Tree.processKeyEvent(java.awt.event.KeyEvent):void" resolve="processKeyEvent" />
+                                <node concept="liA8E" id="6lqhpl_eCHH" role="2OqNvi">
+                                  <ref role="37wK5l" to="b6pq:6lqhpl_evrM" resolve="processKeyEvent" />
                                   <node concept="2ShNRf" id="72neNfy9iG1" role="37wK5m">
                                     <node concept="1pGfFk" id="72neNfy9iG2" role="2ShVmc">
                                       <ref role="37wK5l" to="hyam:~KeyEvent.&lt;init&gt;(java.awt.Component,int,long,int,int,char)" resolve="KeyEvent" />

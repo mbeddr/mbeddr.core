@@ -8,6 +8,7 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -108,8 +109,6 @@
       </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <property id="1075300953594" name="abstractClass" index="1sVAO0" />
-        <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -203,11 +202,23 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
-        <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
       </concept>
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -833,62 +844,50 @@
                 <node concept="3uibUv" id="80_psBYmXX" role="1tU5fm">
                   <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                 </node>
-                <node concept="2OqwBi" id="80_psBXZRK" role="33vP2m">
-                  <node concept="37vLTw" id="80_psBXZRL" role="2Oq$k0">
-                    <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
-                  </node>
-                  <node concept="1PvZjq" id="80_psBXZRM" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorComponent.runRead(jetbrains.mps.util.Computable):java.lang.Object" resolve="runRead" />
-                    <node concept="2ShNRf" id="80_psBXZRN" role="37wK5m">
-                      <node concept="YeOm9" id="80_psBXZRO" role="2ShVmc">
-                        <node concept="1Y3b0j" id="80_psBXZRP" role="YeSDq">
-                          <property role="2bfB8j" value="true" />
-                          <property role="1sVAO0" value="false" />
-                          <property role="1EXbeo" value="false" />
-                          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                          <ref role="1Y3XeK" to="18ew:~Computable" resolve="Computable" />
-                          <node concept="3Tm1VV" id="80_psBXZRQ" role="1B3o_S" />
-                          <node concept="3clFb_" id="80_psBXZRR" role="jymVt">
-                            <property role="TrG5h" value="compute" />
-                            <property role="DiZV1" value="false" />
-                            <property role="od$2w" value="false" />
-                            <node concept="2AHcQZ" id="80_psBXZRS" role="2AJF6D">
-                              <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                            </node>
-                            <node concept="3clFbS" id="80_psBXZRT" role="3clF47">
-                              <node concept="3cpWs6" id="80_psBXZRU" role="3cqZAp">
-                                <node concept="3K4zz7" id="80_psBXZRV" role="3cqZAk">
-                                  <node concept="10Nm6u" id="80_psBXZRW" role="3K4E3e" />
-                                  <node concept="2YIFZM" id="80_psBXZRX" role="3K4GZi">
-                                    <ref role="37wK5l" to="g51k:~APICellAdapter.getSNodeWRTReference(jetbrains.mps.openapi.editor.cells.EditorCell):org.jetbrains.mps.openapi.model.SNode" resolve="getSNodeWRTReference" />
-                                    <ref role="1Pybhc" to="g51k:~APICellAdapter" resolve="APICellAdapter" />
-                                    <node concept="37vLTw" id="80_psBXZRY" role="37wK5m">
-                                      <ref role="3cqZAo" node="80_psBWgwa" resolve="cellAtCursor" />
-                                    </node>
-                                  </node>
-                                  <node concept="2OqwBi" id="80_psBXZRZ" role="3K4Cdx">
-                                    <node concept="37vLTw" id="80_psBXZS0" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
-                                    </node>
-                                    <node concept="liA8E" id="80_psBXZS1" role="2OqNvi">
-                                      <ref role="37wK5l" to="exr9:~EditorComponent.isInvalid():boolean" resolve="isInvalid" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3Tm1VV" id="80_psBXZS2" role="1B3o_S" />
-                            <node concept="3uibUv" id="80_psBYepS" role="3clF45">
-                              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                            </node>
+                <node concept="10Nm6u" id="6a3rb3C2Se7" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="1QHqEK" id="6a3rb3C2NOV" role="3cqZAp">
+              <node concept="1QHqEC" id="6a3rb3C2NOX" role="1QHqEI">
+                <node concept="3clFbS" id="6a3rb3C2NOZ" role="1bW5cS">
+                  <node concept="3clFbF" id="6a3rb3C2RRD" role="3cqZAp">
+                    <node concept="37vLTI" id="6a3rb3C2RRF" role="3clFbG">
+                      <node concept="3K4zz7" id="6a3rb3C2RMt" role="37vLTx">
+                        <node concept="10Nm6u" id="6a3rb3C2RMu" role="3K4E3e" />
+                        <node concept="2YIFZM" id="6a3rb3C2RMv" role="3K4GZi">
+                          <ref role="37wK5l" to="g51k:~APICellAdapter.getSNodeWRTReference(jetbrains.mps.openapi.editor.cells.EditorCell):org.jetbrains.mps.openapi.model.SNode" resolve="getSNodeWRTReference" />
+                          <ref role="1Pybhc" to="g51k:~APICellAdapter" resolve="APICellAdapter" />
+                          <node concept="37vLTw" id="6a3rb3C2RMw" role="37wK5m">
+                            <ref role="3cqZAo" node="80_psBWgwa" resolve="cellAtCursor" />
                           </node>
-                          <node concept="3uibUv" id="80_psBYdYp" role="2Ghqu4">
-                            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                        </node>
+                        <node concept="2OqwBi" id="6a3rb3C2RMx" role="3K4Cdx">
+                          <node concept="37vLTw" id="6a3rb3C2RMy" role="2Oq$k0">
+                            <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
+                          </node>
+                          <node concept="liA8E" id="6a3rb3C2RMz" role="2OqNvi">
+                            <ref role="37wK5l" to="exr9:~EditorComponent.isInvalid():boolean" resolve="isInvalid" />
                           </node>
                         </node>
                       </node>
+                      <node concept="37vLTw" id="6a3rb3C2RRJ" role="37vLTJ">
+                        <ref role="3cqZAo" node="80_psBWgwr" resolve="snodeWRTReference" />
+                      </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6a3rb3C2RlW" role="ukAjM">
+                <node concept="2OqwBi" id="6a3rb3C2O0n" role="2Oq$k0">
+                  <node concept="37vLTw" id="6a3rb3C2NYE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
+                  </node>
+                  <node concept="liA8E" id="6a3rb3C2Rkr" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6a3rb3C2Rr$" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                 </node>
               </node>
             </node>
