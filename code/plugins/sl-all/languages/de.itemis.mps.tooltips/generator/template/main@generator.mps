@@ -39,6 +39,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -148,6 +151,9 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1218047638031" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CreateUniqueName" flags="nn" index="2piZGk">
+        <child id="1218047638032" name="baseName" index="2piZGb" />
+      </concept>
       <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
         <reference id="1216860049628" name="label" index="1iwH77" />
         <child id="1216860049632" name="inputNode" index="1iwH7V" />
@@ -395,6 +401,32 @@
                     </node>
                     <node concept="37vLTw" id="4WvEEB$8QYS" role="37wK5m">
                       <ref role="3cqZAo" node="fYh_FQ7" resolve="node" />
+                    </node>
+                    <node concept="2ShNRf" id="5P1DsEq0RQv" role="37wK5m">
+                      <node concept="1pGfFk" id="5P1DsEq0RQu" role="2ShVmc">
+                        <ref role="37wK5l" to="5usg:5P1DsEq0_Vx" resolve="TooltipId" />
+                        <node concept="Xl_RD" id="5P1DsEq0S40" role="37wK5m">
+                          <property role="Xl_RC" value="id" />
+                          <node concept="17Uvod" id="5P1DsEq0Su1" role="lGtFl">
+                            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                            <property role="2qtEX9" value="value" />
+                            <node concept="3zFVjK" id="5P1DsEq0Su2" role="3zH0cK">
+                              <node concept="3clFbS" id="5P1DsEq0Su3" role="2VODD2">
+                                <node concept="3clFbF" id="5P1DsEq0SMP" role="3cqZAp">
+                                  <node concept="2OqwBi" id="5P1DsEq0SPA" role="3clFbG">
+                                    <node concept="1iwH7S" id="5P1DsEq0SMO" role="2Oq$k0" />
+                                    <node concept="2piZGk" id="5P1DsEq0SUi" role="2OqNvi">
+                                      <node concept="Xl_RD" id="5P1DsEq0SYb" role="2piZGb">
+                                        <property role="Xl_RC" value="tooltipId" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
