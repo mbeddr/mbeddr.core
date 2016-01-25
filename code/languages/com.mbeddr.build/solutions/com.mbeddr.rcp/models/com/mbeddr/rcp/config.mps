@@ -1308,12 +1308,6 @@
         <ref role="398BVh" node="AyMfzoGqLB" resolve="artifacts.allInOne" />
       </node>
     </node>
-    <node concept="2sgV4H" id="AyMfzoGqLt" role="1l3spa">
-      <ref role="1l3spb" node="505a8HIkc0G" resolve="branding" />
-      <node concept="398BVA" id="AyMfzoGqLu" role="2JcizS">
-        <ref role="398BVh" node="AyMfzoGqLE" resolve="artifacts.branding" />
-      </node>
-    </node>
     <node concept="398rNT" id="AyMfzoGqLv" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="AyMfzoGqLw" role="398pKh">
@@ -1343,15 +1337,6 @@
         <ref role="398BVh" node="AyMfzoGqLm" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="AyMfzoGqLD" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.allInOne" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="AyMfzoGqLE" role="1l3spd">
-      <property role="TrG5h" value="artifacts.branding" />
-      <node concept="398BVA" id="AyMfzoGqLF" role="398pKh">
-        <ref role="398BVh" node="AyMfzoGqLm" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="AyMfzoGqLG" role="iGT6I">
-          <property role="2Ry0Am" value="branding" />
         </node>
       </node>
     </node>
@@ -1389,9 +1374,6 @@
           </node>
         </node>
         <node concept="398223" id="AyMfzoGqLV" role="39821P">
-          <node concept="3ygNvl" id="AyMfzoGqLW" role="39821P">
-            <ref role="3ygNvj" node="505a8HIkc0I" />
-          </node>
           <node concept="3ygNvl" id="AyMfzoGqLX" role="39821P">
             <ref role="3ygNvj" to="ffeo:1diLdO26mQ8" />
             <node concept="3LWZYq" id="AyMfzoGqLY" role="1juEy9">
@@ -1524,9 +1506,6 @@
           </node>
         </node>
         <node concept="398223" id="AyMfzoGqMX" role="39821P">
-          <node concept="3ygNvl" id="AyMfzoGqMY" role="39821P">
-            <ref role="3ygNvj" node="505a8HIkc0I" />
-          </node>
           <node concept="3ygNvl" id="AyMfzoGqMZ" role="39821P">
             <ref role="3ygNvj" to="ffeo:1diLdO26mQ8" />
             <node concept="3LWZYq" id="AyMfzoGqN0" role="1juEy9">
@@ -1793,9 +1772,6 @@
                   <property role="2Ry0Am" value="mps.sh" />
                 </node>
               </node>
-            </node>
-            <node concept="3ygNvl" id="AyMfzoGqOH" role="39821P">
-              <ref role="3ygNvj" node="505a8HIkc0I" />
             </node>
             <node concept="3ygNvl" id="AyMfzoGqOI" role="39821P">
               <ref role="3ygNvj" to="ffeo:1diLdO26mQ8" />
