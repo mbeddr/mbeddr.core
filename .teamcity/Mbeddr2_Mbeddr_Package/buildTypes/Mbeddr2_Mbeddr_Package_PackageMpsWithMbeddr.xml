@@ -26,6 +26,14 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_11" name="download" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="mbeddr.core/download-java.sh" />
+          <param name="command.parameters" value="%teamcity.build.checkoutDir%/artifacts" />
+          <param name="teamcity.build.workingDir" value="mbeddr.core" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
