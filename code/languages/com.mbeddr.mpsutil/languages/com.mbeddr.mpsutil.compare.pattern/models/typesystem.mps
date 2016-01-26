@@ -76,7 +76,6 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -262,11 +261,8 @@
                 <ref role="3Tt5mk" to="iqxq:53_zXRThzA" />
               </node>
             </node>
-            <node concept="2qgKlT" id="53_zXRTVGz" role="2OqNvi">
-              <ref role="37wK5l" to="tpcn:2A8AB0rAWpG" resolve="getAllSuperConcepts" />
-              <node concept="3clFbT" id="53_zXRTVG$" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+            <node concept="2qgKlT" id="3JvTRSXZ1fh" role="2OqNvi">
+              <ref role="37wK5l" to="tpcn:hMuxyK2" resolve="getImmediateSuperconcepts" />
             </node>
           </node>
         </node>
