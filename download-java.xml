@@ -4,10 +4,10 @@
   <target name="download">
 	<mkdir dir="${artifacts.root}/jre-download"/>
 	<get src="http://mbeddr.fr-1.storage.online.net/MPS-3.3.1-Windows-jre.zip" dest="${artifacts.root}/jre-download" verbose="true" skipexisting="true" usetimestamp="true"/>
-	<unzip src="${artifacts.root}/jre-download/MPS-3.3.1-Windows-jre.zip" dest="${artifacts.root}/jre-download/windows"/>
+	<!--<unzip src="${artifacts.root}/jre-download/MPS-3.3.1-Windows-jre.zip" dest="${artifacts.root}/jre-download/windows"/>-->
     <get src="http://mbeddr.fr-1.storage.online.net/MPS-3.3.1-osx-jre.tar.gz" dest="${artifacts.root}/jre-download" verbose="true" skipexisting="true" usetimestamp="true"/>
-    <gunzip src="${artifacts.root}/jre-download/MPS-3.3.1-osx-jre.tar.gz" dest="${artifacts.root}/jre-download/MPS-3.3.1-osx-jre.tar"/>
-    <untar src="${artifacts.root}/jre-download/MPS-3.3.1-osx-jre.tar" dest="${artifacts.root}/jre-download/osx"/>
+    <!--<gunzip src="${artifacts.root}/jre-download/MPS-3.3.1-osx-jre.tar.gz" dest="${artifacts.root}/jre-download/MPS-3.3.1-osx-jre.tar"/>
+    <untar src="${artifacts.root}/jre-download/MPS-3.3.1-osx-jre.tar" dest="${artifacts.root}/jre-download/osx"/>-->
   </target>
 </project>
 
