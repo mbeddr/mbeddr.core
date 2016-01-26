@@ -14,17 +14,6 @@ build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.m
 code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
     </parameters>
     <build-runners order="RUNNER_9, RUNNER_7">
-      <runner id="RUNNER_9" name="download" type="Ant">
-        <parameters>
-          <param name="build-file-path" value="mbeddr.core/download-java.xml" />
-          <param name="runnerArgs" value="%artifacts-root.path-properties% %mbeddr-github.path-properties%" />
-          <param name="teamcity.coverage.emma.include.source" value="true" />
-          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
-          <param name="teamcity.coverage.idea.includePatterns" value="*" />
-          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_7" name="Build mbeddr RCP" type="Ant">
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.rcp/build-mbeddr-langDev-distrib.xml" />
