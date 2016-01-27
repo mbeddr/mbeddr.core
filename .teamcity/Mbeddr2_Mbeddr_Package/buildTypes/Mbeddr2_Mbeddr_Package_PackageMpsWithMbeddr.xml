@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="e56d003d-26d1-4a6e-9916-296180341463" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>Package mbeddr RCP</name>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="367423d1-da2f-4163-a8f7-8d854f8e7c8a" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Package MPS with mbeddr</name>
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="artifacts/rcp" />
+      <option name="artifactRules" value="artifacts/rcpLangDev" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters>
@@ -13,8 +13,8 @@ build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/buil
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
 code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
     </parameters>
-    <build-runners order="RUNNER_10, RUNNER_82, RUNNER_110">
-      <runner id="RUNNER_10" name="download" type="simpleRunner">
+    <build-runners order="RUNNER_11, RUNNER_7">
+      <runner id="RUNNER_11" name="download" type="simpleRunner">
         <parameters>
           <param name="command.executable" value="mbeddr.core/download-java.sh" />
           <param name="command.parameters" value="%teamcity.build.checkoutDir%/artifacts" />
@@ -22,21 +22,9 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_82" name="Build Branding" type="Ant">
+      <runner id="RUNNER_7" name="Build mbeddr RCP" type="Ant">
         <parameters>
-          <param name="build-file-path" value="scripts/com.mbeddr.rcp/build-mbeddr-branding.xml" />
-          <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties%" />
-          <param name="target" value="clean,build" />
-          <param name="teamcity.coverage.emma.include.source" value="true" />
-          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
-          <param name="teamcity.coverage.idea.includePatterns" value="*" />
-          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_110" name="Build mbeddr RCP" type="Ant">
-        <parameters>
-          <param name="build-file-path" value="scripts/com.mbeddr.rcp/build-mbeddr-distrib.xml" />
+          <param name="build-file-path" value="scripts/com.mbeddr.rcp/build-mbeddr-langDev-distrib.xml" />
           <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties%" />
           <param name="target" value="clean,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
