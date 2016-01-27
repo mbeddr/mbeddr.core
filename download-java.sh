@@ -1,5 +1,5 @@
 #! /bin/bash
-
+set -x
 windows_zip="MPS-3.3.1-Windows-jre.zip"
 osx_tar="MPS-3.3.1-osx-jre.tar.gz"
 artifacts_dir=$1
