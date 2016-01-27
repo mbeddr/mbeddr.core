@@ -90,9 +90,6 @@
       <concept id="3117609929518446049" name="com.mbeddr.core.udt.structure.AbstractBitType" flags="ng" index="2ArCLn">
         <property id="3117609929518737717" name="width" index="2Asx23" />
       </concept>
-      <concept id="1803113332147436562" name="com.mbeddr.core.udt.structure.InnerSUDeclarationRef" flags="ng" index="2HrGSn">
-        <reference id="1803113332147436686" name="ref" index="2HrGUb" />
-      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
@@ -2253,13 +2250,8 @@
               <node concept="1E4Tgc" id="6QawkaKiJbx" role="1ESnxz">
                 <ref role="1E4Tge" node="6QawkaKiJ5F" resolve="a" />
               </node>
-              <node concept="2qmXGp" id="6QawkaKiJ8I" role="1_9fRO">
-                <node concept="2HrGSn" id="6QawkaKiJ9C" role="1ESnxz">
-                  <ref role="2HrGUb" node="6QawkaKiJ4Q" resolve="Inner" />
-                </node>
-                <node concept="3ZVu4v" id="6QawkaKiJ8_" role="1_9fRO">
-                  <ref role="3ZVs_2" node="6QawkaJVOQZ" resolve="o" />
-                </node>
+              <node concept="3ZVu4v" id="6QawkaKiJ8_" role="1_9fRO">
+                <ref role="3ZVs_2" node="6QawkaJVOQZ" resolve="o" />
               </node>
             </node>
           </node>
@@ -2273,13 +2265,8 @@
               <node concept="1E4Tgc" id="6QawkaKiJrh" role="1ESnxz">
                 <ref role="1E4Tge" node="6QawkaKiJ5F" resolve="a" />
               </node>
-              <node concept="2qmXGp" id="6QawkaKiJk7" role="1_9fRO">
-                <node concept="2HrGSn" id="6QawkaKiJnh" role="1ESnxz">
-                  <ref role="2HrGUb" node="6QawkaKiJ4Q" resolve="Inner" />
-                </node>
-                <node concept="3ZVu4v" id="6QawkaKiJjZ" role="1_9fRO">
-                  <ref role="3ZVs_2" node="6QawkaJVOQZ" resolve="o" />
-                </node>
+              <node concept="3ZVu4v" id="6QawkaKiJjZ" role="1_9fRO">
+                <ref role="3ZVs_2" node="6QawkaJVOQZ" resolve="o" />
               </node>
             </node>
           </node>

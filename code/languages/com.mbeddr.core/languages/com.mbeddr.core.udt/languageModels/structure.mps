@@ -512,20 +512,6 @@
     <property role="1pbfSe" value="963936518" />
     <ref role="1TJDcQ" node="6a5SBPfXGBP" resolve="SUDeclaration" />
   </node>
-  <node concept="1TIwiD" id="1$5WwmOqNKi">
-    <property role="TrG5h" value="InnerSUDeclarationRef" />
-    <property role="1pbfSe" value="848220649" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1$5WwmOqNMb" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
-    </node>
-    <node concept="1TJgyj" id="1$5WwmOqNMe" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6a5SBPfXGBP" resolve="SUDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2CEi94edfgd">
     <property role="3GE5qa" value="su.struct" />
     <property role="TrG5h" value="ModuleContentSUDeclaration" />

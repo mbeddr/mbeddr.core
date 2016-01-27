@@ -70,9 +70,6 @@
         <reference id="4202685725779391329" name="element" index="2xZoc7" />
         <child id="4202685725779390438" name="value" index="2xZpY0" />
       </concept>
-      <concept id="1803113332147436562" name="com.mbeddr.core.udt.structure.InnerSUDeclarationRef" flags="ng" index="2HrGSn">
-        <reference id="1803113332147436686" name="ref" index="2HrGUb" />
-      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
@@ -367,17 +364,12 @@
           <node concept="3TlMh9" id="7halHeUxTBM" role="2N2GHh">
             <property role="2hmy$m" value="10" />
           </node>
-          <node concept="2qmXGp" id="7halHeUxTAM" role="2N2GHg">
-            <node concept="1E4Tgc" id="7halHeUxTAN" role="1ESnxz">
+          <node concept="2qmXGp" id="7halHeUxTAO" role="2N2GHg">
+            <node concept="1E4Tgc" id="1Nl0v8EKcu6" role="1ESnxz">
               <ref role="1E4Tge" node="1JA5qgmxn1Z" resolve="b" />
             </node>
-            <node concept="2qmXGp" id="7halHeUxTAO" role="1_9fRO">
-              <node concept="2HrGSn" id="7halHeUxTAP" role="1ESnxz">
-                <ref role="2HrGUb" node="1JA5qgmxn1B" resolve="inner" />
-              </node>
-              <node concept="3ZVu4v" id="7halHeUxTAQ" role="1_9fRO">
-                <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
-              </node>
+            <node concept="3ZVu4v" id="7halHeUxTAQ" role="1_9fRO">
+              <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
             </node>
           </node>
         </node>

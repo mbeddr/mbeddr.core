@@ -2950,36 +2950,6 @@
       </node>
     </node>
   </node>
-  <node concept="1YbPZF" id="1$5WwmOuQr7">
-    <property role="TrG5h" value="typeof_InnerSUDeclarationRef" />
-    <node concept="3clFbS" id="1$5WwmOuQr8" role="18ibNy">
-      <node concept="1Z5TYs" id="7KLlXp7FXJu" role="3cqZAp">
-        <node concept="mw_s8" id="7KLlXp7FXJX" role="1ZfhKB">
-          <node concept="1Z2H0r" id="7KLlXp7FXJT" role="mwGJk">
-            <node concept="2OqwBi" id="7KLlXp7FXMG" role="1Z2MuG">
-              <node concept="1YBJjd" id="7KLlXp7FXKt" role="2Oq$k0">
-                <ref role="1YBMHb" node="1$5WwmOuQra" resolve="innerSUDeclarationRef" />
-              </node>
-              <node concept="3TrEf2" id="7KLlXp7FY67" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:1$5WwmOqNMe" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7KLlXp7FXJx" role="1ZfhK$">
-          <node concept="1Z2H0r" id="7KLlXp7FX$Z" role="mwGJk">
-            <node concept="1YBJjd" id="7KLlXp7FX_D" role="1Z2MuG">
-              <ref role="1YBMHb" node="1$5WwmOuQra" resolve="innerSUDeclarationRef" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1$5WwmOuQra" role="1YuTPh">
-      <property role="TrG5h" value="innerSUDeclarationRef" />
-      <ref role="1YaFvo" to="clbe:1$5WwmOqNKi" resolve="InnerSUDeclarationRef" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="7KLlXp7FY9T">
     <property role="TrG5h" value="typeof_AnonymousStructDeclaration" />
     <property role="3GE5qa" value="su.struct" />
