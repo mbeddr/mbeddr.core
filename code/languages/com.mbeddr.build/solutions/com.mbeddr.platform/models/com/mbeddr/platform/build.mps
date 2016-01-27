@@ -1167,6 +1167,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6bM7gvq533l" role="3bR37C">
+          <node concept="3bR9La" id="6bM7gvq533m" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1DaH0LYUc3y" role="2G$12L">
         <property role="BnDLt" value="true" />
