@@ -2276,6 +2276,56 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4wDMkkpFwsA" role="jymVt" />
+    <node concept="3clFb_" id="3PybDyp85Jd" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isAccessToPointers" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="3PybDyp85Je" role="3clF47">
+        <node concept="3clFbJ" id="3PybDyp85Jf" role="3cqZAp">
+          <node concept="3clFbS" id="3PybDyp85Jg" role="3clFbx">
+            <node concept="3cpWs6" id="3PybDyp85Jh" role="3cqZAp">
+              <node concept="3clFbT" id="3PybDyp85Ji" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3PybDyp85Jj" role="3clFbw">
+            <node concept="2OqwBi" id="3PybDyp85Jk" role="2Oq$k0">
+              <node concept="37vLTw" id="3PybDyp85Jl" role="2Oq$k0">
+                <ref role="3cqZAo" node="3PybDyp85JO" resolve="rawAssig" />
+              </node>
+              <node concept="liA8E" id="3PybDyp85Jm" role="2OqNvi">
+                <ref role="37wK5l" to="rbq9:WwTuEsr2_k" resolve="getFullLHS" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3PybDyp85Jn" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="Xl_RD" id="3PybDyp85Jo" role="37wK5m">
+                <property role="Xl_RC" value="byte_extract_little_endian" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3PybDyp85JK" role="3cqZAp">
+          <node concept="3clFbT" id="3PybDyp85JL" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="3PybDyp85JM" role="1B3o_S" />
+      <node concept="10P_77" id="3PybDyp85JN" role="3clF45" />
+      <node concept="37vLTG" id="3PybDyp85JO" role="3clF46">
+        <property role="TrG5h" value="rawAssig" />
+        <node concept="3uibUv" id="3PybDyp85JP" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="3PybDyp85JQ" role="lGtFl">
+        <property role="NWlVz" value="CBMC convention for accesses to pointers." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3PybDyp84aP" role="jymVt" />
     <node concept="3clFb_" id="3YuThaZ3uWj" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="canLift" />
@@ -2441,7 +2491,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7lmBuXrQUnb" role="3cqZAp" />
+        <node concept="3clFbJ" id="3PybDyp8qAa" role="3cqZAp">
+          <node concept="3clFbS" id="3PybDyp8qAb" role="3clFbx">
+            <node concept="3cpWs6" id="3PybDyp8qAc" role="3cqZAp">
+              <node concept="3clFbT" id="3PybDyp8qAd" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1rXfSq" id="3PybDyp8qAe" role="3clFbw">
+            <ref role="37wK5l" node="3PybDyp85Jd" resolve="isAccessToPointers" />
+            <node concept="37vLTw" id="3PybDyp8qAf" role="37wK5m">
+              <ref role="3cqZAo" node="4wDMkkpFypH" resolve="crtState" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3PybDyp8pWZ" role="3cqZAp" />
         <node concept="3clFbF" id="4wDMkkpFE42" role="3cqZAp">
           <node concept="3clFbT" id="4wDMkkpFE41" role="3clFbG">
             <property role="3clFbU" value="false" />
