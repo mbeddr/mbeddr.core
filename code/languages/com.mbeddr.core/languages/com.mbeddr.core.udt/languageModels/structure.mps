@@ -78,7 +78,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="struct" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6a5SBPfXGBP" resolve="SUDeclaration" />
+      <ref role="20lvS9" node="5yYXyc4Z0CJ" resolve="StructDeclaration" />
     </node>
     <node concept="PrWs8" id="5HxjapwgqUc" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -279,7 +279,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="union" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6a5SBPfXGBP" resolve="SUDeclaration" />
+      <ref role="20lvS9" node="56ytRgsLodU" resolve="UnionDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="5nhrDHCgX5n">
