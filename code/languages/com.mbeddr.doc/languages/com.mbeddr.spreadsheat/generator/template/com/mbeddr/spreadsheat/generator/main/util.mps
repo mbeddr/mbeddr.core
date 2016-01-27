@@ -5,10 +5,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="soat" ref="f:java_stub#1d891f7b-dc93-42f9-a4bc-b016656b14e2#org.apache.poi.ss.usermodel(com.mbeddr.spreadsheat/org.apache.poi.ss.usermodel@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="54ve" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheat/)" />
     <import index="gnwj" ref="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheat.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -110,7 +110,7 @@
     <node concept="2YIFZL" id="1LnB5xdGe2o" role="jymVt">
       <property role="TrG5h" value="handleFontColor" />
       <node concept="3uibUv" id="1LnB5xdGe2p" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="1LnB5xdGe2q" role="1B3o_S" />
       <node concept="3clFbS" id="1LnB5xdGe2r" role="3clF47">
@@ -161,8 +161,8 @@
           <node concept="3clFbS" id="1LnB5xdGe2I" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdGe2J" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdGe2K" role="3cqZAk">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
               </node>
             </node>
           </node>
@@ -214,8 +214,8 @@
           <node concept="3clFbS" id="1LnB5xdGe33" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdGe34" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdGe35" role="3cqZAk">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
               </node>
             </node>
           </node>
@@ -223,7 +223,7 @@
         <node concept="3cpWs6" id="1LnB5xdGe36" role="3cqZAp">
           <node concept="2ShNRf" id="1LnB5xdGe37" role="3cqZAk">
             <node concept="1pGfFk" id="1LnB5xdGe38" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
               <node concept="2OqwBi" id="1LnB5xdGe39" role="37wK5m">
                 <node concept="3cpWs2" id="1LnB5xdGe3a" role="2Oq$k0">
                   <ref role="3cqZAo" node="1LnB5xdGe3i" resolve="c" />
@@ -262,7 +262,7 @@
     <node concept="2YIFZL" id="1LnB5xdJelF" role="jymVt">
       <property role="TrG5h" value="handleBgColor" />
       <node concept="3uibUv" id="1LnB5xdJelG" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="1LnB5xdJelH" role="1B3o_S" />
       <node concept="3clFbS" id="1LnB5xdJelI" role="3clF47">
@@ -313,8 +313,8 @@
           <node concept="3clFbS" id="1LnB5xdJem1" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdJem2" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdJem3" role="3cqZAk">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
               </node>
             </node>
           </node>
@@ -366,8 +366,8 @@
           <node concept="3clFbS" id="1LnB5xdJemm" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdJemn" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdJemo" role="3cqZAk">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
               </node>
             </node>
           </node>
@@ -375,7 +375,7 @@
         <node concept="3cpWs6" id="1LnB5xdJemp" role="3cqZAp">
           <node concept="2ShNRf" id="1LnB5xdJemq" role="3cqZAk">
             <node concept="1pGfFk" id="1LnB5xdJemr" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
               <node concept="2OqwBi" id="1LnB5xdJems" role="37wK5m">
                 <node concept="3cpWs2" id="1LnB5xdJemt" role="2Oq$k0">
                   <ref role="3cqZAo" node="1LnB5xdJem_" resolve="c" />
@@ -424,15 +424,15 @@
           <node concept="3clFbS" id="1LnB5xdHLNu" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL$z" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHL$$" role="3cqZAk">
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="soat:~CellStyle.ALIGN_CENTER" resolve="ALIGN_CENTER" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_CENTER" resolve="ALIGN_CENTER" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHLNx" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHLUj" role="3uHU7w">
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="3cpWs3" id="1LnB5xdHLUk" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHLUl" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -457,15 +457,15 @@
           <node concept="3clFbS" id="1LnB5xdHLNA" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL__" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHL_A" role="3cqZAk">
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="soat:~CellStyle.ALIGN_RIGHT" resolve="ALIGN_RIGHT" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_RIGHT" resolve="ALIGN_RIGHT" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHLND" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHLUr" role="3uHU7w">
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="3cpWs3" id="1LnB5xdHLUs" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHLUt" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -490,15 +490,15 @@
           <node concept="3clFbS" id="1LnB5xdHLNI" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL_I" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHL_J" role="3cqZAk">
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="soat:~CellStyle.ALIGN_JUSTIFY" resolve="ALIGN_JUSTIFY" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_JUSTIFY" resolve="ALIGN_JUSTIFY" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHLNL" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHLUz" role="3uHU7w">
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="3cpWs3" id="1LnB5xdHLU$" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHLU_" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -521,8 +521,8 @@
         </node>
         <node concept="3cpWs6" id="1LnB5xdHLeH" role="3cqZAp">
           <node concept="10M0yZ" id="1LnB5xdHRoW" role="3cqZAk">
-            <ref role="3cqZAo" to="soat:~CellStyle.ALIGN_LEFT" resolve="ALIGN_LEFT" />
-            <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
+            <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_LEFT" resolve="ALIGN_LEFT" />
+            <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
           </node>
         </node>
         <node concept="3clFbH" id="1LnB5xdHLdT" role="3cqZAp" />
@@ -545,15 +545,15 @@
           <node concept="3clFbS" id="1LnB5xdHRnq" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnr" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHRns" role="3cqZAk">
-                <ref role="3cqZAo" to="soat:~CellStyle.BORDER_THIN" resolve="BORDER_THIN" />
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_THIN" resolve="BORDER_THIN" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHRnt" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHRnu" role="3uHU7w">
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="3cpWs3" id="1LnB5xdHRnv" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHRnw" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -578,15 +578,15 @@
           <node concept="3clFbS" id="1LnB5xdHRnB" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnC" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHRnD" role="3cqZAk">
-                <ref role="3cqZAo" to="soat:~CellStyle.BORDER_MEDIUM" resolve="BORDER_MEDIUM" />
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_MEDIUM" resolve="BORDER_MEDIUM" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHRnE" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHRnF" role="3uHU7w">
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="3cpWs3" id="1LnB5xdHRnG" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHRnH" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -611,15 +611,15 @@
           <node concept="3clFbS" id="1LnB5xdHRnO" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnP" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHRnQ" role="3cqZAk">
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="soat:~CellStyle.BORDER_THICK" resolve="BORDER_THICK" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_THICK" resolve="BORDER_THICK" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHRnR" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHRnS" role="3uHU7w">
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
               <node concept="3cpWs3" id="1LnB5xdHRnT" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHRnU" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -644,15 +644,15 @@
           <node concept="3clFbS" id="1LnB5xdHRo1" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRo2" role="3cqZAp">
               <node concept="10M0yZ" id="1LnB5xdHRo3" role="3cqZAk">
-                <ref role="3cqZAo" to="soat:~CellStyle.BORDER_DOUBLE" resolve="BORDER_DOUBLE" />
-                <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
+                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_DOUBLE" resolve="BORDER_DOUBLE" />
+                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
               </node>
             </node>
           </node>
           <node concept="3clFbC" id="1LnB5xdHRo4" role="3clFbw">
             <node concept="2YIFZM" id="1LnB5xdHRo5" role="3uHU7w">
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
               <node concept="3cpWs3" id="1LnB5xdHRo6" role="37wK5m">
                 <node concept="Xl_RD" id="1LnB5xdHRo7" role="3uHU7w">
                   <property role="Xl_RC" value="" />
@@ -675,8 +675,8 @@
         </node>
         <node concept="3cpWs6" id="1LnB5xdHRod" role="3cqZAp">
           <node concept="10M0yZ" id="1LnB5xdHRoe" role="3cqZAk">
-            <ref role="3cqZAo" to="soat:~CellStyle.BORDER_NONE" resolve="BORDER_NONE" />
-            <ref role="1PxDUh" to="soat:~CellStyle" resolve="CellStyle" />
+            <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_NONE" resolve="BORDER_NONE" />
+            <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
           </node>
         </node>
         <node concept="3clFbH" id="1LnB5xdHRof" role="3cqZAp" />
