@@ -2,10 +2,10 @@
 <model ref="r:dbe91251-5fe7-4677-ab0d-ff3ba739fe1e(com.mbeddr.core.unittest.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -419,7 +419,7 @@
             </node>
             <node concept="2YIFZM" id="3eWkbyCTBDd" role="33vP2m">
               <ref role="1Pybhc" to="rwxg:3eWkbyCTm4u" resolve="WizardHelper" />
-              <ref role="37wK5l" to="rwxg:3eWkbyCTBAt" resolve="makeExecutableWithModue" />
+              <ref role="37wK5l" to="rwxg:3eWkbyCTBAt" resolve="makeExecutableWithModule" />
               <node concept="37vLTw" id="5Hxjapweqwp" role="37wK5m">
                 <ref role="3cqZAo" node="78Ts1skpkAX" resolve="name" />
               </node>

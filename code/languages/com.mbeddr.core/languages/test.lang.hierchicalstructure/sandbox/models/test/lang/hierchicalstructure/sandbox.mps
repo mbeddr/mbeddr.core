@@ -2,7 +2,7 @@
 <model ref="r:01121b77-9ee1-4d1d-b176-2bf33a697c8b(test.lang.hierchicalstructure.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="818a6981-aa97-4390-8f39-1c98ce66bd6c" name="test.lang.hierchicalstructure" version="-1" />
+    <use id="818a6981-aa97-4390-8f39-1c98ce66bd6c" name="test.lang.hierchicalstructure" version="0" />
   </languages>
   <imports />
   <registry>

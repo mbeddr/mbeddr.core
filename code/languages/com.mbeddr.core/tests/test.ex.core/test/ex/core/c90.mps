@@ -2,7 +2,7 @@
 <model ref="r:068b2c2f-9bf2-48ed-a65d-b6ac698bdd7a(test.ex.core.c90)">
   <persistence version="9" />
   <languages>
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports />
