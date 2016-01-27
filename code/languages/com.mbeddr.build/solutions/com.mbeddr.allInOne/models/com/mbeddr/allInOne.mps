@@ -212,6 +212,9 @@
       <node concept="m$_yC" id="3Cx6vuJnfLH" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
+      <node concept="m$_yC" id="7r9Pn8Ywp5U" role="m$_yJ">
+        <ref role="m$_y1" to="p6ld:5dchr4Qj2b3" resolve="com.mbeddr.build" />
+      </node>
     </node>
     <node concept="10PD9b" id="5qO$P$PtiTx" role="10PD9s" />
     <node concept="3b7kt6" id="5qO$P$PtiTy" role="10PD9s" />
@@ -388,6 +391,9 @@
           </node>
           <node concept="3ygNvl" id="$bJ0jgGLad" role="39821P">
             <ref role="3ygNvj" to="al5i:6ucYLjolh0E" resolve="com.mbeddr.platform.zip" />
+          </node>
+          <node concept="3ygNvl" id="7r9Pn8Ywp6g" role="39821P">
+            <ref role="3ygNvj" to="p6ld:4sdMDO4eOXj" resolve="com.mbeddr.build.zip" />
           </node>
         </node>
         <node concept="3_J27D" id="5qO$P$PtiTG" role="Nbhlr">
