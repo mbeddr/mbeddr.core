@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="3c21902d-b582-4557-b697-84a4dcddff3a" fqName="com.mbeddr.doc.aspect.exampleLanguage" version="-1" />
+    <language id="3c21902d-b582-4557-b697-84a4dcddff3a" fqName="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

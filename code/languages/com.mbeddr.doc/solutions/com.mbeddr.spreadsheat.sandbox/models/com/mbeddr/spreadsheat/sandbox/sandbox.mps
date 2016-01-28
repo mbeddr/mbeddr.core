@@ -2,7 +2,7 @@
 <model ref="r:87160f2e-dc6d-4d39-9fc7-31f069293feb(com.mbeddr.spreadsheat.sandbox.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheat" version="-1" />
+    <use id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheat" version="0" />
   </languages>
   <imports />
   <registry>

@@ -2,7 +2,7 @@
 <model ref="r:9f051296-ca8b-43ff-8d91-e0b7ca63b52a(com.mbeddr.doc.lang.exampleLanguage.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="-1" />
+    <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
   </languages>
   <imports />
   <registry>

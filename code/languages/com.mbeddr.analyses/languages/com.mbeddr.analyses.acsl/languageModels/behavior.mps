@@ -2,7 +2,7 @@
 <model ref="r:d7418a24-8686-4285-a6d5-12aaaa6d68ee(com.mbeddr.analyses.acsl.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -179,7 +179,7 @@
   </node>
   <node concept="13h7C7" id="5OLOS2sRFoC">
     <property role="3GE5qa" value="config_item" />
-    <ref role="13h7C2" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGeneration" />
+    <ref role="13h7C2" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
     <node concept="13hLZK" id="5OLOS2sRFoD" role="13h7CW">
       <node concept="3clFbS" id="5OLOS2sRFoE" role="2VODD2">
         <node concept="3clFbF" id="5OLOS2sRFoG" role="3cqZAp">
