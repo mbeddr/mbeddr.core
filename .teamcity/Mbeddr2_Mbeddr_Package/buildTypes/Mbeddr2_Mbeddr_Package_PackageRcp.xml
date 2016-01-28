@@ -13,12 +13,16 @@ build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/buil
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
 code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
     </parameters>
-    <build-runners order="RUNNER_10, RUNNER_82, RUNNER_110">
-      <runner id="RUNNER_10" name="download" type="simpleRunner">
+    <build-runners order="RUNNER_8, RUNNER_82, RUNNER_110">
+      <runner id="RUNNER_8" name="download" type="Ant">
         <parameters>
-          <param name="command.executable" value="mbeddr.core/download-java.sh" />
-          <param name="command.parameters" value="%teamcity.build.checkoutDir%/artifacts" />
-          <param name="teamcity.build.workingDir" value="mbeddr.core" />
+          <param name="build-file-path" value="mbeddr.core/download-java.xml" />
+          <param name="runnerArgs" value="%artifacts-root.path-properties% %mbeddr-github.path-properties%" />
+          <param name="target" value="download" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
