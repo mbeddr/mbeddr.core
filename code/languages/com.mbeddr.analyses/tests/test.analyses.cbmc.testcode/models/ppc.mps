@@ -81,6 +81,12 @@
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
       </concept>
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879251" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressAllWarnings" flags="ng" index="2P5Msh" />
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="767515563077204464" name="com.mbeddr.core.util.structure.MessageProperty" flags="ng" index="2qqzEA" />
       <concept id="2688792604367903085" name="com.mbeddr.core.util.structure.MessageDefinitionTable" flags="ng" index="2vmPJd">
@@ -231,6 +237,7 @@
       <concept id="6591434695300694131" name="com.mbeddr.ext.components.structure.PrePostCondition" flags="ng" index="3IV3Et">
         <child id="6591434695300694136" name="expr" index="3IV3Em" />
       </concept>
+      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
         <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
         <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
@@ -371,8 +378,12 @@
         <property role="TrG5h" value="compWithNoPpc" />
         <ref role="2EX0h9" node="7UiQjZi_RIy" resolve="CompWithNoPpc" />
       </node>
+      <node concept="3Khz0B" id="24xIoBJ1TQW" role="2RW2fA" />
       <node concept="2EWDwb" id="7UiQjZi_RII" role="2RW2fA">
         <property role="TrG5h" value="compWithNoPpc_dummyFunction" />
+        <node concept="2P5Msn" id="24xIoBJ1TUv" role="lGtFl">
+          <node concept="2P5Msh" id="24xIoBJ1TUw" role="2P5Msk" />
+        </node>
         <node concept="3XIRFW" id="7UiQjZi_RIJ" role="2EWMhI">
           <node concept="3XIRlf" id="7UiQjZi_RIK" role="3XIRFZ">
             <property role="TrG5h" value="dummyVar" />
@@ -471,6 +482,9 @@
     <node concept="N3Fnx" id="7UiQjZi_RJa" role="N3F5h">
       <property role="TrG5h" value="testComponentWithNoPpc" />
       <property role="2OOxQR" value="true" />
+      <node concept="2P5Msn" id="24xIoBJ1U1b" role="lGtFl">
+        <node concept="2P5Msh" id="24xIoBJ1U1c" role="2P5Msk" />
+      </node>
       <node concept="3XIRFW" id="7UiQjZi_RJb" role="3XIRFX">
         <node concept="3t9XKO" id="7UiQjZi_RJc" role="3XIRFZ">
           <ref role="3t9XKR" node="7UiQjZi_RJ5" resolve="DummyInstance" />

@@ -82,6 +82,12 @@
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
       </concept>
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879251" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressAllWarnings" flags="ng" index="2P5Msh" />
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -602,6 +608,9 @@
     <node concept="N3Fnx" id="5bSnXVJIEXO" role="N3F5h">
       <property role="TrG5h" value="intUninitializedLocalVariable" />
       <property role="2OOxQR" value="true" />
+      <node concept="2P5Msn" id="24xIoBJ1VBX" role="lGtFl">
+        <node concept="2P5Msh" id="24xIoBJ1VBY" role="2P5Msk" />
+      </node>
       <node concept="3XIRFW" id="5bSnXVJIEXP" role="3XIRFX">
         <node concept="3XIRlf" id="5bSnXVJIEXQ" role="3XIRFZ">
           <property role="TrG5h" value="input_var" />

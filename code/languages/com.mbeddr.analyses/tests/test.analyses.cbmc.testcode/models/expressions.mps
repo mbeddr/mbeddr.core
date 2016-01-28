@@ -57,6 +57,12 @@
       </concept>
       <concept id="4887422885165654650" name="com.mbeddr.analyses.cbmc.structure.Implies" flags="ng" index="1EIBX2" />
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879251" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressAllWarnings" flags="ng" index="2P5Msh" />
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -105,6 +111,9 @@
       <concept id="1246687699869804428" name="com.mbeddr.analyses.base.structure.ModelUsedForAnalysesTestsMarker" flags="ng" index="29QVxn" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -251,6 +260,9 @@
     <node concept="N3Fnx" id="7CSU6RRYpbd" role="N3F5h">
       <property role="TrG5h" value="impliesEntry" />
       <property role="2OOxQR" value="true" />
+      <node concept="2P5Msn" id="24xIoBJ1TCt" role="lGtFl">
+        <node concept="2P5Msh" id="24xIoBJ1TCu" role="2P5Msk" />
+      </node>
       <node concept="3XIRFW" id="7CSU6RRYpbe" role="3XIRFX">
         <node concept="3XIRlf" id="7CSU6RRYpbf" role="3XIRFZ">
           <property role="TrG5h" value="x" />
