@@ -2163,8 +2163,13 @@
                     </node>
                     <node concept="3clFbS" id="4ISByPoZ7Gr" role="2LFqv$">
                       <node concept="2MkqsV" id="17fjvcLFfFc" role="3cqZAp">
-                        <node concept="Xl_RD" id="17fjvcLFfFr" role="2MkJ7o">
-                          <property role="Xl_RC" value="Involved in cyclic dependency!" />
+                        <node concept="2OqwBi" id="2G8yZXxNY_o" role="2MkJ7o">
+                          <node concept="1YBJjd" id="2G8yZXxNYya" role="2Oq$k0">
+                            <ref role="1YBMHb" node="59HbAIOYAw1" resolve="source" />
+                          </node>
+                          <node concept="2qgKlT" id="2G8yZXxNYJK" role="2OqNvi">
+                            <ref role="37wK5l" to="hwgx:2G8yZXxNStd" resolve="getErrorMessageForElementInCycle" />
+                          </node>
                         </node>
                         <node concept="2GrUjf" id="4ISByPoZ7HO" role="2OEOjV">
                           <ref role="2Gs0qQ" node="4ISByPoZ7Gp" resolve="element" />

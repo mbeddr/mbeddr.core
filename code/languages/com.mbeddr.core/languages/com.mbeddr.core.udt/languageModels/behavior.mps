@@ -4124,8 +4124,13 @@
                       <ref role="3cqZAo" node="4ISByPp7zSr" resolve="result" />
                     </node>
                     <node concept="TSZUe" id="4ISByPp7$JW" role="2OqNvi">
-                      <node concept="2GrUjf" id="4ISByPp7$P4" role="25WWJ7">
-                        <ref role="2Gs0qQ" node="4ISByPp7tfO" resolve="member" />
+                      <node concept="2OqwBi" id="2G8yZXxNX$T" role="25WWJ7">
+                        <node concept="2GrUjf" id="4ISByPp7$P4" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="4ISByPp7tfO" resolve="member" />
+                        </node>
+                        <node concept="3TrEf2" id="2G8yZXxNY5Z" role="2OqNvi">
+                          <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4173,6 +4178,21 @@
       <node concept="2hMVRd" id="4ISByPp7qQJ" role="3clF45">
         <node concept="3Tqbb2" id="4ISByPp7qQK" role="2hN53Y" />
       </node>
+    </node>
+    <node concept="13i0hz" id="2G8yZXxNWlk" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getErrorMessageForElementInCycle" />
+      <ref role="13i0hy" to="hwgx:2G8yZXxNStd" resolve="getErrorMessageForElementInCycle" />
+      <node concept="3Tm1VV" id="2G8yZXxNWll" role="1B3o_S" />
+      <node concept="3clFbS" id="2G8yZXxNWlq" role="3clF47">
+        <node concept="3cpWs6" id="2G8yZXxNXfd" role="3cqZAp">
+          <node concept="Xl_RD" id="2G8yZXxNXh1" role="3cqZAk">
+            <property role="Xl_RC" value="Cyclic dependency makes this type incomplete!" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2G8yZXxNWlr" role="3clF45" />
     </node>
     <node concept="13hLZK" id="6a5SBPfZs1y" role="13h7CW">
       <node concept="3clFbS" id="6a5SBPfZs1z" role="2VODD2" />
