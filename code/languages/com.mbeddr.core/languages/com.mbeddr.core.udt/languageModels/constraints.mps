@@ -35,9 +35,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -58,7 +55,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1093,15 +1090,6 @@
           </node>
         </node>
       </node>
-      <node concept="Eqf_E" id="2UJM6DuNNXu" role="EtsB7">
-        <node concept="3clFbS" id="2UJM6DuNNXv" role="2VODD2">
-          <node concept="3clFbF" id="2UJM6DuNNYa" role="3cqZAp">
-            <node concept="Xl_RD" id="2UJM6DuNNY9" role="3clFbG">
-              <property role="Xl_RC" value="" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="1M2fIO" id="7ya9dte0lC$">
@@ -1115,13 +1103,6 @@
             <node concept="3clFbT" id="2UJM6DuMJgy" role="3clFbG">
               <property role="3clFbU" value="true" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="Eqf_E" id="2UJM6DuMJhR" role="EtsB7">
-        <node concept="3clFbS" id="2UJM6DuMJhS" role="2VODD2">
-          <node concept="3clFbF" id="2UJM6DuMJj6" role="3cqZAp">
-            <node concept="Xl_RD" id="2UJM6DuMJj5" role="3clFbG" />
           </node>
         </node>
       </node>
