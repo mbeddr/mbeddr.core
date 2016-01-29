@@ -81,9 +81,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -6896,26 +6893,6 @@
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="2aQczEaU4jX" role="1pqMTA">
       <node concept="3clFbS" id="2aQczEaU4jY" role="2VODD2">
-        <node concept="3clFbF" id="2aQczEaWJ29" role="3cqZAp">
-          <node concept="2OqwBi" id="2aQczEaWJ26" role="3clFbG">
-            <node concept="10M0yZ" id="2aQczEaWJ27" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="2aQczEaWJ28" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="2aQczEaWJgq" role="37wK5m">
-                <node concept="2OqwBi" id="2aQczEaWJra" role="3uHU7w">
-                  <node concept="1Q6Npb" id="2aQczEaWJnT" role="2Oq$k0" />
-                  <node concept="LkI2h" id="2aQczEaWJur" role="2OqNvi" />
-                </node>
-                <node concept="Xl_RD" id="2aQczEaWJ41" role="3uHU7B">
-                  <property role="Xl_RC" value="Removing generic comments for " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2aQczEaU7_K" role="3cqZAp">
           <node concept="2OqwBi" id="2aQczEaU7Wd" role="3clFbG">
             <node concept="2OqwBi" id="2aQczEaU7Ae" role="2Oq$k0">
@@ -6929,25 +6906,6 @@
             <node concept="2es0OD" id="2aQczEaUlzs" role="2OqNvi">
               <node concept="1bVj0M" id="2aQczEaUlzu" role="23t8la">
                 <node concept="3clFbS" id="2aQczEaUlzv" role="1bW5cS">
-                  <node concept="3clFbF" id="2aQczEaVBCH" role="3cqZAp">
-                    <node concept="2OqwBi" id="2aQczEaVBCE" role="3clFbG">
-                      <node concept="10M0yZ" id="2aQczEaVBCF" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="2aQczEaVBCG" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="3cpWs3" id="2aQczEaVC6$" role="37wK5m">
-                          <node concept="37vLTw" id="2aQczEaVC6J" role="3uHU7w">
-                            <ref role="3cqZAo" node="2aQczEaUlzw" resolve="it" />
-                          </node>
-                          <node concept="Xl_RD" id="2aQczEaVBEI" role="3uHU7B">
-                            <property role="Xl_RC" value="removing node: " />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="2aQczEaUl_y" role="3cqZAp">
                     <node concept="2OqwBi" id="2aQczEaUlDH" role="3clFbG">
                       <node concept="37vLTw" id="2aQczEaUl_x" role="2Oq$k0">
