@@ -309,5 +309,16 @@
       <ref role="PrY4T" node="53_zXRSI6_" resolve="IPatternContext" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3quoVcnVIhX">
+    <property role="1pbfSe" value="1317881904" />
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="GetConceptOperation" />
+    <property role="R4oN_" value="returns the concept the pattern matches" />
+    <property role="34LRSv" value="getConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3quoVcnVIiD" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
 </model>
 

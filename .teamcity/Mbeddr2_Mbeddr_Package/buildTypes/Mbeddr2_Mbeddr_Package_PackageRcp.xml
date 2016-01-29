@@ -13,7 +13,15 @@ build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/buil
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
 code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
     </parameters>
-    <build-runners order="RUNNER_82, RUNNER_110">
+    <build-runners order="RUNNER_10, RUNNER_82, RUNNER_110">
+      <runner id="RUNNER_10" name="download" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="mbeddr.core/download-java.sh" />
+          <param name="command.parameters" value="%teamcity.build.checkoutDir%/artifacts" />
+          <param name="teamcity.build.workingDir" value="mbeddr.core" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_82" name="Build Branding" type="Ant">
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.rcp/build-mbeddr-branding.xml" />

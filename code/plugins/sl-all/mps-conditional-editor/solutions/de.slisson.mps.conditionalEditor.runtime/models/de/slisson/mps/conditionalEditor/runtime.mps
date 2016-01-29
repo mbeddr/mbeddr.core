@@ -37,11 +37,6 @@
     <import index="lx42" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j.spi(MPS.Core/)" />
   </imports>
   <registry>
-    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
-      <concept id="8473566765275063380" name="de.slisson.mps.reflection.structure.ReflectionFieldAccess" flags="ng" index="1PnCL0">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -60,11 +55,12 @@
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat6" />
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -77,6 +73,9 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -88,6 +87,7 @@
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -95,6 +95,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -120,9 +121,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -181,6 +179,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -208,6 +207,15 @@
   </node>
   <node concept="312cEu" id="2he9CywXF71">
     <property role="TrG5h" value="ConditionalEditorUtil" />
+    <node concept="Wx3nA" id="5P1DsEq53Q7" role="jymVt">
+      <property role="TrG5h" value="editorRegistryClassName" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="5P1DsEq530m" role="1tU5fm" />
+      <node concept="3Tm6S6" id="5P1DsEq530k" role="1B3o_S" />
+      <node concept="Xl_RD" id="5P1DsEq53cY" role="33vP2m">
+        <property role="Xl_RC" value="jetbrains.mps.nodeEditor.cells.AbstractEditorRegistry" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2he9CywXPrd" role="jymVt" />
     <node concept="2YIFZL" id="2he9CywXJf6" role="jymVt">
       <property role="TrG5h" value="getPriority" />
@@ -279,8 +287,8 @@
             <node concept="2YIFZM" id="6OrbFWF8VAx" role="33vP2m">
               <ref role="37wK5l" to="ycmz:7moa1g0ZZ_y" resolve="getClass" />
               <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
-              <node concept="Xl_RD" id="6OrbFWF8VAy" role="37wK5m">
-                <property role="Xl_RC" value="jetbrains.mps.nodeEditor.cells.AbstractEditorRegistry" />
+              <node concept="37vLTw" id="5P1DsEq54wd" role="37wK5m">
+                <ref role="3cqZAo" node="5P1DsEq53Q7" resolve="editorRegistryClassName" />
               </node>
             </node>
           </node>
@@ -488,105 +496,31 @@
             <property role="3SKdUp" value="disable logging" />
           </node>
         </node>
-        <node concept="3cpWs8" id="nR2eIyJ8Ld" role="3cqZAp">
-          <node concept="3cpWsn" id="nR2eIyJ8Le" role="3cpWs9">
-            <property role="TrG5h" value="loggerWrapper" />
-            <node concept="3uibUv" id="nR2eIyJ9HQ" role="1tU5fm">
-              <ref role="3uigEE" to="wwqx:~Log4jLogger" resolve="Log4jLogger" />
-            </node>
-            <node concept="1eOMI4" id="nR2eIyJ9ba" role="33vP2m">
-              <node concept="10QFUN" id="nR2eIyJ9bb" role="1eOMHV">
-                <node concept="2YIFZM" id="nR2eIyJ9b6" role="10QFUP">
-                  <ref role="37wK5l" to="ycmz:7moa1g0RuMd" resolve="readField" />
-                  <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
-                  <node concept="37vLTw" id="nR2eIyJ9b7" role="37wK5m">
-                    <ref role="3cqZAo" node="6OrbFWF8VAw" resolve="registryClass" />
-                  </node>
-                  <node concept="10Nm6u" id="nR2eIyJ9b8" role="37wK5m" />
-                  <node concept="Xl_RD" id="nR2eIyJ9b9" role="37wK5m">
-                    <property role="Xl_RC" value="LOG" />
-                  </node>
-                </node>
-                <node concept="3uibUv" id="nR2eIyJ9IM" role="10QFUM">
-                  <ref role="3uigEE" to="wwqx:~Log4jLogger" resolve="Log4jLogger" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="nR2eIyJaRt" role="3cqZAp">
           <node concept="3cpWsn" id="nR2eIyJaRu" role="3cpWs9">
             <property role="TrG5h" value="logger" />
             <node concept="3uibUv" id="nR2eIyJaRq" role="1tU5fm">
               <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
             </node>
-            <node concept="2OqwBi" id="nR2eIyJaRv" role="33vP2m">
-              <node concept="37vLTw" id="nR2eIyJaRw" role="2Oq$k0">
-                <ref role="3cqZAo" node="nR2eIyJ8Le" resolve="loggerWrapper" />
-              </node>
-              <node concept="1PnCL0" id="nR2eIyJaRx" role="2OqNvi">
-                <ref role="2Oxat5" to="wwqx:~Log4jLogger.myLogger" resolve="myLogger" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="nR2eIyJbtx" role="3cqZAp">
-          <node concept="3cpWsn" id="nR2eIyJbty" role="3cpWs9">
-            <property role="TrG5h" value="hierarchy" />
-            <node concept="3uibUv" id="nR2eIyJbDL" role="1tU5fm">
-              <ref role="3uigEE" to="q7tw:~Hierarchy" resolve="Hierarchy" />
-            </node>
-            <node concept="1eOMI4" id="nR2eIyJbEC" role="33vP2m">
-              <node concept="10QFUN" id="nR2eIyJbED" role="1eOMHV">
-                <node concept="2OqwBi" id="nR2eIyJbE_" role="10QFUP">
-                  <node concept="37vLTw" id="nR2eIyJbEA" role="2Oq$k0">
-                    <ref role="3cqZAo" node="nR2eIyJaRu" resolve="logger" />
-                  </node>
-                  <node concept="liA8E" id="nR2eIyJbEB" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.getHierarchy():org.apache.log4j.spi.LoggerRepository" resolve="getHierarchy" />
-                  </node>
-                </node>
-                <node concept="3uibUv" id="nR2eIyJbE$" role="10QFUM">
-                  <ref role="3uigEE" to="q7tw:~Hierarchy" resolve="Hierarchy" />
-                </node>
+            <node concept="2YIFZM" id="5P1DsEq50fv" role="33vP2m">
+              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.String):org.apache.log4j.Logger" resolve="getLogger" />
+              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
+              <node concept="37vLTw" id="5P1DsEq50fw" role="37wK5m">
+                <ref role="3cqZAo" node="5P1DsEq53Q7" resolve="editorRegistryClassName" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="nR2eIyJbSv" role="3cqZAp">
-          <node concept="37vLTI" id="nR2eIyJcyj" role="3clFbG">
-            <node concept="3clFbT" id="nR2eIyJcDk" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="nR2eIyJc5B" role="37vLTJ">
-              <node concept="37vLTw" id="nR2eIyJbSt" role="2Oq$k0">
-                <ref role="3cqZAo" node="nR2eIyJbty" resolve="hierarchy" />
-              </node>
-              <node concept="1PnCL0" id="nR2eIyJcmb" role="2OqNvi">
-                <ref role="2Oxat5" to="q7tw:~Hierarchy.emittedNoAppenderWarning" resolve="emittedNoAppenderWarning" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="nR2eIyJ9nc" role="3cqZAp">
-          <node concept="2OqwBi" id="nR2eIyJ9ZK" role="3clFbG">
-            <node concept="37vLTw" id="nR2eIyJcGn" role="2Oq$k0">
+        <node concept="3clFbF" id="5P1DsEq51rj" role="3cqZAp">
+          <node concept="2OqwBi" id="5P1DsEq51DL" role="3clFbG">
+            <node concept="37vLTw" id="5P1DsEq51rh" role="2Oq$k0">
               <ref role="3cqZAo" node="nR2eIyJaRu" resolve="logger" />
             </node>
-            <node concept="liA8E" id="nR2eIyJabd" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.removeAllAppenders():void" resolve="removeAllAppenders" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="47kQaYxoPmW" role="3cqZAp">
-          <node concept="2OqwBi" id="47kQaYxoP$6" role="3clFbG">
-            <node concept="37vLTw" id="47kQaYxoPmU" role="2Oq$k0">
-              <ref role="3cqZAo" node="nR2eIyJaRu" resolve="logger" />
-            </node>
-            <node concept="liA8E" id="47kQaYxoPP6" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.setAdditivity(boolean):void" resolve="setAdditivity" />
-              <node concept="3clFbT" id="47kQaYxoPPA" role="37wK5m">
-                <property role="3clFbU" value="false" />
+            <node concept="liA8E" id="5P1DsEq51Pe" role="2OqNvi">
+              <ref role="37wK5l" to="q7tw:~Category.setLevel(org.apache.log4j.Level):void" resolve="setLevel" />
+              <node concept="10M0yZ" id="5P1DsEq51PL" role="37wK5m">
+                <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
+                <ref role="3cqZAo" to="q7tw:~Level.OFF" resolve="OFF" />
               </node>
             </node>
           </node>
@@ -611,8 +545,8 @@
             <node concept="2YIFZM" id="6OrbFWF9awe" role="33vP2m">
               <ref role="37wK5l" to="ycmz:7moa1g0ZZ_y" resolve="getClass" />
               <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
-              <node concept="Xl_RD" id="6OrbFWF9awf" role="37wK5m">
-                <property role="Xl_RC" value="jetbrains.mps.nodeEditor.cells.AbstractEditorRegistry" />
+              <node concept="37vLTw" id="5P1DsEq54Dr" role="37wK5m">
+                <ref role="3cqZAo" node="5P1DsEq53Q7" resolve="editorRegistryClassName" />
               </node>
             </node>
           </node>
@@ -750,7 +684,7 @@
             <node concept="2OqwBi" id="6OrbFWF8P5_" role="37vLTJ">
               <node concept="Xjq3P" id="6OrbFWF8P18" role="2Oq$k0" />
               <node concept="2OwXpG" id="6OrbFWF8PlL" role="2OqNvi">
-                <ref role="2Oxat6" node="6OrbFWF8Oz4" resolve="secondary" />
+                <ref role="2Oxat5" node="6OrbFWF8Oz4" resolve="secondary" />
               </node>
             </node>
             <node concept="37vLTw" id="6OrbFWF8OHT" role="37vLTx">

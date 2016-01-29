@@ -17,7 +17,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
       <runner id="RUNNER_79" name="Package Tutorial" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[cd %teamcity.build.checkoutDir%/mbeddr.core/code/applications
-zip -r com.mbeddr.tutorial.zip tutorial/
+zip -r com.mbeddr.tutorial.zip tutorial/ -x tutorial/.mps/vcs.xml tutorial/.mps/libraries.xml
 cd %teamcity.build.checkoutDir%/artifacts
 mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutorial.zip %teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial.zip]]></param>
           <param name="teamcity.step.mode" value="default" />

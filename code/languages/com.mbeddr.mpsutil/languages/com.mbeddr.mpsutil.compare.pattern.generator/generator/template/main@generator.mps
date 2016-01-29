@@ -611,7 +611,7 @@
           <node concept="3clFbS" id="6Clmpmuh$Ez" role="3clF47">
             <node concept="3clFbF" id="6Clmpmuh_DS" role="3cqZAp">
               <node concept="2YIFZM" id="7eUZPevAJcV" role="3clFbG">
-                <ref role="37wK5l" to="xpog:d5uH5c3bBH" resolve="safeGet" />
+                <ref role="37wK5l" to="xpog:d5uH5c3bBH" resolve="safeGetSingle" />
                 <ref role="1Pybhc" to="xpog:d5uH5c3bAI" resolve="Runtime" />
                 <node concept="2YIFZM" id="7P2BN5H766h" role="37wK5m">
                   <ref role="37wK5l" to="6mqi:7P2BN5H75QW" resolve="GetResultFromContext" />

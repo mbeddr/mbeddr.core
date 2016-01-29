@@ -244,6 +244,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -479,6 +480,29 @@
           <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="3quoVcnVO89" role="jymVt" />
+    <node concept="3clFb_" id="3quoVcnVPDS" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getConcept" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3quoVcnVPDV" role="3clF47">
+        <node concept="3clFbF" id="3quoVcnVRdB" role="3cqZAp">
+          <node concept="2OqwBi" id="3quoVcnVS55" role="3clFbG">
+            <node concept="2OqwBi" id="3quoVcnVReZ" role="2Oq$k0">
+              <node concept="Xjq3P" id="3quoVcnVRdA" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3quoVcnVRjA" role="2OqNvi">
+                <ref role="2Oxat5" node="53_zXRTtNr" resolve="concept" />
+              </node>
+            </node>
+            <node concept="1rGIog" id="3quoVcnVSea" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3quoVcnVPb5" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="3quoVcnVREV" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="53_zXRTvQQ" role="jymVt" />
     <node concept="3clFb_" id="53_zXRTFT5" role="jymVt">
