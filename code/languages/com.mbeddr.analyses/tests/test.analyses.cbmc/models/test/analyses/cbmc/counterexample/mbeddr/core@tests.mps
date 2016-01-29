@@ -3535,13 +3535,6 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlqfdZ" role="38rM$J">
-            <property role="38rIoG" value="*" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlqfe0" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-            </node>
-          </node>
           <node concept="38rIoz" id="7MMcIPlqfe1" role="38rM$J">
             <property role="38rIoG" value="d" />
             <property role="38rMdH" value="5.000000" />
