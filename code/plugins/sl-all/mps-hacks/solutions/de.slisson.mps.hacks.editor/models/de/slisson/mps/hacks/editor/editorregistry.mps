@@ -709,7 +709,7 @@
                         <ref role="3cqZAo" node="5094wKnoHDm" resolve="conceptEditor" />
                       </node>
                       <node concept="liA8E" id="5094wKnoI7_" role="2OqNvi">
-                        <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                        <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5094wKnoHD8" role="2OqNvi">
@@ -722,7 +722,7 @@
                         <ref role="3cqZAo" node="5094wKnoHCH" resolve="result" />
                       </node>
                       <node concept="liA8E" id="5094wKnoI7Y" role="2OqNvi">
-                        <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                        <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5094wKnoHDb" role="2OqNvi">
@@ -1069,7 +1069,7 @@
                       <ref role="3cqZAo" node="5094wKnoHEO" resolve="editor" />
                     </node>
                     <node concept="liA8E" id="5094wKnoIkK" role="2OqNvi">
-                      <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                      <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5094wKnoHEY" role="2OqNvi">
@@ -1117,7 +1117,7 @@
               <ref role="3cqZAo" node="5094wKnoHFf" resolve="editor" />
             </node>
             <node concept="liA8E" id="5094wKnoIl9" role="2OqNvi">
-              <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+              <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
             </node>
           </node>
           <node concept="3cpWsn" id="5094wKnoHFv" role="1Duv9x">
@@ -1347,7 +1347,7 @@
                                     <ref role="3cqZAo" node="5094wKnoHGC" resolve="editor1" />
                                   </node>
                                   <node concept="liA8E" id="5094wKnoIo3" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                                    <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5094wKnoHGL" role="2OqNvi">
@@ -1360,7 +1360,7 @@
                                     <ref role="3cqZAo" node="5094wKnoHGE" resolve="editor2" />
                                   </node>
                                   <node concept="liA8E" id="5094wKnoIp0" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                                    <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5094wKnoHGO" role="2OqNvi">
@@ -1412,7 +1412,7 @@
                                     <ref role="3cqZAo" node="5094wKnoHGE" resolve="editor2" />
                                   </node>
                                   <node concept="liA8E" id="5094wKnoIrR" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                                    <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5094wKnoHH4" role="2OqNvi">
@@ -1425,7 +1425,7 @@
                                     <ref role="3cqZAo" node="5094wKnoHGC" resolve="editor1" />
                                   </node>
                                   <node concept="liA8E" id="5094wKnoIsO" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                                    <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5094wKnoHH7" role="2OqNvi">
@@ -1519,7 +1519,7 @@
                                     <ref role="3cqZAo" node="5094wKnoHHz" resolve="editor2" />
                                   </node>
                                   <node concept="liA8E" id="5094wKnoItL" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                                    <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5094wKnoHHE" role="2OqNvi">
@@ -1532,7 +1532,7 @@
                                     <ref role="3cqZAo" node="5094wKnoHHx" resolve="editor1" />
                                   </node>
                                   <node concept="liA8E" id="5094wKnoIuI" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwf0:~BaseConceptEditor.getContextHints():java.util.Collection" resolve="getContextHints" />
+                                    <ref role="37wK5l" to="iwf0:~EditorHintsSpecific.getContextHints():java.util.Collection" resolve="getContextHints" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5094wKnoHHH" role="2OqNvi">
