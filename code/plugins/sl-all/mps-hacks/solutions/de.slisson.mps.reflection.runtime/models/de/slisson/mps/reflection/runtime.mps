@@ -31,7 +31,6 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
-      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -50,9 +49,7 @@
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <child id="1165602531693" name="superclass" index="1zkMxy" />
-      </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -85,7 +82,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -189,7 +185,7 @@
               <node concept="YS8fn" id="7moa1g0QT6b" role="3cqZAp">
                 <node concept="2ShNRf" id="7moa1g0QTjr" role="YScLw">
                   <node concept="1pGfFk" id="7moa1g0QTtj" role="2ShVmc">
-                    <ref role="37wK5l" node="7moa1g0QL7p" resolve="ReflectionException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="7moa1g0QYPq" role="37wK5m">
                       <node concept="37vLTw" id="7moa1g0QYXx" role="3uHU7w">
                         <ref role="3cqZAo" node="7moa1g0QLjB" resolve="obj" />
@@ -404,7 +400,7 @@
               <node concept="YS8fn" id="7moa1g0RG0F" role="3cqZAp">
                 <node concept="2ShNRf" id="7moa1g0RG0G" role="YScLw">
                   <node concept="1pGfFk" id="7moa1g0RG0H" role="2ShVmc">
-                    <ref role="37wK5l" node="7moa1g0QL7p" resolve="ReflectionException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="7moa1g0RG0I" role="37wK5m">
                       <node concept="37vLTw" id="7moa1g0RG0J" role="3uHU7w">
                         <ref role="3cqZAo" node="7moa1g0RG0Y" resolve="obj" />
@@ -539,7 +535,7 @@
               <node concept="YS8fn" id="7moa1g0TKkI" role="3cqZAp">
                 <node concept="2ShNRf" id="7moa1g0TKkJ" role="YScLw">
                   <node concept="1pGfFk" id="7moa1g0TKkK" role="2ShVmc">
-                    <ref role="37wK5l" node="7moa1g0QL7p" resolve="ReflectionException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="7moa1g0TKkL" role="37wK5m">
                       <node concept="37vLTw" id="7moa1g0TKkM" role="3uHU7w">
                         <ref role="3cqZAo" node="7moa1g0TJCq" resolve="obj" />
@@ -825,7 +821,7 @@
               <node concept="YS8fn" id="7q7LIEysjwG" role="3cqZAp">
                 <node concept="2ShNRf" id="7moa1g100eC" role="YScLw">
                   <node concept="1pGfFk" id="7moa1g100n7" role="2ShVmc">
-                    <ref role="37wK5l" node="7moa1g0QL7p" resolve="ReflectionException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
                     <node concept="Xl_RD" id="7moa1g100uc" role="37wK5m" />
                     <node concept="37vLTw" id="7moa1g100AB" role="37wK5m">
                       <ref role="3cqZAo" node="7moa1g0ZZSz" resolve="ex" />
@@ -843,38 +839,6 @@
       <node concept="3Tm1VV" id="7moa1g0ZZj_" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="7moa1g0QL5K" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="7moa1g0QL71">
-    <property role="TrG5h" value="ReflectionException" />
-    <node concept="3clFbW" id="7moa1g0QL7p" role="jymVt">
-      <node concept="37vLTG" id="7moa1g0QL7$" role="3clF46">
-        <property role="TrG5h" value="msg" />
-        <node concept="17QB3L" id="7moa1g0QL7G" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="7moa1g0QL7Z" role="3clF46">
-        <property role="TrG5h" value="cause" />
-        <node concept="3uibUv" id="7moa1g0QL89" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="7moa1g0QL7r" role="3clF45" />
-      <node concept="3Tm1VV" id="7moa1g0QL7s" role="1B3o_S" />
-      <node concept="3clFbS" id="7moa1g0QL7t" role="3clF47">
-        <node concept="XkiVB" id="7moa1g0QL8F" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
-          <node concept="37vLTw" id="7moa1g0QL94" role="37wK5m">
-            <ref role="3cqZAo" node="7moa1g0QL7$" resolve="msg" />
-          </node>
-          <node concept="37vLTw" id="7moa1g0QLgx" role="37wK5m">
-            <ref role="3cqZAo" node="7moa1g0QL7Z" resolve="cause" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="7moa1g0QL72" role="1B3o_S" />
-    <node concept="3uibUv" id="7moa1g0QL7h" role="1zkMxy">
-      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-    </node>
   </node>
 </model>
 

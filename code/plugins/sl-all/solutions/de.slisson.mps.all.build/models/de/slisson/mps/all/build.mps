@@ -2511,6 +2511,12 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+          <node concept="1SiIV0" id="3VRmSegr3ke" role="3bR37C">
+            <node concept="3bR9La" id="3VRmSegr3kf" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="27YNgA28xCu" role="1E1XAP">
           <ref role="1E0d5P" node="29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
@@ -2532,6 +2538,9 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="3VRmSegrnOO" role="1E1XAP">
+          <ref role="1E0d5P" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
         </node>
       </node>
     </node>

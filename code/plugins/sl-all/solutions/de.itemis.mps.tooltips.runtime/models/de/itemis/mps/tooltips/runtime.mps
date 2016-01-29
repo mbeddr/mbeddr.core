@@ -509,7 +509,7 @@
                           <node concept="3clFbF" id="5P1DsEq0JGP" role="3cqZAp">
                             <node concept="2YIFZM" id="5P1DsEq0JJI" role="3clFbG">
                               <ref role="37wK5l" to="kvq8:5fq$Y9Wk4U7" resolve="createEditorCell" />
-                              <ref role="1Pybhc" to="kvq8:5fq$Y9WjMuW" resolve="EditorCellCreator2" />
+                              <ref role="1Pybhc" to="kvq8:5fq$Y9WjMuW" resolve="EditorCellCreator" />
                               <node concept="2OqwBi" id="5P1DsEq0K57" role="37wK5m">
                                 <node concept="37vLTw" id="5P1DsEq0JWL" role="2Oq$k0">
                                   <ref role="3cqZAo" node="2a194$KqXtZ" resolve="myEditorContext" />
