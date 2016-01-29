@@ -36,7 +36,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="_oDvx5U56v">
-    <ref role="1XX52x" to="ybok:_oDvx5U51b" resolve="EmitInlineStatement" />
+    <ref role="1XX52x" to="ybok:_oDvx5U51b" resolve="EmitNestStatement" />
     <node concept="3EZMnI" id="_oDvx5U56$" role="2wV5jI">
       <node concept="l2Vlx" id="_oDvx5U56_" role="2iSdaV" />
       <node concept="3F0ifn" id="_oDvx5U56x" role="3EZMnx">
@@ -56,7 +56,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2U8JvBXrt1o">
-    <ref role="1XX52x" to="ybok:2U8JvBXrt1f" resolve="EmitInlinePointInstruction" />
+    <ref role="1XX52x" to="ybok:2U8JvBXrt1f" resolve="EmitNestPointStatement" />
     <node concept="3EZMnI" id="2U8JvBXrt1u" role="2wV5jI">
       <node concept="l2Vlx" id="2U8JvBXrt1v" role="2iSdaV" />
       <node concept="3F0ifn" id="2U8JvBXrt1q" role="3EZMnx">

@@ -55,7 +55,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -2613,8 +2613,6 @@
             <ref role="3O_q_h" node="5G6GJ5xeqN8" resolve="f2" />
           </node>
         </node>
-        <node concept="3XISUE" id="M0LkhFprC6" role="3XIRFZ" />
-        <node concept="3XISUE" id="M0LkhFprCs" role="3XIRFZ" />
       </node>
       <node concept="19Rifw" id="5G6GJ5xemLn" role="2C2TGm">
         <property role="2caQfQ" value="false" />
