@@ -429,8 +429,9 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="CBMCAnalysisConfiguration" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="cbmc analysis configuration" />
+    <property role="34LRSv" value="Analysis Configuration" />
     <property role="1pbfSe" value="525590458" />
+    <property role="R4oN_" value="an analysis configuration contains multiple analyses" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
     <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
       <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
