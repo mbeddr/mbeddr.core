@@ -257,6 +257,9 @@
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
+      <concept id="1220357310820" name="jetbrains.mps.lang.typesystem.structure.AddDependencyStatement" flags="nn" index="yXGxS">
+        <child id="1220357350423" name="dependency" index="yXQkb" />
+      </concept>
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -5480,6 +5483,16 @@
     <property role="3GE5qa" value="expr" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="1exqRp9kgZ" role="18ibNy">
+      <node concept="yXGxS" id="4wa2CIlPD$w" role="3cqZAp">
+        <node concept="2OqwBi" id="4wa2CIlPDSU" role="yXQkb">
+          <node concept="1YBJjd" id="4wa2CIlPD_x" role="2Oq$k0">
+            <ref role="1YBMHb" node="1exqRp9kh0" resolve="ae" />
+          </node>
+          <node concept="3TrEf2" id="4wa2CIlPXq$" role="2OqNvi">
+            <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="4usdeMNUjgU" role="3cqZAp">
         <node concept="3clFbS" id="4usdeMNUjgV" role="3clFbx">
           <node concept="1ZoDhX" id="5so5TTr6NSG" role="3cqZAp">
