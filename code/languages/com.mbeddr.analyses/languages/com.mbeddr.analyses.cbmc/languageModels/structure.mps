@@ -577,7 +577,7 @@
     <node concept="1TJgyj" id="7AXwte8Dbfu" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="config" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
       <node concept="asaX9" id="6BJ5EqKuQmh" role="lGtFl" />
     </node>
