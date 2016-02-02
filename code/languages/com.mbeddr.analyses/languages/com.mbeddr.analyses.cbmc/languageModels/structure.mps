@@ -571,7 +571,7 @@
     <node concept="1TJgyj" id="6BJ5EqKuQm5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="configs" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6BJ5EqKuQlv" resolve="CBMCAnalysisConfigurationRef" />
     </node>
     <node concept="1TJgyj" id="7AXwte8Dbfu" role="1TKVEi">

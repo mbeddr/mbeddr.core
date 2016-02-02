@@ -30,6 +30,7 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
+    <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2280,6 +2281,44 @@
     <node concept="1YaCAy" id="636FvLn07Z$" role="1YuTPh">
       <property role="TrG5h" value="ve" />
       <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6BJ5EqKyhi4">
+    <property role="TrG5h" value="check_AnalysisConfigItem" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <node concept="3clFbS" id="6BJ5EqKyhi5" role="18ibNy">
+      <node concept="3clFbJ" id="6BJ5EqKyhXi" role="3cqZAp">
+        <node concept="3clFbS" id="6BJ5EqKyhXj" role="3clFbx">
+          <node concept="2MkqsV" id="6BJ5EqKyi09" role="3cqZAp">
+            <node concept="Xl_RD" id="6BJ5EqKyi0r" role="2MkJ7o">
+              <property role="Xl_RC" value="at least one analysis configuration must be referenced" />
+            </node>
+            <node concept="1YBJjd" id="6BJ5EqKyi2a" role="2OEOjV">
+              <ref role="1YBMHb" node="6BJ5EqKyhi7" resolve="analysisConfigItem" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="6BJ5EqKyhSc" role="3clFbw">
+          <node concept="3cmrfG" id="6BJ5EqKyhV0" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="2OqwBi" id="6BJ5EqKyhxc" role="3uHU7B">
+            <node concept="2OqwBi" id="6BJ5EqKyhlq" role="2Oq$k0">
+              <node concept="1YBJjd" id="6BJ5EqKyhiF" role="2Oq$k0">
+                <ref role="1YBMHb" node="6BJ5EqKyhi7" resolve="analysisConfigItem" />
+              </node>
+              <node concept="2qgKlT" id="6BJ5EqKyhtV" role="2OqNvi">
+                <ref role="37wK5l" to="th2u:6BJ5EqKvGWn" resolve="getAllAnalysesConfigs" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="6BJ5EqKyhG$" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6BJ5EqKyhi7" role="1YuTPh">
+      <property role="TrG5h" value="analysisConfigItem" />
+      <ref role="1YaFvo" to="q5q6:fupCadgOM" resolve="AnalysisConfigItem" />
     </node>
   </node>
 </model>
