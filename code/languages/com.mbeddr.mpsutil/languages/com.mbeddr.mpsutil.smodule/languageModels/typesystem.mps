@@ -10,6 +10,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
@@ -27,8 +28,14 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
+        <child id="1196350785114" name="quotedNode" index="2c44tc" />
+      </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
       </concept>
@@ -91,6 +98,11 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
     </language>
   </registry>
@@ -289,6 +301,33 @@
     <node concept="1YaCAy" id="lse_ua4GlU" role="1YuTPh">
       <property role="TrG5h" value="solutionType" />
       <ref role="1YaFvo" to="gt8j:6X6$P3A2pc5" resolve="SolutionType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="fXun2RlBZL">
+    <property role="TrG5h" value="typeof_GetLanguagesOperation" />
+    <node concept="3clFbS" id="fXun2RlBZM" role="18ibNy">
+      <node concept="1Z5TYs" id="fXun2RlC4f" role="3cqZAp">
+        <node concept="mw_s8" id="fXun2RlC4i" role="1ZfhK$">
+          <node concept="1Z2H0r" id="fXun2RlC1Y" role="mwGJk">
+            <node concept="1YBJjd" id="fXun2RlC2q" role="1Z2MuG">
+              <ref role="1YBMHb" node="fXun2RlBZO" resolve="getLanguagesOperation" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="fXun2RlC4W" role="1ZfhKB">
+          <node concept="2c44tf" id="fXun2RlC4S" role="mwGJk">
+            <node concept="A3Dl8" id="fXun2RlC5f" role="2c44tc">
+              <node concept="3uibUv" id="fXun2RlC5C" role="A3Ik2">
+                <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="fXun2RlBZO" role="1YuTPh">
+      <property role="TrG5h" value="getLanguagesOperation" />
+      <ref role="1YaFvo" to="gt8j:fXun2RlBZE" resolve="GetLanguagesOperation" />
     </node>
   </node>
 </model>

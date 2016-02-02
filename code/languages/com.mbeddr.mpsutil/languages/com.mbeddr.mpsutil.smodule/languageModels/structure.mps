@@ -7,12 +7,13 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -184,6 +185,13 @@
     <property role="34LRSv" value="single file" />
     <property role="1pbfSe" value="1889260386" />
     <ref role="1TJDcQ" node="7Ynnt_OiBWf" resolve="StorageType" />
+  </node>
+  <node concept="1TIwiD" id="fXun2RlBZE">
+    <property role="1pbfSe" value="1152124582" />
+    <property role="TrG5h" value="GetLanguagesOperation" />
+    <property role="34LRSv" value="getLanguages" />
+    <property role="R4oN_" value="get languages" />
+    <ref role="1TJDcQ" node="6X6$P3A3iSK" resolve="BaseSModuleOperation" />
   </node>
 </model>
 
