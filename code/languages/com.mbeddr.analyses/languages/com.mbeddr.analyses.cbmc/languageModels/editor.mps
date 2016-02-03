@@ -350,25 +350,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="4fjBjwDqDLB">
-    <property role="3GE5qa" value="expressions" />
-    <ref role="1XX52x" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
-    <node concept="3EZMnI" id="4fjBjwDqDLD" role="2wV5jI">
-      <node concept="3F1sOY" id="2iGzylswrib" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:7FQByU3CrD0" />
-      </node>
-      <node concept="3F0ifn" id="2iGzylswrN5" role="3EZMnx">
-        <property role="3F0ifm" value="→" />
-        <node concept="Vb9p2" id="7CSU6RRZZmG" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="2iGzylswrid" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:7FQByU3CrD1" />
-      </node>
-      <node concept="l2Vlx" id="4fjBjwDqDLF" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="637qsduSbtr">
     <property role="3GE5qa" value="statements" />
     <ref role="1XX52x" to="q5q6:637qsduSbtp" resolve="Assert" />
