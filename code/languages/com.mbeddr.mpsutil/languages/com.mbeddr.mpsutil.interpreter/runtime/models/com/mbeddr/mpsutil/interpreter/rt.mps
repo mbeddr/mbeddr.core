@@ -27,6 +27,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="rl4q" ref="r:72bc3a97-6a66-47f6-8cf2-f88ab2ada651(com.mbeddr.mpsutil.common.model)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4899,22 +4900,22 @@
   </node>
   <node concept="312cEu" id="27Skbdzq82B">
     <property role="TrG5h" value="InterpreterClassSorter" />
-    <node concept="312cEg" id="27Skbdzh4wS" role="jymVt">
+    <node concept="312cEg" id="3e2EgMIbgsA" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="sorter" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="27Skbdzh4vN" role="1B3o_S" />
-      <node concept="3uibUv" id="27Skbdzh4vV" role="1tU5fm">
-        <ref role="3uigEE" to="7wpd:5GUwywcuOJ_" resolve="TopologicalSorter" />
-        <node concept="16syzq" id="2pogikRxU4H" role="11_B2D">
+      <property role="TrG5h" value="dependencyGraph" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tmbuc" id="3e2EgMIbg33" role="1B3o_S" />
+      <node concept="3uibUv" id="3e2EgMIbgoc" role="1tU5fm">
+        <ref role="3uigEE" to="gtp9:9NO9Tq8VKe" resolve="Graph" />
+        <node concept="16syzq" id="3e2EgMIbgsd" role="11_B2D">
           <ref role="16sUi3" node="2pogikRxSwJ" resolve="I" />
         </node>
       </node>
-      <node concept="2ShNRf" id="27Skbdzh4yz" role="33vP2m">
-        <node concept="1pGfFk" id="27Skbdzh4Oh" role="2ShVmc">
-          <ref role="37wK5l" to="7wpd:5GUwywcuOJK" resolve="TopologicalSorter" />
-          <node concept="16syzq" id="2pogikRxUvh" role="1pMfVU">
+      <node concept="2ShNRf" id="3e2EgMIbgNj" role="33vP2m">
+        <node concept="1pGfFk" id="3e2EgMIbgMo" role="2ShVmc">
+          <ref role="37wK5l" to="gtp9:9NO9Tq8VKB" resolve="Graph" />
+          <node concept="16syzq" id="3e2EgMIbgMp" role="1pMfVU">
             <ref role="16sUi3" node="2pogikRxSwJ" resolve="I" />
           </node>
         </node>
@@ -5056,11 +5057,11 @@
                 <node concept="3clFbS" id="3zYUNYHU5v9" role="1bW5cS">
                   <node concept="3clFbF" id="3zYUNYHU6EK" role="3cqZAp">
                     <node concept="2OqwBi" id="3zYUNYHU6KA" role="3clFbG">
-                      <node concept="37vLTw" id="3zYUNYHU6EJ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+                      <node concept="37vLTw" id="3e2EgMIbha7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3e2EgMIbgsA" resolve="dependencyGraph" />
                       </node>
                       <node concept="liA8E" id="3zYUNYHU7g0" role="2OqNvi">
-                        <ref role="37wK5l" to="7wpd:5GUwywcuOKZ" resolve="addNode" />
+                        <ref role="37wK5l" to="gtp9:9NO9Tq8VL5" resolve="addNode" />
                         <node concept="37vLTw" id="3zYUNYHU8tN" role="37wK5m">
                           <ref role="3cqZAo" node="3zYUNYHU5va" resolve="it" />
                         </node>
@@ -5124,17 +5125,17 @@
                           <ref role="1Px2BO" node="27SkbdzlRYf" resolve="IRelationship.EvaluationOrder" />
                         </node>
                         <node concept="3clFbS" id="27Skbdzt00I" role="3Kbo56">
-                          <node concept="3clFbF" id="27Skbdzt3JK" role="3cqZAp">
-                            <node concept="2OqwBi" id="27Skbdzt3JL" role="3clFbG">
-                              <node concept="37vLTw" id="27Skbdzt3JM" role="2Oq$k0">
-                                <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+                          <node concept="3clFbF" id="3e2EgMIbrid" role="3cqZAp">
+                            <node concept="2OqwBi" id="3e2EgMIbrod" role="3clFbG">
+                              <node concept="37vLTw" id="3e2EgMIbrib" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3e2EgMIbgsA" resolve="dependencyGraph" />
                               </node>
-                              <node concept="liA8E" id="27Skbdzt3JN" role="2OqNvi">
-                                <ref role="37wK5l" to="7wpd:5GUwywcuOJP" resolve="addDependency" />
-                                <node concept="2GrUjf" id="27Skbdzta$t" role="37wK5m">
+                              <node concept="liA8E" id="3e2EgMIbrrA" role="2OqNvi">
+                                <ref role="37wK5l" to="gtp9:9NO9Tq8VM$" resolve="addEdge" />
+                                <node concept="2GrUjf" id="3e2EgMIbrtU" role="37wK5m">
                                   <ref role="2Gs0qQ" node="27Skbdzh57Y" resolve="interpreter" />
                                 </node>
-                                <node concept="2GrUjf" id="27SkbdztbUB" role="37wK5m">
+                                <node concept="2GrUjf" id="3e2EgMIbr_n" role="37wK5m">
                                   <ref role="2Gs0qQ" node="27SkbdzrLb5" resolve="existingInterpreter" />
                                 </node>
                               </node>
@@ -5149,17 +5150,17 @@
                           <ref role="1Px2BO" node="27SkbdzlRYf" resolve="IRelationship.EvaluationOrder" />
                         </node>
                         <node concept="3clFbS" id="27SkbdztdRd" role="3Kbo56">
-                          <node concept="3clFbF" id="27SkbdztmJ$" role="3cqZAp">
-                            <node concept="2OqwBi" id="27SkbdztmJ_" role="3clFbG">
-                              <node concept="37vLTw" id="27SkbdztmJA" role="2Oq$k0">
-                                <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+                          <node concept="3clFbF" id="3e2EgMIbrPg" role="3cqZAp">
+                            <node concept="2OqwBi" id="3e2EgMIbrPh" role="3clFbG">
+                              <node concept="37vLTw" id="3e2EgMIbrPi" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3e2EgMIbgsA" resolve="dependencyGraph" />
                               </node>
-                              <node concept="liA8E" id="27SkbdztmJB" role="2OqNvi">
-                                <ref role="37wK5l" to="7wpd:5GUwywcuOJP" resolve="addDependency" />
-                                <node concept="2GrUjf" id="27Skbdzt$4N" role="37wK5m">
+                              <node concept="liA8E" id="3e2EgMIbrPj" role="2OqNvi">
+                                <ref role="37wK5l" to="gtp9:9NO9Tq8VM$" resolve="addEdge" />
+                                <node concept="2GrUjf" id="3e2EgMIbrPl" role="37wK5m">
                                   <ref role="2Gs0qQ" node="27SkbdzrLb5" resolve="existingInterpreter" />
                                 </node>
-                                <node concept="2GrUjf" id="27Skbdzt_fY" role="37wK5m">
+                                <node concept="2GrUjf" id="3e2EgMIbrPk" role="37wK5m">
                                   <ref role="2Gs0qQ" node="27Skbdzh57Y" resolve="interpreter" />
                                 </node>
                               </node>
@@ -5197,13 +5198,15 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="27SkbdzhW_r" role="3clF47">
-        <node concept="3cpWs6" id="27SkbdzhYVq" role="3cqZAp">
-          <node concept="2OqwBi" id="3zYUNYHXCe9" role="3cqZAk">
-            <node concept="37vLTw" id="3zYUNYHXCea" role="2Oq$k0">
-              <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+        <node concept="3cpWs6" id="3e2EgMIbhN3" role="3cqZAp">
+          <node concept="2YIFZM" id="3e2EgMIbijo" role="3cqZAk">
+            <ref role="1Pybhc" to="gtp9:59VTJR_XXJb" resolve="GraphUtil" />
+            <ref role="37wK5l" to="gtp9:4D_91tBL_7M" resolve="computeTopologicalSorting" />
+            <node concept="37vLTw" id="3e2EgMIbizt" role="37wK5m">
+              <ref role="3cqZAo" node="3e2EgMIbgsA" resolve="dependencyGraph" />
             </node>
-            <node concept="liA8E" id="3zYUNYHXCeb" role="2OqNvi">
-              <ref role="37wK5l" to="7wpd:5GUwywcuOLs" resolve="sort" />
+            <node concept="3clFbT" id="3FYfbA7ehAf" role="37wK5m">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
