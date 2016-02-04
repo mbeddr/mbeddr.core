@@ -629,9 +629,6 @@
       <node concept="m$_yC" id="5GEPw8wEFkP" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
-      <node concept="m$_yC" id="5QBYBgqzqTS" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
-      </node>
       <node concept="m$_yC" id="6Y0V2RJk5$$" role="m$_yJ">
         <ref role="m$_y1" node="6Y0V2RJk3uw" resolve="de.itemis.mps.selection" />
       </node>
@@ -2520,12 +2517,6 @@
         </node>
         <node concept="1E0d5M" id="27YNgA28xCu" role="1E1XAP">
           <ref role="1E0d5P" node="29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
-        </node>
-        <node concept="1SiIV0" id="5QBYBgqwXW_" role="3bR37C">
-          <node concept="3bR9La" id="5QBYBgqwXWA" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
-          </node>
         </node>
         <node concept="1SiIV0" id="77vSOTOhAFd" role="3bR37C">
           <node concept="3bR9La" id="77vSOTOhAFe" role="1SiIV1">
