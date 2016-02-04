@@ -2321,5 +2321,38 @@
       <ref role="1YaFvo" to="q5q6:fupCadgOM" resolve="AnalysisConfigItem" />
     </node>
   </node>
+  <node concept="18kY7G" id="7cbtYkHd14B">
+    <property role="TrG5h" value="check_CProverBasedMbeddrAnalysis" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <node concept="3clFbS" id="7cbtYkHd14C" role="18ibNy">
+      <node concept="3clFbJ" id="7cbtYkHd1JE" role="3cqZAp">
+        <node concept="3clFbS" id="7cbtYkHd1JF" role="3clFbx">
+          <node concept="2MkqsV" id="7cbtYkHd3Qx" role="3cqZAp">
+            <node concept="Xl_RD" id="7cbtYkHd3QN" role="2MkJ7o">
+              <property role="Xl_RC" value="entry point in the verification must be defined" />
+            </node>
+            <node concept="1YBJjd" id="7cbtYkHd3RS" role="2OEOjV">
+              <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="7cbtYkHd27K" role="3clFbw">
+          <node concept="2OqwBi" id="7cbtYkHd1MN" role="2Oq$k0">
+            <node concept="1YBJjd" id="7cbtYkHd1JW" role="2Oq$k0">
+              <ref role="1YBMHb" node="7cbtYkHd14E" resolve="cProverBasedMbeddrAnalysis" />
+            </node>
+            <node concept="3TrEf2" id="7cbtYkHd1Ub" role="2OqNvi">
+              <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="7cbtYkHd2GD" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7cbtYkHd14E" role="1YuTPh">
+      <property role="TrG5h" value="cProverBasedMbeddrAnalysis" />
+      <ref role="1YaFvo" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    </node>
+  </node>
 </model>
 
