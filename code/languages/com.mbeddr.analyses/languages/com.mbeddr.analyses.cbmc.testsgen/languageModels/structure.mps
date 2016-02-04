@@ -62,6 +62,10 @@
   <node concept="AxPO7" id="67iKQ7ohdEy">
     <property role="TrG5h" value="CoverageCriterion" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="341WyjDadqa" role="M5hS2">
+      <property role="1uS6qv" value="location" />
+      <property role="1uS6qo" value="location" />
+    </node>
     <node concept="M4N5e" id="67iKQ7ohdEz" role="M5hS2">
       <property role="1uS6qv" value="branch" />
       <property role="1uS6qo" value="branch" />

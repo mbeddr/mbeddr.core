@@ -2,10 +2,10 @@
 <model ref="r:fd3aaf94-2ab4-4d3f-aa2a-3e36042bb2d0(com.mbeddr.mpsutil.smodule.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -44,7 +44,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -846,6 +846,50 @@
               <node concept="1mIQ4w" id="1xm0odaGZ5f" role="2OqNvi">
                 <node concept="chp4Y" id="1xm0odaGZbP" role="cj9EA">
                   <ref role="cht4Q" to="gt8j:6X6$P3A2cpY" resolve="AddSolutionOperation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="fXun2RlD1G" role="3acgRq">
+      <ref role="30HIoZ" to="tpee:hqOqwz4" resolve="DotExpression" />
+      <node concept="30G5F_" id="fXun2RlE3h" role="30HLyM">
+        <node concept="3clFbS" id="fXun2RlE3i" role="2VODD2">
+          <node concept="3clFbF" id="fXun2RlE3o" role="3cqZAp">
+            <node concept="2OqwBi" id="fXun2RlE3p" role="3clFbG">
+              <node concept="2OqwBi" id="fXun2RlE3q" role="2Oq$k0">
+                <node concept="30H73N" id="fXun2RlE3r" role="2Oq$k0" />
+                <node concept="3TrEf2" id="fXun2RlE3s" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="fXun2RlE3t" role="2OqNvi">
+                <node concept="chp4Y" id="fXun2RlE6E" role="cj9EA">
+                  <ref role="cht4Q" to="gt8j:fXun2RlBZE" resolve="GetLanguagesOperation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="fXun2RlEar" role="1lVwrX">
+        <node concept="2YIFZM" id="fXun2RlEoN" role="gfFT$">
+          <ref role="37wK5l" to="8tyk:fXun2Rl4_g" resolve="getLanguages" />
+          <ref role="1Pybhc" to="8tyk:7Ynnt_OamsD" resolve="ModelHelper" />
+          <node concept="10Nm6u" id="fXun2RlEoO" role="37wK5m">
+            <node concept="29HgVG" id="fXun2RlEoP" role="lGtFl">
+              <node concept="3NFfHV" id="fXun2RlEoQ" role="3NFExx">
+                <node concept="3clFbS" id="fXun2RlEoR" role="2VODD2">
+                  <node concept="3clFbF" id="fXun2RlEoS" role="3cqZAp">
+                    <node concept="2OqwBi" id="fXun2RlEoT" role="3clFbG">
+                      <node concept="3TrEf2" id="fXun2RlEoU" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:hqOq$gm" />
+                      </node>
+                      <node concept="30H73N" id="fXun2RlEoV" role="2Oq$k0" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

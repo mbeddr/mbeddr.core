@@ -2,12 +2,12 @@
 <model ref="r:3b509dec-cc62-432c-a270-e52646b97c68(test.analyses.cbmc.testgen.smoke@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -60,7 +60,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -342,6 +342,146 @@
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
+  </node>
+  <node concept="1lH9Xt" id="341WyjDj2rG">
+    <property role="TrG5h" value="LocationTestsgen" />
+    <node concept="1LZb2c" id="341WyjDj2rH" role="1SL9yI">
+      <property role="TrG5h" value="testgenLocation" />
+      <node concept="3cqZAl" id="341WyjDj2rI" role="3clF45" />
+      <node concept="3clFbS" id="341WyjDj2rJ" role="3clF47">
+        <node concept="3cpWs8" id="341WyjDj2rK" role="3cqZAp">
+          <node concept="3cpWsn" id="341WyjDj2rL" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="341WyjDj2rM" role="1tU5fm" />
+            <node concept="BaHAS" id="341WyjDj2rN" role="33vP2m">
+              <property role="BaHAW" value="test.analyses.cbmc.testgen.testcode.smoke" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="341WyjDj2rO" role="3cqZAp">
+          <node concept="3cpWsn" id="341WyjDj2rP" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="2YIFZM" id="341WyjDj8uW" role="33vP2m">
+              <ref role="37wK5l" to="pyil:341WyjDj7Hm" resolve="testsgenLocation" />
+              <ref role="1Pybhc" to="pyil:67iKQ7oy7e8" resolve="TestgenTestingUtils" />
+              <node concept="37vLTw" id="341WyjDj8uX" role="37wK5m">
+                <ref role="3cqZAo" node="341WyjDj2rL" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="341WyjDj8uY" role="37wK5m">
+                <property role="Xl_RC" value="location1" />
+              </node>
+              <node concept="Xl_RD" id="341WyjDj8uZ" role="37wK5m">
+                <property role="Xl_RC" value="simpleLocation" />
+              </node>
+            </node>
+            <node concept="_YKpA" id="341WyjDj2rU" role="1tU5fm">
+              <node concept="3uibUv" id="341WyjDj2rV" role="_ZDj9">
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="341WyjDj2rW" role="3cqZAp" />
+        <node concept="3clFbF" id="341WyjDj2rX" role="3cqZAp">
+          <node concept="2YIFZM" id="341WyjDj2rY" role="3clFbG">
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <node concept="37vLTw" id="341WyjDj2rZ" role="37wK5m">
+              <ref role="3cqZAo" node="341WyjDj2rP" resolve="results" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="341WyjDj2s0" role="3cqZAp" />
+        <node concept="3cpWs8" id="341WyjDjsVb" role="3cqZAp">
+          <node concept="3cpWsn" id="341WyjDjsVc" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="341WyjDjsV5" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="2YIFZM" id="341WyjDjsVd" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="341WyjDjsVe" role="37wK5m">
+                <ref role="3cqZAo" node="341WyjDj2rP" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="341WyjDjsVf" role="37wK5m">
+                <property role="Xl_RC" value="location1.c : 7" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="341WyjDj2s6" role="3cqZAp">
+          <node concept="2OqwBi" id="341WyjDj2s7" role="3vwVQn">
+            <node concept="37vLTw" id="341WyjDjtbF" role="2Oq$k0">
+              <ref role="3cqZAo" node="341WyjDjsVc" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="341WyjDj2sc" role="2OqNvi">
+              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="341WyjDjtbZ" role="3cqZAp" />
+        <node concept="3cpWs8" id="341WyjDjttr" role="3cqZAp">
+          <node concept="3cpWsn" id="341WyjDjtts" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="341WyjDjttt" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="2YIFZM" id="341WyjDjttu" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="341WyjDjttv" role="37wK5m">
+                <ref role="3cqZAo" node="341WyjDj2rP" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="341WyjDjttw" role="37wK5m">
+                <property role="Xl_RC" value="location1.c : 10" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="341WyjDjttx" role="3cqZAp">
+          <node concept="2OqwBi" id="341WyjDjtty" role="3vwVQn">
+            <node concept="37vLTw" id="341WyjDjttz" role="2Oq$k0">
+              <ref role="3cqZAo" node="341WyjDjtts" resolve="r1" />
+            </node>
+            <node concept="liA8E" id="341WyjDjtt$" role="2OqNvi">
+              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="341WyjDjtnF" role="3cqZAp" />
+        <node concept="3cpWs8" id="341WyjDjtDB" role="3cqZAp">
+          <node concept="3cpWsn" id="341WyjDjtDC" role="3cpWs9">
+            <property role="TrG5h" value="r2" />
+            <node concept="3uibUv" id="341WyjDjtDD" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="2YIFZM" id="341WyjDjtDE" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="341WyjDjtDF" role="37wK5m">
+                <ref role="3cqZAo" node="341WyjDj2rP" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="341WyjDjtDG" role="37wK5m">
+                <property role="Xl_RC" value="location1.c : 12" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="341WyjDjtDH" role="3cqZAp">
+          <node concept="2OqwBi" id="341WyjDjtDI" role="3vwVQn">
+            <node concept="37vLTw" id="341WyjDjtDJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="341WyjDjtDC" resolve="r2" />
+            </node>
+            <node concept="liA8E" id="341WyjDjtDK" role="2OqNvi">
+              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

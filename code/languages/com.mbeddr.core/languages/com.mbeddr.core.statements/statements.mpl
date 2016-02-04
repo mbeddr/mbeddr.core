@@ -30,8 +30,6 @@
     <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
     <language id="ebb5e132-d298-4649-b320-b3f4d7f3acff" fqName="com.mbeddr.core.debug.blext" version="0" />
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="1" />
-    <language id="935bff03-e393-4547-a3a2-60335e0cad25" fqName="com.mbeddr.mpsutil.ccmenu" version="0" />
-    <language id="f92af8d7-1fae-4067-8109-17acf80f8e58" fqName="com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
     <language id="17566462-d837-4552-874c-64e45c10778a" fqName="com.mbeddr.mpsutil.compare.pattern" version="0" />
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" fqName="com.mbeddr.mpsutil.grammarcells" version="0" />
     <language id="b4f35ed8-45af-4efa-abe4-00ac26956e69" fqName="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />

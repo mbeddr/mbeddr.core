@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -57,6 +58,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -429,8 +431,9 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="CBMCAnalysisConfiguration" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="cbmc analysis configuration" />
+    <property role="34LRSv" value="Analysis Configuration" />
     <property role="1pbfSe" value="525590458" />
+    <property role="R4oN_" value="an analysis configuration contains multiple analyses" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
     <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
       <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
@@ -561,18 +564,37 @@
   <node concept="1TIwiD" id="fupCadgOM">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="AnalysisConfigItem" />
-    <property role="34LRSv" value="analysis configuration item" />
+    <property role="34LRSv" value="Analysis Configuration Item" />
     <property role="R4oN_" value="pointer to the analysis configuration" />
     <property role="1pbfSe" value="172263116" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6BJ5EqKuQm5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="configs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6BJ5EqKuQlv" resolve="CBMCAnalysisConfigurationRef" />
+    </node>
     <node concept="1TJgyj" id="7AXwte8Dbfu" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="config" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+      <node concept="asaX9" id="6BJ5EqKuQmh" role="lGtFl" />
+    </node>
+    <node concept="PrWs8" id="fupCadh9n" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7P$_wJpwSfc" resolve="IConfigurationItemWithImport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BJ5EqKuQlv">
+    <property role="1pbfSe" value="443186181" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="CBMCAnalysisConfigurationRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6BJ5EqKuQm0" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="config" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
-    </node>
-    <node concept="PrWs8" id="fupCadh9n" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:7P$_wJpwSfc" resolve="IConfigurationItemWithImport" />
     </node>
   </node>
 </model>

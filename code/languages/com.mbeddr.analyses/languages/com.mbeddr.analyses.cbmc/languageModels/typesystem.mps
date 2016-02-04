@@ -2,15 +2,15 @@
 <model ref="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -30,6 +30,7 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
+    <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -102,7 +103,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -2280,6 +2281,44 @@
     <node concept="1YaCAy" id="636FvLn07Z$" role="1YuTPh">
       <property role="TrG5h" value="ve" />
       <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6BJ5EqKyhi4">
+    <property role="TrG5h" value="check_AnalysisConfigItem" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <node concept="3clFbS" id="6BJ5EqKyhi5" role="18ibNy">
+      <node concept="3clFbJ" id="6BJ5EqKyhXi" role="3cqZAp">
+        <node concept="3clFbS" id="6BJ5EqKyhXj" role="3clFbx">
+          <node concept="2MkqsV" id="6BJ5EqKyi09" role="3cqZAp">
+            <node concept="Xl_RD" id="6BJ5EqKyi0r" role="2MkJ7o">
+              <property role="Xl_RC" value="at least one analysis configuration must be referenced" />
+            </node>
+            <node concept="1YBJjd" id="6BJ5EqKyi2a" role="2OEOjV">
+              <ref role="1YBMHb" node="6BJ5EqKyhi7" resolve="analysisConfigItem" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="6BJ5EqKyhSc" role="3clFbw">
+          <node concept="3cmrfG" id="6BJ5EqKyhV0" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="2OqwBi" id="6BJ5EqKyhxc" role="3uHU7B">
+            <node concept="2OqwBi" id="6BJ5EqKyhlq" role="2Oq$k0">
+              <node concept="1YBJjd" id="6BJ5EqKyhiF" role="2Oq$k0">
+                <ref role="1YBMHb" node="6BJ5EqKyhi7" resolve="analysisConfigItem" />
+              </node>
+              <node concept="2qgKlT" id="6BJ5EqKyhtV" role="2OqNvi">
+                <ref role="37wK5l" to="th2u:6BJ5EqKvGWn" resolve="getAllAnalysesConfigs" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="6BJ5EqKyhG$" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6BJ5EqKyhi7" role="1YuTPh">
+      <property role="TrG5h" value="analysisConfigItem" />
+      <ref role="1YaFvo" to="q5q6:fupCadgOM" resolve="AnalysisConfigItem" />
     </node>
   </node>
 </model>
