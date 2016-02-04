@@ -3153,6 +3153,23 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="27bNiCj8C_O" role="3cqZAp">
+          <node concept="3cpWsn" id="27bNiCj8C_R" role="3cpWs9">
+            <property role="TrG5h" value="size" />
+            <node concept="10Oyi0" id="27bNiCj8C_M" role="1tU5fm" />
+            <node concept="2OqwBi" id="27bNiCj8Dil" role="33vP2m">
+              <node concept="2OqwBi" id="27bNiCj8D6m" role="2Oq$k0">
+                <node concept="37vLTw" id="27bNiCj8D4U" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4D_91tBLRCZ" resolve="graph" />
+                </node>
+                <node concept="liA8E" id="27bNiCj8Da3" role="2OqNvi">
+                  <ref role="37wK5l" node="9NO9Tq8VPO" resolve="getAllNodes" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="27bNiCj8Dx5" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4D_91tBLCVH" role="3cqZAp" />
         <node concept="2$JKZl" id="4D_91tBMs8U" role="3cqZAp">
           <node concept="3clFbS" id="4D_91tBMs8W" role="2LFqv$">
@@ -3290,27 +3307,47 @@
         <node concept="3clFbH" id="7BT5P44tDEB" role="3cqZAp" />
         <node concept="3clFbJ" id="7BT5P44tFaC" role="3cqZAp">
           <node concept="3clFbS" id="7BT5P44tFaE" role="3clFbx">
-            <node concept="YS8fn" id="4D_91tBLAQ5" role="3cqZAp">
-              <node concept="2ShNRf" id="4D_91tBLAQz" role="YScLw">
-                <node concept="1pGfFk" id="4D_91tBLBZS" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
-                  <node concept="Xl_RD" id="4D_91tBLC0E" role="37wK5m">
-                    <property role="Xl_RC" value="Topological sorting is defined only on acyclic graphs! The input contains cycles." />
+            <node concept="3clFbJ" id="3FYfbA7e5bp" role="3cqZAp">
+              <node concept="3clFbS" id="3FYfbA7e5br" role="3clFbx">
+                <node concept="3cpWs6" id="3FYfbA7e5ey" role="3cqZAp">
+                  <node concept="2YIFZM" id="3FYfbA7e5MU" role="3cqZAk">
+                    <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+                    <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                    <node concept="16syzq" id="3FYfbA7e78h" role="3PaCim">
+                      <ref role="16sUi3" node="4D_91tBL_rv" resolve="T" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="3FYfbA7e5cc" role="3clFbw">
+                <ref role="3cqZAo" node="3FYfbA7e4Hk" resolve="silent" />
+              </node>
+              <node concept="9aQIb" id="3FYfbA7e7Iq" role="9aQIa">
+                <node concept="3clFbS" id="3FYfbA7e7Ir" role="9aQI4">
+                  <node concept="YS8fn" id="4D_91tBLAQ5" role="3cqZAp">
+                    <node concept="2ShNRf" id="4D_91tBLAQz" role="YScLw">
+                      <node concept="1pGfFk" id="4D_91tBLBZS" role="2ShVmc">
+                        <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                        <node concept="Xl_RD" id="4D_91tBLC0E" role="37wK5m">
+                          <property role="Xl_RC" value="Topological sorting is defined only on acyclic graphs! The input contains cycles." />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="7BT5P44tGTy" role="3clFbw">
-            <node concept="2OqwBi" id="7BT5P44tG2J" role="2Oq$k0">
-              <node concept="37vLTw" id="7BT5P44tFI5" role="2Oq$k0">
-                <ref role="3cqZAo" node="4D_91tBLRCZ" resolve="graph" />
+          <node concept="3y3z36" id="27bNiCj8Egv" role="3clFbw">
+            <node concept="2OqwBi" id="27bNiCj8F1j" role="3uHU7w">
+              <node concept="37vLTw" id="27bNiCj8ETg" role="2Oq$k0">
+                <ref role="3cqZAo" node="4D_91tBLChV" resolve="result" />
               </node>
-              <node concept="liA8E" id="7BT5P44tGND" role="2OqNvi">
-                <ref role="37wK5l" node="9NO9Tq8VPO" resolve="getAllNodes" />
-              </node>
+              <node concept="34oBXx" id="27bNiCj8Fjy" role="2OqNvi" />
             </node>
-            <node concept="3GX2aA" id="7BT5P44tLax" role="2OqNvi" />
+            <node concept="37vLTw" id="27bNiCj8Dzb" role="3uHU7B">
+              <ref role="3cqZAo" node="27bNiCj8C_R" resolve="size" />
+            </node>
           </node>
           <node concept="9aQIb" id="7BT5P44tMty" role="9aQIa">
             <node concept="3clFbS" id="7BT5P44tMtz" role="9aQI4">
@@ -3338,6 +3375,10 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="3FYfbA7e4Hk" role="3clF46">
+        <property role="TrG5h" value="silent" />
+        <node concept="10P_77" id="3FYfbA7e5ab" role="1tU5fm" />
+      </node>
       <node concept="16euLQ" id="4D_91tBL_rv" role="16eVyc">
         <property role="TrG5h" value="T" />
       </node>
@@ -3345,6 +3386,16 @@
         <node concept="TZ5HA" id="7BT5P44tOWd" role="TZ5H$">
           <node concept="1dT_AC" id="7BT5P44tOWe" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the topological sorting of the nodes of the given graph." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3FYfbA7ehUW" role="TZ5H$">
+          <node concept="1dT_AC" id="3FYfbA7ehUX" role="1dT_Ay">
+            <property role="1dT_AB" value="If silent is true, a possible cycle is swallowed and simply an empty list is returned, " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3FYfbA7ehVW" role="TZ5H$">
+          <node concept="1dT_AC" id="3FYfbA7ehVX" role="1dT_Ay">
+            <property role="1dT_AB" value="otherwise an Exception is thrown to indicate the cyclic input graph. " />
           </node>
         </node>
         <node concept="TUZQ0" id="7BT5P44tOWf" role="TUOzN">
@@ -3365,6 +3416,66 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4D_91tBL$tb" role="jymVt" />
+    <node concept="2YIFZL" id="3FYfbA7e8OO" role="jymVt">
+      <property role="TrG5h" value="computeTopologicalSorting" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3FYfbA7e8OP" role="3clF47">
+        <node concept="3cpWs6" id="3FYfbA7earb" role="3cqZAp">
+          <node concept="1rXfSq" id="3FYfbA7easo" role="3cqZAk">
+            <ref role="37wK5l" node="4D_91tBL_7M" resolve="computeTopologicalSorting" />
+            <node concept="37vLTw" id="3FYfbA7eau7" role="37wK5m">
+              <ref role="3cqZAo" node="3FYfbA7e8QB" resolve="_graph" />
+            </node>
+            <node concept="3clFbT" id="3FYfbA7eay1" role="37wK5m">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3FYfbA7e8Q$" role="1B3o_S" />
+      <node concept="_YKpA" id="3FYfbA7e8Q_" role="3clF45">
+        <node concept="16syzq" id="3FYfbA7e8QA" role="_ZDj9">
+          <ref role="16sUi3" node="3FYfbA7e8QG" resolve="T" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3FYfbA7e8QB" role="3clF46">
+        <property role="TrG5h" value="_graph" />
+        <node concept="3uibUv" id="3FYfbA7e8QC" role="1tU5fm">
+          <ref role="3uigEE" node="9NO9Tq8VKe" resolve="Graph" />
+          <node concept="16syzq" id="3FYfbA7e8QD" role="11_B2D">
+            <ref role="16sUi3" node="3FYfbA7e8QG" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="16euLQ" id="3FYfbA7e8QG" role="16eVyc">
+        <property role="TrG5h" value="T" />
+      </node>
+      <node concept="P$JXv" id="3FYfbA7e8QH" role="lGtFl">
+        <node concept="TZ5HA" id="3FYfbA7e8QI" role="TZ5H$">
+          <node concept="1dT_AC" id="3FYfbA7e8QJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the topological sorting of the nodes of the given graph." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3FYfbA7e8QK" role="TUOzN">
+          <property role="TUZQ4" value="the input graph" />
+          <node concept="zr_55" id="3FYfbA7e8QL" role="zr_5Q">
+            <ref role="zr_51" node="3FYfbA7e8QB" resolve="_graph" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3FYfbA7e8QM" role="TUOzN">
+          <property role="TUZQ4" value="the type parameter of the nodes in the graph" />
+          <node concept="zr_56" id="3FYfbA7e8QN" role="zr_5Q">
+            <ref role="zr_51" node="3FYfbA7e8QG" resolve="T" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3FYfbA7e8QO" role="x79VK">
+          <property role="x79VB" value="the nodes in the order of topological sorting" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3FYfbA7e4et" role="jymVt" />
     <node concept="3Tm1VV" id="59VTJR_XXJc" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="59VTJR_ZT1i">
