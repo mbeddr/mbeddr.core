@@ -234,9 +234,6 @@
       <node concept="m$_yB" id="60Ph1pcA2tC" role="m$_yh">
         <ref role="m$_yA" node="60Ph1pcA2qD" resolve="com.mbeddr.rcp.actions" />
       </node>
-      <node concept="m$_yC" id="pdbBRzdoCb" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
-      </node>
       <node concept="m$_yC" id="6bah82dOH6Y" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
