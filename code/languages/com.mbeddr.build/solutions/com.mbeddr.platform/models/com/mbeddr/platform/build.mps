@@ -9893,6 +9893,18 @@
               <ref role="3bR37D" node="5NpY9mnqa74" resolve="com.mbeddr.doc.aspect" />
             </node>
           </node>
+          <node concept="1SiIV0" id="lp9ZKwUWDD" role="3bR37C">
+            <node concept="3bR9La" id="lp9ZKwUWDE" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="lp9ZKwUWDF" role="3bR37C">
+            <node concept="3bR9La" id="lp9ZKwUWDG" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="5NpY9mnqtrM" role="2G$12L">
