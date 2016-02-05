@@ -20,6 +20,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
+    <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -194,6 +195,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
@@ -2938,26 +2940,26 @@
   </node>
   <node concept="312cEu" id="27Skbdzh4vB">
     <property role="TrG5h" value="InterpreterSorter" />
-    <node concept="312cEg" id="27Skbdzh4wS" role="jymVt">
+    <node concept="312cEg" id="3e2EgMIbaWS" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="sorter" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="27Skbdzh4vN" role="1B3o_S" />
-      <node concept="3uibUv" id="27Skbdzh4vV" role="1tU5fm">
-        <ref role="3uigEE" to="7wpd:5GUwywcuOJ_" resolve="TopologicalSorter" />
-        <node concept="3Tqbb2" id="27Skbdzh4w8" role="11_B2D">
+      <property role="TrG5h" value="dependencyGraph" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3e2EgMIbaFI" role="1tU5fm">
+        <ref role="3uigEE" to="gtp9:9NO9Tq8VKe" resolve="Graph" />
+        <node concept="3Tqbb2" id="3e2EgMIbaWq" role="11_B2D">
           <ref role="ehGHo" to="3673:7ueT7DHTBbE" resolve="Interpreter" />
         </node>
       </node>
-      <node concept="2ShNRf" id="27Skbdzh4yz" role="33vP2m">
-        <node concept="1pGfFk" id="27Skbdzh4Oh" role="2ShVmc">
-          <ref role="37wK5l" to="7wpd:5GUwywcuOJK" resolve="TopologicalSorter" />
-          <node concept="3Tqbb2" id="27Skbdzh4Ri" role="1pMfVU">
+      <node concept="2ShNRf" id="3e2EgMIbbfc" role="33vP2m">
+        <node concept="1pGfFk" id="3e2EgMIbbdh" role="2ShVmc">
+          <ref role="37wK5l" to="gtp9:9NO9Tq8VKB" resolve="Graph" />
+          <node concept="3Tqbb2" id="3e2EgMIbbdi" role="1pMfVU">
             <ref role="ehGHo" to="3673:7ueT7DHTBbE" resolve="Interpreter" />
           </node>
         </node>
       </node>
+      <node concept="3Tmbuc" id="3e2EgMIbbgn" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="27Skbdzh4VB" role="jymVt" />
     <node concept="3clFbW" id="27Skbdzh4Zw" role="jymVt">
@@ -3200,17 +3202,17 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="27SkbdyPWRf" role="3cqZAp">
-              <node concept="2OqwBi" id="27SkbdyPWSZ" role="3clFbG">
-                <node concept="37vLTw" id="27SkbdyPWRe" role="2Oq$k0">
-                  <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+            <node concept="3clFbF" id="3e2EgMIbeNj" role="3cqZAp">
+              <node concept="2OqwBi" id="3e2EgMIbeQ4" role="3clFbG">
+                <node concept="37vLTw" id="3e2EgMIbeNh" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3e2EgMIbaWS" resolve="dependencyGraph" />
                 </node>
-                <node concept="liA8E" id="27SkbdyPXIY" role="2OqNvi">
-                  <ref role="37wK5l" to="7wpd:5GUwywcuOJP" resolve="addDependency" />
-                  <node concept="37vLTw" id="27SkbdzjEPh" role="37wK5m">
+                <node concept="liA8E" id="3e2EgMIbeT9" role="2OqNvi">
+                  <ref role="37wK5l" to="gtp9:9NO9Tq8VM$" resolve="addEdge" />
+                  <node concept="37vLTw" id="3e2EgMIbeVi" role="37wK5m">
                     <ref role="3cqZAo" node="27SkbdzjuoG" resolve="interpreter" />
                   </node>
-                  <node concept="37vLTw" id="27SkbdziP_N" role="37wK5m">
+                  <node concept="37vLTw" id="3e2EgMIbeXQ" role="37wK5m">
                     <ref role="3cqZAo" node="27SkbdziP_H" resolve="target" />
                   </node>
                 </node>
@@ -3265,17 +3267,17 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="27SkbdyQqLA" role="3cqZAp">
-                <node concept="2OqwBi" id="27SkbdyQqNm" role="3clFbG">
-                  <node concept="37vLTw" id="27SkbdyQqL_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+              <node concept="3clFbF" id="3e2EgMIbf1t" role="3cqZAp">
+                <node concept="2OqwBi" id="3e2EgMIbf4e" role="3clFbG">
+                  <node concept="37vLTw" id="3e2EgMIbf1r" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3e2EgMIbaWS" resolve="dependencyGraph" />
                   </node>
-                  <node concept="liA8E" id="27SkbdyQreM" role="2OqNvi">
-                    <ref role="37wK5l" to="7wpd:5GUwywcuOJP" resolve="addDependency" />
-                    <node concept="37vLTw" id="27SkbdziP_P" role="37wK5m">
+                  <node concept="liA8E" id="3e2EgMIbf9y" role="2OqNvi">
+                    <ref role="37wK5l" to="gtp9:9NO9Tq8VM$" resolve="addEdge" />
+                    <node concept="37vLTw" id="3e2EgMIbfbc" role="37wK5m">
                       <ref role="3cqZAo" node="27SkbdziP_H" resolve="target" />
                     </node>
-                    <node concept="37vLTw" id="27SkbdzjKod" role="37wK5m">
+                    <node concept="37vLTw" id="3e2EgMIbfeq" role="37wK5m">
                       <ref role="3cqZAo" node="27SkbdzjuoG" resolve="interpreter" />
                     </node>
                   </node>
@@ -3285,14 +3287,14 @@
           </node>
           <node concept="9aQIb" id="27SkbdyTX9O" role="9aQIa">
             <node concept="3clFbS" id="27SkbdyTX9P" role="9aQI4">
-              <node concept="3clFbF" id="27SkbdyTXnv" role="3cqZAp">
-                <node concept="2OqwBi" id="27SkbdyTXpf" role="3clFbG">
-                  <node concept="37vLTw" id="27SkbdyTXnu" role="2Oq$k0">
-                    <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+              <node concept="3clFbF" id="3e2EgMIbfhx" role="3cqZAp">
+                <node concept="2OqwBi" id="3e2EgMIbfjR" role="3clFbG">
+                  <node concept="37vLTw" id="3e2EgMIbfhv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3e2EgMIbaWS" resolve="dependencyGraph" />
                   </node>
-                  <node concept="liA8E" id="27SkbdyTXOF" role="2OqNvi">
-                    <ref role="37wK5l" to="7wpd:5GUwywcuOKZ" resolve="addNode" />
-                    <node concept="37vLTw" id="27SkbdzjKXW" role="37wK5m">
+                  <node concept="liA8E" id="3e2EgMIbfpb" role="2OqNvi">
+                    <ref role="37wK5l" to="gtp9:9NO9Tq8VL5" resolve="addNode" />
+                    <node concept="37vLTw" id="3e2EgMIbfrk" role="37wK5m">
                       <ref role="3cqZAo" node="27SkbdzjuoG" resolve="interpreter" />
                     </node>
                   </node>
@@ -3324,14 +3326,18 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="27SkbdziGw8" role="3clF47">
-        <node concept="3cpWs6" id="27SkbdziRwc" role="3cqZAp">
-          <node concept="2OqwBi" id="27SkbdziST8" role="3cqZAk">
-            <node concept="37vLTw" id="27SkbdziSz7" role="2Oq$k0">
-              <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+        <node concept="3cpWs6" id="3e2EgMIbbQ2" role="3cqZAp">
+          <node concept="2OqwBi" id="3e2EgMIbcGV" role="3cqZAk">
+            <node concept="2OqwBi" id="3e2EgMIbcb0" role="2Oq$k0">
+              <node concept="37vLTw" id="3e2EgMIbc0j" role="2Oq$k0">
+                <ref role="3cqZAo" node="3e2EgMIbaWS" resolve="dependencyGraph" />
+              </node>
+              <node concept="liA8E" id="3e2EgMIbcmO" role="2OqNvi">
+                <ref role="37wK5l" to="gtp9:9NO9Tq8VPO" resolve="getAllNodes" />
+              </node>
             </node>
-            <node concept="liA8E" id="27SkbdziUuJ" role="2OqNvi">
-              <ref role="37wK5l" to="7wpd:5GUwywcuOKN" resolve="contains" />
-              <node concept="37vLTw" id="27SkbdziW$Z" role="37wK5m">
+            <node concept="3JPx81" id="3e2EgMIbd7m" role="2OqNvi">
+              <node concept="37vLTw" id="3e2EgMIbdj_" role="25WWJ7">
                 <ref role="3cqZAo" node="27SkbdziIea" resolve="interpreter" />
               </node>
             </node>
@@ -3354,13 +3360,15 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="27SkbdzhW_r" role="3clF47">
-        <node concept="3cpWs6" id="27SkbdzhYVq" role="3cqZAp">
-          <node concept="2OqwBi" id="27Skbdzi00V" role="3cqZAk">
-            <node concept="37vLTw" id="27SkbdzhZoF" role="2Oq$k0">
-              <ref role="3cqZAo" node="27Skbdzh4wS" resolve="sorter" />
+        <node concept="3cpWs6" id="3e2EgMIbdPu" role="3cqZAp">
+          <node concept="2YIFZM" id="3e2EgMIbed5" role="3cqZAk">
+            <ref role="1Pybhc" to="gtp9:59VTJR_XXJb" resolve="GraphUtil" />
+            <ref role="37wK5l" to="gtp9:4D_91tBL_7M" resolve="computeTopologicalSorting" />
+            <node concept="37vLTw" id="3e2EgMIbeps" role="37wK5m">
+              <ref role="3cqZAo" node="3e2EgMIbaWS" resolve="dependencyGraph" />
             </node>
-            <node concept="liA8E" id="27Skbdzi0tp" role="2OqNvi">
-              <ref role="37wK5l" to="7wpd:5GUwywcuOLs" resolve="sort" />
+            <node concept="3clFbT" id="3FYfbA7eej3" role="37wK5m">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
