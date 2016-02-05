@@ -1764,26 +1764,51 @@
                     <node concept="2jxLKc" id="75NPjE_J7zo" role="1tU5fm" />
                   </node>
                   <node concept="3clFbS" id="75NPjE_J7zq" role="Jncv$">
+                    <node concept="3cpWs8" id="4VkqLLeyIyI" role="3cqZAp">
+                      <node concept="3cpWsn" id="4VkqLLeyIyJ" role="3cpWs9">
+                        <property role="TrG5h" value="evaluateStatically" />
+                        <node concept="3uibUv" id="4VkqLLeyIwZ" role="1tU5fm">
+                          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                        </node>
+                        <node concept="2OqwBi" id="4VkqLLeyIyK" role="33vP2m">
+                          <node concept="Jnkvi" id="4VkqLLeyIyL" role="2Oq$k0">
+                            <ref role="1M0zk5" node="75NPjE_J7zn" resolve="nl" />
+                          </node>
+                          <node concept="2qgKlT" id="4VkqLLeyIyM" role="2OqNvi">
+                            <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="75NPjE_JedW" role="3cqZAp">
                       <node concept="3clFbS" id="75NPjE_JedX" role="3clFbx">
                         <node concept="3cpWs6" id="75NPjE_JfZ4" role="3cqZAp">
                           <node concept="10Nm6u" id="75NPjE_Jg5a" role="3cqZAk" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="75NPjE_Jfd6" role="3clFbw">
-                        <node concept="2OqwBi" id="75NPjE_Jej$" role="2Oq$k0">
-                          <node concept="Jnkvi" id="75NPjE_Jeeh" role="2Oq$k0">
-                            <ref role="1M0zk5" node="75NPjE_J7zn" resolve="nl" />
+                      <node concept="22lmx$" id="4VkqLLeyI8s" role="3clFbw">
+                        <node concept="2OqwBi" id="4VkqLLeyILH" role="3uHU7w">
+                          <node concept="37vLTw" id="4VkqLLeyIKt" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4VkqLLeyIyJ" resolve="evaluateStatically" />
                           </node>
-                          <node concept="2qgKlT" id="75NPjE_Pj8a" role="2OqNvi">
-                            <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+                          <node concept="liA8E" id="4VkqLLeyJ8X" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                            <node concept="10M0yZ" id="4VkqLLeyJar" role="37wK5m">
+                              <ref role="1PxDUh" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                              <ref role="3cqZAo" to="xlxw:~BigDecimal.ZERO" resolve="ZERO" />
+                            </node>
                           </node>
                         </node>
-                        <node concept="liA8E" id="75NPjE_N05a" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="10M0yZ" id="75NPjE_Plws" role="37wK5m">
-                            <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
-                            <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
+                        <node concept="2OqwBi" id="75NPjE_Jfd6" role="3uHU7B">
+                          <node concept="37vLTw" id="4VkqLLeyIyN" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4VkqLLeyIyJ" resolve="evaluateStatically" />
+                          </node>
+                          <node concept="liA8E" id="75NPjE_N05a" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                            <node concept="10M0yZ" id="75NPjE_Plws" role="37wK5m">
+                              <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
+                              <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
+                            </node>
                           </node>
                         </node>
                       </node>
