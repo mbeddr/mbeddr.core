@@ -36,7 +36,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="_oDvx5U56v">
-    <ref role="1XX52x" to="ybok:_oDvx5U51b" resolve="EmitNestStatement" />
+    <ref role="1XX52x" to="ybok:_oDvx5U51b" resolve="EmitInlineStatement" />
     <node concept="3EZMnI" id="_oDvx5U56$" role="2wV5jI">
       <node concept="l2Vlx" id="_oDvx5U56_" role="2iSdaV" />
       <node concept="3F0ifn" id="_oDvx5U56x" role="3EZMnx">
@@ -47,7 +47,7 @@
         <ref role="1NtTu8" to="ybok:_oDvx5U56o" />
       </node>
       <node concept="3F0ifn" id="_oDvx5U72K" role="3EZMnx">
-        <property role="3F0ifm" value="with inline point" />
+        <property role="3F0ifm" value="with entry point" />
         <ref role="1k5W1q" to="tp45:hz_DuTG" resolve="Instruction" />
       </node>
       <node concept="3F1sOY" id="_oDvx5U7$W" role="3EZMnx">
@@ -56,11 +56,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="2U8JvBXrt1o">
-    <ref role="1XX52x" to="ybok:2U8JvBXrt1f" resolve="EmitNestPointStatement" />
+    <ref role="1XX52x" to="ybok:2U8JvBXrt1f" resolve="EmitEntryPointStatement" />
     <node concept="3EZMnI" id="2U8JvBXrt1u" role="2wV5jI">
       <node concept="l2Vlx" id="2U8JvBXrt1v" role="2iSdaV" />
       <node concept="3F0ifn" id="2U8JvBXrt1q" role="3EZMnx">
-        <property role="3F0ifm" value="inline point" />
+        <property role="3F0ifm" value="entry point" />
         <ref role="1k5W1q" to="tp45:hz_DuTG" resolve="Instruction" />
       </node>
       <node concept="3F1sOY" id="2U8JvBXrt1H" role="3EZMnx">

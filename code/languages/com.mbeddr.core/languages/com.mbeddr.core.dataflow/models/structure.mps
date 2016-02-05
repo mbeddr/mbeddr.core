@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" />
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -55,9 +54,9 @@
   </node>
   <node concept="1TIwiD" id="2U8JvBXrt1f">
     <property role="1pbfSe" value="737578568" />
-    <property role="TrG5h" value="EmitInlinePointStatement" />
-    <property role="34LRSv" value="inline point" />
-    <property role="R4oN_" value="inline point" />
+    <property role="TrG5h" value="EmitEntryPointStatement" />
+    <property role="34LRSv" value="entry point" />
+    <property role="R4oN_" value="entry point" />
     <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
     <node concept="1TJgyj" id="2U8JvBXrt1g" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -147,7 +147,7 @@
       </concept>
     </language>
     <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
-      <concept id="3353138803973673039" name="com.mbeddr.core.dataflow.structure.EmitInlinePointStatement" flags="ng" index="3jTmQQ">
+      <concept id="3353138803973673039" name="com.mbeddr.core.dataflow.structure.EmitEntryPointStatement" flags="ng" index="3jTmQQ">
         <child id="3353138803973673040" name="point" index="3jTmQD" />
       </concept>
       <concept id="2090780709295708596" name="com.mbeddr.core.dataflow.structure.IsContextSensitiveExpression" flags="ng" index="1lNaxe" />
@@ -272,30 +272,32 @@
       <node concept="3clFbS" id="2dIde7W5kwc" role="2VODD2">
         <node concept="3clFbJ" id="1O3WvD8O6xr" role="3cqZAp">
           <node concept="3clFbS" id="1O3WvD8O6xt" role="3clFbx">
-            <node concept="3clFbJ" id="1O3WvD8N$fa" role="3cqZAp">
-              <node concept="3clFbS" id="1O3WvD8N$fc" role="3clFbx">
-                <node concept="3jTmQQ" id="1O3WvD8N_2w" role="3cqZAp">
-                  <node concept="3__QtB" id="1O3WvD8N_40" role="3jTmQD" />
-                </node>
-              </node>
-              <node concept="3clFbC" id="1O3WvD8N_0N" role="3clFbw">
-                <node concept="10Nm6u" id="1O3WvD8N_1h" role="3uHU7w" />
-                <node concept="2OqwBi" id="1O3WvD8N$og" role="3uHU7B">
-                  <node concept="3__QtB" id="1O3WvD8N$hJ" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1O3WvD8N$PD" role="2OqNvi">
-                    <node concept="1xMEDy" id="1O3WvD8N$PF" role="1xVPHs">
-                      <node concept="chp4Y" id="1O3WvD8N$Qz" role="ri$Ld">
-                        <ref role="cht4Q" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-                      </node>
+            <node concept="3jTmQQ" id="1O3WvD8N_2w" role="3cqZAp">
+              <node concept="3__QtB" id="1O3WvD8N_40" role="3jTmQD" />
+            </node>
+          </node>
+          <node concept="1Wc70l" id="18PvkuO$LFv" role="3clFbw">
+            <node concept="1lNaxe" id="1O3WvD8O6zj" role="3uHU7B" />
+            <node concept="3clFbC" id="18PvkuO$LGq" role="3uHU7w">
+              <node concept="10Nm6u" id="18PvkuO$LGr" role="3uHU7w" />
+              <node concept="2OqwBi" id="18PvkuO$LGs" role="3uHU7B">
+                <node concept="3__QtB" id="18PvkuO$LGt" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="18PvkuO$LGu" role="2OqNvi">
+                  <node concept="1xMEDy" id="18PvkuO$LGv" role="1xVPHs">
+                    <node concept="chp4Y" id="18PvkuO$LGw" role="ri$Ld">
+                      <ref role="cht4Q" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1lNaxe" id="1O3WvD8O6zj" role="3clFbw" />
+          <node concept="9aQIb" id="18PvkuO$LIN" role="9aQIa">
+            <node concept="3clFbS" id="18PvkuO$LIO" role="9aQI4">
+              <node concept="3_DlnG" id="2dIde7W5kwd" role="3cqZAp" />
+            </node>
+          </node>
         </node>
-        <node concept="3_DlnG" id="2dIde7W5kwd" role="3cqZAp" />
         <node concept="2Gpval" id="2dIde7W5kwf" role="3cqZAp">
           <node concept="2GrKxI" id="2dIde7W5kwg" role="2Gsz3X">
             <property role="TrG5h" value="statement" />
