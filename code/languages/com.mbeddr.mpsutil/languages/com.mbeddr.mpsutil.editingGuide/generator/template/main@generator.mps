@@ -64,10 +64,14 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1167088157977" name="createRootRule" index="2VS0gm" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
@@ -135,6 +139,9 @@
   </registry>
   <node concept="bUwia" id="3p1cdQ7_d$V">
     <property role="TrG5h" value="main" />
+    <node concept="aNPBN" id="4TMjSvbH64S" role="aQYdv">
+      <ref role="aOQi4" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
+    </node>
     <node concept="3aamgX" id="4TMjSvbDohp" role="3acgRq">
       <ref role="30HIoZ" to="k8go:3p1cdQ7_d_v" resolve="MonitorFunction" />
       <node concept="1Koe21" id="4TMjSvbDoht" role="1lVwrX">
