@@ -71,6 +71,12 @@
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -178,6 +184,7 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -257,15 +264,36 @@
         <ref role="1NtTu8" to="k8go:3p1cdQ7_dA3" />
       </node>
       <node concept="3F0ifn" id="3p1cdQ7_pJt" role="3EZMnx" />
-      <node concept="s8t4o" id="5h2rxDjXT82" role="3EZMnx">
-        <ref role="28F8cf" to="k8go:3p1cdQ7_d$W" resolve="Task" />
-        <node concept="s8sZD" id="5h2rxDjXT85" role="sbcd9">
-          <node concept="3clFbS" id="5h2rxDjXT86" role="2VODD2">
-            <node concept="3clFbF" id="4TMjSvbGfnd" role="3cqZAp">
-              <node concept="2OqwBi" id="4TMjSvbGfq7" role="3clFbG">
-                <node concept="pncrf" id="4TMjSvbGfnc" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4TMjSvbGfyg" role="2OqNvi">
-                  <ref role="37wK5l" to="l4gp:4TMjSvbG95v" resolve="getCurrentTask" />
+      <node concept="1QoScp" id="4TMjSvbHqf$" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="4TMjSvbHqfB" role="3e4ffs">
+          <node concept="3clFbS" id="4TMjSvbHqfD" role="2VODD2">
+            <node concept="3clFbF" id="4TMjSvbHqjp" role="3cqZAp">
+              <node concept="2OqwBi" id="4TMjSvbHqqB" role="3clFbG">
+                <node concept="2OqwBi" id="4TMjSvbHqjr" role="2Oq$k0">
+                  <node concept="pncrf" id="4TMjSvbHqjs" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="4TMjSvbHqjt" role="2OqNvi">
+                    <ref role="37wK5l" to="l4gp:4TMjSvbG95v" resolve="getCurrentTask" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="4TMjSvbHqz6" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="4TMjSvbHqQp" role="1QoVPY">
+          <property role="3F0ifm" value="Fertig!" />
+        </node>
+        <node concept="s8t4o" id="4TMjSvbHqGr" role="1QoS34">
+          <ref role="28F8cf" to="k8go:3p1cdQ7_d$W" resolve="Task" />
+          <node concept="s8sZD" id="4TMjSvbHqGs" role="sbcd9">
+            <node concept="3clFbS" id="4TMjSvbHqGt" role="2VODD2">
+              <node concept="3clFbF" id="4TMjSvbHqGu" role="3cqZAp">
+                <node concept="2OqwBi" id="4TMjSvbHqGv" role="3clFbG">
+                  <node concept="pncrf" id="4TMjSvbHqGw" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="4TMjSvbHqGx" role="2OqNvi">
+                    <ref role="37wK5l" to="l4gp:4TMjSvbG95v" resolve="getCurrentTask" />
+                  </node>
                 </node>
               </node>
             </node>
