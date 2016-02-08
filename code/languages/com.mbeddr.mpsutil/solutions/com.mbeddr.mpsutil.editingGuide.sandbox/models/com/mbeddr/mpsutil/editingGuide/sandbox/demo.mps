@@ -146,7 +146,7 @@
     </language>
   </registry>
   <node concept="2LPuAz" id="3p1cdQ7_M87">
-    <property role="TrG5h" value="pDemo" />
+    <property role="TrG5h" value="Demo" />
     <node concept="2LPuBx" id="3p1cdQ7_M88" role="2LPuAy">
       <property role="TrG5h" value="Deletion" />
       <node concept="19SGf9" id="3p1cdQ7_M89" role="2LPuBy">
