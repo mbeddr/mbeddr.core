@@ -84,9 +84,13 @@
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
@@ -138,6 +142,9 @@
       <node concept="2Q9FjX" id="Kk0nz9_Xpp" role="2Q9FjI" />
     </node>
     <node concept="3yF7LM" id="5ngFs$3StuX" role="2Q9xDr" />
+    <node concept="12mU2y" id="5B69dDbeJBd" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJBe" role="3GpDut" />
+    </node>
     <node concept="2eOfOl" id="Kk0nz9_Xpq" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="ExportedSM" />

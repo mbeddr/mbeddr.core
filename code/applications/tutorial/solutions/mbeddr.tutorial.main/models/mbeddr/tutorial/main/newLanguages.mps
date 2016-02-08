@@ -2,21 +2,21 @@
 <model ref="r:7a08db64-31ae-45a6-9e47-2cee790d5f4e(mbeddr.tutorial.main.newLanguages)">
   <persistence version="9" />
   <languages>
-    <use id="16ff087a-23cd-49b8-9c5b-a2c20cea9d3e" name="mbeddr.tutorial.heap" version="0" />
-    <use id="32128dbe-9db6-4d05-9eaa-43601c29f276" name="mbeddr.tutorial.foreach" version="0" />
-    <use id="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602" name="mbeddr.tutorial.blocks" version="0" />
-    <use id="a577a05d-67ad-41db-9547-6e5f0730b85d" name="mbeddr.tutorial.osconfig" version="0" />
-    <use id="ce2335b7-fcfd-403e-8ace-08dd457fd818" name="mbeddr.tutorial.osconfig.cimpl" version="0" />
-    <use id="973c8be0-8526-4588-aca6-92bcbb701b50" name="mbeddr.tutotial.osconfig.memory" version="0" />
-    <use id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" name="mbeddr.tutorial.vectors" version="0" />
-    <use id="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c" name="mbeddr.tutorial.smtrigger" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="0" />
-    <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
-    <use id="4930e34b-b776-4ccb-b2ff-c6f31789e126" name="mbeddr.tutorial.extreqref" version="0" />
-    <use id="8cb5ab9f-a2c3-418b-a67c-c5690ef7361b" name="mbeddr.tutorial.layers" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="0" />
-    <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
+    <use id="16ff087a-23cd-49b8-9c5b-a2c20cea9d3e" name="mbeddr.tutorial.heap" version="-1" />
+    <use id="32128dbe-9db6-4d05-9eaa-43601c29f276" name="mbeddr.tutorial.foreach" version="-1" />
+    <use id="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602" name="mbeddr.tutorial.blocks" version="-1" />
+    <use id="a577a05d-67ad-41db-9547-6e5f0730b85d" name="mbeddr.tutorial.osconfig" version="-1" />
+    <use id="ce2335b7-fcfd-403e-8ace-08dd457fd818" name="mbeddr.tutorial.osconfig.cimpl" version="-1" />
+    <use id="973c8be0-8526-4588-aca6-92bcbb701b50" name="mbeddr.tutotial.osconfig.memory" version="-1" />
+    <use id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" name="mbeddr.tutorial.vectors" version="-1" />
+    <use id="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c" name="mbeddr.tutorial.smtrigger" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
+    <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="-1" />
+    <use id="4930e34b-b776-4ccb-b2ff-c6f31789e126" name="mbeddr.tutorial.extreqref" version="-1" />
+    <use id="8cb5ab9f-a2c3-418b-a67c-c5690ef7361b" name="mbeddr.tutorial.layers" version="-1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
@@ -340,9 +340,13 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="a577a05d-67ad-41db-9547-6e5f0730b85d" name="mbeddr.tutorial.osconfig">
       <concept id="7977993180520290853" name="mbeddr.tutorial.osconfig.structure.OSConfig" flags="ng" index="BOhMy">
@@ -1046,6 +1050,9 @@
       <property role="3yF7Mc" value="true" />
     </node>
     <node concept="2eh4Hv" id="7FOMyx2$xyK" role="2Q9xDr" />
+    <node concept="12mU2y" id="1U5CTQBq1hr" role="2Q9xDr">
+      <node concept="3GpDuo" id="1U5CTQBq1hs" role="3GpDut" />
+    </node>
   </node>
   <node concept="N3F5e" id="zSFqGmbqdm">
     <property role="TrG5h" value="Main" />

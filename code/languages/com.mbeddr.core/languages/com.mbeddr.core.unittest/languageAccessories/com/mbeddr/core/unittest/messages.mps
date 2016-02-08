@@ -2322,7 +2322,7 @@
     <node concept="1CU$1Q" id="2y8cGnjUbe_" role="2OODSX" />
   </node>
   <node concept="N3F5e" id="44MAav6D2s">
-    <property role="TrG5h" value="Unittest_Helper_Default" />
+    <property role="TrG5h" value="Unittest_Helper_Isolated" />
     <node concept="N3Fnx" id="4DjlAm4LY2K" role="N3F5h">
       <property role="TrG5h" value="run_tests" />
       <property role="2OOxQR" value="true" />
@@ -3187,7 +3187,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="44MAav6Nkc">
-    <property role="TrG5h" value="Unittest_Helper_Windows" />
+    <property role="TrG5h" value="Unittest_Helper_NonIsolated" />
     <node concept="N3Fnx" id="44MAav6Nkd" role="N3F5h">
       <property role="TrG5h" value="run_tests" />
       <property role="2OOxQR" value="true" />

@@ -119,9 +119,13 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -361,9 +365,6 @@
           </node>
         </node>
         <node concept="2N2KuS" id="7halHeUxTAm" role="3XIRFZ">
-          <node concept="3TlMh9" id="7halHeUxTBM" role="2N2GHh">
-            <property role="2hmy$m" value="10" />
-          </node>
           <node concept="2qmXGp" id="7halHeUxTAO" role="2N2GHg">
             <node concept="1E4Tgc" id="1Nl0v8EKcu6" role="1ESnxz">
               <ref role="1E4Tge" node="1JA5qgmxn1Z" resolve="b" />
@@ -371,6 +372,9 @@
             <node concept="3ZVu4v" id="7halHeUxTAQ" role="1_9fRO">
               <ref role="3ZVs_2" node="1JA5qgmxngO" resolve="iu1" />
             </node>
+          </node>
+          <node concept="3TlMh9" id="7halHeUxTBM" role="2N2GHh">
+            <property role="2hmy$m" value="10" />
           </node>
         </node>
         <node concept="3XISUE" id="7halHeUxTHw" role="3XIRFZ" />
@@ -402,6 +406,9 @@
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgvH" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgvI" role="2Q9FjI" />
+    </node>
+    <node concept="12mU2y" id="3mKW6ZYeYtr" role="2Q9xDr">
+      <node concept="3GpDuo" id="3mKW6ZYeYts" role="3GpDut" />
     </node>
   </node>
 </model>
