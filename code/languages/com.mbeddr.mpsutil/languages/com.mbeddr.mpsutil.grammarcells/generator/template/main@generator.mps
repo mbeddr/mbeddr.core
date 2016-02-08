@@ -14146,52 +14146,25 @@
                                                 <node concept="3Tqbb2" id="mEdliwv40O" role="1tU5fm">
                                                   <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
                                                 </node>
-                                                <node concept="2OqwBi" id="mEdliwv452" role="33vP2m">
-                                                  <node concept="2OqwBi" id="mEdliwv453" role="2Oq$k0">
-                                                    <node concept="37vLTw" id="mEdliwv454" role="2Oq$k0">
-                                                      <ref role="3cqZAo" node="4qdNcH$4x0u" resolve="newNode" />
-                                                    </node>
-                                                    <node concept="z$bX8" id="mEdliwv455" role="2OqNvi" />
+                                                <node concept="2YIFZM" id="2AjT0YRHx4t" role="33vP2m">
+                                                  <ref role="37wK5l" to="czm:420g0gW2m0h" resolve="findRootExpression" />
+                                                  <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                                                  <node concept="37vLTw" id="2AjT0YRHx7L" role="37wK5m">
+                                                    <ref role="3cqZAo" node="4qdNcH$4x0u" resolve="newNode" />
                                                   </node>
-                                                  <node concept="1z4cxt" id="mEdliwv456" role="2OqNvi">
-                                                    <node concept="1bVj0M" id="mEdliwv457" role="23t8la">
-                                                      <node concept="3clFbS" id="mEdliwv458" role="1bW5cS">
-                                                        <node concept="3clFbF" id="mEdliwv459" role="3cqZAp">
-                                                          <node concept="3fqX7Q" id="mEdliwv5l_" role="3clFbG">
-                                                            <node concept="2OqwBi" id="mEdliwv5lB" role="3fr31v">
-                                                              <node concept="2OqwBi" id="mEdliwv5lC" role="2Oq$k0">
-                                                                <node concept="37vLTw" id="mEdliwv5lD" role="2Oq$k0">
-                                                                  <ref role="3cqZAo" node="mEdliwv45m" resolve="it" />
-                                                                </node>
-                                                                <node concept="1mfA1w" id="mEdliwv5lE" role="2OqNvi" />
-                                                              </node>
-                                                              <node concept="1mIQ4w" id="mEdliwv5lF" role="2OqNvi">
-                                                                <node concept="25Kdxt" id="mEdliwv5lG" role="cj9EA">
-                                                                  <node concept="2OqwBi" id="mEdliwv5lH" role="25KhWn">
-                                                                    <node concept="2OqwBi" id="mEdliwv5lI" role="2Oq$k0">
-                                                                      <node concept="2JrnkZ" id="mEdliwv5lJ" role="2Oq$k0">
-                                                                        <node concept="37vLTw" id="mEdliwv5lK" role="2JrQYb">
-                                                                          <ref role="3cqZAo" node="4qdNcH$4x0u" resolve="newNode" />
-                                                                        </node>
-                                                                      </node>
-                                                                      <node concept="liA8E" id="mEdliwv5lL" role="2OqNvi">
-                                                                        <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
-                                                                      </node>
-                                                                    </node>
-                                                                    <node concept="liA8E" id="mEdliwv5lM" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
-                                                                    </node>
-                                                                  </node>
-                                                                </node>
-                                                              </node>
-                                                            </node>
-                                                          </node>
+                                                  <node concept="2OqwBi" id="mEdliwv5lH" role="37wK5m">
+                                                    <node concept="2OqwBi" id="mEdliwv5lI" role="2Oq$k0">
+                                                      <node concept="2JrnkZ" id="mEdliwv5lJ" role="2Oq$k0">
+                                                        <node concept="37vLTw" id="mEdliwv5lK" role="2JrQYb">
+                                                          <ref role="3cqZAo" node="4qdNcH$4x0u" resolve="newNode" />
                                                         </node>
                                                       </node>
-                                                      <node concept="Rh6nW" id="mEdliwv45m" role="1bW2Oz">
-                                                        <property role="TrG5h" value="it" />
-                                                        <node concept="2jxLKc" id="mEdliwv45n" role="1tU5fm" />
+                                                      <node concept="liA8E" id="mEdliwv5lL" role="2OqNvi">
+                                                        <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
                                                       </node>
+                                                    </node>
+                                                    <node concept="liA8E" id="mEdliwv5lM" role="2OqNvi">
+                                                      <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                                                     </node>
                                                   </node>
                                                 </node>
