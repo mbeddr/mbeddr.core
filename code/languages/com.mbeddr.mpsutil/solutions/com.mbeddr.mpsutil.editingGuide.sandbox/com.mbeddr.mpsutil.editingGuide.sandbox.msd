@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.editingGuide.sandbox" uuid="5f13a59b-6e8d-425f-8111-e37060bc8864" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.editingGuide.sandbox" uuid="5f13a59b-6e8d-425f-8111-e37060bc8864" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
