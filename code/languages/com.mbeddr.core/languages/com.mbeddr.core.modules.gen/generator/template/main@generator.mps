@@ -2267,6 +2267,68 @@
             <node concept="3cpWs6" id="59Urx6GCkPI" role="3cqZAp" />
           </node>
         </node>
+        <node concept="3clFbJ" id="2ZHlC003bWJ" role="3cqZAp">
+          <node concept="1Wc70l" id="2ZHlC003bWK" role="3clFbw">
+            <node concept="2OqwBi" id="2ZHlC003bWM" role="3uHU7B">
+              <node concept="2OqwBi" id="2ZHlC003bWN" role="2Oq$k0">
+                <node concept="1Q6Npb" id="2ZHlC003bWO" role="2Oq$k0" />
+                <node concept="2RRcyG" id="2ZHlC003bWP" role="2OqNvi" />
+              </node>
+              <node concept="2HwmR7" id="2ZHlC003evP" role="2OqNvi">
+                <node concept="1bVj0M" id="2ZHlC003evR" role="23t8la">
+                  <node concept="3clFbS" id="2ZHlC003evS" role="1bW5cS">
+                    <node concept="3clFbF" id="2ZHlC003fdC" role="3cqZAp">
+                      <node concept="2OqwBi" id="2ZHlC003g6f" role="3clFbG">
+                        <node concept="2OqwBi" id="2ZHlC003fVf" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2ZHlC003fsM" role="2Oq$k0">
+                            <node concept="2JrnkZ" id="2ZHlC003fp2" role="2Oq$k0">
+                              <node concept="37vLTw" id="2ZHlC003fdB" role="2JrQYb">
+                                <ref role="3cqZAo" node="2ZHlC003evT" resolve="it" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2ZHlC003fRd" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2ZHlC003g0U" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="2ZHlC003gkl" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                          <node concept="Xl_RD" id="2ZHlC003gsu" role="37wK5m">
+                            <property role="Xl_RC" value="com.mbeddr.mpsutil.editingGuide" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2ZHlC003evT" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2ZHlC003evU" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2ZHlC003bX6" role="3uHU7w">
+              <node concept="2OqwBi" id="2ZHlC003bX7" role="2Oq$k0">
+                <node concept="1Q6Npb" id="2ZHlC003bX8" role="2Oq$k0" />
+                <node concept="2RRcyG" id="2ZHlC003bX9" role="2OqNvi">
+                  <ref role="2RRcyH" to="d0vh:59Urx6GCgI0" resolve="ForceImportReferencedElements" />
+                </node>
+              </node>
+              <node concept="1v1jN8" id="2ZHlC003bXa" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="2ZHlC003bXb" role="3clFbx">
+            <node concept="3SKdUt" id="2ZHlC003bXc" role="3cqZAp">
+              <node concept="3SKdUq" id="2ZHlC003bXd" role="3SKWNk">
+                <property role="3SKdUp" value="we are in an editing guide, which does not force import" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2ZHlC003bXe" role="3cqZAp" />
+          </node>
+        </node>
         <node concept="3clFbH" id="59Urx6GChWS" role="3cqZAp" />
         <node concept="3cpWs8" id="7WXwKLpF0EY" role="3cqZAp">
           <node concept="3cpWsn" id="7WXwKLpF0EZ" role="3cpWs9">
