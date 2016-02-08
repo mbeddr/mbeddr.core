@@ -114,6 +114,7 @@
         <child id="3909459679554886012" name="node" index="2LPuAx" />
       </concept>
       <concept id="3909459679554885948" name="com.mbeddr.mpsutil.editingGuide.structure.Task" flags="ng" index="2LPuBx">
+        <child id="3453511597019902484" name="explanation" index="JZmik" />
         <child id="3909459679554885979" name="monitor" index="2LPuA6" />
         <child id="3909459679554885953" name="code" index="2LPuAs" />
         <child id="3909459679554885951" name="description" index="2LPuBy" />
@@ -234,6 +235,9 @@
           </node>
         </node>
       </node>
+      <node concept="19SGf9" id="2ZHlC004k$A" role="JZmik">
+        <node concept="19SUe$" id="2ZHlC004k$B" role="19SJt6" />
+      </node>
     </node>
     <node concept="2LPuBx" id="31xWCC4R$X" role="2LPuAy">
       <property role="TrG5h" value="Selection" />
@@ -353,6 +357,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="19SGf9" id="2ZHlC004kGI" role="JZmik">
+        <node concept="19SUe$" id="2ZHlC004kGJ" role="19SJt6" />
       </node>
     </node>
     <node concept="19SGf9" id="3p1cdQ7_M8e" role="2LPu_u">
