@@ -20,6 +20,7 @@
       <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/spellcheck/spellcheck.mpl" folder="utils" />
       <modulePath path="$PROJECT_DIR$/languages/vectors/vectors.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.editingGuide/com.mbeddr.editingGuide.msd" folder="userguide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.buildProject/com.mbeddr.tutorial.buildProject.msd" folder="userguide.samples" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.documentation/com.mbeddr.tutorial.documentation.msd" folder="userguide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.sample.CProject/com.mbeddr.tutorial.sample.CProject.msd" folder="userguide.samples" />

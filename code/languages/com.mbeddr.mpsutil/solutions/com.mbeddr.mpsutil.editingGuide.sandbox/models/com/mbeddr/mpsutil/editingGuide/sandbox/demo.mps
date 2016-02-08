@@ -126,6 +126,7 @@
   <node concept="2LPuAz" id="3p1cdQ7_M87">
     <property role="TrG5h" value="Demo" />
     <node concept="2LPuBx" id="3p1cdQ7_M88" role="2LPuAy">
+      <property role="TrG5h" value="Deletion" />
       <node concept="19SGf9" id="3p1cdQ7_M89" role="2LPuBy">
         <node concept="19SUe$" id="3p1cdQ7_M8a" role="19SJt6">
           <property role="19SUeA" value="Please try to delete the variable i." />
@@ -213,6 +214,7 @@
       </node>
     </node>
     <node concept="2LPuBx" id="31xWCC4R$X" role="2LPuAy">
+      <property role="TrG5h" value="Selection" />
       <node concept="19SGf9" id="31xWCC4R$Y" role="2LPuBy">
         <node concept="19SUe$" id="31xWCC4R$Z" role="19SJt6">
           <property role="19SUeA" value="Das ist der zweite Schritt. Bitte selektiere 4*7 indem Du auf die 4 gehst und nach oben selektierst." />
