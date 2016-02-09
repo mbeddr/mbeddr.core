@@ -99,6 +99,7 @@
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
     <property role="1pbfSe" value="1110046120" />
     <property role="TrG5h" value="InlineProgramFragment" />
+    <property role="34LRSv" value="inline" />
     <ref role="1TJDcQ" node="3p1cdQ7_d_U" resolve="ProgramFragment" />
     <node concept="1TJgyj" id="3p1cdQ7_d_W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

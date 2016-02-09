@@ -469,7 +469,7 @@
     <ref role="1XX52x" to="k8go:3p1cdQ7_d_V" resolve="InlineProgramFragment" />
     <node concept="3EZMnI" id="3p1cdQ7_qzK" role="2wV5jI">
       <node concept="3F0ifn" id="2C54m44RqFv" role="3EZMnx">
-        <property role="3F0ifm" value="node:" />
+        <property role="3F0ifm" value="inline:" />
       </node>
       <node concept="2iRfu4" id="3p1cdQ7_qzL" role="2iSdaV" />
       <node concept="3F1sOY" id="3p1cdQ7_qzH" role="3EZMnx">
