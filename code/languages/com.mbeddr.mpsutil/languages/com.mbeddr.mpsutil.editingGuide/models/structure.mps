@@ -146,5 +146,63 @@
     <property role="34LRSv" value="editorContext" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="2ZHlC00aapr">
+    <property role="1pbfSe" value="806747355" />
+    <property role="TrG5h" value="RefWord" />
+    <property role="34LRSv" value="@" />
+    <property role="3GE5qa" value="words" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2ZHlC00aapv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="2ZHlC00aaps" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2ZHlC00alqX">
+    <property role="1pbfSe" value="806792509" />
+    <property role="TrG5h" value="CodeWord" />
+    <property role="34LRSv" value="#" />
+    <property role="3GE5qa" value="words" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2ZHlC00alrd" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyi" id="2ZHlC00alrg" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2ZHlC00amLK">
+    <property role="1pbfSe" value="806792509" />
+    <property role="TrG5h" value="TypeWord" />
+    <property role="3GE5qa" value="words" />
+    <property role="34LRSv" value="%" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2ZHlC00amLL" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyi" id="2ZHlC00amLM" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2ZHlC00a$IM">
+    <property role="1pbfSe" value="806855218" />
+    <property role="TrG5h" value="KeyboardWord" />
+    <property role="3GE5qa" value="words" />
+    <property role="34LRSv" value="$" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2ZHlC00a$IN" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyi" id="2ZHlC00a$IO" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

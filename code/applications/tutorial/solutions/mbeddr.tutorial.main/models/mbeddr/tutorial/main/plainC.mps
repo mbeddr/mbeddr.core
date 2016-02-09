@@ -599,49 +599,8 @@
       <property role="2OOxQR" value="false" />
       <node concept="3XIRFW" id="5N4UbPS7GoY" role="3XIRFX">
         <node concept="3XISUE" id="5N4UbPS7GoZ" role="3XIRFZ" />
-        <node concept="1QiMYF" id="5N4UbPS7Gxn" role="3XIRFZ">
-          <node concept="OjmMv" id="5N4UbPS7Gxp" role="3SJzmv">
-            <node concept="19SGf9" id="5N4UbPS7Gxq" role="OjmMu">
-              <node concept="19SUe$" id="5N4UbPS7Gxr" role="19SJt6">
-                <property role="19SUeA" value="code completion: enter an if statement" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3XISUE" id="5N4UbPS7GPA" role="3XIRFZ" />
-        <node concept="3XISUE" id="5N4UbPS8DXe" role="3XIRFZ" />
-        <node concept="1QiMYF" id="5N4UbPS7GX5" role="3XIRFZ">
-          <node concept="OjmMv" id="5N4UbPS7GX7" role="3SJzmv">
-            <node concept="19SGf9" id="5N4UbPS7GX8" role="OjmMu">
-              <node concept="19SUe$" id="5N4UbPS7GX9" role="19SJt6">
-                <property role="19SUeA" value="alias: enter an if statement" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="5N4UbPS8870" role="3XIRFZ" />
-        <node concept="3XISUE" id="5N4UbPS8EeP" role="3XIRFZ" />
-        <node concept="1QiMYF" id="5N4UbPS88qI" role="3XIRFZ">
-          <node concept="OjmMv" id="5N4UbPS88qK" role="3SJzmv">
-            <node concept="19SGf9" id="5N4UbPS88qL" role="OjmMu">
-              <node concept="19SUe$" id="5N4UbPS88qM" role="19SJt6">
-                <property role="19SUeA" value="requires manual disambiguation: try to enter a for statement" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="5N4UbPS7H2F" role="3XIRFZ" />
         <node concept="3XISUE" id="5N4UbPS8EwA" role="3XIRFZ" />
-        <node concept="1QiMYF" id="5N4UbPS7Hpr" role="3XIRFZ">
-          <node concept="OjmMv" id="5N4UbPS7Hpt" role="3SJzmv">
-            <node concept="19SGf9" id="5N4UbPS7Hpu" role="OjmMu">
-              <node concept="19SUe$" id="5N4UbPS7Hpv" role="19SJt6">
-                <property role="19SUeA" value="context constraints: try to enter assert here\nand in the test case below" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="5N4UbPS7GqX" role="3XIRFZ" />
         <node concept="3XISUE" id="5N4UbPS8EMT" role="3XIRFZ" />
         <node concept="1QiMYF" id="5N4UbPS7HM7" role="3XIRFZ">
           <node concept="OjmMv" id="5N4UbPS7HM9" role="3SJzmv">

@@ -17,6 +17,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -113,12 +114,18 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
         <property id="3431613015799084476" name="isTest" index="iO3LB" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
+      </concept>
+      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
+        <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
@@ -134,7 +141,30 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
+    </language>
     <language id="67506b1e-43ad-47fe-a8e6-bc7837e9e11f" name="com.mbeddr.mpsutil.editingGuide">
+      <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
+        <property id="3453511597021550288" name="text" index="JL01g" />
+      </concept>
+      <concept id="3453511597021555824" name="com.mbeddr.mpsutil.editingGuide.structure.TypeWord" flags="ng" index="JL3FK">
+        <property id="3453511597021555826" name="text" index="JL3FM" />
+      </concept>
+      <concept id="3453511597021505115" name="com.mbeddr.mpsutil.editingGuide.structure.RefWord" flags="ng" index="JLv3r">
+        <reference id="3453511597021505119" name="node" index="JLv3v" />
+      </concept>
+      <concept id="3453511597021612978" name="com.mbeddr.mpsutil.editingGuide.structure.KeyboardWord" flags="ng" index="JLLOM">
+        <property id="3453511597021612980" name="text" index="JLLOO" />
+      </concept>
       <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <property id="3453511597020454463" name="developmentMode" index="JXsyZ" />
@@ -177,6 +207,11 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
+    </language>
+    <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
+      <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
+        <child id="6275792049641586525" name="body" index="c0Qz3" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1153,6 +1188,12 @@
     <node concept="2eOfOl" id="2ZHlC008Ejt" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="Dummy" />
+      <node concept="2v9HqM" id="2ZHlC00aVer" role="2eOfOg">
+        <ref role="2v9HqP" node="2ZHlC008EjG" resolve="Dummy" />
+      </node>
+    </node>
+    <node concept="2Q9Fgs" id="2ZHlC00aVel" role="2Q9xDr">
+      <node concept="2Q9FjX" id="2ZHlC00aVem" role="2Q9FjI" />
     </node>
   </node>
   <node concept="N3F5e" id="2ZHlC008EjG">
@@ -1190,6 +1231,231 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2LPuAz" id="2ZHlC00a9Ux">
+    <property role="TrG5h" value="Efficiently Entering Code" />
+    <node concept="2LPuBx" id="2ZHlC00a9Uy" role="2LPuAy">
+      <property role="TrG5h" value="Code Completion 1" />
+      <node concept="19SGf9" id="2ZHlC00a9Uz" role="JZmik">
+        <node concept="19SUe$" id="2ZHlC00a9U$" role="19SJt6">
+          <property role="19SUeA" value="For program elements that are not ambiguous (i.e., there is only&#10;one thing that you can enter with a string like " />
+        </node>
+        <node concept="JL3FK" id="2ZHlC00a$nf" role="19SJt6">
+          <property role="JL3FM" value="if" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00a$ng" role="19SJt6">
+          <property role="19SUeA" value=", you can just&#10;type it, and it is entered and bound." />
+        </node>
+      </node>
+      <node concept="19SGf9" id="2ZHlC00a9U_" role="2LPuBy">
+        <node concept="19SUe$" id="2ZHlC00a9UA" role="19SJt6">
+          <property role="19SUeA" value="Put the cursor into the empty line in the " />
+        </node>
+        <node concept="JLv3r" id="2ZHlC00aguf" role="19SJt6">
+          <ref role="JLv3v" node="2ZHlC00aaoE" resolve="dummy" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00ague" role="19SJt6">
+          <property role="19SUeA" value=" function.&#10;Enter an " />
+        </node>
+        <node concept="JL00X" id="2ZHlC00amLy" role="19SJt6">
+          <property role="JL01g" value="if" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00amLz" role="19SJt6">
+          <property role="19SUeA" value=" statement by typing " />
+        </node>
+        <node concept="JL3FK" id="2ZHlC00aqae" role="19SJt6">
+          <property role="JL3FM" value="if" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aqaf" role="19SJt6" />
+      </node>
+      <node concept="2LPuA2" id="2ZHlC00a9UB" role="2LPuA6">
+        <node concept="3clFbS" id="2ZHlC00a9UC" role="2VODD2">
+          <node concept="3clFbF" id="2ZHlC00a$g9" role="3cqZAp">
+            <node concept="2YIFZM" id="2ZHlC00a$h1" role="3clFbG">
+              <ref role="37wK5l" to="2vci:2ZHlC00aw$_" resolve="thereIsAnInstanceOf" />
+              <ref role="1Pybhc" to="2vci:2ZHlC0034C1" resolve="Helper" />
+              <node concept="2LPMUG" id="2ZHlC00a$kV" role="37wK5m" />
+              <node concept="35c_gC" id="2ZHlC00a$h_" role="37wK5m">
+                <ref role="35c_gD" to="c4fa:5so5TTr6Vvn" resolve="IfStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2LPuAA" id="2ZHlC00aaow" role="2LPuAs">
+        <node concept="N3Fnx" id="2ZHlC00aaoE" role="2LPuAx">
+          <property role="TrG5h" value="dummy" />
+          <node concept="19Rifw" id="2ZHlC00aaoF" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3XIRFW" id="2ZHlC00aaoG" role="3XIRFX" />
+        </node>
+      </node>
+    </node>
+    <node concept="2LPuBx" id="2ZHlC00a$_p" role="2LPuAy">
+      <property role="TrG5h" value="Code Completion 2" />
+      <node concept="19SGf9" id="2ZHlC00a$_q" role="JZmik">
+        <node concept="19SUe$" id="2ZHlC00a$_r" role="19SJt6">
+          <property role="19SUeA" value="For program elements that are ambiguous (i.e., there are several &#10;things you can enter with a string like " />
+        </node>
+        <node concept="JL3FK" id="2ZHlC00a$_s" role="19SJt6">
+          <property role="JL3FM" value="for" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00a$_t" role="19SJt6">
+          <property role="19SUeA" value=", you have to use&#10;the code completion menu to disambiguate." />
+        </node>
+      </node>
+      <node concept="19SGf9" id="2ZHlC00a$_u" role="2LPuBy">
+        <node concept="19SUe$" id="2ZHlC00a$_v" role="19SJt6">
+          <property role="19SUeA" value="Put the cursor into the empty line in the " />
+        </node>
+        <node concept="JLv3r" id="2ZHlC00a$_w" role="19SJt6">
+          <ref role="JLv3v" node="2ZHlC00a$_H" resolve="dummy" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00a$_x" role="19SJt6">
+          <property role="19SUeA" value=" function.&#10;Try to enter a " />
+        </node>
+        <node concept="JL00X" id="2ZHlC00a$Iw" role="19SJt6">
+          <property role="JL01g" value="for" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00a$Iv" role="19SJt6">
+          <property role="19SUeA" value=" statement by typing " />
+        </node>
+        <node concept="JL3FK" id="2ZHlC00a$_$" role="19SJt6">
+          <property role="JL3FM" value="for" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00a$__" role="19SJt6">
+          <property role="19SUeA" value="&#10;As you can see, it does not bind; it stays red.&#10;Press " />
+        </node>
+        <node concept="JLLOM" id="2ZHlC00aCcm" role="19SJt6">
+          <property role="JLLOO" value="Ctrl-Space" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aCcn" role="19SJt6">
+          <property role="19SUeA" value=" to bring up the code completion menu.&#10;Select the regular " />
+        </node>
+        <node concept="JL00X" id="2ZHlC00aCcO" role="19SJt6">
+          <property role="JL01g" value="for (..; ..; ..)" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aCcP" role="19SJt6">
+          <property role="19SUeA" value=" statement and press Enter." />
+        </node>
+      </node>
+      <node concept="2LPuA2" id="2ZHlC00a$_A" role="2LPuA6">
+        <node concept="3clFbS" id="2ZHlC00a$_B" role="2VODD2">
+          <node concept="3clFbF" id="2ZHlC00a$_C" role="3cqZAp">
+            <node concept="2YIFZM" id="2ZHlC00a$_D" role="3clFbG">
+              <ref role="37wK5l" to="2vci:2ZHlC00aw$_" resolve="thereIsAnInstanceOf" />
+              <ref role="1Pybhc" to="2vci:2ZHlC0034C1" resolve="Helper" />
+              <node concept="2LPMUG" id="2ZHlC00a$_E" role="37wK5m" />
+              <node concept="35c_gC" id="2ZHlC00a$_F" role="37wK5m">
+                <ref role="35c_gD" to="c4fa:6iIoqg1xIpQ" resolve="ForStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2LPuAA" id="2ZHlC00a$_G" role="2LPuAs">
+        <node concept="N3Fnx" id="2ZHlC00a$_H" role="2LPuAx">
+          <property role="TrG5h" value="dummy" />
+          <node concept="19Rifw" id="2ZHlC00a$_I" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3XIRFW" id="2ZHlC00a$_J" role="3XIRFX" />
+        </node>
+      </node>
+    </node>
+    <node concept="2LPuBx" id="2ZHlC00aUc5" role="2LPuAy">
+      <property role="TrG5h" value="Code Completion 4" />
+      <node concept="19SGf9" id="2ZHlC00aUc6" role="JZmik">
+        <node concept="19SUe$" id="2ZHlC00aUc7" role="19SJt6">
+          <property role="19SUeA" value="Some things can only be entered in certain locations. For example,&#10;the " />
+        </node>
+        <node concept="JL00X" id="2ZHlC00b0VW" role="19SJt6">
+          <property role="JL01g" value="fail" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00b0VV" role="19SJt6">
+          <property role="19SUeA" value=" statement is only allowed in test cases, but not in &#10;regular functions." />
+        </node>
+      </node>
+      <node concept="19SGf9" id="2ZHlC00aUca" role="2LPuBy">
+        <node concept="19SUe$" id="2ZHlC00aUcb" role="19SJt6">
+          <property role="19SUeA" value="Put the cursor into the empty line in the " />
+        </node>
+        <node concept="JLv3r" id="2ZHlC00aUcc" role="19SJt6">
+          <ref role="JLv3v" node="2ZHlC00aUmU" resolve="Dummy" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aUcd" role="19SJt6">
+          <property role="19SUeA" value=" function.&#10;Try to enter a " />
+        </node>
+        <node concept="JL00X" id="2ZHlC00aUce" role="19SJt6">
+          <property role="JL01g" value="fail" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aUcf" role="19SJt6">
+          <property role="19SUeA" value=" statement by typing " />
+        </node>
+        <node concept="JL3FK" id="2ZHlC00aUcg" role="19SJt6">
+          <property role="JL3FM" value="fail" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aUch" role="19SJt6">
+          <property role="19SUeA" value="&#10;As you can see, it does not bind; it stays red.&#10;Now try the same thing in the test case.&#10;Typing " />
+        </node>
+        <node concept="JL3FK" id="2ZHlC00aUF3" role="19SJt6">
+          <property role="JL3FM" value="fail" />
+        </node>
+        <node concept="19SUe$" id="2ZHlC00aUF4" role="19SJt6">
+          <property role="19SUeA" value=" there works; it binds immediately." />
+        </node>
+      </node>
+      <node concept="2LPuA2" id="2ZHlC00aUcm" role="2LPuA6">
+        <node concept="3clFbS" id="2ZHlC00aUcn" role="2VODD2">
+          <node concept="3clFbF" id="2ZHlC00aUco" role="3cqZAp">
+            <node concept="2YIFZM" id="2ZHlC00aUcp" role="3clFbG">
+              <ref role="37wK5l" to="2vci:2ZHlC00aw$_" resolve="thereIsAnInstanceOf" />
+              <ref role="1Pybhc" to="2vci:2ZHlC0034C1" resolve="Helper" />
+              <node concept="2LPMUG" id="2ZHlC00aUcq" role="37wK5m" />
+              <node concept="35c_gC" id="2ZHlC00aUcr" role="37wK5m">
+                <ref role="35c_gD" to="yz9a:1FzLn6k6oKe" resolve="FailStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2LPuAA" id="2ZHlC00aUlp" role="2LPuAs">
+        <node concept="N3F5e" id="2ZHlC00aUmU" role="2LPuAx">
+          <property role="TrG5h" value="Dummy" />
+          <node concept="N3Fnx" id="2ZHlC00aUtg" role="N3F5h">
+            <property role="TrG5h" value="dummy" />
+            <property role="2OOxQR" value="false" />
+            <node concept="3XIRFW" id="2ZHlC00aUti" role="3XIRFX">
+              <node concept="3XISUE" id="2ZHlC00aUtj" role="3XIRFZ" />
+            </node>
+            <node concept="19Rifw" id="2ZHlC00aUr1" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="2NXPZ9" id="2ZHlC00aUv_" role="N3F5h">
+            <property role="TrG5h" value="empty_1455001229657_23" />
+          </node>
+          <node concept="c0Qz5" id="2ZHlC00aUxX" role="N3F5h">
+            <property role="2OOxQR" value="true" />
+            <property role="TrG5h" value="test" />
+            <node concept="19Rifw" id="2ZHlC00aUxY" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="3XIRFW" id="2ZHlC00aUy0" role="c0Qz3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="19SGf9" id="2ZHlC00a9UE" role="2LPu_u">
+      <node concept="19SUe$" id="2ZHlC00a9UF" role="19SJt6">
+        <property role="19SUeA" value="This " />
       </node>
     </node>
   </node>
