@@ -10887,15 +10887,13 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3fqX7Q" id="35JUnhpaE6M" role="3clFbw">
-                            <node concept="2OqwBi" id="35JUnhpaE6O" role="3fr31v">
-                              <node concept="37vLTw" id="35JUnhpaE6P" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5MZxerZYddQ" resolve="actualType" />
-                              </node>
-                              <node concept="1mIQ4w" id="35JUnhpaE6Q" role="2OqNvi">
-                                <node concept="chp4Y" id="35JUnhpaE6R" role="cj9EA">
-                                  <ref role="cht4Q" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
-                                </node>
+                          <node concept="2OqwBi" id="35JUnhpaE6O" role="3clFbw">
+                            <node concept="37vLTw" id="35JUnhpaE6P" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5MZxerZYddQ" resolve="actualType" />
+                            </node>
+                            <node concept="1mIQ4w" id="35JUnhpaE6Q" role="2OqNvi">
+                              <node concept="chp4Y" id="3NrQJbN0qxb" role="cj9EA">
+                                <ref role="cht4Q" to="c4fa:6IWRcVPT6tl" resolve="ITypeContainingType" />
                               </node>
                             </node>
                           </node>
