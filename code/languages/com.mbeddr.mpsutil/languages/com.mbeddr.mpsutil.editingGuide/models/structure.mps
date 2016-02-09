@@ -112,6 +112,11 @@
     <property role="TrG5h" value="Exercise" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2ZHlC00bw3c" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="currentTaskOverride" />
+      <ref role="20lvS9" node="3p1cdQ7_d$W" resolve="Task" />
+    </node>
     <node concept="1TJgyi" id="2ZHlC0069SZ" role="1TKVEl">
       <property role="TrG5h" value="developmentMode" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />

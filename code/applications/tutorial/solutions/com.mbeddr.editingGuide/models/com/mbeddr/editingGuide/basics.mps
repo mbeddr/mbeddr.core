@@ -168,6 +168,7 @@
       <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <property id="3453511597020454463" name="developmentMode" index="JXsyZ" />
+        <reference id="3453511597021855948" name="currentTaskOverride" index="JKPpc" />
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
       </concept>
@@ -1236,6 +1237,8 @@
   </node>
   <node concept="2LPuAz" id="2ZHlC00a9Ux">
     <property role="TrG5h" value="Efficiently Entering Code" />
+    <property role="JXsyZ" value="true" />
+    <ref role="JKPpc" node="2ZHlC00aUc5" resolve="Code Completion 3" />
     <node concept="2LPuBx" id="2ZHlC00a9Uy" role="2LPuAy">
       <property role="TrG5h" value="Code Completion 1" />
       <node concept="19SGf9" id="2ZHlC00a9Uz" role="JZmik">
@@ -1369,7 +1372,7 @@
       </node>
     </node>
     <node concept="2LPuBx" id="2ZHlC00aUc5" role="2LPuAy">
-      <property role="TrG5h" value="Code Completion 4" />
+      <property role="TrG5h" value="Code Completion 3" />
       <node concept="19SGf9" id="2ZHlC00aUc6" role="JZmik">
         <node concept="19SUe$" id="2ZHlC00aUc7" role="19SJt6">
           <property role="19SUeA" value="Some things can only be entered in certain locations. For example,&#10;the " />

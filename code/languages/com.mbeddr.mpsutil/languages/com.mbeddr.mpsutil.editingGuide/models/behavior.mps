@@ -140,6 +140,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -336,6 +337,27 @@
       <property role="TrG5h" value="getCurrentTask" />
       <node concept="3Tm1VV" id="4TMjSvbG95w" role="1B3o_S" />
       <node concept="3clFbS" id="4TMjSvbG95x" role="3clF47">
+        <node concept="3clFbJ" id="2ZHlC00bINQ" role="3cqZAp">
+          <node concept="3clFbS" id="2ZHlC00bINS" role="3clFbx">
+            <node concept="3cpWs6" id="2ZHlC00bJ65" role="3cqZAp">
+              <node concept="2OqwBi" id="2ZHlC00bJaY" role="3cqZAk">
+                <node concept="13iPFW" id="2ZHlC00bJ6p" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2ZHlC00bJj0" role="2OqNvi">
+                  <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2ZHlC00bJ4z" role="3clFbw">
+            <node concept="10Nm6u" id="2ZHlC00bJ5a" role="3uHU7w" />
+            <node concept="2OqwBi" id="2ZHlC00bIUC" role="3uHU7B">
+              <node concept="13iPFW" id="2ZHlC00bISf" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2ZHlC00bIYv" role="2OqNvi">
+                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4TMjSvbGeOd" role="3cqZAp">
           <node concept="2OqwBi" id="4TMjSvbGdb2" role="3clFbG">
             <node concept="2OqwBi" id="4TMjSvbGdb3" role="2Oq$k0">
