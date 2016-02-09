@@ -200,7 +200,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="4i9pOwKTFVe">
-    <property role="TrG5h" value=" mbeddr" />
+    <property role="TrG5h" value="mbeddr" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.build" />
     <node concept="m$_wf" id="2coa6Xmdl5V" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.spawner" />
