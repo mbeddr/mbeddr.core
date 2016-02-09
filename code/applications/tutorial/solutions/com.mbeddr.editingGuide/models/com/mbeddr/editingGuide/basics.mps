@@ -1951,13 +1951,8 @@
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
               </node>
-              <node concept="2BOciq" id="2C54m44RV1b" role="3XIe9u">
-                <node concept="1_oZFn" id="2C54m44RV1c" role="3TlMhI">
-                  <property role="2hmy$m" value="33" />
-                </node>
-                <node concept="1_oZFn" id="2C54m44RV1d" role="3TlMhJ">
-                  <property role="2hmy$m" value="22" />
-                </node>
+              <node concept="1_oZFn" id="2C54m44RV1c" role="3XIe9u">
+                <property role="2hmy$m" value="3322" />
               </node>
             </node>
             <node concept="2BFjQ_" id="4x22hTwiwLw" role="3XIRFZ">
@@ -3138,7 +3133,7 @@
     </node>
     <node concept="19SGf9" id="2ZHlC00a9UE" role="2LPu_u">
       <node concept="19SUe$" id="2ZHlC00a9UF" role="19SJt6">
-        <property role="19SUeA" value="This " />
+        <property role="19SUeA" value="This tutorial teaches the basics of efficiently entering code in MPS.&#10;Please make sure you walk through all tasks; this is really important&#10;for efficient use of MPS. " />
       </node>
     </node>
   </node>
