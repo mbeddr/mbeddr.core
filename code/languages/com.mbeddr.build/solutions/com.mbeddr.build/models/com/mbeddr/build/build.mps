@@ -200,7 +200,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="4i9pOwKTFVe">
-    <property role="TrG5h" value="mbeddr" />
+    <property role="TrG5h" value=" mbeddr" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.build" />
     <node concept="m$_wf" id="2coa6Xmdl5V" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.spawner" />
@@ -2418,6 +2418,12 @@
           <node concept="3bR9La" id="4OmSVnTpRwO" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3NrQJbMZiHg" role="3bR37C">
+          <node concept="3bR9La" id="3NrQJbMZiHh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
       </node>
