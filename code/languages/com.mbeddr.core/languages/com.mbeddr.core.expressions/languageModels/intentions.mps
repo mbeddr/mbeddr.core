@@ -22,6 +22,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="ohrc" ref="61c69711-ed61-4850-81d9-7714ff227fb0/java:javassist.util.proxy(com.mbeddr.core.expressions/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
+    <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -189,7 +190,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -2247,50 +2247,11 @@
     </node>
     <node concept="2Sbjvc" id="7Vr_GBj5Po" role="2ZfgGD">
       <node concept="3clFbS" id="7Vr_GBj5Pp" role="2VODD2">
-        <node concept="3cpWs8" id="5zFoWvwdY8W" role="3cqZAp">
-          <node concept="3cpWsn" id="5zFoWvwdY8Z" role="3cpWs9">
-            <property role="TrG5h" value="comment" />
-            <node concept="3Tqbb2" id="5zFoWvwdY8U" role="1tU5fm">
-              <ref role="ehGHo" to="mj1l:1X9RDux22HN" resolve="CommentedContent" />
-            </node>
-            <node concept="2YIFZM" id="5zFoWvwdZ21" role="33vP2m">
-              <ref role="37wK5l" node="5zFoWvwdPeq" resolve="newCommentContent" />
-              <ref role="1Pybhc" node="7Vr_GBFguD" resolve="CommentingUtil" />
-              <node concept="2Sf5sV" id="5zFoWvwdZ7c" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5zFoWvwdZA8" role="3cqZAp">
-          <node concept="3clFbS" id="5zFoWvwdZAb" role="3clFbx">
-            <node concept="3clFbF" id="5zFoWvwe0Qf" role="3cqZAp">
-              <node concept="2OqwBi" id="5zFoWvwe0R5" role="3clFbG">
-                <node concept="2Sf5sV" id="5zFoWvwe0Qe" role="2Oq$k0" />
-                <node concept="1P9Npp" id="5zFoWvwe1br" role="2OqNvi">
-                  <node concept="37vLTw" id="5zFoWvwe1jy" role="1P9ThW">
-                    <ref role="3cqZAo" node="5zFoWvwdY8Z" resolve="comment" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="5zFoWvwklUX" role="3cqZAp">
-              <node concept="37vLTI" id="5zFoWvwkmQ6" role="3clFbG">
-                <node concept="2Sf5sV" id="5zFoWvwkmTI" role="37vLTx" />
-                <node concept="2OqwBi" id="5zFoWvwklYt" role="37vLTJ">
-                  <node concept="37vLTw" id="5zFoWvwklUV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5zFoWvwdY8Z" resolve="comment" />
-                  </node>
-                  <node concept="3TrEf2" id="5zFoWvwkmza" role="2OqNvi">
-                    <ref role="3Tt5mk" to="mj1l:1X9RDux22HP" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="5zFoWvwe0_v" role="3clFbw">
-            <node concept="10Nm6u" id="5zFoWvwe0PI" role="3uHU7w" />
-            <node concept="37vLTw" id="5zFoWvwe0gQ" role="3uHU7B">
-              <ref role="3cqZAo" node="5zFoWvwdY8Z" resolve="comment" />
-            </node>
+        <node concept="3clFbF" id="3NrQJbMYN_h" role="3cqZAp">
+          <node concept="2YIFZM" id="6v4$knuuJbI" role="3clFbG">
+            <ref role="37wK5l" to="wcxw:2ETBKOyiRJO" resolve="commentOut" />
+            <ref role="1Pybhc" to="wcxw:5FzO4t9gN3W" resolve="CommentUtil" />
+            <node concept="2Sf5sV" id="3NrQJbMYTL0" role="37wK5m" />
           </node>
         </node>
       </node>

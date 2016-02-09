@@ -68,7 +68,6 @@
     <ref role="3_znuS" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
     <node concept="3__wT9" id="2EIw3H72GYE" role="3_A6iZ">
       <node concept="3clFbS" id="2EIw3H72GYF" role="2VODD2">
-        <node concept="3clFbH" id="1LDGRqySsD9" role="3cqZAp" />
         <node concept="3AgYrR" id="1LDGRqyS_if" role="3cqZAp">
           <node concept="2OqwBi" id="1LDGRqyS_o2" role="3Ah4Yx">
             <node concept="3__QtB" id="1LDGRqyS_iD" role="2Oq$k0" />
