@@ -25,6 +25,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="2vci" ref="r:1f9c504f-7e80-4694-ba90-80ed6336d504(com.mbeddr.mpsutil.editingGuide.runtime.rt)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" implicit="true" />
   </imports>
@@ -1008,70 +1009,43 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="692bXAb6nzl" role="3cqZAp">
-              <node concept="3cpWsn" id="692bXAb6nzm" role="3cpWs9">
-                <property role="TrG5h" value="originalModel" />
-                <node concept="3uibUv" id="692bXAb6qAX" role="1tU5fm">
-                  <ref role="3uigEE" to="w1kc:~SModel" resolve="SModel" />
-                </node>
-                <node concept="1eOMI4" id="692bXAb6pzC" role="33vP2m">
-                  <node concept="10QFUN" id="692bXAb6pzD" role="1eOMHV">
-                    <node concept="2OqwBi" id="692bXAb6pzv" role="10QFUP">
-                      <node concept="1eOMI4" id="692bXAb6pzw" role="2Oq$k0">
-                        <node concept="10QFUN" id="692bXAb6pzx" role="1eOMHV">
-                          <node concept="2JrnkZ" id="692bXAb6pzy" role="10QFUP">
-                            <node concept="2OqwBi" id="692bXAb6pzz" role="2JrQYb">
-                              <node concept="37vLTw" id="692bXAb6pz$" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
-                              </node>
-                              <node concept="I4A8Y" id="692bXAb6pz_" role="2OqNvi" />
-                            </node>
-                          </node>
-                          <node concept="3uibUv" id="692bXAb6pzA" role="10QFUM">
-                            <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="692bXAb6pzB" role="2OqNvi">
-                        <ref role="37wK5l" to="g3l6:~SModelBase.getModelData():jetbrains.mps.extapi.model.SModelData" resolve="getModelData" />
-                      </node>
-                    </node>
-                    <node concept="3uibUv" id="692bXAb6qEP" role="10QFUM">
-                      <ref role="3uigEE" to="w1kc:~SModel" resolve="SModel" />
-                    </node>
+            <node concept="3clFbH" id="692bXAb6rqj" role="3cqZAp" />
+            <node concept="3clFbF" id="pesyAWAY5a" role="3cqZAp">
+              <node concept="1rXfSq" id="pesyAWAY58" role="3clFbG">
+                <ref role="37wK5l" node="pesyAWAFoU" resolve="copyModelProperties" />
+                <node concept="2OqwBi" id="pesyAWB2PI" role="37wK5m">
+                  <node concept="37vLTw" id="pesyAWB2PJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
                   </node>
+                  <node concept="I4A8Y" id="pesyAWB2PK" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="pesyAWB30U" role="37wK5m">
+                  <ref role="3cqZAo" node="692bXAb5E1e" resolve="tempModel" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="692bXAb6rqj" role="3cqZAp" />
-            <node concept="3clFbF" id="692bXAb5Vtq" role="3cqZAp">
-              <node concept="2OqwBi" id="692bXAb5VJT" role="3clFbG">
-                <node concept="37vLTw" id="692bXAb6pNQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="692bXAb6nzm" resolve="originalModel" />
-                </node>
-                <node concept="liA8E" id="692bXAb5VUE" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SModel.copyPropertiesTo(jetbrains.mps.smodel.SModel):void" resolve="copyPropertiesTo" />
-                  <node concept="1eOMI4" id="692bXAb6y4O" role="37wK5m">
-                    <node concept="10QFUN" id="692bXAb6y4P" role="1eOMHV">
-                      <node concept="2OqwBi" id="692bXAb6y4I" role="10QFUP">
-                        <node concept="1eOMI4" id="692bXAb6y4J" role="2Oq$k0">
-                          <node concept="10QFUN" id="692bXAb6y4K" role="1eOMHV">
-                            <node concept="37vLTw" id="692bXAb6y4L" role="10QFUP">
-                              <ref role="3cqZAo" node="692bXAb5E1e" resolve="tempModel" />
-                            </node>
-                            <node concept="3uibUv" id="692bXAb6y4M" role="10QFUM">
-                              <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="692bXAb6y4N" role="2OqNvi">
-                          <ref role="37wK5l" to="g3l6:~SModelBase.getModelData():jetbrains.mps.extapi.model.SModelData" resolve="getModelData" />
-                        </node>
+            <node concept="3clFbF" id="pesyAWA$5d" role="3cqZAp">
+              <node concept="1rXfSq" id="pesyAWA$5b" role="3clFbG">
+                <ref role="37wK5l" node="pesyAWAeLJ" resolve="copyModuleDependencies" />
+                <node concept="2OqwBi" id="pesyAWA$HV" role="37wK5m">
+                  <node concept="2JrnkZ" id="pesyAWA$Fy" role="2Oq$k0">
+                    <node concept="2OqwBi" id="pesyAWA$Fz" role="2JrQYb">
+                      <node concept="37vLTw" id="pesyAWA$F$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
                       </node>
-                      <node concept="3uibUv" id="692bXAb6y3D" role="10QFUM">
-                        <ref role="3uigEE" to="w1kc:~SModel" resolve="SModel" />
-                      </node>
+                      <node concept="I4A8Y" id="pesyAWA$F_" role="2OqNvi" />
                     </node>
+                  </node>
+                  <node concept="liA8E" id="pesyAWA$Nc" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="pesyAWA_49" role="37wK5m">
+                  <node concept="37vLTw" id="pesyAWA$XU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="692bXAb5E1e" resolve="tempModel" />
+                  </node>
+                  <node concept="liA8E" id="pesyAWA_8P" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
                   </node>
                 </node>
               </node>
@@ -1232,7 +1206,141 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="pesyAWA2Vf" role="jymVt" />
+    <node concept="3clFb_" id="pesyAWAeLJ" role="jymVt">
+      <property role="TrG5h" value="copyModuleDependencies" />
+      <node concept="37vLTG" id="pesyAWAr7e" role="3clF46">
+        <property role="TrG5h" value="from" />
+        <node concept="3uibUv" id="pesyAWAscP" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="pesyAWAsvE" role="3clF46">
+        <property role="TrG5h" value="to" />
+        <node concept="3uibUv" id="pesyAWAtpm" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="pesyAWAeLL" role="3clF45" />
+      <node concept="3Tmbuc" id="pesyAWAO8E" role="1B3o_S" />
+      <node concept="3clFbS" id="pesyAWAeLN" role="3clF47">
+        <node concept="2Gpval" id="pesyAWAtAe" role="3cqZAp">
+          <node concept="2GrKxI" id="pesyAWAtAf" role="2Gsz3X">
+            <property role="TrG5h" value="dep" />
+          </node>
+          <node concept="3clFbS" id="pesyAWAtAg" role="2LFqv$">
+            <node concept="3clFbF" id="pesyAWAurL" role="3cqZAp">
+              <node concept="2OqwBi" id="pesyAWAu$0" role="3clFbG">
+                <node concept="1eOMI4" id="pesyAWAurJ" role="2Oq$k0">
+                  <node concept="10QFUN" id="pesyAWAurG" role="1eOMHV">
+                    <node concept="37vLTw" id="pesyAWAuyH" role="10QFUP">
+                      <ref role="3cqZAo" node="pesyAWAsvE" resolve="to" />
+                    </node>
+                    <node concept="3uibUv" id="pesyAWAuur" role="10QFUM">
+                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="pesyAWAuKr" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~AbstractModule.addDependency(org.jetbrains.mps.openapi.module.SModuleReference,boolean):jetbrains.mps.project.structure.modules.Dependency" resolve="addDependency" />
+                  <node concept="2OqwBi" id="pesyAWAxzq" role="37wK5m">
+                    <node concept="2GrUjf" id="pesyAWAv4H" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="pesyAWAtAf" resolve="dep" />
+                    </node>
+                    <node concept="liA8E" id="pesyAWAxAw" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~SDependency.getTargetModule():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getTargetModule" />
+                    </node>
+                  </node>
+                  <node concept="3clFbT" id="pesyAWAwkg" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="pesyAWAtPS" role="2GsD0m">
+            <node concept="37vLTw" id="pesyAWAtLh" role="2Oq$k0">
+              <ref role="3cqZAo" node="pesyAWAr7e" resolve="from" />
+            </node>
+            <node concept="liA8E" id="pesyAWAuZF" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~SModule.getDeclaredDependencies():java.lang.Iterable" resolve="getDeclaredDependencies" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="44KFiKpmzOR" role="jymVt" />
+    <node concept="3clFb_" id="pesyAWAFoU" role="jymVt">
+      <property role="TrG5h" value="copyModelProperties" />
+      <node concept="37vLTG" id="pesyAWAM02" role="3clF46">
+        <property role="TrG5h" value="from" />
+        <node concept="3uibUv" id="pesyAWAMZn" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="pesyAWAMZR" role="3clF46">
+        <property role="TrG5h" value="to" />
+        <node concept="3uibUv" id="pesyAWAO8a" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="pesyAWAFoW" role="3clF45" />
+      <node concept="3Tmbuc" id="pesyAWAPfu" role="1B3o_S" />
+      <node concept="3clFbS" id="pesyAWAFoY" role="3clF47">
+        <node concept="3clFbF" id="pesyAWAQkM" role="3cqZAp">
+          <node concept="2OqwBi" id="pesyAWAQkO" role="3clFbG">
+            <node concept="liA8E" id="pesyAWAQkQ" role="2OqNvi">
+              <ref role="37wK5l" to="w1kc:~SModel.copyPropertiesTo(jetbrains.mps.smodel.SModel):void" resolve="copyPropertiesTo" />
+              <node concept="1eOMI4" id="pesyAWAQkR" role="37wK5m">
+                <node concept="10QFUN" id="pesyAWAQkS" role="1eOMHV">
+                  <node concept="2OqwBi" id="pesyAWAQkT" role="10QFUP">
+                    <node concept="1eOMI4" id="pesyAWAQkU" role="2Oq$k0">
+                      <node concept="10QFUN" id="pesyAWAQkV" role="1eOMHV">
+                        <node concept="37vLTw" id="pesyAWB7tt" role="10QFUP">
+                          <ref role="3cqZAo" node="pesyAWAMZR" resolve="to" />
+                        </node>
+                        <node concept="3uibUv" id="pesyAWAQkX" role="10QFUM">
+                          <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="pesyAWAQkY" role="2OqNvi">
+                      <ref role="37wK5l" to="g3l6:~SModelBase.getModelData():jetbrains.mps.extapi.model.SModelData" resolve="getModelData" />
+                    </node>
+                  </node>
+                  <node concept="3uibUv" id="pesyAWAQkZ" role="10QFUM">
+                    <ref role="3uigEE" to="w1kc:~SModel" resolve="SModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1eOMI4" id="pesyAWAXnx" role="2Oq$k0">
+              <node concept="10QFUN" id="pesyAWAXny" role="1eOMHV">
+                <node concept="2OqwBi" id="pesyAWAXnz" role="10QFUP">
+                  <node concept="1eOMI4" id="pesyAWAXn$" role="2Oq$k0">
+                    <node concept="10QFUN" id="pesyAWAXn_" role="1eOMHV">
+                      <node concept="37vLTw" id="pesyAWB7of" role="10QFUP">
+                        <ref role="3cqZAo" node="pesyAWAM02" resolve="from" />
+                      </node>
+                      <node concept="3uibUv" id="pesyAWAXnB" role="10QFUM">
+                        <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="pesyAWAXnC" role="2OqNvi">
+                    <ref role="37wK5l" to="g3l6:~SModelBase.getModelData():jetbrains.mps.extapi.model.SModelData" resolve="getModelData" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="pesyAWAXnD" role="10QFUM">
+                  <ref role="3uigEE" to="w1kc:~SModel" resolve="SModel" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="pesyAWADSU" role="jymVt" />
     <node concept="3clFb_" id="44KFiKpms2f" role="jymVt">
       <property role="TrG5h" value="registerInstanceForSandbox" />
       <property role="DiZV1" value="false" />
