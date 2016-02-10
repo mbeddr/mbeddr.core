@@ -1,0 +1,91 @@
+BUILD DOCUMENTATION
+
+1 Build Script Setup
+
+In mbeddr we have different build scripts. They are used on our local machines for building our languages and on the build server for various build-related tasks, such as testing or packaging. This documentation guides you in following the mbeddr standards for setting up your BuildProject and integrating it into mbeddr's build infrastructure.
+
+1.1 Required BuildFolderMacros 
+
+In your BuildProject (the build script's model representation in MPS) you first of all need a BuildFolderMacro (a "folder") named mps.home (see code snippet below). If you want to run the generated ant script in your MPS, then you should specifiy the location of your MPS installation in a relative way, otherwise you don't need a path for mps.home. At script execution time, we will redefine mps.home, to point to the folder where your MPS installation is located at. 
+
+folder mps.home = 
+
+
+Next, you need a BuildFolderMacro named artifacts.root that does not require a path (see snippet below). When exeucting the ant script, generated  from your BuildProject, we define this macro from outside to point to the folder where all of your plugin dependencies (e.g., mbeddr.platform) are located.
+
+folder artifacts.root = <no defaultPath>
+
+
+For each BuildProjectDependency (the dependencies section below your folders) we need a separate BuildFolderMacro that follows the naming convention <BuildProject name>.artifacts and points to $artifacts.root/<BuildProject name>. At build script execution time, thos macros will point to the folders, where your required plugins are located. In the code snippet below you can see the resulting BuildFolderMacros for a BuildProject with two depedencies: mps-sl-all and com.mbeddr.platform.
+
+folder sl-all.artifacts = $artifacts.root/mps-sl-all 
+folder platform.artifacts = $artifacts.root/com.mbeddr.platform
+
+1.2 Special Setup for Type System Tests
+
+In case you want to build type system tests that require a specific path macro (e.g., for specifying the project location inside your TestInfo), then you have to create a BuildFolderMacro for this path macro. The name of this BuildFolderMacro should start with "mps.macro.", followed by the name of the respective path macro. In the example below, we specify a path macro "mps.macro.mbeddr.github.core.home" that reperesents a path variable "mbeddr.github.core.home" and points to the relative path location specified in another macro "mbeddr.github.core.home".
+
+folder mps.macro.mbeddr.github.core.home = $mbeddr.github.core.home
+
+Further, solutions containing type system tests need to be marked as "content: (with sources and tests) ". To achieve this, please perform the following steps: (1) Inside your BuildProject move your cursor to the solution that contains your type system tests. (2) open the inspector. (3) Inside the Inspector select the node "sources", open the context menu and select "sources and tests" from it.
+
+Next, in order to get your tests executed, you first of all need to add the "module-tests" plugin to your "use plugins:" section (on top of your BuildProject). In case you cannot select "module-tests" from the context menu, please first of all import it from jetbrains.mps.build.mps.tests.accessories (pressing CTRL+R opens the import dialog). Finally, create a BuildMpsLayout_TestModules (a test configuration) at bottom of your BuildProject and list there all solutions that contain type system tests to be executed.
+
+1.3 Configurations for Generator and Compiler
+
+To make sure code is generated and compiled the same way as in MPS, you have to add the following configurations (BuildSource_JavaOptions and BuildMps_GeneratorOptions) to your BuildProject's project structure. Those configurations control the generator engine and the Java compiler to make sure we have the same build behavior as in the IDE.
+
+generator options <project default> 
+  strict mode true 
+  multiple threads true 
+  number of threads 4 
+  inplace transform true 
+  hide warnings false 
+  resort to static references true 
+
+java options <project default> 
+  generate debug info true 
+  generate no warnings false 
+  fork false 
+  compiler <default compiler> 
+  java compliance level 1.6 
+  java compiler options <no additional options> 
+  copy resources false 
+
+2 Build Script Genreration
+
+At this time, you have a BuildProject with all required BuildFolderMacros and Configurations in it (see section above). Further, you are able to generate the respective ant script from it: generating the ant script from it should not fail. Due to versioning-related reasons, we do not check-in generated ant scripts, but use a special script for build script geneartion, which is executed as a first build step. You have to make sure code generation does not fail on your machine, otherwise it will fail on the build server as well. 
+The BuildProject for the build script generation is named com.mbeddr.allScripts.build, located in mbeddr.core/code/languages/com.mbeddr.build/solutions/com.mbeddr.allScripts. In case you created your BuildProject inside a build solution which is already listed in com.mbeddr.allScripts.build, then it will be generated on the server - no further work is necessary. Otherwise, please add your build solution to this BuildProject according to the other build solutions.
+
+3 Build Server Integration
+
+To make sure the build server executes your script, you have to add it to our global build.xml, located in mbeddr.core/code/languages. We do this in three steps: first of all create a bunch of properties that specify the name of the generated ant script and where it is located. Next, create a new target that invokes our ant script and finally add an ant call to our target either in the target run-tests or in build-languages - this depends on the kind of script you have written.
+
+We start by creating the required ant properties. In the code snippet below you can see that for an example BuildProject "com.mbeddr.misc": the first property <name>.build-file.location points to the file system location where com.mbeddr.allScripts.build will generate your ant script to. The path is prefixed with "${mbeddr.scripts.base-path}" (the base path for all generated scripts), followed by the name of your BuildProject (a folder to which the ant script will be generated). Next, the second property <name>.build-file.name holds the name of the generated ant script.
+
+<!-- mbeddr.misc -->
+<property name="com.mbeddr.misc.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.misc" />    
+<property name="com.mbeddr.misc.build-file.name" value="build.xml" /> 
+
+After creating the properties, we now setup an ant target that invokes the ant script generated from your BuildProject. The ant target's name should start with "build-" in case your script builds languages, otherwise with "test-". In the code snippet below you can see how we would setup the target for our example language-building build script com.mbeddr.misc: "antfile" retrieves the name of the geneated ant script from our previously defined property "com.mbeddr.misc.build-file.name" and "dir" uses the other property for getting the file system location. We call two targets on this script: "generate-code.task" triggers code generation and "build-plugin.task" packages a plugin from the generated code. In case your script is used for executing tests, please add an aditional antcall invoking the target "${run-tests.task}", which executes the tests.
+
+<target name="build-misc">
+	<ant antfile="${com.mbeddr.misc.build-file.name}" dir="${com.mbeddr.misc.build-file.location}" target="${generate-code.task}" />	 			
+	<ant antfile="${com.mbeddr.misc.build-file.name}" dir="${com.mbeddr.misc.build-file.location}" target="${build-plugin.task}" />
+</target>
+
+Finally, we invoke our newly created target either from "build-languages" or "build-and-run-tests" - the actual decision depends on wether your build script builds a language or executes tests. Further, you have to make sure your script is invoked after your dependencies have been built. The languges build by our example build script com.mbeddr.misc dependend on mbeddr. Hence, we invoke our newly created ant target after "build-platform-and-mbeddr" has been built (see code snippet below).
+	
+<target name="build-languages" >
+	<antcall target="build-sl-all" />
+	<antcall target="build-platform-and-mbeddr" />
+	<antcall target="build-misc" />
+</target> 	
+
+Your script will now be invoked locally when exeucting mbeddr's buildLanguages.sh and on the build server as well.
+
+4 Build Server Setup
+
+-> how are artifacts copied?
+-> how are paths set?
+-> changing the server configuration requires merge -> versioned settings

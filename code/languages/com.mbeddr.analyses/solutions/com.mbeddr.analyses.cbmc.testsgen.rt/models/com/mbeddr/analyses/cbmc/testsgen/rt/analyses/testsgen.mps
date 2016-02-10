@@ -2,11 +2,11 @@
 <model ref="r:8001815d-bc5a-4aed-8490-b69f15a3e4ff(com.mbeddr.analyses.cbmc.testsgen.rt.analyses.testsgen)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -159,7 +159,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -905,6 +905,92 @@
       <node concept="17QB3L" id="67iKQ7opcrz" role="3clF45" />
       <node concept="3Tm1VV" id="67iKQ7opcr$" role="1B3o_S" />
       <node concept="3clFbS" id="67iKQ7opcrC" role="3clF47">
+        <node concept="3clFbJ" id="341WyjDj9PD" role="3cqZAp">
+          <node concept="3clFbS" id="341WyjDj9PF" role="3clFbx">
+            <node concept="3cpWs8" id="341WyjDjaNF" role="3cqZAp">
+              <node concept="3cpWsn" id="341WyjDjaNG" role="3cpWs9">
+                <property role="TrG5h" value="f" />
+                <node concept="3uibUv" id="341WyjDjaNH" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="341WyjDjaUa" role="33vP2m">
+                  <node concept="1pGfFk" id="341WyjDjiiz" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="341WyjDjilu" role="37wK5m">
+                      <ref role="3cqZAo" node="694Tbl9fp0R" resolve="fileName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="341WyjDjjU1" role="3cqZAp">
+              <node concept="3cpWsn" id="341WyjDjjU2" role="3cpWs9">
+                <property role="TrG5h" value="canonicalPath" />
+                <node concept="17QB3L" id="341WyjDjk4M" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="SfApY" id="341WyjDjkVH" role="3cqZAp">
+              <node concept="3clFbS" id="341WyjDjkVJ" role="SfCbr">
+                <node concept="3clFbF" id="341WyjDjkwD" role="3cqZAp">
+                  <node concept="37vLTI" id="341WyjDjkwF" role="3clFbG">
+                    <node concept="2OqwBi" id="341WyjDjjU3" role="37vLTx">
+                      <node concept="37vLTw" id="341WyjDjjU4" role="2Oq$k0">
+                        <ref role="3cqZAo" node="341WyjDjaNG" resolve="f" />
+                      </node>
+                      <node concept="liA8E" id="341WyjDjjU5" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="341WyjDjkwJ" role="37vLTJ">
+                      <ref role="3cqZAo" node="341WyjDjjU2" resolve="canonicalPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="341WyjDjkVK" role="TEbGg">
+                <node concept="3cpWsn" id="341WyjDjkVM" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="341WyjDjl8c" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="341WyjDjkVQ" role="TDEfX">
+                  <node concept="3cpWs6" id="341WyjDjm7p" role="3cqZAp">
+                    <node concept="37vLTw" id="341WyjDjmpE" role="3cqZAk">
+                      <ref role="3cqZAo" node="67iKQ7owFhw" resolve="property" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="341WyjDjajk" role="3cqZAp">
+              <node concept="3cpWs3" id="341WyjDjjjp" role="3cqZAk">
+                <node concept="37vLTw" id="341WyjDjjv5" role="3uHU7w">
+                  <ref role="3cqZAo" node="694Tbl9fpuF" resolve="lineNumber" />
+                </node>
+                <node concept="3cpWs3" id="341WyjDjiRp" role="3uHU7B">
+                  <node concept="37vLTw" id="341WyjDjjU6" role="3uHU7B">
+                    <ref role="3cqZAo" node="341WyjDjjU2" resolve="canonicalPath" />
+                  </node>
+                  <node concept="Xl_RD" id="341WyjDjj0R" role="3uHU7w">
+                    <property role="Xl_RC" value=" : " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="341WyjDj9Wz" role="3clFbw">
+            <node concept="37vLTw" id="341WyjDj9SW" role="2Oq$k0">
+              <ref role="3cqZAo" node="67iKQ7owFhw" resolve="property" />
+            </node>
+            <node concept="liA8E" id="341WyjDja9F" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="Xl_RD" id="341WyjDjabL" role="37wK5m">
+                <property role="Xl_RC" value="block file" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="67iKQ7owFM8" role="3cqZAp">
           <node concept="37vLTw" id="67iKQ7owFM7" role="3clFbG">
             <ref role="3cqZAo" node="67iKQ7owFhw" resolve="property" />
@@ -2619,6 +2705,27 @@
           </node>
         </node>
         <node concept="3clFbH" id="MynG9Rqm10" role="3cqZAp" />
+        <node concept="3SKdUt" id="341WyjDj074" role="3cqZAp">
+          <node concept="3SKdUq" id="341WyjDj076" role="3SKWNk">
+            <property role="3SKdUp" value="if slice formula is used then not all test goals will be covered (a possible bug in CBMC)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="341WyjDiXqC" role="3cqZAp">
+          <node concept="37vLTI" id="341WyjDiYzk" role="3clFbG">
+            <node concept="3clFbT" id="341WyjDiZ1g" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="341WyjDiXUx" role="37vLTJ">
+              <node concept="37vLTw" id="341WyjDiXqA" role="2Oq$k0">
+                <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
+              </node>
+              <node concept="2S8uIT" id="341WyjDiYtL" role="2OqNvi">
+                <ref role="2S8YL0" to="tzyt:6Fr9cYRS_VS" resolve="sliceFormula" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="341WyjDiZ26" role="3cqZAp" />
         <node concept="3clFbF" id="73BQep1LhZT" role="3cqZAp">
           <node concept="37vLTI" id="73BQep1LiH5" role="3clFbG">
             <node concept="3cmrfG" id="73BQep1LiW6" role="37vLTx">

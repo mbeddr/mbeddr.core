@@ -2,12 +2,12 @@
 <model ref="r:d51229bd-5841-4e69-bba9-14b1450412fa(com.mbeddr.rcp.config)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
   </languages>
   <imports>
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
@@ -184,6 +184,17 @@
     <property role="TrG5h" value="rcp" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
     <property role="turDy" value="build-mbeddr-distrib.xml" />
+    <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <node concept="55IIr" id="5kaST7qF8uh" role="398pKh">
+        <node concept="2Ry0Ak" id="5kaST7qF8ui" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5kaST7qF8uj" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1E1JtA" id="60Ph1pcA2qD" role="3989C9">
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="com.mbeddr.rcp.actions" />
@@ -238,6 +249,15 @@
         <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
     </node>
+    <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="6qYq$PFV3NY" role="398pKh">
+        <ref role="398BVh" node="5kaST7qF8ug" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="6qYq$PFV3Ov" role="iGT6I">
+          <property role="2Ry0Am" value="artifacts" />
+        </node>
+      </node>
+    </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -262,26 +282,6 @@
       <ref role="1l3spb" node="505a8HIkc0G" resolve="branding" />
       <node concept="398BVA" id="3vzyAKELmgr" role="2JcizS">
         <ref role="398BVh" node="3vzyAKELmfY" resolve="artifacts.branding" />
-      </node>
-    </node>
-    <node concept="398rNT" id="5kaST7qF8ug" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
-      <node concept="55IIr" id="5kaST7qF8uh" role="398pKh">
-        <node concept="2Ry0Ak" id="5kaST7qF8ui" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5kaST7qF8uj" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="5ueaxoTn61m" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
-      <node concept="398BVA" id="6qYq$PFV3NY" role="398pKh">
-        <ref role="398BVh" node="5kaST7qF8ug" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="6qYq$PFV3Ov" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
-        </node>
       </node>
     </node>
     <node concept="398rNT" id="5msqZjqR9E5" role="1l3spd">

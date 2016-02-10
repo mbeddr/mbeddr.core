@@ -580,5 +580,123 @@
       <ref role="PrY4T" node="54sr1JE49Wq" resolve="IRefactoringClassName" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7uF2w19TiCc">
+    <property role="1pbfSe" value="1047514100" />
+    <property role="TrG5h" value="ConceptInstanceAction" />
+    <property role="34LRSv" value="concept instance action" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7uF2w19Vfp1" role="1TKVEl">
+      <property role="TrG5h" value="allowInChildren" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7uF2w19TzWj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7uF2w19TFzm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="label" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="23_jb1yL7J" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instanceCreator" />
+      <ref role="20lvS9" node="23_jb1yL7R" resolve="InstanceCreator_CustomInstanceFunction" />
+    </node>
+    <node concept="1TJgyj" id="23_jb1AwBW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="isApplicable" />
+      <ref role="20lvS9" node="23_jb1AwtB" resolve="ConceptInstanceIsApplicableFunction" />
+    </node>
+    <node concept="1TJgyj" id="7uF2w19TiHk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7uF2w19VfkO" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contextConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7uF2w19Vvx3" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contextConceptRole" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7uF2w19TiF9" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7uF2w19TMzF">
+    <property role="1pbfSe" value="1047383317" />
+    <property role="TrG5h" value="ActionSourceWithExtendingFolder" />
+    <property role="34LRSv" value="extending folder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7uF2w19U7_x" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sources" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="7uF2w19U7_t" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="7uF2w19U7_u" role="PzmwI">
+      <ref role="PrY4T" node="657q32pRmdh" resolve="IContextProvider" />
+    </node>
+    <node concept="1TJgyj" id="7uF2w19TMBD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="extendedFolder" />
+      <ref role="20lvS9" node="23_jb1uJ9g" resolve="ActionSourceWithExtensibleFolder" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7uF2w19YEfd">
+    <property role="1pbfSe" value="1046106675" />
+    <property role="TrG5h" value="ConceptInstanceExpression" />
+    <property role="34LRSv" value="concept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="23_jb1uJ9g">
+    <property role="1pbfSe" value="1040283774" />
+    <property role="TrG5h" value="ActionSourceWithExtensibleFolder" />
+    <property role="34LRSv" value="extensible folder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="23_jb1uJ9l" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sources" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="23_jb1uJ9h" role="PzmwI">
+      <ref role="PrY4T" node="5tr7YH$UuXw" resolve="IActionSource" />
+    </node>
+    <node concept="PrWs8" id="23_jb1uJ9i" role="PzmwI">
+      <ref role="PrY4T" node="657q32pRmdh" resolve="IContextProvider" />
+    </node>
+    <node concept="PrWs8" id="23_jb1uJdN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="23_jb1yL7R">
+    <property role="1pbfSe" value="1039227095" />
+    <property role="TrG5h" value="InstanceCreator_CustomInstanceFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="23_jb1AwtB">
+    <property role="1pbfSe" value="1038246759" />
+    <property role="TrG5h" value="ConceptInstanceIsApplicableFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="23_jb1ASBc">
+    <property role="1pbfSe" value="1038147842" />
+    <property role="TrG5h" value="ConceptInstanceContextNode" />
+    <property role="34LRSv" value="contextNode" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

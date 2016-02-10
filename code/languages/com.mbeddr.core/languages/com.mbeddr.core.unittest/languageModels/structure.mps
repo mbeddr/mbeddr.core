@@ -459,7 +459,13 @@
     <property role="TrG5h" value="TestCaseConfigItem" />
     <property role="34LRSv" value="unittest" />
     <property role="1pbfSe" value="1398528204" />
+    <property role="3GE5qa" value="configItem" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="ILZbnBPQGC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="testStrategy" />
+      <ref role="20lvS9" node="ILZbnBPQGB" resolve="ITestStrategy" />
+    </node>
     <node concept="PrWs8" id="7tWSY$P9Oes" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
     </node>
@@ -484,10 +490,50 @@
     <node concept="PrWs8" id="6TAwvhVSitS" role="PzmwI">
       <ref role="PrY4T" to="x27k:2MbfxrZI9YU" resolve="IMayActAsMainFunction" />
     </node>
+    <node concept="PrWs8" id="38aMGlg5WCT" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:UWuwz3o4sj" resolve="IRealStackFrameContributor" />
+    </node>
+    <node concept="PrWs8" id="38aMGlgjUHd" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="38aMGlgrPXM" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3Rzs0kGBKjV">
     <property role="1pbfSe" value="1786934528" />
     <property role="TrG5h" value="IRequireUnitTestFramework" />
+    <node concept="PrWs8" id="ILZbnBQ$2x" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="ILZbnBPQGB">
+    <property role="1pbfSe" value="209098788" />
+    <property role="TrG5h" value="ITestStrategy" />
+    <property role="3GE5qa" value="configItem" />
+  </node>
+  <node concept="1TIwiD" id="ILZbnBPQGE">
+    <property role="1pbfSe" value="209098785" />
+    <property role="TrG5h" value="NoTestIsolationStrategy" />
+    <property role="34LRSv" value="no test isolation" />
+    <property role="3GE5qa" value="configItem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="ILZbnBPQGF" role="PzmwI">
+      <ref role="PrY4T" node="ILZbnBPQGB" resolve="ITestStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="ILZbnBPQGH">
+    <property role="1pbfSe" value="209098782" />
+    <property role="TrG5h" value="TestIsolationStrategy" />
+    <property role="34LRSv" value="test isolation" />
+    <property role="3GE5qa" value="configItem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="ILZbnBPQGI" role="PzmwI">
+      <ref role="PrY4T" node="ILZbnBPQGB" resolve="ITestStrategy" />
+    </node>
+    <node concept="PrWs8" id="38aMGlgud8N" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:38aMGlgu7TQ" resolve="INoDebugSupport" />
+    </node>
   </node>
 </model>
 

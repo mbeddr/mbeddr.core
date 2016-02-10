@@ -8,6 +8,7 @@
   <imports>
     <import index="1qs1" ref="r:7fd52d13-a4fa-42ae-abb9-9b7a6190d316(com.mbeddr.mpsutil.ccmenu.sandboxlang.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -24,7 +25,12 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -34,6 +40,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -68,6 +75,26 @@
         </node>
         <node concept="2iRfu4" id="5h7fEQaJYqT" role="2iSdaV" />
       </node>
+      <node concept="3F0ifn" id="5s_Hn9on18g" role="3EZMnx" />
+      <node concept="3EZMnI" id="5s_Hn9on18z" role="3EZMnx">
+        <node concept="VPM3Z" id="5s_Hn9on18$" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5s_Hn9on18_" role="3EZMnx">
+          <property role="3F0ifm" value="class1:" />
+        </node>
+        <node concept="1iCGBv" id="5s_Hn9on19x" role="3EZMnx">
+          <ref role="1NtTu8" to="1qs1:5s_Hn9on188" />
+          <node concept="1sVBvm" id="5s_Hn9on19z" role="1sWHZn">
+            <node concept="3F0A7n" id="5s_Hn9on19F" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="5s_Hn9on18B" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="5s_Hn9on18p" role="3EZMnx" />
       <node concept="2iRkQZ" id="5h7fEQaJYq2" role="2iSdaV" />
     </node>
   </node>

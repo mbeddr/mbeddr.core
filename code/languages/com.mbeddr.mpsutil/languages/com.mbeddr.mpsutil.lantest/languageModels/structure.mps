@@ -109,6 +109,10 @@
       <property role="TrG5h" value="maximumNumberOfTries" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3HDVcqVU4f8" role="1TKVEl">
+      <property role="TrG5h" value="minimalDepth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyi" id="4XCJ8CcQZiq" role="1TKVEl">
       <property role="TrG5h" value="maximalDepth" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -116,6 +120,10 @@
     <node concept="1TJgyi" id="3acDVtI_Wt4" role="1TKVEl">
       <property role="TrG5h" value="cloneOriginalNodeRatio" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1ir9k2TCuuL" role="1TKVEl">
+      <property role="TrG5h" value="forceSavingOfAllModels" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="4XCJ8CcQ6V_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

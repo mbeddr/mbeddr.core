@@ -16,9 +16,6 @@
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="7812779912047922391" name="jetbrains.mps.baseLanguage.structure.AbstractClassifierReference" flags="nn" index="39w1OS">
-        <reference id="7812779912047934386" name="classifier" index="39w2Dt" />
-      </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -34,7 +31,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -42,10 +38,6 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -88,15 +80,10 @@
         <node concept="3cpWs8" id="2CPtIILXdzM" role="3cqZAp">
           <node concept="3cpWsn" id="2CPtIILXdzP" role="3cpWs9">
             <property role="TrG5h" value="i1" />
-            <node concept="10Oyi0" id="2CPtIILXdzL" role="1tU5fm" />
-            <node concept="3cpWs3" id="2CPtIILYi3C" role="33vP2m">
-              <node concept="39w1OS" id="2CPtIILZEzY" role="3uHU7w">
-                <ref role="39w2Dt" node="2CPtIILYjo1" resolve="C1.abcd" />
-              </node>
-              <node concept="3cmrfG" id="2CPtIILXd$z" role="3uHU7B">
-                <property role="3cmrfH" value="10" />
-              </node>
+            <node concept="3cmrfG" id="2CPtIILXd$z" role="33vP2m">
+              <property role="3cmrfH" value="10" />
             </node>
+            <node concept="10Oyi0" id="2CPtIILXdzL" role="1tU5fm" />
           </node>
         </node>
       </node>

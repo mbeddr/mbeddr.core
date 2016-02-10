@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -41,6 +42,11 @@
     <property role="TrG5h" value="RootConcept" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5s_Hn9on188" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class1" />
+      <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />
+    </node>
     <node concept="1TJgyj" id="65GtCaXcg1F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="childA" />
