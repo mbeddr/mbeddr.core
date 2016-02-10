@@ -5646,24 +5646,9 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="1MMv7XpCVju" role="3clF47">
-        <node concept="3clFbF" id="1MMv7XpCVud" role="3cqZAp">
-          <node concept="2OqwBi" id="1MMv7XpCVue" role="3clFbG">
-            <node concept="1eOMI4" id="1MMv7XpCVuf" role="2Oq$k0">
-              <node concept="10QFUN" id="1MMv7XpCVug" role="1eOMHV">
-                <node concept="37vLTw" id="1MMv7XpCVQ8" role="10QFUP">
-                  <ref role="3cqZAo" node="1MMv7XpCVqx" resolve="module" />
-                </node>
-                <node concept="3uibUv" id="1MMv7XpCVuk" role="10QFUM">
-                  <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="1MMv7XpCVul" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~AbstractModule.addUsedLanguage(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addUsedLanguage" />
-              <node concept="37vLTw" id="1MMv7XpCVum" role="37wK5m">
-                <ref role="3cqZAo" node="1MMv7XpCVs3" resolve="language" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="7L2nvyaHgdF" role="3cqZAp">
+          <node concept="3SKdUq" id="7L2nvyaHgdH" role="3SKWNk">
+            <property role="3SKdUp" value="Remove this method: Languages should be imported directly into the model" />
           </node>
         </node>
       </node>

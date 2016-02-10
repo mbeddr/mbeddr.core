@@ -262,36 +262,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7Ynnt_Ohqlj" role="3cqZAp">
-              <node concept="2OqwBi" id="7Ynnt_Ohqll" role="3clFbG">
-                <node concept="1eOMI4" id="7Ynnt_Ohqlm" role="2Oq$k0">
-                  <node concept="10QFUN" id="7Ynnt_Ohqln" role="1eOMHV">
-                    <node concept="2OqwBi" id="7Ynnt_Ohqlo" role="10QFUP">
-                      <node concept="37vLTw" id="7Ynnt_Ohqlp" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7Ynnt_OamtO" resolve="model" />
-                      </node>
-                      <node concept="liA8E" id="7Ynnt_Ohqlq" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
-                      </node>
-                    </node>
-                    <node concept="3uibUv" id="7Ynnt_Ohqlr" role="10QFUM">
-                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="7Ynnt_Ohqls" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~AbstractModule.addUsedLanguage(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addUsedLanguage" />
-                  <node concept="2OqwBi" id="7Ynnt_Ohqlt" role="37wK5m">
-                    <node concept="2GrUjf" id="7Ynnt_Ohqze" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="7Ynnt_Oamwj" resolve="kit" />
-                    </node>
-                    <node concept="liA8E" id="7Ynnt_Ohqlv" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="37vLTw" id="7Ynnt_Oamxn" role="2GsD0m">
             <ref role="3cqZAo" node="7Ynnt_Oamu3" resolve="kits" />
@@ -348,36 +318,6 @@
                     </node>
                     <node concept="3uibUv" id="7Ynnt_OhPJ0" role="10QFUM">
                       <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7Ynnt_Ohn18" role="3cqZAp">
-              <node concept="2OqwBi" id="7Ynnt_OhnHd" role="3clFbG">
-                <node concept="1eOMI4" id="7Ynnt_Ohn_E" role="2Oq$k0">
-                  <node concept="10QFUN" id="7Ynnt_Ohn_F" role="1eOMHV">
-                    <node concept="2OqwBi" id="7Ynnt_Ohn_B" role="10QFUP">
-                      <node concept="37vLTw" id="7Ynnt_Ohn_C" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7Ynnt_Oan_F" resolve="model" />
-                      </node>
-                      <node concept="liA8E" id="7Ynnt_Ohn_D" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
-                      </node>
-                    </node>
-                    <node concept="3uibUv" id="7Ynnt_OhnCV" role="10QFUM">
-                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="7Ynnt_Oho30" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~AbstractModule.addUsedLanguage(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addUsedLanguage" />
-                  <node concept="2OqwBi" id="7Ynnt_Ohofi" role="37wK5m">
-                    <node concept="2GrUjf" id="7Ynnt_Oho5C" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="7Ynnt_OanR$" resolve="lang" />
-                    </node>
-                    <node concept="liA8E" id="7Ynnt_OhqfP" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
                     </node>
                   </node>
                 </node>
