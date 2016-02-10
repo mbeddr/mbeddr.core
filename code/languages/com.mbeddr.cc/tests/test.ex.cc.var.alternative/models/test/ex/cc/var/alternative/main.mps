@@ -79,9 +79,13 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations">
       <concept id="661141253149262080" name="com.mbeddr.cc.var.annotations.structure.FeatureModelConfiguration" flags="ng" index="2dvl_R">
@@ -261,6 +265,9 @@
       <node concept="2v9HqM" id="6ixWMIzAFo2" role="2eOfOg">
         <ref role="2v9HqP" node="6ixWMIzAFmq" resolve="AlternativeTest" />
       </node>
+    </node>
+    <node concept="12mU2y" id="3mKW6ZYgyk0" role="2Q9xDr">
+      <node concept="3GpDuo" id="3mKW6ZYgyk1" role="3GpDut" />
     </node>
   </node>
   <node concept="Idr$i" id="6ixWMIzDERH">

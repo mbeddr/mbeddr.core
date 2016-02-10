@@ -272,6 +272,7 @@
     <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" fqName="com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language id="935bff03-e393-4547-a3a2-60335e0cad25" fqName="com.mbeddr.mpsutil.ccmenu" version="-1" />
     <language id="f92af8d7-1fae-4067-8109-17acf80f8e58" fqName="com.mbeddr.mpsutil.ccmenu.reftarget" version="-1" />
+    <language id="677f00fb-4488-405e-9885-abb75d472fd1" fqName="com.mbeddr.mpsutil.contextactions" version="0" />
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" fqName="com.mbeddr.mpsutil.intentions" version="0" />
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" fqName="com.mbeddr.mpsutil.interpreter" version="0" />
     <language id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" fqName="com.mbeddr.mpsutil.jung" version="0" />

@@ -2,8 +2,8 @@
 <model ref="r:ca2b582e-fdcb-4767-9d74-cf61b47911f2(com.mbeddr.allInOne)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -324,13 +324,13 @@
     <node concept="1l3spV" id="5qO$P$PtiTE" role="1l3spN">
       <node concept="3981dG" id="5qO$P$PtiTF" role="39821P">
         <node concept="398223" id="6xkorKj3Uwa" role="39821P">
+          <node concept="m$_wl" id="3Cx6vuJnfOR" role="39821P">
+            <ref role="m_rDy" node="3Cx6vuJncJb" resolve="com.mbeddr.allInOne" />
+          </node>
           <node concept="3_J27D" id="6xkorKj3Uwb" role="Nbhlr">
             <node concept="3Mxwew" id="6xkorKj3Uwc" role="3MwsjC">
               <property role="3MwjfP" value="plugins" />
             </node>
-          </node>
-          <node concept="m$_wl" id="3Cx6vuJnfOR" role="39821P">
-            <ref role="m_rDy" node="3Cx6vuJncJb" resolve="com.mbeddr.allInOne" />
           </node>
           <node concept="3ygNvl" id="5qO$P$Ptnby" role="39821P">
             <ref role="3ygNvj" to="p6ld:7eF9rfAnuiy" resolve="com.mbeddr.cc.ple.zip" />

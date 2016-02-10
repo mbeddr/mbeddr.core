@@ -132,9 +132,13 @@
       </concept>
       <concept id="7755897872837262973" name="com.mbeddr.core.unittest.structure.AssertGreaterEquals" flags="ng" index="2N3$9S" />
       <concept id="7755897872837262979" name="com.mbeddr.core.unittest.structure.AssertLessEquals" flags="ng" index="2N3$a6" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -257,6 +261,9 @@
       <node concept="1OId_O" id="tTL6IW9qct" role="1OIqLV">
         <ref role="1OIdAa" node="tTL6IW2$Bq" resolve="sched" />
       </node>
+    </node>
+    <node concept="12mU2y" id="5B69dDbeJCw" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJCx" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="tTL6IW2$Ab">

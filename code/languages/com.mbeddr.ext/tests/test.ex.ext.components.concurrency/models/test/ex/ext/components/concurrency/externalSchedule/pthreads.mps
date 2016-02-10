@@ -56,7 +56,10 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents">
       <concept id="7540109328385923714" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentsConfigItem" flags="ng" index="1eFCfY" />
@@ -127,7 +130,9 @@
     </node>
     <node concept="1GGfVi" id="5NTfFgKiv2F" role="2Q9xDr" />
     <node concept="1eFCfY" id="2kF1PD77CZG" role="2Q9xDr" />
-    <node concept="12mU2y" id="5NTfFgKjzhI" role="2Q9xDr" />
+    <node concept="12mU2y" id="5NTfFgKjzhI" role="2Q9xDr">
+      <node concept="3GpDuo" id="1U5CTQBgWEp" role="3GpDut" />
+    </node>
   </node>
 </model>
 
