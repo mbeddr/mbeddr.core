@@ -480,7 +480,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9_ID" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,1) - (1,0)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (1,0) - (0,1)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9_IE" role="2OqNvi">
