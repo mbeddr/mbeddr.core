@@ -2,7 +2,7 @@
 <model ref="r:cfe7dab7-768f-4dbe-b5cd-9398ab4e844c(test.debugging.core.dummy2)">
   <persistence version="9" />
   <languages>
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="2" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
@@ -91,10 +91,14 @@
         <child id="8551646674110384358" name="right" index="pFomL" />
         <child id="8551646674110384357" name="left" index="pFomM" />
       </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
       <concept id="8230733038425966121" name="com.mbeddr.core.unittest.structure.TestHelperFunctionAnnotation" flags="ng" index="1AiJoY" />
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -144,6 +148,9 @@
     </node>
     <node concept="2xfidK" id="6v3tcHGMLNF" role="2AWWZH">
       <ref role="2xfifS" to="q9ah:7sNQp65l2BT" resolve="Desktop Platform" />
+    </node>
+    <node concept="12mU2y" id="22oVTLUfqL9" role="2Q9xDr">
+      <node concept="3GpDuo" id="22oVTLUfqLa" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="2s7Bv57Qoc5">

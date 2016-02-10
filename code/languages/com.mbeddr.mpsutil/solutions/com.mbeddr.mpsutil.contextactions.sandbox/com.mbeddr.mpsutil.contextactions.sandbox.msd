@@ -43,6 +43,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="677f00fb-4488-405e-9885-abb75d472fd1(com.mbeddr.mpsutil.contextactions)" version="0" />
+    <module reference="28583149-5b6e-4663-9c02-b9a8fa3cb099(com.mbeddr.mpsutil.contextactions.runtime)" version="0" />
     <module reference="19b3e872-cc30-47d5-ad86-d7c0375a2d8a(com.mbeddr.mpsutil.contextactions.sandbox)" version="0" />
     <module reference="0223b1d5-49af-4976-a025-91dc8ecc8626(com.mbeddr.mpsutil.contextactions.sandboxlang)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
