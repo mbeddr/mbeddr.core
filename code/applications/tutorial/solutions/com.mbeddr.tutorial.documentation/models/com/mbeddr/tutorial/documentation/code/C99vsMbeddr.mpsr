@@ -173,15 +173,15 @@
           </node>
           <node concept="3XIRlf" id="37qjepTtqud" role="3XIRFZ">
             <property role="TrG5h" value="aBoolean" />
-            <node concept="3TlMgk" id="37qjepTtqub" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
             <node concept="1S8S4T" id="4Tiud0TefnF" role="3XIe9u">
               <node concept="3TlMgk" id="4Tiud0TefnG" role="1S8S4N" />
               <node concept="3ZVu4v" id="4Tiud0TefnE" role="1S8S4V">
                 <ref role="3ZVs_2" node="37qjepTtsHb" resolve="aInt16" />
               </node>
+            </node>
+            <node concept="3TlMgk" id="37qjepTtqub" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
             </node>
           </node>
           <node concept="1h5QrK" id="37qjepTtxWy" role="lGtFl">

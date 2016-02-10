@@ -45,6 +45,12 @@
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
+    <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+    </language>
     <language id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations">
       <concept id="6617704999132114000" name="com.mbeddr.cc.var.annotations.structure.ConfigurationMapping" flags="ng" index="IjAfM">
         <reference id="6617704999132114002" name="featureModel" index="IjAfK" />
@@ -89,6 +95,9 @@
         <ref role="IjAfK" to="n76k:5JmNU9PAoEM" resolve="DeploymentConfiguration" />
         <ref role="IjAfL" to="n76k:5JmNU9PAoER" resolve="Debug" />
       </node>
+    </node>
+    <node concept="12mU2y" id="3mKW6ZYgyjE" role="2Q9xDr">
+      <node concept="3GpDuo" id="3mKW6ZYgyjF" role="3GpDut" />
     </node>
   </node>
 </model>

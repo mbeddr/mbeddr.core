@@ -55,6 +55,12 @@
         <property role="2V$B1Q" value="de.slisson.mps.richtext" />
       </node>
     </node>
+    <node concept="3vrm2R" id="3TrpzyP_Ft7" role="3vrhxr">
+      <node concept="2V$Bhx" id="3TrpzyP_Ftg" role="2V$M_3">
+        <property role="2V$B1T" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a" />
+        <property role="2V$B1Q" value="com.mbeddr.doc" />
+      </node>
+    </node>
   </node>
 </model>
 

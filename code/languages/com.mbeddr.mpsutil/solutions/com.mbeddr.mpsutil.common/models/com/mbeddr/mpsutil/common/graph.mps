@@ -1781,6 +1781,28 @@
       <property role="TrG5h" value="computeSCC" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="P$JXv" id="2G8yZXxJdMs" role="lGtFl">
+        <node concept="TZ5HA" id="2G8yZXxJdMt" role="TZ5H$">
+          <node concept="1dT_AC" id="2G8yZXxJdMu" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the strongly connected components of the given graph." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2G8yZXxJdMv" role="TUOzN">
+          <property role="TUZQ4" value="the graph" />
+          <node concept="zr_55" id="2G8yZXxJdMx" role="zr_5Q">
+            <ref role="zr_51" node="4kDlJ5bgbhI" resolve="graph" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2G8yZXxJdMy" role="TUOzN">
+          <property role="TUZQ4" value="the type paramter of the nodes in the graph" />
+          <node concept="zr_56" id="2G8yZXxJdM$" role="zr_5Q">
+            <ref role="zr_51" node="4kDlJ5bgbhr" resolve="T" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2G8yZXxJdM_" role="x79VK">
+          <property role="x79VB" value="the SCCs as sets of set of nodes" />
+        </node>
+      </node>
       <node concept="3clFbS" id="4kDlJ5bgbgN" role="3clF47">
         <node concept="3cpWs6" id="2G8yZXxJO4z" role="3cqZAp">
           <node concept="1rXfSq" id="2G8yZXxJO5N" role="3cqZAk">
@@ -1810,28 +1832,6 @@
           <node concept="16syzq" id="4kDlJ5bgsVq" role="11_B2D">
             <ref role="16sUi3" node="4kDlJ5bgbhr" resolve="T" />
           </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="2G8yZXxJdMs" role="lGtFl">
-        <node concept="TZ5HA" id="2G8yZXxJdMt" role="TZ5H$">
-          <node concept="1dT_AC" id="2G8yZXxJdMu" role="1dT_Ay">
-            <property role="1dT_AB" value="Computes the strongly connected components of the given graph." />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="2G8yZXxJdMv" role="TUOzN">
-          <property role="TUZQ4" value="the graph" />
-          <node concept="zr_55" id="2G8yZXxJdMx" role="zr_5Q">
-            <ref role="zr_51" node="4kDlJ5bgbhI" resolve="graph" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="2G8yZXxJdMy" role="TUOzN">
-          <property role="TUZQ4" value="the type paramter of the nodes in the graph" />
-          <node concept="zr_56" id="2G8yZXxJdM$" role="zr_5Q">
-            <ref role="zr_51" node="4kDlJ5bgbhr" resolve="T" />
-          </node>
-        </node>
-        <node concept="x79VA" id="2G8yZXxJdM_" role="x79VK">
-          <property role="x79VB" value="the SCCs as sets of set of nodes" />
         </node>
       </node>
     </node>

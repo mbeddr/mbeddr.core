@@ -2,9 +2,9 @@
 <model ref="r:6bf990da-e552-495f-8c58-077862f441bf(com.mbeddr.analyses.stan.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -93,7 +93,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -635,6 +635,9 @@
               <node concept="37vLTw" id="2FPaW3Ezrbv" role="37wK5m">
                 <ref role="3cqZAo" node="2FPaW3EyS5l" resolve="completenessCondition" />
               </node>
+              <node concept="37vLTw" id="7YWlEjTqRd8" role="37wK5m">
+                <ref role="3cqZAo" node="2FPaW3EyRqS" resolve="dt" />
+              </node>
             </node>
           </node>
         </node>
@@ -1140,6 +1143,9 @@
                       <ref role="1Pybhc" to="nemf:4gj0JzlNUq" resolve="Z3Checker" />
                       <node concept="37vLTw" id="4gj0Jzo2$0" role="37wK5m">
                         <ref role="3cqZAo" node="4gj0Jzo2zL" resolve="verifCond" />
+                      </node>
+                      <node concept="37vLTw" id="7YWlEjTqRfk" role="37wK5m">
+                        <ref role="3cqZAo" node="4gj0Jzo2$9" resolve="dt" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="52nALqIEkRW" role="37vLTJ">
