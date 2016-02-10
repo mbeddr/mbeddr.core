@@ -463,14 +463,24 @@
               </node>
             </node>
             <node concept="3cpWs6" id="2ZHlC005sRI" role="3cqZAp">
-              <node concept="2OqwBi" id="2ZHlC004wlQ" role="3cqZAk">
-                <node concept="37vLTw" id="2ZHlC004wiA" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2ZHlC004w6Q" resolve="selNode" />
+              <node concept="1Wc70l" id="45f0X_J3EEg" role="3cqZAk">
+                <node concept="2OqwBi" id="45f0X_J3EJp" role="3uHU7w">
+                  <node concept="37vLTw" id="45f0X_J3EHO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2ZHlC004vET" resolve="c" />
+                  </node>
+                  <node concept="liA8E" id="45f0X_J3EMy" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.isBig():boolean" resolve="isBig" />
+                  </node>
                 </node>
-                <node concept="1mIQ4w" id="2ZHlC004wnB" role="2OqNvi">
-                  <node concept="25Kdxt" id="2ZHlC004won" role="cj9EA">
-                    <node concept="37vLTw" id="2ZHlC004wpE" role="25KhWn">
-                      <ref role="3cqZAo" node="2ZHlC004vFh" resolve="concept" />
+                <node concept="2OqwBi" id="2ZHlC004wlQ" role="3uHU7B">
+                  <node concept="37vLTw" id="2ZHlC004wiA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2ZHlC004w6Q" resolve="selNode" />
+                  </node>
+                  <node concept="1mIQ4w" id="2ZHlC004wnB" role="2OqNvi">
+                    <node concept="25Kdxt" id="2ZHlC004won" role="cj9EA">
+                      <node concept="37vLTw" id="2ZHlC004wpE" role="25KhWn">
+                        <ref role="3cqZAo" node="2ZHlC004vFh" resolve="concept" />
+                      </node>
                     </node>
                   </node>
                 </node>
