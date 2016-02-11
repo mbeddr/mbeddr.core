@@ -1999,6 +1999,17 @@
     <property role="turDy" value="mpsDistribution.xml" />
     <property role="3GE5qa" value="ide" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.rcp" />
+    <node concept="398rNT" id="5wLtKNeV_4a" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <node concept="55IIr" id="5wLtKNeV_4b" role="398pKh">
+        <node concept="2Ry0Ak" id="5wLtKNeV_4c" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5wLtKNeV_4d" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="55IIr" id="3IKDaVZnIjY" role="auvoZ" />
     <node concept="1l3spV" id="3IKDaVZnIjZ" role="1l3spN">
       <node concept="1tmT9g" id="5BQuGro_mDY" role="39821P">
@@ -2011,7 +2022,7 @@
             <node concept="28jJK3" id="2lgcjg39hVx" role="39821P">
               <property role="28jJZ5" value="755" />
               <node concept="398BVA" id="5wLtKNeUYCF" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                 <node concept="2Ry0Ak" id="5wLtKNeUYCK" role="iGT6I">
                   <property role="2Ry0Am" value="bin" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYCL" role="2Ry0An">
@@ -2026,7 +2037,7 @@
             <node concept="28jJK3" id="2lgcjg39hVD" role="39821P">
               <property role="28jJZ5" value="755" />
               <node concept="398BVA" id="5wLtKNeUYDb" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                 <node concept="2Ry0Ak" id="5wLtKNeUYDg" role="iGT6I">
                   <property role="2Ry0Am" value="bin" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYDh" role="2Ry0An">
@@ -2041,7 +2052,7 @@
             <node concept="28jJK3" id="6DuyMKt09pd" role="39821P">
               <property role="28jJZ5" value="755" />
               <node concept="398BVA" id="5wLtKNeUYDF" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                 <node concept="2Ry0Ak" id="5wLtKNeUYDK" role="iGT6I">
                   <property role="2Ry0Am" value="bin" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYDL" role="2Ry0An">
@@ -2158,7 +2169,7 @@
                 <property role="3LWZYl" value="**/fsnotifier-arm" />
               </node>
               <node concept="398BVA" id="5wLtKNeUYGS" role="2HvfZ0">
-                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                 <node concept="2Ry0Ak" id="5wLtKNeUYGW" role="iGT6I">
                   <property role="2Ry0Am" value="bin" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYGX" role="2Ry0An">
@@ -2251,7 +2262,7 @@
           <node concept="398223" id="6xv$4WsFwxX" role="39821P">
             <node concept="28jJK3" id="35zoHQHRZ3w" role="39821P">
               <node concept="398BVA" id="5wLtKNeUYJg" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                 <node concept="2Ry0Ak" id="5wLtKNeUYJk" role="iGT6I">
                   <property role="2Ry0Am" value="help" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYJl" role="2Ry0An">
@@ -2574,7 +2585,7 @@
                   <property role="3LWZYl" value="**/*.exe" />
                 </node>
                 <node concept="398BVA" id="5wLtKNeUYTU" role="2HvfZ0">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYTY" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYTZ" role="2Ry0An">
@@ -2586,7 +2597,7 @@
               <node concept="28jJK3" id="2lgcjg39Ytp" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYUl" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYUq" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYUr" role="2Ry0An">
@@ -2601,7 +2612,7 @@
               <node concept="28jJK3" id="6DuyMKt09yY" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYUP" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYUU" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYUV" role="2Ry0An">
@@ -2616,7 +2627,7 @@
               <node concept="28jJK3" id="2lgcjg39Ytv" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYVl" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYVq" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYVr" role="2Ry0An">
@@ -2631,7 +2642,7 @@
               <node concept="28jJK3" id="2lgcjg39Yt$" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYVP" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYVU" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYVV" role="2Ry0An">
@@ -2646,7 +2657,7 @@
               <node concept="28jJK3" id="2lgcjg39YtD" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYWl" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYWq" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYWr" role="2Ry0An">
@@ -2671,7 +2682,7 @@
                   <property role="3LWZYl" value="**/fsnotifier-arm" />
                 </node>
                 <node concept="398BVA" id="5wLtKNeUYWM" role="2HvfZ0">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYWQ" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYWR" role="2Ry0An">
@@ -2683,7 +2694,7 @@
               <node concept="28jJK3" id="2lgcjg39Yu5" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYXd" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYXi" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYXj" role="2Ry0An">
@@ -2698,7 +2709,7 @@
               <node concept="28jJK3" id="2lgcjg39Yua" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYXH" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYXM" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYXN" role="2Ry0An">
@@ -2713,7 +2724,7 @@
               <node concept="28jJK3" id="6DuyMKt09xN" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYYd" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYYi" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYYj" role="2Ry0An">
@@ -2735,7 +2746,7 @@
               <node concept="28jJK3" id="2lgcjg39Yux" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYYH" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYYM" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYYN" role="2Ry0An">
@@ -2750,7 +2761,7 @@
               <node concept="28jJK3" id="2lgcjg39Yuz" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYZd" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYZi" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYZj" role="2Ry0An">
@@ -2765,7 +2776,7 @@
               <node concept="28jJK3" id="2lgcjg39Yu$" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUYZH" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUYZM" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUYZN" role="2Ry0An">
@@ -2786,7 +2797,7 @@
             <node concept="398223" id="6xv$4WsFQKU" role="39821P">
               <node concept="28jJK3" id="2lgcjg3aF5j" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZ0d" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ0i" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZ0j" role="2Ry0An">
@@ -2800,7 +2811,7 @@
               </node>
               <node concept="28jJK3" id="2lgcjg3aF5o" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZ0H" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ0M" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZ0N" role="2Ry0An">
@@ -2814,7 +2825,7 @@
               </node>
               <node concept="28jJK3" id="6DuyMKt09$Q" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZ1d" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ1i" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZ1j" role="2Ry0An">
@@ -2829,7 +2840,7 @@
               <node concept="28jJK3" id="2lgcjg39Yuh" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUZ1H" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ1M" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZ1N" role="2Ry0An">
@@ -2844,7 +2855,7 @@
               <node concept="28jJK3" id="2lgcjg39Yun" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUZ2d" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ2i" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZ2j" role="2Ry0An">
@@ -2863,7 +2874,7 @@
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="398BVA" id="5wLtKNeUZ2H" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ2M" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZ2N" role="2Ry0An">
@@ -2916,7 +2927,7 @@
                   <node concept="28jJK3" id="3f6C5dcXexa" role="39821P">
                     <property role="28jJZ5" value="755" />
                     <node concept="398BVA" id="5wLtKNeUZ4w" role="28jJRO">
-                      <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                      <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                       <node concept="2Ry0Ak" id="5wLtKNeUZ4_" role="iGT6I">
                         <property role="2Ry0Am" value="bin" />
                         <node concept="2Ry0Ak" id="5wLtKNeUZ4A" role="2Ry0An">
@@ -2936,7 +2947,7 @@
                   </node>
                   <node concept="28jJK3" id="7d8Y7G7PY3y" role="39821P">
                     <node concept="398BVA" id="5wLtKNeUZ5m" role="28jJRO">
-                      <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                      <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                       <node concept="2Ry0Ak" id="5wLtKNeUZ5r" role="iGT6I">
                         <property role="2Ry0Am" value="bin" />
                         <node concept="2Ry0Ak" id="5wLtKNeUZ5s" role="2Ry0An">
@@ -3037,7 +3048,7 @@
           <node concept="398223" id="6xv$4WsFw$R" role="39821P">
             <node concept="28jJK3" id="2lgcjg3akM7" role="39821P">
               <node concept="398BVA" id="5wLtKNeUZ7Q" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                 <node concept="2Ry0Ak" id="5wLtKNeUZ7U" role="iGT6I">
                   <property role="2Ry0Am" value="help" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZ7V" role="2Ry0An">
@@ -3181,7 +3192,7 @@
               <node concept="28jJK3" id="2lgcjg39YuN" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUZab" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZag" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZah" role="2Ry0An">
@@ -3201,7 +3212,7 @@
               </node>
               <node concept="28jJK3" id="7d8Y7G7PVHy" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZb1" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZb6" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZb7" role="2Ry0An">
@@ -3228,7 +3239,7 @@
               </node>
               <node concept="28jJK3" id="2lgcjg3akKQ" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZbR" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZbW" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZbX" role="2Ry0An">
@@ -3242,7 +3253,7 @@
               </node>
               <node concept="28jJK3" id="2lgcjg3akKV" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZcn" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZcs" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZct" role="2Ry0An">
@@ -3256,7 +3267,7 @@
               </node>
               <node concept="28jJK3" id="6DuyMKt09EH" role="39821P">
                 <node concept="398BVA" id="5wLtKNeUZcR" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZcW" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZcX" role="2Ry0An">
@@ -3365,7 +3376,7 @@
               <node concept="28jJK3" id="2lgcjg3akLb" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUZgv" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZg$" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZg_" role="2Ry0An">
@@ -3380,7 +3391,7 @@
               <node concept="28jJK3" id="2lgcjg3akLg" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="398BVA" id="5wLtKNeUZgZ" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZh4" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZh5" role="2Ry0An">
@@ -3399,7 +3410,7 @@
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="398BVA" id="5wLtKNeUZhv" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                   <node concept="2Ry0Ak" id="5wLtKNeUZh$" role="iGT6I">
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZh_" role="2Ry0An">
@@ -3431,7 +3442,7 @@
                     </node>
                   </node>
                   <node concept="398BVA" id="5wLtKNeUZhW" role="28jJRO">
-                    <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+                    <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
                     <node concept="2Ry0Ak" id="5wLtKNeUZi0" role="iGT6I">
                       <property role="2Ry0Am" value="help" />
                       <node concept="2Ry0Ak" id="5wLtKNeUZi1" role="2Ry0An">
@@ -3541,7 +3552,7 @@
     <node concept="2sgV4H" id="3IKDaVZnIk0" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5wLtKNeUY_e" role="2JcizS">
-        <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.generic.distribution" />
+        <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="5wLtKNeV9RL" role="1l3spa">
@@ -3550,34 +3561,24 @@
         <ref role="398BVh" node="5wLtKNeViCH" resolve="artifacts.allInOne" />
       </node>
     </node>
-    <node concept="398rNT" id="5wLtKNeUY_a" role="1l3spd">
-      <property role="TrG5h" value="mps.generic.distribution" />
-      <node concept="55IIr" id="5wLtKNeUYC9" role="398pKh">
-        <node concept="2Ry0Ak" id="5wLtKNeUYCi" role="iGT6I">
+    <node concept="398rNT" id="5wLtKNeV_2d" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="5wLtKNeV_5m" role="398pKh">
+        <ref role="398BVh" node="5wLtKNeV_4a" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="5wLtKNeV_5v" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
-          <node concept="2Ry0Ak" id="5wLtKNeUYCr" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS 3.3" />
-          </node>
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="5wLtKNeUY_a" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+    </node>
     <node concept="398rNT" id="5wLtKNeViCH" role="1l3spd">
       <property role="TrG5h" value="artifacts.allInOne" />
-      <node concept="55IIr" id="5wLtKNeViDt" role="398pKh">
-        <node concept="2Ry0Ak" id="5wLtKNeViDA" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5wLtKNeVmbT" role="2Ry0An">
-            <property role="2Ry0Am" value="com.mbeddr.allInOne" />
-            <node concept="2Ry0Ak" id="5wLtKNeVmc2" role="2Ry0An">
-              <property role="2Ry0Am" value="build" />
-              <node concept="2Ry0Ak" id="5wLtKNeVmcb" role="2Ry0An">
-                <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="5wLtKNeVmck" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.allInOne" />
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="398BVA" id="5wLtKNeV_5P" role="398pKh">
+        <ref role="398BVh" node="5wLtKNeV_2d" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="5wLtKNeV_5V" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.allInOne" />
         </node>
       </node>
     </node>
