@@ -30,6 +30,12 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="7992580511422656150" name="com.mbeddr.doc.structure.GreyBoxParagraph" flags="ng" index="20TvsQ">
+        <property id="3290290805721391227" name="backgroundColor_green" index="Rq9pP" />
+        <property id="3290290805721391217" name="backgroundColor_red" index="Rq9pZ" />
+        <property id="3290290805721426968" name="backgroundColor_blue" index="RqLCm" />
+        <child id="7992580511422656152" name="text" index="20TvsS" />
+      </concept>
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <property id="324047639344492301" name="referenceOnly" index="1P4p2h" />
         <child id="6165313375056012515" name="ref" index="$CzcU" />
@@ -75,6 +81,7 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
+      <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
     </language>
     <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
       <concept id="4457500422381351715" name="com.mbeddr.doc.gen_latex.structure.LatexRenderer" flags="ng" index="1jVoCB">
@@ -126,6 +133,19 @@
     <node concept="3wLtaw" id="QRmqzH$YQa" role="1_0VJ0">
       <property role="TrG5h" value="introAndTOC" />
       <property role="1_0VJr" value="mbeddr User Guide" />
+      <node concept="20TvsQ" id="2QDtwSqK31F" role="1_0VJ0">
+        <property role="Rq9pZ" value="252" />
+        <property role="Rq9pP" value="194" />
+        <property role="RqLCm" value="0" />
+        <node concept="19SGf9" id="2QDtwSqK31G" role="20TvsS">
+          <node concept="19SUe$" id="2QDtwSqK31H" role="19SJt6">
+            <property role="19SUeA" value="New Users: before running through the tutorial, it is HIGHLY RECOMMENDED that you execute the interactive editing guide that teaches you how the MPS editor works. To do this, press the blue &quot;Play&quot; button in the toolbar above; if&#10;you open this for the first time, the editing guide is opened in the tab next to this one. " />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2QDtwSqK318" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
       <node concept="1_0LV8" id="hZfTLLYKXn" role="1_0VJ0">
         <node concept="19SGf9" id="hZfTLLYKXo" role="1_0LWR">
           <node concept="19SUe$" id="hZfTLLYKXp" role="19SJt6">

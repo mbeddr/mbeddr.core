@@ -200,6 +200,7 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
+      <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
@@ -284,6 +285,63 @@
                 </node>
                 <node concept="3clFbJ" id="2QDtwSqEJCT" role="3cqZAp">
                   <node concept="3clFbS" id="2QDtwSqEJCU" role="3clFbx">
+                    <node concept="3clFbH" id="4mMhkwOkgYU" role="3cqZAp" />
+                    <node concept="1QHqEO" id="2QDtwSqOdJv" role="3cqZAp">
+                      <node concept="1QHqEC" id="2QDtwSqOdJx" role="1QHqEI">
+                        <node concept="3clFbS" id="2QDtwSqOdJz" role="1bW5cS">
+                          <node concept="3cpWs8" id="2QDtwSqOb$P" role="3cqZAp">
+                            <node concept="3cpWsn" id="2QDtwSqOb$Q" role="3cpWs9">
+                              <property role="TrG5h" value="exercise" />
+                              <node concept="3Tqbb2" id="2QDtwSqOb$R" role="1tU5fm">
+                                <ref role="ehGHo" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
+                              </node>
+                              <node concept="3B5_sB" id="2QDtwSqOb$S" role="33vP2m">
+                                <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" resolve="mbeddr Editing Guide" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="2QDtwSqOb$T" role="3cqZAp">
+                            <node concept="37vLTI" id="2QDtwSqOb$U" role="3clFbG">
+                              <node concept="10Nm6u" id="2QDtwSqOb$V" role="37vLTx" />
+                              <node concept="2OqwBi" id="2QDtwSqOb$W" role="37vLTJ">
+                                <node concept="37vLTw" id="2QDtwSqOb$X" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2QDtwSqOb$Q" resolve="exercise" />
+                                </node>
+                                <node concept="3TrEf2" id="2QDtwSqOb$Y" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="2QDtwSqOb$Z" role="3cqZAp">
+                            <node concept="2OqwBi" id="2QDtwSqOb_0" role="3clFbG">
+                              <node concept="2YIFZM" id="2QDtwSqOb_1" role="2Oq$k0">
+                                <ref role="37wK5l" to="yuwt:5h2rxDjXLd6" resolve="getInstance" />
+                                <ref role="1Pybhc" to="yuwt:5h2rxDjX6bI" resolve="ExerciseExecutor" />
+                                <node concept="37vLTw" id="2QDtwSqObYk" role="37wK5m">
+                                  <ref role="3cqZAo" node="2QDtwSqEJmQ" resolve="mpsProject" />
+                                </node>
+                                <node concept="37vLTw" id="2QDtwSqOb_5" role="37wK5m">
+                                  <ref role="3cqZAo" node="2QDtwSqOb$Q" resolve="exercise" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="2QDtwSqOb_6" role="2OqNvi">
+                                <ref role="37wK5l" to="yuwt:5h2rxDjX6mY" resolve="start" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2QDtwSqOdZm" role="ukAjM">
+                        <node concept="37vLTw" id="2QDtwSqOdZn" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2QDtwSqEJmQ" resolve="mpsProject" />
+                        </node>
+                        <node concept="liA8E" id="2QDtwSqOdZo" role="2OqNvi">
+                          <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="4mMhkwOkh56" role="3cqZAp" />
                     <node concept="1QHqEM" id="2QDtwSqEJCZ" role="3cqZAp">
                       <node concept="1QHqEC" id="2QDtwSqEJD0" role="1QHqEI">
                         <node concept="3clFbS" id="2QDtwSqEJD1" role="1bW5cS">
@@ -454,6 +512,7 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbH" id="2QDtwSqOdfq" role="3cqZAp" />
                   </node>
                   <node concept="17R0WA" id="2QDtwSqEJD_" role="3clFbw">
                     <node concept="Xl_RD" id="2QDtwSqEJDA" role="3uHU7w">

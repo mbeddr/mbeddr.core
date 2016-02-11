@@ -127,22 +127,10 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
-      </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
-        <property id="3431613015799084476" name="isTest" index="iO3LB" />
-      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
-        <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
-      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
-        <reference id="7717755763392524108" name="module" index="2v9HqP" />
-      </concept>
-      <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
-        <reference id="8719112291175211414" name="template" index="2xfifS" />
-      </concept>
+      <concept id="440773076688628186" name="com.mbeddr.core.buildconfig.structure.NothingPlatform" flags="ng" index="wyh$t" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
@@ -343,30 +331,23 @@
   </registry>
   <node concept="2v9HqL" id="2ZHlC008Ejp">
     <property role="3GE5qa" value="dummy" />
-    <node concept="2xfidK" id="2ZHlC008Ejq" role="2AWWZH">
-      <ref role="2xfifS" to="mfo1:113J0Fy2qXn" resolve="Desktop Platform" />
-    </node>
-    <node concept="2eOfOl" id="2ZHlC008Ejt" role="2ePNbc">
-      <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="Dummy" />
-      <node concept="2v9HqM" id="2ZHlC00aVer" role="2eOfOg">
-        <ref role="2v9HqP" node="2ZHlC008EjG" resolve="Dummy" />
-      </node>
-    </node>
-    <node concept="2Q9Fgs" id="2ZHlC00aVel" role="2Q9xDr">
-      <node concept="2Q9FjX" id="2ZHlC00aVem" role="2Q9FjI" />
+    <node concept="wyh$t" id="3668EmYmEjQ" role="2AWWZH" />
+    <node concept="2Q9Fgs" id="3668EmYmFJS" role="2Q9xDr">
+      <node concept="2Q9FjX" id="3668EmYmFJT" role="2Q9FjI" />
     </node>
   </node>
   <node concept="N3F5e" id="2ZHlC008EjG">
     <property role="TrG5h" value="Dummy" />
     <property role="3GE5qa" value="dummy" />
+    <node concept="2NXPZ9" id="3668EmYmpe8" role="N3F5h">
+      <property role="TrG5h" value="empty_1455191538846_4" />
+    </node>
     <node concept="N3Fnx" id="2ZHlC008EjI" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="2ZHlC008EjK" role="3XIRFX">
-        <node concept="3XISUE" id="2ZHlC008EjL" role="3XIRFZ" />
         <node concept="2BFjQ_" id="2ZHlC008EjS" role="3XIRFZ">
-          <node concept="3TlMh9" id="2ZHlC008EjT" role="2BFjQA">
+          <node concept="3TlMh9" id="3668EmYm_XR" role="2BFjQA">
             <property role="2hmy$m" value="0" />
           </node>
         </node>
@@ -396,7 +377,7 @@
     </node>
   </node>
   <node concept="2LPuAz" id="2ZHlC00a9Ux">
-    <property role="TrG5h" value="mbeddr Editing Guide" />
+    <property role="TrG5h" value="mbeddrEditingGuide" />
     <node concept="2LPuBx" id="2ZHlC00a9Uy" role="2LPuAy">
       <property role="TrG5h" value="Code Completion 1" />
       <node concept="19SGf9" id="2ZHlC00a9Uz" role="JZmik">
