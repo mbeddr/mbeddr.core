@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="artifacts/rcpLangDev" />
+      <option name="artifactRules" value="artifacts/mpsDistribution" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters>
@@ -17,7 +17,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
       <runner id="RUNNER_7" name="Build mbeddr RCP" type="Ant">
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.rcp/mpsDistribution.xml" />
-          <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties%" />
+          <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
           <param name="target" value="clean,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
