@@ -2069,45 +2069,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7_h" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7_i" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7_j" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7_k" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7_l" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7_m" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7_n" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7_o" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7_p" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7_q" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7_r" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7_s" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7_t" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7A9" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mbeddr.vmoptions" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGce" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGcD" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2116,45 +2081,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7AR" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7AS" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7AT" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7AU" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7AV" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7AW" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7AX" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7AY" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7AZ" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7B0" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7B1" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7B2" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7B3" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7BJ" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mbeddr64.vmoptions" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGe1" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGe9" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr64.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2192,45 +2122,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7BN" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7BO" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7BP" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7BQ" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7BR" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7BS" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7BT" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7BU" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7BV" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7BW" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7BX" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7BY" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7BZ" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7CF" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mps.sh" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGoP" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGoX" role="iGT6I">
+                  <property role="2Ry0Am" value="mps.sh" />
                 </node>
               </node>
             </node>
@@ -2321,45 +2216,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7D7" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7D8" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7D9" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7Da" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7Db" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7Dc" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7Dd" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7De" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7Df" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7Dg" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7Dh" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7Di" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7Dj" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7Dk" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mbeddr.vmoptions" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGjb" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGjc" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2368,45 +2228,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7DZ" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7E0" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7E1" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7E2" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7E3" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7E4" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7E5" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7E6" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7E7" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7E8" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7E9" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7Ea" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7Eb" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7ER" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mbeddr64.vmoptions" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGfx" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGfy" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr64.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2422,45 +2247,10 @@
               <node concept="3co7Ac" id="6xv$4WsFw_8" role="28jJR8">
                 <property role="3co7Am" value="crlf" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7Gt" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7Gu" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7Gv" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7Gw" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7Gx" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7Gy" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7Gz" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7G$" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7G_" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7GA" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7GB" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7GC" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7GD" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7GE" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mbeddr.vmoptions" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGjX" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGjY" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2476,45 +2266,10 @@
               <node concept="3co7Ac" id="2lwFGYPkEds" role="28jJR8">
                 <property role="3co7Am" value="crlf" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7F_" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7FA" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7FB" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7FC" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7FD" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7FE" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7FF" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7FG" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7FH" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7FI" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7FJ" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7FK" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7FL" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7FM" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mbeddr64.vmoptions" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGgX" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGgY" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr64.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2532,45 +2287,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7Hl" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7Hm" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7Hn" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7Ho" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7Hp" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7Hq" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7Hr" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7Hs" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7Ht" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7Hu" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7Hv" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7Hw" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7Hx" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7Id" role="2Ry0An">
-                                          <property role="2Ry0Am" value="mps.sh" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGnZ" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGo7" role="iGT6I">
+                  <property role="2Ry0Am" value="mps.sh" />
                 </node>
               </node>
             </node>
@@ -2995,45 +2715,10 @@
                     <property role="3co7Am" value="lf" />
                     <property role="3cpA_W" value="true" />
                   </node>
-                  <node concept="55IIr" id="5wLtKNeV7wy" role="28jJRO">
-                    <node concept="2Ry0Ak" id="5wLtKNeV7wC" role="iGT6I">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7wD" role="2Ry0An">
-                        <property role="2Ry0Am" value=".." />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7x0" role="2Ry0An">
-                          <property role="2Ry0Am" value="code" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7x9" role="2Ry0An">
-                            <property role="2Ry0Am" value="languages" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7xi" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.build" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7xy" role="2Ry0An">
-                                <property role="2Ry0Am" value="solutions" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7xF" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7xO" role="2Ry0An">
-                                    <property role="2Ry0Am" value="source_gen" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7xX" role="2Ry0An">
-                                      <property role="2Ry0Am" value="com" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7y6" role="2Ry0An">
-                                        <property role="2Ry0Am" value="mbeddr" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7yf" role="2Ry0An">
-                                          <property role="2Ry0Am" value="rcp" />
-                                          <node concept="2Ry0Ak" id="5wLtKNeV7yo" role="2Ry0An">
-                                            <property role="2Ry0Am" value="config" />
-                                            <node concept="2Ry0Ak" id="5wLtKNeV7yx" role="2Ry0An">
-                                              <property role="2Ry0Am" value="Info.plist.xml" />
-                                            </node>
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                  <node concept="398BVA" id="5wLtKNeVGlx" role="28jJRO">
+                    <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                    <node concept="2Ry0Ak" id="5wLtKNeVGlD" role="iGT6I">
+                      <property role="2Ry0Am" value="Info.plist.xml" />
                     </node>
                   </node>
                 </node>
@@ -3078,45 +2763,10 @@
             <node concept="3co7Ac" id="2lgcjg3akM5" role="28jJR8">
               <property role="3co7Am" value="crlf" />
             </node>
-            <node concept="55IIr" id="5wLtKNeV7ID" role="28jJRO">
-              <node concept="2Ry0Ak" id="5wLtKNeV7IE" role="iGT6I">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="5wLtKNeV7IF" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7IG" role="2Ry0An">
-                    <property role="2Ry0Am" value="code" />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7IH" role="2Ry0An">
-                      <property role="2Ry0Am" value="languages" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7II" role="2Ry0An">
-                        <property role="2Ry0Am" value="com.mbeddr.build" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7IJ" role="2Ry0An">
-                          <property role="2Ry0Am" value="solutions" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7IK" role="2Ry0An">
-                            <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7IL" role="2Ry0An">
-                              <property role="2Ry0Am" value="source_gen" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7IM" role="2Ry0An">
-                                <property role="2Ry0Am" value="com" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7IN" role="2Ry0An">
-                                  <property role="2Ry0Am" value="mbeddr" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7IO" role="2Ry0An">
-                                    <property role="2Ry0Am" value="rcp" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7IP" role="2Ry0An">
-                                      <property role="2Ry0Am" value="config" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7Jx" role="2Ry0An">
-                                        <property role="2Ry0Am" value="mbeddr.bat" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+            <node concept="398BVA" id="5wLtKNeVGn9" role="28jJRO">
+              <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+              <node concept="2Ry0Ak" id="5wLtKNeVGnh" role="iGT6I">
+                <property role="2Ry0Am" value="mbeddr.bat" />
               </node>
             </node>
           </node>
@@ -3284,45 +2934,10 @@
                   <property role="3co7Am" value="lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
-                <node concept="55IIr" id="5wLtKNeV7J_" role="28jJRO">
-                  <node concept="2Ry0Ak" id="5wLtKNeV7JA" role="iGT6I">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7JB" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7JC" role="2Ry0An">
-                        <property role="2Ry0Am" value="code" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7JD" role="2Ry0An">
-                          <property role="2Ry0Am" value="languages" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7JE" role="2Ry0An">
-                            <property role="2Ry0Am" value="com.mbeddr.build" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7JF" role="2Ry0An">
-                              <property role="2Ry0Am" value="solutions" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7JG" role="2Ry0An">
-                                <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7JH" role="2Ry0An">
-                                  <property role="2Ry0Am" value="source_gen" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7JI" role="2Ry0An">
-                                    <property role="2Ry0Am" value="com" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7JJ" role="2Ry0An">
-                                      <property role="2Ry0Am" value="mbeddr" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7JK" role="2Ry0An">
-                                        <property role="2Ry0Am" value="rcp" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7JL" role="2Ry0An">
-                                          <property role="2Ry0Am" value="config" />
-                                          <node concept="2Ry0Ak" id="5wLtKNeV7JM" role="2Ry0An">
-                                            <property role="2Ry0Am" value="mbeddr.vmoptions" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+                <node concept="398BVA" id="5wLtKNeVGkJ" role="28jJRO">
+                  <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                  <node concept="2Ry0Ak" id="5wLtKNeVGkK" role="iGT6I">
+                    <property role="2Ry0Am" value="mbeddr.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -3331,45 +2946,10 @@
                   <property role="3co7Am" value="lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
-                <node concept="55IIr" id="5wLtKNeV7Kt" role="28jJRO">
-                  <node concept="2Ry0Ak" id="5wLtKNeV7Ku" role="iGT6I">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7Kv" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7Kw" role="2Ry0An">
-                        <property role="2Ry0Am" value="code" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7Kx" role="2Ry0An">
-                          <property role="2Ry0Am" value="languages" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7Ky" role="2Ry0An">
-                            <property role="2Ry0Am" value="com.mbeddr.build" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7Kz" role="2Ry0An">
-                              <property role="2Ry0Am" value="solutions" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7K$" role="2Ry0An">
-                                <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7K_" role="2Ry0An">
-                                  <property role="2Ry0Am" value="source_gen" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7KA" role="2Ry0An">
-                                    <property role="2Ry0Am" value="com" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7KB" role="2Ry0An">
-                                      <property role="2Ry0Am" value="mbeddr" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7KC" role="2Ry0An">
-                                        <property role="2Ry0Am" value="rcp" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7KD" role="2Ry0An">
-                                          <property role="2Ry0Am" value="config" />
-                                          <node concept="2Ry0Ak" id="5wLtKNeV7KE" role="2Ry0An">
-                                            <property role="2Ry0Am" value="mbeddr64.vmoptions" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+                <node concept="398BVA" id="5wLtKNeVGip" role="28jJRO">
+                  <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                  <node concept="2Ry0Ak" id="5wLtKNeVGiq" role="iGT6I">
+                    <property role="2Ry0Am" value="mbeddr64.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -3482,45 +3062,10 @@
                 <property role="3co7Am" value="lf" />
                 <property role="3cpA_W" value="true" />
               </node>
-              <node concept="55IIr" id="5wLtKNeV7Ll" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeV7Lm" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeV7Ln" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeV7Lo" role="2Ry0An">
-                      <property role="2Ry0Am" value="code" />
-                      <node concept="2Ry0Ak" id="5wLtKNeV7Lp" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="5wLtKNeV7Lq" role="2Ry0An">
-                          <property role="2Ry0Am" value="com.mbeddr.build" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV7Lr" role="2Ry0An">
-                            <property role="2Ry0Am" value="solutions" />
-                            <node concept="2Ry0Ak" id="5wLtKNeV7Ls" role="2Ry0An">
-                              <property role="2Ry0Am" value="com.mbeddr.rcp" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV7Lt" role="2Ry0An">
-                                <property role="2Ry0Am" value="source_gen" />
-                                <node concept="2Ry0Ak" id="5wLtKNeV7Lu" role="2Ry0An">
-                                  <property role="2Ry0Am" value="com" />
-                                  <node concept="2Ry0Ak" id="5wLtKNeV7Lv" role="2Ry0An">
-                                    <property role="2Ry0Am" value="mbeddr" />
-                                    <node concept="2Ry0Ak" id="5wLtKNeV7Lw" role="2Ry0An">
-                                      <property role="2Ry0Am" value="rcp" />
-                                      <node concept="2Ry0Ak" id="5wLtKNeV7Lx" role="2Ry0An">
-                                        <property role="2Ry0Am" value="config" />
-                                        <node concept="2Ry0Ak" id="5wLtKNeV7Md" role="2Ry0An">
-                                          <property role="2Ry0Am" value="Info.plist.xml" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGmn" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGmo" role="iGT6I">
+                  <property role="2Ry0Am" value="Info.plist.xml" />
                 </node>
               </node>
             </node>
@@ -3579,6 +3124,47 @@
         <ref role="398BVh" node="5wLtKNeV_2d" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="5wLtKNeV_5V" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="5wLtKNeVG8X" role="1l3spd">
+      <property role="TrG5h" value="artifacts.startup" />
+      <node concept="55IIr" id="5wLtKNeVGaG" role="398pKh">
+        <node concept="2Ry0Ak" id="5wLtKNeVGaH" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5wLtKNeVGaI" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="5wLtKNeVGaJ" role="2Ry0An">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="5wLtKNeVGaK" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGaL" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.build" />
+                  <node concept="2Ry0Ak" id="5wLtKNeVGaM" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="5wLtKNeVGaN" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.rcp" />
+                      <node concept="2Ry0Ak" id="5wLtKNeVGaO" role="2Ry0An">
+                        <property role="2Ry0Am" value="source_gen" />
+                        <node concept="2Ry0Ak" id="5wLtKNeVGaP" role="2Ry0An">
+                          <property role="2Ry0Am" value="com" />
+                          <node concept="2Ry0Ak" id="5wLtKNeVGaQ" role="2Ry0An">
+                            <property role="2Ry0Am" value="mbeddr" />
+                            <node concept="2Ry0Ak" id="5wLtKNeVGaR" role="2Ry0An">
+                              <property role="2Ry0Am" value="rcp" />
+                              <node concept="2Ry0Ak" id="5wLtKNeVGaS" role="2Ry0An">
+                                <property role="2Ry0Am" value="config" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
