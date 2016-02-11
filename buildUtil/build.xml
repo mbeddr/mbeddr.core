@@ -1,0 +1,36 @@
+<project name="build mbeddr distributions">
+	
+  <property name="base-url" value="https://teamcity.jetbrains.com/httpAuth/app/rest/builds"/>
+  <property name="jdk-build-id" value="buildType:MPS_34_GetMpsHelp"/>
+  <property name="branch" value="branch:default:true"/>   
+  <property name="latest-build" value="status:SUCCESS"/>
+  <property name="jdk-artifacts-url" value="${base-url}/${jdk-build-id},${branch},${latest-build}/artifacts/files"/>
+  <property name="dmg.image" value="TODO"/>
+
+  <property name="build.tmp" value="./"/>
+  <property name="build.code" value="mbeddr.snapshot-macos"/>
+	
+
+<target name="get-jdk" depends="prepare">
+  <echo> Getting custom jdk</echo>
+  <property name="mac-jdk-url" value="${jdk-artifacts-url}/openJDK/jdk.tar.gz"/>
+  <get src="${mac-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
+  
+  <property name="win-jdk-url" value="${jdk-artifacts-url}/JDK/jdk.zip"/>
+  <get src="${win-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
+</target>
+
+
+<target name="macbuild">
+  <copy file="${dmg.image}" tofile="${build.tmp}/${build.code}.png"/>
+
+  <exec host="${mac.host}"
+	  dir="${build.tmp}"
+      command="./mpssign.sh ${build.code}.zip ${build.code} jdk.tar.gz"/>
+
+  <exec host="${mac.host}"
+	  dir="${build.tmp}"
+      command="./mpsdmg.sh ${build.code}.zip ${build.code}"/>
+</target>
+
+</project>
