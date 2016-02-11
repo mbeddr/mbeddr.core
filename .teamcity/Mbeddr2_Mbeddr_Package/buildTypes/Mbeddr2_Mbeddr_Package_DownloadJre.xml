@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="buildUtil/*.zip&#xA;buildUtil/*.tar.gz" />
+      <option name="artifactRules" value="mbeddr.core/buildUtil/*.zip&#xA;mbeddr.core/buildUtil/*.tar.gz" />
     </options>
     <parameters />
     <build-runners>
