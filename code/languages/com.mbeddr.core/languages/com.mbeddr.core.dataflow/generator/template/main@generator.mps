@@ -125,6 +125,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
@@ -964,6 +970,46 @@
               </node>
               <node concept="9aQIb" id="2U8JvBXrt4y" role="9aQIa">
                 <node concept="3clFbS" id="2U8JvBXrt4z" role="9aQI4">
+                  <node concept="3cpWs8" id="1xH3giefGCa" role="3cqZAp">
+                    <node concept="3cpWsn" id="1xH3giefGCb" role="3cpWs9">
+                      <property role="TrG5h" value="nestedProgramInstruction" />
+                      <node concept="3uibUv" id="1xH3giefGBB" role="1tU5fm">
+                        <ref role="3uigEE" to="f696:5caPF5jN5j6" resolve="NestedProgramInstruction" />
+                      </node>
+                      <node concept="2ShNRf" id="1xH3giefGCc" role="33vP2m">
+                        <node concept="1pGfFk" id="1xH3giefGCd" role="2ShVmc">
+                          <ref role="37wK5l" to="f696:183c22F75Fi" resolve="NestedProgramInstruction" />
+                          <node concept="37vLTw" id="1xH3giefGCe" role="37wK5m">
+                            <ref role="3cqZAo" node="18PvkuO$NN7" resolve="point" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="183c22F78v0" role="3cqZAp">
+                    <node concept="3SKdUq" id="183c22F78v2" role="3SKWNk">
+                      <property role="3SKdUp" value="the instruction must be added before the current program is set" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="183c22F78_0" role="3cqZAp">
+                    <node concept="3SKdUq" id="183c22F78_2" role="3SKWNk">
+                      <property role="3SKdUp" value="in order for the context sensitive program instruction lookups to work correctly" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="5caPF5jNb2r" role="3cqZAp">
+                    <node concept="2OqwBi" id="5caPF5jNb4N" role="3clFbG">
+                      <node concept="37vLTw" id="5caPF5jNb2p" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5caPF5jNrUy" resolve="builder" />
+                      </node>
+                      <node concept="liA8E" id="5caPF5jNbaW" role="2OqNvi">
+                        <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.addInstruction(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction,jetbrains.mps.lang.dataFlow.framework.StructuralProgramBuilder$Position):void" resolve="addInstruction" />
+                        <node concept="37vLTw" id="1xH3giefGCg" role="37wK5m">
+                          <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
+                        </node>
+                        <node concept="10Nm6u" id="5caPF5jNh77" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="5caPF5jNdCy" role="3cqZAp">
                     <node concept="3cpWsn" id="5caPF5jNdCz" role="3cpWs9">
                       <property role="TrG5h" value="current" />
@@ -982,25 +1028,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3cpWs8" id="1xH3giefGCa" role="3cqZAp">
-                    <node concept="3cpWsn" id="1xH3giefGCb" role="3cpWs9">
-                      <property role="TrG5h" value="nestedProgramInstruction" />
-                      <node concept="3uibUv" id="1xH3giefGBB" role="1tU5fm">
-                        <ref role="3uigEE" to="f696:5caPF5jN5j6" resolve="NestedProgramInstruction" />
-                      </node>
-                      <node concept="2ShNRf" id="1xH3giefGCc" role="33vP2m">
-                        <node concept="1pGfFk" id="1xH3giefGCd" role="2ShVmc">
-                          <ref role="37wK5l" to="f696:5caPF5jNa4m" resolve="NestedProgramInstruction" />
-                          <node concept="37vLTw" id="1xH3giefGCe" role="37wK5m">
-                            <ref role="3cqZAo" node="18PvkuO$NN7" resolve="point" />
-                          </node>
-                          <node concept="37vLTw" id="1xH3giefGCf" role="37wK5m">
-                            <ref role="3cqZAo" node="5caPF5jNdCz" resolve="current" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="3K8JqUjVDk1" role="3cqZAp">
                     <node concept="2OqwBi" id="3K8JqUjVDmM" role="3clFbG">
                       <node concept="37vLTw" id="3K8JqUjVDjZ" role="2Oq$k0">
@@ -1014,17 +1041,16 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="5caPF5jNb2r" role="3cqZAp">
-                    <node concept="2OqwBi" id="5caPF5jNb4N" role="3clFbG">
-                      <node concept="37vLTw" id="5caPF5jNb2p" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5caPF5jNrUy" resolve="builder" />
+                  <node concept="3clFbF" id="183c22F788O" role="3cqZAp">
+                    <node concept="2OqwBi" id="183c22F78cf" role="3clFbG">
+                      <node concept="37vLTw" id="183c22F788M" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
                       </node>
-                      <node concept="liA8E" id="5caPF5jNbaW" role="2OqNvi">
-                        <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.addInstruction(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction,jetbrains.mps.lang.dataFlow.framework.StructuralProgramBuilder$Position):void" resolve="addInstruction" />
-                        <node concept="37vLTw" id="1xH3giefGCg" role="37wK5m">
-                          <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
+                      <node concept="liA8E" id="183c22F78iy" role="2OqNvi">
+                        <ref role="37wK5l" to="f696:183c22F76vX" resolve="setCurrent" />
+                        <node concept="37vLTw" id="183c22F78iN" role="37wK5m">
+                          <ref role="3cqZAo" node="5caPF5jNdCz" resolve="current" />
                         </node>
-                        <node concept="10Nm6u" id="5caPF5jNh77" role="37wK5m" />
                       </node>
                     </node>
                   </node>
