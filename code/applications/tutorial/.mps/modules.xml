@@ -28,7 +28,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.startup/com.mbeddr.tutorial.startup.msd" folder="utils" />
       <modulePath path="$PROJECT_DIR$/solutions/demo.expr.sandbox/demo.expr.sandbox.msd" folder="languages" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="examples" />
-      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.pluginSolution/mbeddr.tutorial.pluginSolution.msd" folder="utils" />
       <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="examples" />
     </projectModules>
   </component>
