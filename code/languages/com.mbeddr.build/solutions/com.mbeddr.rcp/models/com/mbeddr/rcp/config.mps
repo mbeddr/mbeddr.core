@@ -2130,21 +2130,10 @@
               </node>
             </node>
             <node concept="28jJK3" id="$yhXtqK_CU" role="39821P">
-              <node concept="55IIr" id="5wLtKNeUYJv" role="28jJRO">
-                <node concept="2Ry0Ak" id="5wLtKNeUYJ_" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYJA" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYJB" role="2Ry0An">
-                      <property role="2Ry0Am" value="rcp" />
-                      <node concept="2Ry0Ak" id="5wLtKNeUYJS" role="2Ry0An">
-                        <property role="2Ry0Am" value="icons" />
-                        <node concept="2Ry0Ak" id="5wLtKNeUYK1" role="2Ry0An">
-                          <property role="2Ry0Am" value="mbeddr_128.png" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+              <node concept="398BVA" id="5wLtKNeVGsZ" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVGp1" resolve="artifacts.icons" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGta" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr_128.png" />
                 </node>
               </node>
             </node>
@@ -2619,21 +2608,10 @@
                     </node>
                   </node>
                   <node concept="28jJK3" id="3f6C5dcXex2" role="39821P">
-                    <node concept="55IIr" id="5wLtKNeUZ3x" role="28jJRO">
-                      <node concept="2Ry0Ak" id="5wLtKNeUZ3A" role="iGT6I">
-                        <property role="2Ry0Am" value=".." />
-                        <node concept="2Ry0Ak" id="5wLtKNeUZ3B" role="2Ry0An">
-                          <property role="2Ry0Am" value=".." />
-                          <node concept="2Ry0Ak" id="5wLtKNeUZ3Y" role="2Ry0An">
-                            <property role="2Ry0Am" value="rcp" />
-                            <node concept="2Ry0Ak" id="5wLtKNeUZ47" role="2Ry0An">
-                              <property role="2Ry0Am" value="icons" />
-                              <node concept="2Ry0Ak" id="5wLtKNeV4qz" role="2Ry0An">
-                                <property role="2Ry0Am" value="mbeddr.icns" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                    <node concept="398BVA" id="5wLtKNeVGtM" role="28jJRO">
+                      <ref role="398BVh" node="5wLtKNeVGp1" resolve="artifacts.icons" />
+                      <node concept="2Ry0Ak" id="5wLtKNeVGtU" role="iGT6I">
+                        <property role="2Ry0Am" value="mbeddr.icns" />
                       </node>
                     </node>
                   </node>
@@ -2814,21 +2792,10 @@
                 </node>
               </node>
               <node concept="28jJK3" id="2lgcjg3akLH" role="39821P">
-                <node concept="55IIr" id="2lgcjg3akLJ" role="28jJRO">
-                  <node concept="2Ry0Ak" id="2lgcjg3akLK" role="iGT6I">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="2lgcjg3akLL" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="5wLtKNeUZ9D" role="2Ry0An">
-                        <property role="2Ry0Am" value="rcp" />
-                        <node concept="2Ry0Ak" id="5wLtKNeUZ9M" role="2Ry0An">
-                          <property role="2Ry0Am" value="icons" />
-                          <node concept="2Ry0Ak" id="5wLtKNeV4qB" role="2Ry0An">
-                            <property role="2Ry0Am" value="mbeddr.icns" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+                <node concept="398BVA" id="5wLtKNeVGug" role="28jJRO">
+                  <ref role="398BVh" node="5wLtKNeVGp1" resolve="artifacts.icons" />
+                  <node concept="2Ry0Ak" id="5wLtKNeVGuh" role="iGT6I">
+                    <property role="2Ry0Am" value="mbeddr.icns" />
                   </node>
                 </node>
               </node>
@@ -3162,6 +3129,23 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="5wLtKNeVGp1" role="1l3spd">
+      <property role="TrG5h" value="artifacts.icons" />
+      <node concept="55IIr" id="5wLtKNeVGsl" role="398pKh">
+        <node concept="2Ry0Ak" id="5wLtKNeVGsm" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5wLtKNeVGsn" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="5wLtKNeVGso" role="2Ry0An">
+              <property role="2Ry0Am" value="rcp" />
+              <node concept="2Ry0Ak" id="5wLtKNeVGsp" role="2Ry0An">
+                <property role="2Ry0Am" value="icons" />
               </node>
             </node>
           </node>
