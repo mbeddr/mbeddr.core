@@ -8,7 +8,7 @@
       <modulePath path="$PROJECT_DIR$/languages/blocks/blocks.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/cimpl/cimpl.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/complex/complex.mpl" folder="languages" />
-      <modulePath path="$PROJECT_DIR$/languages/demo.expr/demo.expr.mpl" folder="expr" />
+      <modulePath path="$PROJECT_DIR$/languages/demo.expr/demo.expr.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/foreach/foreach.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/heap/heap.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr.tutorial.extreqref/mbeddr.tutorial.extreqref.mpl" folder="languages" />
@@ -20,15 +20,16 @@
       <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/spellcheck/spellcheck.mpl" folder="utils" />
       <modulePath path="$PROJECT_DIR$/languages/vectors/vectors.mpl" folder="languages" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.editingGuide/com.mbeddr.editingGuide.msd" folder="userguide" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.buildProject/com.mbeddr.tutorial.buildProject.msd" folder="userguide.samples" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.documentation/com.mbeddr.tutorial.documentation.msd" folder="userguide" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.sample.CProject/com.mbeddr.tutorial.sample.CProject.msd" folder="userguide.samples" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.sample.HelloWorld/com.mbeddr.tutorial.sample.HelloWorld.msd" folder="userguide.samples" />
-      <modulePath path="$PROJECT_DIR$/solutions/demo.expr.sandbox/demo.expr.sandbox.msd" folder="expr" />
-      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="exampleCode" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.editingGuide/com.mbeddr.editingGuide.msd" folder="documentation" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.buildProject/com.mbeddr.tutorial.buildProject.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.documentation/com.mbeddr.tutorial.documentation.msd" folder="documentation" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.sample.CProject/com.mbeddr.tutorial.sample.CProject.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.sample.HelloWorld/com.mbeddr.tutorial.sample.HelloWorld.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.startup/com.mbeddr.tutorial.startup.msd" folder="utils" />
+      <modulePath path="$PROJECT_DIR$/solutions/demo.expr.sandbox/demo.expr.sandbox.msd" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.pluginSolution/mbeddr.tutorial.pluginSolution.msd" folder="utils" />
-      <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="exampleCode" />
+      <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="examples" />
     </projectModules>
   </component>
 </project>
