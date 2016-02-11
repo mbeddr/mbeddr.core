@@ -1346,7 +1346,7 @@
           <property role="19SUeA" value=". Put the cursor&#10;onto " />
         </node>
         <node concept="JLv3r" id="3hyllbpXAw$" role="19SJt6">
-          <ref role="JLv3v" node="3hyllbpXyt3" resolve="c" />
+          <ref role="JLv3v" node="4x22hTwhr9m" resolve="a" />
         </node>
         <node concept="19SUe$" id="3hyllbpXAw_" role="19SJt6">
           <property role="19SUeA" value=", and insert a new variable " />
@@ -1415,13 +1415,6 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3XIRFW" id="3hyllbpXvO9" role="3XIRFX">
-            <node concept="3XIRlf" id="3hyllbpXyt3" role="3XIRFZ">
-              <property role="TrG5h" value="c" />
-              <node concept="26Vqqz" id="3hyllbpXyt2" role="2C2TGm">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-              </node>
-            </node>
             <node concept="3XIRlf" id="4x22hTwhr9m" role="3XIRFZ">
               <property role="TrG5h" value="a" />
               <node concept="26Vqqz" id="4x22hTwhr9n" role="2C2TGm">
