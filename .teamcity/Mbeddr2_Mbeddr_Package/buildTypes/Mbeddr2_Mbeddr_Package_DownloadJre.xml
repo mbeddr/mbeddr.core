@@ -3,6 +3,9 @@
   <name>Download JRE</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="buildUtil/*.zip&#xA;buildUtil/*.tar.gz" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_2" name="Download JRE" type="Ant">
