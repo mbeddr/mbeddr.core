@@ -13,7 +13,7 @@
           <param name="build-file-path" value="build.xml" />
           <param name="jvmArgs" value="-Dserver.user=%jb.server.user% -Dserver.password=%jb.server.password%" />
           <param name="target" value="get-jdk" />
-          <param name="teamcity.build.workingDir" value="buildUtil" />
+          <param name="teamcity.build.workingDir" value="mbeddr.core/buildUtil" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
