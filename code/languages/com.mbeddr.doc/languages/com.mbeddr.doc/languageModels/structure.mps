@@ -1061,6 +1061,18 @@
     <property role="34LRSv" value="greybox" />
     <property role="1pbfSe" value="1559889974" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1TJgyi" id="2QDtwSqKu1L" role="1TKVEl">
+      <property role="TrG5h" value="backgroundColor_red" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2QDtwSqKu1V" role="1TKVEl">
+      <property role="TrG5h" value="backgroundColor_green" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2QDtwSqKAKo" role="1TKVEl">
+      <property role="TrG5h" value="backgroundColor_blue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="6VFmq3I3EUo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="text" />
