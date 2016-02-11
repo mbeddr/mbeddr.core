@@ -16,7 +16,7 @@
 +:feature/*
 +:refactor/*
 +:maintenance/*
-+:milestone/v-1.5-2
++:milestone/v-1.5-3
 +:integration/*]]></param>
           <param name="groupCheckinsByCommitter" value="true" />
           <param name="perCheckinTriggering" value="true" />

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="d273447e-6874-4bda-ac02-97927801fbb3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Download JRE</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="buildUtil/*.zip&#xA;buildUtil/*.tar.gz" />
+    </options>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_2" name="Download JRE" type="Ant">
+        <parameters>
+          <param name="build-file-path" value="mbeddr.core/buildUtil/build.xml" />
+          <param name="jvmArgs" value="-Dserver.user=%jb.server.user% -Dserver.password=%jb.server.password%" />
+          <param name="target" value="get-jdk" />
+          <param name="teamcity.build.workingDir" value="mbeddr.core/buildUtil" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
+        <checkout-rule rule="%mbeddr.checkout-rules%" />
+      </vcs-entry-ref>
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
