@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="artifacts/rcpLangDev" />
+      <option name="artifactRules" value="artifacts/mpsDistribution" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters>
