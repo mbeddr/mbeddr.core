@@ -5,7 +5,7 @@
   <property name="branch" value="branch:default:true"/>   
   <property name="latest-build" value="status:SUCCESS"/>
   <property name="jdk-artifacts-url" value="${base-url}/${jdk-build-id},${branch},${latest-build}/artifacts/files"/>
-  <property name="dmg.image" value="TODO"/>
+  <property name="dmg.image" value="../rcp/icons/mbeddr-logo.png"/>
 
   <property name="build.tmp" value="./"/>
   <property name="build.code" value="mbeddr.snapshot-macos"/>
