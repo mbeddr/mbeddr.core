@@ -1143,6 +1143,52 @@
   <node concept="13h7C7" id="4ZVDCZCbsxD">
     <property role="3GE5qa" value="expr" />
     <ref role="13h7C2" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="13i0hz" id="1uoAWUPe22W" role="13h7CS">
+      <property role="TrG5h" value="getCodeForTarget" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1uoAWUPe22X" role="1B3o_S" />
+      <node concept="3clFbS" id="1uoAWUPe22Y" role="3clF47">
+        <node concept="3cpWs6" id="1uoAWUPe2Hv" role="3cqZAp">
+          <node concept="10Nm6u" id="1uoAWUPe2HP" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1uoAWUPe2Hi" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
+      <node concept="P$JXv" id="1uoAWUPe3pm" role="lGtFl">
+        <node concept="TZ5HA" id="1uoAWUPe3pn" role="TZ5H$">
+          <node concept="1dT_AC" id="1uoAWUPe3po" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the code for target in the data flow builder for this expression. " />
+          </node>
+        </node>
+        <node concept="x79VA" id="1uoAWUPe3pp" role="x79VK">
+          <property role="x79VB" value="the code for target" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1uoAWUPe2Ie" role="13h7CS">
+      <property role="TrG5h" value="getWriteTarget" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1uoAWUPe2If" role="1B3o_S" />
+      <node concept="3clFbS" id="1uoAWUPe2Ig" role="3clF47">
+        <node concept="3cpWs6" id="1uoAWUPe3oC" role="3cqZAp">
+          <node concept="10Nm6u" id="1uoAWUPe3oX" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1uoAWUPe3ox" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
+      <node concept="P$JXv" id="1uoAWUPe3qO" role="lGtFl">
+        <node concept="TZ5HA" id="1uoAWUPe3qP" role="TZ5H$">
+          <node concept="1dT_AC" id="1uoAWUPe3qQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the write target in the data flow builder for this expression. " />
+          </node>
+        </node>
+        <node concept="x79VA" id="1uoAWUPe3qR" role="x79VK">
+          <property role="x79VB" value="the write target" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="4ZVDCZCbsxE" role="13h7CW">
       <node concept="3clFbS" id="4ZVDCZCbsxF" role="2VODD2" />
     </node>
@@ -3790,6 +3836,56 @@
         </node>
       </node>
       <node concept="10P_77" id="5Y5RBjGN2o4" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1uoAWUPe3wG" role="13h7CS">
+      <property role="TrG5h" value="getCodeForTarget" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1uoAWUPe22W" resolve="getCodeForTarget" />
+      <node concept="3Tm1VV" id="1uoAWUPe3wH" role="1B3o_S" />
+      <node concept="3clFbS" id="1uoAWUPe3wQ" role="3clF47">
+        <node concept="3cpWs6" id="1uoAWUPe3H6" role="3cqZAp">
+          <node concept="2OqwBi" id="1uoAWUPe4jp" role="3cqZAk">
+            <node concept="2OqwBi" id="1uoAWUPe3LM" role="2Oq$k0">
+              <node concept="13iPFW" id="1uoAWUPe3Hr" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1uoAWUPe46v" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="1uoAWUPe4sB" role="2OqNvi">
+              <ref role="37wK5l" node="1uoAWUPe22W" resolve="getCodeForTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1uoAWUPe3wR" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="1uoAWUPe4v7" role="13h7CS">
+      <property role="TrG5h" value="getWriteTarget" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1uoAWUPe2Ie" resolve="getWriteTarget" />
+      <node concept="3Tm1VV" id="1uoAWUPe4v8" role="1B3o_S" />
+      <node concept="3clFbS" id="1uoAWUPe4vh" role="3clF47">
+        <node concept="3cpWs6" id="1uoAWUPe4GE" role="3cqZAp">
+          <node concept="2OqwBi" id="1uoAWUPe4GF" role="3cqZAk">
+            <node concept="2OqwBi" id="1uoAWUPe4GG" role="2Oq$k0">
+              <node concept="13iPFW" id="1uoAWUPe4GH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1uoAWUPe4GI" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="1uoAWUPe4QI" role="2OqNvi">
+              <ref role="37wK5l" node="1uoAWUPe2Ie" resolve="getWriteTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1uoAWUPe4vi" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2TbP0WsJymp">

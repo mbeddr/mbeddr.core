@@ -2,7 +2,7 @@
 <model ref="r:ea86e2a4-7f30-416b-b337-f904d65901b1(test.debugging.cc.variability.msd.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="2" />
     <use id="b8eeb935-038d-48d8-ae7f-0c6768b8d4fc" name="com.mbeddr.cc.var.rt" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="0" />
@@ -96,9 +96,13 @@
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
       <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
@@ -287,6 +291,9 @@
     </node>
     <node concept="2xfidK" id="7hPD5_a6ZA5" role="2AWWZH">
       <ref role="2xfifS" to="q9ah:7sNQp65l2BT" resolve="Desktop Platform" />
+    </node>
+    <node concept="12mU2y" id="22oVTLUfqGz" role="2Q9xDr">
+      <node concept="3GpDuo" id="22oVTLUfqG$" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="7EQZzuztdRK">
