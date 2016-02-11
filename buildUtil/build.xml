@@ -11,7 +11,7 @@
   <property name="build.code" value="mbeddr.snapshot-macos"/>
 	
 
-<target name="get-jdk" depends="prepare">
+<target name="get-jdk">
   <echo> Getting custom jdk</echo>
   <property name="mac-jdk-url" value="${jdk-artifacts-url}/openJDK/jdk.tar.gz"/>
   <get src="${mac-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
