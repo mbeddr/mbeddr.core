@@ -10,7 +10,7 @@
     <build-runners>
       <runner id="RUNNER_2" name="Download JRE" type="Ant">
         <parameters>
-          <param name="build-file-path" value="build.xml" />
+          <param name="build-file-path" value="mbeddr.core/buildUtil/build.xml" />
           <param name="jvmArgs" value="-Dserver.user=%jb.server.user% -Dserver.password=%jb.server.password%" />
           <param name="target" value="get-jdk" />
           <param name="teamcity.build.workingDir" value="mbeddr.core/buildUtil" />
