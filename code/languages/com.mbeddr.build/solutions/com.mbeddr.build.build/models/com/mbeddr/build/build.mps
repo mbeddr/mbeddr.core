@@ -1290,9 +1290,6 @@
         <ref role="398BVh" node="4hvHh3QYfGu" resolve="platform.sl-all" />
       </node>
     </node>
-    <node concept="2sgV4H" id="2QDtwSqH8Ic" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
-    </node>
     <node concept="1l3spV" id="1cfjnjdI1iQ" role="1l3spN">
       <node concept="3981dG" id="2lpUxXNvcU4" role="39821P">
         <node concept="3_J27D" id="2lpUxXNvcU6" role="Nbhlr">
