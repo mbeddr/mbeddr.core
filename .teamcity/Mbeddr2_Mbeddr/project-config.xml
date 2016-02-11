@@ -6,7 +6,8 @@
     <param name="build-dir.path-properties" value="-Dbuild.dir=%teamcity.build.checkoutDir%" />
     <param name="build.state" value="" />
     <param name="buildscripts.artifact-rule"><![CDATA[**/*.xml=>%teamcity.build.checkoutDir%/scripts
-**/*.zip=>%teamcity.build.checkoutDir%/artifacts]]></param>
+**/*.zip=>%teamcity.build.checkoutDir%/artifacts
+startup/**/*.*=>%teamcity.build.checkoutDir%/startup]]></param>
     <param name="generic.artifact-rule" value="**=&gt;%teamcity.build.checkoutDir%/artifacts" />
     <param name="mbeddr-github.path-properties" value="%mbeddr.path-properties%" />
     <param name="mbeddr-scripts.path-properties" value="-Dmbeddr.scripts.base-path=%teamcity.build.checkoutDir%/scripts %sl-all.path-properties%" />
