@@ -4,7 +4,21 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_2" name="Download JRE" type="Ant">
+        <parameters>
+          <param name="build-file-path" value="build.xml" />
+          <param name="jvmArgs" value="-Dserver.user=%jb.server.user% -Dserver.password=%jb.server.password%" />
+          <param name="target" value="get-jdk" />
+          <param name="teamcity.build.workingDir" value="buildUtil" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
     </vcs-settings>
