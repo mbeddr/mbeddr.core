@@ -3137,20 +3137,6 @@
     </node>
     <node concept="398rNT" id="5wLtKNeVGp1" role="1l3spd">
       <property role="TrG5h" value="artifacts.icons" />
-      <node concept="55IIr" id="5wLtKNeVGsl" role="398pKh">
-        <node concept="2Ry0Ak" id="5wLtKNeVGsm" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5wLtKNeVGsn" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5wLtKNeVGso" role="2Ry0An">
-              <property role="2Ry0Am" value="rcp" />
-              <node concept="2Ry0Ak" id="5wLtKNeVGsp" role="2Ry0An">
-                <property role="2Ry0Am" value="icons" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2kB4xC" id="3IKDaVZnAxg" role="1l3spd">
       <property role="TrG5h" value="build.number" />
