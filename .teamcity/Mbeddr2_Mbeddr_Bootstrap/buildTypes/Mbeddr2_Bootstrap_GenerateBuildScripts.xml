@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="%teamcity.build.checkoutDir%/mbeddr.core/build/**/*.xml&#xA;%teamcity.build.workingDir%/mbeddr.core/code/plugins/**/*.xml&#xA;%teamcity.build.checkoutDir%/mbeddr.core/artifacts/&#xA;%teamcity.build.checkoutDir%/mbeddr.core/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config" />
+      <option name="artifactRules" value="%teamcity.build.checkoutDir%/mbeddr.core/build/**/*.xml&#xA;%teamcity.build.workingDir%/mbeddr.core/code/plugins/**/*.xml&#xA;%teamcity.build.checkoutDir%/mbeddr.core/artifacts/&#xA;%teamcity.build.checkoutDir%/mbeddr.core/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config=&gt;startup" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
       <option name="checkoutMode" value="ON_AGENT" />
       <option name="cleanBuild" value="true" />
