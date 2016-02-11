@@ -3,6 +3,7 @@
   <name>mbeddr</name>
   <parameters>
     <param name="artifacts-root.path-properties" value="-Dartifacts.root=%teamcity.build.checkoutDir%/artifacts" />
+    <param name="artifacts-startup.path-properties" value="-Dartifacts.startup=%teamcity.build.checkoutDir%/startup" />
     <param name="build-dir.path-properties" value="-Dbuild.dir=%teamcity.build.checkoutDir%" />
     <param name="build.state" value="" />
     <param name="buildscripts.artifact-rule"><![CDATA[**/*.xml=>%teamcity.build.checkoutDir%/scripts
