@@ -2228,14 +2228,11 @@
         </node>
         <node concept="PMmxH" id="5Oog2UbP_bQ" role="3EZMnx">
           <ref role="PMmxG" node="5Oog2UbPmsM" resolve="externFlag" />
-          <node concept="VPM3Z" id="3hOuikEzQkv" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
         </node>
         <node concept="PMmxH" id="5IYyAOzCseA" role="3EZMnx">
           <ref role="PMmxG" node="7RiewQ_k17G" resolve="exportedFlag" />
           <node concept="VPM3Z" id="3hOuikEzQkw" role="3F10Kt">
-            <property role="VOm3f" value="false" />
+            <property role="VOm3f" value="true" />
           </node>
         </node>
         <node concept="PMmxH" id="52l0VUuNofH" role="3EZMnx">
