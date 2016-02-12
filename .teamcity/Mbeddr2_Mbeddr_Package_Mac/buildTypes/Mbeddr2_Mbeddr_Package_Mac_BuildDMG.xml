@@ -25,7 +25,9 @@
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <equals name="teamcity.agent.jvm.os.name" value="Mac OS X" />
+    </requirements>
     <build-triggers />
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
