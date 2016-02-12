@@ -8,7 +8,7 @@
   <property name="dmg.image" value="../rcp/icons/mbeddr-logo.png"/>
 
   <property name="build.tmp" value="./"/>
-  <property name="build.code" value="mbeddr.snapshot-macos"/>
+  <property name="build.code" value="mbeddr-macos"/>
 	
 
 <target name="get-jdk">
