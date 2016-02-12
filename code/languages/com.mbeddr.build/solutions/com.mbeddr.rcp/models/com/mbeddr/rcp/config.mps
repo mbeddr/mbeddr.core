@@ -2229,7 +2229,7 @@
                 <property role="2$htvj" value="*" />
                 <node concept="NbPM2" id="6xv$4WsFw_3" role="2$htvi">
                   <node concept="3Mxwew" id="6xv$4WsFw_4" role="3MwsjC">
-                    <property role="3MwjfP" value="mps.exe.vmoptions" />
+                    <property role="3MwjfP" value="mbeddr.exe.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -2248,7 +2248,7 @@
                 <property role="2$htvj" value="*" />
                 <node concept="NbPM2" id="2lwFGYPkEdq" role="2$htvi">
                   <node concept="3Mxwew" id="2lwFGYPkEdr" role="3MwsjC">
-                    <property role="3MwjfP" value="mps64.exe.vmoptions" />
+                    <property role="3MwjfP" value="mbeddr64.exe.vmoptions" />
                   </node>
                 </node>
               </node>
