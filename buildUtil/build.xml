@@ -24,13 +24,9 @@
 <target name="macbuild">
   <copy file="${dmg.image}" tofile="${build.tmp}/${build.code}.png"/>
 
-  <exec host="${mac.host}"
-	  dir="${build.tmp}"
-      command="./mpssign.sh ${build.code}.zip ${build.code} jdk.tar.gz"/>
+  <exec dir="${build.tmp}" command="./mpssign.sh ${build.code}.zip ${build.code} jdk.tar.gz"/>
 
-  <exec host="${mac.host}"
-	  dir="${build.tmp}"
-      command="./mpsdmg.sh ${build.code}.zip ${build.code}"/>
+  <exec dir="${build.tmp}" command="./mpsdmg.sh ${build.code}.zip ${build.code}"/>
 </target>
 
 </project>
