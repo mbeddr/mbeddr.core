@@ -23,7 +23,9 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
+        <checkout-rule rule="%mbeddr.checkout-rules%" />
+      </vcs-entry-ref>
     </vcs-settings>
     <requirements>
       <equals name="teamcity.agent.jvm.os.name" value="Mac OS X" />
@@ -36,7 +38,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="mbeddr*macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil/mbeddr-macos.zip" />
+        <artifact sourcePath="mbeddr-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
     </artifact-dependencies>
     <dependencies>
