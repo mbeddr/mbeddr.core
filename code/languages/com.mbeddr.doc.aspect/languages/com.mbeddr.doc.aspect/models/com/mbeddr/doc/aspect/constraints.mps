@@ -15,8 +15,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="748g" ref="r:85fc9553-7d9a-4019-83cc-9f8169da83fb(com.mbeddr.doc.aspect.structure)" />
-    <import index="4uu5" ref="f:diff_old#r:c6a00314-98d5-42dc-9012-005ad02a9422(com.mbeddr.doc.aspect.constraints@old)" implicit="true" />
-    <import index="lijz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.dependency.modules(MPS.Core/)" implicit="true" />
+    <import index="lijz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.dependency.modules(MPS.Core/)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -261,8 +260,8 @@
             </node>
             <node concept="3clFbC" id="3TrpzyP_HE9" role="3clFbw">
               <node concept="10Nm6u" id="3TrpzyP_HHi" role="3uHU7w" />
-              <node concept="37vLTw" id="3TrpzyP_Hiw" role="3uHU7B">
-                <ref role="3cqZAo" to="4uu5:3TrpzyP_G0y" resolve="containingLanguage" />
+              <node concept="37vLTw" id="77nuVWJc3N1" role="3uHU7B">
+                <ref role="3cqZAo" node="3TrpzyP_G0y" resolve="containingLanguage" />
               </node>
             </node>
           </node>
@@ -279,7 +278,7 @@
                 <node concept="2ShNRf" id="3TrpzyP_KMA" role="2Oq$k0">
                   <node concept="2HTt$P" id="3TrpzyP_KMB" role="2ShVmc">
                     <node concept="37vLTw" id="3TrpzyP_KMC" role="2HTEbv">
-                      <ref role="3cqZAo" to="4uu5:3TrpzyP_G0y" resolve="containingLanguage" />
+                      <ref role="3cqZAo" node="3TrpzyP_G0y" resolve="containingLanguage" />
                     </node>
                     <node concept="3uibUv" id="3TrpzyP_KMD" role="2HTBi0">
                       <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
@@ -291,7 +290,7 @@
                     <ref role="37wK5l" to="lijz:~LanguageDependenciesManager.getAllExtendedLanguages(jetbrains.mps.smodel.Language):java.util.Set" resolve="getAllExtendedLanguages" />
                     <ref role="1Pybhc" to="lijz:~LanguageDependenciesManager" resolve="LanguageDependenciesManager" />
                     <node concept="37vLTw" id="lp9ZKwUJjA" role="37wK5m">
-                      <ref role="3cqZAo" to="4uu5:3TrpzyP_G0y" resolve="containingLanguage" />
+                      <ref role="3cqZAo" node="3TrpzyP_G0y" resolve="containingLanguage" />
                     </node>
                   </node>
                 </node>
@@ -309,7 +308,7 @@
               <node concept="2OqwBi" id="3TrpzyP_QYT" role="33vP2m">
                 <node concept="2OqwBi" id="3TrpzyP_QYU" role="2Oq$k0">
                   <node concept="37vLTw" id="3TrpzyP_QYV" role="2Oq$k0">
-                    <ref role="3cqZAo" to="4uu5:3TrpzyP_KM$" resolve="allLanguages" />
+                    <ref role="3cqZAo" node="3TrpzyP_KM$" resolve="allLanguages" />
                   </node>
                   <node concept="3$u5V9" id="3TrpzyP_QYW" role="2OqNvi">
                     <node concept="1bVj0M" id="3TrpzyP_QYX" role="23t8la">
@@ -317,7 +316,7 @@
                         <node concept="3clFbF" id="3TrpzyP_QYZ" role="3cqZAp">
                           <node concept="2OqwBi" id="3TrpzyP_QZ0" role="3clFbG">
                             <node concept="37vLTw" id="3TrpzyP_QZ1" role="2Oq$k0">
-                              <ref role="3cqZAo" to="4uu5:3TrpzyP_QZ3" resolve="it" />
+                              <ref role="3cqZAo" node="3TrpzyP_QZ3" resolve="it" />
                             </node>
                             <node concept="liA8E" id="3TrpzyP_QZ2" role="2OqNvi">
                               <ref role="37wK5l" to="w1kc:~Language.getStructureModelDescriptor():org.jetbrains.mps.openapi.model.SModel" resolve="getStructureModelDescriptor" />
@@ -340,14 +339,14 @@
                           <property role="TrG5h" value="model" />
                           <node concept="H_c77" id="3TrpzyP_QZa" role="1tU5fm" />
                           <node concept="37vLTw" id="3TrpzyP_QZb" role="33vP2m">
-                            <ref role="3cqZAo" to="4uu5:3TrpzyP_QZg" resolve="it" />
+                            <ref role="3cqZAo" node="3TrpzyP_QZg" resolve="it" />
                           </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="3TrpzyP_QZc" role="3cqZAp">
                         <node concept="2OqwBi" id="3TrpzyP_QZd" role="3clFbG">
                           <node concept="37vLTw" id="3TrpzyP_QZe" role="2Oq$k0">
-                            <ref role="3cqZAo" to="4uu5:3TrpzyP_QZ9" resolve="model" />
+                            <ref role="3cqZAo" node="3TrpzyP_QZ9" resolve="model" />
                           </node>
                           <node concept="2RRcyG" id="3TrpzyP_QZf" role="2OqNvi">
                             <ref role="2RRcyH" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
@@ -369,7 +368,7 @@
               <node concept="1pGfFk" id="agjuZpaOdj" role="2ShVmc">
                 <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
                 <node concept="37vLTw" id="3TrpzyP_RmV" role="37wK5m">
-                  <ref role="3cqZAo" to="4uu5:3TrpzyP_QYS" resolve="concepts" />
+                  <ref role="3cqZAo" node="3TrpzyP_QYS" resolve="concepts" />
                 </node>
               </node>
             </node>
