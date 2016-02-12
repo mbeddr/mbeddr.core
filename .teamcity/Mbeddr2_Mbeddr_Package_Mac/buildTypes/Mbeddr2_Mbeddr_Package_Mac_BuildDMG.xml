@@ -29,7 +29,7 @@
     <build-triggers />
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
-        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="&lt;default&gt;" />
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="-:jdk.zip&#xD;&#xA;+:jdk.tar.gz=&gt;%system.teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
