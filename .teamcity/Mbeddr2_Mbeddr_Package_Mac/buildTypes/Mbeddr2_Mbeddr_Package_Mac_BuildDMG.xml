@@ -34,7 +34,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="mbeddr-*-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil=&gt;mbeddr-macos.zip&#xD;&#xA;-:mbeddr-*.zip&#xD;&#xA;-:mbeddr-*-linux.tar.gz" />
+        <artifact sourcePath="mbeddr-*-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil/mbeddr-macos.zip&#xD;&#xA;-:mbeddr-*.zip&#xD;&#xA;-:mbeddr-*-linux.tar.gz" />
       </dependency>
     </artifact-dependencies>
     <dependencies>
