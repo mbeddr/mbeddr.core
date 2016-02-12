@@ -3,6 +3,10 @@
   <name>BuildDMG</name>
   <description />
   <settings ref="RequiresMpsExtions">
+    <options>
+      <option name="artifactRules" value="**/*/*.dmg" />
+      <option name="buildNumberPattern" value="%mbeddr.build-number%" />
+    </options>
     <parameters />
     <build-runners order="" />
     <vcs-settings />
