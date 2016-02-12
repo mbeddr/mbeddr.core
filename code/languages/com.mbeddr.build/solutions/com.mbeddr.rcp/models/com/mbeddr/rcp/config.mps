@@ -2181,8 +2181,8 @@
           </node>
         </node>
         <node concept="3_J27D" id="5BQuGro_mDZ" role="Nbhlr">
-          <node concept="3Mxwey" id="5BQuGro_mE0" role="3MwsjC">
-            <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+          <node concept="3Mxwew" id="2AGaUjKUvl9" role="3MwsjC">
+            <property role="3MwjfP" value="mbeddr" />
           </node>
           <node concept="3Mxwew" id="5BQuGro_mE1" role="3MwsjC">
             <property role="3MwjfP" value="-linux.tar.gz" />
@@ -2758,8 +2758,8 @@
           </node>
         </node>
         <node concept="3_J27D" id="3IKDaVZnIk3" role="Nbhlr">
-          <node concept="3Mxwey" id="3IKDaVZnIk5" role="3MwsjC">
-            <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+          <node concept="3Mxwew" id="2AGaUjKUvle" role="3MwsjC">
+            <property role="3MwjfP" value="mbeddr-generic" />
           </node>
           <node concept="3Mxwew" id="3IKDaVZnIk9" role="3MwsjC">
             <property role="3MwjfP" value=".zip" />
@@ -2768,8 +2768,8 @@
       </node>
       <node concept="3981dG" id="5BQuGro_mEu" role="39821P">
         <node concept="3_J27D" id="5BQuGro_mEv" role="Nbhlr">
-          <node concept="3Mxwey" id="5BQuGro_mEw" role="3MwsjC">
-            <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+          <node concept="3Mxwew" id="2AGaUjKUvlj" role="3MwsjC">
+            <property role="3MwjfP" value="mbeddr" />
           </node>
           <node concept="3Mxwew" id="5BQuGro_mEx" role="3MwsjC">
             <property role="3MwjfP" value="-macos.zip" />
