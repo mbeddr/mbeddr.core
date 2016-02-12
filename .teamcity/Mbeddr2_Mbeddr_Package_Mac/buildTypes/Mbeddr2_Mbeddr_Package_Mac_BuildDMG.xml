@@ -23,7 +23,9 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap" />
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
+        <checkout-rule rule="%mbeddr.checkout-rules%" />
+      </vcs-entry-ref>
     </vcs-settings>
     <requirements>
       <equals name="teamcity.agent.jvm.os.name" value="Mac OS X" />
