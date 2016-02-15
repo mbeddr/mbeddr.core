@@ -2750,10 +2750,7 @@
           </node>
           <node concept="3_J27D" id="BJYGrH08XL" role="Nbhlr">
             <node concept="3Mxwew" id="BJYGrH08XM" role="3MwsjC">
-              <property role="3MwjfP" value="mbeddr " />
-            </node>
-            <node concept="3Mxwey" id="BJYGrH08XN" role="3MwsjC">
-              <ref role="3Mxwex" node="5wLtKNeUYBE" resolve="version" />
+              <property role="3MwjfP" value="mbeddr" />
             </node>
           </node>
         </node>
