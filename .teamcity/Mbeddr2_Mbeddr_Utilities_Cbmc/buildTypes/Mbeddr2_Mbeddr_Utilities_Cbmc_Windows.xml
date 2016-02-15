@@ -3,6 +3,9 @@
   <name>Windows</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="cbmc-win.zip" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_6" name="Build" type="simpleRunner">
