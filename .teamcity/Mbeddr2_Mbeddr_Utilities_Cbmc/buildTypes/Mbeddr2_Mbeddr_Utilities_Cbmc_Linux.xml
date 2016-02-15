@@ -6,7 +6,16 @@
       <option name="artifactRules" value="cbmc/cbmc&#xA;goto-cc/goto-cc&#xA;goto-instrument/goto-instrument&#xA;LICENSE" />
     </options>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_6" name="download minisat" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="make minisat2-download" />
+          <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/cbmc-trunk/src" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
     </vcs-settings>
