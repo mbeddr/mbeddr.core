@@ -12,7 +12,13 @@
       <runner id="RUNNER_12" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[make minisat2-download
-make -j12]]></param>
+make -j12
+mkdir %teamcity.build.checkoutDir%/cbmc-linux
+cp %teamcity.build.checkoutDir%/src/cbmc/cbmc %teamcity.build.checkoutDir%/cbmc-linux
+cp %teamcity.build.checkoutDir%/src/goto-cc/goto-cc %teamcity.build.checkoutDir%/cbmc-linux
+cp %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument %teamcity.build.checkoutDir%/cbmc-linux
+cp %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-linux
+tar -zcvf cbmc-linux.tar.gz %teamcity.build.checkoutDir%/cbmc-linux]]></param>
           <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/src" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
