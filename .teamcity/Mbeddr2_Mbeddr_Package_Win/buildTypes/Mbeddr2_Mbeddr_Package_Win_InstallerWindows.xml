@@ -30,7 +30,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
-        <artifact sourcePath="mbeddr-generic.zip!/mbeddr*/**/*=&gt;%teamcity.build.checkoutDir%/files/&#xD;&#xA;-:." />
+        <artifact sourcePath="mbeddr-generic.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/&#xD;&#xA;-:." />
       </dependency>
     </artifact-dependencies>
     <cleanup />
