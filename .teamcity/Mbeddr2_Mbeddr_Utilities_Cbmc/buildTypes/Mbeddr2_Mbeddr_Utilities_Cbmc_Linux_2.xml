@@ -22,7 +22,9 @@ make]]></param>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <contains name="teamcity.agent.jvm.os.name" value="Windows" />
+    </requirements>
     <build-triggers />
     <cleanup />
   </settings>
