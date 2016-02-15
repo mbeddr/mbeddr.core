@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="cmbc-mac.zip" />
+      <option name="artifactRules" value="cbmc-mac.zip" />
       <option name="cleanBuild" value="true" />
     </options>
     <parameters />
