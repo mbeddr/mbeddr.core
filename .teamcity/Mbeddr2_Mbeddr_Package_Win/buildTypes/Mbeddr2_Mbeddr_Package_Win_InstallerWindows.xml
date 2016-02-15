@@ -26,6 +26,10 @@
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="jdk.zip!=&gt;%teamcity.build.checkoutDir%/files/mbeddr/&#xD;&#xA;-:." />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="mbeddr-generic.zip!=&gt;%teamcity.build.default.checkoutDir%/files" />
+      </dependency>
     </artifact-dependencies>
     <dependencies>
       <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
