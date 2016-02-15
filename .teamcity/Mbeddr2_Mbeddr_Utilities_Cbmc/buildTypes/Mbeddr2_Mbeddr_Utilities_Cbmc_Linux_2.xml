@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="src/cbmc/cbmc&#xA;src/goto-cc/goto-cc&#xA;src/goto-instrument/goto-instrument&#xA;LICENSE" />
+      <option name="artifactRules" value="cbmc-linux.tar.gz" />
       <option name="cleanBuild" value="true" />
     </options>
     <parameters />
