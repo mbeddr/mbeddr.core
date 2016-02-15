@@ -7,9 +7,10 @@
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_6" name="download minisat" type="simpleRunner">
+      <runner id="RUNNER_6" name="build CBMC" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="make minisat2-download" />
+          <param name="script.content"><![CDATA[make minisat2-download
+make]]></param>
           <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/cbmc-trunk/src" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
