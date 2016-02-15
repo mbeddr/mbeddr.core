@@ -18,7 +18,7 @@ cp %teamcity.build.checkoutDir%/src/cbmc/cbmc %teamcity.build.checkoutDir%/cbmc-
 cp %teamcity.build.checkoutDir%/src/goto-cc/goto-cc %teamcity.build.checkoutDir%/cbmc-linux
 cp %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument %teamcity.build.checkoutDir%/cbmc-linux
 cp %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-linux
-tar -zcvf %teamcity.build.checkoutDir%/cbmc-linux.tar.gz %teamcity.build.checkoutDir%/cbmc-linux]]></param>
+tar -zcvf %teamcity.build.checkoutDir%/cbmc-linux.tar.gz -C %teamcity.build.checkoutDir%/cbmc-linux .]]></param>
           <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/src" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
