@@ -20,7 +20,7 @@
       <vcs-entry-ref root-id="MbeddrInstallerWin" />
     </vcs-settings>
     <requirements>
-      <equals name="env.OS" value="Windows_NT" />
+      <equals name="teamcity.agent.jvm.os.name" value="Windows 8.1" />
     </requirements>
     <build-triggers />
     <artifact-dependencies>
