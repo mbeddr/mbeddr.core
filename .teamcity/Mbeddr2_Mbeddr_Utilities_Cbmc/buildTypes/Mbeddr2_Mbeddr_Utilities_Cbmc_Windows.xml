@@ -23,7 +23,7 @@ c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/src/cbmc/cbmc.exe %teamcity.
 c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/src/goto-cc/goto-cc.exe %teamcity.build.checkoutDir%/cbmc-win
 c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument.exe %teamcity.build.checkoutDir%/cbmc-win
 c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-win
-zip -r -X %teamcity.build.checkoutDir%/cbmc-mac.zip %teamcity.build.checkoutDir%/cbmc-win/*]]></param>
+zip -r -X %teamcity.build.checkoutDir%/cbmc-win.zip %teamcity.build.checkoutDir%/cbmc-win/*]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
