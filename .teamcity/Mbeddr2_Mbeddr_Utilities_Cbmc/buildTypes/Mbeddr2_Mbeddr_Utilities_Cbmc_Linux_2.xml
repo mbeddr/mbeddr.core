@@ -3,6 +3,9 @@
   <name>Linux</name>
   <description />
   <settings>
+    <options>
+      <option name="cleanBuild" value="true" />
+    </options>
     <parameters />
     <build-runners />
     <vcs-settings>
