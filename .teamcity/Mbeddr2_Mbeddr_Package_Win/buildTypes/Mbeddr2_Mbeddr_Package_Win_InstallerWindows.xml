@@ -19,7 +19,9 @@
     <vcs-settings>
       <vcs-entry-ref root-id="MbeddrInstallerWin" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <equals name="env.OS" value="Windows_NT" />
+    </requirements>
     <build-triggers />
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
