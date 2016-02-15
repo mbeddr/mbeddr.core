@@ -3,6 +3,9 @@
   <name>installer windows</name>
   <description />
   <settings ref="RequiresMpsExtions">
+    <options>
+      <option name="artifactRules" value="*.exe" />
+    </options>
     <parameters />
     <build-runners order="" />
     <vcs-settings>
