@@ -5,7 +5,9 @@
   <settings ref="RequiresMpsExtions">
     <parameters />
     <build-runners order="" />
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="MbeddrInstallerWin" />
+    </vcs-settings>
     <requirements />
     <build-triggers />
     <cleanup />
