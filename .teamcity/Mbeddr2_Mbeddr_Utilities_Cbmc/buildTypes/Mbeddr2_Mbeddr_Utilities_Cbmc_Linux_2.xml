@@ -12,7 +12,7 @@
       <runner id="RUNNER_12" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[make minisat2-download
-make]]></param>
+make -j12]]></param>
           <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/src" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
