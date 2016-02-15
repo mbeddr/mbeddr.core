@@ -19,11 +19,12 @@ c:\cygwin64\bin\sh.exe -c "sed -e s/AUTO/MSVC/g config.inc > config.inc.1"
 mv config.inc.1 config.inc
 make -j12
 mkdir %teamcity.build.checkoutDir%\cbmc-win
-c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/src/cbmc/cbmc.exe %teamcity.build.checkoutDir%/cbmc-win
-c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/src/goto-cc/goto-cc.exe %teamcity.build.checkoutDir%/cbmc-win
-c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument.exe %teamcity.build.checkoutDir%/cbmc-win
-c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-win
-zip -r -X %teamcity.build.checkoutDir%/cbmc-win.zip %teamcity.build.checkoutDir%/cbmc-win/*]]></param>
+c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%\src\cbmc\cbmc.exe %teamcity.build.checkoutDir%\cbmc-win
+c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%\src\goto-cc\goto-cc.exe %teamcity.build.checkoutDir%\cbmc-win
+c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%\src\goto-instrument\goto-instrument.exe %teamcity.build.checkoutDir%\cbmc-win
+c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%\LICENSE %teamcity.build.checkoutDir%\cbmc-win
+cd %teamcity.build.checkoutDir%\cbmc-win\
+zip -r -X %teamcity.build.checkoutDir%\cbmc-win.zip *]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
