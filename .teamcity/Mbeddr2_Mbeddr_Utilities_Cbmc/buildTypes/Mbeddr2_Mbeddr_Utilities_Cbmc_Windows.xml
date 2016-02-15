@@ -19,10 +19,10 @@ c:\cygwin64\bin\sh.exe -c "sed -e s/AUTO/MSVC/g config.inc > config.inc.1"
 mv config.inc.1 config.inc
 make -j12
 mkdir %teamcity.build.checkoutDir%/cbmc-win
-cp %teamcity.build.checkoutDir%/src/cbmc/cbmc %teamcity.build.checkoutDir%/cbmc-win
-cp %teamcity.build.checkoutDir%/src/goto-cc/goto-cc %teamcity.build.checkoutDir%/cbmc-win
-cp %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument %teamcity.build.checkoutDir%/cbmc-win
-cp %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-win
+copy %teamcity.build.checkoutDir%/src/cbmc/cbmc %teamcity.build.checkoutDir%/cbmc-win
+copy %teamcity.build.checkoutDir%/src/goto-cc/goto-cc %teamcity.build.checkoutDir%/cbmc-win
+copy %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument %teamcity.build.checkoutDir%/cbmc-win
+copy %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-win
 zip -r -X %teamcity.build.checkoutDir%/cbmc-mac.zip %teamcity.build.checkoutDir%/cbmc-win/*]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
