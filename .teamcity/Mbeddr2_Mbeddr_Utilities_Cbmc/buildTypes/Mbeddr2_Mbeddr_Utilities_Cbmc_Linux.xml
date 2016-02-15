@@ -7,7 +7,9 @@
     </options>
     <parameters />
     <build-runners />
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
+    </vcs-settings>
     <requirements />
     <build-triggers />
     <cleanup />
