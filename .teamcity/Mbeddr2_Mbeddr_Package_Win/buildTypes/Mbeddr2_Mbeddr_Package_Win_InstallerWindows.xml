@@ -7,7 +7,15 @@
       <option name="artifactRules" value="*.exe" />
     </options>
     <parameters />
-    <build-runners order="" />
+    <build-runners order="">
+      <runner id="RUNNER_5" name="build nsi" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="%teamcity.build.checkoutDir%/NSIS/makensis.exe %teamcity.build.checkoutDir%/mbeddr.nsi" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="MbeddrInstallerWin" />
     </vcs-settings>
