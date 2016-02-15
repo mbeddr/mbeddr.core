@@ -4,6 +4,7 @@
   <description />
   <settings>
     <options>
+      <option name="artifactRules" value="cbmc/cbmc&#xA;goto-cc/goto-cc&#xA;goto-instrument/goto-instrument&#xA;LICENSE" />
       <option name="cleanBuild" value="true" />
     </options>
     <parameters />
