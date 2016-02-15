@@ -25,7 +25,13 @@ make]]></param>
     <requirements>
       <contains name="teamcity.agent.jvm.os.name" value="Linux" />
     </requirements>
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <cleanup />
   </settings>
 </build-type>
