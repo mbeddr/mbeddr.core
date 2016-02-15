@@ -5,7 +5,6 @@
   <settings>
     <options>
       <option name="artifactRules" value="cbmc-win.zip" />
-      <option name="cleanBuild" value="true" />
     </options>
     <parameters />
     <build-runners>
