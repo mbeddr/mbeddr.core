@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="60e93861-c607-4f64-bd70-c633237c159d" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Mac</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="cbmc/cbmc&#xA;goto-cc/goto-cc&#xA;goto-instrument/goto-instrument&#xA;LICENSE" />
+      <option name="cleanBuild" value="true" />
+    </options>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_14" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[make minisat2-download
+make]]></param>
+          <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/src" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
+    </vcs-settings>
+    <requirements>
+      <contains name="teamcity.agent.jvm.os.name" value="Windows" />
+    </requirements>
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
