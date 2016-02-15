@@ -33,15 +33,6 @@
         <artifact sourcePath="mbeddr-generic.zip!/mbeddr*/**/*=&gt;%teamcity.build.checkoutDir%/files/&#xD;&#xA;-:." />
       </dependency>
     </artifact-dependencies>
-    <dependencies>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
-        <options>
-          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
-          <option name="take-started-build-with-same-revisions" value="true" />
-          <option name="take-successful-builds-only" value="true" />
-        </options>
-      </depend-on>
-    </dependencies>
     <cleanup />
   </settings>
 </build-type>
