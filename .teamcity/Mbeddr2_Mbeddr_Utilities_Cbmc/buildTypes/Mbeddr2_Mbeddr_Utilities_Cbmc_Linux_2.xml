@@ -8,7 +8,17 @@
       <option name="cleanBuild" value="true" />
     </options>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_12" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[make minisat2-download
+make]]></param>
+          <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/src" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
     </vcs-settings>
