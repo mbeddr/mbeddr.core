@@ -21,7 +21,7 @@ cp %teamcity.build.checkoutDir%/src/cbmc/cbmc %teamcity.build.checkoutDir%/cbmc-
 cp %teamcity.build.checkoutDir%/src/goto-cc/goto-cc %teamcity.build.checkoutDir%/cbmc-mac
 cp %teamcity.build.checkoutDir%/src/goto-instrument/goto-instrument %teamcity.build.checkoutDir%/cbmc-mac
 cp %teamcity.build.checkoutDir%/LICENSE %teamcity.build.checkoutDir%/cbmc-mac
-zip -r -X cbmc-mac.zip %teamcity.build.checkoutDir%/cbmc-mac]]></param>
+zip -r -X %teamcity.build.checkoutDir%/cbmc-mac.zip %teamcity.build.checkoutDir%/cbmc-mac]]></param>
           <param name="teamcity.build.workingDir" value="%teamcity.build.checkoutDir%/src" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
