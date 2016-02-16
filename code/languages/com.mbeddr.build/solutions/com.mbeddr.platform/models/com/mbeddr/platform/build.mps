@@ -103,7 +103,6 @@
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
         <reference id="5610619299013057365" name="target" index="3ygNvj" />
-        <child id="6789562173791401562" name="selectors" index="1juEy9" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
@@ -10915,81 +10914,6 @@
     <node concept="55IIr" id="6ucYLjosbT3" role="auvoZ" />
     <node concept="1l3spV" id="6ucYLjosbT4" role="1l3spN">
       <node concept="3981dG" id="3AVJcIMlF9y" role="39821P">
-        <node concept="398223" id="3AVJcIMlF9z" role="39821P">
-          <node concept="398223" id="3AVJcIMlF9$" role="39821P">
-            <node concept="3_J27D" id="3AVJcIMlF9_" role="Nbhlr">
-              <node concept="3Mxwew" id="3AVJcIMlF9A" role="3MwsjC">
-                <property role="3MwjfP" value="mps-sl-all" />
-              </node>
-            </node>
-            <node concept="398223" id="3AVJcIMlF9B" role="39821P">
-              <node concept="3_J27D" id="3AVJcIMlF9C" role="Nbhlr">
-                <node concept="3Mxwew" id="3AVJcIMlF9D" role="3MwsjC">
-                  <property role="3MwjfP" value="build" />
-                </node>
-              </node>
-              <node concept="398223" id="3AVJcIMlF9E" role="39821P">
-                <node concept="398223" id="3AVJcIMlF9F" role="39821P">
-                  <node concept="3ygNvl" id="3AVJcIMlF9G" role="39821P">
-                    <ref role="3ygNvj" to="90a9:2Xjt3l56m3c" />
-                    <node concept="3LWZYx" id="3AVJcIMlF9H" role="1juEy9">
-                      <property role="3LWZYw" value="*.zip" />
-                    </node>
-                  </node>
-                  <node concept="3_J27D" id="3AVJcIMlF9I" role="Nbhlr">
-                    <node concept="3Mxwew" id="3AVJcIMlF9J" role="3MwsjC">
-                      <property role="3MwjfP" value="mps-sl-all.build" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3_J27D" id="3AVJcIMlF9K" role="Nbhlr">
-                  <node concept="3Mxwew" id="3AVJcIMlF9L" role="3MwsjC">
-                    <property role="3MwjfP" value="artifacts" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="398223" id="3AVJcIMlF9M" role="39821P">
-            <node concept="3_J27D" id="3AVJcIMlF9N" role="Nbhlr">
-              <node concept="3Mxwew" id="3AVJcIMlF9O" role="3MwsjC">
-                <property role="3MwjfP" value="com.mbeddr.platform" />
-              </node>
-            </node>
-            <node concept="398223" id="3AVJcIMlF9P" role="39821P">
-              <node concept="3_J27D" id="3AVJcIMlF9Q" role="Nbhlr">
-                <node concept="3Mxwew" id="3AVJcIMlF9R" role="3MwsjC">
-                  <property role="3MwjfP" value="build" />
-                </node>
-              </node>
-              <node concept="398223" id="3AVJcIMlF9S" role="39821P">
-                <node concept="3_J27D" id="3AVJcIMlF9T" role="Nbhlr">
-                  <node concept="3Mxwew" id="3AVJcIMlF9U" role="3MwsjC">
-                    <property role="3MwjfP" value="artifacts" />
-                  </node>
-                </node>
-                <node concept="398223" id="3AVJcIMlF9V" role="39821P">
-                  <node concept="3_J27D" id="3AVJcIMlF9X" role="Nbhlr">
-                    <node concept="3Mxwew" id="3AVJcIMlF9Y" role="3MwsjC">
-                      <property role="3MwjfP" value="com.mbeddr.platform.build" />
-                    </node>
-                  </node>
-                  <node concept="3ygNvl" id="3vzyAKEKnHO" role="39821P">
-                    <ref role="3ygNvj" node="3AVJcIMlF9x" />
-                    <node concept="3LWZYx" id="3vzyAKEKnUG" role="1juEy9">
-                      <property role="3LWZYw" value="*.zip" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3_J27D" id="3AVJcIMlFap" role="Nbhlr">
-            <node concept="3Mxwew" id="3AVJcIMlFaq" role="3MwsjC">
-              <property role="3MwjfP" value="build" />
-            </node>
-          </node>
-        </node>
         <node concept="398223" id="3AVJcIMlFar" role="39821P">
           <node concept="3ygNvl" id="6ucYLjosgm$" role="39821P">
             <ref role="3ygNvj" node="6ucYLjolh0E" resolve="com.mbeddr.platform.zip" />
