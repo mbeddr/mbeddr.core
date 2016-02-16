@@ -27,6 +27,10 @@
       <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
         <child id="2755237150521975437" name="value" index="aVJcq" />
       </concept>
+      <concept id="244868996532550359" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithValueFromFile" flags="ng" index="hGsBp">
+        <property id="244868996532550362" name="propertyName" index="hGsBk" />
+        <child id="244868996532550360" name="fileName" index="hGsBm" />
+      </concept>
       <concept id="244868996532454372" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithDate" flags="ng" index="hHN3E">
         <property id="244868996532454384" name="pattern" index="hHN3Y" />
       </concept>
@@ -2722,7 +2726,7 @@
                 <property role="1688n3" value="\$build\$" />
                 <node concept="NbPM2" id="6xv$4WsFwzf" role="1688n0">
                   <node concept="3Mxwey" id="6xv$4WsFwzg" role="3MwsjC">
-                    <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+                    <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="mps.build.number" />
                   </node>
                 </node>
               </node>
@@ -2877,11 +2881,11 @@
       </node>
     </node>
     <node concept="2kB4xC" id="3IKDaVZnAxg" role="1l3spd">
-      <property role="TrG5h" value="build.number" />
+      <property role="TrG5h" value="mps.build.number" />
       <node concept="aVJcg" id="6hnvgFycl60" role="aVJcv">
         <node concept="NbPM2" id="6hnvgFycl61" role="aVJcq">
           <node concept="3Mxwew" id="5wLtKNeUYBj" role="3MwsjC">
-            <property role="3MwjfP" value="mbeddr.snapshot" />
+            <property role="3MwjfP" value="MPS-143.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -3035,7 +3039,7 @@
       </node>
       <node concept="3_J27D" id="1BPeV_LjXt6" role="2EteIg">
         <node concept="3Mxwey" id="1BPeV_LjXt7" role="3MwsjC">
-          <ref role="3Mxwex" node="1BPeV_LjXqV" resolve="build.number" />
+          <ref role="3Mxwex" node="1BPeV_LjXqV" resolve="mps.build.number" />
         </node>
       </node>
       <node concept="3_J27D" id="1BPeV_LjXt8" role="2EtHGA">
@@ -3342,8 +3346,20 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="d_WKSiP3Fm" role="1l3spd">
+      <property role="TrG5h" value="idea.platform.build.number" />
+      <node concept="hGsBp" id="d_WKSiPeCU" role="aVJcv">
+        <property role="hGsBk" value="idea.platform.build.number" />
+        <node concept="398BVA" id="4n62pP$TqsP" role="hGsBm">
+          <ref role="398BVh" node="1BPeV_LjXqO" resolve="mps.home" />
+          <node concept="2Ry0Ak" id="4n62pP$TqsS" role="iGT6I">
+            <property role="2Ry0Am" value="build.number" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2kB4xC" id="1BPeV_LjXqV" role="1l3spd">
-      <property role="TrG5h" value="build.number" />
+      <property role="TrG5h" value="mps.build.number" />
       <node concept="aVJcg" id="1BPeV_LjXqW" role="aVJcv">
         <node concept="NbPM2" id="1BPeV_LjXqX" role="aVJcq">
           <node concept="3Mxwew" id="1BPeV_LjXqY" role="3MwsjC">
@@ -3527,7 +3543,7 @@
           <property role="1TblLn" value="build.number" />
           <node concept="NbPM2" id="1BPeV_LjXw0" role="1TblLm">
             <node concept="3Mxwey" id="1BPeV_LjXw1" role="3MwsjC">
-              <ref role="3Mxwex" node="1BPeV_LjXqV" resolve="build.number" />
+              <ref role="3Mxwex" node="1BPeV_LjXqV" resolve="mps.build.number" />
             </node>
           </node>
         </node>
@@ -3560,6 +3576,14 @@
           <node concept="NbPM2" id="1BPeV_LjXwc" role="1TblLm">
             <node concept="3Mxwey" id="1BPeV_LjXwd" role="3MwsjC">
               <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
+            </node>
+          </node>
+        </node>
+        <node concept="1TblLo" id="6DMiG0xqdhc" role="1TblLl">
+          <property role="1TblLn" value="idea.platform.build.number" />
+          <node concept="NbPM2" id="6DMiG0xqdhd" role="1TblLm">
+            <node concept="3Mxwey" id="6DMiG0xqdhg" role="3MwsjC">
+              <ref role="3Mxwex" node="d_WKSiP3Fm" resolve="idea.platform.build.number" />
             </node>
           </node>
         </node>
