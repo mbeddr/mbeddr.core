@@ -8,7 +8,7 @@
   <property name="dmg.image" value="../rcp/icons/mbeddr-logo.png"/>
 
   <property name="build.tmp" value="./"/>
-  <property name="build.code" value="mbeddr.snapshot-macos"/>
+  <property name="build.artifact" value="mbeddr"/>
 	
 
 <target name="get-jdk">
@@ -22,15 +22,11 @@
 
 
 <target name="macbuild">
-  <copy file="${dmg.image}" tofile="${build.tmp}/${build.code}.png"/>
+  <copy file="${dmg.image}" tofile="${build.tmp}/${build.artifact}-macos.png"/>
 
-  <exec host="${mac.host}"
-	  dir="${build.tmp}"
-      command="./mpssign.sh ${build.code}.zip ${build.code} jdk.tar.gz"/>
+  <exec dir="${build.tmp}" command="./mpssign.sh ${build.artifact}-macos.zip ${build.artifact}-macos jdk.tar.gz"/>
 
-  <exec host="${mac.host}"
-	  dir="${build.tmp}"
-      command="./mpsdmg.sh ${build.code}.zip ${build.code}"/>
+  <exec dir="${build.tmp}" command="./mpsdmg.sh ${build.artifact}-macos.zip ${build.artifact}-macos"/>
 </target>
 
 </project>

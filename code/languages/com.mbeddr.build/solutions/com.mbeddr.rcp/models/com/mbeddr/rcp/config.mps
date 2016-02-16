@@ -2181,8 +2181,8 @@
           </node>
         </node>
         <node concept="3_J27D" id="5BQuGro_mDZ" role="Nbhlr">
-          <node concept="3Mxwey" id="5BQuGro_mE0" role="3MwsjC">
-            <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+          <node concept="3Mxwew" id="2AGaUjKUvl9" role="3MwsjC">
+            <property role="3MwjfP" value="mbeddr" />
           </node>
           <node concept="3Mxwew" id="5BQuGro_mE1" role="3MwsjC">
             <property role="3MwjfP" value="-linux.tar.gz" />
@@ -2229,7 +2229,7 @@
                 <property role="2$htvj" value="*" />
                 <node concept="NbPM2" id="6xv$4WsFw_3" role="2$htvi">
                   <node concept="3Mxwew" id="6xv$4WsFw_4" role="3MwsjC">
-                    <property role="3MwjfP" value="mps.exe.vmoptions" />
+                    <property role="3MwjfP" value="mbeddr.exe.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -2248,7 +2248,7 @@
                 <property role="2$htvj" value="*" />
                 <node concept="NbPM2" id="2lwFGYPkEdq" role="2$htvi">
                   <node concept="3Mxwew" id="2lwFGYPkEdr" role="3MwsjC">
-                    <property role="3MwjfP" value="mps64.exe.vmoptions" />
+                    <property role="3MwjfP" value="mbeddr64.exe.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -2750,16 +2750,13 @@
           </node>
           <node concept="3_J27D" id="BJYGrH08XL" role="Nbhlr">
             <node concept="3Mxwew" id="BJYGrH08XM" role="3MwsjC">
-              <property role="3MwjfP" value="mbeddr " />
-            </node>
-            <node concept="3Mxwey" id="BJYGrH08XN" role="3MwsjC">
-              <ref role="3Mxwex" node="5wLtKNeUYBE" resolve="version" />
+              <property role="3MwjfP" value="mbeddr" />
             </node>
           </node>
         </node>
         <node concept="3_J27D" id="3IKDaVZnIk3" role="Nbhlr">
-          <node concept="3Mxwey" id="3IKDaVZnIk5" role="3MwsjC">
-            <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+          <node concept="3Mxwew" id="2AGaUjKUvle" role="3MwsjC">
+            <property role="3MwjfP" value="mbeddr-generic" />
           </node>
           <node concept="3Mxwew" id="3IKDaVZnIk9" role="3MwsjC">
             <property role="3MwjfP" value=".zip" />
@@ -2768,8 +2765,8 @@
       </node>
       <node concept="3981dG" id="5BQuGro_mEu" role="39821P">
         <node concept="3_J27D" id="5BQuGro_mEv" role="Nbhlr">
-          <node concept="3Mxwey" id="5BQuGro_mEw" role="3MwsjC">
-            <ref role="3Mxwex" node="3IKDaVZnAxg" resolve="build.number" />
+          <node concept="3Mxwew" id="2AGaUjKUvlj" role="3MwsjC">
+            <property role="3MwjfP" value="mbeddr" />
           </node>
           <node concept="3Mxwew" id="5BQuGro_mEx" role="3MwsjC">
             <property role="3MwjfP" value="-macos.zip" />
