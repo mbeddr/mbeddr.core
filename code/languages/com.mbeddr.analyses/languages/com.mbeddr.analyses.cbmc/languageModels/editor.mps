@@ -6601,10 +6601,15 @@
     <node concept="RtMap" id="7kzfSag_8G2" role="RtEXV">
       <node concept="3clFbS" id="7kzfSag_8G3" role="2VODD2">
         <node concept="3clFbF" id="7kzfSag_TaO" role="3cqZAp">
-          <node concept="2YIFZM" id="7kzfSag_Tvx" role="3clFbG">
-            <ref role="37wK5l" to="p8vh:7kzfSag_P5M" resolve="shouldSelectNodeInTrace" />
-            <ref role="1Pybhc" to="p8vh:7kzfSag_qzD" resolve="CurrentlySelectedResult" />
-            <node concept="pncrf" id="7kzfSag_TEb" role="37wK5m" />
+          <node concept="1Wc70l" id="4n62pP$TJg2" role="3clFbG">
+            <node concept="3clFbT" id="4n62pP$TJho" role="3uHU7B">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2YIFZM" id="7kzfSag_Tvx" role="3uHU7w">
+              <ref role="37wK5l" to="p8vh:7kzfSag_P5M" resolve="shouldSelectNodeInTrace" />
+              <ref role="1Pybhc" to="p8vh:7kzfSag_qzD" resolve="CurrentlySelectedResult" />
+              <node concept="pncrf" id="7kzfSag_TEb" role="37wK5m" />
+            </node>
           </node>
         </node>
       </node>
