@@ -740,7 +740,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="67rUwlckK4B" role="3Uehp1">
-      <property role="1QGGTI" value="/Users/nikostotz/Desktop/folder3.png" />
+      <property role="1QGGTI" value="${module}/icons/folder.png" />
     </node>
   </node>
   <node concept="Zd50a" id="6bM7gvq4Vtb">
