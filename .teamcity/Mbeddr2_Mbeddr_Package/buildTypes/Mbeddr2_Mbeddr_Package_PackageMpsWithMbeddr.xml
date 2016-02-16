@@ -27,9 +27,9 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_9" name="Build mbeddr RCP (1)" type="Ant">
+      <runner id="RUNNER_9" name="Build mpsWithMbeddrBranding" type="Ant">
         <parameters>
-          <param name="build-file-path" value="scripts/com.mbeddr.rcp/mpsDistribution.xml" />
+          <param name="build-file-path" value="scripts/com.mbeddr.rcp/mps.xml" />
           <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
           <param name="target" value="clean,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
