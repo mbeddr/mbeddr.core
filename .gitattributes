@@ -9,3 +9,5 @@ generated merge=mps
 *.mpr merge=mps
 *.mpsr text merge=mps
 *.model text merge=mps
+code/languages/com.mbeddr.analyses/solutions/com.mbeddr.analyses.cpa.rt/lib/cpachecker.jar filter=lfs diff=lfs merge=lfs -text
+code/languages/com.mbeddr.analyses/solutions/com.mbeddr.analyses.cpa.rt/lib/lib/java/runtime/.* filter=lfs diff=lfs merge=lfs -text
