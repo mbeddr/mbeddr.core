@@ -29,6 +29,11 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
+    <build-extensions>
+      <extension id="BUILD_EXT_3" type="JetBrains.SharedResources">
+        <parameters />
+      </extension>
+    </build-extensions>
     <cleanup />
   </settings>
 </build-type>
