@@ -25,7 +25,6 @@
   <copy file="${dmg.image}" tofile="${build.tmp}/${build.artifact}-macos.png"/>
 
   <exec dir="${build.tmp}" command="./mpssign.sh ${build.artifact}-macos.zip ${build.artifact}-macos jdk.tar.gz"/>
-
   <exec dir="${build.tmp}" command="./mpsdmg.sh ${build.artifact}-macos.zip ${build.artifact}-macos"/>
 </target>
 
