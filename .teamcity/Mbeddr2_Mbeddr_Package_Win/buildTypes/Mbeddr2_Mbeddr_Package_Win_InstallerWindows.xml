@@ -30,7 +30,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
-        <artifact sourcePath="mbeddr-generic.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr&#xD;&#xA;-:." />
+        <artifact sourcePath="mbeddr-win.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr&#xD;&#xA;-:." />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" />
