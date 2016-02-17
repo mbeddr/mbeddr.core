@@ -630,6 +630,14 @@
             <node concept="2ShNRf" id="1pHoCUazckD" role="37wK5m">
               <node concept="1pGfFk" id="1pHoCUazckE" role="2ShVmc">
                 <ref role="37wK5l" to="2mml:1pHoCUaw9f_" resolve="DefaultMethodRenderer" />
+                <node concept="2OqwBi" id="69y_BxSMkbC" role="37wK5m">
+                  <node concept="37vLTw" id="69y_BxSMkbD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1pHoCUazckL" resolve="mpsProject" />
+                  </node>
+                  <node concept="liA8E" id="69y_BxSMkbE" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="37vLTw" id="1pHoCUazckW" role="37wK5m">
