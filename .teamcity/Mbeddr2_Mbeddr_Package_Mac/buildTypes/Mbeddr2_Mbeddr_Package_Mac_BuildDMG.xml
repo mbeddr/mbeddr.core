@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3ac43a7a-efaa-4b0e-9304-231f571f3da6" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>BuildDMG</name>
+  <description />
+  <settings ref="RequiresMpsExtions">
+    <options>
+      <option name="artifactRules" value="**/*/*.dmg" />
+      <option name="buildNumberPattern" value="%mbeddr.build-number%" />
+    </options>
+    <parameters />
+    <build-runners order="">
+      <runner id="RUNNER_4" name="Build DMG" type="Ant">
+        <parameters>
+          <param name="build-file-path" value="mbeddr.core/buildUtil/build.xml" />
+          <param name="target" value="macbuild" />
+          <param name="teamcity.build.workingDir" value="mbeddr.core/buildUtil" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
+        <checkout-rule rule="%mbeddr.checkout-rules%" />
+      </vcs-entry-ref>
+    </vcs-settings>
+    <requirements>
+      <equals name="teamcity.agent.jvm.os.name" value="Mac OS X" />
+    </requirements>
+    <build-triggers />
+    <artifact-dependencies>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="-:jdk.zip&#xD;&#xA;+:jdk.tar.gz=&gt;%system.teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="mbeddr-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+      </dependency>
+    </artifact-dependencies>
+    <dependencies>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+    </dependencies>
+    <cleanup />
+  </settings>
+</build-type>
+
