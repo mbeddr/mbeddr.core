@@ -26,6 +26,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -54,7 +56,7 @@
     <property role="TrG5h" value="EmitInlineStatement" />
     <property role="34LRSv" value="inline" />
     <property role="R4oN_" value="inline" />
-    <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
+    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="ContextAwareEmitStatement" />
     <node concept="1TJgyj" id="_oDvx5U56o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="target" />
@@ -73,7 +75,7 @@
     <property role="TrG5h" value="EmitEntryPointStatement" />
     <property role="34LRSv" value="entry point" />
     <property role="R4oN_" value="entry point" />
-    <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
+    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="ContextAwareEmitStatement" />
     <node concept="1TJgyj" id="2U8JvBXrt1g" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="point" />
@@ -97,6 +99,47 @@
         <ref role="trN6q" to="bj1v:5JpT3MjX6u9" resolve="Analyzer" />
       </node>
       <node concept="tn0Fv" id="7TdqwvhyxIN" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3u8ubzKm3sG">
+    <property role="1pbfSe" value="669036516" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ContextAwareEmitStatement" />
+    <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
+  </node>
+  <node concept="1TIwiD" id="3u8ubzKnUrQ">
+    <property role="1pbfSe" value="669523886" />
+    <property role="TrG5h" value="SpecializedSourceAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="3u8ubzKrfLy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="source" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="M6xJ_" id="3u8ubzKnUrR" role="lGtFl">
+      <property role="Hh88m" value="source" />
+      <node concept="trNpa" id="3u8ubzKnUrX" role="EQaZv">
+        <ref role="trN6q" to="tp41:hz_FXzu" resolve="EmitWriteStatement" />
+      </node>
+      <node concept="tn0Fv" id="3u8ubzKnUrT" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3u8ubzKrgBU">
+    <property role="1pbfSe" value="670401202" />
+    <property role="TrG5h" value="VirtualAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3u8ubzKrgBV" role="lGtFl">
+      <property role="Hh88m" value="virtual" />
+      <node concept="trNpa" id="3u8ubzKrgC1" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="3u8ubzKrgBX" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
     </node>

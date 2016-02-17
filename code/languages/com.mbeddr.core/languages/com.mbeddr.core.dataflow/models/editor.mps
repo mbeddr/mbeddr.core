@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tp45" ref="r:00000000-0000-4000-0000-011c89590379(jetbrains.mps.lang.dataFlow.editor)" />
     <import index="ybok" ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)" implicit="true" />
-    <import index="tp45" ref="r:00000000-0000-4000-0000-011c89590379(jetbrains.mps.lang.dataFlow.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -84,6 +84,20 @@
         <property role="3F0ifm" value="@Context-sensitive" />
       </node>
       <node concept="2SsqMj" id="3QkagoxiVAS" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3u8ubzKnUSd">
+    <ref role="1XX52x" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
+    <node concept="3EZMnI" id="3u8ubzKnXTN" role="2wV5jI">
+      <node concept="l2Vlx" id="3u8ubzKnXTO" role="2iSdaV" />
+      <node concept="2SsqMj" id="3u8ubzKnUSi" role="3EZMnx" />
+      <node concept="3F0ifn" id="3u8ubzKnXTX" role="3EZMnx">
+        <property role="3F0ifm" value="with source" />
+        <ref role="1k5W1q" to="tp45:hz_DuTG" resolve="Instruction" />
+      </node>
+      <node concept="3F1sOY" id="3u8ubzKrfLF" role="3EZMnx">
+        <ref role="1NtTu8" to="ybok:3u8ubzKrfLy" />
+      </node>
     </node>
   </node>
 </model>

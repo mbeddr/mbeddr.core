@@ -22,7 +22,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="f696" ref="r:271faa63-aadd-42b6-8614-2695f6f55e2a(com.mbeddr.core.dataflow.runtime.plugin)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -1963,6 +1962,21 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5nN3xg$0hiP" role="3cqZAp">
+          <node concept="3cpWsn" id="5nN3xg$0hiQ" role="3cpWs9">
+            <property role="TrG5h" value="index" />
+            <node concept="10Oyi0" id="5nN3xg$0hiI" role="1tU5fm" />
+            <node concept="2OqwBi" id="5nN3xg$0hiR" role="33vP2m">
+              <node concept="37vLTw" id="5nN3xg$0hiS" role="2Oq$k0">
+                <ref role="3cqZAo" node="5J1i2dmdMsp" resolve="program" />
+              </node>
+              <node concept="liA8E" id="5nN3xg$0hiT" role="2OqNvi">
+                <ref role="37wK5l" node="5nN3xg$02xG" resolve="indexOfOwn" />
+                <node concept="Xjq3P" id="5nN3xg$0hiU" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5J1i2dmdMsu" role="3cqZAp">
           <node concept="3cpWsn" id="5J1i2dmdMsv" role="3cpWs9">
             <property role="TrG5h" value="successor" />
@@ -1981,11 +1995,8 @@
               <node concept="liA8E" id="5J1i2dmdMs_" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cpWs3" id="5J1i2dmdOef" role="37wK5m">
-                  <node concept="2OqwBi" id="5J1i2dmdMsC" role="3uHU7B">
-                    <node concept="Xjq3P" id="5J1i2dmdMsD" role="2Oq$k0" />
-                    <node concept="2OwXpG" id="5J1i2dmdMsE" role="2OqNvi">
-                      <ref role="2Oxat5" to="dau9:~Instruction.myIndex" resolve="myIndex" />
-                    </node>
+                  <node concept="37vLTw" id="5nN3xg$0i7_" role="3uHU7B">
+                    <ref role="3cqZAo" node="5nN3xg$0hiQ" resolve="index" />
                   </node>
                   <node concept="3cmrfG" id="5J1i2dmdMsB" role="3uHU7w">
                     <property role="3cmrfH" value="1" />
@@ -2524,14 +2535,14 @@
         </node>
       </node>
       <node concept="3clFbS" id="5xyoMgvu3qL" role="3clF47">
-        <node concept="3cpWs6" id="183c22F83di" role="3cqZAp">
-          <node concept="2OqwBi" id="183c22F86lE" role="3cqZAk">
-            <node concept="1rXfSq" id="183c22F84Ob" role="2Oq$k0">
-              <ref role="37wK5l" node="5xyoMgvtf1B" resolve="getAllInstructions" />
+        <node concept="3cpWs6" id="5nN3xgzZKIk" role="3cqZAp">
+          <node concept="2OqwBi" id="5nN3xgzZOYL" role="3cqZAk">
+            <node concept="1rXfSq" id="5nN3xgzZMKL" role="2Oq$k0">
+              <ref role="37wK5l" node="ELXCaNgNFd" resolve="getAllInstructionsMap" />
             </node>
-            <node concept="liA8E" id="183c22F88uv" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
-              <node concept="37vLTw" id="183c22F8a4K" role="37wK5m">
+            <node concept="liA8E" id="5nN3xgzZR9j" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+              <node concept="37vLTw" id="5nN3xgzZT7d" role="37wK5m">
                 <ref role="3cqZAo" node="5xyoMgvu3qJ" resolve="instruction" />
               </node>
             </node>
@@ -2540,6 +2551,37 @@
       </node>
       <node concept="2AHcQZ" id="5xyoMgvu3qM" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5nN3xgzZX9i" role="jymVt" />
+    <node concept="3clFb_" id="5nN3xg$02xG" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="indexOfOwn" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5nN3xg$02xJ" role="3clF47">
+        <node concept="3cpWs6" id="5nN3xg$075s" role="3cqZAp">
+          <node concept="2OqwBi" id="5nN3xg$08YR" role="3cqZAk">
+            <node concept="1rXfSq" id="5nN3xg$0763" role="2Oq$k0">
+              <ref role="37wK5l" node="5xyoMgvtkOw" resolve="getOwnInstructions" />
+            </node>
+            <node concept="liA8E" id="5nN3xg$0biB" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
+              <node concept="37vLTw" id="5nN3xg$0dpJ" role="37wK5m">
+                <ref role="3cqZAo" node="5nN3xg$05d7" resolve="instruction" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5nN3xg$002T" role="1B3o_S" />
+      <node concept="10Oyi0" id="5nN3xg$02xE" role="3clF45" />
+      <node concept="37vLTG" id="5nN3xg$05d7" role="3clF46">
+        <property role="TrG5h" value="instruction" />
+        <node concept="3uibUv" id="5nN3xg$05d6" role="1tU5fm">
+          <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5xyoMgvuE9c" role="jymVt" />
