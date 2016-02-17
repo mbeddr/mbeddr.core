@@ -4,29 +4,43 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="mbeddr.core/buildUtil/*.zip&#xA;mbeddr.core/buildUtil/*.tar.gz" />
+      <option name="artifactRules" value="*.zip&#xA;*.tar.gz" />
     </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_2" name="Download JRE" type="Ant">
         <parameters>
+          <param name="build-file"><![CDATA[<project name="build mbeddr distributions">
+	
+  <property name="base-url" value="https://teamcity.jetbrains.com/httpAuth/app/rest/builds"/>
+  <property name="jdk-build-id" value="buildType:MPS_34_GetMpsHelp"/>
+  <property name="branch" value="branch:default:true"/>   
+  <property name="latest-build" value="status:SUCCESS"/>
+  <property name="jdk-artifacts-url" value="${base-url}/${jdk-build-id},${branch},${latest-build}/artifacts/files"/>	
+
+<target name="get-jdk">
+  <echo> Getting custom jdk</echo>
+  <property name="mac-jdk-url" value="${jdk-artifacts-url}/openJDK/jdk.tar.gz"/>
+  <get src="${mac-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
+  
+  <property name="win-jdk-url" value="${jdk-artifacts-url}/JDK/jdk.zip"/>
+  <get src="${win-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
+</target>
+
+</project>]]></param>
           <param name="build-file-path" value="mbeddr.core/buildUtil/build.xml" />
           <param name="jvmArgs" value="-Dserver.user=%jb.server.user% -Dserver.password=%jb.server.password%" />
           <param name="target" value="get-jdk" />
-          <param name="teamcity.build.workingDir" value="mbeddr.core/buildUtil" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
           <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="use-custom-build-file" value="true" />
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings>
-      <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
-        <checkout-rule rule="%mbeddr.checkout-rules%" />
-      </vcs-entry-ref>
-    </vcs-settings>
+    <vcs-settings />
     <requirements />
     <build-triggers />
     <cleanup />
