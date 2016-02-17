@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="**/*/*.dmg" />
+      <option name="artifactRules" value="mbeddr.core/buildUtil/*.dmg=&gt;%teamcity.build.checkoutDir%" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
