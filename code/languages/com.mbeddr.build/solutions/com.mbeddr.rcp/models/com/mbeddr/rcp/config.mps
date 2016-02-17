@@ -2293,99 +2293,99 @@
                 </node>
               </node>
             </node>
+            <node concept="2HvfSZ" id="2lgcjg39Ytb" role="39821P">
+              <node concept="3LWZYq" id="6xv$4WsFw$Q" role="2HvfZ1">
+                <property role="3LWZYl" value="**/*.exe" />
+              </node>
+              <node concept="398BVA" id="5wLtKNeUYTU" role="2HvfZ0">
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
+                <node concept="2Ry0Ak" id="5wLtKNeUYTY" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5wLtKNeUYTZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="win" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="2lgcjg39Ytp" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="398BVA" id="5wLtKNeUYUl" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
+                <node concept="2Ry0Ak" id="5wLtKNeUYUq" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5wLtKNeUYUr" role="2Ry0An">
+                    <property role="2Ry0Am" value="win" />
+                    <node concept="2Ry0Ak" id="5wLtKNeUYUs" role="2Ry0An">
+                      <property role="2Ry0Am" value="fsnotifier.exe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="6DuyMKt09yY" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="398BVA" id="5wLtKNeUYUP" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
+                <node concept="2Ry0Ak" id="5wLtKNeUYUU" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5wLtKNeUYUV" role="2Ry0An">
+                    <property role="2Ry0Am" value="win" />
+                    <node concept="2Ry0Ak" id="5wLtKNeUYUW" role="2Ry0An">
+                      <property role="2Ry0Am" value="fsnotifier64.exe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="2lgcjg39Ytv" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="398BVA" id="5wLtKNeUYVl" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
+                <node concept="2Ry0Ak" id="5wLtKNeUYVq" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5wLtKNeUYVr" role="2Ry0An">
+                    <property role="2Ry0Am" value="win" />
+                    <node concept="2Ry0Ak" id="5wLtKNeUYVs" role="2Ry0An">
+                      <property role="2Ry0Am" value="restarter.exe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="2lgcjg39Yt$" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="398BVA" id="5wLtKNeUYVP" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
+                <node concept="2Ry0Ak" id="5wLtKNeUYVU" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5wLtKNeUYVV" role="2Ry0An">
+                    <property role="2Ry0Am" value="win" />
+                    <node concept="2Ry0Ak" id="5wLtKNeUYVW" role="2Ry0An">
+                      <property role="2Ry0Am" value="runnerw.exe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="2lgcjg39YtD" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="398BVA" id="5wLtKNeUYWl" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
+                <node concept="2Ry0Ak" id="5wLtKNeUYWq" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5wLtKNeUYWr" role="2Ry0An">
+                    <property role="2Ry0Am" value="win" />
+                    <node concept="2Ry0Ak" id="5wLtKNeUYWs" role="2Ry0An">
+                      <property role="2Ry0Am" value="vistalauncher.exe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="398223" id="6xv$4WsFw$I" role="39821P">
               <node concept="3_J27D" id="6xv$4WsFw$J" role="Nbhlr">
                 <node concept="3Mxwew" id="6xv$4WsFw$K" role="3MwsjC">
                   <property role="3MwjfP" value="win" />
-                </node>
-              </node>
-              <node concept="2HvfSZ" id="2lgcjg39Ytb" role="39821P">
-                <node concept="3LWZYq" id="6xv$4WsFw$Q" role="2HvfZ1">
-                  <property role="3LWZYl" value="**/*.exe" />
-                </node>
-                <node concept="398BVA" id="5wLtKNeUYTU" role="2HvfZ0">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYTY" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYTZ" role="2Ry0An">
-                      <property role="2Ry0Am" value="win" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="28jJK3" id="2lgcjg39Ytp" role="39821P">
-                <property role="28jJZ5" value="755" />
-                <node concept="398BVA" id="5wLtKNeUYUl" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYUq" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYUr" role="2Ry0An">
-                      <property role="2Ry0Am" value="win" />
-                      <node concept="2Ry0Ak" id="5wLtKNeUYUs" role="2Ry0An">
-                        <property role="2Ry0Am" value="fsnotifier.exe" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="28jJK3" id="6DuyMKt09yY" role="39821P">
-                <property role="28jJZ5" value="755" />
-                <node concept="398BVA" id="5wLtKNeUYUP" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYUU" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYUV" role="2Ry0An">
-                      <property role="2Ry0Am" value="win" />
-                      <node concept="2Ry0Ak" id="5wLtKNeUYUW" role="2Ry0An">
-                        <property role="2Ry0Am" value="fsnotifier64.exe" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="28jJK3" id="2lgcjg39Ytv" role="39821P">
-                <property role="28jJZ5" value="755" />
-                <node concept="398BVA" id="5wLtKNeUYVl" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYVq" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYVr" role="2Ry0An">
-                      <property role="2Ry0Am" value="win" />
-                      <node concept="2Ry0Ak" id="5wLtKNeUYVs" role="2Ry0An">
-                        <property role="2Ry0Am" value="restarter.exe" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="28jJK3" id="2lgcjg39Yt$" role="39821P">
-                <property role="28jJZ5" value="755" />
-                <node concept="398BVA" id="5wLtKNeUYVP" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYVU" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYVV" role="2Ry0An">
-                      <property role="2Ry0Am" value="win" />
-                      <node concept="2Ry0Ak" id="5wLtKNeUYVW" role="2Ry0An">
-                        <property role="2Ry0Am" value="runnerw.exe" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="28jJK3" id="2lgcjg39YtD" role="39821P">
-                <property role="28jJZ5" value="755" />
-                <node concept="398BVA" id="5wLtKNeUYWl" role="28jJRO">
-                  <ref role="398BVh" node="5wLtKNeUY_a" resolve="mps.home" />
-                  <node concept="2Ry0Ak" id="5wLtKNeUYWq" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5wLtKNeUYWr" role="2Ry0An">
-                      <property role="2Ry0Am" value="win" />
-                      <node concept="2Ry0Ak" id="5wLtKNeUYWs" role="2Ry0An">
-                        <property role="2Ry0Am" value="vistalauncher.exe" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
