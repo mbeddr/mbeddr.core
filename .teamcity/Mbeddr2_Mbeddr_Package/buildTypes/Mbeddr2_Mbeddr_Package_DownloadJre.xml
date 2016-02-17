@@ -21,10 +21,10 @@
 <target name="get-jdk">
   <echo> Getting custom jdk</echo>
   <property name="mac-jdk-url" value="${jdk-artifacts-url}/openJDK/jdk.tar.gz"/>
-  <get src="${mac-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
+  <get src="${mac-jdk-url}" dest="." verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
   
   <property name="win-jdk-url" value="${jdk-artifacts-url}/JDK/jdk.zip"/>
-  <get src="${win-jdk-url}" dest="${build.tmp}" verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
+  <get src="${win-jdk-url}" dest="." verbose="true" skipexisting="true" usetimestamp="true" username="${server.user}" password="${server.password}" />
 </target>
 
 </project>]]></param>
