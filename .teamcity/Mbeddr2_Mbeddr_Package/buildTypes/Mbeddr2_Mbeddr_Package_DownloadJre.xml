@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="*.zip&#xA;*.tar.gz" />
+      <option name="artifactRules" value="mbeddr.core/buildUtil/jdk.zip=&gt;%teamcity.build.checkoutDir%&#xA;mbeddr.core/buildUtil/jdk.tar.gz=&gt;%teamcity.build.checkoutDir%" />
     </options>
     <parameters />
     <build-runners order="RUNNER_17">
