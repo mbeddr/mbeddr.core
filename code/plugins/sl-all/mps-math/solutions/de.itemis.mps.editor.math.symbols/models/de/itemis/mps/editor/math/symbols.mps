@@ -11,7 +11,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="5nlq" ref="r:34f40b74-cb38-46ba-8e5b-13b443c803c4(de.itemis.mps.editor.math.runtime)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5097,7 +5096,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3EpCmwwRjgg" role="3cqZAp" />
         <node concept="3clFbF" id="3EpCmwwRjgh" role="3cqZAp">
           <node concept="2OqwBi" id="3EpCmwwRjgi" role="3clFbG">
             <node concept="2rujPq" id="3EpCmwwRjgj" role="2Oq$k0" />
@@ -5110,6 +5108,31 @@
                   <ref role="3cqZAo" node="3EpCmwwRjbS" resolve="symbol" />
                 </node>
                 <node concept="1D9iu6" id="3EpCmwwRjgn" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1AxZfW" id="3fnMrc_o3I" role="1AxKLy">
+      <node concept="3clFbS" id="3fnMrc_o3J" role="2VODD2">
+        <node concept="3clFbF" id="3fnMrc_sS8" role="3cqZAp">
+          <node concept="37vLTI" id="3fnMrc_t0I" role="3clFbG">
+            <node concept="17qRlL" id="3fnMrc_tad" role="37vLTx">
+              <node concept="2OqwBi" id="3fnMrc_t3s" role="3uHU7B">
+                <node concept="1AxZmq" id="3fnMrc_t20" role="2Oq$k0" />
+                <node concept="liA8E" id="3fnMrc_t7Q" role="2OqNvi">
+                  <ref role="37wK5l" to="5nlq:7UiI8Oo4zmN" resolve="getHeight" />
+                </node>
+              </node>
+              <node concept="3b6qkQ" id="3fnMrc_taq" role="3uHU7w">
+                <property role="$nhwW" value="0.8794244261538204" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3fnMrc_sSM" role="37vLTJ">
+              <node concept="1AxZmq" id="3fnMrc_sS7" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3fnMrc_sW_" role="2OqNvi">
+                <ref role="2Oxat5" to="5nlq:7UiI8Oo4zw3" resolve="width" />
               </node>
             </node>
           </node>

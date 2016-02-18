@@ -229,6 +229,12 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="4x22hTwnsWk" role="3cqZAp">
+              <node concept="raruj" id="4x22hTwnsZp" role="lGtFl" />
+              <node concept="5jKBG" id="4x22hTwnsZv" role="lGtFl">
+                <ref role="v9R2y" to="tpc3:2dv1ickkgDx" resolve="template_EditorCellModel_CommonMethods" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

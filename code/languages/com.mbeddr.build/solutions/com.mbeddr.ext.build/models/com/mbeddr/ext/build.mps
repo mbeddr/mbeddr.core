@@ -861,6 +861,25 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="73rNuZmLa1Y" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ex.ext.statemachine" />
+        <property role="3LESm3" value="3ef85fa6-42d3-4b91-b2be-19b37203ff69" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="73rNuZmLa1Z" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="73rNuZmLa20" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="73rNuZmLa21" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ex.ext.statemachine" />
+              <node concept="2Ry0Ak" id="73rNuZmLa98" role="2Ry0An">
+                <property role="2Ry0Am" value="statemachine.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="22LTRH" id="7Vt15sLW_oB" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.ext.tests" />

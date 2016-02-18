@@ -114,9 +114,6 @@
   <node concept="1l3spW" id="5qO$P$PtiTw">
     <property role="TrG5h" value="com.mbeddr.allInOne" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.allInOne" />
-    <node concept="398rNT" id="5ueaxoTn60V" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
-    </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
       <property role="TZNOO" value="1.6" />
@@ -232,6 +229,15 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="5ueaxoTn60V" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="5wLtKNeVk_R" role="398pKh">
+        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="5wLtKNeVkA0" role="iGT6I">
+          <property role="2Ry0Am" value="artifacts" />
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="5qO$P$PtiTz" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="4pE1MOiYJe$" role="398pKh">
@@ -254,7 +260,7 @@
                         <node concept="2Ry0Ak" id="4pE1MOiYJzf" role="2Ry0An">
                           <property role="2Ry0Am" value="Applications" />
                           <node concept="2Ry0Ak" id="4pE1MOiYJzm" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS32.app" />
+                            <property role="2Ry0Am" value="MPS33.app" />
                             <node concept="2Ry0Ak" id="4pE1MOiYJzt" role="2Ry0An">
                               <property role="2Ry0Am" value="Contents" />
                             </node>

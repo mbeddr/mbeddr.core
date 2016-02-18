@@ -116,6 +116,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -2265,6 +2266,24 @@
       <node concept="2AHcQZ" id="5Zn2KFQUfZD" role="2AJF6D">
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
+    </node>
+    <node concept="13i0hz" id="2ZHlC004czC" role="13h7CS">
+      <property role="TrG5h" value="isEmpty" />
+      <node concept="3Tm1VV" id="2ZHlC004czD" role="1B3o_S" />
+      <node concept="3clFbS" id="2ZHlC004czE" role="3clF47">
+        <node concept="3clFbF" id="2ZHlC004e7h" role="3cqZAp">
+          <node concept="2OqwBi" id="2ZHlC004ee9" role="3clFbG">
+            <node concept="2OqwBi" id="2ZHlC004e8P" role="2Oq$k0">
+              <node concept="13iPFW" id="2ZHlC004e7g" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2ZHlC004ebA" role="2OqNvi">
+                <ref role="37wK5l" node="3Q5enzfMT4l" resolve="asTextString" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="2ZHlC004ek_" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2ZHlC004e7c" role="3clF45" />
     </node>
     <node concept="13hLZK" id="4Lll81Ty9oq" role="13h7CW">
       <node concept="3clFbS" id="4Lll81Ty9or" role="2VODD2">
