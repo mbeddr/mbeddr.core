@@ -2272,27 +2272,6 @@
                 </node>
               </node>
             </node>
-            <node concept="28jJK3" id="2lgcjg3akLO" role="39821P">
-              <property role="28jJZ5" value="755" />
-              <node concept="2$gBol" id="5wLtKNeV7Io" role="28jJR8">
-                <property role="2$htvj" value="*" />
-                <node concept="NbPM2" id="5wLtKNeV7Iq" role="2$htvi">
-                  <node concept="3Mxwew" id="5wLtKNeV7I_" role="3MwsjC">
-                    <property role="3MwjfP" value="mbeddr.sh" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3co7Ac" id="2lgcjg3akLU" role="28jJR8">
-                <property role="3co7Am" value="lf" />
-                <property role="3cpA_W" value="true" />
-              </node>
-              <node concept="398BVA" id="5wLtKNeVGnZ" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
-                <node concept="2Ry0Ak" id="5wLtKNeVGo7" role="iGT6I">
-                  <property role="2Ry0Am" value="mps.sh" />
-                </node>
-              </node>
-            </node>
             <node concept="2HvfSZ" id="2lgcjg39Ytb" role="39821P">
               <node concept="3LWZYq" id="6xv$4WsFw$Q" role="2HvfZ1">
                 <property role="3LWZYl" value="**/*.exe" />
@@ -3383,6 +3362,9 @@
           </node>
           <node concept="3LWZYq" id="73rNuZmHi9U" role="2HvfZ1">
             <property role="3LWZYl" value="mps.*" />
+          </node>
+          <node concept="3LWZYq" id="73rNuZmLcek" role="2HvfZ1">
+            <property role="3LWZYl" value="*.vmoptions" />
           </node>
           <node concept="3LWZYq" id="1BPeV_LjXvf" role="2HvfZ1">
             <property role="3LWZYl" value="linux/" />
