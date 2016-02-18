@@ -41,29 +41,7 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
-    <cleanup>
-      <policy type="daysAndBuilds" cleanup-level="EVERYTHING">
-        <parameters>
-          <param name="keepBuilds.count" value="1" />
-          <param name="keepDays.count" value="1" />
-        </parameters>
-      </policy>
-      <policy type="daysAndBuilds" cleanup-level="HISTORY_ENTRY">
-        <parameters>
-          <param name="keepBuilds.count" value="1" />
-          <param name="keepDays.count" value="1" />
-        </parameters>
-      </policy>
-      <policy type="daysAndBuilds" cleanup-level="ARTIFACTS">
-        <parameters>
-          <param name="keepBuilds.count" value="1" />
-          <param name="keepDays.count" value="1" />
-        </parameters>
-      </policy>
-      <options>
-        <option name="preventDependenciesArtifactsFromCleanup" value="false" />
-      </options>
-    </cleanup>
+    <cleanup />
   </settings>
 </build-type>
 

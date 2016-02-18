@@ -2,13 +2,13 @@
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="d273447e-6874-4bda-ac02-97927801fbb3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>Download JRE</name>
   <description />
-  <settings ref="RequiresMpsExtions">
+  <settings>
     <options>
       <option name="artifactRules" value="*.zip&#xA;*.tar.gz" />
     </options>
     <parameters />
-    <build-runners order="RUNNER_17">
-      <runner id="RUNNER_17" name="Download JRE" type="Ant">
+    <build-runners>
+      <runner id="RUNNER_2" name="Download JRE" type="Ant">
         <parameters>
           <param name="build-file"><![CDATA[<project name="build mbeddr distributions">
 	
