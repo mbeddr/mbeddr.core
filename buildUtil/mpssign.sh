@@ -11,8 +11,6 @@ mkdir ./${EXPLODED}
 echo "Unzipping $1 to ${EXPLODED}..."
 unzip -q -o $1 -d ./${EXPLODED}/
 rm $1
-echo "copying $4 to ${EXPLODED}..."
-cp $4 ./${EXPLODED}/
 BUILD_NAME=$(ls ./${EXPLODED}/)
 
 echo "Modifying Info.plist"
