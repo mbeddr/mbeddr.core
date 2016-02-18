@@ -36,7 +36,6 @@
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
           <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="use-custom-build-file" value="true" />
         </parameters>
       </runner>
     </build-runners>
