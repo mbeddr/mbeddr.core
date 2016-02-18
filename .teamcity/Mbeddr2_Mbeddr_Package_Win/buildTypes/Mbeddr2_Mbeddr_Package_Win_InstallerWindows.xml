@@ -36,7 +36,7 @@
         <artifact sourcePath="jdk.zip!/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr/&#xD;&#xA;-:." />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
-        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="mbeddr-win.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr&#xD;&#xA;-:." />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows" cleanDestination="false">
@@ -44,6 +44,16 @@
         <artifact sourcePath="cbmc-win.zip!**=&gt;%teamcity.build.checkoutDir%/files/3rd-party/cbmc" />
       </dependency>
     </artifact-dependencies>
+    <dependencies>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
+        <options>
+          <option name="run-build-if-dependency-failed" value="CANCEL" />
+          <option name="run-build-if-dependency-failed-to-start" value="CANCEL" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+    </dependencies>
     <cleanup />
   </settings>
 </build-type>
