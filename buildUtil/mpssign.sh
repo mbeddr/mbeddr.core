@@ -11,11 +11,11 @@ mkdir ./${EXPLODED}
 echo "Unzipping $1 to ${EXPLODED}..."
 unzip -q -o $1 -d ./${EXPLODED}/
 rm $1
+echo "copying $4 to ${EXPLODED}..."
+cp $4 ./${EXPLODED}/
 BUILD_NAME=$(ls ./${EXPLODED}/)
 
 echo "Modifying Info.plist"
-sed -i -e 's/mps.icns/mbeddr.icns/' ./${EXPLODED}/"$BUILD_NAME"/Contents/Info.plist
-
 if [ $# -eq 3 ] && [ -f ./$3 ]; then
   sed -i -e 's/1.6\*/1.6\+/' ./${EXPLODED}/"$BUILD_NAME"/Contents/Info.plist
   sed -i -e 's/NoJavaDistribution/custom-jdk-bundled/' ./${EXPLODED}/"$BUILD_NAME"/Contents/Info.plist
