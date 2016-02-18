@@ -1071,6 +1071,9 @@
                         <node concept="37vLTw" id="1EPwOZKjubs" role="37wK5m">
                           <ref role="3cqZAo" node="5caPF5jNgJt" resolve="parent" />
                         </node>
+                        <node concept="37vLTw" id="5YmQEj3AEFx" role="37wK5m">
+                          <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1083,19 +1086,6 @@
                         <ref role="37wK5l" to="f696:3K8JqUjVxyz" resolve="setTriggeringInstruction" />
                         <node concept="37vLTw" id="3K8JqUjVDq9" role="37wK5m">
                           <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="183c22F788O" role="3cqZAp">
-                    <node concept="2OqwBi" id="183c22F78cf" role="3clFbG">
-                      <node concept="37vLTw" id="183c22F788M" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
-                      </node>
-                      <node concept="liA8E" id="183c22F78iy" role="2OqNvi">
-                        <ref role="37wK5l" to="f696:183c22F76vX" resolve="setNestedProgram" />
-                        <node concept="37vLTw" id="183c22F78iN" role="37wK5m">
-                          <ref role="3cqZAo" node="5caPF5jNdCz" resolve="current" />
                         </node>
                       </node>
                     </node>
