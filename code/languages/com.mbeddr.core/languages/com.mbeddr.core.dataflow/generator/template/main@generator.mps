@@ -1409,12 +1409,12 @@
             <node concept="3cpWs8" id="3u8ubzKo2eF" role="3cqZAp">
               <node concept="3cpWsn" id="3u8ubzKo2eG" role="3cpWs9">
                 <property role="TrG5h" value="instruction" />
-                <node concept="3uibUv" id="3u8ubzKo2eH" role="1tU5fm">
-                  <ref role="3uigEE" to="dau9:~WriteInstruction" resolve="WriteInstruction" />
+                <node concept="3uibUv" id="6ZSpeVT7m6Y" role="1tU5fm">
+                  <ref role="3uigEE" to="f696:5xyoMgvtsHn" resolve="ContextAwareWriteInstruction" />
                 </node>
                 <node concept="2ShNRf" id="3u8ubzKo2kr" role="33vP2m">
                   <node concept="1pGfFk" id="3u8ubzKo2kq" role="2ShVmc">
-                    <ref role="37wK5l" to="dau9:~WriteInstruction.&lt;init&gt;(java.lang.String,java.lang.Object,java.lang.Object)" resolve="WriteInstruction" />
+                    <ref role="37wK5l" to="f696:5xyoMgvtsHy" resolve="ContextAwareWriteInstruction" />
                     <node concept="Xl_RD" id="1$NEetdWLsQ" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="1$NEetdWLsR" role="lGtFl">
