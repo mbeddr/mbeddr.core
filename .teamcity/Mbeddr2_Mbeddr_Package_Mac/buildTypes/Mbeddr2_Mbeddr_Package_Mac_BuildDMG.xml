@@ -33,8 +33,8 @@
     <build-triggers />
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="-:jdk.zip&#xD;&#xA;+:jdk.tar.gz=&gt;%system.teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
+        <artifact sourcePath="jdk.tar.gz=&gt;%system.teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
@@ -42,13 +42,6 @@
       </dependency>
     </artifact-dependencies>
     <dependencies>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
-        <options>
-          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
-          <option name="take-started-build-with-same-revisions" value="true" />
-          <option name="take-successful-builds-only" value="true" />
-        </options>
-      </depend-on>
       <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />

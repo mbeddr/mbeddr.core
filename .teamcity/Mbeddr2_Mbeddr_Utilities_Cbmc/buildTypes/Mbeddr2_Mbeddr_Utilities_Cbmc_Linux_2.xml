@@ -2,14 +2,13 @@
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f099628a-ed42-4871-97ee-dff92cb3f9a9" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>Linux</name>
   <description />
-  <settings>
+  <settings ref="RequiresMpsExtions">
     <options>
       <option name="artifactRules" value="cbmc-linux.tar.gz" />
-      <option name="cleanBuild" value="true" />
     </options>
     <parameters />
-    <build-runners>
-      <runner id="RUNNER_12" name="" type="simpleRunner">
+    <build-runners order="RUNNER_18">
+      <runner id="RUNNER_18" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[make minisat2-download
 make -j12
