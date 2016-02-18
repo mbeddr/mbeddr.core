@@ -3004,8 +3004,8 @@
         </node>
       </node>
       <node concept="NbPM2" id="1BPeV_LjXt0" role="3$iogF">
-        <node concept="3Mxwew" id="1BPeV_LjXt1" role="3MwsjC">
-          <property role="3MwjfP" value="http://itemis.de" />
+        <node concept="3Mxwew" id="73rNuZmLcal" role="3MwsjC">
+          <property role="3MwjfP" value="http://github.com/mbeddr/mbeddr.core" />
         </node>
       </node>
       <node concept="NbPM2" id="1BPeV_LjXt2" role="27hAJg">
@@ -3076,8 +3076,8 @@
           <property role="2Ry0Am" value="rcp" />
           <node concept="2Ry0Ak" id="1BPeV_LjXts" role="2Ry0An">
             <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1BPeV_LjXtt" role="2Ry0An">
-              <property role="2Ry0Am" value="mpsAbout.png" />
+            <node concept="2Ry0Ak" id="73rNuZmLawx" role="2Ry0An">
+              <property role="2Ry0Am" value="mbeddrAbout.png" />
             </node>
           </node>
         </node>
@@ -3088,8 +3088,8 @@
           <property role="2Ry0Am" value="rcp" />
           <node concept="2Ry0Ak" id="1BPeV_LjXtw" role="2Ry0An">
             <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1BPeV_LjXtx" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS_16.png" />
+            <node concept="2Ry0Ak" id="73rNuZmLaw_" role="2Ry0An">
+              <property role="2Ry0Am" value="mbeddr_16.png" />
             </node>
           </node>
         </node>
@@ -3100,8 +3100,8 @@
           <property role="2Ry0Am" value="rcp" />
           <node concept="2Ry0Ak" id="1BPeV_LjXt$" role="2Ry0An">
             <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1BPeV_LjXt_" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS_32.png" />
+            <node concept="2Ry0Ak" id="73rNuZmLawD" role="2Ry0An">
+              <property role="2Ry0Am" value="mbeddr_32.png" />
             </node>
           </node>
         </node>
@@ -3148,8 +3148,8 @@
           <property role="2Ry0Am" value="rcp" />
           <node concept="2Ry0Ak" id="1BPeV_LjXtO" role="2Ry0An">
             <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1BPeV_LjXtP" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS_welcomeScreen.png" />
+            <node concept="2Ry0Ak" id="73rNuZmLawH" role="2Ry0An">
+              <property role="2Ry0Am" value="mbeddWelcomeScreen.png" />
             </node>
           </node>
         </node>
@@ -3335,7 +3335,7 @@
       <node concept="aVJcg" id="1BPeV_LjXqW" role="aVJcv">
         <node concept="NbPM2" id="1BPeV_LjXqX" role="aVJcq">
           <node concept="3Mxwew" id="1BPeV_LjXqY" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-143.SNAPSHOT" />
+            <property role="3MwjfP" value="mbeddr-1.0.SNAPSHOT" />
           </node>
         </node>
       </node>
