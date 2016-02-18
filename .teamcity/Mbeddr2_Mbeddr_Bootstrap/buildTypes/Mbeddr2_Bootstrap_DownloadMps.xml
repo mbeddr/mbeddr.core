@@ -41,7 +41,18 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
-    <cleanup />
+    <cleanup>
+      <policy type="builds" cleanup-level="EVERYTHING">
+        <parameters>
+          <param name="keepBuilds.count" value="1" />
+        </parameters>
+      </policy>
+      <policy type="builds" cleanup-level="HISTORY_ENTRY">
+        <parameters>
+          <param name="keepBuilds.count" value="1" />
+        </parameters>
+      </policy>
+    </cleanup>
   </settings>
 </build-type>
 
