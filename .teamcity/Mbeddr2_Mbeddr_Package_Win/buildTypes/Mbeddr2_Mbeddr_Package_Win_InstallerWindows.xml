@@ -22,7 +22,14 @@
     <requirements>
       <equals name="teamcity.agent.jvm.os.name" value="Windows 8.1" />
     </requirements>
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="branchFilter" value="+:*" />
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
@@ -30,7 +37,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
-        <artifact sourcePath="mbeddr-generic.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr&#xD;&#xA;-:." />
+        <artifact sourcePath="mbeddr-win.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr&#xD;&#xA;-:." />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" />
