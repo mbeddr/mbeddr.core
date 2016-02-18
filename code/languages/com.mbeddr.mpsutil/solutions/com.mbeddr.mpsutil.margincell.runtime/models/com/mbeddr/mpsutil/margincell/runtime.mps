@@ -62,6 +62,11 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
+      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
+        <child id="1153952416686" name="body" index="2GV8ay" />
+        <child id="1153952429843" name="finallyBody" index="2GVbov" />
+        <child id="1164903700860" name="catchClause" index="TEXxN" />
+      </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -2410,8 +2415,24 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4A3glljUTQQ" role="3clF47">
-        <node concept="SfApY" id="61Pvu7KRMen" role="3cqZAp">
-          <node concept="3clFbS" id="61Pvu7KRMep" role="SfCbr">
+        <node concept="3cpWs8" id="6NCJuja2aWZ" role="3cqZAp">
+          <node concept="3cpWsn" id="6NCJuja2aX0" role="3cpWs9">
+            <property role="TrG5h" value="g" />
+            <node concept="3uibUv" id="6NCJuja2aX1" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+            </node>
+            <node concept="2OqwBi" id="6NCJuja2brg" role="33vP2m">
+              <node concept="37vLTw" id="6NCJuja2bkq" role="2Oq$k0">
+                <ref role="3cqZAo" node="4A3glljUTRO" resolve="g_" />
+              </node>
+              <node concept="liA8E" id="6NCJuja2bw3" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Graphics.create():java.awt.Graphics" resolve="create" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2GUZhq" id="6NCJuja2byx" role="3cqZAp">
+          <node concept="3clFbS" id="61Pvu7KRMep" role="2GV8ay">
             <node concept="3cpWs8" id="4A3glljUTQR" role="3cqZAp">
               <node concept="3cpWsn" id="4A3glljUTQS" role="3cpWs9">
                 <property role="TrG5h" value="sourceX" />
@@ -2482,8 +2503,8 @@
                   <node concept="37vLTw" id="10nVqVg9TW_" role="37wK5m">
                     <ref role="3cqZAo" node="4A3glljUTRM" resolve="contentCell" />
                   </node>
-                  <node concept="37vLTw" id="10nVqVg9U0b" role="37wK5m">
-                    <ref role="3cqZAo" node="4A3glljUTRO" resolve="graphics" />
+                  <node concept="37vLTw" id="6NCJuja2c9f" role="37wK5m">
+                    <ref role="3cqZAo" node="6NCJuja2aX0" resolve="g" />
                   </node>
                   <node concept="1rXfSq" id="10nVqVg9U4r" role="37wK5m">
                     <ref role="37wK5l" node="4A3glljUTZm" resolve="isSelected" />
@@ -2520,8 +2541,8 @@
             <node concept="3clFbH" id="3OU98G0sga3" role="3cqZAp" />
             <node concept="3clFbF" id="3OU98G0sc1S" role="3cqZAp">
               <node concept="2OqwBi" id="3OU98G0scfA" role="3clFbG">
-                <node concept="37vLTw" id="3OU98G0sc1R" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4A3glljUTRO" resolve="graphics" />
+                <node concept="37vLTw" id="6NCJuja2cgD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6NCJuja2aX0" resolve="g" />
                 </node>
                 <node concept="liA8E" id="3OU98G0scA6" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.drawPolyline(int[],int[],int):void" resolve="drawPolyline" />
@@ -2568,7 +2589,7 @@
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="61Pvu7KRMeq" role="TEbGg">
+          <node concept="TDmWw" id="61Pvu7KRMeq" role="TEXxN">
             <node concept="3cpWsn" id="61Pvu7KRMes" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="61Pvu7KRMrT" role="1tU5fm">
@@ -2588,6 +2609,18 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbS" id="6NCJuja2by$" role="2GVbov">
+            <node concept="3clFbF" id="6NCJuja2bRL" role="3cqZAp">
+              <node concept="2OqwBi" id="6NCJuja2bS8" role="3clFbG">
+                <node concept="37vLTw" id="6NCJuja2bRK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6NCJuja2aX0" resolve="g" />
+                </node>
+                <node concept="liA8E" id="6NCJuja2bUV" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Graphics.dispose():void" resolve="dispose" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3Tmbuc" id="4A3glljUTRK" role="1B3o_S" />
@@ -2599,7 +2632,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="4A3glljUTRO" role="3clF46">
-        <property role="TrG5h" value="graphics" />
+        <property role="TrG5h" value="g_" />
         <node concept="3uibUv" id="4A3glljUTRP" role="1tU5fm">
           <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
         </node>
