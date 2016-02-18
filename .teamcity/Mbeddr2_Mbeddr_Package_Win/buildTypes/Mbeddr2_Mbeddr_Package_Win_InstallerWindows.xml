@@ -41,7 +41,7 @@
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows" cleanDestination="false">
         <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" />
-        <artifact sourcePath="cbmc-win.zip!=&gt;%teamcity.build.checkoutDir%/files/3rd-party/cbmc" />
+        <artifact sourcePath="cbmc-win.zip!**=&gt;%teamcity.build.checkoutDir%/files/3rd-party/cbmc" />
       </dependency>
     </artifact-dependencies>
     <cleanup />
