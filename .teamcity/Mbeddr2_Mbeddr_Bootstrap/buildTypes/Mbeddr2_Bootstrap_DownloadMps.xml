@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="9923080c-1d73-45db-9644-82d23d1f84cf" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>Download MPS</name>
-  <description />
+  <description>Download MPS</description>
   <settings ref="RequiresMpsExtions">
     <options>
       <option name="artifactRules" value="%teamcity.build.workingDir%/mbeddr.core/MPS" />
