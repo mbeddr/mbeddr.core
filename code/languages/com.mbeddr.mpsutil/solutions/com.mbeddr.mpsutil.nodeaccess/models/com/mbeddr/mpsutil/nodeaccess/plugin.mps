@@ -1282,14 +1282,9 @@
                                   <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance():jetbrains.mps.openapi.navigation.NavigationSupport" resolve="getInstance" />
                                 </node>
                                 <node concept="liA8E" id="2N1CSrzKNQ9" role="2OqNvi">
-                                  <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.smodel.IOperationContext,org.jetbrains.mps.openapi.model.SNode,boolean,boolean):jetbrains.mps.openapi.editor.Editor" resolve="openNode" />
-                                  <node concept="2ShNRf" id="2N1CSrzKNQa" role="37wK5m">
-                                    <node concept="1pGfFk" id="2N1CSrzKNQb" role="2ShVmc">
-                                      <ref role="37wK5l" to="z1c3:~ProjectOperationContext.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="ProjectOperationContext" />
-                                      <node concept="37vLTw" id="602uc2JOATy" role="37wK5m">
-                                        <ref role="3cqZAo" node="602uc2JOA6c" resolve="fP" />
-                                      </node>
-                                    </node>
+                                  <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean):jetbrains.mps.openapi.editor.Editor" resolve="openNode" />
+                                  <node concept="37vLTw" id="1T2KDlwRAPO" role="37wK5m">
+                                    <ref role="3cqZAo" node="602uc2JOA6c" resolve="fP" />
                                   </node>
                                   <node concept="37vLTw" id="7CAL8BWtKc" role="37wK5m">
                                     <ref role="3cqZAo" node="7CAL8BWo$s" resolve="resolveNode" />
