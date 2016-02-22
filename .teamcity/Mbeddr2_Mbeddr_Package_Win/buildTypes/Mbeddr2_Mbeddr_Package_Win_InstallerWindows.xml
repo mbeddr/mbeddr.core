@@ -53,6 +53,20 @@
           <option name="take-successful-builds-only" value="true" />
         </options>
       </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
     </dependencies>
     <cleanup />
   </settings>
