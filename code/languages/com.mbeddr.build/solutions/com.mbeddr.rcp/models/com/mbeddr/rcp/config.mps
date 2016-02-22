@@ -3314,7 +3314,7 @@
       <node concept="aVJcg" id="1BPeV_LjXqW" role="aVJcv">
         <node concept="NbPM2" id="1BPeV_LjXqX" role="aVJcq">
           <node concept="3Mxwew" id="1BPeV_LjXqY" role="3MwsjC">
-            <property role="3MwjfP" value="mbeddr-1.0.SNAPSHOT" />
+            <property role="3MwjfP" value="MPS-143.SNAPSHOT" />
           </node>
         </node>
       </node>
