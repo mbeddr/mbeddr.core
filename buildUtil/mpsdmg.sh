@@ -11,8 +11,13 @@ echo "Unzipping $2.sit to ${EXPLODED}..."
 ditto -x -k $2.sit ./${EXPLODED}/
 #rm $2.sit
 BUILD_NAME=$(ls ./${EXPLODED}/)
+echo "Build Name: $BUILD_NAME"
 VOLNAME=`echo $BUILD_NAME | sed 's/\.app$//'`
+echo "Vol Name: $VOLNAME"
 BG_PIC="$2.png"
+
+echo "copying $3 to ${EXPLODED}..."
+cp $3 ./${EXPLODED}
 
 chmod a+x ./${EXPLODED}/"$BUILD_NAME"/Contents/MacOS/*
 chmod a+x ./${EXPLODED}/"$BUILD_NAME"/Contents/bin/*.py
