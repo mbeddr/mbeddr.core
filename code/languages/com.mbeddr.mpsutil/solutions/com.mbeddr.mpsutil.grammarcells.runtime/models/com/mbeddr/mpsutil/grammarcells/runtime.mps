@@ -20730,7 +20730,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3pFNVizD_gr">
-    <property role="TrG5h" value="SplitablePropertCell" />
+    <property role="TrG5h" value="SplittablePropertCell" />
     <node concept="2tJIrI" id="3pFNVizIaS$" role="jymVt" />
     <node concept="312cEg" id="3pFNVizIbCH" role="jymVt">
       <property role="TrG5h" value="myTokenizer" />
@@ -21468,11 +21468,11 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="3pFNVizKMJe" role="1tU5fm">
-              <ref role="3uigEE" node="3pFNVizD_gr" resolve="SplitablePropertCell" />
+              <ref role="3uigEE" node="3pFNVizD_gr" resolve="SplittablePropertCell" />
             </node>
             <node concept="2ShNRf" id="3pFNVizDNZm" role="33vP2m">
               <node concept="1pGfFk" id="3pFNVizDNZn" role="2ShVmc">
-                <ref role="37wK5l" node="3pFNVizD_jy" resolve="SplitablePropertCell" />
+                <ref role="37wK5l" node="3pFNVizD_jy" resolve="SplittablePropertCell" />
                 <node concept="37vLTw" id="3pFNVizDNOb" role="37wK5m">
                   <ref role="3cqZAo" node="3pFNVizDNNI" resolve="editorContext" />
                 </node>
@@ -21518,7 +21518,7 @@
       </node>
       <node concept="3Tm1VV" id="3pFNVizDNOq" role="1B3o_S" />
       <node concept="3uibUv" id="3pFNVizKKa0" role="3clF45">
-        <ref role="3uigEE" node="3pFNVizD_gr" resolve="SplitablePropertCell" />
+        <ref role="3uigEE" node="3pFNVizD_gr" resolve="SplittablePropertCell" />
       </node>
     </node>
     <node concept="2tJIrI" id="3pFNVizDOCU" role="jymVt" />
@@ -21602,7 +21602,7 @@
     <node concept="2tJIrI" id="3pFNVizD_sa" role="jymVt" />
   </node>
   <node concept="312cEu" id="3pFNVizDLeb">
-    <property role="TrG5h" value="SplitablePropertyCellProvider" />
+    <property role="TrG5h" value="SplittablePropertyCellProvider" />
     <node concept="2tJIrI" id="3pFNVizKKm7" role="jymVt" />
     <node concept="312cEg" id="3pFNVizKKT0" role="jymVt">
       <property role="TrG5h" value="myTokenizer" />
@@ -21710,10 +21710,10 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="editorCell" />
             <node concept="3uibUv" id="3pFNVizKJSM" role="1tU5fm">
-              <ref role="3uigEE" node="3pFNVizD_gr" resolve="SplitablePropertCell" />
+              <ref role="3uigEE" node="3pFNVizD_gr" resolve="SplittablePropertCell" />
             </node>
             <node concept="2YIFZM" id="3pFNVizDM_H" role="33vP2m">
-              <ref role="1Pybhc" node="3pFNVizD_gr" resolve="SplitablePropertCell" />
+              <ref role="1Pybhc" node="3pFNVizD_gr" resolve="SplittablePropertCell" />
               <ref role="37wK5l" node="3pFNVizDNNH" resolve="create" />
               <node concept="37vLTw" id="3pFNVizDM$B" role="37wK5m">
                 <ref role="3cqZAo" node="3pFNVizDMw2" resolve="context" />
