@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="mbeddr.core/buildUtil/*.dmg=&gt;%teamcity.build.checkoutDir%" />
+      <option name="artifactRules" value="mbeddr.core/buildUtil/*.dmg" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
@@ -33,8 +33,12 @@
     <build-triggers />
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
+        <artifact sourcePath="jdk.tar.gz=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="-:jdk.zip&#xD;&#xA;+:jdk.tar.gz=&gt;%system.teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+        <artifact sourcePath="com.mbeddr.tutorial.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
@@ -42,16 +46,17 @@
       </dependency>
     </artifact-dependencies>
     <dependencies>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>
       </depend-on>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial">
         <options>
-          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="run-build-if-dependency-failed" value="CANCEL" />
+          <option name="run-build-if-dependency-failed-to-start" value="CANCEL" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>
