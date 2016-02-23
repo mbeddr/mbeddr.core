@@ -2191,7 +2191,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="3pFNVizDwU0" role="3EZMnx">
-        <property role="3F0ifm" value="Splitable cell:" />
+        <property role="3F0ifm" value="Splittable cell:" />
         <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
       </node>
       <node concept="3EZMnI" id="3pFNVizDwU1" role="3EZMnx">
