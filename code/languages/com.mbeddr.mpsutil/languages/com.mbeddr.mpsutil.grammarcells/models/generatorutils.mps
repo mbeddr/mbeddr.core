@@ -1704,11 +1704,26 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="RbLMy6caet" role="3clFbw">
-            <node concept="37vLTw" id="RbLMy6caaV" role="2Oq$k0">
-              <ref role="3cqZAo" node="RbLMy6ca0j" resolve="parent" />
+          <node concept="1Wc70l" id="4U82Y3z1xO7" role="3clFbw">
+            <node concept="3fqX7Q" id="4U82Y3z1y27" role="3uHU7w">
+              <node concept="2OqwBi" id="4U82Y3z1yhD" role="3fr31v">
+                <node concept="37vLTw" id="4U82Y3z1ydj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="19dgrWhCj1o" resolve="parentStopCondition" />
+                </node>
+                <node concept="liA8E" id="4U82Y3z1ykP" role="2OqNvi">
+                  <ref role="37wK5l" to="y49u:~Condition.met(java.lang.Object):boolean" resolve="met" />
+                  <node concept="37vLTw" id="4U82Y3z1yql" role="37wK5m">
+                    <ref role="3cqZAo" node="RbLMy6ca0j" resolve="parent" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="3x8VRR" id="RbLMy6cahO" role="2OqNvi" />
+            <node concept="2OqwBi" id="RbLMy6caet" role="3uHU7B">
+              <node concept="37vLTw" id="RbLMy6caaV" role="2Oq$k0">
+                <ref role="3cqZAo" node="RbLMy6ca0j" resolve="parent" />
+              </node>
+              <node concept="3x8VRR" id="RbLMy6cahO" role="2OqNvi" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="RbLMy6c8OH" role="3cqZAp" />
