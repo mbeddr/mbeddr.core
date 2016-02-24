@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,11 +12,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="nh6y" ref="r:a60cca70-c992-4a4a-818f-94b8f8060648(com.mbeddr.ext.components.units.behavior)" />
     <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" />
+    <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1262,12 +1261,12 @@
                         <ref role="ehGHo" to="qlb5:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5dSoB2M2eoK" role="3rvSg0">
-                        <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                        <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="2Xknsxcljgw" role="33vP2m">
-                      <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
-                      <ref role="37wK5l" to="ndfg:AeX2Dk$pwx" resolve="getUnitMap_UnitSpecification" />
+                      <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="37wK5l" to="gkt:AeX2Dk$pwx" resolve="getUnitMap_UnitSpecification" />
                       <node concept="2OqwBi" id="2XknsxcljIy" role="37wK5m">
                         <node concept="1PxgMI" id="2Xknsxcljwz" role="2Oq$k0">
                           <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
@@ -1307,8 +1306,8 @@
                           </node>
                         </node>
                         <node concept="2YIFZM" id="7zu0AJ2tl0p" role="33vP2m">
-                          <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
-                          <ref role="37wK5l" to="ndfg:4jkbLB618gR" resolve="createUnitReferences" />
+                          <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                          <ref role="37wK5l" to="gkt:4jkbLB618gR" resolve="createUnitReferences" />
                           <node concept="37vLTw" id="7zu0AJ2tl2Q" role="37wK5m">
                             <ref role="3cqZAo" node="2XknsxclhUe" resolve="unitMap" />
                           </node>
@@ -1393,7 +1392,7 @@
                                 <node concept="3AV6Ez" id="2XknsxclVcI" role="2OqNvi" />
                               </node>
                               <node concept="liA8E" id="5dSoB2M2irL" role="2OqNvi">
-                                <ref role="37wK5l" to="ndfg:5dSoB2LSrGw" resolve="isNonZero" />
+                                <ref role="37wK5l" to="gkt:5dSoB2LSrGw" resolve="isNonZero" />
                               </node>
                             </node>
                           </node>

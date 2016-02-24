@@ -935,8 +935,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5eg$WPOtR8F" resolve="GlobalConstantFunctionDeclaration" />
     </node>
-    <node concept="PrWs8" id="70kXLV5wf5D" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    <node concept="PrWs8" id="73rNuZmHSmq" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="5eg$WPOuoHl">

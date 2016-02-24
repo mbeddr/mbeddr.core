@@ -2809,7 +2809,7 @@
         <node concept="3clFbF" id="3pFNVizE$a1" role="3cqZAp">
           <node concept="3cpWs3" id="3pFNVizE$d8" role="3clFbG">
             <node concept="Xl_RD" id="3pFNVizE$fY" role="3uHU7B">
-              <property role="Xl_RC" value="splitable" />
+              <property role="Xl_RC" value="splittable" />
             </node>
             <node concept="2OqwBi" id="3pFNVizE$9Y" role="3uHU7w">
               <node concept="13iAh5" id="3pFNVizE$9Z" role="2Oq$k0" />
