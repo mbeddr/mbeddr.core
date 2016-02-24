@@ -765,8 +765,8 @@
       </node>
       <node concept="2iRkQZ" id="3xqp6yfp5Cy" role="2iSdaV" />
     </node>
-    <node concept="2aJ2om" id="4d_3MiqmZHt" role="CpUAK">
-      <ref role="2$4xQ3" node="4d_3MiqmZGg" resolve="arrayTypeOnLeftSide" />
+    <node concept="2aJ2om" id="1qFWaCHbkTg" role="CpUAK">
+      <ref role="2$4xQ3" node="4ZN$fokcCTb" resolve="showArrayTypeOnLeftSide" />
     </node>
   </node>
   <node concept="24kQdi" id="5sJgLFR$y$4">
@@ -1258,14 +1258,6 @@
       </node>
     </node>
   </node>
-  <node concept="2ABfQD" id="4d_3MiqmZGf">
-    <property role="TrG5h" value="ArrayType" />
-    <node concept="2BsEeg" id="4d_3MiqmZGg" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="arrayTypeOnLeftSide" />
-      <property role="2BUmq6" value="show array types on left side" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4d_3MiqmZHo">
     <property role="3GE5qa" value="arrays" />
     <ref role="1XX52x" to="yq40:4VhroexOKM1" resolve="ArrayType" />
@@ -1349,6 +1341,15 @@
           <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2ABfQD" id="4ZN$fokcCTa">
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="arrayTypeOnLeftSide" />
+    <node concept="2BsEeg" id="4ZN$fokcCTb" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="showArrayTypeOnLeftSide" />
+      <property role="2BUmq6" value="Show Array Type on left Side" />
     </node>
   </node>
 </model>
