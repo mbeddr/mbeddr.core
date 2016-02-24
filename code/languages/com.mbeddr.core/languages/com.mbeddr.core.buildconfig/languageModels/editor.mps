@@ -935,6 +935,18 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0ifn" id="3Ihak5COBaD" role="3EZMnx">
+          <property role="3F0ifm" value="linker options:" />
+          <node concept="lj46D" id="3Ihak5COBaX" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="3Ihak5COHkC" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:3Ihak5COBbl" resolve="linkerOptions" />
+          <node concept="ljvvj" id="3Ihak5COHkY" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="PMmxH" id="2nSRgleEQot" role="3EZMnx">
           <ref role="PMmxG" node="2nSRgleEPDy" resolve="debugOptions" />
           <node concept="lj46D" id="2nSRgleEQou" role="3F10Kt">

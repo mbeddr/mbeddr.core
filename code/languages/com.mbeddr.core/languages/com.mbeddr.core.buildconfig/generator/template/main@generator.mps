@@ -485,7 +485,7 @@
           </node>
           <node concept="3O_FaX" id="6GqYvBOfqYj" role="3O_FaS">
             <node concept="3G69iQ" id="6GqYvBOfqYl" role="3G69ia">
-              <property role="3G69iL" value="$(CC) $(CFLAGS) -o $@ $^ " />
+              <property role="3G69iL" value="$(CC) $(CFLAGS) $(LFLAGS) -o $@ $^ " />
             </node>
             <node concept="3G69iQ" id="4$QybXn2s$1" role="3G69ia">
               <property role="3G69iL" value="otherOFiles" />
@@ -832,6 +832,34 @@
                 </node>
                 <node concept="3TrcHB" id="3R$6B6bPvJY" role="2OqNvi">
                   <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3G52F3" id="3Ihak5CPiWp" role="12RR68">
+      <property role="TrG5h" value="LFLAGS" />
+      <property role="3G5mJX" value="linkerOpts" />
+      <node concept="17Uvod" id="3Ihak5CPk1p" role="lGtFl">
+        <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
+        <property role="2qtEX9" value="value" />
+        <node concept="3zFVjK" id="3Ihak5CPk1q" role="3zH0cK">
+          <node concept="3clFbS" id="3Ihak5CPk1r" role="2VODD2">
+            <node concept="3clFbF" id="3Ihak5CPkLZ" role="3cqZAp">
+              <node concept="2OqwBi" id="3Ihak5CPkM0" role="3clFbG">
+                <node concept="1PxgMI" id="3Ihak5CPkM1" role="2Oq$k0">
+                  <ref role="1PxNhF" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
+                  <node concept="2OqwBi" id="3Ihak5CPkM2" role="1PxMeX">
+                    <node concept="30H73N" id="3Ihak5CPkM3" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3Ihak5CPkM4" role="2OqNvi">
+                      <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3Ihak5CPl3m" role="2OqNvi">
+                  <ref role="3TsBF5" to="51wr:3Ihak5COBbl" resolve="linkerOptions" />
                 </node>
               </node>
             </node>

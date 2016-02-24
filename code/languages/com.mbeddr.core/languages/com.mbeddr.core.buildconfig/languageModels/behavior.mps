@@ -158,7 +158,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -3433,6 +3433,19 @@
               <node concept="13iPFW" id="34x64NyRAMf" role="2Oq$k0" />
               <node concept="3TrcHB" id="34x64NyRAMg" role="2OqNvi">
                 <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Ihak5CQ4dI" role="3cqZAp">
+          <node concept="37vLTI" id="3Ihak5CQ4$J" role="3clFbG">
+            <node concept="Xl_RD" id="3Ihak5CQ4_9" role="37vLTx">
+              <property role="Xl_RC" value="-Xlinker -Map=$@.map" />
+            </node>
+            <node concept="2OqwBi" id="3Ihak5CQ4iz" role="37vLTJ">
+              <node concept="13iPFW" id="3Ihak5CQ4dG" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3Ihak5CQ4qL" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:3Ihak5COBbl" resolve="linkerOptions" />
               </node>
             </node>
           </node>
