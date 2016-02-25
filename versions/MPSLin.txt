@@ -1,1 +1,2 @@
-http://download.jetbrains.com/mps/33/MPS-3.3-RC1.tar.gz
+http://download.jetbrains.com/mps/33/MPS-3.3.2.tar.gz
+
