@@ -270,6 +270,10 @@
       <property role="TrG5h" value="compiler" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="2IuDRsvRTOG" role="1TKVEl">
+      <property role="TrG5h" value="archiver" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="3s1LyzG8GSD" role="1TKVEl">
       <property role="TrG5h" value="gdb" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />

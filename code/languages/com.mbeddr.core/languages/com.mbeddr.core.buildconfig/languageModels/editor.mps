@@ -923,6 +923,18 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0ifn" id="2IuDRsvRTPt" role="3EZMnx">
+          <property role="3F0ifm" value="archiver" />
+          <node concept="lj46D" id="2IuDRsvRTQP" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="2IuDRsvRTQt" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:2IuDRsvRTOG" resolve="archiver" />
+          <node concept="ljvvj" id="2IuDRsvRTQN" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="4BxItZJ4Bp9" role="3EZMnx">
           <property role="3F0ifm" value="compiler options:" />
           <node concept="lj46D" id="4BxItZJ4Bpa" role="3F10Kt">

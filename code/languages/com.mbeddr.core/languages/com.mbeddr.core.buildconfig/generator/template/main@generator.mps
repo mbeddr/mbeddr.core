@@ -337,7 +337,7 @@
           </node>
           <node concept="3O_FaX" id="2kkumeGQ_vb" role="3O_FaS">
             <node concept="3G69iQ" id="2kkumeGQ_vc" role="3G69ia">
-              <property role="3G69iL" value="ar rcs " />
+              <property role="3G69iL" value="$(AR) rcs " />
             </node>
             <node concept="3G69iQ" id="2kkumeGQ_vT" role="3G69ia">
               <property role="3G69iL" value="libname.a" />
@@ -804,6 +804,34 @@
                 </node>
                 <node concept="2qgKlT" id="7c6uq_OkFrw" role="2OqNvi">
                   <ref role="37wK5l" to="ahli:7c6uq_OhAn9" resolve="getResolvedPathToCompiler" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3G52F3" id="2IuDRsvS6rI" role="12RR68">
+      <property role="TrG5h" value="AR" />
+      <property role="3G5mJX" value="ar" />
+      <node concept="17Uvod" id="2IuDRsvS7wz" role="lGtFl">
+        <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
+        <property role="2qtEX9" value="value" />
+        <node concept="3zFVjK" id="2IuDRsvS7w$" role="3zH0cK">
+          <node concept="3clFbS" id="2IuDRsvS7w_" role="2VODD2">
+            <node concept="3clFbF" id="2IuDRsvS8cI" role="3cqZAp">
+              <node concept="2OqwBi" id="2IuDRsvS9jt" role="3clFbG">
+                <node concept="1PxgMI" id="2IuDRsvS99B" role="2Oq$k0">
+                  <ref role="1PxNhF" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
+                  <node concept="2OqwBi" id="2IuDRsvS8hd" role="1PxMeX">
+                    <node concept="30H73N" id="2IuDRsvS8cH" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2IuDRsvS8Vy" role="2OqNvi">
+                      <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="2IuDRsvS9vM" role="2OqNvi">
+                  <ref role="3TsBF5" to="51wr:2IuDRsvRTOG" resolve="archiver" />
                 </node>
               </node>
             </node>

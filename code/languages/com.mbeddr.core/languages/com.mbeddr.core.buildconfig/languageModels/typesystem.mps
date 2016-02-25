@@ -144,6 +144,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1974,6 +1975,47 @@
             </node>
           </node>
           <node concept="17RlXB" id="3s1LyzGu_nE" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2IuDRsvS9Q1" role="3cqZAp">
+        <node concept="3clFbS" id="2IuDRsvS9Q2" role="3clFbx">
+          <node concept="2MkqsV" id="2IuDRsvS9Q3" role="3cqZAp">
+            <node concept="3Cnw8n" id="2IuDRsvS9Q4" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="3s1LyzGuQD1" resolve="InitToolPathsInDesktopPlatform" />
+              <node concept="3CnSsL" id="2IuDRsvS9Q5" role="3Coj4f">
+                <ref role="QkamJ" node="3s1LyzGuQZu" resolve="platform" />
+                <node concept="1YBJjd" id="2IuDRsvS9Q6" role="3CoRuB">
+                  <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2IuDRsvS9Q7" role="2MkJ7o">
+              <property role="Xl_RC" value="no archiver specified" />
+            </node>
+            <node concept="1YBJjd" id="2IuDRsvS9Q8" role="2OEOjV">
+              <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="2IuDRsvTCw7" role="3clFbw">
+          <node concept="2OqwBi" id="2IuDRsvTCCi" role="3uHU7B">
+            <node concept="1YBJjd" id="2IuDRsvTCzw" role="2Oq$k0">
+              <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+            </node>
+            <node concept="1B$H19" id="2IuDRsvTCCn" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="2IuDRsvS9Q9" role="3uHU7w">
+            <node concept="2OqwBi" id="2IuDRsvS9Qa" role="2Oq$k0">
+              <node concept="1YBJjd" id="2IuDRsvS9Qb" role="2Oq$k0">
+                <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
+              </node>
+              <node concept="3TrcHB" id="2IuDRsvSa6Z" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:2IuDRsvRTOG" resolve="archiver" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="2IuDRsvS9Qd" role="2OqNvi" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="3s1LyzGu_py" role="3cqZAp">
