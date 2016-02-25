@@ -1332,7 +1332,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7Tdqwvh$7kn" role="2OqNvi">
-                                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
+                                <ref role="37wK5l" to="f696:3Q7jEGyjPDu" resolve="buildProgram" />
                                 <node concept="37vLTw" id="7Tdqwvh$7lJ" role="37wK5m">
                                   <ref role="3cqZAo" node="7Tdqwvh$51o" resolve="myNode" />
                                   <node concept="29HgVG" id="7Tdqwvh$7KR" role="lGtFl">

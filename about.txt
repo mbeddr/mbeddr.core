@@ -1,0 +1,171 @@
+Copyright 2013-2016. itemis AG. All rights reserved.
+
+This product includes software developed by
+
+JetBrains s.r.o
+http://www.jetbrains.com
+
+The Apache Software Foundation
+http://www.apache.org/
+
+The Eclipse Foundation
+http://www.eclipse.org
+
+Dom4j
+http://dom4j.sourceforge.net/
+
+EasyMock
+http://easymock.org
+
+Java3D
+https://java3d.java.net/
+
+Jboss
+http://jboss-javassist.github.io/
+
+Glassfish
+https://glassfish.java.net/
+
+Mozilla
+http://mozilla.org
+
+Jung
+http://jung.sourceforge.net/
+
+openCSV
+http://opencsv.sourceforge.net/
+
+PlantUML
+http://plantuml.com/
+
+Sat4J
+http://www.sat4j.org/
+
+SLF4J
+http://www.slf4j.org/
+
+Microsoft Corporation
+https://github.com/Z3Prover/
+
+INRIA, France Telecom
+http://asm.objectweb.org/
+Copyright (c) 2000-2005 All rights reserved.
+
+Anders Moeller
+http://www.brics.dk/automaton/index.html
+Copyright (c) 2001-2011
+
+BeanShell project
+http://www.beanshell.org/home.html
+
+CGLIB project
+https://github.com/cglib/cglib
+
+Java Diff Utils
+http://code.google.com/p/java-diff-utils/
+
+Eclipse Software Foundation
+http://www.eclipse.org/
+
+The Growl Project
+http://growl.info/
+
+Google
+http://www.google.com/
+
+Hamcrest project
+https://code.google.com/p/hamcrest/
+
+Jaxen project
+http://jaxen.codehaus.org
+
+java-swing-ayatana project
+https://code.google.com/p/java-swing-ayatana/
+
+JDOM Project
+http://www.jdom.org/
+Copyright (C) 2000-2002 Brett McLaughlin & Jason Hunter.
+
+JGoodies, Karsten Lentzsch
+http://www.jgoodies.com/freeware/
+Copyright (c) 2002-2006. All rights reserved.
+
+Sun Microsystems
+http://java.sun.com/javase/technologies/desktop/javahelp/
+
+The jMock project
+http://jmock.org/
+
+JNA Project
+https://jna.dev.java.net/
+
+JCraft/JSch project
+http://www.jcraft.com/jsch/
+
+JSR166 group
+http://gee.cs.oswego.edu/dl/concurrency-interest/
+
+JSR 173: Streaming API for XML
+https://www.jcp.org/en/jsr/detail?id=173
+
+Kent Beck, Erich Gamma, and David Saff
+http://www.junit.org/
+
+Michael Baranov
+http://microba.sourceforge.net/
+Copyright (c) 2005-2006. All rights reserved.
+
+MigLayout project
+http://www.miglayout.com
+
+Marc De Scheemaecker
+http://devkix.com/nanoxml.php/
+Copyright (C) 2000-2008. All Rights Reserved.
+
+Netty project
+http://netty.io/index.html
+
+Objenesis project
+https://code.google.com/p/objenesis/
+
+NanoContainer Organization
+http://www.picocontainer.org/
+Copyright (c) 2003
+
+Proxy Vole project
+https://code.google.com/p/proxy-vole/
+
+Taro L. Saito
+https://github.com/xerial/snappy-java
+
+TMate Software Ltd
+http://svnkit.com/
+http://sqljet.com/
+
+SwingLabs SwingX
+https://swingx.java.net
+
+Eric D. Friedman
+http://trove4j.sourceforge.net/
+Copyright (c) 2001, All Rights Reserved
+
+CERN - European Organization for Nuclear Research
+http://trove4j.sourceforge.net/
+Copyright (c) 1999
+
+Winp project
+http://winp.kohsuke.org/
+https://github.com/kohsuke/winp
+
+XML Pull Parser (XPP3) project
+http://www.extreme.indiana.edu/xgws/xsoap/xpp/
+
+Joe Walnes
+http://xstream.codehaus.org/
+Copyright (c) 2003-2005. All rights reserved.
+
+The W3C consortium
+http://www.w3c.org
+
+You can find licenses for these software
+in the %MPS_HOME%/license directory

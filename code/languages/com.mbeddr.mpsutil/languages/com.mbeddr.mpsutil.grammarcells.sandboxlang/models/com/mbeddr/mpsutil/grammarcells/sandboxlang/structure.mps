@@ -507,5 +507,22 @@
       <property role="1uS6qv" value="103" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4f8kqjwyIwY">
+    <property role="1pbfSe" value="609434082" />
+    <property role="TrG5h" value="TEST_CellModelTraversal" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4f8kqjwyI$f" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="1TJgyj" id="4f8kqjwyI$j" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+  </node>
 </model>
 

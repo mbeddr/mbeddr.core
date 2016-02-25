@@ -1581,6 +1581,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7nkDZJXluO4" resolve="AssessmentScope" />
     </node>
+    <node concept="1TJgyi" id="3DYDRw0Qxwo" role="1TKVEl">
+      <property role="TrG5h" value="doNotShowGreen" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNN$a$">
     <property role="TrG5h" value="CodeReviewData" />
