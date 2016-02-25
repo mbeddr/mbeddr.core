@@ -4,18 +4,19 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
-    <modelRoot path="${module}/lib/commons-codec-1.5.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/commons-logging-1.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/dom4j-1.6.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/junit-3.8.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/log4j-1.2.13.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-excelant-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-ooxml-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-ooxml-schemas-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-scratchpad-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/stax-api-1.0.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/xmlbeans-2.3.0.jar" type="java_classes" />
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="lib/commons-codec-1.5.jar" />
+      <sourceRoot location="lib/commons-logging-1.1.jar" />
+      <sourceRoot location="lib/dom4j-1.6.1.jar" />
+      <sourceRoot location="lib/log4j-1.2.13.jar" />
+      <sourceRoot location="lib/poi-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-excelant-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-ooxml-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-ooxml-schemas-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-scratchpad-3.9-20121203.jar" />
+      <sourceRoot location="lib/stax-api-1.0.1.jar" />
+      <sourceRoot location="lib/xmlbeans-2.3.0.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -120,7 +121,6 @@
     <stubModelEntry path="${module}/lib/commons-codec-1.5.jar" />
     <stubModelEntry path="${module}/lib/commons-logging-1.1.jar" />
     <stubModelEntry path="${module}/lib/dom4j-1.6.1.jar" />
-    <stubModelEntry path="${module}/lib/junit-3.8.1.jar" />
     <stubModelEntry path="${module}/lib/log4j-1.2.13.jar" />
     <stubModelEntry path="${module}/lib/poi-3.9-20121203.jar" />
     <stubModelEntry path="${module}/lib/poi-excelant-3.9-20121203.jar" />
