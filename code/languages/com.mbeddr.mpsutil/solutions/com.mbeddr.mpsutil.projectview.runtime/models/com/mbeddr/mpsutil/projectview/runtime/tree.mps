@@ -3552,6 +3552,11 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="4gq8yQBZ6UR" role="3clF47">
+        <node concept="3clFbF" id="6SnzMRF9JJy" role="3cqZAp">
+          <node concept="1rXfSq" id="6SnzMRF9JJw" role="3clFbG">
+            <ref role="37wK5l" node="4gq8yQBZ6V2" resolve="saveExpandedPaths" />
+          </node>
+        </node>
         <node concept="3clFbF" id="4gq8yQBZ6U9" role="3cqZAp">
           <node concept="2OqwBi" id="4gq8yQBZ6Ua" role="3clFbG">
             <node concept="37vLTw" id="4gq8yQBZ6Ub" role="2Oq$k0">
@@ -3615,6 +3620,11 @@
                             <node concept="liA8E" id="4gq8yQBZ6U_" role="2OqNvi">
                               <ref role="37wK5l" node="4gq8yQC2MhZ" resolve="expandProjectNode" />
                             </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="6SnzMRF9Lel" role="3cqZAp">
+                          <node concept="1rXfSq" id="6SnzMRF9Lej" role="3clFbG">
+                            <ref role="37wK5l" node="4gq8yQBZ6VG" resolve="restoreExpandedPathsOverride" />
                           </node>
                         </node>
                       </node>
