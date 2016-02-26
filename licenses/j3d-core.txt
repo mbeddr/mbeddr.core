@@ -1,0 +1,9 @@
+https://java3d.java.net/#Licenses
+
+The source code for the j3d-core-utils and j3d-examples projects is licensed under the open source Berkeley Software Distribution (BSD) License.
+
+The source code for the j3d-core and vecmath projects is licensed under the open source GNU General Public License (GPL), version 2, with the CLASSPATH exception. This is the same open-source license that OpenJDK is now using.
+
+Each of the above projects may contains third-party source code that is provided under separate licensing terms. These terms are are found in the THIRDPARTY-LICENSE-*.txt files in the top level-directory of each project. See README-FIRST.txt in each project for more information.
+
+Projects other than the four named above are licensed under terms defined by the particular sub-project.

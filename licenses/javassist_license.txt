@@ -1,0 +1,3 @@
+http://jboss-javassist.github.io/javassist/
+
+This version is distributed under the triple license of the MPL, the LGPL, and the Apache License. The distribution includes the jar file, the sources, some samples, the API manual, and a tutorial. The binary is also available from the central repo.

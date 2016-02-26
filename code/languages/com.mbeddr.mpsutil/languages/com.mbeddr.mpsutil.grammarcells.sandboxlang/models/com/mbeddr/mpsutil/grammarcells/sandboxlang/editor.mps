@@ -37,6 +37,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -974,6 +975,33 @@
       <node concept="3F0A7n" id="7FkgTXZtQgm" role="1kIj9b">
         <ref role="1NtTu8" to="ibwz:7FkgTXZtQgh" resolve="enum1" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4f8kqjwyIxq">
+    <ref role="1XX52x" to="ibwz:4f8kqjwyIwY" resolve="TEST_CellModelTraversal" />
+    <node concept="3EZMnI" id="4f8kqjwyIxM" role="2wV5jI">
+      <node concept="1WcQYu" id="4f8kqjwyIxZ" role="3EZMnx">
+        <node concept="2ElW$n" id="4f8kqjwyIy1" role="2El2Yn" />
+        <node concept="3EZMnI" id="4f8kqjwyIyh" role="1LiK7o">
+          <node concept="3F1sOY" id="4f8kqjwyI$D" role="3EZMnx">
+            <ref role="1NtTu8" to="ibwz:4f8kqjwyI$f" />
+          </node>
+          <node concept="yw3OH" id="4f8kqjwyIyD" role="3EZMnx">
+            <node concept="3F0ifn" id="4f8kqjwyIyO" role="yw3OG">
+              <property role="3F0ifm" value="+" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="4f8kqjwyI_3" role="3EZMnx">
+            <ref role="1NtTu8" to="ibwz:4f8kqjwyI$j" />
+          </node>
+          <node concept="2iRfu4" id="4f8kqjwyIyk" role="2iSdaV" />
+          <node concept="VPM3Z" id="4f8kqjwyIyl" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="4f8kqjwyIxP" role="2iSdaV" />
+      <node concept="B$lHz" id="4f8kqjwyIzM" role="3EZMnx" />
     </node>
   </node>
 </model>

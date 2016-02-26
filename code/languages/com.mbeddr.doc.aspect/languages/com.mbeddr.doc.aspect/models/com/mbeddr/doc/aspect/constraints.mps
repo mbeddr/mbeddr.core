@@ -15,7 +15,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="748g" ref="r:85fc9553-7d9a-4019-83cc-9f8169da83fb(com.mbeddr.doc.aspect.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lijz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.dependency.modules(MPS.Core/)" />
   </imports>
   <registry>
@@ -261,7 +260,7 @@
             </node>
             <node concept="3clFbC" id="3TrpzyP_HE9" role="3clFbw">
               <node concept="10Nm6u" id="3TrpzyP_HHi" role="3uHU7w" />
-              <node concept="37vLTw" id="3TrpzyP_Hiw" role="3uHU7B">
+              <node concept="37vLTw" id="77nuVWJc3N1" role="3uHU7B">
                 <ref role="3cqZAo" node="3TrpzyP_G0y" resolve="containingLanguage" />
               </node>
             </node>

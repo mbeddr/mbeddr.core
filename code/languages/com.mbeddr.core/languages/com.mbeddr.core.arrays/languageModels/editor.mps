@@ -67,7 +67,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
-      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
@@ -388,15 +387,9 @@
       </node>
       <node concept="PMmxH" id="2zhwXA_2C0S" role="3EZMnx">
         <ref role="PMmxG" to="vrqd:2zhwXA_2C0s" resolve="volatileFlag" />
-        <node concept="VPM3Z" id="2zhwXA_2C0T" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
       </node>
       <node concept="PMmxH" id="2zhwXA$TG_i" role="3EZMnx">
         <ref role="PMmxG" to="vrqd:2zhwXA$RHx8" resolve="constFlag" />
-        <node concept="VPM3Z" id="2zhwXA$TG_j" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
       </node>
       <node concept="l2Vlx" id="7apEgWbIHTq" role="2iSdaV" />
     </node>
@@ -765,8 +758,8 @@
       </node>
       <node concept="2iRkQZ" id="3xqp6yfp5Cy" role="2iSdaV" />
     </node>
-    <node concept="2aJ2om" id="4d_3MiqmZHt" role="CpUAK">
-      <ref role="2$4xQ3" node="4d_3MiqmZGg" resolve="arrayTypeOnLeftSide" />
+    <node concept="2aJ2om" id="1qFWaCHbkTg" role="CpUAK">
+      <ref role="2$4xQ3" node="4ZN$fokcCTb" resolve="showArrayTypeOnLeftSide" />
     </node>
   </node>
   <node concept="24kQdi" id="5sJgLFR$y$4">
@@ -1258,14 +1251,6 @@
       </node>
     </node>
   </node>
-  <node concept="2ABfQD" id="4d_3MiqmZGf">
-    <property role="TrG5h" value="ArrayType" />
-    <node concept="2BsEeg" id="4d_3MiqmZGg" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="arrayTypeOnLeftSide" />
-      <property role="2BUmq6" value="show array types on left side" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4d_3MiqmZHo">
     <property role="3GE5qa" value="arrays" />
     <ref role="1XX52x" to="yq40:4VhroexOKM1" resolve="ArrayType" />
@@ -1349,6 +1334,15 @@
           <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2ABfQD" id="4ZN$fokcCTa">
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="arrayTypeOnLeftSide" />
+    <node concept="2BsEeg" id="4ZN$fokcCTb" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="showArrayTypeOnLeftSide" />
+      <property role="2BUmq6" value="Show Array Type on left Side" />
     </node>
   </node>
 </model>

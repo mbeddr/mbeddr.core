@@ -3422,6 +3422,14 @@
             <property role="3MwjfP" value="license" />
           </node>
         </node>
+        <node concept="2HvfSZ" id="7v1xEgGpTr8" role="39821P">
+          <node concept="398BVA" id="7v1xEgGpTro" role="2HvfZ0">
+            <ref role="398BVh" node="1BPeV_LjXqH" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="7v1xEgGpTr$" role="iGT6I">
+              <property role="2Ry0Am" value="licenses" />
+            </node>
+          </node>
+        </node>
         <node concept="3ygNvl" id="1BPeV_LjXv$" role="39821P">
           <ref role="3ygNvj" to="ffeo:1aRUp2KiMC$" resolve="license" />
         </node>
@@ -3488,6 +3496,14 @@
         </node>
         <node concept="3_I8Xc" id="1BPeV_LjXvV" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
+        </node>
+      </node>
+      <node concept="28jJK3" id="7v1xEgGpTwy" role="39821P">
+        <node concept="398BVA" id="7v1xEgGpT_y" role="28jJRO">
+          <ref role="398BVh" node="1BPeV_LjXqH" resolve="mbeddr.github.core.home" />
+          <node concept="2Ry0Ak" id="7v1xEgGpT_I" role="iGT6I">
+            <property role="2Ry0Am" value="license.html" />
+          </node>
         </node>
       </node>
       <node concept="1TblL5" id="1BPeV_LjXvW" role="39821P">

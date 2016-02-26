@@ -1,0 +1,8 @@
+https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Download_Rhino
+
+LicenseEDIT
+Rhino is open source. As of release 1.7R4 Rhino is available under MPL 2.0.
+
+Previous versions were released under MPL 1.1/GPL 2.0 license.
+
+See Rhino license for further information.

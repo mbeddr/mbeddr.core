@@ -10,7 +10,6 @@
   <imports>
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
@@ -25,6 +24,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
+    <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1876,13 +1876,13 @@
                   <node concept="3Tqbb2" id="yGiRIEV01s" role="3rvQeY">
                     <ref role="ehGHo" to="qlb5:7eOyx9r3k3e" resolve="IUnit" />
                   </node>
-                  <node concept="3uibUv" id="5dSoB2M0WA_" role="3rvSg0">
-                    <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                  <node concept="3uibUv" id="4tQt_im97cm" role="3rvSg0">
+                    <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="4DRdDUoIv0k" role="33vP2m">
-                  <ref role="37wK5l" to="ndfg:26hWC1I8AOx" resolve="getUnitMap_Type" />
-                  <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                  <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                  <ref role="37wK5l" to="gkt:26hWC1I8AOx" resolve="getUnitMap_Type" />
                   <node concept="2OqwBi" id="4DRdDUoIwqV" role="37wK5m">
                     <node concept="2OqwBi" id="4DRdDUoIvcV" role="2Oq$k0">
                       <node concept="13iPFW" id="4DRdDUoIv6q" role="2Oq$k0" />
@@ -1903,12 +1903,12 @@
                     <ref role="ehGHo" to="qlb5:7eOyx9r3k3e" resolve="IUnit" />
                   </node>
                   <node concept="3uibUv" id="5dSoB2M0Xe0" role="3rvSg0">
-                    <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                    <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="1wGuEUw60g0" role="33vP2m">
-                  <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
-                  <ref role="37wK5l" to="ndfg:5dSoB2M16B0" resolve="getUnitMap_IUnit" />
+                  <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                  <ref role="37wK5l" to="gkt:5dSoB2M16B0" resolve="getUnitMap_IUnit" />
                   <node concept="2OqwBi" id="1wGuEUw60g1" role="37wK5m">
                     <node concept="13iPFW" id="1wGuEUw6byG" role="2Oq$k0" />
                     <node concept="3TrEf2" id="1wGuEUw6cci" role="2OqNvi">
@@ -1960,12 +1960,12 @@
                         <ref role="ehGHo" to="qlb5:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5dSoB2M0XY5" role="3rvSg0">
-                        <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                        <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="yGiRIEVd4W" role="33vP2m">
-                      <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
-                      <ref role="37wK5l" to="ndfg:5dSoB2M16B0" resolve="getUnitMap_IUnit" />
+                      <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="37wK5l" to="gkt:5dSoB2M16B0" resolve="getUnitMap_IUnit" />
                       <node concept="2OqwBi" id="yGiRIEVd4X" role="37wK5m">
                         <node concept="2GrUjf" id="1wGuEUw5SCK" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="3_TFq$0_xUS" resolve="rule" />
@@ -1988,12 +1988,12 @@
                         <ref role="ehGHo" to="qlb5:7eOyx9r3k3e" resolve="IUnit" />
                       </node>
                       <node concept="3uibUv" id="5dSoB2M0YJl" role="3rvSg0">
-                        <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                        <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="1wGuEUw5Zwx" role="33vP2m">
-                      <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
-                      <ref role="37wK5l" to="ndfg:5dSoB2M16B0" resolve="getUnitMap_IUnit" />
+                      <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="37wK5l" to="gkt:5dSoB2M16B0" resolve="getUnitMap_IUnit" />
                       <node concept="2OqwBi" id="1wGuEUw5Zwy" role="37wK5m">
                         <node concept="2GrUjf" id="1wGuEUw5Zwz" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="3_TFq$0_xUS" resolve="rule" />
@@ -2053,8 +2053,8 @@
                             </node>
                             <node concept="3JuTUA" id="1wGuEUwlzS1" role="3uHU7w">
                               <node concept="2YIFZM" id="1wGuEUwl$IB" role="3JuY14">
-                                <ref role="37wK5l" to="ndfg:1wGuEUw6vOu" resolve="getInnerType" />
-                                <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                                <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                                <ref role="37wK5l" to="gkt:1wGuEUw6vOu" resolve="getInnerType" />
                                 <node concept="2OqwBi" id="1wGuEUwl_Xt" role="37wK5m">
                                   <node concept="2OqwBi" id="1wGuEUwl$Q0" role="2Oq$k0">
                                     <node concept="13iPFW" id="1wGuEUwl$KE" role="2Oq$k0" />
@@ -2081,8 +2081,8 @@
                   </node>
                   <node concept="1Wc70l" id="1wGuEUw6cpR" role="3clFbw">
                     <node concept="2YIFZM" id="1wGuEUw6cLd" role="3uHU7w">
-                      <ref role="37wK5l" to="ndfg:4jkbLB5XZz4" resolve="matchingUnits" />
-                      <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="37wK5l" to="gkt:4jkbLB5XZz4" resolve="matchingUnits" />
                       <node concept="37vLTw" id="1wGuEUw6cPs" role="37wK5m">
                         <ref role="3cqZAo" node="1wGuEUw60fW" resolve="convertExpressionTargetUnitMap" />
                       </node>
@@ -2094,8 +2094,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="26hWC1HyJe2" role="3uHU7B">
-                      <ref role="37wK5l" to="ndfg:4jkbLB5XZz4" resolve="matchingUnits" />
-                      <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                      <ref role="37wK5l" to="gkt:4jkbLB5XZz4" resolve="matchingUnits" />
                       <node concept="37vLTw" id="26hWC1HyJe3" role="37wK5m">
                         <ref role="3cqZAo" node="yGiRIEUZGx" resolve="convertExpressionSourceUnitMap" />
                       </node>
@@ -3216,8 +3216,8 @@
             </node>
           </node>
           <node concept="2YIFZM" id="2Jcs$lvwOic" role="3clFbw">
-            <ref role="37wK5l" to="ndfg:2Jcs$lvqDgp" resolve="isSelfReferencingSpecifier" />
-            <ref role="1Pybhc" to="ndfg:4V8dpOk74rw" resolve="ExpressionChecker" />
+            <ref role="1Pybhc" to="gkt:4V8dpOk74rw" resolve="ExpressionChecker" />
+            <ref role="37wK5l" to="gkt:2Jcs$lvqDgp" resolve="isSelfReferencingSpecifier" />
             <node concept="13iPFW" id="2Jcs$lvwOmm" role="37wK5m" />
           </node>
         </node>
@@ -3554,7 +3554,7 @@
                 <ref role="3cqZAo" node="brG9xoyFVp" resolve="fraction" />
               </node>
               <node concept="2OwXpG" id="brG9xoyGop" role="2OqNvi">
-                <ref role="2Oxat5" to="ndfg:5dSoB2LN5wd" resolve="numerator" />
+                <ref role="2Oxat5" to="gkt:5dSoB2LN5wd" resolve="numerator" />
               </node>
             </node>
             <node concept="2OqwBi" id="brG9xoyGyK" role="37wK5m">
@@ -3562,7 +3562,7 @@
                 <ref role="3cqZAo" node="brG9xoyFVp" resolve="fraction" />
               </node>
               <node concept="2OwXpG" id="brG9xoyHcI" role="2OqNvi">
-                <ref role="2Oxat5" to="ndfg:5dSoB2LN6B2" resolve="denumerator" />
+                <ref role="2Oxat5" to="gkt:5dSoB2LN6B2" resolve="denumerator" />
               </node>
             </node>
           </node>
@@ -3570,8 +3570,8 @@
       </node>
       <node concept="37vLTG" id="brG9xoyFVp" role="3clF46">
         <property role="TrG5h" value="fraction" />
-        <node concept="3uibUv" id="brG9xoyFVo" role="1tU5fm">
-          <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+        <node concept="3uibUv" id="4tQt_imbtUM" role="1tU5fm">
+          <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
         </node>
       </node>
     </node>
@@ -4389,12 +4389,12 @@
                     <node concept="3cpWs8" id="brG9xoyDo0" role="3cqZAp">
                       <node concept="3cpWsn" id="brG9xoyDo1" role="3cpWs9">
                         <property role="TrG5h" value="componentExponent" />
-                        <node concept="3uibUv" id="brG9xoyDnH" role="1tU5fm">
-                          <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                        <node concept="3uibUv" id="4tQt_im9Cyw" role="1tU5fm">
+                          <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                         </node>
                         <node concept="2YIFZM" id="brG9xoyDo2" role="33vP2m">
-                          <ref role="37wK5l" to="ndfg:4jkbLB68OYa" resolve="getExponent" />
-                          <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                          <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                          <ref role="37wK5l" to="gkt:4jkbLB68OYa" resolve="getExponent" />
                           <node concept="2GrUjf" id="brG9xoyDo3" role="37wK5m">
                             <ref role="2Gs0qQ" node="6VYXZgFJmNt" resolve="component" />
                           </node>
@@ -4425,18 +4425,18 @@
                           <node concept="3cpWsn" id="brG9xoyEII" role="3cpWs9">
                             <property role="TrG5h" value="exponent" />
                             <node concept="3uibUv" id="brG9xoyEIz" role="1tU5fm">
-                              <ref role="3uigEE" to="ndfg:5dSoB2LMRlC" resolve="Fraction" />
+                              <ref role="3uigEE" to="gkt:5dSoB2LMRlC" resolve="Fraction" />
                             </node>
                             <node concept="2OqwBi" id="brG9xoyEIJ" role="33vP2m">
                               <node concept="2YIFZM" id="brG9xoyEIK" role="2Oq$k0">
-                                <ref role="37wK5l" to="ndfg:4jkbLB68OYa" resolve="getExponent" />
-                                <ref role="1Pybhc" to="ndfg:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                                <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                                <ref role="37wK5l" to="gkt:4jkbLB68OYa" resolve="getExponent" />
                                 <node concept="37vLTw" id="brG9xoyEIM" role="37wK5m">
                                   <ref role="3cqZAo" node="brG9xoyjN7" resolve="resolved" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="brG9xoyEIO" role="2OqNvi">
-                                <ref role="37wK5l" to="ndfg:5dSoB2LN99N" resolve="multiply" />
+                                <ref role="37wK5l" to="gkt:5dSoB2LN99N" resolve="multiply" />
                                 <node concept="37vLTw" id="brG9xoyEIP" role="37wK5m">
                                   <ref role="3cqZAo" node="brG9xoyDo1" resolve="componentExponent" />
                                 </node>

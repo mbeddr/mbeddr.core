@@ -19,6 +19,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -38,6 +41,11 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
@@ -53,6 +61,12 @@
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -60,6 +74,7 @@
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1176558773329" name="jetbrains.mps.lang.typesystem.structure.CoerceStatement" flags="nn" index="3Knyl0">
         <child id="1220447035659" name="elseClause" index="CjY0n" />
         <child id="1176558868203" name="body" index="3KnTvU" />
@@ -90,6 +105,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -524,6 +540,51 @@
     <node concept="1YaCAy" id="511fZqnrhTu" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="d04j:7diJr$Rulpu" resolve="ProjectView" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4f8kqjwl8ge">
+    <property role="TrG5h" value="check_TreeNodeElement" />
+    <node concept="3clFbS" id="4f8kqjwl8gf" role="18ibNy">
+      <node concept="3clFbJ" id="4f8kqjwl8gl" role="3cqZAp">
+        <node concept="3clFbS" id="4f8kqjwl8gm" role="3clFbx">
+          <node concept="2MkqsV" id="4f8kqjwl9jX" role="3cqZAp">
+            <node concept="Xl_RD" id="4f8kqjwl9k9" role="2MkJ7o">
+              <property role="Xl_RC" value="No type sepcified" />
+            </node>
+            <node concept="1YBJjd" id="4f8kqjwl9lq" role="2OEOjV">
+              <ref role="1YBMHb" node="4f8kqjwl8gh" resolve="treeNodeElement" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="4f8kqjwl8RB" role="3clFbw">
+          <node concept="2OqwBi" id="4f8kqjwl9bY" role="3uHU7w">
+            <node concept="2OqwBi" id="4f8kqjwl8X2" role="2Oq$k0">
+              <node concept="1YBJjd" id="4f8kqjwl8Ty" role="2Oq$k0">
+                <ref role="1YBMHb" node="4f8kqjwl8gh" resolve="treeNodeElement" />
+              </node>
+              <node concept="2qgKlT" id="4f8kqjwl98I" role="2OqNvi">
+                <ref role="37wK5l" to="os9e:3ZnFyBjt73L" resolve="getElementType" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4f8kqjwl9ht" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="4f8kqjwl8H_" role="3uHU7B">
+            <node concept="2OqwBi" id="4f8kqjwl8js" role="2Oq$k0">
+              <node concept="1YBJjd" id="4f8kqjwl8gx" role="2Oq$k0">
+                <ref role="1YBMHb" node="4f8kqjwl8gh" resolve="treeNodeElement" />
+              </node>
+              <node concept="3TrEf2" id="4f8kqjwl8_F" role="2OqNvi">
+                <ref role="3Tt5mk" to="d04j:7diJr$Rvt2P" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4f8kqjwl8Nd" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4f8kqjwl8gh" role="1YuTPh">
+      <property role="TrG5h" value="treeNodeElement" />
+      <ref role="1YaFvo" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
     </node>
   </node>
 </model>

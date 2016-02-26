@@ -10,7 +10,7 @@
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
-    <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
+    <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
@@ -276,8 +276,8 @@
               <node concept="3cpWs6" id="6FK1Pb8zret" role="3cqZAp">
                 <node concept="2OqwBi" id="6FK1Pb8z$$b" role="3cqZAk">
                   <node concept="2YIFZM" id="6FK1Pb8zvEr" role="2Oq$k0">
-                    <ref role="37wK5l" to="ndfg:6FK1Pb8yBKR" resolve="getVisibleUnitsFrom" />
-                    <ref role="1Pybhc" to="ndfg:6FK1Pb8y_co" resolve="ScopingHelper" />
+                    <ref role="1Pybhc" to="gkt:6FK1Pb8y_co" resolve="ScopingHelper" />
+                    <ref role="37wK5l" to="gkt:6FK1Pb8yBKR" resolve="getVisibleUnitsFrom" />
                     <node concept="Cj7Ep" id="6FK1Pb8zxn6" role="37wK5m" />
                   </node>
                   <node concept="ANE8D" id="6FK1Pb8zBB3" role="2OqNvi" />
