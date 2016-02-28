@@ -132,7 +132,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="msg" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="7YWlEjTs4ea" role="PzmwI">
       <ref role="PrY4T" node="7YWlEjTs4dp" resolve="IAssertPart" />
