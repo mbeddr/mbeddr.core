@@ -237,9 +237,6 @@
       </node>
       <node concept="PMmxH" id="7RiewQ_k17X" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
-        <node concept="VPM3Z" id="6A4xWqfT4vk" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
       </node>
       <node concept="3F0ifn" id="5so5TTr6RX$" role="3EZMnx">
         <property role="3F0ifm" value="testcase" />

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/diagram/devkits/de.itemis.mps.editor.diagram.devkit.devkit" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.collapsible/de.itemis.mps.editor.collapsible.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.diagram.demo.activity/de.itemis.mps.editor.diagram.demo.activity.mpl" folder="diagram" />
@@ -14,8 +11,8 @@
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.diagram.layout/de.itemis.mps.editor.diagram.layout.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.diagram.styles/de.itemis.mps.editor.diagram.styles.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.mpl" folder="diagram" />
-      <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.layout.demolang/de.itemis.mps.editor.layout.demolang.mpl" folder="diagram" />
-      <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.layout/de.itemis.mps.editor.layout.mpl" folder="diagram" />
+      <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.layout.demolang/de.itemis.mps.editor.layout.demolang.mpl" folder="layout.mig" />
+      <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.layout/de.itemis.mps.editor.layout.mpl" folder="layout.mig" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/test.de.itemis.mps.editor.diagram.lang/test.de.itemis.mps.editor.diagram.lang.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.collapsible.runtime/de.itemis.mps.editor.collapsible.runtime.msd" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.diagram.contextactions/de.itemis.mps.editor.diagram.contextactions.msd" folder="diagram" />
@@ -23,9 +20,14 @@
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.diagram.runtime/de.itemis.mps.editor.diagram.runtime.msd" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.diagram.sandbox/de.itemis.mps.editor.diagram.sandbox.msd" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.diagram.shapes/de.itemis.mps.editor.diagram.shapes.msd" folder="diagram" />
-      <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.layout.runtime/de.itemis.mps.editor.layout.runtime.msd" folder="diagram" />
+      <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.layout.runtime/de.itemis.mps.editor.layout.runtime.msd" folder="layout.mig" />
+      <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.layout.sandbox/de.itemis.mps.editor.layout.sandbox.msd" folder="layout.mig" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.mouselistener.runtime/de.itemis.mps.mouselistener.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/test.de.itemis.mps.editor.diagram.solution/test.de.itemis.mps.editor.diagram.solution.msd" folder="diagram" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.mpl" folder="layout.topdown" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.mpl" folder="layout.topdown" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.celllayout.sandboxlang/de.itemis.mps.editor.celllayout.sandboxlang.mpl" folder="layout.topdown.sandbox" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.celllayout/de.itemis.mps.editor.celllayout.mpl" folder="layout.topdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.dropdown.demolang/de.itemis.mps.editor.dropdown.demolang.mpl" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.dropdown/de.itemis.mps.editor.dropdown.mpl" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="selection" />
@@ -69,15 +71,18 @@
       <modulePath path="$PROJECT_DIR$/mps-tables/languages/de.slisson.mps.tables/de.slisson.mps.tables.mpl" folder="tables" />
       <modulePath path="$PROJECT_DIR$/mps-tables/languages/de.slisson.mps.tables/runtime/de.slisson.mps.tables.runtime.msd" folder="tables" />
       <modulePath path="$PROJECT_DIR$/mps-tables/languages/de.slisson.mps.tables/sandbox/de.slisson.mps.tables.sandbox.msd" folder="tables" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.celllayout.sandbox/de.itemis.mps.editor.celllayout.sandbox.msd" folder="layout.topdown.sandbox" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.dropdown.runtime/de.itemis.mps.editor.dropdown.runtime.msd" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.dropdown.sandbox/de.itemis.mps.editor.dropdown.sandbox.msd" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="selection" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="tooltips" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build.repo/de.slisson.mps.all.build.repo.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.celllayout.runtime/de.itemis.mps.editor.celllayout.runtime.msd" folder="layout.topdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.tabs.runtime/de.slisson.mps.editor.tabs.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.structurecheck.runtime/de.slisson.mps.structurecheck.runtime.msd" folder="structurecheck" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.structurecheck.sandbox/de.slisson.mps.structurecheck.sandbox.msd" folder="structurecheck" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.de.itemis.mps.editor.celllayout.runtime/test.de.itemis.mps.editor.celllayout.runtime.msd" folder="layout.topdown.test" />
     </projectModules>
   </component>
 </project>
