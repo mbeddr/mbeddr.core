@@ -62,7 +62,6 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -2095,18 +2094,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2S1OXleKPFw" role="jymVt" />
-    <node concept="Wx3nA" id="2S1OXleKTQQ" role="jymVt">
-      <property role="TrG5h" value="orderOfActivationExpression" />
-      <node concept="3Tm1VV" id="2S1OXleKTQR" role="1B3o_S" />
-      <node concept="10Oyi0" id="2S1OXleKTQS" role="1tU5fm" />
-    </node>
-    <node concept="2tJIrI" id="2S1OXleKTLB" role="jymVt" />
-    <node concept="Wx3nA" id="3x0R1LJ5DpG" role="jymVt">
-      <property role="TrG5h" value="orderOfNondererminismExpression" />
-      <node concept="3Tm1VV" id="3x0R1LJ5DpH" role="1B3o_S" />
-      <node concept="10Oyi0" id="3x0R1LJ5DpI" role="1tU5fm" />
-    </node>
-    <node concept="2tJIrI" id="2VzlLcGWWqi" role="jymVt" />
     <node concept="2YIFZL" id="3x0R1LJ5DpK" role="jymVt">
       <property role="TrG5h" value="computeNondeterminismExpressions" />
       <node concept="3clFbS" id="3x0R1LJ5DpL" role="3clF47">
