@@ -111,6 +111,27 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4ioi0JB48JG" role="jymVt" />
+    <node concept="3clFb_" id="6fGXG$6kqF2" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="filterUninterestingProperties" />
+      <node concept="3Tm1VV" id="6fGXG$6kqF3" role="1B3o_S" />
+      <node concept="3clFbS" id="6fGXG$6kqF4" role="3clF47" />
+      <node concept="NWlO9" id="6fGXG$6kqF5" role="lGtFl">
+        <property role="NWlVz" value="Filters the uninteresting properties." />
+      </node>
+      <node concept="2I9FWS" id="6fGXG$6kqF6" role="3clF45">
+        <ref role="2I9WkF" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+      </node>
+      <node concept="37vLTG" id="6fGXG$6kqF7" role="3clF46">
+        <property role="TrG5h" value="properties" />
+        <node concept="A3Dl8" id="6fGXG$6kqF8" role="1tU5fm">
+          <node concept="3Tqbb2" id="6fGXG$6kqF9" role="A3Ik2">
+            <ref role="ehGHo" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6fGXG$6kqDb" role="jymVt" />
   </node>
 </model>
 
