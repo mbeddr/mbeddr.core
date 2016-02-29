@@ -1351,11 +1351,34 @@
       </node>
       <node concept="3Tm1VV" id="5tr7YH$UyCV" role="1B3o_S" />
       <node concept="3clFbS" id="5tr7YH$UyCX" role="3clF47">
-        <node concept="3clFbF" id="5tr7YH$UAk3" role="3cqZAp">
-          <node concept="2ShNRf" id="5tr7YH$UAk1" role="3clFbG">
-            <node concept="Tc6Ow" id="5tr7YH$UAPn" role="2ShVmc">
-              <node concept="3Tqbb2" id="5tr7YH$UBiF" role="HW$YZ" />
+        <node concept="3clFbF" id="5bKNAZ5eBI0" role="3cqZAp">
+          <node concept="2OqwBi" id="5bKNAZ5eD25" role="3clFbG">
+            <node concept="2OqwBi" id="5bKNAZ5eC3y" role="2Oq$k0">
+              <node concept="1rXfSq" id="5bKNAZ5eBHZ" role="2Oq$k0">
+                <ref role="37wK5l" node="5tr7YH$UyCh" resolve="getCells" />
+              </node>
+              <node concept="3$u5V9" id="5bKNAZ5eCF9" role="2OqNvi">
+                <node concept="1bVj0M" id="5bKNAZ5eCFb" role="23t8la">
+                  <node concept="3clFbS" id="5bKNAZ5eCFc" role="1bW5cS">
+                    <node concept="3clFbF" id="5bKNAZ5eCKS" role="3cqZAp">
+                      <node concept="2OqwBi" id="5bKNAZ5eCOh" role="3clFbG">
+                        <node concept="37vLTw" id="5bKNAZ5eCKR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5bKNAZ5eCFd" resolve="it" />
+                        </node>
+                        <node concept="liA8E" id="5bKNAZ5eCTM" role="2OqNvi">
+                          <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="5bKNAZ5eCFd" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5bKNAZ5eCFe" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
+            <node concept="ANE8D" id="5bKNAZ5eDdq" role="2OqNvi" />
           </node>
         </node>
       </node>
