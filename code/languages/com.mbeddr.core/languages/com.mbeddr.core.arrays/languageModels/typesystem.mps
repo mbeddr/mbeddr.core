@@ -946,18 +946,49 @@
                           <node concept="3uibUv" id="67O0HaCqMgp" role="1tU5fm">
                             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                           </node>
-                          <node concept="2OqwBi" id="67O0HaCqMgq" role="33vP2m">
-                            <node concept="2OqwBi" id="67O0HaCqMgr" role="2Oq$k0">
-                              <node concept="1YBJjd" id="67O0HaCqMgs" role="2Oq$k0">
+                          <node concept="10Nm6u" id="6fGXG$6h37E" role="33vP2m" />
+                        </node>
+                      </node>
+                      <node concept="SfApY" id="6fGXG$6h2cg" role="3cqZAp">
+                        <node concept="3clFbS" id="6fGXG$6h2ci" role="SfCbr">
+                          <node concept="3clFbF" id="6fGXG$6h1_o" role="3cqZAp">
+                            <node concept="37vLTI" id="6fGXG$6h1_q" role="3clFbG">
+                              <node concept="2OqwBi" id="67O0HaCqMgq" role="37vLTx">
+                                <node concept="2OqwBi" id="67O0HaCqMgr" role="2Oq$k0">
+                                  <node concept="1YBJjd" id="67O0HaCqMgs" role="2Oq$k0">
+                                    <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
+                                  </node>
+                                  <node concept="3TrEf2" id="67O0HaCqMgt" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
+                                  </node>
+                                </node>
+                                <node concept="2qgKlT" id="67O0HaCqMgu" role="2OqNvi">
+                                  <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="6fGXG$6h1_u" role="37vLTJ">
+                                <ref role="3cqZAo" node="67O0HaCqMgo" resolve="evaluateStatically" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="TDmWw" id="6fGXG$6h2cj" role="TEbGg">
+                          <node concept="3cpWsn" id="6fGXG$6h2cl" role="TDEfY">
+                            <property role="TrG5h" value="e" />
+                            <node concept="3uibUv" id="6fGXG$6h2pG" role="1tU5fm">
+                              <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6fGXG$6h2cp" role="TDEfX">
+                            <node concept="2MkqsV" id="6fGXG$6h2U1" role="3cqZAp">
+                              <node concept="1YBJjd" id="6fGXG$6h30f" role="2OEOjV">
                                 <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
                               </node>
-                              <node concept="3TrEf2" id="67O0HaCqMgt" role="2OqNvi">
-                                <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
+                              <node concept="Xl_RD" id="6fGXG$6h2UV" role="2MkJ7o">
+                                <property role="Xl_RC" value="array size must evaluate to an integer" />
                               </node>
                             </node>
-                            <node concept="2qgKlT" id="67O0HaCqMgu" role="2OqNvi">
-                              <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
-                            </node>
+                            <node concept="3cpWs6" id="6fGXG$6h3hn" role="3cqZAp" />
                           </node>
                         </node>
                       </node>
