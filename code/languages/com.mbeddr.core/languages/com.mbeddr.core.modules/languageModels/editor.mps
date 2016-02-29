@@ -361,6 +361,7 @@
       <concept id="4874944647490471525" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_MatchingText" flags="ig" index="1eYWSL" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
+        <property id="8224407690718723337" name="doNotGenerateNodeSubstituteAction" index="ZpkCL" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -3023,6 +3024,7 @@
     <ref role="1XX52x" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     <node concept="1kHk_G" id="7bCENxTSAU0" role="2wV5jI">
       <property role="ZjSer" value="@prevent name mangling" />
+      <property role="ZpkCL" value="true" />
       <ref role="1NtTu8" to="x27k:5Oog2UbP_d2" resolve="preventNameMangling" />
       <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
     </node>
