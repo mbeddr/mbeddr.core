@@ -390,6 +390,8 @@
         <child id="673470630035214744" name="target" index="1cGfhw" />
       </concept>
       <concept id="2090780709295708596" name="com.mbeddr.core.dataflow.structure.IsContextSensitiveExpression" flags="ng" index="1lNaxe" />
+      <concept id="2538651910168211985" name="com.mbeddr.core.dataflow.structure.EmitMapStatement" flags="ng" index="1yMAxB" />
+      <concept id="2538651910168246105" name="com.mbeddr.core.dataflow.structure.EmitUnmapStatement" flags="ng" index="1yMIOJ" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -663,15 +665,15 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3_FXB6" id="3u8ubzKnLCd" role="3cqZAp">
-                  <node concept="37vLTw" id="3u8ubzKrvmn" role="3_H1SZ">
+                <node concept="1yMAxB" id="2cV6Bp1XDcB" role="3cqZAp">
+                  <node concept="37vLTw" id="2cV6Bp1XDds" role="3_H1SZ">
                     <ref role="3cqZAo" node="3u8ubzKrvmi" resolve="formal" />
                   </node>
-                  <node concept="37vLTw" id="3u8ubzKrvhI" role="1XBRO_">
+                  <node concept="37vLTw" id="2cV6Bp1XDed" role="1XBRO_">
                     <ref role="3cqZAo" node="3u8ubzKrvhD" resolve="actual" />
                   </node>
-                  <node concept="37PXTe" id="3u8ubzKpRjo" role="lGtFl">
-                    <node concept="37vLTw" id="578hHfFwGes" role="37T8jq">
+                  <node concept="37PXTe" id="2cV6Bp1XDeZ" role="lGtFl">
+                    <node concept="37vLTw" id="2cV6Bp1XDfJ" role="37T8jq">
                       <ref role="3cqZAo" node="578hHfFwGeh" resolve="source" />
                     </node>
                   </node>
@@ -747,6 +749,56 @@
                   <node concept="chp4Y" id="1O3WvD8NUNF" role="cj9EA">
                     <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Dw8fO" id="2cV6Bp1XD$u" role="3cqZAp">
+              <node concept="3clFbS" id="2cV6Bp1XD$v" role="2LFqv$">
+                <node concept="3cpWs8" id="2cV6Bp1XD$B" role="3cqZAp">
+                  <node concept="3cpWsn" id="2cV6Bp1XD$C" role="3cpWs9">
+                    <property role="TrG5h" value="formal" />
+                    <node concept="3Tqbb2" id="2cV6Bp1XD$D" role="1tU5fm">
+                      <ref role="ehGHo" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
+                    </node>
+                    <node concept="2OqwBi" id="2cV6Bp1XD$E" role="33vP2m">
+                      <node concept="37vLTw" id="2cV6Bp1XD$F" role="2Oq$k0">
+                        <ref role="3cqZAo" node="_oDvx5TCPs" resolve="formals" />
+                      </node>
+                      <node concept="34jXtK" id="2cV6Bp1XD$G" role="2OqNvi">
+                        <node concept="37vLTw" id="2cV6Bp1XD$H" role="25WWJ7">
+                          <ref role="3cqZAo" node="2cV6Bp1XD_2" resolve="i" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1yMIOJ" id="2cV6Bp1XEwB" role="3cqZAp">
+                  <node concept="37vLTw" id="2cV6Bp1XEx2" role="3_H1SZ">
+                    <ref role="3cqZAo" node="2cV6Bp1XD$C" resolve="formal" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="2cV6Bp1XD_2" role="1Duv9x">
+                <property role="TrG5h" value="i" />
+                <node concept="10Oyi0" id="2cV6Bp1XD_3" role="1tU5fm" />
+                <node concept="3cmrfG" id="2cV6Bp1XD_4" role="33vP2m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+              <node concept="3eOVzh" id="2cV6Bp1XD_5" role="1Dwp0S">
+                <node concept="37vLTw" id="2cV6Bp1XD_6" role="3uHU7B">
+                  <ref role="3cqZAo" node="2cV6Bp1XD_2" resolve="i" />
+                </node>
+                <node concept="2OqwBi" id="2cV6Bp1XD_b" role="3uHU7w">
+                  <node concept="37vLTw" id="2cV6Bp1XD_c" role="2Oq$k0">
+                    <ref role="3cqZAo" node="_oDvx5TCPs" resolve="formals" />
+                  </node>
+                  <node concept="34oBXx" id="2cV6Bp1XD_d" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3uNrnE" id="2cV6Bp1XD_e" role="1Dwrff">
+                <node concept="37vLTw" id="2cV6Bp1XD_f" role="2$L3a6">
+                  <ref role="3cqZAo" node="2cV6Bp1XD_2" resolve="i" />
                 </node>
               </node>
             </node>
@@ -2287,6 +2339,69 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3eNFk2" id="3FaSoOiXb$n" role="3eNLev">
+                  <node concept="2ZW3vV" id="3FaSoOiXdf_" role="3eO9$A">
+                    <node concept="3uibUv" id="3FaSoOiXdCi" role="2ZW6by">
+                      <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                    </node>
+                    <node concept="37vLTw" id="3FaSoOiXc1X" role="2ZW6bz">
+                      <ref role="3cqZAo" node="5kXaxjH08$N" resolve="instruction" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="3FaSoOiXb$p" role="3eOfB_">
+                    <node concept="3cpWs8" id="3FaSoOiXemT" role="3cqZAp">
+                      <node concept="3cpWsn" id="3FaSoOiXemU" role="3cpWs9">
+                        <property role="TrG5h" value="_variable" />
+                        <node concept="3Tqbb2" id="3FaSoOiXemV" role="1tU5fm" />
+                        <node concept="10QFUN" id="3FaSoOiXemW" role="33vP2m">
+                          <node concept="2OqwBi" id="3FaSoOiXemX" role="10QFUP">
+                            <node concept="1eOMI4" id="3FaSoOiXemY" role="2Oq$k0">
+                              <node concept="10QFUN" id="3FaSoOiXemZ" role="1eOMHV">
+                                <node concept="3uibUv" id="3FaSoOiXen0" role="10QFUM">
+                                  <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                                </node>
+                                <node concept="37vLTw" id="3FaSoOiXen1" role="10QFUP">
+                                  <ref role="3cqZAo" node="5kXaxjH08$N" resolve="instruction" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3FaSoOiXen2" role="2OqNvi">
+                              <ref role="37wK5l" to="f696:2cV6Bp1WDVs" resolve="getVariable" />
+                            </node>
+                          </node>
+                          <node concept="3Tqbb2" id="3FaSoOiXen3" role="10QFUM" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="3FaSoOiXen4" role="3cqZAp">
+                      <node concept="3cpWsn" id="3FaSoOiXen5" role="3cpWs9">
+                        <property role="TrG5h" value="variable" />
+                        <node concept="3uibUv" id="3FaSoOiXen6" role="1tU5fm">
+                          <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
+                        </node>
+                        <node concept="2ShNRf" id="3FaSoOiXen7" role="33vP2m">
+                          <node concept="1pGfFk" id="3FaSoOiXen8" role="2ShVmc">
+                            <ref role="37wK5l" node="7Ehk3$1DXTG" resolve="VariableWrapper" />
+                            <node concept="37vLTw" id="3FaSoOiXen9" role="37wK5m">
+                              <ref role="3cqZAo" node="3FaSoOiXemU" resolve="_variable" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="3FaSoOiXena" role="3cqZAp">
+                      <node concept="2OqwBi" id="3FaSoOiXenb" role="3clFbG">
+                        <node concept="1fK8h0" id="3FaSoOiXenc" role="2Oq$k0" />
+                        <node concept="liA8E" id="3FaSoOiXend" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~Set.remove(java.lang.Object):boolean" resolve="remove" />
+                          <node concept="37vLTw" id="3FaSoOiXene" role="37wK5m">
+                            <ref role="3cqZAo" node="3FaSoOiXen5" resolve="variable" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -3468,6 +3583,69 @@
             </node>
             <node concept="37vLTw" id="7PgKJZveQ5x" role="2ZW6bz">
               <ref role="3cqZAo" node="7PgKJZveQ4W" resolve="instruction" />
+            </node>
+          </node>
+          <node concept="3eNFk2" id="3FaSoOiX4Gz" role="3eNLev">
+            <node concept="2ZW3vV" id="3FaSoOiX5wZ" role="3eO9$A">
+              <node concept="3uibUv" id="3FaSoOiX5Gc" role="2ZW6by">
+                <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+              </node>
+              <node concept="37vLTw" id="3FaSoOiX4TH" role="2ZW6bz">
+                <ref role="3cqZAo" node="7PgKJZveQ4W" resolve="instruction" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="3FaSoOiX4G_" role="3eOfB_">
+              <node concept="3cpWs8" id="3FaSoOiX6Mu" role="3cqZAp">
+                <node concept="3cpWsn" id="3FaSoOiX6Mv" role="3cpWs9">
+                  <property role="TrG5h" value="_variable" />
+                  <node concept="3Tqbb2" id="3FaSoOiX7Z3" role="1tU5fm" />
+                  <node concept="10QFUN" id="3FaSoOiX8i0" role="33vP2m">
+                    <node concept="2OqwBi" id="3FaSoOiX6Mw" role="10QFUP">
+                      <node concept="1eOMI4" id="3FaSoOiX6Mx" role="2Oq$k0">
+                        <node concept="10QFUN" id="3FaSoOiX6My" role="1eOMHV">
+                          <node concept="3uibUv" id="3FaSoOiX6Mz" role="10QFUM">
+                            <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                          </node>
+                          <node concept="37vLTw" id="3FaSoOiX6M$" role="10QFUP">
+                            <ref role="3cqZAo" node="7PgKJZveQ4W" resolve="instruction" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3FaSoOiX6M_" role="2OqNvi">
+                        <ref role="37wK5l" to="f696:2cV6Bp1WDVs" resolve="getVariable" />
+                      </node>
+                    </node>
+                    <node concept="3Tqbb2" id="3FaSoOiX8i1" role="10QFUM" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="3FaSoOiX8Cr" role="3cqZAp">
+                <node concept="3cpWsn" id="3FaSoOiX8Cs" role="3cpWs9">
+                  <property role="TrG5h" value="variable" />
+                  <node concept="3uibUv" id="3FaSoOiX8Ct" role="1tU5fm">
+                    <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
+                  </node>
+                  <node concept="2ShNRf" id="3FaSoOiX9Pr" role="33vP2m">
+                    <node concept="1pGfFk" id="3FaSoOiX9Pq" role="2ShVmc">
+                      <ref role="37wK5l" node="7Ehk3$1DXTG" resolve="VariableWrapper" />
+                      <node concept="37vLTw" id="3FaSoOiXa15" role="37wK5m">
+                        <ref role="3cqZAo" node="3FaSoOiX6Mv" resolve="_variable" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="3FaSoOiXaoJ" role="3cqZAp">
+                <node concept="2OqwBi" id="3FaSoOiXaB8" role="3clFbG">
+                  <node concept="1fK8h0" id="3FaSoOiXaoH" role="2Oq$k0" />
+                  <node concept="liA8E" id="3FaSoOiXaYu" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
+                    <node concept="37vLTw" id="3FaSoOiXbdQ" role="37wK5m">
+                      <ref role="3cqZAo" node="3FaSoOiX8Cs" resolve="variable" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

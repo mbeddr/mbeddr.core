@@ -8,7 +8,6 @@
   <imports>
     <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" implicit="true" />
     <import index="ybok" ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)" implicit="true" />
-    <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -153,9 +152,9 @@
     </node>
   </node>
   <node concept="2S6QgY" id="3u8ubzKnUs0">
-    <property role="TrG5h" value="EmitWriteStatement_ToogleVirtualAssignment" />
+    <property role="TrG5h" value="EmitMapStatement_ToogleVirtualAssignment" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="tp41:hz_FXzu" resolve="EmitWriteStatement" />
+    <ref role="2ZfgGC" to="ybok:2cV6Bp1Wn8h" resolve="EmitMapStatement" />
     <node concept="2S6ZIM" id="3u8ubzKnUs1" role="2ZfVej">
       <node concept="3clFbS" id="3u8ubzKnUs2" role="2VODD2">
         <node concept="3clFbF" id="3u8ubzKnUs3" role="3cqZAp">
@@ -174,7 +173,7 @@
                 <node concept="2ShNRf" id="3u8ubzKnUsb" role="37vLTx">
                   <node concept="3zrR0B" id="3u8ubzKnUsc" role="2ShVmc">
                     <node concept="3Tqbb2" id="3u8ubzKnUsd" role="3zrR0E">
-                      <ref role="ehGHo" to="ybok:3u8ubzKnUrQ" resolve="VirtualAssignmentAttribute" />
+                      <ref role="ehGHo" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
                     </node>
                   </node>
                 </node>
@@ -182,7 +181,7 @@
                   <node concept="2Sf5sV" id="3u8ubzKnUsf" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="3u8ubzKnUsg" role="2OqNvi">
                     <node concept="3CFYIy" id="3u8ubzKnUNV" role="3CFYIz">
-                      <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="VirtualAssignmentAttribute" />
+                      <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
                     </node>
                   </node>
                 </node>
@@ -195,7 +194,7 @@
               <node concept="2Sf5sV" id="3u8ubzKnUsl" role="2Oq$k0" />
               <node concept="3CFZ6_" id="3u8ubzKnUsm" role="2OqNvi">
                 <node concept="3CFYIy" id="3u8ubzKnUM$" role="3CFYIz">
-                  <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="VirtualAssignmentAttribute" />
+                  <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
                 </node>
               </node>
             </node>
@@ -208,7 +207,7 @@
                     <node concept="2Sf5sV" id="3u8ubzKnUst" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="3u8ubzKnUsu" role="2OqNvi">
                       <node concept="3CFYIy" id="3u8ubzKnUQU" role="3CFYIz">
-                        <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="VirtualAssignmentAttribute" />
+                        <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
                       </node>
                     </node>
                   </node>

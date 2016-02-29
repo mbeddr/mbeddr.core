@@ -32,8 +32,13 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -143,6 +148,30 @@
         <property role="tnX3d" value="false" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="2cV6Bp1Wn8h">
+    <property role="1pbfSe" value="1697418375" />
+    <property role="TrG5h" value="EmitMapStatement" />
+    <property role="34LRSv" value="map" />
+    <property role="R4oN_" value="map formal parameter" />
+    <ref role="1TJDcQ" to="tp41:hz_FXzu" resolve="EmitWriteStatement" />
+    <node concept="PrWs8" id="2cV6Bp1XCuA" role="PzmwI">
+      <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IContextAwareEmitStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2cV6Bp1Wvtp">
+    <property role="1pbfSe" value="1697452495" />
+    <property role="TrG5h" value="EmitUnmapStatement" />
+    <property role="34LRSv" value="unmap" />
+    <property role="R4oN_" value="unmap formal parameter" />
+    <ref role="1TJDcQ" to="tp41:hz_H088" resolve="BaseEmitVariableStatement" />
+    <node concept="PrWs8" id="2cV6Bp1XCuC" role="PzmwI">
+      <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IContextAwareEmitStatement" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2cV6Bp1XC9G">
+    <property role="1pbfSe" value="1697750242" />
+    <property role="TrG5h" value="IContextAwareEmitStatement" />
   </node>
 </model>
 
