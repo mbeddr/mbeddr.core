@@ -333,6 +333,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -367,6 +368,7 @@
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1208542034276" name="jetbrains.mps.baseLanguage.collections.structure.MapClearOperation" flags="nn" index="1yHZxX" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
+      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -9714,6 +9716,9 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="6m4uG_HCd7r" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="5fv6XwgIa4U" role="jymVt" />
     <node concept="3clFb_" id="5fv6XwgHD4g" role="jymVt">
@@ -9750,6 +9755,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="6m4uG_HCd7t" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="5fv6XwgIaoh" role="jymVt" />
@@ -9815,6 +9823,9 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="6m4uG_HCd7q" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="5fv6XwgIaFG" role="jymVt" />
     <node concept="3clFb_" id="5fv6XwgHD4x" role="jymVt">
@@ -9865,6 +9876,78 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="6m4uG_HCd7s" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6m4uG_HC6iN" role="jymVt" />
+    <node concept="3clFb_" id="6m4uG_HC5On" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getSelectionBounds" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6m4uG_HC5Oo" role="1B3o_S" />
+      <node concept="3uibUv" id="6m4uG_HC5Oq" role="3clF45">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="3uibUv" id="6m4uG_HC5Or" role="11_B2D">
+          <ref role="3uigEE" to="z60i:~Rectangle" resolve="Rectangle" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6m4uG_HC5Os" role="3clF46">
+        <property role="TrG5h" value="collection" />
+        <node concept="3uibUv" id="6m4uG_HC5Ot" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6m4uG_HC5Ou" role="3clF47">
+        <node concept="3clFbF" id="6m4uG_HC8Zz" role="3cqZAp">
+          <node concept="2OqwBi" id="6m4uG_HCc_P" role="3clFbG">
+            <node concept="2OqwBi" id="6m4uG_HCa2M" role="2Oq$k0">
+              <node concept="2OqwBi" id="6m4uG_HC93u" role="2Oq$k0">
+                <node concept="37vLTw" id="6m4uG_HC8Zy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5fv6XwgHHBx" resolve="myLayouter" />
+                </node>
+                <node concept="liA8E" id="6m4uG_HC98T" role="2OqNvi">
+                  <ref role="37wK5l" to="xggr:6m4uG_HC7k5" resolve="getCellsForSelectionPainting" />
+                  <node concept="1rXfSq" id="6m4uG_HDh06" role="37wK5m">
+                    <ref role="37wK5l" node="5fv6XwgI3d0" resolve="getLayoutable" />
+                    <node concept="37vLTw" id="6m4uG_HDh9d" role="37wK5m">
+                      <ref role="3cqZAo" node="6m4uG_HC5Os" resolve="collection" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3$u5V9" id="6m4uG_HCahD" role="2OqNvi">
+                <node concept="1bVj0M" id="6m4uG_HCahF" role="23t8la">
+                  <node concept="3clFbS" id="6m4uG_HCahG" role="1bW5cS">
+                    <node concept="3clFbF" id="6m4uG_HCayC" role="3cqZAp">
+                      <node concept="2YIFZM" id="6m4uG_HCbUy" role="3clFbG">
+                        <ref role="37wK5l" to="g51k:~GeometryUtil.getBounds(jetbrains.mps.openapi.editor.cells.EditorCell...):java.awt.Rectangle" resolve="getBounds" />
+                        <ref role="1Pybhc" to="g51k:~GeometryUtil" resolve="GeometryUtil" />
+                        <node concept="2YIFZM" id="6m4uG_HCciN" role="37wK5m">
+                          <ref role="37wK5l" node="3Osd_yx4VxJ" resolve="getEditorCell" />
+                          <ref role="1Pybhc" node="JPngvNsMB7" resolve="CellLayoutUtil" />
+                          <node concept="37vLTw" id="6m4uG_HCcwg" role="37wK5m">
+                            <ref role="3cqZAo" node="6m4uG_HCahH" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="6m4uG_HCahH" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="6m4uG_HCahI" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="6m4uG_HCcQS" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6m4uG_HC5Ov" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="5fv6XwgHYy6" role="1zkMxy">
