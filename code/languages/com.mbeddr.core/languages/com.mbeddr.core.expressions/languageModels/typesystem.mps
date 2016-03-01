@@ -122,7 +122,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -5221,6 +5221,21 @@
     <property role="TrG5h" value="check_VolatileConst" />
     <property role="3GE5qa" value="types" />
     <node concept="3clFbS" id="1exqRp95Us" role="18ibNy">
+      <node concept="3SKdUt" id="7caYlD$l4PG" role="3cqZAp">
+        <node concept="3SKdUq" id="7caYlD$l4PI" role="3SKWNk">
+          <property role="3SKdUp" value="we check the constness on the calculates type to get" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7caYlD$l4YY" role="3cqZAp">
+        <node concept="3SKdUq" id="7caYlD$l4Z0" role="3SKWNk">
+          <property role="3SKdUp" value="the type of a typedef or other types that proxy other types" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7caYlD$l58w" role="3cqZAp">
+        <node concept="3SKdUq" id="7caYlD$l58y" role="3SKWNk">
+          <property role="3SKdUp" value="same applies to volatile" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="1exqRp95Uu" role="3cqZAp">
         <node concept="3clFbS" id="1exqRp95Uw" role="3clFbx">
           <node concept="2MkqsV" id="1exqRp95UZ" role="3cqZAp">
@@ -5247,8 +5262,14 @@
             </node>
           </node>
           <node concept="2OqwBi" id="1exqRp95U$" role="3uHU7B">
-            <node concept="1YBJjd" id="1exqRp95Ux" role="2Oq$k0">
-              <ref role="1YBMHb" node="1exqRp95Ut" resolve="t" />
+            <node concept="1PxgMI" id="7caYlD$l3DN" role="2Oq$k0">
+              <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+              <node concept="2OqwBi" id="7caYlD$kKOj" role="1PxMeX">
+                <node concept="1YBJjd" id="1exqRp95Ux" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1exqRp95Ut" resolve="t" />
+                </node>
+                <node concept="3JvlWi" id="7caYlD$kKX8" role="2OqNvi" />
+              </node>
             </node>
             <node concept="3TrcHB" id="1exqRp95UE" role="2OqNvi">
               <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
@@ -5282,8 +5303,14 @@
             </node>
           </node>
           <node concept="2OqwBi" id="1exqRp95Vu" role="3uHU7B">
-            <node concept="1YBJjd" id="1exqRp95Vv" role="2Oq$k0">
-              <ref role="1YBMHb" node="1exqRp95Ut" resolve="t" />
+            <node concept="1PxgMI" id="7caYlD$l4b2" role="2Oq$k0">
+              <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+              <node concept="2OqwBi" id="7caYlD$kL1V" role="1PxMeX">
+                <node concept="1YBJjd" id="1exqRp95Vv" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1exqRp95Ut" resolve="t" />
+                </node>
+                <node concept="3JvlWi" id="7caYlD$kLcr" role="2OqNvi" />
+              </node>
             </node>
             <node concept="3TrcHB" id="1exqRp95V$" role="2OqNvi">
               <ref role="3TsBF5" to="mj1l:2zhwXA$YI0J" resolve="volatile" />
