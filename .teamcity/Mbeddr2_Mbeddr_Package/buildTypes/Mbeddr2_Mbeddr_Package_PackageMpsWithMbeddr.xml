@@ -48,15 +48,19 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="%buildscripts.artifact-rule%" />
-      </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
+      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageAllPlugins" cleanDestination="true">
+      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%buildscripts.artifact-rule%" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageAllPlugins" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
