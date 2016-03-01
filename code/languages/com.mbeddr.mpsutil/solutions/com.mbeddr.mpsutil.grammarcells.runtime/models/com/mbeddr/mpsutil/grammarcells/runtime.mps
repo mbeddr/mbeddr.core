@@ -9094,102 +9094,88 @@
         <node concept="3clFbH" id="5pzVkrpAp08" role="3cqZAp" />
         <node concept="3clFbJ" id="5$jJV5epkyJ" role="3cqZAp">
           <node concept="3clFbS" id="5$jJV5epkyL" role="3clFbx">
-            <node concept="3SKdUt" id="641A4df3xVa" role="3cqZAp">
-              <node concept="3SKdUq" id="641A4df3OAw" role="3SKWNk">
-                <property role="3SKdUp" value="Removed the check, because it doesn't work in case of &quot;include transform menu for&quot;" />
-              </node>
-            </node>
-            <node concept="3clFbH" id="641A4df3Kgp" role="3cqZAp" />
-            <node concept="1X3_iC" id="641A4df3pJm" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="6B579NG_abO" role="8Wnug">
-                <node concept="3cpWsn" id="6B579NG_abP" role="3cpWs9">
-                  <property role="TrG5h" value="rule" />
-                  <node concept="3uibUv" id="6B579NG_abK" role="1tU5fm">
-                    <ref role="3uigEE" node="2TSIj8lZYwO" resolve="IRule" />
-                  </node>
-                  <node concept="1rXfSq" id="6B579NG_abQ" role="33vP2m">
-                    <ref role="37wK5l" node="2TSIj8m1516" resolve="getRule" />
-                    <node concept="2OqwBi" id="6B579NG_abR" role="37wK5m">
-                      <node concept="37vLTw" id="6B579NG_abS" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7K_2cV$PAca" resolve="nodeToCheck" />
-                      </node>
-                      <node concept="2yIwOk" id="6B579NG_abT" role="2OqNvi" />
+            <node concept="3cpWs8" id="6B579NG_abO" role="3cqZAp">
+              <node concept="3cpWsn" id="6B579NG_abP" role="3cpWs9">
+                <property role="TrG5h" value="rule" />
+                <node concept="3uibUv" id="6B579NG_abK" role="1tU5fm">
+                  <ref role="3uigEE" node="2TSIj8lZYwO" resolve="IRule" />
+                </node>
+                <node concept="1rXfSq" id="6B579NG_abQ" role="33vP2m">
+                  <ref role="37wK5l" node="2TSIj8m1516" resolve="getRule" />
+                  <node concept="2OqwBi" id="6B579NG_abR" role="37wK5m">
+                    <node concept="37vLTw" id="6B579NG_abS" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7K_2cV$PAca" resolve="nodeToCheck" />
                     </node>
+                    <node concept="2yIwOk" id="6B579NG_abT" role="2OqNvi" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="641A4df3pJn" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbJ" id="6B579NGA8__" role="8Wnug">
-                <node concept="3clFbS" id="6B579NGA8_B" role="3clFbx">
-                  <node concept="3cpWs8" id="6B579NG_k6x" role="3cqZAp">
-                    <node concept="3cpWsn" id="6B579NG_k6y" role="3cpWs9">
-                      <property role="TrG5h" value="endSymbol" />
-                      <node concept="3uibUv" id="6B579NG_k6z" role="1tU5fm">
-                        <ref role="3uigEE" node="4qdNcH$4jUS" resolve="ISymbol" />
-                      </node>
-                      <node concept="3K4zz7" id="6B579NG_lPd" role="33vP2m">
-                        <node concept="2OqwBi" id="6B579NG_mlI" role="3K4E3e">
-                          <node concept="2OqwBi" id="6B579NG_m6e" role="2Oq$k0">
-                            <node concept="37vLTw" id="6B579NG_m1L" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6B579NG_abP" resolve="rule" />
-                            </node>
-                            <node concept="liA8E" id="6B579NG_m9G" role="2OqNvi">
-                              <ref role="37wK5l" node="2TSIj8m01jR" resolve="getSymbols" />
-                            </node>
-                          </node>
-                          <node concept="1uHKPH" id="6B579NG_mF5" role="2OqNvi" />
-                        </node>
-                        <node concept="37vLTw" id="6B579NG_lII" role="3K4Cdx">
-                          <ref role="3cqZAo" node="7K_2cV$PBrg" resolve="leftEnd" />
-                        </node>
-                        <node concept="2OqwBi" id="6B579NG_mHA" role="3K4GZi">
-                          <node concept="2OqwBi" id="6B579NG_mHB" role="2Oq$k0">
-                            <node concept="37vLTw" id="6B579NG_mHC" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6B579NG_abP" resolve="rule" />
-                            </node>
-                            <node concept="liA8E" id="6B579NG_mHD" role="2OqNvi">
-                              <ref role="37wK5l" node="2TSIj8m01jR" resolve="getSymbols" />
-                            </node>
-                          </node>
-                          <node concept="1yVyf7" id="6B579NG_noZ" role="2OqNvi" />
-                        </node>
-                      </node>
+            <node concept="3clFbJ" id="6B579NGA8__" role="3cqZAp">
+              <node concept="3clFbS" id="6B579NGA8_B" role="3clFbx">
+                <node concept="3cpWs8" id="6B579NG_k6x" role="3cqZAp">
+                  <node concept="3cpWsn" id="6B579NG_k6y" role="3cpWs9">
+                    <property role="TrG5h" value="endSymbol" />
+                    <node concept="3uibUv" id="6B579NG_k6z" role="1tU5fm">
+                      <ref role="3uigEE" node="4qdNcH$4jUS" resolve="ISymbol" />
                     </node>
-                  </node>
-                  <node concept="3clFbJ" id="6B579NG_qL_" role="3cqZAp">
-                    <node concept="3clFbS" id="6B579NG_qLB" role="3clFbx">
-                      <node concept="3SKdUt" id="6B579NG_xNN" role="3cqZAp">
-                        <node concept="3SKdUq" id="6B579NG_zsK" role="3SKWNk">
-                          <property role="3SKdUp" value="In a BinaryExpression we don't want do allow side transformations on the operator" />
+                    <node concept="3K4zz7" id="6B579NG_lPd" role="33vP2m">
+                      <node concept="2OqwBi" id="6B579NG_mlI" role="3K4E3e">
+                        <node concept="2OqwBi" id="6B579NG_m6e" role="2Oq$k0">
+                          <node concept="37vLTw" id="6B579NG_m1L" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6B579NG_abP" resolve="rule" />
+                          </node>
+                          <node concept="liA8E" id="6B579NG_m9G" role="2OqNvi">
+                            <ref role="37wK5l" node="2TSIj8m01jR" resolve="getSymbols" />
+                          </node>
                         </node>
+                        <node concept="1uHKPH" id="6B579NG_mF5" role="2OqNvi" />
                       </node>
-                      <node concept="3cpWs6" id="6B579NG_sTE" role="3cqZAp">
-                        <node concept="10Nm6u" id="6B579NG_utM" role="3cqZAk" />
+                      <node concept="37vLTw" id="6B579NG_lII" role="3K4Cdx">
+                        <ref role="3cqZAo" node="7K_2cV$PBrg" resolve="leftEnd" />
                       </node>
-                    </node>
-                    <node concept="3y3z36" id="6B579NG_sJ$" role="3clFbw">
-                      <node concept="10Nm6u" id="6B579NG_sPk" role="3uHU7w" />
-                      <node concept="2OqwBi" id="6B579NG_sCJ" role="3uHU7B">
-                        <node concept="37vLTw" id="6B579NG_syY" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6B579NG_k6y" resolve="endSymbol" />
+                      <node concept="2OqwBi" id="6B579NG_mHA" role="3K4GZi">
+                        <node concept="2OqwBi" id="6B579NG_mHB" role="2Oq$k0">
+                          <node concept="37vLTw" id="6B579NG_mHC" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6B579NG_abP" resolve="rule" />
+                          </node>
+                          <node concept="liA8E" id="6B579NG_mHD" role="2OqNvi">
+                            <ref role="37wK5l" node="2TSIj8m01jR" resolve="getSymbols" />
+                          </node>
                         </node>
-                        <node concept="liA8E" id="6B579NG_sHQ" role="2OqNvi">
-                          <ref role="37wK5l" node="1PeMnANamz5" resolve="getOutputConcept" />
-                        </node>
+                        <node concept="1yVyf7" id="6B579NG_noZ" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3y3z36" id="6B579NGAc27" role="3clFbw">
-                  <node concept="10Nm6u" id="6B579NGAc6O" role="3uHU7w" />
-                  <node concept="37vLTw" id="6B579NGAbW3" role="3uHU7B">
-                    <ref role="3cqZAo" node="6B579NG_abP" resolve="rule" />
+                <node concept="3clFbJ" id="6B579NG_qL_" role="3cqZAp">
+                  <node concept="3clFbS" id="6B579NG_qLB" role="3clFbx">
+                    <node concept="3SKdUt" id="6B579NG_xNN" role="3cqZAp">
+                      <node concept="3SKdUq" id="6B579NG_zsK" role="3SKWNk">
+                        <property role="3SKdUp" value="In a BinaryExpression we don't want do allow side transformations on the operator" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="6B579NG_sTE" role="3cqZAp">
+                      <node concept="10Nm6u" id="6B579NG_utM" role="3cqZAk" />
+                    </node>
                   </node>
+                  <node concept="3y3z36" id="6B579NG_sJ$" role="3clFbw">
+                    <node concept="10Nm6u" id="6B579NG_sPk" role="3uHU7w" />
+                    <node concept="2OqwBi" id="6B579NG_sCJ" role="3uHU7B">
+                      <node concept="37vLTw" id="6B579NG_syY" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6B579NG_k6y" resolve="endSymbol" />
+                      </node>
+                      <node concept="liA8E" id="6B579NG_sHQ" role="2OqNvi">
+                        <ref role="37wK5l" node="1PeMnANamz5" resolve="getOutputConcept" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="6B579NGAc27" role="3clFbw">
+                <node concept="10Nm6u" id="6B579NGAc6O" role="3uHU7w" />
+                <node concept="37vLTw" id="6B579NGAbW3" role="3uHU7B">
+                  <ref role="3cqZAo" node="6B579NG_abP" resolve="rule" />
                 </node>
               </node>
             </node>

@@ -891,21 +891,10 @@
       <node concept="346O06" id="lqDNwvlLRe" role="_1QTJ">
         <node concept="1Ai3Oa" id="lqDNwvlLRg" role="3484EA">
           <node concept="3clFbS" id="lqDNwvlLRi" role="2VODD2">
-            <node concept="3SKdUt" id="641A4df2ERd" role="3cqZAp">
-              <node concept="3SKdUq" id="641A4df2ERf" role="3SKWNk">
-                <property role="3SKdUp" value="abcdef" />
-              </node>
-            </node>
             <node concept="3clFbF" id="lqDNwvlLSG" role="3cqZAp">
-              <node concept="1PxgMI" id="lqDNwvlMll" role="3clFbG">
-                <ref role="1PxNhF" to="qlb5:7eOyx9r35RK" resolve="AnnotatedExpression" />
-                <node concept="2OqwBi" id="lqDNwvlXjL" role="1PxMeX">
-                  <node concept="2OqwBi" id="lqDNwvlLV1" role="2Oq$k0">
-                    <node concept="Cj7Ep" id="lqDNwvlLSF" role="2Oq$k0" />
-                    <node concept="1mfA1w" id="lqDNwvlMbt" role="2OqNvi" />
-                  </node>
-                  <node concept="1mfA1w" id="lqDNwvlXyl" role="2OqNvi" />
-                </node>
+              <node concept="2OqwBi" id="lqDNwvlLV1" role="3clFbG">
+                <node concept="Cj7Ep" id="lqDNwvlLSF" role="2Oq$k0" />
+                <node concept="1mfA1w" id="lqDNwvlMbt" role="2OqNvi" />
               </node>
             </node>
           </node>
