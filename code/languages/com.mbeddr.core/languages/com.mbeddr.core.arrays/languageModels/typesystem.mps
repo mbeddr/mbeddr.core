@@ -7183,5 +7183,42 @@
       <ref role="1YaFvo" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
     </node>
   </node>
+  <node concept="18kY7G" id="6Hh5CFHdvQj">
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="check_castExpression" />
+    <node concept="3clFbS" id="6Hh5CFHdvQk" role="18ibNy">
+      <node concept="3clFbJ" id="6Hh5CFHdzNk" role="3cqZAp">
+        <node concept="3clFbS" id="6Hh5CFHdzNl" role="3clFbx">
+          <node concept="2MkqsV" id="6Hh5CFHd$yH" role="3cqZAp">
+            <node concept="Xl_RD" id="6Hh5CFHd$yT" role="2MkJ7o">
+              <property role="Xl_RC" value="Cast to Array Types are not allowed" />
+            </node>
+            <node concept="1YBJjd" id="6Hh5CFHd$$A" role="2OEOjV">
+              <ref role="1YBMHb" node="6Hh5CFHdvQm" resolve="castExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6Hh5CFHd$mg" role="3clFbw">
+          <node concept="2OqwBi" id="6Hh5CFHdzRD" role="2Oq$k0">
+            <node concept="1YBJjd" id="6Hh5CFHdzNw" role="2Oq$k0">
+              <ref role="1YBMHb" node="6Hh5CFHdvQm" resolve="castExpression" />
+            </node>
+            <node concept="3TrEf2" id="6Hh5CFHd$9Y" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHu" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="6Hh5CFHd$uU" role="2OqNvi">
+            <node concept="chp4Y" id="6Hh5CFHd$wb" role="cj9EA">
+              <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6Hh5CFHdvQm" role="1YuTPh">
+      <property role="TrG5h" value="castExpression" />
+      <ref role="1YaFvo" to="mj1l:5IYyAOzBgHk" resolve="CastExpression" />
+    </node>
+  </node>
 </model>
 
