@@ -132,7 +132,7 @@
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
               <node concept="BaHAS" id="29$2IGZgdJj" role="37wK5m">
-                <property role="BaHAW" value="function_contracts" />
+                <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
                 <property role="BaBD8" value="ass" />
               </node>
@@ -292,7 +292,7 @@
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
               <node concept="BaHAS" id="6WBmVK646SR" role="37wK5m">
-                <property role="BaHAW" value="function_contracts" />
+                <property role="BaHAW" value="acsl_to_cbmc" />
                 <property role="BaGAP" value="" />
                 <property role="BaBD8" value="ass" />
               </node>
