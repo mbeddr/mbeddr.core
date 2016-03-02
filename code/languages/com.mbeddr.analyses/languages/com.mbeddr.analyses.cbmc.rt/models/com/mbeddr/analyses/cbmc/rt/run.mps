@@ -9041,12 +9041,10 @@
             </node>
             <node concept="3clFbS" id="6GZ1x5GjodT" role="3Kbo56">
               <node concept="3cpWs6" id="6GZ1x5GjodU" role="3cqZAp">
-                <node concept="2OqwBi" id="2AkoYuY2MRO" role="3cqZAk">
-                  <node concept="37vLTw" id="2AkoYuY2ME4" role="2Oq$k0">
+                <node concept="1rXfSq" id="2AkoYuY6eqs" role="3cqZAk">
+                  <ref role="37wK5l" node="6GZ1x5GjodY" resolve="getCounterExampleTable" />
+                  <node concept="37vLTw" id="2AkoYuY6evA" role="37wK5m">
                     <ref role="3cqZAo" node="6GZ1x5GjodG" resolve="res" />
-                  </node>
-                  <node concept="liA8E" id="2AkoYuY2N4k" role="2OqNvi">
-                    <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
                   </node>
                 </node>
               </node>
@@ -9076,19 +9074,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6GZ1x5Gjoe8" role="3cqZAp">
-          <node concept="3cpWsn" id="6GZ1x5Gjoe9" role="3cpWs9">
-            <property role="TrG5h" value="tableModel" />
-            <node concept="3uibUv" id="6GZ1x5Gjoea" role="1tU5fm">
-              <ref role="3uigEE" to="p8vh:31nZcrlJSwS" resolve="CounterexampleTableModel" />
-            </node>
-            <node concept="2ShNRf" id="6GZ1x5Gjoeb" role="33vP2m">
-              <node concept="HV5vD" id="3kLBXRrwK6d" role="2ShVmc">
-                <ref role="HV5vE" to="p8vh:31nZcrlJSwS" resolve="CounterexampleTableModel" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6GZ1x5Gjoed" role="3cqZAp">
           <node concept="3cpWsn" id="6GZ1x5Gjoee" role="3cpWs9">
             <property role="TrG5h" value="counterexampleStates" />
@@ -9103,19 +9088,6 @@
               </node>
               <node concept="liA8E" id="6GZ1x5Gjoej" role="2OqNvi">
                 <ref role="37wK5l" to="eqhl:54VWoniifyM" resolve="getCounterexampleStates" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6GZ1x5Gjoek" role="3cqZAp">
-          <node concept="2OqwBi" id="6GZ1x5Gjoel" role="3clFbG">
-            <node concept="3cpWsa" id="6GZ1x5Gjoem" role="2Oq$k0">
-              <ref role="3cqZAo" node="6GZ1x5Gjoe9" resolve="tableModel" />
-            </node>
-            <node concept="liA8E" id="6GZ1x5Gjoen" role="2OqNvi">
-              <ref role="37wK5l" to="p8vh:31nZcrlJSz0" resolve="setAnalysisResults" />
-              <node concept="3cpWsa" id="6GZ1x5Gjoeo" role="37wK5m">
-                <ref role="3cqZAo" node="6GZ1x5Gjoee" resolve="counterexampleStates" />
               </node>
             </node>
           </node>
