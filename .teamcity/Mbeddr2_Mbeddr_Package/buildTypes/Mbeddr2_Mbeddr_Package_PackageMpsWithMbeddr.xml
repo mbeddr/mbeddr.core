@@ -9,6 +9,7 @@
     </options>
     <parameters>
       <param name="artifacts-icons.path-properties" value="-Dartifacts.icons=%teamcity.build.checkoutDir%/mbeddr.core/rcp/icons" />
+      <param name="mbeddr.buildNumber" value="%build.vcs.number%" />
       <param name="mbeddr.languages.artifact-paths"><![CDATA[build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build/*.zip=>build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build
 build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/build/artifacts/mbeddr
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
