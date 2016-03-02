@@ -87,6 +87,10 @@
       <property role="TrG5h" value="duplicatesSafe" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5qrsiYWrGSx" role="1TKVEl">
+      <property role="TrG5h" value="collapseByDefault" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5oklODae9g3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="query" />
@@ -149,6 +153,11 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="editorComponent" />
       <ref role="20lvS9" node="6hPjX46YnED" resolve="QueryListInlineEditorComponent" />
+    </node>
+    <node concept="1TJgyj" id="5qrsiYWrGSD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="collapseByDefaultCondition" />
+      <ref role="20lvS9" to="tpc2:gCpkWun" resolve="QueryFunction_NodeCondition" />
     </node>
     <node concept="1TJgyj" id="h4APPx9" role="1TKVEi">
       <property role="20kJfa" value="elementActionMap" />
