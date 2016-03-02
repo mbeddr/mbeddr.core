@@ -22261,5 +22261,58 @@
       <node concept="3clFbS" id="7okx9D2SYRJ" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1ir19b4JZNp">
+    <property role="3GE5qa" value="codereview" />
+    <ref role="13h7C2" to="vs0r:gjBy3TfZQv" resolve="CodeReviewConfig" />
+    <node concept="13hLZK" id="1ir19b4JZNq" role="13h7CW">
+      <node concept="3clFbS" id="1ir19b4JZNr" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1ir19b4JZNs" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getIDEDisplayString" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" node="IviauXb0g" resolve="getIDEDisplayString" />
+      <node concept="3Tm1VV" id="1ir19b4JZNt" role="1B3o_S" />
+      <node concept="3clFbS" id="1ir19b4JZNw" role="3clF47">
+        <node concept="3clFbF" id="1ir19b4K3y9" role="3cqZAp">
+          <node concept="Xl_RD" id="1ir19b4K3y8" role="3clFbG">
+            <property role="Xl_RC" value="Code Review Config" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1ir19b4JZNx" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1ir19b4JZNy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSortOrder" />
+      <ref role="13i0hy" node="1uL8CIs6rGR" resolve="getSortOrder" />
+      <node concept="3Tm1VV" id="1ir19b4JZNz" role="1B3o_S" />
+      <node concept="3clFbS" id="1ir19b4JZNA" role="3clF47">
+        <node concept="3clFbF" id="1ir19b4K3xi" role="3cqZAp">
+          <node concept="3cmrfG" id="1ir19b4K3xh" role="3clFbG">
+            <property role="3cmrfH" value="100" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="1ir19b4JZNB" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1ir19b4JZNC" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getParentPopup" />
+      <ref role="13i0hy" node="1uL8CIsKxiy" resolve="getParentPopup" />
+      <node concept="3Tm1VV" id="1ir19b4JZND" role="1B3o_S" />
+      <node concept="3clFbS" id="1ir19b4JZNG" role="3clF47">
+        <node concept="3clFbF" id="1ir19b4K3xx" role="3cqZAp">
+          <node concept="Xl_RD" id="1ir19b4K3xw" role="3clFbG">
+            <property role="Xl_RC" value="Utilities" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1ir19b4JZNH" role="3clF45" />
+    </node>
+  </node>
 </model>
 
