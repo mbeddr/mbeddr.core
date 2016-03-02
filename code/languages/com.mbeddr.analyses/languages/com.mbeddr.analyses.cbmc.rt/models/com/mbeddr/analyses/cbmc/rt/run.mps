@@ -2220,7 +2220,6 @@
       <node concept="2tJIrI" id="6DRvbEG584Q" role="jymVt" />
       <node concept="3clFbW" id="40PV5hA1DQ5" role="jymVt">
         <node concept="3cqZAl" id="40PV5hA1DQ6" role="3clF45" />
-        <node concept="3Tm1VV" id="40PV5hA1DQ7" role="1B3o_S" />
         <node concept="3clFbS" id="40PV5hA1DQ8" role="3clF47">
           <node concept="3clFbF" id="40PV5hA1DQP" role="3cqZAp">
             <node concept="37vLTI" id="40PV5hA1E6V" role="3clFbG">
@@ -2838,68 +2837,6 @@
         <property role="NWlVz" value="Builds the config object from the analysis config node. Analyzed node is the analysis entry point." />
       </node>
     </node>
-    <node concept="2tJIrI" id="2UdJgvCVKu2" role="jymVt" />
-    <node concept="2YIFZL" id="7q0zW8lsgqC" role="jymVt">
-      <property role="TrG5h" value="buildAnalysisConfigAndSetAnalyzedNode" />
-      <property role="IEkAT" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="7q0zW8lsgqD" role="3clF47">
-        <node concept="3cpWs8" id="7q0zW8lsgqE" role="3cqZAp">
-          <node concept="3cpWsn" id="7q0zW8lsgqF" role="3cpWs9">
-            <property role="TrG5h" value="analysisConfig" />
-            <node concept="3uibUv" id="7q0zW8lsgqG" role="1tU5fm">
-              <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
-            </node>
-            <node concept="NRdvd" id="7q0zW8lsk6F" role="33vP2m">
-              <ref role="1Pybhc" node="1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
-              <ref role="37wK5l" node="5BkFC2yiYoy" resolve="buildAnalysisConfig" />
-              <node concept="37vLTw" id="7q0zW8lsk6G" role="37wK5m">
-                <ref role="3cqZAo" node="7q0zW8lsgqX" resolve="conf" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7q0zW8lsgqP" role="3cqZAp">
-          <node concept="37vLTI" id="7q0zW8lsgqQ" role="3clFbG">
-            <node concept="37vLTw" id="7q0zW8lsgqR" role="37vLTx">
-              <ref role="3cqZAo" node="7q0zW8lsgqX" resolve="conf" />
-            </node>
-            <node concept="2OqwBi" id="7q0zW8lsgqS" role="37vLTJ">
-              <node concept="37vLTw" id="7q0zW8lsgqT" role="2Oq$k0">
-                <ref role="3cqZAo" node="7q0zW8lsgqF" resolve="analysisConfig" />
-              </node>
-              <node concept="2S8uIT" id="7q0zW8lsgqU" role="2OqNvi">
-                <ref role="2S8YL0" node="3kUGzlRhF3M" resolve="analyzedNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="7q0zW8lsgqV" role="3cqZAp">
-          <node concept="37vLTw" id="7q0zW8lsgqW" role="3cqZAk">
-            <ref role="3cqZAo" node="7q0zW8lsgqF" resolve="analysisConfig" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="7q0zW8lsgqX" role="3clF46">
-        <property role="TrG5h" value="conf" />
-        <node concept="3Tqbb2" id="7q0zW8lsgqY" role="1tU5fm">
-          <ref role="ehGHo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="7q0zW8ltz0A" role="3clF46">
-        <property role="TrG5h" value="an" />
-        <node concept="3Tqbb2" id="7q0zW8ltzvo" role="1tU5fm" />
-      </node>
-      <node concept="3uibUv" id="7q0zW8lsgqZ" role="3clF45">
-        <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
-      </node>
-      <node concept="3Tm1VV" id="7q0zW8lsgr0" role="1B3o_S" />
-      <node concept="NWlO9" id="7q0zW8lsgr1" role="lGtFl">
-        <property role="NWlVz" value="Builds the config and sets the analyzed node to be the config item." />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7q0zW8lshRI" role="jymVt" />
     <node concept="2tJIrI" id="Lg9kE9uR_e" role="jymVt" />
     <node concept="2YIFZL" id="3kUGzlRgWzQ" role="jymVt">
       <property role="TrG5h" value="computeEntryFunctionName" />
@@ -4328,6 +4265,19 @@
                 </node>
               </node>
               <node concept="3clFbJ" id="2UdJgvCXO1h" role="3cqZAp">
+                <node concept="3clFbC" id="2UdJgvCXO1o" role="3clFbw">
+                  <node concept="3clFbT" id="2UdJgvCXO1p" role="3uHU7w">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                  <node concept="2OqwBi" id="2UdJgvCXO1q" role="3uHU7B">
+                    <node concept="3cpWs2" id="2UdJgvCXO1r" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                    </node>
+                    <node concept="2S8uIT" id="2UdJgvCXO1s" role="2OqNvi">
+                      <ref role="2S8YL0" node="tGR6edUFun" resolve="generateUnwindingAssertions" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbS" id="2UdJgvCXO1i" role="3clFbx">
                   <node concept="3clFbF" id="2UdJgvCXO1j" role="3cqZAp">
                     <node concept="2OqwBi" id="2UdJgvCXO1k" role="3clFbG">
@@ -4342,16 +4292,36 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbC" id="2UdJgvCXO1o" role="3clFbw">
-                  <node concept="3clFbT" id="2UdJgvCXO1p" role="3uHU7w">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                  <node concept="2OqwBi" id="2UdJgvCXO1q" role="3uHU7B">
-                    <node concept="3cpWs2" id="2UdJgvCXO1r" role="2Oq$k0">
+              </node>
+              <node concept="3SKdUt" id="2AkoYuY1WnN" role="3cqZAp">
+                <node concept="3SKdUq" id="2AkoYuY1WnP" role="3SKWNk">
+                  <property role="3SKdUp" value="TEMPORARY: for newer CBMC versions (starting with 5.2)" />
+                </node>
+              </node>
+              <node concept="1X3_iC" id="2AkoYuY1Xhe" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbJ" id="2AkoYuY1WEO" role="8Wnug">
+                  <node concept="2OqwBi" id="2AkoYuY1WER" role="3clFbw">
+                    <node concept="3cpWs2" id="2AkoYuY1WES" role="2Oq$k0">
                       <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
                     </node>
-                    <node concept="2S8uIT" id="2UdJgvCXO1s" role="2OqNvi">
+                    <node concept="2S8uIT" id="2AkoYuY1WET" role="2OqNvi">
                       <ref role="2S8YL0" node="tGR6edUFun" resolve="generateUnwindingAssertions" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="2AkoYuY1WEU" role="3clFbx">
+                    <node concept="3clFbF" id="2AkoYuY1WEV" role="3cqZAp">
+                      <node concept="2OqwBi" id="2AkoYuY1WEW" role="3clFbG">
+                        <node concept="3cpWsa" id="2AkoYuY1WEX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                        </node>
+                        <node concept="TSZUe" id="2AkoYuY1WEY" role="2OqNvi">
+                          <node concept="Xl_RD" id="2AkoYuY1WEZ" role="25WWJ7">
+                            <property role="Xl_RC" value="--unwinding-assertions" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -10242,60 +10212,28 @@
       <node concept="10P_77" id="7Quig7_PqIC" role="3clF45" />
       <node concept="3Tm1VV" id="7GloF9XTwgD" role="1B3o_S" />
       <node concept="3clFbS" id="7GloF9XTwgG" role="3clF47">
-        <node concept="3clFbJ" id="7GloF9XTX4o" role="3cqZAp">
-          <node concept="3clFbS" id="7GloF9XTX4r" role="3clFbx">
-            <node concept="3cpWs6" id="7GloF9XTXif" role="3cqZAp">
-              <node concept="3clFbT" id="7Quig7_PrlD" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="7Quig7_Pxny" role="3clFbw">
-            <node concept="1rXfSq" id="7Quig7_PKdp" role="3fr31v">
-              <ref role="37wK5l" node="7GloF9XTzUb" resolve="checkVersion" />
-              <node concept="37vLTw" id="7Quig7_PKmP" role="37wK5m">
-                <ref role="3cqZAo" node="7Quig7_PqX9" resolve="messages" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3OhBgB49OwW" role="3cqZAp">
-          <node concept="3clFbS" id="3OhBgB49OwX" role="3clFbx">
-            <node concept="3cpWs6" id="3OhBgB49OwY" role="3cqZAp">
-              <node concept="3clFbT" id="3OhBgB49OwZ" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="3OhBgB49Ox0" role="3clFbw">
-            <node concept="1rXfSq" id="3OhBgB49Ox1" role="3fr31v">
-              <ref role="37wK5l" node="3OhBgB4bp_G" resolve="checkDummyRun" />
-              <node concept="37vLTw" id="3OhBgB49Ox2" role="37wK5m">
-                <ref role="3cqZAo" node="7Quig7_PqX9" resolve="messages" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="7GloF9XU1cS" role="3cqZAp">
-          <node concept="3clFbS" id="7GloF9XU1cT" role="3clFbx">
-            <node concept="3cpWs6" id="7GloF9XU1cU" role="3cqZAp">
-              <node concept="3clFbT" id="7Quig7_R2NE" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="7Quig7_R27$" role="3clFbw">
-            <node concept="1rXfSq" id="7GloF9XU0Kc" role="3fr31v">
-              <ref role="37wK5l" node="7GloF9XSPfg" resolve="checkReachableProperties" />
-              <node concept="37vLTw" id="7Quig7_R0sF" role="37wK5m">
-                <ref role="3cqZAo" node="7Quig7_PqX9" resolve="messages" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="7GloF9XTYfY" role="3cqZAp">
-          <node concept="3clFbT" id="7Quig7_R45_" role="3cqZAk">
-            <property role="3clFbU" value="true" />
+          <node concept="1Wc70l" id="2AkoYuY1Rvk" role="3cqZAk">
+            <node concept="1Wc70l" id="2AkoYuY1R7T" role="3uHU7B">
+              <node concept="1rXfSq" id="2AkoYuY1QZh" role="3uHU7B">
+                <ref role="37wK5l" node="7GloF9XTzUb" resolve="checkVersion" />
+                <node concept="37vLTw" id="2AkoYuY1QZi" role="37wK5m">
+                  <ref role="3cqZAo" node="7Quig7_PqX9" resolve="messages" />
+                </node>
+              </node>
+              <node concept="1rXfSq" id="2AkoYuY1Rm9" role="3uHU7w">
+                <ref role="37wK5l" node="3OhBgB4bp_G" resolve="checkDummyRun" />
+                <node concept="37vLTw" id="2AkoYuY1Rma" role="37wK5m">
+                  <ref role="3cqZAo" node="7Quig7_PqX9" resolve="messages" />
+                </node>
+              </node>
+            </node>
+            <node concept="1rXfSq" id="2AkoYuY1RIz" role="3uHU7w">
+              <ref role="37wK5l" node="7GloF9XSPfg" resolve="checkReachableProperties" />
+              <node concept="37vLTw" id="2AkoYuY1RI$" role="37wK5m">
+                <ref role="3cqZAo" node="7Quig7_PqX9" resolve="messages" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
