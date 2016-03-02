@@ -2954,6 +2954,12 @@
     <property role="TrG5h" value="mpsMbeddrBranding" />
     <property role="turDy" value="mps.xml" />
     <property role="3GE5qa" value="ide" />
+    <node concept="2sgV4H" id="5FIs3IeSkEA" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="5FIs3IeSkFX" role="2JcizS">
+        <ref role="398BVh" node="1BPeV_LjXqO" resolve="mps.home" />
+      </node>
+    </node>
     <node concept="1zClus" id="1BPeV_LjXsL" role="3989C9">
       <property role="2OjLBK" value="0" />
       <property role="TrG5h" value="MPS" />
