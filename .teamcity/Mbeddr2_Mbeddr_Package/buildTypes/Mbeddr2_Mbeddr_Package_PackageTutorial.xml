@@ -4,7 +4,7 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="artifacts/*.zip" />
+      <option name="artifactRules" value="artifacts/*.zip=&gt;com.mbeddr.tutorial" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters>
