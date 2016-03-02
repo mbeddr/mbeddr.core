@@ -405,6 +405,10 @@
       </concept>
       <concept id="1166648550386" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewRootNodeOperation" flags="nn" index="2xF2bX" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
         <reference id="1143235391024" name="concept" index="I8UWU" />
@@ -431,8 +435,8 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -903,6 +907,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="ty4hbPEuYH" role="3acgRq">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="tpee:hqOqwz4" resolve="DotExpression" />
       <node concept="30G5F_" id="hB4Jn0a" role="30HLyM">
         <node concept="3clFbS" id="hB4Jn0b" role="2VODD2">
@@ -914,9 +919,16 @@
                     <node concept="2OqwBi" id="4vnGofEx79V" role="2Oq$k0">
                       <node concept="1PxgMI" id="4vnGofEx6K1" role="2Oq$k0">
                         <ref role="1PxNhF" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
+                        <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                         <node concept="2OqwBi" id="4vnGofEx5nK" role="1PxMeX">
                           <node concept="30H73N" id="4vnGofEx5hI" role="2Oq$k0" />
                           <node concept="3TrEf2" id="4vnGofEx69U" role="2OqNvi">
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="204dbZ7DSCJ" role="1m5AlR">
+                          <node concept="30H73N" id="204dbZ7DSyu" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="204dbZ7DSVW" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                           </node>
                         </node>
@@ -986,6 +998,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="ty4hbPHhGi" role="3acgRq">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="tpee:hqOqwz4" resolve="DotExpression" />
       <node concept="j$656" id="4vnGofExvSd" role="1lVwrX">
         <ref role="v9R2y" node="4vnGofEwSEJ" resolve="reduce_DotExpressionApplication" />
@@ -1013,14 +1026,21 @@
                     <node concept="2OqwBi" id="4vnGofExuki" role="2Oq$k0">
                       <node concept="1PxgMI" id="4vnGofExukj" role="2Oq$k0">
                         <ref role="1PxNhF" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
+                        <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                         <node concept="2OqwBi" id="4vnGofExukk" role="1PxMeX">
                           <node concept="30H73N" id="4vnGofExukl" role="2Oq$k0" />
                           <node concept="3TrEf2" id="4vnGofExukm" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                           </node>
                         </node>
+                        <node concept="2OqwBi" id="204dbZ7DUDc" role="1m5AlR">
+                          <node concept="30H73N" id="204dbZ7DUyV" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="204dbZ7DV9J" role="2OqNvi">
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                          </node>
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="4vnGofExukn" role="2OqNvi">
+                      <node concept="3TrEf2" id="204dbZ7DX0c" role="2OqNvi">
                         <ref role="3Tt5mk" to="3iid:86yKXFY5Xj" />
                       </node>
                     </node>
@@ -1069,6 +1089,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="5Y26uUBIWhl" role="3acgRq">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="tpee:hqOqwz4" resolve="DotExpression" />
       <node concept="j$656" id="5Y26uUBIWhm" role="1lVwrX">
         <ref role="v9R2y" node="5Y26uUBIVIz" resolve="reduce_GetPreferenceFormInProjectOperation" />
