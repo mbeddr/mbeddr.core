@@ -40,6 +40,10 @@
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="mbeddr-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Mac" cleanDestination="false">
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" />
+        <artifact sourcePath="cbmc-mac.zip!**=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+      </dependency>
     </artifact-dependencies>
     <dependencies>
       <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">

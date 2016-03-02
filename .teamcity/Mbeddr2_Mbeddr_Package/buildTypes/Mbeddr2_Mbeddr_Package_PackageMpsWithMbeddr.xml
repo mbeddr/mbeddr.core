@@ -19,7 +19,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.rcp/mps.xml" />
           <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
-          <param name="target" value="clean,build" />
+          <param name="target" value="clean,generate,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
