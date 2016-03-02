@@ -117,9 +117,6 @@
       <concept id="7753544965996647428" name="jetbrains.mps.build.structure.BuildLayout_FilesOf" flags="ng" index="1zDrgl">
         <reference id="7753544965996647430" name="element" index="1zDrgn" />
       </concept>
-      <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
-        <reference id="841011766565753076" name="target" index="3_I8Xa" />
-      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="5248329904288051111" name="jetbrains.mps.build.structure.BuildFileExcludeSelector" flags="ng" index="3LWZYq">
         <property id="5248329904288051112" name="pattern" index="3LWZYl" />
@@ -3524,52 +3521,16 @@
         </node>
       </node>
       <node concept="398223" id="1BPeV_LjXvG" role="39821P">
-        <node concept="3_I8Xc" id="1BPeV_LjXvH" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:6b4RkXS7XdG" resolve="mps-build" />
-        </node>
-        <node concept="3_I8Xc" id="1BPeV_LjXvI" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:3vXGXT89g4o" resolve="mps-trove" />
+        <node concept="3ygNvl" id="32YXDrSql99" role="39821P">
+          <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />
+          <node concept="3LWZYq" id="32YXDrSqjt0" role="1juEy9">
+            <property role="3LWZYl" value="samples.jar" />
+          </node>
         </node>
         <node concept="3_J27D" id="1BPeV_LjXvJ" role="Nbhlr">
           <node concept="3Mxwew" id="1BPeV_LjXvK" role="3MwsjC">
             <property role="3MwjfP" value="plugins" />
           </node>
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvL" role="39821P">
-          <ref role="3ygNvj" to="ffeo:1diLdO26H7E" resolve="plugins" />
-        </node>
-        <node concept="3_I8Xc" id="1BPeV_LjXvM" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:4O0hKJpjIVy" resolve="mps-devkit" />
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvN" role="39821P">
-          <ref role="3ygNvj" to="ffeo:5xa9wY2vhbF" />
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvO" role="39821P">
-          <ref role="3ygNvj" to="ffeo:5rNMDvYzen4" />
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvP" role="39821P">
-          <ref role="3ygNvj" to="ffeo:5yMuYWFN8P3" />
-          <node concept="3LWZYq" id="5FIs3IeHRn2" role="1juEy9">
-            <property role="3LWZYl" value="samples.jar" />
-          </node>
-        </node>
-        <node concept="3_I8Xc" id="1BPeV_LjXvQ" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />
-        </node>
-        <node concept="3_I8Xc" id="1BPeV_LjXvR" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:78GwwOvE66$" resolve="mps-build" />
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvS" role="39821P">
-          <ref role="3ygNvj" to="ffeo:25y4WSoTpV4" />
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvT" role="39821P">
-          <ref role="3ygNvj" to="ffeo:3J16QdQGiiC" />
-        </node>
-        <node concept="3ygNvl" id="1BPeV_LjXvU" role="39821P">
-          <ref role="3ygNvj" to="ffeo:5mc7nVumjik" />
-        </node>
-        <node concept="3_I8Xc" id="1BPeV_LjXvV" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
         </node>
         <node concept="3981dx" id="5FIs3IeHQcv" role="39821P">
           <node concept="3_J27D" id="5FIs3IeHQcx" role="Nbhlr">
