@@ -12,11 +12,17 @@
     <import index="j6po" ref="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e/java:org.sat4j.specs(com.mbeddr.analyses.sat4j/)" />
     <import index="ky9n" ref="r:02fd962e-fdec-4ce8-ac08-1e36622f718b(com.mbeddr.analyses.sat4j.fm.model)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="i6v0" ref="r:2614f5fc-e90d-4f99-b5fb-05bc371282e5(com.mbeddr.analyses.sat4j.fm.solution)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -52,6 +58,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -771,6 +778,90 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOVvkt" role="jymVt" />
+    <node concept="2YIFZL" id="6eIJF_HROc8" role="jymVt">
+      <property role="TrG5h" value="checkConsistencyOfVariabilityUseWithinSolution" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="6eIJF_HROc9" role="3clF47">
+        <node concept="3cpWs8" id="6eIJF_HROca" role="3cqZAp">
+          <node concept="3cpWsn" id="6eIJF_HROcb" role="3cpWs9">
+            <property role="TrG5h" value="scc" />
+            <node concept="3uibUv" id="6eIJF_HROEG" role="1tU5fm">
+              <ref role="3uigEE" to="i6v0:1X8myJOLdq3" resolve="SolutionVariabilityDefinitionAndUseConsistencyChecker" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6eIJF_HRRaa" role="3cqZAp">
+          <node concept="37vLTI" id="6eIJF_HRRac" role="3clFbG">
+            <node concept="2ShNRf" id="6eIJF_HROcd" role="37vLTx">
+              <node concept="HV5vD" id="6eIJF_HRQ5L" role="2ShVmc">
+                <ref role="HV5vE" to="i6v0:1X8myJOLdq3" resolve="SolutionVariabilityDefinitionAndUseConsistencyChecker" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6eIJF_HRRag" role="37vLTJ">
+              <ref role="3cqZAo" node="6eIJF_HROcb" resolve="scc" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6eIJF_HROcf" role="3cqZAp" />
+        <node concept="SfApY" id="6eIJF_HROcg" role="3cqZAp">
+          <node concept="3clFbS" id="6eIJF_HROch" role="SfCbr">
+            <node concept="3cpWs6" id="6eIJF_HROci" role="3cqZAp">
+              <node concept="2OqwBi" id="6eIJF_HROcj" role="3cqZAk">
+                <node concept="37vLTw" id="6eIJF_HROck" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6eIJF_HROcb" resolve="scc" />
+                </node>
+                <node concept="liA8E" id="6eIJF_HROcl" role="2OqNvi">
+                  <ref role="37wK5l" to="i6v0:1X8myJOLdq5" resolve="checkConsistency" />
+                  <node concept="37vLTw" id="6eIJF_HROcm" role="37wK5m">
+                    <ref role="3cqZAo" node="6eIJF_HROc_" resolve="m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6eIJF_HROcn" role="TEbGg">
+            <node concept="3clFbS" id="6eIJF_HROco" role="TDEfX">
+              <node concept="3clFbF" id="6eIJF_HROcp" role="3cqZAp">
+                <node concept="2OqwBi" id="6eIJF_HROcq" role="3clFbG">
+                  <node concept="37vLTw" id="6eIJF_HROcr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6eIJF_HROct" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6eIJF_HROcs" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWsn" id="6eIJF_HROct" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6eIJF_HROcu" role="1tU5fm">
+                <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6eIJF_HROcv" role="3cqZAp" />
+        <node concept="3cpWs6" id="6eIJF_HROcw" role="3cqZAp">
+          <node concept="10Nm6u" id="6eIJF_HROcx" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6eIJF_HROcy" role="1B3o_S" />
+      <node concept="_YKpA" id="6eIJF_HROcz" role="3clF45">
+        <node concept="3uibUv" id="6eIJF_HROc$" role="_ZDj9">
+          <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6eIJF_HROc_" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <node concept="3uibUv" id="6eIJF_HRQ$$" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="6eIJF_HROcB" role="lGtFl">
+        <property role="NWlVz" value="Checks the consistency of the variability use within a solution." />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="tSjOfAadF9" role="1B3o_S" />
     <node concept="NWlO9" id="tSjOfAaypr" role="lGtFl">
       <property role="NWlVz" value="Utility methods for testing analyses about variabiity." />
