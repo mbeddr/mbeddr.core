@@ -349,7 +349,6 @@
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
       <concept id="3976803464656498418" name="com.mbeddr.core.expressions.structure.PreDecrementExpression" flags="ng" index="1FldXs" />
-      <concept id="3976803464656531170" name="com.mbeddr.core.expressions.structure.UnaryMinusExpression" flags="ng" index="1FllXc" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="938100142480245061" name="com.mbeddr.core.expressions.structure.OctalNumberLiteral" flags="ng" index="3LgSLu" />
@@ -4142,10 +4141,8 @@
             <node concept="3XIRFW" id="7rAi6S1yF94" role="gg_gl">
               <node concept="1_9egQ" id="7rAi6S1yGVf" role="3XIRFZ">
                 <node concept="3pqW6w" id="7rAi6S1yGVr" role="1_9egR">
-                  <node concept="1FllXc" id="7rAi6S1yGVu" role="3TlMhJ">
-                    <node concept="3TlMh9" id="7rAi6S1yHb_" role="1_9fRO">
-                      <property role="2hmy$m" value="2" />
-                    </node>
+                  <node concept="3TlMh9" id="6eIJF_HToPC" role="3TlMhJ">
+                    <property role="2hmy$m" value="-2" />
                   </node>
                   <node concept="3ZVu4v" id="7rAi6S1yGVe" role="3TlMhI">
                     <ref role="3ZVs_2" node="7rAi6S1yEoa" resolve="r" />
