@@ -3026,7 +3026,7 @@
       </node>
       <node concept="3_J27D" id="1BPeV_LjXt6" role="2EteIg">
         <node concept="3Mxwey" id="1BPeV_LjXt7" role="3MwsjC">
-          <ref role="3Mxwex" node="1BPeV_LjXqV" resolve="mps.build.number" />
+          <ref role="3Mxwex" node="jueD0WYgWw" resolve="mps.build.number" />
         </node>
       </node>
       <node concept="3_J27D" id="1BPeV_LjXt8" role="2EtHGA">
@@ -3390,12 +3390,25 @@
         </node>
       </node>
     </node>
-    <node concept="2kB4xC" id="1BPeV_LjXqV" role="1l3spd">
+    <node concept="2kB4xC" id="jueD0WYgWs" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.buildNumber" />
+      <node concept="aVJcg" id="jueD0WYgWt" role="aVJcv">
+        <node concept="NbPM2" id="jueD0WYgWu" role="aVJcq">
+          <node concept="3Mxwew" id="jueD0WYgWv" role="3MwsjC">
+            <property role="3MwjfP" value="SNAPSHOT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="jueD0WYgWw" role="1l3spd">
       <property role="TrG5h" value="mps.build.number" />
-      <node concept="aVJcg" id="1BPeV_LjXqW" role="aVJcv">
-        <node concept="NbPM2" id="1BPeV_LjXqX" role="aVJcq">
-          <node concept="3Mxwew" id="1BPeV_LjXqY" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-143.SNAPSHOT" />
+      <node concept="aVJcg" id="jueD0WYgWx" role="aVJcv">
+        <node concept="NbPM2" id="jueD0WYgWy" role="aVJcq">
+          <node concept="3Mxwew" id="jueD0WYgWz" role="3MwsjC">
+            <property role="3MwjfP" value="MPS-143." />
+          </node>
+          <node concept="3Mxwey" id="jueD0WYgW$" role="3MwsjC">
+            <ref role="3Mxwex" node="jueD0WYgWs" resolve="mbeddr.buildNumber" />
           </node>
         </node>
       </node>
@@ -3655,7 +3668,7 @@
           <property role="1TblLn" value="build.number" />
           <node concept="NbPM2" id="1BPeV_LjXw0" role="1TblLm">
             <node concept="3Mxwey" id="1BPeV_LjXw1" role="3MwsjC">
-              <ref role="3Mxwex" node="1BPeV_LjXqV" resolve="mps.build.number" />
+              <ref role="3Mxwex" node="jueD0WYgWw" resolve="mps.build.number" />
             </node>
           </node>
         </node>
