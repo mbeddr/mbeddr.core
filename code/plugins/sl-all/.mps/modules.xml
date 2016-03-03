@@ -35,6 +35,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.editor.tabs/de.slisson.mps.editor.tabs.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.structurecheck/de.slisson.mps.structurecheck.mpl" folder="structurecheck" />
+      <modulePath path="$PROJECT_DIR$/languages/test.de.itemis.mps.editor.celllayout.lang/test.de.itemis.mps.editor.celllayout.lang.mpl" folder="layout.topdown.test" />
       <modulePath path="$PROJECT_DIR$/mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="apache-commons" />
       <modulePath path="$PROJECT_DIR$/mps-boolean-editor/languages/de.itemis.mps.editor.bool.demolang/de.itemis.mps.editor.bool.demolang.mpl" folder="bool" />
       <modulePath path="$PROJECT_DIR$/mps-boolean-editor/languages/de.itemis.mps.editor.bool/de.itemis.mps.editor.bool.mpl" folder="bool" />
@@ -82,7 +83,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.tabs.runtime/de.slisson.mps.editor.tabs.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.structurecheck.runtime/de.slisson.mps.structurecheck.runtime.msd" folder="structurecheck" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.structurecheck.sandbox/de.slisson.mps.structurecheck.sandbox.msd" folder="structurecheck" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.de.itemis.mps.editor.celllayout.runtime/test.de.itemis.mps.editor.celllayout.runtime.msd" folder="layout.topdown.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.de.itemis.mps.editor.celllayout.runtime/test.de.itemis.mps.editor.celllayout.msd" folder="layout.topdown.test" />
     </projectModules>
   </component>
 </project>
