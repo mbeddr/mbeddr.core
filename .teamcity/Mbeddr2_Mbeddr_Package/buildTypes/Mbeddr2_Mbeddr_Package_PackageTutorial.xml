@@ -49,6 +49,10 @@ mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutoria
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Build_BuildTutorial" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
