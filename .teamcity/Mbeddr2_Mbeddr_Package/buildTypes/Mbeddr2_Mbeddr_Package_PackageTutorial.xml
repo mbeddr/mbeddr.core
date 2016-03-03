@@ -24,6 +24,18 @@ mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutoria
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_2" name="Compile Languages" type="Ant">
+        <parameters>
+          <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />
+          <param name="runnerArgs" value="%mps.path-properties% %mbeddr-scripts.path-properties% %build-dir.path-properties% %artifacts-root.path-properties% %mbeddr-github.path-properties% %build-dir.path-properties%" />
+          <param name="target" value="build-tutorial" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
