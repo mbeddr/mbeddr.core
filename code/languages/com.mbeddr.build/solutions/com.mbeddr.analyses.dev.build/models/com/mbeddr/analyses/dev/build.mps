@@ -823,6 +823,18 @@
             <ref role="3bR37D" to="p6ld:7eF9rfAuSQh" resolve="com.mbeddr.analyses.sat4j.fm" />
           </node>
         </node>
+        <node concept="1SiIV0" id="NtSEOYByAt" role="3bR37C">
+          <node concept="3bR9La" id="NtSEOYByAu" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="NtSEOYByAv" role="3bR37C">
+          <node concept="3bR9La" id="NtSEOYByAw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7IFaMBYEj5M" role="2G$12L">
         <property role="BnDLt" value="true" />
