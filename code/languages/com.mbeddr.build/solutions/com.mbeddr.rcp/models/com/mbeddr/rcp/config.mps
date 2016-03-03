@@ -2387,6 +2387,14 @@
               </node>
             </node>
           </node>
+          <node concept="28jJK3" id="3_QmycUFE07" role="39821P">
+            <node concept="398BVA" id="3_QmycUFE1g" role="28jJRO">
+              <ref role="398BVh" node="5wLtKNeVGp1" resolve="artifacts.icons" />
+              <node concept="2Ry0Ak" id="3_QmycUFE1m" role="iGT6I">
+                <property role="2Ry0Am" value="mbeddr.ico" />
+              </node>
+            </node>
+          </node>
           <node concept="28jJK3" id="2lgcjg3akLV" role="39821P">
             <property role="28jJZ5" value="755" />
             <node concept="3co7Ac" id="2lgcjg3akM5" role="28jJR8">
@@ -2768,7 +2776,7 @@
         <node concept="2Ry0Ak" id="73rNuZmHjF7" role="iGT6I">
           <property role="2Ry0Am" value="mps" />
           <node concept="2Ry0Ak" id="73rNuZmHjF8" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS 3.3" />
+            <property role="2Ry0Am" value="MPS33" />
           </node>
         </node>
       </node>
