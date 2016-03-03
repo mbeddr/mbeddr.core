@@ -28,7 +28,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" implicit="true" />
   </imports>
@@ -189,9 +188,6 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
-        <child id="1207055552304" name="warningText" index="a7wSD" />
-      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -270,9 +266,6 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -287,7 +280,6 @@
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <property id="1238684351431" name="asCast" index="1BlNFB" />
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
@@ -410,22 +402,6 @@
     <property role="TrG5h" value="check_CBMCAnalysis" />
     <property role="3GE5qa" value="configuration.cbmc" />
     <node concept="3clFbS" id="5IjQP6cssjN" role="18ibNy">
-      <node concept="3clFbJ" id="5IjQP6cssql" role="3cqZAp">
-        <node concept="3clFbS" id="5IjQP6cssqm" role="3clFbx">
-          <node concept="3cpWs6" id="5IjQP6cssrd" role="3cqZAp" />
-        </node>
-        <node concept="3clFbC" id="5IjQP6cssr9" role="3clFbw">
-          <node concept="10Nm6u" id="5IjQP6cssrc" role="3uHU7w" />
-          <node concept="2OqwBi" id="5IjQP6cssqI" role="3uHU7B">
-            <node concept="1YBJjd" id="5IjQP6cssqp" role="2Oq$k0">
-              <ref role="1YBMHb" node="5IjQP6cssjO" resolve="analysis" />
-            </node>
-            <node concept="3TrEf2" id="5IjQP6cssqN" role="2OqNvi">
-              <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3cpWs8" id="5IjQP6cssld" role="3cqZAp">
         <node concept="3cpWsn" id="5IjQP6cssle" role="3cpWs9">
           <property role="TrG5h" value="bc" />
@@ -467,6 +443,22 @@
         </node>
       </node>
       <node concept="3clFbH" id="5IjQP6csu8F" role="3cqZAp" />
+      <node concept="3clFbJ" id="5IjQP6cssql" role="3cqZAp">
+        <node concept="3clFbS" id="5IjQP6cssqm" role="3clFbx">
+          <node concept="3cpWs6" id="5IjQP6cssrd" role="3cqZAp" />
+        </node>
+        <node concept="3clFbC" id="5IjQP6cssr9" role="3clFbw">
+          <node concept="10Nm6u" id="5IjQP6cssrc" role="3uHU7w" />
+          <node concept="2OqwBi" id="5IjQP6cssqI" role="3uHU7B">
+            <node concept="1YBJjd" id="5IjQP6cssqp" role="2Oq$k0">
+              <ref role="1YBMHb" node="5IjQP6cssjO" resolve="analysis" />
+            </node>
+            <node concept="3TrEf2" id="5IjQP6cssqN" role="2OqNvi">
+              <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="5IjQP6cssrJ" role="3cqZAp">
         <node concept="2YIFZM" id="3fAfgHYnUCm" role="3clFbw">
           <ref role="37wK5l" to="tzyt:3fAfgHYmwxo" resolve="checkBuildConfigContainsImplementationModule" />
@@ -570,104 +562,104 @@
     </node>
   </node>
   <node concept="18kY7G" id="1XFitunRfdb">
-    <property role="TrG5h" value="check_CProverBasedAnalysis" />
+    <property role="TrG5h" value="check_timeoutSpecs" />
     <property role="3GE5qa" value="configuration.cbmc" />
     <node concept="3clFbS" id="1XFitunRfdc" role="18ibNy">
       <node concept="3clFbJ" id="1XFitunRfdn" role="3cqZAp">
-        <node concept="2OqwBi" id="1XFitunRfeb" role="3clFbw">
-          <node concept="2OqwBi" id="1XFitunRfdJ" role="2Oq$k0">
-            <node concept="1YBJjd" id="1XFitunRfdq" role="2Oq$k0">
-              <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+        <node concept="3fqX7Q" id="2GZiJUXMe6B" role="3clFbw">
+          <node concept="2OqwBi" id="2GZiJUXMe6D" role="3fr31v">
+            <node concept="2OqwBi" id="2GZiJUXMe6E" role="2Oq$k0">
+              <node concept="1YBJjd" id="2GZiJUXMe6F" role="2Oq$k0">
+                <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+              </node>
+              <node concept="3TrcHB" id="2GZiJUXMe6G" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="2jyWgCyP3Qr" role="2OqNvi">
-              <ref role="3TsBF5" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
-            </node>
-          </node>
-          <node concept="liA8E" id="1XFitunRfoT" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-            <node concept="10M0yZ" id="6Pij_UBJQ$N" role="37wK5m">
-              <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
-              <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+            <node concept="liA8E" id="2GZiJUXMe6H" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="10M0yZ" id="2GZiJUXMe6I" role="37wK5m">
+                <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+                <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbS" id="1XFitunRfdp" role="3clFbx">
-          <node concept="3cpWs6" id="1XFitunRfoW" role="3cqZAp" />
-        </node>
-      </node>
-      <node concept="SfApY" id="1XFitunRfpc" role="3cqZAp">
-        <node concept="3clFbS" id="1XFitunRfpd" role="SfCbr">
-          <node concept="3cpWs8" id="1XFitunRfpM" role="3cqZAp">
-            <node concept="3cpWsn" id="1XFitunRfpN" role="3cpWs9">
-              <property role="TrG5h" value="tout" />
-              <node concept="10Oyi0" id="1XFitunRfpO" role="1tU5fm" />
-              <node concept="2YIFZM" id="1XFitunRfpP" role="33vP2m">
-                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <node concept="2OqwBi" id="1XFitunRfpQ" role="37wK5m">
-                  <node concept="1YBJjd" id="1XFitunRfpR" role="2Oq$k0">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
-                  <node concept="3TrcHB" id="1XFitunRfpS" role="2OqNvi">
-                    <ref role="3TsBF5" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="1XFitunRfq2" role="3cqZAp">
-            <node concept="3clFbS" id="1XFitunRfq3" role="3clFbx">
-              <node concept="2MkqsV" id="1XFitunRfqv" role="3cqZAp">
-                <node concept="1YBJjd" id="1XFitunRfqw" role="2OEOjV">
-                  <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                </node>
-                <node concept="Xl_RD" id="1XFitunRfqx" role="2MkJ7o">
-                  <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
-                </node>
-                <node concept="3Cnw8n" id="5zmbZKrhcCX" role="2OEOjU">
-                  <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="5zmbZKrhbHz" resolve="fix_timeout" />
-                  <node concept="3CnSsL" id="5zmbZKrhcNg" role="3Coj4f">
-                    <ref role="QkamJ" node="5zmbZKrhbH$" resolve="analysis" />
-                    <node concept="1YBJjd" id="5zmbZKrhcQa" role="3CoRuB">
-                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+          <node concept="SfApY" id="1XFitunRfpc" role="3cqZAp">
+            <node concept="3clFbS" id="1XFitunRfpd" role="SfCbr">
+              <node concept="3cpWs8" id="1XFitunRfpM" role="3cqZAp">
+                <node concept="3cpWsn" id="1XFitunRfpN" role="3cpWs9">
+                  <property role="TrG5h" value="tout" />
+                  <node concept="10Oyi0" id="1XFitunRfpO" role="1tU5fm" />
+                  <node concept="2YIFZM" id="1XFitunRfpP" role="33vP2m">
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <node concept="2OqwBi" id="1XFitunRfpQ" role="37wK5m">
+                      <node concept="1YBJjd" id="1XFitunRfpR" role="2Oq$k0">
+                        <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                      </node>
+                      <node concept="3TrcHB" id="1XFitunRfpS" role="2OqNvi">
+                        <ref role="3TsBF5" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
+              <node concept="3clFbJ" id="1XFitunRfq2" role="3cqZAp">
+                <node concept="3clFbS" id="1XFitunRfq3" role="3clFbx">
+                  <node concept="2MkqsV" id="1XFitunRfqv" role="3cqZAp">
+                    <node concept="1YBJjd" id="1XFitunRfqw" role="2OEOjV">
+                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                    </node>
+                    <node concept="Xl_RD" id="1XFitunRfqx" role="2MkJ7o">
+                      <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
+                    </node>
+                    <node concept="3Cnw8n" id="5zmbZKrhcCX" role="2OEOjU">
+                      <ref role="QpYPw" node="5zmbZKrhbHz" resolve="fix_timeout" />
+                      <node concept="3CnSsL" id="5zmbZKrhcNg" role="3Coj4f">
+                        <ref role="QkamJ" node="5zmbZKrhbH$" resolve="analysis" />
+                        <node concept="1YBJjd" id="5zmbZKrhcQa" role="3CoRuB">
+                          <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2dkUwp" id="1XFitunRfqy" role="3clFbw">
+                  <node concept="3cpWsa" id="1XFitunRfqz" role="3uHU7B">
+                    <ref role="3cqZAo" node="1XFitunRfpN" resolve="tout" />
+                  </node>
+                  <node concept="3cmrfG" id="1XFitunRfq$" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2dkUwp" id="1XFitunRfqy" role="3clFbw">
-              <node concept="3cpWsa" id="1XFitunRfqz" role="3uHU7B">
-                <ref role="3cqZAo" node="1XFitunRfpN" resolve="tout" />
+            <node concept="TDmWw" id="1XFitunRfpf" role="TEbGg">
+              <node concept="3cpWsn" id="1XFitunRfpg" role="TDEfY">
+                <property role="TrG5h" value="nfe" />
+                <node concept="3uibUv" id="1XFitunRfpV" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                </node>
               </node>
-              <node concept="3cmrfG" id="1XFitunRfq$" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="TDmWw" id="1XFitunRfpf" role="TEbGg">
-          <node concept="3cpWsn" id="1XFitunRfpg" role="TDEfY">
-            <property role="TrG5h" value="nfe" />
-            <node concept="3uibUv" id="1XFitunRfpV" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="1XFitunRfpi" role="TDEfX">
-            <node concept="2MkqsV" id="1XFitunRfpW" role="3cqZAp">
-              <node concept="1YBJjd" id="1XFitunRfq0" role="2OEOjV">
-                <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-              </node>
-              <node concept="Xl_RD" id="1XFitunRfpZ" role="2MkJ7o">
-                <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
-              </node>
-              <node concept="3Cnw8n" id="5zmbZKrhcT2" role="2OEOjU">
-                <property role="ARO6o" value="true" />
-                <ref role="QpYPw" node="5zmbZKrhbHz" resolve="fix_timeout" />
-                <node concept="3CnSsL" id="5zmbZKrhcZi" role="3Coj4f">
-                  <ref role="QkamJ" node="5zmbZKrhbH$" resolve="analysis" />
-                  <node concept="1YBJjd" id="5zmbZKrhd2c" role="3CoRuB">
+              <node concept="3clFbS" id="1XFitunRfpi" role="TDEfX">
+                <node concept="2MkqsV" id="1XFitunRfpW" role="3cqZAp">
+                  <node concept="1YBJjd" id="1XFitunRfq0" role="2OEOjV">
                     <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                  </node>
+                  <node concept="Xl_RD" id="1XFitunRfpZ" role="2MkJ7o">
+                    <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
+                  </node>
+                  <node concept="3Cnw8n" id="5zmbZKrhcT2" role="2OEOjU">
+                    <property role="ARO6o" value="true" />
+                    <ref role="QpYPw" node="5zmbZKrhbHz" resolve="fix_timeout" />
+                    <node concept="3CnSsL" id="5zmbZKrhcZi" role="3Coj4f">
+                      <ref role="QkamJ" node="5zmbZKrhbH$" resolve="analysis" />
+                      <node concept="1YBJjd" id="5zmbZKrhd2c" role="3CoRuB">
+                        <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -676,307 +668,111 @@
         </node>
       </node>
       <node concept="3clFbH" id="1XFitunRfpb" role="3cqZAp" />
-      <node concept="3clFbJ" id="3ASzZs56xN7" role="3cqZAp">
-        <node concept="3clFbS" id="3ASzZs56xNa" role="3clFbx">
-          <node concept="3cpWs6" id="3ASzZs56zeQ" role="3cqZAp" />
-        </node>
-        <node concept="3clFbC" id="3ASzZs56z5v" role="3clFbw">
-          <node concept="10Nm6u" id="3ASzZs56za5" role="3uHU7w" />
-          <node concept="2OqwBi" id="3ASzZs56yc$" role="3uHU7B">
-            <node concept="1YBJjd" id="3ASzZs56y7f" role="2Oq$k0">
-              <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-            </node>
-            <node concept="3TrcHB" id="3ASzZs56yFa" role="2OqNvi">
-              <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="3ASzZs56zo0" role="3cqZAp" />
       <node concept="3clFbJ" id="5zmbZKrhdoN" role="3cqZAp">
-        <node concept="2OqwBi" id="5zmbZKrhdoO" role="3clFbw">
-          <node concept="2OqwBi" id="5zmbZKrhdoP" role="2Oq$k0">
-            <node concept="1YBJjd" id="5zmbZKrhdoQ" role="2Oq$k0">
-              <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+        <node concept="3fqX7Q" id="2GZiJUXMeDP" role="3clFbw">
+          <node concept="2OqwBi" id="2GZiJUXMeDR" role="3fr31v">
+            <node concept="2OqwBi" id="2GZiJUXMeDS" role="2Oq$k0">
+              <node concept="1YBJjd" id="2GZiJUXMeDT" role="2Oq$k0">
+                <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+              </node>
+              <node concept="3TrcHB" id="2GZiJUXMeDU" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="5zmbZKrhdWY" role="2OqNvi">
-              <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
-            </node>
-          </node>
-          <node concept="liA8E" id="5zmbZKrhdoS" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-            <node concept="10M0yZ" id="5zmbZKrhdoT" role="37wK5m">
-              <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
-              <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+            <node concept="liA8E" id="2GZiJUXMeDV" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="10M0yZ" id="2GZiJUXMeDW" role="37wK5m">
+                <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+                <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbS" id="5zmbZKrhdoU" role="3clFbx">
-          <node concept="3cpWs6" id="5zmbZKrhdoV" role="3cqZAp" />
-        </node>
-      </node>
-      <node concept="SfApY" id="5zmbZKrhdoW" role="3cqZAp">
-        <node concept="3clFbS" id="5zmbZKrhdoX" role="SfCbr">
-          <node concept="3cpWs8" id="5zmbZKrhdoY" role="3cqZAp">
-            <node concept="3cpWsn" id="5zmbZKrhdoZ" role="3cpWs9">
-              <property role="TrG5h" value="tout" />
-              <node concept="10Oyi0" id="5zmbZKrhdp0" role="1tU5fm" />
-              <node concept="2YIFZM" id="5zmbZKrhdp1" role="33vP2m">
-                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <node concept="2OqwBi" id="5zmbZKrhdp2" role="37wK5m">
-                  <node concept="1YBJjd" id="5zmbZKrhdp3" role="2Oq$k0">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
-                  <node concept="3TrcHB" id="5zmbZKrheee" role="2OqNvi">
-                    <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
+          <node concept="SfApY" id="5zmbZKrhdoW" role="3cqZAp">
+            <node concept="3clFbS" id="5zmbZKrhdoX" role="SfCbr">
+              <node concept="3cpWs8" id="5zmbZKrhdoY" role="3cqZAp">
+                <node concept="3cpWsn" id="5zmbZKrhdoZ" role="3cpWs9">
+                  <property role="TrG5h" value="tout" />
+                  <node concept="10Oyi0" id="5zmbZKrhdp0" role="1tU5fm" />
+                  <node concept="2YIFZM" id="5zmbZKrhdp1" role="33vP2m">
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <node concept="2OqwBi" id="5zmbZKrhdp2" role="37wK5m">
+                      <node concept="1YBJjd" id="5zmbZKrhdp3" role="2Oq$k0">
+                        <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                      </node>
+                      <node concept="3TrcHB" id="5zmbZKrheee" role="2OqNvi">
+                        <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="5zmbZKrhdp5" role="3cqZAp">
-            <node concept="3clFbS" id="5zmbZKrhdp6" role="3clFbx">
-              <node concept="2MkqsV" id="5zmbZKrhdp7" role="3cqZAp">
-                <node concept="1YBJjd" id="5zmbZKrhdp8" role="2OEOjV">
-                  <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                </node>
-                <node concept="Xl_RD" id="5zmbZKrhdp9" role="2MkJ7o">
-                  <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
-                </node>
-                <node concept="3Cnw8n" id="5zmbZKrhdpa" role="2OEOjU">
-                  <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="5zmbZKrhema" resolve="fix_timeoutForSingleAnalysis" />
-                  <node concept="3CnSsL" id="5zmbZKrhdpb" role="3Coj4f">
-                    <ref role="QkamJ" node="5zmbZKrhemb" resolve="analysis" />
-                    <node concept="1YBJjd" id="5zmbZKrhdpc" role="3CoRuB">
+              <node concept="3clFbJ" id="5zmbZKrhdp5" role="3cqZAp">
+                <node concept="3clFbS" id="5zmbZKrhdp6" role="3clFbx">
+                  <node concept="2MkqsV" id="5zmbZKrhdp7" role="3cqZAp">
+                    <node concept="1YBJjd" id="5zmbZKrhdp8" role="2OEOjV">
                       <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2dkUwp" id="5zmbZKrhdpd" role="3clFbw">
-              <node concept="3cpWsa" id="5zmbZKrhdpe" role="3uHU7B">
-                <ref role="3cqZAo" node="5zmbZKrhdoZ" resolve="tout" />
-              </node>
-              <node concept="3cmrfG" id="5zmbZKrhdpf" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="TDmWw" id="5zmbZKrhdpg" role="TEbGg">
-          <node concept="3cpWsn" id="5zmbZKrhdph" role="TDEfY">
-            <property role="TrG5h" value="nfe" />
-            <node concept="3uibUv" id="5zmbZKrhdpi" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="5zmbZKrhdpj" role="TDEfX">
-            <node concept="2MkqsV" id="5zmbZKrhdpk" role="3cqZAp">
-              <node concept="1YBJjd" id="5zmbZKrhdpl" role="2OEOjV">
-                <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-              </node>
-              <node concept="Xl_RD" id="5zmbZKrhdpm" role="2MkJ7o">
-                <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
-              </node>
-              <node concept="3Cnw8n" id="5zmbZKrhdpn" role="2OEOjU">
-                <property role="ARO6o" value="true" />
-                <ref role="QpYPw" node="5zmbZKrhema" resolve="fix_timeoutForSingleAnalysis" />
-                <node concept="3CnSsL" id="5zmbZKrhdpo" role="3Coj4f">
-                  <ref role="QkamJ" node="5zmbZKrhemb" resolve="analysis" />
-                  <node concept="1YBJjd" id="5zmbZKrhdpp" role="3CoRuB">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="5zmbZKrhdbH" role="3cqZAp" />
-      <node concept="3clFbJ" id="5zmbZKrfUHo" role="3cqZAp">
-        <node concept="2OqwBi" id="5zmbZKrfUHp" role="3clFbw">
-          <node concept="2OqwBi" id="5zmbZKrfUHq" role="2Oq$k0">
-            <node concept="1YBJjd" id="5zmbZKrfUHr" role="2Oq$k0">
-              <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-            </node>
-            <node concept="3TrcHB" id="5zmbZKrfVMF" role="2OqNvi">
-              <ref role="3TsBF5" to="q5q6:7ehmsbAuTGF" resolve="analysisDepth" />
-            </node>
-          </node>
-          <node concept="liA8E" id="5zmbZKrfUHt" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-            <node concept="10M0yZ" id="5zmbZKrfUHu" role="37wK5m">
-              <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
-              <ref role="3cqZAo" to="tzyt:5zmbZKqV1tt" resolve="NO_ANALYSIS_DEPTH_STRING" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="5zmbZKrfUHv" role="3clFbx">
-          <node concept="3cpWs6" id="5zmbZKrfUHw" role="3cqZAp" />
-        </node>
-      </node>
-      <node concept="SfApY" id="5zmbZKrfUHy" role="3cqZAp">
-        <node concept="3clFbS" id="5zmbZKrfUHz" role="SfCbr">
-          <node concept="3cpWs8" id="5zmbZKrfUH$" role="3cqZAp">
-            <node concept="3cpWsn" id="5zmbZKrfUH_" role="3cpWs9">
-              <property role="TrG5h" value="depth" />
-              <node concept="10Oyi0" id="5zmbZKrfUHA" role="1tU5fm" />
-              <node concept="2YIFZM" id="5zmbZKrfUHB" role="33vP2m">
-                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <node concept="2OqwBi" id="5zmbZKrfUHC" role="37wK5m">
-                  <node concept="1YBJjd" id="5zmbZKrfUHD" role="2Oq$k0">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
-                  <node concept="3TrcHB" id="5zmbZKrgx01" role="2OqNvi">
-                    <ref role="3TsBF5" to="q5q6:7ehmsbAuTGF" resolve="analysisDepth" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="5zmbZKrfUHF" role="3cqZAp">
-            <node concept="3clFbS" id="5zmbZKrfUHG" role="3clFbx">
-              <node concept="2MkqsV" id="5zmbZKrfUHH" role="3cqZAp">
-                <node concept="3Cnw8n" id="5zmbZKrh4Pm" role="2OEOjU">
-                  <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
-                  <node concept="3CnSsL" id="5zmbZKrhb$f" role="3Coj4f">
-                    <ref role="QkamJ" node="5zmbZKrh8_k" resolve="analysis" />
-                    <node concept="1YBJjd" id="5zmbZKrhbB1" role="3CoRuB">
-                      <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                    <node concept="Xl_RD" id="5zmbZKrhdp9" role="2MkJ7o">
+                      <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
                     </node>
-                  </node>
-                </node>
-                <node concept="1YBJjd" id="5zmbZKrfUHI" role="2OEOjV">
-                  <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                </node>
-                <node concept="Xl_RD" id="5zmbZKrfUHJ" role="2MkJ7o">
-                  <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
-                </node>
-              </node>
-            </node>
-            <node concept="2dkUwp" id="5zmbZKrfUHK" role="3clFbw">
-              <node concept="37vLTw" id="5zmbZKrgxhZ" role="3uHU7B">
-                <ref role="3cqZAo" node="5zmbZKrfUH_" resolve="depth" />
-              </node>
-              <node concept="3cmrfG" id="5zmbZKrfUHM" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="TDmWw" id="5zmbZKrfUHN" role="TEbGg">
-          <node concept="3cpWsn" id="5zmbZKrfUHO" role="TDEfY">
-            <property role="TrG5h" value="nfe" />
-            <node concept="3uibUv" id="5zmbZKrfUHP" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="5zmbZKrfUHQ" role="TDEfX">
-            <node concept="2MkqsV" id="5zmbZKrfUHR" role="3cqZAp">
-              <node concept="1YBJjd" id="5zmbZKrfUHS" role="2OEOjV">
-                <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-              </node>
-              <node concept="Xl_RD" id="5zmbZKrfUHT" role="2MkJ7o">
-                <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
-              </node>
-              <node concept="3Cnw8n" id="5zmbZKrhazt" role="2OEOjU">
-                <property role="ARO6o" value="true" />
-                <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
-                <node concept="3CnSsL" id="5zmbZKrhbuD" role="3Coj4f">
-                  <ref role="QkamJ" node="5zmbZKrh8_k" resolve="analysis" />
-                  <node concept="1YBJjd" id="5zmbZKrhbxv" role="3CoRuB">
-                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="5zmbZKrfUE5" role="3cqZAp" />
-    </node>
-    <node concept="1YaCAy" id="1XFitunRfdd" role="1YuTPh">
-      <property role="TrG5h" value="analysis" />
-      <ref role="1YaFvo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="6_tX1iOkILQ">
-    <property role="3GE5qa" value="configuration.cbmc" />
-    <property role="TrG5h" value="check_AnalysisEntryPointExported" />
-    <node concept="3clFbS" id="6_tX1iOkN_d" role="18ibNy">
-      <node concept="3clFbJ" id="6Kj2zNCCPvy" role="3cqZAp">
-        <node concept="3clFbS" id="6Kj2zNCCPv_" role="3clFbx">
-          <node concept="3clFbJ" id="6_tX1iOl4eV" role="3cqZAp">
-            <node concept="3clFbS" id="6_tX1iOl4eW" role="3clFbx">
-              <node concept="3clFbJ" id="6_tX1iOmdCv" role="3cqZAp">
-                <node concept="3clFbS" id="6_tX1iOmdCw" role="3clFbx">
-                  <node concept="a7r0C" id="6_tX1iOmhu1" role="3cqZAp">
-                    <node concept="Xl_RD" id="6_tX1iOmhuv" role="a7wSD">
-                      <property role="Xl_RC" value="The entry point should be decalred exported" />
-                    </node>
-                    <node concept="1YBJjd" id="6_tX1iOmhAv" role="2OEOjV">
-                      <ref role="1YBMHb" node="6_tX1iOkZPY" resolve="cProverBasedAnalysis" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3fqX7Q" id="6_tX1iOmdCL" role="3clFbw">
-                  <node concept="2OqwBi" id="6_tX1iOmg2A" role="3fr31v">
-                    <node concept="1PxgMI" id="6_tX1iOmfN0" role="2Oq$k0">
-                      <property role="1BlNFB" value="true" />
-                      <ref role="1PxNhF" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-                      <node concept="2OqwBi" id="6_tX1iOmdH5" role="1PxMeX">
-                        <node concept="1YBJjd" id="6_tX1iOmdDd" role="2Oq$k0">
-                          <ref role="1YBMHb" node="6_tX1iOkZPY" resolve="cProverBasedAnalysis" />
-                        </node>
-                        <node concept="3TrEf2" id="6_tX1iOmeeM" role="2OqNvi">
-                          <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+                    <node concept="3Cnw8n" id="5zmbZKrhdpa" role="2OEOjU">
+                      <ref role="QpYPw" node="5zmbZKrhema" resolve="fix_timeoutForSingleAnalysis" />
+                      <node concept="3CnSsL" id="5zmbZKrhdpb" role="3Coj4f">
+                        <ref role="QkamJ" node="5zmbZKrhemb" resolve="analysis" />
+                        <node concept="1YBJjd" id="5zmbZKrhdpc" role="3CoRuB">
+                          <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3TrcHB" id="6_tX1iOmhmi" role="2OqNvi">
-                      <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                  </node>
+                </node>
+                <node concept="2dkUwp" id="5zmbZKrhdpd" role="3clFbw">
+                  <node concept="3cpWsa" id="5zmbZKrhdpe" role="3uHU7B">
+                    <ref role="3cqZAo" node="5zmbZKrhdoZ" resolve="tout" />
+                  </node>
+                  <node concept="3cmrfG" id="5zmbZKrhdpf" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="TDmWw" id="5zmbZKrhdpg" role="TEbGg">
+              <node concept="3cpWsn" id="5zmbZKrhdph" role="TDEfY">
+                <property role="TrG5h" value="nfe" />
+                <node concept="3uibUv" id="5zmbZKrhdpi" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="5zmbZKrhdpj" role="TDEfX">
+                <node concept="2MkqsV" id="5zmbZKrhdpk" role="3cqZAp">
+                  <node concept="1YBJjd" id="5zmbZKrhdpl" role="2OEOjV">
+                    <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                  </node>
+                  <node concept="Xl_RD" id="5zmbZKrhdpm" role="2MkJ7o">
+                    <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
+                  </node>
+                  <node concept="3Cnw8n" id="5zmbZKrhdpn" role="2OEOjU">
+                    <property role="ARO6o" value="true" />
+                    <ref role="QpYPw" node="5zmbZKrhema" resolve="fix_timeoutForSingleAnalysis" />
+                    <node concept="3CnSsL" id="5zmbZKrhdpo" role="3Coj4f">
+                      <ref role="QkamJ" node="5zmbZKrhemb" resolve="analysis" />
+                      <node concept="1YBJjd" id="5zmbZKrhdpp" role="3CoRuB">
+                        <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="6_tX1iOma2z" role="3clFbw">
-              <node concept="2OqwBi" id="6_tX1iOl7iT" role="2Oq$k0">
-                <node concept="1YBJjd" id="6_tX1iOl4fd" role="2Oq$k0">
-                  <ref role="1YBMHb" node="6_tX1iOkZPY" resolve="cProverBasedAnalysis" />
-                </node>
-                <node concept="3TrEf2" id="6_tX1iOlnpv" role="2OqNvi">
-                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="6_tX1iOmdxi" role="2OqNvi">
-                <node concept="chp4Y" id="6_tX1iOmd$B" role="cj9EA">
-                  <ref role="cht4Q" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="6Kj2zNCCPFC" role="3clFbw">
-          <node concept="2qgKlT" id="6Kj2zNCCQ6A" role="2OqNvi">
-            <ref role="37wK5l" to="dqn8:7U3Fobb_8Eq" resolve="isNotSuppressed" />
-            <node concept="1YBJjd" id="6Kj2zNCCQ7y" role="37wK5m">
-              <ref role="1YBMHb" node="6_tX1iOkZPY" resolve="cProverBasedAnalysis" />
-            </node>
-          </node>
-          <node concept="35c_gC" id="KDB3Gff9t7" role="2Oq$k0">
-            <ref role="35c_gD" to="bdcd:7U3Fobb_8El" resolve="SuppressWarnings" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1YaCAy" id="6_tX1iOkZPY" role="1YuTPh">
-      <property role="TrG5h" value="cProverBasedAnalysis" />
+    <node concept="1YaCAy" id="1XFitunRfdd" role="1YuTPh">
+      <property role="TrG5h" value="analysis" />
       <ref role="1YaFvo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
     </node>
   </node>
@@ -1389,6 +1185,15 @@
         </node>
       </node>
     </node>
+    <node concept="QznSV" id="2GZiJUXMjQ4" role="QzAvj">
+      <node concept="3clFbS" id="2GZiJUXMjQ5" role="2VODD2">
+        <node concept="3clFbF" id="2GZiJUXMjRh" role="3cqZAp">
+          <node concept="Xl_RD" id="2GZiJUXMjRg" role="3clFbG">
+            <property role="Xl_RC" value="Fix depth" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Q5z_Y" id="5zmbZKrhbHz">
     <property role="3GE5qa" value="configuration.cbmc" />
@@ -1419,6 +1224,15 @@
         </node>
       </node>
     </node>
+    <node concept="QznSV" id="2GZiJUXMj4c" role="QzAvj">
+      <node concept="3clFbS" id="2GZiJUXMj4d" role="2VODD2">
+        <node concept="3clFbF" id="2GZiJUXMj5p" role="3cqZAp">
+          <node concept="Xl_RD" id="2GZiJUXMj5o" role="3clFbG">
+            <property role="Xl_RC" value="Fix timeout" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Q5z_Y" id="5zmbZKrhema">
     <property role="3GE5qa" value="configuration.cbmc" />
@@ -1445,6 +1259,15 @@
                 <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="2GZiJUXMiVi" role="QzAvj">
+      <node concept="3clFbS" id="2GZiJUXMiVj" role="2VODD2">
+        <node concept="3clFbF" id="2GZiJUXMiWv" role="3cqZAp">
+          <node concept="Xl_RD" id="2GZiJUXMiWu" role="3clFbG">
+            <property role="Xl_RC" value="Fix timeout" />
           </node>
         </node>
       </node>
@@ -2352,6 +2175,118 @@
     <node concept="1YaCAy" id="7cbtYkHd14E" role="1YuTPh">
       <property role="TrG5h" value="cProverBasedMbeddrAnalysis" />
       <ref role="1YaFvo" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2GZiJUXMk_B">
+    <property role="TrG5h" value="check_analysisDepth" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <node concept="3clFbS" id="2GZiJUXMk_C" role="18ibNy">
+      <node concept="3clFbJ" id="2GZiJUXMkAT" role="3cqZAp">
+        <node concept="3fqX7Q" id="2GZiJUXMkAU" role="3clFbw">
+          <node concept="2OqwBi" id="2GZiJUXMkAV" role="3fr31v">
+            <node concept="2OqwBi" id="2GZiJUXMkAW" role="2Oq$k0">
+              <node concept="1YBJjd" id="2GZiJUXMkAX" role="2Oq$k0">
+                <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+              </node>
+              <node concept="3TrcHB" id="2GZiJUXMkAY" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7ehmsbAuTGF" resolve="analysisDepth" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2GZiJUXMkAZ" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="10M0yZ" id="2GZiJUXMkB0" role="37wK5m">
+                <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+                <ref role="3cqZAo" to="tzyt:5zmbZKqV1tt" resolve="NO_ANALYSIS_DEPTH_STRING" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2GZiJUXMkB1" role="3clFbx">
+          <node concept="SfApY" id="2GZiJUXMkB2" role="3cqZAp">
+            <node concept="3clFbS" id="2GZiJUXMkB3" role="SfCbr">
+              <node concept="3cpWs8" id="2GZiJUXMkB4" role="3cqZAp">
+                <node concept="3cpWsn" id="2GZiJUXMkB5" role="3cpWs9">
+                  <property role="TrG5h" value="depth" />
+                  <node concept="10Oyi0" id="2GZiJUXMkB6" role="1tU5fm" />
+                  <node concept="2YIFZM" id="2GZiJUXMkB7" role="33vP2m">
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <node concept="2OqwBi" id="2GZiJUXMkB8" role="37wK5m">
+                      <node concept="1YBJjd" id="2GZiJUXMkB9" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                      </node>
+                      <node concept="3TrcHB" id="2GZiJUXMkBa" role="2OqNvi">
+                        <ref role="3TsBF5" to="q5q6:7ehmsbAuTGF" resolve="analysisDepth" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="2GZiJUXMkBb" role="3cqZAp">
+                <node concept="3clFbS" id="2GZiJUXMkBc" role="3clFbx">
+                  <node concept="2MkqsV" id="2GZiJUXMkBd" role="3cqZAp">
+                    <node concept="3Cnw8n" id="2GZiJUXMkBe" role="2OEOjU">
+                      <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
+                      <node concept="3CnSsL" id="2GZiJUXMkBf" role="3Coj4f">
+                        <ref role="QkamJ" node="5zmbZKrh8_k" resolve="analysis" />
+                        <node concept="1YBJjd" id="2GZiJUXMkBg" role="3CoRuB">
+                          <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1YBJjd" id="2GZiJUXMkBh" role="2OEOjV">
+                      <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                    </node>
+                    <node concept="Xl_RD" id="2GZiJUXMkBi" role="2MkJ7o">
+                      <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2dkUwp" id="2GZiJUXMkBj" role="3clFbw">
+                  <node concept="37vLTw" id="2GZiJUXMkBk" role="3uHU7B">
+                    <ref role="3cqZAo" node="2GZiJUXMkB5" resolve="depth" />
+                  </node>
+                  <node concept="3cmrfG" id="2GZiJUXMkBl" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="TDmWw" id="2GZiJUXMkBm" role="TEbGg">
+              <node concept="3cpWsn" id="2GZiJUXMkBn" role="TDEfY">
+                <property role="TrG5h" value="nfe" />
+                <node concept="3uibUv" id="2GZiJUXMkBo" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="2GZiJUXMkBp" role="TDEfX">
+                <node concept="2MkqsV" id="2GZiJUXMkBq" role="3cqZAp">
+                  <node concept="1YBJjd" id="2GZiJUXMkBr" role="2OEOjV">
+                    <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                  </node>
+                  <node concept="Xl_RD" id="2GZiJUXMkBs" role="2MkJ7o">
+                    <property role="Xl_RC" value="The timeout should be a positive integer number or the keyword 'none'" />
+                  </node>
+                  <node concept="3Cnw8n" id="2GZiJUXMkBt" role="2OEOjU">
+                    <property role="ARO6o" value="true" />
+                    <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
+                    <node concept="3CnSsL" id="2GZiJUXMkBu" role="3Coj4f">
+                      <ref role="QkamJ" node="5zmbZKrh8_k" resolve="analysis" />
+                      <node concept="1YBJjd" id="2GZiJUXMkBv" role="3CoRuB">
+                        <ref role="1YBMHb" node="2GZiJUXMkBw" resolve="analysis" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2GZiJUXMkBw" role="1YuTPh">
+      <property role="TrG5h" value="analysis" />
+      <ref role="1YaFvo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
     </node>
   </node>
 </model>
