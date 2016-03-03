@@ -13,17 +13,7 @@ build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/buil
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
 code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/artifacts/mps-sl-all]]></param>
     </parameters>
-    <build-runners order="RUNNER_79">
-      <runner id="RUNNER_79" name="Package Tutorial" type="simpleRunner">
-        <parameters>
-          <param name="script.content"><![CDATA[cd %teamcity.build.checkoutDir%/mbeddr.core/code/applications
-zip -r com.mbeddr.tutorial.zip tutorial/ -x tutorial/.mps/vcs.xml tutorial/.mps/libraries.xml
-cd %teamcity.build.checkoutDir%/artifacts
-mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutorial.zip %teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial.zip]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
+    <build-runners order="RUNNER_2, RUNNER_79">
       <runner id="RUNNER_2" name="Compile Languages" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />
@@ -34,6 +24,16 @@ mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutoria
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
           <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_79" name="Package Tutorial" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[cd %teamcity.build.checkoutDir%/mbeddr.core/code/applications
+zip -r com.mbeddr.tutorial.zip tutorial/ -x tutorial/.mps/vcs.xml tutorial/.mps/libraries.xml
+cd %teamcity.build.checkoutDir%/artifacts
+mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutorial.zip %teamcity.build.checkoutDir%/artifacts/com.mbeddr.tutorial.zip]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
     </build-runners>
