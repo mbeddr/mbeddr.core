@@ -261,20 +261,15 @@
         <node concept="SfApY" id="tSjOfAaXSO" role="3cqZAp">
           <node concept="3clFbS" id="tSjOfAaXSP" role="SfCbr">
             <node concept="3cpWs6" id="tSjOfAaZl1" role="3cqZAp">
-              <node concept="2OqwBi" id="tSjOfAgHBf" role="3cqZAk">
-                <node concept="2OqwBi" id="tSjOfAadRq" role="2Oq$k0">
-                  <node concept="37vLTw" id="tSjOfAadQ5" role="2Oq$k0">
-                    <ref role="3cqZAo" node="tSjOfAadHA" resolve="fmcc" />
-                  </node>
-                  <node concept="liA8E" id="tSjOfAae4w" role="2OqNvi">
-                    <ref role="37wK5l" to="vy7l:2hSqXWTF6yB" resolve="checkConsistency" />
-                    <node concept="37vLTw" id="tSjOfAawT_" role="37wK5m">
-                      <ref role="3cqZAo" node="tSjOfAaejn" resolve="fm" />
-                    </node>
-                  </node>
+              <node concept="2OqwBi" id="tSjOfAadRq" role="3cqZAk">
+                <node concept="37vLTw" id="tSjOfAadQ5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="tSjOfAadHA" resolve="fmcc" />
                 </node>
-                <node concept="liA8E" id="tSjOfAgVF8" role="2OqNvi">
-                  <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+                <node concept="liA8E" id="tSjOfAae4w" role="2OqNvi">
+                  <ref role="37wK5l" to="vy7l:2hSqXWTF6yB" resolve="checkConsistency" />
+                  <node concept="37vLTw" id="tSjOfAawT_" role="37wK5m">
+                    <ref role="3cqZAo" node="tSjOfAaejn" resolve="fm" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -306,8 +301,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="tSjOfAadGi" role="1B3o_S" />
-      <node concept="3uibUv" id="tSjOfAaZ_e" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+      <node concept="3uibUv" id="6A4JgbUYiEQ" role="3clF45">
+        <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
       </node>
       <node concept="37vLTG" id="tSjOfAaebb" role="3clF46">
         <property role="TrG5h" value="m" />
@@ -428,20 +423,15 @@
         <node concept="SfApY" id="tSjOfAjCIm" role="3cqZAp">
           <node concept="3clFbS" id="tSjOfAjCIn" role="SfCbr">
             <node concept="3cpWs6" id="tSjOfAjCIo" role="3cqZAp">
-              <node concept="2OqwBi" id="tSjOfAjCIp" role="3cqZAk">
-                <node concept="2OqwBi" id="tSjOfAjCIq" role="2Oq$k0">
-                  <node concept="37vLTw" id="tSjOfAjCIr" role="2Oq$k0">
-                    <ref role="3cqZAo" node="tSjOfAjCIh" resolve="cmcc" />
-                  </node>
-                  <node concept="liA8E" id="tSjOfAjCIs" role="2OqNvi">
-                    <ref role="37wK5l" to="vy7l:tSjOfAiztD" resolve="checkConsistency" />
-                    <node concept="37vLTw" id="tSjOfAjCIt" role="37wK5m">
-                      <ref role="3cqZAo" node="tSjOfAjCHZ" resolve="cm" />
-                    </node>
-                  </node>
+              <node concept="2OqwBi" id="tSjOfAjCIq" role="3cqZAk">
+                <node concept="37vLTw" id="tSjOfAjCIr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="tSjOfAjCIh" resolve="cmcc" />
                 </node>
-                <node concept="liA8E" id="tSjOfAjCIu" role="2OqNvi">
-                  <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+                <node concept="liA8E" id="tSjOfAjCIs" role="2OqNvi">
+                  <ref role="37wK5l" to="vy7l:tSjOfAiztD" resolve="checkConsistency" />
+                  <node concept="37vLTw" id="tSjOfAjCIt" role="37wK5m">
+                    <ref role="3cqZAo" node="tSjOfAjCHZ" resolve="cm" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -473,8 +463,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="tSjOfAjCIE" role="1B3o_S" />
-      <node concept="3uibUv" id="tSjOfAjCIF" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+      <node concept="3uibUv" id="6A4JgbUY5kG" role="3clF45">
+        <ref role="3uigEE" to="vy7l:tSjOfAjb8n" resolve="ConfigurationModelAnalysisResult" />
       </node>
       <node concept="37vLTG" id="tSjOfAjCIG" role="3clF46">
         <property role="TrG5h" value="m" />
