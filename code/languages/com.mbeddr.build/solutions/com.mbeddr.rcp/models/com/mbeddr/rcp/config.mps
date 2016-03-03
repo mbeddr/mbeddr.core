@@ -2848,12 +2848,25 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="32YXDrSqvS3" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.buildNumber" />
+      <node concept="aVJcg" id="32YXDrSqvTx" role="aVJcv">
+        <node concept="NbPM2" id="32YXDrSqvTw" role="aVJcq">
+          <node concept="3Mxwew" id="32YXDrSqvTv" role="3MwsjC">
+            <property role="3MwjfP" value="SNAPSHOT" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2kB4xC" id="3IKDaVZnAxg" role="1l3spd">
       <property role="TrG5h" value="mps.build.number" />
       <node concept="aVJcg" id="6hnvgFycl60" role="aVJcv">
         <node concept="NbPM2" id="6hnvgFycl61" role="aVJcq">
           <node concept="3Mxwew" id="5wLtKNeUYBj" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-143.SNAPSHOT" />
+            <property role="3MwjfP" value="MPS-143." />
+          </node>
+          <node concept="3Mxwey" id="32YXDrSqvWF" role="3MwsjC">
+            <ref role="3Mxwex" node="32YXDrSqvS3" resolve="mbeddr.buildNumber" />
           </node>
         </node>
       </node>
