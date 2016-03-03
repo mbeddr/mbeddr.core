@@ -45,7 +45,11 @@ mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutoria
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Build_BuildTutorial" cleanDestination="true">
+      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%mps.artifact-rule%" />
+      </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Build_BuildTutorial" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
