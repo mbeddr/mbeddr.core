@@ -4829,11 +4829,11 @@
           <node concept="2ShNRf" id="40e1npHtL1R" role="3clFbG">
             <node concept="1pGfFk" id="40e1npHtL1S" role="2ShVmc">
               <ref role="37wK5l" node="ZjQ6tpoDHS" resolve="Size" />
-              <node concept="37vLTw" id="40e1npHtL1T" role="37wK5m">
-                <ref role="3cqZAo" node="40e1npHtL1V" resolve="height" />
+              <node concept="37vLTw" id="4dksFc0vov9" role="37wK5m">
+                <ref role="3cqZAo" node="ZjQ6tpoDFL" resolve="myWidth" />
               </node>
-              <node concept="37vLTw" id="40e1npHtL1U" role="37wK5m">
-                <ref role="3cqZAo" node="ZjQ6tpoDGs" resolve="myHeight" />
+              <node concept="37vLTw" id="4dksFc0voxK" role="37wK5m">
+                <ref role="3cqZAo" node="40e1npHtL1V" resolve="height" />
               </node>
             </node>
           </node>
@@ -6060,6 +6060,78 @@
                   <ref role="37wK5l" node="1p6ZfyCPv4s" resolve="getHeight" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3ISeRDV76yb" role="3cqZAp">
+          <node concept="3clFbS" id="3ISeRDV76yd" role="3clFbx">
+            <node concept="3clFbF" id="3ISeRDV75Fw" role="3cqZAp">
+              <node concept="2OqwBi" id="3ISeRDV760W" role="3clFbG">
+                <node concept="1eOMI4" id="3ISeRDV76ir" role="2Oq$k0">
+                  <node concept="10QFUN" id="3ISeRDV76is" role="1eOMHV">
+                    <node concept="37vLTw" id="3ISeRDV76iq" role="10QFUP">
+                      <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                    </node>
+                    <node concept="3uibUv" id="3ISeRDV76rP" role="10QFUM">
+                      <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3ISeRDV787m" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.setAscent(int):void" resolve="setAscent" />
+                  <node concept="2OqwBi" id="3ISeRDV78WE" role="37wK5m">
+                    <node concept="2OqwBi" id="3ISeRDV78EJ" role="2Oq$k0">
+                      <node concept="1rXfSq" id="3ISeRDV78w3" role="2Oq$k0">
+                        <ref role="37wK5l" node="1p6ZfyCPv8k" resolve="getBorderBox" />
+                      </node>
+                      <node concept="liA8E" id="3ISeRDV78JP" role="2OqNvi">
+                        <ref role="37wK5l" node="1p6ZfyCPv6M" resolve="getInnerBox" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3ISeRDV79c1" role="2OqNvi">
+                      <ref role="37wK5l" node="1p6ZfyCPv4S" resolve="getAscent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3ISeRDV79dm" role="3cqZAp">
+              <node concept="2OqwBi" id="3ISeRDV79dn" role="3clFbG">
+                <node concept="1eOMI4" id="3ISeRDV79do" role="2Oq$k0">
+                  <node concept="10QFUN" id="3ISeRDV79dp" role="1eOMHV">
+                    <node concept="37vLTw" id="3ISeRDV79dq" role="10QFUP">
+                      <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                    </node>
+                    <node concept="3uibUv" id="3ISeRDV79dr" role="10QFUM">
+                      <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3ISeRDV79ds" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.setDescent(int):void" resolve="setDescent" />
+                  <node concept="2OqwBi" id="3ISeRDV79dt" role="37wK5m">
+                    <node concept="2OqwBi" id="3ISeRDV79du" role="2Oq$k0">
+                      <node concept="1rXfSq" id="3ISeRDV79dv" role="2Oq$k0">
+                        <ref role="37wK5l" node="1p6ZfyCPv8k" resolve="getBorderBox" />
+                      </node>
+                      <node concept="liA8E" id="3ISeRDV79dw" role="2OqNvi">
+                        <ref role="37wK5l" node="1p6ZfyCPv6M" resolve="getInnerBox" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3ISeRDV79dx" role="2OqNvi">
+                      <ref role="37wK5l" node="1p6ZfyCPv4W" resolve="getDescent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="3ISeRDV76We" role="3clFbw">
+            <node concept="3uibUv" id="3ISeRDV77a8" role="2ZW6by">
+              <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+            </node>
+            <node concept="37vLTw" id="3ISeRDV76HC" role="2ZW6bz">
+              <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
             </node>
           </node>
         </node>

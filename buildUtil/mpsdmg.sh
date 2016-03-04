@@ -16,8 +16,8 @@ VOLNAME=`echo $BUILD_NAME | sed 's/\.app$//'`
 echo "Vol Name: $VOLNAME"
 BG_PIC="$2.png"
 
-echo "copying $3 to ${EXPLODED}..."
-cp $3 ./${EXPLODED}
+echo "copying cbmc-mac to ${EXPLODED}..."
+cp -R ./cbmc-mac ./${EXPLODED}
 
 chmod a+x ./${EXPLODED}/"$BUILD_NAME"/Contents/MacOS/*
 chmod a+x ./${EXPLODED}/"$BUILD_NAME"/Contents/bin/*.py

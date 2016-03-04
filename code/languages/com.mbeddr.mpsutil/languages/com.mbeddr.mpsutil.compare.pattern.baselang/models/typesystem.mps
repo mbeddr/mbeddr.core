@@ -757,5 +757,35 @@
       <ref role="1YaFvo" to="ycll:1xH_Y2TxGO7" resolve="MatchOperation" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5JUf$kD0VI9">
+    <property role="TrG5h" value="typeof_ElementAccessorOperation" />
+    <node concept="3clFbS" id="5JUf$kD0VIa" role="18ibNy">
+      <node concept="1Z5TYs" id="5JUf$kD0VMr" role="3cqZAp">
+        <node concept="mw_s8" id="5JUf$kD0VMP" role="1ZfhKB">
+          <node concept="1Z2H0r" id="5JUf$kD0VNk" role="mwGJk">
+            <node concept="2OqwBi" id="5JUf$kD0VPq" role="1Z2MuG">
+              <node concept="1YBJjd" id="5JUf$kD0VNA" role="2Oq$k0">
+                <ref role="1YBMHb" node="5JUf$kD0VIc" resolve="operation" />
+              </node>
+              <node concept="3TrEf2" id="5JUf$kD0VTA" role="2OqNvi">
+                <ref role="3Tt5mk" to="ycll:5JUf$kCWEY1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5JUf$kD0VMu" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5JUf$kD0VIj" role="mwGJk">
+            <node concept="1YBJjd" id="5JUf$kD0VIM" role="1Z2MuG">
+              <ref role="1YBMHb" node="5JUf$kD0VIc" resolve="operation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5JUf$kD0VIc" role="1YuTPh">
+      <property role="TrG5h" value="operation" />
+      <ref role="1YaFvo" to="ycll:5JUf$kCWEwh" resolve="ElementAccessorOperation" />
+    </node>
+  </node>
 </model>
 

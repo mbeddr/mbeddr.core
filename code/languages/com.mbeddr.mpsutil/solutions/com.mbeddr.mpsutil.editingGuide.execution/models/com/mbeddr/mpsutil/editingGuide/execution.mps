@@ -113,7 +113,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1475,34 +1475,44 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3$YAQZ4CAVY" role="3cqZAp">
-          <node concept="2OqwBi" id="3$YAQZ4CDtA" role="3clFbG">
-            <node concept="2OqwBi" id="3$YAQZ4CBd7" role="2Oq$k0">
-              <node concept="37vLTw" id="3$YAQZ4CAVW" role="2Oq$k0">
-                <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
-              </node>
-              <node concept="liA8E" id="3$YAQZ4CDs1" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+        <node concept="3clFbJ" id="6m4uG_HDZ$K" role="3cqZAp">
+          <node concept="3clFbS" id="6m4uG_HDZ$M" role="3clFbx">
+            <node concept="3clFbF" id="3$YAQZ4CAVY" role="3cqZAp">
+              <node concept="2OqwBi" id="3$YAQZ4CDtA" role="3clFbG">
+                <node concept="2OqwBi" id="3$YAQZ4CBd7" role="2Oq$k0">
+                  <node concept="37vLTw" id="3$YAQZ4CAVW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
+                  </node>
+                  <node concept="liA8E" id="3$YAQZ4CDs1" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3$YAQZ4CDxz" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="removeSelectionListener" />
+                  <node concept="37vLTw" id="3$YAQZ4CDEr" role="37wK5m">
+                    <ref role="3cqZAo" node="3$YAQZ4Cxvc" resolve="mySelectionListener" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="liA8E" id="3$YAQZ4CDxz" role="2OqNvi">
-              <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="removeSelectionListener" />
-              <node concept="37vLTw" id="3$YAQZ4CDEr" role="37wK5m">
-                <ref role="3cqZAo" node="3$YAQZ4Cxvc" resolve="mySelectionListener" />
+            <node concept="3clFbF" id="3$YAQZ4CE30" role="3cqZAp">
+              <node concept="2OqwBi" id="3$YAQZ4CElU" role="3clFbG">
+                <node concept="37vLTw" id="3$YAQZ4CE2Y" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
+                </node>
+                <node concept="liA8E" id="3$YAQZ4CFtR" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
+                  <node concept="37vLTw" id="3$YAQZ4CFAK" role="37wK5m">
+                    <ref role="3cqZAo" node="3$YAQZ4C_3p" resolve="myEditorDisposeListener" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="3$YAQZ4CE30" role="3cqZAp">
-          <node concept="2OqwBi" id="3$YAQZ4CElU" role="3clFbG">
-            <node concept="37vLTw" id="3$YAQZ4CE2Y" role="2Oq$k0">
+          <node concept="3y3z36" id="6m4uG_HE05A" role="3clFbw">
+            <node concept="10Nm6u" id="6m4uG_HE0cl" role="3uHU7w" />
+            <node concept="37vLTw" id="6m4uG_HDZU9" role="3uHU7B">
               <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
-            </node>
-            <node concept="liA8E" id="3$YAQZ4CFtR" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
-              <node concept="37vLTw" id="3$YAQZ4CFAK" role="37wK5m">
-                <ref role="3cqZAo" node="3$YAQZ4C_3p" resolve="myEditorDisposeListener" />
-              </node>
             </node>
           </node>
         </node>
