@@ -1231,13 +1231,8 @@
             <node concept="3clFbH" id="1xH3giefLbm" role="3cqZAp" />
             <node concept="3clFbF" id="2U8JvBXqOYe" role="3cqZAp">
               <node concept="2OqwBi" id="2U8JvBXqP6v" role="3clFbG">
-                <node concept="2OqwBi" id="2U8JvBXruh_" role="2Oq$k0">
-                  <node concept="37vLTw" id="2U8JvBXrufU" role="2Oq$k0">
-                    <ref role="3cqZAo" node="hzArCkB" resolve="_context" />
-                  </node>
-                  <node concept="liA8E" id="2U8JvBXrukT" role="2OqNvi">
-                    <ref role="37wK5l" to="8ov6:~DataFlowBuilderContext.getBuilder():jetbrains.mps.lang.dataFlow.MPSProgramBuilder" resolve="getBuilder" />
-                  </node>
+                <node concept="37vLTw" id="1HZs_ofAE5Q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1xH3giefKvS" resolve="builder" />
                 </node>
                 <node concept="liA8E" id="2U8JvBXqPc2" role="2OqNvi">
                   <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.addInstruction(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction,jetbrains.mps.lang.dataFlow.framework.StructuralProgramBuilder$Position):void" resolve="addInstruction" />
@@ -1476,6 +1471,32 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="1HZs_ofCpN9" role="3cqZAp">
+                  <node concept="2OqwBi" id="1HZs_ofCpPI" role="3clFbG">
+                    <node concept="37vLTw" id="1HZs_ofCpN7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5caPF5jNgJt" resolve="parent" />
+                    </node>
+                    <node concept="liA8E" id="1HZs_ofCpST" role="2OqNvi">
+                      <ref role="37wK5l" to="f696:1HZs_ofC3cw" resolve="addTraceInformation" />
+                      <node concept="2OqwBi" id="1HZs_ofCpU0" role="37wK5m">
+                        <node concept="37vLTw" id="1HZs_ofCpTc" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2U8JvBXrt3K" resolve="_context" />
+                        </node>
+                        <node concept="liA8E" id="1HZs_ofCpWi" role="2OqNvi">
+                          <ref role="37wK5l" to="8ov6:~DataFlowBuilderContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1HZs_ofCpZm" role="37wK5m">
+                        <node concept="37vLTw" id="1HZs_ofCpXE" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6ddb09aaJPW" resolve="entryPointInstruction" />
+                        </node>
+                        <node concept="liA8E" id="1HZs_ofCq3s" role="2OqNvi">
+                          <ref role="37wK5l" to="f696:nj3EPh5Nck" resolve="getOwnProgram" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3y3z36" id="2U8JvBXrt4v" role="3clFbw">
                 <node concept="10Nm6u" id="2U8JvBXrt4w" role="3uHU7w" />
@@ -1555,6 +1576,27 @@
                         <ref role="37wK5l" to="f696:3K8JqUjVxyz" resolve="setTriggeringInstruction" />
                         <node concept="37vLTw" id="3K8JqUjVDq9" role="37wK5m">
                           <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1HZs_ofCq74" role="3cqZAp">
+                    <node concept="2OqwBi" id="1HZs_ofCq9o" role="3clFbG">
+                      <node concept="37vLTw" id="1HZs_ofCq72" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5caPF5jNgJt" resolve="parent" />
+                      </node>
+                      <node concept="liA8E" id="1HZs_ofCqdm" role="2OqNvi">
+                        <ref role="37wK5l" to="f696:1HZs_ofC3cw" resolve="addTraceInformation" />
+                        <node concept="2OqwBi" id="1HZs_ofCqeS" role="37wK5m">
+                          <node concept="37vLTw" id="1HZs_ofCqe3" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2U8JvBXrt3K" resolve="_context" />
+                          </node>
+                          <node concept="liA8E" id="1HZs_ofCqha" role="2OqNvi">
+                            <ref role="37wK5l" to="8ov6:~DataFlowBuilderContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="1HZs_ofCqiw" role="37wK5m">
+                          <ref role="3cqZAo" node="5caPF5jNdCz" resolve="current" />
                         </node>
                       </node>
                     </node>

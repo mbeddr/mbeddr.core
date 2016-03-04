@@ -3097,6 +3097,20 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="1HZs_ofASaS" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="traceMap" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tmbuc" id="1HZs_ofAMXx" role="1B3o_S" />
+      <node concept="3uibUv" id="1HZs_ofARkx" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+        <node concept="3Tqbb2" id="1HZs_ofCiIT" role="11_B2D" />
+        <node concept="3uibUv" id="1HZs_ofARVt" role="11_B2D">
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        </node>
+      </node>
+    </node>
     <node concept="312cEg" id="5caPF5jNivV" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -4430,7 +4444,7 @@
         <node concept="1DcWWT" id="6ddb09afR1A" role="3cqZAp">
           <node concept="2OqwBi" id="6ddb09afR1B" role="1DdaDG">
             <node concept="1rXfSq" id="6ddb09afR1C" role="2Oq$k0">
-              <ref role="37wK5l" node="6ddb09abCrk" resolve="getPathAwareStartMap" />
+              <ref role="37wK5l" node="1HZs_ofBaba" resolve="getPathAwareStartMap" />
             </node>
             <node concept="liA8E" id="6ddb09afR1D" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.values():java.util.Collection" resolve="values" />
@@ -4575,7 +4589,7 @@
         <node concept="3cpWs6" id="7Xx$srW0bgX" role="3cqZAp">
           <node concept="2OqwBi" id="7Xx$srW0duo" role="3cqZAk">
             <node concept="1rXfSq" id="7Xx$srW0bh$" role="2Oq$k0">
-              <ref role="37wK5l" node="6ddb09abCrk" resolve="getPathAwareStartMap" />
+              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
             </node>
             <node concept="liA8E" id="7Xx$srW0ggV" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
@@ -4696,7 +4710,7 @@
             </node>
             <node concept="2OqwBi" id="1HZs_of_UKz" role="33vP2m">
               <node concept="1rXfSq" id="1HZs_of_UK$" role="2Oq$k0">
-                <ref role="37wK5l" node="6ddb09abCrk" resolve="getPathAwareStartMap" />
+                <ref role="37wK5l" node="1HZs_ofBaba" resolve="getPathAwareStartMap" />
               </node>
               <node concept="liA8E" id="1HZs_of_UK_" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -4871,7 +4885,7 @@
         <node concept="3cpWs6" id="6ddb09aecrT" role="3cqZAp">
           <node concept="2OqwBi" id="6ddb09aecyL" role="3cqZAk">
             <node concept="1rXfSq" id="6ddb09aect2" role="2Oq$k0">
-              <ref role="37wK5l" node="6ddb09abCrk" resolve="getPathAwareStartMap" />
+              <ref role="37wK5l" node="1HZs_ofBaba" resolve="getPathAwareStartMap" />
             </node>
             <node concept="liA8E" id="6ddb09aecKN" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -5085,7 +5099,7 @@
             </node>
             <node concept="2OqwBi" id="6ddb09aeDqj" role="33vP2m">
               <node concept="1rXfSq" id="6ddb09aeDqk" role="2Oq$k0">
-                <ref role="37wK5l" node="6ddb09abCrk" resolve="getPathAwareStartMap" />
+                <ref role="37wK5l" node="1HZs_ofBaba" resolve="getPathAwareStartMap" />
               </node>
               <node concept="liA8E" id="6ddb09aeDql" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -5119,7 +5133,7 @@
             <node concept="3clFbF" id="6ddb09aeFBw" role="3cqZAp">
               <node concept="2OqwBi" id="6ddb09aeFG$" role="3clFbG">
                 <node concept="1rXfSq" id="6ddb09aeFBu" role="2Oq$k0">
-                  <ref role="37wK5l" node="6ddb09abCrk" resolve="getPathAwareStartMap" />
+                  <ref role="37wK5l" node="1HZs_ofBaba" resolve="getPathAwareStartMap" />
                 </node>
                 <node concept="liA8E" id="6ddb09aeGeU" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
@@ -5857,10 +5871,10 @@
         <ref role="3uigEE" node="5caPF5jN5j6" resolve="NestedProgramInstruction" />
       </node>
     </node>
-    <node concept="2tJIrI" id="6ddb09abx1J" role="jymVt" />
+    <node concept="2tJIrI" id="1HZs_ofB5n0" role="jymVt" />
     <node concept="3clFb_" id="6ddb09abCrk" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getPathAwareStartMap" />
+      <property role="TrG5h" value="getTraceMap" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -5883,17 +5897,9 @@
                 <node concept="2ShNRf" id="6ddb09abGYC" role="37vLTx">
                   <node concept="1pGfFk" id="6ddb09abQFL" role="2ShVmc">
                     <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
-                    <node concept="3uibUv" id="6ddb09abRxs" role="1pMfVU">
-                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                    </node>
-                    <node concept="3uibUv" id="6ddb09abQZe" role="1pMfVU">
-                      <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-                      <node concept="3uibUv" id="6ddb09abRcl" role="11_B2D">
-                        <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
-                      </node>
-                      <node concept="3uibUv" id="6ddb09abRo$" role="11_B2D">
-                        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
-                      </node>
+                    <node concept="3Tqbb2" id="1HZs_ofCm59" role="1pMfVU" />
+                    <node concept="3uibUv" id="1HZs_ofBGmB" role="1pMfVU">
+                      <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
                     </node>
                   </node>
                 </node>
@@ -5901,8 +5907,8 @@
                   <node concept="37vLTw" id="6ddb09abGM7" role="2Oq$k0">
                     <ref role="3cqZAo" node="6ddb09abFZ1" resolve="root" />
                   </node>
-                  <node concept="2OwXpG" id="6ddb09abGPX" role="2OqNvi">
-                    <ref role="2Oxat5" node="3SShbyxp7Iu" resolve="pathAwareStartMap" />
+                  <node concept="2OwXpG" id="1HZs_ofBFBY" role="2OqNvi">
+                    <ref role="2Oxat5" node="1HZs_ofASaS" resolve="traceMap" />
                   </node>
                 </node>
               </node>
@@ -5914,8 +5920,8 @@
               <node concept="37vLTw" id="6ddb09abGoj" role="2Oq$k0">
                 <ref role="3cqZAo" node="6ddb09abFZ1" resolve="root" />
               </node>
-              <node concept="2OwXpG" id="6ddb09abGr7" role="2OqNvi">
-                <ref role="2Oxat5" node="3SShbyxp7Iu" resolve="pathAwareStartMap" />
+              <node concept="2OwXpG" id="1HZs_ofBFqu" role="2OqNvi">
+                <ref role="2Oxat5" node="1HZs_ofASaS" resolve="traceMap" />
               </node>
             </node>
           </node>
@@ -5925,8 +5931,8 @@
             <node concept="37vLTw" id="6ddb09abRW4" role="2Oq$k0">
               <ref role="3cqZAo" node="6ddb09abFZ1" resolve="root" />
             </node>
-            <node concept="2OwXpG" id="6ddb09abUHl" role="2OqNvi">
-              <ref role="2Oxat5" node="3SShbyxp7Iu" resolve="pathAwareStartMap" />
+            <node concept="2OwXpG" id="1HZs_ofBGHk" role="2OqNvi">
+              <ref role="2Oxat5" node="1HZs_ofASaS" resolve="traceMap" />
             </node>
           </node>
         </node>
@@ -5934,15 +5940,98 @@
       <node concept="3Tmbuc" id="6ddb09ab$GT" role="1B3o_S" />
       <node concept="3uibUv" id="6ddb09abXmt" role="3clF45">
         <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-        <node concept="3uibUv" id="6ddb09abXmu" role="11_B2D">
+        <node concept="3Tqbb2" id="1HZs_ofCmeO" role="11_B2D" />
+        <node concept="3uibUv" id="1HZs_ofBCdH" role="11_B2D">
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1HZs_ofBeSp" role="jymVt" />
+    <node concept="3clFb_" id="1HZs_ofBaba" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getPathAwareStartMap" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1HZs_ofBabb" role="3clF47">
+        <node concept="3cpWs8" id="1HZs_ofBabc" role="3cqZAp">
+          <node concept="3cpWsn" id="1HZs_ofBabd" role="3cpWs9">
+            <property role="TrG5h" value="root" />
+            <node concept="3uibUv" id="1HZs_ofBabe" role="1tU5fm">
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+            </node>
+            <node concept="1rXfSq" id="1HZs_ofBabf" role="33vP2m">
+              <ref role="37wK5l" node="1xH3gief1Dt" resolve="getRoot" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1HZs_ofBabg" role="3cqZAp">
+          <node concept="3clFbS" id="1HZs_ofBabh" role="3clFbx">
+            <node concept="3clFbF" id="1HZs_ofBabi" role="3cqZAp">
+              <node concept="37vLTI" id="1HZs_ofBabj" role="3clFbG">
+                <node concept="2ShNRf" id="1HZs_ofBabk" role="37vLTx">
+                  <node concept="1pGfFk" id="1HZs_ofBabl" role="2ShVmc">
+                    <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
+                    <node concept="3uibUv" id="1HZs_ofBabm" role="1pMfVU">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                    <node concept="3uibUv" id="1HZs_ofBabn" role="1pMfVU">
+                      <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                      <node concept="3uibUv" id="1HZs_ofBabo" role="11_B2D">
+                        <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+                      </node>
+                      <node concept="3uibUv" id="1HZs_ofBabp" role="11_B2D">
+                        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1HZs_ofBabq" role="37vLTJ">
+                  <node concept="37vLTw" id="1HZs_ofBabr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1HZs_ofBabd" resolve="root" />
+                  </node>
+                  <node concept="2OwXpG" id="1HZs_ofBabs" role="2OqNvi">
+                    <ref role="2Oxat5" node="3SShbyxp7Iu" resolve="pathAwareStartMap" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1HZs_ofBabt" role="3clFbw">
+            <node concept="10Nm6u" id="1HZs_ofBabu" role="3uHU7w" />
+            <node concept="2OqwBi" id="1HZs_ofBabv" role="3uHU7B">
+              <node concept="37vLTw" id="1HZs_ofBabw" role="2Oq$k0">
+                <ref role="3cqZAo" node="1HZs_ofBabd" resolve="root" />
+              </node>
+              <node concept="2OwXpG" id="1HZs_ofBabx" role="2OqNvi">
+                <ref role="2Oxat5" node="3SShbyxp7Iu" resolve="pathAwareStartMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1HZs_ofBaby" role="3cqZAp">
+          <node concept="2OqwBi" id="1HZs_ofBabz" role="3cqZAk">
+            <node concept="37vLTw" id="1HZs_ofBab$" role="2Oq$k0">
+              <ref role="3cqZAo" node="1HZs_ofBabd" resolve="root" />
+            </node>
+            <node concept="2OwXpG" id="1HZs_ofBab_" role="2OqNvi">
+              <ref role="2Oxat5" node="3SShbyxp7Iu" resolve="pathAwareStartMap" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="1HZs_ofBabA" role="1B3o_S" />
+      <node concept="3uibUv" id="1HZs_ofBabB" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+        <node concept="3uibUv" id="1HZs_ofBabC" role="11_B2D">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
-        <node concept="3uibUv" id="6ddb09abXmv" role="11_B2D">
+        <node concept="3uibUv" id="1HZs_ofBabD" role="11_B2D">
           <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-          <node concept="3uibUv" id="6ddb09abXmw" role="11_B2D">
+          <node concept="3uibUv" id="1HZs_ofBabE" role="11_B2D">
             <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
           </node>
-          <node concept="3uibUv" id="6ddb09abXmx" role="11_B2D">
+          <node concept="3uibUv" id="1HZs_ofBabF" role="11_B2D">
             <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
           </node>
         </node>
@@ -6430,6 +6519,79 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1xH3gief5P9" role="jymVt" />
+    <node concept="3clFb_" id="1HZs_ofC3cw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="addTraceInformation" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1HZs_ofC3cz" role="3clF47">
+        <node concept="3clFbJ" id="1HZs_ofCfwn" role="3cqZAp">
+          <node concept="3clFbS" id="1HZs_ofCfwp" role="3clFbx">
+            <node concept="YS8fn" id="1HZs_ofCgbu" role="3cqZAp">
+              <node concept="2ShNRf" id="1HZs_ofCgbv" role="YScLw">
+                <node concept="1pGfFk" id="1HZs_ofCgbw" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                  <node concept="3cpWs3" id="1HZs_ofCgjq" role="37wK5m">
+                    <node concept="Xl_RD" id="1HZs_ofCgjE" role="3uHU7w">
+                      <property role="Xl_RC" value="!" />
+                    </node>
+                    <node concept="3cpWs3" id="1HZs_ofCggq" role="3uHU7B">
+                      <node concept="Xl_RD" id="1HZs_ofCgbx" role="3uHU7B">
+                        <property role="Xl_RC" value="Trace is already registered for " />
+                      </node>
+                      <node concept="37vLTw" id="1HZs_ofCghO" role="3uHU7w">
+                        <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="node" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1HZs_ofCfCI" role="3clFbw">
+            <node concept="1rXfSq" id="1HZs_ofCfzj" role="2Oq$k0">
+              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+            </node>
+            <node concept="liA8E" id="1HZs_ofCg5k" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+              <node concept="37vLTw" id="1HZs_ofCg9b" role="37wK5m">
+                <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1HZs_ofCeKX" role="3cqZAp">
+          <node concept="2OqwBi" id="1HZs_ofCeXf" role="3clFbG">
+            <node concept="1rXfSq" id="1HZs_ofCeKV" role="2Oq$k0">
+              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+            </node>
+            <node concept="liA8E" id="1HZs_ofCffV" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="37vLTw" id="1HZs_ofCfjG" role="37wK5m">
+                <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="1HZs_ofCfox" role="37wK5m">
+                <ref role="3cqZAo" node="1HZs_ofCb22" resolve="program" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1HZs_ofBYSw" role="1B3o_S" />
+      <node concept="3cqZAl" id="1HZs_ofC3cu" role="3clF45" />
+      <node concept="37vLTG" id="1HZs_ofC7R4" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="1HZs_ofCpB_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1HZs_ofCb22" role="3clF46">
+        <property role="TrG5h" value="program" />
+        <node concept="3uibUv" id="1HZs_ofCeoq" role="1tU5fm">
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1HZs_ofBUg_" role="jymVt" />
     <node concept="3clFb_" id="1xH3gief6Le" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addFunctionCall" />
@@ -9668,6 +9830,51 @@
       </node>
     </node>
     <node concept="2tJIrI" id="nj3EPh69Kj" role="jymVt" />
+    <node concept="3clFb_" id="1HZs_ofCCLe" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getValueSource" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1HZs_ofCCLh" role="3clF47">
+        <node concept="3cpWs8" id="1HZs_ofCEyS" role="3cqZAp">
+          <node concept="3cpWsn" id="1HZs_ofCEyT" role="3cpWs9">
+            <property role="TrG5h" value="program" />
+            <node concept="3uibUv" id="1HZs_ofCEyN" role="1tU5fm">
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+            </node>
+            <node concept="2OqwBi" id="1HZs_ofCEyU" role="33vP2m">
+              <node concept="2OqwBi" id="1HZs_ofCEyV" role="2Oq$k0">
+                <node concept="1rXfSq" id="1HZs_ofCEyW" role="2Oq$k0">
+                  <ref role="37wK5l" node="nj3EPh69LL" resolve="getRootProgram" />
+                </node>
+                <node concept="liA8E" id="1HZs_ofCEyX" role="2OqNvi">
+                  <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1HZs_ofCEyY" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <node concept="2OqwBi" id="1HZs_ofCEyZ" role="37wK5m">
+                  <node concept="Xjq3P" id="1HZs_ofCEz0" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="1HZs_ofCEz1" role="2OqNvi">
+                    <ref role="2Oxat5" to="dau9:~WriteInstruction.myValue" resolve="myValue" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1HZs_ofCEQT" role="3cqZAp">
+          <node concept="37vLTw" id="1HZs_ofCEUM" role="3cqZAk">
+            <ref role="3cqZAo" node="1HZs_ofCEyT" resolve="program" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1HZs_ofCCiW" role="1B3o_S" />
+      <node concept="3uibUv" id="1HZs_ofCCHG" role="3clF45">
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="5xyoMgvtsHI" role="1B3o_S" />
     <node concept="3uibUv" id="5xyoMgvtsKp" role="1zkMxy">
       <ref role="3uigEE" to="dau9:~WriteInstruction" resolve="WriteInstruction" />

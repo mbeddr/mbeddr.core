@@ -1340,11 +1340,7 @@
               <node concept="3ZVu4v" id="4zFXTqpFjS9" role="3XIe9u">
                 <ref role="3ZVs_2" node="7PgKJZvmaQZ" resolve="a" />
                 <node concept="7CXmI" id="4zFXTqpFkVM" role="lGtFl">
-                  <node concept="1TM$A" id="3n5vksROE0z" role="7EUXB">
-                    <node concept="2PYRI3" id="3n5vksROE0$" role="3lydEf">
-                      <ref role="39XzEq" to="p3tm:7d9zFs_$Rwp" />
-                    </node>
-                  </node>
+                  <node concept="1TM$A" id="3n5vksROE0z" role="7EUXB" />
                 </node>
               </node>
             </node>
