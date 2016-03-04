@@ -34,6 +34,11 @@
         <child id="5007291172630490329" name="modelFilePicker" index="3EUTgj" />
       </concept>
     </language>
+    <language id="c87e78ae-02e7-4a44-931d-475ba0c82619" name="com.mbeddr.mpsutil.emf.importing.test.lang">
+      <concept id="5620483956762349477" name="com.mbeddr.mpsutil.emf.importing.test.lang.structure.League" flags="ng" index="1pvv4">
+        <property id="5620483956762349480" name="name" index="1pvv9" />
+      </concept>
+    </language>
   </registry>
   <node concept="3EUTgo" id="4lXucEJ_XaO">
     <node concept="3NXOOs" id="4lXucEJ_XaP" role="3EUTgj">
@@ -52,6 +57,9 @@
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="../../languages/com.mbeddr.mpsutil.emf.importing.test.lang/sample/bowling.ecore" />
     </node>
+  </node>
+  <node concept="1pvv4" id="29FqClhb2kl">
+    <property role="1pvv9" value="fghfhg" />
   </node>
 </model>
 

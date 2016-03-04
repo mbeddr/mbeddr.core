@@ -48,22 +48,22 @@
       <property role="3N1Lgt" value="sample/bowling.ecore" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4RZY65cAwY$">
+  <node concept="1TIwiD" id="29FqClhb0Vm">
     <property role="TrG5h" value="Player" />
-    <property role="1pbfSe" value="1701181435" />
-    <node concept="1TJgyi" id="4RZY65cAwYA" role="1TKVEl">
+    <property role="1pbfSe" value="1939306843" />
+    <node concept="1TJgyi" id="29FqClhb0Vo" role="1TKVEl">
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="4RZY65cAwYB" role="1TKVEl">
+    <node concept="1TJgyi" id="29FqClhb0Vp" role="1TKVEl">
       <property role="TrG5h" value="height" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4RZY65cAwY_">
+  <node concept="1TIwiD" id="29FqClhb0Vn">
     <property role="TrG5h" value="League" />
-    <property role="1pbfSe" value="1701181434" />
-    <node concept="1TJgyi" id="4RZY65cAwYC" role="1TKVEl">
+    <property role="1pbfSe" value="1939306844" />
+    <node concept="1TJgyi" id="29FqClhb0Vq" role="1TKVEl">
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
