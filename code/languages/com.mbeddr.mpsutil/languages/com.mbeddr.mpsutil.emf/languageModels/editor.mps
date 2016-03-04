@@ -48,6 +48,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -203,6 +204,62 @@
         </node>
         <node concept="3mYdg7" id="1ECTgSR9gDe" role="3F10Kt">
           <property role="1413C4" value="body-paren" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4hKCzQxfRnF">
+    <property role="3GE5qa" value="importing" />
+    <ref role="1XX52x" to="mwn6:3b7nTxBYUrf" resolve="EMFImportConfig" />
+    <node concept="3EZMnI" id="4hKCzQxfRnM" role="2wV5jI">
+      <node concept="2iRkQZ" id="4hKCzQxfRnN" role="2iSdaV" />
+      <node concept="3F0ifn" id="4hKCzQxfRnH" role="3EZMnx">
+        <property role="3F0ifm" value="EMF Import Configuration" />
+      </node>
+      <node concept="3EZMnI" id="4hKCzQxfRo7" role="3EZMnx">
+        <node concept="2iRfu4" id="4hKCzQxfRo8" role="2iSdaV" />
+        <node concept="3F0ifn" id="4hKCzQxfRo0" role="3EZMnx">
+          <property role="3F0ifm" value="ecore file:" />
+        </node>
+        <node concept="3F1sOY" id="4hKCzQxfRov" role="3EZMnx">
+          <ref role="1NtTu8" to="mwn6:4hKCzQxeDXM" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4lXucEJ_INy">
+    <property role="3GE5qa" value="importing" />
+    <ref role="1XX52x" to="mwn6:4lXucEJ_INi" resolve="ModelImportConfig" />
+    <node concept="3EZMnI" id="4lXucEJ_IO8" role="2wV5jI">
+      <node concept="2iRkQZ" id="4lXucEJ_IO9" role="2iSdaV" />
+      <node concept="3F0ifn" id="4lXucEJ_IN$" role="3EZMnx">
+        <property role="3F0ifm" value="Model Import Configuration" />
+      </node>
+      <node concept="3EZMnI" id="4lXucEJ_IOt" role="3EZMnx">
+        <node concept="2iRfu4" id="4lXucEJ_IOu" role="2iSdaV" />
+        <node concept="3F0ifn" id="4lXucEJ_IOm" role="3EZMnx">
+          <property role="3F0ifm" value="Model File:" />
+        </node>
+        <node concept="3F1sOY" id="4lXucEJ_IOP" role="3EZMnx">
+          <ref role="1NtTu8" to="mwn6:4lXucEJ_INp" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="4RZY65cAqCW" role="3EZMnx">
+        <node concept="2iRfu4" id="4RZY65cAqCX" role="2iSdaV" />
+        <node concept="3F0ifn" id="4RZY65cAqAU" role="3EZMnx">
+          <property role="3F0ifm" value="Package ecore File:" />
+        </node>
+        <node concept="3F1sOY" id="4RZY65cAqDG" role="3EZMnx">
+          <ref role="1NtTu8" to="mwn6:4hKCzQxeDXM" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="4lXucEJAAAU" role="3EZMnx">
+        <node concept="2iRfu4" id="4lXucEJAAAV" role="2iSdaV" />
+        <node concept="3F0ifn" id="4lXucEJAAAB" role="3EZMnx">
+          <property role="3F0ifm" value="MPS Language Used:" />
+        </node>
+        <node concept="3F1sOY" id="4lXucEJABcx" role="3EZMnx">
+          <ref role="1NtTu8" to="mwn6:4lXucEJAAC5" />
         </node>
       </node>
     </node>

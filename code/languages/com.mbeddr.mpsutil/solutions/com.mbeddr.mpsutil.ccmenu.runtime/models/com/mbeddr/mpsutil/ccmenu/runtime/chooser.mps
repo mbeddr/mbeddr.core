@@ -44,6 +44,7 @@
     <import index="exxq" ref="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="65ig" ref="r:9f3f2f34-2a33-43b6-85a0-4c0a87900ae0(com.mbeddr.mpsutil.ccmenu.runtime.api)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -7214,6 +7215,32 @@
       <node concept="3uibUv" id="2Z2H3pkZixI" role="1zkMxy">
         <ref role="3uigEE" to="dxuu:~JWindow" resolve="JWindow" />
       </node>
+      <node concept="312cEg" id="4dksFc0CJWq" role="jymVt">
+        <property role="TrG5h" value="myDisposableRoot" />
+        <node concept="3Tm6S6" id="4dksFc0CJWg" role="1B3o_S" />
+        <node concept="3uibUv" id="4dksFc0CJWh" role="1tU5fm">
+          <ref role="3uigEE" to="v23q:~Disposable" resolve="Disposable" />
+        </node>
+        <node concept="2ShNRf" id="4dksFc0CJWi" role="33vP2m">
+          <node concept="YeOm9" id="4dksFc0CJWj" role="2ShVmc">
+            <node concept="1Y3b0j" id="4dksFc0CJWk" role="YeSDq">
+              <property role="2bfB8j" value="true" />
+              <ref role="1Y3XeK" to="v23q:~Disposable" resolve="Disposable" />
+              <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+              <node concept="3Tm1VV" id="4dksFc0CJWl" role="1B3o_S" />
+              <node concept="3clFb_" id="4dksFc0CJWm" role="jymVt">
+                <property role="1EzhhJ" value="false" />
+                <property role="TrG5h" value="dispose" />
+                <property role="DiZV1" value="false" />
+                <property role="od$2w" value="false" />
+                <node concept="3Tm1VV" id="4dksFc0CJWn" role="1B3o_S" />
+                <node concept="3cqZAl" id="4dksFc0CJWo" role="3clF45" />
+                <node concept="3clFbS" id="4dksFc0CJWp" role="3clF47" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="312cEg" id="2Z2H3pkZiyu" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -7327,23 +7354,10 @@
               <ref role="1PxDUh" to="dxuu:~JTabbedPane" resolve="JTabbedPane" />
               <ref role="3cqZAo" to="dxuu:~SwingConstants.BOTTOM" resolve="BOTTOM" />
             </node>
-            <node concept="2ShNRf" id="1YmiibRG1DL" role="37wK5m">
-              <node concept="YeOm9" id="1YmiibRG4y5" role="2ShVmc">
-                <node concept="1Y3b0j" id="1YmiibRG4y8" role="YeSDq">
-                  <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="v23q:~Disposable" resolve="Disposable" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                  <node concept="3Tm1VV" id="1YmiibRG4y9" role="1B3o_S" />
-                  <node concept="3clFb_" id="1YmiibRG4ya" role="jymVt">
-                    <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="dispose" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="3Tm1VV" id="1YmiibRG4yb" role="1B3o_S" />
-                    <node concept="3cqZAl" id="1YmiibRG4yd" role="3clF45" />
-                    <node concept="3clFbS" id="1YmiibRG4ye" role="3clF47" />
-                  </node>
-                </node>
+            <node concept="2OqwBi" id="4dksFc0CJWC" role="37wK5m">
+              <node concept="Xjq3P" id="4dksFc0CJWD" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4dksFc0CJWE" role="2OqNvi">
+                <ref role="2Oxat5" node="4dksFc0CJWq" resolve="myDisposableRoot" />
               </node>
             </node>
           </node>
@@ -8179,6 +8193,15 @@
           <node concept="3clFbF" id="2Z2H3pkZi_E" role="3cqZAp">
             <node concept="3nyPlj" id="2Z2H3pkZi_F" role="3clFbG">
               <ref role="37wK5l" to="z60i:~Window.dispose():void" resolve="dispose" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4dksFc0DxyV" role="3cqZAp">
+            <node concept="2YIFZM" id="4dksFc0DzIq" role="3clFbG">
+              <ref role="37wK5l" to="zn9m:~Disposer.dispose(com.intellij.openapi.Disposable):void" resolve="dispose" />
+              <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+              <node concept="37vLTw" id="4dksFc0D$QA" role="37wK5m">
+                <ref role="3cqZAo" node="4dksFc0CJWq" resolve="myDisposableRoot" />
+              </node>
             </node>
           </node>
         </node>
