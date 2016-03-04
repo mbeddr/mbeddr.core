@@ -382,15 +382,14 @@
     </language>
     <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
       <concept id="9101047003798444974" name="com.mbeddr.core.dataflow.structure.ContextSensitiveAttribute" flags="ng" index="2JLR6D" />
-      <concept id="4001581004620801782" name="com.mbeddr.core.dataflow.structure.SpecializedSourceAttribute" flags="ng" index="37PXTe">
-        <child id="4001581004621675618" name="source" index="37T8jq" />
-      </concept>
       <concept id="673470630035214411" name="com.mbeddr.core.dataflow.structure.EmitInlineStatement" flags="ng" index="1cGfmN">
         <child id="673470630035224866" name="point" index="1cGdNq" />
         <child id="673470630035214744" name="target" index="1cGfhw" />
       </concept>
       <concept id="2090780709295708596" name="com.mbeddr.core.dataflow.structure.IsContextSensitiveExpression" flags="ng" index="1lNaxe" />
-      <concept id="2538651910168211985" name="com.mbeddr.core.dataflow.structure.EmitMapStatement" flags="ng" index="1yMAxB" />
+      <concept id="2538651910168211985" name="com.mbeddr.core.dataflow.structure.EmitMapStatement" flags="ng" index="1yMAxB">
+        <child id="7155423771307544990" name="source" index="DojQs" />
+      </concept>
       <concept id="2538651910168246105" name="com.mbeddr.core.dataflow.structure.EmitUnmapStatement" flags="ng" index="1yMIOJ" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -665,17 +664,15 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1yMAxB" id="2cV6Bp1XDcB" role="3cqZAp">
-                  <node concept="37vLTw" id="2cV6Bp1XDds" role="3_H1SZ">
+                <node concept="1yMAxB" id="6ddb09abcyp" role="3cqZAp">
+                  <node concept="37vLTw" id="6ddb09abcze" role="3_H1SZ">
                     <ref role="3cqZAo" node="3u8ubzKrvmi" resolve="formal" />
                   </node>
-                  <node concept="37vLTw" id="2cV6Bp1XDed" role="1XBRO_">
+                  <node concept="37vLTw" id="6ddb09abczW" role="1XBRO_">
                     <ref role="3cqZAo" node="3u8ubzKrvhD" resolve="actual" />
                   </node>
-                  <node concept="37PXTe" id="2cV6Bp1XDeZ" role="lGtFl">
-                    <node concept="37vLTw" id="2cV6Bp1XDfJ" role="37T8jq">
-                      <ref role="3cqZAo" node="578hHfFwGeh" resolve="source" />
-                    </node>
+                  <node concept="37vLTw" id="6ddb09abcE5" role="DojQs">
+                    <ref role="3cqZAo" node="578hHfFwGeh" resolve="source" />
                   </node>
                 </node>
               </node>

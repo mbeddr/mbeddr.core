@@ -71,7 +71,7 @@
     <node concept="1TJgyj" id="_oDvx5U7$y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="point" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
@@ -115,26 +115,6 @@
     <property role="TrG5h" value="ContextAwareEmitStatement" />
     <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
   </node>
-  <node concept="1TIwiD" id="3u8ubzKnUrQ">
-    <property role="1pbfSe" value="669523886" />
-    <property role="TrG5h" value="SpecializedSourceAttribute" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyj" id="3u8ubzKrfLy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="M6xJ_" id="3u8ubzKnUrR" role="lGtFl">
-      <property role="Hh88m" value="source" />
-      <node concept="trNpa" id="3u8ubzKnUrX" role="EQaZv">
-        <ref role="trN6q" to="tp41:hz_FXzu" resolve="EmitWriteStatement" />
-      </node>
-      <node concept="tn0Fv" id="3u8ubzKnUrT" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-    </node>
-  </node>
   <node concept="1TIwiD" id="3u8ubzKrgBU">
     <property role="1pbfSe" value="670401202" />
     <property role="TrG5h" value="VirtualAttribute" />
@@ -155,6 +135,11 @@
     <property role="34LRSv" value="map" />
     <property role="R4oN_" value="map formal parameter" />
     <ref role="1TJDcQ" to="tp41:hz_FXzu" resolve="EmitWriteStatement" />
+    <node concept="1TJgyj" id="6ddb09ab16u" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="source" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="2cV6Bp1XCuA" role="PzmwI">
       <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IContextAwareEmitStatement" />
     </node>

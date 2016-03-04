@@ -56,7 +56,6 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
-        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
@@ -143,75 +142,6 @@
                     </node>
                   </node>
                   <node concept="1PgB_6" id="7TdqwvhyyIg" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="3u8ubzKnUs0">
-    <property role="TrG5h" value="EmitMapStatement_ToogleVirtualAssignment" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="ybok:2cV6Bp1Wn8h" resolve="EmitMapStatement" />
-    <node concept="2S6ZIM" id="3u8ubzKnUs1" role="2ZfVej">
-      <node concept="3clFbS" id="3u8ubzKnUs2" role="2VODD2">
-        <node concept="3clFbF" id="3u8ubzKnUs3" role="3cqZAp">
-          <node concept="Xl_RD" id="3u8ubzKnUs4" role="3clFbG">
-            <property role="Xl_RC" value="Toogle Virtual" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3u8ubzKnUs5" role="2ZfgGD">
-      <node concept="3clFbS" id="3u8ubzKnUs6" role="2VODD2">
-        <node concept="3clFbJ" id="3u8ubzKnUs7" role="3cqZAp">
-          <node concept="3clFbS" id="3u8ubzKnUs8" role="3clFbx">
-            <node concept="3clFbF" id="3u8ubzKnUs9" role="3cqZAp">
-              <node concept="37vLTI" id="3u8ubzKnUsa" role="3clFbG">
-                <node concept="2ShNRf" id="3u8ubzKnUsb" role="37vLTx">
-                  <node concept="3zrR0B" id="3u8ubzKnUsc" role="2ShVmc">
-                    <node concept="3Tqbb2" id="3u8ubzKnUsd" role="3zrR0E">
-                      <ref role="ehGHo" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="3u8ubzKnUse" role="37vLTJ">
-                  <node concept="2Sf5sV" id="3u8ubzKnUsf" role="2Oq$k0" />
-                  <node concept="3CFZ6_" id="3u8ubzKnUsg" role="2OqNvi">
-                    <node concept="3CFYIy" id="3u8ubzKnUNV" role="3CFYIz">
-                      <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="3u8ubzKnUsi" role="3clFbw">
-            <node concept="10Nm6u" id="3u8ubzKnUsj" role="3uHU7w" />
-            <node concept="2OqwBi" id="3u8ubzKnUsk" role="3uHU7B">
-              <node concept="2Sf5sV" id="3u8ubzKnUsl" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="3u8ubzKnUsm" role="2OqNvi">
-                <node concept="3CFYIy" id="3u8ubzKnUM$" role="3CFYIz">
-                  <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="3u8ubzKnUso" role="9aQIa">
-            <node concept="3clFbS" id="3u8ubzKnUsp" role="9aQI4">
-              <node concept="3clFbF" id="3u8ubzKnUsq" role="3cqZAp">
-                <node concept="2OqwBi" id="3u8ubzKnUsr" role="3clFbG">
-                  <node concept="2OqwBi" id="3u8ubzKnUss" role="2Oq$k0">
-                    <node concept="2Sf5sV" id="3u8ubzKnUst" role="2Oq$k0" />
-                    <node concept="3CFZ6_" id="3u8ubzKnUsu" role="2OqNvi">
-                      <node concept="3CFYIy" id="3u8ubzKnUQU" role="3CFYIz">
-                        <ref role="3CFYIx" to="ybok:3u8ubzKnUrQ" resolve="SpecializedSourceAttribute" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1PgB_6" id="3u8ubzKnUsw" role="2OqNvi" />
                 </node>
               </node>
             </node>
