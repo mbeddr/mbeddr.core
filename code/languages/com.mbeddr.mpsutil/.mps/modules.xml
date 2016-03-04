@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="actionsfilter" />
@@ -30,7 +31,10 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.importing.propspool/com.mbeddr.mpsutil.emf.importing.propspool.mpl" folder="emf" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.importing.test.lang/com.mbeddr.mpsutil.emf.importing.test.lang.mpl" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="emf" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.testing.importer/com.mbeddr.mpsutil.emf.testing.importer.mpl" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.mpl" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="projectview" />
@@ -118,6 +122,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.emf.importing.test.solution/com.mbeddr.mpsutil.emf.importing.test.solution.msd" folder="emf" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.extensionclass.annotation/com.mbeddr.mpsutil.extensionclass.annotation.msd" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.globalgenerators.runtime/com.mbeddr.mpsutil.globalgenerators.runtime.msd" folder="globalGenerators" />
