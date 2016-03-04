@@ -7,6 +7,7 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -189,6 +190,9 @@
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
       <concept id="1213999117680" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldAccessOperation" flags="nn" index="2BZ7hE" />
@@ -296,7 +300,7 @@
                           <node concept="2OqwBi" id="80_psBV2kq" role="3clFbG">
                             <node concept="2YIFZM" id="80_psBV2cZ" role="2Oq$k0">
                               <ref role="1Pybhc" to="6tp1:630t2b8ee$$" resolve="DragSelectionMouseListener" />
-                              <ref role="37wK5l" to="6tp1:630t2b8ee$K" resolve="getInstance" />
+                              <ref role="37wK5l" to="6tp1:630t2b8ee$K" resolve="getOrCreateInstance" />
                               <node concept="37vLTw" id="80_psBV2e8" role="37wK5m">
                                 <ref role="3cqZAo" node="2vJRo8g$$xM" resolve="editorComponent" />
                               </node>
@@ -326,11 +330,11 @@
                       </node>
                       <node concept="3clFbS" id="2vJRo8g$$xZ" role="3clF47">
                         <node concept="3clFbF" id="80_psBV3s3" role="3cqZAp">
-                          <node concept="2OqwBi" id="80_psBV3s4" role="3clFbG">
-                            <node concept="2YIFZM" id="80_psBV3s5" role="2Oq$k0">
-                              <ref role="37wK5l" to="6tp1:630t2b8ee$K" resolve="getInstance" />
+                          <node concept="2EnYce" id="6CcfvtYXOj2" role="3clFbG">
+                            <node concept="2YIFZM" id="6CcfvtYXOgx" role="2Oq$k0">
+                              <ref role="37wK5l" to="6tp1:6CcfvtYXLKo" resolve="getInstance" />
                               <ref role="1Pybhc" to="6tp1:630t2b8ee$$" resolve="DragSelectionMouseListener" />
-                              <node concept="37vLTw" id="80_psBV3Dp" role="37wK5m">
+                              <node concept="37vLTw" id="6CcfvtYXOgy" role="37wK5m">
                                 <ref role="3cqZAo" node="2vJRo8g$$xW" resolve="editorComponent" />
                               </node>
                             </node>
