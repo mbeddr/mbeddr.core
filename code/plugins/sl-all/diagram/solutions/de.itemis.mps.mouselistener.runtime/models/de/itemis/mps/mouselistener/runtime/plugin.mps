@@ -248,7 +248,12 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+        <child id="1237731803878" name="copyFrom" index="I$8f6" />
+      </concept>
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -419,13 +424,6 @@
           <node concept="2GrKxI" id="80_psC6V0q" role="2Gsz3X">
             <property role="TrG5h" value="instance" />
           </node>
-          <node concept="2OqwBi" id="80_psC6VfA" role="2GsD0m">
-            <node concept="10M0yZ" id="6mIiWXQfCP2" role="2Oq$k0">
-              <ref role="3cqZAo" node="80_psBTXFa" resolve="instances" />
-              <ref role="1PxDUh" node="80_psBSjpC" resolve="DelegatingMouseListener" />
-            </node>
-            <node concept="T8wYR" id="80_psC6Xzw" role="2OqNvi" />
-          </node>
           <node concept="3clFbS" id="80_psC6V0s" role="2LFqv$">
             <node concept="3clFbF" id="80_psC6XFk" role="3cqZAp">
               <node concept="2OqwBi" id="80_psC6XF_" role="3clFbG">
@@ -435,6 +433,19 @@
                 <node concept="liA8E" id="80_psC6Zbs" role="2OqNvi">
                   <ref role="37wK5l" node="80_psBUyL0" resolve="uninstall" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ShNRf" id="4NrC_fvvwpU" role="2GsD0m">
+            <node concept="Tc6Ow" id="4NrC_fvvwZy" role="2ShVmc">
+              <node concept="3uibUv" id="4NrC_fvvxrm" role="HW$YZ">
+                <ref role="3uigEE" node="80_psBSjpC" resolve="DelegatingMouseListener" />
+              </node>
+              <node concept="2OqwBi" id="80_psC6VfA" role="I$8f6">
+                <node concept="37vLTw" id="4NrC_fvvxyp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="80_psBTXFa" resolve="instances" />
+                </node>
+                <node concept="T8wYR" id="80_psC6Xzw" role="2OqNvi" />
               </node>
             </node>
           </node>
