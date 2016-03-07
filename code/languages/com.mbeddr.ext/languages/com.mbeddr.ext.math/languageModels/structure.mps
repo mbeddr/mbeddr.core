@@ -265,7 +265,7 @@
   </node>
   <node concept="1TIwiD" id="4fjBjwDqu9U">
     <property role="TrG5h" value="Implies" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="" />
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="logical implication" />
     <property role="1pbfSe" value="1832746930" />
