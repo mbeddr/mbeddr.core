@@ -329,6 +329,7 @@
     </node>
     <node concept="1LFe83" id="2MkQqmZQqQH" role="N3F5h">
       <property role="TrG5h" value="Counter" />
+      <property role="2OOxQR" value="true" />
       <ref role="1LFebw" node="2MkQqmZQr0G" resolve="Counting" />
       <node concept="2cfOFI" id="2MkQqmZQqVF" role="1_Iowf">
         <property role="TrG5h" value="step" />
