@@ -10101,44 +10101,71 @@
             </node>
             <node concept="liA8E" id="4QhMqW3x2oD" role="2OqNvi">
               <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="addDisposeListener" />
-              <node concept="1bVj0M" id="4QhMqW3xbiJ" role="37wK5m">
-                <node concept="3clFbS" id="4QhMqW3xbiK" role="1bW5cS">
-                  <node concept="34ab3g" id="4E__2YAijRU" role="3cqZAp">
-                    <property role="35gtTG" value="trace" />
-                    <node concept="3cpWs3" id="4E__2YAijRV" role="34bqiv">
-                      <node concept="Xl_RD" id="4E__2YAijRW" role="3uHU7w">
-                        <property role="Xl_RC" value=" editor disposed" />
+              <node concept="2ShNRf" id="4pEobOUHQkg" role="37wK5m">
+                <node concept="YeOm9" id="4pEobOUIjfu" role="2ShVmc">
+                  <node concept="1Y3b0j" id="4pEobOUIjfx" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="exr9:~EditorComponent$EditorDisposeListener" resolve="EditorComponent.EditorDisposeListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="4pEobOUIjfy" role="1B3o_S" />
+                    <node concept="3clFb_" id="4pEobOUIjfz" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="editorWillBeDisposed" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tm1VV" id="4pEobOUIjf$" role="1B3o_S" />
+                      <node concept="3cqZAl" id="4pEobOUIjfA" role="3clF45" />
+                      <node concept="37vLTG" id="4pEobOUIjfB" role="3clF46">
+                        <property role="TrG5h" value="editorComponent" />
+                        <node concept="3uibUv" id="4pEobOUIjfC" role="1tU5fm">
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                        </node>
                       </node>
-                      <node concept="3cpWs3" id="4E__2YAijRX" role="3uHU7B">
-                        <node concept="3cpWs3" id="4E__2YAijRY" role="3uHU7B">
-                          <node concept="Xl_RD" id="4E__2YAijRZ" role="3uHU7B">
-                            <property role="Xl_RC" value="[" />
-                          </node>
-                          <node concept="2OqwBi" id="4E__2YAijS0" role="3uHU7w">
-                            <node concept="37vLTw" id="4E__2YAijS1" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4QhMqW3xblo" resolve="c" />
+                      <node concept="3clFbS" id="4pEobOUIjfD" role="3clF47">
+                        <node concept="3clFbF" id="4pEobOUJ3w5" role="3cqZAp">
+                          <node concept="2OqwBi" id="4pEobOUJ438" role="3clFbG">
+                            <node concept="37vLTw" id="4pEobOUJ3w3" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4pEobOUIjfB" resolve="editorComponent" />
                             </node>
-                            <node concept="liA8E" id="4E__2YAijS2" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                            <node concept="liA8E" id="4pEobOUJ5IU" role="2OqNvi">
+                              <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
+                              <node concept="Xjq3P" id="4pEobOUJ6d3" role="37wK5m" />
                             </node>
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="4E__2YAijS3" role="3uHU7w">
-                          <property role="Xl_RC" value="] " />
+                        <node concept="34ab3g" id="4E__2YAijRU" role="3cqZAp">
+                          <property role="35gtTG" value="trace" />
+                          <node concept="3cpWs3" id="4E__2YAijRV" role="34bqiv">
+                            <node concept="Xl_RD" id="4E__2YAijRW" role="3uHU7w">
+                              <property role="Xl_RC" value=" editor disposed" />
+                            </node>
+                            <node concept="3cpWs3" id="4E__2YAijRX" role="3uHU7B">
+                              <node concept="3cpWs3" id="4E__2YAijRY" role="3uHU7B">
+                                <node concept="Xl_RD" id="4E__2YAijRZ" role="3uHU7B">
+                                  <property role="Xl_RC" value="[" />
+                                </node>
+                                <node concept="2OqwBi" id="4E__2YAijS0" role="3uHU7w">
+                                  <node concept="37vLTw" id="4pEobOUImli" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="4pEobOUIjfB" resolve="editorComponent" />
+                                  </node>
+                                  <node concept="liA8E" id="4E__2YAijS2" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="4E__2YAijS3" role="3uHU7w">
+                                <property role="Xl_RC" value="] " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="Ks_gwz_mOL" role="3cqZAp">
+                          <node concept="1rXfSq" id="Ks_gwz_mOJ" role="3clFbG">
+                            <ref role="37wK5l" node="4o4$mVTzrGT" resolve="dispose" />
+                          </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="3clFbF" id="Ks_gwz_mOL" role="3cqZAp">
-                    <node concept="1rXfSq" id="Ks_gwz_mOJ" role="3clFbG">
-                      <ref role="37wK5l" node="4o4$mVTzrGT" resolve="dispose" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTG" id="4QhMqW3xblo" role="1bW2Oz">
-                  <property role="TrG5h" value="c" />
-                  <node concept="3uibUv" id="4QhMqW3xbln" role="1tU5fm">
-                    <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                   </node>
                 </node>
               </node>

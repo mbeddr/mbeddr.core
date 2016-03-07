@@ -40,7 +40,7 @@
         <artifact sourcePath="mbeddr-win.zip!/mbeddr/**/*=&gt;%teamcity.build.checkoutDir%/files/mbeddr&#xD;&#xA;-:." />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows" cleanDestination="false">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" />
         <artifact sourcePath="cbmc-win.zip!**=&gt;%teamcity.build.checkoutDir%/files/3rd-party/cbmc" />
       </dependency>
     </artifact-dependencies>
@@ -54,13 +54,6 @@
         </options>
       </depend-on>
       <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
-        <options>
-          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
-          <option name="take-started-build-with-same-revisions" value="true" />
-          <option name="take-successful-builds-only" value="true" />
-        </options>
-      </depend-on>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Windows">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
