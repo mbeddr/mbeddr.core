@@ -4589,7 +4589,7 @@
         <node concept="3cpWs6" id="7Xx$srW0bgX" role="3cqZAp">
           <node concept="2OqwBi" id="7Xx$srW0duo" role="3cqZAk">
             <node concept="1rXfSq" id="7Xx$srW0bh$" role="2Oq$k0">
-              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+              <ref role="37wK5l" node="1HZs_ofBaba" resolve="getPathAwareStartMap" />
             </node>
             <node concept="liA8E" id="7Xx$srW0ggV" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
