@@ -5572,6 +5572,12 @@
           <property role="TrG5h" value="com.mbeddr.ext.math#971707942815264354" />
           <property role="3LESm3" value="85a28967-1d70-4301-b6af-2fac82ee8295" />
           <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="1uVxpNhbRu9" role="3bR37C">
+            <node concept="3bR9La" id="1uVxpNhbRua" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="4hvHh3QYjVZ" role="3bR37C">
           <node concept="3bR9La" id="4hvHh3QYjW0" role="1SiIV1">
@@ -5625,6 +5631,11 @@
           <node concept="3bR9La" id="UN7Cmpuxk3" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1uVxpNhbRu7" role="3bR37C">
+          <node concept="1Busua" id="1uVxpNhbRu8" role="1SiIV1">
+            <ref role="1Busuk" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
           </node>
         </node>
       </node>
