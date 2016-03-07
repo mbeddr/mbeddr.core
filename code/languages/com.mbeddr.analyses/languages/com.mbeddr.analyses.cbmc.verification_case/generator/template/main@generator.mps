@@ -17,7 +17,7 @@
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
-    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="0" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -211,7 +211,7 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
-      <concept id="4887422885165654650" name="" flags="ng" index="1EIBX2" />
+      <concept id="4887422885165654650" name="com.mbeddr.ext.math.structure.Implies" flags="ng" index="1EIBX2" />
     </language>
     <language id="dce6c938-92a0-4619-a1d8-62fdb4b872e8" name="com.mbeddr.analyses.cbmc.verification_case">
       <concept id="8817973701942487793" name="com.mbeddr.analyses.cbmc.verification_case.structure.VerificationCase" flags="ng" index="35mLqH">

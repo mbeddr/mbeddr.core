@@ -14,7 +14,7 @@
     <language id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" fqName="com.mbeddr.analyses.acsl" version="0" />
     <language id="f47ddd18-d113-4647-938b-1d9b2e1910dc" fqName="com.mbeddr.analyses.acsl.cbmc.gen" version="0" />
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" fqName="com.mbeddr.analyses.base" version="0" />
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" fqName="com.mbeddr.analyses.cbmc" version="0" />
+    <language id="42270baf-e92c-4c32-b263-d617b3fce239" fqName="com.mbeddr.analyses.cbmc" version="1" />
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" fqName="com.mbeddr.analyses.cbmc.core" version="0" />
     <language id="daa1849d-6955-4fef-afe3-8aea1f61e6fa" fqName="com.mbeddr.analyses.cbmc.statemachines" version="0" />
     <language id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" fqName="com.mbeddr.cc.requirements" version="0" />
