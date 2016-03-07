@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -44,6 +45,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -63,6 +65,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -328,6 +333,28 @@
       <node concept="_YKpA" id="$ZgyIbTDBY" role="3clF45">
         <node concept="3Tqbb2" id="$ZgyIbTDBZ" role="_ZDj9">
           <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2AZbPfOQ$SC">
+    <ref role="13h7C2" to="cetu:4fjBjwDqu9U" resolve="Implies" />
+    <node concept="13hLZK" id="2AZbPfOQ$SD" role="13h7CW">
+      <node concept="3clFbS" id="2AZbPfOQ$SE" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2AZbPfOQ$Sy" role="13h7CS">
+      <property role="TrG5h" value="getPriolevel" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <ref role="13i0hy" to="ywuz:5HxjapwgqKu" resolve="getPriolevel" />
+      <node concept="3Tm1VV" id="2AZbPfOQ$Sz" role="1B3o_S" />
+      <node concept="10Oyi0" id="2AZbPfOQ$Sx" role="3clF45" />
+      <node concept="3clFbS" id="2AZbPfOQ$S_" role="3clF47">
+        <node concept="3cpWs6" id="2AZbPfOQ$SB" role="3cqZAp">
+          <node concept="3cmrfG" id="2AZbPfOQ$SA" role="3cqZAk">
+            <property role="3cmrfH" value="300" />
+          </node>
         </node>
       </node>
     </node>

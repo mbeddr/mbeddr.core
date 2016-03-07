@@ -15,7 +15,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -95,12 +97,15 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4fjBjwDqu9U">
-    <property role="TrG5h" value="Implies" />
+    <property role="TrG5h" value="Implies_old" />
     <property role="3GE5qa" value="expressions" />
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="logical implication" />
     <property role="1pbfSe" value="1832746930" />
     <ref role="1TJDcQ" to="mj1l:7igR0Vu9I16" resolve="BinaryLogicalExpression" />
+    <node concept="asaX9" id="1uVxpNh9of6" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.ext.math&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="637qsduSbtp">
     <property role="TrG5h" value="Assert" />

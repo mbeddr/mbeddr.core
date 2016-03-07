@@ -263,5 +263,13 @@
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4fjBjwDqu9U">
+    <property role="TrG5h" value="Implies" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="logical implication" />
+    <property role="1pbfSe" value="1832746930" />
+    <ref role="1TJDcQ" to="mj1l:7igR0Vu9I16" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 

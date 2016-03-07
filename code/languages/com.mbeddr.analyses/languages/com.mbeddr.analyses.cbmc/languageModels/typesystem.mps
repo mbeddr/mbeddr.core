@@ -28,6 +28,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
+    <import index="vnly" ref="r:f386cb21-bd7b-44e0-88f9-9135051a96b2(com.mbeddr.ext.math.typesystem)" />
+    <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" implicit="true" />
   </imports>
@@ -1096,7 +1098,7 @@
           <node concept="1Z2H0r" id="4osTp5pmclg" role="mwGJk">
             <node concept="2OqwBi" id="4osTp5pmclh" role="1Z2MuG">
               <node concept="1YBJjd" id="7CSU6RRZM4C" role="2Oq$k0">
-                <ref role="1YBMHb" node="7CSU6RRZLZY" resolve="implies" />
+                <ref role="1YBMHb" to="vnly:7CSU6RRZLZY" resolve="implies" />
               </node>
               <node concept="3TrEf2" id="7CSU6RRZT9Q" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
@@ -1118,7 +1120,7 @@
           <node concept="1Z2H0r" id="7CSU6RRZTdX" role="mwGJk">
             <node concept="2OqwBi" id="7CSU6RRZTdY" role="1Z2MuG">
               <node concept="1YBJjd" id="7CSU6RRZTdZ" role="2Oq$k0">
-                <ref role="1YBMHb" node="7CSU6RRZLZY" resolve="implies" />
+                <ref role="1YBMHb" to="vnly:7CSU6RRZLZY" resolve="implies" />
               </node>
               <node concept="3TrEf2" id="7CSU6RRZTLW" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
@@ -1138,7 +1140,7 @@
         <node concept="mw_s8" id="3kEjc_WIG$$" role="1ZfhK$">
           <node concept="1Z2H0r" id="3kEjc_WIG$u" role="mwGJk">
             <node concept="1YBJjd" id="636FvLn0bGH" role="1Z2MuG">
-              <ref role="1YBMHb" node="7CSU6RRZLZY" resolve="implies" />
+              <ref role="1YBMHb" to="vnly:7CSU6RRZLZY" resolve="implies" />
             </node>
           </node>
         </node>
@@ -1153,7 +1155,7 @@
     </node>
     <node concept="1YaCAy" id="7CSU6RRZLZY" role="1YuTPh">
       <property role="TrG5h" value="implies" />
-      <ref role="1YaFvo" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
+      <ref role="1YaFvo" to="cetu:4fjBjwDqu9U" resolve="Implies" />
     </node>
   </node>
   <node concept="Q5z_Y" id="5zmbZKrh4FK">
