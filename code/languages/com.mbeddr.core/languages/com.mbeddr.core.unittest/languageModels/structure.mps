@@ -475,11 +475,20 @@
     <property role="TrG5h" value="TestCollection" />
     <property role="34LRSv" value="testcollection" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7nMAuIoJbju" role="1TKVEl">
+      <property role="TrG5h" value="entrypoint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6TAwvhVRBLD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tests" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2MbfxrZIHSm" resolve="ICanBeExecutedAsTest" />
+    </node>
+    <node concept="1TJgyj" id="5ptpUgMv0sT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="testinit" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="PrWs8" id="6TAwvhVRBLB" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -533,6 +542,20 @@
     </node>
     <node concept="PrWs8" id="38aMGlgud8N" role="PzmwI">
       <ref role="PrY4T" to="2gv2:38aMGlgu7TQ" resolve="INoDebugSupport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7nMAuIoMgjE">
+    <property role="1pbfSe" value="247176917" />
+    <property role="TrG5h" value="TestCollectionRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7nMAuIoMgjF" role="PzmwI">
+      <ref role="PrY4T" node="2MbfxrZIHSm" resolve="ICanBeExecutedAsTest" />
+    </node>
+    <node concept="1TJgyj" id="7nMAuIoMgjH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="collection" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6TAwvhVRBLA" resolve="TestCollection" />
     </node>
   </node>
 </model>

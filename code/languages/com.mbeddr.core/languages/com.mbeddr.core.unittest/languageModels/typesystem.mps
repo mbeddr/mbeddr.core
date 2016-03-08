@@ -20,6 +20,7 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rmg4" ref="r:18211265-1331-48c8-8298-565ed01be497(com.mbeddr.core.unittest.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1225,6 +1226,60 @@
               </node>
             </node>
             <node concept="34oBXx" id="5xim$7tIJkA" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7nMAuIoJbsp" role="3cqZAp">
+        <node concept="3clFbS" id="7nMAuIoJbsr" role="3clFbx">
+          <node concept="2Gpval" id="7nMAuIoJcXc" role="3cqZAp">
+            <node concept="2GrKxI" id="7nMAuIoJcXd" role="2Gsz3X">
+              <property role="TrG5h" value="t" />
+            </node>
+            <node concept="3clFbS" id="7nMAuIoJcXe" role="2LFqv$">
+              <node concept="3clFbJ" id="7nMAuIoJd4f" role="3cqZAp">
+                <node concept="3clFbS" id="7nMAuIoJd4g" role="3clFbx">
+                  <node concept="2MkqsV" id="7nMAuIoJi7Q" role="3cqZAp">
+                    <node concept="Xl_RD" id="7nMAuIoJi82" role="2MkJ7o">
+                      <property role="Xl_RC" value="All tests have to be exported" />
+                    </node>
+                    <node concept="2GrUjf" id="7nMAuIoJiab" role="2OEOjV">
+                      <ref role="2Gs0qQ" node="7nMAuIoJcXd" resolve="t" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="7nMAuIoJd4r" role="3clFbw">
+                  <node concept="2OqwBi" id="7nMAuIoJhVo" role="3fr31v">
+                    <node concept="2OqwBi" id="7nMAuIoJd8N" role="2Oq$k0">
+                      <node concept="2GrUjf" id="7nMAuIoJd4F" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="7nMAuIoJcXd" resolve="t" />
+                      </node>
+                      <node concept="2qgKlT" id="7nMAuIoJhP_" role="2OqNvi">
+                        <ref role="37wK5l" to="rmg4:dkANm6s0zG" resolve="referencedTest" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="7nMAuIoJi2U" role="2OqNvi">
+                      <ref role="37wK5l" to="rmg4:7nMAuIoJecy" resolve="isExternVisible" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7nMAuIoJc8t" role="2GsD0m">
+              <node concept="1YBJjd" id="7nMAuIoJbZq" role="2Oq$k0">
+                <ref role="1YBMHb" node="5xim$7tIFm5" resolve="testCollection" />
+              </node>
+              <node concept="3Tsc0h" id="7nMAuIoJcNd" role="2OqNvi">
+                <ref role="3TtcxE" to="yz9a:6TAwvhVRBLD" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="7nMAuIoJb_R" role="3clFbw">
+          <node concept="1YBJjd" id="7nMAuIoJbsO" role="2Oq$k0">
+            <ref role="1YBMHb" node="5xim$7tIFm5" resolve="testCollection" />
+          </node>
+          <node concept="3TrcHB" id="7nMAuIoJbXs" role="2OqNvi">
+            <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
           </node>
         </node>
       </node>
