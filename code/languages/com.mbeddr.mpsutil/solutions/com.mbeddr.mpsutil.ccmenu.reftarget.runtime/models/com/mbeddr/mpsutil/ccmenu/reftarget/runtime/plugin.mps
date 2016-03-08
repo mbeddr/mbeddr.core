@@ -303,8 +303,8 @@
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -1597,7 +1597,7 @@
                                         <ref role="3cqZAo" node="2CFqHq6qEW9" resolve="accessedLink" />
                                       </node>
                                       <node concept="liA8E" id="2CPtIILYAwF" role="2OqNvi">
-                                        <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                                        <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                                       </node>
                                     </node>
                                   </node>
@@ -1618,7 +1618,7 @@
                       <ref role="3cqZAo" node="2CFqHq6qEW9" resolve="accessedLink" />
                     </node>
                     <node concept="liA8E" id="2CFqHq6qIkv" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SContainmentLink.isMultiple():boolean" resolve="isMultiple" />
+                      <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
                     </node>
                   </node>
                 </node>
@@ -1736,7 +1736,7 @@
                                           <ref role="2Gs0qQ" node="2CFqHq6qK8b" resolve="childLink" />
                                         </node>
                                         <node concept="liA8E" id="2CPtIILYMfg" role="2OqNvi">
-                                          <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                                          <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                                         </node>
                                       </node>
                                     </node>
@@ -1755,7 +1755,7 @@
                             <ref role="2Gs0qQ" node="2CFqHq6qK8b" resolve="childLink" />
                           </node>
                           <node concept="liA8E" id="2CFqHq6qKQd" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SContainmentLink.isMultiple():boolean" resolve="isMultiple" />
+                            <ref role="37wK5l" to="c17a:~SAbstractLink.isMultiple():boolean" resolve="isMultiple" />
                           </node>
                         </node>
                       </node>
@@ -2112,7 +2112,7 @@
                   <ref role="3cqZAo" node="2CFqHq6q6jE" resolve="linkInParent" />
                 </node>
                 <node concept="liA8E" id="2CFqHq6r6FM" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SConceptFeature.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                 </node>
               </node>
               <node concept="3cmrfG" id="2CFqHq6q6jW" role="37wK5m">
@@ -2286,7 +2286,7 @@
                 <ref role="3cqZAo" node="4UuUKLR0DPq" resolve="containmentLink" />
               </node>
               <node concept="liA8E" id="2CFqHq6pRUj" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
               </node>
             </node>
           </node>
@@ -2548,7 +2548,7 @@
                   <ref role="3cqZAo" node="2CFqHq6q0uS" resolve="myLink" />
                 </node>
                 <node concept="liA8E" id="2CFqHq6D5Ct" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                  <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                 </node>
               </node>
             </node>
@@ -3521,7 +3521,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4UuUKLR0P0z" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SConceptFeature.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                 </node>
               </node>
             </node>

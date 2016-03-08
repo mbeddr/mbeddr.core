@@ -82,8 +82,8 @@
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -129,18 +129,18 @@
                 <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
                 <node concept="17QB3L" id="79g_UwJZo6Z" role="11_B2D" />
               </node>
-              <node concept="2OqwBi" id="79g_UwJZnWw" role="33vP2m">
-                <node concept="2YIFZM" id="79g_UwJZnWx" role="2Oq$k0">
-                  <ref role="37wK5l" to="w1kc:~LanguageHierarchyCache.getInstance():jetbrains.mps.smodel.LanguageHierarchyCache" resolve="getInstance" />
-                  <ref role="1Pybhc" to="w1kc:~LanguageHierarchyCache" resolve="LanguageHierarchyCache" />
+              <node concept="2OqwBi" id="1TDhHkt4vox" role="33vP2m">
+                <node concept="2YIFZM" id="1TDhHkt4vfn" role="2Oq$k0">
+                  <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getInstance():jetbrains.mps.smodel.ConceptDescendantsCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="w1kc:~ConceptDescendantsCache" resolve="ConceptDescendantsCache" />
                 </node>
-                <node concept="liA8E" id="79g_UwJZnWy" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~LanguageHierarchyCache.getAllDescendantsOfConcept(java.lang.String):java.util.Set" resolve="getAllDescendantsOfConcept" />
-                  <node concept="2OqwBi" id="79g_UwJZnWz" role="37wK5m">
-                    <node concept="35c_gC" id="79g_UwJZnW$" role="2Oq$k0">
+                <node concept="liA8E" id="1TDhHkt4vyE" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getDescendants(java.lang.String):java.util.Set" resolve="getDescendants" />
+                  <node concept="2OqwBi" id="1TDhHkt4vZ8" role="37wK5m">
+                    <node concept="35c_gC" id="1TDhHkt4vZ9" role="2Oq$k0">
                       <ref role="35c_gD" to="bdcd:7U3Fobb_8Ek" resolve="SuppressWarningKind" />
                     </node>
-                    <node concept="liA8E" id="79g_UwJZnW_" role="2OqNvi">
+                    <node concept="liA8E" id="1TDhHkt4vZa" role="2OqNvi">
                       <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
                     </node>
                   </node>
