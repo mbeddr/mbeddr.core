@@ -237,6 +237,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
@@ -563,11 +564,18 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="3$YAQZ4CN6B" role="2GsD0m">
-            <node concept="37vLTw" id="3$YAQZ4CMY2" role="2Oq$k0">
-              <ref role="3cqZAo" node="3$YAQZ4CLBR" resolve="instancesInProject" />
+          <node concept="2ShNRf" id="7lgjy2PVBHR" role="2GsD0m">
+            <node concept="Tc6Ow" id="7lgjy2PVQAG" role="2ShVmc">
+              <node concept="3uibUv" id="7lgjy2PVRcS" role="HW$YZ">
+                <ref role="3uigEE" node="5h2rxDjX6bI" resolve="ExerciseExecutor" />
+              </node>
+              <node concept="2OqwBi" id="3$YAQZ4CN6B" role="I$8f6">
+                <node concept="37vLTw" id="3$YAQZ4CMY2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3$YAQZ4CLBR" resolve="instancesInProject" />
+                </node>
+                <node concept="T8wYR" id="3$YAQZ4CNg1" role="2OqNvi" />
+              </node>
             </node>
-            <node concept="T8wYR" id="3$YAQZ4CNg1" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="3$YAQZ4CNMR" role="3cqZAp">
