@@ -10,6 +10,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
   </imports>
@@ -102,7 +103,7 @@
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="logical implication" />
     <property role="1pbfSe" value="1832746930" />
-    <ref role="1TJDcQ" to="mj1l:7igR0Vu9I16" resolve="BinaryLogicalExpression" />
+    <ref role="1TJDcQ" to="cetu:4fjBjwDqu9U" resolve="Implies" />
     <node concept="asaX9" id="1uVxpNh9of6" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.ext.math&quot;" />
     </node>
