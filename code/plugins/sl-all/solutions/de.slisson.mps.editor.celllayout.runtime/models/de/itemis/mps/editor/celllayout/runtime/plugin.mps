@@ -406,6 +406,30 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbF" id="2hEgJWEwOwv" role="3cqZAp">
+                        <node concept="2YIFZM" id="2hEgJWEwT5s" role="3clFbG">
+                          <ref role="1Pybhc" to="qxi4:JPngvNsMB7" resolve="CellLayoutUtil" />
+                          <ref role="37wK5l" to="qxi4:2hEgJWEwRPU" resolve="invalidateAllCells" />
+                          <node concept="2OqwBi" id="2hEgJWEwT5t" role="37wK5m">
+                            <node concept="37vLTw" id="2hEgJWEx7O5" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3Osd_yxgp5H" resolve="editorComponent" />
+                            </node>
+                            <node concept="liA8E" id="2hEgJWEwT5v" role="2OqNvi">
+                              <ref role="37wK5l" to="exr9:~EditorComponent.getRootCell():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getRootCell" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2hEgJWExc8_" role="3cqZAp">
+                        <node concept="2OqwBi" id="2hEgJWExchV" role="3clFbG">
+                          <node concept="37vLTw" id="2hEgJWExc8z" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3Osd_yxgp5H" resolve="editorComponent" />
+                          </node>
+                          <node concept="liA8E" id="2hEgJWExe5w" role="2OqNvi">
+                            <ref role="37wK5l" to="exr9:~EditorComponent.relayout():void" resolve="relayout" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="3clFb_" id="3Osd_yxgp5O" role="jymVt">

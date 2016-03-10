@@ -905,6 +905,59 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="1syh$m3yzfJ" role="3cqZAp">
+                  <node concept="3cpWsn" id="1syh$m3yzfK" role="3cpWs9">
+                    <property role="TrG5h" value="originalParent" />
+                    <node concept="3uibUv" id="1syh$m3yzfI" role="1tU5fm">
+                      <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                    </node>
+                    <node concept="1eOMI4" id="1syh$m3yzfL" role="33vP2m">
+                      <node concept="10QFUN" id="1syh$m3yzfM" role="1eOMHV">
+                        <node concept="2OqwBi" id="1syh$m3yzfN" role="10QFUP">
+                          <node concept="3M$PaV" id="1syh$m3yzfO" role="2Oq$k0">
+                            <ref role="3M$S_o" node="4MuW45D51m2" resolve="cell" />
+                          </node>
+                          <node concept="liA8E" id="1syh$m3yzfP" role="2OqNvi">
+                            <ref role="37wK5l" to="f4zo:~EditorCell.getParent():jetbrains.mps.openapi.editor.cells.EditorCell_Collection" resolve="getParent" />
+                          </node>
+                        </node>
+                        <node concept="3uibUv" id="1syh$m3yzfQ" role="10QFUM">
+                          <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="1syh$m3yzUL" role="3cqZAp">
+                  <node concept="3clFbS" id="1syh$m3yzUN" role="3clFbx">
+                    <node concept="3clFbF" id="1syh$m3ynNV" role="3cqZAp">
+                      <node concept="2OqwBi" id="1syh$m3yo5$" role="3clFbG">
+                        <node concept="37vLTw" id="1syh$m3yzfR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1syh$m3yzfK" resolve="originalParent" />
+                        </node>
+                        <node concept="liA8E" id="1syh$m3yoPn" role="2OqNvi">
+                          <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+                          <node concept="1eOMI4" id="1syh$m3ypoY" role="37wK5m">
+                            <node concept="10QFUN" id="1syh$m3ypoZ" role="1eOMHV">
+                              <node concept="3M$PaV" id="1syh$m3ypoX" role="10QFUP">
+                                <ref role="3M$S_o" node="4MuW45D51m2" resolve="cell" />
+                              </node>
+                              <node concept="3uibUv" id="1syh$m3ypmU" role="10QFUM">
+                                <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="1syh$m3yBhy" role="3clFbw">
+                    <node concept="10Nm6u" id="1syh$m3yBoZ" role="3uHU7w" />
+                    <node concept="37vLTw" id="1syh$m3yB7w" role="3uHU7B">
+                      <ref role="3cqZAo" node="1syh$m3yzfK" resolve="originalParent" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="4MuW45D51VK" role="3cqZAp">
                   <node concept="1rXfSq" id="4MuW45D51VJ" role="3clFbG">
                     <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
@@ -30648,11 +30701,9 @@
         </node>
       </node>
       <node concept="3clFbS" id="7HQUZCSIEdL" role="3clF47">
-        <node concept="YS8fn" id="7HQUZCSIJF3" role="3cqZAp">
-          <node concept="2ShNRf" id="7HQUZCSIJF4" role="YScLw">
-            <node concept="1pGfFk" id="7HQUZCSIJF5" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
-            </node>
+        <node concept="3clFbF" id="1syh$m3yP7w" role="3cqZAp">
+          <node concept="3cmrfG" id="1syh$m3yP7v" role="3clFbG">
+            <property role="3cmrfH" value="0" />
           </node>
         </node>
       </node>

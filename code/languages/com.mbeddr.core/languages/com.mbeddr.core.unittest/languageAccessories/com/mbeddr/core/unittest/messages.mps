@@ -3390,6 +3390,22 @@
                 </node>
               </node>
             </node>
+            <node concept="1_9egQ" id="5bKNAZ56Aap" role="3XIRFZ">
+              <node concept="3O_q_g" id="5bKNAZ56Aan" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+                <node concept="4ZOvp" id="5bKNAZ56Ahe" role="3O_q_j">
+                  <ref role="2DPCA0" to="3y0n:6Iiej_Uhsyk" resolve="stdout" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="5bKNAZ56Aow" role="3XIRFZ">
+              <node concept="3O_q_g" id="5bKNAZ56Aou" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+                <node concept="4ZOvp" id="5bKNAZ56Av_" role="3O_q_j">
+                  <ref role="2DPCA0" to="3y0n:6Iiej_UhpRS" resolve="stderr" />
+                </node>
+              </node>
+            </node>
             <node concept="1_9egQ" id="2y8cGnjVyF0" role="3XIRFZ">
               <node concept="3O_q_g" id="2y8cGnjVyH0" role="1_9egR">
                 <ref role="3O_q_h" to="ml7g:6LsWDiKmfEE" resolve="dup2" />

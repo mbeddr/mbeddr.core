@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
+    <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -22,13 +23,17 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -45,6 +50,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -53,6 +59,13 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -65,6 +78,11 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
+      <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
+        <child id="8427750732757990725" name="actual" index="3tpDZA" />
+        <child id="8427750732757990724" name="expected" index="3tpDZB" />
+      </concept>
+      <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
       </concept>
@@ -103,25 +121,58 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="tSjOfAax6B" role="3cqZAp">
-          <node concept="3cpWsn" id="tSjOfAax6C" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYiJM" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYiJN" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="tSjOfAax6y" role="1tU5fm" />
-            <node concept="NRdvd" id="tSjOfAaI_E" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYiJL" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYiJO" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="37vLTw" id="4$3mDZ0lOig" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYiJP" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOie" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="tSjOfAaI_G" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYiJQ" role="37wK5m">
                 <property role="Xl_RC" value="MandatoryFeatures" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="tSjOfAaxbZ" role="3cqZAp">
-          <node concept="37vLTw" id="tSjOfAaxd1" role="3vwVQn">
-            <ref role="3cqZAo" node="tSjOfAax6C" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYiMX" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYiMr" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYiJN" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYiTJ" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6A4JgbUYpVd" role="3cqZAp">
+          <node concept="Xl_RD" id="6A4JgbUYpXC" role="3tpDZB">
+            <property role="Xl_RC" value="Feature model 'MandatoryFeatures'" />
+          </node>
+          <node concept="2OqwBi" id="6A4JgbUYq2w" role="3tpDZA">
+            <node concept="37vLTw" id="6A4JgbUYq0I" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYiJN" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYq6W" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:1X8myJOM8db" resolve="userFriendlyNodeName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6A4JgbUYqbm" role="3cqZAp">
+          <node concept="Xl_RD" id="6A4JgbUYqdt" role="3tpDZB">
+            <property role="Xl_RC" value="SUCCESS:\nFeature Model: MandatoryFeatures is consistent." />
+          </node>
+          <node concept="2OqwBi" id="6A4JgbUYqfZ" role="3tpDZA">
+            <node concept="37vLTw" id="6A4JgbUYqex" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYiJN" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYqpZ" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAfoam" resolve="toString" />
+            </node>
           </node>
         </node>
       </node>
@@ -141,25 +192,73 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="tSjOfAaIrm" role="3cqZAp">
-          <node concept="3cpWsn" id="tSjOfAaIrn" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYiUn" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYiUo" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="tSjOfAaIro" role="1tU5fm" />
-            <node concept="NRdvd" id="tSjOfAaI$5" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYiUk" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYiUp" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="37vLTw" id="4$3mDZ0lOke" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYiUq" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOkc" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="tSjOfAaI$7" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYiUr" role="37wK5m">
                 <property role="Xl_RC" value="MandatoryFeaturesInConflict" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="tSjOfAaIG2" role="3cqZAp">
-          <node concept="37vLTw" id="tSjOfAaIH8" role="3vFALc">
-            <ref role="3cqZAo" node="tSjOfAaIrn" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYiYk" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYiXM" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYiUo" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYj5m" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6A4JgbUYrdP" role="3cqZAp">
+          <node concept="Xl_RD" id="6A4JgbUYrgg" role="3tpDZB">
+            <property role="Xl_RC" value="Feature model 'MandatoryFeaturesInConflict'" />
+          </node>
+          <node concept="2OqwBi" id="6A4JgbUYrjq" role="3tpDZA">
+            <node concept="37vLTw" id="6A4JgbUYrhC" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYiUo" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYrnQ" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:1X8myJOM8db" resolve="userFriendlyNodeName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6A4JgbUYrqO" role="3cqZAp">
+          <node concept="3cpWs3" id="6A4JgbUYsbT" role="3tpDZB">
+            <node concept="3cpWs3" id="6A4JgbUYs2F" role="3uHU7B">
+              <node concept="3cpWs3" id="6A4JgbUYrUH" role="3uHU7B">
+                <node concept="Xl_RD" id="6A4JgbUYrUN" role="3uHU7B">
+                  <property role="Xl_RC" value="FAILURE:\nFeature Model MandatoryFeaturesInConflict cannot be instantiated.\n\n" />
+                </node>
+                <node concept="Xl_RD" id="6A4JgbUYs2L" role="3uHU7w">
+                  <property role="Xl_RC" value="DETAILS:\n- Parent: MandatoryFeaturesInConflict_root must have child: mandatoryChild1\n" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="6A4JgbUYsbZ" role="3uHU7w">
+                <property role="Xl_RC" value="- Parent: MandatoryFeaturesInConflict_root must have child: mandatoryChild2\n" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6A4JgbUYsc1" role="3uHU7w">
+              <property role="Xl_RC" value="- Feature: mandatoryChild2 conflicts with feature: mandatoryChild1\n" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6A4JgbUYrx4" role="3tpDZA">
+            <node concept="37vLTw" id="6A4JgbUYrv6" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYiUo" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYrFa" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAfoam" resolve="toString" />
+            </node>
           </node>
         </node>
       </node>
@@ -179,25 +278,32 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="44j14BGT7wj" role="3cqZAp">
-          <node concept="3cpWsn" id="44j14BGT7wk" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYj5Y" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYj5Z" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="44j14BGT7wl" role="1tU5fm" />
-            <node concept="NRdvd" id="44j14BGT7wm" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYj5X" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYj60" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="37vLTw" id="4$3mDZ0lOmc" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYj61" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOma" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="44j14BGT7wo" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYj62" role="37wK5m">
                 <property role="Xl_RC" value="OptionalFeaturesInConflict2" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="44j14BGT803" role="3cqZAp">
-          <node concept="37vLTw" id="44j14BGT827" role="3vwVQn">
-            <ref role="3cqZAo" node="44j14BGT7wk" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYj9b" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYj8D" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYj5Z" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYjgq" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -217,25 +323,32 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="44j14BGTods" role="3cqZAp">
-          <node concept="3cpWsn" id="44j14BGTodt" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYjh2" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYjh3" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="44j14BGTodu" role="1tU5fm" />
-            <node concept="NRdvd" id="44j14BGTodv" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYjh1" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYjh4" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="37vLTw" id="4$3mDZ0lOoa" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYjh5" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOo8" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="44j14BGTodx" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYjh6" role="37wK5m">
                 <property role="Xl_RC" value="OptionalFeaturesInConflict3" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="44j14BGVnp2" role="3cqZAp">
-          <node concept="37vLTw" id="44j14BGVnrd" role="3vFALc">
-            <ref role="3cqZAo" node="44j14BGTodt" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYjkg" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYjjI" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYjh3" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYjrG" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -255,25 +368,32 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4$3mDZ0lO9y" role="3cqZAp">
-          <node concept="3cpWsn" id="4$3mDZ0lO9z" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYjsk" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYjsl" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="4$3mDZ0lO9$" role="1tU5fm" />
-            <node concept="NRdvd" id="4$3mDZ0lO9_" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYjsf" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYjsm" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="37vLTw" id="4$3mDZ0lOq8" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYjsn" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOq6" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="4$3mDZ0lO9B" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYjso" role="37wK5m">
                 <property role="Xl_RC" value="AtLeastOneOrSubfeatureMustBeAvailable" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="4$3mDZ0lO9C" role="3cqZAp">
-          <node concept="37vLTw" id="4$3mDZ0lO9D" role="3vFALc">
-            <ref role="3cqZAo" node="4$3mDZ0lO9z" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYjwk" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYjvM" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYjsl" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYjBX" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -293,25 +413,32 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="44j14BGT8gs" role="3cqZAp">
-          <node concept="3cpWsn" id="44j14BGT8gt" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYjC_" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYjCA" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="44j14BGT8gu" role="1tU5fm" />
-            <node concept="NRdvd" id="44j14BGT8gv" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYjCw" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYjCB" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="37vLTw" id="4$3mDZ0lOs6" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYjCC" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOs4" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="44j14BGT8gx" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYjCD" role="37wK5m">
                 <property role="Xl_RC" value="XorFeaturesInConflict3" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="44j14BGV1ha" role="3cqZAp">
-          <node concept="37vLTw" id="44j14BGV1jl" role="3vFALc">
-            <ref role="3cqZAo" node="44j14BGT8gt" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYjFP" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYjFj" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYjCA" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYjNF" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -331,25 +458,32 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="44j14BGT8BC" role="3cqZAp">
-          <node concept="3cpWsn" id="44j14BGT8BD" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYjOj" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYjOk" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="44j14BGT8BE" role="1tU5fm" />
-            <node concept="NRdvd" id="44j14BGT8BF" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYjOh" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYjOl" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="37vLTw" id="4$3mDZ0lOu4" role="37wK5m">
+              <node concept="37vLTw" id="6A4JgbUYjOm" role="37wK5m">
                 <ref role="3cqZAo" node="4$3mDZ0lOu2" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="44j14BGT8BH" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYjOn" role="37wK5m">
                 <property role="Xl_RC" value="XorFeaturesRequire4" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="44j14BGT8BI" role="3cqZAp">
-          <node concept="37vLTw" id="44j14BGT8BJ" role="3vFALc">
-            <ref role="3cqZAo" node="44j14BGT8BD" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYjSl" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYjRN" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYjOk" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYk0g" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -366,27 +500,34 @@
             <property role="3SKdUp" value="mandatory children" />
           </node>
         </node>
-        <node concept="3cpWs8" id="3KT4CxIEH24" role="3cqZAp">
-          <node concept="3cpWsn" id="3KT4CxIEH25" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYk4w" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYk4x" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="3KT4CxIEH26" role="1tU5fm" />
-            <node concept="NRdvd" id="3KT4CxIEH27" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYk4u" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYk4y" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="3KT4CxIEH28" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYk4z" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="3KT4CxIEH29" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYk4$" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures1" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="3KT4CxIEJU_" role="3cqZAp">
-          <node concept="37vLTw" id="3KT4CxIEJWe" role="3vFALc">
-            <ref role="3cqZAo" node="3KT4CxIEH25" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYk8x" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYk7Z" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYk4x" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYkfn" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -395,27 +536,34 @@
       <property role="TrG5h" value="testDerivedFeatures2" />
       <node concept="3cqZAl" id="3KT4CxIEH2e" role="3clF45" />
       <node concept="3clFbS" id="3KT4CxIEH2f" role="3clF47">
-        <node concept="3cpWs8" id="3KT4CxIEH2g" role="3cqZAp">
-          <node concept="3cpWsn" id="3KT4CxIEH2h" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYkfT" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYkfU" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="3KT4CxIEH2i" role="1tU5fm" />
-            <node concept="NRdvd" id="3KT4CxIEH2j" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYkfQ" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYkfV" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="3KT4CxIEH2k" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYkfW" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="3KT4CxIEH2l" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYkfX" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures2" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="3KT4CxIEH2n" role="3cqZAp">
-          <node concept="37vLTw" id="3KT4CxIEH2o" role="3vFALc">
-            <ref role="3cqZAo" node="3KT4CxIEH2h" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYkjQ" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYkjk" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYkfU" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYkn2" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -429,27 +577,34 @@
             <property role="3SKdUp" value="optional children" />
           </node>
         </node>
-        <node concept="3cpWs8" id="3KT4CxIEJYD" role="3cqZAp">
-          <node concept="3cpWsn" id="3KT4CxIEJYE" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYkn$" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYkn_" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="3KT4CxIEJYF" role="1tU5fm" />
-            <node concept="NRdvd" id="3KT4CxIEJYG" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYknz" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYknA" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="3KT4CxIEJYH" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYknB" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="3KT4CxIEJYI" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYknC" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures3" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="3KT4CxIEKl$" role="3cqZAp">
-          <node concept="37vLTw" id="3KT4CxIEKnf" role="3vwVQn">
-            <ref role="3cqZAo" node="3KT4CxIEJYE" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYkrA" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYkr4" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYkn_" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYkuM" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -463,27 +618,34 @@
             <property role="3SKdUp" value="xor children" />
           </node>
         </node>
-        <node concept="3cpWs8" id="3KT4CxIEKRc" role="3cqZAp">
-          <node concept="3cpWsn" id="3KT4CxIEKRd" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYkvk" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYkvl" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="3KT4CxIEKRe" role="1tU5fm" />
-            <node concept="NRdvd" id="3KT4CxIEKRf" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYkvh" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYkvm" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="3KT4CxIEKRg" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYkvn" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="3KT4CxIEKRh" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYkvo" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures4" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="3KT4CxIEL0j" role="3cqZAp">
-          <node concept="37vLTw" id="3KT4CxIEL1W" role="3vFALc">
-            <ref role="3cqZAo" node="3KT4CxIEKRd" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYky$" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYky2" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYkvl" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYkE4" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -497,27 +659,34 @@
             <property role="3SKdUp" value="two independent derived features" />
           </node>
         </node>
-        <node concept="3cpWs8" id="3KT4CxILbs$" role="3cqZAp">
-          <node concept="3cpWsn" id="3KT4CxILbs_" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYkEA" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYkEB" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="3KT4CxILbsA" role="1tU5fm" />
-            <node concept="NRdvd" id="3KT4CxILbsB" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYkE$" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYkEC" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="BaHAS" id="3KT4CxILbsC" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYkED" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="3KT4CxILbsD" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYkEE" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures5" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="3KT4CxILbDW" role="3cqZAp">
-          <node concept="37vLTw" id="3KT4CxILbG7" role="3vwVQn">
-            <ref role="3cqZAo" node="3KT4CxILbs_" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYkIM" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYkI8" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYkEB" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYkQv" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -531,27 +700,34 @@
             <property role="3SKdUp" value="conflicts constraints on derived features - FAIL" />
           </node>
         </node>
-        <node concept="3cpWs8" id="4qsm5C8ucu7" role="3cqZAp">
-          <node concept="3cpWsn" id="4qsm5C8ucu8" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYkR1" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYkR2" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="4qsm5C8ucu9" role="1tU5fm" />
-            <node concept="NRdvd" id="4qsm5C8ucua" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYkQY" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYkR3" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="4qsm5C8ucub" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYkR4" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="4qsm5C8ucuc" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYkR5" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures6" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="4qsm5C8uj19" role="3cqZAp">
-          <node concept="37vLTw" id="4qsm5C8uj2i" role="3vFALc">
-            <ref role="3cqZAo" node="4qsm5C8ucu8" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYkVv" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYkU$" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYkR2" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYl3p" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -565,27 +741,34 @@
             <property role="3SKdUp" value="requires constraints on derived features - FAIL" />
           </node>
         </node>
-        <node concept="3cpWs8" id="4qsm5C8uj3g" role="3cqZAp">
-          <node concept="3cpWsn" id="4qsm5C8uj3h" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYl3V" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYl3W" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="4qsm5C8uj3i" role="1tU5fm" />
-            <node concept="NRdvd" id="4qsm5C8uj3j" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYl3T" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYl3X" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="4qsm5C8uj3k" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYl3Y" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="4qsm5C8uj3l" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYl3Z" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures7" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="4qsm5C8umJh" role="3cqZAp">
-          <node concept="37vLTw" id="4qsm5C8umKq" role="3vFALc">
-            <ref role="3cqZAo" node="4qsm5C8uj3h" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYl81" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYl7v" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYl3W" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYlg8" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -599,27 +782,34 @@
             <property role="3SKdUp" value="cross constraints on derived features - SUCCESS" />
           </node>
         </node>
-        <node concept="3cpWs8" id="4qsm5C8umRU" role="3cqZAp">
-          <node concept="3cpWsn" id="4qsm5C8umRV" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYlgE" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYlgF" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="4qsm5C8umRW" role="1tU5fm" />
-            <node concept="NRdvd" id="4qsm5C8umRX" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYlgD" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYlgG" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="BaHAS" id="4qsm5C8umRY" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYlgH" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="4qsm5C8umRZ" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYlgI" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures8" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="4qsm5C8umYP" role="3cqZAp">
-          <node concept="37vLTw" id="4qsm5C8umZY" role="3vwVQn">
-            <ref role="3cqZAo" node="4qsm5C8umRV" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYlkL" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYlkf" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYlgF" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYlt5" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -633,27 +823,34 @@
             <property role="3SKdUp" value="parenthesis in expressions of derived features - SUCCESS" />
           </node>
         </node>
-        <node concept="3cpWs8" id="h7gcTUWRxx" role="3cqZAp">
-          <node concept="3cpWsn" id="h7gcTUWRxy" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYltB" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYltC" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="h7gcTUWRxz" role="1tU5fm" />
-            <node concept="NRdvd" id="h7gcTUWRx$" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYlt$" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYltD" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="BaHAS" id="h7gcTUWRx_" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYltE" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="h7gcTUWRxA" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYltF" role="37wK5m">
                 <property role="Xl_RC" value="DerivedFeatures9" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="h7gcTUWRxB" role="3cqZAp">
-          <node concept="37vLTw" id="h7gcTUWRxC" role="3vwVQn">
-            <ref role="3cqZAo" node="h7gcTUWRxy" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYlxJ" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYlxd" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYltC" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYlE8" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -665,27 +862,34 @@
       <property role="TrG5h" value="testComplex2" />
       <node concept="3cqZAl" id="44j14BH8Zr1" role="3clF45" />
       <node concept="3clFbS" id="44j14BH8Zr2" role="3clF47">
-        <node concept="3cpWs8" id="44j14BH8Zr3" role="3cqZAp">
-          <node concept="3cpWsn" id="44j14BH8Zr4" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYlFK" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYlFL" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="44j14BH8Zr5" role="1tU5fm" />
-            <node concept="NRdvd" id="44j14BH8Zr6" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYlFJ" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYlFM" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="44j14BH8Zr7" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYlFN" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="44j14BH8Zr8" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYlFO" role="37wK5m">
                 <property role="Xl_RC" value="Motor" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vFxKo" id="44j14BH8Zzo" role="3cqZAp">
-          <node concept="37vLTw" id="44j14BH8Z_3" role="3vFALc">
-            <ref role="3cqZAo" node="44j14BH8Zr4" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYlJG" role="3vFALc">
+            <node concept="37vLTw" id="6A4JgbUYlJa" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYlFL" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYlO1" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
@@ -694,27 +898,34 @@
       <property role="TrG5h" value="testComplex1" />
       <node concept="3cqZAl" id="44j14BH8Dvs" role="3clF45" />
       <node concept="3clFbS" id="44j14BH8Dvt" role="3clF47">
-        <node concept="3cpWs8" id="44j14BH8Dvu" role="3cqZAp">
-          <node concept="3cpWsn" id="44j14BH8Dvv" role="3cpWs9">
+        <node concept="3cpWs8" id="6A4JgbUYlOz" role="3cqZAp">
+          <node concept="3cpWsn" id="6A4JgbUYlO$" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="44j14BH8Dvw" role="1tU5fm" />
-            <node concept="NRdvd" id="44j14BH8Dvx" role="33vP2m">
+            <node concept="3uibUv" id="6A4JgbUYlOy" role="1tU5fm">
+              <ref role="3uigEE" to="vy7l:tSjOfAfjPo" resolve="FeatureModelAnalysisResult" />
+            </node>
+            <node concept="NRdvd" id="6A4JgbUYlO_" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
               <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
-              <node concept="BaHAS" id="44j14BH8Dvy" role="37wK5m">
+              <node concept="BaHAS" id="6A4JgbUYlOA" role="37wK5m">
                 <property role="BaBD8" value="fm" />
                 <property role="BaHAW" value="test.analyses.var.testcode.fm" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="44j14BH8Dvz" role="37wK5m">
+              <node concept="Xl_RD" id="6A4JgbUYlOB" role="37wK5m">
                 <property role="Xl_RC" value="IntelligentActuatorFamily" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="44j14BH8Dv$" role="3cqZAp">
-          <node concept="37vLTw" id="44j14BH8Dv_" role="3vwVQn">
-            <ref role="3cqZAo" node="44j14BH8Dvv" resolve="res" />
+          <node concept="2OqwBi" id="6A4JgbUYlTj" role="3vwVQn">
+            <node concept="37vLTw" id="6A4JgbUYlSL" role="2Oq$k0">
+              <ref role="3cqZAo" node="6A4JgbUYlO$" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6A4JgbUYlXK" role="2OqNvi">
+              <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
+            </node>
           </node>
         </node>
       </node>
