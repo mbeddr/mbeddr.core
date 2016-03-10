@@ -147,6 +147,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
@@ -192,6 +193,9 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
+      </concept>
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
@@ -272,6 +276,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1088,76 +1093,6 @@
       <ref role="1YaFvo" to="q5q6:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
     </node>
   </node>
-  <node concept="1YbPZF" id="7CSU6RRZLZV">
-    <property role="TrG5h" value="typeof_Implies" />
-    <property role="3GE5qa" value="expressions" />
-    <node concept="3clFbS" id="7CSU6RRZLZW" role="18ibNy">
-      <node concept="1ZobV4" id="4osTp5pmcld" role="3cqZAp">
-        <property role="3wDh2S" value="true" />
-        <node concept="mw_s8" id="4osTp5pmclf" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4osTp5pmclg" role="mwGJk">
-            <node concept="2OqwBi" id="4osTp5pmclh" role="1Z2MuG">
-              <node concept="1YBJjd" id="7CSU6RRZM4C" role="2Oq$k0">
-                <ref role="1YBMHb" to="vnly:7CSU6RRZLZY" resolve="implies" />
-              </node>
-              <node concept="3TrEf2" id="7CSU6RRZT9Q" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7CSU6RRZM0w" role="1ZfhKB">
-          <node concept="2pJPEk" id="7CSU6RRZM0x" role="mwGJk">
-            <node concept="2pJPED" id="7CSU6RRZM0y" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1ZobV4" id="7CSU6RRZTdV" role="3cqZAp">
-        <property role="3wDh2S" value="true" />
-        <node concept="mw_s8" id="7CSU6RRZTdW" role="1ZfhK$">
-          <node concept="1Z2H0r" id="7CSU6RRZTdX" role="mwGJk">
-            <node concept="2OqwBi" id="7CSU6RRZTdY" role="1Z2MuG">
-              <node concept="1YBJjd" id="7CSU6RRZTdZ" role="2Oq$k0">
-                <ref role="1YBMHb" to="vnly:7CSU6RRZLZY" resolve="implies" />
-              </node>
-              <node concept="3TrEf2" id="7CSU6RRZTLW" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7CSU6RRZTe1" role="1ZfhKB">
-          <node concept="2pJPEk" id="7CSU6RRZTe2" role="mwGJk">
-            <node concept="2pJPED" id="7CSU6RRZTe3" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1Z5TYs" id="3kEjc_WIG$x" role="3cqZAp">
-        <node concept="mw_s8" id="3kEjc_WIG$$" role="1ZfhK$">
-          <node concept="1Z2H0r" id="3kEjc_WIG$u" role="mwGJk">
-            <node concept="1YBJjd" id="636FvLn0bGH" role="1Z2MuG">
-              <ref role="1YBMHb" to="vnly:7CSU6RRZLZY" resolve="implies" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="3kEjc_WIG$_" role="1ZfhKB">
-          <node concept="2pJPEk" id="9mFkazbjm8" role="mwGJk">
-            <node concept="2pJPED" id="9mFkazbjm7" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7CSU6RRZLZY" role="1YuTPh">
-      <property role="TrG5h" value="implies" />
-      <ref role="1YaFvo" to="cetu:4fjBjwDqu9U" resolve="Implies" />
-    </node>
-  </node>
   <node concept="Q5z_Y" id="5zmbZKrh4FK">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="fix_analysisDepth" />
@@ -1450,31 +1385,18 @@
         </node>
       </node>
       <node concept="3clFbH" id="6$rx9V1QfgR" role="3cqZAp" />
-      <node concept="3clFbJ" id="3i$cQqpw6Fz" role="3cqZAp">
-        <node concept="3clFbS" id="3i$cQqpw6FA" role="3clFbx">
-          <node concept="2MkqsV" id="3i$cQqpw8n7" role="3cqZAp">
-            <node concept="Xl_RD" id="3i$cQqpw8ns" role="2MkJ7o">
-              <property role="Xl_RC" value="A Build Configuration must reside in the same model as the analysis config." />
-            </node>
-            <node concept="1YBJjd" id="3i$cQqpw8sG" role="2OEOjV">
-              <ref role="1YBMHb" node="6$rx9V1Q7yn" resolve="ac" />
-            </node>
-            <node concept="3Cnw8n" id="3i$cQqpzQqe" role="2OEOjU">
-              <ref role="QpYPw" node="3i$cQqpw9ox" resolve="addBuildConfigToModel" />
-              <node concept="3CnSsL" id="3i$cQqpzRup" role="3Coj4f">
-                <ref role="QkamJ" node="3i$cQqpw9Ok" resolve="ac" />
-                <node concept="1YBJjd" id="3i$cQqpzRuT" role="3CoRuB">
-                  <ref role="1YBMHb" node="6$rx9V1Q7yn" resolve="ac" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="3i$cQqpw7gq" role="3clFbw">
-          <node concept="37vLTw" id="3i$cQqpw771" role="2Oq$k0">
+      <node concept="2Mj0R9" id="7VJQUau7vi1" role="3cqZAp">
+        <node concept="2OqwBi" id="7VJQUau7vC4" role="2MkoU_">
+          <node concept="37vLTw" id="7VJQUau7vx6" role="2Oq$k0">
             <ref role="3cqZAo" node="4_A2_RN4x4S" resolve="bc" />
           </node>
-          <node concept="3w_OXm" id="3i$cQqpw7QF" role="2OqNvi" />
+          <node concept="3x8VRR" id="7VJQUau7vVG" role="2OqNvi" />
+        </node>
+        <node concept="1YBJjd" id="7VJQUau7vX5" role="2OEOjV">
+          <ref role="1YBMHb" node="6$rx9V1Q7yn" resolve="ac" />
+        </node>
+        <node concept="Xl_RD" id="7VJQUau7vVV" role="2MkJ7o">
+          <property role="Xl_RC" value="a BuildConfiguration must reside in the same model as the analysis config." />
         </node>
       </node>
       <node concept="3clFbH" id="3i$cQqpw7Tl" role="3cqZAp" />
@@ -1649,7 +1571,7 @@
               <node concept="3cpWs3" id="6mf3eSrhk$v" role="3uHU7B">
                 <node concept="3cpWs3" id="6mf3eSrhk$w" role="3uHU7B">
                   <node concept="Xl_RD" id="6mf3eSrhk$x" role="3uHU7B">
-                    <property role="Xl_RC" value="Please add " />
+                    <property role="Xl_RC" value="please add " />
                   </node>
                   <node concept="2GrUjf" id="6mf3eSrk_Ud" role="3uHU7w">
                     <ref role="2Gs0qQ" node="6mf3eSrkvgE" resolve="im" />
@@ -2289,6 +2211,46 @@
     <node concept="1YaCAy" id="2GZiJUXMkBw" role="1YuTPh">
       <property role="TrG5h" value="analysis" />
       <ref role="1YaFvo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VJQUau7iAD">
+    <property role="TrG5h" value="check_ICbmcSettings" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <node concept="3clFbS" id="7VJQUau7iAE" role="18ibNy">
+      <node concept="3clFbJ" id="7VJQUau7jhG" role="3cqZAp">
+        <node concept="3clFbS" id="7VJQUau7jhH" role="3clFbx">
+          <node concept="2MkqsV" id="7VJQUau7kKf" role="3cqZAp">
+            <node concept="Xl_RD" id="7VJQUau7kKx" role="2MkJ7o">
+              <property role="Xl_RC" value="unwinding assertions and partial loops must not be enabled at the same time" />
+            </node>
+            <node concept="1YBJjd" id="7VJQUau7kPD" role="2OEOjV">
+              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="7VJQUau7jt9" role="3clFbw">
+          <node concept="2OqwBi" id="7VJQUau7jwf" role="3uHU7w">
+            <node concept="1YBJjd" id="7VJQUau7jui" role="2Oq$k0">
+              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
+            </node>
+            <node concept="3TrcHB" id="7VJQUau7jBc" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7ehmsbAuTER" resolve="partialLoops" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7VJQUau7jks" role="3uHU7B">
+            <node concept="1YBJjd" id="7VJQUau7jhY" role="2Oq$k0">
+              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
+            </node>
+            <node concept="3TrcHB" id="7VJQUau7jnV" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7ehmsbAuTDX" resolve="unwindingAssertions" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VJQUau7iAG" role="1YuTPh">
+      <property role="TrG5h" value="iCbmcSettings" />
+      <ref role="1YaFvo" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
     </node>
   </node>
 </model>

@@ -516,7 +516,6 @@
       <ref role="3V$Cn$" node="4xcwUoASP4y" resolve="loopTo30True" />
     </node>
     <node concept="1nvAUJ" id="5WfaC2Itx9A" role="3V$2$K">
-      <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="true" />
       <property role="2lUHrg" value="35" />
       <property role="2lUGbD" value="none" />
@@ -529,7 +528,6 @@
       <ref role="3V$Cn$" node="5WfaC2ItaQl" resolve="loopTo30_GreaterThan31" />
     </node>
     <node concept="1nvAUJ" id="4LT5zeEJyHP" role="3V$2$K">
-      <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="true" />
       <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
