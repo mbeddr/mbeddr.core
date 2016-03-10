@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="actionsfilter" />
@@ -11,7 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" folder="blutil" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb.editor/com.mbeddr.mpsutil.breadcrumb.editor.mpl" folder="breadcrumb" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.mpl" folder="breadcrumb" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="buildutil" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu.reftarget/com.mbeddr.mpsutil.ccmenu.reftarget.mpl" folder="ccmenu" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu.sandboxlang/com.mbeddr.mpsutil.ccmenu.sandboxlang.mpl" folder="ccmenu" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu/com.mbeddr.mpsutil.ccmenu.mpl" folder="ccmenu" />
@@ -101,6 +102,7 @@
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildutil.runtime/com.mbeddr.mpsutil.buildutil.runtime.msd" folder="buildutil" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage/com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage.msd" folder="ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.runtime/com.mbeddr.mpsutil.ccmenu.reftarget.runtime.msd" folder="ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.runtime/com.mbeddr.mpsutil.ccmenu.runtime.msd" folder="ccmenu" />

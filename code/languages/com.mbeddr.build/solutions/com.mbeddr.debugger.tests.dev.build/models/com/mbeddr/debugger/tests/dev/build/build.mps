@@ -385,10 +385,10 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2coa6XmpnCO" role="3bR37C">
-          <node concept="3bR9La" id="2coa6XmpnCP" role="1SiIV1">
+        <node concept="1SiIV0" id="6BHziVI1Ff_" role="3bR37C">
+          <node concept="3bR9La" id="6BHziVI1FfA" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:5qO$P$Prhtk" resolve="Eclipse.Debugger" />
+            <ref role="3bR37D" to="p6ld:6YaWssNXVWy" resolve="Eclipse.Debugger" />
           </node>
         </node>
       </node>
@@ -458,12 +458,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2coa6XmpnDa" role="3bR37C">
-          <node concept="3bR9La" id="2coa6XmpnDb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:5qO$P$Prhtk" resolve="Eclipse.Debugger" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2coa6XmpnDc" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmpnDd" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -514,6 +508,12 @@
             <ref role="3bR37D" to="p6ld:5jdSgR7UUMt" resolve="com.mbeddr.core.debugger.gdb" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6BHziVI1FfT" role="3bR37C">
+          <node concept="3bR9La" id="6BHziVI1FfU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6YaWssNXVWy" resolve="Eclipse.Debugger" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAuv5u" role="1hWBAP">
@@ -523,6 +523,21 @@
       </node>
       <node concept="22LTRM" id="7eF9rfAuv5w" role="22LTRK">
         <ref role="22LTRN" node="7eF9rfAuv4P" resolve="test.debugger.core" />
+      </node>
+    </node>
+    <node concept="398rNT" id="6BHziVHZYZU" role="1l3spd">
+      <property role="TrG5h" value="spawner.artifacts" />
+      <node concept="398BVA" id="6BHziVHZYZT" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61h" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="6BHziVHZYZS" role="iGT6I">
+          <property role="2Ry0Am" value="spawner" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="6BHziVHZYZW" role="1l3spa">
+      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
+      <node concept="398BVA" id="6BHziVHZYZV" role="2JcizS">
+        <ref role="398BVh" node="6BHziVHZYZU" resolve="spawner.artifacts" />
       </node>
     </node>
   </node>

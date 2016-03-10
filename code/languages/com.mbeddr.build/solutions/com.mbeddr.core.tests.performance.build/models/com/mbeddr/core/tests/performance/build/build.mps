@@ -335,6 +335,21 @@
         <ref role="22LTRN" node="7eF9rfAuutL" resolve="test.ts.core.performance" />
       </node>
     </node>
+    <node concept="398rNT" id="6BHziVHZYZZ" role="1l3spd">
+      <property role="TrG5h" value="spawner.artifacts" />
+      <node concept="398BVA" id="6BHziVHZYZY" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn618" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="6BHziVHZYZX" role="iGT6I">
+          <property role="2Ry0Am" value="spawner" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="6BHziVHZZ01" role="1l3spa">
+      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
+      <node concept="398BVA" id="6BHziVHZZ00" role="2JcizS">
+        <ref role="398BVh" node="6BHziVHZYZZ" resolve="spawner.artifacts" />
+      </node>
+    </node>
   </node>
 </model>
 

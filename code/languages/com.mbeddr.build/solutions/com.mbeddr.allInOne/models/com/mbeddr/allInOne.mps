@@ -409,6 +409,21 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6BHziVHZYYO" role="1l3spd">
+      <property role="TrG5h" value="spawner.artifacts" />
+      <node concept="398BVA" id="6BHziVHZYYN" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn60V" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="6BHziVHZYYM" role="iGT6I">
+          <property role="2Ry0Am" value="spawner" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="6BHziVHZYYQ" role="1l3spa">
+      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
+      <node concept="398BVA" id="6BHziVHZYYP" role="2JcizS">
+        <ref role="398BVh" node="6BHziVHZYYO" resolve="spawner.artifacts" />
+      </node>
+    </node>
   </node>
 </model>
 
