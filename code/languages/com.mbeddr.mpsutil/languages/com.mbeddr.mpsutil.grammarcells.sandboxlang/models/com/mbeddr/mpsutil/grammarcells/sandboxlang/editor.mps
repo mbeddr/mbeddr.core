@@ -1004,5 +1004,31 @@
       <node concept="B$lHz" id="4f8kqjwyIzM" role="3EZMnx" />
     </node>
   </node>
+  <node concept="24kQdi" id="24ObHxTtaCw">
+    <ref role="1XX52x" to="ibwz:24ObHxTtaCb" resolve="TEST_SetOptionalNextToChild" />
+    <node concept="3EZMnI" id="24ObHxTtaCL" role="2wV5jI">
+      <node concept="3F0ifn" id="24ObHxTtaCM" role="3EZMnx">
+        <property role="3F0ifm" value="TEST_SetOptionalNextToChild" />
+      </node>
+      <node concept="3F1sOY" id="24ObHxTtaJw" role="3EZMnx">
+        <ref role="1NtTu8" to="ibwz:24ObHxTtaFo" />
+      </node>
+      <node concept="_tjkj" id="24ObHxTtaD1" role="3EZMnx">
+        <node concept="3EZMnI" id="24ObHxTtaD2" role="_tjki">
+          <node concept="3F0ifn" id="24ObHxTtaD3" role="3EZMnx">
+            <property role="3F0ifm" value=",," />
+          </node>
+          <node concept="3F1sOY" id="24ObHxTtaD4" role="3EZMnx">
+            <ref role="1NtTu8" to="ibwz:24ObHxTtaM5" />
+          </node>
+          <node concept="l2Vlx" id="24ObHxTtaD5" role="2iSdaV" />
+          <node concept="VPM3Z" id="24ObHxTtaD6" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="24ObHxTtaD7" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

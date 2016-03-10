@@ -524,5 +524,23 @@
       <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="24ObHxTtaCb">
+    <property role="1pbfSe" value="1700210461" />
+    <property role="TrG5h" value="TEST_SetOptionalNextToChild" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="24ObHxTtaFo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr1" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="1TJgyj" id="24ObHxTtaM5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr2" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="PrWs8" id="24ObHxTuh3C" role="PzmwI">
+      <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
+    </node>
+  </node>
 </model>
 
