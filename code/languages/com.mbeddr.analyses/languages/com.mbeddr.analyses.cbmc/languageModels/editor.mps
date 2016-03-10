@@ -7964,5 +7964,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1qq6r78BL_h">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+    <node concept="3EZMnI" id="1qq6r78BL_p" role="2wV5jI">
+      <node concept="3F1sOY" id="1qq6r78BL_D" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:7FQByU3CrD0" />
+      </node>
+      <node concept="3F0ifn" id="1qq6r78BL_S" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="1qq6r78BLAp" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:7FQByU3CrD1" />
+      </node>
+      <node concept="l2Vlx" id="1qq6r78BL_s" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
