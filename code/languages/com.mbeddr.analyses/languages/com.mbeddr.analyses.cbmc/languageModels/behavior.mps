@@ -16,6 +16,7 @@
     <import index="p8vh" ref="r:774ac595-6c08-4ec5-a945-c0e06119d39d(com.mbeddr.analyses.cbmc.rt.ui)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
+    <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -363,7 +364,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2AZbPfOQ$SC">
-    <ref role="13h7C2" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
+    <ref role="13h7C2" to="cetu:4fjBjwDqu9U" resolve="Implies" />
     <node concept="13hLZK" id="2AZbPfOQ$SD" role="13h7CW">
       <node concept="3clFbS" id="2AZbPfOQ$SE" role="2VODD2" />
     </node>

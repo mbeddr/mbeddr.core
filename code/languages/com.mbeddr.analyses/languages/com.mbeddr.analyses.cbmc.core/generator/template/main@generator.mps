@@ -28,9 +28,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
-        <child id="1239714902950" name="expression" index="2$L3a6" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -43,9 +40,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -68,9 +62,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -80,7 +71,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
@@ -834,18 +824,12 @@
                                       <node concept="3cpWsa" id="2VzlLcGXbgg" role="37wK5m">
                                         <ref role="3cqZAo" node="2VzlLcGWVeI" resolve="gswitch" />
                                       </node>
-                                      <node concept="10M0yZ" id="2VzlLcGXbgh" role="37wK5m">
-                                        <ref role="1PxDUh" to="yqjk:576QrOJujiX" resolve="GSwitchExpressionUtils" />
-                                        <ref role="3cqZAo" to="yqjk:3x0R1LJ5DpG" resolve="orderOfNondererminismExpression" />
+                                      <node concept="2OqwBi" id="4UBT2wvobKS" role="37wK5m">
+                                        <node concept="1iwH7S" id="4UBT2wvob_L" role="2Oq$k0" />
+                                        <node concept="1qCSth" id="4UBT2wvoc1Y" role="2OqNvi">
+                                          <property role="1qCSqd" value="orderOfNondeterminismExpression" />
+                                        </node>
                                       </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="2VzlLcGWVeW" role="3cqZAp">
-                                  <node concept="3uNrnE" id="2VzlLcGWVeX" role="3clFbG">
-                                    <node concept="10M0yZ" id="2VzlLcGWVeY" role="2$L3a6">
-                                      <ref role="1PxDUh" to="yqjk:576QrOJujiX" resolve="GSwitchExpressionUtils" />
-                                      <ref role="3cqZAo" to="yqjk:3x0R1LJ5DpG" resolve="orderOfNondererminismExpression" />
                                     </node>
                                   </node>
                                 </node>
@@ -863,19 +847,9 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="2VzlLcGWVf3" role="lGtFl">
+                        <property role="1qytDF" value="orderOfNondeterminismExpression" />
                         <node concept="3JmXsc" id="2VzlLcGWVf4" role="3Jn$fo">
                           <node concept="3clFbS" id="2VzlLcGWVf5" role="2VODD2">
-                            <node concept="3clFbF" id="2VzlLcGWVf6" role="3cqZAp">
-                              <node concept="37vLTI" id="2VzlLcGWVf7" role="3clFbG">
-                                <node concept="3cmrfG" id="2VzlLcGWVf8" role="37vLTx">
-                                  <property role="3cmrfH" value="0" />
-                                </node>
-                                <node concept="10M0yZ" id="2VzlLcGWVf9" role="37vLTJ">
-                                  <ref role="1PxDUh" to="yqjk:576QrOJujiX" resolve="GSwitchExpressionUtils" />
-                                  <ref role="3cqZAo" to="yqjk:3x0R1LJ5DpG" resolve="orderOfNondererminismExpression" />
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3cpWs8" id="2VzlLcGWVfa" role="3cqZAp">
                               <node concept="3cpWsn" id="2VzlLcGWVfb" role="3cpWs9">
                                 <property role="TrG5h" value="gswitch" />
@@ -960,18 +934,12 @@
                                       <node concept="3cpWsa" id="2S1OXleKS5O" role="37wK5m">
                                         <ref role="3cqZAo" node="2S1OXleK_l0" resolve="gswitch" />
                                       </node>
-                                      <node concept="10M0yZ" id="2S1OXleKS5P" role="37wK5m">
-                                        <ref role="1PxDUh" to="yqjk:576QrOJujiX" resolve="GSwitchExpressionUtils" />
-                                        <ref role="3cqZAo" to="yqjk:2S1OXleKTQQ" resolve="orderOfActivationExpression" />
+                                      <node concept="2OqwBi" id="4UBT2wvogSR" role="37wK5m">
+                                        <node concept="1iwH7S" id="4UBT2wvogC3" role="2Oq$k0" />
+                                        <node concept="1qCSth" id="4UBT2wvohas" role="2OqNvi">
+                                          <property role="1qCSqd" value="orderOfActivationExpression" />
+                                        </node>
                                       </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="2S1OXleK_le" role="3cqZAp">
-                                  <node concept="3uNrnE" id="2S1OXleK_lf" role="3clFbG">
-                                    <node concept="10M0yZ" id="2S1OXleK_lg" role="2$L3a6">
-                                      <ref role="1PxDUh" to="yqjk:576QrOJujiX" resolve="GSwitchExpressionUtils" />
-                                      <ref role="3cqZAo" to="yqjk:2S1OXleKTQQ" resolve="orderOfActivationExpression" />
                                     </node>
                                   </node>
                                 </node>
@@ -989,19 +957,9 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="2S1OXleK_ll" role="lGtFl">
+                        <property role="1qytDF" value="orderOfActivationExpression" />
                         <node concept="3JmXsc" id="2S1OXleK_lm" role="3Jn$fo">
                           <node concept="3clFbS" id="2S1OXleK_ln" role="2VODD2">
-                            <node concept="3clFbF" id="2S1OXleKSRV" role="3cqZAp">
-                              <node concept="37vLTI" id="2S1OXleKV82" role="3clFbG">
-                                <node concept="3cmrfG" id="2S1OXleKVw5" role="37vLTx">
-                                  <property role="3cmrfH" value="0" />
-                                </node>
-                                <node concept="10M0yZ" id="2S1OXleKSRX" role="37vLTJ">
-                                  <ref role="1PxDUh" to="yqjk:576QrOJujiX" resolve="GSwitchExpressionUtils" />
-                                  <ref role="3cqZAo" to="yqjk:2S1OXleKTQQ" resolve="orderOfActivationExpression" />
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3cpWs8" id="2S1OXleK_ls" role="3cqZAp">
                               <node concept="3cpWsn" id="2S1OXleK_lt" role="3cpWs9">
                                 <property role="TrG5h" value="gswitch" />

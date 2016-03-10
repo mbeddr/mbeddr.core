@@ -72,6 +72,10 @@
       <concept id="1156681608090854095" name="com.mbeddr.analyses.acsl.structure.Old" flags="ng" index="10tJ$4">
         <child id="1156681608090856601" name="var" index="10tJti" />
       </concept>
+      <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
+        <child id="6715381068726941300" name="generationKind" index="31UYnO" />
+      </concept>
+      <concept id="6715381068727236081" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationDoNothing" flags="ng" index="31VQpL" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -280,6 +284,9 @@
   <node concept="2v9HqL" id="10dmWHguyWX">
     <node concept="2Q9Fgs" id="10dmWHguyWY" role="2Q9xDr">
       <node concept="2Q9FjX" id="10dmWHguyWZ" role="2Q9FjI" />
+    </node>
+    <node concept="31U8uV" id="20bhQjaOQqP" role="2Q9xDr">
+      <node concept="31VQpL" id="20bhQjaOQqQ" role="31UYnO" />
     </node>
   </node>
 </model>

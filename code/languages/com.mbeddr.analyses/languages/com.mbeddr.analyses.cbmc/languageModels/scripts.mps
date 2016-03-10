@@ -69,6 +69,7 @@
       </concept>
       <concept id="1177457850499" name="jetbrains.mps.lang.script.structure.MigrationScriptPart_Instance" flags="lg" index="_XfAh">
         <property id="1177457972041" name="description" index="_XH9r" />
+        <property id="1225457189692" name="showAsIntention" index="1iWc8x" />
         <reference id="1177457957477" name="affectedInstanceConcept" index="_XDHR" />
         <child id="1177457957478" name="affectedInstancePredicate" index="_XDHO" />
         <child id="1177458005323" name="affectedInstanceUpdater" index="_XPhp" />
@@ -82,6 +83,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -92,7 +94,6 @@
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -124,6 +125,7 @@
     <property role="_Wzho" value="MBEDDR 2015-01-07: Migrate analyses configurations" />
     <node concept="_XfAh" id="1Qze4b3gLwC" role="_YvDr">
       <property role="_XH9r" value="Migrates Configs " />
+      <property role="1iWc8x" value="true" />
       <ref role="_XDHR" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
       <node concept="_ZGcI" id="1Qze4b3gLwE" role="_XPhp">
         <node concept="3clFbS" id="1Qze4b3gLwG" role="2VODD2">
@@ -227,7 +229,7 @@
             <node concept="2OqwBi" id="YjU9tufl9x" role="3clFbG">
               <node concept="2OqwBi" id="YjU9tufkzF" role="2Oq$k0">
                 <node concept="_YI3z" id="YjU9tufkr8" role="2Oq$k0" />
-                <node concept="3NT_Vc" id="YjU9tufl1p" role="2OqNvi" />
+                <node concept="2yIwOk" id="2GZiJUXNiQy" role="2OqNvi" />
               </node>
               <node concept="3O6GUB" id="7hNQJ9lL1Kz" role="2OqNvi">
                 <node concept="chp4Y" id="7hNQJ9lL2oF" role="3QVz_e">
