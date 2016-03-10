@@ -20307,7 +20307,7 @@
     </node>
   </node>
   <node concept="bUwia" id="3pFNVizFeDW">
-    <property role="TrG5h" value="mc09_splitableCell" />
+    <property role="TrG5h" value="mc09_splittableCell" />
     <node concept="3aamgX" id="48TKAW3Vg0C" role="3acgRq">
       <ref role="30HIoZ" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
       <node concept="1Koe21" id="48TKAW3Vg0D" role="1lVwrX">
