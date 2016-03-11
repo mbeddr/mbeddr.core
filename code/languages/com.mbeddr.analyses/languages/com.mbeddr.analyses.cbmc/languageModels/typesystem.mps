@@ -183,11 +183,21 @@
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
         <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -210,6 +220,7 @@
         <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
       </concept>
       <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
       <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
         <child id="1216383511839" name="argumentType" index="Q6QK4" />
       </concept>
@@ -285,6 +296,9 @@
       </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
+      </concept>
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -2251,6 +2265,97 @@
     <node concept="1YaCAy" id="7VJQUau7iAG" role="1YuTPh">
       <property role="TrG5h" value="iCbmcSettings" />
       <ref role="1YaFvo" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4Sxr3A_YBqU">
+    <property role="TrG5h" value="check_Implies_old" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="4Sxr3A_YBqV" role="18ibNy">
+      <node concept="2MkqsV" id="4Sxr3A_YCze" role="3cqZAp">
+        <node concept="Xl_RD" id="4Sxr3A_YCzt" role="2MkJ7o">
+          <property role="Xl_RC" value="deprecated concept - use 'implies' from the math-language" />
+        </node>
+        <node concept="1YBJjd" id="4Sxr3A_YC$c" role="2OEOjV">
+          <ref role="1YBMHb" node="4Sxr3A_YBqX" resolve="implies_old" />
+        </node>
+        <node concept="3Cnw8n" id="4Sxr3A_YEfN" role="2OEOjU">
+          <property role="ARO6o" value="true" />
+          <ref role="QpYPw" node="4Sxr3A_YCFS" resolve="convertImpliesOldToImpliesMath" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4Sxr3A_YBqX" role="1YuTPh">
+      <property role="TrG5h" value="implies_old" />
+      <ref role="1YaFvo" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="4Sxr3A_YCFS">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="convertImpliesOldToImpliesMath" />
+    <node concept="Q5ZZ6" id="4Sxr3A_YCFT" role="Q6x$H">
+      <node concept="3clFbS" id="4Sxr3A_YCFU" role="2VODD2">
+        <node concept="3cpWs8" id="4Sxr3A_YCLU" role="3cqZAp">
+          <node concept="3cpWsn" id="4Sxr3A_YCLV" role="3cpWs9">
+            <property role="TrG5h" value="imp" />
+            <node concept="3Tqbb2" id="4Sxr3A_YCLS" role="1tU5fm">
+              <ref role="ehGHo" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+            </node>
+            <node concept="1PxgMI" id="4Sxr3A_YCLW" role="33vP2m">
+              <ref role="1PxNhF" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+              <node concept="Q6c8r" id="4Sxr3A_YCLX" role="1PxMeX" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Sxr3A_YE2t" role="3cqZAp">
+          <node concept="3cpWsn" id="4Sxr3A_YE2u" role="3cpWs9">
+            <property role="TrG5h" value="newImplies" />
+            <node concept="3Tqbb2" id="4Sxr3A_YE2p" role="1tU5fm">
+              <ref role="ehGHo" to="cetu:4fjBjwDqu9U" resolve="Implies" />
+            </node>
+            <node concept="2pJPEk" id="4Sxr3A_YE2v" role="33vP2m">
+              <node concept="2pJPED" id="4Sxr3A_YE2w" role="2pJPEn">
+                <ref role="2pJxaS" to="cetu:4fjBjwDqu9U" resolve="Implies" />
+                <node concept="2pIpSj" id="4Sxr3A_YE2x" role="2pJxcM">
+                  <ref role="2pIpSl" to="mj1l:7FQByU3CrD0" />
+                  <node concept="36biLy" id="4Sxr3A_YE2y" role="2pJxcZ">
+                    <node concept="2OqwBi" id="4Sxr3A_YE2z" role="36biLW">
+                      <node concept="37vLTw" id="4Sxr3A_YE2$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4Sxr3A_YCLV" resolve="imp" />
+                      </node>
+                      <node concept="3TrEf2" id="4Sxr3A_YE2_" role="2OqNvi">
+                        <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pIpSj" id="4Sxr3A_YE2A" role="2pJxcM">
+                  <ref role="2pIpSl" to="mj1l:7FQByU3CrD1" />
+                  <node concept="36biLy" id="4Sxr3A_YE2B" role="2pJxcZ">
+                    <node concept="2OqwBi" id="4Sxr3A_YE2C" role="36biLW">
+                      <node concept="37vLTw" id="4Sxr3A_YE2D" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4Sxr3A_YCLV" resolve="imp" />
+                      </node>
+                      <node concept="3TrEf2" id="4Sxr3A_YE2E" role="2OqNvi">
+                        <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Sxr3A_YE8h" role="3cqZAp">
+          <node concept="2OqwBi" id="4Sxr3A_YE9d" role="3clFbG">
+            <node concept="Q6c8r" id="4Sxr3A_YE8f" role="2Oq$k0" />
+            <node concept="1P9Npp" id="4Sxr3A_YEew" role="2OqNvi">
+              <node concept="37vLTw" id="4Sxr3A_YEeW" role="1P9ThW">
+                <ref role="3cqZAo" node="4Sxr3A_YE2u" resolve="newImplies" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
