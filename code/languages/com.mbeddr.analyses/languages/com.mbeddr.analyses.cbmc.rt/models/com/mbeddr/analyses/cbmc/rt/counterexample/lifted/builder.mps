@@ -2458,6 +2458,88 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3mMU_xnhs0j" role="jymVt" />
+    <node concept="2YIFZL" id="3SSJHCOMmH7" role="jymVt">
+      <property role="TrG5h" value="liftValueOfVarDecl" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="3SSJHCOMmH8" role="3clF47">
+        <node concept="Jncv_" id="3SSJHCOMmH9" role="3cqZAp">
+          <ref role="JncvD" to="clbe:7D99css6O15" resolve="EnumType" />
+          <node concept="2OqwBi" id="3SSJHCOMmHa" role="JncvB">
+            <node concept="37vLTw" id="3SSJHCOMmHb" role="2Oq$k0">
+              <ref role="3cqZAo" node="3SSJHCOMmHz" resolve="varDecl" />
+            </node>
+            <node concept="2qgKlT" id="3SSJHCOQrQf" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:1LDGRqyYkTX" resolve="getDeclaredType" />
+            </node>
+          </node>
+          <node concept="JncvC" id="3SSJHCOMmHd" role="JncvA">
+            <property role="TrG5h" value="et" />
+            <node concept="2jxLKc" id="3SSJHCOMmHe" role="1tU5fm" />
+          </node>
+          <node concept="3clFbS" id="3SSJHCOMmHf" role="Jncv$">
+            <node concept="3cpWs8" id="3SSJHCOMmHg" role="3cqZAp">
+              <node concept="3cpWsn" id="3SSJHCOMmHh" role="3cpWs9">
+                <property role="TrG5h" value="enumLiteral" />
+                <node concept="3Tqbb2" id="3SSJHCOMmHi" role="1tU5fm">
+                  <ref role="ehGHo" to="clbe:7D99css6O0t" resolve="EnumLiteral" />
+                </node>
+                <node concept="1rXfSq" id="3SSJHCOMncy" role="33vP2m">
+                  <ref role="37wK5l" node="5djBfpfWpl3" resolve="interpretEnum" />
+                  <node concept="37vLTw" id="3SSJHCOMnfw" role="37wK5m">
+                    <ref role="3cqZAo" node="3SSJHCOMmH_" resolve="rawValue" />
+                  </node>
+                  <node concept="Jnkvi" id="3SSJHCOMnjC" role="37wK5m">
+                    <ref role="1M0zk5" node="3SSJHCOMmHd" resolve="et" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3SSJHCOMmHm" role="3cqZAp">
+              <node concept="3clFbS" id="3SSJHCOMmHn" role="3clFbx">
+                <node concept="3cpWs6" id="3SSJHCOMmHo" role="3cqZAp">
+                  <node concept="2OqwBi" id="3SSJHCOMmHp" role="3cqZAk">
+                    <node concept="37vLTw" id="3SSJHCOMmHq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3SSJHCOMmHh" resolve="enumLiteral" />
+                    </node>
+                    <node concept="3TrcHB" id="3SSJHCOMmHr" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3SSJHCOMmHs" role="3clFbw">
+                <node concept="10Nm6u" id="3SSJHCOMmHt" role="3uHU7w" />
+                <node concept="37vLTw" id="3SSJHCOMmHu" role="3uHU7B">
+                  <ref role="3cqZAo" node="3SSJHCOMmHh" resolve="enumLiteral" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3SSJHCOMmHv" role="3cqZAp">
+          <node concept="37vLTw" id="3SSJHCOMmHw" role="3cqZAk">
+            <ref role="3cqZAo" node="3SSJHCOMmH_" resolve="rawValue" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3SSJHCOMmHx" role="1B3o_S" />
+      <node concept="17QB3L" id="3SSJHCOMmHy" role="3clF45" />
+      <node concept="37vLTG" id="3SSJHCOMmHz" role="3clF46">
+        <property role="TrG5h" value="varDecl" />
+        <node concept="3Tqbb2" id="3SSJHCOMmH$" role="1tU5fm">
+          <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3SSJHCOMmH_" role="3clF46">
+        <property role="TrG5h" value="rawValue" />
+        <node concept="17QB3L" id="3SSJHCOMmHA" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="3SSJHCOMmHB" role="lGtFl">
+        <property role="NWlVz" value="Tries to lift the raw value." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3SSJHCOMmCG" role="jymVt" />
     <node concept="3Tm1VV" id="6GZ1x5GuptU" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4Ow3NnwOtHu">
