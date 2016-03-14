@@ -9,6 +9,7 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -104,7 +105,7 @@
           <node concept="2OqwBi" id="3yV00hnTmis" role="3Ah4Yx">
             <node concept="3__QtB" id="3yV00hnTmi7" role="2Oq$k0" />
             <node concept="3TrEf2" id="2$xXL4PmIL1" role="2OqNvi">
-              <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+              <ref role="3Tt5mk" to="vs0r:6IWRcVPT6tm" />
             </node>
           </node>
         </node>

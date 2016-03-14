@@ -11,6 +11,7 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
@@ -104,7 +105,7 @@
               <node concept="1sne01" id="MD1ksBCr00" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBCrqi" role="1sne05">
-                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBCrze" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBCrHx" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBCrzM" role="2Oq$k0" />
@@ -168,7 +169,7 @@
               <node concept="1sne01" id="MD1ksBCyzF" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBCyBd" role="1sne05">
-                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBCyCz" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBCyME" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBCyCV" role="2Oq$k0" />

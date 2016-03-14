@@ -105,7 +105,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6323,14 +6323,14 @@
                         <node concept="1sne01" id="5qJgyBhcSxm" role="1sne8H">
                           <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                           <node concept="1sne01" id="5qJgyBhcSA9" role="1sne05">
-                            <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                            <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                             <node concept="3kUt_e" id="5qJgyBhcSC6" role="ccFIB">
                               <node concept="2OqwBi" id="5qJgyBhcSHf" role="3kUt_f">
                                 <node concept="2GrUjf" id="5qJgyBhcSCq" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="5qJgyBhcC7m" resolve="at" />
                                 </node>
                                 <node concept="3TrEf2" id="5qJgyBhcV4p" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+                                  <ref role="3Tt5mk" to="vs0r:6IWRcVPT6tm" />
                                 </node>
                               </node>
                             </node>
