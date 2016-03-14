@@ -12,9 +12,6 @@
         <child id="6275792049641600984" name="condition" index="c0U16" />
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
       </concept>
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
       <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
         <child id="8850915533694634146" name="elements" index="3o3WLE" />
       </concept>
@@ -111,6 +108,9 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="7763322639126652757" name="" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="" index="2umbIo" />
+      </concept>
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -234,12 +234,12 @@
           <node concept="3J0A42" id="5qJgyBhcoTO" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
+            <node concept="3TlMh9" id="5qJgyBhcoW1" role="1YbSNA">
+              <property role="2hmy$m" value="2" />
+            </node>
             <node concept="26Vqph" id="5qJgyBhcseQ" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="5qJgyBhcoW1" role="1YbSNA">
-              <property role="2hmy$m" value="2" />
             </node>
           </node>
           <node concept="3o3WLD" id="5qJgyBhcp2V" role="3XIe9u">

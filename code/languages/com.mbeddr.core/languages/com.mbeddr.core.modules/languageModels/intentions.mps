@@ -22,6 +22,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -108,7 +109,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2862,7 +2863,7 @@
                   <ref role="1shVQp" to="yq40:fwMInzpHoK" resolve="PointerType" />
                 </node>
                 <node concept="1sne01" id="MD1ksBFNWD" role="1sne05">
-                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBFO4V" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBFOdh" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBFO5l" role="2Oq$k0" />
@@ -2909,7 +2910,7 @@
               <node concept="1sne01" id="MD1ksBFUyf" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBFUV$" role="1sne05">
-                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBFV5I" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBFVhv" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBFV6Q" role="2Oq$k0" />
@@ -2959,7 +2960,7 @@
               <node concept="1sne01" id="MD1ksBG0FW" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBG0YZ" role="1sne05">
-                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBG15D" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBG1cY" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBG16l" role="2Oq$k0" />
@@ -3009,7 +3010,7 @@
               <node concept="1sne01" id="MD1ksBG4Y4" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBG5k3" role="1sne05">
-                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBG5qF" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBG5zd" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBG5r5" role="2Oq$k0" />

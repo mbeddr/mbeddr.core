@@ -10,9 +10,6 @@
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
       <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
         <child id="8850915533694634146" name="elements" index="3o3WLE" />
       </concept>
@@ -60,6 +57,9 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="7763322639126652757" name="" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="" index="2umbIo" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -199,12 +199,12 @@
           <node concept="3J0A42" id="3JtoPqpATZj" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
+            <node concept="3TlMh9" id="3JtoPqpAU8W" role="1YbSNA">
+              <property role="2hmy$m" value="5" />
+            </node>
             <node concept="26Vqph" id="3JtoPqpATT4" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="3JtoPqpAU8W" role="1YbSNA">
-              <property role="2hmy$m" value="5" />
             </node>
           </node>
           <node concept="3o3WLD" id="3JtoPqpAURc" role="3XIe9u">

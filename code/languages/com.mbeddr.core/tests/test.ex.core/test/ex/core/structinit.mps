@@ -9,9 +9,6 @@
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
       <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
         <child id="8850915533694634146" name="elements" index="3o3WLE" />
       </concept>
@@ -75,6 +72,9 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="7763322639126652757" name="" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="" index="2umbIo" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -209,12 +209,12 @@
         <node concept="3J0A42" id="53$tGqN$YWH" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+          <node concept="3TlMh9" id="53$tGqN$Z0r" role="1YbSNA">
+            <property role="2hmy$m" value="4" />
+          </node>
           <node concept="26Vqqz" id="53$tGqN$YTw" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3TlMh9" id="53$tGqN$Z0r" role="1YbSNA">
-            <property role="2hmy$m" value="4" />
           </node>
         </node>
       </node>
@@ -229,13 +229,13 @@
         <node concept="3J0A42" id="53$tGqN$ZA7" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+          <node concept="3TlMh9" id="53$tGqN$ZGE" role="1YbSNA">
+            <property role="2hmy$m" value="3" />
+          </node>
           <node concept="1sgJKr" id="53$tGqN$ZvU" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="1sgJKq" node="53$tGqN$XO6" resolve="innerstruct" />
-          </node>
-          <node concept="3TlMh9" id="53$tGqN$ZGE" role="1YbSNA">
-            <property role="2hmy$m" value="3" />
           </node>
         </node>
       </node>
