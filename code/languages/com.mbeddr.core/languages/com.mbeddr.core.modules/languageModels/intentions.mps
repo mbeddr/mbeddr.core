@@ -25,7 +25,6 @@
     <import index="czm" ref="r:e8e03ffa-3c1e-4997-9f51-6f8ca9be2f23(com.mbeddr.mpsutil.grammarcells.runtime)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -2915,7 +2914,7 @@
                   <ref role="1shVQp" to="yq40:fwMInzpHoK" resolve="PointerType" />
                 </node>
                 <node concept="1sne01" id="MD1ksBFNWD" role="1sne05">
-                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBFO4V" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBFOdh" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBFO5l" role="2Oq$k0" />
@@ -2962,7 +2961,7 @@
               <node concept="1sne01" id="MD1ksBFUyf" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBFUV$" role="1sne05">
-                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBFV5I" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBFVhv" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBFV6Q" role="2Oq$k0" />
@@ -3012,7 +3011,7 @@
               <node concept="1sne01" id="MD1ksBG0FW" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBG0YZ" role="1sne05">
-                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBG15D" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBG1cY" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBG16l" role="2Oq$k0" />
@@ -3062,7 +3061,7 @@
               <node concept="1sne01" id="MD1ksBG4Y4" role="1sne8H">
                 <ref role="1snh0D" to="tpck:4uZwTti3__2" />
                 <node concept="1sne01" id="MD1ksBG5k3" role="1sne05">
-                  <ref role="1snh0D" to="vs0r:6IWRcVPT6tm" />
+                  <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
                   <node concept="3kUt_e" id="MD1ksBG5qF" role="ccFIB">
                     <node concept="2OqwBi" id="MD1ksBG5zd" role="3kUt_f">
                       <node concept="2Sf5sV" id="MD1ksBG5r5" role="2Oq$k0" />

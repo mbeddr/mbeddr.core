@@ -81,7 +81,7 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="2$xXL4PbjDl" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6IWRcVPT6tl" resolve="ITypeContainingType" />
+      <ref role="PrY4T" to="c4fa:6IWRcVPT6tl" resolve="ITypeContainingType" />
     </node>
     <node concept="PrWs8" id="4JYoVJayS$K" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
@@ -136,7 +136,7 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="2$xXL4PbjD7" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6IWRcVPT6tl" resolve="ITypeContainingType" />
+      <ref role="PrY4T" to="c4fa:6IWRcVPT6tl" resolve="ITypeContainingType" />
     </node>
     <node concept="PrWs8" id="F16UoWCzHY" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7FkLcyyQKy$" resolve="IInitAwareType" />

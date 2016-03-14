@@ -211,7 +211,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4656,7 +4656,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="7Ehk3$1GCjY" role="2OqNvi">
-                    <ref role="3Tt5mk" to="vs0r:6IWRcVPT6tm" />
+                    <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7Ehk3$1GCjZ" role="37vLTJ">
