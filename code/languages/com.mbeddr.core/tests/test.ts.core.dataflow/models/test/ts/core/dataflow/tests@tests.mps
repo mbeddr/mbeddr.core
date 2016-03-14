@@ -55,7 +55,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -81,6 +81,9 @@
       <concept id="3134547887598524924" name="com.mbeddr.core.statements.structure.SwitchStatement" flags="ng" index="ggJXe">
         <child id="3134547887598524959" name="cases" index="ggJMH" />
         <child id="3134547887598524925" name="expression" index="ggJXf" />
+      </concept>
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
       <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
         <child id="1494329074535283249" name="body" index="1ly_ph" />
@@ -160,9 +163,6 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="7763322639126652757" name="" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="" index="2umbIo" />
-      </concept>
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -801,12 +801,12 @@
               <node concept="3J0A42" id="2lA5DP8om9p" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <node concept="3TlMh9" id="2lA5DP8omeY" role="1YbSNA">
-                  <property role="2hmy$m" value="2" />
-                </node>
                 <node concept="26Vqph" id="2lA5DP8olXR" role="2umbIo">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
+                </node>
+                <node concept="3TlMh9" id="2lA5DP8omeY" role="1YbSNA">
+                  <property role="2hmy$m" value="2" />
                 </node>
               </node>
             </node>
@@ -1659,12 +1659,12 @@
             <node concept="3J0A42" id="4cUhQNk1RPK" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <node concept="3TlMh9" id="4cUhQNk2J0d" role="1YbSNA">
-                <property role="2hmy$m" value="1" />
-              </node>
               <node concept="26Vqph" id="4cUhQNk1RPs" role="2umbIo">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
+              </node>
+              <node concept="3TlMh9" id="4cUhQNk2J0d" role="1YbSNA">
+                <property role="2hmy$m" value="1" />
               </node>
             </node>
             <node concept="3U$IGs" id="4cUhQNk1RQH" role="3U$Ho4">
@@ -1709,12 +1709,12 @@
             <node concept="3wxxNl" id="6t992PPN$Cy" role="pFrBa">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <node concept="61hT8" id="6CEc1EZPuQX" role="lGtFl">
-                <property role="61jdZ" value="1" />
-              </node>
               <node concept="26Vqph" id="6t992PPNppH" role="2umbIo">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
+              </node>
+              <node concept="61hT8" id="6CEc1EZPuQX" role="lGtFl">
+                <property role="61jdZ" value="1" />
               </node>
             </node>
           </node>
