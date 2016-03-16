@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
@@ -296,7 +296,7 @@
                                 <ref role="ehGHo" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
                               </node>
                               <node concept="3B5_sB" id="2QDtwSqOb$S" role="33vP2m">
-                                <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" resolve="mbeddr Editing Guide" />
+                                <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" resolve="mbeddrEditingGuide" />
                               </node>
                             </node>
                           </node>
@@ -608,7 +608,7 @@
               <ref role="ehGHo" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
             </node>
             <node concept="3B5_sB" id="2QDtwSqDjub" role="33vP2m">
-              <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" resolve="mbeddr Editing Guide" />
+              <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" resolve="mbeddrEditingGuide" />
             </node>
           </node>
         </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="9e3f6ddb-4034-47f7-acdd-634884e64759" name="com.mbeddr.mpsutil.emf" version="0" />
     <use id="c87e78ae-02e7-4a44-931d-475ba0c82619" name="com.mbeddr.mpsutil.emf.importing.test.lang" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
   </languages>
   <imports />
   <registry>
