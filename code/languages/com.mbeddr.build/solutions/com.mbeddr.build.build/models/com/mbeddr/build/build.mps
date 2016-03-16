@@ -120,10 +120,14 @@
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
+      <concept id="3189788309731981027" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleSolutionRuntime" flags="ng" index="1E0d5M">
+        <reference id="3189788309731981028" name="solution" index="1E0d5P" />
+      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
       </concept>
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
+        <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
@@ -252,9 +256,6 @@
         <node concept="L2wRC" id="44QTgQqXfMt" role="39821P">
           <ref role="L2wRA" node="44QTgQqTlJ0" resolve="mbeddr.tutorial.blocks" />
         </node>
-        <node concept="L2wRC" id="44QTgQqXgbG" role="39821P">
-          <ref role="L2wRA" node="44QTgQqTlJQ" resolve="mbeddr.tutorial.complex" />
-        </node>
         <node concept="L2wRC" id="44QTgQqXg_2" role="39821P">
           <ref role="L2wRA" node="44QTgQqTlK2" resolve="mbeddr.tutorial.foreach" />
         </node>
@@ -283,10 +284,7 @@
           <ref role="L2wRA" node="44QTgQqTlJW" resolve="mbeddr.tutorial.smtrigger" />
         </node>
         <node concept="L2wRC" id="44QTgQqXlpg" role="39821P">
-          <ref role="L2wRA" node="44QTgQqTlJu" resolve="mbeddr.tutorial.vectors" />
-        </node>
-        <node concept="L2wRC" id="5o7xQ5zpN7n" role="39821P">
-          <ref role="L2wRA" node="1JjMe_3nVlY" resolve="mbeddr.tutorial.shonan.complexNumberVector" />
+          <ref role="L2wRA" node="44QTgQqTlJu" resolve="mbeddr.tutorial.shonan" />
         </node>
         <node concept="L2wRC" id="4OELnlseYMX" role="39821P">
           <ref role="L2wRA" node="GKLijSCUTH" resolve="mbeddr.tutorial.extreqref" />
@@ -589,31 +587,19 @@
       </node>
       <node concept="1E1JtD" id="44QTgQqTlJu" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="mbeddr.tutorial.vectors" />
-        <property role="3LESm3" value="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" />
+        <property role="TrG5h" value="mbeddr.tutorial.shonan" />
+        <property role="3LESm3" value="d00351b1-72a6-4072-aea2-5982add6bee4" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTvYw" role="3LF7KH">
           <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvYx" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvYy" role="2Ry0An">
-              <property role="2Ry0Am" value="vectors" />
-              <node concept="2Ry0Ak" id="44QTgQqTvYz" role="2Ry0An">
-                <property role="2Ry0Am" value="vectors.mpl" />
+              <property role="2Ry0Am" value="mbeddr.tutorial.shonan" />
+              <node concept="2Ry0Ak" id="6VDcRIteXSV" role="2Ry0An">
+                <property role="2Ry0Am" value="mbeddr.tutorial.shonan.mpl" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44QTgQqTlKq" role="3bR37C">
-          <node concept="3bR9La" id="44QTgQqTlKr" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44QTgQqTlKs" role="3bR37C">
-          <node concept="3bR9La" id="44QTgQqTlKt" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
         <node concept="1SiIV0" id="44QTgQqTwIX" role="3bR37C">
@@ -627,132 +613,142 @@
             <ref role="3bR37D" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1JjMe_3nV6M" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nV6N" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1JjMe_3nV6O" role="3bR37C">
           <node concept="1Busua" id="1JjMe_3nV6P" role="1SiIV1">
             <ref role="1Busuk" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
         </node>
         <node concept="1yeLz9" id="bF97vFaiFF" role="1TViLv">
-          <property role="TrG5h" value="mbeddr.tutorial.vectors#210301905067588827" />
-          <property role="3LESm3" value="c9fff8c2-1d49-404c-8049-fbb7ffaf92af" />
+          <property role="TrG5h" value="mbeddr.tutorial.shonan#4634425186961163609" />
+          <property role="3LESm3" value="911d9207-f696-4583-847d-5378a7bc17a8" />
           <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="1JjMe_3nVlY" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="mbeddr.tutorial.shonan.complexNumberVector" />
-        <property role="3LESm3" value="29594ca3-9b56-49a1-b776-aaae43264253" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="1JjMe_3nVlZ" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
-          <node concept="2Ry0Ak" id="1JjMe_3nVm0" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="1JjMe_3nVm1" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr.tutorial.shonan.complexNumberVector" />
-              <node concept="2Ry0Ak" id="1JjMe_3nWAK" role="2Ry0An">
-                <property role="2Ry0Am" value="mbeddr.tutorial.shonan.complexNumberVector.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nVm5" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nVm6" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nVm9" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nVma" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nVmb" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nVmc" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nWIa" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nWIb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nWIc" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nWId" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nWIe" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nWIf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nWIg" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nWIh" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="44QTgQqTlJQ" resolve="mbeddr.tutorial.complex" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nWIk" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nWIl" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JjMe_3nWIm" role="3bR37C">
-          <node concept="1Busua" id="1JjMe_3nWIn" role="1SiIV1">
-            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="1JjMe_3nWIo" role="1TViLv">
-          <property role="TrG5h" value="mbeddr.tutorial.shonan.complexNumberVector#3319818790297524991" />
-          <property role="3LESm3" value="612581ce-cfb0-4fed-84c3-25b340dd9e3d" />
-          <property role="2GAjPV" value="false" />
-          <node concept="1SiIV0" id="1JjMe_3nWIp" role="3bR37C">
-            <node concept="3bR9La" id="1JjMe_3nWIq" role="1SiIV1">
+          <node concept="1SiIV0" id="6VDcRIteZfA" role="3bR37C">
+            <node concept="3bR9La" id="6VDcRIteZfB" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+              <ref role="3bR37D" to="p6ld:7uZw0yZ43JH" resolve="com.mbeddr.core.unittest" />
             </node>
           </node>
-          <node concept="1SiIV0" id="1JjMe_3nWIr" role="3bR37C">
-            <node concept="3bR9La" id="1JjMe_3nWIs" role="1SiIV1">
+          <node concept="1SiIV0" id="6VDcRIteZfC" role="3bR37C">
+            <node concept="3bR9La" id="6VDcRIteZfD" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="p6ld:HiHZpX4D2m" resolve="com.mbeddr.core.unittest#6275792049641599010" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6VDcRIteZfE" role="3bR37C">
+            <node concept="3bR9La" id="6VDcRIteZfF" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
             </node>
           </node>
-          <node concept="1SiIV0" id="1JjMe_3nWIt" role="3bR37C">
-            <node concept="3bR9La" id="1JjMe_3nWIu" role="1SiIV1">
+          <node concept="1SiIV0" id="6VDcRIteZfG" role="3bR37C">
+            <node concept="3bR9La" id="6VDcRIteZfH" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="44QTgQqTlJQ" resolve="mbeddr.tutorial.complex" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="1JjMe_3nWIx" role="3bR37C">
-            <node concept="3bR9La" id="1JjMe_3nWIy" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="1JjMe_3nWSf" role="3bR37C">
-            <node concept="3bR9La" id="1JjMe_3nWSg" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="44QTgQqTlJu" resolve="mbeddr.tutorial.vectors" />
+              <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1JjMe_3nWSd" role="3bR37C">
-          <node concept="3bR9La" id="1JjMe_3nWSe" role="1SiIV1">
+        <node concept="1SiIV0" id="6VDcRIteXSZ" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteXT0" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="44QTgQqTlJu" resolve="mbeddr.tutorial.vectors" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteXT1" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteXT2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteXT3" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteXT4" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:2Xjt3l57bIF" resolve="de.itemis.mps.editor.math" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteXT5" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteXT6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZfx" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZfy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6VDcRIteYNQ" resolve="mbeddr.tutorial.shonan.runtime" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="6VDcRIteZfz" role="1E1XAP">
+          <ref role="1E0d5P" node="6VDcRIteYNQ" resolve="mbeddr.tutorial.shonan.runtime" />
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZf$" role="3bR37C">
+          <node concept="1Busua" id="6VDcRIteZf_" role="1SiIV1">
+            <ref role="1Busuk" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6VDcRIteYNQ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="mbeddr.tutorial.shonan.runtime" />
+        <property role="3LESm3" value="b68cce94-7c2b-436e-8b69-c33a9bcb11a0" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6VDcRIteYZX" role="3LF7KH">
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <node concept="2Ry0Ak" id="6VDcRIteZ7T" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6VDcRIteZ82" role="2Ry0An">
+              <property role="2Ry0Am" value="mbeddr.tutorial.shonan.runtime" />
+              <node concept="2Ry0Ak" id="6VDcRIteZ8b" role="2Ry0An">
+                <property role="2Ry0Am" value="mbeddr.tutorial.shonan.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8f" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8g" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8h" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8i" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8j" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8k" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8l" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8m" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfK" resolve="jetbrains.mps.dataFlow.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8n" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8o" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8p" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8q" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="44QTgQqTlJu" resolve="mbeddr.tutorial.shonan" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8r" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8s" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteZ8t" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteZ8u" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>
@@ -809,29 +805,6 @@
         <node concept="1SiIV0" id="6RmoJr9Awrw" role="3bR37C">
           <node concept="1Busua" id="6RmoJr9Awrx" role="1SiIV1">
             <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtD" id="44QTgQqTlJQ" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="mbeddr.tutorial.complex" />
-        <property role="3LESm3" value="01cd75cf-892b-47a7-b594-744f9e06e5e4" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="44QTgQqTw2g" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
-          <node concept="2Ry0Ak" id="44QTgQqTw2h" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="44QTgQqTw2i" role="2Ry0An">
-              <property role="2Ry0Am" value="complex" />
-              <node concept="2Ry0Ak" id="44QTgQqTw2j" role="2Ry0An">
-                <property role="2Ry0Am" value="complex.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="44QTgQqTwKd" role="3bR37C">
-          <node concept="1Busua" id="44QTgQqTwKe" role="1SiIV1">
-            <ref role="1Busuk" to="p6ld:7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
           </node>
         </node>
       </node>
@@ -1367,6 +1340,12 @@
           <node concept="3bR9La" id="360sibZug2x" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:4gFRqcy1Vdg" resolve="com.mbeddr.analyses.cbmc.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6VDcRIteXJo" role="3bR37C">
+          <node concept="3bR9La" id="6VDcRIteXJp" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
           </node>
         </node>
       </node>
