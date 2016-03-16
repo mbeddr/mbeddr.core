@@ -133,6 +133,7 @@
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
         <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
+      <concept id="7350547698093816046" name="com.mbeddr.core.modules.structure.PureFunctionAnnotation" flags="ng" index="2Bs1N1" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -621,6 +622,7 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="2Bs1N1" id="6eIJF_HTp_Q" role="lGtFl" />
     </node>
   </node>
   <node concept="N3F5e" id="7UiQjZi_RJv">

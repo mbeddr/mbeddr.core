@@ -16,7 +16,7 @@
     <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="2" />
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="3" />
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" fqName="com.mbeddr.core.buildconfig" version="0" />
     <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" fqName="com.mbeddr.core.debug.test" version="0" />

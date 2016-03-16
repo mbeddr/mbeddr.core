@@ -2,7 +2,7 @@
 <model ref="r:34838764-df6d-423e-8a2f-80a26962ac8c(com.mbeddr.mpsutil.grammarcells.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -894,6 +894,23 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="2iRfu4" id="qT5MFmsg5R" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="78yXNxdi317" role="3EZMnx">
+          <property role="3EZMnw" value="false" />
+          <node concept="3F0ifn" id="78yXNxdi318" role="3EZMnx">
+            <property role="3F0ifm" value="do not generate node substitute action" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3F0A7n" id="78yXNxdi31z" role="3EZMnx">
+            <ref role="1NtTu8" to="teg0:78yXNxdhVO9" resolve="doNotGenerateNodeSubstituteAction" />
+          </node>
+          <node concept="VPM3Z" id="78yXNxdi31a" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="78yXNxdi31b" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2iRfu4" id="78yXNxdi31c" role="2iSdaV" />
         </node>
         <node concept="VPXOz" id="6ASs6LmXZ4T" role="3F10Kt">
           <property role="VOm3f" value="true" />

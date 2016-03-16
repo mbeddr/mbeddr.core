@@ -2,7 +2,7 @@
 <model ref="r:e14e3f70-e9b9-421a-9060-c8ac30089d4b(com.mbeddr.mpsutil.compare.pattern.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -264,6 +264,9 @@
     <property role="3GE5qa" value="pattern" />
     <ref role="1XX52x" to="iqxq:35E98Eq2O4B" resolve="Pattern" />
     <node concept="3EZMnI" id="4IP40Bi2Gwu" role="2wV5jI">
+      <node concept="1Bsynf" id="1WCh2thrB05" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
       <node concept="3F0ifn" id="4IP40Bi2Gwv" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
         <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
@@ -348,9 +351,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="1Bsynf" id="1WCh2thrB05" role="3F10Kt">
-        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
@@ -644,6 +644,9 @@
       <node concept="3F0ifn" id="76efOMRCHWX" role="3EZMnx">
         <property role="3F0ifm" value="]" />
         <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
+        <node concept="ljvvj" id="2odoUCSLrlN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4oNjwzxoYBq" role="3EZMnx">
         <property role="3F0ifm" value="\" />
@@ -714,22 +717,19 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="3quoVcnVIta">
+  <node concept="24kQdi" id="wcyv5jRLiw">
     <property role="3GE5qa" value="pattern" />
-    <ref role="1XX52x" to="iqxq:3quoVcnVIhX" resolve="GetConceptOperation" />
-    <node concept="3EZMnI" id="3quoVcnUT2_" role="2wV5jI">
-      <node concept="PMmxH" id="3quoVcnUT2J" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    <ref role="1XX52x" to="iqxq:wcyv5jRLih" resolve="NegationAttribute" />
+    <node concept="3EZMnI" id="wcyv5jRLiA" role="2wV5jI">
+      <node concept="3F0ifn" id="wcyv5jRLiP" role="3EZMnx">
+        <property role="3F0ifm" value="!" />
+        <ref role="1ERwB7" node="wcyv5jT2O1" resolve="NegationAttribute_ActionMap" />
+        <node concept="11LMrY" id="wcyv5jT2NY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="3F0ifn" id="3quoVcnUT2R" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-      </node>
-      <node concept="3F0ifn" id="3quoVcnUT34" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-      <node concept="l2Vlx" id="3quoVcnUT2C" role="2iSdaV" />
+      <node concept="l2Vlx" id="wcyv5jRLiB" role="2iSdaV" />
+      <node concept="2SsqMj" id="wcyv5jRLiy" role="3EZMnx" />
     </node>
   </node>
   <node concept="PKFIW" id="wcyv5jR3fR">
@@ -790,21 +790,6 @@
       <node concept="l2Vlx" id="wcyv5jR3gz" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="wcyv5jRLiw">
-    <property role="3GE5qa" value="pattern" />
-    <ref role="1XX52x" to="iqxq:wcyv5jRLih" resolve="NegationAttribute" />
-    <node concept="3EZMnI" id="wcyv5jRLiA" role="2wV5jI">
-      <node concept="3F0ifn" id="wcyv5jRLiP" role="3EZMnx">
-        <property role="3F0ifm" value="!" />
-        <ref role="1ERwB7" node="wcyv5jT2O1" resolve="NegationAttribute_ActionMap" />
-        <node concept="11LMrY" id="wcyv5jT2NY" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="wcyv5jRLiB" role="2iSdaV" />
-      <node concept="2SsqMj" id="wcyv5jRLiy" role="3EZMnx" />
-    </node>
-  </node>
   <node concept="1h_SRR" id="wcyv5jT2O1">
     <property role="TrG5h" value="NegationAttribute_ActionMap" />
     <ref role="1h_SK9" to="iqxq:wcyv5jRLih" resolve="NegationAttribute" />
@@ -833,6 +818,24 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3quoVcnVIta">
+    <property role="3GE5qa" value="pattern" />
+    <ref role="1XX52x" to="iqxq:3quoVcnVIhX" resolve="GetConceptOperation" />
+    <node concept="3EZMnI" id="3quoVcnUT2_" role="2wV5jI">
+      <node concept="PMmxH" id="3quoVcnUT2J" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="3quoVcnUT2R" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F0ifn" id="3quoVcnUT34" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="l2Vlx" id="3quoVcnUT2C" role="2iSdaV" />
     </node>
   </node>
 </model>

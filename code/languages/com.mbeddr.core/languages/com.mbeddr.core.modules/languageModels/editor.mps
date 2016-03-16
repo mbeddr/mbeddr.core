@@ -2,12 +2,12 @@
 <model ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)">
   <persistence version="9" />
   <languages>
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -361,6 +361,7 @@
       <concept id="4874944647490471525" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_MatchingText" flags="ig" index="1eYWSL" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
+        <property id="8224407690718723337" name="doNotGenerateNodeSubstituteAction" index="ZpkCL" />
       </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -1003,6 +1004,21 @@
         <ref role="PMmxG" to="j4gk:52l0VUuN8lr" resolve="IStoreInRegisterComponent" />
       </node>
       <node concept="1j7BWu" id="5LCbJRRSJdg" role="3EZMnx">
+        <node concept="pkWqt" id="3QtFodr3mZM" role="pqm2j">
+          <node concept="3clFbS" id="3QtFodr3mZN" role="2VODD2">
+            <node concept="3clFbF" id="3QtFodr3_BL" role="3cqZAp">
+              <node concept="3y3z36" id="3QtFodr3Ar0" role="3clFbG">
+                <node concept="10Nm6u" id="3QtFodr3As2" role="3uHU7w" />
+                <node concept="2OqwBi" id="3QtFodr3_IQ" role="3uHU7B">
+                  <node concept="pncrf" id="3QtFodr3_BK" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3QtFodr3_Zk" role="2OqNvi">
+                    <ref role="3Tt5mk" to="x27k:L2WnbQO2tQ" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1HlG4h" id="WlkN2oQGWz" role="1j7Clw">
           <ref role="1ERwB7" node="L2WnbR8bP4" resolve="IArgumentLike_ActionMap" />
           <node concept="1HfYo3" id="WlkN2oQGW_" role="1HlULh">
@@ -2993,6 +3009,7 @@
     <ref role="1XX52x" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     <node concept="1kHk_G" id="7bCENxTSAU0" role="2wV5jI">
       <property role="ZjSer" value="@prevent name mangling" />
+      <property role="ZpkCL" value="true" />
       <ref role="1NtTu8" to="x27k:5Oog2UbP_d2" resolve="preventNameMangling" />
       <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
     </node>

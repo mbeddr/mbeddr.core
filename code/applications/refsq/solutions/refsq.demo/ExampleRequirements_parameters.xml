@@ -1,9 +1,0 @@
-<parameters>
-  <requirement name="Re1">
-    <param name="p1" type="int32">10</param>
-    <param name="p2" type="boolean">true</param>
-    <requirement name="Re2">
-      <param name="p3" type="string">"Hallo"</param>
-    </requirement>
-  </requirement>
-</parameters>

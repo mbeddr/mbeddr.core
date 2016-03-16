@@ -2,7 +2,7 @@
 <model ref="r:45292738-a574-4c30-93ea-b1181cdfa576(com.mbeddr.mpsutil.lantest.assertions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -182,6 +182,12 @@
           <ref role="1NtTu8" to="f2dq:7YWlEjTs4bI" />
         </node>
         <node concept="l2Vlx" id="7YWlEjTs4ns" role="2iSdaV" />
+        <node concept="3F0ifn" id="4wlhRElzFvp" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="4wlhRElzFvE" role="3EZMnx">
+          <ref role="1NtTu8" to="f2dq:4wlhRElzFsW" />
+        </node>
       </node>
       <node concept="3EZMnI" id="7YWlEjTsfhT" role="3EZMnx">
         <node concept="VPM3Z" id="7YWlEjTsfhV" role="3F10Kt">

@@ -1,7 +1,0 @@
-<parameters systemID="42">
-  <requirement isOption="true" optionUse="false" name="RE1" />
-  <requirement isOption="true" optionUse="true" name="RE2" />
-  <requirement name="RE4">
-    <param name="maxSuction" type="int32">50</param>
-  </requirement>
-</parameters>

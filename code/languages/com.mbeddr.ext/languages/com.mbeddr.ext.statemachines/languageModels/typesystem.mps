@@ -2241,5 +2241,88 @@
       <ref role="1YaFvo" to="clqz:7XSydqoCpA" resolve="SmSetStateTarget" />
     </node>
   </node>
+  <node concept="18kY7G" id="748qYEDI$$V">
+    <property role="TrG5h" value="check_EventArg" />
+    <property role="3GE5qa" value="machine.states" />
+    <node concept="3clFbS" id="748qYEDI$$W" role="18ibNy">
+      <node concept="3cpWs8" id="748qYEDI$SW" role="3cqZAp">
+        <node concept="3cpWsn" id="748qYEDI$SX" role="3cpWs9">
+          <property role="TrG5h" value="tpe" />
+          <node concept="3Tqbb2" id="748qYEDI$SU" role="1tU5fm">
+            <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+          </node>
+          <node concept="2OqwBi" id="748qYEDI$SY" role="33vP2m">
+            <node concept="1YBJjd" id="748qYEDI$SZ" role="2Oq$k0">
+              <ref role="1YBMHb" node="748qYEDI$$Y" resolve="eventArg" />
+            </node>
+            <node concept="3TrEf2" id="748qYEDI$T0" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="748qYEDI$ZT" role="3cqZAp">
+        <node concept="3clFbS" id="748qYEDI$ZV" role="3clFbx">
+          <node concept="2MkqsV" id="748qYEDI_ki" role="3cqZAp">
+            <node concept="1YBJjd" id="748qYEDI_mH" role="2OEOjV">
+              <ref role="1YBMHb" node="748qYEDI$$Y" resolve="eventArg" />
+            </node>
+            <node concept="Xl_RD" id="1LDGRqyYkUg" role="2MkJ7o">
+              <property role="Xl_RC" value="event argument cannot have 'void' type" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="748qYEDI_4c" role="3clFbw">
+          <node concept="37vLTw" id="748qYEDI_0S" role="2Oq$k0">
+            <ref role="3cqZAo" node="748qYEDI$SX" resolve="tpe" />
+          </node>
+          <node concept="1mIQ4w" id="748qYEDI_ix" role="2OqNvi">
+            <node concept="chp4Y" id="748qYEDI_iU" role="cj9EA">
+              <ref role="cht4Q" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="748qYEDI$$Y" role="1YuTPh">
+      <property role="TrG5h" value="eventArg" />
+      <ref role="1YaFvo" to="clqz:1z9MsBsVhPP" resolve="EventArg" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5sNDy3bBKzh">
+    <property role="TrG5h" value="check_StatemachineVariableDeclaration" />
+    <property role="3GE5qa" value="machine" />
+    <node concept="3clFbS" id="5sNDy3bBKzi" role="18ibNy">
+      <node concept="3clFbJ" id="5sNDy3bBKzx" role="3cqZAp">
+        <node concept="3clFbS" id="5sNDy3bBKzy" role="3clFbx">
+          <node concept="2MkqsV" id="5sNDy3bBMzC" role="3cqZAp">
+            <node concept="Xl_RD" id="5sNDy3bBMzO" role="2MkJ7o">
+              <property role="Xl_RC" value="statemachine variable must not be const" />
+            </node>
+            <node concept="1YBJjd" id="5sNDy3bBM_C" role="2OEOjV">
+              <ref role="1YBMHb" node="5sNDy3bBKzk" resolve="svd" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5sNDy3bBLRN" role="3clFbw">
+          <node concept="2OqwBi" id="5sNDy3bBKEe" role="2Oq$k0">
+            <node concept="1YBJjd" id="5sNDy3bBKzH" role="2Oq$k0">
+              <ref role="1YBMHb" node="5sNDy3bBKzk" resolve="svd" />
+            </node>
+            <node concept="3TrEf2" id="5sNDy3bBL_M" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+            </node>
+          </node>
+          <node concept="3TrcHB" id="5sNDy3bBMyI" role="2OqNvi">
+            <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5sNDy3bBKzk" role="1YuTPh">
+      <property role="TrG5h" value="svd" />
+      <ref role="1YaFvo" to="clqz:4SJV0WTeRxt" resolve="StatemachineVariableDeclaration" />
+    </node>
+  </node>
 </model>
 
