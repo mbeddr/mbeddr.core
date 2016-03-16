@@ -85,6 +85,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -690,21 +691,34 @@
       </node>
       <node concept="3clFbH" id="1XFitunRfpb" role="3cqZAp" />
       <node concept="3clFbJ" id="5zmbZKrhdoN" role="3cqZAp">
-        <node concept="3fqX7Q" id="2GZiJUXMeDP" role="3clFbw">
-          <node concept="2OqwBi" id="2GZiJUXMeDR" role="3fr31v">
-            <node concept="2OqwBi" id="2GZiJUXMeDS" role="2Oq$k0">
-              <node concept="1YBJjd" id="2GZiJUXMeDT" role="2Oq$k0">
+        <node concept="1Wc70l" id="3$fgPgb1uXF" role="3clFbw">
+          <node concept="2OqwBi" id="3$fgPgb1wgU" role="3uHU7B">
+            <node concept="2OqwBi" id="3$fgPgb1vM2" role="2Oq$k0">
+              <node concept="1YBJjd" id="3$fgPgb1vIM" role="2Oq$k0">
                 <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
               </node>
-              <node concept="3TrcHB" id="2GZiJUXMeDU" role="2OqNvi">
+              <node concept="3TrcHB" id="3$fgPgb1w4D" role="2OqNvi">
                 <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
               </node>
             </node>
-            <node concept="liA8E" id="2GZiJUXMeDV" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="10M0yZ" id="2GZiJUXMeDW" role="37wK5m">
-                <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
-                <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+            <node concept="17RvpY" id="3$fgPgb1wzN" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="2GZiJUXMeDP" role="3uHU7w">
+            <node concept="2OqwBi" id="2GZiJUXMeDR" role="3fr31v">
+              <node concept="2OqwBi" id="2GZiJUXMeDS" role="2Oq$k0">
+                <node concept="1YBJjd" id="2GZiJUXMeDT" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                </node>
+                <node concept="3TrcHB" id="2GZiJUXMeDU" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2GZiJUXMeDV" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="10M0yZ" id="2GZiJUXMeDW" role="37wK5m">
+                  <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+                  <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+                </node>
               </node>
             </node>
           </node>
