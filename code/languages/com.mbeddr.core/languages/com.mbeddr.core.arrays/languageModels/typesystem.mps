@@ -282,6 +282,7 @@
       </concept>
       <concept id="1236083146670" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeFunction" flags="in" index="3ciZUL" />
       <concept id="1236083209648" name="jetbrains.mps.lang.typesystem.structure.LeftOperandType_parameter" flags="nn" index="3cjfiJ" />
+      <concept id="1236083245720" name="jetbrains.mps.lang.typesystem.structure.Operation_parameter" flags="nn" index="3cjoe7" />
       <concept id="1236083248858" name="jetbrains.mps.lang.typesystem.structure.RightOperandType_parameter" flags="nn" index="3cjoZ5" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
@@ -5160,6 +5161,59 @@
           <node concept="2pIpSj" id="4JYoVJavL7E" role="2pJxcM">
             <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" />
             <node concept="2pJPED" id="4JYoVJavL7F" role="2pJxcZ">
+              <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3ciAk0" id="1qe$v7jHHGd" role="3he0YX">
+      <node concept="3gn64h" id="1qe$v7jHHGe" role="32tDTA">
+        <ref role="3gnhBz" to="mj1l:4ZVDCZCaQ8l" resolve="PlusExpression" />
+      </node>
+      <node concept="3gn64h" id="1qe$v7jHHGf" role="32tDTA">
+        <ref role="3gnhBz" to="mj1l:4ZVDCZCaQ8q" resolve="MinusExpression" />
+      </node>
+      <node concept="3ciZUL" id="1qe$v7jHHGg" role="32tDT$">
+        <node concept="3clFbS" id="1qe$v7jHHGh" role="2VODD2">
+          <node concept="3clFbF" id="4SBHDxVl6Hd" role="3cqZAp">
+            <node concept="2OqwBi" id="4SBHDxVlcmf" role="3clFbG">
+              <node concept="2OqwBi" id="4SBHDxVlbqp" role="2Oq$k0">
+                <node concept="2OqwBi" id="4SBHDxVl6Sh" role="2Oq$k0">
+                  <node concept="3TUQnm" id="4SBHDxVl6Hb" role="2Oq$k0">
+                    <ref role="3TV0OU" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
+                  </node>
+                  <node concept="2qgKlT" id="4SBHDxVlb9N" role="2OqNvi">
+                    <ref role="37wK5l" to="ywuz:3LaV6lLNTR2" resolve="findTypeSizeConfig" />
+                    <node concept="3cjoe7" id="4SBHDxVlbcX" role="37wK5m" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="4SBHDxVlc1y" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:3jGRJVwqZnA" />
+                </node>
+              </node>
+              <node concept="1$rogu" id="4SBHDxVlcVl" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1qe$v7jHHGp" role="3ciSnv">
+        <node concept="2pJPED" id="1qe$v7jHHGq" role="2pJPEn">
+          <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
+          <node concept="2pIpSj" id="1qe$v7jHHGr" role="2pJxcM">
+            <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" />
+            <node concept="2pJPED" id="1qe$v7jHHGs" role="2pJxcZ">
+              <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="1qe$v7jHHNj" role="3ciSkW">
+        <node concept="2pJPED" id="1qe$v7jHHNk" role="2pJPEn">
+          <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
+          <node concept="2pIpSj" id="1qe$v7jHHNl" role="2pJxcM">
+            <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" />
+            <node concept="2pJPED" id="1qe$v7jHHNm" role="2pJxcZ">
               <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
             </node>
           </node>
