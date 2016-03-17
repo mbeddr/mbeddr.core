@@ -11983,6 +11983,32 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="3IzYpDNFovb" role="3clF47">
+        <node concept="3clFbF" id="1pn4Qu08us9" role="3cqZAp">
+          <node concept="2OqwBi" id="1pn4Qu08uzY" role="3clFbG">
+            <node concept="37vLTw" id="1pn4Qu08us7" role="2Oq$k0">
+              <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+            </node>
+            <node concept="liA8E" id="1pn4Qu08uO_" role="2OqNvi">
+              <ref role="37wK5l" to="f4zo:~EditorCell.setLeftGap(int):void" resolve="setLeftGap" />
+              <node concept="3cmrfG" id="1pn4Qu08uRd" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1pn4Qu08uRI" role="3cqZAp">
+          <node concept="2OqwBi" id="1pn4Qu08uRJ" role="3clFbG">
+            <node concept="37vLTw" id="1pn4Qu08uRK" role="2Oq$k0">
+              <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+            </node>
+            <node concept="liA8E" id="1pn4Qu08uRL" role="2OqNvi">
+              <ref role="37wK5l" to="f4zo:~EditorCell.setRightGap(int):void" resolve="setRightGap" />
+              <node concept="3cmrfG" id="1pn4Qu08uRM" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4dksFc0zbI2" role="3cqZAp">
           <node concept="2OqwBi" id="4dksFc0zbI3" role="3clFbG">
             <node concept="37vLTw" id="4dksFc0zbW7" role="2Oq$k0">

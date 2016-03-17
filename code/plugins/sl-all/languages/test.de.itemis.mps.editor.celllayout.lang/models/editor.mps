@@ -38,6 +38,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -47,6 +48,7 @@
       </concept>
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -528,6 +530,16 @@
         <node concept="2EHx9g" id="SxLEcBmBh1" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="SxLEcBmB8X" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1pn4Qu08Ob1">
+    <ref role="1XX52x" to="ayyv:1pn4Qu08OaV" resolve="TestCase_ShrinkHorizontalLine" />
+    <node concept="3EZMnI" id="1pn4Qu08Ob3" role="2wV5jI">
+      <node concept="2T_mXK" id="1pn4Qu08Obg" role="3EZMnx" />
+      <node concept="3F0A7n" id="1pn4Qu08Obw" role="3EZMnx">
+        <ref role="1NtTu8" to="ayyv:1pn4Qu08Obs" resolve="property1" />
+      </node>
+      <node concept="2iRkQZ" id="1pn4Qu08Ob6" role="2iSdaV" />
     </node>
   </node>
 </model>
