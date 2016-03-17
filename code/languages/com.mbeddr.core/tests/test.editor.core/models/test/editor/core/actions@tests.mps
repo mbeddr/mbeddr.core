@@ -24,6 +24,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="b8lf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.selection(MPS.Editor/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -90,6 +92,14 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -230,6 +240,11 @@
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
+      </concept>
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -1667,13 +1682,45 @@
       <node concept="3Tm1VV" id="1xDazL6RqU6" role="1B3o_S" />
       <node concept="3cqZAl" id="1xDazL6RqU7" role="3clF45" />
       <node concept="3clFbS" id="1xDazL6RqU8" role="3clF47">
-        <node concept="3clFbF" id="1xDazL6RqU9" role="3cqZAp">
-          <node concept="2OqwBi" id="D5oLwMLTOq" role="3clFbG">
-            <node concept="Vb5G_" id="D5oLwMLTKO" role="2Oq$k0">
-              <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+        <node concept="SfApY" id="9nzA46WQCx" role="3cqZAp">
+          <node concept="3clFbS" id="9nzA46WQCy" role="SfCbr">
+            <node concept="3clFbF" id="9nzA46WPOO" role="3cqZAp">
+              <node concept="2YIFZM" id="9nzA46WPXb" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeAndWait(java.lang.Runnable):void" resolve="invokeAndWait" />
+                <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
+                <node concept="1bVj0M" id="9nzA46WQrx" role="37wK5m">
+                  <node concept="3clFbS" id="9nzA46WQry" role="1bW5cS">
+                    <node concept="3clFbF" id="1xDazL6RqU9" role="3cqZAp">
+                      <node concept="2OqwBi" id="D5oLwMLTOq" role="3clFbG">
+                        <node concept="Vb5G_" id="D5oLwMLTKO" role="2Oq$k0">
+                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+                        </node>
+                        <node concept="liA8E" id="D5oLwMLUBA" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorContext.flushEvents():void" resolve="flushEvents" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="D5oLwMLUBA" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorContext.flushEvents():void" resolve="flushEvents" />
+          </node>
+          <node concept="TDmWw" id="9nzA46WQCp" role="TEbGg">
+            <node concept="3clFbS" id="9nzA46WQCq" role="TDEfX" />
+            <node concept="3cpWsn" id="9nzA46WQCr" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="9nzA46WQCs" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="9nzA46WQCt" role="TEbGg">
+            <node concept="3clFbS" id="9nzA46WQCu" role="TDEfX" />
+            <node concept="3cpWsn" id="9nzA46WQCv" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="9nzA46WQCw" role="1tU5fm">
+                <ref role="3uigEE" to="t6h5:~InvocationTargetException" resolve="InvocationTargetException" />
+              </node>
             </node>
           </node>
         </node>
