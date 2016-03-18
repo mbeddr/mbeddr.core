@@ -1559,6 +1559,12 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1wKxZ_qlwgJ" role="3cqZAp">
+          <node concept="2YIFZM" id="1wKxZ_qlwhM" role="3clFbG">
+            <ref role="37wK5l" node="80_psC6Zex" resolve="uninstallAll" />
+            <ref role="1Pybhc" node="80_psBSjpC" resolve="DelegatingMouseListener" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
