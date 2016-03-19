@@ -451,6 +451,7 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="linkRole" index="3V$3am" />
@@ -2255,12 +2256,32 @@
         </node>
         <node concept="3clFbJ" id="6OxpEKG0KPG" role="3cqZAp">
           <node concept="3clFbS" id="6OxpEKG0KPI" role="3clFbx">
-            <node concept="3cpWs6" id="6OxpEKG0KQ5" role="3cqZAp">
-              <node concept="2ShNRf" id="3ewEEwfg8k1" role="3cqZAk">
-                <node concept="1pGfFk" id="3ewEEwfg94X" role="2ShVmc">
-                  <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
-                  <node concept="37vLTw" id="3ewEEwfg9xq" role="37wK5m">
-                    <ref role="3cqZAo" node="3S1ygDd0STz" resolve="value" />
+            <node concept="SfApY" id="CNkpdzVhy9" role="3cqZAp">
+              <node concept="3clFbS" id="CNkpdzVhyb" role="SfCbr">
+                <node concept="3cpWs6" id="6OxpEKG0KQ5" role="3cqZAp">
+                  <node concept="2ShNRf" id="3ewEEwfg8k1" role="3cqZAk">
+                    <node concept="1pGfFk" id="3ewEEwfg94X" role="2ShVmc">
+                      <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
+                      <node concept="37vLTw" id="3ewEEwfg9xq" role="37wK5m">
+                        <ref role="3cqZAo" node="3S1ygDd0STz" resolve="value" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="CNkpdzVhyc" role="TEbGg">
+                <node concept="3cpWsn" id="CNkpdzVhye" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="CNkpdzVhGp" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="CNkpdzVhyi" role="TDEfX">
+                  <node concept="3cpWs6" id="CNkpdzVhIO" role="3cqZAp">
+                    <node concept="10M0yZ" id="CNkpdzVhT_" role="3cqZAk">
+                      <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
+                      <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2282,13 +2303,37 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3cpWs6" id="6OxpEKG0KQg" role="3cqZAp">
-          <node concept="2ShNRf" id="3ewEEwfgcFn" role="3cqZAk">
-            <node concept="1pGfFk" id="3ewEEwfgdr_" role="2ShVmc">
-              <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
-              <node concept="37vLTw" id="3ewEEwfgeM5" role="37wK5m">
-                <ref role="3cqZAo" node="3S1ygDd0STz" resolve="value" />
+          <node concept="9aQIb" id="CNkpdzVgRo" role="9aQIa">
+            <node concept="3clFbS" id="CNkpdzVgRp" role="9aQI4">
+              <node concept="SfApY" id="CNkpdzViZw" role="3cqZAp">
+                <node concept="3clFbS" id="CNkpdzViZx" role="SfCbr">
+                  <node concept="3cpWs6" id="6OxpEKG0KQg" role="3cqZAp">
+                    <node concept="2ShNRf" id="3ewEEwfgcFn" role="3cqZAk">
+                      <node concept="1pGfFk" id="3ewEEwfgdr_" role="2ShVmc">
+                        <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
+                        <node concept="37vLTw" id="3ewEEwfgeM5" role="37wK5m">
+                          <ref role="3cqZAo" node="3S1ygDd0STz" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="TDmWw" id="CNkpdzViZA" role="TEbGg">
+                  <node concept="3cpWsn" id="CNkpdzViZB" role="TDEfY">
+                    <property role="TrG5h" value="e" />
+                    <node concept="3uibUv" id="CNkpdzViZC" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="CNkpdzViZD" role="TDEfX">
+                    <node concept="3cpWs6" id="CNkpdzViZE" role="3cqZAp">
+                      <node concept="10M0yZ" id="CNkpdzViZF" role="3cqZAk">
+                        <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
+                        <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -5791,14 +5836,43 @@
                   <node concept="3uibUv" id="pYPhIqWB2N" role="1tU5fm">
                     <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
                   </node>
-                  <node concept="2ShNRf" id="pYPhIqWB2P" role="33vP2m">
-                    <node concept="1pGfFk" id="pYPhIqWCgY" role="2ShVmc">
-                      <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String,int)" resolve="BigInteger" />
-                      <node concept="3cpWs2" id="pYPhIqWCgZ" role="37wK5m">
-                        <ref role="3cqZAo" node="2TbP0WsLZ7H" resolve="number" />
+                  <node concept="10Nm6u" id="CNkpdzUHP5" role="33vP2m" />
+                </node>
+                <node concept="15s5l7" id="CNkpdzUNs1" role="lGtFl" />
+              </node>
+              <node concept="3clFbH" id="CNkpdzUHUZ" role="3cqZAp" />
+              <node concept="SfApY" id="CNkpdzUI6Y" role="3cqZAp">
+                <node concept="3clFbS" id="CNkpdzUI70" role="SfCbr">
+                  <node concept="3clFbF" id="CNkpdzUItI" role="3cqZAp">
+                    <node concept="37vLTI" id="CNkpdzUIvU" role="3clFbG">
+                      <node concept="37vLTw" id="CNkpdzUItG" role="37vLTJ">
+                        <ref role="3cqZAo" node="pYPhIqWB2M" resolve="value" />
                       </node>
-                      <node concept="3cpWs2" id="34jcEXBmsPY" role="37wK5m">
-                        <ref role="3cqZAo" node="34jcEXBmsPR" resolve="base" />
+                      <node concept="2ShNRf" id="CNkpdzUIzT" role="37vLTx">
+                        <node concept="1pGfFk" id="CNkpdzUNob" role="2ShVmc">
+                          <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String,int)" resolve="BigInteger" />
+                          <node concept="37vLTw" id="CNkpdzUNoY" role="37wK5m">
+                            <ref role="3cqZAo" node="2TbP0WsLZ7H" resolve="number" />
+                          </node>
+                          <node concept="37vLTw" id="CNkpdzUNqo" role="37wK5m">
+                            <ref role="3cqZAo" node="34jcEXBmsPR" resolve="base" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="TDmWw" id="CNkpdzUI71" role="TEbGg">
+                  <node concept="3cpWsn" id="CNkpdzUI73" role="TDEfY">
+                    <property role="TrG5h" value="e" />
+                    <node concept="3uibUv" id="CNkpdzUIgg" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="CNkpdzUI77" role="TDEfX">
+                    <node concept="3cpWs6" id="CNkpdzUIh_" role="3cqZAp">
+                      <node concept="37vLTw" id="CNkpdzUNyJ" role="3cqZAk">
+                        <ref role="3cqZAo" node="knfPudgDmE" resolve="result" />
                       </node>
                     </node>
                   </node>

@@ -44,9 +44,6 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
-      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
-        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
-      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -56,14 +53,6 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
-      </concept>
-    </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan">
@@ -129,9 +118,6 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -425,15 +411,6 @@
           </node>
         </node>
         <node concept="3XISUE" id="7BT5P44g6r6" role="3XIRFZ" />
-        <node concept="1QiMYF" id="5RGI$o55H4z" role="3XIRFZ">
-          <node concept="OjmMv" id="5RGI$o55H4_" role="3SJzmv">
-            <node concept="19SGf9" id="5RGI$o55H4A" role="OjmMu">
-              <node concept="19SUe$" id="5RGI$o55H4B" role="19SJt6">
-                <property role="19SUeA" value="Following operations should work" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="13WYCj" id="2ue418pxO2S" role="3XIRFZ">
           <node concept="13WUSV" id="2ue418pxOfF" role="13V78g">
             <property role="TrG5h" value="w" />
@@ -856,7 +833,7 @@
             <property role="2hmy$m" value="6" />
           </node>
         </node>
-        <node concept="3XISUE" id="4G37Yh4GCBH" role="3XIRFZ" />
+        <node concept="3XISUE" id="CNkpdzTK3V" role="3XIRFZ" />
         <node concept="13WYCj" id="4G37Yh4GCBI" role="3XIRFZ">
           <node concept="13WUSV" id="4G37Yh4GCBJ" role="13V78g">
             <property role="TrG5h" value="w1" />
