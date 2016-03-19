@@ -2178,6 +2178,7 @@
                 <node concept="3clFbS" id="2GZiJUXMkBc" role="3clFbx">
                   <node concept="2MkqsV" id="2GZiJUXMkBd" role="3cqZAp">
                     <node concept="3Cnw8n" id="2GZiJUXMkBe" role="2OEOjU">
+                      <property role="ARO6o" value="true" />
                       <ref role="QpYPw" node="5zmbZKrh4FK" resolve="fix_analysisDepth" />
                       <node concept="3CnSsL" id="2GZiJUXMkBf" role="3Coj4f">
                         <ref role="QkamJ" node="5zmbZKrh8_k" resolve="analysis" />

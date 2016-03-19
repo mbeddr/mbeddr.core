@@ -6221,6 +6221,22 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7xDyb4PGpry" role="jymVt" />
+    <node concept="312cEg" id="6bKzo6o7ywS" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="defaultUnwindingAssertionsCheckbox" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6bKzo6o7ywT" role="1B3o_S" />
+      <node concept="3uibUv" id="6bKzo6o7ywU" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JCheckBox" resolve="JCheckBox" />
+      </node>
+      <node concept="2ShNRf" id="6bKzo6o7ywV" role="33vP2m">
+        <node concept="1pGfFk" id="6bKzo6o7ywW" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6bKzo6o7x7n" role="jymVt" />
     <node concept="312cEg" id="FDeiXqA2LA" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -6650,7 +6666,7 @@
                 <node concept="1pGfFk" id="3_HSwtdawg4" role="2ShVmc">
                   <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                   <node concept="Xl_RD" id="3_HSwtdawg5" role="37wK5m">
-                    <property role="Xl_RC" value="Rebuild models before analysis: " />
+                    <property role="Xl_RC" value="Rebuild models before analysis:        " />
                   </node>
                 </node>
               </node>
@@ -7317,6 +7333,118 @@
           </node>
         </node>
         <node concept="3clFbH" id="7xDyb4PJiAp" role="3cqZAp" />
+        <node concept="3clFbF" id="6bKzo6o7r8h" role="3cqZAp">
+          <node concept="2OqwBi" id="6bKzo6o7r8i" role="3clFbG">
+            <node concept="37vLTw" id="6bKzo6o7r8j" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
+            </node>
+            <node concept="liA8E" id="6bKzo6o7r8k" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="2ShNRf" id="6bKzo6o7r8l" role="37wK5m">
+                <node concept="1pGfFk" id="6bKzo6o7r8m" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="6bKzo6o7r8n" role="37wK5m">
+                    <property role="Xl_RC" value="CBMC unwinding prior to 5.3: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6bKzo6o7r8o" role="3cqZAp">
+          <node concept="2OqwBi" id="6bKzo6o7r8p" role="3clFbG">
+            <node concept="37vLTw" id="6bKzo6o7r8q" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
+            </node>
+            <node concept="liA8E" id="6bKzo6o7r8r" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="6bKzo6o7$tD" role="37wK5m">
+                <ref role="3cqZAo" node="6bKzo6o7ywS" resolve="defaultUnwindingAssertionsCheckbox" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6bKzo6o7r8t" role="3cqZAp">
+          <node concept="2OqwBi" id="6bKzo6o7r8u" role="3clFbG">
+            <node concept="37vLTw" id="6bKzo6o7$Kp" role="2Oq$k0">
+              <ref role="3cqZAo" node="6bKzo6o7ywS" resolve="defaultUnwindingAssertionsCheckbox" />
+            </node>
+            <node concept="liA8E" id="6bKzo6o7r8w" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="3cpWs3" id="6bKzo6o7vUJ" role="37wK5m">
+                <node concept="Xl_RD" id="6bKzo6o7wIn" role="3uHU7w">
+                  <property role="Xl_RC" value="by using --unwinding-assertions" />
+                </node>
+                <node concept="3cpWs3" id="6bKzo6o7r8x" role="3uHU7B">
+                  <node concept="Xl_RD" id="6bKzo6o7r8z" role="3uHU7B">
+                    <property role="Xl_RC" value="Prior to version 5.3, CBMC generates unwinding assertions by " />
+                  </node>
+                  <node concept="Xl_RD" id="6bKzo6o7r8y" role="3uHU7w">
+                    <property role="Xl_RC" value="default. Starting with 5.3, CBMC does not generate unwinding assertions by default but must be instructed to do so " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6bKzo6o7r8$" role="3cqZAp">
+          <node concept="2OqwBi" id="6bKzo6o7r8_" role="3clFbG">
+            <node concept="37vLTw" id="6bKzo6o7_2V" role="2Oq$k0">
+              <ref role="3cqZAo" node="6bKzo6o7ywS" resolve="defaultUnwindingAssertionsCheckbox" />
+            </node>
+            <node concept="liA8E" id="6bKzo6o7r8B" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
+              <node concept="2ShNRf" id="6bKzo6o7r8C" role="37wK5m">
+                <node concept="YeOm9" id="6bKzo6o7r8D" role="2ShVmc">
+                  <node concept="1Y3b0j" id="6bKzo6o7r8E" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="gsia:~ChangeListener" resolve="ChangeListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="6bKzo6o7r8F" role="1B3o_S" />
+                    <node concept="3clFb_" id="6bKzo6o7r8G" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="stateChanged" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="6bKzo6o7r8H" role="1B3o_S" />
+                      <node concept="3cqZAl" id="6bKzo6o7r8I" role="3clF45" />
+                      <node concept="37vLTG" id="6bKzo6o7r8J" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="6bKzo6o7r8K" role="1tU5fm">
+                          <ref role="3uigEE" to="gsia:~ChangeEvent" resolve="ChangeEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="6bKzo6o7r8L" role="3clF47">
+                        <node concept="3clFbF" id="6bKzo6o7r8M" role="3cqZAp">
+                          <node concept="37vLTI" id="6bKzo6o7r8N" role="3clFbG">
+                            <node concept="2OqwBi" id="6bKzo6o7r8O" role="37vLTx">
+                              <node concept="37vLTw" id="6bKzo6o7_m4" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6bKzo6o7ywS" resolve="defaultUnwindingAssertionsCheckbox" />
+                              </node>
+                              <node concept="liA8E" id="6bKzo6o7r8Q" role="2OqNvi">
+                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="6bKzo6o7r8R" role="37vLTJ">
+                              <node concept="37vLTw" id="6bKzo6o7r8S" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                              </node>
+                              <node concept="2OwXpG" id="6bKzo6o7BIk" role="2OqNvi">
+                                <ref role="2Oxat5" node="6bKzo6o7Arp" resolve="defaultUnwindingAssertions" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6bKzo6o7oyU" role="3cqZAp" />
+        <node concept="3clFbH" id="6bKzo6o7pMt" role="3cqZAp" />
         <node concept="3clFbF" id="NfDeW0Q4Y4" role="3cqZAp">
           <node concept="2OqwBi" id="NfDeW0Q4Y5" role="3clFbG">
             <node concept="37vLTw" id="NfDeW0Q4Y6" role="2Oq$k0">
@@ -8227,6 +8355,34 @@
               <ref role="3cqZAo" node="7xDyb4PGsXm" resolve="unwindingAssertionsCheckbox" />
             </node>
             <node concept="liA8E" id="7xDyb4PGATF" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JCheckBox.updateUI():void" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6bKzo6o7CU6" role="3cqZAp">
+          <node concept="2OqwBi" id="6bKzo6o7Djc" role="3clFbG">
+            <node concept="37vLTw" id="6bKzo6o7CU4" role="2Oq$k0">
+              <ref role="3cqZAo" node="6bKzo6o7ywS" resolve="defaultUnwindingAssertionsCheckbox" />
+            </node>
+            <node concept="liA8E" id="6bKzo6o7E$j" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setSelected(boolean):void" resolve="setSelected" />
+              <node concept="2OqwBi" id="6bKzo6o7EN4" role="37wK5m">
+                <node concept="37vLTw" id="6bKzo6o7ELU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                </node>
+                <node concept="2OwXpG" id="6bKzo6o7ERo" role="2OqNvi">
+                  <ref role="2Oxat5" node="6bKzo6o7Arp" resolve="defaultUnwindingAssertions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6bKzo6o7G3Y" role="3cqZAp">
+          <node concept="2OqwBi" id="6bKzo6o7GtW" role="3clFbG">
+            <node concept="37vLTw" id="6bKzo6o7G3W" role="2Oq$k0">
+              <ref role="3cqZAo" node="6bKzo6o7ywS" resolve="defaultUnwindingAssertionsCheckbox" />
+            </node>
+            <node concept="liA8E" id="6bKzo6o7HJB" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JCheckBox.updateUI():void" resolve="updateUI" />
             </node>
           </node>
@@ -10849,6 +11005,17 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3OhBgB4hwPj" role="jymVt" />
+    <node concept="312cEg" id="6bKzo6o7Arp" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="defaultUnwindingAssertions" />
+      <property role="3TUv4t" value="false" />
+      <node concept="10P_77" id="6bKzo6o7Arq" role="1tU5fm" />
+      <node concept="3clFbT" id="6bKzo6o7Arr" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6bKzo6o7_SE" role="jymVt" />
     <node concept="312cEg" id="3OhBgB4hwPk" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -11475,6 +11642,22 @@
       <node concept="10P_77" id="3OhBgB4hx4F" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="3OhBgB4hx4G" role="jymVt" />
+    <node concept="3clFb_" id="6bKzo6o8rzM" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isUnwindingAssertionsByDefault" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="6bKzo6o8rzN" role="3clF47">
+        <node concept="3cpWs6" id="6bKzo6o8rzO" role="3cqZAp">
+          <node concept="37vLTw" id="6bKzo6o8sc6" role="3cqZAk">
+            <ref role="3cqZAo" node="6bKzo6o7Arp" resolve="defaultUnwindingAssertions" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6bKzo6o8rzQ" role="1B3o_S" />
+      <node concept="10P_77" id="6bKzo6o8rzR" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6bKzo6o8r0A" role="jymVt" />
     <node concept="3clFb_" id="3OhBgB4hx4H" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="setWordWidth" />
