@@ -2,7 +2,7 @@
 <model ref="r:23d4f4b2-26c2-403d-be1f-e68afa5e7ef9(de.itemis.mps.editor.celllayout.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -220,6 +220,9 @@
     <ref role="1XX52x" to="pvux:43ViAfTrykj" resolve="HorizontalLineCell" />
     <node concept="PMmxH" id="43ViAfTtdt_" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VPXOz" id="1a5cdpmuifs" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
     <node concept="3EZMnI" id="fIxj85y" role="6VMZX">
       <property role="3EZMnw" value="true" />

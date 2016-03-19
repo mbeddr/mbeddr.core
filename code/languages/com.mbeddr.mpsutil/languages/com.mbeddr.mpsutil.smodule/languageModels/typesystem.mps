@@ -11,10 +11,14 @@
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -79,6 +83,7 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
@@ -94,6 +99,9 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -103,6 +111,14 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -328,6 +344,47 @@
     <node concept="1YaCAy" id="fXun2RlBZO" role="1YuTPh">
       <property role="TrG5h" value="getLanguagesOperation" />
       <ref role="1YaFvo" to="gt8j:fXun2RlBZE" resolve="GetLanguagesOperation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2gGfLsWUgzq">
+    <property role="TrG5h" value="typeof_AddDependencyOperation" />
+    <node concept="3clFbS" id="2gGfLsWUgzr" role="18ibNy">
+      <node concept="2Gpval" id="2gGfLsWUgOA" role="3cqZAp">
+        <node concept="2GrKxI" id="2gGfLsWUgOC" role="2Gsz3X">
+          <property role="TrG5h" value="modelExpr" />
+        </node>
+        <node concept="3clFbS" id="2gGfLsWUgOE" role="2LFqv$">
+          <node concept="1ZobV4" id="2gGfLsWUgRo" role="3cqZAp">
+            <property role="3wDh2S" value="true" />
+            <node concept="mw_s8" id="2gGfLsWUibN" role="1ZfhKB">
+              <node concept="2c44tf" id="2gGfLsWUibF" role="mwGJk">
+                <node concept="3uibUv" id="2gGfLsWUinH" role="2c44tc">
+                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="2gGfLsWUgR_" role="1ZfhK$">
+              <node concept="1Z2H0r" id="2gGfLsWUgRx" role="mwGJk">
+                <node concept="2GrUjf" id="2gGfLsWUgRT" role="1Z2MuG">
+                  <ref role="2Gs0qQ" node="2gGfLsWUgOC" resolve="modelExpr" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2gGfLsWUgCI" role="2GsD0m">
+          <node concept="1YBJjd" id="2gGfLsWUg_S" role="2Oq$k0">
+            <ref role="1YBMHb" node="2gGfLsWUgzt" resolve="addDependencyOperation" />
+          </node>
+          <node concept="3Tsc0h" id="2gGfLsWUgNI" role="2OqNvi">
+            <ref role="3TtcxE" to="gt8j:2gGfLsWUgzc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2gGfLsWUgzt" role="1YuTPh">
+      <property role="TrG5h" value="addDependencyOperation" />
+      <ref role="1YaFvo" to="gt8j:3d01KqFgWkj" resolve="AddDependencyOperation" />
     </node>
   </node>
 </model>
