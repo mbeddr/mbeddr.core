@@ -10608,15 +10608,28 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4cScG10a9Iq" role="3cqZAp">
-          <node concept="2OqwBi" id="4cScG10aa4_" role="3clFbG">
-            <node concept="37vLTw" id="4cScG10a9Io" role="2Oq$k0">
-              <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
-            </node>
-            <node concept="TSZUe" id="4cScG10aaPC" role="2OqNvi">
-              <node concept="Xl_RD" id="4cScG10aaZa" role="25WWJ7">
-                <property role="Xl_RC" value="--gcc" />
+        <node concept="3clFbJ" id="1y6QQG7rHgp" role="3cqZAp">
+          <node concept="3clFbS" id="1y6QQG7rHgq" role="3clFbx">
+            <node concept="3clFbF" id="1y6QQG7rHgr" role="3cqZAp">
+              <node concept="2OqwBi" id="1y6QQG7rHgs" role="3clFbG">
+                <node concept="37vLTw" id="1y6QQG7rHgt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OhBgB4bpAd" resolve="args" />
+                </node>
+                <node concept="TSZUe" id="1y6QQG7rHgu" role="2OqNvi">
+                  <node concept="Xl_RD" id="1y6QQG7rHgv" role="25WWJ7">
+                    <property role="Xl_RC" value="--gcc" />
+                  </node>
+                </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1y6QQG7rHgw" role="3clFbw">
+            <node concept="10M0yZ" id="1y6QQG7rHgx" role="2Oq$k0">
+              <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+              <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+            </node>
+            <node concept="liA8E" id="1y6QQG7rHgy" role="2OqNvi">
+              <ref role="37wK5l" to="p8vh:3OhBgB4hx2h" resolve="shouldUseGCC" />
             </node>
           </node>
         </node>
@@ -10817,15 +10830,28 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4cScG10ablZ" role="3cqZAp">
-          <node concept="2OqwBi" id="4cScG10abm0" role="3clFbG">
-            <node concept="37vLTw" id="4cScG10abm1" role="2Oq$k0">
-              <ref role="3cqZAo" node="7GloF9XSPfF" resolve="args" />
-            </node>
-            <node concept="TSZUe" id="4cScG10abm2" role="2OqNvi">
-              <node concept="Xl_RD" id="4cScG10abm3" role="25WWJ7">
-                <property role="Xl_RC" value="--gcc" />
+        <node concept="3clFbJ" id="1y6QQG7rFVu" role="3cqZAp">
+          <node concept="3clFbS" id="1y6QQG7rFVw" role="3clFbx">
+            <node concept="3clFbF" id="4cScG10ablZ" role="3cqZAp">
+              <node concept="2OqwBi" id="4cScG10abm0" role="3clFbG">
+                <node concept="37vLTw" id="4cScG10abm1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7GloF9XSPfF" resolve="args" />
+                </node>
+                <node concept="TSZUe" id="4cScG10abm2" role="2OqNvi">
+                  <node concept="Xl_RD" id="4cScG10abm3" role="25WWJ7">
+                    <property role="Xl_RC" value="--gcc" />
+                  </node>
+                </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1y6QQG7rGzw" role="3clFbw">
+            <node concept="10M0yZ" id="1y6QQG7rGnQ" role="2Oq$k0">
+              <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+              <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+            </node>
+            <node concept="liA8E" id="1y6QQG7rGYV" role="2OqNvi">
+              <ref role="37wK5l" to="p8vh:3OhBgB4hx2h" resolve="shouldUseGCC" />
             </node>
           </node>
         </node>
