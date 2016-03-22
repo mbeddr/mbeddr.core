@@ -18,7 +18,9 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -49,7 +51,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4C4txgwLB_X" resolve="IScopesContent" />
+      <ref role="20lvS9" node="4C4txgwLB_X" resolve="IConceptScopeContent" />
     </node>
     <node concept="1TJgyj" id="hDM2mAQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -60,27 +62,33 @@
     <node concept="PrWs8" id="3NEANjWk8uo" role="PzmwI">
       <ref role="PrY4T" to="tpce:2hxg_BDjKM4" resolve="IConceptAspect" />
     </node>
-    <node concept="PrWs8" id="5kJD22HDq$Q" role="PzmwI">
+    <node concept="PrWs8" id="4C4txgwMqIn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5kJD22HIYis">
     <property role="1pbfSe" value="48990396" />
-    <property role="TrG5h" value="ScopeGraphNodeScopeFactory" />
-    <property role="34LRSv" value="scope graph" />
+    <property role="TrG5h" value="ScopeDSLNodeScopeFactory" />
+    <property role="34LRSv" value="scope dsl" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwM0hx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4C4txgwM0gI" resolve="IReferenceScopeContent" />
+    </node>
     <node concept="PrWs8" id="5kJD22HIYiQ" role="PzmwI">
       <ref role="PrY4T" to="tp1t:7ipADkTf7eE" resolve="NodeScopeFactory" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Gq3s3RtaAs">
     <property role="1pbfSe" value="848213852" />
-    <property role="TrG5h" value="GraphContributions" />
+    <property role="TrG5h" value="GlobalScopeDeclarations" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Gq3s3RtaAW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contributions" />
+      <property role="20kJfa" value="content" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4C4txgwLBp5" resolve="IGlobalScopeContent" />
     </node>
@@ -91,7 +99,228 @@
   </node>
   <node concept="PlHQZ" id="4C4txgwLB_X">
     <property role="1pbfSe" value="1791684497" />
-    <property role="TrG5h" value="IScopesContent" />
+    <property role="TrG5h" value="IConceptScopeContent" />
+  </node>
+  <node concept="1TIwiD" id="4C4txgwM0fZ">
+    <property role="1pbfSe" value="1791785491" />
+    <property role="TrG5h" value="AddElementsToScope" />
+    <property role="34LRSv" value="include" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwM29N" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="path" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM0ht" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM0gI" resolve="IReferenceScopeContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4C4txgwM0gI">
+    <property role="1pbfSe" value="1791785538" />
+    <property role="TrG5h" value="IReferenceScopeContent" />
+  </node>
+  <node concept="PlHQZ" id="4C4txgwM29R">
+    <property role="1pbfSe" value="1791793291" />
+    <property role="TrG5h" value="IPathElement" />
+  </node>
+  <node concept="1TIwiD" id="4C4txgwM2cU">
+    <property role="1pbfSe" value="1791793486" />
+    <property role="TrG5h" value="AncestorPathElement" />
+    <property role="34LRSv" value="ancestor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwM2dD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ancestorConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM2dH" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwM49X">
+    <property role="1pbfSe" value="1791801489" />
+    <property role="TrG5h" value="BucketDeclaration" />
+    <property role="34LRSv" value="bucket" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwM4aG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="elementsConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM4aV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM4aK" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwLBp5" resolve="IGlobalScopeContent" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM4bj" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwLB_X" resolve="IConceptScopeContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwM4bu">
+    <property role="1pbfSe" value="1791801586" />
+    <property role="TrG5h" value="BucketInstance" />
+    <property role="34LRSv" value="bucket instance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwM4ch" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="bucketDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM49X" resolve="BucketDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM4cd" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwLB_X" resolve="IConceptScopeContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwM4e5">
+    <property role="1pbfSe" value="1791801753" />
+    <property role="TrG5h" value="BucketInAncestor" />
+    <property role="34LRSv" value="ancestorBucket" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwM4eX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="bucketDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM49X" resolve="BucketDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwM4eS" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4z5zasse1ZO" role="PzmwI">
+      <ref role="PrY4T" node="4z5zasse1Zk" resolve="IBucketPathElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMdH1">
+    <property role="1pbfSe" value="1791840597" />
+    <property role="TrG5h" value="PathDotExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwMdHO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="1TJgyj" id="4C4txgwMdHS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4z5zassghag" resolve="IPathDotOperation" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwMdHK" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwMfZd" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMkG0">
+    <property role="1pbfSe" value="1791869204" />
+    <property role="TrG5h" value="BucketType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwMkIR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="elementsConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMwca">
+    <property role="1pbfSe" value="1791916318" />
+    <property role="TrG5h" value="OfConcept" />
+    <property role="34LRSv" value="ofConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwMwcY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwMwcT" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4z5zassghbD" role="PzmwI">
+      <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMDFD">
+    <property role="1pbfSe" value="1791955197" />
+    <property role="TrG5h" value="OwnBucket" />
+    <property role="34LRSv" value="ownBucket" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwMDGt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="bucket" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM49X" resolve="BucketDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwMDGo" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMHah">
+    <property role="1pbfSe" value="1791969445" />
+    <property role="TrG5h" value="AddElementsToBucket" />
+    <property role="34LRSv" value="add" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwMHb0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bucket" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="1TJgyj" id="4C4txgwMHb5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwMJWz" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwLB_X" resolve="IConceptScopeContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMKJd">
+    <property role="1pbfSe" value="1791984097" />
+    <property role="TrG5h" value="BucketPathElement" />
+    <property role="34LRSv" value="bucket" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4C4txgwMKJW" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="bucket" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4C4txgwM49X" resolve="BucketDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4C4txgwMKK1" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4z5zasse203" role="PzmwI">
+      <ref role="PrY4T" node="4z5zasse1Zk" resolve="IBucketPathElement" />
+    </node>
+    <node concept="PrWs8" id="4z5zassghaU" role="PzmwI">
+      <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4C4txgwMO82">
+    <property role="1pbfSe" value="1791997974" />
+    <property role="TrG5h" value="ThisPathElement" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4C4txgwMO8L" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4z5zasse1Zk">
+    <property role="1pbfSe" value="1694346363" />
+    <property role="TrG5h" value="IBucketPathElement" />
+  </node>
+  <node concept="PlHQZ" id="4z5zassghag">
+    <property role="1pbfSe" value="1694932791" />
+    <property role="TrG5h" value="IPathDotOperation" />
+    <node concept="PrWs8" id="4z5zassghbN" role="PrDN$">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
   </node>
 </model>
 
