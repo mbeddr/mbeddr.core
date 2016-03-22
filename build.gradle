@@ -17,13 +17,12 @@ String BuildPlugin_Task = "assemble"
 String RunTests_Task = "check"
 String mbeddrScripts_basePath = ant.properties['mbeddr.github.core.home'] + "/build"
 String allScripts_buildFileLocation = mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts"
-
 configurations {
     mps {
         description = 'compile mps'
     }
 }
-task resolveMPS(type: Copy) {
+task doTestRetrieve(type: Copy) {
     from configurations.mps
     into "myDependencies"
     eachFile {
@@ -31,20 +30,12 @@ task resolveMPS(type: Copy) {
         into file("./MPS")
     }
 }
-task load_allScripts(dependsOn: resolveMPS) {
+task load_allScripts(dependsOn: doTestRetrieve) {
     println("mps location: " + "$projectDir" + "/MPS/"+mbeddrMpsDir+"/")
 	ant.echo("path: "+allScripts_buildFileLocation + "/" + "build.xml")
 	ant.importBuild( allScripts_buildFileLocation + "/" + "build.xml") { antTargetName ->
 		'allScripts_' + antTargetName
 	}
-}
-
-task load_slAll(dependsOn: resolveMPS, build_allScripts) {
-
-    ant.echo("path: "+allScripts_buildFileLocation + "/" + "build.xml")
-    ant.importBuild( allScripts_buildFileLocation + "/" + "build.xml") { antTargetName ->
-        'allScripts_' + antTargetName
-    }
 }
 
 task compileTask {
@@ -58,8 +49,11 @@ task compileTask {
     configurations.compile.each { File file -> println file.name }
     ant.echo("compile123")
 }
-task build_allScripts(type: Zip, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]) {
-   from projectDir.absolutePath + "/artifacts/com.mbeddr.allScripts.build/"
+task build_allScripts(type: Zip
+        //, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]
+        ) {
+    from fileTree(dir: projectDir.absolutePath + "/build", include: '**/*.xml')
+    from fileTree(dir: projectDir.absolutePath + "/code/plugins", include: '**/*.xml')
 }
 
 
