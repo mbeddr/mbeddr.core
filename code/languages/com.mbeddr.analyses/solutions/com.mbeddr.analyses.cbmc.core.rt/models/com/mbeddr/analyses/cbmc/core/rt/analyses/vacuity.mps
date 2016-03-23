@@ -433,7 +433,7 @@
           <node concept="3clFbS" id="3WYFqnsvTeQ" role="2LFqv$">
             <node concept="3SKdUt" id="3WYFqnsxIaj" role="3cqZAp">
               <node concept="3SKdUq" id="3WYFqnsxIal" role="3SKWNk">
-                <property role="3SKdUp" value="the FalseLiteral textgen produces &quot;0 != 0&quot;" />
+                <property role="3SKdUp" value="for CBMC &quot;false&quot; is &quot;0 != 0&quot;" />
               </node>
             </node>
             <node concept="3clFbJ" id="3WYFqnsxFiF" role="3cqZAp">
@@ -456,14 +456,14 @@
                   <node concept="2GrUjf" id="3WYFqnsxFvm" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="3WYFqnsvTeO" resolve="c" />
                   </node>
-                  <node concept="2S8uIT" id="3WYFqnsYpqk" role="2OqNvi">
-                    <ref role="2S8YL0" to="rbq9:mb65_hvOyZ" resolve="description" />
+                  <node concept="2S8uIT" id="3WYFqnt7cBo" role="2OqNvi">
+                    <ref role="2S8YL0" to="rbq9:1aqqXyK3GCK" resolve="expression" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3WYFqnsxFPp" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="Xl_RD" id="3WYFqnsxG0g" role="37wK5m">
-                    <property role="Xl_RC" value="assertion false" />
+                    <property role="Xl_RC" value="0 != 0" />
                   </node>
                 </node>
               </node>
