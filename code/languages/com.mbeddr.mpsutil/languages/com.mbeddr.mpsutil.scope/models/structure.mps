@@ -216,17 +216,6 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4C4txgwMkG0">
-    <property role="1pbfSe" value="1791869204" />
-    <property role="TrG5h" value="BucketType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4C4txgwMkIR" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="elementsConcept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4C4txgwMwca">
     <property role="1pbfSe" value="1791916318" />
     <property role="TrG5h" value="OfConcept" />
@@ -243,21 +232,6 @@
     </node>
     <node concept="PrWs8" id="4z5zassghbD" role="PzmwI">
       <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4C4txgwMDFD">
-    <property role="1pbfSe" value="1791955197" />
-    <property role="TrG5h" value="OwnBucket" />
-    <property role="34LRSv" value="ownBucket" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4C4txgwMDGt" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="bucket" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4C4txgwM49X" resolve="BucketDeclaration" />
-    </node>
-    <node concept="PrWs8" id="4C4txgwMDGo" role="PzmwI">
-      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4C4txgwMHah">
@@ -292,9 +266,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4C4txgwM49X" resolve="BucketDeclaration" />
     </node>
-    <node concept="PrWs8" id="4C4txgwMKK1" role="PzmwI">
-      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
-    </node>
     <node concept="PrWs8" id="4z5zasse203" role="PzmwI">
       <ref role="PrY4T" node="4z5zasse1Zk" resolve="IBucketPathElement" />
     </node>
@@ -314,6 +285,9 @@
   <node concept="PlHQZ" id="4z5zasse1Zk">
     <property role="1pbfSe" value="1694346363" />
     <property role="TrG5h" value="IBucketPathElement" />
+    <node concept="PrWs8" id="4XHP9RyOPyK" role="PrDN$">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4z5zassghag">
     <property role="1pbfSe" value="1694932791" />
@@ -321,6 +295,47 @@
     <node concept="PrWs8" id="4z5zassghbN" role="PrDN$">
       <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4z5zassgZqM">
+    <property role="1pbfSe" value="1695122265" />
+    <property role="TrG5h" value="LinkPathElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4z5zassgZr9" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="link" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4z5zassgZqY" role="PzmwI">
+      <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4z5zasshC7_">
+    <property role="1pbfSe" value="1695288972" />
+    <property role="TrG5h" value="ConceptScopeContentCondition" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4z5zasshC7A" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4z5zasshC7E" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4C4txgwLB_X" resolve="IConceptScopeContent" />
+    </node>
+    <node concept="PrWs8" id="4z5zasshGkx" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwLB_X" resolve="IConceptScopeContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4z5zasshGRs">
+    <property role="1pbfSe" value="1695308419" />
+    <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
 </model>
 

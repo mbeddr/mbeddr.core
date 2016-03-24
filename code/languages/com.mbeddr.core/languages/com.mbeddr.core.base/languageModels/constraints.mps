@@ -25,8 +25,19 @@
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="4389491438699753847" name="content" index="30IUD3" />
       </concept>
+      <concept id="5243751990504620517" name="com.mbeddr.mpsutil.scope.structure.ConceptScopeContentCondition" flags="ng" index="1kwKP2">
+        <child id="5243751990504620518" name="condition" index="1kwKP1" />
+        <child id="5243751990504620522" name="content" index="1kwKPd" />
+      </concept>
+      <concept id="5243751990504639964" name="com.mbeddr.mpsutil.scope.structure.ThisExpression" flags="ng" index="1kwO5V" />
+      <concept id="5243751990504453810" name="com.mbeddr.mpsutil.scope.structure.LinkPathElement" flags="ng" index="1kxBCl">
+        <reference id="5243751990504453833" name="link" index="1kxBDI" />
+      </concept>
       <concept id="5333517687534928509" name="com.mbeddr.mpsutil.scope.structure.BucketDeclaration" flags="ng" index="1EN3hD">
         <reference id="5333517687534928556" name="elementsConcept" index="1EN3iS" />
+      </concept>
+      <concept id="5333517687534928773" name="com.mbeddr.mpsutil.scope.structure.BucketInAncestor" flags="ng" index="1EN3mh">
+        <reference id="5333517687534928829" name="bucketDeclaration" index="1EN3mD" />
       </concept>
       <concept id="5333517687534967617" name="com.mbeddr.mpsutil.scope.structure.PathDotExpression" flags="ng" index="1ENaPl">
         <child id="5333517687534967668" name="left" index="1ENaPw" />
@@ -1031,6 +1042,50 @@
         </node>
         <node concept="1ENRRp" id="4C4txgwMQFv" role="1ENaPG">
           <ref role="1ENRRC" node="4C4txgwM_c6" resolve="visibleElements" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30Ixz5" id="4z5zassgYkz">
+    <property role="3GE5qa" value="chunk" />
+    <ref role="1M2myG" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    <node concept="1kwKP2" id="4z5zasshGQS" role="30IUD3">
+      <node concept="1ENEi5" id="4z5zassgYk$" role="1kwKPd">
+        <node concept="1EN3mh" id="4z5zasshdwf" role="1ENEjk">
+          <ref role="1EN3mD" node="4C4txgwMTfT" resolve="reexportedChunks" />
+        </node>
+        <node concept="1ENaPl" id="4z5zassgYkQ" role="1ENEjh">
+          <node concept="1kxBCl" id="4z5zasshczo" role="1ENaPG">
+            <ref role="1kxBDI" to="vs0r:DubiFAXDKB" />
+          </node>
+          <node concept="1ENNgm" id="4z5zassgYkK" role="1ENaPw" />
+        </node>
+      </node>
+      <node concept="2OqwBi" id="4z5zasshJTV" role="1kwKP1">
+        <node concept="1kwO5V" id="4z5zasshJRX" role="2Oq$k0" />
+        <node concept="3TrcHB" id="4z5zasshJYH" role="2OqNvi">
+          <ref role="3TsBF5" to="vs0r:DubiFAXCMb" resolve="reexport" />
+        </node>
+      </node>
+    </node>
+    <node concept="1kwKP2" id="4z5zasshK4N" role="30IUD3">
+      <node concept="1ENEi5" id="4z5zasshKiX" role="1kwKPd">
+        <node concept="1EN3mh" id="4z5zasshKiY" role="1ENEjk">
+          <ref role="1EN3mD" node="4C4txgwMDq$" resolve="importedChunks" />
+        </node>
+        <node concept="1ENaPl" id="4z5zasshKiZ" role="1ENEjh">
+          <node concept="1kxBCl" id="4z5zasshKj0" role="1ENaPG">
+            <ref role="1kxBDI" to="vs0r:DubiFAXDKB" />
+          </node>
+          <node concept="1ENNgm" id="4z5zasshKj1" role="1ENaPw" />
+        </node>
+      </node>
+      <node concept="3fqX7Q" id="4z5zasshK6a" role="1kwKP1">
+        <node concept="2OqwBi" id="4z5zasshK8U" role="3fr31v">
+          <node concept="1kwO5V" id="4z5zasshK6r" role="2Oq$k0" />
+          <node concept="3TrcHB" id="4z5zasshKi8" role="2OqNvi">
+            <ref role="3TsBF5" to="vs0r:DubiFAXCMb" resolve="reexport" />
+          </node>
         </node>
       </node>
     </node>
