@@ -912,7 +912,7 @@
         <node concept="3clFbF" id="5kIX9cj0Dvt" role="3cqZAp">
           <node concept="37vLTI" id="5kIX9cj0Dvu" role="3clFbG">
             <node concept="Xl_RD" id="5kIX9cj0Dvv" role="37vLTx">
-              <property role="Xl_RC" value="cpa.location.LocationCPA, cpa.callstack.CallstackCPA, cpa.functionpointer.FunctionPointerCPA, cpa.predicate.PredicateCPA" />
+              <property role="Xl_RC" value="cpa.location.LocationCPA, cpa.callstack.CallstackCPA, cpa.functionpointer.FunctionPointerCPA, cpa.predicate.PredicateCPA, cpa.value.ValueAnalysisCPA, cpa.pointer2.PointerCPA" />
             </node>
             <node concept="3EllGN" id="5kIX9cj0Dvw" role="37vLTJ">
               <node concept="Xl_RD" id="5kIX9cj0Dvx" role="3ElVtu">
@@ -980,7 +980,7 @@
                 <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
               </node>
               <node concept="Xl_RD" id="5kIX9cj0DvC" role="3uHU7w">
-                <property role="Xl_RC" value="\\lib\\config\\specification\\assertion.spc" />
+                <property role="Xl_RC" value="/config/specs/assertion.spc" />
               </node>
             </node>
           </node>
