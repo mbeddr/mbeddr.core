@@ -2117,6 +2117,63 @@
               </node>
             </node>
           </node>
+          <node concept="3eNFk2" id="5pfYjqBcpOf" role="3eNLev">
+            <node concept="3clFbS" id="5pfYjqBcpOh" role="3eOfB_">
+              <node concept="3clFbF" id="5pfYjqBctN4" role="3cqZAp">
+                <node concept="2OqwBi" id="5pfYjqBctN5" role="3clFbG">
+                  <node concept="37vLTw" id="5pfYjqBctN6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Bf6Ux7TFi1" resolve="comp" />
+                  </node>
+                  <node concept="liA8E" id="5pfYjqBctN7" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Component.setForeground(java.awt.Color):void" resolve="setForeground" />
+                    <node concept="10M0yZ" id="5pfYjqBctN8" role="37wK5m">
+                      <ref role="3cqZAo" to="z60i:~Color.ORANGE" resolve="ORANGE" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="5pfYjqBctNa" role="3cqZAp">
+                <node concept="2OqwBi" id="5pfYjqBctNb" role="3clFbG">
+                  <node concept="37vLTw" id="5pfYjqBctNc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Bf6Ux7TFi1" resolve="comp" />
+                  </node>
+                  <node concept="liA8E" id="5pfYjqBctNd" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Component.setFont(java.awt.Font):void" resolve="setFont" />
+                    <node concept="2OqwBi" id="5pfYjqBctNe" role="37wK5m">
+                      <node concept="2OqwBi" id="5pfYjqBctNf" role="2Oq$k0">
+                        <node concept="37vLTw" id="5pfYjqBctNg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7Bf6Ux7TFi1" resolve="comp" />
+                        </node>
+                        <node concept="liA8E" id="5pfYjqBctNh" role="2OqNvi">
+                          <ref role="37wK5l" to="z60i:~Component.getFont():java.awt.Font" resolve="getFont" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5pfYjqBctNi" role="2OqNvi">
+                        <ref role="37wK5l" to="z60i:~Font.deriveFont(int):java.awt.Font" resolve="deriveFont" />
+                        <node concept="10M0yZ" id="5pfYjqBctNj" role="37wK5m">
+                          <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
+                          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5pfYjqBctGK" role="3eO9$A">
+              <node concept="37vLTw" id="5pfYjqBctGL" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Bf6Ux7Sm7M" resolve="str" />
+              </node>
+              <node concept="liA8E" id="5pfYjqBctGM" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <node concept="10M0yZ" id="5pfYjqBctGN" role="37wK5m">
+                  <ref role="1PxDUh" node="4wNvmgrbgv0" resolve="AnalysesResultsTreeTableModel" />
+                  <ref role="3cqZAo" node="5pfYjqBcihb" resolve="UNKNOWN_MSG" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3eNFk2" id="7Bf6Ux8qH_Q" role="3eNLev">
             <node concept="3clFbS" id="7Bf6Ux8qH_S" role="3eOfB_">
               <node concept="3clFbF" id="7Bf6Ux7SyZa" role="3cqZAp">
@@ -12472,6 +12529,14 @@
         <property role="Xl_RC" value="FAIL" />
       </node>
     </node>
+    <node concept="Wx3nA" id="5pfYjqBcihb" role="jymVt">
+      <property role="TrG5h" value="UNKNOWN_MSG" />
+      <node concept="3Tm1VV" id="5pfYjqBcihc" role="1B3o_S" />
+      <node concept="17QB3L" id="5pfYjqBcihd" role="1tU5fm" />
+      <node concept="Xl_RD" id="5pfYjqBcihe" role="33vP2m">
+        <property role="Xl_RC" value="UNKNOWN" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="6rPcxxUTk$Q" role="jymVt">
       <property role="TrG5h" value="UNWINDING_MSG" />
       <node concept="3Tm1VV" id="6rPcxxUTk$R" role="1B3o_S" />
@@ -14619,6 +14684,24 @@
             </node>
             <node concept="liA8E" id="188YFGrF6R1" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:3BryW1BirsD" resolve="isCancel" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5pfYjqBcpAW" role="3cqZAp">
+          <node concept="3clFbS" id="5pfYjqBcpAX" role="3clFbx">
+            <node concept="3cpWs6" id="5pfYjqBcpAY" role="3cqZAp">
+              <node concept="10M0yZ" id="5pfYjqBcpAZ" role="3cqZAk">
+                <ref role="1PxDUh" node="4wNvmgrbgv0" resolve="AnalysesResultsTreeTableModel" />
+                <ref role="3cqZAo" node="5pfYjqBcihb" resolve="UNKNOWN_MSG" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5pfYjqBcpB0" role="3clFbw">
+            <node concept="37vLTw" id="5pfYjqBcpB1" role="2Oq$k0">
+              <ref role="3cqZAo" node="188YFGrF6rn" resolve="res" />
+            </node>
+            <node concept="liA8E" id="5pfYjqBcpB2" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:5pfYjqBcmab" resolve="isUnknown" />
             </node>
           </node>
         </node>

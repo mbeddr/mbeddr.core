@@ -1018,6 +1018,31 @@
       <node concept="10P_77" id="3BryW1BjAhA" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="3BryW1Bj_7M" role="jymVt" />
+    <node concept="3clFb_" id="5pfYjqBcmab" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isUnknown" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="5pfYjqBcmac" role="3clF47">
+        <node concept="3cpWs6" id="5pfYjqBcmad" role="3cqZAp">
+          <node concept="3clFbC" id="5pfYjqBcmae" role="3cqZAk">
+            <node concept="1rXfSq" id="5pfYjqBcmaf" role="3uHU7B">
+              <ref role="37wK5l" node="54VWoniify$" resolve="getResultKind" />
+            </node>
+            <node concept="Rm8GO" id="5pfYjqBcpf$" role="3uHU7w">
+              <ref role="Rm8GQ" to="rbq9:5pfYjqBbyPA" resolve="UNKNOWN" />
+              <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5pfYjqBcmah" role="1B3o_S" />
+      <node concept="NWlO9" id="5pfYjqBcmai" role="lGtFl">
+        <property role="NWlVz" value="Returns true if the result of analysis is UNKNOWN." />
+      </node>
+      <node concept="10P_77" id="5pfYjqBcmaj" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5pfYjqBclKt" role="jymVt" />
     <node concept="3clFb_" id="54VWoniifyE" role="jymVt">
       <property role="TrG5h" value="getNumberOfCounterexampleStates" />
       <node concept="10Oyi0" id="54VWoniifyF" role="3clF45" />
