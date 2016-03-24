@@ -332,6 +332,7 @@
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -341,8 +342,8 @@
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -356,6 +357,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -738,18 +740,16 @@
               <ref role="3cqZAo" node="jipk886TZ2" resolve="conc" />
             </node>
             <node concept="TSZUe" id="jipk886TZb" role="2OqNvi">
-              <node concept="2ShNRf" id="jipk886TZc" role="25WWJ7">
-                <node concept="1pGfFk" id="jipk886TZd" role="2ShVmc">
-                  <ref role="37wK5l" to="vxxo:~SConceptAdapterByName.&lt;init&gt;(java.lang.String)" resolve="SConceptAdapterByName" />
-                  <node concept="2OqwBi" id="jipk886TZe" role="37wK5m">
-                    <node concept="2qgKlT" id="jipk886TZf" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
-                    </node>
-                    <node concept="37vLTw" id="jipk886TZg" role="2Oq$k0">
+              <node concept="2OqwBi" id="1$sYOzSJUMg" role="25WWJ7">
+                <node concept="1eOMI4" id="1$sYOzSJTVE" role="2Oq$k0">
+                  <node concept="10QFUN" id="1$sYOzSJTVB" role="1eOMHV">
+                    <node concept="37vLTw" id="1$sYOzSJUms" role="10QFUP">
                       <ref role="3cqZAo" node="jipk886TZv" resolve="concept" />
                     </node>
+                    <node concept="3THzug" id="1$sYOzSJUfz" role="10QFUM" />
                   </node>
                 </node>
+                <node concept="1rGIog" id="1$sYOzSJWcY" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -909,18 +909,16 @@
               <ref role="3cqZAo" node="jipk886TZS" resolve="conc" />
             </node>
             <node concept="TSZUe" id="jipk886U01" role="2OqNvi">
-              <node concept="2ShNRf" id="jipk886U02" role="25WWJ7">
-                <node concept="1pGfFk" id="jipk886U03" role="2ShVmc">
-                  <ref role="37wK5l" to="vxxo:~SConceptAdapterByName.&lt;init&gt;(java.lang.String)" resolve="SConceptAdapterByName" />
-                  <node concept="2OqwBi" id="jipk886U04" role="37wK5m">
-                    <node concept="2qgKlT" id="jipk886U05" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
-                    </node>
-                    <node concept="37vLTw" id="jipk886U06" role="2Oq$k0">
+              <node concept="2OqwBi" id="1$sYOzSJYio" role="25WWJ7">
+                <node concept="1eOMI4" id="1$sYOzSJYip" role="2Oq$k0">
+                  <node concept="10QFUN" id="1$sYOzSJYiq" role="1eOMHV">
+                    <node concept="37vLTw" id="1$sYOzSJYir" role="10QFUP">
                       <ref role="3cqZAo" node="jipk886U0l" resolve="concept" />
                     </node>
+                    <node concept="3THzug" id="1$sYOzSJYis" role="10QFUM" />
                   </node>
                 </node>
+                <node concept="1rGIog" id="1$sYOzSJYit" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -1114,18 +1112,16 @@
               <ref role="3cqZAo" node="5Lx3sEEuhAT" resolve="conc" />
             </node>
             <node concept="TSZUe" id="5Lx3sEEuhB2" role="2OqNvi">
-              <node concept="2ShNRf" id="5Lx3sEEuhB3" role="25WWJ7">
-                <node concept="1pGfFk" id="5Lx3sEEuhB4" role="2ShVmc">
-                  <ref role="37wK5l" to="vxxo:~SConceptAdapterByName.&lt;init&gt;(java.lang.String)" resolve="SConceptAdapterByName" />
-                  <node concept="2OqwBi" id="5Lx3sEEuhB5" role="37wK5m">
-                    <node concept="2qgKlT" id="5Lx3sEEuhB6" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
-                    </node>
-                    <node concept="37vLTw" id="5Lx3sEEuhB7" role="2Oq$k0">
+              <node concept="2OqwBi" id="1$sYOzSJZwS" role="25WWJ7">
+                <node concept="1eOMI4" id="1$sYOzSJZwT" role="2Oq$k0">
+                  <node concept="10QFUN" id="1$sYOzSJZwU" role="1eOMHV">
+                    <node concept="37vLTw" id="1$sYOzSJZwV" role="10QFUP">
                       <ref role="3cqZAo" node="5Lx3sEEugOj" resolve="concept" />
                     </node>
+                    <node concept="3THzug" id="1$sYOzSJZwW" role="10QFUM" />
                   </node>
                 </node>
+                <node concept="1rGIog" id="1$sYOzSJZwX" role="2OqNvi" />
               </node>
             </node>
           </node>
