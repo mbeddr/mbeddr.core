@@ -979,12 +979,16 @@
   <node concept="30Ixz5" id="4C4txgwM_bn">
     <ref role="1M2myG" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
     <node concept="1EN3hD" id="4C4txgwM_c6" role="30IUD3">
-      <property role="TrG5h" value="visibleElements" />
+      <property role="TrG5h" value="internalVisibleElements" />
       <ref role="1EN3iS" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
   <node concept="30Ixz5" id="4C4txgwMDpP">
     <ref role="1M2myG" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1EN3hD" id="7S2EkrylrTc" role="30IUD3">
+      <property role="TrG5h" value="externalVisibleElements" />
+      <ref role="1EN3iS" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
     <node concept="1EN3hD" id="4C4txgwMDq$" role="30IUD3">
       <property role="TrG5h" value="importedChunks" />
       <ref role="1EN3iS" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
@@ -1026,10 +1030,29 @@
         <node concept="1ENNgm" id="4C4txgwMTmV" role="1ENaPw" />
       </node>
     </node>
+    <node concept="1ENEi5" id="7S2Ekrys6oL" role="30IUD3">
+      <node concept="1ENaPl" id="7S2Ekrys6oM" role="1ENEjk">
+        <node concept="1ENRRp" id="7S2Ekrys6oN" role="1ENaPG">
+          <ref role="1ENRRC" node="4C4txgwMDq$" resolve="importedChunks" />
+        </node>
+        <node concept="1ENNgm" id="7S2Ekrys6oO" role="1ENaPw" />
+      </node>
+      <node concept="1ENaPl" id="7S2Ekrys6sp" role="1ENEjh">
+        <node concept="1ENRRp" id="7S2Ekrys6tk" role="1ENaPG">
+          <ref role="1ENRRC" node="4C4txgwMTfT" resolve="reexportedChunks" />
+        </node>
+        <node concept="1ENaPl" id="7S2Ekrys6oP" role="1ENaPw">
+          <node concept="1ENRRp" id="7S2Ekrys6oQ" role="1ENaPG">
+            <ref role="1ENRRC" node="4C4txgwMDq$" resolve="importedChunks" />
+          </node>
+          <node concept="1ENNgm" id="7S2Ekrys6oR" role="1ENaPw" />
+        </node>
+      </node>
+    </node>
     <node concept="1ENEi5" id="4C4txgwMKHN" role="30IUD3">
       <node concept="1ENaPl" id="4C4txgwMQFM" role="1ENEjk">
         <node concept="1ENRRp" id="4C4txgwMQG6" role="1ENaPG">
-          <ref role="1ENRRC" node="4C4txgwM_c6" resolve="visibleElements" />
+          <ref role="1ENRRC" node="4C4txgwM_c6" resolve="internalVisibleElements" />
         </node>
         <node concept="1ENNgm" id="4C4txgwMQFF" role="1ENaPw" />
       </node>
@@ -1041,7 +1064,7 @@
           <node concept="1ENNgm" id="4C4txgwMQEP" role="1ENaPw" />
         </node>
         <node concept="1ENRRp" id="4C4txgwMQFv" role="1ENaPG">
-          <ref role="1ENRRC" node="4C4txgwM_c6" resolve="visibleElements" />
+          <ref role="1ENRRC" node="7S2EkrylrTc" resolve="externalVisibleElements" />
         </node>
       </node>
     </node>

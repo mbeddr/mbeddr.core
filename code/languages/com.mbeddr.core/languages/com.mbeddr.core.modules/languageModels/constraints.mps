@@ -29,6 +29,11 @@
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="4389491438699753847" name="content" index="30IUD3" />
       </concept>
+      <concept id="5243751990504620517" name="com.mbeddr.mpsutil.scope.structure.ConceptScopeContentCondition" flags="ng" index="1kwKP2">
+        <child id="5243751990504620518" name="condition" index="1kwKP1" />
+        <child id="5243751990504620522" name="content" index="1kwKPd" />
+      </concept>
+      <concept id="5243751990504639964" name="com.mbeddr.mpsutil.scope.structure.ThisExpression" flags="ng" index="1kwO5V" />
       <concept id="5333517687534928773" name="com.mbeddr.mpsutil.scope.structure.BucketInAncestor" flags="ng" index="1EN3mh">
         <reference id="5333517687534928829" name="bucketDeclaration" index="1EN3mD" />
       </concept>
@@ -436,7 +441,7 @@
               <ref role="1ENBkE" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
             </node>
             <node concept="1EN3mh" id="4C4txgwM$M3" role="1ENaPw">
-              <ref role="1EN3mD" to="5c5e:4C4txgwM_c6" resolve="visibleElements" />
+              <ref role="1EN3mD" to="5c5e:4C4txgwM_c6" resolve="internalVisibleElements" />
             </node>
           </node>
         </node>
@@ -1826,9 +1831,23 @@
     <ref role="1M2myG" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
     <node concept="1ENEi5" id="4z5zassd5xI" role="30IUD3">
       <node concept="1EN3mh" id="4z5zassd5y6" role="1ENEjk">
-        <ref role="1EN3mD" to="5c5e:4C4txgwM_c6" resolve="visibleElements" />
+        <ref role="1EN3mD" to="5c5e:4C4txgwM_c6" resolve="internalVisibleElements" />
       </node>
       <node concept="1ENNgm" id="4z5zassd5y1" role="1ENEjh" />
+    </node>
+    <node concept="1kwKP2" id="7S2Ekrylsli" role="30IUD3">
+      <node concept="2OqwBi" id="7S2EkrylsvH" role="1kwKP1">
+        <node concept="1kwO5V" id="7S2Ekrylsm9" role="2Oq$k0" />
+        <node concept="3TrcHB" id="7S2Ekryltmb" role="2OqNvi">
+          <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+        </node>
+      </node>
+      <node concept="1ENEi5" id="7S2EkrylsjD" role="1kwKPd">
+        <node concept="1EN3mh" id="7S2EkrylsjE" role="1ENEjk">
+          <ref role="1EN3mD" to="5c5e:7S2EkrylrTc" resolve="externalVisibleElements" />
+        </node>
+        <node concept="1ENNgm" id="7S2EkrylsjF" role="1ENEjh" />
+      </node>
     </node>
   </node>
 </model>
