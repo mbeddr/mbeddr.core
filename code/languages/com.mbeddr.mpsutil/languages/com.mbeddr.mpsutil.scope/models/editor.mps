@@ -567,5 +567,29 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3KxLR7zYNcV">
+    <ref role="1XX52x" to="4465:3KxLR7zYNcA" resolve="RemoveElementsFromBucket" />
+    <node concept="3EZMnI" id="3KxLR7zYNcX" role="2wV5jI">
+      <node concept="l2Vlx" id="3KxLR7zYNcY" role="2iSdaV" />
+      <node concept="3F0ifn" id="3KxLR7zYNcZ" role="3EZMnx">
+        <property role="3F0ifm" value="remove" />
+      </node>
+      <node concept="3F1sOY" id="3KxLR7zYNd0" role="3EZMnx">
+        <ref role="1NtTu8" to="4465:3KxLR7zYNcC" />
+      </node>
+      <node concept="3F0ifn" id="3KxLR7zYNd1" role="3EZMnx">
+        <property role="3F0ifm" value="from" />
+      </node>
+      <node concept="3F1sOY" id="3KxLR7zYNd2" role="3EZMnx">
+        <ref role="1NtTu8" to="4465:3KxLR7zYNcB" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3KxLR7zYYu7">
+    <ref role="1XX52x" to="4465:3KxLR7zYYt_" resolve="ParentPathElement" />
+    <node concept="PMmxH" id="3KxLR7zYYu9" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 

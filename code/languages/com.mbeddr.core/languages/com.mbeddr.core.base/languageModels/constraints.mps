@@ -33,6 +33,11 @@
       <concept id="5243751990504453810" name="com.mbeddr.mpsutil.scope.structure.LinkPathElement" flags="ng" index="1kxBCl">
         <reference id="5243751990504453833" name="link" index="1kxBDI" />
       </concept>
+      <concept id="4332963608477296485" name="com.mbeddr.mpsutil.scope.structure.ParentPathElement" flags="ng" index="3vQy0k" />
+      <concept id="4332963608477250342" name="com.mbeddr.mpsutil.scope.structure.RemoveElementsFromBucket" flags="ng" index="3vQJhn">
+        <child id="4332963608477250343" name="bucket" index="3vQJhm" />
+        <child id="4332963608477250344" name="elements" index="3vQJhp" />
+      </concept>
       <concept id="5333517687534928509" name="com.mbeddr.mpsutil.scope.structure.BucketDeclaration" flags="ng" index="1EN3hD">
         <reference id="5333517687534928556" name="elementsConcept" index="1EN3iS" />
       </concept>
@@ -1108,6 +1113,31 @@
           <node concept="1kwO5V" id="4z5zasshK6r" role="2Oq$k0" />
           <node concept="3TrcHB" id="4z5zasshKi8" role="2OqNvi">
             <ref role="3TsBF5" to="vs0r:DubiFAXCMb" resolve="reexport" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30Ixz5" id="3KxLR7zYXDv">
+    <ref role="1M2myG" to="vs0r:5aNdPeN2PoY" resolve="VisibilityControllingAttribute" />
+    <node concept="1kwKP2" id="3KxLR7zYXDw" role="30IUD3">
+      <node concept="3vQJhn" id="3KxLR7zYXNI" role="1kwKPd">
+        <node concept="1EN3mh" id="3KxLR7zYXPS" role="3vQJhm">
+          <ref role="1EN3mD" node="7S2EkrylrTc" resolve="externalVisibleElements" />
+        </node>
+        <node concept="3vQy0k" id="3KxLR7zZ6Qq" role="3vQJhp" />
+      </node>
+      <node concept="3vQJhn" id="3KxLR7zYXQq" role="1kwKPd">
+        <node concept="1EN3mh" id="3KxLR7zYXQr" role="3vQJhm">
+          <ref role="1EN3mD" node="4C4txgwM_c6" resolve="internalVisibleElements" />
+        </node>
+        <node concept="3vQy0k" id="3KxLR7zZ6QB" role="3vQJhp" />
+      </node>
+      <node concept="3fqX7Q" id="3KxLR7zYXM8" role="1kwKP1">
+        <node concept="2OqwBi" id="3KxLR7zYXMa" role="3fr31v">
+          <node concept="1kwO5V" id="3KxLR7zYXMb" role="2Oq$k0" />
+          <node concept="2qgKlT" id="3KxLR7zYXMc" role="2OqNvi">
+            <ref role="37wK5l" to="hwgx:5aNdPeN2Pp4" resolve="isCurrentlyVisible" />
           </node>
         </node>
       </node>

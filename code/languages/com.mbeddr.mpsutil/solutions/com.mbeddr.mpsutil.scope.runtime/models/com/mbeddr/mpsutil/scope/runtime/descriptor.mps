@@ -417,6 +417,29 @@
       <node concept="3Tm1VV" id="4z5zassdbV4" role="1B3o_S" />
       <node concept="3clFbS" id="4z5zassdbV5" role="3clF47" />
     </node>
+    <node concept="3clFb_" id="3KxLR7$00lH" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getBucketRemovals" />
+      <node concept="37vLTG" id="3KxLR7$00lI" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="3KxLR7$00lJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3KxLR7$00lK" role="3clF46">
+        <property role="TrG5h" value="bucketOwner" />
+        <node concept="3Tqbb2" id="3KxLR7$00lL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3KxLR7$00lM" role="3clF46">
+        <property role="TrG5h" value="id" />
+        <node concept="3uibUv" id="3KxLR7$00lN" role="1tU5fm">
+          <ref role="3uigEE" to="5cig:4z5zassdah5" resolve="BucketId" />
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3KxLR7$00lO" role="3clF45">
+        <node concept="3Tqbb2" id="3KxLR7$00lP" role="A3Ik2" />
+      </node>
+      <node concept="3Tm1VV" id="3KxLR7$00lQ" role="1B3o_S" />
+      <node concept="3clFbS" id="3KxLR7$00lR" role="3clF47" />
+    </node>
     <node concept="3clFb_" id="4XHP9RyMSCh" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="findBucketContributors" />

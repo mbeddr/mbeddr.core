@@ -15,6 +15,7 @@
   <imports>
     <import index="585s" ref="r:dd2ce346-43c9-465d-bffe-eb37add397bc(com.mbeddr.mpsutil.scope.runtime.descriptor)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" implicit="true" />
   </imports>
   <registry>
@@ -147,7 +148,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -155,6 +158,7 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -188,6 +192,7 @@
         <child id="1199542501692" name="parameterType" index="1ajw0F" />
       </concept>
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <property id="890797661671409019" name="forceMultiLine" index="3yWfEV" />
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
@@ -213,14 +218,21 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1176923520476" name="jetbrains.mps.baseLanguage.collections.structure.ExcludeOperation" flags="nn" index="66VNe" />
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
+        <child id="1224414456414" name="elementType" index="kMuH3" />
+      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -251,6 +263,7 @@
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
+      <concept id="1173946412755" name="jetbrains.mps.baseLanguage.collections.structure.RemoveAllElementsOperation" flags="nn" index="1kEaZ2" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -265,6 +278,7 @@
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+      <concept id="1180964022718" name="jetbrains.mps.baseLanguage.collections.structure.ConcatOperation" flags="nn" index="3QWeyG" />
     </language>
   </registry>
   <node concept="312cEu" id="4z5zassdah5">
@@ -565,57 +579,85 @@
       <node concept="3Tm1VV" id="2sGOtuk48T7" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2sGOtuk47Fz" role="jymVt" />
-    <node concept="312cEg" id="JKjnvDXpvE" role="jymVt">
-      <property role="TrG5h" value="myContext" />
-      <node concept="3Tm6S6" id="JKjnvDXpvF" role="1B3o_S" />
-      <node concept="3uibUv" id="JKjnvDXpZG" role="1tU5fm">
-        <ref role="3uigEE" node="JKjnvDWYVf" resolve="Buckets.Context" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="JKjnvDWxEG" role="jymVt" />
     <node concept="3clFbW" id="28RMrJES9C$" role="jymVt">
       <node concept="3cqZAl" id="28RMrJES9CA" role="3clF45" />
       <node concept="3Tm6S6" id="2sGOtuk4b2D" role="1B3o_S" />
       <node concept="3clFbS" id="28RMrJES9CC" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="28RMrJES9rX" role="jymVt" />
+    <node concept="3clFb_" id="3KxLR7zY0Yb" role="jymVt">
+      <property role="TrG5h" value="getElements" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="3KxLR7zY0Yc" role="3clF47">
+        <node concept="3cpWs8" id="3KxLR7zYAAV" role="3cqZAp">
+          <node concept="3cpWsn" id="3KxLR7zYAAW" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="A3Dl8" id="3KxLR7zYAAP" role="1tU5fm">
+              <node concept="3Tqbb2" id="3KxLR7zYAAS" role="A3Ik2" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3KxLR7zY$6T" role="3cqZAp">
+          <node concept="2YIFZM" id="3KxLR7zY$8w" role="3clFbG">
+            <ref role="37wK5l" node="3KxLR7zYv19" resolve="ensureInSession" />
+            <ref role="1Pybhc" node="5peGHItxtrv" resolve="ScopeSession" />
+            <node concept="1bVj0M" id="3KxLR7zY$a9" role="37wK5m">
+              <property role="3yWfEV" value="true" />
+              <node concept="3clFbS" id="3KxLR7zY$aa" role="1bW5cS">
+                <node concept="3clFbF" id="3KxLR7zYB20" role="3cqZAp">
+                  <node concept="37vLTI" id="3KxLR7zYB22" role="3clFbG">
+                    <node concept="1rXfSq" id="3KxLR7zYAAX" role="37vLTx">
+                      <ref role="37wK5l" node="28RMrJES9J5" resolve="getElements" />
+                      <node concept="37vLTw" id="3KxLR7zYAAY" role="37wK5m">
+                        <ref role="3cqZAo" node="3KxLR7zY0Z$" resolve="bucketOwner" />
+                      </node>
+                      <node concept="37vLTw" id="3KxLR7zYAAZ" role="37wK5m">
+                        <ref role="3cqZAo" node="3KxLR7zY0ZA" resolve="bucketId" />
+                      </node>
+                      <node concept="2YIFZM" id="3KxLR7zYAB0" role="37wK5m">
+                        <ref role="37wK5l" node="3KxLR7zYmj7" resolve="getCurrentSession" />
+                        <ref role="1Pybhc" node="5peGHItxtrv" resolve="ScopeSession" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="3KxLR7zYB26" role="37vLTJ">
+                      <ref role="3cqZAo" node="3KxLR7zYAAW" resolve="result" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3KxLR7zY33n" role="3cqZAp">
+          <node concept="37vLTw" id="3KxLR7zYAB1" role="3clFbG">
+            <ref role="3cqZAo" node="3KxLR7zYAAW" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3KxLR7zY0Z$" role="3clF46">
+        <property role="TrG5h" value="bucketOwner" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="3KxLR7zY0Z_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3KxLR7zY0ZA" role="3clF46">
+        <property role="TrG5h" value="bucketId" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="3KxLR7zY0ZB" role="1tU5fm">
+          <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3KxLR7zY0ZE" role="3clF45">
+        <node concept="3Tqbb2" id="3KxLR7zY0ZF" role="A3Ik2" />
+      </node>
+      <node concept="3Tm1VV" id="3KxLR7zY0ZG" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zY7C0" role="jymVt" />
     <node concept="3clFb_" id="28RMrJES9J5" role="jymVt">
       <property role="TrG5h" value="getElements" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="4z5zassdbPW" role="3clF47">
-        <node concept="3cpWs8" id="JKjnvDXrj1" role="3cqZAp">
-          <node concept="3cpWsn" id="JKjnvDXrj4" role="3cpWs9">
-            <property role="TrG5h" value="wasContextNull" />
-            <node concept="10P_77" id="JKjnvDXriZ" role="1tU5fm" />
-            <node concept="3clFbC" id="JKjnvDXrGV" role="33vP2m">
-              <node concept="10Nm6u" id="JKjnvDXrHY" role="3uHU7w" />
-              <node concept="37vLTw" id="JKjnvDXrFA" role="3uHU7B">
-                <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="JKjnvDXqrD" role="3cqZAp">
-          <node concept="3clFbS" id="JKjnvDXqrF" role="3clFbx">
-            <node concept="3clFbF" id="JKjnvDXqP3" role="3cqZAp">
-              <node concept="37vLTI" id="JKjnvDXqQm" role="3clFbG">
-                <node concept="2ShNRf" id="JKjnvDXqRi" role="37vLTx">
-                  <node concept="HV5vD" id="JKjnvDXqVz" role="2ShVmc">
-                    <ref role="HV5vE" node="JKjnvDWYVf" resolve="Buckets.Context" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="JKjnvDXqP1" role="37vLTJ">
-                  <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="JKjnvDXrJX" role="3clFbw">
-            <ref role="3cqZAo" node="JKjnvDXrj4" resolve="wasContextNull" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="JKjnvDXq6q" role="3cqZAp" />
         <node concept="3cpWs8" id="JKjnvDXwbY" role="3cqZAp">
           <node concept="3cpWsn" id="JKjnvDXwbZ" role="3cpWs9">
             <property role="TrG5h" value="bucket" />
@@ -624,7 +666,7 @@
             </node>
             <node concept="2OqwBi" id="JKjnvDXwc0" role="33vP2m">
               <node concept="37vLTw" id="JKjnvDXwc1" role="2Oq$k0">
-                <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
+                <ref role="3cqZAo" node="3KxLR7zY0xS" resolve="session" />
               </node>
               <node concept="liA8E" id="JKjnvDXwc2" role="2OqNvi">
                 <ref role="37wK5l" node="JKjnvDWZHn" resolve="getBucket" />
@@ -647,10 +689,10 @@
               <ref role="37wK5l" node="JKjnvDXh24" resolve="addDependingBuckets" />
               <node concept="2OqwBi" id="JKjnvDXCpo" role="37wK5m">
                 <node concept="37vLTw" id="JKjnvDXC7E" role="2Oq$k0">
-                  <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
+                  <ref role="3cqZAo" node="3KxLR7zY0xS" resolve="session" />
                 </node>
-                <node concept="2OwXpG" id="JKjnvDXCs_" role="2OqNvi">
-                  <ref role="2Oxat5" node="28RMrJESmmF" resolve="myUpdatingBuckets" />
+                <node concept="liA8E" id="3KxLR7zXYWg" role="2OqNvi">
+                  <ref role="37wK5l" node="3KxLR7zXXhq" resolve="updatingBuckets" />
                 </node>
               </node>
             </node>
@@ -660,10 +702,10 @@
           <node concept="2OqwBi" id="28RMrJESo6V" role="3clFbw">
             <node concept="2OqwBi" id="JKjnvDXuu3" role="2Oq$k0">
               <node concept="37vLTw" id="JKjnvDXuBI" role="2Oq$k0">
-                <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
+                <ref role="3cqZAo" node="3KxLR7zY0xS" resolve="session" />
               </node>
-              <node concept="2OwXpG" id="JKjnvDXuu6" role="2OqNvi">
-                <ref role="2Oxat5" node="28RMrJESmmF" resolve="myUpdatingBuckets" />
+              <node concept="liA8E" id="3KxLR7zXZXj" role="2OqNvi">
+                <ref role="37wK5l" node="3KxLR7zXXhq" resolve="updatingBuckets" />
               </node>
             </node>
             <node concept="3JPx81" id="JKjnvDXxy9" role="2OqNvi">
@@ -689,10 +731,10 @@
           <node concept="2OqwBi" id="28RMrJESqD_" role="3clFbG">
             <node concept="2OqwBi" id="JKjnvDXuO8" role="2Oq$k0">
               <node concept="37vLTw" id="JKjnvDXuVe" role="2Oq$k0">
-                <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
+                <ref role="3cqZAo" node="3KxLR7zY0xS" resolve="session" />
               </node>
-              <node concept="2OwXpG" id="JKjnvDXuOb" role="2OqNvi">
-                <ref role="2Oxat5" node="28RMrJESmmF" resolve="myUpdatingBuckets" />
+              <node concept="liA8E" id="3KxLR7zY0eC" role="2OqNvi">
+                <ref role="37wK5l" node="3KxLR7zXXhq" resolve="updatingBuckets" />
               </node>
             </node>
             <node concept="TSZUe" id="28RMrJESrwA" role="2OqNvi">
@@ -764,28 +806,13 @@
               <node concept="2OqwBi" id="28RMrJESuzi" role="3clFbG">
                 <node concept="2OqwBi" id="JKjnvDXBJp" role="2Oq$k0">
                   <node concept="37vLTw" id="JKjnvDXBMx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
+                    <ref role="3cqZAo" node="3KxLR7zY0xS" resolve="session" />
                   </node>
-                  <node concept="2OwXpG" id="JKjnvDXBJs" role="2OqNvi">
-                    <ref role="2Oxat5" node="28RMrJESmmF" resolve="myUpdatingBuckets" />
+                  <node concept="liA8E" id="3KxLR7zY0hU" role="2OqNvi">
+                    <ref role="37wK5l" node="3KxLR7zXXhq" resolve="updatingBuckets" />
                   </node>
                 </node>
                 <node concept="2Kt5_m" id="28RMrJESvP0" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbJ" id="JKjnvDXrNZ" role="3cqZAp">
-              <node concept="3clFbS" id="JKjnvDXrO1" role="3clFbx">
-                <node concept="3clFbF" id="JKjnvDXrST" role="3cqZAp">
-                  <node concept="37vLTI" id="JKjnvDXrUc" role="3clFbG">
-                    <node concept="10Nm6u" id="JKjnvDXrVd" role="37vLTx" />
-                    <node concept="37vLTw" id="JKjnvDXrSR" role="37vLTJ">
-                      <ref role="3cqZAo" node="JKjnvDXpvE" resolve="myContext" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTw" id="JKjnvDXrRS" role="3clFbw">
-                <ref role="3cqZAo" node="JKjnvDXrj4" resolve="wasContextNull" />
               </node>
             </node>
           </node>
@@ -803,10 +830,19 @@
           <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
         </node>
       </node>
+      <node concept="37vLTG" id="3KxLR7zY0xS" role="3clF46">
+        <property role="TrG5h" value="session" />
+        <node concept="3uibUv" id="3KxLR7zY0Xu" role="1tU5fm">
+          <ref role="3uigEE" node="5peGHItxtrv" resolve="ScopeSession" />
+        </node>
+        <node concept="2AHcQZ" id="3KxLR7zY8E_" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
       <node concept="A3Dl8" id="4z5zassdbR_" role="3clF45">
         <node concept="3Tqbb2" id="4z5zassdbRP" role="A3Ik2" />
       </node>
-      <node concept="3Tm1VV" id="4z5zassdbPV" role="1B3o_S" />
+      <node concept="3Tmbuc" id="3KxLR7zYEOj" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="28RMrJESsNi" role="jymVt" />
     <node concept="3clFb_" id="28RMrJESrA2" role="jymVt">
@@ -915,6 +951,32 @@
           </node>
         </node>
         <node concept="3clFbH" id="28RMrJESrAM" role="3cqZAp" />
+        <node concept="3cpWs8" id="3KxLR7$0h4U" role="3cqZAp">
+          <node concept="3cpWsn" id="3KxLR7$0h4V" role="3cpWs9">
+            <property role="TrG5h" value="contributions" />
+            <node concept="A3Dl8" id="3KxLR7$0h4o" role="1tU5fm">
+              <node concept="3Tqbb2" id="3KxLR7$0h4r" role="A3Ik2" />
+            </node>
+            <node concept="2ShNRf" id="3KxLR7$0j0_" role="33vP2m">
+              <node concept="kMnCb" id="3KxLR7$0j0q" role="2ShVmc">
+                <node concept="3Tqbb2" id="3KxLR7$0j0r" role="kMuH3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3KxLR7$0hrA" role="3cqZAp">
+          <node concept="3cpWsn" id="3KxLR7$0hrB" role="3cpWs9">
+            <property role="TrG5h" value="removals" />
+            <node concept="A3Dl8" id="3KxLR7$0hrC" role="1tU5fm">
+              <node concept="3Tqbb2" id="3KxLR7$0hrD" role="A3Ik2" />
+            </node>
+            <node concept="2ShNRf" id="3KxLR7$0jc8" role="33vP2m">
+              <node concept="kMnCb" id="3KxLR7$0jbX" role="2ShVmc">
+                <node concept="3Tqbb2" id="3KxLR7$0jbY" role="kMuH3" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2Gpval" id="28RMrJESrAU" role="3cqZAp">
           <node concept="2GrKxI" id="28RMrJESrAV" role="2Gsz3X">
             <property role="TrG5h" value="conceptDescriptor" />
@@ -925,36 +987,81 @@
                 <property role="TrG5h" value="contributor" />
               </node>
               <node concept="3clFbS" id="28RMrJESrAZ" role="2LFqv$">
-                <node concept="3clFbF" id="JKjnvDXfin" role="3cqZAp">
-                  <node concept="2OqwBi" id="JKjnvDXfoe" role="3clFbG">
-                    <node concept="37vLTw" id="JKjnvDXfil" role="2Oq$k0">
-                      <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+                <node concept="3clFbF" id="3KxLR7$0hW$" role="3cqZAp">
+                  <node concept="37vLTI" id="3KxLR7$0hWA" role="3clFbG">
+                    <node concept="37vLTw" id="3KxLR7$0hWE" role="37vLTJ">
+                      <ref role="3cqZAo" node="3KxLR7$0h4V" resolve="contributions" />
                     </node>
-                    <node concept="liA8E" id="JKjnvDXfsF" role="2OqNvi">
-                      <ref role="37wK5l" node="JKjnvDWHW8" resolve="addElements" />
-                      <node concept="2OqwBi" id="JKjnvDXft5" role="37wK5m">
-                        <node concept="2GrUjf" id="JKjnvDXft6" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="28RMrJESrAV" resolve="conceptDescriptor" />
+                    <node concept="2OqwBi" id="3KxLR7$0keJ" role="37vLTx">
+                      <node concept="37vLTw" id="3KxLR7$0k7Z" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3KxLR7$0h4V" resolve="contributions" />
+                      </node>
+                      <node concept="3QWeyG" id="3KxLR7$0kq6" role="2OqNvi">
+                        <node concept="2OqwBi" id="3KxLR7$0h4W" role="576Qk">
+                          <node concept="2GrUjf" id="3KxLR7$0h4X" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="28RMrJESrAV" resolve="conceptDescriptor" />
+                          </node>
+                          <node concept="liA8E" id="3KxLR7$0h4Y" role="2OqNvi">
+                            <ref role="37wK5l" to="585s:4z5zassdbV1" resolve="getBucketContribution" />
+                            <node concept="2GrUjf" id="3KxLR7$0h4Z" role="37wK5m">
+                              <ref role="2Gs0qQ" node="28RMrJESrAY" resolve="contributor" />
+                            </node>
+                            <node concept="2OqwBi" id="3KxLR7$0h50" role="37wK5m">
+                              <node concept="37vLTw" id="3KxLR7$0h51" role="2Oq$k0">
+                                <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+                              </node>
+                              <node concept="liA8E" id="3KxLR7$0h52" role="2OqNvi">
+                                <ref role="37wK5l" node="JKjnvDXbop" resolve="getOwner" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="3KxLR7$0h53" role="37wK5m">
+                              <node concept="37vLTw" id="3KxLR7$0h54" role="2Oq$k0">
+                                <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+                              </node>
+                              <node concept="liA8E" id="3KxLR7$0h55" role="2OqNvi">
+                                <ref role="37wK5l" node="JKjnvDXbov" resolve="getId" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
-                        <node concept="liA8E" id="JKjnvDXft7" role="2OqNvi">
-                          <ref role="37wK5l" to="585s:4z5zassdbV1" resolve="getBucketContribution" />
-                          <node concept="2GrUjf" id="JKjnvDXft8" role="37wK5m">
-                            <ref role="2Gs0qQ" node="28RMrJESrAY" resolve="contributor" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3KxLR7$0i9h" role="3cqZAp">
+                  <node concept="37vLTI" id="3KxLR7$0i9j" role="3clFbG">
+                    <node concept="37vLTw" id="3KxLR7$0i9n" role="37vLTJ">
+                      <ref role="3cqZAo" node="3KxLR7$0hrB" resolve="removals" />
+                    </node>
+                    <node concept="2OqwBi" id="3KxLR7$0kTP" role="37vLTx">
+                      <node concept="37vLTw" id="3KxLR7$0kMr" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3KxLR7$0hrB" resolve="removals" />
+                      </node>
+                      <node concept="3QWeyG" id="3KxLR7$0l5O" role="2OqNvi">
+                        <node concept="2OqwBi" id="3KxLR7$0hrE" role="576Qk">
+                          <node concept="2GrUjf" id="3KxLR7$0hrF" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="28RMrJESrAV" resolve="conceptDescriptor" />
                           </node>
-                          <node concept="2OqwBi" id="JKjnvDXft9" role="37wK5m">
-                            <node concept="37vLTw" id="JKjnvDXfta" role="2Oq$k0">
-                              <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+                          <node concept="liA8E" id="3KxLR7$0hrG" role="2OqNvi">
+                            <ref role="37wK5l" to="585s:3KxLR7$00lH" resolve="getBucketRemovals" />
+                            <node concept="2GrUjf" id="3KxLR7$0hrH" role="37wK5m">
+                              <ref role="2Gs0qQ" node="28RMrJESrAY" resolve="contributor" />
                             </node>
-                            <node concept="liA8E" id="JKjnvDXftb" role="2OqNvi">
-                              <ref role="37wK5l" node="JKjnvDXbop" resolve="getOwner" />
+                            <node concept="2OqwBi" id="3KxLR7$0hrI" role="37wK5m">
+                              <node concept="37vLTw" id="3KxLR7$0hrJ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+                              </node>
+                              <node concept="liA8E" id="3KxLR7$0hrK" role="2OqNvi">
+                                <ref role="37wK5l" node="JKjnvDXbop" resolve="getOwner" />
+                              </node>
                             </node>
-                          </node>
-                          <node concept="2OqwBi" id="JKjnvDXftc" role="37wK5m">
-                            <node concept="37vLTw" id="JKjnvDXftd" role="2Oq$k0">
-                              <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
-                            </node>
-                            <node concept="liA8E" id="JKjnvDXfte" role="2OqNvi">
-                              <ref role="37wK5l" node="JKjnvDXbov" resolve="getId" />
+                            <node concept="2OqwBi" id="3KxLR7$0hrL" role="37wK5m">
+                              <node concept="37vLTw" id="3KxLR7$0hrM" role="2Oq$k0">
+                                <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+                              </node>
+                              <node concept="liA8E" id="3KxLR7$0hrN" role="2OqNvi">
+                                <ref role="37wK5l" node="JKjnvDXbov" resolve="getId" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -991,6 +1098,39 @@
           </node>
           <node concept="37vLTw" id="28RMrJESrBf" role="2GsD0m">
             <ref role="3cqZAo" node="28RMrJESrAn" resolve="conceptDescriptors" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="JKjnvDXfin" role="3cqZAp">
+          <node concept="2OqwBi" id="JKjnvDXfoe" role="3clFbG">
+            <node concept="37vLTw" id="JKjnvDXfil" role="2Oq$k0">
+              <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+            </node>
+            <node concept="liA8E" id="JKjnvDXfsF" role="2OqNvi">
+              <ref role="37wK5l" node="JKjnvDWHW8" resolve="addElements" />
+              <node concept="2OqwBi" id="3KxLR7$0jMk" role="37wK5m">
+                <node concept="37vLTw" id="3KxLR7$0jJ$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3KxLR7$0h4V" resolve="contributions" />
+                </node>
+                <node concept="66VNe" id="3KxLR7$0jT$" role="2OqNvi">
+                  <node concept="37vLTw" id="3KxLR7$0jVQ" role="576Qk">
+                    <ref role="3cqZAo" node="3KxLR7$0hrB" resolve="removals" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3KxLR7$0qFx" role="3cqZAp">
+          <node concept="2OqwBi" id="3KxLR7$0qZi" role="3clFbG">
+            <node concept="37vLTw" id="3KxLR7$0qFv" role="2Oq$k0">
+              <ref role="3cqZAo" node="JKjnvDX9qz" resolve="bucket" />
+            </node>
+            <node concept="liA8E" id="3KxLR7$0xSQ" role="2OqNvi">
+              <ref role="37wK5l" node="3KxLR7$0s9E" resolve="removeElements" />
+              <node concept="37vLTw" id="3KxLR7$0xVY" role="37wK5m">
+                <ref role="3cqZAo" node="3KxLR7$0hrB" resolve="removals" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1154,144 +1294,6 @@
     <node concept="312cEu" id="JKjnvDWYVf" role="jymVt">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="Context" />
-      <node concept="312cEg" id="JKjnvDWZxk" role="jymVt">
-        <property role="TrG5h" value="myBuckets" />
-        <node concept="3Tm6S6" id="JKjnvDWZxl" role="1B3o_S" />
-        <node concept="3rvAFt" id="JKjnvDWZxL" role="1tU5fm">
-          <node concept="3uibUv" id="JKjnvDWZ$x" role="3rvSg0">
-            <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
-          </node>
-          <node concept="1LlUBW" id="JKjnvDWZyc" role="3rvQeY">
-            <node concept="3Tqbb2" id="JKjnvDWZyM" role="1Lm7xW" />
-            <node concept="3uibUv" id="JKjnvDWZz_" role="1Lm7xW">
-              <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
-            </node>
-          </node>
-        </node>
-        <node concept="2ShNRf" id="JKjnvDWZD6" role="33vP2m">
-          <node concept="3rGOSV" id="JKjnvDWZCN" role="2ShVmc">
-            <node concept="1LlUBW" id="JKjnvDWZCO" role="3rHrn6">
-              <node concept="3Tqbb2" id="JKjnvDWZCP" role="1Lm7xW" />
-              <node concept="3uibUv" id="JKjnvDWZCQ" role="1Lm7xW">
-                <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
-              </node>
-            </node>
-            <node concept="3uibUv" id="JKjnvDWZCR" role="3rHtpV">
-              <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="312cEg" id="28RMrJESmmF" role="jymVt">
-        <property role="TrG5h" value="myUpdatingBuckets" />
-        <node concept="3Tm6S6" id="28RMrJESmmG" role="1B3o_S" />
-        <node concept="_YKpA" id="28RMrJESmtp" role="1tU5fm">
-          <node concept="3uibUv" id="JKjnvDXgkJ" role="_ZDj9">
-            <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
-          </node>
-        </node>
-        <node concept="2ShNRf" id="28RMrJESmyN" role="33vP2m">
-          <node concept="Tc6Ow" id="28RMrJESmyA" role="2ShVmc">
-            <node concept="3uibUv" id="JKjnvDXgTq" role="HW$YZ">
-              <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2tJIrI" id="JKjnvDWZF$" role="jymVt" />
-      <node concept="3clFb_" id="JKjnvDWZHn" role="jymVt">
-        <property role="TrG5h" value="getBucket" />
-        <node concept="37vLTG" id="JKjnvDWZJa" role="3clF46">
-          <property role="TrG5h" value="owner" />
-          <node concept="3Tqbb2" id="JKjnvDWZJx" role="1tU5fm" />
-        </node>
-        <node concept="37vLTG" id="JKjnvDWZJE" role="3clF46">
-          <property role="TrG5h" value="id" />
-          <node concept="3uibUv" id="JKjnvDWZK8" role="1tU5fm">
-            <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
-          </node>
-        </node>
-        <node concept="3uibUv" id="JKjnvDWZIH" role="3clF45">
-          <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
-        </node>
-        <node concept="3Tm1VV" id="JKjnvDWZHq" role="1B3o_S" />
-        <node concept="3clFbS" id="JKjnvDWZHr" role="3clF47">
-          <node concept="3cpWs8" id="JKjnvDX0cm" role="3cqZAp">
-            <node concept="3cpWsn" id="JKjnvDX0cn" role="3cpWs9">
-              <property role="TrG5h" value="bucket" />
-              <node concept="3uibUv" id="JKjnvDX0ce" role="1tU5fm">
-                <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
-              </node>
-              <node concept="3EllGN" id="JKjnvDX0co" role="33vP2m">
-                <node concept="1Ls8ON" id="JKjnvDX0cp" role="3ElVtu">
-                  <node concept="37vLTw" id="JKjnvDX0cq" role="1Lso8e">
-                    <ref role="3cqZAo" node="JKjnvDWZJa" resolve="owner" />
-                  </node>
-                  <node concept="37vLTw" id="JKjnvDX0cr" role="1Lso8e">
-                    <ref role="3cqZAo" node="JKjnvDWZJE" resolve="id" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="JKjnvDX0cs" role="3ElQJh">
-                  <ref role="3cqZAo" node="JKjnvDWZxk" resolve="myBuckets" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="JKjnvDX0j2" role="3cqZAp">
-            <node concept="3clFbS" id="JKjnvDX0j4" role="3clFbx">
-              <node concept="3clFbF" id="JKjnvDX0qg" role="3cqZAp">
-                <node concept="37vLTI" id="JKjnvDX0rj" role="3clFbG">
-                  <node concept="2ShNRf" id="JKjnvDX0sS" role="37vLTx">
-                    <node concept="1pGfFk" id="JKjnvDX0sD" role="2ShVmc">
-                      <ref role="37wK5l" node="JKjnvDWGMx" resolve="Bucket" />
-                      <node concept="37vLTw" id="JKjnvDX0tI" role="37wK5m">
-                        <ref role="3cqZAo" node="JKjnvDWZJa" resolve="owner" />
-                      </node>
-                      <node concept="37vLTw" id="JKjnvDX0v6" role="37wK5m">
-                        <ref role="3cqZAo" node="JKjnvDWZJE" resolve="id" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="JKjnvDX0qe" role="37vLTJ">
-                    <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="JKjnvDX0we" role="3cqZAp">
-                <node concept="37vLTI" id="JKjnvDX0$0" role="3clFbG">
-                  <node concept="37vLTw" id="JKjnvDX0Bl" role="37vLTx">
-                    <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
-                  </node>
-                  <node concept="3EllGN" id="JKjnvDX0wg" role="37vLTJ">
-                    <node concept="1Ls8ON" id="JKjnvDX0wh" role="3ElVtu">
-                      <node concept="37vLTw" id="JKjnvDX0wi" role="1Lso8e">
-                        <ref role="3cqZAo" node="JKjnvDWZJa" resolve="owner" />
-                      </node>
-                      <node concept="37vLTw" id="JKjnvDX0wj" role="1Lso8e">
-                        <ref role="3cqZAo" node="JKjnvDWZJE" resolve="id" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="JKjnvDX0wk" role="3ElQJh">
-                      <ref role="3cqZAo" node="JKjnvDWZxk" resolve="myBuckets" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbC" id="JKjnvDX0or" role="3clFbw">
-              <node concept="10Nm6u" id="JKjnvDX0pj" role="3uHU7w" />
-              <node concept="37vLTw" id="JKjnvDX0na" role="3uHU7B">
-                <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="JKjnvDWZLR" role="3cqZAp">
-            <node concept="37vLTw" id="JKjnvDX0ct" role="3clFbG">
-              <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="JKjnvDWYVg" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="4z5zassdbPa" role="1B3o_S" />
@@ -1647,6 +1649,89 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3KxLR7$0wsQ" role="jymVt" />
+    <node concept="3clFb_" id="3KxLR7$0s9E" role="jymVt">
+      <property role="TrG5h" value="removeElements" />
+      <node concept="37vLTG" id="3KxLR7$0s9F" role="3clF46">
+        <property role="TrG5h" value="elements" />
+        <node concept="A3Dl8" id="3KxLR7$0s9G" role="1tU5fm">
+          <node concept="3Tqbb2" id="3KxLR7$0s9H" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3KxLR7$0s9I" role="3clF45" />
+      <node concept="3Tm1VV" id="3KxLR7$0s9J" role="1B3o_S" />
+      <node concept="3clFbS" id="3KxLR7$0s9K" role="3clF47">
+        <node concept="3cpWs8" id="3KxLR7$0s9L" role="3cqZAp">
+          <node concept="3cpWsn" id="3KxLR7$0s9M" role="3cpWs9">
+            <property role="TrG5h" value="size" />
+            <node concept="10Oyi0" id="3KxLR7$0s9N" role="1tU5fm" />
+            <node concept="2OqwBi" id="3KxLR7$0s9O" role="33vP2m">
+              <node concept="37vLTw" id="3KxLR7$0s9P" role="2Oq$k0">
+                <ref role="3cqZAo" node="JKjnvDWH7M" resolve="myElements" />
+              </node>
+              <node concept="34oBXx" id="3KxLR7$0s9Q" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3KxLR7$0s9R" role="3cqZAp">
+          <node concept="2OqwBi" id="3KxLR7$0s9S" role="3clFbG">
+            <node concept="37vLTw" id="3KxLR7$0s9T" role="2Oq$k0">
+              <ref role="3cqZAo" node="JKjnvDWH7M" resolve="myElements" />
+            </node>
+            <node concept="1kEaZ2" id="3KxLR7$0wfY" role="2OqNvi">
+              <node concept="37vLTw" id="3KxLR7$0wg0" role="25WWJ7">
+                <ref role="3cqZAo" node="3KxLR7$0s9F" resolve="elements" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3KxLR7$0s9W" role="3cqZAp">
+          <node concept="3clFbS" id="3KxLR7$0s9X" role="3clFbx">
+            <node concept="3clFbF" id="3KxLR7$0s9Y" role="3cqZAp">
+              <node concept="2OqwBi" id="3KxLR7$0s9Z" role="3clFbG">
+                <node concept="37vLTw" id="3KxLR7$0sa0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JKjnvDWMFA" resolve="myDependingBuckets" />
+                </node>
+                <node concept="2es0OD" id="3KxLR7$0sa1" role="2OqNvi">
+                  <node concept="1bVj0M" id="3KxLR7$0sa2" role="23t8la">
+                    <node concept="3clFbS" id="3KxLR7$0sa3" role="1bW5cS">
+                      <node concept="3clFbF" id="3KxLR7$0sa4" role="3cqZAp">
+                        <node concept="2OqwBi" id="3KxLR7$0sa5" role="3clFbG">
+                          <node concept="37vLTw" id="3KxLR7$0sa6" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3KxLR7$0sa9" resolve="it" />
+                          </node>
+                          <node concept="liA8E" id="3KxLR7$0sa7" role="2OqNvi">
+                            <ref role="37wK5l" node="JKjnvDWR8$" resolve="setValid" />
+                            <node concept="3clFbT" id="3KxLR7$0sa8" role="37wK5m">
+                              <property role="3clFbU" value="false" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="3KxLR7$0sa9" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="3KxLR7$0saa" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="3KxLR7$0sab" role="3clFbw">
+            <node concept="2OqwBi" id="3KxLR7$0sac" role="3uHU7w">
+              <node concept="37vLTw" id="3KxLR7$0sad" role="2Oq$k0">
+                <ref role="3cqZAo" node="JKjnvDWH7M" resolve="myElements" />
+              </node>
+              <node concept="34oBXx" id="3KxLR7$0sae" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="3KxLR7$0saf" role="3uHU7B">
+              <ref role="3cqZAo" node="3KxLR7$0s9M" resolve="size" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="JKjnvDWJ_a" role="jymVt" />
     <node concept="3clFb_" id="JKjnvDWKnJ" role="jymVt">
       <property role="TrG5h" value="getElements" />
@@ -1782,6 +1867,349 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="5peGHItxtrv">
+    <property role="TrG5h" value="ScopeSession" />
+    <node concept="2tJIrI" id="3KxLR7zYixT" role="jymVt" />
+    <node concept="Wx3nA" id="3KxLR7zYmw8" role="jymVt">
+      <property role="TrG5h" value="ourCurrentSession" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3KxLR7zYjeX" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~ThreadLocal" resolve="ThreadLocal" />
+        <node concept="3uibUv" id="3KxLR7zYoA3" role="11_B2D">
+          <ref role="3uigEE" node="5peGHItxtrv" resolve="ScopeSession" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="3KxLR7zYj3r" role="1B3o_S" />
+      <node concept="2ShNRf" id="3KxLR7zYjgy" role="33vP2m">
+        <node concept="1pGfFk" id="3KxLR7zYjgx" role="2ShVmc">
+          <ref role="37wK5l" to="wyt6:~ThreadLocal.&lt;init&gt;()" resolve="ThreadLocal" />
+          <node concept="3uibUv" id="3KxLR7zYoDG" role="1pMfVU">
+            <ref role="3uigEE" node="5peGHItxtrv" resolve="ScopeSession" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zYjgX" role="jymVt" />
+    <node concept="2YIFZL" id="3KxLR7zYmj7" role="jymVt">
+      <property role="TrG5h" value="getCurrentSession" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="3KxLR7zYleE" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="3KxLR7zYkb$" role="3clF47">
+        <node concept="3clFbF" id="3KxLR7zYlte" role="3cqZAp">
+          <node concept="2OqwBi" id="3KxLR7zYlEM" role="3clFbG">
+            <node concept="37vLTw" id="3KxLR7zYltd" role="2Oq$k0">
+              <ref role="3cqZAo" node="3KxLR7zYmw8" resolve="ourCurrentSession" />
+            </node>
+            <node concept="liA8E" id="3KxLR7zYlGv" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~ThreadLocal.get():java.lang.Object" resolve="get" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="3KxLR7zYl7$" role="3clF45">
+        <ref role="3uigEE" node="5peGHItxtrv" resolve="ScopeSession" />
+      </node>
+      <node concept="3Tm1VV" id="3KxLR7zYkbz" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zYrcE" role="jymVt" />
+    <node concept="2YIFZL" id="3KxLR7zYq1Z" role="jymVt">
+      <property role="TrG5h" value="setCurrentSession" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="3KxLR7zYm6a" role="3clF47">
+        <node concept="3clFbF" id="3KxLR7zYobQ" role="3cqZAp">
+          <node concept="2OqwBi" id="3KxLR7zYocO" role="3clFbG">
+            <node concept="37vLTw" id="3KxLR7zYobP" role="2Oq$k0">
+              <ref role="3cqZAo" node="3KxLR7zYmw8" resolve="ourCurrentSession" />
+            </node>
+            <node concept="liA8E" id="3KxLR7zYoek" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~ThreadLocal.set(java.lang.Object):void" resolve="set" />
+              <node concept="37vLTw" id="3KxLR7zYofl" role="37wK5m">
+                <ref role="3cqZAo" node="3KxLR7zYo3K" resolve="session" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3KxLR7zYo3K" role="3clF46">
+        <property role="TrG5h" value="session" />
+        <node concept="3uibUv" id="3KxLR7zYoaY" role="1tU5fm">
+          <ref role="3uigEE" node="5peGHItxtrv" resolve="ScopeSession" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3KxLR7zYm68" role="3clF45" />
+      <node concept="3Tm1VV" id="3KxLR7zYm69" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zYoFF" role="jymVt" />
+    <node concept="2YIFZL" id="3KxLR7zYqh3" role="jymVt">
+      <property role="TrG5h" value="withNewSession" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="3KxLR7zYqw5" role="3clF46">
+        <property role="TrG5h" value="runnable" />
+        <node concept="3uibUv" id="3KxLR7zYqwm" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3KxLR7zYp0q" role="3clF47">
+        <node concept="3cpWs8" id="3KxLR7zYqxs" role="3cqZAp">
+          <node concept="3cpWsn" id="3KxLR7zYqxt" role="3cpWs9">
+            <property role="TrG5h" value="previous" />
+            <node concept="3uibUv" id="3KxLR7zYqxr" role="1tU5fm">
+              <ref role="3uigEE" node="5peGHItxtrv" resolve="ScopeSession" />
+            </node>
+            <node concept="1rXfSq" id="3KxLR7zYqxu" role="33vP2m">
+              <ref role="37wK5l" node="3KxLR7zYmj7" resolve="getCurrentSession" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3KxLR7zYq$H" role="3cqZAp">
+          <node concept="1rXfSq" id="3KxLR7zYq$F" role="3clFbG">
+            <ref role="37wK5l" node="3KxLR7zYq1Z" resolve="setCurrentSession" />
+            <node concept="2ShNRf" id="3KxLR7zYq_S" role="37wK5m">
+              <node concept="HV5vD" id="3KxLR7zYqHD" role="2ShVmc">
+                <ref role="HV5vE" node="5peGHItxtrv" resolve="ScopeSession" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2GUZhq" id="3KxLR7zYqK2" role="3cqZAp">
+          <node concept="3clFbS" id="3KxLR7zYqK4" role="2GV8ay">
+            <node concept="3clFbF" id="3KxLR7zYqPQ" role="3cqZAp">
+              <node concept="2OqwBi" id="3KxLR7zYqQJ" role="3clFbG">
+                <node concept="37vLTw" id="3KxLR7zYqPO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3KxLR7zYqw5" resolve="runnable" />
+                </node>
+                <node concept="liA8E" id="3KxLR7zYqSo" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3KxLR7zYqK5" role="2GVbov">
+            <node concept="3clFbF" id="3KxLR7zYqNw" role="3cqZAp">
+              <node concept="1rXfSq" id="3KxLR7zYqNu" role="3clFbG">
+                <ref role="37wK5l" node="3KxLR7zYq1Z" resolve="setCurrentSession" />
+                <node concept="37vLTw" id="3KxLR7zYqOs" role="37wK5m">
+                  <ref role="3cqZAo" node="3KxLR7zYqxt" resolve="previous" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3KxLR7zYp0o" role="3clF45" />
+      <node concept="3Tm1VV" id="3KxLR7zYp0p" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zYtN3" role="jymVt" />
+    <node concept="2YIFZL" id="3KxLR7zYv19" role="jymVt">
+      <property role="TrG5h" value="ensureInSession" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="3KxLR7zYubR" role="3clF47">
+        <node concept="3clFbJ" id="3KxLR7zYviJ" role="3cqZAp">
+          <node concept="3clFbS" id="3KxLR7zYviK" role="3clFbx">
+            <node concept="3clFbF" id="3KxLR7zYvnv" role="3cqZAp">
+              <node concept="1rXfSq" id="3KxLR7zYvnu" role="3clFbG">
+                <ref role="37wK5l" node="3KxLR7zYqh3" resolve="withNewSession" />
+                <node concept="37vLTw" id="3KxLR7zYvoj" role="37wK5m">
+                  <ref role="3cqZAo" node="3KxLR7zYuR_" resolve="runnable" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3KxLR7zYvlX" role="3clFbw">
+            <node concept="10Nm6u" id="3KxLR7zYvmt" role="3uHU7w" />
+            <node concept="1rXfSq" id="3KxLR7zYvju" role="3uHU7B">
+              <ref role="37wK5l" node="3KxLR7zYmj7" resolve="getCurrentSession" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="3KxLR7zYvoI" role="9aQIa">
+            <node concept="3clFbS" id="3KxLR7zYvoJ" role="9aQI4">
+              <node concept="3clFbF" id="3KxLR7zYvpI" role="3cqZAp">
+                <node concept="2OqwBi" id="3KxLR7zYvq$" role="3clFbG">
+                  <node concept="37vLTw" id="3KxLR7zYvpH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3KxLR7zYuR_" resolve="runnable" />
+                  </node>
+                  <node concept="liA8E" id="3KxLR7zYvsd" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3KxLR7zYuR_" role="3clF46">
+        <property role="TrG5h" value="runnable" />
+        <node concept="3uibUv" id="3KxLR7zYv0T" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3KxLR7zYubP" role="3clF45" />
+      <node concept="3Tm1VV" id="3KxLR7zYubQ" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zYiS5" role="jymVt" />
+    <node concept="312cEg" id="JKjnvDWZxk" role="jymVt">
+      <property role="TrG5h" value="myBuckets" />
+      <node concept="3Tm6S6" id="JKjnvDWZxl" role="1B3o_S" />
+      <node concept="3rvAFt" id="JKjnvDWZxL" role="1tU5fm">
+        <node concept="3uibUv" id="JKjnvDWZ$x" role="3rvSg0">
+          <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+        </node>
+        <node concept="1LlUBW" id="JKjnvDWZyc" role="3rvQeY">
+          <node concept="3Tqbb2" id="JKjnvDWZyM" role="1Lm7xW" />
+          <node concept="3uibUv" id="JKjnvDWZz_" role="1Lm7xW">
+            <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ShNRf" id="JKjnvDWZD6" role="33vP2m">
+        <node concept="3rGOSV" id="JKjnvDWZCN" role="2ShVmc">
+          <node concept="1LlUBW" id="JKjnvDWZCO" role="3rHrn6">
+            <node concept="3Tqbb2" id="JKjnvDWZCP" role="1Lm7xW" />
+            <node concept="3uibUv" id="JKjnvDWZCQ" role="1Lm7xW">
+              <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
+            </node>
+          </node>
+          <node concept="3uibUv" id="JKjnvDWZCR" role="3rHtpV">
+            <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="28RMrJESmmF" role="jymVt">
+      <property role="TrG5h" value="myUpdatingBuckets" />
+      <node concept="3Tm6S6" id="28RMrJESmmG" role="1B3o_S" />
+      <node concept="_YKpA" id="28RMrJESmtp" role="1tU5fm">
+        <node concept="3uibUv" id="JKjnvDXgkJ" role="_ZDj9">
+          <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="28RMrJESmyN" role="33vP2m">
+        <node concept="Tc6Ow" id="28RMrJESmyA" role="2ShVmc">
+          <node concept="3uibUv" id="JKjnvDXgTq" role="HW$YZ">
+            <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="JKjnvDWZF$" role="jymVt" />
+    <node concept="3clFb_" id="JKjnvDWZHn" role="jymVt">
+      <property role="TrG5h" value="getBucket" />
+      <node concept="37vLTG" id="JKjnvDWZJa" role="3clF46">
+        <property role="TrG5h" value="owner" />
+        <node concept="3Tqbb2" id="JKjnvDWZJx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="JKjnvDWZJE" role="3clF46">
+        <property role="TrG5h" value="id" />
+        <node concept="3uibUv" id="JKjnvDWZK8" role="1tU5fm">
+          <ref role="3uigEE" node="4z5zassdah5" resolve="BucketId" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="JKjnvDWZIH" role="3clF45">
+        <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+      </node>
+      <node concept="3Tm1VV" id="JKjnvDWZHq" role="1B3o_S" />
+      <node concept="3clFbS" id="JKjnvDWZHr" role="3clF47">
+        <node concept="3cpWs8" id="JKjnvDX0cm" role="3cqZAp">
+          <node concept="3cpWsn" id="JKjnvDX0cn" role="3cpWs9">
+            <property role="TrG5h" value="bucket" />
+            <node concept="3uibUv" id="JKjnvDX0ce" role="1tU5fm">
+              <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+            </node>
+            <node concept="3EllGN" id="JKjnvDX0co" role="33vP2m">
+              <node concept="1Ls8ON" id="JKjnvDX0cp" role="3ElVtu">
+                <node concept="37vLTw" id="JKjnvDX0cq" role="1Lso8e">
+                  <ref role="3cqZAo" node="JKjnvDWZJa" resolve="owner" />
+                </node>
+                <node concept="37vLTw" id="JKjnvDX0cr" role="1Lso8e">
+                  <ref role="3cqZAo" node="JKjnvDWZJE" resolve="id" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="JKjnvDX0cs" role="3ElQJh">
+                <ref role="3cqZAo" node="JKjnvDWZxk" resolve="myBuckets" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="JKjnvDX0j2" role="3cqZAp">
+          <node concept="3clFbS" id="JKjnvDX0j4" role="3clFbx">
+            <node concept="3clFbF" id="JKjnvDX0qg" role="3cqZAp">
+              <node concept="37vLTI" id="JKjnvDX0rj" role="3clFbG">
+                <node concept="2ShNRf" id="JKjnvDX0sS" role="37vLTx">
+                  <node concept="1pGfFk" id="JKjnvDX0sD" role="2ShVmc">
+                    <ref role="37wK5l" node="JKjnvDWGMx" resolve="Bucket" />
+                    <node concept="37vLTw" id="JKjnvDX0tI" role="37wK5m">
+                      <ref role="3cqZAo" node="JKjnvDWZJa" resolve="owner" />
+                    </node>
+                    <node concept="37vLTw" id="JKjnvDX0v6" role="37wK5m">
+                      <ref role="3cqZAo" node="JKjnvDWZJE" resolve="id" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="JKjnvDX0qe" role="37vLTJ">
+                  <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="JKjnvDX0we" role="3cqZAp">
+              <node concept="37vLTI" id="JKjnvDX0$0" role="3clFbG">
+                <node concept="37vLTw" id="JKjnvDX0Bl" role="37vLTx">
+                  <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
+                </node>
+                <node concept="3EllGN" id="JKjnvDX0wg" role="37vLTJ">
+                  <node concept="1Ls8ON" id="JKjnvDX0wh" role="3ElVtu">
+                    <node concept="37vLTw" id="JKjnvDX0wi" role="1Lso8e">
+                      <ref role="3cqZAo" node="JKjnvDWZJa" resolve="owner" />
+                    </node>
+                    <node concept="37vLTw" id="JKjnvDX0wj" role="1Lso8e">
+                      <ref role="3cqZAo" node="JKjnvDWZJE" resolve="id" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="JKjnvDX0wk" role="3ElQJh">
+                    <ref role="3cqZAo" node="JKjnvDWZxk" resolve="myBuckets" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="JKjnvDX0or" role="3clFbw">
+            <node concept="10Nm6u" id="JKjnvDX0pj" role="3uHU7w" />
+            <node concept="37vLTw" id="JKjnvDX0na" role="3uHU7B">
+              <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="JKjnvDWZLR" role="3cqZAp">
+          <node concept="37vLTw" id="JKjnvDX0ct" role="3clFbG">
+            <ref role="3cqZAo" node="JKjnvDX0cn" resolve="bucket" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3KxLR7zXWZA" role="jymVt" />
+    <node concept="3clFb_" id="3KxLR7zXXhq" role="jymVt">
+      <property role="TrG5h" value="updatingBuckets" />
+      <node concept="_YKpA" id="3KxLR7zXXOs" role="3clF45">
+        <node concept="3uibUv" id="3KxLR7zXXTS" role="_ZDj9">
+          <ref role="3uigEE" node="JKjnvDWGIY" resolve="Bucket" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3KxLR7zXXht" role="1B3o_S" />
+      <node concept="3clFbS" id="3KxLR7zXXhu" role="3clF47">
+        <node concept="3clFbF" id="3KxLR7zXXUH" role="3cqZAp">
+          <node concept="37vLTw" id="3KxLR7zXXUG" role="3clFbG">
+            <ref role="3cqZAo" node="28RMrJESmmF" resolve="myUpdatingBuckets" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5peGHItxtrw" role="1B3o_S" />
   </node>
 </model>
 
