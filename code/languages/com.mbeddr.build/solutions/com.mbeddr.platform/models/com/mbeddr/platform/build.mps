@@ -8310,6 +8310,18 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5peGHItxqh_" role="3bR37C">
+          <node concept="3bR9La" id="5peGHItxqhA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5peGHItxqhB" role="3bR37C">
+          <node concept="3bR9La" id="5peGHItxqhC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5kJD22HKyV_" role="2G$12L">
         <property role="BnDLt" value="true" />
