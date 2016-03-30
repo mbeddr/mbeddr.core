@@ -370,5 +370,26 @@
       <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3KxLR7$5VrL">
+    <property role="1pbfSe" value="540638818" />
+    <property role="TrG5h" value="PreviousSiblingsPathElement" />
+    <property role="34LRSv" value="prev-siblings" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3KxLR7$5VsZ" role="PzmwI">
+      <ref role="PrY4T" node="4C4txgwM29R" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="3KxLR7$5Vtg" role="PzmwI">
+      <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3KxLR7$6qIq">
+    <property role="1pbfSe" value="540766987" />
+    <property role="TrG5h" value="DeclarationBeforeUse" />
+    <property role="34LRSv" value="declarationBeforeUse" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3KxLR7$6qI_" role="PzmwI">
+      <ref role="PrY4T" node="4z5zassghag" resolve="IPathDotOperation" />
+    </node>
+  </node>
 </model>
 
