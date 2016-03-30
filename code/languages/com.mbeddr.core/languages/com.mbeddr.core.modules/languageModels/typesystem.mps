@@ -6905,11 +6905,11 @@
                           <node concept="17QB3L" id="7d9zFs_$RdB" role="1tU5fm" />
                           <node concept="3cpWs3" id="32AEfLiUmS6" role="33vP2m">
                             <node concept="Xl_RD" id="2GqtAvzatbu" role="3uHU7w">
-                              <property role="Xl_RC" value="!" />
+                              <property role="Xl_RC" value=" may not be initialized!" />
                             </node>
                             <node concept="3cpWs3" id="2GqtAvzas_A" role="3uHU7B">
                               <node concept="Xl_RD" id="2GqtAvzasoa" role="3uHU7B">
-                                <property role="Xl_RC" value="Reading from uninitialized variable " />
+                                <property role="Xl_RC" value="Variable " />
                               </node>
                               <node concept="2OqwBi" id="2GqtAvzasGh" role="3uHU7w">
                                 <node concept="2OqwBi" id="4zFXTqpMJhR" role="2Oq$k0">
