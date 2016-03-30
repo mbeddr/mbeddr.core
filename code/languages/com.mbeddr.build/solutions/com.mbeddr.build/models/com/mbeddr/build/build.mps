@@ -10451,6 +10451,23 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.build" />
     <property role="TrG5h" value="spawner" />
     <property role="turDy" value="spawner.xml" />
+    <node concept="2igEWh" id="5UUt2$WEaI" role="1hWBAP">
+      <property role="2igJW4" value="true" />
+      <property role="3UIfUI" value="6096" />
+      <property role="1YnnvL" value="1024" />
+    </node>
+    <node concept="1wNqPr" id="5UUt2$WD$5" role="3989C9">
+      <property role="1wNuhc" value="true" />
+      <property role="1wNuhe" value="true" />
+      <property role="1wNuhh" value="4" />
+      <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
+    </node>
+    <node concept="2_Ic$z" id="5UUt2$WD$6" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_GNG2" value="6096" />
+      <property role="TZNOO" value="1.6" />
+    </node>
     <node concept="m$_wf" id="2coa6Xmdl5V" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.spawner" />
       <node concept="3_J27D" id="2coa6Xmdl5W" role="m$_yQ">
