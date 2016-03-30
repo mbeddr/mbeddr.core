@@ -6838,11 +6838,11 @@
                           <node concept="17QB3L" id="7d9zFs_$RdB" role="1tU5fm" />
                           <node concept="3cpWs3" id="32AEfLiUmS6" role="33vP2m">
                             <node concept="Xl_RD" id="2GqtAvzatbu" role="3uHU7w">
-                              <property role="Xl_RC" value="!" />
+                              <property role="Xl_RC" value=" may not be initialized!" />
                             </node>
                             <node concept="3cpWs3" id="2GqtAvzas_A" role="3uHU7B">
                               <node concept="Xl_RD" id="2GqtAvzasoa" role="3uHU7B">
-                                <property role="Xl_RC" value="Reading from uninitialized variable " />
+                                <property role="Xl_RC" value="Variable " />
                               </node>
                               <node concept="2OqwBi" id="2GqtAvzasGh" role="3uHU7w">
                                 <node concept="2OqwBi" id="4zFXTqpMJhR" role="2Oq$k0">
@@ -6999,9 +6999,6 @@
                     <node concept="3cpWs8" id="56zXiDvf_Y_" role="3cqZAp">
                       <node concept="3cpWsn" id="56zXiDvf_YA" role="3cpWs9">
                         <property role="TrG5h" value="write" />
-                        <node concept="3uibUv" id="56zXiDvfA1L" role="1tU5fm">
-                          <ref role="3uigEE" to="dau9:~WriteInstruction" resolve="WriteInstruction" />
-                        </node>
                         <node concept="10QFUN" id="56zXiDvf_YD" role="33vP2m">
                           <node concept="3uibUv" id="56zXiDvfApd" role="10QFUM">
                             <ref role="3uigEE" to="dau9:~WriteInstruction" resolve="WriteInstruction" />
@@ -7009,6 +7006,9 @@
                           <node concept="37vLTw" id="56zXiDvf_YF" role="10QFUP">
                             <ref role="3cqZAo" node="2GqtAvyV0S1" resolve="instruction" />
                           </node>
+                        </node>
+                        <node concept="3uibUv" id="56zXiDvfA1L" role="1tU5fm">
+                          <ref role="3uigEE" to="dau9:~WriteInstruction" resolve="WriteInstruction" />
                         </node>
                       </node>
                     </node>
@@ -7289,11 +7289,11 @@
               </node>
             </node>
             <node concept="2OqwBi" id="2GqtAvyV0S6" role="1DdaDG">
-              <node concept="37vLTw" id="1uoAWUP6pzg" role="2Oq$k0">
-                <ref role="3cqZAo" node="1uoAWUP6nTi" resolve="program" />
-              </node>
               <node concept="liA8E" id="2GqtAvyV0Sa" role="2OqNvi">
                 <ref role="37wK5l" to="1fjm:~Program.getInstructions():java.util.List" resolve="getInstructions" />
+              </node>
+              <node concept="37vLTw" id="1uoAWUP6pzg" role="2Oq$k0">
+                <ref role="3cqZAo" node="1uoAWUP6nTi" resolve="program" />
               </node>
             </node>
           </node>
@@ -10837,16 +10837,6 @@
                           </node>
                         </node>
                         <node concept="3clFbJ" id="35JUnhpaDFr" role="3cqZAp">
-                          <node concept="2OqwBi" id="35JUnhpaE6O" role="3clFbw">
-                            <node concept="37vLTw" id="35JUnhpaE6P" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5MZxerZYddQ" resolve="actualType" />
-                            </node>
-                            <node concept="1mIQ4w" id="35JUnhpaE6Q" role="2OqNvi">
-                              <node concept="chp4Y" id="3NrQJbN0qxb" role="cj9EA">
-                                <ref role="cht4Q" to="c4fa:6IWRcVPT6tl" resolve="ITypeContainingType" />
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3clFbS" id="35JUnhpaDFt" role="3clFbx">
                             <node concept="3clFbJ" id="3LtIbWJFwYZ" role="3cqZAp">
                               <node concept="3clFbS" id="3LtIbWJFwZ0" role="3clFbx">
@@ -10920,6 +10910,16 @@
                                     <ref role="3TsBF5" to="mj1l:2zhwXA$YI0J" resolve="volatile" />
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="35JUnhpaE6O" role="3clFbw">
+                            <node concept="37vLTw" id="35JUnhpaE6P" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5MZxerZYddQ" resolve="actualType" />
+                            </node>
+                            <node concept="1mIQ4w" id="35JUnhpaE6Q" role="2OqNvi">
+                              <node concept="chp4Y" id="3NrQJbN0qxb" role="cj9EA">
+                                <ref role="cht4Q" to="c4fa:6IWRcVPT6tl" resolve="ITypeContainingType" />
                               </node>
                             </node>
                           </node>
