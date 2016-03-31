@@ -44,6 +44,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="w0gx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure.modules(MPS.Core/)" />
+    <import index="vm3f" ref="6b36c769-1771-46e1-8eef-54c9baf48813/java:org.sosy_lab.cpachecker.util(com.mbeddr.analyses.cpa.rt/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -152,6 +153,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -512,7 +514,7 @@
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="p" />
                 <node concept="3uibUv" id="4BmZfiOgznE" role="1tU5fm">
-                  <ref role="3uigEE" to="udbz:~Pair" resolve="Pair" />
+                  <ref role="3uigEE" to="vm3f:~Pair" resolve="Pair" />
                   <node concept="3uibUv" id="4BmZfiOgznF" role="11_B2D">
                     <ref role="3uigEE" to="kcav:~Configuration" resolve="Configuration" />
                   </node>
@@ -537,7 +539,7 @@
                     <ref role="3cqZAo" node="4BmZfiOgznD" resolve="p" />
                   </node>
                   <node concept="liA8E" id="4BmZfiOgznO" role="2OqNvi">
-                    <ref role="37wK5l" to="udbz:~Pair.getFirst():java.lang.Object" resolve="getFirst" />
+                    <ref role="37wK5l" to="vm3f:~Pair.getFirst():java.lang.Object" resolve="getFirst" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="4BmZfiOgznP" role="37vLTJ">
@@ -601,15 +603,33 @@
               </node>
             </node>
             <node concept="3clFbH" id="4BmZfiOgzob" role="3cqZAp" />
-            <node concept="3cpWs8" id="4BmZfiOgzoc" role="3cqZAp">
-              <node concept="3cpWsn" id="4BmZfiOgzod" role="3cpWs9">
-                <property role="TrG5h" value="notifier" />
-                <node concept="3uibUv" id="4BmZfiOgzoe" role="1tU5fm">
+            <node concept="3cpWs8" id="5xCkmqwkN7G" role="3cqZAp">
+              <node concept="3cpWsn" id="5xCkmqwkN7H" role="3cpWs9">
+                <property role="3TUv4t" value="true" />
+                <property role="TrG5h" value="shutdownManager" />
+                <node concept="3uibUv" id="5xCkmqwkN7I" role="1tU5fm">
+                  <ref role="3uigEE" to="udbz:~ShutdownManager" resolve="ShutdownManager" />
+                </node>
+                <node concept="2YIFZM" id="5xCkmqwkN7J" role="33vP2m">
+                  <ref role="37wK5l" to="udbz:~ShutdownManager.create():org.sosy_lab.common.ShutdownManager" resolve="create" />
+                  <ref role="1Pybhc" to="udbz:~ShutdownManager" resolve="ShutdownManager" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5xCkmqwkN7K" role="3cqZAp">
+              <node concept="3cpWsn" id="5xCkmqwkN7L" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="shutdownNotifier" />
+                <node concept="3uibUv" id="5xCkmqwkN7M" role="1tU5fm">
                   <ref role="3uigEE" to="udbz:~ShutdownNotifier" resolve="ShutdownNotifier" />
                 </node>
-                <node concept="2YIFZM" id="4BmZfiOgzof" role="33vP2m">
-                  <ref role="37wK5l" to="udbz:~ShutdownNotifier.create():org.sosy_lab.common.ShutdownNotifier" resolve="create" />
-                  <ref role="1Pybhc" to="udbz:~ShutdownNotifier" resolve="ShutdownNotifier" />
+                <node concept="2OqwBi" id="5xCkmqwkN7N" role="33vP2m">
+                  <node concept="37vLTw" id="5xCkmqwkN7O" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5xCkmqwkN7H" resolve="shutdownManager" />
+                  </node>
+                  <node concept="liA8E" id="5xCkmqwkN7P" role="2OqNvi">
+                    <ref role="37wK5l" to="udbz:~ShutdownManager.getNotifier():org.sosy_lab.common.ShutdownNotifier" resolve="getNotifier" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -637,15 +657,15 @@
                 </node>
                 <node concept="2ShNRf" id="4BmZfiOgzoB" role="33vP2m">
                   <node concept="1pGfFk" id="4BmZfiOgzoC" role="2ShVmc">
-                    <ref role="37wK5l" to="k0u0:~CPAchecker.&lt;init&gt;(org.sosy_lab.common.configuration.Configuration,org.sosy_lab.common.log.LogManager,org.sosy_lab.common.ShutdownNotifier)" resolve="CPAchecker" />
+                    <ref role="37wK5l" to="k0u0:~CPAchecker.&lt;init&gt;(org.sosy_lab.common.configuration.Configuration,org.sosy_lab.common.log.LogManager,org.sosy_lab.common.ShutdownManager)" resolve="CPAchecker" />
                     <node concept="37vLTw" id="4BmZfiOgzoD" role="37wK5m">
                       <ref role="3cqZAo" node="4BmZfiOgznk" resolve="conf" />
                     </node>
                     <node concept="37vLTw" id="4BmZfiOgzoE" role="37wK5m">
                       <ref role="3cqZAo" node="4BmZfiOgznt" resolve="logManager" />
                     </node>
-                    <node concept="37vLTw" id="4BmZfiOgzoF" role="37wK5m">
-                      <ref role="3cqZAo" node="4BmZfiOgzod" resolve="notifier" />
+                    <node concept="37vLTw" id="5xCkmqwkO3b" role="37wK5m">
+                      <ref role="3cqZAo" node="5xCkmqwkN7H" resolve="shutdownManager" />
                     </node>
                   </node>
                 </node>
@@ -672,6 +692,19 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="3hA4xcDtgM8" role="3cqZAp">
+              <node concept="37vLTI" id="3hA4xcDthhO" role="3clFbG">
+                <node concept="2OqwBi" id="3hA4xcDthxn" role="37vLTx">
+                  <node concept="37vLTw" id="3hA4xcDthtz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4BmZfiOgO0f" resolve="files" />
+                  </node>
+                  <node concept="17S1cR" id="3hA4xcDthOo" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="3hA4xcDtgM6" role="37vLTJ">
+                  <ref role="3cqZAo" node="4BmZfiOgO0f" resolve="files" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="4BmZfiOi_30" role="3cqZAp">
               <node concept="2OqwBi" id="4BmZfiOi_31" role="3clFbG">
                 <node concept="10M0yZ" id="4BmZfiOi_32" role="2Oq$k0">
@@ -680,12 +713,17 @@
                 </node>
                 <node concept="liA8E" id="4BmZfiOi_33" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="4BmZfiOi_34" role="37wK5m">
-                    <node concept="37vLTw" id="4BmZfiOi_35" role="3uHU7w">
-                      <ref role="3cqZAo" node="4BmZfiOgO0f" resolve="files" />
+                  <node concept="3cpWs3" id="3hA4xcDteou" role="37wK5m">
+                    <node concept="Xl_RD" id="3hA4xcDteqM" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
                     </node>
-                    <node concept="Xl_RD" id="4BmZfiOi_36" role="3uHU7B">
-                      <property role="Xl_RC" value="Running CPA with files: " />
+                    <node concept="3cpWs3" id="4BmZfiOi_34" role="3uHU7B">
+                      <node concept="Xl_RD" id="4BmZfiOi_36" role="3uHU7B">
+                        <property role="Xl_RC" value="Running CPA with files: '" />
+                      </node>
+                      <node concept="37vLTw" id="4BmZfiOi_35" role="3uHU7w">
+                        <ref role="3cqZAo" node="4BmZfiOgO0f" resolve="files" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -812,27 +850,37 @@
               </node>
             </node>
             <node concept="3clFbH" id="5pfYjqBbnO_" role="3cqZAp" />
-            <node concept="3clFbF" id="5pfYjqBborP" role="3cqZAp">
-              <node concept="2OqwBi" id="5pfYjqBborM" role="3clFbG">
-                <node concept="10M0yZ" id="5pfYjqBborN" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="5pfYjqBborO" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="5pfYjqBbrVK" role="37wK5m">
-                    <node concept="Xl_RD" id="5pfYjqBboTm" role="3uHU7B">
-                      <property role="Xl_RC" value="CPAChecker result available: " />
+            <node concept="3clFbJ" id="DbVawgPX3V" role="3cqZAp">
+              <node concept="3clFbS" id="DbVawgPX3X" role="3clFbx">
+                <node concept="3clFbF" id="5pfYjqBborP" role="3cqZAp">
+                  <node concept="2OqwBi" id="5pfYjqBborM" role="3clFbG">
+                    <node concept="10M0yZ" id="5pfYjqBborN" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
-                    <node concept="2OqwBi" id="5KYWJPNLDbb" role="3uHU7w">
-                      <node concept="37vLTw" id="5pfYjqBbshr" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4BmZfiOgzoH" resolve="result" />
-                      </node>
-                      <node concept="liA8E" id="5KYWJPNLDbd" role="2OqNvi">
-                        <ref role="37wK5l" to="k0u0:~CPAcheckerResult.getResult():org.sosy_lab.cpachecker.core.CPAcheckerResult$Result" resolve="getResult" />
+                    <node concept="liA8E" id="5pfYjqBborO" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="5pfYjqBbrVK" role="37wK5m">
+                        <node concept="Xl_RD" id="5pfYjqBboTm" role="3uHU7B">
+                          <property role="Xl_RC" value="CPAChecker result available: " />
+                        </node>
+                        <node concept="2OqwBi" id="5KYWJPNLDbb" role="3uHU7w">
+                          <node concept="37vLTw" id="5pfYjqBbshr" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4BmZfiOgzoH" resolve="result" />
+                          </node>
+                          <node concept="liA8E" id="5KYWJPNLDbd" role="2OqNvi">
+                            <ref role="37wK5l" to="k0u0:~CPAcheckerResult.getResult():org.sosy_lab.cpachecker.core.CPAcheckerResult$Result" resolve="getResult" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="DbVawgPXEn" role="3clFbw">
+                <node concept="10Nm6u" id="DbVawgPXNv" role="3uHU7w" />
+                <node concept="37vLTw" id="DbVawgPXx0" role="3uHU7B">
+                  <ref role="3cqZAo" node="4BmZfiOgzoH" resolve="result" />
                 </node>
               </node>
             </node>
@@ -891,6 +939,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="DbVawgO64p" role="3cqZAp" />
         <node concept="3cpWs8" id="5KYWJPNO$To" role="3cqZAp">
           <node concept="3cpWsn" id="5KYWJPNO$Tp" role="3cpWs9">
             <property role="TrG5h" value="solutionPath" />
@@ -991,6 +1040,37 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="DbVawgOq4D" role="3cqZAp">
+          <node concept="37vLTI" id="DbVawgOq4E" role="3clFbG">
+            <node concept="Xl_RD" id="DbVawgOq4F" role="37vLTx">
+              <property role="Xl_RC" value="FORWARD" />
+            </node>
+            <node concept="3EllGN" id="DbVawgOq4G" role="37vLTJ">
+              <node concept="Xl_RD" id="DbVawgOq4H" role="3ElVtu">
+                <property role="Xl_RC" value="cpa.predicate.direction" />
+              </node>
+              <node concept="37vLTw" id="DbVawgOq4I" role="3ElQJh">
+                <ref role="3cqZAo" node="5kIX9cj0DuU" resolve="options" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="DbVawgPQcj" role="3cqZAp">
+          <node concept="37vLTI" id="DbVawgPQck" role="3clFbG">
+            <node concept="Xl_RD" id="DbVawgPQcl" role="37vLTx">
+              <property role="Xl_RC" value="RATIONAL" />
+            </node>
+            <node concept="3EllGN" id="DbVawgPQcm" role="37vLTJ">
+              <node concept="Xl_RD" id="DbVawgPQcn" role="3ElVtu">
+                <property role="Xl_RC" value="cpa.predicate.encodeBitvectorAs" />
+              </node>
+              <node concept="37vLTw" id="DbVawgPQco" role="3ElQJh">
+                <ref role="3cqZAo" node="5kIX9cj0DuU" resolve="options" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="DbVawgPQ5R" role="3cqZAp" />
         <node concept="3clFbF" id="5pfYjqBbk40" role="3cqZAp">
           <node concept="37vLTI" id="5pfYjqBbkos" role="3clFbG">
             <node concept="Xl_RD" id="5pfYjqBbk$f" role="37vLTx">
@@ -1022,17 +1102,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5pfYjqBcCTk" role="3cqZAp">
-          <node concept="37vLTI" id="5pfYjqBcCTl" role="3clFbG">
-            <node concept="Xl_RD" id="5pfYjqBcCTm" role="37vLTx">
-              <property role="Xl_RC" value="false" />
-            </node>
-            <node concept="3EllGN" id="5pfYjqBcCTn" role="37vLTJ">
-              <node concept="Xl_RD" id="5pfYjqBcCTo" role="3ElVtu">
-                <property role="Xl_RC" value="analysis.stopAfterError" />
+        <node concept="1X3_iC" id="DbVawgNYb4" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5pfYjqBcCTk" role="8Wnug">
+            <node concept="37vLTI" id="5pfYjqBcCTl" role="3clFbG">
+              <node concept="Xl_RD" id="5pfYjqBcCTm" role="37vLTx">
+                <property role="Xl_RC" value="false" />
               </node>
-              <node concept="37vLTw" id="5pfYjqBcCTp" role="3ElQJh">
-                <ref role="3cqZAo" node="5kIX9cj0DuU" resolve="options" />
+              <node concept="3EllGN" id="5pfYjqBcCTn" role="37vLTJ">
+                <node concept="Xl_RD" id="5pfYjqBcCTo" role="3ElVtu">
+                  <property role="Xl_RC" value="analysis.stopAfterError" />
+                </node>
+                <node concept="37vLTw" id="5pfYjqBcCTp" role="3ElQJh">
+                  <ref role="3cqZAo" node="5kIX9cj0DuU" resolve="options" />
+                </node>
               </node>
             </node>
           </node>
@@ -1048,7 +1132,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="5e30jNSZYSd" role="37vLTx">
-              <property role="Xl_RC" value="FINEST" />
+              <property role="Xl_RC" value="ALL" />
             </node>
           </node>
         </node>
@@ -1062,62 +1146,78 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5pfYjqBcHeP" role="3cqZAp">
-          <node concept="d57v9" id="5pfYjqBcHnF" role="3clFbG">
-            <node concept="37vLTw" id="5pfYjqBcHeN" role="37vLTJ">
-              <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
-            </node>
-            <node concept="3cpWs3" id="5pfYjqBcHu5" role="37vLTx">
-              <node concept="37vLTw" id="5pfYjqBcHu6" role="3uHU7B">
-                <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+        <node concept="1X3_iC" id="DbVawgQQbZ" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5pfYjqBcHeP" role="8Wnug">
+            <node concept="d57v9" id="5pfYjqBcHnF" role="3clFbG">
+              <node concept="37vLTw" id="5pfYjqBcHeN" role="37vLTJ">
+                <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
               </node>
-              <node concept="Xl_RD" id="5pfYjqBcHu7" role="3uHU7w">
-                <property role="Xl_RC" value="/config/configs/components/sv-comp16--01-valueAnalysis.properties," />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5pfYjqBcHBQ" role="3cqZAp">
-          <node concept="d57v9" id="5pfYjqBcHBR" role="3clFbG">
-            <node concept="37vLTw" id="5pfYjqBcHBS" role="37vLTJ">
-              <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
-            </node>
-            <node concept="3cpWs3" id="5pfYjqBcHBT" role="37vLTx">
-              <node concept="37vLTw" id="5pfYjqBcHBU" role="3uHU7B">
-                <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
-              </node>
-              <node concept="Xl_RD" id="5pfYjqBcHBV" role="3uHU7w">
-                <property role="Xl_RC" value="/config/configs/components/sv-comp16--02-valueAnalysis-itp.properties," />
+              <node concept="3cpWs3" id="5pfYjqBcHu5" role="37vLTx">
+                <node concept="37vLTw" id="5pfYjqBcHu6" role="3uHU7B">
+                  <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+                </node>
+                <node concept="Xl_RD" id="5pfYjqBcHu7" role="3uHU7w">
+                  <property role="Xl_RC" value="/config/configs/components/sv-comp16--01-valueAnalysis.properties," />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5pfYjqBcHIz" role="3cqZAp">
-          <node concept="d57v9" id="5pfYjqBcHI$" role="3clFbG">
-            <node concept="37vLTw" id="5pfYjqBcHI_" role="37vLTJ">
-              <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
-            </node>
-            <node concept="3cpWs3" id="5pfYjqBcHIA" role="37vLTx">
-              <node concept="37vLTw" id="5pfYjqBcHIB" role="3uHU7B">
-                <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+        <node concept="1X3_iC" id="DbVawgPUND" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5pfYjqBcHBQ" role="8Wnug">
+            <node concept="d57v9" id="5pfYjqBcHBR" role="3clFbG">
+              <node concept="37vLTw" id="5pfYjqBcHBS" role="37vLTJ">
+                <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
               </node>
-              <node concept="Xl_RD" id="5pfYjqBcHIC" role="3uHU7w">
-                <property role="Xl_RC" value="/config/configs/components/sv-comp16--03-bmc-k-induction.properties," />
+              <node concept="3cpWs3" id="5pfYjqBcHBT" role="37vLTx">
+                <node concept="37vLTw" id="5pfYjqBcHBU" role="3uHU7B">
+                  <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+                </node>
+                <node concept="Xl_RD" id="5pfYjqBcHBV" role="3uHU7w">
+                  <property role="Xl_RC" value="/config/configs/components/sv-comp16--02-valueAnalysis-itp.properties," />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5pfYjqBcHZj" role="3cqZAp">
-          <node concept="d57v9" id="5pfYjqBcHZk" role="3clFbG">
-            <node concept="37vLTw" id="5pfYjqBcHZl" role="37vLTJ">
-              <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
-            </node>
-            <node concept="3cpWs3" id="5pfYjqBcHZm" role="37vLTx">
-              <node concept="37vLTw" id="5pfYjqBcHZn" role="3uHU7B">
-                <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+        <node concept="1X3_iC" id="DbVawgPUVW" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5pfYjqBcHIz" role="8Wnug">
+            <node concept="d57v9" id="5pfYjqBcHI$" role="3clFbG">
+              <node concept="37vLTw" id="5pfYjqBcHI_" role="37vLTJ">
+                <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
               </node>
-              <node concept="Xl_RD" id="5pfYjqBcHZo" role="3uHU7w">
-                <property role="Xl_RC" value="/config/configs/components/sv-comp16--04-predicateAnalysis-bitprecise.properties," />
+              <node concept="3cpWs3" id="5pfYjqBcHIA" role="37vLTx">
+                <node concept="37vLTw" id="5pfYjqBcHIB" role="3uHU7B">
+                  <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+                </node>
+                <node concept="Xl_RD" id="5pfYjqBcHIC" role="3uHU7w">
+                  <property role="Xl_RC" value="/config/configs/components/sv-comp16--03-bmc-k-induction.properties," />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="DbVawgPV3W" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5pfYjqBcHZj" role="8Wnug">
+            <node concept="d57v9" id="5pfYjqBcHZk" role="3clFbG">
+              <node concept="37vLTw" id="5pfYjqBcHZl" role="37vLTJ">
+                <ref role="3cqZAo" node="5pfYjqBcGS$" resolve="restartAlgorithms" />
+              </node>
+              <node concept="3cpWs3" id="5pfYjqBcHZm" role="37vLTx">
+                <node concept="37vLTw" id="5pfYjqBcHZn" role="3uHU7B">
+                  <ref role="3cqZAo" node="5KYWJPNO$Tp" resolve="solutionPath" />
+                </node>
+                <node concept="Xl_RD" id="5pfYjqBcHZo" role="3uHU7w">
+                  <property role="Xl_RC" value="/config/configs/components/sv-comp16--04-predicateAnalysis-bitprecise.properties" />
+                </node>
               </node>
             </node>
           </node>
@@ -1400,6 +1500,16 @@
             <node concept="SfApY" id="5kIX9cj0dlC" role="3cqZAp">
               <node concept="TDmWw" id="5kIX9cj0dlD" role="TEbGg">
                 <node concept="3clFbS" id="5kIX9cj0dll" role="TDEfX">
+                  <node concept="3clFbF" id="DbVawgO29t" role="3cqZAp">
+                    <node concept="2OqwBi" id="DbVawgO2bi" role="3clFbG">
+                      <node concept="37vLTw" id="DbVawgO29r" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5kIX9cj0dle" resolve="e" />
+                      </node>
+                      <node concept="liA8E" id="DbVawgO2nv" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="5kIX9cj0dlm" role="3cqZAp">
                     <node concept="2OqwBi" id="5kIX9cj0dvW" role="3clFbG">
                       <node concept="37vLTw" id="5kIX9cj0dvV" role="2Oq$k0">
@@ -1447,7 +1557,7 @@
                     <property role="3TUv4t" value="false" />
                     <property role="TrG5h" value="p" />
                     <node concept="3uibUv" id="5kIX9cj0dl1" role="1tU5fm">
-                      <ref role="3uigEE" to="udbz:~Pair" resolve="Pair" />
+                      <ref role="3uigEE" to="vm3f:~Pair" resolve="Pair" />
                       <node concept="3uibUv" id="5kIX9cj0dl2" role="11_B2D">
                         <ref role="3uigEE" to="kcav:~Configuration" resolve="Configuration" />
                       </node>
@@ -1473,7 +1583,7 @@
                         <ref role="3cqZAo" node="5kIX9cj0dkZ" resolve="p" />
                       </node>
                       <node concept="liA8E" id="5kIX9cj0dwn" role="2OqNvi">
-                        <ref role="37wK5l" to="udbz:~Pair.getFirst():java.lang.Object" resolve="getFirst" />
+                        <ref role="37wK5l" to="vm3f:~Pair.getFirst():java.lang.Object" resolve="getFirst" />
                       </node>
                     </node>
                   </node>
@@ -1488,7 +1598,7 @@
                         <ref role="3cqZAo" node="5kIX9cj0dkZ" resolve="p" />
                       </node>
                       <node concept="liA8E" id="5kIX9cj0dws" role="2OqNvi">
-                        <ref role="37wK5l" to="udbz:~Pair.getSecond():java.lang.Object" resolve="getSecond" />
+                        <ref role="37wK5l" to="vm3f:~Pair.getSecond():java.lang.Object" resolve="getSecond" />
                       </node>
                     </node>
                   </node>
@@ -1525,6 +1635,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5xCkmqwkDOr" role="3cqZAp" />
+        <node concept="3cpWs8" id="5xCkmqwkEXo" role="3cqZAp">
+          <node concept="3cpWsn" id="5xCkmqwkEXn" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="shutdownManager" />
+            <node concept="3uibUv" id="5xCkmqwkEXp" role="1tU5fm">
+              <ref role="3uigEE" to="udbz:~ShutdownManager" resolve="ShutdownManager" />
+            </node>
+            <node concept="2YIFZM" id="5xCkmqwkEXt" role="33vP2m">
+              <ref role="1Pybhc" to="udbz:~ShutdownManager" resolve="ShutdownManager" />
+              <ref role="37wK5l" to="udbz:~ShutdownManager.create():org.sosy_lab.common.ShutdownManager" resolve="create" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5kIX9cj0dm9" role="3cqZAp">
           <node concept="3cpWsn" id="5kIX9cj0dm8" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -1532,9 +1656,13 @@
             <node concept="3uibUv" id="5kIX9cj0dma" role="1tU5fm">
               <ref role="3uigEE" to="udbz:~ShutdownNotifier" resolve="ShutdownNotifier" />
             </node>
-            <node concept="2YIFZM" id="5kIX9cj0ely" role="33vP2m">
-              <ref role="1Pybhc" to="udbz:~ShutdownNotifier" resolve="ShutdownNotifier" />
-              <ref role="37wK5l" to="udbz:~ShutdownNotifier.create():org.sosy_lab.common.ShutdownNotifier" resolve="create" />
+            <node concept="2OqwBi" id="5xCkmqwkGDm" role="33vP2m">
+              <node concept="37vLTw" id="5xCkmqwkGqk" role="2Oq$k0">
+                <ref role="3cqZAo" node="5xCkmqwkEXn" resolve="shutdownManager" />
+              </node>
+              <node concept="liA8E" id="5xCkmqwkGSz" role="2OqNvi">
+                <ref role="37wK5l" to="udbz:~ShutdownManager.getNotifier():org.sosy_lab.common.ShutdownNotifier" resolve="getNotifier" />
+              </node>
             </node>
           </node>
         </node>
@@ -1692,17 +1820,17 @@
                 <node concept="37vLTw" id="5kIX9cj0dmK" role="37vLTJ">
                   <ref role="3cqZAo" node="5kIX9cj0dmk" resolve="limits" />
                 </node>
-                <node concept="2YIFZM" id="5kIX9cj0gU9" role="37vLTx">
+                <node concept="2YIFZM" id="6x2B6zH7c_i" role="37vLTx">
+                  <ref role="37wK5l" to="8t5e:~ResourceLimitChecker.fromConfiguration(org.sosy_lab.common.configuration.Configuration,org.sosy_lab.common.log.LogManager,org.sosy_lab.common.ShutdownManager):org.sosy_lab.cpachecker.util.resources.ResourceLimitChecker" resolve="fromConfiguration" />
                   <ref role="1Pybhc" to="8t5e:~ResourceLimitChecker" resolve="ResourceLimitChecker" />
-                  <ref role="37wK5l" to="8t5e:~ResourceLimitChecker.fromConfiguration(org.sosy_lab.common.configuration.Configuration,org.sosy_lab.common.log.LogManager,org.sosy_lab.common.ShutdownNotifier):org.sosy_lab.cpachecker.util.resources.ResourceLimitChecker" resolve="fromConfiguration" />
-                  <node concept="37vLTw" id="5kIX9cj0dmM" role="37wK5m">
+                  <node concept="37vLTw" id="6x2B6zH7c_j" role="37wK5m">
                     <ref role="3cqZAo" node="5kIX9cj0dkJ" resolve="cpaConfig" />
                   </node>
-                  <node concept="37vLTw" id="5kIX9cj0dmN" role="37wK5m">
+                  <node concept="37vLTw" id="6x2B6zH7c_k" role="37wK5m">
                     <ref role="3cqZAo" node="5kIX9cj0dkN" resolve="logManager" />
                   </node>
-                  <node concept="37vLTw" id="5kIX9cj0dmO" role="37wK5m">
-                    <ref role="3cqZAo" node="5kIX9cj0dm8" resolve="shutdownNotifier" />
+                  <node concept="37vLTw" id="5xCkmqwkHbr" role="37wK5m">
+                    <ref role="3cqZAo" node="5xCkmqwkEXn" resolve="shutdownManager" />
                   </node>
                 </node>
               </node>
@@ -1724,15 +1852,15 @@
                 </node>
                 <node concept="2ShNRf" id="5kIX9cj0gUf" role="37vLTx">
                   <node concept="1pGfFk" id="5kIX9cj0gUg" role="2ShVmc">
-                    <ref role="37wK5l" to="k0u0:~CPAchecker.&lt;init&gt;(org.sosy_lab.common.configuration.Configuration,org.sosy_lab.common.log.LogManager,org.sosy_lab.common.ShutdownNotifier)" resolve="CPAchecker" />
+                    <ref role="37wK5l" to="k0u0:~CPAchecker.&lt;init&gt;(org.sosy_lab.common.configuration.Configuration,org.sosy_lab.common.log.LogManager,org.sosy_lab.common.ShutdownManager)" resolve="CPAchecker" />
                     <node concept="37vLTw" id="5kIX9cj0dmV" role="37wK5m">
                       <ref role="3cqZAo" node="5kIX9cj0dkJ" resolve="cpaConfig" />
                     </node>
                     <node concept="37vLTw" id="5kIX9cj0dmW" role="37wK5m">
                       <ref role="3cqZAo" node="5kIX9cj0dkN" resolve="logManager" />
                     </node>
-                    <node concept="37vLTw" id="5kIX9cj0dmX" role="37wK5m">
-                      <ref role="3cqZAo" node="5kIX9cj0dm8" resolve="shutdownNotifier" />
+                    <node concept="37vLTw" id="5xCkmqwkHpn" role="37wK5m">
+                      <ref role="3cqZAo" node="5xCkmqwkEXn" resolve="shutdownManager" />
                     </node>
                   </node>
                 </node>
@@ -2476,7 +2604,7 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="p" />
             <node concept="3uibUv" id="5kIX9cj0dpU" role="1tU5fm">
-              <ref role="3uigEE" to="udbz:~Pair" resolve="Pair" />
+              <ref role="3uigEE" to="vm3f:~Pair" resolve="Pair" />
               <node concept="3uibUv" id="5kIX9cj0dpV" role="11_B2D">
                 <ref role="3uigEE" to="kcav:~Configuration" resolve="Configuration" />
               </node>
@@ -2505,7 +2633,7 @@
                 <ref role="3cqZAo" node="5kIX9cj0dpS" resolve="p" />
               </node>
               <node concept="liA8E" id="5kIX9cj0hxx" role="2OqNvi">
-                <ref role="37wK5l" to="udbz:~Pair.getFirst():java.lang.Object" resolve="getFirst" />
+                <ref role="37wK5l" to="vm3f:~Pair.getFirst():java.lang.Object" resolve="getFirst" />
               </node>
             </node>
           </node>
@@ -2522,7 +2650,7 @@
                 <ref role="3cqZAo" node="5kIX9cj0dpS" resolve="p" />
               </node>
               <node concept="liA8E" id="5kIX9cj0hxA" role="2OqNvi">
-                <ref role="37wK5l" to="udbz:~Pair.getSecond():java.lang.Object" resolve="getSecond" />
+                <ref role="37wK5l" to="vm3f:~Pair.getSecond():java.lang.Object" resolve="getSecond" />
               </node>
             </node>
           </node>
@@ -2679,8 +2807,8 @@
         </node>
         <node concept="3cpWs6" id="5kIX9cj0dqR" role="3cqZAp">
           <node concept="2YIFZM" id="5kIX9cj0hy4" role="3cqZAk">
-            <ref role="1Pybhc" to="udbz:~Pair" resolve="Pair" />
-            <ref role="37wK5l" to="udbz:~Pair.of(java.lang.Object,java.lang.Object):org.sosy_lab.common.Pair" resolve="of" />
+            <ref role="37wK5l" to="vm3f:~Pair.of(java.lang.Object,java.lang.Object):org.sosy_lab.cpachecker.util.Pair" resolve="of" />
+            <ref role="1Pybhc" to="vm3f:~Pair" resolve="Pair" />
             <node concept="37vLTw" id="5kIX9cj0dqT" role="37wK5m">
               <ref role="3cqZAo" node="5kIX9cj0dpO" resolve="config" />
             </node>
@@ -2692,7 +2820,7 @@
       </node>
       <node concept="3Tm6S6" id="5kIX9cj0dqV" role="1B3o_S" />
       <node concept="3uibUv" id="5kIX9cj0dqW" role="3clF45">
-        <ref role="3uigEE" to="udbz:~Pair" resolve="Pair" />
+        <ref role="3uigEE" to="vm3f:~Pair" resolve="Pair" />
         <node concept="3uibUv" id="5kIX9cj0dqX" role="11_B2D">
           <ref role="3uigEE" to="kcav:~Configuration" resolve="Configuration" />
         </node>
@@ -2864,8 +2992,8 @@
         </node>
         <node concept="3cpWs6" id="5kIX9cj0drD" role="3cqZAp">
           <node concept="2YIFZM" id="5kIX9cj0hyo" role="3cqZAk">
-            <ref role="1Pybhc" to="udbz:~Pair" resolve="Pair" />
-            <ref role="37wK5l" to="udbz:~Pair.of(java.lang.Object,java.lang.Object):org.sosy_lab.common.Pair" resolve="of" />
+            <ref role="37wK5l" to="vm3f:~Pair.of(java.lang.Object,java.lang.Object):org.sosy_lab.cpachecker.util.Pair" resolve="of" />
+            <ref role="1Pybhc" to="vm3f:~Pair" resolve="Pair" />
             <node concept="37vLTw" id="5kIX9cj0drF" role="37wK5m">
               <ref role="3cqZAo" node="5kIX9cj0drk" resolve="config" />
             </node>
@@ -2877,7 +3005,7 @@
       </node>
       <node concept="3Tm1VV" id="8sjE2YFUV0" role="1B3o_S" />
       <node concept="3uibUv" id="5kIX9cj0drI" role="3clF45">
-        <ref role="3uigEE" to="udbz:~Pair" resolve="Pair" />
+        <ref role="3uigEE" to="vm3f:~Pair" resolve="Pair" />
         <node concept="3uibUv" id="5kIX9cj0drJ" role="11_B2D">
           <ref role="3uigEE" to="kcav:~Configuration" resolve="Configuration" />
         </node>

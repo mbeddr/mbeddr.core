@@ -5,12 +5,13 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/cpachecker.jar" />
+      <sourceRoot location="lib/lib/java/runtime/com.microsoft.z3.jar" />
       <sourceRoot location="lib/lib/java/runtime/common.jar" />
       <sourceRoot location="lib/lib/java/runtime/guava.jar" />
       <sourceRoot location="lib/lib/java/runtime/icu4j.jar" />
       <sourceRoot location="lib/lib/java/runtime/java-cup-runtime.jar" />
       <sourceRoot location="lib/lib/java/runtime/javabdd.jar" />
+      <sourceRoot location="lib/lib/java/runtime/javasmt.jar" />
       <sourceRoot location="lib/lib/java/runtime/org.eclipse.cdt.core.jar" />
       <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.contenttype.jar" />
       <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.jobs.jar" />
@@ -25,6 +26,12 @@
       <sourceRoot location="lib/lib/java/runtime/scala-library.jar" />
       <sourceRoot location="lib/lib/java/runtime/smt-parser.jar" />
       <sourceRoot location="lib/lib/java/runtime/smtinterpol-comp.jar" />
+      <sourceRoot location="lib/lib/apron.jar" />
+      <sourceRoot location="lib/lib/gmp.jar" />
+      <sourceRoot location="lib/lib/edu.cmu.sei.rtss.jldd.jar" />
+      <sourceRoot location="lib/lib/jpl.jar" />
+      <sourceRoot location="lib/lib/jsylvan.jar" />
+      <sourceRoot location="lib/cpachecker.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -48,6 +55,7 @@
     <stubModelEntry path="${module}/lib/lib/java/runtime/scala-library.jar" />
     <stubModelEntry path="${module}/lib/lib/java/runtime/smt-parser.jar" />
     <stubModelEntry path="${module}/lib/lib/java/runtime/smtinterpol-comp.jar" />
+    <stubModelEntry path="${module}/lib/lib/java/runtime/javasmt.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
