@@ -14,6 +14,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="91fu" ref="r:8d20232d-87e2-425b-b4d7-a9790e401b85(de.slisson.mps.conditionalEditor.structure)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
+    <import index="w0gx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure.modules(MPS.Core/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -276,11 +277,16 @@
               <node concept="3fqX7Q" id="3VzM1alZaHp" role="3uHU7w">
                 <node concept="2OqwBi" id="3VzM1alZaHr" role="3fr31v">
                   <node concept="2OqwBi" id="3VzM1alZaHs" role="2Oq$k0">
-                    <node concept="37vLTw" id="3VzM1alZaHt" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3VzM1alZ6e3" resolve="editorLanguage" />
+                    <node concept="2OqwBi" id="3VzM1am0vXl" role="2Oq$k0">
+                      <node concept="37vLTw" id="3VzM1alZaHt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3VzM1alZ6e3" resolve="editorLanguage" />
+                      </node>
+                      <node concept="liA8E" id="3VzM1am0we2" role="2OqNvi">
+                        <ref role="37wK5l" to="w1kc:~Language.getModuleDescriptor():jetbrains.mps.project.structure.modules.LanguageDescriptor" resolve="getModuleDescriptor" />
+                      </node>
                     </node>
                     <node concept="liA8E" id="3VzM1alZaHu" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~Language.getExtendedLanguageRefs():java.util.Set" resolve="getExtendedLanguageRefs" />
+                      <ref role="37wK5l" to="w0gx:~LanguageDescriptor.getExtendedLanguages():java.util.Set" resolve="getExtendedLanguages" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3VzM1alZaHv" role="2OqNvi">
