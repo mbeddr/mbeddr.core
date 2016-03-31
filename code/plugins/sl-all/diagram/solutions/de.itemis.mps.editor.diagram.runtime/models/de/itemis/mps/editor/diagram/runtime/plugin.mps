@@ -79,6 +79,7 @@
         <child id="1562714432501166206" name="keystroke" index="Zd501" />
       </concept>
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
+        <property id="1562714432501166281" name="keymap" index="Zd52Q" />
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
       </concept>
       <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
@@ -203,6 +204,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -663,6 +667,7 @@
   </node>
   <node concept="Zd50a" id="5K7KC_qu7y_">
     <property role="TrG5h" value="DiagramKeymap" />
+    <property role="Zd52Q" value="$default" />
     <node concept="Zd509" id="5K7KC_qu7$D" role="Zd508">
       <ref role="1bYAoF" node="5K7KC_qu7$R" resolve="RotateBoxClockwiseAction" />
       <node concept="pLAjd" id="5K7KC_qu7$E" role="Zd501">
@@ -675,6 +680,20 @@
       <node concept="pLAjd" id="2THfnm7vNtD" role="Zd501">
         <property role="pLAjc" value="ctrl+shift" />
         <property role="pLAjf" value="VK_R" />
+      </node>
+    </node>
+    <node concept="Zd509" id="7tfNqqCmTL3" role="Zd508">
+      <ref role="1bYAoF" node="7tfNqqCmxXm" resolve="Diagram_ZoomOut" />
+      <node concept="pLAjd" id="7tfNqqCmTL5" role="Zd501">
+        <property role="pLAjc" value="alt+shift" />
+        <property role="pLAjf" value="VK_SUBTRACT" />
+      </node>
+    </node>
+    <node concept="Zd509" id="7tfNqqCmTK$" role="Zd508">
+      <ref role="1bYAoF" node="5q$QTTw90T$" resolve="Diagram_ZoomIn" />
+      <node concept="pLAjd" id="7tfNqqCmTKA" role="Zd501">
+        <property role="pLAjc" value="alt+shift" />
+        <property role="pLAjf" value="VK_ADD" />
       </node>
     </node>
     <node concept="Zd509" id="2THfnm7nqS7" role="Zd508">
@@ -1440,6 +1459,128 @@
       <node concept="3cqZAl" id="5IQEFjDGWNd" role="3clF45" />
       <node concept="3Tm1VV" id="5IQEFjDGWNe" role="1B3o_S" />
     </node>
+    <node concept="2YIFZL" id="5q$QTTw9CPn" role="jymVt">
+      <property role="TrG5h" value="zoomIn" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5q$QTTw9CPq" role="3clF47">
+        <node concept="3cpWs8" id="7tfNqqCmuof" role="3cqZAp">
+          <node concept="3cpWsn" id="7tfNqqCmuog" role="3cpWs9">
+            <property role="TrG5h" value="activeDiagram" />
+            <node concept="3uibUv" id="7tfNqqCmuod" role="1tU5fm">
+              <ref role="3uigEE" to="r3rm:5S8_I2FY6vo" resolve="BaseDiagramECell" />
+            </node>
+            <node concept="1rXfSq" id="7tfNqqCmuoh" role="33vP2m">
+              <ref role="37wK5l" node="5IQEFjDH1lq" resolve="getActiveDiagram" />
+              <node concept="37vLTw" id="7tfNqqCmuoi" role="37wK5m">
+                <ref role="3cqZAo" node="5q$QTTw9EVk" resolve="ec" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7tfNqqCmutZ" role="3cqZAp">
+          <node concept="3clFbS" id="7tfNqqCmuu1" role="3clFbx">
+            <node concept="3cpWs6" id="7tfNqqCmuCn" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="7tfNqqCmu$8" role="3clFbw">
+            <node concept="10Nm6u" id="7tfNqqCmu$D" role="3uHU7w" />
+            <node concept="37vLTw" id="7tfNqqCmuv5" role="3uHU7B">
+              <ref role="3cqZAo" node="7tfNqqCmuog" resolve="activeDiagram" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7tfNqqCmuK2" role="3cqZAp">
+          <node concept="2OqwBi" id="7tfNqqCmwoO" role="3clFbG">
+            <node concept="2OqwBi" id="7tfNqqCmvrJ" role="2Oq$k0">
+              <node concept="2OqwBi" id="7tfNqqCmuOH" role="2Oq$k0">
+                <node concept="37vLTw" id="7tfNqqCmuK0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7tfNqqCmuog" resolve="activeDiagram" />
+                </node>
+                <node concept="liA8E" id="7tfNqqCmvqg" role="2OqNvi">
+                  <ref role="37wK5l" to="r3rm:4HMzb$XPdI$" resolve="getContextGraph" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7tfNqqCmwkZ" role="2OqNvi">
+                <ref role="37wK5l" to="r3rm:eyrvBdlDbJ" resolve="getGraphComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7tfNqqCmxjz" role="2OqNvi">
+              <ref role="37wK5l" to="r3rm:qYnRr5bRGo" resolve="zoomIn" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5q$QTTw9Cz0" role="1B3o_S" />
+      <node concept="3cqZAl" id="5q$QTTw9CPe" role="3clF45" />
+      <node concept="37vLTG" id="5q$QTTw9EVk" role="3clF46">
+        <property role="TrG5h" value="ec" />
+        <node concept="3uibUv" id="5q$QTTw9EVj" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="7tfNqqCmxkl" role="jymVt">
+      <property role="TrG5h" value="zoomOut" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7tfNqqCmxkm" role="3clF47">
+        <node concept="3cpWs8" id="7tfNqqCmxkn" role="3cqZAp">
+          <node concept="3cpWsn" id="7tfNqqCmxko" role="3cpWs9">
+            <property role="TrG5h" value="activeDiagram" />
+            <node concept="3uibUv" id="7tfNqqCmxkp" role="1tU5fm">
+              <ref role="3uigEE" to="r3rm:5S8_I2FY6vo" resolve="BaseDiagramECell" />
+            </node>
+            <node concept="1rXfSq" id="7tfNqqCmxkq" role="33vP2m">
+              <ref role="37wK5l" node="5IQEFjDH1lq" resolve="getActiveDiagram" />
+              <node concept="37vLTw" id="7tfNqqCmxkr" role="37wK5m">
+                <ref role="3cqZAo" node="7tfNqqCmxkG" resolve="ec" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7tfNqqCmxks" role="3cqZAp">
+          <node concept="3clFbS" id="7tfNqqCmxkt" role="3clFbx">
+            <node concept="3cpWs6" id="7tfNqqCmxku" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="7tfNqqCmxkv" role="3clFbw">
+            <node concept="10Nm6u" id="7tfNqqCmxkw" role="3uHU7w" />
+            <node concept="37vLTw" id="7tfNqqCmxkx" role="3uHU7B">
+              <ref role="3cqZAo" node="7tfNqqCmxko" resolve="activeDiagram" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7tfNqqCmxky" role="3cqZAp">
+          <node concept="2OqwBi" id="7tfNqqCmxkz" role="3clFbG">
+            <node concept="2OqwBi" id="7tfNqqCmxk$" role="2Oq$k0">
+              <node concept="2OqwBi" id="7tfNqqCmxk_" role="2Oq$k0">
+                <node concept="37vLTw" id="7tfNqqCmxkA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7tfNqqCmxko" resolve="activeDiagram" />
+                </node>
+                <node concept="liA8E" id="7tfNqqCmxkB" role="2OqNvi">
+                  <ref role="37wK5l" to="r3rm:4HMzb$XPdI$" resolve="getContextGraph" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7tfNqqCmxkC" role="2OqNvi">
+                <ref role="37wK5l" to="r3rm:eyrvBdlDbJ" resolve="getGraphComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7tfNqqCmxkD" role="2OqNvi">
+              <ref role="37wK5l" to="r3rm:qYnRr5bYic" resolve="zoomOut" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7tfNqqCmxkE" role="1B3o_S" />
+      <node concept="3cqZAl" id="7tfNqqCmxkF" role="3clF45" />
+      <node concept="37vLTG" id="7tfNqqCmxkG" role="3clF46">
+        <property role="TrG5h" value="ec" />
+        <node concept="3uibUv" id="7tfNqqCmxkH" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5IQEFjDGZIO" role="jymVt" />
     <node concept="2YIFZL" id="5IQEFjDH1lq" role="jymVt">
       <property role="TrG5h" value="getActiveDiagram" />
@@ -1599,6 +1740,56 @@
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="5IQEFjDH2T3" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="5q$QTTw90T$">
+    <property role="TrG5h" value="Diagram_ZoomIn" />
+    <property role="2uzpH1" value="Diagram: Zoom In" />
+    <node concept="1DS2jV" id="5q$QTTw90UX" role="1NuT2Z">
+      <property role="TrG5h" value="editorContext" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="5q$QTTw90UY" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="5q$QTTw90T_" role="tncku">
+      <node concept="3clFbS" id="5q$QTTw90TA" role="2VODD2">
+        <node concept="3clFbF" id="5q$QTTw9_4z" role="3cqZAp">
+          <node concept="2YIFZM" id="7tfNqqCmxPh" role="3clFbG">
+            <ref role="37wK5l" node="5q$QTTw9CPn" resolve="zoomIn" />
+            <ref role="1Pybhc" node="5IQEFjDGWsk" resolve="DiagramIdeaActionsUtil" />
+            <node concept="2OqwBi" id="7tfNqqCmxWE" role="37wK5m">
+              <node concept="2WthIp" id="7tfNqqCmxWH" role="2Oq$k0" />
+              <node concept="1DTwFV" id="7tfNqqCmxWJ" role="2OqNvi">
+                <ref role="2WH_rO" node="5q$QTTw90UX" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="7tfNqqCmxXm">
+    <property role="TrG5h" value="Diagram_ZoomOut" />
+    <property role="2uzpH1" value="Diagram: Zoom Out" />
+    <node concept="1DS2jV" id="7tfNqqCmxXL" role="1NuT2Z">
+      <property role="TrG5h" value="editorContext" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="7tfNqqCmxXM" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="7tfNqqCmxXn" role="tncku">
+      <node concept="3clFbS" id="7tfNqqCmxXo" role="2VODD2">
+        <node concept="3clFbF" id="7tfNqqCmT_Q" role="3cqZAp">
+          <node concept="2YIFZM" id="7tfNqqCmTAy" role="3clFbG">
+            <ref role="37wK5l" node="7tfNqqCmxkl" resolve="zoomOut" />
+            <ref role="1Pybhc" node="5IQEFjDGWsk" resolve="DiagramIdeaActionsUtil" />
+            <node concept="2OqwBi" id="7tfNqqCmTB3" role="37wK5m">
+              <node concept="2WthIp" id="7tfNqqCmTB6" role="2Oq$k0" />
+              <node concept="1DTwFV" id="7tfNqqCmTB8" role="2OqNvi">
+                <ref role="2WH_rO" node="7tfNqqCmxXL" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

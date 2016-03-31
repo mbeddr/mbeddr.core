@@ -1,0 +1,100 @@
+String mpsMajor = "3.3"
+String mpsMinor = "1"
+String mpsBuild = mpsMajor + "." + mpsMinor
+String mbeddrMajor = "0.9"
+String mbeddrMinor = "1"
+String mbeddrBuild = mbeddrMajor + "." + mbeddrMinor
+String mbeddrMpsDir = "MPS-mbeddr"
+apply plugin: 'java'
+apply plugin: 'ivy-publish'
+ant.property(name: 'mbeddr.github.core.home', location: projectDir)
+ant.property(name: 'mps.home', location: "$projectDir" + "/MPS/"+mbeddrMpsDir+"/" )
+ant.property(name: 'build.Dir', location: projectDir )
+String CleanGeneratedCode_Task = "cleanSources"
+String CleanPlugins_Task = "clean" 
+String GenerateCode_Task = "generate"
+String BuildPlugin_Task = "assemble"
+String RunTests_Task = "check"
+String mbeddrScripts_basePath = ant.properties['mbeddr.github.core.home'] + "/build"
+String allScripts_buildFileLocation = mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts"
+configurations {
+    mps {
+        description = 'compile mps'
+    }
+}
+task doTestRetrieve(type: Copy) {
+    from configurations.mps
+    into "myDependencies"
+    eachFile {
+        from zipTree(it.getFile())
+        into file("./MPS")
+    }
+}
+task load_allScripts(dependsOn: doTestRetrieve) {
+    println("mps location: " + "$projectDir" + "/MPS/"+mbeddrMpsDir+"/")
+	ant.echo("path: "+allScripts_buildFileLocation + "/" + "build.xml")
+	ant.importBuild( allScripts_buildFileLocation + "/" + "build.xml") { antTargetName ->
+		'allScripts_' + antTargetName
+	}
+}
+
+task compileTask {
+    repositories {
+        ivy {
+            // change to point to your repo, e.g. http://my.org/repo
+            url "$buildDir/repo"
+        }
+    }
+
+    configurations.compile.each { File file -> println file.name }
+    ant.echo("compile123")
+}
+task build_allScripts(type: Zip
+        //, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]
+        ) {
+    from fileTree(dir: projectDir.absolutePath + "/build", include: '**/*.xml')
+    from fileTree(dir: projectDir.absolutePath + "/code/plugins", include: '**/*.xml')
+}
+
+
+dependencies {
+    mps 'com.jetbrains:mps:3.3.1'
+}
+
+task download << {
+    String mpsBaseUrl = "http://download.jetbrains.com/mps/33/"
+    ant.mkdir(dir: "./MPS/")
+    ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: "./MPS/MPS-" + mpsBuild + ".zip")
+    ant.unzip(src: "./MPS/MPS-" + mpsBuild + ".zip", dest: "./MPS/")
+    ant.move(file: "./MPS/MPS " + mpsMajor, toFile: "./MPS/" + mbeddrMpsDir)
+}
+task mpsZip(type: Zip, dependsOn: download) {
+    from "./MPS/" + mbeddrMpsDir
+}
+
+publishing {
+    publications {
+        mps(IvyPublication) {
+            organisation 'com.jetbrains'
+            module 'mps'
+            revision mpsBuild
+            artifact(mpsZip) {
+
+            }
+        }
+        allScripts(IvyPublication) {
+            organisation 'com.mbeddr'
+            module 'allScripts'
+            revision mbeddrBuild
+            artifact(build_allScripts) {
+
+            }
+        }
+    }
+    repositories {
+        ivy {
+            // change to point to your repo, e.g. http://my.org/repo
+            url "$buildDir/repo"
+        }
+    }
+}

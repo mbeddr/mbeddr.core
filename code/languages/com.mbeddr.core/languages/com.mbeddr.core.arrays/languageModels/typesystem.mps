@@ -265,6 +265,7 @@
       <concept id="8124453027370845339" name="jetbrains.mps.lang.typesystem.structure.AbstractOverloadedOpsTypeRule" flags="ng" index="32tDTw">
         <child id="8124453027370845343" name="function" index="32tDT$" />
         <child id="8124453027370845341" name="operationConcept" index="32tDTA" />
+        <child id="6136676636349909553" name="isApplicable" index="1QeD3i" />
       </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
@@ -293,6 +294,11 @@
         <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+      <concept id="6136676636349908958" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpIsApplicableFunction" flags="in" index="1QeDOX" />
+      <concept id="1178870617262" name="jetbrains.mps.lang.typesystem.structure.CoerceExpression" flags="nn" index="1UaxmW">
+        <child id="1178870894644" name="pattern" index="1Ub_4A" />
+        <child id="1178870894645" name="nodeToCoerce" index="1Ub_4B" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -5215,6 +5221,34 @@
             <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" />
             <node concept="2pJPED" id="1qe$v7jHHNm" role="2pJxcZ">
               <ref role="2pJxaS" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QeDOX" id="CNkpdzSb_F" role="1QeD3i">
+        <node concept="3clFbS" id="CNkpdzSb_G" role="2VODD2">
+          <node concept="3clFbF" id="CNkpdzSc3n" role="3cqZAp">
+            <node concept="22lmx$" id="CNkpdzSchy" role="3clFbG">
+              <node concept="3clFbC" id="CNkpdzScx7" role="3uHU7w">
+                <node concept="10Nm6u" id="CNkpdzScxt" role="3uHU7w" />
+                <node concept="1UaxmW" id="CNkpdzScjB" role="3uHU7B">
+                  <node concept="3cjoZ5" id="CNkpdzSclo" role="1Ub_4B" />
+                  <node concept="1YaCAy" id="CNkpdzScn4" role="1Ub_4A">
+                    <property role="TrG5h" value="right" />
+                    <ref role="1YaFvo" to="yq40:CNkpdzSb_B" resolve="SpecialArrayTypeMarker" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="CNkpdzSceM" role="3uHU7B">
+                <node concept="1UaxmW" id="CNkpdzSc3k" role="3uHU7B">
+                  <node concept="3cjfiJ" id="CNkpdzSc4B" role="1Ub_4B" />
+                  <node concept="1YaCAy" id="CNkpdzSc5O" role="1Ub_4A">
+                    <property role="TrG5h" value="left" />
+                    <ref role="1YaFvo" to="yq40:CNkpdzSb_B" resolve="SpecialArrayTypeMarker" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="CNkpdzScgu" role="3uHU7w" />
+              </node>
             </node>
           </node>
         </node>

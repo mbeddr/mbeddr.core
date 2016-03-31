@@ -53,9 +53,7 @@
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" fqName="jetbrains.mps.lang.test" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
-    <language id="01cd75cf-892b-47a7-b594-744f9e06e5e4" fqName="mbeddr.tutorial.complex" version="0" />
-    <language id="7fc59e55-0f30-4694-b8e3-d334e472c924" fqName="mbeddr.tutorial.metadata" version="0" />
-    <language id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" fqName="mbeddr.tutorial.vectors" version="0" />
+    <language id="d00351b1-72a6-4072-aea2-5982add6bee4" fqName="mbeddr.tutorial.shonan" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09(mbeddr.tutorial.typesystemtests)" version="0" />

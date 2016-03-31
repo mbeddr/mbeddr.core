@@ -607,7 +607,14 @@
       <ref role="PMmxG" node="5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
     <node concept="1WcQYu" id="D5oLwMtua0" role="2wV5jI">
-      <node concept="2ElW$n" id="D5oLwMtuay" role="2El2Yn" />
+      <node concept="2ElW$n" id="D5oLwMtuay" role="2El2Yn">
+        <node concept="2OqwBi" id="3KxLR7$20P7" role="2EmURo">
+          <node concept="2EmZKS" id="3KxLR7$20Kh" role="2Oq$k0" />
+          <node concept="2qgKlT" id="3KxLR7$2123" role="2OqNvi">
+            <ref role="37wK5l" to="ywuz:5HxjapwgqKu" resolve="getPriolevel" />
+          </node>
+        </node>
+      </node>
       <node concept="3EZMnI" id="53_W9lll902" role="1LiK7o">
         <node concept="1kIj98" id="1Ia5rYltMfn" role="3EZMnx">
           <node concept="2lNzut" id="D5oLwMtubt" role="1kIj9b">
