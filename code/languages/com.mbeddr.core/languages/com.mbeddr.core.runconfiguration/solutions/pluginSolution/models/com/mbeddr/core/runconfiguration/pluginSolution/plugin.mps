@@ -80,6 +80,7 @@
     <import index="et5u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.messages(MPS.Core/)" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="3uhc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.generationTypes(MPS.Core/)" />
+    <import index="57ty" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.messages(MPS.Platform/)" />
     <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" implicit="true" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
@@ -12842,12 +12843,15 @@
               <node concept="3cpWs8" id="7kEiJU7uqXW" role="3cqZAp">
                 <node concept="3cpWsn" id="7kEiJU7uqXX" role="3cpWs9">
                   <property role="TrG5h" value="msgHandler" />
-                  <node concept="3uibUv" id="7kEiJU7uqXV" role="1tU5fm">
-                    <ref role="3uigEE" node="7LK0SI677r" resolve="MakeUtils.NullMessageHandler" />
+                  <node concept="3uibUv" id="5UUt2$ZcQ4" role="1tU5fm">
+                    <ref role="3uigEE" to="drpk:~DefaultMakeMessageHandler" resolve="DefaultMakeMessageHandler" />
                   </node>
                   <node concept="2ShNRf" id="7kEiJU7uqXY" role="33vP2m">
-                    <node concept="HV5vD" id="7kEiJU7uqXZ" role="2ShVmc">
-                      <ref role="HV5vE" node="7LK0SI677r" resolve="MakeUtils.NullMessageHandler" />
+                    <node concept="1pGfFk" id="5UUt2$Ygrv" role="2ShVmc">
+                      <ref role="37wK5l" to="drpk:~DefaultMakeMessageHandler.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="DefaultMakeMessageHandler" />
+                      <node concept="37vLTw" id="5UUt2$ZdCP" role="37wK5m">
+                        <ref role="3cqZAo" node="7uk5GW4LZcY" resolve="proj" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -13398,87 +13402,6 @@
       </node>
       <node concept="NWlO9" id="41thbhvrjr1" role="lGtFl">
         <property role="NWlVz" value="A future that makes and saves the transient models." />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7LK0SI62pT" role="jymVt" />
-    <node concept="312cEu" id="7LK0SI677r" role="jymVt">
-      <property role="2bfB8j" value="false" />
-      <property role="1sVAO0" value="false" />
-      <property role="1EXbeo" value="false" />
-      <property role="TrG5h" value="NullMessageHandler" />
-      <node concept="3Tm6S6" id="7LK0SI65Jr" role="1B3o_S" />
-      <node concept="3uibUv" id="7LK0SI68zf" role="EKbjA">
-        <ref role="3uigEE" to="et5u:~IMessageHandler" resolve="IMessageHandler" />
-      </node>
-      <node concept="2tJIrI" id="7kEiJU7Bno$" role="jymVt" />
-      <node concept="3clFb_" id="7LK0SI69jl" role="jymVt">
-        <property role="1EzhhJ" value="false" />
-        <property role="TrG5h" value="handle" />
-        <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
-        <node concept="3Tm1VV" id="7LK0SI69jm" role="1B3o_S" />
-        <node concept="3cqZAl" id="7LK0SI69jo" role="3clF45" />
-        <node concept="37vLTG" id="7LK0SI69jp" role="3clF46">
-          <property role="TrG5h" value="message" />
-          <node concept="3uibUv" id="7LK0SI69jq" role="1tU5fm">
-            <ref role="3uigEE" to="et5u:~IMessage" resolve="IMessage" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="7LK0SI69jr" role="3clF47">
-          <node concept="3clFbJ" id="7Z4mKjkuM$S" role="3cqZAp">
-            <node concept="3clFbS" id="7Z4mKjkuM$V" role="3clFbx">
-              <node concept="3clFbF" id="7Z4mKjksrry" role="3cqZAp">
-                <node concept="2OqwBi" id="7Z4mKjksrru" role="3clFbG">
-                  <node concept="10M0yZ" id="7Z4mKjksrrv" role="2Oq$k0">
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  </node>
-                  <node concept="liA8E" id="7Z4mKjksrrw" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="7Z4mKjksrI2" role="37wK5m">
-                      <node concept="2OqwBi" id="7Z4mKjksrO9" role="3uHU7w">
-                        <node concept="37vLTw" id="7Z4mKjksrKs" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7LK0SI69jp" resolve="message" />
-                        </node>
-                        <node concept="liA8E" id="7Z4mKjkss2f" role="2OqNvi">
-                          <ref role="37wK5l" to="et5u:~IMessage.getText():java.lang.String" resolve="getText" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="7Z4mKjksrrx" role="3uHU7B">
-                        <property role="Xl_RC" value="MakeUtils ---- " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="77nuVWJ3Z39" role="3clFbw">
-              <ref role="3cqZAo" node="7Z4mKjkuL6D" resolve="DEBUG" />
-            </node>
-          </node>
-        </node>
-        <node concept="NWlO9" id="7kEiJU7BMH5" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
-        </node>
-      </node>
-      <node concept="2tJIrI" id="7kEiJU7BnbI" role="jymVt" />
-      <node concept="3clFb_" id="7LK0SI69js" role="jymVt">
-        <property role="1EzhhJ" value="false" />
-        <property role="TrG5h" value="clear" />
-        <property role="DiZV1" value="false" />
-        <property role="IEkAT" value="false" />
-        <node concept="3Tm1VV" id="7LK0SI69jt" role="1B3o_S" />
-        <node concept="3cqZAl" id="7LK0SI69jv" role="3clF45" />
-        <node concept="3clFbS" id="7LK0SI69jw" role="3clF47">
-          <node concept="3SKdUt" id="7LK0SI69oO" role="3cqZAp">
-            <node concept="3SKdUq" id="7LK0SI69oS" role="3SKWNk">
-              <property role="3SKdUp" value="do nothing" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="NWlO9" id="41thbhvpiGZ" role="lGtFl">
-        <property role="NWlVz" value="A message handler with empty implementation." />
       </node>
     </node>
     <node concept="2tJIrI" id="68pU13V11QB" role="jymVt" />
