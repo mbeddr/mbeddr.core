@@ -10,7 +10,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -2301,7 +2301,7 @@
     </node>
     <node concept="1YaCAy" id="4Sxr3A_YBqX" role="1YuTPh">
       <property role="TrG5h" value="implies_old" />
-      <ref role="1YaFvo" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+      <ref role="1YaFvo" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
     </node>
   </node>
   <node concept="Q5z_Y" id="4Sxr3A_YCFS">
@@ -2313,10 +2313,10 @@
           <node concept="3cpWsn" id="4Sxr3A_YCLV" role="3cpWs9">
             <property role="TrG5h" value="imp" />
             <node concept="3Tqbb2" id="4Sxr3A_YCLS" role="1tU5fm">
-              <ref role="ehGHo" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+              <ref role="ehGHo" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
             </node>
             <node concept="1PxgMI" id="4Sxr3A_YCLW" role="33vP2m">
-              <ref role="1PxNhF" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+              <ref role="1PxNhF" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
               <node concept="Q6c8r" id="4Sxr3A_YCLX" role="1PxMeX" />
             </node>
           </node>
