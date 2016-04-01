@@ -7649,6 +7649,11 @@
             <ref role="1Busuk" node="4i9pOwKZnaa" resolve="com.mbeddr.ext.math" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7vJswut6r5x" role="3bR37C">
+          <node concept="1Busua" id="7vJswut6r5y" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4gFRqcy1Vdg" role="2G$12L">
         <property role="BnDLt" value="true" />
