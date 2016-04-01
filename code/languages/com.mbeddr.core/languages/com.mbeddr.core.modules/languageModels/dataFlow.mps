@@ -381,7 +381,7 @@
       </concept>
     </language>
     <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
-      <concept id="9101047003798444974" name="com.mbeddr.core.dataflow.structure.ContextSensitiveAttribute" flags="ng" index="2JLR6D" />
+      <concept id="9101047003798444974" name="com.mbeddr.core.dataflow.structure.InterProceduralProgramAttribute" flags="ng" index="2JLR6D" />
       <concept id="673470630035214411" name="com.mbeddr.core.dataflow.structure.EmitInlineStatement" flags="ng" index="1cGfmN">
         <child id="673470630035224866" name="point" index="1cGdNq" />
         <child id="673470630035214744" name="target" index="1cGfhw" />
@@ -2339,7 +2339,7 @@
                 <node concept="3eNFk2" id="3FaSoOiXb$n" role="3eNLev">
                   <node concept="2ZW3vV" id="3FaSoOiXdf_" role="3eO9$A">
                     <node concept="3uibUv" id="3FaSoOiXdCi" role="2ZW6by">
-                      <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                      <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="InterProcAwareUnmapInstruction" />
                     </node>
                     <node concept="37vLTw" id="3FaSoOiXc1X" role="2ZW6bz">
                       <ref role="3cqZAo" node="5kXaxjH08$N" resolve="instruction" />
@@ -2355,7 +2355,7 @@
                             <node concept="1eOMI4" id="3FaSoOiXemY" role="2Oq$k0">
                               <node concept="10QFUN" id="3FaSoOiXemZ" role="1eOMHV">
                                 <node concept="3uibUv" id="3FaSoOiXen0" role="10QFUM">
-                                  <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                                  <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="InterProcAwareUnmapInstruction" />
                                 </node>
                                 <node concept="37vLTw" id="3FaSoOiXen1" role="10QFUP">
                                   <ref role="3cqZAo" node="5kXaxjH08$N" resolve="instruction" />
@@ -3585,7 +3585,7 @@
           <node concept="3eNFk2" id="3FaSoOiX4Gz" role="3eNLev">
             <node concept="2ZW3vV" id="3FaSoOiX5wZ" role="3eO9$A">
               <node concept="3uibUv" id="3FaSoOiX5Gc" role="2ZW6by">
-                <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="InterProcAwareUnmapInstruction" />
               </node>
               <node concept="37vLTw" id="3FaSoOiX4TH" role="2ZW6bz">
                 <ref role="3cqZAo" node="7PgKJZveQ4W" resolve="instruction" />
@@ -3601,7 +3601,7 @@
                       <node concept="1eOMI4" id="3FaSoOiX6Mx" role="2Oq$k0">
                         <node concept="10QFUN" id="3FaSoOiX6My" role="1eOMHV">
                           <node concept="3uibUv" id="3FaSoOiX6Mz" role="10QFUM">
-                            <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="ContextAwareUnmapInstruction" />
+                            <ref role="3uigEE" to="f696:2cV6Bp1WBvB" resolve="InterProcAwareUnmapInstruction" />
                           </node>
                           <node concept="37vLTw" id="3FaSoOiX6M$" role="10QFUP">
                             <ref role="3cqZAo" node="7PgKJZveQ4W" resolve="instruction" />
@@ -3747,7 +3747,7 @@
         </node>
       </node>
     </node>
-    <node concept="2JLR6D" id="ELXCaNiUHF" role="lGtFl" />
+    <node concept="2JLR6D" id="4fUrRtGPJm2" role="lGtFl" />
   </node>
   <node concept="312cEu" id="7PgKJZvfe2t">
     <property role="3GE5qa" value="analyzers.pointer" />
@@ -4717,7 +4717,7 @@
                 <node concept="1eOMI4" id="5xyoMgvrLu4" role="2Oq$k0">
                   <node concept="10QFUN" id="5xyoMgvrLu1" role="1eOMHV">
                     <node concept="3uibUv" id="5xyoMgvrLu6" role="10QFUM">
-                      <ref role="3uigEE" to="f696:5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                      <ref role="3uigEE" to="f696:5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
                     </node>
                     <node concept="37vLTw" id="5xyoMgvrLu7" role="10QFUP">
                       <ref role="3cqZAo" node="5xyoMgvrKME" resolve="program" />
@@ -4732,7 +4732,7 @@
           </node>
           <node concept="2ZW3vV" id="5xyoMgvrKT$" role="3clFbw">
             <node concept="3uibUv" id="5xyoMgvrKUp" role="2ZW6by">
-              <ref role="3uigEE" to="f696:5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" to="f696:5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="5xyoMgvrKPW" role="2ZW6bz">
               <ref role="3cqZAo" node="5xyoMgvrKME" resolve="program" />

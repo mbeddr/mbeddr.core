@@ -22,7 +22,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="mu20" ref="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -116,9 +115,6 @@
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
-        <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -231,7 +227,6 @@
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -274,10 +269,6 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
-        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
-        <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
-      </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
@@ -311,6 +302,7 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="linkRole" index="3V$3am" />
@@ -572,123 +564,6 @@
       <ref role="3uigEE" node="5caPF5jN5CD" resolve="BaseInstruction" />
     </node>
   </node>
-  <node concept="312cEu" id="_oDvx5Vm_d">
-    <property role="TrG5h" value="ContextSensitiveDataFlowUtil" />
-    <property role="3GE5qa" value="core" />
-    <node concept="2tJIrI" id="_oDvx5Vm_H" role="jymVt" />
-    <node concept="2YIFZL" id="1NMTjOIZQUP" role="jymVt">
-      <property role="TrG5h" value="build" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="1NMTjOIZQUS" role="3clF47">
-        <node concept="3cpWs6" id="1EPwOZKjspb" role="3cqZAp">
-          <node concept="1rXfSq" id="1EPwOZKjsrZ" role="3cqZAk">
-            <ref role="37wK5l" node="1EPwOZKjoif" resolve="build" />
-            <node concept="37vLTw" id="1EPwOZKjstW" role="37wK5m">
-              <ref role="3cqZAo" node="1NMTjOIZR1B" resolve="node" />
-            </node>
-            <node concept="10Nm6u" id="1EPwOZKjszc" role="37wK5m" />
-            <node concept="10Nm6u" id="5YmQEj3ADPY" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="1NMTjOIZQKK" role="1B3o_S" />
-      <node concept="3uibUv" id="5caPF5jNji5" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
-      </node>
-      <node concept="37vLTG" id="1NMTjOIZR1B" role="3clF46">
-        <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="1NMTjOIZR1A" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3yfIX0JGlbP" role="jymVt" />
-    <node concept="2YIFZL" id="1EPwOZKjoif" role="jymVt">
-      <property role="TrG5h" value="build" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="1EPwOZKjoii" role="3clF47">
-        <node concept="3cpWs8" id="1EPwOZKjsbq" role="3cqZAp">
-          <node concept="3cpWsn" id="1EPwOZKjsbr" role="3cpWs9">
-            <property role="TrG5h" value="manager" />
-            <node concept="3uibUv" id="2Rrads05tb4" role="1tU5fm">
-              <ref role="3uigEE" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
-            </node>
-            <node concept="2YIFZM" id="2Rrads05tf2" role="33vP2m">
-              <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-              <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1EPwOZKjsbu" role="3cqZAp">
-          <node concept="3cpWsn" id="1EPwOZKjsbv" role="3cpWs9">
-            <property role="TrG5h" value="program" />
-            <node concept="3uibUv" id="1EPwOZKjsbw" role="1tU5fm">
-              <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
-            </node>
-            <node concept="2OqwBi" id="1EPwOZKjsbx" role="33vP2m">
-              <node concept="37vLTw" id="1EPwOZKjsby" role="2Oq$k0">
-                <ref role="3cqZAo" node="1EPwOZKjsbr" resolve="manager" />
-              </node>
-              <node concept="liA8E" id="1EPwOZKjsbz" role="2OqNvi">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.buildProgramFor(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.lang.dataFlow.MPSProgramBuilder):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgramFor" />
-                <node concept="37vLTw" id="1EPwOZKjsb$" role="37wK5m">
-                  <ref role="3cqZAo" node="1EPwOZKjoti" resolve="node" />
-                </node>
-                <node concept="2ShNRf" id="1EPwOZKjsb_" role="37wK5m">
-                  <node concept="1pGfFk" id="1EPwOZKjsbA" role="2ShVmc">
-                    <ref role="37wK5l" node="1EPwOZKjpjg" resolve="ContextSensitiveDataFlowBuilder" />
-                    <node concept="37vLTw" id="1EPwOZKjsbB" role="37wK5m">
-                      <ref role="3cqZAo" node="1EPwOZKjsbr" resolve="manager" />
-                    </node>
-                    <node concept="37vLTw" id="1EPwOZKjsja" role="37wK5m">
-                      <ref role="3cqZAo" node="1EPwOZKjotv" resolve="parent" />
-                    </node>
-                    <node concept="37vLTw" id="5YmQEj3AJJY" role="37wK5m">
-                      <ref role="3cqZAo" node="5YmQEj3A_Js" resolve="instruction" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="1EPwOZKjsbC" role="3cqZAp">
-          <node concept="10QFUN" id="1EPwOZKjsbD" role="3cqZAk">
-            <node concept="3uibUv" id="1EPwOZKjsbE" role="10QFUM">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
-            </node>
-            <node concept="37vLTw" id="1EPwOZKjsbF" role="10QFUP">
-              <ref role="3cqZAo" node="1EPwOZKjsbv" resolve="program" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="1EPwOZKjo2h" role="1B3o_S" />
-      <node concept="3uibUv" id="1EPwOZKjogu" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
-      </node>
-      <node concept="37vLTG" id="1EPwOZKjoti" role="3clF46">
-        <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="1EPwOZKjoth" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="1EPwOZKjotv" role="3clF46">
-        <property role="TrG5h" value="parent" />
-        <node concept="3uibUv" id="1EPwOZKjo$8" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="5YmQEj3A_Js" role="3clF46">
-        <property role="TrG5h" value="instruction" />
-        <node concept="3uibUv" id="5YmQEj3ADLN" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jN5j6" resolve="NestedProgramInstruction" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="_oDvx5Vm_Q" role="jymVt" />
-    <node concept="3Tm1VV" id="_oDvx5Vm_e" role="1B3o_S" />
-  </node>
   <node concept="tC5Ba" id="3ODAlcN4S1o">
     <property role="3GE5qa" value="action" />
     <property role="TrG5h" value="DataFlowGroup" />
@@ -713,7 +588,7 @@
           <node concept="3cpWsn" id="4KDfkUwM7E1" role="3cpWs9">
             <property role="TrG5h" value="program" />
             <node concept="3uibUv" id="9CADayMcAs" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
           </node>
         </node>
@@ -746,19 +621,25 @@
               <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
               <node concept="1bVj0M" id="1KUoCipvzh9" role="37wK5m">
                 <node concept="3clFbS" id="1KUoCipvzha" role="1bW5cS">
-                  <node concept="3clFbF" id="1KUoCipvzhb" role="3cqZAp">
-                    <node concept="37vLTI" id="1KUoCipvzhc" role="3clFbG">
-                      <node concept="2YIFZM" id="1NMTjOJ0fru" role="37vLTx">
-                        <ref role="37wK5l" node="1NMTjOIZQUP" resolve="build" />
-                        <ref role="1Pybhc" node="_oDvx5Vm_d" resolve="ContextSensitiveDataFlowUtil" />
-                        <node concept="2OqwBi" id="1NMTjOJ0fxw" role="37wK5m">
-                          <node concept="2WthIp" id="1NMTjOJ0fxz" role="2Oq$k0" />
-                          <node concept="3gHZIF" id="1NMTjOJ0fx_" role="2OqNvi">
-                            <ref role="2WH_rO" node="4KDfkUwM7El" resolve="node" />
+                  <node concept="3clFbF" id="4fUrRtGFZvW" role="3cqZAp">
+                    <node concept="37vLTI" id="4fUrRtGFZAL" role="3clFbG">
+                      <node concept="2OqwBi" id="4fUrRtGGjgM" role="37vLTx">
+                        <node concept="2ShNRf" id="4fUrRtGFZH2" role="2Oq$k0">
+                          <node concept="1pGfFk" id="4fUrRtGGj9_" role="2ShVmc">
+                            <ref role="37wK5l" node="1NMTjOJ0cqd" resolve="InterProceduralDataFlowGraphBuilder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="4fUrRtGGjss" role="2OqNvi">
+                          <ref role="37wK5l" node="3Q7jEGyjPDu" resolve="buildProgram" />
+                          <node concept="2OqwBi" id="4fUrRtGGjEh" role="37wK5m">
+                            <node concept="2WthIp" id="4fUrRtGGjzv" role="2Oq$k0" />
+                            <node concept="3gHZIF" id="4fUrRtGGjOv" role="2OqNvi">
+                              <ref role="2WH_rO" node="4KDfkUwM7El" resolve="node" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="37vLTw" id="3GM_nagTzXG" role="37vLTJ">
+                      <node concept="37vLTw" id="4fUrRtGFZvU" role="37vLTJ">
                         <ref role="3cqZAo" node="4KDfkUwM7E1" resolve="program" />
                       </node>
                     </node>
@@ -812,6 +693,7 @@
               </node>
             </node>
           </node>
+          <node concept="15s5l7" id="4fUrRtGGlbU" role="lGtFl" />
         </node>
         <node concept="3clFbF" id="1ekf28usAWb" role="3cqZAp">
           <node concept="2OqwBi" id="1ekf28usAWv" role="3clFbG">
@@ -855,23 +737,35 @@
     <property role="3GE5qa" value="action" />
   </node>
   <node concept="312cEu" id="1NMTjOJ0bjY">
-    <property role="TrG5h" value="ContextSensitiveDataFlowBuilder" />
+    <property role="TrG5h" value="InterProceduralDataFlowGraphBuilder" />
     <property role="3GE5qa" value="core" />
     <node concept="2tJIrI" id="1EPwOZKjpO0" role="jymVt" />
-    <node concept="3clFbW" id="1NMTjOJ0cqd" role="jymVt">
-      <node concept="37vLTG" id="1NMTjOJ0cr6" role="3clF46">
-        <property role="TrG5h" value="manager" />
-        <node concept="3uibUv" id="2Rrads05wVH" role="1tU5fm">
-          <ref role="3uigEE" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
-        </node>
+    <node concept="312cEg" id="4fUrRtGEQef" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="parent" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tmbuc" id="4fUrRtGEPFB" role="1B3o_S" />
+      <node concept="3uibUv" id="4fUrRtGEQed" role="1tU5fm">
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
+    </node>
+    <node concept="312cEg" id="4fUrRtGERKx" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="instruction" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tmbuc" id="4fUrRtGERaD" role="1B3o_S" />
+      <node concept="3uibUv" id="4fUrRtGERHi" role="1tU5fm">
+        <ref role="3uigEE" node="5caPF5jN5j6" resolve="NestedProgramInstruction" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4fUrRtGEPbx" role="jymVt" />
+    <node concept="3clFbW" id="1NMTjOJ0cqd" role="jymVt">
       <node concept="3cqZAl" id="1NMTjOJ0cqe" role="3clF45" />
       <node concept="3clFbS" id="1NMTjOJ0cqg" role="3clF47">
         <node concept="1VxSAg" id="1EPwOZKjqBy" role="3cqZAp">
-          <ref role="37wK5l" node="1EPwOZKjpjg" resolve="ContextSensitiveDataFlowBuilder" />
-          <node concept="37vLTw" id="1EPwOZKjqG2" role="37wK5m">
-            <ref role="3cqZAo" node="1NMTjOJ0cr6" resolve="manager" />
-          </node>
+          <ref role="37wK5l" node="1EPwOZKjpjg" resolve="InterProceduralDataFlowGraphBuilder" />
           <node concept="10Nm6u" id="1EPwOZKjqIk" role="37wK5m" />
           <node concept="10Nm6u" id="5YmQEj3AFTe" role="37wK5m" />
         </node>
@@ -880,18 +774,11 @@
     </node>
     <node concept="2tJIrI" id="1EPwOZKjoCz" role="jymVt" />
     <node concept="3clFbW" id="1EPwOZKjpjg" role="jymVt">
-      <node concept="37vLTG" id="1EPwOZKjpsU" role="3clF46">
-        <property role="TrG5h" value="manager" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="2Rrads05wF3" role="1tU5fm">
-          <ref role="3uigEE" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
-        </node>
-      </node>
       <node concept="37vLTG" id="1EPwOZKjpC7" role="3clF46">
         <property role="TrG5h" value="parent" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="1EPwOZKjpL7" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
         </node>
       </node>
       <node concept="37vLTG" id="5YmQEj3AGAL" role="3clF46">
@@ -904,129 +791,134 @@
       <node concept="3cqZAl" id="1EPwOZKjpjh" role="3clF45" />
       <node concept="3clFbS" id="1EPwOZKjpjj" role="3clF47">
         <node concept="XkiVB" id="1EPwOZKjqSw" role="3cqZAp">
-          <ref role="37wK5l" to="8ov6:~MPSProgramBuilder.&lt;init&gt;(jetbrains.mps.lang.dataFlow.DataFlowManager,jetbrains.mps.lang.dataFlow.framework.instructions.InstructionBuilder,jetbrains.mps.util.Function)" resolve="MPSProgramBuilder" />
-          <node concept="37vLTw" id="1EPwOZKjqWn" role="37wK5m">
-            <ref role="3cqZAo" node="1EPwOZKjpsU" resolve="manager" />
-          </node>
+          <ref role="37wK5l" to="8ov6:~MPSProgramBuilder.&lt;init&gt;(jetbrains.mps.lang.dataFlow.framework.instructions.InstructionBuilder)" resolve="MPSProgramBuilder" />
           <node concept="2ShNRf" id="1xH3gieeGuM" role="37wK5m">
             <node concept="HV5vD" id="1xH3gief0XY" role="2ShVmc">
-              <ref role="HV5vE" node="18PvkuOo0sQ" resolve="ContextSensitiveInstructionBuilder" />
+              <ref role="HV5vE" node="18PvkuOo0sQ" resolve="InterProcInstructionBuilder" />
             </node>
           </node>
-          <node concept="2ShNRf" id="421qvQg8dnp" role="37wK5m">
-            <node concept="YeOm9" id="421qvQg8CWy" role="2ShVmc">
-              <node concept="1Y3b0j" id="421qvQg8CW_" role="YeSDq">
-                <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" to="18ew:~Function" resolve="Function" />
-                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <node concept="3Tm1VV" id="421qvQg8CWA" role="1B3o_S" />
-                <node concept="3clFb_" id="421qvQg8CWB" role="jymVt">
-                  <property role="1EzhhJ" value="false" />
-                  <property role="TrG5h" value="fun" />
-                  <property role="DiZV1" value="false" />
-                  <property role="od$2w" value="false" />
-                  <node concept="3Tm1VV" id="421qvQg8CWC" role="1B3o_S" />
-                  <node concept="3uibUv" id="421qvQg8Di3" role="3clF45">
-                    <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
-                  </node>
-                  <node concept="37vLTG" id="421qvQg8CWF" role="3clF46">
-                    <property role="TrG5h" value="p" />
-                    <node concept="3uibUv" id="421qvQg8DdO" role="1tU5fm">
-                      <ref role="3uigEE" to="wyt6:~Void" resolve="Void" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="421qvQg8CWH" role="3clF47">
-                    <node concept="3cpWs8" id="421qvQg8Dij" role="3cqZAp">
-                      <node concept="3cpWsn" id="421qvQg8Dik" role="3cpWs9">
-                        <property role="TrG5h" value="program" />
-                        <node concept="3uibUv" id="421qvQg8Dil" role="1tU5fm">
-                          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
-                        </node>
-                        <node concept="2ShNRf" id="421qvQg8Dim" role="33vP2m">
-                          <node concept="1pGfFk" id="421qvQg8Din" role="2ShVmc">
-                            <ref role="37wK5l" node="3K8JqUjVJYb" resolve="ContextSensitiveProgram" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="421qvQg8Dio" role="3cqZAp">
-                      <node concept="3clFbS" id="421qvQg8Dip" role="3clFbx">
-                        <node concept="3clFbF" id="421qvQg8Diq" role="3cqZAp">
-                          <node concept="2OqwBi" id="421qvQg8Dir" role="3clFbG">
-                            <node concept="37vLTw" id="421qvQg8Dis" role="2Oq$k0">
-                              <ref role="3cqZAo" node="421qvQg8Dik" resolve="program" />
-                            </node>
-                            <node concept="liA8E" id="421qvQg8Dit" role="2OqNvi">
-                              <ref role="37wK5l" node="5caPF5jNiAS" resolve="setParent" />
-                              <node concept="37vLTw" id="421qvQg8Diu" role="37wK5m">
-                                <ref role="3cqZAo" node="1EPwOZKjpC7" resolve="parent" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3y3z36" id="421qvQg8Div" role="3clFbw">
-                        <node concept="10Nm6u" id="421qvQg8Diw" role="3uHU7w" />
-                        <node concept="37vLTw" id="421qvQg8Dix" role="3uHU7B">
-                          <ref role="3cqZAo" node="1EPwOZKjpC7" resolve="parent" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="421qvQg8Diy" role="3cqZAp">
-                      <node concept="3clFbS" id="421qvQg8Diz" role="3clFbx">
-                        <node concept="3clFbF" id="421qvQg8Di$" role="3cqZAp">
-                          <node concept="2OqwBi" id="421qvQg8Di_" role="3clFbG">
-                            <node concept="37vLTw" id="421qvQg8DiA" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5YmQEj3AGAL" resolve="instruction" />
-                            </node>
-                            <node concept="liA8E" id="421qvQg8DiB" role="2OqNvi">
-                              <ref role="37wK5l" node="183c22F76vX" resolve="setNestedProgram" />
-                              <node concept="37vLTw" id="421qvQg8DiC" role="37wK5m">
-                                <ref role="3cqZAo" node="421qvQg8Dik" resolve="program" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbF" id="421qvQg8DiD" role="3cqZAp">
-                          <node concept="2OqwBi" id="421qvQg8DiE" role="3clFbG">
-                            <node concept="37vLTw" id="421qvQg8DiF" role="2Oq$k0">
-                              <ref role="3cqZAo" node="421qvQg8Dik" resolve="program" />
-                            </node>
-                            <node concept="liA8E" id="421qvQg8DiG" role="2OqNvi">
-                              <ref role="37wK5l" node="3K8JqUjVxyz" resolve="setTriggeringInstruction" />
-                              <node concept="37vLTw" id="421qvQg8DiH" role="37wK5m">
-                                <ref role="3cqZAo" node="5YmQEj3AGAL" resolve="instruction" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3y3z36" id="421qvQg8DiI" role="3clFbw">
-                        <node concept="10Nm6u" id="421qvQg8DiJ" role="3uHU7w" />
-                        <node concept="37vLTw" id="421qvQg8DiK" role="3uHU7B">
-                          <ref role="3cqZAo" node="5YmQEj3AGAL" resolve="instruction" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs6" id="421qvQg8DiL" role="3cqZAp">
-                      <node concept="37vLTw" id="421qvQg8DiM" role="3cqZAk">
-                        <ref role="3cqZAo" node="421qvQg8Dik" resolve="program" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3uibUv" id="421qvQg8D42" role="2Ghqu4">
-                  <ref role="3uigEE" to="wyt6:~Void" resolve="Void" />
-                </node>
-                <node concept="3uibUv" id="421qvQg8D8P" role="2Ghqu4">
-                  <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
-                </node>
+        </node>
+        <node concept="3clFbF" id="4fUrRtGESKL" role="3cqZAp">
+          <node concept="37vLTI" id="4fUrRtGETpw" role="3clFbG">
+            <node concept="37vLTw" id="4fUrRtGETsO" role="37vLTx">
+              <ref role="3cqZAo" node="1EPwOZKjpC7" resolve="parent" />
+            </node>
+            <node concept="2OqwBi" id="4fUrRtGESMc" role="37vLTJ">
+              <node concept="Xjq3P" id="4fUrRtGESKJ" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4fUrRtGETfB" role="2OqNvi">
+                <ref role="2Oxat5" node="4fUrRtGEQef" resolve="parent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4fUrRtGETAi" role="3cqZAp">
+          <node concept="37vLTI" id="4fUrRtGETUZ" role="3clFbG">
+            <node concept="37vLTw" id="4fUrRtGEU0x" role="37vLTx">
+              <ref role="3cqZAo" node="5YmQEj3AGAL" resolve="instruction" />
+            </node>
+            <node concept="2OqwBi" id="4fUrRtGETC6" role="37vLTJ">
+              <node concept="Xjq3P" id="4fUrRtGETAg" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4fUrRtGETN4" role="2OqNvi">
+                <ref role="2Oxat5" node="4fUrRtGERKx" resolve="instruction" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="1EPwOZKjoWU" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="4fUrRtGENLK" role="jymVt" />
+    <node concept="3clFb_" id="4fUrRtGEOdg" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="createProgram" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tmbuc" id="4fUrRtGEOdh" role="1B3o_S" />
+      <node concept="3uibUv" id="4fUrRtGEOdj" role="3clF45">
+        <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+      </node>
+      <node concept="3clFbS" id="4fUrRtGEOdm" role="3clF47">
+        <node concept="3cpWs8" id="4fUrRtGESdi" role="3cqZAp">
+          <node concept="3cpWsn" id="4fUrRtGESdj" role="3cpWs9">
+            <property role="TrG5h" value="program" />
+            <node concept="3uibUv" id="4fUrRtGESdk" role="1tU5fm">
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+            </node>
+            <node concept="2ShNRf" id="4fUrRtGESdl" role="33vP2m">
+              <node concept="1pGfFk" id="4fUrRtGESdm" role="2ShVmc">
+                <ref role="37wK5l" node="3K8JqUjVJYb" resolve="InterProceduralDataFlowGraph" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4fUrRtGESdn" role="3cqZAp">
+          <node concept="3clFbS" id="4fUrRtGESdo" role="3clFbx">
+            <node concept="3clFbF" id="4fUrRtGESdp" role="3cqZAp">
+              <node concept="2OqwBi" id="4fUrRtGESdq" role="3clFbG">
+                <node concept="37vLTw" id="4fUrRtGESdr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4fUrRtGESdj" resolve="program" />
+                </node>
+                <node concept="liA8E" id="4fUrRtGESds" role="2OqNvi">
+                  <ref role="37wK5l" node="5caPF5jNiAS" resolve="setParent" />
+                  <node concept="37vLTw" id="4fUrRtGESdt" role="37wK5m">
+                    <ref role="3cqZAo" node="4fUrRtGEQef" resolve="parent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4fUrRtGESdu" role="3clFbw">
+            <node concept="10Nm6u" id="4fUrRtGESdv" role="3uHU7w" />
+            <node concept="37vLTw" id="4fUrRtGESdw" role="3uHU7B">
+              <ref role="3cqZAo" node="4fUrRtGEQef" resolve="parent" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4fUrRtGESdx" role="3cqZAp">
+          <node concept="3clFbS" id="4fUrRtGESdy" role="3clFbx">
+            <node concept="3clFbF" id="4fUrRtGESdz" role="3cqZAp">
+              <node concept="2OqwBi" id="4fUrRtGESd$" role="3clFbG">
+                <node concept="37vLTw" id="4fUrRtGESd_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4fUrRtGERKx" resolve="instruction" />
+                </node>
+                <node concept="liA8E" id="4fUrRtGESdA" role="2OqNvi">
+                  <ref role="37wK5l" node="183c22F76vX" resolve="setNestedProgram" />
+                  <node concept="37vLTw" id="4fUrRtGESdB" role="37wK5m">
+                    <ref role="3cqZAo" node="4fUrRtGESdj" resolve="program" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4fUrRtGESdC" role="3cqZAp">
+              <node concept="2OqwBi" id="4fUrRtGESdD" role="3clFbG">
+                <node concept="37vLTw" id="4fUrRtGESdE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4fUrRtGESdj" resolve="program" />
+                </node>
+                <node concept="liA8E" id="4fUrRtGESdF" role="2OqNvi">
+                  <ref role="37wK5l" node="3K8JqUjVxyz" resolve="setTriggeringInstruction" />
+                  <node concept="37vLTw" id="4fUrRtGESdG" role="37wK5m">
+                    <ref role="3cqZAo" node="4fUrRtGERKx" resolve="instruction" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4fUrRtGESdH" role="3clFbw">
+            <node concept="10Nm6u" id="4fUrRtGESdI" role="3uHU7w" />
+            <node concept="37vLTw" id="4fUrRtGESdJ" role="3uHU7B">
+              <ref role="3cqZAo" node="4fUrRtGERKx" resolve="instruction" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4fUrRtGESdK" role="3cqZAp">
+          <node concept="37vLTw" id="4fUrRtGESdL" role="3cqZAk">
+            <ref role="3cqZAo" node="4fUrRtGESdj" resolve="program" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4fUrRtGEOdn" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="6ZCwRRCJFPO" role="jymVt" />
     <node concept="3clFb_" id="3Q7jEGyjPDu" role="jymVt">
@@ -1035,8 +927,8 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="3Q7jEGyjPDv" role="1B3o_S" />
-      <node concept="3uibUv" id="3Q7jEGyjPDx" role="3clF45">
-        <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+      <node concept="3uibUv" id="4fUrRtGGk$2" role="3clF45">
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="37vLTG" id="3Q7jEGyjPDy" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -1131,7 +1023,7 @@
         <node concept="3cpWs6" id="5caPF5jMPmd" role="3cqZAp">
           <node concept="2ShNRf" id="5caPF5jMPol" role="3cqZAk">
             <node concept="1pGfFk" id="5caPF5jMV$G" role="2ShVmc">
-              <ref role="37wK5l" node="5caPF5jMOAi" resolve="ContextSensitiveDataFlowBuilderContext" />
+              <ref role="37wK5l" node="5caPF5jMOAi" resolve="InterProceduralDataFlowGraphBuilderContext" />
               <node concept="37vLTw" id="5caPF5jMVKP" role="37wK5m">
                 <ref role="3cqZAo" node="5caPF5jMOee" resolve="node" />
               </node>
@@ -1155,20 +1047,17 @@
         <node concept="3cpWs6" id="2Rrads05Tnn" role="3cqZAp">
           <node concept="10QFUN" id="3Q7jEGyjqyj" role="3cqZAk">
             <node concept="3uibUv" id="3Q7jEGyjqyk" role="10QFUM">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
-            <node concept="2OqwBi" id="3Q7jEGyjqyl" role="10QFUP">
-              <node concept="Xjq3P" id="3Q7jEGyjqym" role="2Oq$k0" />
-              <node concept="2OwXpG" id="3Q7jEGyjqyn" role="2OqNvi">
-                <ref role="2Oxat5" to="1fjm:~StructuralProgramBuilder.myProgram" resolve="myProgram" />
-              </node>
+            <node concept="3nyPlj" id="4fUrRtGFqdW" role="10QFUP">
+              <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.getProgram():jetbrains.mps.lang.dataFlow.framework.Program" resolve="getProgram" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="2Rrads05SPO" role="1B3o_S" />
       <node concept="3uibUv" id="2Rrads05T6H" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="2tJIrI" id="3Q7jEGyjskA" role="jymVt" />
@@ -1192,7 +1081,7 @@
       </node>
       <node concept="3Tm1VV" id="3Q7jEGyjt4O" role="1B3o_S" />
       <node concept="3uibUv" id="3Q7jEGyjtzr" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="2tJIrI" id="5YmQEj3AERc" role="jymVt" />
@@ -1308,7 +1197,7 @@
     </node>
   </node>
   <node concept="312cEu" id="5caPF5jMOpx">
-    <property role="TrG5h" value="ContextSensitiveDataFlowBuilderContext" />
+    <property role="TrG5h" value="InterProceduralDataFlowGraphBuilderContext" />
     <property role="3GE5qa" value="core" />
     <node concept="2tJIrI" id="5caPF5jMOqt" role="jymVt" />
     <node concept="3clFbW" id="5caPF5jMOAi" role="jymVt">
@@ -1353,7 +1242,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="5caPF5jNbHh" role="1B3o_S" />
       <node concept="3uibUv" id="5xyoMgvuAqn" role="1tU5fm">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="312cEg" id="3SShbyxo9we" role="jymVt">
@@ -1373,7 +1262,7 @@
       <node concept="37vLTG" id="5caPF5jNcrh" role="3clF46">
         <property role="TrG5h" value="current" />
         <node concept="3uibUv" id="5xyoMgvuAz2" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
         </node>
       </node>
       <node concept="3cqZAl" id="5caPF5jNa4n" role="3clF45" />
@@ -1491,7 +1380,7 @@
       <node concept="37vLTG" id="183c22F76HZ" role="3clF46">
         <property role="TrG5h" value="current" />
         <node concept="3uibUv" id="183c22F76HY" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
         </node>
       </node>
     </node>
@@ -1514,7 +1403,7 @@
       </node>
       <node concept="3Tm1VV" id="183c22F8m2t" role="1B3o_S" />
       <node concept="3uibUv" id="183c22F8mgD" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="2tJIrI" id="183c22F8lRw" role="jymVt" />
@@ -2158,7 +2047,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="nj3EPh5YjA" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3Tm1VV" id="nj3EPh5Yj_" role="1B3o_S" />
       <node concept="2AHcQZ" id="nj3EPh5Z7u" role="2AJF6D">
@@ -2187,7 +2076,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="nj3EPh5RAS" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3Tm1VV" id="nj3EPh5RAR" role="1B3o_S" />
       <node concept="2AHcQZ" id="nj3EPh5S2y" role="2AJF6D">
@@ -2218,7 +2107,7 @@
         <node concept="1gVbGN" id="nj3EPh5Nct" role="3cqZAp">
           <node concept="2ZW3vV" id="nj3EPh5Ncu" role="1gVkn0">
             <node concept="3uibUv" id="nj3EPh5Ncv" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="nj3EPh5Ncw" role="2ZW6bz">
               <ref role="3cqZAo" node="nj3EPh5Nco" resolve="program" />
@@ -2229,7 +2118,7 @@
           <node concept="1eOMI4" id="nj3EPh5Ncz" role="3cqZAk">
             <node concept="10QFUN" id="nj3EPh5Nc$" role="1eOMHV">
               <node concept="3uibUv" id="nj3EPh5Nc_" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="nj3EPh5NcA" role="10QFUP">
                 <ref role="3cqZAo" node="nj3EPh5Nco" resolve="program" />
@@ -2239,7 +2128,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="nj3EPh5NcE" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3Tm1VV" id="nj3EPh5NcD" role="1B3o_S" />
       <node concept="2AHcQZ" id="nj3EPh5Rj1" role="2AJF6D">
@@ -2396,7 +2285,7 @@
           <node concept="3cpWsn" id="5J1i2dmdMsp" role="3cpWs9">
             <property role="TrG5h" value="program" />
             <node concept="3uibUv" id="5J1i2dmdMsq" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="2OqwBi" id="5J1i2dmdMsr" role="33vP2m">
               <node concept="Xjq3P" id="5J1i2dmdMss" role="2Oq$k0" />
@@ -2730,7 +2619,7 @@
                 <node concept="1gVbGN" id="6nYeLze3V0_" role="3cqZAp">
                   <node concept="2ZW3vV" id="6nYeLze3V7A" role="1gVkn0">
                     <node concept="3uibUv" id="6nYeLze3Vez" role="2ZW6by">
-                      <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                      <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
                     </node>
                     <node concept="37vLTw" id="6nYeLze3V1E" role="2ZW6bz">
                       <ref role="3cqZAo" node="72rxHWNdIqO" resolve="program" />
@@ -2751,7 +2640,7 @@
                               <ref role="3cqZAo" node="72rxHWNdIqO" resolve="program" />
                             </node>
                             <node concept="3uibUv" id="6nYeLze3WGV" role="10QFUM">
-                              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
                             </node>
                           </node>
                         </node>
@@ -3041,11 +2930,11 @@
       <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
     </node>
     <node concept="3uibUv" id="nj3EPh5Qvm" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="5caPF5jNioP">
-    <property role="TrG5h" value="ContextSensitiveProgram" />
+    <property role="TrG5h" value="InterProceduralDataFlowGraph" />
     <property role="3GE5qa" value="core" />
     <node concept="2tJIrI" id="5caPF5jNipC" role="jymVt" />
     <node concept="312cEg" id="5caPF5jNviP" role="jymVt">
@@ -3105,9 +2994,17 @@
       <node concept="3Tmbuc" id="1HZs_ofAMXx" role="1B3o_S" />
       <node concept="3uibUv" id="1HZs_ofARkx" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-        <node concept="3Tqbb2" id="1HZs_ofCiIT" role="11_B2D" />
-        <node concept="3uibUv" id="1HZs_ofARVt" role="11_B2D">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <node concept="3uibUv" id="3DHs9S8tfQc" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+        <node concept="3uibUv" id="3DHs9S8qwPa" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+          <node concept="3uibUv" id="3DHs9S8q$ki" role="11_B2D">
+            <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+          </node>
+          <node concept="3uibUv" id="3DHs9S8qEup" role="11_B2D">
+            <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+          </node>
         </node>
       </node>
     </node>
@@ -3118,7 +3015,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="5caPF5jNisK" role="1B3o_S" />
       <node concept="3uibUv" id="5caPF5jNmPy" role="1tU5fm">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="312cEg" id="3K8JqUjVv3C" role="jymVt">
@@ -3129,16 +3026,6 @@
       <node concept="3Tmbuc" id="3K8JqUjVuaN" role="1B3o_S" />
       <node concept="3uibUv" id="3K8JqUjVv2t" role="1tU5fm">
         <ref role="3uigEE" node="5caPF5jN5j6" resolve="NestedProgramInstruction" />
-      </node>
-    </node>
-    <node concept="312cEg" id="3SShbyxopCo" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="programPath" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tmbuc" id="3SShbyxolVa" role="1B3o_S" />
-      <node concept="3uibUv" id="3SShbyxoptR" role="1tU5fm">
-        <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
       </node>
     </node>
     <node concept="312cEg" id="3SShbyxp7Iu" role="jymVt">
@@ -3186,6 +3073,16 @@
       </node>
     </node>
     <node concept="2tJIrI" id="ELXCaNgcr$" role="jymVt" />
+    <node concept="312cEg" id="3SShbyxopCo" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="programPath" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3DHs9S8tFCV" role="1B3o_S" />
+      <node concept="3uibUv" id="3SShbyxoptR" role="1tU5fm">
+        <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+      </node>
+    </node>
     <node concept="312cEg" id="ELXCaNghjR" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -3310,25 +3207,60 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1HZs_of_CMj" role="3cqZAp">
-          <node concept="37vLTI" id="1HZs_of_Dc2" role="3clFbG">
-            <node concept="2OqwBi" id="1HZs_of_CXa" role="37vLTJ">
-              <node concept="Xjq3P" id="1HZs_of_CMh" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1HZs_of_D17" role="2OqNvi">
-                <ref role="2Oxat5" node="3SShbyxopCo" resolve="programPath" />
-              </node>
-            </node>
-            <node concept="2YIFZM" id="1HZs_of_N57" role="37vLTx">
-              <ref role="37wK5l" node="3SShbyxnJKS" resolve="from" />
-              <ref role="1Pybhc" node="3SShbyxnJev" resolve="ProgramPath" />
-              <node concept="Xjq3P" id="1HZs_of_N6C" role="37wK5m" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="3K8JqUjVJ1e" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="ELXCaNeW1J" role="jymVt" />
+    <node concept="3clFb_" id="3DHs9S8tU27" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getProgramPath" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3DHs9S8tU2a" role="3clF47">
+        <node concept="3clFbJ" id="3DHs9S8tY9j" role="3cqZAp">
+          <node concept="3clFbS" id="3DHs9S8tY9l" role="3clFbx">
+            <node concept="3clFbF" id="3DHs9S8tYt7" role="3cqZAp">
+              <node concept="37vLTI" id="3DHs9S8tYG6" role="3clFbG">
+                <node concept="2YIFZM" id="3DHs9S8tYRV" role="37vLTx">
+                  <ref role="37wK5l" node="3SShbyxnJKS" resolve="from" />
+                  <ref role="1Pybhc" node="3SShbyxnJev" resolve="ProgramPath" />
+                  <node concept="Xjq3P" id="3DHs9S8tYSD" role="37wK5m" />
+                </node>
+                <node concept="2OqwBi" id="3DHs9S8tYtX" role="37vLTJ">
+                  <node concept="Xjq3P" id="3DHs9S8tYt5" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="3DHs9S8tYx2" role="2OqNvi">
+                    <ref role="2Oxat5" node="3SShbyxopCo" resolve="programPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3DHs9S8tYg6" role="3clFbw">
+            <node concept="10Nm6u" id="3DHs9S8tYgx" role="3uHU7w" />
+            <node concept="2OqwBi" id="3DHs9S8tYaK" role="3uHU7B">
+              <node concept="Xjq3P" id="3DHs9S8tY9M" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3DHs9S8tYdT" role="2OqNvi">
+                <ref role="2Oxat5" node="3SShbyxopCo" resolve="programPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3DHs9S8tYXV" role="3cqZAp">
+          <node concept="2OqwBi" id="3DHs9S8tZ0j" role="3cqZAk">
+            <node concept="Xjq3P" id="3DHs9S8tYYw" role="2Oq$k0" />
+            <node concept="2OwXpG" id="3DHs9S8u2j5" role="2OqNvi">
+              <ref role="2Oxat5" node="3SShbyxopCo" resolve="programPath" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3DHs9S8tPMT" role="1B3o_S" />
+      <node concept="3uibUv" id="3DHs9S8tTTb" role="3clF45">
+        <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3DHs9S8tLJO" role="jymVt" />
     <node concept="3clFb_" id="ELXCaNgq8X" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="markAsDirty" />
@@ -3490,7 +3422,7 @@
             <ref role="37wK5l" node="ELXCaNhAkX" resolve="add" />
             <node concept="2ShNRf" id="ELXCaNf6MB" role="37wK5m">
               <node concept="1pGfFk" id="ELXCaNfsBc" role="2ShVmc">
-                <ref role="37wK5l" node="3K8JqUjVmhp" resolve="ContextAwareEndInstruction" />
+                <ref role="37wK5l" node="3K8JqUjVmhp" resolve="InterProcAwareEndInstruction" />
               </node>
             </node>
           </node>
@@ -3581,11 +3513,11 @@
               <node concept="3cpWsn" id="3SShbyxkSs4" role="3cpWs9">
                 <property role="TrG5h" value="wrapper" />
                 <node concept="3uibUv" id="3SShbyxkSs2" role="1tU5fm">
-                  <ref role="3uigEE" node="3SShbyxjywp" resolve="ContextAwareGeneratedInstruction" />
+                  <ref role="3uigEE" node="3SShbyxjywp" resolve="InterProcAwareGeneratedInstruction" />
                 </node>
                 <node concept="2ShNRf" id="3SShbyxkSs5" role="33vP2m">
                   <node concept="1pGfFk" id="3SShbyxkSs6" role="2ShVmc">
-                    <ref role="37wK5l" node="3SShbyxjIme" resolve="ContextAwareGeneratedInstruction" />
+                    <ref role="37wK5l" node="3SShbyxjIme" resolve="InterProcAwareGeneratedInstruction" />
                     <node concept="2OqwBi" id="3SShbyxlXLJ" role="37wK5m">
                       <node concept="37vLTw" id="3SShbyxlV$Y" role="2Oq$k0">
                         <ref role="3cqZAo" node="3SShbyxlrKk" resolve="wrapped" />
@@ -4228,7 +4160,7 @@
         <node concept="1gVbGN" id="7Xx$srW0D5A" role="3cqZAp">
           <node concept="2ZW3vV" id="7Xx$srW0Emy" role="1gVkn0">
             <node concept="3uibUv" id="7Xx$srW0F0B" role="2ZW6by">
-              <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+              <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
             </node>
             <node concept="37vLTw" id="7Xx$srW0DJE" role="2ZW6bz">
               <ref role="3cqZAo" node="7Xx$srW0wTO" resolve="successor" />
@@ -4239,7 +4171,7 @@
           <node concept="3cpWsn" id="7Xx$srW0Mfn" role="3cpWs9">
             <property role="TrG5h" value="owningProgram" />
             <node concept="3uibUv" id="7Xx$srW0Mfa" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="2OqwBi" id="7Xx$srW0Mfo" role="33vP2m">
               <node concept="1eOMI4" id="7Xx$srW0Mfp" role="2Oq$k0">
@@ -4248,7 +4180,7 @@
                     <ref role="3cqZAo" node="7Xx$srW0wTO" resolve="successor" />
                   </node>
                   <node concept="3uibUv" id="7Xx$srW0Mfs" role="10QFUM">
-                    <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+                    <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
                   </node>
                 </node>
               </node>
@@ -4631,8 +4563,8 @@
                 </node>
                 <node concept="liA8E" id="1HZs_of_aKQ" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                  <node concept="37vLTw" id="1HZs_of_aKR" role="37wK5m">
-                    <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+                  <node concept="1rXfSq" id="3DHs9S8u5P3" role="37wK5m">
+                    <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
                   </node>
                 </node>
               </node>
@@ -4940,8 +4872,8 @@
                 </node>
                 <node concept="liA8E" id="1HZs_of_ajZ" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                  <node concept="37vLTw" id="1HZs_of_ak0" role="37wK5m">
-                    <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+                  <node concept="1rXfSq" id="3DHs9S8u9rl" role="37wK5m">
+                    <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
                   </node>
                 </node>
               </node>
@@ -5179,8 +5111,8 @@
                           <property role="Xl_RC" value=" is already registered under " />
                         </node>
                       </node>
-                      <node concept="37vLTw" id="6ddb09aeKKJ" role="3uHU7w">
-                        <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+                      <node concept="1rXfSq" id="3DHs9S8ud1j" role="3uHU7w">
+                        <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
                       </node>
                     </node>
                   </node>
@@ -5194,8 +5126,8 @@
             </node>
             <node concept="liA8E" id="6ddb09aeK4_" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
-              <node concept="37vLTw" id="6ddb09aeK7P" role="37wK5m">
-                <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+              <node concept="1rXfSq" id="3DHs9S8uekk" role="37wK5m">
+                <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
               </node>
             </node>
           </node>
@@ -5208,8 +5140,8 @@
             </node>
             <node concept="liA8E" id="6ddb09aeMt5" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="37vLTw" id="6ddb09aeMva" role="37wK5m">
-                <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+              <node concept="1rXfSq" id="3DHs9S8uddD" role="37wK5m">
+                <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
               </node>
               <node concept="37vLTw" id="6ddb09aeMFO" role="37wK5m">
                 <ref role="3cqZAo" node="72uIWx9dQ10" resolve="position" />
@@ -5394,8 +5326,8 @@
                           <property role="Xl_RC" value=" is already registered under " />
                         </node>
                       </node>
-                      <node concept="37vLTw" id="6ddb09aeO1i" role="3uHU7w">
-                        <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+                      <node concept="1rXfSq" id="3DHs9S8udVg" role="3uHU7w">
+                        <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
                       </node>
                     </node>
                   </node>
@@ -5409,8 +5341,8 @@
             </node>
             <node concept="liA8E" id="6ddb09aeO1l" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
-              <node concept="37vLTw" id="6ddb09aeO1m" role="37wK5m">
-                <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+              <node concept="1rXfSq" id="3DHs9S8udqn" role="37wK5m">
+                <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
               </node>
             </node>
           </node>
@@ -5423,8 +5355,8 @@
             </node>
             <node concept="liA8E" id="6ddb09aeO1r" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="37vLTw" id="6ddb09aeO1s" role="37wK5m">
-                <ref role="3cqZAo" node="3SShbyxopCo" resolve="programPath" />
+              <node concept="1rXfSq" id="3DHs9S8ue7y" role="37wK5m">
+                <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
               </node>
               <node concept="37vLTw" id="6ddb09aeO1t" role="37wK5m">
                 <ref role="3cqZAo" node="72uIWx9dQsn" resolve="position" />
@@ -5830,21 +5762,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3SShbyxotd8" role="3cqZAp">
-          <node concept="37vLTI" id="3SShbyxotsq" role="3clFbG">
-            <node concept="2YIFZM" id="3SShbyxotAX" role="37vLTx">
-              <ref role="37wK5l" node="3SShbyxnJKS" resolve="from" />
-              <ref role="1Pybhc" node="3SShbyxnJev" resolve="ProgramPath" />
-              <node concept="Xjq3P" id="3SShbyxotBC" role="37wK5m" />
-            </node>
-            <node concept="2OqwBi" id="3SShbyxotew" role="37vLTJ">
-              <node concept="Xjq3P" id="3SShbyxotd6" role="2Oq$k0" />
-              <node concept="2OwXpG" id="3SShbyxothv" role="2OqNvi">
-                <ref role="2Oxat5" node="3SShbyxopCo" resolve="programPath" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="3K8JqUjVwHL" role="1B3o_S" />
       <node concept="3cqZAl" id="3K8JqUjVxyx" role="3clF45" />
@@ -5871,6 +5788,71 @@
         <ref role="3uigEE" node="5caPF5jN5j6" resolve="NestedProgramInstruction" />
       </node>
     </node>
+    <node concept="2tJIrI" id="3DHs9S8sdbk" role="jymVt" />
+    <node concept="3clFb_" id="3DHs9S8slQH" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getTrace" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3DHs9S8slQK" role="3clF47">
+        <node concept="3clFbJ" id="3DHs9S8sqHS" role="3cqZAp">
+          <node concept="3clFbS" id="3DHs9S8sqHU" role="3clFbx">
+            <node concept="3cpWs6" id="3DHs9S8srAa" role="3cqZAp">
+              <node concept="2OqwBi" id="3DHs9S8sDlU" role="3cqZAk">
+                <node concept="2OqwBi" id="3DHs9S8suUX" role="2Oq$k0">
+                  <node concept="1rXfSq" id="3DHs9S8srB5" role="2Oq$k0">
+                    <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+                  </node>
+                  <node concept="liA8E" id="3DHs9S8syFN" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                    <node concept="37vLTw" id="3DHs9S8sA0w" role="37wK5m">
+                      <ref role="3cqZAo" node="3DHs9S8spA8" resolve="context" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3DHs9S8sGWd" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <node concept="37vLTw" id="3DHs9S8sKfZ" role="37wK5m">
+                    <ref role="3cqZAo" node="3DHs9S8spC$" resolve="path" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3DHs9S8sqRq" role="3clFbw">
+            <node concept="1rXfSq" id="3DHs9S8sqKT" role="2Oq$k0">
+              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+            </node>
+            <node concept="liA8E" id="3DHs9S8srqz" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+              <node concept="37vLTw" id="3DHs9S8sruK" role="37wK5m">
+                <ref role="3cqZAo" node="3DHs9S8spA8" resolve="context" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3DHs9S8sUje" role="3cqZAp">
+          <node concept="10Nm6u" id="3DHs9S8sUjT" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3DHs9S8shDi" role="1B3o_S" />
+      <node concept="3uibUv" id="3DHs9S8slHK" role="3clF45">
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+      </node>
+      <node concept="37vLTG" id="3DHs9S8spA8" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="3DHs9S8tjwg" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3DHs9S8spC$" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="3uibUv" id="3DHs9S8spKW" role="1tU5fm">
+          <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="1HZs_ofB5n0" role="jymVt" />
     <node concept="3clFb_" id="6ddb09abCrk" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -5883,7 +5865,7 @@
           <node concept="3cpWsn" id="6ddb09abFZ1" role="3cpWs9">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="6ddb09abFZ2" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="1rXfSq" id="6ddb09abFZ3" role="33vP2m">
               <ref role="37wK5l" node="1xH3gief1Dt" resolve="getRoot" />
@@ -5897,9 +5879,17 @@
                 <node concept="2ShNRf" id="6ddb09abGYC" role="37vLTx">
                   <node concept="1pGfFk" id="6ddb09abQFL" role="2ShVmc">
                     <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
-                    <node concept="3Tqbb2" id="1HZs_ofCm59" role="1pMfVU" />
-                    <node concept="3uibUv" id="1HZs_ofBGmB" role="1pMfVU">
-                      <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                    <node concept="3uibUv" id="3DHs9S8tngE" role="1pMfVU">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                    <node concept="3uibUv" id="3DHs9S8qVir" role="1pMfVU">
+                      <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                      <node concept="3uibUv" id="3DHs9S8qVis" role="11_B2D">
+                        <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+                      </node>
+                      <node concept="3uibUv" id="3DHs9S8qVit" role="11_B2D">
+                        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5940,9 +5930,17 @@
       <node concept="3Tmbuc" id="6ddb09ab$GT" role="1B3o_S" />
       <node concept="3uibUv" id="6ddb09abXmt" role="3clF45">
         <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-        <node concept="3Tqbb2" id="1HZs_ofCmeO" role="11_B2D" />
-        <node concept="3uibUv" id="1HZs_ofBCdH" role="11_B2D">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <node concept="3uibUv" id="3DHs9S8t90M" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+        <node concept="3uibUv" id="3DHs9S8qHRB" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+          <node concept="3uibUv" id="3DHs9S8qLpE" role="11_B2D">
+            <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+          </node>
+          <node concept="3uibUv" id="3DHs9S8qRS3" role="11_B2D">
+            <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+          </node>
         </node>
       </node>
     </node>
@@ -5958,7 +5956,7 @@
           <node concept="3cpWsn" id="1HZs_ofBabd" role="3cpWs9">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="1HZs_ofBabe" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="1rXfSq" id="1HZs_ofBabf" role="33vP2m">
               <ref role="37wK5l" node="1xH3gief1Dt" resolve="getRoot" />
@@ -6049,7 +6047,7 @@
           <node concept="3cpWsn" id="6ddb09ac442" role="3cpWs9">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="6ddb09ac443" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="1rXfSq" id="6ddb09ac444" role="33vP2m">
               <ref role="37wK5l" node="1xH3gief1Dt" resolve="getRoot" />
@@ -6198,7 +6196,7 @@
           <node concept="3cpWsn" id="6ddb09acw1M" role="3cpWs9">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="6ddb09acw1N" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="1rXfSq" id="6ddb09acw1O" role="33vP2m">
               <ref role="37wK5l" node="1xH3gief1Dt" resolve="getRoot" />
@@ -6277,7 +6275,7 @@
           <node concept="3cpWsn" id="6ddb09acEu3" role="3cpWs9">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="6ddb09acEu4" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="1rXfSq" id="6ddb09acEu5" role="33vP2m">
               <ref role="37wK5l" node="1xH3gief1Dt" resolve="getRoot" />
@@ -6374,12 +6372,12 @@
       </node>
       <node concept="3Tm1VV" id="5caPF5jNizD" role="1B3o_S" />
       <node concept="3uibUv" id="5caPF5jNmLL" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="37vLTG" id="5caPF5jNiE8" role="3clF46">
         <property role="TrG5h" value="parent" />
         <node concept="3uibUv" id="5caPF5jNmTh" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
         </node>
       </node>
     </node>
@@ -6402,7 +6400,7 @@
       </node>
       <node concept="3Tm1VV" id="5caPF5jNiRQ" role="1B3o_S" />
       <node concept="3uibUv" id="5caPF5jNmF2" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="2tJIrI" id="5caPF5jNw$d" role="jymVt" />
@@ -6449,7 +6447,7 @@
       </node>
       <node concept="3Tm1VV" id="1xH3gief1Dz" role="1B3o_S" />
       <node concept="3uibUv" id="1xH3gief1D$" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="2tJIrI" id="1xH3gief1p4" role="jymVt" />
@@ -6519,6 +6517,42 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1xH3gief5P9" role="jymVt" />
+    <node concept="3clFb_" id="3DHs9S8ri5g" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="addTraceInformation" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3DHs9S8ri5h" role="3clF47">
+        <node concept="3clFbF" id="3DHs9S8rtGu" role="3cqZAp">
+          <node concept="1rXfSq" id="3DHs9S8rtGs" role="3clFbG">
+            <ref role="37wK5l" node="1HZs_ofC3cw" resolve="addTraceInformation" />
+            <node concept="37vLTw" id="3DHs9S8rtRd" role="37wK5m">
+              <ref role="3cqZAo" node="3DHs9S8ri5C" resolve="node" />
+            </node>
+            <node concept="1rXfSq" id="3DHs9S8ueF5" role="37wK5m">
+              <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
+            </node>
+            <node concept="37vLTw" id="3DHs9S8ruhi" role="37wK5m">
+              <ref role="3cqZAo" node="3DHs9S8ri5G" resolve="program" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3DHs9S8ri5A" role="1B3o_S" />
+      <node concept="3cqZAl" id="3DHs9S8ri5B" role="3clF45" />
+      <node concept="37vLTG" id="3DHs9S8ri5C" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="3DHs9S8ri5D" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3DHs9S8ri5G" role="3clF46">
+        <property role="TrG5h" value="program" />
+        <node concept="3uibUv" id="3DHs9S8ri5H" role="1tU5fm">
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3DHs9S8reuI" role="jymVt" />
     <node concept="3clFb_" id="1HZs_ofC3cw" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addTraceInformation" />
@@ -6526,22 +6560,57 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1HZs_ofC3cz" role="3clF47">
-        <node concept="3clFbJ" id="1HZs_ofCfwn" role="3cqZAp">
-          <node concept="3clFbS" id="1HZs_ofCfwp" role="3clFbx">
-            <node concept="YS8fn" id="1HZs_ofCgbu" role="3cqZAp">
-              <node concept="2ShNRf" id="1HZs_ofCgbv" role="YScLw">
-                <node concept="1pGfFk" id="1HZs_ofCgbw" role="2ShVmc">
+        <node concept="3cpWs8" id="3DHs9S8rvrY" role="3cqZAp">
+          <node concept="3cpWsn" id="3DHs9S8rvrZ" role="3cpWs9">
+            <property role="TrG5h" value="pathMap" />
+            <node concept="3uibUv" id="3DHs9S8rvrt" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+              <node concept="3uibUv" id="3DHs9S8rvry" role="11_B2D">
+                <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+              </node>
+              <node concept="3uibUv" id="3DHs9S8rvrz" role="11_B2D">
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3DHs9S8rvs0" role="33vP2m">
+              <node concept="1rXfSq" id="3DHs9S8rvs1" role="2Oq$k0">
+                <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+              </node>
+              <node concept="liA8E" id="3DHs9S8rvs2" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <node concept="37vLTw" id="3DHs9S8rvs3" role="37wK5m">
+                  <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="context" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3DHs9S8rwjE" role="3cqZAp">
+          <node concept="3clFbS" id="3DHs9S8rwjG" role="3clFbx">
+            <node concept="YS8fn" id="3DHs9S8rxcz" role="3cqZAp">
+              <node concept="2ShNRf" id="3DHs9S8rxc$" role="YScLw">
+                <node concept="1pGfFk" id="3DHs9S8rxc_" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
-                  <node concept="3cpWs3" id="1HZs_ofCgjq" role="37wK5m">
-                    <node concept="Xl_RD" id="1HZs_ofCgjE" role="3uHU7w">
+                  <node concept="3cpWs3" id="3DHs9S8rxrf" role="37wK5m">
+                    <node concept="Xl_RD" id="3DHs9S8rxr_" role="3uHU7w">
                       <property role="Xl_RC" value="!" />
                     </node>
-                    <node concept="3cpWs3" id="1HZs_ofCggq" role="3uHU7B">
-                      <node concept="Xl_RD" id="1HZs_ofCgbx" role="3uHU7B">
-                        <property role="Xl_RC" value="Trace is already registered for " />
+                    <node concept="3cpWs3" id="3DHs9S8rxkB" role="3uHU7B">
+                      <node concept="3cpWs3" id="3DHs9S8rxcA" role="3uHU7B">
+                        <node concept="3cpWs3" id="3DHs9S8rxcC" role="3uHU7B">
+                          <node concept="Xl_RD" id="3DHs9S8rxcD" role="3uHU7B">
+                            <property role="Xl_RC" value="Trace is already registered for " />
+                          </node>
+                          <node concept="37vLTw" id="3DHs9S8rxcE" role="3uHU7w">
+                            <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="context" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="3DHs9S8rxcB" role="3uHU7w">
+                          <property role="Xl_RC" value=" under " />
+                        </node>
                       </node>
-                      <node concept="37vLTw" id="1HZs_ofCghO" role="3uHU7w">
-                        <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="node" />
+                      <node concept="37vLTw" id="3DHs9S8rxpj" role="3uHU7w">
+                        <ref role="3cqZAo" node="3DHs9S8qVJL" resolve="path" />
                       </node>
                     </node>
                   </node>
@@ -6549,30 +6618,70 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="1HZs_ofCfCI" role="3clFbw">
-            <node concept="1rXfSq" id="1HZs_ofCfzj" role="2Oq$k0">
-              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+          <node concept="1Wc70l" id="3DHs9S8rxEf" role="3clFbw">
+            <node concept="3y3z36" id="3DHs9S8rxTX" role="3uHU7B">
+              <node concept="10Nm6u" id="3DHs9S8rxUn" role="3uHU7w" />
+              <node concept="37vLTw" id="3DHs9S8rxOX" role="3uHU7B">
+                <ref role="3cqZAo" node="3DHs9S8rvrZ" resolve="pathMap" />
+              </node>
             </node>
-            <node concept="liA8E" id="1HZs_ofCg5k" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
-              <node concept="37vLTw" id="1HZs_ofCg9b" role="37wK5m">
-                <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="node" />
+            <node concept="2OqwBi" id="3DHs9S8rwCr" role="3uHU7w">
+              <node concept="37vLTw" id="3DHs9S8rwsF" role="2Oq$k0">
+                <ref role="3cqZAo" node="3DHs9S8rvrZ" resolve="pathMap" />
+              </node>
+              <node concept="liA8E" id="3DHs9S8rx29" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Map.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                <node concept="37vLTw" id="3DHs9S8rxax" role="37wK5m">
+                  <ref role="3cqZAo" node="3DHs9S8qVJL" resolve="path" />
+                </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="1HZs_ofCeKX" role="3cqZAp">
-          <node concept="2OqwBi" id="1HZs_ofCeXf" role="3clFbG">
-            <node concept="1rXfSq" id="1HZs_ofCeKV" role="2Oq$k0">
-              <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
-            </node>
-            <node concept="liA8E" id="1HZs_ofCffV" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="37vLTw" id="1HZs_ofCfjG" role="37wK5m">
-                <ref role="3cqZAo" node="1HZs_ofC7R4" resolve="node" />
+          <node concept="9aQIb" id="3DHs9S8rxxa" role="9aQIa">
+            <node concept="3clFbS" id="3DHs9S8rxxb" role="9aQI4">
+              <node concept="3clFbJ" id="3DHs9S8ry5s" role="3cqZAp">
+                <node concept="3clFbS" id="3DHs9S8ry5u" role="3clFbx">
+                  <node concept="3clFbF" id="3DHs9S8ryhW" role="3cqZAp">
+                    <node concept="37vLTI" id="3DHs9S8rylC" role="3clFbG">
+                      <node concept="2ShNRf" id="3DHs9S8rym_" role="37vLTx">
+                        <node concept="1pGfFk" id="3DHs9S8rBa$" role="2ShVmc">
+                          <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
+                          <node concept="3uibUv" id="3DHs9S8rBmy" role="1pMfVU">
+                            <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+                          </node>
+                          <node concept="3uibUv" id="3DHs9S8rBwo" role="1pMfVU">
+                            <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="3DHs9S8ryhU" role="37vLTJ">
+                        <ref role="3cqZAo" node="3DHs9S8rvrZ" resolve="pathMap" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="3DHs9S8ryas" role="3clFbw">
+                  <node concept="10Nm6u" id="3DHs9S8ryaQ" role="3uHU7w" />
+                  <node concept="37vLTw" id="3DHs9S8ry6h" role="3uHU7B">
+                    <ref role="3cqZAo" node="3DHs9S8rvrZ" resolve="pathMap" />
+                  </node>
+                </node>
               </node>
-              <node concept="37vLTw" id="1HZs_ofCfox" role="37wK5m">
-                <ref role="3cqZAo" node="1HZs_ofCb22" resolve="program" />
+              <node concept="3clFbF" id="3DHs9S8rBT2" role="3cqZAp">
+                <node concept="2OqwBi" id="3DHs9S8rBWX" role="3clFbG">
+                  <node concept="37vLTw" id="3DHs9S8rBT0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3DHs9S8rvrZ" resolve="pathMap" />
+                  </node>
+                  <node concept="liA8E" id="3DHs9S8rCf1" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                    <node concept="37vLTw" id="3DHs9S8rCi6" role="37wK5m">
+                      <ref role="3cqZAo" node="3DHs9S8qVJL" resolve="path" />
+                    </node>
+                    <node concept="37vLTw" id="3DHs9S8rCnh" role="37wK5m">
+                      <ref role="3cqZAo" node="1HZs_ofCb22" resolve="program" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -6581,13 +6690,21 @@
       <node concept="3Tm1VV" id="1HZs_ofBYSw" role="1B3o_S" />
       <node concept="3cqZAl" id="1HZs_ofC3cu" role="3clF45" />
       <node concept="37vLTG" id="1HZs_ofC7R4" role="3clF46">
-        <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="1HZs_ofCpB_" role="1tU5fm" />
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="3DHs9S8t4$2" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3DHs9S8qVJL" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="3uibUv" id="3DHs9S8r0jC" role="1tU5fm">
+          <ref role="3uigEE" node="3SShbyxnJev" resolve="ProgramPath" />
+        </node>
       </node>
       <node concept="37vLTG" id="1HZs_ofCb22" role="3clF46">
         <property role="TrG5h" value="program" />
         <node concept="3uibUv" id="1HZs_ofCeoq" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
         </node>
       </node>
     </node>
@@ -6838,7 +6955,7 @@
           <node concept="3cpWsn" id="1xH3giefAuc" role="3cpWs9">
             <property role="TrG5h" value="current" />
             <node concept="3uibUv" id="1xH3giefAua" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="Xjq3P" id="1xH3giemA0L" role="33vP2m" />
           </node>
@@ -7073,7 +7190,7 @@
                       <node concept="3cpWsn" id="ELXCaNgZf8" role="3cpWs9">
                         <property role="TrG5h" value="current" />
                         <node concept="3uibUv" id="ELXCaNgZf9" role="1tU5fm">
-                          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
                         </node>
                         <node concept="2OqwBi" id="ELXCaNgZfa" role="33vP2m">
                           <node concept="1eOMI4" id="ELXCaNgZfb" role="2Oq$k0">
@@ -7267,7 +7384,7 @@
                       <node concept="3cpWsn" id="ELXCaNhhjs" role="3cpWs9">
                         <property role="TrG5h" value="current" />
                         <node concept="3uibUv" id="ELXCaNhhjt" role="1tU5fm">
-                          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
                         </node>
                         <node concept="2OqwBi" id="ELXCaNhhju" role="33vP2m">
                           <node concept="1eOMI4" id="ELXCaNhhjv" role="2Oq$k0">
@@ -7943,11 +8060,11 @@
           <node concept="3cpWsn" id="5xyoMgvyMlu" role="3cpWs9">
             <property role="TrG5h" value="program" />
             <node concept="3uibUv" id="5xyoMgvyMlv" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="2ShNRf" id="5xyoMgvyMzk" role="33vP2m">
               <node concept="1pGfFk" id="5xyoMgvyMzf" role="2ShVmc">
-                <ref role="37wK5l" node="3K8JqUjVJYb" resolve="ContextSensitiveProgram" />
+                <ref role="37wK5l" node="3K8JqUjVJYb" resolve="InterProceduralDataFlowGraph" />
               </node>
             </node>
           </node>
@@ -7993,7 +8110,7 @@
   </node>
   <node concept="312cEu" id="18PvkuOo0sQ">
     <property role="3GE5qa" value="instruction.common" />
-    <property role="TrG5h" value="ContextSensitiveInstructionBuilder" />
+    <property role="TrG5h" value="InterProcInstructionBuilder" />
     <node concept="2tJIrI" id="18PvkuOo0tF" role="jymVt" />
     <node concept="3clFb_" id="18PvkuOo0tU" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -8012,7 +8129,7 @@
         <node concept="3cpWs6" id="3K8JqUjVgMC" role="3cqZAp">
           <node concept="2ShNRf" id="3K8JqUjVgMW" role="3cqZAk">
             <node concept="1pGfFk" id="3K8JqUjVh8z" role="2ShVmc">
-              <ref role="37wK5l" node="18PvkuOo7kB" resolve="ContextAwareEndInstruction" />
+              <ref role="37wK5l" node="18PvkuOo7kB" resolve="InterProcAwareEndInstruction" />
               <node concept="37vLTw" id="3K8JqUjVhcw" role="37wK5m">
                 <ref role="3cqZAo" node="18PvkuOo0tY" resolve="ruleNodeReference" />
               </node>
@@ -8048,7 +8165,7 @@
         <node concept="3cpWs6" id="5xyoMgvtHJZ" role="3cqZAp">
           <node concept="2ShNRf" id="5xyoMgvtHKC" role="3cqZAk">
             <node concept="1pGfFk" id="5xyoMgvtI8r" role="2ShVmc">
-              <ref role="37wK5l" node="5xyoMgvtslo" resolve="ContextAwareReadInstruction" />
+              <ref role="37wK5l" node="5xyoMgvtslo" resolve="InterProcAwareReadInstruction" />
               <node concept="37vLTw" id="5xyoMgvtIbS" role="37wK5m">
                 <ref role="3cqZAo" node="5xyoMgvtsVE" resolve="ruleNodeReference" />
               </node>
@@ -8093,7 +8210,7 @@
         <node concept="3cpWs6" id="5xyoMgvttqU" role="3cqZAp">
           <node concept="2ShNRf" id="5xyoMgvttwI" role="3cqZAk">
             <node concept="1pGfFk" id="5xyoMgvtHu7" role="2ShVmc">
-              <ref role="37wK5l" node="5xyoMgvtsHy" resolve="ContextAwareWriteInstruction" />
+              <ref role="37wK5l" node="5xyoMgvtsHy" resolve="InterProcAwareWriteInstruction" />
               <node concept="37vLTw" id="5xyoMgvtIrj" role="37wK5m">
                 <ref role="3cqZAo" node="5xyoMgvtsVS" resolve="ruleNodeReference" />
               </node>
@@ -8129,7 +8246,7 @@
         <node concept="3cpWs6" id="5J1i2dm7Y4_" role="3cqZAp">
           <node concept="2ShNRf" id="5J1i2dm7Yai" role="3cqZAk">
             <node concept="1pGfFk" id="5J1i2dm7Y_L" role="2ShVmc">
-              <ref role="37wK5l" node="5J1i2dm7XTf" resolve="ContextAwareIfJumpInstruction" />
+              <ref role="37wK5l" node="5J1i2dm7XTf" resolve="InterProcAwareIfJumpInstruction" />
               <node concept="37vLTw" id="5J1i2dm7YIR" role="37wK5m">
                 <ref role="3cqZAo" node="5J1i2dm7SPU" resolve="ruleNodeReference" />
               </node>
@@ -8159,7 +8276,7 @@
         <node concept="3cpWs6" id="5J1i2dm7YQW" role="3cqZAp">
           <node concept="2ShNRf" id="5J1i2dm7YQX" role="3cqZAk">
             <node concept="1pGfFk" id="5J1i2dm7YQY" role="2ShVmc">
-              <ref role="37wK5l" node="5J1i2dm7XIv" resolve="ContextAwareJumpInstruction" />
+              <ref role="37wK5l" node="5J1i2dm7XIv" resolve="InterProcAwareJumpInstruction" />
               <node concept="37vLTw" id="5J1i2dm7YQZ" role="37wK5m">
                 <ref role="3cqZAo" node="5J1i2dm7SQ5" resolve="ruleNodeReference" />
               </node>
@@ -8189,7 +8306,7 @@
         <node concept="3cpWs6" id="5J1i2dm7WkZ" role="3cqZAp">
           <node concept="2ShNRf" id="5J1i2dm7WlH" role="3cqZAk">
             <node concept="1pGfFk" id="5J1i2dm7WLM" role="2ShVmc">
-              <ref role="37wK5l" node="~NopInstruction.&lt;init&gt;(java.lang.String)" resolve="ContextAwareNopInstruction" />
+              <ref role="37wK5l" node="~NopInstruction.&lt;init&gt;(java.lang.String)" resolve="InterProcAwareNopInstruction" />
               <node concept="37vLTw" id="5J1i2dm7WU_" role="37wK5m">
                 <ref role="3cqZAo" node="5J1i2dm7SQg" resolve="ruleNodeReference" />
               </node>
@@ -8219,7 +8336,7 @@
         <node concept="3cpWs6" id="5J1i2dm7X2n" role="3cqZAp">
           <node concept="2ShNRf" id="5J1i2dm7X2o" role="3cqZAk">
             <node concept="1pGfFk" id="5J1i2dm7X2p" role="2ShVmc">
-              <ref role="37wK5l" node="5J1i2dm7Wf9" resolve="ContextAwareRetInstruction" />
+              <ref role="37wK5l" node="5J1i2dm7Wf9" resolve="InterProcAwareRetInstruction" />
               <node concept="37vLTw" id="5J1i2dm7X2q" role="37wK5m">
                 <ref role="3cqZAo" node="5J1i2dm7SQr" resolve="ruleNodeReference" />
               </node>
@@ -8319,7 +8436,7 @@
   </node>
   <node concept="312cEu" id="18PvkuOo0wl">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareEndInstruction" />
+    <property role="TrG5h" value="InterProcAwareEndInstruction" />
     <node concept="2tJIrI" id="18PvkuOo703" role="jymVt" />
     <node concept="3clFbW" id="18PvkuOo7kB" role="jymVt">
       <node concept="37vLTG" id="18PvkuOo7m3" role="3clF46">
@@ -8856,7 +8973,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="nj3EPh62nn" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh62no" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh62nq" role="3clF47">
         <node concept="3cpWs8" id="nj3EPh63R1" role="3cqZAp">
@@ -8876,7 +8993,7 @@
         <node concept="1gVbGN" id="nj3EPh63R9" role="3cqZAp">
           <node concept="2ZW3vV" id="nj3EPh63Ra" role="1gVkn0">
             <node concept="3uibUv" id="nj3EPh63Rb" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="nj3EPh63Rc" role="2ZW6bz">
               <ref role="3cqZAo" node="nj3EPh63R2" resolve="program" />
@@ -8887,7 +9004,7 @@
           <node concept="1eOMI4" id="nj3EPh63Re" role="3cqZAk">
             <node concept="10QFUN" id="nj3EPh63Rf" role="1eOMHV">
               <node concept="3uibUv" id="nj3EPh63Rg" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="nj3EPh63Rh" role="10QFUP">
                 <ref role="3cqZAo" node="nj3EPh63R2" resolve="program" />
@@ -8907,7 +9024,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="nj3EPh62nv" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh62nw" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh62ny" role="3clF47">
         <node concept="3cpWs6" id="nj3EPh647$" role="3cqZAp">
@@ -8935,7 +9052,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="nj3EPh62nB" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh62nC" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh62nE" role="3clF47">
         <node concept="3cpWs6" id="nj3EPh65ab" role="3cqZAp">
@@ -8961,7 +9078,7 @@
       <ref role="3uigEE" to="dau9:~EndInstruction" resolve="EndInstruction" />
     </node>
     <node concept="3uibUv" id="nj3EPh62bT" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="18PvkuOobH3">
@@ -9184,7 +9301,7 @@
   </node>
   <node concept="312cEu" id="5xyoMgvts3q">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareReadInstruction" />
+    <property role="TrG5h" value="InterProcAwareReadInstruction" />
     <node concept="2tJIrI" id="5xyoMgvts3I" role="jymVt" />
     <node concept="3clFbW" id="5xyoMgvtsle" role="jymVt">
       <property role="DiZV1" value="false" />
@@ -9392,7 +9509,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="nj3EPh69_G" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh69_H" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh69_I" role="3clF47">
         <node concept="3cpWs8" id="nj3EPh69_J" role="3cqZAp">
@@ -9412,7 +9529,7 @@
         <node concept="1gVbGN" id="nj3EPh69_P" role="3cqZAp">
           <node concept="2ZW3vV" id="nj3EPh69_Q" role="1gVkn0">
             <node concept="3uibUv" id="nj3EPh69_R" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="nj3EPh69_S" role="2ZW6bz">
               <ref role="3cqZAo" node="nj3EPh69_K" resolve="program" />
@@ -9423,7 +9540,7 @@
           <node concept="1eOMI4" id="nj3EPh69_U" role="3cqZAk">
             <node concept="10QFUN" id="nj3EPh69_V" role="1eOMHV">
               <node concept="3uibUv" id="nj3EPh69_W" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="nj3EPh69_X" role="10QFUP">
                 <ref role="3cqZAo" node="nj3EPh69_K" resolve="program" />
@@ -9443,7 +9560,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="nj3EPh69A2" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh69A3" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh69A4" role="3clF47">
         <node concept="3cpWs6" id="nj3EPh69A5" role="3cqZAp">
@@ -9471,7 +9588,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="nj3EPh69Ae" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh69Af" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh69Ag" role="3clF47">
         <node concept="3cpWs6" id="nj3EPh69Ah" role="3cqZAp">
@@ -9498,12 +9615,12 @@
       <ref role="3uigEE" to="dau9:~ReadInstruction" resolve="ReadInstruction" />
     </node>
     <node concept="3uibUv" id="nj3EPh69FZ" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="5xyoMgvtsHn">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareWriteInstruction" />
+    <property role="TrG5h" value="InterProcAwareWriteInstruction" />
     <node concept="2tJIrI" id="5xyoMgvtsHo" role="jymVt" />
     <node concept="3clFbW" id="5xyoMgvtsHp" role="jymVt">
       <property role="DiZV1" value="false" />
@@ -9729,7 +9846,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="nj3EPh69Lg" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh69Lh" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh69Li" role="3clF47">
         <node concept="3cpWs8" id="nj3EPh69Lj" role="3cqZAp">
@@ -9749,7 +9866,7 @@
         <node concept="1gVbGN" id="nj3EPh69Lp" role="3cqZAp">
           <node concept="2ZW3vV" id="nj3EPh69Lq" role="1gVkn0">
             <node concept="3uibUv" id="nj3EPh69Lr" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="nj3EPh69Ls" role="2ZW6bz">
               <ref role="3cqZAo" node="nj3EPh69Lk" resolve="program" />
@@ -9760,7 +9877,7 @@
           <node concept="1eOMI4" id="nj3EPh69Lu" role="3cqZAk">
             <node concept="10QFUN" id="nj3EPh69Lv" role="1eOMHV">
               <node concept="3uibUv" id="nj3EPh69Lw" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="nj3EPh69Lx" role="10QFUP">
                 <ref role="3cqZAo" node="nj3EPh69Lk" resolve="program" />
@@ -9780,7 +9897,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="nj3EPh69LA" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh69LB" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh69LC" role="3clF47">
         <node concept="3cpWs6" id="nj3EPh69LD" role="3cqZAp">
@@ -9808,7 +9925,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="nj3EPh69LM" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh69LN" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="nj3EPh69LO" role="3clF47">
         <node concept="3cpWs6" id="nj3EPh69LP" role="3cqZAp">
@@ -9837,42 +9954,34 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1HZs_ofCCLh" role="3clF47">
-        <node concept="3cpWs8" id="1HZs_ofCEyS" role="3cqZAp">
-          <node concept="3cpWsn" id="1HZs_ofCEyT" role="3cpWs9">
-            <property role="TrG5h" value="program" />
-            <node concept="3uibUv" id="1HZs_ofCEyN" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <node concept="3cpWs6" id="3DHs9S8t0eh" role="3cqZAp">
+          <node concept="2OqwBi" id="3DHs9S8t0ei" role="3cqZAk">
+            <node concept="1rXfSq" id="3DHs9S8t0ej" role="2Oq$k0">
+              <ref role="37wK5l" node="nj3EPh69Lf" resolve="getOwnProgram" />
             </node>
-            <node concept="2OqwBi" id="1HZs_ofCEyU" role="33vP2m">
-              <node concept="2OqwBi" id="1HZs_ofCEyV" role="2Oq$k0">
-                <node concept="1rXfSq" id="1HZs_ofCEyW" role="2Oq$k0">
-                  <ref role="37wK5l" node="nj3EPh69LL" resolve="getRootProgram" />
-                </node>
-                <node concept="liA8E" id="1HZs_ofCEyX" role="2OqNvi">
-                  <ref role="37wK5l" node="6ddb09abCrk" resolve="getTraceMap" />
+            <node concept="liA8E" id="3DHs9S8t0ek" role="2OqNvi">
+              <ref role="37wK5l" node="3DHs9S8slQH" resolve="getTrace" />
+              <node concept="2OqwBi" id="3DHs9S8t0el" role="37wK5m">
+                <node concept="Xjq3P" id="3DHs9S8t0em" role="2Oq$k0" />
+                <node concept="2OwXpG" id="3DHs9S8t0en" role="2OqNvi">
+                  <ref role="2Oxat5" to="dau9:~WriteInstruction.myValue" resolve="myValue" />
                 </node>
               </node>
-              <node concept="liA8E" id="1HZs_ofCEyY" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
-                <node concept="2OqwBi" id="1HZs_ofCEyZ" role="37wK5m">
-                  <node concept="Xjq3P" id="1HZs_ofCEz0" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="1HZs_ofCEz1" role="2OqNvi">
-                    <ref role="2Oxat5" to="dau9:~WriteInstruction.myValue" resolve="myValue" />
-                  </node>
+              <node concept="2OqwBi" id="3DHs9S8t0eo" role="37wK5m">
+                <node concept="1rXfSq" id="3DHs9S8t0ep" role="2Oq$k0">
+                  <ref role="37wK5l" node="nj3EPh69Lf" resolve="getOwnProgram" />
+                </node>
+                <node concept="liA8E" id="3DHs9S8uhgk" role="2OqNvi">
+                  <ref role="37wK5l" node="3DHs9S8tU27" resolve="getProgramPath" />
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="1HZs_ofCEQT" role="3cqZAp">
-          <node concept="37vLTw" id="1HZs_ofCEUM" role="3cqZAk">
-            <ref role="3cqZAo" node="1HZs_ofCEyT" resolve="program" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="1HZs_ofCCiW" role="1B3o_S" />
       <node concept="3uibUv" id="1HZs_ofCCHG" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="3Tm1VV" id="5xyoMgvtsHI" role="1B3o_S" />
@@ -9880,12 +9989,12 @@
       <ref role="3uigEE" to="dau9:~WriteInstruction" resolve="WriteInstruction" />
     </node>
     <node concept="3uibUv" id="nj3EPh69RT" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="3HP615" id="nj3EPh5PWU">
     <property role="3GE5qa" value="instruction.common" />
-    <property role="TrG5h" value="IContextAwareInstruction" />
+    <property role="TrG5h" value="IInterProcAwareInstruction" />
     <node concept="2tJIrI" id="nj3EPh5PX8" role="jymVt" />
     <node concept="3clFb_" id="nj3EPh5Q79" role="jymVt">
       <property role="1EzhhJ" value="true" />
@@ -9894,7 +10003,7 @@
       <node concept="3clFbS" id="nj3EPh5Q7c" role="3clF47" />
       <node concept="3Tm1VV" id="nj3EPh5Q7d" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh5Q74" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="3clFb_" id="nj3EPh5Q7t" role="jymVt">
@@ -9904,7 +10013,7 @@
       <node concept="3clFbS" id="nj3EPh5Q7u" role="3clF47" />
       <node concept="3Tm1VV" id="nj3EPh5Q7v" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh5Q7w" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="3clFb_" id="nj3EPh5Q7F" role="jymVt">
@@ -9914,7 +10023,7 @@
       <node concept="3clFbS" id="nj3EPh5Q7G" role="3clF47" />
       <node concept="3Tm1VV" id="nj3EPh5Q7H" role="1B3o_S" />
       <node concept="3uibUv" id="nj3EPh5Q7I" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
     </node>
     <node concept="2tJIrI" id="5J1i2dmdvTE" role="jymVt" />
@@ -9922,7 +10031,7 @@
   </node>
   <node concept="312cEu" id="5J1i2dm7UAb">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareNopInstruction" />
+    <property role="TrG5h" value="InterProcAwareNopInstruction" />
     <node concept="2tJIrI" id="5J1i2dm7VVm" role="jymVt" />
     <node concept="3clFbW" id="5J1i2dm7X$2" role="jymVt">
       <node concept="3cqZAl" id="5J1i2dm7X$3" role="3clF45" />
@@ -10071,7 +10180,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="5J1i2dm8IHw" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dm8IHx" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dm8IHy" role="3clF47">
         <node concept="3cpWs8" id="5J1i2dm8IHz" role="3cqZAp">
@@ -10091,7 +10200,7 @@
         <node concept="1gVbGN" id="5J1i2dm8IHD" role="3cqZAp">
           <node concept="2ZW3vV" id="5J1i2dm8IHE" role="1gVkn0">
             <node concept="3uibUv" id="5J1i2dm8IHF" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="5J1i2dm8IHG" role="2ZW6bz">
               <ref role="3cqZAo" node="5J1i2dm8IH$" resolve="program" />
@@ -10102,7 +10211,7 @@
           <node concept="1eOMI4" id="5J1i2dm8IHI" role="3cqZAk">
             <node concept="10QFUN" id="5J1i2dm8IHJ" role="1eOMHV">
               <node concept="3uibUv" id="5J1i2dm8IHK" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="5J1i2dm8IHL" role="10QFUP">
                 <ref role="3cqZAo" node="5J1i2dm8IH$" resolve="program" />
@@ -10122,7 +10231,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="5J1i2dm8IHR" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dm8IHS" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dm8IHT" role="3clF47">
         <node concept="3cpWs6" id="5J1i2dm8IHU" role="3cqZAp">
@@ -10150,7 +10259,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="5J1i2dm8II3" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dm8II4" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dm8II5" role="3clF47">
         <node concept="3cpWs6" id="5J1i2dm8II6" role="3cqZAp">
@@ -10177,12 +10286,12 @@
       <ref role="3uigEE" to="dau9:~NopInstruction" resolve="NopInstruction" />
     </node>
     <node concept="3uibUv" id="5J1i2dm8IF2" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="5J1i2dm7UBC">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareRetInstruction" />
+    <property role="TrG5h" value="InterProcAwareRetInstruction" />
     <node concept="2tJIrI" id="5J1i2dm7UBZ" role="jymVt" />
     <node concept="3clFbW" id="5J1i2dm7XsW" role="jymVt">
       <node concept="3cqZAl" id="5J1i2dm7XsX" role="3clF45" />
@@ -10296,7 +10405,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="5J1i2dm8ISO" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dm8ISP" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dm8ISQ" role="3clF47">
         <node concept="3cpWs8" id="5J1i2dm8ISR" role="3cqZAp">
@@ -10316,7 +10425,7 @@
         <node concept="1gVbGN" id="5J1i2dm8ISX" role="3cqZAp">
           <node concept="2ZW3vV" id="5J1i2dm8ISY" role="1gVkn0">
             <node concept="3uibUv" id="5J1i2dm8ISZ" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="5J1i2dm8IT0" role="2ZW6bz">
               <ref role="3cqZAo" node="5J1i2dm8ISS" resolve="program" />
@@ -10327,7 +10436,7 @@
           <node concept="1eOMI4" id="5J1i2dm8IT2" role="3cqZAk">
             <node concept="10QFUN" id="5J1i2dm8IT3" role="1eOMHV">
               <node concept="3uibUv" id="5J1i2dm8IT4" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="5J1i2dm8IT5" role="10QFUP">
                 <ref role="3cqZAo" node="5J1i2dm8ISS" resolve="program" />
@@ -10347,7 +10456,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="5J1i2dm8ITb" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dm8ITc" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dm8ITd" role="3clF47">
         <node concept="3cpWs6" id="5J1i2dm8ITe" role="3cqZAp">
@@ -10375,7 +10484,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="5J1i2dm8ITn" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dm8ITo" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dm8ITp" role="3clF47">
         <node concept="3cpWs6" id="5J1i2dm8ITq" role="3cqZAp">
@@ -10512,12 +10621,12 @@
       <ref role="3uigEE" to="dau9:~RetInstruction" resolve="RetInstruction" />
     </node>
     <node concept="3uibUv" id="5J1i2dm8IRX" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="5J1i2dm7XIn">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareJumpInstruction" />
+    <property role="TrG5h" value="InterProcAwareJumpInstruction" />
     <node concept="2tJIrI" id="5J1i2dm7XIo" role="jymVt" />
     <node concept="3clFbW" id="5J1i2dm7XIp" role="jymVt">
       <node concept="3cqZAl" id="5J1i2dm7XIq" role="3clF45" />
@@ -10839,7 +10948,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="183c22F198l" role="1B3o_S" />
       <node concept="3uibUv" id="183c22F198m" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="183c22F198n" role="3clF47">
         <node concept="3cpWs8" id="183c22F198o" role="3cqZAp">
@@ -10859,7 +10968,7 @@
         <node concept="1gVbGN" id="183c22F198u" role="3cqZAp">
           <node concept="2ZW3vV" id="183c22F198v" role="1gVkn0">
             <node concept="3uibUv" id="183c22F198w" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="183c22F198x" role="2ZW6bz">
               <ref role="3cqZAo" node="183c22F198p" resolve="program" />
@@ -10870,7 +10979,7 @@
           <node concept="1eOMI4" id="183c22F198z" role="3cqZAk">
             <node concept="10QFUN" id="183c22F198$" role="1eOMHV">
               <node concept="3uibUv" id="183c22F198_" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="183c22F198A" role="10QFUP">
                 <ref role="3cqZAo" node="183c22F198p" resolve="program" />
@@ -10890,7 +10999,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="183c22F198H" role="1B3o_S" />
       <node concept="3uibUv" id="183c22F198I" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="183c22F198J" role="3clF47">
         <node concept="3cpWs6" id="183c22F198K" role="3cqZAp">
@@ -10918,7 +11027,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="183c22F198T" role="1B3o_S" />
       <node concept="3uibUv" id="183c22F198U" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="183c22F198V" role="3clF47">
         <node concept="3cpWs6" id="183c22F198W" role="3cqZAp">
@@ -10945,12 +11054,12 @@
       <ref role="3uigEE" to="dau9:~JumpInstruction" resolve="JumpInstruction" />
     </node>
     <node concept="3uibUv" id="183c22F196q" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="5J1i2dm7XT7">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareIfJumpInstruction" />
+    <property role="TrG5h" value="InterProcAwareIfJumpInstruction" />
     <node concept="2tJIrI" id="5J1i2dm7XT8" role="jymVt" />
     <node concept="3clFbW" id="5J1i2dm7XT9" role="jymVt">
       <node concept="3cqZAl" id="5J1i2dm7XTa" role="3clF45" />
@@ -11270,7 +11379,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="183c22F15Xd" role="1B3o_S" />
       <node concept="3uibUv" id="183c22F15Xe" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="183c22F15Xf" role="3clF47">
         <node concept="3cpWs8" id="183c22F15Xg" role="3cqZAp">
@@ -11290,7 +11399,7 @@
         <node concept="1gVbGN" id="183c22F15Xm" role="3cqZAp">
           <node concept="2ZW3vV" id="183c22F15Xn" role="1gVkn0">
             <node concept="3uibUv" id="183c22F15Xo" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="183c22F15Xp" role="2ZW6bz">
               <ref role="3cqZAo" node="183c22F15Xh" resolve="program" />
@@ -11301,7 +11410,7 @@
           <node concept="1eOMI4" id="183c22F15Xr" role="3cqZAk">
             <node concept="10QFUN" id="183c22F15Xs" role="1eOMHV">
               <node concept="3uibUv" id="183c22F15Xt" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="183c22F15Xu" role="10QFUP">
                 <ref role="3cqZAo" node="183c22F15Xh" resolve="program" />
@@ -11321,7 +11430,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="5J1i2dme9vM" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dme9vN" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dme9vO" role="3clF47">
         <node concept="3cpWs6" id="5J1i2dme9vP" role="3cqZAp">
@@ -11349,7 +11458,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="5J1i2dme9vY" role="1B3o_S" />
       <node concept="3uibUv" id="5J1i2dme9vZ" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="5J1i2dme9w0" role="3clF47">
         <node concept="3cpWs6" id="5J1i2dme9w1" role="3cqZAp">
@@ -11376,12 +11485,12 @@
       <ref role="3uigEE" to="dau9:~IfJumpInstruction" resolve="IfJumpInstruction" />
     </node>
     <node concept="3uibUv" id="5J1i2dme9lf" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="3SShbyxjywp">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareGeneratedInstruction" />
+    <property role="TrG5h" value="InterProcAwareGeneratedInstruction" />
     <node concept="2tJIrI" id="3SShbyxjB_W" role="jymVt" />
     <node concept="312cEg" id="3SShbyxjJry" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -11592,7 +11701,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="3SShbyxjDzc" role="1B3o_S" />
       <node concept="3uibUv" id="3SShbyxjDzd" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="3SShbyxjDze" role="3clF47">
         <node concept="3cpWs8" id="3SShbyxjDzf" role="3cqZAp">
@@ -11612,7 +11721,7 @@
         <node concept="1gVbGN" id="3SShbyxjDzl" role="3cqZAp">
           <node concept="2ZW3vV" id="3SShbyxjDzm" role="1gVkn0">
             <node concept="3uibUv" id="3SShbyxjDzn" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="3SShbyxjDzo" role="2ZW6bz">
               <ref role="3cqZAo" node="3SShbyxjDzg" resolve="program" />
@@ -11623,7 +11732,7 @@
           <node concept="1eOMI4" id="3SShbyxjDzq" role="3cqZAk">
             <node concept="10QFUN" id="3SShbyxjDzr" role="1eOMHV">
               <node concept="3uibUv" id="3SShbyxjDzs" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="3SShbyxjDzt" role="10QFUP">
                 <ref role="3cqZAo" node="3SShbyxjDzg" resolve="program" />
@@ -11643,7 +11752,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="3SShbyxjDz$" role="1B3o_S" />
       <node concept="3uibUv" id="3SShbyxjDz_" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="3SShbyxjDzA" role="3clF47">
         <node concept="3cpWs6" id="3SShbyxjDzB" role="3cqZAp">
@@ -11671,7 +11780,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="3SShbyxjDzK" role="1B3o_S" />
       <node concept="3uibUv" id="3SShbyxjDzL" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="3SShbyxjDzM" role="3clF47">
         <node concept="3cpWs6" id="3SShbyxjDzN" role="3cqZAp">
@@ -11695,7 +11804,7 @@
     <node concept="2tJIrI" id="3SShbyxjDzU" role="jymVt" />
     <node concept="3Tm1VV" id="3SShbyxjywq" role="1B3o_S" />
     <node concept="3uibUv" id="3SShbyxjByS" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
     <node concept="3uibUv" id="3SShbyxjB$r" role="1zkMxy">
       <ref role="3uigEE" to="mu20:6L60FDzMFhw" resolve="GeneratedInstruction" />
@@ -11744,7 +11853,7 @@
             </node>
             <node concept="2ShNRf" id="3SShbyxnNjR" role="33vP2m">
               <node concept="1pGfFk" id="3SShbyxnNwG" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <ref role="37wK5l" to="33ny:~LinkedList.&lt;init&gt;()" resolve="LinkedList" />
                 <node concept="3uibUv" id="3SShbyxnNFf" role="1pMfVU">
                   <ref role="3uigEE" node="5caPF5jN5j6" resolve="NestedProgramInstruction" />
                 </node>
@@ -11756,7 +11865,7 @@
           <node concept="3cpWsn" id="3SShbyxnR7J" role="3cpWs9">
             <property role="TrG5h" value="current" />
             <node concept="3uibUv" id="3SShbyxnR7K" role="1tU5fm">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="3SShbyxnR9C" role="33vP2m">
               <ref role="3cqZAo" node="3SShbyxnJRE" resolve="program" />
@@ -11817,11 +11926,11 @@
           </node>
           <node concept="3y3z36" id="3SShbyxnRqF" role="2$JKZa">
             <node concept="10Nm6u" id="3SShbyxnRs6" role="3uHU7w" />
-            <node concept="2OqwBi" id="3SShbyxnRlu" role="3uHU7B">
+            <node concept="2OqwBi" id="3DHs9S8_8hp" role="3uHU7B">
               <node concept="37vLTw" id="3SShbyxnRjV" role="2Oq$k0">
                 <ref role="3cqZAo" node="3SShbyxnR7J" resolve="current" />
               </node>
-              <node concept="liA8E" id="3SShbyxnRpH" role="2OqNvi">
+              <node concept="liA8E" id="3DHs9S8_8lM" role="2OqNvi">
                 <ref role="37wK5l" node="5caPF5jNiVG" resolve="getParent" />
               </node>
             </node>
@@ -11845,7 +11954,7 @@
       <node concept="37vLTG" id="3SShbyxnJRE" role="3clF46">
         <property role="TrG5h" value="program" />
         <node concept="3uibUv" id="3SShbyxnJRD" role="1tU5fm">
-          <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+          <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
         </node>
       </node>
     </node>
@@ -11890,6 +11999,114 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3SShbyxnJid" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3DHs9S8r0Me" role="jymVt" />
+    <node concept="3clFb_" id="3DHs9S8r1qJ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="toString" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="3DHs9S8r1qK" role="1B3o_S" />
+      <node concept="17QB3L" id="3DHs9S8r29t" role="3clF45" />
+      <node concept="3clFbS" id="3DHs9S8r1qN" role="3clF47">
+        <node concept="3cpWs8" id="3DHs9S8r33$" role="3cqZAp">
+          <node concept="3cpWsn" id="3DHs9S8r33_" role="3cpWs9">
+            <property role="TrG5h" value="buffer" />
+            <node concept="3uibUv" id="3DHs9S8r33A" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~StringBuffer" resolve="StringBuffer" />
+            </node>
+            <node concept="2ShNRf" id="3DHs9S8r3ql" role="33vP2m">
+              <node concept="1pGfFk" id="3DHs9S8r3oK" role="2ShVmc">
+                <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;()" resolve="StringBuffer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3DHs9S8r7px" role="3cqZAp">
+          <node concept="3cpWsn" id="3DHs9S8r7p$" role="3cpWs9">
+            <property role="TrG5h" value="first" />
+            <node concept="10P_77" id="3DHs9S8r7pv" role="1tU5fm" />
+            <node concept="3clFbT" id="3DHs9S8r7J8" role="33vP2m">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3DHs9S8r2t4" role="3cqZAp">
+          <node concept="2GrKxI" id="3DHs9S8r2t5" role="2Gsz3X">
+            <property role="TrG5h" value="element" />
+          </node>
+          <node concept="3clFbS" id="3DHs9S8r2t6" role="2LFqv$">
+            <node concept="3clFbJ" id="3DHs9S8r7RC" role="3cqZAp">
+              <node concept="3clFbS" id="3DHs9S8r7RE" role="3clFbx">
+                <node concept="3clFbF" id="3DHs9S8r819" role="3cqZAp">
+                  <node concept="37vLTI" id="3DHs9S8r83W" role="3clFbG">
+                    <node concept="3clFbT" id="3DHs9S8r85b" role="37vLTx">
+                      <property role="3clFbU" value="false" />
+                    </node>
+                    <node concept="37vLTw" id="3DHs9S8r817" role="37vLTJ">
+                      <ref role="3cqZAo" node="3DHs9S8r7p$" resolve="first" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="3DHs9S8r7WA" role="3clFbw">
+                <ref role="3cqZAo" node="3DHs9S8r7p$" resolve="first" />
+              </node>
+              <node concept="9aQIb" id="3DHs9S8r85_" role="9aQIa">
+                <node concept="3clFbS" id="3DHs9S8r85A" role="9aQI4">
+                  <node concept="3clFbF" id="3DHs9S8r8a8" role="3cqZAp">
+                    <node concept="2OqwBi" id="3DHs9S8r8co" role="3clFbG">
+                      <node concept="37vLTw" id="3DHs9S8r8a7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3DHs9S8r33_" resolve="buffer" />
+                      </node>
+                      <node concept="liA8E" id="3DHs9S8r8kh" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                        <node concept="Xl_RD" id="3DHs9S8r8lz" role="37wK5m">
+                          <property role="Xl_RC" value=" -&gt; " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3DHs9S8r5ZD" role="3cqZAp">
+              <node concept="2OqwBi" id="3DHs9S8r65q" role="3clFbG">
+                <node concept="37vLTw" id="3DHs9S8r5ZB" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3DHs9S8r33_" resolve="buffer" />
+                </node>
+                <node concept="liA8E" id="3DHs9S8r6dj" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <node concept="2OqwBi" id="3DHs9S8r6g0" role="37wK5m">
+                    <node concept="2GrUjf" id="3DHs9S8r6eD" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3DHs9S8r2t5" resolve="element" />
+                    </node>
+                    <node concept="2OwXpG" id="3DHs9S8r6Pn" role="2OqNvi">
+                      <ref role="2Oxat5" node="5caPF5jN5Gn" resolve="label" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="3DHs9S8r2th" role="2GsD0m">
+            <ref role="3cqZAo" node="3SShbyxnOuv" resolve="elements" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3DHs9S8r2tl" role="3cqZAp">
+          <node concept="2OqwBi" id="3DHs9S8r4sL" role="3cqZAk">
+            <node concept="37vLTw" id="3DHs9S8r47_" role="2Oq$k0">
+              <ref role="3cqZAo" node="3DHs9S8r33_" resolve="buffer" />
+            </node>
+            <node concept="liA8E" id="3DHs9S8r5f6" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3DHs9S8r1qO" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="3SShbyxnJeM" role="jymVt" />
     <node concept="3clFb_" id="3SShbyxnP60" role="jymVt">
@@ -12385,7 +12602,7 @@
   </node>
   <node concept="312cEu" id="2cV6Bp1WvIh">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareMapInstruction" />
+    <property role="TrG5h" value="InterProcAwareMapInstruction" />
     <node concept="2tJIrI" id="2cV6Bp1WvIi" role="jymVt" />
     <node concept="3clFbW" id="2cV6Bp1WvIj" role="jymVt">
       <property role="DiZV1" value="false" />
@@ -12406,7 +12623,7 @@
       </node>
       <node concept="3clFbS" id="2cV6Bp1WvIp" role="3clF47">
         <node concept="XkiVB" id="2cV6Bp1WvIq" role="3cqZAp">
-          <ref role="37wK5l" node="5xyoMgvtsHp" resolve="ContextAwareWriteInstruction" />
+          <ref role="37wK5l" node="5xyoMgvtsHp" resolve="InterProcAwareWriteInstruction" />
           <node concept="37vLTw" id="2cV6Bp1WvIr" role="37wK5m">
             <ref role="3cqZAo" node="2cV6Bp1WvIl" resolve="var" />
           </node>
@@ -12442,7 +12659,7 @@
       </node>
       <node concept="3clFbS" id="2cV6Bp1WvIB" role="3clF47">
         <node concept="XkiVB" id="2cV6Bp1WvIC" role="3cqZAp">
-          <ref role="37wK5l" node="5xyoMgvtsHy" resolve="ContextAwareWriteInstruction" />
+          <ref role="37wK5l" node="5xyoMgvtsHy" resolve="InterProcAwareWriteInstruction" />
           <node concept="37vLTw" id="2cV6Bp1WvID" role="37wK5m">
             <ref role="3cqZAo" node="2cV6Bp1WvIx" resolve="ruleNodeReference" />
           </node>
@@ -12483,12 +12700,12 @@
     <node concept="2tJIrI" id="2cV6Bp1WvIH" role="jymVt" />
     <node concept="3Tm1VV" id="2cV6Bp1WvKm" role="1B3o_S" />
     <node concept="3uibUv" id="2cV6Bp1WA8C" role="1zkMxy">
-      <ref role="3uigEE" node="5xyoMgvtsHn" resolve="ContextAwareWriteInstruction" />
+      <ref role="3uigEE" node="5xyoMgvtsHn" resolve="InterProcAwareWriteInstruction" />
     </node>
   </node>
   <node concept="312cEu" id="2cV6Bp1WBvB">
     <property role="3GE5qa" value="instruction.ca" />
-    <property role="TrG5h" value="ContextAwareUnmapInstruction" />
+    <property role="TrG5h" value="InterProcAwareUnmapInstruction" />
     <node concept="2tJIrI" id="2cV6Bp1WBMJ" role="jymVt" />
     <node concept="312cEg" id="2cV6Bp1WD0R" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -12824,7 +13041,7 @@
       <property role="TrG5h" value="getOwnProgram" />
       <node concept="3Tm1VV" id="2cV6Bp1WGQ9" role="1B3o_S" />
       <node concept="3uibUv" id="2cV6Bp1WGQa" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="2cV6Bp1WGQb" role="3clF47">
         <node concept="3cpWs8" id="2cV6Bp1WGQc" role="3cqZAp">
@@ -12844,7 +13061,7 @@
         <node concept="1gVbGN" id="2cV6Bp1WGQi" role="3cqZAp">
           <node concept="2ZW3vV" id="2cV6Bp1WGQj" role="1gVkn0">
             <node concept="3uibUv" id="2cV6Bp1WGQk" role="2ZW6by">
-              <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+              <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
             </node>
             <node concept="37vLTw" id="2cV6Bp1WGQl" role="2ZW6bz">
               <ref role="3cqZAo" node="2cV6Bp1WGQd" resolve="program" />
@@ -12855,7 +13072,7 @@
           <node concept="1eOMI4" id="2cV6Bp1WGQn" role="3cqZAk">
             <node concept="10QFUN" id="2cV6Bp1WGQo" role="1eOMHV">
               <node concept="3uibUv" id="2cV6Bp1WGQp" role="10QFUM">
-                <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+                <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
               </node>
               <node concept="37vLTw" id="2cV6Bp1WGQq" role="10QFUP">
                 <ref role="3cqZAo" node="2cV6Bp1WGQd" resolve="program" />
@@ -12875,7 +13092,7 @@
       <property role="TrG5h" value="getParentProgram" />
       <node concept="3Tm1VV" id="2cV6Bp1WGQw" role="1B3o_S" />
       <node concept="3uibUv" id="2cV6Bp1WGQx" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="2cV6Bp1WGQy" role="3clF47">
         <node concept="3cpWs6" id="2cV6Bp1WGQz" role="3cqZAp">
@@ -12903,7 +13120,7 @@
       <property role="TrG5h" value="getRootProgram" />
       <node concept="3Tm1VV" id="2cV6Bp1WGQG" role="1B3o_S" />
       <node concept="3uibUv" id="2cV6Bp1WGQH" role="3clF45">
-        <ref role="3uigEE" node="5caPF5jNioP" resolve="ContextSensitiveProgram" />
+        <ref role="3uigEE" node="5caPF5jNioP" resolve="InterProceduralDataFlowGraph" />
       </node>
       <node concept="3clFbS" id="2cV6Bp1WGQI" role="3clF47">
         <node concept="3cpWs6" id="2cV6Bp1WGQJ" role="3cqZAp">
@@ -12930,7 +13147,7 @@
       <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
     </node>
     <node concept="3uibUv" id="2cV6Bp1WCRf" role="EKbjA">
-      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IContextAwareInstruction" />
+      <ref role="3uigEE" node="nj3EPh5PWU" resolve="IInterProcAwareInstruction" />
     </node>
   </node>
 </model>

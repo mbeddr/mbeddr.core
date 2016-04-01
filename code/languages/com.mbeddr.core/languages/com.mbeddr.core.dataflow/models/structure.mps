@@ -8,8 +8,8 @@
   <imports>
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -96,13 +96,9 @@
   </node>
   <node concept="1TIwiD" id="7TdqwvhyxII">
     <property role="1pbfSe" value="1339524533" />
-    <property role="TrG5h" value="ContextSensitiveAttribute" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <property role="TrG5h" value="InterProceduralProgramAttribute" />
+    <ref role="1TJDcQ" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
     <node concept="M6xJ_" id="7TdqwvhyxIJ" role="lGtFl">
-      <property role="Hh88m" value="isContextSensitive" />
-      <node concept="trNpa" id="7TdqwvhyxIL" role="EQaZv">
-        <ref role="trN6q" to="bj1v:5JpT3MjX6u9" resolve="Analyzer" />
-      </node>
       <node concept="tn0Fv" id="7TdqwvhyxIN" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
