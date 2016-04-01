@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.expressions" uuid="61c69711-ed61-4850-81d9-7714ff227fb0" languageVersion="2" moduleVersion="0">
+<language namespace="com.mbeddr.core.expressions" uuid="61c69711-ed61-4850-81d9-7714ff227fb0" languageVersion="3" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
