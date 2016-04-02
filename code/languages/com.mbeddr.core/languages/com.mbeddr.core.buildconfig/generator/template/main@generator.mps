@@ -53,9 +53,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -845,30 +842,6 @@
     <node concept="3G52F3" id="6GqYvBOfomQ" role="12RR68">
       <property role="TrG5h" value="ODIR" />
       <property role="3G5mJX" value="./bin" />
-      <node concept="17Uvod" id="7sUv6uyM9V0" role="lGtFl">
-        <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
-        <property role="2qtEX9" value="value" />
-        <node concept="3zFVjK" id="7sUv6uyM9V1" role="3zH0cK">
-          <node concept="3clFbS" id="7sUv6uyM9V2" role="2VODD2">
-            <node concept="3clFbF" id="7sUv6uyM9Wf" role="3cqZAp">
-              <node concept="3cpWs3" id="7sUv6uyMa6e" role="3clFbG">
-                <node concept="Xl_RD" id="7sUv6uyMa8n" role="3uHU7w">
-                  <property role="Xl_RC" value="bin" />
-                </node>
-                <node concept="3cpWs3" id="7sUv6uyM9Zw" role="3uHU7B">
-                  <node concept="Xl_RD" id="7sUv6uyM9We" role="3uHU7B">
-                    <property role="Xl_RC" value="." />
-                  </node>
-                  <node concept="10M0yZ" id="7sUv6uyMa0Q" role="3uHU7w">
-                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3G52F3" id="6GqYvBOfomR" role="12RR68">
       <property role="TrG5h" value="_OBJ" />
@@ -1140,19 +1113,8 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="3cpWs3" id="7sUv6uyM8jA" role="3uHU7B">
-                    <node concept="Xl_RD" id="7sUv6uyM8nn" role="3uHU7w">
-                      <property role="Xl_RC" value="%,$(_OBJ_" />
-                    </node>
-                    <node concept="3cpWs3" id="7sUv6uyM83U" role="3uHU7B">
-                      <node concept="Xl_RD" id="4o9sgv8R7xM" role="3uHU7B">
-                        <property role="Xl_RC" value="$(patsubst %,$(ODIR)" />
-                      </node>
-                      <node concept="10M0yZ" id="7sUv6uyM89U" role="3uHU7w">
-                        <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                        <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                      </node>
-                    </node>
+                  <node concept="Xl_RD" id="4o9sgv8R7xM" role="3uHU7B">
+                    <property role="Xl_RC" value="$(patsubst %,$(ODIR)/%,$(_OBJ_" />
                   </node>
                 </node>
               </node>
@@ -1870,14 +1832,8 @@
                 <node concept="3clFbF" id="Dp4TemBUy$" role="3cqZAp">
                   <node concept="3cpWs3" id="MGIVVe$Jb" role="3clFbG">
                     <node concept="3cpWs3" id="2nSRgleF4td" role="3uHU7B">
-                      <node concept="3cpWs3" id="7sUv6uyM5jv" role="3uHU7B">
-                        <node concept="10M0yZ" id="7sUv6uyM62u" role="3uHU7w">
-                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                          <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                        </node>
-                        <node concept="Xl_RD" id="2nSRgleF4th" role="3uHU7B">
-                          <property role="Xl_RC" value="." />
-                        </node>
+                      <node concept="Xl_RD" id="2nSRgleF4th" role="3uHU7B">
+                        <property role="Xl_RC" value="./" />
                       </node>
                       <node concept="2OqwBi" id="Dp4TemBUyC" role="3uHU7w">
                         <node concept="30H73N" id="Dp4TemBUy_" role="2Oq$k0" />
