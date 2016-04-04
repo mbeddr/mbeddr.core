@@ -242,6 +242,7 @@
     <node concept="lIfQi" id="7nMAuIoReIl" role="N3F5h">
       <property role="TrG5h" value="foo" />
       <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="7nMAuIoRfxZ" role="lIfQt">
         <ref role="3cM6IK" node="7nMAuIoRffR" resolve="iwillfail" />
       </node>
