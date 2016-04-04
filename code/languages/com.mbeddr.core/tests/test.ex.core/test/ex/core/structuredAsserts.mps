@@ -241,6 +241,7 @@
     </node>
     <node concept="lIfQi" id="7nMAuIoReIl" role="N3F5h">
       <property role="TrG5h" value="foo" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="7nMAuIoRfxZ" role="lIfQt">
         <ref role="3cM6IK" node="7nMAuIoRffR" resolve="iwillfail" />
       </node>
@@ -251,6 +252,7 @@
     <node concept="lIfQi" id="6TAwvhVWkik" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkil" role="lIfQt">
         <ref role="3cM6IK" node="6Iyv0noEDfE" resolve="structuredAsserts" />
       </node>

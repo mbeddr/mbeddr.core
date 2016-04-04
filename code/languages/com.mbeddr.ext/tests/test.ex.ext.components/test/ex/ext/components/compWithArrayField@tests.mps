@@ -202,6 +202,7 @@
     <property role="TrG5h" value="ComponentWithArray" />
     <node concept="lIfQi" id="4Ru$s7zAIdb" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIdc" role="lIfQt">
         <ref role="3cM6IK" node="21TQWIH1PCg" resolve="testCase1" />
       </node>

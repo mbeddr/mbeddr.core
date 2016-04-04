@@ -366,6 +366,7 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zJER0" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zJER1" role="lIfQt">
         <ref role="3cM6IK" node="3YyHFqO2guu" resolve="testCase1" />
       </node>

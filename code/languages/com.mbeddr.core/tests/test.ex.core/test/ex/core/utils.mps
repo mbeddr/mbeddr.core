@@ -1110,6 +1110,7 @@
     <property role="TrG5h" value="Main" />
     <node concept="lIfQi" id="6TAwvhVWkgA" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkgB" role="lIfQt">
         <ref role="3cM6IK" node="5oGU$loBUC2" resolve="TestGSwitch" />
       </node>

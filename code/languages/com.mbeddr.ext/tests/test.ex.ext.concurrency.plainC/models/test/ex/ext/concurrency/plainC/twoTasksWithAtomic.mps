@@ -603,6 +603,7 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zAKiL" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKiM" role="lIfQt">
         <ref role="3cM6IK" node="6ndohCVa4Kb" resolve="taskTest1" />
       </node>

@@ -582,6 +582,7 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zJET0" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zJET1" role="lIfQt">
         <ref role="3cM6IK" node="5JmNU9PApDM" resolve="testVar" />
       </node>

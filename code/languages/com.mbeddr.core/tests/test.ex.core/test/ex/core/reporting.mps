@@ -270,6 +270,7 @@
     </node>
     <node concept="lIfQi" id="6TAwvhVWkhn" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkho" role="lIfQt">
         <ref role="3cM6IK" node="5oFMniD7oK0" resolve="testReporting" />
       </node>

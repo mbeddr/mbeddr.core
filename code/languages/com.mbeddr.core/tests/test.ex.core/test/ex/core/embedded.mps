@@ -189,6 +189,7 @@
     </node>
     <node concept="lIfQi" id="6TAwvhVWkgY" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkgZ" role="lIfQt">
         <ref role="3cM6IK" node="7uAyNpAB9fj" resolve="testCase1" />
       </node>

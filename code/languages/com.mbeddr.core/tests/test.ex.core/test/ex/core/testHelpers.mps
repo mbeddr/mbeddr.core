@@ -145,6 +145,7 @@
     <property role="TrG5h" value="TestHelperTest" />
     <node concept="lIfQi" id="6TAwvhVWkhJ" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhK" role="lIfQt">
         <ref role="3cM6IK" node="7Uz1bYM5MLa" resolve="testCase1" />
       </node>

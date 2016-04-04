@@ -245,6 +245,7 @@
     </node>
     <node concept="lIfQi" id="6TAwvhVWkhF" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhG" role="lIfQt">
         <ref role="3cM6IK" node="53$tGqN_0Xl" resolve="testNestedStruct" />
       </node>

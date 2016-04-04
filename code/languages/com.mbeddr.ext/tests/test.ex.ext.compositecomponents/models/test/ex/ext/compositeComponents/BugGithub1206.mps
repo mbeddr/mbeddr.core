@@ -148,6 +148,7 @@
     <property role="TrG5h" value="Bug1206" />
     <node concept="lIfQi" id="4Ru$s7zAKd_" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKdA" role="lIfQt">
         <ref role="3cM6IK" node="5sHAGxmHRFS" resolve="testCase1" />
       </node>

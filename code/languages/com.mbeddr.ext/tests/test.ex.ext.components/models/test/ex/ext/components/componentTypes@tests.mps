@@ -12,7 +12,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
   </languages>
   <imports />
   <registry>
@@ -217,6 +217,7 @@
     <property role="TrG5h" value="ComponentTypes" />
     <node concept="lIfQi" id="4Ru$s7zAIcG" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcH" role="lIfQt">
         <ref role="3cM6IK" node="7XQHhkHfxHu" resolve="testComponentTypes" />
       </node>

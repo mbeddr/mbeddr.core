@@ -325,6 +325,7 @@
     <property role="TrG5h" value="HelloSerializable" />
     <node concept="lIfQi" id="4Ru$s7zAHUh" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAHUi" role="lIfQt">
         <ref role="3cM6IK" node="7PpDuQ7e1ty" resolve="testSerializeDeserializeToBuffer" />
       </node>
