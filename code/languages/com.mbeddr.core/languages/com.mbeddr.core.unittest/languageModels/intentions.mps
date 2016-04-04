@@ -2,11 +2,11 @@
 <model ref="r:a30a2963-6ae8-4d92-a68a-8f80024f470c(com.mbeddr.core.unittest.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -178,6 +178,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -1048,6 +1049,84 @@
     </node>
     <node concept="1SWQZ3" id="3TftwIKIXDf" role="lGtFl">
       <property role="1SWRpm" value="TESTING" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5ptpUgMv2GG">
+    <property role="TrG5h" value="AddInitializer" />
+    <ref role="2ZfgGC" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
+    <node concept="2S6ZIM" id="5ptpUgMv2GH" role="2ZfVej">
+      <node concept="3clFbS" id="5ptpUgMv2GI" role="2VODD2">
+        <node concept="3clFbF" id="5ptpUgMv2I7" role="3cqZAp">
+          <node concept="Xl_RD" id="5ptpUgMv2I6" role="3clFbG">
+            <property role="Xl_RC" value="Add Test Initializer" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5ptpUgMv2GJ" role="2ZfgGD">
+      <node concept="3clFbS" id="5ptpUgMv2GK" role="2VODD2">
+        <node concept="3clFbF" id="5ptpUgMv4u6" role="3cqZAp">
+          <node concept="2OqwBi" id="5ptpUgMv5NO" role="3clFbG">
+            <node concept="2OqwBi" id="5ptpUgMv4__" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5ptpUgMv4u5" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5ptpUgMv5iU" role="2OqNvi">
+                <ref role="3Tt5mk" to="yz9a:5ptpUgMv0sT" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="5ptpUgMv6mE" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5ptpUgMv31T" role="2ZfVeh">
+      <node concept="3clFbS" id="5ptpUgMv31U" role="2VODD2">
+        <node concept="3clFbF" id="5ptpUgMv334" role="3cqZAp">
+          <node concept="2OqwBi" id="5ptpUgMv44Y" role="3clFbG">
+            <node concept="2OqwBi" id="5ptpUgMv3cL" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5ptpUgMv333" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5ptpUgMv3$E" role="2OqNvi">
+                <ref role="3Tt5mk" to="yz9a:5ptpUgMv0sT" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5ptpUgMv4oP" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="76Xv5Ts4gdg">
+    <property role="TrG5h" value="toggleEntryPoint" />
+    <ref role="2ZfgGC" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
+    <node concept="2S6ZIM" id="76Xv5Ts4gdh" role="2ZfVej">
+      <node concept="3clFbS" id="76Xv5Ts4gdi" role="2VODD2">
+        <node concept="3clFbF" id="76Xv5Ts4gm1" role="3cqZAp">
+          <node concept="Xl_RD" id="76Xv5Ts4gm0" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Entrypoint" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="76Xv5Ts4gdj" role="2ZfgGD">
+      <node concept="3clFbS" id="76Xv5Ts4gdk" role="2VODD2">
+        <node concept="3clFbF" id="76Xv5Ts4gpl" role="3cqZAp">
+          <node concept="37vLTI" id="76Xv5Ts4hDa" role="3clFbG">
+            <node concept="2OqwBi" id="76Xv5Ts4gwO" role="37vLTJ">
+              <node concept="2Sf5sV" id="76Xv5Ts4gpk" role="2Oq$k0" />
+              <node concept="3TrcHB" id="76Xv5Ts4hBa" role="2OqNvi">
+                <ref role="3TsBF5" to="yz9a:7nMAuIoJbju" resolve="entrypoint" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="76Xv5Ts4hFC" role="37vLTx">
+              <node concept="2OqwBi" id="76Xv5Ts4hPy" role="3fr31v">
+                <node concept="2Sf5sV" id="76Xv5Ts4hG8" role="2Oq$k0" />
+                <node concept="3TrcHB" id="76Xv5Ts4iyY" role="2OqNvi">
+                  <ref role="3TsBF5" to="yz9a:7nMAuIoJbju" resolve="entrypoint" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

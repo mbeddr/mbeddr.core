@@ -64,6 +64,7 @@
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
@@ -216,17 +217,15 @@
             <ref role="3ZVs_2" node="6Iyv0noEDgv" resolve="y" />
           </node>
         </node>
-        <node concept="3XISUE" id="6Iyv0noF7yX" role="3XIRFZ" />
       </node>
-    </node>
-    <node concept="2NXPZ9" id="6Iyv0noEDfC" role="N3F5h">
-      <property role="TrG5h" value="empty_1373047033181_3" />
     </node>
     <node concept="2NXPZ9" id="6Iyv0noEDfD" role="N3F5h">
       <property role="TrG5h" value="empty_1373047033316_4" />
     </node>
     <node concept="lIfQi" id="6TAwvhVWkik" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="3HjyOP" value="true" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkil" role="lIfQt">
         <ref role="3cM6IK" node="6Iyv0noEDfE" resolve="structuredAsserts" />
       </node>

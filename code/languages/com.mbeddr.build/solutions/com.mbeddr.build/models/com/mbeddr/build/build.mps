@@ -3440,6 +3440,12 @@
             <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1SiIV0" id="cq0bwoh1hH" role="3bR37C">
+          <node concept="3bR9La" id="cq0bwoh1hI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:5cCcm$KATVz" resolve="jetbrains.mps.lang.migration.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43JW" role="2G$12L">
         <property role="BnDLt" value="true" />
