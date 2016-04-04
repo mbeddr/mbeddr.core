@@ -81,7 +81,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1089,6 +1089,41 @@
               </node>
             </node>
             <node concept="3w_OXm" id="5ptpUgMv4oP" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="76Xv5Ts4gdg">
+    <property role="TrG5h" value="toggleEntryPoint" />
+    <ref role="2ZfgGC" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
+    <node concept="2S6ZIM" id="76Xv5Ts4gdh" role="2ZfVej">
+      <node concept="3clFbS" id="76Xv5Ts4gdi" role="2VODD2">
+        <node concept="3clFbF" id="76Xv5Ts4gm1" role="3cqZAp">
+          <node concept="Xl_RD" id="76Xv5Ts4gm0" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Entrypoint" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="76Xv5Ts4gdj" role="2ZfgGD">
+      <node concept="3clFbS" id="76Xv5Ts4gdk" role="2VODD2">
+        <node concept="3clFbF" id="76Xv5Ts4gpl" role="3cqZAp">
+          <node concept="37vLTI" id="76Xv5Ts4hDa" role="3clFbG">
+            <node concept="2OqwBi" id="76Xv5Ts4gwO" role="37vLTJ">
+              <node concept="2Sf5sV" id="76Xv5Ts4gpk" role="2Oq$k0" />
+              <node concept="3TrcHB" id="76Xv5Ts4hBa" role="2OqNvi">
+                <ref role="3TsBF5" to="yz9a:7nMAuIoJbju" resolve="entrypoint" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="76Xv5Ts4hFC" role="37vLTx">
+              <node concept="2OqwBi" id="76Xv5Ts4hPy" role="3fr31v">
+                <node concept="2Sf5sV" id="76Xv5Ts4hG8" role="2Oq$k0" />
+                <node concept="3TrcHB" id="76Xv5Ts4iyY" role="2OqNvi">
+                  <ref role="3TsBF5" to="yz9a:7nMAuIoJbju" resolve="entrypoint" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
