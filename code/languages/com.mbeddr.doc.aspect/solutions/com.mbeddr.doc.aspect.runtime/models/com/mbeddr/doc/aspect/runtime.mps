@@ -43,6 +43,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -159,6 +160,10 @@
       <node concept="37vLTG" id="tBHOvWeyo$" role="3clF46">
         <property role="TrG5h" value="concept" />
         <node concept="3bZ5Sz" id="tBHOvWeyoU" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1o6EjwiUgZA" role="3clF46">
+        <property role="TrG5h" value="property" />
+        <node concept="17QB3L" id="1o6EjwiUh32" role="1tU5fm" />
       </node>
       <node concept="3Tqbb2" id="tBHOvWez_9" role="3clF45" />
       <node concept="3Tm1VV" id="tBHOvWexSI" role="1B3o_S" />
@@ -288,6 +293,9 @@
                         <node concept="37vLTw" id="qh7UMGiCw$" role="37wK5m">
                           <ref role="3cqZAo" node="qh7UMGipdd" resolve="concept" />
                         </node>
+                        <node concept="37vLTw" id="1o6EjwiUha5" role="37wK5m">
+                          <ref role="3cqZAo" node="1o6EjwiUgm7" resolve="conceptProperty" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -340,16 +348,20 @@
         <property role="TrG5h" value="concept" />
         <node concept="3bZ5Sz" id="qh7UMGipdc" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="1o6EjwiUgm7" role="3clF46">
+        <property role="TrG5h" value="conceptProperty" />
+        <node concept="17QB3L" id="1o6EjwiUgug" role="1tU5fm" />
+      </node>
       <node concept="3Tqbb2" id="qh7UMGiC3j" role="3clF45" />
       <node concept="P$JXv" id="qh7UMGiEZg" role="lGtFl">
         <node concept="TZ5HA" id="qh7UMGiEZh" role="TZ5H$">
           <node concept="1dT_AC" id="qh7UMGiEZi" role="1dT_Ay">
-            <property role="1dT_AB" value="Retrieves the documentation node for the given concept by searching first in documentation aspect of the concept " />
+            <property role="1dT_AB" value="Retrieves the documentation node for the given concept by searching first in the documentation aspect of the concept " />
           </node>
         </node>
         <node concept="TZ5HA" id="qh7UMGj36v" role="TZ5H$">
           <node concept="1dT_AC" id="qh7UMGj36w" role="1dT_Ay">
-            <property role="1dT_AB" value="language and subsequently in documentation aspects of all extending languages." />
+            <property role="1dT_AB" value="language and subsequently in the documentation aspects of all extending languages." />
           </node>
         </node>
       </node>

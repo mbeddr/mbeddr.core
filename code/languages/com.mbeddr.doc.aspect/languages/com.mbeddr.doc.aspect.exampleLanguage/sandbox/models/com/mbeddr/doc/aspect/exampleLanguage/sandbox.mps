@@ -7,7 +7,9 @@
   <imports />
   <registry>
     <language id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage">
-      <concept id="7952933245487812686" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChild1" flags="ng" index="lV6VC" />
+      <concept id="7952933245487812686" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChild1" flags="ng" index="lV6VC">
+        <property id="1587141976994883238" name="prop1" index="4SCYu" />
+      </concept>
       <concept id="7952933245487813087" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChild2" flags="ng" index="lV6XT" />
       <concept id="1130241639305082012" name="com.mbeddr.doc.aspect.exampleLanguage.structure.DocumentedChildWithRef" flags="ng" index="1izhxk">
         <reference id="1130241639305082013" name="refChild" index="1izhxl" />
@@ -19,7 +21,9 @@
     </language>
   </registry>
   <node concept="3VmO0G" id="5gWJwbZmr7g">
-    <node concept="lV6VC" id="6TuvEpVGBn3" role="lV6YC" />
+    <node concept="lV6VC" id="6TuvEpVGBn3" role="lV6YC">
+      <property role="4SCYu" value="some value" />
+    </node>
     <node concept="lV6XT" id="6TuvEpVGBn8" role="lV6YC" />
     <node concept="3N$ftE" id="4jXS_uRrj2E" role="lV6YC" />
     <node concept="1izhxk" id="YJrcxt8DjZ" role="lV6YC">

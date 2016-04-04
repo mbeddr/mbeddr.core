@@ -13,10 +13,13 @@
   </imports>
   <registry>
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
+      <concept id="1587141976994809824" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyAnnotation" flags="ng" index="4TqVo">
+        <reference id="1587141976994809836" name="property" index="4TqVk" />
+      </concept>
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
-      <concept id="3368454212696573042" name="com.mbeddr.doc.aspect.structure.ExampleInstanceWord" flags="ng" index="1rjqcK">
+      <concept id="3368454212696573042" name="com.mbeddr.doc.aspect.structure.SampleInstanceWord" flags="ng" index="1rjqcK">
         <child id="3368454212696573045" name="sampleInstance" index="1rjqcR" />
       </concept>
     </language>
@@ -244,6 +247,24 @@
               <ref role="1_0GAl" node="UK_oBpA4O5" resolve="ConceptDoc1" />
             </node>
             <node concept="19SUe$" id="agjuZp0uev" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="1o6EjwiT2sm" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="1o6EjwiT2xF" role="1_0VJ0">
+        <property role="TrG5h" value="PropertyDoc1" />
+        <property role="1_0VJr" value="DocumentedChild1.prop1" />
+        <node concept="4TqVo" id="1o6EjwiT6Dl" role="lGtFl">
+          <ref role="3nadW_" to="hauh:6TuvEpVGx1e" resolve="DocumentedChild1" />
+          <ref role="4TqVk" to="hauh:1o6EjwiT2qA" resolve="prop1" />
+        </node>
+        <node concept="1_0LV8" id="1o6EjwiT6DW" role="1_0VJ0">
+          <node concept="19SGf9" id="1o6EjwiT6DX" role="1_0LWR">
+            <node concept="19SUe$" id="1o6EjwiT6DY" role="19SJt6">
+              <property role="19SUeA" value="prop1 contains value of the prop1 attribute" />
+            </node>
           </node>
         </node>
       </node>

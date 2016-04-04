@@ -43,12 +43,17 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -138,21 +143,113 @@
     <node concept="2SaL7w" id="agjuZpbVDA" role="2ZfVeh">
       <node concept="3clFbS" id="agjuZpbVDB" role="2VODD2">
         <node concept="3clFbF" id="4jXS_uRpWXo" role="3cqZAp">
-          <node concept="2OqwBi" id="4jXS_uRpY4D" role="3clFbG">
-            <node concept="2OqwBi" id="4jXS_uRpX6M" role="2Oq$k0">
-              <node concept="2Sf5sV" id="4jXS_uRpWXm" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="4jXS_uRpXMj" role="2OqNvi">
-                <node concept="3CFYIy" id="4jXS_uRpXUu" role="3CFYIz">
-                  <ref role="3CFYIx" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+          <node concept="1Wc70l" id="1o6EjwiT4iv" role="3clFbG">
+            <node concept="2OqwBi" id="1o6EjwiT4Y8" role="3uHU7w">
+              <node concept="2OqwBi" id="1o6EjwiT4va" role="2Oq$k0">
+                <node concept="2Sf5sV" id="1o6EjwiT4mX" role="2Oq$k0" />
+                <node concept="3CFZ6_" id="1o6EjwiT4MT" role="2OqNvi">
+                  <node concept="3CFYIy" id="1o6EjwiT4Rx" role="3CFYIz">
+                    <ref role="3CFYIx" to="748g:1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+                  </node>
                 </node>
               </node>
+              <node concept="3w_OXm" id="1o6EjwiT5dD" role="2OqNvi" />
             </node>
-            <node concept="3w_OXm" id="4jXS_uRpYM9" role="2OqNvi" />
+            <node concept="2OqwBi" id="4jXS_uRpY4D" role="3uHU7B">
+              <node concept="2OqwBi" id="4jXS_uRpX6M" role="2Oq$k0">
+                <node concept="2Sf5sV" id="4jXS_uRpWXm" role="2Oq$k0" />
+                <node concept="3CFZ6_" id="4jXS_uRpXMj" role="2OqNvi">
+                  <node concept="3CFYIy" id="4jXS_uRpXUu" role="3CFYIz">
+                    <ref role="3CFYIx" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="4jXS_uRpYM9" role="2OqNvi" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="YJrcxt7oh7" role="3cqZAp">
           <node concept="3SKdUq" id="YJrcxt7ohk" role="3SKWNk">
             <property role="3SKdUp" value="todo: how to check that parent model is a custom aspect" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1o6EjwiT2I0">
+    <property role="TrG5h" value="AddPropertyDocumentation" />
+    <ref role="2ZfgGC" to="2c95:2TZO3Dbv6N7" resolve="Section" />
+    <node concept="2S6ZIM" id="1o6EjwiT2I1" role="2ZfVej">
+      <node concept="3clFbS" id="1o6EjwiT2I2" role="2VODD2">
+        <node concept="3clFbF" id="1o6EjwiT2K5" role="3cqZAp">
+          <node concept="Xl_RD" id="1o6EjwiT2K6" role="3clFbG">
+            <property role="Xl_RC" value="Add Reference to Documented Property" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1o6EjwiT2I3" role="2ZfgGD">
+      <node concept="3clFbS" id="1o6EjwiT2I4" role="2VODD2">
+        <node concept="3cpWs8" id="1o6EjwiT5lm" role="3cqZAp">
+          <node concept="3cpWsn" id="1o6EjwiT5ln" role="3cpWs9">
+            <property role="TrG5h" value="documentedPropertyAttr" />
+            <node concept="3Tqbb2" id="1o6EjwiT5lo" role="1tU5fm">
+              <ref role="ehGHo" to="748g:1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+            </node>
+            <node concept="2ShNRf" id="1o6EjwiT5lp" role="33vP2m">
+              <node concept="3zrR0B" id="1o6EjwiT5lq" role="2ShVmc">
+                <node concept="3Tqbb2" id="1o6EjwiT5lr" role="3zrR0E">
+                  <ref role="ehGHo" to="748g:1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1o6EjwiT5ls" role="3cqZAp">
+          <node concept="2OqwBi" id="1o6EjwiT5lt" role="3clFbG">
+            <node concept="2OqwBi" id="1o6EjwiT5lu" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1o6EjwiT5lv" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="1o6EjwiT5lw" role="2OqNvi">
+                <node concept="3CFYIy" id="1o6EjwiT5xB" role="3CFYIz">
+                  <ref role="3CFYIx" to="748g:1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="2oxUTD" id="1o6EjwiT5ly" role="2OqNvi">
+              <node concept="37vLTw" id="1o6EjwiT5lz" role="2oxUTC">
+                <ref role="3cqZAo" node="1o6EjwiT5ln" resolve="documentedPropertyAttr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1o6EjwiT2Ug" role="2ZfVeh">
+      <node concept="3clFbS" id="1o6EjwiT2Uh" role="2VODD2">
+        <node concept="3clFbF" id="1o6EjwiT2Vs" role="3cqZAp">
+          <node concept="1Wc70l" id="1o6EjwiT3cz" role="3clFbG">
+            <node concept="2OqwBi" id="1o6EjwiT3Sv" role="3uHU7w">
+              <node concept="2OqwBi" id="1o6EjwiT3pj" role="2Oq$k0">
+                <node concept="2Sf5sV" id="1o6EjwiT3h6" role="2Oq$k0" />
+                <node concept="3CFZ6_" id="1o6EjwiT3H7" role="2OqNvi">
+                  <node concept="3CFYIy" id="1o6EjwiT3LO" role="3CFYIz">
+                    <ref role="3CFYIx" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="1o6EjwiT467" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="1o6EjwiT2Vu" role="3uHU7B">
+              <node concept="2OqwBi" id="1o6EjwiT2Vv" role="2Oq$k0">
+                <node concept="2Sf5sV" id="1o6EjwiT2Vw" role="2Oq$k0" />
+                <node concept="3CFZ6_" id="1o6EjwiT2Vx" role="2OqNvi">
+                  <node concept="3CFYIy" id="1o6EjwiT30m" role="3CFYIz">
+                    <ref role="3CFYIx" to="748g:1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="1o6EjwiT2Vz" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>
