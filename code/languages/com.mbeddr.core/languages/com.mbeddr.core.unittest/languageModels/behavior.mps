@@ -2101,7 +2101,21 @@
   <node concept="13h7C7" id="6TAwvhVSiuG">
     <ref role="13h7C2" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
     <node concept="13hLZK" id="6TAwvhVSiuH" role="13h7CW">
-      <node concept="3clFbS" id="6TAwvhVSiuI" role="2VODD2" />
+      <node concept="3clFbS" id="6TAwvhVSiuI" role="2VODD2">
+        <node concept="3clFbF" id="cq0bwoyI$b" role="3cqZAp">
+          <node concept="37vLTI" id="cq0bwoyMvk" role="3clFbG">
+            <node concept="3clFbT" id="cq0bwoyMvQ" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="cq0bwoyLnB" role="37vLTJ">
+              <node concept="13iPFW" id="cq0bwoyI$a" role="2Oq$k0" />
+              <node concept="3TrcHB" id="cq0bwoyM1v" role="2OqNvi">
+                <ref role="3TsBF5" to="yz9a:7nMAuIoJbju" resolve="entrypoint" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6TAwvhVSiv4" role="13h7CS">
       <property role="13i0iv" value="false" />

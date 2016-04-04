@@ -79,6 +79,7 @@
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
@@ -282,6 +283,7 @@
     <node concept="lIfQi" id="4Ru$s7zAJgj" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAJgk" role="lIfQt">
         <ref role="3cM6IK" node="4hMIGYxhfZ7" resolve="taskTest1" />
       </node>
