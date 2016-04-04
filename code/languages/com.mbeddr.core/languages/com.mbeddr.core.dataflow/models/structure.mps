@@ -61,7 +61,7 @@
     <property role="TrG5h" value="EmitInlineStatement" />
     <property role="34LRSv" value="inline" />
     <property role="R4oN_" value="inline" />
-    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="ContextAwareEmitStatement" />
+    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="InterProceduralEmitStatement" />
     <node concept="1TJgyj" id="_oDvx5U56o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="target" />
@@ -80,7 +80,7 @@
     <property role="TrG5h" value="EmitEntryPointStatement" />
     <property role="34LRSv" value="entry point" />
     <property role="R4oN_" value="entry point" />
-    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="ContextAwareEmitStatement" />
+    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="InterProceduralEmitStatement" />
     <node concept="1TJgyj" id="2U8JvBXrt1g" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="point" />
@@ -90,13 +90,13 @@
   </node>
   <node concept="1TIwiD" id="1O3WvD8NPAO">
     <property role="1pbfSe" value="1708346286" />
-    <property role="TrG5h" value="IsContextSensitiveExpression" />
-    <property role="34LRSv" value="isContextSensitive" />
+    <property role="TrG5h" value="IsInterProceduralExpression" />
+    <property role="34LRSv" value="isInterProcedural" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7TdqwvhyxII">
     <property role="1pbfSe" value="1339524533" />
-    <property role="TrG5h" value="InterProceduralProgramAttribute" />
+    <property role="TrG5h" value="InterProceduralDataFlowGraphAttribute" />
     <ref role="1TJDcQ" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
     <node concept="M6xJ_" id="7TdqwvhyxIJ" role="lGtFl">
       <node concept="tn0Fv" id="7TdqwvhyxIN" role="HhnKV">
@@ -108,7 +108,7 @@
     <property role="1pbfSe" value="669036516" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="ContextAwareEmitStatement" />
+    <property role="TrG5h" value="InterProceduralEmitStatement" />
     <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
   </node>
   <node concept="1TIwiD" id="3u8ubzKrgBU">
@@ -137,7 +137,7 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2cV6Bp1XCuA" role="PzmwI">
-      <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IContextAwareEmitStatement" />
+      <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IInterProceduralEmitStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="2cV6Bp1Wvtp">
@@ -147,12 +147,12 @@
     <property role="R4oN_" value="unmap formal parameter" />
     <ref role="1TJDcQ" to="tp41:hz_H088" resolve="BaseEmitVariableStatement" />
     <node concept="PrWs8" id="2cV6Bp1XCuC" role="PzmwI">
-      <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IContextAwareEmitStatement" />
+      <ref role="PrY4T" node="2cV6Bp1XC9G" resolve="IInterProceduralEmitStatement" />
     </node>
   </node>
   <node concept="PlHQZ" id="2cV6Bp1XC9G">
     <property role="1pbfSe" value="1697750242" />
-    <property role="TrG5h" value="IContextAwareEmitStatement" />
+    <property role="TrG5h" value="IInterProceduralEmitStatement" />
   </node>
 </model>
 

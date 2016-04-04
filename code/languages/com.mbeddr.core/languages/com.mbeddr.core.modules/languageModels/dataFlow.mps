@@ -381,12 +381,12 @@
       </concept>
     </language>
     <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
-      <concept id="9101047003798444974" name="com.mbeddr.core.dataflow.structure.InterProceduralProgramAttribute" flags="ng" index="2JLR6D" />
+      <concept id="9101047003798444974" name="com.mbeddr.core.dataflow.structure.InterProceduralDataFlowGraphAttribute" flags="ng" index="2JLR6D" />
       <concept id="673470630035214411" name="com.mbeddr.core.dataflow.structure.EmitInlineStatement" flags="ng" index="1cGfmN">
         <child id="673470630035224866" name="point" index="1cGdNq" />
         <child id="673470630035214744" name="target" index="1cGfhw" />
       </concept>
-      <concept id="2090780709295708596" name="com.mbeddr.core.dataflow.structure.IsContextSensitiveExpression" flags="ng" index="1lNaxe" />
+      <concept id="2090780709295708596" name="com.mbeddr.core.dataflow.structure.IsInterProceduralExpression" flags="ng" index="1lNaxe" />
       <concept id="2538651910168211985" name="com.mbeddr.core.dataflow.structure.EmitMapStatement" flags="ng" index="1yMAxB">
         <child id="7155423771307544990" name="source" index="DojQs" />
       </concept>
@@ -2416,7 +2416,7 @@
         <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
       </node>
     </node>
-    <node concept="2JLR6D" id="3SShbyxqkac" role="lGtFl" />
+    <node concept="2JLR6D" id="1q3AWbNenFC" role="lGtFl" />
   </node>
   <node concept="Qs71p" id="7d9zFs_$HfD">
     <property role="3GE5qa" value="analyzers.init" />

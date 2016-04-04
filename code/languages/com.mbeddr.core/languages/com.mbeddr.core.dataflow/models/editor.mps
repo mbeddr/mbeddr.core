@@ -117,13 +117,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="1O3WvD8NPAU">
-    <ref role="1XX52x" to="ybok:1O3WvD8NPAO" resolve="IsContextSensitiveExpression" />
+    <ref role="1XX52x" to="ybok:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
     <node concept="3F0ifn" id="1O3WvD8NPAW" role="2wV5jI">
-      <property role="3F0ifm" value="isContextSensitive" />
+      <property role="3F0ifm" value="isInterProcedural" />
     </node>
   </node>
   <node concept="24kQdi" id="7TdqwvhyxIU">
-    <ref role="1XX52x" to="ybok:7TdqwvhyxII" resolve="InterProceduralProgramAttribute" />
+    <ref role="1XX52x" to="ybok:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
     <node concept="3EZMnI" id="3QkagoxiVAF" role="2wV5jI">
       <node concept="2iRkQZ" id="3QkagoxiVAI" role="2iSdaV" />
       <node concept="3F0ifn" id="7TdqwvhyxMi" role="3EZMnx">

@@ -56,7 +56,7 @@
     </language>
   </registry>
   <node concept="1YbPZF" id="1O3WvD8NPZq">
-    <property role="TrG5h" value="typeof_IsContextSensitiveExpression" />
+    <property role="TrG5h" value="typeof_IsInterProceduralExpression" />
     <node concept="3clFbS" id="1O3WvD8NPZr" role="18ibNy">
       <node concept="1Z5TYs" id="1O3WvD8NQ1Z" role="3cqZAp">
         <node concept="mw_s8" id="1O3WvD8NQ2r" role="1ZfhKB">
@@ -77,7 +77,7 @@
     </node>
     <node concept="1YaCAy" id="1O3WvD8NPZt" role="1YuTPh">
       <property role="TrG5h" value="expression" />
-      <ref role="1YaFvo" to="ybok:1O3WvD8NPAO" resolve="IsContextSensitiveExpression" />
+      <ref role="1YaFvo" to="ybok:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
     </node>
   </node>
 </model>
