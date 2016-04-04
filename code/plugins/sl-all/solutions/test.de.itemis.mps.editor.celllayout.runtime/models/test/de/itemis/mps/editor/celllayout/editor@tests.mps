@@ -193,7 +193,7 @@
       <concept id="492440529738339434" name="test.de.itemis.mps.editor.celllayout.lang.structure.HorizontalWrapper" flags="ng" index="26QDhB">
         <child id="492440529738339435" name="child" index="26QDhA" />
       </concept>
-      <concept id="1609776727060595387" name="test.de.itemis.mps.editor.celllayout.lang.structure.TestCase_Incremental_ShrinkHorizontalLine" flags="ng" index="2mt57s">
+      <concept id="1609776727060595387" name="test.de.itemis.mps.editor.celllayout.lang.structure.TestCase_ShrinkHorizontalLine" flags="ng" index="2mt57s">
         <property id="1609776727060595420" name="property1" index="2mt56V" />
       </concept>
       <concept id="2397858322422944047" name="test.de.itemis.mps.editor.celllayout.lang.structure.TestCase_GridLayoutFlatten" flags="ng" index="2SZjpv" />
@@ -15031,6 +15031,18 @@
   </node>
   <node concept="LiM7Y" id="1pn4Qu08Y1A">
     <property role="TrG5h" value="Incremental_ShrinkHorizontalLineWidth" />
+    <node concept="26QDhB" id="1pn4Qu09fka" role="LiRBU">
+      <node concept="2mt57s" id="1pn4Qu09gXq" role="26QDhA">
+        <property role="2mt56V" value="abcefghijklmnopqrstuvwxyz12345678901234567890123456789012345678" />
+        <node concept="LIFWc" id="1pn4Qu09hq$" role="lGtFl">
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="25" />
+          <property role="p6zMs" value="25" />
+          <property role="LIFWd" value="property_property1" />
+        </node>
+      </node>
+    </node>
     <node concept="3clFbS" id="1pn4Qu08Y1D" role="LjaKd">
       <node concept="3clFbH" id="1pn4Qu08Y1E" role="3cqZAp" />
       <node concept="3cpWs8" id="1pn4Qu08Y1F" role="3cqZAp">
@@ -15152,18 +15164,6 @@
       <node concept="3clFbH" id="1pn4Qu09gZA" role="3cqZAp" />
       <node concept="3clFbH" id="1pn4Qu09h1L" role="3cqZAp" />
       <node concept="3clFbH" id="1pn4Qu09h3Z" role="3cqZAp" />
-    </node>
-    <node concept="26QDhB" id="1pn4Qu09fka" role="LiRBU">
-      <node concept="2mt57s" id="1pn4Qu09gXq" role="26QDhA">
-        <property role="2mt56V" value="abcefghijklmnopqrstuvwxyz" />
-        <node concept="LIFWc" id="1pn4Qu09hq$" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="25" />
-          <property role="p6zMs" value="25" />
-          <property role="LIFWd" value="property_property1" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="3s_ewN" id="1a5cdpmuDG5">
