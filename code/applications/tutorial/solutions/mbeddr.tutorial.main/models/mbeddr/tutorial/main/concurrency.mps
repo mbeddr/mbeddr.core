@@ -883,6 +883,7 @@
     <property role="TrG5h" value="Main" />
     <node concept="lIfQi" id="4Ru$s7zMArb" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zMArc" role="lIfQt">
         <ref role="3cM6IK" node="4hMIGYxmNE9" resolve="eventsTest" />
       </node>

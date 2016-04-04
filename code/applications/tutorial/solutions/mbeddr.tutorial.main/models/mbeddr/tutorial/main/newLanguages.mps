@@ -1040,6 +1040,7 @@
     <property role="TrG5h" value="Main" />
     <node concept="lIfQi" id="4Ru$s7zMAre" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zMArf" role="lIfQt">
         <ref role="3cM6IK" node="7vXEDSfqWYS" resolve="testGotoFail" />
       </node>

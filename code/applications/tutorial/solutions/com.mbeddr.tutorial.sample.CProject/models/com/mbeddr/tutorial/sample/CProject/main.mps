@@ -132,6 +132,7 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zMAsM" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zMAsN" role="lIfQt">
         <ref role="3cM6IK" node="5dchr4Qk7Kx" resolve="test" />
       </node>
