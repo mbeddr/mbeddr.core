@@ -5341,6 +5341,16 @@
       </node>
       <node concept="3Tmbuc" id="3Osd_yxeiPb" role="1B3o_S" />
     </node>
+    <node concept="312cEg" id="7x0eTkp5CM" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myAdditionalPadding" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="7x0eTkp5CN" role="1tU5fm">
+        <ref role="3uigEE" node="1p6ZfyCPv66" resolve="LayoutBoxFrame" />
+      </node>
+      <node concept="3Tmbuc" id="7x0eTkp5CO" role="1B3o_S" />
+    </node>
     <node concept="312cEg" id="3Osd_yxeiPj" role="jymVt">
       <property role="TrG5h" value="myEditorCell" />
       <node concept="3Tmbuc" id="3Osd_yxeiPk" role="1B3o_S" />
@@ -5398,6 +5408,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7x0eTkp7r4" role="3cqZAp">
+          <node concept="37vLTI" id="7x0eTkp7r5" role="3clFbG">
+            <node concept="37vLTw" id="7x0eTkp7Ic" role="37vLTJ">
+              <ref role="3cqZAo" node="7x0eTkp5CM" resolve="myAdditionalPadding" />
+            </node>
+            <node concept="2ShNRf" id="7x0eTkp7r7" role="37vLTx">
+              <node concept="1pGfFk" id="7x0eTkp7r8" role="2ShVmc">
+                <ref role="37wK5l" node="2hEgJWEr0vl" resolve="CalcOnWriteFrame" />
+                <node concept="37vLTw" id="7x0eTkp7VF" role="37wK5m">
+                  <ref role="3cqZAo" node="1p6ZfyCPv7c" resolve="myPaddingBox" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3Osd_yxeiPF" role="3cqZAp">
           <node concept="37vLTI" id="3Osd_yxeiPG" role="3clFbG">
             <node concept="37vLTw" id="3Osd_yxeiPH" role="37vLTJ">
@@ -5406,8 +5431,8 @@
             <node concept="2ShNRf" id="3Osd_yxeiPI" role="37vLTx">
               <node concept="1pGfFk" id="3Osd_yxeiPJ" role="2ShVmc">
                 <ref role="37wK5l" node="2hEgJWEr0vl" resolve="CalcOnWriteFrame" />
-                <node concept="37vLTw" id="3Osd_yxeiPK" role="37wK5m">
-                  <ref role="3cqZAo" node="1p6ZfyCPv7c" resolve="myPaddingBox" />
+                <node concept="37vLTw" id="7x0eTkp89a" role="37wK5m">
+                  <ref role="3cqZAo" node="7x0eTkp5CM" resolve="myAdditionalPadding" />
                 </node>
               </node>
             </node>
@@ -5464,6 +5489,36 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3Osd_yxeiQy" role="jymVt" />
+    <node concept="3clFb_" id="7x0eTkpaBx" role="jymVt">
+      <property role="TrG5h" value="getAdditionalPadding" />
+      <node concept="3uibUv" id="7x0eTkpicT" role="3clF45">
+        <ref role="3uigEE" node="1p6ZfyCPv66" resolve="LayoutBoxFrame" />
+      </node>
+      <node concept="3Tm1VV" id="7x0eTkpaB$" role="1B3o_S" />
+      <node concept="3clFbS" id="7x0eTkpaB_" role="3clF47">
+        <node concept="3clFbF" id="7x0eTkpiWk" role="3cqZAp">
+          <node concept="37vLTw" id="7x0eTkpiWj" role="3clFbG">
+            <ref role="3cqZAo" node="7x0eTkp5CM" resolve="myAdditionalPadding" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7x0eTkpj5Q" role="jymVt" />
+    <node concept="3clFb_" id="7x0eTkpkpJ" role="jymVt">
+      <property role="TrG5h" value="getBracketsBox" />
+      <node concept="3uibUv" id="7x0eTkprkm" role="3clF45">
+        <ref role="3uigEE" node="1p6ZfyCPv66" resolve="LayoutBoxFrame" />
+      </node>
+      <node concept="3Tm1VV" id="7x0eTkpkpM" role="1B3o_S" />
+      <node concept="3clFbS" id="7x0eTkpkpN" role="3clF47">
+        <node concept="3clFbF" id="7x0eTkps3Y" role="3cqZAp">
+          <node concept="37vLTw" id="7x0eTkps3X" role="3clFbG">
+            <ref role="3cqZAo" node="3Osd_yxeiP9" resolve="myBracketsBox" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7x0eTkp9fo" role="jymVt" />
     <node concept="3clFb_" id="3Osd_yxeiQz" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="readSync" />
@@ -5546,6 +5601,125 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7x0eTkpuVS" role="3cqZAp" />
+        <node concept="3cpWs8" id="7x0eTkpto8" role="3cqZAp">
+          <node concept="3cpWsn" id="7x0eTkpto9" role="3cpWs9">
+            <property role="TrG5h" value="leftPad" />
+            <node concept="10Oyi0" id="7x0eTkpto7" role="1tU5fm" />
+            <node concept="3cpWsd" id="7x0eTkptoa" role="33vP2m">
+              <node concept="2OqwBi" id="7x0eTkptob" role="3uHU7w">
+                <node concept="1rXfSq" id="7x0eTkptoc" role="2Oq$k0">
+                  <ref role="37wK5l" node="7x0eTkpaBx" resolve="getAdditionalPadding" />
+                </node>
+                <node concept="liA8E" id="7x0eTkptod" role="2OqNvi">
+                  <ref role="37wK5l" node="1p6ZfyCPv6a" resolve="getLeftSize" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7x0eTkptoe" role="3uHU7B">
+                <node concept="37vLTw" id="7x0eTkptof" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                </node>
+                <node concept="liA8E" id="7x0eTkptog" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getLeftGap():int" resolve="getLeftGap" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7x0eTkptXM" role="3cqZAp">
+          <node concept="3cpWsn" id="7x0eTkptXN" role="3cpWs9">
+            <property role="TrG5h" value="rightPad" />
+            <node concept="10Oyi0" id="7x0eTkptXH" role="1tU5fm" />
+            <node concept="3cpWsd" id="7x0eTkptXO" role="33vP2m">
+              <node concept="2OqwBi" id="7x0eTkptXP" role="3uHU7w">
+                <node concept="1rXfSq" id="7x0eTkptXQ" role="2Oq$k0">
+                  <ref role="37wK5l" node="7x0eTkpaBx" resolve="getAdditionalPadding" />
+                </node>
+                <node concept="liA8E" id="7x0eTkptXR" role="2OqNvi">
+                  <ref role="37wK5l" node="1p6ZfyCPv6e" resolve="getRightSize" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7x0eTkptXS" role="3uHU7B">
+                <node concept="37vLTw" id="7x0eTkptXT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                </node>
+                <node concept="liA8E" id="7x0eTkptXU" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getRightGap():int" resolve="getRightGap" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7x0eTkpvST" role="3cqZAp">
+          <node concept="3clFbS" id="7x0eTkpvSV" role="3clFbx">
+            <node concept="3clFbF" id="7x0eTkpwEP" role="3cqZAp">
+              <node concept="2OqwBi" id="7x0eTkpwOM" role="3clFbG">
+                <node concept="1rXfSq" id="7x0eTkpwEN" role="2Oq$k0">
+                  <ref role="37wK5l" node="7x0eTkpaBx" resolve="getAdditionalPadding" />
+                </node>
+                <node concept="AQDAd" id="7x0eTkpx9G" role="2OqNvi">
+                  <ref role="37wK5l" node="3VzM1am1yZM" resolve="addLeftSize" />
+                  <node concept="37vLTw" id="7x0eTkpxaD" role="37wK5m">
+                    <ref role="3cqZAo" node="7x0eTkpto9" resolve="leftPad" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7x0eTkpCgC" role="3cqZAp">
+              <node concept="37vLTI" id="7x0eTkpCnj" role="3clFbG">
+                <node concept="3cmrfG" id="7x0eTkpCnI" role="37vLTx">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="37vLTw" id="7x0eTkpCgA" role="37vLTJ">
+                  <ref role="3cqZAo" node="7x0eTkpto9" resolve="leftPad" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eOVzh" id="7x0eTkpwuW" role="3clFbw">
+            <node concept="3cmrfG" id="7x0eTkpwve" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="37vLTw" id="7x0eTkpwe1" role="3uHU7B">
+              <ref role="3cqZAo" node="7x0eTkpto9" resolve="leftPad" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7x0eTkpxxb" role="3cqZAp">
+          <node concept="3clFbS" id="7x0eTkpxxd" role="3clFbx">
+            <node concept="3clFbF" id="7x0eTkpy4A" role="3cqZAp">
+              <node concept="2OqwBi" id="7x0eTkpyeH" role="3clFbG">
+                <node concept="1rXfSq" id="7x0eTkpy4$" role="2Oq$k0">
+                  <ref role="37wK5l" node="7x0eTkpaBx" resolve="getAdditionalPadding" />
+                </node>
+                <node concept="AQDAd" id="7x0eTkpys3" role="2OqNvi">
+                  <ref role="37wK5l" node="3VzM1am1zai" resolve="addRightSize" />
+                  <node concept="37vLTw" id="7x0eTkpyt0" role="37wK5m">
+                    <ref role="3cqZAo" node="7x0eTkptXN" resolve="rightPad" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7x0eTkpCq9" role="3cqZAp">
+              <node concept="37vLTI" id="7x0eTkpCwN" role="3clFbG">
+                <node concept="3cmrfG" id="7x0eTkpCxe" role="37vLTx">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="37vLTw" id="7x0eTkpCq7" role="37vLTJ">
+                  <ref role="3cqZAo" node="7x0eTkptXN" resolve="rightPad" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eOVzh" id="7x0eTkpyyT" role="3clFbw">
+            <node concept="3cmrfG" id="7x0eTkpyzb" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="37vLTw" id="7x0eTkpxRF" role="3uHU7B">
+              <ref role="3cqZAo" node="7x0eTkptXN" resolve="rightPad" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3Osd_yxeiQB" role="3cqZAp">
           <node concept="2OqwBi" id="3Osd_yxeiQC" role="3clFbG">
             <node concept="1rXfSq" id="3Osd_yxeiQD" role="2Oq$k0">
@@ -5553,13 +5727,8 @@
             </node>
             <node concept="liA8E" id="3Osd_yxeiQE" role="2OqNvi">
               <ref role="37wK5l" node="1p6ZfyCPv6q" resolve="setLeftSize" />
-              <node concept="2OqwBi" id="3Osd_yxeiQF" role="37wK5m">
-                <node concept="37vLTw" id="3Osd_yxeiQG" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
-                </node>
-                <node concept="liA8E" id="3Osd_yxeiQH" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.getLeftGap():int" resolve="getLeftGap" />
-                </node>
+              <node concept="37vLTw" id="7x0eTkptoh" role="37wK5m">
+                <ref role="3cqZAo" node="7x0eTkpto9" resolve="leftPad" />
               </node>
             </node>
           </node>
@@ -5571,17 +5740,13 @@
             </node>
             <node concept="liA8E" id="3Osd_yxeiQL" role="2OqNvi">
               <ref role="37wK5l" node="1p6ZfyCPv6w" resolve="setRightSize" />
-              <node concept="2OqwBi" id="3Osd_yxeiQM" role="37wK5m">
-                <node concept="37vLTw" id="3Osd_yxeiQN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
-                </node>
-                <node concept="liA8E" id="3Osd_yxeiQO" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.getRightGap():int" resolve="getRightGap" />
-                </node>
+              <node concept="37vLTw" id="7x0eTkptXV" role="37wK5m">
+                <ref role="3cqZAo" node="7x0eTkptXN" resolve="rightPad" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7x0eTkpvfZ" role="3cqZAp" />
         <node concept="3clFbF" id="3Osd_yxeiQP" role="3cqZAp">
           <node concept="2OqwBi" id="3Osd_yxeiQQ" role="3clFbG">
             <node concept="2OqwBi" id="6SVXTgIaaPt" role="2Oq$k0">
