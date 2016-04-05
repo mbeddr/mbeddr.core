@@ -4536,6 +4536,49 @@
           </node>
         </node>
         <node concept="3clFbH" id="40e1npHzgMC" role="3cqZAp" />
+        <node concept="3clFbF" id="7QUlkr3_sCH" role="3cqZAp">
+          <node concept="2OqwBi" id="7QUlkr3_t0q" role="3clFbG">
+            <node concept="2OqwBi" id="7QUlkr3_sTf" role="2Oq$k0">
+              <node concept="Vb5G_" id="7QUlkr3_sCF" role="2Oq$k0">
+                <ref role="37wK5l" node="3Osd_yxdUch" resolve="getBoxModel" />
+              </node>
+              <node concept="liA8E" id="7QUlkr3_sZj" role="2OqNvi">
+                <ref role="37wK5l" to="rtot:1p6ZfyCPv3R" resolve="getPaddingBox" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7QUlkr3_t7N" role="2OqNvi">
+              <ref role="37wK5l" to="rtot:1p6ZfyCPv6W" resolve="setFrameSize" />
+              <node concept="3cmrfG" id="7QUlkr3_t8$" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7QUlkr3_t9i" role="3cqZAp">
+          <node concept="2OqwBi" id="7QUlkr3_t9j" role="3clFbG">
+            <node concept="2OqwBi" id="7QUlkr3_t9k" role="2Oq$k0">
+              <node concept="1eOMI4" id="7QUlkr3_tMN" role="2Oq$k0">
+                <node concept="10QFUN" id="7QUlkr3_tMO" role="1eOMHV">
+                  <node concept="Vb5G_" id="7QUlkr3_tMM" role="10QFUP">
+                    <ref role="37wK5l" node="3Osd_yxdUch" resolve="getBoxModel" />
+                  </node>
+                  <node concept="3uibUv" id="7QUlkr3_tNx" role="10QFUM">
+                    <ref role="3uigEE" to="rtot:3Osd_yxeiP0" resolve="EditorCellBoxModel" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7QUlkr3_t9m" role="2OqNvi">
+                <ref role="37wK5l" to="rtot:7x0eTkpaBx" resolve="getAdditionalPadding" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7QUlkr3_t9n" role="2OqNvi">
+              <ref role="37wK5l" to="rtot:1p6ZfyCPv6W" resolve="setFrameSize" />
+              <node concept="3cmrfG" id="7QUlkr3_t9o" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="40e1npHzgZT" role="3cqZAp">
           <node concept="2OqwBi" id="40e1npHzh6V" role="3clFbG">
             <node concept="2V_BSl" id="40e1npHzgZR" role="2Oq$k0" />
