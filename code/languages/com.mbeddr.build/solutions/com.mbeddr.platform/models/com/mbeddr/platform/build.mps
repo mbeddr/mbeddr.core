@@ -9675,6 +9675,12 @@
             <ref role="3bR37D" to="90a9:6SVXTgIejl1" resolve="de.itemis.mps.editor.celllayout.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7x0eTkzfYG" role="3bR37C">
+          <node concept="3bR9La" id="7x0eTkzfYH" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Pr7tifzjKW" role="3989C9">

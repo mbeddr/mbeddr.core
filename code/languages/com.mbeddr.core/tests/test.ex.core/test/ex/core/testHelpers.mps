@@ -89,6 +89,7 @@
       </concept>
       <concept id="1937609356306123790" name="com.mbeddr.core.unittest.structure.FailStatement" flags="ng" index="2eY$_Z" />
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
@@ -145,6 +146,8 @@
     <property role="TrG5h" value="TestHelperTest" />
     <node concept="lIfQi" id="6TAwvhVWkhJ" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhK" role="lIfQt">
         <ref role="3cM6IK" node="7Uz1bYM5MLa" resolve="testCase1" />
       </node>
