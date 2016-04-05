@@ -16,6 +16,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="24c96a96-b7a1-4f30-82da-0f8e279a2661" name="de.itemis.mps.editor.celllayout.styles" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -114,6 +115,7 @@
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1160493135005" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues_GetValues" flags="in" index="MLZmj" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
@@ -557,6 +559,9 @@
         <child id="1073389446424" name="childCellModel" index="3EZMny" />
         <child id="2490242408670937967" name="factoryMethod" index="3ZZHOD" />
       </concept>
+    </language>
+    <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
       <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
@@ -3523,7 +3528,7 @@
       <node concept="3F2HdR" id="K292flwDNx" role="3EZMnx">
         <property role="S$F3r" value="true" />
         <ref role="1NtTu8" to="vs0r:K292flwDNv" />
-        <node concept="2iRkQZ" id="2PGidvqiDc$" role="2czzBx" />
+        <node concept="2EHx9g" id="6L$vAtzR93I" role="2czzBx" />
         <node concept="1HlG4h" id="K292flx88A" role="3EmGlc">
           <node concept="1HfYo3" id="K292flx88B" role="1HlULh">
             <node concept="3TQlhw" id="K292flx88C" role="1Hhtcw">
@@ -4023,6 +4028,12 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="1QQdxR" id="6L$vAtzS$u7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1QQdxR" id="6L$vAtzT5lu" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
     <node concept="3EZMnI" id="5Ju6x2ORuC1" role="6VMZX">
