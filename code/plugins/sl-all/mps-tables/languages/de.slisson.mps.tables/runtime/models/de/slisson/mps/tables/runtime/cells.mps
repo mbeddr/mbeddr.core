@@ -56,6 +56,7 @@
     <import index="xggr" ref="r:12584d60-2d80-4ca9-9c6e-b79d499da0cf(de.itemis.mps.editor.celllayout.layout)" />
     <import index="rtot" ref="r:6107a535-c9ce-47d9-a4cd-4df6fd2db517(de.itemis.mps.editor.celllayout.boxmodel)" />
     <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
+    <import index="z0fb" ref="r:0b928dd6-dd7e-45a8-b309-a2e315b7877a(de.itemis.mps.editor.celllayout.styles.editor)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
@@ -7690,6 +7691,39 @@
               <ref role="37wK5l" to="rtot:1p6ZfyCPv6w" resolve="setRightSize" />
               <node concept="3cmrfG" id="7HQUZCSLL4c" role="37wK5m">
                 <property role="3cmrfH" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5GhqAI_POUM" role="3cqZAp" />
+        <node concept="3clFbF" id="5GhqAI_PR1s" role="3cqZAp">
+          <node concept="2OqwBi" id="5GhqAI_PRhG" role="3clFbG">
+            <node concept="1rXfSq" id="5GhqAI_PR1q" role="2Oq$k0">
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+            </node>
+            <node concept="liA8E" id="5GhqAI_PR_e" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+              <node concept="1Z6Ecs" id="5GhqAI_PRNQ" role="37wK5m">
+                <ref role="1Z6EpT" to="z0fb:7lS0O5066sF" resolve="_grow-x" />
+              </node>
+              <node concept="3clFbT" id="5GhqAI_PTGE" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5GhqAI_PTHT" role="3cqZAp">
+          <node concept="2OqwBi" id="5GhqAI_PTHU" role="3clFbG">
+            <node concept="1rXfSq" id="5GhqAI_PTHV" role="2Oq$k0">
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+            </node>
+            <node concept="liA8E" id="5GhqAI_PTHW" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+              <node concept="1Z6Ecs" id="5GhqAI_PTHX" role="37wK5m">
+                <ref role="1Z6EpT" to="z0fb:7lS0O5066tg" resolve="_grow-y" />
+              </node>
+              <node concept="3clFbT" id="5GhqAI_PTHY" role="37wK5m">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
