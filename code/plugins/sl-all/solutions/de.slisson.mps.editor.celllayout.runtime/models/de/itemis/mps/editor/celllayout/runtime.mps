@@ -184,7 +184,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7206,6 +7206,71 @@
       <node concept="3Tmbuc" id="J7o7d6CP1z" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="JPngvNuXRr" role="jymVt" />
+    <node concept="3clFb_" id="7x0eTkvVPB" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setInnerBounds" />
+      <node concept="37vLTG" id="7x0eTkvVPC" role="3clF46">
+        <property role="TrG5h" value="x" />
+        <node concept="10Oyi0" id="7x0eTkvVPD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7x0eTkvVPE" role="3clF46">
+        <property role="TrG5h" value="y" />
+        <node concept="10Oyi0" id="7x0eTkvVPF" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7x0eTkvVPG" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="7x0eTkvVPH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7x0eTkvVPI" role="3clF46">
+        <property role="TrG5h" value="height" />
+        <node concept="10Oyi0" id="7x0eTkvVPJ" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="7x0eTkvVPK" role="3clF45" />
+      <node concept="3Tm1VV" id="7x0eTkvVPL" role="1B3o_S" />
+      <node concept="3clFbS" id="7x0eTkvVPQ" role="3clF47">
+        <node concept="3clFbF" id="7x0eTkvZen" role="3cqZAp">
+          <node concept="1rXfSq" id="7x0eTkvZem" role="3clFbG">
+            <ref role="37wK5l" node="JPngvNsQOq" resolve="setBounds" />
+            <node concept="3cpWsd" id="7x0eTkvZY8" role="37wK5m">
+              <node concept="1rXfSq" id="7x0eTkw0mj" role="3uHU7w">
+                <ref role="37wK5l" node="40e1npHptMN" resolve="getTotalGapLeft" />
+              </node>
+              <node concept="37vLTw" id="7x0eTkvZzv" role="3uHU7B">
+                <ref role="3cqZAo" node="7x0eTkvVPC" resolve="x" />
+              </node>
+            </node>
+            <node concept="3cpWsd" id="7x0eTkw1a0" role="37wK5m">
+              <node concept="1rXfSq" id="7x0eTkw1zp" role="3uHU7w">
+                <ref role="37wK5l" node="40e1npHpzz1" resolve="getTotalGapTop" />
+              </node>
+              <node concept="37vLTw" id="7x0eTkw0Ib" role="3uHU7B">
+                <ref role="3cqZAo" node="7x0eTkvVPE" resolve="y" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="7x0eTkw2op" role="37wK5m">
+              <node concept="1rXfSq" id="7x0eTkw2Mh" role="3uHU7w">
+                <ref role="37wK5l" node="40e1npHpGdF" resolve="getTotalGapHorizontal" />
+              </node>
+              <node concept="37vLTw" id="7x0eTkw1W0" role="3uHU7B">
+                <ref role="3cqZAo" node="7x0eTkvVPG" resolve="width" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="7x0eTkw3Ge" role="37wK5m">
+              <node concept="1rXfSq" id="7x0eTkw47M" role="3uHU7w">
+                <ref role="37wK5l" node="40e1npHpJys" resolve="getTotalGapVertical" />
+              </node>
+              <node concept="37vLTw" id="7x0eTkw3dU" role="3uHU7B">
+                <ref role="3cqZAo" node="7x0eTkvVPI" resolve="height" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7x0eTkw4tY" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7x0eTkw66j" role="jymVt" />
     <node concept="3clFb_" id="JPngvNuXF8" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getInnerX" />
