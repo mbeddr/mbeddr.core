@@ -133,27 +133,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6ddb09ablbA" role="3cqZAp">
-          <node concept="3clFbS" id="6ddb09ablbC" role="3clFbx">
-            <node concept="3AgYrR" id="6ddb09abl_e" role="3cqZAp">
-              <node concept="2OqwBi" id="6ddb09ablD8" role="3Ah4Yx">
-                <node concept="3__QtB" id="6ddb09abl_t" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6ddb09ablMu" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ybok:_oDvx5U7$y" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="6ddb09abl$q" role="3clFbw">
-            <node concept="10Nm6u" id="6ddb09abl$S" role="3uHU7w" />
-            <node concept="2OqwBi" id="6ddb09ablgq" role="3uHU7B">
-              <node concept="3__QtB" id="6ddb09ablcb" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6ddb09ablpK" role="2OqNvi">
-                <ref role="3Tt5mk" to="ybok:_oDvx5U7$y" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
