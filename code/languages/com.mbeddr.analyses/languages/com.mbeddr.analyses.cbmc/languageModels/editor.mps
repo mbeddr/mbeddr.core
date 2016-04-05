@@ -24,6 +24,7 @@
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -7569,7 +7570,7 @@
   </node>
   <node concept="24kQdi" id="72mSD5RNG5d">
     <property role="3GE5qa" value="expressions" />
-    <ref role="1XX52x" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+    <ref role="1XX52x" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue_old" />
     <node concept="3EZMnI" id="72mSD5RNGNu" role="2wV5jI">
       <node concept="3F0ifn" id="72mSD5RNGNL" role="3EZMnx">
         <property role="3F0ifm" value="valid_enum" />
@@ -7966,7 +7967,7 @@
   </node>
   <node concept="24kQdi" id="1qq6r78BL_h">
     <property role="3GE5qa" value="expressions" />
-    <ref role="1XX52x" to="q5q6:4fjBjwDqu9U" resolve="Implies_old" />
+    <ref role="1XX52x" to="q5q6:4fjBjwDqu9U" resolve="Implies" />
     <node concept="3EZMnI" id="1qq6r78BL_p" role="2wV5jI">
       <node concept="3F1sOY" id="1qq6r78BL_D" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:7FQByU3CrD0" />

@@ -30,6 +30,8 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="vnly" ref="r:f386cb21-bd7b-44e0-88f9-9135051a96b2(com.mbeddr.ext.math.typesystem)" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="c9jm" ref="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" implicit="true" />
   </imports>
@@ -1979,7 +1981,7 @@
     </node>
     <node concept="1YaCAy" id="72mSD5R_VLG" role="1YuTPh">
       <property role="TrG5h" value="vev" />
-      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue_old" />
     </node>
   </node>
   <node concept="1YbPZF" id="i5tJSHflsf">
@@ -2055,7 +2057,7 @@
     </node>
     <node concept="1YaCAy" id="636FvLn07Z$" role="1YuTPh">
       <property role="TrG5h" value="ve" />
-      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+      <ref role="1YaFvo" to="k146:72mSD5R_OCr" resolve="ValidEnumerationValue" />
     </node>
   </node>
   <node concept="18kY7G" id="6BJ5EqKyhi4">

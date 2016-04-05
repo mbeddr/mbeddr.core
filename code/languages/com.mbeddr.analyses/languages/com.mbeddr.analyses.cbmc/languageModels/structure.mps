@@ -479,10 +479,13 @@
   </node>
   <node concept="1TIwiD" id="72mSD5R_OCr">
     <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="ValidEnumerationValue" />
+    <property role="TrG5h" value="ValidEnumerationValue_old" />
     <property role="34LRSv" value="valid_enum" />
     <property role="1pbfSe" value="399627092" />
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+    <node concept="asaX9" id="6UAHnEzVDUq" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="73FH1Bco8fg">
     <property role="3GE5qa" value="cbmc_macros" />
