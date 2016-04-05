@@ -6094,7 +6094,7 @@
                     </node>
                   </node>
                   <node concept="AQDAd" id="5GhqAI_V7i7" role="2OqNvi">
-                    <ref role="37wK5l" node="5GhqAI_V3VA" resolve="getTotalFrameSizeVertical" />
+                    <ref role="37wK5l" node="5GhqAI_V2Pw" resolve="getTotalFrameSizeHorizontal" />
                   </node>
                 </node>
               </node>
@@ -6119,7 +6119,7 @@
                     </node>
                   </node>
                   <node concept="AQDAd" id="5GhqAI_V92x" role="2OqNvi">
-                    <ref role="37wK5l" node="5GhqAI_V2Pw" resolve="getTotalFrameSizeHorizontal" />
+                    <ref role="37wK5l" node="5GhqAI_V3VA" resolve="getTotalFrameSizeVertical" />
                   </node>
                 </node>
               </node>
