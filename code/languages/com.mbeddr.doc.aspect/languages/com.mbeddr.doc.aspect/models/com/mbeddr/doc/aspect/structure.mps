@@ -104,5 +104,16 @@
       <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6L$vAtzZO13">
+    <property role="1pbfSe" value="798769494" />
+    <property role="TrG5h" value="DocumentedPropertyItemAnnotation" />
+    <ref role="1TJDcQ" node="1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+    <node concept="M6xJ_" id="6L$vAtzZO14" role="lGtFl">
+      <property role="Hh88m" value="documentedProperty" />
+      <node concept="trNpa" id="6L$vAtzZO1a" role="EQaZv">
+        <ref role="trN6q" to="2c95:4E$PniRJOs$" resolve="Item" />
+      </node>
+    </node>
+  </node>
 </model>
 
