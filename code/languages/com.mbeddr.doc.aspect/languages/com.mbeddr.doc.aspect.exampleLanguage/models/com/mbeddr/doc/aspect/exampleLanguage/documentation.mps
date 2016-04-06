@@ -16,6 +16,7 @@
       <concept id="1587141976994809824" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyAnnotation" flags="ng" index="4TqVo">
         <reference id="1587141976994809836" name="property" index="4TqVk" />
       </concept>
+      <concept id="7810506636291686467" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyItemAnnotation" flags="ng" index="fANS$" />
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
@@ -75,6 +76,12 @@
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
       <concept id="8624890525767555426" name="com.mbeddr.doc.structure.ScalingSizeSpec" flags="ng" index="3SG1Pu">
         <property id="8624890525767555427" name="percentage" index="3SG1Pv" />
+      </concept>
+      <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <child id="5378658552262903589" name="text" index="3X6T9h" />
+      </concept>
+      <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <child id="5378658552262986137" name="items" index="3Xp5NH" />
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
@@ -265,6 +272,21 @@
             <node concept="19SUe$" id="1o6EjwiT6DY" role="19SJt6">
               <property role="19SUeA" value="prop1 contains value of the prop1 attribute" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3X6WG5" id="6L$vAt$5U5G" role="1_0VJ0">
+        <node concept="3X6T9g" id="6L$vAt$5U5H" role="3Xp5NH">
+          <node concept="OjmMv" id="6L$vAt$5U5I" role="3X6T9h">
+            <node concept="19SGf9" id="6L$vAt$5U5J" role="OjmMu">
+              <node concept="19SUe$" id="6L$vAt$5U5K" role="19SJt6">
+                <property role="19SUeA" value="Item documenting a property" />
+              </node>
+            </node>
+          </node>
+          <node concept="fANS$" id="6L$vAt$5U7Q" role="lGtFl">
+            <ref role="3nadW_" to="hauh:6TuvEpVGx1e" resolve="DocumentedChild1" />
+            <ref role="4TqVk" to="hauh:6L$vAt$5U8b" resolve="prop2" />
           </node>
         </node>
       </node>

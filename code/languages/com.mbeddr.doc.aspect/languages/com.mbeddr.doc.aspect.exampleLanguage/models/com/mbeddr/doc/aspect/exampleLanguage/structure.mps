@@ -57,6 +57,10 @@
       <property role="TrG5h" value="prop1" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="6L$vAt$5U8b" role="1TKVEl">
+      <property role="TrG5h" value="prop2" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6TuvEpVGx7v">
     <property role="TrG5h" value="DocumentedChild2" />

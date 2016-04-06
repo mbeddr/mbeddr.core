@@ -94,16 +94,40 @@
     <node concept="3EZMnI" id="1o6EjwiT2r9" role="2wV5jI">
       <node concept="2iRfu4" id="1o6EjwiT2ra" role="2iSdaV" />
       <node concept="3F0ifn" id="1o6EjwiT2r4" role="3EZMnx">
-        <property role="3F0ifm" value="DocumentedChild1 {" />
+        <property role="3F0ifm" value="DocumentedChild1" />
       </node>
-      <node concept="3F0ifn" id="1o6EjwiT2s8" role="3EZMnx">
-        <property role="3F0ifm" value="prop1:" />
-      </node>
-      <node concept="3F0A7n" id="1o6EjwiT2ru" role="3EZMnx">
-        <ref role="1NtTu8" to="hauh:1o6EjwiT2qA" resolve="prop1" />
-      </node>
-      <node concept="3F0ifn" id="1o6EjwiT2rK" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
+      <node concept="3EZMnI" id="6L$vAt$6lTp" role="3EZMnx">
+        <node concept="2iRkQZ" id="6L$vAt$6lTq" role="2iSdaV" />
+        <node concept="3EZMnI" id="6L$vAt$6lTN" role="3EZMnx">
+          <node concept="2iRfu4" id="6L$vAt$6lTO" role="2iSdaV" />
+          <node concept="3F0ifn" id="6L$vAt$6lTd" role="3EZMnx">
+            <property role="3F0ifm" value="{" />
+          </node>
+          <node concept="3F0ifn" id="1o6EjwiT2s8" role="3EZMnx">
+            <property role="3F0ifm" value="prop1:" />
+          </node>
+          <node concept="3F0A7n" id="1o6EjwiT2ru" role="3EZMnx">
+            <ref role="1NtTu8" to="hauh:1o6EjwiT2qA" resolve="prop1" />
+          </node>
+          <node concept="3F0ifn" id="1o6EjwiT2rK" role="3EZMnx">
+            <property role="3F0ifm" value="}" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="6L$vAt$6lUN" role="3EZMnx">
+          <node concept="2iRfu4" id="6L$vAt$6lUO" role="2iSdaV" />
+          <node concept="3F0ifn" id="6L$vAt$6lUP" role="3EZMnx">
+            <property role="3F0ifm" value="{" />
+          </node>
+          <node concept="3F0ifn" id="6L$vAt$6lUQ" role="3EZMnx">
+            <property role="3F0ifm" value="prop2:" />
+          </node>
+          <node concept="3F0A7n" id="6L$vAt$6lUR" role="3EZMnx">
+            <ref role="1NtTu8" to="hauh:6L$vAt$5U8b" resolve="prop2" />
+          </node>
+          <node concept="3F0ifn" id="6L$vAt$6lUS" role="3EZMnx">
+            <property role="3F0ifm" value="}" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

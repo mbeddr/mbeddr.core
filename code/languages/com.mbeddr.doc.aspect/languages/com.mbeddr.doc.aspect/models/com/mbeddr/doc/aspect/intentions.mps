@@ -255,5 +255,71 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6L$vAtzZOjD">
+    <property role="TrG5h" value="AddPropertyDocumentationForItem" />
+    <ref role="2ZfgGC" to="2c95:4E$PniRJOs$" resolve="Item" />
+    <node concept="2S6ZIM" id="6L$vAtzZOjE" role="2ZfVej">
+      <node concept="3clFbS" id="6L$vAtzZOjF" role="2VODD2">
+        <node concept="3clFbF" id="6L$vAtzZOmh" role="3cqZAp">
+          <node concept="Xl_RD" id="6L$vAtzZOmj" role="3clFbG">
+            <property role="Xl_RC" value="Add Reference to Documented Property" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6L$vAtzZOjG" role="2ZfgGD">
+      <node concept="3clFbS" id="6L$vAtzZOjH" role="2VODD2">
+        <node concept="3cpWs8" id="6L$vAtzZOGL" role="3cqZAp">
+          <node concept="3cpWsn" id="6L$vAtzZOGM" role="3cpWs9">
+            <property role="TrG5h" value="documentedPropertyAttr" />
+            <node concept="3Tqbb2" id="6L$vAtzZOGN" role="1tU5fm">
+              <ref role="ehGHo" to="748g:6L$vAtzZO13" resolve="DocumentedPropertyItemAnnotation" />
+            </node>
+            <node concept="2ShNRf" id="6L$vAtzZOGO" role="33vP2m">
+              <node concept="3zrR0B" id="6L$vAtzZOGP" role="2ShVmc">
+                <node concept="3Tqbb2" id="6L$vAtzZOGQ" role="3zrR0E">
+                  <ref role="ehGHo" to="748g:6L$vAtzZO13" resolve="DocumentedPropertyItemAnnotation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6L$vAtzZOGR" role="3cqZAp">
+          <node concept="2OqwBi" id="6L$vAtzZOGS" role="3clFbG">
+            <node concept="2OqwBi" id="6L$vAtzZOGT" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6L$vAtzZOGU" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="6L$vAtzZOGV" role="2OqNvi">
+                <node concept="3CFYIy" id="6L$vAtzZOOv" role="3CFYIz">
+                  <ref role="3CFYIx" to="748g:6L$vAtzZO13" resolve="DocumentedPropertyItemAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="2oxUTD" id="6L$vAtzZOGX" role="2OqNvi">
+              <node concept="37vLTw" id="6L$vAtzZOGY" role="2oxUTC">
+                <ref role="3cqZAo" node="6L$vAtzZOGM" resolve="documentedPropertyAttr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6L$vAtzZOpw" role="2ZfVeh">
+      <node concept="3clFbS" id="6L$vAtzZOpx" role="2VODD2">
+        <node concept="3clFbF" id="6L$vAtzZOqE" role="3cqZAp">
+          <node concept="2OqwBi" id="6L$vAtzZOqM" role="3clFbG">
+            <node concept="2OqwBi" id="6L$vAtzZOqN" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6L$vAtzZOqO" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="6L$vAtzZOqP" role="2OqNvi">
+                <node concept="3CFYIy" id="6L$vAtzZOvx" role="3CFYIz">
+                  <ref role="3CFYIx" to="748g:6L$vAtzZO13" resolve="DocumentedPropertyItemAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="6L$vAtzZOqR" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
