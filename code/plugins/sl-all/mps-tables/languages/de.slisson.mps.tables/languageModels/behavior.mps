@@ -3548,5 +3548,83 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7EUu569hDQi">
+    <property role="3GE5qa" value="CellQuery" />
+    <ref role="13h7C2" to="bnk3:7EUu569hDQh" resolve="TableCellQuerySharedInit" />
+    <node concept="13i0hz" id="7EUu569hDQl" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getApplicableConceptFunctionParameter" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
+      <node concept="3Tm1VV" id="7EUu569hDQm" role="1B3o_S" />
+      <node concept="_YKpA" id="7EUu569hDQn" role="3clF45">
+        <node concept="3Tqbb2" id="7EUu569hDQo" role="_ZDj9">
+          <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7EUu569hDQp" role="3clF47">
+        <node concept="3cpWs8" id="7EUu569hDQq" role="3cqZAp">
+          <node concept="3cpWsn" id="7EUu569hDQr" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="2ShNRf" id="7EUu569hDQs" role="33vP2m">
+              <node concept="2T8Vx0" id="7EUu569hDQt" role="2ShVmc">
+                <node concept="2I9FWS" id="7EUu569hDQu" role="2T96Bj">
+                  <ref role="2I9WkF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                </node>
+              </node>
+            </node>
+            <node concept="2I9FWS" id="7EUu569hDQv" role="1tU5fm">
+              <ref role="2I9WkF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7EUu569hDQw" role="3cqZAp">
+          <node concept="2OqwBi" id="7EUu569hDQx" role="3clFbG">
+            <node concept="TSZUe" id="7EUu569hDQy" role="2OqNvi">
+              <node concept="3TUQnm" id="7EUu569hDQz" role="25WWJ7">
+                <ref role="3TV0OU" to="bnk3:1dAqnm8r60T" resolve="QueryParameter_Node" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="7EUu569hDQ$" role="2Oq$k0">
+              <ref role="3cqZAo" node="7EUu569hDQr" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7EUu569hDQK" role="3cqZAp">
+          <node concept="37vLTw" id="7EUu569hDQL" role="3cqZAk">
+            <ref role="3cqZAo" node="7EUu569hDQr" resolve="result" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7EUu569hDQj" role="13h7CW">
+      <node concept="3clFbS" id="7EUu569hDQk" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7EUu569ivbQ">
+    <property role="3GE5qa" value="CellQuery" />
+    <ref role="13h7C2" to="bnk3:7EUu569h65i" resolve="SharedVariableReference" />
+    <node concept="13hLZK" id="7EUu569ivbR" role="13h7CW">
+      <node concept="3clFbS" id="7EUu569ivbS" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7EUu569ivbT" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="isLValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwJgmE" resolve="isLValue" />
+      <node concept="3Tm1VV" id="7EUu569ivc2" role="1B3o_S" />
+      <node concept="3clFbS" id="7EUu569ivc3" role="3clF47">
+        <node concept="3clFbF" id="7EUu569ivdn" role="3cqZAp">
+          <node concept="3clFbT" id="7EUu569ivdm" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7EUu569ivc4" role="3clF45" />
+    </node>
+  </node>
 </model>
 

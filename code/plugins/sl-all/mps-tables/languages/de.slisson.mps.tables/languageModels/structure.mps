@@ -440,6 +440,17 @@
       <property role="20kJfa" value="rowHeaderQuery" />
       <ref role="20lvS9" node="1zEStST4Vbt" resolve="TableCellQueryGetRowHeader" />
     </node>
+    <node concept="1TJgyj" id="7EUu569gJ8q" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sharedVariables" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7EUu569gJ8p" resolve="SharedVariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7EUu569hMTE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sharedInit" />
+      <ref role="20lvS9" node="7EUu569hDQh" resolve="TableCellQuerySharedInit" />
+    </node>
     <node concept="PrWs8" id="1dAqnm8u_A4" role="PzmwI">
       <ref role="PrY4T" node="1dAqnm8mI99" resolve="ITableNode" />
     </node>
@@ -1157,6 +1168,30 @@
     <property role="34LRSv" value="thisNode" />
     <property role="1pbfSe" value="772692952" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7EUu569gJ8p">
+    <property role="1pbfSe" value="66939498" />
+    <property role="3GE5qa" value="CellQuery" />
+    <property role="TrG5h" value="SharedVariableDeclaration" />
+    <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="7EUu569h65i">
+    <property role="1pbfSe" value="67033507" />
+    <property role="3GE5qa" value="CellQuery" />
+    <property role="TrG5h" value="SharedVariableReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="7EUu569h65j" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="variableDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7EUu569gJ8p" resolve="SharedVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7EUu569hDQh">
+    <property role="1pbfSe" value="67180002" />
+    <property role="3GE5qa" value="CellQuery" />
+    <property role="TrG5h" value="TableCellQuerySharedInit" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

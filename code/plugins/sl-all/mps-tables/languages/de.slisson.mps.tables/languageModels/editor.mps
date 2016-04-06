@@ -1243,6 +1243,43 @@
             <node concept="VPM3Z" id="1zEStST52i_" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
+            <node concept="3EZMnI" id="7EUu569gJ8N" role="3EZMnx">
+              <node concept="VPM3Z" id="7EUu569gJ8O" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+              <node concept="VPXOz" id="7EUu569gJ8P" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+              <node concept="3F0ifn" id="7EUu569gJ8Q" role="3EZMnx">
+                <property role="3F0ifm" value="shared variables" />
+              </node>
+              <node concept="3F2HdR" id="7EUu569gJyd" role="3EZMnx">
+                <ref role="1NtTu8" to="bnk3:7EUu569gJ8q" />
+                <node concept="2iRkQZ" id="7EUu569gJym" role="2czzBx" />
+                <node concept="VPXOz" id="7EUu569gU9U" role="3F10Kt">
+                  <property role="VOm3f" value="true" />
+                </node>
+              </node>
+              <node concept="2iRfu4" id="7EUu569gJ8T" role="2iSdaV" />
+            </node>
+            <node concept="3EZMnI" id="7EUu569hMU5" role="3EZMnx">
+              <node concept="VPM3Z" id="7EUu569hMU6" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+              <node concept="VPXOz" id="7EUu569hMU7" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+              <node concept="3F0ifn" id="7EUu569hMU8" role="3EZMnx">
+                <property role="3F0ifm" value="initialize" />
+              </node>
+              <node concept="3F1sOY" id="7EUu569hN3k" role="3EZMnx">
+                <ref role="1NtTu8" to="bnk3:7EUu569hMTE" />
+                <node concept="VPXOz" id="7EUu569ifZ2" role="3F10Kt">
+                  <property role="VOm3f" value="true" />
+                </node>
+              </node>
+              <node concept="2iRfu4" id="7EUu569hMUc" role="2iSdaV" />
+            </node>
             <node concept="3EZMnI" id="1zEStST52_L" role="3EZMnx">
               <node concept="VPM3Z" id="1zEStST52_N" role="3F10Kt">
                 <property role="VOm3f" value="false" />
@@ -3068,6 +3105,19 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3t1pVyvZafl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7EUu569h65r">
+    <property role="3GE5qa" value="CellQuery" />
+    <ref role="1XX52x" to="bnk3:7EUu569h65i" resolve="SharedVariableReference" />
+    <node concept="1iCGBv" id="7EUu569h65t" role="2wV5jI">
+      <ref role="1NtTu8" to="bnk3:7EUu569h65j" />
+      <node concept="1sVBvm" id="7EUu569h65v" role="1sWHZn">
+        <node concept="3F0A7n" id="7EUu569h65D" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
