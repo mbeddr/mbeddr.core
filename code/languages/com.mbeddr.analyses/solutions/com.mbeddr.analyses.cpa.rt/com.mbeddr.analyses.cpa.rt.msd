@@ -5,12 +5,13 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/cpachecker.jar" />
+      <sourceRoot location="lib/lib/java/runtime/com.microsoft.z3.jar" />
       <sourceRoot location="lib/lib/java/runtime/common.jar" />
       <sourceRoot location="lib/lib/java/runtime/guava.jar" />
       <sourceRoot location="lib/lib/java/runtime/icu4j.jar" />
       <sourceRoot location="lib/lib/java/runtime/java-cup-runtime.jar" />
       <sourceRoot location="lib/lib/java/runtime/javabdd.jar" />
+      <sourceRoot location="lib/lib/java/runtime/javasmt.jar" />
       <sourceRoot location="lib/lib/java/runtime/org.eclipse.cdt.core.jar" />
       <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.contenttype.jar" />
       <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.jobs.jar" />
@@ -25,6 +26,12 @@
       <sourceRoot location="lib/lib/java/runtime/scala-library.jar" />
       <sourceRoot location="lib/lib/java/runtime/smt-parser.jar" />
       <sourceRoot location="lib/lib/java/runtime/smtinterpol-comp.jar" />
+      <sourceRoot location="lib/lib/apron.jar" />
+      <sourceRoot location="lib/lib/gmp.jar" />
+      <sourceRoot location="lib/lib/edu.cmu.sei.rtss.jldd.jar" />
+      <sourceRoot location="lib/lib/jpl.jar" />
+      <sourceRoot location="lib/lib/jsylvan.jar" />
+      <sourceRoot location="lib/cpachecker.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -48,6 +55,7 @@
     <stubModelEntry path="${module}/lib/lib/java/runtime/scala-library.jar" />
     <stubModelEntry path="${module}/lib/lib/java/runtime/smt-parser.jar" />
     <stubModelEntry path="${module}/lib/lib/java/runtime/smtinterpol-comp.jar" />
+    <stubModelEntry path="${module}/lib/lib/java/runtime/javasmt.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -62,6 +70,7 @@
     <dependency reexport="false">6b36c769-1771-46e1-8eef-54c9baf48813(com.mbeddr.analyses.cpa.rt)</dependency>
     <dependency reexport="false">42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
   </dependencies>
   <languageVersions>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="1" />

@@ -133,6 +133,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -229,34 +232,14 @@
     <node concept="3clFbW" id="6i3Vykmb1bU" role="jymVt">
       <node concept="3cqZAl" id="6i3Vykmb1bV" role="3clF45" />
       <node concept="3clFbS" id="6i3Vykmb1bX" role="3clF47">
-        <node concept="3clFbF" id="tSjOfAcJU1" role="3cqZAp">
-          <node concept="37vLTI" id="tSjOfAcK5a" role="3clFbG">
-            <node concept="37vLTw" id="tSjOfAcJU0" role="37vLTJ">
-              <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
+        <node concept="3clFbF" id="4hqHmbTBByQ" role="3cqZAp">
+          <node concept="1rXfSq" id="4hqHmbTBByP" role="3clFbG">
+            <ref role="37wK5l" node="4hqHmbTBA8J" resolve="initializeSolver" />
+            <node concept="3cmrfG" id="4hqHmbTDceO" role="37wK5m">
+              <property role="3cmrfH" value="1000" />
             </node>
-            <node concept="2ShNRf" id="6i3Vykmb1rF" role="37vLTx">
-              <node concept="1pGfFk" id="6i3Vykmb1rE" role="2ShVmc">
-                <ref role="37wK5l" to="2jy7:~GateTranslator.&lt;init&gt;(org.sat4j.specs.ISolver)" resolve="GateTranslator" />
-                <node concept="2YIFZM" id="6i3Vykmb2ds" role="37wK5m">
-                  <ref role="1Pybhc" to="st0e:~SolverFactory" resolve="SolverFactory" />
-                  <ref role="37wK5l" to="st0e:~SolverFactory.newDefault():org.sat4j.pb.IPBSolver" resolve="newDefault" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6i3Vykmb1cp" role="3cqZAp">
-          <node concept="37vLTI" id="6i3Vykmb1jp" role="3clFbG">
-            <node concept="37vLTw" id="6i3Vykmb1co" role="37vLTJ">
-              <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
-            </node>
-            <node concept="2ShNRf" id="tSjOfAc8E3" role="37vLTx">
-              <node concept="1pGfFk" id="tSjOfAc95D" role="2ShVmc">
-                <ref role="37wK5l" to="2j6p:~HighLevelXplain.&lt;init&gt;(org.sat4j.specs.ISolver)" resolve="HighLevelXplain" />
-                <node concept="37vLTw" id="tSjOfAcKXy" role="37wK5m">
-                  <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
-                </node>
-              </node>
+            <node concept="3cmrfG" id="4hqHmbTDcmh" role="37wK5m">
+              <property role="3cmrfH" value="5000" />
             </node>
           </node>
         </node>
@@ -264,6 +247,86 @@
       <node concept="3Tm1VV" id="6i3Vykmb1bY" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="tSjOf_Zpce" role="jymVt" />
+    <node concept="3clFb_" id="4hqHmbTBA8J" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="initializeSolver" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4hqHmbTBA8M" role="3clF47">
+        <node concept="3clFbF" id="4hqHmbTBBrM" role="3cqZAp">
+          <node concept="37vLTI" id="4hqHmbTBBrN" role="3clFbG">
+            <node concept="37vLTw" id="4hqHmbTBBrO" role="37vLTJ">
+              <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
+            </node>
+            <node concept="2ShNRf" id="4hqHmbTBBrP" role="37vLTx">
+              <node concept="1pGfFk" id="4hqHmbTBBrQ" role="2ShVmc">
+                <ref role="37wK5l" to="2jy7:~GateTranslator.&lt;init&gt;(org.sat4j.specs.ISolver)" resolve="GateTranslator" />
+                <node concept="2YIFZM" id="4hqHmbTBBrR" role="37wK5m">
+                  <ref role="1Pybhc" to="st0e:~SolverFactory" resolve="SolverFactory" />
+                  <ref role="37wK5l" to="st0e:~SolverFactory.newDefault():org.sat4j.pb.IPBSolver" resolve="newDefault" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4hqHmbTBBrS" role="3cqZAp">
+          <node concept="37vLTI" id="4hqHmbTBBrT" role="3clFbG">
+            <node concept="37vLTw" id="4hqHmbTBBrU" role="37vLTJ">
+              <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
+            </node>
+            <node concept="2ShNRf" id="4hqHmbTBBrV" role="37vLTx">
+              <node concept="1pGfFk" id="4hqHmbTBBrW" role="2ShVmc">
+                <ref role="37wK5l" to="2j6p:~HighLevelXplain.&lt;init&gt;(org.sat4j.specs.ISolver)" resolve="HighLevelXplain" />
+                <node concept="37vLTw" id="4hqHmbTBBrX" role="37wK5m">
+                  <ref role="3cqZAo" node="tSjOfAcIyl" resolve="gt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2hSqXWTFdwu" role="3cqZAp">
+          <node concept="2OqwBi" id="2hSqXWTFdAr" role="3clFbG">
+            <node concept="37vLTw" id="2hSqXWTFdwt" role="2Oq$k0">
+              <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
+            </node>
+            <node concept="liA8E" id="2hSqXWTFecQ" role="2OqNvi">
+              <ref role="37wK5l" to="2jy7:~SolverDecorator.newVar(int):int" resolve="newVar" />
+              <node concept="37vLTw" id="4hqHmbTDdH0" role="37wK5m">
+                <ref role="3cqZAo" node="4hqHmbTD9OU" resolve="numberOfVariables" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2hSqXWTFh6U" role="3cqZAp">
+          <node concept="2OqwBi" id="2hSqXWTFhgh" role="3clFbG">
+            <node concept="37vLTw" id="2hSqXWTFh6T" role="2Oq$k0">
+              <ref role="3cqZAo" node="6i3Vykmb159" resolve="solver" />
+            </node>
+            <node concept="liA8E" id="2hSqXWTFhRJ" role="2OqNvi">
+              <ref role="37wK5l" to="2jy7:~SolverDecorator.setExpectedNumberOfClauses(int):void" resolve="setExpectedNumberOfClauses" />
+              <node concept="37vLTw" id="4hqHmbTDdL9" role="37wK5m">
+                <ref role="3cqZAo" node="4hqHmbTDa8T" resolve="expectedNumberOfClauses" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="4hqHmbTB_$i" role="1B3o_S" />
+      <node concept="3cqZAl" id="4hqHmbTBA8k" role="3clF45" />
+      <node concept="37vLTG" id="4hqHmbTD9OU" role="3clF46">
+        <property role="TrG5h" value="numberOfVariables" />
+        <node concept="10Oyi0" id="4hqHmbTD9OT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4hqHmbTDa8T" role="3clF46">
+        <property role="TrG5h" value="expectedNumberOfClauses" />
+        <node concept="10Oyi0" id="4hqHmbTDaq$" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="4hqHmbTDcSw" role="lGtFl">
+        <property role="NWlVz" value="Creates a new solver." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4hqHmbTBAQZ" role="jymVt" />
     <node concept="3clFb_" id="tSjOfA2KoL" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addControllableClause" />

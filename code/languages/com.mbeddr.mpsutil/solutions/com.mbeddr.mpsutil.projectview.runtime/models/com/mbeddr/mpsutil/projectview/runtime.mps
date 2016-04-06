@@ -406,6 +406,46 @@
       <node concept="3Tm1VV" id="511fZqnrrPw" role="1B3o_S" />
       <node concept="3clFbS" id="511fZqnrrPx" role="3clF47" />
     </node>
+    <node concept="3clFb_" id="4QICnJ5Fghg" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnFileChange" />
+      <node concept="3clFbS" id="4QICnJ5Fghj" role="3clF47" />
+      <node concept="3Tm1VV" id="4QICnJ5Fghk" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5Fgdf" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="4QICnJ5Fgq$" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnClassLoad" />
+      <node concept="3clFbS" id="4QICnJ5FgqB" role="3clF47" />
+      <node concept="3Tm1VV" id="4QICnJ5FgqC" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5Fgoo" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="4QICnJ5Fg$g" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnMake" />
+      <node concept="3clFbS" id="4QICnJ5Fg$j" role="3clF47" />
+      <node concept="3Tm1VV" id="4QICnJ5Fg$k" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5FgxW" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="4QICnJ5FgIk" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnRepoChange" />
+      <node concept="3clFbS" id="4QICnJ5FgIn" role="3clF47" />
+      <node concept="3Tm1VV" id="4QICnJ5FgIo" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5FgFS" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="4QICnJ5H2$J" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="allRebuildListenersRequired" />
+      <node concept="3clFbS" id="4QICnJ5H2$M" role="3clF47" />
+      <node concept="3Tm1VV" id="4QICnJ5H2$N" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5H2z8" role="3clF45" />
+    </node>
     <node concept="3Tm1VV" id="3ZnFyBjtwPx" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="3ZnFyBjtwWN">
@@ -3032,6 +3072,93 @@
           <node concept="10Nm6u" id="511fZqnrrZ3" role="3clFbG" />
         </node>
       </node>
+    </node>
+    <node concept="3clFb_" id="4QICnJ5Fxnn" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnFileChange" />
+      <node concept="3Tm1VV" id="4QICnJ5Fxnp" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5Fxnq" role="3clF45" />
+      <node concept="3clFbS" id="4QICnJ5Fxnr" role="3clF47">
+        <node concept="3clFbF" id="4QICnJ5FxCW" role="3cqZAp">
+          <node concept="3clFbT" id="4QICnJ5FxCV" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4QICnJ5Fxnu" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnClassLoad" />
+      <node concept="3Tm1VV" id="4QICnJ5Fxnw" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5Fxnx" role="3clF45" />
+      <node concept="3clFbS" id="4QICnJ5Fxny" role="3clF47">
+        <node concept="3clFbF" id="4QICnJ5FxO_" role="3cqZAp">
+          <node concept="3clFbT" id="4QICnJ5FxO$" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4QICnJ5Fxn_" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnMake" />
+      <node concept="3Tm1VV" id="4QICnJ5FxnB" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5FxnC" role="3clF45" />
+      <node concept="3clFbS" id="4QICnJ5FxnD" role="3clF47">
+        <node concept="3clFbF" id="4QICnJ5Fy0e" role="3cqZAp">
+          <node concept="3clFbT" id="4QICnJ5Fy0d" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4QICnJ5FxnG" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="rebuildOnRepoChange" />
+      <node concept="3Tm1VV" id="4QICnJ5FxnI" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5FxnJ" role="3clF45" />
+      <node concept="3clFbS" id="4QICnJ5FxnK" role="3clF47">
+        <node concept="3clFbF" id="4QICnJ5FybR" role="3cqZAp">
+          <node concept="3clFbT" id="4QICnJ5FybQ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4QICnJ5GLoz" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="allRebuildListenersRequired" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4QICnJ5GLoA" role="3clF47">
+        <node concept="3cpWs6" id="4QICnJ5GLFr" role="3cqZAp">
+          <node concept="1Wc70l" id="4QICnJ5GMEL" role="3cqZAk">
+            <node concept="1rXfSq" id="4QICnJ5GMVV" role="3uHU7w">
+              <ref role="37wK5l" node="4QICnJ5FxnG" resolve="rebuildOnRepoChange" />
+            </node>
+            <node concept="1Wc70l" id="4QICnJ5GMkU" role="3uHU7B">
+              <node concept="1Wc70l" id="4QICnJ5GLZM" role="3uHU7B">
+                <node concept="1rXfSq" id="4QICnJ5GLVa" role="3uHU7B">
+                  <ref role="37wK5l" node="4QICnJ5Fxnu" resolve="rebuildOnClassLoad" />
+                </node>
+                <node concept="1rXfSq" id="4QICnJ5GMfZ" role="3uHU7w">
+                  <ref role="37wK5l" node="4QICnJ5Fxnn" resolve="rebuildOnFileChange" />
+                </node>
+              </node>
+              <node concept="1rXfSq" id="4QICnJ5GM_D" role="3uHU7w">
+                <ref role="37wK5l" node="4QICnJ5Fxn_" resolve="rebuildOnMake" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4QICnJ5GLgv" role="1B3o_S" />
+      <node concept="10P_77" id="4QICnJ5GLmt" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="3ZnFyBjv9UY">

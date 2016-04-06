@@ -29,6 +29,9 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -74,6 +77,10 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -95,6 +102,9 @@
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -153,6 +163,14 @@
       </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
@@ -860,6 +878,72 @@
       </node>
       <node concept="NWlO9" id="6eIJF_HROcB" role="lGtFl">
         <property role="NWlVz" value="Checks the consistency of the variability use within a solution." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4hqHmbTCVrV" role="jymVt" />
+    <node concept="2YIFZL" id="4hqHmbTCWg6" role="jymVt">
+      <property role="TrG5h" value="findFirstResultStartingWithMessage" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4hqHmbTCWg9" role="3clF47">
+        <node concept="2Gpval" id="4hqHmbTCXkH" role="3cqZAp">
+          <node concept="2GrKxI" id="4hqHmbTCXkI" role="2Gsz3X">
+            <property role="TrG5h" value="r" />
+          </node>
+          <node concept="3clFbS" id="4hqHmbTCXkJ" role="2LFqv$">
+            <node concept="3clFbJ" id="4hqHmbTCXri" role="3cqZAp">
+              <node concept="3clFbS" id="4hqHmbTCXrj" role="3clFbx">
+                <node concept="3cpWs6" id="4hqHmbTCXQ8" role="3cqZAp">
+                  <node concept="2GrUjf" id="4hqHmbTCXSY" role="3cqZAk">
+                    <ref role="2Gs0qQ" node="4hqHmbTCXkI" resolve="r" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4hqHmbTCXzL" role="3clFbw">
+                <node concept="2OqwBi" id="4hqHmbTCXtz" role="2Oq$k0">
+                  <node concept="2GrUjf" id="4hqHmbTCXsT" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="4hqHmbTCXkI" resolve="r" />
+                  </node>
+                  <node concept="liA8E" id="4hqHmbTCXx7" role="2OqNvi">
+                    <ref role="37wK5l" to="vy7l:_qCyBYJ6FF" resolve="userFriendlyNodeName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4hqHmbTCXKK" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                  <node concept="37vLTw" id="4hqHmbTCXO4" role="37wK5m">
+                    <ref role="3cqZAo" node="4hqHmbTCWS9" resolve="msgPrefix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="4hqHmbTCXnN" role="2GsD0m">
+            <ref role="3cqZAo" node="4hqHmbTCWyc" resolve="results" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4hqHmbTCXYH" role="3cqZAp">
+          <node concept="10Nm6u" id="4hqHmbTCY3P" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4hqHmbTCVX1" role="1B3o_S" />
+      <node concept="3uibUv" id="4hqHmbTCWfo" role="3clF45">
+        <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+      </node>
+      <node concept="37vLTG" id="4hqHmbTCWyc" role="3clF46">
+        <property role="TrG5h" value="results" />
+        <node concept="_YKpA" id="4hqHmbTCWya" role="1tU5fm">
+          <node concept="3uibUv" id="4hqHmbTCWHg" role="_ZDj9">
+            <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4hqHmbTCWS9" role="3clF46">
+        <property role="TrG5h" value="msgPrefix" />
+        <node concept="17QB3L" id="4hqHmbTCX3g" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="4hqHmbTCY6a" role="lGtFl">
+        <property role="NWlVz" value="Returns first result from list whose userFriendlyNodeMessage starts with a given prefix." />
       </node>
     </node>
     <node concept="3Tm1VV" id="tSjOfAadF9" role="1B3o_S" />
