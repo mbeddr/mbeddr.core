@@ -287,7 +287,7 @@
     <property role="TrG5h" value="MbeddrUserGuide" />
     <property role="WqcPg" value="mbeddr User Guide" />
     <node concept="2SbEIf" id="Gd6QB8f5P3" role="30Gjbg">
-      <property role="2SbEId" value="images/vis" />
+      <property role="2SbEId" value="images/_vis" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4R" resolve="vis" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8f5OX" role="30Gjbg">
