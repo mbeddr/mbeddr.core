@@ -3411,8 +3411,8 @@
   <node concept="312cEu" id="6bmIkNC6STn">
     <property role="TrG5h" value="BooleanPropertyModelAccessor" />
     <node concept="3Tm1VV" id="6bmIkNC6STo" role="1B3o_S" />
-    <node concept="3uibUv" id="6bmIkNC6STH" role="1zkMxy">
-      <ref role="3uigEE" node="6bmIkNC4J0L" resolve="TransformingModelAccessor" />
+    <node concept="3uibUv" id="5UWo2tdGeu_" role="1zkMxy">
+      <ref role="3uigEE" to="g51k:~PropertyAccessor" resolve="PropertyAccessor" />
     </node>
     <node concept="2tJIrI" id="6bmIkNC6SWm" role="jymVt" />
     <node concept="312cEg" id="6bmIkNC6T0F" role="jymVt">
@@ -3431,9 +3431,21 @@
       <node concept="3Tm1VV" id="6bmIkNC7PXg" role="1B3o_S" />
       <node concept="3clFbS" id="6bmIkNC7PXh" role="3clF47">
         <node concept="XkiVB" id="6bmIkNC7Q9H" role="3cqZAp">
-          <ref role="37wK5l" node="6bmIkNC4K4Q" resolve="TransformingModelAccessor" />
-          <node concept="37vLTw" id="6bmIkNC7RNc" role="37wK5m">
-            <ref role="3cqZAo" node="6bmIkNC7Ruh" resolve="wrapped" />
+          <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
+          <node concept="37vLTw" id="5UWo2tdGquz" role="37wK5m">
+            <ref role="3cqZAo" node="5UWo2tdGq6g" resolve="node" />
+          </node>
+          <node concept="37vLTw" id="5UWo2tdGqwD" role="37wK5m">
+            <ref role="3cqZAo" node="5UWo2tdGqeB" resolve="propertyName" />
+          </node>
+          <node concept="37vLTw" id="5UWo2tdGqyP" role="37wK5m">
+            <ref role="3cqZAo" node="5UWo2tdGqh_" resolve="readOnly" />
+          </node>
+          <node concept="37vLTw" id="5UWo2tdGq_5" role="37wK5m">
+            <ref role="3cqZAo" node="5UWo2tdGqkW" resolve="allowEmptyText" />
+          </node>
+          <node concept="37vLTw" id="5UWo2tdGqBo" role="37wK5m">
+            <ref role="3cqZAo" node="5UWo2tdGqov" resolve="editorContext" />
           </node>
         </node>
         <node concept="3clFbF" id="6bmIkNC9wKm" role="3cqZAp">
@@ -3457,10 +3469,28 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="6bmIkNC7Ruh" role="3clF46">
-        <property role="TrG5h" value="wrapped" />
-        <node concept="3uibUv" id="6bmIkNC9vgg" role="1tU5fm">
-          <ref role="3uigEE" to="g51k:~ModelAccessor" resolve="ModelAccessor" />
+      <node concept="37vLTG" id="5UWo2tdGq6g" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="5UWo2tdGq9k" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5UWo2tdGqeB" role="3clF46">
+        <property role="TrG5h" value="propertyName" />
+        <node concept="17QB3L" id="5UWo2tdGqgL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5UWo2tdGqh_" role="3clF46">
+        <property role="TrG5h" value="readOnly" />
+        <node concept="10P_77" id="5UWo2tdGqki" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5UWo2tdGqkW" role="3clF46">
+        <property role="TrG5h" value="allowEmptyText" />
+        <node concept="10P_77" id="5UWo2tdGqnH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5UWo2tdGqov" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="5UWo2tdGqrN" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="37vLTG" id="6bmIkNC9wuA" role="3clF46">
@@ -3473,6 +3503,57 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6bmIkNC7PLD" role="jymVt" />
+    <node concept="3clFb_" id="5UWo2tdGzIn" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setText" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5UWo2tdGzIo" role="1B3o_S" />
+      <node concept="3cqZAl" id="5UWo2tdGzIq" role="3clF45" />
+      <node concept="37vLTG" id="5UWo2tdGzIr" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="5UWo2tdGBFN" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5UWo2tdGzIt" role="3clF47">
+        <node concept="3clFbF" id="5UWo2tdGzIx" role="3cqZAp">
+          <node concept="3nyPlj" id="5UWo2tdGzIw" role="3clFbG">
+            <ref role="37wK5l" to="g51k:~PropertyAccessor.setText(java.lang.String):void" resolve="setText" />
+            <node concept="1rXfSq" id="5UWo2tdGzWc" role="37wK5m">
+              <ref role="37wK5l" node="6bmIkNC6STZ" resolve="viewToModel" />
+              <node concept="37vLTw" id="5UWo2tdGzYP" role="37wK5m">
+                <ref role="3cqZAo" node="5UWo2tdGzIr" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5UWo2tdGzIu" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5UWo2tdGBhQ" role="jymVt" />
+    <node concept="3clFb_" id="5UWo2tdGzIy" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getText" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="5UWo2tdGzIz" role="1B3o_S" />
+      <node concept="17QB3L" id="5UWo2tdGBrT" role="3clF45" />
+      <node concept="3clFbS" id="5UWo2tdGzIA" role="3clF47">
+        <node concept="3clFbF" id="5UWo2tdG$78" role="3cqZAp">
+          <node concept="1rXfSq" id="5UWo2tdG$77" role="3clFbG">
+            <ref role="37wK5l" node="6bmIkNC6STS" resolve="modelToView" />
+            <node concept="3nyPlj" id="5UWo2tdGzIC" role="37wK5m">
+              <ref role="37wK5l" to="g51k:~PropertyAccessor.getText():java.lang.String" resolve="getText" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5UWo2tdGzIB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5UWo2tdGBxH" role="jymVt" />
     <node concept="3clFb_" id="6bmIkNC6STS" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="modelToView" />
@@ -3913,35 +3994,23 @@
             <node concept="3uibUv" id="6bmIkNC9rj0" role="1tU5fm">
               <ref role="3uigEE" to="g51k:~ModelAccessor" resolve="ModelAccessor" />
             </node>
-            <node concept="2ShNRf" id="6bmIkNC7z6h" role="33vP2m">
-              <node concept="1pGfFk" id="6bmIkNC7z6i" role="2ShVmc">
-                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
-                <node concept="1rXfSq" id="6bmIkNC7z3B" role="37wK5m">
-                  <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
-                </node>
-                <node concept="37vLTw" id="6bmIkNC7z3C" role="37wK5m">
-                  <ref role="3cqZAo" node="6bmIkNC7z2m" resolve="myPropertyName" />
-                </node>
-                <node concept="37vLTw" id="6bmIkNC7z3D" role="37wK5m">
-                  <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myReadOnly" resolve="myReadOnly" />
-                </node>
-                <node concept="37vLTw" id="6bmIkNC7z3E" role="37wK5m">
-                  <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myAllowsEmptyTarget" resolve="myAllowsEmptyTarget" />
-                </node>
-                <node concept="37vLTw" id="6bmIkNC7z3F" role="37wK5m">
-                  <ref role="3cqZAo" node="6bmIkNC7z3w" resolve="context" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6bmIkNC8Uru" role="3cqZAp">
-          <node concept="37vLTI" id="6bmIkNC8Wcq" role="3clFbG">
-            <node concept="2ShNRf" id="6bmIkNC8Yjt" role="37vLTx">
+            <node concept="2ShNRf" id="6bmIkNC8Yjt" role="33vP2m">
               <node concept="1pGfFk" id="6bmIkNC9nLX" role="2ShVmc">
                 <ref role="37wK5l" node="6bmIkNC7PXd" resolve="BooleanPropertyModelAccessor" />
-                <node concept="37vLTw" id="6bmIkNC9upQ" role="37wK5m">
-                  <ref role="3cqZAo" node="6bmIkNC7z3z" resolve="propertyAccessor" />
+                <node concept="1rXfSq" id="5UWo2tdGr4y" role="37wK5m">
+                  <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                </node>
+                <node concept="37vLTw" id="5UWo2tdGr4z" role="37wK5m">
+                  <ref role="3cqZAo" node="6bmIkNC7z2m" resolve="myPropertyName" />
+                </node>
+                <node concept="37vLTw" id="5UWo2tdGr4$" role="37wK5m">
+                  <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myReadOnly" resolve="myReadOnly" />
+                </node>
+                <node concept="37vLTw" id="5UWo2tdGr4_" role="37wK5m">
+                  <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myAllowsEmptyTarget" resolve="myAllowsEmptyTarget" />
+                </node>
+                <node concept="37vLTw" id="5UWo2tdGr4A" role="37wK5m">
+                  <ref role="3cqZAo" node="6bmIkNC7z3w" resolve="context" />
                 </node>
                 <node concept="37vLTw" id="6bmIkNC9ze1" role="37wK5m">
                   <ref role="3cqZAo" node="6bmIkNC7URf" resolve="myTrueText" />
@@ -3950,9 +4019,6 @@
                   <ref role="3cqZAo" node="6bmIkNC7ZiF" resolve="myFalseText" />
                 </node>
               </node>
-            </node>
-            <node concept="37vLTw" id="6bmIkNC8Urt" role="37vLTJ">
-              <ref role="3cqZAo" node="6bmIkNC7z3z" resolve="propertyAccessor" />
             </node>
           </node>
         </node>
