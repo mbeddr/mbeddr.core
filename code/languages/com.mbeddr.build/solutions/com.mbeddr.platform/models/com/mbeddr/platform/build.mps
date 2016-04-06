@@ -2,10 +2,10 @@
 <model ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -7624,6 +7624,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3PFX_MIOHAH" role="3bR37C">
+          <node concept="3bR9La" id="3PFX_MIOHAI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
         <node concept="1yeLz9" id="3jVbLyZASi7" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.projectview#8411785813236466884" />
           <property role="3LESm3" value="a3049271-b3dd-4434-9b83-30c34057d5df" />
@@ -7655,12 +7661,6 @@
         </node>
         <node concept="1E0d5M" id="24ObHxTrEo7" role="1E1XAP">
           <ref role="1E0d5P" node="24ObHxTrBfS" resolve="com.mbeddr.mpsutil.projectview.vcs" />
-        </node>
-        <node concept="1SiIV0" id="3PFX_MIOHAH" role="3bR37C">
-          <node concept="3bR9La" id="3PFX_MIOHAI" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="FniR$Cj5MS" role="2G$12L">
@@ -9685,6 +9685,12 @@
           <node concept="3bR9La" id="1bfWZjO_enH" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:6SVXTgIejl1" resolve="de.itemis.mps.editor.celllayout.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7x0eTkzfYG" role="3bR37C">
+          <node concept="3bR9La" id="7x0eTkzfYH" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
           </node>
         </node>
       </node>
