@@ -10,6 +10,15 @@
   </imports>
   <registry>
     <language id="fe179c61-4531-423b-a95c-f5f59a664603" name="com.mbeddr.analyses.cpa">
+      <concept id="4409367108242665713" name="com.mbeddr.analyses.cpa.structure.ICPAAnalysisConfig" flags="ng" index="3makzO">
+        <child id="4409367108243085467" name="cpas" index="3mbY2u" />
+      </concept>
+      <concept id="4409367108243090270" name="com.mbeddr.analyses.cpa.structure.PointerCPA" flags="ng" index="3mbXdr" />
+      <concept id="4409367108243087864" name="com.mbeddr.analyses.cpa.structure.PredicateCPA" flags="ng" index="3mbXBX" />
+      <concept id="4409367108243087975" name="com.mbeddr.analyses.cpa.structure.ValueAnalysisCPA" flags="ng" index="3mbXDy" />
+      <concept id="4409367108243085619" name="com.mbeddr.analyses.cpa.structure.LocationCPA" flags="ng" index="3mbY4Q" />
+      <concept id="4409367108243086699" name="com.mbeddr.analyses.cpa.structure.CallstackCPA" flags="ng" index="3mbYlI" />
+      <concept id="4409367108243086788" name="com.mbeddr.analyses.cpa.structure.FunctionpointerCPA" flags="ng" index="3mbYn1" />
       <concept id="5320718137711358982" name="com.mbeddr.analyses.cpa.structure.AssertionsAnalysis" flags="ng" index="3X_ozM" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -207,8 +216,14 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="4BmZfiOhEZY" resolve="assertsWhichHold" />
+      <node concept="3mbY4Q" id="3OLe0nF8iMX" role="3mbY2u" />
+      <node concept="3mbYlI" id="3OLe0nF8iN2" role="3mbY2u" />
+      <node concept="3mbXdr" id="3OLe0nF8iNa" role="3mbY2u" />
+      <node concept="3mbYn1" id="3OLe0nF8iNk" role="3mbY2u" />
+      <node concept="3mbXBX" id="3OLe0nF8iNw" role="3mbY2u" />
+      <node concept="3mbXDy" id="3OLe0nF8iNI" role="3mbY2u" />
     </node>
-    <node concept="3X_ozM" id="5KYWJPNOV$$" role="3V$2$K">
+    <node concept="3X_ozM" id="3OLe0nF8iNQ" role="3V$2$K">
       <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
@@ -223,8 +238,14 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="5KYWJPNOUOg" resolve="assertWhichFails" />
+      <node concept="3mbY4Q" id="3OLe0nF8iNR" role="3mbY2u" />
+      <node concept="3mbYlI" id="3OLe0nF8iNS" role="3mbY2u" />
+      <node concept="3mbXdr" id="3OLe0nF8iNT" role="3mbY2u" />
+      <node concept="3mbYn1" id="3OLe0nF8iNU" role="3mbY2u" />
+      <node concept="3mbXBX" id="3OLe0nF8iNV" role="3mbY2u" />
+      <node concept="3mbXDy" id="3OLe0nF8iNW" role="3mbY2u" />
     </node>
-    <node concept="3X_ozM" id="5pfYjqBbnnu" role="3V$2$K">
+    <node concept="3X_ozM" id="3OLe0nF8iOc" role="3V$2$K">
       <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
@@ -238,7 +259,13 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="5pfYjqBbcL_" resolve="main" />
+      <ref role="3V$Cn$" node="5pfYjqBbcL_" resolve="problematic" />
+      <node concept="3mbY4Q" id="3OLe0nF8iOd" role="3mbY2u" />
+      <node concept="3mbYlI" id="3OLe0nF8iOe" role="3mbY2u" />
+      <node concept="3mbXdr" id="3OLe0nF8iOf" role="3mbY2u" />
+      <node concept="3mbYn1" id="3OLe0nF8iOg" role="3mbY2u" />
+      <node concept="3mbXBX" id="3OLe0nF8iOh" role="3mbY2u" />
+      <node concept="3mbXDy" id="3OLe0nF8iOi" role="3mbY2u" />
     </node>
   </node>
   <node concept="N3F5e" id="4BmZfiOhEZA">
@@ -334,7 +361,7 @@
       <property role="TrG5h" value="empty_1458822467352_2" />
     </node>
     <node concept="N3Fnx" id="5pfYjqBbcL_" role="N3F5h">
-      <property role="TrG5h" value="main" />
+      <property role="TrG5h" value="problematic" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="5pfYjqBbcLA" role="3XIRFX">
         <node concept="3XIRlf" id="5e30jNT02U0" role="3XIRFZ">
@@ -358,7 +385,7 @@
         <node concept="Y9XUq" id="3hA4xcDtldX" role="3XIRFZ">
           <node concept="25Bbzn" id="3hA4xcDtlhg" role="Y9XUp">
             <node concept="3TlMh9" id="3hA4xcDtlm2" role="3TlMhJ">
-              <property role="2hmy$m" value="100" />
+              <property role="2hmy$m" value="1000" />
             </node>
             <node concept="3ZVu4v" id="3hA4xcDtlf$" role="3TlMhI">
               <ref role="3ZVs_2" node="5e30jNT02U0" resolve="x" />

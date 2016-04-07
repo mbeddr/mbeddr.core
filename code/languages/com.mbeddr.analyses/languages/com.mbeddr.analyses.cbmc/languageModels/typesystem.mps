@@ -30,6 +30,8 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="vnly" ref="r:f386cb21-bd7b-44e0-88f9-9135051a96b2(com.mbeddr.ext.math.typesystem)" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
+    <import index="c9jm" ref="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" implicit="true" />
   </imports>
@@ -1979,7 +1981,7 @@
     </node>
     <node concept="1YaCAy" id="72mSD5R_VLG" role="1YuTPh">
       <property role="TrG5h" value="vev" />
-      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue_old" />
     </node>
   </node>
   <node concept="1YbPZF" id="i5tJSHflsf">
@@ -2055,7 +2057,7 @@
     </node>
     <node concept="1YaCAy" id="636FvLn07Z$" role="1YuTPh">
       <property role="TrG5h" value="ve" />
-      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+      <ref role="1YaFvo" to="k146:72mSD5R_OCr" resolve="ValidEnumerationValue" />
     </node>
   </node>
   <node concept="18kY7G" id="6BJ5EqKyhi4">
@@ -2242,6 +2244,46 @@
       <ref role="1YaFvo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
     </node>
   </node>
+  <node concept="18kY7G" id="7VJQUau7iAD">
+    <property role="TrG5h" value="check_ICbmcSettings" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <node concept="3clFbS" id="7VJQUau7iAE" role="18ibNy">
+      <node concept="3clFbJ" id="7VJQUau7jhG" role="3cqZAp">
+        <node concept="3clFbS" id="7VJQUau7jhH" role="3clFbx">
+          <node concept="2MkqsV" id="7VJQUau7kKf" role="3cqZAp">
+            <node concept="Xl_RD" id="7VJQUau7kKx" role="2MkJ7o">
+              <property role="Xl_RC" value="unwinding assertions and partial loops must not be enabled at the same time" />
+            </node>
+            <node concept="1YBJjd" id="7VJQUau7kPD" role="2OEOjV">
+              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="7VJQUau7jt9" role="3clFbw">
+          <node concept="2OqwBi" id="7VJQUau7jwf" role="3uHU7w">
+            <node concept="1YBJjd" id="7VJQUau7jui" role="2Oq$k0">
+              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
+            </node>
+            <node concept="3TrcHB" id="7VJQUau7jBc" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7ehmsbAuTER" resolve="partialLoops" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7VJQUau7jks" role="3uHU7B">
+            <node concept="1YBJjd" id="7VJQUau7jhY" role="2Oq$k0">
+              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
+            </node>
+            <node concept="3TrcHB" id="7VJQUau7jnV" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7ehmsbAuTDX" resolve="unwindingAssertions" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VJQUau7iAG" role="1YuTPh">
+      <property role="TrG5h" value="iCbmcSettings" />
+      <ref role="1YaFvo" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    </node>
+  </node>
   <node concept="18kY7G" id="4Sxr3A_YBqU">
     <property role="TrG5h" value="check_Implies_old" />
     <property role="3GE5qa" value="expressions" />
@@ -2331,46 +2373,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="18kY7G" id="7VJQUau7iAD">
-    <property role="TrG5h" value="check_ICbmcSettings" />
-    <property role="3GE5qa" value="configuration.cbmc" />
-    <node concept="3clFbS" id="7VJQUau7iAE" role="18ibNy">
-      <node concept="3clFbJ" id="7VJQUau7jhG" role="3cqZAp">
-        <node concept="3clFbS" id="7VJQUau7jhH" role="3clFbx">
-          <node concept="2MkqsV" id="7VJQUau7kKf" role="3cqZAp">
-            <node concept="Xl_RD" id="7VJQUau7kKx" role="2MkJ7o">
-              <property role="Xl_RC" value="unwinding assertions and partial loops must not be enabled at the same time" />
-            </node>
-            <node concept="1YBJjd" id="7VJQUau7kPD" role="2OEOjV">
-              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="7VJQUau7jt9" role="3clFbw">
-          <node concept="2OqwBi" id="7VJQUau7jwf" role="3uHU7w">
-            <node concept="1YBJjd" id="7VJQUau7jui" role="2Oq$k0">
-              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
-            </node>
-            <node concept="3TrcHB" id="7VJQUau7jBc" role="2OqNvi">
-              <ref role="3TsBF5" to="q5q6:7ehmsbAuTER" resolve="partialLoops" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="7VJQUau7jks" role="3uHU7B">
-            <node concept="1YBJjd" id="7VJQUau7jhY" role="2Oq$k0">
-              <ref role="1YBMHb" node="7VJQUau7iAG" resolve="iCbmcSettings" />
-            </node>
-            <node concept="3TrcHB" id="7VJQUau7jnV" role="2OqNvi">
-              <ref role="3TsBF5" to="q5q6:7ehmsbAuTDX" resolve="unwindingAssertions" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7VJQUau7iAG" role="1YuTPh">
-      <property role="TrG5h" value="iCbmcSettings" />
-      <ref role="1YaFvo" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
     </node>
   </node>
 </model>

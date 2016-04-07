@@ -16,6 +16,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -282,7 +283,7 @@
     <property role="TrG5h" value="main" />
     <property role="3GE5qa" value="" />
     <node concept="3aamgX" id="72mSD5R_YQp" role="3acgRq">
-      <ref role="30HIoZ" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+      <ref role="30HIoZ" to="k146:72mSD5R_OCr" resolve="ValidEnumerationValue" />
       <node concept="1Koe21" id="72mSD5R_Z7u" role="1lVwrX">
         <node concept="N3F5e" id="72mSD5R_Z7v" role="1Koe22">
           <property role="TrG5h" value="Dummy" />
@@ -1285,6 +1286,7 @@
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
                 </node>
+                <node concept="3TlMhd" id="6UAHnEzWy6_" role="3XIe9u" />
               </node>
               <node concept="3XIRFW" id="7MMcIPluywP" role="3XIRFZ">
                 <node concept="3XIRlf" id="7MMcIPluywQ" role="3XIRFZ">
