@@ -134,6 +134,11 @@
       <property role="20kJfa" value="removeHints" />
       <ref role="20lvS9" to="tpc2:42lfqf__buC" resolve="ContextHintsSpecification" />
     </node>
+    <node concept="1TJgyj" id="7EUu569oDWP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" node="7EUu569oE3b" resolve="TableNodeCondition" />
+    </node>
     <node concept="PrWs8" id="1dAqnm8IymM" role="PrDN$">
       <ref role="PrY4T" node="1dAqnm8BzpZ" resolve="IGeneratesFactoryMethod" />
     </node>
@@ -1201,6 +1206,11 @@
   <node concept="1TIwiD" id="7EUu569l1_u">
     <property role="1pbfSe" value="68063663" />
     <property role="TrG5h" value="ChildFactory" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7EUu569oE3b">
+    <property role="1pbfSe" value="69015836" />
+    <property role="TrG5h" value="TableNodeCondition" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
