@@ -282,6 +282,10 @@
       <property role="TrG5h" value="compilerOptions" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="1tTyxbTm6yO" role="1TKVEl">
+      <property role="TrG5h" value="linkerOptions" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2nSRgleEPDw">
     <property role="TrG5h" value="IDebuggablePlatform" />

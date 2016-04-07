@@ -122,6 +122,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -195,6 +196,9 @@
       </concept>
       <concept id="3373914745211365206" name="com.mbeddr.core.make.structure.Variable" flags="ng" index="3G52F3">
         <property id="3373914745211446888" name="value" index="3G5mJX" />
+      </concept>
+      <concept id="3373914745211590969" name="com.mbeddr.core.make.structure.VariableRefCommandItem" flags="ng" index="3G69iG">
+        <reference id="3373914745211590970" name="var" index="3G69iJ" />
       </concept>
       <concept id="3373914745211590947" name="com.mbeddr.core.make.structure.TextCommandItem" flags="ng" index="3G69iQ">
         <property id="3373914745211590948" name="text" index="3G69iL" />
@@ -545,6 +549,9 @@
                 </node>
               </node>
             </node>
+            <node concept="3G69iG" id="1tTyxbTmhok" role="3G69ia">
+              <ref role="3G69iJ" node="1tTyxbTmdqx" resolve="LDFLAGS" />
+            </node>
             <node concept="3G69iQ" id="2kkumeGQS1L" role="3G69ia">
               <property role="3G69iL" value="libpath" />
               <node concept="1WS0z7" id="2kkumeGQS1N" role="lGtFl">
@@ -804,6 +811,34 @@
                 </node>
                 <node concept="2qgKlT" id="7c6uq_OkFrw" role="2OqNvi">
                   <ref role="37wK5l" to="ahli:7c6uq_OhAn9" resolve="getResolvedPathToCompiler" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3G52F3" id="1tTyxbTmdqx" role="12RR68">
+      <property role="TrG5h" value="LDFLAGS" />
+      <property role="3G5mJX" value="flags" />
+      <node concept="17Uvod" id="1tTyxbTmfvG" role="lGtFl">
+        <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
+        <property role="2qtEX9" value="value" />
+        <node concept="3zFVjK" id="1tTyxbTmfvH" role="3zH0cK">
+          <node concept="3clFbS" id="1tTyxbTmfvI" role="2VODD2">
+            <node concept="3clFbF" id="1tTyxbTmfwV" role="3cqZAp">
+              <node concept="2OqwBi" id="1tTyxbTmgt5" role="3clFbG">
+                <node concept="1PxgMI" id="1tTyxbTmgjr" role="2Oq$k0">
+                  <ref role="1PxNhF" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
+                  <node concept="2OqwBi" id="1tTyxbTmfSB" role="1PxMeX">
+                    <node concept="30H73N" id="1tTyxbTmfwU" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1tTyxbTmg3y" role="2OqNvi">
+                      <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="1tTyxbTmgDn" role="2OqNvi">
+                  <ref role="3TsBF5" to="51wr:1tTyxbTm6yO" resolve="linkerOptions" />
                 </node>
               </node>
             </node>
@@ -2021,6 +2056,7 @@
           <property role="1FkSt$" value="-g" />
           <property role="3r8Kxs" value="make" />
           <property role="3r8Kw1" value="gdb" />
+          <property role="3I8uaA" value="" />
           <node concept="29HgVG" id="4zqPC3awM9R" role="lGtFl">
             <node concept="3NFfHV" id="4zqPC3awM9S" role="3NFExx">
               <node concept="3clFbS" id="4zqPC3awM9T" role="2VODD2">
