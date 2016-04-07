@@ -12,8 +12,8 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -229,9 +229,6 @@
     <node concept="2Q9Fgs" id="53uVI115m6" role="2Q9xDr">
       <node concept="2Q9FjX" id="53uVI115m7" role="2Q9FjI" />
     </node>
-    <node concept="12mU2y" id="3mKW6ZYgyk8" role="2Q9xDr">
-      <node concept="3GpDuo" id="3mKW6ZYgyk9" role="3GpDut" />
-    </node>
     <node concept="2eOfOl" id="34d3$NxXg9p" role="2ePNbc">
       <property role="TrG5h" value="ReqCTest" />
       <property role="iO3LB" value="true" />
@@ -245,6 +242,9 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+    </node>
+    <node concept="12mU2y" id="3mKW6ZYgyk8" role="2Q9xDr">
+      <node concept="3GpDuo" id="3mKW6ZYgyk9" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="34d3$NxWRf0">

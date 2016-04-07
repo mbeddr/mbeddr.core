@@ -2965,6 +2965,13 @@
         <property role="NWlVz" value="Runtime error when calling cbmc." />
       </node>
     </node>
+    <node concept="QsSxf" id="5pfYjqBbyPA" role="Qtgdg">
+      <property role="TrG5h" value="UNKNOWN" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      <node concept="NWlO9" id="5pfYjqBbySl" role="lGtFl">
+        <property role="NWlVz" value="Unknown status result." />
+      </node>
+    </node>
     <node concept="QsSxf" id="7N0A15XmyUV" role="Qtgdg">
       <property role="TrG5h" value="TIMEOUT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />

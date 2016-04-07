@@ -1324,7 +1324,7 @@
         </node>
         <node concept="1SiIV0" id="G$HhWcysVl" role="3bR37C">
           <node concept="3bR9La" id="G$HhWcysVm" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
@@ -2075,6 +2075,9 @@
         <node concept="1E0d5M" id="27YNgA28xCu" role="1E1XAP">
           <ref role="1E0d5P" node="29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
         </node>
+        <node concept="1E0d5M" id="3VRmSegrnOO" role="1E1XAP">
+          <ref role="1E0d5P" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+        </node>
         <node concept="1SiIV0" id="77vSOTOhAFd" role="3bR37C">
           <node concept="3bR9La" id="77vSOTOhAFe" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2086,9 +2089,6 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
-        </node>
-        <node concept="1E0d5M" id="3VRmSegrnOO" role="1E1XAP">
-          <ref role="1E0d5P" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
         </node>
       </node>
     </node>
@@ -2367,6 +2367,18 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7vJswut7z$K" role="3bR37C">
+          <node concept="3bR9La" id="7vJswut7z$L" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7vJswut7z$M" role="3bR37C">
+          <node concept="3bR9La" id="7vJswut7z$N" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
         <node concept="1yeLz9" id="7klUZA6XR49" role="1TViLv">
           <property role="TrG5h" value="de.slisson.mps.conditionalEditor#2877762237605071651" />
           <property role="3LESm3" value="4c7e6b88-d386-40ea-a53c-f652375c21a9" />
@@ -2412,18 +2424,6 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7vJswut7z$K" role="3bR37C">
-          <node concept="3bR9La" id="7vJswut7z$L" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7vJswut7z$M" role="3bR37C">
-          <node concept="3bR9La" id="7vJswut7z$N" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
