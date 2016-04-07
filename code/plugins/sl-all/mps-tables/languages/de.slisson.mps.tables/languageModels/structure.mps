@@ -263,6 +263,11 @@
       <property role="20kJfa" value="filter" />
       <ref role="20lvS9" node="4GCAHOdRQfU" resolve="ChildFilter" />
     </node>
+    <node concept="1TJgyj" id="7EUu569lcFL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="factory" />
+      <ref role="20lvS9" node="7EUu569l1_u" resolve="ChildFactory" />
+    </node>
     <node concept="1TJgyj" id="1dAqnm8nelh" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="linkDeclaration" />
@@ -1191,6 +1196,11 @@
     <property role="1pbfSe" value="67180002" />
     <property role="3GE5qa" value="CellQuery" />
     <property role="TrG5h" value="TableCellQuerySharedInit" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7EUu569l1_u">
+    <property role="1pbfSe" value="68063663" />
+    <property role="TrG5h" value="ChildFactory" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
