@@ -75,6 +75,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -936,12 +937,14 @@
           </node>
         </node>
         <node concept="3F0ifn" id="1tTyxbTm6zW" role="3EZMnx">
-          <property role="3F0ifm" value="linker options: " />
+          <property role="3F0ifm" value="linker options:" />
           <node concept="lj46D" id="1tTyxbTm6_K" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
         <node concept="3F0A7n" id="1tTyxbTm6$M" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <property role="1$x2rV" value="&lt;no link options&gt;" />
           <ref role="1NtTu8" to="51wr:1tTyxbTm6yO" resolve="linkerOptions" />
         </node>
         <node concept="PMmxH" id="2nSRgleEQot" role="3EZMnx">
