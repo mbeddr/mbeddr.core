@@ -9,7 +9,7 @@
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="0" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan" version="0" />
   </languages>
@@ -74,6 +74,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -222,6 +223,7 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <property role="3I8uaA" value="" />
     </node>
   </node>
   <node concept="N3F5e" id="2X7IK8cZi_3">
