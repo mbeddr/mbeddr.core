@@ -686,9 +686,41 @@
             </node>
           </node>
           <node concept="3clFbC" id="DbVawgQ2$U" role="3clFbw">
-            <node concept="10Nm6u" id="DbVawgQ2JY" role="3uHU7w" />
             <node concept="37vLTw" id="DbVawgQ2mp" role="3uHU7B">
               <ref role="3cqZAo" node="5KYWJPNL$$a" resolve="cpaResult" />
+            </node>
+            <node concept="10Nm6u" id="DbVawgQ2JY" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1y8E7lmlTM" role="3cqZAp">
+          <node concept="3clFbS" id="1y8E7lmlTN" role="3clFbx">
+            <node concept="3cpWs6" id="1y8E7lmlTO" role="3cqZAp">
+              <node concept="1rXfSq" id="1y8E7lmlTP" role="3cqZAk">
+                <ref role="37wK5l" node="3OLe0nF5cg9" resolve="createRuntimeErrorResults" />
+                <node concept="37vLTw" id="1y8E7lmlTQ" role="37wK5m">
+                  <ref role="3cqZAo" node="5KYWJPNNJ1W" resolve="rawCommand" />
+                </node>
+                <node concept="Xl_RD" id="1y8E7lmlTR" role="37wK5m">
+                  <property role="Xl_RC" value="NOT_YET_STARTED" />
+                </node>
+                <node concept="37vLTw" id="1y8E7lmlTS" role="37wK5m">
+                  <ref role="3cqZAo" node="5KYWJPNLEkN" resolve="entry" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1y8E7lmlTU" role="3clFbw">
+            <node concept="Rm8GO" id="1y8E7lmlTV" role="3uHU7w">
+              <ref role="1Px2BO" to="k0u0:~CPAcheckerResult$Result" resolve="CPAcheckerResult.Result" />
+              <ref role="Rm8GQ" to="k0u0:~CPAcheckerResult$Result.NOT_YET_STARTED" resolve="NOT_YET_STARTED" />
+            </node>
+            <node concept="2OqwBi" id="1y8E7lmlTW" role="3uHU7B">
+              <node concept="37vLTw" id="1y8E7lmlTX" role="2Oq$k0">
+                <ref role="3cqZAo" node="5KYWJPNL$$a" resolve="cpaResult" />
+              </node>
+              <node concept="liA8E" id="1y8E7lmlTY" role="2OqNvi">
+                <ref role="37wK5l" to="k0u0:~CPAcheckerResult.getResult():org.sosy_lab.cpachecker.core.CPAcheckerResult$Result" resolve="getResult" />
+              </node>
             </node>
           </node>
         </node>
