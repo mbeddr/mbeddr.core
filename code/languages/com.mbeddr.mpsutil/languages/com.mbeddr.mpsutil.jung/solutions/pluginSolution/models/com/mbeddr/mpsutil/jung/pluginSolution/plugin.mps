@@ -484,6 +484,7 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1208542034276" name="jetbrains.mps.baseLanguage.collections.structure.MapClearOperation" flags="nn" index="1yHZxX" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
@@ -1360,6 +1361,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6LLGpXJawhJ" role="3cqZAp" />
+        <node concept="3clFbJ" id="6LLGpXJasIs" role="3cqZAp">
+          <node concept="3clFbS" id="6LLGpXJasIu" role="3clFbx">
+            <node concept="3clFbF" id="6LLGpXJauyo" role="3cqZAp">
+              <node concept="2OqwBi" id="6LLGpXJauyl" role="3clFbG">
+                <node concept="10M0yZ" id="6LLGpXJauym" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="6LLGpXJauyn" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="6LLGpXJauyL" role="37wK5m">
+                    <property role="Xl_RC" value="JUNG Graph is empty (no vertices); skipping update." />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6LLGpXJawO4" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="6LLGpXJatWY" role="3clFbw">
+            <node concept="2OqwBi" id="6LLGpXJatxl" role="2Oq$k0">
+              <node concept="37vLTw" id="6LLGpXJatcj" role="2Oq$k0">
+                <ref role="3cqZAo" node="78j9QLkb7WU" resolve="gr" />
+              </node>
+              <node concept="liA8E" id="6LLGpXJatUB" role="2OqNvi">
+                <ref role="37wK5l" to="ln2k:5yCuRHcaOr0" resolve="vertices" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="6LLGpXJaurS" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6LLGpXJavNz" role="3cqZAp" />
         <node concept="3cpWs8" id="3hinUq6ZAvT" role="3cqZAp">
           <node concept="3cpWsn" id="3hinUq6ZAvU" role="3cpWs9">
             <property role="TrG5h" value="jnLayout" />
@@ -1388,6 +1421,8 @@
           </node>
         </node>
         <node concept="3clFbH" id="4_eW4EshJ_i" role="3cqZAp" />
+        <node concept="3clFbH" id="6LLGpXJasvV" role="3cqZAp" />
+        <node concept="3clFbH" id="6LLGpXJarbc" role="3cqZAp" />
         <node concept="3cpWs8" id="4_eW4Esi1yx" role="3cqZAp">
           <node concept="3cpWsn" id="4_eW4Esi1yy" role="3cpWs9">
             <property role="TrG5h" value="jungGraph" />
@@ -1437,6 +1472,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6LLGpXJanC1" role="3cqZAp" />
         <node concept="3clFbH" id="64nCHqd4GhY" role="3cqZAp" />
         <node concept="3cpWs8" id="7P$SxBYKdE4" role="3cqZAp">
           <node concept="3cpWsn" id="7P$SxBYKdE5" role="3cpWs9">
