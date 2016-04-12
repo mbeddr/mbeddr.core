@@ -1,2 +1,1 @@
-http://download.jetbrains.com/mps/33/MPS-3.3.4-macos.dmg
 http://download.jetbrains.com/mps/33/MPS-3.3.4.exe
