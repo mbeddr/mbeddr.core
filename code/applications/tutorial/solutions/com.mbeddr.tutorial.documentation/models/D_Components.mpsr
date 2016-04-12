@@ -812,7 +812,7 @@
         </node>
         <node concept="1DKdXA" id="3D8Uf615Zbh" role="1_0VJ0">
           <property role="1DKdXC" value="mbeddr" />
-          <property role="1DKdXF" value="Configuration Items:&#10;  reporting: printf (add labels false) &#10;  physical units (config = Units Declarations (mbeddr.tutorial.main.m1)) &#10;  components: no middleware         &#10;              wire statically: false&#10;" />
+          <property role="1DKdXF" value="reporting       printf&#10;components      generation strategy: no moddleware {&#10;                    wire statically: false&#10;                    check contracts (runtime &amp; static): true&#10;                }&#10;units" />
         </node>
         <node concept="1_0LV8" id="3D8Uf617IDD" role="1_0VJ0">
           <node concept="19SGf9" id="3D8Uf617IDE" role="1_0LWR">
@@ -2417,7 +2417,7 @@
         <node concept="1_0LV8" id="5MdJlx$fMKk" role="1_0VJ0">
           <node concept="19SGf9" id="5MdJlx$fMKl" role="1_0LWR">
             <node concept="19SUe$" id="5MdJlx$fMKt" role="19SJt6">
-              <property role="19SUeA" value="In a few rare cases you want to store a required port also as a local variable (e.g. when iterating over a bunch of multiports where you filter out some of them). In even rarer cases you may want to pass a required port as an argument to a function or runnable you are calling or store it in a global variable. To address those use cases we introduces a type in mbeddr called " />
+              <property role="19SUeA" value="In a few rare cases you want to store a required port also as a local variable (e.g. when iterating over a bunch of multiports where you filter out some of them). In even rarer cases you may want to pass a required port as an argument to a function or runnable you are calling or store it in a global variable. To address those use cases we introduce a type in mbeddr called " />
             </node>
             <node concept="1jUjqm" id="4dKKrcE0Ibi" role="19SJt6">
               <node concept="19SGf9" id="4dKKrcE0Ibj" role="$DsGW">
@@ -2621,7 +2621,7 @@
             <node concept="1jUjqm" id="6UY8Kx5fbmR" role="19SJt6">
               <node concept="19SGf9" id="6UY8Kx5fbmS" role="$DsGW">
                 <node concept="19SUe$" id="6UY8Kx5fbmT" role="19SJt6">
-                  <property role="19SUeA" value="com.mbeddr.analyses.componentcontracts" />
+                  <property role="19SUeA" value="com.mbeddr.analyses.components" />
                 </node>
               </node>
             </node>
@@ -2631,7 +2631,7 @@
             <node concept="1jUjqm" id="6UY8Kx5fcI$" role="19SJt6">
               <node concept="19SGf9" id="6UY8Kx5fcI_" role="$DsGW">
                 <node concept="19SUe$" id="6UY8Kx5fcIA" role="19SJt6">
-                  <property role="19SUeA" value="verifiable" />
+                  <property role="19SUeA" value="checked" />
                 </node>
               </node>
             </node>
@@ -2652,7 +2652,7 @@
             <node concept="1jUjqm" id="6UY8Kx5fj_y" role="19SJt6">
               <node concept="19SGf9" id="6UY8Kx5fj_z" role="$DsGW">
                 <node concept="19SUe$" id="6UY8Kx5fj_$" role="19SJt6">
-                  <property role="19SUeA" value="verification" />
+                  <property role="19SUeA" value="checked" />
                 </node>
               </node>
             </node>
