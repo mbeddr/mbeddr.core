@@ -12,8 +12,8 @@
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
   </languages>
   <imports />
   <registry>
@@ -133,6 +133,7 @@
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
         <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
+      <concept id="7350547698093816046" name="com.mbeddr.core.modules.structure.PureFunctionAnnotation" flags="ng" index="2Bs1N1" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -621,6 +622,7 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="2Bs1N1" id="6eIJF_HTp_Q" role="lGtFl" />
     </node>
   </node>
   <node concept="N3F5e" id="7UiQjZi_RJv">
@@ -2334,16 +2336,18 @@
               </node>
             </node>
             <node concept="19$8ne" id="7UiQjZi_RSV" role="c0U16">
-              <node concept="2$_UoH" id="7UiQjZi_RSW" role="1_9fRO">
-                <ref role="2$_UoI" node="7UiQjZi_RSc" resolve="triangle_checkValid" />
-                <node concept="3ZUYvv" id="7UiQjZi_RSX" role="3O_q_k">
-                  <ref role="3ZUYvu" node="5iawPn1XCrU" resolve="a" />
-                </node>
-                <node concept="3ZUYvv" id="7UiQjZi_RSY" role="3O_q_k">
-                  <ref role="3ZUYvu" node="5iawPn1XCn_" resolve="b" />
-                </node>
-                <node concept="3ZUYvv" id="7UiQjZi_RSZ" role="3O_q_k">
-                  <ref role="3ZUYvu" node="5iawPn1XCrS" resolve="c" />
+              <node concept="2BPB98" id="6ygjR3uEvFK" role="1_9fRO">
+                <node concept="2$_UoH" id="6ygjR3uEvFG" role="1_9fRO">
+                  <ref role="2$_UoI" node="7UiQjZi_RSc" resolve="triangle_checkValid" />
+                  <node concept="3ZUYvv" id="6ygjR3uEvFH" role="3O_q_k">
+                    <ref role="3ZUYvu" node="5iawPn1XCrU" resolve="a" />
+                  </node>
+                  <node concept="3ZUYvv" id="6ygjR3uEvFI" role="3O_q_k">
+                    <ref role="3ZUYvu" node="5iawPn1XCn_" resolve="b" />
+                  </node>
+                  <node concept="3ZUYvv" id="6ygjR3uEvFJ" role="3O_q_k">
+                    <ref role="3ZUYvu" node="5iawPn1XCrS" resolve="c" />
+                  </node>
                 </node>
               </node>
             </node>

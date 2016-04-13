@@ -288,10 +288,6 @@
       <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
-      <concept id="3253504201087213830" name="com.mbeddr.mpsutil.blutil.structure.PerformanceProfiler" flags="ng" index="1Cbqnj">
-        <property id="3253504201087213832" name="name" index="1Cbqnt" />
-        <child id="3253504201087213831" name="profiledStatements" index="1Cbqni" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -487,166 +483,158 @@
             <node concept="10Nm6u" id="2OALdl4VDI0" role="33vP2m" />
           </node>
         </node>
-        <node concept="1Cbqnj" id="2OALdl4V$KF" role="3cqZAp">
-          <property role="1Cbqnt" value="------------- Building the Lifted Result --------------" />
-          <node concept="3clFbS" id="2OALdl4V$KH" role="1Cbqni">
-            <node concept="9aQIb" id="2OALdl4V_72" role="3cqZAp">
-              <node concept="3clFbS" id="2OALdl4V_73" role="9aQI4">
-                <node concept="3clFbF" id="7oz0hCw4kWR" role="3cqZAp">
-                  <node concept="NRdvd" id="7oz0hCw4u7C" role="3clFbG">
-                    <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
-                    <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
-                    <node concept="Xl_RD" id="7oz0hCw4u7D" role="37wK5m">
-                      <property role="Xl_RC" value="Initial raw states" />
-                    </node>
-                    <node concept="2OqwBi" id="7oz0hCw4u7E" role="37wK5m">
-                      <node concept="37vLTw" id="7oz0hCw4u7F" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6GZ1x5Gshjy" resolve="rawRes" />
-                      </node>
-                      <node concept="liA8E" id="7oz0hCw4u7G" role="2OqNvi">
-                        <ref role="37wK5l" to="rbq9:3ccRFHLc94l" resolve="getStates" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="2OALdl4VDgK" role="37wK5m">
-                      <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
-                    </node>
-                  </node>
+        <node concept="3clFbH" id="4hqHmbT_x6F" role="3cqZAp" />
+        <node concept="3clFbF" id="7oz0hCw4kWR" role="3cqZAp">
+          <node concept="NRdvd" id="7oz0hCw4u7C" role="3clFbG">
+            <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
+            <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
+            <node concept="Xl_RD" id="7oz0hCw4u7D" role="37wK5m">
+              <property role="Xl_RC" value="Initial raw states" />
+            </node>
+            <node concept="2OqwBi" id="7oz0hCw4u7E" role="37wK5m">
+              <node concept="37vLTw" id="7oz0hCw4u7F" role="2Oq$k0">
+                <ref role="3cqZAo" node="6GZ1x5Gshjy" resolve="rawRes" />
+              </node>
+              <node concept="liA8E" id="7oz0hCw4u7G" role="2OqNvi">
+                <ref role="37wK5l" to="rbq9:3ccRFHLc94l" resolve="getStates" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2OALdl4VDgK" role="37wK5m">
+              <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2V53qRg7sbT" role="3cqZAp">
+          <node concept="3cpWsn" id="2V53qRg7sbU" role="3cpWs9">
+            <property role="TrG5h" value="filteredInitNoise" />
+            <node concept="_YKpA" id="2V53qRg7sbV" role="1tU5fm">
+              <node concept="3uibUv" id="2V53qRg7sbW" role="_ZDj9">
+                <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="2V53qRg8aQS" role="33vP2m">
+              <ref role="1Pybhc" node="2V53qRg7oJH" resolve="CBMCInitializationNoiseRemover" />
+              <ref role="37wK5l" node="2V53qRg7oJJ" resolve="removeInitializationNoise" />
+              <node concept="2OqwBi" id="2V53qRg8aQT" role="37wK5m">
+                <node concept="37vLTw" id="2V53qRg8aQU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GZ1x5Gshjy" resolve="rawRes" />
                 </node>
-                <node concept="3cpWs8" id="2V53qRg7sbT" role="3cqZAp">
-                  <node concept="3cpWsn" id="2V53qRg7sbU" role="3cpWs9">
-                    <property role="TrG5h" value="filteredInitNoise" />
-                    <node concept="_YKpA" id="2V53qRg7sbV" role="1tU5fm">
-                      <node concept="3uibUv" id="2V53qRg7sbW" role="_ZDj9">
-                        <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-                      </node>
-                    </node>
-                    <node concept="NRdvd" id="2V53qRg8aQS" role="33vP2m">
-                      <ref role="1Pybhc" node="2V53qRg7oJH" resolve="CBMCInitializationNoiseRemover" />
-                      <ref role="37wK5l" node="2V53qRg7oJJ" resolve="removeInitializationNoise" />
-                      <node concept="2OqwBi" id="2V53qRg8aQT" role="37wK5m">
-                        <node concept="37vLTw" id="2V53qRg8aQU" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6GZ1x5Gshjy" resolve="rawRes" />
-                        </node>
-                        <node concept="liA8E" id="2V53qRg8aQV" role="2OqNvi">
-                          <ref role="37wK5l" to="rbq9:3ccRFHLc94l" resolve="getStates" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2V53qRg7sc1" role="3cqZAp">
-                  <node concept="NRdvd" id="2V53qRg7sc2" role="3clFbG">
-                    <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
-                    <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
-                    <node concept="Xl_RD" id="2V53qRg7sc3" role="37wK5m">
-                      <property role="Xl_RC" value="After initialization noise was removed" />
-                    </node>
-                    <node concept="37vLTw" id="2V53qRg7sc4" role="37wK5m">
-                      <ref role="3cqZAo" node="2V53qRg7sbU" resolve="filteredInitNoise" />
-                    </node>
-                    <node concept="37vLTw" id="2V53qRg7scT" role="37wK5m">
-                      <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="5djBfpdY67I" role="3cqZAp">
-                  <node concept="3cpWsn" id="5djBfpdY67J" role="3cpWs9">
-                    <property role="TrG5h" value="flattenedRawStates" />
-                    <node concept="_YKpA" id="5djBfpdY67K" role="1tU5fm">
-                      <node concept="3uibUv" id="5djBfpdY67L" role="_ZDj9">
-                        <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-                      </node>
-                    </node>
-                    <node concept="NRdvd" id="2OALdl4UR$H" role="33vP2m">
-                      <ref role="1Pybhc" node="4Ow3NnwZaJJ" resolve="StructuresAndArraysAssignmentsFlattener" />
-                      <ref role="37wK5l" node="4Ow3NnwZggX" resolve="flatten" />
-                      <node concept="37vLTw" id="2V53qRg7vCF" role="37wK5m">
-                        <ref role="3cqZAo" node="2V53qRg7sbU" resolve="filteredInitNoise" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7oz0hCw4mNs" role="3cqZAp">
-                  <node concept="NRdvd" id="7oz0hCw4uts" role="3clFbG">
-                    <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
-                    <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
-                    <node concept="Xl_RD" id="7oz0hCw4utt" role="37wK5m">
-                      <property role="Xl_RC" value="After structures assignments were flattened" />
-                    </node>
-                    <node concept="37vLTw" id="7oz0hCw4utu" role="37wK5m">
-                      <ref role="3cqZAo" node="5djBfpdY67J" resolve="flattenedRawStates" />
-                    </node>
-                    <node concept="37vLTw" id="2OALdl4VDgN" role="37wK5m">
-                      <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="4Ow3NnwOMMc" role="3cqZAp">
-                  <node concept="3cpWsn" id="4Ow3NnwOMMd" role="3cpWs9">
-                    <property role="TrG5h" value="filteredRawNoise" />
-                    <node concept="_YKpA" id="4Ow3NnwOMLQ" role="1tU5fm">
-                      <node concept="3uibUv" id="4Ow3NnwOMLT" role="_ZDj9">
-                        <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-                      </node>
-                    </node>
-                    <node concept="2YIFZM" id="4Ow3NnwPiLh" role="33vP2m">
-                      <ref role="1Pybhc" node="4Ow3NnwOtHu" resolve="CBMCRawNoiseFilter" />
-                      <ref role="37wK5l" node="4Ow3NnwPfbi" resolve="filter" />
-                      <node concept="37vLTw" id="3kLBXRskHxJ" role="37wK5m">
-                        <ref role="3cqZAo" node="5djBfpdY67J" resolve="flattenedRawStates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7oz0hCw4nUx" role="3cqZAp">
-                  <node concept="NRdvd" id="7oz0hCw4uO6" role="3clFbG">
-                    <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
-                    <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
-                    <node concept="Xl_RD" id="7oz0hCw4uO7" role="37wK5m">
-                      <property role="Xl_RC" value="Raw noise is filtered out" />
-                    </node>
-                    <node concept="37vLTw" id="7oz0hCw4uO8" role="37wK5m">
-                      <ref role="3cqZAo" node="4Ow3NnwOMMd" resolve="filteredRawNoise" />
-                    </node>
-                    <node concept="37vLTw" id="2OALdl4VDgQ" role="37wK5m">
-                      <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="7oz0hCw0PUQ" role="3cqZAp" />
-                <node concept="3clFbF" id="7dUJ2$T3mht" role="3cqZAp">
-                  <node concept="37vLTI" id="7dUJ2$T3mhv" role="3clFbG">
-                    <node concept="1rXfSq" id="6GZ1x5GshjO" role="37vLTx">
-                      <ref role="37wK5l" node="6GZ1x5Gshqz" resolve="interpretRawStates" />
-                      <node concept="37vLTw" id="3kLBXRskHye" role="37wK5m">
-                        <ref role="3cqZAo" node="4Ow3NnwOMMd" resolve="filteredRawNoise" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="7dUJ2$T3oiS" role="37vLTJ">
-                      <ref role="3cqZAo" node="3jtKiJDkoD2" resolve="liftedStates" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7oz0hCvYGfX" role="3cqZAp">
-                  <node concept="NRdvd" id="7oz0hCw4vaK" role="3clFbG">
-                    <ref role="37wK5l" node="7oz0hCw0rt2" resolve="printLiftedStates" />
-                    <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
-                    <node concept="Xl_RD" id="7oz0hCw4vaL" role="37wK5m">
-                      <property role="Xl_RC" value="After raw states are interpreted" />
-                    </node>
-                    <node concept="37vLTw" id="7dUJ2$T3oAt" role="37wK5m">
-                      <ref role="3cqZAo" node="3jtKiJDkoD2" resolve="liftedStates" />
-                    </node>
-                    <node concept="37vLTw" id="2OALdl528jJ" role="37wK5m">
-                      <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
-                    </node>
-                  </node>
+                <node concept="liA8E" id="2V53qRg8aQV" role="2OqNvi">
+                  <ref role="37wK5l" to="rbq9:3ccRFHLc94l" resolve="getStates" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7oz0hCw0OZA" role="3cqZAp" />
+        <node concept="3clFbF" id="2V53qRg7sc1" role="3cqZAp">
+          <node concept="NRdvd" id="2V53qRg7sc2" role="3clFbG">
+            <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
+            <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
+            <node concept="Xl_RD" id="2V53qRg7sc3" role="37wK5m">
+              <property role="Xl_RC" value="After initialization noise was removed" />
+            </node>
+            <node concept="37vLTw" id="2V53qRg7sc4" role="37wK5m">
+              <ref role="3cqZAo" node="2V53qRg7sbU" resolve="filteredInitNoise" />
+            </node>
+            <node concept="37vLTw" id="2V53qRg7scT" role="37wK5m">
+              <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5djBfpdY67I" role="3cqZAp">
+          <node concept="3cpWsn" id="5djBfpdY67J" role="3cpWs9">
+            <property role="TrG5h" value="flattenedRawStates" />
+            <node concept="_YKpA" id="5djBfpdY67K" role="1tU5fm">
+              <node concept="3uibUv" id="5djBfpdY67L" role="_ZDj9">
+                <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="2OALdl4UR$H" role="33vP2m">
+              <ref role="1Pybhc" node="4Ow3NnwZaJJ" resolve="StructuresAndArraysAssignmentsFlattener" />
+              <ref role="37wK5l" node="4Ow3NnwZggX" resolve="flatten" />
+              <node concept="37vLTw" id="2V53qRg7vCF" role="37wK5m">
+                <ref role="3cqZAo" node="2V53qRg7sbU" resolve="filteredInitNoise" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7oz0hCw4mNs" role="3cqZAp">
+          <node concept="NRdvd" id="7oz0hCw4uts" role="3clFbG">
+            <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
+            <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
+            <node concept="Xl_RD" id="7oz0hCw4utt" role="37wK5m">
+              <property role="Xl_RC" value="After structures assignments were flattened" />
+            </node>
+            <node concept="37vLTw" id="7oz0hCw4utu" role="37wK5m">
+              <ref role="3cqZAo" node="5djBfpdY67J" resolve="flattenedRawStates" />
+            </node>
+            <node concept="37vLTw" id="2OALdl4VDgN" role="37wK5m">
+              <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Ow3NnwOMMc" role="3cqZAp">
+          <node concept="3cpWsn" id="4Ow3NnwOMMd" role="3cpWs9">
+            <property role="TrG5h" value="filteredRawNoise" />
+            <node concept="_YKpA" id="4Ow3NnwOMLQ" role="1tU5fm">
+              <node concept="3uibUv" id="4Ow3NnwOMLT" role="_ZDj9">
+                <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="4Ow3NnwPiLh" role="33vP2m">
+              <ref role="1Pybhc" node="4Ow3NnwOtHu" resolve="CBMCRawNoiseFilter" />
+              <ref role="37wK5l" node="4Ow3NnwPfbi" resolve="filter" />
+              <node concept="37vLTw" id="3kLBXRskHxJ" role="37wK5m">
+                <ref role="3cqZAo" node="5djBfpdY67J" resolve="flattenedRawStates" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7oz0hCw4nUx" role="3cqZAp">
+          <node concept="NRdvd" id="7oz0hCw4uO6" role="3clFbG">
+            <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
+            <ref role="37wK5l" node="7oz0hCw1iUB" resolve="printRawStates" />
+            <node concept="Xl_RD" id="7oz0hCw4uO7" role="37wK5m">
+              <property role="Xl_RC" value="Raw noise is filtered out" />
+            </node>
+            <node concept="37vLTw" id="7oz0hCw4uO8" role="37wK5m">
+              <ref role="3cqZAo" node="4Ow3NnwOMMd" resolve="filteredRawNoise" />
+            </node>
+            <node concept="37vLTw" id="2OALdl4VDgQ" role="37wK5m">
+              <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7oz0hCw0PUQ" role="3cqZAp" />
+        <node concept="3clFbF" id="7dUJ2$T3mht" role="3cqZAp">
+          <node concept="37vLTI" id="7dUJ2$T3mhv" role="3clFbG">
+            <node concept="1rXfSq" id="6GZ1x5GshjO" role="37vLTx">
+              <ref role="37wK5l" node="6GZ1x5Gshqz" resolve="interpretRawStates" />
+              <node concept="37vLTw" id="3kLBXRskHye" role="37wK5m">
+                <ref role="3cqZAo" node="4Ow3NnwOMMd" resolve="filteredRawNoise" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="7dUJ2$T3oiS" role="37vLTJ">
+              <ref role="3cqZAo" node="3jtKiJDkoD2" resolve="liftedStates" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7oz0hCvYGfX" role="3cqZAp">
+          <node concept="NRdvd" id="7oz0hCw4vaK" role="3clFbG">
+            <ref role="37wK5l" node="7oz0hCw0rt2" resolve="printLiftedStates" />
+            <ref role="1Pybhc" node="7oz0hCw0ocP" resolve="DebuggingUtils" />
+            <node concept="Xl_RD" id="7oz0hCw4vaL" role="37wK5m">
+              <property role="Xl_RC" value="After raw states are interpreted" />
+            </node>
+            <node concept="37vLTw" id="7dUJ2$T3oAt" role="37wK5m">
+              <ref role="3cqZAo" node="3jtKiJDkoD2" resolve="liftedStates" />
+            </node>
+            <node concept="37vLTw" id="2OALdl528jJ" role="37wK5m">
+              <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4hqHmbT_xiB" role="3cqZAp" />
         <node concept="3clFbF" id="6GZ1x5Gshlv" role="3cqZAp">
           <node concept="2ShNRf" id="6GZ1x5Gshlw" role="3clFbG">
             <node concept="1pGfFk" id="6GZ1x5Gshlx" role="2ShVmc">
@@ -1455,6 +1443,19 @@
                             <node concept="liA8E" id="31ZC5p$8$5a" role="2OqNvi">
                               <ref role="37wK5l" to="rbq9:31ZC5p$8hjY" resolve="getThreadNumber" />
                             </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5xg5HONnYES" role="3cqZAp">
+                      <node concept="2OqwBi" id="5xg5HONnYGb" role="3clFbG">
+                        <node concept="2GrUjf" id="5xg5HONnYEQ" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1aITAdxvQ89" resolve="state" />
+                        </node>
+                        <node concept="liA8E" id="5xg5HONnYTp" role="2OqNvi">
+                          <ref role="37wK5l" to="eqhl:5xg5HONnWVB" resolve="setRawState" />
+                          <node concept="2GrUjf" id="5xg5HONnZ2i" role="37wK5m">
+                            <ref role="2Gs0qQ" node="7q0zW8lzAmq" resolve="crtRawState" />
                           </node>
                         </node>
                       </node>
@@ -2458,6 +2459,88 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3mMU_xnhs0j" role="jymVt" />
+    <node concept="2YIFZL" id="3SSJHCOMmH7" role="jymVt">
+      <property role="TrG5h" value="liftValueOfVarDecl" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="3SSJHCOMmH8" role="3clF47">
+        <node concept="Jncv_" id="3SSJHCOMmH9" role="3cqZAp">
+          <ref role="JncvD" to="clbe:7D99css6O15" resolve="EnumType" />
+          <node concept="2OqwBi" id="3SSJHCOMmHa" role="JncvB">
+            <node concept="37vLTw" id="3SSJHCOMmHb" role="2Oq$k0">
+              <ref role="3cqZAo" node="3SSJHCOMmHz" resolve="varDecl" />
+            </node>
+            <node concept="2qgKlT" id="3SSJHCOQrQf" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:1LDGRqyYkTX" resolve="getDeclaredType" />
+            </node>
+          </node>
+          <node concept="JncvC" id="3SSJHCOMmHd" role="JncvA">
+            <property role="TrG5h" value="et" />
+            <node concept="2jxLKc" id="3SSJHCOMmHe" role="1tU5fm" />
+          </node>
+          <node concept="3clFbS" id="3SSJHCOMmHf" role="Jncv$">
+            <node concept="3cpWs8" id="3SSJHCOMmHg" role="3cqZAp">
+              <node concept="3cpWsn" id="3SSJHCOMmHh" role="3cpWs9">
+                <property role="TrG5h" value="enumLiteral" />
+                <node concept="3Tqbb2" id="3SSJHCOMmHi" role="1tU5fm">
+                  <ref role="ehGHo" to="clbe:7D99css6O0t" resolve="EnumLiteral" />
+                </node>
+                <node concept="1rXfSq" id="3SSJHCOMncy" role="33vP2m">
+                  <ref role="37wK5l" node="5djBfpfWpl3" resolve="interpretEnum" />
+                  <node concept="37vLTw" id="3SSJHCOMnfw" role="37wK5m">
+                    <ref role="3cqZAo" node="3SSJHCOMmH_" resolve="rawValue" />
+                  </node>
+                  <node concept="Jnkvi" id="3SSJHCOMnjC" role="37wK5m">
+                    <ref role="1M0zk5" node="3SSJHCOMmHd" resolve="et" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3SSJHCOMmHm" role="3cqZAp">
+              <node concept="3clFbS" id="3SSJHCOMmHn" role="3clFbx">
+                <node concept="3cpWs6" id="3SSJHCOMmHo" role="3cqZAp">
+                  <node concept="2OqwBi" id="3SSJHCOMmHp" role="3cqZAk">
+                    <node concept="37vLTw" id="3SSJHCOMmHq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3SSJHCOMmHh" resolve="enumLiteral" />
+                    </node>
+                    <node concept="3TrcHB" id="3SSJHCOMmHr" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3SSJHCOMmHs" role="3clFbw">
+                <node concept="10Nm6u" id="3SSJHCOMmHt" role="3uHU7w" />
+                <node concept="37vLTw" id="3SSJHCOMmHu" role="3uHU7B">
+                  <ref role="3cqZAo" node="3SSJHCOMmHh" resolve="enumLiteral" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3SSJHCOMmHv" role="3cqZAp">
+          <node concept="37vLTw" id="3SSJHCOMmHw" role="3cqZAk">
+            <ref role="3cqZAo" node="3SSJHCOMmH_" resolve="rawValue" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3SSJHCOMmHx" role="1B3o_S" />
+      <node concept="17QB3L" id="3SSJHCOMmHy" role="3clF45" />
+      <node concept="37vLTG" id="3SSJHCOMmHz" role="3clF46">
+        <property role="TrG5h" value="varDecl" />
+        <node concept="3Tqbb2" id="3SSJHCOMmH$" role="1tU5fm">
+          <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3SSJHCOMmH_" role="3clF46">
+        <property role="TrG5h" value="rawValue" />
+        <node concept="17QB3L" id="3SSJHCOMmHA" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="3SSJHCOMmHB" role="lGtFl">
+        <property role="NWlVz" value="Tries to lift the raw value." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3SSJHCOMmCG" role="jymVt" />
     <node concept="3Tm1VV" id="6GZ1x5GuptU" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4Ow3NnwOtHu">
@@ -6277,7 +6360,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3RNYYaJ2HUG" role="3uHU7w">
-                    <property role="Xl_RC" value="}: OOPS, we have a bug when trying to lift raw state: " />
+                    <property role="Xl_RC" value="}: OOPS, unable to lift raw state: " />
                   </node>
                 </node>
               </node>
@@ -6323,7 +6406,7 @@
               </node>
             </node>
             <node concept="3cpWs6" id="4ngEEZdby4R" role="3cqZAp">
-              <node concept="2YIFZM" id="4ngEEZdbyRW" role="3cqZAk">
+              <node concept="2YIFZM" id="4hqHmbT_B$s" role="3cqZAk">
                 <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
               </node>

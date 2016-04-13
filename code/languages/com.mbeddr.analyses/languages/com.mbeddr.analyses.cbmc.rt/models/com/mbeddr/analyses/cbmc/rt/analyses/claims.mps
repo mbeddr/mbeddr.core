@@ -303,9 +303,7 @@
       <property role="TrG5h" value="CLAIMS_DEBUG" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="7AULegk42mG" role="1B3o_S" />
-      <node concept="3clFbT" id="E31tqQCaU2" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="E31tqQCaU2" role="33vP2m" />
       <node concept="10P_77" id="E31tqQCaMa" role="1tU5fm" />
       <node concept="NWlO9" id="48FvRIzKuUp" role="lGtFl">
         <property role="NWlVz" value="Should we debug?" />
@@ -2179,6 +2177,7 @@
   </node>
   <node concept="3HP615" id="6mJYm3j2KIe">
     <property role="TrG5h" value="ClaimFilter" />
+    <node concept="2tJIrI" id="3WYFqnsvLw$" role="jymVt" />
     <node concept="3clFb_" id="6mJYm3j2KIf" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="shouldIgnore" />

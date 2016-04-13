@@ -2,22 +2,22 @@
 <model ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -1398,12 +1398,6 @@
     <property role="TrG5h" value="ValueDebugger" />
     <property role="1pbfSe" value="639353836" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
-      <property role="Hh88m" value="debugger" />
-      <node concept="trNpa" id="7hziiiew9o4" role="EQaZv">
-        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
-      </node>
-    </node>
     <node concept="1TJgyi" id="$bJ0jgQ80h" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1415,6 +1409,12 @@
     <node concept="1TJgyi" id="2BbcAuIdyyA" role="1TKVEl">
       <property role="TrG5h" value="debugKeyString" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
+      <property role="Hh88m" value="debugger" />
+      <node concept="trNpa" id="7hziiiew9o4" role="EQaZv">
+        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
+      </node>
     </node>
     <node concept="asaX9" id="7hziiiew9o7" role="lGtFl" />
   </node>
@@ -1623,63 +1623,6 @@
     <property role="3GE5qa" value="codereview" />
     <property role="1pbfSe" value="137147534" />
   </node>
-  <node concept="1TIwiD" id="6Zp2pzGGn8D">
-    <property role="TrG5h" value="NodeListContainer" />
-    <property role="3GE5qa" value="nodelist" />
-    <property role="19KtqR" value="true" />
-    <property role="MwhBj" value="${module}/icons/nodelist.png" />
-    <property role="1pbfSe" value="1552579521" />
-    <ref role="1TJDcQ" node="6clJcrJYOUA" resolve="Chunk" />
-    <node concept="1TJgyj" id="6Zp2pzGGYPK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lists" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6Zp2pzGGYLx" resolve="NodeList" />
-    </node>
-    <node concept="PrWs8" id="6Zp2pzGGqbz" role="PzmwI">
-      <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="6Zp2pzGGqb$" role="PzmwI">
-      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6Zp2pzGGYLx">
-    <property role="3GE5qa" value="nodelist" />
-    <property role="TrG5h" value="NodeList" />
-    <property role="MwhBj" value="${module}/icons/nodelist.png" />
-    <property role="1pbfSe" value="1552741881" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6Zp2pzGHrnI" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6Zp2pzGHhAE" resolve="NodeListItem" />
-    </node>
-    <node concept="1TJgyj" id="6Zp2pzGH6Lk" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="scopeLimiter" />
-      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-    </node>
-    <node concept="PrWs8" id="6Zp2pzGGYPF" role="PzmwI">
-      <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6Zp2pzGHhAE">
-    <property role="3GE5qa" value="nodelist" />
-    <property role="TrG5h" value="NodeListItem" />
-    <property role="1pbfSe" value="1552819010" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6Zp2pzGHhAP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="6Zp2pzGHhAK" role="1TKVEl">
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7nkDZJXluO4">
     <property role="TrG5h" value="AssessmentScope" />
     <property role="3GE5qa" value="assessment.scope" />
@@ -1721,6 +1664,9 @@
     <property role="19KtqR" value="true" />
     <property role="1pbfSe" value="44852289" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1ir19b4JZNn" role="PzmwI">
+      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
     <node concept="1TJgyj" id="gjBy3ThgKr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="concepts" />
@@ -1837,6 +1783,45 @@
     <property role="TrG5h" value="ITriggerCommenting" />
     <property role="1pbfSe" value="1306120102" />
   </node>
+  <node concept="1TIwiD" id="5Sez0xTJ6Mk">
+    <property role="3GE5qa" value="suppress" />
+    <property role="TrG5h" value="SuppressAllWarnings" />
+    <property role="34LRSv" value="all" />
+    <property role="R4oN_" value="suppress all warnings" />
+    <property role="1pbfSe" value="674563940" />
+    <ref role="1TJDcQ" node="4xqvipEHW7T" resolve="SuppressWarningKind" />
+  </node>
+  <node concept="1TIwiD" id="4xqvipEHW7T">
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="SuppressWarningKind" />
+    <property role="R4oN_" value="kind of warning that can be suppressed" />
+    <property role="3GE5qa" value="suppress" />
+    <property role="1pbfSe" value="1290649825" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="49YGTZdSIMN">
+    <property role="TrG5h" value="GenericUnitProvider" />
+    <property role="1pbfSe" value="274833490" />
+  </node>
+  <node concept="1TIwiD" id="6Kj2zNC66Q5">
+    <property role="TrG5h" value="SuppressWarnings" />
+    <property role="3GE5qa" value="suppress" />
+    <property role="1pbfSe" value="1412134849" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="4xqvipEHXGz" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kinds" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4xqvipEHW7T" resolve="SuppressWarningKind" />
+    </node>
+    <node concept="M6xJ_" id="6Kj2zNC68yj" role="lGtFl">
+      <property role="Hh88m" value="suppressWarning" />
+      <node concept="trNpa" id="6Kj2zNC68yl" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
   <node concept="1TIwiD" id="3RdDJSz0aZf">
     <property role="TrG5h" value="KeepAliveInGeneration" />
     <property role="34LRSv" value="keepAliveInGeneration" />
@@ -1851,10 +1836,6 @@
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
-  </node>
-  <node concept="PlHQZ" id="49YGTZdSIMN">
-    <property role="TrG5h" value="GenericUnitProvider" />
-    <property role="1pbfSe" value="274833490" />
   </node>
 </model>
 

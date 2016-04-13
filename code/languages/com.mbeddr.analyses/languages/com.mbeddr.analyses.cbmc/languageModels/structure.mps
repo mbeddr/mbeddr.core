@@ -10,12 +10,15 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -100,7 +103,10 @@
     <property role="34LRSv" value="-&gt;" />
     <property role="R4oN_" value="logical implication" />
     <property role="1pbfSe" value="1832746930" />
-    <ref role="1TJDcQ" to="mj1l:7igR0Vu9I16" resolve="BinaryLogicalExpression" />
+    <ref role="1TJDcQ" to="cetu:4fjBjwDqu9U" resolve="Implies" />
+    <node concept="asaX9" id="1uVxpNh9of6" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.ext.math&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="637qsduSbtp">
     <property role="TrG5h" value="Assert" />
@@ -473,10 +479,13 @@
   </node>
   <node concept="1TIwiD" id="72mSD5R_OCr">
     <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="ValidEnumerationValue" />
+    <property role="TrG5h" value="ValidEnumerationValue_old" />
     <property role="34LRSv" value="valid_enum" />
     <property role="1pbfSe" value="399627092" />
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+    <node concept="asaX9" id="6UAHnEzVDUq" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="73FH1Bco8fg">
     <property role="3GE5qa" value="cbmc_macros" />

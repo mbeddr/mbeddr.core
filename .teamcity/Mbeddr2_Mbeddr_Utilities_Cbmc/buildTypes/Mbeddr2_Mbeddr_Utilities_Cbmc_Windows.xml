@@ -2,14 +2,13 @@
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b9ac7f7c-6115-4d30-85cf-0be0e60edb7f" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>Windows</name>
   <description />
-  <settings>
+  <settings ref="RequiresMpsExtions">
     <options>
       <option name="artifactRules" value="cbmc-win.zip" />
-      <option name="cleanBuild" value="true" />
     </options>
     <parameters />
-    <build-runners>
-      <runner id="RUNNER_6" name="Build" type="simpleRunner">
+    <build-runners order="RUNNER_20">
+      <runner id="RUNNER_20" name="Build" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64
 

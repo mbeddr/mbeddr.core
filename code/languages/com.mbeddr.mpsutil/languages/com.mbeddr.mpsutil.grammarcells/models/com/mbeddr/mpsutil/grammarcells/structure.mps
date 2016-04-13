@@ -67,6 +67,10 @@
       <property role="TrG5h" value="flagText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="78yXNxdhVO9" role="1TKVEl">
+      <property role="TrG5h" value="doNotGenerateNodeSubstituteAction" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="RbLMy6aM8Q" role="PzmwI">
       <ref role="PrY4T" node="6oKG1kMyAVO" resolve="IActionGeneratingCell" />
     </node>

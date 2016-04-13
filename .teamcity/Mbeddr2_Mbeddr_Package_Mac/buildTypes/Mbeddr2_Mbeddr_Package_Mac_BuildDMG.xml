@@ -4,11 +4,11 @@
   <description />
   <settings ref="RequiresMpsExtions">
     <options>
-      <option name="artifactRules" value="**/*/*.dmg" />
+      <option name="artifactRules" value="mbeddr.core/buildUtil/*.dmg" />
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
-    <build-runners order="">
+    <build-runners order="RUNNER_4">
       <runner id="RUNNER_4" name="Build DMG" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/buildUtil/build.xml" />
@@ -34,22 +34,26 @@
     <artifact-dependencies>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="-:jdk.zip&#xD;&#xA;+:jdk.tar.gz=&gt;%system.teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+        <artifact sourcePath="jdk.tar.gz=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
       <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="mbeddr-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
+      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Mac" cleanDestination="false">
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="&lt;default&gt;" />
+        <artifact sourcePath="cbmc-mac.zip!**=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+      </dependency>
     </artifact-dependencies>
     <dependencies>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>
       </depend-on>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr">
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />

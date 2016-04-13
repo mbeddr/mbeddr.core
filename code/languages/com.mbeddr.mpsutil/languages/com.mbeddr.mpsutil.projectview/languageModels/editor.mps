@@ -192,6 +192,62 @@
           </node>
           <node concept="2iRfu4" id="75_oBQVGpJp" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="4QICnJ5F4g4" role="3EZMnx">
+          <node concept="VPM3Z" id="4QICnJ5F4g5" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="4QICnJ5F4g6" role="3EZMnx">
+            <property role="3F0ifm" value="Refresh on Filesystem Changes:" />
+          </node>
+          <node concept="3F0A7n" id="4QICnJ5F4g7" role="3EZMnx">
+            <property role="1$x2rV" value="0" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d04j:4QICnJ5F4fs" resolve="rebuildOnFileChange" />
+          </node>
+          <node concept="2iRfu4" id="4QICnJ5F4g8" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="4QICnJ5F4gZ" role="3EZMnx">
+          <node concept="VPM3Z" id="4QICnJ5F4h0" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="4QICnJ5F4h1" role="3EZMnx">
+            <property role="3F0ifm" value="Refresh on Make:" />
+          </node>
+          <node concept="3F0A7n" id="4QICnJ5F4h2" role="3EZMnx">
+            <property role="1$x2rV" value="0" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d04j:4QICnJ5F4fz" resolve="rebuildOnMake" />
+          </node>
+          <node concept="2iRfu4" id="4QICnJ5F4h3" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="4QICnJ5F4i6" role="3EZMnx">
+          <node concept="VPM3Z" id="4QICnJ5F4i7" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="4QICnJ5F4i8" role="3EZMnx">
+            <property role="3F0ifm" value="Refresh on Repository Change:" />
+          </node>
+          <node concept="3F0A7n" id="4QICnJ5F4i9" role="3EZMnx">
+            <property role="1$x2rV" value="0" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d04j:4QICnJ5F4fC" resolve="rebuildOnRepoChange" />
+          </node>
+          <node concept="2iRfu4" id="4QICnJ5F4ia" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="4QICnJ5F4mo" role="3EZMnx">
+          <node concept="VPM3Z" id="4QICnJ5F4mp" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="4QICnJ5F4mq" role="3EZMnx">
+            <property role="3F0ifm" value="Refresh on Class Reload:" />
+          </node>
+          <node concept="3F0A7n" id="4QICnJ5F4mr" role="3EZMnx">
+            <property role="1$x2rV" value="0" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="d04j:4QICnJ5F4fv" resolve="rebuildOnClassLoad" />
+          </node>
+          <node concept="2iRfu4" id="4QICnJ5F4ms" role="2iSdaV" />
+        </node>
         <node concept="3F0ifn" id="3ZnFyBju6rm" role="3EZMnx" />
         <node concept="3F2HdR" id="7diJr$RulxS" role="3EZMnx">
           <ref role="1NtTu8" to="d04j:7diJr$Rulsr" />
