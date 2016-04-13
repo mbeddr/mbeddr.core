@@ -19,11 +19,6 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
-    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="6029276237631252951" name="jetbrains.mps.lang.editor.structure.StyleAttributeReferenceExpression" flags="ng" index="1Z6Ecs">
-        <reference id="6029276237631253682" name="attributeDeclaration" index="1Z6EpT" />
-      </concept>
-    </language>
     <language id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods">
       <concept id="8022092943110829337" name="jetbrains.mps.baseLanguage.extensionMethods.structure.BaseExtensionMethodContainer" flags="ng" index="a7sou">
         <child id="8022092943110829339" name="methods" index="a7sos" />
@@ -6206,35 +6201,13 @@
             <property role="3SKdUp" value="That's why we let them overlap here by one pixel." />
           </node>
         </node>
-        <node concept="3cpWs8" id="6SVXTgIa2ZB" role="3cqZAp">
-          <node concept="3cpWsn" id="6SVXTgIa2ZC" role="3cpWs9">
-            <property role="TrG5h" value="borderSize" />
-            <node concept="10Oyi0" id="6SVXTgIa2Zt" role="1tU5fm" />
-            <node concept="2OqwBi" id="6SVXTgIa2ZF" role="33vP2m">
-              <node concept="2OqwBi" id="6SVXTgIa2ZG" role="2Oq$k0">
-                <node concept="37vLTw" id="6SVXTgIa2ZH" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
-                </node>
-                <node concept="liA8E" id="6SVXTgIa2ZI" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6SVXTgIa2ZJ" role="2OqNvi">
-                <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                <node concept="1Z6Ecs" id="6SVXTgIa2ZK" role="37wK5m">
-                  <ref role="1Z6EpT" to="z0fb:6SVXTgI9G1E" resolve="_border-size" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6SVXTgI9KyL" role="3cqZAp">
           <node concept="2OqwBi" id="6SVXTgI9KFb" role="3clFbG">
             <node concept="1rXfSq" id="6SVXTgI9KyJ" role="2Oq$k0">
               <ref role="37wK5l" node="1p6ZfyCPv8k" resolve="getBorderBox" />
             </node>
             <node concept="liA8E" id="6SVXTgI9KP9" role="2OqNvi">
-              <ref role="37wK5l" node="1p6ZfyCPv6W" resolve="setFrameSize" />
+              <ref role="37wK5l" node="1p6ZfyCPv6q" resolve="setLeftSize" />
               <node concept="2YIFZM" id="6SVXTgI9MN2" role="37wK5m">
                 <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
                 <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
@@ -6245,8 +6218,99 @@
                   <node concept="3cmrfG" id="6SVXTgIbfhS" role="3uHU7w">
                     <property role="3cmrfH" value="1" />
                   </node>
-                  <node concept="37vLTw" id="6SVXTgIa2ZL" role="3uHU7B">
-                    <ref role="3cqZAo" node="6SVXTgIa2ZC" resolve="borderSize" />
+                  <node concept="2YIFZM" id="2FAXvauF$8c" role="3uHU7B">
+                    <ref role="37wK5l" to="z0fb:2FAXvauFyto" resolve="getLeftBorderSize" />
+                    <ref role="1Pybhc" to="z0fb:2FAXvauFqUs" resolve="LayoutStylesUtil" />
+                    <node concept="37vLTw" id="2FAXvauF$as" role="37wK5m">
+                      <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2FAXvauF$Hi" role="3cqZAp">
+          <node concept="2OqwBi" id="2FAXvauF$Hj" role="3clFbG">
+            <node concept="1rXfSq" id="2FAXvauF$Hk" role="2Oq$k0">
+              <ref role="37wK5l" node="1p6ZfyCPv8k" resolve="getBorderBox" />
+            </node>
+            <node concept="liA8E" id="2FAXvauF$Hl" role="2OqNvi">
+              <ref role="37wK5l" node="1p6ZfyCPv6w" resolve="setRightSize" />
+              <node concept="2YIFZM" id="2FAXvauF$Hm" role="37wK5m">
+                <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <node concept="3cmrfG" id="2FAXvauF$Hn" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="3cpWsd" id="2FAXvauF$Ho" role="37wK5m">
+                  <node concept="3cmrfG" id="2FAXvauF$Hp" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="2YIFZM" id="2FAXvauF_VK" role="3uHU7B">
+                    <ref role="37wK5l" to="z0fb:2FAXvauFyIE" resolve="getRightBorderSize" />
+                    <ref role="1Pybhc" to="z0fb:2FAXvauFqUs" resolve="LayoutStylesUtil" />
+                    <node concept="37vLTw" id="2FAXvauF_VL" role="37wK5m">
+                      <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2FAXvauF_1d" role="3cqZAp">
+          <node concept="2OqwBi" id="2FAXvauF_1e" role="3clFbG">
+            <node concept="1rXfSq" id="2FAXvauF_1f" role="2Oq$k0">
+              <ref role="37wK5l" node="1p6ZfyCPv8k" resolve="getBorderBox" />
+            </node>
+            <node concept="liA8E" id="2FAXvauF_1g" role="2OqNvi">
+              <ref role="37wK5l" node="1p6ZfyCPv6A" resolve="setTopSize" />
+              <node concept="2YIFZM" id="2FAXvauF_1h" role="37wK5m">
+                <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <node concept="3cmrfG" id="2FAXvauF_1i" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="3cpWsd" id="2FAXvauF_1j" role="37wK5m">
+                  <node concept="3cmrfG" id="2FAXvauF_1k" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="2YIFZM" id="2FAXvauFA6L" role="3uHU7B">
+                    <ref role="37wK5l" to="z0fb:2FAXvauFyPw" resolve="getTopBorderSize" />
+                    <ref role="1Pybhc" to="z0fb:2FAXvauFqUs" resolve="LayoutStylesUtil" />
+                    <node concept="37vLTw" id="2FAXvauFA6M" role="37wK5m">
+                      <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2FAXvauF_me" role="3cqZAp">
+          <node concept="2OqwBi" id="2FAXvauF_mf" role="3clFbG">
+            <node concept="1rXfSq" id="2FAXvauF_mg" role="2Oq$k0">
+              <ref role="37wK5l" node="1p6ZfyCPv8k" resolve="getBorderBox" />
+            </node>
+            <node concept="liA8E" id="2FAXvauF_mh" role="2OqNvi">
+              <ref role="37wK5l" node="1p6ZfyCPv6G" resolve="setBottomSize" />
+              <node concept="2YIFZM" id="2FAXvauF_mi" role="37wK5m">
+                <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <node concept="3cmrfG" id="2FAXvauF_mj" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="3cpWsd" id="2FAXvauF_mk" role="37wK5m">
+                  <node concept="3cmrfG" id="2FAXvauF_ml" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="2YIFZM" id="2FAXvauFAhP" role="3uHU7B">
+                    <ref role="37wK5l" to="z0fb:2FAXvauFyeb" resolve="getBottomBorderSize" />
+                    <ref role="1Pybhc" to="z0fb:2FAXvauFqUs" resolve="LayoutStylesUtil" />
+                    <node concept="37vLTw" id="2FAXvauFAhQ" role="37wK5m">
+                      <ref role="3cqZAo" node="3Osd_yxeiPj" resolve="myEditorCell" />
+                    </node>
                   </node>
                 </node>
               </node>
