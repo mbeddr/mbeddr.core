@@ -12,6 +12,7 @@
     <import index="8en7" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.xy(com.mbeddr.mpsutil.jfreechart.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -110,24 +111,24 @@
   <node concept="sEfby" id="75t_nimFd6o">
     <property role="TrG5h" value="ChartTool" />
     <property role="2XNbzY" value="Chart" />
-    <property role="2bmUCM" value="RIGHT" />
+    <property role="2bmUCM" value="BOTTOM" />
     <node concept="2UmK3q" id="75t_nimFd6p" role="2Um5zG">
       <node concept="3clFbS" id="75t_nimFd6q" role="2VODD2">
         <node concept="3clFbF" id="75t_nimFdlj" role="3cqZAp">
           <node concept="2OqwBi" id="75t_nimFdld" role="3clFbG">
             <node concept="2WthIp" id="75t_nimFdlg" role="2Oq$k0" />
             <node concept="2BZ7hE" id="75t_nimFdli" role="2OqNvi">
-              <ref role="2WH_rO" node="75t_nimFd7S" resolve="myPanel" />
+              <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="2BZ0e9" id="75t_nimFd7S" role="2XNbBz">
-      <property role="TrG5h" value="myPanel" />
+      <property role="TrG5h" value="myComponent" />
       <node concept="3Tm6S6" id="75t_nimFd7T" role="1B3o_S" />
-      <node concept="3uibUv" id="75t_nimFdht" role="1tU5fm">
-        <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
+      <node concept="3uibUv" id="9vHlV2vSZp" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
     </node>
     <node concept="2xpIHi" id="75t_nimFdvw" role="uR5cp">
@@ -583,20 +584,37 @@
           </node>
         </node>
         <node concept="3clFbH" id="75t_nimFtmB" role="3cqZAp" />
+        <node concept="3cpWs8" id="9vHlV2vGyy" role="3cqZAp">
+          <node concept="3cpWsn" id="9vHlV2vGyz" role="3cpWs9">
+            <property role="TrG5h" value="chartPanel" />
+            <node concept="3uibUv" id="9vHlV2vGyt" role="1tU5fm">
+              <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
+            </node>
+            <node concept="2ShNRf" id="9vHlV2vGy$" role="33vP2m">
+              <node concept="1pGfFk" id="9vHlV2vGy_" role="2ShVmc">
+                <ref role="37wK5l" to="k6nw:~ChartPanel.&lt;init&gt;(org.jfree.chart.JFreeChart)" resolve="ChartPanel" />
+                <node concept="37vLTw" id="9vHlV2vGyA" role="37wK5m">
+                  <ref role="3cqZAo" node="75t_nimFjEL" resolve="chart" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="9vHlV2vGKn" role="3cqZAp" />
         <node concept="3clFbF" id="75t_nimFtUj" role="3cqZAp">
           <node concept="37vLTI" id="75t_nimFugl" role="3clFbG">
-            <node concept="2ShNRf" id="75t_nimFuqx" role="37vLTx">
-              <node concept="1pGfFk" id="75t_nimFupe" role="2ShVmc">
-                <ref role="37wK5l" to="k6nw:~ChartPanel.&lt;init&gt;(org.jfree.chart.JFreeChart)" resolve="ChartPanel" />
-                <node concept="37vLTw" id="75t_nimFuqX" role="37wK5m">
-                  <ref role="3cqZAo" node="75t_nimFjEL" resolve="chart" />
+            <node concept="2ShNRf" id="9vHlV2vJVA" role="37vLTx">
+              <node concept="1pGfFk" id="9vHlV2vSSH" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                <node concept="37vLTw" id="9vHlV2vSTq" role="37wK5m">
+                  <ref role="3cqZAo" node="9vHlV2vGyz" resolve="chartPanel" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="75t_nimFtUd" role="37vLTJ">
               <node concept="2WthIp" id="75t_nimFtUg" role="2Oq$k0" />
               <node concept="2BZ7hE" id="75t_nimFtUi" role="2OqNvi">
-                <ref role="2WH_rO" node="75t_nimFd7S" resolve="myPanel" />
+                <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
               </node>
             </node>
           </node>
