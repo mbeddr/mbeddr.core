@@ -2,7 +2,7 @@
 <model ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -1568,6 +1568,13 @@
     <node concept="PrWs8" id="1EZSCJhOiDJ" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="72mSD5R_OCr">
+    <property role="3GE5qa" value="validEnum" />
+    <property role="TrG5h" value="ValidEnumerationValue" />
+    <property role="34LRSv" value="valid_enum" />
+    <property role="1pbfSe" value="399627092" />
+    <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
   </node>
 </model>
 

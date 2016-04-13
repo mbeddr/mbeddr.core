@@ -1404,7 +1404,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="6VFmq3HJYvZ" role="19SJt6">
-            <property role="19SUeA" value=". The reverse is also supported. The context menu on a program element supports Find Useages. This can also be activated via " />
+            <property role="19SUeA" value=". The reverse is also supported. The context menu on a program element supports Find Usages. This can also be activated via " />
           </node>
           <node concept="2OoWia" id="yaVrOuhKAr" role="19SJt6">
             <node concept="19SGf9" id="yaVrOuhKAu" role="$DsGW">
@@ -2191,7 +2191,7 @@
         <node concept="1_0LV8" id="61X7WOB4R08" role="1_0VJ0">
           <node concept="19SGf9" id="61X7WOB4R09" role="1_0LWR">
             <node concept="19SUe$" id="61X7WOB4R0a" role="19SJt6">
-              <property role="19SUeA" value="The Changes view keeps track of which files (i.e., models) have changed on you system compared to the latest in the version control system. " />
+              <property role="19SUeA" value="The Changes view keeps track of which files (i.e., models) have changed on your system compared to the latest in the version control system. " />
             </node>
             <node concept="2Sbdz4" id="61X7WOB6Zvy" role="19SJt6">
               <ref role="2SbdyP" node="61X7WOB6ZuR" resolve="changesView" />

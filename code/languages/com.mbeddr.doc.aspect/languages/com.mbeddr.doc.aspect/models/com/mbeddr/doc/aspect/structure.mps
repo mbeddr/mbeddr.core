@@ -33,7 +33,6 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -53,24 +52,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="70oIz4ajg_1">
-    <property role="TrG5h" value="ConceptDocumentation" />
-    <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="2053489522" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="70oIz4ajhZh" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="70oIz4aji0F" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="UK_oBp_UIu">
     <property role="TrG5h" value="DocumentedConceptAnnotation" />
     <property role="1pbfSe" value="397917913" />
@@ -104,6 +85,34 @@
     </node>
     <node concept="PrWs8" id="2UZ9O9PWChN" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1o6EjwiSKvw">
+    <property role="1pbfSe" value="686403864" />
+    <property role="TrG5h" value="DocumentedPropertyAnnotation" />
+    <ref role="1TJDcQ" node="UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+    <node concept="M6xJ_" id="1o6EjwiSKv$" role="lGtFl">
+      <property role="Hh88m" value="documentedProperty" />
+      <node concept="trNpa" id="1o6EjwiSKvC" role="EQaZv">
+        <ref role="trN6q" to="2c95:2TZO3Dbv6N7" resolve="Section" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="1o6EjwiSKvG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6L$vAtzZO13">
+    <property role="1pbfSe" value="798769494" />
+    <property role="TrG5h" value="DocumentedPropertyItemAnnotation" />
+    <ref role="1TJDcQ" node="1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
+    <node concept="M6xJ_" id="6L$vAtzZO14" role="lGtFl">
+      <property role="Hh88m" value="documentedProperty" />
+      <node concept="trNpa" id="6L$vAtzZO1a" role="EQaZv">
+        <ref role="trN6q" to="2c95:4E$PniRJOs$" resolve="Item" />
+      </node>
     </node>
   </node>
 </model>

@@ -62,6 +62,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -112,10 +113,12 @@
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
+        <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
+      <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
@@ -1390,6 +1393,39 @@
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Xl_RD" id="QRmqzHASM3" role="3_eitr">
         <property role="Xl_RC" value="TOC" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2NM$qy7VV$M">
+    <ref role="1M2myG" to="2c95:2NM$qy7UbY3" resolve="DocumentReference" />
+    <node concept="EnEH3" id="2NM$qy7VV$N" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1LLf8_" id="2NM$qy7VV$Q" role="1LXaQT">
+        <node concept="3clFbS" id="2NM$qy7VV$R" role="2VODD2">
+          <node concept="3clFbH" id="2NM$qy7VV_6" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="Eqf_E" id="2NM$qy7VV_g" role="EtsB7">
+        <node concept="3clFbS" id="2NM$qy7VV_h" role="2VODD2">
+          <node concept="3cpWs6" id="2NM$qy7VVBz" role="3cqZAp">
+            <node concept="3cpWs3" id="2NM$qy7VWlg" role="3cqZAk">
+              <node concept="Xl_RD" id="2NM$qy7VWlm" role="3uHU7w">
+                <property role="Xl_RC" value="Reference" />
+              </node>
+              <node concept="2OqwBi" id="2NM$qy7VW4h" role="3uHU7B">
+                <node concept="2OqwBi" id="2NM$qy7VVIc" role="2Oq$k0">
+                  <node concept="EsrRn" id="2NM$qy7VVEZ" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2NM$qy7VVSN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="2c95:2NM$qy7UbY4" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="2NM$qy7VWim" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

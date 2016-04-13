@@ -10,7 +10,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -179,15 +179,15 @@
     <node concept="2Q9Fgs" id="21PlWakTquh" role="2Q9xDr">
       <node concept="2Q9FjX" id="21PlWakTqui" role="2Q9FjI" />
     </node>
-    <node concept="12mU2y" id="5B69dDbeJB9" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJBa" role="3GpDut" />
-    </node>
     <node concept="2eOfOl" id="21PlWakTquj" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="TestStrictSM" />
       <node concept="2v9HqM" id="16ykm_LYlHk" role="2eOfOg">
         <ref role="2v9HqP" node="21PlWakTqul" resolve="TestEpsilon" />
       </node>
+    </node>
+    <node concept="12mU2y" id="5B69dDbeJB9" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJBa" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="21PlWakTqul">
