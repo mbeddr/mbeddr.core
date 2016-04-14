@@ -29,9 +29,13 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -47,6 +51,20 @@
       <node concept="10P_77" id="7uOgiTdwyX" role="3t5Oan" />
       <node concept="3clFbT" id="7uOgiTdwyS" role="3t49C2">
         <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="7uOgiTdCjP" role="V601i">
+      <property role="TrG5h" value="tree-node-spacing" />
+      <node concept="10Oyi0" id="7uOgiTdCkX" role="3t5Oan" />
+      <node concept="3cmrfG" id="7uOgiTdCl3" role="3t49C2">
+        <property role="3cmrfH" value="10" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="7uOgiTdCky" role="V601i">
+      <property role="TrG5h" value="tree-level-spacing" />
+      <node concept="10Oyi0" id="7uOgiTdCl8" role="3t5Oan" />
+      <node concept="3cmrfG" id="7uOgiTdCle" role="3t49C2">
+        <property role="3cmrfH" value="20" />
       </node>
     </node>
   </node>

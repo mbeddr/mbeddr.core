@@ -794,6 +794,50 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7uOgiTdDj6" role="3cqZAp">
+          <node concept="3cpWsn" id="7uOgiTdDj9" role="3cpWs9">
+            <property role="TrG5h" value="levelSpacing" />
+            <node concept="10Oyi0" id="7uOgiTdDj4" role="1tU5fm" />
+            <node concept="2OqwBi" id="7uOgiTdEdt" role="33vP2m">
+              <node concept="2OqwBi" id="7uOgiTdDMs" role="2Oq$k0">
+                <node concept="37vLTw" id="7uOgiTdDHq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7uOgiTcEUR" resolve="tree" />
+                </node>
+                <node concept="liA8E" id="7uOgiTdEc8" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7uOgiTdEh5" role="2OqNvi">
+                <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                <node concept="1Z6Ecs" id="7uOgiTdEkz" role="37wK5m">
+                  <ref role="1Z6EpT" to="5un2:7uOgiTdCky" resolve="tree-level-spacing" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7uOgiTdEnl" role="3cqZAp">
+          <node concept="3cpWsn" id="7uOgiTdEnm" role="3cpWs9">
+            <property role="TrG5h" value="nodeSpacing" />
+            <node concept="10Oyi0" id="7uOgiTdEnn" role="1tU5fm" />
+            <node concept="2OqwBi" id="7uOgiTdEno" role="33vP2m">
+              <node concept="2OqwBi" id="7uOgiTdEnp" role="2Oq$k0">
+                <node concept="37vLTw" id="7uOgiTdEnq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7uOgiTcEUR" resolve="tree" />
+                </node>
+                <node concept="liA8E" id="7uOgiTdEnr" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7uOgiTdEns" role="2OqNvi">
+                <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                <node concept="1Z6Ecs" id="7uOgiTdEnt" role="37wK5m">
+                  <ref role="1Z6EpT" to="5un2:7uOgiTdCjP" resolve="tree-node-spacing" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7uOgiTcWdZ" role="3cqZAp">
           <node concept="3cpWsn" id="7uOgiTcWe0" role="3cpWs9">
             <property role="TrG5h" value="treeBounds" />
@@ -1027,8 +1071,8 @@
             <property role="TrG5h" value="y" />
             <node concept="10Oyi0" id="7uOgiTb$LD" role="1tU5fm" />
             <node concept="3cpWs3" id="7uOgiTb_q6" role="33vP2m">
-              <node concept="3cmrfG" id="7uOgiTb_qi" role="3uHU7w">
-                <property role="3cmrfH" value="20" />
+              <node concept="37vLTw" id="7uOgiTdETd" role="3uHU7w">
+                <ref role="3cqZAo" node="7uOgiTdDj9" resolve="levelSpacing" />
               </node>
               <node concept="3cpWs3" id="7uOgiTb_5M" role="3uHU7B">
                 <node concept="2OqwBi" id="7uOgiTb$TI" role="3uHU7B">
@@ -1075,8 +1119,8 @@
             <node concept="3clFbF" id="7uOgiTbAwb" role="3cqZAp">
               <node concept="d57v9" id="7uOgiTbAA6" role="3clFbG">
                 <node concept="3cpWs3" id="7uOgiTbAYr" role="37vLTx">
-                  <node concept="3cmrfG" id="7uOgiTbAYB" role="3uHU7w">
-                    <property role="3cmrfH" value="10" />
+                  <node concept="37vLTw" id="7uOgiTdF07" role="3uHU7w">
+                    <ref role="3cqZAo" node="7uOgiTdEnm" resolve="nodeSpacing" />
                   </node>
                   <node concept="2OqwBi" id="7uOgiTbAD1" role="3uHU7B">
                     <node concept="2GrUjf" id="7uOgiTbAAs" role="2Oq$k0">

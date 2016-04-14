@@ -55,6 +55,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
     </language>
     <language id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation">
       <concept id="134774857084556552" name="com.mbeddr.mpsutil.treenotation.structure.TreeCell" flags="ng" index="2SWKgc">
@@ -115,7 +118,7 @@
           <node concept="2SWKgc" id="7uOgiTdyK9" role="3EZMnx">
             <node concept="3EZMnI" id="7uOgiTdyKa" role="2SWKFX">
               <node concept="3F0ifn" id="7uOgiTdyKb" role="3EZMnx">
-                <property role="3F0ifm" value="child2a" />
+                <property role="3F0ifm" value="child2a--------" />
                 <node concept="VPXOz" id="7uOgiTdyKc" role="3F10Kt">
                   <property role="VOm3f" value="true" />
                 </node>
@@ -161,6 +164,18 @@
       </node>
       <node concept="3F0ifn" id="7uOgiTdmmS" role="3EZMnx" />
       <node concept="2iRkQZ" id="7uOgiTdmmh" role="2iSdaV" />
+      <node concept="3tD6jV" id="7uOgiTdGUP" role="3F10Kt">
+        <ref role="3tD7wE" to="5un2:7uOgiTdCky" resolve="tree-level-spacing" />
+        <node concept="3sjG9q" id="7uOgiTdGUQ" role="3tD6jU">
+          <node concept="3clFbS" id="7uOgiTdGUR" role="2VODD2">
+            <node concept="3clFbF" id="7uOgiTdGYu" role="3cqZAp">
+              <node concept="3cmrfG" id="7uOgiTdGYt" role="3clFbG">
+                <property role="3cmrfH" value="50" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
