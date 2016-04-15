@@ -28,6 +28,14 @@
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
     </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
@@ -91,6 +99,9 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -99,6 +110,9 @@
       <concept id="8551646674110395547" name="com.mbeddr.core.modules.structure.FunctionRefType" flags="ng" index="pFrBc">
         <child id="8551646674110395549" name="argTypes" index="pFrBa" />
         <child id="8551646674110395548" name="returnType" index="pFrBb" />
+      </concept>
+      <concept id="1028666136487545270" name="com.mbeddr.core.modules.structure.CommentModuleContent" flags="ng" index="2B_Gvg">
+        <child id="1028666136487550078" name="text" index="2B_H8o" />
       </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
@@ -262,6 +276,9 @@
       <property role="TrG5h" value="SortingTests" />
       <node concept="2v9HqM" id="4INvudZKfL4" role="2eOfOg">
         <ref role="2v9HqP" node="4INvudZKfl$" resolve="Main" />
+      </node>
+      <node concept="2v9HqM" id="489xwTwmvjc" role="2eOfOg">
+        <ref role="2v9HqP" node="489xwTwmvfk" resolve="Comment" />
       </node>
       <node concept="2v9HqM" id="3zTieujTNb4" role="2eOfOg">
         <ref role="2v9HqP" node="3zTieujTHGK" resolve="Registers2" />
@@ -1015,6 +1032,28 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="489xwTwmvfk">
+    <property role="TrG5h" value="Comment" />
+    <node concept="2B_Gvg" id="489xwTwmvfm" role="N3F5h">
+      <node concept="OjmMv" id="489xwTwmvfo" role="2B_H8o">
+        <node concept="19SGf9" id="489xwTwmvfp" role="OjmMu">
+          <node concept="19SUe$" id="489xwTwmvfq" role="19SJt6">
+            <property role="19SUeA" value="this is a comment" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1S7NMz" id="489xwTwmvg9" role="N3F5h">
+      <property role="TrG5h" value="glob" />
+      <node concept="26Vqph" id="489xwTwmvg7" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="489xwTwmvgF" role="1cecVj">
+        <property role="2hmy$m" value="10" />
       </node>
     </node>
   </node>
