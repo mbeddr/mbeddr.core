@@ -2015,7 +2015,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN_k0hb" role="19SJt6">
-            <property role="19SUeA" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image &quot;below&quot; this path prefix. This is supported with code completion." />
+            <property role="19SUeA" value=" relative to the current solution's root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image &quot;below&quot; this path prefix. This is supported with code completion." />
           </node>
         </node>
         <node concept="1xAIan" id="4KbglN_f3pv" role="1xAIax">
@@ -3212,7 +3212,7 @@
         <node concept="1_0LV8" id="3PCHQK6jw9B" role="1_0VJ0">
           <node concept="19SGf9" id="3PCHQK6jw9C" role="1_0LWR">
             <node concept="19SUe$" id="3PCHQK6jw9D" role="19SJt6">
-              <property role="19SUeA" value="The find usages facility discussed in the previous section provides an interactive means to find out which code locations trace to a requirement. But sometimes you want to get an overview. For this purpose, you can use the " />
+              <property role="19SUeA" value="The find usages facility discussed in the previous section provides an interactive means to find out which code locations trace to a requirement. However sometimes you just want to get an overview. For this purpose, you can use the " />
             </node>
             <node concept="1jUjqm" id="3PCHQK6jy_f" role="19SJt6">
               <node concept="19SGf9" id="3PCHQK6jy_g" role="$DsGW">
@@ -3576,7 +3576,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="4IT6uo9gcA" role="19SJt6">
-              <property role="19SUeA" value=" intention on the reviewed node. Alternatively you can also reevaluate all review states from one single location; this is discusseb below in " />
+              <property role="19SUeA" value=" intention on the reviewed node. Alternatively you can also reevaluate all review states from one single location; this is discussed below in " />
             </node>
             <node concept="1_0GAv" id="4IT6uo9sZH" role="19SJt6">
               <ref role="1_0GAl" node="4IT6unQBll" resolve="assessment" />

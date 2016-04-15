@@ -534,7 +534,7 @@
             <ref role="2Cuq_M" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
           </node>
           <node concept="2NCZwO" id="5dchr4QgHJD" role="3z_lpI">
-            <node concept="2NCMab" id="5dchr4QgJnF" role="2NCMaf">
+            <node concept="2NCMab" id="7YPARvXj08m" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
             </node>
           </node>
@@ -565,7 +565,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="74GHMTaim0S" role="19SJt6">
-              <property role="19SUeA" value=" have to be imported into mbeddr. Only the function prototype must be imported so it can called from mbeddr C. " />
+              <property role="19SUeA" value=" have to be imported into mbeddr. Only the function prototype must be imported so it can be called from mbeddr C. " />
             </node>
           </node>
         </node>
@@ -699,7 +699,32 @@
         <node concept="1_0LV8" id="6UY8Kx5jYSy" role="1_0VJ0">
           <node concept="19SGf9" id="6UY8Kx5jYSz" role="1_0LWR">
             <node concept="19SUe$" id="6UY8Kx5jYS$" role="19SJt6">
-              <property role="19SUeA" value="To be able to write the test case, we have to import the " />
+              <property role="19SUeA" value="To be able to write the test case, we have to write a " />
+            </node>
+            <node concept="1jUjqm" id="7YPARvXjtt3" role="19SJt6">
+              <node concept="19SGf9" id="7YPARvXjtt4" role="$DsGW">
+                <node concept="19SUe$" id="7YPARvXjtt5" role="19SJt6">
+                  <property role="19SUeA" value="stdio_stub" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7YPARvXjtt2" role="19SJt6">
+              <property role="19SUeA" value=" like the following: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="7YPARvXjvGx" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="7YPARvXjvGy" role="3z_lpI">
+            <node concept="2NCMab" id="7YPARvXjvJY" role="2NCMaf">
+              <ref role="2NCMaa" to="zxcx:7YPARvXjtIA" resolve="stdio_stub" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="7YPARvXjt$P" role="1_0VJ0">
+          <node concept="19SGf9" id="7YPARvXjt$Q" role="1_0LWR">
+            <node concept="19SUe$" id="7YPARvXjt$R" role="19SJt6">
+              <property role="19SUeA" value="Now import the " />
             </node>
             <node concept="1jUjqm" id="6UY8Kx5jZA7" role="19SJt6">
               <node concept="19SGf9" id="6UY8Kx5jZA8" role="$DsGW">
@@ -1988,7 +2013,7 @@
       </node>
       <node concept="1_0VNX" id="3MXxQvvjJx1" role="1_0VJ0">
         <property role="TrG5h" value="LaunchConfiguration_running" />
-        <property role="1_0VJr" value="Creating a Launch Configurations" />
+        <property role="1_0VJr" value="Creating a Launch Configuration" />
         <node concept="1_0LV8" id="3MXxQvvjJCa" role="1_0VJ0">
           <node concept="19SGf9" id="3MXxQvvjJCb" role="1_0LWR">
             <node concept="19SUe$" id="3MXxQvvjJCc" role="19SJt6">
@@ -2109,7 +2134,7 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="3MXxQvvjLJP" role="19SJt6">
-                  <property role="19SUeA" value=" of your application and run/debug the executable from the context menu of the executable definition. This approach can be senn in " />
+                  <property role="19SUeA" value=" of your application and run/debug the executable from the context menu of the executable definition. This approach can be seen in " />
                 </node>
                 <node concept="2Sbdz4" id="3MXxQvvjMZo" role="19SJt6">
                   <ref role="2SbdyP" node="3MXxQvvjL3v" resolve="LaunchConfiguration_Build" />
@@ -2476,7 +2501,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="3MXxQvvkVuM" role="19SJt6">
-              <property role="19SUeA" value=" executable. The console output contains links for executed tests and failed assertions, and you can click on them and to select the corresponding program element (test case, assertion) in the editor.   " />
+              <property role="19SUeA" value=" executable. The console output contains links for executed tests and failed assertions. If you click on them the corresponding program element (test case, assertion) will be selected in the editor.   " />
             </node>
           </node>
         </node>
@@ -2579,7 +2604,7 @@
         <node concept="1_0LV8" id="4Rhu9QGKvDN" role="1_0VJ0">
           <node concept="19SGf9" id="4Rhu9QGKvDO" role="1_0LWR">
             <node concept="19SUe$" id="4Rhu9QGKvDP" role="19SJt6">
-              <property role="19SUeA" value="If you have a project alredy, then you can simply create a new solution inside the existing project. Select the project node itself and select " />
+              <property role="19SUeA" value="If you already have a project open, then you can simply create a new solution inside the existing project. Select the project node itself and select " />
             </node>
             <node concept="2OlAs7" id="4Rhu9QGKvEf" role="19SJt6">
               <node concept="19SGf9" id="4Rhu9QGKvEg" role="$DsGW">
@@ -2914,8 +2939,8 @@
             <node concept="2NCMab" id="4Rhu9QGM9_k" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
             </node>
-            <node concept="2NCMab" id="4Rhu9QGM9_p" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGM7xD" resolve="main" />
+            <node concept="2NCMab" id="7YPARvXj08g" role="2NCMaf">
+              <ref role="2NCMaa" to="orbb:4Ru$s7zMAqW" resolve="main" />
             </node>
           </node>
         </node>

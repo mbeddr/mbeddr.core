@@ -141,7 +141,7 @@
         <node concept="1_0LV8" id="yrKNEnwk3R" role="1_0VJ0">
           <node concept="19SGf9" id="yrKNEnwk3S" role="1_0LWR">
             <node concept="19SUe$" id="yrKNEnwk3T" role="19SJt6">
-              <property role="19SUeA" value="Let us now explore how we can work with physical units, adding more semantics to this data structure. In order to use the physical units language, we need to import either the " />
+              <property role="19SUeA" value="Let us now explore how we can work with physical units, adding more semantics to this data structure. In order to use the physical units language, we need to import the " />
             </node>
             <node concept="1jUjqm" id="1VdI9nUzjUQ" role="19SJt6">
               <node concept="19SGf9" id="1VdI9nUzjUR" role="$DsGW">
