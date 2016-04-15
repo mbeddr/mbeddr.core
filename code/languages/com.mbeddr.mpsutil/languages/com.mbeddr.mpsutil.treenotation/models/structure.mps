@@ -54,11 +54,27 @@
       <property role="20kJfa" value="deleteHandler" />
       <ref role="20lvS9" node="7GMtHW6w$oP" resolve="DeleteHandler" />
     </node>
+    <node concept="1TJgyj" id="7GMtHW6yJFE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="insertHandler" />
+      <ref role="20lvS9" node="7GMtHW6yJv2" resolve="InserHandler" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GMtHW6w$oP">
     <property role="1pbfSe" value="2118861548" />
     <property role="TrG5h" value="DeleteHandler" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6yJv2">
+    <property role="1pbfSe" value="2118291807" />
+    <property role="TrG5h" value="InserHandler" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6yJ$P">
+    <property role="1pbfSe" value="2118291436" />
+    <property role="TrG5h" value="Parameter_index" />
+    <property role="34LRSv" value="index" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
