@@ -14,6 +14,7 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -78,6 +79,28 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="2EHx9g" id="i2IxuUQ" role="2iSdaV" />
+        <node concept="3EZMnI" id="7GMtHW6w$DP" role="3EZMnx">
+          <node concept="2iRfu4" id="7GMtHW6w$DQ" role="2iSdaV" />
+          <node concept="VPM3Z" id="7GMtHW6w$DR" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="7GMtHW6w$Hp" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="7GMtHW6w$DV" role="3EZMnx">
+            <property role="3F0ifm" value="delete" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+            <node concept="VPXOz" id="7GMtHW6wA9p" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="7GMtHW6w$E0" role="3EZMnx">
+            <ref role="1NtTu8" to="hfvq:7GMtHW6w$DL" />
+            <node concept="VPXOz" id="7GMtHW6w$FG" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="VPM3Z" id="hEU$OXo" role="3F10Kt">
         <property role="VOm3f" value="false" />

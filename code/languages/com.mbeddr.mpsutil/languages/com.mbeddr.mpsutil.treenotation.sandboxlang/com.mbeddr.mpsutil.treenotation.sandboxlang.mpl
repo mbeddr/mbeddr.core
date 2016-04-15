@@ -50,6 +50,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">bda054c4-5d71-46ca-aba0-7104e3070b5a(com.mbeddr.mpsutil.treenotation.styles)</dependency>
+    <dependency reexport="false">e9d9e7bc-3ca3-4ef7-8aa7-316a55bcc1ab(com.mbeddr.mpsutil.treenotation.runtime)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -80,7 +81,11 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="e9d9e7bc-3ca3-4ef7-8aa7-316a55bcc1ab(com.mbeddr.mpsutil.treenotation.runtime)" version="0" />
     <module reference="ce6e35ab-eb16-4223-b8fd-cd565ab8b2fb(com.mbeddr.mpsutil.treenotation.sandboxlang)" version="0" />
     <module reference="bda054c4-5d71-46ca-aba0-7104e3070b5a(com.mbeddr.mpsutil.treenotation.styles)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

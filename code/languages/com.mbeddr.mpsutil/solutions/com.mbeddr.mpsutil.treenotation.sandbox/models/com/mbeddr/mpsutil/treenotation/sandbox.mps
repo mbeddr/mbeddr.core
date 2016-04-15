@@ -27,12 +27,9 @@
         <property role="TrG5h" value="def" />
         <node concept="2SU3KN" id="7uOgiTdJuQ" role="2SU3KW">
           <property role="TrG5h" value="12345" />
-          <node concept="2SU3KN" id="7uOgiTdJDG" role="2SU3KW">
-            <property role="TrG5h" value="dfghj" />
-          </node>
         </node>
-        <node concept="2SU3KN" id="7uOgiTdJuO" role="2SU3KW">
-          <property role="TrG5h" value="3465456" />
+        <node concept="2SU3KN" id="7uOgiTdJDG" role="2SU3KW">
+          <property role="TrG5h" value="dfghj" />
         </node>
       </node>
       <node concept="2SU3KN" id="7uOgiTdJDz" role="2SU3KW">
@@ -47,7 +44,6 @@
           <property role="TrG5h" value="sgfhfhg" />
         </node>
       </node>
-      <node concept="2SU3KN" id="7uOgiTdLG5" role="2SU3KW" />
     </node>
   </node>
 </model>
