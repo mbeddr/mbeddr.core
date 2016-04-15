@@ -8,6 +8,7 @@
   <imports>
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -16,8 +17,14 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -59,6 +66,17 @@
       <property role="20kJfa" value="insertHandler" />
       <ref role="20lvS9" node="7GMtHW6yJv2" resolve="InserHandler" />
     </node>
+    <node concept="1TJgyj" id="7k8R9gKMaiU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outgoingShape" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+    <node concept="1TJgyj" id="7k8R9gKMaj0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="incomingShape" />
+      <ref role="20lvS9" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GMtHW6w$oP">
     <property role="1pbfSe" value="2118861548" />
@@ -75,6 +93,93 @@
     <property role="TrG5h" value="Parameter_index" />
     <property role="34LRSv" value="index" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6DEF1">
+    <property role="1pbfSe" value="2116476512" />
+    <property role="TrG5h" value="Shape" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7GMtHW6DEF3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="paintFunction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7GMtHW6DEF2" resolve="ShapePaintFunction" />
+    </node>
+    <node concept="1TJgyj" id="7k8R9gKLRZ6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7k8R9gKLR1M" resolve="ShapeParameterDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7GMtHW6DFek" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6DEF2">
+    <property role="1pbfSe" value="2116476511" />
+    <property role="TrG5h" value="ShapePaintFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6DEF5">
+    <property role="1pbfSe" value="2116476508" />
+    <property role="TrG5h" value="Parameter_graphics" />
+    <property role="34LRSv" value="g" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="PlHQZ" id="7GMtHW6DFdY">
+    <property role="1pbfSe" value="2116474275" />
+    <property role="TrG5h" value="IShape" />
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6DFdZ">
+    <property role="1pbfSe" value="2116474274" />
+    <property role="TrG5h" value="ShapeReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7k8R9gKLRHv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actualParameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7GMtHW6DFe2" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="shape" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7GMtHW6DEF1" resolve="Shape" />
+    </node>
+    <node concept="PrWs8" id="7GMtHW6DFe0" role="PzmwI">
+      <ref role="PrY4T" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GMtHW6DGvq">
+    <property role="1pbfSe" value="2116469063" />
+    <property role="TrG5h" value="Parameter_edges" />
+    <property role="34LRSv" value="edges" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7k8R9gKLR1M">
+    <property role="1pbfSe" value="1513075450" />
+    <property role="TrG5h" value="ShapeParameterDeclaration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7k8R9gKLR1N" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="7k8R9gKLR1P" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7k8R9gKLR2o">
+    <property role="1pbfSe" value="1513075412" />
+    <property role="TrG5h" value="ShapeParameterReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="7k8R9gKLR2p" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7k8R9gKLR1M" resolve="ShapeParameterDeclaration" />
+    </node>
   </node>
 </model>
 

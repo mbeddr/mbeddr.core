@@ -8,7 +8,9 @@
   <imports>
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="hfvq" ref="r:0eb4b752-afe1-4ade-9bab-3975c6c0405f(com.mbeddr.mpsutil.treenotation.structure)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
+    <import index="hfvq" ref="r:0eb4b752-afe1-4ade-9bab-3975c6c0405f(com.mbeddr.mpsutil.treenotation.structure)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
   </imports>
   <registry>
@@ -64,6 +66,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -98,6 +103,7 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
@@ -269,6 +275,94 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7GMtHW6yJ_0" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7GMtHW6DEF6">
+    <ref role="13h7C2" to="hfvq:7GMtHW6DEF5" resolve="Parameter_graphics" />
+    <node concept="13hLZK" id="7GMtHW6DEF7" role="13h7CW">
+      <node concept="3clFbS" id="7GMtHW6DEF8" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7GMtHW6DEF9" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="7GMtHW6DEFa" role="1B3o_S" />
+      <node concept="3clFbS" id="7GMtHW6DEFf" role="3clF47">
+        <node concept="3clFbF" id="7GMtHW6DEGS" role="3cqZAp">
+          <node concept="2c44tf" id="7GMtHW6DEGQ" role="3clFbG">
+            <node concept="3uibUv" id="7GMtHW6DEHu" role="2c44tc">
+              <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7GMtHW6DEFg" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7GMtHW6DEIe">
+    <ref role="13h7C2" to="hfvq:7GMtHW6DEF2" resolve="ShapePaintFunction" />
+    <node concept="13hLZK" id="7GMtHW6DEIf" role="13h7CW">
+      <node concept="3clFbS" id="7GMtHW6DEIg" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7GMtHW6DEIh" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameters" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRM" resolve="getParameters" />
+      <node concept="3Tm1VV" id="7GMtHW6DEIM" role="1B3o_S" />
+      <node concept="3clFbS" id="7GMtHW6DEIN" role="3clF47">
+        <node concept="3clFbF" id="7GMtHW6DEMC" role="3cqZAp">
+          <node concept="2ShNRf" id="7GMtHW6DEMu" role="3clFbG">
+            <node concept="Tc6Ow" id="7GMtHW6DEXz" role="2ShVmc">
+              <node concept="3THzug" id="7GMtHW6DF6z" role="HW$YZ">
+                <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="3TUQnm" id="7GMtHW6DFcs" role="HW$Y0">
+                <ref role="3TV0OU" to="hfvq:7GMtHW6DEF5" resolve="Parameter_graphics" />
+              </node>
+              <node concept="3TUQnm" id="7GMtHW6DGzT" role="HW$Y0">
+                <ref role="3TV0OU" to="hfvq:7GMtHW6DGvq" resolve="Parameter_edges" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="7GMtHW6DEIO" role="3clF45">
+        <node concept="3THzug" id="7GMtHW6DEIP" role="_ZDj9">
+          <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7GMtHW6DGvr">
+    <ref role="13h7C2" to="hfvq:7GMtHW6DGvq" resolve="Parameter_edges" />
+    <node concept="13hLZK" id="7GMtHW6DGvs" role="13h7CW">
+      <node concept="3clFbS" id="7GMtHW6DGvt" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7GMtHW6DGvu" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="7GMtHW6DGvv" role="1B3o_S" />
+      <node concept="3clFbS" id="7GMtHW6DGv$" role="3clF47">
+        <node concept="3clFbF" id="7GMtHW6DGxC" role="3cqZAp">
+          <node concept="2c44tf" id="7GMtHW6DGxA" role="3clFbG">
+            <node concept="_YKpA" id="7GMtHW6DGye" role="2c44tc">
+              <node concept="3uibUv" id="7GMtHW6DGza" role="_ZDj9">
+                <ref role="3uigEE" to="fbzs:~Line2D" resolve="Line2D" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7GMtHW6DGv_" role="3clF45">
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
     </node>
