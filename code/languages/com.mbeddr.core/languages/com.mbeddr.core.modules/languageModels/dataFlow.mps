@@ -1005,20 +1005,25 @@
                   <property role="3SKdUp" value="global var treated as initialized" />
                 </node>
               </node>
-              <node concept="2qeTo9" id="54p1ylF$XtS" role="3cqZAp">
-                <node concept="2qfb11" id="54p1ylF$XtT" role="2qf8f6">
+              <node concept="3SKdUt" id="4byGjaZlqjg" role="3cqZAp">
+                <node concept="3SKdUq" id="4byGjaZlqji" role="3SKWNk">
+                  <property role="3SKdUp" value="GlobalVarRefInitialization takes care of this" />
+                </node>
+              </node>
+              <node concept="2qeTo9" id="4byGjaZlCRG" role="3cqZAp">
+                <node concept="2qfb11" id="4byGjaZlCRH" role="2qf8f6">
                   <ref role="2qfb1S" node="7vcqB$mv$mt" resolve="defInit" />
-                  <node concept="2OqwBi" id="54p1ylF$XtU" role="2qfb10">
-                    <node concept="3cqzBR" id="54p1ylF$XtV" role="2Oq$k0">
-                      <ref role="3cqzBQ" node="2GqtAvzbjP4" resolve="ref" />
-                    </node>
-                    <node concept="2qgKlT" id="54p1ylF$XtW" role="2OqNvi">
+                  <node concept="2OqwBi" id="4byGjaZlCRI" role="2qfb10">
+                    <node concept="2qgKlT" id="4byGjaZlCRJ" role="2OqNvi">
                       <ref role="37wK5l" to="ywuz:1LDGRqyQFAf" resolve="getVariable" />
+                    </node>
+                    <node concept="3cqzBR" id="4byGjaZlCRK" role="2Oq$k0">
+                      <ref role="3cqzBQ" node="2GqtAvzbjP4" resolve="ref" />
                     </node>
                   </node>
                 </node>
-                <node concept="3s5BLS" id="54p1ylF$XtX" role="IgiVj" />
-                <node concept="3cqzBR" id="54p1ylF$XtY" role="aPEfM">
+                <node concept="3s5BLS" id="4byGjaZlCRL" role="IgiVj" />
+                <node concept="3cqzBR" id="4byGjaZlCRM" role="aPEfM">
                   <ref role="3cqzBQ" node="2GqtAvzbjP4" resolve="ref" />
                 </node>
               </node>
@@ -2410,7 +2415,7 @@
         <ref role="3uigEE" node="4zFXTqpFLST" resolve="VariableWrapper" />
       </node>
     </node>
-    <node concept="2JLR6D" id="1q3AWbNenFC" role="lGtFl" />
+    <node concept="2JLR6D" id="6X3ybixPGmC" role="lGtFl" />
   </node>
   <node concept="Qs71p" id="7d9zFs_$HfD">
     <property role="3GE5qa" value="analyzers.init" />
@@ -4043,7 +4048,7 @@
         </node>
       </node>
     </node>
-    <node concept="2JLR6D" id="4fUrRtGPJm2" role="lGtFl" />
+    <node concept="2JLR6D" id="6X3ybixPGWa" role="lGtFl" />
   </node>
   <node concept="312cEu" id="7PgKJZvfe2t">
     <property role="3GE5qa" value="analyzers.pointer" />

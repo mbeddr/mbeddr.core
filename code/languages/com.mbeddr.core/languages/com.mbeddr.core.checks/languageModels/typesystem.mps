@@ -566,7 +566,7 @@
               </node>
               <node concept="2OqwBi" id="2sRGoU6nhe$" role="3uHU7B">
                 <node concept="1PxgMI" id="2sRGoU6nhe_" role="2Oq$k0">
-                  <ref role="1PxNhF" to="mj1l:7lNBHBNB4oP" resolve="PrimitiveC99IntegralType" />
+                  <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
                   <node concept="37vLTw" id="2sRGoU6nheA" role="1PxMeX">
                     <ref role="3cqZAo" node="2sRGoU6nheo" resolve="tpe" />
                   </node>
