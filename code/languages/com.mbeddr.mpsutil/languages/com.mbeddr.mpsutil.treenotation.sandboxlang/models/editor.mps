@@ -119,6 +119,7 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -145,7 +146,6 @@
         <child id="134774857084558329" name="treeChildren" index="2SWKFX" />
         <child id="8433232831282980026" name="outgoingShape" index="15K7wI" />
         <child id="8433232831282980032" name="incomingShape" index="15K7xk" />
-        <child id="8877288515759655537" name="deleteHandler" index="1XG3MI" />
         <child id="8877288515760225002" name="insertHandler" index="1XI8KP" />
       </concept>
       <concept id="8433232831282901144" name="com.mbeddr.mpsutil.treenotation.structure.ShapeParameterReference" flags="ng" index="15NUKc">
@@ -153,6 +153,12 @@
       </concept>
       <concept id="8433232831282901106" name="com.mbeddr.mpsutil.treenotation.structure.ShapeParameterDeclaration" flags="ng" index="15NUNA">
         <child id="8433232831282901107" name="type" index="15NUNB" />
+      </concept>
+      <concept id="8796347991406413783" name="com.mbeddr.mpsutil.treenotation.structure.ThisNodeExpression" flags="ng" index="3u$I0N" />
+      <concept id="8796347991406413716" name="com.mbeddr.mpsutil.treenotation.structure.ConditionalShape" flags="ng" index="3u$I1K">
+        <child id="8796347991406416734" name="condition" index="3u$JiU" />
+        <child id="8796347991406416551" name="then" index="3u$Jl3" />
+        <child id="8796347991406416554" name="else" index="3u$Jle" />
       </concept>
       <concept id="8877288515762046938" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_edges" flags="ng" index="1X_b45" />
       <concept id="8877288515762041727" name="com.mbeddr.mpsutil.treenotation.structure.ShapeReference" flags="ng" index="1X_cmw">
@@ -165,7 +171,6 @@
         <child id="8433232831282905030" name="parameters" index="15NUdi" />
         <child id="8877288515762039491" name="paintFunction" index="1X_dKs" />
       </concept>
-      <concept id="8877288515759654453" name="com.mbeddr.mpsutil.treenotation.structure.DeleteHandler" flags="ig" index="1XG33E" />
       <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ig" index="1XI84t" />
       <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
     </language>
@@ -176,7 +181,6 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -390,16 +394,6 @@
       <node concept="3F0A7n" id="7uOgiTdIPf" role="2SWKFN">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="1XG33E" id="7GMtHW6xoDE" role="1XG3MI">
-        <node concept="3clFbS" id="7GMtHW6xoDF" role="2VODD2">
-          <node concept="3clFbF" id="7GMtHW6xoDJ" role="3cqZAp">
-            <node concept="2OqwBi" id="7GMtHW6xoFj" role="3clFbG">
-              <node concept="pncrf" id="7GMtHW6xoDI" role="2Oq$k0" />
-              <node concept="1PgB_6" id="7GMtHW6xoN4" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1XI84t" id="7GMtHW6DzfQ" role="1XI8KP">
         <node concept="3clFbS" id="7GMtHW6DzfR" role="2VODD2">
           <node concept="3clFbF" id="7GMtHW6Dzg9" role="3cqZAp">
@@ -430,10 +424,32 @@
           <property role="$nhwW" value="7.0" />
         </node>
       </node>
-      <node concept="1X_cmw" id="7k8R9gKOOUP" role="15K7wI">
-        <ref role="1X_clt" node="7k8R9gKOHrW" resolve="Arc" />
-        <node concept="3b6qkQ" id="7k8R9gKOOZ2" role="15NUvb">
-          <property role="$nhwW" value="10.0" />
+      <node concept="3u$I1K" id="7CiTYi$wnL6" role="15K7wI">
+        <node concept="3eOSWO" id="7CiTYi$wsyX" role="3u$JiU">
+          <node concept="3cmrfG" id="7CiTYi$wsz0" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="7CiTYi$wpFz" role="3uHU7B">
+            <node concept="2OqwBi" id="7CiTYi$wnSn" role="2Oq$k0">
+              <node concept="3u$I0N" id="7CiTYi$wnQN" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7CiTYi$wpeK" role="2OqNvi">
+                <ref role="3TtcxE" to="uin2:7uOgiTdIOS" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="7CiTYi$wrxR" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="1X_cmw" id="7k8R9gKOOUP" role="3u$Jl3">
+          <ref role="1X_clt" node="7k8R9gKOHrW" resolve="Arc" />
+          <node concept="3b6qkQ" id="7k8R9gKOOZ2" role="15NUvb">
+            <property role="$nhwW" value="10.0" />
+          </node>
+        </node>
+        <node concept="1X_cmw" id="7CiTYi$wp5M" role="3u$Jle">
+          <ref role="1X_clt" node="7k8R9gKN2ah" resolve="Circle" />
+          <node concept="3b6qkQ" id="7CiTYi$wp79" role="15NUvb">
+            <property role="$nhwW" value="10.0" />
+          </node>
         </node>
       </node>
     </node>

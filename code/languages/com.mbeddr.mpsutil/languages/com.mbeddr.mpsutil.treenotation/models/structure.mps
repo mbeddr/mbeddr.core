@@ -181,5 +181,37 @@
       <ref role="20lvS9" node="7k8R9gKLR1M" resolve="ShapeParameterDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7CiTYi$w0uk">
+    <property role="1pbfSe" value="512946040" />
+    <property role="TrG5h" value="ConditionalShape" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7CiTYi$w1du" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7CiTYi$w1aB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+    <node concept="1TJgyj" id="7CiTYi$w1aE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <ref role="20lvS9" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+    <node concept="PrWs8" id="7CiTYi$w3KP" role="PzmwI">
+      <ref role="PrY4T" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7CiTYi$w0vn">
+    <property role="1pbfSe" value="512946107" />
+    <property role="TrG5h" value="ThisNodeExpression" />
+    <property role="34LRSv" value="node" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 
