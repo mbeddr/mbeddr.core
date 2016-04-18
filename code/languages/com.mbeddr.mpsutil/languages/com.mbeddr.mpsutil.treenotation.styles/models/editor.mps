@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -99,6 +100,13 @@
       <node concept="10OMs4" id="7GMtHW6qHbh" role="3t5Oan" />
       <node concept="2$xPTn" id="7GMtHW6qHbv" role="3t49C2">
         <property role="2$xPTl" value="1.0f" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="7CiTYi$AegP" role="V601i">
+      <property role="iBDjm" value="false" />
+      <property role="TrG5h" value="_tree-incoming-shape" />
+      <node concept="3uibUv" id="7CiTYi$Aejc" role="3t5Oan">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
   </node>

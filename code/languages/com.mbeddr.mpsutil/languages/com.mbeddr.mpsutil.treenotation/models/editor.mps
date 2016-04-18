@@ -9,6 +9,7 @@
     <import index="hfvq" ref="r:0eb4b752-afe1-4ade-9bab-3975c6c0405f(com.mbeddr.mpsutil.treenotation.structure)" implicit="true" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -393,6 +394,22 @@
         <ref role="1NtTu8" to="hfvq:7CiTYi$w1aE" />
       </node>
       <node concept="l2Vlx" id="7CiTYi$w1bV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7CiTYi$AeQh">
+    <ref role="1XX52x" to="hfvq:7CiTYi$AeQ5" resolve="IncomingShapeStyle" />
+    <node concept="3EZMnI" id="7CiTYi$AeRv" role="2wV5jI">
+      <node concept="PMmxH" id="7CiTYi$AeRG" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="tpc5:hoxUe05" resolve="item" />
+      </node>
+      <node concept="3F0ifn" id="7CiTYi$AeRR" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="7CiTYi$AeS9" role="3EZMnx">
+        <ref role="1NtTu8" to="hfvq:7CiTYi$AeQp" />
+      </node>
+      <node concept="2iRfu4" id="7CiTYi$AeRy" role="2iSdaV" />
     </node>
   </node>
 </model>

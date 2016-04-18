@@ -213,5 +213,17 @@
     <property role="34LRSv" value="node" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="7CiTYi$AeQ5">
+    <property role="1pbfSe" value="514577769" />
+    <property role="TrG5h" value="IncomingShapeStyle" />
+    <property role="34LRSv" value="tree-incoming-shape" />
+    <ref role="1TJDcQ" to="tpc2:hgV6hR6" resolve="StyleClassItem" />
+    <node concept="1TJgyj" id="7CiTYi$AeQp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="shape" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+  </node>
 </model>
 
