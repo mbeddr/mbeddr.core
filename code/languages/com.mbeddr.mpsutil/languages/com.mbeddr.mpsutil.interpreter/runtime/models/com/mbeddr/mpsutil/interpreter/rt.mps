@@ -20,7 +20,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="7wpd" ref="r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common.util)" />
     <import index="6f5b" ref="r:9ffe1487-be32-45f7-abe0-e5fa20142da5(com.mbeddr.mpsutil.interpreter.plugin)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
@@ -1893,6 +1892,31 @@
         </node>
       </node>
       <node concept="3clFbS" id="2pAf7L4EsIp" role="3clF47">
+        <node concept="3clFbJ" id="$yb$20i0e9" role="3cqZAp">
+          <node concept="3clFbS" id="$yb$20i0eb" role="3clFbx">
+            <node concept="3clFbF" id="$yb$20i0uB" role="3cqZAp">
+              <node concept="37vLTI" id="$yb$20i0DJ" role="3clFbG">
+                <node concept="2ShNRf" id="$yb$20i0Ma" role="37vLTx">
+                  <node concept="3rGOSV" id="$yb$20i1_4" role="2ShVmc">
+                    <node concept="3Tqbb2" id="$yb$20i1Cr" role="3rHrn6" />
+                    <node concept="3uibUv" id="$yb$20i1Es" role="3rHtpV">
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="$yb$20i0u_" role="37vLTJ">
+                  <ref role="3cqZAo" node="2pAf7L4EsIl" resolve="initialEnvironment" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="$yb$20i0p5" role="3clFbw">
+            <node concept="10Nm6u" id="$yb$20i0qV" role="3uHU7w" />
+            <node concept="37vLTw" id="$yb$20i0ja" role="3uHU7B">
+              <ref role="3cqZAo" node="2pAf7L4EsIl" resolve="initialEnvironment" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2pAf7L4Eu$h" role="3cqZAp">
           <node concept="37vLTI" id="2pAf7L4Ew3P" role="3clFbG">
             <node concept="2OqwBi" id="2pAf7L4EyOg" role="37vLTx">

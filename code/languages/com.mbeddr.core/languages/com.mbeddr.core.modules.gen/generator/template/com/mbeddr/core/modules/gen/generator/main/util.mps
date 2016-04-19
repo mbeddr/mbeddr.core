@@ -2041,9 +2041,6 @@
                     </node>
                     <node concept="liA8E" id="5KLKIBnOiEz" role="2OqNvi">
                       <ref role="37wK5l" node="5KLKIBnNy2M" resolve="addEdge" />
-                      <node concept="37vLTw" id="5KLKIBnOiA5" role="37wK5m">
-                        <ref role="3cqZAo" node="5KLKIBnOi_F" resolve="content" />
-                      </node>
                       <node concept="1PxgMI" id="5KLKIBnO$Ai" role="37wK5m">
                         <ref role="1PxNhF" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
                         <node concept="2OqwBi" id="5KLKIBnOiEB" role="1PxMeX">
@@ -2052,6 +2049,9 @@
                           </node>
                           <node concept="YCak7" id="5KLKIBnOzES" role="2OqNvi" />
                         </node>
+                      </node>
+                      <node concept="37vLTw" id="5KLKIBnOiA5" role="37wK5m">
+                        <ref role="3cqZAo" node="5KLKIBnOi_F" resolve="content" />
                       </node>
                     </node>
                   </node>
