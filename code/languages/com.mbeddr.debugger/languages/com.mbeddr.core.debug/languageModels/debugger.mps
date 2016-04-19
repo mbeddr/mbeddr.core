@@ -463,13 +463,10 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
-        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
-      </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -933,21 +930,8 @@
             <node concept="3cpWs2" id="5HxjapvQS7w" role="37wK5m">
               <ref role="3cqZAo" node="6WfZQfTHrh7" resolve="node" />
             </node>
-            <node concept="2OqwBi" id="5HxjapvQS7x" role="37wK5m">
-              <node concept="liA8E" id="5HxjapvQS7y" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SConceptRepository.getConcept(java.lang.String):org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
-                <node concept="2YIFZM" id="5HxjapvQS7z" role="37wK5m">
-                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                  <node concept="3B5_sB" id="5HxjapvQS7$" role="37wK5m">
-                    <ref role="3B5MYn" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2YIFZM" id="5HxjapvQS7_" role="2Oq$k0">
-                <ref role="37wK5l" to="c17a:~SConceptRepository.getInstance():org.jetbrains.mps.openapi.language.SConceptRepository" resolve="getInstance" />
-                <ref role="1Pybhc" to="c17a:~SConceptRepository" resolve="SConceptRepository" />
-              </node>
+            <node concept="35c_gC" id="5BIhRcRUaTL" role="37wK5m">
+              <ref role="35c_gD" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
             </node>
           </node>
           <node concept="9aQIb" id="7DakfXFcjkz" role="9aQIa">
