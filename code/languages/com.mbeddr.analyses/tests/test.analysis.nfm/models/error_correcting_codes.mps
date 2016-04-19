@@ -117,6 +117,7 @@
       <concept id="279446265608352903" name="com.mbeddr.core.pointers.structure.SizeOfExpr" flags="ng" index="3wxvTy">
         <child id="279446265608352905" name="type2Calculate" index="3wxvTG" />
       </concept>
+      <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
@@ -420,6 +421,25 @@
       </node>
       <node concept="2v9HqM" id="7ANKYSIE8Pk" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozyczI" resolve="limits" />
+      </node>
+    </node>
+    <node concept="2eOfOl" id="8eVegzBnGX" role="2ePNbc">
+      <property role="iO3LB" value="false" />
+      <property role="TrG5h" value="crc_test" />
+      <node concept="2v9HqM" id="8eVegzBnHX" role="2eOfOg">
+        <ref role="2v9HqP" node="2nZgViVrP0F" resolve="crc_main" />
+      </node>
+      <node concept="2v9HqM" id="8eVegzBnI0" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      </node>
+      <node concept="2v9HqM" id="8eVegzBnI1" role="2eOfOg">
+        <ref role="2v9HqP" node="5flih_m2zwY" resolve="crc" />
+      </node>
+      <node concept="2v9HqM" id="8eVegzBnI2" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+      </node>
+      <node concept="2v9HqM" id="8eVegzBnI3" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:2RIhi0HBZdt" resolve="string" />
       </node>
     </node>
     <node concept="29Nb31" id="2nZgViVrYQw" role="2ePNbc">
@@ -6321,7 +6341,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="true" />
-      <ref role="3V$Cn$" node="5flih_m2zvL" resolve="crc_verificationCase1" />
+      <ref role="3V$Cn$" node="5flih_m2zvL" resolve="crc_verificationCase" />
     </node>
     <node concept="1nvAUJ" id="1_7SmKDSMzy" role="3V$2$K">
       <property role="2lelRm" value="true" />
@@ -12969,95 +12989,6 @@
     <node concept="2NXPZ9" id="1_7SmKE8HCE" role="N3F5h">
       <property role="TrG5h" value="empty_1460967256685_76" />
     </node>
-    <node concept="2NXPZ9" id="7ANKYSIF_e7" role="N3F5h">
-      <property role="TrG5h" value="empty_1460992976884_45" />
-    </node>
-    <node concept="N3Fnx" id="7ANKYSIFAWC" role="N3F5h">
-      <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="7ANKYSIFAWD" role="3XIRFX">
-        <node concept="1_9egQ" id="7ANKYSIFAWE" role="3XIRFZ">
-          <node concept="3pqW6w" id="7ANKYSIFAWF" role="1_9egR">
-            <node concept="3TlMh9" id="7ANKYSIFAWG" role="3TlMhJ">
-              <property role="2hmy$m" value="4" />
-            </node>
-            <node concept="1S7827" id="7ANKYSIFAWH" role="3TlMhI">
-              <ref role="1S7826" node="1_7SmKE7zjJ" resolve="number_of_parity_bits" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="7ANKYSIFAWI" role="3XIRFZ" />
-        <node concept="1_9egQ" id="7ANKYSIFAWJ" role="3XIRFZ">
-          <node concept="3O_q_g" id="7ANKYSIFAWK" role="1_9egR">
-            <ref role="3O_q_h" node="1_7SmKE7WCK" resolve="compute_parity_positions" />
-          </node>
-        </node>
-        <node concept="n2Vfv" id="7ANKYSIFAWL" role="3XIRFZ">
-          <property role="TrG5h" value="i" />
-          <node concept="1vV05I" id="7ANKYSIFAWM" role="n2wFf">
-            <property role="n43Ve" value="false" />
-            <node concept="3TlMh9" id="7ANKYSIFAWN" role="1vV05J">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="1S7827" id="7ANKYSIFAWO" role="1vV05C">
-              <ref role="1S7826" node="1_7SmKE7zjJ" resolve="number_of_parity_bits" />
-            </node>
-          </node>
-          <node concept="3XIRFW" id="7ANKYSIFAWP" role="n2wFg">
-            <node concept="1_9egQ" id="7ANKYSIFAWQ" role="3XIRFZ">
-              <node concept="3O_q_g" id="7ANKYSIFAWR" role="1_9egR">
-                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-                <node concept="PhEJO" id="7ANKYSIFAWS" role="3O_q_j">
-                  <property role="PhEJT" value="parity_bit_position[%d]=%d\n" />
-                </node>
-                <node concept="1f68ZN" id="7ANKYSIFAWT" role="3O_q_j">
-                  <ref role="1f68ZM" node="7ANKYSIFAWL" resolve="i" />
-                </node>
-                <node concept="2wJmCr" id="7ANKYSIFAWU" role="3O_q_j">
-                  <node concept="1f68ZN" id="7ANKYSIFAWV" role="2wJmCp">
-                    <ref role="1f68ZM" node="7ANKYSIFAWL" resolve="i" />
-                  </node>
-                  <node concept="1S7827" id="7ANKYSIFAWW" role="1_9fRO">
-                    <ref role="1S7826" node="1_7SmKE7zjL" resolve="parity_bits_positions" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="7ANKYSIFAWX" role="3XIRFZ" />
-        <node concept="2BFjQ_" id="7ANKYSIFAWY" role="3XIRFZ">
-          <node concept="3TlMh9" id="7ANKYSIFAWZ" role="2BFjQA">
-            <property role="2hmy$m" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="26Vqph" id="7ANKYSIFAX0" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="19RgSI" id="7ANKYSIFAX1" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="7ANKYSIFAX2" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="19RgSI" id="7ANKYSIFAX3" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="7ANKYSIFAX4" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="7ANKYSIFAX5" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="7ANKYSIFA5n" role="N3F5h">
-      <property role="TrG5h" value="empty_1460992980652_46" />
-    </node>
     <node concept="3GEVxB" id="1_7SmKE7zrr" role="2OODSX">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" resolve="math" />
@@ -13077,7 +13008,7 @@
       <node concept="OjmMv" id="1_7SmKE7zrw" role="1w35rA">
         <node concept="19SGf9" id="1_7SmKE7zrx" role="OjmMu">
           <node concept="19SUe$" id="1_7SmKE7zry" role="19SJt6">
-            <property role="19SUeA" value="------------------------------------------------------------------------&#10;// Encoding and decoding using Hamming code. &#10;// ------------------------------------------------------------------------&#10;// This example code implements the Hamming algorithm from the book:&#10;// R.H. Morelos-Zaragoza, The Art of Error Correcting Coding, Wiley, 2002.&#10;//&#10;// ------------------------------------------------------------------------" />
+            <property role="19SUeA" value="------------------------------------------------------------------------&#10;// Encoding and decoding messages using Hamming code. &#10;// ------------------------------------------------------------------------&#10;// This example code implements the Hamming algorithm from the book:&#10;// R.H. Morelos-Zaragoza, The Art of Error Correcting Coding, Wiley, 2002.&#10;//&#10;// ------------------------------------------------------------------------" />
           </node>
         </node>
       </node>
@@ -13498,6 +13429,12 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
+    <node concept="2NXPZ9" id="8eVegzBKIf" role="N3F5h">
+      <property role="TrG5h" value="empty_1461072926288_8" />
+    </node>
+    <node concept="2NXPZ9" id="8eVegzBLmI" role="N3F5h">
+      <property role="TrG5h" value="empty_1461072926490_9" />
+    </node>
     <node concept="2NXPZ9" id="1_7SmKEbJFg" role="N3F5h">
       <property role="TrG5h" value="empty_1460970275876_85" />
     </node>
@@ -13661,8 +13598,8 @@
         <property role="2hmy$m" value="BB3D" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="5flih_m2D5U" role="N3F5h">
-      <property role="TrG5h" value="empty_1461058181731_71" />
+    <node concept="2NXPZ9" id="8eVegzBc7p" role="N3F5h">
+      <property role="TrG5h" value="empty_1461071435466_2" />
     </node>
     <node concept="4WHVk" id="5flih_m2zyy" role="N3F5h">
       <property role="TrG5h" value="WIDTH" />
@@ -13812,7 +13749,6 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
-        <node concept="3XISUE" id="5flih_m2zRX" role="3XIRFZ" />
         <node concept="1_a8vi" id="5flih_m2zzS" role="3XIRFZ">
           <node concept="uSsIJ" id="5flih_m2zG_" role="1_amZ$">
             <node concept="3TlMh9" id="5flih_m2zzV" role="uSsIC">
@@ -13941,7 +13877,7 @@
         <node concept="OjmMv" id="5flih_m2zSF" role="1w35rA">
           <node concept="19SGf9" id="5flih_m2zSG" role="OjmMu">
             <node concept="19SUe$" id="5flih_m2zSH" role="19SJt6">
-              <property role="19SUeA" value=" * Function:    reflect()&#13;&#10; * &#13;&#10; * Description: Reorder the bits of a binary sequence, by reflecting&#13;&#10; *&#9;&#9;&#9;&#9;them about the middle position.&#13;&#10; *&#13;&#10; * Notes:&#9;&#9;No checking is done that nBits &lt;= 32.&#13;&#10; *&#13;&#10; * Returns:&#9;&#9;The reflection of the original data.&#13;" />
+              <property role="19SUeA" value=" * Reorder the bits of a binary sequence, by reflecting&#13;&#10; * &#9;&#9;&#9;&#9;them about the middle position.&#13;&#10; *&#13;&#10; * Notes: &#9;&#9;No checking is done that nBits &lt;= 32.&#13;&#10; *&#13;&#10; * Returns:&#9; &#9;The reflection of the original data.&#13;" />
             </node>
           </node>
         </node>
@@ -13998,8 +13934,6 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
-        <node concept="3XISUE" id="5flih_m2zSb" role="3XIRFZ" />
-        <node concept="3XISUE" id="5flih_m2zSc" role="3XIRFZ" />
         <node concept="1_a8vi" id="5flih_m2z_J" role="3XIRFZ">
           <node concept="uSsIJ" id="5flih_m2zGM" role="1_amZ$">
             <node concept="3TlMh9" id="5flih_m2z_M" role="uSsIC">
@@ -14216,7 +14150,7 @@
         <node concept="OjmMv" id="5flih_m2zSK" role="1w35rA">
           <node concept="19SGf9" id="5flih_m2zSL" role="OjmMu">
             <node concept="19SUe$" id="5flih_m2zSM" role="19SJt6">
-              <property role="19SUeA" value=" * Function:    crcSlow()&#13;&#10; * &#13;&#10; * Description: Compute the CRC of a given message.&#13;&#10; *&#13;&#10; * Notes:&#9;&#9;&#13;&#10; *&#13;&#10; * Returns:&#9;&#9;The CRC of the message.&#13;" />
+              <property role="19SUeA" value=" * Compute the CRC of a given message.&#13;&#10; * Returns:&#9;&#9; The CRC of the message.&#13;" />
             </node>
           </node>
         </node>
@@ -14486,11 +14420,14 @@
         <node concept="OjmMv" id="5flih_m2zSP" role="1w35rA">
           <node concept="19SGf9" id="5flih_m2zSQ" role="OjmMu">
             <node concept="19SUe$" id="5flih_m2zSR" role="19SJt6">
-              <property role="19SUeA" value=" * Function:    crcInit()&#13;&#10; * &#13;&#10; * Description: Populate the partial CRC lookup table.&#13;&#10; *&#13;&#10; * Notes:&#9;&#9;This function must be rerun any time the CRC standard&#13;&#10; *&#9;&#9;&#9;&#9; is changed.  If desired, it can be run &quot;offline&quot; and&#13;&#10; *&#9;&#9;&#9;&#9; the table results stored in an embedded system's ROM.&#13;&#13;" />
+              <property role="19SUeA" value=" * Populate the partial CRC lookup table.&#13;&#10; * Notes:&#9;&#9; This function must be rerun any time the CRC standard&#13;&#10; *&#9;&#9;&#9;&#9; is changed.  If desired, it can be run &quot;offline&quot; and&#13;&#10; *&#9;&#9;&#9;&#9; the table results stored in an embedded system's ROM.&#13;&#13;" />
             </node>
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="8eVegzB5hw" role="N3F5h">
+      <property role="TrG5h" value="empty_1461071299987_1" />
     </node>
     <node concept="N3Fnx" id="5flih_m2zEt" role="N3F5h">
       <property role="TrG5h" value="crcFast" />
@@ -14540,7 +14477,6 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
-        <node concept="3XISUE" id="5flih_m2zS3" role="3XIRFZ" />
         <node concept="3XISUE" id="5flih_m2zS4" role="3XIRFZ" />
         <node concept="1_a8vi" id="5flih_m2zF1" role="3XIRFZ">
           <node concept="uSsIJ" id="5flih_m2zHv" role="1_amZ$">
@@ -14644,7 +14580,7 @@
             <node concept="OjmMv" id="5flih_m2zS6" role="1w35rA">
               <node concept="19SGf9" id="5flih_m2zS7" role="OjmMu">
                 <node concept="19SUe$" id="5flih_m2zS8" role="19SJt6">
-                  <property role="19SUeA" value="&#13;&#10;     * Divide the message by the polynomial, a byte at a time.&#13;&#10;     " />
+                  <property role="19SUeA" value="&#13;Divide the message by the polynomial, a byte at a time.&#13;     " />
                 </node>
               </node>
             </node>
@@ -14669,7 +14605,7 @@
             <node concept="OjmMv" id="5flih_m2zSr" role="1w35rA">
               <node concept="19SGf9" id="5flih_m2zSs" role="OjmMu">
                 <node concept="19SUe$" id="5flih_m2zSt" role="19SJt6">
-                  <property role="19SUeA" value="&#13;&#10;     * The final remainder is the CRC.&#13;&#10;     " />
+                  <property role="19SUeA" value="&#13;The final remainder is the CRC.&#13;     " />
                 </node>
               </node>
             </node>
@@ -14685,8 +14621,17 @@
         <node concept="OjmMv" id="5flih_m2zSU" role="1w35rA">
           <node concept="19SGf9" id="5flih_m2zSV" role="OjmMu">
             <node concept="19SUe$" id="5flih_m2zSW" role="19SJt6">
-              <property role="19SUeA" value="********************************************************************&#13;&#10; *&#13;&#10; * Function:    crcFast()&#13;&#10; * &#13;&#10; * Description: Compute the CRC of a given message.&#13;&#10; *&#13;&#10; * Notes:&#9;&#9;crcInit() must be called first.&#13;&#10; *&#13;&#10; * Returns:&#9;&#9;The CRC of the message.&#13;&#10; *&#13;&#10; ********************************************************************&#10; crcFast() " />
+              <property role="19SUeA" value=" * Compute the CRC of a given message.&#13;&#10; * Notes:&#9;&#9;crcInit() must be called first.&#13;&#10; * Returns:&#9;&#9;The CRC of the message.&#13;" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1z9TsT" id="8eVegzBrEo" role="lGtFl">
+      <node concept="OjmMv" id="8eVegzBrEp" role="1w35rA">
+        <node concept="19SGf9" id="8eVegzBrEq" role="OjmMu">
+          <node concept="19SUe$" id="8eVegzBrEr" role="19SJt6">
+            <property role="19SUeA" value="The code below for computing CRC is adapted from the following website:&#10;&#10;http://www.barrgroup.com/Embedded-Systems/How-To/CRC-Calculation-C-Code" />
           </node>
         </node>
       </node>
@@ -14706,7 +14651,7 @@
       <ref role="3GEb4d" node="5flih_m2zwY" resolve="crc" />
     </node>
     <node concept="N3Fnx" id="5flih_m2zvL" role="N3F5h">
-      <property role="TrG5h" value="crc_verificationCase1" />
+      <property role="TrG5h" value="crc_verificationCase" />
       <property role="2OOxQR" value="true" />
       <property role="3owap8" value="false" />
       <node concept="3XIRFW" id="5flih_m2zvS" role="3XIRFX">
@@ -14723,10 +14668,15 @@
               <property role="2hmy$m" value="100" />
             </node>
           </node>
-          <node concept="3o3WLD" id="2nZgViVrRhD" role="3XIe9u">
-            <node concept="3TlMh9" id="2nZgViVrRiP" role="3o3WLE">
-              <property role="2hmy$m" value="0" />
-            </node>
+        </node>
+        <node concept="3XIRlf" id="8eVegzBwih" role="3XIRFZ">
+          <property role="TrG5h" value="MAX_LENGTH" />
+          <node concept="26Vqp4" id="8eVegzBwzb" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="8eVegzBwi_" role="3XIe9u">
+            <property role="2hmy$m" value="20" />
           </node>
         </node>
         <node concept="3XIRlf" id="2nZgViVrSbN" role="3XIRFZ">
@@ -14749,8 +14699,8 @@
                 <node concept="3TlMh9" id="2nZgViVrSmg" role="1vV05J">
                   <property role="2hmy$m" value="0" />
                 </node>
-                <node concept="3TlMh9" id="2nZgViVrSpz" role="1vV05C">
-                  <property role="2hmy$m" value="10" />
+                <node concept="3ZVu4v" id="8eVegzBwiB" role="1vV05C">
+                  <ref role="3ZVs_2" node="8eVegzBwih" resolve="MAX_LENGTH" />
                 </node>
               </node>
               <node concept="3ZVu4v" id="2nZgViVrSl2" role="3TlMhI">
@@ -14818,8 +14768,18 @@
             </node>
             <node concept="3O_q_g" id="2nZgViVrUpj" role="3XIe9u">
               <ref role="3O_q_h" node="5flih_m2z_b" resolve="crcSlow" />
-              <node concept="3ZVu4v" id="2nZgViVrUpk" role="3O_q_j">
-                <ref role="3ZVs_2" node="2nZgViVrR43" resolve="test" />
+              <node concept="1S8S4T" id="8eVegzBtl1" role="3O_q_j">
+                <node concept="3ZVu4v" id="2nZgViVrUpk" role="1S8S4V">
+                  <ref role="3ZVs_2" node="2nZgViVrR43" resolve="test" />
+                </node>
+                <node concept="3wxxNl" id="8eVegzBupL" role="1S8S4N">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <node concept="26Vqp4" id="8eVegzBtJ_" role="2umbIo">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                </node>
               </node>
               <node concept="3ZVu4v" id="2nZgViVrUpl" role="3O_q_j">
                 <ref role="3ZVs_2" node="2nZgViVrSbN" resolve="length" />
@@ -14849,8 +14809,18 @@
             </node>
             <node concept="3O_q_g" id="2nZgViVrV0N" role="3XIe9u">
               <ref role="3O_q_h" node="5flih_m2zEt" resolve="crcFast" />
-              <node concept="3ZVu4v" id="2nZgViVrV0O" role="3O_q_j">
-                <ref role="3ZVs_2" node="2nZgViVrR43" resolve="test" />
+              <node concept="1S8S4T" id="8eVegzBuBh" role="3O_q_j">
+                <node concept="3ZVu4v" id="8eVegzBuBi" role="1S8S4V">
+                  <ref role="3ZVs_2" node="2nZgViVrR43" resolve="test" />
+                </node>
+                <node concept="3wxxNl" id="8eVegzBuBj" role="1S8S4N">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <node concept="26Vqp4" id="8eVegzBuBk" role="2umbIo">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                </node>
               </node>
               <node concept="3ZVu4v" id="2nZgViVrV0P" role="3O_q_j">
                 <ref role="3ZVs_2" node="2nZgViVrSbN" resolve="length" />
@@ -14883,6 +14853,15 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="1z9TsT" id="8eVegzBuOB" role="lGtFl">
+        <node concept="OjmMv" id="8eVegzBuOC" role="1w35rA">
+          <node concept="19SGf9" id="8eVegzBuOD" role="OjmMu">
+            <node concept="19SUe$" id="8eVegzBuOE" role="19SJt6">
+              <property role="19SUeA" value="Verification case for checking the equivalence of the &#10;crcSlow and crcFast algorithms.   " />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="2nZgViVrP0F">
@@ -14908,7 +14887,7 @@
           <node concept="3J0A42" id="2nZgViVrP0M" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <node concept="26Vqp4" id="2nZgViVrP0N" role="2umbIo">
+            <node concept="biTqx" id="8eVegzBphB" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -14918,7 +14897,6 @@
           </node>
         </node>
         <node concept="3XISUE" id="2nZgViVrP0P" role="3XIRFZ" />
-        <node concept="3XISUE" id="2nZgViVrP0Q" role="3XIRFZ" />
         <node concept="1_9egQ" id="2nZgViVrP0R" role="3XIRFZ">
           <node concept="3O_q_g" id="2nZgViVrP0S" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
@@ -14936,7 +14914,7 @@
             <node concept="OjmMv" id="2nZgViVrP0X" role="1w35rA">
               <node concept="19SGf9" id="2nZgViVrP0Y" role="OjmMu">
                 <node concept="19SUe$" id="2nZgViVrP0Z" role="19SJt6">
-                  <property role="19SUeA" value="&#13;&#10;&#9; * Print the check value for the selected CRC algorithm.&#13;&#10;&#9; " />
+                  <property role="19SUeA" value="&#13;Print the check value for the selected CRC algorithm.&#13; " />
                 </node>
               </node>
             </node>
@@ -14951,13 +14929,29 @@
             </node>
             <node concept="3O_q_g" id="2nZgViVrP14" role="3O_q_j">
               <ref role="3O_q_h" node="5flih_m2z_b" resolve="crcSlow" />
-              <node concept="3ZVu4v" id="2nZgViVrP15" role="3O_q_j">
-                <ref role="3ZVs_2" node="2nZgViVrP0L" resolve="test" />
-              </node>
-              <node concept="3O_q_g" id="2nZgViVrP16" role="3O_q_j">
-                <ref role="3O_q_h" to="3y0n:137zkozycMJ" resolve="strlen" />
-                <node concept="3ZVu4v" id="2nZgViVrP17" role="3O_q_j">
+              <node concept="1S8S4T" id="8eVegzBp_y" role="3O_q_j">
+                <node concept="3ZVu4v" id="2nZgViVrP15" role="1S8S4V">
                   <ref role="3ZVs_2" node="2nZgViVrP0L" resolve="test" />
+                </node>
+                <node concept="3wxxNl" id="8eVegzBqOb" role="1S8S4N">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <node concept="26Vqp4" id="8eVegzBpOW" role="2umbIo">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1S8S4T" id="8eVegzBrxv" role="3O_q_j">
+                <node concept="3O_q_g" id="8eVegzBrxw" role="1S8S4V">
+                  <ref role="3O_q_h" to="3y0n:137zkozycMJ" resolve="strlen" />
+                  <node concept="3ZVu4v" id="8eVegzBrxx" role="3O_q_j">
+                    <ref role="3ZVs_2" node="2nZgViVrP0L" resolve="test" />
+                  </node>
+                </node>
+                <node concept="26Vqpb" id="8eVegzBrxy" role="1S8S4N">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
                 </node>
               </node>
             </node>
@@ -14966,7 +14960,7 @@
             <node concept="OjmMv" id="2nZgViVrP19" role="1w35rA">
               <node concept="19SGf9" id="2nZgViVrP1a" role="OjmMu">
                 <node concept="19SUe$" id="2nZgViVrP1b" role="19SJt6">
-                  <property role="19SUeA" value="&#13;&#10;&#9; * Compute the CRC of the test message, slowly.&#13;&#10;&#9; " />
+                  <property role="19SUeA" value="&#13;Compute the CRC of the test message, slowly.&#13;&#9; " />
                 </node>
               </node>
             </node>
@@ -14977,7 +14971,7 @@
           <node concept="OjmMv" id="2nZgViVrP1e" role="3SJzmv">
             <node concept="19SGf9" id="2nZgViVrP1f" role="OjmMu">
               <node concept="19SUe$" id="2nZgViVrP1g" role="19SJt6">
-                <property role="19SUeA" value="* Compute the CRC of the test message, more efficiently.&#13;" />
+                <property role="19SUeA" value="Compute the CRC of the test message, more efficiently.&#13;" />
               </node>
             </node>
           </node>
@@ -14995,13 +14989,29 @@
             </node>
             <node concept="3O_q_g" id="2nZgViVrP1m" role="3O_q_j">
               <ref role="3O_q_h" node="5flih_m2zEt" resolve="crcFast" />
-              <node concept="3ZVu4v" id="2nZgViVrP1n" role="3O_q_j">
-                <ref role="3ZVs_2" node="2nZgViVrP0L" resolve="test" />
-              </node>
-              <node concept="3O_q_g" id="2nZgViVrP1o" role="3O_q_j">
-                <ref role="3O_q_h" to="3y0n:137zkozycMJ" resolve="strlen" />
-                <node concept="3ZVu4v" id="2nZgViVrP1p" role="3O_q_j">
+              <node concept="1S8S4T" id="8eVegzBqUG" role="3O_q_j">
+                <node concept="3ZVu4v" id="8eVegzBqUH" role="1S8S4V">
                   <ref role="3ZVs_2" node="2nZgViVrP0L" resolve="test" />
+                </node>
+                <node concept="3wxxNl" id="8eVegzBqUI" role="1S8S4N">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <node concept="26Vqp4" id="8eVegzBqUJ" role="2umbIo">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1S8S4T" id="8eVegzBrbz" role="3O_q_j">
+                <node concept="3O_q_g" id="2nZgViVrP1o" role="1S8S4V">
+                  <ref role="3O_q_h" to="3y0n:137zkozycMJ" resolve="strlen" />
+                  <node concept="3ZVu4v" id="2nZgViVrP1p" role="3O_q_j">
+                    <ref role="3ZVs_2" node="2nZgViVrP0L" resolve="test" />
+                  </node>
+                </node>
+                <node concept="26Vqpb" id="8eVegzBroU" role="1S8S4N">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
                 </node>
               </node>
             </node>
@@ -15011,15 +15021,6 @@
         <node concept="2BFjQ_" id="2nZgViVrP1r" role="3XIRFZ">
           <node concept="3TlMh9" id="2nZgViVrP1s" role="2BFjQA">
             <property role="2hmy$m" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="1z9TsT" id="2nZgViVrP1t" role="lGtFl">
-        <node concept="OjmMv" id="2nZgViVrP1u" role="1w35rA">
-          <node concept="19SGf9" id="2nZgViVrP1v" role="OjmMu">
-            <node concept="19SUe$" id="2nZgViVrP1w" role="19SJt6">
-              <property role="19SUeA" value=" main() " />
-            </node>
           </node>
         </node>
       </node>
