@@ -21,6 +21,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
+    <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -321,12 +322,12 @@
         <node concept="3cpWs6" id="2n6u7U4MaAW" role="3cqZAp">
           <node concept="2YIFZM" id="2n6u7U4MaB3" role="3cqZAk">
             <ref role="1Pybhc" to="i51s:~AttributeOperations" resolve="AttributeOperations" />
-            <ref role="37wK5l" to="i51s:~AttributeOperations.getPropertyAttributes(org.jetbrains.mps.openapi.model.SNode,java.lang.String):java.lang.Iterable" resolve="getPropertyAttributes" />
+            <ref role="37wK5l" to="i51s:~AttributeOperations.getPropertyAttributes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty):java.lang.Iterable" resolve="getPropertyAttributes" />
             <node concept="1rXfSq" id="2n6u7U4MaAY" role="37wK5m">
               <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
             </node>
-            <node concept="37vLTw" id="2n6u7U4MaAZ" role="37wK5m">
-              <ref role="3cqZAo" node="7Pi_Fu5SfIR" resolve="myPropertyName" />
+            <node concept="37vLTw" id="3wyB$9tpnKC" role="37wK5m">
+              <ref role="3cqZAo" node="7Pi_Fu5SqjZ" resolve="myPropertyDeclaration" />
             </node>
           </node>
         </node>
