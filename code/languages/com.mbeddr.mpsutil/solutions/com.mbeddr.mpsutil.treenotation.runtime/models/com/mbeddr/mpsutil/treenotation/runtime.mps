@@ -617,8 +617,8 @@
                         <node concept="1rXfSq" id="JAaUnmQDzc" role="37wK5m">
                           <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                         </node>
-                        <node concept="37vLTw" id="JAaUnmQEry" role="37wK5m">
-                          <ref role="3cqZAo" node="7GMtHW6y48N" resolve="myInsertHandler" />
+                        <node concept="37vLTw" id="JAaUnmRgkr" role="37wK5m">
+                          <ref role="3cqZAo" node="7GMtHW6xZR3" resolve="insertHandler" />
                         </node>
                         <node concept="37vLTw" id="JAaUnmQF8g" role="37wK5m">
                           <ref role="3cqZAo" node="7GMtHW6ymYK" resolve="i" />
