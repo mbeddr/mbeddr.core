@@ -319,7 +319,7 @@
   </node>
   <node concept="1TIwiD" id="3kEjc_WJ4o9">
     <property role="3GE5qa" value="arbitraryText" />
-    <property role="TrG5h" value="AbritraryTextItem" />
+    <property role="TrG5h" value="ArbitraryTextItem" />
     <property role="34LRSv" value="&quot;" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="1310289198" />

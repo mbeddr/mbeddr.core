@@ -1511,7 +1511,7 @@
   </node>
   <node concept="1TIwiD" id="76hx8dKhwZW">
     <property role="1pbfSe" value="505965441" />
-    <property role="TrG5h" value="AbritraryTextContent" />
+    <property role="TrG5h" value="ArbitraryTextContent" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5soFcYDEU27" role="1TKVEl">
       <property role="TrG5h" value="requiredStdHeader" />
