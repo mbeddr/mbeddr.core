@@ -2,9 +2,9 @@
 <model ref="r:55549eb8-b827-44b3-bd84-ef3114bd2fe2(com.mbeddr.mpsutil.treenotation.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -169,7 +169,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -5190,7 +5190,7 @@
         <node concept="3clFbF" id="7GMtHW6tdZf" role="3cqZAp">
           <node concept="37vLTI" id="7GMtHW6tefL" role="3clFbG">
             <node concept="3cmrfG" id="7GMtHW6tenH" role="37vLTx">
-              <property role="3cmrfH" value="10" />
+              <property role="3cmrfH" value="13" />
             </node>
             <node concept="37vLTw" id="7GMtHW6teMU" role="37vLTJ">
               <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
@@ -5200,7 +5200,7 @@
         <node concept="3clFbF" id="7GMtHW6teCm" role="3cqZAp">
           <node concept="37vLTI" id="7GMtHW6tfbn" role="3clFbG">
             <node concept="3cmrfG" id="7GMtHW6tfjj" role="37vLTx">
-              <property role="3cmrfH" value="10" />
+              <property role="3cmrfH" value="13" />
             </node>
             <node concept="37vLTw" id="7GMtHW6teXj" role="37vLTJ">
               <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
@@ -6095,7 +6095,7 @@
                       <node concept="3clFbF" id="7CiTYi$xgkI" role="3cqZAp">
                         <node concept="37vLTI" id="7CiTYi$xgv$" role="3clFbG">
                           <node concept="3b6qkQ" id="7CiTYi$xgLl" role="37vLTx">
-                            <property role="$nhwW" value="0.2" />
+                            <property role="$nhwW" value="0.5" />
                           </node>
                           <node concept="37vLTw" id="7CiTYi$xgkG" role="37vLTJ">
                             <ref role="3cqZAo" node="7GMtHW6t7N$" resolve="opacity" />
