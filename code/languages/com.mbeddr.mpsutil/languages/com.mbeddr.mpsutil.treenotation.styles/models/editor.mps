@@ -80,7 +80,7 @@
       <property role="TrG5h" value="tree-level-spacing" />
       <node concept="10Oyi0" id="7uOgiTdCl8" role="3t5Oan" />
       <node concept="3cmrfG" id="7uOgiTdCle" role="3t49C2">
-        <property role="3cmrfH" value="20" />
+        <property role="3cmrfH" value="35" />
       </node>
     </node>
     <node concept="3t5Usi" id="7uOgiTdLM0" role="V601i">
