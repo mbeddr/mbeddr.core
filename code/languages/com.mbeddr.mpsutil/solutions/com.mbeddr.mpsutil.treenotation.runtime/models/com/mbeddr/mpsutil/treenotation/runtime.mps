@@ -23,6 +23,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1466,6 +1467,49 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3a$gLzvz_2l" role="3cqZAp">
+          <node concept="3cpWsn" id="3a$gLzvz_2m" role="3cpWs9">
+            <property role="TrG5h" value="button" />
+            <node concept="3uibUv" id="3a$gLzvz_2h" role="1tU5fm">
+              <ref role="3uigEE" node="JAaUnmWSU9" resolve="FoldButton" />
+            </node>
+            <node concept="2ShNRf" id="3a$gLzvz_2n" role="33vP2m">
+              <node concept="1pGfFk" id="3a$gLzvz_2o" role="2ShVmc">
+                <ref role="37wK5l" node="JAaUnmWT69" resolve="FoldButton" />
+                <node concept="1rXfSq" id="3a$gLzvz_2p" role="37wK5m">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
+                </node>
+                <node concept="1rXfSq" id="3a$gLzvz_2q" role="37wK5m">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                </node>
+                <node concept="Xjq3P" id="3a$gLzvz_2r" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3a$gLzvz_yx" role="3cqZAp">
+          <node concept="2OqwBi" id="3a$gLzvzA77" role="3clFbG">
+            <node concept="2OqwBi" id="3a$gLzvz_NP" role="2Oq$k0">
+              <node concept="37vLTw" id="3a$gLzvz_yv" role="2Oq$k0">
+                <ref role="3cqZAo" node="3a$gLzvz_2m" resolve="button" />
+              </node>
+              <node concept="liA8E" id="3a$gLzvzA5g" role="2OqNvi">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3a$gLzvzAeL" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+              <node concept="10M0yZ" id="3a$gLzvzBJ1" role="37wK5m">
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.HORIZONTAL_ALIGN" resolve="HORIZONTAL_ALIGN" />
+              </node>
+              <node concept="Rm8GO" id="3a$gLzvzCdS" role="37wK5m">
+                <ref role="Rm8GQ" to="5ueo:~CellAlign.CENTER" resolve="CENTER" />
+                <ref role="1Px2BO" to="5ueo:~CellAlign" resolve="CellAlign" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="JAaUnmZnbS" role="3cqZAp">
           <node concept="2OqwBi" id="JAaUnmZnt_" role="3clFbG">
             <node concept="37vLTw" id="JAaUnmZnbQ" role="2Oq$k0">
@@ -1473,17 +1517,8 @@
             </node>
             <node concept="liA8E" id="JAaUnmZnXt" role="2OqNvi">
               <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
-              <node concept="2ShNRf" id="JAaUnmZoaX" role="37wK5m">
-                <node concept="1pGfFk" id="JAaUnmZpca" role="2ShVmc">
-                  <ref role="37wK5l" node="JAaUnmWT69" resolve="FoldButton" />
-                  <node concept="1rXfSq" id="JAaUnmZppi" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
-                  </node>
-                  <node concept="1rXfSq" id="JAaUnmZpP8" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
-                  </node>
-                  <node concept="Xjq3P" id="JAaUnmZq5s" role="37wK5m" />
-                </node>
+              <node concept="37vLTw" id="3a$gLzvz_2s" role="37wK5m">
+                <ref role="3cqZAo" node="3a$gLzvz_2m" resolve="button" />
               </node>
             </node>
           </node>
