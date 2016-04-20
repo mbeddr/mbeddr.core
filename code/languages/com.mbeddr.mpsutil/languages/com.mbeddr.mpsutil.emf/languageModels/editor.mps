@@ -2,7 +2,7 @@
 <model ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:3c6acf8c-1911-4c08-bc27-b164ec3f3d05(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -210,16 +210,16 @@
   </node>
   <node concept="24kQdi" id="4hKCzQxfRnF">
     <property role="3GE5qa" value="importing" />
-    <ref role="1XX52x" to="mwn6:3b7nTxBYUrf" resolve="EMFImportConfig" />
+    <ref role="1XX52x" to="mwn6:3b7nTxBYUrf" resolve="EcoreImportConfiguration" />
     <node concept="3EZMnI" id="4hKCzQxfRnM" role="2wV5jI">
       <node concept="2iRkQZ" id="4hKCzQxfRnN" role="2iSdaV" />
       <node concept="3F0ifn" id="4hKCzQxfRnH" role="3EZMnx">
-        <property role="3F0ifm" value="EMF Import Configuration" />
+        <property role="3F0ifm" value="Ecore Import Configuration" />
       </node>
       <node concept="3EZMnI" id="4hKCzQxfRo7" role="3EZMnx">
         <node concept="2iRfu4" id="4hKCzQxfRo8" role="2iSdaV" />
         <node concept="3F0ifn" id="4hKCzQxfRo0" role="3EZMnx">
-          <property role="3F0ifm" value="ecore file:" />
+          <property role="3F0ifm" value="Ecore file:" />
         </node>
         <node concept="3F1sOY" id="4hKCzQxfRov" role="3EZMnx">
           <ref role="1NtTu8" to="mwn6:4hKCzQxeDXM" />
@@ -247,7 +247,7 @@
       <node concept="3EZMnI" id="4RZY65cAqCW" role="3EZMnx">
         <node concept="2iRfu4" id="4RZY65cAqCX" role="2iSdaV" />
         <node concept="3F0ifn" id="4RZY65cAqAU" role="3EZMnx">
-          <property role="3F0ifm" value="Package ecore File:" />
+          <property role="3F0ifm" value="Metamodel:" />
         </node>
         <node concept="3F1sOY" id="4RZY65cAqDG" role="3EZMnx">
           <ref role="1NtTu8" to="mwn6:4hKCzQxeDXM" />

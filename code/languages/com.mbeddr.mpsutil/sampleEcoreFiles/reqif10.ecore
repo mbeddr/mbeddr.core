@@ -1,0 +1,1738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="reqif10" nsURI="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd"
+    nsPrefix="reqif">
+  <eClassifiers xsi:type="ecore:EClass" name="AccessControlledElement" abstract="true"
+      eSuperTypes="#//Identifiable">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ACCESS-CONTROLLED-ELEMENT"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ACCESS-CONTROLLED-ELEMENT"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="editable" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="IS-EDITABLE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="IS-EDITABLE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Identifiable" abstract="true">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="IDENTIFIABLE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="IDENTIFIABLE"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="desc" ordered="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DESC"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DESC"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" ordered="false"
+        lowerBound="1" eType="#//ID" unsettable="true" iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="IDENTIFIER"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="IDENTIFIER"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastChange" ordered="false"
+        lowerBound="1" eType="#//DateTime" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="LAST-CHANGE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="LAST-CHANGE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="longName" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="LONG-NAME"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="LONG-NAME"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alternativeID" ordered="false"
+        eType="#//AlternativeID" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="ALTERNATIVE-ID"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="ALTERNATIVE-ID"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueXHTML" eSuperTypes="#//AttributeValue">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-XHTML"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-XHTML"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="simplified" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="IS-SIMPLIFIED"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="IS-SIMPLIFIED"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionXHTML" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theOriginalValue" ordered="false"
+        eType="#//XhtmlContent" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-ORIGINAL-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-ORIGINAL-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theValue" ordered="false"
+        lowerBound="1" eType="#//XhtmlContent" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValue" abstract="true">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecElementWithAttributes" abstract="true"
+      eSuperTypes="#//Identifiable">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-ELEMENT-WITH-ATTRIBUTES"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-ELEMENT-WITH-ATTRIBUTES"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" ordered="false"
+        upperBound="-1" eType="#//AttributeValue" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="VALUES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="VALUES"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionXHTML" eSuperTypes="#//AttributeDefinition">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-XHTML"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-XHTML"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionXHTML" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueXHTML" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinition" abstract="true"
+      eSuperTypes="#//AccessControlledElement">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecType" abstract="true" eSuperTypes="#//Identifiable">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-TYPE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-TYPE"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specAttributes" ordered="false"
+        upperBound="-1" eType="#//AttributeDefinition" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPEC-ATTRIBUTES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPEC-ATTRIBUTES"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReqIFContent">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="REQ-IF-CONTENT"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="REQ-IF-CONTENT"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datatypes" ordered="false"
+        upperBound="-1" eType="#//DatatypeDefinition" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DATATYPES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DATATYPES"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specTypes" ordered="false"
+        upperBound="-1" eType="#//SpecType" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPEC-TYPES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPEC-TYPES"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specObjects" ordered="false"
+        upperBound="-1" eType="#//SpecObject" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPEC-OBJECTS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPEC-OBJECTS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specRelations" ordered="false"
+        upperBound="-1" eType="#//SpecRelation" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPEC-RELATIONS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPEC-RELATIONS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifications" ordered="false"
+        upperBound="-1" eType="#//Specification" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPECIFICATIONS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPECIFICATIONS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specRelationGroups" ordered="false"
+        upperBound="-1" eType="#//RelationGroup" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPEC-RELATION-GROUPS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPEC-RELATION-GROUPS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReqIF">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="REQ-IF"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="REQ-IF"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lang" ordered="false" eType="ecore:EDataType http://www.w3.org/XML/1998/namespace#//LangType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="lang"/>
+        <details key="kind" value="attribute"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theHeader" ordered="false"
+        lowerBound="1" eType="#//ReqIFHeader" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-HEADER"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-HEADER"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coreContent" ordered="false"
+        lowerBound="1" eType="#//ReqIFContent" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CORE-CONTENT"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="CORE-CONTENT"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toolExtensions" ordered="false"
+        upperBound="-1" eType="#//ReqIFToolExtension" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TOOL-EXTENSIONS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TOOL-EXTENSIONS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReqIFHeader">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="REQ-IF-HEADER"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="REQ-IF-HEADER"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="COMMENT"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="COMMENT"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationTime" ordered="false"
+        lowerBound="1" eType="#//DateTime" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CREATION-TIME"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="CREATION-TIME"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" ordered="false"
+        lowerBound="1" eType="#//ID" unsettable="true" iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="IDENTIFIER"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="IDENTIFIER"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repositoryId" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="REPOSITORY-ID"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="REPOSITORY-ID"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reqIFToolId" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="REQ-IF-TOOL-ID"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="REQ-IF-TOOL-ID"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reqIFVersion" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="REQ-IF-VERSION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="REQ-IF-VERSION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceToolId" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SOURCE-TOOL-ID"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SOURCE-TOOL-ID"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TITLE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TITLE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReqIFToolExtension">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="REQ-IF-TOOL-EXTENSION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="REQ-IF-TOOL-EXTENSION"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensions" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" unsettable="true"
+        containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="EXTENSIONS"/>
+        <details key="kind" value="elementWildcard"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="precessing" value="lax"/>
+        <details key="wildcards" value="##other"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="EXTENSIONS"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecObject" eSuperTypes="#//SpecElementWithAttributes">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-OBJECT"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-OBJECT"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//SpecObjectType" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecObjectType" eSuperTypes="#//SpecType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-OBJECT-TYPE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-OBJECT-TYPE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Specification" eSuperTypes="#//SpecElementWithAttributes">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPECIFICATION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPECIFICATION"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//SpecificationType" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//SpecHierarchy" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CHILDREN"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="CHILDREN"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecificationType" eSuperTypes="#//SpecType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPECIFICATION-TYPE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPECIFICATION-TYPE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecHierarchy" eSuperTypes="#//AccessControlledElement">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-HIERARCHY"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-HIERARCHY"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tableInternal" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="IS-TABLE-INTERNAL"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="IS-TABLE-INTERNAL"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="object" ordered="false"
+        lowerBound="1" eType="#//SpecObject" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="OBJECT"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="OBJECT"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//SpecHierarchy" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="CHILDREN"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="CHILDREN"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="editableAtts" ordered="false"
+        upperBound="-1" eType="#//AttributeDefinition" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="EDITABLE-ATTS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="EDITABLE-ATTS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinition" abstract="true"
+      eSuperTypes="#//Identifiable">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecRelation" eSuperTypes="#//SpecElementWithAttributes">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-RELATION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-RELATION"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" ordered="false"
+        lowerBound="1" eType="#//SpecObject" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TARGET"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TARGET"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" ordered="false"
+        lowerBound="1" eType="#//SpecObject" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SOURCE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SOURCE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//SpecRelationType" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecRelationType" eSuperTypes="#//SpecType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SPEC-RELATION-TYPE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="SPEC-RELATION-TYPE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationGroup" eSuperTypes="#//Identifiable">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RELATION-GROUP"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="RELATION-GROUP"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specRelations" ordered="false"
+        upperBound="-1" eType="#//SpecRelation" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPEC-RELATIONS"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPEC-RELATIONS"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//RelationGroupType" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceSpecification" ordered="false"
+        lowerBound="1" eType="#//Specification" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SOURCE-SPECIFICATION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SOURCE-SPECIFICATION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetSpecification" ordered="false"
+        lowerBound="1" eType="#//Specification" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TARGET-SPECIFICATION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TARGET-SPECIFICATION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationGroupType" eSuperTypes="#//SpecType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RELATION-GROUP-TYPE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="RELATION-GROUP-TYPE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionXHTML" eSuperTypes="#//DatatypeDefinition">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-XHTML"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-XHTML"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AlternativeID">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ALTERNATIVE-ID"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ALTERNATIVE-ID"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="IDENTIFIER"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="IDENTIFIER"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionBoolean" eSuperTypes="#//AttributeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-BOOLEAN"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-BOOLEAN"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionBoolean" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueBoolean" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionSimple" abstract="true"
+      eSuperTypes="#//AttributeDefinition">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-SIMPLE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-SIMPLE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionBoolean" eSuperTypes="#//DatatypeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-BOOLEAN"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-BOOLEAN"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionSimple" abstract="true"
+      eSuperTypes="#//DatatypeDefinition">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-SIMPLE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-SIMPLE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueBoolean" eSuperTypes="#//AttributeValueSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-BOOLEAN"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-BOOLEAN"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="theValue" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-VALUE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionBoolean" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueSimple" abstract="true"
+      eSuperTypes="#//AttributeValue">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-SIMPLE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-SIMPLE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionDate" eSuperTypes="#//AttributeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-DATE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-DATE"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionDate" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueDate" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionDate" eSuperTypes="#//DatatypeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-DATE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-DATE"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueDate" eSuperTypes="#//AttributeValueSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-DATE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-DATE"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="theValue" ordered="false"
+        lowerBound="1" eType="#//DateTime" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-VALUE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionDate" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionEnumeration" eSuperTypes="#//AttributeDefinition">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-ENUMERATION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-ENUMERATION"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiValued" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MULTI-VALUED"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="MULTI-VALUED"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionEnumeration" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueEnumeration" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionEnumeration" eSuperTypes="#//DatatypeDefinition">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-ENUMERATION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-ENUMERATION"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiedValues" upperBound="-1"
+        eType="#//EnumValue" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="SPECIFIED-VALUES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="SPECIFIED-VALUES"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumValue" eSuperTypes="#//Identifiable">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUM-VALUE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ENUM-VALUE"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" ordered="false"
+        lowerBound="1" eType="#//EmbeddedValue" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="PROPERTIES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="PROPERTIES"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EmbeddedValue">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="EMBEDDED-VALUE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="EMBEDDED-VALUE"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="KEY"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="KEY"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherContent" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="OTHER-CONTENT"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="OTHER-CONTENT"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueEnumeration" eSuperTypes="#//AttributeValue">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-ENUMERATION"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-ENUMERATION"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" ordered="false"
+        upperBound="-1" eType="#//EnumValue" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="VALUES"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="VALUES"/>
+        <details key="featureWrapperElement" value="true"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionEnumeration" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionInteger" eSuperTypes="#//AttributeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-INTEGER"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-INTEGER"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionInteger" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueInteger" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionInteger" eSuperTypes="#//DatatypeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-INTEGER"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-INTEGER"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MAX"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="MAX"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="min" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MIN"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="MIN"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueInteger" eSuperTypes="#//AttributeValueSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-INTEGER"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-INTEGER"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="theValue" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-VALUE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionInteger" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionReal" eSuperTypes="#//AttributeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-REAL"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-REAL"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionReal" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueReal" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionReal" eSuperTypes="#//DatatypeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-REAL"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-REAL"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accuracy" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="ACCURACY"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="ACCURACY"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MAX"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="MAX"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="min" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MIN"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="MIN"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueReal" eSuperTypes="#//AttributeValueSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-REAL"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-REAL"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="theValue" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-VALUE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionReal" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDefinitionString" eSuperTypes="#//AttributeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-DEFINITION-STRING"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-DEFINITION-STRING"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1"
+        eType="#//DatatypeDefinitionString" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="TYPE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="TYPE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
+        eType="#//AttributeValueString" unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFAULT-VALUE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFAULT-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeDefinitionString" eSuperTypes="#//DatatypeDefinitionSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DATATYPE-DEFINITION-STRING"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="DATATYPE-DEFINITION-STRING"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxLength" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="MAX-LENGTH"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="MAX-LENGTH"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueString" eSuperTypes="#//AttributeValueSimple">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ATTRIBUTE-VALUE-STRING"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="ATTRIBUTE-VALUE-STRING"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="theValue" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="THE-VALUE"/>
+        <details key="kind" value="attribute"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="THE-VALUE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" ordered="false"
+        lowerBound="1" eType="#//AttributeDefinitionString" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="DEFINITION"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="DEFINITION"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+        <details key="classifierNameSuffix" value="-REF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="XhtmlContent">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="XHTML-CONTENT"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+      <details key="wrapperName" value="XHTML-CONTENT"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xhtml" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        unsettable="true" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="XHTML"/>
+        <details key="kind" value="elementWildcard"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="precessing" value="lax"/>
+        <details key="wildcards" value="http://www.w3.org/1999/xhtml"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="XHTML"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="false"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xhtmlSource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        transient="true" unsettable="true" derived="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="XHTML-SOURCE"/>
+        <details key="kind" value="element"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/sphinx/emf/serialization/XMLPersistenceMappingExtendedMetaData">
+        <details key="wrapperName" value="XHTML-SOURCE"/>
+        <details key="featureWrapperElement" value="false"/>
+        <details key="featureElement" value="true"/>
+        <details key="classifierWrapperElement" value="false"/>
+        <details key="classifierElement" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DateTime" instanceClassName="java.util.GregorianCalendar"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="ID" instanceClassName="java.lang.String"/>
+</ecore:EPackage>
