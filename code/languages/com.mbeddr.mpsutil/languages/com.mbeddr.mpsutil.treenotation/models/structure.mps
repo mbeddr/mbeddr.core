@@ -263,5 +263,14 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4Q9g1gQOGvj">
+    <property role="1pbfSe" value="2074343449" />
+    <property role="TrG5h" value="SubconceptsInsertHandler" />
+    <property role="34LRSv" value="subconcepts" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4Q9g1gQOGvk" role="PzmwI">
+      <ref role="PrY4T" node="4Q9g1gQN5nv" resolve="IInsertHandler" />
+    </node>
+  </node>
 </model>
 

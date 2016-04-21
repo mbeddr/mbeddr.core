@@ -169,6 +169,7 @@
         <property id="5587067268292695547" name="description" index="1VhhnJ" />
         <child id="5587067268292695525" name="insertFunction" index="1VhhnL" />
       </concept>
+      <concept id="5587067268293117907" name="com.mbeddr.mpsutil.treenotation.structure.SubconceptsInsertHandler" flags="ng" index="1VmSv7" />
       <concept id="8877288515762046938" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_edges" flags="ng" index="1X_b45" />
       <concept id="8877288515762041727" name="com.mbeddr.mpsutil.treenotation.structure.ShapeReference" flags="ng" index="1X_cmw">
         <reference id="8877288515762041730" name="shape" index="1X_clt" />
@@ -517,6 +518,7 @@
           <node concept="3clFbS" id="4Q9g1gQNey5" role="2VODD2" />
         </node>
       </node>
+      <node concept="1VmSv7" id="4Q9g1gQPDVP" role="1Vhs_Z" />
     </node>
   </node>
   <node concept="1X_dKu" id="7k8R9gKN2ah">
