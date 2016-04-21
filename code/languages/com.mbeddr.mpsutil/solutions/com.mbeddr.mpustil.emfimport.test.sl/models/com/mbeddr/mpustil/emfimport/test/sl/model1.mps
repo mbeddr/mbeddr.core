@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2957df97-b562-42c7-b418-54e1bbbc0390(com.mbeddr.mpsutil.emf.importing.test.solution.model)">
+<model ref="r:8b62a029-31a7-40d3-9dcb-e3bd016a0e42(com.mbeddr.mpustil.emfimport.test.sl.model1)">
   <persistence version="9" />
   <languages>
     <use id="9e3f6ddb-4034-47f7-acdd-634884e64759" name="com.mbeddr.mpsutil.emf" version="0" />
-    <use id="c87e78ae-02e7-4a44-931d-475ba0c82619" name="com.mbeddr.mpsutil.emf.importing.test.lang" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
   </languages>
   <imports />
@@ -34,32 +33,24 @@
         <child id="5007291172630490329" name="modelFilePicker" index="3EUTgj" />
       </concept>
     </language>
-    <language id="c87e78ae-02e7-4a44-931d-475ba0c82619" name="com.mbeddr.mpsutil.emf.importing.test.lang">
-      <concept id="5620483956762349477" name="com.mbeddr.mpsutil.emf.importing.test.lang.structure.League" flags="ng" index="1pvv4">
-        <property id="5620483956762349480" name="name" index="1pvv9" />
-      </concept>
-    </language>
   </registry>
-  <node concept="3EUTgo" id="4lXucEJ_XaO">
-    <node concept="3NXOOs" id="4lXucEJ_XaP" role="3EUTgj">
+  <node concept="3EUTgo" id="5j66H6LlKx$">
+    <node concept="3NXOOs" id="5j66H6LlKx_" role="3_izPf">
       <property role="1RwFax" value="true" />
       <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="../../languages/com.mbeddr.mpsutil.emf.importing.test.lang/sample/league.bowling" />
+      <property role="3N1Lgt" value="../../sampleEcoreFiles/reqif10.ecore" />
     </node>
-    <node concept="pHN19" id="4lXucEJACaV" role="3ETLbf">
-      <node concept="2V$Bhx" id="4lXucEJACb6" role="2V$M_3">
-        <property role="2V$B1T" value="c87e78ae-02e7-4a44-931d-475ba0c82619" />
-        <property role="2V$B1Q" value="com.mbeddr.mpsutil.emf.importing.test.lang" />
+    <node concept="3NXOOs" id="5j66H6LlKxA" role="3EUTgj">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="../../sampleEcoreFiles/rk_byteExport.reqif" />
+    </node>
+    <node concept="pHN19" id="5j66H6LlKxB" role="3ETLbf">
+      <node concept="2V$Bhx" id="5j66H6LlKzQ" role="2V$M_3">
+        <property role="2V$B1T" value="28b418a2-0832-4a2c-8bfc-a90b126868af" />
+        <property role="2V$B1Q" value="com.mbeddr.mpsutil.emfimport.test.lang" />
       </node>
     </node>
-    <node concept="3NXOOs" id="4RZY65cAAyc" role="3_izPf">
-      <property role="1RwFax" value="true" />
-      <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="../../languages/com.mbeddr.mpsutil.emf.importing.test.lang/sample/bowling.ecore" />
-    </node>
-  </node>
-  <node concept="1pvv4" id="29FqClhb2kl">
-    <property role="1pvv9" value="fghfhg" />
   </node>
 </model>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:373c3635-ea49-4a35-a771-b4dcd5525e99(com.mbeddr.mpsutil.emf.importing.propspool.editor)">
+<model ref="r:788cdf70-b97c-4aaf-9e9d-b0dd1df3627c(com.mbeddr.mpsutil.emfimport.test.lang.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
