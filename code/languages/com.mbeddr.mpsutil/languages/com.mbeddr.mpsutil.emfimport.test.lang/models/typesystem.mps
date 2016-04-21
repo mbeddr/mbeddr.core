@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bd4b1e1f-6775-4d8f-8416-1e49aa32ec3d(com.mbeddr.mpsutil.emfimport.test.lang.typesystem)">
+<model ref="r:20c2352c-219f-4aa6-a3ef-513bf5899b15(com.mbeddr.mpsutil.emfimport.test.lang.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />

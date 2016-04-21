@@ -222,7 +222,7 @@
           <property role="3F0ifm" value="Ecore file:" />
         </node>
         <node concept="3F1sOY" id="4hKCzQxfRov" role="3EZMnx">
-          <ref role="1NtTu8" to="mwn6:4hKCzQxeDXM" />
+          <ref role="1NtTu8" to="mwn6:6tLo6yXgbQy" />
         </node>
       </node>
     </node>
@@ -250,7 +250,7 @@
           <property role="3F0ifm" value="Metamodel:" />
         </node>
         <node concept="3F1sOY" id="4RZY65cAqDG" role="3EZMnx">
-          <ref role="1NtTu8" to="mwn6:4hKCzQxeDXM" />
+          <ref role="1NtTu8" to="mwn6:6tLo6yXgbQy" />
         </node>
       </node>
       <node concept="3EZMnI" id="4lXucEJAAAU" role="3EZMnx">
