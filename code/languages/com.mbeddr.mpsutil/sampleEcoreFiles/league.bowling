@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de.molotnikov.example.bowling:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:de.molotnikov.example.bowling="http://de/molotnikov/example/bowling" name="First League">
+  <players name="Miyamoto"/>
+  <players name="Charabini"/>
+</de.molotnikov.example.bowling:League>

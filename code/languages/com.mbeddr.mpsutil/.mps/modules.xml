@@ -95,6 +95,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.suppresswarning.gen/com.mbeddr.mpsutil.suppresswarning.gen.mpl" folder="suppresswarning" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.suppresswarning/com.mbeddr.mpsutil.suppresswarning.mpl" folder="suppresswarning" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.testScope/com.mbeddr.mpsutil.testScope.mpl" folder="testScope" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.treenotation.sandboxlang/com.mbeddr.mpsutil.treenotation.sandboxlang.mpl" folder="treenotation" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.treenotation.styles/com.mbeddr.mpsutil.treenotation.styles.mpl" folder="treenotation" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.treenotation/com.mbeddr.mpsutil.treenotation.mpl" folder="treenotation" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles.buildutils/com.mbeddr.mpsutil.userstyles.buildutils.mpl" folder="userstyles" />
@@ -177,6 +180,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.targetchooser/com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test.util/com.mbeddr.mpsutil.test.util.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.runtime/com.mbeddr.mpsutil.treenotation.runtime.msd" folder="treenotation" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.sandbox/com.mbeddr.mpsutil.treenotation.sandbox.msd" folder="treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.runtime/com.mbeddr.mpsutil.userstyles.runtime.msd" folder="userstyles" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.sandbox/com.mbeddr.mpsutil.userstyles.sandbox.msd" folder="userstyles" />

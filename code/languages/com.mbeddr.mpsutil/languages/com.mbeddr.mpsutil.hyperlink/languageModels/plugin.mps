@@ -1351,8 +1351,13 @@
               <node concept="3VsKOn" id="80_psC63ef" role="37wK5m">
                 <ref role="3VsUkX" to="exr9:~EditorComponent" resolve="EditorComponent" />
               </node>
-              <node concept="37vLTw" id="80_psC63eg" role="37wK5m">
-                <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
+              <node concept="2OqwBi" id="7CiTYi$_IKA" role="37wK5m">
+                <node concept="37vLTw" id="80_psC63eg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
+                </node>
+                <node concept="liA8E" id="7CiTYi$_JqH" role="2OqNvi">
+                  <ref role="37wK5l" to="mpcv:~Reference.get():java.lang.Object" resolve="get" />
+                </node>
               </node>
               <node concept="Xl_RD" id="80_psC63eh" role="37wK5m">
                 <property role="Xl_RC" value="myReferenceUnderliner" />
@@ -1406,8 +1411,13 @@
               <node concept="3VsKOn" id="80_psC6hnB" role="37wK5m">
                 <ref role="3VsUkX" to="exr9:~EditorComponent" resolve="EditorComponent" />
               </node>
-              <node concept="37vLTw" id="80_psC6hnC" role="37wK5m">
-                <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
+              <node concept="2OqwBi" id="7CiTYi$_Iru" role="37wK5m">
+                <node concept="37vLTw" id="80_psC6hnC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="80_psBUzlv" resolve="myEditorComponent" />
+                </node>
+                <node concept="liA8E" id="7CiTYi$_IDN" role="2OqNvi">
+                  <ref role="37wK5l" to="mpcv:~Reference.get():java.lang.Object" resolve="get" />
+                </node>
               </node>
               <node concept="Xl_RD" id="80_psC6hnD" role="37wK5m">
                 <property role="Xl_RC" value="myReferenceUnderliner" />
