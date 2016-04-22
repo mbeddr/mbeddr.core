@@ -1455,6 +1455,34 @@
           </node>
         </node>
         <node concept="3clFbH" id="2hSqXWTvwuV" role="3cqZAp" />
+        <node concept="3cpWs8" id="2nZgViVsonE" role="3cqZAp">
+          <node concept="3cpWsn" id="2nZgViVsonF" role="3cpWs9">
+            <property role="TrG5h" value="res5" />
+            <node concept="3uibUv" id="2nZgViVsonG" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="2nZgViVsonH" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2nZgViVsonI" role="37wK5m">
+                <ref role="3cqZAo" node="2hSqXWTuARH" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2nZgViVsonJ" role="37wK5m">
+                <property role="Xl_RC" value="Assert: x &gt; 100 &amp;&amp; x &lt; 105" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2nZgViVsonK" role="3cqZAp">
+          <node concept="2OqwBi" id="2nZgViVsonL" role="3vwVQn">
+            <node concept="3cpWsa" id="2nZgViVsonM" role="2Oq$k0">
+              <ref role="3cqZAo" node="2nZgViVsonF" resolve="res5" />
+            </node>
+            <node concept="liA8E" id="2nZgViVsonN" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1LZb2c" id="2hSqXWTvWjS" role="1SL9yI">

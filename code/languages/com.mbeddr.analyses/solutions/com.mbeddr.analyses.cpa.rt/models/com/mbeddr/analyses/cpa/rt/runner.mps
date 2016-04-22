@@ -304,83 +304,6 @@
   <node concept="312cEu" id="4eGZRCPQwx1">
     <property role="TrG5h" value="CPARunner" />
     <node concept="2tJIrI" id="4eGZRCPQwxl" role="jymVt" />
-    <node concept="2YIFZL" id="4eGZRCPQwxw" role="jymVt">
-      <property role="TrG5h" value="main" />
-      <node concept="3cqZAl" id="4eGZRCPQwxy" role="3clF45" />
-      <node concept="3Tm1VV" id="4eGZRCPQwxz" role="1B3o_S" />
-      <node concept="3clFbS" id="4eGZRCPQwx$" role="3clF47">
-        <node concept="3cpWs8" id="4eGZRCPQ_v_" role="3cqZAp">
-          <node concept="3cpWsn" id="4eGZRCPQ_vC" role="3cpWs9">
-            <property role="TrG5h" value="options" />
-            <node concept="3rvAFt" id="4eGZRCPQ_vv" role="1tU5fm">
-              <node concept="17QB3L" id="4eGZRCPQ_xf" role="3rvSg0" />
-              <node concept="17QB3L" id="4eGZRCPQ_w$" role="3rvQeY" />
-            </node>
-            <node concept="1rXfSq" id="8sjE2YGcai" role="33vP2m">
-              <ref role="37wK5l" node="5kIX9cj0Dqv" resolve="getOptions" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4BmZfiOgJ5t" role="3cqZAp">
-          <node concept="3cpWsn" id="4BmZfiOgJ5u" role="3cpWs9">
-            <property role="TrG5h" value="files" />
-            <node concept="17QB3L" id="4BmZfiOgJ5s" role="1tU5fm" />
-            <node concept="Xl_RD" id="4BmZfiOgJ5v" role="33vP2m">
-              <property role="Xl_RC" value="D:\\x\\verification_tools\\cpa_checker-1.4_svcomp16c\\doc\\mbeddr_examples\\first.c" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4BmZfiOgB3q" role="3cqZAp">
-          <node concept="3cpWsn" id="4BmZfiOgB3r" role="3cpWs9">
-            <property role="TrG5h" value="result" />
-            <node concept="3uibUv" id="4BmZfiOgB3s" role="1tU5fm">
-              <ref role="3uigEE" to="k0u0:~CPAcheckerResult" resolve="CPAcheckerResult" />
-            </node>
-            <node concept="2YIFZM" id="4BmZfiOgBgM" role="33vP2m">
-              <ref role="37wK5l" node="4BmZfiOgzp6" resolve="runCPA" />
-              <ref role="1Pybhc" node="4eGZRCPQwx1" resolve="CPARunner" />
-              <node concept="37vLTw" id="4BmZfiOgBgN" role="37wK5m">
-                <ref role="3cqZAo" node="4eGZRCPQ_vC" resolve="options" />
-              </node>
-              <node concept="37vLTw" id="4BmZfiOgNRh" role="37wK5m">
-                <ref role="3cqZAo" node="4BmZfiOgJ5u" resolve="files" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="8sjE2YGji4" role="3cqZAp">
-          <node concept="2OqwBi" id="8sjE2YGji1" role="3clFbG">
-            <node concept="10M0yZ" id="8sjE2YGji2" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="8sjE2YGji3" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="8sjE2YGkg3" role="37wK5m">
-                <node concept="2OqwBi" id="8sjE2YGklt" role="3uHU7w">
-                  <node concept="37vLTw" id="4BmZfiOgBSC" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4BmZfiOgB3r" resolve="result" />
-                  </node>
-                  <node concept="liA8E" id="8sjE2YGkrl" role="2OqNvi">
-                    <ref role="37wK5l" to="k0u0:~CPAcheckerResult.getResultString():java.lang.String" resolve="getResultString" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="8sjE2YGjwy" role="3uHU7B">
-                  <property role="Xl_RC" value="\n\n\nResult: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="4eGZRCPQwxQ" role="3clF46">
-        <property role="TrG5h" value="args" />
-        <node concept="10Q1$e" id="4eGZRCPQwyO" role="1tU5fm">
-          <node concept="17QB3L" id="4eGZRCPQwxP" role="10Q1$1" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4BmZfiOgzH7" role="jymVt" />
     <node concept="2YIFZL" id="4BmZfiOhe1o" role="jymVt">
       <property role="TrG5h" value="runCPA" />
       <property role="od$2w" value="false" />
@@ -521,7 +444,7 @@
                   <node concept="17QB3L" id="5KYWJPNOlfR" role="11_B2D" />
                 </node>
                 <node concept="2YIFZM" id="4BmZfiOgznH" role="33vP2m">
-                  <ref role="1Pybhc" node="5kIX9cj0diG" resolve="CPAMain" />
+                  <ref role="1Pybhc" node="5kIX9cj0diG" resolve="CPARunnerUtils" />
                   <ref role="37wK5l" node="5kIX9cj0dr0" resolve="setupPaths" />
                   <node concept="37vLTw" id="4BmZfiOgznI" role="37wK5m">
                     <ref role="3cqZAo" node="4BmZfiOgznk" resolve="conf" />
@@ -552,11 +475,11 @@
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="op" />
                 <node concept="3uibUv" id="4BmZfiOgznS" role="1tU5fm">
-                  <ref role="3uigEE" node="5kIX9cj0diJ" resolve="CPAMain.BootstrapOptions" />
+                  <ref role="3uigEE" node="5kIX9cj0diJ" resolve="CPARunnerUtils.BootstrapOptions" />
                 </node>
                 <node concept="2ShNRf" id="4BmZfiOgznT" role="33vP2m">
                   <node concept="HV5vD" id="4BmZfiOgznU" role="2ShVmc">
-                    <ref role="HV5vE" node="5kIX9cj0diJ" resolve="CPAMain.BootstrapOptions" />
+                    <ref role="HV5vE" node="5kIX9cj0diJ" resolve="CPARunnerUtils.BootstrapOptions" />
                   </node>
                 </node>
               </node>
@@ -580,11 +503,11 @@
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="mainOptions" />
                 <node concept="3uibUv" id="4BmZfiOgzo3" role="1tU5fm">
-                  <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPAMain.MainOptions" />
+                  <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPARunnerUtils.MainOptions" />
                 </node>
                 <node concept="2ShNRf" id="4BmZfiOgzo4" role="33vP2m">
                   <node concept="HV5vD" id="4BmZfiOgzo5" role="2ShVmc">
-                    <ref role="HV5vE" node="5kIX9cj0dje" resolve="CPAMain.MainOptions" />
+                    <ref role="HV5vE" node="5kIX9cj0dje" resolve="CPARunnerUtils.MainOptions" />
                   </node>
                 </node>
               </node>
@@ -635,7 +558,7 @@
             </node>
             <node concept="3clFbF" id="4BmZfiOgzoh" role="3cqZAp">
               <node concept="2YIFZM" id="4BmZfiOgzoi" role="3clFbG">
-                <ref role="1Pybhc" node="5kIX9cj0diG" resolve="CPAMain" />
+                <ref role="1Pybhc" node="5kIX9cj0diG" resolve="CPARunnerUtils" />
                 <ref role="37wK5l" node="5kIX9cj0dox" resolve="dumpConfiguration" />
                 <node concept="37vLTw" id="4BmZfiOgzoj" role="37wK5m">
                   <ref role="3cqZAo" node="4BmZfiOgzo2" resolve="mainOptions" />
@@ -1102,6 +1025,42 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="2nZgViVrzZE" role="3cqZAp">
+          <node concept="3SKdUq" id="2nZgViVrzZG" role="3SKWNk">
+            <property role="3SKdUp" value="compute and export info about the analysis coverage" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2nZgViVrvU6" role="3cqZAp">
+          <node concept="37vLTI" id="2nZgViVrvU7" role="3clFbG">
+            <node concept="Xl_RD" id="2nZgViVrvU8" role="37vLTx">
+              <property role="Xl_RC" value="true" />
+            </node>
+            <node concept="3EllGN" id="2nZgViVrvU9" role="37vLTJ">
+              <node concept="Xl_RD" id="2nZgViVrvUa" role="3ElVtu">
+                <property role="Xl_RC" value="coverage.enabled" />
+              </node>
+              <node concept="37vLTw" id="2nZgViVrvUb" role="3ElQJh">
+                <ref role="3cqZAo" node="5kIX9cj0DuU" resolve="options" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2nZgViVr_r6" role="3cqZAp">
+          <node concept="37vLTI" id="2nZgViVr_r7" role="3clFbG">
+            <node concept="Xl_RD" id="2nZgViVr_r8" role="37vLTx">
+              <property role="Xl_RC" value="coverage.info" />
+            </node>
+            <node concept="3EllGN" id="2nZgViVr_r9" role="37vLTJ">
+              <node concept="Xl_RD" id="2nZgViVr_ra" role="3ElVtu">
+                <property role="Xl_RC" value="coverage.file" />
+              </node>
+              <node concept="37vLTw" id="2nZgViVr_rb" role="3ElQJh">
+                <ref role="3cqZAo" node="5kIX9cj0DuU" resolve="options" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2nZgViVrvNq" role="3cqZAp" />
         <node concept="1X3_iC" id="DbVawgNYb4" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -1327,7 +1286,7 @@
     <node concept="3Tm1VV" id="4eGZRCPQwx2" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="5kIX9cj0diG">
-    <property role="TrG5h" value="CPAMain" />
+    <property role="TrG5h" value="CPARunnerUtils" />
     <property role="2bfB8j" value="true" />
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
@@ -1707,11 +1666,11 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="options" />
             <node concept="3uibUv" id="5kIX9cj0dmq" role="1tU5fm">
-              <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPAMain.MainOptions" />
+              <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPARunnerUtils.MainOptions" />
             </node>
             <node concept="2ShNRf" id="5kIX9cj0elz" role="33vP2m">
               <node concept="HV5vD" id="5kIX9cj0el$" role="2ShVmc">
-                <ref role="HV5vE" node="5kIX9cj0dje" resolve="CPAMain.MainOptions" />
+                <ref role="HV5vE" node="5kIX9cj0dje" resolve="CPARunnerUtils.MainOptions" />
               </node>
             </node>
           </node>
@@ -2399,7 +2358,7 @@
         <property role="TrG5h" value="options" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="5kIX9cj0doz" role="1tU5fm">
-          <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPAMain.MainOptions" />
+          <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPARunnerUtils.MainOptions" />
         </node>
       </node>
       <node concept="37vLTG" id="5kIX9cj0do$" role="3clF46">
@@ -2666,11 +2625,11 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="options" />
             <node concept="3uibUv" id="5kIX9cj0dqa" role="1tU5fm">
-              <ref role="3uigEE" node="5kIX9cj0diJ" resolve="CPAMain.BootstrapOptions" />
+              <ref role="3uigEE" node="5kIX9cj0diJ" resolve="CPARunnerUtils.BootstrapOptions" />
             </node>
             <node concept="2ShNRf" id="5kIX9cj0hxB" role="33vP2m">
               <node concept="HV5vD" id="5kIX9cj0hxC" role="2ShVmc">
-                <ref role="HV5vE" node="5kIX9cj0diJ" resolve="CPAMain.BootstrapOptions" />
+                <ref role="HV5vE" node="5kIX9cj0diJ" resolve="CPARunnerUtils.BootstrapOptions" />
               </node>
             </node>
           </node>
@@ -3046,7 +3005,7 @@
         <property role="TrG5h" value="options" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="5kIX9cj0drU" role="1tU5fm">
-          <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPAMain.MainOptions" />
+          <ref role="3uigEE" node="5kIX9cj0dje" resolve="CPARunnerUtils.MainOptions" />
         </node>
       </node>
       <node concept="37vLTG" id="5kIX9cj0drV" role="3clF46">
