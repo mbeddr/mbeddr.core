@@ -10284,6 +10284,24 @@
             <ref role="3cqZAo" node="3Osd_yxgaFD" resolve="collection" />
           </node>
         </node>
+        <node concept="3clFbH" id="6Ku7D28gc1W" role="3cqZAp" />
+        <node concept="3clFbF" id="6Ku7D28g3mV" role="3cqZAp">
+          <node concept="2OqwBi" id="6Ku7D28g3rv" role="3clFbG">
+            <node concept="liA8E" id="6Ku7D28g3Bv" role="2OqNvi">
+              <ref role="37wK5l" to="xggr:3IzYpDNFLTI" resolve="setChanged" />
+              <node concept="3clFbT" id="6Ku7D28gaa0" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="6Ku7D28gbrK" role="2Oq$k0">
+              <ref role="1Pybhc" node="JPngvNub0g" resolve="LayoutableAdapters" />
+              <ref role="37wK5l" node="40e1npHqXb7" resolve="getAdapter" />
+              <node concept="37vLTw" id="6Ku7D28gbrL" role="37wK5m">
+                <ref role="3cqZAo" node="3Osd_yxgaFD" resolve="collection" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="3a$gLzv$rGB" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -11133,6 +11151,16 @@
               <node concept="37vLTw" id="4dksFc0xtf7" role="37wK5m">
                 <ref role="3cqZAo" node="6SVXTgIad$c" resolve="cell" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6Ku7D28fM8u" role="3cqZAp">
+          <node concept="2OqwBi" id="6Ku7D28fMjC" role="3clFbG">
+            <node concept="37vLTw" id="6Ku7D28fM8s" role="2Oq$k0">
+              <ref role="3cqZAo" node="4dksFc0xtf5" resolve="boxModel" />
+            </node>
+            <node concept="liA8E" id="6Ku7D28fMyb" role="2OqNvi">
+              <ref role="37wK5l" to="rtot:6Ku7D28fxCX" resolve="readSyncPosition" />
             </node>
           </node>
         </node>
