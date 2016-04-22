@@ -3,6 +3,7 @@
   <models>
     <modelRoot contentPath="${module}/emf_libs" type="java_classes">
       <sourceRoot location="org.eclipse.emf.common_2.9.2.v20131212-0545.jar" />
+      <sourceRoot location="reqif10.seri.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/emf_libs" type="java_classes">
       <sourceRoot location="org.eclipse.emf.ecore.xmi_2.9.1.v20131212-0545.jar" />
@@ -18,6 +19,9 @@
     <stubModelEntry path="${module}/emf_libs/org.eclipse.emf.common_2.9.2.v20131212-0545.jar" />
     <stubModelEntry path="${module}/emf_libs/org.eclipse.emf.ecore.xmi_2.9.1.v20131212-0545.jar" />
     <stubModelEntry path="${module}/emf_libs/org.eclipse.emf.ecore_2.9.2.v20131212-0545.jar" />
+    <stubModelEntry path="${module}/emf_libs/reqif10.seri.jar" />
+    <stubModelEntry path="${module}/emf_libs/org.eclipse.sphinx.emf.serialization_0.9.1.201509090901.jar" />
+    <stubModelEntry path="${module}/emf_libs/reqif10.package.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -32,6 +36,7 @@
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" fqName="jetbrains.mps.baseLanguage.collections" version="0" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" fqName="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language id="58f98fef-90ad-4b72-a390-fad66ec7005a" fqName="jetbrains.mps.core.properties" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />

@@ -112,9 +112,9 @@
   </node>
   <node concept="1TIwiD" id="3b7nTxBYUrf">
     <property role="1pbfSe" value="1698494873" />
-    <property role="TrG5h" value="EMFImportConfig" />
+    <property role="TrG5h" value="EcoreImportConfiguration" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="EMFImportConfig" />
+    <property role="34LRSv" value="EcoreImportConfiguration" />
     <property role="3GE5qa" value="importing" />
     <ref role="1TJDcQ" node="4RZY65c_rxo" resolve="EMFImportBase" />
   </node>

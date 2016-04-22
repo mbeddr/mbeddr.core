@@ -7140,16 +7140,10 @@
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="4mUbQYyq5Ea" role="2Ry0An">
               <property role="2Ry0Am" value="com.mbeddr.mpsutil.globalgenerators.runtime" />
-              <node concept="2Ry0Ak" id="4mUbQYyq6KR" role="2Ry0An">
+              <node concept="2Ry0Ak" id="68sCFDd04_b" role="2Ry0An">
                 <property role="2Ry0Am" value="com.mbeddr.mpsutil.globalgenerators.runtime.msd" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4mUbQYyq9Dm" role="3bR37C">
-          <node concept="3bR9La" id="4mUbQYyq9Dn" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="4mUbQYyq9Do" role="3bR37C">
@@ -7186,12 +7180,6 @@
           <node concept="3bR9La" id="4mUbQYyqhY6" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4mUbQYyqj9r" role="3bR37C">
-          <node concept="3bR9La" id="4mUbQYyqj9s" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4mUbQYyqcGR" resolve="com.mbeddr.mpsutil.globalgenerators" />
           </node>
         </node>
         <node concept="1SiIV0" id="4mUbQYyqj9t" role="3bR37C">
@@ -7241,6 +7229,12 @@
               <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="4mUbQYypZ_5" resolve="com.mbeddr.mpsutil.globalgenerators.runtime" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNGWfzr3tO" role="3bR37C">
+          <node concept="3bR9La" id="2hNGWfzr3tP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>

@@ -33,7 +33,6 @@
     <import index="bryn" ref="r:9f8e322d-e446-4cbf-a6b4-ec0732156eda(com.mbeddr.analyses.cpa.rt.base)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -93,9 +92,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -242,7 +238,6 @@
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -686,9 +681,41 @@
             </node>
           </node>
           <node concept="3clFbC" id="DbVawgQ2$U" role="3clFbw">
-            <node concept="10Nm6u" id="DbVawgQ2JY" role="3uHU7w" />
             <node concept="37vLTw" id="DbVawgQ2mp" role="3uHU7B">
               <ref role="3cqZAo" node="5KYWJPNL$$a" resolve="cpaResult" />
+            </node>
+            <node concept="10Nm6u" id="DbVawgQ2JY" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1y8E7lmlTM" role="3cqZAp">
+          <node concept="3clFbS" id="1y8E7lmlTN" role="3clFbx">
+            <node concept="3cpWs6" id="1y8E7lmlTO" role="3cqZAp">
+              <node concept="1rXfSq" id="1y8E7lmlTP" role="3cqZAk">
+                <ref role="37wK5l" node="3OLe0nF5cg9" resolve="createRuntimeErrorResults" />
+                <node concept="37vLTw" id="1y8E7lmlTQ" role="37wK5m">
+                  <ref role="3cqZAo" node="5KYWJPNNJ1W" resolve="rawCommand" />
+                </node>
+                <node concept="Xl_RD" id="1y8E7lmlTR" role="37wK5m">
+                  <property role="Xl_RC" value="NOT_YET_STARTED" />
+                </node>
+                <node concept="37vLTw" id="1y8E7lmlTS" role="37wK5m">
+                  <ref role="3cqZAo" node="5KYWJPNLEkN" resolve="entry" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1y8E7lmlTU" role="3clFbw">
+            <node concept="Rm8GO" id="1y8E7lmlTV" role="3uHU7w">
+              <ref role="1Px2BO" to="k0u0:~CPAcheckerResult$Result" resolve="CPAcheckerResult.Result" />
+              <ref role="Rm8GQ" to="k0u0:~CPAcheckerResult$Result.NOT_YET_STARTED" resolve="NOT_YET_STARTED" />
+            </node>
+            <node concept="2OqwBi" id="1y8E7lmlTW" role="3uHU7B">
+              <node concept="37vLTw" id="1y8E7lmlTX" role="2Oq$k0">
+                <ref role="3cqZAo" node="5KYWJPNL$$a" resolve="cpaResult" />
+              </node>
+              <node concept="liA8E" id="1y8E7lmlTY" role="2OqNvi">
+                <ref role="37wK5l" to="k0u0:~CPAcheckerResult.getResult():org.sosy_lab.cpachecker.core.CPAcheckerResult$Result" resolve="getResult" />
+              </node>
             </node>
           </node>
         </node>
@@ -1273,28 +1300,6 @@
                         <ref role="37wK5l" to="31w4:6lrp79e8eJu" resolve="collectAccessibleCode" />
                         <node concept="37vLTw" id="5pfYjqBbv$x" role="37wK5m">
                           <ref role="3cqZAo" node="5KYWJPNLEkN" resolve="entry" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="5pfYjqBbv$y" role="3cqZAp">
-                    <node concept="2OqwBi" id="5pfYjqBbv$z" role="3clFbG">
-                      <node concept="10M0yZ" id="5pfYjqBbv$$" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="5pfYjqBbv$_" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="3cpWs3" id="5pfYjqBbv$A" role="37wK5m">
-                          <node concept="2OqwBi" id="5pfYjqBbv$B" role="3uHU7w">
-                            <node concept="37vLTw" id="5pfYjqBbv$C" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5pfYjqBbv$u" resolve="accessibleCode" />
-                            </node>
-                            <node concept="34oBXx" id="5pfYjqBbv$D" role="2OqNvi" />
-                          </node>
-                          <node concept="Xl_RD" id="5pfYjqBbv$E" role="3uHU7B">
-                            <property role="Xl_RC" value="accessible code from: " />
-                          </node>
                         </node>
                       </node>
                     </node>

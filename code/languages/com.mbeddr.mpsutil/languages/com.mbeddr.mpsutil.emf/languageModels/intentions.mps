@@ -266,6 +266,7 @@
   </node>
   <node concept="2S6QgY" id="3b7nTxBXp7L">
     <property role="TrG5h" value="loadEcore" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="mwn6:3b7nTxBYUrf" resolve="EMFImportConfig" />
     <node concept="2Sbjvc" id="3b7nTxBXp7M" role="2ZfgGD">
       <node concept="3clFbS" id="3b7nTxBXp7N" role="2VODD2">
@@ -324,6 +325,7 @@
   </node>
   <node concept="2S6QgY" id="5ib3QA6eQ0a">
     <property role="TrG5h" value="clearImported" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="mwn6:4RZY65c_rxo" resolve="EMFImportBase" />
     <node concept="2S6ZIM" id="5ib3QA6eQ0b" role="2ZfVej">
       <node concept="3clFbS" id="5ib3QA6eQ0c" role="2VODD2">
@@ -380,6 +382,7 @@
   </node>
   <node concept="2S6QgY" id="4lXucEJ_XaQ">
     <property role="TrG5h" value="importModel" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="mwn6:4lXucEJ_INi" resolve="ModelImportConfig" />
     <node concept="2S6ZIM" id="4lXucEJ_XaR" role="2ZfVej">
       <node concept="3clFbS" id="4lXucEJ_XaS" role="2VODD2">

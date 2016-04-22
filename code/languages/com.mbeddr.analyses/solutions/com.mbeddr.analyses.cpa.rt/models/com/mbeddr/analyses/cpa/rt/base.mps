@@ -127,6 +127,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -405,6 +411,42 @@
                 </node>
               </node>
               <node concept="3clFbH" id="3OLe0nF80FF" role="3cqZAp" />
+              <node concept="3SKdUt" id="2nZgViVrzZE" role="3cqZAp">
+                <node concept="3SKdUq" id="2nZgViVrzZG" role="3SKWNk">
+                  <property role="3SKdUp" value="compute and export info about the analysis coverage" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="2nZgViVrvU6" role="3cqZAp">
+                <node concept="37vLTI" id="2nZgViVrvU7" role="3clFbG">
+                  <node concept="Xl_RD" id="2nZgViVrvU8" role="37vLTx">
+                    <property role="Xl_RC" value="true" />
+                  </node>
+                  <node concept="3EllGN" id="2nZgViVrvU9" role="37vLTJ">
+                    <node concept="Xl_RD" id="2nZgViVrvUa" role="3ElVtu">
+                      <property role="Xl_RC" value="coverage.enabled" />
+                    </node>
+                    <node concept="37vLTw" id="2nZgViVrvUb" role="3ElQJh">
+                      <ref role="3cqZAo" node="3OLe0nF7fL9" resolve="options" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2nZgViVr_r6" role="3cqZAp">
+                <node concept="37vLTI" id="2nZgViVr_r7" role="3clFbG">
+                  <node concept="Xl_RD" id="2nZgViVr_r8" role="37vLTx">
+                    <property role="Xl_RC" value="coverage.info" />
+                  </node>
+                  <node concept="3EllGN" id="2nZgViVr_r9" role="37vLTJ">
+                    <node concept="Xl_RD" id="2nZgViVr_ra" role="3ElVtu">
+                      <property role="Xl_RC" value="coverage.file" />
+                    </node>
+                    <node concept="37vLTw" id="2nZgViVr_rb" role="3ElQJh">
+                      <ref role="3cqZAo" node="3OLe0nF7fL9" resolve="options" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2nZgViVrBXe" role="3cqZAp" />
               <node concept="3clFbF" id="3OLe0nF80FG" role="3cqZAp">
                 <node concept="37vLTI" id="3OLe0nF80FH" role="3clFbG">
                   <node concept="Xl_RD" id="3OLe0nF80FI" role="37vLTx">
