@@ -8040,7 +8040,10 @@
         <node concept="3F0A7n" id="1$MI$rgLfvN" role="3EZMnx">
           <ref role="1NtTu8" to="q5q6:1$MI$rgLfuX" resolve="id" />
           <node concept="VechU" id="1$MI$rgLf$s" role="3F10Kt">
-            <property role="Vb096" value="lightGray" />
+            <property role="Vb096" value="magenta" />
+          </node>
+          <node concept="30gYXW" id="vbJ3AuK04m" role="3F10Kt">
+            <property role="Vb096" value="LIGHT_BLUE" />
           </node>
         </node>
         <node concept="l2Vlx" id="1$MI$rgLfvk" role="2iSdaV" />
