@@ -22,6 +22,7 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="v0r9" ref="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" />
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
+    <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -280,6 +281,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="4kJ3EIm6bJP" role="3cqZAp" />
+        <node concept="3clFbF" id="vbJ3AuLvBi" role="3cqZAp">
+          <node concept="2YIFZM" id="vbJ3AuLwj9" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="vbJ3AuLwlL" role="37wK5m">
+              <ref role="3cqZAo" node="4kJ3EIm6bJ$" resolve="res" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="vbJ3AuLwmM" role="3cqZAp" />
         <node concept="38rL1p" id="8FyjeteYz7" role="3cqZAp">
           <node concept="38rIoz" id="4Y$LvVOrnb7" role="38rM$J">
             <property role="38rIoG" value="*" />
