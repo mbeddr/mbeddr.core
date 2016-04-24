@@ -11,9 +11,15 @@
       <runner id="RUNNER_19" name="Build" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[make minisat2-download
+make zlib-download
+make libzip-download
+make libzip-build
 make -j12
 
 make minisat2-download
+make zlib-download
+make libzip-download
+make libzip-build
 make -j12
 mkdir %teamcity.build.checkoutDir%/cbmc-mac
 cp %teamcity.build.checkoutDir%/src/cbmc/cbmc %teamcity.build.checkoutDir%/cbmc-mac

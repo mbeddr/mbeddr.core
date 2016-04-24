@@ -15,6 +15,10 @@
 c:\cygwin64\bin\sh.exe -c "wget http://minisat.se/downloads/minisat-2.2.0.tar.gz; tar xfz minisat-2.2.0.tar.gz; mv minisat minisat-2.2.0; cd minisat-2.2.0; patch -p1 < ../scripts/minisat-2.2.0-patch;"
 cd src
 
+make zlib-download
+make libzip-download
+make libzip-build
+
 c:\cygwin64\bin\sh.exe -c "sed -e s/AUTO/MSVC/g config.inc > config.inc.1" 
 mv config.inc.1 config.inc
 make -j12
