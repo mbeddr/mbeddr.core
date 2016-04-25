@@ -17,7 +17,7 @@ cd src
 
 c:\cygwin64\bin\sh.exe -c "sed -e s/AUTO/MSVC/g config.inc > config.inc.1" 
 mv config.inc.1 config.inc
-make LIBZIPINC="" LIBZIPLIB="" -j12
+make -j12
 mkdir %teamcity.build.checkoutDir%\cbmc-win
 c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%\src\cbmc\cbmc.exe %teamcity.build.checkoutDir%\cbmc-win
 c:\cygwin64\bin\cp.exe %teamcity.build.checkoutDir%\src\goto-cc\goto-cc.exe %teamcity.build.checkoutDir%\cbmc-win
