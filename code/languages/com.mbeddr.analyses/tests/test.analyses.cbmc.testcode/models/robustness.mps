@@ -81,6 +81,7 @@
     </language>
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
+        <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
       </concept>
     </language>
@@ -1096,6 +1097,9 @@
     <node concept="3GEVxB" id="prDxnvfD9m" role="3W6d8T">
       <ref role="3GEb4d" node="7UiQjZi_RH3" resolve="DivByZeroUserInput" />
     </node>
+    <node concept="3GEVxB" id="prDxnvg6ZP" role="3W6d8T">
+      <ref role="3GEb4d" node="5V$HkqNY91f" resolve="Pointer" />
+    </node>
     <node concept="1nvAUE" id="prDxnvfD9o" role="3V$2$K">
       <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="false" />
@@ -1112,6 +1116,23 @@
       <property role="2l50Mm" value="false" />
       <property role="1nvAUF" value="true" />
       <ref role="3V$Cn$" node="7UiQjZi_RH5" resolve="userInputVar" />
+    </node>
+    <node concept="1nvAUE" id="prDxnvg6ZW" role="3V$2$K">
+      <property role="2lelRm" value="true" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAU$" value="true" />
+      <ref role="3V$Cn$" node="5V$HkqNY91g" resolve="smokeNullPointerAccess" />
     </node>
   </node>
 </model>

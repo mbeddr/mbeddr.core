@@ -1427,13 +1427,13 @@
               <ref role="3cqZAo" node="1iGXuG0fTW1" resolve="res3" />
             </node>
             <node concept="liA8E" id="1iGXuG0fTWa" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
           <node concept="3_1$Yv" id="5hfVsymuvTP" role="3_9lra">
             <node concept="3cpWs3" id="5hfVsymwF5b" role="3_1BAH">
               <node concept="Xl_RD" id="5hfVsymuvXJ" role="3uHU7B">
-                <property role="Xl_RC" value="res3 should fail but is: " />
+                <property role="Xl_RC" value="res3 should hold but is: " />
               </node>
               <node concept="2OqwBi" id="5hfVsymwF5v" role="3uHU7w">
                 <node concept="37vLTw" id="5hfVsymwFbC" role="2Oq$k0">
@@ -1477,7 +1477,7 @@
           <node concept="3_1$Yv" id="5hfVsymuvYa" role="3_9lra">
             <node concept="3cpWs3" id="5hfVsymwFok" role="3_1BAH">
               <node concept="Xl_RD" id="5hfVsymuw24" role="3uHU7B">
-                <property role="Xl_RC" value="res4 should fail but is: " />
+                <property role="Xl_RC" value="res4 should hold but is: " />
               </node>
               <node concept="2OqwBi" id="5hfVsymwFoY" role="3uHU7w">
                 <node concept="37vLTw" id="5hfVsymwFv5" role="2Oq$k0">
