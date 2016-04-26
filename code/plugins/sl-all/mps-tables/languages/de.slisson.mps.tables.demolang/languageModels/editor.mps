@@ -322,10 +322,16 @@
         <child id="1397920687864865685" name="rowHeaders" index="2rf8Fw" />
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
         <child id="1397920687864864726" name="columnHeaders" index="2rfbqz" />
+        <child id="6097863121587726798" name="gridPostprocessor" index="3nFLZX" />
       </concept>
       <concept id="1397920687867563604" name="de.slisson.mps.tables.structure.QueryParameter_RowIndex" flags="ng" index="2rSAsx" />
       <concept id="1397920687867564204" name="de.slisson.mps.tables.structure.QueryParameter_ColumnIndex" flags="ng" index="2rSBBp" />
       <concept id="8791219374191678801" name="de.slisson.mps.tables.structure.QueryParameter_SubstituteInfoFactory" flags="ng" index="veFCw" />
+      <concept id="3981577588227981882" name="de.slisson.mps.tables.structure.CellCreateOperation" flags="ng" index="2CJim2">
+        <child id="3981577588228006890" name="editor" index="2CJshi" />
+        <child id="3981577588228006886" name="contextNode" index="2CJshu" />
+      </concept>
+      <concept id="3981577588228006907" name="de.slisson.mps.tables.structure.CellCreateOperationInlineEditor" flags="ig" index="2CJsh3" />
       <concept id="4384308856523593884" name="de.slisson.mps.tables.structure.HorizontalAlignmentStyleItem" flags="lg" index="Qq2$L">
         <property id="4384308856523593885" name="alignment" index="Qq2$K" />
       </concept>
@@ -334,6 +340,7 @@
       </concept>
       <concept id="4032373061957737357" name="de.slisson.mps.tables.structure.Parameter_Index" flags="ng" index="10bopy" />
       <concept id="4032373061957735279" name="de.slisson.mps.tables.structure.HeaderQuery_InsertNew" flags="ig" index="10boU0" />
+      <concept id="4032373061970539014" name="de.slisson.mps.tables.structure.QueryParameter_EditorContext" flags="ng" index="1frAZD" />
       <concept id="5662204344885760731" name="de.slisson.mps.tables.structure.IStylable" flags="ng" index="1g0I81">
         <child id="5662204344887343006" name="style" index="1geGt4" />
       </concept>
@@ -360,6 +367,7 @@
         <property id="3785936898438264819" name="value" index="3hZETZ" />
       </concept>
       <concept id="3785936898438264163" name="de.slisson.mps.tables.structure.ColorQuery" flags="ig" index="3hZENJ" />
+      <concept id="6097863121587719264" name="de.slisson.mps.tables.structure.GridPostprocessor" flags="ig" index="3nFNDj" />
       <concept id="7946551912908713904" name="de.slisson.mps.tables.structure.SubstituteNodeFunction" flags="ig" index="3om3PG">
         <reference id="8767719180164875849" name="cellRootConcept" index="1xHBhH" />
         <child id="7946551912909694162" name="rolePath" index="3oqjoe" />
@@ -2390,6 +2398,35 @@
                   <node concept="3clFbS" id="6T7OHMQKF5O" role="9aQI4">
                     <node concept="3cpWs6" id="6T7OHMQKF5P" role="3cqZAp">
                       <node concept="10Nm6u" id="6T7OHMQKF5Q" role="3cqZAk" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3nFNDj" id="5ivXze3eoL4" role="3nFLZX">
+          <node concept="3clFbS" id="5ivXze3eoL5" role="2VODD2">
+            <node concept="3clFbF" id="5ivXze3eqBq" role="3cqZAp">
+              <node concept="2OqwBi" id="5ivXze3eqBS" role="3clFbG">
+                <node concept="3wJN_h" id="5ivXze3eqBp" role="2Oq$k0" />
+                <node concept="liA8E" id="5ivXze3esyy" role="2OqNvi">
+                  <ref role="37wK5l" to="6dpw:DXnsYPPSef" resolve="setCell" />
+                  <node concept="3cmrfG" id="5ivXze3eszF" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="5ivXze3esEi" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="5ivXze3esIu" role="37wK5m">
+                    <node concept="1frAZD" id="5ivXze3esGq" role="2Oq$k0" />
+                    <node concept="2CJim2" id="5ivXze3esL_" role="2OqNvi">
+                      <node concept="2CJsh3" id="5ivXze3esLA" role="2CJshi">
+                        <node concept="3F0ifn" id="5ivXze3esOf" role="2wV5jI">
+                          <property role="3F0ifm" value="corner" />
+                        </node>
+                      </node>
+                      <node concept="2r2w_c" id="5ivXze3esN2" role="2CJshu" />
                     </node>
                   </node>
                 </node>

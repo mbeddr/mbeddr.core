@@ -3749,5 +3749,47 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="5ivXze3ccLx">
+    <ref role="13h7C2" to="bnk3:5ivXze3ccLw" resolve="GridPostprocessor" />
+    <node concept="13hLZK" id="5ivXze3ccLy" role="13h7CW">
+      <node concept="3clFbS" id="5ivXze3ccLz" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5ivXze3ccL$" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameters" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRM" resolve="getParameters" />
+      <node concept="3Tm1VV" id="5ivXze3ccM5" role="1B3o_S" />
+      <node concept="3clFbS" id="5ivXze3ccM6" role="3clF47">
+        <node concept="3clFbF" id="5ivXze3ccQc" role="3cqZAp">
+          <node concept="2ShNRf" id="5ivXze3ccQ2" role="3clFbG">
+            <node concept="Tc6Ow" id="5ivXze3cec3" role="2ShVmc">
+              <node concept="3THzug" id="5ivXze3cepy" role="HW$YZ">
+                <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="3TUQnm" id="5ivXze3ceAe" role="HW$Y0">
+                <ref role="3TV0OU" to="bnk3:1gyFNfOBppy" resolve="QueryParameter_Grid" />
+              </node>
+              <node concept="3TUQnm" id="5ivXze3ceAf" role="HW$Y0">
+                <ref role="3TV0OU" to="bnk3:1dAqnm8r60T" resolve="QueryParameter_Node" />
+              </node>
+              <node concept="3TUQnm" id="5ivXze3ceAg" role="HW$Y0">
+                <ref role="3TV0OU" to="bnk3:7C0FR5_exlh" resolve="QueryParameter_SubstituteInfoFactory" />
+              </node>
+              <node concept="3TUQnm" id="5ivXze3ceAh" role="HW$Y0">
+                <ref role="3TV0OU" to="bnk3:3vPRuXSAV86" resolve="QueryParameter_EditorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="5ivXze3ccM7" role="3clF45">
+        <node concept="3THzug" id="5ivXze3ccM8" role="_ZDj9">
+          <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

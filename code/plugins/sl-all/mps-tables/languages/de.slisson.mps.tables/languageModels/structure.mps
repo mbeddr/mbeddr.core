@@ -93,6 +93,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1dAqnm8mI99" resolve="ITableNode" />
     </node>
+    <node concept="1TJgyj" id="5ivXze3ceBe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gridPostprocessor" />
+      <ref role="20lvS9" node="5ivXze3ccLw" resolve="GridPostprocessor" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1dAqnm8mHSd">
     <property role="TrG5h" value="IHeader" />
@@ -1211,6 +1216,11 @@
   <node concept="1TIwiD" id="7EUu569oE3b">
     <property role="1pbfSe" value="69015836" />
     <property role="TrG5h" value="TableNodeCondition" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="5ivXze3ccLw">
+    <property role="1pbfSe" value="674184557" />
+    <property role="TrG5h" value="GridPostprocessor" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
