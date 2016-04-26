@@ -91,7 +91,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -147,6 +147,7 @@
         <property id="5665549241468854500" name="hasAlternativeSteps" index="35B3fw" />
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
         <property id="4791280061046139065" name="nodeValue" index="38rMdH" />
+        <property id="1417041907773541157" name="isRegexBasedComparison" index="1F1lcY" />
         <child id="4791280061046189368" name="node" index="38rYrG" />
       </concept>
       <concept id="4791280061046135693" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleTest" flags="ng" index="38rL1p">
@@ -1052,7 +1053,7 @@
           </node>
           <node concept="38rIoz" id="16yBdWg1yXU" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="16yBdWg1yXV" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -1073,7 +1074,7 @@
           </node>
           <node concept="38rIoz" id="16yBdWg1yY0" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="16yBdWg1yY1" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -1100,7 +1101,7 @@
           </node>
           <node concept="38rIoz" id="16yBdWg1yY5" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <property role="35B3fw" value="true" />
             <property role="35AWuq" value="9,10" />
           </node>
@@ -1246,7 +1247,7 @@
           </node>
           <node concept="38rIoz" id="576QrOJn8S8" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="576QrOJnSmI" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -1260,7 +1261,7 @@
           </node>
           <node concept="38rIoz" id="576QrOJn8Sf" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <property role="35B3fw" value="true" />
             <property role="35AWuq" value="5,6" />
           </node>
@@ -2545,29 +2546,33 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rS" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rT" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rU" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rV" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rW" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rX" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rY" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rZ" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -2650,15 +2655,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl9001" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl9002" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl9003" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl9004" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -2727,15 +2734,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl93Ht" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].x" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.x" />
             <property role="38rMdH" value="10" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl93Hu" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl93Hv" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl93Hw" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -3609,15 +3618,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="6Xk4NhNbAra" role="38rM$J">
-            <property role="38rIoG" value="bp.anInt" />
-            <property role="38rMdH" value="2" />
+            <property role="38rIoG" value="bp\\.anInt" />
+            <property role="38rMdH" value="2ll?" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="6Xk4NhNbArb" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="6Xk4NhNbArc" role="38rM$J">
             <property role="38rIoG" value="readInt" />
-            <property role="38rMdH" value="2" />
+            <property role="38rMdH" value="2ll?" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="6Xk4NhNbArd" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -3707,14 +3718,14 @@
           </node>
           <node concept="38rIoz" id="7MMcIPlrkrx" role="38rM$J">
             <property role="38rIoG" value="next" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node *)NULL)" />
+            <property role="38rMdH" value="((struct recursive_datatypes_node { struct recursive_datatypes_node *next; signed int val; } *)NULL)" />
             <node concept="3Tqbb2" id="7MMcIPlrkv7" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPlrjms" role="38rM$J">
             <property role="38rIoG" value="nextNext" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node *)NULL)" />
+            <property role="38rMdH" value="((struct recursive_datatypes_node { struct recursive_datatypes_node *next; signed int val; } *)NULL)" />
             <node concept="3Tqbb2" id="7MMcIPlrjmt" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -4254,17 +4265,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="wSZHMckJdV" role="33vP2m">
-              <node concept="2YIFZM" id="wSZHMckJdW" role="2Oq$k0">
+              <node concept="NRdvd" id="prDxnvgY94" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="wSZHMckJdX" role="37wK5m">
+                <node concept="2YIFZM" id="prDxnvgY95" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="wSZHMckJdY" role="37wK5m">
+                <node concept="Xl_RD" id="prDxnvgY96" role="37wK5m">
                   <property role="Xl_RC" value="closures" />
                 </node>
-                <node concept="Xl_RD" id="wSZHMckJdZ" role="37wK5m">
+                <node concept="Xl_RD" id="prDxnvgY97" role="37wK5m">
                   <property role="Xl_RC" value="closuresEntry1" />
                 </node>
               </node>
@@ -4297,15 +4308,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMclltM" role="38rM$J">
-            <property role="38rIoG" value="intarr[0]" />
+            <property role="38rIoG" value="intarr\\[0l?\\]" />
             <property role="38rMdH" value="1" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMclmb$" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcllwY" role="38rM$J">
-            <property role="38rIoG" value="intarr[1]" />
+            <property role="38rIoG" value="intarr\\[1l?\\]" />
             <property role="38rMdH" value="2" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMclmeG" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -4360,8 +4373,9 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcrqmG" role="38rM$J">
-            <property role="38rIoG" value="intarr[0]" />
+            <property role="38rIoG" value="intarr\\[0l?\\]" />
             <property role="38rMdH" value="2" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMcrr10" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -4395,8 +4409,9 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcrrbE" role="38rM$J">
-            <property role="38rIoG" value="intarr[1]" />
+            <property role="38rIoG" value="intarr\\[1l?\\]" />
             <property role="38rMdH" value="4" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMcrrNd" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -5370,7 +5385,8 @@
           </node>
           <node concept="38rIoz" id="PS2VOYSxGG" role="38rM$J">
             <property role="38rIoG" value="a" />
-            <property role="38rMdH" value="3" />
+            <property role="38rMdH" value="3l?l?" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="PS2VOYSxGH" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -5582,7 +5598,7 @@
           </node>
           <node concept="38rIoz" id="6Xk4NhNaire" role="38rM$J">
             <property role="38rIoG" value="addrDiff" />
-            <property role="38rMdH" value="4" />
+            <property role="38rMdH" value="4u" />
             <node concept="3Tqbb2" id="6Xk4NhNairf" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
