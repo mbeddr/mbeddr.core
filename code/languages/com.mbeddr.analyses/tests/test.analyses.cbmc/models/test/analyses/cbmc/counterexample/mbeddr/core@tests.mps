@@ -3718,14 +3718,14 @@
           </node>
           <node concept="38rIoz" id="7MMcIPlrkrx" role="38rM$J">
             <property role="38rIoG" value="next" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node { struct recursive_datatypes_node *next; signed int val; } *)NULL)" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="7MMcIPlrkv7" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPlrjms" role="38rM$J">
             <property role="38rIoG" value="nextNext" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node { struct recursive_datatypes_node *next; signed int val; } *)NULL)" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="7MMcIPlrjmt" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
