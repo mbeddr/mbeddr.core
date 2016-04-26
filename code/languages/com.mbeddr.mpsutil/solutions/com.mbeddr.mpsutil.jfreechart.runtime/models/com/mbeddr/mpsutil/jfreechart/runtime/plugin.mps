@@ -218,6 +218,23 @@
       </node>
       <node concept="3Tm1VV" id="7uOgiT8U8d" role="1B3o_S" />
     </node>
+    <node concept="2XrIbr" id="3a$gLzvMMVV" role="2XNbBy">
+      <property role="TrG5h" value="getChartPanel" />
+      <node concept="3clFbS" id="3a$gLzvMMVW" role="3clF47">
+        <node concept="3clFbF" id="3a$gLzvMNiL" role="3cqZAp">
+          <node concept="2OqwBi" id="3a$gLzvMNiF" role="3clFbG">
+            <node concept="2WthIp" id="3a$gLzvMNiI" role="2Oq$k0" />
+            <node concept="2BZ7hE" id="3a$gLzvMNiK" role="2OqNvi">
+              <ref role="2WH_rO" node="7uOgiT8PA3" resolve="myChartPanel" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="3a$gLzvMNcC" role="3clF45">
+        <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
+      </node>
+      <node concept="3Tm1VV" id="3a$gLzvMN6F" role="1B3o_S" />
+    </node>
     <node concept="2UmK3q" id="75t_nimFd6p" role="2Um5zG">
       <node concept="3clFbS" id="75t_nimFd6q" role="2VODD2">
         <node concept="3clFbF" id="75t_nimFdlj" role="3cqZAp">
@@ -678,6 +695,26 @@
               <node concept="3clFbT" id="7uOgiTa1IQ" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3a$gLzvMJuh" role="jymVt" />
+    <node concept="3clFb_" id="3a$gLzvMM$I" role="jymVt">
+      <property role="TrG5h" value="getChartPanel" />
+      <node concept="3uibUv" id="3a$gLzvMMNY" role="3clF45">
+        <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
+      </node>
+      <node concept="3Tm1VV" id="3a$gLzvMM$L" role="1B3o_S" />
+      <node concept="3clFbS" id="3a$gLzvMM$M" role="3clF47">
+        <node concept="3clFbF" id="3a$gLzvMNBZ" role="3cqZAp">
+          <node concept="2OqwBi" id="3a$gLzvMNGF" role="3clFbG">
+            <node concept="37vLTw" id="3a$gLzvMNBY" role="2Oq$k0">
+              <ref role="3cqZAo" node="7uOgiT94Z8" resolve="myTool" />
+            </node>
+            <node concept="2XshWL" id="3a$gLzvMNM5" role="2OqNvi">
+              <ref role="2WH_rO" node="3a$gLzvMMVV" resolve="getChartPanel" />
             </node>
           </node>
         </node>

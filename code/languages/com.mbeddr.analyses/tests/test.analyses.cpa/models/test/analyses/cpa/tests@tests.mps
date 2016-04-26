@@ -12,6 +12,7 @@
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="f888" ref="r:b7153f97-6825-4cfd-99a8-1cee2d0826ec(com.mbeddr.analyses.cpa.rt.analyses)" />
+    <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -28,6 +29,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -48,6 +53,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -69,6 +75,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -312,7 +322,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="6UAHnEzV3OE" role="1SL9yI">
-      <property role="TrG5h" value="testNotHoldingAssertions" />
+      <property role="TrG5h" value="testProblematic" />
       <node concept="3cqZAl" id="6UAHnEzV3OF" role="3clF45" />
       <node concept="3clFbS" id="6UAHnEzV3OG" role="3clF47">
         <node concept="3cpWs8" id="6UAHnEzV3OH" role="3cqZAp">
@@ -336,7 +346,7 @@
                 <ref role="3cqZAo" node="6UAHnEzV3OI" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6UAHnEzV3OP" role="37wK5m">
-                <property role="Xl_RC" value="assertWhichFails" />
+                <property role="Xl_RC" value="problematic" />
               </node>
             </node>
             <node concept="_YKpA" id="6UAHnEzV3OQ" role="1tU5fm">
@@ -364,8 +374,8 @@
             </node>
             <node concept="34oBXx" id="6UAHnEzV3P0" role="2OqNvi" />
           </node>
-          <node concept="3cmrfG" id="6UAHnEzV3P1" role="3tpDZB">
-            <property role="3cmrfH" value="1" />
+          <node concept="3cmrfG" id="2nZgViVrijd" role="3tpDZB">
+            <property role="3cmrfH" value="2" />
           </node>
         </node>
         <node concept="3clFbH" id="6UAHnEzV3P2" role="3cqZAp" />
@@ -382,18 +392,59 @@
                 <ref role="3cqZAo" node="6UAHnEzV3OM" resolve="res" />
               </node>
               <node concept="Xl_RD" id="6UAHnEzV3P8" role="37wK5m">
-                <property role="Xl_RC" value="Assert: x != 1" />
+                <property role="Xl_RC" value="Assert: x != 1000" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="6UAHnEzV3P9" role="3cqZAp">
-          <node concept="2OqwBi" id="6UAHnEzV3Pa" role="3vwVQn">
-            <node concept="37vLTw" id="6UAHnEzV3Pb" role="2Oq$k0">
-              <ref role="3cqZAo" node="6UAHnEzV3P4" resolve="r1" />
+          <node concept="3clFbC" id="2nZgViVsdN9" role="3vwVQn">
+            <node concept="Rm8GO" id="2nZgViVsdRm" role="3uHU7w">
+              <ref role="Rm8GQ" to="rbq9:5pfYjqBbyPA" resolve="UNKNOWN" />
+              <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
             </node>
-            <node concept="liA8E" id="6UAHnEzV3Pc" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            <node concept="2OqwBi" id="6UAHnEzV3Pa" role="3uHU7B">
+              <node concept="37vLTw" id="6UAHnEzV3Pb" role="2Oq$k0">
+                <ref role="3cqZAo" node="6UAHnEzV3P4" resolve="r1" />
+              </node>
+              <node concept="liA8E" id="6UAHnEzV3Pc" role="2OqNvi">
+                <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2nZgViVsepA" role="3cqZAp" />
+        <node concept="3cpWs8" id="2nZgViVsewh" role="3cqZAp">
+          <node concept="3cpWsn" id="2nZgViVsewi" role="3cpWs9">
+            <property role="TrG5h" value="r2" />
+            <node concept="3uibUv" id="2nZgViVsewj" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="2nZgViVsewk" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2nZgViVsewl" role="37wK5m">
+                <ref role="3cqZAo" node="6UAHnEzV3OM" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="2nZgViVsewm" role="37wK5m">
+                <property role="Xl_RC" value="Assert: x != 18888888222" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2nZgViVsewn" role="3cqZAp">
+          <node concept="3clFbC" id="2nZgViVsewo" role="3vwVQn">
+            <node concept="Rm8GO" id="2nZgViVsewp" role="3uHU7w">
+              <ref role="Rm8GQ" to="rbq9:5pfYjqBbyPA" resolve="UNKNOWN" />
+              <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+            </node>
+            <node concept="2OqwBi" id="2nZgViVsewq" role="3uHU7B">
+              <node concept="37vLTw" id="2nZgViVsewr" role="2Oq$k0">
+                <ref role="3cqZAo" node="2nZgViVsewi" resolve="r2" />
+              </node>
+              <node concept="liA8E" id="2nZgViVsews" role="2OqNvi">
+                <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
+              </node>
             </node>
           </node>
         </node>

@@ -12,6 +12,7 @@
       </concept>
       <concept id="134774857084560974" name="com.mbeddr.mpsutil.treenotation.sandboxlang.structure.RootConcept" flags="ng" index="2SWNta">
         <child id="134774857085152597" name="tree" index="2SU3Lh" />
+        <child id="857420770335041366" name="tree2" index="3teCNN" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -32,12 +33,14 @@
           <property role="TrG5h" value="dfghj" />
         </node>
       </node>
+      <node concept="2SU3KN" id="JAaUnmTYz2" role="2SU3KW" />
       <node concept="2SU3KN" id="7uOgiTdJDz" role="2SU3KW">
         <property role="TrG5h" value="dfghj" />
         <node concept="2SU3KN" id="7GMtHW6DEbi" role="2SU3KW">
           <property role="TrG5h" value="rz6u" />
         </node>
         <node concept="2SU3KN" id="7CiTYi$vRBt" role="2SU3KW" />
+        <node concept="2SU3KN" id="JAaUnmT17S" role="2SU3KW" />
         <node concept="2SU3KN" id="7GMtHW6DEbk" role="2SU3KW">
           <property role="TrG5h" value="w4ttgfg" />
         </node>
@@ -49,6 +52,18 @@
       <node concept="2SU3KN" id="7uOgiTdJuT" role="2SU3KW">
         <property role="TrG5h" value="ghi" />
       </node>
+    </node>
+    <node concept="2SU3KN" id="JAaUnmT2gH" role="3teCNN">
+      <property role="TrG5h" value="abc" />
+      <node concept="2SU3KN" id="JAaUnmUPNK" role="2SU3KW" />
+      <node concept="2SU3KN" id="JAaUnmT2gL" role="2SU3KW">
+        <property role="TrG5h" value="def" />
+        <node concept="2SU3KN" id="JAaUnmT2gW" role="2SU3KW" />
+        <node concept="2SU3KN" id="JAaUnmT2h0" role="2SU3KW" />
+      </node>
+      <node concept="2SU3KN" id="JAaUnmT2h7" role="2SU3KW" />
+      <node concept="2SU3KN" id="JAaUnmT2hn" role="2SU3KW" />
+      <node concept="2SU3KN" id="JAaUnmT2gP" role="2SU3KW" />
     </node>
   </node>
 </model>

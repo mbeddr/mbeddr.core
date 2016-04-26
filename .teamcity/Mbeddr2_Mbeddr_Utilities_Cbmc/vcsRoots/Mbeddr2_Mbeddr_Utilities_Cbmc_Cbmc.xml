@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="a14c0b05-c4ae-485e-92ce-73784e8afd5e" type="svn" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="a14c0b05-c4ae-485e-92ce-73784e8afd5e" type="jetbrains.git" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>CBMC</name>
-  <param name="enforce-revert" value="true" />
-  <param name="externals-mode" value="externals-none" />
-  <param name="labelingMessage" value="Labeled automatically by TeamCity" />
-  <param name="labelingPatterns" value="trunk=&gt;tags" />
-  <param name="svn-config-directory" value="/usr/share/tomcat7/.subversion" />
-  <param name="svn-use-default-config-directory" value="true" />
-  <param name="url" value="http://www.cprover.org/svn/cbmc/trunk" />
-  <param name="working-copy-format" value="1.8" />
+  <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+  <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+  <param name="authMethod" value="ANONYMOUS" />
+  <param name="branch" value="refs/heads/master" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="url" value="https://github.com/diffblue/cbmc.git" />
+  <param name="useAlternates" value="true" />
+  <param name="usernameStyle" value="USERID" />
 </vcs-root>
 

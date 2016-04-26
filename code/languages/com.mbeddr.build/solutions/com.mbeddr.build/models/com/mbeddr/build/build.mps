@@ -8646,6 +8646,18 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
+        <node concept="1SiIV0" id="vbJ3AuKU2O" role="3bR37C">
+          <node concept="3bR9La" id="vbJ3AuKU2P" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="vbJ3AuKU2Q" role="3bR37C">
+          <node concept="3bR9La" id="vbJ3AuKU2R" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6BM8NjXiJEI" role="2G$12L">
         <property role="BnDLt" value="true" />

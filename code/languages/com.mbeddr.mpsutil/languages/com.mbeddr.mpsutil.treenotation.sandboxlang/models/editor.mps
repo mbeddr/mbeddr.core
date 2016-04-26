@@ -44,19 +44,19 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -104,7 +104,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -146,6 +146,7 @@
         <child id="134774857084558329" name="treeChildren" index="2SWKFX" />
         <child id="8433232831282980026" name="outgoingShape" index="15K7wI" />
         <child id="8433232831282980032" name="incomingShape" index="15K7xk" />
+        <child id="5587067268292708715" name="insertHandlers" index="1Vhs_Z" />
         <child id="8877288515759655537" name="deleteHandler" index="1XG3MI" />
         <child id="8877288515760225002" name="insertHandler" index="1XI8KP" />
       </concept>
@@ -164,6 +165,11 @@
         <child id="8796347991406416551" name="then" index="3u$Jl3" />
         <child id="8796347991406416554" name="else" index="3u$Jle" />
       </concept>
+      <concept id="5587067268292695520" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertHandler" flags="ng" index="1VhhnO">
+        <property id="5587067268292695547" name="description" index="1VhhnJ" />
+        <child id="5587067268292695525" name="insertFunction" index="1VhhnL" />
+      </concept>
+      <concept id="5587067268293117907" name="com.mbeddr.mpsutil.treenotation.structure.SubconceptsInsertHandler" flags="ng" index="1VmSv7" />
       <concept id="8877288515762046938" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_edges" flags="ng" index="1X_b45" />
       <concept id="8877288515762041727" name="com.mbeddr.mpsutil.treenotation.structure.ShapeReference" flags="ng" index="1X_cmw">
         <reference id="8877288515762041730" name="shape" index="1X_clt" />
@@ -379,7 +385,7 @@
       </node>
       <node concept="3F0ifn" id="JAaUnmRatu" role="3EZMnx" />
       <node concept="3F1sOY" id="JAaUnmRatt" role="3EZMnx">
-        <ref role="1NtTu8" to="uin2:7uOgiTdIPl" />
+        <ref role="1NtTu8" to="uin2:JAaUnmRatm" />
         <node concept="3tD6jV" id="JAaUnmRaDo" role="3F10Kt">
           <ref role="3tD7wE" to="5un2:7uOgiTdwyO" resolve="tree-left-to-right" />
           <node concept="3sjG9q" id="JAaUnmRaDp" role="3tD6jU">
@@ -500,6 +506,19 @@
           </node>
         </node>
       </node>
+      <node concept="1VhhnO" id="4Q9g1gQNesU" role="1Vhs_Z">
+        <property role="1VhhnJ" value="Type 1" />
+        <node concept="1XI84t" id="4Q9g1gQNesV" role="1VhhnL">
+          <node concept="3clFbS" id="4Q9g1gQNesW" role="2VODD2" />
+        </node>
+      </node>
+      <node concept="1VhhnO" id="4Q9g1gQNey3" role="1Vhs_Z">
+        <property role="1VhhnJ" value="Type 2" />
+        <node concept="1XI84t" id="4Q9g1gQNey4" role="1VhhnL">
+          <node concept="3clFbS" id="4Q9g1gQNey5" role="2VODD2" />
+        </node>
+      </node>
+      <node concept="1VmSv7" id="4Q9g1gQPDVP" role="1Vhs_Z" />
     </node>
   </node>
   <node concept="1X_dKu" id="7k8R9gKN2ah">
