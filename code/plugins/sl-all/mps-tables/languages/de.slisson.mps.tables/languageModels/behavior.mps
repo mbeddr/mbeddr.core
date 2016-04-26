@@ -3686,6 +3686,9 @@
               <node concept="3THzug" id="7EUu569l2gh" role="HW$YZ">
                 <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
               </node>
+              <node concept="3TUQnm" id="5ivXze38ZTE" role="HW$Y0">
+                <ref role="3TV0OU" to="bnk3:1dAqnm8r60T" resolve="QueryParameter_Node" />
+              </node>
             </node>
           </node>
         </node>
