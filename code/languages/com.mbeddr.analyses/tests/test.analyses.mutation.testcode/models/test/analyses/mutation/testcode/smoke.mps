@@ -217,7 +217,7 @@
       <ref role="3GEb4d" node="6I2T_LF5To8" resolve="suv" />
     </node>
     <node concept="1nvAUJ" id="6I2T_LF5Y0G" role="3V$2$K">
-      <property role="2lelRm" value="false" />
+      <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
       <property role="22uFEx" value="false" />
@@ -523,7 +523,7 @@
   </node>
   <node concept="0AIh7" id="6I2T_LF6d0N">
     <property role="TrG5h" value="smoke1" />
-    <property role="0AHir" value="10" />
+    <property role="0AHir" value="2" />
     <ref role="0AIBD" node="6I2T_LF5To8" resolve="suv" />
     <ref role="0AfXy" node="6I2T_LF5UeZ" resolve="harness" />
   </node>
