@@ -678,6 +678,74 @@
                                     </node>
                                   </node>
                                 </node>
+                                <node concept="3vlDli" id="5ivXze3ajBQ" role="3cqZAp">
+                                  <node concept="3cmrfG" id="5ivXze3ajBR" role="3tpDZB">
+                                    <property role="3cmrfH" value="10" />
+                                    <node concept="2EMmih" id="5ivXze3ajBS" role="lGtFl">
+                                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                                      <property role="2qtEX9" value="value" />
+                                      <property role="3hQQBS" value="IntegerConstant" />
+                                      <node concept="3cpWs3" id="5ivXze3ajBT" role="2c44t1">
+                                        <node concept="2OqwBi" id="5ivXze3ajBU" role="3uHU7w">
+                                          <node concept="37vLTw" id="5ivXze3ajBV" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="rlw0PZLNp2" resolve="_cell" />
+                                          </node>
+                                          <node concept="liA8E" id="5ivXze3ajBW" role="2OqNvi">
+                                            <ref role="37wK5l" to="f4zo:~EditorCell.getLeftGap():int" resolve="getLeftGap" />
+                                          </node>
+                                        </node>
+                                        <node concept="Xl_RD" id="5ivXze3ajBX" role="3uHU7B">
+                                          <property role="Xl_RC" value="" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="5ivXze3ajBY" role="3tpDZA">
+                                    <node concept="2OqwBi" id="5ivXze3ajBZ" role="2Oq$k0">
+                                      <node concept="37vLTw" id="5ivXze3ajC0" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="rlw0PZLPcR" resolve="cellStack" />
+                                      </node>
+                                      <node concept="1yVyf7" id="5ivXze3ajC1" role="2OqNvi" />
+                                    </node>
+                                    <node concept="liA8E" id="5ivXze3ajC2" role="2OqNvi">
+                                      <ref role="37wK5l" to="f4zo:~EditorCell.getLeftGap():int" resolve="getLeftGap" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3vlDli" id="5ivXze3ajZC" role="3cqZAp">
+                                  <node concept="3cmrfG" id="5ivXze3ajZD" role="3tpDZB">
+                                    <property role="3cmrfH" value="10" />
+                                    <node concept="2EMmih" id="5ivXze3ajZE" role="lGtFl">
+                                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                                      <property role="2qtEX9" value="value" />
+                                      <property role="3hQQBS" value="IntegerConstant" />
+                                      <node concept="3cpWs3" id="5ivXze3ajZF" role="2c44t1">
+                                        <node concept="2OqwBi" id="5ivXze3ajZG" role="3uHU7w">
+                                          <node concept="37vLTw" id="5ivXze3ajZH" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="rlw0PZLNp2" resolve="_cell" />
+                                          </node>
+                                          <node concept="liA8E" id="5ivXze3ajZI" role="2OqNvi">
+                                            <ref role="37wK5l" to="f4zo:~EditorCell.getRightGap():int" resolve="getRightGap" />
+                                          </node>
+                                        </node>
+                                        <node concept="Xl_RD" id="5ivXze3ajZJ" role="3uHU7B">
+                                          <property role="Xl_RC" value="" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="5ivXze3ajZK" role="3tpDZA">
+                                    <node concept="2OqwBi" id="5ivXze3ajZL" role="2Oq$k0">
+                                      <node concept="37vLTw" id="5ivXze3ajZM" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="rlw0PZLPcR" resolve="cellStack" />
+                                      </node>
+                                      <node concept="1yVyf7" id="5ivXze3ajZN" role="2OqNvi" />
+                                    </node>
+                                    <node concept="liA8E" id="5ivXze3ajZO" role="2OqNvi">
+                                      <ref role="37wK5l" to="f4zo:~EditorCell.getRightGap():int" resolve="getRightGap" />
+                                    </node>
+                                  </node>
+                                </node>
                                 <node concept="9aQIb" id="rlw0PZPe$b" role="3cqZAp">
                                   <node concept="3clFbS" id="rlw0PZPe$d" role="9aQI4">
                                     <node concept="3clFbH" id="rlw0PZPe$c" role="3cqZAp">

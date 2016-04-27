@@ -11,6 +11,7 @@
     <dependency reexport="false">bda054c4-5d71-46ca-aba0-7104e3070b5a(com.mbeddr.mpsutil.treenotation.styles)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <languageVersions>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" fqName="de.slisson.mps.reflection" version="0" />

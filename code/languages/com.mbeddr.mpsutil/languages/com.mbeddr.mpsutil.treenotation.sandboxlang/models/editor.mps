@@ -146,6 +146,7 @@
         <child id="134774857084558329" name="treeChildren" index="2SWKFX" />
         <child id="8433232831282980026" name="outgoingShape" index="15K7wI" />
         <child id="8433232831282980032" name="incomingShape" index="15K7xk" />
+        <child id="5587067268292708715" name="insertHandlers" index="1Vhs_Z" />
         <child id="8877288515759655537" name="deleteHandler" index="1XG3MI" />
         <child id="8877288515760225002" name="insertHandler" index="1XI8KP" />
       </concept>
@@ -164,6 +165,11 @@
         <child id="8796347991406416551" name="then" index="3u$Jl3" />
         <child id="8796347991406416554" name="else" index="3u$Jle" />
       </concept>
+      <concept id="5587067268292695520" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertHandler" flags="ng" index="1VhhnO">
+        <property id="5587067268292695547" name="description" index="1VhhnJ" />
+        <child id="5587067268292695525" name="insertFunction" index="1VhhnL" />
+      </concept>
+      <concept id="5587067268293117907" name="com.mbeddr.mpsutil.treenotation.structure.SubconceptsInsertHandler" flags="ng" index="1VmSv7" />
       <concept id="8877288515762046938" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_edges" flags="ng" index="1X_b45" />
       <concept id="8877288515762041727" name="com.mbeddr.mpsutil.treenotation.structure.ShapeReference" flags="ng" index="1X_cmw">
         <reference id="8877288515762041730" name="shape" index="1X_clt" />
@@ -500,6 +506,19 @@
           </node>
         </node>
       </node>
+      <node concept="1VhhnO" id="4Q9g1gQNesU" role="1Vhs_Z">
+        <property role="1VhhnJ" value="Type 1" />
+        <node concept="1XI84t" id="4Q9g1gQNesV" role="1VhhnL">
+          <node concept="3clFbS" id="4Q9g1gQNesW" role="2VODD2" />
+        </node>
+      </node>
+      <node concept="1VhhnO" id="4Q9g1gQNey3" role="1Vhs_Z">
+        <property role="1VhhnJ" value="Type 2" />
+        <node concept="1XI84t" id="4Q9g1gQNey4" role="1VhhnL">
+          <node concept="3clFbS" id="4Q9g1gQNey5" role="2VODD2" />
+        </node>
+      </node>
+      <node concept="1VmSv7" id="4Q9g1gQPDVP" role="1Vhs_Z" />
     </node>
   </node>
   <node concept="1X_dKu" id="7k8R9gKN2ah">

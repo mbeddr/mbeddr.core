@@ -19,6 +19,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -29,6 +32,10 @@
         <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -369,6 +376,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
     </node>
+    <node concept="1TJgyj" id="1$MI$rgzQuS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="singleLoopsUnwindings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1$MI$rgzQnB" resolve="SingleLoopUnwinding" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
       <property role="TrG5h" value="hasLocalCbmcSettings" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -607,6 +620,39 @@
       <property role="20kJfa" value="config" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$MI$rgzQnB">
+    <property role="1pbfSe" value="373153747" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="SingleLoopUnwinding" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="loop id : unwinding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1$MI$rgzQnE" role="1TKVEl">
+      <property role="TrG5h" value="unwinding" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1$MI$rgzQnG" role="1TKVEl">
+      <property role="TrG5h" value="loopID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$MI$rgLfu$">
+    <property role="1pbfSe" value="369643030" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="LoopIdAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="1$MI$rgLfuX" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="1$MI$rgLfu_" role="lGtFl">
+      <property role="Hh88m" value="loopId" />
+      <node concept="trNpa" id="1$MI$rgLfuB" role="EQaZv">
+        <ref role="trN6q" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+      </node>
     </node>
   </node>
 </model>

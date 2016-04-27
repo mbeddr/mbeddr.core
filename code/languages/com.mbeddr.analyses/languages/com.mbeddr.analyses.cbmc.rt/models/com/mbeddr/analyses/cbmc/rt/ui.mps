@@ -3669,7 +3669,7 @@
                                     <property role="TrG5h" value="states" />
                                     <node concept="_YKpA" id="5hXEsQieqkz" role="1tU5fm">
                                       <node concept="3uibUv" id="5hXEsQieqkA" role="_ZDj9">
-                                        <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+                                        <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
                                       </node>
                                     </node>
                                     <node concept="2OqwBi" id="5hXEsQieqkQ" role="33vP2m">
@@ -3707,8 +3707,8 @@
                                         </node>
                                         <node concept="1yVyf7" id="5hXEsQie$Wt" role="2OqNvi" />
                                       </node>
-                                      <node concept="liA8E" id="5hXEsQie_iX" role="2OqNvi">
-                                        <ref role="37wK5l" to="rbq9:3ccRFHLesv$" resolve="getFile" />
+                                      <node concept="2S8uIT" id="1$MI$rgKXwk" role="2OqNvi">
+                                        <ref role="2S8YL0" to="rbq9:1$MI$rgH1u9" resolve="file" />
                                       </node>
                                     </node>
                                     <node concept="37vLTw" id="5hXEsQiezr7" role="37vLTJ">
@@ -3736,8 +3736,8 @@
                                         </node>
                                         <node concept="1yVyf7" id="5hXEsQieE$O" role="2OqNvi" />
                                       </node>
-                                      <node concept="liA8E" id="5hXEsQieEVy" role="2OqNvi">
-                                        <ref role="37wK5l" to="rbq9:3ccRFHLesse" resolve="getLine" />
+                                      <node concept="2S8uIT" id="1$MI$rgKXzS" role="2OqNvi">
+                                        <ref role="2S8YL0" to="rbq9:1$MI$rgH1ug" resolve="line" />
                                       </node>
                                     </node>
                                     <node concept="37vLTw" id="5hXEsQieD0B" role="37vLTJ">
@@ -4276,7 +4276,7 @@
                                   <node concept="3cpWsn" id="5xg5HONs7r5" role="3cpWs9">
                                     <property role="TrG5h" value="rawState" />
                                     <node concept="3uibUv" id="5xg5HONs7r2" role="1tU5fm">
-                                      <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+                                      <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
                                     </node>
                                     <node concept="2OqwBi" id="5xg5HONs7r6" role="33vP2m">
                                       <node concept="37vLTw" id="5xg5HONs7r7" role="2Oq$k0">
@@ -4307,8 +4307,8 @@
                                       <node concept="37vLTw" id="5xg5HONs7r9" role="2Oq$k0">
                                         <ref role="3cqZAo" node="5xg5HONs7r5" resolve="rawState" />
                                       </node>
-                                      <node concept="liA8E" id="5xg5HONs7kV" role="2OqNvi">
-                                        <ref role="37wK5l" to="rbq9:3ccRFHLesv$" resolve="getFile" />
+                                      <node concept="2S8uIT" id="1$MI$rgKXCn" role="2OqNvi">
+                                        <ref role="2S8YL0" to="rbq9:1$MI$rgH1u9" resolve="file" />
                                       </node>
                                     </node>
                                   </node>
@@ -4343,8 +4343,8 @@
                                       <node concept="37vLTw" id="5xg5HONs7ra" role="2Oq$k0">
                                         <ref role="3cqZAo" node="5xg5HONs7r5" resolve="rawState" />
                                       </node>
-                                      <node concept="liA8E" id="5xg5HONs3JS" role="2OqNvi">
-                                        <ref role="37wK5l" to="rbq9:3ccRFHLesse" resolve="getLine" />
+                                      <node concept="2S8uIT" id="1$MI$rgKXHM" role="2OqNvi">
+                                        <ref role="2S8YL0" to="rbq9:1$MI$rgH1ug" resolve="line" />
                                       </node>
                                     </node>
                                   </node>
@@ -10656,8 +10656,8 @@
                             <node concept="2GrUjf" id="M7_V6uinFd" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="M7_V6uhekS" resolve="state" />
                             </node>
-                            <node concept="liA8E" id="M7_V6uinFe" role="2OqNvi">
-                              <ref role="37wK5l" to="rbq9:3ccRFHLesv$" resolve="getFile" />
+                            <node concept="2S8uIT" id="1$MI$rgKVh3" role="2OqNvi">
+                              <ref role="2S8YL0" to="rbq9:1$MI$rgH1u9" resolve="file" />
                             </node>
                           </node>
                         </node>
@@ -10679,8 +10679,8 @@
                           <node concept="2GrUjf" id="M7_V6uj2vM" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="M7_V6uhekS" resolve="state" />
                           </node>
-                          <node concept="liA8E" id="M7_V6uj3n9" role="2OqNvi">
-                            <ref role="37wK5l" to="rbq9:3ccRFHLesse" resolve="getLine" />
+                          <node concept="2S8uIT" id="1$MI$rgKVlE" role="2OqNvi">
+                            <ref role="2S8YL0" to="rbq9:1$MI$rgH1ug" resolve="line" />
                           </node>
                         </node>
                       </node>

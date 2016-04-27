@@ -267,7 +267,7 @@
   <node concept="2S6QgY" id="3b7nTxBXp7L">
     <property role="TrG5h" value="loadEcore" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="mwn6:3b7nTxBYUrf" resolve="EMFImportConfig" />
+    <ref role="2ZfgGC" to="mwn6:3b7nTxBYUrf" resolve="EcoreImportConfiguration" />
     <node concept="2Sbjvc" id="3b7nTxBXp7M" role="2ZfgGD">
       <node concept="3clFbS" id="3b7nTxBXp7N" role="2VODD2">
         <node concept="3cpWs8" id="4hKCzQxf_rU" role="3cqZAp">
@@ -295,8 +295,8 @@
             </node>
             <node concept="2OqwBi" id="4hKCzQxf_em" role="37vLTx">
               <node concept="2Sf5sV" id="4hKCzQxf_da" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4hKCzQxf_mX" role="2OqNvi">
-                <ref role="37wK5l" to="fewi:4hKCzQxeDXT" resolve="getEcorePath" />
+              <node concept="2qgKlT" id="6tLo6yXgyqj" role="2OqNvi">
+                <ref role="37wK5l" to="fewi:6tLo6yXgbQC" resolve="getEcorePath" />
               </node>
             </node>
           </node>
@@ -326,7 +326,7 @@
   <node concept="2S6QgY" id="5ib3QA6eQ0a">
     <property role="TrG5h" value="clearImported" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="mwn6:4RZY65c_rxo" resolve="EMFImportBase" />
+    <ref role="2ZfgGC" to="mwn6:6tLo6yXgbQv" resolve="EMFImportInterface" />
     <node concept="2S6ZIM" id="5ib3QA6eQ0b" role="2ZfVej">
       <node concept="3clFbS" id="5ib3QA6eQ0c" role="2VODD2">
         <node concept="3clFbF" id="5ib3QA6eQGz" role="3cqZAp">
@@ -458,8 +458,8 @@
           <node concept="37vLTI" id="4RZY65cAxu0" role="3clFbG">
             <node concept="2OqwBi" id="4RZY65cAx_5" role="37vLTx">
               <node concept="2Sf5sV" id="4RZY65cAxyB" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4RZY65cAxEz" role="2OqNvi">
-                <ref role="37wK5l" to="fewi:4hKCzQxeDXT" resolve="getEcorePath" />
+              <node concept="2qgKlT" id="6tLo6yXgxWV" role="2OqNvi">
+                <ref role="37wK5l" to="fewi:6tLo6yXgbQC" resolve="getEcorePath" />
               </node>
             </node>
             <node concept="2OqwBi" id="4RZY65cAxlz" role="37vLTJ">
