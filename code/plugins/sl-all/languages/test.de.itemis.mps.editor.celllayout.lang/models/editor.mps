@@ -25,6 +25,9 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
+        <property id="1235999920262" name="align" index="37lx6p" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -292,6 +295,9 @@
               <property role="3F0ifm" value="3.1" />
               <node concept="VPXOz" id="6qxMGmOfc8K" role="3F10Kt">
                 <property role="VOm3f" value="true" />
+              </node>
+              <node concept="37jFXN" id="5ivXze3a9nk" role="3F10Kt">
+                <property role="37lx6p" value="RIGHT" />
               </node>
             </node>
             <node concept="3EZMnI" id="256TR2pIXew" role="3EZMnx">

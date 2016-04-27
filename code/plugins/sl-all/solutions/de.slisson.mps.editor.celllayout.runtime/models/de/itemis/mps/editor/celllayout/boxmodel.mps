@@ -5636,6 +5636,54 @@
       <node concept="3Tm1VV" id="JPngvNsUTb" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="J7o7d6Ekqn" role="jymVt" />
+    <node concept="2YIFZL" id="2lZhNqQja_7" role="jymVt">
+      <property role="TrG5h" value="clear" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="2lZhNqQjcfI" role="3clF46">
+        <property role="TrG5h" value="cell" />
+        <node concept="3uibUv" id="2lZhNqQjct8" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2lZhNqQj9so" role="3clF47">
+        <node concept="3clFbJ" id="2lZhNqQjbX7" role="3cqZAp">
+          <node concept="3clFbS" id="2lZhNqQjbX8" role="3clFbx">
+            <node concept="3clFbF" id="2lZhNqQjdOj" role="3cqZAp">
+              <node concept="2OqwBi" id="2lZhNqQjdOl" role="3clFbG">
+                <node concept="37vLTw" id="2lZhNqQjdOm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2lZhNqQjcfI" resolve="cell" />
+                </node>
+                <node concept="liA8E" id="2lZhNqQjdOn" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+                  <node concept="37vLTw" id="2lZhNqQjdOq" role="37wK5m">
+                    <ref role="3cqZAo" node="2nPeMB3naJs" resolve="USER_OBJECT_KEY" />
+                  </node>
+                  <node concept="10Nm6u" id="2lZhNqQje6b" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2lZhNqQjcdI" role="3clFbw">
+            <node concept="10Nm6u" id="2lZhNqQjceX" role="3uHU7w" />
+            <node concept="2OqwBi" id="2lZhNqQjbXm" role="3uHU7B">
+              <node concept="37vLTw" id="2lZhNqQjbXn" role="2Oq$k0">
+                <ref role="3cqZAo" node="2lZhNqQjcfI" resolve="cell" />
+              </node>
+              <node concept="liA8E" id="2lZhNqQjbXo" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                <node concept="37vLTw" id="2lZhNqQjbXr" role="37wK5m">
+                  <ref role="3cqZAo" node="2nPeMB3naJs" resolve="USER_OBJECT_KEY" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2lZhNqQj9sm" role="3clF45" />
+      <node concept="3Tm1VV" id="2lZhNqQj9sn" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2lZhNqQj887" role="jymVt" />
     <node concept="3Tm1VV" id="3Osd_yxeiP1" role="1B3o_S" />
     <node concept="3uibUv" id="3Osd_yxeiP2" role="EKbjA">
       <ref role="3uigEE" node="1p6ZfyCPv3K" resolve="BoxModel" />
@@ -6558,12 +6606,22 @@
             </node>
             <node concept="liA8E" id="3Osd_yxeiRw" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~EditorCell.setLeftGap(int):void" resolve="setLeftGap" />
-              <node concept="2OqwBi" id="3Osd_yxeiRx" role="37wK5m">
-                <node concept="1rXfSq" id="3Osd_yxeiRy" role="2Oq$k0">
-                  <ref role="37wK5l" node="1p6ZfyCPv8d" resolve="getPaddingBox" />
+              <node concept="3cpWs3" id="5ivXze39aiN" role="37wK5m">
+                <node concept="2OqwBi" id="5ivXze39aEl" role="3uHU7w">
+                  <node concept="1rXfSq" id="5ivXze39at$" role="2Oq$k0">
+                    <ref role="37wK5l" node="7x0eTkpaBx" resolve="getAdditionalPadding" />
+                  </node>
+                  <node concept="liA8E" id="5ivXze39aJ9" role="2OqNvi">
+                    <ref role="37wK5l" node="1p6ZfyCPv6a" resolve="getLeftSize" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="3Osd_yxeiRz" role="2OqNvi">
-                  <ref role="37wK5l" node="1p6ZfyCPv6a" resolve="getLeftSize" />
+                <node concept="2OqwBi" id="3Osd_yxeiRx" role="3uHU7B">
+                  <node concept="1rXfSq" id="3Osd_yxeiRy" role="2Oq$k0">
+                    <ref role="37wK5l" node="1p6ZfyCPv8d" resolve="getPaddingBox" />
+                  </node>
+                  <node concept="liA8E" id="3Osd_yxeiRz" role="2OqNvi">
+                    <ref role="37wK5l" node="1p6ZfyCPv6a" resolve="getLeftSize" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -6576,12 +6634,22 @@
             </node>
             <node concept="liA8E" id="3Osd_yxeiRB" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~EditorCell.setRightGap(int):void" resolve="setRightGap" />
-              <node concept="2OqwBi" id="3Osd_yxeiRC" role="37wK5m">
-                <node concept="1rXfSq" id="3Osd_yxeiRD" role="2Oq$k0">
-                  <ref role="37wK5l" node="1p6ZfyCPv8d" resolve="getPaddingBox" />
+              <node concept="3cpWs3" id="5ivXze39b0d" role="37wK5m">
+                <node concept="2OqwBi" id="5ivXze39bnw" role="3uHU7w">
+                  <node concept="1rXfSq" id="5ivXze39baQ" role="2Oq$k0">
+                    <ref role="37wK5l" node="7x0eTkpaBx" resolve="getAdditionalPadding" />
+                  </node>
+                  <node concept="liA8E" id="5ivXze39bsk" role="2OqNvi">
+                    <ref role="37wK5l" node="1p6ZfyCPv6e" resolve="getRightSize" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="3Osd_yxeiRE" role="2OqNvi">
-                  <ref role="37wK5l" node="1p6ZfyCPv6e" resolve="getRightSize" />
+                <node concept="2OqwBi" id="3Osd_yxeiRC" role="3uHU7B">
+                  <node concept="1rXfSq" id="3Osd_yxeiRD" role="2Oq$k0">
+                    <ref role="37wK5l" node="1p6ZfyCPv8d" resolve="getPaddingBox" />
+                  </node>
+                  <node concept="liA8E" id="3Osd_yxeiRE" role="2OqNvi">
+                    <ref role="37wK5l" node="1p6ZfyCPv6e" resolve="getRightSize" />
+                  </node>
                 </node>
               </node>
             </node>
