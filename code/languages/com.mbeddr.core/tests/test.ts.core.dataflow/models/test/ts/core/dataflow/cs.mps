@@ -58,7 +58,13 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
+        <child id="6282313788306893059" name="index" index="2wJmCp" />
+      </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
+      </concept>
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="6883925235272353061" name="com.mbeddr.core.pointers.structure.SizeOfExprForExpressions" flags="ng" index="Vihyy" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
@@ -69,6 +75,20 @@
     <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
       <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
         <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
+        <child id="8729447926330241132" name="range" index="n2wFf" />
+        <child id="8729447926330241139" name="body" index="n2wFg" />
+      </concept>
+      <concept id="7297559910934293472" name="com.mbeddr.core.util.structure.ForRangeRef" flags="ng" index="1f68ZN">
+        <reference id="7297559910934293473" name="forRange" index="1f68ZM" />
+      </concept>
+      <concept id="6307143892175911066" name="com.mbeddr.core.util.structure.RangeExpression" flags="ng" index="1vV05I">
+        <property id="8729447926330623085" name="rightExclude" index="n43Ve" />
+        <child id="6307143892175911068" name="right" index="1vV05C" />
+        <child id="6307143892175911067" name="left" index="1vV05J" />
       </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
@@ -83,6 +103,18 @@
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
       <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
         <reference id="6394819151180597817" name="struct" index="1sgJKq" />
+      </concept>
+      <concept id="8811614583515726007" name="com.mbeddr.core.udt.structure.EnumLiteralRef" flags="ng" index="1AkAhK">
+        <reference id="8811614583515726008" name="literal" index="1AkAhZ" />
+      </concept>
+      <concept id="8811614583515725893" name="com.mbeddr.core.udt.structure.EnumType" flags="ng" index="1AkAi2">
+        <reference id="8811614583515725894" name="enum" index="1AkAi1" />
+      </concept>
+      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq">
+        <child id="8811614583515725856" name="init" index="1AkAjB" />
+      </concept>
+      <concept id="8811614583515725851" name="com.mbeddr.core.udt.structure.EnumDeclaration" flags="ng" index="1AkAjs">
+        <child id="8811614583515725857" name="literals" index="1AkAjA" />
       </concept>
       <concept id="7034214596253391076" name="com.mbeddr.core.udt.structure.GenericMemberRef" flags="ng" index="1E4Tgc">
         <reference id="7034214596253391078" name="member" index="1E4Tge" />
@@ -136,6 +168,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -162,11 +195,13 @@
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
+      <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
         <child id="6610873504380029782" name="expr" index="1S8S4V" />
       </concept>
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -1328,6 +1363,577 @@
       <node concept="19Rifw" id="4byGjaZlLbs" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="6STLv_Cqb1d">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="colors" />
+    <node concept="1AkAjs" id="54Sa2slvpwC" role="N3F5h">
+      <property role="TrG5h" value="Color" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1AkAjq" id="54Sa2slvpwD" role="1AkAjA">
+        <property role="TrG5h" value="BLACK" />
+        <node concept="3Hbq_t" id="5gpLkTr8vY_" role="1AkAjB">
+          <property role="2hmy$m" value="03000000" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwE" role="1AkAjA">
+        <property role="TrG5h" value="BLUE" />
+        <node concept="3Hbq_t" id="5gpLkTr8HDN" role="1AkAjB">
+          <property role="2hmy$m" value="03800000" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwF" role="1AkAjA">
+        <property role="TrG5h" value="GREEN" />
+        <node concept="3Hbq_t" id="5gpLkTr8IWk" role="1AkAjB">
+          <property role="2hmy$m" value="03008000" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwG" role="1AkAjA">
+        <property role="TrG5h" value="CYAN" />
+        <node concept="3Hbq_t" id="5gpLkTr8KdZ" role="1AkAjB">
+          <property role="2hmy$m" value="03808000" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwH" role="1AkAjA">
+        <property role="TrG5h" value="RED" />
+        <node concept="3Hbq_t" id="5gpLkTr8LuY" role="1AkAjB">
+          <property role="2hmy$m" value="03000080" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwI" role="1AkAjA">
+        <property role="TrG5h" value="MAGENTA" />
+        <node concept="3Hbq_t" id="5gpLkTr8MJl" role="1AkAjB">
+          <property role="2hmy$m" value="03800080" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwJ" role="1AkAjA">
+        <property role="TrG5h" value="BROWN" />
+        <node concept="3Hbq_t" id="5gpLkTr8NZ0" role="1AkAjB">
+          <property role="2hmy$m" value="03008080" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwK" role="1AkAjA">
+        <property role="TrG5h" value="LIGHTGRAY" />
+        <node concept="3Hbq_t" id="5gpLkTr8PdX" role="1AkAjB">
+          <property role="2hmy$m" value="03C0C0C0" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwL" role="1AkAjA">
+        <property role="TrG5h" value="DARKGRAY" />
+        <node concept="3Hbq_t" id="5gpLkTr8Qse" role="1AkAjB">
+          <property role="2hmy$m" value="03808080" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwM" role="1AkAjA">
+        <property role="TrG5h" value="LIGHTBLUE" />
+        <node concept="3Hbq_t" id="5gpLkTr8RDL" role="1AkAjB">
+          <property role="2hmy$m" value="03FF8080" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwN" role="1AkAjA">
+        <property role="TrG5h" value="LIGHTGREEN" />
+        <node concept="3Hbq_t" id="5gpLkTr8SQ$" role="1AkAjB">
+          <property role="2hmy$m" value="0380FF80" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwO" role="1AkAjA">
+        <property role="TrG5h" value="LIGHTCYAN" />
+        <node concept="3Hbq_t" id="5gpLkTr8U2F" role="1AkAjB">
+          <property role="2hmy$m" value="03FFFF80" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwP" role="1AkAjA">
+        <property role="TrG5h" value="LIGHTRED" />
+        <node concept="3Hbq_t" id="5gpLkTr8Ve2" role="1AkAjB">
+          <property role="2hmy$m" value="038080FF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwQ" role="1AkAjA">
+        <property role="TrG5h" value="LIGHTMAGENTA" />
+        <node concept="3Hbq_t" id="5gpLkTr8WoF" role="1AkAjB">
+          <property role="2hmy$m" value="03FF80FF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwR" role="1AkAjA">
+        <property role="TrG5h" value="YELLOW" />
+        <node concept="3Hbq_t" id="5gpLkTr8XyA" role="1AkAjB">
+          <property role="2hmy$m" value="0300FFFF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwS" role="1AkAjA">
+        <property role="TrG5h" value="WHITE" />
+        <node concept="3Hbq_t" id="5gpLkTr8YFL" role="1AkAjB">
+          <property role="2hmy$m" value="03FFFFFF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwT" role="1AkAjA">
+        <property role="TrG5h" value="CRIMSON" />
+        <node concept="3Hbq_t" id="54Sa2slvvct" role="1AkAjB">
+          <property role="2hmy$m" value="033C14DC" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwU" role="1AkAjA">
+        <property role="TrG5h" value="CHOCOLATE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcu" role="1AkAjB">
+          <property role="2hmy$m" value="033C14DC" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwV" role="1AkAjA">
+        <property role="TrG5h" value="GOLDENROD" />
+        <node concept="3Hbq_t" id="54Sa2slvvcv" role="1AkAjB">
+          <property role="2hmy$m" value="0320A5DA" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwW" role="1AkAjA">
+        <property role="TrG5h" value="DARKORANGE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcw" role="1AkAjB">
+          <property role="2hmy$m" value="03008CFF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwX" role="1AkAjA">
+        <property role="TrG5h" value="REDRED" />
+        <node concept="3Hbq_t" id="54Sa2slvvcs" role="1AkAjB">
+          <property role="2hmy$m" value="030000FF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwY" role="1AkAjA">
+        <property role="TrG5h" value="DARKSLATEGRAY" />
+        <node concept="3Hbq_t" id="54Sa2slvvcz" role="1AkAjB">
+          <property role="2hmy$m" value="034F4F2F" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpwZ" role="1AkAjA">
+        <property role="TrG5h" value="DEEPPINK" />
+        <node concept="3Hbq_t" id="54Sa2slvvc$" role="1AkAjB">
+          <property role="2hmy$m" value="039314FF" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx0" role="1AkAjA">
+        <property role="TrG5h" value="TURQUOISE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcA" role="1AkAjB">
+          <property role="2hmy$m" value="03D0E040" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx1" role="1AkAjA">
+        <property role="TrG5h" value="DARKVIOLET" />
+        <node concept="3Hbq_t" id="54Sa2slvvcB" role="1AkAjB">
+          <property role="2hmy$m" value="03D30094" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx2" role="1AkAjA">
+        <property role="TrG5h" value="BEIGE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcC" role="1AkAjB">
+          <property role="2hmy$m" value="03DCF5F5" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx3" role="1AkAjA">
+        <property role="TrG5h" value="MEDIUMSEAGREEN" />
+        <node concept="3Hbq_t" id="54Sa2slvvcD" role="1AkAjB">
+          <property role="2hmy$m" value="0371B33C" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx4" role="1AkAjA">
+        <property role="TrG5h" value="LIMEGREEN" />
+        <node concept="3Hbq_t" id="54Sa2slvvcE" role="1AkAjB">
+          <property role="2hmy$m" value="0332CD32" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx5" role="1AkAjA">
+        <property role="TrG5h" value="DARKGREEN" />
+        <node concept="3Hbq_t" id="54Sa2slvvcF" role="1AkAjB">
+          <property role="2hmy$m" value="03006400" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx6" role="1AkAjA">
+        <property role="TrG5h" value="MEDIUMBLUE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcG" role="1AkAjB">
+          <property role="2hmy$m" value="03CD0000" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx7" role="1AkAjA">
+        <property role="TrG5h" value="BLUEBLUE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcH" role="1AkAjB">
+          <property role="2hmy$m" value="03FF0000" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="54Sa2slvpx8" role="1AkAjA">
+        <property role="TrG5h" value="DODGERBLUE" />
+        <node concept="3Hbq_t" id="54Sa2slvvcI" role="1AkAjB">
+          <property role="2hmy$m" value="03FF901E" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="54Sa2slvpwB" role="N3F5h">
+      <property role="TrG5h" value="empty_1372383724546_2" />
+    </node>
+    <node concept="1sgJKc" id="6STLv_Cqb1e" role="N3F5h">
+      <property role="TrG5h" value="ColorName" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="6STLv_Cqb2H" role="HszBJ">
+        <property role="TrG5h" value="color" />
+        <node concept="1AkAi2" id="54Sa2slvsfD" role="2C2TGm">
+          <ref role="1AkAi1" node="54Sa2slvpwC" resolve="Color" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="6STLv_Cqb1f" role="HszBJ">
+        <property role="TrG5h" value="name" />
+        <node concept="Pu267" id="6STLv_Cqb1g" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6STLv_Cqb2N" role="N3F5h">
+      <property role="TrG5h" value="empty_1371689732307_42" />
+    </node>
+    <node concept="1S7NMz" id="6STLv_Cqb2O" role="N3F5h">
+      <property role="TrG5h" value="COLOR_NAMES" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3J0A42" id="6STLv_Cqb2Q" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="1sgJKr" id="6STLv_Cqb2P" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="true" />
+          <ref role="1sgJKq" node="6STLv_Cqb1e" resolve="ColorName" />
+        </node>
+      </node>
+      <node concept="3o3WLD" id="1gh97vKwQFJ" role="1cecVj">
+        <node concept="3o3WLD" id="1gh97vKyirl" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfE" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwD" resolve="BLACK" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb3Q" role="3o3WLE">
+            <property role="PhEJT" value="black" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxMOK" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfF" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwE" resolve="BLUE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb3U" role="3o3WLE">
+            <property role="PhEJT" value="blue" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxS$0" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfG" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwF" resolve="GREEN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb3X" role="3o3WLE">
+            <property role="PhEJT" value="green" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKyccO" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfH" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwG" resolve="CYAN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb40" role="3o3WLE">
+            <property role="PhEJT" value="cyan" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxzBY" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfI" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwH" resolve="RED" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb43" role="3o3WLE">
+            <property role="PhEJT" value="red" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKy08d" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfJ" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwI" resolve="MAGENTA" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb46" role="3o3WLE">
+            <property role="PhEJT" value="magenta" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxOSm" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfK" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwJ" resolve="BROWN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb49" role="3o3WLE">
+            <property role="PhEJT" value="brown" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKyk4U" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfL" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwK" resolve="LIGHTGRAY" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4c" role="3o3WLE">
+            <property role="PhEJT" value="light gray" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKx_ja" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfM" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwL" resolve="DARKGRAY" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4f" role="3o3WLE">
+            <property role="PhEJT" value="dark gray" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxVNh" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfN" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwM" resolve="LIGHTBLUE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4i" role="3o3WLE">
+            <property role="PhEJT" value="light blue" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxUEr" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfO" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwN" resolve="LIGHTGREEN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4l" role="3o3WLE">
+            <property role="PhEJT" value="light green" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxKe9" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfP" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwO" resolve="LIGHTCYAN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4A" role="3o3WLE">
+            <property role="PhEJT" value="light cyan" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxw8W" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfQ" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwP" resolve="LIGHTRED" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4D" role="3o3WLE">
+            <property role="PhEJT" value="light red" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxTwn" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfR" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwQ" resolve="LIGHTMAGENTA" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4G" role="3o3WLE">
+            <property role="PhEJT" value="light magenta" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxCfF" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfS" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwR" resolve="YELLOW" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4J" role="3o3WLE">
+            <property role="PhEJT" value="yellow" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKyc5d" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfT" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwS" resolve="WHITE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb65" role="3o3WLE">
+            <property role="PhEJT" value="while" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKygLK" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfU" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwT" resolve="CRIMSON" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb4Q" role="3o3WLE">
+            <property role="PhEJT" value="crimson" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKy8n$" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfV" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwU" resolve="CHOCOLATE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5b" role="3o3WLE">
+            <property role="PhEJT" value="chocolate" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxCdD" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfW" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwV" resolve="GOLDENROD" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5e" role="3o3WLE">
+            <property role="PhEJT" value="golden rod" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxzAt" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfX" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwW" resolve="DARKORANGE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5h" role="3o3WLE">
+            <property role="PhEJT" value="dark orange" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxyvN" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfY" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwX" resolve="REDRED" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5k" role="3o3WLE">
+            <property role="PhEJT" value="red red" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxA8V" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsfZ" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwY" resolve="DARKSLATEGRAY" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5n" role="3o3WLE">
+            <property role="PhEJT" value="dark slate gray" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxYZv" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg0" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpwZ" resolve="DEEPPINK" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5q" role="3o3WLE">
+            <property role="PhEJT" value="deep pink" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxw7r" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg1" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx0" resolve="TURQUOISE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5t" role="3o3WLE">
+            <property role="PhEJT" value="turquoise" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxEQG" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg2" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx1" resolve="DARKVIOLET" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5w" role="3o3WLE">
+            <property role="PhEJT" value="dark violet" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKy54Y" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg3" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx2" resolve="BEIGE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5z" role="3o3WLE">
+            <property role="PhEJT" value="beige" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxJM8" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg4" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx3" resolve="MEDIUMSEAGREEN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5A" role="3o3WLE">
+            <property role="PhEJT" value="medium sea green" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxMpe" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg5" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx4" resolve="LIMEGREEN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5D" role="3o3WLE">
+            <property role="PhEJT" value="lime green" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxJmA" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg6" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx5" resolve="DARKGREEN" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5G" role="3o3WLE">
+            <property role="PhEJT" value="dark green" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKy3Pq" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg7" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx6" resolve="MEDIUMBLUE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5J" role="3o3WLE">
+            <property role="PhEJT" value="medium blue" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxL9E" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg8" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx7" resolve="BLUEBLUE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5M" role="3o3WLE">
+            <property role="PhEJT" value="blue blue" />
+          </node>
+        </node>
+        <node concept="3o3WLD" id="1gh97vKxyHm" role="3o3WLE">
+          <node concept="1AkAhK" id="54Sa2slvsg9" role="3o3WLE">
+            <ref role="1AkAhZ" node="54Sa2slvpx8" resolve="DODGERBLUE" />
+          </node>
+          <node concept="PhEJO" id="6STLv_Cqb5P" role="3o3WLE">
+            <property role="PhEJT" value="dodger blue" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6Mh_IvaGlmR" role="N3F5h">
+      <property role="TrG5h" value="empty_1371717214827_1" />
+    </node>
+    <node concept="N3Fnx" id="6Mh_IvaGlmV" role="N3F5h">
+      <property role="TrG5h" value="colorName" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="6Mh_IvaGlmX" role="3XIRFX">
+        <node concept="n2Vfv" id="6Mh_IvaGln1" role="3XIRFZ">
+          <property role="TrG5h" value="i" />
+          <node concept="1vV05I" id="6Mh_IvaGln2" role="n2wFf">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="6Mh_IvaGln6" role="1vV05J">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="Vihyy" id="6Mh_IvaGln7" role="1vV05C">
+              <node concept="1S7827" id="6Mh_IvaGln9" role="1_9fRO">
+                <ref role="1S7826" node="6STLv_Cqb2O" resolve="COLOR_NAMES" />
+              </node>
+            </node>
+          </node>
+          <node concept="3XIRFW" id="6Mh_IvaGln5" role="n2wFg">
+            <node concept="c0U19" id="6Mh_IvaGlna" role="3XIRFZ">
+              <node concept="3XIRFW" id="6Mh_IvaGlnb" role="c0U17">
+                <node concept="2BFjQ_" id="6Mh_IvaGlnw" role="3XIRFZ">
+                  <node concept="2qmXGp" id="4vA5g9i30Yl" role="2BFjQA">
+                    <node concept="2wJmCr" id="6Mh_IvaGln$" role="1_9fRO">
+                      <node concept="1S7827" id="6Mh_IvaGlnx" role="1_9fRO">
+                        <ref role="1S7826" node="6STLv_Cqb2O" resolve="COLOR_NAMES" />
+                      </node>
+                      <node concept="1f68ZN" id="6Mh_IvaGln_" role="2wJmCp">
+                        <ref role="1f68ZM" node="6Mh_IvaGln1" resolve="i" />
+                      </node>
+                    </node>
+                    <node concept="1E4Tgc" id="4vA5g9i30Ym" role="1ESnxz">
+                      <ref role="1E4Tge" node="6STLv_Cqb1f" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TlM44" id="6Mh_IvaGlnk" role="c0U16">
+                <node concept="3ZUYvv" id="6Mh_IvaGlnn" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="6Mh_IvaGlmZ" resolve="color" />
+                </node>
+                <node concept="2qmXGp" id="4vA5g9i2YyH" role="3TlMhI">
+                  <node concept="2wJmCr" id="6Mh_IvaGlng" role="1_9fRO">
+                    <node concept="1S7827" id="6Mh_IvaGlnd" role="1_9fRO">
+                      <ref role="1S7826" node="6STLv_Cqb2O" resolve="COLOR_NAMES" />
+                    </node>
+                    <node concept="1f68ZN" id="6Mh_IvaGlnh" role="2wJmCp">
+                      <ref role="1f68ZM" node="6Mh_IvaGln1" resolve="i" />
+                    </node>
+                  </node>
+                  <node concept="1E4Tgc" id="4vA5g9i2YyI" role="1ESnxz">
+                    <ref role="1E4Tge" node="6STLv_Cqb2H" resolve="color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2BFjQ_" id="6Mh_IvaGlnI" role="3XIRFZ">
+          <node concept="PhEJO" id="6Mh_IvaGlnK" role="2BFjQA">
+            <property role="PhEJT" value="unknown" />
+          </node>
+        </node>
+      </node>
+      <node concept="Pu267" id="6Mh_IvaGlmU" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="true" />
+      </node>
+      <node concept="19RgSI" id="6Mh_IvaGlmZ" role="1UOdpc">
+        <property role="TrG5h" value="color" />
+        <node concept="1AkAi2" id="54Sa2slvsga" role="2C2TGm">
+          <ref role="1AkAi1" node="54Sa2slvpwC" resolve="Color" />
+        </node>
       </node>
     </node>
   </node>
