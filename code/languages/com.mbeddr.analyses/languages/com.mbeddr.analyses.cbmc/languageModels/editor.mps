@@ -71,7 +71,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
@@ -8046,9 +8045,6 @@
           <ref role="1NtTu8" to="q5q6:1$MI$rgLfuX" resolve="id" />
           <node concept="VechU" id="1$MI$rgLf$s" role="3F10Kt">
             <property role="Vb096" value="magenta" />
-          </node>
-          <node concept="xShMh" id="4fHsc9Ys6Hm" role="3F10Kt">
-            <property role="VOm3f" value="true" />
           </node>
           <node concept="VPxyj" id="4fHsc9Ys6Fs" role="3F10Kt">
             <property role="VOm3f" value="false" />
