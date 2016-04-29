@@ -3020,6 +3020,19 @@
       <node concept="17QB3L" id="3kUGzlRgWzV" role="3clF45" />
       <node concept="3Tm1VV" id="4_pSipqVBqR" role="1B3o_S" />
       <node concept="3clFbS" id="3kUGzlRgWzT" role="3clF47">
+        <node concept="3clFbJ" id="2CUyvm3odls" role="3cqZAp">
+          <node concept="3clFbS" id="2CUyvm3odlu" role="3clFbx">
+            <node concept="3cpWs6" id="2CUyvm3odX2" role="3cqZAp">
+              <node concept="10Nm6u" id="2CUyvm3oe6v" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2CUyvm3odIm" role="3clFbw">
+            <node concept="10Nm6u" id="2CUyvm3odLh" role="3uHU7w" />
+            <node concept="37vLTw" id="2CUyvm3odvD" role="3uHU7B">
+              <ref role="3cqZAo" node="3kUGzlRgWzW" resolve="fct" />
+            </node>
+          </node>
+        </node>
         <node concept="Jncv_" id="3kUGzlRgWzY" role="3cqZAp">
           <ref role="JncvD" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
           <node concept="3cpWs2" id="3kUGzlRgW_2" role="JncvB">
@@ -7357,7 +7370,7 @@
         <node concept="3clFbF" id="7$8IbnDjXcm" role="3cqZAp">
           <node concept="2YIFZM" id="7$8IbnDjYTs" role="3clFbG">
             <ref role="37wK5l" to="q9jj:7$8IbnDjXjW" resolve="logStatus" />
-            <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="Logger" />
+            <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="MbeddrLogger" />
             <node concept="3VsKOn" id="7$8IbnDjYU$" role="37wK5m">
               <ref role="3VsUkX" node="3T2UJ1pSoYT" resolve="CProverToolRunnerManager" />
             </node>
@@ -7527,7 +7540,7 @@
       <node concept="3clFbS" id="p7QU0IXBOk" role="3clF47">
         <node concept="3clFbF" id="p7QU0IXBOl" role="3cqZAp">
           <node concept="2YIFZM" id="p7QU0IXBOm" role="3clFbG">
-            <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="Logger" />
+            <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="MbeddrLogger" />
             <ref role="37wK5l" to="q9jj:7$8IbnDjXjW" resolve="logStatus" />
             <node concept="3VsKOn" id="p7QU0IXBOn" role="37wK5m">
               <ref role="3VsUkX" node="3T2UJ1pSoYT" resolve="CProverToolRunnerManager" />
