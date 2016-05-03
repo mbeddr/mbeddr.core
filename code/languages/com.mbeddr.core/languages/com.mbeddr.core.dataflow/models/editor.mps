@@ -90,7 +90,7 @@
     <node concept="3EZMnI" id="3QkagoxiVAF" role="2wV5jI">
       <node concept="2iRkQZ" id="3QkagoxiVAI" role="2iSdaV" />
       <node concept="3F0ifn" id="7TdqwvhyxMi" role="3EZMnx">
-        <property role="3F0ifm" value="@With inter-procedural data-flow graph" />
+        <property role="3F0ifm" value="@On Inter-procedural Data-flow Graph" />
       </node>
       <node concept="2SsqMj" id="3QkagoxiVAS" role="3EZMnx" />
     </node>
