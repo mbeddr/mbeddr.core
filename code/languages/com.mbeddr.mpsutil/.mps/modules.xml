@@ -31,13 +31,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.importing.propspool/com.mbeddr.mpsutil.emf.importing.propspool.mpl" folder="emf" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.importing.test.lang/com.mbeddr.mpsutil.emf.importing.test.lang.mpl" folder="emf" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.reqif/com.mbeddr.mpsutil.emf.reqif.mpl" folder="emf" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="emf" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.testing.importer/com.mbeddr.mpsutil.emf.testing.importer.mpl" folder="emf" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.mpl" folder="emf" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emfimport.test.lang/com.mbeddr.mpsutil.emfimport.test.lang.mpl" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/solutions/pluginSolution/com.mbeddr.mpsutil.favourites.plugin.msd" folder="projectview" />
@@ -132,7 +125,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.emf.importing.test.solution/com.mbeddr.mpsutil.emf.importing.test.solution.msd" folder="emf" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.extensionclass.annotation/com.mbeddr.mpsutil.extensionclass.annotation.msd" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.globalgenerators.runtime/com.mbeddr.mpsutil.globalgenerators.runtime.msd" folder="globalGenerators" />
@@ -151,7 +143,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.licensemanager.common.runtime/com.mbeddr.mpsutil.licensemanager.common.runtime.msd" folder="licensemanager" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.make/com.mbeddr.mpsutil.make.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime.msd" folder="margincell_review" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.modelcache/com.mbeddr.mpsutil.modelcache.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.modellisteners.runtime/com.mbeddr.mpsutil.modellisteners.runtime.msd" folder="modellisteners" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.modellisteners.sandbox/com.mbeddr.mpsutil.modellisteners.sandbox.msd" folder="modellisteners" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.msd" folder="multilingual" />
@@ -187,7 +178,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.runtime/com.mbeddr.mpsutil.userstyles.runtime.msd" folder="userstyles" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.sandbox/com.mbeddr.mpsutil.userstyles.sandbox.msd" folder="userstyles" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpustil.emfimport.test.sl/com.mbeddr.mpustil.emfimport.test.sl.msd" folder="emf" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="comparator" />
