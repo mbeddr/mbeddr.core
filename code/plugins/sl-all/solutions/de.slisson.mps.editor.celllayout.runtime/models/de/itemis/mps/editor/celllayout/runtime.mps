@@ -29,6 +29,7 @@
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
@@ -230,7 +231,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -256,6 +259,9 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
@@ -10290,6 +10296,33 @@
         </node>
       </node>
       <node concept="3clFbS" id="3Osd_yxgaF8" role="3clF47">
+        <node concept="3clFbJ" id="1cPvvekEm7a" role="3cqZAp">
+          <node concept="3clFbS" id="1cPvvekEm7b" role="3clFbx">
+            <node concept="3cpWs6" id="1cPvvekEm7c" role="3cqZAp">
+              <node concept="2OqwBi" id="1cPvvekEm7d" role="3cqZAk">
+                <node concept="2ShNRf" id="1cPvvekEm7e" role="2Oq$k0">
+                  <node concept="HV5vD" id="1cPvvekEm7f" role="2ShVmc">
+                    <ref role="HV5vE" node="1cPvvekDP_q" resolve="LayoutInterceptor.IndentLayoutFixes" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1cPvvekEm7g" role="2OqNvi">
+                  <ref role="37wK5l" node="1cPvvekDQHf" resolve="getSelectionBounds" />
+                  <node concept="37vLTw" id="1cPvvekEm7h" role="37wK5m">
+                    <ref role="3cqZAo" node="3Osd_yxgaF6" resolve="collection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="1cPvvekEm7i" role="3clFbw">
+            <node concept="3uibUv" id="1cPvvekEm7j" role="2ZW6by">
+              <ref role="3uigEE" to="kcid:~CellLayout_Indent" resolve="CellLayout_Indent" />
+            </node>
+            <node concept="37vLTw" id="1cPvvekEm7k" role="2ZW6bz">
+              <ref role="3cqZAo" node="3Osd_yxgbd5" resolve="myOriginalLayout" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="rlw0PZV1E2" role="3cqZAp">
           <node concept="2OqwBi" id="3Osd_yxgfyd" role="3clFbG">
             <node concept="37vLTw" id="3Osd_yxgfra" role="2Oq$k0">
@@ -10355,14 +10388,41 @@
         </node>
       </node>
       <node concept="3clFbS" id="3Osd_yxgaFr" role="3clF47">
-        <node concept="3clFbF" id="3Osd_yxgeMA" role="3cqZAp">
-          <node concept="2OqwBi" id="3Osd_yxgeTA" role="3clFbG">
-            <node concept="37vLTw" id="3Osd_yxgeM_" role="2Oq$k0">
+        <node concept="3clFbJ" id="1cPvvekDN0C" role="3cqZAp">
+          <node concept="3clFbS" id="1cPvvekDN0E" role="3clFbx">
+            <node concept="3cpWs6" id="1cPvvekE8Nh" role="3cqZAp">
+              <node concept="2OqwBi" id="1cPvvekEl1J" role="3cqZAk">
+                <node concept="2ShNRf" id="1cPvvekE93g" role="2Oq$k0">
+                  <node concept="HV5vD" id="1cPvvekEkHU" role="2ShVmc">
+                    <ref role="HV5vE" node="1cPvvekDP_q" resolve="LayoutInterceptor.IndentLayoutFixes" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1cPvvekEloQ" role="2OqNvi">
+                  <ref role="37wK5l" node="1cPvvekDQH3" resolve="getSelectionCells" />
+                  <node concept="37vLTw" id="1cPvvekElMx" role="37wK5m">
+                    <ref role="3cqZAo" node="3Osd_yxgaFp" resolve="collection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="1cPvvekDNvG" role="3clFbw">
+            <node concept="3uibUv" id="1cPvvekDNAH" role="2ZW6by">
+              <ref role="3uigEE" to="kcid:~CellLayout_Indent" resolve="CellLayout_Indent" />
+            </node>
+            <node concept="37vLTw" id="1cPvvekDNhT" role="2ZW6bz">
               <ref role="3cqZAo" node="3Osd_yxgbd5" resolve="myOriginalLayout" />
             </node>
-            <node concept="liA8E" id="3Osd_yxgf0X" role="2OqNvi">
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1cPvvekDKYI" role="3cqZAp">
+          <node concept="2OqwBi" id="1cPvvekDKYK" role="3cqZAk">
+            <node concept="37vLTw" id="1cPvvekDKYL" role="2Oq$k0">
+              <ref role="3cqZAo" node="3Osd_yxgbd5" resolve="myOriginalLayout" />
+            </node>
+            <node concept="liA8E" id="1cPvvekDKYM" role="2OqNvi">
               <ref role="37wK5l" to="kcid:~CellLayout.getSelectionCells(jetbrains.mps.openapi.editor.cells.EditorCell_Collection):java.util.List" resolve="getSelectionCells" />
-              <node concept="37vLTw" id="3Osd_yxgfc5" role="37wK5m">
+              <node concept="37vLTw" id="1cPvvekDKYN" role="37wK5m">
                 <ref role="3cqZAo" node="3Osd_yxgaFp" resolve="collection" />
               </node>
             </node>
@@ -10373,6 +10433,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1cPvvekDNBs" role="jymVt" />
     <node concept="3clFb_" id="3Osd_yxgaFu" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="requestRelayout" />
@@ -10868,6 +10929,402 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1cPvvekE651" role="jymVt" />
+    <node concept="312cEu" id="1cPvvekDP_q" role="jymVt">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="IndentLayoutFixes" />
+      <node concept="3clFb_" id="1cPvvekDQH3" role="jymVt">
+        <property role="TrG5h" value="getSelectionCells" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="37vLTG" id="1cPvvekDQH5" role="3clF46">
+          <property role="TrG5h" value="editorCells" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDSCY" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1cPvvekDQH7" role="3clF47">
+          <node concept="3cpWs6" id="1cPvvekDQH8" role="3cqZAp">
+            <node concept="1rXfSq" id="1cPvvekDQH9" role="3cqZAk">
+              <ref role="37wK5l" node="1cPvvekE1kC" resolve="getIndentLeafs" />
+              <node concept="37vLTw" id="1cPvvekDQHa" role="37wK5m">
+                <ref role="3cqZAo" node="1cPvvekDQH5" resolve="editorCells" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1cPvvekDQHb" role="1B3o_S" />
+        <node concept="3uibUv" id="1cPvvekDQHc" role="3clF45">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3qUE_q" id="1cPvvekDQHe" role="11_B2D">
+            <node concept="3uibUv" id="1cPvvekDY25" role="3qUE_r">
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFb_" id="1cPvvekDQHf" role="jymVt">
+        <property role="TrG5h" value="getSelectionBounds" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="37vLTG" id="1cPvvekDQHh" role="3clF46">
+          <property role="TrG5h" value="editorCells" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDSUF" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1cPvvekDQHj" role="3clF47">
+          <node concept="3cpWs8" id="1cPvvekDQHl" role="3cqZAp">
+            <node concept="3cpWsn" id="1cPvvekDQHk" role="3cpWs9">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="result" />
+              <node concept="3uibUv" id="1cPvvekDQHm" role="1tU5fm">
+                <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                <node concept="3uibUv" id="1cPvvekDQHn" role="11_B2D">
+                  <ref role="3uigEE" to="z60i:~Rectangle" resolve="Rectangle" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="1cPvvekDQHK" role="33vP2m">
+                <node concept="1pGfFk" id="1cPvvekDQHL" role="2ShVmc">
+                  <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                  <node concept="3uibUv" id="1cPvvekDQHp" role="1pMfVU">
+                    <ref role="3uigEE" to="z60i:~Rectangle" resolve="Rectangle" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="1cPvvekDQHr" role="3cqZAp">
+            <node concept="3cpWsn" id="1cPvvekDQHq" role="3cpWs9">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="indentLeafs" />
+              <node concept="3uibUv" id="1cPvvekDQHs" role="1tU5fm">
+                <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                <node concept="3uibUv" id="1cPvvekDXct" role="11_B2D">
+                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                </node>
+              </node>
+              <node concept="1rXfSq" id="1cPvvekDQHu" role="33vP2m">
+                <ref role="37wK5l" node="1cPvvekE1kC" resolve="getIndentLeafs" />
+                <node concept="37vLTw" id="1cPvvekDQHv" role="37wK5m">
+                  <ref role="3cqZAo" node="1cPvvekDQHh" resolve="editorCells" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1DcWWT" id="1cPvvekDQHw" role="3cqZAp">
+            <node concept="37vLTw" id="1cPvvekDQHE" role="1DdaDG">
+              <ref role="3cqZAo" node="1cPvvekDQHq" resolve="indentLeafs" />
+            </node>
+            <node concept="3cpWsn" id="1cPvvekDQHB" role="1Duv9x">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="leaf" />
+              <node concept="3uibUv" id="1cPvvekDWqe" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="1cPvvekDQHy" role="2LFqv$">
+              <node concept="3clFbF" id="1cPvvekDQHz" role="3cqZAp">
+                <node concept="2OqwBi" id="1cPvvekDQHR" role="3clFbG">
+                  <node concept="37vLTw" id="1cPvvekDQHQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1cPvvekDQHk" resolve="result" />
+                  </node>
+                  <node concept="liA8E" id="1cPvvekDQHS" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                    <node concept="2YIFZM" id="1cPvvekDQHX" role="37wK5m">
+                      <ref role="37wK5l" to="g51k:~GeometryUtil.getBounds(jetbrains.mps.openapi.editor.cells.EditorCell...):java.awt.Rectangle" resolve="getBounds" />
+                      <ref role="1Pybhc" to="g51k:~GeometryUtil" resolve="GeometryUtil" />
+                      <node concept="37vLTw" id="1cPvvekDQHA" role="37wK5m">
+                        <ref role="3cqZAo" node="1cPvvekDQHB" resolve="leaf" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1cPvvekDQHF" role="3cqZAp">
+            <node concept="37vLTw" id="1cPvvekDQHG" role="3cqZAk">
+              <ref role="3cqZAo" node="1cPvvekDQHk" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1cPvvekDQHH" role="1B3o_S" />
+        <node concept="3uibUv" id="1cPvvekDQHI" role="3clF45">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="1cPvvekDQHJ" role="11_B2D">
+            <ref role="3uigEE" to="z60i:~Rectangle" resolve="Rectangle" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFb_" id="1cPvvekE1kC" role="jymVt">
+        <property role="TrG5h" value="getIndentLeafs" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3clFbS" id="1cPvvekDRfU" role="3clF47">
+          <node concept="3cpWs8" id="1cPvvekDRfW" role="3cqZAp">
+            <node concept="3cpWsn" id="1cPvvekDRfV" role="3cpWs9">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="result" />
+              <node concept="3uibUv" id="1cPvvekDRfX" role="1tU5fm">
+                <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                <node concept="3uibUv" id="1cPvvekDW7i" role="11_B2D">
+                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="1cPvvekDRgb" role="33vP2m">
+                <node concept="1pGfFk" id="1cPvvekDRgc" role="2ShVmc">
+                  <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                  <node concept="3uibUv" id="1cPvvekDTud" role="1pMfVU">
+                    <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1cPvvekDRg1" role="3cqZAp">
+            <node concept="1rXfSq" id="1cPvvekDRg2" role="3clFbG">
+              <ref role="37wK5l" node="1cPvvekE1JP" resolve="collectCells" />
+              <node concept="37vLTw" id="1cPvvekDRg3" role="37wK5m">
+                <ref role="3cqZAo" node="1cPvvekDRfS" resolve="current" />
+              </node>
+              <node concept="37vLTw" id="1cPvvekDRg4" role="37wK5m">
+                <ref role="3cqZAo" node="1cPvvekDRfV" resolve="result" />
+              </node>
+              <node concept="10Nm6u" id="1cPvvekDRg5" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1cPvvekDRg6" role="3cqZAp">
+            <node concept="37vLTw" id="1cPvvekDRg7" role="3cqZAk">
+              <ref role="3cqZAo" node="1cPvvekDRfV" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="1cPvvekDRfS" role="3clF46">
+          <property role="TrG5h" value="current" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDTco" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+          </node>
+        </node>
+        <node concept="3uibUv" id="1cPvvekDRg9" role="3clF45">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="1cPvvekDTXi" role="11_B2D">
+            <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="1cPvvekDRg8" role="1B3o_S" />
+      </node>
+      <node concept="3clFb_" id="1cPvvekE1JP" role="jymVt">
+        <property role="TrG5h" value="collectCells" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3clFbS" id="1cPvvekDRUq" role="3clF47">
+          <node concept="1DcWWT" id="1cPvvekDRUr" role="3cqZAp">
+            <node concept="37vLTw" id="1cPvvekDRVa" role="1DdaDG">
+              <ref role="3cqZAo" node="1cPvvekDRUi" resolve="current" />
+            </node>
+            <node concept="3cpWsn" id="1cPvvekDRV7" role="1Duv9x">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="child" />
+              <node concept="3uibUv" id="1cPvvekDVjU" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="1cPvvekDRUt" role="2LFqv$">
+              <node concept="3clFbJ" id="1cPvvekDRUu" role="3cqZAp">
+                <node concept="2ZW3vV" id="1cPvvekDRUx" role="3clFbw">
+                  <node concept="37vLTw" id="1cPvvekDRUv" role="2ZW6bz">
+                    <ref role="3cqZAo" node="1cPvvekDRV7" resolve="child" />
+                  </node>
+                  <node concept="3uibUv" id="1cPvvekDVtA" role="2ZW6by">
+                    <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                  </node>
+                </node>
+                <node concept="9aQIb" id="1cPvvekDRUT" role="9aQIa">
+                  <node concept="3clFbS" id="1cPvvekDRUU" role="9aQI4">
+                    <node concept="3clFbF" id="1cPvvekDRUV" role="3cqZAp">
+                      <node concept="2OqwBi" id="1cPvvekDRVi" role="3clFbG">
+                        <node concept="37vLTw" id="1cPvvekDRVh" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1cPvvekDRUk" resolve="frontier" />
+                        </node>
+                        <node concept="liA8E" id="1cPvvekDRVj" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                          <node concept="37vLTw" id="1cPvvekDRUX" role="37wK5m">
+                            <ref role="3cqZAo" node="1cPvvekDRV7" resolve="child" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="1cPvvekDRUz" role="3clFbx">
+                  <node concept="3cpWs8" id="1cPvvekDRU_" role="3cqZAp">
+                    <node concept="3cpWsn" id="1cPvvekDRU$" role="3cpWs9">
+                      <property role="3TUv4t" value="false" />
+                      <property role="TrG5h" value="collection" />
+                      <node concept="3uibUv" id="1cPvvekDVGc" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                      </node>
+                      <node concept="10QFUN" id="1cPvvekDRUB" role="33vP2m">
+                        <node concept="37vLTw" id="1cPvvekDRUC" role="10QFUP">
+                          <ref role="3cqZAo" node="1cPvvekDRV7" resolve="child" />
+                        </node>
+                        <node concept="3uibUv" id="1cPvvekDV$u" role="10QFUM">
+                          <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="1cPvvekDRUE" role="3cqZAp">
+                    <node concept="1rXfSq" id="1cPvvekDRUF" role="3clFbw">
+                      <ref role="37wK5l" node="1cPvvekE3aj" resolve="isIndentCollection" />
+                      <node concept="37vLTw" id="1cPvvekDRUG" role="37wK5m">
+                        <ref role="3cqZAo" node="1cPvvekDRU$" resolve="collection" />
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="1cPvvekDRUO" role="9aQIa">
+                      <node concept="3clFbS" id="1cPvvekDRUP" role="9aQI4">
+                        <node concept="3clFbF" id="1cPvvekDRUQ" role="3cqZAp">
+                          <node concept="2OqwBi" id="1cPvvekDRVp" role="3clFbG">
+                            <node concept="37vLTw" id="1cPvvekDRVo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1cPvvekDRUk" resolve="frontier" />
+                            </node>
+                            <node concept="liA8E" id="1cPvvekDRVq" role="2OqNvi">
+                              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                              <node concept="37vLTw" id="1cPvvekDRUS" role="37wK5m">
+                                <ref role="3cqZAo" node="1cPvvekDRV7" resolve="child" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="1cPvvekDRUI" role="3clFbx">
+                      <node concept="3clFbF" id="1cPvvekDRUJ" role="3cqZAp">
+                        <node concept="1rXfSq" id="1cPvvekDRUK" role="3clFbG">
+                          <ref role="37wK5l" node="1cPvvekE1JP" resolve="collectCells" />
+                          <node concept="37vLTw" id="1cPvvekDRUL" role="37wK5m">
+                            <ref role="3cqZAo" node="1cPvvekDRU$" resolve="collection" />
+                          </node>
+                          <node concept="37vLTw" id="1cPvvekDRUM" role="37wK5m">
+                            <ref role="3cqZAo" node="1cPvvekDRUk" resolve="frontier" />
+                          </node>
+                          <node concept="37vLTw" id="1cPvvekDRUN" role="37wK5m">
+                            <ref role="3cqZAo" node="1cPvvekDRUn" resolve="collections" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1cPvvekDRUY" role="3cqZAp">
+                <node concept="3y3z36" id="1cPvvekDRUZ" role="3clFbw">
+                  <node concept="37vLTw" id="1cPvvekDRV0" role="3uHU7B">
+                    <ref role="3cqZAo" node="1cPvvekDRUn" resolve="collections" />
+                  </node>
+                  <node concept="10Nm6u" id="1cPvvekDRV1" role="3uHU7w" />
+                </node>
+                <node concept="3clFbS" id="1cPvvekDRV3" role="3clFbx">
+                  <node concept="3clFbF" id="1cPvvekDRV4" role="3cqZAp">
+                    <node concept="2OqwBi" id="1cPvvekDRVw" role="3clFbG">
+                      <node concept="37vLTw" id="1cPvvekDRVv" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1cPvvekDRUn" resolve="collections" />
+                      </node>
+                      <node concept="liA8E" id="1cPvvekDRVx" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                        <node concept="37vLTw" id="1cPvvekDRV6" role="37wK5m">
+                          <ref role="3cqZAo" node="1cPvvekDRUi" resolve="current" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="1cPvvekDRUi" role="3clF46">
+          <property role="TrG5h" value="current" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDUHi" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="1cPvvekDRUk" role="3clF46">
+          <property role="TrG5h" value="frontier" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDRUl" role="1tU5fm">
+            <ref role="3uigEE" to="33ny:~List" resolve="List" />
+            <node concept="3uibUv" id="1cPvvekDUy8" role="11_B2D">
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="1cPvvekDRUn" role="3clF46">
+          <property role="TrG5h" value="collections" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDRUo" role="1tU5fm">
+            <ref role="3uigEE" to="33ny:~List" resolve="List" />
+            <node concept="3uibUv" id="1cPvvekDV8l" role="11_B2D">
+              <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cqZAl" id="1cPvvekDRVc" role="3clF45" />
+        <node concept="3Tm6S6" id="1cPvvekDRVb" role="1B3o_S" />
+      </node>
+      <node concept="3clFb_" id="1cPvvekE3aj" role="jymVt">
+        <property role="TrG5h" value="isIndentCollection" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3clFbS" id="1cPvvekDYPA" role="3clF47">
+          <node concept="3cpWs6" id="1cPvvekDYPB" role="3cqZAp">
+            <node concept="1Wc70l" id="1cPvvekDYPC" role="3cqZAk">
+              <node concept="2ZW3vV" id="1cPvvekDYPF" role="3uHU7B">
+                <node concept="3uibUv" id="1cPvvekDYPE" role="2ZW6by">
+                  <ref role="3uigEE" to="kcid:~CellLayout_Indent" resolve="CellLayout_Indent" />
+                </node>
+                <node concept="1rXfSq" id="1cPvvekEn5B" role="2ZW6bz">
+                  <ref role="37wK5l" node="3GjSU3_Y7L0" resolve="getOriginalLayout" />
+                  <node concept="37vLTw" id="1cPvvekDYPP" role="37wK5m">
+                    <ref role="3cqZAo" node="1cPvvekDYP$" resolve="collection" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3eOSWO" id="1cPvvekDYPG" role="3uHU7w">
+                <node concept="2OqwBi" id="1cPvvekDYPX" role="3uHU7B">
+                  <node concept="37vLTw" id="1cPvvekDYPW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1cPvvekDYP$" resolve="collection" />
+                  </node>
+                  <node concept="liA8E" id="1cPvvekDYPY" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell_Collection.getCellsCount():int" resolve="getCellsCount" />
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="1cPvvekDYPI" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="1cPvvekDYP$" role="3clF46">
+          <property role="TrG5h" value="collection" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="1cPvvekDZuy" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+          </node>
+        </node>
+        <node concept="10P_77" id="1cPvvekDYPK" role="3clF45" />
+        <node concept="3Tm6S6" id="1cPvvekDYPJ" role="1B3o_S" />
+      </node>
+      <node concept="2tJIrI" id="1cPvvekDQ$Q" role="jymVt" />
+      <node concept="3Tm1VV" id="1cPvvekDP_r" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="1cPvvekE6Es" role="jymVt" />
   </node>
   <node concept="312cEu" id="7ndnMNtaNgY">
     <property role="TrG5h" value="LayoutWatchdog" />
