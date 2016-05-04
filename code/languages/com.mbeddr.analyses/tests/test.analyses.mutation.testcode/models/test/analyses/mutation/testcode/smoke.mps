@@ -57,6 +57,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -217,7 +218,7 @@
       <ref role="3GEb4d" node="6I2T_LF5To8" resolve="suv" />
     </node>
     <node concept="1nvAUJ" id="6I2T_LF5Y0G" role="3V$2$K">
-      <property role="2lelRm" value="false" />
+      <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
       <property role="22uFEx" value="false" />
@@ -510,6 +511,7 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="6I2T_LF5Top" role="2Q9xDr">
       <node concept="2Q9FjX" id="6I2T_LF5Toq" role="2Q9FjI" />
@@ -523,7 +525,7 @@
   </node>
   <node concept="0AIh7" id="6I2T_LF6d0N">
     <property role="TrG5h" value="smoke1" />
-    <property role="0AHir" value="10" />
+    <property role="0AHir" value="2" />
     <ref role="0AIBD" node="6I2T_LF5To8" resolve="suv" />
     <ref role="0AfXy" node="6I2T_LF5UeZ" resolve="harness" />
   </node>

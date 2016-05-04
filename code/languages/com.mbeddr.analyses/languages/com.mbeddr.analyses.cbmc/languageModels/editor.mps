@@ -25,8 +25,12 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -42,8 +46,12 @@
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
@@ -66,6 +74,13 @@
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
@@ -5963,6 +5978,9 @@
         <node concept="Rtstu" id="5qOP6rjnNDM" role="3EZMnx" />
       </node>
     </node>
+    <node concept="2aJ2om" id="2CUyvm3R9ua" role="CpUAK">
+      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="analysesInEditor" />
+    </node>
   </node>
   <node concept="312cEu" id="7kzfSagzOZJ">
     <property role="TrG5h" value="CounterexampleProjectionUtils" />
@@ -7325,6 +7343,9 @@
         </node>
       </node>
     </node>
+    <node concept="2aJ2om" id="2CUyvm3Rc9V" role="CpUAK">
+      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="analysesInEditor" />
+    </node>
   </node>
   <node concept="PKFIW" id="3LhOsKAEjDZ">
     <property role="3GE5qa" value="configuration.cbmc" />
@@ -8042,14 +8063,22 @@
           <node concept="VechU" id="1$MI$rgLf$s" role="3F10Kt">
             <property role="Vb096" value="magenta" />
           </node>
-          <node concept="30gYXW" id="vbJ3AuK04m" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+          <node concept="VPxyj" id="4fHsc9Ys6Fs" role="3F10Kt">
+            <property role="VOm3f" value="false" />
           </node>
         </node>
         <node concept="l2Vlx" id="1$MI$rgLfvk" role="2iSdaV" />
       </node>
       <node concept="2SsqMj" id="1$MI$rgLfw7" role="3EZMnx" />
       <node concept="2iRkQZ" id="1$MI$rgLfuT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="7xesQBpJWpf">
+    <property role="TrG5h" value="analysesInEditor" />
+    <node concept="2BsEeg" id="7xesQBpJXuT" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="analysesInEditor" />
+      <property role="2BUmq6" value="Show Analyses Results in Editor" />
     </node>
   </node>
 </model>

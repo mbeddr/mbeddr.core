@@ -17,6 +17,7 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -29,6 +30,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
@@ -57,6 +59,10 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
+      </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -170,6 +176,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -206,9 +213,13 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -227,6 +238,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -329,6 +341,19 @@
       <property role="NWlVz" value="Gives the loops accessible from an entry point." />
     </node>
     <node concept="2tJIrI" id="1$MI$rgGHZa" role="jymVt" />
+    <node concept="Wx3nA" id="1Cle9_ntxQ" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="DEBUG" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="1Cle9_ntac" role="1B3o_S" />
+      <node concept="10P_77" id="1Cle9_ntxN" role="1tU5fm" />
+      <node concept="3clFbT" id="1Cle9_nu9p" role="33vP2m" />
+      <node concept="NWlO9" id="1Cle9_n$2u" role="lGtFl">
+        <property role="NWlVz" value="Should we print debugging info about the loops analyzer?" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1Cle9_ns7S" role="jymVt" />
     <node concept="312cEg" id="5etR5IKiHFr" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -526,6 +551,48 @@
               </node>
             </node>
             <node concept="3clFbH" id="1$MI$rgHimw" role="3cqZAp" />
+            <node concept="3clFbJ" id="1Cle9_nrpY" role="3cqZAp">
+              <node concept="3clFbS" id="1Cle9_nrq0" role="3clFbx">
+                <node concept="3clFbF" id="1Cle9_nvCE" role="3cqZAp">
+                  <node concept="2OqwBi" id="1Cle9_nvOz" role="3clFbG">
+                    <node concept="37vLTw" id="1Cle9_nvCC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1$MI$rgHi5A" resolve="loops" />
+                    </node>
+                    <node concept="2es0OD" id="1Cle9_nwvs" role="2OqNvi">
+                      <node concept="1bVj0M" id="1Cle9_nwvu" role="23t8la">
+                        <node concept="3clFbS" id="1Cle9_nwvv" role="1bW5cS">
+                          <node concept="3clFbF" id="1Cle9_nuHs" role="3cqZAp">
+                            <node concept="2YIFZM" id="1Cle9_nwBT" role="3clFbG">
+                              <ref role="37wK5l" to="q9jj:sn0OadN1wd" resolve="debug" />
+                              <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="MbeddrLogger" />
+                              <node concept="37vLTw" id="1Cle9_nwSj" role="37wK5m">
+                                <ref role="3cqZAo" node="1Cle9_ntxQ" resolve="DEBUG" />
+                              </node>
+                              <node concept="2OqwBi" id="1Cle9_nybW" role="37wK5m">
+                                <node concept="37vLTw" id="1Cle9_ny1$" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1Cle9_nwvw" resolve="it" />
+                                </node>
+                                <node concept="2S8uIT" id="1Cle9_nyHo" role="2OqNvi">
+                                  <ref role="2S8YL0" to="rbq9:1$MI$rgH1u2" resolve="loopId" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="1Cle9_nwvw" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="1Cle9_nwvx" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="1Cle9_nuj9" role="3clFbw">
+                <ref role="3cqZAo" node="1Cle9_ntxQ" resolve="DEBUG" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="1Cle9_nrNO" role="3cqZAp" />
             <node concept="3cpWs8" id="5etR5IKiSdh" role="3cqZAp">
               <node concept="3cpWsn" id="5etR5IKiSdk" role="3cpWs9">
                 <property role="TrG5h" value="loopStatements2Id" />
@@ -888,7 +955,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1$MI$rgGT8T" role="jymVt" />
   </node>
   <node concept="312cEu" id="24GUsn9CURG">
     <property role="TrG5h" value="LoopsResult" />
