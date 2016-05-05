@@ -14,8 +14,6 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -1080,7 +1078,7 @@
   </node>
   <node concept="24kQdi" id="3kEjc_WJ62Q">
     <property role="3GE5qa" value="arbitraryText" />
-    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="AbritraryTextItem" />
+    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="ArbitraryTextItem" />
     <node concept="3F0A7n" id="3kEjc_WJ62S" role="2wV5jI">
       <property role="1O74Pk" value="true" />
       <ref role="1NtTu8" to="c4fa:3kEjc_WJ4oa" resolve="text" />
