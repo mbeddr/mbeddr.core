@@ -5399,12 +5399,6 @@
             <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
           </node>
         </node>
-        <node concept="1SiIV0" id="23po6SqT7xA" role="3bR37C">
-          <node concept="3bR9La" id="23po6SqT7xB" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LeP" resolve="jetbrains.mps.analyzers.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1TeN3vKu34E" role="3bR37C">
           <node concept="3bR9La" id="1TeN3vKu34F" role="1SiIV1">
             <property role="3bR36h" value="false" />

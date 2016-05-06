@@ -130,5 +130,11 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2nbqtJGjoqv">
+    <ref role="1XX52x" to="ybok:2nbqtJGjoq6" resolve="WithInterProceduralSupport" />
+    <node concept="3F0ifn" id="2nbqtJGjoqx" role="2wV5jI">
+      <property role="3F0ifm" value="Activates the support for inter-procedural data-flow graphs" />
+    </node>
+  </node>
 </model>
 

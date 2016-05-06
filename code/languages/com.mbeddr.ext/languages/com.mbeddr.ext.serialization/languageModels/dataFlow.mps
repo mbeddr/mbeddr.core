@@ -6,6 +6,7 @@
     <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -99,6 +100,9 @@
     <language id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern">
       <concept id="1649655856141352250" name="jetbrains.mps.lang.pattern.structure.InsertBeforePosition" flags="ng" index="3s5BLS" />
       <concept id="1649655856141352248" name="jetbrains.mps.lang.pattern.structure.InsertAfterPosition" flags="ng" index="3s5BLU" />
+    </language>
+    <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
+      <concept id="2723386792958854790" name="com.mbeddr.core.dataflow.structure.WithInterProceduralSupport" flags="ng" index="39xIXt" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -460,5 +464,6 @@
       <node concept="3clFbH" id="2Or5PTUbvqq" role="3cqZAp" />
     </node>
   </node>
+  <node concept="39xIXt" id="2nbqtJGxX94" />
 </model>
 

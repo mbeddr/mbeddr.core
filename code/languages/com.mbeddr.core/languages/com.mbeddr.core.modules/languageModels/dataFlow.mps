@@ -383,6 +383,7 @@
     </language>
     <language id="101be20f-3e59-4ebb-abcc-1448ce15a064" name="com.mbeddr.core.dataflow">
       <concept id="9101047003798444974" name="com.mbeddr.core.dataflow.structure.InterProceduralDataFlowGraphAttribute" flags="ng" index="2JLR6D" />
+      <concept id="2723386792958854790" name="com.mbeddr.core.dataflow.structure.WithInterProceduralSupport" flags="ng" index="39xIXt" />
       <concept id="673470630035214411" name="com.mbeddr.core.dataflow.structure.EmitInlineStatement" flags="ng" index="1cGfmN">
         <child id="673470630035214744" name="target" index="1cGfhw" />
       </concept>
@@ -2415,7 +2416,7 @@
       </node>
     </node>
     <node concept="1ZAo8i" id="14QUBEdyLNq" role="1ZAo82" />
-    <node concept="2JLR6D" id="6X3ybixPGmC" role="lGtFl" />
+    <node concept="2JLR6D" id="4BuTR4suv6A" role="lGtFl" />
   </node>
   <node concept="Qs71p" id="7d9zFs_$HfD">
     <property role="3GE5qa" value="analyzers.init" />
@@ -4048,7 +4049,7 @@
         </node>
       </node>
     </node>
-    <node concept="2JLR6D" id="6X3ybixPGWa" role="lGtFl" />
+    <node concept="2JLR6D" id="4BuTR4suwss" role="lGtFl" />
   </node>
   <node concept="312cEu" id="7PgKJZvfe2t">
     <property role="3GE5qa" value="analyzers.pointer" />
@@ -8110,5 +8111,6 @@
       </node>
     </node>
   </node>
+  <node concept="39xIXt" id="2nbqtJGn$MD" />
 </model>
 
