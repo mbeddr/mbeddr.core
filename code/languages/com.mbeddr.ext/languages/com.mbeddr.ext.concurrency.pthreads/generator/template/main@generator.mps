@@ -97,7 +97,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -154,10 +154,11 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
-      <concept id="3830958861296879113" name="com.mbeddr.core.statements.structure.AbritraryTextItem" flags="ng" index="19_wF0">
+      <concept id="3830958861296879113" name="com.mbeddr.core.statements.structure.ArbitraryTextItem" flags="ng" index="19_wF0">
         <property id="3830958861296879114" name="text" index="19_wF3" />
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
+        <property id="6275956088645591175" name="requiredStdHeader" index="3YGKL8" />
         <child id="3830958861296879115" name="items" index="19_wF2" />
         <child id="6275956088646286745" name="type" index="3YFD5m" />
       </concept>
@@ -4023,6 +4024,7 @@
                         <ref role="3ZVs_2" node="6bs538m9fn2" resolve="res" />
                       </node>
                       <node concept="19_ADJ" id="1o$bJoOTWIM" role="3TlMhJ">
+                        <property role="3YGKL8" value="errno.h" />
                         <node concept="19_wF0" id="1o$bJoOTWIN" role="19_wF2">
                           <property role="19_wF3" value="ETIMEDOUT" />
                         </node>
