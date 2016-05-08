@@ -339,6 +339,22 @@
     </node>
     <node concept="2UmK3q" id="75t_nimFd6p" role="2Um5zG">
       <node concept="3clFbS" id="75t_nimFd6q" role="2VODD2">
+        <node concept="3clFbF" id="1cPvvekEyJx" role="3cqZAp">
+          <node concept="37vLTI" id="1cPvvekEyOo" role="3clFbG">
+            <node concept="2ShNRf" id="1cPvvekEyR1" role="37vLTx">
+              <node concept="1pGfFk" id="1cPvvekEyQl" role="2ShVmc">
+                <ref role="37wK5l" node="7uOgiT959T" resolve="ChartManager" />
+                <node concept="2WthIp" id="1cPvvekEyT2" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1cPvvekEyJr" role="37vLTJ">
+              <node concept="2WthIp" id="1cPvvekEyJu" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="1cPvvekEyJw" role="2OqNvi">
+                <ref role="2WH_rO" node="7uOgiT8Uq1" resolve="myChartManager" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="75t_nimFdlj" role="3cqZAp">
           <node concept="2OqwBi" id="75t_nimFdld" role="3clFbG">
             <node concept="2WthIp" id="75t_nimFdlg" role="2Oq$k0" />
