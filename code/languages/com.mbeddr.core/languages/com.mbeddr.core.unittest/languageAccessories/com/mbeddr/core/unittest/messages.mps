@@ -140,6 +140,7 @@
       </concept>
       <concept id="6867589085886993301" name="com.mbeddr.core.base.structure.EmptyChunkDependency" flags="ng" index="1CU$1Q" />
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
@@ -3634,6 +3635,7 @@
       <property role="TrG5h" value="empty_1452178169894_3" />
     </node>
     <node concept="3GEVxB" id="44MAav6Gkg" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="4DjlAm4JRko" resolve="Unittest_Helper" />
     </node>
     <node concept="3GEVxB" id="4DjlAm4M9SU" role="2OODSX">
@@ -4163,6 +4165,7 @@
       <property role="TrG5h" value="empty_1452178169894_3" />
     </node>
     <node concept="3GEVxB" id="44MAav6Nng" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="4DjlAm4JRko" resolve="Unittest_Helper" />
     </node>
     <node concept="3GEVxB" id="44MAav6Nnj" role="2OODSX">

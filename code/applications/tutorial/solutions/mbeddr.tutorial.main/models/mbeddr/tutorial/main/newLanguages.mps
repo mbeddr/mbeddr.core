@@ -173,6 +173,12 @@
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879251" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressAllWarnings" flags="ng" index="2P5Msh" />
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="32128dbe-9db6-4d05-9eaa-43601c29f276" name="mbeddr.tutorial.foreach">
       <concept id="646457496850739611" name="mbeddr.tutorial.foreach.structure.ForeachStatement" flags="ng" index="uPpKK">
         <child id="646457496850739628" name="body" index="uPpK7" />
@@ -2176,6 +2182,7 @@
       <property role="TrG5h" value="empty_1391066882061_4" />
     </node>
     <node concept="3GEVxB" id="7HJwNEvraht" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="7HJwNEvpaA7" resolve="TasksTypes" />
     </node>
   </node>
@@ -2558,6 +2565,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="5rgUaxOsOl1" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5rgUaxOsJom" resolve="DatabaseStuff" />
     </node>
   </node>
@@ -2588,6 +2596,9 @@
     </node>
     <node concept="3GEVxB" id="5rgUaxOsTH7" role="2OODSX">
       <ref role="3GEb4d" node="5rgUaxOsJom" resolve="DatabaseStuff" />
+      <node concept="2P5Msn" id="23vSRR_3OoP" role="lGtFl">
+        <node concept="2P5Msh" id="23vSRR_3OoQ" role="2P5Msk" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="5rgUaxOsWic">
@@ -2621,9 +2632,11 @@
       <ref role="3GEb4d" node="5rgUaxOsOks" resolve="Catalog" />
     </node>
     <node concept="3GEVxB" id="5rgUaxOt6tx" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5rgUaxOsJom" resolve="DatabaseStuff" />
     </node>
     <node concept="3GEVxB" id="5rgUaxOt9_H" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5rgUaxOsOk7" resolve="PricingEngine" />
     </node>
   </node>
