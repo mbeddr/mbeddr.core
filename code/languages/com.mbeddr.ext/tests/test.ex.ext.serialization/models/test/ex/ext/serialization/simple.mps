@@ -61,6 +61,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -294,6 +295,7 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2eOfOl" id="3XvCV0Ky0X3" role="2ePNbc">
       <property role="iO3LB" value="true" />
@@ -337,7 +339,7 @@
     </node>
     <node concept="12mDD$" id="7PpDuQ7e1qa" role="N3F5h">
       <property role="TrG5h" value="toFile" />
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <node concept="3wxxNl" id="7PpDuQ7e1qb" role="12nlrV">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -494,7 +496,7 @@
     </node>
     <node concept="12mDD$" id="7PpDuQ7e1r9" role="N3F5h">
       <property role="TrG5h" value="toU8Array" />
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <node concept="3J0A42" id="7PpDuQ7e1ra" role="12nlrV">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
