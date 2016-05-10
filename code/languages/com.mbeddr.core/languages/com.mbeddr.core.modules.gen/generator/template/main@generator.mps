@@ -1539,7 +1539,7 @@
               <node concept="3clFbF" id="3z4m8Hko3Hf" role="3cqZAp">
                 <node concept="2OqwBi" id="3z4m8Hko3QO" role="3clFbG">
                   <node concept="1PxgMI" id="3z4m8Hkodxi" role="2Oq$k0">
-                    <ref role="1PxNhF" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                    <ref role="1PxNhF" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
                     <node concept="30H73N" id="3z4m8Hko3He" role="1PxMeX" />
                   </node>
                   <node concept="3TrcHB" id="3z4m8HkogmT" role="2OqNvi">
@@ -1764,7 +1764,7 @@
   <node concept="13MO4I" id="6Q7bJ$$mvO6">
     <property role="TrG5h" value="map_Function2Prototype" />
     <property role="3GE5qa" value="main" />
-    <ref role="3gUMe" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    <ref role="3gUMe" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
     <node concept="1N15co" id="3z4m8Hknjxx" role="1s_3oS">
       <property role="TrG5h" value="exported" />
       <node concept="10P_77" id="3z4m8HknvAd" role="1N15GL" />
