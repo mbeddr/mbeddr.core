@@ -107,16 +107,6 @@ tasks.create("build_mbeddr", Exec) {
 }
 
 
-task resolveMbeddr(type: Copy, dependsOn: configurations.mbeddr) {
-  from {
-    configurations.mbeddr.asFileTree.each {
-      from( zipTree(it) )
-    }
-    null
-  }
-  into "artifacts"
-}
-
 tasks.create("build_tutorial_languages", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_languages_script]
