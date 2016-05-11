@@ -14581,5 +14581,23 @@
       <node concept="10P_77" id="76hx8dKhx35" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="2T6Po3mUMYl">
+    <ref role="13h7C2" to="x27k:2T6Po3mUMXu" resolve="ModuleHNameOverride" />
+    <node concept="13hLZK" id="2T6Po3mUMYm" role="13h7CW">
+      <node concept="3clFbS" id="2T6Po3mUMYn" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2T6Po3mUMYo" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <property role="TrG5h" value="getModuleHName" />
+      <node concept="3Tm1VV" id="2T6Po3mUMYp" role="1B3o_S" />
+      <node concept="3clFbS" id="2T6Po3mUMYq" role="3clF47" />
+      <node concept="17QB3L" id="2T6Po3mUNU3" role="3clF45" />
+      <node concept="37vLTG" id="2T6Po3mUNU7" role="3clF46">
+        <property role="TrG5h" value="moduleCName" />
+        <node concept="17QB3L" id="2T6Po3mUNU6" role="1tU5fm" />
+      </node>
+    </node>
+  </node>
 </model>
 
