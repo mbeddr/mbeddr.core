@@ -1470,6 +1470,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="5wZ$f6KGAey" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="curved" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="6clvLV1rj2a" role="PrDN$">
       <ref role="PrY4T" node="6clvLV1q6UE" resolve="IInlineEditorComponentContainer" />
     </node>
