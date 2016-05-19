@@ -3219,15 +3219,15 @@
               </node>
               <node concept="3clFbC" id="rlw0PZJ_Ys" role="3clFbw">
                 <node concept="Rm8GO" id="rlw0PZJ_Yt" role="3uHU7w">
-                  <ref role="Rm8GQ" to="exr9:~CellSide.LEFT" resolve="LEFT" />
                   <ref role="1Px2BO" to="exr9:~CellSide" resolve="CellSide" />
+                  <ref role="Rm8GQ" to="exr9:~CellSide.LEFT" resolve="LEFT" />
                 </node>
                 <node concept="2OqwBi" id="rlw0PZJ_Yu" role="3uHU7B">
                   <node concept="2GrUjf" id="7EUu569tFrW" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="rlw0PZIYbB" resolve="sthint" />
                   </node>
-                  <node concept="1PnCL0" id="rlw0PZJ_Yw" role="2OqNvi">
-                    <ref role="2Oxat5" to="4my4:~EditorCell_STHint.mySide" resolve="mySide" />
+                  <node concept="1PnCL0" id="MhtcQF6BOU" role="2OqNvi">
+                    <ref role="2Oxat5" to="4my4:~EditorCell_STHint.myOldSide" resolve="myOldSide" />
                   </node>
                 </node>
               </node>
