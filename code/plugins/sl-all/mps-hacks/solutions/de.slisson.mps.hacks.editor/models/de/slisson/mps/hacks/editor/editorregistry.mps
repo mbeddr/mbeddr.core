@@ -66,17 +66,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
-        <child id="1081256993305" name="classType" index="2ZW6by" />
-        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
@@ -144,9 +136,6 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -1689,56 +1678,15 @@
         </node>
       </node>
       <node concept="3clFbS" id="20mebiU_kAC" role="3clF47">
-        <node concept="3clFbJ" id="5094wKnp5c7" role="3cqZAp">
-          <node concept="2ZW3vV" id="5094wKnp5ca" role="3clFbw">
-            <node concept="37vLTw" id="5094wKnp5c8" role="2ZW6bz">
+        <node concept="3cpWs6" id="5094wKnp5cd" role="3cqZAp">
+          <node concept="2OqwBi" id="5094wKnp5ce" role="3cqZAk">
+            <node concept="37vLTw" id="5094wKnp5cg" role="2Oq$k0">
               <ref role="3cqZAo" node="20mebiU_kA$" resolve="aspectDescriptor" />
             </node>
-            <node concept="3uibUv" id="5094wKnp64I" role="2ZW6by">
-              <ref role="3uigEE" to="exr9:~EditorAspectDescriptorBase" resolve="EditorAspectDescriptorBase" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="5094wKnp5cc" role="3clFbx">
-            <node concept="3cpWs6" id="5094wKnp5cd" role="3cqZAp">
-              <node concept="2OqwBi" id="5094wKnp5ce" role="3cqZAk">
-                <node concept="1eOMI4" id="5094wKnp5ci" role="2Oq$k0">
-                  <node concept="10QFUN" id="5094wKnp5cf" role="1eOMHV">
-                    <node concept="37vLTw" id="5094wKnp5cg" role="10QFUP">
-                      <ref role="3cqZAo" node="20mebiU_kA$" resolve="aspectDescriptor" />
-                    </node>
-                    <node concept="3uibUv" id="5094wKnp5ch" role="10QFUM">
-                      <ref role="3uigEE" to="exr9:~EditorAspectDescriptorBase" resolve="EditorAspectDescriptorBase" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="5094wKnp5cj" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorAspectDescriptorBase.getEditors(org.jetbrains.mps.openapi.language.SAbstractConcept):java.util.Collection" resolve="getEditors" />
-                  <node concept="37vLTw" id="5094wKnp5ck" role="37wK5m">
-                    <ref role="3cqZAo" node="20mebiU_kAA" resolve="concept" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="5094wKnp5cl" role="3cqZAp">
-          <node concept="2OqwBi" id="5094wKnp5cB" role="3cqZAk">
-            <node concept="37vLTw" id="5094wKnp5cA" role="2Oq$k0">
-              <ref role="3cqZAo" node="20mebiU_kA$" resolve="aspectDescriptor" />
-            </node>
-            <node concept="liA8E" id="5094wKnp5cC" role="2OqNvi">
-              <ref role="37wK5l" to="iwf0:~EditorAspectDescriptor.getEditors(jetbrains.mps.smodel.runtime.ConceptDescriptor):java.util.Collection" resolve="getEditors" />
-              <node concept="2OqwBi" id="5094wKnp5cn" role="37wK5m">
-                <node concept="2YIFZM" id="5094wKnp5cO" role="2Oq$k0">
-                  <ref role="1Pybhc" to="vndm:~ConceptRegistry" resolve="ConceptRegistry" />
-                  <ref role="37wK5l" to="vndm:~ConceptRegistry.getInstance():jetbrains.mps.smodel.language.ConceptRegistry" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="5094wKnp5cp" role="2OqNvi">
-                  <ref role="37wK5l" to="vndm:~ConceptRegistry.getConceptDescriptor(org.jetbrains.mps.openapi.language.SAbstractConcept):jetbrains.mps.smodel.runtime.ConceptDescriptor" resolve="getConceptDescriptor" />
-                  <node concept="37vLTw" id="5094wKnp5cq" role="37wK5m">
-                    <ref role="3cqZAo" node="20mebiU_kAA" resolve="concept" />
-                  </node>
-                </node>
+            <node concept="liA8E" id="5094wKnp5cj" role="2OqNvi">
+              <ref role="37wK5l" to="iwf0:~EditorAspectDescriptor.getEditors(org.jetbrains.mps.openapi.language.SAbstractConcept):java.util.Collection" resolve="getEditors" />
+              <node concept="37vLTw" id="5094wKnp5ck" role="37wK5m">
+                <ref role="3cqZAo" node="20mebiU_kAA" resolve="concept" />
               </node>
             </node>
           </node>
