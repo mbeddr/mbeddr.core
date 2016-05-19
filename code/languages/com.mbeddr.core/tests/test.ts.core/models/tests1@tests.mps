@@ -14828,6 +14828,16 @@
             </node>
           </node>
         </node>
+        <node concept="1S7NMz" id="1qdWvqeuMJ9" role="N3F5h">
+          <property role="TrG5h" value="stringWithValidEscapeSequence" />
+          <node concept="Pu267" id="1qdWvqeuPjM" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="PhEJO" id="1qdWvqeuOJh" role="1cecVj">
+            <property role="PhEJT" value="c:\\temp\\subdir" />
+          </node>
+        </node>
         <node concept="1S7NMz" id="1$baREjTFbE" role="N3F5h">
           <property role="TrG5h" value="stringWithIncompleteHexadecimalNumber" />
           <node concept="12rfTQ" id="1$baREjTFbF" role="2C2TGm">

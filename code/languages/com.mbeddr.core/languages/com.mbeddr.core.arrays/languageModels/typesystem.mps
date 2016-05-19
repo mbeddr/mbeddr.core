@@ -7154,7 +7154,7 @@
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <node concept="Xl_RD" id="1$baREjPHfV" role="37wK5m">
-                <property role="Xl_RC" value="\\\\[^abfnrtv\\\\'\&quot;\\?\\dx]" />
+                <property role="Xl_RC" value="[^\\\\]\\\\[^abfnrtv\\\\'\&quot;\\?\\dx]" />
               </node>
             </node>
             <node concept="liA8E" id="1$baREjPHkA" role="2OqNvi">
