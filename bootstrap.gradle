@@ -8,7 +8,7 @@ def GenerateCode_Task = "generate"
 def BuildPlugin_Task = "assemble"
 def RunTests_Task = "check"
 String mpsMajor = "3.3"
-String mpsMinor = "1"
+String mpsMinor = "4"
 String mpsBuild = mpsMajor + "." + mpsMinor
 String mbeddrMajor = "0.9"
 String mbeddrMinor = "1"
@@ -20,68 +20,40 @@ def sllAllTasks = file(projectDir.absolutePath + "/scripts/sl-all").exists() ? [
 String mbeddrScripts_basePath = ant.properties['mbeddr.github.core.home'] + "/build"
 String allScripts_buildFileLocation = mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts"
 
-
 configurations {
     mps {
-        [group: 'jetbrains', name: 'spring-core', version: '2.5']
         description = 'compile mps'
     }
     allScripts {
         description = 'mbeddr.allScripts script'
     }
 }
+
 task resolveMPS(type: Copy) {
     from configurations.mps
-    into "dependencies"
-    eachFile {
-        println("mps: "+it.name)
-        from zipTree(it.getFile())
-        into file("./MPS")
-    }
+    into "MPS"
 }
+
 task resolveAllScripts(type: Copy) {
-
-    println("resolveAllScripts")
-
-    from configurations.allScripts.allArtifacts.each {
-
-        it.name
-
-    }
     into "dependencies/allScripts"
     fileTree("dependencies/allScripts/allScripts-0.9.1.zip").each {
         from zipTree(it)
         into "scripts"
     }
-//        /*eachFile {
-//            println("allScripts: "+ it.name)
-//            from zipTree(it.getFile())
-//            into file("$projectDir/scripts")
-//        }*/
 }
+
 task load_allScripts(dependsOn: resolveMPS) {
     println("mps location: " + "$projectDir" + "/MPS/"+mbeddrMpsDir+"/")
     ant.importBuild( allScripts_buildFileLocation + "/" + "build.xml") { antTargetName ->
         'allScripts_' + antTargetName
     }
 }
-task compileTask {
-    repositories {
-        ivy {
-            // change to point to your repo, e.g. http://my.org/repo
-            url "$buildDir/repo"
-        }
-    }
 
-    configurations.compile.each { File file -> println file.name }
-    ant.echo("compile123")
-}
 task build_allScripts(type: Zip, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]) {
     from projectDir.absolutePath + "/artifacts/com.mbeddr.allScripts.build/"
     from fileTree(dir: projectDir.absolutePath + "/build", include: '**/*.xml')
     from fileTree(dir: projectDir.absolutePath + "/code/plugins", include: '**/*.xml')
 }
-
 
 dependencies {
     mps 'com.jetbrains:mps:3.3.1'
@@ -95,10 +67,16 @@ task download << {
     ant.unzip(src: "./MPS/MPS-" + mpsBuild + ".zip", dest: "./MPS/")
     ant.move(file: "./MPS/MPS " + mpsMajor, toFile: "./MPS/" + mbeddrMpsDir)
 }
+
 task mpsZip(type: Zip, dependsOn: download) {
     from "./MPS/" + mbeddrMpsDir
 }
-
+repositories {
+    ivy {
+        // change to point to your repo, e.g. http://my.org/repo
+        url "$buildDir/repo"
+    }
+}
 publishing {
     publications {
         mps(IvyPublication) {

@@ -2,8 +2,8 @@
 <model ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
   </languages>
   <imports>
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
@@ -7102,25 +7102,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6ijKbgMcVI2" role="3bR37C">
-          <node concept="1BurEX" id="6ijKbgMcVI3" role="1SiIV1">
-            <node concept="398BVA" id="6ijKbgMcVI4" role="1BurEY">
-              <ref role="398BVh" node="7eF9rfAnuhS" resolve="mbeddr.cc" />
-              <node concept="2Ry0Ak" id="6ijKbgMcVI5" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6ijKbgMcVI6" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.cc.requirements.csv" />
-                  <node concept="2Ry0Ak" id="6ijKbgMcVI7" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6ijKbgMcVI8" role="2Ry0An">
-                      <property role="2Ry0Am" value="opencsv-2.3.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="6oAagBJCrB7" role="3bR37C">
           <node concept="3bR9La" id="6oAagBJCrB8" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -7137,6 +7118,12 @@
           <node concept="3bR9La" id="6oAagBJCrBc" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5qO$P$PrHbq" resolve="com.mbeddr.cc.requirements" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="29VkIO0YWmK" role="3bR37C">
+          <node concept="3bR9La" id="29VkIO0YWmL" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:29VkIO0XExI" resolve="com.opencsv" />
           </node>
         </node>
       </node>
@@ -10017,12 +10004,6 @@
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2nAKs0uC3zm" role="3bR37C">
-          <node concept="3bR9La" id="2nAKs0uC3zn" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7h_lL8l2$LH" resolve="com.mbeddr.core.dataflow" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
@@ -10294,30 +10275,6 @@
       <node concept="3981dG" id="2$$_2GRaqfD" role="39821P">
         <node concept="m$_wl" id="2$$_2GRaqfE" role="39821P">
           <ref role="m_rDy" node="5qO$P$PrHaf" resolve="com.mbeddr.cc.req" />
-          <node concept="398223" id="2$$_2GRaqfF" role="39821P">
-            <node concept="28jJK3" id="2$$_2GRaqfG" role="39821P">
-              <node concept="398BVA" id="2$$_2GRaqfH" role="28jJRO">
-                <ref role="398BVh" node="7eF9rfAnuhS" resolve="mbeddr.cc" />
-                <node concept="2Ry0Ak" id="2$$_2GRaqfI" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="2$$_2GRaqfJ" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.cc.requirements.csv" />
-                    <node concept="2Ry0Ak" id="2$$_2GRaqfK" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="2$$_2GRaqfL" role="2Ry0An">
-                        <property role="2Ry0Am" value="opencsv-2.3.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3_J27D" id="2$$_2GRaqfM" role="Nbhlr">
-              <node concept="3Mxwew" id="2$$_2GRaqfN" role="3MwsjC">
-                <property role="3MwjfP" value="lib" />
-              </node>
-            </node>
-          </node>
         </node>
         <node concept="3_J27D" id="2$$_2GRaqfO" role="Nbhlr">
           <node concept="3Mxwew" id="2$$_2GRaqfP" role="3MwsjC">

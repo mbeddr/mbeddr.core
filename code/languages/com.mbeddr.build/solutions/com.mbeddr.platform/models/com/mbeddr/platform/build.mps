@@ -362,6 +362,9 @@
       <node concept="m$f5U" id="2jlBy7bQIhH" role="m$_yh">
         <ref role="m$f5T" node="2jlBy7bQlGk" resolve="com.mbeddr.mpsutil.treenotation" />
       </node>
+      <node concept="m$f5U" id="29VkIO0XIIV" role="m$_yh">
+        <ref role="m$f5T" node="29VkIO0XzOx" resolve="com.opencsv" />
+      </node>
       <node concept="m$_yC" id="7uZw0yZ2_Jw" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -10870,6 +10873,46 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="29VkIO0XzOx" role="3989C9">
+      <property role="TrG5h" value="com.opencsv" />
+      <node concept="1E1JtA" id="29VkIO0XExI" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.opencsv" />
+        <property role="3LESm3" value="11045775-3aaf-4816-8077-8656c4e8fee1" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="29VkIO0XFmS" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="29VkIO0XH16" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="29VkIO0XH1f" role="2Ry0An">
+              <property role="2Ry0Am" value="com.opencsv" />
+              <node concept="2Ry0Ak" id="29VkIO0XH1o" role="2Ry0An">
+                <property role="2Ry0Am" value="com.opencsv.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="29VkIO0XH1D" role="3bR37C">
+          <node concept="1BurEX" id="29VkIO0XH1E" role="1SiIV1">
+            <node concept="398BVA" id="29VkIO0XH1s" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="29VkIO0XH1t" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="29VkIO0XH1u" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.opencsv" />
+                  <node concept="2Ry0Ak" id="29VkIO0XH1v" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="29VkIO0XH1w" role="2Ry0An">
+                      <property role="2Ry0Am" value="opencsv-2.3.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="10PD9b" id="3AVJcIMlF8n" role="10PD9s" />
     <node concept="3b7kt6" id="3AVJcIMlF8o" role="10PD9s" />
     <node concept="398rNT" id="3AVJcIMlF8p" role="1l3spd">
@@ -11212,6 +11255,24 @@
                       <node concept="2Ry0Ak" id="7uOgiTaO8q" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="398223" id="29VkIO0XNOJ" role="39821P">
+              <node concept="3_J27D" id="29VkIO0XNOL" role="Nbhlr">
+                <node concept="3Mxwew" id="29VkIO0XOGA" role="3MwsjC">
+                  <property role="3MwjfP" value="opencsv" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="29VkIO0XOGE" role="39821P">
+                <node concept="398BVA" id="29VkIO0XPyc" role="2HvfZ0">
+                  <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+                  <node concept="2Ry0Ak" id="29VkIO0XQnK" role="iGT6I">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="29VkIO0XQnT" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.opencsv" />
                     </node>
                   </node>
                 </node>

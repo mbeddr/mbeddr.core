@@ -2,7 +2,7 @@
 <model ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -1534,6 +1534,23 @@
     <property role="1pbfSe" value="951592985" />
     <property role="TrG5h" value="Var" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2T6Po3mUMXu">
+    <property role="1pbfSe" value="87164126" />
+    <property role="TrG5h" value="ModuleHNameOverride" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="moduleHOverride" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2T6Po3mUMXv" role="lGtFl">
+      <property role="Hh88m" value="nameOverride" />
+      <node concept="tn0Fv" id="2T6Po3mUMYh" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
+      </node>
+    </node>
   </node>
 </model>
 

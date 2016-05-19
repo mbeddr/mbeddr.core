@@ -372,7 +372,7 @@
   <node concept="N3F5e" id="6FLcSer$i9D">
     <property role="TrG5h" value="ModuleUsesTypeDef" />
     <node concept="3GEVxB" id="6uc_WDS6n03" role="2OODSX">
-      <property role="3GEa6x" value="false" />
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="6FLcSer$i9v" resolve="ModuleWithTypeDef" />
     </node>
     <node concept="rcJHK" id="6FLcSer$i9E" role="N3F5h">

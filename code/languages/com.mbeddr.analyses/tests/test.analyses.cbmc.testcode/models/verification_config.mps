@@ -401,7 +401,7 @@
     </node>
     <node concept="2EWCtd" id="tGR6edV8OW" role="N3F5h">
       <property role="TrG5h" value="AllInstances" />
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <node concept="2EWCuV" id="tGR6edV8OX" role="5JtDH">
         <property role="TrG5h" value="first" />
         <ref role="2EWCuU" node="tGR6edV8O9" resolve="FirstComp" />

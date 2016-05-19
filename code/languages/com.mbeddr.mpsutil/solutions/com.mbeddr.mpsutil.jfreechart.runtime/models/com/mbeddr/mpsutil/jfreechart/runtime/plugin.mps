@@ -197,65 +197,21 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1cPvvek_ViO" role="3cqZAp">
-              <node concept="37vLTI" id="1cPvvek_ViP" role="3clFbG">
-                <node concept="2ShNRf" id="1cPvvek_ViQ" role="37vLTx">
-                  <node concept="1pGfFk" id="1cPvvek_ViR" role="2ShVmc">
-                    <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
-                    <node concept="2OqwBi" id="1cPvvek_ViS" role="37wK5m">
-                      <node concept="2WthIp" id="1cPvvek_ViT" role="2Oq$k0" />
-                      <node concept="2BZ7hE" id="1cPvvek_ViU" role="2OqNvi">
-                        <ref role="2WH_rO" node="7uOgiT8PA3" resolve="myChartPanel" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1cPvvek_ViV" role="37vLTJ">
-                  <node concept="2WthIp" id="1cPvvek_ViW" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="1cPvvek_ViX" role="2OqNvi">
+            <node concept="3clFbF" id="1cPvvek_ViY" role="3cqZAp">
+              <node concept="2OqwBi" id="1cPvvek_Vj0" role="3clFbG">
+                <node concept="2OqwBi" id="1cPvvek_Vj1" role="2Oq$k0">
+                  <node concept="2WthIp" id="1cPvvek_Vj2" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="1cPvvek_Vj3" role="2OqNvi">
                     <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1cPvvek_ViY" role="3cqZAp">
-              <node concept="2OqwBi" id="1cPvvek_ViZ" role="3clFbG">
-                <node concept="2OqwBi" id="1cPvvek_Vj0" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1cPvvek_Vj1" role="2Oq$k0">
-                    <node concept="2WthIp" id="1cPvvek_Vj2" role="2Oq$k0" />
-                    <node concept="2BZ7hE" id="1cPvvek_Vj3" role="2OqNvi">
-                      <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
+                <node concept="liA8E" id="1cPvvek_Vj4" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~JScrollPane.setViewportView(java.awt.Component):void" resolve="setViewportView" />
+                  <node concept="2OqwBi" id="1cPvvekIL0D" role="37wK5m">
+                    <node concept="2WthIp" id="1cPvvekIL0G" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="1cPvvekIL0I" role="2OqNvi">
+                      <ref role="2WH_rO" node="7uOgiT8PA3" resolve="myChartPanel" />
                     </node>
-                  </node>
-                  <node concept="liA8E" id="1cPvvek_Vj4" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JScrollPane.getVerticalScrollBar():javax.swing.JScrollBar" resolve="getVerticalScrollBar" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1cPvvek_Vj5" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int):void" resolve="setUnitIncrement" />
-                  <node concept="3cmrfG" id="1cPvvek_Vj6" role="37wK5m">
-                    <property role="3cmrfH" value="16" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1cPvvek_Vj7" role="3cqZAp">
-              <node concept="2OqwBi" id="1cPvvek_Vj8" role="3clFbG">
-                <node concept="2OqwBi" id="1cPvvek_Vj9" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1cPvvek_Vja" role="2Oq$k0">
-                    <node concept="2WthIp" id="1cPvvek_Vjb" role="2Oq$k0" />
-                    <node concept="2BZ7hE" id="1cPvvek_Vjc" role="2OqNvi">
-                      <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1cPvvek_Vjd" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JScrollPane.getHorizontalScrollBar():javax.swing.JScrollBar" resolve="getHorizontalScrollBar" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1cPvvek_Vje" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int):void" resolve="setUnitIncrement" />
-                  <node concept="3cmrfG" id="1cPvvek_Vjf" role="37wK5m">
-                    <property role="3cmrfH" value="16" />
                   </node>
                 </node>
               </node>
@@ -339,6 +295,84 @@
     </node>
     <node concept="2UmK3q" id="75t_nimFd6p" role="2Um5zG">
       <node concept="3clFbS" id="75t_nimFd6q" role="2VODD2">
+        <node concept="3clFbF" id="1cPvvekEyJx" role="3cqZAp">
+          <node concept="37vLTI" id="1cPvvekEyOo" role="3clFbG">
+            <node concept="2ShNRf" id="1cPvvekEyR1" role="37vLTx">
+              <node concept="1pGfFk" id="1cPvvekEyQl" role="2ShVmc">
+                <ref role="37wK5l" node="7uOgiT959T" resolve="ChartManager" />
+                <node concept="2WthIp" id="1cPvvekEyT2" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1cPvvekEyJr" role="37vLTJ">
+              <node concept="2WthIp" id="1cPvvekEyJu" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="1cPvvekEyJw" role="2OqNvi">
+                <ref role="2WH_rO" node="7uOgiT8Uq1" resolve="myChartManager" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1cPvvekIK2I" role="3cqZAp">
+          <node concept="37vLTI" id="1cPvvekIK2J" role="3clFbG">
+            <node concept="2ShNRf" id="1cPvvekIK2K" role="37vLTx">
+              <node concept="1pGfFk" id="1cPvvekIK2L" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                <node concept="2ShNRf" id="1cPvvekIKvm" role="37wK5m">
+                  <node concept="1pGfFk" id="1cPvvekIKV$" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1cPvvekIK2P" role="37vLTJ">
+              <node concept="2WthIp" id="1cPvvekIK2Q" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="1cPvvekIK2R" role="2OqNvi">
+                <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1cPvvekIK9i" role="3cqZAp">
+          <node concept="2OqwBi" id="1cPvvekIK9j" role="3clFbG">
+            <node concept="2OqwBi" id="1cPvvekIK9k" role="2Oq$k0">
+              <node concept="2OqwBi" id="1cPvvekIK9l" role="2Oq$k0">
+                <node concept="2WthIp" id="1cPvvekIK9m" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="1cPvvekIK9n" role="2OqNvi">
+                  <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1cPvvekIK9o" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JScrollPane.getVerticalScrollBar():javax.swing.JScrollBar" resolve="getVerticalScrollBar" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1cPvvekIK9p" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int):void" resolve="setUnitIncrement" />
+              <node concept="3cmrfG" id="1cPvvekIK9q" role="37wK5m">
+                <property role="3cmrfH" value="16" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1cPvvekIK9r" role="3cqZAp">
+          <node concept="2OqwBi" id="1cPvvekIK9s" role="3clFbG">
+            <node concept="2OqwBi" id="1cPvvekIK9t" role="2Oq$k0">
+              <node concept="2OqwBi" id="1cPvvekIK9u" role="2Oq$k0">
+                <node concept="2WthIp" id="1cPvvekIK9v" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="1cPvvekIK9w" role="2OqNvi">
+                  <ref role="2WH_rO" node="75t_nimFd7S" resolve="myComponent" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1cPvvekIK9x" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JScrollPane.getHorizontalScrollBar():javax.swing.JScrollBar" resolve="getHorizontalScrollBar" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1cPvvekIK9y" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JScrollBar.setUnitIncrement(int):void" resolve="setUnitIncrement" />
+              <node concept="3cmrfG" id="1cPvvekIK9z" role="37wK5m">
+                <property role="3cmrfH" value="16" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="75t_nimFdlj" role="3cqZAp">
           <node concept="2OqwBi" id="75t_nimFdld" role="3clFbG">
             <node concept="2WthIp" id="75t_nimFdlg" role="2Oq$k0" />

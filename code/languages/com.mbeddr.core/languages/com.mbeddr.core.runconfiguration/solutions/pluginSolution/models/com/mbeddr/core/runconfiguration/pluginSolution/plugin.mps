@@ -13145,15 +13145,9 @@
                               </node>
                               <node concept="liA8E" id="ETuBV6lH7s" role="2OqNvi">
                                 <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.reporting(boolean,boolean,boolean,int):jetbrains.mps.generator.GenerationOptions$OptionsBuilder" resolve="reporting" />
-                                <node concept="3clFbT" id="ETuBV6lHD9" role="37wK5m">
-                                  <property role="3clFbU" value="true" />
-                                </node>
-                                <node concept="3clFbT" id="ETuBV6lI8s" role="37wK5m">
-                                  <property role="3clFbU" value="true" />
-                                </node>
-                                <node concept="3clFbT" id="ETuBV6lJ7S" role="37wK5m">
-                                  <property role="3clFbU" value="true" />
-                                </node>
+                                <node concept="3clFbT" id="ETuBV6lHD9" role="37wK5m" />
+                                <node concept="3clFbT" id="ETuBV6lI8s" role="37wK5m" />
+                                <node concept="3clFbT" id="ETuBV6lJ7S" role="37wK5m" />
                                 <node concept="3cmrfG" id="ETuBV6lLcJ" role="37wK5m">
                                   <property role="3cmrfH" value="-1" />
                                 </node>
