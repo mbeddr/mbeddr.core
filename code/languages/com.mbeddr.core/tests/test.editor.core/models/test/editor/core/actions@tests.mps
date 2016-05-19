@@ -2362,13 +2362,7 @@
         <node concept="3XIRFW" id="6rhOS_xtLam" role="c0U17" />
         <node concept="3TlMhK" id="6rhOS_xtLao" role="c0U16" />
         <node concept="1ly_i6" id="6rhOS_xtLct" role="ggAap">
-          <node concept="3XIRFW" id="6rhOS_xtLcu" role="1ly_ph">
-            <node concept="1KehLL" id="6rhOS_xtNlL" role="lGtFl">
-              <property role="1K8rM7" value="Constant_u338ov_d0" />
-              <property role="1K8rD$" value="default_RTransform" />
-              <property role="1Kfyot" value="right" />
-            </node>
-          </node>
+          <node concept="3XIRFW" id="6rhOS_xtLcu" role="1ly_ph" />
         </node>
       </node>
     </node>
