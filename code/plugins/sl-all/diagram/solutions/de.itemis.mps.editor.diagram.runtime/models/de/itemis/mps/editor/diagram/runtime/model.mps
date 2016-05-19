@@ -2199,6 +2199,14 @@
         <property role="3clFbU" value="false" />
       </node>
     </node>
+    <node concept="312cEg" id="5wZ$f6KGRR3" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myCurved" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="5wZ$f6KGQgv" role="1B3o_S" />
+      <node concept="10P_77" id="5wZ$f6KGTtB" role="1tU5fm" />
+    </node>
     <node concept="2tJIrI" id="3cHJBdxOk8" role="jymVt" />
     <node concept="312cEg" id="3cHJBdxQzF" role="jymVt">
       <property role="TrG5h" value="myLastStartPoint" />
@@ -4829,6 +4837,41 @@
       <node concept="37vLTG" id="2ECWyVnrMoG" role="3clF46">
         <property role="TrG5h" value="anySideAllowedTo" />
         <node concept="10P_77" id="2ECWyVnrMoH" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5wZ$f6KGTvh" role="jymVt" />
+    <node concept="3clFb_" id="5wZ$f6KGVrr" role="jymVt">
+      <property role="TrG5h" value="isCurved" />
+      <node concept="10P_77" id="5wZ$f6KGVrs" role="3clF45" />
+      <node concept="3Tm1VV" id="5wZ$f6KGVrt" role="1B3o_S" />
+      <node concept="3clFbS" id="5wZ$f6KGVru" role="3clF47">
+        <node concept="3clFbF" id="5wZ$f6KGVrv" role="3cqZAp">
+          <node concept="37vLTw" id="5wZ$f6KGVrq" role="3clFbG">
+            <ref role="3cqZAo" node="5wZ$f6KGRR3" resolve="myCurved" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5wZ$f6KH161" role="jymVt" />
+    <node concept="3clFb_" id="5wZ$f6KGVrx" role="jymVt">
+      <property role="TrG5h" value="setCurved" />
+      <node concept="3cqZAl" id="5wZ$f6KGVry" role="3clF45" />
+      <node concept="3Tm1VV" id="5wZ$f6KGVrz" role="1B3o_S" />
+      <node concept="3clFbS" id="5wZ$f6KGVr$" role="3clF47">
+        <node concept="3clFbF" id="5wZ$f6KGVr_" role="3cqZAp">
+          <node concept="37vLTI" id="5wZ$f6KGVrA" role="3clFbG">
+            <node concept="37vLTw" id="5wZ$f6KGVrB" role="37vLTx">
+              <ref role="3cqZAo" node="5wZ$f6KGVrC" resolve="curved" />
+            </node>
+            <node concept="37vLTw" id="5wZ$f6KGVrw" role="37vLTJ">
+              <ref role="3cqZAo" node="5wZ$f6KGRR3" resolve="myCurved" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5wZ$f6KGVrC" role="3clF46">
+        <property role="TrG5h" value="curved" />
+        <node concept="10P_77" id="5wZ$f6KGVrD" role="1tU5fm" />
       </node>
     </node>
   </node>
@@ -17189,6 +17232,14 @@
       <node concept="3Tm1VV" id="2ECWyVnqOX1" role="1B3o_S" />
       <node concept="3clFbS" id="2ECWyVnqOX2" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="5wZ$f6KHcIH" role="jymVt" />
+    <node concept="3clFb_" id="5wZ$f6KHbcC" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="isCurved" />
+      <node concept="10P_77" id="5wZ$f6KHerf" role="3clF45" />
+      <node concept="3Tm1VV" id="5wZ$f6KHbcE" role="1B3o_S" />
+      <node concept="3clFbS" id="5wZ$f6KHbcF" role="3clF47" />
+    </node>
     <node concept="3Tm1VV" id="4teJTSBwOHb" role="1B3o_S" />
     <node concept="3uibUv" id="4teJTSBx1T9" role="3HQHJm">
       <ref role="3uigEE" node="4teJTSBx0$0" resolve="IDiagramElementAccessor" />
@@ -21165,6 +21216,24 @@
                 </node>
                 <node concept="liA8E" id="4DmqtiLtTAY" role="2OqNvi">
                   <ref role="37wK5l" node="6_t$UUKuycr" resolve="getEndShapeSize" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5wZ$f6KH9_m" role="3cqZAp">
+          <node concept="2OqwBi" id="5wZ$f6KH9WZ" role="3clFbG">
+            <node concept="37vLTw" id="5wZ$f6KH9_k" role="2Oq$k0">
+              <ref role="3cqZAo" node="7jhYr4hsn8s" resolve="element" />
+            </node>
+            <node concept="liA8E" id="5wZ$f6KHaDk" role="2OqNvi">
+              <ref role="37wK5l" node="5wZ$f6KGVrx" resolve="setCurved" />
+              <node concept="2OqwBi" id="5wZ$f6KHaVI" role="37wK5m">
+                <node concept="37vLTw" id="5wZ$f6KHaOQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7jhYr4hsn8q" resolve="accessor" />
+                </node>
+                <node concept="liA8E" id="5wZ$f6KHbcG" role="2OqNvi">
+                  <ref role="37wK5l" node="5wZ$f6KHbcC" resolve="isCurved" />
                 </node>
               </node>
             </node>
@@ -26108,6 +26177,21 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2ECWyVnqW0d" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5wZ$f6KHfQB" role="jymVt" />
+    <node concept="3clFb_" id="5wZ$f6KHh1$" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isCurved" />
+      <node concept="10P_77" id="5wZ$f6KHh1_" role="3clF45" />
+      <node concept="3Tm1VV" id="5wZ$f6KHh1A" role="1B3o_S" />
+      <node concept="3clFbS" id="5wZ$f6KHh1D" role="3clF47">
+        <node concept="3clFbF" id="5wZ$f6KHh1F" role="3cqZAp">
+          <node concept="3clFbT" id="5wZ$f6KHh1E" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5wZ$f6KHjfj" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -31811,6 +31895,37 @@
         </node>
       </node>
       <node concept="3uibUv" id="5elYBhUTxqZ" role="aoRGl">
+        <ref role="3uigEE" to="fbzs:~Point2D" resolve="Point2D" />
+      </node>
+    </node>
+    <node concept="ATzpf" id="5wZ$f6KqO5B" role="a7sos">
+      <property role="TrG5h" value="toVector2D" />
+      <node concept="3Tm1VV" id="5wZ$f6KqO5C" role="1B3o_S" />
+      <node concept="3uibUv" id="5wZ$f6KqQPx" role="3clF45">
+        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+      </node>
+      <node concept="3clFbS" id="5wZ$f6KqO5E" role="3clF47">
+        <node concept="3clFbF" id="5wZ$f6KqO5F" role="3cqZAp">
+          <node concept="2ShNRf" id="5wZ$f6KqO5G" role="3clFbG">
+            <node concept="1pGfFk" id="5wZ$f6KqO5H" role="2ShVmc">
+              <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+              <node concept="2OqwBi" id="5wZ$f6KqO5I" role="37wK5m">
+                <node concept="2V_BSl" id="5wZ$f6KqO5J" role="2Oq$k0" />
+                <node concept="liA8E" id="5wZ$f6KqO5K" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~Point2D.getX():double" resolve="getX" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5wZ$f6KqO5L" role="37wK5m">
+                <node concept="2V_BSl" id="5wZ$f6KqO5M" role="2Oq$k0" />
+                <node concept="liA8E" id="5wZ$f6KqO5N" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~Point2D.getY():double" resolve="getY" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5wZ$f6KqO5O" role="aoRGl">
         <ref role="3uigEE" to="fbzs:~Point2D" resolve="Point2D" />
       </node>
     </node>
