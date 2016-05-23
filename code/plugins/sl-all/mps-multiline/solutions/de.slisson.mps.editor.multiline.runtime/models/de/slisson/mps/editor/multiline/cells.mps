@@ -1607,7 +1607,7 @@
           <node concept="3clFbS" id="453OnIlrZj_" role="2LFqv$">
             <node concept="3clFbF" id="453OnIlrZjA" role="3cqZAp">
               <node concept="1rXfSq" id="1rfeXz7xseB" role="3clFbG">
-                <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+                <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
                 <node concept="2OqwBi" id="453OnIlrZjC" role="37wK5m">
                   <node concept="2OqwBi" id="453OnIlrZjD" role="2Oq$k0">
                     <node concept="3P9mCS" id="453OnIlrZjE" role="2Oq$k0">
@@ -2233,7 +2233,7 @@
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getCellInfo():jetbrains.mps.nodeEditor.cells.CellInfo" resolve="getCellInfo" />
                   </node>
                   <node concept="liA8E" id="2QgKsqxw46I" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
+                    <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
                     <node concept="1rXfSq" id="1rfeXz7xshH" role="37wK5m">
                       <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditor():jetbrains.mps.nodeEditor.EditorComponent" resolve="getEditor" />
                     </node>
@@ -5106,7 +5106,7 @@
                 <node concept="3clFbF" id="3g9xYqoWgQo" role="3cqZAp">
                   <node concept="2OqwBi" id="3g9xYqoWgQp" role="3clFbG">
                     <node concept="liA8E" id="3g9xYqoWgQq" role="2OqNvi">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.paint(java.awt.Graphics,jetbrains.mps.nodeEditor.cells.ParentSettings):void" resolve="paint" />
+                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.paintCell(java.awt.Graphics,jetbrains.mps.nodeEditor.cells.ParentSettings):void" resolve="paintCell" />
                       <node concept="37vLTw" id="3g9xYqoWgQr" role="37wK5m">
                         <ref role="3cqZAo" node="3gBYXhg3yxj" resolve="g" />
                       </node>
@@ -5120,6 +5120,19 @@
                     </node>
                     <node concept="2GrUjf" id="3g9xYqoWgQu" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="3g9xYqoWgPP" resolve="word" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="15CcbOfzYvH" role="3cqZAp">
+                  <node concept="2OqwBi" id="15CcbOfzYSS" role="3clFbG">
+                    <node concept="2GrUjf" id="15CcbOfzYvF" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3g9xYqoWgPP" resolve="word" />
+                    </node>
+                    <node concept="liA8E" id="15CcbOf$0Ti" role="2OqNvi">
+                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.paintDecorations(java.awt.Graphics):void" resolve="paintDecorations" />
+                      <node concept="37vLTw" id="15CcbOf$1Cg" role="37wK5m">
+                        <ref role="3cqZAo" node="3gBYXhg3yxj" resolve="g" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -11802,7 +11815,7 @@
                 <ref role="3cqZAo" node="1laD9eY9cE6" resolve="cellInfo" />
               </node>
               <node concept="liA8E" id="1laD9eY9cEz" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
+                <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
                 <node concept="1eOMI4" id="6tOcB$JBuiZ" role="37wK5m">
                   <node concept="10QFUN" id="6tOcB$JBuj0" role="1eOMHV">
                     <node concept="37vLTw" id="6tOcB$JBuiY" role="10QFUP">

@@ -446,7 +446,7 @@
                   <ref role="3cqZAo" node="1laD9eY9cE6" resolve="cellInfo" />
                 </node>
                 <node concept="liA8E" id="2_D0AvWRGDA" role="2OqNvi">
-                  <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
+                  <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
                   <node concept="10QFUN" id="6tOcB$JAjo7" role="37wK5m">
                     <node concept="3cpWs2" id="6tOcB$JAjo5" role="10QFUP">
                       <ref role="3cqZAo" node="1laD9eY9cE0" resolve="editorComponent" />

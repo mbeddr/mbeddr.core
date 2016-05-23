@@ -655,7 +655,7 @@
               </node>
             </node>
             <node concept="liA8E" id="42_DJ9jUF9u" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
               <node concept="37vLTw" id="42_DJ9jUFfJ" role="37wK5m">
                 <ref role="3cqZAo" node="48DYfEt2KZ8" resolve="myToggleCell" />
               </node>
@@ -678,7 +678,7 @@
               </node>
             </node>
             <node concept="liA8E" id="42_DJ9jUKRD" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
               <node concept="10QFUN" id="42_DJ9jUVgQ" role="37wK5m">
                 <node concept="3uibUv" id="42_DJ9jUVjZ" role="10QFUM">
                   <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
@@ -706,7 +706,7 @@
               </node>
             </node>
             <node concept="liA8E" id="42_DJ9jUQ74" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
               <node concept="10QFUN" id="42_DJ9jUVpv" role="37wK5m">
                 <node concept="3uibUv" id="42_DJ9jUVsC" role="10QFUM">
                   <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />

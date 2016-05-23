@@ -211,8 +211,8 @@
         <node concept="YeOm9" id="3Osd_yxgtrU" role="2ShVmc">
           <node concept="1Y3b0j" id="3Osd_yxgtrV" role="YeSDq">
             <property role="2bfB8j" value="true" />
-            <ref role="1Y3XeK" to="22ra:~UpdaterListener" resolve="UpdaterListener" />
-            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <ref role="1Y3XeK" to="22ra:~UpdaterListenerAdapter" resolve="UpdaterListenerAdapter" />
+            <ref role="37wK5l" to="22ra:~UpdaterListenerAdapter.&lt;init&gt;()" resolve="UpdaterListenerAdapter" />
             <node concept="3Tm1VV" id="3Osd_yxgtrW" role="1B3o_S" />
             <node concept="3clFb_" id="3Osd_yxgts3" role="jymVt">
               <property role="1EzhhJ" value="false" />

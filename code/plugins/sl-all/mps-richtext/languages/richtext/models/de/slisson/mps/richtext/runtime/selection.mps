@@ -375,8 +375,8 @@
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -668,19 +668,24 @@
         </node>
         <node concept="3clFbF" id="2_D0AvWRGCM" role="3cqZAp">
           <node concept="37vLTI" id="2_D0AvWRGD8" role="3clFbG">
-            <node concept="2OqwBi" id="2_D0AvWRGDw" role="37vLTx">
-              <node concept="3cpWs2" id="2_D0AvWRGDb" role="2Oq$k0">
-                <ref role="3cqZAo" node="1laD9eY9cE6" resolve="cellInfo" />
+            <node concept="10QFUN" id="6QGC01EUReY" role="37vLTx">
+              <node concept="3uibUv" id="6QGC01EUROV" role="10QFUM">
+                <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
               </node>
-              <node concept="liA8E" id="2_D0AvWRGDA" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
-                <node concept="1eOMI4" id="6tOcB$JAjo6" role="37wK5m">
-                  <node concept="10QFUN" id="6tOcB$JAjo7" role="1eOMHV">
-                    <node concept="3cpWs2" id="6tOcB$JAjo5" role="10QFUP">
-                      <ref role="3cqZAo" node="1laD9eY9cE0" resolve="editorComponent" />
-                    </node>
-                    <node concept="3uibUv" id="6tOcB$JAjo0" role="10QFUM">
-                      <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+              <node concept="2OqwBi" id="2_D0AvWRGDw" role="10QFUP">
+                <node concept="3cpWs2" id="2_D0AvWRGDb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1laD9eY9cE6" resolve="cellInfo" />
+                </node>
+                <node concept="liA8E" id="2_D0AvWRGDA" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
+                  <node concept="1eOMI4" id="6tOcB$JAjo6" role="37wK5m">
+                    <node concept="10QFUN" id="6tOcB$JAjo7" role="1eOMHV">
+                      <node concept="3cpWs2" id="6tOcB$JAjo5" role="10QFUP">
+                        <ref role="3cqZAo" node="1laD9eY9cE0" resolve="editorComponent" />
+                      </node>
+                      <node concept="3uibUv" id="6tOcB$JAjo0" role="10QFUM">
+                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -9068,14 +9073,19 @@
             <node concept="3uibUv" id="7NYWYqYQuBt" role="1tU5fm">
               <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
             </node>
-            <node concept="2OqwBi" id="7j0yJED1Sa6" role="33vP2m">
-              <node concept="2N2G$s" id="7j0yJED1Sad" role="2Oq$k0">
-                <ref role="3cqZAo" node="7j0yJED1REt" resolve="myCaretCellInfo" />
+            <node concept="10QFUN" id="6QGC01EVjOx" role="33vP2m">
+              <node concept="3uibUv" id="6QGC01EVkac" role="10QFUM">
+                <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
               </node>
-              <node concept="liA8E" id="7j0yJED1Saf" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
-                <node concept="3cpWsa" id="7j0yJED22TF" role="37wK5m">
-                  <ref role="3cqZAo" node="7j0yJED22SY" resolve="editorComponent" />
+              <node concept="2OqwBi" id="7j0yJED1Sa6" role="10QFUP">
+                <node concept="2N2G$s" id="7j0yJED1Sad" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7j0yJED1REt" resolve="myCaretCellInfo" />
+                </node>
+                <node concept="liA8E" id="7j0yJED1Saf" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
+                  <node concept="3cpWsa" id="7j0yJED22TF" role="37wK5m">
+                    <ref role="3cqZAo" node="7j0yJED22SY" resolve="editorComponent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -9265,7 +9275,7 @@
                     <ref role="2Gs0qQ" node="7j0yJED22Sh" resolve="cellInfo" />
                   </node>
                   <node concept="liA8E" id="7j0yJED22SR" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
+                    <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
                     <node concept="3cpWsa" id="7j0yJED22TH" role="37wK5m">
                       <ref role="3cqZAo" node="7j0yJED22SY" resolve="editorComponent" />
                     </node>
@@ -9318,7 +9328,7 @@
                     <ref role="2Gs0qQ" node="7j0yJED22Va" resolve="cellInfo" />
                   </node>
                   <node concept="liA8E" id="7j0yJED22Vi" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
+                    <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
                     <node concept="3cpWsa" id="7j0yJED22Vj" role="37wK5m">
                       <ref role="3cqZAo" node="7j0yJED22SY" resolve="editorComponent" />
                     </node>
