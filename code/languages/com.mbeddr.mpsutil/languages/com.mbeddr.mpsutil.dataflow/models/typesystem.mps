@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:04470b16-ca3c-4db3-878a-c1b314944cb9(com.mbeddr.core.dataflow.typesystem)">
+<model ref="r:37d9c0c4-b4b9-4fcd-b3e7-de7e2d2292bb(com.mbeddr.mpsutil.dataflow.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="ybok" ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)" implicit="true" />
+    <import index="6qry" ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -77,7 +77,7 @@
     </node>
     <node concept="1YaCAy" id="1O3WvD8NPZt" role="1YuTPh">
       <property role="TrG5h" value="expression" />
-      <ref role="1YaFvo" to="ybok:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
+      <ref role="1YaFvo" to="6qry:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
     </node>
   </node>
 </model>

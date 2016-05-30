@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3265f6e2-8420-4186-903c-220a630f9ca0(com.mbeddr.core.dataflow.editor)">
+<model ref="r:26c6b184-18e5-4c5e-af02-c8eb6600447d(com.mbeddr.mpsutil.dataflow.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
     <import index="tp45" ref="r:00000000-0000-4000-0000-011c89590379(jetbrains.mps.lang.dataFlow.editor)" />
-    <import index="ybok" ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="6qry" ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -53,21 +53,8 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="_oDvx5U56v">
-    <ref role="1XX52x" to="ybok:_oDvx5U51b" resolve="EmitInlineStatement" />
-    <node concept="3EZMnI" id="_oDvx5U56$" role="2wV5jI">
-      <node concept="l2Vlx" id="_oDvx5U56_" role="2iSdaV" />
-      <node concept="3F0ifn" id="_oDvx5U56x" role="3EZMnx">
-        <property role="3F0ifm" value="inline" />
-        <ref role="1k5W1q" to="tp45:hz_DuTG" resolve="Instruction" />
-      </node>
-      <node concept="3F1sOY" id="_oDvx5U56H" role="3EZMnx">
-        <ref role="1NtTu8" to="ybok:_oDvx5U56o" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="2U8JvBXrt1o">
-    <ref role="1XX52x" to="ybok:2U8JvBXrt1f" resolve="EmitEntryPointStatement" />
+    <ref role="1XX52x" to="6qry:2U8JvBXrt1f" resolve="EmitEntryPointStatement" />
     <node concept="3EZMnI" id="2U8JvBXrt1u" role="2wV5jI">
       <node concept="l2Vlx" id="2U8JvBXrt1v" role="2iSdaV" />
       <node concept="3F0ifn" id="2U8JvBXrt1q" role="3EZMnx">
@@ -75,28 +62,25 @@
         <ref role="1k5W1q" to="tp45:hz_DuTG" resolve="Instruction" />
       </node>
       <node concept="3F1sOY" id="2U8JvBXrt1H" role="3EZMnx">
-        <ref role="1NtTu8" to="ybok:2U8JvBXrt1g" />
+        <ref role="1NtTu8" to="6qry:2U8JvBXrt1g" />
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1O3WvD8NPAU">
-    <ref role="1XX52x" to="ybok:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
-    <node concept="3F0ifn" id="1O3WvD8NPAW" role="2wV5jI">
-      <property role="3F0ifm" value="isInterProcedural" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7TdqwvhyxIU">
-    <ref role="1XX52x" to="ybok:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
-    <node concept="3EZMnI" id="3QkagoxiVAF" role="2wV5jI">
-      <node concept="2iRkQZ" id="3QkagoxiVAI" role="2iSdaV" />
-      <node concept="3F0ifn" id="7TdqwvhyxMi" role="3EZMnx">
-        <property role="3F0ifm" value="@On Inter-procedural Data-flow Graph" />
+  <node concept="24kQdi" id="_oDvx5U56v">
+    <ref role="1XX52x" to="6qry:_oDvx5U51b" resolve="EmitInlineStatement" />
+    <node concept="3EZMnI" id="_oDvx5U56$" role="2wV5jI">
+      <node concept="l2Vlx" id="_oDvx5U56_" role="2iSdaV" />
+      <node concept="3F0ifn" id="_oDvx5U56x" role="3EZMnx">
+        <property role="3F0ifm" value="inline" />
+        <ref role="1k5W1q" to="tp45:hz_DuTG" resolve="Instruction" />
       </node>
-      <node concept="2SsqMj" id="3QkagoxiVAS" role="3EZMnx" />
+      <node concept="3F1sOY" id="_oDvx5U56H" role="3EZMnx">
+        <ref role="1NtTu8" to="6qry:_oDvx5U56o" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6ddb09ab16C">
-    <ref role="1XX52x" to="ybok:2cV6Bp1Wn8h" resolve="EmitMapStatement" />
+    <ref role="1XX52x" to="6qry:2cV6Bp1Wn8h" resolve="EmitMapStatement" />
     <node concept="3EZMnI" id="hTXCdmn" role="2wV5jI">
       <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="2wdLO7KhY1c" role="3EZMnx">
@@ -124,14 +108,30 @@
           </node>
           <node concept="l2Vlx" id="6ddb09ab17a" role="2iSdaV" />
           <node concept="3F1sOY" id="6ddb09ab17k" role="3EZMnx">
-            <ref role="1NtTu8" to="ybok:6ddb09ab16u" />
+            <ref role="1NtTu8" to="6qry:6ddb09ab16u" />
           </node>
         </node>
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7TdqwvhyxIU">
+    <ref role="1XX52x" to="6qry:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
+    <node concept="3EZMnI" id="3QkagoxiVAF" role="2wV5jI">
+      <node concept="2iRkQZ" id="3QkagoxiVAI" role="2iSdaV" />
+      <node concept="3F0ifn" id="7TdqwvhyxMi" role="3EZMnx">
+        <property role="3F0ifm" value="@On Inter-procedural Data-flow Graph" />
+      </node>
+      <node concept="2SsqMj" id="3QkagoxiVAS" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1O3WvD8NPAU">
+    <ref role="1XX52x" to="6qry:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
+    <node concept="3F0ifn" id="1O3WvD8NPAW" role="2wV5jI">
+      <property role="3F0ifm" value="isInterProcedural" />
+    </node>
+  </node>
   <node concept="24kQdi" id="2nbqtJGjoqv">
-    <ref role="1XX52x" to="ybok:2nbqtJGjoq6" resolve="WithInterProceduralSupport" />
+    <ref role="1XX52x" to="6qry:2nbqtJGjoq6" resolve="WithInterProceduralSupport" />
     <node concept="3F0ifn" id="2nbqtJGjoqx" role="2wV5jI">
       <property role="3F0ifm" value="Activates the support for inter-procedural data-flow graphs" />
     </node>

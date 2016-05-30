@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)">
+<model ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" implicit="true" />
+    <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -57,19 +57,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="_oDvx5U51b">
-    <property role="1pbfSe" value="1329657411" />
-    <property role="TrG5h" value="EmitInlineStatement" />
-    <property role="34LRSv" value="inline" />
-    <property role="R4oN_" value="inline" />
-    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="InterProceduralEmitStatement" />
-    <node concept="1TJgyj" id="_oDvx5U56o" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2U8JvBXrt1f">
     <property role="1pbfSe" value="737578568" />
     <property role="TrG5h" value="EmitEntryPointStatement" />
@@ -83,41 +70,17 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1O3WvD8NPAO">
-    <property role="1pbfSe" value="1708346286" />
-    <property role="TrG5h" value="IsInterProceduralExpression" />
-    <property role="34LRSv" value="isInterProcedural" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-  </node>
-  <node concept="1TIwiD" id="7TdqwvhyxII">
-    <property role="1pbfSe" value="1339524533" />
-    <property role="TrG5h" value="InterProceduralDataFlowGraphAttribute" />
-    <ref role="1TJDcQ" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
-    <node concept="M6xJ_" id="7TdqwvhyxIJ" role="lGtFl">
-      <node concept="tn0Fv" id="7TdqwvhyxIN" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3u8ubzKm3sG">
-    <property role="1pbfSe" value="669036516" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="InterProceduralEmitStatement" />
-    <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
-  </node>
-  <node concept="1TIwiD" id="3u8ubzKrgBU">
-    <property role="1pbfSe" value="670401202" />
-    <property role="TrG5h" value="VirtualAttribute" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="3u8ubzKrgBV" role="lGtFl">
-      <property role="Hh88m" value="virtual" />
-      <node concept="trNpa" id="3u8ubzKrgC1" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-      <node concept="tn0Fv" id="3u8ubzKrgBX" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
+  <node concept="1TIwiD" id="_oDvx5U51b">
+    <property role="1pbfSe" value="1329657411" />
+    <property role="TrG5h" value="EmitInlineStatement" />
+    <property role="34LRSv" value="inline" />
+    <property role="R4oN_" value="inline" />
+    <ref role="1TJDcQ" node="3u8ubzKm3sG" resolve="InterProceduralEmitStatement" />
+    <node concept="1TJgyj" id="_oDvx5U56o" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2cV6Bp1Wn8h">
@@ -148,6 +111,43 @@
   <node concept="PlHQZ" id="2cV6Bp1XC9G">
     <property role="1pbfSe" value="1697750242" />
     <property role="TrG5h" value="IInterProceduralEmitStatement" />
+  </node>
+  <node concept="1TIwiD" id="7TdqwvhyxII">
+    <property role="1pbfSe" value="1339524533" />
+    <property role="TrG5h" value="InterProceduralDataFlowGraphAttribute" />
+    <ref role="1TJDcQ" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
+    <node concept="M6xJ_" id="7TdqwvhyxIJ" role="lGtFl">
+      <node concept="tn0Fv" id="7TdqwvhyxIN" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3u8ubzKm3sG">
+    <property role="1pbfSe" value="669036516" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="InterProceduralEmitStatement" />
+    <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
+  </node>
+  <node concept="1TIwiD" id="1O3WvD8NPAO">
+    <property role="1pbfSe" value="1708346286" />
+    <property role="TrG5h" value="IsInterProceduralExpression" />
+    <property role="34LRSv" value="isInterProcedural" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3u8ubzKrgBU">
+    <property role="1pbfSe" value="670401202" />
+    <property role="TrG5h" value="VirtualAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3u8ubzKrgBV" role="lGtFl">
+      <property role="Hh88m" value="virtual" />
+      <node concept="trNpa" id="3u8ubzKrgC1" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="3u8ubzKrgBX" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="2nbqtJGjoq6">
     <property role="1pbfSe" value="303624289" />

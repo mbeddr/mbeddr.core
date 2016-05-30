@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:581e49f4-2241-4be6-8147-6d4ebf0e1649(com.mbeddr.core.dataflow.dataFlow)">
+<model ref="r:b611ae9b-a7f4-4df7-aaf0-85b465374686(com.mbeddr.mpsutil.dataflow.dataFlow)">
   <persistence version="9" />
   <languages>
     <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ybok" ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)" implicit="true" />
-    <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" implicit="true" />
+    <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
+    <import index="6qry" ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -49,8 +49,38 @@
       </concept>
     </language>
   </registry>
+  <node concept="3_zdsH" id="6ddb09abn2O">
+    <ref role="3_znuS" to="6qry:2U8JvBXrt1f" resolve="EmitEntryPointStatement" />
+    <node concept="3__wT9" id="6ddb09abn2P" role="3_A6iZ">
+      <node concept="3clFbS" id="6ddb09abn2Q" role="2VODD2">
+        <node concept="3AgYrR" id="6ddb09abn31" role="3cqZAp">
+          <node concept="2OqwBi" id="6ddb09abn6T" role="3Ah4Yx">
+            <node concept="3__QtB" id="6ddb09abn3e" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5IQr1TuNc_L" role="2OqNvi">
+              <ref role="3Tt5mk" to="6qry:2U8JvBXrt1g" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="6ddb09abkV7">
+    <ref role="3_znuS" to="6qry:_oDvx5U51b" resolve="EmitInlineStatement" />
+    <node concept="3__wT9" id="6ddb09abkV8" role="3_A6iZ">
+      <node concept="3clFbS" id="6ddb09abkV9" role="2VODD2">
+        <node concept="3AgYrR" id="6ddb09abkVk" role="3cqZAp">
+          <node concept="2OqwBi" id="6ddb09abl0v" role="3Ah4Yx">
+            <node concept="3__QtB" id="6ddb09abkWO" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5IQr1TuNcVz" role="2OqNvi">
+              <ref role="3Tt5mk" to="6qry:_oDvx5U56o" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="3_zdsH" id="6ddb09abi$8">
-    <ref role="3_znuS" to="ybok:2cV6Bp1Wn8h" resolve="EmitMapStatement" />
+    <ref role="3_znuS" to="6qry:2cV6Bp1Wn8h" resolve="EmitMapStatement" />
     <node concept="3__wT9" id="6ddb09abi$9" role="3_A6iZ">
       <node concept="3clFbS" id="6ddb09abi$a" role="2VODD2">
         <node concept="3clFbJ" id="6ddb09ablSb" role="3cqZAp">
@@ -58,8 +88,8 @@
             <node concept="3AgYrR" id="6ddb09abi$u" role="3cqZAp">
               <node concept="2OqwBi" id="6ddb09abiDe" role="3Ah4Yx">
                 <node concept="3__QtB" id="6ddb09abi$L" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6ddb09abiOI" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ybok:6ddb09ab16u" />
+                <node concept="3TrEf2" id="5IQr1TuNd_L" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6qry:6ddb09ab16u" />
                 </node>
               </node>
             </node>
@@ -68,8 +98,8 @@
             <node concept="10Nm6u" id="6ddb09abmmT" role="3uHU7w" />
             <node concept="2OqwBi" id="6ddb09ablYf" role="3uHU7B">
               <node concept="3__QtB" id="6ddb09ablT8" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6ddb09abm9F" role="2OqNvi">
-                <ref role="3Tt5mk" to="ybok:6ddb09ab16u" />
+              <node concept="3TrEf2" id="5IQr1TuNdEr" role="2OqNvi">
+                <ref role="3Tt5mk" to="6qry:6ddb09ab16u" />
               </node>
             </node>
           </node>
@@ -107,7 +137,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="6ddb09abjXm">
-    <ref role="3_znuS" to="ybok:2cV6Bp1Wvtp" resolve="EmitUnmapStatement" />
+    <ref role="3_znuS" to="6qry:2cV6Bp1Wvtp" resolve="EmitUnmapStatement" />
     <node concept="3__wT9" id="6ddb09abjXn" role="3_A6iZ">
       <node concept="3clFbS" id="6ddb09abjXo" role="2VODD2">
         <node concept="3AgYrR" id="6ddb09abjXz" role="3cqZAp">
@@ -115,36 +145,6 @@
             <node concept="3__QtB" id="6ddb09abjXK" role="2Oq$k0" />
             <node concept="3TrEf2" id="6ddb09abkcf" role="2OqNvi">
               <ref role="3Tt5mk" to="tp41:hz_H1WB" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3_zdsH" id="6ddb09abkV7">
-    <ref role="3_znuS" to="ybok:_oDvx5U51b" resolve="EmitInlineStatement" />
-    <node concept="3__wT9" id="6ddb09abkV8" role="3_A6iZ">
-      <node concept="3clFbS" id="6ddb09abkV9" role="2VODD2">
-        <node concept="3AgYrR" id="6ddb09abkVk" role="3cqZAp">
-          <node concept="2OqwBi" id="6ddb09abl0v" role="3Ah4Yx">
-            <node concept="3__QtB" id="6ddb09abkWO" role="2Oq$k0" />
-            <node concept="3TrEf2" id="6ddb09abl9P" role="2OqNvi">
-              <ref role="3Tt5mk" to="ybok:_oDvx5U56o" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3_zdsH" id="6ddb09abn2O">
-    <ref role="3_znuS" to="ybok:2U8JvBXrt1f" resolve="EmitEntryPointStatement" />
-    <node concept="3__wT9" id="6ddb09abn2P" role="3_A6iZ">
-      <node concept="3clFbS" id="6ddb09abn2Q" role="2VODD2">
-        <node concept="3AgYrR" id="6ddb09abn31" role="3cqZAp">
-          <node concept="2OqwBi" id="6ddb09abn6T" role="3Ah4Yx">
-            <node concept="3__QtB" id="6ddb09abn3e" role="2Oq$k0" />
-            <node concept="3TrEf2" id="6ddb09abngf" role="2OqNvi">
-              <ref role="3Tt5mk" to="ybok:2U8JvBXrt1g" />
             </node>
           </node>
         </node>

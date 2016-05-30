@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d1386d57-ce33-4279-acb8-79957eee920a(com.mbeddr.core.dataflow.intentions)">
+<model ref="r:571d164a-c71a-4e8c-a847-77f9e18ba2ca(com.mbeddr.mpsutil.dataflow.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" implicit="true" />
-    <import index="ybok" ref="r:7dfcfa6f-9a28-4f89-a6e9-aef71c0e4ab5(com.mbeddr.core.dataflow.structure)" implicit="true" />
+    <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" />
+    <import index="6qry" ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -139,8 +139,8 @@
                               <ref role="3cqZAo" node="4fUrRtGPFo6" resolve="it" />
                             </node>
                             <node concept="1mIQ4w" id="4fUrRtGPFCU" role="2OqNvi">
-                              <node concept="chp4Y" id="4fUrRtGPFGI" role="cj9EA">
-                                <ref role="cht4Q" to="ybok:7TdqwvhyxII" resolve="InterProceduralProgramAttribute" />
+                              <node concept="chp4Y" id="5IQr1TuNamM" role="cj9EA">
+                                <ref role="cht4Q" to="6qry:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
                               </node>
                             </node>
                           </node>
@@ -192,8 +192,8 @@
                         <ref role="3cqZAo" node="4fUrRtGPDhQ" resolve="it" />
                       </node>
                       <node concept="1mIQ4w" id="4fUrRtGPDxu" role="2OqNvi">
-                        <node concept="chp4Y" id="4fUrRtGPDzH" role="cj9EA">
-                          <ref role="cht4Q" to="ybok:7TdqwvhyxII" resolve="InterProceduralProgramAttribute" />
+                        <node concept="chp4Y" id="5IQr1TuNamH" role="cj9EA">
+                          <ref role="cht4Q" to="6qry:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
                         </node>
                       </node>
                     </node>
@@ -222,7 +222,7 @@
                     <node concept="2ShNRf" id="7Tdqwvhyyqp" role="25WWJ7">
                       <node concept="3zrR0B" id="7Tdqwvhyyqn" role="2ShVmc">
                         <node concept="3Tqbb2" id="7Tdqwvhyyqo" role="3zrR0E">
-                          <ref role="ehGHo" to="ybok:7TdqwvhyxII" resolve="InterProceduralProgramAttribute" />
+                          <ref role="ehGHo" to="6qry:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
                         </node>
                       </node>
                     </node>

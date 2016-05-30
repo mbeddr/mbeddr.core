@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1bb94eac-f87d-4401-983d-df7d902a1721(com.mbeddr.core.dataflow.behavior)">
+<model ref="r:02d9a0f4-d37a-44ab-921e-e01b90969ea6(com.mbeddr.mpsutil.dataflow.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
