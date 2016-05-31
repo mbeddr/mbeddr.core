@@ -4035,6 +4035,40 @@
             <node concept="10Nm6u" id="3D3g9moMQVj" role="33vP2m" />
           </node>
         </node>
+        <node concept="3cpWs8" id="4TA4VzJnmzq" role="3cqZAp">
+          <node concept="3cpWsn" id="4TA4VzJnmzr" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="4TA4VzJnmzp" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2YIFZM" id="4TA4VzJnmzs" role="33vP2m">
+              <ref role="37wK5l" to="alof:~ProjectHelper.getProjectRepository(com.intellij.openapi.project.Project):org.jetbrains.mps.openapi.module.SRepository" resolve="getProjectRepository" />
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <node concept="37vLTw" id="4TA4VzJnmzt" role="37wK5m">
+                <ref role="3cqZAo" node="3D3g9moMQV3" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4TA4VzJnryG" role="3cqZAp">
+          <node concept="3cpWsn" id="4TA4VzJnryH" role="3cpWs9">
+            <property role="TrG5h" value="resolvedNodeToHighlight" />
+            <node concept="3uibUv" id="4TA4VzJnry$" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="2OqwBi" id="4TA4VzJnryI" role="33vP2m">
+              <node concept="3cpWs2" id="4TA4VzJnryJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
+              </node>
+              <node concept="liA8E" id="4TA4VzJnryK" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                <node concept="37vLTw" id="4TA4VzJnryL" role="37wK5m">
+                  <ref role="3cqZAo" node="4TA4VzJnmzr" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3D3g9moMQSo" role="3cqZAp">
           <node concept="3cpWsn" id="3D3g9moMQSp" role="3cpWs9">
             <property role="TrG5h" value="nodeTrace" />
@@ -4042,35 +4076,36 @@
             <node concept="3uibUv" id="4YtriilITuS" role="1tU5fm">
               <ref role="3uigEE" to="fwk:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
             </node>
-            <node concept="2OqwBi" id="3D3g9moMQSr" role="33vP2m">
-              <node concept="2OqwBi" id="3D3g9moMQSs" role="2Oq$k0">
-                <node concept="2YIFZM" id="3D3g9moMQSt" role="2Oq$k0">
-                  <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="3D3g9moMQSu" role="2OqNvi">
-                  <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
-                  <node concept="2YIFZM" id="5HxjapwecYb" role="37wK5m">
-                    <ref role="37wK5l" to="unno:4g$x8cSGKDM" resolve="getModelFromNodeReference" />
-                    <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                    <node concept="3cpWs2" id="5HxjapwecYc" role="37wK5m">
-                      <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
-                    </node>
-                  </node>
+            <node concept="3K4zz7" id="4TA4VzJnxgF" role="33vP2m">
+              <node concept="10Nm6u" id="4TA4VzJnxwW" role="3K4E3e" />
+              <node concept="3clFbC" id="4TA4VzJnwMr" role="3K4Cdx">
+                <node concept="10Nm6u" id="4TA4VzJnwXf" role="3uHU7w" />
+                <node concept="37vLTw" id="4TA4VzJnws$" role="3uHU7B">
+                  <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
                 </node>
               </node>
-              <node concept="liA8E" id="3D3g9moMQSy" role="2OqNvi">
-                <ref role="37wK5l" to="fwk:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
-                <node concept="2OqwBi" id="3D3g9moMQSz" role="37wK5m">
-                  <node concept="3cpWs2" id="3D3g9moMQTY" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
+              <node concept="2OqwBi" id="3D3g9moMQSr" role="3K4GZi">
+                <node concept="2OqwBi" id="3D3g9moMQSs" role="2Oq$k0">
+                  <node concept="2YIFZM" id="3D3g9moMQSt" role="2Oq$k0">
+                    <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
+                    <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                   </node>
-                  <node concept="liA8E" id="5HxjapwecXX" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
-                    <node concept="2YIFZM" id="5HxjapwecXY" role="37wK5m">
-                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                  <node concept="liA8E" id="3D3g9moMQSu" role="2OqNvi">
+                    <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                    <node concept="2OqwBi" id="4TA4VzJntty" role="37wK5m">
+                      <node concept="37vLTw" id="4TA4VzJnt3p" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
+                      </node>
+                      <node concept="liA8E" id="4TA4VzJnu2n" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                      </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3D3g9moMQSy" role="2OqNvi">
+                  <ref role="37wK5l" to="fwk:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
+                  <node concept="37vLTw" id="4TA4VzJnryM" role="37wK5m">
+                    <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
                   </node>
                 </node>
               </node>
@@ -4109,17 +4144,8 @@
                       <node concept="1eOMI4" id="3D3g9moMQSQ" role="2Oq$k0">
                         <node concept="10QFUN" id="3D3g9moMQSR" role="1eOMHV">
                           <node concept="3Tqbb2" id="3D3g9moMQSS" role="10QFUM" />
-                          <node concept="2OqwBi" id="3D3g9moMQST" role="10QFUP">
-                            <node concept="3cpWs2" id="3D3g9moMQV2" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
-                            </node>
-                            <node concept="liA8E" id="5HxjapwecY7" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
-                              <node concept="2YIFZM" id="5HxjapwecY8" role="37wK5m">
-                                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                                <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                              </node>
-                            </node>
+                          <node concept="37vLTw" id="4TA4VzJnzkm" role="10QFUP">
+                            <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
                           </node>
                         </node>
                       </node>
