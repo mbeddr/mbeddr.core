@@ -1753,6 +1753,16 @@
     </node>
     <node concept="1fK8hs" id="7vcqB$mvpmW" role="1fK8h9">
       <node concept="3clFbS" id="7vcqB$mvpmX" role="2VODD2">
+        <node concept="3SKdUt" id="7t9IDx41ab8" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41aba" role="3SKWNk">
+            <property role="3SKdUp" value="returns all program variables as initialization" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7t9IDx41ai4" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41ai6" role="3SKWNk">
+            <property role="3SKdUp" value="the must analysis will perform the restrictions along the computation" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="1MdOvoQAayT" role="3cqZAp">
           <node concept="2YIFZM" id="7PgKJZv9tyk" role="3cqZAk">
             <ref role="37wK5l" node="2vgBKozqEsK" resolve="getInitialVariableSet" />
@@ -1764,6 +1774,16 @@
     </node>
     <node concept="3hkW_J" id="7vcqB$mvpmY" role="1fK9Do">
       <node concept="3clFbS" id="7vcqB$mvpmZ" role="2VODD2">
+        <node concept="3SKdUt" id="7t9IDx41akQ" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41akS" role="3SKWNk">
+            <property role="3SKdUp" value="use intersection so that only those variables are treated as initialized which " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7t9IDx41aBT" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41aBV" role="3SKWNk">
+            <property role="3SKdUp" value="are definitely initialized on all program paths which lead to a DFG node" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7PgKJZv9xGT" role="3cqZAp">
           <node concept="3cpWsn" id="7PgKJZv9xGU" role="3cpWs9">
             <property role="TrG5h" value="result" />
@@ -1834,6 +1854,26 @@
     </node>
     <node concept="1fK8ht" id="7vcqB$mvpn0" role="1fK8ha">
       <node concept="3clFbS" id="7vcqB$mvpn1" role="2VODD2">
+        <node concept="3SKdUt" id="7t9IDx41big" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41bii" role="3SKWNk">
+            <property role="3SKdUp" value="handle write &amp; defInit by adding the writte-to variable to" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7t9IDx41ciT" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41ciV" role="3SKWNk">
+            <property role="3SKdUp" value="the set of initialized ones" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7t9IDx41djE" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41djG" role="3SKWNk">
+            <property role="3SKdUp" value="in case of an unmap instruction, simply remove the unmapped variable from" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7t9IDx41ekz" role="3cqZAp">
+          <node concept="3SKdUq" id="7t9IDx41ek_" role="3SKWNk">
+            <property role="3SKdUp" value="the set of initialized ones" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="5kXaxjH08$M" role="3cqZAp">
           <node concept="3cpWsn" id="5kXaxjH08$N" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
@@ -2670,7 +2710,7 @@
               </node>
             </node>
             <node concept="2v6lVJ" id="7PgKJZviVLO" role="33vP2m">
-              <ref role="2v6lVI" node="7PgKJZveLFT" resolve="PointerAnalyzer" />
+              <ref role="2v6lVI" node="7PgKJZveLFT" resolve="PointsTo" />
               <node concept="37vLTw" id="1uoAWUP64cw" role="3vVDej">
                 <ref role="3cqZAo" node="1uoAWUP63Gj" resolve="node" />
               </node>
@@ -3538,7 +3578,7 @@
     </node>
   </node>
   <node concept="38boeP" id="7PgKJZveLFT">
-    <property role="TrG5h" value="PointerAnalyzer" />
+    <property role="TrG5h" value="PointsTo" />
     <property role="3GE5qa" value="analyzers.pointer" />
     <node concept="3uibUv" id="7PgKJZveMQp" role="1ZBA8x">
       <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
@@ -7753,7 +7793,7 @@
   </node>
   <node concept="38boeP" id="BItIAVbEWG">
     <property role="3GE5qa" value="analyzers.liveness" />
-    <property role="TrG5h" value="LivenessAnalyzer" />
+    <property role="TrG5h" value="Liveness" />
     <node concept="3uibUv" id="BItIAVbWJI" role="1ZBA8x">
       <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
       <node concept="3uibUv" id="BItIAVbX0L" role="11_B2D">
