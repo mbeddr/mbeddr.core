@@ -157,7 +157,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7499,15 +7499,28 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3fqX7Q" id="7u$ukFDho5T" role="3clFbw">
-                        <node concept="2OqwBi" id="7u$ukFDho5U" role="3fr31v">
-                          <node concept="37vLTw" id="7u$ukFDho5V" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2GqtAvz8HZA" resolve="variables" />
-                          </node>
-                          <node concept="liA8E" id="7u$ukFDho5W" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
-                            <node concept="37vLTw" id="7u$ukFDho5X" role="37wK5m">
+                      <node concept="1Wc70l" id="52QwK7oF1o7" role="3clFbw">
+                        <node concept="3y3z36" id="52QwK7oF1Tv" role="3uHU7w">
+                          <node concept="10Nm6u" id="52QwK7oF1Vc" role="3uHU7w" />
+                          <node concept="2OqwBi" id="52QwK7oF1tc" role="3uHU7B">
+                            <node concept="37vLTw" id="52QwK7oF1rH" role="2Oq$k0">
                               <ref role="3cqZAo" node="7u$ukFDnUdw" resolve="var" />
+                            </node>
+                            <node concept="2OwXpG" id="52QwK7oF1PF" role="2OqNvi">
+                              <ref role="2Oxat5" to="9xhd:4zFXTqpFMFo" resolve="variable" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3fqX7Q" id="7u$ukFDho5T" role="3uHU7B">
+                          <node concept="2OqwBi" id="7u$ukFDho5U" role="3fr31v">
+                            <node concept="37vLTw" id="7u$ukFDho5V" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2GqtAvz8HZA" resolve="variables" />
+                            </node>
+                            <node concept="liA8E" id="7u$ukFDho5W" role="2OqNvi">
+                              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                              <node concept="37vLTw" id="7u$ukFDho5X" role="37wK5m">
+                                <ref role="3cqZAo" node="7u$ukFDnUdw" resolve="var" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -9487,7 +9500,7 @@
                 </node>
               </node>
               <node concept="2v6lVJ" id="BItIAVcMnJ" role="33vP2m">
-                <ref role="2v6lVI" to="9xhd:BItIAVbEWG" resolve="LivenessAnalyzer" />
+                <ref role="2v6lVI" to="9xhd:BItIAVbEWG" resolve="Liveness" />
                 <node concept="1YBJjd" id="BItIAVcMnK" role="3vVDej">
                   <ref role="1YBMHb" node="7U3FobbB2zZ" resolve="statements" />
                 </node>
