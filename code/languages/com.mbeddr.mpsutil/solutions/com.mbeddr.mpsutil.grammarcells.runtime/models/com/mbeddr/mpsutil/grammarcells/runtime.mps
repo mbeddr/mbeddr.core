@@ -16955,7 +16955,7 @@
               <ref role="3cqZAo" node="76BPPvEiFQ_" resolve="cellInfo" />
             </node>
             <node concept="liA8E" id="76BPPvEnsuX" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
+              <ref role="37wK5l" to="f4zo:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
               <node concept="1eOMI4" id="76BPPvEnsuY" role="37wK5m">
                 <node concept="10QFUN" id="76BPPvEnsuZ" role="1eOMHV">
                   <node concept="2OqwBi" id="76BPPvEnsv0" role="10QFUP">
@@ -17325,8 +17325,8 @@
       <node concept="312cEg" id="3NNwv8WpRIs" role="jymVt">
         <property role="TrG5h" value="myCellInfo" />
         <node concept="3Tm6S6" id="3NNwv8WpRIt" role="1B3o_S" />
-        <node concept="3uibUv" id="3NNwv8WpRIX" role="1tU5fm">
-          <ref role="3uigEE" to="g51k:~CellInfo" resolve="CellInfo" />
+        <node concept="3uibUv" id="2iOQ_c4BYg_" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~CellInfo" resolve="CellInfo" />
         </node>
       </node>
       <node concept="312cEg" id="3NNwv8WpRJY" role="jymVt">
@@ -17345,18 +17345,11 @@
                 <ref role="3cqZAo" node="3NNwv8WpRIs" resolve="myCellInfo" />
               </node>
               <node concept="2OqwBi" id="76BPPvEi9Pf" role="37vLTx">
-                <node concept="1eOMI4" id="76BPPvEi9MY" role="2Oq$k0">
-                  <node concept="10QFUN" id="76BPPvEi9MV" role="1eOMHV">
-                    <node concept="37vLTw" id="76BPPvEi9Oi" role="10QFUP">
-                      <ref role="3cqZAo" node="3NNwv8WpRW_" resolve="cell" />
-                    </node>
-                    <node concept="3uibUv" id="76BPPvEi9NA" role="10QFUM">
-                      <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="76BPPvEi9Oi" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3NNwv8WpRW_" resolve="cell" />
                 </node>
                 <node concept="liA8E" id="76BPPvEi9UB" role="2OqNvi">
-                  <ref role="37wK5l" to="g51k:~EditorCell.getCellInfo():jetbrains.mps.nodeEditor.cells.CellInfo" resolve="getCellInfo" />
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getCellInfo():jetbrains.mps.openapi.editor.cells.CellInfo" resolve="getCellInfo" />
                 </node>
               </node>
             </node>
@@ -17426,16 +17419,9 @@
                 <ref role="3cqZAo" node="3NNwv8WpRIs" resolve="myCellInfo" />
               </node>
               <node concept="liA8E" id="3NNwv8Wqfo2" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
-                <node concept="1eOMI4" id="3NNwv8WqfqQ" role="37wK5m">
-                  <node concept="10QFUN" id="3NNwv8WqfqR" role="1eOMHV">
-                    <node concept="37vLTw" id="3NNwv8WqfqP" role="10QFUP">
-                      <ref role="3cqZAo" node="3NNwv8WqdCp" resolve="editorComponent" />
-                    </node>
-                    <node concept="3uibUv" id="3NNwv8WqfqF" role="10QFUM">
-                      <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-                    </node>
-                  </node>
+                <ref role="37wK5l" to="f4zo:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
+                <node concept="37vLTw" id="3NNwv8WqfqP" role="37wK5m">
+                  <ref role="3cqZAo" node="3NNwv8WqdCp" resolve="editorComponent" />
                 </node>
               </node>
             </node>
