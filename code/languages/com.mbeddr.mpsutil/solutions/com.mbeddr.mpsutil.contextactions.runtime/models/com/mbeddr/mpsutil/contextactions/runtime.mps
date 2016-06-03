@@ -244,7 +244,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -420,8 +420,8 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
@@ -9582,16 +9582,21 @@
               <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
             </node>
             <node concept="2EnYce" id="4q$a58Ks058" role="33vP2m">
-              <node concept="2OqwBi" id="4q$a58KrZmt" role="2Oq$k0">
-                <node concept="37vLTw" id="4q$a58KrZmu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4q$a58KrI17" resolve="context" />
+              <node concept="2OqwBi" id="6LzhH3u8rpG" role="2Oq$k0">
+                <node concept="2OqwBi" id="4q$a58KrZmt" role="2Oq$k0">
+                  <node concept="37vLTw" id="4q$a58KrZmu" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4q$a58KrI17" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="4q$a58KrZmv" role="2OqNvi">
+                    <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="4q$a58KrZmv" role="2OqNvi">
-                  <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
+                <node concept="liA8E" id="6LzhH3u8s8c" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                 </node>
               </node>
               <node concept="liA8E" id="4q$a58KrZmw" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
               </node>
             </node>
           </node>

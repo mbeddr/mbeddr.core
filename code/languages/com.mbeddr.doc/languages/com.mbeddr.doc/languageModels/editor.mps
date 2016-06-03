@@ -57,6 +57,7 @@
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="z0fb" ref="r:0b928dd6-dd7e-45a8-b309-a2e315b7877a(de.itemis.mps.editor.celllayout.styles.editor)" />
+    <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -10772,8 +10773,8 @@
         <node concept="3cpWs8" id="26B0wrG18iV" role="3cqZAp">
           <node concept="3cpWsn" id="26B0wrG18iW" role="3cpWs9">
             <property role="TrG5h" value="childCell" />
-            <node concept="3uibUv" id="26B0wrG18iX" role="1tU5fm">
-              <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+            <node concept="3uibUv" id="6LzhH3ucvCT" role="1tU5fm">
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
             </node>
           </node>
         </node>
@@ -10784,7 +10785,7 @@
                 <ref role="3cqZAo" node="3_8b9975Bv4" resolve="childCollection" />
               </node>
               <node concept="liA8E" id="26B0wrG16gg" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~EditorCell_Collection.getChildCount():int" resolve="getChildCount" />
+                <ref role="37wK5l" to="g51k:~EditorCell_Collection.getCellsCount():int" resolve="getCellsCount" />
               </node>
             </node>
             <node concept="3cmrfG" id="26B0wrG16C3" role="3uHU7w">
@@ -10802,7 +10803,7 @@
                     <ref role="3cqZAo" node="3_8b9975Bv4" resolve="childCollection" />
                   </node>
                   <node concept="liA8E" id="26B0wrG0Zqy" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Collection.getChildAt(int):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getChildAt" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Collection.getCellAt(int):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getCellAt" />
                     <node concept="3cmrfG" id="26B0wrG0Zqz" role="37wK5m">
                       <property role="3cmrfH" value="1" />
                     </node>
@@ -10962,16 +10963,16 @@
             <node concept="3cpWs8" id="26B0wrEuNmo" role="3cqZAp">
               <node concept="3cpWsn" id="26B0wrEuNmp" role="3cpWs9">
                 <property role="TrG5h" value="builder" />
-                <node concept="3uibUv" id="26B0wrEuNmq" role="1tU5fm">
-                  <ref role="3uigEE" to="eh3q:~TextBuilder" resolve="TextBuilder" />
+                <node concept="3uibUv" id="6LzhH3ucw3Z" role="1tU5fm">
+                  <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
                 </node>
                 <node concept="1eOMI4" id="26B0wrEuNmr" role="33vP2m">
                   <node concept="10QFUN" id="26B0wrEuNms" role="1eOMHV">
+                    <node concept="3uibUv" id="6LzhH3ucw99" role="10QFUM">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
                     <node concept="37vLTw" id="26B0wrEuNmt" role="10QFUP">
                       <ref role="3cqZAo" node="26B0wrEuNlo" resolve="result" />
-                    </node>
-                    <node concept="3uibUv" id="26B0wrEuNmu" role="10QFUM">
-                      <ref role="3uigEE" to="eh3q:~TextBuilder" resolve="TextBuilder" />
                     </node>
                   </node>
                 </node>
@@ -10991,12 +10992,13 @@
                             <ref role="3cqZAo" node="26B0wrEuNmp" resolve="builder" />
                           </node>
                           <node concept="liA8E" id="5P1DsEpLSBq" role="2OqNvi">
-                            <ref role="37wK5l" to="eh3q:~TextBuilder.appendToTheBottom(jetbrains.mps.openapi.editor.TextBuilder):jetbrains.mps.openapi.editor.TextBuilder" resolve="appendToTheBottom" />
-                            <node concept="2YIFZM" id="5P1DsEpLSOU" role="37wK5m">
-                              <ref role="1Pybhc" to="eh3q:~TextBuilder" resolve="TextBuilder" />
-                              <ref role="37wK5l" to="eh3q:~TextBuilder.fromString(java.lang.String):jetbrains.mps.nodeEditor.text.TextBuilder" resolve="fromString" />
-                              <node concept="37vLTw" id="5P1DsEpLSOV" role="37wK5m">
-                                <ref role="3cqZAo" node="5P1DsEpLSck" resolve="it" />
+                            <ref role="37wK5l" to="cj4x:~TextBuilder.appendToTheBottom(jetbrains.mps.openapi.editor.TextBuilder):jetbrains.mps.openapi.editor.TextBuilder" resolve="appendToTheBottom" />
+                            <node concept="2ShNRf" id="6LzhH3ucwwu" role="37wK5m">
+                              <node concept="1pGfFk" id="6LzhH3uc_A0" role="2ShVmc">
+                                <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                                <node concept="37vLTw" id="6LzhH3uc_Ks" role="37wK5m">
+                                  <ref role="3cqZAo" node="5P1DsEpLSck" resolve="it" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -11013,8 +11015,8 @@
             </node>
           </node>
           <node concept="2ZW3vV" id="26B0wrEuNmW" role="3clFbw">
-            <node concept="3uibUv" id="26B0wrEuNmX" role="2ZW6by">
-              <ref role="3uigEE" to="eh3q:~TextBuilder" resolve="TextBuilder" />
+            <node concept="3uibUv" id="6LzhH3ucw1T" role="2ZW6by">
+              <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
             </node>
             <node concept="37vLTw" id="26B0wrEuNmY" role="2ZW6bz">
               <ref role="3cqZAo" node="26B0wrEuNlo" resolve="result" />

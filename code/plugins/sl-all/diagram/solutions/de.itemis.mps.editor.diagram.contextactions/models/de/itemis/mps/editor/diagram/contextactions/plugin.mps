@@ -25,7 +25,9 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="1njx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.view(de.itemis.mps.editor.diagram.runtime/)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
@@ -73,6 +75,9 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -104,12 +109,11 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -197,7 +201,7 @@
         <child id="5022141054905293092" name="execute" index="geMea" />
         <child id="8009069486215174574" name="transferable" index="3$oRvH" />
       </concept>
-      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ng" index="geMe5" />
+      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ig" index="geMe5" />
       <concept id="5022141054905332478" name="com.mbeddr.mpsutil.contextactions.structure.ParameterObject" flags="ng" index="geSxg" />
       <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
       <concept id="6294660000051228482" name="com.mbeddr.mpsutil.contextactions.structure.ContextActions" flags="ng" index="NGJ2D">
@@ -541,53 +545,41 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="4IZABA$BGJL" role="3cqZAp">
-                  <node concept="3cpWsn" id="4IZABA$BGJM" role="3cpWs9">
-                    <property role="TrG5h" value="mpsProject" />
-                    <node concept="3uibUv" id="4IZABA$BGJG" role="1tU5fm">
-                      <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
-                    </node>
-                    <node concept="2OqwBi" id="4IZABA$BGJN" role="33vP2m">
-                      <node concept="2OqwBi" id="4IZABA$BGJO" role="2Oq$k0">
-                        <node concept="2OqwBi" id="4IZABA$BGJP" role="2Oq$k0">
-                          <node concept="37vLTw" id="4IZABA$BGJQ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4IZABA$B65b" resolve="diagramCell" />
-                          </node>
-                          <node concept="liA8E" id="4IZABA$BGJR" role="2OqNvi">
-                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="4IZABA$BGJS" role="2OqNvi">
-                          <ref role="37wK5l" to="cj4x:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="4IZABA$BGJT" role="2OqNvi">
-                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="4IZABA$C61e" role="3cqZAp">
-                  <node concept="3cpWsn" id="4IZABA$C61f" role="3cpWs9">
+                <node concept="3cpWs8" id="6LzhH3u9vqV" role="3cqZAp">
+                  <node concept="3cpWsn" id="6LzhH3u9vqW" role="3cpWs9">
                     <property role="TrG5h" value="ideaProject" />
-                    <node concept="3uibUv" id="4IZABA$C61b" role="1tU5fm">
+                    <node concept="3uibUv" id="6LzhH3u9vqC" role="1tU5fm">
                       <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
                     </node>
-                    <node concept="2YIFZM" id="4IZABA$C61g" role="33vP2m">
-                      <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
-                      <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                      <node concept="37vLTw" id="4IZABA$C61h" role="37wK5m">
-                        <ref role="3cqZAo" node="4IZABA$BGJM" resolve="mpsProject" />
+                    <node concept="2OqwBi" id="6LzhH3u9vqX" role="33vP2m">
+                      <node concept="10M0yZ" id="6LzhH3u9vqY" role="2Oq$k0">
+                        <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
+                        <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                      </node>
+                      <node concept="liA8E" id="6LzhH3u9vqZ" role="2OqNvi">
+                        <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataProvider):java.lang.Object" resolve="getData" />
+                        <node concept="10QFUN" id="6LzhH3u9Cjd" role="37wK5m">
+                          <node concept="3uibUv" id="6LzhH3u9CPk" role="10QFUM">
+                            <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                          </node>
+                          <node concept="2OqwBi" id="6LzhH3u9vr0" role="10QFUP">
+                            <node concept="37vLTw" id="6LzhH3u9vr1" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4IZABA$B65b" resolve="diagramCell" />
+                            </node>
+                            <node concept="liA8E" id="6LzhH3u9vr2" role="2OqNvi">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="4IZABA$B6rJ" role="3cqZAp" />
                 <node concept="3clFbF" id="4IZABA$BNhQ" role="3cqZAp">
                   <node concept="2OqwBi" id="4IZABA$BZBj" role="3clFbG">
                     <node concept="2OqwBi" id="4IZABA$BO6j" role="2Oq$k0">
-                      <node concept="37vLTw" id="4IZABA$C61i" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4IZABA$C61f" resolve="ideaProject" />
+                      <node concept="37vLTw" id="6LzhH3u9wh0" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6LzhH3u9vqW" resolve="ideaProject" />
                       </node>
                       <node concept="LR4U6" id="4IZABA$BZAb" role="2OqNvi">
                         <ref role="LR4U5" to="dpdg:5tr7YH$U35C" resolve="ContextActionsTool" />

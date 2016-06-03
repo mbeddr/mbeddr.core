@@ -2545,7 +2545,7 @@
                                 <ref role="3cqZAo" node="5$bT90Zfi_T" resolve="parent" />
                               </node>
                               <node concept="liA8E" id="5$bT90ZfiAb" role="2OqNvi">
-                                <ref role="37wK5l" to="g51k:~EditorCell_Collection.getChildAt(int):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getChildAt" />
+                                <ref role="37wK5l" to="g51k:~EditorCell_Collection.getCellAt(int):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getCellAt" />
                                 <node concept="3cmrfG" id="5$bT90ZfiAc" role="37wK5m">
                                   <property role="3cmrfH" value="0" />
                                 </node>
@@ -2554,11 +2554,11 @@
                           </node>
                           <node concept="3clFbC" id="5$bT90ZfiAd" role="3uHU7B">
                             <node concept="2OqwBi" id="5$bT90ZfiAe" role="3uHU7B">
+                              <node concept="liA8E" id="6LzhH3ubYae" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Collection.getCellsCount():int" resolve="getCellsCount" />
+                              </node>
                               <node concept="37vLTw" id="5HxjapwgH2$" role="2Oq$k0">
                                 <ref role="3cqZAo" node="5$bT90Zfi_T" resolve="parent" />
-                              </node>
-                              <node concept="liA8E" id="5$bT90ZfiAg" role="2OqNvi">
-                                <ref role="37wK5l" to="g51k:~EditorCell_Collection.getChildCount():int" resolve="getChildCount" />
                               </node>
                             </node>
                             <node concept="3cmrfG" id="5$bT90ZfiAh" role="3uHU7w">

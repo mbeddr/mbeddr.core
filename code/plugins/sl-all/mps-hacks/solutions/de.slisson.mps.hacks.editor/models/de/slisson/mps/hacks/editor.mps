@@ -27,8 +27,9 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="o2xv" ref="r:700a66b5-00d0-4738-9d24-e492913007fc(de.slisson.mps.hacks.editor.editorregistry)" />
     <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor(MPS.Editor/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -909,17 +910,16 @@
                           <node concept="37vLTw" id="5tr7YH$UMUn" role="3uHU7w">
                             <ref role="3cqZAo" node="5tr7YH$U0yK" resolve="project" />
                           </node>
-                          <node concept="2OqwBi" id="5tr7YH$UMyY" role="3uHU7B">
-                            <node concept="2OqwBi" id="5tr7YH$UJIY" role="2Oq$k0">
-                              <node concept="37vLTw" id="5tr7YH$UJgt" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6t1I3Z$0ndr" role="3uHU7B">
+                            <node concept="10M0yZ" id="6t1I3Z$0n31" role="2Oq$k0">
+                              <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+                              <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                            </node>
+                            <node concept="liA8E" id="6t1I3Z$0npx" role="2OqNvi">
+                              <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataProvider):java.lang.Object" resolve="getData" />
+                              <node concept="37vLTw" id="6t1I3Z$0nr4" role="37wK5m">
                                 <ref role="3cqZAo" node="5tr7YH$TVy5" resolve="editorComponent" />
                               </node>
-                              <node concept="liA8E" id="5tr7YH$UMxK" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="5tr7YH$UMJn" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
                             </node>
                           </node>
                         </node>
@@ -963,17 +963,16 @@
                           <node concept="37vLTw" id="5tr7YH$UNk0" role="3uHU7w">
                             <ref role="3cqZAo" node="5tr7YH$U0yK" resolve="project" />
                           </node>
-                          <node concept="2OqwBi" id="5tr7YH$UNk1" role="3uHU7B">
-                            <node concept="2OqwBi" id="5tr7YH$UNk2" role="2Oq$k0">
-                              <node concept="37vLTw" id="5tr7YH$UNk3" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6t1I3Z$0osr" role="3uHU7B">
+                            <node concept="10M0yZ" id="6t1I3Z$0oss" role="2Oq$k0">
+                              <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                              <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+                            </node>
+                            <node concept="liA8E" id="6t1I3Z$0ost" role="2OqNvi">
+                              <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataProvider):java.lang.Object" resolve="getData" />
+                              <node concept="37vLTw" id="6t1I3Z$0osu" role="37wK5m">
                                 <ref role="3cqZAo" node="5tr7YH$TVyd" resolve="editorComponent" />
                               </node>
-                              <node concept="liA8E" id="5tr7YH$UNk4" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="5tr7YH$UNk5" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
                             </node>
                           </node>
                         </node>
