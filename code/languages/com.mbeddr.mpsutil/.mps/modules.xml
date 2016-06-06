@@ -6,9 +6,9 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="staging.actionsfilter" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="stable.blutil" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="stable.blutil" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" folder="stable.blutil" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="rest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="staging.blutil" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb.editor/com.mbeddr.mpsutil.breadcrumb.editor.mpl" folder="rest.breadcrumb" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.mpl" folder="rest.breadcrumb" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="rest.buildutil" />
@@ -196,7 +196,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix.support/test.com.mbeddr.mpsutil.xml.fix.support.mpl" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix/test.com.mbeddr.mpsutil.xml.fix.msd" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.javainterpreter/test.ts.javainterpreter.msd" folder="staging.javainterpreter" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="stable.blutil" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.editor.sandbox/test.ts.mpsutil.multilingual.editor.sandbox.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual/test.ts.mpsutil.multilingual.msd" folder="rest.multilingual" />
