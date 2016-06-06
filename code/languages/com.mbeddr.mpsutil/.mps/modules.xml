@@ -24,8 +24,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextactions.sandboxlang/com.mbeddr.mpsutil.contextactions.sandboxlang.mpl" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextactions/com.mbeddr.mpsutil.contextactions.mpl" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.mpl" folder="rest.contextsidebar" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="stable.datePicker" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="stable.datePicker" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="staging.datePicker" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" folder="rest.dependenciesdiagram" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="staging.editingGuide" />
@@ -116,8 +116,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.sandbox/com.mbeddr.mpsutil.contextactions.sandbox.msd" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.runtime/com.mbeddr.mpsutil.contextsidebar.runtime.msd" folder="rest.contextsidebar" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.sandbox2/com.mbeddr.mpsutil.contextsidebar.sandbox2.msd" folder="rest.contextsidebar" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="stable.datePicker" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="stable.datePicker" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="staging.datePicker" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="rest.dependenciesdiagram" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.execution/com.mbeddr.mpsutil.editingGuide.execution.msd" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.plugin/com.mbeddr.mpsutil.editingGuide.plugin.msd" folder="staging.editingGuide" />
