@@ -12,9 +12,11 @@
   </dependencies>
   <languageVersions>
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" fqName="com.mbeddr.analyses.base" version="0" />
+    <language id="48f0d4ba-4f2e-4310-ae44-81f9bd77f184" fqName="com.mbeddr.analyses.base.unittests" version="0" />
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" fqName="com.mbeddr.analyses.cbmc" version="2" />
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" fqName="com.mbeddr.analyses.cbmc.core" version="0" />
     <language id="66fa30ae-4b73-4f2b-b199-9a072902ec06" fqName="com.mbeddr.analyses.cbmc.testsgen" version="0" />
+    <language id="7a962b58-6424-40b5-985a-914aacd89274" fqName="com.mbeddr.analyses.cbmc.testsgen.testing" version="0" />
     <language id="53bab999-e9c3-428a-80be-fef5bed08f55" fqName="com.mbeddr.cc.trace" version="0" />
     <language id="017fba0e-af15-4a23-b0a8-02b5c1141e75" fqName="com.mbeddr.cc.var.annotations" version="0" />
     <language id="634736cf-ea73-4eb1-abe9-d2ecc5fcf837" fqName="com.mbeddr.cc.var.c" version="0" />
