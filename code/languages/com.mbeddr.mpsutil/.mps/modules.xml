@@ -72,7 +72,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.placeholderTextList/com.mbeddr.mpsutil.placeholderTextList.mpl" folder="staging.placeholderTextList" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="staging.plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.postprocessGeneratedFiles/com.mbeddr.mpsutil.postprocessGeneratedFiles.mpl" folder="staging.postprocessGeneratedFiles" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="stable.preferenceform" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="staging.preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.process/com.mbeddr.mpsutil.process.mpl" folder="stable.process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="stable.projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" folder="stable.propertydefault" />
@@ -156,7 +156,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.placeholderTextList.runtime/com.mbeddr.mpsutil.placeholderTextList.runtime.msd" folder="staging.placeholderTextList" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="staging.plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime/com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime.msd" folder="staging.postprocessGeneratedFiles" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime.msd" folder="stable.preferenceform" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime.msd" folder="staging.preferenceform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.extension.sandbox/com.mbeddr.mpsutil.process.extension.sandbox.msd" folder="stable.process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.runtime/com.mbeddr.mpsutil.process.runtime.msd" folder="stable.process" />
