@@ -3,12 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="3ahc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.cells(MPS.Editor/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -29,17 +27,11 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="nlpl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.commands(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
-    <import index="tqbz" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.actions(MPS.IDEA/)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="5rcs" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.popup(MPS.IDEA/)" />
@@ -786,9 +778,7 @@
           <node concept="3cpWsn" id="3pwG8PSkQJx" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="text" />
-            <node concept="3uibUv" id="3pwG8PSkQJz" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
+            <node concept="17QB3L" id="4gYVSgE4$2b" role="1tU5fm" />
             <node concept="2OqwBi" id="3pwG8PSkU2o" role="33vP2m">
               <node concept="37vLTw" id="3pwG8PSkU2n" role="2Oq$k0">
                 <ref role="3cqZAo" node="3pwG8PSkQJk" resolve="intention" />
@@ -984,9 +974,7 @@
                         <property role="3TUv4t" value="false" />
                         <node concept="3uibUv" id="3pwG8PSkQKd" role="1tU5fm">
                           <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-                          <node concept="3uibUv" id="3pwG8PSkQKe" role="11_B2D">
-                            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                          </node>
+                          <node concept="17QB3L" id="4gYVSgE4zVR" role="11_B2D" />
                           <node concept="3uibUv" id="3pwG8PSkQKf" role="11_B2D">
                             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                           </node>
@@ -3453,15 +3441,23 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2xgTENkRQB6" role="3cqZAp">
-                      <node concept="3fqX7Q" id="2xgTENkRQB7" role="3clFbw">
-                        <node concept="2OqwBi" id="2xgTENkRQBR" role="3fr31v">
-                          <node concept="37vLTw" id="2xgTENkRQBQ" role="2Oq$k0">
+                      <node concept="1Wc70l" id="4gYVSgE4ABx" role="3clFbw">
+                        <node concept="3y3z36" id="4gYVSgE4KKI" role="3uHU7B">
+                          <node concept="10Nm6u" id="4gYVSgE4Lfj" role="3uHU7w" />
+                          <node concept="37vLTw" id="4gYVSgE4Khv" role="3uHU7B">
                             <ref role="3cqZAo" node="2xgTENkRQB1" resolve="filter" />
                           </node>
-                          <node concept="liA8E" id="2xgTENkRQBS" role="2OqNvi">
-                            <ref role="37wK5l" to="gspm:~SpeedSearchFilter.canBeHidden(java.lang.Object):boolean" resolve="canBeHidden" />
-                            <node concept="37vLTw" id="2xgTENkRQB9" role="37wK5m">
-                              <ref role="3cqZAo" node="2xgTENkRPVO" resolve="value" />
+                        </node>
+                        <node concept="3fqX7Q" id="2xgTENkRQB7" role="3uHU7w">
+                          <node concept="2OqwBi" id="2xgTENkRQBR" role="3fr31v">
+                            <node concept="37vLTw" id="2xgTENkRQBQ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2xgTENkRQB1" resolve="filter" />
+                            </node>
+                            <node concept="liA8E" id="2xgTENkRQBS" role="2OqNvi">
+                              <ref role="37wK5l" to="gspm:~SpeedSearchFilter.canBeHidden(java.lang.Object):boolean" resolve="canBeHidden" />
+                              <node concept="37vLTw" id="2xgTENkRQB9" role="37wK5m">
+                                <ref role="3cqZAo" node="2xgTENkRPVO" resolve="value" />
+                              </node>
                             </node>
                           </node>
                         </node>

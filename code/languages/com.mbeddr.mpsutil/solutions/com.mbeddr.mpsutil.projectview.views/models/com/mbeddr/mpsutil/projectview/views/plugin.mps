@@ -109,7 +109,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1491,6 +1491,23 @@
                 <ref role="3VsUkX" to="mhbf:~SModel" resolve="SModel" />
               </node>
               <node concept="10M0yZ" id="3jVbLyZC9T$" role="3ElQJh">
+                <ref role="3cqZAo" node="75_oBQVwQpr" resolve="actionGroupsIds" />
+                <ref role="1PxDUh" node="75_oBQVwQhb" resolve="ProjectViewUtil" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5XTXBpQFI9i" role="3cqZAp">
+          <node concept="37vLTI" id="5XTXBpQFI9j" role="3clFbG">
+            <node concept="10M0yZ" id="5XTXBpQFI9k" role="37vLTx">
+              <ref role="1PxDUh" to="qq03:~ProjectActions_ActionGroup" resolve="ProjectActions_ActionGroup" />
+              <ref role="3cqZAo" to="qq03:~ProjectActions_ActionGroup.ID" resolve="ID" />
+            </node>
+            <node concept="3EllGN" id="5XTXBpQFI9l" role="37vLTJ">
+              <node concept="3VsKOn" id="5XTXBpQFI9m" role="3ElVtu">
+                <ref role="3VsUkX" to="z1c5:~IProject" resolve="IProject" />
+              </node>
+              <node concept="10M0yZ" id="5XTXBpQFI9n" role="3ElQJh">
                 <ref role="3cqZAo" node="75_oBQVwQpr" resolve="actionGroupsIds" />
                 <ref role="1PxDUh" node="75_oBQVwQhb" resolve="ProjectViewUtil" />
               </node>
