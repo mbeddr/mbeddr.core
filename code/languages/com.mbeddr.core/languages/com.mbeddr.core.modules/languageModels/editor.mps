@@ -3441,7 +3441,7 @@
           </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="5eg$WPOuYu7" role="2iSdaV" />
+      <node concept="l2Vlx" id="5B83roelVEf" role="2iSdaV" />
       <node concept="3F0ifn" id="5eg$WPOuYuj" role="3EZMnx">
         <property role="3F0ifm" value="(" />
         <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
@@ -5309,7 +5309,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="76hx8dKhyE4">
-    <ref role="1XX52x" to="x27k:76hx8dKhwZW" resolve="AbritraryTextContent" />
+    <ref role="1XX52x" to="x27k:76hx8dKhwZW" resolve="ArbitraryTextContent" />
     <node concept="3EZMnI" id="3kEjc_WJ2qE" role="2wV5jI">
       <node concept="3F0ifn" id="3kEjc_WJ2qH" role="3EZMnx">
         <property role="3F0ifm" value="[|" />
