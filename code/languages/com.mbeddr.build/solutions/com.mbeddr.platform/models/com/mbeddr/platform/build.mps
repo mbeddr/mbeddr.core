@@ -8338,6 +8338,12 @@
             <ref role="3bR37D" to="90a9:MUKpduCMlF" resolve="de.slisson.mps.richtext.customcell" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1GvnUgobaoM" role="3bR37C">
+          <node concept="3bR9La" id="1GvnUgobaoN" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnFw2G" role="3989C9">
