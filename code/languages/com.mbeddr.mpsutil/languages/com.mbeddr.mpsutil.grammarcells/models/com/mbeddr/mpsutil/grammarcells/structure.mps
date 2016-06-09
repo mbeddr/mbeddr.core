@@ -146,6 +146,16 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7Q6ZOiKJNM7" resolve="WrapperCell_RemoveSideTransform" />
     </node>
+    <node concept="1TJgyj" id="1GvnUgo6SDb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="postprocessSideTransform" />
+      <ref role="20lvS9" node="1GvnUgo6Kzw" resolve="PostprocessFunction" />
+    </node>
+    <node concept="1TJgyj" id="1GvnUgo6SDq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="postprocessNodeSubstitute" />
+      <ref role="20lvS9" node="1GvnUgo6Kzw" resolve="PostprocessFunction" />
+    </node>
     <node concept="PrWs8" id="6oKG1kMyAVP" role="PzmwI">
       <ref role="PrY4T" node="6oKG1kMyAVO" resolve="IActionGeneratingCell" />
     </node>
@@ -868,6 +878,17 @@
     <property role="1pbfSe" value="865250330" />
     <property role="3GE5qa" value="cells" />
     <property role="TrG5h" value="IRequiresRules" />
+  </node>
+  <node concept="1TIwiD" id="1GvnUgo6Kzw">
+    <property role="1pbfSe" value="859465860" />
+    <property role="TrG5h" value="PostprocessFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="1GvnUgo6Q$w">
+    <property role="1pbfSe" value="859490500" />
+    <property role="TrG5h" value="Parameter_node" />
+    <property role="34LRSv" value="node" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
