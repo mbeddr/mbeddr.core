@@ -488,7 +488,7 @@
     </node>
     <node concept="2EWCtd" id="7UiQjZi_Shb" role="N3F5h">
       <property role="TrG5h" value="AllInstances" />
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <node concept="2EWCuV" id="7UiQjZi_Shc" role="5JtDH">
         <property role="TrG5h" value="atmPassInst" />
         <ref role="2EWCuU" node="7UiQjZi_Sgo" resolve="ATMPass_Component" />

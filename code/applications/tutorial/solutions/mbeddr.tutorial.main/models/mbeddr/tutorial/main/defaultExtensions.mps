@@ -9,6 +9,7 @@
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="-1" />
     <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="-1" />
     <use id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components" version="0" />
+    <use id="daa1849d-6955-4fef-afe3-8aea1f61e6fa" name="com.mbeddr.analyses.cbmc.statemachines" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
@@ -2262,7 +2263,7 @@
       <property role="TrG5h" value="empty_1351626075607_7" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsi4" role="2OODSX">
-      <property role="3GEa6x" value="false" />
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1w5Xuj1QYMp" resolve="DataStructures" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsge" role="2OODSX">
@@ -5278,7 +5279,7 @@
       <property role="TrG5h" value="empty_1351756619496_6" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsfc" role="2OODSX">
-      <property role="3GEa6x" value="false" />
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1w5Xuj1QYMp" resolve="DataStructures" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVshn" role="2OODSX">
@@ -8048,7 +8049,7 @@
       <ref role="3GEb4d" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVseN" role="2OODSX">
-      <property role="3GEa6x" value="false" />
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1w5Xuj1QYMp" resolve="DataStructures" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVshu" role="2OODSX">
@@ -12173,7 +12174,7 @@
       <property role="TrG5h" value="empty_1358007490424_10" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsgP" role="2OODSX">
-      <property role="3GEa6x" value="false" />
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1w5Xuj1QYMp" resolve="DataStructures" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsgy" role="2OODSX">

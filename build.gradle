@@ -1,5 +1,5 @@
 String mpsMajor = "3.3"
-String mpsMinor = "1"
+String mpsMinor = "4"
 String mpsBuild = mpsMajor + "." + mpsMinor
 String mbeddrMajor = "0.9"
 String mbeddrMinor = "1"
@@ -7,94 +7,223 @@ String mbeddrBuild = mbeddrMajor + "." + mbeddrMinor
 String mbeddrMpsDir = "MPS-mbeddr"
 apply plugin: 'java'
 apply plugin: 'ivy-publish'
-ant.property(name: 'mbeddr.github.core.home', location: projectDir)
-ant.property(name: 'mps.home', location: "$projectDir" + "/MPS/"+mbeddrMpsDir+"/" )
-ant.property(name: 'build.Dir', location: projectDir )
 String CleanGeneratedCode_Task = "cleanSources"
-String CleanPlugins_Task = "clean" 
+String CleanPlugins_Task = "clean"
 String GenerateCode_Task = "generate"
 String BuildPlugin_Task = "assemble"
 String RunTests_Task = "check"
 String mbeddrScripts_basePath = ant.properties['mbeddr.github.core.home'] + "/build"
 String allScripts_buildFileLocation = mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts"
+String slAll_buildFileLocation = ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all"
 configurations {
-    mps {
-        description = 'compile mps'
-    }
+  mps {
+    description = 'mps ide'
+  }
+  mbeddr {
+    description = 'mbeddr distribution'
+  }
 }
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.5'
+}
+//task load_slAllScript() {
+//    ant.importBuild( new File(slAll_buildFileLocation + "/" + "build.xml")) { antTargetName ->
+//        println "target:"+ antTargetName
+//        'slAll_' + antTargetName
+//    }
+//}
+
+// script locations
+def scriptsBasePath = projectDir.absolutePath + "/scripts/"
+def slall_script = new File(scriptsBasePath + "/sl-all/" + "build.xml")
+def spawner_script = new File(scriptsBasePath + "/com.mbeddr.build/" + "spawner.xml")
+def all_scripts_script = new File(projectDir.absolutePath + "/build/com.mbeddr.allScripts/" + "build.xml")
+def platform_script = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build.xml")
+def mbeddr_script = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
+def tutorial_languages_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
+def tutorial_solutions_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
+def tutorial_test_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")
+
+// path variables
+def mps_home = '-Dmps.home=' + projectDir.absolutePath + "/MPS/" + mbeddrMpsDir + "/"
+def build_dir = '-Dbuild.dir=' + projectDir.absolutePath
+def artifacts_root = '-Dartifacts.root=' + projectDir.absolutePath + "/artifacts"
+def mbeddr_home = '-Dmbeddr.github.core.home=' + projectDir.absolutePath
+def slall_home = '-Dsl-all.home=' + projectDir.absolutePath + '/code/plugins/sl-all'
+
+// targets
+def script_targets = ['clean', 'generate', 'assemble']
+def test_targets = ['clean', 'generate', 'assemble', 'check']
+def languages_targets = ['clean', 'generate', 'assemble']
+
+
+tasks.create("build_all_scripts", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', all_scripts_script]
+  commandLine('ant', *args, *languages_targets)
+}
+tasks.create("copy_scripts", Copy) {
+  from projectDir.absolutePath + "/build"
+  include "*/*.xml"
+  from projectDir.absolutePath + "/code/plugins"
+  include "*/*.xml"
+  into "scripts/"
+  dependsOn build_all_scripts
+}
+tasks.create("build_sl_all", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', slall_script]
+  commandLine('ant', *args, *languages_targets)
+  dependsOn copy_scripts
+}
+tasks.create("copy_sl_all_nativelibs", Copy) {
+  from zipTree(projectDir.absolutePath + "/artifacts/mps-sl-all/mps-sl-all.zip")
+  include "de.itemis.mps.nativelibs.loader/"
+  into "MPS/MPS-mbeddr/plugins"
+  dependsOn build_sl_all
+}
+tasks.create("build_spawner", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', spawner_script]
+  commandLine('ant', *args, *languages_targets)
+  dependsOn copy_sl_all_nativelibs
+}
+tasks.create("copy_spawner", Copy) {
+  from zipTree(projectDir.absolutePath + "/artifacts/spawner/com.mbeddr.spawner.zip")
+  into "MPS/MPS-mbeddr/plugins"
+  dependsOn build_spawner
+}
+tasks.create("build_platform", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', platform_script]
+  commandLine('ant', *args, *languages_targets)
+  dependsOn copy_spawner
+}
+tasks.create("build_mbeddr", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', mbeddr_script]
+  commandLine('ant', *args, *languages_targets)
+  dependsOn build_platform
+}
+
+
+tasks.create("build_tutorial_languages", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_languages_script]
+  commandLine('ant', *args, *languages_targets)
+//  dependsOn build_mbeddr
+}
+tasks.create("build_tutorial_solutions", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_solutions_script]
+  commandLine('ant', *args, *languages_targets)
+  dependsOn build_tutorial_languages
+}
+tasks.create("test_tutorial", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_test_script]
+  commandLine('ant', *args, *test_targets)
+  dependsOn build_tutorial_solutions
+}
+
+//task build_slAll(dependsOn: [load_slAllScript, 'slAll_'+GenerateCode_Task, 'slAll_java.compile.de.itemis.mps.tooltips', 'slAll_'+BuildPlugin_Task ]) { }
+//
+//task assemble_slAll(dependsOn: [load_slAllScript, 'slAll_compileJava' ]) { }
+//
 task doTestRetrieve(type: Copy) {
-    from configurations.mps
-    into "myDependencies"
-    eachFile {
-        from zipTree(it.getFile())
-        into file("./MPS")
-    }
+  from configurations.mps
+  into "myDependencies"
+  eachFile {
+    from zipTree(it.getFile())
+    into file("./MPS")
+  }
 }
-task load_allScripts(dependsOn: doTestRetrieve) {
-    println("mps location: " + "$projectDir" + "/MPS/"+mbeddrMpsDir+"/")
-	ant.echo("path: "+allScripts_buildFileLocation + "/" + "build.xml")
-	ant.importBuild( allScripts_buildFileLocation + "/" + "build.xml") { antTargetName ->
-		'allScripts_' + antTargetName
-	}
+repositories {
+  ivy {
+    // change to point to your repo, e.g. http://my.org/repo
+    url "$buildDir/repo"
+  }
 }
-
-task compileTask {
-    repositories {
-        ivy {
-            // change to point to your repo, e.g. http://my.org/repo
-            url "$buildDir/repo"
-        }
-    }
-
-    configurations.compile.each { File file -> println file.name }
-    ant.echo("compile123")
-}
-task build_allScripts(type: Zip
-        //, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]
-        ) {
-    from fileTree(dir: projectDir.absolutePath + "/build", include: '**/*.xml')
-    from fileTree(dir: projectDir.absolutePath + "/code/plugins", include: '**/*.xml')
-}
+//task load_allScripts(dependsOn: doTestRetrieve) {
+//    println("mps location: " + "$projectDir" + "/MPS/"+mbeddrMpsDir+"/")
+//	ant.echo("path: "+allScripts_buildFileLocation + "/" + "build.xml")
+//	ant.importBuild( new File(allScripts_buildFileLocation + "/" + "build.xml") ) { antTargetName ->
+//		'allScripts_' + antTargetName
+//	}
+//}
+//
+//task compileTask {
+//    repositories {
+//        ivy {
+//            // change to point to your repo, e.g. http://my.org/repo
+//            url "$buildDir/repo"
+//        }
+//    }
+//
+//    configurations.compile.each { File file -> println file.name }
+//    ant.echo("compile123")
+//}
+//task build_allScripts(type: Zip
+//        //, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]
+//        ) {
+//    from fileTree(dir: projectDir.absolutePath + "/build", include: '**/*.xml')
+//    from fileTree(dir: projectDir.absolutePath + "/code/plugins", include: '**/*.xml')
+//}
 
 
 dependencies {
-    mps 'com.jetbrains:mps:3.3.1'
+  mps 'com.jetbrains:mps:3.3.4'
+  mbeddr 'com.mbeddr:mbeddr:0.9.1'
 }
 
 task download << {
-    String mpsBaseUrl = "http://download.jetbrains.com/mps/33/"
-    ant.mkdir(dir: "./MPS/")
-    ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: "./MPS/MPS-" + mpsBuild + ".zip")
-    ant.unzip(src: "./MPS/MPS-" + mpsBuild + ".zip", dest: "./MPS/")
-    ant.move(file: "./MPS/MPS " + mpsMajor, toFile: "./MPS/" + mbeddrMpsDir)
+  String mpsBaseUrl = "http://download.jetbrains.com/mps/33/"
+  ant.mkdir(dir: "./MPS/")
+  ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: "./MPS/MPS-" + mpsBuild + ".zip")
+  ant.unzip(src: "./MPS/MPS-" + mpsBuild + ".zip", dest: "./MPS/")
+  ant.move(file: "./MPS/MPS " + mpsMajor, toFile: "./MPS/" + mbeddrMpsDir)
 }
 task mpsZip(type: Zip, dependsOn: download) {
-    from "./MPS/" + mbeddrMpsDir
+  from "./MPS/" + mbeddrMpsDir
 }
-
+task mbeddrZIP(type: Zip) {
+  from projectDir.absolutePath + "/artifacts"
+  include "mbeddr/*.zip"
+  include "spawner/*.zip"
+  include "mps-sl-all/*.zip"
+  include "com.mbeddr.platform/*.zip"
+}
 publishing {
-    publications {
-        mps(IvyPublication) {
-            organisation 'com.jetbrains'
-            module 'mps'
-            revision mpsBuild
-            artifact(mpsZip) {
+  publications {
+    mps(IvyPublication) {
+      organisation 'com.jetbrains'
+      module 'mps'
+      revision mpsBuild
+      artifact(mpsZip) {
 
-            }
-        }
-        allScripts(IvyPublication) {
-            organisation 'com.mbeddr'
-            module 'allScripts'
-            revision mbeddrBuild
-            artifact(build_allScripts) {
+      }
+    }
+    mbeddr(IvyPublication) {
+      organisation 'com.mbeddr'
+      module 'mbeddr'
+      revision mbeddrBuild
+      artifact(mbeddrZIP) {
 
-            }
-        }
+      }
     }
-    repositories {
-        ivy {
-            // change to point to your repo, e.g. http://my.org/repo
-            url "$buildDir/repo"
-        }
+//        allScripts(IvyPublication) {
+//            organisation 'com.mbeddr'
+//            module 'allScripts'
+//            revision mbeddrBuild
+//            artifact(build_allScripts) {
+//
+//            }
+//        }
+  }
+  repositories {
+    ivy {
+      // change to point to your repo, e.g. http://my.org/repo
+      url "$buildDir/repo"
     }
+  }
 }

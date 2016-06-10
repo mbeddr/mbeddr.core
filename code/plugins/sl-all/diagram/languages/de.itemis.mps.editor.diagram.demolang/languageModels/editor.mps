@@ -253,6 +253,7 @@
         <child id="7188630757225274921" name="navigationTargets" index="1i7NIZ" />
         <child id="5725606875425248008" name="delete" index="1ide8m" />
         <child id="2044706694575458564" name="labelCell" index="3kqczz" />
+        <child id="6358960566596428706" name="curved" index="3Czvdj" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
@@ -1312,6 +1313,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFbT" id="5wZ$f6KLcSA" role="3Czvdj">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="3EZMnI" id="7LrVRufxT4S" role="6VMZX">

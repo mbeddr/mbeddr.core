@@ -1530,5 +1530,22 @@
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2T6Po3mUMXu">
+    <property role="1pbfSe" value="87164126" />
+    <property role="TrG5h" value="ModuleHNameOverride" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="moduleHOverride" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2T6Po3mUMXv" role="lGtFl">
+      <property role="Hh88m" value="nameOverride" />
+      <node concept="tn0Fv" id="2T6Po3mUMYh" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
+      </node>
+    </node>
+  </node>
 </model>
 

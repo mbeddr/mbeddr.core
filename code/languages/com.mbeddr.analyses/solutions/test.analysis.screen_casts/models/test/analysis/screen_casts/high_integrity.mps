@@ -109,6 +109,7 @@
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
@@ -852,6 +853,7 @@
   <node concept="N3F5e" id="368fPYHkkMd">
     <property role="TrG5h" value="_01_cooling_acsl" />
     <node concept="3GEVxB" id="368fPYHkkMe" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="368fPYHjDKH" resolve="_00_common" />
     </node>
     <node concept="2NXPZ9" id="368fPYHkkMf" role="N3F5h">
