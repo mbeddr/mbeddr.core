@@ -4790,9 +4790,7 @@
               </node>
               <node concept="liA8E" id="2cNe_D14Ax3" role="2OqNvi">
                 <ref role="37wK5l" to="fpme:~ProjectOptions.setStorageScheme(boolean):void" resolve="setStorageScheme" />
-                <node concept="3clFbT" id="2cNe_D14C7I" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
+                <node concept="3clFbT" id="2cNe_D14C7I" role="37wK5m" />
               </node>
             </node>
           </node>
