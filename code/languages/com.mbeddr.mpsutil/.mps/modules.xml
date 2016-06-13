@@ -96,9 +96,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.treenotation/com.mbeddr.mpsutil.treenotation.mpl" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="rest.typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="staging.uniqueNames" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles.buildutils/com.mbeddr.mpsutil.userstyles.buildutils.mpl" folder="stable.userstyles" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles.sandboxlang/com.mbeddr.mpsutil.userstyles.sandboxlang.mpl" folder="stable.userstyles" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles/com.mbeddr.mpsutil.userstyles.mpl" folder="stable.userstyles" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles.buildutils/com.mbeddr.mpsutil.userstyles.buildutils.mpl" folder="staging.userstyles" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles.sandboxlang/com.mbeddr.mpsutil.userstyles.sandboxlang.mpl" folder="staging.userstyles" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.userstyles/com.mbeddr.mpsutil.userstyles.mpl" folder="staging.userstyles" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="stable.xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
@@ -178,8 +178,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.runtime/com.mbeddr.mpsutil.treenotation.runtime.msd" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.sandbox/com.mbeddr.mpsutil.treenotation.sandbox.msd" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="rest.typesystem.trace" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.runtime/com.mbeddr.mpsutil.userstyles.runtime.msd" folder="stable.userstyles" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.sandbox/com.mbeddr.mpsutil.userstyles.sandbox.msd" folder="stable.userstyles" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.runtime/com.mbeddr.mpsutil.userstyles.runtime.msd" folder="staging.userstyles" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.sandbox/com.mbeddr.mpsutil.userstyles.sandbox.msd" folder="staging.userstyles" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="staging.javainterpreter" />
