@@ -10894,11 +10894,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="2jlBy7bQDt1" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.treenotation.styles#134774857085094065" />
-          <property role="3LESm3" value="e53a909f-8d16-456d-9c3c-37117220a7d6" />
-          <property role="2GAjPV" value="false" />
-        </node>
       </node>
       <node concept="1E1JtD" id="2jlBy7bQx3n" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -10915,18 +10910,6 @@
                 <property role="2Ry0Am" value="com.mbeddr.mpsutil.treenotation.mpl" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2jlBy7bQCx0" role="3bR37C">
-          <node concept="3bR9La" id="2jlBy7bQCx1" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2jlBy7bQFmX" role="3bR37C">
-          <node concept="3bR9La" id="2jlBy7bQFmY" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2jlBy7bQx3n" resolve="com.mbeddr.mpsutil.treenotation" />
           </node>
         </node>
         <node concept="1SiIV0" id="2jlBy7bQFmZ" role="3bR37C">
