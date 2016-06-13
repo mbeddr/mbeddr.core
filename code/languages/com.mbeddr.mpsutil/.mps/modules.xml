@@ -127,7 +127,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="staging.querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.msd" folder="stable" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.extensionclass.annotation/com.mbeddr.mpsutil.extensionclass.annotation.msd" folder="staging.extensionclass" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" folder="stable" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.globalgenerators.runtime/com.mbeddr.mpsutil.globalgenerators.runtime.msd" folder="staging.globalGenerators" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.grammarcells.runtime/com.mbeddr.mpsutil.grammarcells.runtime.msd" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.grammarcells.sandbox/com.mbeddr.mpsutil.grammarcells.sandbox.msd" folder="staging.grammarCells" />
