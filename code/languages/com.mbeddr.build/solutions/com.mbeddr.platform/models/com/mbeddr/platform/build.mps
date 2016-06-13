@@ -2822,11 +2822,6 @@
         <node concept="1E0d5M" id="4Wyno57pInJ" role="1E1XAP">
           <ref role="1E0d5P" node="4gGXGcLV_Ec" resolve="com.mbeddr.mpsutil.multilingual.common.runtime" />
         </node>
-        <node concept="1yeLz9" id="4Wyno57pInK" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.suppresswarning#9116320848000878454" />
-          <property role="3LESm3" value="4e641061-045c-44eb-b686-59bf61e71ca3" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="1SiIV0" id="4Wyno57pLyD" role="3bR37C">
           <node concept="1Busua" id="4Wyno57pLyE" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
