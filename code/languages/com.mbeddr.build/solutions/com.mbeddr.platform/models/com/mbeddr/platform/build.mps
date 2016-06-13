@@ -8325,12 +8325,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2Z2H3pkYfxa" role="3bR37C">
-          <node concept="3bR9La" id="2Z2H3pkYfxb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2Z2H3pkYfxc" role="3bR37C">
           <node concept="3bR9La" id="2Z2H3pkYfxd" role="1SiIV1">
             <property role="3bR36h" value="true" />
@@ -8355,16 +8349,15 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2Z2H3pkYtf$" role="3bR37C">
-          <node concept="3bR9La" id="2Z2H3pkYtf_" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2Z2H3pkYtfA" role="3bR37C">
           <node concept="3bR9La" id="2Z2H3pkYtfB" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4RSukN8i0pM" role="3bR37C">
+          <node concept="1Busua" id="4RSukN8i0pN" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
         <node concept="1E0d5M" id="2Z2H3pkYtfC" role="1E1XAP">
@@ -8446,11 +8439,6 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
           </node>
-        </node>
-        <node concept="1yeLz9" id="2Z2H3pkYEoY" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.userstyles.buildutils#1315011458725667694" />
-          <property role="3LESm3" value="ffa60a1e-358f-4d20-86be-fe01aaf8e754" />
-          <property role="2GAjPV" value="false" />
         </node>
       </node>
     </node>
