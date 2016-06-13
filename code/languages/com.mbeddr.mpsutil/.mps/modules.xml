@@ -32,8 +32,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="stable.querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="stable.querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="staging.extensionclass" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="stable.projectview" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/solutions/pluginSolution/com.mbeddr.mpsutil.favourites.plugin.msd" folder="stable.projectview" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="staging.projectview" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/solutions/pluginSolution/com.mbeddr.mpsutil.favourites.plugin.msd" folder="staging.projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.forms/com.mbeddr.mpsutil.forms.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="rest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="stable" />
@@ -74,7 +74,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.postprocessGeneratedFiles/com.mbeddr.mpsutil.postprocessGeneratedFiles.mpl" folder="staging.postprocessGeneratedFiles" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="staging.preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.process/com.mbeddr.mpsutil.process.mpl" folder="staging.process" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="stable.projectview" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="staging.projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" folder="stable.propertydefault" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/com.mbeddr.mpsutil.rcp.mpl" folder="staging.rcp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/runtime/com.mbeddr.mpsutil.rcp.runtime.msd" folder="staging.rcp" />
@@ -161,9 +161,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.extension.sandbox/com.mbeddr.mpsutil.process.extension.sandbox.msd" folder="staging.process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.runtime/com.mbeddr.mpsutil.process.runtime.msd" folder="staging.process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.sandbox/com.mbeddr.mpsutil.process.sandbox.msd" folder="staging.process" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="stable.projectview" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.vcs/com.mbeddr.mpsutil.projectview.vcs.msd" folder="stable.projectview" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="stable.projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="staging.projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.vcs/com.mbeddr.mpsutil.projectview.vcs.msd" folder="staging.projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="staging.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.rcpconfig/com.mbeddr.mpsutil.rcpconfig.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="staging.margincell_review" />
