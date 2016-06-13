@@ -1739,12 +1739,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1m4fy7KP8oa" role="3bR37C">
-          <node concept="3bR9La" id="1m4fy7KP8ob" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4x" resolve="jetbrains.mps.lang.constraints" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1m4fy7KP8oc" role="3bR37C">
           <node concept="1Busua" id="1m4fy7KP8od" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L4x" resolve="jetbrains.mps.lang.constraints" />
