@@ -4087,6 +4087,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2uXcX0$k94A" role="3bR37C">
+          <node concept="3bR9La" id="2uXcX0$k94B" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="ZmkllFPpkT" role="2G$12L">
         <property role="BnDLt" value="true" />

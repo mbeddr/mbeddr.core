@@ -19,6 +19,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -1617,8 +1620,11 @@
     <node concept="PrWs8" id="RsLjUnO2bW" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7C830Ec4S3e" resolve="IStopReshuffling" />
     </node>
-    <node concept="PrWs8" id="70kXLV5yPlO" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    <node concept="PrWs8" id="4WC4fmOFhOi" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="asaX9" id="4WC4fmOFhO9" role="lGtFl">
+      <property role="YLQ7P" value="replaced with DataElementRefTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="4paRqaMdWaH">
@@ -1653,6 +1659,7 @@
     <property role="TrG5h" value="InterfaceTypeDataRefExpr" />
     <property role="1pbfSe" value="305915032" />
     <ref role="1TJDcQ" node="RsLjUnO2bV" resolve="DataElementRefExpr" />
+    <node concept="asaX9" id="4WC4fmOMSO7" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="29JE8qNtlUh">
     <property role="3GE5qa" value="comp.instances" />
@@ -1719,6 +1726,7 @@
       <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" />
       <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
     </node>
+    <node concept="asaX9" id="4WC4fmOMQLM" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3XxRpIb9yjO">
     <property role="3GE5qa" value="adapter" />
@@ -1831,6 +1839,49 @@
     </node>
     <node concept="PrWs8" id="20ezT9ZDJ3l" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WC4fmO_IhU">
+    <property role="1pbfSe" value="62846319" />
+    <property role="3GE5qa" value="intf.sr" />
+    <property role="TrG5h" value="DataElementRefTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4WC4fmOFhPn" role="PzmwI">
+      <ref role="PrY4T" node="4WC4fmOFhOS" resolve="AbstractDataElementRefTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WC4fmOFhOq">
+    <property role="1pbfSe" value="64302607" />
+    <property role="3GE5qa" value="intf.sr" />
+    <property role="TrG5h" value="InterfaceTypeDataRefTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4WC4fmOGwiS" role="PzmwI">
+      <ref role="PrY4T" node="4WC4fmOFhOS" resolve="AbstractDataElementRefTarget" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4WC4fmOFhOS">
+    <property role="1pbfSe" value="64302637" />
+    <property role="3GE5qa" value="intf.sr" />
+    <property role="TrG5h" value="AbstractDataElementRefTarget" />
+    <node concept="1TJgyj" id="4WC4fmOFhPs" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="element" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="RsLjUnMNva" resolve="DataElement" />
+    </node>
+    <node concept="PrWs8" id="4WC4fmO_Ii0" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+    <node concept="PrWs8" id="4WC4fmO_XX$" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WC4fmOGKRK">
+    <property role="1pbfSe" value="64691941" />
+    <property role="3GE5qa" value="adapter" />
+    <property role="TrG5h" value="PortAdapterElementRefTarget" />
+    <node concept="PrWs8" id="4WC4fmOGKSf" role="PzmwI">
+      <ref role="PrY4T" node="4WC4fmOFhOS" resolve="AbstractDataElementRefTarget" />
     </node>
   </node>
 </model>
