@@ -5,7 +5,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="b67a6ca0-735e-4903-b238-4b525bddf96a" name="com.mbeddr.mpsutil.genutil" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -7692,8 +7692,8 @@
                                           <ref role="1PxNhF" to="v7ag:71UKpntog8p" resolve="PortAdapterRefExpr" />
                                           <node concept="2OqwBi" id="4WC4fmOHvR1" role="1PxMeX">
                                             <node concept="30H73N" id="4WC4fmOHb_b" role="2Oq$k0" />
-                                            <node concept="3TrEf2" id="4WC4fmOHwjH" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="mj1l:66uzewbvZib" />
+                                            <node concept="3TrEf2" id="4WC4fmONRRa" role="2OqNvi">
+                                              <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
                                             </node>
                                           </node>
                                         </node>

@@ -315,9 +315,6 @@
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
-      <concept id="998890089995051771" name="com.mbeddr.ext.components.structure.DataElementRefExpr" flags="ng" index="2q3ev5">
-        <reference id="998890089995051773" name="element" index="2q3ev3" />
-      </concept>
       <concept id="998890089994729418" name="com.mbeddr.ext.components.structure.DataElement" flags="ng" index="2q5ZbO">
         <property id="2116578915583842931" name="atomic" index="1vaOcW" />
       </concept>
@@ -440,6 +437,10 @@
         <reference id="785275130114861598" name="field" index="3R_36f" />
         <child id="785275130114861599" name="value" index="3R_36e" />
       </concept>
+      <concept id="5703827575549009208" name="com.mbeddr.ext.components.structure.AbstractDataElementRefTarget" flags="ng" index="3VxgRd">
+        <reference id="5703827575549009244" name="element" index="3VxgQD" />
+      </concept>
+      <concept id="5703827575547552890" name="com.mbeddr.ext.components.structure.DataElementRefTarget" flags="ng" index="3VJJif" />
       <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
         <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
         <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
@@ -1627,10 +1628,12 @@
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
                 </node>
-                <node concept="2q3ev5" id="RsLjUnOUPA" role="3XIe9u">
-                  <ref role="2q3ev3" node="RsLjUnNu$7" resolve="drehzahl" />
-                  <node concept="2H6loZ" id="RsLjUnOUPz" role="1_9fRO">
+                <node concept="2qmXGp" id="4WC4fmON7lC" role="3XIe9u">
+                  <node concept="2H6loZ" id="4WC4fmON7lB" role="1_9fRO">
                     <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
+                  </node>
+                  <node concept="3VJJif" id="4WC4fmON7lD" role="1ESnxz">
+                    <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
                   </node>
                 </node>
               </node>
@@ -1639,17 +1642,12 @@
                   <node concept="3TlMh9" id="RsLjUnOUQ4" role="3TlMhJ">
                     <property role="2hmy$m" value="100" />
                   </node>
-                  <node concept="2q3ev5" id="RsLjUnOUPW" role="3TlMhI">
-                    <ref role="2q3ev3" node="RsLjUnNu$7" resolve="drehzahl" />
-                    <node concept="2H6loZ" id="RsLjUnOUPT" role="1_9fRO">
+                  <node concept="2qmXGp" id="4WC4fmON7lF" role="3TlMhI">
+                    <node concept="2H6loZ" id="4WC4fmON7lE" role="1_9fRO">
                       <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
                     </node>
-                    <node concept="7CXmI" id="3lIakVHnG2J" role="lGtFl">
-                      <node concept="1TM$A" id="6qOUCDpJ5$B" role="7EUXB">
-                        <node concept="2PYRI3" id="6qOUCDpJ5$C" role="3lydEf">
-                          <ref role="39XzEq" to="n7pc:5so5TTr6J_W" />
-                        </node>
-                      </node>
+                    <node concept="3VJJif" id="4WC4fmON7lG" role="1ESnxz">
+                      <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
                     </node>
                   </node>
                 </node>
@@ -1680,10 +1678,12 @@
                   <node concept="3TlMh9" id="RsLjUnOBWx" role="3TlMhJ">
                     <property role="2hmy$m" value="10" />
                   </node>
-                  <node concept="2q3ev5" id="RsLjUnOl1_" role="3TlMhI">
-                    <ref role="2q3ev3" node="RsLjUnNu$7" resolve="drehzahl" />
-                    <node concept="2H6loZ" id="RsLjUnOl1y" role="1_9fRO">
+                  <node concept="2qmXGp" id="4WC4fmON7lI" role="3TlMhI">
+                    <node concept="2H6loZ" id="4WC4fmON7lH" role="1_9fRO">
                       <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
+                    </node>
+                    <node concept="3VJJif" id="4WC4fmON7lJ" role="1ESnxz">
+                      <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
                     </node>
                   </node>
                 </node>
@@ -1694,10 +1694,12 @@
                     <property role="2hmy$m" value="10" />
                   </node>
                   <node concept="2qmXGp" id="6iKSPgYFohV" role="3TlMhI">
-                    <node concept="2q3ev5" id="1PvAkX2tLiM" role="1_9fRO">
-                      <ref role="2q3ev3" node="1PvAkX2tvxc" resolve="atomicPosition" />
-                      <node concept="2H6loZ" id="1PvAkX2tLiJ" role="1_9fRO">
+                    <node concept="2qmXGp" id="4WC4fmON7lL" role="1_9fRO">
+                      <node concept="2H6loZ" id="4WC4fmON7lK" role="1_9fRO">
                         <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
+                      </node>
+                      <node concept="3VJJif" id="4WC4fmON7lM" role="1ESnxz">
+                        <ref role="3VxgQD" node="1PvAkX2tvxc" resolve="atomicPosition" />
                       </node>
                     </node>
                     <node concept="1E4Tgc" id="6iKSPgYFohW" role="1ESnxz">
@@ -1719,10 +1721,12 @@
                     <property role="2hmy$m" value="42" />
                   </node>
                   <node concept="2qmXGp" id="6iKSPgYFpfn" role="3TlMhI">
-                    <node concept="2q3ev5" id="1PvAkX2ukUm" role="1_9fRO">
-                      <ref role="2q3ev3" node="1PvAkX2u37y" resolve="nonAtomicPosition" />
-                      <node concept="2H6loZ" id="1PvAkX2ukUh" role="1_9fRO">
+                    <node concept="2qmXGp" id="4WC4fmON7lO" role="1_9fRO">
+                      <node concept="2H6loZ" id="4WC4fmON7lN" role="1_9fRO">
                         <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
+                      </node>
+                      <node concept="3VJJif" id="4WC4fmON7lP" role="1ESnxz">
+                        <ref role="3VxgQD" node="1PvAkX2u37y" resolve="nonAtomicPosition" />
                       </node>
                     </node>
                     <node concept="1E4Tgc" id="6iKSPgYFpfo" role="1ESnxz">
@@ -1737,17 +1741,12 @@
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
                 </node>
-                <node concept="2q3ev5" id="RsLjUnOUPO" role="3XIe9u">
-                  <ref role="2q3ev3" node="RsLjUnNu$7" resolve="drehzahl" />
-                  <node concept="2H6loZ" id="RsLjUnOUPL" role="1_9fRO">
+                <node concept="2qmXGp" id="4WC4fmON7lR" role="3XIe9u">
+                  <node concept="2H6loZ" id="4WC4fmON7lQ" role="1_9fRO">
                     <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
                   </node>
-                  <node concept="7CXmI" id="3lIakVHnG2C" role="lGtFl">
-                    <node concept="1TM$A" id="6qOUCDpHoIw" role="7EUXB">
-                      <node concept="2PYRI3" id="6qOUCDpHoIx" role="3lydEf">
-                        <ref role="39XzEq" to="e39d:RsLjUnOUWI" />
-                      </node>
-                    </node>
+                  <node concept="3VJJif" id="4WC4fmON7lS" role="1ESnxz">
+                    <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
                   </node>
                 </node>
               </node>
@@ -1850,10 +1849,12 @@
                   <node concept="3TlMh9" id="j_pDIZw2ir" role="3TlMhJ">
                     <property role="2hmy$m" value="10" />
                   </node>
-                  <node concept="2q3ev5" id="j_pDIZw2is" role="3TlMhI">
-                    <ref role="2q3ev3" node="j_pDIZw2hW" resolve="drehzahl" />
-                    <node concept="2H6loZ" id="j_pDIZw2it" role="1_9fRO">
+                  <node concept="2qmXGp" id="4WC4fmON7lU" role="3TlMhI">
+                    <node concept="2H6loZ" id="4WC4fmON7lT" role="1_9fRO">
                       <ref role="2H6loY" node="j_pDIZw2im" resolve="carData" />
+                    </node>
+                    <node concept="3VJJif" id="4WC4fmON7lV" role="1ESnxz">
+                      <ref role="3VxgQD" node="j_pDIZw2hW" resolve="drehzahl" />
                     </node>
                   </node>
                 </node>
