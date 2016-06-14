@@ -54,7 +54,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -1110,23 +1109,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1PDQQQz$kDm" role="3cqZAp">
-          <node concept="2OqwBi" id="1PDQQQz$kLd" role="3clFbG">
-            <node concept="37vLTw" id="1PDQQQz$kDk" role="2Oq$k0">
-              <ref role="3cqZAo" node="2nIaZ7ix0QB" resolve="style" />
-            </node>
-            <node concept="liA8E" id="1PDQQQz$kOS" role="2OqNvi">
-              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="10M0yZ" id="1PDQQQz$kXp" role="37wK5m">
-                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                <ref role="3cqZAo" to="5ueo:~StyleAttributes.DRAW_BORDER" resolve="DRAW_BORDER" />
-              </node>
-              <node concept="3clFbT" id="1PDQQQz$l4k" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2nIaZ7ix0QM" role="3cqZAp">
           <node concept="2OqwBi" id="2nIaZ7ix0QN" role="3clFbG">
             <node concept="37vLTw" id="2nIaZ7ix0QO" role="2Oq$k0">
@@ -1212,30 +1194,12 @@
       <node concept="10Oyi0" id="2nIaZ7ix0Sc" role="3clF45" />
       <node concept="3clFbS" id="2nIaZ7ix0Sd" role="3clF47">
         <node concept="3clFbF" id="2nIaZ7ix0Se" role="3cqZAp">
-          <node concept="3cpWsd" id="2nIaZ7ix0Sf" role="3clFbG">
-            <node concept="1eOMI4" id="2nIaZ7ix0Sg" role="3uHU7w">
-              <node concept="FJ1c_" id="2nIaZ7ix0Sh" role="1eOMHV">
-                <node concept="3cmrfG" id="2nIaZ7ix0Si" role="3uHU7w">
-                  <property role="3cmrfH" value="2" />
-                </node>
-                <node concept="2OqwBi" id="2nIaZ7ix0Sj" role="3uHU7B">
-                  <node concept="2YIFZM" id="2nIaZ7ix0Sk" role="2Oq$k0">
-                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
-                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                  </node>
-                  <node concept="liA8E" id="2nIaZ7ix0Sl" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
-                  </node>
-                </node>
-              </node>
+          <node concept="2OqwBi" id="2nIaZ7ix0Sm" role="3clFbG">
+            <node concept="1rXfSq" id="2nIaZ7ix0Sn" role="2Oq$k0">
+              <ref role="37wK5l" node="2nIaZ7ix0QZ" resolve="getDatePicker" />
             </node>
-            <node concept="2OqwBi" id="2nIaZ7ix0Sm" role="3uHU7B">
-              <node concept="1rXfSq" id="2nIaZ7ix0Sn" role="2Oq$k0">
-                <ref role="37wK5l" node="2nIaZ7ix0QZ" resolve="getDatePicker" />
-              </node>
-              <node concept="liA8E" id="2nIaZ7ix0So" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JComponent.getHeight():int" resolve="getHeight" />
-              </node>
+            <node concept="liA8E" id="2nIaZ7ix0So" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.getHeight():int" resolve="getHeight" />
             </node>
           </node>
         </node>

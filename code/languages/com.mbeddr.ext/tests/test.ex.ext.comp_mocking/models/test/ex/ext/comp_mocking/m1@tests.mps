@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="-1" />
@@ -232,9 +232,6 @@
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
       <concept id="4643433264761566506" name="com.mbeddr.ext.components.structure.OnInitTrigger" flags="ng" index="2cabNp" />
-      <concept id="998890089995051771" name="com.mbeddr.ext.components.structure.DataElementRefExpr" flags="ng" index="2q3ev5">
-        <reference id="998890089995051773" name="element" index="2q3ev3" />
-      </concept>
       <concept id="998890089994729418" name="com.mbeddr.ext.components.structure.DataElement" flags="ng" index="2q5ZbO" />
       <concept id="998890089994729412" name="com.mbeddr.ext.components.structure.SenderReceiverInterface" flags="ng" index="2q5ZbU">
         <child id="998890089994729432" name="elements" index="2q5ZbA" />
@@ -289,6 +286,10 @@
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
+      <concept id="5703827575549009208" name="com.mbeddr.ext.components.structure.AbstractDataElementRefTarget" flags="ng" index="3VxgRd">
+        <reference id="5703827575549009244" name="element" index="3VxgQD" />
+      </concept>
+      <concept id="5703827575547552890" name="com.mbeddr.ext.components.structure.DataElementRefTarget" flags="ng" index="3VJJif" />
       <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
         <reference id="1482737808881210674" name="instance" index="1XX6Gs" />
         <reference id="1482737808881210673" name="config" index="1XX6Gv" />
@@ -306,6 +307,9 @@
       </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
+        <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
@@ -444,10 +448,12 @@
             </node>
           </node>
           <node concept="1_9egQ" id="ihbFZZvFns" role="3XIRFZ">
-            <node concept="2q3ev5" id="ihbFZZvFnw" role="1_9egR">
-              <ref role="2q3ev3" node="ihbFZZvAya" resolve="isReady" />
-              <node concept="2H6loZ" id="ihbFZZvFnt" role="1_9fRO">
+            <node concept="2qmXGp" id="4WC4fmON7os" role="1_9egR">
+              <node concept="2H6loZ" id="4WC4fmON7or" role="1_9fRO">
                 <ref role="2H6loY" node="ihbFZZvF0g" resolve="status" />
+              </node>
+              <node concept="3VJJif" id="4WC4fmON7ot" role="1ESnxz">
+                <ref role="3VxgQD" node="ihbFZZvAya" resolve="isReady" />
               </node>
             </node>
           </node>
@@ -463,10 +469,12 @@
         <property role="TrG5h" value="getStatus" />
         <node concept="3XIRFW" id="ihbFZZvGLX" role="2EWMhI">
           <node concept="2BFjQ_" id="ihbFZZvGM7" role="3XIRFZ">
-            <node concept="2q3ev5" id="ihbFZZvGMb" role="2BFjQA">
-              <ref role="2q3ev3" node="ihbFZZvAya" resolve="isReady" />
-              <node concept="2H6loZ" id="ihbFZZvGM8" role="1_9fRO">
+            <node concept="2qmXGp" id="4WC4fmON7ov" role="2BFjQA">
+              <node concept="2H6loZ" id="4WC4fmON7ou" role="1_9fRO">
                 <ref role="2H6loY" node="ihbFZZvF0g" resolve="status" />
+              </node>
+              <node concept="3VJJif" id="4WC4fmON7ow" role="1ESnxz">
+                <ref role="3VxgQD" node="ihbFZZvAya" resolve="isReady" />
               </node>
             </node>
           </node>
@@ -849,10 +857,12 @@
           <node concept="1_9egQ" id="5vll4Vdwi2d" role="3XIRFZ">
             <node concept="3pqW6w" id="5vll4Vdwi2i" role="1_9egR">
               <node concept="3TlMhd" id="5vll4Vdwi2l" role="3TlMhJ" />
-              <node concept="2q3ev5" id="5vll4Vdwi2h" role="3TlMhI">
-                <ref role="2q3ev3" node="ihbFZZvAya" resolve="isReady" />
-                <node concept="2H6loZ" id="5vll4Vdwi2e" role="1_9fRO">
+              <node concept="2qmXGp" id="4WC4fmON7oy" role="3TlMhI">
+                <node concept="2H6loZ" id="4WC4fmON7ox" role="1_9fRO">
                   <ref role="2H6loY" node="5vll4VdvqSP" resolve="sp" />
+                </node>
+                <node concept="3VJJif" id="4WC4fmON7oz" role="1ESnxz">
+                  <ref role="3VxgQD" node="ihbFZZvAya" resolve="isReady" />
                 </node>
               </node>
             </node>
@@ -873,10 +883,12 @@
               <node concept="1_9egQ" id="5vll4VdvqT5" role="3XIRFZ">
                 <node concept="3pqW6w" id="5vll4VdvqTa" role="1_9egR">
                   <node concept="3TlMhK" id="5vll4VdvqTd" role="3TlMhJ" />
-                  <node concept="2q3ev5" id="5vll4VdvqT9" role="3TlMhI">
-                    <ref role="2q3ev3" node="ihbFZZvAya" resolve="isReady" />
-                    <node concept="2H6loZ" id="5vll4VdvqT6" role="1_9fRO">
+                  <node concept="2qmXGp" id="4WC4fmON7o_" role="3TlMhI">
+                    <node concept="2H6loZ" id="4WC4fmON7o$" role="1_9fRO">
                       <ref role="2H6loY" node="5vll4VdvqSP" resolve="sp" />
+                    </node>
+                    <node concept="3VJJif" id="4WC4fmON7oA" role="1ESnxz">
+                      <ref role="3VxgQD" node="ihbFZZvAya" resolve="isReady" />
                     </node>
                   </node>
                 </node>
@@ -895,10 +907,12 @@
                 <node concept="1_9egQ" id="5vll4VdvqTm" role="3XIRFZ">
                   <node concept="3pqW6w" id="5vll4VdvqTr" role="1_9egR">
                     <node concept="3TlMhd" id="5vll4VdvqTu" role="3TlMhJ" />
-                    <node concept="2q3ev5" id="5vll4VdvqTq" role="3TlMhI">
-                      <ref role="2q3ev3" node="ihbFZZvAya" resolve="isReady" />
-                      <node concept="2H6loZ" id="5vll4VdvqTn" role="1_9fRO">
+                    <node concept="2qmXGp" id="4WC4fmON7oC" role="3TlMhI">
+                      <node concept="2H6loZ" id="4WC4fmON7oB" role="1_9fRO">
                         <ref role="2H6loY" node="5vll4VdvqSP" resolve="sp" />
+                      </node>
+                      <node concept="3VJJif" id="4WC4fmON7oD" role="1ESnxz">
+                        <ref role="3VxgQD" node="ihbFZZvAya" resolve="isReady" />
                       </node>
                     </node>
                   </node>

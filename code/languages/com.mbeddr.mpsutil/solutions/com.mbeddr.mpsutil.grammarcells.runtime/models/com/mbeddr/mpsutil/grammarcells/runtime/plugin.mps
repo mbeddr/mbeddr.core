@@ -17,7 +17,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="878o" ref="r:46fddec3-0db9-4b86-8274-957463dd4499(com.mbeddr.mpsutil.grammarcells.runtimelang.structure)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -149,9 +148,6 @@
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
       </concept>
@@ -266,37 +262,37 @@
                           <node concept="1PgB_6" id="4AjdlHqkdqK" role="2OqNvi" />
                         </node>
                       </node>
-                      <node concept="3clFbF" id="4AjdlHqkdw$" role="3cqZAp">
-                        <node concept="2OqwBi" id="4AjdlHqkeau" role="3clFbG">
-                          <node concept="2ShNRf" id="4AjdlHqkdww" role="2Oq$k0">
-                            <node concept="1pGfFk" id="4AjdlHqkdJU" role="2ShVmc">
+                      <node concept="3cpWs8" id="1QxZEGO0ms0" role="3cqZAp">
+                        <node concept="3cpWsn" id="1QxZEGO0ms1" role="3cpWs9">
+                          <property role="TrG5h" value="parser" />
+                          <node concept="3uibUv" id="1QxZEGO0mrU" role="1tU5fm">
+                            <ref role="3uigEE" to="czm:2TSIj8m0Ksb" resolve="Parser" />
+                          </node>
+                          <node concept="2ShNRf" id="1QxZEGO0ms2" role="33vP2m">
+                            <node concept="1pGfFk" id="1QxZEGO0ms3" role="2ShVmc">
                               <ref role="37wK5l" to="czm:5OsvY4g$ZXe" resolve="Parser" />
-                              <node concept="37vLTw" id="3O7ZvCZJ0NY" role="37wK5m">
+                              <node concept="37vLTw" id="1QxZEGO0ms4" role="37wK5m">
                                 <ref role="3cqZAo" node="3O7ZvCZJ0NU" resolve="model" />
                               </node>
                             </node>
                           </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="4AjdlHqkdw$" role="3cqZAp">
+                        <node concept="2OqwBi" id="4AjdlHqkeau" role="3clFbG">
+                          <node concept="37vLTw" id="1QxZEGO0ms5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1QxZEGO0ms1" resolve="parser" />
+                          </node>
                           <node concept="liA8E" id="4AjdlHqken8" role="2OqNvi">
                             <ref role="37wK5l" to="czm:6zqaFar1kiJ" resolve="processAfterTextDelete" />
-                            <node concept="2YIFZM" id="4AjdlHqkeur" role="37wK5m">
-                              <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
-                              <ref role="37wK5l" to="czm:420g0gW2m0h" resolve="findRootExpression" />
-                              <node concept="37vLTw" id="4AjdlHqkewB" role="37wK5m">
-                                <ref role="3cqZAo" node="4AjdlHqkcX3" resolve="parent" />
+                            <node concept="2OqwBi" id="1QxZEGO0m_z" role="37wK5m">
+                              <node concept="37vLTw" id="1QxZEGO0mzT" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1QxZEGO0ms1" resolve="parser" />
                               </node>
-                              <node concept="2OqwBi" id="4AjdlHqkf4w" role="37wK5m">
-                                <node concept="2OqwBi" id="4AjdlHqkeV_" role="2Oq$k0">
-                                  <node concept="2JrnkZ" id="4AjdlHqkeSh" role="2Oq$k0">
-                                    <node concept="37vLTw" id="4AjdlHqkeFM" role="2JrQYb">
-                                      <ref role="3cqZAo" node="4AjdlHqkcX3" resolve="parent" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="4AjdlHqkf1Q" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="4AjdlHqkfch" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                              <node concept="liA8E" id="1QxZEGO0mT$" role="2OqNvi">
+                                <ref role="37wK5l" to="czm:1QxZEGNZN1b" resolve="findRootExpression" />
+                                <node concept="37vLTw" id="1QxZEGO0mW8" role="37wK5m">
+                                  <ref role="3cqZAo" node="4AjdlHqkcX3" resolve="parent" />
                                 </node>
                               </node>
                             </node>

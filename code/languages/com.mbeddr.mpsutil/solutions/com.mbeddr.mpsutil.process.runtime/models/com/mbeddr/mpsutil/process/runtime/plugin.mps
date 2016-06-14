@@ -150,6 +150,9 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -1551,6 +1554,29 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="e7wQ4X$knt" role="3clF47">
+        <node concept="3clFbJ" id="2NzhyaZywyB" role="3cqZAp">
+          <node concept="3clFbS" id="2NzhyaZywyD" role="3clFbx">
+            <node concept="3clFbF" id="2NzhyaZyx3Y" role="3cqZAp">
+              <node concept="2OqwBi" id="2NzhyaZyx_h" role="3clFbG">
+                <node concept="2OqwBi" id="2NzhyaZyx8e" role="2Oq$k0">
+                  <node concept="Xjq3P" id="2NzhyaZyx3W" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="2NzhyaZyxnO" role="2OqNvi">
+                    <ref role="2Oxat5" node="4biM00JaPQv" resolve="async_result" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2NzhyaZyxPF" role="2OqNvi">
+                  <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected():void" resolve="setRejected" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2NzhyaZyxXQ" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="2NzhyaZywJ5" role="3clFbw">
+            <node concept="1rXfSq" id="2NzhyaZywUB" role="3fr31v">
+              <ref role="37wK5l" to="jkm4:~DialogWrapper.isOK():boolean" resolve="isOK" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4biM00JgSd5" role="3cqZAp">
           <node concept="2YIFZM" id="4biM00JgWdx" role="3clFbG">
             <ref role="37wK5l" to="7wpd:4biM00Jg0NW" resolve="runWithProgressAsync" />
@@ -1827,6 +1853,37 @@
         <node concept="16syzq" id="4biM00JatBl" role="11_B2D">
           <ref role="16sUi3" node="e7wQ4XzVjE" resolve="TResult" />
         </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2NzhyaZy70r" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="doCancelAction" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="2NzhyaZy70s" role="1B3o_S" />
+      <node concept="3cqZAl" id="2NzhyaZy70u" role="3clF45" />
+      <node concept="3clFbS" id="2NzhyaZy70y" role="3clF47">
+        <node concept="3clFbF" id="2NzhyaZy70_" role="3cqZAp">
+          <node concept="3nyPlj" id="2NzhyaZy70$" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~DialogWrapper.doCancelAction():void" resolve="doCancelAction" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2NzhyaZyg3N" role="3cqZAp">
+          <node concept="2OqwBi" id="2NzhyaZyg_B" role="3clFbG">
+            <node concept="2OqwBi" id="2NzhyaZyg8g" role="2Oq$k0">
+              <node concept="Xjq3P" id="2NzhyaZyg3L" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2NzhyaZygop" role="2OqNvi">
+                <ref role="2Oxat5" node="4biM00JaPQv" resolve="async_result" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2NzhyaZygK8" role="2OqNvi">
+              <ref role="37wK5l" to="zn9m:~ActionCallback.setRejected():void" resolve="setRejected" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2NzhyaZy70z" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="44rcFjhPn0y" role="jymVt">
