@@ -1659,6 +1659,7 @@
     <property role="TrG5h" value="InterfaceTypeDataRefExpr" />
     <property role="1pbfSe" value="305915032" />
     <ref role="1TJDcQ" node="RsLjUnO2bV" resolve="DataElementRefExpr" />
+    <node concept="asaX9" id="4WC4fmOMSO7" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="29JE8qNtlUh">
     <property role="3GE5qa" value="comp.instances" />
@@ -1725,6 +1726,7 @@
       <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" />
       <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
     </node>
+    <node concept="asaX9" id="4WC4fmOMQLM" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3XxRpIb9yjO">
     <property role="3GE5qa" value="adapter" />
