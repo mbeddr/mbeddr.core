@@ -5,6 +5,8 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.acsl.cbmc/com.mbeddr.analyses.acsl.cbmc.devkit" folder="acsl" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.acsl.spec/com.mbeddr.analyses.acsl.spec.devkit" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.components/com.mbeddr.analyses.components.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
@@ -50,7 +52,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.c.rt/com.mbeddr.analyses.spin.c.rt.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.promela.pluginSolution/com.mbeddr.analyses.spin.promela.pluginSolution.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.promela.rt/com.mbeddr.analyses.spin.promela.rt.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.z3/com.mbeddr.analyses.z3.msd" folder="z3" />
@@ -76,6 +77,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.stan.ts/test.analyses.stan.ts.msd" folder="test.z3" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analysis.examples/test.analysis.examples.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.examples" />
     </projectModules>
