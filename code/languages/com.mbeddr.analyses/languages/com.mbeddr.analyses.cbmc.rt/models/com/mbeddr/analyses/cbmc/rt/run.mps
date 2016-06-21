@@ -457,6 +457,7 @@
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -7948,6 +7949,38 @@
           </node>
         </node>
         <node concept="3clFbH" id="cchPmXRcON" role="3cqZAp" />
+        <node concept="3clFbF" id="6P_afAIrx36" role="3cqZAp">
+          <node concept="37vLTI" id="6P_afAIry2Y" role="3clFbG">
+            <node concept="2OqwBi" id="6P_afAIrz5b" role="37vLTx">
+              <node concept="37vLTw" id="6P_afAIryyR" role="2Oq$k0">
+                <ref role="3cqZAo" node="cchPmXR72X" resolve="analysesList" />
+              </node>
+              <node concept="1aUR6E" id="6P_afAIrB$n" role="2OqNvi">
+                <node concept="1bVj0M" id="6P_afAIrB$p" role="23t8la">
+                  <node concept="3clFbS" id="6P_afAIrB$q" role="1bW5cS">
+                    <node concept="3clFbF" id="6P_afAIrCT5" role="3cqZAp">
+                      <node concept="NRdvd" id="6P_afAIrGio" role="3clFbG">
+                        <ref role="1Pybhc" to="ood5:6P_afAIr3XL" resolve="AnalysesConfigurationUtils" />
+                        <ref role="37wK5l" to="ood5:6P_afAIr6ZT" resolve="isCommented" />
+                        <node concept="37vLTw" id="6P_afAIrGip" role="37wK5m">
+                          <ref role="3cqZAo" node="6P_afAIrB$r" resolve="it" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="6P_afAIrB$r" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="6P_afAIrB$s" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="6P_afAIrx34" role="37vLTJ">
+              <ref role="3cqZAo" node="cchPmXR72X" resolve="analysesList" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6P_afAIrFIg" role="3cqZAp" />
         <node concept="3SKdUt" id="6BBQp7Kcb$Q" role="3cqZAp">
           <node concept="3SKdUq" id="6BBQp7KccuG" role="3SKWNk">
             <property role="3SKdUp" value="do collect analyses jobs" />
