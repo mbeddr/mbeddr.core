@@ -205,6 +205,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -6161,15 +6162,11 @@
     </node>
     <node concept="2tJIrI" id="7iLQIU34QWR" role="jymVt" />
     <node concept="3clFb_" id="7iLQIU34QYk" role="jymVt">
-      <property role="1EzhhJ" value="false" />
+      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="canLift" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="7iLQIU34QYl" role="3clF47">
-        <node concept="3clFbF" id="7iLQIU350RJ" role="3cqZAp">
-          <node concept="3clFbT" id="7iLQIU350RI" role="3clFbG" />
-        </node>
-      </node>
+      <node concept="3clFbS" id="7iLQIU34QYl" role="3clF47" />
       <node concept="10P_77" id="7iLQIU34QZC" role="3clF45" />
       <node concept="37vLTG" id="7iLQIU34QYn" role="3clF46">
         <property role="TrG5h" value="crtState" />
@@ -6192,15 +6189,11 @@
     </node>
     <node concept="2tJIrI" id="7iLQIU34QXg" role="jymVt" />
     <node concept="3clFb_" id="7iLQIU35yG1" role="jymVt">
-      <property role="1EzhhJ" value="false" />
+      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isNoise" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="7iLQIU35yG2" role="3clF47">
-        <node concept="3clFbF" id="7iLQIU35yG3" role="3cqZAp">
-          <node concept="3clFbT" id="7iLQIU35yG4" role="3clFbG" />
-        </node>
-      </node>
+      <node concept="3clFbS" id="7iLQIU35yG2" role="3clF47" />
       <node concept="10P_77" id="7iLQIU35yG5" role="3clF45" />
       <node concept="37vLTG" id="7iLQIU35yG6" role="3clF46">
         <property role="TrG5h" value="crtState" />
@@ -6310,6 +6303,9 @@
               <node concept="2YIFZM" id="4hqHmbT_B$s" role="3cqZAk">
                 <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                <node concept="3uibUv" id="395kdzFr6a$" role="3PaCim">
+                  <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
+                </node>
               </node>
             </node>
           </node>
