@@ -2,13 +2,13 @@
 <model ref="r:356e7e3e-c924-4b1d-aa48-d083518889e1(com.mbeddr.analyses.cbmc.core.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
@@ -368,10 +368,10 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <node concept="2OqwBi" id="3x0R1LJ5JZD" role="37wK5m">
-              <node concept="2WthIp" id="3x0R1LJ5JZE" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6$5o" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6zHO" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="3x0R1LJ5JZE" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="3_HSwtcO02O" role="37wK5m">
               <node concept="2WthIp" id="3_HSwtcNZsL" role="2Oq$k0" />
@@ -539,10 +539,10 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <node concept="2OqwBi" id="3x0R1LJ5K11" role="37wK5m">
-              <node concept="2WthIp" id="3x0R1LJ5K12" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6_2N" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6$Cl" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="3x0R1LJ5K12" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="3_HSwtcO2NI" role="37wK5m">
               <node concept="2WthIp" id="3_HSwtcO2fx" role="2Oq$k0" />
@@ -564,7 +564,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3x0R1LJ5K16" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/verify.png" />
+      <property role="1QGGTI" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/icons/verify.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="3x0R1LJ5K1b">
@@ -713,10 +713,10 @@
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <node concept="2OqwBi" id="3x0R1LJ5K3K" role="37wK5m">
-              <node concept="2WthIp" id="3x0R1LJ5K3L" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6zoS" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6z4f" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="3x0R1LJ5K3L" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="3_HSwtcNPjW" role="37wK5m">
               <node concept="2WthIp" id="3_HSwtcNOCz" role="2Oq$k0" />
@@ -877,10 +877,10 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <node concept="2OqwBi" id="7yN$Xh8pdHF" role="37wK5m">
-              <node concept="2WthIp" id="7yN$Xh8pdHG" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6_I1" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6_iZ" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="7yN$Xh8pdHG" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="7yN$Xh8pdHI" role="37wK5m">
               <node concept="2WthIp" id="7yN$Xh8pdHJ" role="2Oq$k0" />
@@ -902,7 +902,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="7yN$Xh8pdHO" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/verify.png" />
+      <property role="1QGGTI" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/icons/verify.png" />
     </node>
     <node concept="2ScWuX" id="7yN$Xh8pdHP" role="tmbBb">
       <node concept="3clFbS" id="7yN$Xh8pdHQ" role="2VODD2">

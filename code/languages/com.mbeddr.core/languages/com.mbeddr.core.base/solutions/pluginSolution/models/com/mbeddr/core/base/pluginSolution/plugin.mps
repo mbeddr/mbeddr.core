@@ -2253,7 +2253,7 @@
       <node concept="1oajcY" id="7uLL3Mf2_Qz" role="1oa70y" />
     </node>
     <node concept="1QGGSu" id="6wvhQs7nVXo" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/terminal.png" />
+      <property role="1QGGTI" value="${module}/icons/terminal.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="7uLL3Mf2Aq0">
@@ -2392,7 +2392,7 @@
       <node concept="1oajcY" id="7uLL3Mf2Q$g" role="1oa70y" />
     </node>
     <node concept="1QGGSu" id="6wvhQs7nVXn" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/terminal.png" />
+      <property role="1QGGTI" value="${module}/icons/terminal.png" />
     </node>
     <node concept="2ScWuX" id="DMIuLumKtp" role="tmbBb">
       <node concept="3clFbS" id="DMIuLumKtq" role="2VODD2">
@@ -4806,7 +4806,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ueXZrqt44c" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/search.png" />
+      <property role="1QGGTI" value="${module}/icons/search.png" />
     </node>
   </node>
   <node concept="312cEu" id="2HzhasN$akP">
@@ -6659,7 +6659,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3slbD0C7$Av" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/check.png" />
+      <property role="1QGGTI" value="${module}/icons/check.png" />
     </node>
     <node concept="2ScWuX" id="3slbD0C7$Aw" role="tmbBb">
       <node concept="3clFbS" id="3slbD0C7$Ax" role="2VODD2">
@@ -6937,9 +6937,6 @@
             </node>
             <node concept="2ShNRf" id="4augEjZS_sI" role="33vP2m">
               <node concept="2i4dXS" id="4augEjZS_sJ" role="2ShVmc">
-                <node concept="3uibUv" id="3eR6wocIHaX" role="HW$YZ">
-                  <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
-                </node>
                 <node concept="2OqwBi" id="4augEjZS_sK" role="I$8f6">
                   <node concept="liA8E" id="4augEjZS_sL" role="2OqNvi">
                     <ref role="37wK5l" to="w1kc:~SModelInternal.importedLanguageIds():java.util.Collection" resolve="importedLanguageIds" />
@@ -6954,6 +6951,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="3uibUv" id="3eR6wocIHaX" role="HW$YZ">
+                  <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
                 </node>
               </node>
             </node>
@@ -12150,7 +12150,7 @@
                             <ref role="3cqZAo" node="79AXByylc$l" resolve="configurableEditor" />
                           </node>
                           <node concept="liA8E" id="79AXByylc_q" role="2OqNvi">
-                            <ref role="37wK5l" to="jkm4:~DialogWrapper.show():void" resolve="show" />
+                            <ref role="37wK5l" to="qxsb:~SingleConfigurableEditor.show():void" resolve="show" />
                           </node>
                         </node>
                       </node>
@@ -12852,7 +12852,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2Gn1WTgS$Iy" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/search.png" />
+      <property role="1QGGTI" value="${module}/icons/search.png" />
     </node>
     <node concept="2ScWuX" id="2Gn1WTgS_2H" role="tmbBb">
       <node concept="3clFbS" id="2Gn1WTgS_2I" role="2VODD2">
@@ -18834,7 +18834,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rIRh" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/fwdIcon.png" />
+      <property role="1QGGTI" value="${module}/icons/fwdIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRi" role="1NuT2Z">
       <property role="TrG5h" value="project" />
