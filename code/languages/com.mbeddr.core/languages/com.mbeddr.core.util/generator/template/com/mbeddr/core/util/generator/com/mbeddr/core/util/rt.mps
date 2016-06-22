@@ -223,6 +223,47 @@
                 <node concept="2jxLKc" id="kOmZ6tlNNX" role="1tU5fm" />
               </node>
             </node>
+            <node concept="Jncv_" id="7ZRjxAJdmOj" role="3cqZAp">
+              <ref role="JncvD" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+              <node concept="37vLTw" id="7ZRjxAJdmOk" role="JncvB">
+                <ref role="3cqZAo" node="3m5PKqzSZ1q" resolve="type" />
+              </node>
+              <node concept="3clFbS" id="7ZRjxAJdmOl" role="Jncv$">
+                <node concept="Jncv_" id="7ZRjxAJdmOm" role="3cqZAp">
+                  <ref role="JncvD" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
+                  <node concept="3clFbS" id="7ZRjxAJdmOn" role="Jncv$">
+                    <node concept="3clFbF" id="7ZRjxAJdmOo" role="3cqZAp">
+                      <node concept="2YIFZM" id="7ZRjxAJdmOp" role="3clFbG">
+                        <ref role="1Pybhc" node="kOmZ6tlwJl" resolve="StructPrintingHelper" />
+                        <ref role="37wK5l" node="kOmZ6tx9Y2" resolve="addAnnotation" />
+                        <node concept="Jnkvi" id="7ZRjxAJdmOq" role="37wK5m">
+                          <ref role="1M0zk5" node="7ZRjxAJdmOr" resolve="st" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="JncvC" id="7ZRjxAJdmOr" role="JncvA">
+                    <property role="TrG5h" value="st" />
+                    <node concept="2jxLKc" id="7ZRjxAJdmOs" role="1tU5fm" />
+                  </node>
+                  <node concept="1rXfSq" id="7ZRjxAJdmOt" role="JncvB">
+                    <ref role="37wK5l" node="3m5PKqzSZjK" resolve="unwrap" />
+                    <node concept="2OqwBi" id="7ZRjxAJdmOu" role="37wK5m">
+                      <node concept="Jnkvi" id="7ZRjxAJdmOv" role="2Oq$k0">
+                        <ref role="1M0zk5" node="7ZRjxAJdmOx" resolve="pt" />
+                      </node>
+                      <node concept="3TrEf2" id="7ZRjxAJdmOw" role="2OqNvi">
+                        <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="7ZRjxAJdmOx" role="JncvA">
+                <property role="TrG5h" value="pt" />
+                <node concept="2jxLKc" id="7ZRjxAJdmOy" role="1tU5fm" />
+              </node>
+            </node>
             <node concept="Jncv_" id="kOmZ6txa8P" role="3cqZAp">
               <ref role="JncvD" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
               <node concept="37vLTw" id="3m5PKqzSZ1v" role="JncvB">
