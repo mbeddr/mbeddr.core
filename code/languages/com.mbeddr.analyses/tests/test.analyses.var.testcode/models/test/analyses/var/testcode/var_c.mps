@@ -39,6 +39,11 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <property id="7237858926291186685" name="neverGenerateThisModel" index="vyZA_" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
@@ -1294,6 +1299,9 @@
     <node concept="2dvl_R" id="Ryij7AlBTl" role="lGtFl">
       <ref role="2dvl_Q" node="44j14BH1ANL" resolve="FM1" />
     </node>
+  </node>
+  <node concept="2v9HqL" id="395kdzFrKiH">
+    <property role="vyZA_" value="true" />
   </node>
 </model>
 

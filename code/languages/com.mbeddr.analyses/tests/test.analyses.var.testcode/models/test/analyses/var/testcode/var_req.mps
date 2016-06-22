@@ -47,6 +47,11 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <property id="7237858926291186685" name="neverGenerateThisModel" index="vyZA_" />
+      </concept>
+    </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
@@ -408,6 +413,9 @@
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="4IrqaYbzsoR" role="9PVG_" />
     </node>
+  </node>
+  <node concept="2v9HqL" id="395kdzFrKiH">
+    <property role="vyZA_" value="true" />
   </node>
 </model>
 
