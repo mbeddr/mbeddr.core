@@ -9839,6 +9839,58 @@
           <ref role="3LEDTN" node="3p0_3lMnlup" resolve="com.mbeddr.analyses.cbmc.statemachines.pluginSolution" />
         </node>
       </node>
+      <node concept="3LEwk6" id="51ECGN59mSX" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.analyses.acsl.spec" />
+        <property role="3LESm3" value="e79cff4c-e3e9-4626-9aca-bcc76320fb14" />
+        <node concept="398BVA" id="51ECGN59mSZ" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="51ECGN59mT0" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="51ECGN59mT1" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.analyses.acsl.spec" />
+              <node concept="2Ry0Ak" id="51ECGN59oFs" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.acsl.spec.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="51ECGN59pbY" role="3LEDUa">
+          <ref role="3LEDTV" node="16rWggKnogq" resolve="com.mbeddr.analyses.acsl" />
+        </node>
+        <node concept="3LEDTy" id="51ECGN59pbZ" role="3LEDUa">
+          <ref role="3LEDTV" node="16rWggKnuEj" resolve="com.mbeddr.analyses.acsl.assertions.gen" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="51ECGN59qYc" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.analyses.acsl.cbmc" />
+        <property role="3LESm3" value="364dc291-5d9e-42d9-be31-62f6dec26162" />
+        <node concept="398BVA" id="51ECGN59qYe" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="51ECGN59qYf" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="51ECGN59qYg" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.analyses.acsl.cbmc" />
+              <node concept="2Ry0Ak" id="51ECGN59sL7" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.acsl.cbmc.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="51ECGN59sLc" role="3LEDUa">
+          <ref role="3LEDTV" node="16rWggKnogq" resolve="com.mbeddr.analyses.acsl" />
+        </node>
+        <node concept="3LEDTy" id="51ECGN59sLd" role="3LEDUa">
+          <ref role="3LEDTV" node="16rWggKnuEj" resolve="com.mbeddr.analyses.acsl.assertions.gen" />
+        </node>
+        <node concept="3LEDTy" id="51ECGN59sLe" role="3LEDUa">
+          <ref role="3LEDTV" node="16rWggKnyen" resolve="com.mbeddr.analyses.acsl.cbmc.gen" />
+        </node>
+        <node concept="3LEDTM" id="51ECGN59sLf" role="3LEDUa">
+          <ref role="3LEDTN" node="16rWggKnQuV" resolve="com.mbeddr.analyses.acsl.cbmc.rt" />
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuSOp" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.analyses.sat4j" />
