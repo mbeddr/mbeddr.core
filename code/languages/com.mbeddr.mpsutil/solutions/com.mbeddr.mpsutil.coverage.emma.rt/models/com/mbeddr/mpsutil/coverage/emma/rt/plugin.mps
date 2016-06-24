@@ -178,6 +178,11 @@
       <ref role="33glcW" to="yz3b:7xesQBpJWpf" resolve="coverageInEditor" />
       <ref role="33glcY" to="yz3b:7xesQBpJXuT" resolve="coverageInEditor" />
     </node>
+    <node concept="33gmoH" id="51ECGN58I87" role="2hfSGL">
+      <property role="33g7Lv" value="Show EMMA Deep Coverage Results" />
+      <ref role="33glcW" to="yz3b:7xesQBpJWpf" resolve="coverageInEditor" />
+      <ref role="33glcY" to="yz3b:51ECGN58zsV" resolve="deepCoverageInEditor" />
+    </node>
     <node concept="tT9cl" id="7UjC_TCM0yx" role="2hfP89">
       <ref role="tU$_T" node="4arT0cn_5q8" resolve="EmmaGroup" />
     </node>
