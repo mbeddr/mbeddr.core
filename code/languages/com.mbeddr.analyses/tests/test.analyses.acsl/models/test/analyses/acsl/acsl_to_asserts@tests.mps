@@ -242,7 +242,7 @@
                 <ref role="3cqZAo" node="5OLOS2sTjgp" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjh6" role="37wK5m">
-                <property role="Xl_RC" value="Assert: assertion a &gt; 0" />
+                <property role="Xl_RC" value="Assert: a &gt; 0" />
               </node>
             </node>
           </node>
@@ -529,7 +529,7 @@
                 <ref role="3cqZAo" node="5OLOS2sTjeK" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5OLOS2sTjf7" role="37wK5m">
-                <property role="Xl_RC" value="Assert: assertion a &gt; 0" />
+                <property role="Xl_RC" value="Assert: a &gt; 0" />
               </node>
             </node>
           </node>
