@@ -122,6 +122,9 @@
       <node concept="tCFHf" id="4XCJ8CcVISw" role="ftvYc">
         <ref role="tCJdB" node="4XCJ8CcQ71S" resolve="LiftEmmaCoverageResultsAction" />
       </node>
+      <node concept="tCFHf" id="7n88SMjNcIe" role="ftvYc">
+        <ref role="tCJdB" node="7n88SMjN9Hh" resolve="RefreshEmmaCoverageResultsAction" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="4XCJ8CcQ71S">
@@ -132,7 +135,7 @@
       <node concept="3clFbS" id="4XCJ8CcQ71Y" role="2VODD2">
         <node concept="3clFbF" id="7UjC_TCLWSD" role="3cqZAp">
           <node concept="2YIFZM" id="7UjC_TCLXa9" role="3clFbG">
-            <ref role="37wK5l" to="ft5u:7UjC_TCLTU0" resolve="doLift" />
+            <ref role="37wK5l" to="ft5u:7UjC_TCLTU0" resolve="readCoverageInfoFromFilesAndLift" />
             <ref role="1Pybhc" to="ft5u:1OuY31lb1yb" resolve="CoverageLifter" />
             <node concept="2OqwBi" id="laok7UPARl" role="37wK5m">
               <node concept="2OqwBi" id="laok7UPAKe" role="2Oq$k0">
@@ -185,6 +188,29 @@
     </node>
     <node concept="tT9cl" id="7UjC_TCM0yx" role="2hfP89">
       <ref role="tU$_T" node="4arT0cn_5q8" resolve="EmmaGroup" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="7n88SMjN9Hh">
+    <property role="TrG5h" value="RefreshEmmaCoverageResultsAction" />
+    <property role="2uzpH1" value="Refresh EMMA Coverage Results" />
+    <property role="1WHSii" value="refreshes the EMMA coverage results based on the information from memory and lifts the results into MPS" />
+    <node concept="tnohg" id="7n88SMjN9Hi" role="tncku">
+      <node concept="3clFbS" id="7n88SMjN9Hj" role="2VODD2">
+        <node concept="3clFbF" id="7n88SMjN9Hk" role="3cqZAp">
+          <node concept="2YIFZM" id="7n88SMjNa1z" role="3clFbG">
+            <ref role="37wK5l" to="ft5u:7n88SMjN18K" resolve="refreshLiftedInfo" />
+            <ref role="1Pybhc" to="ft5u:1OuY31lb1yb" resolve="CoverageLifter" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S4$dB" id="7n88SMjN9Hw" role="1NuT2Z">
+      <property role="TrG5h" value="emmaLiftingConfig" />
+      <node concept="3Tm6S6" id="7n88SMjN9Hx" role="1B3o_S" />
+      <node concept="1oajcY" id="7n88SMjN9Hy" role="1oa70y" />
+      <node concept="3Tqbb2" id="7n88SMjN9Hz" role="1tU5fm">
+        <ref role="ehGHo" to="gjsh:laok7UOVO_" resolve="EmmaLiftingConfig" />
+      </node>
     </node>
   </node>
 </model>
