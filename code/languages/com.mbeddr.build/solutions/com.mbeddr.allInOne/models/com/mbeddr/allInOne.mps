@@ -137,7 +137,7 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.allInOne" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -152,6 +152,9 @@
     </node>
     <node concept="m$_wf" id="3Cx6vuJncJb" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.allInOne.build" />
+      <node concept="m$_yB" id="IW6Povi5WB" role="m$_yh">
+        <ref role="m$_yA" node="IW6Povi5V3" resolve="com.mbeddr.allInOne" />
+      </node>
       <node concept="2pNNFK" id="3Cx6vuJnfM3" role="20twgj">
         <property role="2pNNFO" value="depends" />
         <node concept="3o6iSG" id="3Cx6vuJnfM5" role="3o6s8t">
@@ -232,9 +235,6 @@
       </node>
       <node concept="m$_yC" id="7r9Pn8Ywp5U" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:5dchr4Qj2b3" resolve="com.mbeddr.build" />
-      </node>
-      <node concept="m$_yB" id="IW6Povi5WB" role="m$_yh">
-        <ref role="m$_yA" node="IW6Povi5V3" resolve="com.mbeddr.allInOne" />
       </node>
     </node>
     <node concept="1E1JtA" id="IW6Povi5V3" role="3989C9">

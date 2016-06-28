@@ -8,7 +8,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="0" />
+    <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="-1" />
   </languages>
   <imports>
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
@@ -332,7 +332,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9GlD" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -1145,7 +1145,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9Gly" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9Glz" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -1218,6 +1218,21 @@
     <node concept="1zClus" id="5msqZjqQCeD" role="3989C9">
       <property role="2OjLBL" value="0" />
       <property role="2OjLBK" value="1" />
+      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
+        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
+          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
+        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
+          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
+        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
+          <property role="3MwjfP" value="http://www.mbeddr.com" />
+        </node>
+      </node>
       <node concept="1zDKOm" id="2TPq_95o$4f" role="2Etnp4">
         <node concept="3_J27D" id="2TPq_95o$cq" role="2EtnoL">
           <node concept="3Mxwew" id="2TPq_95oAM8" role="3MwsjC">
@@ -1342,21 +1357,6 @@
           </node>
         </node>
       </node>
-      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
-        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
-          <property role="3MwjfP" value="http://www.mbeddr.com" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
-        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
-          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
-        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
-          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
-        </node>
-      </node>
     </node>
     <node concept="55IIr" id="505a8HIkc0H" role="auvoZ" />
     <node concept="1l3spV" id="505a8HIkc0I" role="1l3spN">
@@ -1389,7 +1389,7 @@
     </node>
     <node concept="2_Ic$z" id="AyMfzoGqLn" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="AyMfzoGqLo" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -3298,7 +3298,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="2sgV4H" id="1BPeV_LjXr_" role="1l3spa">
       <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />

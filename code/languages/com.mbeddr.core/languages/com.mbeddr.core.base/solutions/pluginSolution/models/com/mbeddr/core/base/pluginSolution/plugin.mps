@@ -2186,31 +2186,27 @@
           <node concept="3cpWsn" id="7uLL3Mf2DgL" role="3cpWs9">
             <property role="TrG5h" value="path" />
             <node concept="2OqwBi" id="23WougSgwAJ" role="33vP2m">
-              <node concept="2OqwBi" id="23WougSglPq" role="2Oq$k0">
-                <node concept="2YIFZM" id="23WougSglM4" role="2Oq$k0">
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
-                  <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                </node>
-                <node concept="liA8E" id="23WougSgnCk" role="2OqNvi">
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getBundleHome(jetbrains.mps.vfs.IFile):jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
-                  <node concept="2OqwBi" id="23WougSgs2g" role="37wK5m">
-                    <node concept="1eOMI4" id="23WougSgsXc" role="2Oq$k0">
-                      <node concept="10QFUN" id="23WougSgsXd" role="1eOMHV">
-                        <node concept="2OqwBi" id="23WougSgsX9" role="10QFUP">
-                          <node concept="2WthIp" id="23WougSgsXa" role="2Oq$k0" />
-                          <node concept="1DTwFV" id="23WougSgsXb" role="2OqNvi">
-                            <ref role="2WH_rO" node="7uLL3Mf2_Qy" resolve="module" />
-                          </node>
-                        </node>
-                        <node concept="3uibUv" id="23WougSgt9Y" role="10QFUM">
-                          <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
+              <node concept="2OqwBi" id="3__qLm0Fc66" role="2Oq$k0">
+                <node concept="2OqwBi" id="23WougSgs2g" role="2Oq$k0">
+                  <node concept="1eOMI4" id="23WougSgsXc" role="2Oq$k0">
+                    <node concept="10QFUN" id="23WougSgsXd" role="1eOMHV">
+                      <node concept="2OqwBi" id="23WougSgsX9" role="10QFUP">
+                        <node concept="2WthIp" id="23WougSgsXa" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="23WougSgsXb" role="2OqNvi">
+                          <ref role="2WH_rO" node="7uLL3Mf2_Qy" resolve="module" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="liA8E" id="23WougSguHy" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~AbstractModule.getDescriptorFile():jetbrains.mps.vfs.IFile" resolve="getDescriptorFile" />
+                      <node concept="3uibUv" id="23WougSgt9Y" role="10QFUM">
+                        <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
+                      </node>
                     </node>
                   </node>
+                  <node concept="liA8E" id="23WougSguHy" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getDescriptorFile():jetbrains.mps.vfs.IFile" resolve="getDescriptorFile" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3__qLm0FcmS" role="2OqNvi">
+                  <ref role="37wK5l" to="3ju5:~IFile.getBundleHome():jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
                 </node>
               </node>
               <node concept="liA8E" id="23WougSgxs1" role="2OqNvi">

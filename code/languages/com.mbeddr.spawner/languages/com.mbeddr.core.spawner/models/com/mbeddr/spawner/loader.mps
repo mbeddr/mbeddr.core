@@ -143,6 +143,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -303,16 +304,23 @@
       <node concept="3Tm1VV" id="3wED9Ce43ta" role="1B3o_S" />
       <node concept="3cqZAl" id="3wED9Ce43tb" role="3clF45" />
       <node concept="3clFbS" id="3wED9Ce43tc" role="3clF47">
-        <node concept="3clFbF" id="3wED9Ce4$lt" role="3cqZAp">
-          <node concept="2OqwBi" id="3wED9Ce4$lK" role="3clFbG">
-            <node concept="2YIFZM" id="3wED9Ce4$lQ" role="2Oq$k0">
-              <ref role="37wK5l" to="32g5:~LibraryInitializer.getInstance():jetbrains.mps.library.LibraryInitializer" resolve="getInstance" />
+        <node concept="3clFbF" id="7i$bSHKwrfz" role="3cqZAp">
+          <node concept="2OqwBi" id="7i$bSHKwxmi" role="3clFbG">
+            <node concept="2YIFZM" id="7i$bSHKwrf_" role="2Oq$k0">
               <ref role="1Pybhc" to="32g5:~LibraryInitializer" resolve="LibraryInitializer" />
+              <ref role="37wK5l" to="32g5:~LibraryInitializer.getInstance():jetbrains.mps.library.LibraryInitializer" resolve="getInstance" />
             </node>
-            <node concept="liA8E" id="3wED9Ce4$lT" role="2OqNvi">
-              <ref role="37wK5l" to="32g5:~LibraryInitializer.addContributor(jetbrains.mps.library.contributor.LibraryContributor):void" resolve="addContributor" />
-              <node concept="37vLTw" id="1o_$mJE5Ysz" role="37wK5m">
-                <ref role="3cqZAo" node="3wED9Ce4$m3" resolve="myContributor" />
+            <node concept="liA8E" id="7i$bSHKwxGb" role="2OqNvi">
+              <ref role="37wK5l" to="32g5:~LibraryInitializer.load(java.util.List):void" resolve="load" />
+              <node concept="2YIFZM" id="7i$bSHKwxLg" role="37wK5m">
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                <node concept="37vLTw" id="7i$bSHKwxNQ" role="37wK5m">
+                  <ref role="3cqZAo" node="3wED9Ce4$m3" resolve="myContributor" />
+                </node>
+                <node concept="3uibUv" id="7i$bSHKw_c9" role="3PaCim">
+                  <ref role="3uigEE" to="je6q:~LibraryContributor" resolve="LibraryContributor" />
+                </node>
               </node>
             </node>
           </node>
@@ -327,16 +335,23 @@
       <node concept="3Tm1VV" id="3wED9Ce43te" role="1B3o_S" />
       <node concept="3cqZAl" id="3wED9Ce43tf" role="3clF45" />
       <node concept="3clFbS" id="3wED9Ce43tg" role="3clF47">
-        <node concept="3clFbF" id="3wED9Ce4$me" role="3cqZAp">
-          <node concept="2OqwBi" id="3wED9Ce4$mf" role="3clFbG">
-            <node concept="2YIFZM" id="3wED9Ce4$mg" role="2Oq$k0">
+        <node concept="3clFbF" id="7i$bSHKwycS" role="3cqZAp">
+          <node concept="2OqwBi" id="7i$bSHKwyoS" role="3clFbG">
+            <node concept="2YIFZM" id="7i$bSHKwycU" role="2Oq$k0">
               <ref role="37wK5l" to="32g5:~LibraryInitializer.getInstance():jetbrains.mps.library.LibraryInitializer" resolve="getInstance" />
               <ref role="1Pybhc" to="32g5:~LibraryInitializer" resolve="LibraryInitializer" />
             </node>
-            <node concept="liA8E" id="3wED9Ce4$mh" role="2OqNvi">
-              <ref role="37wK5l" to="32g5:~LibraryInitializer.removeContributor(jetbrains.mps.library.contributor.LibraryContributor):void" resolve="removeContributor" />
-              <node concept="37vLTw" id="1o_$mJE5Ysx" role="37wK5m">
-                <ref role="3cqZAo" node="3wED9Ce4$m3" resolve="myContributor" />
+            <node concept="liA8E" id="7i$bSHKwyIL" role="2OqNvi">
+              <ref role="37wK5l" to="32g5:~LibraryInitializer.unload(java.util.List):void" resolve="unload" />
+              <node concept="2YIFZM" id="7i$bSHKw_o$" role="37wK5m">
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <node concept="37vLTw" id="7i$bSHKw_o_" role="37wK5m">
+                  <ref role="3cqZAo" node="3wED9Ce4$m3" resolve="myContributor" />
+                </node>
+                <node concept="3uibUv" id="7i$bSHKw_oA" role="3PaCim">
+                  <ref role="3uigEE" to="je6q:~LibraryContributor" resolve="LibraryContributor" />
+                </node>
               </node>
             </node>
           </node>
@@ -489,9 +504,18 @@
                         </node>
                         <node concept="2ShNRf" id="3wED9Ce4eO8" role="2HTEbv">
                           <node concept="1pGfFk" id="3wED9Ce4eO9" role="2ShVmc">
-                            <ref role="37wK5l" to="je6q:~LibDescriptor.&lt;init&gt;(java.lang.String,java.lang.ClassLoader)" resolve="LibDescriptor" />
-                            <node concept="37vLTw" id="1o_$mJE5YtY" role="37wK5m">
-                              <ref role="3cqZAo" node="3wED9Ce4eNC" resolve="libraryPath" />
+                            <ref role="37wK5l" to="je6q:~LibDescriptor.&lt;init&gt;(jetbrains.mps.vfs.IFile,java.lang.ClassLoader)" resolve="LibDescriptor" />
+                            <node concept="2OqwBi" id="1SIjlRrBQuI" role="37wK5m">
+                              <node concept="2YIFZM" id="1SIjlRrBPV_" role="2Oq$k0">
+                                <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
+                                <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
+                              </node>
+                              <node concept="liA8E" id="1SIjlRrBRaF" role="2OqNvi">
+                                <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFile" />
+                                <node concept="37vLTw" id="1SIjlRrBRHz" role="37wK5m">
+                                  <ref role="3cqZAo" node="3wED9Ce4eNC" resolve="libraryPath" />
+                                </node>
+                              </node>
                             </node>
                             <node concept="37vLTw" id="1o_$mJE5Ys_" role="37wK5m">
                               <ref role="3cqZAo" node="3wED9Ce4g_w" resolve="myClassloader" />

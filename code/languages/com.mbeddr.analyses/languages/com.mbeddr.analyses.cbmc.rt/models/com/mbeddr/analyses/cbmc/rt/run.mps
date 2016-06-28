@@ -217,7 +217,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7561,8 +7561,8 @@
       <node concept="3clFbS" id="p7QU0IXBOk" role="3clF47">
         <node concept="3clFbF" id="p7QU0IXBOl" role="3cqZAp">
           <node concept="2YIFZM" id="p7QU0IXBOm" role="3clFbG">
-            <ref role="37wK5l" to="q9jj:7$8IbnDjXjW" resolve="logStatus" />
             <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="MbeddrLogger" />
+            <ref role="37wK5l" to="q9jj:7$8IbnDjXjW" resolve="logStatus" />
             <node concept="3VsKOn" id="p7QU0IXBOn" role="37wK5m">
               <ref role="3VsUkX" node="3T2UJ1pSoYT" resolve="CProverToolRunnerManager" />
             </node>

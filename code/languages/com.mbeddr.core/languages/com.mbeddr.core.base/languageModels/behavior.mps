@@ -6422,21 +6422,17 @@
               <node concept="3clFbS" id="1M11zW0wBTl" role="3clFbx">
                 <node concept="3cpWs6" id="1M11zW0wCxq" role="3cqZAp">
                   <node concept="2OqwBi" id="1M11zW0wDZo" role="3cqZAk">
-                    <node concept="2OqwBi" id="1M11zW0wDTN" role="2Oq$k0">
-                      <node concept="2YIFZM" id="1M11zW0wDTO" role="2Oq$k0">
-                        <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                        <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
-                      </node>
-                      <node concept="liA8E" id="1M11zW0wDTP" role="2OqNvi">
-                        <ref role="37wK5l" to="3ju5:~FileSystem.getBundleHome(jetbrains.mps.vfs.IFile):jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
-                        <node concept="2OqwBi" id="1M11zW0wDTQ" role="37wK5m">
-                          <node concept="37vLTw" id="1M11zW0wDTR" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
-                          </node>
-                          <node concept="liA8E" id="1M11zW0wDTS" role="2OqNvi">
-                            <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
-                          </node>
+                    <node concept="2OqwBi" id="3__qLm0DvYZ" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1M11zW0wDTQ" role="2Oq$k0">
+                        <node concept="37vLTw" id="1M11zW0wDTR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
                         </node>
+                        <node concept="liA8E" id="1M11zW0wDTS" role="2OqNvi">
+                          <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3__qLm0DwkS" role="2OqNvi">
+                        <ref role="37wK5l" to="3ju5:~IFile.getBundleHome():jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1M11zW0wE7n" role="2OqNvi">
@@ -6455,24 +6451,20 @@
                   </node>
                 </node>
                 <node concept="3y3z36" id="1M11zW0wDIe" role="3uHU7w">
-                  <node concept="10Nm6u" id="1M11zW0wDNM" role="3uHU7w" />
-                  <node concept="2OqwBi" id="1M11zW0wCWe" role="3uHU7B">
-                    <node concept="2YIFZM" id="1M11zW0wCSf" role="2Oq$k0">
-                      <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                      <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
-                    </node>
-                    <node concept="liA8E" id="1M11zW0wD17" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~FileSystem.getBundleHome(jetbrains.mps.vfs.IFile):jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
-                      <node concept="2OqwBi" id="1M11zW0wDdK" role="37wK5m">
-                        <node concept="37vLTw" id="1M11zW0wD8O" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
-                        </node>
-                        <node concept="liA8E" id="1M11zW0wDx0" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
-                        </node>
+                  <node concept="2OqwBi" id="3__qLm0DvuR" role="3uHU7B">
+                    <node concept="2OqwBi" id="1M11zW0wDdK" role="2Oq$k0">
+                      <node concept="37vLTw" id="1M11zW0wD8O" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4Wn4fzjJqF2" resolve="s" />
+                      </node>
+                      <node concept="liA8E" id="1M11zW0wDx0" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
                       </node>
                     </node>
+                    <node concept="liA8E" id="3__qLm0DvBo" role="2OqNvi">
+                      <ref role="37wK5l" to="3ju5:~IFile.getBundleHome():jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
+                    </node>
                   </node>
+                  <node concept="10Nm6u" id="1M11zW0wDNM" role="3uHU7w" />
                 </node>
               </node>
             </node>
