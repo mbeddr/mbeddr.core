@@ -3348,18 +3348,24 @@
                             <node concept="3clFbJ" id="7RBgWEJcqH7" role="3cqZAp">
                               <node concept="3clFbS" id="7RBgWEJcqH9" role="3clFbx">
                                 <node concept="3clFbF" id="7RBgWEJcqHF" role="3cqZAp">
-                                  <node concept="2YIFZM" id="7RBgWEJcqIx" role="3clFbG">
-                                    <ref role="37wK5l" to="uipx:3kLBXRrt361" resolve="displayErrorDialog" />
+                                  <node concept="2YIFZM" id="6BowXlDxSD4" role="3clFbG">
+                                    <ref role="37wK5l" to="uipx:6BowXlDxMWP" resolve="displayLongErrorDialog" />
                                     <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
-                                    <node concept="Xl_RD" id="7RBgWEJcqFj" role="37wK5m">
+                                    <node concept="Xl_RD" id="6BowXlDxSD5" role="37wK5m">
                                       <property role="Xl_RC" value="Fatal Error while Running CBMC!" />
                                     </node>
-                                    <node concept="NRdvd" id="7RBgWEJcqEd" role="37wK5m">
+                                    <node concept="NRdvd" id="6BowXlDxSD6" role="37wK5m">
                                       <ref role="1Pybhc" node="3FEqw8GYAfT" resolve="ErrorMessageUtils" />
                                       <ref role="37wK5l" node="3FEqw8GYAlY" resolve="computeErrorMessage" />
-                                      <node concept="37vLTw" id="7RBgWEJcqEh" role="37wK5m">
+                                      <node concept="37vLTw" id="6BowXlDxSD7" role="37wK5m">
                                         <ref role="3cqZAo" node="7RBgWEJcqGX" resolve="result" />
                                       </node>
+                                    </node>
+                                    <node concept="3cmrfG" id="6BowXlDL4wZ" role="37wK5m">
+                                      <property role="3cmrfH" value="800" />
+                                    </node>
+                                    <node concept="3cmrfG" id="6BowXlDL4OT" role="37wK5m">
+                                      <property role="3cmrfH" value="200" />
                                     </node>
                                   </node>
                                 </node>
@@ -3378,16 +3384,16 @@
                             <node concept="3clFbJ" id="7RBgWEJcqIh" role="3cqZAp">
                               <node concept="3clFbS" id="7RBgWEJcqHX" role="3clFbx">
                                 <node concept="3clFbF" id="7RBgWEJcqEj" role="3cqZAp">
-                                  <node concept="2YIFZM" id="7RBgWEJcqEf" role="3clFbG">
+                                  <node concept="2YIFZM" id="6BowXlDH671" role="3clFbG">
                                     <ref role="37wK5l" to="uipx:3kLBXRrt361" resolve="displayErrorDialog" />
                                     <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
-                                    <node concept="Xl_RD" id="7RBgWEJcqE9" role="37wK5m">
+                                    <node concept="Xl_RD" id="6BowXlDH672" role="37wK5m">
                                       <property role="Xl_RC" value="Incomplete Analysis" />
                                     </node>
-                                    <node concept="NRdvd" id="7RBgWEJcqF5" role="37wK5m">
+                                    <node concept="NRdvd" id="6BowXlDH673" role="37wK5m">
                                       <ref role="1Pybhc" node="3FEqw8GYAfT" resolve="ErrorMessageUtils" />
                                       <ref role="37wK5l" node="3FEqw8GYAlY" resolve="computeErrorMessage" />
-                                      <node concept="37vLTw" id="7RBgWEJcqFd" role="37wK5m">
+                                      <node concept="37vLTw" id="6BowXlDH674" role="37wK5m">
                                         <ref role="3cqZAo" node="7RBgWEJcqGX" resolve="result" />
                                       </node>
                                     </node>
@@ -9022,36 +9028,41 @@
           <node concept="3clFbS" id="3FEqw8GYEgR" role="3clFbx">
             <node concept="3clFbF" id="3FEqw8GYVr0" role="3cqZAp">
               <node concept="37vLTI" id="3FEqw8GYVr2" role="3clFbG">
-                <node concept="3cpWs3" id="3FEqw8GYUgu" role="37vLTx">
-                  <node concept="3cpWs3" id="3FEqw8GYTRq" role="3uHU7B">
-                    <node concept="3cpWs3" id="3FEqw8GYTpn" role="3uHU7B">
-                      <node concept="3cpWs3" id="3FEqw8GYSVX" role="3uHU7B">
-                        <node concept="Xl_RD" id="3FEqw8GYSPr" role="3uHU7B">
-                          <property role="Xl_RC" value="Most likely causes are:\n" />
-                        </node>
-                        <node concept="Xl_RD" id="3FEqw8GYSWN" role="3uHU7w">
-                          <property role="Xl_RC" value="\t 1) the C-code was not generated correctly;\n" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="3FEqw8GYTvD" role="3uHU7w">
-                        <property role="Xl_RC" value="\t 2) there was a problem with the configuration of the analysis tool (e.g. VCC/GCC not installed, 'cbmc' cannot be found).\n\n" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="3FEqw8GYTY8" role="3uHU7w">
-                      <property role="Xl_RC" value="'cbmc' returned the following error:\n" />
-                    </node>
+                <node concept="3cpWs3" id="6BowXlDD5q$" role="37vLTx">
+                  <node concept="Xl_RD" id="6BowXlDD5yo" role="3uHU7w">
+                    <property role="Xl_RC" value="&lt;/html&gt;" />
                   </node>
-                  <node concept="2OqwBi" id="3FEqw8GYEgX" role="3uHU7w">
-                    <node concept="2OqwBi" id="3FEqw8GYEgY" role="2Oq$k0">
-                      <node concept="37vLTw" id="3FEqw8GYGV1" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3FEqw8GYAmk" resolve="res" />
+                  <node concept="3cpWs3" id="3FEqw8GYUgu" role="3uHU7B">
+                    <node concept="3cpWs3" id="3FEqw8GYTRq" role="3uHU7B">
+                      <node concept="3cpWs3" id="3FEqw8GYTpn" role="3uHU7B">
+                        <node concept="3cpWs3" id="3FEqw8GYSVX" role="3uHU7B">
+                          <node concept="Xl_RD" id="3FEqw8GYSPr" role="3uHU7B">
+                            <property role="Xl_RC" value="&lt;html&gt;Most &lt;b&gt;likely causes&lt;/b&gt; are:&lt;br/&gt; &lt;ol type=\&quot;1\&quot;&gt;" />
+                          </node>
+                          <node concept="Xl_RD" id="3FEqw8GYSWN" role="3uHU7w">
+                            <property role="Xl_RC" value="&lt;li&gt;the C-code was not generated correctly;&lt;/li&gt;" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="3FEqw8GYTvD" role="3uHU7w">
+                          <property role="Xl_RC" value="&lt;li&gt;there was a problem with the analysis tool (e.g. VCC/GCC not installed, 'cbmc' cannot be found).&lt;/li&gt;&lt;/ol&gt;" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="3FEqw8GYEh0" role="2OqNvi">
-                        <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
+                      <node concept="Xl_RD" id="3FEqw8GYTY8" role="3uHU7w">
+                        <property role="Xl_RC" value="&lt;b&gt;'cbmc'&lt;/b&gt; returned the following error:&lt;br/&gt;" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="3FEqw8GYEh1" role="2OqNvi">
-                      <ref role="37wK5l" to="rbq9:5bSnXVJUYDE" resolve="getMessage" />
+                    <node concept="2OqwBi" id="3FEqw8GYEgX" role="3uHU7w">
+                      <node concept="2OqwBi" id="3FEqw8GYEgY" role="2Oq$k0">
+                        <node concept="37vLTw" id="3FEqw8GYGV1" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3FEqw8GYAmk" resolve="res" />
+                        </node>
+                        <node concept="liA8E" id="3FEqw8GYEh0" role="2OqNvi">
+                          <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3FEqw8GYEh1" role="2OqNvi">
+                        <ref role="37wK5l" to="rbq9:5bSnXVJUYDE" resolve="getMessage" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -9076,10 +9087,10 @@
               <node concept="37vLTI" id="3FEqw8GYWB3" role="3clFbG">
                 <node concept="3cpWs3" id="3FEqw8GYWB7" role="37vLTx">
                   <node concept="Xl_RD" id="3FEqw8GYWB8" role="3uHU7B">
-                    <property role="Xl_RC" value="No simple result (FAIL / SUCCESS)\n" />
+                    <property role="Xl_RC" value="&lt;html&gt;No simple result (&lt;b&gt;FAIL&lt;/b&gt; / &lt;b&gt;SUCCESS&lt;/b&gt;)&lt;br/&gt;" />
                   </node>
                   <node concept="Xl_RD" id="3FEqw8GYWB9" role="3uHU7w">
-                    <property role="Xl_RC" value="\t - try to increase 'loops unwinding' (the analyses will take longer time)\n" />
+                    <property role="Xl_RC" value="Please try to increase &lt;b&gt;'loops unwinding'&lt;/b&gt; (the analyses will take longer time)&lt;/html&gt;" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="3FEqw8GYWBh" role="37vLTJ">
@@ -9103,10 +9114,10 @@
               <node concept="37vLTI" id="3FEqw8GZ3VR" role="3clFbG">
                 <node concept="3cpWs3" id="3FEqw8GZ3VS" role="37vLTx">
                   <node concept="Xl_RD" id="3FEqw8GZ3VT" role="3uHU7B">
-                    <property role="Xl_RC" value="No result could be obtained within the time bounds.\n" />
+                    <property role="Xl_RC" value="&lt;html&gt;No result could be obtained within the time bounds.&lt;br&gt;" />
                   </node>
                   <node concept="Xl_RD" id="3FEqw8GZ3VU" role="3uHU7w">
-                    <property role="Xl_RC" value="\t - try to increase the timeout\n" />
+                    <property role="Xl_RC" value="Please try to increase the &lt;b&gt;timeout&lt;/b&gt;&lt;/html&gt;" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="3FEqw8GZ3VV" role="37vLTJ">
