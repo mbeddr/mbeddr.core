@@ -184,10 +184,14 @@
         <property id="5083944728300729107" name="value" index="yA7Zo" />
       </concept>
       <concept id="2111846799818005528" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.MinusExpression" flags="ng" index="2Iv5lx" />
+      <concept id="4330386229150009025" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.OptionalType" flags="ng" index="WC_Ak">
+        <child id="4330386229150009029" name="type" index="WC_Ag" />
+      </concept>
       <concept id="5465812603479727079" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.TEST_FlagNextToChild" flags="ng" index="34AmLX">
         <property id="5465812603479727090" name="flagA" index="34AmLC" />
         <child id="5465812603479727085" name="childA" index="34AmLR" />
       </concept>
+      <concept id="7363578995839144929" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.StringType" flags="ng" index="1kHqfO" />
       <concept id="7363578995839169017" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.VariableDeclaration" flags="ng" index="1kHs7G">
         <child id="7363578995839169018" name="type" index="1kHs7J" />
         <child id="7363578995839169055" name="initializer" index="1kHs8a" />
@@ -1842,6 +1846,46 @@
         <node concept="yzEQC" id="24ObHxTvm60" role="yzEPe" />
       </node>
       <node concept="2cssZD" id="24ObHxTvm61" role="2cssWm" />
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3KoBPk0NuZD">
+    <property role="TrG5h" value="OptionalType" />
+    <node concept="2cssWn" id="3KoBPk0NuZE" role="LiRBU">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3KoBPk0NuZF" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3KoBPk0NuZG" role="2cssWr">
+          <node concept="WC_Ak" id="3KoBPk0Nv0x" role="2cssZA">
+            <node concept="LIFWc" id="3KoBPk0Nv0U" role="lGtFl">
+              <property role="LIFWa" value="0" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+              <property role="LIFWd" value="Constant_g1jvih_b0" />
+            </node>
+          </node>
+        </node>
+        <node concept="yzEQC" id="3KoBPk0NuZS" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3KoBPk0NuZT" role="2cssWm" />
+    </node>
+    <node concept="2cssWn" id="3KoBPk0NuZU" role="LiZbd">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3KoBPk0NuZV" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3KoBPk0NuZW" role="2cssWr">
+          <node concept="WC_Ak" id="3KoBPk0Nv0Z" role="2cssZA">
+            <node concept="1kHqfO" id="3KoBPk0Nv16" role="WC_Ag" />
+          </node>
+        </node>
+        <node concept="yzEQC" id="3KoBPk0Nv00" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3KoBPk0Nv01" role="2cssWm" />
+    </node>
+    <node concept="3clFbS" id="3KoBPk0Nv02" role="LjaKd">
+      <node concept="2TK7Tu" id="3KoBPk0Nv6j" role="3cqZAp">
+        <property role="2TTd_B" value="string" />
+      </node>
     </node>
   </node>
 </model>

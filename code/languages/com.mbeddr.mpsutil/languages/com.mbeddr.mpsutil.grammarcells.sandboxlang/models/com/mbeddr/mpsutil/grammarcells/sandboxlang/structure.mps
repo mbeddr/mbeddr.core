@@ -542,5 +542,19 @@
       <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3KoBPk0IGr1">
+    <property role="1pbfSe" value="1020487190" />
+    <property role="TrG5h" value="OptionalType" />
+    <property role="34LRSv" value="optionalType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3KoBPk0IGr5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="1x69Amke5PV" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="3KoBPk0IGr2" role="PzmwI">
+      <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
+    </node>
+  </node>
 </model>
 
