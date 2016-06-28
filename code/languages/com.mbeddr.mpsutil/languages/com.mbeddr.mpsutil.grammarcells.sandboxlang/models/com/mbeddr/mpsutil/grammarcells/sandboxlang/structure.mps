@@ -556,5 +556,39 @@
       <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
     </node>
   </node>
+  <node concept="AxPO7" id="3KoBPk0O2EF">
+    <property role="TrG5h" value="Unit" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="3KoBPk0O2EG" role="M5hS2">
+      <property role="1uS6qo" value="m" />
+      <property role="1uS6qv" value="m" />
+    </node>
+    <node concept="M4N5e" id="3KoBPk0O2EH" role="M5hS2">
+      <property role="1uS6qo" value="s" />
+      <property role="1uS6qv" value="s" />
+    </node>
+    <node concept="M4N5e" id="3KoBPk0O2EM" role="M5hS2">
+      <property role="1uS6qo" value="kg" />
+      <property role="1uS6qv" value="kg" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3KoBPk0O2ET">
+    <property role="1pbfSe" value="1021889038" />
+    <property role="TrG5h" value="UnitExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3KoBPk0O2F0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+    <node concept="1TJgyi" id="3KoBPk0O2EX" role="1TKVEl">
+      <property role="TrG5h" value="unit" />
+      <ref role="AX2Wp" node="3KoBPk0O2EF" resolve="Unit" />
+    </node>
+    <node concept="PrWs8" id="3KoBPk0O2EU" role="PzmwI">
+      <ref role="PrY4T" node="6oKG1kMxn8A" resolve="IExpression" />
+    </node>
+  </node>
 </model>
 
