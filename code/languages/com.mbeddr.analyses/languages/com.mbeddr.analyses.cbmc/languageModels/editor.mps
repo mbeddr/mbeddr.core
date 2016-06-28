@@ -220,6 +220,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -5939,6 +5940,34 @@
                   <node concept="pncrf" id="7kzfSagLnpZ" role="37wK5m" />
                 </node>
               </node>
+              <node concept="3clFbJ" id="6BowXlDtoMd" role="3cqZAp">
+                <node concept="3clFbS" id="6BowXlDtoMe" role="3clFbx">
+                  <node concept="3cpWs6" id="6BowXlDtoMf" role="3cqZAp">
+                    <node concept="2ShNRf" id="6BowXlDtoMg" role="3cqZAk">
+                      <node concept="1pGfFk" id="6BowXlDtoMh" role="2ShVmc">
+                        <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
+                        <node concept="pncrf" id="6BowXlDtoMi" role="37wK5m" />
+                        <node concept="10M0yZ" id="6BowXlDtoMj" role="37wK5m">
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                          <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
+                        </node>
+                        <node concept="3cmrfG" id="6BowXlDtoMk" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="3cmrfG" id="6BowXlDtoMl" role="37wK5m">
+                          <property role="3cmrfH" value="5" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="6BowXlDtEqh" role="3clFbw">
+                  <ref role="37wK5l" to="6ae5:6BowXlDtp5f" resolve="hasCanceled" />
+                  <ref role="1Pybhc" to="6ae5:3ASzZs53yn9" resolve="AnalysesResultsCache" />
+                  <node concept="pncrf" id="6BowXlDtEqi" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6BowXlDtoIl" role="3cqZAp" />
               <node concept="3clFbF" id="AzX4JmAr6c" role="3cqZAp">
                 <node concept="2ShNRf" id="AzX4JmAr6d" role="3clFbG">
                   <node concept="1pGfFk" id="AzX4JmAr6e" role="2ShVmc">
