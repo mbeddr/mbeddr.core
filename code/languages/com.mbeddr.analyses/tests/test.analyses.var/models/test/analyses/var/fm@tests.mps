@@ -241,15 +241,15 @@
                   <property role="Xl_RC" value="FAILURE:\nFeature Model MandatoryFeaturesInConflict cannot be instantiated.\n\n" />
                 </node>
                 <node concept="Xl_RD" id="6A4JgbUYs2L" role="3uHU7w">
-                  <property role="Xl_RC" value="DETAILS:\n- Parent: MandatoryFeaturesInConflict_root must have child: mandatoryChild1\n" />
+                  <property role="Xl_RC" value="REASON:\n\t- Parent: MandatoryFeaturesInConflict_root must have child: mandatoryChild1\n" />
                 </node>
               </node>
               <node concept="Xl_RD" id="6A4JgbUYsbZ" role="3uHU7w">
-                <property role="Xl_RC" value="- Parent: MandatoryFeaturesInConflict_root must have child: mandatoryChild2\n" />
+                <property role="Xl_RC" value="\t- Parent: MandatoryFeaturesInConflict_root must have child: mandatoryChild2\n" />
               </node>
             </node>
             <node concept="Xl_RD" id="6A4JgbUYsc1" role="3uHU7w">
-              <property role="Xl_RC" value="- Feature: mandatoryChild2 conflicts with feature: mandatoryChild1\n" />
+              <property role="Xl_RC" value="\t- Feature: mandatoryChild2 conflicts with feature: mandatoryChild1\n" />
             </node>
           </node>
           <node concept="2OqwBi" id="6A4JgbUYrx4" role="3tpDZA">
