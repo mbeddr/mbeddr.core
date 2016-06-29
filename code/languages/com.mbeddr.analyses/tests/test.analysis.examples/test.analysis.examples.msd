@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
+    <dependency reexport="false">094b2842-e972-4406-b60e-898cdcdb9de5(test.analyses.cbmc.testcode)</dependency>
   </dependencies>
   <languageVersions>
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" fqName="com.mbeddr.analyses.base" version="0" />
@@ -63,6 +64,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
+    <module reference="094b2842-e972-4406-b60e-898cdcdb9de5(test.analyses.cbmc.testcode)" version="0" />
     <module reference="6b202e43-bd05-470f-a0ed-3694c312be88(test.analysis.examples)" version="0" />
   </dependencyVersions>
 </solution>

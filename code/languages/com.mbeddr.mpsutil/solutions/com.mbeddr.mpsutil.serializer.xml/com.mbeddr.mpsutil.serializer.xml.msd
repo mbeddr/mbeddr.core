@@ -5,7 +5,7 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot path="${module}/lib/jdom2-2.0.6.jar" />
+      <sourceRoot location="jdom2-2.0.6.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib/lib" type="java_classes">
       <sourceRoot location="jaxen-1.1.6.jar" />

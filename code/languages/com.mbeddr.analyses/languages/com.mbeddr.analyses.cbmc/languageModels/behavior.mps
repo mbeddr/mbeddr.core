@@ -2699,5 +2699,58 @@
       <node concept="3clFbS" id="fupCado0G" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="24_rWT3okuz">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="13h7C2" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+    <node concept="13i0hz" id="v5nKjVRSip" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getIDEDisplayString" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="hwgx:IviauXb0g" resolve="getIDEDisplayString" />
+      <node concept="3Tm1VV" id="v5nKjVRSiq" role="1B3o_S" />
+      <node concept="3clFbS" id="v5nKjVRSit" role="3clF47">
+        <node concept="3clFbF" id="v5nKjVRSri" role="3cqZAp">
+          <node concept="Xl_RD" id="v5nKjVRSrh" role="3clFbG">
+            <property role="Xl_RC" value="Analyses Configuration for CBMC" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="v5nKjVRSiu" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="v5nKjVRSiv" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <node concept="3Tm1VV" id="v5nKjVRSiw" role="1B3o_S" />
+      <node concept="3clFbS" id="v5nKjVRSiz" role="3clF47">
+        <node concept="3clFbF" id="v5nKjVRSpX" role="3cqZAp">
+          <node concept="Xl_RD" id="v5nKjVRSpW" role="3clFbG">
+            <property role="Xl_RC" value="Analysis" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="v5nKjVRSi$" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="v5nKjVRSi_" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSortOrder" />
+      <ref role="13i0hy" to="hwgx:1uL8CIs6rGR" resolve="getSortOrder" />
+      <node concept="3Tm1VV" id="v5nKjVRSiA" role="1B3o_S" />
+      <node concept="3clFbS" id="v5nKjVRSiD" role="3clF47">
+        <node concept="3clFbF" id="v5nKjVRSpq" role="3cqZAp">
+          <node concept="3cmrfG" id="v5nKjVRSpp" role="3clFbG">
+            <property role="3cmrfH" value="100" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="v5nKjVRSiE" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="24_rWT3oku$" role="13h7CW">
+      <node concept="3clFbS" id="24_rWT3oku_" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

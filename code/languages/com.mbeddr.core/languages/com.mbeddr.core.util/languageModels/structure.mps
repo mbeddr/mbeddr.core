@@ -1576,5 +1576,30 @@
     <property role="1pbfSe" value="399627092" />
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
   </node>
+  <node concept="1TIwiD" id="kOmZ6sSkEG">
+    <property role="1pbfSe" value="1575639395" />
+    <property role="TrG5h" value="GenStructPrintFunction" />
+    <property role="3GE5qa" value="genStructPrint" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="kOmZ6sSkEH" role="lGtFl">
+      <property role="Hh88m" value="genStructPrintFunction" />
+      <node concept="trNpa" id="kOmZ6sYFz8" role="EQaZv">
+        <ref role="trN6q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="kOmZ6trHyq">
+    <property role="1pbfSe" value="1566362485" />
+    <property role="3GE5qa" value="genStructPrint" />
+    <property role="TrG5h" value="DumpStruct" />
+    <property role="34LRSv" value="dumpStruct" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="kOmZ6trHyr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

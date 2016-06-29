@@ -41,6 +41,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -7851,6 +7852,42 @@
     </node>
     <node concept="13hLZK" id="1EZSCJhUmLn" role="13h7CW">
       <node concept="3clFbS" id="1EZSCJhUmLo" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="kOmZ6tdfgr">
+    <property role="3GE5qa" value="genStructPrint" />
+    <ref role="13h7C2" to="k146:kOmZ6sSkEG" resolve="GenStructPrintFunction" />
+    <node concept="13i0hz" id="kOmZ6tdfgu" role="13h7CS">
+      <property role="TrG5h" value="genFunName" />
+      <node concept="3Tm1VV" id="kOmZ6tdfgv" role="1B3o_S" />
+      <node concept="17QB3L" id="kOmZ6tdfgA" role="3clF45" />
+      <node concept="3clFbS" id="kOmZ6tdfgx" role="3clF47">
+        <node concept="3clFbF" id="kOmZ6tdfgE" role="3cqZAp">
+          <node concept="3cpWs3" id="kOmZ6tdfiP" role="3clFbG">
+            <node concept="2OqwBi" id="kOmZ6tdfDj" role="3uHU7w">
+              <node concept="2OqwBi" id="kOmZ6tdflH" role="2Oq$k0">
+                <node concept="13iPFW" id="kOmZ6tdfja" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="kOmZ6tdfvD" role="2OqNvi">
+                  <node concept="1xMEDy" id="kOmZ6tdfvF" role="1xVPHs">
+                    <node concept="chp4Y" id="kOmZ6tdfwc" role="ri$Ld">
+                      <ref role="cht4Q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrcHB" id="kOmZ6tdgnu" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="kOmZ6tdfgD" role="3uHU7B">
+              <property role="Xl_RC" value="print_" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="kOmZ6tdfgs" role="13h7CW">
+      <node concept="3clFbS" id="kOmZ6tdfgt" role="2VODD2" />
     </node>
   </node>
 </model>
