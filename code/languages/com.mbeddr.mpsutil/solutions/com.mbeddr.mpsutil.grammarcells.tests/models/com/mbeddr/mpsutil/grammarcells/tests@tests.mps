@@ -191,6 +191,9 @@
         <property id="4330386229151410877" name="unit" index="WMbnC" />
         <child id="4330386229151410880" name="expression" index="WMbml" />
       </concept>
+      <concept id="4330386229156360835" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.OptionalProperty" flags="ng" index="X0MRm">
+        <property id="4330386229156360842" name="intProperty" index="X0MRv" />
+      </concept>
       <concept id="5465812603479727079" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.TEST_FlagNextToChild" flags="ng" index="34AmLX">
         <property id="5465812603479727090" name="flagA" index="34AmLC" />
         <child id="5465812603479727085" name="childA" index="34AmLR" />
@@ -1943,6 +1946,46 @@
     <node concept="3clFbS" id="3KoBPk16TxL" role="LjaKd">
       <node concept="2TK7Tu" id="3KoBPk16TxM" role="3cqZAp">
         <property role="2TTd_B" value="kg" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5AkACHrY8cN">
+    <property role="TrG5h" value="OptionalProperty" />
+    <node concept="2cssWn" id="5AkACHrY8cO" role="LiRBU">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="5AkACHrY8cP" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="5AkACHrY8cQ" role="2cssWr">
+          <node concept="X0MRm" id="5AkACHrY8d4" role="2cssZA">
+            <node concept="LIFWc" id="5AkACHrY8dg" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="16" />
+              <property role="p6zMs" value="16" />
+              <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+            </node>
+          </node>
+        </node>
+        <node concept="yzEQC" id="5AkACHrY8cT" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="5AkACHrY8cU" role="2cssWm" />
+    </node>
+    <node concept="2cssWn" id="5AkACHrY8cV" role="LiZbd">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="5AkACHrY8cW" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="5AkACHrY8cX" role="2cssWr">
+          <node concept="X0MRm" id="5AkACHrY8da" role="2cssZA">
+            <property role="X0MRv" value="1" />
+          </node>
+        </node>
+        <node concept="yzEQC" id="5AkACHrY8d0" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="5AkACHrY8d1" role="2cssWm" />
+    </node>
+    <node concept="3clFbS" id="5AkACHrY8d2" role="LjaKd">
+      <node concept="2TK7Tu" id="5AkACHrY8d3" role="3cqZAp">
+        <property role="2TTd_B" value="[1" />
       </node>
     </node>
   </node>

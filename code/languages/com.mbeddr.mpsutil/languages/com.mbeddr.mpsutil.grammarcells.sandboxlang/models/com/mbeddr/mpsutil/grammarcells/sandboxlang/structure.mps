@@ -590,5 +590,18 @@
       <ref role="PrY4T" node="6oKG1kMxn8A" resolve="IExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3KoBPk16Va3">
+    <property role="1pbfSe" value="1026839000" />
+    <property role="TrG5h" value="OptionalProperty" />
+    <property role="34LRSv" value="optionalProperty" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3KoBPk16Vaa" role="1TKVEl">
+      <property role="TrG5h" value="intProperty" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="3KoBPk16Vak" role="PzmwI">
+      <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
+    </node>
+  </node>
 </model>
 
