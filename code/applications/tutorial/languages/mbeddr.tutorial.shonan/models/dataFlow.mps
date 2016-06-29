@@ -335,7 +335,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="6FYQ8H5Nc_1">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <ref role="3_znuS" to="5l2n:yso5_bvi9M" resolve="StencilComputationElementReference" />
     <node concept="3__wT9" id="6FYQ8H5Nc_2" role="3_A6iZ">
       <node concept="3clFbS" id="6FYQ8H5Nc_3" role="2VODD2">
@@ -367,7 +367,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="6FYQ8H5N9cC">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <ref role="3_znuS" to="5l2n:yso5_brSDa" resolve="StencilComputation" />
     <node concept="3__wT9" id="6FYQ8H5N9cD" role="3_A6iZ">
       <node concept="3clFbS" id="6FYQ8H5N9cE" role="2VODD2">

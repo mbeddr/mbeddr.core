@@ -10,7 +10,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5l2n" ref="r:693b7f2c-c614-45fe-9adb-809539ce09a8(mbeddr.tutorial.shonan.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -389,75 +388,6 @@
         <node concept="3clFbF" id="jX_qhzt7lU" role="3cqZAp">
           <node concept="Xl_RD" id="jX_qhzt7lT" role="3clFbG">
             <property role="Xl_RC" value="Flip Dimensions" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="46CZjbPQS9D">
-    <property role="TrG5h" value="ShiftAttribute_ToogleAnnotation" />
-    <property role="3GE5qa" value="stencil" />
-    <ref role="2ZfgGC" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="2S6ZIM" id="46CZjbPQS9E" role="2ZfVej">
-      <node concept="3clFbS" id="46CZjbPQS9F" role="2VODD2">
-        <node concept="3clFbF" id="46CZjbPQS9G" role="3cqZAp">
-          <node concept="Xl_RD" id="46CZjbPQS9H" role="3clFbG">
-            <property role="Xl_RC" value="Toogle Shift Attribute" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="46CZjbPQS9I" role="2ZfgGD">
-      <node concept="3clFbS" id="46CZjbPQS9J" role="2VODD2">
-        <node concept="3clFbJ" id="46CZjbPQS9K" role="3cqZAp">
-          <node concept="3clFbS" id="46CZjbPQS9L" role="3clFbx">
-            <node concept="3clFbF" id="46CZjbPQS9M" role="3cqZAp">
-              <node concept="37vLTI" id="46CZjbPQS9N" role="3clFbG">
-                <node concept="2ShNRf" id="46CZjbPQS9O" role="37vLTx">
-                  <node concept="3zrR0B" id="46CZjbPQS9P" role="2ShVmc">
-                    <node concept="3Tqbb2" id="46CZjbPQS9Q" role="3zrR0E">
-                      <ref role="ehGHo" to="5l2n:46CZjbPQAtc" resolve="ShiftAttribute" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="46CZjbPQS9R" role="37vLTJ">
-                  <node concept="2Sf5sV" id="46CZjbPQS9S" role="2Oq$k0" />
-                  <node concept="3CFZ6_" id="46CZjbPQS9T" role="2OqNvi">
-                    <node concept="3CFYIy" id="46CZjbPQStA" role="3CFYIz">
-                      <ref role="3CFYIx" to="5l2n:46CZjbPQAtc" resolve="ShiftAttribute" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="46CZjbPQS9V" role="3clFbw">
-            <node concept="10Nm6u" id="46CZjbPQS9W" role="3uHU7w" />
-            <node concept="2OqwBi" id="46CZjbPQS9X" role="3uHU7B">
-              <node concept="2Sf5sV" id="46CZjbPQS9Y" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="46CZjbPQS9Z" role="2OqNvi">
-                <node concept="3CFYIy" id="46CZjbPQSsk" role="3CFYIz">
-                  <ref role="3CFYIx" to="5l2n:46CZjbPQAtc" resolve="ShiftAttribute" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="46CZjbPQSa1" role="9aQIa">
-            <node concept="3clFbS" id="46CZjbPQSa2" role="9aQI4">
-              <node concept="3clFbF" id="46CZjbPQSa3" role="3cqZAp">
-                <node concept="2OqwBi" id="46CZjbPQSa4" role="3clFbG">
-                  <node concept="2OqwBi" id="46CZjbPQSa5" role="2Oq$k0">
-                    <node concept="2Sf5sV" id="46CZjbPQSa6" role="2Oq$k0" />
-                    <node concept="3CFZ6_" id="46CZjbPQSa7" role="2OqNvi">
-                      <node concept="3CFYIy" id="46CZjbPQSwv" role="3CFYIz">
-                        <ref role="3CFYIx" to="5l2n:46CZjbPQAtc" resolve="ShiftAttribute" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1PgB_6" id="46CZjbPQSa9" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>

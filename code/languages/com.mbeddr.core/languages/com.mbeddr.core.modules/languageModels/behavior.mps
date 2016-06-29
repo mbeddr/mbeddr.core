@@ -3516,7 +3516,7 @@
       <node concept="37vLTG" id="7PpjtdjCFNd" role="3clF46">
         <property role="TrG5h" value="requiredModule" />
         <node concept="3Tqbb2" id="7PpjtdjCFNe" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
     </node>
@@ -3578,7 +3578,7 @@
       <node concept="37vLTG" id="ipMc9QxfL" role="3clF46">
         <property role="TrG5h" value="requiredModule" />
         <node concept="3Tqbb2" id="ipMc9QxfM" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
     </node>
@@ -3663,7 +3663,7 @@
       <node concept="37vLTG" id="43R883waU$o" role="3clF46">
         <property role="TrG5h" value="requiredModule" />
         <node concept="3Tqbb2" id="43R883waU$p" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
       <node concept="37vLTG" id="43R883waWE7" role="3clF46">

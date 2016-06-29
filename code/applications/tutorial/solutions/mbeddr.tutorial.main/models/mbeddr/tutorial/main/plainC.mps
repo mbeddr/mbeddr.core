@@ -10,6 +10,7 @@
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
     <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="0" />
+    <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -290,13 +291,13 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="5Y5RBjHpXNd" role="3XIRFZ">
-          <node concept="3pqW6w" id="5Y5RBjHpYlc" role="1_9egR">
-            <node concept="3ZVu4v" id="5Y5RBjHpYlf" role="3TlMhJ">
-              <ref role="3ZVs_2" node="5Y5RBjHpUKz" resolve="a" />
-            </node>
+        <node concept="1_9egQ" id="1jakdT9EUwO" role="3XIRFZ">
+          <node concept="3pqW6w" id="1jakdT9EUwP" role="1_9egR">
             <node concept="3ZVu4v" id="5Y5RBjHpXNb" role="3TlMhI">
               <ref role="3ZVs_2" node="5Y5RBjHpWER" resolve="b" />
+            </node>
+            <node concept="3ZVu4v" id="5Y5RBjHpYlf" role="3TlMhJ">
+              <ref role="3ZVs_2" node="5Y5RBjHpUKz" resolve="a" />
             </node>
           </node>
         </node>

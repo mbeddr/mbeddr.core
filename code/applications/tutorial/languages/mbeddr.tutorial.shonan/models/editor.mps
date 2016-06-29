@@ -215,7 +215,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="yso5_bu6p6">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <ref role="1XX52x" to="5l2n:yso5_brWTy" resolve="StencilComputationElement" />
     <node concept="3EZMnI" id="3CmSUB7FprG" role="2wV5jI">
       <node concept="3F0A7n" id="yso5_bvi9h" role="3EZMnx">
@@ -354,7 +354,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="yso5_brSDg">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <ref role="1XX52x" to="5l2n:yso5_brSDa" resolve="StencilComputation" />
     <node concept="3EZMnI" id="yso5_brSDm" role="2wV5jI">
       <node concept="l2Vlx" id="yso5_buMtx" role="2iSdaV" />
@@ -379,6 +379,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="l2Vlx" id="yso5_btJpT" role="2czzBx" />
+        <node concept="3F0ifn" id="17Z2wzk1NkY" role="2czzBI" />
       </node>
       <node concept="3EZMnI" id="yso5_buMlJ" role="3EZMnx">
         <node concept="pVoyu" id="yso5_buMtp" role="3F10Kt">
@@ -442,8 +443,12 @@
       <node concept="3EZMnI" id="46CZjbPSlo0" role="3EZMnx">
         <node concept="l2Vlx" id="46CZjbPSlo1" role="2iSdaV" />
         <node concept="3F0ifn" id="46CZjbPSloB" role="3EZMnx">
-          <property role="3F0ifm" value="@" />
+          <property role="3F0ifm" value="@val=" />
+          <node concept="11LMrY" id="17Z2wzkawmY" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
+        <node concept="3F0ifn" id="17Z2wzkawna" role="3EZMnx" />
         <node concept="3F0A7n" id="46CZjbPQAxW" role="3EZMnx">
           <ref role="1NtTu8" to="5l2n:46CZjbPQAtp" resolve="value" />
         </node>
@@ -590,7 +595,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="yso5_bvi9V">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <ref role="1XX52x" to="5l2n:yso5_bvi9M" resolve="StencilComputationElementReference" />
     <node concept="1iCGBv" id="yso5_bvi9X" role="2wV5jI">
       <ref role="1NtTu8" to="5l2n:yso5_bvi9N" />
@@ -603,24 +608,26 @@
     </node>
   </node>
   <node concept="24kQdi" id="5Cq06Aj2fj7">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.intermediate" />
     <ref role="1XX52x" to="5l2n:5Cq06Aj2dPm" resolve="IntermediateStencilElement" />
     <node concept="3EZMnI" id="5Cq06Aj2fjd" role="2wV5jI">
       <node concept="l2Vlx" id="5Cq06Aj2fje" role="2iSdaV" />
       <node concept="3F0A7n" id="5Cq06Aj2fj9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="5Cq06Aj2fjz" role="3EZMnx">
+      <node concept="3F0ifn" id="17Z2wzk7NJP" role="3EZMnx">
         <property role="3F0ifm" value="^" />
-        <node concept="11L4FC" id="5Cq06Aj2fqg" role="3F10Kt">
+        <node concept="11L4FC" id="17Z2wzk8xlr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="11LMrY" id="5Cq06Aj2fs3" role="3F10Kt">
+        <node concept="11LMrY" id="17Z2wzk8xne" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="5Cq06Aj2fjS" role="3EZMnx">
-        <ref role="1NtTu8" to="5l2n:5Cq06Aj2dPn" resolve="offset" />
+      <node concept="3F2HdR" id="17Z2wzk7NKv" role="3EZMnx">
+        <ref role="1NtTu8" to="5l2n:17Z2wzk7NJo" />
+        <node concept="l2Vlx" id="17Z2wzk7NKx" role="2czzBx" />
+        <node concept="3F0ifn" id="17Z2wzk7NKU" role="2czzBI" />
       </node>
     </node>
     <node concept="3EZMnI" id="6MpvgXUURBi" role="6VMZX">
@@ -637,21 +644,6 @@
         </node>
         <node concept="3F0A7n" id="6MpvgXUURBv" role="3EZMnx">
           <ref role="1NtTu8" to="5l2n:5Cq06Aj2dQr" resolve="kind" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="642LqPQ24Uz" role="3EZMnx">
-        <node concept="l2Vlx" id="642LqPQ24U$" role="2iSdaV" />
-        <node concept="3F0ifn" id="6MpvgXUURBw" role="3EZMnx">
-          <property role="3F0ifm" value="size:" />
-          <node concept="11L4FC" id="6MpvgXUURBx" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="11LMrY" id="6MpvgXUURBy" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="6MpvgXUURBz" role="3EZMnx">
-          <ref role="1NtTu8" to="5l2n:6MpvgXUU_jG" resolve="size" />
         </node>
       </node>
       <node concept="3EZMnI" id="642LqPQ24Wn" role="3EZMnx">
@@ -694,8 +686,18 @@
       <node concept="l2Vlx" id="46CZjbPOGc0" role="2iSdaV" />
       <node concept="jtDJS" id="46CZjbPOGdY" role="3EZMnx">
         <node concept="3EZMnI" id="3j3yk3g$lOk" role="jn6J3">
-          <node concept="3F1sOY" id="46CZjbPOKuV" role="3EZMnx">
+          <node concept="3F2HdR" id="17Z2wzk2Dge" role="3EZMnx">
+            <property role="2czwfO" value="," />
             <ref role="1NtTu8" to="5l2n:46CZjbPOGdK" />
+            <node concept="2iRfu4" id="17Z2wzk2Dgg" role="2czzBx" />
+            <node concept="tppnM" id="17Z2wzk2KmB" role="sWeuL">
+              <node concept="11L4FC" id="17Z2wzk2KmH" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+              <node concept="11LMrY" id="17Z2wzk2KmQ" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
           </node>
           <node concept="2iRfu4" id="29E2s0GIWel" role="2iSdaV" />
         </node>
@@ -763,7 +765,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5Cq06Aj4Eun">
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.intermediate" />
     <ref role="1XX52x" to="5l2n:5Cq06Aj4EjS" resolve="IntermediateStencilComputation" />
     <node concept="3EZMnI" id="3CmSUB7Fp_z" role="2wV5jI">
       <property role="S$Qs1" value="true" />
@@ -982,6 +984,25 @@
     <ref role="1XX52x" to="5l2n:2W_ymnYujn7" resolve="ComplexVectorDelete" />
     <node concept="3F0ifn" id="2W_ymnYujni" role="2wV5jI">
       <property role="3F0ifm" value="delete" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="17Z2wzk7NL3">
+    <property role="3GE5qa" value="stencil.intermediate" />
+    <ref role="1XX52x" to="5l2n:17Z2wzk7NIM" resolve="Bound" />
+    <node concept="3EZMnI" id="17Z2wzk7NLf" role="2wV5jI">
+      <node concept="l2Vlx" id="17Z2wzk7NLg" role="2iSdaV" />
+      <node concept="3F0ifn" id="17Z2wzk7NMe" role="3EZMnx">
+        <property role="3F0ifm" value="ofs:" />
+      </node>
+      <node concept="3F0A7n" id="17Z2wzk7NLa" role="3EZMnx">
+        <ref role="1NtTu8" to="5l2n:17Z2wzk7NIN" resolve="offset" />
+      </node>
+      <node concept="3F0ifn" id="17Z2wzk7NL$" role="3EZMnx">
+        <property role="3F0ifm" value="max:" />
+      </node>
+      <node concept="3F0A7n" id="17Z2wzk7NLQ" role="3EZMnx">
+        <ref role="1NtTu8" to="5l2n:17Z2wzk7NIR" resolve="maxValue" />
+      </node>
     </node>
   </node>
 </model>

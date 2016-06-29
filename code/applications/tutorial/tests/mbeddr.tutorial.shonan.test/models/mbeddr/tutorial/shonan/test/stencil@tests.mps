@@ -57,7 +57,7 @@
     </language>
     <language id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan">
       <concept id="4731309803867128558" name="mbeddr.tutorial.shonan.structure.ShiftExpression" flags="ng" index="2OuzZs">
-        <child id="4731309803867128688" name="value" index="2OuzT2" />
+        <child id="4731309803867128688" name="values" index="2OuzT2" />
       </concept>
       <concept id="620476785305133682" name="mbeddr.tutorial.shonan.structure.StencilComputationElementReference" flags="ng" index="13Sk8F">
         <reference id="620476785305133683" name="element" index="13Sk8E" />

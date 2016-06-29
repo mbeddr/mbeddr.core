@@ -795,7 +795,7 @@
   </node>
   <node concept="1YbPZF" id="yso5_bwnNQ">
     <property role="TrG5h" value="typeof_StencilComputationElement" />
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <node concept="3clFbS" id="yso5_bwnNR" role="18ibNy">
       <node concept="1Z5TYs" id="yso5_bwnQC" role="3cqZAp">
         <node concept="mw_s8" id="yso5_bwnR4" role="1ZfhKB">
@@ -2149,7 +2149,7 @@
   </node>
   <node concept="1YbPZF" id="yso5_bwo4u">
     <property role="TrG5h" value="typeof_StencilComputationElementReference" />
-    <property role="3GE5qa" value="stencil" />
+    <property role="3GE5qa" value="stencil.user" />
     <node concept="3clFbS" id="yso5_bwo4v" role="18ibNy">
       <node concept="1Z5TYs" id="yso5_bwo79" role="3cqZAp">
         <node concept="mw_s8" id="yso5_bwo7_" role="1ZfhKB">

@@ -1170,7 +1170,7 @@
     <node concept="1W1s6O" id="3akkoAPfLd0" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="40" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="44" />
       <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
       <ref role="1W1s6P" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
