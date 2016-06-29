@@ -147,9 +147,11 @@
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
+      <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
@@ -1547,8 +1549,125 @@
     <node concept="2NXPZ9" id="2CzB6HFhJtf" role="N3F5h">
       <property role="TrG5h" value="empty_1467199565882_1012" />
     </node>
-    <node concept="2NXPZ9" id="2CzB6HEDpg0" role="N3F5h">
-      <property role="TrG5h" value="empty_1467189479709_790" />
+    <node concept="1sgJKc" id="5ysPayq_tA1" role="N3F5h">
+      <property role="TrG5h" value="pointerToArrayStruct" />
+      <node concept="1dpRTG" id="5ysPayq_xiw" role="HszBJ">
+        <property role="TrG5h" value="pointerToArray" />
+        <node concept="3J0A42" id="5ysPayq_xiF" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="3wxxNl" id="5ysPayq_xj8" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="1sgJKr" id="5ysPayq_xiv" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="1sgJKq" node="5ysPayq_wmW" resolve="pointerToArrayStruct_inner" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="5ysPayq_xk1" role="1YbSNA">
+            <property role="2hmy$m" value="10" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_uwZ" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207078926_208" />
+    </node>
+    <node concept="1sgJKc" id="5ysPayq_wmW" role="N3F5h">
+      <property role="TrG5h" value="pointerToArrayStruct_inner" />
+      <node concept="1dpRTG" id="5ysPayq_xhX" role="HszBJ">
+        <property role="TrG5h" value="boolValue" />
+        <node concept="3TlMgk" id="5ysPayq_xhW" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_L0$" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207455943_218" />
+    </node>
+    <node concept="1sgJKc" id="5ysPayq_zkX" role="N3F5h">
+      <property role="TrG5h" value="multiDimArray" />
+      <node concept="1dpRTG" id="5ysPayq_$hj" role="HszBJ">
+        <property role="TrG5h" value="multiDimOfChars" />
+        <node concept="3J0A42" id="5ysPayq_$hZ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="3J0A42" id="5ysPayq_$hw" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="biTqx" id="5ysPayq_$hi" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="3TlMh9" id="5ysPayq_$iT" role="1YbSNA">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="5ysPayq_$ke" role="1YbSNA">
+            <property role="2hmy$m" value="6" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_yoQ" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207136877_211" />
+    </node>
+    <node concept="1sgJKc" id="5ysPayq__sB" role="N3F5h">
+      <property role="TrG5h" value="primitiveTypePointer" />
+      <node concept="1dpRTG" id="5ysPayq_ClW" role="HszBJ">
+        <property role="TrG5h" value="primitivePointer" />
+        <node concept="3wxxNl" id="5ysPayq_Cm6" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqqz" id="5ysPayq_ClV" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_Cox" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207237720_213" />
+    </node>
+    <node concept="1sgJKc" id="5ysPayq_Eke" role="N3F5h">
+      <property role="TrG5h" value="pointerToPointer" />
+      <node concept="1dpRTG" id="5ysPayq_GxT" role="HszBJ">
+        <property role="TrG5h" value="pointerToPointer" />
+        <node concept="3wxxNl" id="5ysPayq_Gyx" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="3wxxNl" id="5ysPayq_Gy4" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="1sgJKr" id="5ysPayq_GxS" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="1sgJKq" node="5ysPayq_FzP" resolve="pointerToPointer_inner" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_FkY" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207274126_215" />
+    </node>
+    <node concept="1sgJKc" id="5ysPayq_FzP" role="N3F5h">
+      <property role="TrG5h" value="pointerToPointer_inner" />
+      <node concept="1dpRTG" id="5ysPayq_FzQ" role="HszBJ">
+        <property role="TrG5h" value="boolValue" />
+        <node concept="3TlMgk" id="5ysPayq_FzR" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_Fsp" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207274286_216" />
+    </node>
+    <node concept="2NXPZ9" id="5ysPayq_GAW" role="N3F5h">
+      <property role="TrG5h" value="empty_1467207303725_217" />
     </node>
   </node>
 </model>
