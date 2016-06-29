@@ -736,8 +736,8 @@
                   </node>
                   <node concept="liA8E" id="7Fb9EHH5GFE" role="2OqNvi">
                     <ref role="37wK5l" to="t6h5:~Constructor.newInstance(java.lang.Object...):java.lang.Object" resolve="newInstance" />
-                    <node concept="Xl_RD" id="5P1jSPDtXT$" role="37wK5m">
-                      <property role="Xl_RC" value="D:\\x\\mbeddr.core.master\\tools\\emma\\coverage.ec" />
+                    <node concept="37vLTw" id="38KQk$ebBfp" role="37wK5m">
+                      <ref role="3cqZAo" node="7Fb9EHH5Wxj" resolve="savedCoverageFileName" />
                     </node>
                   </node>
                 </node>
