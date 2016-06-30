@@ -3678,7 +3678,6 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="BLOCK_EXPRESSION_MARKER" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="13FtHz6jp$J" role="1B3o_S" />
       <node concept="17QB3L" id="13FtHz6jqjZ" role="1tU5fm" />
       <node concept="2OqwBi" id="13FtHz6jrY9" role="33vP2m">
         <node concept="1eOMI4" id="13FtHz6jrn6" role="2Oq$k0">
@@ -3905,6 +3904,33 @@
       </node>
       <node concept="3Tm1VV" id="395kdzFoRd5" role="1B3o_S" />
       <node concept="3clFbS" id="395kdzFoRd8" role="3clF47">
+        <node concept="3clFbJ" id="38KQk$fX2r7" role="3cqZAp">
+          <node concept="3clFbS" id="38KQk$fX2r8" role="3clFbx">
+            <node concept="3cpWs6" id="38KQk$fX2r9" role="3cqZAp">
+              <node concept="3clFbT" id="38KQk$fX2ra" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="38KQk$fX2rb" role="3clFbw">
+            <node concept="2OqwBi" id="38KQk$fX2rc" role="2Oq$k0">
+              <node concept="37vLTw" id="38KQk$fX2HD" role="2Oq$k0">
+                <ref role="3cqZAo" node="395kdzFoRd0" resolve="crtState" />
+              </node>
+              <node concept="liA8E" id="38KQk$fX2re" role="2OqNvi">
+                <ref role="37wK5l" to="rbq9:WwTuEsv3zy" resolve="getIdentifier" />
+              </node>
+            </node>
+            <node concept="liA8E" id="38KQk$fX2rf" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="10M0yZ" id="38KQk$fX26V" role="37wK5m">
+                <ref role="3cqZAo" node="13FtHz6jqk1" resolve="BLOCK_EXPRESSION_MARKER" />
+                <ref role="1PxDUh" node="3x0R1LIQ8cB" resolve="FunctionCallsLifterCore" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="38KQk$fX2qV" role="3cqZAp" />
         <node concept="3clFbF" id="395kdzFoRda" role="3cqZAp">
           <node concept="3clFbT" id="395kdzFoRd9" role="3clFbG" />
         </node>
