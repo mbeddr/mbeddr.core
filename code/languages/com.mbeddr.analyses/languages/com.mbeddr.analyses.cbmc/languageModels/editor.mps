@@ -342,13 +342,28 @@
     <node concept="3EZMnI" id="4fjBjwDqlY6" role="2wV5jI">
       <node concept="l2Vlx" id="4fjBjwDqlY8" role="2iSdaV" />
       <node concept="3F0ifn" id="4fjBjwDqlYa" role="3EZMnx">
-        <property role="3F0ifm" value="__CPROVER_assume(" />
+        <property role="3F0ifm" value="__CPROVER_assume" />
+      </node>
+      <node concept="3F0ifn" id="6BowXlDULXK" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="6BowXlDULZA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="4fjBjwDqlYc" role="3EZMnx">
         <ref role="1NtTu8" to="q5q6:4fjBjwDqlY3" />
       </node>
       <node concept="3F0ifn" id="4fjBjwDqlYg" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6BowXlDUM1i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6BowXlDUM1M" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="6BowXlDUM3L" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
