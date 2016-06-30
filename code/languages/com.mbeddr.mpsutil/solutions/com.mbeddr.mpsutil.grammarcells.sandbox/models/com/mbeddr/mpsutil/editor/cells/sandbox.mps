@@ -40,6 +40,10 @@
         <property id="5083944728300729107" name="value" index="yA7Zo" />
       </concept>
       <concept id="2111846799818005528" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.MinusExpression" flags="ng" index="2Iv5lx" />
+      <concept id="4330386229151410873" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.UnitExpression" flags="ng" index="WMbnG">
+        <property id="4330386229151410877" name="unit" index="WMbnC" />
+        <child id="4330386229151410880" name="expression" index="WMbml" />
+      </concept>
       <concept id="7363578995839144929" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.StringType" flags="ng" index="1kHqfO" />
       <concept id="7363578995839169017" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.VariableDeclaration" flags="ng" index="1kHs7G">
         <property id="7363578995839203005" name="volatile" index="1kHkqC" />
@@ -366,8 +370,11 @@
                 <property role="yA7Zo" value="4" />
               </node>
             </node>
-            <node concept="yA7Z4" id="1BP6YWGVX6u" role="ywYU2">
-              <property role="yA7Zo" value="5" />
+            <node concept="WMbnG" id="3KoBPk16Tx4" role="ywYU2">
+              <property role="WMbnC" value="m" />
+              <node concept="yA7Z4" id="1BP6YWGVX6u" role="WMbml">
+                <property role="yA7Zo" value="5" />
+              </node>
             </node>
           </node>
         </node>

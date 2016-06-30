@@ -2623,5 +2623,56 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2CzB6HCJsW1">
+    <property role="3GE5qa" value="genStructPrint" />
+    <property role="TrG5h" value="AddGenStructHashPrintFunction" />
+    <ref role="2ZfgGC" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+    <node concept="2S6ZIM" id="2CzB6HCJsW2" role="2ZfVej">
+      <node concept="3clFbS" id="2CzB6HCJsW3" role="2VODD2">
+        <node concept="3clFbF" id="2CzB6HCJsW4" role="3cqZAp">
+          <node concept="Xl_RD" id="2CzB6HCJsW5" role="3clFbG">
+            <property role="Xl_RC" value="Add 'Generate Print Hash Function'" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2CzB6HCJsW6" role="2ZfgGD">
+      <node concept="3clFbS" id="2CzB6HCJsW7" role="2VODD2">
+        <node concept="3clFbF" id="2CzB6HCJsW8" role="3cqZAp">
+          <node concept="2OqwBi" id="2CzB6HCJsW9" role="3clFbG">
+            <node concept="2OqwBi" id="2CzB6HCJsWa" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2CzB6HCJsWb" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2CzB6HCJsWc" role="2OqNvi">
+                <node concept="3CFYIy" id="2CzB6HCJtei" role="3CFYIz">
+                  <ref role="3CFYIx" to="k146:2CzB6HCHcV$" resolve="GenStructHashPrintFunction" />
+                </node>
+              </node>
+            </node>
+            <node concept="zfrQC" id="2CzB6HCJsWe" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="2CzB6HCJsWf" role="lGtFl">
+      <property role="1SWRpm" value="STRUCT" />
+    </node>
+    <node concept="2SaL7w" id="2CzB6HCJsWg" role="2ZfVeh">
+      <node concept="3clFbS" id="2CzB6HCJsWh" role="2VODD2">
+        <node concept="3clFbF" id="2CzB6HCJsWi" role="3cqZAp">
+          <node concept="2OqwBi" id="2CzB6HCJsWj" role="3clFbG">
+            <node concept="2OqwBi" id="2CzB6HCJsWk" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2CzB6HCJsWl" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2CzB6HCJsWm" role="2OqNvi">
+                <node concept="3CFYIy" id="2CzB6HCJtab" role="3CFYIz">
+                  <ref role="3CFYIx" to="k146:2CzB6HCHcV$" resolve="GenStructHashPrintFunction" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2CzB6HCJsWo" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
