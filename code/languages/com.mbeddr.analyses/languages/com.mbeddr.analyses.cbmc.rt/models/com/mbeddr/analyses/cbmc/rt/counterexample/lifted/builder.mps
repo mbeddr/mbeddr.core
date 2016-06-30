@@ -2766,27 +2766,39 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="47H95zxq8Gv" role="3clFbw">
-            <node concept="2OqwBi" id="47H95zxq8G_" role="3uHU7B">
-              <node concept="37vLTw" id="47H95zxq8GA" role="2Oq$k0">
-                <ref role="3cqZAo" node="4Ow3NnwWNsg" resolve="fullLHSValue" />
-              </node>
-              <node concept="liA8E" id="47H95zxq8GB" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                <node concept="Xl_RD" id="47H95zxq8GC" role="37wK5m">
-                  <property role="Xl_RC" value="&amp;" />
-                </node>
+          <node concept="2OqwBi" id="47H95zxq8G_" role="3clFbw">
+            <node concept="37vLTw" id="47H95zxq8GA" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Ow3NnwWNsg" resolve="fullLHSValue" />
+            </node>
+            <node concept="liA8E" id="47H95zxq8GB" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="Xl_RD" id="47H95zxq8GC" role="37wK5m">
+                <property role="Xl_RC" value="&amp;" />
               </node>
             </node>
-            <node concept="2OqwBi" id="47H95zxq8Gx" role="3uHU7w">
-              <node concept="37vLTw" id="47H95zxq8Gy" role="2Oq$k0">
-                <ref role="3cqZAo" node="4Ow3NnwWNsg" resolve="fullLHSValue" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="38KQk$g7l6u" role="3cqZAp">
+          <node concept="3SKdUq" id="38KQk$g7l6w" role="3SKWNk">
+            <property role="3SKdUp" value="pointer addresses are of form: varName!num@num" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="38KQk$g6NuX" role="3cqZAp">
+          <node concept="3clFbS" id="38KQk$g6NuY" role="3clFbx">
+            <node concept="3cpWs6" id="38KQk$g6NuZ" role="3cqZAp">
+              <node concept="3clFbT" id="38KQk$g6Nv0" role="3cqZAk">
+                <property role="3clFbU" value="true" />
               </node>
-              <node concept="liA8E" id="47H95zxq8Gz" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                <node concept="Xl_RD" id="47H95zxq8G$" role="37wK5m">
-                  <property role="Xl_RC" value="@" />
-                </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="38KQk$g6Nv6" role="3clFbw">
+            <node concept="37vLTw" id="38KQk$g6Nv7" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Ow3NnwWNsg" resolve="fullLHSValue" />
+            </node>
+            <node concept="liA8E" id="38KQk$g6Nv8" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+              <node concept="Xl_RD" id="38KQk$g6Nv9" role="37wK5m">
+                <property role="Xl_RC" value="(.*)!(\\d*)@(.*)" />
               </node>
             </node>
           </node>
