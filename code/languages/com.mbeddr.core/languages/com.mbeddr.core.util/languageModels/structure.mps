@@ -1579,7 +1579,7 @@
   <node concept="1TIwiD" id="kOmZ6sSkEG">
     <property role="1pbfSe" value="1575639395" />
     <property role="TrG5h" value="GenStructPrintFunction" />
-    <property role="3GE5qa" value="genStructPrint" />
+    <property role="3GE5qa" value="genStructPrint.values" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="kOmZ6sSkEH" role="lGtFl">
       <property role="Hh88m" value="genStructPrintFunction" />
@@ -1587,14 +1587,50 @@
         <ref role="trN6q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
       </node>
     </node>
+    <node concept="PrWs8" id="2CzB6HCHdhj" role="PzmwI">
+      <ref role="PrY4T" node="2CzB6HCHdan" resolve="IPrintGenFunction" />
+    </node>
   </node>
   <node concept="1TIwiD" id="kOmZ6trHyq">
     <property role="1pbfSe" value="1566362485" />
-    <property role="3GE5qa" value="genStructPrint" />
+    <property role="3GE5qa" value="genStructPrint.values" />
     <property role="TrG5h" value="DumpStruct" />
     <property role="34LRSv" value="dumpStruct" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="kOmZ6trHyr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2CzB6HCHcV$">
+    <property role="1pbfSe" value="1831310513" />
+    <property role="3GE5qa" value="genStructPrint.hash" />
+    <property role="TrG5h" value="GenStructHashPrintFunction" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2CzB6HCHcV_" role="lGtFl">
+      <property role="Hh88m" value="genStructHashPrintFunction" />
+      <node concept="trNpa" id="2CzB6HCHcVB" role="EQaZv">
+        <ref role="trN6q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="2CzB6HCHdsu" role="PzmwI">
+      <ref role="PrY4T" node="2CzB6HCHdan" resolve="IPrintGenFunction" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2CzB6HCHdan">
+    <property role="1pbfSe" value="1831309566" />
+    <property role="3GE5qa" value="genStructPrint" />
+    <property role="TrG5h" value="IPrintGenFunction" />
+  </node>
+  <node concept="1TIwiD" id="2CzB6HEff$U">
+    <property role="1pbfSe" value="1805609563" />
+    <property role="3GE5qa" value="genStructPrint.hash" />
+    <property role="TrG5h" value="DumpStructHash" />
+    <property role="34LRSv" value="dumpStructHash" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="2CzB6HEff$V" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
