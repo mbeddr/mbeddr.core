@@ -114,6 +114,12 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -169,6 +175,10 @@
         <child id="8124453027370845341" name="operationConcept" index="32tDTA" />
         <child id="6136676636349909553" name="isApplicable" index="1QeD3i" />
       </concept>
+      <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
+        <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
+        <child id="3592071576955708909" name="isApplicableClause" index="1xSnZW" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -184,6 +194,7 @@
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
       </concept>
+      <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="6136676636349908958" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpIsApplicableFunction" flags="in" index="1QeDOX" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
@@ -2911,6 +2922,63 @@
     <node concept="1YaCAy" id="CNkpdzTdFk" role="1YuTPh">
       <property role="TrG5h" value="type" />
       <ref role="1YaFvo" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="7GyTVE$lELw">
+    <property role="3GE5qa" value="complex" />
+    <property role="TrG5h" value="ComplexVector_SubTyping" />
+    <node concept="1YaCAy" id="7GyTVE$lELR" role="35pZ6h">
+      <property role="TrG5h" value="sup" />
+      <ref role="1YaFvo" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+    </node>
+    <node concept="3clFbS" id="7GyTVE$lELy" role="2sgrp5">
+      <node concept="3SKdUt" id="7GyTVE$lIhk" role="3cqZAp">
+        <node concept="3SKdUq" id="7GyTVE$lIhl" role="3SKWNk">
+          <property role="3SKdUp" value="always true" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7GyTVE$lEL$" role="1YuTPh">
+      <property role="TrG5h" value="sub" />
+      <ref role="1YaFvo" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+    </node>
+    <node concept="1xSnZT" id="7GyTVE$lEMa" role="1xSnZW">
+      <node concept="3clFbS" id="7GyTVE$lEMb" role="2VODD2">
+        <node concept="3cpWs6" id="7GyTVE$lGbN" role="3cqZAp">
+          <node concept="1Wc70l" id="7GyTVE$lH3P" role="3cqZAk">
+            <node concept="2OqwBi" id="7GyTVE$lI0O" role="3uHU7w">
+              <node concept="2OqwBi" id="7GyTVE$lHfW" role="2Oq$k0">
+                <node concept="1YBJjd" id="7GyTVE$lH7Q" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7GyTVE$lELR" resolve="sup" />
+                </node>
+                <node concept="3TrEf2" id="7GyTVE$lHHH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="7GyTVE$lI9y" role="2OqNvi">
+                <node concept="chp4Y" id="7GyTVE$lIdr" role="cj9EA">
+                  <ref role="cht4Q" to="5l2n:7wlBVIeFwW3" resolve="ComplexType" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7GyTVE$lGNO" role="3uHU7B">
+              <node concept="2OqwBi" id="7GyTVE$lGk5" role="2Oq$k0">
+                <node concept="1YBJjd" id="7GyTVE$lGc_" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7GyTVE$lEL$" resolve="sub" />
+                </node>
+                <node concept="3TrEf2" id="7GyTVE$lGzz" role="2OqNvi">
+                  <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="7GyTVE$lGVv" role="2OqNvi">
+                <node concept="chp4Y" id="7GyTVE$lGYG" role="cj9EA">
+                  <ref role="cht4Q" to="5l2n:7wlBVIeFwW3" resolve="ComplexType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
