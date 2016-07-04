@@ -1613,6 +1613,40 @@
     <node concept="3uibUv" id="4arT0cntDYb" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
     </node>
+    <node concept="2tJIrI" id="6_oo6Ldo83P" role="jymVt" />
+    <node concept="3clFb_" id="6_oo6Ldo7rk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="6_oo6Ldo7rm" role="3clF45" />
+      <node concept="37vLTG" id="6_oo6Ldo7rn" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="6_oo6Ldo7ro" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_oo6Ldo7rp" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="6_oo6Ldo7rq" role="1tU5fm">
+          <node concept="3uibUv" id="6_oo6Ldo7rr" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6_oo6Ldo7rs" role="1B3o_S" />
+      <node concept="3clFbS" id="6_oo6Ldo7rv" role="3clF47">
+        <node concept="3clFbF" id="6_oo6Ldo7rx" role="3cqZAp">
+          <node concept="3clFbT" id="6_oo6Ldo7rw" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6_oo6Ldo8DM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="6_oo6Ldo9a1" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="4arT0cntGeg">
     <property role="TrG5h" value="FunctionReturnsLifterComponents" />
@@ -1853,6 +1887,39 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntGfD" role="jymVt" />
+    <node concept="3clFb_" id="6_oo6Ldoa5i" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="6_oo6Ldoa5k" role="3clF45" />
+      <node concept="37vLTG" id="6_oo6Ldoa5l" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="6_oo6Ldoa5m" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_oo6Ldoa5n" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="6_oo6Ldoa5o" role="1tU5fm">
+          <node concept="3uibUv" id="6_oo6Ldoa5p" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6_oo6Ldoa5q" role="1B3o_S" />
+      <node concept="3clFbS" id="6_oo6Ldoa5t" role="3clF47">
+        <node concept="3clFbF" id="6_oo6Ldoa5v" role="3cqZAp">
+          <node concept="3clFbT" id="6_oo6Ldoa5u" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6_oo6LdoawL" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="6_oo6LdoaQl" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4arT0cntGfE" role="1B3o_S" />
     <node concept="NWlO9" id="4arT0cntGfF" role="lGtFl">
       <property role="NWlVz" value="Lifter of function returns for com.mbeddr.components language." />
