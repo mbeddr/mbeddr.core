@@ -150,7 +150,6 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -261,15 +260,6 @@
       <property role="NWlVz" value="Factory for creating an analysis to show loops." />
     </node>
     <node concept="2tJIrI" id="5etR5IKp6Uk" role="jymVt" />
-    <node concept="312cEg" id="5etR5IKp6O9" role="jymVt">
-      <property role="TrG5h" value="repo" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="5etR5IKp6R7" role="1B3o_S" />
-      <node concept="3uibUv" id="vbJ3AuJmr8" role="1tU5fm">
-        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5etR5IKp6Lj" role="jymVt" />
     <node concept="3clFb_" id="1$MI$rgGFE1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createAnalyzer" />
@@ -302,8 +292,8 @@
               <node concept="3clFbT" id="5etR5IKiGOl" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
-              <node concept="37vLTw" id="5etR5IKp6ZR" role="37wK5m">
-                <ref role="3cqZAo" node="5etR5IKp6O9" resolve="repo" />
+              <node concept="37vLTw" id="5KHBa6l32Dx" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
               </node>
             </node>
           </node>
@@ -356,18 +346,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5etR5IKiI5P" role="jymVt" />
-    <node concept="312cEg" id="5etR5IKp21T" role="jymVt">
-      <property role="TrG5h" value="repository" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="5etR5IKp21U" role="1B3o_S" />
-      <node concept="3uibUv" id="vbJ3AuJjg$" role="1tU5fm">
-        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-      </node>
-      <node concept="NWlO9" id="vbJ3AuJjLd" role="lGtFl">
-        <property role="NWlVz" value="Model repository" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5etR5IKp1JJ" role="jymVt" />
     <node concept="3clFbW" id="1$MI$rgGLJy" role="jymVt">
       <node concept="37vLTG" id="Lg9kE9zRoG" role="3clF46">
         <property role="TrG5h" value="conf" />
@@ -411,6 +389,9 @@
           <node concept="37vLTw" id="1$MI$rgGMNv" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp914xO" resolve="pi" />
           </node>
+          <node concept="37vLTw" id="5KHBa6l0dvM" role="37wK5m">
+            <ref role="3cqZAo" node="26HFG8DLs4L" resolve="repo" />
+          </node>
         </node>
         <node concept="3clFbF" id="5etR5IKoy1Y" role="3cqZAp">
           <node concept="37vLTI" id="5etR5IKoyiB" role="3clFbG">
@@ -419,16 +400,6 @@
             </node>
             <node concept="37vLTw" id="5etR5IKoy1W" role="37vLTJ">
               <ref role="3cqZAo" node="5etR5IKiHFr" resolve="shouldMarkResults" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5etR5IKp2HD" role="3cqZAp">
-          <node concept="37vLTI" id="5etR5IKp2Ti" role="3clFbG">
-            <node concept="37vLTw" id="5etR5IKp3aF" role="37vLTx">
-              <ref role="3cqZAo" node="26HFG8DLs4L" resolve="repo" />
-            </node>
-            <node concept="37vLTw" id="5etR5IKp2HB" role="37vLTJ">
-              <ref role="3cqZAo" node="5etR5IKp21T" resolve="repository" />
             </node>
           </node>
         </node>
@@ -814,8 +785,8 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="37vLTw" id="vbJ3AuJkTN" role="ukAjM">
-                    <ref role="3cqZAo" node="5etR5IKp21T" resolve="repository" />
+                  <node concept="37vLTw" id="5KHBa6kYrt5" role="ukAjM">
+                    <ref role="3cqZAo" to="tzyt:5etR5IKp21T" resolve="modelRepository" />
                   </node>
                 </node>
               </node>

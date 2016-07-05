@@ -30,6 +30,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="zo10" ref="r:cc0fed3b-091b-4783-9fab-36d8c8df8004(com.mbeddr.analyses.cbmc.testsgen.behavior)" />
     <import index="8fsg" ref="r:4c26acae-0f84-4664-bc8e-eb85ca6494bf(com.mbeddr.analyses.utils.nodes)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -363,6 +364,12 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
+      <node concept="37vLTG" id="5KHBa6kYuTZ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6kYuU0" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="3x0R1LJ5Cpd" role="3clF45" />
       <node concept="3clFbS" id="3x0R1LJ5Cpe" role="3clF47">
         <node concept="XkiVB" id="3x0R1LJ5Cpf" role="3cqZAp">
@@ -375,6 +382,9 @@
           </node>
           <node concept="37vLTw" id="5uqRFp9415e" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
+          </node>
+          <node concept="37vLTw" id="5KHBa6lbLpg" role="37wK5m">
+            <ref role="3cqZAo" node="5KHBa6kYuTZ" resolve="repo" />
           </node>
         </node>
       </node>
@@ -2326,6 +2336,9 @@
               <node concept="37vLTw" id="5uqRFp94202" role="37wK5m">
                 <ref role="3cqZAo" node="5uqRFp941kG" resolve="pi" />
               </node>
+              <node concept="37vLTw" id="5KHBa6ldCuO" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
+              </node>
             </node>
           </node>
         </node>
@@ -2634,6 +2647,12 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
+      <node concept="37vLTG" id="5KHBa6kYrU1" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6kYs49" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="6QX7yC5t0iZ" role="3clF45" />
       <node concept="3clFbS" id="6QX7yC5t0j0" role="3clF47">
         <node concept="XkiVB" id="6QX7yC5t0j1" role="3cqZAp">
@@ -2646,6 +2665,9 @@
           </node>
           <node concept="37vLTw" id="6QX7yC5t0j4" role="37wK5m">
             <ref role="3cqZAo" node="6QX7yC5t0iX" resolve="pi" />
+          </node>
+          <node concept="37vLTw" id="5KHBa6kYC8H" role="37wK5m">
+            <ref role="3cqZAo" node="5KHBa6kYrU1" resolve="repo" />
           </node>
         </node>
       </node>
