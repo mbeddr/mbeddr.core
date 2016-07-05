@@ -21,6 +21,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -312,6 +313,12 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
+      <node concept="37vLTG" id="5KHBa6kYrU1" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6kYs49" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="3x0R1LJ5Cpd" role="3clF45" />
       <node concept="3clFbS" id="3x0R1LJ5Cpe" role="3clF47">
         <node concept="XkiVB" id="3x0R1LJ5Cpf" role="3cqZAp">
@@ -327,6 +334,9 @@
           </node>
           <node concept="37vLTw" id="5uqRFp9415e" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
+          </node>
+          <node concept="37vLTw" id="5KHBa6l0cOY" role="37wK5m">
+            <ref role="3cqZAo" node="5KHBa6kYrU1" resolve="repo" />
           </node>
         </node>
       </node>
@@ -1126,6 +1136,9 @@
               </node>
               <node concept="37vLTw" id="5uqRFp94202" role="37wK5m">
                 <ref role="3cqZAo" node="5uqRFp941kG" resolve="pi" />
+              </node>
+              <node concept="37vLTw" id="5KHBa6l3bcj" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
               </node>
             </node>
           </node>
