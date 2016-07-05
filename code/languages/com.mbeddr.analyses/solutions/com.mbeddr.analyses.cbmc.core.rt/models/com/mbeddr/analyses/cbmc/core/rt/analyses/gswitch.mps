@@ -1586,6 +1586,40 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="6kQ$1ab4w5B" role="3cqZAp">
+          <node concept="3clFbS" id="6kQ$1ab4w5E" role="3clFbx">
+            <node concept="3cpWs6" id="6kQ$1ab4GOw" role="3cqZAp">
+              <node concept="2ShNRf" id="7SLmAEO7B4v" role="3cqZAk">
+                <node concept="1pGfFk" id="7SLmAEO7B4w" role="2ShVmc">
+                  <ref role="37wK5l" to="eqhl:6ks7ICTqc3A" resolve="CBMCLiftedResult" />
+                  <node concept="37vLTw" id="7SLmAEO7B4x" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCt" resolve="rawResult" />
+                  </node>
+                  <node concept="37vLTw" id="7SLmAEO7B4y" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCv" resolve="analyzedNode" />
+                  </node>
+                  <node concept="Xl_RD" id="7SLmAEO7Lwi" role="37wK5m">
+                    <property role="Xl_RC" value="Chosen GSwitch is not reachable from the entry point" />
+                  </node>
+                  <node concept="Xl_RD" id="7SLmAEO7B4$" role="37wK5m">
+                    <property role="Xl_RC" value="Generic Switch Expression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6kQ$1ab4_8g" role="3clFbw">
+            <node concept="37vLTw" id="7SLmAEO7Diq" role="2Oq$k0">
+              <ref role="3cqZAo" node="M7_V6uAXCx" resolve="claimDescription" />
+            </node>
+            <node concept="liA8E" id="6kQ$1ab4AiX" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <node concept="37vLTw" id="6kQ$1ab4AmQ" role="37wK5m">
+                <ref role="3cqZAo" to="xiaw:6kQ$1ab4gdy" resolve="NO_VC_FOUND_MESSAGE" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="M7_V6uBouR" role="3cqZAp">
           <node concept="3cpWsn" id="M7_V6uBouU" role="3cpWs9">
             <property role="TrG5h" value="errorLabel" />
