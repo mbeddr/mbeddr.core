@@ -483,7 +483,7 @@
                 <ref role="3cqZAo" node="7SLmAEO8smV" resolve="results" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8xgK" role="37wK5m">
-                <property role="Xl_RC" value="GSwitch Analysis check OK (no Verification Condition found)" />
+                <property role="Xl_RC" value="Chosen GSwitch is not reachable from the entry point" />
               </node>
             </node>
             <node concept="3uibUv" id="7SLmAEO8snb" role="1tU5fm">
