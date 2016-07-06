@@ -735,7 +735,7 @@
               </node>
               <node concept="NRdvd" id="3AX70SQjOVF" role="37vLTx">
                 <ref role="1Pybhc" node="3x0R1LJ5DiZ" resolve="DeadCodeResultBuilder" />
-                <ref role="37wK5l" node="3x0R1LJ5Dj2" resolve="buildCBMCDecTabResult" />
+                <ref role="37wK5l" node="3x0R1LJ5Dj2" resolve="buildDeadCodeResult" />
                 <node concept="37vLTw" id="5zPqP2r32vw" role="37wK5m">
                   <ref role="3cqZAo" node="5zPqP2r2L8d" resolve="deadCodeAnalysisConfig" />
                 </node>
@@ -810,6 +810,9 @@
       <node concept="3Tm6S6" id="4QaxHTolQHC" role="1B3o_S" />
       <node concept="Xl_RD" id="4QaxHTolQHE" role="33vP2m">
         <property role="Xl_RC" value="label_deadcode_" />
+      </node>
+      <node concept="NWlO9" id="2aPxU55gjbr" role="lGtFl">
+        <property role="NWlVz" value="Prefix marker for labels instrumented for dead-code analysis." />
       </node>
     </node>
     <node concept="3Tm1VV" id="3x0R1LJ5Dp3" role="1B3o_S" />
@@ -1186,9 +1189,9 @@
     <node concept="3Tm1VV" id="3x0R1LJ5Dj0" role="1B3o_S" />
     <node concept="2tJIrI" id="3x0R1LJ5Dj1" role="jymVt" />
     <node concept="2YIFZL" id="3x0R1LJ5Dj2" role="jymVt">
-      <property role="TrG5h" value="buildCBMCDecTabResult" />
+      <property role="TrG5h" value="buildDeadCodeResult" />
       <node concept="37vLTG" id="5zPqP2r32Hi" role="3clF46">
-        <property role="TrG5h" value="deacCodeAnalysisConfig" />
+        <property role="TrG5h" value="config" />
         <node concept="3Tqbb2" id="5zPqP2r32Kx" role="1tU5fm">
           <ref role="ehGHo" to="hj5x:3AX70SQiKF$" resolve="DeadCodeAnalysis" />
         </node>
@@ -1200,7 +1203,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="3x0R1LJ5Dj5" role="3clF46">
-        <property role="TrG5h" value="rawResult" />
+        <property role="TrG5h" value="rawRes" />
         <node concept="3uibUv" id="3x0R1LJ5Dj6" role="1tU5fm">
           <ref role="3uigEE" to="rbq9:6iM0fX1N0qr" resolve="CBMCRawResult" />
         </node>
@@ -1228,7 +1231,7 @@
                   <ref role="1Pybhc" to="8ear:6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
                   <ref role="37wK5l" to="8ear:6GZ1x5Gshjx" resolve="buildCBMCLiftedResult" />
                   <node concept="3cpWs2" id="5zPqP2r33o2" role="37wK5m">
-                    <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                    <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawRes" />
                   </node>
                   <node concept="37vLTw" id="5zPqP2r33o3" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LJ5Dj3" resolve="stmt" />
@@ -1242,7 +1245,7 @@
           </node>
           <node concept="2OqwBi" id="5zPqP2r336A" role="3clFbw">
             <node concept="37vLTw" id="5zPqP2r331Y" role="2Oq$k0">
-              <ref role="3cqZAo" node="5zPqP2r32Hi" resolve="deacCodeAnalysisConfig" />
+              <ref role="3cqZAo" node="5zPqP2r32Hi" resolve="config" />
             </node>
             <node concept="3TrcHB" id="5zPqP2r33mD" role="2OqNvi">
               <ref role="3TsBF5" to="hj5x:5zPqP2r2gS_" resolve="provideTracesToReachableCode" />
@@ -1259,11 +1262,11 @@
                     <node concept="1pGfFk" id="6GZ1x5Gshlx" role="2ShVmc">
                       <ref role="37wK5l" to="eqhl:54VWoniifzb" resolve="CBMCLiftedResult" />
                       <node concept="37vLTw" id="2bm2UiI2Taz" role="37wK5m">
-                        <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                        <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawRes" />
                       </node>
                       <node concept="2OqwBi" id="6GZ1x5Gshly" role="37wK5m">
                         <node concept="37vLTw" id="2bm2UiI2TcM" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                          <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawRes" />
                         </node>
                         <node concept="2S8uIT" id="6GZ1x5Gshl$" role="2OqNvi">
                           <ref role="2S8YL0" to="rbq9:7N0A15Xmn67" resolve="delayInMillis" />
@@ -1271,7 +1274,7 @@
                       </node>
                       <node concept="2OqwBi" id="6GZ1x5Gshl_" role="37wK5m">
                         <node concept="37vLTw" id="2bm2UiI2Te_" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                          <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawRes" />
                         </node>
                         <node concept="liA8E" id="6GZ1x5GshlB" role="2OqNvi">
                           <ref role="37wK5l" to="rbq9:19O7J9dBE6" resolve="getRawResultKind" />
@@ -1311,10 +1314,17 @@
       <node concept="3uibUv" id="3x0R1LJ5Djm" role="3clF45">
         <ref role="3uigEE" node="3x0R1LJ5Dg_" resolve="DeadCodeResult" />
       </node>
+      <node concept="NWlO9" id="2aPxU55ggOC" role="lGtFl">
+        <property role="NWlVz" value="Builds a result." />
+      </node>
+    </node>
+    <node concept="NWlO9" id="2aPxU55ggzt" role="lGtFl">
+      <property role="NWlVz" value="Builder for dead-code results." />
     </node>
   </node>
   <node concept="312cEu" id="3x0R1LJ5Dg_">
     <property role="TrG5h" value="DeadCodeResult" />
+    <node concept="2tJIrI" id="2aPxU55gf42" role="jymVt" />
     <node concept="3uibUv" id="6QX7yC5ss0_" role="1zkMxy">
       <ref role="3uigEE" node="6QX7yC5srRj" resolve="DeadCodeResultBase" />
     </node>
@@ -1324,6 +1334,9 @@
       <node concept="3Tm6S6" id="3x0R1LJ5DgD" role="1B3o_S" />
       <node concept="3Tqbb2" id="3x0R1LJ5DgE" role="1tU5fm">
         <ref role="ehGHo" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+      </node>
+      <node concept="NWlO9" id="2aPxU55gfaU" role="lGtFl">
+        <property role="NWlVz" value="Statement for which we have this dead-code result." />
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5DgU" role="jymVt" />
@@ -1362,6 +1375,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="NWlO9" id="2aPxU55gfPN" role="lGtFl">
+        <property role="NWlVz" value="Constructor." />
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Dhs" role="jymVt" />
@@ -1457,7 +1473,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5ZEsW90jDqD" role="3cqZAp" />
         <node concept="3clFbF" id="3AX70SQiHf4" role="3cqZAp">
           <node concept="3cpWs3" id="4QaxHTob4KS" role="3clFbG">
             <node concept="Xl_RD" id="4QaxHTob4OP" role="3uHU7w">
@@ -1500,6 +1515,15 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="2aPxU55gfRH" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="2aPxU55gfY8" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
+    <node concept="NWlO9" id="2aPxU55geZ$" role="lGtFl">
+      <property role="NWlVz" value="Result of a deadcode analysis." />
     </node>
   </node>
   <node concept="312cEu" id="3_HSwtcWnhZ">
@@ -1576,6 +1600,9 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6QX7yC5srX7" role="1B3o_S" />
+      <node concept="NWlO9" id="2aPxU55ggpY" role="lGtFl">
+        <property role="NWlVz" value="Constructor" />
+      </node>
     </node>
     <node concept="2tJIrI" id="6QX7yC5ssWT" role="jymVt" />
     <node concept="3clFb_" id="6rPcxxV51LL" role="jymVt">
@@ -1593,6 +1620,12 @@
       </node>
       <node concept="3Tm1VV" id="6rPcxxV50uR" role="1B3o_S" />
       <node concept="17QB3L" id="6rPcxxV51L9" role="3clF45" />
+      <node concept="2AHcQZ" id="2aPxU55ggdr" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="2aPxU55gggB" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
     </node>
     <node concept="2tJIrI" id="6rPcxxV5cpr" role="jymVt" />
     <node concept="3clFb_" id="4QaxHTo8MvL" role="jymVt">
@@ -1617,6 +1650,9 @@
       <node concept="2AHcQZ" id="4QaxHTo8MvU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="NWlO9" id="2aPxU55ggjI" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
     </node>
     <node concept="2tJIrI" id="4QaxHTo8MJ0" role="jymVt" />
     <node concept="3clFb_" id="4QaxHTo8Q4V" role="jymVt">
@@ -1639,8 +1675,14 @@
       <node concept="2AHcQZ" id="4QaxHTo8Q54" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="NWlO9" id="2aPxU55ggmQ" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
     </node>
     <node concept="2tJIrI" id="6QX7yC5ssXv" role="jymVt" />
+    <node concept="NWlO9" id="2aPxU55ggrG" role="lGtFl">
+      <property role="NWlVz" value="Base class for dead-code results." />
+    </node>
   </node>
 </model>
 
