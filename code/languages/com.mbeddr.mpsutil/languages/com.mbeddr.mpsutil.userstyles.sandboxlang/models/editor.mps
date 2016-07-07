@@ -79,7 +79,7 @@
     <node concept="3EZMnI" id="75yNFwrUnz9" role="2wV5jI">
       <node concept="3F0ifn" id="75yNFwrUnzs" role="3EZMnx">
         <property role="3F0ifm" value="abc" />
-        <ref role="1k5W1q" node="75yNFwrUn$s" resolve="style1" />
+        <ref role="1k5W1q" node="4RSukN8gTM9" resolve="style1" />
       </node>
       <node concept="3F0ifn" id="75yNFwrUnzI" role="3EZMnx">
         <property role="3F0ifm" value="def" />
@@ -111,6 +111,16 @@
       <node concept="1Ex9Rl" id="1gJuyfgBEzq" role="lGtFl">
         <property role="34HCRG" value="Abcde 2" />
         <property role="34GvKv" value="This is the description of Abcde 2" />
+      </node>
+    </node>
+    <node concept="14StLt" id="4RSukN8gTM9" role="V601i">
+      <property role="TrG5h" value="style1" />
+      <node concept="Vb9p2" id="4RSukN8gTMc" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
+      </node>
+      <node concept="1Ex9Rl" id="4RSukN8gTMf" role="lGtFl">
+        <property role="34HCRG" value="Abcde 1" />
+        <property role="34GvKv" value="This is the description of Abcde 1" />
       </node>
     </node>
   </node>

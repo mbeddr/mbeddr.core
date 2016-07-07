@@ -19,9 +19,28 @@
         <reference id="6085839724192268105" name="satemachine" index="1W1s6P" />
       </concept>
     </language>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
     <language id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components">
       <concept id="807751914255908947" name="com.mbeddr.analyses.cbmc.components.structure.ComponentsCBMCAnalysis" flags="ng" index="gU3p5">
         <reference id="807751914255908948" name="analyzedComponent" index="gU3p2" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -54,6 +73,7 @@
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
         <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
         <property id="4053481679317021372" name="check_nan" index="1nvAUw" />
+        <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
         <property id="4053481679317021369" name="check_array_bounds" index="1nvAU_" />
         <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
         <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
@@ -63,6 +83,7 @@
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
       <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
         <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
         <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
         <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
@@ -74,6 +95,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
@@ -113,9 +135,26 @@
         <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
       </concept>
     </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
@@ -229,7 +268,7 @@
     <node concept="1nvAUE" id="3f3CxMdueDq" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
       <property role="2l50Mm" value="false" />
@@ -241,6 +280,46 @@
       <property role="2o64iB" value="true" />
       <property role="2lUGe1" value="true" />
       <ref role="3V$Cn$" to="4ysy:3f3CxMduaan" resolve="robustnessEntry" />
+    </node>
+    <node concept="1X3_iC" id="6P_afAIpMT5" role="lGtFl">
+      <property role="3V$3am" value="analyses" />
+      <property role="3V$3ak" value="5d09074f-babf-4f2b-b78b-e9929af0f3be/6472990431939580591/6472990431939692464" />
+      <node concept="1nvAUE" id="6P_afAIpFXH" role="8Wnug">
+        <property role="2lelRm" value="false" />
+        <property role="2lUGe1" value="true" />
+        <property role="2l50Lc" value="false" />
+        <property role="22uFEx" value="false" />
+        <property role="1Bxwel" value="false" />
+        <property role="2l50Ka" value="none" />
+        <property role="2l50Km" value="none" />
+        <property role="2lUGeZ" value="true" />
+        <property role="2lUGdP" value="false" />
+        <property role="2lUHrg" value="25" />
+        <property role="2lUGbD" value="none" />
+        <property role="2lUGcN" value="false" />
+        <property role="2l50Mm" value="false" />
+        <property role="1nvAU_" value="true" />
+        <property role="1nvAUF" value="true" />
+        <property role="1nvAUw" value="true" />
+        <property role="1nvAU$" value="true" />
+        <property role="1nvAUA" value="true" />
+        <property role="1nvAUB" value="true" />
+        <property role="2o64iB" value="true" />
+        <ref role="3V$Cn$" to="4ysy:7h0Zhz7xCsH" resolve="statemachineClient" />
+      </node>
+    </node>
+    <node concept="2f$52y" id="4IrqaYbvJqx" role="lGtFl">
+      <node concept="3vAitl" id="4IrqaYbvJqy" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="21.06.2016 07:30:01" />
+        <property role="19LeSh" value="Constant_nooo61_b0a" />
+        <ref role="19LoX1" node="6P_afAIpFXH" />
+        <node concept="19SGf9" id="4IrqaYbvJqz" role="3ajGZ5">
+          <node concept="19SUe$" id="4IrqaYbvJq$" role="19SJt6">
+            <property role="19SUeA" value="do NOT remove: this is test for commented analyses-configurations" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="29QVxn" id="4$9c1ZwB$1d" />

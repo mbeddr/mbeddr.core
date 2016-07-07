@@ -2,11 +2,11 @@
 <model ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,11 +25,11 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
-    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -357,13 +357,28 @@
     <node concept="3EZMnI" id="4fjBjwDqlY6" role="2wV5jI">
       <node concept="l2Vlx" id="4fjBjwDqlY8" role="2iSdaV" />
       <node concept="3F0ifn" id="4fjBjwDqlYa" role="3EZMnx">
-        <property role="3F0ifm" value="__CPROVER_assume(" />
+        <property role="3F0ifm" value="__CPROVER_assume" />
+      </node>
+      <node concept="3F0ifn" id="6BowXlDULXK" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="6BowXlDULZA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="4fjBjwDqlYc" role="3EZMnx">
         <ref role="1NtTu8" to="q5q6:4fjBjwDqlY3" />
       </node>
       <node concept="3F0ifn" id="4fjBjwDqlYg" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6BowXlDUM1i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6BowXlDUM1M" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="6BowXlDUM3L" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
@@ -2498,6 +2513,9 @@
     <property role="Rtri_" value="100" />
     <property role="3NULOk" value="VerificationConditions_Coloring" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2aJ2om" id="2CUyvm3R9ua" role="CpUAK">
+      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="analysesInEditor" />
+    </node>
     <node concept="RtMap" id="3ASzZs54g6N" role="RtEXV">
       <node concept="3clFbS" id="3ASzZs54g6O" role="2VODD2">
         <node concept="3clFbF" id="148xcJ49mTO" role="3cqZAp">
@@ -5900,6 +5918,33 @@
         <node concept="gc7cB" id="5qOP6rjnNkh" role="3EZMnx">
           <node concept="3VJUX4" id="5qOP6rjnNkj" role="3YsKMw">
             <node concept="3clFbS" id="5qOP6rjnNkl" role="2VODD2">
+              <node concept="3clFbJ" id="6BowXlDuoCV" role="3cqZAp">
+                <node concept="3clFbS" id="6BowXlDuoCW" role="3clFbx">
+                  <node concept="3cpWs6" id="6BowXlDuoCX" role="3cqZAp">
+                    <node concept="2ShNRf" id="AzX4JmAr6d" role="3cqZAk">
+                      <node concept="1pGfFk" id="AzX4JmAr6e" role="2ShVmc">
+                        <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
+                        <node concept="pncrf" id="AzX4JmAr6f" role="37wK5m" />
+                        <node concept="10M0yZ" id="148xcJ47ESt" role="37wK5m">
+                          <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                        </node>
+                        <node concept="3cmrfG" id="AzX4JmAr6h" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="3cmrfG" id="AzX4JmAr6i" role="37wK5m">
+                          <property role="3cmrfH" value="5" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="6BowXlDuqsK" role="3clFbw">
+                  <ref role="37wK5l" to="6ae5:6BowXlDupeD" resolve="allSuccessful" />
+                  <ref role="1Pybhc" to="6ae5:3ASzZs53yn9" resolve="AnalysesResultsCache" />
+                  <node concept="pncrf" id="6BowXlDuqsL" role="37wK5m" />
+                </node>
+              </node>
               <node concept="3clFbJ" id="7kzfSagLmLs" role="3cqZAp">
                 <node concept="3clFbS" id="7kzfSagLmLv" role="3clFbx">
                   <node concept="3cpWs6" id="7kzfSagLmZx" role="3cqZAp">
@@ -5954,19 +5999,19 @@
                   <node concept="pncrf" id="7kzfSagLnpZ" role="37wK5m" />
                 </node>
               </node>
-              <node concept="3clFbF" id="AzX4JmAr6c" role="3cqZAp">
-                <node concept="2ShNRf" id="AzX4JmAr6d" role="3clFbG">
-                  <node concept="1pGfFk" id="AzX4JmAr6e" role="2ShVmc">
+              <node concept="3cpWs6" id="6BowXlDuoiO" role="3cqZAp">
+                <node concept="2ShNRf" id="6BowXlDuoiP" role="3cqZAk">
+                  <node concept="1pGfFk" id="6BowXlDuoiQ" role="2ShVmc">
                     <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
-                    <node concept="pncrf" id="AzX4JmAr6f" role="37wK5m" />
-                    <node concept="10M0yZ" id="148xcJ47ESt" role="37wK5m">
+                    <node concept="pncrf" id="6BowXlDuoiR" role="37wK5m" />
+                    <node concept="10M0yZ" id="6BowXlDuoiS" role="37wK5m">
+                      <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
                       <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
                     </node>
-                    <node concept="3cmrfG" id="AzX4JmAr6h" role="37wK5m">
+                    <node concept="3cmrfG" id="6BowXlDuoiT" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
-                    <node concept="3cmrfG" id="AzX4JmAr6i" role="37wK5m">
+                    <node concept="3cmrfG" id="6BowXlDuoiU" role="37wK5m">
                       <property role="3cmrfH" value="5" />
                     </node>
                   </node>
@@ -5977,9 +6022,6 @@
         </node>
         <node concept="Rtstu" id="5qOP6rjnNDM" role="3EZMnx" />
       </node>
-    </node>
-    <node concept="2aJ2om" id="2CUyvm3R9ua" role="CpUAK">
-      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="analysesInEditor" />
     </node>
   </node>
   <node concept="312cEu" id="7kzfSagzOZJ">
@@ -6649,6 +6691,9 @@
     <property role="Rtri_" value="100" />
     <property role="3NULOk" value="TraceProjectionInCode" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2aJ2om" id="2CUyvm3Rc9V" role="CpUAK">
+      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="analysesInEditor" />
+    </node>
     <node concept="RtMap" id="7kzfSag_8G2" role="RtEXV">
       <node concept="3clFbS" id="7kzfSag_8G3" role="2VODD2">
         <node concept="3clFbF" id="4n62pP$TJta" role="3cqZAp">
@@ -7342,9 +7387,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2aJ2om" id="2CUyvm3Rc9V" role="CpUAK">
-      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="analysesInEditor" />
     </node>
   </node>
   <node concept="PKFIW" id="3LhOsKAEjDZ">

@@ -7,6 +7,9 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="99b0bd58-d9c1-4744-b159-3ea91da414ff" name="de.itemis.mps.nativelibs" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -258,6 +261,9 @@
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -1790,6 +1796,20 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="vrV6u" id="7QuBUQjPowV">
+    <property role="TrG5h" value="diagramPaletteEntryProvider" />
+    <property role="3GE5qa" value="extension" />
+    <node concept="3uibUv" id="7QuBUQjRQZi" role="luc8K">
+      <ref role="3uigEE" to="nkm5:7QuBUQjROKu" resolve="IPaletteEntryExtensionProvider" />
+    </node>
+  </node>
+  <node concept="vrV6u" id="4KemxTdS2uY">
+    <property role="3GE5qa" value="extension" />
+    <property role="TrG5h" value="diagramConnectionTypesProvider" />
+    <node concept="3uibUv" id="4KemxTdS2Vg" role="luc8K">
+      <ref role="3uigEE" to="nkm5:4KemxTdS2xO" resolve="IConnectionTypesExtensionProvider" />
     </node>
   </node>
 </model>
