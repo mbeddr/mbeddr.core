@@ -116,6 +116,7 @@
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -3136,13 +3137,21 @@
     <node concept="3EZMnI" id="7Mb2akafE8r" role="2wV5jI">
       <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="4ZoQlQrowr$" role="3EZMnx">
-        <property role="3F0ifm" value="safe read action:" />
+        <property role="3F0ifm" value="safe read action with" />
         <node concept="Vb9p2" id="4ZoQlQrqCyx" role="3F10Kt">
           <property role="Vbekb" value="BOLD_ITALIC" />
         </node>
         <node concept="VechU" id="4ZoQlQrqVqT" role="3F10Kt">
           <property role="Vb096" value="DARK_BLUE" />
         </node>
+      </node>
+      <node concept="3F1sOY" id="5KHBa6l7Fyg" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <property role="1$x2rV" value="global repository" />
+        <ref role="1NtTu8" to="hba4:1eZSuKdVoku" />
+      </node>
+      <node concept="3F0ifn" id="5KHBa6l7Fz0" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="7Mb2akafE8v" role="3EZMnx">
         <ref role="1NtTu8" to="hba4:4ZoQlQrn_dn" />
@@ -3162,13 +3171,20 @@
     <node concept="3EZMnI" id="1IlnVQ9J0VZ" role="2wV5jI">
       <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="1IlnVQ9J0W0" role="3EZMnx">
-        <property role="3F0ifm" value="safe write action:" />
+        <property role="3F0ifm" value="safe write action with" />
         <node concept="Vb9p2" id="1IlnVQ9J0W1" role="3F10Kt">
           <property role="Vbekb" value="BOLD_ITALIC" />
         </node>
         <node concept="VechU" id="1IlnVQ9J0W2" role="3F10Kt">
           <property role="Vb096" value="DARK_BLUE" />
         </node>
+      </node>
+      <node concept="3F1sOY" id="5KHBa6l7Gz$" role="3EZMnx">
+        <property role="1$x2rV" value="global repository" />
+        <ref role="1NtTu8" to="hba4:5KHBa6l7Gzt" />
+      </node>
+      <node concept="3F0ifn" id="5KHBa6l7G$k" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="1IlnVQ9J0W3" role="3EZMnx">
         <ref role="1NtTu8" to="hba4:1IlnVQ9J0Vr" />

@@ -60,6 +60,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -167,6 +168,7 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
+      <concept id="6591434695301284067" name="com.mbeddr.core.modules.structure.LabelStatement" flags="ng" index="3ITNCd" />
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -432,6 +434,10 @@
               <ref role="3ZUYvu" node="3AX70SQwh7S" resolve="aParam" />
             </node>
           </node>
+        </node>
+        <node concept="3XISUE" id="7SLmAEO6F85" role="3XIRFZ" />
+        <node concept="3ITNCd" id="7SLmAEO6Dhf" role="3XIRFZ">
+          <property role="TrG5h" value="l1" />
         </node>
         <node concept="1_9egQ" id="4QaxHTomk$X" role="3XIRFZ">
           <node concept="3pqW6w" id="4QaxHTomkT3" role="1_9egR">
