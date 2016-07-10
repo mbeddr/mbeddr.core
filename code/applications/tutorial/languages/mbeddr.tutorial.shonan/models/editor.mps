@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -170,6 +171,11 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
     </language>
     <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations">
       <concept id="8658283006837849469" name="de.itemis.mps.editor.math.notations.structure.PowerEditor" flags="ng" index="jtDJS">
@@ -370,6 +376,17 @@
         <node concept="l2Vlx" id="yso5_brSEf" role="2iSdaV" />
         <node concept="3F0ifn" id="yso5_brSDi" role="3EZMnx">
           <property role="3F0ifm" value="stencil" />
+        </node>
+        <node concept="_tjkj" id="a$mxDpdUWY" role="3EZMnx">
+          <node concept="3EZMnI" id="a$mxDpdUXU" role="_tjki">
+            <node concept="l2Vlx" id="a$mxDpdUXV" role="2iSdaV" />
+            <node concept="3F0ifn" id="a$mxDpdUY4" role="3EZMnx">
+              <property role="3F0ifm" value="with" />
+            </node>
+            <node concept="3F1sOY" id="a$mxDpdUYd" role="3EZMnx">
+              <ref role="1NtTu8" to="5l2n:a$mxDpdUKW" />
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="yso5_brSEO" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -1036,6 +1053,26 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="a$mxDpdQAp">
+    <property role="3GE5qa" value="stencil.user" />
+    <ref role="1XX52x" to="5l2n:a$mxDpdQAd" resolve="BlockStrategy" />
+    <node concept="3EZMnI" id="a$mxDpdQAu" role="2wV5jI">
+      <node concept="l2Vlx" id="a$mxDpdQAv" role="2iSdaV" />
+      <node concept="PMmxH" id="a$mxDpdQAr" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="a$mxDpdQAH" role="3EZMnx">
+        <ref role="1NtTu8" to="5l2n:a$mxDpdQAh" resolve="size" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="a$mxDpdUKR">
+    <property role="3GE5qa" value="stencil.user" />
+    <ref role="1XX52x" to="5l2n:a$mxDpdUKI" resolve="CacheStrategy" />
+    <node concept="PMmxH" id="a$mxDpdUKT" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

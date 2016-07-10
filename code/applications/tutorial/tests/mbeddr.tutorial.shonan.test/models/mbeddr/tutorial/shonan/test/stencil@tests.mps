@@ -69,7 +69,9 @@
         <child id="620476785305003194" name="outputExpression" index="13TOjz" />
         <child id="620476785305003187" name="outputVariable" index="13TOjE" />
         <child id="620476785304277577" name="elements" index="13V78g" />
+        <child id="190376153468873788" name="strategy" index="1r$ZoA" />
       </concept>
+      <concept id="190376153468873774" name="mbeddr.tutorial.shonan.structure.CacheStrategy" flags="ng" index="1r$ZoO" />
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
@@ -455,6 +457,7 @@
               </node>
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeADZ" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="3ZRrFoQ$Tlf" role="3XIRFZ" />
         <node concept="1_9egQ" id="7BT5P44g8s7" role="3XIRFZ">
@@ -550,6 +553,7 @@
               </node>
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeB_x" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="3ZRrFoQ$WlP" role="3XIRFZ" />
         <node concept="1_9egQ" id="3ZRrFoQ$WlQ" role="3XIRFZ">
@@ -770,6 +774,7 @@
               </node>
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeDnb" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="51n6K5CVhiJ" role="3XIRFZ" />
         <node concept="1_9egQ" id="7BT5P449nBM" role="3XIRFZ">
@@ -1018,6 +1023,7 @@
               </node>
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeF95" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="4G37Yh4GCCb" role="3XIRFZ" />
         <node concept="1_9egQ" id="4G37Yh4GCCc" role="3XIRFZ">
@@ -1324,6 +1330,7 @@
               <ref role="13Sk8E" node="4G37Yh4H6sF" resolve="w4" />
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeHJb" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="4G37Yh4GT2v" role="3XIRFZ" />
         <node concept="1_9egQ" id="4G37Yh4GT2w" role="3XIRFZ">
@@ -1481,6 +1488,7 @@
               <ref role="3ZVs_2" node="4G37Yh4IBYP" resolve="a" />
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeI6L" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="4G37Yh4Iyl1" role="3XIRFZ" />
         <node concept="1_9egQ" id="4G37Yh4Iyl2" role="3XIRFZ">
@@ -1638,6 +1646,7 @@
               <ref role="3ZVs_2" node="4G37Yh4IFbY" resolve="a" />
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeI6V" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="4G37Yh4IFcA" role="3XIRFZ" />
         <node concept="1_9egQ" id="4G37Yh4IFcB" role="3XIRFZ">
@@ -1870,6 +1879,7 @@
               <ref role="3ZVs_2" node="4G37Yh4IL6P" resolve="a" />
             </node>
           </node>
+          <node concept="1r$ZoO" id="a$mxDpeJ9N" role="1r$ZoA" />
         </node>
         <node concept="3XISUE" id="4G37Yh4IL7t" role="3XIRFZ" />
         <node concept="1_9egQ" id="4G37Yh4IL7u" role="3XIRFZ">

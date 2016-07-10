@@ -43,6 +43,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -190,6 +191,11 @@
       <property role="20kJfa" value="outputExpression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="a$mxDpdUKW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <ref role="20lvS9" node="a$mxDpdQAc" resolve="IStencilStrategy" />
     </node>
     <node concept="PrWs8" id="yso5_bs196" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
@@ -486,6 +492,37 @@
     </node>
     <node concept="PrWs8" id="17Z2wzk7NIY" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="a$mxDpdQAc">
+    <property role="1pbfSe" value="1541129126" />
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="IStencilStrategy" />
+  </node>
+  <node concept="1TIwiD" id="a$mxDpdQAd">
+    <property role="1pbfSe" value="1541129127" />
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="BlockStrategy" />
+    <property role="34LRSv" value="blocking" />
+    <property role="R4oN_" value="blocking" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="a$mxDpdQAh" role="1TKVEl">
+      <property role="TrG5h" value="size" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="a$mxDpdQAe" role="PzmwI">
+      <ref role="PrY4T" node="a$mxDpdQAc" resolve="IStencilStrategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="a$mxDpdUKI">
+    <property role="1pbfSe" value="1541146184" />
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="CacheStrategy" />
+    <property role="34LRSv" value="caching" />
+    <property role="R4oN_" value="caching" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="a$mxDpdUKJ" role="PzmwI">
+      <ref role="PrY4T" node="a$mxDpdQAc" resolve="IStencilStrategy" />
     </node>
   </node>
 </model>

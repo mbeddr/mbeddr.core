@@ -71,6 +71,10 @@
       <concept id="620476785304242762" name="mbeddr.tutorial.shonan.structure.StencilComputation" flags="ng" index="13WYCj">
         <child id="620476785305003194" name="outputExpression" index="13TOjz" />
         <child id="620476785305003187" name="outputVariable" index="13TOjE" />
+        <child id="190376153468873788" name="strategy" index="1r$ZoA" />
+      </concept>
+      <concept id="190376153468856717" name="mbeddr.tutorial.shonan.structure.BlockStrategy" flags="ng" index="1r$Nen">
+        <property id="190376153468856721" name="size" index="1r$Neb" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -2909,6 +2913,9 @@
           <node concept="3TlMh9" id="39TGzx5ybh$" role="13TOjz">
             <property role="2hmy$m" value="0" />
           </node>
+          <node concept="1r$Nen" id="a$mxDpeOfO" role="1r$ZoA">
+            <property role="1r$Neb" value="10" />
+          </node>
         </node>
         <node concept="3XISUE" id="39TGzx5y441" role="3XIRFZ" />
         <node concept="13WYCj" id="39TGzx5yk2T" role="3XIRFZ">
@@ -2926,6 +2933,9 @@
               <ref role="3ZVs_2" node="39TGzx5xPHL" resolve="buf" />
             </node>
           </node>
+          <node concept="1r$Nen" id="a$mxDpeRsb" role="1r$ZoA">
+            <property role="1r$Neb" value="10" />
+          </node>
         </node>
         <node concept="3XISUE" id="39TGzx5xPJE" role="3XIRFZ" />
         <node concept="13WYCj" id="39TGzx5yuwl" role="3XIRFZ">
@@ -2934,6 +2944,9 @@
           </node>
           <node concept="3ZVu4v" id="39TGzx5yyuD" role="13TOjz">
             <ref role="3ZVs_2" node="39TGzx5xPHw" resolve="edge" />
+          </node>
+          <node concept="1r$Nen" id="a$mxDpeYc7" role="1r$ZoA">
+            <property role="1r$Neb" value="10" />
           </node>
         </node>
         <node concept="3XISUE" id="39TGzx5xPKf" role="3XIRFZ" />
@@ -3055,6 +3068,9 @@
                   </node>
                 </node>
               </node>
+              <node concept="1r$Nen" id="a$mxDpf31V" role="1r$ZoA">
+                <property role="1r$Neb" value="10" />
+              </node>
             </node>
             <node concept="3XISUE" id="39TGzx5xPLH" role="3XIRFZ" />
             <node concept="13WYCj" id="39TGzx5z9Vn" role="3XIRFZ">
@@ -3063,6 +3079,9 @@
               </node>
               <node concept="3ZVu4v" id="39TGzx5z9ZI" role="13TOjz">
                 <ref role="3ZVs_2" node="39TGzx5xPHm" resolve="new" />
+              </node>
+              <node concept="1r$Nen" id="a$mxDpf4FO" role="1r$ZoA">
+                <property role="1r$Neb" value="10" />
               </node>
             </node>
           </node>
@@ -3082,6 +3101,9 @@
             <node concept="3ZVu4v" id="39TGzx5zoWl" role="1_9fRO">
               <ref role="3ZVs_2" node="39TGzx5xPHc" resolve="old" />
             </node>
+          </node>
+          <node concept="1r$Nen" id="a$mxDpf7V6" role="1r$ZoA">
+            <property role="1r$Neb" value="10" />
           </node>
         </node>
         <node concept="3XISUE" id="39TGzx5xPMW" role="3XIRFZ" />
