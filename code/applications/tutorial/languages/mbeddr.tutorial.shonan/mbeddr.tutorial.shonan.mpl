@@ -256,6 +256,7 @@
     <dependency reexport="false" scope="generate-into">766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)</dependency>
     <dependency reexport="false">b68cce94-7c2b-436e-8b69-c33a9bcb11a0(mbeddr.tutorial.shonan.runtime)</dependency>
     <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
+    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
