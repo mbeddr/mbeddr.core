@@ -1232,7 +1232,11 @@
                                 <property role="TrG5h" value="origNode" />
                                 <node concept="17QB3L" id="57Wj6IP9Zzu" role="1tU5fm" />
                                 <node concept="2OqwBi" id="57Wj6IPaxoI" role="33vP2m">
+                                  <node concept="liA8E" id="3rfnEZlUXDa" role="2OqNvi">
+                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  </node>
                                   <node concept="2OqwBi" id="57Wj6IP9Z2z" role="2Oq$k0">
+                                    <node concept="2yIwOk" id="3rfnEZlUXkC" role="2OqNvi" />
                                     <node concept="2YIFZM" id="57Wj6IP7AMj" role="2Oq$k0">
                                       <ref role="1Pybhc" node="7iLQIU2tUXc" resolve="NodesFinderFacade" />
                                       <ref role="37wK5l" node="7iLQIU2tWIK" resolve="findOriginalNode" />
@@ -1240,10 +1244,6 @@
                                         <ref role="2Gs0qQ" node="7q0zW8lzAmq" resolve="crtRawState" />
                                       </node>
                                     </node>
-                                    <node concept="2yIwOk" id="3rfnEZlUXkC" role="2OqNvi" />
-                                  </node>
-                                  <node concept="liA8E" id="3rfnEZlUXDa" role="2OqNvi">
-                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                                   </node>
                                 </node>
                               </node>
@@ -2802,13 +2802,6 @@
           </node>
         </node>
         <node concept="3clFbJ" id="4Ow3NnwRx8e" role="3cqZAp">
-          <node concept="3clFbS" id="4Ow3NnwRx8f" role="3clFbx">
-            <node concept="3cpWs6" id="4Ow3NnwRx8g" role="3cqZAp">
-              <node concept="3clFbT" id="4Ow3NnwRx8h" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
           <node concept="2OqwBi" id="47H95zxq8G_" role="3clFbw">
             <node concept="37vLTw" id="47H95zxq8GA" role="2Oq$k0">
               <ref role="3cqZAo" node="4Ow3NnwWNsg" resolve="fullLHSValue" />
@@ -2817,6 +2810,13 @@
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="47H95zxq8GC" role="37wK5m">
                 <property role="Xl_RC" value="&amp;" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4Ow3NnwRx8f" role="3clFbx">
+            <node concept="3cpWs6" id="4Ow3NnwRx8g" role="3cqZAp">
+              <node concept="3clFbT" id="4Ow3NnwRx8h" role="3cqZAk">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
@@ -4457,11 +4457,11 @@
                 <node concept="3clFbF" id="3EhlX7RGihY" role="3cqZAp">
                   <node concept="d57v9" id="3EhlX7RGioa" role="3clFbG">
                     <node concept="3cpWs3" id="3EhlX7RGkNq" role="37vLTx">
-                      <node concept="Xl_RD" id="3EhlX7RGjvM" role="3uHU7B">
-                        <property role="Xl_RC" value=" --varDecl--&gt; " />
-                      </node>
                       <node concept="37vLTw" id="1dwnYWHqZ8G" role="3uHU7w">
                         <ref role="3cqZAo" node="1dwnYWHqXUZ" resolve="assignedVariableConceptName" />
+                      </node>
+                      <node concept="Xl_RD" id="3EhlX7RGjvM" role="3uHU7B">
+                        <property role="Xl_RC" value=" --varDecl--&gt; " />
                       </node>
                     </node>
                     <node concept="37vLTw" id="3EhlX7RGihX" role="37vLTJ">
@@ -5439,6 +5439,17 @@
                             </node>
                             <node concept="3cpWs3" id="4a8JajkMaMF" role="3uHU7B">
                               <node concept="3cpWs3" id="4a8JajkMaMG" role="3uHU7B">
+                                <node concept="2OqwBi" id="3rfnEZlVqjl" role="3uHU7w">
+                                  <node concept="2OqwBi" id="4a8JajkMaMU" role="2Oq$k0">
+                                    <node concept="37vLTw" id="4a8JajkMaMV" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4a8JajkMaM8" resolve="originalNode" />
+                                    </node>
+                                    <node concept="2yIwOk" id="3rfnEZlVqcI" role="2OqNvi" />
+                                  </node>
+                                  <node concept="liA8E" id="3rfnEZlVque" role="2OqNvi">
+                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  </node>
+                                </node>
                                 <node concept="3cpWs3" id="4a8JajkMaMH" role="3uHU7B">
                                   <node concept="3cpWs3" id="4a8JajkMaMI" role="3uHU7B">
                                     <node concept="3cpWs3" id="4a8JajkMaMJ" role="3uHU7B">
@@ -5470,17 +5481,6 @@
                                   </node>
                                   <node concept="Xl_RD" id="4a8JajkMaMT" role="3uHU7w">
                                     <property role="Xl_RC" value="\n\t\t " />
-                                  </node>
-                                </node>
-                                <node concept="2OqwBi" id="3rfnEZlVqjl" role="3uHU7w">
-                                  <node concept="2OqwBi" id="4a8JajkMaMU" role="2Oq$k0">
-                                    <node concept="37vLTw" id="4a8JajkMaMV" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="4a8JajkMaM8" resolve="originalNode" />
-                                    </node>
-                                    <node concept="2yIwOk" id="3rfnEZlVqcI" role="2OqNvi" />
-                                  </node>
-                                  <node concept="liA8E" id="3rfnEZlVque" role="2OqNvi">
-                                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                                   </node>
                                 </node>
                               </node>

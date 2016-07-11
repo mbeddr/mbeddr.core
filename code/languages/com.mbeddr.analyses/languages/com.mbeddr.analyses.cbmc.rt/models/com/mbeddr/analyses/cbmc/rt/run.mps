@@ -2638,14 +2638,6 @@
               </node>
               <node concept="3clFbF" id="5BkFC2yiYoQ" role="3cqZAp">
                 <node concept="37vLTI" id="5BkFC2yiYoR" role="3clFbG">
-                  <node concept="2OqwBi" id="5BkFC2yiYoS" role="37vLTJ">
-                    <node concept="3cpWsa" id="5BkFC2yiYoT" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5BkFC2yiYoA" resolve="conf" />
-                    </node>
-                    <node concept="2S8uIT" id="5BkFC2yiYoU" role="2OqNvi">
-                      <ref role="2S8YL0" node="2xigTGTFegf" resolve="functionName" />
-                    </node>
-                  </node>
                   <node concept="1rXfSq" id="1dwnYWHvDPn" role="37vLTx">
                     <ref role="37wK5l" node="3kUGzlRgWzQ" resolve="computeEntryFunctionName" />
                     <node concept="2OqwBi" id="1dwnYWHvE24" role="37wK5m">
@@ -2655,6 +2647,14 @@
                       <node concept="3TrEf2" id="1dwnYWHvEcp" role="2OqNvi">
                         <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
                       </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5BkFC2yiYoS" role="37vLTJ">
+                    <node concept="3cpWsa" id="5BkFC2yiYoT" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5BkFC2yiYoA" resolve="conf" />
+                    </node>
+                    <node concept="2S8uIT" id="5BkFC2yiYoU" role="2OqNvi">
+                      <ref role="2S8YL0" node="2xigTGTFegf" resolve="functionName" />
                     </node>
                   </node>
                 </node>
@@ -3060,10 +3060,10 @@
         <node concept="3cpWs6" id="3kUGzlRgW_n" role="3cqZAp">
           <node concept="3cpWs3" id="8Fyjet0nhG" role="3cqZAk">
             <node concept="2OqwBi" id="8Fyjet0qWk" role="3uHU7w">
+              <node concept="2yIwOk" id="1dwnYWHvD7p" role="2OqNvi" />
               <node concept="37vLTw" id="8Fyjet0qIh" role="2Oq$k0">
                 <ref role="3cqZAo" node="3kUGzlRgWzW" resolve="fct" />
               </node>
-              <node concept="2yIwOk" id="1dwnYWHvD7p" role="2OqNvi" />
             </node>
             <node concept="Xl_RD" id="3kUGzlRgW_p" role="3uHU7B">
               <property role="Xl_RC" value="ERROR (VerificationConfigurationUtils): Unexpected IFunctionLike object - " />
@@ -9192,14 +9192,14 @@
                             <node concept="3cpWs3" id="6GZ1x5GjocB" role="3uHU7B">
                               <node concept="3cpWs3" id="6GZ1x5GjocC" role="3uHU7B">
                                 <node concept="3cpWs3" id="6GZ1x5GjocD" role="3uHU7B">
-                                  <node concept="Xl_RD" id="6GZ1x5GjocE" role="3uHU7B">
-                                    <property role="Xl_RC" value="&lt;td bgcolor=" />
-                                  </node>
                                   <node concept="1rXfSq" id="1dwnYWHvJuv" role="3uHU7w">
                                     <ref role="37wK5l" node="6GZ1x5Gjoic" resolve="getColor" />
                                     <node concept="37vLTw" id="1dwnYWHvJAy" role="37wK5m">
                                       <ref role="3cqZAo" node="6GZ1x5GjobP" resolve="currentResult" />
                                     </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="6GZ1x5GjocE" role="3uHU7B">
+                                    <property role="Xl_RC" value="&lt;td bgcolor=" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="6GZ1x5GjocH" role="3uHU7w">
@@ -9225,14 +9225,14 @@
                         <node concept="d57v9" id="6GZ1x5GjocN" role="3clFbG">
                           <node concept="3cpWs3" id="6GZ1x5GjocO" role="37vLTx">
                             <node concept="3cpWs3" id="6GZ1x5GjocP" role="3uHU7B">
-                              <node concept="Xl_RD" id="6GZ1x5GjocQ" role="3uHU7B">
-                                <property role="Xl_RC" value="&lt;div class=\&quot;view\&quot;&gt;" />
-                              </node>
                               <node concept="1rXfSq" id="1dwnYWHvJZK" role="3uHU7w">
                                 <ref role="37wK5l" node="6GZ1x5GjodF" resolve="getResultInfo" />
                                 <node concept="37vLTw" id="1dwnYWHvKfC" role="37wK5m">
                                   <ref role="3cqZAo" node="6GZ1x5GjobP" resolve="currentResult" />
                                 </node>
+                              </node>
+                              <node concept="Xl_RD" id="6GZ1x5GjocQ" role="3uHU7B">
+                                <property role="Xl_RC" value="&lt;div class=\&quot;view\&quot;&gt;" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="6GZ1x5GjocT" role="3uHU7w">

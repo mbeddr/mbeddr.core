@@ -7,7 +7,7 @@
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
@@ -2190,6 +2190,104 @@
                   <property role="p6zMq" value="2" />
                   <property role="p6zMs" value="2" />
                   <property role="LIFWd" value="property_name" />
+                </node>
+              </node>
+            </node>
+            <node concept="1QiMYF" id="4hIKmDP3Lo" role="3XIRFZ">
+              <node concept="OjmMv" id="4hIKmDP3Lp" role="3SJzmv">
+                <node concept="19SGf9" id="4hIKmDP3Lq" role="OjmMu">
+                  <node concept="19SUe$" id="4hIKmDP3Lr" role="19SJt6">
+                    <property role="19SUeA" value="test projection of PowerExpression, see issue accent-1872" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="4hIKmDP3Ls" role="3XIRFZ">
+              <node concept="2zCgmc" id="4hIKmDP3Lt" role="1_9egR">
+                <node concept="2zCgmc" id="4hIKmDP3Lu" role="2zCggK">
+                  <node concept="3TlMh9" id="4hIKmDP3Lv" role="2zCggm">
+                    <property role="2hmy$m" value="12" />
+                  </node>
+                  <node concept="39$JCU" id="4hIKmDP3Lw" role="2zCggK">
+                    <property role="TrG5h" value="n" />
+                    <node concept="26Vqph" id="4hIKmDP3Lx" role="39z40R">
+                      <property role="2caQfQ" value="false" />
+                      <property role="2c7vTL" value="false" />
+                    </node>
+                    <node concept="3TlMh9" id="4hIKmDP3Ly" role="39$JC6">
+                      <property role="2hmy$m" value="123" />
+                    </node>
+                    <node concept="3TlMh9" id="4hIKmDP3Lz" role="39z1js">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                    <node concept="2BOciq" id="4hIKmDP3L$" role="39$JDZ">
+                      <node concept="2zCgmc" id="4hIKmDP3L_" role="3TlMhJ">
+                        <node concept="2BOciq" id="4hIKmDP3LA" role="2zCggK">
+                          <node concept="3TlMh9" id="4hIKmDP3LB" role="3TlMhJ">
+                            <property role="2hmy$m" value="44" />
+                          </node>
+                          <node concept="3TlMh9" id="4hIKmDP3LC" role="3TlMhI">
+                            <property role="2hmy$m" value="23" />
+                          </node>
+                        </node>
+                        <node concept="3TlMh9" id="4hIKmDP3LD" role="2zCggm">
+                          <property role="2hmy$m" value="22" />
+                        </node>
+                      </node>
+                      <node concept="3TlMh9" id="4hIKmDP3LE" role="3TlMhI">
+                        <property role="2hmy$m" value="2" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TlMh9" id="4hIKmDP3LF" role="2zCggm">
+                  <property role="2hmy$m" value="77" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="4hIKmDP3LG" role="3XIRFZ" />
+            <node concept="1_9egQ" id="4hIKmDP3LH" role="3XIRFZ">
+              <node concept="2zCgmc" id="4hIKmDP3LI" role="1_9egR">
+                <node concept="2BOciq" id="4hIKmDP3LJ" role="2zCggK">
+                  <node concept="3TlMh9" id="4hIKmDP3LK" role="3TlMhI">
+                    <property role="2hmy$m" value="11" />
+                  </node>
+                  <node concept="3TlMh9" id="4hIKmDP3LL" role="3TlMhJ">
+                    <property role="2hmy$m" value="12" />
+                  </node>
+                </node>
+                <node concept="2zCgmc" id="4hIKmDP3LM" role="2zCggm">
+                  <node concept="2BOciq" id="4hIKmDP3LN" role="2zCggK">
+                    <node concept="3TlMh9" id="4hIKmDP3LO" role="3TlMhI">
+                      <property role="2hmy$m" value="12" />
+                    </node>
+                    <node concept="3TlMh9" id="4hIKmDP3LP" role="3TlMhJ">
+                      <property role="2hmy$m" value="24" />
+                    </node>
+                  </node>
+                  <node concept="2zCgmc" id="4hIKmDP3LQ" role="2zCggm">
+                    <node concept="2BOciq" id="4hIKmDP3LR" role="2zCggK">
+                      <node concept="3TlMh9" id="4hIKmDP3LS" role="3TlMhI">
+                        <property role="2hmy$m" value="18" />
+                      </node>
+                      <node concept="3TlMh9" id="4hIKmDP3LT" role="3TlMhJ">
+                        <property role="2hmy$m" value="36" />
+                      </node>
+                    </node>
+                    <node concept="2zCgmc" id="4hIKmDP3LU" role="2zCggm">
+                      <node concept="2BOciq" id="4hIKmDP3LV" role="2zCggK">
+                        <node concept="3TlMh9" id="4hIKmDP3LW" role="3TlMhI">
+                          <property role="2hmy$m" value="24" />
+                        </node>
+                        <node concept="3TlMh9" id="4hIKmDP3LX" role="3TlMhJ">
+                          <property role="2hmy$m" value="48" />
+                        </node>
+                      </node>
+                      <node concept="3TlMh9" id="4hIKmDP3LY" role="2zCggm">
+                        <property role="2hmy$m" value="60" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
