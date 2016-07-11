@@ -91,6 +91,7 @@
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
+        <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
@@ -98,16 +99,36 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
+      <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <child id="5253498789149547704" name="dependencies" index="3bR37C" />
+      </concept>
+      <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
+        <property id="5253498789149547713" name="reexport" index="3bR36h" />
+        <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
         <property id="4297162197620978188" name="strict" index="1wNuhc" />
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
+      </concept>
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
+      <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
+        <property id="8369506495128725901" name="compact" index="BnDLt" />
+        <property id="322010710375892619" name="uuid" index="3LESm3" />
+        <child id="322010710375956261" name="path" index="3LF7KH" />
+      </concept>
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
+        <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
   </registry>
@@ -130,7 +151,7 @@
       <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="m$_wf" id="3Cx6vuJncJb" role="3989C9">
-      <property role="m$_wk" value="com.mbeddr.allInOne" />
+      <property role="m$_wk" value="com.mbeddr.allInOne.build" />
       <node concept="2pNNFK" id="3Cx6vuJnfM3" role="20twgj">
         <property role="2pNNFO" value="depends" />
         <node concept="3o6iSG" id="3Cx6vuJnfM5" role="3o6s8t">
@@ -211,6 +232,60 @@
       </node>
       <node concept="m$_yC" id="7r9Pn8Ywp5U" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:5dchr4Qj2b3" resolve="com.mbeddr.build" />
+      </node>
+      <node concept="m$_yB" id="IW6Povi5WB" role="m$_yh">
+        <ref role="m$_yA" node="IW6Povi5V3" resolve="com.mbeddr.allInOne" />
+      </node>
+    </node>
+    <node concept="1E1JtA" id="IW6Povi5V3" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="com.mbeddr.allInOne" />
+      <property role="3LESm3" value="cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9" />
+      <property role="2GAjPV" value="false" />
+      <node concept="398BVA" id="IW6Povi5VC" role="3LF7KH">
+        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="IW6Povi5VI" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="IW6Povi5VN" role="2Ry0An">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="IW6Povi5VS" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.build" />
+              <node concept="2Ry0Ak" id="IW6Povi5VX" role="2Ry0An">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IW6Povi5W2" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+                  <node concept="2Ry0Ak" id="IW6Povi5W7" role="2Ry0An">
+                    <property role="2Ry0Am" value="allInOne.msd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="IW6Povi5W9" role="3bR37C">
+        <node concept="3bR9La" id="IW6Povi5Wa" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="90a9:2Xjt3l5bx_L" resolve="de.slisson.mps.all.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="IW6Povi5Wb" role="3bR37C">
+        <node concept="3bR9La" id="IW6Povi5Wc" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="p6ld:5dchr4QjhF_" resolve="com.mbeddr.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="IW6Povi5Wd" role="3bR37C">
+        <node concept="3bR9La" id="IW6Povi5We" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="IW6Povi5Wf" role="3bR37C">
+        <node concept="3bR9La" id="IW6Povi5Wg" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="5qO$P$PtiTx" role="10PD9s" />
@@ -331,7 +406,7 @@
       <node concept="3981dG" id="5qO$P$PtiTF" role="39821P">
         <node concept="398223" id="6xkorKj3Uwa" role="39821P">
           <node concept="m$_wl" id="3Cx6vuJnfOR" role="39821P">
-            <ref role="m_rDy" node="3Cx6vuJncJb" resolve="com.mbeddr.allInOne" />
+            <ref role="m_rDy" node="3Cx6vuJncJb" resolve="com.mbeddr.allInOne.build" />
           </node>
           <node concept="3_J27D" id="6xkorKj3Uwb" role="Nbhlr">
             <node concept="3Mxwew" id="6xkorKj3Uwc" role="3MwsjC">
