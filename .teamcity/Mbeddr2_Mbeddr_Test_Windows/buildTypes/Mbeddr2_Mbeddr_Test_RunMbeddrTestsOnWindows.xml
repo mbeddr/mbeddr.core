@@ -7,7 +7,7 @@
       <option name="buildNumberPattern" value="%mbeddr.build-number%" />
     </options>
     <parameters />
-    <build-runners order="RUNNER_2, RUNNER_3, RUNNER_4, RUNNER_5">
+    <build-runners order="RUNNER_3">
       <runner id="RUNNER_3" name="Build and run Tests" type="Ant">
         <parameters>
           <param name="build-file-path" value="mbeddr.core/code/languages/build.xml" />

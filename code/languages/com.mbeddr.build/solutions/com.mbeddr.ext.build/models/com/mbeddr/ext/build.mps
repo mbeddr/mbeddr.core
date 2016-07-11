@@ -556,6 +556,21 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6BHziVHZYYT" role="1l3spd">
+      <property role="TrG5h" value="spawner.artifacts" />
+      <node concept="398BVA" id="6BHziVHZYYS" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61i" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="6BHziVHZYYR" role="iGT6I">
+          <property role="2Ry0Am" value="spawner" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="6BHziVHZYYV" role="1l3spa">
+      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
+      <node concept="398BVA" id="6BHziVHZYYU" role="2JcizS">
+        <ref role="398BVh" node="6BHziVHZYYT" resolve="spawner.artifacts" />
+      </node>
+    </node>
   </node>
   <node concept="1l3spW" id="7Vt15sLW_mT">
     <property role="TrG5h" value="com.mbeddr.ts.tests" />
@@ -860,6 +875,31 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6D3dZPTW1eC" role="3bR37C">
+          <node concept="3bR9La" id="6D3dZPTW1eD" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:4i9pOwKZnaa" resolve="com.mbeddr.ext.math" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="73rNuZmLa1Y" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ex.ext.statemachine" />
+        <property role="3LESm3" value="3ef85fa6-42d3-4b91-b2be-19b37203ff69" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="73rNuZmLa1Z" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="73rNuZmLa20" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="73rNuZmLa21" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ex.ext.statemachine" />
+              <node concept="2Ry0Ak" id="73rNuZmLa98" role="2Ry0An">
+                <property role="2Ry0Am" value="statemachine.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7Vt15sLW_oB" role="1hWBAP">
@@ -875,6 +915,21 @@
       </node>
       <node concept="22LTRM" id="5$jJV5ebCwy" role="22LTRK">
         <ref role="22LTRN" node="5$jJV5ebzFb" resolve="test.editor.ext" />
+      </node>
+    </node>
+    <node concept="398rNT" id="6BHziVHZYYY" role="1l3spd">
+      <property role="TrG5h" value="spawner.artifacts" />
+      <node concept="398BVA" id="6BHziVHZYYX" role="398pKh">
+        <ref role="398BVh" node="5ueaxoTn61j" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="6BHziVHZYYW" role="iGT6I">
+          <property role="2Ry0Am" value="spawner" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="6BHziVHZYZ0" role="1l3spa">
+      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
+      <node concept="398BVA" id="6BHziVHZYYZ" role="2JcizS">
+        <ref role="398BVh" node="6BHziVHZYYY" resolve="spawner.artifacts" />
       </node>
     </node>
   </node>

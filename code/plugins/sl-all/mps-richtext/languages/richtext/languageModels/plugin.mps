@@ -57,6 +57,10 @@
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
+        <child id="481983775135178843" name="disposeBlock" index="2uRRBF" />
+      </concept>
+      <concept id="481983775135178846" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDisposeBlock" flags="in" index="2uRRBI" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -865,6 +869,19 @@
       <node concept="q3mfm" id="4imEbjrwYvO" role="3clF45">
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="4imEbjrwYvL" resolve="get" />
+      </node>
+    </node>
+  </node>
+  <node concept="2uRRBC" id="6SW4un76thl">
+    <property role="TrG5h" value="ApplicationPlugin" />
+    <node concept="2uRRBI" id="6SW4un77xnS" role="2uRRBF">
+      <node concept="3clFbS" id="6SW4un77xnT" role="2VODD2">
+        <node concept="3clFbF" id="6SW4un77xmX" role="3cqZAp">
+          <node concept="2YIFZM" id="6SW4un77xnr" role="3clFbG">
+            <ref role="37wK5l" to="gyv0:6SW4un77vJC" resolve="uninstallAll" />
+            <ref role="1Pybhc" to="gyv0:4lC8FFy6YWa" resolve="ShiftSelector" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

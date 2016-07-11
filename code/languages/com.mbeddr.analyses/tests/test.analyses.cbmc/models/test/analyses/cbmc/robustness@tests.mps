@@ -88,7 +88,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -332,7 +332,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1iGXuG00kC6" role="3cqZAp" />
+        <node concept="3clFbF" id="vbJ3AuLz82" role="3cqZAp">
+          <node concept="2YIFZM" id="vbJ3AuLzpB" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="vbJ3AuLzrB" role="37wK5m">
+              <ref role="3cqZAo" node="5Hr5oir6UpM" resolve="resDiv" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="vbJ3AuLzsA" role="3cqZAp" />
         <node concept="38rL1p" id="8Fyjetf65m" role="3cqZAp">
           <node concept="38rIoz" id="6_uSt8oDn_F" role="38rM$J">
             <property role="38rIoG" value="*" />
@@ -848,19 +857,19 @@
             <node concept="3uibUv" id="7oC3tFP2WFI" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="1iGXuG09mES" role="33vP2m">
-              <node concept="37vLTw" id="1iGXuG09hGs" role="2Oq$k0">
+            <node concept="2YIFZM" id="prDxnvf$86" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="prDxnvf$u2" role="37wK5m">
                 <ref role="3cqZAo" node="1iGXuG09hGj" resolve="results" />
               </node>
-              <node concept="34jXtK" id="1iGXuG09ovN" role="2OqNvi">
-                <node concept="3cmrfG" id="1iGXuG09oAj" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="Xl_RD" id="prDxnvf$ym" role="37wK5m">
+                <property role="Xl_RC" value="division by zero in 2 / input_var" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7oC3tFP2WFO" role="3cqZAp" />
+        <node concept="3clFbH" id="prDxnvf$PI" role="3cqZAp" />
         <node concept="3vwNmj" id="6oOIJNsCfC8" role="3cqZAp">
           <node concept="2OqwBi" id="6oOIJNsCfC9" role="3vwVQn">
             <node concept="3cpWsa" id="6oOIJNsCfCa" role="2Oq$k0">
@@ -891,9 +900,6 @@
             <property role="38rMdH" value="0" />
             <property role="35B3fw" value="true" />
             <property role="35AWuq" value="3,4,5,6,7,8" />
-            <node concept="3Tqbb2" id="49Y2Xia52DH" role="38rYrG">
-              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-            </node>
           </node>
           <node concept="38rIoz" id="49Y2Xia52DM" role="38rM$J">
             <property role="38rIoG" value="FAIL" />
@@ -1421,13 +1427,13 @@
               <ref role="3cqZAo" node="1iGXuG0fTW1" resolve="res3" />
             </node>
             <node concept="liA8E" id="1iGXuG0fTWa" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
           <node concept="3_1$Yv" id="5hfVsymuvTP" role="3_9lra">
             <node concept="3cpWs3" id="5hfVsymwF5b" role="3_1BAH">
               <node concept="Xl_RD" id="5hfVsymuvXJ" role="3uHU7B">
-                <property role="Xl_RC" value="res3 should fail but is: " />
+                <property role="Xl_RC" value="res3 should hold but is: " />
               </node>
               <node concept="2OqwBi" id="5hfVsymwF5v" role="3uHU7w">
                 <node concept="37vLTw" id="5hfVsymwFbC" role="2Oq$k0">
@@ -1471,7 +1477,7 @@
           <node concept="3_1$Yv" id="5hfVsymuvYa" role="3_9lra">
             <node concept="3cpWs3" id="5hfVsymwFok" role="3_1BAH">
               <node concept="Xl_RD" id="5hfVsymuw24" role="3uHU7B">
-                <property role="Xl_RC" value="res4 should fail but is: " />
+                <property role="Xl_RC" value="res4 should hold but is: " />
               </node>
               <node concept="2OqwBi" id="5hfVsymwFoY" role="3uHU7w">
                 <node concept="37vLTw" id="5hfVsymwFv5" role="2Oq$k0">

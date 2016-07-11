@@ -400,5 +400,43 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7nMAuIoMgjJ">
+    <ref role="1M2myG" to="yz9a:7nMAuIoMgjE" resolve="TestCollectionRef" />
+    <node concept="1N5Pfh" id="7nMAuIoMgjK" role="1Mr941">
+      <ref role="1N5Vy1" to="yz9a:7nMAuIoMgjH" />
+      <node concept="1MUpDS" id="7nMAuIoMgjO" role="1N6uqs">
+        <node concept="3clFbS" id="7nMAuIoMgjQ" role="2VODD2">
+          <node concept="3clFbF" id="7nMAuIoMgkw" role="3cqZAp">
+            <node concept="2OqwBi" id="7nMAuIoMgRt" role="3clFbG">
+              <node concept="2OqwBi" id="7nMAuIoMg_F" role="2Oq$k0">
+                <node concept="2OqwBi" id="7nMAuIoMgp7" role="2Oq$k0">
+                  <node concept="21POm0" id="7nMAuIoMgkv" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="7nMAuIoMgtp" role="2OqNvi">
+                    <node concept="1xMEDy" id="7nMAuIoMgtr" role="1xVPHs">
+                      <node concept="chp4Y" id="7nMAuIoMguw" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="7nMAuIoMgyv" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7nMAuIoMgG6" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="7nMAuIoMgJ9" role="37wK5m">
+                    <ref role="3TV0OU" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="7nMAuIoMh1K" role="2OqNvi">
+                <node concept="chp4Y" id="7nMAuIoMh4w" role="v3oSu">
+                  <ref role="cht4Q" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

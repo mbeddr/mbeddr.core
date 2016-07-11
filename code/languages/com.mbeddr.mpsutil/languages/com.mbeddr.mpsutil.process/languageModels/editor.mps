@@ -2,7 +2,7 @@
 <model ref="r:08101b06-7538-4fcc-95d4-006b908c918b(com.mbeddr.mpsutil.process.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -139,7 +139,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="70BL6LoPLQZ" role="3EZMnx">
-        <property role="3F0ifm" value="titel:" />
+        <property role="3F0ifm" value="title:" />
         <node concept="lj46D" id="70BL6LoPLVO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -296,7 +296,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="rF8Sb95_BK" role="3EZMnx">
-        <property role="3F0ifm" value="Titel:" />
+        <property role="3F0ifm" value="Title:" />
       </node>
       <node concept="3F0A7n" id="rF8Sb95_Cq" role="3EZMnx">
         <ref role="1NtTu8" to="hbjw:70BL6LoQ22n" resolve="titel" />
@@ -327,9 +327,6 @@
       </node>
       <node concept="3F1sOY" id="rF8Sb98vbS" role="3EZMnx">
         <ref role="1NtTu8" to="hbjw:rF8Sb98v0d" />
-        <node concept="ljvvj" id="rF8Sb98vcE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="pkWqt" id="rF8Sb98wfC" role="pqm2j">
           <node concept="3clFbS" id="rF8Sb98wfD" role="2VODD2">
             <node concept="3clFbF" id="rF8Sb98wkB" role="3cqZAp">
@@ -346,6 +343,9 @@
       <node concept="3F0ifn" id="5Kcl6zlFXEL" role="3EZMnx">
         <property role="3F0ifm" value="Input:" />
         <node concept="ljvvj" id="5Kcl6zlHq2s" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="2NzhyaZyBQd" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -599,7 +599,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="rF8Sb8Et4H" role="3EZMnx">
-        <property role="3F0ifm" value="titel:" />
+        <property role="3F0ifm" value="title:" />
         <node concept="lj46D" id="rF8Sb8Et4I" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

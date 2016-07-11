@@ -38,6 +38,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
@@ -7851,6 +7852,122 @@
     </node>
     <node concept="13hLZK" id="1EZSCJhUmLn" role="13h7CW">
       <node concept="3clFbS" id="1EZSCJhUmLo" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="kOmZ6tdfgr">
+    <property role="3GE5qa" value="genStructPrint.values" />
+    <ref role="13h7C2" to="k146:kOmZ6sSkEG" resolve="GenStructPrintFunction" />
+    <node concept="13i0hz" id="2CzB6HCHdhl" role="13h7CS">
+      <property role="TrG5h" value="genFunName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="2CzB6HCHdar" resolve="genFunName" />
+      <node concept="3Tm1VV" id="2CzB6HCHdhm" role="1B3o_S" />
+      <node concept="3clFbS" id="2CzB6HCHdhz" role="3clF47">
+        <node concept="3clFbF" id="2CzB6HCHdld" role="3cqZAp">
+          <node concept="3cpWs3" id="2CzB6HCHdlf" role="3clFbG">
+            <node concept="2OqwBi" id="2CzB6HCHdlg" role="3uHU7w">
+              <node concept="2OqwBi" id="2CzB6HCHdlh" role="2Oq$k0">
+                <node concept="13iPFW" id="2CzB6HCHdli" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="2CzB6HCHdlj" role="2OqNvi">
+                  <node concept="1xMEDy" id="2CzB6HCHdlk" role="1xVPHs">
+                    <node concept="chp4Y" id="2CzB6HCHdll" role="ri$Ld">
+                      <ref role="cht4Q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2CzB6HCHdlm" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2CzB6HCHdln" role="3uHU7B">
+              <property role="Xl_RC" value="print_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2CzB6HCHdh$" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="kOmZ6tdfgs" role="13h7CW">
+      <node concept="3clFbS" id="kOmZ6tdfgt" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2CzB6HCHcWU">
+    <property role="3GE5qa" value="genStructPrint.hash" />
+    <ref role="13h7C2" to="k146:2CzB6HCHcV$" resolve="GenStructHashPrintFunction" />
+    <node concept="13hLZK" id="2CzB6HCHcWV" role="13h7CW">
+      <node concept="3clFbS" id="2CzB6HCHcWW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2CzB6HCHdsw" role="13h7CS">
+      <property role="TrG5h" value="genFunName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="2CzB6HCHdar" resolve="genFunName" />
+      <node concept="3Tm1VV" id="2CzB6HCHdsx" role="1B3o_S" />
+      <node concept="3clFbS" id="2CzB6HCHdsI" role="3clF47">
+        <node concept="3clFbF" id="2CzB6HCHdun" role="3cqZAp">
+          <node concept="3cpWs3" id="2CzB6HCHduo" role="3clFbG">
+            <node concept="2OqwBi" id="2CzB6HCHdup" role="3uHU7w">
+              <node concept="2OqwBi" id="2CzB6HCHduq" role="2Oq$k0">
+                <node concept="13iPFW" id="2CzB6HCHdur" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="2CzB6HCHdus" role="2OqNvi">
+                  <node concept="1xMEDy" id="2CzB6HCHdut" role="1xVPHs">
+                    <node concept="chp4Y" id="2CzB6HCHduu" role="ri$Ld">
+                      <ref role="cht4Q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2CzB6HCHduv" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2CzB6HCHduw" role="3uHU7B">
+              <property role="Xl_RC" value="hash_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2CzB6HCHdsJ" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2CzB6HCHdao">
+    <property role="3GE5qa" value="genStructPrint" />
+    <ref role="13h7C2" to="k146:2CzB6HCHdan" resolve="IPrintGenFunction" />
+    <node concept="13i0hz" id="2CzB6HCHdar" role="13h7CS">
+      <property role="TrG5h" value="genFunName" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2CzB6HCHdas" role="1B3o_S" />
+      <node concept="17QB3L" id="2CzB6HCHdat" role="3clF45" />
+      <node concept="3clFbS" id="2CzB6HCHdau" role="3clF47">
+        <node concept="3clFbF" id="2CzB6HCHdav" role="3cqZAp">
+          <node concept="3cpWs3" id="2CzB6HCHdaw" role="3clFbG">
+            <node concept="2OqwBi" id="2CzB6HCHdax" role="3uHU7w">
+              <node concept="2OqwBi" id="2CzB6HCHday" role="2Oq$k0">
+                <node concept="13iPFW" id="2CzB6HCHdaz" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="2CzB6HCHda$" role="2OqNvi">
+                  <node concept="1xMEDy" id="2CzB6HCHda_" role="1xVPHs">
+                    <node concept="chp4Y" id="2CzB6HCHdaA" role="ri$Ld">
+                      <ref role="cht4Q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2CzB6HCHdaB" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2CzB6HCHdaC" role="3uHU7B">
+              <property role="Xl_RC" value="print_" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="2CzB6HCHdap" role="13h7CW">
+      <node concept="3clFbS" id="2CzB6HCHdaq" role="2VODD2" />
     </node>
   </node>
 </model>

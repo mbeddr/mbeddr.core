@@ -4,7 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4083,6 +4083,25 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3EZMnI" id="5wZ$f6KGA9F" role="3EZMnx">
+        <node concept="VPM3Z" id="5wZ$f6KGA9G" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPXOz" id="5wZ$f6KGA9H" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="5wZ$f6KGA9I" role="3EZMnx">
+          <property role="3F0ifm" value="curved" />
+        </node>
+        <node concept="3F1sOY" id="5wZ$f6KGAiP" role="3EZMnx">
+          <property role="1$x2rV" value="false" />
+          <ref role="1NtTu8" to="2qld:5wZ$f6KGAey" />
+          <node concept="VPXOz" id="5wZ$f6KLihr" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="5wZ$f6KGA9L" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="6f39poLR34$" role="3EZMnx">
         <node concept="VPM3Z" id="6f39poLR34_" role="3F10Kt">

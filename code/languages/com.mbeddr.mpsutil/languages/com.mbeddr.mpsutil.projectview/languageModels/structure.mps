@@ -58,6 +58,22 @@
       <property role="TrG5h" value="priority" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="4QICnJ5F4fs" role="1TKVEl">
+      <property role="TrG5h" value="rebuildOnFileChange" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4QICnJ5F4fv" role="1TKVEl">
+      <property role="TrG5h" value="rebuildOnClassLoad" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4QICnJ5F4fz" role="1TKVEl">
+      <property role="TrG5h" value="rebuildOnMake" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4QICnJ5F4fC" role="1TKVEl">
+      <property role="TrG5h" value="rebuildOnRepoChange" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7diJr$Rulsr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />

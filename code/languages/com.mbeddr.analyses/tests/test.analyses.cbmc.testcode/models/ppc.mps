@@ -2,9 +2,9 @@
 <model ref="r:90e04ebb-f4b7-4346-a3a9-9b3308ef4c60(ppc)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
@@ -63,6 +63,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -133,6 +134,7 @@
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
         <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
+      <concept id="7350547698093816046" name="com.mbeddr.core.modules.structure.PureFunctionAnnotation" flags="ng" index="2Bs1N1" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -293,6 +295,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="7UiQjZi_RIj" role="2Q9xDr">
       <node concept="2Q9FjX" id="7UiQjZi_RIk" role="2Q9FjI" />
@@ -621,6 +624,7 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="2Bs1N1" id="6eIJF_HTp_Q" role="lGtFl" />
     </node>
   </node>
   <node concept="N3F5e" id="7UiQjZi_RJv">
@@ -2334,16 +2338,18 @@
               </node>
             </node>
             <node concept="19$8ne" id="7UiQjZi_RSV" role="c0U16">
-              <node concept="2$_UoH" id="7UiQjZi_RSW" role="1_9fRO">
-                <ref role="2$_UoI" node="7UiQjZi_RSc" resolve="triangle_checkValid" />
-                <node concept="3ZUYvv" id="7UiQjZi_RSX" role="3O_q_k">
-                  <ref role="3ZUYvu" node="5iawPn1XCrU" resolve="a" />
-                </node>
-                <node concept="3ZUYvv" id="7UiQjZi_RSY" role="3O_q_k">
-                  <ref role="3ZUYvu" node="5iawPn1XCn_" resolve="b" />
-                </node>
-                <node concept="3ZUYvv" id="7UiQjZi_RSZ" role="3O_q_k">
-                  <ref role="3ZUYvu" node="5iawPn1XCrS" resolve="c" />
+              <node concept="2BPB98" id="6ygjR3uEvFK" role="1_9fRO">
+                <node concept="2$_UoH" id="6ygjR3uEvFG" role="1_9fRO">
+                  <ref role="2$_UoI" node="7UiQjZi_RSc" resolve="triangle_checkValid" />
+                  <node concept="3ZUYvv" id="6ygjR3uEvFH" role="3O_q_k">
+                    <ref role="3ZUYvu" node="5iawPn1XCrU" resolve="a" />
+                  </node>
+                  <node concept="3ZUYvv" id="6ygjR3uEvFI" role="3O_q_k">
+                    <ref role="3ZUYvu" node="5iawPn1XCn_" resolve="b" />
+                  </node>
+                  <node concept="3ZUYvv" id="6ygjR3uEvFJ" role="3O_q_k">
+                    <ref role="3ZUYvu" node="5iawPn1XCrS" resolve="c" />
+                  </node>
                 </node>
               </node>
             </node>

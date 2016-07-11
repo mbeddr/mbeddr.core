@@ -15,6 +15,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -288,6 +289,28 @@
           <node concept="3clFbF" id="4zqPC3avYP1" role="3cqZAp">
             <node concept="Xl_RD" id="4zqPC3avYP0" role="3clFbG">
               <property role="Xl_RC" value="Platform Template Container" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXJUA" id="4ol4Q3pLQNk" role="2NY200">
+      <node concept="3clFbS" id="4ol4Q3pLQNl" role="2VODD2">
+        <node concept="3clFbF" id="4ol4Q3pLQOZ" role="3cqZAp">
+          <node concept="2OqwBi" id="4ol4Q3pLTio" role="3clFbG">
+            <node concept="2OqwBi" id="4ol4Q3pLQWo" role="2Oq$k0">
+              <node concept="2JrnkZ" id="4ol4Q3pLQUR" role="2Oq$k0">
+                <node concept="1Q6Npb" id="4ol4Q3pLQOY" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="4ol4Q3pLRk8" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4ol4Q3pLTpl" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <node concept="Xl_RD" id="4ol4Q3pLRAj" role="37wK5m">
+                <property role="Xl_RC" value="PlatformTemplates" />
+              </node>
             </node>
           </node>
         </node>

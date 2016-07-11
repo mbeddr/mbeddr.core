@@ -28,6 +28,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -47,6 +48,10 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -58,6 +63,9 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -86,7 +94,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="SWpRmW$Kvn">
-    <property role="TrG5h" value="Logger" />
+    <property role="TrG5h" value="MbeddrLogger" />
     <node concept="2tJIrI" id="SWpRmW$KS0" role="jymVt" />
     <node concept="2YIFZL" id="SWpRmW$KWu" role="jymVt">
       <property role="TrG5h" value="logError" />
@@ -195,6 +203,45 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7$8IbnDjXhZ" role="jymVt" />
+    <node concept="2YIFZL" id="sn0OadN1wd" role="jymVt">
+      <property role="TrG5h" value="debug" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="sn0OadN1wg" role="3clF47">
+        <node concept="3clFbJ" id="sn0OadN1$5" role="3cqZAp">
+          <node concept="3clFbS" id="sn0OadN1$6" role="3clFbx">
+            <node concept="3clFbF" id="sn0OadN1_t" role="3cqZAp">
+              <node concept="2OqwBi" id="sn0OadN1_q" role="3clFbG">
+                <node concept="10M0yZ" id="sn0OadN1_r" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="sn0OadN1_s" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="37vLTw" id="sn0OadN1A$" role="37wK5m">
+                    <ref role="3cqZAo" node="sn0OadN1yW" resolve="msg" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="sn0OadN1$X" role="3clFbw">
+            <ref role="3cqZAo" node="sn0OadN1y$" resolve="shouldLog" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="sn0OadN1tI" role="1B3o_S" />
+      <node concept="3cqZAl" id="sn0OadN1w3" role="3clF45" />
+      <node concept="37vLTG" id="sn0OadN1y$" role="3clF46">
+        <property role="TrG5h" value="shouldLog" />
+        <node concept="10P_77" id="sn0OadN1yz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="sn0OadN1yW" role="3clF46">
+        <property role="TrG5h" value="msg" />
+        <node concept="17QB3L" id="sn0OadN1zi" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="SWpRmW$Kvo" role="1B3o_S" />
     <node concept="NWlO9" id="SWpRmWAheV" role="lGtFl">
       <property role="NWlVz" value="Logging wrapper" />

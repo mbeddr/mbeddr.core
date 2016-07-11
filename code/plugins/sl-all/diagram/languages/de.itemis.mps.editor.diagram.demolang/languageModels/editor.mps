@@ -7,7 +7,7 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
     <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -253,6 +253,7 @@
         <child id="7188630757225274921" name="navigationTargets" index="1i7NIZ" />
         <child id="5725606875425248008" name="delete" index="1ide8m" />
         <child id="2044706694575458564" name="labelCell" index="3kqczz" />
+        <child id="6358960566596428706" name="curved" index="3Czvdj" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
@@ -1312,6 +1313,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFbT" id="5wZ$f6KLcSA" role="3Czvdj">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="3EZMnI" id="7LrVRufxT4S" role="6VMZX">

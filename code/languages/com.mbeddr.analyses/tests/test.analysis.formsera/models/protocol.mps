@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -38,6 +38,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -195,6 +196,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="5dzrqzlstab" role="2Q9xDr">
       <node concept="2Q9FjX" id="5dzrqzlstac" role="2Q9FjI" />
@@ -420,7 +422,7 @@
     </node>
     <node concept="2EWCtd" id="4iljI7pa4D0" role="N3F5h">
       <property role="TrG5h" value="CarInstances" />
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <node concept="2EWCuV" id="3D_1CBq9Xtq" role="5JtDH">
         <property role="TrG5h" value="carFail" />
         <ref role="2EWCuU" node="4BIEEuWf5cl" resolve="CarImpl" />

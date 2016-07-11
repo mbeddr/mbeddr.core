@@ -2,7 +2,7 @@
 <model ref="r:d20a8498-55ea-46f3-9220-542767b71661(test.analyses.cbmc.testcode.counterexample.mbeddr.core)">
   <persistence version="9" />
   <languages>
-    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="2" />
     <use id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
@@ -349,7 +349,6 @@
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
       <concept id="3976803464656498418" name="com.mbeddr.core.expressions.structure.PreDecrementExpression" flags="ng" index="1FldXs" />
-      <concept id="3976803464656531170" name="com.mbeddr.core.expressions.structure.UnaryMinusExpression" flags="ng" index="1FllXc" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="938100142480245061" name="com.mbeddr.core.expressions.structure.OctalNumberLiteral" flags="ng" index="3LgSLu" />
@@ -4142,10 +4141,8 @@
             <node concept="3XIRFW" id="7rAi6S1yF94" role="gg_gl">
               <node concept="1_9egQ" id="7rAi6S1yGVf" role="3XIRFZ">
                 <node concept="3pqW6w" id="7rAi6S1yGVr" role="1_9egR">
-                  <node concept="1FllXc" id="7rAi6S1yGVu" role="3TlMhJ">
-                    <node concept="3TlMh9" id="7rAi6S1yHb_" role="1_9fRO">
-                      <property role="2hmy$m" value="2" />
-                    </node>
+                  <node concept="3TlMh9" id="6eIJF_HToPC" role="3TlMhJ">
+                    <property role="2hmy$m" value="-2" />
                   </node>
                   <node concept="3ZVu4v" id="7rAi6S1yGVe" role="3TlMhI">
                     <ref role="3ZVs_2" node="7rAi6S1yEoa" resolve="r" />
@@ -4909,12 +4906,12 @@
                 <ref role="3ZUYvu" node="16yBdWfZDRY" resolve="y" />
               </node>
             </node>
-            <node concept="3Tl9Jr" id="16yBdWfZDRD" role="eGNQq">
-              <node concept="3TlMh9" id="16yBdWfZDRE" role="3TlMhJ">
-                <property role="2hmy$m" value="0" />
-              </node>
+            <node concept="3Tl9Jp" id="prDxnvkLdo" role="eGNQq">
               <node concept="3ZUYvv" id="16yBdWfZDRF" role="3TlMhI">
                 <ref role="3ZUYvu" node="16yBdWfZDRY" resolve="y" />
+              </node>
+              <node concept="3TlMh9" id="16yBdWfZDRE" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
               </node>
             </node>
             <node concept="3TlMh9" id="16yBdWfZDRG" role="eGNQ_">

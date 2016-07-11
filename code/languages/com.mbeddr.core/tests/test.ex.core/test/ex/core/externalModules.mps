@@ -139,6 +139,7 @@
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
@@ -247,6 +248,8 @@
     </node>
     <node concept="lIfQi" id="6TAwvhVWkhV" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhW" role="lIfQt">
         <ref role="3cM6IK" node="7RiewQ_kJAo" resolve="va" />
       </node>
@@ -369,7 +372,7 @@
   <node concept="N3F5e" id="6FLcSer$i9D">
     <property role="TrG5h" value="ModuleUsesTypeDef" />
     <node concept="3GEVxB" id="6uc_WDS6n03" role="2OODSX">
-      <property role="3GEa6x" value="false" />
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="6FLcSer$i9v" resolve="ModuleWithTypeDef" />
     </node>
     <node concept="rcJHK" id="6FLcSer$i9E" role="N3F5h">

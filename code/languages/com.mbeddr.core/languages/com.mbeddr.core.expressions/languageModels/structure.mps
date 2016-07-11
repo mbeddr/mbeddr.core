@@ -1610,7 +1610,10 @@
     <property role="3GE5qa" value="literals" />
     <property role="TrG5h" value="UnsignedIntegerLiteral" />
     <property role="1pbfSe" value="1769734935" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7FQByU3CrDB" resolve="NumberLiteral" />
+    <node concept="asaX9" id="6nsZJ3GxpxE" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="58TcxRGi40Z">
     <property role="3GE5qa" value="expr" />

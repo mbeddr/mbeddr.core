@@ -70,15 +70,12 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="nlpl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.commands(MPS.Editor/)" />
-    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
-    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
-      <concept id="8473566765277240526" name="de.slisson.mps.reflection.structure.ReflectionMethodCall" flags="ng" index="1PvZjq" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
         <child id="1224071154657" name="classifierType" index="0kSFW" />
@@ -1351,11 +1348,34 @@
       </node>
       <node concept="3Tm1VV" id="5tr7YH$UyCV" role="1B3o_S" />
       <node concept="3clFbS" id="5tr7YH$UyCX" role="3clF47">
-        <node concept="3clFbF" id="5tr7YH$UAk3" role="3cqZAp">
-          <node concept="2ShNRf" id="5tr7YH$UAk1" role="3clFbG">
-            <node concept="Tc6Ow" id="5tr7YH$UAPn" role="2ShVmc">
-              <node concept="3Tqbb2" id="5tr7YH$UBiF" role="HW$YZ" />
+        <node concept="3clFbF" id="5bKNAZ5eBI0" role="3cqZAp">
+          <node concept="2OqwBi" id="5bKNAZ5eD25" role="3clFbG">
+            <node concept="2OqwBi" id="5bKNAZ5eC3y" role="2Oq$k0">
+              <node concept="1rXfSq" id="5bKNAZ5eBHZ" role="2Oq$k0">
+                <ref role="37wK5l" node="5tr7YH$UyCh" resolve="getCells" />
+              </node>
+              <node concept="3$u5V9" id="5bKNAZ5eCF9" role="2OqNvi">
+                <node concept="1bVj0M" id="5bKNAZ5eCFb" role="23t8la">
+                  <node concept="3clFbS" id="5bKNAZ5eCFc" role="1bW5cS">
+                    <node concept="3clFbF" id="5bKNAZ5eCKS" role="3cqZAp">
+                      <node concept="2OqwBi" id="5bKNAZ5eCOh" role="3clFbG">
+                        <node concept="37vLTw" id="5bKNAZ5eCKR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5bKNAZ5eCFd" resolve="it" />
+                        </node>
+                        <node concept="liA8E" id="5bKNAZ5eCTM" role="2OqNvi">
+                          <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="5bKNAZ5eCFd" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5bKNAZ5eCFe" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
+            <node concept="ANE8D" id="5bKNAZ5eDdq" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -9141,12 +9161,12 @@
               </node>
               <node concept="1DcWWT" id="Y7dDcES50C" role="3cqZAp">
                 <node concept="2OqwBi" id="Y7dDcESkph" role="1DdaDG">
+                  <node concept="liA8E" id="4BxMnKBmQTF" role="2OqNvi">
+                    <ref role="37wK5l" to="rvbb:~CreateRootFilterEP.getCreateNodeExtensions():java.util.Collection" resolve="getCreateNodeExtensions" />
+                  </node>
                   <node concept="2YIFZM" id="Y7dDcESjW4" role="2Oq$k0">
                     <ref role="37wK5l" to="rvbb:~CreateRootFilterEP.getInstance():jetbrains.mps.ide.projectPane.CreateRootFilterEP" resolve="getInstance" />
                     <ref role="1Pybhc" to="rvbb:~CreateRootFilterEP" resolve="CreateRootFilterEP" />
-                  </node>
-                  <node concept="1PvZjq" id="Y7dDcESmer" role="2OqNvi">
-                    <ref role="37wK5l" to="rvbb:~CreateRootFilterEP.getCreateNodeExtensions():java.util.Collection" resolve="getCreateNodeExtensions" />
                   </node>
                 </node>
                 <node concept="3cpWsn" id="Y7dDcES50N" role="1Duv9x">

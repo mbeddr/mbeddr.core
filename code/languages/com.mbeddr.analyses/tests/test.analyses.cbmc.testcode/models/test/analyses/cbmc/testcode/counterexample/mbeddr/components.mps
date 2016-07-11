@@ -2,7 +2,7 @@
 <model ref="r:33c9d9c4-a88b-4fe7-95a6-63d05845ec6b(test.analyses.cbmc.testcode.counterexample.mbeddr.components)">
   <persistence version="9" />
   <languages>
-    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="0" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="2" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -61,6 +61,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -219,9 +220,6 @@
       <concept id="8972050657255793736" name="com.mbeddr.ext.components.structure.ComponentType" flags="ng" index="g2oj1">
         <reference id="8972050657255793737" name="component" index="g2oj0" />
       </concept>
-      <concept id="998890089995051771" name="com.mbeddr.ext.components.structure.DataElementRefExpr" flags="ng" index="2q3ev5">
-        <reference id="998890089995051773" name="element" index="2q3ev3" />
-      </concept>
       <concept id="998890089994729418" name="com.mbeddr.ext.components.structure.DataElement" flags="ng" index="2q5ZbO">
         <property id="2116578915583842931" name="atomic" index="1vaOcW" />
       </concept>
@@ -351,6 +349,10 @@
         <reference id="785275130114861598" name="field" index="3R_36f" />
         <child id="785275130114861599" name="value" index="3R_36e" />
       </concept>
+      <concept id="5703827575549009208" name="com.mbeddr.ext.components.structure.AbstractDataElementRefTarget" flags="ng" index="3VxgRd">
+        <reference id="5703827575549009244" name="element" index="3VxgQD" />
+      </concept>
+      <concept id="5703827575547552890" name="com.mbeddr.ext.components.structure.DataElementRefTarget" flags="ng" index="3VJJif" />
       <concept id="6209278014151449980" name="com.mbeddr.ext.components.structure.PsmRefState" flags="ng" index="3Z21g8">
         <reference id="6209278014151449981" name="ref" index="3Z21g9" />
       </concept>
@@ -463,6 +465,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="4kJ3EIm6jvL" role="2Q9xDr">
       <node concept="2Q9FjX" id="4kJ3EIm6jvM" role="2Q9FjI" />
@@ -1425,10 +1428,12 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-            <node concept="2q3ev5" id="13FtHz68YCy" role="3XIe9u">
-              <ref role="2q3ev3" node="RsLjUnNu$7" resolve="drehzahl" />
-              <node concept="2H6loZ" id="13FtHz68Yue" role="1_9fRO">
+            <node concept="2qmXGp" id="1_mC2xkPzAO" role="3XIe9u">
+              <node concept="2H6loZ" id="1_mC2xkPzAN" role="1_9fRO">
                 <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
+              </node>
+              <node concept="3VJJif" id="1_mC2xkPzAP" role="1ESnxz">
+                <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
               </node>
             </node>
           </node>

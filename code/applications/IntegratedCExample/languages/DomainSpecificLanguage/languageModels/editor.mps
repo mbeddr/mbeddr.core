@@ -2,18 +2,18 @@
 <model ref="r:6274d77c-ac56-476f-91f8-b45ea2d64146(DomainSpecificLanguage.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="9ug2" ref="r:f8ad3268-3097-4651-9207-8a3f9a1a3a64(DomainSpecificLanguage.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt()" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="d3ya" ref="r:05099a3e-ba4c-4de7-80fc-effd911c3066(DomainSpecificLanguage.behavior)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="true" />
+    <import index="d3ya" ref="r:05099a3e-ba4c-4de7-80fc-effd911c3066(DomainSpecificLanguage.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -429,7 +429,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7iLD7IPVRTK" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                      <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
                       <node concept="Xl_RD" id="7iLD7IPVSnb" role="37wK5m">
                         <property role="Xl_RC" value="_" />
                       </node>
@@ -708,8 +708,8 @@
             <node concept="3clFbF" id="7iLD7IQtqwk" role="3cqZAp">
               <node concept="3K4zz7" id="7iLD7IQtrta" role="3clFbG">
                 <node concept="10M0yZ" id="7iLD7IQtsLl" role="3K4GZi">
-                  <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="1t7x:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
                 </node>
                 <node concept="2OqwBi" id="7iLD7IQtq_s" role="3K4Cdx">
                   <node concept="pncrf" id="7iLD7IQtqwi" role="2Oq$k0" />
@@ -718,8 +718,8 @@
                   </node>
                 </node>
                 <node concept="10M0yZ" id="7iLD7IQtq0q" role="3K4E3e">
-                  <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
                 </node>
               </node>
             </node>
@@ -843,8 +843,8 @@
               <node concept="3clFbS" id="6fRanKE32VP" role="2VODD2">
                 <node concept="3cpWs6" id="6fRanKE32VQ" role="3cqZAp">
                   <node concept="2YIFZM" id="6fRanKE32VR" role="3cqZAk">
-                    <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-                    <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
                     <node concept="3cpWs3" id="6fRanKE34D_" role="37wK5m">
                       <node concept="3cmrfG" id="6fRanKE34DE" role="3uHU7w">
                         <property role="3cmrfH" value="1" />
@@ -871,8 +871,8 @@
               <node concept="3clFbS" id="6fRanKE2uWH" role="2VODD2">
                 <node concept="3cpWs6" id="6fRanKE2v24" role="3cqZAp">
                   <node concept="2YIFZM" id="6fRanKE2vcM" role="3cqZAk">
-                    <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
-                    <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                    <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                     <node concept="2OqwBi" id="6fRanKE2x0t" role="37wK5m">
                       <node concept="2OqwBi" id="6fRanKE2voy" role="2Oq$k0">
                         <node concept="pncrf" id="6fRanKE2vio" role="2Oq$k0" />

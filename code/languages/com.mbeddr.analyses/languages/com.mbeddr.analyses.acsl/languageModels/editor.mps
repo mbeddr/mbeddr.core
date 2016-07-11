@@ -2,7 +2,7 @@
 <model ref="r:e5273d18-e58b-474b-a23a-5a3775ab9a5f(com.mbeddr.analyses.acsl.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -506,6 +506,17 @@
       <node concept="3F1sOY" id="5OLOS2sQzpZ" role="3EZMnx">
         <ref role="1NtTu8" to="97v6:5OLOS2sQzpO" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="20bhQjaQ0vj">
+    <property role="3GE5qa" value="generator_utils" />
+    <ref role="1XX52x" to="97v6:20bhQjaPOtt" resolve="ContractAlreadyDealtWith" />
+    <node concept="3EZMnI" id="20bhQjaQ0vl" role="2wV5jI">
+      <node concept="3F0ifn" id="20bhQjaQ0vs" role="3EZMnx">
+        <property role="3F0ifm" value="already considered" />
+      </node>
+      <node concept="2SsqMj" id="20bhQjaQ0vy" role="3EZMnx" />
+      <node concept="2iRkQZ" id="20bhQjaQ0vo" role="2iSdaV" />
     </node>
   </node>
 </model>

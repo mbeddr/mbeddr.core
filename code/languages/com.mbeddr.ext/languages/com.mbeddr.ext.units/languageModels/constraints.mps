@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
-    <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
     <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -141,8 +141,8 @@
         <node concept="3clFbS" id="AeX2Dl1fdL" role="2VODD2">
           <node concept="3cpWs6" id="6FK1Pb8zg67" role="3cqZAp">
             <node concept="2YIFZM" id="6FK1Pb8zgak" role="3cqZAk">
-              <ref role="1Pybhc" to="ndfg:6FK1Pb8y_co" resolve="ScopingHelper" />
-              <ref role="37wK5l" to="ndfg:6FK1Pb8yBKR" resolve="getVisibleUnitsFrom" />
+              <ref role="1Pybhc" to="gkt:6FK1Pb8y_co" resolve="ScopingHelper" />
+              <ref role="37wK5l" to="gkt:6FK1Pb8yBKR" resolve="getVisibleUnitsFrom" />
               <node concept="21POm0" id="6FK1Pb8zgA1" role="37wK5m" />
             </node>
           </node>

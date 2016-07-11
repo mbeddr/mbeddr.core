@@ -4,18 +4,19 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
-    <modelRoot path="${module}/lib/commons-codec-1.5.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/commons-logging-1.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/dom4j-1.6.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/junit-3.8.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/log4j-1.2.13.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-excelant-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-ooxml-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-ooxml-schemas-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/poi-scratchpad-3.9-20121203.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/stax-api-1.0.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/xmlbeans-2.3.0.jar" type="java_classes" />
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="lib/commons-codec-1.5.jar" />
+      <sourceRoot location="lib/commons-logging-1.1.jar" />
+      <sourceRoot location="lib/dom4j-1.6.1.jar" />
+      <sourceRoot location="lib/log4j-1.2.13.jar" />
+      <sourceRoot location="lib/poi-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-excelant-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-ooxml-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-ooxml-schemas-3.9-20121203.jar" />
+      <sourceRoot location="lib/poi-scratchpad-3.9-20121203.jar" />
+      <sourceRoot location="lib/stax-api-1.0.1.jar" />
+      <sourceRoot location="lib/xmlbeans-2.3.0.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -120,7 +121,6 @@
     <stubModelEntry path="${module}/lib/commons-codec-1.5.jar" />
     <stubModelEntry path="${module}/lib/commons-logging-1.1.jar" />
     <stubModelEntry path="${module}/lib/dom4j-1.6.1.jar" />
-    <stubModelEntry path="${module}/lib/junit-3.8.1.jar" />
     <stubModelEntry path="${module}/lib/log4j-1.2.13.jar" />
     <stubModelEntry path="${module}/lib/poi-3.9-20121203.jar" />
     <stubModelEntry path="${module}/lib/poi-excelant-3.9-20121203.jar" />
@@ -150,7 +150,7 @@
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" fqName="jetbrains.mps.lang.behavior" version="0" />
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" fqName="jetbrains.mps.lang.constraints" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
-    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" fqName="jetbrains.mps.lang.editor" version="2" />
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" fqName="jetbrains.mps.lang.editor" version="3" />
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" fqName="jetbrains.mps.lang.sharedConcepts" version="0" />
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />

@@ -1310,5 +1310,21 @@
       </node>
     </node>
   </node>
+  <node concept="3_zdsH" id="6UAHnEzVIy$">
+    <property role="3GE5qa" value="validEnum" />
+    <ref role="3_znuS" to="k146:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+    <node concept="3__wT9" id="6UAHnEzVIy_" role="3_A6iZ">
+      <node concept="3clFbS" id="6UAHnEzVIyA" role="2VODD2">
+        <node concept="3AgYrR" id="6UAHnEzVIyL" role="3cqZAp">
+          <node concept="2OqwBi" id="6UAHnEzVIB5" role="3Ah4Yx">
+            <node concept="3__QtB" id="6UAHnEzVIz6" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6UAHnEzVIVF" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

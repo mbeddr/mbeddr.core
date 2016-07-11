@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1080,7 +1080,7 @@
   </node>
   <node concept="24kQdi" id="3kEjc_WJ62Q">
     <property role="3GE5qa" value="arbitraryText" />
-    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="AbritraryTextItem" />
+    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="ArbitraryTextItem" />
     <node concept="3F0A7n" id="3kEjc_WJ62S" role="2wV5jI">
       <property role="1O74Pk" value="true" />
       <ref role="1NtTu8" to="c4fa:3kEjc_WJ4oa" resolve="text" />

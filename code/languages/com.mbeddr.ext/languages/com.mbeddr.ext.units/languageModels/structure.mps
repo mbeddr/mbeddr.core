@@ -14,7 +14,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -137,22 +136,6 @@
     <node concept="PrWs8" id="7eOyx9raabu" role="PzmwI">
       <ref role="PrY4T" node="7eOyx9r3k3e" resolve="IUnit" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="7eOyx9raacU">
-    <property role="TrG5h" value="MetaUnitDeclaration" />
-    <property role="3GE5qa" value="definition.meta" />
-    <property role="1pbfSe" value="824365748" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="7eOyx9raag7" role="lGtFl">
-      <property role="Hh88m" value="metaUnitDeclaration" />
-      <node concept="trNpa" id="yGiRIETWOq" role="EQaZv">
-        <ref role="trN6q" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
-      </node>
-    </node>
-    <node concept="PrWs8" id="7GofazH24pS" role="PzmwI">
-      <ref role="PrY4T" node="7GofazH21Nu" resolve="IMetaUnitDeclaration" />
-    </node>
-    <node concept="asaX9" id="49YGTZe4CK$" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7eOyx9r3jsZ">
     <property role="TrG5h" value="Unit" />
@@ -461,18 +444,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="cetu:4r1mNB_wbuZ" resolve="FractionExpression" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="7GofazH21Nu">
-    <property role="3GE5qa" value="definition.meta" />
-    <property role="TrG5h" value="IMetaUnitDeclaration" />
-    <property role="1pbfSe" value="1746950534" />
-    <node concept="1TJgyj" id="7GofazH21OH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="units" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7eOyx9raabt" resolve="MetaUnit" />
-    </node>
-    <node concept="asaX9" id="5PsWxcFvfjf" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="49YGTZdU5eN">
     <property role="3GE5qa" value="definition.meta" />

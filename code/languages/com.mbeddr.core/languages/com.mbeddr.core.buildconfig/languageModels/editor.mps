@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -75,6 +75,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -935,6 +936,17 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0ifn" id="1tTyxbTm6zW" role="3EZMnx">
+          <property role="3F0ifm" value="linker options:" />
+          <node concept="lj46D" id="1tTyxbTm6_K" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="1tTyxbTm6$M" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <property role="1$x2rV" value="&lt;no link options&gt;" />
+          <ref role="1NtTu8" to="51wr:1tTyxbTm6yO" resolve="linkerOptions" />
+        </node>
         <node concept="PMmxH" id="2nSRgleEQot" role="3EZMnx">
           <ref role="PMmxG" node="2nSRgleEPDy" resolve="debugOptions" />
           <node concept="lj46D" id="2nSRgleEQou" role="3F10Kt">
@@ -942,6 +954,9 @@
           </node>
           <node concept="VPM3Z" id="6A4xWqfT4vn" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="pVoyu" id="1tTyxbTm6_G" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
         <node concept="PMmxH" id="2obGnlQTQxr" role="3EZMnx">

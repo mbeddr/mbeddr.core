@@ -6,6 +6,7 @@
   <property name="latest-build" value="status:SUCCESS"/>
   <property name="jdk-artifacts-url" value="${base-url}/${jdk-build-id},${branch},${latest-build}/artifacts/files"/>
   <property name="dmg.image" value="../rcp/icons/mbeddr-logo.png"/>
+  <property name="dmg.image2x" value="../rcp/icons/mbeddr-logo@2x.png"/>
 
   <property name="build.tmp" value="./"/>
   <property name="build.artifact" value="mbeddr"/>
@@ -23,9 +24,9 @@
 
 <target name="macbuild">
   <copy file="${dmg.image}" tofile="${build.tmp}/${build.artifact}-macos.png"/>
+  <copy file="${dmg.image}" tofile="${build.tmp}/${build.artifact}-macos@2x.png"/>
 
   <exec dir="${build.tmp}" command="./mpssign.sh ${build.artifact}-macos.zip ${build.artifact}-macos jdk.tar.gz"/>
-
   <exec dir="${build.tmp}" command="./mpsdmg.sh ${build.artifact}-macos.zip ${build.artifact}-macos"/>
 </target>
 

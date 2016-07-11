@@ -9,7 +9,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="5ygz" ref="r:12b64a93-a90e-4c7a-912b-44a7382f9a8d(com.mbeddr.mpsutil.globalgenerators.plugin)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="n9uz" ref="r:b14b2bee-99dc-4db0-b335-b232df7574c7(com.mbeddr.mpsutil.globalgenerators.runtime)" />
     <import index="wo4c" ref="r:c41c3d2c-b231-4c40-aef0-4aae3e74bfde(com.mbeddr.mpsutil.globalgenerators.structure)" implicit="true" />

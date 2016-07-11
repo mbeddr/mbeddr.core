@@ -113,6 +113,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -668,6 +669,17 @@
       <property role="TrG5h" value="testPentagonNegative" />
       <node concept="3cqZAl" id="7MMcIPlt_6$" role="3clF45" />
       <node concept="3clFbS" id="7MMcIPlt_6_" role="3clF47">
+        <node concept="3cpWs8" id="sn0OadKFrJ" role="3cqZAp">
+          <node concept="3cpWsn" id="sn0OadKFrK" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="sn0OadKFrI" role="1tU5fm" />
+            <node concept="BaHAS" id="sn0OadKFrL" role="33vP2m">
+              <property role="BaBD8" value="hppc" />
+              <property role="BaHAW" value="harness" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7MMcIPlt_6A" role="3cqZAp">
           <node concept="3cpWsn" id="7MMcIPlt_6B" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -678,10 +690,8 @@
               <node concept="NRdvd" id="7MMcIPlt_6E" role="2Oq$k0">
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="BaHAS" id="7MMcIPlt_6F" role="37wK5m">
-                  <property role="BaBD8" value="hppc" />
-                  <property role="BaHAW" value="harness" />
-                  <property role="BaGAP" value="" />
+                <node concept="37vLTw" id="sn0OadKFrM" role="37wK5m">
+                  <ref role="3cqZAo" node="sn0OadKFrK" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="7MMcIPlt_6G" role="37wK5m">
                   <property role="Xl_RC" value="structures_and_arrays" />
@@ -813,7 +823,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSKzvw" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?0\\]\\.x" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?0\\]\\.x" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSKzvx" role="38rYrG">
@@ -821,7 +831,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSKzvy" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?0\\]\\.y" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?0\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSKzvz" role="38rYrG">
@@ -829,7 +839,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSKzHU" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?1\\]\\.x" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?1\\]\\.x" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSKzHV" role="38rYrG">
@@ -837,7 +847,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSKzHW" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?1\\]\\.y" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?1\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSKzHX" role="38rYrG">
@@ -845,7 +855,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSKzWw" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?2\\]\\.x" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?2\\]\\.x" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSKzWx" role="38rYrG">
@@ -853,7 +863,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSKzWy" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?2\\]\\.y" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?2\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSKzWz" role="38rYrG">
@@ -861,7 +871,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSK$ba" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?3\\]\\.x" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?3\\]\\.x" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSK$bb" role="38rYrG">
@@ -869,7 +879,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSK$bc" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?3\\]\\.y" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?3\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSK$bd" role="38rYrG">
@@ -877,7 +887,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSK$pW" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?4\\]\\.x" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?4\\]\\.x" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSK$pX" role="38rYrG">
@@ -885,7 +895,7 @@
             </node>
           </node>
           <node concept="38rIoz" id="1eEm1HSK$pY" role="38rM$J">
-            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?4\\]\\.y" />
+            <property role="38rIoG" value="penta\\.points\\[(\\((signed )?long int\\))?4\\]\\.y" />
             <property role="38rMdH" value=".*" />
             <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="1eEm1HSK$pZ" role="38rYrG">
@@ -998,15 +1008,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuKaV_" role="38rM$J">
-            <property role="38rIoG" value="array[0]" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="array\\[0l?\\]" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuKaVA" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuKaVB" role="38rM$J">
-            <property role="38rIoG" value="array[1]" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="array\\[1l?\\]" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuKaVC" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
@@ -1028,6 +1040,17 @@
       <property role="TrG5h" value="testMatrixHarness" />
       <node concept="3cqZAl" id="F6wzHuKcb8" role="3clF45" />
       <node concept="3clFbS" id="F6wzHuKcb9" role="3clF47">
+        <node concept="3cpWs8" id="prDxnvpqAS" role="3cqZAp">
+          <node concept="3cpWsn" id="prDxnvpqAT" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="prDxnvpqAR" role="1tU5fm" />
+            <node concept="BaHAS" id="prDxnvpqAU" role="33vP2m">
+              <property role="BaBD8" value="hppc" />
+              <property role="BaHAW" value="harness" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="F6wzHuKcba" role="3cqZAp">
           <node concept="3cpWsn" id="F6wzHuKcbb" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -1038,10 +1061,8 @@
               <node concept="NRdvd" id="F6wzHuKcbe" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="BaHAS" id="F6wzHuKcbf" role="37wK5m">
-                  <property role="BaBD8" value="hppc" />
-                  <property role="BaHAW" value="harness" />
-                  <property role="BaGAP" value="" />
+                <node concept="37vLTw" id="prDxnvpqAV" role="37wK5m">
+                  <ref role="3cqZAo" node="prDxnvpqAT" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="F6wzHuKcbg" role="37wK5m">
                   <property role="Xl_RC" value="arrays_and_matrixes" />
@@ -1099,36 +1120,41 @@
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuKd8m" role="38rM$J">
-            <property role="38rIoG" value="matrix[1][1]" />
+            <property role="38rIoG" value="matrix\\[1l?\\]\\[1l?\\]" />
             <property role="38rMdH" value="0" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuKd8n" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuWjef" role="38rM$J">
-            <property role="38rIoG" value="matrix[0][0]" />
+            <property role="38rIoG" value="matrix\\[0l?\\]\\[0l?\\]" />
             <property role="38rMdH" value="0" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuWjeg" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuWjeh" role="38rM$J">
-            <property role="38rIoG" value="matrix[0][1]" />
+            <property role="38rIoG" value="matrix\\[0l?\\]\\[1l?\\]" />
             <property role="38rMdH" value="0" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuWjei" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuWjej" role="38rM$J">
-            <property role="38rIoG" value="matrix[1][0]" />
+            <property role="38rIoG" value="matrix\\[1l?\\]\\[0l?\\]" />
             <property role="38rMdH" value="0" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuWjek" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
           <node concept="38rIoz" id="F6wzHuWjel" role="38rM$J">
-            <property role="38rIoG" value="matrix[1][1]" />
+            <property role="38rIoG" value="matrix\\[1l?\\]\\[1l?\\]" />
             <property role="38rMdH" value="11" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="F6wzHuWjem" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
@@ -1455,6 +1481,34 @@
           </node>
         </node>
         <node concept="3clFbH" id="2hSqXWTvwuV" role="3cqZAp" />
+        <node concept="3cpWs8" id="2nZgViVsonE" role="3cqZAp">
+          <node concept="3cpWsn" id="2nZgViVsonF" role="3cpWs9">
+            <property role="TrG5h" value="res5" />
+            <node concept="3uibUv" id="2nZgViVsonG" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="2nZgViVsonH" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2nZgViVsonI" role="37wK5m">
+                <ref role="3cqZAo" node="2hSqXWTuARH" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2nZgViVsonJ" role="37wK5m">
+                <property role="Xl_RC" value="Assert: x &gt; 100 &amp;&amp; x &lt; 105" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2nZgViVsonK" role="3cqZAp">
+          <node concept="2OqwBi" id="2nZgViVsonL" role="3vwVQn">
+            <node concept="3cpWsa" id="2nZgViVsonM" role="2Oq$k0">
+              <ref role="3cqZAo" node="2nZgViVsonF" resolve="res5" />
+            </node>
+            <node concept="liA8E" id="2nZgViVsonN" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1LZb2c" id="2hSqXWTvWjS" role="1SL9yI">

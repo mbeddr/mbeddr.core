@@ -2,7 +2,7 @@
 <model ref="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)">
   <persistence version="9" />
   <languages>
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -240,7 +240,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="4rG3bBO1b43" role="19SJt6">
-              <property role="19SUeA" value=" types. Ignore the physical units (the things behind the slashes after the types) for now." />
+              <property role="19SUeA" value=" types. The letters in slashes behind the types are units. Those can be ignored for now. Just specify the members without them. " />
             </node>
           </node>
         </node>
@@ -493,7 +493,7 @@
               <ref role="2NCMaa" to="e1tx:7VsgA5L654u" resolve="Main" />
             </node>
             <node concept="2NCMab" id="1YUFCeGol$h" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L654v" resolve="main" />
+              <ref role="2NCMaa" to="e1tx:4Ru$s7zMArg" resolve="main" />
             </node>
           </node>
         </node>
@@ -1224,7 +1224,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="37qjepTx4N8" role="19SJt6">
-              <property role="19SUeA" value="s but you have to provide a mapping to the mebddr types. This is done inside the " />
+              <property role="19SUeA" value="s but you have to provide a mapping to the mbeddr types. This is done inside the " />
             </node>
             <node concept="1jUjqm" id="37qjepTx4O3" role="19SJt6">
               <node concept="19SGf9" id="37qjepTx4O4" role="$DsGW">
@@ -1577,7 +1577,7 @@
           <ref role="3z_lpL" to="e1tx:11TWfQr5TNK" resolve="testDivision" />
         </node>
         <node concept="3z_lpK" id="2ncjLWki9Jj" role="3z_lpH">
-          <ref role="3z_lpL" to="e1tx:11TWfQr5SYH" resolve="main" />
+          <ref role="3z_lpL" to="e1tx:4Ru$s7zMAru" resolve="main" />
         </node>
         <node concept="3z_lpK" id="2ncjLWki9Jk" role="3z_lpH">
           <ref role="3z_lpL" to="e1tx:2ncjLWkeaKN" resolve="testHelperFunction" />
@@ -1733,8 +1733,8 @@
           <node concept="2NCMab" id="2ncjLWki9K9" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
           </node>
-          <node concept="2NCMab" id="2ncjLWki9Ka" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:11TWfQr5SYH" resolve="main" />
+          <node concept="2NCMab" id="7YPARvXjvO3" role="2NCMaf">
+            <ref role="2NCMaa" to="e1tx:4Ru$s7zMAru" resolve="main" />
           </node>
         </node>
       </node>
@@ -1824,8 +1824,26 @@
             </node>
           </node>
           <node concept="19SUe$" id="2ncjLWki9Km" role="19SJt6">
-            <property role="19SUeA" value=" annotation. It can be attached with the corresponding intention." />
+            <property role="19SUeA" value=" annotation. To annotate the function, place the cursor in front of the first letter of the function's name, press " />
           </node>
+          <node concept="1jUjqm" id="7YPARvXjw1Y" role="19SJt6">
+            <node concept="19SGf9" id="7YPARvXjw1Z" role="$DsGW">
+              <node concept="19SUe$" id="7YPARvXjw20" role="19SJt6">
+                <property role="19SUeA" value="Alt+Enter" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="7YPARvXjw21" role="19SJt6">
+            <property role="19SUeA" value=" to bring up the intentions menu and chose " />
+          </node>
+          <node concept="1jUjqm" id="7YPARvXjw2k" role="19SJt6">
+            <node concept="19SGf9" id="7YPARvXjw2l" role="$DsGW">
+              <node concept="19SUe$" id="7YPARvXjw2m" role="19SJt6">
+                <property role="19SUeA" value="Toggle TestHelper" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="7YPARvXjw2n" role="19SJt6" />
         </node>
         <node concept="1xAIan" id="2ncjLWki9Kn" role="1xAIax">
           <property role="1xAIam" value="Helper Functions" />
@@ -1833,9 +1851,9 @@
       </node>
       <node concept="3z_lpU" id="2ncjLWki9Ko" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
-        <property role="3z_lpV" value="                                                                                                         &#10; SimpleTestCase                                                                                          &#10;model   mbeddr.tutorial.main.defaultExtensions                                                           &#10;package examples    constraints                                                                          &#10;                                                                                                         &#10;                                                                                                         &#10;void testHelperFunction() {                                                                              &#10;  assert(0) add(1, 1) == 2;                                                                              &#10;} testHelperFunction (function)                                                                          &#10;exported testcase testAdding {                                                                           &#10;  testHelperFunction();                                                                                  &#10;  assert-equals(0) 10 == add(5, 5);                                                                      &#10;} testAdding(test case)                                                                                  &#10;                                                                                      imports     nothing" />
+        <property role="3z_lpV" value="&#10;SimpleTestCase &#10;model  mbeddr.tutorial.main.defaultExtensions &#10;packageexamples    constraints       &#10; &#10; &#10;6b853dfb-19be-33ee-b67c-33b658dd0753&#10;                                                                                   imports   nothing                                          &#10;                                                                                                                                              &#10;SimpleTestCase                                                                                                                                &#10;model  mbeddr.tutorial.main.defaultExtensions                                                                                                 &#10;packageexamples    constraints                                                                                                                &#10;                                                                                                                                              &#10;                                                                                                                                              &#10;                                                                                   imports   nothing                                          " />
+        <property role="3z_lpw" value="true" />
         <node concept="2NCZwO" id="2ncjLWki9Kp" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Kq" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1851,7 +1869,7 @@
           <ref role="3z_lpL" to="e1tx:11TWfQr5TNK" resolve="testDivision" />
         </node>
         <node concept="3z_lpK" id="2ncjLWki9Ku" role="3z_lpH">
-          <ref role="3z_lpL" to="e1tx:11TWfQr5SYH" resolve="main" />
+          <ref role="3z_lpL" to="e1tx:4Ru$s7zMAru" resolve="main" />
         </node>
       </node>
       <node concept="1_0LV8" id="48PTy$RsZBz" role="1_0VJ0">

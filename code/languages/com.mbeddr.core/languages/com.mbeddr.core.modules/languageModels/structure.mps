@@ -234,6 +234,9 @@
     <node concept="PrWs8" id="6brBMefRP1F" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
+    <node concept="PrWs8" id="1S6A2cmU1x0" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvx">
     <property role="3GE5qa" value="functions" />
@@ -935,8 +938,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5eg$WPOtR8F" resolve="GlobalConstantFunctionDeclaration" />
     </node>
-    <node concept="PrWs8" id="70kXLV5wf5D" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    <node concept="PrWs8" id="73rNuZmHSmq" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="5eg$WPOuoHl">
@@ -1511,7 +1514,7 @@
   </node>
   <node concept="1TIwiD" id="76hx8dKhwZW">
     <property role="1pbfSe" value="505965441" />
-    <property role="TrG5h" value="AbritraryTextContent" />
+    <property role="TrG5h" value="ArbitraryTextContent" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5soFcYDEU27" role="1TKVEl">
       <property role="TrG5h" value="requiredStdHeader" />
@@ -1528,6 +1531,23 @@
     </node>
     <node concept="PrWs8" id="76hx8dKhx0v" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2T6Po3mUMXu">
+    <property role="1pbfSe" value="87164126" />
+    <property role="TrG5h" value="ModuleHNameOverride" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="moduleHOverride" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2T6Po3mUMXv" role="lGtFl">
+      <property role="Hh88m" value="nameOverride" />
+      <node concept="tn0Fv" id="2T6Po3mUMYh" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
+      </node>
     </node>
   </node>
 </model>

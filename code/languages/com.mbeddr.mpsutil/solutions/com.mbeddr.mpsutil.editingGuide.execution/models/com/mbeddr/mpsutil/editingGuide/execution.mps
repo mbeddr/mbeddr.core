@@ -2,8 +2,8 @@
 <model ref="r:b54ad628-4790-40a0-8b1f-5a776b948a02(com.mbeddr.mpsutil.editingGuide.execution)">
   <persistence version="9" />
   <languages>
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -113,7 +113,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -237,6 +237,7 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
@@ -563,11 +564,18 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="3$YAQZ4CN6B" role="2GsD0m">
-            <node concept="37vLTw" id="3$YAQZ4CMY2" role="2Oq$k0">
-              <ref role="3cqZAo" node="3$YAQZ4CLBR" resolve="instancesInProject" />
+          <node concept="2ShNRf" id="7lgjy2PVBHR" role="2GsD0m">
+            <node concept="Tc6Ow" id="7lgjy2PVQAG" role="2ShVmc">
+              <node concept="3uibUv" id="7lgjy2PVRcS" role="HW$YZ">
+                <ref role="3uigEE" node="5h2rxDjX6bI" resolve="ExerciseExecutor" />
+              </node>
+              <node concept="2OqwBi" id="3$YAQZ4CN6B" role="I$8f6">
+                <node concept="37vLTw" id="3$YAQZ4CMY2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3$YAQZ4CLBR" resolve="instancesInProject" />
+                </node>
+                <node concept="T8wYR" id="3$YAQZ4CNg1" role="2OqNvi" />
+              </node>
             </node>
-            <node concept="T8wYR" id="3$YAQZ4CNg1" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="3$YAQZ4CNMR" role="3cqZAp">
@@ -1475,34 +1483,44 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3$YAQZ4CAVY" role="3cqZAp">
-          <node concept="2OqwBi" id="3$YAQZ4CDtA" role="3clFbG">
-            <node concept="2OqwBi" id="3$YAQZ4CBd7" role="2Oq$k0">
-              <node concept="37vLTw" id="3$YAQZ4CAVW" role="2Oq$k0">
-                <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
-              </node>
-              <node concept="liA8E" id="3$YAQZ4CDs1" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+        <node concept="3clFbJ" id="6m4uG_HDZ$K" role="3cqZAp">
+          <node concept="3clFbS" id="6m4uG_HDZ$M" role="3clFbx">
+            <node concept="3clFbF" id="3$YAQZ4CAVY" role="3cqZAp">
+              <node concept="2OqwBi" id="3$YAQZ4CDtA" role="3clFbG">
+                <node concept="2OqwBi" id="3$YAQZ4CBd7" role="2Oq$k0">
+                  <node concept="37vLTw" id="3$YAQZ4CAVW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
+                  </node>
+                  <node concept="liA8E" id="3$YAQZ4CDs1" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorComponent.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3$YAQZ4CDxz" role="2OqNvi">
+                  <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="removeSelectionListener" />
+                  <node concept="37vLTw" id="3$YAQZ4CDEr" role="37wK5m">
+                    <ref role="3cqZAo" node="3$YAQZ4Cxvc" resolve="mySelectionListener" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="liA8E" id="3$YAQZ4CDxz" role="2OqNvi">
-              <ref role="37wK5l" to="lwvz:~SelectionManager.removeSelectionListener(jetbrains.mps.openapi.editor.selection.SelectionListener):void" resolve="removeSelectionListener" />
-              <node concept="37vLTw" id="3$YAQZ4CDEr" role="37wK5m">
-                <ref role="3cqZAo" node="3$YAQZ4Cxvc" resolve="mySelectionListener" />
+            <node concept="3clFbF" id="3$YAQZ4CE30" role="3cqZAp">
+              <node concept="2OqwBi" id="3$YAQZ4CElU" role="3clFbG">
+                <node concept="37vLTw" id="3$YAQZ4CE2Y" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
+                </node>
+                <node concept="liA8E" id="3$YAQZ4CFtR" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
+                  <node concept="37vLTw" id="3$YAQZ4CFAK" role="37wK5m">
+                    <ref role="3cqZAo" node="3$YAQZ4C_3p" resolve="myEditorDisposeListener" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="3$YAQZ4CE30" role="3cqZAp">
-          <node concept="2OqwBi" id="3$YAQZ4CElU" role="3clFbG">
-            <node concept="37vLTw" id="3$YAQZ4CE2Y" role="2Oq$k0">
+          <node concept="3y3z36" id="6m4uG_HE05A" role="3clFbw">
+            <node concept="10Nm6u" id="6m4uG_HE0cl" role="3uHU7w" />
+            <node concept="37vLTw" id="6m4uG_HDZU9" role="3uHU7B">
               <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
-            </node>
-            <node concept="liA8E" id="3$YAQZ4CFtR" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
-              <node concept="37vLTw" id="3$YAQZ4CFAK" role="37wK5m">
-                <ref role="3cqZAo" node="3$YAQZ4C_3p" resolve="myEditorDisposeListener" />
-              </node>
             </node>
           </node>
         </node>

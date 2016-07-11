@@ -18,12 +18,11 @@
 +:maintenance/*
 +:milestone/v-1.5-3
 +:integration/*]]></param>
-          <param name="groupCheckinsByCommitter" value="true" />
-          <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriod" value="91" />
           <param name="quietPeriodMode" value="USE_CUSTOM" />
-          <param name="triggerRules"><![CDATA[+:.
--:/.teamcity/*]]></param>
+          <param name="triggerRules"><![CDATA[-:.teamcity
+-:comment=%do-not-trigger-commit-msg.tc-server%
+-:comment=%do-not-trigger-commit-msg.tc-user%]]></param>
         </parameters>
       </build-trigger>
     </build-triggers>

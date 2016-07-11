@@ -8,7 +8,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="0" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
@@ -188,6 +188,10 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
+        <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
+        <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
+        <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
         <child id="5782973724855443006" name="icon" index="37b278" />
@@ -262,6 +266,10 @@
   <node concept="14aYJB" id="FniR$C6ZPR">
     <property role="TrG5h" value="FavouritesProjectView" />
     <property role="3aPfAI" value="3" />
+    <property role="280Ia$" value="true" />
+    <property role="280IaB" value="true" />
+    <property role="280Iao" value="true" />
+    <property role="280Iaj" value="true" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14aYG3" id="FniR$CbLj0" role="1DVp44">
