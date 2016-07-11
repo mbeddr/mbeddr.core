@@ -218,7 +218,9 @@
         <property id="1296766250740825011" name="offset" index="35S36V" />
         <property id="1296766250740825015" name="maxValue" index="35S36Z" />
       </concept>
-      <concept id="6492502266247030008" name="mbeddr.tutorial.shonan.structure.IntermediateStencilComputation" flags="ng" index="392aih" />
+      <concept id="6492502266247030008" name="mbeddr.tutorial.shonan.structure.IntermediateStencilComputation" flags="ng" index="392aih">
+        <child id="190376153469258667" name="strategy" index="1rAt6L" />
+      </concept>
       <concept id="6492502266246389078" name="mbeddr.tutorial.shonan.structure.IntermediateStencilElement" flags="ng" index="394HOZ">
         <property id="6492502266246389147" name="kind" index="394HRM" />
         <child id="7825423332973536221" name="context" index="mqpVi" />
@@ -226,6 +228,7 @@
         <child id="6492502266248359553" name="type" index="39feVC" />
       </concept>
       <concept id="8517117594602553107" name="mbeddr.tutorial.shonan.structure.GeneratedElement" flags="ng" index="3mGlT0" />
+      <concept id="190376153468873774" name="mbeddr.tutorial.shonan.structure.CacheStrategy" flags="ng" index="1r$ZoO" />
       <concept id="4078196357442664608" name="mbeddr.tutorial.shonan.structure.RealAccess" flags="ng" index="3xct5q" />
       <concept id="4078196357442664613" name="mbeddr.tutorial.shonan.structure.ImaginaryAccess" flags="ng" index="3xct5v" />
       <concept id="8652997886963748611" name="mbeddr.tutorial.shonan.structure.ComplexType" flags="ng" index="3QIT2S" />
@@ -6668,6 +6671,22 @@
                 </node>
               </node>
               <node concept="raruj" id="2ue418puIxC" role="lGtFl" />
+              <node concept="1r$ZoO" id="a$mxDpfDxK" role="1rAt6L">
+                <node concept="29HgVG" id="a$mxDpfEJU" role="lGtFl">
+                  <node concept="3NFfHV" id="a$mxDpfEJV" role="3NFExx">
+                    <node concept="3clFbS" id="a$mxDpfEJW" role="2VODD2">
+                      <node concept="3cpWs6" id="a$mxDpfENX" role="3cqZAp">
+                        <node concept="2OqwBi" id="a$mxDpfENY" role="3cqZAk">
+                          <node concept="3TrEf2" id="a$mxDpfENZ" role="2OqNvi">
+                            <ref role="3Tt5mk" to="5l2n:a$mxDpdUKW" />
+                          </node>
+                          <node concept="30H73N" id="a$mxDpfEO0" role="2Oq$k0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

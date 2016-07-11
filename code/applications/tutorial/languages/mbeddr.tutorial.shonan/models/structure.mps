@@ -77,6 +77,11 @@
     <property role="TrG5h" value="IntermediateStencilComputation" />
     <property role="34LRSv" value="intermediate stencil" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    <node concept="1TJgyj" id="a$mxDpfoIF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="strategy" />
+      <ref role="20lvS9" node="a$mxDpdQAc" resolve="IStencilStrategy" />
+    </node>
     <node concept="PrWs8" id="17Z2wzk70BQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>

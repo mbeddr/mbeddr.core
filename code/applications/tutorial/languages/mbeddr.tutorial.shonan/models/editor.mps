@@ -805,6 +805,23 @@
     <node concept="3EZMnI" id="3CmSUB7Fp_z" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="l2Vlx" id="4hj596uNbyH" role="2iSdaV" />
+      <node concept="3EZMnI" id="a$mxDpfoB3" role="3EZMnx">
+        <node concept="l2Vlx" id="a$mxDpfoB4" role="2iSdaV" />
+        <node concept="3F0ifn" id="a$mxDpfoIp" role="3EZMnx">
+          <property role="3F0ifm" value="intermediate stencil" />
+        </node>
+        <node concept="_tjkj" id="a$mxDpfoIq" role="3EZMnx">
+          <node concept="3EZMnI" id="a$mxDpfoIr" role="_tjki">
+            <node concept="l2Vlx" id="a$mxDpfoIs" role="2iSdaV" />
+            <node concept="3F0ifn" id="a$mxDpfoIt" role="3EZMnx">
+              <property role="3F0ifm" value="with" />
+            </node>
+            <node concept="3F1sOY" id="a$mxDpfoIu" role="3EZMnx">
+              <ref role="1NtTu8" to="5l2n:a$mxDpfoIF" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="3CmSUB7Fp__" role="3EZMnx">
         <property role="3F0ifm" value="{" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgZq3" resolve="Braces" />
