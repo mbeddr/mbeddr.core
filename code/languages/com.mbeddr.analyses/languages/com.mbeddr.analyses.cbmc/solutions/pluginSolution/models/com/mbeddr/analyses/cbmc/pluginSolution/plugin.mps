@@ -2,14 +2,22 @@
 <model ref="r:4a481070-9069-4483-af8e-37b7cdc689c8(com.mbeddr.analyses.cbmc.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -231,7 +239,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -743,10 +751,10 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <node concept="2OqwBi" id="4EriiVwnqHx" role="37wK5m">
-              <node concept="2WthIp" id="4EriiVwnqHy" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6AYn" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6AD8" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="4EriiVwnqHy" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="3_HSwtcOdUx" role="37wK5m">
               <node concept="2WthIp" id="3_HSwtcOdmk" role="2Oq$k0" />
@@ -775,24 +783,6 @@
     <property role="TrG5h" value="CbmcVerifySingleAnalysisConfigurationAction" />
     <property role="2uzpH1" value="Verify Analysis Configuration" />
     <property role="1WHSii" value="Starts CBMC on this configuration" />
-    <node concept="2ScWuX" id="6P_afAIpSTu" role="tmbBb">
-      <node concept="3clFbS" id="6P_afAIpSTv" role="2VODD2">
-        <node concept="3clFbF" id="6P_afAIrgYU" role="3cqZAp">
-          <node concept="3fqX7Q" id="6P_afAIrhbP" role="3clFbG">
-            <node concept="NRdvd" id="6P_afAIrHp9" role="3fr31v">
-              <ref role="1Pybhc" to="ood5:6P_afAIr3XL" resolve="AnalysesConfigurationUtils" />
-              <ref role="37wK5l" to="ood5:6P_afAIr6ZT" resolve="isCommented" />
-              <node concept="2OqwBi" id="6P_afAIrHpa" role="37wK5m">
-                <node concept="2WthIp" id="6P_afAIrHpb" role="2Oq$k0" />
-                <node concept="3gHZIF" id="41hIld_kb8i" role="2OqNvi">
-                  <ref role="2WH_rO" node="6w9LZ1hC3Vo" resolve="analysis" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1DS2jV" id="6w9LZ1hC3Vm" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -943,10 +933,10 @@
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <node concept="2OqwBi" id="1w9zoeA7e4d" role="37wK5m">
-              <node concept="2WthIp" id="1w9zoeA7e4e" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6Bxa" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6Baa" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="1w9zoeA7e4e" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="3_HSwtcOh4d" role="37wK5m">
               <node concept="2WthIp" id="3_HSwtcOgw0" role="2Oq$k0" />
@@ -969,6 +959,24 @@
     </node>
     <node concept="1QGGSu" id="6w9LZ1hC3WS" role="3Uehp1">
       <property role="1QGGTI" value="${solution_descriptor}/icons/verify.png" />
+    </node>
+    <node concept="2ScWuX" id="6P_afAIpSTu" role="tmbBb">
+      <node concept="3clFbS" id="6P_afAIpSTv" role="2VODD2">
+        <node concept="3clFbF" id="6P_afAIrgYU" role="3cqZAp">
+          <node concept="3fqX7Q" id="6P_afAIrhbP" role="3clFbG">
+            <node concept="NRdvd" id="6P_afAIrHp9" role="3fr31v">
+              <ref role="1Pybhc" to="ood5:6P_afAIr3XL" resolve="AnalysesConfigurationUtils" />
+              <ref role="37wK5l" to="ood5:6P_afAIr6ZT" resolve="isCommented" />
+              <node concept="2OqwBi" id="6P_afAIrHpa" role="37wK5m">
+                <node concept="3gHZIF" id="41hIld_kb8i" role="2OqNvi">
+                  <ref role="2WH_rO" node="6w9LZ1hC3Vo" resolve="analysis" />
+                </node>
+                <node concept="2WthIp" id="6P_afAIrHpb" role="2Oq$k0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="EVDykUC7Si">
@@ -1132,10 +1140,10 @@
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <node concept="2OqwBi" id="4EriiVwnuny" role="37wK5m">
-              <node concept="2WthIp" id="4EriiVwnunz" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6Acp" role="2OqNvi">
                 <ref role="2WH_rO" node="5KHBa6l6$Cl" resolve="mpsProject" />
               </node>
+              <node concept="2WthIp" id="4EriiVwnunz" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="3_HSwtcOa$R" role="37wK5m">
               <node concept="2WthIp" id="3_HSwtcOa0E" role="2Oq$k0" />
@@ -3153,10 +3161,10 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <ref role="37wK5l" to="tzyt:2UdJgvFqtPp" resolve="performAnalysis" />
             <node concept="2OqwBi" id="1$MI$rgGhrf" role="37wK5m">
-              <node concept="2WthIp" id="1$MI$rgGhrg" role="2Oq$k0" />
               <node concept="1DTwFV" id="5KHBa6l6wHG" role="2OqNvi">
                 <ref role="2WH_rO" node="4arT0cnzgZf" resolve="project" />
               </node>
+              <node concept="2WthIp" id="1$MI$rgGhrg" role="2Oq$k0" />
             </node>
             <node concept="2OqwBi" id="1$MI$rgGhri" role="37wK5m">
               <node concept="2WthIp" id="1$MI$rgGhrj" role="2Oq$k0" />
@@ -3315,10 +3323,10 @@
           <node concept="1Wc70l" id="6P_afAIro5F" role="3clFbG">
             <node concept="2OqwBi" id="5etR5IKpoSY" role="3uHU7w">
               <node concept="2OqwBi" id="5etR5IKpoSZ" role="2Oq$k0">
-                <node concept="2WthIp" id="5etR5IKpoT0" role="2Oq$k0" />
                 <node concept="3gHZIF" id="41hIld_kaEU" role="2OqNvi">
                   <ref role="2WH_rO" node="5etR5IKpoRa" resolve="analysis" />
                 </node>
+                <node concept="2WthIp" id="5etR5IKpoT0" role="2Oq$k0" />
               </node>
               <node concept="3TrcHB" id="5etR5IKpoT2" role="2OqNvi">
                 <ref role="3TsBF5" to="q5q6:7ehmsbAuTD3" resolve="hasUnwindingDepth" />
@@ -3329,10 +3337,10 @@
                 <ref role="1Pybhc" to="ood5:6P_afAIr3XL" resolve="AnalysesConfigurationUtils" />
                 <ref role="37wK5l" to="ood5:6P_afAIr6ZT" resolve="isCommented" />
                 <node concept="2OqwBi" id="6P_afAIrHKX" role="37wK5m">
-                  <node concept="2WthIp" id="6P_afAIrHKY" role="2Oq$k0" />
                   <node concept="3gHZIF" id="41hIld_ka$L" role="2OqNvi">
                     <ref role="2WH_rO" node="5etR5IKpoRa" resolve="analysis" />
                   </node>
+                  <node concept="2WthIp" id="6P_afAIrHKY" role="2Oq$k0" />
                 </node>
               </node>
             </node>
