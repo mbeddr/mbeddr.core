@@ -252,7 +252,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -23036,6 +23036,42 @@
         </node>
       </node>
       <node concept="17QB3L" id="1ir19b4JZNH" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1S6A2cmQVtN">
+    <ref role="13h7C2" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    <node concept="13i0hz" id="1S6A2cmQW9m" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getParameters" />
+      <node concept="3Tm1VV" id="1S6A2cmQW9n" role="1B3o_S" />
+      <node concept="3clFbS" id="1S6A2cmQW9p" role="3clF47">
+        <node concept="3cpWs6" id="1S6A2cmQWa2" role="3cqZAp">
+          <node concept="10Nm6u" id="1S6A2cmQWak" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="_YKpA" id="1S6A2cmQW9W" role="3clF45">
+        <node concept="3Tqbb2" id="1S6A2cmQW9X" role="_ZDj9">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1S6A2cmQWaY" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReturnType" />
+      <node concept="3Tm1VV" id="1S6A2cmQWaZ" role="1B3o_S" />
+      <node concept="3clFbS" id="1S6A2cmQWb0" role="3clF47">
+        <node concept="3cpWs6" id="1S6A2cmQWb1" role="3cqZAp">
+          <node concept="10Nm6u" id="1S6A2cmQWb2" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1S6A2cmQWc3" role="3clF45">
+        <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="1S6A2cmQVtO" role="13h7CW">
+      <node concept="3clFbS" id="1S6A2cmQVtP" role="2VODD2" />
     </node>
   </node>
 </model>

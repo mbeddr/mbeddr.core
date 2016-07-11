@@ -1080,7 +1080,7 @@
   </node>
   <node concept="24kQdi" id="3kEjc_WJ62Q">
     <property role="3GE5qa" value="arbitraryText" />
-    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="AbritraryTextItem" />
+    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="ArbitraryTextItem" />
     <node concept="3F0A7n" id="3kEjc_WJ62S" role="2wV5jI">
       <property role="1O74Pk" value="true" />
       <ref role="1NtTu8" to="c4fa:3kEjc_WJ4oa" resolve="text" />

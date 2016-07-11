@@ -16,6 +16,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -48,6 +49,9 @@
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -91,6 +95,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -950,6 +955,58 @@
     <node concept="NWlO9" id="tSjOfAaypr" role="lGtFl">
       <property role="NWlVz" value="Utility methods for testing analyses about variabiity." />
     </node>
+    <node concept="2tJIrI" id="6BowXlDOYaR" role="jymVt" />
+    <node concept="2YIFZL" id="6BowXlDOYHL" role="jymVt">
+      <property role="TrG5h" value="printResults" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6BowXlDOYHM" role="3clF47">
+        <node concept="2Gpval" id="6BowXlDOYHN" role="3cqZAp">
+          <node concept="2GrKxI" id="6BowXlDOYHO" role="2Gsz3X">
+            <property role="TrG5h" value="r" />
+          </node>
+          <node concept="3clFbS" id="6BowXlDOYHP" role="2LFqv$">
+            <node concept="3clFbF" id="6BowXlDOZuJ" role="3cqZAp">
+              <node concept="2OqwBi" id="6BowXlDOZuG" role="3clFbG">
+                <node concept="10M0yZ" id="6BowXlDOZuH" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="6BowXlDOZuI" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="2OqwBi" id="6BowXlDOZ$p" role="37wK5m">
+                    <node concept="2GrUjf" id="6BowXlDOZzD" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="6BowXlDOYHO" resolve="r" />
+                    </node>
+                    <node concept="liA8E" id="6BowXlDOZEo" role="2OqNvi">
+                      <ref role="37wK5l" to="vy7l:_qCyBYJ6FF" resolve="userFriendlyNodeName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="6BowXlDOYI0" role="2GsD0m">
+            <ref role="3cqZAo" node="6BowXlDOYI5" resolve="results" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6BowXlDOYI3" role="1B3o_S" />
+      <node concept="3cqZAl" id="6BowXlDOZ30" role="3clF45" />
+      <node concept="37vLTG" id="6BowXlDOYI5" role="3clF46">
+        <property role="TrG5h" value="results" />
+        <node concept="_YKpA" id="6BowXlDOYI6" role="1tU5fm">
+          <node concept="3uibUv" id="6BowXlDOYI7" role="_ZDj9">
+            <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="6BowXlDOYIa" role="lGtFl">
+        <property role="NWlVz" value="Prints the user friendly names of results." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6BowXlDOYtd" role="jymVt" />
   </node>
 </model>
 
