@@ -3488,5 +3488,71 @@
       <ref role="1YaFvo" to="hba4:6HZ4hJtXUEI" resolve="TypeSwitchVariable" />
     </node>
   </node>
+  <node concept="18kY7G" id="5KHBa6l7Gll">
+    <property role="TrG5h" value="check_SafeReadAction" />
+    <property role="3GE5qa" value="model_access" />
+    <node concept="3clFbS" id="5KHBa6l7Glm" role="18ibNy">
+      <node concept="3clFbJ" id="1eZSuKdVoFy" role="3cqZAp">
+        <node concept="3clFbS" id="1eZSuKdVoFz" role="3clFbx">
+          <node concept="a7r0C" id="1eZSuKdVpmz" role="3cqZAp">
+            <node concept="Xl_RD" id="1eZSuKdVpo$" role="a7wSD">
+              <property role="Xl_RC" value="Shall specify a repository to lock" />
+            </node>
+            <node concept="1YBJjd" id="5KHBa6l7Gxk" role="2OEOjV">
+              <ref role="1YBMHb" node="5KHBa6l7Glo" resolve="safeReadAction" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="1eZSuKdVp8g" role="3clFbw">
+          <node concept="2OqwBi" id="1eZSuKdVoIN" role="2Oq$k0">
+            <node concept="1YBJjd" id="5KHBa6l7GnN" role="2Oq$k0">
+              <ref role="1YBMHb" node="5KHBa6l7Glo" resolve="safeReadAction" />
+            </node>
+            <node concept="3TrEf2" id="5KHBa6l7GvT" role="2OqNvi">
+              <ref role="3Tt5mk" to="hba4:1eZSuKdVoku" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="1eZSuKdVplj" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5KHBa6l7Glo" role="1YuTPh">
+      <property role="TrG5h" value="safeReadAction" />
+      <ref role="1YaFvo" to="hba4:4ZoQlQrn$qr" resolve="SafeReadAction" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5KHBa6l7GUP">
+    <property role="TrG5h" value="check_SafeWriteAction" />
+    <property role="3GE5qa" value="model_access" />
+    <node concept="3clFbS" id="5KHBa6l7GUQ" role="18ibNy">
+      <node concept="3clFbJ" id="5KHBa6l7GUW" role="3cqZAp">
+        <node concept="3clFbS" id="5KHBa6l7GUX" role="3clFbx">
+          <node concept="a7r0C" id="5KHBa6l7GUY" role="3cqZAp">
+            <node concept="Xl_RD" id="5KHBa6l7GUZ" role="a7wSD">
+              <property role="Xl_RC" value="Shall specify a repository to lock" />
+            </node>
+            <node concept="1YBJjd" id="5KHBa6l7H6Y" role="2OEOjV">
+              <ref role="1YBMHb" node="5KHBa6l7GUS" resolve="safeWriteAction" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5KHBa6l7GV1" role="3clFbw">
+          <node concept="2OqwBi" id="5KHBa6l7GV2" role="2Oq$k0">
+            <node concept="1YBJjd" id="5KHBa6l7GXt" role="2Oq$k0">
+              <ref role="1YBMHb" node="5KHBa6l7GUS" resolve="safeWriteAction" />
+            </node>
+            <node concept="3TrEf2" id="5KHBa6l7H5z" role="2OqNvi">
+              <ref role="3Tt5mk" to="hba4:5KHBa6l7Gzt" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="5KHBa6l7GV5" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5KHBa6l7GUS" role="1YuTPh">
+      <property role="TrG5h" value="safeWriteAction" />
+      <ref role="1YaFvo" to="hba4:1IlnVQ9J0Vi" resolve="SafeWriteAction" />
+    </node>
+  </node>
 </model>
 

@@ -234,6 +234,9 @@
     <node concept="PrWs8" id="6brBMefRP1F" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
+    <node concept="PrWs8" id="1S6A2cmU1x0" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvx">
     <property role="3GE5qa" value="functions" />

@@ -258,6 +258,7 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -375,14 +376,14 @@
       <node concept="37vLTG" id="4arT0cnseFE" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cnseFF" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnseFG" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cnseFH" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnseFI" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -528,14 +529,14 @@
       <node concept="37vLTG" id="4arT0cnseGi" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cnseGj" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnseGk" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cnseGl" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnseGm" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1269,14 +1270,14 @@
       <node concept="37vLTG" id="4arT0cnseIp" role="3clF46">
         <property role="TrG5h" value="rawAssig" />
         <node concept="3uibUv" id="4arT0cnseIq" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnseIr" role="3clF46">
         <property role="TrG5h" value="rawStates" />
         <node concept="_YKpA" id="4arT0cnseIs" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnseIt" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1395,7 +1396,7 @@
       <node concept="37vLTG" id="4arT0cnseJ5" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cnseJ6" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="NWlO9" id="4arT0cnseJ7" role="lGtFl">
@@ -1589,7 +1590,7 @@
       <node concept="37vLTG" id="2LKSz3MpSJV" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="2LKSz3MpSJW" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="NWlO9" id="2LKSz3MpSJX" role="lGtFl">
@@ -1602,14 +1603,14 @@
       <node concept="37vLTG" id="P13yCXERxd" role="3clF46">
         <property role="TrG5h" value="rawState" />
         <node concept="3uibUv" id="P13yCXERxe" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="P13yCXERxf" role="3clF46">
         <property role="TrG5h" value="rawStates" />
         <node concept="_YKpA" id="P13yCXERxg" role="1tU5fm">
           <node concept="3uibUv" id="P13yCXERxh" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1739,7 +1740,7 @@
           <node concept="3cpWsn" id="P13yCXEXGC" role="3cpWs9">
             <property role="TrG5h" value="previousRawState" />
             <node concept="3uibUv" id="P13yCXEXGD" role="1tU5fm">
-              <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+              <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
             </node>
             <node concept="2OqwBi" id="P13yCXEYML" role="33vP2m">
               <node concept="37vLTw" id="P13yCXEY2o" role="2Oq$k0">
@@ -1820,14 +1821,14 @@
       <node concept="37vLTG" id="4arT0cnsfYR" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cnsfYS" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnsfYT" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cnsfYU" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnsfYV" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1964,6 +1965,7 @@
               </node>
             </node>
           </node>
+          <node concept="15s5l7" id="395kdzFspn2" role="lGtFl" />
         </node>
         <node concept="3cpWs6" id="2nqAz1iw9ou" role="3cqZAp">
           <node concept="3clFbT" id="2nqAz1iwa7y" role="3cqZAk">
@@ -2275,14 +2277,14 @@
       <node concept="37vLTG" id="4arT0cnsg0J" role="3clF46">
         <property role="TrG5h" value="rawCall" />
         <node concept="3uibUv" id="4arT0cnsg0K" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnsg0L" role="3clF46">
         <property role="TrG5h" value="sts" />
         <node concept="_YKpA" id="4arT0cnsg0M" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnsg0N" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -2342,6 +2344,40 @@
         <property role="NWlVz" value="Returns the name fo the statemachine variable for this target." />
       </node>
     </node>
+    <node concept="2tJIrI" id="395kdzFqM8I" role="jymVt" />
+    <node concept="3clFb_" id="395kdzFqLAa" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="395kdzFqLAc" role="3clF45" />
+      <node concept="37vLTG" id="395kdzFqLAd" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="395kdzFqLAe" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="395kdzFqLAf" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="395kdzFqLAg" role="1tU5fm">
+          <node concept="3uibUv" id="395kdzFqLAh" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="395kdzFqLAi" role="1B3o_S" />
+      <node concept="3clFbS" id="395kdzFqLAl" role="3clF47">
+        <node concept="3clFbF" id="395kdzFqLAn" role="3cqZAp">
+          <node concept="3clFbT" id="395kdzFqLAm" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="395kdzFqMD1" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="395kdzFqN0Q" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4arT0cnsg1a" role="1B3o_S" />
     <node concept="NWlO9" id="4arT0cnsg1b" role="lGtFl">
       <property role="NWlVz" value="Lifter of function calls for com.mbeddr.statemachine language." />
@@ -2381,14 +2417,14 @@
       <node concept="37vLTG" id="4arT0cnshgf" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cnshgg" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnshgh" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cnshgi" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnshgj" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -2619,21 +2655,6 @@
             <node concept="10Nm6u" id="4arT0cnshgI" role="33vP2m" />
           </node>
         </node>
-        <node concept="3cpWs8" id="4arT0cnshgJ" role="3cqZAp">
-          <node concept="3cpWsn" id="4arT0cnshgK" role="3cpWs9">
-            <property role="TrG5h" value="ident" />
-            <node concept="17QB3L" id="4arT0cnshgL" role="1tU5fm" />
-            <node concept="2OqwBi" id="4arT0cnshgM" role="33vP2m">
-              <node concept="37vLTw" id="4arT0cnshgN" role="2Oq$k0">
-                <ref role="3cqZAo" node="4arT0cnshie" resolve="rawRet" />
-              </node>
-              <node concept="liA8E" id="4arT0cnshgO" role="2OqNvi">
-                <ref role="37wK5l" to="rbq9:WwTuEsv3zy" resolve="getIdentifier" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4arT0cnshgP" role="3cqZAp" />
         <node concept="3cpWs8" id="4arT0cnshgQ" role="3cqZAp">
           <node concept="3cpWsn" id="4arT0cnshgR" role="3cpWs9">
             <property role="TrG5h" value="lastCall" />
@@ -2808,14 +2829,14 @@
       <node concept="37vLTG" id="4arT0cnshie" role="3clF46">
         <property role="TrG5h" value="rawRet" />
         <node concept="3uibUv" id="4arT0cnshif" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnshig" role="3clF46">
         <property role="TrG5h" value="states" />
         <node concept="_YKpA" id="4arT0cnshih" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnshii" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -2827,6 +2848,40 @@
       <node concept="3Tm1VV" id="4arT0cnshik" role="1B3o_S" />
       <node concept="NWlO9" id="4arT0cnshil" role="lGtFl">
         <property role="NWlVz" value="Lifts the function returns for com.mbeddr.statemachines." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="395kdzFqPBj" role="jymVt" />
+    <node concept="3clFb_" id="395kdzFqQ1K" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="395kdzFqQ1M" role="3clF45" />
+      <node concept="37vLTG" id="395kdzFqQ1N" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="395kdzFqQ1O" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="395kdzFqQ1P" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="395kdzFqQ1Q" role="1tU5fm">
+          <node concept="3uibUv" id="395kdzFqQ1R" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="395kdzFqQ1S" role="1B3o_S" />
+      <node concept="3clFbS" id="395kdzFqQ1V" role="3clF47">
+        <node concept="3clFbF" id="395kdzFqQ1X" role="3cqZAp">
+          <node concept="3clFbT" id="395kdzFqQ1W" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="395kdzFqQzO" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="395kdzFqQRn" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
       </node>
     </node>
     <node concept="3Tm1VV" id="4arT0cnshin" role="1B3o_S" />

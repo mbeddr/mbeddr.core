@@ -368,7 +368,7 @@
             <node concept="17QB3L" id="6A4JgbUYhyf" role="1tU5fm" />
             <node concept="3cpWs3" id="6A4JgbUYhZm" role="33vP2m">
               <node concept="Xl_RD" id="6A4JgbUYi1Q" role="3uHU7w">
-                <property role="Xl_RC" value="- Selected feature: xorChild1\n- Selected feature: xorChild2\n" />
+                <property role="Xl_RC" value="\t- Selected feature: xorChild1\n\t- Selected feature: xorChild2\n" />
               </node>
               <node concept="3cpWs3" id="6A4JgbUYhIQ" role="3uHU7B">
                 <node concept="3cpWs3" id="6A4JgbUYhHS" role="3uHU7B">
@@ -385,7 +385,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="6A4JgbUYhMH" role="3uHU7w">
-                  <property role="Xl_RC" value="- Features xorChild1 and xorChild2 cannot be selected simultaneously.\n" />
+                  <property role="Xl_RC" value="\t- Features xorChild1 and xorChild2 cannot be selected simultaneously.\n" />
                 </node>
               </node>
             </node>
