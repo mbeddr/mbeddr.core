@@ -193,6 +193,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="4arT0cnA1Az" role="1oa70y" />
     </node>
+    <node concept="1DS2jV" id="5KHBa6l6$Cl" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="5KHBa6l6$Cm" role="1oa70y" />
+    </node>
     <node concept="tnohg" id="4arT0cnA1AC" role="tncku">
       <node concept="3clFbS" id="4arT0cnA1AD" role="2VODD2">
         <node concept="3clFbJ" id="5xUGqWdtR6D" role="3cqZAp">
@@ -270,8 +275,8 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <node concept="2OqwBi" id="4arT0cnA1BA" role="37wK5m">
               <node concept="2WthIp" id="4arT0cnA1BB" role="2Oq$k0" />
-              <node concept="1DTwFV" id="7uk5GW4Zh9b" role="2OqNvi">
-                <ref role="2WH_rO" node="4arT0cnA1Aq" resolve="project" />
+              <node concept="1DTwFV" id="5KHBa6l6C6p" role="2OqNvi">
+                <ref role="2WH_rO" node="5KHBa6l6$Cl" resolve="mpsProject" />
               </node>
             </node>
             <node concept="2OqwBi" id="3_HSwtcQ6Q9" role="37wK5m">

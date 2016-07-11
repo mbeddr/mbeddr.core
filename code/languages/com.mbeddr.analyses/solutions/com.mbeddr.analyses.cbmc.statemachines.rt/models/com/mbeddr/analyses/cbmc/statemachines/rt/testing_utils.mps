@@ -681,6 +681,19 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs8" id="5KHBa6l7BRx" role="3cqZAp">
+                <node concept="3cpWsn" id="5KHBa6l7BRy" role="3cpWs9">
+                  <property role="TrG5h" value="epi" />
+                  <node concept="3uibUv" id="5KHBa6l7BRw" role="1tU5fm">
+                    <ref role="3uigEE" to="xygl:~EmptyProgressIndicator" resolve="EmptyProgressIndicator" />
+                  </node>
+                  <node concept="2ShNRf" id="5KHBa6l7BRz" role="33vP2m">
+                    <node concept="1pGfFk" id="5KHBa6l7BR$" role="2ShVmc">
+                      <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="3f3CxMd$cYh" role="3cqZAp">
                 <node concept="3cpWsn" id="3f3CxMd$cYi" role="3cpWs9">
                   <property role="TrG5h" value="sa" />
@@ -697,11 +710,10 @@
                         <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
                         <ref role="37wK5l" to="fxhk:3hNQKr2vxFw" resolve="emptyToolAdapter" />
                       </node>
-                      <node concept="2ShNRf" id="5uqRFp957o2" role="37wK5m">
-                        <node concept="1pGfFk" id="5uqRFp957o3" role="2ShVmc">
-                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
-                        </node>
+                      <node concept="37vLTw" id="5KHBa6l7BR_" role="37wK5m">
+                        <ref role="3cqZAo" node="5KHBa6l7BRy" resolve="epi" />
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l7BDe" role="37wK5m" />
                     </node>
                   </node>
                 </node>

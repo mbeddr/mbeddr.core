@@ -17,6 +17,7 @@
     <import index="of7m" ref="r:6b89ada8-2a97-4717-86bd-42be19241c03(com.mbeddr.analyses.cbmc.core.rt.analyses.robustness)" />
     <import index="yqjk" ref="r:a045cdc9-70eb-46cf-a69a-ffc7c55c8821(com.mbeddr.analyses.cbmc.core.rt.analyses.gswitch)" />
     <import index="c420" ref="r:c4158bc8-742a-4562-a9a1-c91c941f203e(com.mbeddr.analyses.cbmc.core.rt.analyses.dead_code)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -211,6 +212,9 @@
               <node concept="37vLTw" id="5uqRFp97bjR" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJfFco" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="5KHBa6l6Tk_" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l6TfX" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -230,6 +234,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="3x0R1LJfFcp" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l6TfX" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l6TjF" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
@@ -327,6 +337,9 @@
               <node concept="37vLTw" id="5uqRFp97e39" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJfFd6" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="5KHBa6l3djT" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l3db5" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -346,6 +359,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="3x0R1LJfFd7" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l3db5" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l3diT" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
@@ -656,6 +675,9 @@
               <node concept="37vLTw" id="5uqRFp97pmO" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJfFev" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="5KHBa6l6TDo" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l6T$7" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -675,6 +697,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="3x0R1LJfFew" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l6T$7" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l6T$8" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
@@ -763,6 +791,9 @@
               <node concept="37vLTw" id="5uqRFp97gAN" role="37wK5m">
                 <ref role="3cqZAo" node="7yN$Xh8ql8m" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="5KHBa6l3dad" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l3d1I" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -782,6 +813,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="7yN$Xh8ql8n" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l3d1I" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l3d4A" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="3uibUv" id="5uqRFp97h9r" role="3clF45">
@@ -862,6 +899,9 @@
               <node concept="37vLTw" id="3AX70SQiNT4" role="37wK5m">
                 <ref role="3cqZAo" node="3AX70SQiNT9" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="5KHBa6l6Tr7" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l6ToZ" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -881,6 +921,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="3AX70SQiNTa" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l6ToZ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l6Tp0" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>

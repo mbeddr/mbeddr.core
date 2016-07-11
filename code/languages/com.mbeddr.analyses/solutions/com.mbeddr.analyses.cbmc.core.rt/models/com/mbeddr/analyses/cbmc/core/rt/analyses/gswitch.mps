@@ -23,6 +23,7 @@
     <import index="yq09" ref="r:55cd9c3d-79d3-4468-8abe-65d809c76fa4(com.mbeddr.analyses.cbmc.core.rt.analyses.reachability)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -981,6 +982,12 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
+      <node concept="37vLTG" id="5KHBa6kYrU1" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6kYs49" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="576QrOJujdd" role="3clF45" />
       <node concept="3clFbS" id="576QrOJujde" role="3clF47">
         <node concept="XkiVB" id="576QrOJujdf" role="3cqZAp">
@@ -996,6 +1003,9 @@
           </node>
           <node concept="37vLTw" id="5uqRFp94680" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp941kG" resolve="pi" />
+          </node>
+          <node concept="37vLTw" id="5KHBa6l0c4S" role="37wK5m">
+            <ref role="3cqZAo" node="5KHBa6kYrU1" resolve="repo" />
           </node>
         </node>
       </node>
@@ -1573,6 +1583,40 @@
             </node>
             <node concept="liA8E" id="6ks7ICTpZBA" role="2OqNvi">
               <ref role="37wK5l" to="rbq9:5bSnXVJO9TI" resolve="isRuntimeError" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6kQ$1ab4w5B" role="3cqZAp">
+          <node concept="3clFbS" id="6kQ$1ab4w5E" role="3clFbx">
+            <node concept="3cpWs6" id="6kQ$1ab4GOw" role="3cqZAp">
+              <node concept="2ShNRf" id="7SLmAEO7B4v" role="3cqZAk">
+                <node concept="1pGfFk" id="7SLmAEO7B4w" role="2ShVmc">
+                  <ref role="37wK5l" to="eqhl:6ks7ICTqc3A" resolve="CBMCLiftedResult" />
+                  <node concept="37vLTw" id="7SLmAEO7B4x" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCt" resolve="rawResult" />
+                  </node>
+                  <node concept="37vLTw" id="7SLmAEO7B4y" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCv" resolve="analyzedNode" />
+                  </node>
+                  <node concept="Xl_RD" id="7SLmAEO7Lwi" role="37wK5m">
+                    <property role="Xl_RC" value="Chosen GSwitch is not reachable from the entry point" />
+                  </node>
+                  <node concept="Xl_RD" id="7SLmAEO7B4$" role="37wK5m">
+                    <property role="Xl_RC" value="Generic Switch Expression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6kQ$1ab4_8g" role="3clFbw">
+            <node concept="37vLTw" id="7SLmAEO7Diq" role="2Oq$k0">
+              <ref role="3cqZAo" node="M7_V6uAXCx" resolve="claimDescription" />
+            </node>
+            <node concept="liA8E" id="6kQ$1ab4AiX" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <node concept="37vLTw" id="6kQ$1ab4AmQ" role="37wK5m">
+                <ref role="3cqZAo" to="xiaw:6kQ$1ab4gdy" resolve="NO_VC_FOUND_MESSAGE" />
+              </node>
             </node>
           </node>
         </node>
@@ -2338,6 +2382,9 @@
               </node>
               <node concept="37vLTw" id="5uqRFp946wN" role="37wK5m">
                 <ref role="3cqZAo" node="5uqRFp946jy" resolve="pi" />
+              </node>
+              <node concept="37vLTw" id="5KHBa6l3b6v" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
               </node>
             </node>
           </node>
