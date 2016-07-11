@@ -40060,6 +40060,12 @@
           <ref role="16sUi3" node="7QuBUQjRPmV" resolve="T" />
         </node>
       </node>
+      <node concept="37vLTG" id="iZR4$vN_OG" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="iZR4$vNFPn" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="7QuBUQjROKv" role="1B3o_S" />
     <node concept="16euLQ" id="7QuBUQjRPmV" role="16eVyc">
