@@ -20,8 +20,8 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="tj7y" ref="r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink.editor)" />
     <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" implicit="true" />
-    <import index="tj7y" ref="r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
   </imports>
@@ -56,6 +56,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -211,6 +212,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -410,6 +412,15 @@
         </node>
       </node>
       <node concept="2iRfu4" id="3OU98G0_Sbv" role="2iSdaV" />
+      <node concept="11L4FC" id="5hwpDXA2aS7" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="11LMrY" id="5hwpDXA2bsn" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VPM3Z" id="5hwpDXA2cZM" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
     </node>
     <node concept="PMmxH" id="3mn43GPgif6" role="6VMZX">
       <ref role="PMmxG" to="z726:3mn43GP7LqB" resolve="TextOverrideInspectorComponent" />
@@ -419,6 +430,12 @@
     <ref role="1XX52x" to="soy0:3OU98G0_S3D" resolve="AbstractModuleRefWord" />
     <node concept="1HlG4h" id="4ulp8VfZJgX" role="2wV5jI">
       <ref role="1k5W1q" to="z726:3RseghId8o$" resolve="nodeReference" />
+      <node concept="11L4FC" id="5hwpDXA2jIq" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="11LMrY" id="5hwpDXA2k1u" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
       <node concept="3tD6jV" id="aiIotXjxXZ" role="3F10Kt">
         <ref role="3tD7wE" to="tj7y:5A_Zlt6qyoK" resolve="hyperlink-handler" />
         <node concept="3sjG9q" id="aiIotXjxY1" role="3tD6jU">
@@ -566,6 +583,14 @@
                                   </node>
                                 </node>
                               </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="5hwpDXA2kd7" role="ukAjM">
+                            <node concept="37vLTw" id="5hwpDXA2kcc" role="2Oq$k0">
+                              <ref role="3cqZAo" node="aiIotXl2uH" resolve="edContext" />
+                            </node>
+                            <node concept="liA8E" id="5hwpDXA2kf0" role="2OqNvi">
+                              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                             </node>
                           </node>
                         </node>
