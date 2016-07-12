@@ -2,7 +2,7 @@
 <model ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -326,7 +326,7 @@
   <node concept="1TIwiD" id="5E1$geGaBk_">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERbitvector" />
-    <property role="34LRSv" value="bitvector" />
+    <property role="34LRSv" value="__CPROVER_bitvector" />
     <property role="1pbfSe" value="111937064" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="5E1$geGaBru" role="1TKVEl">
@@ -354,9 +354,15 @@
   <node concept="1TIwiD" id="4DO4XHFb3hL">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERfloatbv" />
-    <property role="34LRSv" value="floatbv" />
+    <property role="34LRSv" value="__CPROVER_floatbv" />
     <property role="1pbfSe" value="1247786932" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="5KHBa6kTOBN" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4ZVDCZCaQ86" resolve="INumber" />
+    </node>
+    <node concept="PrWs8" id="5KHBa6kUyfu" role="PzmwI">
+      <ref role="PrY4T" node="5KHBa6kUy5h" resolve="ICProverMacro" />
+    </node>
     <node concept="1TJgyi" id="4DO4XHFbeDO" role="1TKVEl">
       <property role="TrG5h" value="totalSize" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -442,7 +448,7 @@
   <node concept="1TIwiD" id="6KXBYUqABWL">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERbool" />
-    <property role="34LRSv" value="bool" />
+    <property role="34LRSv" value="__CPROVER_bool" />
     <property role="1pbfSe" value="114827039" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
   </node>
@@ -657,6 +663,50 @@
         <ref role="trN6q" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kV7VF">
+    <property role="1pbfSe" value="249947252" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERMacroUnaryExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+    <node concept="PrWs8" id="5KHBa6kV7Wy" role="PzmwI">
+      <ref role="PrY4T" node="5KHBa6kUy5h" resolve="ICProverMacro" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kWksC">
+    <property role="1pbfSe" value="249633847" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisnand" />
+    <property role="34LRSv" value="__CPROVER_isnand" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kWksB">
+    <property role="1pbfSe" value="249633848" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisinfd" />
+    <property role="34LRSv" value="__CPROVER_isinfd" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kV8n8">
+    <property role="1pbfSe" value="249945495" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisnanf" />
+    <property role="34LRSv" value="__CPROVER_isnanf" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="PlHQZ" id="5KHBa6kUy5h">
+    <property role="1pbfSe" value="250102286" />
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="ICProverMacro" />
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kTRsl">
+    <property role="1pbfSe" value="250276938" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisinff" />
+    <property role="34LRSv" value="__CPROVER_isinff" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
   </node>
 </model>
 

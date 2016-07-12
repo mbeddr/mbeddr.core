@@ -182,6 +182,7 @@
                       <ref role="cht4Q" to="q5q6:7MOa6vKIydb" resolve="HarnessModule" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="5KHBa6kTgfc" role="1xVPHs" />
                 </node>
               </node>
               <node concept="3x8VRR" id="4DO4XHFbdPv" role="2OqNvi" />
@@ -213,6 +214,7 @@
                       <ref role="cht4Q" to="q5q6:7MOa6vKIydb" resolve="HarnessModule" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="5KHBa6kTgxv" role="1xVPHs" />
                 </node>
               </node>
               <node concept="3x8VRR" id="4DO4XHFbec1" role="2OqNvi" />
@@ -244,6 +246,7 @@
                       <ref role="cht4Q" to="q5q6:7MOa6vKIydb" resolve="HarnessModule" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="5KHBa6kTgp1" role="1xVPHs" />
                 </node>
               </node>
               <node concept="3x8VRR" id="6KXBYUqDoSP" role="2OqNvi" />
@@ -251,6 +254,38 @@
             <node concept="2OqwBi" id="6KXBYUqDoSQ" role="3uHU7B">
               <node concept="nLn13" id="6KXBYUqDoSR" role="2Oq$k0" />
               <node concept="2qgKlT" id="6KXBYUqDoSS" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5KHBa6kUy5i">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="1M2myG" to="q5q6:5KHBa6kUy5h" resolve="ICProverMacro" />
+    <node concept="nKS2y" id="5KHBa6kUy9a" role="1MLUbF">
+      <node concept="3clFbS" id="5KHBa6kUy9b" role="2VODD2">
+        <node concept="3clFbF" id="5KHBa6kUyah" role="3cqZAp">
+          <node concept="22lmx$" id="5KHBa6kUyai" role="3clFbG">
+            <node concept="2OqwBi" id="5KHBa6kUyaj" role="3uHU7w">
+              <node concept="2OqwBi" id="5KHBa6kUyak" role="2Oq$k0">
+                <node concept="nLn13" id="5KHBa6kUyal" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5KHBa6kUyam" role="2OqNvi">
+                  <node concept="1xMEDy" id="5KHBa6kUyan" role="1xVPHs">
+                    <node concept="chp4Y" id="5KHBa6kUyao" role="ri$Ld">
+                      <ref role="cht4Q" to="q5q6:7MOa6vKIydb" resolve="HarnessModule" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="5KHBa6kUyap" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5KHBa6kUyaq" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5KHBa6kUyar" role="3uHU7B">
+              <node concept="nLn13" id="5KHBa6kUyas" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5KHBa6kUyat" role="2OqNvi">
                 <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
               </node>
             </node>
