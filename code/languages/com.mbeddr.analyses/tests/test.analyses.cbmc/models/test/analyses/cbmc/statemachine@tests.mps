@@ -749,7 +749,7 @@
                 <property role="BaGAP" value="" />
               </node>
               <node concept="Xl_RD" id="7Tdla9PNGJE" role="37wK5m">
-                <property role="Xl_RC" value="test_harness_junction" />
+                <property role="Xl_RC" value="harness_junction" />
               </node>
             </node>
           </node>
