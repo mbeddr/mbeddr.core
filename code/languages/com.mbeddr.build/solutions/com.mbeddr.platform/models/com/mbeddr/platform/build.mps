@@ -368,6 +368,9 @@
       <node concept="m$f5U" id="29VkIO0XIIV" role="m$_yh">
         <ref role="m$f5T" node="29VkIO0XzOx" resolve="com.opencsv" />
       </node>
+      <node concept="m$f5U" id="1CFoVez6M8a" role="m$_yh">
+        <ref role="m$f5T" node="7RYhJHLaclQ" resolve="com.mbeddr.mpsutil.emma" />
+      </node>
       <node concept="m$_yC" id="7uZw0yZ2_Jw" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -11572,6 +11575,27 @@
                     <property role="2Ry0Am" value="solutions" />
                     <node concept="2Ry0Ak" id="29VkIO0XQnT" role="2Ry0An">
                       <property role="2Ry0Am" value="com.opencsv" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="398223" id="1CFoVez74G0" role="39821P">
+              <node concept="3_J27D" id="1CFoVez74G2" role="Nbhlr">
+                <node concept="3Mxwew" id="1CFoVez75zd" role="3MwsjC">
+                  <property role="3MwjfP" value="emma" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="1CFoVez75zf" role="39821P">
+                <node concept="398BVA" id="1CFoVez76py" role="2HvfZ0">
+                  <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+                  <node concept="2Ry0Ak" id="1CFoVez76pC" role="iGT6I">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="1CFoVez76pH" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.mpsutil.coverage.emma.rt" />
+                      <node concept="2Ry0Ak" id="1CFoVez76pM" role="2Ry0An">
+                        <property role="2Ry0Am" value="lib" />
+                      </node>
                     </node>
                   </node>
                 </node>
