@@ -18260,7 +18260,7 @@
                                                           </node>
                                                         </node>
                                                         <node concept="liA8E" id="67E2MoTaZDc" role="2OqNvi">
-                                                          <ref role="37wK5l" to="lwvz:~SelectionManager.setSelection(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="setSelection" />
+                                                          <ref role="37wK5l" to="lwvz:~SelectionManager.setSelection(jetbrains.mps.openapi.editor.selection.Selection):void" resolve="setSelection" />
                                                           <node concept="2ShNRf" id="67E2MoTbO4Q" role="37wK5m">
                                                             <node concept="1pGfFk" id="67E2MoTbPAm" role="2ShVmc">
                                                               <ref role="37wK5l" to="r3rm:2_D0AvWRGG9" resolve="GraphSelection" />
@@ -19281,6 +19281,14 @@
                               </node>
                               <node concept="liA8E" id="4KemxTdTvtk" role="2OqNvi">
                                 <ref role="37wK5l" node="4KemxTdSKHW" resolve="getSNode" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="4dpHp7PFOnU" role="37wK5m">
+                              <node concept="37vLTw" id="4dpHp7PFOam" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4teJTSBzNbU" resolve="myModel" />
+                              </node>
+                              <node concept="liA8E" id="4dpHp7PFOBX" role="2OqNvi">
+                                <ref role="37wK5l" node="6HH$p8MLgcb" resolve="getEditorContext" />
                               </node>
                             </node>
                           </node>
@@ -40082,6 +40090,12 @@
         <property role="TrG5h" value="diagramNode" />
         <node concept="16syzq" id="4KemxTdS2y1" role="1tU5fm">
           <ref role="16sUi3" node="4KemxTdS2y3" resolve="T" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4dpHp7PFOLO" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="4dpHp7PFOQq" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
     </node>
