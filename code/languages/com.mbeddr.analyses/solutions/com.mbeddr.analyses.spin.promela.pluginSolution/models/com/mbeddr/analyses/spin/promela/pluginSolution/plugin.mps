@@ -216,7 +216,7 @@
   </node>
   <node concept="sE7Ow" id="EVDykUC7Si">
     <property role="TrG5h" value="SpinCheckAction" />
-    <property role="2uzpH1" value="Verify Model" />
+    <property role="2uzpH1" value="Verify Model (with Spin)" />
     <node concept="1DS2jV" id="EVDykUCb6r" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
