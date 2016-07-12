@@ -6002,7 +6002,7 @@
         </node>
         <node concept="3cpWs8" id="5Cq06Aj9GTy" role="3cqZAp">
           <node concept="3cpWsn" id="5Cq06Aj9GT_" role="3cpWs9">
-            <property role="TrG5h" value="variableMap" />
+            <property role="TrG5h" value="variableCache" />
             <node concept="3rvAFt" id="5Cq06Aj9GTs" role="1tU5fm">
               <node concept="3uibUv" id="4D_91tBzhRA" role="3rvQeY">
                 <ref role="3uigEE" node="5Cq06Aj4kU7" resolve="IntermediateStencilElement" />
@@ -6031,7 +6031,7 @@
         </node>
         <node concept="3cpWs8" id="157iuHXiTDi" role="3cqZAp">
           <node concept="3cpWsn" id="157iuHXiTDj" role="3cpWs9">
-            <property role="TrG5h" value="groupMap" />
+            <property role="TrG5h" value="groups" />
             <node concept="3rvAFt" id="157iuHXiTCU" role="1tU5fm">
               <node concept="2hMVRd" id="157iuHXiTD4" role="3rvSg0">
                 <node concept="3uibUv" id="157iuHXiTD5" role="2hN53Y">
@@ -6059,7 +6059,7 @@
         </node>
         <node concept="3cpWs8" id="642LqPQ4RAr" role="3cqZAp">
           <node concept="3cpWsn" id="642LqPQ4RAx" role="3cpWs9">
-            <property role="TrG5h" value="usedVariableMap" />
+            <property role="TrG5h" value="variables" />
             <node concept="3rvAFt" id="642LqPQ4RAz" role="1tU5fm">
               <node concept="2hMVRd" id="642LqPQ4SIm" role="3rvSg0">
                 <node concept="3uibUv" id="642LqPQ4SIJ" role="2hN53Y">
@@ -6088,7 +6088,7 @@
         </node>
         <node concept="3cpWs8" id="4D_91tBzy8I" role="3cqZAp">
           <node concept="3cpWsn" id="4D_91tBzy8O" role="3cpWs9">
-            <property role="TrG5h" value="expressionMap" />
+            <property role="TrG5h" value="expressions" />
             <node concept="3rvAFt" id="4D_91tBzy8Q" role="1tU5fm">
               <node concept="17QB3L" id="4D_91tBzCUT" role="3rvQeY" />
               <node concept="1LlUBW" id="4D_91tBzDft" role="3rvSg0">
@@ -6311,7 +6311,7 @@
                               </node>
                             </node>
                             <node concept="37vLTw" id="5FBaDXOZbVq" role="3ElQJh">
-                              <ref role="3cqZAo" node="157iuHXiTDj" resolve="groupMap" />
+                              <ref role="3cqZAo" node="157iuHXiTDj" resolve="groups" />
                             </node>
                           </node>
                           <node concept="1yVyf7" id="5FBaDXOZbVr" role="2OqNvi" />
@@ -6371,7 +6371,7 @@
                         <ref role="3cqZAo" node="6MpvgXUVPBQ" resolve="left" />
                       </node>
                       <node concept="37vLTw" id="31LBkEcU5Sm" role="37wK5m">
-                        <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                        <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                       </node>
                     </node>
                   </node>
@@ -6389,7 +6389,7 @@
                                     <ref role="3cqZAo" node="6MpvgXUVPBQ" resolve="left" />
                                   </node>
                                   <node concept="37vLTw" id="6MpvgXUV_9h" role="3ElQJh">
-                                    <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                                    <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                                   </node>
                                 </node>
                               </node>
@@ -6426,7 +6426,7 @@
                           </node>
                         </node>
                         <node concept="37vLTw" id="642LqPQ5cHo" role="3ElQJh">
-                          <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+                          <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
                         </node>
                       </node>
                     </node>
@@ -6462,7 +6462,7 @@
                               </node>
                             </node>
                             <node concept="37vLTw" id="642LqPQ5fDH" role="3ElQJh">
-                              <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+                              <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
                             </node>
                           </node>
                         </node>
@@ -6503,7 +6503,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="4D_91tBzAwR" role="3ElQJh">
-                    <ref role="3cqZAo" node="4D_91tBzy8O" resolve="expressionMap" />
+                    <ref role="3cqZAo" node="4D_91tBzy8O" resolve="expressions" />
                   </node>
                 </node>
                 <node concept="1Ls8ON" id="4D_91tBzEkG" role="37vLTx">
@@ -6560,7 +6560,7 @@
                       <ref role="3cqZAo" node="6MpvgXUVML7" resolve="element" />
                     </node>
                     <node concept="37vLTw" id="31LBkEcU85V" role="37wK5m">
-                      <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                      <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                     </node>
                   </node>
                 </node>
@@ -6578,7 +6578,7 @@
                             <node concept="36biLy" id="6MpvgXUVAw_" role="2pJxcZ">
                               <node concept="3EllGN" id="6MpvgXUVCvQ" role="36biLW">
                                 <node concept="37vLTw" id="6MpvgXUVCnU" role="3ElQJh">
-                                  <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                                  <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                                 </node>
                                 <node concept="37vLTw" id="6MpvgXUVMLd" role="3ElVtu">
                                   <ref role="3cqZAo" node="6MpvgXUVML7" resolve="element" />
@@ -6610,7 +6610,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="642LqPQ5ika" role="3ElQJh">
-                        <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+                        <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
                       </node>
                     </node>
                   </node>
@@ -6646,7 +6646,7 @@
                             </node>
                           </node>
                           <node concept="37vLTw" id="642LqPQ5ikq" role="3ElQJh">
-                            <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+                            <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
                           </node>
                         </node>
                       </node>
@@ -6951,7 +6951,7 @@
                           <ref role="3cqZAo" node="5FBaDXOZMpg" resolve="target" />
                         </node>
                         <node concept="37vLTw" id="31LBkEcUiZJ" role="37wK5m">
-                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                         </node>
                       </node>
                     </node>
@@ -6962,7 +6962,7 @@
                           <ref role="3cqZAo" node="5FBaDXOZMpm" resolve="source" />
                         </node>
                         <node concept="37vLTw" id="31LBkEcUj8Q" role="37wK5m">
-                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                         </node>
                       </node>
                     </node>
@@ -7025,7 +7025,7 @@
                                               <ref role="3cqZAo" node="5FBaDXOZMpg" resolve="target" />
                                             </node>
                                             <node concept="37vLTw" id="5FBaDXOZMq0" role="3ElQJh">
-                                              <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                                              <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                                             </node>
                                           </node>
                                         </node>
@@ -7044,7 +7044,7 @@
                                               <ref role="3cqZAo" node="5FBaDXOZMpm" resolve="source" />
                                             </node>
                                             <node concept="37vLTw" id="5FBaDXOZMq7" role="3ElQJh">
-                                              <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                                              <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                                             </node>
                                           </node>
                                         </node>
@@ -7077,7 +7077,7 @@
                             </node>
                           </node>
                           <node concept="37vLTw" id="5FBaDXOZMqh" role="3ElQJh">
-                            <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+                            <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
                           </node>
                         </node>
                       </node>
@@ -7113,7 +7113,7 @@
                                 </node>
                               </node>
                               <node concept="37vLTw" id="5FBaDXOZMqx" role="3ElQJh">
-                                <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+                                <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
                               </node>
                             </node>
                           </node>
@@ -7261,7 +7261,7 @@
                                           <ref role="3cqZAo" node="642LqPQ6yyz" resolve="last" />
                                         </node>
                                         <node concept="37vLTw" id="642LqPQ6$8T" role="3ElQJh">
-                                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                                         </node>
                                       </node>
                                     </node>
@@ -7321,7 +7321,7 @@
           </node>
           <node concept="2OqwBi" id="642LqPQ5nX2" role="2GsD0m">
             <node concept="37vLTw" id="642LqPQ5nrL" role="2Oq$k0">
-              <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+              <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
             </node>
             <node concept="T8wYR" id="642LqPQ5o$m" role="2OqNvi" />
           </node>
@@ -7398,10 +7398,10 @@
                           <ref role="3cqZAo" node="4D_91tBzfhh" resolve="expressionCache" />
                         </node>
                         <node concept="37vLTw" id="4D_91tBzmPr" role="37wK5m">
-                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                          <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                         </node>
                         <node concept="37vLTw" id="4D_91tBzJZ5" role="37wK5m">
-                          <ref role="3cqZAo" node="4D_91tBzy8O" resolve="expressionMap" />
+                          <ref role="3cqZAo" node="4D_91tBzy8O" resolve="expressions" />
                         </node>
                         <node concept="37vLTw" id="5FBaDXP0IfB" role="37wK5m">
                           <ref role="3cqZAo" node="a$mxDpgPeB" resolve="minOffsets" />
@@ -7465,7 +7465,7 @@
           </node>
           <node concept="2OqwBi" id="7YpxKJ8tUbn" role="2GsD0m">
             <node concept="37vLTw" id="7YpxKJ8tTqf" role="2Oq$k0">
-              <ref role="3cqZAo" node="642LqPQ4RAx" resolve="usedVariableMap" />
+              <ref role="3cqZAo" node="642LqPQ4RAx" resolve="variables" />
             </node>
             <node concept="T8wYR" id="7YpxKJ8tV8p" role="2OqNvi" />
           </node>
@@ -7535,7 +7535,7 @@
                     <ref role="2Gs0qQ" node="MXUZiAYQFp" resolve="element" />
                   </node>
                   <node concept="37vLTw" id="MXUZiAYUiX" role="3ElQJh">
-                    <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableMap" />
+                    <ref role="3cqZAo" node="5Cq06Aj9GT_" resolve="variableCache" />
                   </node>
                 </node>
               </node>
