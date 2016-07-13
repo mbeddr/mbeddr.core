@@ -53,6 +53,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -425,6 +426,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l1DpH" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -845,6 +847,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l1G1C" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1052,6 +1055,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l1HcI" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1255,6 +1259,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l1InY" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1458,6 +1463,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l1Jzo" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1732,6 +1738,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l1KIW" role="37wK5m" />
                     </node>
                   </node>
                 </node>

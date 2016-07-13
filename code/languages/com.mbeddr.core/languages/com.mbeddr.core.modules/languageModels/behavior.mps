@@ -2894,6 +2894,48 @@
       <node concept="10Oyi0" id="6brBMefRP1K" role="3clF45" />
       <node concept="3Tm1VV" id="6brBMefRP1L" role="1B3o_S" />
     </node>
+    <node concept="13i0hz" id="1S6A2cmU1yG" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getParameters" />
+      <ref role="13i0hy" to="hwgx:1S6A2cmQW9m" resolve="getParameters" />
+      <node concept="3Tm1VV" id="1S6A2cmU1yH" role="1B3o_S" />
+      <node concept="3clFbS" id="1S6A2cmU1yN" role="3clF47">
+        <node concept="3cpWs6" id="1S6A2cmU1Et" role="3cqZAp">
+          <node concept="2OqwBi" id="1S6A2cmU1Rz" role="3cqZAk">
+            <node concept="13iPFW" id="1S6A2cmU1EK" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="1S6A2cmU2ny" role="2OqNvi">
+              <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="1S6A2cmU1yO" role="3clF45">
+        <node concept="3Tqbb2" id="1S6A2cmU1yP" role="_ZDj9">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1S6A2cmU1yU" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getReturnType" />
+      <ref role="13i0hy" to="hwgx:1S6A2cmQWaY" resolve="getReturnType" />
+      <node concept="3Tm1VV" id="1S6A2cmU1yV" role="1B3o_S" />
+      <node concept="3clFbS" id="1S6A2cmU1z0" role="3clF47">
+        <node concept="3cpWs6" id="1S6A2cmU2rk" role="3cqZAp">
+          <node concept="2OqwBi" id="1S6A2cmU2Ch" role="3cqZAk">
+            <node concept="13iPFW" id="1S6A2cmU2r$" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1S6A2cmU38g" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1S6A2cmU1z1" role="3clF45">
+        <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2I09F8VIVEI">
     <property role="3GE5qa" value="functions" />

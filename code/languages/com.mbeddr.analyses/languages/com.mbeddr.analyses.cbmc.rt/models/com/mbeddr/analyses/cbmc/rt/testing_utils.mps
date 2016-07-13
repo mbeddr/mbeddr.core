@@ -700,6 +700,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l0f4L" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="2tzgwZjIjBf" role="37vLTJ">
@@ -977,6 +978,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l0fKT" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="6m6BTo4Xtg9" role="37vLTJ">
@@ -1156,6 +1158,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l0g9r" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="2tzgwZjImOQ" role="37vLTJ">
