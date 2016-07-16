@@ -20,6 +20,9 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -133,6 +136,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -196,6 +200,12 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -1459,6 +1469,132 @@
       <property role="TrG5h" value="doKillExternalProcesses" />
       <node concept="3cqZAl" id="44z3jezmIii" role="3clF45" />
       <node concept="3clFbS" id="44z3jezmIik" role="3clF47">
+        <node concept="3cpWs8" id="5rxb3FrCsut" role="3cqZAp">
+          <node concept="3cpWsn" id="5rxb3FrCsuu" role="3cpWs9">
+            <property role="TrG5h" value="runProgramName" />
+            <node concept="17QB3L" id="5rxb3FrCtaC" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5rxb3FrCpIe" role="3cqZAp">
+          <node concept="3cpWsn" id="5rxb3FrCpIf" role="3cpWs9">
+            <property role="TrG5h" value="f" />
+            <node concept="3uibUv" id="5rxb3FrCpIg" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="5rxb3FrCpVA" role="33vP2m">
+              <node concept="1pGfFk" id="5rxb3FrCr6N" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="5rxb3FrCrdB" role="37wK5m">
+                  <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5rxb3FrCr$9" role="3cqZAp">
+          <node concept="3clFbS" id="5rxb3FrCr$b" role="3clFbx">
+            <node concept="3SKdUt" id="5rxb3FrDJLz" role="3cqZAp">
+              <node concept="3SKdUq" id="5rxb3FrDJL_" role="3SKWNk">
+                <property role="3SKdUp" value="the tool binary name contains also the path" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="5rxb3FrCsFK" role="3cqZAp">
+              <node concept="37vLTI" id="5rxb3FrCsFM" role="3clFbG">
+                <node concept="2OqwBi" id="5rxb3FrCsuv" role="37vLTx">
+                  <node concept="37vLTw" id="5rxb3FrCsuw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5rxb3FrCpIf" resolve="f" />
+                  </node>
+                  <node concept="liA8E" id="5rxb3FrCsux" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5rxb3FrCsFQ" role="37vLTJ">
+                  <ref role="3cqZAo" node="5rxb3FrCsuu" resolve="runProgramName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5rxb3FrCrI2" role="3clFbw">
+            <node concept="37vLTw" id="5rxb3FrCrFb" role="2Oq$k0">
+              <ref role="3cqZAo" node="5rxb3FrCpIf" resolve="f" />
+            </node>
+            <node concept="liA8E" id="5rxb3FrCseu" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="5rxb3FrCtku" role="9aQIa">
+            <node concept="3clFbS" id="5rxb3FrCtkv" role="9aQI4">
+              <node concept="3SKdUt" id="5rxb3FrF0eT" role="3cqZAp">
+                <node concept="3SKdUq" id="5rxb3FrF0eV" role="3SKWNk">
+                  <property role="3SKdUp" value="the tool binary name does not contain the path, it may or may not contain the extension" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5rxb3FrCtt2" role="3cqZAp">
+                <node concept="37vLTI" id="5rxb3FrCtyo" role="3clFbG">
+                  <node concept="37vLTw" id="5rxb3FrCtDf" role="37vLTx">
+                    <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
+                  </node>
+                  <node concept="37vLTw" id="5rxb3FrCtt1" role="37vLTJ">
+                    <ref role="3cqZAo" node="5rxb3FrCsuu" resolve="runProgramName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="5rxb3FrCtV3" role="3cqZAp">
+                <node concept="1Wc70l" id="5rxb3FrCtV4" role="3clFbw">
+                  <node concept="1Wc70l" id="5rxb3FrCtV5" role="3uHU7B">
+                    <node concept="10M0yZ" id="5rxb3FrCtV6" role="3uHU7B">
+                      <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+                      <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+                    </node>
+                    <node concept="3fqX7Q" id="5rxb3FrCtV7" role="3uHU7w">
+                      <node concept="2OqwBi" id="5rxb3FrCtV8" role="3fr31v">
+                        <node concept="37vLTw" id="5rxb3FrDK41" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
+                        </node>
+                        <node concept="liA8E" id="5rxb3FrCtVa" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                          <node concept="Xl_RD" id="5rxb3FrCtVb" role="37wK5m">
+                            <property role="Xl_RC" value=".exe" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="5rxb3FrCtVc" role="3uHU7w">
+                    <node concept="2OqwBi" id="5rxb3FrCtVd" role="3fr31v">
+                      <node concept="37vLTw" id="5rxb3FrDKkv" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
+                      </node>
+                      <node concept="liA8E" id="5rxb3FrCtVf" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                        <node concept="Xl_RD" id="5rxb3FrCtVg" role="37wK5m">
+                          <property role="Xl_RC" value=".bat" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="5rxb3FrCtVh" role="3clFbx">
+                  <node concept="3clFbF" id="5rxb3FrCtVi" role="3cqZAp">
+                    <node concept="37vLTI" id="5rxb3FrDKy9" role="3clFbG">
+                      <node concept="37vLTw" id="5rxb3FrDKyb" role="37vLTJ">
+                        <ref role="3cqZAo" node="5rxb3FrCsuu" resolve="runProgramName" />
+                      </node>
+                      <node concept="3cpWs3" id="5rxb3FrDKzv" role="37vLTx">
+                        <node concept="37vLTw" id="5rxb3FrDKDu" role="3uHU7B">
+                          <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
+                        </node>
+                        <node concept="Xl_RD" id="5rxb3FrDKyc" role="3uHU7w">
+                          <property role="Xl_RC" value=".exe" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6UbSk5fdnJO" role="3cqZAp">
           <node concept="3cpWsn" id="6UbSk5fdnJP" role="3cpWs9">
             <property role="TrG5h" value="killCommand" />
@@ -1468,25 +1604,20 @@
                 <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
                 <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
               </node>
-              <node concept="3cpWs3" id="6UbSk5fdnKd" role="3K4E3e">
-                <node concept="Xl_RD" id="6UbSk5fdnKe" role="3uHU7w">
-                  <property role="Xl_RC" value=".exe" />
+              <node concept="3cpWs3" id="6UbSk5fdnKf" role="3K4E3e">
+                <node concept="Xl_RD" id="6UbSk5fdnKg" role="3uHU7B">
+                  <property role="Xl_RC" value="taskkill /F /IM " />
                 </node>
-                <node concept="3cpWs3" id="6UbSk5fdnKf" role="3uHU7B">
-                  <node concept="Xl_RD" id="6UbSk5fdnKg" role="3uHU7B">
-                    <property role="Xl_RC" value="taskkill /F /IM " />
-                  </node>
-                  <node concept="2N2G$s" id="2f0rWuL9sDi" role="3uHU7w">
-                    <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
-                  </node>
+                <node concept="37vLTw" id="5rxb3FrCuYH" role="3uHU7w">
+                  <ref role="3cqZAo" node="5rxb3FrCsuu" resolve="runProgramName" />
                 </node>
               </node>
               <node concept="3cpWs3" id="1mocVhAECbH" role="3K4GZi">
                 <node concept="Xl_RD" id="1mocVhAECbI" role="3uHU7B">
                   <property role="Xl_RC" value="killall -9 " />
                 </node>
-                <node concept="2N2G$s" id="1mocVhAECbJ" role="3uHU7w">
-                  <ref role="3cqZAo" node="2f0rWuL9sC9" resolve="toolBinaryName" />
+                <node concept="37vLTw" id="5rxb3FrCvik" role="3uHU7w">
+                  <ref role="3cqZAo" node="5rxb3FrCsuu" resolve="runProgramName" />
                 </node>
               </node>
             </node>
