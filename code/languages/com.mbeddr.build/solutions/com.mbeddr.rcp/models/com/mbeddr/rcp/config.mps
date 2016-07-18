@@ -1342,6 +1342,21 @@
           </node>
         </node>
       </node>
+      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
+        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
+          <property role="3MwjfP" value="http://www.mbeddr.com" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
+        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
+          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
+        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
+          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
+        </node>
+      </node>
     </node>
     <node concept="55IIr" id="505a8HIkc0H" role="auvoZ" />
     <node concept="1l3spV" id="505a8HIkc0I" role="1l3spN">
