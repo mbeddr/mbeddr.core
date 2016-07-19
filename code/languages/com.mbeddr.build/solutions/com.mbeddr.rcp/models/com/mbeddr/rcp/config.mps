@@ -8,7 +8,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="0" />
+    <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="-1" />
   </languages>
   <imports>
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
@@ -207,7 +207,6 @@
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
-        <property id="3497141547781541446" name="eap" index="2OjLBN" />
         <property id="4237758264760168561" name="bugfixNr" index="1lNJF1" />
         <child id="6845119683729337285" name="progressY" index="27hAJg" />
         <child id="6845119683729294884" name="progressColor" index="27hGoL" />
@@ -1218,6 +1217,21 @@
     <node concept="1zClus" id="5msqZjqQCeD" role="3989C9">
       <property role="2OjLBL" value="0" />
       <property role="2OjLBK" value="1" />
+      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
+        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
+          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
+        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
+          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
+        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
+          <property role="3MwjfP" value="http://www.mbeddr.com" />
+        </node>
+      </node>
       <node concept="1zDKOm" id="2TPq_95o$4f" role="2Etnp4">
         <node concept="3_J27D" id="2TPq_95o$cq" role="2EtnoL">
           <node concept="3Mxwew" id="2TPq_95oAM8" role="3MwsjC">
@@ -1340,21 +1354,6 @@
               <property role="2Ry0Am" value="mbeddr-logo.png" />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
-        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
-          <property role="3MwjfP" value="http://www.mbeddr.com" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
-        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
-          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
-        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
-          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
         </node>
       </node>
     </node>
@@ -2906,7 +2905,7 @@
       <node concept="aVJcg" id="32YXDrSqvTx" role="aVJcv">
         <node concept="NbPM2" id="32YXDrSqvTw" role="aVJcq">
           <node concept="3Mxwew" id="32YXDrSqvTv" role="3MwsjC">
-            <property role="3MwjfP" value="SNAPSHOT" />
+            <property role="3MwjfP" value="1.0" />
           </node>
         </node>
       </node>
@@ -3043,7 +3042,6 @@
       <property role="TrG5h" value="MPS" />
       <property role="2OjLBL" value="1" />
       <property role="1lNJF1" value="0" />
-      <property role="2OjLBN" value="true" />
       <node concept="3_J27D" id="1BPeV_LjXsM" role="HFo83">
         <node concept="3Mxwew" id="1BPeV_LjXsN" role="3MwsjC">
           <property role="3MwjfP" value="002387" />
@@ -3463,7 +3461,7 @@
       <node concept="aVJcg" id="jueD0WYgWt" role="aVJcv">
         <node concept="NbPM2" id="jueD0WYgWu" role="aVJcq">
           <node concept="3Mxwew" id="jueD0WYgWv" role="3MwsjC">
-            <property role="3MwjfP" value="SNAPSHOT" />
+            <property role="3MwjfP" value="1.0" />
           </node>
         </node>
       </node>
