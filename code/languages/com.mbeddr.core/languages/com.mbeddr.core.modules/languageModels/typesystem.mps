@@ -157,7 +157,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2543,6 +2543,15 @@
                 </node>
                 <node concept="3clFbS" id="_Ibf584JhR" role="3clFbx">
                   <node concept="2MkqsV" id="_Ibf584Jiw" role="3cqZAp">
+                    <node concept="3Cnw8n" id="71oKhSFK5Lo" role="2OEOjU">
+                      <ref role="QpYPw" node="71oKhSFFTeU" resolve="exportModuleContent" />
+                      <node concept="3CnSsL" id="71oKhSFK61V" role="3Coj4f">
+                        <ref role="QkamJ" node="71oKhSFGljO" resolve="content" />
+                        <node concept="2GrUjf" id="71oKhSFK62a" role="3CoRuB">
+                          <ref role="2Gs0qQ" node="_Ibf584JhC" resolve="referencedContent" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="2GrUjf" id="6ruthXbVSok" role="2OEOjV">
                       <ref role="2Gs0qQ" node="_Ibf584JhC" resolve="referencedContent" />
                     </node>
@@ -2581,15 +2590,6 @@
                     </node>
                     <node concept="2ODE4t" id="_Ibf584ONn" role="2OEWyd">
                       <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                    <node concept="3Cnw8n" id="71oKhSFK5Lo" role="2OEOjU">
-                      <ref role="QpYPw" node="71oKhSFFTeU" resolve="exportModuleContent" />
-                      <node concept="3CnSsL" id="71oKhSFK61V" role="3Coj4f">
-                        <ref role="QkamJ" node="71oKhSFGljO" resolve="content" />
-                        <node concept="2GrUjf" id="71oKhSFK62a" role="3CoRuB">
-                          <ref role="2Gs0qQ" node="_Ibf584JhC" resolve="referencedContent" />
-                        </node>
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -5470,12 +5470,34 @@
             <node concept="3clFbS" id="6o2p2Z1tyoZ" role="2LFqv$">
               <node concept="3clFbJ" id="6o2p2Z1typ0" role="3cqZAp">
                 <node concept="3clFbS" id="6o2p2Z1typ1" role="3clFbx">
-                  <node concept="2MkqsV" id="6o2p2Z1typ2" role="3cqZAp">
-                    <node concept="Xl_RD" id="6o2p2Z1typ3" role="2MkJ7o">
-                      <property role="Xl_RC" value="cannot call non-pure functions from pure functions" />
+                  <node concept="3clFbJ" id="6IZreuBQCdw" role="3cqZAp">
+                    <node concept="3clFbS" id="6IZreuBQCdy" role="3clFbx">
+                      <node concept="2MkqsV" id="6o2p2Z1typ2" role="3cqZAp">
+                        <node concept="Xl_RD" id="6o2p2Z1typ3" role="2MkJ7o">
+                          <property role="Xl_RC" value="cannot call non-pure functions from pure functions" />
+                        </node>
+                        <node concept="2GrUjf" id="6o2p2Z1typ4" role="2OEOjV">
+                          <ref role="2Gs0qQ" node="6o2p2Z1tyoY" resolve="e" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="2GrUjf" id="6o2p2Z1typ4" role="2OEOjV">
-                      <ref role="2Gs0qQ" node="6o2p2Z1tyoY" resolve="e" />
+                    <node concept="2OqwBi" id="6IZreuBQEh_" role="3clFbw">
+                      <node concept="2OqwBi" id="6IZreuBQDpM" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6IZreuBQCjl" role="2Oq$k0">
+                          <node concept="2GrUjf" id="6IZreuBQCdT" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="6o2p2Z1tyoY" resolve="e" />
+                          </node>
+                          <node concept="3TrEf2" id="6IZreuBQD06" role="2OqNvi">
+                            <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+                          </node>
+                        </node>
+                        <node concept="3CFZ6_" id="6IZreuBQE93" role="2OqNvi">
+                          <node concept="3CFYIy" id="6IZreuBQEcm" role="3CFYIz">
+                            <ref role="3CFYIx" to="x27k:6o2p2Z1sBzI" resolve="PureFunctionAnnotation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3w_OXm" id="6IZreuBR0l1" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
