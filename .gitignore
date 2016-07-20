@@ -167,3 +167,10 @@ tools/ant/ant-task-workspace/TeamcityMakeTests/bin/com
 code/plugins/sl-all/build-tests.xml
 code/plugins/sl-all/build.xml
 tmp
+
+# -----------------------------------------------------------
+# gradle files
+gradle.properties
+gradle/*
+gradlew
+gradlew.bat
