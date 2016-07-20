@@ -1,0 +1,66 @@
+// file system location where resolved artifact will be stored
+def artifacstLocation = file(rootProject.projectDir.absolutePath + "/artifacts/")
+def mpsLocation = file(rootProject.projectDir.absolutePath + "/MPS/")
+
+configurations {
+    mps {
+        description = 'JetBrains MPS language workbench'
+    }
+    mbeddrAllInOne {
+        description = 'mbeddr allInOne distribution'
+    }
+    mbeddrPlatform {
+        description = 'mbeddr platform distribution'
+    }
+}
+
+dependencies {
+    mps 'com.jetbrains:mps:3.3.5'
+    mbeddrAllInOne 'com.mbeddr:allInOne:0.9.1'
+    mbeddrPlatform 'com.mbeddr:platform:0.9.1'
+}
+
+// mbeddr nexus repository
+repositories {
+    maven {
+        url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
+    }
+}
+
+task resolveMPS(type: Copy)  {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.asFileTree.each {
+            from( zipTree(it) )
+        }
+        null
+    }
+    into mpsLocation
+}
+
+
+task resolvePlatform(type: Copy)  {
+    dependsOn configurations.mbeddrPlatform
+    from {
+        configurations.mbeddrPlatform.asFileTree.each {
+            from( zipTree(it) )
+        }
+        null
+    }
+    into artifacstLocation
+}
+
+task resolveMbeddr(type: Copy)  {
+    dependsOn configurations.mbeddrAllInOne
+    from {
+        configurations.mbeddrAllInOne.asFileTree.each {
+            from( zipTree(it) )
+        }
+        null
+    }
+    into artifacstLocation
+}
+
+tasks.resolvePlatform.outputs.upToDateWhen { return false }
+tasks.resolveMPS.outputs.upToDateWhen { return false }
+tasks.resolveMbeddr.outputs.upToDateWhen { return false }
