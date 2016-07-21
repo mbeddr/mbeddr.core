@@ -502,5 +502,12 @@
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4aQvnnixpDq">
+    <property role="1pbfSe" value="356259791" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="TrG5h" value="DelegateToNextInterpreterExpression" />
+    <property role="34LRSv" value="tryOtherInterpreter" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

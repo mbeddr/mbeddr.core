@@ -144,6 +144,7 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -1347,6 +1348,11 @@
                 <ref role="2Oxat5" node="1iFbitigFGq" resolve="analysisResults" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5rxb3FrNJAw" role="3cqZAp">
+          <node concept="1rXfSq" id="5rxb3FrNJAu" role="3clFbG">
+            <ref role="37wK5l" to="c8ee:~AbstractTableModel.fireTableDataChanged():void" resolve="fireTableDataChanged" />
           </node>
         </node>
       </node>
