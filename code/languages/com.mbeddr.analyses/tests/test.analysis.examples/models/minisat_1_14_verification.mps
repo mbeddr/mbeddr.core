@@ -275,10 +275,10 @@
       <property role="2l50Km" value="none" />
       <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="6" />
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="true" />
+      <property role="2lUHrg" value="5" />
       <ref role="3V$Cn$" node="7zW9Xauplb2" resolve="verification_case" />
     </node>
     <node concept="3GEVxB" id="24_rWT3h5Hc" role="3W6d8T">
@@ -357,6 +357,9 @@
       <node concept="2v9HqM" id="7zW9XauqbaX" role="2eOfOg">
         <ref role="2v9HqP" node="7zW9Xaupl9X" resolve="harness" />
       </node>
+      <node concept="2v9HqM" id="NvrSKvhha9" role="2eOfOg">
+        <ref role="2v9HqP" to="ahhi:NvrSKvgVzj" resolve="sortin_alg" />
+      </node>
     </node>
     <node concept="2eOfOl" id="1qdWvqenuu3" role="2ePNbc">
       <property role="iO3LB" value="true" />
@@ -405,6 +408,9 @@
       </node>
       <node concept="2v9HqM" id="2DOSAJfvkhr" role="2eOfOg">
         <ref role="2v9HqP" to="ahhi:2DOSAJfumvT" resolve="clause" />
+      </node>
+      <node concept="2v9HqM" id="NvrSKvhhaU" role="2eOfOg">
+        <ref role="2v9HqP" to="ahhi:NvrSKvgVzj" resolve="sortin_alg" />
       </node>
     </node>
   </node>
