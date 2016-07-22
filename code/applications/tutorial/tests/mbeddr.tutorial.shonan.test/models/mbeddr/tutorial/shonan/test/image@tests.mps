@@ -2530,7 +2530,7 @@
       <node concept="2v9HqM" id="7BT5P447OIb" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
-      <node concept="2v9HqM" id="17Z2wzka2lk" role="2eOfOg">
+      <node concept="2v9HqM" id="7lGuq2hmZlC" role="2eOfOg">
         <ref role="2v9HqP" node="39TGzx5xPGI" resolve="imagempi_stencil" />
       </node>
       <node concept="2v9HqM" id="7BT5P447OId" role="2eOfOg">
@@ -2913,9 +2913,6 @@
           <node concept="3TlMh9" id="39TGzx5ybh$" role="13TOjz">
             <property role="2hmy$m" value="0" />
           </node>
-          <node concept="1r$Nen" id="a$mxDpeOfO" role="1r$ZoA">
-            <property role="1r$Neb" value="10" />
-          </node>
         </node>
         <node concept="3XISUE" id="39TGzx5y441" role="3XIRFZ" />
         <node concept="13WYCj" id="39TGzx5yk2T" role="3XIRFZ">
@@ -2933,7 +2930,7 @@
               <ref role="3ZVs_2" node="39TGzx5xPHL" resolve="buf" />
             </node>
           </node>
-          <node concept="1r$Nen" id="a$mxDpeRsb" role="1r$ZoA">
+          <node concept="1r$Nen" id="7lGuq2hnh_n" role="1r$ZoA">
             <property role="1r$Neb" value="10" />
           </node>
         </node>
