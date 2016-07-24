@@ -66,6 +66,14 @@
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
+      <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
+        <child id="7099329415459888018" name="members" index="HszBJ" />
+      </concept>
+      <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
+      <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
+      <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
+        <reference id="6394819151180597817" name="struct" index="1sgJKq" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -201,6 +209,32 @@
     <node concept="rcJHK" id="7lNBHBNC4_C" role="N3F5h">
       <property role="TrG5h" value="zahl" />
       <node concept="26Vqqz" id="4Pack3zSiTV" role="rcJHR" />
+    </node>
+    <node concept="2NXPZ9" id="6IBKEH6mtAo" role="N3F5h">
+      <property role="TrG5h" value="empty_1469256040133_3" />
+    </node>
+    <node concept="rcJHK" id="6IBKEH6mtqi" role="N3F5h">
+      <property role="TrG5h" value="str" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1sgJKr" id="6IBKEH6mt_G" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="1sgJKq" node="6IBKEH6mt3p" resolve="aStruct" />
+      </node>
+    </node>
+    <node concept="1sgJKc" id="6IBKEH6mt3p" role="N3F5h">
+      <property role="TrG5h" value="aStruct" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="6IBKEH6mteD" role="HszBJ">
+        <property role="TrG5h" value="dummy" />
+        <node concept="26Vqqz" id="6IBKEH6mteC" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6IBKEH6mtLF" role="N3F5h">
+      <property role="TrG5h" value="empty_1469256042096_4" />
     </node>
     <node concept="c0Qz5" id="7lNBHBNC4__" role="N3F5h">
       <property role="2OOxQR" value="true" />
