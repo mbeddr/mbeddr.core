@@ -39,6 +39,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="28583149-5b6e-4663-9c02-b9a8fa3cb099(com.mbeddr.mpsutil.contextactions.runtime)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />
     <module reference="7c7a76fa-e158-4c86-9c6a-3608e494598c(de.itemis.mps.editor.diagram.contextactions)" version="0" />

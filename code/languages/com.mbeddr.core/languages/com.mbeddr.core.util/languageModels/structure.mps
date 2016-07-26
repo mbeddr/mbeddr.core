@@ -1637,6 +1637,20 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="27FUWv4$Q1c">
+    <property role="1pbfSe" value="427865069" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="OredExprList" />
+    <property role="34LRSv" value="[||" />
+    <property role="R4oN_" value="a list of or'ed expressions" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="27FUWv4$Q1d" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="1lYd87J$xt$">
     <property role="1pbfSe" value="84954085" />
     <property role="3GE5qa" value="includeGuards" />
