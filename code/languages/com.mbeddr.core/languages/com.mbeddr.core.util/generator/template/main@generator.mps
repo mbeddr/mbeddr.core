@@ -24659,5 +24659,85 @@
       </node>
     </node>
   </node>
+  <node concept="bUwia" id="1lYd87JBU3U">
+    <property role="3GE5qa" value="includeGuard" />
+    <property role="TrG5h" value="uniqueIncludeGuardAnnotation" />
+    <node concept="avzCv" id="1lYd87JBU3V" role="avys_">
+      <node concept="3clFbS" id="1lYd87JBU3W" role="2VODD2">
+        <node concept="3clFbF" id="1lYd87JBU6H" role="3cqZAp">
+          <node concept="2YIFZM" id="1lYd87JBU6J" role="3clFbG">
+            <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
+            <ref role="37wK5l" to="ahli:6dhuB$Q4CT6" resolve="hasBCConfigItem" />
+            <node concept="2OqwBi" id="1lYd87JBU6K" role="37wK5m">
+              <node concept="1iwH7S" id="1lYd87JBU6L" role="2Oq$k0" />
+              <node concept="1r8y6K" id="1lYd87JBU6M" role="2OqNvi" />
+            </node>
+            <node concept="1iwH7S" id="1lYd87JBU6N" role="37wK5m" />
+            <node concept="Xl_RD" id="1lYd87JBU6O" role="37wK5m">
+              <property role="Xl_RC" value="com.mbeddr.core.util.uniqueIncludeGuards" />
+            </node>
+            <node concept="3TUQnm" id="1lYd87JBU6P" role="37wK5m">
+              <ref role="3TV0OU" to="k146:1lYd87J$xt$" resolve="UniqueIncludeGuards" />
+            </node>
+            <node concept="Xl_RD" id="1lYd87JBU6Q" role="37wK5m">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1puMqW" id="7uVh7XGa3fc" role="1pvy6N">
+      <ref role="1puQsG" node="1lYd87JBUdc" resolve="uniqueIncludeGuardAnnotation" />
+    </node>
+  </node>
+  <node concept="1pmfR0" id="1lYd87JBUdc">
+    <property role="3GE5qa" value="includeGuard" />
+    <property role="TrG5h" value="uniqueIncludeGuardAnnotation" />
+    <node concept="1pplIY" id="1lYd87JBUdd" role="1pqMTA">
+      <node concept="3clFbS" id="1lYd87JBUde" role="2VODD2">
+        <node concept="3clFbF" id="1lYd87JBUiC" role="3cqZAp">
+          <node concept="2OqwBi" id="1lYd87JBUiD" role="3clFbG">
+            <node concept="2OqwBi" id="1lYd87JBUiE" role="2Oq$k0">
+              <node concept="1Q6Npb" id="1lYd87JBUiF" role="2Oq$k0" />
+              <node concept="2RRcyG" id="1lYd87JBUiG" role="2OqNvi">
+                <ref role="2RRcyH" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="1lYd87JBUiH" role="2OqNvi">
+              <node concept="1bVj0M" id="1lYd87JBUiI" role="23t8la">
+                <node concept="3clFbS" id="1lYd87JBUiJ" role="1bW5cS">
+                  <node concept="3clFbF" id="1lYd87JBUiK" role="3cqZAp">
+                    <node concept="37vLTI" id="1lYd87JD5aB" role="3clFbG">
+                      <node concept="2ShNRf" id="1lYd87JD5eM" role="37vLTx">
+                        <node concept="3zrR0B" id="1lYd87JD5eK" role="2ShVmc">
+                          <node concept="3Tqbb2" id="1lYd87JD5eL" role="3zrR0E">
+                            <ref role="ehGHo" to="d0vh:1lYd87JBZuY" resolve="UniquifyIncludeGuard" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1lYd87JBVbD" role="37vLTJ">
+                        <node concept="37vLTw" id="1lYd87JBV4B" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1lYd87JBUiT" resolve="it" />
+                        </node>
+                        <node concept="3CFZ6_" id="1lYd87JD513" role="2OqNvi">
+                          <node concept="3CFYIy" id="1lYd87JD54V" role="3CFYIz">
+                            <ref role="3CFYIx" to="d0vh:1lYd87JBZuY" resolve="UniquifyIncludeGuard" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="1lYd87JBUiT" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="1lYd87JBUiU" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

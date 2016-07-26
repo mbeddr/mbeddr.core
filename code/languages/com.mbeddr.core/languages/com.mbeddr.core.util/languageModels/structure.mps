@@ -1637,5 +1637,15 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1lYd87J$xt$">
+    <property role="1pbfSe" value="84954085" />
+    <property role="3GE5qa" value="includeGuards" />
+    <property role="TrG5h" value="UniqueIncludeGuards" />
+    <property role="34LRSv" value="uniquify include guards" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1lYd87J$xt_" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
 </model>
 
