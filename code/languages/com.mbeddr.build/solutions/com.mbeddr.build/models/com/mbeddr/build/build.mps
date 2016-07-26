@@ -4303,6 +4303,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3kv6gupaUgq" role="3bR37C">
+          <node concept="3bR9La" id="3kv6gupaUgr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7tgCHAyOtFQ" resolve="com.mbeddr.ext.compositecomponents" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7eF9rfAuAO$" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8866,12 +8872,6 @@
           <node concept="3bR9La" id="6BM8NjXiM3C" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7eF9rfAuFx$" resolve="com.mbeddr.analyses.cbmc.rt" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4IrqaYbzdf7" role="3bR37C">
-          <node concept="3bR9La" id="4IrqaYbzdf8" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7eF9rfAuDV$" resolve="com.mbeddr.analyses.base" />
           </node>
         </node>
       </node>

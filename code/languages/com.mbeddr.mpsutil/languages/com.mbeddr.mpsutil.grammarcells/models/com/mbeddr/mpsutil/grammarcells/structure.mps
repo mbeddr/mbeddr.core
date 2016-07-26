@@ -890,5 +890,11 @@
     <property role="34LRSv" value="node" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="5wt0D$BOnvU">
+    <property role="1pbfSe" value="2146335379" />
+    <property role="TrG5h" value="Parameter_wrappedConcept" />
+    <property role="34LRSv" value="wrappedConcept" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
 </model>
 
