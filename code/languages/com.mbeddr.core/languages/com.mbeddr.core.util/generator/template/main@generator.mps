@@ -660,8 +660,8 @@
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -19337,11 +19337,23 @@
   <node concept="bUwia" id="kOmZ6sYUph">
     <property role="TrG5h" value="genStructPrintFunction" />
     <property role="3GE5qa" value="genStructPrintFunction" />
+    <node concept="CY16f" id="2CzB6HDuec1" role="CYSdJ">
+      <ref role="CY16a" to="k146:2CzB6HCHcV$" resolve="GenStructHashPrintFunction" />
+    </node>
+    <node concept="CY16f" id="kOmZ6tdCnG" role="CYSdJ">
+      <ref role="CY16a" to="k146:kOmZ6sSkEG" resolve="GenStructPrintFunction" />
+    </node>
     <node concept="1puMqW" id="kOmZ6tcghc" role="1puA0r">
       <ref role="1puQsG" node="kOmZ6tcglX" resolve="addPrintValuesAnnotation" />
     </node>
     <node concept="1puMqW" id="2CzB6HDtIGy" role="1puA0r">
       <ref role="1puQsG" node="2CzB6HDr0Wu" resolve="addPrintHashValuesAnnotation" />
+    </node>
+    <node concept="1puMqW" id="DXKwheUzD$" role="1puA0r">
+      <ref role="1puQsG" node="2CzB6HDd7j7" resolve="addHashUtilToBuildConfig" />
+    </node>
+    <node concept="1puMqW" id="DXKwheU$ZC" role="1puA0r">
+      <ref role="1puQsG" node="2CzB6HDgGjm" resolve="addHashUtilImport" />
     </node>
     <node concept="30QchW" id="kOmZ6sYUpo" role="30SoJX">
       <ref role="30HIoZ" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
@@ -19559,12 +19571,6 @@
         <ref role="v9R2y" node="2CzB6HCTkOB" resolve="weave_StructDeclaration_Hash" />
       </node>
     </node>
-    <node concept="CY16f" id="2CzB6HDuec1" role="CYSdJ">
-      <ref role="CY16a" to="k146:2CzB6HCHcV$" resolve="GenStructHashPrintFunction" />
-    </node>
-    <node concept="CY16f" id="kOmZ6tdCnG" role="CYSdJ">
-      <ref role="CY16a" to="k146:kOmZ6sSkEG" resolve="GenStructPrintFunction" />
-    </node>
     <node concept="3aamgX" id="kOmZ6tsNwm" role="3acgRq">
       <ref role="30HIoZ" to="k146:kOmZ6trHyq" resolve="DumpStruct" />
       <node concept="1Koe21" id="kOmZ6tsNU6" role="1lVwrX">
@@ -19779,12 +19785,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1puMqW" id="2CzB6HDdgs$" role="1pvy6N">
-      <ref role="1puQsG" node="2CzB6HDd7j7" resolve="addHashUtilToBuildConfig" />
-    </node>
-    <node concept="1puMqW" id="2CzB6HDlBR5" role="1pvy6N">
-      <ref role="1puQsG" node="2CzB6HDgGjm" resolve="addHashUtilImport" />
     </node>
   </node>
   <node concept="13MO4I" id="kOmZ6sYW6q">
@@ -24128,7 +24128,8 @@
   <node concept="1pmfR0" id="2CzB6HDd7j7">
     <property role="3GE5qa" value="genStructPrintFunction.hash" />
     <property role="TrG5h" value="addHashUtilToBuildConfig" />
-    <property role="1v3f2W" value="post_processing" />
+    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="2CzB6HDd7j8" role="1pqMTA">
       <node concept="3clFbS" id="2CzB6HDd7j9" role="2VODD2">
         <node concept="3clFbJ" id="2CzB6HDd7lG" role="3cqZAp">
@@ -24233,7 +24234,7 @@
   <node concept="1pmfR0" id="2CzB6HDgGjm">
     <property role="3GE5qa" value="genStructPrintFunction.hash" />
     <property role="TrG5h" value="addHashUtilImport" />
-    <property role="1v3f2W" value="post_processing" />
+    <property role="1v3f2W" value="pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="2CzB6HDgGjn" role="1pqMTA">
       <node concept="3clFbS" id="2CzB6HDgGjo" role="2VODD2">
