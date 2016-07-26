@@ -20,8 +20,8 @@
   </registry>
   <node concept="3ZAtL$" id="laok7UPx0v">
     <property role="TrG5h" value="emma_coverage_lifter_config" />
-    <property role="3ZAqNH" value="D:\\x\\accent.master\\tools\\emma\\coverage.ec" />
-    <property role="3ZAqNI" value="D:\\x\\accent.master\\tools\\emma\\coverage\\metadata.emma" />
+    <property role="3ZAqNH" value="D:\\x\\mbeddr.core.master\\tools\\emma\\coverage.ec" />
+    <property role="3ZAqNI" value="D:\\x\\mbeddr.core.master\\tools\\emma\\coverage\\metadata.emma" />
   </node>
 </model>
 

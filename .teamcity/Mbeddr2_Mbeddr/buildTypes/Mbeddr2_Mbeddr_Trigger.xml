@@ -17,9 +17,8 @@
 +:refactor/*
 +:maintenance/*
 +:milestone/v-1.5-3
-+:integration/*]]></param>
-          <param name="groupCheckinsByCommitter" value="true" />
-          <param name="perCheckinTriggering" value="true" />
++:integration/*
++:release/*]]></param>
           <param name="quietPeriod" value="91" />
           <param name="quietPeriodMode" value="USE_CUSTOM" />
           <param name="triggerRules"><![CDATA[-:.teamcity

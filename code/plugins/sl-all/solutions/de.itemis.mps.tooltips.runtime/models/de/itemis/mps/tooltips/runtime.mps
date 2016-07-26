@@ -5,6 +5,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,9 +27,14 @@
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" />
     <import index="y49u" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.util(MPS.OpenAPI/)" />
+    <import index="88dm" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tooltips(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -128,6 +134,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -248,6 +255,9 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -2648,7 +2658,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="7tUUHAhzjb7" role="3cqZAp" />
                 <node concept="3clFbF" id="7tUUHAhzfR3" role="3cqZAp">
                   <node concept="2OqwBi" id="7tUUHAhzgE4" role="3clFbG">
                     <node concept="37vLTw" id="7tUUHAhzfR2" role="2Oq$k0">
@@ -2663,6 +2672,25 @@
                         <node concept="liA8E" id="7tUUHAhzijy" role="2OqNvi">
                           <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
                         </node>
+                      </node>
+                      <node concept="2OqwBi" id="7g5x0$c8zlY" role="37wK5m">
+                        <node concept="2EnYce" id="7g5x0$c8zi3" role="2Oq$k0">
+                          <node concept="0kSF2" id="7g5x0$c8xZ4" role="2Oq$k0">
+                            <node concept="3uibUv" id="7g5x0$c8xZ5" role="0kSFW">
+                              <ref role="3uigEE" to="88dm:~TooltipComponent" resolve="TooltipComponent" />
+                            </node>
+                            <node concept="37vLTw" id="7g5x0$c8xZ6" role="0kSFX">
+                              <ref role="3cqZAo" node="7XU1fOGmt3q" resolve="myEditorComponent" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="7g5x0$c8xZ7" role="2OqNvi">
+                            <ref role="37wK5l" to="88dm:~TooltipComponent.getMPSTooltipText(java.awt.event.MouseEvent):java.lang.String" resolve="getMPSTooltipText" />
+                            <node concept="37vLTw" id="7g5x0$c8xZ8" role="37wK5m">
+                              <ref role="3cqZAo" node="7XU1fOGmRRX" resolve="event" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="17RvpY" id="7g5x0$c8LXi" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -3397,7 +3425,7 @@
                         <ref role="3cqZAo" node="6$Bmuz_W9dZ" resolve="cell" />
                       </node>
                       <node concept="liA8E" id="6$Bmuz_XMx9" role="2OqNvi">
-                        <ref role="37wK5l" to="f4zo:~EditorCell.getY():int" resolve="getY" />
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getX():int" resolve="getX" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="6$Bmuz_XN_6" role="3uHU7w">
@@ -3736,6 +3764,10 @@
         <property role="TrG5h" value="ctrlKeyIsDown" />
         <node concept="10P_77" id="3Hs7LVsUArk" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="7g5x0$c8BFz" role="3clF46">
+        <property role="TrG5h" value="hasPlatformTooltip" />
+        <node concept="10P_77" id="7g5x0$c8BNS" role="1tU5fm" />
+      </node>
       <node concept="3cqZAl" id="6UxMBQBDWru" role="3clF45" />
       <node concept="3Tm1VV" id="6UxMBQBDWrv" role="1B3o_S" />
       <node concept="3clFbS" id="6UxMBQBDWrw" role="3clF47">
@@ -3766,6 +3798,23 @@
             <ref role="3cqZAo" node="3Hs7LVsU_xO" resolve="ctrlKeyIsDown" />
           </node>
         </node>
+        <node concept="3clFbJ" id="7g5x0$c8RBE" role="3cqZAp">
+          <node concept="3clFbS" id="7g5x0$c8RBG" role="3clFbx">
+            <node concept="3clFbF" id="7g5x0$c8S7m" role="3cqZAp">
+              <node concept="37vLTI" id="7g5x0$c8Se_" role="3clFbG">
+                <node concept="3clFbT" id="7g5x0$c8Skc" role="37vLTx">
+                  <property role="3clFbU" value="false" />
+                </node>
+                <node concept="37vLTw" id="7g5x0$c8S7k" role="37vLTJ">
+                  <ref role="3cqZAo" node="7tUUHAhyrRI" resolve="showImmediately" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="7g5x0$c8RP2" role="3clFbw">
+            <ref role="3cqZAo" node="7g5x0$c8BFz" resolve="hasPlatformTooltip" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="3Hs7LVsUBM6" role="3cqZAp">
           <node concept="3clFbS" id="3Hs7LVsUBM9" role="3clFbx">
             <node concept="3clFbF" id="7tUUHAhysU8" role="3cqZAp">
@@ -3782,6 +3831,27 @@
           </node>
           <node concept="9aQIb" id="3Hs7LVsUD3V" role="9aQIa">
             <node concept="3clFbS" id="3Hs7LVsUD3W" role="9aQI4">
+              <node concept="3clFbF" id="7g5x0$c8ANN" role="3cqZAp">
+                <node concept="2OqwBi" id="7g5x0$c8AU7" role="3clFbG">
+                  <node concept="37vLTw" id="7g5x0$c8ANL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6UxMBQBDWx1" resolve="delayTimer" />
+                  </node>
+                  <node concept="liA8E" id="7g5x0$c8AY2" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~Timer.setInitialDelay(int):void" resolve="setInitialDelay" />
+                    <node concept="3K4zz7" id="7g5x0$c8CjP" role="37wK5m">
+                      <node concept="3cmrfG" id="7g5x0$c8C$_" role="3K4E3e">
+                        <property role="3cmrfH" value="2500" />
+                      </node>
+                      <node concept="3cmrfG" id="7g5x0$c8CuO" role="3K4GZi">
+                        <property role="3cmrfH" value="750" />
+                      </node>
+                      <node concept="37vLTw" id="7g5x0$c8Cca" role="3K4Cdx">
+                        <ref role="3cqZAo" node="7g5x0$c8BFz" resolve="hasPlatformTooltip" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="6UxMBQBFC8G" role="3cqZAp">
                 <node concept="2OqwBi" id="6UxMBQBFC9J" role="3clFbG">
                   <node concept="37vLTw" id="6UxMBQBFC8F" role="2Oq$k0">
