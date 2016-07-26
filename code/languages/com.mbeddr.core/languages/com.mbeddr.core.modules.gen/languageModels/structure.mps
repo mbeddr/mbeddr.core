@@ -261,6 +261,14 @@
         <ref role="trN6q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
       </node>
     </node>
+    <node concept="1TJgyi" id="7uVh7XGHfib" role="1TKVEl">
+      <property role="TrG5h" value="preffix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7uVh7XGHfid" role="1TKVEl">
+      <property role="TrG5h" value="suffix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

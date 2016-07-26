@@ -43,7 +43,10 @@
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
-      <concept id="1548733054536783716" name="com.mbeddr.core.util.structure.UniqueIncludeGuards" flags="ng" index="3UV2f_" />
+      <concept id="1548733054536783716" name="com.mbeddr.core.util.structure.UniqueIncludeGuards" flags="ng" index="3UV2f_">
+        <property id="8627564825225718095" name="suffix" index="rwaOK" />
+        <property id="8627564825225718093" name="preffix" index="rwaOM" />
+      </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
@@ -103,13 +106,13 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="7uVh7XGa0Ct">
-    <node concept="2xfidK" id="7uVh7XGa0Cu" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
-    </node>
     <node concept="2Q9Fgs" id="7uVh7XGa1n1" role="2Q9xDr">
       <node concept="2Q9FjX" id="7uVh7XGa1n2" role="2Q9FjI" />
     </node>
-    <node concept="3UV2f_" id="7uVh7XGa0Cw" role="2Q9xDr" />
+    <node concept="3UV2f_" id="7uVh7XGXu4P" role="2Q9xDr">
+      <property role="rwaOM" value="_" />
+      <property role="rwaOK" value="_H" />
+    </node>
     <node concept="2eOfOl" id="7uVh7XGa1oQ" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="main" />
@@ -125,6 +128,9 @@
       <node concept="2v9HqM" id="7uVh7XGa2s0" role="2eOfOg">
         <ref role="2v9HqP" node="7uVh7XGa0DZ" resolve="ModuleD" />
       </node>
+    </node>
+    <node concept="2xfidK" id="7uVh7XGEkjR" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="N3F5e" id="7uVh7XGa0CI">
