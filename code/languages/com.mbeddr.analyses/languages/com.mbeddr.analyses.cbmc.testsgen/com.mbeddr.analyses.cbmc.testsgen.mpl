@@ -115,6 +115,7 @@
     <dependency reexport="false">3c936253-7e28-4bab-8fc6-00dc69e7d7ad(com.mbeddr.analyses.cbmc.testsgen.rt)</dependency>
     <dependency reexport="false">66fa30ae-4b73-4f2b-b199-9a072902ec06(com.mbeddr.analyses.cbmc.testsgen)</dependency>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
+    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

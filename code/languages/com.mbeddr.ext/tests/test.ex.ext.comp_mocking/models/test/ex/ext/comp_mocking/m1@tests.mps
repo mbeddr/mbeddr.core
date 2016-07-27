@@ -205,7 +205,7 @@
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
       <concept id="8230733038424928674" name="com.mbeddr.ext.components.test.structure.DirectRunnableCall" flags="ng" index="1AmG6P">
@@ -283,6 +283,9 @@
       <concept id="466603768608410221" name="com.mbeddr.ext.components.structure.PortAdapterOpCallExpr" flags="ng" index="30IJZa" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
+        <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
@@ -495,6 +498,9 @@
     <node concept="2eOfOl" id="1Rr52SXzYsa" role="2ePNbc">
       <property role="TrG5h" value="MockTest" />
       <property role="iO3LB" value="true" />
+      <node concept="2v9HqM" id="3lwKnkjtHq0" role="2eOfOg">
+        <ref role="2v9HqP" node="3lwKnkjtEBI" resolve="Main" />
+      </node>
       <node concept="2v9HqM" id="1Rr52SXzYsb" role="2eOfOg">
         <ref role="2v9HqP" node="1Rr52SXzVci" resolve="ApplicationStuff" />
       </node>
@@ -522,7 +528,7 @@
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJE6" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJE7" role="3GpDut" />
+      <node concept="3GpDuv" id="3lwKnkju1gm" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="1Rr52SXzTsD">
@@ -667,9 +673,12 @@
     </node>
     <node concept="c0Qz5" id="1Rr52SXzVcU" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="runTest" />
+      <property role="TrG5h" value="testMock" />
       <node concept="19Rifw" id="1Rr52SXzVcV" role="2C2TGm" />
       <node concept="3XIRFW" id="1Rr52SXzVcW" role="c0Qz3">
+        <node concept="3t9XKO" id="3lwKnkjtHoP" role="3XIRFZ">
+          <ref role="3t9XKR" node="1Rr52SXzVcE" resolve="config" />
+        </node>
         <node concept="c0Tn9" id="2mhTzLJGk9I" role="3XIRFZ">
           <node concept="3TlM44" id="2mhTzLJGkrj" role="c0Tn6">
             <node concept="3TlMhK" id="2mhTzLJGkss" role="3TlMhJ" />
@@ -764,7 +773,7 @@
     </node>
     <node concept="wlT_f" id="1Rr52SXzTtE" role="N3F5h">
       <property role="TrG5h" value="PersistenceMock" />
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <property role="2xiIqR" value="true" />
       <node concept="2EWHp_" id="1Rr52SXzTHC" role="2RW2fA">
         <property role="TrG5h" value="pp" />
@@ -825,7 +834,7 @@
       <property role="TrG5h" value="empty_1358931453179_1" />
     </node>
     <node concept="2EWCuY" id="vMpGaXIX_a" role="N3F5h">
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="x" />
       <node concept="EbCE0" id="vMpGaXIXIz" role="2RW2fA">
         <property role="TrG5h" value="x" />
@@ -839,7 +848,7 @@
       <property role="TrG5h" value="empty_1395508765516_2" />
     </node>
     <node concept="1vSuYn" id="5vll4VdvqSN" role="N3F5h">
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="StatusStub" />
       <node concept="_e4Bv" id="5vll4VdvqTf" role="_e4wZ">
         <property role="TrG5h" value="phase1" />
@@ -942,20 +951,6 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="4DCBrJ$1Rpr" role="N3F5h">
-      <property role="TrG5h" value="empty_1327306832113_17" />
-    </node>
-    <node concept="lIfQi" id="4Ru$s7zAL91" role="N3F5h">
-      <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <property role="3HjyOP" value="true" />
-      <node concept="3cM6IN" id="4Ru$s7zAL92" role="lIfQt">
-        <ref role="3cM6IK" node="1Rr52SXzVcU" resolve="runTest" />
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="4DCBrJ$1Rps" role="N3F5h">
-      <property role="TrG5h" value="empty_1327306835465_18" />
-    </node>
     <node concept="3GEVxB" id="2mhTzLJuKBV" role="2OODSX">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1Rr52SXzTsD" resolve="Interfaces" />
@@ -963,6 +958,22 @@
     <node concept="3GEVxB" id="2mhTzLJuKJK" role="2OODSX">
       <property role="3GEa6x" value="false" />
       <ref role="3GEb4d" node="1Rr52SXzVci" resolve="ApplicationStuff" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="3lwKnkjtEBI">
+    <property role="TrG5h" value="Main" />
+    <node concept="2NXPZ9" id="3lwKnkjtEBJ" role="N3F5h">
+      <property role="TrG5h" value="empty_1469524742944_4" />
+    </node>
+    <node concept="lIfQi" id="3lwKnkjtEBP" role="N3F5h">
+      <property role="3HjyOP" value="true" />
+      <property role="TrG5h" value="main" />
+      <node concept="3cM6IN" id="3lwKnkjtEC9" role="lIfQt">
+        <ref role="3cM6IK" node="1Rr52SXzVcU" resolve="testMock" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="3lwKnkjtEBV" role="2OODSX">
+      <ref role="3GEb4d" node="1Rr52SXzTtD" resolve="MockingAndTesting" />
     </node>
   </node>
 </model>

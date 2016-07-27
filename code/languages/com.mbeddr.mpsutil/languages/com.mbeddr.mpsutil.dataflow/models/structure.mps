@@ -114,12 +114,11 @@
   </node>
   <node concept="1TIwiD" id="7TdqwvhyxII">
     <property role="1pbfSe" value="1339524533" />
-    <property role="TrG5h" value="InterProceduralDataFlowGraphAttribute" />
-    <ref role="1TJDcQ" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
-    <node concept="M6xJ_" id="7TdqwvhyxIJ" role="lGtFl">
-      <node concept="tn0Fv" id="7TdqwvhyxIN" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
+    <property role="TrG5h" value="InterProcedural_BuilderMode" />
+    <property role="34LRSv" value="inter-procedural" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="W0hFJtEGub" role="PzmwI">
+      <ref role="PrY4T" to="tp41:6UdHCtZMvVk" resolve="IBuilderMode" />
     </node>
   </node>
   <node concept="1TIwiD" id="3u8ubzKm3sG">
@@ -128,12 +127,6 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="InterProceduralEmitStatement" />
     <ref role="1TJDcQ" to="tp41:hz_D2po" resolve="EmitStatement" />
-  </node>
-  <node concept="1TIwiD" id="1O3WvD8NPAO">
-    <property role="1pbfSe" value="1708346286" />
-    <property role="TrG5h" value="IsInterProceduralExpression" />
-    <property role="34LRSv" value="isInterProcedural" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="3u8ubzKrgBU">
     <property role="1pbfSe" value="670401202" />

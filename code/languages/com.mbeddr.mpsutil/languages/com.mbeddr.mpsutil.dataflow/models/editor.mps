@@ -15,7 +15,6 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
-      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -23,7 +22,6 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
-      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -115,19 +113,9 @@
     </node>
   </node>
   <node concept="24kQdi" id="7TdqwvhyxIU">
-    <ref role="1XX52x" to="6qry:7TdqwvhyxII" resolve="InterProceduralDataFlowGraphAttribute" />
-    <node concept="3EZMnI" id="3QkagoxiVAF" role="2wV5jI">
-      <node concept="2iRkQZ" id="3QkagoxiVAI" role="2iSdaV" />
-      <node concept="3F0ifn" id="7TdqwvhyxMi" role="3EZMnx">
-        <property role="3F0ifm" value="@On Inter-procedural Data-flow Graph" />
-      </node>
-      <node concept="2SsqMj" id="3QkagoxiVAS" role="3EZMnx" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1O3WvD8NPAU">
-    <ref role="1XX52x" to="6qry:1O3WvD8NPAO" resolve="IsInterProceduralExpression" />
-    <node concept="3F0ifn" id="1O3WvD8NPAW" role="2wV5jI">
-      <property role="3F0ifm" value="isInterProcedural" />
+    <ref role="1XX52x" to="6qry:7TdqwvhyxII" resolve="InterProcedural_BuilderMode" />
+    <node concept="PMmxH" id="W0hFJtEGui" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="2nbqtJGjoqv">

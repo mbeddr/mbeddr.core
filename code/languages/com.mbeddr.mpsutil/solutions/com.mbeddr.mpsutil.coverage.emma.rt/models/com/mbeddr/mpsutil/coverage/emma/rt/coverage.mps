@@ -22,8 +22,8 @@
     <import index="lom1" ref="r:41bf31ae-8e87-4132-b404-f244ad8a3001(jetbrains.mps.generator.traceInfo)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="e2e9" ref="c28cee35-0b0d-4e10-90c6-e4af34a08700/java:com.vladium.emma.rt(com.mbeddr.mpsutil.coverage.emma.rt/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -263,9 +263,6 @@
   </registry>
   <node concept="312cEu" id="1OuY31lb1yb">
     <property role="TrG5h" value="CoverageLifter" />
-    <node concept="NWlO9" id="7n88SMjN0rc" role="lGtFl">
-      <property role="NWlVz" value="Lifter for the coverage." />
-    </node>
     <node concept="2tJIrI" id="1OuY31lb3Mu" role="jymVt" />
     <node concept="2YIFZL" id="1OuY31lb3Nt" role="jymVt">
       <property role="TrG5h" value="main" />
@@ -316,9 +313,6 @@
     <node concept="2tJIrI" id="7n88SMjN3wW" role="jymVt" />
     <node concept="2YIFZL" id="7UjC_TCLTU0" role="jymVt">
       <property role="TrG5h" value="readCoverageInfoFromFilesAndLift" />
-      <node concept="NWlO9" id="7n88SMjMZPB" role="lGtFl">
-        <property role="NWlVz" value="Reads the coverage info from saved files and lifts it at DSL level." />
-      </node>
       <node concept="3Tm1VV" id="7UjC_TCLVji" role="1B3o_S" />
       <node concept="3cqZAl" id="7UjC_TCLTU2" role="3clF45" />
       <node concept="3clFbS" id="7UjC_TCLTPH" role="3clF47">
@@ -576,6 +570,9 @@
       <node concept="37vLTG" id="laok7UPyCS" role="3clF46">
         <property role="TrG5h" value="coverageFileName" />
         <node concept="17QB3L" id="laok7UPz0C" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="7n88SMjMZPB" role="lGtFl">
+        <property role="NWlVz" value="Reads the coverage info from saved files and lifts it at DSL level." />
       </node>
     </node>
     <node concept="2tJIrI" id="7n88SMjMSrk" role="jymVt" />
@@ -1234,24 +1231,24 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1OuY31lb1yc" role="1B3o_S" />
+    <node concept="NWlO9" id="7n88SMjN0rc" role="lGtFl">
+      <property role="NWlVz" value="Lifter for the coverage." />
+    </node>
   </node>
   <node concept="312cEu" id="7UjC_TCJKDa">
     <property role="TrG5h" value="CoverageResultsCache" />
-    <node concept="NWlO9" id="7n88SMjN0Gd" role="lGtFl">
-      <property role="NWlVz" value="Cache for holding the lifted results." />
-    </node>
     <node concept="2tJIrI" id="7UjC_TCJKDo" role="jymVt" />
     <node concept="Wx3nA" id="7UjC_TCJKO3" role="jymVt">
       <property role="TrG5h" value="covInfo" />
       <node concept="3Tm6S6" id="7UjC_TCJKO5" role="1B3o_S" />
       <node concept="3rvAFt" id="7UjC_TCJKP2" role="1tU5fm">
-        <node concept="10Oyi0" id="51ECGN59dOu" role="3rvSg0" />
         <node concept="3Tqbb2" id="7UjC_TCJKPr" role="3rvQeY" />
+        <node concept="10Oyi0" id="51ECGN59dOu" role="3rvSg0" />
       </node>
       <node concept="2ShNRf" id="7UjC_TCJKR$" role="33vP2m">
         <node concept="3rGOSV" id="7UjC_TCJM7D" role="2ShVmc">
-          <node concept="10Oyi0" id="51ECGN59dYy" role="3rHtpV" />
           <node concept="3Tqbb2" id="7UjC_TCJMal" role="3rHrn6" />
+          <node concept="10Oyi0" id="51ECGN59dYy" role="3rHtpV" />
         </node>
       </node>
     </node>
@@ -1567,6 +1564,9 @@
     </node>
     <node concept="2tJIrI" id="51ECGN58zVC" role="jymVt" />
     <node concept="3Tm1VV" id="7UjC_TCJKDb" role="1B3o_S" />
+    <node concept="NWlO9" id="7n88SMjN0Gd" role="lGtFl">
+      <property role="NWlVz" value="Cache for holding the lifted results." />
+    </node>
   </node>
 </model>
 

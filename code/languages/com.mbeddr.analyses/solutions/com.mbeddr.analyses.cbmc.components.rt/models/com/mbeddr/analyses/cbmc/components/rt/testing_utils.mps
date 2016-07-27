@@ -387,6 +387,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l7tP5" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -639,6 +640,7 @@
                           <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="5KHBa6l7ukT" role="37wK5m" />
                     </node>
                   </node>
                 </node>

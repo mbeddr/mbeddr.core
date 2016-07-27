@@ -11,6 +11,7 @@
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="iehc" ref="r:a88a6004-6899-496e-945f-3e0df069d4b7(com.mbeddr.analyses.cbmc.statemachines.rt.analyses.statemachines)" />
     <import index="lcpc" ref="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -180,6 +181,9 @@
               <node concept="37vLTw" id="5uqRFp977lH" role="37wK5m">
                 <ref role="3cqZAo" node="5LoFa4GcVGK" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="5KHBa6l6TNd" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l6TfX" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -199,6 +203,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="5LoFa4GcVGL" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l6TfX" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l6TjF" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>

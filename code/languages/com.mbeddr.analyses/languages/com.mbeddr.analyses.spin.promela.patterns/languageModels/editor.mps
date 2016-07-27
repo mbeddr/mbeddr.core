@@ -2,11 +2,16 @@
 <model ref="r:0527a7ff-bb76-4d1c-88cd-6abf58cf5241(com.mbeddr.analyses.spin.promela.patterns.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="i3mj" ref="r:828f323f-b068-42aa-8988-4151fb6af01f(com.mbeddr.analyses.spin.promela.patterns.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -31,6 +36,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -197,6 +203,45 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5RNtn4cbrGq">
+    <ref role="1XX52x" to="i3mj:5RNtn4cbrGb" resolve="ForEachStatement" />
+    <node concept="3EZMnI" id="5RNtn4cbrGx" role="2wV5jI">
+      <node concept="3F0ifn" id="5RNtn4cbrGy" role="3EZMnx">
+        <property role="3F0ifm" value="foreach" />
+      </node>
+      <node concept="3F0ifn" id="5RNtn4cbrGz" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="5RNtn4ccK0x" role="3EZMnx">
+        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGh" />
+      </node>
+      <node concept="3F0ifn" id="5RNtn4cbrHl" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="5RNtn4cbrIe" role="3EZMnx">
+        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGc" />
+      </node>
+      <node concept="3F0ifn" id="5RNtn4cbrG_" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F1sOY" id="5RNtn4cbrGA" role="3EZMnx">
+        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGs" />
+      </node>
+      <node concept="l2Vlx" id="5RNtn4cbrGB" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5RNtn4ccJZX">
+    <ref role="1XX52x" to="i3mj:5RNtn4ccJZN" resolve="ForEachVarDecl" />
+    <node concept="3EZMnI" id="5RNtn4ccJZZ" role="2wV5jI">
+      <node concept="3F1sOY" id="5RNtn4ccK09" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+      </node>
+      <node concept="3F0A7n" id="5RNtn4ccK0f" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="5RNtn4ccK02" role="2iSdaV" />
     </node>
   </node>
 </model>
