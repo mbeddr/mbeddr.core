@@ -242,6 +242,7 @@
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
         <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
+      <concept id="1766949807893567867" name="jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction" flags="ig" index="bXqS6" />
       <concept id="1177068340529" name="jetbrains.mps.lang.typesystem.structure.ImmediateSupertypesExpression" flags="nn" index="eJogz">
         <child id="1177068475017" name="subtypeExpression" index="eJTer" />
       </concept>
@@ -305,6 +306,7 @@
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <property id="1195213689297" name="overrides" index="18ip37" />
+        <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -13271,6 +13273,15 @@
       <property role="TrG5h" value="intPtrT" />
       <ref role="1YaFvo" to="mj1l:6LsWDiKtfR7" resolve="IntPtrT" />
     </node>
+    <node concept="bXqS6" id="$0HzpSS04E" role="bX4a1">
+      <node concept="3clFbS" id="$0HzpSS04F" role="2VODD2">
+        <node concept="3cpWs6" id="$0HzpSS06P" role="3cqZAp">
+          <node concept="3clFbT" id="$0HzpSS06X" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1YbPZF" id="6LsWDiKtlVQ">
     <property role="TrG5h" value="typeof_UIntPtrT" />
@@ -13321,6 +13332,15 @@
     <node concept="1YaCAy" id="6LsWDiKtlVT" role="1YuTPh">
       <property role="TrG5h" value="uIntPtrT" />
       <ref role="1YaFvo" to="mj1l:6LsWDiKtluA" resolve="UIntPtrT" />
+    </node>
+    <node concept="bXqS6" id="$0HzpSRZdt" role="bX4a1">
+      <node concept="3clFbS" id="$0HzpSRZdu" role="2VODD2">
+        <node concept="3cpWs6" id="$0HzpSRZYM" role="3cqZAp">
+          <node concept="3clFbT" id="$0HzpSRZYU" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="18kY7G" id="1zouAvzNdKS">

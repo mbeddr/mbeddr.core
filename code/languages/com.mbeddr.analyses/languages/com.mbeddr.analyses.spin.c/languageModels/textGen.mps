@@ -9,6 +9,7 @@
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="dylp" ref="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -46,6 +47,10 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
+      <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
+        <reference id="1234190664409" name="function" index="1rvKf6" />
+        <child id="1234191323697" name="parameter" index="1ryhcI" />
+      </concept>
       <concept id="1236188139846" name="jetbrains.mps.lang.textGen.structure.WithIndentOperation" flags="nn" index="3izx1p">
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
@@ -132,29 +137,29 @@
           <node concept="la8eA" id="6rTOrQxiyq6" role="lcghm">
             <property role="lacIc" value="c_state &quot;" />
           </node>
-          <node concept="l9hG8" id="6rTOrQxiyrP" role="lcghm">
-            <node concept="2OqwBi" id="6rTOrQxiyAp" role="lb14g">
-              <node concept="117lpO" id="6rTOrQxiysA" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6rTOrQxi$di" role="2OqNvi">
+        </node>
+        <node concept="lc7rE" id="7Ztu0DHKogr" role="3cqZAp">
+          <node concept="1bDJIP" id="7Ztu0DHKowQ" role="lcghm">
+            <ref role="1rvKf6" to="dylp:29BUUxcsbzt" resolve="genTypeWithName" />
+            <node concept="2OqwBi" id="7Ztu0DHKowR" role="1ryhcI">
+              <node concept="117lpO" id="7Ztu0DHKowS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7Ztu0DHKowT" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
               </node>
             </node>
-          </node>
-          <node concept="la8eA" id="6rTOrQxi$gX" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="l9hG8" id="6rTOrQxi$n0" role="lcghm">
-            <node concept="2OqwBi" id="6rTOrQxi$$l" role="lb14g">
-              <node concept="117lpO" id="6rTOrQxi$qy" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6rTOrQxiA7$" role="2OqNvi">
+            <node concept="2OqwBi" id="7Ztu0DHKowU" role="1ryhcI">
+              <node concept="117lpO" id="7Ztu0DHKowV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7Ztu0DHKowW" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
-          <node concept="la8eA" id="6rTOrQxiAdQ" role="lcghm">
+        </node>
+        <node concept="lc7rE" id="7Ztu0DHKoJ6" role="3cqZAp">
+          <node concept="la8eA" id="7Ztu0DHKoNT" role="lcghm">
             <property role="lacIc" value="&quot; &quot;Global&quot;;" />
           </node>
-          <node concept="l8MVK" id="6rTOrQxmkpI" role="lcghm" />
+          <node concept="l8MVK" id="7Ztu0DHKoNU" role="lcghm" />
         </node>
       </node>
     </node>

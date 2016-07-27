@@ -19147,6 +19147,44 @@
             <ref role="3cqZAo" node="BILoO2Ls52" resolve="alignmentDisabled" />
           </node>
         </node>
+        <node concept="3cpWs8" id="6fCslEdUe5m" role="3cqZAp">
+          <node concept="3cpWsn" id="6fCslEdUe5n" role="3cpWs9">
+            <property role="TrG5h" value="hasRowHeaders" />
+            <node concept="10P_77" id="6fCslEdUe5j" role="1tU5fm" />
+            <node concept="22lmx$" id="6fCslEdUitR" role="33vP2m">
+              <node concept="3fqX7Q" id="6fCslEdVeUc" role="3uHU7w">
+                <node concept="2OqwBi" id="6fCslEdVeUe" role="3fr31v">
+                  <node concept="2OqwBi" id="6fCslEdVeUf" role="2Oq$k0">
+                    <node concept="37vLTw" id="6fCslEdVeUg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1BnAmOU1kVd" resolve="subgrid" />
+                    </node>
+                    <node concept="liA8E" id="6fCslEdVeUh" role="2OqNvi">
+                      <ref role="37wK5l" node="3jHPIDnnbjb" resolve="getRowHeaders" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6fCslEdVeUi" role="2OqNvi">
+                    <ref role="37wK5l" to="sse1:7C0FR5ANIr3" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="6fCslEdUieD" role="3uHU7B">
+                <node concept="2OqwBi" id="6fCslEdUieF" role="3fr31v">
+                  <node concept="2OqwBi" id="6fCslEdUieG" role="2Oq$k0">
+                    <node concept="37vLTw" id="6fCslEdUieH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1BnAmOUy1hr" resolve="myGrid" />
+                    </node>
+                    <node concept="liA8E" id="6fCslEdUieI" role="2OqNvi">
+                      <ref role="37wK5l" node="3jHPIDnnbjb" resolve="getRowHeaders" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6fCslEdUieJ" role="2OqNvi">
+                    <ref role="37wK5l" to="sse1:7C0FR5ANIr3" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1Dw8fO" id="1BnAmOUBwIy" role="3cqZAp">
           <node concept="3clFbS" id="1BnAmOUBwIz" role="2LFqv$">
             <node concept="3clFbF" id="1BnAmOUBx$$" role="3cqZAp">
@@ -19163,38 +19201,50 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7Nzu1MbU6UG" role="3cqZAp">
-              <node concept="2OqwBi" id="7Nzu1MbU77G" role="3clFbG">
-                <node concept="37vLTw" id="7Nzu1MbU6UF" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1BnAmOUy1hr" resolve="myGrid" />
+            <node concept="3clFbJ" id="6fCslEdUjSQ" role="3cqZAp">
+              <node concept="3clFbS" id="6fCslEdUjSS" role="3clFbx">
+                <node concept="3SKdUt" id="6fCslEdUinW" role="3cqZAp">
+                  <node concept="3SKdUq" id="6fCslEdUinY" role="3SKWNk">
+                    <property role="3SKdUp" value="TODO does subgrid must be transposed, too?" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="7Nzu1MbU7Gs" role="2OqNvi">
-                  <ref role="37wK5l" node="1rJc_ytGGRA" resolve="transpose" />
+                <node concept="3clFbF" id="7Nzu1MbU6UG" role="3cqZAp">
+                  <node concept="2OqwBi" id="7Nzu1MbU77G" role="3clFbG">
+                    <node concept="37vLTw" id="7Nzu1MbU6UF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1BnAmOUy1hr" resolve="myGrid" />
+                    </node>
+                    <node concept="liA8E" id="7Nzu1MbU7Gs" role="2OqNvi">
+                      <ref role="37wK5l" node="1rJc_ytGGRA" resolve="transpose" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7Nzu1MbU7U$" role="3cqZAp">
+                  <node concept="1rXfSq" id="7Nzu1MbU7Uz" role="3clFbG">
+                    <ref role="37wK5l" node="1BnAmOUBcVc" resolve="alignColumns_" />
+                    <node concept="37vLTw" id="7Nzu1MbU82r" role="37wK5m">
+                      <ref role="3cqZAo" node="3jHPIDnUYyH" resolve="y" />
+                    </node>
+                    <node concept="37vLTw" id="7Nzu1MbU83U" role="37wK5m">
+                      <ref role="3cqZAo" node="3jHPIDnUSNK" resolve="x" />
+                    </node>
+                    <node concept="37vLTw" id="7Nzu1MbU86k" role="37wK5m">
+                      <ref role="3cqZAo" node="1BnAmOU1kVd" resolve="subgrid" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7Nzu1MbU8fS" role="3cqZAp">
+                  <node concept="2OqwBi" id="7Nzu1MbU8wG" role="3clFbG">
+                    <node concept="37vLTw" id="7Nzu1MbU8fR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1BnAmOUy1hr" resolve="myGrid" />
+                    </node>
+                    <node concept="liA8E" id="7Nzu1MbU95t" role="2OqNvi">
+                      <ref role="37wK5l" node="1rJc_ytGGRA" resolve="transpose" />
+                    </node>
+                  </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbF" id="7Nzu1MbU7U$" role="3cqZAp">
-              <node concept="1rXfSq" id="7Nzu1MbU7Uz" role="3clFbG">
-                <ref role="37wK5l" node="1BnAmOUBcVc" resolve="alignColumns_" />
-                <node concept="37vLTw" id="7Nzu1MbU82r" role="37wK5m">
-                  <ref role="3cqZAo" node="3jHPIDnUYyH" resolve="y" />
-                </node>
-                <node concept="37vLTw" id="7Nzu1MbU83U" role="37wK5m">
-                  <ref role="3cqZAo" node="3jHPIDnUSNK" resolve="x" />
-                </node>
-                <node concept="37vLTw" id="7Nzu1MbU86k" role="37wK5m">
-                  <ref role="3cqZAo" node="1BnAmOU1kVd" resolve="subgrid" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7Nzu1MbU8fS" role="3cqZAp">
-              <node concept="2OqwBi" id="7Nzu1MbU8wG" role="3clFbG">
-                <node concept="37vLTw" id="7Nzu1MbU8fR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1BnAmOUy1hr" resolve="myGrid" />
-                </node>
-                <node concept="liA8E" id="7Nzu1MbU95t" role="2OqNvi">
-                  <ref role="37wK5l" node="1rJc_ytGGRA" resolve="transpose" />
-                </node>
+              <node concept="37vLTw" id="6fCslEdUjYS" role="3clFbw">
+                <ref role="3cqZAo" node="6fCslEdUe5n" resolve="hasRowHeaders" />
               </node>
             </node>
           </node>
@@ -19232,6 +19282,105 @@
         <property role="TrG5h" value="subgrid" />
         <node concept="3uibUv" id="2c3czgoIPgT" role="1tU5fm">
           <ref role="3uigEE" node="7C0FR5Aonzr" resolve="Grid" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6fCslEdTLDC" role="jymVt" />
+    <node concept="3clFb_" id="6fCslEdTMwY" role="jymVt">
+      <property role="TrG5h" value="hasRowHeaders" />
+      <node concept="10P_77" id="6fCslEdTOGt" role="3clF45" />
+      <node concept="3Tmbuc" id="6fCslEdUdqJ" role="1B3o_S" />
+      <node concept="3clFbS" id="6fCslEdTMx2" role="3clF47">
+        <node concept="3clFbJ" id="6fCslEdTQSg" role="3cqZAp">
+          <node concept="3clFbS" id="6fCslEdTQSi" role="3clFbx">
+            <node concept="3cpWs6" id="6fCslEdTR3R" role="3cqZAp">
+              <node concept="3clFbT" id="6fCslEdTRwc" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="6fCslEdTQX2" role="3clFbw">
+            <node concept="2OqwBi" id="6fCslEdTQYv" role="3fr31v">
+              <node concept="2OqwBi" id="6fCslEdTQYw" role="2Oq$k0">
+                <node concept="37vLTw" id="6fCslEdTQYx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6fCslEdTP5G" resolve="grid" />
+                </node>
+                <node concept="liA8E" id="6fCslEdTQYy" role="2OqNvi">
+                  <ref role="37wK5l" node="7Nzu1MbtElO" resolve="getRowHeaders" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6fCslEdTQYz" role="2OqNvi">
+                <ref role="37wK5l" to="sse1:7C0FR5ANIr3" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="6fCslEdTSN_" role="3cqZAp">
+          <node concept="2GrKxI" id="6fCslEdTSNB" role="2Gsz3X">
+            <property role="TrG5h" value="element" />
+          </node>
+          <node concept="37vLTw" id="6fCslEdTTgY" role="2GsD0m">
+            <ref role="3cqZAo" node="6fCslEdTP5G" resolve="grid" />
+          </node>
+          <node concept="3clFbS" id="6fCslEdTSNF" role="2LFqv$">
+            <node concept="3clFbJ" id="6fCslEdU50K" role="3cqZAp">
+              <node concept="2ZW3vV" id="6fCslEdU56Y" role="3clFbw">
+                <node concept="3uibUv" id="6fCslEdU5ac" role="2ZW6by">
+                  <ref role="3uigEE" node="7C0FR5AuGS8" resolve="IGrid" />
+                </node>
+                <node concept="2GrUjf" id="6fCslEdU54b" role="2ZW6bz">
+                  <ref role="2Gs0qQ" node="6fCslEdTSNB" resolve="element" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="6fCslEdU50M" role="3clFbx">
+                <node concept="3cpWs8" id="6fCslEdU5fq" role="3cqZAp">
+                  <node concept="3cpWsn" id="6fCslEdU5fr" role="3cpWs9">
+                    <property role="TrG5h" value="subgrid" />
+                    <node concept="3uibUv" id="6fCslEdU5fs" role="1tU5fm">
+                      <ref role="3uigEE" node="7C0FR5AuGS8" resolve="IGrid" />
+                    </node>
+                    <node concept="1eOMI4" id="6fCslEdU5jJ" role="33vP2m">
+                      <node concept="10QFUN" id="6fCslEdU5jG" role="1eOMHV">
+                        <node concept="3uibUv" id="6fCslEdU5jL" role="10QFUM">
+                          <ref role="3uigEE" node="7C0FR5AuGS8" resolve="IGrid" />
+                        </node>
+                        <node concept="2GrUjf" id="6fCslEdU5jM" role="10QFUP">
+                          <ref role="2Gs0qQ" node="6fCslEdTSNB" resolve="element" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="6fCslEdUc$s" role="3cqZAp">
+                  <node concept="3clFbS" id="6fCslEdUc$u" role="3clFbx">
+                    <node concept="3cpWs6" id="6fCslEdUcC0" role="3cqZAp">
+                      <node concept="3clFbT" id="6fCslEdUd0t" role="3cqZAk">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1rXfSq" id="6fCslEdU9od" role="3clFbw">
+                    <ref role="37wK5l" node="6fCslEdTMwY" resolve="hasRowHeaders" />
+                    <node concept="37vLTw" id="6fCslEdUcup" role="37wK5m">
+                      <ref role="3cqZAo" node="6fCslEdU5fr" resolve="subgrid" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6fCslEdTTjk" role="3cqZAp" />
+        <node concept="3cpWs6" id="6fCslEdTU9o" role="3cqZAp">
+          <node concept="3clFbT" id="6fCslEdTUYa" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6fCslEdTP5G" role="3clF46">
+        <property role="TrG5h" value="grid" />
+        <node concept="3uibUv" id="6fCslEdU2_q" role="1tU5fm">
+          <ref role="3uigEE" node="7C0FR5AuGS8" resolve="IGrid" />
         </node>
       </node>
     </node>
