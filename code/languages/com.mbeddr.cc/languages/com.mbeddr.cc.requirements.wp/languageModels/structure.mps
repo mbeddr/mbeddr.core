@@ -2,7 +2,8 @@
 <model ref="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,9 +22,9 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -35,12 +36,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -57,55 +60,63 @@
     <property role="TrG5h" value="HasEffortFilter" />
     <property role="R4oN_" value="requirements that have estimated effort" />
     <property role="34LRSv" value="hasEstimatedEffort" />
-    <property role="1pbfSe" value="1123979802" />
+    <property role="EcuMT" value="882101644643504929" />
     <ref role="1TJDcQ" to="75wo:5liZiKqQ1XL" resolve="RequirementsFilter" />
   </node>
   <node concept="1TIwiD" id="N634JYHMEE">
     <property role="TrG5h" value="Technote" />
     <property role="34LRSv" value="technote" />
-    <property role="1pbfSe" value="192755445" />
+    <property role="EcuMT" value="920436694379342506" />
     <ref role="1TJDcQ" to="75wo:N634JYHMEF" resolve="TextReqData" />
   </node>
   <node concept="1TIwiD" id="7sHl0myeX2w">
     <property role="TrG5h" value="WorkPackage" />
     <property role="3GE5qa" value="wp" />
     <property role="34LRSv" value="workpackage" />
-    <property role="1pbfSe" value="426321061" />
+    <property role="EcuMT" value="8587612447638802592" />
     <ref role="1TJDcQ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
     <node concept="1TJgyj" id="7sHl0myeX2U" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="description" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8587612447638802618" />
       <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
     </node>
     <node concept="1TJgyj" id="vRfru3oQOC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="worked" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="573995335905668392" />
       <ref role="20lvS9" node="vRfru3oPfO" resolve="WPActualWork" />
     </node>
     <node concept="1TJgyi" id="7sHl0myeX2y" role="1TKVEl">
       <property role="TrG5h" value="effort" />
+      <property role="IQ2nx" value="8587612447638802594" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="2Xp55av9_z7" role="1TKVEl">
       <property role="TrG5h" value="seenByCustomer" />
+      <property role="IQ2nx" value="3411780537799825607" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="2Xp55av9_z8" role="1TKVEl">
       <property role="TrG5h" value="acceptedByCustomer" />
+      <property role="IQ2nx" value="3411780537799825608" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="2Xp55avaVMT" role="1TKVEl">
       <property role="TrG5h" value="scope" />
+      <property role="IQ2nx" value="3411780537800178873" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="2Xp55avaVMU" role="1TKVEl">
       <property role="TrG5h" value="resonsible" />
+      <property role="IQ2nx" value="3411780537800178874" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="4kXQNJTektt" role="1TKVEl">
       <property role="TrG5h" value="priority" />
+      <property role="IQ2nx" value="4989385012827211613" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="7sHl0myeX2W" role="PzmwI">
@@ -116,52 +127,60 @@
     <property role="TrG5h" value="WorkPackagesAssQuery" />
     <property role="3GE5qa" value="wp" />
     <property role="34LRSv" value="workpackages" />
-    <property role="1pbfSe" value="426348408" />
+    <property role="EcuMT" value="8587612447638829939" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyi" id="7sHl0myf3HO" role="1TKVEl">
       <property role="TrG5h" value="scope" />
+      <property role="IQ2nx" value="8587612447638829940" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="7sHl0myf3HP" role="1TKVEl">
       <property role="TrG5h" value="company" />
+      <property role="IQ2nx" value="8587612447638829941" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="2ka6MWOv4ZU" role="1TKVEl">
       <property role="TrG5h" value="status" />
+      <property role="IQ2nx" value="2668975618728415226" />
       <ref role="AX2Wp" node="2ka6MWOv4ZO" resolve="WPStatus" />
     </node>
     <node concept="1TJgyi" id="5BlDGARhiiG" role="1TKVEl">
       <property role="TrG5h" value="prio" />
+      <property role="IQ2nx" value="6473263424708355244" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="4BCrzPI_jZV" role="1TKVEl">
       <property role="TrG5h" value="editable" />
+      <property role="IQ2nx" value="5325627769492946939" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="7sHl0myf3Ib">
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="WorkPackagesAssResult" />
-    <property role="1pbfSe" value="426348432" />
+    <property role="EcuMT" value="8587612447638829963" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="7sHl0myf3Ii" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="wp" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8587612447638829970" />
       <ref role="20lvS9" node="7sHl0myeX2w" resolve="WorkPackage" />
     </node>
   </node>
   <node concept="1TIwiD" id="7sHl0myf4Dz">
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="WorkPackagesAssSummary" />
-    <property role="1pbfSe" value="426352232" />
+    <property role="EcuMT" value="8587612447638833763" />
     <ref role="1TJDcQ" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
     <node concept="1TJgyi" id="7sHl0myf4DA" role="1TKVEl">
       <property role="TrG5h" value="estimatedEffort" />
+      <property role="IQ2nx" value="8587612447638833766" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="2ka6MWOvnNk" role="1TKVEl">
       <property role="TrG5h" value="actualEffort" />
+      <property role="IQ2nx" value="2668975618728492244" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
@@ -169,23 +188,25 @@
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="ReqWithoutWPQuery" />
     <property role="34LRSv" value="requirements without workpackage" />
-    <property role="1pbfSe" value="1741341201" />
+    <property role="EcuMT" value="3754657941424146576" />
     <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyj" id="6QfbJ5POvXP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="status" />
+      <property role="IQ2ns" value="7894580286402461557" />
       <ref role="20lvS9" to="75wo:KXQGmKJGP5" resolve="RequirementStatus" />
     </node>
   </node>
   <node concept="1TIwiD" id="3greo4NFSys">
     <property role="3GE5qa" value="wp" />
     <property role="TrG5h" value="ReqWithoutWPResult" />
-    <property role="1pbfSe" value="1741341213" />
+    <property role="EcuMT" value="3754657941424146588" />
     <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="3greo4NFSyt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="req" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="3754657941424146589" />
       <ref role="20lvS9" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
     </node>
   </node>
@@ -193,14 +214,16 @@
     <property role="TrG5h" value="WPActualWork" />
     <property role="3GE5qa" value="wp" />
     <property role="34LRSv" value="worked" />
-    <property role="1pbfSe" value="1956998741" />
+    <property role="EcuMT" value="573995335905661940" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="vRfru3oPfP" role="1TKVEl">
       <property role="TrG5h" value="hours" />
+      <property role="IQ2nx" value="573995335905661941" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="vRfru3oXsX" role="1TKVEl">
       <property role="TrG5h" value="percentFinished" />
+      <property role="IQ2nx" value="573995335905695549" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>

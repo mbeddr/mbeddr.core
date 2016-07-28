@@ -124,6 +124,10 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
@@ -131,10 +135,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -245,8 +246,8 @@
               <ref role="ehGHo" to="11rw:3YyHFqO0hJ2" resolve="CompositionConfigItem" />
             </node>
             <node concept="1PxgMI" id="3YyHFqO6MdY" role="33vP2m">
-              <ref role="1PxNhF" to="11rw:3YyHFqO0hJ2" resolve="CompositionConfigItem" />
-              <node concept="2YIFZM" id="3YyHFqO6LKk" role="1PxMeX">
+              <ref role="1m5ApE" to="11rw:3YyHFqO0hJ2" resolve="CompositionConfigItem" />
+              <node concept="2YIFZM" id="3YyHFqO6LKk" role="1m5AlR">
                 <ref role="37wK5l" to="ahli:78Ts1skpDBH" resolve="expectBCConfigItem" />
                 <ref role="1Pybhc" to="ahli:78Ts1skprjP" resolve="BCHelper" />
                 <node concept="1Q6Npb" id="3YyHFqO6LKl" role="37wK5m" />
