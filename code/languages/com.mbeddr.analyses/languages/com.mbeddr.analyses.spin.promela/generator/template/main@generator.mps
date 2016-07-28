@@ -162,13 +162,14 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -219,8 +220,8 @@
             <node concept="3clFbF" id="2bthWyzEzKo" role="3cqZAp">
               <node concept="2OqwBi" id="2bthWyzEzKp" role="3clFbG">
                 <node concept="1PxgMI" id="2bthWyzEzKq" role="2Oq$k0">
-                  <ref role="1PxNhF" to="ir22:7Rf0$0HCP5k" resolve="SpinPlatform" />
-                  <node concept="2OqwBi" id="2bthWyzEzKr" role="1PxMeX">
+                  <ref role="1m5ApE" to="ir22:7Rf0$0HCP5k" resolve="SpinPlatform" />
+                  <node concept="2OqwBi" id="2bthWyzEzKr" role="1m5AlR">
                     <node concept="30H73N" id="2bthWyzEzKs" role="2Oq$k0" />
                     <node concept="3TrEf2" id="2bthWyzEzKt" role="2OqNvi">
                       <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />
@@ -248,8 +249,8 @@
             <node concept="3clFbF" id="2bthWyzEzKz" role="3cqZAp">
               <node concept="2OqwBi" id="2bthWyzEzK$" role="3clFbG">
                 <node concept="1PxgMI" id="2bthWyzEzK_" role="2Oq$k0">
-                  <ref role="1PxNhF" to="ir22:7Rf0$0HCP5k" resolve="SpinPlatform" />
-                  <node concept="2OqwBi" id="2bthWyzEzKA" role="1PxMeX">
+                  <ref role="1m5ApE" to="ir22:7Rf0$0HCP5k" resolve="SpinPlatform" />
+                  <node concept="2OqwBi" id="2bthWyzEzKA" role="1m5AlR">
                     <node concept="30H73N" id="2bthWyzEzKB" role="2Oq$k0" />
                     <node concept="3TrEf2" id="2bthWyzEzKC" role="2OqNvi">
                       <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />

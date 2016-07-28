@@ -27,7 +27,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -155,6 +155,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -168,10 +172,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -341,8 +342,8 @@
                         <ref role="37wK5l" to="c420:4QaxHTo8Y$6" resolve="isDeadCodeWhitnessLabel" />
                         <ref role="1Pybhc" to="c420:3x0R1LJ5Dp2" resolve="DeadCodeUtils" />
                         <node concept="1PxgMI" id="4QaxHTomMD7" role="37wK5m">
-                          <ref role="1PxNhF" to="x27k:5HTuIUPB$3z" resolve="LabelStatement" />
-                          <node concept="2OqwBi" id="4QaxHTomISM" role="1PxMeX">
+                          <ref role="1m5ApE" to="x27k:5HTuIUPB$3z" resolve="LabelStatement" />
+                          <node concept="2OqwBi" id="4QaxHTomISM" role="1m5AlR">
                             <node concept="2GrUjf" id="4QaxHTomIOb" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="3AX70SQjs_Y" resolve="stmt" />
                             </node>
@@ -379,8 +380,8 @@
                       <ref role="ehGHo" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
                     </node>
                     <node concept="1PxgMI" id="4QaxHTo8lhJ" role="33vP2m">
-                      <ref role="1PxNhF" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-                      <node concept="2OqwBi" id="4QaxHTo8kEH" role="1PxMeX">
+                      <ref role="1m5ApE" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                      <node concept="2OqwBi" id="4QaxHTo8kEH" role="1m5AlR">
                         <node concept="1iwH7S" id="4QaxHTo8j3v" role="2Oq$k0" />
                         <node concept="12$id9" id="4QaxHTo8lgf" role="2OqNvi">
                           <node concept="2GrUjf" id="4QaxHTo8lgE" role="12$y8L">

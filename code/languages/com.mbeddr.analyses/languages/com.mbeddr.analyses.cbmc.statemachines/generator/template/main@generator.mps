@@ -188,6 +188,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -207,10 +211,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -325,8 +326,8 @@
                                 <ref role="37wK5l" to="iehc:4arT0cnsk1a" resolve="computeTransitionFireableLabelToBeSearched" />
                                 <ref role="1Pybhc" to="iehc:4arT0cnsk17" resolve="StatemachineUtils" />
                                 <node concept="1PxgMI" id="3oU9lB0JAvY" role="37wK5m">
-                                  <ref role="1PxNhF" to="clqz:50Lk78xBraV" resolve="Transition" />
-                                  <node concept="2OqwBi" id="3oU9lB0JAvx" role="1PxMeX">
+                                  <ref role="1m5ApE" to="clqz:50Lk78xBraV" resolve="Transition" />
+                                  <node concept="2OqwBi" id="3oU9lB0JAvx" role="1m5AlR">
                                     <node concept="1iwH7S" id="3oU9lB0JAvc" role="2Oq$k0" />
                                     <node concept="12$id9" id="3oU9lB0JAvB" role="2OqNvi">
                                       <node concept="30H73N" id="3oU9lB0JAvD" role="12$y8L" />
@@ -494,8 +495,8 @@
                               <ref role="1Pybhc" to="iehc:4arT0cnsk17" resolve="StatemachineUtils" />
                               <ref role="37wK5l" to="iehc:4arT0cnsk1a" resolve="computeTransitionFireableLabelToBeSearched" />
                               <node concept="1PxgMI" id="qjOluQlTzJ" role="37wK5m">
-                                <ref role="1PxNhF" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
-                                <node concept="2OqwBi" id="qjOluQlTzK" role="1PxMeX">
+                                <ref role="1m5ApE" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
+                                <node concept="2OqwBi" id="qjOluQlTzK" role="1m5AlR">
                                   <node concept="1iwH7S" id="qjOluQlTzL" role="2Oq$k0" />
                                   <node concept="12$id9" id="qjOluQlTzM" role="2OqNvi">
                                     <node concept="30H73N" id="qjOluQlTzN" role="12$y8L" />
@@ -630,8 +631,8 @@
                               <ref role="1Pybhc" to="iehc:4arT0cnsk17" resolve="StatemachineUtils" />
                               <ref role="37wK5l" to="iehc:4arT0cnsk1q" resolve="computeStateReachableLabelToBeSearched" />
                               <node concept="1PxgMI" id="5V$HkqNY7mL" role="37wK5m">
-                                <ref role="1PxNhF" to="clqz:3FSHg1aADay" resolve="AbstractState" />
-                                <node concept="2OqwBi" id="5V$HkqNY7mM" role="1PxMeX">
+                                <ref role="1m5ApE" to="clqz:3FSHg1aADay" resolve="AbstractState" />
+                                <node concept="2OqwBi" id="5V$HkqNY7mM" role="1m5AlR">
                                   <node concept="1iwH7S" id="5V$HkqNY7mN" role="2Oq$k0" />
                                   <node concept="12$id9" id="5V$HkqNY7mO" role="2OqNvi">
                                     <node concept="30H73N" id="5V$HkqNY7mP" role="12$y8L" />
@@ -866,8 +867,8 @@
                               <ref role="37wK5l" to="iehc:4arT0cnsk1q" resolve="computeStateReachableLabelToBeSearched" />
                               <ref role="1Pybhc" to="iehc:4arT0cnsk17" resolve="StatemachineUtils" />
                               <node concept="1PxgMI" id="Z9MVf4Ggrv" role="37wK5m">
-                                <ref role="1PxNhF" to="clqz:3FSHg1aADay" resolve="AbstractState" />
-                                <node concept="2OqwBi" id="Z9MVf4Ggrw" role="1PxMeX">
+                                <ref role="1m5ApE" to="clqz:3FSHg1aADay" resolve="AbstractState" />
+                                <node concept="2OqwBi" id="Z9MVf4Ggrw" role="1m5AlR">
                                   <node concept="1iwH7S" id="Z9MVf4Ggrx" role="2Oq$k0" />
                                   <node concept="12$id9" id="Z9MVf4Ggry" role="2OqNvi">
                                     <node concept="30H73N" id="Z9MVf4Ggrz" role="12$y8L" />

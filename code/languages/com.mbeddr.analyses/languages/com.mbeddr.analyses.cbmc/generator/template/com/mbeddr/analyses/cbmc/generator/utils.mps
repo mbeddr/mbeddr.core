@@ -147,6 +147,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -163,10 +167,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -318,8 +319,8 @@
               <ref role="ehGHo" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubsyL" role="33vP2m">
-              <ref role="1PxNhF" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
-              <node concept="2OqwBi" id="5B6zmQubsnq" role="1PxMeX">
+              <ref role="1m5ApE" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
+              <node concept="2OqwBi" id="5B6zmQubsnq" role="1m5AlR">
                 <node concept="2OqwBi" id="5B6zmQubsnr" role="2Oq$k0">
                   <node concept="37vLTw" id="5B6zmQubsns" role="2Oq$k0">
                     <ref role="3cqZAo" node="2hSqXWT5hfC" resolve="nva" />
@@ -340,8 +341,8 @@
               <ref role="ehGHo" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubvPK" role="33vP2m">
-              <ref role="1PxNhF" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
-              <node concept="2OqwBi" id="5B6zmQubvPL" role="1PxMeX">
+              <ref role="1m5ApE" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
+              <node concept="2OqwBi" id="5B6zmQubvPL" role="1m5AlR">
                 <node concept="37vLTw" id="5B6zmQubvPM" role="2Oq$k0">
                   <ref role="3cqZAo" node="5B6zmQubs45" resolve="range" />
                 </node>
@@ -412,8 +413,8 @@
               <ref role="ehGHo" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubAVz" role="33vP2m">
-              <ref role="1PxNhF" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
-              <node concept="2OqwBi" id="5B6zmQubAV$" role="1PxMeX">
+              <ref role="1m5ApE" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
+              <node concept="2OqwBi" id="5B6zmQubAV$" role="1m5AlR">
                 <node concept="2OqwBi" id="5B6zmQubAV_" role="2Oq$k0">
                   <node concept="37vLTw" id="5B6zmQubAVA" role="2Oq$k0">
                     <ref role="3cqZAo" node="2hSqXWT8ACn" resolve="nva" />
@@ -434,8 +435,8 @@
               <ref role="ehGHo" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubAVG" role="33vP2m">
-              <ref role="1PxNhF" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
-              <node concept="2OqwBi" id="5B6zmQubAVH" role="1PxMeX">
+              <ref role="1m5ApE" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
+              <node concept="2OqwBi" id="5B6zmQubAVH" role="1m5AlR">
                 <node concept="37vLTw" id="5B6zmQubAVI" role="2Oq$k0">
                   <ref role="3cqZAo" node="5B6zmQubAVx" resolve="range" />
                 </node>
@@ -455,8 +456,8 @@
               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="5B6zmQubFSN" role="37wK5m">
                 <node concept="1PxgMI" id="5B6zmQubFci" role="2Oq$k0">
-                  <ref role="1PxNhF" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
-                  <node concept="2OqwBi" id="2hSqXWT8I6u" role="1PxMeX">
+                  <ref role="1m5ApE" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+                  <node concept="2OqwBi" id="2hSqXWT8I6u" role="1m5AlR">
                     <node concept="37vLTw" id="5B6zmQubCdp" role="2Oq$k0">
                       <ref role="3cqZAo" node="5B6zmQubAVE" resolve="rangeExp" />
                     </node>
@@ -481,8 +482,8 @@
               <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
               <node concept="2OqwBi" id="5B6zmQubHI_" role="37wK5m">
                 <node concept="1PxgMI" id="5B6zmQubHIA" role="2Oq$k0">
-                  <ref role="1PxNhF" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
-                  <node concept="2OqwBi" id="5B6zmQubHIB" role="1PxMeX">
+                  <ref role="1m5ApE" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+                  <node concept="2OqwBi" id="5B6zmQubHIB" role="1m5AlR">
                     <node concept="37vLTw" id="5B6zmQubHIC" role="2Oq$k0">
                       <ref role="3cqZAo" node="5B6zmQubAVE" resolve="rangeExp" />
                     </node>

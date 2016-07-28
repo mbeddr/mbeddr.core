@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -22,7 +22,6 @@
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
       <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
-        <property id="5911785528834333590" name="extensionName" index="20vvCb" />
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
     </language>
@@ -34,7 +33,7 @@
   </registry>
   <node concept="2DaZZR" id="3Hq87cj$2Yi" />
   <node concept="vrV6u" id="58S6eLQM0$n">
-    <property role="20vvCb" value="ToolsSanityCheckerProvider" />
+    <property role="TrG5h" value="ToolsSanityCheckerProvider" />
     <node concept="3uibUv" id="7GloF9XTjPA" role="luc8K">
       <ref role="3uigEE" to="8e9v:7GloF9XTgpa" resolve="ToolsAvailabilityChecker" />
     </node>

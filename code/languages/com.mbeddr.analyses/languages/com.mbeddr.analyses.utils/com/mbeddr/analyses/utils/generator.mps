@@ -4,7 +4,7 @@
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -425,7 +425,7 @@
             <node concept="3clFbF" id="5pNvrIDclgk" role="3cqZAp">
               <node concept="2YIFZM" id="5pNvrIDcli$" role="3clFbG">
                 <ref role="37wK5l" to="q9jj:SWpRmW$KWu" resolve="logError" />
-                <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="Logger" />
+                <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="MbeddrLogger" />
                 <node concept="3VsKOn" id="5pNvrIDcllZ" role="37wK5m">
                   <ref role="3VsUkX" node="55cMrg_8q$w" resolve="GeneratorUtils" />
                 </node>
