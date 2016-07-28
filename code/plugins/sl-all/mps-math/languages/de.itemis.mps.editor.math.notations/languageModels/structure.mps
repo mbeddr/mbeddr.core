@@ -3,7 +3,8 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,10 +15,10 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -29,12 +30,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -47,160 +50,177 @@
   <node concept="1TIwiD" id="9L22EoWnyF">
     <property role="TrG5h" value="SumEditor" />
     <property role="34LRSv" value="math.sum" />
-    <property role="1pbfSe" value="1688043307" />
+    <property role="EcuMT" value="175930839491770539" />
     <ref role="1TJDcQ" node="7UiI8Op1nK9" resolve="AbstractLoopEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnHKj">
     <property role="TrG5h" value="AbsEditor" />
     <property role="34LRSv" value="math.abs" />
-    <property role="1pbfSe" value="477674856" />
+    <property role="EcuMT" value="8658283006837840915" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnJs$">
     <property role="TrG5h" value="CurlyBracketsEditor" />
     <property role="34LRSv" value="math.curly-brackets" />
-    <property role="1pbfSe" value="477667927" />
+    <property role="EcuMT" value="8658283006837847844" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnJxD">
     <property role="TrG5h" value="DivisionEditor" />
     <property role="34LRSv" value="math.division" />
-    <property role="1pbfSe" value="477667602" />
+    <property role="EcuMT" value="8658283006837848169" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFoxlR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lower" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8658283006838052215" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="7wCpClFoxlW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="upper" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8658283006838052220" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wCpClFnJAI">
     <property role="TrG5h" value="IntegralEditor" />
     <property role="34LRSv" value="math.integral" />
-    <property role="1pbfSe" value="477667277" />
+    <property role="EcuMT" value="8658283006837848494" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyi" id="QvUN5N4Szt" role="1TKVEl">
       <property role="TrG5h" value="showParentheses" />
+      <property role="IQ2nx" value="981761841406642397" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="4XhobVTYc24" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5715455775463751812" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4XhobVTYc25" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="upper" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="5715455775463751813" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4XhobVTYc26" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lower" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="5715455775463751814" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4XhobVU9YGg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variable" />
+      <property role="IQ2ns" value="5715455775466842896" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wCpClFnJFN">
     <property role="TrG5h" value="NRootEditor" />
     <property role="34LRSv" value="math.nroot" />
-    <property role="1pbfSe" value="477666952" />
+    <property role="EcuMT" value="8658283006837848819" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFoTNR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="n" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="8658283006838152439" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="7wCpClFoTNW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8658283006838152444" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wCpClFnJKS">
     <property role="TrG5h" value="ParenthesesEditor" />
     <property role="34LRSv" value="math.parentheses" />
-    <property role="1pbfSe" value="477666627" />
+    <property role="EcuMT" value="8658283006837849144" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7wCpClFnJPX">
     <property role="TrG5h" value="PowerEditor" />
     <property role="34LRSv" value="math.superscript" />
-    <property role="1pbfSe" value="477666302" />
+    <property role="EcuMT" value="8658283006837849469" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFt0P1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nomal" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8658283006839229761" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="7wCpClFt0P6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="superscript" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8658283006839229766" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wCpClFnJV2">
     <property role="TrG5h" value="SqrtEditor" />
     <property role="34LRSv" value="math.sqrt" />
-    <property role="1pbfSe" value="477665977" />
+    <property role="EcuMT" value="8658283006837849794" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7wCpClFoU95" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8658283006838153797" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wCpClFnK07">
     <property role="TrG5h" value="SquareBracketsEditor" />
     <property role="34LRSv" value="math.square-brackets" />
-    <property role="1pbfSe" value="477665652" />
+    <property role="EcuMT" value="8658283006837850119" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
   </node>
   <node concept="1TIwiD" id="7UiI8OnHLfb">
     <property role="TrG5h" value="LoopEditor" />
     <property role="34LRSv" value="math.loop" />
-    <property role="1pbfSe" value="1773548456" />
+    <property role="EcuMT" value="9120555111506449355" />
     <ref role="1TJDcQ" node="7UiI8Op1nK9" resolve="AbstractLoopEditor" />
     <node concept="1TJgyi" id="QvUN5N1Ano" role="1TKVEl">
       <property role="TrG5h" value="showParentheses" />
+      <property role="IQ2nx" value="981761841405781464" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="7UiI8OoPc63" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="symbol" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111525171587" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
     <node concept="1TJgyj" id="3p9Oys9ZZbv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="leftParanthesis" />
+      <property role="IQ2ns" value="3911888816461312735" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
     <node concept="1TJgyj" id="3p9Oys9ZZby" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rightParanthesis" />
+      <property role="IQ2ns" value="3911888816461312738" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
     <node concept="1TJgyj" id="7sJd_4s02pi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="showParenthesesQuery" />
+      <property role="IQ2ns" value="8588142736408847954" />
       <ref role="20lvS9" to="x4fh:7sJd_4rZNOZ" resolve="BooleanFunction" />
     </node>
     <node concept="PrWs8" id="7Dyb9U8EvCj" role="PzmwI">
@@ -212,212 +232,241 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="math.abstract-loop" />
-    <property role="1pbfSe" value="1751632746" />
+    <property role="EcuMT" value="9120555111528365065" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7UiI8Op1nPe" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111528365390" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="7UiI8Op1nPf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="upper" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111528365391" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="7UiI8Op1nPg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lower" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111528365392" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7UiI8Oph8GX">
     <property role="TrG5h" value="ProductEditor" />
     <property role="34LRSv" value="math.product" />
-    <property role="1pbfSe" value="1747500086" />
+    <property role="EcuMT" value="9120555111532497725" />
     <ref role="1TJDcQ" node="7UiI8Op1nK9" resolve="AbstractLoopEditor" />
   </node>
   <node concept="1TIwiD" id="7UiI8OpiHxh">
     <property role="TrG5h" value="AbstractBracketsEditor" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1747087138" />
+    <property role="EcuMT" value="9120555111532910673" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="7UiI8OpiHGj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111532911379" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="7UiI8OpiHL1">
     <property role="TrG5h" value="BracketsEditor" />
     <property role="34LRSv" value="math.brackets" />
-    <property role="1pbfSe" value="1747086130" />
+    <property role="EcuMT" value="9120555111532911681" />
     <ref role="1TJDcQ" node="7UiI8OpiHxh" resolve="AbstractBracketsEditor" />
     <node concept="1TJgyj" id="7UiI8OpiN_2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="leftBracket" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111532935490" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
     <node concept="1TJgyj" id="7UiI8OpiN_a" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rightBracket" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9120555111532935498" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
   </node>
   <node concept="1TIwiD" id="2_93Dm8d21u">
     <property role="TrG5h" value="AboveEditor" />
     <property role="34LRSv" value="math.above" />
-    <property role="1pbfSe" value="1317196045" />
+    <property role="EcuMT" value="2974925064252956766" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="73f6OzXtcxF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8128745852730919019" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="73f6OzXtcxH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="symbol" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8128745852730919021" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_oAsj">
     <property role="TrG5h" value="SubscriptEditor" />
     <property role="34LRSv" value="math.subscript" />
-    <property role="1pbfSe" value="740541004" />
+    <property role="EcuMT" value="5098456557379806995" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="4r1mNB_oAvD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="normal" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557379807209" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_oAwf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="subscript" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557379807247" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_qwqE">
     <property role="TrG5h" value="SubscriptedFunctionEditor" />
     <property role="34LRSv" value="math.subscriped-function" />
-    <property role="1pbfSe" value="741040611" />
+    <property role="EcuMT" value="5098456557380306602" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="4r1mNB_qwrb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="functionName" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557380306635" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_qwrL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="subscript" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557380306673" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_qwss" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="argument" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557380306716" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_GBCV">
     <property role="TrG5h" value="CustomSymbolIntegralEditor" />
     <property role="34LRSv" value="math.integral-custom" />
-    <property role="1pbfSe" value="745788788" />
+    <property role="EcuMT" value="5098456557385054779" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyi" id="QvUN5N4qHZ" role="1TKVEl">
       <property role="TrG5h" value="showParentheses" />
+      <property role="IQ2nx" value="981761841406520191" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_GBCW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557385054780" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_GBCX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="upper" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="5098456557385054781" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_GBCY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lower" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="5098456557385054782" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_GBCZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variable" />
+      <property role="IQ2ns" value="5098456557385054783" />
       <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     </node>
     <node concept="1TJgyj" id="4r1mNB_GBG9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="symbol" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5098456557385054985" />
       <ref role="20lvS9" to="x4fh:7UiI8Oo8WZA" resolve="IMathSymbol" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p9OysaCeUt">
     <property role="TrG5h" value="OverreachingBracketsEditor" />
     <property role="34LRSv" value="math.overreachingBrackets" />
-    <property role="1pbfSe" value="1089126596" />
+    <property role="EcuMT" value="3911888816471862941" />
     <ref role="1TJDcQ" node="7UiI8OpiHL1" resolve="BracketsEditor" />
     <node concept="1TJgyi" id="3p9OysaCeVh" role="1TKVEl">
       <property role="TrG5h" value="overreachTop" />
+      <property role="IQ2nx" value="3911888816471862993" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3p9OysaCeWc" role="1TKVEl">
       <property role="TrG5h" value="overreachBottom" />
+      <property role="IQ2nx" value="3911888816471863052" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3p9OysaCeWf" role="1TKVEl">
       <property role="TrG5h" value="insetLeft" />
+      <property role="IQ2nx" value="3911888816471863055" />
       <ref role="AX2Wp" to="tpc2:i2E8K1n" resolve="_FloatOrInteger_String" />
     </node>
     <node concept="1TJgyi" id="3p9OysaCeWj" role="1TKVEl">
       <property role="TrG5h" value="insetRight" />
+      <property role="IQ2nx" value="3911888816471863059" />
       <ref role="AX2Wp" to="tpc2:i2E8K1n" resolve="_FloatOrInteger_String" />
     </node>
     <node concept="1TJgyi" id="2TqkE2kEzyV" role="1TKVEl">
       <property role="TrG5h" value="alignToCenterY" />
+      <property role="IQ2nx" value="3340072923291072699" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p9OysaNeo3">
     <property role="TrG5h" value="OverreachingLoopEditor" />
     <property role="34LRSv" value="math.overreachingLoop" />
-    <property role="1pbfSe" value="1092007978" />
+    <property role="EcuMT" value="3911888816474744323" />
     <ref role="1TJDcQ" node="7UiI8OnHLfb" resolve="LoopEditor" />
     <node concept="1TJgyi" id="3p9OysaNepe" role="1TKVEl">
       <property role="TrG5h" value="overreachTop" />
+      <property role="IQ2nx" value="3911888816474744398" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3p9OysaNepf" role="1TKVEl">
       <property role="TrG5h" value="overreachBottom" />
+      <property role="IQ2nx" value="3911888816474744399" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3p9OysaNepg" role="1TKVEl">
       <property role="TrG5h" value="insetLeft" />
+      <property role="IQ2nx" value="3911888816474744400" />
       <ref role="AX2Wp" to="tpc2:i2E8K1n" resolve="_FloatOrInteger_String" />
     </node>
     <node concept="1TJgyi" id="3p9OysaNeph" role="1TKVEl">
       <property role="TrG5h" value="insetRight" />
+      <property role="IQ2nx" value="3911888816474744401" />
       <ref role="AX2Wp" to="tpc2:i2E8K1n" resolve="_FloatOrInteger_String" />
     </node>
     <node concept="1TJgyi" id="2TqkE2kEFlM" role="1TKVEl">
       <property role="TrG5h" value="alignToCenterY" />
+      <property role="IQ2nx" value="3340072923291104626" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

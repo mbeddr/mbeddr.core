@@ -6,7 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
@@ -397,6 +397,10 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -417,8 +421,6 @@
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -4127,8 +4129,8 @@
                   </node>
                   <node concept="1PxgMI" id="6OOkb_bnaFL" role="33vP2m">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1PxNhF" to="tpck:4uZwTti3_$T" resolve="Attribute" />
-                    <node concept="1eOMI4" id="6OOkb_bn7Ji" role="1PxMeX">
+                    <ref role="1m5ApE" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+                    <node concept="1eOMI4" id="6OOkb_bn7Ji" role="1m5AlR">
                       <node concept="10QFUN" id="6OOkb_bn7Jf" role="1eOMHV">
                         <node concept="3Tqbb2" id="6OOkb_bn7L5" role="10QFUM" />
                         <node concept="2OqwBi" id="6OOkb_bn63O" role="10QFUP">
@@ -4203,8 +4205,8 @@
                                   <ref role="1Pybhc" to="tpcn:6_gUeuqI_Vn" resolve="AttributeDesignTimeOperations" />
                                   <node concept="1PxgMI" id="6eBFmDEBOoK" role="37wK5m">
                                     <property role="1BlNFB" value="true" />
-                                    <ref role="1PxNhF" to="tpck:4uZwTti3_$T" resolve="Attribute" />
-                                    <node concept="2OqwBi" id="6eBFmDEBOoL" role="1PxMeX">
+                                    <ref role="1m5ApE" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+                                    <node concept="2OqwBi" id="6eBFmDEBOoL" role="1m5AlR">
                                       <node concept="37vLTw" id="6eBFmDEBOoM" role="2Oq$k0">
                                         <ref role="3cqZAo" node="6OOkb_bn9vw" resolve="annotation" />
                                       </node>

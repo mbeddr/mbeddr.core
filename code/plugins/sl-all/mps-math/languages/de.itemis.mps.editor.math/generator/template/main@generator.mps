@@ -298,6 +298,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -310,10 +314,7 @@
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -452,8 +453,8 @@
                               <node concept="2OqwBi" id="4XhobVTXiLR" role="2Oq$k0">
                                 <node concept="2OqwBi" id="4XhobVTXhkF" role="2Oq$k0">
                                   <node concept="1PxgMI" id="4XhobVTXhcB" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="x4fh:1lPTJf7_6lc" resolve="CellModel_MathBase" />
-                                    <node concept="2OqwBi" id="4XhobVTXgOl" role="1PxMeX">
+                                    <ref role="1m5ApE" to="x4fh:1lPTJf7_6lc" resolve="CellModel_MathBase" />
+                                    <node concept="2OqwBi" id="4XhobVTXgOl" role="1m5AlR">
                                       <node concept="2OqwBi" id="4XhobVTWSCr" role="2Oq$k0">
                                         <node concept="30H73N" id="4XhobVTWSAO" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="4XhobVTXgAX" role="2OqNvi">
@@ -1834,8 +1835,8 @@
                           <node concept="3clFbF" id="3ml7vNZ0rmd" role="3cqZAp">
                             <node concept="2OqwBi" id="3ml7vNZ0rme" role="3clFbG">
                               <node concept="1PxgMI" id="3ml7vNZ0rmf" role="2Oq$k0">
-                                <ref role="1PxNhF" to="tpc2:heYWUh$" resolve="CellModel_NonEmptyProperty" />
-                                <node concept="30H73N" id="3ml7vNZ0rmg" role="1PxMeX" />
+                                <ref role="1m5ApE" to="tpc2:heYWUh$" resolve="CellModel_NonEmptyProperty" />
+                                <node concept="30H73N" id="3ml7vNZ0rmg" role="1m5AlR" />
                               </node>
                               <node concept="3TrEf2" id="3ml7vNZ0rmh" role="2OqNvi">
                                 <ref role="3Tt5mk" to="tpc2:fBF1KQc" />
