@@ -234,6 +234,10 @@
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393041554" name="fqName" index="BaBD8" />
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
@@ -252,10 +256,7 @@
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -414,8 +415,8 @@
                 <node concept="10Oyi0" id="3VM1o5wbflj" role="1tU5fm" />
                 <node concept="2OqwBi" id="3VM1o5wbflk" role="33vP2m">
                   <node concept="1PxgMI" id="3VM1o5wbfll" role="2Oq$k0">
-                    <ref role="1PxNhF" to="mj1l:7lNBHBNB4oP" resolve="PrimitiveC99IntegralType" />
-                    <node concept="2OqwBi" id="3VM1o5wbflm" role="1PxMeX">
+                    <ref role="1m5ApE" to="mj1l:7lNBHBNB4oP" resolve="PrimitiveC99IntegralType" />
+                    <node concept="2OqwBi" id="3VM1o5wbflm" role="1m5AlR">
                       <node concept="oxGPV" id="3VM1o5wbfln" role="2Oq$k0" />
                       <node concept="3TrEf2" id="3VM1o5wbflo" role="2OqNvi">
                         <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHu" />

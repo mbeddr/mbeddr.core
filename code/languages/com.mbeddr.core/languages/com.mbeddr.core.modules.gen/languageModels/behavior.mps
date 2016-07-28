@@ -177,6 +177,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -186,10 +190,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1070,8 +1071,8 @@
                       <node concept="3clFbF" id="6Dsu9vjKykA" role="3cqZAp">
                         <node concept="2OqwBi" id="6Dsu9vjKykB" role="3clFbG">
                           <node concept="1PxgMI" id="6Dsu9vjKykC" role="2Oq$k0">
-                            <ref role="1PxNhF" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
-                            <node concept="3cpWs2" id="6Dsu9vjKykD" role="1PxMeX">
+                            <ref role="1m5ApE" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
+                            <node concept="3cpWs2" id="6Dsu9vjKykD" role="1m5AlR">
                               <ref role="3cqZAo" node="6Dsu9vjKykF" resolve="it" />
                             </node>
                           </node>
@@ -1155,8 +1156,8 @@
                       <node concept="3clFbF" id="3ihY0Kieee4" role="3cqZAp">
                         <node concept="2OqwBi" id="3ihY0Kieee5" role="3clFbG">
                           <node concept="1PxgMI" id="3ihY0Kieee6" role="2Oq$k0">
-                            <ref role="1PxNhF" to="d0vh:7RiewQ_laN_" resolve="GenExtModuleImport" />
-                            <node concept="3cpWs2" id="3ihY0Kieee7" role="1PxMeX">
+                            <ref role="1m5ApE" to="d0vh:7RiewQ_laN_" resolve="GenExtModuleImport" />
+                            <node concept="3cpWs2" id="3ihY0Kieee7" role="1m5AlR">
                               <ref role="3cqZAo" node="3ihY0Kieee9" resolve="it" />
                             </node>
                           </node>
@@ -1326,8 +1327,8 @@
                       <node concept="3clFbF" id="28AJuTuFOEf" role="3cqZAp">
                         <node concept="2OqwBi" id="28AJuTuFOEg" role="3clFbG">
                           <node concept="1PxgMI" id="28AJuTuFOEh" role="2Oq$k0">
-                            <ref role="1PxNhF" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
-                            <node concept="3cpWs2" id="28AJuTuFOEi" role="1PxMeX">
+                            <ref role="1m5ApE" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
+                            <node concept="3cpWs2" id="28AJuTuFOEi" role="1m5AlR">
                               <ref role="3cqZAo" node="28AJuTuFOEk" resolve="it" />
                             </node>
                           </node>
@@ -1788,8 +1789,8 @@
                     <node concept="3clFbS" id="6Dsu9vjKE7x" role="1bW5cS">
                       <node concept="3clFbF" id="6Dsu9vjKE7y" role="3cqZAp">
                         <node concept="1PxgMI" id="6Dsu9vjKE7z" role="3clFbG">
-                          <ref role="1PxNhF" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
-                          <node concept="3cpWs2" id="6Dsu9vjKE7$" role="1PxMeX">
+                          <ref role="1m5ApE" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
+                          <node concept="3cpWs2" id="6Dsu9vjKE7$" role="1m5AlR">
                             <ref role="3cqZAo" node="6Dsu9vjKE7_" resolve="it" />
                           </node>
                         </node>
@@ -1869,8 +1870,8 @@
                       <node concept="3clFbF" id="3ihY0KieeAN" role="3cqZAp">
                         <node concept="2OqwBi" id="3ihY0KieeAO" role="3clFbG">
                           <node concept="1PxgMI" id="3ihY0KieeAP" role="2Oq$k0">
-                            <ref role="1PxNhF" to="d0vh:7RiewQ_laN_" resolve="GenExtModuleImport" />
-                            <node concept="3cpWs2" id="3ihY0KieeAQ" role="1PxMeX">
+                            <ref role="1m5ApE" to="d0vh:7RiewQ_laN_" resolve="GenExtModuleImport" />
+                            <node concept="3cpWs2" id="3ihY0KieeAQ" role="1m5AlR">
                               <ref role="3cqZAo" node="3ihY0KieeAS" resolve="it" />
                             </node>
                           </node>
@@ -2407,8 +2408,8 @@
                     <node concept="3clFbS" id="6Dsu9vjKMcr" role="1bW5cS">
                       <node concept="3clFbF" id="6Dsu9vjKMcs" role="3cqZAp">
                         <node concept="1PxgMI" id="6Dsu9vjKMct" role="3clFbG">
-                          <ref role="1PxNhF" to="d0vh:7RiewQ_laN_" resolve="GenExtModuleImport" />
-                          <node concept="3cpWs2" id="6Dsu9vjKMcu" role="1PxMeX">
+                          <ref role="1m5ApE" to="d0vh:7RiewQ_laN_" resolve="GenExtModuleImport" />
+                          <node concept="3cpWs2" id="6Dsu9vjKMcu" role="1m5AlR">
                             <ref role="3cqZAo" node="6Dsu9vjKMcv" resolve="it" />
                           </node>
                         </node>
@@ -2533,8 +2534,8 @@
                     <node concept="3clFbS" id="6Dsu9vjKMcZ" role="1bW5cS">
                       <node concept="3clFbF" id="6Dsu9vjKMd0" role="3cqZAp">
                         <node concept="1PxgMI" id="6Dsu9vjKMd1" role="3clFbG">
-                          <ref role="1PxNhF" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
-                          <node concept="3cpWs2" id="6Dsu9vjKMd2" role="1PxMeX">
+                          <ref role="1m5ApE" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
+                          <node concept="3cpWs2" id="6Dsu9vjKMd2" role="1m5AlR">
                             <ref role="3cqZAo" node="6Dsu9vjKMd3" resolve="it" />
                           </node>
                         </node>

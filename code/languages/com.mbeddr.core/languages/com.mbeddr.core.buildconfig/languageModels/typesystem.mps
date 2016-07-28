@@ -244,6 +244,10 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -269,10 +273,7 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -399,8 +400,8 @@
                           <ref role="37wK5l" to="qd6m:5DwX9xlFNJe" resolve="flattenedContents" />
                         </node>
                         <node concept="1PxgMI" id="1BZ0lgDLvtg" role="2Oq$k0">
-                          <ref role="1PxNhF" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
-                          <node concept="3cpWsa" id="1BZ0lgDLvtf" role="1PxMeX">
+                          <ref role="1m5ApE" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                          <node concept="3cpWsa" id="1BZ0lgDLvtf" role="1m5AlR">
                             <ref role="3cqZAo" node="1BZ0lgDLvsM" resolve="module" />
                           </node>
                         </node>
@@ -412,8 +413,8 @@
                               <node concept="1Wc70l" id="1BZ0lgDLvtD" role="3clFbG">
                                 <node concept="2OqwBi" id="1BZ0lgDLvtJ" role="3uHU7w">
                                   <node concept="1PxgMI" id="1BZ0lgDLvtH" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="x27k:2MbfxrZI9YU" resolve="IMayActAsMainFunction" />
-                                    <node concept="3cpWs2" id="1BZ0lgDLvtG" role="1PxMeX">
+                                    <ref role="1m5ApE" to="x27k:2MbfxrZI9YU" resolve="IMayActAsMainFunction" />
+                                    <node concept="3cpWs2" id="1BZ0lgDLvtG" role="1m5AlR">
                                       <ref role="3cqZAo" node="1BZ0lgDLvtu" resolve="it" />
                                     </node>
                                   </node>
@@ -1059,8 +1060,8 @@
         <node concept="2OqwBi" id="otWcsA_iA_" role="3clFbw">
           <node concept="2OqwBi" id="otWcsA_iAs" role="2Oq$k0">
             <node concept="1PxgMI" id="otWcsA_iAn" role="2Oq$k0">
-              <ref role="1PxNhF" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-              <node concept="2OqwBi" id="otWcsA_iAd" role="1PxMeX">
+              <ref role="1m5ApE" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+              <node concept="2OqwBi" id="otWcsA_iAd" role="1m5AlR">
                 <node concept="1YBJjd" id="otWcsA_iAa" role="2Oq$k0">
                   <ref role="1YBMHb" node="otWcsA_i_X" resolve="nothingPlatform" />
                 </node>

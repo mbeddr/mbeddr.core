@@ -181,6 +181,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -210,10 +214,7 @@
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -477,8 +478,8 @@
               <ref role="ehGHo" to="51wr:4o9sgv8QoKi" resolve="Executable" />
             </node>
             <node concept="1PxgMI" id="7i$VjwrXbun" role="33vP2m">
-              <ref role="1PxNhF" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-              <node concept="2OqwBi" id="7i$VjwrXbuo" role="1PxMeX">
+              <ref role="1m5ApE" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+              <node concept="2OqwBi" id="7i$VjwrXbuo" role="1m5AlR">
                 <node concept="2OqwBi" id="7i$VjwrXbup" role="2Oq$k0">
                   <node concept="37vLTw" id="7i$VjwrXbuq" role="2Oq$k0">
                     <ref role="3cqZAo" node="7i$VjwrWHAG" resolve="bc" />
@@ -584,8 +585,8 @@
                       </node>
                       <node concept="2OqwBi" id="7i$VjwrIWKs" role="3uHU7B">
                         <node concept="1PxgMI" id="7i$VjwrIW8t" role="2Oq$k0">
-                          <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                          <node concept="2GrUjf" id="7i$VjwrIUrj" role="1PxMeX">
+                          <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                          <node concept="2GrUjf" id="7i$VjwrIUrj" role="1m5AlR">
                             <ref role="2Gs0qQ" node="7i$VjwrIIdU" resolve="r" />
                           </node>
                         </node>
@@ -596,8 +597,8 @@
                     </node>
                     <node concept="2OqwBi" id="7i$VjwrIS5f" role="37vLTJ">
                       <node concept="1PxgMI" id="7i$VjwrIRFq" role="2Oq$k0">
-                        <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                        <node concept="37vLTw" id="7i$VjwrITw3" role="1PxMeX">
+                        <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                        <node concept="37vLTw" id="7i$VjwrITw3" role="1m5AlR">
                           <ref role="3cqZAo" node="7i$VjwrIP0f" resolve="copy" />
                         </node>
                       </node>
@@ -636,8 +637,8 @@
                           <node concept="1sh8R2" id="7i$VjwrX$d1" role="1sne05">
                             <ref role="1sh8R3" to="51wr:6GqYvBOf2Xc" />
                             <node concept="1PxgMI" id="7i$VjwrXAcB" role="1sh8R0">
-                              <ref role="1PxNhF" to="x27k:5_l8w1EmTcX" resolve="Module" />
-                              <node concept="37vLTw" id="7i$VjwrX$OW" role="1PxMeX">
+                              <ref role="1m5ApE" to="x27k:5_l8w1EmTcX" resolve="Module" />
+                              <node concept="37vLTw" id="7i$VjwrX$OW" role="1m5AlR">
                                 <ref role="3cqZAo" node="7i$VjwrIP0f" resolve="copy" />
                               </node>
                             </node>

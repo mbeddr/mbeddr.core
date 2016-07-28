@@ -6,7 +6,7 @@
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -132,7 +132,6 @@
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
       <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
-        <property id="5911785528834333590" name="extensionName" index="20vvCb" />
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
       <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
@@ -305,7 +304,7 @@
       </node>
       <node concept="15KeVb" id="2obGnlRnCAI" role="15LFui">
         <property role="3HPxAp" value="AFTER" />
-        <ref role="15KeV8" to="sjfu:bq6A3e6cTK" resolve="collectPathes" />
+        <ref role="15KeV8" to="sjfu:bq6A3e6cTK" resolve="collectPaths" />
       </node>
       <node concept="15KeVb" id="2obGnlRg4re" role="15LFui">
         <property role="3HPxAp" value="AFTER" />
@@ -670,7 +669,7 @@
     </node>
   </node>
   <node concept="vrV6u" id="7$0wAVocpKa">
-    <property role="20vvCb" value="PlatformTemplateProvider" />
+    <property role="TrG5h" value="PlatformTemplateProvider" />
     <node concept="3uibUv" id="7$0wAVocrDb" role="luc8K">
       <ref role="3uigEE" node="7$0wAVocpKZ" resolve="AbstractPlatformTemplateProvider" />
     </node>

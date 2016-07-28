@@ -2,7 +2,8 @@
 <model ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -15,16 +16,22 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
+        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -35,17 +42,19 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -62,22 +71,25 @@
   <node concept="1TIwiD" id="5yYXyc4Z0CJ">
     <property role="TrG5h" value="StructDeclaration" />
     <property role="3GE5qa" value="su.struct" />
-    <property role="MwhBj" value="${module}/icons/struct.png" />
     <property role="34LRSv" value="struct" />
     <property role="R4oN_" value="a struct declaration" />
-    <property role="1pbfSe" value="1572536402" />
+    <property role="EcuMT" value="6394819151180597807" />
     <ref role="1TJDcQ" node="2CEi94edfgd" resolve="ModuleContentSUDeclaration" />
+    <node concept="1QGGSu" id="1N5Tah$AQyy" role="rwd14">
+      <property role="1QGGTI" value="${module}/icons/struct.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5yYXyc4Z0CS">
     <property role="TrG5h" value="StructType" />
     <property role="3GE5qa" value="su.struct" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1572536411" />
+    <property role="EcuMT" value="6394819151180597816" />
     <ref role="1TJDcQ" node="3bHYGwzt_Ut" resolve="SUType" />
     <node concept="1TJgyj" id="5yYXyc4Z0CT" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="struct" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6394819151180597817" />
       <ref role="20lvS9" node="5yYXyc4Z0CJ" resolve="StructDeclaration" />
     </node>
     <node concept="PrWs8" id="5HxjapwgqUc" role="PzmwI">
@@ -90,10 +102,9 @@
   <node concept="1TIwiD" id="5jyom5fO9Ch">
     <property role="TrG5h" value="TypeDef" />
     <property role="3GE5qa" value="typedef" />
-    <property role="MwhBj" value="${module}/icons/typedef.png" />
     <property role="R4oN_" value="define new types from existing ones" />
     <property role="34LRSv" value="typedef" />
-    <property role="1pbfSe" value="1531774094" />
+    <property role="EcuMT" value="6116558314501347857" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5jyom5fO9Ci" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -114,19 +125,24 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="original" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6116558314501347862" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="1QGGSu" id="1N5Tah$AQyz" role="rwd14">
+      <property role="1QGGTI" value="${module}/icons/typedef.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Cn">
     <property role="TrG5h" value="TypeDefType" />
     <property role="3GE5qa" value="typedef" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1531774088" />
+    <property role="EcuMT" value="6116558314501347863" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="5jyom5fO9Co" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="typeDef" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6116558314501347864" />
       <ref role="20lvS9" node="5jyom5fO9Ch" resolve="TypeDef" />
     </node>
     <node concept="PrWs8" id="6A4xWqfSdIw" role="PzmwI">
@@ -136,15 +152,15 @@
   <node concept="1TIwiD" id="7D99css6O0r">
     <property role="TrG5h" value="EnumDeclaration" />
     <property role="3GE5qa" value="enum" />
-    <property role="MwhBj" value="${module}/icons/enum.png" />
     <property role="34LRSv" value="enum" />
     <property role="R4oN_" value="an enum declaration" />
-    <property role="1pbfSe" value="1771805470" />
+    <property role="EcuMT" value="8811614583515725851" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7D99css6O0x" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="literals" />
       <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="8811614583515725857" />
       <ref role="20lvS9" node="7D99css6O0t" resolve="EnumLiteral" />
     </node>
     <node concept="PrWs8" id="6o2p2Z1oXAr" role="PzmwI">
@@ -162,16 +178,20 @@
     <node concept="PrWs8" id="3o2OLGv6WYM" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
+    <node concept="1QGGSu" id="1N5Tah$AQyx" role="rwd14">
+      <property role="1QGGTI" value="${module}/icons/enum.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7D99css6O0t">
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumLiteral" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1771805468" />
+    <property role="EcuMT" value="8811614583515725853" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7D99css6O0w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="init" />
+      <property role="IQ2ns" value="8811614583515725856" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="7D99css6O0u" role="PzmwI">
@@ -185,12 +205,13 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumType" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1771805428" />
+    <property role="EcuMT" value="8811614583515725893" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="7D99css6O16" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="enum" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8811614583515725894" />
       <ref role="20lvS9" node="7D99css6O0r" resolve="EnumDeclaration" />
     </node>
     <node concept="PrWs8" id="35NyAcPAoM" role="PzmwI">
@@ -207,12 +228,13 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="EnumLiteralRef" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1771805314" />
+    <property role="EcuMT" value="8811614583515726007" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7D99css6O2S" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="literal" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8811614583515726008" />
       <ref role="20lvS9" node="7D99css6O0t" resolve="EnumLiteral" />
     </node>
   </node>
@@ -221,19 +243,20 @@
     <property role="TrG5h" value="Enum2Int" />
     <property role="R4oN_" value="cast a enum to an int" />
     <property role="34LRSv" value="enum2int" />
-    <property role="1pbfSe" value="722549764" />
+    <property role="EcuMT" value="5947739078127951575" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5aaBiRoxDVo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5947739078127951576" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLg$o">
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="Member" />
-    <property role="1pbfSe" value="1852276876" />
+    <property role="EcuMT" value="5882395403881875736" />
     <ref role="1TJDcQ" node="7TdHRrCvnnh" resolve="SUContent" />
     <node concept="PrWs8" id="56ytRgsLg$r" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
@@ -260,17 +283,19 @@
   <node concept="1TIwiD" id="56ytRgsLodU">
     <property role="TrG5h" value="UnionDeclaration" />
     <property role="3GE5qa" value="su.union" />
-    <property role="MwhBj" value="${module}/icons/struct.png" />
     <property role="34LRSv" value="union" />
     <property role="R4oN_" value="a union declaration" />
-    <property role="1pbfSe" value="1852308206" />
+    <property role="EcuMT" value="5882395403881907066" />
     <ref role="1TJDcQ" node="2CEi94edfgd" resolve="ModuleContentSUDeclaration" />
+    <node concept="1QGGSu" id="1N5Tah$AQy$" role="rwd14">
+      <property role="1QGGTI" value="${module}/icons/struct.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLog5">
     <property role="TrG5h" value="UnionType" />
     <property role="3GE5qa" value="su.union" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1852308345" />
+    <property role="EcuMT" value="5882395403881907205" />
     <ref role="1TJDcQ" node="3bHYGwzt_Ut" resolve="SUType" />
     <node concept="PrWs8" id="F16UoWyfdF" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7FkLcyyQKy$" resolve="IInitAwareType" />
@@ -279,6 +304,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="union" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5882395403881907207" />
       <ref role="20lvS9" node="56ytRgsLodU" resolve="UnionDeclaration" />
     </node>
   </node>
@@ -286,10 +312,11 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="UnsignedBitType" />
     <property role="34LRSv" value="ubit" />
-    <property role="1pbfSe" value="1105903630" />
+    <property role="EcuMT" value="6183845377104662871" />
     <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
     <node concept="1TJgyi" id="5nhrDHCgX5o" role="1TKVEl">
       <property role="TrG5h" value="width_old" />
+      <property role="IQ2nx" value="6183845377104662872" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
       <node concept="asaX9" id="2H3YrqdmX0J" role="lGtFl">
         <property role="YLQ7P" value="property was moved up" />
@@ -303,7 +330,7 @@
     <property role="TrG5h" value="SUDeclaration" />
     <property role="3GE5qa" value="su" />
     <property role="R5$K7" value="true" />
-    <property role="1pbfSe" value="1300452238" />
+    <property role="EcuMT" value="7099329415459817973" />
     <ref role="1TJDcQ" node="7TdHRrCvnnh" resolve="SUContent" />
     <node concept="PrWs8" id="6a5SBPfXGBS" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
@@ -321,6 +348,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="7099329415459888018" />
       <ref role="20lvS9" node="7TdHRrCvnnh" resolve="SUContent" />
     </node>
   </node>
@@ -328,7 +356,7 @@
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="SUType" />
     <property role="R5$K7" value="true" />
-    <property role="1pbfSe" value="1449417061" />
+    <property role="EcuMT" value="3669865008872185501" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="PrWs8" id="3bHYGwzt_Uv" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
@@ -344,7 +372,7 @@
     <property role="TrG5h" value="OpaqueTypeDecl" />
     <property role="3GE5qa" value="opaque" />
     <property role="34LRSv" value="opaque type" />
-    <property role="1pbfSe" value="1439586362" />
+    <property role="EcuMT" value="841971064023554" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ZsiEbEC3" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -356,19 +384,20 @@
   <node concept="1TIwiD" id="2ZsiEbECc">
     <property role="TrG5h" value="OpaqueType" />
     <property role="3GE5qa" value="opaque" />
-    <property role="1pbfSe" value="1439586352" />
+    <property role="EcuMT" value="841971064023564" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="2ZsiEbECf" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="decl" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="841971064023567" />
       <ref role="20lvS9" node="2ZsiEbEC2" resolve="OpaqueTypeDecl" />
     </node>
   </node>
   <node concept="PlHQZ" id="IPRL99KNBH">
     <property role="3GE5qa" value="with" />
     <property role="TrG5h" value="ICanReferToValueStructure" />
-    <property role="1pbfSe" value="1433999615" />
+    <property role="EcuMT" value="843825774841772525" />
     <node concept="PrWs8" id="IPRL99KNBI" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -376,12 +405,12 @@
   <node concept="PlHQZ" id="IPRL99KNBJ">
     <property role="3GE5qa" value="with" />
     <property role="TrG5h" value="IValueStructure" />
-    <property role="1pbfSe" value="1433999617" />
+    <property role="EcuMT" value="843825774841772527" />
   </node>
   <node concept="PlHQZ" id="IPRL99KNBK">
     <property role="3GE5qa" value="with" />
     <property role="TrG5h" value="IValuedElement" />
-    <property role="1pbfSe" value="1433999618" />
+    <property role="EcuMT" value="843825774841772528" />
     <node concept="PrWs8" id="IPRL99Lfbn" role="PrDN$">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
@@ -392,7 +421,7 @@
   <node concept="1TIwiD" id="66uzewbzhz$">
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="GenericMemberRef" />
-    <property role="1pbfSe" value="1831577036" />
+    <property role="EcuMT" value="7034214596253391076" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="66uzewc0OmX" role="PzmwI">
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
@@ -401,6 +430,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7034214596253391078" />
       <ref role="20lvS9" node="56ytRgsLg$o" resolve="Member" />
     </node>
   </node>
@@ -408,23 +438,25 @@
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="PragmaSUContent" />
     <property role="34LRSv" value="#pragma" />
-    <property role="1pbfSe" value="1723549086" />
+    <property role="EcuMT" value="9101132143319158312" />
     <ref role="1TJDcQ" node="7TdHRrCvnnh" resolve="SUContent" />
     <node concept="1TJgyi" id="7TdHRrCrym8" role="1TKVEl">
       <property role="TrG5h" value="text" />
+      <property role="IQ2nx" value="9101132143319197064" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="7TdHRrCvnnh">
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="SUContent" />
-    <property role="1pbfSe" value="1724591431" />
+    <property role="EcuMT" value="9101132143320200657" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5awSL8g4CUS" role="PzmwI">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
     <node concept="1TJgyi" id="6QawkaIMrjd" role="1TKVEl">
       <property role="TrG5h" value="transparent" />
+      <property role="IQ2nx" value="7893263420320494797" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -433,37 +465,42 @@
     <property role="TrG5h" value="Int2Enum" />
     <property role="34LRSv" value="int2enum" />
     <property role="R4oN_" value="cast an int to an enum" />
-    <property role="1pbfSe" value="1043961255" />
+    <property role="EcuMT" value="1430983428344023681" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="1frRXyHUCOf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targetType" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1430983428344024335" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="1frRXyHUCFC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1430983428344023784" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="3qdsM6yQbcF">
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="ArbitraryMemberRef" />
-    <property role="1pbfSe" value="647616948" />
+    <property role="EcuMT" value="3930924638067536683" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2GzcfKRG0oO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dummyType" />
+      <property role="IQ2ns" value="3108382027639948852" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="1TJgyi" id="2GzcfKRG0oH" role="1TKVEl">
       <property role="TrG5h" value="requiredStdHeader" />
+      <property role="IQ2nx" value="3108382027639948845" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="3qdsM6yQbf8" role="1TKVEl">
       <property role="TrG5h" value="membername" />
+      <property role="IQ2nx" value="3930924638067536840" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="3qdsM6yQbf1" role="PzmwI">
@@ -475,18 +512,20 @@
   </node>
   <node concept="1TIwiD" id="3DiW6qrFL9V">
     <property role="TrG5h" value="MemberInitExpression" />
-    <property role="1pbfSe" value="704511263" />
+    <property role="EcuMT" value="4202685725779366523" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="3DiW6qrFRdx" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="element" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4202685725779391329" />
       <ref role="20lvS9" node="IPRL99KNBK" resolve="IValuedElement" />
     </node>
     <node concept="1TJgyj" id="3DiW6qrFQZA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4202685725779390438" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="5aZFu$857pK" role="PzmwI">
@@ -501,7 +540,7 @@
     <property role="TrG5h" value="AnonymousStructDeclaration" />
     <property role="34LRSv" value="astruct" />
     <property role="R4oN_" value="anonymous struct declaration" />
-    <property role="1pbfSe" value="963949425" />
+    <property role="EcuMT" value="8685795338482689976" />
     <ref role="1TJDcQ" node="6a5SBPfXGBP" resolve="SUDeclaration" />
   </node>
   <node concept="1TIwiD" id="7ya9dte0lCz">
@@ -509,7 +548,7 @@
     <property role="TrG5h" value="AnonymousUnionDeclaration" />
     <property role="34LRSv" value="aunion" />
     <property role="R4oN_" value="anonymous union declaration" />
-    <property role="1pbfSe" value="963936518" />
+    <property role="EcuMT" value="8685795338482702883" />
     <ref role="1TJDcQ" node="6a5SBPfXGBP" resolve="SUDeclaration" />
   </node>
   <node concept="1TIwiD" id="2CEi94edfgd">
@@ -517,7 +556,7 @@
     <property role="TrG5h" value="ModuleContentSUDeclaration" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="945765534" />
+    <property role="EcuMT" value="3038320686460630029" />
     <ref role="1TJDcQ" node="6a5SBPfXGBP" resolve="SUDeclaration" />
     <node concept="PrWs8" id="7ya9dte0dzf" role="PzmwI">
       <ref role="PrY4T" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
@@ -534,7 +573,7 @@
     <property role="TrG5h" value="AbstractBitType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1200525417" />
+    <property role="EcuMT" value="3117609929518446049" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="2H3YrqdbnGL" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
@@ -544,6 +583,7 @@
     </node>
     <node concept="1TJgyi" id="2H3Yrqdcu$P" role="1TKVEl">
       <property role="TrG5h" value="width" />
+      <property role="IQ2nx" value="3117609929518737717" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
@@ -551,7 +591,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="SignedBitType" />
     <property role="34LRSv" value="bit" />
-    <property role="1pbfSe" value="1922243599" />
+    <property role="EcuMT" value="3539348727140765989" />
     <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
     <node concept="PrWs8" id="34uiID1zvlm" role="PzmwI">
       <ref role="PrY4T" to="mj1l:24lM_j3AaK6" resolve="ISigned" />

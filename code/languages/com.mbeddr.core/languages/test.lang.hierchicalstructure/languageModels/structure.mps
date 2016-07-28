@@ -2,7 +2,8 @@
 <model ref="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,25 +11,32 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
+        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -42,12 +50,13 @@
     <property role="TrG5h" value="TestHierarchicalStructureRoot" />
     <property role="34LRSv" value="root" />
     <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="1595054433" />
+    <property role="EcuMT" value="1609581366353528038" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1pmorAa_L9a" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="hierarchicalChildren" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1609581366353531466" />
       <ref role="20lvS9" node="1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
     </node>
     <node concept="PrWs8" id="1pmorAa_Kkq" role="PzmwI">
@@ -60,24 +69,27 @@
   <node concept="1TIwiD" id="1pmorAa_Kl2">
     <property role="TrG5h" value="TestHierarchicalStructureWithIcon" />
     <property role="34LRSv" value="with icon" />
-    <property role="MwhBj" value="${module}/icons/externalmodule.png" />
-    <property role="1pbfSe" value="1595054341" />
+    <property role="EcuMT" value="1609581366353528130" />
     <ref role="1TJDcQ" node="1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
+    <node concept="1QGGSu" id="1N5Tah$AQzB" role="rwd14">
+      <property role="1QGGTI" value="${module}/icons/externalmodule.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1pmorAa_L6k">
     <property role="TrG5h" value="TestHierarchicalStructureWithoutIcon" />
     <property role="34LRSv" value="without icon" />
-    <property role="1pbfSe" value="1595051187" />
+    <property role="EcuMT" value="1609581366353531284" />
     <ref role="1TJDcQ" node="1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
   </node>
   <node concept="1TIwiD" id="1pmorAa_L6X">
     <property role="TrG5h" value="TestHierarchicalStructureHidden" />
-    <property role="1pbfSe" value="1595051146" />
+    <property role="EcuMT" value="1609581366353531325" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1pmorAa_LbJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="hierarchicalChildren" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1609581366353531631" />
       <ref role="20lvS9" node="1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
     </node>
     <node concept="PrWs8" id="1pmorAa_LaO" role="PzmwI">
@@ -91,7 +103,7 @@
     <property role="TrG5h" value="TestHierarchicalStructureRootWithoutIcons" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="root without icons" />
-    <property role="1pbfSe" value="1595026762" />
+    <property role="EcuMT" value="1609581366353555709" />
     <ref role="1TJDcQ" node="1pmorAa_KjA" resolve="TestHierarchicalStructureRoot" />
   </node>
 </model>

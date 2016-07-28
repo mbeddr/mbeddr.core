@@ -444,6 +444,10 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -469,10 +473,7 @@
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -3475,8 +3476,8 @@
                         <node concept="2OqwBi" id="1M41OHt_SP0" role="3uHU7w">
                           <node concept="2OqwBi" id="1M41OHt_IMF" role="2Oq$k0">
                             <node concept="1PxgMI" id="1M41OHt_Hrw" role="2Oq$k0">
-                              <ref role="1PxNhF" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
-                              <node concept="2OqwBi" id="1M41OHt_CRF" role="1PxMeX">
+                              <ref role="1m5ApE" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                              <node concept="2OqwBi" id="1M41OHt_CRF" role="1m5AlR">
                                 <node concept="2r2w_c" id="1M41OHt_CIN" role="2Oq$k0" />
                                 <node concept="1mfA1w" id="1M41OHt_ESR" role="2OqNvi" />
                               </node>
