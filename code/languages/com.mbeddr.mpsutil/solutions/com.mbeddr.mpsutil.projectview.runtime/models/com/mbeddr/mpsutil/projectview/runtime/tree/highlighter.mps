@@ -2673,21 +2673,6 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6B7erwvED6N" role="3clF47">
-        <node concept="3clFbJ" id="6B7erwvED6O" role="3cqZAp">
-          <node concept="3fqX7Q" id="6B7erwvED6P" role="3clFbw">
-            <node concept="2YIFZM" id="6B7erwvEIul" role="3fr31v">
-              <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
-              <ref role="37wK5l" to="rvbb:~ProjectPane.isShowGenStatus():boolean" resolve="isShowGenStatus" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6B7erwvED6T" role="3clFbx">
-            <node concept="3cpWs6" id="6B7erwvED6R" role="3cqZAp">
-              <node concept="3clFbT" id="6B7erwvED6S" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="6B7erwvED6U" role="3cqZAp">
           <node concept="2YIFZM" id="6B7erwvEIG3" role="3clFbw">
             <ref role="1Pybhc" to="vqh0:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
@@ -6574,17 +6559,6 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6B7erwvEDua" role="3clF47">
-        <node concept="3clFbJ" id="6B7erwvEDub" role="3cqZAp">
-          <node concept="3fqX7Q" id="6B7erwvEDuc" role="3clFbw">
-            <node concept="2YIFZM" id="6B7erwvEJGW" role="3fr31v">
-              <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
-              <ref role="37wK5l" to="rvbb:~ProjectPane.isShowGenStatus():boolean" resolve="isShowGenStatus" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6B7erwvEDuf" role="3clFbx">
-            <node concept="3cpWs6" id="6B7erwvEDue" role="3cqZAp" />
-          </node>
-        </node>
         <node concept="3clFbF" id="6B7erwvEDug" role="3cqZAp">
           <node concept="1rXfSq" id="6B7erwvEDuh" role="3clFbG">
             <ref role="37wK5l" node="6B7erwvEDum" resolve="dispatchForHierarchy" />
