@@ -267,6 +267,10 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -291,10 +295,7 @@
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1438,8 +1439,8 @@
                               <node concept="2OqwBi" id="4rTrx84I4P8" role="3clFbG">
                                 <node concept="2OqwBi" id="4rTrx84I4in" role="2Oq$k0">
                                   <node concept="1PxgMI" id="4rTrx84I47V" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="tpc2:h7ZlJ1A" resolve="QueryFunction_Color" />
-                                    <node concept="2OqwBi" id="4rTrx84I3l7" role="1PxMeX">
+                                    <ref role="1m5ApE" to="tpc2:h7ZlJ1A" resolve="QueryFunction_Color" />
+                                    <node concept="2OqwBi" id="4rTrx84I3l7" role="1m5AlR">
                                       <node concept="30H73N" id="4rTrx84I3hr" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="4rTrx84I3tR" role="2OqNvi">
                                         <ref role="3Tt5mk" to="tpc2:hgVblYF" />

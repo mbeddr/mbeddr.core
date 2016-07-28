@@ -11,7 +11,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="tbr6" ref="92d2ea16-5a42-4fdf-a676-c7604efe3504/r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext/de.slisson.mps.richtext.behavior)" />
+    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="9sn8" ref="92f195b6-a209-4804-ad65-f5248ecd5873/r:ece05a4b-bba3-4970-b9bc-333cbbe0ab43(com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.editor)" />
     <import index="u01t" ref="c788b046-2019-4656-8b60-8bb9bbb177b5/r:02034875-87ad-4b47-a381-b8cb34e24d38(com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.behavior)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />

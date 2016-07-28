@@ -2,7 +2,8 @@
 <model ref="r:ac910013-4472-4dc2-a9a9-59a46aac5d5b(com.mbeddr.mpsutil.iconchar.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,6 +11,12 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
+        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
@@ -26,14 +33,15 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
     </language>
@@ -48,27 +56,31 @@
   </registry>
   <node concept="1TIwiD" id="7GaZbxRVe7Q">
     <property role="TrG5h" value="IconChar" />
-    <property role="MwhBj" value="sadf" />
-    <property role="1pbfSe" value="218636626" />
+    <property role="EcuMT" value="8866176685648437750" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDm" resolve="PropertyAttribute" />
     <node concept="1TJgyi" id="7GaZbxRWjpd" role="1TKVEl">
       <property role="TrG5h" value="char" />
+      <property role="IQ2nx" value="8866176685648721485" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="7GaZbxRWjpg" role="1TKVEl">
       <property role="TrG5h" value="backgroundColor" />
+      <property role="IQ2nx" value="8866176685648721488" />
       <ref role="AX2Wp" node="7GaZbxRWsMP" resolve="rgbaColor" />
     </node>
     <node concept="1TJgyi" id="7GaZbxRWjpl" role="1TKVEl">
       <property role="TrG5h" value="textColor" />
+      <property role="IQ2nx" value="8866176685648721493" />
       <ref role="AX2Wp" node="7GaZbxRWsMP" resolve="rgbaColor" />
     </node>
     <node concept="1TJgyi" id="7GaZbxRWjps" role="1TKVEl">
       <property role="TrG5h" value="borderColor" />
+      <property role="IQ2nx" value="8866176685648721500" />
       <ref role="AX2Wp" node="7GaZbxRWsMP" resolve="rgbaColor" />
     </node>
     <node concept="1TJgyi" id="608oBgpSN05" role="1TKVEl">
       <property role="TrG5h" value="antialias" />
+      <property role="IQ2nx" value="6919889078244814853" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="M6xJ_" id="7GaZbxRXSjy" role="lGtFl">
@@ -79,6 +91,9 @@
       <node concept="trNpa" id="7GaZbxRXXq9" role="EQaZv">
         <ref role="trN6q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
       </node>
+    </node>
+    <node concept="1QGGSu" id="6LCinStDt6d" role="rwd14">
+      <property role="1QGGTI" value="${mps_home}/bin/sadf" />
     </node>
   </node>
   <node concept="Az7Fb" id="7GaZbxRWsMP">

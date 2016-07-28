@@ -2,7 +2,8 @@
 <model ref="r:ea8e2f7a-cc5b-4bf7-a282-46a98c41b7b5(com.mbeddr.mpsutil.extensionclass.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,7 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -29,6 +30,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -45,18 +47,20 @@
   <node concept="1TIwiD" id="4X7wieq8jk5">
     <property role="TrG5h" value="ExtensionClass" />
     <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="379013592" />
+    <property role="EcuMT" value="5712676642252469509" />
     <ref role="1TJDcQ" to="uigu:6XkcKt_cJmj" resolve="SimpleExtensionMethodsContainer" />
     <node concept="1TJgyj" id="4X7wiequnHl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="annotations" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="5712676642258254677" />
       <ref role="20lvS9" node="4X7wieqsg3v" resolve="ExtensionClassMethodAnnotation" />
     </node>
     <node concept="1TJgyj" id="4X7wieq8jk6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="class" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5712676642252469510" />
       <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
     <node concept="PrWs8" id="4X7wieqWjif" role="PzmwI">
@@ -65,7 +69,7 @@
   </node>
   <node concept="1TIwiD" id="4X7wieq8Uik">
     <property role="TrG5h" value="ExtensionClassMethodCall" />
-    <property role="1pbfSe" value="378853961" />
+    <property role="EcuMT" value="5712676642252629140" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1m3OroNnQsi" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
@@ -77,35 +81,39 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="method" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5712676642255239573" />
       <ref role="20lvS9" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
       <ref role="20ksaX" to="tpee:fz7wK6H" />
     </node>
   </node>
   <node concept="1TIwiD" id="4X7wieqsg3v">
     <property role="TrG5h" value="ExtensionClassMethodAnnotation" />
-    <property role="1pbfSe" value="373784062" />
+    <property role="EcuMT" value="5712676642257699039" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4X7wieqsgeg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="5712676642257699728" />
       <ref role="20lvS9" node="4X7wieqsg8d" resolve="ExtensionClassMethodParameterAnnotation" />
     </node>
     <node concept="1TJgyj" id="4X7wieqsg3V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="method" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5712676642257699067" />
       <ref role="20lvS9" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="4X7wieqsg8d">
     <property role="TrG5h" value="ExtensionClassMethodParameterAnnotation" />
-    <property role="1pbfSe" value="373783760" />
+    <property role="EcuMT" value="5712676642257699341" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4X7wieqsgaV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="parameter" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="5712676642257699515" />
       <ref role="20lvS9" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
       <node concept="asaX9" id="Pu8Vy2bLRF" role="lGtFl" />
     </node>

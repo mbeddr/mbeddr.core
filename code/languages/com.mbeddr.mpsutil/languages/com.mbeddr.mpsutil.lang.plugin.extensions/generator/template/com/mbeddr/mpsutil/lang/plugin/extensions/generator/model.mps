@@ -77,14 +77,15 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -139,14 +140,14 @@
               <node concept="1rXfSq" id="2BR5zyhSwPu" role="3cqZAk">
                 <ref role="37wK5l" node="2BR5zyhSo6J" resolve="isEqualStringLiterals" />
                 <node concept="1PxgMI" id="2BR5zyhSwTq" role="37wK5m">
-                  <ref role="1PxNhF" to="tpee:f$Xl_Og" resolve="StringLiteral" />
-                  <node concept="37vLTw" id="2BR5zyhSwQA" role="1PxMeX">
+                  <ref role="1m5ApE" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+                  <node concept="37vLTw" id="2BR5zyhSwQA" role="1m5AlR">
                     <ref role="3cqZAo" node="2BR5zyhSnGP" resolve="expr1" />
                   </node>
                 </node>
                 <node concept="1PxgMI" id="2BR5zyhSx0X" role="37wK5m">
-                  <ref role="1PxNhF" to="tpee:f$Xl_Og" resolve="StringLiteral" />
-                  <node concept="37vLTw" id="2BR5zyhSwXB" role="1PxMeX">
+                  <ref role="1m5ApE" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+                  <node concept="37vLTw" id="2BR5zyhSwXB" role="1m5AlR">
                     <ref role="3cqZAo" node="2BR5zyhSnHa" resolve="expr2" />
                   </node>
                 </node>
@@ -183,14 +184,14 @@
               <node concept="1rXfSq" id="2BR5zyhSxw9" role="3cqZAk">
                 <ref role="37wK5l" node="2BR5zyhSoBd" resolve="isEqualStaticFieldReferences" />
                 <node concept="1PxgMI" id="2BR5zyhSxwa" role="37wK5m">
-                  <ref role="1PxNhF" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
-                  <node concept="37vLTw" id="2BR5zyhSxwb" role="1PxMeX">
+                  <ref role="1m5ApE" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
+                  <node concept="37vLTw" id="2BR5zyhSxwb" role="1m5AlR">
                     <ref role="3cqZAo" node="2BR5zyhSnGP" resolve="expr1" />
                   </node>
                 </node>
                 <node concept="1PxgMI" id="2BR5zyhSxwc" role="37wK5m">
-                  <ref role="1PxNhF" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
-                  <node concept="37vLTw" id="2BR5zyhSxwd" role="1PxMeX">
+                  <ref role="1m5ApE" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
+                  <node concept="37vLTw" id="2BR5zyhSxwd" role="1m5AlR">
                     <ref role="3cqZAo" node="2BR5zyhSnHa" resolve="expr2" />
                   </node>
                 </node>
@@ -227,14 +228,14 @@
               <node concept="1rXfSq" id="2BR5zyhSxQ7" role="3cqZAk">
                 <ref role="37wK5l" node="2BR5zyhSue4" resolve="isEqualInternalStaticFieldReferences" />
                 <node concept="1PxgMI" id="2BR5zyhSxQ8" role="37wK5m">
-                  <ref role="1PxNhF" to="tp68:h5n$iV1" resolve="InternalStaticFieldReference" />
-                  <node concept="37vLTw" id="2BR5zyhSxQ9" role="1PxMeX">
+                  <ref role="1m5ApE" to="tp68:h5n$iV1" resolve="InternalStaticFieldReference" />
+                  <node concept="37vLTw" id="2BR5zyhSxQ9" role="1m5AlR">
                     <ref role="3cqZAo" node="2BR5zyhSnGP" resolve="expr1" />
                   </node>
                 </node>
                 <node concept="1PxgMI" id="2BR5zyhSxQa" role="37wK5m">
-                  <ref role="1PxNhF" to="tp68:h5n$iV1" resolve="InternalStaticFieldReference" />
-                  <node concept="37vLTw" id="2BR5zyhSxQb" role="1PxMeX">
+                  <ref role="1m5ApE" to="tp68:h5n$iV1" resolve="InternalStaticFieldReference" />
+                  <node concept="37vLTw" id="2BR5zyhSxQb" role="1m5AlR">
                     <ref role="3cqZAo" node="2BR5zyhSnHa" resolve="expr2" />
                   </node>
                 </node>

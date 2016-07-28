@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="ivdl" ref="r:c3729148-5a72-48d9-b266-3d72f32826ba(doc.com.mbeddr.mpsutil.multilingual.lang.structure)" implicit="true" />
-    <import index="phyx" ref="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" implicit="true" />
+    <import index="phyx" ref="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d/r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

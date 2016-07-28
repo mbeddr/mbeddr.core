@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="tpc5" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.editor)" />
+    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="unwc" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:724443d4-b85d-4829-9ddf-5c5d9b1583dc(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.structure)" implicit="true" />
   </imports>
   <registry>

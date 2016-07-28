@@ -192,11 +192,12 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1749,8 +1750,8 @@
               <node concept="3cpWs3" id="1q8GU$U7fks" role="3uHU7B">
                 <node concept="2OqwBi" id="1q8GU$U7eG1" role="3uHU7B">
                   <node concept="1PxgMI" id="1q8GU$U7e_Y" role="2Oq$k0">
-                    <ref role="1PxNhF" to="tpc2:hgV5ht3" resolve="StyleSheet" />
-                    <node concept="2OqwBi" id="1q8GU$U7dCs" role="1PxMeX">
+                    <ref role="1m5ApE" to="tpc2:hgV5ht3" resolve="StyleSheet" />
+                    <node concept="2OqwBi" id="1q8GU$U7dCs" role="1m5AlR">
                       <node concept="37vLTw" id="1q8GU$U7dz$" role="2Oq$k0">
                         <ref role="3cqZAo" node="7G3D8btjUx" resolve="style" />
                       </node>

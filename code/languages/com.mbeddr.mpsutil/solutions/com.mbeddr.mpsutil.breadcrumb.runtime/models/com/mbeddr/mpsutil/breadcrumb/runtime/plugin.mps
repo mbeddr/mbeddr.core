@@ -12,7 +12,7 @@
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
   </languages>
@@ -358,6 +358,10 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -372,10 +376,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1755,8 +1756,8 @@
         <node concept="3clFbS" id="4CeXgFlpQNv" role="3clF47">
           <node concept="3clFbF" id="4o4$mVU2bEs" role="3cqZAp">
             <node concept="1PxgMI" id="4o4$mVU2bR5" role="3clFbG">
-              <ref role="1PxNhF" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
-              <node concept="1rXfSq" id="4o4$mVU2bEq" role="1PxMeX">
+              <ref role="1m5ApE" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
+              <node concept="1rXfSq" id="4o4$mVU2bEq" role="1m5AlR">
                 <ref role="37wK5l" node="4o4$mVU1vlY" resolve="getNode" />
               </node>
             </node>
@@ -7979,8 +7980,8 @@
         <node concept="3clFbS" id="4o4$mVTFFrt" role="3clF47">
           <node concept="3clFbF" id="4o4$mVU2nsA" role="3cqZAp">
             <node concept="1PxgMI" id="4o4$mVU2nul" role="3clFbG">
-              <ref role="1PxNhF" to="570t:4o4$mVTwnFM" resolve="ISectionIndex" />
-              <node concept="1rXfSq" id="4o4$mVU2ns$" role="1PxMeX">
+              <ref role="1m5ApE" to="570t:4o4$mVTwnFM" resolve="ISectionIndex" />
+              <node concept="1rXfSq" id="4o4$mVU2ns$" role="1m5AlR">
                 <ref role="37wK5l" node="4o4$mVU1vlY" resolve="getNode" />
               </node>
             </node>
@@ -11679,8 +11680,8 @@
                       <node concept="1pGfFk" id="3JErwPFAtEg" role="2ShVmc">
                         <ref role="37wK5l" node="4o4$mVTFEMy" resolve="SectionIndexPanel.SectionIndex" />
                         <node concept="1PxgMI" id="3JErwPFAtGY" role="37wK5m">
-                          <ref role="1PxNhF" to="570t:4o4$mVTwnFM" resolve="ISectionIndex" />
-                          <node concept="37vLTw" id="3JErwPFAtEW" role="1PxMeX">
+                          <ref role="1m5ApE" to="570t:4o4$mVTwnFM" resolve="ISectionIndex" />
+                          <node concept="37vLTw" id="3JErwPFAtEW" role="1m5AlR">
                             <ref role="3cqZAo" node="3JErwPF_S0x" resolve="selectedNode" />
                           </node>
                         </node>
