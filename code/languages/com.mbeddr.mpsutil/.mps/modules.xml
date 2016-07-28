@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/tests/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang/test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang.mpl" folder="postprocessGeneratedFiles" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="actionsfilter" />
@@ -206,6 +205,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.propertydefault/test.ts.propertydefault.mpl" folder="stable.propertydefault" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.propertydefaulttest/test.ts.propertydefaulttest.msd" folder="stable.propertydefault" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.richstring/test.ts.richstring.msd" folder="rest.richstring" />
+      <modulePath path="$PROJECT_DIR$/../../../../mbeddr.core.master/code/tests/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang/test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang.mpl" folder="postprocessGeneratedFiles" />
     </projectModules>
   </component>
 </project>
