@@ -86,11 +86,6 @@
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
       <concept id="1238852151516" name="jetbrains.mps.baseLanguage.tuples.structure.IndexedTupleType" flags="in" index="1LlUBW">
         <child id="1238852204892" name="componentType" index="1Lm7xW" />
@@ -588,7 +583,6 @@
         <child id="3104811047188238838" name="isApplicableBreakpoint" index="2xiT34" />
         <child id="3157158168562219320" name="createBreakpoint" index="2F3Weo" />
         <child id="5789575999242884576" name="conceptsToCreateBreakpoint" index="MDQ5i" />
-        <child id="8751745335399632085" name="isApplicable" index="3KmjVm" />
       </concept>
       <concept id="3157158168562219322" name="jetbrains.mps.debugger.api.lang.structure.ConceptFunction_CreateBreakpoint" flags="in" index="2F3Weq" />
       <concept id="3157158168562217892" name="jetbrains.mps.debugger.api.lang.structure.BreakpointCreator" flags="ng" index="2F3W$4">
@@ -603,7 +597,6 @@
         <child id="2569394751387978493" name="projectExpression" index="3B$Twk" />
         <child id="2569394751387978492" name="nodeExpression" index="3B$Twl" />
       </concept>
-      <concept id="8751745335399632073" name="jetbrains.mps.debugger.api.lang.structure.ConceptFunction_IsApplicableToConcept" flags="ng" index="3KmjVa" />
       <concept id="8751745335399632077" name="jetbrains.mps.debugger.api.lang.structure.ConceptFunctionParameter_Concept" flags="nn" index="3KmjVe" />
       <concept id="1104094430779068753" name="jetbrains.mps.debugger.api.lang.structure.DebuggerReference" flags="nn" index="3Qg5_p">
         <property id="1104094430779068757" name="debuggerName" index="3Qg5_t" />
@@ -1857,11 +1850,7 @@
       <node concept="MDQ5G" id="1ptFCtLqsp9" role="MDQ5i">
         <ref role="MDQ5H" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
       </node>
-      <node concept="3KmjVa" id="4iuDOPePGWG" role="3KmjVm">
-        <property role="00000" value="BAAAARR" />
-      </node>
       <node concept="2xiWDm" id="1N5Tah$C4u$" role="2xiT34">
-        <property role="00000" value="WOORRLLDD" />
         <node concept="3clFbS" id="4iuDOPePGWH" role="2VODD2">
           <node concept="3cpWs8" id="VC7RuZUIBe" role="3cqZAp">
             <node concept="3cpWsn" id="VC7RuZUIBf" role="3cpWs9">
