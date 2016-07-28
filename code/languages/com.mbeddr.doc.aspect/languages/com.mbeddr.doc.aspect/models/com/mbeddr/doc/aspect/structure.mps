@@ -2,7 +2,8 @@
 <model ref="r:85fc9553-7d9a-4019-83cc-9f8169da83fb(com.mbeddr.doc.aspect.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,8 +26,8 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -40,6 +41,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -54,12 +56,13 @@
   </registry>
   <node concept="1TIwiD" id="UK_oBp_UIu">
     <property role="TrG5h" value="DocumentedConceptAnnotation" />
-    <property role="1pbfSe" value="397917913" />
+    <property role="EcuMT" value="1058510331725720478" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="UK_oBpA4EG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1058510331725761196" />
       <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
     </node>
     <node concept="M6xJ_" id="UK_oBp_UIv" role="lGtFl">
@@ -75,12 +78,13 @@
   <node concept="1TIwiD" id="2UZ9O9PWChM">
     <property role="TrG5h" value="SampleInstanceWord" />
     <property role="34LRSv" value="\sample" />
-    <property role="1pbfSe" value="1531860044" />
+    <property role="EcuMT" value="3368454212696573042" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvhAy" resolve="DocumentWord" />
     <node concept="1TJgyj" id="2UZ9O9PWChP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sampleInstance" />
       <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="3368454212696573045" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
     <node concept="PrWs8" id="2UZ9O9PWChN" role="PzmwI">
@@ -88,8 +92,8 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1o6EjwiSKvw">
-    <property role="1pbfSe" value="686403864" />
     <property role="TrG5h" value="DocumentedPropertyAnnotation" />
+    <property role="EcuMT" value="1587141976994809824" />
     <ref role="1TJDcQ" node="UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
     <node concept="M6xJ_" id="1o6EjwiSKv$" role="lGtFl">
       <property role="Hh88m" value="documentedProperty" />
@@ -101,12 +105,13 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="property" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1587141976994809836" />
       <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="6L$vAtzZO13">
-    <property role="1pbfSe" value="798769494" />
     <property role="TrG5h" value="DocumentedPropertyItemAnnotation" />
+    <property role="EcuMT" value="7810506636291686467" />
     <ref role="1TJDcQ" node="1o6EjwiSKvw" resolve="DocumentedPropertyAnnotation" />
     <node concept="M6xJ_" id="6L$vAtzZO14" role="lGtFl">
       <property role="Hh88m" value="documentedProperty" />
