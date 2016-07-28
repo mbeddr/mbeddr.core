@@ -71,6 +71,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -80,10 +84,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -138,8 +139,8 @@
                   </node>
                   <node concept="TSZUe" id="4r1mNB_dckf" role="2OqNvi">
                     <node concept="1PxgMI" id="4r1mNB_dcSQ" role="25WWJ7">
-                      <ref role="1PxNhF" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
-                      <node concept="2rP1CM" id="4r1mNB_dc$z" role="1PxMeX" />
+                      <ref role="1m5ApE" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
+                      <node concept="2rP1CM" id="4r1mNB_dc$z" role="1m5AlR" />
                     </node>
                   </node>
                 </node>
@@ -194,8 +195,8 @@
                       <node concept="3clFbS" id="4r1mNB_e4SZ" role="1bW5cS">
                         <node concept="3clFbF" id="4r1mNB_e8KL" role="3cqZAp">
                           <node concept="1PxgMI" id="4r1mNB_ebOY" role="3clFbG">
-                            <ref role="1PxNhF" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
-                            <node concept="37vLTw" id="4r1mNB_e8KK" role="1PxMeX">
+                            <ref role="1m5ApE" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
+                            <node concept="37vLTw" id="4r1mNB_e8KK" role="1m5AlR">
                               <ref role="3cqZAo" node="4r1mNB_e4T0" resolve="it" />
                             </node>
                           </node>

@@ -2,7 +2,8 @@
 <model ref="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -13,9 +14,9 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -29,6 +30,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -42,18 +44,20 @@
     <property role="TrG5h" value="DirectRunnableCall" />
     <property role="R4oN_" value="direct runnable call" />
     <property role="34LRSv" value="$" />
-    <property role="1pbfSe" value="2036522567" />
+    <property role="EcuMT" value="8230733038424928674" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="5iVHc7E9WKm" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="runnable" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6105672464781003798" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
     <node concept="1TJgyj" id="78Ts1skoV6_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actuals" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="8230733038424928677" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2W4z3PKVluu" role="PzmwI">
@@ -70,12 +74,13 @@
     <property role="TrG5h" value="DirectFieldAccess" />
     <property role="34LRSv" value="§" />
     <property role="R4oN_" value="direct field access" />
-    <property role="1pbfSe" value="978432190" />
+    <property role="EcuMT" value="572633089222371456" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="vMpGaXIZ7Z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="field" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="572633089222373887" />
       <ref role="20lvS9" to="v7ag:4AGl5dzwHVj" resolve="Field" />
     </node>
     <node concept="PrWs8" id="vMpGaXIZ7M" role="PzmwI">

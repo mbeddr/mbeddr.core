@@ -185,14 +185,16 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -565,8 +567,8 @@
             <node concept="2OqwBi" id="7sJd_4s752N" role="3uHU7B">
               <node concept="1PxgMI" id="7sJd_4s752O" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <ref role="1PxNhF" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
-                <node concept="2OqwBi" id="7sJd_4s752P" role="1PxMeX">
+                <ref role="1m5ApE" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
+                <node concept="2OqwBi" id="7sJd_4s752P" role="1m5AlR">
                   <node concept="37vLTw" id="7sJd_4s752Q" role="2Oq$k0">
                     <ref role="3cqZAo" node="7sJd_4s5vOf" resolve="node" />
                   </node>
@@ -602,8 +604,8 @@
             <node concept="2OqwBi" id="7sJd_4s73Ia" role="3uHU7B">
               <node concept="1PxgMI" id="7sJd_4s73zM" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <ref role="1PxNhF" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
-                <node concept="2OqwBi" id="7sJd_4s73cM" role="1PxMeX">
+                <ref role="1m5ApE" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
+                <node concept="2OqwBi" id="7sJd_4s73cM" role="1m5AlR">
                   <node concept="37vLTw" id="7sJd_4s73bu" role="2Oq$k0">
                     <ref role="3cqZAo" node="7sJd_4s5vOf" resolve="node" />
                   </node>
@@ -637,8 +639,8 @@
             <node concept="2OqwBi" id="7sJd_4s6ZNO" role="3uHU7B">
               <node concept="1PxgMI" id="7sJd_4s6ZCJ" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <ref role="1PxNhF" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
-                <node concept="2OqwBi" id="7sJd_4s6ZoD" role="1PxMeX">
+                <ref role="1m5ApE" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
+                <node concept="2OqwBi" id="7sJd_4s6ZoD" role="1m5AlR">
                   <node concept="37vLTw" id="7sJd_4s6Znl" role="2Oq$k0">
                     <ref role="3cqZAo" node="7sJd_4s5vOf" resolve="node" />
                   </node>
@@ -672,8 +674,8 @@
             <node concept="2OqwBi" id="7sJd_4s77fW" role="3uHU7B">
               <node concept="1PxgMI" id="7sJd_4s776d" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <ref role="1PxNhF" to="cetu:4r1mNB_q7_Q" resolve="LogarithmExpression" />
-                <node concept="2OqwBi" id="7sJd_4s76JO" role="1PxMeX">
+                <ref role="1m5ApE" to="cetu:4r1mNB_q7_Q" resolve="LogarithmExpression" />
+                <node concept="2OqwBi" id="7sJd_4s76JO" role="1m5AlR">
                   <node concept="37vLTw" id="7sJd_4s76Iy" role="2Oq$k0">
                     <ref role="3cqZAo" node="7sJd_4s5vOf" resolve="node" />
                   </node>
@@ -701,8 +703,8 @@
             <node concept="2OqwBi" id="7sJd_4s7rUt" role="3uHU7B">
               <node concept="1PxgMI" id="7sJd_4s7rUu" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <ref role="1PxNhF" to="cetu:4r1mNB_o5UP" resolve="PowerExpression" />
-                <node concept="2OqwBi" id="7sJd_4s7rUv" role="1PxMeX">
+                <ref role="1m5ApE" to="cetu:4r1mNB_o5UP" resolve="PowerExpression" />
+                <node concept="2OqwBi" id="7sJd_4s7rUv" role="1m5AlR">
                   <node concept="37vLTw" id="7sJd_4s7rUw" role="2Oq$k0">
                     <ref role="3cqZAo" node="7sJd_4s5vOf" resolve="node" />
                   </node>
