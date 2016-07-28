@@ -40,6 +40,7 @@
       </concept>
       <concept id="95073643532950038" name="jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerRunnerCreator" flags="nn" index="2v6lVJ">
         <reference id="95073643532950039" name="analyzer" index="2v6lVI" />
+        <child id="3364696741418270074" name="mode" index="J_V2A" />
         <child id="3993089038374473158" name="parameters" index="3fIO2k" />
         <child id="178770917832625312" name="nodeToCheck" index="3vVDej" />
       </concept>
@@ -2468,6 +2469,7 @@
               <node concept="37vLTw" id="1uoAWUP64cw" role="3vVDej">
                 <ref role="3cqZAo" node="1uoAWUP63Gj" resolve="node" />
               </node>
+              <node concept="2JLR6D" id="2zhiL3fIQW2" role="J_V2A" />
             </node>
           </node>
         </node>
@@ -2502,7 +2504,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7PgKJZviTp2" role="3cqZAp" />
-        <node concept="3clFbH" id="7Tdqwvh_hZ1" role="3cqZAp" />
         <node concept="3SKdUt" id="7t5t4TsykIh" role="3cqZAp">
           <node concept="3SKdUq" id="7t5t4Tsyl7J" role="3SKWNk">
             <property role="3SKdUp" value="Uninitialized read analysis" />
@@ -2528,6 +2529,7 @@
               <node concept="37vLTw" id="1uoAWUP64oC" role="3vVDej">
                 <ref role="3cqZAo" node="1uoAWUP63Gj" resolve="node" />
               </node>
+              <node concept="2JLR6D" id="2zhiL3fIRlc" role="J_V2A" />
             </node>
           </node>
         </node>
@@ -2567,7 +2569,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1uoAWUP63GD" role="3cqZAp" />
         <node concept="3clFbH" id="77XFAqb5e2n" role="3cqZAp" />
         <node concept="3cpWs6" id="1uoAWUP64tu" role="3cqZAp">
           <node concept="1Ls8ON" id="1uoAWUP6gHX" role="3cqZAk">

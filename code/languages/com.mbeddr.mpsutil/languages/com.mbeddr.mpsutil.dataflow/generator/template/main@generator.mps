@@ -14,10 +14,8 @@
     <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework()" />
     <import index="tp3t" ref="r:00000000-0000-4000-0000-011c89590345(jetbrains.mps.lang.pattern.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" />
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
-    <import index="mu20" ref="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel()" />
     <import index="ty9a" ref="r:a906d1cd-0886-4e6d-bb7e-484119b7a54f(jetbrains.mps.lang.dataFlow.analyzers.generator.template.main@generator)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -99,7 +97,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -137,6 +134,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
@@ -707,12 +705,20 @@
                       <node concept="2OqwBi" id="4fUrRtGGsWQ" role="33vP2m">
                         <node concept="2ShNRf" id="4fUrRtGGsWR" role="2Oq$k0">
                           <node concept="1pGfFk" id="4fUrRtGGsWS" role="2ShVmc">
-                            <ref role="37wK5l" to="avjr:1EPwOZKjpjg" resolve="InterProceduralDataFlowGraphBuilder" />
+                            <ref role="37wK5l" to="avjr:2zhiL3fNrJr" resolve="InterProceduralDataFlowGraphBuilder" />
                             <node concept="37vLTw" id="4fUrRtGGsWT" role="37wK5m">
                               <ref role="3cqZAo" node="5caPF5jNgJt" resolve="parent" />
                             </node>
                             <node concept="37vLTw" id="4fUrRtGGsWU" role="37wK5m">
                               <ref role="3cqZAo" node="1xH3giefGCb" resolve="nestedProgramInstruction" />
+                            </node>
+                            <node concept="2OqwBi" id="2zhiL3fNJiD" role="37wK5m">
+                              <node concept="37vLTw" id="2zhiL3fNJfv" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5caPF5jNrUy" resolve="builder" />
+                              </node>
+                              <node concept="liA8E" id="2zhiL3fNQ7L" role="2OqNvi">
+                                <ref role="37wK5l" to="avjr:2zhiL3fNMUs" resolve="getProgramBuilderContext" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1124,13 +1130,7 @@
       <node concept="1Koe21" id="4fUrRtGGw2t" role="1lVwrX">
         <node concept="312cEu" id="4ipeeu8X0PR" role="1Koe22">
           <property role="TrG5h" value="Rule" />
-          <node concept="2tJIrI" id="5kvRM06QnBE" role="jymVt" />
           <node concept="3Tm1VV" id="4ipeeu8X0RQ" role="1B3o_S" />
-          <node concept="3clFbW" id="4ipeeu8X0RR" role="jymVt">
-            <node concept="3cqZAl" id="4ipeeu8X0RS" role="3clF45" />
-            <node concept="3Tm1VV" id="4ipeeu8X0RT" role="1B3o_S" />
-            <node concept="3clFbS" id="4ipeeu8X0RU" role="3clF47" />
-          </node>
           <node concept="2tJIrI" id="5kvRM06Qnj8" role="jymVt" />
           <node concept="3clFb_" id="4ipeeu8X0PS" role="jymVt">
             <property role="TrG5h" value="performActions" />
@@ -2105,6 +2105,27 @@
     <node concept="3aamgX" id="2nbqtJGjxxd" role="3acgRq">
       <ref role="30HIoZ" to="6qry:2nbqtJGjoq6" resolve="WithInterProceduralSupport" />
       <node concept="b5Tf3" id="2nbqtJGjxxB" role="1lVwrX" />
+    </node>
+  </node>
+  <node concept="jVnub" id="2zhiL3fGJG3">
+    <property role="3GE5qa" value="template" />
+    <property role="TrG5h" value="switch_CreateInterProceduralProgramFactory" />
+    <ref role="phYkn" to="ty9a:7yFOv7ag9ze" resolve="switch_CreateProgramFactory" />
+    <node concept="3aamgX" id="2zhiL3fGJG6" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="6qry:7TdqwvhyxII" resolve="InterProcedural_BuilderMode" />
+      <node concept="gft3U" id="2zhiL3fGJGZ" role="1lVwrX">
+        <node concept="2ShNRf" id="2zhiL3fGN6N" role="gfFT$">
+          <node concept="1pGfFk" id="2zhiL3fHoT$" role="2ShVmc">
+            <ref role="37wK5l" to="avjr:2zhiL3fGXND" resolve="InterProceduralProgramFactory" />
+            <node concept="10Nm6u" id="7yFOv7agfGg" role="37wK5m">
+              <node concept="5jKBG" id="7yFOv7agfGR" role="lGtFl">
+                <ref role="v9R2y" to="ty9a:7yFOv7ageOS" resolve="template_CollectModes" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
