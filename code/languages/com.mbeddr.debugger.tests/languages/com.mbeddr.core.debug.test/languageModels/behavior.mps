@@ -200,6 +200,10 @@
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -223,10 +227,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -338,8 +339,8 @@
                         </node>
                         <node concept="TSZUe" id="3M3l$fnBvnq" role="2OqNvi">
                           <node concept="1PxgMI" id="3M3l$fnBvnr" role="25WWJ7">
-                            <ref role="1PxNhF" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
-                            <node concept="2GrUjf" id="3M3l$fnBvns" role="1PxMeX">
+                            <ref role="1m5ApE" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
+                            <node concept="2GrUjf" id="3M3l$fnBvns" role="1m5AlR">
                               <ref role="2Gs0qQ" node="5S3xvtc8Mg" resolve="content" />
                             </node>
                           </node>
@@ -361,8 +362,8 @@
                     <node concept="3fqX7Q" id="3M3l$fnBvn3" role="3uHU7w">
                       <node concept="2OqwBi" id="3M3l$fnBvn4" role="3fr31v">
                         <node concept="1PxgMI" id="3M3l$fnBvn5" role="2Oq$k0">
-                          <ref role="1PxNhF" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
-                          <node concept="2GrUjf" id="3M3l$fnBvn6" role="1PxMeX">
+                          <ref role="1m5ApE" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
+                          <node concept="2GrUjf" id="3M3l$fnBvn6" role="1m5AlR">
                             <ref role="2Gs0qQ" node="5S3xvtc8Mg" resolve="content" />
                           </node>
                         </node>
@@ -381,8 +382,8 @@
                           </node>
                           <node concept="TSZUe" id="5S3xvtc8Mt" role="2OqNvi">
                             <node concept="1PxgMI" id="5S3xvtepUT" role="25WWJ7">
-                              <ref role="1PxNhF" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
-                              <node concept="2GrUjf" id="5S3xvtc8MW" role="1PxMeX">
+                              <ref role="1m5ApE" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
+                              <node concept="2GrUjf" id="5S3xvtc8MW" role="1m5AlR">
                                 <ref role="2Gs0qQ" node="5S3xvtc8Mg" resolve="content" />
                               </node>
                             </node>
