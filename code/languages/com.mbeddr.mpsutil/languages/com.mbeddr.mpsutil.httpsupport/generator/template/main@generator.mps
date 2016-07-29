@@ -266,7 +266,7 @@
                     <node concept="2OqwBi" id="2VC4eVY78zv" role="2Oq$k0">
                       <node concept="30H73N" id="2VC4eVY78vg" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2VC4eVY790z" role="2OqNvi">
-                        <ref role="3Tt5mk" to="s4al:2VC4eVY78gf" />
+                        <ref role="3Tt5mk" to="s4al:2VC4eVY78gf" resolve="requestHandler" />
                       </node>
                     </node>
                     <node concept="3TrcHB" id="2VC4eVY79Js" role="2OqNvi">
@@ -411,15 +411,15 @@
                       <node concept="2OqwBi" id="7rr3ESJDikp" role="2Oq$k0">
                         <node concept="30H73N" id="7rr3ESJDikt" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7rr3ESJDiDb" role="2OqNvi">
-                          <ref role="3Tt5mk" to="s4al:4PqLM5kY3nG" />
+                          <ref role="3Tt5mk" to="s4al:4PqLM5kY3nG" resolve="canHandleFunction" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7rr3ESJDjMa" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                        <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="7rr3ESJDkLi" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                      <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                     </node>
                   </node>
                 </node>
@@ -464,15 +464,15 @@
                       <node concept="2OqwBi" id="7rr3ESJDl3Z" role="2Oq$k0">
                         <node concept="30H73N" id="7rr3ESJDl40" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7rr3ESJDltW" role="2OqNvi">
-                          <ref role="3Tt5mk" to="s4al:4PqLM5kY3nJ" />
+                          <ref role="3Tt5mk" to="s4al:4PqLM5kY3nJ" resolve="handleFunction" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7rr3ESJDl42" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                        <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="7rr3ESJDl43" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                      <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                     </node>
                   </node>
                 </node>
@@ -536,7 +536,9 @@
         <ref role="1QQUv3" node="6XfQs9tKcEC" resolve="get" />
       </node>
     </node>
-    <node concept="n94m4" id="4JqtTEfdz7R" role="lGtFl" />
+    <node concept="n94m4" id="4JqtTEfdz7R" role="lGtFl">
+      <ref role="n9lRv" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="17Uvod" id="4JqtTEfdzq8" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
       <property role="2qtEX9" value="name" />

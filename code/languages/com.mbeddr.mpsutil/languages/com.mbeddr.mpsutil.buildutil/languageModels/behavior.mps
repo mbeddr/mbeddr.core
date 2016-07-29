@@ -276,7 +276,7 @@
                   <node concept="1Y3b0j" id="5IpIYYku1tG" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="1Y3XeK" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
-                    <ref role="37wK5l" to="o8zo:7ipADkTevUg" resolve="SimpleRoleScope" />
+                    <ref role="37wK5l" to="o8zo:5TYh2YDX_D_" resolve="SimpleRoleScope" />
                     <node concept="3Tm1VV" id="5IpIYYku1tH" role="1B3o_S" />
                     <node concept="3clFb_" id="5IpIYYku1tI" role="jymVt">
                       <property role="1EzhhJ" value="false" />
@@ -343,7 +343,7 @@
                     </node>
                     <node concept="28GBK8" id="5IpIYYku1tT" role="37wK5m">
                       <ref role="28GBKb" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                      <ref role="28H3Ia" to="3ior:4RPz6WoY4Cy" />
+                      <ref role="28H3Ia" to="3ior:4RPz6WoY4Cy" resolve="macros" />
                     </node>
                   </node>
                 </node>
@@ -358,7 +358,7 @@
               <node concept="liA8E" id="5IpIYYkuxKd" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="prKvN" id="5IpIYYksn7j" role="37wK5m">
-                  <ref role="prhl7" to="fnbo:5IpIYYknIp1" />
+                  <ref role="prhl7" to="fnbo:5IpIYYknIp1" resolve="path" />
                   <ref role="prhl4" to="fnbo:5IpIYYkniKo" resolve="BuildConsistencyAnnotation" />
                 </node>
               </node>
@@ -417,7 +417,7 @@
                       <node concept="2OqwBi" id="5IpIYYkN1Ky" role="2Oq$k0">
                         <node concept="13iPFW" id="5IpIYYkN1Kz" role="2Oq$k0" />
                         <node concept="3TrEf2" id="5IpIYYkN1K$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="fnbo:5IpIYYkMPHr" />
+                          <ref role="3Tt5mk" to="fnbo:5IpIYYkMPHr" resolve="buildPath" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="5IpIYYkN1K_" role="2OqNvi">

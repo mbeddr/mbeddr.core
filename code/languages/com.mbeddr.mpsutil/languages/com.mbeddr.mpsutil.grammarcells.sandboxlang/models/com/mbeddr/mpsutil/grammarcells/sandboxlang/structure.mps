@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -430,14 +430,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="numerator" />
       <property role="IQ2ns" value="5020734785399285652" />
-      <ref role="20ksaX" node="4qdNcH$3y96" />
+      <ref role="20ksaX" node="4qdNcH$3y96" resolve="left" />
       <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
     </node>
     <node concept="1TJgyj" id="4mHeUYNaYuo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="denominator" />
       <property role="IQ2ns" value="5020734785399285656" />
-      <ref role="20ksaX" node="4qdNcH$3y99" />
+      <ref role="20ksaX" node="4qdNcH$3y99" resolve="right" />
       <ref role="20lvS9" node="6oKG1kMxn8A" resolve="IExpression" />
     </node>
   </node>

@@ -2,9 +2,9 @@
 <model ref="r:a93a29fb-7d82-41df-8280-3ecbf77ba55a(com.mbeddr.mpsutil.editingGuide.plugin.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="k8go" ref="r:00731b77-fd60-4ebd-b554-284dbff8495f(com.mbeddr.mpsutil.editingGuide.structure)" />
@@ -14,9 +14,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -179,7 +178,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="2ZHlC00bQq5" role="2OqNvi">
-                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" resolve="currentTaskOverride" />
               </node>
             </node>
           </node>
@@ -197,7 +196,7 @@
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="2ZHlC00bOgu" role="2OqNvi">
-                      <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" />
+                      <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" resolve="tasks" />
                     </node>
                   </node>
                   <node concept="1yVyf7" id="2ZHlC00bPQY" role="2OqNvi" />
@@ -210,7 +209,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2ZHlC00bNFf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                    <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" resolve="currentTaskOverride" />
                   </node>
                 </node>
               </node>
@@ -267,7 +266,7 @@
       <node concept="1oajcY" id="2N1CSrzEzc9" role="1oa70y" />
     </node>
     <node concept="1QGGSu" id="45f0X_J3uoz" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/play.png" />
+      <property role="1iqoE4" value="${module}/icons/play.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="31xWCC5Urf">
@@ -334,7 +333,7 @@
                 <ref role="3cqZAo" node="2C54m44Ss0a" resolve="exercise" />
               </node>
               <node concept="3TrEf2" id="2C54m44SqnM" role="2OqNvi">
-                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" resolve="currentTaskOverride" />
               </node>
             </node>
           </node>
@@ -349,7 +348,7 @@
                       <ref role="3cqZAo" node="2C54m44Ss0a" resolve="exercise" />
                     </node>
                     <node concept="3Tsc0h" id="2C54m44SqnW" role="2OqNvi">
-                      <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" />
+                      <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" resolve="tasks" />
                     </node>
                   </node>
                   <node concept="1yVyf7" id="2C54m44SqnX" role="2OqNvi" />
@@ -359,7 +358,7 @@
                     <ref role="3cqZAo" node="2C54m44Ss0a" resolve="exercise" />
                   </node>
                   <node concept="3TrEf2" id="2C54m44Sqo2" role="2OqNvi">
-                    <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                    <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" resolve="currentTaskOverride" />
                   </node>
                 </node>
               </node>

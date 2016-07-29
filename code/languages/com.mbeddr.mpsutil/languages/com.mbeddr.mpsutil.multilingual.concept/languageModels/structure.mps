@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -109,7 +109,7 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="2510545900187060785" />
       <ref role="20lvS9" node="2bng37sXCCl" resolve="StringTranslation" />
-      <ref role="20ksaX" node="2Hv7KkRk_2d" />
+      <ref role="20ksaX" node="2Hv7KkRk_2d" resolve="values" />
     </node>
     <node concept="PrWs8" id="2Hv7KkRk_26" role="PzmwI">
       <ref role="PrY4T" node="2Hv7KkRk_25" resolve="IMultilingualContent" />
@@ -125,7 +125,7 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="2510545900187060789" />
       <ref role="20lvS9" node="2bng37sXCCo" resolve="TextTranslation" />
-      <ref role="20ksaX" node="2Hv7KkRk_2d" />
+      <ref role="20ksaX" node="2Hv7KkRk_2d" resolve="values" />
     </node>
     <node concept="PrWs8" id="2Hv7KkRk_2b" role="PzmwI">
       <ref role="PrY4T" node="2Hv7KkRk_25" resolve="IMultilingualContent" />

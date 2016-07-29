@@ -66,7 +66,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="2B6gS0eQQjN">
-    <property role="TrG5h" value="Toggle @createIntention" />
+    <property role="TrG5h" value="ToggleCreateIntention" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="nwd3:5neAOh$6qgL" resolve="IReusableContextAction" />
     <node concept="2S6ZIM" id="2B6gS0eQQjO" role="2ZfVej">
@@ -129,7 +129,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2B6gS0eVFrm">
-    <property role="TrG5h" value="Toggle @originatesFromActionIntention" />
+    <property role="TrG5h" value="ToggleOriginatesFromActionIntention" />
     <ref role="2ZfgGC" to="tp3j:hmS6QkF" resolve="IntentionDeclaration" />
     <node concept="2S6ZIM" id="2B6gS0eVFrn" role="2ZfVej">
       <node concept="3clFbS" id="2B6gS0eVFro" role="2VODD2">

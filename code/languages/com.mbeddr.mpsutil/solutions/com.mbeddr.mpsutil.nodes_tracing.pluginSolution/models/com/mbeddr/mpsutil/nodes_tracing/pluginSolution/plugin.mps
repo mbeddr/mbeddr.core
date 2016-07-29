@@ -4,7 +4,7 @@
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
@@ -219,7 +219,7 @@
                     <ref role="3cqZAo" node="3grCczWOqL2" resolve="tia" />
                   </node>
                   <node concept="3TrEf2" id="3grCczWOrZU" role="2OqNvi">
-                    <ref role="3Tt5mk" to="7jff:3grCczWNak8" />
+                    <ref role="3Tt5mk" to="7jff:3grCczWNak8" resolve="traced" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3grCczWPRSw" role="37vLTx">

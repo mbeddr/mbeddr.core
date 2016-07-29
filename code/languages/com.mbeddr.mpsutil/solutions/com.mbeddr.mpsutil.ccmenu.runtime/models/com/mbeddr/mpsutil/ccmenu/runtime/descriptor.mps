@@ -244,6 +244,14 @@
     <node concept="3clFb_" id="1uZEtAikauW" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isApplicable" />
+      <node concept="P$JXv" id="1uZEtAikaE2" role="lGtFl">
+        <node concept="TUZQ0" id="1uZEtAikaE5" role="TUOzN">
+          <property role="TUZQ4" value="Null means the default tab" />
+          <node concept="zr_55" id="4yYSJc_l6Sd" role="zr_5Q">
+            <ref role="zr_51" node="1uZEtAikaCi" resolve="groupName" />
+          </node>
+        </node>
+      </node>
       <node concept="37vLTG" id="1uZEtAikaCi" role="3clF46">
         <property role="TrG5h" value="groupName" />
         <node concept="17QB3L" id="1uZEtAikaD8" role="1tU5fm" />
@@ -254,14 +262,6 @@
       <node concept="10P_77" id="1uZEtAikaBv" role="3clF45" />
       <node concept="3Tm1VV" id="1uZEtAikauZ" role="1B3o_S" />
       <node concept="3clFbS" id="1uZEtAikav0" role="3clF47" />
-      <node concept="P$JXv" id="1uZEtAikaE2" role="lGtFl">
-        <node concept="TUZQ0" id="1uZEtAikaE5" role="TUOzN">
-          <property role="TUZQ4" value="Null means the default tab" />
-          <node concept="zr_55" id="1uZEtAikaE7" role="zr_5Q">
-            <ref role="zr_51" node="1uZEtAikaCi" resolve="groupName" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3clFb_" id="1uZEtAijGSg" role="jymVt">
       <property role="1EzhhJ" value="true" />

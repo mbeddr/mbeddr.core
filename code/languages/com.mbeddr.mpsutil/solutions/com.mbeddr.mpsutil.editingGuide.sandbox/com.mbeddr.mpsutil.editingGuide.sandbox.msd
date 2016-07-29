@@ -11,6 +11,9 @@
     <dependency reexport="false">c6e0a639-6829-4d71-a41c-9d693d7cdea5(com.mbeddr.mpsutil.editingGuide.runtime)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>
+  <usedDevKits>
+    <usedDevKit>1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)</usedDevKit>
+  </usedDevKits>
   <languageVersions>
     <language slang="l:67506b1e-43ad-47fe-a8e6-bc7837e9e11f:com.mbeddr.mpsutil.editingGuide" version="-1" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />

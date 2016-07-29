@@ -5,7 +5,7 @@
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
@@ -643,7 +643,7 @@
                                   <ref role="3cqZAo" node="2CFqHq6pWcD" resolve="smartRefLink" />
                                 </node>
                                 <node concept="3TrEf2" id="5s_Hn9os6jj" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                                  <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                                 </node>
                               </node>
                               <node concept="1rGIog" id="5s_Hn9os6MS" role="2OqNvi" />
@@ -785,7 +785,7 @@
                             <ref role="3cqZAo" node="2CFqHq6pWcD" resolve="smartRefLink" />
                           </node>
                           <node concept="3TrEf2" id="5s_Hn9os44o" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                            <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                           </node>
                         </node>
                         <node concept="1rGIog" id="5s_Hn9os5Bh" role="2OqNvi" />
@@ -958,7 +958,7 @@
                     <ref role="3cqZAo" node="5s_Hn9onraJ" resolve="link" />
                   </node>
                   <node concept="3TrEf2" id="5s_Hn9opYgY" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                    <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                   </node>
                 </node>
                 <node concept="1rGIog" id="5s_Hn9oqLws" role="2OqNvi" />
@@ -1024,7 +1024,7 @@
                               <ref role="3cqZAo" node="5s_Hn9onraJ" resolve="link" />
                             </node>
                             <node concept="3TrEf2" id="5s_Hn9oqLEZ" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                              <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                             </node>
                           </node>
                           <node concept="1rGIog" id="5s_Hn9oqLF0" role="2OqNvi" />
@@ -1160,7 +1160,7 @@
                         <ref role="3cqZAo" node="5s_Hn9onraJ" resolve="link" />
                       </node>
                       <node concept="3TrEf2" id="5s_Hn9opZbW" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                        <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                       </node>
                     </node>
                     <node concept="1rGIog" id="5s_Hn9oqM9M" role="2OqNvi" />
@@ -1344,7 +1344,7 @@
                   <ref role="3cqZAo" node="5s_Hn9onK5I" resolve="smartRefLink" />
                 </node>
                 <node concept="3TrEf2" id="5s_Hn9orFIJ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                  <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                 </node>
               </node>
               <node concept="1rGIog" id="5s_Hn9orJuz" role="2OqNvi" />

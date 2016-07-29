@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -85,7 +85,7 @@
       <property role="20kJfa" value="key" />
       <property role="IQ2ns" value="9087294576173869709" />
       <ref role="20lvS9" node="7Ssz$kY9UUa" resolve="RichStringMessageKey" />
-      <ref role="20ksaX" to="sxyo:2bng37t1yrs" />
+      <ref role="20ksaX" to="sxyo:2bng37t1yrs" resolve="key" />
     </node>
     <node concept="PrWs8" id="7Ssz$kY9U$r" role="PzmwI">
       <ref role="PrY4T" to="sxyo:2bng37t1yrr" resolve="IMessageKeyHolder" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b1deed8c-68b2-424a-806a-664b47188e43" name="com.mbeddr.mpsutil.contextsidebar" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -27,9 +27,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -240,7 +239,7 @@
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="5T3_DgSVlrS" role="37wK5m">
                   <node concept="2OqwBi" id="5T3_DgSVlrT" role="3uHU7w">
-                    <node concept="1F3lnG" id="5T3_DgSVlrU" role="2Oq$k0" />
+                    <node concept="1F3lnG" id="4yYSJc_ltYW" role="2Oq$k0" />
                     <node concept="liA8E" id="5T3_DgSVlrV" role="2OqNvi">
                       <ref role="37wK5l" to="xike:5x8vmjSDioJ" resolve="getCurrentConcept" />
                     </node>
@@ -255,7 +254,7 @@
         </node>
       </node>
       <node concept="1QGGSu" id="5T3_DgSVlrX" role="1FX4XO">
-        <property role="1QGGTI" value="${module}/icons/units.png" />
+        <property role="1iqoE4" value="${module}/icons/units.png" />
       </node>
     </node>
     <node concept="1F1WSm" id="5T3_DgSVlrY" role="1FXxlL">
@@ -273,7 +272,7 @@
               <node concept="1PxgMI" id="5T3_DgSVls4" role="33vP2m">
                 <ref role="1m5ApE" to="tpee:f$Xl_Og" resolve="StringLiteral" />
                 <node concept="2OqwBi" id="5T3_DgSVls5" role="1m5AlR">
-                  <node concept="1F3lnG" id="5T3_DgSVls6" role="2Oq$k0" />
+                  <node concept="1F3lnG" id="4yYSJc_ltXE" role="2Oq$k0" />
                   <node concept="liA8E" id="5T3_DgSVls7" role="2OqNvi">
                     <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                   </node>
@@ -339,7 +338,7 @@
                 <node concept="2OqwBi" id="5T3_DgSVlsw" role="2Oq$k0">
                   <node concept="2OqwBi" id="5T3_DgSVlsx" role="2Oq$k0">
                     <node concept="2OqwBi" id="5T3_DgSVlsy" role="2Oq$k0">
-                      <node concept="1F3lnG" id="5T3_DgSVlsz" role="2Oq$k0" />
+                      <node concept="1F3lnG" id="4yYSJc_lu65" role="2Oq$k0" />
                       <node concept="liA8E" id="5T3_DgSVls$" role="2OqNvi">
                         <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                       </node>
@@ -359,7 +358,7 @@
               </node>
               <node concept="2OqwBi" id="5T3_DgSVlsD" role="3uHU7B">
                 <node concept="2OqwBi" id="5T3_DgSVlsE" role="2Oq$k0">
-                  <node concept="1F3lnG" id="5T3_DgSVlsF" role="2Oq$k0" />
+                  <node concept="1F3lnG" id="4yYSJc_luor" role="2Oq$k0" />
                   <node concept="liA8E" id="5T3_DgSVlsG" role="2OqNvi">
                     <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                   </node>
@@ -382,7 +381,7 @@
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="5T3_DgSVlsO" role="37wK5m">
                   <node concept="2OqwBi" id="5T3_DgSVlsP" role="3uHU7w">
-                    <node concept="1F3lnG" id="5T3_DgSVlsQ" role="2Oq$k0" />
+                    <node concept="1F3lnG" id="4yYSJc_luh4" role="2Oq$k0" />
                     <node concept="liA8E" id="5T3_DgSVlsR" role="2OqNvi">
                       <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                     </node>
@@ -397,7 +396,7 @@
         </node>
       </node>
       <node concept="1QGGSu" id="5T3_DgSVlsT" role="1FX4XO">
-        <property role="1QGGTI" value="${module}/icons/var.png" />
+        <property role="1iqoE4" value="${module}/icons/var.png" />
       </node>
     </node>
   </node>
