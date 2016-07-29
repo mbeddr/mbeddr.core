@@ -7,7 +7,9 @@
   <property name="download-dir" value="${basedir}" />
   <target name="download">
 	<delete dir="${download-dir}/${MPS-Dir}"/>
+	<delete dir="${MPS-Dir}"/>
 	<mkdir dir="${download-dir}/${MPS-Dir}"/>
+	<mkdir dir="${MPS-Dir}"/>
 	<get src="${MPS-Base-URL}/${MPS-File}" dest="${download-dir}/${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	<unzip src="${download-dir}/${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
