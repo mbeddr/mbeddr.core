@@ -2071,12 +2071,6 @@
               <ref role="3bR37D" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
             </node>
           </node>
-          <node concept="1SiIV0" id="7uRF_7jOp82" role="3bR37C">
-            <node concept="3bR9La" id="7uRF_7jOp83" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4p3FRivDLPL" resolve="de.slisson.mps.editor.multiline.runtime" />
-            </node>
-          </node>
         </node>
         <node concept="1E0d5M" id="27YNgA28xCu" role="1E1XAP">
           <ref role="1E0d5P" node="29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
@@ -2197,6 +2191,12 @@
           <node concept="3bR9La" id="5d_XfTkm7VW" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4yYSJc_jChW" role="3bR37C">
+          <node concept="3bR9La" id="4yYSJc_jChX" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
@@ -2607,6 +2607,12 @@
             <node concept="3bR9La" id="2Xjt3l57iN3" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4yYSJc_jCjy" role="3bR37C">
+            <node concept="3bR9La" id="4yYSJc_jCjz" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="2Xjt3l57hht" resolve="de.slisson.mps.reflection.runtime" />
             </node>
           </node>
         </node>

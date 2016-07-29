@@ -275,7 +275,7 @@
                 <ref role="35c_gD" to="87nw:2dWzqxEB$Tx" resolve="Text" />
               </node>
               <node concept="2qgKlT" id="1yC42PnP12" role="2OqNvi">
-                <ref role="37wK5l" to="tbr6:1yC42Pmj_Z" resolve="getSelectedWord" />
+                <ref role="37wK5l" to="tbr6:5Zn2KFQUdoe" resolve="getSelectedWord" />
                 <node concept="1XNTG" id="1yC42PnP13" role="37wK5m" />
               </node>
             </node>
@@ -333,11 +333,11 @@
                         <ref role="3cqZAo" node="1yC42PoD3z" resolve="boldText" />
                       </node>
                       <node concept="3TrEf2" id="1yC42PoEdM" role="2OqNvi">
-                        <ref role="3Tt5mk" to="p95z:4F4peXsrXtM" />
+                        <ref role="3Tt5mk" to="p95z:4F4peXsrXtM" resolve="text" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="1yC42PoFxn" role="2OqNvi">
-                      <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+                      <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
                     </node>
                   </node>
                   <node concept="1uHKPH" id="1yC42PoGOS" role="2OqNvi" />

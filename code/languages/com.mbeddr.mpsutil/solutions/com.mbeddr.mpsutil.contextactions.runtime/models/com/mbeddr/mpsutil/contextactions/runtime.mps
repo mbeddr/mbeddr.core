@@ -332,9 +332,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -7234,25 +7231,25 @@
           </node>
         </node>
         <node concept="3clFbH" id="7vUP_qcJlOY" role="3cqZAp" />
-        <node concept="3SKdUt" id="4mMeETlozZO" role="3cqZAp">
-          <node concept="3SKWN0" id="4mMeETlozZP" role="3SKWNk">
-            <node concept="3clFbF" id="4q$a58KxVGw" role="3SKWNf">
-              <node concept="2OqwBi" id="4q$a58KxWEi" role="3clFbG">
-                <node concept="37vLTw" id="4q$a58KxVGu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="XwFeF7YZyU" resolve="myItemContainer" />
-                </node>
-                <node concept="liA8E" id="4q$a58KxYZ8" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
-                  <node concept="2ShNRf" id="4q$a58KxZdX" role="37wK5m">
-                    <node concept="1pGfFk" id="4q$a58Ky0qi" role="2ShVmc">
-                      <ref role="37wK5l" to="dxuu:~BoxLayout.&lt;init&gt;(java.awt.Container,int)" resolve="BoxLayout" />
-                      <node concept="37vLTw" id="4q$a58Ky0_D" role="37wK5m">
-                        <ref role="3cqZAo" node="XwFeF7YZyU" resolve="myItemContainer" />
-                      </node>
-                      <node concept="10M0yZ" id="4q$a58Ky1aJ" role="37wK5m">
-                        <ref role="1PxDUh" to="dxuu:~BoxLayout" resolve="BoxLayout" />
-                        <ref role="3cqZAo" to="dxuu:~BoxLayout.Y_AXIS" resolve="Y_AXIS" />
-                      </node>
+        <node concept="1X3_iC" id="4yYSJc$E5sq" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="4q$a58KxVGw" role="8Wnug">
+            <node concept="2OqwBi" id="4q$a58KxWEi" role="3clFbG">
+              <node concept="37vLTw" id="4q$a58KxVGu" role="2Oq$k0">
+                <ref role="3cqZAo" node="XwFeF7YZyU" resolve="myItemContainer" />
+              </node>
+              <node concept="liA8E" id="4q$a58KxYZ8" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+                <node concept="2ShNRf" id="4q$a58KxZdX" role="37wK5m">
+                  <node concept="1pGfFk" id="4q$a58Ky0qi" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~BoxLayout.&lt;init&gt;(java.awt.Container,int)" resolve="BoxLayout" />
+                    <node concept="37vLTw" id="4q$a58Ky0_D" role="37wK5m">
+                      <ref role="3cqZAo" node="XwFeF7YZyU" resolve="myItemContainer" />
+                    </node>
+                    <node concept="10M0yZ" id="4q$a58Ky1aJ" role="37wK5m">
+                      <ref role="1PxDUh" to="dxuu:~BoxLayout" resolve="BoxLayout" />
+                      <ref role="3cqZAo" to="dxuu:~BoxLayout.Y_AXIS" resolve="Y_AXIS" />
                     </node>
                   </node>
                 </node>
@@ -12848,7 +12845,7 @@
     </node>
     <node concept="3clFbW" id="7vUP_qcxDx4" role="jymVt">
       <node concept="3cqZAl" id="7vUP_qcxDx6" role="3clF45" />
-      <node concept="3Tm1VV" id="7vUP_qcxDx7" role="1B3o_S" />
+      <node concept="3Tm6S6" id="4yYSJc$Ypof" role="1B3o_S" />
       <node concept="3clFbS" id="7vUP_qcxDx8" role="3clF47">
         <node concept="3clFbF" id="7vUP_qcxDNX" role="3cqZAp">
           <node concept="37vLTI" id="7vUP_qcxEqs" role="3clFbG">

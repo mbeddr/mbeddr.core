@@ -4,7 +4,7 @@
   <attribute name="concise" value="true" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -60,7 +60,7 @@
       <property role="20kJfa" value="instanceMethodDeclaration" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1202948736718" />
-      <ref role="20ksaX" to="tpee:fz7wK6H" />
+      <ref role="20ksaX" to="tpee:fz7wK6H" resolve="baseMethodDeclaration" />
       <ref role="20lvS9" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
     </node>
     <node concept="PrWs8" id="7moa1g0TZ2G" role="PzmwI">
@@ -84,7 +84,7 @@
       <property role="20kJfa" value="staticMethodDeclaration" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1081236769987" />
-      <ref role="20ksaX" to="tpee:fz7wK6H" />
+      <ref role="20ksaX" to="tpee:fz7wK6H" resolve="baseMethodDeclaration" />
       <ref role="20lvS9" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
     </node>
   </node>
@@ -101,7 +101,7 @@
     <node concept="1TJgyj" id="f_2Pw7K" role="1TKVEi">
       <property role="20kJfa" value="staticFieldDeclaration" />
       <property role="IQ2ns" value="1070568178160" />
-      <ref role="20ksaX" to="tpee:fzcqZ_w" />
+      <ref role="20ksaX" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
       <ref role="20lvS9" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
     </node>
   </node>

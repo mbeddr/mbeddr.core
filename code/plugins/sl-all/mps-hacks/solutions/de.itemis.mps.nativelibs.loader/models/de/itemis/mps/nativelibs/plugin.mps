@@ -1295,7 +1295,7 @@
           <node concept="3cpWsn" id="7xsJPFCeYn8" role="3cpWs9">
             <property role="TrG5h" value="deps" />
             <node concept="3uibUv" id="7xsJPFCeYn5" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="7xsJPFCeZiK" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
               </node>
@@ -1313,7 +1313,7 @@
                 </node>
               </node>
               <node concept="3uibUv" id="7xsJPFCfl7K" role="10QFUM">
-                <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+                <ref role="3uigEE" to="33ny:~List" resolve="List" />
                 <node concept="3uibUv" id="7xsJPFCfl7L" role="11_B2D">
                   <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
                 </node>
@@ -1327,7 +1327,7 @@
               <ref role="3cqZAo" node="7xsJPFCeYn8" resolve="deps" />
             </node>
             <node concept="liA8E" id="7xsJPFCfv18" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
               <node concept="37vLTw" id="7xsJPFCfvEM" role="37wK5m">
                 <ref role="3cqZAo" node="1HOG8KqUzpk" resolve="newDep" />
               </node>
