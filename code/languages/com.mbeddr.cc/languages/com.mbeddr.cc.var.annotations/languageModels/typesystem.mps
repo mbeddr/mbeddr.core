@@ -60,7 +60,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1085,8 +1085,8 @@
             <node concept="1YBJjd" id="1YpC__$KvVC" role="2Oq$k0">
               <ref role="1YBMHb" node="1YpC__$KvL7" resolve="gsps" />
             </node>
-            <node concept="2qgKlT" id="1YpC__$KvLp" role="2OqNvi">
-              <ref role="37wK5l" to="rpdm:4omMoHU$nz_" resolve="missingMappings" />
+            <node concept="2qgKlT" id="7BUPv5LWL_N" role="2OqNvi">
+              <ref role="37wK5l" to="rpdm:1YpC__$Kzuy" resolve="missingMappings" />
             </node>
           </node>
           <node concept="3GX2aA" id="1YpC__$KvLq" role="2OqNvi" />

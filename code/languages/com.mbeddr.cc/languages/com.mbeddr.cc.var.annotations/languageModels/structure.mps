@@ -355,6 +355,7 @@
   <node concept="1TIwiD" id="1YpC__$JMMj">
     <property role="3GE5qa" value="trafo" />
     <property role="TrG5h" value="VariabiliyConfigItemWithStrategy" />
+    <property role="1pbfSe" value="2074554644" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1YpC__$K6Ad" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -371,6 +372,7 @@
     <property role="TrG5h" value="Strategy" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="2074554649" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1YpC__$K7El">
@@ -378,6 +380,7 @@
     <property role="34LRSv" value="variability mappings" />
     <property role="3GE5qa" value="trafo" />
     <property role="R4oN_" value="select configurations for feature models" />
+    <property role="1pbfSe" value="2074469138" />
     <ref role="1TJDcQ" node="1YpC__$JMMe" resolve="Strategy" />
     <node concept="1TJgyj" id="1YpC__$K7Em" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

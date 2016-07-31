@@ -160,6 +160,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -335,18 +338,25 @@
             </node>
           </node>
           <node concept="2OqwBi" id="66UaKxBx$2q" role="33vP2m">
-            <node concept="2OqwBi" id="66UaKxBx$2r" role="2Oq$k0">
-              <node concept="1PxgMI" id="66UaKxBx$2s" role="2Oq$k0">
-                <ref role="1PxNhF" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
-                <node concept="2OqwBi" id="66UaKxBx$2t" role="1PxMeX">
-                  <node concept="1YBJjd" id="66UaKxBx$2u" role="2Oq$k0">
-                    <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
+            <node concept="2OqwBi" id="7BUPv5LUQM7" role="2Oq$k0">
+              <node concept="2OqwBi" id="66UaKxBx$2r" role="2Oq$k0">
+                <node concept="1PxgMI" id="66UaKxBx$2s" role="2Oq$k0">
+                  <ref role="1PxNhF" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+                  <node concept="2OqwBi" id="66UaKxBx$2t" role="1PxMeX">
+                    <node concept="1YBJjd" id="66UaKxBx$2u" role="2Oq$k0">
+                      <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
+                    </node>
+                    <node concept="1mfA1w" id="66UaKxBx$2v" role="2OqNvi" />
                   </node>
-                  <node concept="1mfA1w" id="66UaKxBx$2v" role="2OqNvi" />
+                </node>
+                <node concept="3Tsc0h" id="66UaKxBx$2w" role="2OqNvi">
+                  <ref role="3TtcxE" to="5wll:vg5qBCe_S8" />
                 </node>
               </node>
-              <node concept="3Tsc0h" id="66UaKxBx$2w" role="2OqNvi">
-                <ref role="3TtcxE" to="5wll:vg5qBCe_S8" />
+              <node concept="v3k3i" id="7BUPv5LUShG" role="2OqNvi">
+                <node concept="chp4Y" id="7BUPv5LUSqA" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
+                </node>
               </node>
             </node>
             <node concept="3zZkjj" id="66UaKxBx$2x" role="2OqNvi">

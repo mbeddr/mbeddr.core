@@ -10,10 +10,8 @@
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="017fba0e-af15-4a23-b0a8-02b5c1141e75" fqName="com.mbeddr.cc.var.annotations" version="0" />
     <language id="21ac77a4-1b66-44c5-aaec-94e43bb86519" fqName="com.mbeddr.cc.var.composition" version="0" />
     <language id="03f78d94-3f33-4789-ad35-5950b32fdad8" fqName="com.mbeddr.cc.var.composition.c" version="0" />
-    <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" fqName="com.mbeddr.cc.var.fm" version="1" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="3" />
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" fqName="com.mbeddr.core.buildconfig" version="0" />
     <language id="b2da2e1a-b542-47f5-9be0-4dc21efe74a4" fqName="com.mbeddr.core.checks" version="0" />
