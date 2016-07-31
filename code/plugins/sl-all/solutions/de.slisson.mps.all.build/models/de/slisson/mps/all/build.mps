@@ -3743,6 +3743,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6p1TdwmbJZ6" role="3bR37C">
+          <node concept="3bR9La" id="6p1TdwmbJZ7" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2nutuZsJi6m" role="2G$12L">
         <property role="BnDLt" value="true" />
