@@ -7091,12 +7091,10 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="CZjRlFC2xc" role="3cqZAp">
-          <node concept="37vLTI" id="CZjRlFC2xd" role="3clFbG">
-            <node concept="37vLTw" id="CZjRlFC2xe" role="37vLTJ">
-              <ref role="3cqZAo" to="g51k:~EditorCell_Label.myCaretIsVisible" resolve="myCaretIsVisible" />
-            </node>
-            <node concept="3clFbT" id="CZjRlFC2xf" role="37vLTx">
+        <node concept="3clFbF" id="wjBkpHcLA4" role="3cqZAp">
+          <node concept="1rXfSq" id="wjBkpHcLA2" role="3clFbG">
+            <ref role="37wK5l" to="g51k:~EditorCell_Label.setCaretVisible(boolean):void" resolve="setCaretVisible" />
+            <node concept="3clFbT" id="wjBkpHcMvj" role="37wK5m">
               <property role="3clFbU" value="true" />
             </node>
           </node>

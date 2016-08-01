@@ -6686,19 +6686,24 @@
       <node concept="3Tmbuc" id="6KBaIbbrn8j" role="1B3o_S" />
       <node concept="10P_77" id="6KBaIbbrn8k" role="3clF45" />
       <node concept="3clFbS" id="6KBaIbbrn8l" role="3clF47">
-        <node concept="3clFbJ" id="6KBaIbbrn8U" role="3cqZAp">
-          <node concept="3clFbS" id="6KBaIbbrn8W" role="3clFbx">
-            <node concept="3cpWs6" id="6KBaIbbrn8X" role="3cqZAp">
-              <node concept="3clFbT" id="6KBaIbbrn8Z" role="3cqZAk">
+        <node concept="3clFbJ" id="hBPavEbsEs" role="3cqZAp">
+          <node concept="3clFbS" id="hBPavEbsEt" role="3clFbx">
+            <node concept="3cpWs6" id="hBPavEbsEu" role="3cqZAp">
+              <node concept="3clFbT" id="hBPavEbsEv" role="3cqZAk">
                 <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
-          <node concept="3nyPlj" id="6KBaIbbrn8o" role="3clFbw">
+          <node concept="3nyPlj" id="hBPavEbsEw" role="3clFbw">
             <ref role="37wK5l" to="g51k:~EditorCell_Label.toShowCaret():boolean" resolve="toShowCaret" />
           </node>
         </node>
-        <node concept="3clFbH" id="6KBaIbbro0W" role="3cqZAp" />
+        <node concept="3clFbH" id="3IK6sA2gycW" role="3cqZAp" />
+        <node concept="3SKdUt" id="3IK6sA2gCtG" role="3cqZAp">
+          <node concept="3SKdUq" id="3IK6sA2gCtI" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Looks like default logic should work in this case" />
+          </node>
+        </node>
         <node concept="3SKdUt" id="6KBaIbbro0Y" role="3cqZAp">
           <node concept="3SKdUq" id="6KBaIbbro0Z" role="3SKWNk">
             <property role="3SKdUp" value="Caret blinking when multiline selection is active" />
@@ -6729,8 +6734,13 @@
           <node concept="3clFbS" id="635SBilB0b4" role="3clFbx">
             <node concept="3cpWs6" id="635SBilB0c0" role="3cqZAp">
               <node concept="1Wc70l" id="635SBilB0cI" role="3cqZAk">
-                <node concept="37vLTw" id="1rfeXz7xrYD" role="3uHU7w">
-                  <ref role="3cqZAo" to="g51k:~EditorCell_Label.myCaretIsVisible" resolve="myCaretIsVisible" />
+                <node concept="2OqwBi" id="hBPavEbDIp" role="3uHU7w">
+                  <node concept="37vLTw" id="hBPavEbBc5" role="2Oq$k0">
+                    <ref role="3cqZAo" to="g51k:~EditorCell_Label.myCaretState" resolve="myCaretState" />
+                  </node>
+                  <node concept="liA8E" id="hBPavEbGHb" role="2OqNvi">
+                    <ref role="37wK5l" to="3ahc:~CaretState.isVisible():boolean" resolve="isVisible" />
+                  </node>
                 </node>
                 <node concept="3clFbC" id="635SBilB0cm" role="3uHU7B">
                   <node concept="2OqwBi" id="635SBilB0bT" role="3uHU7B">

@@ -24,7 +24,7 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.Icon" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
       <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
         <property id="8974276187400029899" name="path" index="1QGGTI" />
       </concept>
@@ -97,6 +97,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
@@ -295,8 +298,8 @@
             <ref role="37wK5l" to="exr9:~EditorSettings$MyState.&lt;init&gt;()" resolve="EditorSettings.MyState" />
           </node>
         </node>
-        <node concept="liA8E" id="dt1EHJPo1k" role="2OqNvi">
-          <ref role="37wK5l" to="exr9:~EditorSettings$MyState.getFontSize():int" resolve="getFontSize" />
+        <node concept="2OwXpG" id="hBPavEb2uF" role="2OqNvi">
+          <ref role="2Oxat5" to="exr9:~EditorSettings$MyState.fontSize" resolve="fontSize" />
         </node>
       </node>
     </node>
@@ -438,15 +441,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="dt1EHJP9eU" role="3cqZAp">
-          <node concept="2OqwBi" id="dt1EHJP9kZ" role="3clFbG">
-            <node concept="37vLTw" id="dt1EHJP9eS" role="2Oq$k0">
-              <ref role="3cqZAo" node="dt1EHJP92z" resolve="state" />
+        <node concept="3clFbF" id="hBPavEb2Vx" role="3cqZAp">
+          <node concept="37vLTI" id="hBPavEb3V1" role="3clFbG">
+            <node concept="37vLTw" id="hBPavEb4hY" role="37vLTx">
+              <ref role="3cqZAo" node="dt1EHJP8vN" resolve="newFontSize" />
             </node>
-            <node concept="liA8E" id="dt1EHJP9ne" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorSettings$MyState.setFontSize(int):void" resolve="setFontSize" />
-              <node concept="37vLTw" id="dt1EHJP9xu" role="37wK5m">
-                <ref role="3cqZAo" node="dt1EHJP8vN" resolve="newFontSize" />
+            <node concept="2OqwBi" id="hBPavEb369" role="37vLTJ">
+              <node concept="37vLTw" id="hBPavEb2Vv" role="2Oq$k0">
+                <ref role="3cqZAo" node="dt1EHJP92z" resolve="state" />
+              </node>
+              <node concept="2OwXpG" id="hBPavEb3ej" role="2OqNvi">
+                <ref role="2Oxat5" to="exr9:~EditorSettings$MyState.fontSize" resolve="fontSize" />
               </node>
             </node>
           </node>
