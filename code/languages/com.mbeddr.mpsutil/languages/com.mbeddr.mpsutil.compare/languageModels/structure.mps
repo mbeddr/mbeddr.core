@@ -2,8 +2,8 @@
 <model ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -143,7 +143,7 @@
   </node>
   <node concept="1TIwiD" id="1_DWnhqnL9Y">
     <property role="TrG5h" value="AreEqualExpression" />
-    <property role="34LRSv" value="areEqual" />
+    <property role="34LRSv" value=":isEqualTo:" />
     <property role="R4oN_" value="compares two nodes" />
     <property role="EcuMT" value="1831260205537497726" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />

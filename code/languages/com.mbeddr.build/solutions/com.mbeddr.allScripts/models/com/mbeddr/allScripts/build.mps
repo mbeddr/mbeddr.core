@@ -2,8 +2,8 @@
 <model ref="r:caa661d5-e529-469c-bb25-dfa7a83b768e(com.mbeddr.allScripts.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -156,6 +156,9 @@
       <node concept="m$_yC" id="46zCYP2q4Tv" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWV4Nl" resolve="jetbrains.mps.execution.languages" />
       </node>
+      <node concept="m$_yC" id="1RubBbpfBC1" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
+      </node>
       <node concept="m$_yB" id="46zCYP2p$17" role="m$_yh">
         <ref role="m$_yA" node="2UI1wmC3wCq" resolve="com.mbeddr.tutorial.dev.build" />
       </node>
@@ -167,6 +170,9 @@
       </node>
       <node concept="m$f5U" id="2coa6XmWpWi" role="m$_yh">
         <ref role="m$f5T" node="2coa6XmWkq8" resolve="com.mbeddr.tests" />
+      </node>
+      <node concept="m$f5U" id="1RubBbpfBx2" role="m$_yh">
+        <ref role="m$f5T" node="1RubBbpfAXP" resolve="mbeddr.allScripts" />
       </node>
       <node concept="m$f5U" id="7XWYXGzp1$8" role="m$_yh">
         <ref role="m$f5T" node="3AVJcIMl$pT" resolve="mbeddr" />
@@ -190,6 +196,54 @@
       <node concept="3_J27D" id="46zCYP2pxWM" role="m$_w8">
         <node concept="3Mxwew" id="46zCYP2pyVp" role="3MwsjC">
           <property role="3MwjfP" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="1RubBbpfAXP" role="3989C9">
+      <property role="TrG5h" value="mbeddr.allScripts" />
+      <node concept="1E1JtA" id="1RubBbpfBb$" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.allScripts" />
+        <property role="3LESm3" value="752496a0-da43-4b5e-bd15-ea1a5aa211f6" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="1RubBbpfBck" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+          <node concept="2Ry0Ak" id="1RubBbpfBcu" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="1RubBbpfBcB" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="1RubBbpfBcK" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.build" />
+                <node concept="2Ry0Ak" id="1RubBbpfBcT" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="1RubBbpfBd2" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.allScripts" />
+                    <node concept="2Ry0Ak" id="1RubBbpfBdb" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.allScripts.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1RubBbpfBdf" role="3bR37C">
+          <node concept="3bR9La" id="1RubBbpfBdg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:5xa9wY2vhb7" resolve="jetbrains.mps.execution.configurations.implementation.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1RubBbpfBdh" role="3bR37C">
+          <node concept="3bR9La" id="1RubBbpfBdi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2e9IswdwtSv" resolve="de.slisson.mps.all.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1RubBbpfBdj" role="3bR37C">
+          <node concept="3bR9La" id="1RubBbpfBdk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
         </node>
       </node>
     </node>

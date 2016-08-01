@@ -2,8 +2,8 @@
 <model ref="r:780bbc81-d170-48ec-b42e-89f51d5b0ee5(com.mbeddr.mpsutil.grammarcells.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2436,6 +2436,9 @@
               <node concept="3TUQnm" id="6rhOS_xT5n0" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:6rhOS_xT4Lf" resolve="WrapperCell_SubstituteCondition_expectedConcept" />
               </node>
+              <node concept="3TUQnm" id="5wt0D$BOn_r" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:5wt0D$BOnvU" resolve="Parameter_wrappedConcept" />
+              </node>
             </node>
           </node>
         </node>
@@ -3209,6 +3212,29 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="1GvnUgo6Q_5" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5wt0D$BOnvV">
+    <ref role="13h7C2" to="teg0:5wt0D$BOnvU" resolve="Parameter_wrappedConcept" />
+    <node concept="13hLZK" id="5wt0D$BOnvW" role="13h7CW">
+      <node concept="3clFbS" id="5wt0D$BOnvX" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5wt0D$BOnvY" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="5wt0D$BOnvZ" role="1B3o_S" />
+      <node concept="3clFbS" id="5wt0D$BOnw4" role="3clF47">
+        <node concept="3cpWs6" id="5wt0D$BOnxR" role="3cqZAp">
+          <node concept="2c44tf" id="5wt0D$BOnyf" role="3cqZAk">
+            <node concept="3bZ5Sz" id="5wt0D$BOnz1" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5wt0D$BOnw5" role="3clF45">
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
     </node>
