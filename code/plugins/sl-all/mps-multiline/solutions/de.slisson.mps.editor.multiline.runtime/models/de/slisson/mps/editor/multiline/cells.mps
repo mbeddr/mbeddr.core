@@ -2,15 +2,15 @@
 <model ref="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="1" />
-    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="mywg" ref="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(de.slisson.mps.editor.multiline.runtime)" />
@@ -192,7 +192,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6686,19 +6686,24 @@
       <node concept="3Tmbuc" id="6KBaIbbrn8j" role="1B3o_S" />
       <node concept="10P_77" id="6KBaIbbrn8k" role="3clF45" />
       <node concept="3clFbS" id="6KBaIbbrn8l" role="3clF47">
-        <node concept="3clFbJ" id="6KBaIbbrn8U" role="3cqZAp">
-          <node concept="3clFbS" id="6KBaIbbrn8W" role="3clFbx">
-            <node concept="3cpWs6" id="6KBaIbbrn8X" role="3cqZAp">
-              <node concept="3clFbT" id="6KBaIbbrn8Z" role="3cqZAk">
+        <node concept="3clFbJ" id="hBPavEbsEs" role="3cqZAp">
+          <node concept="3clFbS" id="hBPavEbsEt" role="3clFbx">
+            <node concept="3cpWs6" id="hBPavEbsEu" role="3cqZAp">
+              <node concept="3clFbT" id="hBPavEbsEv" role="3cqZAk">
                 <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
-          <node concept="3nyPlj" id="6KBaIbbrn8o" role="3clFbw">
+          <node concept="3nyPlj" id="hBPavEbsEw" role="3clFbw">
             <ref role="37wK5l" to="g51k:~EditorCell_Label.toShowCaret():boolean" resolve="toShowCaret" />
           </node>
         </node>
-        <node concept="3clFbH" id="6KBaIbbro0W" role="3cqZAp" />
+        <node concept="3clFbH" id="3IK6sA2gycW" role="3cqZAp" />
+        <node concept="3SKdUt" id="3IK6sA2gCtG" role="3cqZAp">
+          <node concept="3SKdUq" id="3IK6sA2gCtI" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Looks like default logic should work in this case" />
+          </node>
+        </node>
         <node concept="3SKdUt" id="6KBaIbbro0Y" role="3cqZAp">
           <node concept="3SKdUq" id="6KBaIbbro0Z" role="3SKWNk">
             <property role="3SKdUp" value="Caret blinking when multiline selection is active" />
@@ -6729,8 +6734,13 @@
           <node concept="3clFbS" id="635SBilB0b4" role="3clFbx">
             <node concept="3cpWs6" id="635SBilB0c0" role="3cqZAp">
               <node concept="1Wc70l" id="635SBilB0cI" role="3cqZAk">
-                <node concept="37vLTw" id="1rfeXz7xrYD" role="3uHU7w">
-                  <ref role="3cqZAo" to="g51k:~EditorCell_Label.myCaretIsVisible" resolve="myCaretIsVisible" />
+                <node concept="2OqwBi" id="hBPavEbDIp" role="3uHU7w">
+                  <node concept="37vLTw" id="hBPavEbBc5" role="2Oq$k0">
+                    <ref role="3cqZAo" to="g51k:~EditorCell_Label.myCaretState" resolve="myCaretState" />
+                  </node>
+                  <node concept="liA8E" id="hBPavEbGHb" role="2OqNvi">
+                    <ref role="37wK5l" to="3ahc:~CaretState.isVisible():boolean" resolve="isVisible" />
+                  </node>
                 </node>
                 <node concept="3clFbC" id="635SBilB0cm" role="3uHU7B">
                   <node concept="2OqwBi" id="635SBilB0bT" role="3uHU7B">

@@ -2,10 +2,10 @@
 <model ref="r:f349b2fc-480a-4a50-8b67-cd3b0a6c33b3(com.mbeddr.mpsutil.genericactions.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -97,6 +97,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -160,7 +163,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -289,13 +292,13 @@
       <node concept="3Tm6S6" id="dt1EHJPaTO" role="1B3o_S" />
       <node concept="10Oyi0" id="dt1EHJPb9v" role="1tU5fm" />
       <node concept="2OqwBi" id="dt1EHJPnZI" role="33vP2m">
+        <node concept="2OwXpG" id="hBPavEb2uF" role="2OqNvi">
+          <ref role="2Oxat5" to="exr9:~EditorSettings$MyState.fontSize" resolve="fontSize" />
+        </node>
         <node concept="2ShNRf" id="dt1EHJPbgK" role="2Oq$k0">
           <node concept="1pGfFk" id="dt1EHJPnYZ" role="2ShVmc">
             <ref role="37wK5l" to="exr9:~EditorSettings$MyState.&lt;init&gt;()" resolve="EditorSettings.MyState" />
           </node>
-        </node>
-        <node concept="liA8E" id="dt1EHJPo1k" role="2OqNvi">
-          <ref role="37wK5l" to="exr9:~EditorSettings$MyState.getFontSize():int" resolve="getFontSize" />
         </node>
       </node>
     </node>
@@ -437,15 +440,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="dt1EHJP9eU" role="3cqZAp">
-          <node concept="2OqwBi" id="dt1EHJP9kZ" role="3clFbG">
-            <node concept="37vLTw" id="dt1EHJP9eS" role="2Oq$k0">
-              <ref role="3cqZAo" node="dt1EHJP92z" resolve="state" />
+        <node concept="3clFbF" id="hBPavEb2Vx" role="3cqZAp">
+          <node concept="37vLTI" id="hBPavEb3V1" role="3clFbG">
+            <node concept="37vLTw" id="hBPavEb4hY" role="37vLTx">
+              <ref role="3cqZAo" node="dt1EHJP8vN" resolve="newFontSize" />
             </node>
-            <node concept="liA8E" id="dt1EHJP9ne" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorSettings$MyState.setFontSize(int):void" resolve="setFontSize" />
-              <node concept="37vLTw" id="dt1EHJP9xu" role="37wK5m">
-                <ref role="3cqZAo" node="dt1EHJP8vN" resolve="newFontSize" />
+            <node concept="2OqwBi" id="hBPavEb369" role="37vLTJ">
+              <node concept="37vLTw" id="hBPavEb2Vv" role="2Oq$k0">
+                <ref role="3cqZAo" node="dt1EHJP92z" resolve="state" />
+              </node>
+              <node concept="2OwXpG" id="hBPavEb3ej" role="2OqNvi">
+                <ref role="2Oxat5" to="exr9:~EditorSettings$MyState.fontSize" resolve="fontSize" />
               </node>
             </node>
           </node>
