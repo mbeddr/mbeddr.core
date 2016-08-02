@@ -705,11 +705,29 @@
               <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
             </node>
           </node>
+          <node concept="1SiIV0" id="CZDdvz2dCD" role="3bR37C">
+            <node concept="3bR9La" id="CZDdvz2dCE" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6gxq4sGoq4I" role="3bR37C">
           <node concept="3bR9La" id="6gxq4sGoq4J" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="CZDdvz2dC_" role="3bR37C">
+          <node concept="3bR9La" id="CZDdvz2dCA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="CZDdvz2dCB" role="3bR37C">
+          <node concept="3bR9La" id="CZDdvz2dCC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
@@ -782,6 +800,12 @@
           <node concept="3bR9La" id="7Yufpv5Rv7n" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="CZDdvz2dx8" role="3bR37C">
+          <node concept="3bR9La" id="CZDdvz2dx9" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
           </node>
         </node>
       </node>
