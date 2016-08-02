@@ -1,6 +1,6 @@
 <project name="com.mbeddr.core download mps" default="download">
-  <property name="MPS-Base-URL" value="https://teamcity.jetbrains.com/guestAuth/app/rest/builds/id:830164/artifacts/content"/> 
-  <property name="MPS-File" value="MPS-162.747.zip"/>
+  <property name="MPS-Base-URL" value="https://teamcity.jetbrains.com/guestAuth/app/rest/builds/id:832514/artifacts/content"/> 
+  <property name="MPS-File" value="MPS-162.832.zip"/>
   <property name="MPS-Zip-Folder" value="MPS 3.4 EAP"/>
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
