@@ -63,6 +63,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
         <reference id="1201385237847" name="property" index="2S8YL0" />
       </concept>
@@ -1246,7 +1250,14 @@
                       <ref role="3cqZAo" node="2UdJgvFN6YD" resolve="analyzer" />
                     </node>
                     <node concept="liA8E" id="2tzgwZjIv0M" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~SwingWorker.get():java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                      <node concept="3cmrfG" id="4RbsEloVhHQ" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="Rm8GO" id="4RbsEloViwV" role="37wK5m">
+                        <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
+                        <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                      </node>
                     </node>
                   </node>
                 </node>
