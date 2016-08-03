@@ -22,18 +22,36 @@ subprojects {
     // required plugins
     apply plugin: 'java'
     apply plugin: "maven-publish"
-
+	
     // mps properties
-    ext.mpsMajor = "3.3"
+	ext.mpsMajor = "3.3"
     ext.mpsMinor = "4"
     ext.mpsBuild = mpsMajor + "." + mpsMinor
     ext.mbeddrMpsDir = "MPS-mbeddr-" + mpsBuild
     ext.mpsBaseUrl = "http://download.jetbrains.com/mps/33/"
 
     // mbeddr properties
-    ext.mbeddrMajor = "0.9"
-    ext.mbeddrMinor = "1"
-    ext.mbeddrBuild = mbeddrMajor + "." + mbeddrMinor
+	// setting mbeddrMajor
+	if (project.hasProperty('mbeddrMajor')) {
+		ext.mbeddrMajor = project.getProperty('mbeddrMajor')
+	} else {
+		ext.mbeddrMajor = "1"	
+	}
+	
+	// setting mbeddrMinor
+	if (project.hasProperty('mbeddrMinor')) {
+		ext.mbeddrMinor = project.getProperty('mbeddrMinor')
+	} else {
+		ext.mbeddrMinor = "0"	
+	}
+	
+	// setting mbeddrBuild	
+	if (project.hasProperty('mbeddrBuild')) {
+		ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+	} else {
+		ext.mbeddrBuild = 'git rev-list --count HEAD'.execute()
+	}
+    ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
     // cbmc properties
     ext.cbmcMajor = "0.9"
@@ -56,15 +74,18 @@ subprojects {
     ext.languages_targets = ['clean', 'generate', 'assemble']
     ext.ex_tests_targets = ['clean', 'generate']	
     ext.rcp_targets = ['clean', 'build']
-
+	
     // path variables
     ext.mps_home = '-Dmps.home=' + file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir + "/").getAbsolutePath()
     ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
     ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-    ext.mbeddr_home = '-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
-    ext.slall_home = '-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath()
+	String buildVersion = '-Dbuild='+mbeddrBuild
+	String majorVersion = '-Dmajor.version='+mbeddrMajor
+	String minorVersion = '-Dminor.version='+mbeddrMinor
+	ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
+    ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
     ext.dependsOnMPS_scriptArgs = ['ant', '-verbose', mps_home, build_dir, artifacts_root]
-    ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, mbeddr_home, slall_home]
+    ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
 
     // path locations
     ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
@@ -189,7 +210,7 @@ project(':build:com.mbeddr.allScripts') {
             mbeddrAllScripts(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'allScripts'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_allScripts) {}
             }
         }
@@ -205,7 +226,7 @@ project(':build:com.mbeddr.build') {
         //compile project(path: ':build:com.mbeddr.allScripts', configuration: 'scripts' )
         //compile project(path: ':build:com.jetbrains.mps', configuration: 'mps')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
     }
     repositories {
         maven {
@@ -220,8 +241,8 @@ project(':build:com.mbeddr.tests') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
     }
 }
 
@@ -231,15 +252,15 @@ project(':build:com.mbeddr.platform') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
     }
     publishing {
         publications {
             mbeddrPlatform(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'platform'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_mbeddrPlatform) {}
             }
         }
@@ -263,15 +284,15 @@ project(':build:com.mbeddr.allInOne') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
     }
     publishing {
         publications {
             mbeddrAllInOne(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'allInOne'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_all_in_one) {}
             }
         }
@@ -296,22 +317,22 @@ project(':build:com.mbeddr.rcp') {
         //compile project(':build:com.mbeddr.build')  // dep. because of tutorial?
         //compile project(':build:com.mbeddr.allInOne')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
-        mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
+        mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuildNumber
     }
     publishing {
         publications {
             mbeddrRcp(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'rcp'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_mbeddrRCP) {}
             }
             mbeddrJre(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'jre'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_JRE) {}
             }
         }
@@ -331,9 +352,9 @@ project(':build:com.mbeddr.release') {
         //compile 'com.mbeddr:allInOne:0.9.1'
         //compile 'com.mbeddr:jre:0.9.1'
         //compile 'com.mbeddr:rcp:0.9.1'
-        mbeddrJre group: 'com.mbeddr', name: 'jre', version: mbeddrBuild
-        mbeddrRcp group: 'com.mbeddr', name: 'rcp', version: mbeddrBuild
-        mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
+        mbeddrJre group: 'com.mbeddr', name: 'jre', version: mbeddrBuildNumber
+        mbeddrRcp group: 'com.mbeddr', name: 'rcp', version: mbeddrBuildNumber
+        mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuildNumber
         cbmcMac group: 'org.cprover', name: 'cbmc-mac', version: cbmcBuild
         cbmcLinux group: 'org.cprover', name: 'cbmc-linux', version: cbmcBuild
         cbmcWin group: 'org.cprover', name: 'cbmc-win', version: cbmcBuild
@@ -343,7 +364,7 @@ project(':build:com.mbeddr.release') {
             mbeddrDmg(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'dmg'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_mbeddrDmg) {}
             }
         }
@@ -383,15 +404,15 @@ project(':build:com.mbeddr.analyses.cbmc') {
 project(':build:com.mbeddr.tutorial') {
     dependencies {
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
     }
     publishing {
         publications {
             mbeddrTutorial(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'tutorial'
-                version mbeddrBuild
+                version mbeddrBuildNumber
                 artifact(publish_mbeddrTutorial) {}
             }
         }
