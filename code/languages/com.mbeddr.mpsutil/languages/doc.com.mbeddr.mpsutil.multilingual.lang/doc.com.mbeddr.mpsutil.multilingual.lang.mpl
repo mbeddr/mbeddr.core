@@ -18,7 +18,6 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language slang="l:d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d:com.mbeddr.mpsutil.multilingual.concept" version="0" />
         <language slang="l:ea7c5f4a-5621-4b35-a7bb-9aaab820eaf7:doc.com.mbeddr.mpsutil.multilingual.lang" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
