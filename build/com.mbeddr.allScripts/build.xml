@@ -9,6 +9,10 @@
   <property name="mbeddr.build" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
   <property name="spawner.artifacts" location="${basedir}/../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="platform.sl-all" location="${artifacts.root}/mps-sl-all" />
+  <property name="major.version" value="0" />
+  <property name="minor.version" value="8" />
+  <property name="build" value="0000" />
+  <property name="mbeddr.version" value="${major.version}.${minor.version}-${build}" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -35,7 +39,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>com.mbeddr.allScripts</id>
         <name>com.mbeddr.allScripts</name>
-        <version>1.0</version>
+        <version>${mbeddr.version}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>jetbrains.mps.debugger.api</depends>
@@ -463,7 +467,7 @@
     <zip destfile="${build.layout}/com.mbeddr.allScripts.zip">
       <fileset dir="${build.tmp}/default/com.mbeddr.allScripts.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">com.mbeddr.allScripts.build.major.version=${major.version}${line.separator}com.mbeddr.allScripts.build.minor.version=${minor.version}${line.separator}com.mbeddr.allScripts.build.build=${build}${line.separator}com.mbeddr.allScripts.build.mbeddr.version=${mbeddr.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />

@@ -1,0 +1,3 @@
+nexusUrl=https://projects.itemis.de/nexus/content/repositories/mps/
+nexusUsername=<user>
+nexusPassword=<password>
