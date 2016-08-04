@@ -34,7 +34,6 @@
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="dnq3" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.dom.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ughz" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.w3c.dom.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="4anb" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="gzvg" ref="c2788093-51e8-4cfe-943b-eefd5ff309ff/r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.plugin)" />
@@ -43,6 +42,7 @@
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="ugom" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.bridge(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="e373" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
+    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -4333,7 +4333,7 @@
                       <node concept="3cpWsn" id="2sPLpCfQE4Y" role="3cpWs9">
                         <property role="TrG5h" value="svgDocument" />
                         <property role="3TUv4t" value="false" />
-                        <node concept="3uibUv" id="2sPLpCfQE5S" role="1tU5fm">
+                        <node concept="3uibUv" id="11w71XmgU7V" role="1tU5fm">
                           <ref role="3uigEE" to="ughz:~SVGDocument" resolve="SVGDocument" />
                         </node>
                         <node concept="10QFUN" id="2sPLpCfQE50" role="33vP2m">
