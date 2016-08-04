@@ -43,7 +43,6 @@
     <import index="ugom" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.bridge(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="e373" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
-    <import index="ugi0" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.w3c.dom.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1736,7 +1735,7 @@
               <node concept="3cpWsn" id="2aP19v2YueZ" role="3cpWs9">
                 <property role="TrG5h" value="svgDocument" />
                 <node concept="3uibUv" id="2aP19v2Yufq" role="1tU5fm">
-                  <ref role="3uigEE" to="ugi0:~SVGDocument" resolve="SVGDocument" />
+                  <ref role="3uigEE" to="ughz:~SVGDocument" resolve="SVGDocument" />
                 </node>
                 <node concept="2OqwBi" id="2aP19v2Yufr" role="33vP2m">
                   <node concept="2OqwBi" id="2aP19v2Yufs" role="2Oq$k0">
@@ -3379,7 +3378,7 @@
                     <ref role="3cqZAo" to="4anb:~AbstractJSVGComponent.svgDocument" resolve="svgDocument" />
                   </node>
                   <node concept="liA8E" id="2sPLpCfQ_0g" role="2OqNvi">
-                    <ref role="37wK5l" to="ugi0:~SVGDocument.getURL():java.lang.String" resolve="getURL" />
+                    <ref role="37wK5l" to="ughz:~SVGDocument.getURL():java.lang.String" resolve="getURL" />
                   </node>
                 </node>
               </node>
