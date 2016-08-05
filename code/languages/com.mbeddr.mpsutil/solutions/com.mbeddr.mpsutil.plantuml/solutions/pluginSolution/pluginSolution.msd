@@ -67,9 +67,6 @@
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="xalan-2.6.0.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="xerces_2_5_0.jar" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
@@ -97,7 +94,6 @@
     <stubModelEntry path="${module}/lib/js.jar" />
     <stubModelEntry path="${module}/lib/plantuml.jar" />
     <stubModelEntry path="${module}/lib/xalan-2.6.0.jar" />
-    <stubModelEntry path="${module}/lib/xerces_2_5_0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
