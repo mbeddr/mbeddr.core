@@ -10,9 +10,6 @@
     <modelRoot contentPath="${module}/lib/lib" type="java_classes">
       <sourceRoot location="jaxen-1.1.6.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib" type="java_classes">
-      <sourceRoot location="xercesImpl.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" />
@@ -26,7 +23,6 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/lib/jaxen-1.1.6.jar" />
-    <stubModelEntry path="${module}/lib/lib/xercesImpl.jar" />
     <stubModelEntry path="${module}/lib/jdom2-2.0.6.jar" />
   </stubModelEntries>
   <sourcePath />
