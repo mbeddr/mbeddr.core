@@ -232,6 +232,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -1551,7 +1552,7 @@
     </node>
     <node concept="13i0hz" id="2tBHhziI8iF" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="getLocalVarScope" />
       <node concept="37vLTG" id="2tBHhziI8tx" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -1651,7 +1652,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getLocalVarScope" />
-      <node concept="3Tm6S6" id="2tBHhzjklqx" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6uKIrkTTNRu" role="1B3o_S" />
       <node concept="3uibUv" id="1OcdQnySJO1" role="3clF45">
         <ref role="3uigEE" node="1OcdQnySI_r" resolve="LocalVarScope" />
       </node>
@@ -1859,7 +1860,7 @@
         <property role="TrG5h" value="contained" />
         <node concept="3Tqbb2" id="2tBHhziHdd3" role="1tU5fm" />
       </node>
-      <node concept="3Tm6S6" id="2tBHhziHdcm" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6uKIrkTTNZj" role="1B3o_S" />
       <node concept="10Oyi0" id="2tBHhziHdcp" role="3clF45" />
       <node concept="3clFbS" id="2tBHhziHd8k" role="3clF47">
         <node concept="1gVbGN" id="2tBHhziHddz" role="3cqZAp">
@@ -6381,7 +6382,7 @@
   </node>
   <node concept="13h7C7" id="7RHXOmy7N8f">
     <property role="3GE5qa" value="arbitraryText" />
-    <ref role="13h7C2" to="c4fa:3kEjc_WJ4o9" resolve="AbritraryTextItem" />
+    <ref role="13h7C2" to="c4fa:3kEjc_WJ4o9" resolve="ArbitraryTextItem" />
     <node concept="13hLZK" id="7RHXOmy7N8g" role="13h7CW">
       <node concept="3clFbS" id="7RHXOmy7N8h" role="2VODD2" />
     </node>
