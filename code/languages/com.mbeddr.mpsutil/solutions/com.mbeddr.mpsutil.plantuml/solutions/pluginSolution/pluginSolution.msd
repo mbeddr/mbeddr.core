@@ -67,15 +67,6 @@
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="xalan-2.6.0.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="xerces_2_5_0.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="xml-apis-ext.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="xml-apis.jar" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
@@ -103,9 +94,6 @@
     <stubModelEntry path="${module}/lib/js.jar" />
     <stubModelEntry path="${module}/lib/plantuml.jar" />
     <stubModelEntry path="${module}/lib/xalan-2.6.0.jar" />
-    <stubModelEntry path="${module}/lib/xerces_2_5_0.jar" />
-    <stubModelEntry path="${module}/lib/xml-apis-ext.jar" />
-    <stubModelEntry path="${module}/lib/xml-apis.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -115,6 +103,7 @@
     <dependency reexport="false">c2788093-51e8-4cfe-943b-eefd5ff309ff(com.mbeddr.mpsutil.httpserver)</dependency>
     <dependency reexport="false">b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
+    <dependency reexport="false">96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -154,6 +143,7 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)" version="0" />
   </dependencyVersions>
 </solution>
 

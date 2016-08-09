@@ -1,0 +1,27 @@
+def script_build_tutorialLanguages = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
+def script_build_tutorialSolutions = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
+
+
+task build_tutorial_languages(type: Exec) {
+    workingDir rootProject.projectDir
+    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_tutorialLanguages)), *languages_targets])
+    commandLine (args)
+}
+
+task build_tutorial_solutions(type: Exec, dependsOn: build_tutorial_languages) {
+    workingDir rootProject.projectDir
+    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_tutorialSolutions)), *languages_targets])
+    commandLine (args)
+}
+
+task build_tutorial(dependsOn: build_tutorial_solutions) { }
+
+task package_tutorial(type: Zip) {
+    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
+    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveName "com.mbeddr.tutorial.zip"
+}
+
+task publish_mbeddrTutorial(type: Zip, dependsOn: package_tutorial) {
+    from rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial"
+}

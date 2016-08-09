@@ -2,11 +2,11 @@
 <model ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -232,6 +232,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -1552,7 +1553,7 @@
     </node>
     <node concept="13i0hz" id="2tBHhziI8iF" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="getLocalVarScope" />
       <node concept="37vLTG" id="2tBHhziI8tx" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -1652,7 +1653,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getLocalVarScope" />
-      <node concept="3Tm6S6" id="2tBHhzjklqx" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6uKIrkTTNRu" role="1B3o_S" />
       <node concept="3uibUv" id="1OcdQnySJO1" role="3clF45">
         <ref role="3uigEE" node="1OcdQnySI_r" resolve="LocalVarScope" />
       </node>
@@ -1852,6 +1853,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getIndex" />
+      <node concept="3Tmbuc" id="6uKIrkTTNZj" role="1B3o_S" />
       <node concept="37vLTG" id="2tBHhziHdcs" role="3clF46">
         <property role="TrG5h" value="container" />
         <node concept="3Tqbb2" id="2tBHhziHdcy" role="1tU5fm" />
@@ -1860,7 +1862,6 @@
         <property role="TrG5h" value="contained" />
         <node concept="3Tqbb2" id="2tBHhziHdd3" role="1tU5fm" />
       </node>
-      <node concept="3Tm6S6" id="2tBHhziHdcm" role="1B3o_S" />
       <node concept="10Oyi0" id="2tBHhziHdcp" role="3clF45" />
       <node concept="3clFbS" id="2tBHhziHd8k" role="3clF47">
         <node concept="1gVbGN" id="2tBHhziHddz" role="3cqZAp">
