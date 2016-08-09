@@ -571,44 +571,50 @@
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="630t2b8b$SY" role="3cqZAp">
-          <node concept="2GrKxI" id="630t2b8b$T0" role="2Gsz3X">
-            <property role="TrG5h" value="module" />
-          </node>
-          <node concept="3clFbS" id="630t2b8b$T2" role="2LFqv$">
-            <node concept="3clFbJ" id="630t2b8b_4j" role="3cqZAp">
-              <node concept="3clFbS" id="630t2b8b_4l" role="3clFbx">
-                <node concept="3clFbF" id="630t2b8b$Yq" role="3cqZAp">
-                  <node concept="1rXfSq" id="630t2b8b$Yp" role="3clFbG">
-                    <ref role="37wK5l" node="630t2b8bpLU" resolve="loadModule" />
-                    <node concept="10QFUN" id="630t2b8b_j5" role="37wK5m">
-                      <node concept="3uibUv" id="630t2b8b_lr" role="10QFUM">
+        <node concept="1QHqEK" id="2hnwIrOiPsR" role="3cqZAp">
+          <node concept="1QHqEC" id="2hnwIrOiPsT" role="1QHqEI">
+            <node concept="3clFbS" id="2hnwIrOiPsV" role="1bW5cS">
+              <node concept="2Gpval" id="630t2b8b$SY" role="3cqZAp">
+                <node concept="2GrKxI" id="630t2b8b$T0" role="2Gsz3X">
+                  <property role="TrG5h" value="module" />
+                </node>
+                <node concept="3clFbS" id="630t2b8b$T2" role="2LFqv$">
+                  <node concept="3clFbJ" id="630t2b8b_4j" role="3cqZAp">
+                    <node concept="3clFbS" id="630t2b8b_4l" role="3clFbx">
+                      <node concept="3clFbF" id="630t2b8b$Yq" role="3cqZAp">
+                        <node concept="1rXfSq" id="630t2b8b$Yp" role="3clFbG">
+                          <ref role="37wK5l" node="630t2b8bpLU" resolve="loadModule" />
+                          <node concept="10QFUN" id="630t2b8b_j5" role="37wK5m">
+                            <node concept="3uibUv" id="630t2b8b_lr" role="10QFUM">
+                              <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                            </node>
+                            <node concept="2GrUjf" id="630t2b8b_0k" role="10QFUP">
+                              <ref role="2Gs0qQ" node="630t2b8b$T0" resolve="module" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2ZW3vV" id="630t2b8b_7$" role="3clFbw">
+                      <node concept="3uibUv" id="630t2b8b_9B" role="2ZW6by">
                         <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
                       </node>
-                      <node concept="2GrUjf" id="630t2b8b_0k" role="10QFUP">
+                      <node concept="2GrUjf" id="630t2b8b_6B" role="2ZW6bz">
                         <ref role="2Gs0qQ" node="630t2b8b$T0" resolve="module" />
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="2ZW3vV" id="630t2b8b_7$" role="3clFbw">
-                <node concept="3uibUv" id="630t2b8b_9B" role="2ZW6by">
-                  <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                <node concept="2OqwBi" id="630t2b8b$An" role="2GsD0m">
+                  <node concept="2YIFZM" id="630t2b8b$$W" role="2Oq$k0">
+                    <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="630t2b8b$Lv" role="2OqNvi">
+                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                  </node>
                 </node>
-                <node concept="2GrUjf" id="630t2b8b_6B" role="2ZW6bz">
-                  <ref role="2Gs0qQ" node="630t2b8b$T0" resolve="module" />
-                </node>
               </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="630t2b8b$An" role="2GsD0m">
-            <node concept="2YIFZM" id="630t2b8b$$W" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-            </node>
-            <node concept="liA8E" id="630t2b8b$Lv" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
             </node>
           </node>
         </node>
