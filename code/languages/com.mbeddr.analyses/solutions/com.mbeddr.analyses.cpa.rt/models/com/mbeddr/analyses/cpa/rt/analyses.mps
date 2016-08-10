@@ -32,6 +32,7 @@
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="bryn" ref="r:9f8e322d-e446-4cbf-a6b4-ec0732156eda(com.mbeddr.analyses.cpa.rt.base)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" implicit="true" />
   </imports>
   <registry>
@@ -300,6 +301,9 @@
               <node concept="37vLTw" id="4BmZfiOh_r4" role="37wK5m">
                 <ref role="3cqZAo" node="4BmZfiOgYOJ" resolve="pi" />
               </node>
+              <node concept="37vLTw" id="3dE87sWdk7D" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
+              </node>
             </node>
           </node>
         </node>
@@ -338,6 +342,9 @@
           <node concept="37vLTw" id="4BmZfiOhgKb" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
           </node>
+          <node concept="37vLTw" id="3dE87sWdgks" role="37wK5m">
+            <ref role="3cqZAo" node="5KHBa6kYrU1" resolve="repo" />
+          </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="6DyMuFe0W9n" role="1B3o_S" />
@@ -364,6 +371,12 @@
         <property role="TrG5h" value="pi" />
         <node concept="3uibUv" id="5uqRFp940Z7" role="1tU5fm">
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6kYrU1" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6kYs49" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="NWlO9" id="4BmZfiOhdc9" role="lGtFl">
