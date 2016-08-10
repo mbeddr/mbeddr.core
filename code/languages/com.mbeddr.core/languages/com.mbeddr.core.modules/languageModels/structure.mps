@@ -14,6 +14,7 @@
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -559,22 +560,28 @@
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfD">
     <property role="3GE5qa" value="functionrefs.closure" />
-    <property role="TrG5h" value="Closure" />
+    <property role="TrG5h" value="Closure_old" />
     <property role="R4oN_" value="a lambda (stateless closure)" />
     <property role="34LRSv" value="[" />
     <property role="1pbfSe" value="2119503096" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7apEgWbIQfF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameters" />
+      <property role="20kJfa" value="parameters_old" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter" />
+      <ref role="20lvS9" to="k146:7apEgWbIQfE" resolve="ClosureParameter" />
+      <node concept="asaX9" id="2jjHQjPOKRQ" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.util.structure.Closure&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7apEgWbIQfG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
+      <property role="20kJfa" value="body_old" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7hIwPwVQD7C" resolve="ClosureStatementList" />
+      <ref role="20lvS9" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
+      <node concept="asaX9" id="2jjHQjPOKRV" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.util.structure.Closure&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="4usdeMNUmVy" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
@@ -585,10 +592,16 @@
     <node concept="PrWs8" id="7Jr7T0w731$" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
+    <node concept="PrWs8" id="m8w3_xYrMB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="asaX9" id="2jjHQjPOKBV" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfE">
     <property role="3GE5qa" value="functionrefs.closure" />
-    <property role="TrG5h" value="ClosureParameter" />
+    <property role="TrG5h" value="ClosureParameter_old" />
     <property role="R4oN_" value="an argument for a closure" />
     <property role="1pbfSe" value="2119503097" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -598,31 +611,49 @@
     <node concept="PrWs8" id="7Jr7T0w731A" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
     </node>
+    <node concept="PrWs8" id="m8w3_xYrMt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="asaX9" id="2jjHQjPOL6e" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfY">
     <property role="3GE5qa" value="functionrefs.closure" />
-    <property role="TrG5h" value="ClosureParameterRef" />
+    <property role="TrG5h" value="ClosureParameterRef_old" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="2119503117" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7apEgWbIQfZ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="param" />
+      <property role="20kJfa" value="param_old" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter" />
+      <ref role="20lvS9" to="k146:7apEgWbIQfE" resolve="ClosureParameter" />
+      <node concept="asaX9" id="2jjHQjPOLmG" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.util.structure.ClosureParameterRef&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="70kXLV4KbxP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
+    <node concept="PrWs8" id="m8w3_xYrMl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="asaX9" id="2jjHQjPOLmB" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7hIwPwVQD7C">
     <property role="3GE5qa" value="functionrefs.closure" />
-    <property role="TrG5h" value="ClosureStatementList" />
+    <property role="TrG5h" value="ClosureStatementList_old" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="1337387712" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     <node concept="PrWs8" id="5HxjapwgqSR" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="asaX9" id="2jjHQjPOLcH" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="5KH1ziO6mZv">

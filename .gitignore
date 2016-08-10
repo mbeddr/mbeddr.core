@@ -171,6 +171,14 @@ tmp
 # -----------------------------------------------------------
 # gradle files
 gradle.properties
-gradle/*
+**/gradle/*
+**/.gradle/*
+**/scripts/*
+**/MPS/*
+**/build/repo/
+**/build/distributions
+**/build/classes
+antlib.xml
+**/code/languages/myDependencies
 gradlew
 gradlew.bat
