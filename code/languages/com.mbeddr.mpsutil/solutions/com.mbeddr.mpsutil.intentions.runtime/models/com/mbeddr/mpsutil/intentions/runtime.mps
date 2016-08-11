@@ -633,6 +633,26 @@
         </node>
       </node>
       <node concept="3clFbS" id="3pwG8PSkQIM" role="3clF47">
+        <node concept="3cpWs8" id="43HEdiV$8c1" role="3cqZAp">
+          <node concept="3cpWsn" id="43HEdiV$8c2" role="3cpWs9">
+            <property role="TrG5h" value="dataContext" />
+            <node concept="3uibUv" id="43HEdiV$8c3" role="1tU5fm">
+              <ref role="3uigEE" to="qkt:~DataContext" resolve="DataContext" />
+            </node>
+            <node concept="2OqwBi" id="43HEdiV$8Nt" role="33vP2m">
+              <node concept="2YIFZM" id="43HEdiV$8IH" role="2Oq$k0">
+                <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+              </node>
+              <node concept="liA8E" id="43HEdiV$8Ym" role="2OqNvi">
+                <ref role="37wK5l" to="ddhc:~DataManager.getDataContext(java.awt.Component):com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                <node concept="37vLTw" id="43HEdiV$94W" role="37wK5m">
+                  <ref role="3cqZAo" node="3pwG8PSkQAX" resolve="myEditor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3pwG8PSkQIO" role="3cqZAp">
           <node concept="3cpWsn" id="3pwG8PSkQIN" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -643,9 +663,9 @@
                 <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
               </node>
               <node concept="liA8E" id="6LzhH3u5VtA" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataProvider):java.lang.Object" resolve="getData" />
-                <node concept="37vLTw" id="6LzhH3u5VtB" role="37wK5m">
-                  <ref role="3cqZAo" node="3pwG8PSkQAX" resolve="myEditor" />
+                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                <node concept="37vLTw" id="43HEdiV$9qK" role="37wK5m">
+                  <ref role="3cqZAo" node="43HEdiV$8c2" resolve="dataContext" />
                 </node>
               </node>
             </node>
