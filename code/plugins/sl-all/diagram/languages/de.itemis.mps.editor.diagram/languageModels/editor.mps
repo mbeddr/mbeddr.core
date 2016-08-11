@@ -4647,5 +4647,24 @@
       <node concept="2iRfu4" id="6gM9UMJsW7P" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="7EpvT6Mxly$">
+    <property role="3GE5qa" value="content" />
+    <ref role="1XX52x" to="2qld:5qgNcfDmYRM" resolve="Content_BLQuery" />
+    <node concept="PMmxH" id="hqLjuKn" role="2wV5jI">
+      <ref role="PMmxG" to="tpen:hqLiD8Q" resolve="ConceptFunction_Component" />
+    </node>
+    <node concept="3EZMnI" id="7EpvT6MxlyF" role="6VMZX">
+      <node concept="2iRkQZ" id="7EpvT6MxlyG" role="2iSdaV" />
+      <node concept="3EZMnI" id="7EpvT6MxlyO" role="3EZMnx">
+        <node concept="2iRfu4" id="7EpvT6MxlyP" role="2iSdaV" />
+        <node concept="3F0ifn" id="7EpvT6MxlyL" role="3EZMnx">
+          <property role="3F0ifm" value="duplicates safe:" />
+        </node>
+        <node concept="3F0A7n" id="7EpvT6Mxlz3" role="3EZMnx">
+          <ref role="1NtTu8" to="2qld:7EpvT6Mxlym" resolve="duplicatedSafe" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
