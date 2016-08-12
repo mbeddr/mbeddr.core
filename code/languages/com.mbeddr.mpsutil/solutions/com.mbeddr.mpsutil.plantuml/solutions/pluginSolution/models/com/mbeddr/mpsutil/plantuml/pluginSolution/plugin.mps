@@ -14,7 +14,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="ekwn" ref="5b1f863d-65a0-41a6-a801-33896be24202/r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor/jetbrains.mps.ide.editor.actions)" />
+    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
@@ -36,7 +36,7 @@
     <import index="dnq3" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.dom.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="4anb" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="gzvg" ref="c2788093-51e8-4cfe-943b-eefd5ff309ff/r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.plugin)" />
+    <import index="gzvg" ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" />
     <import index="er5d" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
@@ -46,9 +46,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2005,7 +2004,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1QGGTI" value="${module}/icons/vis.png" />
+      <property role="1iqoE4" value="${module}/icons/vis.png" />
     </node>
   </node>
   <node concept="312cEu" id="1X6acCMyThI">
@@ -2542,7 +2541,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="5BkFC2yhAJ4" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/zoomInIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/zoomInIcon.png" />
     </node>
     <node concept="1DS2jV" id="18ZQ$P85cQE" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -2680,7 +2679,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0FbBQs" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/vis.png" />
+      <property role="1iqoE4" value="${module}/icons/vis.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
@@ -2763,7 +2762,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2sPLpCfQjiP" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/zoomOutIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/zoomOutIcon.png" />
     </node>
     <node concept="1DS2jV" id="2sPLpCfQjiQ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -2969,7 +2968,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2sPLpCfQjj9" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/saveIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/saveIcon.png" />
     </node>
     <node concept="1DS2jV" id="2sPLpCfQjja" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -4702,7 +4701,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rGUY" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/resetIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/resetIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rGUZ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -4738,7 +4737,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rIRb" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/backIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/backIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRc" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -4796,7 +4795,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rIRh" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/fwdIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/fwdIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRi" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -5607,7 +5606,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6IuaPRfaRiy" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/puml.png" />
+      <property role="1iqoE4" value="${module}/icons/puml.png" />
     </node>
     <node concept="1DS2jV" id="6IuaPRfaRiz" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -5695,7 +5694,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="bhVSeGf3t4" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/vis.png" />
+      <property role="1iqoE4" value="${module}/icons/vis.png" />
     </node>
     <node concept="2ScWuX" id="bhVSeGf5_Y" role="tmbBb">
       <node concept="3clFbS" id="bhVSeGf5_Z" role="2VODD2">

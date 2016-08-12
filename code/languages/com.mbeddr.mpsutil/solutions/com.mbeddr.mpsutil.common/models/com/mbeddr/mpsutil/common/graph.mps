@@ -207,11 +207,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -1787,19 +1785,19 @@
             <property role="1dT_AB" value="Computes the strongly connected components of the given graph." />
           </node>
         </node>
-        <node concept="TUZQ0" id="2G8yZXxJdMv" role="TUOzN">
+        <node concept="TUZQ0" id="2G8yZXxJdMv" role="3nqlJM">
           <property role="TUZQ4" value="the graph" />
           <node concept="zr_55" id="4yYSJc_laY3" role="zr_5Q">
             <ref role="zr_51" node="4kDlJ5bgbhI" resolve="graph" />
           </node>
         </node>
-        <node concept="TUZQ0" id="2G8yZXxJdMy" role="TUOzN">
+        <node concept="TUZQ0" id="2G8yZXxJdMy" role="3nqlJM">
           <property role="TUZQ4" value="the type paramter of the nodes in the graph" />
           <node concept="zr_56" id="4yYSJc_laYe" role="zr_5Q">
             <ref role="zr_51" node="4kDlJ5bgbhr" resolve="T" />
           </node>
         </node>
-        <node concept="x79VA" id="2G8yZXxJdM_" role="x79VK">
+        <node concept="x79VA" id="2G8yZXxJdM_" role="3nqlJM">
           <property role="x79VB" value="the SCCs as sets of set of nodes" />
         </node>
       </node>
@@ -1930,25 +1928,25 @@
             <property role="1dT_AB" value="Returns the set of nodes in the strongly connected component that the sought node is in. " />
           </node>
         </node>
-        <node concept="TUZQ0" id="2G8yZXxJRjc" role="TUOzN">
+        <node concept="TUZQ0" id="2G8yZXxJRjc" role="3nqlJM">
           <property role="TUZQ4" value="the sought node" />
           <node concept="zr_55" id="4yYSJc_laZa" role="zr_5Q">
             <ref role="zr_51" node="2G8yZXxJffp" resolve="sought" />
           </node>
         </node>
-        <node concept="TUZQ0" id="2G8yZXxJRjf" role="TUOzN">
+        <node concept="TUZQ0" id="2G8yZXxJRjf" role="3nqlJM">
           <property role="TUZQ4" value="the graph" />
           <node concept="zr_55" id="4yYSJc_laZp" role="zr_5Q">
             <ref role="zr_51" node="2G8yZXxJfeJ" resolve="graph" />
           </node>
         </node>
-        <node concept="TUZQ0" id="2G8yZXxJRji" role="TUOzN">
+        <node concept="TUZQ0" id="2G8yZXxJRji" role="3nqlJM">
           <property role="TUZQ4" value="the type parameter of the nodes in the graph" />
           <node concept="zr_56" id="4yYSJc_laZC" role="zr_5Q">
             <ref role="zr_51" node="2G8yZXxJfe_" resolve="T" />
           </node>
         </node>
-        <node concept="x79VA" id="2G8yZXxJRjl" role="x79VK">
+        <node concept="x79VA" id="2G8yZXxJRjl" role="3nqlJM">
           <property role="x79VB" value="the SCC of the sought node" />
         </node>
       </node>
@@ -3398,19 +3396,19 @@
             <property role="1dT_AB" value="otherwise an Exception is thrown to indicate the cyclic input graph. " />
           </node>
         </node>
-        <node concept="TUZQ0" id="7BT5P44tOWf" role="TUOzN">
+        <node concept="TUZQ0" id="7BT5P44tOWf" role="3nqlJM">
           <property role="TUZQ4" value="the input graph" />
           <node concept="zr_55" id="4yYSJc_laYp" role="zr_5Q">
             <ref role="zr_51" node="4D_91tBL_qB" resolve="_graph" />
           </node>
         </node>
-        <node concept="TUZQ0" id="7BT5P44tOWi" role="TUOzN">
+        <node concept="TUZQ0" id="7BT5P44tOWi" role="3nqlJM">
           <property role="TUZQ4" value="the type parameter of the nodes in the graph" />
           <node concept="zr_56" id="4yYSJc_laYQ" role="zr_5Q">
             <ref role="zr_51" node="4D_91tBL_rv" resolve="T" />
           </node>
         </node>
-        <node concept="x79VA" id="7BT5P44tOWl" role="x79VK">
+        <node concept="x79VA" id="7BT5P44tOWl" role="3nqlJM">
           <property role="x79VB" value="the nodes in the order of topological sorting" />
         </node>
       </node>
@@ -3458,19 +3456,19 @@
             <property role="1dT_AB" value="Returns the topological sorting of the nodes of the given graph." />
           </node>
         </node>
-        <node concept="TUZQ0" id="3FYfbA7e8QK" role="TUOzN">
+        <node concept="TUZQ0" id="3FYfbA7e8QK" role="3nqlJM">
           <property role="TUZQ4" value="the input graph" />
           <node concept="zr_55" id="4yYSJc_laXD" role="zr_5Q">
             <ref role="zr_51" node="3FYfbA7e8QB" resolve="_graph" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3FYfbA7e8QM" role="TUOzN">
+        <node concept="TUZQ0" id="3FYfbA7e8QM" role="3nqlJM">
           <property role="TUZQ4" value="the type parameter of the nodes in the graph" />
           <node concept="zr_56" id="4yYSJc_laXS" role="zr_5Q">
             <ref role="zr_51" node="3FYfbA7e8QG" resolve="T" />
           </node>
         </node>
-        <node concept="x79VA" id="3FYfbA7e8QO" role="x79VK">
+        <node concept="x79VA" id="3FYfbA7e8QO" role="3nqlJM">
           <property role="x79VB" value="the nodes in the order of topological sorting" />
         </node>
       </node>
