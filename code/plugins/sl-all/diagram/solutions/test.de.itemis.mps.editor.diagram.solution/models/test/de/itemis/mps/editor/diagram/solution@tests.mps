@@ -17,7 +17,7 @@
     <use id="aff569ad-098d-414a-aa23-96963959392c" name="test.de.itemis.mps.editor.diagram.lang" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -662,11 +662,11 @@
                               <ref role="3cqZAo" node="l6SLw4joOo" resolve="activityNode" />
                             </node>
                             <node concept="3TrEf2" id="l6SLw4joOz" role="2OqNvi">
-                              <ref role="3Tt5mk" to="vux5:4XPshStfMYG" />
+                              <ref role="3Tt5mk" to="vux5:4XPshStfMYG" resolve="statementList" />
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="l6SLw4joO$" role="2OqNvi">
-                            <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                            <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                           </node>
                         </node>
                         <node concept="TSZUe" id="l6SLw4joO_" role="2OqNvi">
@@ -2737,11 +2737,11 @@
                                     </node>
                                   </node>
                                   <node concept="3TrEf2" id="5fm34X2_B_n" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="tpee:fzcpWvL" />
+                                    <ref role="3Tt5mk" to="tpee:fzcpWvL" resolve="localVariableDeclaration" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="5fm34X2_GKl" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                                  <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
                                 </node>
                               </node>
                               <node concept="1mIQ4w" id="5fm34X2_IZT" role="2OqNvi">

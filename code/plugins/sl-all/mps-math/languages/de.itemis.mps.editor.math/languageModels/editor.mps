@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -114,7 +114,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="9L22EoX9I6" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:19RCnNmEwJ_" />
+        <ref role="1NtTu8" to="x4fh:19RCnNmEwJ_" resolve="childCells" />
         <node concept="2EHx9g" id="19RCnNmExg8" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="7UiI8Oo9Df8" role="3EZMnx">
@@ -135,7 +135,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7UiI8Oo9Dfe" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8Oo9D6l" />
+        <ref role="1NtTu8" to="x4fh:7UiI8Oo9D6l" resolve="symbols" />
         <node concept="2EHx9g" id="4r1mNB_X3br" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="7UiI8OnRCRC" role="3EZMnx">
@@ -156,7 +156,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7UiI8OnRCXO" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8OnRCNO" />
+        <ref role="1NtTu8" to="x4fh:7UiI8OnRCNO" resolve="sharedVariables" />
         <node concept="2iRkQZ" id="7UiI8OnRCZO" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="7sJd_4s21pm" role="3EZMnx">
@@ -177,7 +177,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7sJd_4s21ps" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7sJd_4s21uE" />
+        <ref role="1NtTu8" to="x4fh:7sJd_4s21uE" resolve="initFunction" />
         <node concept="lj46D" id="7sJd_4s21pt" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -203,7 +203,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7UiI8OnN3PA" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:9L22EoWidO" />
+        <ref role="1NtTu8" to="x4fh:9L22EoWidO" resolve="layoutFunction" />
         <node concept="lj46D" id="7UiI8OnN3PB" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -229,7 +229,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="9L22EoX23S" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:9L22EoX23P" />
+        <ref role="1NtTu8" to="x4fh:9L22EoX23P" resolve="paintFunction" />
         <node concept="lj46D" id="9L22EoX278" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -252,7 +252,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="70CVChRcwqR" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:70CVChRcwp7" />
+        <ref role="1NtTu8" to="x4fh:70CVChRcwp7" resolve="getCenterYFunction" />
         <node concept="lj46D" id="70CVChRcwqS" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -280,7 +280,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F1sOY" id="19RCnNmExf_" role="3EZMnx">
-          <ref role="1NtTu8" to="x4fh:19RCnNmEwKf" />
+          <ref role="1NtTu8" to="x4fh:19RCnNmEwKf" resolve="cellModel" />
         </node>
         <node concept="2iRfu4" id="19RCnNmEImi" role="2iSdaV" />
       </node>
@@ -295,7 +295,7 @@
   <node concept="24kQdi" id="19RCnNmES5B">
     <ref role="1XX52x" to="x4fh:19RCnNmES40" resolve="ChildCellRef" />
     <node concept="1iCGBv" id="19RCnNmES6i" role="2wV5jI">
-      <ref role="1NtTu8" to="x4fh:19RCnNmES5t" />
+      <ref role="1NtTu8" to="x4fh:19RCnNmES5t" resolve="decl" />
       <node concept="1sVBvm" id="19RCnNmES6j" role="1sWHZn">
         <node concept="3F0A7n" id="19RCnNmES6x" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -329,7 +329,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7UiI8OnJHQx" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8OnJH$u" />
+        <ref role="1NtTu8" to="x4fh:7UiI8OnJH$u" resolve="paintFunction" />
         <node concept="lj46D" id="7UiI8OnL_4G" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -352,7 +352,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7UiI8Oo5rjQ" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8Oo5rjJ" />
+        <ref role="1NtTu8" to="x4fh:7UiI8Oo5rjJ" resolve="updateDimensionFunction" />
         <node concept="lj46D" id="7UiI8Oo5rm8" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -372,7 +372,7 @@
   <node concept="24kQdi" id="7UiI8OnMkS8">
     <ref role="1XX52x" to="x4fh:7UiI8OnMkHk" resolve="SymbolLayoutElement" />
     <node concept="1iCGBv" id="7UiI8OnMkXP" role="2wV5jI">
-      <ref role="1NtTu8" to="x4fh:7UiI8OnMkRZ" />
+      <ref role="1NtTu8" to="x4fh:7UiI8OnMkRZ" resolve="symbol" />
       <node concept="1sVBvm" id="7UiI8OnMkXQ" role="1sWHZn">
         <node concept="3F0A7n" id="7UiI8OnMkY1" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -391,7 +391,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="7UiI8OnRvKk" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8OnRvEd" />
+        <ref role="1NtTu8" to="x4fh:7UiI8OnRvEd" resolve="type" />
       </node>
       <node concept="2iRfu4" id="7UiI8OnRvKa" role="2iSdaV" />
     </node>
@@ -399,7 +399,7 @@
   <node concept="24kQdi" id="7UiI8OnT28i">
     <ref role="1XX52x" to="x4fh:7UiI8OnT22p" resolve="SharedVariableReference" />
     <node concept="1iCGBv" id="7UiI8OnT2dc" role="2wV5jI">
-      <ref role="1NtTu8" to="x4fh:7UiI8OnT289" />
+      <ref role="1NtTu8" to="x4fh:7UiI8OnT289" resolve="declaration" />
       <node concept="1sVBvm" id="7UiI8OnT2dd" role="1sWHZn">
         <node concept="3F0A7n" id="7UiI8OnT2do" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -411,7 +411,7 @@
   <node concept="24kQdi" id="7UiI8Oo8X4C">
     <ref role="1XX52x" to="x4fh:7UiI8Oo8WIm" resolve="PredefinedMathSymbolReference" />
     <node concept="1iCGBv" id="7UiI8Oo8Xap" role="2wV5jI">
-      <ref role="1NtTu8" to="x4fh:7UiI8Oo8Xal" />
+      <ref role="1NtTu8" to="x4fh:7UiI8Oo8Xal" resolve="decl" />
       <node concept="1sVBvm" id="7UiI8Oo8Xaq" role="1sWHZn">
         <node concept="3F0A7n" id="7UiI8Oo8XaI" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -431,7 +431,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="7UiI8Oo9D5T" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8Oo9CZC" />
+        <ref role="1NtTu8" to="x4fh:7UiI8Oo9CZC" resolve="symbol" />
       </node>
     </node>
     <node concept="3EZMnI" id="4r1mNB_XE0f" role="6VMZX">
@@ -447,7 +447,7 @@
   <node concept="24kQdi" id="7UiI8OocF93">
     <ref role="1XX52x" to="x4fh:7UiI8Ooc2LE" resolve="MathSymbolReferenceExpression" />
     <node concept="1iCGBv" id="7UiI8OocFeK" role="2wV5jI">
-      <ref role="1NtTu8" to="x4fh:7UiI8OocF8U" />
+      <ref role="1NtTu8" to="x4fh:7UiI8OocF8U" resolve="decl" />
       <node concept="1sVBvm" id="7UiI8OocFeL" role="1sWHZn">
         <node concept="3F0A7n" id="7UiI8OocFeW" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -478,7 +478,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7UiI8Op0LGa" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8Op0LyJ" />
+        <ref role="1NtTu8" to="x4fh:7UiI8Op0LyJ" resolve="paintFunction" />
         <node concept="lj46D" id="7UiI8Op0LGb" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -501,7 +501,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7UiI8Op0LGi" role="3EZMnx">
-        <ref role="1NtTu8" to="x4fh:7UiI8Op0LyK" />
+        <ref role="1NtTu8" to="x4fh:7UiI8Op0LyK" resolve="updateDimensionFunction" />
         <node concept="lj46D" id="7UiI8Op0LGj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

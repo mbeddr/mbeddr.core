@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -577,7 +577,7 @@
           <node concept="Vb9p2" id="5mBxd1SPrV8" role="3F10Kt" />
         </node>
         <node concept="3F2HdR" id="5mBxd1SPrYs" role="3EZMnx">
-          <ref role="1NtTu8" to="suqv:20KyIMr0tPX" />
+          <ref role="1NtTu8" to="suqv:20KyIMr0tPX" resolve="anchors" />
           <node concept="2EHx9g" id="5mBxd1SQB2f" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="5mBxd1SPrVa" role="2iSdaV" />
@@ -591,7 +591,7 @@
           <node concept="Vb9p2" id="5mBxd1SPs7d" role="3F10Kt" />
         </node>
         <node concept="3F2HdR" id="5mBxd1SPs9n" role="3EZMnx">
-          <ref role="1NtTu8" to="suqv:48DYfEsvqfr" />
+          <ref role="1NtTu8" to="suqv:48DYfEsvqfr" resolve="labels" />
           <node concept="2iRkQZ" id="5mBxd1SPs9L" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="5mBxd1SPs7g" role="2iSdaV" />

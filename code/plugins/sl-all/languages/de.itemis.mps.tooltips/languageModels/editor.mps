@@ -2,7 +2,7 @@
 <model ref="r:ccc912a6-16e8-466b-b48a-0e82310c4cc7(de.itemis.mps.tooltips.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -63,7 +63,7 @@
     <ref role="1XX52x" to="bhcn:7XU1fOGp7Jz" resolve="CellModel_Tooltip" />
     <node concept="3EZMnI" id="7XU1fOGp87G" role="2wV5jI">
       <node concept="3F1sOY" id="7XU1fOGp87T" role="3EZMnx">
-        <ref role="1NtTu8" to="bhcn:7XU1fOGp86t" />
+        <ref role="1NtTu8" to="bhcn:7XU1fOGp86t" resolve="anchor" />
       </node>
       <node concept="3F0ifn" id="7XU1fOGp87N" role="3EZMnx">
         <property role="3F0ifm" value="with tooltip" />
@@ -72,7 +72,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7XU1fOGp880" role="3EZMnx">
-        <ref role="1NtTu8" to="bhcn:7XU1fOGp86r" />
+        <ref role="1NtTu8" to="bhcn:7XU1fOGp86r" resolve="tooltip" />
       </node>
       <node concept="2iRkQZ" id="7XU1fOGp89I" role="2iSdaV" />
       <node concept="VPXOz" id="7XU1fOGp89G" role="3F10Kt">
