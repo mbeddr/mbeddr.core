@@ -40,6 +40,18 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_6" name="PatchMPS" type="Ant">
+        <parameters>
+          <param name="build-file-path" value="scripts /startup/pathMPS.xml" />
+          <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
+          <param name="target" value="patchMPS" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Mbeddr2_Bootstrap_MbeddrBoostrap">
