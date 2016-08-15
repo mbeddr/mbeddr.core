@@ -18,7 +18,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
     <build-runners order="RUNNER_6, RUNNER_9, RUNNER_7">
       <runner id="RUNNER_6" name="PatchMPS" type="Ant">
         <parameters>
-          <param name="build-file-path" value="scripts /startup/pathMPS.xml" />
+          <param name="build-file-path" value="scripts/startup/pathMPS.xml" />
           <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
           <param name="target" value="patchMPS" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
