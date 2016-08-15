@@ -1,0 +1,9 @@
+apply plugin: 'java'
+apply plugin: 'ivy-publish'
+
+ant.property(name: 'build.Dir', location: projectDir )
+def CleanGeneratedCode_Task = "cleanSources"
+def CleanPlugins_Task = "clean"
+def GenerateCode_Task = "generate"
+def BuildPlugin_Task = "assemble"
+def RunTests_Task = "check"

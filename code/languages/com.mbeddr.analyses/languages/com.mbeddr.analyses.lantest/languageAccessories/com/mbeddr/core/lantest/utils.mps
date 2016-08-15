@@ -42,6 +42,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="drpk" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.make(MPS.Workbench/)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
@@ -1116,7 +1117,7 @@
             </node>
             <node concept="TSZUe" id="33cGTVo7gwC" role="2OqNvi">
               <node concept="3TUQnm" id="3jJnA6J42Ta" role="25WWJ7">
-                <ref role="3TV0OU" to="x27k:7hIwPwVQD7C" resolve="ClosureStatementList" />
+                <ref role="3TV0OU" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
               </node>
             </node>
           </node>

@@ -93,9 +93,9 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
+            <generator generatorUID="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c(com.mbeddr.core.pointers#5684014141267676678)" />
             <external-mapping>
-              <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1758019824472882133" />
+              <mapping-node modelUID="r:f0608da8-581c-4036-9ab1-efc7bbb5db1c(com.mbeddr.core.pointers.generator.template.main@generator)" nodeID="5684014141267676763" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
