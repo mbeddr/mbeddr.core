@@ -10632,6 +10632,34 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbJ" id="526vwJmfu_w" role="3cqZAp">
+                    <node concept="3clFbS" id="526vwJmfu_y" role="3clFbx">
+                      <node concept="3cpWs6" id="526vwJmfAgt" role="3cqZAp">
+                        <node concept="3clFbT" id="526vwJmfAQe" role="3cqZAk">
+                          <property role="3clFbU" value="false" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="22lmx$" id="526vwJmfxBT" role="3clFbw">
+                      <node concept="3clFbC" id="526vwJmf$wU" role="3uHU7w">
+                        <node concept="10Nm6u" id="526vwJmf_6I" role="3uHU7w" />
+                        <node concept="2OqwBi" id="526vwJmfzLy" role="3uHU7B">
+                          <node concept="37vLTw" id="526vwJmfyXg" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2j3xXObfW4s" resolve="nodeEditor" />
+                          </node>
+                          <node concept="liA8E" id="526vwJmf$8W" role="2OqNvi">
+                            <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbC" id="526vwJmfwIK" role="3uHU7B">
+                        <node concept="37vLTw" id="526vwJmfvUs" role="3uHU7B">
+                          <ref role="3cqZAo" node="2j3xXObfW4s" resolve="nodeEditor" />
+                        </node>
+                        <node concept="10Nm6u" id="526vwJmfxtz" role="3uHU7w" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="2j3xXObfW4z" role="3cqZAp">
                     <node concept="17R0WA" id="2j3xXObfW4$" role="3clFbG">
                       <node concept="37vLTw" id="65h4zEqXg5c" role="3uHU7B">
