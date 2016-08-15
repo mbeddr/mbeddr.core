@@ -39,7 +39,6 @@
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
     <import index="6wtx" ref="r:b3d1de11-ac9a-484b-b90e-25f8ae656f17(com.mbeddr.analyses.cbmc.rt.analyses.loops)" />
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -321,7 +320,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -2996,9 +2994,31 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="3hNQKr2vXuR" role="3clF47">
-                      <node concept="3SKdUt" id="3hNQKr2waX1" role="3cqZAp">
-                        <node concept="3SKdUq" id="3hNQKr2waX4" role="3SKWNk">
-                          <property role="3SKdUp" value="do nothing" />
+                      <node concept="3SKdUt" id="6hXQBIqVGZQ" role="3cqZAp">
+                        <node concept="3SKdUq" id="6hXQBIqVGZR" role="3SKWNk">
+                          <property role="3SKdUp" value="show loops analyzer calls this when a runtime-error or cancel occurred" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="7RBgWEJcqHF" role="3cqZAp">
+                        <node concept="2YIFZM" id="6BowXlDxSD4" role="3clFbG">
+                          <ref role="37wK5l" to="uipx:6BowXlDxMWP" resolve="displayLongErrorDialog" />
+                          <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
+                          <node concept="Xl_RD" id="6BowXlDxSD5" role="37wK5m">
+                            <property role="Xl_RC" value="Fatal Error while Running CBMC!" />
+                          </node>
+                          <node concept="NRdvd" id="6BowXlDxSD6" role="37wK5m">
+                            <ref role="1Pybhc" to="p8vh:3FEqw8GYAfT" resolve="ErrorMessageUtils" />
+                            <ref role="37wK5l" to="p8vh:3FEqw8GYAlY" resolve="computeErrorMessage" />
+                            <node concept="37vLTw" id="6hXQBIqW0ah" role="37wK5m">
+                              <ref role="3cqZAo" node="3hNQKr2vXuP" resolve="r" />
+                            </node>
+                          </node>
+                          <node concept="3cmrfG" id="6BowXlDL4wZ" role="37wK5m">
+                            <property role="3cmrfH" value="800" />
+                          </node>
+                          <node concept="3cmrfG" id="6BowXlDL4OT" role="37wK5m">
+                            <property role="3cmrfH" value="200" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3117,28 +3137,27 @@
         </node>
         <node concept="3clFbF" id="3x0R1LJfFc9" role="3cqZAp">
           <node concept="37vLTI" id="3x0R1LJfFca" role="3clFbG">
-            <node concept="2OqwBi" id="5etR5IKoKN_" role="37vLTx">
-              <node concept="2OqwBi" id="5etR5IKoGQU" role="2Oq$k0">
-                <node concept="2OqwBi" id="5etR5IKoG_w" role="2Oq$k0">
-                  <node concept="2WthIp" id="5etR5IKoGyZ" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="5etR5IKoGJq" role="2OqNvi">
-                    <ref role="2WH_rO" node="1$MI$rgGhqj" resolve="analysis" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="5etR5IKoH2U" role="2OqNvi">
-                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="5etR5IKoL8a" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:g2CnSr0ARV" resolve="qualifiedNameCIdentifier" />
-              </node>
-            </node>
             <node concept="2OqwBi" id="3x0R1LJfFce" role="37vLTJ">
               <node concept="37vLTw" id="3x0R1LJfFcf" role="2Oq$k0">
                 <ref role="3cqZAo" node="1$MI$rgGhqQ" resolve="config" />
               </node>
               <node concept="2S8uIT" id="5etR5IKoK_d" role="2OqNvi">
                 <ref role="2S8YL0" to="tzyt:2xigTGTFegf" resolve="functionName" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="6hXQBIqUuOn" role="37vLTx">
+              <ref role="1Pybhc" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+              <ref role="37wK5l" to="tzyt:3kUGzlRgWzQ" resolve="computeEntryFunctionName" />
+              <node concept="2OqwBi" id="6hXQBIqUuOo" role="37wK5m">
+                <node concept="2OqwBi" id="6hXQBIqUuOp" role="2Oq$k0">
+                  <node concept="2WthIp" id="6hXQBIqUuOq" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="6hXQBIqUuOr" role="2OqNvi">
+                    <ref role="2WH_rO" node="1$MI$rgGhqj" resolve="analysis" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6hXQBIqUuOs" role="2OqNvi">
+                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+                </node>
               </node>
             </node>
           </node>
