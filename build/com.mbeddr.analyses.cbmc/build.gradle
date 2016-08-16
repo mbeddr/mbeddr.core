@@ -5,20 +5,20 @@ def script_build_cbmcMac = new File(rootProject.projectDir.absolutePath + "/buil
 def cbmcHome = rootProject.projectDir.absolutePath + "/../cbmc/src"
 
 task build_cbmcWin(type: Exec) {
-  workingDir cbmcHome
+  workingDir file(cbmcHome)
   //def args = buildProcSpawnArgList(['start', script_build_cbmcWin])
   //commandLine(args)
   commandLine(script_build_cbmcWin)
 }
 
 task build_cbmcMac(type: Exec) {
-    workingDir cbmcHome
+    workingDir file(cbmcHome)
     def args = buildProcSpawnArgList([script_build_cbmcMac])
     commandLine(args)
 }
 
 task build_cbmcLinux(type: Exec) {
-    workingDir cbmcH    ome
+    workingDir file(cbmcHome)
     commandLine(script_build_cbmcLinux)
 }
 
