@@ -11,6 +11,8 @@
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="bbp5" ref="120e1c9d-4e27-4478-b2af-b2c3bd3850b0/r:ea4f2df6-5e5c-49de-8679-6112ec7dd9c3(com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.structure)" />
     <import index="iwwu" ref="r:2c4d9270-b6d6-44af-aecd-e01a223680db(jetbrains.mps.kernel.model)" />
+    <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
@@ -203,6 +205,10 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -1027,7 +1033,7 @@
     </node>
     <node concept="2tJIrI" id="Op$R49dzYB" role="jymVt" />
     <node concept="3clFb_" id="Op$R493_PW" role="jymVt">
-      <property role="TrG5h" value="getLink" />
+      <property role="TrG5h" value="getLinkNode" />
       <node concept="3Tqbb2" id="Op$R493_Qq" role="3clF45">
         <ref role="ehGHo" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
       </node>
@@ -1036,6 +1042,25 @@
         <node concept="3clFbF" id="Op$R493_RQ" role="3cqZAp">
           <node concept="37vLTw" id="Op$R493_RP" role="3clFbG">
             <ref role="3cqZAo" node="Op$R492J53" resolve="link" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2cvVnUuPzt_" role="jymVt" />
+    <node concept="3clFb_" id="2cvVnUuPz7A" role="jymVt">
+      <property role="TrG5h" value="getLink" />
+      <node concept="3uibUv" id="2cvVnUuP$yk" role="3clF45">
+        <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+      </node>
+      <node concept="3Tm1VV" id="2cvVnUuPz7C" role="1B3o_S" />
+      <node concept="3clFbS" id="2cvVnUuPz7D" role="3clF47">
+        <node concept="3clFbF" id="2cvVnUuP$75" role="3cqZAp">
+          <node concept="2YIFZM" id="2cvVnUuP$8o" role="3clFbG">
+            <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getContainmentLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+            <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+            <node concept="1rXfSq" id="2cvVnUuP$cJ" role="37wK5m">
+              <ref role="37wK5l" node="Op$R493_PW" resolve="getLinkNode" />
+            </node>
           </node>
         </node>
       </node>
