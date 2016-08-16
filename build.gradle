@@ -46,12 +46,12 @@ subprojects {
 	}
 	
 	// setting mbeddrBuild	
-	if (project.hasProperty('mbeddrBuild')) {
-		ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+	if (project.hasProperty('mbeddrRelease')) {
+		ext.mbeddrBuild = project.getProperty('mbeddrRelease')
 	} else {
         def gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
         //def gitHash = 'git rev-list --count HEAD'.execute().in.text.trim().toString()
-		ext.mbeddrBuild = gitBranch
+		ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
 	}
     ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
@@ -97,9 +97,15 @@ subprojects {
     // ant script locations
     ext.scriptsBasePath = file(rootProject.projectDir.absolutePath + "/scripts/").getAbsolutePath()
 
+    ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+    ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+
     // repository urls
-    ext.mps_repository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-    //ext.mps_repository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+    if(project.hasProperty('mbeddrRelease')) {
+        ext.repository = project.releaseRepository
+    } else {
+        ext.repository = project.snapshotRepository
+    }
 
     ant.taskdef(name: "makeTests",
             classname: "com.mbeddr.tools.ant.MakeTestsTask",
@@ -115,7 +121,7 @@ subprojects {
                     password nexusPassword
                 }
             }
-            url mps_repository
+            url repository
         }
     }
 
@@ -206,7 +212,7 @@ project(':build:com.jetbrains.mps') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url project.releaseRepository
             }
         }
     }
@@ -230,7 +236,7 @@ project(':build:com.mbeddr.allScripts') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url repository
             }
         }
     }
@@ -282,7 +288,7 @@ project(':build:com.mbeddr.platform') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url repository
             }
         }
     }
@@ -314,7 +320,7 @@ project(':build:com.mbeddr.allInOne') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url repository
             }
         }
     }
@@ -354,7 +360,7 @@ project(':build:com.mbeddr.rcp') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url repository
             }
         }
     }
@@ -386,7 +392,7 @@ project(':build:com.mbeddr.release') {
         }
         repositories {
             maven {
-                url mps_repository
+                url repository
             }
         }
     }*/
@@ -422,7 +428,7 @@ project(':build:com.mbeddr.analyses.cbmc') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url project.releaseRepository
             }
         }
     }
@@ -451,7 +457,7 @@ project(':build:com.mbeddr.tutorial') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url mps_repository
+                url repository
             }
         }
     }
