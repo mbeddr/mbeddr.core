@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -20,9 +20,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -145,7 +144,7 @@
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfYB" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/statemachine.png" />
+      <property role="1iqoE4" value="${module}/icons/statemachine.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="50Lk78xBraf">
@@ -159,7 +158,7 @@
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfY$" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/state.png" />
+      <property role="1iqoE4" value="${module}/icons/state.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="50Lk78xBraV">
@@ -183,7 +182,7 @@
       <ref role="PrY4T" node="4CnBdUFzcHr" resolve="ITriggerContext" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfYy" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/transition.png" />
+      <property role="1iqoE4" value="${module}/icons/transition.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4SJV0WTeRxt">
@@ -235,7 +234,7 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfY_" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/var.png" />
+      <property role="1iqoE4" value="${module}/icons/var.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NQSyUTqXkL">
@@ -318,7 +317,7 @@
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfYC" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/argument.png" />
+      <property role="1iqoE4" value="${module}/icons/argument.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1z9MsBsVkji">
@@ -475,7 +474,7 @@
       <ref role="20lvS9" node="41KMvfcjScv" resolve="IInEventBinding" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfYA" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/inevent.png" />
+      <property role="1iqoE4" value="${module}/icons/inevent.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="41KMvfcjScu">
@@ -492,7 +491,7 @@
       <ref role="20lvS9" node="vvmfCe77Tq" resolve="IOutEventBinding" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfYz" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/outevent.png" />
+      <property role="1iqoE4" value="${module}/icons/outevent.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="41KMvfcjScv">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -18,9 +18,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -81,7 +80,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfKu" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/mock.png" />
+      <property role="1iqoE4" value="${module}/icons/mock.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1Rr52SXzvm0">
@@ -139,7 +138,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfKt" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/CallCount.png" />
+      <property role="1iqoE4" value="${module}/icons/CallCount.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4jc_TWT3773">
@@ -230,7 +229,7 @@
       <ref role="20lvS9" to="v7ag:3TmmsQkC_PW" resolve="Operation" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfKs" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/Steps.png" />
+      <property role="1iqoE4" value="${module}/icons/Steps.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4jc_TWT5CX4">
@@ -275,7 +274,7 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfKr" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/AssertStep.png" />
+      <property role="1iqoE4" value="${module}/icons/AssertStep.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Krj9ItiaCG">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -309,7 +309,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkWN" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkWM" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" />
+                          <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" resolve="typeDef" />
                         </node>
                       </node>
                     </node>
@@ -360,7 +360,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkYr" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkYq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:5yYXyc4Z0CT" />
+                          <ref role="3Tt5mk" to="clbe:5yYXyc4Z0CT" resolve="struct" />
                         </node>
                       </node>
                     </node>
@@ -411,7 +411,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkYM" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkYL" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:56ytRgsLog7" />
+                          <ref role="3Tt5mk" to="clbe:56ytRgsLog7" resolve="union" />
                         </node>
                       </node>
                     </node>
@@ -462,7 +462,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkZ9" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkZ8" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:7D99css6O16" />
+                          <ref role="3Tt5mk" to="clbe:7D99css6O16" resolve="enum" />
                         </node>
                       </node>
                     </node>

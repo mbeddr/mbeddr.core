@@ -109,6 +109,7 @@
     <node concept="PrWs8" id="6B579NFvMSg" role="PzmwI">
       <ref role="PrY4T" node="6B579NFvMS6" resolve="IActionGenerationProxy" />
     </node>
+    <node concept="asaX9" id="1YKLYyyXiFo" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6oKG1kMyo9t">
     <property role="3GE5qa" value="cells" />
@@ -202,6 +203,7 @@
     <node concept="PrWs8" id="6B579NFvMSa" role="PzmwI">
       <ref role="PrY4T" node="6B579NFvMS6" resolve="IActionGenerationProxy" />
     </node>
+    <node concept="asaX9" id="1YKLYyyXiFk" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="4qdNcHzYfBo">
     <property role="3GE5qa" value="cells" />
@@ -812,6 +814,7 @@
     <node concept="PrWs8" id="6B579NFvMSm" role="PzmwI">
       <ref role="PrY4T" node="6B579NFvMS6" resolve="IActionGenerationProxy" />
     </node>
+    <node concept="asaX9" id="1YKLYyyXiFg" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="6B579NFvMS6">
     <property role="3GE5qa" value="actionsAspect" />
@@ -950,6 +953,25 @@
     <property role="34LRSv" value="wrappedConcept" />
     <property role="EcuMT" value="6349233906483558394" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="1YKLYyyFscL">
+    <property role="EcuMT" value="2283544813052478257" />
+    <property role="TrG5h" value="GrammarCellsTransformationMenuPart" />
+    <property role="34LRSv" value="grammarCells" />
+    <ref role="1TJDcQ" to="tpc2:1qY_lWSjJZY" resolve="TransformationMenuPart" />
+  </node>
+  <node concept="1TIwiD" id="7NlRaxAKB$S">
+    <property role="EcuMT" value="8995338446579071288" />
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="Parameter_expectedOutputConceptExactly" />
+    <property role="34LRSv" value="expectedOutputConceptExactly" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7NlRaxB6aVc">
+    <property role="EcuMT" value="8995338446584721100" />
+    <property role="TrG5h" value="GrammarCellsSubstituteMenuPart" />
+    <property role="34LRSv" value="grammarCells" />
+    <ref role="1TJDcQ" to="tpc2:n0c53aH5hE" resolve="SubstituteMenuPart" />
   </node>
 </model>
 

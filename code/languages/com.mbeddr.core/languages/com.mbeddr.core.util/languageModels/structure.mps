@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -18,9 +18,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -47,7 +46,6 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -279,7 +277,7 @@
     <property role="EcuMT" value="2688792604367903085" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$AICE" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/messagetable.png" />
+      <property role="1iqoE4" value="${module}/icons/messagetable.png" />
     </node>
     <node concept="1TJgyj" id="2lgwE2U2X_R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1753,17 +1751,19 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1lYd87J$xt$">
-    <property role="1pbfSe" value="84954085" />
     <property role="3GE5qa" value="includeGuards" />
     <property role="TrG5h" value="UniqueIncludeGuards" />
     <property role="34LRSv" value="unique include guards" />
+    <property role="EcuMT" value="1548733054536783716" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7uVh7XGeY_d" role="1TKVEl">
       <property role="TrG5h" value="preffix" />
+      <property role="IQ2nx" value="8627564825225718093" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="7uVh7XGeY_f" role="1TKVEl">
       <property role="TrG5h" value="suffix" />
+      <property role="IQ2nx" value="8627564825225718095" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="1lYd87J$xt_" role="PzmwI">
@@ -1771,16 +1771,17 @@
     </node>
   </node>
   <node concept="1TIwiD" id="27FUWv4$Q1c">
-    <property role="1pbfSe" value="427865069" />
     <property role="3GE5qa" value="util" />
     <property role="TrG5h" value="OredExprList" />
     <property role="34LRSv" value="[||" />
     <property role="R4oN_" value="a list of or'ed expressions" />
+    <property role="EcuMT" value="2444306466007638092" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="27FUWv4$Q1d" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="2444306466007638093" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>

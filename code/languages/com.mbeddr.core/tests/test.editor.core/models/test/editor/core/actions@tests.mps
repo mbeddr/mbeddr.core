@@ -11,7 +11,7 @@
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
   </languages>
@@ -176,9 +176,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -3227,26 +3224,6 @@
       <node concept="2TK7Tu" id="7K_2cV$Jn1O" role="3cqZAp">
         <property role="2TTd_B" value="exported" />
       </node>
-      <node concept="3SKdUt" id="5pzVkrqdM2i" role="3cqZAp">
-        <node concept="3SKdUq" id="5pzVkrqdM2j" role="3SKWNk">
-          <property role="3SKdUp" value="check does not work on the build server" />
-        </node>
-      </node>
-      <node concept="3SKdUt" id="5pzVkrqdKAE" role="3cqZAp">
-        <node concept="3SKWN0" id="5pzVkrqdKAF" role="3SKWNk">
-          <node concept="3clFbF" id="7K_2cV$Jn1P" role="3SKWNf">
-            <node concept="2OqwBi" id="7K_2cV$Jn1Q" role="3clFbG">
-              <node concept="369mXd" id="7K_2cV$Jn1R" role="2Oq$k0" />
-              <node concept="AQDAd" id="7K_2cV$Jn1S" role="2OqNvi">
-                <ref role="37wK5l" node="73exJLGFf2n" resolve="checkCaret" />
-                <node concept="Xl_RD" id="7K_2cV$Jn1T" role="37wK5m">
-                  <property role="Xl_RC" value="exported" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="LiM7Y" id="7K_2cV$Jn6J">
@@ -3289,26 +3266,6 @@
     <node concept="3clFbS" id="7K_2cV$Jn6U" role="LjaKd">
       <node concept="2TK7Tu" id="7K_2cV$Jn6V" role="3cqZAp">
         <property role="2TTd_B" value="extern" />
-      </node>
-      <node concept="3SKdUt" id="5pzVkrqdKRD" role="3cqZAp">
-        <node concept="3SKdUq" id="5pzVkrqdKUU" role="3SKWNk">
-          <property role="3SKdUp" value="check does not work on the build server" />
-        </node>
-      </node>
-      <node concept="3SKdUt" id="5pzVkrqdKH7" role="3cqZAp">
-        <node concept="3SKWN0" id="5pzVkrqdKH8" role="3SKWNk">
-          <node concept="3clFbF" id="7K_2cV$Jn6W" role="3SKWNf">
-            <node concept="2OqwBi" id="7K_2cV$Jn6X" role="3clFbG">
-              <node concept="369mXd" id="7K_2cV$Jn6Y" role="2Oq$k0" />
-              <node concept="AQDAd" id="7K_2cV$Jn6Z" role="2OqNvi">
-                <ref role="37wK5l" node="73exJLGFf2n" resolve="checkCaret" />
-                <node concept="Xl_RD" id="7K_2cV$Jn70" role="37wK5m">
-                  <property role="Xl_RC" value="extern" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

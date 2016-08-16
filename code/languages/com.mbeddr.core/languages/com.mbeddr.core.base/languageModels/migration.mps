@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -485,14 +485,14 @@
                               <node concept="2pJPED" id="4uK_SszeeFB" role="2pJPEn">
                                 <ref role="2pJxaS" to="bdcd:7U3Fobb_8El" resolve="SuppressWarnings" />
                                 <node concept="2pIpSj" id="4uK_SszeeGp" role="2pJxcM">
-                                  <ref role="2pIpSl" to="bdcd:7U3Fobb_8Em" />
+                                  <ref role="2pIpSl" to="bdcd:7U3Fobb_8Em" resolve="kinds" />
                                   <node concept="36biLy" id="4uK_SszeeLv" role="2pJxcZ">
                                     <node concept="2OqwBi" id="4uK_SszeeS_" role="36biLW">
                                       <node concept="37vLTw" id="4uK_SszeeOq" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4uK_SszedmI" resolve="sw" />
                                       </node>
                                       <node concept="3Tsc0h" id="4uK_Sszef0G" role="2OqNvi">
-                                        <ref role="3TtcxE" to="vs0r:4xqvipEHXGz" />
+                                        <ref role="3TtcxE" to="vs0r:4xqvipEHXGz" resolve="kinds" />
                                       </node>
                                     </node>
                                   </node>

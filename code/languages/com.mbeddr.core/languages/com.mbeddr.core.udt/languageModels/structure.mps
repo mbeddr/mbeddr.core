@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -17,9 +17,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -76,7 +75,7 @@
     <property role="EcuMT" value="6394819151180597807" />
     <ref role="1TJDcQ" node="2CEi94edfgd" resolve="ModuleContentSUDeclaration" />
     <node concept="1QGGSu" id="1N5Tah$AQyy" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/struct.png" />
+      <property role="1iqoE4" value="${module}/icons/struct.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5yYXyc4Z0CS">
@@ -129,7 +128,7 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AQyz" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/typedef.png" />
+      <property role="1iqoE4" value="${module}/icons/typedef.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Cn">
@@ -179,7 +178,7 @@
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AQyx" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/enum.png" />
+      <property role="1iqoE4" value="${module}/icons/enum.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D99css6O0t">
@@ -288,7 +287,7 @@
     <property role="EcuMT" value="5882395403881907066" />
     <ref role="1TJDcQ" node="2CEi94edfgd" resolve="ModuleContentSUDeclaration" />
     <node concept="1QGGSu" id="1N5Tah$AQy$" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/struct.png" />
+      <property role="1iqoE4" value="${module}/icons/struct.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLog5">

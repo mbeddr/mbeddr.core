@@ -2338,5 +2338,17 @@
   <node concept="3p36aQ" id="2cvVnUuAoxX">
     <ref role="aqKnT" to="teg0:1Ia5rYltZv0" resolve="StubFlagCell" />
   </node>
+  <node concept="24kQdi" id="1YKLYyyFwuL">
+    <ref role="1XX52x" to="teg0:1YKLYyyFscL" resolve="GrammarCellsTransformationMenuPart" />
+    <node concept="PMmxH" id="1YKLYyyFwuT" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7NlRaxB6aVl">
+    <ref role="1XX52x" to="teg0:7NlRaxB6aVc" resolve="GrammarCellsSubstituteMenuPart" />
+    <node concept="PMmxH" id="7NlRaxB6aVn" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 

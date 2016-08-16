@@ -2,7 +2,7 @@
 <model ref="r:433cfec6-a07f-42b2-9ffb-7da713094006(com.mbeddr.ext.math.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -114,7 +114,7 @@
               <node concept="2OqwBi" id="PWcNB4W7Em" role="2Oq$k0">
                 <node concept="1r4Lsj" id="PWcNB4W7_n" role="2Oq$k0" />
                 <node concept="3TrEf2" id="PWcNB4WerE" role="2OqNvi">
-                  <ref role="3Tt5mk" to="cetu:PWcNB4W7ce" />
+                  <ref role="3Tt5mk" to="cetu:PWcNB4W7ce" resolve="varType" />
                 </node>
               </node>
               <node concept="zfrQC" id="PWcNB4Wgss" role="2OqNvi">
@@ -156,7 +156,7 @@
                       <ref role="3cqZAo" node="4r1mNB_tI4Z" resolve="power" />
                     </node>
                     <node concept="3TrEf2" id="4r1mNB_tJ3y" role="2OqNvi">
-                      <ref role="3Tt5mk" to="cetu:4r1mNB_o5W9" />
+                      <ref role="3Tt5mk" to="cetu:4r1mNB_o5W9" resolve="base" />
                     </node>
                   </node>
                   <node concept="2oxUTD" id="4r1mNB_tKdk" role="2OqNvi">
@@ -213,7 +213,7 @@
                       <ref role="3cqZAo" node="4r1mNB_u0Ae" resolve="sqrt" />
                     </node>
                     <node concept="3TrEf2" id="4r1mNB_u2pe" role="2OqNvi">
-                      <ref role="3Tt5mk" to="cetu:4r1mNB_lBZi" />
+                      <ref role="3Tt5mk" to="cetu:4r1mNB_lBZi" resolve="expression" />
                     </node>
                   </node>
                 </node>

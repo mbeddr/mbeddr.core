@@ -164,10 +164,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -228,7 +227,7 @@
             <property role="1dT_AB" value="Generates the actual list of values that must be print out into the text buffer. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdc4R" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdc4R" role="3nqlJM">
           <property role="x79VB" value="the list of values (string, node)" />
         </node>
       </node>
@@ -249,7 +248,7 @@
             <property role="1dT_AB" value="Wraps this token in a parenthesis token. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdc7e" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdc7e" role="3nqlJM">
           <property role="x79VB" value="the parenthesis token" />
         </node>
       </node>
@@ -273,7 +272,7 @@
             <property role="1dT_AB" value="IFF (1) it is an atomic token and (2) its value is null or the empty string. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdc9p" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdc9p" role="3nqlJM">
           <property role="x79VB" value="true if the token is empty" />
         </node>
       </node>
@@ -294,7 +293,7 @@
             <property role="1dT_AB" value="Returns the kind of the token. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdoOF" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdoOF" role="3nqlJM">
           <property role="x79VB" value="the kind of the token" />
         </node>
       </node>

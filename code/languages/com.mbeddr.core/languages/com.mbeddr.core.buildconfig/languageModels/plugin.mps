@@ -2,7 +2,7 @@
 <model ref="r:12f155ed-0af0-4e37-8eac-70f4cf323371(com.mbeddr.core.buildconfig.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -485,7 +485,7 @@
                                               <node concept="1uHKPH" id="2obGnlRih2N" role="2OqNvi" />
                                             </node>
                                             <node concept="3TrEf2" id="2obGnlRih2O" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />
+                                              <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                                             </node>
                                           </node>
                                         </node>
@@ -518,7 +518,7 @@
                                               <ref role="3cqZAo" node="2obGnlRih2H" resolve="platform" />
                                             </node>
                                             <node concept="3Tsc0h" id="2obGnlRzCr5" role="2OqNvi">
-                                              <ref role="3TtcxE" to="51wr:2obGnlQStWq" />
+                                              <ref role="3TtcxE" to="51wr:2obGnlQStWq" resolve="postProcessors" />
                                             </node>
                                           </node>
                                         </node>
@@ -757,7 +757,7 @@
                             </node>
                           </node>
                           <node concept="2pIpSj" id="7$0wAVocsDe" role="2pJxcM">
-                            <ref role="2pIpSl" to="51wr:7$0wAVob3oZ" />
+                            <ref role="2pIpSl" to="51wr:7$0wAVob3oZ" resolve="template" />
                             <node concept="36biLy" id="7$0wAVoe$t1" role="2pJxcZ">
                               <node concept="37vLTw" id="7$0wAVoe$tB" role="36biLW">
                                 <ref role="3cqZAo" node="7$0wAVoeqvo" resolve="platform" />

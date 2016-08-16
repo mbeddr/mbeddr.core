@@ -2,7 +2,7 @@
 <model ref="r:46817041-e1bc-4759-8f95-11e32b42cd82(com.mbeddr.core.unittest.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
@@ -185,7 +185,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4esKCdYySNm" role="2OqNvi">
-                    <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" />
+                    <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" resolve="valueType" />
                   </node>
                 </node>
               </node>
@@ -333,7 +333,7 @@
                   <node concept="2OqwBi" id="77nuVWJ0MVS" role="2Oq$k0">
                     <node concept="2OqwBi" id="77nuVWJ0MVT" role="2Oq$k0">
                       <node concept="3Tsc0h" id="77nuVWJ0MVU" role="2OqNvi">
-                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
                       </node>
                       <node concept="37vLTw" id="77nuVWJ0MVV" role="2Oq$k0">
                         <ref role="3cqZAo" node="77nuVWJ0D8F" resolve="bc" />
@@ -348,7 +348,7 @@
                   <node concept="1uHKPH" id="77nuVWJ0MVY" role="2OqNvi" />
                 </node>
                 <node concept="3TrEf2" id="77nuVWJ0NgT" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" />
+                  <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" resolve="testStrategy" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="77nuVWJ0MVZ" role="2OqNvi">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -19,9 +19,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -161,7 +160,7 @@
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJo0" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/implementationmodule.png" />
+      <property role="1iqoE4" value="${module}/icons/implementationmodule.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="5_l8w1EmTdf">
@@ -257,7 +256,7 @@
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJnW" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/function.png" />
+      <property role="1iqoE4" value="${module}/icons/function.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvx">
@@ -299,7 +298,7 @@
       <ref role="PrY4T" node="6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJo2" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/function.png" />
+      <property role="1iqoE4" value="${module}/icons/function.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
@@ -318,7 +317,7 @@
       <ref role="PrY4T" to="c4fa:52l0VUuN5O_" resolve="ICanBeStoredInRegister" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJnY" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/argument.png" />
+      <property role="1iqoE4" value="${module}/icons/argument.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7LOsK3rQkU_">
@@ -385,7 +384,7 @@
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJnZ" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/externalmodule.png" />
+      <property role="1iqoE4" value="${module}/icons/externalmodule.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJe">
@@ -417,7 +416,7 @@
     <property role="EcuMT" value="6116558314501417952" />
     <ref role="1TJDcQ" node="5jyom5fOqJe" resolve="ExternalResourceDescriptor" />
     <node concept="1QGGSu" id="1N5Tah$AJo1" role="rwd14">
-      <property role="1QGGTI" value="${module}/external.gif" />
+      <property role="1iqoE4" value="${module}/external.gif" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ilck8KqBqr">
@@ -496,7 +495,7 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJnX" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/globalvar.png" />
+      <property role="1iqoE4" value="${module}/icons/globalvar.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ilck8KpYYm">
@@ -516,7 +515,7 @@
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJnV" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/globalconst.png" />
+      <property role="1iqoE4" value="${module}/icons/globalconst.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5IYyAOzCwFE">
@@ -913,7 +912,7 @@
       <ref role="PrY4T" to="vs0r:1DVNPtFPUDE" resolve="IHideFromOutline" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJo4" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/empty.png" />
+      <property role="1iqoE4" value="${module}/icons/empty.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5DwX9xlExfL">
@@ -976,7 +975,7 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AJo3" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/globalconst.png" />
+      <property role="1iqoE4" value="${module}/icons/globalconst.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3pWy65PNHJx">
