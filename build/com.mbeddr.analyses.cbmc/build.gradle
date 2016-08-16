@@ -18,21 +18,21 @@ task build_cbmcMac(type: Exec) {
 }
 
 task build_cbmcLinux(type: Exec) {
-    workingDir cbmcHome
+    workingDir cbmcH    ome
     commandLine(script_build_cbmcLinux)
 }
 
 task publish_cbmcWin(type: Zip, dependsOn: build_cbmcWin) {
-    from cbmcHome
+    from file(cbmcHome)
     include "cbmc-win.zip"
 }
 
 task publish_cbmcMac(type: Zip, dependsOn: build_cbmcMac) {
-    from cbmcHome
+    from file(cbmcHome)
     include "cbmc-mac.zip"
 }
 
 task publish_cbmcLinux(type: Zip, dependsOn: build_cbmcLinux) {
-    from cbmcHome
+    from file(cbmcHome)
     include "cbmc-linux.tar.gz"
 }
