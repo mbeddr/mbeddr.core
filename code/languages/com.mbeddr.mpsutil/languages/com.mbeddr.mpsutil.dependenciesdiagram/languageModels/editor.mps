@@ -7,12 +7,12 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -666,7 +666,7 @@
                                                 <node concept="2OqwBi" id="6bKTjCNkz6W" role="2Oq$k0">
                                                   <node concept="2ZN8Hh" id="6bKTjCNkz6X" role="2Oq$k0" />
                                                   <node concept="3Tsc0h" id="6bKTjCNkz6Y" role="2OqNvi">
-                                                    <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                                                    <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
                                                   </node>
                                                 </node>
                                                 <node concept="2DeJg1" id="6bKTjCNkz6Z" role="2OqNvi" />
@@ -859,7 +859,7 @@
                                                 <node concept="2OqwBi" id="6bKTjCNl13f" role="2Oq$k0">
                                                   <node concept="2ZN8Hh" id="6bKTjCNl13g" role="2Oq$k0" />
                                                   <node concept="3Tsc0h" id="6bKTjCNl13h" role="2OqNvi">
-                                                    <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" />
+                                                    <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" resolve="models" />
                                                   </node>
                                                 </node>
                                                 <node concept="2DeJg1" id="6bKTjCNl13i" role="2OqNvi" />
@@ -970,7 +970,7 @@
                 <node concept="2OqwBi" id="77UHMYYZ22u" role="3clFbG">
                   <node concept="23r2z0" id="77UHMYYZ1ZD" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="77UHMYYZ2ea" role="2OqNvi">
-                    <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                    <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
                   </node>
                 </node>
               </node>
@@ -3438,7 +3438,7 @@
                   <ref role="3cqZAo" node="3mf03aPcC9Z" resolve="dependenciesDiagram" />
                 </node>
                 <node concept="3Tsc0h" id="3mf03aPctBm" role="2OqNvi">
-                  <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" />
+                  <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" resolve="models" />
                 </node>
               </node>
               <node concept="3$u5V9" id="3mf03aPctBn" role="2OqNvi">
@@ -3626,7 +3626,7 @@
                   <ref role="3cqZAo" node="3mf03aPcOJK" resolve="dependenciesDiagram" />
                 </node>
                 <node concept="3Tsc0h" id="3mf03aPd90A" role="2OqNvi">
-                  <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                  <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
                 </node>
               </node>
               <node concept="3$u5V9" id="3mf03aPcOJ$" role="2OqNvi">

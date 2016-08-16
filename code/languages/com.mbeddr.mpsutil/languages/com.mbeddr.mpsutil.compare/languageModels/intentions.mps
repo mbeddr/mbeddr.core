@@ -4,7 +4,7 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -166,7 +166,7 @@
                 <node concept="2OqwBi" id="5uUCR4L_ObZ" role="2Oq$k0">
                   <node concept="2Sf5sV" id="5uUCR4L_O7p" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5uUCR4L_Pkj" role="2OqNvi">
-                    <ref role="3TtcxE" to="8do3:5uUCR4L$O2l" />
+                    <ref role="3TtcxE" to="8do3:5uUCR4L$O2l" resolve="refs" />
                   </node>
                 </node>
                 <node concept="2Kehj3" id="5uUCR4L_WXW" role="2OqNvi" />
@@ -186,7 +186,7 @@
                   <node concept="2OqwBi" id="5uUCR4L_Xfr" role="2Oq$k0">
                     <node concept="2Sf5sV" id="5uUCR4L_XaP" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="5uUCR4L_YnJ" role="2OqNvi">
-                      <ref role="3TtcxE" to="8do3:5uUCR4L$O2l" />
+                      <ref role="3TtcxE" to="8do3:5uUCR4L$O2l" resolve="refs" />
                     </node>
                   </node>
                   <node concept="WFELt" id="5uUCR4LA5TO" role="2OqNvi" />

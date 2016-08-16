@@ -5,7 +5,7 @@
     <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -85,13 +85,13 @@
   <node concept="24kQdi" id="7lmVLrULD8q">
     <ref role="1XX52x" to="731j:7lmVLrULD8n" resolve="Review" />
     <node concept="2SJGWt" id="66jx6gIAfcw" role="2wV5jI">
-      <ref role="2SJGWj" to="731j:7lmVLrULD8p" />
+      <ref role="2SJGWj" to="731j:7lmVLrULD8p" resolve="notes" />
       <node concept="3EZMnI" id="7lmVLrULD8s" role="2SJGWi">
         <node concept="3F0ifn" id="7lmVLrULD8t" role="3EZMnx">
           <property role="3F0ifm" value="Review for" />
         </node>
         <node concept="1iCGBv" id="7lmVLrULD8u" role="3EZMnx">
-          <ref role="1NtTu8" to="731j:7lmVLrULD8o" />
+          <ref role="1NtTu8" to="731j:7lmVLrULD8o" resolve="reviewedRoot" />
           <node concept="1sVBvm" id="7lmVLrULD8v" role="1sWHZn">
             <node concept="1HlG4h" id="7lmVLrULD8w" role="2wV5jI">
               <node concept="1HfYo3" id="7lmVLrULD8x" role="1HlULh">

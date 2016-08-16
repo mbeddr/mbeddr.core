@@ -2,7 +2,7 @@
 <model ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:c473d4a9-f86e-463a-bf76-f8263f085aec(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -88,7 +88,7 @@
           <property role="3F0ifm" value="starting module:" />
         </node>
         <node concept="3F1sOY" id="2A9nHKANPHC" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:2A9nHKANPH8" />
+          <ref role="1NtTu8" to="gfdq:2A9nHKANPH8" resolve="seedModel" />
         </node>
         <node concept="l2Vlx" id="4XCJ8CcQ6WG" role="2iSdaV" />
       </node>
@@ -101,7 +101,7 @@
           <property role="3F0ifm" value="save result in model:" />
         </node>
         <node concept="3F1sOY" id="3acDVtIDSDe" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:3acDVtIDSu6" />
+          <ref role="1NtTu8" to="gfdq:3acDVtIDSu6" resolve="modelWhereResultsAreSaved" />
         </node>
         <node concept="l2Vlx" id="3acDVtIDSxS" role="2iSdaV" />
       </node>
@@ -114,7 +114,7 @@
           <property role="3F0ifm" value="use temporary model:" />
         </node>
         <node concept="3F1sOY" id="52eR6w5QnvL" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:52eR6w5Qnsd" />
+          <ref role="1NtTu8" to="gfdq:52eR6w5Qnsd" resolve="temporaryModel" />
         </node>
         <node concept="l2Vlx" id="52eR6w5QnvM" role="2iSdaV" />
       </node>
@@ -140,7 +140,7 @@
           <property role="3F0ifm" value="seed chooser:" />
         </node>
         <node concept="3F1sOY" id="3acDVtI_Wvc" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:2P6psD9B1UY" />
+          <ref role="1NtTu8" to="gfdq:2P6psD9B1UY" resolve="seedChooser" />
         </node>
         <node concept="l2Vlx" id="3acDVtI_Wvd" role="2iSdaV" />
       </node>
@@ -169,7 +169,7 @@
           <property role="3F0ifm" value="concept chooser:" />
         </node>
         <node concept="3F1sOY" id="30nlpkLbOSl" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:30nlpkLbz5c" />
+          <ref role="1NtTu8" to="gfdq:30nlpkLbz5c" resolve="conceptChooser" />
         </node>
         <node concept="l2Vlx" id="30nlpkLbOSm" role="2iSdaV" />
       </node>
@@ -183,7 +183,7 @@
         </node>
         <node concept="3F2HdR" id="5aWlhTu3Xoa" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="gfdq:5aWlhTu3WIo" />
+          <ref role="1NtTu8" to="gfdq:5aWlhTu3WIo" resolve="scope" />
           <node concept="l2Vlx" id="5aWlhTu3Xoc" role="2czzBx" />
         </node>
         <node concept="l2Vlx" id="5aWlhTu3Xgw" role="2iSdaV" />
@@ -197,7 +197,7 @@
           <property role="3F0ifm" value="language specific config:" />
         </node>
         <node concept="3F1sOY" id="2P6psD9DsG1" role="3EZMnx">
-          <ref role="1NtTu8" to="gfdq:33cGTVo60G$" />
+          <ref role="1NtTu8" to="gfdq:33cGTVo60G$" resolve="langSpecificConfig" />
         </node>
         <node concept="l2Vlx" id="2P6psD9DsEz" role="2iSdaV" />
       </node>
@@ -275,7 +275,7 @@
       </node>
       <node concept="3F2HdR" id="7K2NL56H6ST" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="gfdq:7K2NL56H6S_" />
+        <ref role="1NtTu8" to="gfdq:7K2NL56H6S_" resolve="concepts" />
         <node concept="l2Vlx" id="7K2NL56H6SV" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="2P6psD9DHhn" role="2iSdaV" />
@@ -302,7 +302,7 @@
         <property role="3F0ifm" value="single seed:" />
       </node>
       <node concept="1iCGBv" id="2A9nHKANPIj" role="3EZMnx">
-        <ref role="1NtTu8" to="gfdq:2A9nHKANPGS" />
+        <ref role="1NtTu8" to="gfdq:2A9nHKANPGS" resolve="startingPoint" />
         <node concept="1sVBvm" id="2A9nHKANPIl" role="1sWHZn">
           <node concept="3F0A7n" id="2A9nHKANPI_" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -317,7 +317,7 @@
     <property role="3GE5qa" value="concept_seed" />
     <ref role="1XX52x" to="gfdq:7K2NL56H6Rb" resolve="AbstractConceptDeclarationRef" />
     <node concept="1iCGBv" id="7K2NL56H6RD" role="2wV5jI">
-      <ref role="1NtTu8" to="gfdq:7K2NL56H6Rl" />
+      <ref role="1NtTu8" to="gfdq:7K2NL56H6Rl" resolve="conceptDeclaration" />
       <node concept="1sVBvm" id="7K2NL56H6RF" role="1sWHZn">
         <node concept="3F0A7n" id="7K2NL56H6RS" role="2wV5jI">
           <property role="1Intyy" value="true" />

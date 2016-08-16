@@ -2,7 +2,7 @@
 <model ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -122,7 +122,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7Hbe8h6ZgWp" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" resolve="label" />
       </node>
       <node concept="3EZMnI" id="86yKXFIDdg" role="3EZMnx">
         <node concept="VPM3Z" id="86yKXFIDdi" role="3F10Kt">
@@ -156,7 +156,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7Hbe8h6ZC4k" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" resolve="label" />
       </node>
       <node concept="3EZMnI" id="86yKXFIDh6" role="3EZMnx">
         <node concept="VPM3Z" id="86yKXFIDh7" role="3F10Kt">
@@ -216,7 +216,7 @@
       </node>
       <node concept="3F0ifn" id="X7OD3Wxc$R" role="3EZMnx" />
       <node concept="3F2HdR" id="86yKXFIDtk" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:86yKXFFVPI" />
+        <ref role="1NtTu8" to="3iid:86yKXFFVPI" resolve="properties" />
         <node concept="2iRkQZ" id="86yKXFIDtm" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="X7OD3Wxb4d" role="3EZMnx" />
@@ -226,11 +226,11 @@
         </node>
         <node concept="2iRkQZ" id="X7OD3Wx7PL" role="2iSdaV" />
         <node concept="3F1sOY" id="86yKXFIDtF" role="3EZMnx">
-          <ref role="1NtTu8" to="3iid:hBxXV_8" />
+          <ref role="1NtTu8" to="3iid:hBxXV_8" resolve="beforeWriteBlockProject" />
         </node>
         <node concept="3F0ifn" id="86yKXFIDup" role="3EZMnx" />
         <node concept="3F1sOY" id="86yKXFIDuO" role="3EZMnx">
-          <ref role="1NtTu8" to="3iid:hBxXST0" />
+          <ref role="1NtTu8" to="3iid:hBxXST0" resolve="afterReadBlockProject" />
         </node>
         <node concept="pkWqt" id="X7OD3Wx7QE" role="pqm2j">
           <node concept="3clFbS" id="X7OD3Wx7QF" role="2VODD2">
@@ -258,11 +258,11 @@
         </node>
         <node concept="2iRkQZ" id="X7OD3WxaPb" role="2iSdaV" />
         <node concept="3F1sOY" id="X7OD3WxbL9" role="3EZMnx">
-          <ref role="1NtTu8" to="3iid:X7OD3Wx7lE" />
+          <ref role="1NtTu8" to="3iid:X7OD3Wx7lE" resolve="beforeWriteBlockApplication" />
         </node>
         <node concept="3F0ifn" id="X7OD3WxaPd" role="3EZMnx" />
         <node concept="3F1sOY" id="X7OD3Wxc9V" role="3EZMnx">
-          <ref role="1NtTu8" to="3iid:X7OD3Wx7im" />
+          <ref role="1NtTu8" to="3iid:X7OD3Wx7im" resolve="afterReadBlockApplication" />
         </node>
         <node concept="pkWqt" id="X7OD3WxaPf" role="pqm2j">
           <node concept="3clFbS" id="X7OD3WxaPg" role="2VODD2">
@@ -308,7 +308,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="6UEaXWpU7ms" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:86yKXFVA3h" />
+        <ref role="1NtTu8" to="3iid:86yKXFVA3h" resolve="preferenceForm" />
         <node concept="1sVBvm" id="6UEaXWpU7mt" role="1sWHZn">
           <node concept="3F0A7n" id="6UEaXWpU7mu" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -333,7 +333,7 @@
     <property role="3GE5qa" value="property" />
     <ref role="1XX52x" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
     <node concept="1iCGBv" id="hB4qJ7Y" role="2wV5jI">
-      <ref role="1NtTu8" to="3iid:86yKXFY5Xj" />
+      <ref role="1NtTu8" to="3iid:86yKXFY5Xj" resolve="formProperty" />
       <node concept="1sVBvm" id="hB4qJ7Z" role="1sWHZn">
         <node concept="3F0A7n" id="hB4qJYx" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -377,7 +377,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7Hbe8h6ZgXW" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" resolve="label" />
       </node>
       <node concept="3EZMnI" id="46uejXd54jI" role="3EZMnx">
         <node concept="VPM3Z" id="46uejXd54jJ" role="3F10Kt">
@@ -415,7 +415,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2DIWO7Y85np" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:86yKXFVl2p" />
+        <ref role="1NtTu8" to="3iid:86yKXFVl2p" resolve="formDeclaration" />
         <node concept="1sVBvm" id="2DIWO7Y85nq" role="1sWHZn">
           <node concept="3F0A7n" id="2DIWO7Y85nr" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -473,15 +473,15 @@
           </node>
         </node>
         <node concept="3F1sOY" id="7Hbe8h6ZgX6" role="3EZMnx">
-          <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+          <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" resolve="label" />
         </node>
         <node concept="2iRfu4" id="77gEP6zh6U0" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="77gEP6zh78J" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:77gEP6zh6SY" />
+        <ref role="1NtTu8" to="3iid:77gEP6zh6SY" resolve="getEntriesFunction" />
       </node>
       <node concept="3F1sOY" id="77gEP6zhdNP" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:77gEP6zh79o" />
+        <ref role="1NtTu8" to="3iid:77gEP6zh79o" resolve="defaultEntryFunction" />
       </node>
       <node concept="2iRkQZ" id="77gEP6zh6TO" role="2iSdaV" />
     </node>
@@ -503,7 +503,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5ZUMPTUIX92" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" resolve="label" />
       </node>
       <node concept="3EZMnI" id="fFi6Pd8Jn" role="3EZMnx">
         <node concept="VPM3Z" id="fFi6Pd8Jo" role="3F10Kt">

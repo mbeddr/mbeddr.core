@@ -2,7 +2,7 @@
 <model ref="r:04fd46a4-f2e2-48cb-903b-d47e841578ba(com.mbeddr.mpsutil.editingGuide.execution.lang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
@@ -493,7 +493,7 @@
                                               </node>
                                             </node>
                                             <node concept="3TrEf2" id="7lgjy2PT7em" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                                              <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" resolve="currentTaskOverride" />
                                             </node>
                                           </node>
                                         </node>
@@ -638,7 +638,7 @@
                                                   <ref role="3cqZAo" node="7lgjy2PT7fb" resolve="ex" />
                                                 </node>
                                                 <node concept="3Tsc0h" id="7lgjy2PT7fn" role="2OqNvi">
-                                                  <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" />
+                                                  <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" resolve="tasks" />
                                                 </node>
                                               </node>
                                               <node concept="1yVyf7" id="7lgjy2PT7fo" role="2OqNvi" />
@@ -648,7 +648,7 @@
                                                 <ref role="3cqZAo" node="7lgjy2PT7fb" resolve="ex" />
                                               </node>
                                               <node concept="3TrEf2" id="7lgjy2PT7fr" role="2OqNvi">
-                                                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" />
+                                                <ref role="3Tt5mk" to="k8go:2ZHlC00bw3c" resolve="currentTaskOverride" />
                                               </node>
                                             </node>
                                           </node>
@@ -729,7 +729,7 @@
                                   </node>
                                 </node>
                                 <node concept="3Tsc0h" id="7lgjy2PT7fZ" role="2OqNvi">
-                                  <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" />
+                                  <ref role="3TtcxE" to="k8go:3p1cdQ7_d_Z" resolve="tasks" />
                                 </node>
                               </node>
                               <node concept="34oBXx" id="7lgjy2PT7g0" role="2OqNvi" />
@@ -806,7 +806,7 @@
               </node>
               <node concept="2iRkQZ" id="7lgjy2PT7gt" role="2iSdaV" />
               <node concept="3F1sOY" id="7lgjy2PT7gu" role="3EZMnx">
-                <ref role="1NtTu8" to="k8go:3p1cdQ7_d$Z" />
+                <ref role="1NtTu8" to="k8go:3p1cdQ7_d$Z" resolve="description" />
                 <node concept="VechU" id="7lgjy2PT7gv" role="3F10Kt">
                   <property role="Vb096" value="darkGray" />
                 </node>
@@ -930,7 +930,7 @@
             </node>
             <node concept="2iRfu4" id="7lgjy2PT9ek" role="2iSdaV" />
             <node concept="3F1sOY" id="7lgjy2PT9el" role="3EZMnx">
-              <ref role="1NtTu8" to="k8go:3p1cdQ7_d_1" />
+              <ref role="1NtTu8" to="k8go:3p1cdQ7_d_1" resolve="code" />
               <node concept="xShMh" id="7lgjy2PT9em" role="3F10Kt">
                 <property role="VOm3f" value="false" />
               </node>
@@ -1114,7 +1114,7 @@
           <node concept="3EZMnI" id="7lgjy2PTYQz" role="3EZMnx">
             <node concept="2iRfu4" id="7lgjy2PTYQ$" role="2iSdaV" />
             <node concept="3F1sOY" id="7lgjy2PTYQ_" role="3EZMnx">
-              <ref role="1NtTu8" to="k8go:2ZHlC00438k" />
+              <ref role="1NtTu8" to="k8go:2ZHlC00438k" resolve="explanation" />
               <node concept="Veino" id="7lgjy2PTYQA" role="3F10Kt">
                 <node concept="3ZlJ5R" id="7lgjy2PTYQB" role="VblUZ">
                   <node concept="3clFbS" id="7lgjy2PTYQC" role="2VODD2">
@@ -1146,7 +1146,7 @@
                           <node concept="2OqwBi" id="7lgjy2PTYQP" role="2Oq$k0">
                             <node concept="pncrf" id="7lgjy2PTYQQ" role="2Oq$k0" />
                             <node concept="3TrEf2" id="7lgjy2PTYQR" role="2OqNvi">
-                              <ref role="3Tt5mk" to="k8go:2ZHlC00438k" />
+                              <ref role="3Tt5mk" to="k8go:2ZHlC00438k" resolve="explanation" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="7lgjy2PTYQS" role="2OqNvi">
@@ -1427,7 +1427,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3p1cdQ7_pJK" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:3p1cdQ7_dA3" />
+        <ref role="1NtTu8" to="k8go:3p1cdQ7_dA3" resolve="description" />
         <node concept="xShMh" id="31xWCC6mjY" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1491,7 +1491,7 @@
     </node>
     <node concept="3EZMnI" id="692bXAb4N_o" role="2wV5jI">
       <node concept="3F1sOY" id="692bXAb4N_h" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:3p1cdQ7_d_W" />
+        <ref role="1NtTu8" to="k8go:3p1cdQ7_d_W" resolve="node" />
       </node>
       <node concept="2iRkQZ" id="4TMjSvbDc$G" role="2iSdaV" />
     </node>
@@ -2538,7 +2538,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2ZHlC00aaq2" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:2ZHlC00aapv" />
+        <ref role="1NtTu8" to="k8go:2ZHlC00aapv" resolve="node" />
         <node concept="1sVBvm" id="2ZHlC00aaq4" role="1sWHZn">
           <node concept="3SHvHV" id="2ZHlC00ah_6" role="2wV5jI">
             <node concept="VechU" id="2ZHlC00aGh_" role="3F10Kt">

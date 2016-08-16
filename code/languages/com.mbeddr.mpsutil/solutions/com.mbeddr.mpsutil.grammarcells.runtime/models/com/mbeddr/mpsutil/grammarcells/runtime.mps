@@ -9,7 +9,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -9388,7 +9388,7 @@
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="6D5JhjDlNDw" role="2OqNvi">
-                        <ref role="3TtcxE" to="tpck:4uZwTti3__2" />
+                        <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="6D5JhjDlPy9" role="2OqNvi">
@@ -13247,7 +13247,7 @@
                     <ref role="3cqZAo" node="5OsvY4gQiEC" resolve="snode" />
                   </node>
                   <node concept="3Tsc0h" id="D5oLwMJIpn" role="2OqNvi">
-                    <ref role="3TtcxE" to="tpck:4uZwTti3__2" />
+                    <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                   </node>
                 </node>
                 <node concept="X8dFx" id="D5oLwMJK_V" role="2OqNvi">
@@ -13256,7 +13256,7 @@
                       <ref role="3cqZAo" node="D5oLwMJEx8" resolve="recycledNode" />
                     </node>
                     <node concept="3Tsc0h" id="D5oLwMJNzk" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpck:4uZwTti3__2" />
+                      <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                     </node>
                   </node>
                 </node>

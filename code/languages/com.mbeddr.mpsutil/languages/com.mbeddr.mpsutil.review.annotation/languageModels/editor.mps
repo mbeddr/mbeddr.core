@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -236,7 +236,7 @@
   <node concept="24kQdi" id="7lmVLrULFYT">
     <ref role="1XX52x" to="oqy7:7lmVLrULFYO" resolve="CommentAnnotationContainer" />
     <node concept="2SJGWt" id="48QV5n8coFx" role="2wV5jI">
-      <ref role="2SJGWj" to="oqy7:7lmVLrULFYP" />
+      <ref role="2SJGWj" to="oqy7:7lmVLrULFYP" resolve="comments" />
       <ref role="2SJGWg" to="fmr2:7lmVLrULCNA" resolve="ReviewMarginCellStyle" />
       <node concept="3EZMnI" id="48QV5n8clS$" role="2SJGWi">
         <node concept="3EZMnI" id="48QV5n8clS_" role="3EZMnx">
@@ -266,7 +266,7 @@
                         <node concept="2OqwBi" id="48QV5n8clSN" role="2Oq$k0">
                           <node concept="pncrf" id="48QV5n8clSO" role="2Oq$k0" />
                           <node concept="3Tsc0h" id="48QV5n8clSP" role="2OqNvi">
-                            <ref role="3TtcxE" to="oqy7:7lmVLrULFYP" />
+                            <ref role="3TtcxE" to="oqy7:7lmVLrULFYP" resolve="comments" />
                           </node>
                         </node>
                         <node concept="34oBXx" id="48QV5n8clSQ" role="2OqNvi" />
@@ -295,7 +295,7 @@
                           <node concept="2OqwBi" id="48QV5n8clT1" role="2Oq$k0">
                             <node concept="pncrf" id="48QV5n8clT2" role="2Oq$k0" />
                             <node concept="3Tsc0h" id="48QV5n8clT3" role="2OqNvi">
-                              <ref role="3TtcxE" to="oqy7:7lmVLrULFYP" />
+                              <ref role="3TtcxE" to="oqy7:7lmVLrULFYP" resolve="comments" />
                             </node>
                           </node>
                           <node concept="2S7cBI" id="48QV5n8clT4" role="2OqNvi">

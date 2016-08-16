@@ -2,7 +2,7 @@
 <model ref="r:bfca2182-02d8-4063-be80-0f6682fdecc0(com.mbeddr.mpsutil.editingGuide.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -202,14 +202,14 @@
       </node>
       <node concept="3F0ifn" id="3p1cdQ7_pJ6" role="3EZMnx" />
       <node concept="3F1sOY" id="3p1cdQ7_pJK" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:3p1cdQ7_dA3" />
+        <ref role="1NtTu8" to="k8go:3p1cdQ7_dA3" resolve="description" />
         <node concept="3vyZuw" id="31xWCC6l6_" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="3p1cdQ7_pJt" role="3EZMnx" />
       <node concept="3F2HdR" id="3p1cdQ7_pJj" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:3p1cdQ7_d_Z" />
+        <ref role="1NtTu8" to="k8go:3p1cdQ7_d_Z" resolve="tasks" />
         <node concept="2iRkQZ" id="3p1cdQ7_pJl" role="2czzBx" />
       </node>
     </node>
@@ -311,7 +311,7 @@
             <property role="3F0ifm" value="Description:" />
           </node>
           <node concept="3F1sOY" id="3p1cdQ7_pKr" role="3EZMnx">
-            <ref role="1NtTu8" to="k8go:3p1cdQ7_d$Z" />
+            <ref role="1NtTu8" to="k8go:3p1cdQ7_d$Z" resolve="description" />
             <node concept="VPXOz" id="2ZHlC006vWQ" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -326,7 +326,7 @@
             <property role="3F0ifm" value="Code:" />
           </node>
           <node concept="3F1sOY" id="3p1cdQ7_qur" role="3EZMnx">
-            <ref role="1NtTu8" to="k8go:3p1cdQ7_d_1" />
+            <ref role="1NtTu8" to="k8go:3p1cdQ7_d_1" resolve="code" />
             <node concept="VPXOz" id="2ZHlC006vWU" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -341,7 +341,7 @@
             <property role="3F0ifm" value="Monitor:" />
           </node>
           <node concept="3F1sOY" id="3p1cdQ7_qwJ" role="3EZMnx">
-            <ref role="1NtTu8" to="k8go:3p1cdQ7_d_r" />
+            <ref role="1NtTu8" to="k8go:3p1cdQ7_d_r" resolve="monitor" />
             <node concept="VPXOz" id="2ZHlC006vWY" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -356,7 +356,7 @@
             <property role="3F0ifm" value="Explanation:" />
           </node>
           <node concept="3F1sOY" id="2ZHlC0043em" role="3EZMnx">
-            <ref role="1NtTu8" to="k8go:2ZHlC00438k" />
+            <ref role="1NtTu8" to="k8go:2ZHlC00438k" resolve="explanation" />
             <node concept="VPXOz" id="2ZHlC006vX2" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -473,7 +473,7 @@
       </node>
       <node concept="2iRfu4" id="3p1cdQ7_qzL" role="2iSdaV" />
       <node concept="3F1sOY" id="3p1cdQ7_qzH" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:3p1cdQ7_d_W" />
+        <ref role="1NtTu8" to="k8go:3p1cdQ7_d_W" resolve="node" />
       </node>
       <node concept="xShMh" id="692bXAb5nWS" role="3F10Kt">
         <property role="VOm3f" value="false" />
@@ -543,7 +543,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2ZHlC00aH$C" role="3EZMnx">
-        <ref role="1NtTu8" to="k8go:2ZHlC00aapv" />
+        <ref role="1NtTu8" to="k8go:2ZHlC00aapv" resolve="node" />
         <node concept="1sVBvm" id="2ZHlC00aH$D" role="1sWHZn">
           <node concept="3SHvHV" id="2ZHlC00aH$E" role="2wV5jI" />
         </node>

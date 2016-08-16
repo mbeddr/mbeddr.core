@@ -2,7 +2,7 @@
 <model ref="r:b29030d7-90cc-482f-836c-8ba6a02bd175(com.mbeddr.mpsutil.ccmenu.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -76,7 +76,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3efHud92bEy" role="3EZMnx">
-        <ref role="1NtTu8" to="l27w:2CFqHq6ocb7" />
+        <ref role="1NtTu8" to="l27w:2CFqHq6ocb7" resolve="extensions" />
         <node concept="l2Vlx" id="3efHud92bE$" role="2czzBx" />
         <node concept="lj46D" id="3efHud92bK4" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -101,7 +101,7 @@
         <property role="3F0ifm" value="tab" />
       </node>
       <node concept="3F1sOY" id="3efHud92cmQ" role="3EZMnx">
-        <ref role="1NtTu8" to="l27w:2CFqHq6oejX" />
+        <ref role="1NtTu8" to="l27w:2CFqHq6oejX" resolve="tabLabel" />
       </node>
       <node concept="3F0ifn" id="3efHud92chC" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -110,7 +110,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3efHud92cnr" role="3EZMnx">
-        <ref role="1NtTu8" to="l27w:2CFqHq6oejR" />
+        <ref role="1NtTu8" to="l27w:2CFqHq6oejR" resolve="actionSources" />
         <node concept="l2Vlx" id="3efHud92cnt" role="2czzBx" />
         <node concept="lj46D" id="3efHud92cpI" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -131,7 +131,7 @@
   <node concept="24kQdi" id="rf2b76Nqfg">
     <ref role="1XX52x" to="l27w:rf2b76Nqf4" resolve="TabReference" />
     <node concept="1iCGBv" id="rf2b76Nqfi" role="2wV5jI">
-      <ref role="1NtTu8" to="l27w:rf2b76Nqf8" />
+      <ref role="1NtTu8" to="l27w:rf2b76Nqf8" resolve="tab" />
       <node concept="1sVBvm" id="rf2b76Nqfk" role="1sWHZn">
         <node concept="3F0A7n" id="rf2b76Nqfu" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -159,10 +159,10 @@
         <property role="3F0ifm" value="for tab" />
       </node>
       <node concept="3F1sOY" id="rf2b76NsgY" role="3EZMnx">
-        <ref role="1NtTu8" to="l27w:rf2b76NsfV" />
+        <ref role="1NtTu8" to="l27w:rf2b76NsfV" resolve="tab" />
       </node>
       <node concept="3F1sOY" id="rf2b76Nx9a" role="3EZMnx">
-        <ref role="1NtTu8" to="l27w:rf2b76Nx8W" />
+        <ref role="1NtTu8" to="l27w:rf2b76Nx8W" resolve="sortFunction" />
       </node>
       <node concept="l2Vlx" id="rf2b76Nsg8" role="2iSdaV" />
     </node>
@@ -200,7 +200,7 @@
             <property role="3F0ifm" value="condition" />
           </node>
           <node concept="3F1sOY" id="1uZEtAiqfqY" role="3EZMnx">
-            <ref role="1NtTu8" to="l27w:1uZEtAiqfpQ" />
+            <ref role="1NtTu8" to="l27w:1uZEtAiqfpQ" resolve="condition" />
             <node concept="VPXOz" id="1uZEtAiqkYk" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -219,7 +219,7 @@
           </node>
           <node concept="2iRfu4" id="1uZEtAiqk0P" role="2iSdaV" />
           <node concept="3F1sOY" id="1uZEtAiqgSC" role="3EZMnx">
-            <ref role="1NtTu8" to="l27w:1uZEtAiqfpU" />
+            <ref role="1NtTu8" to="l27w:1uZEtAiqfpU" resolve="foregroundColor" />
             <node concept="VPXOz" id="1uZEtAiqkYo" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -237,7 +237,7 @@
           </node>
           <node concept="2iRfu4" id="1uZEtAiqk2G" role="2iSdaV" />
           <node concept="3F1sOY" id="1uZEtAiqgT1" role="3EZMnx">
-            <ref role="1NtTu8" to="l27w:1uZEtAiqfpZ" />
+            <ref role="1NtTu8" to="l27w:1uZEtAiqfpZ" resolve="backgroundColor" />
             <node concept="VPXOz" id="1uZEtAiqkYs" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>

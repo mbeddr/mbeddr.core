@@ -2,7 +2,7 @@
 <model ref="r:b8443a16-1f3b-4528-b0e7-debf2496eef3(com.mbeddr.mpsutil.treenotation.sandboxlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -377,11 +377,11 @@
       </node>
       <node concept="3F0ifn" id="7uOgiTdmmS" role="3EZMnx" />
       <node concept="3F1sOY" id="7uOgiTdITG" role="3EZMnx">
-        <ref role="1NtTu8" to="uin2:7uOgiTdIPl" />
+        <ref role="1NtTu8" to="uin2:7uOgiTdIPl" resolve="tree" />
       </node>
       <node concept="3F0ifn" id="JAaUnmRatu" role="3EZMnx" />
       <node concept="3F1sOY" id="JAaUnmRatt" role="3EZMnx">
-        <ref role="1NtTu8" to="uin2:JAaUnmRatm" />
+        <ref role="1NtTu8" to="uin2:JAaUnmRatm" resolve="tree2" />
         <node concept="3tD6jV" id="JAaUnmRaDo" role="3F10Kt">
           <ref role="3tD7wE" to="5un2:7uOgiTdwyO" resolve="tree-left-to-right" />
           <node concept="3sjG9q" id="JAaUnmRaDp" role="3tD6jU">
@@ -424,7 +424,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7uOgiTdIPi" role="2SWKFX">
-        <ref role="1NtTu8" to="uin2:7uOgiTdIOS" />
+        <ref role="1NtTu8" to="uin2:7uOgiTdIOS" resolve="childTreeNodes" />
         <node concept="pkWqt" id="7GMtHW6DAFV" role="pqm2j">
           <node concept="3clFbS" id="7GMtHW6DAFW" role="2VODD2">
             <node concept="3clFbF" id="7GMtHW6DAH1" role="3cqZAp">
@@ -432,7 +432,7 @@
                 <node concept="2OqwBi" id="7GMtHW6DAJC" role="2Oq$k0">
                   <node concept="pncrf" id="7GMtHW6DAH0" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="7GMtHW6DASs" role="2OqNvi">
-                    <ref role="3TtcxE" to="uin2:7uOgiTdIOS" />
+                    <ref role="3TtcxE" to="uin2:7uOgiTdIOS" resolve="childTreeNodes" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="7GMtHW6DDj5" role="2OqNvi" />
@@ -451,7 +451,7 @@
               <node concept="2OqwBi" id="7GMtHW6DzhH" role="2Oq$k0">
                 <node concept="pncrf" id="7GMtHW6Dzg8" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="7GMtHW6DzpH" role="2OqNvi">
-                  <ref role="3TtcxE" to="uin2:7uOgiTdIOS" />
+                  <ref role="3TtcxE" to="uin2:7uOgiTdIOS" resolve="childTreeNodes" />
                 </node>
               </node>
               <node concept="1sK_Qi" id="7GMtHW6D_Gu" role="2OqNvi">
@@ -483,7 +483,7 @@
             <node concept="2OqwBi" id="7CiTYi$wnSn" role="2Oq$k0">
               <node concept="3u$I0N" id="7CiTYi$wnQN" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7CiTYi$wpeK" role="2OqNvi">
-                <ref role="3TtcxE" to="uin2:7uOgiTdIOS" />
+                <ref role="3TtcxE" to="uin2:7uOgiTdIOS" resolve="childTreeNodes" />
               </node>
             </node>
             <node concept="34oBXx" id="7CiTYi$wrxR" role="2OqNvi" />
