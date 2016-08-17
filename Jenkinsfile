@@ -27,7 +27,18 @@ node {
 
 		break;
 	  case isNightlyJob:
-		echo "Nightly"
+	    node ('linux') {
+			stage ('Checkout') {
+				checkoutMbeddr()
+				
+				def nightlyLib = load 'nightly.groovy'
+				if(nightlyLib == null) {
+					echo "Unable to load file 'nightly.groovy'!"
+				} else {
+					nightlyLib.buildNightly()
+				}
+			}
+		}
 		break;
 	  default:
         stage ('Checkout') {
