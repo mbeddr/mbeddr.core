@@ -29,7 +29,8 @@ def buildCBMC() {
             "CBMC windows" : {
                 node ('windows') {
                     checkoutCBMC()
-                    checkoutMbeddrCore()
+                    checkoutMbeddr()
+					
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
                     {
@@ -48,7 +49,8 @@ def buildCBMC() {
             "CBMC mac" : {
                 node ('mac') {
                     checkoutCBMC()
-                    checkoutMbeddrCore()
+                    checkoutMbeddr()
+					
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
                     {
