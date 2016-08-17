@@ -49,9 +49,13 @@ subprojects {
 	if (project.hasProperty('mbeddrRelease')) {
 		ext.mbeddrBuild = project.getProperty('mbeddrRelease')
 	} else {
-        def gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
-        //def gitHash = 'git rev-list --count HEAD'.execute().in.text.trim().toString()
-		ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
+        def gitBranch = null
+        if (System.properties['os.name'].toLowerCase().contains('windows')) {
+            gitBranch ='cmd /c git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
+        } else {
+            gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
+        }
+        ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
 	}
     ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
