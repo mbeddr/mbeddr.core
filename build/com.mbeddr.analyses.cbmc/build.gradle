@@ -19,6 +19,10 @@ task build_cbmcMac(type: Exec) {
 
 task build_cbmcLinux(type: Exec) {
     workingDir file(cbmcHome)
+    def args = buildProcSpawnArgList([script_build_cbmcMac])
+    commandLine(args)
+
+    workingDir file(cbmcHome)
     commandLine(script_build_cbmcLinux)
 }
 
@@ -26,10 +30,10 @@ task publish_cbmcWin(type: Zip) {
     from file("../cbmc/" + "cbmc-win.zip")
 }
 
-task publish_cbmcMac(type: Zip, dependsOn: build_cbmcMac) {
-    from file("../" + "cbmc-mac.zip")
+task publish_cbmcMac(type: Zip) {
+    from file("../cbmc/" + "cbmc-mac.zip")
 }
 
-task publish_cbmcLinux(type: Zip, dependsOn: build_cbmcLinux) {
-    from file("../" + "cbmc-linux.tar.gz")
+task publish_cbmcLinux(type: Zip) {
+    from file("../cbmc/" + "cbmc-linux.tar.gz")
 }
