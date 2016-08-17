@@ -12,8 +12,9 @@ node {
 	
 	switch(jobName.toUpperCase()) {
 	  case isCbmcJob :
-	    node ('linux') {
-			stage ('Checkout') {
+	    echo "Running 'CBMC' target..."
+		stage ('Checkout') {
+			node ('linux') {
 				checkoutMbeddr()
 				
 				def cbmcLib = load 'cbmc.groovy'
@@ -23,12 +24,12 @@ node {
 					cbmcLib.buildCBMC()
 				}
 			}
-		}
-
+	    }
 		break;
 	  case isNightlyJob:
-	    node ('linux') {
-			stage ('Checkout') {
+	    echo "Running 'Nightly' target..."
+		stage ('Checkout') {
+			node ('linux') {
 				checkoutMbeddr()
 				
 				def nightlyLib = load 'nightly.groovy'
@@ -41,6 +42,7 @@ node {
 		}
 		break;
 	  default:
+	    echo "Running 'Default (mbeddr)' target..."
         stage ('Checkout') {
 			node ('linux') {
 				checkoutMbeddr()
