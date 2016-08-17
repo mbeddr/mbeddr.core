@@ -4,7 +4,7 @@ def buildCBMC() {
 
     def gradleOpts ='--no-daemon --info --stacktrace'
 
-    stage ('Build CBMC') {
+    stage 'Build CBMC'
         parallel (
             "CBMC linux" : {
                 node ('linux') {
@@ -65,7 +65,6 @@ def buildCBMC() {
                 }
             }
        )
-   	}
   }
 }
 

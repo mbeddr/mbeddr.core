@@ -13,7 +13,7 @@ node {
 	switch(jobName.toUpperCase()) {
 	  case isCbmcJob :
 	    echo "Running 'CBMC' target..."
-		stage ('Checkout') {
+		stage 'Checkout'
 			node ('linux') {
 				checkoutMbeddr()
 				
@@ -24,11 +24,11 @@ node {
 					cbmcLib.buildCBMC()
 				}
 			}
-	    }
+	    
 		break;
 	  case isNightlyJob:
 	    echo "Running 'Nightly' target..."
-		stage ('Checkout') {
+		stage 'Checkout'
 			node ('linux') {
 				checkoutMbeddr()
 				
@@ -39,11 +39,11 @@ node {
 					nightlyLib.buildNightly()
 				}
 			}
-		}
+
 		break;
 	  default:
 	    echo "Running 'Default (mbeddr)' target..."
-        stage ('Checkout') {
+        stage 'Checkout'
 			node ('linux') {
 				checkoutMbeddr()
 			  
@@ -54,7 +54,7 @@ node {
 					mbeddrLib.buildMbeddr()
 				}
 			}
-        }
+
 		break;
 	}
 }
