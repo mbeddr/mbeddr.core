@@ -27,9 +27,9 @@ task publish_cbmcWin(type: Zip) {
 }
 
 task publish_cbmcMac(type: Zip, dependsOn: build_cbmcMac) {
-    from file("../cbmc/" + "cbmc-mac.zip")
+    from file("../" + "cbmc-mac.zip")
 }
 
 task publish_cbmcLinux(type: Zip, dependsOn: build_cbmcLinux) {
-    from file("../cbmc/" + "cbmc-linux.tar.gz")
+    from file("../" + "cbmc-linux.tar.gz")
 }
