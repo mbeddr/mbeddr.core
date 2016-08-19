@@ -32,8 +32,13 @@ timestamps {
         step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
       stage 'Package'
-        sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
-
+        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+                                usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+        {
+            dir('mbeddr.core') {
+                sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one"
+            }
+        }
       stage 'Cleanup'
         deleteDir()
     }
