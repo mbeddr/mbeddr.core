@@ -24,7 +24,26 @@ node {
 					cbmcLib.buildCBMC()
 				}
 			}
-	    
+            node ('mac') {
+				checkoutMbeddr()
+
+				def cbmcLib = load 'cbmc.groovy'
+				if(cbmcLib == null) {
+					echo "Unable to load file 'cbmc.groovy'!"
+				} else {
+					cbmcLib.buildCBMC()
+				}
+			}
+            node ('windows') {
+				checkoutMbeddr()
+
+				def cbmcLib = load 'cbmc.groovy'
+				if(cbmcLib == null) {
+					echo "Unable to load file 'cbmc.groovy'!"
+				} else {
+					cbmcLib.buildCBMC()
+				}
+			}
 		break;
 	  case isNightlyJob:
 	    echo "Running 'Nightly' target..."
