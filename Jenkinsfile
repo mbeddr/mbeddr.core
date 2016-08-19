@@ -36,7 +36,7 @@ timestamps {
                                 usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
         {
             dir('mbeddr.core') {
-                sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one"
+                sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository"
             }
         }
       stage 'Cleanup'
