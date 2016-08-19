@@ -59,6 +59,7 @@ node {
 	}
 }
 
+@NonCPS
 def checkoutMbeddr() {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
