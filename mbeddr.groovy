@@ -30,8 +30,11 @@ def buildMbeddr() {
 	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
 	    stage 'Package'
-	      sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
-
+        	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+                                usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+			{
+            	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -PmbeddrBuild=${env.BRANCH_NAME} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository"
+        	}
 	    stage 'Cleanup'
 	      deleteDir()
 	  }

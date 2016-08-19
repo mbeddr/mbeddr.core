@@ -46,8 +46,8 @@ subprojects {
 	}
 	
 	// setting mbeddrBuild	
-	if (project.hasProperty('mbeddrRelease')) {
-		ext.mbeddrBuild = project.getProperty('mbeddrRelease')
+	if (project.hasProperty('mbeddrBuild')) {
+		ext.mbeddrBuild = project.getProperty('mbeddrBuild')
 	} else {
         def gitBranch = null
         if (System.properties['os.name'].toLowerCase().contains('windows')) {
