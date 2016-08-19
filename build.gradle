@@ -114,15 +114,8 @@ subprojects {
 
     // repository
     repositories {
-        maven {
-            if(hasProperty('nexusUsername')) {
-                credentials {
-                    username nexusUsername
-                    password nexusPassword
-                }
-            }
-            url repository
-        }
+        maven {  url project.releaseRepository }
+        maven {  url project.snapshotRepository }
     }
 
     // configs
