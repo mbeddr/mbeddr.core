@@ -6,9 +6,6 @@ File cbmcSrcHome = file(rootProject.projectDir.absolutePath + "/../cbmc/src")
 File cbmcHome = file(rootProject.projectDir.absolutePath + "/../cbmc/")
 
 task build_cbmcWin(type: Exec) {
-  workingDir cbmcSrcHome
-    //def args = buildProcSpawnArgList(['start', script_build_cbmcWin])
-  //commandLine(args)
   commandLine(script_build_cbmcWin)
 }
 
@@ -29,19 +26,9 @@ task publish_cbmcWin(type: Zip) {
 }
 
 task publish_cbmcMac(type: Zip) {
-    println("cbmcHome.absolutePath: "+ cbmcHome.absolutePath)
-    println("exists: "+ cbmcHome.exists())
-    cbmcHome.listFiles().each { file ->
-        println("file: " +file.getName())
-    }
     from file(cbmcHome.absolutePath + "/" + "cbmc-mac.zip")
 }
 
 task publish_cbmcLinux(type: Zip) {
-    println("cbmcHome.absolutePath: "+ cbmcHome.absolutePath)
-    println("exists: "+ cbmcHome.exists())
-    cbmcHome.listFiles().each { file ->
-        println("file: " +file.getName())
-    }
     from file(cbmcHome.absolutePath + "/" + "cbmc-linux.tar.gz")
 }
