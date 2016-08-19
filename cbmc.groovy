@@ -80,6 +80,9 @@ def checkoutMbeddr() {
 	} else {
 		reference = "${BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
 	}
+	
+	echo "Reference-Path: ${reference}"
+	
 	checkout([
 		  $class: 'GitSCM',
 		  branches: scm.branches,
