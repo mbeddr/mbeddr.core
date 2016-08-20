@@ -70,6 +70,9 @@
         <child id="5985155480663336854" name="left" index="2Xp2M$" />
         <child id="5985155480663336857" name="right" index="2Xp2MF" />
       </concept>
+      <concept id="7269632363622801683" name="mbeddr.tutorial.shonan.structure.StencilStrategyConfigurationItem" flags="ng" index="XykOd">
+        <child id="7269632363622801708" name="strategy" index="XykOM" />
+      </concept>
       <concept id="5985155480665084399" name="mbeddr.tutorial.shonan.structure.StencilVariableDeclaration" flags="ng" index="2XytFt" />
       <concept id="620476785305133682" name="mbeddr.tutorial.shonan.structure.StencilVariableReference" flags="ng" index="13Sk8F">
         <reference id="620476785305133683" name="variable" index="13Sk8E" />
@@ -80,6 +83,9 @@
       <concept id="620476785304242762" name="mbeddr.tutorial.shonan.structure.StencilComputation" flags="ng" index="13WYCj">
         <child id="6036712475742577742" name="intervals" index="k299d" />
         <child id="620476785304277577" name="elements" index="13V78g" />
+      </concept>
+      <concept id="190376153468856717" name="mbeddr.tutorial.shonan.structure.BlockStrategy" flags="ng" index="1r$Nen">
+        <property id="190376153468856721" name="size" index="1r$Neb" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -1804,11 +1810,16 @@
     <node concept="2Q9Fgs" id="2Gt5ABeTHdb" role="2Q9xDr">
       <node concept="2Q9FjX" id="2Gt5ABeTHdc" role="2Q9FjI" />
     </node>
+    <node concept="XykOd" id="46uQy6dwEBw" role="2Q9xDr">
+      <node concept="1r$Nen" id="46uQy6dwEBN" role="XykOM">
+        <property role="1r$Neb" value="10" />
+      </node>
+    </node>
     <node concept="2eOfOl" id="2X7IK8cZsTP" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="diffusion" />
-      <node concept="2v9HqM" id="2XHdgpYGe76" role="2eOfOg">
-        <ref role="2v9HqP" node="2XHdgpYFF2F" resolve="diffusion_simple" />
+      <node concept="2v9HqM" id="46uQy6dm7Vq" role="2eOfOg">
+        <ref role="2v9HqP" node="2XHdgpYGeZh" resolve="diffusion_stencil" />
       </node>
       <node concept="2v9HqM" id="7oMSlewE0t0" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
@@ -2344,10 +2355,10 @@
           </node>
           <node concept="2Xp2MB" id="6kBcLJ2l9kd" role="k299d">
             <node concept="3TlMh9" id="6kBcLJ2lcpu" role="2Xp2M$">
-              <property role="2hmy$m" value="0" />
+              <property role="2hmy$m" value="6" />
             </node>
             <node concept="3TlMh9" id="6kBcLJ2lcpP" role="2Xp2MF">
-              <property role="2hmy$m" value="0" />
+              <property role="2hmy$m" value="6" />
             </node>
           </node>
         </node>

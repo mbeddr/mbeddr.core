@@ -69,12 +69,18 @@
         <child id="5985155480663336854" name="left" index="2Xp2M$" />
         <child id="5985155480663336857" name="right" index="2Xp2MF" />
       </concept>
+      <concept id="7269632363622801683" name="mbeddr.tutorial.shonan.structure.StencilStrategyConfigurationItem" flags="ng" index="XykOd">
+        <child id="7269632363622801708" name="strategy" index="XykOM" />
+      </concept>
       <concept id="620476785304260194" name="mbeddr.tutorial.shonan.structure.StencilComputationElement" flags="ng" index="13WUSV">
         <child id="5985155480665731828" name="reference" index="2XBVB6" />
       </concept>
       <concept id="620476785304242762" name="mbeddr.tutorial.shonan.structure.StencilComputation" flags="ng" index="13WYCj">
         <child id="6036712475742577742" name="intervals" index="k299d" />
         <child id="620476785304277577" name="elements" index="13V78g" />
+      </concept>
+      <concept id="190376153468856717" name="mbeddr.tutorial.shonan.structure.BlockStrategy" flags="ng" index="1r$Nen">
+        <property id="190376153468856721" name="size" index="1r$Neb" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -3050,6 +3056,11 @@
     </node>
     <node concept="12mU2y" id="37gStgw2peM" role="2Q9xDr">
       <node concept="3GpDuv" id="37gStgw4vPy" role="3GpDut" />
+    </node>
+    <node concept="XykOd" id="6zodoyGgJlK" role="2Q9xDr">
+      <node concept="1r$Nen" id="6zodoyGgJm1" role="XykOM">
+        <property role="1r$Neb" value="10" />
+      </node>
     </node>
     <node concept="2eOfOl" id="2X7IK8cZsTP" role="2ePNbc">
       <property role="TrG5h" value="Image" />

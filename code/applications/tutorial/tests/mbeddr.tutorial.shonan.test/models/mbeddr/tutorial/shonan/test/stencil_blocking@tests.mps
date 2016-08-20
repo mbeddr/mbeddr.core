@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8f933ca8-3ce6-40c2-bfa6-b28c711215e1(mbeddr.tutorial.shonan.test.stencil_caching@tests)">
+<model ref="r:76f505be-3edb-48df-b9c6-6901e291caa6(mbeddr.tutorial.shonan.test.stencil_blocking@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
-    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan" version="-1" />
-    <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
+    <use id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan" version="0" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
   </languages>
   <imports>
-    <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
     <import index="7lay" ref="r:869b7654-9510-4c41-8f22-bc7e7b4d50f1(mbeddr.tutorial.shonan.test.stencil_util@tests)" />
+    <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
   </imports>
   <registry>
     <language id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan">
       <concept id="7269632363622801683" name="mbeddr.tutorial.shonan.structure.StencilStrategyConfigurationItem" flags="ng" index="XykOd">
         <child id="7269632363622801708" name="strategy" index="XykOM" />
       </concept>
-      <concept id="190376153468873774" name="mbeddr.tutorial.shonan.structure.CacheStrategy" flags="ng" index="1r$ZoO" />
+      <concept id="190376153468856717" name="mbeddr.tutorial.shonan.structure.BlockStrategy" flags="ng" index="1r$Nen">
+        <property id="190376153468856721" name="size" index="1r$Neb" />
+      </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
@@ -105,17 +107,19 @@
     <node concept="12mU2y" id="37gStgw2peM" role="2Q9xDr">
       <node concept="3GpDuv" id="37gStgw4vPy" role="3GpDut" />
     </node>
-    <node concept="XykOd" id="6zodoyGdu$y" role="2Q9xDr">
-      <node concept="1r$ZoO" id="6zodoyGdu$N" role="XykOM" />
+    <node concept="XykOd" id="6zodoyGduzO" role="2Q9xDr">
+      <node concept="1r$Nen" id="6zodoyGdu$5" role="XykOM">
+        <property role="1r$Neb" value="2" />
+      </node>
     </node>
     <node concept="2eOfOl" id="2X7IK8cZsTP" role="2ePNbc">
-      <property role="TrG5h" value="Stencil_Caching" />
+      <property role="TrG5h" value="Stencil_Blocking" />
       <property role="iO3LB" value="true" />
-      <node concept="2v9HqM" id="6zodoyGdu$9" role="2eOfOg">
+      <node concept="2v9HqM" id="6zodoyGduzr" role="2eOfOg">
         <ref role="2v9HqP" to="7lay:2X7IK8cZi_3" resolve="StencilTests" />
       </node>
       <node concept="2v9HqM" id="6gxq4sGBqNq" role="2eOfOg">
-        <ref role="2v9HqP" node="6gxq4sGAxCC" resolve="Stencil_Caching" />
+        <ref role="2v9HqP" node="6gxq4sGAxCC" resolve="Stencil_Blocking" />
       </node>
       <node concept="2v9HqM" id="7BT5P447OIb" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
@@ -137,7 +141,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="6gxq4sGAxCC">
-    <property role="TrG5h" value="Stencil_Caching" />
+    <property role="TrG5h" value="Stencil_Blocking" />
     <node concept="lIfQi" id="7BT5P44qwE8" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />

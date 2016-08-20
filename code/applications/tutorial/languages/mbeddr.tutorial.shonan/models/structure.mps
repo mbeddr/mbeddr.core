@@ -125,17 +125,21 @@
       <property role="1uS6qo" value="INPUT" />
       <property role="1uS6qv" value="0" />
     </node>
-    <node concept="M4N5e" id="5Cq06Aj2dQf" role="M5hS2">
-      <property role="1uS6qo" value="OUTPUT" />
+    <node concept="M4N5e" id="46uQy6dkFsr" role="M5hS2">
+      <property role="1uS6qo" value="INPUT_LITERAL" />
       <property role="1uS6qv" value="1" />
     </node>
-    <node concept="M4N5e" id="7bTG2hLpiBJ" role="M5hS2">
-      <property role="1uS6qo" value="LITERAL" />
+    <node concept="M4N5e" id="5Cq06Aj2dQf" role="M5hS2">
+      <property role="1uS6qo" value="OUTPUT" />
       <property role="1uS6qv" value="2" />
+    </node>
+    <node concept="M4N5e" id="46uQy6dkFs$" role="M5hS2">
+      <property role="1uS6qo" value="OUTPUT_LITERAL" />
+      <property role="1uS6qv" value="3" />
     </node>
     <node concept="M4N5e" id="5Cq06Aj2dQk" role="M5hS2">
       <property role="1uS6qo" value="INTERMEDIATE" />
-      <property role="1uS6qv" value="3" />
+      <property role="1uS6qv" value="4" />
     </node>
   </node>
   <node concept="1TIwiD" id="46CZjbPQAtc">
