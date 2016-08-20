@@ -18,6 +18,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" folder="debugger-testing" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" folder="debugger" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.build/build.msd" folder="ext" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.allScripts/com.mbeddr.platform.allScripts.msd" folder="build.scripts" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.build.templates/com.mbeddr.platform.build.templates.msd" folder="templates" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.build.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" folder="rcp" />

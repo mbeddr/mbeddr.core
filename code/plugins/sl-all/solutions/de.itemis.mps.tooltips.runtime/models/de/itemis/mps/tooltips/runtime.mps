@@ -360,34 +360,88 @@
         <node concept="3clFbH" id="5P1DsEq0PzT" role="3cqZAp" />
         <node concept="3clFbJ" id="5P1DsEq0PJc" role="3cqZAp">
           <node concept="3clFbS" id="5P1DsEq0PJe" role="3clFbx">
-            <node concept="3SKdUt" id="5P1DsEq0Qay" role="3cqZAp">
-              <node concept="3SKdUq" id="5P1DsEq0Qa$" role="3SKWNk">
-                <property role="3SKdUp" value="This cell is create again for actually loading the tooltip." />
-              </node>
-            </node>
-            <node concept="3clFbF" id="5P1DsEq0QrL" role="3cqZAp">
-              <node concept="37vLTI" id="5P1DsEq0QxJ" role="3clFbG">
-                <node concept="1rXfSq" id="5P1DsEq0QGB" role="37vLTx">
-                  <ref role="37wK5l" node="2a194$KqVa2" resolve="buildTooltipCell" />
-                </node>
-                <node concept="37vLTw" id="5P1DsEq0QrJ" role="37vLTJ">
-                  <ref role="3cqZAo" node="2a194$KqVd5" resolve="myTooltipCell" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="5P1DsEq0QYH" role="3cqZAp">
-              <node concept="2OqwBi" id="5P1DsEq0R0$" role="3clFbG">
-                <node concept="2YIFZM" id="5P1DsEq0R00" role="2Oq$k0">
-                  <ref role="37wK5l" node="5P1DsEq0lRp" resolve="getCurrentContext" />
-                  <ref role="1Pybhc" node="5P1DsEq0kG5" resolve="TooltipLazyLoadingContext" />
-                </node>
-                <node concept="liA8E" id="5P1DsEq0R3a" role="2OqNvi">
-                  <ref role="37wK5l" node="5P1DsEq0EWw" resolve="registerTooltipCell" />
-                  <node concept="37vLTw" id="5P1DsEq0Rp$" role="37wK5m">
-                    <ref role="3cqZAo" node="5P1DsEq0E3Y" resolve="myTooltipId" />
+            <node concept="2GUZhq" id="6s2UZ$e6nkA" role="3cqZAp">
+              <node concept="3clFbS" id="6s2UZ$e6nkB" role="2GV8ay">
+                <node concept="3clFbF" id="6s2UZ$e6n1Z" role="3cqZAp">
+                  <node concept="2OqwBi" id="6s2UZ$e6nfy" role="3clFbG">
+                    <node concept="2OqwBi" id="6s2UZ$e6n9Y" role="2Oq$k0">
+                      <node concept="37vLTw" id="6s2UZ$e6n1X" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2a194$KqXDU" resolve="context" />
+                      </node>
+                      <node concept="liA8E" id="6s2UZ$e6neT" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6s2UZ$e6nhb" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCellFactory.pushCellContext():void" resolve="pushCellContext" />
+                    </node>
                   </node>
-                  <node concept="37vLTw" id="5P1DsEq0RdO" role="37wK5m">
-                    <ref role="3cqZAo" node="2a194$KqVd5" resolve="myTooltipCell" />
+                </node>
+                <node concept="3clFbF" id="6s2UZ$e67kt" role="3cqZAp">
+                  <node concept="2OqwBi" id="6s2UZ$e67tZ" role="3clFbG">
+                    <node concept="2OqwBi" id="6s2UZ$e67r4" role="2Oq$k0">
+                      <node concept="37vLTw" id="6s2UZ$e67kr" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2a194$KqXDU" resolve="context" />
+                      </node>
+                      <node concept="liA8E" id="6s2UZ$e67tm" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6s2UZ$e67vC" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCellFactory.addCellContextHints(java.lang.String...):void" resolve="addCellContextHints" />
+                      <node concept="Xl_RD" id="6s2UZ$e68Ed" role="37wK5m">
+                        <property role="Xl_RC" value="de.itemis.mps.tooltips.editor.tooltip.tooltipHint" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="5P1DsEq0Qay" role="3cqZAp">
+                  <node concept="3SKdUq" id="5P1DsEq0Qa$" role="3SKWNk">
+                    <property role="3SKdUp" value="This cell is create again for actually loading the tooltip." />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5P1DsEq0QrL" role="3cqZAp">
+                  <node concept="37vLTI" id="5P1DsEq0QxJ" role="3clFbG">
+                    <node concept="1rXfSq" id="5P1DsEq0QGB" role="37vLTx">
+                      <ref role="37wK5l" node="2a194$KqVa2" resolve="buildTooltipCell" />
+                    </node>
+                    <node concept="37vLTw" id="5P1DsEq0QrJ" role="37vLTJ">
+                      <ref role="3cqZAo" node="2a194$KqVd5" resolve="myTooltipCell" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5P1DsEq0QYH" role="3cqZAp">
+                  <node concept="2OqwBi" id="5P1DsEq0R0$" role="3clFbG">
+                    <node concept="2YIFZM" id="5P1DsEq0R00" role="2Oq$k0">
+                      <ref role="37wK5l" node="5P1DsEq0lRp" resolve="getCurrentContext" />
+                      <ref role="1Pybhc" node="5P1DsEq0kG5" resolve="TooltipLazyLoadingContext" />
+                    </node>
+                    <node concept="liA8E" id="5P1DsEq0R3a" role="2OqNvi">
+                      <ref role="37wK5l" node="5P1DsEq0EWw" resolve="registerTooltipCell" />
+                      <node concept="37vLTw" id="5P1DsEq0Rp$" role="37wK5m">
+                        <ref role="3cqZAo" node="5P1DsEq0E3Y" resolve="myTooltipId" />
+                      </node>
+                      <node concept="37vLTw" id="5P1DsEq0RdO" role="37wK5m">
+                        <ref role="3cqZAo" node="2a194$KqVd5" resolve="myTooltipCell" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="6s2UZ$e6nkC" role="2GVbov">
+                <node concept="3clFbF" id="6s2UZ$e6nxG" role="3cqZAp">
+                  <node concept="2OqwBi" id="6s2UZ$e6nxH" role="3clFbG">
+                    <node concept="2OqwBi" id="6s2UZ$e6nxI" role="2Oq$k0">
+                      <node concept="37vLTw" id="6s2UZ$e6nxJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2a194$KqXDU" resolve="context" />
+                      </node>
+                      <node concept="liA8E" id="6s2UZ$e6nxK" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6s2UZ$e6nBb" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCellFactory.popCellContext():void" resolve="popCellContext" />
+                    </node>
                   </node>
                 </node>
               </node>

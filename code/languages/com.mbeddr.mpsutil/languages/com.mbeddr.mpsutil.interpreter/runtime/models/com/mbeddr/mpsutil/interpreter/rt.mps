@@ -10756,6 +10756,75 @@
         <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
       </node>
     </node>
+    <node concept="2tJIrI" id="6iqfHNCcMPq" role="jymVt" />
+    <node concept="3clFb_" id="6iqfHNCcJ7_" role="jymVt">
+      <property role="TrG5h" value="evaluateWithContext" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6iqfHNCcJ7A" role="3clF47">
+        <node concept="3cpWs8" id="6iqfHNCcJ7G" role="3cqZAp">
+          <node concept="3cpWsn" id="6iqfHNCcJ7H" role="3cpWs9">
+            <property role="TrG5h" value="interpreter" />
+            <node concept="3uibUv" id="6iqfHNCcJ7I" role="1tU5fm">
+              <ref role="3uigEE" node="4X7QcQ36WR7" resolve="IInterpreter" />
+            </node>
+            <node concept="1rXfSq" id="6iqfHNCcJ7J" role="33vP2m">
+              <ref role="37wK5l" node="50LzNoSyEfI" resolve="getInterpreter" />
+              <node concept="1rXfSq" id="6iqfHNCcJ7K" role="37wK5m">
+                <ref role="37wK5l" node="50LzNoSxJYg" resolve="getCategory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6iqfHNCcJ7M" role="3cqZAp">
+          <node concept="2OqwBi" id="6iqfHNCcJ7N" role="3clFbG">
+            <node concept="37vLTw" id="6iqfHNCcRyy" role="2Oq$k0">
+              <ref role="3cqZAo" node="6iqfHNCcNU9" resolve="ctx" />
+            </node>
+            <node concept="liA8E" id="6iqfHNCcJ7P" role="2OqNvi">
+              <ref role="37wK5l" node="2ALJBcrt6T5" resolve="setRootInterpreter" />
+              <node concept="37vLTw" id="6iqfHNCcJ7Q" role="37wK5m">
+                <ref role="3cqZAo" node="6iqfHNCcJ7H" resolve="interpreter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6iqfHNCcOOt" role="3cqZAp">
+          <node concept="2OqwBi" id="6iqfHNCcMwU" role="3clFbG">
+            <node concept="37vLTw" id="6iqfHNCcMwV" role="2Oq$k0">
+              <ref role="3cqZAo" node="6iqfHNCcJ7H" resolve="interpreter" />
+            </node>
+            <node concept="liA8E" id="6iqfHNCcMwW" role="2OqNvi">
+              <ref role="37wK5l" node="2X4$XGmegKw" resolve="evaluate" />
+              <node concept="37vLTw" id="6iqfHNCcMwX" role="37wK5m">
+                <ref role="3cqZAo" node="6iqfHNCcJ7Y" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="6iqfHNCcRzC" role="37wK5m">
+                <ref role="3cqZAo" node="6iqfHNCcNU9" resolve="ctx" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="6iqfHNCcNE3" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="6iqfHNCcJ7Y" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="6iqfHNCcJ7Z" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6iqfHNCcNU9" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="6iqfHNCcO4P" role="1tU5fm">
+          <ref role="3uigEE" node="4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6iqfHNCcJ80" role="1B3o_S" />
+      <node concept="3uibUv" id="6iqfHNCcJ81" role="Sfmx6">
+        <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="50LzNoSxKmN" role="jymVt" />
     <node concept="3clFb_" id="50LzNoSxKy5" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -10934,7 +11003,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="50LzNoSy289" role="3cqZAp" />
         <node concept="3cpWs8" id="50LzNoSy1Wz" role="3cqZAp">
           <node concept="3cpWsn" id="50LzNoSy1W$" role="3cpWs9">
             <property role="TrG5h" value="contextProvider" />
@@ -10982,7 +11050,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tmbuc" id="50LzNoSxYMv" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6iqfHNCcS6h" role="1B3o_S" />
       <node concept="3uibUv" id="50LzNoSxYX4" role="3clF45">
         <ref role="3uigEE" node="4X7QcQ31ENp" resolve="IContext" />
       </node>

@@ -25,6 +25,7 @@
     <import index="tqfk" ref="r:46801d97-c3c4-4ecd-82ca-44e1f74de5ab(de.itemis.mps.editor.diagram.demolang.shapes)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wo6c" ref="r:de91083f-90a8-4dd4-83b1-8a92d65ab81d(de.itemis.mps.editor.diagram.shapes)" />
+    <import index="swi3" ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -65,7 +66,12 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="3982520150125052579" name="jetbrains.mps.lang.editor.structure.QueryFunction_AttributeStyleParameter" flags="ig" index="3sjG9q" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="3982520150122341378" name="jetbrains.mps.lang.editor.structure.AttributeStyleClassItem" flags="lg" index="3tD6jV">
+        <reference id="3982520150122346707" name="attribute" index="3tD7wE" />
+        <child id="3982520150122341379" name="query" index="3tD6jU" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -2026,6 +2032,29 @@
           </node>
         </node>
         <node concept="39fpm" id="7k8PWDQf4dz" role="35U2g" />
+        <node concept="3tD6jV" id="5FmzNQoJ3fw" role="3F10Kt">
+          <ref role="3tD7wE" to="swi3:5FmzNQoGJXe" resolve="diagram-background-color" />
+          <node concept="3sjG9q" id="5FmzNQoJ3fy" role="3tD6jU">
+            <node concept="3clFbS" id="5FmzNQoJ3f$" role="2VODD2">
+              <node concept="3clFbF" id="5FmzNQoJ3z6" role="3cqZAp">
+                <node concept="2ShNRf" id="5FmzNQoJ3S2" role="3clFbG">
+                  <node concept="1pGfFk" id="5FmzNQoJ5by" role="2ShVmc">
+                    <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                    <node concept="3cmrfG" id="5FmzNQoJ5c_" role="37wK5m">
+                      <property role="3cmrfH" value="240" />
+                    </node>
+                    <node concept="3cmrfG" id="5FmzNQoJ5fw" role="37wK5m">
+                      <property role="3cmrfH" value="240" />
+                    </node>
+                    <node concept="3cmrfG" id="5FmzNQoJ5kz" role="37wK5m">
+                      <property role="3cmrfH" value="255" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
