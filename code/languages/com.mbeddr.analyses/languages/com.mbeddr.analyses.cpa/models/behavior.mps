@@ -15,6 +15,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -214,6 +215,9 @@
               <node concept="37vLTw" id="5uqRFp97bjR" role="37wK5m">
                 <ref role="3cqZAo" node="4BmZfiOgRT$" resolve="tool" />
               </node>
+              <node concept="37vLTw" id="6zO1EVObCwT" role="37wK5m">
+                <ref role="3cqZAo" node="5KHBa6l3cWt" resolve="repo" />
+              </node>
             </node>
           </node>
         </node>
@@ -233,6 +237,12 @@
         <property role="TrG5h" value="tool" />
         <node concept="3uibUv" id="4BmZfiOgRT_" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KHBa6l3cWt" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6l3cWS" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="3uibUv" id="4BmZfiOgRTA" role="3clF45">
