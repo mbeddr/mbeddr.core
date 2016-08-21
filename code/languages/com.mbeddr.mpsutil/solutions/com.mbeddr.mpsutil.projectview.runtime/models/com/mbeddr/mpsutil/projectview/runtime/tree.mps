@@ -1369,7 +1369,7 @@
             <property role="1sVAO0" value="false" />
             <property role="1EXbeo" value="false" />
             <ref role="1Y3XeK" to="hfuk:7lTD6YZtjgo" resolve="IMakeNotificationListener.Stub" />
-            <ref role="37wK5l" to="hfuk:7lTD6YZtjgq" resolve="IMakeNotificationListener.Stub" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             <node concept="3Tm1VV" id="4QICnJ5Heuu" role="1B3o_S" />
             <node concept="3clFb_" id="4QICnJ5Heuv" role="jymVt">
               <property role="TrG5h" value="sessionClosed" />

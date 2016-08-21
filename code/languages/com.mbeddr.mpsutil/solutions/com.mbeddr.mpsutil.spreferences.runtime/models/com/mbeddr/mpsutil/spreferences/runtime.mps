@@ -2213,7 +2213,7 @@
                           <ref role="2Gs0qQ" node="KILMQGVVB2" resolve="rootNode" />
                         </node>
                         <node concept="3TrEf2" id="KILMQH0gwR" role="2OqNvi">
-                          <ref role="3Tt5mk" to="lko4:KILMQGSUtM" />
+                          <ref role="3Tt5mk" to="lko4:KILMQGSUtM" resolve="redirectToModel" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="KILMQH0n3o" role="2OqNvi">
@@ -2264,7 +2264,7 @@
                     <ref role="2Gs0qQ" node="KILMQGVVB2" resolve="rootNode" />
                   </node>
                   <node concept="3TrEf2" id="KILMQGWNdl" role="2OqNvi">
-                    <ref role="3Tt5mk" to="lko4:KILMQGSUtM" />
+                    <ref role="3Tt5mk" to="lko4:KILMQGSUtM" resolve="redirectToModel" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="KILMQGWNKX" role="2OqNvi" />
@@ -2598,14 +2598,9 @@
                       <ref role="3cqZAo" node="2amrMVodfHx" resolve="project" />
                     </node>
                     <node concept="liA8E" id="YmESZLfvA" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~Project.addModule(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addModule" />
-                      <node concept="2OqwBi" id="YmESZLfN9" role="37wK5m">
-                        <node concept="37vLTw" id="YmESZLfEb" role="2Oq$k0">
-                          <ref role="3cqZAo" node="YmESZLci$" resolve="solution" />
-                        </node>
-                        <node concept="liA8E" id="YmESZLgvW" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
-                        </node>
+                      <ref role="37wK5l" to="z1c3:~IProject.addModule(org.jetbrains.mps.openapi.module.SModule):void" resolve="addModule" />
+                      <node concept="37vLTw" id="YmESZLfEb" role="37wK5m">
+                        <ref role="3cqZAo" node="YmESZLci$" resolve="solution" />
                       </node>
                     </node>
                   </node>
