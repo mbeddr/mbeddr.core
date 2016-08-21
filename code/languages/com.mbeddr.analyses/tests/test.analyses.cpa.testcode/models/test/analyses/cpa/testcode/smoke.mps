@@ -11,14 +11,9 @@
   <registry>
     <language id="fe179c61-4531-423b-a95c-f5f59a664603" name="com.mbeddr.analyses.cpa">
       <concept id="4409367108242665713" name="com.mbeddr.analyses.cpa.structure.ICPAAnalysisConfig" flags="ng" index="3makzO">
-        <child id="4409367108243085467" name="cpas" index="3mbY2u" />
+        <child id="4409367108243085467" name="config" index="3mbY2u" />
       </concept>
-      <concept id="4409367108243090270" name="com.mbeddr.analyses.cpa.structure.PointerCPA" flags="ng" index="3mbXdr" />
-      <concept id="4409367108243087864" name="com.mbeddr.analyses.cpa.structure.PredicateCPA" flags="ng" index="3mbXBX" />
-      <concept id="4409367108243087975" name="com.mbeddr.analyses.cpa.structure.ValueAnalysisCPA" flags="ng" index="3mbXDy" />
-      <concept id="4409367108243085619" name="com.mbeddr.analyses.cpa.structure.LocationCPA" flags="ng" index="3mbY4Q" />
-      <concept id="4409367108243086699" name="com.mbeddr.analyses.cpa.structure.CallstackCPA" flags="ng" index="3mbYlI" />
-      <concept id="4409367108243086788" name="com.mbeddr.analyses.cpa.structure.FunctionpointerCPA" flags="ng" index="3mbYn1" />
+      <concept id="4945079054145687615" name="com.mbeddr.analyses.cpa.structure.PredicateAnalysisConfig" flags="ng" index="1sd6cc" />
       <concept id="5320718137711358982" name="com.mbeddr.analyses.cpa.structure.AssertionsAnalysis" flags="ng" index="3X_ozM" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -202,7 +197,7 @@
     <node concept="3GEVxB" id="4BmZfiOhF5P" role="3W6d8T">
       <ref role="3GEb4d" node="4BmZfiOhEZA" resolve="smoke" />
     </node>
-    <node concept="3X_ozM" id="4BmZfiOhF5R" role="3V$2$K">
+    <node concept="3X_ozM" id="4iwsNco_Soj" role="3V$2$K">
       <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
@@ -217,14 +212,9 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="4BmZfiOhEZY" resolve="assertsWhichHold" />
-      <node concept="3mbY4Q" id="3OLe0nF8iMX" role="3mbY2u" />
-      <node concept="3mbYlI" id="3OLe0nF8iN2" role="3mbY2u" />
-      <node concept="3mbXdr" id="3OLe0nF8iNa" role="3mbY2u" />
-      <node concept="3mbYn1" id="3OLe0nF8iNk" role="3mbY2u" />
-      <node concept="3mbXBX" id="3OLe0nF8iNw" role="3mbY2u" />
-      <node concept="3mbXDy" id="3OLe0nF8iNI" role="3mbY2u" />
+      <node concept="1sd6cc" id="4iwsNco_Sok" role="3mbY2u" />
     </node>
-    <node concept="3X_ozM" id="3OLe0nF8iNQ" role="3V$2$K">
+    <node concept="3X_ozM" id="4iwsNco_SnR" role="3V$2$K">
       <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
@@ -239,14 +229,9 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="5KYWJPNOUOg" resolve="assertWhichFails" />
-      <node concept="3mbY4Q" id="3OLe0nF8iNR" role="3mbY2u" />
-      <node concept="3mbYlI" id="3OLe0nF8iNS" role="3mbY2u" />
-      <node concept="3mbXdr" id="3OLe0nF8iNT" role="3mbY2u" />
-      <node concept="3mbYn1" id="3OLe0nF8iNU" role="3mbY2u" />
-      <node concept="3mbXBX" id="3OLe0nF8iNV" role="3mbY2u" />
-      <node concept="3mbXDy" id="3OLe0nF8iNW" role="3mbY2u" />
+      <node concept="1sd6cc" id="4iwsNco_Sog" role="3mbY2u" />
     </node>
-    <node concept="3X_ozM" id="3OLe0nF8iOc" role="3V$2$K">
+    <node concept="3X_ozM" id="4iwsNco_Sp1" role="3V$2$K">
       <property role="2lelRm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
@@ -261,12 +246,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="5pfYjqBbcL_" resolve="problematic" />
-      <node concept="3mbY4Q" id="3OLe0nF8iOd" role="3mbY2u" />
-      <node concept="3mbYlI" id="3OLe0nF8iOe" role="3mbY2u" />
-      <node concept="3mbXdr" id="3OLe0nF8iOf" role="3mbY2u" />
-      <node concept="3mbYn1" id="3OLe0nF8iOg" role="3mbY2u" />
-      <node concept="3mbXBX" id="3OLe0nF8iOh" role="3mbY2u" />
-      <node concept="3mbXDy" id="3OLe0nF8iOi" role="3mbY2u" />
+      <node concept="1sd6cc" id="4iwsNco_Sp2" role="3mbY2u" />
     </node>
   </node>
   <node concept="N3F5e" id="4BmZfiOhEZA">

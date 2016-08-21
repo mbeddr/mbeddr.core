@@ -57,60 +57,25 @@
     <property role="TrG5h" value="ICPAAnalysisConfig" />
     <node concept="1TJgyj" id="3OLe0nF7Hyr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="cpas" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3OLe0nF7H$$" resolve="CPABase" />
+      <property role="20kJfa" value="config" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4iwsNco_10Y" resolve="ConfigBase" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3OLe0nF7H$$">
-    <property role="1pbfSe" value="676335913" />
-    <property role="TrG5h" value="CPABase" />
-    <property role="3GE5qa" value="cpa" />
+  <node concept="1TIwiD" id="4iwsNco_10Y">
+    <property role="1pbfSe" value="1563722609" />
+    <property role="TrG5h" value="ConfigBase" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="config" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="3OLe0nF7H$N">
-    <property role="1pbfSe" value="676335928" />
-    <property role="3GE5qa" value="cpa" />
-    <property role="TrG5h" value="LocationCPA" />
-    <property role="34LRSv" value="LocationCPA" />
-    <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
-  </node>
-  <node concept="1TIwiD" id="3OLe0nF7HPF">
-    <property role="1pbfSe" value="676337008" />
-    <property role="3GE5qa" value="cpa" />
-    <property role="TrG5h" value="CallstackCPA" />
-    <property role="34LRSv" value="CallstackCPA" />
-    <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
-  </node>
-  <node concept="1TIwiD" id="3OLe0nF7HR4">
-    <property role="1pbfSe" value="676337097" />
-    <property role="3GE5qa" value="cpa" />
-    <property role="TrG5h" value="FunctionpointerCPA" />
-    <property role="34LRSv" value="FunctionpointerCPA" />
-    <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
-  </node>
-  <node concept="1TIwiD" id="3OLe0nF7I7S">
-    <property role="1pbfSe" value="676338173" />
-    <property role="3GE5qa" value="cpa" />
-    <property role="TrG5h" value="PredicateCPA" />
-    <property role="34LRSv" value="PredicateCPA" />
-    <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
-  </node>
-  <node concept="1TIwiD" id="3OLe0nF7I9B">
-    <property role="1pbfSe" value="676338284" />
-    <property role="3GE5qa" value="cpa" />
-    <property role="TrG5h" value="ValueAnalysisCPA" />
-    <property role="34LRSv" value="ValueAnalysisCPA" />
-    <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
-  </node>
-  <node concept="1TIwiD" id="3OLe0nF7IHu">
-    <property role="1pbfSe" value="676340579" />
-    <property role="3GE5qa" value="cpa" />
-    <property role="TrG5h" value="PointerCPA" />
-    <property role="34LRSv" value="PointerCPA" />
-    <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
+  <node concept="1TIwiD" id="4iwsNco_10Z">
+    <property role="1pbfSe" value="1563722610" />
+    <property role="TrG5h" value="PredicateAnalysisConfig" />
+    <property role="34LRSv" value="-predicateAnalysis" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
   </node>
 </model>
 
