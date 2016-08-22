@@ -299,5 +299,27 @@
       <node concept="17QB3L" id="4iwsNco_LbH" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="6TQiFFuRmR4">
+    <property role="3GE5qa" value="config" />
+    <ref role="13h7C2" to="km6g:6TQiFFuRmR3" resolve="ValueAnalysisConfig" />
+    <node concept="13hLZK" id="6TQiFFuRmR5" role="13h7CW">
+      <node concept="3clFbS" id="6TQiFFuRmR6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6TQiFFuRmR7" role="13h7CS">
+      <property role="TrG5h" value="configName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="4iwsNco_Lbq" resolve="configName" />
+      <node concept="3Tm1VV" id="6TQiFFuRmR8" role="1B3o_S" />
+      <node concept="3clFbS" id="6TQiFFuRmRb" role="3clF47">
+        <node concept="3cpWs6" id="6TQiFFuRmRZ" role="3cqZAp">
+          <node concept="Xl_RD" id="6TQiFFuRmRh" role="3cqZAk">
+            <property role="Xl_RC" value="-valueAnalysis" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6TQiFFuRmRc" role="3clF45" />
+    </node>
+  </node>
 </model>
 

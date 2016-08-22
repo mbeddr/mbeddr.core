@@ -77,5 +77,12 @@
     <property role="3GE5qa" value="config" />
     <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
   </node>
+  <node concept="1TIwiD" id="6TQiFFuRmR3">
+    <property role="1pbfSe" value="1297332349" />
+    <property role="TrG5h" value="ValueAnalysisConfig" />
+    <property role="34LRSv" value="-valueAnalysis" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
 </model>
 
