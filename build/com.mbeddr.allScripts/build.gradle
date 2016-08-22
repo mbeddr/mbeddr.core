@@ -6,7 +6,7 @@ task build_allScripts(type: Exec, dependsOn: 'resolve_mps') {
   commandLine (args)
 }
 
-task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
+task publish_allScripts(type: Zip) {
     from rootProject.projectDir.absolutePath + "/build"
     include "*/*.xml"
     from rootProject.projectDir.absolutePath + "/code/plugins"

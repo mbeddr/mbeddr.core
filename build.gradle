@@ -25,7 +25,7 @@ subprojects {
 	
     // mps properties
 	ext.mpsMajor = "3.3"
-    ext.mpsMinor = "4"
+    ext.mpsMinor = "5"
     ext.mpsBuild = mpsMajor + "." + mpsMinor
     ext.mbeddrMpsDir = "MPS-mbeddr-" + mpsBuild
     ext.mpsBaseUrl = "http://download.jetbrains.com/mps/33/"
@@ -49,7 +49,13 @@ subprojects {
 	if (project.hasProperty('mbeddrBuild')) {
 		ext.mbeddrBuild = project.getProperty('mbeddrBuild')
 	} else {
-		ext.mbeddrBuild = 'git rev-list --count HEAD'.execute()
+        def gitBranch = null
+        if (System.properties['os.name'].toLowerCase().contains('windows')) {
+            gitBranch ='cmd /c git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
+        } else {
+            gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
+        }
+        ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
 	}
     ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
@@ -95,8 +101,15 @@ subprojects {
     // ant script locations
     ext.scriptsBasePath = file(rootProject.projectDir.absolutePath + "/scripts/").getAbsolutePath()
 
+    ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+    ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+
     // repository urls
-    ext.mps_repository = 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
+    if(project.hasProperty('mbeddrRelease')) {
+        ext.repository = project.releaseRepository
+    } else {
+        ext.repository = project.snapshotRepository
+    }
 
     ant.taskdef(name: "makeTests",
             classname: "com.mbeddr.tools.ant.MakeTestsTask",
@@ -105,16 +118,8 @@ subprojects {
 
     // repository
     repositories {
-        maven {
-            //url "$buildDir/repo"
-            if(hasProperty('nexusUsername')) {
-                credentials {
-                    username nexusUsername
-                    password nexusPassword
-                }
-            }
-            url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
-        }
+        maven {  url project.releaseRepository }
+        maven {  url project.snapshotRepository }
     }
 
     // configs
@@ -176,11 +181,18 @@ subprojects {
         into rootProject.projectDir.absolutePath + "/scripts/"
     }
 
+    def getVersionName = { ->
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'describe', '--tags'
+            standardOutput = stdout
+        }
+        return stdout.toString().trim()
+    }
 }
 
 project(':build:com.jetbrains.mps') {
     publishing {
-
         publications {
             mps(MavenPublication) {
                 groupId 'com.jetbrains'
@@ -191,21 +203,20 @@ project(':build:com.jetbrains.mps') {
         }
         repositories {
             maven {
-                if(hasProperty('nexusUsername')) {
+                if(project.hasProperty('nexusUsername')) {
                     credentials {
-                        username nexusUsername
-                        password nexusPassword
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
                     }
                 }
-                url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
+                url project.releaseRepository
             }
-
         }
     }
 }
 
 project(':build:com.mbeddr.allScripts') {
-    /*publishing {
+    publishing {
         publications {
             mbeddrAllScripts(MavenPublication) {
                 groupId 'com.mbeddr'
@@ -214,24 +225,26 @@ project(':build:com.mbeddr.allScripts') {
                 artifact(publish_allScripts) {}
             }
         }
-    }*/
+        repositories {
+            maven {
+                if(project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
+                    }
+                }
+                url repository
+            }
+        }
+    }
     dependencies {
-        //compile project(path: ':build:com.jetbrains.mps', configuration: 'mps')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
     }
 }
 
 project(':build:com.mbeddr.build') {
     dependencies {
-        //compile project(path: ':build:com.mbeddr.allScripts', configuration: 'scripts' )
-        //compile project(path: ':build:com.jetbrains.mps', configuration: 'mps')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
-    }
-    repositories {
-        maven {
-            url "$buildDir/repo"
-        }
     }
 }
 
@@ -266,13 +279,13 @@ project(':build:com.mbeddr.platform') {
         }
         repositories {
             maven {
-                if(hasProperty('nexusUsername')) {
+                if(project.hasProperty('nexusUsername')) {
                     credentials {
-                        username nexusUsername
-                        password nexusPassword
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
                     }
                 }
-                url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
+                url repository
             }
         }
     }
@@ -298,13 +311,13 @@ project(':build:com.mbeddr.allInOne') {
         }
         repositories {
             maven {
-                if(hasProperty('nexusUsername')) {
+                if(project.hasProperty('nexusUsername')) {
                     credentials {
-                        username nexusUsername
-                        password nexusPassword
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
                     }
                 }
-                url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
+                url repository
             }
         }
     }
@@ -338,7 +351,13 @@ project(':build:com.mbeddr.rcp') {
         }
         repositories {
             maven {
-                url "$buildDir/repo"
+                if(project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
+                    }
+                }
+                url repository
             }
         }
     }
@@ -370,7 +389,7 @@ project(':build:com.mbeddr.release') {
         }
         repositories {
             maven {
-                url "$buildDir/repo"
+                url repository
             }
         }
     }*/
@@ -398,6 +417,17 @@ project(':build:com.mbeddr.analyses.cbmc') {
                 artifact(publish_cbmcWin) {}
             }
         }
+        repositories {
+            maven {
+                if(project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
+                    }
+                }
+                url project.releaseRepository
+            }
+        }
     }
 }
 
@@ -418,13 +448,13 @@ project(':build:com.mbeddr.tutorial') {
         }
         repositories {
             maven {
-                if(hasProperty('nexusUsername')) {
+                if(project.hasProperty('nexusUsername')) {
                     credentials {
-                        username nexusUsername
-                        password nexusPassword
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
                     }
                 }
-                url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
+                url repository
             }
         }
     }

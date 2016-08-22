@@ -2,7 +2,7 @@
 <model ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -243,6 +243,26 @@
       <property role="iBDjm" value="true" />
       <node concept="3uibUv" id="4opyGmearPi" role="3t5Oan">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="5FmzNQoGJXe" role="V601i">
+      <property role="TrG5h" value="diagram-background-color" />
+      <node concept="3uibUv" id="5FmzNQoGJYL" role="3t5Oan">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2ShNRf" id="21DGiA4IQGq" role="3t49C2">
+        <node concept="1pGfFk" id="21DGiA4IQGr" role="2ShVmc">
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <node concept="3cmrfG" id="21DGiA4IQGs" role="37wK5m">
+            <property role="3cmrfH" value="240" />
+          </node>
+          <node concept="3cmrfG" id="21DGiA4IQGt" role="37wK5m">
+            <property role="3cmrfH" value="240" />
+          </node>
+          <node concept="3cmrfG" id="21DGiA4IQGu" role="37wK5m">
+            <property role="3cmrfH" value="240" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

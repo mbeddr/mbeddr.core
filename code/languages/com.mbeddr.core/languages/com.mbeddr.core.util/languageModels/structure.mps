@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -13,7 +13,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -46,6 +46,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -1750,6 +1751,21 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="27FUWv4$Q1c">
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="OredExprList" />
+    <property role="34LRSv" value="[||" />
+    <property role="R4oN_" value="a list of or'ed expressions" />
+    <property role="EcuMT" value="2444306466007638092" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="27FUWv4$Q1d" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="2444306466007638093" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="1lYd87J$xt$">
     <property role="3GE5qa" value="includeGuards" />
     <property role="TrG5h" value="UniqueIncludeGuards" />
@@ -1770,19 +1786,72 @@
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
     </node>
   </node>
-  <node concept="1TIwiD" id="27FUWv4$Q1c">
-    <property role="3GE5qa" value="util" />
-    <property role="TrG5h" value="OredExprList" />
-    <property role="34LRSv" value="[||" />
-    <property role="R4oN_" value="a list of or'ed expressions" />
-    <property role="EcuMT" value="2444306466007638092" />
+  <node concept="1TIwiD" id="7hIwPwVQD7C">
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <property role="TrG5h" value="ClosureStatementList" />
+    <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="1337387712" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    <node concept="PrWs8" id="5HxjapwgqSR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7apEgWbIQfD">
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <property role="TrG5h" value="Closure" />
+    <property role="R4oN_" value="a lambda (stateless closure)" />
+    <property role="34LRSv" value="[" />
+    <property role="1pbfSe" value="2119503096" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="27FUWv4$Q1d" role="1TKVEi">
+    <node concept="1TJgyj" id="7apEgWbIQfF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expressions" />
-      <property role="20lbJX" value="1..n" />
-      <property role="IQ2ns" value="2444306466007638093" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter" />
+    </node>
+    <node concept="1TJgyj" id="7apEgWbIQfG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7hIwPwVQD7C" resolve="ClosureStatementList" />
+    </node>
+    <node concept="PrWs8" id="4usdeMNUmVy" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
+    </node>
+    <node concept="PrWs8" id="2h5hmpsJv8o" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
+    </node>
+    <node concept="PrWs8" id="7Jr7T0w731$" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7apEgWbIQfE">
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <property role="TrG5h" value="ClosureParameter" />
+    <property role="R4oN_" value="an argument for a closure" />
+    <property role="1pbfSe" value="2119503097" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7apEgWbIQg5" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7Jr7T0w731A" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7apEgWbIQfY">
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <property role="TrG5h" value="ClosureParameterRef" />
+    <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="2119503117" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7apEgWbIQfZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter" />
+    </node>
+    <node concept="PrWs8" id="70kXLV4KbxP" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
   </node>
 </model>

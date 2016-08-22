@@ -346,10 +346,14 @@
       <concept id="7297559910934293472" name="com.mbeddr.core.util.structure.ForRangeRef" flags="ng" index="1f68ZN">
         <reference id="7297559910934293473" name="forRange" index="1f68ZM" />
       </concept>
+      <concept id="8389787570822353384" name="com.mbeddr.core.util.structure.ClosureStatementList" flags="ng" index="1fH1aK" />
       <concept id="6307143892175911066" name="com.mbeddr.core.util.structure.RangeExpression" flags="ng" index="1vV05I">
         <property id="8729447926330623085" name="rightExclude" index="n43Ve" />
         <child id="6307143892175911068" name="right" index="1vV05C" />
         <child id="6307143892175911067" name="left" index="1vV05J" />
+      </concept>
+      <concept id="8257817273846948841" name="com.mbeddr.core.util.structure.Closure" flags="ng" index="1T8GFA">
+        <child id="8257817273846948844" name="body" index="1T8GFz" />
       </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
@@ -442,7 +446,6 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
-      <concept id="8389787570822353384" name="com.mbeddr.core.modules.structure.ClosureStatementList" flags="ng" index="1fH1aK" />
       <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
         <reference id="5950410542643524493" name="function" index="3O_q_h" />
         <child id="5950410542643524495" name="actuals" index="3O_q_j" />
@@ -453,9 +456,7 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
-      <concept id="8257817273846948841" name="com.mbeddr.core.modules.structure.Closure" flags="ng" index="1T8GFA">
-        <child id="8257817273846948844" name="body" index="1T8GFz" />
-      </concept>
+      <concept id="8257817273846948841" name="com.mbeddr.core.modules.structure.Closure" flags="ng" index="1T8GFB" />
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
@@ -5045,7 +5046,7 @@
           </node>
           <node concept="2xZu8t" id="7nMAuIoJr$5" role="3o3WLE">
             <ref role="2xZoc7" to="9g8w:7nMAuIoJpEG" resolve="init" />
-            <node concept="1T8GFA" id="7nMAuIoJsfH" role="2xZpY0">
+            <node concept="1T8GFB" id="7nMAuIoJsfH" role="2xZpY0">
               <node concept="1fH1aK" id="7nMAuIoJsfI" role="1T8GFz">
                 <node concept="3XIRFW" id="7nMAuIoJy1P" role="3XIRFZ">
                   <node concept="29HgVG" id="7nMAuIoJy20" role="lGtFl">
@@ -5054,7 +5055,7 @@
                         <node concept="3clFbF" id="7nMAuIoJy28" role="3cqZAp">
                           <node concept="2OqwBi" id="7nMAuIoJy23" role="3clFbG">
                             <node concept="3TrEf2" id="7nMAuIoJy26" role="2OqNvi">
-                              <ref role="3Tt5mk" to="yz9a:5ptpUgMv0sT" resolve="testinit" />
+                              <ref role="3Tt5mk" to="yz9a:5ptpUgMv0sT" />
                             </node>
                             <node concept="30H73N" id="7nMAuIoJy27" role="2Oq$k0" />
                           </node>

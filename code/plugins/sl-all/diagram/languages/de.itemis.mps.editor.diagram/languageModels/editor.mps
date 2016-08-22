@@ -2,9 +2,9 @@
 <model ref="r:20c4aa5c-ab36-4815-af32-01895ee9c2f5(de.itemis.mps.editor.diagram.editor)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2596,8 +2596,8 @@
     <ref role="1XX52x" to="2qld:7L$rKAV7eXL" resolve="Content_GenericElementQuery_ParameterObject" />
     <node concept="PMmxH" id="2wdLO7KhY1a" role="2wV5jI">
       <property role="1cu_pB" value="0" />
-      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
     </node>
   </node>
   <node concept="24kQdi" id="6Q0ZYbv$IqE">
@@ -4231,6 +4231,10 @@
       </node>
       <node concept="3EZMnI" id="MTvSFwxo6R" role="3EZMnx">
         <property role="S$Qs1" value="true" />
+        <node concept="3F0ifn" id="MTvSFwydNB" role="AHCbl">
+          <property role="3F0ifm" value="{...}" />
+          <ref role="1k5W1q" to="tpen:4vxLnq9T43C" resolve="FoldedCell" />
+        </node>
         <node concept="ljvvj" id="MTvSFwxQ6s" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -4261,10 +4265,6 @@
           <node concept="VechU" id="7AB28SOK8ad" role="3F10Kt">
             <property role="Vb096" value="DARK_BLUE" />
           </node>
-        </node>
-        <node concept="3F0ifn" id="MTvSFwydNB" role="AHCbl">
-          <property role="3F0ifm" value="{...}" />
-          <ref role="1k5W1q" to="tpen:4vxLnq9T43C" resolve="FoldedCell" />
         </node>
       </node>
       <node concept="l2Vlx" id="i0DyZUs" role="2iSdaV" />
@@ -4652,11 +4652,30 @@
       <node concept="2iRfu4" id="6gM9UMJsW7P" role="2iSdaV" />
     </node>
   </node>
+  <node concept="3p36aQ" id="4iNiUqGz3jv">
+    <ref role="aqKnT" to="2qld:2i0w9xYr1Um" resolve="ShapeNodeExpression" />
+  </node>
   <node concept="3p36aQ" id="4iNiUqGz3ju">
     <ref role="aqKnT" to="2qld:6uo2fN6gQ2g" resolve="StandardShape" />
   </node>
-  <node concept="3p36aQ" id="4iNiUqGz3jv">
-    <ref role="aqKnT" to="2qld:2i0w9xYr1Um" resolve="ShapeNodeExpression" />
+  <node concept="24kQdi" id="7EpvT6Mxly$">
+    <property role="3GE5qa" value="content" />
+    <ref role="1XX52x" to="2qld:5qgNcfDmYRM" resolve="Content_BLQuery" />
+    <node concept="PMmxH" id="hqLjuKn" role="2wV5jI">
+      <ref role="PMmxG" to="tpen:hqLiD8Q" resolve="ConceptFunction_Component" />
+    </node>
+    <node concept="3EZMnI" id="7EpvT6MxlyF" role="6VMZX">
+      <node concept="2iRkQZ" id="7EpvT6MxlyG" role="2iSdaV" />
+      <node concept="3EZMnI" id="7EpvT6MxlyO" role="3EZMnx">
+        <node concept="2iRfu4" id="7EpvT6MxlyP" role="2iSdaV" />
+        <node concept="3F0ifn" id="7EpvT6MxlyL" role="3EZMnx">
+          <property role="3F0ifm" value="duplicates safe:" />
+        </node>
+        <node concept="3F0A7n" id="7EpvT6Mxlz3" role="3EZMnx">
+          <ref role="1NtTu8" to="2qld:7EpvT6Mxlym" resolve="duplicatedSafe" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
