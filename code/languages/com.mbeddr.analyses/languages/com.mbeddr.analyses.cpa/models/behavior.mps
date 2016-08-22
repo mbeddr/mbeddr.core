@@ -101,10 +101,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -162,19 +158,15 @@
       <ref role="13i0hy" node="3OLe0nF7mbj" resolve="getCLevelEntryFunctionName" />
       <node concept="3Tm1VV" id="3OLe0nF7mfC" role="1B3o_S" />
       <node concept="3clFbS" id="3OLe0nF7mfF" role="3clF47">
-        <node concept="3clFbF" id="3OLe0nF7pw7" role="3cqZAp">
-          <node concept="2OqwBi" id="5KYWJPNMTRW" role="3clFbG">
-            <node concept="1PxgMI" id="5KYWJPNMTt8" role="2Oq$k0">
-              <ref role="1PxNhF" to="x27k:5_l8w1EmTvx" resolve="Function" />
-              <node concept="2OqwBi" id="3OLe0nF7pY7" role="1PxMeX">
-                <node concept="13iPFW" id="3OLe0nF7pQI" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3OLe0nF7qd2" role="2OqNvi">
-                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
-                </node>
+        <node concept="3clFbF" id="6hXQBIqWqoy" role="3cqZAp">
+          <node concept="2YIFZM" id="6hXQBIqWqyo" role="3clFbG">
+            <ref role="37wK5l" to="tzyt:3kUGzlRgWzQ" resolve="computeEntryFunctionName" />
+            <ref role="1Pybhc" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+            <node concept="2OqwBi" id="6hXQBIqWqJE" role="37wK5m">
+              <node concept="13iPFW" id="6hXQBIqWqFH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6hXQBIqWqYI" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
               </node>
-            </node>
-            <node concept="2qgKlT" id="3OLe0nF7opt" role="2OqNvi">
-              <ref role="37wK5l" to="qd6m:6uZAbUKp9IB" resolve="mangledNameNew" />
             </node>
           </node>
         </node>

@@ -451,12 +451,6 @@
                             <ref role="37wK5l" to="tzyt:4GD8rS0DDXt" resolve="doCollectCFiles" />
                           </node>
                         </node>
-                        <node concept="3cpWs8" id="5KYWJPNMRTw" role="3cqZAp">
-                          <node concept="3cpWsn" id="5KYWJPNMRTz" role="3cpWs9">
-                            <property role="TrG5h" value="entryFunctionName" />
-                            <node concept="17QB3L" id="5KYWJPNMRTu" role="1tU5fm" />
-                          </node>
-                        </node>
                         <node concept="3cpWs8" id="4BmZfiOhqzF" role="3cqZAp">
                           <node concept="3cpWsn" id="4BmZfiOhqzG" role="3cpWs9">
                             <property role="TrG5h" value="cpaResult" />
