@@ -29,7 +29,6 @@
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="6wtx" ref="r:b3d1de11-ac9a-484b-b90e-25f8ae656f17(com.mbeddr.analyses.cbmc.rt.analyses.loops)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" implicit="true" />
   </imports>
@@ -225,7 +224,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -487,25 +485,24 @@
               </node>
               <node concept="3clFbF" id="24GUsn9E5ie" role="3cqZAp">
                 <node concept="37vLTI" id="24GUsn9E5Bb" role="3clFbG">
-                  <node concept="2OqwBi" id="24GUsn9E6n8" role="37vLTx">
-                    <node concept="2OqwBi" id="24GUsn9E5Ta" role="2Oq$k0">
-                      <node concept="37vLTw" id="24GUsn9E5Jx" role="2Oq$k0">
-                        <ref role="3cqZAo" node="24GUsn9DcM1" resolve="cfg" />
-                      </node>
-                      <node concept="3TrEf2" id="24GUsn9E68I" role="2OqNvi">
-                        <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="24GUsn9E6F0" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:g2CnSr0ARV" resolve="qualifiedNameCIdentifier" />
-                    </node>
-                  </node>
                   <node concept="2OqwBi" id="24GUsn9E5qk" role="37vLTJ">
                     <node concept="37vLTw" id="24GUsn9E5ic" role="2Oq$k0">
                       <ref role="3cqZAo" node="24GUsn9De1s" resolve="config" />
                     </node>
                     <node concept="2S8uIT" id="24GUsn9E5wi" role="2OqNvi">
                       <ref role="2S8YL0" to="tzyt:2xigTGTFegf" resolve="functionName" />
+                    </node>
+                  </node>
+                  <node concept="NRdvd" id="6hXQBIqUTFf" role="37vLTx">
+                    <ref role="1Pybhc" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+                    <ref role="37wK5l" to="tzyt:3kUGzlRgWzQ" resolve="computeEntryFunctionName" />
+                    <node concept="2OqwBi" id="6hXQBIqUTFg" role="37wK5m">
+                      <node concept="37vLTw" id="6hXQBIqUTFh" role="2Oq$k0">
+                        <ref role="3cqZAo" node="24GUsn9DcM1" resolve="cfg" />
+                      </node>
+                      <node concept="3TrEf2" id="6hXQBIqUTFi" role="2OqNvi">
+                        <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+                      </node>
                     </node>
                   </node>
                 </node>

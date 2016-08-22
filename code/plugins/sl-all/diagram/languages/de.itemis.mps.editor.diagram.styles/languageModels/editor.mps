@@ -245,6 +245,26 @@
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
+    <node concept="3t5Usi" id="5FmzNQoGJXe" role="V601i">
+      <property role="TrG5h" value="diagram-background-color" />
+      <node concept="3uibUv" id="5FmzNQoGJYL" role="3t5Oan">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2ShNRf" id="21DGiA4IQGq" role="3t49C2">
+        <node concept="1pGfFk" id="21DGiA4IQGr" role="2ShVmc">
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <node concept="3cmrfG" id="21DGiA4IQGs" role="37wK5m">
+            <property role="3cmrfH" value="240" />
+          </node>
+          <node concept="3cmrfG" id="21DGiA4IQGt" role="37wK5m">
+            <property role="3cmrfH" value="240" />
+          </node>
+          <node concept="3cmrfG" id="21DGiA4IQGu" role="37wK5m">
+            <property role="3cmrfH" value="240" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Qs71p" id="4mmPun57bLu">
     <property role="TrG5h" value="LineStyle" />
