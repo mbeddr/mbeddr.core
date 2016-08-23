@@ -4,59 +4,8 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/lib/java/runtime/com.microsoft.z3.jar" />
-      <sourceRoot location="lib/lib/java/runtime/common.jar" />
-      <sourceRoot location="lib/lib/java/runtime/guava.jar" />
-      <sourceRoot location="lib/lib/java/runtime/icu4j.jar" />
-      <sourceRoot location="lib/lib/java/runtime/java-cup-runtime.jar" />
-      <sourceRoot location="lib/lib/java/runtime/javabdd.jar" />
-      <sourceRoot location="lib/lib/java/runtime/javasmt.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.cdt.core.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.contenttype.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.jobs.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.resources.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.core.runtime.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.equinox.common.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.equinox.preferences.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.jdt.core.jar" />
-      <sourceRoot location="lib/lib/java/runtime/org.eclipse.osgi.jar" />
-      <sourceRoot location="lib/lib/java/runtime/princess-assertionless.jar" />
-      <sourceRoot location="lib/lib/java/runtime/scala-actors.jar" />
-      <sourceRoot location="lib/lib/java/runtime/scala-library.jar" />
-      <sourceRoot location="lib/lib/java/runtime/smt-parser.jar" />
-      <sourceRoot location="lib/lib/java/runtime/smtinterpol-comp.jar" />
-      <sourceRoot location="lib/lib/apron.jar" />
-      <sourceRoot location="lib/lib/gmp.jar" />
-      <sourceRoot location="lib/lib/edu.cmu.sei.rtss.jldd.jar" />
-      <sourceRoot location="lib/lib/jpl.jar" />
-      <sourceRoot location="lib/lib/jsylvan.jar" />
-      <sourceRoot location="lib/cpachecker.jar" />
-    </modelRoot>
+    <modelRoot contentPath="${module}" type="java_classes" />
   </models>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/cpachecker.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/common.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/guava.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/icu4j.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/java-cup-runtime.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/javabdd.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.cdt.core.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.core.contenttype.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.core.jobs.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.core.resources.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.core.runtime.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.equinox.common.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.equinox.preferences.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.jdt.core.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/org.eclipse.osgi.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/princess-assertionless.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/scala-actors.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/scala-library.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/smt-parser.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/smtinterpol-comp.jar" />
-    <stubModelEntry path="${module}/lib/lib/java/runtime/javasmt.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

@@ -15154,6 +15154,66 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="UMPeQjnnpZ" role="jymVt" />
+    <node concept="3clFb_" id="UMPeQjnoFj" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getColumnSpan" />
+      <node concept="10Oyi0" id="UMPeQjnoFk" role="3clF45" />
+      <node concept="3Tm1VV" id="UMPeQjnoFl" role="1B3o_S" />
+      <node concept="3clFbS" id="UMPeQjnoFs" role="3clF47">
+        <node concept="3clFbF" id="UMPeQjnuYR" role="3cqZAp">
+          <node concept="2OqwBi" id="UMPeQjnvQa" role="3clFbG">
+            <node concept="2OqwBi" id="UMPeQjnvhE" role="2Oq$k0">
+              <node concept="37vLTw" id="UMPeQjnuYQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+              </node>
+              <node concept="liA8E" id="UMPeQjnv_e" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="UMPeQjnwaA" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="1Z6Ecs" id="UMPeQjnwvw" role="37wK5m">
+                <ref role="1Z6EpT" to="z0fb:UMPeQjnwzX" resolve="_grid-layout-column-span" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="UMPeQjnoFt" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="UMPeQjnr6I" role="jymVt" />
+    <node concept="3clFb_" id="UMPeQjnpSp" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getRowSpan" />
+      <node concept="10Oyi0" id="UMPeQjnpSq" role="3clF45" />
+      <node concept="3Tm1VV" id="UMPeQjnpSr" role="1B3o_S" />
+      <node concept="3clFbS" id="UMPeQjnpSy" role="3clF47">
+        <node concept="3clFbF" id="UMPeQjnwY2" role="3cqZAp">
+          <node concept="2OqwBi" id="UMPeQjnwY3" role="3clFbG">
+            <node concept="2OqwBi" id="UMPeQjnwY4" role="2Oq$k0">
+              <node concept="37vLTw" id="UMPeQjnwY5" role="2Oq$k0">
+                <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+              </node>
+              <node concept="liA8E" id="UMPeQjnwY6" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="UMPeQjnwY7" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="1Z6Ecs" id="UMPeQjnwY8" role="37wK5m">
+                <ref role="1Z6EpT" to="z0fb:UMPeQjnwAN" resolve="_grid-layout-row-span" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="UMPeQjnpSz" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="6aN_eBIZww7" role="1B3o_S" />
     <node concept="3uibUv" id="6aN_eBIZwxJ" role="1zkMxy">
       <ref role="3uigEE" node="JPngvNsQE5" resolve="AbstractLayoutableAdapter" />
