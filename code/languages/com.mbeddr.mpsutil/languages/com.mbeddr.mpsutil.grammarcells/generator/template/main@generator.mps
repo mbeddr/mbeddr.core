@@ -3543,7 +3543,7 @@
                   <node concept="2OqwBi" id="2mvFNoS3Bkg" role="3clFbG">
                     <node concept="2ShNRf" id="2mvFNoS3kdK" role="2Oq$k0">
                       <node concept="1pGfFk" id="2mvFNoS3myW" role="2ShVmc">
-                        <ref role="37wK5l" to="9eyi:~SubstituteItemsCollector.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.openapi.editor.menus.transformation.MenuLookup)" resolve="SubstituteItemsCollector" />
+                        <ref role="37wK5l" to="9eyi:~SubstituteItemsCollector.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup)" resolve="SubstituteItemsCollector" />
                         <node concept="37vLTw" id="2mvFNoS3nMU" role="37wK5m">
                           <ref role="3cqZAo" node="3KoBPk0Hhzb" resolve="parentNode" />
                         </node>
@@ -6929,7 +6929,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="7NlRaxAY3V7" role="2OqNvi">
-                                        <ref role="37wK5l" to="78sh:~SubstituteMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.MenuLookup):java.util.List" resolve="createItems" />
+                                        <ref role="37wK5l" to="78sh:~SubstituteMenuContext.createItems(jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup):java.util.List" resolve="createItems" />
                                         <node concept="2ShNRf" id="77L_peGQLpr" role="37wK5m">
                                           <node concept="1pGfFk" id="77L_peGQLpt" role="2ShVmc">
                                             <ref role="37wK5l" to="qtqj:~DefaultSubstituteMenuLookup.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry,org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="DefaultSubstituteMenuLookup" />
@@ -11185,7 +11185,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="2mvFNoRM4rp" role="2OqNvi">
-                                      <ref role="37wK5l" to="uddc:~TransformationMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.MenuLookup):java.util.List" resolve="createItems" />
+                                      <ref role="37wK5l" to="uddc:~TransformationMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuLookup):java.util.List" resolve="createItems" />
                                       <node concept="10Nm6u" id="2mvFNoRM5ed" role="37wK5m" />
                                     </node>
                                   </node>
@@ -11436,7 +11436,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="2mvFNoRMfAr" role="2OqNvi">
-                                      <ref role="37wK5l" to="uddc:~TransformationMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.MenuLookup):java.util.List" resolve="createItems" />
+                                      <ref role="37wK5l" to="uddc:~TransformationMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuLookup):java.util.List" resolve="createItems" />
                                       <node concept="10Nm6u" id="2mvFNoRMfAs" role="37wK5m" />
                                     </node>
                                   </node>
@@ -12272,7 +12272,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="2mvFNoRKfSj" role="2OqNvi">
-                                          <ref role="37wK5l" to="uddc:~TransformationMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.MenuLookup):java.util.List" resolve="createItems" />
+                                          <ref role="37wK5l" to="uddc:~TransformationMenuContext.createItems(jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuLookup):java.util.List" resolve="createItems" />
                                           <node concept="10Nm6u" id="2mvFNoRKg0_" role="37wK5m" />
                                         </node>
                                       </node>
