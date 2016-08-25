@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
@@ -456,7 +456,6 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
-      <concept id="8257817273846948841" name="com.mbeddr.core.modules.structure.Closure" flags="ng" index="1T8GFB" />
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
@@ -5046,7 +5045,8 @@
           </node>
           <node concept="2xZu8t" id="7nMAuIoJr$5" role="3o3WLE">
             <ref role="2xZoc7" to="9g8w:7nMAuIoJpEG" resolve="init" />
-            <node concept="1T8GFB" id="7nMAuIoJsfH" role="2xZpY0">
+            <node concept="1T8GFA" id="7nMAuIoJsfH" role="2xZpY0">
+              <node concept="1fH1aK" id="3W2cV_ptU6E" role="1T8GFz" />
               <node concept="1fH1aK" id="7nMAuIoJsfI" role="1T8GFz">
                 <node concept="3XIRFW" id="7nMAuIoJy1P" role="3XIRFZ">
                   <node concept="29HgVG" id="7nMAuIoJy20" role="lGtFl">
@@ -5055,7 +5055,7 @@
                         <node concept="3clFbF" id="7nMAuIoJy28" role="3cqZAp">
                           <node concept="2OqwBi" id="7nMAuIoJy23" role="3clFbG">
                             <node concept="3TrEf2" id="7nMAuIoJy26" role="2OqNvi">
-                              <ref role="3Tt5mk" to="yz9a:5ptpUgMv0sT" />
+                              <ref role="3Tt5mk" to="yz9a:5ptpUgMv0sT" resolve="testinit" />
                             </node>
                             <node concept="30H73N" id="7nMAuIoJy27" role="2Oq$k0" />
                           </node>
