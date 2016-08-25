@@ -4135,20 +4135,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6wvhQs7nkWH" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nkX3" role="3clFbG">
-            <node concept="2N2G$s" id="6wvhQs7nkWI" role="2Oq$k0">
-              <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-            </node>
-            <node concept="liA8E" id="6wvhQs7nkX9" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setAutoResizeMode(int):void" resolve="setAutoResizeMode" />
-              <node concept="10M0yZ" id="6wvhQs7nkXa" role="37wK5m">
-                <ref role="1PxDUh" to="dxuu:~JTable" resolve="JTable" />
-                <ref role="3cqZAo" to="dxuu:~JTable.AUTO_RESIZE_OFF" resolve="AUTO_RESIZE_OFF" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6wvhQs7ni2U" role="3cqZAp">
           <node concept="2OqwBi" id="6wvhQs7niak" role="3clFbG">
             <node concept="2OqwBi" id="6wvhQs7ni9S" role="2Oq$k0">
@@ -4301,7 +4287,7 @@
             <node concept="liA8E" id="6wvhQs7nqz3" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="6wvhQs7nqz4" role="37wK5m">
-                <property role="3cmrfH" value="250" />
+                <property role="3cmrfH" value="1000" />
               </node>
             </node>
           </node>
@@ -4379,7 +4365,7 @@
             <node concept="liA8E" id="6wvhQs7nq$2" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="6wvhQs7nq$3" role="37wK5m">
-                <property role="3cmrfH" value="250" />
+                <property role="3cmrfH" value="1000" />
               </node>
             </node>
           </node>
@@ -4457,7 +4443,7 @@
             <node concept="liA8E" id="6wvhQs7nqz$" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="6wvhQs7nqz_" role="37wK5m">
-                <property role="3cmrfH" value="250" />
+                <property role="3cmrfH" value="500" />
               </node>
             </node>
           </node>
