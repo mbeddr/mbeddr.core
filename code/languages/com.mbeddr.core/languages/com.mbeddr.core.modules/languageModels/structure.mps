@@ -15,7 +15,6 @@
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -621,7 +620,7 @@
       <property role="20kJfa" value="parameters_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="8257817273846948843" />
-      <ref role="20lvS9" to="k146:7apEgWbIQfE" resolve="ClosureParameter" />
+      <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter_old" />
       <node concept="asaX9" id="2jjHQjPOKRQ" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.util.structure.Closure&quot;" />
       </node>
@@ -631,7 +630,7 @@
       <property role="20kJfa" value="body_old" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8257817273846948844" />
-      <ref role="20lvS9" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
+      <ref role="20lvS9" node="7hIwPwVQD7C" resolve="ClosureStatementList_old" />
       <node concept="asaX9" id="2jjHQjPOKRV" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.util.structure.Closure&quot;" />
       </node>
@@ -682,7 +681,7 @@
       <property role="20kJfa" value="param_old" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8257817273846948863" />
-      <ref role="20lvS9" to="k146:7apEgWbIQfE" resolve="ClosureParameter" />
+      <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter_old" />
       <node concept="asaX9" id="2jjHQjPOLmG" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.util.structure.ClosureParameterRef&quot;" />
       </node>

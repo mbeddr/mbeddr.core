@@ -29,24 +29,22 @@
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language()" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util()" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model()" />
-    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex()" />
-    <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
-    <import index="kv4y" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.traceInfo()" />
-    <import index="lgbc" ref="r:a296e8c9-b717-45da-a3a4-9f0b7cc360c0(com.mbeddt.core.expressions.pluginSolution.plugin)" />
-    <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project()" />
+    <import index="kv4y" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.traceInfo(MPS.Core/)" />
+    <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math()" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
-    <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache()" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
-    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1022,8 +1020,8 @@
                     <node concept="13iPFW" id="2abYtBe$xgs" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2abYtBe$xgt" role="2OqNvi">
                       <node concept="1xMEDy" id="2abYtBe$xgu" role="1xVPHs">
-                        <node concept="chp4Y" id="2abYtBe$xgv" role="ri$Ld">
-                          <ref role="cht4Q" to="k146:7apEgWbIQfD" resolve="Closure" />
+                        <node concept="chp4Y" id="78c1wjHeJAb" role="ri$Ld">
+                          <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                         </node>
                       </node>
                     </node>
@@ -1122,8 +1120,8 @@
               <node concept="13iPFW" id="7ztw3UYMrFO" role="2Oq$k0" />
               <node concept="2Xjw5R" id="7ztw3UYMrFP" role="2OqNvi">
                 <node concept="1xMEDy" id="7ztw3UYMrFQ" role="1xVPHs">
-                  <node concept="chp4Y" id="7ztw3UYMrFR" role="ri$Ld">
-                    <ref role="cht4Q" to="k146:7apEgWbIQfD" resolve="Closure" />
+                  <node concept="chp4Y" id="78c1wjHeJU4" role="ri$Ld">
+                    <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                   </node>
                 </node>
               </node>
@@ -5894,8 +5892,8 @@
                 <ref role="3cqZAo" node="36fFjS6KAwi" resolve="nodeToPointTo" />
               </node>
               <node concept="1mIQ4w" id="36fFjS6KAy$" role="2OqNvi">
-                <node concept="chp4Y" id="36fFjS6KAyA" role="cj9EA">
-                  <ref role="cht4Q" to="k146:7apEgWbIQfD" resolve="Closure" />
+                <node concept="chp4Y" id="78c1wjHeI1p" role="cj9EA">
+                  <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                 </node>
               </node>
             </node>
@@ -6052,7 +6050,7 @@
                   <node concept="liA8E" id="58AFtxLa7lw" role="2OqNvi">
                     <ref role="37wK5l" to="x30c:7Hpw6GdTKZ2" resolve="getInstancesOf" />
                     <node concept="3nh3qo" id="58AFtxLa7lx" role="37wK5m">
-                      <ref role="3nh3qp" to="k146:7apEgWbIQfD" resolve="Closure" />
+                      <ref role="3nh3qp" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                     </node>
                   </node>
                 </node>
@@ -10526,7 +10524,7 @@
                                 <node concept="1eOMI4" id="5YGS28LZUcT" role="2Oq$k0">
                                   <node concept="1PxgMI" id="5YGS28LZUcU" role="1eOMHV">
                                     <ref role="1m5ApE" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
-                                    <ref role="1PxNhF" to="k146:7apEgWbIQfD" resolve="Closure" />
+                                    <ref role="1PxNhF" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                                     <node concept="2GrUjf" id="5YGS28LZUcV" role="1m5AlR">
                                       <ref role="2Gs0qQ" node="5YGS28LZUcP" resolve="closure" />
                                     </node>
@@ -10548,7 +10546,7 @@
                             <node concept="liA8E" id="5YGS28LZUd0" role="2OqNvi">
                               <ref role="37wK5l" to="x30c:5ibmMvPfCss" resolve="getInstancesOf" />
                               <node concept="3nh3qo" id="4_OjW93OFcU" role="37wK5m">
-                                <ref role="3nh3qp" to="k146:7apEgWbIQfD" resolve="Closure" />
+                                <ref role="3nh3qp" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
                               </node>
                             </node>
                           </node>
