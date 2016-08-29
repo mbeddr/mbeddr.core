@@ -418,9 +418,6 @@
     <node concept="2flH9Z" id="6XvT233Io_u" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.lang.script.pluginSolution.plugin.ScriptsGlobally_ActionGroup" />
     </node>
-    <node concept="2flH9Z" id="6XvT233IoBx" role="2flH9W">
-      <property role="2flH96" value="ShowTips" />
-    </node>
     <node concept="2flH9Z" id="6XvT233IoD_" role="2flH9W">
       <property role="2flH96" value="ProductivityGude" />
     </node>
@@ -768,6 +765,9 @@
     </node>
     <node concept="2flH9Z" id="2zyvt0HGdvd" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="DKNFG6nCb3" role="2flH9W">
+      <property role="2flH96" value="ShowTips" />
     </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">
