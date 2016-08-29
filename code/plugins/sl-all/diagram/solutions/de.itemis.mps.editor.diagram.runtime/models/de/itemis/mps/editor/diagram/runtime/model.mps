@@ -5369,7 +5369,16 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="5P3ZJ9d6$wy" role="jymVt" />
+    <node concept="Wx3nA" id="6$5eFO9fgko" role="jymVt">
+      <property role="TrG5h" value="ALLOW_DELETE_DURING_SYNC" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10P_77" id="6$5eFO9fg2l" role="1tU5fm" />
+      <node concept="3Tm1VV" id="6$5eFO9fgjr" role="1B3o_S" />
+      <node concept="3clFbT" id="6$5eFO9fgis" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6$5eFO9f9Fp" role="jymVt" />
     <node concept="Wx3nA" id="6uYu7myYVxe" role="jymVt">
       <property role="IEkAT" value="false" />
       <property role="TrG5h" value="ourInstances" />
@@ -18793,39 +18802,47 @@
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="7jhYr4huY53" role="3cqZAp">
-          <node concept="2GrKxI" id="7jhYr4huY54" role="2Gsz3X">
-            <property role="TrG5h" value="e" />
-          </node>
-          <node concept="2OqwBi" id="7jhYr4hDeYN" role="2GsD0m">
-            <node concept="37vLTw" id="7jhYr4hDesK" role="2Oq$k0">
-              <ref role="3cqZAo" node="4teJTSBzNbU" resolve="myModel" />
-            </node>
-            <node concept="liA8E" id="7jhYr4hDge9" role="2OqNvi">
-              <ref role="37wK5l" node="7jhYr4hBsJ4" resolve="getElementsToDelete" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="7jhYr4huY56" role="2LFqv$">
-            <node concept="3clFbF" id="7jhYr4huY57" role="3cqZAp">
-              <node concept="2OqwBi" id="7jhYr4huY58" role="3clFbG">
-                <node concept="2GrUjf" id="7jhYr4huY59" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="7jhYr4huY54" resolve="e" />
+        <node concept="3clFbJ" id="6$5eFO9frfh" role="3cqZAp">
+          <node concept="3clFbS" id="6$5eFO9frfj" role="3clFbx">
+            <node concept="2Gpval" id="7jhYr4huY53" role="3cqZAp">
+              <node concept="2GrKxI" id="7jhYr4huY54" role="2Gsz3X">
+                <property role="TrG5h" value="e" />
+              </node>
+              <node concept="2OqwBi" id="7jhYr4hDeYN" role="2GsD0m">
+                <node concept="37vLTw" id="7jhYr4hDesK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4teJTSBzNbU" resolve="myModel" />
                 </node>
-                <node concept="liA8E" id="7jhYr4huY5a" role="2OqNvi">
-                  <ref role="37wK5l" node="NU3jzpRFTX" resolve="delete" />
+                <node concept="liA8E" id="7jhYr4hDge9" role="2OqNvi">
+                  <ref role="37wK5l" node="7jhYr4hBsJ4" resolve="getElementsToDelete" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="7jhYr4huY56" role="2LFqv$">
+                <node concept="3clFbF" id="7jhYr4huY57" role="3cqZAp">
+                  <node concept="2OqwBi" id="7jhYr4huY58" role="3clFbG">
+                    <node concept="2GrUjf" id="7jhYr4huY59" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="7jhYr4huY54" resolve="e" />
+                    </node>
+                    <node concept="liA8E" id="7jhYr4huY5a" role="2OqNvi">
+                      <ref role="37wK5l" node="NU3jzpRFTX" resolve="delete" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7jhYr4hE4vQ" role="3cqZAp">
+              <node concept="2OqwBi" id="7jhYr4hE5z8" role="3clFbG">
+                <node concept="37vLTw" id="7jhYr4hE4vO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4teJTSBzNbU" resolve="myModel" />
+                </node>
+                <node concept="liA8E" id="7jhYr4hE6HB" role="2OqNvi">
+                  <ref role="37wK5l" node="7jhYr4hDF6g" resolve="clearElementsToDelete" />
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="7jhYr4hE4vQ" role="3cqZAp">
-          <node concept="2OqwBi" id="7jhYr4hE5z8" role="3clFbG">
-            <node concept="37vLTw" id="7jhYr4hE4vO" role="2Oq$k0">
-              <ref role="3cqZAo" node="4teJTSBzNbU" resolve="myModel" />
-            </node>
-            <node concept="liA8E" id="7jhYr4hE6HB" role="2OqNvi">
-              <ref role="37wK5l" node="7jhYr4hDF6g" resolve="clearElementsToDelete" />
-            </node>
+          <node concept="10M0yZ" id="6$5eFO9fsqu" role="3clFbw">
+            <ref role="1PxDUh" node="27djZ8_ZBps" resolve="DiagramModel" />
+            <ref role="3cqZAo" node="6$5eFO9fgko" resolve="ALLOW_DELETE_DURING_SYNC" />
           </node>
         </node>
         <node concept="3clFbH" id="ywgKCS6_CK" role="3cqZAp" />
