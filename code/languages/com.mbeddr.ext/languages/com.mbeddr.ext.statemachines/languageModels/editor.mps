@@ -2247,9 +2247,6 @@
     <ref role="1XX52x" to="clqz:7iNM$5cFA$P" resolve="AbstractAction" />
     <node concept="3EZMnI" id="47Sr75PmG8P" role="2wV5jI">
       <node concept="l2Vlx" id="47Sr75PmG8Q" role="2iSdaV" />
-      <node concept="3F0ifn" id="2ie4vPl$j_p" role="3EZMnx">
-        <property role="3F0ifm" value="DEFAULT" />
-      </node>
       <node concept="PMmxH" id="20ezT9ZDJp_" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
