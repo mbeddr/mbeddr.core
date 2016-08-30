@@ -133,7 +133,7 @@
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -194,7 +194,7 @@
       <node concept="2Q9FjX" id="kOmZ6t78yi" role="2Q9FjI" />
     </node>
     <node concept="12mU2y" id="2CzB6HEutTH" role="2Q9xDr">
-      <node concept="3GpDuo" id="2CzB6HEutTI" role="3GpDut" />
+      <node concept="3GpDuv" id="3N5$iCDlEJ8" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="kOmZ6t0CdN">
