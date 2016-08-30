@@ -10673,20 +10673,9 @@
           </node>
           <node concept="3clFbJ" id="6B579NFbV3$" role="3cqZAp">
             <node concept="3clFbS" id="6B579NFbV3_" role="3clFbx">
-              <node concept="3clFbF" id="6B579NFc1yJ" role="3cqZAp">
-                <node concept="2OqwBi" id="6B579NFbV3E" role="3clFbG">
-                  <node concept="37vLTw" id="6B579NFbV3F" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6B579NFbV3a" resolve="descriptor" />
-                  </node>
-                  <node concept="liA8E" id="6B579NFbV3G" role="2OqNvi">
-                    <ref role="37wK5l" to="czm:6B579NFbWTw" resolve="removeSideTransformActions" />
-                    <node concept="37vLTw" id="6B579NFbV3H" role="37wK5m">
-                      <ref role="3cqZAo" node="6B579NFbV3P" resolve="operationContext" />
-                    </node>
-                    <node concept="37vLTw" id="6B579NFbV3I" role="37wK5m">
-                      <ref role="3cqZAo" node="6B579NFbV3R" resolve="_context" />
-                    </node>
-                  </node>
+              <node concept="3SKdUt" id="3N5$iCDvEPV" role="3cqZAp">
+                <node concept="3SKdUq" id="3N5$iCDvEPW" role="3SKWNk">
+                  <property role="3SKdUp" value="removed because deprecated" />
                 </node>
               </node>
             </node>
