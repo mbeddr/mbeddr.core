@@ -4212,9 +4212,6 @@
               <node concept="3F0A7n" id="4UHO8tvHAsq" role="3EZMnx">
                 <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
                 <ref role="1k5W1q" node="3kzGBV3tWes" resolve="State" />
-                <node concept="Vb9p2" id="4UHO8tvHAsr" role="3F10Kt">
-                  <property role="Vbekb" value="BOLD" />
-                </node>
               </node>
               <node concept="2iRfu4" id="4UHO8tvHAss" role="2iSdaV" />
               <node concept="37jFXN" id="4UHO8tvHAst" role="3F10Kt">
@@ -6116,6 +6113,18 @@
         <property role="1lJzqX" value="18" />
       </node>
       <node concept="Vb9p2" id="3kzGBV3$6s_" role="3F10Kt" />
+      <node concept="VechU" id="6qlIOchyiJT" role="3F10Kt">
+        <node concept="3ZlJ5R" id="6qlIOchyiJU" role="VblUZ">
+          <node concept="3clFbS" id="6qlIOchyiJV" role="2VODD2">
+            <node concept="3clFbF" id="6qlIOchyiJW" role="3cqZAp">
+              <node concept="10M0yZ" id="6qlIOchyiJX" role="3clFbG">
+                <ref role="3cqZAo" node="2Pe$B52qaYH" resolve="STATE_TEXT" />
+                <ref role="1PxDUh" node="4UHO8tvDdWY" resolve="DiagramColors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3kzGBV3x7OR">
