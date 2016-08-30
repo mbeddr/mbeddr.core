@@ -412,9 +412,6 @@
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
       <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
-    <language id="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" name="com.mbeddr.mpsutil.runconfiguration">
-      <concept id="1074143110309258151" name="com.mbeddr.mpsutil.runconfiguration.structure.debuggableNodeExpression" flags="ng" index="2L0FNg" />
-    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -1872,14 +1869,12 @@
             <node concept="3clFbS" id="VC7RuZUJDc" role="3clFbx">
               <node concept="3cpWs6" id="VC7RuZUMQk" role="3cqZAp">
                 <node concept="2OqwBi" id="VC7RuZUM7u" role="3cqZAk">
-                  <node concept="1eOMI4" id="VC7RuZULOV" role="2Oq$k0">
-                    <node concept="1PxgMI" id="VC7RuZUI10" role="1eOMHV">
-                      <ref role="1m5ApE" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-                      <node concept="2L0FNg" id="VC7RuZUHla" role="1m5AlR" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="VC7Rv1VOow" role="2OqNvi">
+                  <node concept="2qgKlT" id="XMij_NcjG" role="2OqNvi">
                     <ref role="37wK5l" to="exl8:VC7RuZYMH1" resolve="allowsBreakpoint" />
+                  </node>
+                  <node concept="1PxgMI" id="XMij_NbK2" role="2Oq$k0">
+                    <ref role="1m5ApE" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
+                    <node concept="5baDg" id="XMij_Nbvb" role="1m5AlR" />
                   </node>
                 </node>
               </node>
