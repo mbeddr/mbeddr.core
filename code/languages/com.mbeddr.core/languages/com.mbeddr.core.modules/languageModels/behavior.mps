@@ -469,9 +469,7 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -10522,10 +10520,9 @@
                             <node concept="3clFbF" id="5YGS28LZUcR" role="3cqZAp">
                               <node concept="2OqwBi" id="5YGS28LZUcS" role="3clFbG">
                                 <node concept="1eOMI4" id="5YGS28LZUcT" role="2Oq$k0">
-                                  <node concept="1PxgMI" id="5YGS28LZUcU" role="1eOMHV">
+                                  <node concept="1PxgMI" id="3CfTFHQs3G9" role="1eOMHV">
                                     <ref role="1m5ApE" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
-                                    <ref role="1PxNhF" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
-                                    <node concept="2GrUjf" id="5YGS28LZUcV" role="1m5AlR">
+                                    <node concept="2GrUjf" id="3CfTFHQs3$o" role="1m5AlR">
                                       <ref role="2Gs0qQ" node="5YGS28LZUcP" resolve="closure" />
                                     </node>
                                   </node>
