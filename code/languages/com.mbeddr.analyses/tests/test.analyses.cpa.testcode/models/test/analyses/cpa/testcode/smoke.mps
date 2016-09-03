@@ -10,6 +10,7 @@
   </imports>
   <registry>
     <language id="fe179c61-4531-423b-a95c-f5f59a664603" name="com.mbeddr.analyses.cpa">
+      <concept id="8801478157208014628" name="com.mbeddr.analyses.cpa.structure.Svcomp16Config" flags="ng" index="8AQV$" />
       <concept id="4409367108242665713" name="com.mbeddr.analyses.cpa.structure.ICPAAnalysisConfig" flags="ng" index="3makzO">
         <child id="4409367108243085467" name="config" index="3mbY2u" />
       </concept>
@@ -271,7 +272,7 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="6TQiFFuRlub" resolve="multipleAssertionsWhichFailSomeWhichHold" />
-      <node concept="1sd6cc" id="3lFQmKKDCNO" role="3mbY2u" />
+      <node concept="8AQV$" id="7C_8s1MKafI" role="3mbY2u" />
     </node>
   </node>
   <node concept="N3F5e" id="4BmZfiOhEZA">
