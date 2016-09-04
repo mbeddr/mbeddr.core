@@ -59,9 +59,9 @@
     <property role="TrG5h" value="PromelaModel" />
     <property role="19KtqR" value="true" />
     <property role="1pbfSe" value="2094009352" />
-    <property role="MwhBj" value="${module}/icons/spin.png" />
     <property role="34LRSv" value="Promela model" />
     <property role="R4oN_" value="a Promela model" />
+    <property role="MwhBj" value="${module}/icons/spin.png" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />
     <node concept="PrWs8" id="GpUw9SahP4" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />

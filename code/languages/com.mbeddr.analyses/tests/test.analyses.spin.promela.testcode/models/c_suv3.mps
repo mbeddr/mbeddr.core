@@ -189,7 +189,7 @@
         <node concept="Y9XUq" id="HmUOIGD8tC" role="3XIRFZ">
           <node concept="25Bbzn" id="HmUOIGD8Kb" role="Y9XUp">
             <node concept="3TlMh9" id="HmUOIGD8KM" role="3TlMhJ">
-              <property role="2hmy$m" value="30" />
+              <property role="2hmy$m" value="11" />
             </node>
             <node concept="3ZUYvv" id="HmUOIGD8u8" role="3TlMhI">
               <ref role="3ZUYvu" node="HmUOIGD8pz" resolve="aVar" />
@@ -251,7 +251,7 @@
         </node>
         <node concept="3udDIS" id="HmUOIGD8pK" role="3XIRFZ">
           <node concept="3TlMh9" id="HmUOIGD8pL" role="3udCB6">
-            <property role="2hmy$m" value="1000" />
+            <property role="2hmy$m" value="12" />
           </node>
           <node concept="3ZVu4v" id="HmUOIGD8pM" role="3udCBu">
             <ref role="3ZVs_2" node="HmUOIGD8pG" resolve="var" />

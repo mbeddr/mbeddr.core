@@ -60,6 +60,7 @@
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+        <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -278,7 +279,7 @@
   </node>
   <node concept="sEfby" id="6izRX53qGZb">
     <property role="TrG5h" value="PromelaRawResultTool" />
-    <property role="2XNbzY" value="Spin Result" />
+    <property role="2XNbzY" value="Spin Verification Result" />
     <node concept="2XrIbr" id="3Ymokd9FeZe" role="2XNbBy">
       <property role="TrG5h" value="setOutput" />
       <node concept="3cqZAl" id="3Ymokd9Ffqo" role="3clF45" />
@@ -363,6 +364,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="3lXW7OZ5zg6" role="1nVCmq">
+      <property role="1QGGTI" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="2DaZZR" id="6iM0fX1N45m" />
