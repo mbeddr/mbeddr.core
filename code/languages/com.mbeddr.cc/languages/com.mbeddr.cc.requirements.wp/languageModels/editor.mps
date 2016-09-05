@@ -5,7 +5,7 @@
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -556,7 +556,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="7sHl0myeX2V" role="3EZMnx">
-          <ref role="1NtTu8" to="6pek:7sHl0myeX2U" />
+          <ref role="1NtTu8" to="6pek:7sHl0myeX2U" resolve="description" />
         </node>
       </node>
     </node>
@@ -570,7 +570,7 @@
             <property role="3F0ifm" value="actual work:" />
           </node>
           <node concept="3F2HdR" id="vRfru3oQOI" role="3EZMnx">
-            <ref role="1NtTu8" to="6pek:vRfru3oQOC" />
+            <ref role="1NtTu8" to="6pek:vRfru3oQOC" resolve="worked" />
             <node concept="2iRkQZ" id="vRfru3oQOK" role="2czzBx" />
           </node>
         </node>
@@ -776,7 +776,7 @@
                   <node concept="2OqwBi" id="4BCrzPIz5m_" role="25WWJ7">
                     <node concept="pncrf" id="4BCrzPIz4EO" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4BCrzPID6kw" role="2OqNvi">
-                      <ref role="3Tt5mk" to="6pek:7sHl0myf3Ii" />
+                      <ref role="3Tt5mk" to="6pek:7sHl0myf3Ii" resolve="wp" />
                     </node>
                   </node>
                 </node>
@@ -807,7 +807,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="4BCrzPID4mC" role="2OqNvi">
-                      <ref role="3Tt5mk" to="vs0r:K292flwD4t" />
+                      <ref role="3Tt5mk" to="vs0r:K292flwD4t" resolve="query" />
                     </node>
                   </node>
                 </node>
@@ -925,7 +925,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6QfbJ5POvXZ" role="3EZMnx">
-        <ref role="1NtTu8" to="6pek:6QfbJ5POvXP" />
+        <ref role="1NtTu8" to="6pek:6QfbJ5POvXP" resolve="status" />
       </node>
       <node concept="3F0ifn" id="6QfbJ5POvXV" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -939,7 +939,7 @@
     <property role="3GE5qa" value="wp" />
     <ref role="1XX52x" to="6pek:3greo4NFSys" resolve="ReqWithoutWPResult" />
     <node concept="1iCGBv" id="3greo4NFSyw" role="2wV5jI">
-      <ref role="1NtTu8" to="6pek:3greo4NFSyt" />
+      <ref role="1NtTu8" to="6pek:3greo4NFSyt" resolve="req" />
       <node concept="1sVBvm" id="3greo4NFSyx" role="1sWHZn">
         <node concept="3F0A7n" id="3greo4NFSyz" role="2wV5jI">
           <property role="1Intyy" value="true" />
