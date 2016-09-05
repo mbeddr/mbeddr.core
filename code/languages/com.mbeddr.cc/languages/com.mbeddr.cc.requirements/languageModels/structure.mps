@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -18,9 +18,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -168,7 +167,7 @@
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$EZ60" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/requirement.png" />
+      <property role="1iqoE4" value="${module}/icons/requirement.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7_tU7IQsFfx">
@@ -246,7 +245,7 @@
       <ref role="PrY4T" to="vs0r:3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$EZ5Z" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/requirementsmodule.png" />
+      <property role="1iqoE4" value="${module}/icons/requirementsmodule.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7_tU7IQtN5z">
@@ -366,7 +365,7 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="439567521322984798" />
       <ref role="20lvS9" node="7_tU7IQsCy_" resolve="Requirement" />
-      <ref role="20ksaX" to="26ao:opE5jFgg97" />
+      <ref role="20ksaX" to="26ao:opE5jFgg97" resolve="target" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GL_G3ooDUL">
@@ -375,7 +374,7 @@
     <property role="EcuMT" value="1959513067891105457" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$EZ5W" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/plus.png" />
+      <property role="1iqoE4" value="${module}/icons/plus.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GL_G3ooG$w">
@@ -384,7 +383,7 @@
     <property role="EcuMT" value="1959513067891116320" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$EZ5X" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/minus.png" />
+      <property role="1iqoE4" value="${module}/icons/minus.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GL_G3ooSX6">
@@ -393,7 +392,7 @@
     <property role="EcuMT" value="1959513067891167046" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$EZ62" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/grey.png" />
+      <property role="1iqoE4" value="${module}/icons/grey.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GL_G3ooSXa">
@@ -402,7 +401,7 @@
     <property role="EcuMT" value="1959513067891167050" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$EZ63" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/blue.png" />
+      <property role="1iqoE4" value="${module}/icons/blue.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GL_G3ooSXb">
@@ -411,7 +410,7 @@
     <property role="EcuMT" value="1959513067891167051" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$EZ5Y" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/green.png" />
+      <property role="1iqoE4" value="${module}/icons/green.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GL_G3ooSXc">
@@ -420,7 +419,7 @@
     <property role="EcuMT" value="1959513067891167052" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$EZ61" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/red.png" />
+      <property role="1iqoE4" value="${module}/icons/red.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5liZiKqQ1XL">

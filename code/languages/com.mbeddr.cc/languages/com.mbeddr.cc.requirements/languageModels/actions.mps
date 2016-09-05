@@ -2,7 +2,7 @@
 <model ref="r:bbbfeb3c-4321-4879-a3bb-77f1152cdb6b(com.mbeddr.cc.requirements.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -11,6 +11,7 @@
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="603" ref="r:e75c96fc-f7f0-4331-ae4f-5b6af3aa2cc4(com.mbeddr.cc.requirements.editor)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -103,6 +104,9 @@
         <reference id="1177333551023" name="concept" index="uz4UX" />
         <child id="1177333559040" name="part" index="uz6Si" />
       </concept>
+      <concept id="562388756457499018" name="jetbrains.mps.lang.actions.structure.MigratedToAnnotation" flags="ng" index="xBawi">
+        <reference id="562388756457499129" name="migratedTo" index="xBaxx" />
+      </concept>
       <concept id="1177402519659" name="jetbrains.mps.lang.actions.structure.WrapperSubstituteMenuPart" flags="ng" index="yEb5T">
         <reference id="1177402731616" name="wrappedConcept" index="yEYPM" />
         <child id="1177402719158" name="wrapperBlock" index="yEVE$" />
@@ -135,6 +139,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -183,7 +190,7 @@
                       <ref role="3cqZAo" node="2QG2TH$1Akp" resolve="req" />
                     </node>
                     <node concept="3TrEf2" id="2QG2TH$1AkP" role="2OqNvi">
-                      <ref role="3Tt5mk" to="75wo:7JeEMfT1L$0" />
+                      <ref role="3Tt5mk" to="75wo:7JeEMfT1L$0" resolve="kind" />
                     </node>
                   </node>
                 </node>
@@ -216,7 +223,13 @@
               </node>
             </node>
           </node>
+          <node concept="xBawi" id="3cUcim$a$e3" role="lGtFl">
+            <ref role="xBaxx" to="603:3cUcim$a$cC" />
+          </node>
         </node>
+      </node>
+      <node concept="xBawi" id="3cUcim$a$cB" role="lGtFl">
+        <ref role="xBaxx" to="603:3cUcim$a$cA" resolve="Requirement_SubstituteMenu" />
       </node>
     </node>
   </node>

@@ -2,11 +2,12 @@
 <model ref="r:88d7340b-0341-4a77-8dd9-8951aae4ac5b(com.mbeddr.cc.requirements.scenarios.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="4l29" ref="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" />
+    <import index="vvp" ref="r:c5d5f09b-8018-4bac-b45e-ffd903707a8b(com.mbeddr.cc.requirements.scenarios.editor)" />
     <import index="zlmb" ref="r:3cbf80ca-1cd1-479c-afbf-95b69356a6d3(com.mbeddr.cc.requirements.scenarios.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -71,6 +72,9 @@
         <reference id="1177333551023" name="concept" index="uz4UX" />
         <child id="1177333559040" name="part" index="uz6Si" />
       </concept>
+      <concept id="562388756457499018" name="jetbrains.mps.lang.actions.structure.MigratedToAnnotation" flags="ng" index="xBawi">
+        <reference id="562388756457499129" name="migratedTo" index="xBaxx" />
+      </concept>
       <concept id="1177402519659" name="jetbrains.mps.lang.actions.structure.WrapperSubstituteMenuPart" flags="ng" index="yEb5T">
         <reference id="1177402731616" name="wrappedConcept" index="yEYPM" />
         <child id="1177402719158" name="wrapperBlock" index="yEVE$" />
@@ -110,6 +114,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -146,7 +153,7 @@
                   <node concept="2OqwBi" id="uFBNcnBmgJ" role="3uHU7B">
                     <node concept="yECNy" id="uFBNcnBmeT" role="2Oq$k0" />
                     <node concept="3TrEf2" id="uFBNcnBmgP" role="2OqNvi">
-                      <ref role="3Tt5mk" to="4l29:4YQM_89uIgb" />
+                      <ref role="3Tt5mk" to="4l29:4YQM_89uIgb" resolve="participant" />
                     </node>
                   </node>
                 </node>
@@ -186,7 +193,7 @@
                             <ref role="3cqZAo" node="uFBNcnBmh3" resolve="sc" />
                           </node>
                           <node concept="3TrEf2" id="uFBNcnBmhA" role="2OqNvi">
-                            <ref role="3Tt5mk" to="4l29:4YQM_89uOtI" />
+                            <ref role="3Tt5mk" to="4l29:4YQM_89uOtI" resolve="targetParticipant" />
                           </node>
                         </node>
                       </node>
@@ -201,7 +208,13 @@
               </node>
             </node>
           </node>
+          <node concept="xBawi" id="3cUcim$a$aL" role="lGtFl">
+            <ref role="xBaxx" to="vvp:3cUcim$a$9$" />
+          </node>
         </node>
+      </node>
+      <node concept="xBawi" id="3cUcim$a$9z" role="lGtFl">
+        <ref role="xBaxx" to="vvp:3cUcim$a$9y" resolve="Call_SubstituteMenu" />
       </node>
     </node>
   </node>
