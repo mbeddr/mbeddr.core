@@ -8,7 +8,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -16,9 +16,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -155,7 +154,7 @@
     <property role="EcuMT" value="4198270288895892750" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$C7$B" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/primitiveValue.png" />
+      <property role="1iqoE4" value="${module}/icons/primitiveValue.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3D3g9moHPOg">
@@ -165,7 +164,7 @@
     <property role="EcuMT" value="4198270288895892752" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$C7$A" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/complexValue.png" />
+      <property role="1iqoE4" value="${module}/icons/complexValue.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="6ey1bOhyw73">
@@ -233,7 +232,7 @@
     <property role="EcuMT" value="7630578539056959193" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QGGSu" id="1N5Tah$C7$_" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/stack_icon.png" />
+      <property role="1iqoE4" value="${module}/icons/stack_icon.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="38aMGlgu7TQ">

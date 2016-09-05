@@ -363,9 +363,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="2580416627845338977" name="jetbrains.mps.baseLanguage.structure.ImplicitAnnotationInstanceValue" flags="ng" index="1SXeKx" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -59132,11 +59129,8 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="150tOsVJc65" role="3clF47">
-        <node concept="3SKdUt" id="150tOsVLKDa" role="3cqZAp">
-          <node concept="3SKWN0" id="150tOsVLKDb" role="3SKWNk">
-            <node concept="3clFbH" id="150tOsVLHTX" role="3SKWNf" />
-          </node>
-          <node concept="3SKdUq" id="150tOsVLQik" role="3SKWNk">
+        <node concept="3SKdUt" id="3cUcim$3mVW" role="3cqZAp">
+          <node concept="3SKdUq" id="3cUcim$3mVY" role="3SKWNk">
             <property role="3SKdUp" value="the gdb doesn't always specify the path with the OS' file separator" />
           </node>
         </node>
