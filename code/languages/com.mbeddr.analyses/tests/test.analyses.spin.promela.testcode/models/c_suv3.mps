@@ -6,6 +6,24 @@
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="2" />
     <use id="17b818a8-8533-4efe-8f51-f532146ae66b" name="com.mbeddr.analyses.spin.c" version="0" />
     <use id="4ddb29eb-11e5-46c6-a894-6b8a4c38587d" name="com.mbeddr.analyses.spin.promela.patterns" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
+    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
+    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -61,9 +79,25 @@
       </concept>
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
+        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
+        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
+        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
+        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
+        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
+        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
+        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
+        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
+        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
+      </concept>
       <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
       </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -84,6 +118,12 @@
         <child id="1737851622209920785" name="upperBound" index="3udCB6" />
         <child id="1737851622209920779" name="lowBound" index="3udCBs" />
         <child id="1737851622209920777" name="varRef" index="3udCBu" />
+      </concept>
+    </language>
+    <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
+      <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
+      <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
+        <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -112,6 +152,11 @@
       </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
+      </concept>
+    </language>
+    <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
+      <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
+        <child id="6472990431939692464" name="analyses" index="3V$2$K" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -293,6 +338,25 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3uEX16" id="3lXW7OZ6J3p">
+    <property role="2lelRm" value="false" />
+    <property role="2lUGe1" value="true" />
+    <property role="2l50Lc" value="false" />
+    <property role="22uFEx" value="false" />
+    <property role="1Bxwel" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
+    <property role="TrG5h" value="AC" />
+    <node concept="apm28" id="3lXW7OZ7i$9" role="3V$2$K">
+      <ref role="apm5G" node="HmUOIGD8pA" resolve="suv3_harness" />
     </node>
   </node>
 </model>
