@@ -7,7 +7,7 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -208,7 +208,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6375,6 +6375,37 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1QBKgmDV9z9" role="jymVt" />
+    <node concept="3clFb_" id="1QBKgmDV8iP" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoWrap" />
+      <node concept="10P_77" id="1QBKgmDV8iQ" role="3clF45" />
+      <node concept="3Tm1VV" id="1QBKgmDV8iR" role="1B3o_S" />
+      <node concept="2AHcQZ" id="1QBKgmDV8iV" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="1QBKgmDV8iW" role="3clF47">
+        <node concept="3clFbF" id="1QBKgmDVaHk" role="3cqZAp">
+          <node concept="2OqwBi" id="1QBKgmDVb36" role="3clFbG">
+            <node concept="2OqwBi" id="1QBKgmDVaK2" role="2Oq$k0">
+              <node concept="37vLTw" id="1QBKgmDVaHj" role="2Oq$k0">
+                <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+              </node>
+              <node concept="liA8E" id="1QBKgmDVaNw" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1QBKgmDVblR" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="10M0yZ" id="1QBKgmDVbqJ" role="37wK5m">
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.INDENT_LAYOUT_NO_WRAP" resolve="INDENT_LAYOUT_NO_WRAP" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="JPngvNsQE6" role="1B3o_S" />
     <node concept="3uibUv" id="JPngvNsQNf" role="EKbjA">
       <ref role="3uigEE" to="xggr:ZjQ6tpoGLj" resolve="ILayoutable" />
@@ -11474,13 +11505,13 @@
             <node concept="3cpWsn" id="6p1Tdwm528V" role="3cpWs9">
               <property role="3TUv4t" value="false" />
               <property role="TrG5h" value="result" />
-              <node concept="3uibUv" id="6p1Tdwm5jP6" role="1tU5fm">
-                <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
-              </node>
               <node concept="2ShNRf" id="7F1$mDQoYDV" role="33vP2m">
                 <node concept="1pGfFk" id="7F1$mDQpeyu" role="2ShVmc">
                   <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;()" resolve="TextBuilderImpl" />
                 </node>
+              </node>
+              <node concept="3uibUv" id="6p1Tdwm5jP6" role="1tU5fm">
+                <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
               </node>
             </node>
           </node>
