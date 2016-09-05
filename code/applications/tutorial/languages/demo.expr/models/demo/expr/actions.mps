@@ -2,7 +2,7 @@
 <model ref="r:a302dcae-25f1-4bbc-b966-62be4a84499f(demo.expr.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -30,6 +30,7 @@
       <concept id="7363578995839261502" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteActionsGenerator" flags="ig" index="1kHAGF" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="562388756457602485" name="jetbrains.mps.lang.actions.structure.MigrateManuallyAnnotation" flags="ng" index="xAzKH" />
       <concept id="1197454418909" name="jetbrains.mps.lang.actions.structure.QueryFunction_ST_RemoveBy_Condition" flags="in" index="3dQ6bb" />
       <concept id="1197454626277" name="jetbrains.mps.lang.actions.structure.RemoveSTByConditionPart" flags="ng" index="3dQSNN">
         <child id="1197454635481" name="condition" index="3dQV3f" />
@@ -50,6 +51,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -70,6 +74,7 @@
           </node>
         </node>
       </node>
+      <node concept="xAzKH" id="3cUcim$fuN6" role="lGtFl" />
     </node>
     <node concept="2bVX_k" id="3xDNhgd1hAj" role="3UOs0v">
       <property role="2uHTBK" value="ext_1_RTransform" />
@@ -84,6 +89,7 @@
           </node>
         </node>
       </node>
+      <node concept="xAzKH" id="3cUcim$fuN7" role="lGtFl" />
     </node>
     <node concept="2bVX_k" id="3xDNhgd1hAp" role="3UOs0v">
       <property role="2uHTBK" value="ext_2_RTransform" />
@@ -98,6 +104,7 @@
           </node>
         </node>
       </node>
+      <node concept="xAzKH" id="3cUcim$fuN8" role="lGtFl" />
     </node>
     <node concept="2bVX_k" id="3xDNhgd1hAv" role="3UOs0v">
       <property role="2uHTBK" value="ext_3_RTransform" />
@@ -112,6 +119,7 @@
           </node>
         </node>
       </node>
+      <node concept="xAzKH" id="3cUcim$fuN9" role="lGtFl" />
     </node>
     <node concept="2bVX_k" id="3xDNhgd1hA_" role="3UOs0v">
       <property role="2uHTBK" value="ext_4_RTransform" />
@@ -126,6 +134,7 @@
           </node>
         </node>
       </node>
+      <node concept="xAzKH" id="3cUcim$fuNa" role="lGtFl" />
     </node>
     <node concept="2bVX_k" id="3xDNhgd1hAF" role="3UOs0v">
       <property role="2uHTBK" value="ext_5_RTransform" />
@@ -140,12 +149,14 @@
           </node>
         </node>
       </node>
+      <node concept="xAzKH" id="3cUcim$fuNb" role="lGtFl" />
     </node>
   </node>
   <node concept="3FK_9_" id="3xDNhgd1hAL">
     <property role="TrG5h" value="GeneratedNodeSubstituteActions" />
     <node concept="1kHAGF" id="3xDNhgd1hAM" role="3FOPby">
       <ref role="3FOWKa" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <node concept="xAzKH" id="3cUcim$fuN4" role="lGtFl" />
     </node>
   </node>
 </model>
