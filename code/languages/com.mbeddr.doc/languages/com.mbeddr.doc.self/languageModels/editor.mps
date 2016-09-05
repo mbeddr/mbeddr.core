@@ -2,7 +2,7 @@
 <model ref="r:83966516-8219-4ef3-b15e-57b39e494352(com.mbeddr.doc.self.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -130,7 +130,7 @@
           </node>
         </node>
         <node concept="1iCGBv" id="7$DvC4gPSIA" role="3EZMnx">
-          <ref role="1NtTu8" to="z5ox:7$DvC4gPSIs" />
+          <ref role="1NtTu8" to="z5ox:7$DvC4gPSIs" resolve="section" />
           <node concept="1sVBvm" id="7$DvC4gPSIB" role="1sWHZn">
             <node concept="3F0A7n" id="7$DvC4gPSID" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -154,7 +154,7 @@
           </node>
         </node>
         <node concept="1iCGBv" id="7$DvC4gPSII" role="3EZMnx">
-          <ref role="1NtTu8" to="z5ox:5$bT90ZcZtG" />
+          <ref role="1NtTu8" to="z5ox:5$bT90ZcZtG" resolve="path" />
           <node concept="1sVBvm" id="7$DvC4gPSIJ" role="1sWHZn">
             <node concept="3F0A7n" id="7$DvC4gPSIL" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -172,12 +172,12 @@
           </node>
         </node>
         <node concept="3F1sOY" id="7$DvC4gPSIQ" role="3EZMnx">
-          <ref role="1NtTu8" to="z5ox:7uLL3Mf1Tk4" />
+          <ref role="1NtTu8" to="z5ox:7uLL3Mf1Tk4" resolve="sizeSpec" />
         </node>
         <node concept="l2Vlx" id="7$DvC4gSARM" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="7$DvC4gQTZ8" role="3EZMnx">
-        <ref role="1NtTu8" to="z5ox:7$DvC4gQTYZ" />
+        <ref role="1NtTu8" to="z5ox:7$DvC4gQTYZ" resolve="description" />
         <node concept="pVoyu" id="7$DvC4gQU7e" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

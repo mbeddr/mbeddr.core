@@ -32,9 +32,6 @@
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1161622753914" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_operationContext" flags="nn" index="1Q79dO" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -294,7 +291,7 @@
   </node>
   <node concept="jVnub" id="tBHOvWey$J">
     <property role="TrG5h" value="template_ModelReference_Documentation" />
-    <ref role="phYkn" to="ucur:73oS_w7sjpL" resolve="returnLanguageAspectDescriptor" />
+    <ref role="phYkn" to="ucur:1KHvivZJsL7" resolve="InstantiateAspectDescriptor" />
     <node concept="3aamgX" id="6Y6aL9q0$9V" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="hypd:5xDtKQA7vSB" resolve="ModelReference" />
@@ -384,61 +381,12 @@
       </node>
       <node concept="30G5F_" id="6Y6aL9q0$I9" role="30HLyM">
         <node concept="3clFbS" id="6Y6aL9q0$Ia" role="2VODD2">
-          <node concept="3cpWs8" id="5UWo2tdEV_z" role="3cqZAp">
-            <node concept="3cpWsn" id="5UWo2tdEV_$" role="3cpWs9">
-              <property role="TrG5h" value="reference" />
-              <node concept="3uibUv" id="5UWo2tdEV_y" role="1tU5fm">
-                <ref role="3uigEE" to="mhbf:~SModelReference" resolve="SModelReference" />
-              </node>
-              <node concept="v3LJS" id="5UWo2tdEV__" role="33vP2m">
-                <ref role="v3LJV" node="6Y6aL9q0$9E" resolve="modelRef" />
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="5UWo2tdEVDz" role="3cqZAp">
-            <node concept="3cpWsn" id="5UWo2tdEVD$" role="3cpWs9">
-              <property role="TrG5h" value="repository" />
-              <node concept="3uibUv" id="5UWo2tdEVDx" role="1tU5fm">
-                <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-              </node>
-              <node concept="2OqwBi" id="5UWo2tdEVD_" role="33vP2m">
-                <node concept="2OqwBi" id="5UWo2tdEVDA" role="2Oq$k0">
-                  <node concept="1Q79dO" id="5UWo2tdEVDB" role="2Oq$k0" />
-                  <node concept="liA8E" id="5UWo2tdEVDC" role="2OqNvi">
-                    <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5UWo2tdEVDD" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="5UWo2tdFzdm" role="3cqZAp">
-            <node concept="3cpWsn" id="5UWo2tdFzdn" role="3cpWs9">
-              <property role="TrG5h" value="model" />
-              <node concept="3uibUv" id="5UWo2tdFzdj" role="1tU5fm">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-              </node>
-              <node concept="2OqwBi" id="5UWo2tdFzdo" role="33vP2m">
-                <node concept="37vLTw" id="5UWo2tdFzdp" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5UWo2tdEV_$" resolve="reference" />
-                </node>
-                <node concept="liA8E" id="5UWo2tdFzdq" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
-                  <node concept="37vLTw" id="5UWo2tdFzdr" role="37wK5m">
-                    <ref role="3cqZAo" node="5UWo2tdEVD$" resolve="repository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs6" id="5UWo2tdFz8$" role="3cqZAp">
             <node concept="2YIFZM" id="5UWo2tdFz_6" role="3cqZAk">
               <ref role="37wK5l" to="ttl0:1XXGcSTYFLY" resolve="isAspectOfLanguage" />
               <ref role="1Pybhc" to="ttl0:5UWo2tdFaU3" resolve="GeneratorUtil" />
-              <node concept="37vLTw" id="5UWo2tdFzCb" role="37wK5m">
-                <ref role="3cqZAo" node="5UWo2tdFzdn" resolve="model" />
+              <node concept="v3LJS" id="3cUcim$czkG" role="37wK5m">
+                <ref role="v3LJV" node="3cUcim$cyh$" resolve="model" />
               </node>
               <node concept="35c_gC" id="5UWo2tdFzI8" role="37wK5m">
                 <ref role="35c_gD" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
@@ -448,17 +396,9 @@
         </node>
       </node>
     </node>
-    <node concept="1N15co" id="6Y6aL9q0$9C" role="1s_3oS">
-      <property role="TrG5h" value="langModule" />
-      <node concept="3uibUv" id="6Y6aL9q0$9D" role="1N15GL">
-        <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
-      </node>
-    </node>
-    <node concept="1N15co" id="6Y6aL9q0$9E" role="1s_3oS">
-      <property role="TrG5h" value="modelRef" />
-      <node concept="3uibUv" id="6Y6aL9q0$9F" role="1N15GL">
-        <ref role="3uigEE" to="mhbf:~SModelReference" resolve="SModelReference" />
-      </node>
+    <node concept="1N15co" id="3cUcim$cyh$" role="1s_3oS">
+      <property role="TrG5h" value="model" />
+      <node concept="H_c77" id="3cUcim$cyh_" role="1N15GL" />
     </node>
   </node>
   <node concept="312cEu" id="tBHOvWeyAb">
@@ -824,7 +764,7 @@
                             </node>
                           </node>
                           <node concept="3TrEf2" id="4jXS_uRq5$b" role="2OqNvi">
-                            <ref role="3Tt5mk" to="748g:UK_oBpA4EG" />
+                            <ref role="3Tt5mk" to="748g:UK_oBpA4EG" resolve="concept" />
                           </node>
                         </node>
                       </node>

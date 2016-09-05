@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
@@ -56,12 +56,11 @@
       <concept id="8473566765277240526" name="de.slisson.mps.reflection.structure.ReflectionMethodCall" flags="ng" index="1PvZjq" />
     </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconResourceExpression" flags="nn" index="1QGGTA">
-        <child id="8974276187400029893" name="icon" index="1QGGTw" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
+        <child id="8974276187400029893" name="icon" index="1QGGTw" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -480,7 +479,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="UK_oBpzHVU" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
+      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="69s3uhHThi8">
@@ -1026,7 +1025,7 @@
       <node concept="3clFbS" id="4jXS_uRwObJ" role="2VODD2" />
     </node>
     <node concept="1QGGSu" id="4jXS_uRwObU" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/pin.gif" />
+      <property role="1iqoE4" value="${module}/icons/pin.gif" />
     </node>
     <node concept="2ScWuX" id="4jXS_uRwPCO" role="tmbBb">
       <node concept="3clFbS" id="4jXS_uRwPCP" role="2VODD2">
@@ -1169,7 +1168,7 @@
                   </node>
                   <node concept="1QGGTA" id="7KhuBYQgzbb" role="37wK5m">
                     <node concept="1QGGSu" id="7KhuBYQgzbd" role="1QGGTw">
-                      <property role="1QGGTI" value="${module}/icons/pin.gif" />
+                      <property role="1iqoE4" value="${module}/icons/pin.gif" />
                     </node>
                   </node>
                   <node concept="3clFb_" id="1KDc5EfHWeF" role="jymVt">
@@ -1942,7 +1941,7 @@
               <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon):void" resolve="setIcon" />
               <node concept="1QGGTA" id="1IUlN8Q3WKA" role="37wK5m">
                 <node concept="1QGGSu" id="1IUlN8Q3WKB" role="1QGGTw">
-                  <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
+                  <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
                 </node>
               </node>
             </node>
@@ -1998,7 +1997,7 @@
               <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon):void" resolve="setIcon" />
               <node concept="1QGGTA" id="7r8qu42xWDv" role="37wK5m">
                 <node concept="1QGGSu" id="7r8qu42xWDw" role="1QGGTw">
-                  <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
+                  <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
                 </node>
               </node>
             </node>
@@ -2604,7 +2603,7 @@
                 </node>
                 <node concept="1QGGTA" id="1IUlN8Q5qpc" role="2BLOvy">
                   <node concept="1QGGSu" id="1IUlN8Q5qpf" role="1QGGTw">
-                    <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
+                    <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
                   </node>
                 </node>
               </node>
@@ -2645,7 +2644,7 @@
                 </node>
                 <node concept="1QGGTA" id="7r8qu42xUal" role="2BLOvy">
                   <node concept="1QGGSu" id="7r8qu42xUam" role="1QGGTw">
-                    <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
+                    <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
                   </node>
                 </node>
               </node>
@@ -2663,7 +2662,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="1KDc5EfI0Ce" role="1nVCmq">
-      <property role="1QGGTI" value="${module}/icons/toc_closed.png" />
+      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
     </node>
   </node>
 </model>
