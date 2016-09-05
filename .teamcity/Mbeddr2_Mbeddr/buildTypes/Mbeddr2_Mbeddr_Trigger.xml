@@ -18,7 +18,8 @@
 +:maintenance/*
 +:milestone/v-1.5-3
 +:integration/*
-+:release/*]]></param>
++:release/*
+-:feature/cbmcJenkins]]></param>
           <param name="quietPeriod" value="91" />
           <param name="quietPeriodMode" value="USE_CUSTOM" />
           <param name="triggerRules"><![CDATA[-:.teamcity

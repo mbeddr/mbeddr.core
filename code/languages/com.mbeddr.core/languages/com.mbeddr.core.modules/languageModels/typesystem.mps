@@ -36,7 +36,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
-    <import index="aplb" ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)" />
+    <import index="aplb" ref="r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.lang.dataFlow)" />
     <import index="xpog" ref="r:fe8ac1c2-4441-43ed-8c6b-75093fa00e66(com.mbeddr.mpsutil.compare.pattern.runtime.plugin)" />
   </imports>
   <registry>
@@ -157,7 +157,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -5471,12 +5471,34 @@
             <node concept="3clFbS" id="6o2p2Z1tyoZ" role="2LFqv$">
               <node concept="3clFbJ" id="6o2p2Z1typ0" role="3cqZAp">
                 <node concept="3clFbS" id="6o2p2Z1typ1" role="3clFbx">
-                  <node concept="2MkqsV" id="6o2p2Z1typ2" role="3cqZAp">
-                    <node concept="Xl_RD" id="6o2p2Z1typ3" role="2MkJ7o">
-                      <property role="Xl_RC" value="cannot call non-pure functions from pure functions" />
+                  <node concept="3clFbJ" id="6IZreuBQCdw" role="3cqZAp">
+                    <node concept="3clFbS" id="6IZreuBQCdy" role="3clFbx">
+                      <node concept="2MkqsV" id="6o2p2Z1typ2" role="3cqZAp">
+                        <node concept="Xl_RD" id="6o2p2Z1typ3" role="2MkJ7o">
+                          <property role="Xl_RC" value="cannot call non-pure functions from pure functions" />
+                        </node>
+                        <node concept="2GrUjf" id="6o2p2Z1typ4" role="2OEOjV">
+                          <ref role="2Gs0qQ" node="6o2p2Z1tyoY" resolve="e" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="2GrUjf" id="6o2p2Z1typ4" role="2OEOjV">
-                      <ref role="2Gs0qQ" node="6o2p2Z1tyoY" resolve="e" />
+                    <node concept="2OqwBi" id="6IZreuBQEh_" role="3clFbw">
+                      <node concept="2OqwBi" id="6IZreuBQDpM" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6IZreuBQCjl" role="2Oq$k0">
+                          <node concept="2GrUjf" id="6IZreuBQCdT" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="6o2p2Z1tyoY" resolve="e" />
+                          </node>
+                          <node concept="3TrEf2" id="6IZreuBQD06" role="2OqNvi">
+                            <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+                          </node>
+                        </node>
+                        <node concept="3CFZ6_" id="6IZreuBQE93" role="2OqNvi">
+                          <node concept="3CFYIy" id="6IZreuBQEcm" role="3CFYIz">
+                            <ref role="3CFYIx" to="x27k:6o2p2Z1sBzI" resolve="PureFunctionAnnotation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3w_OXm" id="6IZreuBR0l1" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

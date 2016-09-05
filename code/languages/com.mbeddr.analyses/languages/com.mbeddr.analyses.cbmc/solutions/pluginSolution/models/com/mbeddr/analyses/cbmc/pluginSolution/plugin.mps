@@ -3,22 +3,22 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -39,7 +39,6 @@
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
     <import index="6wtx" ref="r:b3d1de11-ac9a-484b-b90e-25f8ae656f17(com.mbeddr.analyses.cbmc.rt.analyses.loops)" />
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -239,7 +238,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -320,7 +319,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -783,24 +781,6 @@
     <property role="TrG5h" value="CbmcVerifySingleAnalysisConfigurationAction" />
     <property role="2uzpH1" value="Verify Analysis Configuration" />
     <property role="1WHSii" value="Starts CBMC on this configuration" />
-    <node concept="2ScWuX" id="6P_afAIpSTu" role="tmbBb">
-      <node concept="3clFbS" id="6P_afAIpSTv" role="2VODD2">
-        <node concept="3clFbF" id="6P_afAIrgYU" role="3cqZAp">
-          <node concept="3fqX7Q" id="6P_afAIrhbP" role="3clFbG">
-            <node concept="NRdvd" id="6P_afAIrHp9" role="3fr31v">
-              <ref role="1Pybhc" to="ood5:6P_afAIr3XL" resolve="AnalysesConfigurationUtils" />
-              <ref role="37wK5l" to="ood5:6P_afAIr6ZT" resolve="isCommented" />
-              <node concept="2OqwBi" id="6P_afAIrHpa" role="37wK5m">
-                <node concept="3gHZIF" id="41hIld_kb8i" role="2OqNvi">
-                  <ref role="2WH_rO" node="6w9LZ1hC3Vo" resolve="analysis" />
-                </node>
-                <node concept="2WthIp" id="6P_afAIrHpb" role="2Oq$k0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1DS2jV" id="6w9LZ1hC3Vm" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -977,6 +957,24 @@
     </node>
     <node concept="1QGGSu" id="6w9LZ1hC3WS" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/verify.png" />
+    </node>
+    <node concept="2ScWuX" id="6P_afAIpSTu" role="tmbBb">
+      <node concept="3clFbS" id="6P_afAIpSTv" role="2VODD2">
+        <node concept="3clFbF" id="6P_afAIrgYU" role="3cqZAp">
+          <node concept="3fqX7Q" id="6P_afAIrhbP" role="3clFbG">
+            <node concept="NRdvd" id="6P_afAIrHp9" role="3fr31v">
+              <ref role="1Pybhc" to="ood5:6P_afAIr3XL" resolve="AnalysesConfigurationUtils" />
+              <ref role="37wK5l" to="ood5:6P_afAIr6ZT" resolve="isCommented" />
+              <node concept="2OqwBi" id="6P_afAIrHpa" role="37wK5m">
+                <node concept="3gHZIF" id="41hIld_kb8i" role="2OqNvi">
+                  <ref role="2WH_rO" node="6w9LZ1hC3Vo" resolve="analysis" />
+                </node>
+                <node concept="2WthIp" id="6P_afAIrHpb" role="2Oq$k0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="EVDykUC7Si">
@@ -2995,9 +2993,31 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="3hNQKr2vXuR" role="3clF47">
-                      <node concept="3SKdUt" id="3hNQKr2waX1" role="3cqZAp">
-                        <node concept="3SKdUq" id="3hNQKr2waX4" role="3SKWNk">
-                          <property role="3SKdUp" value="do nothing" />
+                      <node concept="3SKdUt" id="6hXQBIqVGZQ" role="3cqZAp">
+                        <node concept="3SKdUq" id="6hXQBIqVGZR" role="3SKWNk">
+                          <property role="3SKdUp" value="show loops analyzer calls this when a runtime-error or cancel occurred" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="7RBgWEJcqHF" role="3cqZAp">
+                        <node concept="2YIFZM" id="6BowXlDxSD4" role="3clFbG">
+                          <ref role="37wK5l" to="uipx:6BowXlDxMWP" resolve="displayLongErrorDialog" />
+                          <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
+                          <node concept="Xl_RD" id="6BowXlDxSD5" role="37wK5m">
+                            <property role="Xl_RC" value="Fatal Error while Running CBMC!" />
+                          </node>
+                          <node concept="NRdvd" id="6BowXlDxSD6" role="37wK5m">
+                            <ref role="1Pybhc" to="p8vh:3FEqw8GYAfT" resolve="ErrorMessageUtils" />
+                            <ref role="37wK5l" to="p8vh:3FEqw8GYAlY" resolve="computeErrorMessage" />
+                            <node concept="37vLTw" id="6hXQBIqW0ah" role="37wK5m">
+                              <ref role="3cqZAo" node="3hNQKr2vXuP" resolve="r" />
+                            </node>
+                          </node>
+                          <node concept="3cmrfG" id="6BowXlDL4wZ" role="37wK5m">
+                            <property role="3cmrfH" value="800" />
+                          </node>
+                          <node concept="3cmrfG" id="6BowXlDL4OT" role="37wK5m">
+                            <property role="3cmrfH" value="200" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3080,10 +3100,10 @@
           <node concept="37vLTI" id="1Cle9_eEMO" role="3clFbG">
             <node concept="2OqwBi" id="1Cle9_eFX9" role="37vLTx">
               <node concept="2OqwBi" id="1Cle9_eEWP" role="2Oq$k0">
+                <node concept="2WthIp" id="1Cle9_eEUQ" role="2Oq$k0" />
                 <node concept="3gHZIF" id="41hIld_kc0o" role="2OqNvi">
                   <ref role="2WH_rO" node="1$MI$rgGhqj" resolve="analysis" />
                 </node>
-                <node concept="2WthIp" id="1Cle9_eEUQ" role="2Oq$k0" />
               </node>
               <node concept="3TrEf2" id="1Cle9_eG5T" role="2OqNvi">
                 <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
@@ -3116,20 +3136,19 @@
         </node>
         <node concept="3clFbF" id="3x0R1LJfFc9" role="3cqZAp">
           <node concept="37vLTI" id="3x0R1LJfFca" role="3clFbG">
-            <node concept="2OqwBi" id="5etR5IKoKN_" role="37vLTx">
-              <node concept="2OqwBi" id="5etR5IKoGQU" role="2Oq$k0">
-                <node concept="2OqwBi" id="5etR5IKoG_w" role="2Oq$k0">
-                  <node concept="2WthIp" id="5etR5IKoGyZ" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="5etR5IKoGJq" role="2OqNvi">
+            <node concept="NRdvd" id="6hXQBIqUuOn" role="37vLTx">
+              <ref role="1Pybhc" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+              <ref role="37wK5l" to="tzyt:3kUGzlRgWzQ" resolve="computeEntryFunctionName" />
+              <node concept="2OqwBi" id="6hXQBIqUuOo" role="37wK5m">
+                <node concept="2OqwBi" id="6hXQBIqUuOp" role="2Oq$k0">
+                  <node concept="2WthIp" id="6hXQBIqUuOq" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="6hXQBIqUuOr" role="2OqNvi">
                     <ref role="2WH_rO" node="1$MI$rgGhqj" resolve="analysis" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="5etR5IKoH2U" role="2OqNvi">
-                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
+                <node concept="3TrEf2" id="6hXQBIqUuOs" role="2OqNvi">
+                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
                 </node>
-              </node>
-              <node concept="2qgKlT" id="5etR5IKoL8a" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:g2CnSr0ARV" resolve="qualifiedNameCIdentifier" />
               </node>
             </node>
             <node concept="2OqwBi" id="3x0R1LJfFce" role="37vLTJ">

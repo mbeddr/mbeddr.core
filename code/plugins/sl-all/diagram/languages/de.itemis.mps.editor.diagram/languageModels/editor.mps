@@ -4706,6 +4706,12 @@
       <node concept="2iRfu4" id="6gM9UMJsW7P" role="2iSdaV" />
     </node>
   </node>
+  <node concept="3p36aQ" id="4iNiUqGz3jv">
+    <ref role="aqKnT" to="2qld:2i0w9xYr1Um" resolve="ShapeNodeExpression" />
+  </node>
+  <node concept="3p36aQ" id="4iNiUqGz3ju">
+    <ref role="aqKnT" to="2qld:6uo2fN6gQ2g" resolve="StandardShape" />
+  </node>
   <node concept="24kQdi" id="7EpvT6Mxly$">
     <property role="3GE5qa" value="content" />
     <ref role="1XX52x" to="2qld:5qgNcfDmYRM" resolve="Content_BLQuery" />
@@ -4724,12 +4730,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="3p36aQ" id="4iNiUqGz3jv">
-    <ref role="aqKnT" to="2qld:2i0w9xYr1Um" resolve="ShapeNodeExpression" />
-  </node>
-  <node concept="3p36aQ" id="4iNiUqGz3ju">
-    <ref role="aqKnT" to="2qld:6uo2fN6gQ2g" resolve="StandardShape" />
   </node>
   <node concept="24kQdi" id="7tKD69sB2HU">
     <ref role="1XX52x" to="2qld:7tKD69sB2Fv" resolve="DropHandler" />

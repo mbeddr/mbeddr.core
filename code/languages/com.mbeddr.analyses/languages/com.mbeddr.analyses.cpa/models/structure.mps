@@ -18,6 +18,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="intConceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -59,10 +60,10 @@
     <property role="EcuMT" value="4409367108242665713" />
     <node concept="1TJgyj" id="3OLe0nF7Hyr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="cpas" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="config" />
+      <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4409367108243085467" />
-      <ref role="20lvS9" node="3OLe0nF7H$$" resolve="CPABase" />
+      <ref role="20lvS9" node="4iwsNco_10Y" resolve="ConfigBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="3OLe0nF7H$$">
@@ -114,6 +115,28 @@
     <property role="34LRSv" value="PointerCPA" />
     <property role="EcuMT" value="4409367108243090270" />
     <ref role="1TJDcQ" node="3OLe0nF7H$$" resolve="CPABase" />
+  </node>
+  <node concept="1TIwiD" id="6TQiFFuRmR3">
+    <property role="1pbfSe" value="1297332349" />
+    <property role="TrG5h" value="ValueAnalysisConfig" />
+    <property role="34LRSv" value="-valueAnalysis" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
+  <node concept="1TIwiD" id="4iwsNco_10Z">
+    <property role="1pbfSe" value="1563722610" />
+    <property role="TrG5h" value="PredicateAnalysisConfig" />
+    <property role="34LRSv" value="-predicateAnalysis" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
+  <node concept="1TIwiD" id="4iwsNco_10Y">
+    <property role="1pbfSe" value="1563722609" />
+    <property role="TrG5h" value="ConfigBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
