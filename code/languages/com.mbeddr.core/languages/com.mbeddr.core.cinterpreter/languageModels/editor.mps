@@ -2,7 +2,7 @@
 <model ref="r:e9554d5d-d84e-4b29-8bb5-62d44ef6635b(com.mbeddr.core.cinterpreter.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -100,7 +100,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="65E6xpGSp0N" role="3EZMnx">
-          <ref role="1NtTu8" to="xi9i:65E6xpGSSNL" />
+          <ref role="1NtTu8" to="xi9i:65E6xpGSSNL" resolve="expression" />
           <node concept="VechU" id="65E6xpGSukT" role="3F10Kt">
             <property role="Vb096" value="DARK_GREEN" />
           </node>
