@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="p7vm" ref="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" implicit="true" />
@@ -117,7 +117,7 @@
           </node>
           <node concept="l2Vlx" id="1mfTBng0Jm9" role="2iSdaV" />
           <node concept="1iCGBv" id="1mfTBng0Jmc" role="3EZMnx">
-            <ref role="1NtTu8" to="p7vm:1mfTBng0JlJ" />
+            <ref role="1NtTu8" to="p7vm:1mfTBng0JlJ" resolve="instanceConfig" />
             <node concept="1sVBvm" id="1mfTBng0Jmd" role="1sWHZn">
               <node concept="3F0A7n" id="1mfTBng0Jmf" role="2wV5jI">
                 <property role="1Intyy" value="true" />
