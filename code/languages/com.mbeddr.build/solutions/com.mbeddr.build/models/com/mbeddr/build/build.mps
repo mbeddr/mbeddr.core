@@ -4327,6 +4327,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3cUcim$ax0c" role="3bR37C">
+          <node concept="3bR9La" id="3cUcim$ax0d" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7tgCHAyOtFQ" resolve="com.mbeddr.ext.compositecomponents" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7eF9rfAuAO$" role="2G$12L">
         <property role="BnDLt" value="true" />
