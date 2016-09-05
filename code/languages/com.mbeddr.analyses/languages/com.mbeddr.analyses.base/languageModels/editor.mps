@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
@@ -60,6 +60,9 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -67,6 +70,7 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -169,10 +173,10 @@
         <property role="3F0ifm" value="&lt;" />
       </node>
       <node concept="3F1sOY" id="4jq$txdT1lB" role="3EZMnx">
-        <ref role="1NtTu8" to="q46j:4jq$txdSYPx" />
+        <ref role="1NtTu8" to="q46j:4jq$txdSYPx" resolve="first" />
       </node>
       <node concept="3F1sOY" id="4jq$txdT1lD" role="3EZMnx">
-        <ref role="1NtTu8" to="q46j:4jq$txdT1ls" />
+        <ref role="1NtTu8" to="q46j:4jq$txdT1ls" resolve="second" />
       </node>
       <node concept="3F0ifn" id="4jq$txdT1lA" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
@@ -211,7 +215,7 @@
           </node>
           <node concept="3F2HdR" id="19a6$uAA8hV" role="3EZMnx">
             <property role="S$F3r" value="true" />
-            <ref role="1NtTu8" to="q46j:v5nKjVRoOX" />
+            <ref role="1NtTu8" to="q46j:v5nKjVRoOX" resolve="imports" />
             <node concept="3F0ifn" id="19a6$uAAakq" role="2czzBI">
               <property role="3F0ifm" value="nothing" />
               <ref role="1k5W1q" to="r4b4:2$$_2GR98qK" resolve="nothing" />
@@ -239,7 +243,7 @@
                           <node concept="2OqwBi" id="3r83Ks0g8gl" role="2Oq$k0">
                             <node concept="pncrf" id="3r83Ks0g8g0" role="2Oq$k0" />
                             <node concept="3Tsc0h" id="v5nKjVSaFJ" role="2OqNvi">
-                              <ref role="3TtcxE" to="q46j:v5nKjVRoOX" />
+                              <ref role="3TtcxE" to="q46j:v5nKjVRoOX" resolve="imports" />
                             </node>
                           </node>
                           <node concept="34oBXx" id="3r83Ks0g8gR" role="2OqNvi" />
@@ -308,7 +312,7 @@
       </node>
       <node concept="3F2HdR" id="3R$6B6bKxEG" role="3EZMnx">
         <property role="2czwfO" value="\n" />
-        <ref role="1NtTu8" to="q46j:5BkFC2yh8uK" />
+        <ref role="1NtTu8" to="q46j:5BkFC2yh8uK" resolve="analyses" />
         <node concept="2iRkQZ" id="gaSsNU7iPA" role="2czzBx" />
         <node concept="pVoyu" id="3R$6B6bKxEI" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -345,13 +349,13 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F1sOY" id="1XFitunPKcr" role="3EZMnx">
-        <ref role="1NtTu8" to="q46j:1XFitunPKbU" />
+        <ref role="1NtTu8" to="q46j:1XFitunPKbU" resolve="first" />
       </node>
       <node concept="3F0ifn" id="1XFitunPKct" role="3EZMnx">
         <property role="3F0ifm" value="," />
       </node>
       <node concept="3F1sOY" id="1XFitunPKcv" role="3EZMnx">
-        <ref role="1NtTu8" to="q46j:1XFitunPKc7" />
+        <ref role="1NtTu8" to="q46j:1XFitunPKc7" resolve="second" />
       </node>
       <node concept="3F0ifn" id="1XFitunPKcx" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -374,7 +378,7 @@
       </node>
       <node concept="3F2HdR" id="2lA5DP6loTa" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="q46j:2lA5DP6losI" />
+        <ref role="1NtTu8" to="q46j:2lA5DP6losI" resolve="refs" />
       </node>
       <node concept="3F0ifn" id="2lA5DP6loU2" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -384,7 +388,7 @@
   <node concept="24kQdi" id="2lA5DP6loUl">
     <ref role="1XX52x" to="q46j:2lA5DP6loqf" resolve="NodeRef" />
     <node concept="1iCGBv" id="2lA5DP6loWK" role="2wV5jI">
-      <ref role="1NtTu8" to="q46j:2lA5DP6losD" />
+      <ref role="1NtTu8" to="q46j:2lA5DP6losD" resolve="referencedNode" />
       <node concept="1sVBvm" id="2lA5DP6loWM" role="1sWHZn">
         <node concept="1HlG4h" id="2lA5DP6loX2" role="2wV5jI">
           <node concept="1HfYo3" id="2lA5DP6loX4" role="1HlULh">
@@ -407,6 +411,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="3cUcim$dss6">
+    <ref role="aqKnT" to="q46j:15d7XIo_Euc" resolve="ModelUsedForAnalysesTestsMarker" />
   </node>
 </model>
 

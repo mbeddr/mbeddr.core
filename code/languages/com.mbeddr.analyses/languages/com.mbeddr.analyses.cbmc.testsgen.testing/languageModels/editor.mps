@@ -2,7 +2,7 @@
 <model ref="r:4c5dc454-b4d3-41a4-98ed-1d11730310f6(com.mbeddr.analyses.cbmc.testsgen.testing.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -157,7 +157,7 @@
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="73BQep1Sw_U" role="2OqNvi">
-                          <ref role="3TtcxE" to="zdl0:73BQep1Sm3n" />
+                          <ref role="3TtcxE" to="zdl0:73BQep1Sm3n" resolve="oracleSteps" />
                         </node>
                       </node>
                       <node concept="2WmjW8" id="7MMcIPlaB$e" role="2OqNvi">
@@ -209,7 +209,7 @@
           <property role="3F0ifm" value="test vector  oracle:" />
         </node>
         <node concept="1iCGBv" id="73BQep1UsFz" role="3EZMnx">
-          <ref role="1NtTu8" to="zdl0:73BQep1UsFp" />
+          <ref role="1NtTu8" to="zdl0:73BQep1UsFp" resolve="sut" />
           <node concept="1sVBvm" id="73BQep1UsF_" role="1sWHZn">
             <node concept="3F0A7n" id="73BQep1UsFH" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -225,7 +225,7 @@
         </node>
         <node concept="3XFhqQ" id="73BQep1Smaz" role="3EZMnx" />
         <node concept="3F2HdR" id="73BQep1SmaD" role="3EZMnx">
-          <ref role="1NtTu8" to="zdl0:73BQep1Sm3n" />
+          <ref role="1NtTu8" to="zdl0:73BQep1Sm3n" resolve="oracleSteps" />
           <node concept="2iRkQZ" id="73BQep1SmaG" role="2czzBx" />
           <node concept="VPM3Z" id="73BQep1SmaH" role="3F10Kt">
             <property role="VOm3f" value="false" />

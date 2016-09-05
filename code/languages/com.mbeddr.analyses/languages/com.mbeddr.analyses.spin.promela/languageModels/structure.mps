@@ -32,7 +32,6 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -62,7 +61,6 @@
     <property role="TrG5h" value="PromelaModel" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="799927705160518134" />
-    <property role="MwhBj" value="${module}/icons/spin.png" />
     <property role="34LRSv" value="Promela model" />
     <property role="R4oN_" value="a Promela model" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />

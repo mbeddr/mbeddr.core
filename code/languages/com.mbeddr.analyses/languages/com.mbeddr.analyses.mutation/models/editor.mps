@@ -2,7 +2,7 @@
 <model ref="r:dbabf57e-a86a-4cbb-b845-844dc073f888(com.mbeddr.analyses.mutation.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -80,7 +80,7 @@
           <property role="3F0ifm" value="implementation module:" />
         </node>
         <node concept="1iCGBv" id="6I2T_LF63be" role="3EZMnx">
-          <ref role="1NtTu8" to="p2i4:6I2T_LF60YP" />
+          <ref role="1NtTu8" to="p2i4:6I2T_LF60YP" resolve="im" />
           <node concept="1sVBvm" id="6I2T_LF63bf" role="1sWHZn">
             <node concept="3F0A7n" id="6I2T_LF63bg" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -99,7 +99,7 @@
           <property role="3F0ifm" value="harness:" />
         </node>
         <node concept="1iCGBv" id="6I2T_LF6xAN" role="3EZMnx">
-          <ref role="1NtTu8" to="p2i4:6I2T_LF6x$Y" />
+          <ref role="1NtTu8" to="p2i4:6I2T_LF6x$Y" resolve="harness" />
           <node concept="1sVBvm" id="6I2T_LF6xAP" role="1sWHZn">
             <node concept="3F0A7n" id="6I2T_LF6xB7" role="2wV5jI">
               <property role="1Intyy" value="true" />

@@ -6,7 +6,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
@@ -23,7 +23,7 @@
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" />
@@ -212,7 +212,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="5OLOS2sRbBW" role="2OqNvi">
-                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" />
+                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" resolve="generationKind" />
               </node>
             </node>
             <node concept="1mIQ4w" id="5OLOS2sRbqk" role="2OqNvi">
@@ -311,7 +311,7 @@
                               </node>
                             </node>
                             <node concept="3TrEf2" id="5Tz48EVS4ZB" role="2OqNvi">
-                              <ref role="3Tt5mk" to="vs0r:3wX8xlocnjN" />
+                              <ref role="3Tt5mk" to="vs0r:3wX8xlocnjN" resolve="text" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="47VdeCsMbWY" role="37vLTJ">
@@ -319,7 +319,7 @@
                               <ref role="3cqZAo" node="47VdeCsM8HM" resolve="fc" />
                             </node>
                             <node concept="3TrEf2" id="5Tz48EVRUAF" role="2OqNvi">
-                              <ref role="3Tt5mk" to="vs0r:3wX8xlocnjN" />
+                              <ref role="3Tt5mk" to="vs0r:3wX8xlocnjN" resolve="text" />
                             </node>
                           </node>
                         </node>
@@ -359,7 +359,7 @@
                           <ref role="3cqZAo" node="47VdeCsM8HM" resolve="fc" />
                         </node>
                         <node concept="3TrEf2" id="5Tz48EVSdsr" role="2OqNvi">
-                          <ref role="3Tt5mk" to="97v6:5Tz48EVRFxg" />
+                          <ref role="3Tt5mk" to="97v6:5Tz48EVRFxg" resolve="acsl" />
                         </node>
                       </node>
                     </node>
@@ -449,7 +449,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="5OLOS2sRJ6h" role="2OqNvi">
-                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" />
+                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" resolve="generationKind" />
               </node>
             </node>
             <node concept="1mIQ4w" id="5OLOS2sRJ6i" role="2OqNvi">

@@ -2,7 +2,7 @@
 <model ref="r:696a1270-f4db-4b72-a396-a924b905f9bb(com.mbeddr.analyses.cbmc.testing.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -210,7 +210,7 @@
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="7MMcIPlaB$d" role="2OqNvi">
-                          <ref role="3TtcxE" to="o23b:49Y2Xia4ibV" />
+                          <ref role="3TtcxE" to="o23b:49Y2Xia4ibV" resolve="states" />
                         </node>
                       </node>
                       <node concept="2WmjW8" id="7MMcIPlaB$e" role="2OqNvi">
@@ -281,7 +281,7 @@
         <property role="3F0ifm" value="node" />
       </node>
       <node concept="3F1sOY" id="49Y2Xia4uOU" role="3EZMnx">
-        <ref role="1NtTu8" to="o23b:49Y2Xia4uOS" />
+        <ref role="1NtTu8" to="o23b:49Y2Xia4uOS" resolve="node" />
       </node>
       <node concept="l2Vlx" id="49Y2Xia4izf" role="2iSdaV" />
       <node concept="3F0ifn" id="1eEm1HSG09q" role="3EZMnx">
@@ -322,7 +322,7 @@
           <property role="3F0ifm" value="counterexample test for" />
         </node>
         <node concept="3F1sOY" id="8Fyjetcja_" role="3EZMnx">
-          <ref role="1NtTu8" to="o23b:8Fyjetcf3p" />
+          <ref role="1NtTu8" to="o23b:8Fyjetcf3p" resolve="liftedResult" />
         </node>
         <node concept="l2Vlx" id="49Y2Xia4izJ" role="2iSdaV" />
       </node>
@@ -332,7 +332,7 @@
         </node>
         <node concept="3XFhqQ" id="49Y2Xia4izx" role="3EZMnx" />
         <node concept="3F2HdR" id="49Y2Xia4ksH" role="3EZMnx">
-          <ref role="1NtTu8" to="o23b:49Y2Xia4ibV" />
+          <ref role="1NtTu8" to="o23b:49Y2Xia4ibV" resolve="states" />
           <node concept="2iRkQZ" id="49Y2Xia4ksI" role="2czzBx" />
           <node concept="VPM3Z" id="49Y2Xia4ksJ" role="3F10Kt">
             <property role="VOm3f" value="false" />

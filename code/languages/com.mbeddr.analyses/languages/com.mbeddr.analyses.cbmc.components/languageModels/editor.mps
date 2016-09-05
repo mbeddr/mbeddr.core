@@ -2,7 +2,7 @@
 <model ref="r:da3b94e8-b082-482a-8b65-e659c50b6828(com.mbeddr.analyses.cbmc.components.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -121,7 +121,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="GPHxorRo4t" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="GPHxorRo4u" role="1sWHZn">
             <node concept="3F0A7n" id="GPHxorRo4v" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -162,7 +162,7 @@
             <property role="3F0ifm" value="verified component" />
           </node>
           <node concept="1iCGBv" id="GPHxorRo4m" role="3EZMnx">
-            <ref role="1NtTu8" to="c4ml:GPHxorRo1k" />
+            <ref role="1NtTu8" to="c4ml:GPHxorRo1k" resolve="analyzedComponent" />
             <node concept="1sVBvm" id="GPHxorRo4n" role="1sWHZn">
               <node concept="3F0A7n" id="GPHxorRo4o" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -279,7 +279,7 @@
           <property role="3F0ifm" value="entryPoint:" />
         </node>
         <node concept="1iCGBv" id="5KvlJsg9xPQ" role="3EZMnx">
-          <ref role="1NtTu8" to="c4ml:5KvlJsg9xOZ" />
+          <ref role="1NtTu8" to="c4ml:5KvlJsg9xOZ" resolve="verificationEntryPoint" />
           <node concept="1sVBvm" id="5KvlJsg9xPR" role="1sWHZn">
             <node concept="3F0A7n" id="5KvlJsg9xPS" role="2wV5jI">
               <property role="1Intyy" value="true" />

@@ -7,7 +7,7 @@
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="-1" />
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
@@ -263,7 +263,7 @@
                               <ref role="3cqZAo" node="3AX70SQj4PW" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="3AX70SQj5D1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+                              <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
                             </node>
                           </node>
                         </node>
@@ -413,7 +413,7 @@
                     <node concept="HtX7F" id="4QaxHTomYSK" role="2OqNvi">
                       <node concept="1sne9v" id="3AX70SQjAhQ" role="HtX7I">
                         <node concept="1sne01" id="3AX70SQjAhR" role="1sne8H">
-                          <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                          <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                           <node concept="1snrkl" id="3AX70SQjE0G" role="1sne05">
                             <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
                             <node concept="37vLTw" id="3AX70SQjFHE" role="1snq_E">
@@ -436,12 +436,12 @@
                     <node concept="HtX7F" id="4ZlDVnYWw9N" role="2OqNvi">
                       <node concept="1sne9v" id="4ZlDVnYWw9O" role="HtX7I">
                         <node concept="1sne01" id="4ZlDVnYWw9P" role="1sne8H">
-                          <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                          <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                           <node concept="1shVQo" id="4ZlDVnYWyuJ" role="ccFIB">
                             <ref role="1shVQp" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
                           </node>
                           <node concept="1sne01" id="4ZlDVnYWyBV" role="1sne05">
-                            <ref role="1snh0D" to="c4fa:6iIoqg1yCmj" />
+                            <ref role="1snh0D" to="c4fa:6iIoqg1yCmj" resolve="expr" />
                             <node concept="1shVQo" id="4ZlDVnYXNck" role="ccFIB">
                               <ref role="1shVQp" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                             </node>

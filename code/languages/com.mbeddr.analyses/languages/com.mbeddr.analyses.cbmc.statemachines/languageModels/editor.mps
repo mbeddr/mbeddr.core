@@ -2,7 +2,7 @@
 <model ref="r:5a8ada71-c2f3-4560-88b9-730e37e7a758(com.mbeddr.analyses.cbmc.statemachines.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -118,7 +118,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="5hPfJKCsfYv" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="5hPfJKCsfYw" role="1sWHZn">
             <node concept="3F0A7n" id="5hPfJKCsfYx" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -159,7 +159,7 @@
             <property role="3F0ifm" value="state machine" />
           </node>
           <node concept="1iCGBv" id="5hPfJKCsfYn" role="3EZMnx">
-            <ref role="1NtTu8" to="lcpc:5hPfJKCsfX9" />
+            <ref role="1NtTu8" to="lcpc:5hPfJKCsfX9" resolve="satemachine" />
             <node concept="1sVBvm" id="5hPfJKCsfYo" role="1sWHZn">
               <node concept="3F0A7n" id="5hPfJKCsfYp" role="2wV5jI">
                 <property role="1Intyy" value="true" />

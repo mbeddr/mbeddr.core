@@ -4,7 +4,7 @@
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -138,7 +138,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3x0R1LJfFeZ" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3x0R1LJfFf0" role="1sWHZn">
             <node concept="3F0A7n" id="3x0R1LJfFf1" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -218,7 +218,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3x0R1LJfFfO" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3x0R1LJfFfP" role="1sWHZn">
             <node concept="3F0A7n" id="3x0R1LJfFfQ" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -260,7 +260,7 @@
             <property role="3F0ifm" value="DecTab container" />
           </node>
           <node concept="1iCGBv" id="3x0R1LJfFf_" role="3EZMnx">
-            <ref role="1NtTu8" to="hj5x:3x0R1LJfFaP" />
+            <ref role="1NtTu8" to="hj5x:3x0R1LJfFaP" resolve="decTabContainer" />
             <node concept="1sVBvm" id="3x0R1LJfFfA" role="1sWHZn">
               <node concept="3F0A7n" id="3x0R1LJfFfB" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -342,7 +342,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="2hmLFg9JaTr" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="2hmLFg9JaTs" role="1sWHZn">
             <node concept="3F0A7n" id="2hmLFg9JaTt" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -639,7 +639,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="7yN$Xh8qhCh" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="7yN$Xh8qhCi" role="1sWHZn">
             <node concept="3F0A7n" id="7yN$Xh8qhCj" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -681,7 +681,7 @@
             <property role="3F0ifm" value="GSwitch container" />
           </node>
           <node concept="1iCGBv" id="7yN$Xh8qhCz" role="3EZMnx">
-            <ref role="1NtTu8" to="hj5x:7yN$Xh8qhuZ" />
+            <ref role="1NtTu8" to="hj5x:7yN$Xh8qhuZ" resolve="gswitchContainer" />
             <node concept="1sVBvm" id="7yN$Xh8qhC$" role="1sWHZn">
               <node concept="3F0A7n" id="7yN$Xh8qhC_" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -749,7 +749,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3AX70SQiMaC" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3AX70SQiMaD" role="1sWHZn">
             <node concept="3F0A7n" id="3AX70SQiMaE" role="2wV5jI">
               <property role="1Intyy" value="true" />

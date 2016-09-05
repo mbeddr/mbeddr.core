@@ -167,7 +167,7 @@
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -367,8 +367,10 @@
                       <node concept="37vLTw" id="341WyjDj3Mx" role="2Oq$k0">
                         <ref role="3cqZAo" node="341WyjDj3NN" resolve="model" />
                       </node>
-                      <node concept="2SmgA7" id="341WyjDj3My" role="2OqNvi">
-                        <ref role="2SmgA8" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+                      <node concept="2SmgA7" id="3cUcim$dPbW" role="2OqNvi">
+                        <node concept="chp4Y" id="3cUcim$dPhw" role="1dBWTz">
+                          <ref role="cht4Q" to="iq83:67iKQ7o3v2L" resolve="TestsgenCBMCAnalysis" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1z4cxt" id="341WyjDj3Mz" role="2OqNvi">

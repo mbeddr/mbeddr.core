@@ -5,7 +5,7 @@
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
@@ -219,7 +219,7 @@
                     <ref role="2Gs0qQ" node="7DvJ5MZf85z" resolve="stubConf" />
                   </node>
                   <node concept="3TrEf2" id="7DvJ5MZf8iV" role="2OqNvi">
-                    <ref role="3Tt5mk" to="q5q6:7DvJ5MZf5jA" />
+                    <ref role="3Tt5mk" to="q5q6:7DvJ5MZf5jA" resolve="original" />
                   </node>
                 </node>
               </node>
@@ -249,7 +249,7 @@
                                 <ref role="3cqZAo" node="7DvJ5MZfiHc" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="7DvJ5MZfiHb" role="2OqNvi">
-                                <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+                                <ref role="3Tt5mk" to="x27k:5ak6HMA0red" resolve="function" />
                               </node>
                             </node>
                           </node>
@@ -310,7 +310,7 @@
                       <ref role="2Gs0qQ" node="7DvJ5MZfjbe" resolve="call" />
                     </node>
                     <node concept="3Tsc0h" id="7DvJ5MZfwBV" role="2OqNvi">
-                      <ref role="3TtcxE" to="x27k:5ak6HMA0ref" />
+                      <ref role="3TtcxE" to="x27k:5ak6HMA0ref" resolve="actuals" />
                     </node>
                   </node>
                 </node>
@@ -336,7 +336,7 @@
                         <ref role="2Gs0qQ" node="7DvJ5MZf85z" resolve="stubConf" />
                       </node>
                       <node concept="3TrEf2" id="7DvJ5MZkl82" role="2OqNvi">
-                        <ref role="3Tt5mk" to="q5q6:7DvJ5MZf5jE" />
+                        <ref role="3Tt5mk" to="q5q6:7DvJ5MZf5jE" resolve="stub" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7DvJ5MZkjpy" role="37vLTJ">
@@ -344,7 +344,7 @@
                         <ref role="3cqZAo" node="7DvJ5MZkj5F" resolve="newCall" />
                       </node>
                       <node concept="3TrEf2" id="7DvJ5MZkk8x" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+                        <ref role="3Tt5mk" to="x27k:5ak6HMA0red" resolve="function" />
                       </node>
                     </node>
                   </node>
@@ -356,7 +356,7 @@
                         <ref role="3cqZAo" node="7DvJ5MZkj5F" resolve="newCall" />
                       </node>
                       <node concept="3Tsc0h" id="7DvJ5MZkmLG" role="2OqNvi">
-                        <ref role="3TtcxE" to="x27k:5ak6HMA0ref" />
+                        <ref role="3TtcxE" to="x27k:5ak6HMA0ref" resolve="actuals" />
                       </node>
                     </node>
                     <node concept="X8dFx" id="7DvJ5MZktid" role="2OqNvi">
