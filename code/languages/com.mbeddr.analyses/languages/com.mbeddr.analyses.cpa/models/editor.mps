@@ -10,6 +10,7 @@
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="srwo" ref="r:37f0c2b5-25ac-4a2d-ad51-ef33c790d7e3(com.mbeddr.analyses.base.editor)" />
     <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -34,6 +35,8 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -99,7 +102,7 @@
     <node concept="3EZMnI" id="3x0R1LJfFez" role="2wV5jI">
       <node concept="3EZMnI" id="3x0R1LJfFe$" role="3EZMnx">
         <node concept="PMmxH" id="3LhOsKAGPtf" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="VPM3Z" id="3x0R1LJfFe_" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -179,6 +182,36 @@
     <ref role="1XX52x" to="km6g:4iwsNco_10Y" resolve="ConfigBase" />
     <node concept="PMmxH" id="4iwsNco_117" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3lXW7OZ4iBA">
+    <ref role="1XX52x" to="km6g:3lXW7OZ4iBu" resolve="VERIFIER_assume" />
+    <node concept="3EZMnI" id="4fjBjwDqlY6" role="2wV5jI">
+      <node concept="l2Vlx" id="4fjBjwDqlY8" role="2iSdaV" />
+      <node concept="3F0ifn" id="4fjBjwDqlYa" role="3EZMnx">
+        <property role="3F0ifm" value="__VERIFIER_assume" />
+      </node>
+      <node concept="3F0ifn" id="6BowXlDULXK" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="6BowXlDULZA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4fjBjwDqlYc" role="3EZMnx">
+        <ref role="1NtTu8" to="km6g:3lXW7OZ4iBv" />
+      </node>
+      <node concept="3F0ifn" id="4fjBjwDqlYg" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6BowXlDUM1i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6BowXlDUM1M" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="6BowXlDUM3L" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

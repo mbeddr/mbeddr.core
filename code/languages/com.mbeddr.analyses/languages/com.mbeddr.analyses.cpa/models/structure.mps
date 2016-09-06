@@ -9,6 +9,8 @@
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="bryn" ref="r:9f8e322d-e446-4cbf-a6b4-ec0732156eda(com.mbeddr.analyses.cpa.rt.base)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -83,6 +85,32 @@
     <property role="34LRSv" value="-valueAnalysis" />
     <property role="3GE5qa" value="config" />
     <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
+  <node concept="1TIwiD" id="7C_8s1MJ$W$">
+    <property role="1pbfSe" value="320638748" />
+    <property role="TrG5h" value="Svcomp16Config" />
+    <property role="34LRSv" value="-sv-comp16" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
+  <node concept="1TIwiD" id="3lXW7OZ4fS_">
+    <property role="1pbfSe" value="1955524258" />
+    <property role="TrG5h" value="PredicateAnalysisBitpreciseConfig" />
+    <property role="34LRSv" value="-predicateAnalysis-bitprecise" />
+    <property role="3GE5qa" value="config" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
+  <node concept="1TIwiD" id="3lXW7OZ4iBu">
+    <property role="1pbfSe" value="1955535451" />
+    <property role="TrG5h" value="VERIFIER_assume" />
+    <property role="34LRSv" value="_VERIFIER_assume" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3lXW7OZ4iBv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
   </node>
 </model>
 

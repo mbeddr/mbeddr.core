@@ -13,6 +13,7 @@
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -42,6 +43,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -60,6 +62,7 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -111,6 +114,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -138,6 +144,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -404,6 +411,52 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="3LhOsKAEjDZ">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="AnalysisOrderComponent" />
+    <ref role="1XX52x" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
+    <node concept="3EZMnI" id="3LhOsKAKHPA" role="2wV5jI">
+      <node concept="2iRfu4" id="3LhOsKAKHPB" role="2iSdaV" />
+      <node concept="1HlG4h" id="3LhOsKAEnCy" role="3EZMnx">
+        <node concept="1HfYo3" id="3LhOsKAEnCz" role="1HlULh">
+          <node concept="3TQlhw" id="3LhOsKAEnC$" role="1Hhtcw">
+            <node concept="3clFbS" id="3LhOsKAEnC_" role="2VODD2">
+              <node concept="3clFbF" id="3LhOsKAEnCN" role="3cqZAp">
+                <node concept="2YIFZM" id="3LhOsKAEnCO" role="3clFbG">
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <node concept="Xl_RD" id="3LhOsKAEnCP" role="37wK5m">
+                    <property role="Xl_RC" value="%02d" />
+                  </node>
+                  <node concept="3cpWs3" id="1TS1BLOUc3q" role="37wK5m">
+                    <node concept="3cmrfG" id="1TS1BLOUc3w" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="2OqwBi" id="1TS1BLOUaaE" role="3uHU7B">
+                      <node concept="pncrf" id="1TS1BLOU9Xh" role="2Oq$k0" />
+                      <node concept="2bSWHS" id="1TS1BLOUazS" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vb9p2" id="3LhOsKAISjP" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+        <node concept="VechU" id="3LhOsKAITk0" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3LhOsKAKIVq" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="3LhOsKAMzLn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

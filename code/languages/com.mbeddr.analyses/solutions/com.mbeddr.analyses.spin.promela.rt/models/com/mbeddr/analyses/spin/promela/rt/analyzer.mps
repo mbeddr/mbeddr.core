@@ -18,7 +18,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
+    <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
   </imports>
@@ -170,10 +171,16 @@
       <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
+      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="5753587520027644759" name="body" index="3kxCCa" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -199,14 +206,28 @@
     </node>
     <node concept="2tJIrI" id="1wu5Hv6fhb$" role="jymVt" />
     <node concept="312cEg" id="1wu5Hv6fvDm" role="jymVt">
-      <property role="TrG5h" value="promelaModel" />
+      <property role="TrG5h" value="config" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="1wu5Hv6fvDn" role="1B3o_S" />
       <node concept="3Tqbb2" id="1wu5Hv6fvDp" role="1tU5fm">
-        <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+        <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
       </node>
       <node concept="NWlO9" id="7Rf0$0HT304" role="lGtFl">
-        <property role="NWlVz" value="The Promela model to be analyzed." />
+        <property role="NWlVz" value="The analyzed configuration." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3lXW7OZ7meu" role="jymVt" />
+    <node concept="312cEg" id="3lXW7OZ7mRT" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="promelaModel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3lXW7OZ7mBl" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3lXW7OZ7mNR" role="1tU5fm">
+        <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+      </node>
+      <node concept="NWlO9" id="3lXW7OZ7n4p" role="lGtFl">
+        <property role="NWlVz" value="Promela model to be analyzed" />
       </node>
     </node>
     <node concept="2tJIrI" id="1wu5Hv6fv_Y" role="jymVt" />
@@ -224,9 +245,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="1wu5Hv6foRQ" role="3clF46">
-        <property role="TrG5h" value="promelaModel" />
+        <property role="TrG5h" value="sba" />
         <node concept="3Tqbb2" id="1wu5Hv6fvzc" role="1tU5fm">
-          <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+          <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
         </node>
       </node>
       <node concept="3cqZAl" id="1wu5Hv6fnQi" role="3clF45" />
@@ -244,12 +265,29 @@
         <node concept="3clFbF" id="1wu5Hv6fvIz" role="3cqZAp">
           <node concept="37vLTI" id="1wu5Hv6fy57" role="3clFbG">
             <node concept="37vLTw" id="1wu5Hv6fycw" role="37vLTx">
-              <ref role="3cqZAo" node="1wu5Hv6foRQ" resolve="promelaModel" />
+              <ref role="3cqZAo" node="1wu5Hv6foRQ" resolve="sba" />
             </node>
             <node concept="2OqwBi" id="1wu5Hv6fvPy" role="37vLTJ">
               <node concept="Xjq3P" id="1wu5Hv6fvIx" role="2Oq$k0" />
               <node concept="2OwXpG" id="1wu5Hv6fxfS" role="2OqNvi">
-                <ref role="2Oxat5" node="1wu5Hv6fvDm" resolve="promelaModel" />
+                <ref role="2Oxat5" node="1wu5Hv6fvDm" resolve="config" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="3lXW7OZ7ngR" role="3cqZAp">
+          <node concept="3clFbF" id="3lXW7OZ7nnt" role="3kxCCa">
+            <node concept="37vLTI" id="3lXW7OZ7nxT" role="3clFbG">
+              <node concept="2OqwBi" id="3lXW7OZ7nFx" role="37vLTx">
+                <node concept="37vLTw" id="3lXW7OZ7nAE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1wu5Hv6foRQ" resolve="sba" />
+                </node>
+                <node concept="3TrEf2" id="3lXW7OZ7nQg" role="2OqNvi">
+                  <ref role="3Tt5mk" to="v326:3lXW7OZ694h" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3lXW7OZ7nnr" role="37vLTJ">
+                <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
           </node>
@@ -279,8 +317,8 @@
             <node concept="2YIFZM" id="4kcU3YrlWD0" role="33vP2m">
               <ref role="37wK5l" to="xm5f:4kcU3YrkduH" resolve="runSpin" />
               <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-              <node concept="37vLTw" id="1wu5Hv6fyyL" role="37wK5m">
-                <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="promelaModel" />
+              <node concept="37vLTw" id="3lXW7OZ7ocX" role="37wK5m">
+                <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
           </node>
@@ -305,8 +343,11 @@
                 <node concept="2YIFZM" id="HmUOIG_b6H" role="33vP2m">
                   <ref role="37wK5l" to="xm5f:HmUOIG_5a1" resolve="readAndExecuteTrail" />
                   <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-                  <node concept="37vLTw" id="HmUOIG_b6I" role="37wK5m">
-                    <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="promelaModel" />
+                  <node concept="37vLTw" id="3lXW7OZ7qeF" role="37wK5m">
+                    <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="config" />
+                  </node>
+                  <node concept="37vLTw" id="3lXW7OZ7oeu" role="37wK5m">
+                    <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
                   </node>
                 </node>
               </node>
@@ -399,8 +440,8 @@
             <node concept="2YIFZM" id="7Rf0$0HR$uk" role="33vP2m">
               <ref role="37wK5l" to="xm5f:7Rf0$0HRxRC" resolve="verificationDirectory" />
               <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-              <node concept="37vLTw" id="7Rf0$0HT1W9" role="37wK5m">
-                <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="promelaModel" />
+              <node concept="37vLTw" id="3lXW7OZ7ovu" role="37wK5m">
+                <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
           </node>
@@ -583,11 +624,11 @@
     <property role="TrG5h" value="SpinAnalyzerFactory" />
     <node concept="2tJIrI" id="1wu5Hv6f$4v" role="jymVt" />
     <node concept="312cEg" id="1wu5Hv6f$b1" role="jymVt">
-      <property role="TrG5h" value="promelaModel" />
+      <property role="TrG5h" value="analysis" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="1wu5Hv6f$b2" role="1B3o_S" />
       <node concept="3Tqbb2" id="1wu5Hv6f$b4" role="1tU5fm">
-        <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+        <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
       </node>
     </node>
     <node concept="312cEg" id="1wu5Hv6f_vf" role="jymVt">
@@ -605,12 +646,12 @@
         <node concept="3clFbF" id="1wu5Hv6f$cv" role="3cqZAp">
           <node concept="37vLTI" id="1wu5Hv6f_8G" role="3clFbG">
             <node concept="37vLTw" id="1wu5Hv6f_bK" role="37vLTx">
-              <ref role="3cqZAo" node="1wu5Hv6f$7W" resolve="promelaModel" />
+              <ref role="3cqZAo" node="1wu5Hv6f$7W" resolve="analysis" />
             </node>
             <node concept="2OqwBi" id="1wu5Hv6f$f_" role="37vLTJ">
               <node concept="Xjq3P" id="1wu5Hv6f$cu" role="2Oq$k0" />
               <node concept="2OwXpG" id="1wu5Hv6f$KY" role="2OqNvi">
-                <ref role="2Oxat5" node="1wu5Hv6f$b1" resolve="promelaModel" />
+                <ref role="2Oxat5" node="1wu5Hv6f$b1" resolve="analysis" />
               </node>
             </node>
           </node>
@@ -637,9 +678,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="1wu5Hv6f$7W" role="3clF46">
-        <property role="TrG5h" value="promelaModel" />
+        <property role="TrG5h" value="analysis" />
         <node concept="3Tqbb2" id="1wu5Hv6f$7V" role="1tU5fm">
-          <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+          <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
         </node>
       </node>
     </node>
@@ -670,8 +711,8 @@
               <node concept="37vLTw" id="1wu5Hv6fAw6" role="37wK5m">
                 <ref role="3cqZAo" node="1wu5Hv6f$4F" resolve="pi" />
               </node>
-              <node concept="37vLTw" id="1wu5Hv6fA_J" role="37wK5m">
-                <ref role="3cqZAo" node="1wu5Hv6f$b1" resolve="promelaModel" />
+              <node concept="37vLTw" id="3lXW7OZ7HKW" role="37wK5m">
+                <ref role="3cqZAo" node="1wu5Hv6f$b1" resolve="analysis" />
               </node>
             </node>
           </node>
@@ -742,7 +783,7 @@
                   <ref role="3cqZAo" node="1wu5Hv6fBpI" resolve="toolAdapter" />
                 </node>
                 <node concept="37vLTw" id="1wu5Hv6fBun" role="37wK5m">
-                  <ref role="3cqZAo" node="1wu5Hv6fB2M" resolve="promelaModel" />
+                  <ref role="3cqZAo" node="1wu5Hv6fB2M" resolve="analysis" />
                 </node>
               </node>
             </node>
@@ -785,9 +826,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="1wu5Hv6fB2M" role="3clF46">
-        <property role="TrG5h" value="promelaModel" />
+        <property role="TrG5h" value="analysis" />
         <node concept="3Tqbb2" id="1wu5Hv6fB5k" role="1tU5fm">
-          <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+          <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
         </node>
       </node>
       <node concept="3cqZAl" id="1wu5Hv6fAKK" role="3clF45" />

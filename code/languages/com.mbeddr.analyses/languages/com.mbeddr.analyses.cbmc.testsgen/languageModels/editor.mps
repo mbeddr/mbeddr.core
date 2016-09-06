@@ -10,6 +10,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
+    <import index="srwo" ref="r:37f0c2b5-25ac-4a2d-ad51-ef33c790d7e3(com.mbeddr.analyses.base.editor)" />
     <import index="iq83" ref="r:3e67bdff-5e9f-43bc-9cf3-65e492181be4(com.mbeddr.analyses.cbmc.testsgen.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -165,7 +166,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="3LhOsKAH3HB" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="3F0ifn" id="zsLvVhdFjr" role="3EZMnx">
           <property role="3F0ifm" value="Testsgen Config" />

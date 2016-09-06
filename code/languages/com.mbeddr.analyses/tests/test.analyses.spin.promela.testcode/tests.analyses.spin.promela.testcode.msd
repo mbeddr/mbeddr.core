@@ -16,6 +16,7 @@
   <languageVersions>
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" fqName="com.mbeddr.analyses.base" version="0" />
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" fqName="com.mbeddr.analyses.cbmc" version="2" />
+    <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" fqName="com.mbeddr.analyses.spin" version="0" />
     <language id="17b818a8-8533-4efe-8f51-f532146ae66b" fqName="com.mbeddr.analyses.spin.c" version="0" />
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" fqName="com.mbeddr.analyses.spin.promela" version="0" />
     <language id="4ddb29eb-11e5-46c6-a894-6b8a4c38587d" fqName="com.mbeddr.analyses.spin.promela.patterns" version="0" />

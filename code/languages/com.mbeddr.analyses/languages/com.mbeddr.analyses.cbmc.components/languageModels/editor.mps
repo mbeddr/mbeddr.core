@@ -111,7 +111,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="3LhOsKAH1zq" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="3F0ifn" id="GPHxorRo4f" role="3EZMnx">
           <property role="3F0ifm" value="Components Analysis" />
