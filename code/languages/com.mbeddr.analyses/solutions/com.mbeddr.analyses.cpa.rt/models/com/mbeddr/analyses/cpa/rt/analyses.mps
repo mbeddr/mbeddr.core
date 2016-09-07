@@ -101,6 +101,9 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -677,6 +680,30 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4qFYj$oAdWW" role="3cqZAp">
+          <node concept="2OqwBi" id="4qFYj$oAdWX" role="3clFbG">
+            <node concept="37vLTw" id="4qFYj$oAdWY" role="2Oq$k0">
+              <ref role="3cqZAo" node="20xEImmpWiA" resolve="options" />
+            </node>
+            <node concept="TSZUe" id="4qFYj$oAdWZ" role="2OqNvi">
+              <node concept="Xl_RD" id="4qFYj$oAdX0" role="25WWJ7">
+                <property role="Xl_RC" value="-spec" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4qFYj$oAdX1" role="3cqZAp">
+          <node concept="2OqwBi" id="4qFYj$oAdX2" role="3clFbG">
+            <node concept="37vLTw" id="4qFYj$oAdX3" role="2Oq$k0">
+              <ref role="3cqZAo" node="20xEImmpWiA" resolve="options" />
+            </node>
+            <node concept="TSZUe" id="4qFYj$oAdX4" role="2OqNvi">
+              <node concept="Xl_RD" id="4qFYj$oAdX5" role="25WWJ7">
+                <property role="Xl_RC" value="Assertion" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7C_8s1MK7Uz" role="3cqZAp">
           <node concept="2OqwBi" id="7C_8s1MK7U$" role="3clFbG">
             <node concept="37vLTw" id="7C_8s1MK7U_" role="2Oq$k0">
@@ -1212,7 +1239,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="4iwsNco$whz" role="3cqZAp" />
             <node concept="3cpWs6" id="4iwsNco$wh$" role="3cqZAp">
               <node concept="37vLTw" id="4iwsNco$wh_" role="3cqZAk">
                 <ref role="3cqZAo" node="4iwsNco$wfS" resolve="assertionResults" />
@@ -1231,12 +1257,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4iwsNco$whF" role="3cqZAp" />
         <node concept="3clFbH" id="4iwsNco$LfI" role="3cqZAp" />
         <node concept="3clFbJ" id="4iwsNco$whG" role="3cqZAp">
           <node concept="3clFbS" id="4iwsNco$whH" role="3clFbx">
             <node concept="SfApY" id="4iwsNco$whI" role="3cqZAp">
               <node concept="3clFbS" id="4iwsNco$whJ" role="SfCbr">
+                <node concept="3cpWs8" id="4K1D2BkDcj4" role="3cqZAp">
+                  <node concept="3cpWsn" id="4K1D2BkDcj7" role="3cpWs9">
+                    <property role="TrG5h" value="errorLine" />
+                    <node concept="17QB3L" id="4K1D2BkDcj2" role="1tU5fm" />
+                    <node concept="1rXfSq" id="4K1D2BkDp3H" role="33vP2m">
+                      <ref role="37wK5l" node="4K1D2BkDluY" resolve="findLineWithError" />
+                      <node concept="37vLTw" id="4K1D2BkDpsX" role="37wK5m">
+                        <ref role="3cqZAo" node="4iwsNco$wgx" resolve="cpaResultOutputString" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="4K1D2BkD8x0" role="3cqZAp" />
                 <node concept="3SKdUt" id="4iwsNco$whK" role="3cqZAp">
                   <node concept="3SKdUq" id="4iwsNco$whL" role="3SKWNk">
                     <property role="3SKdUp" value="location to failed property is given in this form:" />
@@ -1252,8 +1290,8 @@
                     <property role="TrG5h" value="start" />
                     <node concept="10Oyi0" id="4iwsNco$whQ" role="1tU5fm" />
                     <node concept="2OqwBi" id="4iwsNco$whR" role="33vP2m">
-                      <node concept="37vLTw" id="4iwsNco$whS" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4iwsNco$wgx" resolve="cpaResultOutputString" />
+                      <node concept="37vLTw" id="4K1D2BkDerB" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4K1D2BkDcj7" resolve="errorLine" />
                       </node>
                       <node concept="liA8E" id="4iwsNco$whT" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
@@ -1269,8 +1307,8 @@
                     <property role="TrG5h" value="end" />
                     <node concept="10Oyi0" id="4iwsNco$whX" role="1tU5fm" />
                     <node concept="2OqwBi" id="4iwsNco$whY" role="33vP2m">
-                      <node concept="37vLTw" id="4iwsNco$whZ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4iwsNco$wgx" resolve="cpaResultOutputString" />
+                      <node concept="37vLTw" id="4K1D2BkDeQt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4K1D2BkDcj7" resolve="errorLine" />
                       </node>
                       <node concept="liA8E" id="4iwsNco$wi0" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
@@ -1286,8 +1324,8 @@
                     <property role="TrG5h" value="failedProperty" />
                     <node concept="17QB3L" id="4iwsNco$wi4" role="1tU5fm" />
                     <node concept="2OqwBi" id="4iwsNco$wi5" role="33vP2m">
-                      <node concept="37vLTw" id="4iwsNco$wi6" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4iwsNco$wgx" resolve="cpaResultOutputString" />
+                      <node concept="37vLTw" id="4K1D2BkDfhj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4K1D2BkDcj7" resolve="errorLine" />
                       </node>
                       <node concept="liA8E" id="4iwsNco$wi7" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
@@ -1306,6 +1344,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="4K1D2BkD1Bd" role="3cqZAp" />
                 <node concept="3cpWs8" id="4iwsNco$wic" role="3cqZAp">
                   <node concept="3cpWsn" id="4iwsNco$wid" role="3cpWs9">
                     <property role="TrG5h" value="st" />
@@ -1577,7 +1616,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="4iwsNco$wjw" role="3cqZAp" />
               </node>
               <node concept="TDmWw" id="4iwsNco$wjx" role="TEbGg">
                 <node concept="3cpWsn" id="4iwsNco$wjy" role="TDEfY">
@@ -1666,7 +1704,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="4iwsNco$wk3" role="3cqZAp" />
             <node concept="3kxDZ6" id="4iwsNco$wk4" role="3cqZAp">
               <node concept="9aQIb" id="4iwsNco$wk5" role="3kxCCa">
                 <node concept="3clFbS" id="4iwsNco$wk6" role="9aQI4">
@@ -1683,7 +1720,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="4iwsNco$wkc" role="3cqZAp" />
                   <node concept="3cpWs8" id="4iwsNco$wkd" role="3cqZAp">
                     <node concept="3cpWsn" id="4iwsNco$wke" role="3cpWs9">
                       <property role="TrG5h" value="liftedResult" />
@@ -1789,7 +1825,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4iwsNco$wkR" role="3cqZAp" />
         <node concept="3clFbF" id="4iwsNco$wkS" role="3cqZAp">
           <node concept="37vLTw" id="4iwsNco$wkT" role="3clFbG">
             <ref role="3cqZAo" node="4iwsNco$wfS" resolve="assertionResults" />
@@ -2007,8 +2042,82 @@
           <ref role="3uigEE" to="7uhm:3x0R1LJ5Cqx" resolve="CBMCAssertResult" />
         </node>
       </node>
+      <node concept="NWlO9" id="4K1D2BkDsLs" role="lGtFl">
+        <property role="NWlVz" value="Creates a runtime error result." />
+      </node>
     </node>
     <node concept="2tJIrI" id="4iwsNco$wmh" role="jymVt" />
+    <node concept="2YIFZL" id="4K1D2BkDluY" role="jymVt">
+      <property role="TrG5h" value="findLineWithError" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4K1D2BkDlv1" role="3clF47">
+        <node concept="3cpWs8" id="4K1D2BkDm3V" role="3cqZAp">
+          <node concept="3cpWsn" id="4K1D2BkDm3W" role="3cpWs9">
+            <property role="TrG5h" value="lines" />
+            <node concept="10Q1$e" id="4K1D2BkDm3X" role="1tU5fm">
+              <node concept="17QB3L" id="4K1D2BkDo0S" role="10Q1$1" />
+            </node>
+            <node concept="2OqwBi" id="4K1D2BkDm3Z" role="33vP2m">
+              <node concept="37vLTw" id="4K1D2BkDmKS" role="2Oq$k0">
+                <ref role="3cqZAo" node="4K1D2BkDlNX" resolve="cpaResultOutputString" />
+              </node>
+              <node concept="liA8E" id="4K1D2BkDm41" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                <node concept="Xl_RD" id="4K1D2BkDm42" role="37wK5m">
+                  <property role="Xl_RC" value="\n" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="4K1D2BkDm47" role="3cqZAp">
+          <node concept="2GrKxI" id="4K1D2BkDm48" role="2Gsz3X">
+            <property role="TrG5h" value="l" />
+          </node>
+          <node concept="37vLTw" id="4K1D2BkDm49" role="2GsD0m">
+            <ref role="3cqZAo" node="4K1D2BkDm3W" resolve="lines" />
+          </node>
+          <node concept="3clFbS" id="4K1D2BkDm4a" role="2LFqv$">
+            <node concept="3clFbJ" id="4K1D2BkDm4b" role="3cqZAp">
+              <node concept="2OqwBi" id="4K1D2BkDm4c" role="3clFbw">
+                <node concept="2GrUjf" id="4K1D2BkDm4d" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="4K1D2BkDm48" resolve="l" />
+                </node>
+                <node concept="liA8E" id="4K1D2BkDm4e" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="37vLTw" id="4K1D2BkDm4O" role="37wK5m">
+                    <ref role="3cqZAo" node="4iwsNco$L1Q" resolve="MARKER_FOR_FALSE_RESULT" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4K1D2BkDm4f" role="3clFbx">
+                <node concept="3cpWs6" id="4K1D2BkDncO" role="3cqZAp">
+                  <node concept="2GrUjf" id="4K1D2BkDnmO" role="3cqZAk">
+                    <ref role="2Gs0qQ" node="4K1D2BkDm48" resolve="l" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4K1D2BkDn_U" role="3cqZAp">
+          <node concept="Xl_RD" id="4K1D2BkDnK2" role="3cqZAk">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4K1D2BkDlny" role="1B3o_S" />
+      <node concept="17QB3L" id="4K1D2BkDluW" role="3clF45" />
+      <node concept="37vLTG" id="4K1D2BkDlNX" role="3clF46">
+        <property role="TrG5h" value="cpaResultOutputString" />
+        <node concept="17QB3L" id="4K1D2BkDlNW" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="4K1D2BkDobX" role="lGtFl">
+        <property role="NWlVz" value="Finds the line containing information about the error." />
+      </node>
+    </node>
     <node concept="NWlO9" id="4iwsNco$x0z" role="lGtFl">
       <property role="NWlVz" value="Lifts the result of running the CPAchecker from command line" />
     </node>
