@@ -48,7 +48,7 @@
   <node concept="1TIwiD" id="4BmZfiOgRg6">
     <property role="1pbfSe" value="31821574" />
     <property role="TrG5h" value="AssertionsAnalysis" />
-    <property role="34LRSv" value="cpa assertions analysis" />
+    <property role="34LRSv" value="Assertions Analysis (CPA)" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
     <node concept="PrWs8" id="3OLe0nF7m8D" role="PzmwI">
       <ref role="PrY4T" node="3OLe0nF673L" resolve="ICPAAnalysisConfig" />
