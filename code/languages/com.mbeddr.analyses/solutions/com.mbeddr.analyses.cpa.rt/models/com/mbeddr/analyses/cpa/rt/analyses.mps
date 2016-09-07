@@ -67,6 +67,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
@@ -1141,8 +1144,13 @@
                 <node concept="2ShNRf" id="4iwsNco$wgJ" role="33vP2m">
                   <node concept="1pGfFk" id="4iwsNco$wgK" role="2ShVmc">
                     <ref role="37wK5l" to="rbq9:mb65_hohE1" resolve="CBMCRawResult" />
-                    <node concept="3cmrfG" id="4iwsNco$wgL" role="37wK5m">
-                      <property role="3cmrfH" value="0" />
+                    <node concept="2OqwBi" id="3WNsrgedJpd" role="37wK5m">
+                      <node concept="37vLTw" id="3WNsrgedJpe" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4iwsNco$wl6" resolve="cpaResult" />
+                      </node>
+                      <node concept="2OwXpG" id="3WNsrgedJpf" role="2OqNvi">
+                        <ref role="2Oxat5" to="8e9v:4CtHBqNlszv" resolve="delay" />
+                      </node>
                     </node>
                     <node concept="Rm8GO" id="4K1D2BkDCoB" role="37wK5m">
                       <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
@@ -1583,8 +1591,13 @@
                           <node concept="2ShNRf" id="4iwsNco$wj4" role="33vP2m">
                             <node concept="1pGfFk" id="4iwsNco$wj5" role="2ShVmc">
                               <ref role="37wK5l" to="rbq9:mb65_hohE1" resolve="CBMCRawResult" />
-                              <node concept="3cmrfG" id="4iwsNco$wj6" role="37wK5m">
-                                <property role="3cmrfH" value="0" />
+                              <node concept="2OqwBi" id="3WNsrgedIas" role="37wK5m">
+                                <node concept="37vLTw" id="3WNsrgedI7w" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4iwsNco$wl6" resolve="cpaResult" />
+                                </node>
+                                <node concept="2OwXpG" id="3WNsrgedIn0" role="2OqNvi">
+                                  <ref role="2Oxat5" to="8e9v:4CtHBqNlszv" resolve="delay" />
+                                </node>
                               </node>
                               <node concept="Rm8GO" id="4iwsNco$wj7" role="37wK5m">
                                 <ref role="Rm8GQ" to="rbq9:6oOIJNsBVXJ" resolve="PROPERTY_FAILS" />
