@@ -219,5 +219,17 @@
     <property role="34LRSv" value="font-family" />
     <ref role="1TJDcQ" node="43ViAfTtx6N" resolve="StringStyle" />
   </node>
+  <node concept="1TIwiD" id="UMPeQjocXB">
+    <property role="1pbfSe" value="1575771052" />
+    <property role="TrG5h" value="GridLayoutColumnSpanStyle" />
+    <property role="34LRSv" value="grid-layout-column-span" />
+    <ref role="1TJDcQ" node="2nutuZsJ_4q" resolve="IntegerStyle" />
+  </node>
+  <node concept="1TIwiD" id="UMPeQjod7U">
+    <property role="1pbfSe" value="1575770393" />
+    <property role="TrG5h" value="GridLayoutRowSpanStyle" />
+    <property role="34LRSv" value="grid-layout-row-span" />
+    <ref role="1TJDcQ" node="2nutuZsJ_4q" resolve="IntegerStyle" />
+  </node>
 </model>
 

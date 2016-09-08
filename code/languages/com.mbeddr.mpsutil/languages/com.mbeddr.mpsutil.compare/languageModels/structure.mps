@@ -132,7 +132,7 @@
   </node>
   <node concept="1TIwiD" id="1_DWnhqnL9Y">
     <property role="TrG5h" value="AreEqualExpression" />
-    <property role="34LRSv" value="areEqual" />
+    <property role="34LRSv" value=":isEqualTo:" />
     <property role="R4oN_" value="compares two nodes" />
     <property role="1pbfSe" value="1942553586" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />

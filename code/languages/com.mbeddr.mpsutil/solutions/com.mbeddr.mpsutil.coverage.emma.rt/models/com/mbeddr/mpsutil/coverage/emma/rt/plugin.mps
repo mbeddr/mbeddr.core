@@ -135,8 +135,8 @@
       <node concept="3clFbS" id="4XCJ8CcQ71Y" role="2VODD2">
         <node concept="3clFbF" id="7UjC_TCLWSD" role="3cqZAp">
           <node concept="2YIFZM" id="7UjC_TCLXa9" role="3clFbG">
+            <ref role="37wK5l" to="ft5u:7UjC_TCLTU0" resolve="readCoverageInfoFromFilesAndLift" />
             <ref role="1Pybhc" to="ft5u:1OuY31lb1yb" resolve="CoverageLifter" />
-            <ref role="37wK5l" to="ft5u:7UjC_TCLTU0" resolve="doLift" />
             <node concept="2OqwBi" id="laok7UPARl" role="37wK5m">
               <node concept="2OqwBi" id="laok7UPAKe" role="2Oq$k0">
                 <node concept="2WthIp" id="laok7UPAKh" role="2Oq$k0" />

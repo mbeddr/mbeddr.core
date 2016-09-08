@@ -83,6 +83,9 @@
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -1015,6 +1018,15 @@
             </node>
           </node>
           <node concept="3Tm1VV" id="GsqojYdMqA" role="1B3o_S" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4aQvnnixSM6" role="3acgRq">
+      <ref role="30HIoZ" to="3673:4aQvnnixpDq" resolve="DelegateToNextInterpreterExpression" />
+      <node concept="gft3U" id="4aQvnnixV5P" role="1lVwrX">
+        <node concept="10M0yZ" id="4aQvnnixV5X" role="gfFT$">
+          <ref role="1PxDUh" to="2ahs:4X7QcQ36WUs" resolve="InterpreterBase" />
+          <ref role="3cqZAo" to="2ahs:4aQvnniwH99" resolve="__NEXT__INTERPRETER__" />
         </node>
       </node>
     </node>
