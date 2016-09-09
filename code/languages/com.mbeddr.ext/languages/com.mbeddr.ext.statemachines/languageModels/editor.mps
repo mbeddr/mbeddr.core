@@ -5825,7 +5825,7 @@
       </node>
       <node concept="2ShNRf" id="7yI0Jxg3lkB" role="33vP2m">
         <node concept="1pGfFk" id="7yI0Jxg3FJi" role="2ShVmc">
-          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(float,float,float,float)" resolve="Color" />
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
           <node concept="3cmrfG" id="7yI0Jxg3FKR" role="37wK5m">
             <property role="3cmrfH" value="00" />
           </node>
