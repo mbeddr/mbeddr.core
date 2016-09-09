@@ -5225,6 +5225,7 @@
   <node concept="24kQdi" id="1gSgWEgiGux">
     <ref role="1XX52x" to="v7ag:5JgQ5vqXSDQ" resolve="AdapterInstancePortRef" />
     <node concept="2ZMJ7s" id="1gSgWEgiGuA" role="2wV5jI">
+      <ref role="1k5W1q" node="3kzGBV3tWes" resolve="Component" />
       <node concept="3C0lA2" id="1gSgWEgteND" role="3F10Kt">
         <property role="3DY1wP" value="DASHED" />
       </node>
@@ -5233,6 +5234,16 @@
       </node>
       <node concept="3C0NmK" id="1gSgWEg_S5f" role="3F10Kt">
         <property role="Vb096" value="darkGray" />
+        <node concept="3ZlJ5R" id="3wsTi3T9euJ" role="VblUZ">
+          <node concept="3clFbS" id="3wsTi3T9euK" role="2VODD2">
+            <node concept="3clFbF" id="3wsTi3T9evM" role="3cqZAp">
+              <node concept="10M0yZ" id="3wsTi3T9evL" role="3clFbG">
+                <ref role="1PxDUh" node="4IDnpfceHXS" resolve="DiagramColors" />
+                <ref role="3cqZAo" node="2Pe$B52qeet" resolve="COMPONENT_EDGES" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1PNbMa" id="7sHDEc2WTy6" role="1PN8q7">
         <node concept="3R4teh" id="7sHDEc2WUIq" role="1PNbKM">
