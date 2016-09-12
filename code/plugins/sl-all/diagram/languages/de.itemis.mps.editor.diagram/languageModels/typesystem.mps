@@ -118,6 +118,7 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1144101597970" name="jetbrains.mps.lang.smodel.structure.OperationParm_Root" flags="ng" index="1xLf8o" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -484,6 +485,7 @@
                           <ref role="cht4Q" to="tpc2:fIwURLg" resolve="BaseEditorComponent" />
                         </node>
                       </node>
+                      <node concept="1xLf8o" id="o1roXB_34h" role="1xVPHs" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="7sHDEc2Gk7R" role="2OqNvi">
