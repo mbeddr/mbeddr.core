@@ -525,8 +525,13 @@
                   <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="1wu5Hv6fGv4" role="2XxRq1">
-                <property role="Xl_RC" value="" />
+              <node concept="2OqwBi" id="Y_s0Wj_q1b" role="2XxRq1">
+                <node concept="37vLTw" id="Y_s0Wj_pVT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
+                </node>
+                <node concept="2OwXpG" id="Y_s0Wj_q7b" role="2OqNvi">
+                  <ref role="2Oxat5" to="5do7:Y_s0Wj_nv9" resolve="spinRawError" />
+                </node>
               </node>
             </node>
           </node>
