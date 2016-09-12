@@ -835,7 +835,7 @@
             <node concept="liA8E" id="Y_s0WjAbL6" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
               <node concept="Xl_RD" id="Y_s0WjAbL7" role="37wK5m">
-                <property role="Xl_RC" value="pan:1: assertion violated (arr[2] != 2)" />
+                <property role="Xl_RC" value="pan:1: assertion violated (!(arr[2] == 2 &amp;&amp; arr[1] == 1))" />
               </node>
             </node>
           </node>
