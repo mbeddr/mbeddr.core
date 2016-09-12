@@ -1105,8 +1105,8 @@
                                           <node concept="2YIFZM" id="5Gboyv9DXBB" role="2pJxcZ">
                                             <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
                                             <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                            <node concept="37vLTw" id="5Gboyv9DXKR" role="37wK5m">
-                                              <ref role="3cqZAo" node="5Gboyv9DELV" resolve="size" />
+                                            <node concept="37vLTw" id="Rd$2EC6fnN" role="37wK5m">
+                                              <ref role="3cqZAo" node="5Gboyv9DNTp" resolve="idx" />
                                             </node>
                                           </node>
                                         </node>
