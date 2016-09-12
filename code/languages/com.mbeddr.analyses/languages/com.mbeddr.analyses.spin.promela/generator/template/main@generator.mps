@@ -414,7 +414,7 @@
       <property role="3O_Fa2" value="clean" />
       <node concept="3O_FaX" id="2bthWyzEAz9" role="3O_FaS">
         <node concept="3G69iQ" id="2bthWyzEAza" role="3G69ia">
-          <property role="3G69iL" value="rm -rf $(ODIR)" />
+          <property role="3G69iL" value="rm *.trail; rm -rf $(ODIR)" />
         </node>
       </node>
     </node>
