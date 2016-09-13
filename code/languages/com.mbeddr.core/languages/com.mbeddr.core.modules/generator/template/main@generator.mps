@@ -25,9 +25,8 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" />
-    <import index="yi43" ref="r:1e8a195e-9746-45e6-a347-a6bdffae3936(com.mbeddr.core.util.behavior)" />
-    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
-    <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" implicit="true" />
+    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
+    <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -173,6 +172,10 @@
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1311078761699563727" name="jetbrains.mps.lang.generator.structure.InsertMacro_CreateNodeQuery" flags="in" index="3_AbJw" />
+      <concept id="1311078761699563726" name="jetbrains.mps.lang.generator.structure.InsertMacro" flags="ln" index="3_AbJx">
+        <child id="1311078761699602381" name="createNodeQuery" index="3_A0Ny" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -390,6 +393,32 @@
                     </node>
                     <node concept="3TrcHB" id="izC6J7mMie" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:hqLvdgl" resolve="resolveInfo" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5mfYC0nfOn2" role="3acgRq">
+      <ref role="30HIoZ" to="x27k:3wX8xloeatw" resolve="ModuleContentRefWord" />
+      <node concept="gft3U" id="5mfYC0nfOn6" role="1lVwrX">
+        <node concept="19SUe$" id="5mfYC0nfOnc" role="gfFT$">
+          <property role="19SUeA" value="blah" />
+          <node concept="3_AbJx" id="5mfYC0nfOoN" role="lGtFl">
+            <node concept="3_AbJw" id="5mfYC0nfOoP" role="3_A0Ny">
+              <node concept="3clFbS" id="5mfYC0nfOoR" role="2VODD2">
+                <node concept="3clFbF" id="5mfYC0nfVHJ" role="3cqZAp">
+                  <node concept="2YIFZM" id="5mfYC0nfVOP" role="3clFbG">
+                    <ref role="37wK5l" to="tbr6:5mf_X_L9Y2C" resolve="createSingleWordFromText" />
+                    <ref role="1Pybhc" to="tbr6:5mf_X_L9Y2A" resolve="RichTextUtil" />
+                    <node concept="2OqwBi" id="5mfYC0nfW4w" role="37wK5m">
+                      <node concept="30H73N" id="5mfYC0nfVTr" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="5mfYC0nfWjt" role="2OqNvi">
+                        <ref role="37wK5l" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />
+                      </node>
                     </node>
                   </node>
                 </node>
