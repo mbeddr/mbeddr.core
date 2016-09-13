@@ -2,7 +2,7 @@
 <model ref="r:e9357dbe-2605-437a-b005-0301667599a9(com.mbeddr.analyses.spin.c.patterns.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -55,7 +55,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="45nq91X0EX0" role="3EZMnx">
-        <ref role="1NtTu8" to="llb3:45nq91X0EWs" />
+        <ref role="1NtTu8" to="llb3:45nq91X0EWs" resolve="exp" />
       </node>
       <node concept="3F0ifn" id="5Gboyv9EA5S" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -64,7 +64,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5Gboyv9EA66" role="3EZMnx">
-        <ref role="1NtTu8" to="llb3:45nq91X0F6F" />
+        <ref role="1NtTu8" to="llb3:45nq91X0F6F" resolve="lower" />
       </node>
       <node concept="3F0ifn" id="5Gboyv9EA6m" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -73,7 +73,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5Gboyv9EA6C" role="3EZMnx">
-        <ref role="1NtTu8" to="llb3:45nq91X0F6I" />
+        <ref role="1NtTu8" to="llb3:45nq91X0F6I" resolve="upper" />
       </node>
       <node concept="3F0ifn" id="45nq91X0EXa" role="3EZMnx">
         <property role="3F0ifm" value=")" />
