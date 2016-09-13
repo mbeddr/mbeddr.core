@@ -822,5 +822,96 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="Y_s0WjAaMe">
+    <property role="TrG5h" value="C_suv9_nondet_assign" />
+    <node concept="1LZb2c" id="Y_s0WjAaMf" role="1SL9yI">
+      <property role="TrG5h" value="test1" />
+      <node concept="3cqZAl" id="Y_s0WjAaMg" role="3clF45" />
+      <node concept="3clFbS" id="Y_s0WjAaMh" role="3clF47">
+        <node concept="3cpWs8" id="Y_s0WjAaMi" role="3cqZAp">
+          <node concept="3cpWsn" id="Y_s0WjAaMj" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="Y_s0WjAaMk" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+            </node>
+            <node concept="2YIFZM" id="Y_s0WjAaMl" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="BaHAS" id="Y_s0WjAaMm" role="37wK5m">
+                <property role="BaHAW" value="c_suv9_nondet_assign" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="Y_s0WjAaMn" role="37wK5m">
+                <property role="Xl_RC" value="suv9_int_nondet_assign_harness" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="Y_s0WjAaMo" role="3cqZAp" />
+        <node concept="3vwNmj" id="Y_s0WjAaME" role="3cqZAp">
+          <node concept="2OqwBi" id="Y_s0WjAaMF" role="3vwVQn">
+            <node concept="2OqwBi" id="Y_s0WjAaMG" role="2Oq$k0">
+              <node concept="37vLTw" id="Y_s0WjAaMH" role="2Oq$k0">
+                <ref role="3cqZAo" node="Y_s0WjAaMj" resolve="res" />
+              </node>
+              <node concept="2OwXpG" id="Y_s0WjAaMI" role="2OqNvi">
+                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Y_s0WjAaMJ" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="Y_s0WjAaMK" role="37wK5m">
+                <property role="Xl_RC" value="pan:1: assertion violated (cnt != 2)" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="Y_s0WjAbKA" role="1SL9yI">
+      <property role="TrG5h" value="test2" />
+      <node concept="3cqZAl" id="Y_s0WjAbKB" role="3clF45" />
+      <node concept="3clFbS" id="Y_s0WjAbKC" role="3clF47">
+        <node concept="3cpWs8" id="Y_s0WjAbKD" role="3cqZAp">
+          <node concept="3cpWsn" id="Y_s0WjAbKE" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="Y_s0WjAbKF" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+            </node>
+            <node concept="2YIFZM" id="Y_s0WjAbKG" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="BaHAS" id="Y_s0WjAbKH" role="37wK5m">
+                <property role="BaHAW" value="c_suv9_nondet_assign" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="Y_s0WjAbKI" role="37wK5m">
+                <property role="Xl_RC" value="suv9_array_nondet_assign_harness" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="Y_s0WjAbKJ" role="3cqZAp" />
+        <node concept="3vwNmj" id="Y_s0WjAbL1" role="3cqZAp">
+          <node concept="2OqwBi" id="Y_s0WjAbL2" role="3vwVQn">
+            <node concept="2OqwBi" id="Y_s0WjAbL3" role="2Oq$k0">
+              <node concept="37vLTw" id="Y_s0WjAbL4" role="2Oq$k0">
+                <ref role="3cqZAo" node="Y_s0WjAbKE" resolve="res" />
+              </node>
+              <node concept="2OwXpG" id="Y_s0WjAbL5" role="2OqNvi">
+                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Y_s0WjAbL6" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="Y_s0WjAbL7" role="37wK5m">
+                <property role="Xl_RC" value="pan:1: assertion violated (!(arr[2] == 2 &amp;&amp; arr[1] == 1))" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

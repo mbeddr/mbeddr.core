@@ -22,8 +22,8 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
+    <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
+    <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -46,17 +46,17 @@
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="39al" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/r:5bc020f2-590a-4818-ae68-fa483b92486f(com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.serializer)" />
+    <import index="39al" ref="r:5bc020f2-590a-4818-ae68-fa483b92486f(com.mbeddr.mpsutil.serializer.xml.serializer)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="hbme" ref="1338ba73-5059-479b-a929-de86597a62b8/java:edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/)" />
-    <import index="ln2k" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)" />
-    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
-    <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
+    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module()" />
+    <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model()" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
-    <import index="nvd4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.repository(MPS.OpenAPI/)" />
-    <import index="eh3q" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.text(MPS.Editor/)" />
+    <import index="nvd4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.repository()" />
+    <import index="eh3q" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.text()" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" />
@@ -252,7 +252,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -488,6 +488,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -1175,16 +1176,20 @@
             <node concept="1z4cxt" id="3R$6B6bL1DT" role="2OqNvi">
               <node concept="1bVj0M" id="3R$6B6bL1DU" role="23t8la">
                 <node concept="3clFbS" id="3R$6B6bL1DV" role="1bW5cS">
-                  <node concept="3clFbF" id="3R$6B6bL1DY" role="3cqZAp">
-                    <node concept="3clFbC" id="3R$6B6bL1E8" role="3clFbG">
-                      <node concept="3cpWs2" id="3R$6B6bL1Ec" role="3uHU7w">
-                        <ref role="3cqZAo" node="3R$6B6bL1DG" resolve="concept" />
+                  <node concept="3clFbF" id="_ayoHGBWdP" role="3cqZAp">
+                    <node concept="2OqwBi" id="_ayoHGBWhF" role="3clFbG">
+                      <node concept="37vLTw" id="_ayoHGBWdN" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3R$6B6bL1DW" resolve="it" />
                       </node>
-                      <node concept="2OqwBi" id="3R$6B6bL1E0" role="3uHU7B">
-                        <node concept="3cpWs2" id="3R$6B6bL1DZ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3R$6B6bL1DW" resolve="it" />
+                      <node concept="1mIQ4w" id="_ayoHGBWte" role="2OqNvi">
+                        <node concept="25Kdxt" id="_ayoHGBWx4" role="cj9EA">
+                          <node concept="2OqwBi" id="_ayoHGBWDW" role="25KhWn">
+                            <node concept="37vLTw" id="_ayoHGBW$X" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3R$6B6bL1DG" resolve="concept" />
+                            </node>
+                            <node concept="1rGIog" id="_ayoHGBWKI" role="2OqNvi" />
+                          </node>
                         </node>
-                        <node concept="3NT_Vc" id="3R$6B6bL1E4" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -16876,6 +16881,15 @@
         </node>
       </node>
       <node concept="P$JXv" id="4ISByPoXtuh" role="lGtFl">
+        <node concept="x79VA" id="4ISByPoXtun" role="3nqlJM">
+          <property role="x79VB" value="the set of offending elements" />
+        </node>
+        <node concept="TUZQ0" id="4ISByPoXtuk" role="3nqlJM">
+          <property role="TUZQ4" value="the dependency" />
+          <node concept="zr_55" id="4ISByPoXtum" role="zr_5Q">
+            <ref role="zr_51" node="17fjvcLF88O" resolve="dependency" />
+          </node>
+        </node>
         <node concept="TZ5HA" id="4ISByPoXtui" role="TZ5H$">
           <node concept="1dT_AC" id="4ISByPoXtuj" role="1dT_Ay">
             <property role="1dT_AB" value="Traces back a dependency of this IDetectCycle element to the node " />
@@ -16894,15 +16908,6 @@
         <node concept="TZ5HA" id="4ISByPoXtuZ" role="TZ5H$">
           <node concept="1dT_AC" id="4ISByPoXtv0" role="1dT_Ay">
             <property role="1dT_AB" value="offending elements, thus the method returns a set of nodes." />
-          </node>
-        </node>
-        <node concept="x79VA" id="4ISByPoXtun" role="3nqlJM">
-          <property role="x79VB" value="the set of offending elements" />
-        </node>
-        <node concept="TUZQ0" id="4ISByPoXtuk" role="3nqlJM">
-          <property role="TUZQ4" value="the dependency" />
-          <node concept="zr_55" id="4ISByPoXtum" role="zr_5Q">
-            <ref role="zr_51" node="17fjvcLF88O" resolve="dependency" />
           </node>
         </node>
       </node>
@@ -16924,6 +16929,9 @@
     <node concept="13i0hz" id="59HbAIOYtvQ" role="13h7CS">
       <property role="TrG5h" value="isInvolvedInCycle" />
       <node concept="P$JXv" id="4ISByPoWtNA" role="lGtFl">
+        <node concept="x79VA" id="4ISByPoWtND" role="3nqlJM">
+          <property role="x79VB" value="true if cycle is present, false otherwise" />
+        </node>
         <node concept="TZ5HA" id="4ISByPoWtNB" role="TZ5H$">
           <node concept="1dT_AC" id="4ISByPoWtNC" role="1dT_Ay">
             <property role="1dT_AB" value="Returns true if this IDetectCycle node is involved in a dependency cycle. " />
@@ -16933,9 +16941,6 @@
           <node concept="1dT_AC" id="4ISByPoWtPZ" role="1dT_Ay">
             <property role="1dT_AB" value="Returns false if such a cycle does not exist." />
           </node>
-        </node>
-        <node concept="x79VA" id="4ISByPoWtND" role="3nqlJM">
-          <property role="x79VB" value="true if cycle is present, false otherwise" />
         </node>
       </node>
       <node concept="3Tm1VV" id="59HbAIOYtvR" role="1B3o_S" />
@@ -17156,6 +17161,9 @@
         </node>
       </node>
       <node concept="P$JXv" id="17fjvcLCGdk" role="lGtFl">
+        <node concept="x79VA" id="17fjvcLCGdn" role="3nqlJM">
+          <property role="x79VB" value="the dependency graph" />
+        </node>
         <node concept="TZ5HA" id="17fjvcLCGdl" role="TZ5H$">
           <node concept="1dT_AC" id="17fjvcLCGdm" role="1dT_Ay">
             <property role="1dT_AB" value="Creates the dependency graph starting from this IDetectCycle node. " />
@@ -17170,9 +17178,6 @@
           <node concept="1dT_AC" id="17fjvcLCJth" role="1dT_Ay">
             <property role="1dT_AB" value="in the graph pointing from A to B. " />
           </node>
-        </node>
-        <node concept="x79VA" id="17fjvcLCGdn" role="3nqlJM">
-          <property role="x79VB" value="the dependency graph" />
         </node>
       </node>
     </node>
@@ -17312,6 +17317,9 @@
         </node>
       </node>
       <node concept="P$JXv" id="17fjvcLFURG" role="lGtFl">
+        <node concept="x79VA" id="17fjvcLFURJ" role="3nqlJM">
+          <property role="x79VB" value="the set of cycle elements or null otherwise" />
+        </node>
         <node concept="TZ5HA" id="17fjvcLFURH" role="TZ5H$">
           <node concept="1dT_AC" id="17fjvcLFURI" role="1dT_Ay">
             <property role="1dT_AB" value="Returns all elements of the dependency cycle that this element is involved in." />
@@ -17321,9 +17329,6 @@
           <node concept="1dT_AC" id="4ISByPoWtZG" role="1dT_Ay">
             <property role="1dT_AB" value="If such a cycle does not exist, null is returned." />
           </node>
-        </node>
-        <node concept="x79VA" id="17fjvcLFURJ" role="3nqlJM">
-          <property role="x79VB" value="the set of cycle elements or null otherwise" />
         </node>
       </node>
       <node concept="2AHcQZ" id="4ISByPp61Xq" role="2AJF6D">
@@ -22939,13 +22944,13 @@
         </node>
       </node>
       <node concept="P$JXv" id="7okx9D2T6GN" role="lGtFl">
+        <node concept="x79VA" id="7okx9D2T6GQ" role="3nqlJM">
+          <property role="x79VB" value="the proxy node" />
+        </node>
         <node concept="TZ5HA" id="7okx9D2T6GO" role="TZ5H$">
           <node concept="1dT_AC" id="7okx9D2T6GP" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the node (if any) which should be used to look up generic units. " />
           </node>
-        </node>
-        <node concept="x79VA" id="7okx9D2T6GQ" role="3nqlJM">
-          <property role="x79VB" value="the proxy node" />
         </node>
       </node>
     </node>

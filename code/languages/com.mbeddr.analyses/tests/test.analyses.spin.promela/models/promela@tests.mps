@@ -2,11 +2,10 @@
 <model ref="r:240d3229-bb70-4ba5-bcb1-799faf017402(promela@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
@@ -60,7 +59,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -343,6 +342,78 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="Rd$2EC6oxD">
+    <property role="TrG5h" value="MultipleChoiceTest" />
+    <node concept="1LZb2c" id="Rd$2EC6oxE" role="1SL9yI">
+      <property role="TrG5h" value="smoke" />
+      <node concept="3cqZAl" id="Rd$2EC6oxF" role="3clF45" />
+      <node concept="3clFbS" id="Rd$2EC6oxG" role="3clF47">
+        <node concept="3cpWs8" id="Rd$2EC6oxH" role="3cqZAp">
+          <node concept="3cpWsn" id="Rd$2EC6oxI" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="Rd$2EC6oxJ" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+            </node>
+            <node concept="2YIFZM" id="Rd$2EC6oxK" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="BaHAS" id="Rd$2EC6oxL" role="37wK5m">
+                <property role="BaHAW" value="promela" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="Rd$2EC6oxM" role="37wK5m">
+                <property role="Xl_RC" value="multiple_choice_test" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="Rd$2EC6oxN" role="3cqZAp" />
+        <node concept="3clFbF" id="Rd$2EC6oxO" role="3cqZAp">
+          <node concept="2OqwBi" id="Rd$2EC6oxP" role="3clFbG">
+            <node concept="10M0yZ" id="Rd$2EC6oxQ" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="Rd$2EC6oxR" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="Rd$2EC6oxS" role="37wK5m">
+                <node concept="Xl_RD" id="Rd$2EC6oxT" role="3uHU7B">
+                  <property role="Xl_RC" value="Output: \n\n" />
+                </node>
+                <node concept="2OqwBi" id="Rd$2EC6oxU" role="3uHU7w">
+                  <node concept="37vLTw" id="Rd$2EC6oxV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
+                  </node>
+                  <node concept="2OwXpG" id="Rd$2EC6oxW" role="2OqNvi">
+                    <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="Rd$2EC6oxX" role="3cqZAp" />
+        <node concept="3vwNmj" id="Rd$2EC6oxY" role="3cqZAp">
+          <node concept="2OqwBi" id="Rd$2EC6oxZ" role="3vwVQn">
+            <node concept="2OqwBi" id="Rd$2EC6oy0" role="2Oq$k0">
+              <node concept="37vLTw" id="Rd$2EC6oy1" role="2Oq$k0">
+                <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
+              </node>
+              <node concept="2OwXpG" id="Rd$2EC6oy2" role="2OqNvi">
+                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Rd$2EC6oy3" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="Rd$2EC6oy4" role="37wK5m">
+                <property role="Xl_RC" value="assertion violated ((v1!=3)&amp;&amp;(v2!=4))" />
               </node>
             </node>
           </node>
