@@ -203,6 +203,11 @@
       <property role="20kJfa" value="annotationExternal" />
       <ref role="20lvS9" node="6OhZPz3zgIr" resolve="Function_AnnotationExternal" />
     </node>
+    <node concept="1TJgyj" id="7tKD69sB2MP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dropHandler" />
+      <ref role="20lvS9" node="7tKD69sB2Fv" resolve="DropHandler" />
+    </node>
     <node concept="1TJgyj" id="4KKQOHJ7LVv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="getLabel" />
@@ -889,6 +894,11 @@
       <property role="20kJfa" value="allowScaling" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7tKD69sBkpf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dropHandler" />
+      <ref role="20lvS9" node="7tKD69sB2Fv" resolve="DropHandler" />
+    </node>
     <node concept="PrWs8" id="7L$rKAV50Iu" role="PzmwI">
       <ref role="PrY4T" node="2J9gLgxqr14" resolve="IDiagramContent" />
     </node>
@@ -1479,6 +1489,11 @@
       <property role="20kJfa" value="curved" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7tKD69sBN6G" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dropHandler" />
+      <ref role="20lvS9" node="7tKD69sB2Fv" resolve="DropHandler" />
+    </node>
     <node concept="PrWs8" id="6clvLV1rj2a" role="PrDN$">
       <ref role="PrY4T" node="6clvLV1q6UE" resolve="IInlineEditorComponentContainer" />
     </node>
@@ -1858,6 +1873,39 @@
     <property role="34LRSv" value="annotationNode" />
     <property role="1pbfSe" value="815730886" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7tKD69sA99S">
+    <property role="1pbfSe" value="737593638" />
+    <property role="TrG5h" value="Function_canDrop" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7tKD69sA9c3">
+    <property role="1pbfSe" value="737593499" />
+    <property role="TrG5h" value="Parameter_dropData" />
+    <property role="34LRSv" value="data" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7tKD69sAa9e">
+    <property role="1pbfSe" value="737589584" />
+    <property role="TrG5h" value="Function_drop" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7tKD69sB2Fv">
+    <property role="1pbfSe" value="737358015" />
+    <property role="TrG5h" value="DropHandler" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7tKD69sB2HE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="canDrop" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7tKD69sA99S" resolve="Function_canDrop" />
+    </node>
+    <node concept="1TJgyj" id="7tKD69sB2HI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="drop" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7tKD69sAa9e" resolve="Function_drop" />
+    </node>
   </node>
 </model>
 
