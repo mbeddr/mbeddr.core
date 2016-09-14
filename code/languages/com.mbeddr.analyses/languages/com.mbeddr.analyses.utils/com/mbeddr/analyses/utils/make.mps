@@ -1419,14 +1419,7 @@
         <node concept="3clFbS" id="7LK0SI3DrR" role="3clF47">
           <node concept="3clFbF" id="7LK0SI3E4u" role="3cqZAp">
             <node concept="1rXfSq" id="7LK0SI3E4t" role="3clFbG">
-              <ref role="37wK5l" node="7LK0SI3DrF" resolve="get" />
-              <node concept="3cmrfG" id="4RbsEloWPLi" role="37wK5m">
-                <property role="3cmrfH" value="30" />
-              </node>
-              <node concept="Rm8GO" id="4RbsEloWPLj" role="37wK5m">
-                <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
-                <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
-              </node>
+              <ref role="37wK5l" node="7LK0SI3Drz" resolve="get" />
             </node>
           </node>
         </node>
