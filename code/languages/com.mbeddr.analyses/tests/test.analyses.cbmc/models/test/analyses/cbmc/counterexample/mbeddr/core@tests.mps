@@ -37,6 +37,9 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -6090,41 +6093,45 @@
           </node>
         </node>
         <node concept="3kxDZ6" id="5EwdfGVlLOV" role="3cqZAp">
-          <node concept="3clFbF" id="5EwdfGVlLn$" role="3kxCCa">
-            <node concept="37vLTI" id="5EwdfGVlLnA" role="3clFbG">
-              <node concept="NRdvd" id="5EwdfGVlKWg" role="37vLTx">
-                <ref role="1Pybhc" to="lom1:6xym8k6eHPR" resolve="TraceInfoUtil" />
-                <ref role="37wK5l" to="lom1:63FOlSvXCpm" resolve="getAllTraceableNodes" />
-                <node concept="37vLTw" id="5EwdfGVlKWh" role="37wK5m">
-                  <ref role="3cqZAo" node="lMaDrUqQYb" resolve="className" />
-                </node>
-                <node concept="Xl_RD" id="5EwdfGVlKWi" role="37wK5m">
-                  <property role="Xl_RC" value="smoke.c" />
-                </node>
-                <node concept="3cmrfG" id="5EwdfGVlKWj" role="37wK5m">
-                  <property role="3cmrfH" value="12" />
+          <node concept="9aQIb" id="5EwdfGVnkre" role="3kxCCa">
+            <node concept="3clFbS" id="5EwdfGVnkrf" role="9aQI4">
+              <node concept="3clFbF" id="5EwdfGVlLn$" role="3cqZAp">
+                <node concept="37vLTI" id="5EwdfGVlLnA" role="3clFbG">
+                  <node concept="NRdvd" id="5EwdfGVlKWg" role="37vLTx">
+                    <ref role="37wK5l" to="lom1:63FOlSvXCpm" resolve="getAllTraceableNodes" />
+                    <ref role="1Pybhc" to="lom1:6xym8k6eHPR" resolve="TraceInfoUtil" />
+                    <node concept="37vLTw" id="5EwdfGVlKWh" role="37wK5m">
+                      <ref role="3cqZAo" node="lMaDrUqQYb" resolve="className" />
+                    </node>
+                    <node concept="Xl_RD" id="5EwdfGVlKWi" role="37wK5m">
+                      <property role="Xl_RC" value="smoke.c" />
+                    </node>
+                    <node concept="3cmrfG" id="5EwdfGVlKWj" role="37wK5m">
+                      <property role="3cmrfH" value="12" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5EwdfGVlLnE" role="37vLTJ">
+                    <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
+                  </node>
                 </node>
               </node>
-              <node concept="37vLTw" id="5EwdfGVlLnE" role="37vLTJ">
-                <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="lMaDrUqS9h" role="3cqZAp">
-          <node concept="2OqwBi" id="lMaDrUqS9e" role="3clFbG">
-            <node concept="10M0yZ" id="lMaDrUqS9f" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="lMaDrUqS9g" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="lMaDrUscP2" role="37wK5m">
-                <node concept="Xl_RD" id="lMaDrUscRa" role="3uHU7B">
-                  <property role="Xl_RC" value="allNodes: " />
-                </node>
-                <node concept="37vLTw" id="lMaDrUqSeu" role="3uHU7w">
-                  <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
+              <node concept="3clFbF" id="lMaDrUqS9h" role="3cqZAp">
+                <node concept="2OqwBi" id="lMaDrUqS9e" role="3clFbG">
+                  <node concept="10M0yZ" id="lMaDrUqS9f" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="lMaDrUqS9g" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="lMaDrUscP2" role="37wK5m">
+                      <node concept="Xl_RD" id="lMaDrUscRa" role="3uHU7B">
+                        <property role="Xl_RC" value="allNodes: " />
+                      </node>
+                      <node concept="37vLTw" id="lMaDrUqSeu" role="3uHU7w">
+                        <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
