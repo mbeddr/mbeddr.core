@@ -3086,5 +3086,112 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7tKD69sA9ee">
+    <ref role="13h7C2" to="2qld:7tKD69sA9c3" resolve="Parameter_dropData" />
+    <node concept="13hLZK" id="7tKD69sA9ef" role="13h7CW">
+      <node concept="3clFbS" id="7tKD69sA9eg" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7tKD69sA9gr" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="7tKD69sA9gs" role="1B3o_S" />
+      <node concept="3clFbS" id="7tKD69sA9gx" role="3clF47">
+        <node concept="3clFbF" id="7tKD69sA9iJ" role="3cqZAp">
+          <node concept="2c44tf" id="7tKD69sA9iH" role="3clFbG">
+            <node concept="3uibUv" id="7tKD69sA9jt" role="2c44tc">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7tKD69sA9gy" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7tKD69sA9jU">
+    <ref role="13h7C2" to="2qld:7tKD69sA99S" resolve="Function_canDrop" />
+    <node concept="13hLZK" id="7tKD69sA9jV" role="13h7CW">
+      <node concept="3clFbS" id="7tKD69sA9jW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7tKD69sA9m7" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getExpectedReturnType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRD" resolve="getExpectedReturnType" />
+      <node concept="3Tm1VV" id="7tKD69sA9mb" role="1B3o_S" />
+      <node concept="3clFbS" id="7tKD69sA9md" role="3clF47">
+        <node concept="3clFbF" id="7tKD69sA9rg" role="3cqZAp">
+          <node concept="2c44tf" id="7tKD69sA9re" role="3clFbG">
+            <node concept="10P_77" id="7tKD69sA9sf" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7tKD69sA9me" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7tKD69sA9mj" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameters" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRM" resolve="getParameters" />
+      <node concept="3Tm1VV" id="7tKD69sA9mO" role="1B3o_S" />
+      <node concept="3clFbS" id="7tKD69sA9mP" role="3clF47">
+        <node concept="3clFbF" id="7tKD69sA9sK" role="3cqZAp">
+          <node concept="2ShNRf" id="7tKD69sA9sI" role="3clFbG">
+            <node concept="Tc6Ow" id="7tKD69sA9N1" role="2ShVmc">
+              <node concept="3THzug" id="7tKD69sAa1H" role="HW$YZ">
+                <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="3TUQnm" id="7tKD69sAa7E" role="HW$Y0">
+                <ref role="3TV0OU" to="2qld:7tKD69sA9c3" resolve="Parameter_dropData" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="7tKD69sA9mQ" role="3clF45">
+        <node concept="3THzug" id="7tKD69sA9mR" role="_ZDj9">
+          <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7tKD69sAabp">
+    <ref role="13h7C2" to="2qld:7tKD69sAa9e" resolve="Function_drop" />
+    <node concept="13hLZK" id="7tKD69sAabq" role="13h7CW">
+      <node concept="3clFbS" id="7tKD69sAabr" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7tKD69sAaP$" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameters" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRM" resolve="getParameters" />
+      <node concept="3Tm1VV" id="7tKD69sAaQ5" role="1B3o_S" />
+      <node concept="3clFbS" id="7tKD69sAaQ6" role="3clF47">
+        <node concept="3clFbF" id="7tKD69sAaTy" role="3cqZAp">
+          <node concept="2ShNRf" id="7tKD69sAaTo" role="3clFbG">
+            <node concept="Tc6Ow" id="7tKD69sAbfN" role="2ShVmc">
+              <node concept="3THzug" id="7tKD69sAbuv" role="HW$YZ">
+                <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="3TUQnm" id="7tKD69sAb$s" role="HW$Y0">
+                <ref role="3TV0OU" to="2qld:7tKD69sA9c3" resolve="Parameter_dropData" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="7tKD69sAaQ7" role="3clF45">
+        <node concept="3THzug" id="7tKD69sAaQ8" role="_ZDj9">
+          <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
