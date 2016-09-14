@@ -634,11 +634,11 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -7149,6 +7149,25 @@
                 </node>
               </node>
               <node concept="raruj" id="2ue418puIxC" role="lGtFl" />
+              <node concept="17Uvod" id="2dEGbba_w3F" role="lGtFl">
+                <property role="P4ACc" value="d00351b1-72a6-4072-aea2-5982add6bee4/6492502266247030008/2552046420808143588" />
+                <property role="2qtEX9" value="bounded" />
+                <node concept="3zFVjK" id="2dEGbba_w3G" role="3zH0cK">
+                  <node concept="3clFbS" id="2dEGbba_w3H" role="2VODD2">
+                    <node concept="3cpWs6" id="2dEGbba_w7u" role="3cqZAp">
+                      <node concept="2OqwBi" id="2dEGbba_x4N" role="3cqZAk">
+                        <node concept="2OqwBi" id="2dEGbba_wfj" role="2Oq$k0">
+                          <node concept="30H73N" id="2dEGbba_w8I" role="2Oq$k0" />
+                          <node concept="3Tsc0h" id="2dEGbba_wtS" role="2OqNvi">
+                            <ref role="3TtcxE" to="5l2n:5f6Hwd7Nyhe" />
+                          </node>
+                        </node>
+                        <node concept="3GX2aA" id="2dEGbba_yEM" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -12026,16 +12045,13 @@
               <node concept="2GrKxI" id="17Z2wzk7cg9" role="2Gsz3X">
                 <property role="TrG5h" value="value" />
               </node>
-              <node concept="2OqwBi" id="2bjUlm3DaLH" role="2GsD0m">
-                <node concept="2OqwBi" id="17Z2wzk7co7" role="2Oq$k0">
-                  <node concept="2GrUjf" id="17Z2wzk7cjN" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="46CZjbPSGv8" resolve="node" />
-                  </node>
-                  <node concept="3Tsc0h" id="17Z2wzk7c$H" role="2OqNvi">
-                    <ref role="3TtcxE" to="5l2n:46CZjbPOGdK" />
-                  </node>
+              <node concept="2OqwBi" id="17Z2wzk7co7" role="2GsD0m">
+                <node concept="2GrUjf" id="17Z2wzk7cjN" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="46CZjbPSGv8" resolve="node" />
                 </node>
-                <node concept="35Qw8J" id="2bjUlm3DcfS" role="2OqNvi" />
+                <node concept="3Tsc0h" id="17Z2wzk7c$H" role="2OqNvi">
+                  <ref role="3TtcxE" to="5l2n:46CZjbPOGdK" />
+                </node>
               </node>
               <node concept="3clFbS" id="17Z2wzk7cgd" role="2LFqv$">
                 <node concept="3clFbJ" id="46CZjbPSHyi" role="3cqZAp">

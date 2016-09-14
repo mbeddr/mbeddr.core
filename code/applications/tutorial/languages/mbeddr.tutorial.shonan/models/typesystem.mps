@@ -3819,5 +3819,31 @@
       <ref role="1YaFvo" to="5l2n:5cfyNbIx_7J" resolve="StencilVariableDeclaration" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2Itq67zot7O">
+    <property role="TrG5h" value="typeof_DimExpression" />
+    <property role="3GE5qa" value="stencil.user" />
+    <node concept="3clFbS" id="2Itq67zot7P" role="18ibNy">
+      <node concept="1Z5TYs" id="2Itq67zotan" role="3cqZAp">
+        <node concept="mw_s8" id="2Itq67zotaN" role="1ZfhKB">
+          <node concept="2pJPEk" id="2Itq67zotaJ" role="mwGJk">
+            <node concept="2pJPED" id="2Itq67zotb1" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2Itq67zotaq" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2Itq67zot84" role="mwGJk">
+            <node concept="1YBJjd" id="2Itq67zot8z" role="1Z2MuG">
+              <ref role="1YBMHb" node="2Itq67zot7R" resolve="expression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Itq67zot7R" role="1YuTPh">
+      <property role="TrG5h" value="expression" />
+      <ref role="1YaFvo" to="5l2n:2Itq67zmC$c" resolve="DimExpression" />
+    </node>
+  </node>
 </model>
 
