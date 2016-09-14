@@ -5,7 +5,7 @@
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
   <property name="download-dir" value="${basedir}" />
-  <target name="download">
+  <target name="download" depends="storeMPSVersion">
 	<delete dir="${download-dir}/${MPS-Dir}"/>
 	<delete dir="${MPS-Dir}"/>
 	<mkdir dir="${download-dir}/${MPS-Dir}"/>
@@ -13,7 +13,19 @@
 	<get src="${MPS-Base-URL}/${MPS-File}" dest="${download-dir}/${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	<unzip src="${download-dir}/${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
-  <copy file="log.xml" todir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/bin" overwrite="true" />
+	<copy file="log.xml" todir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/bin" overwrite="true" />
 	<delete file="${MPS-Dir}/${MPS-File}"/>
+  </target>
+  <target name="storeMPSVersion">
+      <loadresource property="mpsVersion">
+        <propertyresource name="MPS-File"/>
+        <filterchain>
+          <tokenfilter>
+            <filetokenizer/>
+            <replaceregex pattern="\.zip" replace="" />
+          </tokenfilter>
+        </filterchain>
+      </loadresource>
+      <echo message="##teamcity[setParameter name='mpsVersion' value='${mpsVersion}']" />
   </target>
 </project>
