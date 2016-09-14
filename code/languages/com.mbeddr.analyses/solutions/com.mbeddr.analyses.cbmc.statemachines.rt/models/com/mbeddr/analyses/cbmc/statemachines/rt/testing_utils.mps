@@ -224,18 +224,31 @@
                 <ref role="ehGHo" to="lcpc:5hPfJKCsfX8" resolve="StatemachineCBMCAnalysis" />
               </node>
             </node>
-            <node concept="2OqwBi" id="6m6BTo4RIeH" role="33vP2m">
-              <node concept="2OqwBi" id="6m6BTo4RIeI" role="2Oq$k0">
-                <node concept="37vLTw" id="6m6BTo4RIeJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6m6BTo4RgN4" resolve="conf" />
-                </node>
-                <node concept="3Tsc0h" id="6m6BTo4RIeK" role="2OqNvi">
-                  <ref role="3TtcxE" to="q46j:5BkFC2yh8uK" resolve="analyses" />
-                </node>
-              </node>
-              <node concept="v3k3i" id="6m6BTo4RIeL" role="2OqNvi">
-                <node concept="chp4Y" id="6m6BTo4RIeM" role="v3oSu">
-                  <ref role="cht4Q" to="lcpc:5hPfJKCsfX8" resolve="StatemachineCBMCAnalysis" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="1ZGLNk_MaVi" role="3cqZAp">
+          <node concept="9aQIb" id="1ZGLNk_Mbg4" role="3kxCCa">
+            <node concept="3clFbS" id="1ZGLNk_Mbg6" role="9aQI4">
+              <node concept="3clFbF" id="1ZGLNk_MahI" role="3cqZAp">
+                <node concept="37vLTI" id="1ZGLNk_MahK" role="3clFbG">
+                  <node concept="2OqwBi" id="6m6BTo4RIeH" role="37vLTx">
+                    <node concept="2OqwBi" id="6m6BTo4RIeI" role="2Oq$k0">
+                      <node concept="37vLTw" id="6m6BTo4RIeJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6m6BTo4RgN4" resolve="conf" />
+                      </node>
+                      <node concept="3Tsc0h" id="6m6BTo4RIeK" role="2OqNvi">
+                        <ref role="3TtcxE" to="q46j:5BkFC2yh8uK" resolve="analyses" />
+                      </node>
+                    </node>
+                    <node concept="v3k3i" id="6m6BTo4RIeL" role="2OqNvi">
+                      <node concept="chp4Y" id="6m6BTo4RIeM" role="v3oSu">
+                        <ref role="cht4Q" to="lcpc:5hPfJKCsfX8" resolve="StatemachineCBMCAnalysis" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1ZGLNk_MahO" role="37vLTJ">
+                    <ref role="3cqZAo" node="6m6BTo4RIeG" resolve="smConfigs" />
+                  </node>
                 </node>
               </node>
             </node>
