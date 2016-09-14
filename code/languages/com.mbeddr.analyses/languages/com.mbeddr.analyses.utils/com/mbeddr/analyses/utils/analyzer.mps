@@ -327,8 +327,8 @@
             <node concept="3clFbF" id="2Ra3lN_4Boq" role="3cqZAp">
               <node concept="2OqwBi" id="2Ra3lN_4Bor" role="3clFbG">
                 <node concept="10M0yZ" id="2Ra3lN_4Bos" role="2Oq$k0">
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="2Ra3lN_4Bot" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
