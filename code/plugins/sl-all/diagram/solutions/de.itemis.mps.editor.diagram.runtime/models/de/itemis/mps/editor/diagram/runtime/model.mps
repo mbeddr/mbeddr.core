@@ -271,7 +271,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -27849,6 +27849,9 @@
     <node concept="3clFb_" id="5lWUryyL7Wi" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="allowScaling" />
+      <node concept="2AHcQZ" id="7tKD69s_Gfv" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
       <node concept="10P_77" id="5lWUryyL7Wj" role="3clF45" />
       <node concept="3Tm1VV" id="5lWUryyL7Wk" role="1B3o_S" />
       <node concept="3clFbS" id="5lWUryyL7Wn" role="3clF47">
@@ -27858,14 +27861,14 @@
           </node>
         </node>
       </node>
-      <node concept="2AHcQZ" id="7tKD69s_Gfv" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
     </node>
     <node concept="2tJIrI" id="6OhZPz3IKWr" role="jymVt" />
     <node concept="3clFb_" id="6OhZPz3IK9g" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="annotationExternal" />
+      <node concept="2AHcQZ" id="7tKD69s_Gfs" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
       <node concept="37vLTG" id="6OhZPz3IK9h" role="3clF46">
         <property role="TrG5h" value="annotationNode" />
         <node concept="3Tqbb2" id="6OhZPz3IK9i" role="1tU5fm" />
@@ -27876,9 +27879,6 @@
         <node concept="3clFbF" id="6OhZPz3IK9p" role="3cqZAp">
           <node concept="3clFbT" id="6OhZPz3IK9o" role="3clFbG" />
         </node>
-      </node>
-      <node concept="2AHcQZ" id="7tKD69s_Gfs" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7tKD69s_EhH" role="jymVt" />
@@ -29847,13 +29847,6 @@
             <node concept="3clFbJ" id="gKFhvF4mpR" role="3cqZAp">
               <property role="TyiWK" value="true" />
               <property role="TyiWL" value="false" />
-              <node concept="3clFbS" id="gKFhvF4mpS" role="3clFbx">
-                <node concept="3cpWs6" id="gKFhvF4mpT" role="3cqZAp">
-                  <node concept="2GrUjf" id="gKFhvF4mpU" role="3cqZAk">
-                    <ref role="2Gs0qQ" node="gKFhvF4mpM" resolve="box" />
-                  </node>
-                </node>
-              </node>
               <node concept="1Wc70l" id="4TV0z_6wveD" role="3clFbw">
                 <node concept="3y3z36" id="4TV0z_6wvPI" role="3uHU7B">
                   <node concept="10Nm6u" id="4TV0z_6wvZY" role="3uHU7w" />
@@ -29872,6 +29865,13 @@
                     <node concept="liA8E" id="gKFhvF4mq1" role="2OqNvi">
                       <ref role="37wK5l" node="gKFhvETcIU" resolve="getId" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="gKFhvF4mpS" role="3clFbx">
+                <node concept="3cpWs6" id="gKFhvF4mpT" role="3cqZAp">
+                  <node concept="2GrUjf" id="gKFhvF4mpU" role="3cqZAk">
+                    <ref role="2Gs0qQ" node="gKFhvF4mpM" resolve="box" />
                   </node>
                 </node>
               </node>
@@ -40624,6 +40624,23 @@
       <node concept="3Tqbb2" id="7QuBUQjRQPm" role="3ztrMU" />
     </node>
   </node>
+  <node concept="3HP615" id="7tKD69siGvs">
+    <property role="3GE5qa" value="palette" />
+    <property role="TrG5h" value="IDragPaletteEntry" />
+    <node concept="3clFb_" id="7tKD69slQjc" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getDragObject" />
+      <node concept="3uibUv" id="7tKD69slQ$2" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="7tKD69slQjf" role="1B3o_S" />
+      <node concept="3clFbS" id="7tKD69slQjg" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="7tKD69siGvt" role="1B3o_S" />
+    <node concept="3uibUv" id="7tKD69siG$1" role="3HQHJm">
+      <ref role="3uigEE" node="KILMQGnt6a" resolve="IPaletteEntry" />
+    </node>
+  </node>
   <node concept="312cEu" id="7tKD69sifP1">
     <property role="TrG5h" value="GenericTransferable" />
     <node concept="2tJIrI" id="7tKD69siiA_" role="jymVt" />
@@ -40939,23 +40956,6 @@
     <node concept="3Tm1VV" id="7tKD69sifP2" role="1B3o_S" />
     <node concept="3uibUv" id="7tKD69sifWX" role="EKbjA">
       <ref role="3uigEE" to="kt01:~Transferable" resolve="Transferable" />
-    </node>
-  </node>
-  <node concept="3HP615" id="7tKD69siGvs">
-    <property role="3GE5qa" value="palette" />
-    <property role="TrG5h" value="IDragPaletteEntry" />
-    <node concept="3clFb_" id="7tKD69slQjc" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getDragObject" />
-      <node concept="3uibUv" id="7tKD69slQ$2" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="3Tm1VV" id="7tKD69slQjf" role="1B3o_S" />
-      <node concept="3clFbS" id="7tKD69slQjg" role="3clF47" />
-    </node>
-    <node concept="3Tm1VV" id="7tKD69siGvt" role="1B3o_S" />
-    <node concept="3uibUv" id="7tKD69siG$1" role="3HQHJm">
-      <ref role="3uigEE" node="KILMQGnt6a" resolve="IPaletteEntry" />
     </node>
   </node>
   <node concept="312cEu" id="7tKD69snf5h">
