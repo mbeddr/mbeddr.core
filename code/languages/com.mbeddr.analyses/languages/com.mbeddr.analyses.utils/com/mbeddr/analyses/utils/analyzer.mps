@@ -1150,13 +1150,6 @@
                     </node>
                     <node concept="liA8E" id="7MMcIPlo7Bm" role="2OqNvi">
                       <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
-                      <node concept="3cmrfG" id="4RbsEloWKgE" role="37wK5m">
-                        <property role="3cmrfH" value="30" />
-                      </node>
-                      <node concept="Rm8GO" id="4RbsEloWKgF" role="37wK5m">
-                        <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
-                        <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -1514,14 +1507,7 @@
                                     <ref role="3cqZAo" node="505H3_WY3Q8" resolve="make" />
                                   </node>
                                   <node concept="liA8E" id="5pNvrID2$HK" role="2OqNvi">
-                                    <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
-                                    <node concept="3cmrfG" id="4RbsEloWEMk" role="37wK5m">
-                                      <property role="3cmrfH" value="30" />
-                                    </node>
-                                    <node concept="Rm8GO" id="4RbsEloWFtL" role="37wK5m">
-                                      <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
-                                      <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
-                                    </node>
+                                    <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
                                   </node>
                                 </node>
                               </node>
@@ -1704,14 +1690,7 @@
                                   <ref role="3cqZAo" node="1PA$4Yzx9In" resolve="analyzer" />
                                 </node>
                                 <node concept="liA8E" id="1PA$4Yzx9I$" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
-                                  <node concept="3cmrfG" id="4RbsEloWJMX" role="37wK5m">
-                                    <property role="3cmrfH" value="30" />
-                                  </node>
-                                  <node concept="Rm8GO" id="4RbsEloWJMY" role="37wK5m">
-                                    <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
-                                    <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
-                                  </node>
+                                  <ref role="37wK5l" to="dxuu:~SwingWorker.get():java.lang.Object" resolve="get" />
                                 </node>
                               </node>
                             </node>
