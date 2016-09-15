@@ -32,7 +32,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2746,6 +2746,29 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1E6zlbz6yRi" role="3cqZAp">
+          <node concept="3cpWsn" id="1E6zlbz6yRj" role="3cpWs9">
+            <property role="TrG5h" value="imName" />
+            <node concept="17QB3L" id="1E6zlbz6yRh" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="1E6zlbz6$mp" role="3cqZAp">
+          <node concept="3clFbF" id="1E6zlbz6zde" role="3kxCCa">
+            <node concept="37vLTI" id="1E6zlbz6zdg" role="3clFbG">
+              <node concept="2OqwBi" id="1E6zlbz6yRk" role="37vLTx">
+                <node concept="37vLTw" id="1E6zlbz6yRl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="234Biwpi7df" resolve="im" />
+                </node>
+                <node concept="3TrcHB" id="1E6zlbz6yRm" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="1E6zlbz6zdk" role="37vLTJ">
+                <ref role="3cqZAo" node="1E6zlbz6yRj" resolve="imName" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="234BiwpirTN" role="3cqZAp">
           <node concept="3cpWsn" id="234BiwpirTO" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -2762,13 +2785,8 @@
                   <node concept="Xl_RD" id="234BiwpixID" role="3uHU7w">
                     <property role="Xl_RC" value=".c" />
                   </node>
-                  <node concept="2OqwBi" id="234Biwpivf1" role="3uHU7B">
-                    <node concept="37vLTw" id="234Biwpiv1d" role="2Oq$k0">
-                      <ref role="3cqZAo" node="234Biwpi7df" resolve="im" />
-                    </node>
-                    <node concept="3TrcHB" id="234BiwpiwJq" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
+                  <node concept="37vLTw" id="1E6zlbz6yRn" role="3uHU7B">
+                    <ref role="3cqZAo" node="1E6zlbz6yRj" resolve="imName" />
                   </node>
                 </node>
               </node>
