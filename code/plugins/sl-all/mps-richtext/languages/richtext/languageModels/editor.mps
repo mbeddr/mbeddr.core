@@ -1737,7 +1737,7 @@
                                   <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSubstituteInfo(jetbrains.mps.openapi.editor.cells.SubstituteInfo):void" resolve="setSubstituteInfo" />
                                   <node concept="2ShNRf" id="511fZqnuTiI" role="37wK5m">
                                     <node concept="1pGfFk" id="511fZqnv2lw" role="2ShVmc">
-                                      <ref role="37wK5l" to="k553:511fZqnuB62" resolve="WordCellSubstituteInfo" />
+                                      <ref role="37wK5l" to="k553:o1roXC03_H" resolve="WordCellSubstituteInfo" />
                                       <node concept="37vLTw" id="511fZqnv2Y2" role="37wK5m">
                                         <ref role="3cqZAo" node="2af7$rtzdsC" resolve="wordCell" />
                                       </node>

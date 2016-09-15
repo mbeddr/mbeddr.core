@@ -13,15 +13,20 @@ task publishMPS(type: Zip, dependsOn: unzipMPS) {
 }*/
 
 task downloadMPS << {
+    if(!file(rootProject.projectDir.absolutePath + "/MPS").exists()) {
+        ant.mkdir(dir: rootProject.projectDir.absolutePath + "/MPS")
+    }
     ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip", skipexisting:true)
 }
 
-task unzipMPS << {
-    ant.unzip(src: file(rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip"), dest: file(rootProject.projectDir.absolutePath +"/MPS/"))
+task unzipMPS(dependsOn: downloadMPS) << {
+    ant.unzip(src: file(rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip"), dest: file(rootProject.projectDir.absolutePath +"/MPS"))
     ant.move(file: file(rootProject.projectDir.absolutePath + "/MPS/MPS " + mpsMajor), toFile: file (rootProject.projectDir.absolutePath +"/MPS/" + mbeddrMpsDir))
 }
 
-task publishMPS(type: Zip, dependsOn: unzipMPS) << {
+task getMPS(dependsOn: unzipMPS) << { }
+
+task publishMPS(type: Zip) << {
     from file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir )
 }
 
