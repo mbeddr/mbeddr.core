@@ -15,8 +15,8 @@
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -822,19 +822,37 @@
             <node concept="2jxLKc" id="3WYFqnsxq8d" role="1tU5fm" />
           </node>
           <node concept="3clFbS" id="3WYFqnsxq8f" role="Jncv$">
+            <node concept="3cpWs8" id="5EwdfGVnhf0" role="3cqZAp">
+              <node concept="3cpWsn" id="5EwdfGVnhf1" role="3cpWs9">
+                <property role="TrG5h" value="msg" />
+                <node concept="17QB3L" id="5EwdfGVnheK" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3kxDZ6" id="5EwdfGVnidD" role="3cqZAp">
+              <node concept="3clFbF" id="5EwdfGVnhNI" role="3kxCCa">
+                <node concept="37vLTI" id="5EwdfGVnhNK" role="3clFbG">
+                  <node concept="3cpWs3" id="5EwdfGVnhf2" role="37vLTx">
+                    <node concept="2OqwBi" id="5EwdfGVnhf3" role="3uHU7w">
+                      <node concept="3TrcHB" id="5EwdfGVnhf4" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                      <node concept="Jnkvi" id="5EwdfGVnhf5" role="2Oq$k0">
+                        <ref role="1M0zk5" node="3WYFqnsxq8c" resolve="nc" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5EwdfGVnhf6" role="3uHU7B">
+                      <property role="Xl_RC" value="Vacuity check for: " />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5EwdfGVnhNO" role="37vLTJ">
+                    <ref role="3cqZAo" node="5EwdfGVnhf1" resolve="msg" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="3WYFqnsxhZ8" role="3cqZAp">
-              <node concept="3cpWs3" id="3WYFqnsxjCH" role="3cqZAk">
-                <node concept="2OqwBi" id="3WYFqnsxjUd" role="3uHU7w">
-                  <node concept="3TrcHB" id="3WYFqnsxo16" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                  <node concept="Jnkvi" id="3WYFqnsxtKJ" role="2Oq$k0">
-                    <ref role="1M0zk5" node="3WYFqnsxq8c" resolve="nc" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3WYFqnsxidI" role="3uHU7B">
-                  <property role="Xl_RC" value="Vacuity check for: " />
-                </node>
+              <node concept="37vLTw" id="5EwdfGVnhf7" role="3cqZAk">
+                <ref role="3cqZAo" node="5EwdfGVnhf1" resolve="msg" />
               </node>
             </node>
           </node>

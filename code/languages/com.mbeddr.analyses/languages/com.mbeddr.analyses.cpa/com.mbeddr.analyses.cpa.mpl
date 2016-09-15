@@ -7,13 +7,16 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.analyses.cpa#5320718137711356637" uuid="dfe57d38-486a-409b-b442-5fefcf59878d">
+    <generator name="" generatorUID="com.mbeddr.analyses.cpa#5320718137711356637" uuid="dfe57d38-486a-409b-b442-5fefcf59878d">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+      </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
@@ -70,6 +73,7 @@
         <module reference="dfe57d38-486a-409b-b442-5fefcf59878d(com.mbeddr.analyses.cpa#5320718137711356637)" version="0" />
         <module reference="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" version="0" />
         <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
+        <module reference="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" version="0" />
         <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
         <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
         <module reference="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" version="0" />
@@ -103,7 +107,22 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="dfe57d38-486a-409b-b442-5fefcf59878d(com.mbeddr.analyses.cpa#5320718137711356637)" />
+            <external-mapping>
+              <mapping-node modelUID="r:210048d5-b302-4bae-b659-dd7e33b7a688(com.mbeddr.analyses.cpa.generator.template.main@generator)" nodeID="5320718137711356638" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" />
+            <external-mapping>
+              <mapping-node modelUID="r:949d91ba-b3c5-483a-aab7-460e656aee7b(com.mbeddr.core.base.generator.template.main@generator)" nodeID="8626086128958649591" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
