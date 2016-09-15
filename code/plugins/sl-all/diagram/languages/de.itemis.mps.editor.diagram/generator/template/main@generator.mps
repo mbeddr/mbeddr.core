@@ -923,6 +923,33 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="4rMwD1Weakh" role="3acgRq">
+      <ref role="30HIoZ" to="2qld:4rMwD1We6Mi" resolve="EditorContextExpression" />
+      <node concept="1Koe21" id="4rMwD1Weaki" role="1lVwrX">
+        <node concept="3clFb_" id="4rMwD1WegjF" role="1Koe22">
+          <property role="TrG5h" value="f" />
+          <node concept="37vLTG" id="4rMwD1WehnV" role="3clF46">
+            <property role="TrG5h" value="editorContext" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="4rMwD1WehnW" role="1tU5fm">
+              <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+            </node>
+          </node>
+          <node concept="3uibUv" id="4rMwD1Wehsh" role="3clF45">
+            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+          </node>
+          <node concept="3Tm1VV" id="4rMwD1WegjM" role="1B3o_S" />
+          <node concept="3clFbS" id="4rMwD1WegjN" role="3clF47">
+            <node concept="3clFbF" id="4rMwD1Wehsz" role="3cqZAp">
+              <node concept="37vLTw" id="4rMwD1Wehsy" role="3clFbG">
+                <ref role="3cqZAo" node="4rMwD1WehnV" resolve="editorContext" />
+                <node concept="raruj" id="4rMwD1WehsN" role="lGtFl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="3GatLR30YIS" role="3acgRq">
       <ref role="30HIoZ" to="2qld:3GatLR30YxB" resolve="InlineCompositeShape" />
       <node concept="1Koe21" id="3GatLR3135R" role="1lVwrX">
