@@ -2,8 +2,8 @@
 <model ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -74,6 +74,9 @@
     <property role="R4oN_" value="a make file" />
     <property role="EcuMT" value="5950410542643585247" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="1N5Tah$AJpf" role="rwd14">
+      <property role="1iqoE4" value="${module}/makefile.gif" />
+    </node>
     <node concept="1TJgyj" id="6_CUGSFHTH6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="content" />
@@ -104,9 +107,6 @@
     </node>
     <node concept="PrWs8" id="5ak6HMA0E3w" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$AJpf" role="rwd14">
-      <property role="1iqoE4" value="${module}/makefile.gif" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ak6HMA0Ext">
@@ -402,9 +402,15 @@
     <node concept="1TJgyj" id="6_CUGSFJ0IW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="7595578942778248124" />
       <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
+    </node>
+    <node concept="1TJgyj" id="4T_y5Me_pOo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="commands" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5ak6HMA0Exx" resolve="Command" />
     </node>
   </node>
   <node concept="1TIwiD" id="6_CUGSFKkYj">

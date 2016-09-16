@@ -16,4 +16,16 @@
   <copy file="log.xml" todir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/bin" overwrite="true" />
 	<delete file="${MPS-Dir}/${MPS-File}"/>
   </target>
+  <target name="storeMPSVersion">
+      <loadresource property="mpsVersion">
+        <propertyresource name="MPS-File"/>
+        <filterchain>
+          <tokenfilter>
+            <filetokenizer/>
+            <replaceregex pattern="\.zip" replace="" />
+          </tokenfilter>
+        </filterchain>
+      </loadresource>
+      <echo message="##teamcity[setParameter name='mpsVersion' value='${mpsVersion}']" />
+  </target>
 </project>
