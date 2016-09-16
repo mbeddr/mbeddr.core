@@ -802,13 +802,25 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3clFbF" id="2UdJgvCLH$F" role="3cqZAp">
-                            <node concept="2OqwBi" id="2UdJgvCLHFa" role="3clFbG">
-                              <node concept="37vLTw" id="2UdJgvCLH$E" role="2Oq$k0">
+                          <node concept="3clFbJ" id="3gM8Conlsc0" role="3cqZAp">
+                            <node concept="3clFbS" id="3gM8Conlsc2" role="3clFbx">
+                              <node concept="3clFbF" id="2UdJgvCLH$F" role="3cqZAp">
+                                <node concept="2OqwBi" id="2UdJgvCLHFa" role="3clFbG">
+                                  <node concept="37vLTw" id="2UdJgvCLH$E" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
+                                  </node>
+                                  <node concept="liA8E" id="2UdJgvCLINr" role="2OqNvi">
+                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop():void" resolve="stop" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="3gM8ConlsUj" role="3clFbw">
+                              <node concept="37vLTw" id="3gM8ConlstR" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                               </node>
-                              <node concept="liA8E" id="2UdJgvCLINr" role="2OqNvi">
-                                <ref role="37wK5l" to="xygl:~ProgressIndicator.stop():void" resolve="stop" />
+                              <node concept="liA8E" id="3gM8ConltQ4" role="2OqNvi">
+                                <ref role="37wK5l" to="xygl:~ProgressIndicator.isShowing():boolean" resolve="isShowing" />
                               </node>
                             </node>
                           </node>
