@@ -33,6 +33,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wvyf" ref="r:5a252772-b920-4950-9982-f2f3538e3e16(com.mbeddr.mpsutil.treenotation.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -894,12 +895,16 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="TSZUe" id="4Q9g1gQPpwR" role="2OqNvi">
-                                        <node concept="1PxgMI" id="4Q9g1gQPrRC" role="25WWJ7">
+                                      <node concept="liA8E" id="7n5r_AQRXFR" role="2OqNvi">
+                                        <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object):void" resolve="add" />
+                                        <node concept="37vLTw" id="7n5r_AQRY8B" role="37wK5m">
+                                          <ref role="3cqZAo" node="4Q9g1gQPfvw" resolve="index" />
+                                        </node>
+                                        <node concept="1PxgMI" id="4Q9g1gQPrRC" role="37wK5m">
                                           <ref role="1PxNhF" to="tpck:4uZwTti3_$T" resolve="Attribute" />
                                           <node concept="2YIFZM" id="4Q9g1gQPpQt" role="1PxMeX">
-                                            <ref role="1Pybhc" to="zce0:~NodeFactoryManager" resolve="NodeFactoryManager" />
                                             <ref role="37wK5l" to="zce0:~NodeFactoryManager.createNode(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SModel):org.jetbrains.mps.openapi.model.SNode" resolve="createNode" />
+                                            <ref role="1Pybhc" to="zce0:~NodeFactoryManager" resolve="NodeFactoryManager" />
                                             <node concept="37vLTw" id="4Q9g1gQPq6g" role="37wK5m">
                                               <ref role="3cqZAo" node="4Q9g1gQPe8L" resolve="subconcept" />
                                             </node>
