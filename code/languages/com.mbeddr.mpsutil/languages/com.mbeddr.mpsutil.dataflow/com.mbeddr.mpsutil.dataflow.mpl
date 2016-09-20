@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.mpsutil.dataflow#6608588380907931963" uuid="e69ddb21-8a0a-41ab-abd7-f06105590211">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.dataflow#6608588380907931963" uuid="e69ddb21-8a0a-41ab-abd7-f06105590211">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -24,6 +24,8 @@
         <dependency reexport="false">fead051a-767c-4c80-9582-25e0330f675a(jetbrains.mps.lang.dataFlow.analyzers#9177062368042328054)</dependency>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)</dependency>
+        <dependency reexport="false">bdfab909-4d8f-4566-b44e-c33957ce28ef(jetbrains.mps.lang.dataFlow#1206455293228)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -65,6 +67,7 @@
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
         <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+        <module reference="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" version="0" />
         <module reference="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="7fa12e9c-b949-4976-b4fa-19accbc320b4(jetbrains.mps.lang.dataFlow)" version="0" />
@@ -80,7 +83,32 @@
         <module reference="20351dc3-a2df-46f5-b667-fc9adab1f1c9(jetbrains.mps.make)" version="0" />
         <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="e69ddb21-8a0a-41ab-abd7-f06105590211(com.mbeddr.mpsutil.dataflow#6608588380907931963)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <mapping-set>
+              <mapping-set-element>
+                <generator generatorUID="fead051a-767c-4c80-9582-25e0330f675a(jetbrains.mps.lang.dataFlow.analyzers#9177062368042328054)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="bdfab909-4d8f-4566-b44e-c33957ce28ef(jetbrains.mps.lang.dataFlow#1206455293228)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+            </mapping-set>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />

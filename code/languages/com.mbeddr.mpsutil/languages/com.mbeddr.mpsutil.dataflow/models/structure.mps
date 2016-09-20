@@ -9,6 +9,7 @@
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="bj1v" ref="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.lang.dataFlow.analyzers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -144,8 +145,33 @@
   <node concept="1TIwiD" id="2nbqtJGjoq6">
     <property role="1pbfSe" value="303624289" />
     <property role="19KtqR" value="true" />
-    <property role="TrG5h" value="WithInterProceduralSupport" />
+    <property role="TrG5h" value="WithAdvancedDataFlowSupport" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4zsE9z9LnNF">
+    <property role="1pbfSe" value="312616323" />
+    <property role="TrG5h" value="AnalyzeExpression" />
+    <property role="34LRSv" value="analyze" />
+    <property role="R4oN_" value="run data-flow analysis" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="4zsE9z9LnNW" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="analysis" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="bj1v:5JpT3MjX6u9" resolve="Analyzer" />
+    </node>
+    <node concept="1TJgyj" id="4zsE9z9LnNG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4zsE9z9LnO1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mode" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tp41:6UdHCtZMvVk" resolve="IBuilderMode" />
+    </node>
   </node>
 </model>
 
