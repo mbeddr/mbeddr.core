@@ -100,7 +100,7 @@
     </language>
     <language id="57416e5b-eba5-4910-ade8-42ad18cb5f4d" name="com.mbeddr.mpsutil.dataflow">
       <concept id="9101047003798444974" name="com.mbeddr.mpsutil.dataflow.structure.InterProcedural_BuilderMode" flags="ng" index="2JLR6D" />
-      <concept id="2723386792958854790" name="com.mbeddr.mpsutil.dataflow.structure.WithInterProceduralSupport" flags="ng" index="39xIXt" />
+      <concept id="2723386792958854790" name="com.mbeddr.mpsutil.dataflow.structure.WithAdvancedDataFlowSupport" flags="ng" index="39xIXt" />
       <concept id="673470630035214411" name="com.mbeddr.mpsutil.dataflow.structure.EmitInlineStatement" flags="ng" index="1cGfmN">
         <child id="673470630035214744" name="target" index="1cGfhw" />
       </concept>
@@ -360,10 +360,6 @@
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow">
-      <concept id="1206956528885" name="jetbrains.mps.lang.dataFlow.structure.EmitTryFinallyStatement" flags="nn" index="4dLnG">
-        <child id="1206956559912" name="tryPart" index="4dSWL" />
-        <child id="1206956567220" name="finallyPart" index="4dUIH" />
-      </concept>
       <concept id="7966224008969060053" name="jetbrains.mps.lang.dataFlow.structure.IntraProcedural_BuilderMode" flags="ng" index="hh4xi" />
       <concept id="1206442055221" name="jetbrains.mps.lang.dataFlow.structure.DataFlowBuilderDeclaration" flags="ig" index="3_zdsH">
         <reference id="1206442096288" name="conceptDeclaration" index="3_znuS" />
@@ -8427,12 +8423,6 @@
               <ref role="3cqZAo" node="2cV6Bp1XD_2" resolve="i" />
             </node>
           </node>
-        </node>
-        <node concept="3clFbH" id="Rlui$r3L61" role="3cqZAp" />
-        <node concept="3clFbH" id="Rlui$r3L97" role="3cqZAp" />
-        <node concept="4dLnG" id="Rlui$r3Luf" role="3cqZAp">
-          <node concept="3clFbS" id="Rlui$r3Luh" role="4dSWL" />
-          <node concept="3clFbS" id="Rlui$r3Luj" role="4dUIH" />
         </node>
       </node>
     </node>
