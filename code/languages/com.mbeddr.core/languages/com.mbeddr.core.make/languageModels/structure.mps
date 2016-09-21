@@ -374,8 +374,14 @@
     <node concept="1TJgyj" id="6_CUGSFJ0IW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
+    </node>
+    <node concept="1TJgyj" id="4T_y5Me_pOo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="commands" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5ak6HMA0Exx" resolve="Command" />
     </node>
   </node>
   <node concept="1TIwiD" id="6_CUGSFKkYj">

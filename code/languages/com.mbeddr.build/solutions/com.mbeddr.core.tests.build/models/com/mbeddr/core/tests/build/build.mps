@@ -194,6 +194,12 @@
             <ref role="3bR37D" node="4cEcQIx$xWy" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6Vqj3IwEDmy" role="3bR37C">
+          <node concept="3bR9La" id="6Vqj3IwEDmz" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7eF9rfAuuoJ" role="2G$12L">
         <property role="BnDLt" value="true" />
