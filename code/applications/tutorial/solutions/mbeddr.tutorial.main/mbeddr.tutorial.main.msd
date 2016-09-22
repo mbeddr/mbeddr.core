@@ -136,7 +136,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="ecc1a5ec-1e73-4d85-a5c7-cf22734be4aa(com.mbeddr.analyses.acsl.cbmc.rt)" version="0" />
     <module reference="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" version="0" />
-    <module reference="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" version="2" />
+    <module reference="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" version="3" />
     <module reference="13c63209-1eb7-491d-accf-3ba493379657(com.mbeddr.analyses.cbmc.components.pluginSolution)" version="0" />
     <module reference="603a3466-f1f4-442a-b544-048f481ec3bb(com.mbeddr.analyses.cbmc.components.rt)" version="0" />
     <module reference="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" version="0" />

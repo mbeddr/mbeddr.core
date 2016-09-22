@@ -438,5 +438,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4rMwD1We6O0">
+    <ref role="1M2myG" to="2qld:4rMwD1We6Mi" resolve="EditorContextExpression" />
+    <node concept="nKS2y" id="4rMwD1We6OH" role="1MLUbF">
+      <node concept="3clFbS" id="4rMwD1We6OI" role="2VODD2">
+        <node concept="3clFbF" id="4rMwD1We6OJ" role="3cqZAp">
+          <node concept="2OqwBi" id="4rMwD1We6OK" role="3clFbG">
+            <node concept="2OqwBi" id="4rMwD1We6OL" role="2Oq$k0">
+              <node concept="nLn13" id="4rMwD1We6OM" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4rMwD1We6ON" role="2OqNvi">
+                <node concept="1xMEDy" id="4rMwD1We6OO" role="1xVPHs">
+                  <node concept="chp4Y" id="4rMwD1We6OP" role="ri$Ld">
+                    <ref role="cht4Q" to="tpc2:fIwURLg" resolve="BaseEditorComponent" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4rMwD1We6OQ" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4rMwD1We6OR" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

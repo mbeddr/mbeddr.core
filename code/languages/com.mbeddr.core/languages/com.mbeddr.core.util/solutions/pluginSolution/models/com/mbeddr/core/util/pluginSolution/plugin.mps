@@ -3022,7 +3022,7 @@
                         <ref role="3cqZAo" node="71iDQGhat8V" resolve="it" />
                       </node>
                       <node concept="liA8E" id="71iDQGhau6f" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                       </node>
                     </node>
                   </node>
@@ -5831,7 +5831,7 @@
                               <ref role="3cqZAo" node="2cNe_D17JAN" resolve="it" />
                             </node>
                             <node concept="liA8E" id="2cNe_D17JAM" role="2OqNvi">
-                              <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                             </node>
                           </node>
                         </node>
@@ -6388,7 +6388,7 @@
                                                                 <ref role="3cqZAo" node="1B5fOaAXHWf" resolve="it" />
                                                               </node>
                                                               <node concept="liA8E" id="1B5fOaAXHWa" role="2OqNvi">
-                                                                <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                                                                <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                                                               </node>
                                                             </node>
                                                             <node concept="liA8E" id="1B5fOaAXHWb" role="2OqNvi">
@@ -7740,7 +7740,7 @@
                               <ref role="3cqZAo" node="1MUu1mkZ9KP" resolve="it" />
                             </node>
                             <node concept="liA8E" id="1MUu1mkZapX" role="2OqNvi">
-                              <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                             </node>
                           </node>
                         </node>
@@ -8074,7 +8074,7 @@
                                     <ref role="3cqZAo" node="6e58UdraW1s" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="6e58UdraZQ3" role="2OqNvi">
-                                    <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6e58Udrb9a1" role="2OqNvi">

@@ -7206,7 +7206,7 @@
                                 <ref role="3cqZAo" node="5mPyAfcVYw3" resolve="it" />
                               </node>
                               <node concept="liA8E" id="5mPyAfcVYsJ" role="2OqNvi">
-                                <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                               </node>
                             </node>
                           </node>
@@ -8606,56 +8606,38 @@
             <node concept="3uibUv" id="1uL8CIttli2" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
             </node>
-            <node concept="2OqwBi" id="1uL8CIttmZT" role="33vP2m">
-              <node concept="2YIFZM" id="1uL8CIttmbS" role="2Oq$k0">
-                <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
-                <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="33BTWbyELn3" role="3cqZAp">
+          <node concept="1QHqEC" id="33BTWbyELn5" role="1QHqEI">
+            <node concept="3clFbS" id="33BTWbyELn7" role="1bW5cS">
+              <node concept="3SKdUt" id="33BTWbyE$jQ" role="3cqZAp">
+                <node concept="3SKdUq" id="33BTWbyE$jS" role="3SKWNk">
+                  <property role="3SKdUp" value="todo [Mihail Muhin] rewrite this code using SConcept instead of passing NodeReference" />
+                </node>
               </node>
-              <node concept="liA8E" id="1uL8CItto8T" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadAction" />
-                <node concept="2ShNRf" id="1uL8CIttp6I" role="37wK5m">
-                  <node concept="YeOm9" id="1uL8CIttqw7" role="2ShVmc">
-                    <node concept="1Y3b0j" id="1uL8CIttqwa" role="YeSDq">
-                      <property role="2bfB8j" value="true" />
-                      <ref role="1Y3XeK" to="18ew:~Computable" resolve="Computable" />
-                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                      <node concept="3Tm1VV" id="1uL8CIttqwb" role="1B3o_S" />
-                      <node concept="3clFb_" id="1uL8CIttqwc" role="jymVt">
-                        <property role="1EzhhJ" value="false" />
-                        <property role="TrG5h" value="compute" />
-                        <property role="DiZV1" value="false" />
-                        <property role="IEkAT" value="false" />
-                        <node concept="3Tm1VV" id="1uL8CIttqwd" role="1B3o_S" />
-                        <node concept="3uibUv" id="1uL8CIttrkM" role="3clF45">
-                          <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+              <node concept="3clFbF" id="33BTWbyEMhj" role="3cqZAp">
+                <node concept="37vLTI" id="33BTWbyEM$X" role="3clFbG">
+                  <node concept="37vLTw" id="33BTWbyEMhi" role="37vLTJ">
+                    <ref role="3cqZAo" node="1uL8CIttli1" resolve="icon" />
+                  </node>
+                  <node concept="2YIFZM" id="33BTWbyEwXS" role="37vLTx">
+                    <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+                    <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
+                    <node concept="2YIFZM" id="33BTWbyEyXE" role="37wK5m">
+                      <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getConcept(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
+                      <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
+                      <node concept="2OqwBi" id="33BTWbyEwXU" role="37wK5m">
+                        <node concept="37vLTw" id="33BTWbyEwXV" role="2Oq$k0">
+                          <ref role="3cqZAo" node="Iviav38zi" resolve="nodeReference" />
                         </node>
-                        <node concept="3clFbS" id="1uL8CIttqwg" role="3clF47">
-                          <node concept="3cpWs6" id="1uL8CIttsiM" role="3cqZAp">
-                            <node concept="2YIFZM" id="1uL8CItttRX" role="3cqZAk">
-                              <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
-                              <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                              <node concept="2YIFZM" id="1uL8CIttvBj" role="37wK5m">
-                                <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                                <node concept="2OqwBi" id="1uL8CIttxU9" role="37wK5m">
-                                  <node concept="37vLTw" id="1uL8CIttxEt" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="Iviav38zi" resolve="nodeReference" />
-                                  </node>
-                                  <node concept="liA8E" id="1uL8CIttzbI" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
-                                    <node concept="2YIFZM" id="1uL8CItt$g4" role="37wK5m">
-                                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
+                        <node concept="liA8E" id="33BTWbyEwXW" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                          <node concept="2YIFZM" id="33BTWbyEwXX" role="37wK5m">
+                            <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
                           </node>
                         </node>
-                      </node>
-                      <node concept="3uibUv" id="1uL8CIttr5m" role="2Ghqu4">
-                        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
                       </node>
                     </node>
                   </node>
@@ -9719,7 +9701,7 @@
                   <ref role="3cqZAo" node="23GX$R9bKE" resolve="devkit" />
                 </node>
                 <node concept="liA8E" id="23GX$R9t7O" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
                 </node>
               </node>
               <node concept="37vLTw" id="23GX$R9tkr" role="37wK5m">
@@ -12453,7 +12435,7 @@
                 <ref role="3cqZAo" node="2qDF1txKl7K" resolve="obj" />
               </node>
               <node concept="liA8E" id="2qDF1txKnSC" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~DevKit.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
               </node>
             </node>
             <node concept="liA8E" id="2qDF1txKsP5" role="2OqNvi">

@@ -455,9 +455,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
-        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
-      </concept>
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -37010,11 +37007,11 @@
                 <node concept="2N2G$s" id="3D3g9moHPOv" role="37vLTJ">
                   <ref role="3cqZAo" node="1b42fk5g_5u" resolve="icon" />
                 </node>
-                <node concept="2YIFZM" id="3D3g9moI5Qu" role="37vLTx">
+                <node concept="2YIFZM" id="6YCtl_lurNw" role="37vLTx">
                   <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                  <ref role="37wK5l" to="sn11:277Nzj6qTH$" resolve="getIconForConceptFQName" />
-                  <node concept="3nh3qo" id="3D3g9moI5Qv" role="37wK5m">
-                    <ref role="3nh3qp" to="2gv2:3D3g9moHPOg" resolve="MComplexValue" />
+                  <ref role="37wK5l" to="sn11:57eXx5f9CcF" resolve="getIconFor" />
+                  <node concept="35c_gC" id="6YCtl_lurXv" role="37wK5m">
+                    <ref role="35c_gD" to="2gv2:3D3g9moHPOg" resolve="MComplexValue" />
                   </node>
                 </node>
               </node>
@@ -37158,11 +37155,11 @@
                   <node concept="2N2G$s" id="3D3g9moI5QS" role="37vLTJ">
                     <ref role="3cqZAo" node="1b42fk5g_33" resolve="icon" />
                   </node>
-                  <node concept="2YIFZM" id="3D3g9moI5QT" role="37vLTx">
+                  <node concept="2YIFZM" id="6YCtl_lusr$" role="37vLTx">
                     <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                    <ref role="37wK5l" to="sn11:277Nzj6qTH$" resolve="getIconForConceptFQName" />
-                    <node concept="3nh3qo" id="3D3g9moI5QU" role="37wK5m">
-                      <ref role="3nh3qp" to="2gv2:3D3g9moHPOe" resolve="MPrimitiveValue" />
+                    <ref role="37wK5l" to="sn11:57eXx5f9CcF" resolve="getIconFor" />
+                    <node concept="35c_gC" id="6YCtl_lus_V" role="37wK5m">
+                      <ref role="35c_gD" to="2gv2:3D3g9moHPOe" resolve="MPrimitiveValue" />
                     </node>
                   </node>
                 </node>

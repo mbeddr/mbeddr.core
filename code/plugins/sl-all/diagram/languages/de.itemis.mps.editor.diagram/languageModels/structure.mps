@@ -2,7 +2,7 @@
 <model ref="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2016,6 +2016,22 @@
     <property role="EcuMT" value="7859343581441233262" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="7tKD69sA99S">
+    <property role="1pbfSe" value="737593638" />
+    <property role="TrG5h" value="Function_canDrop" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7tKD69sA9c3">
+    <property role="1pbfSe" value="737593499" />
+    <property role="TrG5h" value="Parameter_dropData" />
+    <property role="34LRSv" value="data" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7tKD69sAa9e">
+    <property role="1pbfSe" value="737589584" />
+    <property role="TrG5h" value="Function_drop" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
   <node concept="1TIwiD" id="7tKD69sB2Fv">
     <property role="1pbfSe" value="737358015" />
     <property role="TrG5h" value="DropHandler" />
@@ -2033,21 +2049,11 @@
       <ref role="20lvS9" node="7tKD69sAa9e" resolve="Function_drop" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7tKD69sA9c3">
-    <property role="1pbfSe" value="737593499" />
-    <property role="TrG5h" value="Parameter_dropData" />
-    <property role="34LRSv" value="data" />
-    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-  </node>
-  <node concept="1TIwiD" id="7tKD69sAa9e">
-    <property role="1pbfSe" value="737589584" />
-    <property role="TrG5h" value="Function_drop" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-  </node>
-  <node concept="1TIwiD" id="7tKD69sA99S">
-    <property role="1pbfSe" value="737593638" />
-    <property role="TrG5h" value="Function_canDrop" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  <node concept="1TIwiD" id="4rMwD1We6Mi">
+    <property role="1pbfSe" value="1020596446" />
+    <property role="TrG5h" value="EditorContextExpression" />
+    <property role="34LRSv" value="editorContext" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
 </model>
 
