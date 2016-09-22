@@ -239,6 +239,7 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -2425,7 +2426,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3x8VRR" id="5gCJTa6XZs6" role="2OqNvi" />
+                    <node concept="3w_OXm" id="5HeVhm1zeZP" role="2OqNvi" />
                   </node>
                 </node>
               </node>
