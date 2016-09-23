@@ -9517,7 +9517,7 @@
                     <node concept="pncrf" id="164b17DMn6N" role="37wK5m" />
                     <node concept="2ShNRf" id="164b17DMn6O" role="37wK5m">
                       <node concept="1pGfFk" id="164b17DMn6P" role="2ShVmc">
-                        <ref role="37wK5l" to="kcid:~CellLayout_Horizontal.&lt;init&gt;()" resolve="CellLayout_Horizontal" />
+                        <ref role="37wK5l" to="kcid:~CellLayout_Indent.&lt;init&gt;()" resolve="CellLayout_Indent" />
                       </node>
                     </node>
                     <node concept="10Nm6u" id="164b17DMn6Q" role="37wK5m" />
