@@ -8,9 +8,11 @@
   <imports>
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="bryn" ref="r:9f8e322d-e446-4cbf-a6b4-ec0732156eda(com.mbeddr.analyses.cpa.rt.base)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -24,12 +26,8 @@
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
-      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
-        <reference id="1169127628841" name="intfc" index="PrY4T" />
-      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
-        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -56,10 +54,7 @@
     <property role="TrG5h" value="AssertionsAnalysis" />
     <property role="34LRSv" value="Assertions Analysis (CPA)" />
     <property role="EcuMT" value="5320718137711358982" />
-    <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
-    <node concept="PrWs8" id="3OLe0nF7m8D" role="PzmwI">
-      <ref role="PrY4T" node="3OLe0nF673L" resolve="ICPAAnalysisConfig" />
-    </node>
+    <ref role="1TJDcQ" node="4bjR9DubIhZ" resolve="CPACheckerAnalysisConfigBase" />
   </node>
   <node concept="PlHQZ" id="3OLe0nF673L">
     <property role="TrG5h" value="ICPAAnalysisConfig" />
@@ -210,6 +205,42 @@
     <property role="TrG5h" value="BmcInductionConfig" />
     <property role="34LRSv" value="-bmc-induction" />
     <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+  </node>
+  <node concept="1TIwiD" id="4bjR9DubIhZ">
+    <property role="EcuMT" value="4815434982152397951" />
+    <property role="TrG5h" value="CPACheckerAnalysisConfigBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
+    <node concept="1TJgyj" id="5BkFC2yhyH$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entryPoint" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="6472990431939799908" />
+      <ref role="20lvS9" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+    </node>
+    <node concept="1TJgyj" id="4bjR9DubIJg" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="config" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4815434982152399824" />
+      <ref role="20lvS9" node="4iwsNco_10Y" resolve="ConfigBase" />
+    </node>
+    <node concept="1TJgyi" id="4bjR9DubIHZ" role="1TKVEl">
+      <property role="IQ2nx" value="4815434982152399743" />
+      <property role="TrG5h" value="dumpPreprocessor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4bjR9DubII0" role="1TKVEl">
+      <property role="IQ2nx" value="4815434982152399744" />
+      <property role="TrG5h" value="wallTimeoutInSeconds" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4bjR9DubII1" role="1TKVEl">
+      <property role="IQ2nx" value="4815434982152399745" />
+      <property role="TrG5h" value="showDetailedConfigOptions" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 

@@ -14,9 +14,10 @@
         <child id="3854501276818680287" name="exp" index="ardAy" />
       </concept>
       <concept id="3854501276818669093" name="com.mbeddr.analyses.cpa.structure.PredicateAnalysisBitpreciseConfig" flags="ng" index="argTo" />
-      <concept id="4409367108242665713" name="com.mbeddr.analyses.cpa.structure.ICPAAnalysisConfig" flags="ng" index="3makzO">
-        <property id="8861278523436661209" name="wallTimeoutInSeconds" index="1fLeK7" />
-        <child id="4409367108243085467" name="config" index="3mbY2u" />
+      <concept id="4815434982152397951" name="com.mbeddr.analyses.cpa.structure.CPACheckerAnalysisConfigBase" flags="ng" index="sZjz_">
+        <property id="4815434982152399744" name="wallTimeoutInSeconds" index="sZjsq" />
+        <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
+        <child id="4815434982152399824" name="config" index="sZjta" />
       </concept>
       <concept id="5320718137711358982" name="com.mbeddr.analyses.cpa.structure.AssertionsAnalysis" flags="ng" index="3X_ozM" />
     </language>
@@ -91,9 +92,6 @@
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="4887422885165621122" name="com.mbeddr.analyses.cbmc.structure.CPROVERassume" flags="ng" index="1EIGaU">
         <child id="4887422885165621123" name="exp" index="1EIGaV" />
-      </concept>
-      <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
     </language>
     <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
@@ -221,113 +219,35 @@
     <node concept="3GEVxB" id="3WNsrgedEoA" role="3W6d8T">
       <ref role="3GEb4d" node="3WNsrged$QO" resolve="counterexamples" />
     </node>
-    <node concept="3X_ozM" id="4iwsNco_Soj" role="3V$2$K">
-      <property role="2lelRm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2l50Lc" value="false" />
-      <property role="22uFEx" value="false" />
-      <property role="1Bxwel" value="false" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="1fLeK7" value="20" />
+    <node concept="3X_ozM" id="4bjR9DucHYU" role="3V$2$K">
+      <property role="sZjsq" value="20" />
       <ref role="3V$Cn$" node="4BmZfiOhEZY" resolve="assertsWhichHold" />
-      <node concept="argTo" id="4xsg9L3DzSC" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9DucI02" role="sZjta" />
     </node>
-    <node concept="3X_ozM" id="4iwsNco_SnR" role="3V$2$K">
-      <property role="2lelRm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2l50Lc" value="false" />
-      <property role="22uFEx" value="false" />
-      <property role="1Bxwel" value="false" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="1fLeK7" value="20" />
+    <node concept="3X_ozM" id="4bjR9DucI2x" role="3V$2$K">
+      <property role="sZjsq" value="20" />
       <ref role="3V$Cn$" node="5KYWJPNOUOg" resolve="assertsWhichFails" />
-      <node concept="argTo" id="4xsg9L3DzSF" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9DucI2y" role="sZjta" />
     </node>
-    <node concept="3X_ozM" id="4iwsNco_Sp1" role="3V$2$K">
-      <property role="2lelRm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2l50Lc" value="false" />
-      <property role="22uFEx" value="false" />
-      <property role="1Bxwel" value="false" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="1fLeK7" value="20" />
+    <node concept="3X_ozM" id="4bjR9DucI2Q" role="3V$2$K">
+      <property role="sZjsq" value="20" />
       <ref role="3V$Cn$" node="6TQiFFuRlub" resolve="multipleAssertionsBothWhichFailAndWhichHold" />
-      <node concept="argTo" id="3lXW7OZ4gYu" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9DucI2R" role="sZjta" />
     </node>
-    <node concept="3X_ozM" id="3lXW7OZ4ra0" role="3V$2$K">
-      <property role="2lelRm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2l50Lc" value="false" />
-      <property role="22uFEx" value="false" />
-      <property role="1Bxwel" value="false" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="1fLeK7" value="20" />
-      <ref role="3V$Cn$" node="3lXW7OZ4oBQ" resolve="directCPROVERAssume" />
-      <node concept="argTo" id="4bjR9Du7jjV" role="3mbY2u" />
-    </node>
-    <node concept="3X_ozM" id="4xsg9L3DLgD" role="3V$2$K">
-      <property role="2lelRm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2l50Lc" value="false" />
-      <property role="22uFEx" value="false" />
-      <property role="1Bxwel" value="false" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="1fLeK7" value="20" />
+    <node concept="3X_ozM" id="4bjR9DucI3j" role="3V$2$K">
+      <property role="sZjsq" value="20" />
       <ref role="3V$Cn$" node="4xsg9L3DJqV" resolve="directVERIFIERAssume" />
-      <node concept="argTo" id="4bjR9Du7jjY" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9DucI3k" role="sZjta" />
     </node>
-    <node concept="3X_ozM" id="3WNsrgedEpg" role="3V$2$K">
-      <property role="2lelRm" value="false" />
-      <property role="2lUGe1" value="true" />
-      <property role="2l50Lc" value="false" />
-      <property role="22uFEx" value="false" />
-      <property role="1Bxwel" value="false" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
-      <property role="1fLeK7" value="20" />
+    <node concept="3X_ozM" id="4bjR9DucI3S" role="3V$2$K">
+      <property role="sZjsq" value="20" />
+      <ref role="3V$Cn$" node="3lXW7OZ4oBQ" resolve="directCPROVERAssume" />
+      <node concept="argTo" id="4bjR9DucI3T" role="sZjta" />
+    </node>
+    <node concept="3X_ozM" id="4bjR9DucILb" role="3V$2$K">
+      <property role="sZjsq" value="20" />
       <ref role="3V$Cn$" node="3WNsrged$QP" resolve="smokeCounterexample" />
-      <node concept="argTo" id="4bjR9Du7jk1" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9DucILc" role="sZjta" />
     </node>
   </node>
   <node concept="N3F5e" id="4BmZfiOhEZA">

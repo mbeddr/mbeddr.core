@@ -83,7 +83,7 @@
   </registry>
   <node concept="2S6QgY" id="7FT_tSPf8gZ">
     <property role="TrG5h" value="toggleDetailedConfigOptions" />
-    <ref role="2ZfgGC" to="km6g:3OLe0nF673L" resolve="ICPAAnalysisConfig" />
+    <ref role="2ZfgGC" to="km6g:4bjR9DubIhZ" resolve="CPACheckerAnalysisConfigBase" />
     <node concept="2S6ZIM" id="7FT_tSPf8h0" role="2ZfVej">
       <node concept="3clFbS" id="7FT_tSPf8h1" role="2VODD2">
         <node concept="3cpWs8" id="7FT_tSPf9a6" role="3cqZAp">
@@ -100,7 +100,7 @@
               <node concept="2OqwBi" id="7FT_tSPf9Zc" role="3K4Cdx">
                 <node concept="2Sf5sV" id="7FT_tSPf9O8" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7FT_tSPfapa" role="2OqNvi">
-                  <ref role="3TsBF5" to="km6g:7FT_tSPf7I$" resolve="showDetailedConfigOptions" />
+                  <ref role="3TsBF5" to="km6g:4bjR9DubII1" resolve="showDetailedConfigOptions" />
                 </node>
               </node>
             </node>
@@ -126,14 +126,14 @@
               <node concept="2OqwBi" id="7FT_tSPfgVg" role="3fr31v">
                 <node concept="2Sf5sV" id="7FT_tSPfgO2" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7FT_tSPfhiw" role="2OqNvi">
-                  <ref role="3TsBF5" to="km6g:7FT_tSPf7I$" resolve="showDetailedConfigOptions" />
+                  <ref role="3TsBF5" to="km6g:4bjR9DubII1" resolve="showDetailedConfigOptions" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="7FT_tSPffXU" role="37vLTJ">
               <node concept="2Sf5sV" id="7FT_tSPffS$" role="2Oq$k0" />
               <node concept="3TrcHB" id="7FT_tSPfgfU" role="2OqNvi">
-                <ref role="3TsBF5" to="km6g:7FT_tSPf7I$" resolve="showDetailedConfigOptions" />
+                <ref role="3TsBF5" to="km6g:4bjR9DubII1" resolve="showDetailedConfigOptions" />
               </node>
             </node>
           </node>
