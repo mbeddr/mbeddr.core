@@ -2771,6 +2771,70 @@
       <node concept="10P_77" id="Q01lBr57b2" role="3clF45" />
       <node concept="3Tm1VV" id="Q01lBr55$e" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="36CzSVYItK9" role="jymVt" />
+    <node concept="2YIFZL" id="36CzSVYI$GB" role="jymVt">
+      <property role="TrG5h" value="isExactly" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="36CzSVYI_mo" role="3clF46">
+        <property role="TrG5h" value="c1" />
+        <node concept="3bZ5Sz" id="36CzSVYI_nz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="36CzSVYI_nI" role="3clF46">
+        <property role="TrG5h" value="c2" />
+        <node concept="3bZ5Sz" id="36CzSVYI_o4" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="36CzSVYIzOl" role="3clF47">
+        <node concept="3SKdUt" id="36CzSVYI_pT" role="3cqZAp">
+          <node concept="3SKdUq" id="36CzSVYI_pU" role="3SKWNk">
+            <property role="3SKdUp" value="there is a bug in MPS when you use node.concept.isExactly with interfaces (returns always false)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="36CzSVYI_r0" role="3cqZAp" />
+        <node concept="3clFbF" id="36CzSVYI_t3" role="3cqZAp">
+          <node concept="1Wc70l" id="36CzSVYIAfX" role="3clFbG">
+            <node concept="17R0WA" id="36CzSVYIAua" role="3uHU7w">
+              <node concept="2OqwBi" id="36CzSVYIA_1" role="3uHU7w">
+                <node concept="37vLTw" id="36CzSVYIAxk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="36CzSVYI_nI" resolve="c2" />
+                </node>
+                <node concept="liA8E" id="36CzSVYIAEO" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="36CzSVYIAmX" role="3uHU7B">
+                <node concept="37vLTw" id="36CzSVYIAjC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="36CzSVYI_mo" resolve="c1" />
+                </node>
+                <node concept="liA8E" id="36CzSVYIAsv" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                </node>
+              </node>
+            </node>
+            <node concept="17R0WA" id="36CzSVYIA1T" role="3uHU7B">
+              <node concept="2OqwBi" id="36CzSVYI_vR" role="3uHU7B">
+                <node concept="37vLTw" id="36CzSVYI_t1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="36CzSVYI_mo" resolve="c1" />
+                </node>
+                <node concept="liA8E" id="36CzSVYI_DA" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="36CzSVYIA8a" role="3uHU7w">
+                <node concept="37vLTw" id="36CzSVYIA4M" role="2Oq$k0">
+                  <ref role="3cqZAo" node="36CzSVYI_nI" resolve="c2" />
+                </node>
+                <node concept="liA8E" id="36CzSVYIAdg" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="36CzSVYIAGj" role="3clF45" />
+      <node concept="3Tm1VV" id="36CzSVYIzOk" role="1B3o_S" />
+    </node>
     <node concept="3Tm1VV" id="RbLMy696h4" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="RbLMy69lMx">
