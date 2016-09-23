@@ -232,6 +232,9 @@
       <property role="IQ2ns" value="6876648630975719722" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4bjR9Du9mHr" role="PzmwI">
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7MOa6vKIydd">
     <property role="3GE5qa" value="harness" />
