@@ -21,6 +21,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="intConceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -29,6 +30,10 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -65,6 +70,21 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="4409367108243085467" />
       <ref role="20lvS9" node="4iwsNco_10Y" resolve="ConfigBase" />
+    </node>
+    <node concept="1TJgyi" id="7FT_tSPeOJh" role="1TKVEl">
+      <property role="IQ2nx" value="8861278523436518353" />
+      <property role="TrG5h" value="dumpPreprocessor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7FT_tSPfnBp" role="1TKVEl">
+      <property role="IQ2nx" value="8861278523436661209" />
+      <property role="TrG5h" value="wallTimeoutInSeconds" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7FT_tSPf7I$" role="1TKVEl">
+      <property role="IQ2nx" value="8861278523436596132" />
+      <property role="TrG5h" value="showDetailedConfigOptions" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="4iwsNco_10Y">
@@ -177,6 +197,18 @@
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="BmcConfig" />
     <property role="34LRSv" value="-bmc" />
+    <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
+    <node concept="1TJgyi" id="6DyOajs7zv6" role="1TKVEl">
+      <property role="IQ2nx" value="7665918922224187334" />
+      <property role="TrG5h" value="maxLoopIterations" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FT_tSPcLi_">
+    <property role="EcuMT" value="8861278523435979941" />
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="BmcInductionConfig" />
+    <property role="34LRSv" value="-bmc-induction" />
     <ref role="1TJDcQ" node="4iwsNco_10Y" resolve="ConfigBase" />
   </node>
 </model>

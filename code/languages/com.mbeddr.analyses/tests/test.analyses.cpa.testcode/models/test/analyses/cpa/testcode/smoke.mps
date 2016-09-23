@@ -10,12 +10,12 @@
   </imports>
   <registry>
     <language id="fe179c61-4531-423b-a95c-f5f59a664603" name="com.mbeddr.analyses.cpa">
-      <concept id="8801478157208014628" name="com.mbeddr.analyses.cpa.structure.Svcomp16Config" flags="ng" index="8AQV$" />
       <concept id="3854501276818680286" name="com.mbeddr.analyses.cpa.structure.VERIFIER_assume" flags="ng" index="ardAz">
         <child id="3854501276818680287" name="exp" index="ardAy" />
       </concept>
       <concept id="3854501276818669093" name="com.mbeddr.analyses.cpa.structure.PredicateAnalysisBitpreciseConfig" flags="ng" index="argTo" />
       <concept id="4409367108242665713" name="com.mbeddr.analyses.cpa.structure.ICPAAnalysisConfig" flags="ng" index="3makzO">
+        <property id="8861278523436661209" name="wallTimeoutInSeconds" index="1fLeK7" />
         <child id="4409367108243085467" name="config" index="3mbY2u" />
       </concept>
       <concept id="5320718137711358982" name="com.mbeddr.analyses.cpa.structure.AssertionsAnalysis" flags="ng" index="3X_ozM" />
@@ -235,6 +235,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="1fLeK7" value="20" />
       <ref role="3V$Cn$" node="4BmZfiOhEZY" resolve="assertsWhichHold" />
       <node concept="argTo" id="4xsg9L3DzSC" role="3mbY2u" />
     </node>
@@ -252,6 +253,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="1fLeK7" value="20" />
       <ref role="3V$Cn$" node="5KYWJPNOUOg" resolve="assertsWhichFails" />
       <node concept="argTo" id="4xsg9L3DzSF" role="3mbY2u" />
     </node>
@@ -269,6 +271,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="1fLeK7" value="20" />
       <ref role="3V$Cn$" node="6TQiFFuRlub" resolve="multipleAssertionsBothWhichFailAndWhichHold" />
       <node concept="argTo" id="3lXW7OZ4gYu" role="3mbY2u" />
     </node>
@@ -286,8 +289,9 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="1fLeK7" value="20" />
       <ref role="3V$Cn$" node="3lXW7OZ4oBQ" resolve="directCPROVERAssume" />
-      <node concept="8AQV$" id="4xsg9L3DMY4" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9Du7jjV" role="3mbY2u" />
     </node>
     <node concept="3X_ozM" id="4xsg9L3DLgD" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -303,8 +307,9 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="1fLeK7" value="20" />
       <ref role="3V$Cn$" node="4xsg9L3DJqV" resolve="directVERIFIERAssume" />
-      <node concept="8AQV$" id="4xsg9L3DMY7" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9Du7jjY" role="3mbY2u" />
     </node>
     <node concept="3X_ozM" id="3WNsrgedEpg" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -320,8 +325,9 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="1fLeK7" value="20" />
       <ref role="3V$Cn$" node="3WNsrged$QP" resolve="smokeCounterexample" />
-      <node concept="8AQV$" id="3WNsrgedEpK" role="3mbY2u" />
+      <node concept="argTo" id="4bjR9Du7jk1" role="3mbY2u" />
     </node>
   </node>
   <node concept="N3F5e" id="4BmZfiOhEZA">
