@@ -7509,6 +7509,37 @@
             <ref role="3bR37D" to="al5i:2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7LklpYzTEFh" role="3bR37C">
+          <node concept="3bR9La" id="7LklpYzTEFi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7LklpYzTEFj" role="3bR37C">
+          <node concept="3bR9La" id="7LklpYzTEFk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7LklpYzTEFy" role="3bR37C">
+          <node concept="1BurEX" id="7LklpYzTEFz" role="1SiIV1">
+            <node concept="398BVA" id="7LklpYzTEFl" role="1BurEY">
+              <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+              <node concept="2Ry0Ak" id="7LklpYzTEFm" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7LklpYzTEFn" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.analyses.utils" />
+                  <node concept="2Ry0Ak" id="7LklpYzTEFo" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7LklpYzTEFp" role="2Ry0An">
+                      <property role="2Ry0Am" value="swingx-core-1.6.2.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuFwq" role="3989C9">
@@ -9004,25 +9035,6 @@
           <node concept="3bR9La" id="2gUILg$h0Fe" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="68jd02CrgxK" role="3bR37C">
-          <node concept="1BurEX" id="68jd02CrgxL" role="1SiIV1">
-            <node concept="398BVA" id="68jd02Crgxz" role="1BurEY">
-              <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
-              <node concept="2Ry0Ak" id="68jd02Crgx$" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="68jd02Crgx_" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.rt" />
-                  <node concept="2Ry0Ak" id="68jd02CrgxA" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="68jd02CrgxB" role="2Ry0An">
-                      <property role="2Ry0Am" value="swingx-core-1.6.2.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="7O803LbVCPZ" role="3bR37C">
@@ -10600,23 +10612,6 @@
         </node>
         <node concept="m$_wl" id="7eF9rfAuFw6" role="39821P">
           <ref role="m_rDy" node="7eF9rfAuFw7" resolve="com.mbeddr.analyses.cbmc" />
-          <node concept="28jJK3" id="68jd02CrWmv" role="39821P">
-            <node concept="398BVA" id="68jd02CrWmz" role="28jJRO">
-              <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
-              <node concept="2Ry0Ak" id="68jd02CrX_w" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="68jd02CrX__" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.rt" />
-                  <node concept="2Ry0Ak" id="68jd02CrX_E" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="68jd02CrX_J" role="2Ry0An">
-                      <property role="2Ry0Am" value="swingx-core-1.6.2.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3981dG" id="7eF9rfAuDVd" role="39821P">
@@ -10627,6 +10622,23 @@
         </node>
         <node concept="m$_wl" id="7eF9rfAuDVg" role="39821P">
           <ref role="m_rDy" node="7eF9rfAuDVh" resolve="com.mbeddr.analyses.base" />
+          <node concept="28jJK3" id="1EZfgaQeV3R" role="39821P">
+            <node concept="398BVA" id="1EZfgaQeV3S" role="28jJRO">
+              <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+              <node concept="2Ry0Ak" id="1EZfgaQeV3T" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1EZfgaQeV3U" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.analyses.utils" />
+                  <node concept="2Ry0Ak" id="1EZfgaQeV3V" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="1EZfgaQeV3W" role="2Ry0An">
+                      <property role="2Ry0Am" value="swingx-core-1.6.2.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3981dG" id="7eF9rfAnuiy" role="39821P">

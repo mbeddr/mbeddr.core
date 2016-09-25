@@ -238,7 +238,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -453,6 +453,11 @@
       <node concept="3uibUv" id="4_pSipqUUJq" role="1tU5fm">
         <ref role="3uigEE" to="p8vh:4_pSipqUB$z" resolve="CProverResultsUI" />
       </node>
+      <node concept="2ShNRf" id="TJrbINfUfZ" role="33vP2m">
+        <node concept="1pGfFk" id="TJrbINfUg0" role="2ShVmc">
+          <ref role="37wK5l" to="p8vh:4_pSipqUD1U" resolve="CProverResultsUI" />
+        </node>
+      </node>
     </node>
     <node concept="2BZ0e9" id="3My0e4qMqM5" role="2XNbBz">
       <property role="TrG5h" value="project" />
@@ -562,21 +567,6 @@
     </node>
     <node concept="2xpIHi" id="31nZcrlDrXG" role="uR5cp">
       <node concept="3clFbS" id="31nZcrlDrXH" role="2VODD2">
-        <node concept="3clFbF" id="7SEzm$1Xrx" role="3cqZAp">
-          <node concept="37vLTI" id="7SEzm$1Xs6" role="3clFbG">
-            <node concept="2ShNRf" id="7SEzm$1Xs9" role="37vLTx">
-              <node concept="1pGfFk" id="7SEzm$22JQ" role="2ShVmc">
-                <ref role="37wK5l" to="p8vh:4_pSipqUD1U" resolve="CProverResultsUI" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7SEzm$1XrL" role="37vLTJ">
-              <node concept="2WthIp" id="7SEzm$1Xry" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="7SEzm$1XrQ" role="2OqNvi">
-                <ref role="2WH_rO" node="1ptFCtLsc6c" resolve="resultsPanel" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3My0e4qMgBb" role="3cqZAp">
           <node concept="2OqwBi" id="3My0e4qMgBK" role="3clFbG">
             <node concept="2OqwBi" id="3My0e4qMgBr" role="2Oq$k0">
@@ -3147,7 +3137,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="6hXQBIqUuOs" role="2OqNvi">
-                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+                  <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
                 </node>
               </node>
             </node>
