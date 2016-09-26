@@ -428,7 +428,7 @@
     <node concept="2tJIrI" id="5xg5HONnWQ2" role="jymVt" />
     <node concept="3clFb_" id="1ql_u0$LO1E" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="isMajorState" />
+      <property role="TrG5h" value="isMajor" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="1ql_u0$LO1H" role="3clF47">
@@ -441,7 +441,10 @@
       <node concept="3Tm1VV" id="1ql_u0$LNMJ" role="1B3o_S" />
       <node concept="10P_77" id="1ql_u0$LO1B" role="3clF45" />
       <node concept="NWlO9" id="7oz0hCwaqBU" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this state is major. Major states will be printed with BOLD in counterexamples." />
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+      <node concept="2AHcQZ" id="1EZfgaQodIj" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="12GRGX_3WW$" role="jymVt" />
@@ -459,8 +462,10 @@
       <node concept="3Tm1VV" id="5dzrqzlsFEq" role="1B3o_S" />
       <node concept="3clFbS" id="5dzrqzlsFEr" role="3clF47" />
     </node>
-    <node concept="2tJIrI" id="7oz0hCw0ehU" role="jymVt" />
     <node concept="2tJIrI" id="7oz0hCw0fnT" role="jymVt" />
+    <node concept="3uibUv" id="1EZfgaQocSY" role="EKbjA">
+      <ref role="3uigEE" to="npwl:1EZfgaQmLrT" resolve="IWhitnessEntry" />
+    </node>
   </node>
   <node concept="312cEu" id="54VWoniifyz">
     <property role="TrG5h" value="CBMCLiftedResult" />

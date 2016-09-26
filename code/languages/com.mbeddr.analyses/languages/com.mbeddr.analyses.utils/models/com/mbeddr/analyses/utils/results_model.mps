@@ -190,5 +190,24 @@
       </node>
     </node>
   </node>
+  <node concept="3HP615" id="1EZfgaQmLrT">
+    <property role="TrG5h" value="IWhitnessEntry" />
+    <node concept="2tJIrI" id="1EZfgaQmLsj" role="jymVt" />
+    <node concept="3clFb_" id="1EZfgaQmLsS" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isMajor" />
+      <node concept="3clFbS" id="1EZfgaQmLsV" role="3clF47" />
+      <node concept="3Tm1VV" id="1EZfgaQmLsW" role="1B3o_S" />
+      <node concept="10P_77" id="1EZfgaQmLsM" role="3clF45" />
+      <node concept="NWlO9" id="1EZfgaQmLtC" role="lGtFl">
+        <property role="NWlVz" value="Is this whitness entry a major one? Major entries will be printed with BOLD in the whitness." />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1EZfgaQmLrU" role="1B3o_S" />
+    <node concept="NWlO9" id="1EZfgaQmLts" role="lGtFl">
+      <property role="NWlVz" value="An entry in the whitness list." />
+    </node>
+  </node>
 </model>
 
