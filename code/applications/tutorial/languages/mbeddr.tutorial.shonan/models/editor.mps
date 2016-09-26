@@ -38,6 +38,7 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -843,9 +844,6 @@
         <node concept="3F0ifn" id="a$mxDpfoIp" role="3EZMnx">
           <property role="3F0ifm" value="intermediate stencil" />
         </node>
-        <node concept="3F0A7n" id="2dEGbba$Tj9" role="3EZMnx">
-          <ref role="1NtTu8" to="5l2n:2dEGbba$Tb$" resolve="bounded" />
-        </node>
       </node>
       <node concept="3F0ifn" id="3CmSUB7Fp__" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -943,6 +941,35 @@
       <node concept="3F0ifn" id="1OcdQnyTYwW" role="AHCbl">
         <property role="3F0ifm" value="{ ... }" />
         <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="6rrVAnc7lcR" role="6VMZX">
+      <property role="S$Qs1" value="false" />
+      <node concept="l2Vlx" id="6rrVAnc7lcS" role="2iSdaV" />
+      <node concept="3EZMnI" id="6rrVAnc7lcT" role="3EZMnx">
+        <node concept="l2Vlx" id="6rrVAnc7lcU" role="2iSdaV" />
+        <node concept="3F0ifn" id="6rrVAnc7lcV" role="3EZMnx">
+          <property role="3F0ifm" value="bounded" />
+        </node>
+        <node concept="3F0A7n" id="6rrVAnc7lcW" role="3EZMnx">
+          <ref role="1NtTu8" to="5l2n:2dEGbba$Tb$" resolve="bounded" />
+        </node>
+        <node concept="ljvvj" id="6rrVAnc7lP6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6rrVAnc7ldB" role="AHCbl">
+        <property role="3F0ifm" value=". }" />
+        <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
+      </node>
+      <node concept="3EZMnI" id="6rrVAnc7lN7" role="3EZMnx">
+        <node concept="l2Vlx" id="6rrVAnc7lN8" role="2iSdaV" />
+        <node concept="3F0ifn" id="6rrVAnc7lWC" role="3EZMnx">
+          <property role="3F0ifm" value="disable optimization" />
+        </node>
+        <node concept="3F0A7n" id="6rrVAnc7lWL" role="3EZMnx">
+          <ref role="1NtTu8" to="5l2n:6rrVAnc7lNp" resolve="noopt" />
+        </node>
       </node>
     </node>
   </node>
@@ -1324,6 +1351,20 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6rrVAnc62i1">
+    <property role="3GE5qa" value="stencil.user" />
+    <ref role="1XX52x" to="5l2n:6rrVAnc62hM" resolve="NoOptAttribute" />
+    <node concept="3EZMnI" id="6rrVAnc62i3" role="2wV5jI">
+      <node concept="l2Vlx" id="6rrVAnc62i4" role="2iSdaV" />
+      <node concept="3F0ifn" id="6rrVAnc62io" role="3EZMnx">
+        <property role="3F0ifm" value="@no-opt" />
+        <node concept="ljvvj" id="6rrVAnc66u1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2SsqMj" id="6rrVAnc62ii" role="3EZMnx" />
     </node>
   </node>
 </model>

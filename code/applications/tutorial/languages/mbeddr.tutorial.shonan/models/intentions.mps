@@ -62,6 +62,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -100,6 +103,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -388,6 +392,94 @@
         <node concept="3clFbF" id="jX_qhzt7lU" role="3cqZAp">
           <node concept="Xl_RD" id="jX_qhzt7lT" role="3clFbG">
             <property role="Xl_RC" value="Flip Dimensions" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6rrVAnc66u8">
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="NoOptAttribute_AddRemove" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="5l2n:yso5_brSDa" resolve="StencilComputation" />
+    <node concept="2S6ZIM" id="6rrVAnc66u9" role="2ZfVej">
+      <node concept="3clFbS" id="6rrVAnc66ua" role="2VODD2">
+        <node concept="3clFbJ" id="6rrVAnc66wL" role="3cqZAp">
+          <node concept="3clFbS" id="6rrVAnc66wN" role="3clFbx">
+            <node concept="3cpWs6" id="6rrVAnc67jk" role="3cqZAp">
+              <node concept="Xl_RD" id="6rrVAnc67jl" role="3cqZAk">
+                <property role="Xl_RC" value="Mark With @no-opt" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6rrVAnc66SM" role="3clFbw">
+            <node concept="10Nm6u" id="6rrVAnc66TY" role="3uHU7w" />
+            <node concept="2OqwBi" id="6rrVAnc66$E" role="3uHU7B">
+              <node concept="2Sf5sV" id="6rrVAnc66xD" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="6rrVAnc66L9" role="2OqNvi">
+                <node concept="3CFYIy" id="6rrVAnc66NX" role="3CFYIz">
+                  <ref role="3CFYIx" to="5l2n:6rrVAnc62hM" resolve="NoOptAttribute" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6rrVAnc67mc" role="9aQIa">
+            <node concept="3clFbS" id="6rrVAnc67md" role="9aQI4">
+              <node concept="3cpWs6" id="6rrVAnc67tQ" role="3cqZAp">
+                <node concept="Xl_RD" id="6rrVAnc67vb" role="3cqZAk">
+                  <property role="Xl_RC" value="Remove @no-opt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6rrVAnc66ub" role="2ZfgGD">
+      <node concept="3clFbS" id="6rrVAnc66uc" role="2VODD2">
+        <node concept="3clFbJ" id="6rrVAnc67J6" role="3cqZAp">
+          <node concept="3clFbS" id="6rrVAnc67J8" role="3clFbx">
+            <node concept="3clFbF" id="6rrVAnc688y" role="3cqZAp">
+              <node concept="2OqwBi" id="6rrVAnc68uo" role="3clFbG">
+                <node concept="2OqwBi" id="6rrVAnc68dr" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="6rrVAnc688w" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="6rrVAnc68q3" role="2OqNvi">
+                    <node concept="3CFYIy" id="6rrVAnc68r1" role="3CFYIz">
+                      <ref role="3CFYIx" to="5l2n:6rrVAnc62hM" resolve="NoOptAttribute" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="zfrQC" id="6rrVAnc68Dn" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6rrVAnc686t" role="3clFbw">
+            <node concept="10Nm6u" id="6rrVAnc686R" role="3uHU7w" />
+            <node concept="2OqwBi" id="6rrVAnc67Pr" role="3uHU7B">
+              <node concept="2Sf5sV" id="6rrVAnc67Js" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="6rrVAnc681Z" role="2OqNvi">
+                <node concept="3CFYIy" id="6rrVAnc682A" role="3CFYIz">
+                  <ref role="3CFYIx" to="5l2n:6rrVAnc62hM" resolve="NoOptAttribute" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6rrVAnc68Fc" role="9aQIa">
+            <node concept="3clFbS" id="6rrVAnc68Fd" role="9aQI4">
+              <node concept="3clFbF" id="6rrVAnc68Hg" role="3cqZAp">
+                <node concept="2OqwBi" id="6rrVAnc691u" role="3clFbG">
+                  <node concept="2OqwBi" id="6rrVAnc68M9" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="6rrVAnc68Hf" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="6rrVAnc68YL" role="2OqNvi">
+                      <node concept="3CFYIy" id="6rrVAnc68Zm" role="3CFYIz">
+                        <ref role="3CFYIx" to="5l2n:6rrVAnc62hM" resolve="NoOptAttribute" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1PgB_6" id="6rrVAnc697Z" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

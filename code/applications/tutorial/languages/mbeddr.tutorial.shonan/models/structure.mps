@@ -84,6 +84,10 @@
       <property role="TrG5h" value="bounded" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6rrVAnc7lNp" role="1TKVEl">
+      <property role="TrG5h" value="noopt" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="17Z2wzk70BQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
@@ -599,6 +603,9 @@
     <property role="3GE5qa" value="stencil.user" />
     <property role="TrG5h" value="StencilGlobalVarRef" />
     <ref role="1TJDcQ" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+    <node concept="PrWs8" id="70MaWCP9T6J" role="PzmwI">
+      <ref role="PrY4T" node="4RDsFL1G43$" resolve="IStencilVarRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5cfyNbIqUul">
     <property role="1pbfSe" value="1098592967" />
@@ -664,6 +671,21 @@
     <property role="1pbfSe" value="251130225" />
     <property role="3GE5qa" value="stencil.user" />
     <property role="TrG5h" value="IStencilComputationContent" />
+  </node>
+  <node concept="1TIwiD" id="6rrVAnc62hM">
+    <property role="1pbfSe" value="854856407" />
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="NoOptAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="6rrVAnc62hN" role="lGtFl">
+      <property role="Hh88m" value="noopt" />
+      <node concept="tn0Fv" id="6rrVAnc62hQ" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="6rrVAnc62hT" role="EQaZv">
+        <ref role="trN6q" node="yso5_brSDa" resolve="StencilComputation" />
+      </node>
+    </node>
   </node>
 </model>
 
