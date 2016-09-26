@@ -223,6 +223,9 @@
     <node concept="PrWs8" id="bhVSeEmowR" role="PzmwI">
       <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
     </node>
+    <node concept="PrWs8" id="5C47DuoDR$z" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvw">
     <property role="3GE5qa" value="functions" />
@@ -234,9 +237,6 @@
     <ref role="1TJDcQ" node="5_l8w1EmTvt" resolve="FunctionSignature" />
     <node concept="PrWs8" id="6brBMefRP1F" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
-    </node>
-    <node concept="PrWs8" id="1S6A2cmU1x0" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvx">
