@@ -172,7 +172,7 @@
         <node concept="3clFbH" id="PS2VOZ4NwA" role="3cqZAp" />
         <node concept="3vlDli" id="PS2VOZ4N5E" role="3cqZAp">
           <node concept="Xl_RD" id="PS2VOZ4Naq" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' then 'y &gt; 3'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' then 'y &gt; 3'" />
           </node>
           <node concept="2OqwBi" id="PS2VOZ4Nge" role="3tpDZA">
             <node concept="37vLTw" id="PS2VOZ4Ne2" role="2Oq$k0">
@@ -262,7 +262,7 @@
         <node concept="3clFbH" id="46evrC8eIXD" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eJ5t" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eJ5u" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' then 'y &gt; 3'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' then 'y &gt; 3'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eJ5v" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eJ5w" role="2Oq$k0">
@@ -335,7 +335,7 @@
         <node concept="3clFbH" id="5O4lpk$xy" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eMJw" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eMJx" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' must 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' must 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eMJy" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eMJz" role="2Oq$k0">
@@ -418,7 +418,7 @@
         <node concept="3clFbH" id="5O4lpk$AK" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eN5t" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eN5u" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' must 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' must 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eN5v" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eN5w" role="2Oq$k0">
@@ -491,7 +491,7 @@
         <node concept="3clFbH" id="46evrC8eJsb" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eJ_v" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eJ_w" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eJ_x" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eJ_y" role="2Oq$k0">
@@ -574,7 +574,7 @@
         <node concept="3clFbH" id="46evrC8eJK1" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eJRP" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eJRQ" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eJRR" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eJRS" role="2Oq$k0">
@@ -646,7 +646,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eKqM" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eKqN" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eKqO" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eKqP" role="2Oq$k0">
@@ -728,7 +728,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eKDj" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eKDk" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eKDl" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eKDm" role="2Oq$k0">
@@ -800,7 +800,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eM7d" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eM7e" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' exists 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' exists 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eM7f" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eM7g" role="2Oq$k0">
@@ -882,7 +882,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eMcL" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eMcM" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' exists 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' exists 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eMcN" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eMcO" role="2Oq$k0">
@@ -954,7 +954,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eL4u" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eL4v" role="3tpDZB">
-            <property role="Xl_RC" value="'x == 0' immediately precedes 'y == 0'" />
+            <property role="Xl_RC" value="Assert: 'x == 0' immediately precedes 'y == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eL4w" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eL4x" role="2Oq$k0">
@@ -1036,7 +1036,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8f728" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8f729" role="3tpDZB">
-            <property role="Xl_RC" value="'x == 0' immediately precedes 'y == 0'" />
+            <property role="Xl_RC" value="Assert: 'x == 0' immediately precedes 'y == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8f72a" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8f72b" role="2Oq$k0">
