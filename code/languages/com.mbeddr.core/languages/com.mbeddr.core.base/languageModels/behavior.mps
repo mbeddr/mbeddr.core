@@ -11122,6 +11122,25 @@
       <node concept="3cqZAl" id="1yFmGPnLcLc" role="3clF45" />
       <node concept="3Tm1VV" id="1yFmGPnLcLd" role="1B3o_S" />
       <node concept="3clFbS" id="1yFmGPnLcLe" role="3clF47">
+        <node concept="3clFbF" id="1H$aNXeSpQY" role="3cqZAp">
+          <node concept="2OqwBi" id="1H$aNXeSpQV" role="3clFbG">
+            <node concept="10M0yZ" id="1H$aNXeSpQW" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="1H$aNXeSpQX" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1H$aNXeT_L9" role="37wK5m">
+                <node concept="37vLTw" id="1H$aNXeT_Xi" role="3uHU7w">
+                  <ref role="3cqZAo" node="1yFmGPnLcLr" resolve="imageFileName" />
+                </node>
+                <node concept="Xl_RD" id="1H$aNXeSpXy" role="3uHU7B">
+                  <property role="Xl_RC" value="HAAAAAALLLLLOOOOOO  " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1yFmGPnLcLf" role="3cqZAp">
           <node concept="2YIFZM" id="1yFmGPnLcLg" role="3clFbG">
             <ref role="1Pybhc" node="1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
