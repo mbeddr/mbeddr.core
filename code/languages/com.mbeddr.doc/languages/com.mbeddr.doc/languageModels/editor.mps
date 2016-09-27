@@ -5,7 +5,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="-1" />
     <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
@@ -14,7 +14,7 @@
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -24,27 +24,27 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
-    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
-    <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
+    <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
+    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image()" />
+    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer()" />
+    <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio()" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing()" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net()" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt()" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor()" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event()" />
+    <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text()" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="ag3p" ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.runtime)" />
+    <import index="ag3p" ref="r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink.runtime)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="23h6" ref="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" />
     <import index="18rm" ref="r:32e7668a-cc1d-445f-a538-678c22b2fafb(de.slisson.mps.tables.runtime.substitute)" />
-    <import index="tj7y" ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.editor)" />
-    <import index="epcs" ref="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)" />
+    <import index="tj7y" ref="r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink.editor)" />
+    <import index="epcs" ref="r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -1208,8 +1208,8 @@
         </node>
         <node concept="3F1sOY" id="2TZO3DbvcWg" role="3EZMnx">
           <property role="1$x2rV" value="enter text here" />
-          <ref role="1NtTu8" to="2c95:2TZO3DbvcWd" resolve="text" />
           <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
+          <ref role="1NtTu8" to="2c95:2TZO3DbvcWd" resolve="text" />
           <node concept="VechU" id="5mf_X_LaWxW" role="3F10Kt">
             <property role="Vb096" value="darkGray" />
           </node>
@@ -2751,8 +2751,8 @@
         <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
       </node>
       <node concept="3F1sOY" id="5mf_X_LbqjF" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:5mf_X_Lbqjz" resolve="ref" />
         <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
+        <ref role="1NtTu8" to="2c95:5mf_X_Lbqjz" resolve="ref" />
       </node>
       <node concept="3F0ifn" id="hZfTLLsAuk" role="3EZMnx">
         <property role="3F0ifm" value="ref only" />
@@ -3628,8 +3628,8 @@
                               <node concept="2r2w_c" id="IWU1J3Ezy4" role="37wK5m" />
                               <node concept="10Nm6u" id="IWU1J3EzDU" role="37wK5m" />
                               <node concept="28GBK8" id="IWU1J3EzVD" role="37wK5m">
-                                <ref role="28H3Ia" to="2c95:4vQSg$ArKJL" resolve="cells" />
                                 <ref role="28GBKb" to="2c95:4vQSg$ArKJI" resolve="TableRow" />
+                                <ref role="28H3Ia" to="2c95:4vQSg$ArKJL" resolve="cells" />
                               </node>
                             </node>
                           </node>
@@ -5115,8 +5115,8 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3DAECxFHGSm" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:5mf_X_La_N_" resolve="text" />
         <ref role="34QXea" node="3DAECxFHCVq" resolve="goToURL" />
+        <ref role="1NtTu8" to="2c95:5mf_X_La_N_" resolve="text" />
         <node concept="3tD6jV" id="3PCHQK5OVtd" role="3F10Kt">
           <ref role="3tD7wE" to="tj7y:5A_Zlt6qyoK" resolve="hyperlink-handler" />
           <node concept="3sjG9q" id="3PCHQK5OVte" role="3tD6jU">
@@ -5333,8 +5333,8 @@
       </node>
       <node concept="3F1sOY" id="4E5hYf5RVbZ" role="3EZMnx">
         <property role="1$x2rV" value="enter text here" />
-        <ref role="1NtTu8" to="2c95:2TZO3DbvcWd" resolve="text" />
         <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
+        <ref role="1NtTu8" to="2c95:2TZO3DbvcWd" resolve="text" />
       </node>
     </node>
     <node concept="2aJ2om" id="4E5hYf5Sdjv" role="CpUAK">
@@ -6018,9 +6018,9 @@
       </node>
       <node concept="l2Vlx" id="4E5hYf6xTJP" role="2iSdaV" />
       <node concept="3F1sOY" id="4E5hYf6xTJX" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:5mf_X_La_N_" resolve="text" />
         <ref role="34QXea" node="3DAECxFHCVq" resolve="goToURL" />
         <ref role="1k5W1q" node="aiIotXrYWY" resolve="ref" />
+        <ref role="1NtTu8" to="2c95:5mf_X_La_N_" resolve="text" />
       </node>
     </node>
     <node concept="2aJ2om" id="4E5hYf6xTKa" role="CpUAK">
@@ -6990,8 +6990,8 @@
     <node concept="3F2HdR" id="1YUFCeG6pXh" role="2wV5jI">
       <property role="2czwfO" value="." />
       <property role="Q2I2d" value="punctuation" />
-      <ref role="1NtTu8" to="2c95:1YUFCeG6oKc" resolve="elements" />
       <ref role="1k5W1q" node="3RseghId8o$" resolve="nodeReference" />
+      <ref role="1NtTu8" to="2c95:1YUFCeG6oKc" resolve="elements" />
       <node concept="tppnM" id="7IDbqDDIO_" role="sWeuL">
         <node concept="11L4FC" id="7IDbqDDIOC" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -8145,8 +8145,8 @@
           </node>
         </node>
         <node concept="3F1sOY" id="627_yy34Gwm" role="3EZMnx">
-          <ref role="1NtTu8" to="2c95:627_yy34G1h" resolve="sizeSpec" />
           <ref role="1k5W1q" node="3RseghId8o$" resolve="nodeReference" />
+          <ref role="1NtTu8" to="2c95:627_yy34G1h" resolve="sizeSpec" />
         </node>
       </node>
       <node concept="3EZMnI" id="627_yy34Gwn" role="3EZMnx">
@@ -9567,7 +9567,7 @@
                     <node concept="pncrf" id="164b17DMn6N" role="37wK5m" />
                     <node concept="2ShNRf" id="164b17DMn6O" role="37wK5m">
                       <node concept="1pGfFk" id="164b17DMn6P" role="2ShVmc">
-                        <ref role="37wK5l" to="kcid:~CellLayout_Horizontal.&lt;init&gt;()" resolve="CellLayout_Horizontal" />
+                        <ref role="37wK5l" to="kcid:~CellLayout_Indent.&lt;init&gt;()" resolve="CellLayout_Indent" />
                       </node>
                     </node>
                     <node concept="10Nm6u" id="164b17DMn6Q" role="37wK5m" />
@@ -10456,12 +10456,12 @@
       <node concept="2YIFZM" id="26B0wrEu6u0" role="33vP2m">
         <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
         <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+        <node concept="3uibUv" id="3r9fyo$4K3N" role="3PaCim">
+          <ref role="3uigEE" to="wyt6:~CharSequence" resolve="CharSequence" />
+        </node>
         <node concept="10M0yZ" id="3_8b9975II6" role="37wK5m">
           <ref role="1PxDUh" node="3_8b99743FU" resolve="CodeParagraphHelper" />
           <ref role="3cqZAo" node="3_8b9975IHX" resolve="NULL_TEXT_MARKER" />
-        </node>
-        <node concept="3uibUv" id="3r9fyo$4K3N" role="3PaCim">
-          <ref role="3uigEE" to="wyt6:~CharSequence" resolve="CharSequence" />
         </node>
       </node>
       <node concept="3uibUv" id="26B0wrEu8R5" role="1tU5fm">
@@ -11151,23 +11151,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="3cUcim$c7G2">
-    <ref role="aqKnT" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
-    <node concept="1s_PAr" id="3cUcim$c7Hr" role="3ft7WO">
-      <node concept="2kknPI" id="3cUcim$c7Hs" role="1s_PAo">
-        <ref role="2kkw0f" node="3cUcim$c7G3" resolve="makeHeaderPar" />
-      </node>
-    </node>
-    <node concept="1s_PAr" id="3cUcim$c7IO" role="3ft7WO">
-      <node concept="2kknPI" id="3cUcim$c7IP" role="1s_PAo">
-        <ref role="2kkw0f" node="3cUcim$c7Ht" resolve="makeTextPar" />
-      </node>
-    </node>
-    <node concept="2VfDsV" id="3cUcim$c7IQ" role="3ft7WO" />
-    <node concept="3ft5Ry" id="3cUcim$c7IR" role="3ft7WO">
-      <ref role="4PJHt" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
-    </node>
-  </node>
   <node concept="Q6S24" id="3cUcim$c7G3">
     <property role="TrG5h" value="makeHeaderPar" />
     <ref role="aqKnT" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
@@ -11241,6 +11224,23 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="3cUcim$c7G2">
+    <ref role="aqKnT" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
+    <node concept="1s_PAr" id="3cUcim$c7Hr" role="3ft7WO">
+      <node concept="2kknPI" id="3cUcim$c7Hs" role="1s_PAo">
+        <ref role="2kkw0f" node="3cUcim$c7G3" resolve="makeHeaderPar" />
+      </node>
+    </node>
+    <node concept="1s_PAr" id="3cUcim$c7IO" role="3ft7WO">
+      <node concept="2kknPI" id="3cUcim$c7IP" role="1s_PAo">
+        <ref role="2kkw0f" node="3cUcim$c7Ht" resolve="makeTextPar" />
+      </node>
+    </node>
+    <node concept="2VfDsV" id="3cUcim$c7IQ" role="3ft7WO" />
+    <node concept="3ft5Ry" id="3cUcim$c7IR" role="3ft7WO">
+      <ref role="4PJHt" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
+    </node>
+  </node>
   <node concept="Q6S24" id="3cUcim$c7Ht">
     <property role="TrG5h" value="makeTextPar" />
     <ref role="aqKnT" to="2c95:2TZO3DbvcVM" resolve="TextParagraph" />
@@ -11307,11 +11307,11 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="3cUcim$c7IS">
-    <ref role="aqKnT" to="2c95:5mf_X_LbOnj" resolve="CodeParagraph" />
-  </node>
   <node concept="3p36aQ" id="3cUcim$c7IT">
     <ref role="aqKnT" to="2c95:3KN5gxXu83C" resolve="DocumentKeeper" />
+  </node>
+  <node concept="3p36aQ" id="3cUcim$c7IS">
+    <ref role="aqKnT" to="2c95:5mf_X_LbOnj" resolve="CodeParagraph" />
   </node>
 </model>
 
