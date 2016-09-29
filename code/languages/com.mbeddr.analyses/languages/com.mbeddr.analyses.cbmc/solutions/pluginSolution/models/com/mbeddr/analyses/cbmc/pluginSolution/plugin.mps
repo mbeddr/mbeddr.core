@@ -395,7 +395,7 @@
     </node>
   </node>
   <node concept="sEfby" id="3Hq87cj$2XO">
-    <property role="TrG5h" value="CbmcTool" />
+    <property role="TrG5h" value="CbmcLiftedResultsTool" />
     <property role="2XNbzY" value="CBMC Lifted Results" />
     <property role="2bmUCM" value="RIGHT" />
     <property role="2XNb$f" value="1" />
@@ -637,7 +637,7 @@
             <property role="TrG5h" value="tool" />
             <property role="3TUv4t" value="true" />
             <node concept="1xUVSX" id="2UdJgvFCH3l" role="1tU5fm">
-              <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcTool" />
+              <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
             </node>
             <node concept="2OqwBi" id="2UdJgvFCH3m" role="33vP2m">
               <node concept="2OqwBi" id="2UdJgvFCH3n" role="2Oq$k0">
@@ -647,7 +647,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="2UdJgvFCH3q" role="2OqNvi">
-                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcTool" />
+                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
               </node>
             </node>
           </node>
@@ -820,7 +820,7 @@
             <property role="TrG5h" value="tool" />
             <property role="3TUv4t" value="false" />
             <node concept="1xUVSX" id="2UdJgvFCb_r" role="1tU5fm">
-              <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcTool" />
+              <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
             </node>
             <node concept="2OqwBi" id="2UdJgvFCb_s" role="33vP2m">
               <node concept="2OqwBi" id="2UdJgvFCb_t" role="2Oq$k0">
@@ -830,7 +830,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="2UdJgvFCb_w" role="2OqNvi">
-                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcTool" />
+                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
               </node>
             </node>
           </node>
@@ -1027,7 +1027,7 @@
             <property role="TrG5h" value="tool" />
             <property role="3TUv4t" value="true" />
             <node concept="1xUVSX" id="2UdJgvFCNdI" role="1tU5fm">
-              <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcTool" />
+              <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
             </node>
             <node concept="2OqwBi" id="2UdJgvFCNdJ" role="33vP2m">
               <node concept="2OqwBi" id="2UdJgvFCNdK" role="2Oq$k0">
@@ -1037,7 +1037,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="2UdJgvFCNdN" role="2OqNvi">
-                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcTool" />
+                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
               </node>
             </node>
           </node>
@@ -1168,7 +1168,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="2UdJgvD7unt" role="1B3o_S" />
       <node concept="1xUVSX" id="2UdJgvD7uBQ" role="1tU5fm">
-        <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcTool" />
+        <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
       </node>
     </node>
     <node concept="312cEg" id="6izRX53r81V" role="jymVt">
@@ -1192,7 +1192,7 @@
                 <ref role="3cqZAo" node="4arT0cn$zry" resolve="proj" />
               </node>
               <node concept="LR4U6" id="4arT0cn$AcA" role="2OqNvi">
-                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcTool" />
+                <ref role="LR4U5" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
               </node>
             </node>
             <node concept="2OqwBi" id="4arT0cn$zrl" role="37vLTJ">
@@ -1306,7 +1306,7 @@
       <node concept="37vLTG" id="2UdJgvD7uVk" role="3clF46">
         <property role="TrG5h" value="cproverTool" />
         <node concept="1xUVSX" id="2UdJgvD7uVj" role="1tU5fm">
-          <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcTool" />
+          <ref role="1xYkEM" node="3Hq87cj$2XO" resolve="CbmcLiftedResultsTool" />
         </node>
       </node>
       <node concept="37vLTG" id="7F8$WoVMWR7" role="3clF46">
