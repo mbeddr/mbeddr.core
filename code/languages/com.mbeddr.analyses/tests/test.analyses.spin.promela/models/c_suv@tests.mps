@@ -130,7 +130,7 @@
                 <node concept="3cpWsn" id="7Rf0$0HBv8s" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGCC3S" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="7Rf0$0HBv8u" role="33vP2m">
                     <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
@@ -209,7 +209,7 @@
                 <node concept="3cpWsn" id="HmUOIGCY7e" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGCY7f" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="HmUOIGCY7g" role="33vP2m">
                     <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
@@ -288,7 +288,7 @@
                 <node concept="3cpWsn" id="HmUOIGG1Do" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGG1Dp" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="HmUOIGG1Dq" role="33vP2m">
                     <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
@@ -342,7 +342,7 @@
                   <node concept="liA8E" id="HmUOIGG1DH" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                     <node concept="Xl_RD" id="HmUOIGG1DI" role="37wK5m">
-                      <property role="Xl_RC" value="assertion violated (aVar != 30) - location: suv3:inc" />
+                      <property role="Xl_RC" value="assertion violated (aVar != 12) - location: suv3:inc" />
                     </node>
                   </node>
                 </node>
@@ -367,7 +367,7 @@
                 <node concept="3cpWsn" id="HmUOIGIBDd" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGIBDe" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="HmUOIGIBDf" role="33vP2m">
                     <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
@@ -448,7 +448,7 @@
                 <node concept="3cpWsn" id="6rUr$fV19yN" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="6rUr$fV19yO" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="6rUr$fV19yP" role="33vP2m">
                     <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
@@ -527,7 +527,7 @@
                 <node concept="3cpWsn" id="25oSEXyfTJ3" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="25oSEXyfTJ4" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="25oSEXyfTJ5" role="33vP2m">
                     <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
@@ -660,7 +660,7 @@
                 <node concept="3cpWsn" id="6qQmI_32wjR" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="6qQmI_32wjS" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="6qQmI_32wjT" role="33vP2m">
                     <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
@@ -757,7 +757,7 @@
                 <node concept="3cpWsn" id="6qQmI_34UA2" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="6qQmI_34UA3" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
                   </node>
                   <node concept="2YIFZM" id="6qQmI_34UA4" role="33vP2m">
                     <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
@@ -824,6 +824,7 @@
   </node>
   <node concept="1lH9Xt" id="Y_s0WjAaMe">
     <property role="TrG5h" value="C_suv9_nondet_assign" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="Y_s0WjAaMf" role="1SL9yI">
       <property role="TrG5h" value="test1" />
       <node concept="3cqZAl" id="Y_s0WjAaMg" role="3clF45" />
@@ -832,7 +833,7 @@
           <node concept="3cpWsn" id="Y_s0WjAaMj" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="Y_s0WjAaMk" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
             </node>
             <node concept="2YIFZM" id="Y_s0WjAaMl" role="33vP2m">
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
@@ -876,7 +877,7 @@
           <node concept="3cpWsn" id="Y_s0WjAbKE" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="Y_s0WjAbKF" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
             </node>
             <node concept="2YIFZM" id="Y_s0WjAbKG" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />

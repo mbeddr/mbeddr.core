@@ -23,6 +23,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -107,6 +110,11 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="5753587520027644759" name="body" index="3kxCCa" />
+      </concept>
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -178,40 +186,53 @@
             <node concept="3Tqbb2" id="4QGaVz5sUWV" role="1tU5fm">
               <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
             </node>
-            <node concept="2OqwBi" id="4QGaVz5sUX7" role="33vP2m">
-              <node concept="2OqwBi" id="4QGaVz5sUX8" role="2Oq$k0">
-                <node concept="37vLTw" id="4QGaVz5sUX9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4QGaVz5sxQZ" resolve="m" />
-                </node>
-                <node concept="2RRcyG" id="4QGaVz5sUXa" role="2OqNvi">
-                  <ref role="2RRcyH" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
-                </node>
-              </node>
-              <node concept="1z4cxt" id="4QGaVz5sUXb" role="2OqNvi">
-                <node concept="1bVj0M" id="4QGaVz5sUXc" role="23t8la">
-                  <node concept="3clFbS" id="4QGaVz5sUXd" role="1bW5cS">
-                    <node concept="3clFbF" id="4QGaVz5sUXe" role="3cqZAp">
-                      <node concept="2OqwBi" id="4QGaVz5sUXf" role="3clFbG">
-                        <node concept="2OqwBi" id="4QGaVz5sUXg" role="2Oq$k0">
-                          <node concept="37vLTw" id="4QGaVz5sUXh" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4QGaVz5sUXl" resolve="it" />
-                          </node>
-                          <node concept="3TrcHB" id="4QGaVz5sUXi" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="7Kg2SeZeqgi" role="3cqZAp">
+          <node concept="9aQIb" id="7Kg2SeZer$p" role="3kxCCa">
+            <node concept="3clFbS" id="7Kg2SeZer$r" role="9aQI4">
+              <node concept="3clFbF" id="7Kg2SeZeqMy" role="3cqZAp">
+                <node concept="37vLTI" id="7Kg2SeZeqM$" role="3clFbG">
+                  <node concept="2OqwBi" id="4QGaVz5sUX7" role="37vLTx">
+                    <node concept="2OqwBi" id="4QGaVz5sUX8" role="2Oq$k0">
+                      <node concept="37vLTw" id="4QGaVz5sUX9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4QGaVz5sxQZ" resolve="m" />
+                      </node>
+                      <node concept="2RRcyG" id="4QGaVz5sUXa" role="2OqNvi">
+                        <ref role="2RRcyH" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+                      </node>
+                    </node>
+                    <node concept="1z4cxt" id="4QGaVz5sUXb" role="2OqNvi">
+                      <node concept="1bVj0M" id="4QGaVz5sUXc" role="23t8la">
+                        <node concept="3clFbS" id="4QGaVz5sUXd" role="1bW5cS">
+                          <node concept="3clFbF" id="4QGaVz5sUXe" role="3cqZAp">
+                            <node concept="2OqwBi" id="4QGaVz5sUXf" role="3clFbG">
+                              <node concept="2OqwBi" id="4QGaVz5sUXg" role="2Oq$k0">
+                                <node concept="37vLTw" id="4QGaVz5sUXh" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4QGaVz5sUXl" resolve="it" />
+                                </node>
+                                <node concept="3TrcHB" id="4QGaVz5sUXi" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4QGaVz5sUXj" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <node concept="37vLTw" id="4QGaVz5sUXk" role="37wK5m">
+                                  <ref role="3cqZAo" node="6BM8NjXd_zq" resolve="spinModuleName" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
-                        <node concept="liA8E" id="4QGaVz5sUXj" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="37vLTw" id="4QGaVz5sUXk" role="37wK5m">
-                            <ref role="3cqZAo" node="6BM8NjXd_zq" resolve="spinModuleName" />
-                          </node>
+                        <node concept="Rh6nW" id="4QGaVz5sUXl" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="4QGaVz5sUXm" role="1tU5fm" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="4QGaVz5sUXl" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4QGaVz5sUXm" role="1tU5fm" />
+                  <node concept="37vLTw" id="7Kg2SeZeqMC" role="37vLTJ">
+                    <ref role="3cqZAo" node="4QGaVz5sUX6" resolve="promelaModel" />
                   </node>
                 </node>
               </node>
@@ -304,7 +325,7 @@
                   <node concept="liA8E" id="HmUOIGCA02" role="2OqNvi">
                     <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
                     <node concept="3cmrfG" id="HmUOIGCA03" role="37wK5m">
-                      <property role="3cmrfH" value="20" />
+                      <property role="3cmrfH" value="60" />
                     </node>
                     <node concept="Rm8GO" id="HmUOIGCA04" role="37wK5m">
                       <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
