@@ -192,7 +192,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1782,6 +1782,26 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="7TKq_nqAlnH" role="3cqZAp">
+              <node concept="3clFbS" id="7TKq_nqAlnJ" role="3clFbx">
+                <node concept="3cpWs6" id="7TKq_nqArGx" role="3cqZAp">
+                  <node concept="3cmrfG" id="7TKq_nqAy3p" role="3cqZAk">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="7TKq_nqAqay" role="3clFbw">
+                <node concept="Xjq3P" id="7TKq_nqAr0E" role="3uHU7w" />
+                <node concept="2OqwBi" id="7TKq_nqAnQ$" role="3uHU7B">
+                  <node concept="37vLTw" id="7TKq_nqAmI1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6tLsdkfI3Fs" resolve="selectedWordCell" />
+                  </node>
+                  <node concept="liA8E" id="7TKq_nqApmS" role="2OqNvi">
+                    <ref role="37wK5l" node="6tLsdkfI427" resolve="getParent" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="453OnIls4rr" role="3cqZAp">
               <node concept="37vLTI" id="G25GphKMVf" role="3clFbG">
                 <node concept="37vLTw" id="1rfeXz7xs$i" role="37vLTJ">
@@ -2666,6 +2686,31 @@
       </node>
       <node concept="3Tm1VV" id="453OnIlrYZp" role="1B3o_S" />
       <node concept="3clFbS" id="453OnIlrYZq" role="3clF47">
+        <node concept="3clFbJ" id="7TKq_nqBdWO" role="3cqZAp">
+          <node concept="3clFbS" id="7TKq_nqBdWQ" role="3clFbx">
+            <node concept="YS8fn" id="7TKq_nqBqyc" role="3cqZAp">
+              <node concept="2ShNRf" id="7TKq_nqBryJ" role="YScLw">
+                <node concept="1pGfFk" id="7TKq_nqBIVR" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="7TKq_nqBJJ6" role="37wK5m">
+                    <property role="Xl_RC" value="word cell is not part of this multiline cell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="7TKq_nqBpdj" role="3clFbw">
+            <node concept="Xjq3P" id="7TKq_nqBpK7" role="3uHU7w" />
+            <node concept="2OqwBi" id="7TKq_nqBk_u" role="3uHU7B">
+              <node concept="37vLTw" id="7TKq_nqBjzZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="453OnIlrYZl" resolve="cell" />
+              </node>
+              <node concept="liA8E" id="7TKq_nqBmcu" role="2OqNvi">
+                <ref role="37wK5l" node="6tLsdkfI427" resolve="getParent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="453OnIlrYZr" role="3cqZAp">
           <node concept="3cpWsn" id="453OnIlrYZs" role="3cpWs9">
             <property role="TrG5h" value="result" />
