@@ -306,7 +306,6 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
@@ -2709,28 +2708,6 @@
             <ref role="37wK5l" to="31w4:6lrp79e8eJu" resolve="collectAccessibleCode" />
             <node concept="37vLTw" id="5gCJTa6XXJ$" role="37wK5m">
               <ref role="3cqZAo" node="5gCJTa6XHsX" resolve="entry" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="66__Gf6lC8j" role="3cqZAp">
-          <node concept="2OqwBi" id="66__Gf6lC8g" role="3clFbG">
-            <node concept="10M0yZ" id="66__Gf6lC8h" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="66__Gf6lC8i" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="66__Gf6lDW5" role="37wK5m">
-                <node concept="2OqwBi" id="66__Gf6lEJt" role="3uHU7w">
-                  <node concept="37vLTw" id="66__Gf6lDYK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5gCJTa6XSdh" resolve="res" />
-                  </node>
-                  <node concept="34oBXx" id="66__Gf6lHbf" role="2OqNvi" />
-                </node>
-                <node concept="Xl_RD" id="66__Gf6lCl$" role="3uHU7B">
-                  <property role="Xl_RC" value="CPAAssertionResultsLifter ------- " />
-                </node>
-              </node>
             </node>
           </node>
         </node>
