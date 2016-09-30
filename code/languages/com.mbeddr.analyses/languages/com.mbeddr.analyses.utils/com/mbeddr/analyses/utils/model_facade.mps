@@ -6,8 +6,6 @@
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
   </imports>
   <registry>
@@ -136,7 +134,7 @@
                   <ref role="3cqZAo" node="4EriiVvTJ0y" resolve="bc" />
                 </node>
                 <node concept="3Tsc0h" id="4EriiVvTM7z" role="2OqNvi">
-                  <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" />
+                  <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" resolve="binaries" />
                 </node>
               </node>
               <node concept="3goQfb" id="4EriiVvU0AN" role="2OqNvi">
@@ -149,7 +147,7 @@
                             <ref role="3cqZAo" node="4EriiVvU0AR" resolve="it" />
                           </node>
                           <node concept="3Tsc0h" id="4EriiVvU8h2" role="2OqNvi">
-                            <ref role="3TtcxE" to="51wr:4o9sgv8QoKn" />
+                            <ref role="3TtcxE" to="51wr:4o9sgv8QoKn" resolve="referencedModules" />
                           </node>
                         </node>
                         <node concept="3$u5V9" id="4EriiVvUlQ4" role="2OqNvi">
@@ -161,7 +159,7 @@
                                     <ref role="3cqZAo" node="4EriiVvUlQ8" resolve="rm" />
                                   </node>
                                   <node concept="3TrEf2" id="4EriiVvUqnH" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="51wr:6GqYvBOf2Xc" />
+                                    <ref role="3Tt5mk" to="51wr:6GqYvBOf2Xc" resolve="module" />
                                   </node>
                                 </node>
                               </node>

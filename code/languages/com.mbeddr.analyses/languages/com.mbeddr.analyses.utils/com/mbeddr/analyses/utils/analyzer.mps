@@ -5,8 +5,6 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -21,7 +19,6 @@
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -1155,13 +1152,13 @@
             </node>
             <node concept="SfApY" id="7MMcIPlo7Ra" role="3cqZAp">
               <node concept="3clFbS" id="7MMcIPlo7Rb" role="SfCbr">
-                <node concept="3clFbF" id="7MMcIPlo7h7" role="3cqZAp">
-                  <node concept="2OqwBi" id="7MMcIPlo7ib" role="3clFbG">
-                    <node concept="37vLTw" id="7MMcIPlo7h6" role="2Oq$k0">
+                <node concept="3clFbF" id="6UnenVLWMil" role="3cqZAp">
+                  <node concept="2OqwBi" id="6UnenVLWMtS" role="3clFbG">
+                    <node concept="37vLTw" id="6UnenVLWMij" role="2Oq$k0">
                       <ref role="3cqZAo" node="7MMcIPlo6Aq" resolve="jobFuture" />
                     </node>
-                    <node concept="liA8E" id="7MMcIPlo7Bm" role="2OqNvi">
-                      <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                    <node concept="liA8E" id="6UnenVLWMVC" role="2OqNvi">
+                      <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
                     </node>
                   </node>
                 </node>
