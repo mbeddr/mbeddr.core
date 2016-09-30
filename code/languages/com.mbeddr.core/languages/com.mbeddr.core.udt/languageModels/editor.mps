@@ -397,9 +397,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="PMmxH" id="2YZ7DHQvsuM" role="3EZMnx">
-        <ref role="PMmxG" to="j4gk:xAR9nWuwd2" resolve="IHasPrefixesComponent" />
-      </node>
       <node concept="3F0ifn" id="5jyom5fO9Cr" role="3EZMnx">
         <property role="3F0ifm" value="typedef" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1013,7 +1010,7 @@
   </node>
   <node concept="24kQdi" id="3qdsM6yQqbp">
     <property role="3GE5qa" value="su" />
-    <ref role="1XX52x" to="clbe:3qdsM6yQbcF" resolve="ArbitraryMemberRef" />
+    <ref role="1XX52x" to="clbe:3qdsM6yQbcF" resolve="ArbitraryMemeberRef" />
     <node concept="3F0A7n" id="3qdsM6yQqbr" role="2wV5jI">
       <ref role="1NtTu8" to="clbe:3qdsM6yQbf8" resolve="membername" />
     </node>
