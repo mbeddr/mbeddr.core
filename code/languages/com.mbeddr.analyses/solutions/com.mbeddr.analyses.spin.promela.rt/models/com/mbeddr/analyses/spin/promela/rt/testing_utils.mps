@@ -102,6 +102,7 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -362,21 +363,56 @@
         </node>
         <node concept="3clFbH" id="HmUOIGCAtA" role="3cqZAp" />
         <node concept="3clFbF" id="HmUOIGC$f_" role="3cqZAp">
-          <node concept="2OqwBi" id="7XCY$_ram3d" role="3clFbG">
-            <node concept="37vLTw" id="HmUOIGCA05" role="2Oq$k0">
-              <ref role="3cqZAo" node="HmUOIGC_ZZ" resolve="result" />
+          <node concept="37vLTw" id="HmUOIGCA05" role="3clFbG">
+            <ref role="3cqZAo" node="HmUOIGC_ZZ" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4QGaVz5ryA6" role="1B3o_S" />
+      <node concept="3uibUv" id="_jsMICpJ4F" role="3clF45">
+        <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="_jsMICrM7M" role="jymVt" />
+    <node concept="2YIFZL" id="_jsMICrMgd" role="jymVt">
+      <property role="TrG5h" value="checkModel2" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="_jsMICrMge" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="_jsMICrMgf" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="_jsMICrMgg" role="3clF46">
+        <property role="TrG5h" value="spinModuleName" />
+        <node concept="17QB3L" id="_jsMICrMgh" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="_jsMICrMgi" role="3clF47">
+        <node concept="3clFbF" id="_jsMICrNP4" role="3cqZAp">
+          <node concept="2OqwBi" id="_jsMICrOai" role="3clFbG">
+            <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
+              <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
+                <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
+              </node>
+              <node concept="37vLTw" id="_jsMICrO5o" role="37wK5m">
+                <ref role="3cqZAo" node="_jsMICrMgg" resolve="spinModuleName" />
+              </node>
             </node>
-            <node concept="liA8E" id="7XCY$_raGzw" role="2OqNvi">
+            <node concept="liA8E" id="_jsMICrOsY" role="2OqNvi">
               <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="4QGaVz5ryA6" role="1B3o_S" />
-      <node concept="3uibUv" id="HmUOIGCBKS" role="3clF45">
+      <node concept="3Tm1VV" id="_jsMICrMhz" role="1B3o_S" />
+      <node concept="3uibUv" id="_jsMICrNHd" role="3clF45">
         <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
       </node>
     </node>
+    <node concept="2tJIrI" id="_jsMICrMaB" role="jymVt" />
     <node concept="3Tm1VV" id="4QGaVz5ry$L" role="1B3o_S" />
   </node>
 </model>

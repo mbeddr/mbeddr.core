@@ -226,8 +226,8 @@
               </node>
               <node concept="2Xjw5R" id="HmUOIGFdcT" role="2OqNvi">
                 <node concept="1xMEDy" id="HmUOIGFdcV" role="1xVPHs">
-                  <node concept="chp4Y" id="HmUOIGFdep" role="ri$Ld">
-                    <ref role="cht4Q" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                  <node concept="chp4Y" id="_jsMICr99N" role="ri$Ld">
+                    <ref role="cht4Q" to="x27k:5_l8w1EmTcX" resolve="Module" />
                   </node>
                 </node>
               </node>
