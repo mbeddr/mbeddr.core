@@ -212,6 +212,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -573,6 +574,11 @@
                 <ref role="2Oxat5" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="54ptZbPSKpz" role="3cqZAp">
+          <node concept="1rXfSq" id="54ptZbPSKpx" role="3clFbG">
+            <ref role="37wK5l" node="2UdJgvCNFe3" resolve="clearResults" />
           </node>
         </node>
       </node>

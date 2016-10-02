@@ -27,12 +27,16 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
+        <child id="1076505808688" name="condition" index="2$JKZa" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -163,6 +167,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -185,6 +190,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1214918975462" name="jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression" flags="nn" index="3uO5VW" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
@@ -201,6 +207,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
+        <property id="1200397540847" name="charConstant" index="1XhdNS" />
+      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
@@ -1480,22 +1489,10 @@
                   <node concept="3cpWsn" id="7XCY$_rbrMy" role="3cpWs9">
                     <property role="TrG5h" value="assertionExpression" />
                     <node concept="17QB3L" id="7XCY$_rbrMt" role="1tU5fm" />
-                    <node concept="2YIFZM" id="7XCY$_rbs$Q" role="33vP2m">
-                      <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                      <ref role="37wK5l" to="btm1:~StringUtils.substringBetween(java.lang.String,java.lang.String,java.lang.String):java.lang.String" resolve="substringBetween" />
-                      <node concept="37vLTw" id="7XCY$_rbsE1" role="37wK5m">
+                    <node concept="1rXfSq" id="6jYTukVVDRp" role="33vP2m">
+                      <ref role="37wK5l" node="6jYTukVVdZW" resolve="extractAssertionExpression" />
+                      <node concept="37vLTw" id="6jYTukVVE3G" role="37wK5m">
                         <ref role="3cqZAo" node="7XCY$_rbamS" resolve="lineWithAssertionViolationInformation" />
-                      </node>
-                      <node concept="3cpWs3" id="7XCY$_rbtle" role="37wK5m">
-                        <node concept="37vLTw" id="7XCY$_rbtqO" role="3uHU7B">
-                          <ref role="3cqZAo" node="7XCY$_rb3Un" resolve="ASSERTION_VIOLATED_MARKER" />
-                        </node>
-                        <node concept="Xl_RD" id="7XCY$_rbsNL" role="3uHU7w">
-                          <property role="Xl_RC" value=" (" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="7XCY$_rbt6P" role="37wK5m">
-                        <property role="Xl_RC" value=")" />
                       </node>
                     </node>
                   </node>
@@ -1646,6 +1643,197 @@
         <node concept="3uibUv" id="7XCY$_rajDo" role="1tU5fm">
           <ref role="3uigEE" node="1wu5Hv6fnnb" resolve="SpinRawResult" />
         </node>
+      </node>
+      <node concept="NWlO9" id="6jYTukVVCz6" role="lGtFl">
+        <property role="NWlVz" value="Lifts a raw result." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6jYTukVVdxR" role="jymVt" />
+    <node concept="2YIFZL" id="6jYTukVVdZW" role="jymVt">
+      <property role="TrG5h" value="extractAssertionExpression" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6jYTukVVdZZ" role="3clF47">
+        <node concept="3cpWs8" id="6jYTukVVgAf" role="3cqZAp">
+          <node concept="3cpWsn" id="6jYTukVVgAg" role="3cpWs9">
+            <property role="TrG5h" value="sb" />
+            <node concept="3uibUv" id="6jYTukVVgAh" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~StringBuffer" resolve="StringBuffer" />
+            </node>
+            <node concept="2ShNRf" id="6jYTukVVgM_" role="33vP2m">
+              <node concept="1pGfFk" id="6jYTukVVtuY" role="2ShVmc">
+                <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;()" resolve="StringBuffer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6jYTukVVeTx" role="3cqZAp">
+          <node concept="3cpWsn" id="6jYTukVVeT$" role="3cpWs9">
+            <property role="TrG5h" value="pos" />
+            <node concept="10Oyi0" id="6jYTukVVeTw" role="1tU5fm" />
+            <node concept="2OqwBi" id="6jYTukVVfcr" role="33vP2m">
+              <node concept="37vLTw" id="6jYTukVVeVr" role="2Oq$k0">
+                <ref role="3cqZAo" node="6jYTukVVe9w" resolve="lineWithAssertionViolationInfo" />
+              </node>
+              <node concept="liA8E" id="6jYTukVVfMF" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
+                <node concept="Xl_RD" id="6jYTukVVfRl" role="37wK5m">
+                  <property role="Xl_RC" value="(" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6jYTukVVuM9" role="3cqZAp">
+          <node concept="3cpWsn" id="6jYTukVVuMc" role="3cpWs9">
+            <property role="TrG5h" value="imbricationLevel" />
+            <node concept="10Oyi0" id="6jYTukVVuM7" role="1tU5fm" />
+            <node concept="3cmrfG" id="6jYTukVVvwf" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jYTukVVvQ_" role="3cqZAp">
+          <node concept="3uNrnE" id="6jYTukVVwhD" role="3clFbG">
+            <node concept="37vLTw" id="6jYTukVVwhF" role="2$L3a6">
+              <ref role="3cqZAo" node="6jYTukVVeT$" resolve="pos" />
+            </node>
+          </node>
+        </node>
+        <node concept="2$JKZl" id="6jYTukVVvEE" role="3cqZAp">
+          <node concept="3clFbS" id="6jYTukVVvEG" role="2LFqv$">
+            <node concept="3clFbF" id="6jYTukVV$Gn" role="3cqZAp">
+              <node concept="2OqwBi" id="6jYTukVV$Q1" role="3clFbG">
+                <node concept="37vLTw" id="6jYTukVV$Gm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6jYTukVVgAg" resolve="sb" />
+                </node>
+                <node concept="liA8E" id="6jYTukVV_pk" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(char):java.lang.StringBuffer" resolve="append" />
+                  <node concept="2OqwBi" id="6jYTukVV_um" role="37wK5m">
+                    <node concept="37vLTw" id="6jYTukVV_un" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6jYTukVVe9w" resolve="lineWithAssertionViolationInfo" />
+                    </node>
+                    <node concept="liA8E" id="6jYTukVV_uo" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                      <node concept="37vLTw" id="6jYTukVV_up" role="37wK5m">
+                        <ref role="3cqZAo" node="6jYTukVVeT$" resolve="pos" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6jYTukVVAoF" role="3cqZAp">
+              <node concept="3clFbS" id="6jYTukVVAoH" role="3clFbx">
+                <node concept="3clFbF" id="6jYTukVVAJ5" role="3cqZAp">
+                  <node concept="3uNrnE" id="6jYTukVVBdg" role="3clFbG">
+                    <node concept="37vLTw" id="6jYTukVVBdi" role="2$L3a6">
+                      <ref role="3cqZAo" node="6jYTukVVuMc" resolve="imbricationLevel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="6jYTukVVAzJ" role="3clFbw">
+                <node concept="2OqwBi" id="6jYTukVVAun" role="3uHU7B">
+                  <node concept="37vLTw" id="6jYTukVVAuo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jYTukVVe9w" resolve="lineWithAssertionViolationInfo" />
+                  </node>
+                  <node concept="liA8E" id="6jYTukVVAup" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                    <node concept="37vLTw" id="6jYTukVVAuq" role="37wK5m">
+                      <ref role="3cqZAo" node="6jYTukVVeT$" resolve="pos" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Xhbcc" id="6jYTukVVAur" role="3uHU7w">
+                  <property role="1XhdNS" value="(" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="54ptZbPS$7y" role="3cqZAp">
+              <node concept="3clFbS" id="54ptZbPS$7z" role="3clFbx">
+                <node concept="3clFbF" id="54ptZbPS$7$" role="3cqZAp">
+                  <node concept="3uO5VW" id="54ptZbPS$Rl" role="3clFbG">
+                    <node concept="37vLTw" id="54ptZbPS$Rn" role="2$L3a6">
+                      <ref role="3cqZAo" node="6jYTukVVuMc" resolve="imbricationLevel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="54ptZbPS$7B" role="3clFbw">
+                <node concept="2OqwBi" id="54ptZbPS$7C" role="3uHU7B">
+                  <node concept="37vLTw" id="54ptZbPS$7D" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jYTukVVe9w" resolve="lineWithAssertionViolationInfo" />
+                  </node>
+                  <node concept="liA8E" id="54ptZbPS$7E" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                    <node concept="37vLTw" id="54ptZbPS$7F" role="37wK5m">
+                      <ref role="3cqZAo" node="6jYTukVVeT$" resolve="pos" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Xhbcc" id="54ptZbPS$7G" role="3uHU7w">
+                  <property role="1XhdNS" value=")" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="54ptZbPSolu" role="3cqZAp">
+              <node concept="3uNrnE" id="54ptZbPSoKQ" role="3clFbG">
+                <node concept="37vLTw" id="54ptZbPSoKS" role="2$L3a6">
+                  <ref role="3cqZAo" node="6jYTukVVeT$" resolve="pos" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="6jYTukVVzHr" role="2$JKZa">
+            <node concept="1eOMI4" id="6jYTukVVzB7" role="3uHU7B">
+              <node concept="3y3z36" id="6jYTukVVyfl" role="1eOMHV">
+                <node concept="2OqwBi" id="6jYTukVVwGv" role="3uHU7B">
+                  <node concept="37vLTw" id="6jYTukVVwqx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jYTukVVe9w" resolve="lineWithAssertionViolationInfo" />
+                  </node>
+                  <node concept="liA8E" id="6jYTukVVxjI" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                    <node concept="37vLTw" id="6jYTukVVxyR" role="37wK5m">
+                      <ref role="3cqZAo" node="6jYTukVVeT$" resolve="pos" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Xhbcc" id="6jYTukVVylL" role="3uHU7w">
+                  <property role="1XhdNS" value=")" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="6jYTukVV$Ae" role="3uHU7w">
+              <node concept="3cmrfG" id="6jYTukVVA64" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="6jYTukVVzZ6" role="3uHU7B">
+                <ref role="3cqZAo" node="6jYTukVVuMc" resolve="imbricationLevel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jYTukVVtBE" role="3cqZAp">
+          <node concept="2OqwBi" id="6jYTukVVtP1" role="3clFbG">
+            <node concept="37vLTw" id="6jYTukVVtBC" role="2Oq$k0">
+              <ref role="3cqZAo" node="6jYTukVVgAg" resolve="sb" />
+            </node>
+            <node concept="liA8E" id="6jYTukVVuGD" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6jYTukVVdJn" role="1B3o_S" />
+      <node concept="17QB3L" id="6jYTukVVdWl" role="3clF45" />
+      <node concept="37vLTG" id="6jYTukVVe9w" role="3clF46">
+        <property role="TrG5h" value="lineWithAssertionViolationInfo" />
+        <node concept="17QB3L" id="6jYTukVVe9v" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="6jYTukVVBlv" role="lGtFl">
+        <property role="NWlVz" value="Extracts the text representing the assertion violation expression." />
       </node>
     </node>
   </node>
