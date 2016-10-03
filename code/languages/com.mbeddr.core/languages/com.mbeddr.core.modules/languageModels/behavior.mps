@@ -4853,7 +4853,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="3N$tYyGbO1v" role="13h7CS">
-      <property role="TrG5h" value="fileExtension" />
+      <property role="TrG5h" value="getSourceFileExtension" />
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="3N$tYyGbO1w" role="1B3o_S" />
       <node concept="17QB3L" id="3N$tYyGbO1z" role="3clF45" />
@@ -4861,6 +4861,19 @@
         <node concept="3clFbF" id="3N$tYyGbO1$" role="3cqZAp">
           <node concept="Xl_RD" id="3N$tYyGbO1_" role="3clFbG">
             <property role="Xl_RC" value="c" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1zF3M6MR330" role="13h7CS">
+      <property role="TrG5h" value="getHeaderFileExtension" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1zF3M6MR331" role="1B3o_S" />
+      <node concept="17QB3L" id="1zF3M6MR332" role="3clF45" />
+      <node concept="3clFbS" id="1zF3M6MR333" role="3clF47">
+        <node concept="3clFbF" id="1zF3M6MR334" role="3cqZAp">
+          <node concept="Xl_RD" id="1zF3M6MR335" role="3clFbG">
+            <property role="Xl_RC" value="h" />
           </node>
         </node>
       </node>
