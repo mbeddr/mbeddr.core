@@ -99,7 +99,16 @@
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
     </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
@@ -300,6 +309,9 @@
       <property role="1gr5cl" value="gcc" />
       <property role="1gr5cm" value="-std=c99 -DSAFETY" />
       <property role="1gr5cn" value="make" />
+    </node>
+    <node concept="2Q9Fgs" id="1TY2kgDXHU0" role="2Q9xDr">
+      <node concept="2Q9FjX" id="1TY2kgDXHU1" role="2Q9FjI" />
     </node>
   </node>
   <node concept="1N3YfO" id="7Rf0$0HKRJt">

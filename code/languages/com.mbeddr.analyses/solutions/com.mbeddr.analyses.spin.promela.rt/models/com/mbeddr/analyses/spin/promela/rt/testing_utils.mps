@@ -59,6 +59,9 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -94,6 +97,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -101,6 +105,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+        <child id="1160998916832" name="message" index="1gVpfI" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -116,6 +124,11 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -445,6 +458,22 @@
                   </node>
                   <node concept="37vLTw" id="5yxSA$IRTgV" role="37vLTJ">
                     <ref role="3cqZAo" node="5yxSA$IRT34" resolve="aa" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1gVbGN" id="1frDWv8aH0G" role="3cqZAp">
+                <node concept="3y3z36" id="1frDWv8aHfj" role="1gVkn0">
+                  <node concept="10Nm6u" id="1frDWv8aHiL" role="3uHU7w" />
+                  <node concept="37vLTw" id="1frDWv8aH4A" role="3uHU7B">
+                    <ref role="3cqZAo" node="5yxSA$IRT34" resolve="aa" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="1frDWv8aLWD" role="1gVpfI">
+                  <node concept="37vLTw" id="1frDWv8aM3e" role="3uHU7w">
+                    <ref role="3cqZAo" node="5yxSA$IRHT5" resolve="spinModuleName" />
+                  </node>
+                  <node concept="Xl_RD" id="1frDWv8aLED" role="3uHU7B">
+                    <property role="Xl_RC" value="AssertionAnalysis not found for Promela module: " />
                   </node>
                 </node>
               </node>
