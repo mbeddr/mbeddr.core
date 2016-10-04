@@ -11966,9 +11966,10 @@
                 <node concept="3uibUv" id="6p1Tdwm5jP6" role="1tU5fm">
                   <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
                 </node>
-                <node concept="2YIFZM" id="6p1Tdwm52nr" role="33vP2m">
-                  <ref role="1Pybhc" to="eh3q:~TextBuilder" resolve="TextBuilder" />
-                  <ref role="37wK5l" to="eh3q:~TextBuilder.getEmptyTextBuilder():jetbrains.mps.nodeEditor.text.TextBuilder" resolve="getEmptyTextBuilder" />
+                <node concept="2ShNRf" id="5kDStdReJt_" role="33vP2m">
+                  <node concept="1pGfFk" id="5kDStdRf5Mm" role="2ShVmc">
+                    <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;()" resolve="TextBuilderImpl" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -12148,11 +12149,12 @@
                               </node>
                               <node concept="liA8E" id="6p1Tdwm52oc" role="2OqNvi">
                                 <ref role="37wK5l" to="cj4x:~TextBuilder.appendToTheRight(jetbrains.mps.openapi.editor.TextBuilder,boolean):jetbrains.mps.openapi.editor.TextBuilder" resolve="appendToTheRight" />
-                                <node concept="2YIFZM" id="6p1Tdwm52oh" role="37wK5m">
-                                  <ref role="1Pybhc" to="eh3q:~TextBuilder" resolve="TextBuilder" />
-                                  <ref role="37wK5l" to="eh3q:~TextBuilder.fromString(java.lang.String):jetbrains.mps.nodeEditor.text.TextBuilder" resolve="fromString" />
-                                  <node concept="Xl_RD" id="6p1Tdwm529V" role="37wK5m">
-                                    <property role="Xl_RC" value="\n" />
+                                <node concept="2ShNRf" id="5kDStdRf6VL" role="37wK5m">
+                                  <node concept="1pGfFk" id="5kDStdRf6VM" role="2ShVmc">
+                                    <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                                    <node concept="Xl_RD" id="5kDStdRf7lh" role="37wK5m">
+                                      <property role="Xl_RC" value="\n" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="3clFbT" id="6p1Tdwm529W" role="37wK5m">
@@ -12194,6 +12196,7 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="6p1Tdwm52ac" role="2LFqv$">
+                            <node concept="3clFbH" id="5kDStdRf7pi" role="3cqZAp" />
                             <node concept="3clFbF" id="6p1Tdwm52ad" role="3cqZAp">
                               <node concept="37vLTI" id="6p1Tdwm52ae" role="3clFbG">
                                 <node concept="37vLTw" id="6p1Tdwm52af" role="37vLTJ">
@@ -12205,12 +12208,13 @@
                                   </node>
                                   <node concept="liA8E" id="6p1Tdwm52oo" role="2OqNvi">
                                     <ref role="37wK5l" to="cj4x:~TextBuilder.appendToTheRight(jetbrains.mps.openapi.editor.TextBuilder,boolean):jetbrains.mps.openapi.editor.TextBuilder" resolve="appendToTheRight" />
-                                    <node concept="2YIFZM" id="6p1Tdwm52ot" role="37wK5m">
-                                      <ref role="1Pybhc" to="eh3q:~TextBuilder" resolve="TextBuilder" />
-                                      <ref role="37wK5l" to="eh3q:~TextBuilder.fromString(java.lang.String):jetbrains.mps.nodeEditor.text.TextBuilder" resolve="fromString" />
-                                      <node concept="2YIFZM" id="6p1Tdwm52oy" role="37wK5m">
-                                        <ref role="1Pybhc" to="g51k:~EditorCell_Indent" resolve="EditorCell_Indent" />
-                                        <ref role="37wK5l" to="g51k:~EditorCell_Indent.getIndentText():java.lang.String" resolve="getIndentText" />
+                                    <node concept="2ShNRf" id="5kDStdRf7qb" role="37wK5m">
+                                      <node concept="1pGfFk" id="5kDStdRf7qc" role="2ShVmc">
+                                        <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                                        <node concept="2YIFZM" id="5kDStdRf7rC" role="37wK5m">
+                                          <ref role="1Pybhc" to="g51k:~EditorCell_Indent" resolve="EditorCell_Indent" />
+                                          <ref role="37wK5l" to="g51k:~EditorCell_Indent.getIndentText():java.lang.String" resolve="getIndentText" />
+                                        </node>
                                       </node>
                                     </node>
                                     <node concept="3clFbT" id="6p1Tdwm52aj" role="37wK5m">
@@ -12734,9 +12738,10 @@
                 <node concept="3uibUv" id="313YTPnKiHF" role="1tU5fm">
                   <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
                 </node>
-                <node concept="2YIFZM" id="313YTPnKiHG" role="33vP2m">
-                  <ref role="1Pybhc" to="eh3q:~TextBuilder" resolve="TextBuilder" />
-                  <ref role="37wK5l" to="eh3q:~TextBuilder.getEmptyTextBuilder():jetbrains.mps.nodeEditor.text.TextBuilder" resolve="getEmptyTextBuilder" />
+                <node concept="2ShNRf" id="5kDStdRf8Fd" role="33vP2m">
+                  <node concept="1pGfFk" id="5kDStdRf8Fe" role="2ShVmc">
+                    <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;()" resolve="TextBuilderImpl" />
+                  </node>
                 </node>
               </node>
             </node>
