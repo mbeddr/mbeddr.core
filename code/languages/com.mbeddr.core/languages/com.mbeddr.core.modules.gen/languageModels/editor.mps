@@ -2,9 +2,9 @@
 <model ref="r:3628da58-a139-459c-a9fd-1e7a51c50d61(com.mbeddr.core.modules.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
@@ -167,7 +167,7 @@
         <property role="3F0ifm" value="file extension:" />
       </node>
       <node concept="3F0A7n" id="3N$tYyGbKZ1" role="3EZMnx">
-        <ref role="1NtTu8" to="d0vh:3N$tYyGbKra" resolve="fileExtension" />
+        <ref role="1NtTu8" to="d0vh:6iilwRlTjqZ" resolve="fileExtension" />
       </node>
       <node concept="l2Vlx" id="3N$tYyGbKYY" role="2iSdaV" />
     </node>
@@ -175,6 +175,15 @@
   <node concept="24kQdi" id="1x_Jrt9MX2a">
     <property role="3GE5qa" value="module" />
     <ref role="1XX52x" to="d0vh:1x_Jrt9Mwpu" resolve="GenModuleH" />
+    <node concept="3EZMnI" id="1zF3M6MSseA" role="6VMZX">
+      <node concept="3F0ifn" id="1zF3M6MSseB" role="3EZMnx">
+        <property role="3F0ifm" value="file extension:" />
+      </node>
+      <node concept="3F0A7n" id="1zF3M6MSseC" role="3EZMnx">
+        <ref role="1NtTu8" to="d0vh:6iilwRlTjqZ" resolve="fileExtension" />
+      </node>
+      <node concept="l2Vlx" id="1zF3M6MSseD" role="2iSdaV" />
+    </node>
     <node concept="3EZMnI" id="1x_Jrt9NhZ6" role="2wV5jI">
       <node concept="2iRkQZ" id="1x_Jrt9NhZ7" role="2iSdaV" />
       <node concept="3EZMnI" id="1x_Jrt9NhZ8" role="3EZMnx">
