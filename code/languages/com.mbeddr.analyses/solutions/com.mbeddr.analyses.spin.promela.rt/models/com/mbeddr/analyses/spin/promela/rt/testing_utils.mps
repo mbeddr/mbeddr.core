@@ -468,12 +468,17 @@
                     <ref role="3cqZAo" node="5yxSA$IRT34" resolve="aa" />
                   </node>
                 </node>
-                <node concept="3cpWs3" id="1frDWv8aLWD" role="1gVpfI">
-                  <node concept="37vLTw" id="1frDWv8aM3e" role="3uHU7w">
-                    <ref role="3cqZAo" node="5yxSA$IRHT5" resolve="spinModuleName" />
+                <node concept="3cpWs3" id="3tIDuP5srR9" role="1gVpfI">
+                  <node concept="Xl_RD" id="3tIDuP5srZc" role="3uHU7w">
+                    <property role="Xl_RC" value="'" />
                   </node>
-                  <node concept="Xl_RD" id="1frDWv8aLED" role="3uHU7B">
-                    <property role="Xl_RC" value="AssertionAnalysis not found for Promela module: " />
+                  <node concept="3cpWs3" id="1frDWv8aLWD" role="3uHU7B">
+                    <node concept="Xl_RD" id="1frDWv8aLED" role="3uHU7B">
+                      <property role="Xl_RC" value="AssertionAnalysis not found for Promela module: '" />
+                    </node>
+                    <node concept="37vLTw" id="1frDWv8aM3e" role="3uHU7w">
+                      <ref role="3cqZAo" node="5yxSA$IRHT5" resolve="spinModuleName" />
+                    </node>
                   </node>
                 </node>
               </node>
