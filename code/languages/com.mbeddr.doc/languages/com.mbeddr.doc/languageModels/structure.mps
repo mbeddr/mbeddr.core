@@ -11,6 +11,7 @@
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1289,6 +1290,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
     </node>
+    <node concept="1TJgyj" id="54ozzUwjhw1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="627_yy34G1i">
     <property role="TrG5h" value="ModelContentAsTextParagraph" />
@@ -1298,6 +1305,12 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="1pbfSe" value="476424582" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
+    <node concept="1TJgyj" id="54ozzUwjLRq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
+    </node>
     <node concept="1TJgyi" id="627_yy34G1j" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
