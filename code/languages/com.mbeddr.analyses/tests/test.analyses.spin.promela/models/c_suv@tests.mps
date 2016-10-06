@@ -865,6 +865,16 @@
       <property role="TrG5h" value="test1" />
       <node concept="3cqZAl" id="6qQmI_32wjO" role="3clF45" />
       <node concept="3clFbS" id="6qQmI_32wjP" role="3clF47">
+        <node concept="3cpWs8" id="3tIDuP5tl3B" role="3cqZAp">
+          <node concept="3cpWsn" id="3tIDuP5tl3C" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="3tIDuP5tl3A" role="1tU5fm" />
+            <node concept="BaHAS" id="3tIDuP5tl3D" role="33vP2m">
+              <property role="BaHAW" value="c_suv_statemachines" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6qQmI_32wjQ" role="3cqZAp">
           <node concept="3cpWsn" id="6qQmI_32wjR" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -874,9 +884,8 @@
             <node concept="2YIFZM" id="6qQmI_32wjT" role="33vP2m">
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
-              <node concept="BaHAS" id="6qQmI_32wjU" role="37wK5m">
-                <property role="BaHAW" value="c_suv_statemachines" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="3tIDuP5tl3E" role="37wK5m">
+                <ref role="3cqZAo" node="3tIDuP5tl3C" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6qQmI_32wjV" role="37wK5m">
                 <property role="Xl_RC" value="suv7_harness" />

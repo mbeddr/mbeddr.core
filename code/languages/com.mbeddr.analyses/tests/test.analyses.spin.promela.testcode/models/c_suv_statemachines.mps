@@ -240,7 +240,7 @@
   <node concept="2v9HqL" id="6qQmI_2XWK4">
     <node concept="1gr5cj" id="6qQmI_2XWK5" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="suv7_harness" />
+      <property role="TrG5h" value="pan_suv7_harness" />
       <node concept="2v9HqM" id="6qQmI_2Y3Hu" role="2eOfOg">
         <ref role="2v9HqP" node="6qQmI_2XWKu" resolve="suv7_harness" />
       </node>
