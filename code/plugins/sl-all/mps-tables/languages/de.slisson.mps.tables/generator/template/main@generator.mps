@@ -303,6 +303,7 @@
       <concept id="1194565793557" name="jetbrains.mps.lang.generator.structure.IncludeMacro" flags="ln" index="xERo3">
         <reference id="1194566366375" name="includeTemplate" index="xH3mL" />
       </concept>
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -1073,6 +1074,9 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="2ZBi8u" id="54ozzUwmYz6" role="lGtFl">
+                    <ref role="2rW$FS" to="tpc3:hG00Hig" resolve="generatedClass" />
                   </node>
                 </node>
                 <node concept="raruj" id="6yUTIunt_GL" role="lGtFl" />
