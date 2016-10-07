@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="47ffa04a-a434-4e56-808f-210415ea2d38" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="47ffa04a-a434-4e56-808f-210415ea2d38" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>mbeddr</name>
   <parameters>
     <param name="artifacts-root.path-properties" value="-Dartifacts.root=%teamcity.build.checkoutDir%/artifacts" />
@@ -20,6 +20,16 @@ startup/**/*.*=>%teamcity.build.checkoutDir%/startup]]></param>
     <param name="mps.path-properties" value="-Dmps_home=%teamcity.build.checkoutDir%/MPS-mbeddr -Dmps.home=%teamcity.build.checkoutDir%/MPS-mbeddr" />
     <param name="sl-all.path-properties" value="-Dsl-all.scripts.base-path=%teamcity.build.checkoutDir%/scripts -Dsl-all.home=%teamcity.build.checkoutDir%/mbeddr.core/code/plugins/sl-all" />
   </parameters>
+  <project-extensions>
+    <extension id="versionedSettings" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="PREFER_VCS" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="Mbeddr2_Bootstrap_MbeddrBoostrap" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
   <cleanup />
 </project>
 
