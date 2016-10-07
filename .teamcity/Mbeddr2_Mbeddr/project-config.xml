@@ -21,6 +21,18 @@ startup/**/*.*=>%teamcity.build.checkoutDir%/startup]]></param>
     <param name="sl-all.path-properties" value="-Dsl-all.scripts.base-path=%teamcity.build.checkoutDir%/scripts -Dsl-all.home=%teamcity.build.checkoutDir%/mbeddr.core/code/plugins/sl-all" />
   </parameters>
   <project-extensions>
+    <extension id="PROJECT_EXT_1" type="IssueTracker">
+      <parameters>
+        <param name="authType" value="anonymous" />
+        <param name="name" value="mbeddr/mbeddr.core" />
+        <param name="pattern" value="#(\d+)" />
+        <param name="repository" value="https://github.com/mbeddr/mbeddr.core" />
+        <param name="secure:accessToken" value="zxx775d03cbe80d301b" />
+        <param name="secure:password" value="zxx775d03cbe80d301b" />
+        <param name="type" value="GithubIssues" />
+        <param name="username" value="" />
+      </parameters>
+    </extension>
     <extension id="versionedSettings" type="versionedSettings">
       <parameters>
         <param name="buildSettings" value="PREFER_VCS" />
