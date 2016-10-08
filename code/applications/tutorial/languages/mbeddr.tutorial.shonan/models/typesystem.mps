@@ -3845,5 +3845,61 @@
       <ref role="1YaFvo" to="5l2n:2Itq67zmC$c" resolve="DimExpression" />
     </node>
   </node>
+  <node concept="18kY7G" id="12852iL1LK5">
+    <property role="TrG5h" value="check_TreatStatement" />
+    <property role="3GE5qa" value="stencil.user" />
+    <node concept="3clFbS" id="12852iL1LK6" role="18ibNy">
+      <node concept="3cpWs8" id="12852iL1Mgx" role="3cqZAp">
+        <node concept="3cpWsn" id="12852iL1Mgy" role="3cpWs9">
+          <property role="TrG5h" value="type" />
+          <node concept="3Tqbb2" id="12852iL1Mgt" role="1tU5fm" />
+          <node concept="2OqwBi" id="12852iL1Mgz" role="33vP2m">
+            <node concept="2OqwBi" id="12852iL1Mg$" role="2Oq$k0">
+              <node concept="1YBJjd" id="12852iL1Mg_" role="2Oq$k0">
+                <ref role="1YBMHb" node="12852iL1LK8" resolve="statement" />
+              </node>
+              <node concept="3TrEf2" id="12852iL1MgA" role="2OqNvi">
+                <ref role="3Tt5mk" to="5l2n:12852iL1LFU" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="12852iL1MgB" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="12852iL1LKi" role="3cqZAp">
+        <node concept="3fqX7Q" id="12852iL1MqS" role="3clFbw">
+          <node concept="2OqwBi" id="12852iL1MqU" role="3fr31v">
+            <node concept="37vLTw" id="12852iL1MqV" role="2Oq$k0">
+              <ref role="3cqZAo" node="12852iL1Mgy" resolve="type" />
+            </node>
+            <node concept="1mIQ4w" id="12852iL1MqW" role="2OqNvi">
+              <node concept="chp4Y" id="12852iL1MqX" role="cj9EA">
+                <ref role="cht4Q" to="yq40:fwMInzpHoK" resolve="PointerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="12852iL1LKk" role="3clFbx">
+          <node concept="2MkqsV" id="12852iL1MsA" role="3cqZAp">
+            <node concept="Xl_RD" id="12852iL1MsS" role="2MkJ7o">
+              <property role="Xl_RC" value="The referenced variable must have pointer type!" />
+            </node>
+            <node concept="2OqwBi" id="12852iL1MxV" role="2OEOjV">
+              <node concept="1YBJjd" id="12852iL1MtB" role="2Oq$k0">
+                <ref role="1YBMHb" node="12852iL1LK8" resolve="statement" />
+              </node>
+              <node concept="3TrEf2" id="12852iL1MTk" role="2OqNvi">
+                <ref role="3Tt5mk" to="5l2n:12852iL1LFU" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="12852iL1LK8" role="1YuTPh">
+      <property role="TrG5h" value="statement" />
+      <ref role="1YaFvo" to="5l2n:12852iL1LFT" resolve="TreatStatement" />
+    </node>
+  </node>
 </model>
 

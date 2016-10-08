@@ -10,7 +10,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +88,10 @@
       <property role="TrG5h" value="noopt" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="12852iKY$Ak" role="1TKVEl">
+      <property role="TrG5h" value="accessKind" />
+      <ref role="AX2Wp" node="12852iKY3Wl" resolve="ArrayAccessKind" />
+    </node>
     <node concept="PrWs8" id="17Z2wzk70BQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
@@ -106,9 +110,15 @@
     </node>
     <node concept="1TJgyj" id="17Z2wzk7NJo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="bounds" />
+      <property role="20kJfa" value="operationIntervals" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="17Z2wzk7NIM" resolve="Bound" />
+      <ref role="20lvS9" node="17Z2wzk7NIM" resolve="IntermediateIntervalWithOffset" />
+    </node>
+    <node concept="1TJgyj" id="12852iL4OPW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="originalIntervals" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="12852iL5uZJ" resolve="IntermediateInterval" />
     </node>
     <node concept="1TJgyj" id="6MpvgXUWeft" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -193,6 +203,10 @@
     <property role="34LRSv" value="array operation" />
     <property role="R4oN_" value="array operation" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="12852iKY3Xc" role="1TKVEl">
+      <property role="TrG5h" value="accessKind" />
+      <ref role="AX2Wp" node="12852iKY3Wl" resolve="ArrayAccessKind" />
+    </node>
     <node concept="1TJgyj" id="yso5_bs199" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
@@ -490,24 +504,13 @@
   <node concept="1TIwiD" id="17Z2wzk7NIM">
     <property role="1pbfSe" value="434223686" />
     <property role="3GE5qa" value="stencil.intermediate" />
-    <property role="TrG5h" value="Bound" />
-    <property role="34LRSv" value="bound" />
-    <property role="R4oN_" value="bound" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="IntermediateIntervalWithOffset" />
+    <property role="34LRSv" value="range" />
+    <property role="R4oN_" value="range" />
+    <ref role="1TJDcQ" node="12852iL5uZJ" resolve="IntermediateInterval" />
     <node concept="1TJgyi" id="17Z2wzk7NIN" role="1TKVEl">
       <property role="TrG5h" value="offset" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="7bTG2hLpiBS" role="1TKVEl">
-      <property role="TrG5h" value="min" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="7bTG2hLpiBZ" role="1TKVEl">
-      <property role="TrG5h" value="max" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="PrWs8" id="17Z2wzk7NIY" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="a$mxDpdQAc">
@@ -685,6 +688,55 @@
       <node concept="trNpa" id="6rrVAnc62hT" role="EQaZv">
         <ref role="trN6q" node="yso5_brSDa" resolve="StencilComputation" />
       </node>
+    </node>
+  </node>
+  <node concept="AxPO7" id="12852iKY3Wl">
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="ArrayAccessKind" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="12852iKY3X7" role="M5hS2">
+      <property role="1uS6qv" value="hierarchical" />
+      <property role="1uS6qo" value="hierarchical" />
+    </node>
+    <node concept="M4N5e" id="12852iKY3Wm" role="M5hS2">
+      <property role="1uS6qv" value="linear" />
+      <property role="1uS6qo" value="linear" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12852iL1LFT">
+    <property role="1pbfSe" value="1047580899" />
+    <property role="3GE5qa" value="stencil.user" />
+    <property role="TrG5h" value="TreatStatement" />
+    <property role="34LRSv" value="treat" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="12852iL1LFU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="reference" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
+    <node concept="1TJgyj" id="12852iL1LG2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="intervals" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5cfyNbIqUul" resolve="Interval" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12852iL5uZJ">
+    <property role="1pbfSe" value="1046608877" />
+    <property role="3GE5qa" value="stencil.intermediate" />
+    <property role="TrG5h" value="IntermediateInterval" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="12852iL5IOt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="1TJgyi" id="7bTG2hLpiBS" role="1TKVEl">
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7bTG2hLpiBZ" role="1TKVEl">
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

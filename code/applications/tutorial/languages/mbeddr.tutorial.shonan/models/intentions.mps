@@ -408,7 +408,7 @@
           <node concept="3clFbS" id="6rrVAnc66wN" role="3clFbx">
             <node concept="3cpWs6" id="6rrVAnc67jk" role="3cqZAp">
               <node concept="Xl_RD" id="6rrVAnc67jl" role="3cqZAk">
-                <property role="Xl_RC" value="Mark With @no-opt" />
+                <property role="Xl_RC" value="Disable Optimization" />
               </node>
             </node>
           </node>
@@ -427,7 +427,7 @@
             <node concept="3clFbS" id="6rrVAnc67md" role="9aQI4">
               <node concept="3cpWs6" id="6rrVAnc67tQ" role="3cqZAp">
                 <node concept="Xl_RD" id="6rrVAnc67vb" role="3cqZAk">
-                  <property role="Xl_RC" value="Remove @no-opt" />
+                  <property role="Xl_RC" value="Enable Optimization" />
                 </node>
               </node>
             </node>
