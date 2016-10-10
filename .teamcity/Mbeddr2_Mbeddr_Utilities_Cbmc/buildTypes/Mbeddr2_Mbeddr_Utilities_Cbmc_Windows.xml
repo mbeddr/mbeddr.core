@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b9ac7f7c-6115-4d30-85cf-0be0e60edb7f" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b9ac7f7c-6115-4d30-85cf-0be0e60edb7f" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>Windows</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -34,7 +34,7 @@ zip -r -X %teamcity.build.checkoutDir%\cbmc-win.zip *]]></param>
       <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
     </vcs-settings>
     <requirements>
-      <equals name="teamcity.agent.jvm.os.name" value="Windows 8.1" />
+      <equals id="RQ_3" name="teamcity.agent.jvm.os.name" value="Windows 8.1" />
     </requirements>
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
