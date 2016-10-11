@@ -21,7 +21,6 @@
         <dependency reexport="false">1584b8e5-f354-4c2e-8130-92bbe4a1192b(com.mbeddr.core.unittest#6275792049641599010)</dependency>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
         <dependency reexport="false">06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)</dependency>
-        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -246,20 +245,6 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_before">
-          <greater-priority-mapping>
-            <generator generatorUID="911d9207-f696-4583-847d-5378a7bc17a8(mbeddr.tutorial.shonan#4634425186961163609)" />
-            <external-mapping>
-              <mapping-node modelUID="r:eed52114-63b9-42a2-94ea-cfb9a9d021a0(mbeddr.tutorial.shonan.generator.template.main@generator)" nodeID="4731309803867701151" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="911d9207-f696-4583-847d-5378a7bc17a8(mbeddr.tutorial.shonan#4634425186961163609)" />
-            <external-mapping>
-              <mapping-node modelUID="r:eed52114-63b9-42a2-94ea-cfb9a9d021a0(mbeddr.tutorial.shonan.generator.template.main@generator)" nodeID="8800838466057152001" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -271,9 +256,6 @@
     <dependency reexport="false" scope="generate-into">766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)</dependency>
     <dependency reexport="false">b68cce94-7c2b-436e-8b69-c33a9bcb11a0(mbeddr.tutorial.shonan.runtime)</dependency>
     <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
-    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
-    <dependency reexport="false">3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

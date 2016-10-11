@@ -216,7 +216,7 @@
         </node>
         <node concept="2N2KuS" id="fv0ouCYsB0" role="3XIRFZ">
           <node concept="3TlMh9" id="fv0ouCYsC2" role="2N2GHh">
-            <property role="2hmy$m" value="23" />
+            <property role="2hmy$m" value="22" />
           </node>
           <node concept="1S7827" id="fv0ouCYsBT" role="2N2GHg">
             <ref role="1S7826" node="5IYyAOzC_F9" resolve="global2" />
