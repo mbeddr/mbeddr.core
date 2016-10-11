@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Mbeddr2_Mbeddr" uuid="77359af0-c838-47b2-a7c3-517f59ff5d9c" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
+  <name>voluntis</name>
+  <parameters>
+    <param name="artifacts-root.path-properties" value="-Dartifacts.root=%teamcity.build.checkoutDir%/artifacts" />
+    <param name="build-dir.path-properties" value="-Dbuild.dir=%teamcity.build.checkoutDir%" />
+    <param name="generic.artifact-rule" value="**=&gt;%teamcity.build.checkoutDir%/artifacts" />
+    <param name="mbeddr-github.path-properties" value="%mbeddr.path-properties%" />
+    <param name="mbeddr.build-number" value="mbeddr-%build.counter%" />
+    <param name="mbeddr.checkout-rules" value="+:.=&gt;mbeddr.core" />
+    <param name="mbeddr.path-properties" value="-Dmbeddr.github.core.home=%teamcity.build.checkoutDir%/mbeddr.core -Dsl-all=%teamcity.build.checkoutDir%/mbeddr.core/code/plugins/sl-all" />
+  </parameters>
+  <cleanup />
+  <buildTypesOrder order="Voluntis_DownloadMps,Voluntis_BuildSlAllAndMbeddrPlatform,Voluntis_BuildOrgIets3core" />
+</project>
+
