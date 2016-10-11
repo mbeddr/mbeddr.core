@@ -2,16 +2,17 @@
 <model ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
+    <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -76,6 +77,9 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="3350625596579911728" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8M" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/document.png" />
+    </node>
     <node concept="1TJgyi" id="4PmkglJNWPJ" role="1TKVEl">
       <property role="TrG5h" value="chapterStartIndex" />
       <property role="IQ2nx" value="5572730672710143343" />
@@ -95,9 +99,6 @@
     </node>
     <node concept="PrWs8" id="4zsoa5EdazX" role="PzmwI">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8M" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/document.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="2TZO3DbuxwP">
@@ -128,6 +129,9 @@
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="3350625596580064222" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8T" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/section.png" />
+    </node>
     <node concept="1TJgyi" id="2TZO3Dbv6Jx" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <property role="IQ2nx" value="3350625596580064225" />
@@ -153,9 +157,6 @@
     </node>
     <node concept="PrWs8" id="6jiGbW_JDXF" role="PzmwI">
       <ref role="PrY4T" node="6jiGbW_JBH_" resolve="IDocReferencable" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8T" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/section.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="2TZO3Dbv6JT">
@@ -201,6 +202,9 @@
     <property role="R4oN_" value="a regular text paragraph" />
     <property role="EcuMT" value="3350625596580089586" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8Q" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/paragraph.png" />
+    </node>
     <node concept="1TJgyj" id="4vQSg$Ar0eC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="header" />
@@ -222,9 +226,6 @@
     </node>
     <node concept="PrWs8" id="72AnQbQ5ZHg" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8Q" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/paragraph.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="2TZO3DbvhAy">
@@ -280,6 +281,9 @@
     <property role="3GE5qa" value="export" />
     <property role="EcuMT" value="3350625596580256366" />
     <ref role="1TJDcQ" node="5gTlpaky5gD" resolve="AbstractExport" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8R" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/documentExport.png" />
+    </node>
     <node concept="1TJgyi" id="72XbSXEzBI" role="1TKVEl">
       <property role="TrG5h" value="title" />
       <property role="IQ2nx" value="126932837435324910" />
@@ -294,9 +298,6 @@
     </node>
     <node concept="PrWs8" id="1uL8CItvfvF" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8R" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/documentExport.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="2TZO3DbvSLN">
@@ -320,6 +321,9 @@
     <property role="34LRSv" value="image" />
     <property role="EcuMT" value="6386504476136263187" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8S" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/image.png" />
+    </node>
     <node concept="1TJgyj" id="2fBMM_3qVvX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="originalNode" />
@@ -377,9 +381,6 @@
     <node concept="PrWs8" id="jpyKDg34hf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
     </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8S" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/image.png" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5yxqZJwzrcZ">
     <property role="3GE5qa" value="words" />
@@ -402,6 +403,9 @@
     <property role="3GE5qa" value="config" />
     <property role="EcuMT" value="6386504476136472782" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8P" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/documentConfig.png" />
+    </node>
     <node concept="1TJgyj" id="519ky_SprCS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="defaultTempPath" />
@@ -448,9 +452,6 @@
     </node>
     <node concept="PrWs8" id="720V7ZgxWTL" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8P" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/documentConfig.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5yxqZJwzC3r">
@@ -855,11 +856,11 @@
     <property role="3GE5qa" value="export" />
     <property role="EcuMT" value="6068976060904007493" />
     <ref role="1TJDcQ" node="5gTlpaky5gD" resolve="AbstractExport" />
-    <node concept="PrWs8" id="1uL8CIttCpY" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
     <node concept="1QGGSu" id="1N5Tah$Cg8U" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/documentExport.png" />
+    </node>
+    <node concept="PrWs8" id="1uL8CIttCpY" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="7$DvC4gUq7B">
@@ -869,6 +870,9 @@
     <property role="34LRSv" value="listing" />
     <property role="EcuMT" value="8730648445434044903" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8W" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/code.png" />
+    </node>
     <node concept="1TJgyi" id="7$DvC4gUq7D" role="1TKVEl">
       <property role="TrG5h" value="language" />
       <property role="IQ2nx" value="8730648445434044905" />
@@ -884,9 +888,6 @@
     </node>
     <node concept="PrWs8" id="3il$LAnLwNo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8W" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/code.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4vQSg$Ar0eu">
@@ -1062,6 +1063,9 @@
     <property role="R4oN_" value="include visualized image" />
     <property role="EcuMT" value="2588579461812060090" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8V" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/visualization.png" />
+    </node>
     <node concept="PrWs8" id="2fGuOSYbvYV" role="PzmwI">
       <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
     </node>
@@ -1108,9 +1112,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2588579461812060100" />
       <ref role="20lvS9" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8V" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/visualization.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="5L$H31Kgq3f">
@@ -1377,6 +1378,9 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="EcuMT" value="6955693250238922827" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
+    <node concept="1QGGSu" id="1N5Tah$Cg8O" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/code.png" />
+    </node>
     <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="path" />
@@ -1407,8 +1411,11 @@
       <property role="IQ2ns" value="6955693250238922833" />
       <ref role="20lvS9" node="7uLL3Mf0t_w" resolve="FigureSizeSpec" />
     </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8O" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/code.png" />
+    <node concept="1TJgyj" id="54ozzUwjhw1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="627_yy34G1i">
@@ -1418,6 +1425,15 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="EcuMT" value="6955693250238922834" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
+    <node concept="1TJgyj" id="54ozzUwjLRq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
+    </node>
+    <node concept="1QGGSu" id="1N5Tah$Cg8N" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/code.png" />
+    </node>
     <node concept="1TJgyi" id="627_yy34G1j" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <property role="IQ2nx" value="6955693250238922835" />
@@ -1430,9 +1446,6 @@
     </node>
     <node concept="PrWs8" id="627_yy34G1l" role="PzmwI">
       <ref role="PrY4T" node="47ZkZt5XzTh" resolve="IInterspersed" />
-    </node>
-    <node concept="1QGGSu" id="1N5Tah$Cg8N" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/code.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="627_yy34G1m">

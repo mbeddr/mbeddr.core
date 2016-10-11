@@ -9884,6 +9884,12 @@
               <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
             </node>
           </node>
+          <node concept="1SiIV0" id="ifzjJnxpsW" role="3bR37C">
+            <node concept="3bR9La" id="ifzjJnxpsX" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="IWU1J3HDWv" role="3bR37C">
           <node concept="3bR9La" id="IWU1J3HDWw" role="1SiIV1">
@@ -10194,6 +10200,18 @@
               <ref role="3bR37D" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
             </node>
           </node>
+          <node concept="1SiIV0" id="ifzjJnxpuF" role="3bR37C">
+            <node concept="3bR9La" id="ifzjJnxpuG" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1YMM4SJ6o1" resolve="com.mbeddr.doc#4457500422381538528" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="ifzjJnxpuH" role="3bR37C">
+            <node concept="3bR9La" id="ifzjJnxpuI" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="1YMM4SJ8qF" role="3bR37C">
           <node concept="3bR9La" id="1YMM4SJ8qG" role="1SiIV1">
@@ -10204,6 +10222,12 @@
         <node concept="1SiIV0" id="1YMM4SJ8qH" role="3bR37C">
           <node concept="1Busua" id="1YMM4SJ8qI" role="1SiIV1">
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="ifzjJnxpuD" role="3bR37C">
+          <node concept="3bR9La" id="ifzjJnxpuE" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
