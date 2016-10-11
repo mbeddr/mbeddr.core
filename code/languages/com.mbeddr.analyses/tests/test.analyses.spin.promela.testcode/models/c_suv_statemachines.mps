@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:203382d6-24f6-42c7-ace8-cd27646ae264(c_suv7)">
+<model ref="r:203382d6-24f6-42c7-ace8-cd27646ae264(c_suv_statemachines)">
   <persistence version="9" />
   <languages>
     <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />
@@ -240,7 +240,7 @@
   <node concept="2v9HqL" id="6qQmI_2XWK4">
     <node concept="1gr5cj" id="6qQmI_2XWK5" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="suv7_harness" />
+      <property role="TrG5h" value="pan_suv7_harness" />
       <node concept="2v9HqM" id="6qQmI_2Y3Hu" role="2eOfOg">
         <ref role="2v9HqP" node="6qQmI_2XWKu" resolve="suv7_harness" />
       </node>

@@ -963,5 +963,54 @@
     </node>
     <node concept="2tJIrI" id="6kQ$1ab4Jc4" role="jymVt" />
   </node>
+  <node concept="312cEu" id="3_HSwtcW_yY">
+    <property role="TrG5h" value="VacuityAnalyzerFactory" />
+    <node concept="3Tm1VV" id="3_HSwtcW_yZ" role="1B3o_S" />
+    <node concept="3uibUv" id="3_HSwtcW_zr" role="1zkMxy">
+      <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+    </node>
+    <node concept="NWlO9" id="3_HSwtcW_zE" role="lGtFl">
+      <property role="NWlVz" value="Factory for creating vacuity analyzers." />
+    </node>
+    <node concept="2tJIrI" id="3_HSwtcW_AE" role="jymVt" />
+    <node concept="3clFb_" id="3_HSwtcW_zS" role="jymVt">
+      <property role="TrG5h" value="createAnalyzer" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="37vLTG" id="5uqRFp941kG" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="5uqRFp941kF" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3_HSwtcW_zT" role="3clF45">
+        <ref role="3uigEE" to="tzyt:2UdJgvCT1yk" resolve="CProverAnalyzerBase" />
+      </node>
+      <node concept="3Tm1VV" id="3_HSwtcW_zU" role="1B3o_S" />
+      <node concept="3clFbS" id="3_HSwtcW_$1" role="3clF47">
+        <node concept="3clFbF" id="3_HSwtcW_EL" role="3cqZAp">
+          <node concept="2ShNRf" id="3_HSwtcW_EJ" role="3clFbG">
+            <node concept="1pGfFk" id="3_HSwtcW_N5" role="2ShVmc">
+              <ref role="37wK5l" node="3WYFqns_p1t" resolve="VacuityAnalyzer" />
+              <node concept="37vLTw" id="3_HSwtcW_RP" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5uqRFp90Tqv" resolve="config" />
+              </node>
+              <node concept="37vLTw" id="5uqRFp941vQ" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5uqRFp90Tu2" resolve="toolAdapter" />
+              </node>
+              <node concept="37vLTw" id="5uqRFp94202" role="37wK5m">
+                <ref role="3cqZAo" node="5uqRFp941kG" resolve="pi" />
+              </node>
+              <node concept="37vLTw" id="5KHBa6l3bcj" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="3_HSwtcW_CN" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
+  </node>
 </model>
 
