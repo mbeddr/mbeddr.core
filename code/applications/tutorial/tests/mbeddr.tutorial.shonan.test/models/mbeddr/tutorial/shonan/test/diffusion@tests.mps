@@ -1901,7 +1901,7 @@
       <property role="TrG5h" value="N" />
       <property role="2OOxQR" value="false" />
       <node concept="3TlMh9" id="2XHdgpYGeZl" role="2DQcEM">
-        <property role="2hmy$m" value="512" />
+        <property role="2hmy$m" value="256" />
       </node>
       <node concept="1z9TsT" id="2XHdgpYGeZm" role="lGtFl">
         <node concept="OjmMv" id="2XHdgpYGeZn" role="1w35rA">
