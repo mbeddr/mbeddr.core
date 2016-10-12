@@ -2,12 +2,12 @@
 <model ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -196,7 +196,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -3559,7 +3559,7 @@
       <node concept="37vLTG" id="7PpjtdjCFNd" role="3clF46">
         <property role="TrG5h" value="requiredModule" />
         <node concept="3Tqbb2" id="7PpjtdjCFNe" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
     </node>
@@ -3621,7 +3621,7 @@
       <node concept="37vLTG" id="ipMc9QxfL" role="3clF46">
         <property role="TrG5h" value="requiredModule" />
         <node concept="3Tqbb2" id="ipMc9QxfM" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
     </node>
@@ -3706,7 +3706,7 @@
       <node concept="37vLTG" id="43R883waU$o" role="3clF46">
         <property role="TrG5h" value="requiredModule" />
         <node concept="3Tqbb2" id="43R883waU$p" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+          <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
       <node concept="37vLTG" id="43R883waWE7" role="3clF46">
