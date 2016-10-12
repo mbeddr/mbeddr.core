@@ -7,7 +7,6 @@
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
@@ -64,7 +63,7 @@
       <concept id="5614144563374998802" name="mbeddr.tutorial.shonan.structure.StencilLocalVarRef" flags="ng" index="cgjuI" />
       <concept id="7411779732751524978" name="mbeddr.tutorial.shonan.structure.NoOptAttribute" flags="ng" index="2EKWCn" />
       <concept id="4731309803867128558" name="mbeddr.tutorial.shonan.structure.ShiftExpression" flags="ng" index="2OuzZs">
-        <child id="4731309803867128688" name="values" index="2OuzT2" />
+        <child id="4731309803867128688" name="value" index="2OuzT2" />
       </concept>
       <concept id="5985155480663336853" name="mbeddr.tutorial.shonan.structure.Interval" flags="ng" index="2Xp2MB">
         <child id="5985155480663336854" name="left" index="2Xp2M$" />
