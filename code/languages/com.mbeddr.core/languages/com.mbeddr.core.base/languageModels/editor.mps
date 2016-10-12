@@ -14,7 +14,7 @@
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -24,30 +24,30 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="sn11" ref="r:836426ab-a6f4-4fa3-9a9c-34c02ed6ab5d(jetbrains.mps.ide.icons)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
-    <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
-    <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor(MPS.Editor/)" />
-    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
-    <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
-    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
-    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
-    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing()" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt()" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event()" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util()" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor()" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells()" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text()" />
+    <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons()" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util()" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel()" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io()" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project()" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells()" />
+    <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings()" />
+    <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor()" />
+    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image()" />
+    <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation()" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project()" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor()" />
+    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection()" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language()" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3()" />
+    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom()" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
@@ -761,8 +761,8 @@
         <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
       </node>
       <node concept="3F1sOY" id="65XyadYMSRx" role="3EZMnx">
-        <ref role="1NtTu8" to="vs0r:65XyadYMMYG" resolve="commentedCode" />
         <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
+        <ref role="1NtTu8" to="vs0r:65XyadYMMYG" resolve="commentedCode" />
       </node>
     </node>
   </node>
@@ -830,9 +830,9 @@
           <ref role="1k5W1q" node="2CEi94dprSJ" resolve="TextComment" />
         </node>
         <node concept="3F1sOY" id="3wX8xlocqUq" role="3EZMnx">
-          <ref role="1NtTu8" to="vs0r:3wX8xlocnjN" resolve="text" />
           <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
           <ref role="1k5W1q" node="2CEi94dprSJ" resolve="TextComment" />
+          <ref role="1NtTu8" to="vs0r:3wX8xlocnjN" resolve="text" />
         </node>
         <node concept="2iRfu4" id="7sHl0myfC36" role="2iSdaV" />
       </node>
@@ -1800,8 +1800,8 @@
       <ref role="1k5W1q" node="3m8H$lmGFF4" resolve="wcomment" />
       <node concept="2iRfu4" id="6OL_4sDahdg" role="2iSdaV" />
       <node concept="3F1sOY" id="7gVrg_0tw6I" role="3EZMnx">
-        <ref role="1NtTu8" to="vs0r:7gVrg_0tw6n" resolve="text" />
         <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
+        <ref role="1NtTu8" to="vs0r:7gVrg_0tw6n" resolve="text" />
         <node concept="VPM3Z" id="3Y7ywckF12X" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -4066,8 +4066,8 @@
           </node>
         </node>
         <node concept="3F1sOY" id="K292flwHwq" role="3EZMnx">
-          <ref role="1NtTu8" to="vs0r:K292flwHwj" resolve="result" />
           <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
+          <ref role="1NtTu8" to="vs0r:K292flwHwj" resolve="result" />
           <node concept="xShMh" id="7pP3mung3Fw" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -7613,8 +7613,8 @@
         </node>
         <node concept="1iCGBv" id="3VMeFNyelQF" role="3EZMnx">
           <property role="1cu_pB" value="2" />
-          <ref role="1NtTu8" to="vs0r:2GIWVTRHgZp" resolve="nameController" />
           <ref role="1ERwB7" node="3VMeFNyI1So" resolve="deleteControlledNameAttr" />
+          <ref role="1NtTu8" to="vs0r:2GIWVTRHgZp" resolve="nameController" />
           <node concept="1sVBvm" id="3VMeFNyelQG" role="1sWHZn">
             <node concept="1HlG4h" id="3VMeFNyelQN" role="2wV5jI">
               <ref role="1ERwB7" node="3VMeFNyI1So" resolve="deleteControlledNameAttr" />
@@ -8263,6 +8263,7 @@
   <node concept="312cEu" id="DubiFB4e4O">
     <property role="TrG5h" value="IconCell" />
     <property role="3GE5qa" value="cells.other" />
+    <node concept="2tJIrI" id="xsq72MHxwy" role="jymVt" />
     <node concept="3Tm1VV" id="DubiFB4e4P" role="1B3o_S" />
     <node concept="3uibUv" id="DubiFB4e4Q" role="1zkMxy">
       <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
@@ -9939,8 +9940,8 @@
     <node concept="3EZMnI" id="4E5hYf6q7en" role="2wV5jI">
       <node concept="2iRfu4" id="4E5hYf6q7eo" role="2iSdaV" />
       <node concept="3F1sOY" id="4E5hYf6q7eU" role="3EZMnx">
-        <ref role="1NtTu8" to="vs0r:7gVrg_0tw6n" resolve="text" />
         <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
+        <ref role="1NtTu8" to="vs0r:7gVrg_0tw6n" resolve="text" />
         <node concept="VPM3Z" id="4E5hYf6q7eV" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
