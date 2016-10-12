@@ -31,6 +31,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="qtqj" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.lang.editor.menus.substitute(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -233,6 +234,13 @@
       <node concept="3Tm6S6" id="6T7OHMQk8FX" role="1B3o_S" />
       <node concept="3bZ5Sz" id="3eolunV5MIa" role="1tU5fm" />
     </node>
+    <node concept="312cEg" id="3lUiDt$RvuO" role="jymVt">
+      <property role="TrG5h" value="myLastLink" />
+      <node concept="3Tm6S6" id="3lUiDt$RvuP" role="1B3o_S" />
+      <node concept="3uibUv" id="3lUiDt$Rw98" role="1tU5fm">
+        <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6T7OHMQk2zm" role="jymVt" />
     <node concept="3clFbW" id="6T7OHMQjWz6" role="jymVt">
       <node concept="3cqZAl" id="6T7OHMQjWz8" role="3clF45" />
@@ -275,6 +283,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3lUiDt$Rwhi" role="3cqZAp">
+          <node concept="37vLTI" id="3lUiDt$Rwwg" role="3clFbG">
+            <node concept="37vLTw" id="3lUiDt$RwCr" role="37vLTx">
+              <ref role="3cqZAo" node="3lUiDt$Qis8" resolve="lastLink" />
+            </node>
+            <node concept="37vLTw" id="3lUiDt$Rwhg" role="37vLTJ">
+              <ref role="3cqZAo" node="3lUiDt$RvuO" resolve="myLastLink" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="6T7OHMQjWAC" role="3clF46">
         <property role="TrG5h" value="editorContext" />
@@ -293,6 +311,12 @@
       <node concept="37vLTG" id="6T7OHMQkbY6" role="3clF46">
         <property role="TrG5h" value="wrappedConcept" />
         <node concept="3bZ5Sz" id="3eolunV5MlC" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3lUiDt$Qis8" role="3clF46">
+        <property role="TrG5h" value="lastLink" />
+        <node concept="3uibUv" id="3lUiDt$Qiyv" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6T7OHMQjVBj" role="jymVt" />
@@ -459,8 +483,8 @@
             <node concept="2YIFZM" id="5kNGMuMQSdD" role="33vP2m">
               <ref role="37wK5l" to="ew59:~DefaultSubstituteMenuContext.createInitialContextForNode(org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext):jetbrains.mps.nodeEditor.menus.substitute.DefaultSubstituteMenuContext" resolve="createInitialContextForNode" />
               <ref role="1Pybhc" to="ew59:~DefaultSubstituteMenuContext" resolve="DefaultSubstituteMenuContext" />
-              <node concept="1rXfSq" id="5kNGMuMQSdE" role="37wK5m">
-                <ref role="37wK5l" node="5kNGMuMPLFu" resolve="getLink" />
+              <node concept="37vLTw" id="3lUiDt$RwJt" role="37wK5m">
+                <ref role="3cqZAo" node="3lUiDt$RvuO" resolve="myLastLink" />
               </node>
               <node concept="37vLTw" id="5kNGMuMQSdF" role="37wK5m">
                 <ref role="3cqZAo" node="6T7OHMQk2Eo" resolve="myParentNode" />
@@ -470,6 +494,34 @@
               </node>
               <node concept="1rXfSq" id="5kNGMuMQSdH" role="37wK5m">
                 <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3lUiDt$PqqT" role="3cqZAp">
+          <node concept="3cpWsn" id="3lUiDt$PqqU" role="3cpWs9">
+            <property role="TrG5h" value="lookup" />
+            <node concept="3uibUv" id="3lUiDt$PqqM" role="1tU5fm">
+              <ref role="3uigEE" to="qtqj:~DefaultSubstituteMenuLookup" resolve="DefaultSubstituteMenuLookup" />
+            </node>
+            <node concept="2ShNRf" id="3lUiDt$PqqV" role="33vP2m">
+              <node concept="1pGfFk" id="3lUiDt$PqqW" role="2ShVmc">
+                <ref role="37wK5l" to="qtqj:~DefaultSubstituteMenuLookup.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry,org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="DefaultSubstituteMenuLookup" />
+                <node concept="2YIFZM" id="3lUiDt$PqqX" role="37wK5m">
+                  <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                  <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                  <node concept="2OqwBi" id="3lUiDt$PqqY" role="37wK5m">
+                    <node concept="1rXfSq" id="3lUiDt$PqqZ" role="2Oq$k0">
+                      <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                    </node>
+                    <node concept="liA8E" id="3lUiDt$Pqr0" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3lUiDt$Pqr1" role="37wK5m">
+                  <ref role="3cqZAo" node="6T7OHMQk8FW" resolve="myWrappedConcept" />
+                </node>
               </node>
             </node>
           </node>
@@ -488,7 +540,9 @@
               </node>
               <node concept="liA8E" id="5kNGMuMQUKe" role="2OqNvi">
                 <ref role="37wK5l" to="ew59:~DefaultSubstituteMenuContext.createItems(jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup):java.util.List" resolve="createItems" />
-                <node concept="10Nm6u" id="5kNGMuMQUKf" role="37wK5m" />
+                <node concept="37vLTw" id="3lUiDt$PraT" role="37wK5m">
+                  <ref role="3cqZAo" node="3lUiDt$PqqU" resolve="lookup" />
+                </node>
               </node>
             </node>
           </node>
