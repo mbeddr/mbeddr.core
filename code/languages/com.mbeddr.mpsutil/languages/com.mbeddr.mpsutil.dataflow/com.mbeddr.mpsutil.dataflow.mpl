@@ -61,6 +61,7 @@
         <module reference="57416e5b-eba5-4910-ade8-42ad18cb5f4d(com.mbeddr.mpsutil.dataflow)" version="0" />
         <module reference="e69ddb21-8a0a-41ab-abd7-f06105590211(com.mbeddr.mpsutil.dataflow#6608588380907931963)" version="0" />
         <module reference="a28465ca-fa05-4dd6-ad81-d2ce1a342cb0(com.mbeddr.mpsutil.dataflow.runtime)" version="0" />
+        <module reference="79a59c41-3522-41c8-b227-d2a4c4e072d0(com.mbeddr.mpsutil.dataflow.ui)" version="0" />
         <module reference="af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
@@ -171,6 +172,7 @@
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">a28465ca-fa05-4dd6-ad81-d2ce1a342cb0(com.mbeddr.mpsutil.dataflow.runtime)</dependency>
+    <dependency reexport="false">79a59c41-3522-41c8-b227-d2a4c4e072d0(com.mbeddr.mpsutil.dataflow.ui)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>7fa12e9c-b949-4976-b4fa-19accbc320b4(jetbrains.mps.lang.dataFlow)</extendedLanguage>

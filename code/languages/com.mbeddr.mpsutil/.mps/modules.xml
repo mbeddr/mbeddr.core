@@ -117,6 +117,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.runtime/com.mbeddr.mpsutil.contextsidebar.runtime.msd" folder="contextsidebar" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.sandbox2/com.mbeddr.mpsutil.contextsidebar.sandbox2.msd" folder="contextsidebar" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dataflow.runtime/com.mbeddr.mpsutil.dataflow.runtime.msd" folder="dataflow" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dataflow.ui/com.mbeddr.mpsutil.dataflow.ui.msd" folder="dataflow" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="dependenciesdiagram" />
