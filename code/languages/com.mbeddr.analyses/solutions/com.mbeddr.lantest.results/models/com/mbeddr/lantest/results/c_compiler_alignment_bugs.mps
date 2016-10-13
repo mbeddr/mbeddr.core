@@ -158,9 +158,6 @@
     </node>
     <node concept="2eOfOl" id="2bbAj1HmMpD" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
-      <node concept="2v9HqM" id="5atDsHNdrDf" role="2eOfOg">
-        <ref role="2v9HqP" node="2bbAj1HmMqs" resolve="main" />
-      </node>
       <node concept="2v9HqM" id="7PCj1T5GmYQ" role="2eOfOg">
         <ref role="2v9HqP" node="5atDsHNhyoO" resolve="bug4" />
       </node>
