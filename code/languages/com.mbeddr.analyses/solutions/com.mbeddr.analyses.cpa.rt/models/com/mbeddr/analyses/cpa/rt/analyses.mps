@@ -1124,20 +1124,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="5KYWJPNO4zd" role="3clF47">
-        <node concept="3cpWs8" id="20xEImmpCbU" role="3cqZAp">
-          <node concept="3cpWsn" id="20xEImmpCbV" role="3cpWs9">
-            <property role="TrG5h" value="dir" />
-            <node concept="17QB3L" id="20xEImmpCgn" role="1tU5fm" />
-            <node concept="2YIFZM" id="20xEImmpCbW" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
-              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-              <node concept="10M0yZ" id="4iwsNco_Dka" role="37wK5m">
-                <ref role="1PxDUh" to="h6rl:20xEImmpsy0" resolve="CPACommandLineRunner" />
-                <ref role="3cqZAo" to="h6rl:4iwsNco_a8$" resolve="CPACHECKER_ENV_VAR" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="4iwsNco_Dp9" role="3cqZAp">
           <node concept="3cpWsn" id="4iwsNco_Dpc" role="3cpWs9">
             <property role="TrG5h" value="cmd" />
