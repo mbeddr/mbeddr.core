@@ -2008,7 +2008,16 @@
   </node>
   <node concept="312cEu" id="7XU1fOGm9dY">
     <property role="TrG5h" value="TooltipManager" />
-    <node concept="2tJIrI" id="2a194$K1m1l" role="jymVt" />
+    <node concept="Wx3nA" id="1LS0LER49Hs" role="jymVt">
+      <property role="TrG5h" value="TOOLTIP_RADAR_ENABLED" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10P_77" id="1LS0LER49B6" role="1tU5fm" />
+      <node concept="3Tm6S6" id="1LS0LER489h" role="1B3o_S" />
+      <node concept="3clFbT" id="1LS0LER49Hf" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1LS0LER46js" role="jymVt" />
     <node concept="Wx3nA" id="7XU1fOGmql5" role="jymVt">
       <property role="IEkAT" value="false" />
       <property role="TrG5h" value="ourInstances" />
@@ -2781,6 +2790,16 @@
       <node concept="3cqZAl" id="7CEHNszEick" role="3clF45" />
       <node concept="3Tm1VV" id="7CEHNszEicl" role="1B3o_S" />
       <node concept="3clFbS" id="7CEHNszEicm" role="3clF47">
+        <node concept="3clFbJ" id="1LS0LER4bJh" role="3cqZAp">
+          <node concept="3clFbS" id="1LS0LER4bJj" role="3clFbx">
+            <node concept="3cpWs6" id="1LS0LER4d08" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="1LS0LER4cjd" role="3clFbw">
+            <node concept="37vLTw" id="1LS0LER4cSU" role="3fr31v">
+              <ref role="3cqZAo" node="1LS0LER49Hs" resolve="TOOLTIP_RADAR_ENABLED" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7CEHNszFxSl" role="3cqZAp">
           <node concept="3clFbS" id="7CEHNszFxSo" role="3clFbx">
             <node concept="3cpWs6" id="7CEHNszFzIr" role="3cqZAp" />
