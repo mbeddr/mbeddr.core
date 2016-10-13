@@ -39,9 +39,6 @@
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
-      </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
@@ -517,7 +514,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3lXW7OZ5zg6" role="1nVCmq">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="2DaZZR" id="6iM0fX1N45m" />
@@ -867,7 +864,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3lXW7OZ6PmE" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="Zd50a" id="1Fm2OOqIGp$">
