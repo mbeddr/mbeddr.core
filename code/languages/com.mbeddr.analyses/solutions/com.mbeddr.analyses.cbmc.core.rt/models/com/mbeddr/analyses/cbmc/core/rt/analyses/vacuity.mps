@@ -118,7 +118,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -148,7 +147,6 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -583,28 +581,28 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3x0R1LJ5Cq8" role="3cqZAp">
-                <node concept="2OqwBi" id="3x0R1LJ5Cq9" role="3clFbG">
-                  <node concept="3cpWsa" id="3x0R1LJ5Cqa" role="2Oq$k0">
+              <node concept="3clFbF" id="2_0vIjrY46e" role="3cqZAp">
+                <node concept="2OqwBi" id="2_0vIjrY4L2" role="3clFbG">
+                  <node concept="37vLTw" id="2_0vIjrY46c" role="2Oq$k0">
                     <ref role="3cqZAo" node="3x0R1LJ5CpU" resolve="args" />
                   </node>
-                  <node concept="X8dFx" id="3x0R1LJ5Cqb" role="2OqNvi">
-                    <node concept="3P9mCS" id="3x0R1LJ5Cqc" role="25WWJ7">
+                  <node concept="X8dFx" id="2_0vIjrY61G" role="2OqNvi">
+                    <node concept="1rXfSq" id="2_0vIjrY6_l" role="25WWJ7">
                       <ref role="37wK5l" to="tzyt:2UdJgvCXO0f" resolve="computeCommonArguments" />
-                      <node concept="37vLTw" id="3x0R1LJ5Cqd" role="37wK5m">
+                      <node concept="37vLTw" id="2_0vIjrY7bp" role="37wK5m">
                         <ref role="3cqZAo" node="3x0R1LJ5CpQ" resolve="config" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3x0R1LJ5Cqe" role="3cqZAp">
-                <node concept="3P9mCS" id="3x0R1LJ5Cqf" role="3clFbG">
+              <node concept="3clFbF" id="2_0vIjrY8ac" role="3cqZAp">
+                <node concept="1rXfSq" id="2_0vIjrY8aa" role="3clFbG">
                   <ref role="37wK5l" to="tzyt:3L_VuqbmNCC" resolve="addFunctionArgument" />
-                  <node concept="3cpWsa" id="3x0R1LJ5Cqg" role="37wK5m">
+                  <node concept="37vLTw" id="2_0vIjrY8AE" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LJ5CpU" resolve="args" />
                   </node>
-                  <node concept="37vLTw" id="3x0R1LJ5Cqh" role="37wK5m">
+                  <node concept="37vLTw" id="2_0vIjrY9bv" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LJ5CpQ" resolve="config" />
                   </node>
                 </node>
