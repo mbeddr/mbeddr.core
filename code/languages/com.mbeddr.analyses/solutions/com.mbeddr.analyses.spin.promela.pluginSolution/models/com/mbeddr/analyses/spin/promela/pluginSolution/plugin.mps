@@ -30,6 +30,7 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" implicit="true" />
   </imports>
@@ -150,6 +151,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -201,6 +206,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -212,6 +220,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -958,8 +967,22 @@
             </node>
             <node concept="liA8E" id="4_pSipqUXKC" role="2OqNvi">
               <ref role="37wK5l" to="vbi4:4_pSipqULFV" resolve="setResults" />
-              <node concept="3cpWs2" id="4_pSipqUXKD" role="37wK5m">
-                <ref role="3cqZAo" node="3Hq87cj$2XX" resolve="results" />
+              <node concept="1eOMI4" id="2_0vIjsd68H" role="37wK5m">
+                <node concept="10QFUN" id="2_0vIjsd68I" role="1eOMHV">
+                  <node concept="10QFUN" id="2_0vIjsd68D" role="10QFUP">
+                    <node concept="3cpWs2" id="2_0vIjsd68E" role="10QFUP">
+                      <ref role="3cqZAo" node="3Hq87cj$2XX" resolve="results" />
+                    </node>
+                    <node concept="_YKpA" id="2_0vIjsd68F" role="10QFUM">
+                      <node concept="3qTvmN" id="2_0vIjsd68G" role="_ZDj9" />
+                    </node>
+                  </node>
+                  <node concept="_YKpA" id="2_0vIjsd6f4" role="10QFUM">
+                    <node concept="3uibUv" id="2_0vIjsd6DY" role="_ZDj9">
+                      <ref role="3uigEE" to="npwl:TJrbIN7de$" resolve="IAnalysisResult" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
