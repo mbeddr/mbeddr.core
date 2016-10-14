@@ -5544,5 +5544,69 @@
       <ref role="3uigEE" node="7c6uq_ObFri" resolve="IDebuggerConfig" />
     </node>
   </node>
+  <node concept="13h7C7" id="51p726VF9X4">
+    <property role="3GE5qa" value="binary" />
+    <ref role="13h7C2" to="51wr:51p726V_PmK" resolve="ExternalSource" />
+    <node concept="13i0hz" id="51p726VF9X7" role="13h7CS">
+      <property role="TrG5h" value="updateModelPath" />
+      <node concept="3Tm1VV" id="51p726VF9X8" role="1B3o_S" />
+      <node concept="3cqZAl" id="51p726VF9X9" role="3clF45" />
+      <node concept="3clFbS" id="51p726VF9Xa" role="3clF47" />
+      <node concept="37vLTG" id="51p726VF9Xb" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="51p726VF9Xc" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="51p726VF9Xd" role="13h7CS">
+      <property role="TrG5h" value="pathToSources" />
+      <node concept="3Tm1VV" id="51p726VF9Xe" role="1B3o_S" />
+      <node concept="17QB3L" id="51p726VF9Xf" role="3clF45" />
+      <node concept="3clFbS" id="51p726VF9Xg" role="3clF47">
+        <node concept="3clFbF" id="51p726VF9Xh" role="3cqZAp">
+          <node concept="2OqwBi" id="51p726VF9Xi" role="3clFbG">
+            <node concept="13iPFW" id="51p726VF9Xj" role="2Oq$k0" />
+            <node concept="3TrcHB" id="51p726VF9Xk" role="2OqNvi">
+              <ref role="3TsBF5" to="51wr:51p726V_PmL" resolve="path" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="51p726VF9X5" role="13h7CW">
+      <node concept="3clFbS" id="51p726VF9X6" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="51p726VIDRE">
+    <property role="3GE5qa" value="binary" />
+    <ref role="13h7C2" to="51wr:51p726VIDRb" resolve="ExternalMakeFile" />
+    <node concept="13i0hz" id="51p726VIDRH" role="13h7CS">
+      <property role="TrG5h" value="updateModelPath" />
+      <node concept="3Tm1VV" id="51p726VIDRI" role="1B3o_S" />
+      <node concept="3cqZAl" id="51p726VIDRJ" role="3clF45" />
+      <node concept="3clFbS" id="51p726VIDRK" role="3clF47" />
+      <node concept="37vLTG" id="51p726VIDRL" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="51p726VIDRM" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="51p726VIDRN" role="13h7CS">
+      <property role="TrG5h" value="pathToMakeFiles" />
+      <node concept="3Tm1VV" id="51p726VIDRO" role="1B3o_S" />
+      <node concept="17QB3L" id="51p726VIDRP" role="3clF45" />
+      <node concept="3clFbS" id="51p726VIDRQ" role="3clF47">
+        <node concept="3clFbF" id="51p726VIDRR" role="3cqZAp">
+          <node concept="2OqwBi" id="51p726VIDRS" role="3clFbG">
+            <node concept="13iPFW" id="51p726VIDRT" role="2Oq$k0" />
+            <node concept="3TrcHB" id="51p726VIDRU" role="2OqNvi">
+              <ref role="3TsBF5" to="51wr:51p726VIDRc" resolve="path" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="51p726VIDRF" role="13h7CW">
+      <node concept="3clFbS" id="51p726VIDRG" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

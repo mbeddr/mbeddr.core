@@ -741,6 +741,63 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0ifn" id="51p726VG$WD" role="3EZMnx">
+          <property role="3F0ifm" value="external sources:" />
+        </node>
+        <node concept="3EZMnI" id="51p726V_PtU" role="3EZMnx">
+          <node concept="l2Vlx" id="51p726V_PtV" role="2iSdaV" />
+          <node concept="3F2HdR" id="51p726V_PtW" role="3EZMnx">
+            <ref role="1NtTu8" to="51wr:51p726V_PmD" />
+            <node concept="l2Vlx" id="51p726V_PtX" role="2czzBx" />
+            <node concept="lj46D" id="51p726V_PtY" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pj6Ft" id="51p726V_PtZ" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pj6Ft" id="51p726V_Pu0" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="3F0ifn" id="51p726V_Pu1" role="2czzBI">
+              <property role="3F0ifm" value="" />
+              <node concept="VPxyj" id="51p726V_Pu2" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="pVoyu" id="51p726V_Pu3" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="51p726VIDVJ" role="3EZMnx">
+          <property role="3F0ifm" value="external builds:" />
+        </node>
+        <node concept="3EZMnI" id="51p726VIDVK" role="3EZMnx">
+          <node concept="l2Vlx" id="51p726VIDVL" role="2iSdaV" />
+          <node concept="3F2HdR" id="51p726VIDVM" role="3EZMnx">
+            <ref role="1NtTu8" to="51wr:51p726VIDVA" />
+            <node concept="l2Vlx" id="51p726VIDVN" role="2czzBx" />
+            <node concept="lj46D" id="51p726VIDVO" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pj6Ft" id="51p726VIDVP" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pj6Ft" id="51p726VIDVQ" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="3F0ifn" id="51p726VIDVR" role="2czzBI">
+              <property role="3F0ifm" value="" />
+              <node concept="VPxyj" id="51p726VIDVS" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="pVoyu" id="51p726VIDVT" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="51p726V_PmN" role="3EZMnx" />
         <node concept="2iRkQZ" id="ZfwZQEnLn2" role="2iSdaV" />
         <node concept="pkWqt" id="2MbfxrZI1Jq" role="pqm2j">
           <node concept="3clFbS" id="2MbfxrZI1Jr" role="2VODD2">
@@ -1302,6 +1359,52 @@
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="51p726V_Pwg">
+    <property role="3GE5qa" value="binary" />
+    <ref role="1XX52x" to="51wr:51p726V_PmK" resolve="ExternalSource" />
+    <node concept="3EZMnI" id="51p726V_Pwi" role="2wV5jI">
+      <node concept="3F0ifn" id="51p726V_Pwj" role="3EZMnx">
+        <property role="3F0ifm" value="folder:" />
+      </node>
+      <node concept="l2Vlx" id="51p726V_Pwk" role="2iSdaV" />
+      <node concept="3F0ifn" id="51p726V_Pwl" role="3EZMnx">
+        <property role="3F0ifm" value="name" />
+      </node>
+      <node concept="3F0A7n" id="51p726V_Pwm" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:51p726V_PmM" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="51p726V_Pwn" role="3EZMnx">
+        <property role="3F0ifm" value="in path" />
+      </node>
+      <node concept="3F0A7n" id="51p726V_Pwo" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="51wr:51p726V_PmL" resolve="path" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="51p726VIDRj">
+    <property role="3GE5qa" value="binary" />
+    <ref role="1XX52x" to="51wr:51p726VIDRb" resolve="ExternalBuild" />
+    <node concept="3EZMnI" id="51p726VIDRl" role="2wV5jI">
+      <node concept="3F0ifn" id="51p726VIDRm" role="3EZMnx">
+        <property role="3F0ifm" value="folder:" />
+      </node>
+      <node concept="l2Vlx" id="51p726VIDRn" role="2iSdaV" />
+      <node concept="3F0ifn" id="51p726VIDRo" role="3EZMnx">
+        <property role="3F0ifm" value="name" />
+      </node>
+      <node concept="3F0A7n" id="51p726VIDRp" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:51p726VIDRd" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="51p726VIDRq" role="3EZMnx">
+        <property role="3F0ifm" value="in path" />
+      </node>
+      <node concept="3F0A7n" id="51p726VIDRr" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="51wr:51p726VIDRc" resolve="path" />
       </node>
     </node>
   </node>

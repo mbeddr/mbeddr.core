@@ -986,5 +986,107 @@
       <property role="1SWRpm" value="BUILD" />
     </node>
   </node>
+  <node concept="2S6QgY" id="51p726VFam9">
+    <property role="3GE5qa" value="binary" />
+    <property role="TrG5h" value="addExternalSources" />
+    <ref role="2ZfgGC" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+    <node concept="2S6ZIM" id="51p726VFama" role="2ZfVej">
+      <node concept="3clFbS" id="51p726VFamb" role="2VODD2">
+        <node concept="3clFbF" id="51p726VFaw5" role="3cqZAp">
+          <node concept="Xl_RD" id="51p726VFaw7" role="3clFbG">
+            <property role="Xl_RC" value="Add External Source(s)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="51p726VFamc" role="2ZfgGD">
+      <node concept="3clFbS" id="51p726VFamd" role="2VODD2">
+        <node concept="3cpWs8" id="51p726VFaGb" role="3cqZAp">
+          <node concept="3cpWsn" id="51p726VFaGc" role="3cpWs9">
+            <property role="TrG5h" value="n" />
+            <node concept="3Tqbb2" id="51p726VFaGd" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:51p726V_PmK" resolve="ExternalSource" />
+            </node>
+            <node concept="2OqwBi" id="51p726VFaGe" role="33vP2m">
+              <node concept="2OqwBi" id="51p726VFaGf" role="2Oq$k0">
+                <node concept="2Sf5sV" id="51p726VFaGg" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="51p726VFbbp" role="2OqNvi">
+                  <ref role="3TtcxE" to="51wr:51p726V_PmD" />
+                </node>
+              </node>
+              <node concept="WFELt" id="51p726VFaGi" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="51p726VFaGj" role="3cqZAp">
+          <node concept="2OqwBi" id="51p726VFaGk" role="3clFbG">
+            <node concept="37vLTw" id="51p726VFaGl" role="2Oq$k0">
+              <ref role="3cqZAo" node="51p726VFaGc" resolve="n" />
+            </node>
+            <node concept="1OKiuA" id="51p726VFaGm" role="2OqNvi">
+              <node concept="1XNTG" id="51p726VFaGn" role="lBI5i" />
+              <node concept="2B6iha" id="51p726VFaGo" role="lGT1i">
+                <property role="1lyBwo" value="firstEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="51p726VFRfv" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="51p726VIDZw">
+    <property role="3GE5qa" value="binary" />
+    <property role="TrG5h" value="addExternalMakeFile" />
+    <ref role="2ZfgGC" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+    <node concept="2S6ZIM" id="51p726VIDZx" role="2ZfVej">
+      <node concept="3clFbS" id="51p726VIDZy" role="2VODD2">
+        <node concept="3clFbF" id="51p726VIEaB" role="3cqZAp">
+          <node concept="Xl_RD" id="51p726VIEaC" role="3clFbG">
+            <property role="Xl_RC" value="Add External Makefile(s)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="51p726VIEoZ" role="2ZfgGD">
+      <node concept="3clFbS" id="51p726VIEp0" role="2VODD2">
+        <node concept="3cpWs8" id="51p726VIEp1" role="3cqZAp">
+          <node concept="3cpWsn" id="51p726VIEp2" role="3cpWs9">
+            <property role="TrG5h" value="n" />
+            <node concept="3Tqbb2" id="51p726VIEp3" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:51p726VIDRb" resolve="ExternalMakeFile" />
+            </node>
+            <node concept="2OqwBi" id="51p726VIEp4" role="33vP2m">
+              <node concept="2OqwBi" id="51p726VIEp5" role="2Oq$k0">
+                <node concept="2Sf5sV" id="51p726VIEp6" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="51p726VIEHR" role="2OqNvi">
+                  <ref role="3TtcxE" to="51wr:51p726VIDVA" />
+                </node>
+              </node>
+              <node concept="WFELt" id="51p726VIEp8" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="51p726VIEp9" role="3cqZAp">
+          <node concept="2OqwBi" id="51p726VIEpa" role="3clFbG">
+            <node concept="37vLTw" id="51p726VIEpb" role="2Oq$k0">
+              <ref role="3cqZAo" node="51p726VIEp2" resolve="n" />
+            </node>
+            <node concept="1OKiuA" id="51p726VIEpc" role="2OqNvi">
+              <node concept="1XNTG" id="51p726VIEpd" role="lBI5i" />
+              <node concept="2B6iha" id="51p726VJnTj" role="lGT1i">
+                <property role="1lyBwo" value="lastEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="51p726VJovx" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
+  </node>
 </model>
 
