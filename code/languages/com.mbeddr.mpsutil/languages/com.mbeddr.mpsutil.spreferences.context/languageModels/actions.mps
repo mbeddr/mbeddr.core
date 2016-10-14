@@ -2,13 +2,13 @@
 <model ref="5e845763-f4ca-40bf-b31f-74e236ffed75/r:74e5c3ae-5486-4e56-a823-be4f6e17412b(com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="tp25" ref="7866978e-a0f0-4cc7-81bc-4d213d9375e1/r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel/jetbrains.mps.lang.smodel.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="lko4" ref="5e845763-f4ca-40bf-b31f-74e236ffed75/r:552d1838-c20c-4ca5-87f5-7e0a99875373(com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.structure)" implicit="true" />
   </imports>
@@ -98,7 +98,7 @@
                 <node concept="2OqwBi" id="KILMQGUUr7" role="2Oq$k0">
                   <node concept="1r4Lsj" id="KILMQGUUr8" role="2Oq$k0" />
                   <node concept="3TrEf2" id="KILMQH1uHZ" role="2OqNvi">
-                    <ref role="3Tt5mk" to="lko4:KILMQGSUtM" />
+                    <ref role="3Tt5mk" to="lko4:KILMQGSUtM" resolve="redirectToModel" />
                   </node>
                 </node>
                 <node concept="zfrQC" id="KILMQGUUra" role="2OqNvi" />

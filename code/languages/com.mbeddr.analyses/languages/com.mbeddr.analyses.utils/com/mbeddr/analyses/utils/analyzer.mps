@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
   </languages>
   <imports>
@@ -1149,7 +1149,14 @@
                       <ref role="3cqZAo" node="7MMcIPlo6Aq" resolve="jobFuture" />
                     </node>
                     <node concept="liA8E" id="7MMcIPlo7Bm" role="2OqNvi">
-                      <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                      <node concept="3cmrfG" id="4RbsEloWKgE" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="Rm8GO" id="4RbsEloWKgF" role="37wK5m">
+                        <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                        <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1507,7 +1514,14 @@
                                     <ref role="3cqZAo" node="505H3_WY3Q8" resolve="make" />
                                   </node>
                                   <node concept="liA8E" id="5pNvrID2$HK" role="2OqNvi">
-                                    <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                                    <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                                    <node concept="3cmrfG" id="4RbsEloWEMk" role="37wK5m">
+                                      <property role="3cmrfH" value="30" />
+                                    </node>
+                                    <node concept="Rm8GO" id="4RbsEloWFtL" role="37wK5m">
+                                      <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                                      <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -1690,7 +1704,14 @@
                                   <ref role="3cqZAo" node="1PA$4Yzx9In" resolve="analyzer" />
                                 </node>
                                 <node concept="liA8E" id="1PA$4Yzx9I$" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~SwingWorker.get():java.lang.Object" resolve="get" />
+                                  <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                                  <node concept="3cmrfG" id="4RbsEloWJMX" role="37wK5m">
+                                    <property role="3cmrfH" value="30" />
+                                  </node>
+                                  <node concept="Rm8GO" id="4RbsEloWJMY" role="37wK5m">
+                                    <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
+                                    <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                                  </node>
                                 </node>
                               </node>
                             </node>

@@ -20,7 +20,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
-    <import index="6f5b" ref="r:9ffe1487-be32-45f7-abe0-e5fa20142da5(com.mbeddr.mpsutil.interpreter.plugin)" />
+    <import index="6f5b" ref="47f075a6-558e-4640-a606-7ce0236c8023/r:9ffe1487-be32-45f7-abe0-e5fa20142da5(com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.plugin)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -10988,6 +10988,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="3Tmbuc" id="6iqfHNCcS6h" role="1B3o_S" />
       <node concept="3clFbS" id="50LzNoSxYX9" role="3clF47">
         <node concept="3cpWs8" id="50LzNoSy25B" role="3cqZAp">
           <node concept="3cpWsn" id="50LzNoSy25C" role="3cpWs9">
@@ -11050,7 +11051,6 @@
           </node>
         </node>
       </node>
-      <node concept="3Tmbuc" id="6iqfHNCcS6h" role="1B3o_S" />
       <node concept="3uibUv" id="50LzNoSxYX4" role="3clF45">
         <ref role="3uigEE" node="4X7QcQ31ENp" resolve="IContext" />
       </node>
@@ -11252,7 +11252,7 @@
                             <ref role="3cqZAo" node="50LzNoSxvhi" resolve="it" />
                           </node>
                           <node concept="liA8E" id="50LzNoSxvhh" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SContainmentLink.isOptional():boolean" resolve="isOptional" />
+                            <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
                           </node>
                         </node>
                       </node>
@@ -11349,7 +11349,7 @@
                             <ref role="3cqZAo" node="50LzNoSxvT5" resolve="it" />
                           </node>
                           <node concept="liA8E" id="50LzNoSxvT4" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SReferenceLink.isOptional():boolean" resolve="isOptional" />
+                            <ref role="37wK5l" to="c17a:~SAbstractLink.isOptional():boolean" resolve="isOptional" />
                           </node>
                         </node>
                       </node>

@@ -5,19 +5,19 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="k6ay" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.search(MPS.Core/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="n2xr" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.output(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="qq98" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.input(com.mbeddr.mpsutil.serializer.xml/)" />
@@ -214,6 +214,10 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
@@ -235,10 +239,7 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -3647,8 +3648,8 @@
                                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="2OqwBi" id="4Wn4fzjFtQa" role="37wK5m">
                                       <node concept="1PxgMI" id="4Wn4fzjFtQb" role="2Oq$k0">
-                                        <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                                        <node concept="37vLTw" id="4Wn4fzjFtQc" role="1PxMeX">
+                                        <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                                        <node concept="37vLTw" id="4Wn4fzjFtQc" role="1m5AlR">
                                           <ref role="3cqZAo" node="4Wn4fzjFtQg" resolve="desc" />
                                         </node>
                                       </node>
@@ -3748,8 +3749,8 @@
                                 <node concept="2OqwBi" id="4Wn4fzjFtQQ" role="3clFbG">
                                   <node concept="2OqwBi" id="4Wn4fzjFtQR" role="2Oq$k0">
                                     <node concept="1PxgMI" id="4Wn4fzjFtQS" role="2Oq$k0">
-                                      <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                                      <node concept="37vLTw" id="4Wn4fzjFtQT" role="1PxMeX">
+                                      <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                                      <node concept="37vLTw" id="4Wn4fzjFtQT" role="1m5AlR">
                                         <ref role="3cqZAo" node="4Wn4fzjFtR0" resolve="node" />
                                       </node>
                                     </node>
@@ -3893,8 +3894,8 @@
                                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                       <node concept="2OqwBi" id="4Wn4fzjFtRI" role="37wK5m">
                                         <node concept="1PxgMI" id="4Wn4fzjFtRJ" role="2Oq$k0">
-                                          <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                                          <node concept="37vLTw" id="4Wn4fzjFtRK" role="1PxMeX">
+                                          <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                                          <node concept="37vLTw" id="4Wn4fzjFtRK" role="1m5AlR">
                                             <ref role="3cqZAo" node="4Wn4fzjFtRO" resolve="node" />
                                           </node>
                                         </node>
@@ -3955,8 +3956,8 @@
                                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="2OqwBi" id="4Wn4fzjFtS8" role="37wK5m">
                                       <node concept="1PxgMI" id="4Wn4fzjFtS9" role="2Oq$k0">
-                                        <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                                        <node concept="37vLTw" id="4Wn4fzjFtSa" role="1PxMeX">
+                                        <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                                        <node concept="37vLTw" id="4Wn4fzjFtSa" role="1m5AlR">
                                           <ref role="3cqZAo" node="4Wn4fzjFtSe" resolve="node" />
                                         </node>
                                       </node>
@@ -4051,8 +4052,8 @@
                     <node concept="2OqwBi" id="4Wn4fzjSNs3" role="3clFbG">
                       <node concept="2OqwBi" id="4Wn4fzjSK2t" role="2Oq$k0">
                         <node concept="1PxgMI" id="4Wn4fzjSJ7E" role="2Oq$k0">
-                          <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                          <node concept="37vLTw" id="4Wn4fzjSIgy" role="1PxMeX">
+                          <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                          <node concept="37vLTw" id="4Wn4fzjSIgy" role="1m5AlR">
                             <ref role="3cqZAo" node="4Wn4fzjSDom" resolve="node" />
                           </node>
                         </node>

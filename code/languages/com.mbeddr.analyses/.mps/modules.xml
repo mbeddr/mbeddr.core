@@ -27,12 +27,13 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.verification_case/com.mbeddr.analyses.cbmc.verification_case.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/pluginSolution.msd" folder="cbmc" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cpa/com.mbeddr.analyses.cpa.mpl" folder="cpachecker" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.fm.base/com.mbeddr.analyses.fm.base.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.lantest/com.mbeddr.analyses.lantest.mpl" folder="lantest" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.mutation/com.mbeddr.analyses.mutation.mpl" folder="mutation" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c.patterns/com.mbeddr.analyses.spin.c.patterns.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c/com.mbeddr.analyses.spin.c.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.promela.patterns/com.mbeddr.analyses.spin.promela.patterns.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.promela/com.mbeddr.analyses.spin.promela.mpl" folder="spin" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin/com.mbeddr.analyses.spin.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.stan/com.mbeddr.analyses.stan.mpl" folder="z3" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.z3.testing/com.mbeddr.analyses.z3.testing.mpl" folder="z3" />
@@ -46,9 +47,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.testsgen.rt/com.mbeddr.analyses.cbmc.testsgen.rt.msd" folder="cbmc" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cpa.rt/com.mbeddr.analyses.cpa.rt.msd" folder="cpachecker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.lantest.pluginSolution/com.mbeddr.analyses.lantest.pluginSolution.msd" folder="lantest" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.mutation.rt/com.mbeddr.analyses.mutation.rt.msd" folder="mutation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
@@ -69,9 +68,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testsgen/test.analyses.cbmc.testsgen.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.ts/test.analyses.cbmc.ts.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa.testcode/test.analyses.cpa.testcode.msd" folder="test.cpachecker" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa/test.analyses.cpa.msd" folder="test.cpachecker" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.mutation.testcode/test.analyses.mutation.testcode.msd" folder="test.mutation" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela.testcode/tests.analyses.spin.promela.testcode.msd" folder="test.spin" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela/test.analyses.spin.promela.msd" folder="test.spin" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.stan.ts/test.analyses.stan.ts.msd" folder="test.z3" />

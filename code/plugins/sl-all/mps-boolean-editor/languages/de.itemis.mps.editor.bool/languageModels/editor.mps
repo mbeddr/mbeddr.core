@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -52,6 +52,9 @@
       <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
         <child id="1221219051630" name="query" index="1mkY_M" />
       </concept>
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1214406466686" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorSelectedStyleClassItem" flags="ln" index="30h1P$" />
       <concept id="1220974635399" name="jetbrains.mps.lang.editor.structure.QueryFunction_FontStyle" flags="in" index="17KAyr" />
@@ -67,6 +70,7 @@
       </concept>
       <concept id="1223386653097" name="jetbrains.mps.lang.editor.structure.StrikeOutStyleSheet" flags="ln" index="3nxI2P" />
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
@@ -177,7 +181,7 @@
       </node>
       <node concept="1iCGBv" id="g_U_RSN" role="3EZMnx">
         <property role="1$x2rV" value="&lt;no property&gt;" />
-        <ref role="1NtTu8" to="tpc2:fBF1KQc" />
+        <ref role="1NtTu8" to="tpc2:fBF1KQc" resolve="propertyDeclaration" />
         <ref role="1k5W1q" to="tpc5:hX1xO3O" resolve="bordered" />
         <node concept="1sVBvm" id="g_U_RSM" role="1sWHZn">
           <node concept="3F0A7n" id="g_U_U1N" role="2wV5jI">
@@ -622,7 +626,7 @@
       </node>
       <node concept="1iCGBv" id="6bmIkNC7bDe" role="3EZMnx">
         <property role="1$x2rV" value="&lt;no property&gt;" />
-        <ref role="1NtTu8" to="tpc2:fBF1KQc" />
+        <ref role="1NtTu8" to="tpc2:fBF1KQc" resolve="propertyDeclaration" />
         <ref role="1k5W1q" to="tpc5:hX1xO3O" resolve="bordered" />
         <node concept="1sVBvm" id="6bmIkNC7bDf" role="1sWHZn">
           <node concept="3F0A7n" id="6bmIkNC7bDg" role="2wV5jI">
@@ -783,7 +787,7 @@
             </node>
             <node concept="1iCGBv" id="g_UAygE" role="3EZMnx">
               <property role="1$x2rV" value="&lt;no property&gt;" />
-              <ref role="1NtTu8" to="tpc2:fBF1KQc" />
+              <ref role="1NtTu8" to="tpc2:fBF1KQc" resolve="propertyDeclaration" />
               <node concept="1sVBvm" id="g_UAygF" role="1sWHZn">
                 <node concept="3F0A7n" id="g_UAygG" role="2wV5jI">
                   <property role="1Intyy" value="true" />
@@ -1030,6 +1034,12 @@
     <node concept="PMmxH" id="n5YDls8PEE" role="2wV5jI">
       <ref role="PMmxG" to="tpco:37EzmTDC95l" resolve="ImplementationRemovedInStubMessage" />
     </node>
+  </node>
+  <node concept="3p36aQ" id="4iNiUqGz3wh">
+    <ref role="aqKnT" to="wfif:n5YDls8hbY" resolve="StubCellModel_Checkbox" />
+  </node>
+  <node concept="3p36aQ" id="4iNiUqGz3wi">
+    <ref role="aqKnT" to="wfif:n5YDls8PEA" resolve="StubCellModel_BooleanText" />
   </node>
 </model>
 

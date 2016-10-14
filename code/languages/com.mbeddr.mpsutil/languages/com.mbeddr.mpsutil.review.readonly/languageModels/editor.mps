@@ -5,13 +5,13 @@
     <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="731j" ref="97f9a38a-5b19-4147-9eac-e1a8cab31065/r:3c59b531-7e26-4d48-9741-79bb9e737ae5(com.mbeddr.mpsutil.review.readonly/com.mbeddr.mpsutil.review.readonly.structure)" />
     <import index="fmr2" ref="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:2b3b5f84-66ef-4014-bab0-8d3017aa7a4e(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime)" />
-    <import index="tpcu" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core/jetbrains.mps.lang.core.behavior)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
@@ -85,13 +85,13 @@
   <node concept="24kQdi" id="7lmVLrULD8q">
     <ref role="1XX52x" to="731j:7lmVLrULD8n" resolve="Review" />
     <node concept="2SJGWt" id="66jx6gIAfcw" role="2wV5jI">
-      <ref role="2SJGWj" to="731j:7lmVLrULD8p" />
+      <ref role="2SJGWj" to="731j:7lmVLrULD8p" resolve="notes" />
       <node concept="3EZMnI" id="7lmVLrULD8s" role="2SJGWi">
         <node concept="3F0ifn" id="7lmVLrULD8t" role="3EZMnx">
           <property role="3F0ifm" value="Review for" />
         </node>
         <node concept="1iCGBv" id="7lmVLrULD8u" role="3EZMnx">
-          <ref role="1NtTu8" to="731j:7lmVLrULD8o" />
+          <ref role="1NtTu8" to="731j:7lmVLrULD8o" resolve="reviewedRoot" />
           <node concept="1sVBvm" id="7lmVLrULD8v" role="1sWHZn">
             <node concept="1HlG4h" id="7lmVLrULD8w" role="2wV5jI">
               <node concept="1HfYo3" id="7lmVLrULD8x" role="1HlULh">

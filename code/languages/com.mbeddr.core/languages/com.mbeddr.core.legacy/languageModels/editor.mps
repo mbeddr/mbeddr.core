@@ -2,7 +2,7 @@
 <model ref="r:ddac0c79-8ede-44d2-b6d8-d977583295cf(com.mbeddr.core.legacy.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="s5bn" ref="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" />
@@ -105,7 +105,7 @@
           <property role="3F0ifm" value="type" />
         </node>
         <node concept="3F1sOY" id="8YNEm0WHcG" role="3EZMnx">
-          <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+          <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
         </node>
       </node>
       <node concept="PMmxH" id="5CDgsyZcMyH" role="3EZMnx">
@@ -124,7 +124,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5DB_pQNaiOh" role="3EZMnx">
-        <ref role="1NtTu8" to="s5bn:5DB_pQNaiOf" />
+        <ref role="1NtTu8" to="s5bn:5DB_pQNaiOf" resolve="expr" />
         <ref role="1k5W1q" node="69ZS$qQFzer" resolve="manualChangesInImportedHeader" />
       </node>
       <node concept="3F0ifn" id="5DB_pQN8YhP" role="3EZMnx">
@@ -135,7 +135,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="69ZS$qQFzew" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
         <ref role="1k5W1q" node="69ZS$qQFzer" resolve="manualChangesInImportedHeader" />
       </node>
       <node concept="l2Vlx" id="5DB_pQN8YhI" role="2iSdaV" />
@@ -174,7 +174,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4IbDSDgm$DZ" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0ifn" id="4IbDSDgm$E0" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -203,7 +203,7 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F1sOY" id="4b5CJEn3sfO" role="3EZMnx">
-        <ref role="1NtTu8" to="s5bn:4b5CJEn3sfG" />
+        <ref role="1NtTu8" to="s5bn:4b5CJEn3sfG" resolve="type" />
       </node>
       <node concept="3F0ifn" id="4b5CJEn3sfQ" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -216,7 +216,7 @@
       </node>
       <node concept="3F2HdR" id="4b5CJEn3sfY" role="3EZMnx">
         <property role="2czwfO" value=", " />
-        <ref role="1NtTu8" to="s5bn:4b5CJEn3sfF" />
+        <ref role="1NtTu8" to="s5bn:4b5CJEn3sfF" resolve="arguments" />
         <node concept="l2Vlx" id="4b5CJEn3sfZ" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="4b5CJEn3sg1" role="3EZMnx">

@@ -2,13 +2,13 @@
 <model ref="r:5eb7ec10-0d6c-42c0-9b79-129d7d125c7b(test.analyses.var.testcode.var_c)">
   <persistence version="9" />
   <languages>
-    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="0" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
+    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
   <imports />
@@ -1057,6 +1057,9 @@
     </node>
     <node concept="3GEVxB" id="4$3mDZ0mVSD" role="2OODSX">
       <ref role="3GEb4d" node="44j14BHp5_1" resolve="FM1_04" />
+    </node>
+    <node concept="3GEVxB" id="5rxb3FrNK6S" role="2OODSX">
+      <ref role="3GEb4d" node="5aNdPeN2d6f" resolve="VarDef" />
     </node>
     <node concept="2dvl_R" id="4$3mDZ0mWhj" role="lGtFl">
       <ref role="2dvl_Q" node="44j14BH1ANL" resolve="FM1" />

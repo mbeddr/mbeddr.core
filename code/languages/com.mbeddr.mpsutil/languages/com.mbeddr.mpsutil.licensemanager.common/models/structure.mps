@@ -2,7 +2,8 @@
 <model ref="r:8c3add5f-61cb-4f00-a635-948a4bb1fd83(com.mbeddr.mpsutil.licensemanager.common.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,9 +14,9 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -29,12 +30,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -48,14 +51,15 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="4w7It07pbAS">
-    <property role="1pbfSe" value="1332507528" />
     <property role="TrG5h" value="EditorGuardElement" />
     <property role="3GE5qa" value="element" />
+    <property role="EcuMT" value="5190321398696163768" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4w7It07pbHt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="editor" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5190321398696164189" />
       <ref role="20lvS9" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
     </node>
     <node concept="PrWs8" id="4w7It07pbAT" role="PzmwI">
@@ -63,25 +67,27 @@
     </node>
   </node>
   <node concept="PlHQZ" id="4w7It07pbAR">
-    <property role="1pbfSe" value="1332507527" />
     <property role="TrG5h" value="IGuardedElement" />
     <property role="3GE5qa" value="element" />
+    <property role="EcuMT" value="5190321398696163767" />
     <node concept="1TJgyj" id="4w7It07pbMt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="feature" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5190321398696164509" />
       <ref role="20lvS9" node="4w7It07oHes" resolve="Feature" />
     </node>
   </node>
   <node concept="1TIwiD" id="4w7It07pj6b">
-    <property role="1pbfSe" value="1332538203" />
     <property role="TrG5h" value="IntentionGuardElement" />
     <property role="3GE5qa" value="element" />
+    <property role="EcuMT" value="5190321398696194443" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4w7It07pjcA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="intention" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5190321398696194854" />
       <ref role="20lvS9" to="tp3j:hmS6QkF" resolve="IntentionDeclaration" />
     </node>
     <node concept="PrWs8" id="4w7It07pjFg" role="PzmwI">
@@ -89,19 +95,22 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4w7It07oHes">
-    <property role="1pbfSe" value="1332383084" />
     <property role="TrG5h" value="Feature" />
+    <property role="EcuMT" value="5190321398696039324" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4w7It07oHew" role="1TKVEl">
       <property role="TrG5h" value="major" />
+      <property role="IQ2nx" value="5190321398696039328" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="4w7It07oHez" role="1TKVEl">
       <property role="TrG5h" value="minor" />
+      <property role="IQ2nx" value="5190321398696039331" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="4w7It07plsv" role="1TKVEl">
       <property role="TrG5h" value="count" />
+      <property role="IQ2nx" value="5190321398696204063" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="4w7It07oHet" role="PzmwI">
@@ -109,16 +118,17 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4w7It07oHer">
-    <property role="1pbfSe" value="1332383083" />
     <property role="TrG5h" value="LicenseConfiguration" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="License Configuration" />
     <property role="R4oN_" value="License Configuration" />
+    <property role="EcuMT" value="5190321398696039323" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4w7It07pbAN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="5190321398696163763" />
       <ref role="20lvS9" node="4w7It07pbAR" resolve="IGuardedElement" />
     </node>
   </node>

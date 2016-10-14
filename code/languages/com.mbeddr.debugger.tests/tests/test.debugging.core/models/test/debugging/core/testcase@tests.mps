@@ -7,7 +7,7 @@
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
@@ -137,6 +137,7 @@
         <child id="7048220250906049591" name="marker" index="30a7be" />
       </concept>
       <concept id="4193597469137492644" name="com.mbeddr.core.debug.test.structure.MarkerRef" flags="ng" index="3cQ7K9">
+        <property id="105850086903157559" name="name" index="3sdDOw" />
         <reference id="4193597469137492645" name="marker" index="3cQ7K8" />
       </concept>
       <concept id="4193597469137492628" name="com.mbeddr.core.debug.test.structure.ProgramMarkerAnnotation" flags="ng" index="3cQ7KT" />
@@ -248,6 +249,9 @@
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXFG" role="lIfQt">
         <ref role="3cM6IK" node="2s7Bv57Qoc_" resolve="testCase1" />
+        <node concept="3cQ7KT" id="3cUcim$fhmp" role="lGtFl">
+          <property role="TrG5h" value="testInvocation" />
+        </node>
       </node>
       <node concept="3cM6IN" id="4Tiud0TdXFH" role="lIfQt">
         <ref role="3cM6IK" node="2s7Bv57Qoco" resolve="testCase2" />
@@ -489,7 +493,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lRH" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lRI" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lRJ" role="3sdZbB">
-          <ref role="3sa5fj" node="2s7Bv57Qocf" resolve="testInvocation" />
+          <ref role="3sa5fj" node="3cUcim$fhmp" resolve="testInvocation" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lRK" role="3savwP">
@@ -520,7 +524,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lTD" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lTE" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lTF" role="3sdZbB">
-          <ref role="3sa5fj" node="2s7Bv57Qocf" resolve="testInvocation" />
+          <ref role="3sa5fj" node="3cUcim$fhmp" resolve="testInvocation" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lTG" role="3savwP">
@@ -533,8 +537,9 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2lTJ" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2lTK" role="3F5Y$9">
-          <node concept="3cQ7K9" id="7Jr7T0w2lTL" role="30a7be">
-            <ref role="3cQ7K8" node="2s7Bv57Qocf" resolve="testInvocation" />
+          <node concept="3cQ7K9" id="3cUcim$fhn5" role="30a7be">
+            <property role="3sdDOw" value="marker" />
+            <ref role="3cQ7K8" node="3cUcim$fhmp" resolve="testInvocation" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyFdU" role="3F5Y$9">
@@ -593,8 +598,9 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mbV" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2mbW" role="3F5Y$9">
-          <node concept="3cQ7K9" id="7Jr7T0w2mbX" role="30a7be">
-            <ref role="3cQ7K8" node="2s7Bv57Qocf" resolve="testInvocation" />
+          <node concept="3cQ7K9" id="3cUcim$fhn7" role="30a7be">
+            <property role="3sdDOw" value="marker" />
+            <ref role="3cQ7K8" node="3cUcim$fhmp" resolve="testInvocation" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyFdV" role="3F5Y$9">
@@ -623,8 +629,9 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mhF" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2mhG" role="3F5Y$9">
-          <node concept="3cQ7K9" id="7Jr7T0w2mhH" role="30a7be">
-            <ref role="3cQ7K8" node="2s7Bv57Qocf" resolve="testInvocation" />
+          <node concept="3cQ7K9" id="3cUcim$fhn3" role="30a7be">
+            <property role="3sdDOw" value="marker" />
+            <ref role="3cQ7K8" node="3cUcim$fhmp" resolve="testInvocation" />
           </node>
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2mhK" role="3F5Y$9">

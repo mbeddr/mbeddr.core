@@ -7,12 +7,12 @@
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
@@ -150,9 +150,6 @@
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
-      <concept id="998890089995051771" name="com.mbeddr.ext.components.structure.DataElementRefExpr" flags="ng" index="2q3ev5">
-        <reference id="998890089995051773" name="element" index="2q3ev3" />
-      </concept>
       <concept id="998890089994729418" name="com.mbeddr.ext.components.structure.DataElement" flags="ng" index="2q5ZbO">
         <property id="2116578915583842931" name="atomic" index="1vaOcW" />
       </concept>
@@ -202,6 +199,10 @@
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
+      <concept id="5703827575549009208" name="com.mbeddr.ext.components.structure.AbstractDataElementRefTarget" flags="ng" index="3VxgRd">
+        <reference id="5703827575549009244" name="element" index="3VxgQD" />
+      </concept>
+      <concept id="5703827575547552890" name="com.mbeddr.ext.components.structure.DataElementRefTarget" flags="ng" index="3VJJif" />
       <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
         <reference id="1482737808881210674" name="instance" index="1XX6Gs" />
         <reference id="1482737808881210673" name="config" index="1XX6Gv" />
@@ -268,6 +269,9 @@
       </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
+        <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
@@ -390,10 +394,12 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-            <node concept="2q3ev5" id="1PvAkX2s_Zq" role="3XIe9u">
-              <ref role="2q3ev3" node="RsLjUnNu$7" resolve="drehzahl" />
-              <node concept="2H6loZ" id="1PvAkX2s_Zn" role="1_9fRO">
+            <node concept="2qmXGp" id="3cUcim$fjHE" role="3XIe9u">
+              <node concept="2H6loZ" id="3cUcim$fjHD" role="1_9fRO">
                 <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
+              </node>
+              <node concept="3VJJif" id="3cUcim$fjHF" role="1ESnxz">
+                <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
               </node>
             </node>
             <node concept="3cQ7KT" id="4bUTzk4Gp0O" role="lGtFl">

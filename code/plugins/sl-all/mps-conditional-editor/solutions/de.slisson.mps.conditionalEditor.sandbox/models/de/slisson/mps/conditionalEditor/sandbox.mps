@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e5b0666e-3e89-40b6-9bb8-d1192460f4ca(de.slisson.mps.conditionalEditor.sandbox)">
+<model ref="r:e5b0666e-3e89-40b6-9bb8-d1192460f4ca(de.slisson.mps.conditionalEditor.sandbox)" doNotGenerate="true">
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>

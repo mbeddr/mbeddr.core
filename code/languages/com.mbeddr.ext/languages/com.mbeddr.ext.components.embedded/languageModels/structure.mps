@@ -2,7 +2,8 @@
 <model ref="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,9 +15,9 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -30,6 +31,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -47,24 +49,27 @@
     <property role="TrG5h" value="InterruptRunnableMapping" />
     <property role="R4oN_" value="bind an interrupt to a runnable" />
     <property role="34LRSv" value="bind" />
-    <property role="1pbfSe" value="436085363" />
+    <property role="EcuMT" value="9172009453270375539" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7X9xw2qH9LO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="interrupt" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9172009453270375540" />
       <ref role="20lvS9" to="nbyu:SwwM9UHCGQ" resolve="InterruptDeclaration" />
     </node>
     <node concept="1TJgyj" id="7X9xw2qH9LP" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="instance" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9172009453270375541" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
     </node>
     <node concept="1TJgyj" id="7X9xw2qH9LQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="runnable" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9172009453270375542" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
     <node concept="PrWs8" id="7X9xw2qH9LR" role="PzmwI">
@@ -81,7 +86,7 @@
     <property role="3GE5qa" value="isr.components" />
     <property role="TrG5h" value="InterruptTrigger" />
     <property role="34LRSv" value="interrupt" />
-    <property role="1pbfSe" value="436089155" />
+    <property role="EcuMT" value="9172009453270379331" />
     <ref role="1TJDcQ" to="v7ag:3TmmsQkDc79" resolve="RunnableTrigger" />
     <node concept="PrWs8" id="7X9xw2qI$Xo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
@@ -91,7 +96,7 @@
     <property role="TrG5h" value="InterruptComponentTriggerConfigItem" />
     <property role="34LRSv" value="interrupt-triggered components" />
     <property role="R4oN_" value="allow runnables to be triggered by an interrupt" />
-    <property role="1pbfSe" value="436467571" />
+    <property role="EcuMT" value="9172009453270757747" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7X9xw2qIB5O" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />

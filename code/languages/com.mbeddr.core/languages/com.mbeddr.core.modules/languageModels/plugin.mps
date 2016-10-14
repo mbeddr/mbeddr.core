@@ -2,7 +2,7 @@
 <model ref="r:409e9269-8e01-4311-a25d-780598b0c00c(com.mbeddr.core.modules.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -31,7 +31,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -170,19 +170,19 @@
       <ref role="qq9wM" to="x27k:5eg$WPOuJoU" resolve="GlobalConstantFunctionRef" />
       <node concept="3vetai" id="3VM1o5wblf_" role="3vQZUl">
         <node concept="2TvoDZ" id="3VM1o5wblfA" role="3vdyny">
-          <ref role="2T0_ac" to="x27k:5eg$WPOuJoW" />
+          <ref role="2T0_ac" to="x27k:5eg$WPOuJoW" resolve="constant" />
           <node concept="rqRoa" id="3VM1o5wblfB" role="2T0_7g">
-            <ref role="rqRob" to="x27k:5eg$WPOuSCs" />
+            <ref role="rqRob" to="x27k:5eg$WPOuSCs" resolve="arguments" />
           </node>
           <node concept="2OqwBi" id="3VM1o5wblfC" role="2T0_a3">
             <node concept="2OqwBi" id="3VM1o5wblfD" role="2Oq$k0">
               <node concept="oxGPV" id="3VM1o5wblfE" role="2Oq$k0" />
               <node concept="3TrEf2" id="3VM1o5wblfF" role="2OqNvi">
-                <ref role="3Tt5mk" to="x27k:5eg$WPOuJoW" />
+                <ref role="3Tt5mk" to="x27k:5eg$WPOuJoW" resolve="constant" />
               </node>
             </node>
             <node concept="3Tsc0h" id="3VM1o5wblfG" role="2OqNvi">
-              <ref role="3TtcxE" to="x27k:5eg$WPOtR8R" />
+              <ref role="3TtcxE" to="x27k:5eg$WPOtR8R" resolve="arguments" />
             </node>
           </node>
         </node>
@@ -193,7 +193,7 @@
       <ref role="qq9wM" to="x27k:3ilck8KpYYm" resolve="GlobalConstantDeclaration" />
       <node concept="3vetai" id="3VM1o5wblfI" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wblfJ" role="3vdyny">
-          <ref role="rqRob" to="x27k:2VsHNE717Q8" />
+          <ref role="rqRob" to="x27k:2VsHNE717Q8" resolve="value" />
         </node>
       </node>
     </node>
@@ -202,7 +202,7 @@
       <ref role="qq9wM" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
       <node concept="3vetai" id="3VM1o5wblfL" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wblfM" role="3vdyny">
-          <ref role="rqRob" to="x27k:2VsHNE72zUU" />
+          <ref role="rqRob" to="x27k:2VsHNE72zUU" resolve="constant" />
         </node>
       </node>
       <node concept="3SNqBc" id="3VM1o5wblfN" role="3SNqB7">
@@ -221,11 +221,11 @@
                       <node concept="2OqwBi" id="3VM1o5wblfX" role="2Oq$k0">
                         <node concept="oxGPV" id="3VM1o5wblfY" role="2Oq$k0" />
                         <node concept="3TrEf2" id="3VM1o5wblfZ" role="2OqNvi">
-                          <ref role="3Tt5mk" to="x27k:2VsHNE72zUU" />
+                          <ref role="3Tt5mk" to="x27k:2VsHNE72zUU" resolve="constant" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="3VM1o5wblg0" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:2VsHNE717Q8" />
+                        <ref role="3Tt5mk" to="x27k:2VsHNE717Q8" resolve="value" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="3VM1o5wblg1" role="2OqNvi">
@@ -239,11 +239,11 @@
                   <node concept="2OqwBi" id="3VM1o5wblg4" role="2Oq$k0">
                     <node concept="oxGPV" id="3VM1o5wblg5" role="2Oq$k0" />
                     <node concept="3TrEf2" id="3VM1o5wblg6" role="2OqNvi">
-                      <ref role="3Tt5mk" to="x27k:2VsHNE72zUU" />
+                      <ref role="3Tt5mk" to="x27k:2VsHNE72zUU" resolve="constant" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="3VM1o5wblg7" role="2OqNvi">
-                    <ref role="3Tt5mk" to="x27k:2VsHNE717Q8" />
+                    <ref role="3Tt5mk" to="x27k:2VsHNE717Q8" resolve="value" />
                   </node>
                 </node>
                 <node concept="oxGPV" id="3VM1o5wblg8" role="3uHU7B" />
@@ -267,7 +267,7 @@
       <ref role="qq9wM" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
       <node concept="3vetai" id="3VM1o5wblge" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wblgf" role="3vdyny">
-          <ref role="rqRob" to="x27k:2pPw_DEjkM9" />
+          <ref role="rqRob" to="x27k:2pPw_DEjkM9" resolve="init" />
         </node>
       </node>
     </node>
@@ -276,7 +276,7 @@
       <ref role="qq9wM" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
       <node concept="3vetai" id="3VM1o5wblgh" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wblgi" role="3vdyny">
-          <ref role="rqRob" to="x27k:5IYyAOzCwFF" />
+          <ref role="rqRob" to="x27k:5IYyAOzCwFF" resolve="var" />
         </node>
       </node>
     </node>
@@ -307,19 +307,19 @@
       </node>
       <node concept="3vetai" id="3VM1o5wbzp3" role="3vQZUl">
         <node concept="2TvoDZ" id="3VM1o5wbzp4" role="3vdyny">
-          <ref role="2T0_ac" to="x27k:5ak6HMA0red" />
+          <ref role="2T0_ac" to="x27k:5ak6HMA0red" resolve="function" />
           <node concept="rqRoa" id="3VM1o5wbzp5" role="2T0_7g">
-            <ref role="rqRob" to="x27k:5ak6HMA0ref" />
+            <ref role="rqRob" to="x27k:5ak6HMA0ref" resolve="actuals" />
           </node>
           <node concept="2OqwBi" id="3VM1o5wbzp6" role="2T0_a3">
             <node concept="2OqwBi" id="3VM1o5wbzp7" role="2Oq$k0">
               <node concept="oxGPV" id="3VM1o5wbzp8" role="2Oq$k0" />
               <node concept="3TrEf2" id="3VM1o5wbzp9" role="2OqNvi">
-                <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+                <ref role="3Tt5mk" to="x27k:5ak6HMA0red" resolve="function" />
               </node>
             </node>
             <node concept="3Tsc0h" id="3VM1o5wbzpa" role="2OqNvi">
-              <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
+              <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" resolve="arguments" />
             </node>
           </node>
         </node>
@@ -350,7 +350,7 @@
       </node>
       <node concept="3vetai" id="3VM1o5wbzpl" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wbzpm" role="3vdyny">
-          <ref role="rqRob" to="x27k:1OcdQnyTX2V" />
+          <ref role="rqRob" to="x27k:1OcdQnyTX2V" resolve="arg" />
         </node>
       </node>
     </node>
@@ -364,7 +364,7 @@
       </node>
       <node concept="3vetai" id="3VM1o5wbzpq" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wbzpr" role="3vdyny">
-          <ref role="rqRob" to="x27k:3CmSUB7Fp_k" />
+          <ref role="rqRob" to="x27k:3CmSUB7Fp_k" resolve="body" />
         </node>
       </node>
     </node>
@@ -373,7 +373,7 @@
       <ref role="qq9wM" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
       <node concept="3vetai" id="3VM1o5wbzpv" role="3vQZUl">
         <node concept="rqRoa" id="3VM1o5wbzpw" role="3vdyny">
-          <ref role="rqRob" to="x27k:7LOsK3rQkUA" />
+          <ref role="rqRob" to="x27k:7LOsK3rQkUA" resolve="expression" />
         </node>
       </node>
     </node>
@@ -384,7 +384,7 @@
       <property role="TrG5h" value="Module Content" />
       <node concept="Yjy0c" id="1TMMPgXcFHS" role="31YmtB">
         <property role="YhZL1" value="true" />
-        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" />
+        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" resolve="contents" />
         <ref role="Yjy5k" to="x27k:5_l8w1EmTvx" resolve="Function" />
         <ref role="YhZWO" to="x27k:5_l8w1EmTcX" resolve="Module" />
       </node>

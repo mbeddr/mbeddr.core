@@ -218,7 +218,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="1wNqPr" id="3AVJcIMlF8m" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -7313,6 +7313,12 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="dgwh6SQfpI" role="3bR37C">
+          <node concept="3bR9La" id="dgwh6SQfpJ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnGzl$" role="3989C9">
@@ -11303,7 +11309,7 @@
       <node concept="aVJcg" id="2HHioL2Ncpe" role="aVJcv">
         <node concept="NbPM2" id="2HHioL2Ncpd" role="aVJcq">
           <node concept="3Mxwew" id="2HHioL2Ncpc" role="3MwsjC">
-            <property role="3MwjfP" value="0" />
+            <property role="3MwjfP" value="1" />
           </node>
         </node>
       </node>
@@ -11313,7 +11319,7 @@
       <node concept="aVJcg" id="2HHioL2NgAb" role="aVJcv">
         <node concept="NbPM2" id="2HHioL2NgAa" role="aVJcq">
           <node concept="3Mxwew" id="2HHioL2NgA9" role="3MwsjC">
-            <property role="3MwjfP" value="8" />
+            <property role="3MwjfP" value="0" />
           </node>
         </node>
       </node>
@@ -11788,7 +11794,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9Glo" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9Glp" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -11897,7 +11903,7 @@
     </node>
     <node concept="2_Ic$z" id="2tUvrc9VMMN" role="3989C9">
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPqn" role="3989C9">

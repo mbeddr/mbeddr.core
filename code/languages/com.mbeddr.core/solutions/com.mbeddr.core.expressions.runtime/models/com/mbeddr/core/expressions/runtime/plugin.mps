@@ -4,11 +4,11 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
   </imports>
@@ -164,10 +164,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -228,7 +227,7 @@
             <property role="1dT_AB" value="Generates the actual list of values that must be print out into the text buffer. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdc4R" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdc4R" role="3nqlJM">
           <property role="x79VB" value="the list of values (string, node)" />
         </node>
       </node>
@@ -249,7 +248,7 @@
             <property role="1dT_AB" value="Wraps this token in a parenthesis token. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdc7e" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdc7e" role="3nqlJM">
           <property role="x79VB" value="the parenthesis token" />
         </node>
       </node>
@@ -273,7 +272,7 @@
             <property role="1dT_AB" value="IFF (1) it is an atomic token and (2) its value is null or the empty string. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdc9p" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdc9p" role="3nqlJM">
           <property role="x79VB" value="true if the token is empty" />
         </node>
       </node>
@@ -294,7 +293,7 @@
             <property role="1dT_AB" value="Returns the kind of the token. " />
           </node>
         </node>
-        <node concept="x79VA" id="2W1GNPBdoOF" role="x79VK">
+        <node concept="x79VA" id="2W1GNPBdoOF" role="3nqlJM">
           <property role="x79VB" value="the kind of the token" />
         </node>
       </node>

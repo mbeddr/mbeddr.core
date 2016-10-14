@@ -2,7 +2,7 @@
 <model ref="r:1ad61c56-aac0-4b21-b867-da106219773a(com.mbeddr.ext.components.statemachine.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="8yj6" ref="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" />
@@ -53,7 +53,7 @@
     <ref role="1XX52x" to="8yj6:7wVKixdVVr$" resolve="StatemachineComponentAdapter" />
     <node concept="3EZMnI" id="7wVKixdVVsp" role="2wV5jI">
       <node concept="3F1sOY" id="7wVKixdVVss" role="3EZMnx">
-        <ref role="1NtTu8" to="8yj6:7wVKixdVVsm" />
+        <ref role="1NtTu8" to="8yj6:7wVKixdVVsm" resolve="machine" />
       </node>
       <node concept="l2Vlx" id="7wVKixdVVsr" role="2iSdaV" />
     </node>
@@ -66,7 +66,7 @@
         <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
       </node>
       <node concept="1iCGBv" id="1oIA7EcBLW8" role="3EZMnx">
-        <ref role="1NtTu8" to="8yj6:1oIA7EcBLW2" />
+        <ref role="1NtTu8" to="8yj6:1oIA7EcBLW2" resolve="runnable" />
         <node concept="1sVBvm" id="1oIA7EcBLW9" role="1sWHZn">
           <node concept="3F0A7n" id="1oIA7EcBLWb" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -91,7 +91,7 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1iCGBv" id="6xLvLBZYUCj" role="3EZMnx">
-        <ref role="1NtTu8" to="8yj6:6xLvLBZYUAG" />
+        <ref role="1NtTu8" to="8yj6:6xLvLBZYUAG" resolve="port" />
         <node concept="1sVBvm" id="6xLvLBZYUCl" role="1sWHZn">
           <node concept="3F0A7n" id="6xLvLBZYUD2" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -110,7 +110,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="6xLvLBZYUCL" role="3EZMnx">
-        <ref role="1NtTu8" to="8yj6:6xLvLBZYUAI" />
+        <ref role="1NtTu8" to="8yj6:6xLvLBZYUAI" resolve="operation" />
         <node concept="1sVBvm" id="6xLvLBZYUCN" role="1sWHZn">
           <node concept="3F0A7n" id="6xLvLBZYUCZ" role="2wV5jI">
             <property role="1Intyy" value="true" />

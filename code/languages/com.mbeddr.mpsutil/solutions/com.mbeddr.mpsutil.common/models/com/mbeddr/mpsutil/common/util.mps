@@ -8,9 +8,9 @@
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
-    <import index="tpcu" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core/jetbrains.mps.lang.core.behavior)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="ot7" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress.util(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
@@ -154,7 +154,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -263,6 +263,10 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="8758390115029295477" name="jetbrains.mps.lang.smodel.structure.SReferenceType" flags="in" index="2z4iKi" />
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -281,10 +285,7 @@
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -747,8 +748,8 @@
             <node concept="3cpWs6" id="3JMPeKaHTf3" role="3cqZAp">
               <node concept="2OqwBi" id="3JMPeKaHTf4" role="3cqZAk">
                 <node concept="1PxgMI" id="3JMPeKaHTf5" role="2Oq$k0">
-                  <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                  <node concept="37vLTw" id="3JMPeKaHTf6" role="1PxMeX">
+                  <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                  <node concept="37vLTw" id="3JMPeKaHTf6" role="1m5AlR">
                     <ref role="3cqZAo" node="3JMPeKaHTgk" resolve="node" />
                   </node>
                 </node>
@@ -806,8 +807,8 @@
                     <node concept="TSZUe" id="3JMPeKaHTfx" role="2OqNvi">
                       <node concept="2OqwBi" id="3JMPeKaHTfy" role="25WWJ7">
                         <node concept="1PxgMI" id="3JMPeKaHTfz" role="2Oq$k0">
-                          <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                          <node concept="37vLTw" id="3JMPeKaHTf$" role="1PxMeX">
+                          <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                          <node concept="37vLTw" id="3JMPeKaHTf$" role="1m5AlR">
                             <ref role="3cqZAo" node="3JMPeKaHTfm" resolve="currentNode" />
                           </node>
                         </node>
@@ -1197,8 +1198,8 @@
               <node concept="17QB3L" id="3JMPeKaHTih" role="_ZDj9" />
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTii" role="33vP2m">
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Object...):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTij" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTik" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTil" role="2JrQYb">
@@ -1219,8 +1220,8 @@
               <node concept="17QB3L" id="3JMPeKaHTiq" role="_ZDj9" />
             </node>
             <node concept="2YIFZM" id="3JMPeKaHTir" role="33vP2m">
-              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Iterable):java.util.ArrayList" resolve="newArrayList" />
               <ref role="1Pybhc" to="3o3z:~Lists" resolve="Lists" />
+              <ref role="37wK5l" to="3o3z:~Lists.newArrayList(java.lang.Object...):java.util.ArrayList" resolve="newArrayList" />
               <node concept="2OqwBi" id="3JMPeKaHTis" role="37wK5m">
                 <node concept="2JrnkZ" id="3JMPeKaHTit" role="2Oq$k0">
                   <node concept="37vLTw" id="3JMPeKaHTiu" role="2JrQYb">

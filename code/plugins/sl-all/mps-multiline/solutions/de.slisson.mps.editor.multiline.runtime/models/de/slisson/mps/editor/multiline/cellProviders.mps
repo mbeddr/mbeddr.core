@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -21,6 +21,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
+    <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -32,6 +33,9 @@
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -113,8 +117,15 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -225,26 +236,57 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Pi_Fu5Sqk5" role="3cqZAp">
-          <node concept="37vLTI" id="7Pi_Fu5Sqki" role="3clFbG">
-            <node concept="37vLTw" id="1rfeXz7xs06" role="37vLTJ">
-              <ref role="3cqZAo" node="7Pi_Fu5SqjZ" resolve="myPropertyDeclaration" />
+        <node concept="1DcWWT" id="76kdZQWAzOH" role="3cqZAp">
+          <node concept="3clFbS" id="76kdZQWAzOJ" role="2LFqv$">
+            <node concept="3clFbJ" id="76kdZQWAA25" role="3cqZAp">
+              <node concept="3clFbS" id="76kdZQWAA27" role="3clFbx">
+                <node concept="3clFbF" id="76kdZQWACeR" role="3cqZAp">
+                  <node concept="37vLTI" id="76kdZQWACse" role="3clFbG">
+                    <node concept="37vLTw" id="76kdZQWACuv" role="37vLTx">
+                      <ref role="3cqZAo" node="76kdZQWAzOK" resolve="p" />
+                    </node>
+                    <node concept="37vLTw" id="76kdZQWACeP" role="37vLTJ">
+                      <ref role="3cqZAo" node="7Pi_Fu5SqjZ" resolve="myPropertyDeclaration" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3zACq4" id="76kdZQWACD_" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="76kdZQWAAOD" role="3clFbw">
+                <node concept="2OqwBi" id="76kdZQWAAaL" role="2Oq$k0">
+                  <node concept="37vLTw" id="76kdZQWAA2x" role="2Oq$k0">
+                    <ref role="3cqZAo" node="76kdZQWAzOK" resolve="p" />
+                  </node>
+                  <node concept="liA8E" id="76kdZQWAAl$" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="76kdZQWAB$N" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="37vLTw" id="76kdZQWAC2v" role="37wK5m">
+                    <ref role="3cqZAo" node="7Pi_Fu5SfIR" resolve="myPropertyName" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2OqwBi" id="7Pi_Fu5Sqkw" role="37vLTx">
-              <node concept="2OqwBi" id="51$nbrvb0B3" role="2Oq$k0">
-                <node concept="1rXfSq" id="1rfeXz7xsg3" role="2Oq$k0">
-                  <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
-                </node>
-                <node concept="liA8E" id="51$nbrvb1Aq" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
-                </node>
+          </node>
+          <node concept="3cpWsn" id="76kdZQWAzOK" role="1Duv9x">
+            <property role="TrG5h" value="p" />
+            <node concept="3uibUv" id="76kdZQWA$bx" role="1tU5fm">
+              <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="76kdZQWA_bQ" role="1DdaDG">
+            <node concept="2OqwBi" id="51$nbrvb0B3" role="2Oq$k0">
+              <node concept="1rXfSq" id="1rfeXz7xsg3" role="2Oq$k0">
+                <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
               </node>
-              <node concept="liA8E" id="7Pi_Fu5SqkA" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperty(java.lang.String):org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
-                <node concept="37vLTw" id="1rfeXz7xrXn" role="37wK5m">
-                  <ref role="3cqZAo" node="7Pi_Fu5SfIR" resolve="myPropertyName" />
-                </node>
+              <node concept="liA8E" id="51$nbrvb1Aq" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
               </node>
+            </node>
+            <node concept="liA8E" id="76kdZQWA_VU" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getProperties():java.util.Collection" resolve="getProperties" />
             </node>
           </node>
         </node>
@@ -321,12 +363,12 @@
         <node concept="3cpWs6" id="2n6u7U4MaAW" role="3cqZAp">
           <node concept="2YIFZM" id="2n6u7U4MaB3" role="3cqZAk">
             <ref role="1Pybhc" to="i51s:~AttributeOperations" resolve="AttributeOperations" />
-            <ref role="37wK5l" to="i51s:~AttributeOperations.getPropertyAttributes(org.jetbrains.mps.openapi.model.SNode,java.lang.String):java.lang.Iterable" resolve="getPropertyAttributes" />
+            <ref role="37wK5l" to="i51s:~AttributeOperations.getPropertyAttributes(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty):java.lang.Iterable" resolve="getPropertyAttributes" />
             <node concept="1rXfSq" id="2n6u7U4MaAY" role="37wK5m">
               <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
             </node>
-            <node concept="37vLTw" id="2n6u7U4MaAZ" role="37wK5m">
-              <ref role="3cqZAo" node="7Pi_Fu5SfIR" resolve="myPropertyName" />
+            <node concept="37vLTw" id="3wyB$9tpnKC" role="37wK5m">
+              <ref role="3cqZAo" node="7Pi_Fu5SqjZ" resolve="myPropertyDeclaration" />
             </node>
           </node>
         </node>

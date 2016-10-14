@@ -5,7 +5,7 @@
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -1295,7 +1295,7 @@
           <node concept="3cpWsn" id="7xsJPFCeYn8" role="3cpWs9">
             <property role="TrG5h" value="deps" />
             <node concept="3uibUv" id="7xsJPFCeYn5" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+              <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
               <node concept="3uibUv" id="7xsJPFCeZiK" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
               </node>
@@ -1313,7 +1313,7 @@
                 </node>
               </node>
               <node concept="3uibUv" id="7xsJPFCfl7K" role="10QFUM">
-                <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+                <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
                 <node concept="3uibUv" id="7xsJPFCfl7L" role="11_B2D">
                   <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
                 </node>
@@ -1327,7 +1327,7 @@
               <ref role="3cqZAo" node="7xsJPFCeYn8" resolve="deps" />
             </node>
             <node concept="liA8E" id="7xsJPFCfv18" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
               <node concept="37vLTw" id="7xsJPFCfvEM" role="37wK5m">
                 <ref role="3cqZAo" node="1HOG8KqUzpk" resolve="newDep" />
               </node>

@@ -2,13 +2,13 @@
 <model ref="r:d51229bd-5841-4e69-bba9-14b1450412fa(com.mbeddr.rcp.config)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
-    <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="0" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="-1" />
   </languages>
   <imports>
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
@@ -232,7 +232,6 @@
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
-        <property id="3497141547781541446" name="eap" index="2OjLBN" />
         <property id="4237758264760168561" name="bugfixNr" index="1lNJF1" />
         <child id="6845119683729337285" name="progressY" index="27hAJg" />
         <child id="6845119683729294884" name="progressColor" index="27hGoL" />
@@ -357,7 +356,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9GlD" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -1170,7 +1169,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9Gly" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9Glz" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -1414,7 +1413,7 @@
     </node>
     <node concept="2_Ic$z" id="AyMfzoGqLn" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="AyMfzoGqLo" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -2931,7 +2930,7 @@
       <node concept="aVJcg" id="32YXDrSqvTx" role="aVJcv">
         <node concept="NbPM2" id="32YXDrSqvTw" role="aVJcq">
           <node concept="3Mxwew" id="32YXDrSqvTv" role="3MwsjC">
-            <property role="3MwjfP" value="SNAPSHOT" />
+            <property role="3MwjfP" value="1.0" />
           </node>
         </node>
       </node>
@@ -3074,7 +3073,6 @@
       <property role="TrG5h" value="MPS" />
       <property role="2OjLBL" value="1" />
       <property role="1lNJF1" value="0" />
-      <property role="2OjLBN" value="true" />
       <node concept="3_J27D" id="1BPeV_LjXsM" role="HFo83">
         <node concept="3Mxwew" id="1BPeV_LjXsN" role="3MwsjC">
           <property role="3MwjfP" value="002387" />
@@ -3380,7 +3378,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="2sgV4H" id="1BPeV_LjXr_" role="1l3spa">
       <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
@@ -3554,7 +3552,7 @@
       <node concept="aVJcg" id="jueD0WYgWt" role="aVJcv">
         <node concept="NbPM2" id="jueD0WYgWu" role="aVJcq">
           <node concept="3Mxwew" id="jueD0WYgWv" role="3MwsjC">
-            <property role="3MwjfP" value="SNAPSHOT" />
+            <property role="3MwjfP" value="1.0" />
           </node>
         </node>
       </node>

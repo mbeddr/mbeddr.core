@@ -2,7 +2,7 @@
 <model ref="r:4b891481-a267-49b2-8bde-1630bae3d992(demo.expr.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -105,7 +105,7 @@
       <ref role="qq9wM" to="usyq:3xDNhgd1h$v" resolve="Variable" />
       <node concept="3vetai" id="3xDNhgd4IlA" role="3vQZUl">
         <node concept="rqRoa" id="3xDNhgd4IlO" role="3vdyny">
-          <ref role="rqRob" to="usyq:3xDNhgd1h$z" />
+          <ref role="rqRob" to="usyq:3xDNhgd1h$z" resolve="init" />
         </node>
       </node>
     </node>
@@ -131,21 +131,21 @@
       <node concept="3vetai" id="3xDNhgd4EoQ" role="3vQZUl">
         <node concept="3cpWs3" id="3xDNhgd4Erg" role="3vdyny">
           <node concept="rqRoa" id="3xDNhgd4Er$" role="3uHU7w">
-            <ref role="rqRob" to="usyq:3xDNhgd32l6" />
+            <ref role="rqRob" to="usyq:3xDNhgd32l6" resolve="right" />
           </node>
           <node concept="rqRoa" id="3xDNhgd4Ep4" role="3uHU7B">
-            <ref role="rqRob" to="usyq:3xDNhgd32l4" />
+            <ref role="rqRob" to="usyq:3xDNhgd32l4" resolve="left" />
           </node>
         </node>
       </node>
       <node concept="qpFDx" id="3xDNhgd4E_Y" role="3vbI0w">
-        <ref role="qpFD$" to="usyq:3xDNhgd32l4" />
+        <ref role="qpFD$" to="usyq:3xDNhgd32l4" resolve="left" />
         <node concept="rxStX" id="3xDNhgd4Olq" role="rajlz">
           <ref role="rxSuV" to="usyq:3xDNhgd1jUe" resolve="IntType" />
         </node>
       </node>
       <node concept="qpFDx" id="3xDNhgd4ItT" role="3vbI0w">
-        <ref role="qpFD$" to="usyq:3xDNhgd32l6" />
+        <ref role="qpFD$" to="usyq:3xDNhgd32l6" resolve="right" />
         <node concept="rxStX" id="3xDNhgd4Om7" role="rajlz">
           <ref role="rxSuV" to="usyq:3xDNhgd1jUe" resolve="IntType" />
         </node>
@@ -157,21 +157,21 @@
       <node concept="3vetai" id="7qeMuaSJJnS" role="3vQZUl">
         <node concept="3cpWs3" id="7qeMuaSJJnT" role="3vdyny">
           <node concept="rqRoa" id="7qeMuaSJJnU" role="3uHU7w">
-            <ref role="rqRob" to="usyq:3xDNhgd32l6" />
+            <ref role="rqRob" to="usyq:3xDNhgd32l6" resolve="right" />
           </node>
           <node concept="rqRoa" id="7qeMuaSJJnV" role="3uHU7B">
-            <ref role="rqRob" to="usyq:3xDNhgd32l4" />
+            <ref role="rqRob" to="usyq:3xDNhgd32l4" resolve="left" />
           </node>
         </node>
       </node>
       <node concept="qpFDx" id="7qeMuaSJJnW" role="3vbI0w">
-        <ref role="qpFD$" to="usyq:3xDNhgd32l4" />
+        <ref role="qpFD$" to="usyq:3xDNhgd32l4" resolve="left" />
         <node concept="rxStX" id="7qeMuaSJJnX" role="rajlz">
           <ref role="rxSuV" to="usyq:7qeMuaSJ1_Y" resolve="StringType" />
         </node>
       </node>
       <node concept="qpFDx" id="7qeMuaSJJnY" role="3vbI0w">
-        <ref role="qpFD$" to="usyq:3xDNhgd32l6" />
+        <ref role="qpFD$" to="usyq:3xDNhgd32l6" resolve="right" />
         <node concept="rxStX" id="7qeMuaSJJnZ" role="rajlz">
           <ref role="rxSuV" to="usyq:7qeMuaSJ1_Y" resolve="StringType" />
         </node>
@@ -181,13 +181,13 @@
       <property role="2TnfIJ" value="false" />
       <ref role="qq9wM" to="usyq:3xDNhgd3wHZ" resolve="MulExpression" />
       <node concept="qpFDx" id="3xDNhgd51R0" role="3vbI0w">
-        <ref role="qpFD$" to="usyq:3xDNhgd32l4" />
+        <ref role="qpFD$" to="usyq:3xDNhgd32l4" resolve="left" />
         <node concept="rxStX" id="3xDNhgd51R1" role="rajlz">
           <ref role="rxSuV" to="usyq:3xDNhgd1jUe" resolve="IntType" />
         </node>
       </node>
       <node concept="qpFDx" id="3xDNhgd51R2" role="3vbI0w">
-        <ref role="qpFD$" to="usyq:3xDNhgd32l6" />
+        <ref role="qpFD$" to="usyq:3xDNhgd32l6" resolve="right" />
         <node concept="rxStX" id="3xDNhgd51R3" role="rajlz">
           <ref role="rxSuV" to="usyq:3xDNhgd1jUe" resolve="IntType" />
         </node>
@@ -195,10 +195,10 @@
       <node concept="3vetai" id="3xDNhgd51Rx" role="3vQZUl">
         <node concept="17qRlL" id="3xDNhgd51Yh" role="3vdyny">
           <node concept="rqRoa" id="3xDNhgd522w" role="3uHU7w">
-            <ref role="rqRob" to="usyq:3xDNhgd32l6" />
+            <ref role="rqRob" to="usyq:3xDNhgd32l6" resolve="right" />
           </node>
           <node concept="rqRoa" id="3xDNhgd51RR" role="3uHU7B">
-            <ref role="rqRob" to="usyq:3xDNhgd32l4" />
+            <ref role="rqRob" to="usyq:3xDNhgd32l4" resolve="left" />
           </node>
         </node>
       </node>
@@ -208,7 +208,7 @@
       <ref role="qq9wM" to="usyq:3xDNhgd4nK6" resolve="VarRef" />
       <node concept="3vetai" id="3xDNhgd4Ir8" role="3vQZUl">
         <node concept="rqRoa" id="3xDNhgd4Irm" role="3vdyny">
-          <ref role="rqRob" to="usyq:3xDNhgd4nKa" />
+          <ref role="rqRob" to="usyq:3xDNhgd4nKa" resolve="var" />
         </node>
       </node>
     </node>
@@ -217,7 +217,7 @@
       <ref role="qq9wM" to="usyq:3xDNhgd3xSO" resolve="ParensExpression" />
       <node concept="3vetai" id="3xDNhgd7Cj1" role="3vQZUl">
         <node concept="rqRoa" id="3xDNhgd7Cjf" role="3vdyny">
-          <ref role="rqRob" to="usyq:3xDNhgd3xSW" />
+          <ref role="rqRob" to="usyq:3xDNhgd3xSW" resolve="expr" />
         </node>
       </node>
     </node>

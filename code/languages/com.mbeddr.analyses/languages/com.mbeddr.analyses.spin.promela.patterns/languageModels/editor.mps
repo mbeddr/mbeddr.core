@@ -2,7 +2,7 @@
 <model ref="r:0527a7ff-bb76-4d1c-88cd-6abf58cf5241(com.mbeddr.analyses.spin.promela.patterns.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -68,7 +68,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1wu5Hv6a9WE" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:1wu5Hv6a9W9" />
+        <ref role="1NtTu8" to="i3mj:1wu5Hv6a9W9" resolve="varRef" />
       </node>
       <node concept="l2Vlx" id="1wu5Hv6a9Wo" role="2iSdaV" />
       <node concept="3F0ifn" id="1wu5Hv6a9WW" role="3EZMnx">
@@ -78,7 +78,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1wu5Hv6a9Xf" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:1wu5Hv6a9Wb" />
+        <ref role="1NtTu8" to="i3mj:1wu5Hv6a9Wb" resolve="lowBound" />
       </node>
       <node concept="3F0ifn" id="1wu5Hv6a9Xt" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -87,7 +87,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1wu5Hv6a9XQ" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:1wu5Hv6a9Wh" />
+        <ref role="1NtTu8" to="i3mj:1wu5Hv6a9Wh" resolve="upperBound" />
       </node>
       <node concept="3F0ifn" id="1wu5Hv6a9Y8" role="3EZMnx">
         <property role="3F0ifm" value=");" />
@@ -113,7 +113,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="HmUOIGID1z" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:HmUOIGID01" />
+        <ref role="1NtTu8" to="i3mj:HmUOIGID01" resolve="assumption" />
       </node>
       <node concept="3F0ifn" id="HmUOIGID1V" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -122,7 +122,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="HmUOIGID6g" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:HmUOIGID05" />
+        <ref role="1NtTu8" to="i3mj:HmUOIGID05" resolve="body" />
         <node concept="VPM3Z" id="HmUOIGID9W" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -140,13 +140,13 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F1sOY" id="HmUOIGKxg1" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:HmUOIGKxf4" />
+        <ref role="1NtTu8" to="i3mj:HmUOIGKxf4" resolve="times" />
       </node>
       <node concept="3F0ifn" id="HmUOIGKxgb" role="3EZMnx">
         <property role="3F0ifm" value=")" />
       </node>
       <node concept="3F1sOY" id="HmUOIGKxgn" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:HmUOIGKxf6" />
+        <ref role="1NtTu8" to="i3mj:HmUOIGKxf6" resolve="body" />
       </node>
       <node concept="l2Vlx" id="HmUOIGKxfJ" role="2iSdaV" />
     </node>
@@ -167,7 +167,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3$JFeG$ZSc1" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJA" />
+        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJA" resolve="varRef" />
       </node>
       <node concept="l2Vlx" id="3$JFeG$ZSc2" role="2iSdaV" />
       <node concept="3F0ifn" id="3$JFeG$ZSc3" role="3EZMnx">
@@ -177,7 +177,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3$JFeG$ZSc5" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJB" />
+        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJB" resolve="lowBound" />
       </node>
       <node concept="3F0ifn" id="3$JFeG$ZSc6" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -186,7 +186,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3$JFeG$ZSc8" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJC" />
+        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJC" resolve="upperBound" />
       </node>
       <node concept="3F0ifn" id="3$JFeG$ZTem" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -195,7 +195,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3$JFeG$ZTeQ" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJG" />
+        <ref role="1NtTu8" to="i3mj:3$JFeG$ZQJG" resolve="seedRange" />
       </node>
       <node concept="3F0ifn" id="3$JFeG$ZSc9" role="3EZMnx">
         <property role="3F0ifm" value=");" />
@@ -215,19 +215,19 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F1sOY" id="5RNtn4ccK0x" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGh" />
+        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGh" resolve="iter" />
       </node>
       <node concept="3F0ifn" id="5RNtn4cbrHl" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="5RNtn4cbrIe" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGc" />
+        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGc" resolve="range" />
       </node>
       <node concept="3F0ifn" id="5RNtn4cbrG_" role="3EZMnx">
         <property role="3F0ifm" value=")" />
       </node>
       <node concept="3F1sOY" id="5RNtn4cbrGA" role="3EZMnx">
-        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGs" />
+        <ref role="1NtTu8" to="i3mj:5RNtn4cbrGs" resolve="body" />
       </node>
       <node concept="l2Vlx" id="5RNtn4cbrGB" role="2iSdaV" />
     </node>
@@ -236,7 +236,7 @@
     <ref role="1XX52x" to="i3mj:5RNtn4ccJZN" resolve="ForEachVarDecl" />
     <node concept="3EZMnI" id="5RNtn4ccJZZ" role="2wV5jI">
       <node concept="3F1sOY" id="5RNtn4ccK09" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0A7n" id="5RNtn4ccK0f" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

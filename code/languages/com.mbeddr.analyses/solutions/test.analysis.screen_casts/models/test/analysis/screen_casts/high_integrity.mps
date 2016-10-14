@@ -43,9 +43,6 @@
         <child id="8337440621611401032" name="specification" index="CIVlq" />
       </concept>
     </language>
-    <language id="f47ddd18-d113-4647-938b-1d9b2e1910dc" name="com.mbeddr.analyses.acsl.cbmc.gen">
-      <concept id="3569172384853804038" name="com.mbeddr.analyses.acsl.cbmc.gen.structure.CheckACSLContractsWithCBMC" flags="ng" index="2sO7Hp" />
-    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
         <child id="6275792049641600984" name="condition" index="c0U16" />
@@ -1053,7 +1050,6 @@
     <node concept="2Q9Fgs" id="368fPYHkqvj" role="2Q9xDr">
       <node concept="2Q9FjX" id="368fPYHkqvk" role="2Q9FjI" />
     </node>
-    <node concept="2sO7Hp" id="368fPYHmjAN" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="368fPYHmp$X">
     <property role="TrG5h" value="_02_static_analysis" />

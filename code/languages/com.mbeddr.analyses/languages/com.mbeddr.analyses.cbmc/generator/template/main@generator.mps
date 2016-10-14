@@ -114,7 +114,7 @@
       <concept id="745648737914844472" name="com.mbeddr.core.statements.structure.AnyNodeItem" flags="ng" index="2sYeqF">
         <child id="745648737914844473" name="theNode" index="2sYeqE" />
       </concept>
-      <concept id="3830958861296879113" name="com.mbeddr.core.statements.structure.AbritraryTextItem" flags="ng" index="19_wF0">
+      <concept id="3830958861296879113" name="com.mbeddr.core.statements.structure.ArbitraryTextItem" flags="ng" index="19_wF0">
         <property id="3830958861296879114" name="text" index="19_wF3" />
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
@@ -209,14 +209,15 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -357,8 +358,8 @@
                               <ref role="ehGHo" to="clbe:7D99css6O15" resolve="EnumType" />
                             </node>
                             <node concept="1PxgMI" id="72mSD5RA4O_" role="33vP2m">
-                              <ref role="1PxNhF" to="clbe:7D99css6O15" resolve="EnumType" />
-                              <node concept="2OqwBi" id="72mSD5RA3Ze" role="1PxMeX">
+                              <ref role="1m5ApE" to="clbe:7D99css6O15" resolve="EnumType" />
+                              <node concept="2OqwBi" id="72mSD5RA3Ze" role="1m5AlR">
                                 <node concept="37vLTw" id="72mSD5RA4Y$" role="2Oq$k0">
                                   <ref role="3cqZAo" node="72mSD5RA4Yw" resolve="exp" />
                                 </node>

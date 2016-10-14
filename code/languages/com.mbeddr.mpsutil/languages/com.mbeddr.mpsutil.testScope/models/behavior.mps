@@ -2,10 +2,10 @@
 <model ref="r:0f97720d-6a69-499a-8233-f35c1872d466(com.mbeddr.mpsutil.testScope.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -235,7 +235,7 @@
             <node concept="2OqwBi" id="Uhkfo4FSu2" role="37vLTJ">
               <node concept="13iPFW" id="Uhkfo4FSrm" role="2Oq$k0" />
               <node concept="3TrEf2" id="Uhkfo4FSER" role="2OqNvi">
-                <ref role="3Tt5mk" to="r5xn:Uhkfo4FJp5" />
+                <ref role="3Tt5mk" to="r5xn:Uhkfo4FJp5" resolve="kind" />
               </node>
             </node>
             <node concept="2pJPEk" id="Uhkfo4FZFu" role="37vLTx">
@@ -266,7 +266,7 @@
       <property role="TrG5h" value="perform" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tp5o:dCRb6FLnvk" resolve="perform" />
+      <ref role="13i0hy" to="tp5o:1kgh5YabdhC" resolve="perform" />
       <node concept="3Tm1VV" id="Uhkfo4FJjb" role="1B3o_S" />
       <node concept="3clFbS" id="Uhkfo4FJjg" role="3clF47">
         <node concept="3clFbF" id="Uhkfo4G1II" role="3cqZAp">
@@ -336,7 +336,7 @@
                 <node concept="2OqwBi" id="Uhkfo4G9HQ" role="2Oq$k0">
                   <node concept="13iPFW" id="Uhkfo4GaSW" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="Uhkfo4G9HS" role="2OqNvi">
-                    <ref role="3TtcxE" to="r5xn:Uhkfo4FJib" />
+                    <ref role="3TtcxE" to="r5xn:Uhkfo4FJib" resolve="expectedScopeContents" />
                   </node>
                 </node>
                 <node concept="3$u5V9" id="Uhkfo4G9HT" role="2OqNvi">
@@ -348,7 +348,7 @@
                             <ref role="3cqZAo" node="Uhkfo4G9I0" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="Uhkfo4G9HZ" role="2OqNvi">
-                            <ref role="3Tt5mk" to="r5xn:Uhkfo4FJie" />
+                            <ref role="3Tt5mk" to="r5xn:Uhkfo4FJie" resolve="target" />
                           </node>
                         </node>
                       </node>
@@ -370,7 +370,7 @@
             <node concept="2OqwBi" id="Uhkfo4FZ6H" role="2Oq$k0">
               <node concept="13iPFW" id="Uhkfo4FZ3R" role="2Oq$k0" />
               <node concept="3TrEf2" id="Uhkfo4FZdh" role="2OqNvi">
-                <ref role="3Tt5mk" to="r5xn:Uhkfo4FJp5" />
+                <ref role="3Tt5mk" to="r5xn:Uhkfo4FJp5" resolve="kind" />
               </node>
             </node>
             <node concept="2qgKlT" id="Uhkfo4FZqy" role="2OqNvi">
@@ -420,7 +420,7 @@
             <node concept="2OqwBi" id="Uhkfo4G1XE" role="2Oq$k0">
               <node concept="13iPFW" id="Uhkfo4G1Uo" role="2Oq$k0" />
               <node concept="3TrEf2" id="Uhkfo4G2az" role="2OqNvi">
-                <ref role="3Tt5mk" to="r5xn:Uhkfo4G1LT" />
+                <ref role="3Tt5mk" to="r5xn:Uhkfo4G1LT" resolve="reference" />
               </node>
             </node>
             <node concept="3w_OXm" id="Uhkfo4G2zG" role="2OqNvi" />
@@ -432,7 +432,7 @@
                   <node concept="2OqwBi" id="Uhkfo4G35k" role="10QFUP">
                     <node concept="13iPFW" id="Uhkfo4G2ZY" role="2Oq$k0" />
                     <node concept="3TrEf2" id="Uhkfo4G3kd" role="2OqNvi">
-                      <ref role="3Tt5mk" to="r5xn:Uhkfo4G1LT" />
+                      <ref role="3Tt5mk" to="r5xn:Uhkfo4G1LT" resolve="reference" />
                     </node>
                   </node>
                   <node concept="2z4iKi" id="Uhkfo4G3Mj" role="10QFUM" />

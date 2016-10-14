@@ -3,15 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="slm6" ref="r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration.methods)" />
+    <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" />
     <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" implicit="true" />
   </imports>
   <registry>
@@ -232,7 +232,7 @@
                           <ref role="3cqZAo" node="5JlqNRKkXLm" resolve="node" />
                         </node>
                         <node concept="3Tsc0h" id="5JlqNRKkXLt" role="2OqNvi">
-                          <ref role="3TtcxE" to="qqyh:5JlqNRKkXK9" />
+                          <ref role="3TtcxE" to="qqyh:5JlqNRKkXK9" resolve="crossConstraints" />
                         </node>
                       </node>
                       <node concept="X8dFx" id="5JlqNRKkXLu" role="2OqNvi">
@@ -241,7 +241,7 @@
                             <ref role="3cqZAo" node="5JlqNRKkXLm" resolve="node" />
                           </node>
                           <node concept="3Tsc0h" id="5JlqNRKkXLx" role="2OqNvi">
-                            <ref role="3TtcxE" to="qqyh:7k8WEKUE3fj" />
+                            <ref role="3TtcxE" to="qqyh:7k8WEKUE3fj" resolve="crossConstraints_old" />
                           </node>
                         </node>
                       </node>

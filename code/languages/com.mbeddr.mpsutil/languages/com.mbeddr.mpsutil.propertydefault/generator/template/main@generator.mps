@@ -164,9 +164,11 @@
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
         <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
         <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -206,6 +208,7 @@
                     <property role="Xl_RC" value="" />
                     <node concept="17Uvod" id="1m4fy7KOvqJ" role="lGtFl">
                       <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                       <node concept="3zFVjK" id="1m4fy7KOvqK" role="3zH0cK">
                         <node concept="3clFbS" id="1m4fy7KOvqL" role="2VODD2">
                           <node concept="3clFbF" id="1m4fy7KOvqM" role="3cqZAp">
@@ -222,7 +225,7 @@
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="1m4fy7KOvqU" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tp1t:gGEom_V" />
+                                  <ref role="3Tt5mk" to="tp1t:gGEom_V" resolve="applicableProperty" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="1m4fy7KOvqV" role="2OqNvi">
@@ -248,6 +251,7 @@
                 <property role="Xl_RC" value="" />
                 <node concept="17Uvod" id="1m4fy7KOvr1" role="lGtFl">
                   <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                   <node concept="3zFVjK" id="1m4fy7KOvr2" role="3zH0cK">
                     <node concept="3clFbS" id="1m4fy7KOvr3" role="2VODD2">
                       <node concept="3clFbF" id="1m4fy7KOvr4" role="3cqZAp">
@@ -264,7 +268,7 @@
                               </node>
                             </node>
                             <node concept="3TrEf2" id="1m4fy7KOvrc" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tp1t:gGEom_V" />
+                              <ref role="3Tt5mk" to="tp1t:gGEom_V" resolve="applicableProperty" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="1m4fy7KOvrd" role="2OqNvi">
@@ -289,7 +293,7 @@
                         <node concept="3clFbF" id="1m4fy7KJEaE" role="3cqZAp">
                           <node concept="2OqwBi" id="1m4fy7KJEa_" role="3clFbG">
                             <node concept="3TrEf2" id="1m4fy7KJEaC" role="2OqNvi">
-                              <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" />
+                              <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" resolve="defaultValue" />
                             </node>
                             <node concept="30H73N" id="1m4fy7KJEaD" role="2Oq$k0" />
                           </node>
@@ -323,6 +327,7 @@
                   <property role="Xl_RC" value="" />
                   <node concept="17Uvod" id="aiIotWW84y" role="lGtFl">
                     <property role="2qtEX9" value="value" />
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                     <node concept="3zFVjK" id="aiIotWW84z" role="3zH0cK">
                       <node concept="3clFbS" id="aiIotWW84$" role="2VODD2">
                         <node concept="3clFbF" id="aiIotWW84_" role="3cqZAp">
@@ -330,7 +335,7 @@
                             <node concept="2OqwBi" id="aiIotWW84B" role="2Oq$k0">
                               <node concept="30H73N" id="aiIotWW84C" role="2Oq$k0" />
                               <node concept="3TrEf2" id="aiIotWW84D" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tp1t:gGEom_V" />
+                                <ref role="3Tt5mk" to="tp1t:gGEom_V" resolve="applicableProperty" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="aiIotWW84E" role="2OqNvi">
@@ -377,12 +382,13 @@
       <node concept="raruj" id="1m4fy7KJEvu" role="lGtFl" />
       <node concept="1ZhdrF" id="1m4fy7KJEvx" role="lGtFl">
         <property role="2qtEX8" value="applicableProperty" />
+        <property role="P3scX" value="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1/1147467115080/1147467295099" />
         <node concept="3$xsQk" id="1m4fy7KJEv$" role="3$ytzL">
           <node concept="3clFbS" id="1m4fy7KJEv_" role="2VODD2">
             <node concept="3clFbF" id="1m4fy7KJEvF" role="3cqZAp">
               <node concept="2OqwBi" id="1m4fy7KJEvA" role="3clFbG">
                 <node concept="3TrEf2" id="1m4fy7KJEvD" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp1t:gGEom_V" />
+                  <ref role="3Tt5mk" to="tp1t:gGEom_V" resolve="applicableProperty" />
                 </node>
                 <node concept="30H73N" id="1m4fy7KJEvE" role="2Oq$k0" />
               </node>
@@ -400,6 +406,7 @@
                 <property role="Xl_RC" value="" />
                 <node concept="17Uvod" id="aiIotWVyQ4" role="lGtFl">
                   <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                   <node concept="3zFVjK" id="aiIotWVyQ5" role="3zH0cK">
                     <node concept="3clFbS" id="aiIotWVyQ6" role="2VODD2">
                       <node concept="3clFbF" id="aiIotWVyQ7" role="3cqZAp">
@@ -407,7 +414,7 @@
                           <node concept="2OqwBi" id="aiIotWVyQ9" role="2Oq$k0">
                             <node concept="30H73N" id="aiIotWVyQa" role="2Oq$k0" />
                             <node concept="3TrEf2" id="aiIotWVyQb" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tp1t:gGEom_V" />
+                              <ref role="3Tt5mk" to="tp1t:gGEom_V" resolve="applicableProperty" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="aiIotWVyQc" role="2OqNvi">
@@ -499,7 +506,7 @@
                           <node concept="3clFbF" id="1m4fy7KJFcQ" role="3cqZAp">
                             <node concept="2OqwBi" id="1m4fy7KJFcR" role="3clFbG">
                               <node concept="3TrEf2" id="1m4fy7KJFcS" role="2OqNvi">
-                                <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" />
+                                <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" resolve="defaultValue" />
                               </node>
                               <node concept="30H73N" id="1m4fy7KJFcT" role="2Oq$k0" />
                             </node>

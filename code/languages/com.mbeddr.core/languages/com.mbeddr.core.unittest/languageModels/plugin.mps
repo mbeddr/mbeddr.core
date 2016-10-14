@@ -2,8 +2,8 @@
 <model ref="r:46817041-e1bc-4759-8f95-11e32b42cd82(com.mbeddr.core.unittest.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
@@ -127,13 +127,14 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -178,13 +179,13 @@
                 <ref role="37wK5l" node="4esKCdYvNEp" resolve="getValueType" />
                 <node concept="2OqwBi" id="4esKCdYySNj" role="37wK5m">
                   <node concept="1PxgMI" id="4esKCdYySNk" role="2Oq$k0">
-                    <ref role="1PxNhF" to="mj1l:DirWPS1IHj" resolve="ITypeDecorator" />
-                    <node concept="37vLTw" id="4esKCdYySNl" role="1PxMeX">
+                    <ref role="1m5ApE" to="mj1l:DirWPS1IHj" resolve="ITypeDecorator" />
+                    <node concept="37vLTw" id="4esKCdYySNl" role="1m5AlR">
                       <ref role="3cqZAo" node="4esKCdYvNFi" resolve="type" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4esKCdYySNm" role="2OqNvi">
-                    <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" />
+                    <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" resolve="valueType" />
                   </node>
                 </node>
               </node>
@@ -332,7 +333,7 @@
                   <node concept="2OqwBi" id="77nuVWJ0MVS" role="2Oq$k0">
                     <node concept="2OqwBi" id="77nuVWJ0MVT" role="2Oq$k0">
                       <node concept="3Tsc0h" id="77nuVWJ0MVU" role="2OqNvi">
-                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+                        <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
                       </node>
                       <node concept="37vLTw" id="77nuVWJ0MVV" role="2Oq$k0">
                         <ref role="3cqZAo" node="77nuVWJ0D8F" resolve="bc" />
@@ -347,7 +348,7 @@
                   <node concept="1uHKPH" id="77nuVWJ0MVY" role="2OqNvi" />
                 </node>
                 <node concept="3TrEf2" id="77nuVWJ0NgT" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" />
+                  <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" resolve="testStrategy" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="77nuVWJ0MVZ" role="2OqNvi">
