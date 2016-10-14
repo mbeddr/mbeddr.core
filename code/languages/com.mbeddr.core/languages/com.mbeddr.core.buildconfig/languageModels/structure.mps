@@ -176,6 +176,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="51p726VIDRb" resolve="ExternalBuild" />
     </node>
+    <node concept="1TJgyj" id="7FzSIra3d6g" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="externalIncludes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7FzSIra3d5s" resolve="ExternalInclude" />
+    </node>
     <node concept="PrWs8" id="1YUFCeFKT9R" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -478,6 +484,22 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="51p726VIDRd" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FzSIra3d5s">
+    <property role="TrG5h" value="ExternalInclude" />
+    <property role="R4oN_" value="a folder that contains an external files to include when building " />
+    <property role="3GE5qa" value="binary" />
+    <property role="1pbfSe" value="1156625474" />
+    <property role="34LRSv" value="external include" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7FzSIra3d5t" role="1TKVEl">
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7FzSIra3d5u" role="1TKVEl">
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
