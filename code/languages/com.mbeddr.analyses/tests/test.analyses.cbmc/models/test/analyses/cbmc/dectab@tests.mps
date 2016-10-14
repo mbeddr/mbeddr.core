@@ -554,7 +554,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2S1OXleRtky" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 2) - activation - (#col: 2, #row: 0)" />
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (#col: 0, #row: 2)" />
               </node>
             </node>
           </node>
