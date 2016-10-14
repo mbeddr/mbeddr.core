@@ -470,10 +470,7 @@
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -3927,8 +3924,8 @@
                     <node concept="2qgKlT" id="6hLPhdD0qiI" role="2OqNvi">
                       <ref role="37wK5l" to="qd6m:4rTlJCHVgHO" resolve="initNodeID" />
                       <node concept="1PxgMI" id="7Ytpp3jt7ic" role="37wK5m">
-                        <ref role="1PxNhF" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
-                        <node concept="37vLTw" id="7Ytpp3jt7id" role="1PxMeX">
+                        <ref role="1m5ApE" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
+                        <node concept="37vLTw" id="7Ytpp3jt7id" role="1m5AlR">
                           <ref role="3cqZAo" node="7Ytpp3jt4Ym" resolve="original" />
                         </node>
                       </node>

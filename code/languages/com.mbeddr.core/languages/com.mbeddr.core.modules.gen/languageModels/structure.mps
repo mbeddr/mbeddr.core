@@ -32,7 +32,6 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="intConceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -279,14 +278,15 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6iilwRlTjqY">
-    <property role="1pbfSe" value="980913355" />
     <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="AbstractGenModule" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="7246949367815681726" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyi" id="6iilwRlTjqZ" role="1TKVEl">
       <property role="TrG5h" value="fileExtension" />
+      <property role="IQ2nx" value="7246949367815681727" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="6iilwRlTjr8" role="PzmwI">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -415,6 +415,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="commands" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="5649071238716693784" />
       <ref role="20lvS9" node="5ak6HMA0Exx" resolve="Command" />
     </node>
   </node>
