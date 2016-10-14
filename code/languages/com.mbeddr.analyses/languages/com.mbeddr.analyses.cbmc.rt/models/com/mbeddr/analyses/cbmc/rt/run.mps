@@ -189,6 +189,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -9561,7 +9562,7 @@
                     <ref role="2Gs0qQ" node="2AkoYuY2_eQ" resolve="state" />
                   </node>
                   <node concept="liA8E" id="6GZ1x5GjoeT" role="2OqNvi">
-                    <ref role="37wK5l" to="eqhl:1ql_u0$LO1E" resolve="isMajorState" />
+                    <ref role="37wK5l" to="eqhl:1ql_u0$LO1E" resolve="isMajor" />
                   </node>
                 </node>
               </node>
@@ -10807,13 +10808,20 @@
                   <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
                 </node>
                 <node concept="TSZUe" id="7Quig7_PFKn" role="2OqNvi">
-                  <node concept="3cpWs3" id="2JqimxyUnxO" role="25WWJ7">
-                    <node concept="37vLTw" id="2JqimxyUod5" role="3uHU7w">
-                      <ref role="3cqZAo" node="7GloF9XT2HS" resolve="firstLine" />
-                    </node>
-                    <node concept="Xl_RD" id="7Quig7_PFMN" role="3uHU7B">
-                      <property role="Xl_RC" value="cbmc version check:&lt;b&gt;&lt;font color=red&gt;FAIL&lt;/font&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;expected CBMC version 5.3, 5.4 or 5.5 but was " />
-                    </node>
+                  <node concept="Xl_RD" id="7Quig7_PFMN" role="25WWJ7">
+                    <property role="Xl_RC" value="cbmc version check:&lt;b&gt;&lt;font color=red&gt;&amp;nbsp;FAIL&lt;/font&gt;&lt;/b&gt;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7Pk2mb7MhRo" role="3cqZAp">
+              <node concept="2OqwBi" id="7Pk2mb7MiPU" role="3clFbG">
+                <node concept="37vLTw" id="7Pk2mb7MhRm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
+                </node>
+                <node concept="TSZUe" id="7Pk2mb7Mk7L" role="2OqNvi">
+                  <node concept="Xl_RD" id="7Pk2mb7MkhW" role="25WWJ7">
+                    <property role="Xl_RC" value="expected CBMC version 5.3, 5.4 or 5.5 but" />
                   </node>
                 </node>
               </node>
@@ -10824,12 +10832,20 @@
                   <ref role="3cqZAo" node="7Quig7_Pyja" resolve="messages" />
                 </node>
                 <node concept="TSZUe" id="7Quig7_Rpgn" role="2OqNvi">
-                  <node concept="3cpWs3" id="7Quig7_RpuW" role="25WWJ7">
-                    <node concept="37vLTw" id="7Quig7_Rpyd" role="3uHU7w">
-                      <ref role="3cqZAo" node="7GloF9XT2HS" resolve="firstLine" />
+                  <node concept="3cpWs3" id="7Pk2mb7NbTz" role="25WWJ7">
+                    <node concept="Xl_RD" id="7Pk2mb7Nc93" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
                     </node>
-                    <node concept="Xl_RD" id="7Quig7_RTTy" role="3uHU7B">
-                      <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'cbmc --version' returned: " />
+                    <node concept="3cpWs3" id="7Quig7_RpuW" role="3uHU7B">
+                      <node concept="Xl_RD" id="7Quig7_RTTy" role="3uHU7B">
+                        <property role="Xl_RC" value="'cbmc --version' returned: '" />
+                      </node>
+                      <node concept="2OqwBi" id="7Pk2mb7NxAN" role="3uHU7w">
+                        <node concept="37vLTw" id="7Quig7_Rpyd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7GloF9XT2HS" resolve="firstLine" />
+                        </node>
+                        <node concept="17S1cR" id="7Pk2mb7NzDa" role="2OqNvi" />
+                      </node>
                     </node>
                   </node>
                 </node>
