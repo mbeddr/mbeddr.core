@@ -236,7 +236,7 @@
                   <node concept="3clFbS" id="7NbQ1Or_Hf9" role="2LFqv$">
                     <node concept="3cpWs8" id="7NbQ1OrA1If" role="3cqZAp">
                       <node concept="3cpWsn" id="7NbQ1OrA1Ig" role="3cpWs9">
-                        <property role="TrG5h" value="notInvisible" />
+                        <property role="TrG5h" value="notInvisibleStatementList" />
                         <node concept="10P_77" id="7NbQ1OrA1HV" role="1tU5fm" />
                         <node concept="3fqX7Q" id="7NbQ1OrA1Ih" role="33vP2m">
                           <node concept="1eOMI4" id="7NbQ1OrA1Ii" role="3fr31v">
@@ -272,7 +272,7 @@
                         <node concept="1bpajm" id="7NbQ1Or_Hfa" role="3cqZAp" />
                       </node>
                       <node concept="37vLTw" id="7NbQ1OrA2YW" role="3clFbw">
-                        <ref role="3cqZAo" node="7NbQ1OrA1Ig" resolve="notInvisible" />
+                        <ref role="3cqZAo" node="7NbQ1OrA1Ig" resolve="notInvisibleStatementList" />
                       </node>
                     </node>
                     <node concept="lc7rE" id="7NbQ1Or_Hfb" role="3cqZAp">
@@ -284,6 +284,11 @@
                     </node>
                     <node concept="3clFbJ" id="7NbQ1Or_W9O" role="3cqZAp">
                       <node concept="3clFbS" id="7NbQ1Or_W9Q" role="3clFbx">
+                        <node concept="3SKdUt" id="7NbQ1OrC5ZA" role="3cqZAp">
+                          <node concept="3SKdUq" id="7NbQ1OrC5ZC" role="3SKWNk">
+                            <property role="3SKdUp" value="the line break will be generated anyway by the contained statement list" />
+                          </node>
+                        </node>
                         <node concept="lc7rE" id="7NbQ1Or_Hfe" role="3cqZAp">
                           <node concept="l8MVK" id="7NbQ1Or_Hff" role="lcghm" />
                         </node>
@@ -302,7 +307,7 @@
                           </node>
                         </node>
                         <node concept="37vLTw" id="7NbQ1OrA1Is" role="3uHU7B">
-                          <ref role="3cqZAo" node="7NbQ1OrA1Ig" resolve="notInvisible" />
+                          <ref role="3cqZAo" node="7NbQ1OrA1Ig" resolve="notInvisibleStatementList" />
                         </node>
                       </node>
                     </node>
@@ -315,6 +320,11 @@
         <node concept="3clFbH" id="7NbQ1Or_HFI" role="3cqZAp" />
         <node concept="3clFbJ" id="7NbQ1Or_IjD" role="3cqZAp">
           <node concept="3clFbS" id="7NbQ1Or_IjF" role="3clFbx">
+            <node concept="3SKdUt" id="7NbQ1OrC7eG" role="3cqZAp">
+              <node concept="3SKdUq" id="7NbQ1OrC7eI" role="3SKWNk">
+                <property role="3SKdUp" value="use indent if the statement list is visible" />
+              </node>
+            </node>
             <node concept="3izx1p" id="7NbQ1Or_JyX" role="3cqZAp">
               <node concept="3clFbS" id="7NbQ1Or_JyZ" role="3izTki">
                 <node concept="3clFbF" id="7NbQ1Or_Jzl" role="3cqZAp">
