@@ -2191,9 +2191,24 @@
       <node concept="3cqZAl" id="3a$gLzvJSIh" role="3clF45" />
       <node concept="3Tmbuc" id="3a$gLzvKkgw" role="1B3o_S" />
       <node concept="3clFbS" id="3a$gLzvJSIj" role="3clF47">
-        <node concept="3clFbF" id="3a$gLzvKnPX" role="3cqZAp">
-          <node concept="1rXfSq" id="3a$gLzvKnPY" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeAllCells():void" resolve="removeAllCells" />
+        <node concept="2Gpval" id="2rPTijxlEb6" role="3cqZAp">
+          <node concept="2GrKxI" id="2rPTijxlEb8" role="2Gsz3X">
+            <property role="TrG5h" value="child" />
+          </node>
+          <node concept="2YIFZM" id="2rPTijxlGFh" role="2GsD0m">
+            <ref role="37wK5l" to="18ew:~IterableUtil.asList(java.lang.Iterable):java.util.List" resolve="asList" />
+            <ref role="1Pybhc" to="18ew:~IterableUtil" resolve="IterableUtil" />
+            <node concept="Xjq3P" id="2rPTijxlHeR" role="37wK5m" />
+          </node>
+          <node concept="3clFbS" id="2rPTijxlEbc" role="2LFqv$">
+            <node concept="3clFbF" id="2rPTijxlIw4" role="3cqZAp">
+              <node concept="1rXfSq" id="2rPTijxlIw3" role="3clFbG">
+                <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
+                <node concept="2GrUjf" id="2rPTijxlJ7n" role="37wK5m">
+                  <ref role="2Gs0qQ" node="2rPTijxlEb8" resolve="child" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3a$gLzvKnPZ" role="3cqZAp">
