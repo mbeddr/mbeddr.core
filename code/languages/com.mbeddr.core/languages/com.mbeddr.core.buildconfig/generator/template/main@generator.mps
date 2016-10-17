@@ -3248,21 +3248,23 @@
       </node>
       <node concept="3O_FaX" id="51p726WtPpy" role="3O_FaS">
         <node concept="3G69iQ" id="51p726WtPpz" role="3G69ia">
-          <property role="3G69iL" value="rm -f $(APP_DIR)/" />
-        </node>
-        <node concept="3G69iQ" id="51p726WtZ3n" role="3G69ia">
-          <property role="3G69iL" value="$(APP_NAME)" />
-          <node concept="17Uvod" id="51p726WtZ$d" role="lGtFl">
+          <property role="3G69iL" value="rm -f $(APP_DIR)/$(APP_NAME)" />
+          <node concept="17Uvod" id="3CFEbWQfnyk" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
             <property role="2qtEX9" value="text" />
-            <node concept="3zFVjK" id="51p726WtZ$g" role="3zH0cK">
-              <node concept="3clFbS" id="51p726WtZ$h" role="2VODD2">
-                <node concept="3clFbF" id="51p726WtZ$n" role="3cqZAp">
-                  <node concept="2OqwBi" id="51p726WtZ$i" role="3clFbG">
-                    <node concept="3TrcHB" id="51p726WtZ$l" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            <node concept="3zFVjK" id="3CFEbWQfnyl" role="3zH0cK">
+              <node concept="3clFbS" id="3CFEbWQfnym" role="2VODD2">
+                <node concept="3clFbF" id="3CFEbWQfnVo" role="3cqZAp">
+                  <node concept="3cpWs3" id="3CFEbWQfoHZ" role="3clFbG">
+                    <node concept="2OqwBi" id="3CFEbWQfoRo" role="3uHU7w">
+                      <node concept="30H73N" id="3CFEbWQfoLQ" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="3CFEbWQfpMA" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
                     </node>
-                    <node concept="30H73N" id="51p726WtZ$m" role="2Oq$k0" />
+                    <node concept="Xl_RD" id="3CFEbWQfp_P" role="3uHU7B">
+                      <property role="Xl_RC" value="rm -f $(APP_DIR)/" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3307,8 +3309,6 @@
         </node>
       </node>
     </node>
-    <node concept="12Nxi1" id="51p726WtOQm" role="12RR68" />
-    <node concept="12Nxi1" id="51p726WtO2p" role="12RR68" />
     <node concept="12Nxi1" id="51p726WtNPV" role="12RR68" />
     <node concept="n94m4" id="51p726WfsRL" role="lGtFl">
       <ref role="n9lRv" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
