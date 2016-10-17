@@ -56,6 +56,7 @@
     <import index="3it5" ref="r:663468b2-7f77-448a-afd3-b1669ce5b4a7(de.itemis.mps.editor.diagram.runtime.plugin)" />
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="jsda" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.dnd(JDK/)" />
+    <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
@@ -16845,6 +16846,13 @@
             <node concept="37vLTw" id="4dus55SHWSu" role="37vLTJ">
               <ref role="3cqZAo" node="4dus55SHWPv" resolve="myAccessor" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2rPTijxgiFq" role="3cqZAp">
+          <node concept="2YIFZM" id="2rPTijxgjOi" role="3clFbG">
+            <ref role="37wK5l" to="qxi4:4U82Y3z24x2" resolve="install" />
+            <ref role="1Pybhc" to="qxi4:3Osd_yxgaDz" resolve="LayoutInterceptor" />
+            <node concept="Xjq3P" id="2rPTijxgkmg" role="37wK5m" />
           </node>
         </node>
         <node concept="1X3_iC" id="5GwePVE4w7V" role="lGtFl">

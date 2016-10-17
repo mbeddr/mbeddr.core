@@ -20,6 +20,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="ycmz" ref="r:af3e1a90-527b-4262-8066-857208a4f4fb(de.slisson.mps.reflection.runtime)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
+    <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" implicit="true" />
   </imports>
   <registry>
@@ -1584,6 +1585,15 @@
         </node>
         <node concept="3clFbJ" id="5M2_W$sbtP7" role="3cqZAp">
           <node concept="3clFbS" id="5M2_W$sbtP9" role="3clFbx">
+            <node concept="3clFbF" id="2rPTijxiJU7" role="3cqZAp">
+              <node concept="2YIFZM" id="2rPTijxiK10" role="3clFbG">
+                <ref role="37wK5l" to="qxi4:4U82Y3z24x2" resolve="install" />
+                <ref role="1Pybhc" to="qxi4:3Osd_yxgaDz" resolve="LayoutInterceptor" />
+                <node concept="37vLTw" id="2rPTijxiK39" role="37wK5m">
+                  <ref role="3cqZAo" node="5M2_W$sb5Ap" resolve="cell" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="5M2_W$sb7d8" role="3cqZAp">
               <node concept="3cpWsn" id="5M2_W$sb7db" role="3cpWs9">
                 <property role="TrG5h" value="x" />
