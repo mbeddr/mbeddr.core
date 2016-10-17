@@ -499,10 +499,6 @@
       <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="7FzSIra3d5u" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
 </model>
 

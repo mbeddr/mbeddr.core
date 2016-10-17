@@ -270,7 +270,7 @@
       <node concept="3clFbS" id="2MbfxrZI1Kf" role="2VODD2">
         <node concept="3clFbF" id="2MbfxrZI1Ki" role="3cqZAp">
           <node concept="Xl_RD" id="2MbfxrZI1Kj" role="3clFbG">
-            <property role="Xl_RC" value="Add External Module(s)" />
+            <property role="Xl_RC" value="Add External Library(ies)" />
           </node>
         </node>
       </node>

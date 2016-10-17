@@ -1637,15 +1637,6 @@
         <property role="3F0ifm" value="folder:" />
       </node>
       <node concept="l2Vlx" id="7FzSIra3d5M" role="2iSdaV" />
-      <node concept="3F0ifn" id="7FzSIra3d5N" role="3EZMnx">
-        <property role="3F0ifm" value="name" />
-      </node>
-      <node concept="3F0A7n" id="7FzSIra3d5O" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:7FzSIra3d5u" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="7FzSIra3d5P" role="3EZMnx">
-        <property role="3F0ifm" value="in path" />
-      </node>
       <node concept="3F0A7n" id="7FzSIra3d5Q" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="51wr:7FzSIra3d5t" resolve="path" />
