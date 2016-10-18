@@ -1212,14 +1212,18 @@
                   <node concept="3clFbS" id="7itveDJMHKh" role="2VODD2">
                     <node concept="3clFbF" id="7itveDJMHKi" role="3cqZAp">
                       <node concept="3cpWs3" id="7itveDJMHKj" role="3clFbG">
-                        <node concept="2OqwBi" id="7itveDJMHKk" role="3uHU7w">
-                          <node concept="30H73N" id="7itveDJMHKl" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="7itveDJMHKm" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
                         <node concept="Xl_RD" id="7itveDJMHKn" role="3uHU7B">
                           <property role="Xl_RC" value="spin_" />
+                        </node>
+                        <node concept="2YIFZM" id="5LAXvy1z$LQ" role="3uHU7w">
+                          <ref role="37wK5l" to="pr99:3tIDuP5tlTl" resolve="panExecutableName" />
+                          <ref role="1Pybhc" to="pr99:3tIDuP5tlRy" resolve="SpinNamingUtils" />
+                          <node concept="2OqwBi" id="5LAXvy1z$LR" role="37wK5m">
+                            <node concept="30H73N" id="5LAXvy1z$LS" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="5LAXvy1z_py" role="2OqNvi">
+                              <ref role="37wK5l" to="6n5e:7Rf0$0HCPaz" resolve="getPromelaModel" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
