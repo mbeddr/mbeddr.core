@@ -155,6 +155,7 @@
         <child id="134774857084558329" name="treeChildren" index="2SWKFX" />
         <child id="8433232831282980026" name="outgoingShape" index="15K7wI" />
         <child id="8433232831282980032" name="incomingShape" index="15K7xk" />
+        <child id="2807401889305002572" name="layout" index="37fetC" />
         <child id="5587067268292708715" name="insertHandlers" index="1Vhs_Z" />
         <child id="8877288515759655537" name="deleteHandler" index="1XG3MI" />
         <child id="8877288515760225002" name="insertHandler" index="1XI8KP" />
@@ -165,6 +166,7 @@
       <concept id="8433232831282901106" name="com.mbeddr.mpsutil.treenotation.structure.ShapeParameterDeclaration" flags="ng" index="15NUNA">
         <child id="8433232831282901107" name="type" index="15NUNB" />
       </concept>
+      <concept id="2807401889304965326" name="com.mbeddr.mpsutil.treenotation.structure.CompactTreeLayout" flags="ng" index="37fpnE" />
       <concept id="8796347991408045445" name="com.mbeddr.mpsutil.treenotation.structure.IncomingShapeStyle" flags="lg" index="3uywDx">
         <child id="8796347991408045465" name="shape" index="3uywDX" />
       </concept>
@@ -378,6 +380,23 @@
                 <node concept="3F0ifn" id="7uOgiTdyKf" role="3EZMnx">
                   <property role="3F0ifm" value="child2d" />
                 </node>
+                <node concept="2SWKgc" id="2rPTijxS$Au" role="3EZMnx">
+                  <node concept="3F0ifn" id="2rPTijxS$AR" role="2SWKFN">
+                    <property role="3F0ifm" value="child2e" />
+                  </node>
+                  <node concept="3EZMnI" id="2rPTijxS$AU" role="2SWKFX">
+                    <node concept="2iRfu4" id="2rPTijxS$AV" role="2iSdaV" />
+                    <node concept="VPM3Z" id="2rPTijxS$AW" role="3F10Kt">
+                      <property role="VOm3f" value="false" />
+                    </node>
+                    <node concept="3F0ifn" id="2rPTijxS$B0" role="3EZMnx">
+                      <property role="3F0ifm" value="child2e1" />
+                    </node>
+                    <node concept="3F0ifn" id="2rPTijxS$B2" role="3EZMnx">
+                      <property role="3F0ifm" value="child2e2" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="2iRfu4" id="7uOgiTdyKg" role="2iSdaV" />
                 <node concept="VPM3Z" id="7uOgiTdyKh" role="3F10Kt">
                   <property role="VOm3f" value="false" />
@@ -392,6 +411,7 @@
                   <property role="$nhwW" value="20.0" />
                 </node>
               </node>
+              <node concept="37fpnE" id="2rPTijxRT8h" role="37fetC" />
             </node>
             <node concept="VPXOz" id="2rPTijxlkUo" role="3F10Kt">
               <property role="VOm3f" value="true" />

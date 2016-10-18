@@ -16,6 +16,8 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -43,6 +45,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -101,6 +104,12 @@
       <property role="20kJfa" value="incomingShape" />
       <property role="IQ2ns" value="8433232831282980032" />
       <ref role="20lvS9" node="7GMtHW6DFdY" resolve="IShape" />
+    </node>
+    <node concept="1TJgyj" id="2rPTijxMg9c" role="1TKVEi">
+      <property role="IQ2ns" value="2807401889305002572" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="layout" />
+      <ref role="20lvS9" node="2rPTijxM72N" resolve="ITreeLayout" />
     </node>
   </node>
   <node concept="1TIwiD" id="7GMtHW6w$oP">
@@ -293,6 +302,43 @@
     <node concept="PrWs8" id="4Q9g1gQOGvk" role="PzmwI">
       <ref role="PrY4T" node="4Q9g1gQN5nv" resolve="IInsertHandler" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2rPTijxM72N">
+    <property role="EcuMT" value="2807401889304965299" />
+    <property role="TrG5h" value="ITreeLayout" />
+    <property role="3GE5qa" value="layout" />
+  </node>
+  <node concept="1TIwiD" id="2rPTijxM72O">
+    <property role="EcuMT" value="2807401889304965300" />
+    <property role="TrG5h" value="AbstractTreeLayout" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="layout" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2rPTijxM73a" role="PzmwI">
+      <ref role="PrY4T" node="2rPTijxM72N" resolve="ITreeLayout" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rPTijxM73c">
+    <property role="EcuMT" value="2807401889304965324" />
+    <property role="TrG5h" value="DefaultTreeLayout" />
+    <property role="34LRSv" value="default" />
+    <property role="3GE5qa" value="layout" />
+    <ref role="1TJDcQ" node="2rPTijxM72O" resolve="AbstractTreeLayout" />
+  </node>
+  <node concept="1TIwiD" id="2rPTijxM73d">
+    <property role="EcuMT" value="2807401889304965325" />
+    <property role="3GE5qa" value="layout" />
+    <property role="TrG5h" value="OrthogonalTreeLayout" />
+    <property role="34LRSv" value="orthogonal" />
+    <ref role="1TJDcQ" node="2rPTijxM72O" resolve="AbstractTreeLayout" />
+  </node>
+  <node concept="1TIwiD" id="2rPTijxM73e">
+    <property role="EcuMT" value="2807401889304965326" />
+    <property role="3GE5qa" value="layout" />
+    <property role="TrG5h" value="CompactTreeLayout" />
+    <property role="34LRSv" value="compact" />
+    <ref role="1TJDcQ" node="2rPTijxM72O" resolve="AbstractTreeLayout" />
   </node>
 </model>
 
