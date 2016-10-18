@@ -94,6 +94,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -176,6 +177,21 @@
             <ref role="1NtTu8" to="hfvq:7GMtHW6yJFE" resolve="insertHandler" />
             <node concept="VPXOz" id="7GMtHW6yJFQ" role="3F10Kt">
               <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="pkWqt" id="2rPTijxvxIP" role="pqm2j">
+            <node concept="3clFbS" id="2rPTijxvxIQ" role="2VODD2">
+              <node concept="3clFbF" id="2rPTijxvxQ5" role="3cqZAp">
+                <node concept="2OqwBi" id="2rPTijxvz5y" role="3clFbG">
+                  <node concept="2OqwBi" id="2rPTijxvy2C" role="2Oq$k0">
+                    <node concept="pncrf" id="2rPTijxvxQ4" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2rPTijxvy_1" role="2OqNvi">
+                      <ref role="3Tt5mk" to="hfvq:7GMtHW6yJFE" resolve="insertHandler" />
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="2rPTijxvzSU" role="2OqNvi" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

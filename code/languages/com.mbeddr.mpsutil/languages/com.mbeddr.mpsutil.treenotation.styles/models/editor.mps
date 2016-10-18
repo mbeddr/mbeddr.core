@@ -109,6 +109,13 @@
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
+    <node concept="3t5Usi" id="2rPTijxl$1X" role="V601i">
+      <property role="TrG5h" value="tree-transparent-collection" />
+      <node concept="10P_77" id="2rPTijxl$3d" role="3t5Oan" />
+      <node concept="3clFbT" id="2rPTijxl$3j" role="3t49C2">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="7uOgiTdC3M">
     <property role="TrG5h" value="Dummy" />
