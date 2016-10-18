@@ -100,7 +100,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
@@ -248,42 +247,6 @@
               <node concept="34jXtK" id="1kjPA_yjPnP" role="2OqNvi">
                 <node concept="3cmrfG" id="1kjPA_yjQmR" role="25WWJ7">
                   <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1kjPA_yjQoX" role="3cqZAp">
-          <node concept="3clFbS" id="1kjPA_yjQoZ" role="3clFbx">
-            <node concept="3vwNmj" id="1kjPA_yjUJi" role="3cqZAp">
-              <node concept="3clFbT" id="1kjPA_yjUJq" role="3vwVQn">
-                <property role="3clFbU" value="false" />
-              </node>
-              <node concept="3_1$Yv" id="1kjPA_yjUJI" role="3_9lra">
-                <node concept="Xl_RD" id="1kjPA_yjUJP" role="3_1BAH">
-                  <property role="Xl_RC" value="Both results should be PROPERTY_FAILS" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="1kjPA_yjSny" role="3clFbw">
-            <node concept="1eOMI4" id="1kjPA_yjSn$" role="3fr31v">
-              <node concept="1Wc70l" id="1kjPA_yjUtp" role="1eOMHV">
-                <node concept="2OqwBi" id="1kjPA_yjSSJ" role="3uHU7B">
-                  <node concept="37vLTw" id="1kjPA_yjSRA" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1kjPA_yjMvW" resolve="r0" />
-                  </node>
-                  <node concept="liA8E" id="1kjPA_yk1zZ" role="2OqNvi">
-                    <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1kjPA_yjUzi" role="3uHU7w">
-                  <node concept="37vLTw" id="1kjPA_yjUEq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1kjPA_yjPnL" resolve="r1" />
-                  </node>
-                  <node concept="liA8E" id="1kjPA_yk1Zn" role="2OqNvi">
-                    <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-                  </node>
                 </node>
               </node>
             </node>
