@@ -19,8 +19,8 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
-    <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
+    <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="17b818a8-8533-4efe-8f51-f532146ae66b" name="com.mbeddr.analyses.spin.c">
@@ -241,34 +241,19 @@
       <node concept="30G5F_" id="60FTbDh$RNs" role="30HLyM">
         <node concept="3clFbS" id="60FTbDh$RNt" role="2VODD2">
           <node concept="3clFbF" id="60FTbDh$S0f" role="3cqZAp">
-            <node concept="22lmx$" id="60FTbDh$S0g" role="3clFbG">
-              <node concept="2OqwBi" id="60FTbDh$S0h" role="3uHU7B">
-                <node concept="2OqwBi" id="60FTbDh$S0i" role="2Oq$k0">
-                  <node concept="30H73N" id="60FTbDh$S0j" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="60FTbDh$S0k" role="2OqNvi">
-                    <node concept="1xMEDy" id="60FTbDh$S0l" role="1xVPHs">
-                      <node concept="chp4Y" id="60FTbDh$S0m" role="ri$Ld">
-                        <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
-                      </node>
-                    </node>
-                    <node concept="1xIGOp" id="60FTbDh$S0n" role="1xVPHs" />
-                  </node>
-                </node>
-                <node concept="3w_OXm" id="60FTbDh$S0o" role="2OqNvi" />
-              </node>
-              <node concept="2OqwBi" id="60FTbDh$S0p" role="3uHU7w">
-                <node concept="2OqwBi" id="60FTbDh$S0q" role="2Oq$k0">
-                  <node concept="30H73N" id="60FTbDh$S0r" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="60FTbDh$S0s" role="2OqNvi">
-                    <node concept="1xMEDy" id="60FTbDh$S0t" role="1xVPHs">
-                      <node concept="chp4Y" id="60FTbDh$S0u" role="ri$Ld">
-                        <ref role="cht4Q" to="velc:6rTOrQxid2u" resolve="CCodeStmt" />
-                      </node>
+            <node concept="2OqwBi" id="60FTbDh$S0h" role="3clFbG">
+              <node concept="2OqwBi" id="60FTbDh$S0i" role="2Oq$k0">
+                <node concept="30H73N" id="60FTbDh$S0j" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="60FTbDh$S0k" role="2OqNvi">
+                  <node concept="1xMEDy" id="60FTbDh$S0l" role="1xVPHs">
+                    <node concept="chp4Y" id="60FTbDh$S0m" role="ri$Ld">
+                      <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="60FTbDh$S0n" role="1xVPHs" />
                 </node>
-                <node concept="3x8VRR" id="60FTbDh$S0v" role="2OqNvi" />
               </node>
+              <node concept="3w_OXm" id="60FTbDh$S0o" role="2OqNvi" />
             </node>
           </node>
         </node>
