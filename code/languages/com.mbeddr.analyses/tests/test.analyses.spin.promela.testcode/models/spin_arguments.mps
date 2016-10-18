@@ -169,7 +169,7 @@
   <node concept="2v9HqL" id="5yxSA$IR30z">
     <node concept="1gr5cj" id="5yxSA$IR30G" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="exceed_max_depth" />
+      <property role="TrG5h" value="pan_exceed_max_depth" />
       <node concept="2v9HqM" id="5yxSA$IR3gC" role="2eOfOg">
         <ref role="2v9HqP" node="5yxSA$IR30J" resolve="exceed_max_depth" />
       </node>
@@ -182,7 +182,7 @@
     </node>
     <node concept="1gr5cj" id="5yxSA$IS_7l" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="does_not_exceed_max_depth" />
+      <property role="TrG5h" value="pan_does_not_exceed_max_depth" />
       <node concept="2v9HqM" id="5yxSA$IS_7x" role="2eOfOg">
         <ref role="2v9HqP" node="5yxSA$ISx6I" resolve="does_not_exceed_max_depth" />
       </node>

@@ -273,14 +273,14 @@
   <node concept="2v9HqL" id="7Rf0$0HKRGO">
     <node concept="1gr5cj" id="7Rf0$0HKRGP" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="do_test" />
+      <property role="TrG5h" value="pan_do_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZ_" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRK1" resolve="do_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGR" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="hello" />
+      <property role="TrG5h" value="pan_hello" />
       <node concept="2v9HqM" id="7Rf0$0HKRZI" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRGp" resolve="hello" />
       </node>
@@ -293,14 +293,14 @@
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGT" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="if_test" />
+      <property role="TrG5h" value="pan_if_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZF" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRJt" resolve="if_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="Rd$2EC649N" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="multiple_choice_test" />
+      <property role="TrG5h" value="pan_multiple_choice_test" />
       <node concept="2v9HqM" id="Rd$2EC649Y" role="2eOfOg">
         <ref role="2v9HqP" node="Rd$2EC61sj" resolve="multiple_choice_test" />
       </node>
