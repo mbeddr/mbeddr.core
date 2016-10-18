@@ -147,8 +147,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -284,59 +294,71 @@
             <property role="3SKdUp" value="UNCLEAR why we need to run make from here and why make is not run as part of the building process" />
           </node>
         </node>
-        <node concept="3cpWs8" id="1wu5Hv6jvCw" role="3cqZAp">
-          <node concept="3cpWsn" id="1wu5Hv6jvCx" role="3cpWs9">
-            <property role="TrG5h" value="trb1" />
-            <node concept="3uibUv" id="1wu5Hv6jvCy" role="1tU5fm">
-              <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
-            </node>
-            <node concept="2ShNRf" id="1wu5Hv6jvCz" role="33vP2m">
-              <node concept="HV5vD" id="1wu5Hv6jvC$" role="2ShVmc">
-                <ref role="HV5vE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
+        <node concept="1X3_iC" id="5LAXvy1$OWG" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="1wu5Hv6jvCw" role="8Wnug">
+            <node concept="3cpWsn" id="1wu5Hv6jvCx" role="3cpWs9">
+              <property role="TrG5h" value="trb1" />
+              <node concept="3uibUv" id="1wu5Hv6jvCy" role="1tU5fm">
+                <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1wu5Hv6jvC_" role="3cqZAp">
-          <node concept="2OqwBi" id="1wu5Hv6jvCA" role="3clFbG">
-            <node concept="37vLTw" id="1wu5Hv6jvCB" role="2Oq$k0">
-              <ref role="3cqZAo" node="1wu5Hv6jvCx" resolve="trb1" />
-            </node>
-            <node concept="liA8E" id="1wu5Hv6jvCC" role="2OqNvi">
-              <ref role="37wK5l" to="8e9v:4CtHBqN5w8B" resolve="setProgress" />
-              <node concept="2ShNRf" id="1wu5Hv6jvCD" role="37wK5m">
-                <node concept="1pGfFk" id="1wu5Hv6jvCE" role="2ShVmc">
-                  <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+              <node concept="2ShNRf" id="1wu5Hv6jvCz" role="33vP2m">
+                <node concept="HV5vD" id="1wu5Hv6jvC$" role="2ShVmc">
+                  <ref role="HV5vE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1wu5Hv6jvCF" role="3cqZAp">
-          <node concept="2OqwBi" id="1wu5Hv6jvCG" role="3clFbG">
-            <node concept="37vLTw" id="1wu5Hv6jvCH" role="2Oq$k0">
-              <ref role="3cqZAo" node="1wu5Hv6jvCx" resolve="trb1" />
+        <node concept="1X3_iC" id="5LAXvy1$Pgl" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="1wu5Hv6jvC_" role="8Wnug">
+            <node concept="2OqwBi" id="1wu5Hv6jvCA" role="3clFbG">
+              <node concept="37vLTw" id="1wu5Hv6jvCB" role="2Oq$k0">
+                <ref role="3cqZAo" node="1wu5Hv6jvCx" resolve="trb1" />
+              </node>
+              <node concept="liA8E" id="1wu5Hv6jvCC" role="2OqNvi">
+                <ref role="37wK5l" to="8e9v:4CtHBqN5w8B" resolve="setProgress" />
+                <node concept="2ShNRf" id="5LAXvy1$L1v" role="37wK5m">
+                  <node concept="1pGfFk" id="5LAXvy1$Mde" role="2ShVmc">
+                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="1wu5Hv6jvCI" role="2OqNvi">
-              <ref role="37wK5l" to="8e9v:3L_Vuqbn5oV" resolve="runTool" />
-              <node concept="2ShNRf" id="HmUOIG_ayH" role="37wK5m">
-                <node concept="2Jqq0_" id="HmUOIG_ayI" role="2ShVmc">
-                  <node concept="17QB3L" id="HmUOIG_ayJ" role="HW$YZ" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="5LAXvy1$Pzc" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="1wu5Hv6jvCF" role="8Wnug">
+            <node concept="2OqwBi" id="1wu5Hv6jvCG" role="3clFbG">
+              <node concept="37vLTw" id="1wu5Hv6jvCH" role="2Oq$k0">
+                <ref role="3cqZAo" node="1wu5Hv6jvCx" resolve="trb1" />
+              </node>
+              <node concept="liA8E" id="1wu5Hv6jvCI" role="2OqNvi">
+                <ref role="37wK5l" to="8e9v:3L_Vuqbn5oV" resolve="runTool" />
+                <node concept="2ShNRf" id="HmUOIG_ayH" role="37wK5m">
+                  <node concept="2Jqq0_" id="HmUOIG_ayI" role="2ShVmc">
+                    <node concept="17QB3L" id="HmUOIG_ayJ" role="HW$YZ" />
+                  </node>
                 </node>
-              </node>
-              <node concept="Xl_RD" id="1wu5Hv6jvQQ" role="37wK5m">
-                <property role="Xl_RC" value="make" />
-              </node>
-              <node concept="2ShNRf" id="7Rf0$0HT$pj" role="37wK5m">
-                <node concept="2Jqq0_" id="7Rf0$0HT$A8" role="2ShVmc">
-                  <node concept="17QB3L" id="7Rf0$0HT$J0" role="HW$YZ" />
+                <node concept="Xl_RD" id="1wu5Hv6jvQQ" role="37wK5m">
+                  <property role="Xl_RC" value="make" />
                 </node>
-              </node>
-              <node concept="2ShNRf" id="1wu5Hv6jyQM" role="37wK5m">
-                <node concept="1pGfFk" id="1wu5Hv6jz3h" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="37vLTw" id="1wu5Hv6jz65" role="37wK5m">
-                    <ref role="3cqZAo" node="4XbM$YH6pfB" resolve="verificationDirectory" />
+                <node concept="2ShNRf" id="7Rf0$0HT$pj" role="37wK5m">
+                  <node concept="2Jqq0_" id="7Rf0$0HT$A8" role="2ShVmc">
+                    <node concept="17QB3L" id="7Rf0$0HT$J0" role="HW$YZ" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="1wu5Hv6jyQM" role="37wK5m">
+                  <node concept="1pGfFk" id="1wu5Hv6jz3h" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="1wu5Hv6jz65" role="37wK5m">
+                      <ref role="3cqZAo" node="4XbM$YH6pfB" resolve="verificationDirectory" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -364,10 +386,8 @@
             </node>
             <node concept="liA8E" id="4kcU3YrmoCF" role="2OqNvi">
               <ref role="37wK5l" to="8e9v:4CtHBqN5w8B" resolve="setProgress" />
-              <node concept="2ShNRf" id="4kcU3YrmoEp" role="37wK5m">
-                <node concept="1pGfFk" id="4kcU3YrmpjB" role="2ShVmc">
-                  <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
-                </node>
+              <node concept="37vLTw" id="5LAXvy1$Kq4" role="37wK5m">
+                <ref role="3cqZAo" node="5LAXvy1$am4" resolve="pi" />
               </node>
             </node>
           </node>
@@ -416,6 +436,12 @@
         <property role="TrG5h" value="config" />
         <node concept="3Tqbb2" id="1wu5Hv6fvDp" role="1tU5fm">
           <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5LAXvy1$am4" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="5LAXvy1$aCD" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
     </node>
