@@ -15,7 +15,6 @@
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="pr99" ref="r:d360eb14-6c2a-48bb-8591-1dfcadaf9f6e(com.mbeddr.analyses.spin.promela.rt.utils)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -485,12 +484,11 @@
                         <property role="Xl_RC" value="/" />
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="HmUOIG_5al" role="3uHU7w">
-                      <node concept="37vLTw" id="HmUOIG_5am" role="2Oq$k0">
+                    <node concept="2YIFZM" id="71901EGEdWv" role="3uHU7w">
+                      <ref role="37wK5l" to="pr99:3tIDuP5tlTl" resolve="panExecutableName" />
+                      <ref role="1Pybhc" to="pr99:3tIDuP5tlRy" resolve="SpinNamingUtils" />
+                      <node concept="37vLTw" id="71901EGEdWw" role="37wK5m">
                         <ref role="3cqZAo" node="HmUOIG_5bB" resolve="pm" />
-                      </node>
-                      <node concept="3TrcHB" id="HmUOIG_5an" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
                   </node>
