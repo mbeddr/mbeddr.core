@@ -451,6 +451,9 @@
               <node concept="37vLTw" id="7Rf0$0HT7bj" role="37wK5m">
                 <ref role="3cqZAo" node="7Rf0$0HT72Z" resolve="trail" />
               </node>
+              <node concept="37vLTw" id="71901EGGT94" role="37wK5m">
+                <ref role="3cqZAo" node="71901EGGT2s" resolve="witness" />
+              </node>
               <node concept="37vLTw" id="4kcU3Yrmw8h" role="37wK5m">
                 <ref role="3cqZAo" node="4kcU3Yrmw2b" resolve="err" />
               </node>
@@ -465,6 +468,10 @@
       <node concept="37vLTG" id="7Rf0$0HT72Z" role="3clF46">
         <property role="TrG5h" value="trail" />
         <node concept="17QB3L" id="7Rf0$0HT7b0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="71901EGGT2s" role="3clF46">
+        <property role="TrG5h" value="witness" />
+        <node concept="17QB3L" id="71901EGGT7x" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="3Ymokd9FfxU" role="3clF46">
         <property role="TrG5h" value="res" />
@@ -643,6 +650,14 @@
                   <ref role="2Oxat5" to="5do7:7Rf0$0HT2cv" resolve="trailOutput" />
                 </node>
               </node>
+              <node concept="2OqwBi" id="71901EGHXOR" role="2XxRq1">
+                <node concept="37vLTw" id="71901EGHXuQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
+                </node>
+                <node concept="liA8E" id="71901EGI4VH" role="2OqNvi">
+                  <ref role="37wK5l" to="5do7:71901EGHZ_j" resolve="getWhiteness" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="1wu5Hv6fFZl" role="2XxRq1">
                 <node concept="37vLTw" id="7XCY$_raVt5" role="2Oq$k0">
                   <ref role="3cqZAo" node="7XCY$_raV9g" resolve="rr" />
@@ -769,6 +784,9 @@
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="Xl_RD" id="1wu5Hv6fM6R" role="2XxRq1">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="Xl_RD" id="71901EGGTuA" role="2XxRq1">
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="Xl_RD" id="1wu5Hv6fM8h" role="2XxRq1">
