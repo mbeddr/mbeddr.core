@@ -16,6 +16,7 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -84,6 +85,7 @@
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -1281,9 +1283,8 @@
       <node concept="3F0ifn" id="4aYGoLbxeFQ" role="3EZMnx">
         <property role="3F0ifm" value="in path" />
       </node>
-      <node concept="3F0A7n" id="4aYGoLbxeFS" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="51wr:4aYGoLbxbUX" resolve="path" />
+      <node concept="3F1sOY" id="BSUXCED_ks" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:BSUXCECS57" />
       </node>
     </node>
   </node>
@@ -1600,9 +1601,8 @@
       <node concept="3F0ifn" id="51p726V_Pwn" role="3EZMnx">
         <property role="3F0ifm" value="in path" />
       </node>
-      <node concept="3F0A7n" id="51p726V_Pwo" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="51wr:51p726V_PmL" resolve="path" />
+      <node concept="3F1sOY" id="BSUXCEykcc" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:BSUXCEwXo$" />
       </node>
     </node>
   </node>
@@ -1623,9 +1623,8 @@
       <node concept="3F0ifn" id="51p726VIDRq" role="3EZMnx">
         <property role="3F0ifm" value="in path" />
       </node>
-      <node concept="3F0A7n" id="51p726VIDRr" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="51wr:51p726VIDRc" resolve="path" />
+      <node concept="3F1sOY" id="BSUXCEykb_" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:BSUXCEwXoF" />
       </node>
     </node>
   </node>
@@ -1636,11 +1635,21 @@
       <node concept="3F0ifn" id="7FzSIra3d5L" role="3EZMnx">
         <property role="3F0ifm" value="folder:" />
       </node>
-      <node concept="l2Vlx" id="7FzSIra3d5M" role="2iSdaV" />
-      <node concept="3F0A7n" id="7FzSIra3d5Q" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="51wr:7FzSIra3d5t" resolve="path" />
+      <node concept="3F1sOY" id="5Syljj4bdmU" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:1EZSCJhF1Yv" />
       </node>
+      <node concept="l2Vlx" id="7FzSIra3d5M" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="BSUXCEzFfC">
+    <property role="3GE5qa" value="binary" />
+    <ref role="1XX52x" to="51wr:BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
+    <node concept="3EZMnI" id="fHu_EjO" role="2wV5jI">
+      <property role="3EZMnw" value="false" />
+      <node concept="3F0A7n" id="BSUXCEzFho" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:f$Xl_Oh" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="i0v3cMo" role="2iSdaV" />
     </node>
   </node>
 </model>
