@@ -1,32 +1,67 @@
+plugins {
+    id "de.undercouch.download" version "3.1.1"
+}
 
-/*task downloadMPS << {
-    ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip", skipexisting:true)
+apply plugin: 'base'
+apply plugin: 'maven-publish'
+
+import de.undercouch.gradle.tasks.download.Download
+
+def mpsDownloadDir = new File(project.buildDir, "MPS-${mpsBuild}")
+def mpsDownloadFile = new File(mpsDownloadDir, "MPS-${mpsBuild}.zip")
+def mpsUnpackedDir = new File(mpsDownloadDir, "MPS " + mpsMajor)
+
+// Downloads MPS from jetbrains.com into ${mpsDownloadFile}
+task downloadMPS(type: Download) {
+    doFirst {
+        if (!mpsDownloadDir.exists()) {
+            ant.mkdir(dir: mpsDownloadDir)
+        }
+    }
+
+    src "http://download.jetbrains.com/mps/${mpsMajor.replace(".", "")}/MPS-${mpsBuild}.zip"
+    dest mpsDownloadFile
+    onlyIfNewer true
 }
 
 task unzipMPS(dependsOn: downloadMPS) {
-    ant.unzip(src: file(rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip"), dest: file(rootProject.projectDir.absolutePath +"/MPS/"))
-    ant.move(file: file(rootProject.projectDir.absolutePath + "/MPS/MPS " + mpsMajor), toFile: file (rootProject.projectDir.absolutePath +"/MPS/" + mbeddrMpsDir))
-}
+    inputs.file mpsDownloadFile
+    outputs.dir mpsDownloadDir
 
-task publishMPS(type: Zip, dependsOn: unzipMPS) {
-    from file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir )
-}*/
-
-task downloadMPS << {
-    if(!file(rootProject.projectDir.absolutePath + "/MPS").exists()) {
-        ant.mkdir(dir: rootProject.projectDir.absolutePath + "/MPS")
+    doLast {
+        ant.unzip src: mpsDownloadFile, dest: mpsDownloadDir
     }
-    ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip", skipexisting:true)
-}
-
-task unzipMPS(dependsOn: downloadMPS) << {
-    ant.unzip(src: file(rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip"), dest: file(rootProject.projectDir.absolutePath +"/MPS"))
-    ant.move(file: file(rootProject.projectDir.absolutePath + "/MPS/MPS " + mpsMajor), toFile: file (rootProject.projectDir.absolutePath +"/MPS/" + mbeddrMpsDir))
 }
 
 task getMPS(dependsOn: unzipMPS) << { }
 
-task publishMPS(type: Zip) << {
-    from file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir )
+// Repackages MPS so that the resulting zip contains the contents of 'MPS 3.<x>' directory of the original MPS zip
+task publishMPS(type: Zip, dependsOn: unzipMPS) {
+    from mpsUnpackedDir
 }
 
+artifacts {
+    'default' publishMPS
+}
+
+publishing {
+    publications {
+        mps(MavenPublication) {
+            groupId 'com.jetbrains'
+            artifactId 'mps'
+            version mpsBuild
+            artifact publishMPS
+        }
+    }
+    repositories {
+        maven {
+            if(project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.getProperty('nexusUsername')
+                    password project.getProperty('nexusPassword')
+                }
+            }
+            url project.releaseRepository
+        }
+    }
+}
