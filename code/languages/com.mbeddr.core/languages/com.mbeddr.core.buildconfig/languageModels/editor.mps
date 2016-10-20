@@ -1589,11 +1589,11 @@
     <ref role="1XX52x" to="51wr:51p726V_PmK" resolve="ExternalSource" />
     <node concept="3EZMnI" id="51p726V_Pwi" role="2wV5jI">
       <node concept="3F0ifn" id="51p726V_Pwj" role="3EZMnx">
-        <property role="3F0ifm" value="folder:" />
+        <property role="3F0ifm" value="compilables" />
       </node>
       <node concept="l2Vlx" id="51p726V_Pwk" role="2iSdaV" />
       <node concept="3F0ifn" id="51p726V_Pwl" role="3EZMnx">
-        <property role="3F0ifm" value="name" />
+        <property role="3F0ifm" value="name pattern" />
       </node>
       <node concept="3F0A7n" id="51p726V_Pwm" role="3EZMnx">
         <ref role="1NtTu8" to="51wr:51p726V_PmM" resolve="name" />
