@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="org.eclipse.incquery.mps.sq#4530729936991344015" uuid="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.inca.fun#4530729936991344015" uuid="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -48,6 +48,7 @@
         <module reference="b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)" version="0" />
         <module reference="bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)" version="0" />
         <module reference="8c9a2720-9d21-4370-a226-819eb3e76e1e(com.mbeddr.mpsutil.inca.fun)" version="0" />
+        <module reference="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)" version="0" />
         <module reference="22355160-0462-42a7-b4f6-c5057d6e9d54(com.mbeddr.mpsutil.inca.fun.runtime)" version="0" />
         <module reference="cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
@@ -61,18 +62,17 @@
         <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-        <module reference="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(org.eclipse.incquery.mps.sq#4530729936991344015)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(org.eclipse.incquery.mps.sq#4530729936991344015)" />
+            <generator generatorUID="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="44851301-9e9d-4b21-9608-3740a9f299a4(org.eclipse.incquery.mps.gp#4530729936991344011)" />
+            <generator generatorUID="44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
