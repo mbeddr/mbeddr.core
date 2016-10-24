@@ -6,6 +6,7 @@
     <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="57416e5b-eba5-4910-ade8-42ad18cb5f4d" name="com.mbeddr.mpsutil.dataflow" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -38,6 +39,9 @@
       <concept id="4943044633101449694" name="jetbrains.mps.lang.dataFlow.analyzers.structure.ConceptCondition" flags="ng" index="3cs84T">
         <reference id="4943044633101738901" name="concept" index="3ctLHM" />
       </concept>
+    </language>
+    <language id="57416e5b-eba5-4910-ade8-42ad18cb5f4d" name="com.mbeddr.mpsutil.dataflow">
+      <concept id="2723386792958854790" name="com.mbeddr.mpsutil.dataflow.structure.WithInterProceduralSupport" flags="ng" index="39xIXt" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -135,7 +139,7 @@
   <node concept="2SFhMz" id="7GQSabAEmEN">
     <property role="TrG5h" value="GenericDotExpressionInitialization_ContextInit" />
     <property role="3GE5qa" value="analyzers.init" />
-    <ref role="3IfaGV" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariablesAnalyzer" />
+    <ref role="3IfaGV" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariables" />
     <node concept="3cs84T" id="7GQSabAEmEO" role="2ZI6Zx">
       <property role="TrG5h" value="expression" />
       <ref role="3ctLHM" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
@@ -151,7 +155,7 @@
                 <ref role="3cqzBQ" node="7GQSabAEmEO" resolve="expression" />
               </node>
               <node concept="3TrEf2" id="2Or5PTUbwW8" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
               </node>
             </node>
             <node concept="1mIQ4w" id="2Or5PTUbwW9" role="2OqNvi">
@@ -180,7 +184,7 @@
                         <ref role="3cqzBQ" node="7GQSabAEmEO" resolve="expression" />
                       </node>
                       <node concept="3TrEf2" id="2Or5PTUbx_m" role="2OqNvi">
-                        <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                        <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                       </node>
                     </node>
                   </node>
@@ -209,7 +213,7 @@
                 <ref role="3cqzBQ" node="7GQSabAEmEO" resolve="expression" />
               </node>
               <node concept="3TrEf2" id="2Or5PTUbxTd" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:66uzewbvZib" />
+                <ref role="3Tt5mk" to="mj1l:66uzewbvZib" resolve="target" />
               </node>
             </node>
             <node concept="1mIQ4w" id="2Or5PTUbxTe" role="2OqNvi">
@@ -234,7 +238,7 @@
                       <ref role="3cqzBQ" node="7GQSabAEmEO" resolve="expression" />
                     </node>
                     <node concept="3TrEf2" id="7BSjx06ZhEj" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                     </node>
                   </node>
                 </node>
@@ -287,7 +291,7 @@
   <node concept="2SFhMz" id="2Or5PTUbvpI">
     <property role="TrG5h" value="GenericDotExpressionInitialization_MessageRead" />
     <property role="3GE5qa" value="analyzers.init" />
-    <ref role="3IfaGV" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariablesAnalyzer" />
+    <ref role="3IfaGV" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariables" />
     <node concept="3cs84T" id="2Or5PTUbvpJ" role="2ZI6Zx">
       <property role="TrG5h" value="expression" />
       <ref role="3ctLHM" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
@@ -309,12 +313,12 @@
                       <ref role="3cqzBQ" node="2Or5PTUbvpJ" resolve="expression" />
                     </node>
                     <node concept="3TrEf2" id="2Or5PTUbCuI" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:66uzewbvZib" />
+                      <ref role="3Tt5mk" to="mj1l:66uzewbvZib" resolve="target" />
                     </node>
                   </node>
                 </node>
                 <node concept="3TrEf2" id="2Or5PTUbCuJ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="jtc1:3XvCV0Kz_Lg" />
+                  <ref role="3Tt5mk" to="jtc1:3XvCV0Kz_Lg" resolve="message" />
                 </node>
               </node>
             </node>
@@ -369,7 +373,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="2Or5PTUbSKy" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                     </node>
                   </node>
                   <node concept="1mIQ4w" id="2Or5PTUbTLh" role="2OqNvi">
@@ -403,7 +407,7 @@
                             </node>
                           </node>
                           <node concept="3TrEf2" id="2Or5PTUbUr3" role="2OqNvi">
-                            <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                            <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                           </node>
                         </node>
                       </node>
@@ -448,7 +452,7 @@
               <ref role="3cqzBQ" node="2Or5PTUbvpJ" resolve="expression" />
             </node>
             <node concept="3TrEf2" id="2Or5PTUb_x9" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:66uzewbvZib" />
+              <ref role="3Tt5mk" to="mj1l:66uzewbvZib" resolve="target" />
             </node>
           </node>
           <node concept="1mIQ4w" id="2Or5PTUb_xa" role="2OqNvi">
@@ -461,5 +465,6 @@
       <node concept="3clFbH" id="2Or5PTUbvqq" role="3cqZAp" />
     </node>
   </node>
+  <node concept="39xIXt" id="4sjR92KayHk" />
 </model>
 
