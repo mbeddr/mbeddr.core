@@ -219,6 +219,7 @@
     <property role="TrG5h" value="ConceptReference" />
     <property role="3GE5qa" value="content" />
     <property role="EcuMT" value="996292992025672789" />
+    <property role="34LRSv" value="&lt;{concept}&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6hXIxNuN5nr" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -235,6 +236,7 @@
     <property role="3GE5qa" value="content" />
     <property role="TrG5h" value="DataTypeReference" />
     <property role="EcuMT" value="7996518772785670958" />
+    <property role="34LRSv" value="&lt;{type}&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6VTlRjrCuOl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -331,7 +333,7 @@
     <property role="TrG5h" value="CountMatchesOperation" />
     <property role="34LRSv" value="countMatches" />
     <property role="EcuMT" value="8650544432877557562" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
     <node concept="1TJgyj" id="7wcU5h3p_Tb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="partialMatch" />
@@ -344,7 +346,7 @@
     <property role="TrG5h" value="GetAllMatchesOperation" />
     <property role="34LRSv" value="getAllMatches" />
     <property role="EcuMT" value="8650544432873189951" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
     <node concept="1TJgyj" id="7wcU5h3e5D6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="partialMatch" />
@@ -357,7 +359,7 @@
     <property role="TrG5h" value="GetAllValuesOperation" />
     <property role="34LRSv" value="getAllValues" />
     <property role="EcuMT" value="8650544432873311946" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
     <node concept="1TJgyj" id="77l4yxHMmfx" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="parameter" />
@@ -377,21 +379,21 @@
     <property role="TrG5h" value="GetParameterNamesOperation" />
     <property role="34LRSv" value="getParameterNames" />
     <property role="EcuMT" value="8650544432877888542" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
   </node>
   <node concept="1TIwiD" id="7wcU5h3qOmk">
     <property role="3GE5qa" value="usage.matcher" />
     <property role="TrG5h" value="GetPatternNameOperation" />
     <property role="34LRSv" value="getPatternName" />
     <property role="EcuMT" value="8650544432877880724" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
   </node>
   <node concept="1TIwiD" id="77l4yxHGkhK">
     <property role="3GE5qa" value="usage.matcher" />
     <property role="TrG5h" value="GetPositionOfPatameterOperation" />
     <property role="34LRSv" value="getPositionOfParameter" />
     <property role="EcuMT" value="8202482261173552240" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
     <node concept="1TJgyj" id="77l4yxHHBCB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="parameter" />
@@ -402,7 +404,7 @@
   </node>
   <node concept="1TIwiD" id="7wcU5h3ekti">
     <property role="3GE5qa" value="usage.matcher" />
-    <property role="TrG5h" value="MPSIncQueryMatcher" />
+    <property role="TrG5h" value="IncaEvaluator" />
     <property role="34LRSv" value="Evaluator" />
     <property role="EcuMT" value="8650544432874604370" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
@@ -416,8 +418,8 @@
   </node>
   <node concept="1TIwiD" id="6hXIxNuWHD0">
     <property role="3GE5qa" value="usage.matcher" />
-    <property role="TrG5h" value="MPSIncQueryMatcherInstantiation" />
-    <property role="R4oN_" value="Pattern Matcher Instantiation" />
+    <property role="TrG5h" value="IncaEvaluatorInstantiation" />
+    <property role="R4oN_" value="Instantiate Inca Evaluator" />
     <property role="34LRSv" value="get evaluator" />
     <property role="EcuMT" value="7241148409043933760" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
@@ -439,7 +441,7 @@
     <property role="3GE5qa" value="usage.matcher" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="MPSIncQueryMatcherOperation" />
+    <property role="TrG5h" value="IncaEvaluatorOperation" />
     <property role="EcuMT" value="7447605944637160349" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6trdyn5bSrQ" role="PzmwI">
@@ -451,7 +453,7 @@
     <property role="TrG5h" value="NewMatchOperation" />
     <property role="34LRSv" value="newMatch" />
     <property role="EcuMT" value="7447605944634188286" />
-    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="1TJDcQ" node="6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
     <node concept="1TJgyj" id="6trdyn515A1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="bindings" />

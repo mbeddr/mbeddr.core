@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
@@ -10,6 +11,24 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
+      </concept>
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -27,6 +46,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -51,18 +71,35 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="1ERTnBTfasH">
-    <property role="TrG5h" value="GPatternModel" />
-    <property role="34LRSv" value="Pattern Model" />
-    <property role="R4oN_" value="Pattern Model with Graph Patterns" />
+    <property role="TrG5h" value="GraphPatternModel" />
+    <property role="34LRSv" value="Graph Pattern Model" />
+    <property role="R4oN_" value="Graph Pattern Model" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="1925259677759481645" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1ERTnBTfasI" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
     </node>
+    <node concept="1irR5M" id="4gUX5LzYKBH" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irR9n" id="4gUX5LzYKBI" role="1irR9h">
+        <node concept="3PKj8D" id="4gUX5LzYKBJ" role="3PKjn_">
+          <property role="3PKj8l" value="eff4f2" />
+        </node>
+        <node concept="3PKj8D" id="4gUX5LzYKBK" role="3PKjnB">
+          <property role="3PKj8l" value="a7aaa9" />
+        </node>
+      </node>
+      <node concept="1irPie" id="4gUX5LzYKBL" role="1irR9h">
+        <property role="1irPi9" value="G" />
+        <node concept="3PKj8D" id="4gUX5LzYKBM" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="1ERTnBTfavv">
-    <property role="TrG5h" value="GPattern" />
+    <property role="TrG5h" value="GraphPattern" />
     <property role="R4oN_" value="Graph Pattern" />
     <property role="34LRSv" value="pattern" />
     <property role="3GE5qa" value="content" />
@@ -72,11 +109,11 @@
       <ref role="PrY4T" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
     </node>
     <node concept="PrWs8" id="5luHlsCrwOP" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModelContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ERTnBTmryq">
-    <property role="TrG5h" value="GPatternBody" />
+    <property role="TrG5h" value="GraphPatternBody" />
     <property role="3GE5qa" value="content" />
     <property role="EcuMT" value="1925259677761386650" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -123,7 +160,7 @@
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
     <node concept="PrWs8" id="5luHlsCpmwL" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPkSs">
@@ -146,7 +183,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="5luHlsCpmwS" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="1i65yRAVs5u" role="PzmwI">
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
@@ -163,13 +200,13 @@
   </node>
   <node concept="1TIwiD" id="5Dmozv0zaht">
     <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="GConceptConstraint" />
-    <property role="34LRSv" value="concept" />
+    <property role="TrG5h" value="GraphPatternConceptConstraint" />
+    <property role="34LRSv" value="&lt;{type}&gt;" />
     <property role="R4oN_" value="Concept Constraint" />
     <property role="EcuMT" value="6509498303003796573" />
     <ref role="1TJDcQ" to="hqsm:4QgsNmKLL_q" resolve="ConceptConstraint" />
     <node concept="PrWs8" id="5luHlsCpmwF" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1i65yRAR_fk">
@@ -180,12 +217,12 @@
     <property role="EcuMT" value="1478893914040456148" />
     <ref role="1TJDcQ" to="hqsm:RjyNapPkSb" resolve="CompareConstraint" />
     <node concept="PrWs8" id="5luHlsCpmwD" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="5luHlsCpmwA">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="IGPatternBodyContent" />
+    <property role="TrG5h" value="IGraphPatternBodyContent" />
     <property role="EcuMT" value="6151553526979192870" />
     <node concept="PrWs8" id="5luHlsCpmwB" role="PrDN$">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdvs" resolve="IPatternBodyContent" />
@@ -199,19 +236,19 @@
     <property role="EcuMT" value="6151553526979192892" />
     <ref role="1TJDcQ" to="hqsm:RjyNapPkRU" resolve="CheckConstraint" />
     <node concept="PrWs8" id="5luHlsCpmwX" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Sp">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="GEmptyContent" />
+    <property role="TrG5h" value="EmptyGraphPatternContent" />
     <property role="EcuMT" value="6151553526979403289" />
     <ref role="1TJDcQ" to="hqsm:3hiszdZDhip" resolve="EmptyContent" />
     <node concept="PrWs8" id="5luHlsCq9Sq" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrwOB" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModelContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrxf3" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -225,15 +262,15 @@
     <property role="EcuMT" value="6151553526979403292" />
     <ref role="1TJDcQ" to="hqsm:3VwoHXNAdvE" resolve="Comment" />
     <node concept="PrWs8" id="5luHlsCq9St" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGPatternBodyContent" />
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrwOI" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModelContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="5luHlsCrwig">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="IGPatternModelContent" />
+    <property role="TrG5h" value="IGraphPatternModelContent" />
     <property role="EcuMT" value="6151553526979757200" />
     <node concept="PrWs8" id="5luHlsCrwih" role="PrDN$">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdvu" resolve="IPatternModelContent" />
@@ -241,7 +278,7 @@
   </node>
   <node concept="1TIwiD" id="4IZiQsKumsO">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="GParameter" />
+    <property role="TrG5h" value="GraphPatternParameter" />
     <property role="EcuMT" value="5458164179963307828" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IZiQsKumsP" role="PzmwI">

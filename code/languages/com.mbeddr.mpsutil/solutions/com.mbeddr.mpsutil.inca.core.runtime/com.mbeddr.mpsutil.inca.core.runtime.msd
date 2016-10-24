@@ -29,6 +29,7 @@
       <sourceRoot location="lib/org.eclipse.viatra.transformation.evm.source_1.5.0.201610211039.jar" />
       <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.5.0.201610211039.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
+      <sourceRoot location="lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -56,6 +57,7 @@
     <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm.source_1.5.0.201610211039.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.5.0.201610211039.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -88,7 +90,10 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)" version="0" />
     <module reference="7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)" version="0" />
     <module reference="7d86ab75-8219-4c30-b56f-048e82e129a9(com.mbeddr.mpsutil.inca.wb)" version="0" />

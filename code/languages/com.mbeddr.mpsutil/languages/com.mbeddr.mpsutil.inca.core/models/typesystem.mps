@@ -263,6 +263,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -955,7 +956,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="6hXIxNuZgRS">
-    <property role="TrG5h" value="typeof_PatternMatcherInstantiationExpression" />
+    <property role="TrG5h" value="typeof_IncaEvaluatorInstantiation" />
     <property role="3GE5qa" value="usage.matcher" />
     <node concept="3clFbS" id="6hXIxNuZgRT" role="18ibNy">
       <node concept="1Z5TYs" id="6hXIxNuZgTU" role="3cqZAp">
@@ -969,7 +970,7 @@
         <node concept="mw_s8" id="6hXIxNuZh9m" role="1ZfhKB">
           <node concept="2pJPEk" id="6trdyn5mkU_" role="mwGJk">
             <node concept="2pJPED" id="6trdyn5mkZt" role="2pJPEn">
-              <ref role="2pJxaS" to="hqsm:7wcU5h3ekti" resolve="MPSIncQueryMatcher" />
+              <ref role="2pJxaS" to="hqsm:7wcU5h3ekti" resolve="IncaEvaluator" />
               <node concept="2pIpSj" id="6trdyn5ml1_" role="2pJxcM">
                 <ref role="2pIpSl" to="hqsm:7wcU5h3elMf" resolve="pattern" />
                 <node concept="36biLy" id="6trdyn5ml4Z" role="2pJxcZ">
@@ -990,11 +991,11 @@
     </node>
     <node concept="1YaCAy" id="6hXIxNuZgRV" role="1YuTPh">
       <property role="TrG5h" value="exp" />
-      <ref role="1YaFvo" to="hqsm:6hXIxNuWHD0" resolve="MPSIncQueryMatcherInstantiation" />
+      <ref role="1YaFvo" to="hqsm:6hXIxNuWHD0" resolve="IncaEvaluatorInstantiation" />
     </node>
   </node>
   <node concept="18kY7G" id="1KfKM1YIldr">
-    <property role="TrG5h" value="check_PatternMatcherInstantiationExpression" />
+    <property role="TrG5h" value="check_IncaEvaluatorInstantiation" />
     <property role="3GE5qa" value="usage" />
     <node concept="3clFbS" id="1KfKM1YIlds" role="18ibNy">
       <node concept="3clFbJ" id="6cJttNujRvC" role="3cqZAp">
@@ -1006,7 +1007,7 @@
               <node concept="2OqwBi" id="6cJttNujSI2" role="33vP2m">
                 <node concept="2OqwBi" id="6cJttNujSI3" role="2Oq$k0">
                   <node concept="1YBJjd" id="6cJttNujSI4" role="2Oq$k0">
-                    <ref role="1YBMHb" node="1KfKM1YIldu" resolve="exp" />
+                    <ref role="1YBMHb" node="1KfKM1YIldu" resolve="expression" />
                   </node>
                   <node concept="3TrEf2" id="6cJttNujSI5" role="2OqNvi">
                     <ref role="3Tt5mk" to="hqsm:6ZM2l12NP7U" resolve="model" />
@@ -1078,7 +1079,7 @@
                 </node>
                 <node concept="2OqwBi" id="1KfKM1YIpj1" role="2OEOjV">
                   <node concept="1YBJjd" id="1KfKM1YIpfe" role="2Oq$k0">
-                    <ref role="1YBMHb" node="1KfKM1YIldu" resolve="exp" />
+                    <ref role="1YBMHb" node="1KfKM1YIldu" resolve="expression" />
                   </node>
                   <node concept="3TrEf2" id="1KfKM1YIpDV" role="2OqNvi">
                     <ref role="3Tt5mk" to="hqsm:6ZM2l12NP7U" resolve="model" />
@@ -1109,7 +1110,7 @@
           <node concept="10Nm6u" id="6cJttNujS3v" role="3uHU7w" />
           <node concept="2OqwBi" id="6cJttNujRzz" role="3uHU7B">
             <node concept="1YBJjd" id="6cJttNujRx9" role="2Oq$k0">
-              <ref role="1YBMHb" node="1KfKM1YIldu" resolve="exp" />
+              <ref role="1YBMHb" node="1KfKM1YIldu" resolve="expression" />
             </node>
             <node concept="3TrEf2" id="6cJttNujRRt" role="2OqNvi">
               <ref role="3Tt5mk" to="hqsm:6ZM2l12NP7U" resolve="model" />
@@ -1120,47 +1121,35 @@
       <node concept="3clFbH" id="6cJttNujQLB" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="1KfKM1YIldu" role="1YuTPh">
-      <property role="TrG5h" value="exp" />
-      <ref role="1YaFvo" to="hqsm:6hXIxNuWHD0" resolve="MPSIncQueryMatcherInstantiation" />
+      <property role="TrG5h" value="expression" />
+      <ref role="1YaFvo" to="hqsm:6hXIxNuWHD0" resolve="IncaEvaluatorInstantiation" />
     </node>
   </node>
   <node concept="1YbPZF" id="7wcU5h3oUKb">
-    <property role="TrG5h" value="typeof_MPSIncQueryMatcher" />
+    <property role="TrG5h" value="typeof_IncaEvaluator" />
     <property role="3GE5qa" value="usage.matcher" />
     <node concept="3clFbS" id="7wcU5h3oUKc" role="18ibNy">
       <node concept="1Z5TYs" id="7wcU5h3oV9w" role="3cqZAp">
         <node concept="mw_s8" id="7wcU5h3oVtf" role="1ZfhKB">
-          <node concept="2pJPEk" id="56sNkn8o$Qg" role="mwGJk">
-            <node concept="2pJPED" id="56sNkn8o$Q$" role="2pJPEn">
-              <ref role="2pJxaS" to="hqsm:7wcU5h3ekti" resolve="MPSIncQueryMatcher" />
-              <node concept="2pIpSj" id="56sNkn8o$R6" role="2pJxcM">
-                <ref role="2pIpSl" to="hqsm:7wcU5h3elMf" resolve="pattern" />
-                <node concept="36biLy" id="56sNkn8o$RK" role="2pJxcZ">
-                  <node concept="2OqwBi" id="56sNkn8o$UO" role="36biLW">
-                    <node concept="1YBJjd" id="56sNkn8o$S2" role="2Oq$k0">
-                      <ref role="1YBMHb" node="7wcU5h3oUKe" resolve="matcher" />
-                    </node>
-                    <node concept="3TrEf2" id="56sNkn8o_jW" role="2OqNvi">
-                      <ref role="3Tt5mk" to="hqsm:7wcU5h3elMf" resolve="pattern" />
-                    </node>
-                  </node>
-                </node>
-              </node>
+          <node concept="2OqwBi" id="z7YXzAgIvz" role="mwGJk">
+            <node concept="1YBJjd" id="z7YXzAgInE" role="2Oq$k0">
+              <ref role="1YBMHb" node="7wcU5h3oUKe" resolve="evaluator" />
             </node>
+            <node concept="1$rogu" id="z7YXzAgIE_" role="2OqNvi" />
           </node>
         </node>
         <node concept="mw_s8" id="7wcU5h3oV9z" role="1ZfhK$">
           <node concept="1Z2H0r" id="7wcU5h3oV35" role="mwGJk">
             <node concept="1YBJjd" id="7wcU5h3oV5l" role="1Z2MuG">
-              <ref role="1YBMHb" node="7wcU5h3oUKe" resolve="matcher" />
+              <ref role="1YBMHb" node="7wcU5h3oUKe" resolve="evaluator" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="7wcU5h3oUKe" role="1YuTPh">
-      <property role="TrG5h" value="matcher" />
-      <ref role="1YaFvo" to="hqsm:7wcU5h3ekti" resolve="MPSIncQueryMatcher" />
+      <property role="TrG5h" value="evaluator" />
+      <ref role="1YaFvo" to="hqsm:7wcU5h3ekti" resolve="IncaEvaluator" />
     </node>
   </node>
   <node concept="1YbPZF" id="7wcU5h3qqMj">
@@ -1953,41 +1942,6 @@
     <node concept="1YaCAy" id="6trdyn56_zc" role="1YuTPh">
       <property role="TrG5h" value="operation" />
       <ref role="1YaFvo" to="hqsm:6trdyn50y7Y" resolve="NewMatchOperation" />
-    </node>
-  </node>
-  <node concept="2sgARr" id="56sNkn8o_mq">
-    <property role="3GE5qa" value="usage.matcher" />
-    <property role="TrG5h" value="supertypes_MPSIncQueryMatcher" />
-    <node concept="3clFbS" id="56sNkn8o_mr" role="2sgrp5">
-      <node concept="3cpWs6" id="56sNkn8o_o3" role="3cqZAp">
-        <node concept="2pJPEk" id="56sNkn8o_oX" role="3cqZAk">
-          <node concept="2pJPED" id="56sNkn8o_pj" role="2pJPEn">
-            <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
-            <node concept="2pIpSj" id="56sNkn8o_p_" role="2pJxcM">
-              <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-              <node concept="36bGnv" id="2Pc1eSRCrXQ" role="2pJxcZ">
-                <ref role="36bGnp" to="h57a:~ViatraQueryMatcher" resolve="ViatraQueryMatcher" />
-              </node>
-            </node>
-            <node concept="2pIpSj" id="4BWlfm2OmWr" role="2pJxcM">
-              <ref role="2pIpSl" to="tpee:g91_B6F" resolve="parameter" />
-              <node concept="2pJPED" id="4BWlfm2OCuO" role="2pJxcZ">
-                <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
-                <node concept="2pIpSj" id="4BWlfm2OCv0" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-                  <node concept="36bGnv" id="2Pc1eSRCrY5" role="2pJxcZ">
-                    <ref role="36bGnp" to="h57a:~IPatternMatch" resolve="IPatternMatch" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="56sNkn8o_mt" role="1YuTPh">
-      <property role="TrG5h" value="matcher" />
-      <ref role="1YaFvo" to="hqsm:7wcU5h3ekti" resolve="MPSIncQueryMatcher" />
     </node>
   </node>
   <node concept="18kY7G" id="6WpUQi6Qn1g">

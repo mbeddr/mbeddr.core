@@ -457,7 +457,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="6w1fNJZu46d">
-    <property role="TrG5h" value="typeof_GParameter" />
+    <property role="TrG5h" value="typeof_GraphPatternParameter" />
     <property role="3GE5qa" value="content" />
     <node concept="3clFbS" id="6w1fNJZu46e" role="18ibNy">
       <node concept="3clFbJ" id="6WpUQi6Rq9g" role="3cqZAp">
@@ -528,7 +528,7 @@
     </node>
     <node concept="1YaCAy" id="6w1fNJZu46g" role="1YuTPh">
       <property role="TrG5h" value="parameter" />
-      <ref role="1YaFvo" to="55iy:4IZiQsKumsO" resolve="GParameter" />
+      <ref role="1YaFvo" to="55iy:4IZiQsKumsO" resolve="GraphPatternParameter" />
     </node>
   </node>
 </model>
