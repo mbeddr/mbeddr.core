@@ -287,6 +287,10 @@
       <property role="TrG5h" value="singleClientOnly" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="36Bkyc49pe4" role="1TKVEl">
+      <property role="TrG5h" value="mandatory" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7JjETeGbFPQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="componentRestriction" />
