@@ -2242,7 +2242,7 @@
       <node concept="3clFbS" id="36Bkyc4fTMe" role="2VODD2">
         <node concept="3clFbF" id="36Bkyc4fTMf" role="3cqZAp">
           <node concept="Xl_RD" id="36Bkyc4fTMg" role="3clFbG">
-            <property role="Xl_RC" value="Set As a Mandatory Interface" />
+            <property role="Xl_RC" value="Toggle Mandatory" />
           </node>
         </node>
       </node>
@@ -2251,13 +2251,18 @@
       <node concept="3clFbS" id="36Bkyc4fTMi" role="2VODD2">
         <node concept="3clFbF" id="36Bkyc4fUlc" role="3cqZAp">
           <node concept="37vLTI" id="36Bkyc4fUG9" role="3clFbG">
-            <node concept="3clFbT" id="36Bkyc4fUIG" role="37vLTx">
-              <property role="3clFbU" value="true" />
+            <node concept="3fqX7Q" id="36Bkyc4ttsi" role="37vLTx">
+              <node concept="2OqwBi" id="36Bkyc4tujq" role="3fr31v">
+                <node concept="2Sf5sV" id="36Bkyc4tucd" role="2Oq$k0" />
+                <node concept="3TrcHB" id="36Bkyc4tuIo" role="2OqNvi">
+                  <ref role="3TsBF5" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="36Bkyc4fUqs" role="37vLTJ">
               <node concept="2Sf5sV" id="36Bkyc4fUlb" role="2Oq$k0" />
               <node concept="3TrcHB" id="36Bkyc4fUCi" role="2OqNvi">
-                <ref role="3TsBF5" to="v7ag:36Bkyc49pe4" resolve="isMandatory" />
+                <ref role="3TsBF5" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
               </node>
             </node>
           </node>

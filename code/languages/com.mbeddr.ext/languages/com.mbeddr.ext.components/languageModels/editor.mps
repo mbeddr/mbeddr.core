@@ -1028,21 +1028,8 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3F0ifn" id="36Bkyc4e07t" role="3EZMnx">
-        <property role="3F0ifm" value="mandatory" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <node concept="pkWqt" id="36Bkyc4e07u" role="pqm2j">
-          <node concept="3clFbS" id="36Bkyc4e07v" role="2VODD2">
-            <node concept="3clFbF" id="36Bkyc4e07w" role="3cqZAp">
-              <node concept="2OqwBi" id="36Bkyc4e07x" role="3clFbG">
-                <node concept="pncrf" id="36Bkyc4e07y" role="2Oq$k0" />
-                <node concept="3TrcHB" id="36Bkyc4fWnJ" role="2OqNvi">
-                  <ref role="3TsBF5" to="v7ag:36Bkyc49pe4" resolve="isMandatory" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="1kHk_G" id="36Bkyc4tv9k" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
       </node>
     </node>
   </node>
