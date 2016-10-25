@@ -2234,5 +2234,44 @@
       <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
+  <node concept="2S6QgY" id="36Bkyc4fTMc">
+    <property role="3GE5qa" value="comp.ports" />
+    <property role="TrG5h" value="setMandatoryPort" />
+    <ref role="2ZfgGC" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
+    <node concept="2S6ZIM" id="36Bkyc4fTMd" role="2ZfVej">
+      <node concept="3clFbS" id="36Bkyc4fTMe" role="2VODD2">
+        <node concept="3clFbF" id="36Bkyc4fTMf" role="3cqZAp">
+          <node concept="Xl_RD" id="36Bkyc4fTMg" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Mandatory" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="36Bkyc4fTMh" role="2ZfgGD">
+      <node concept="3clFbS" id="36Bkyc4fTMi" role="2VODD2">
+        <node concept="3clFbF" id="36Bkyc4fUlc" role="3cqZAp">
+          <node concept="37vLTI" id="36Bkyc4fUG9" role="3clFbG">
+            <node concept="3fqX7Q" id="36Bkyc4ttsi" role="37vLTx">
+              <node concept="2OqwBi" id="36Bkyc4tujq" role="3fr31v">
+                <node concept="2Sf5sV" id="36Bkyc4tucd" role="2Oq$k0" />
+                <node concept="3TrcHB" id="36Bkyc4tuIo" role="2OqNvi">
+                  <ref role="3TsBF5" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="36Bkyc4fUqs" role="37vLTJ">
+              <node concept="2Sf5sV" id="36Bkyc4fUlb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="36Bkyc4fUCi" role="2OqNvi">
+                <ref role="3TsBF5" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="36Bkyc4fTMp" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
+  </node>
 </model>
 
