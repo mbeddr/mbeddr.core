@@ -61,6 +61,7 @@
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="gaxt" ref="r:ff7cab72-4f58-4133-a2c4-5d907d3fafb0(com.mbeddr.mpsutil.lang.plugin.extensions.structure)" />
+    <import index="s1rj" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.project(MPS.IDEA/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
@@ -4884,8 +4885,8 @@
                   <node concept="3K4zz7" id="2cNe_D17JvG" role="37vLTx">
                     <node concept="3fqX7Q" id="2cNe_D17JvH" role="3K4Cdx">
                       <node concept="2YIFZM" id="2cNe_D17JvI" role="3fr31v">
-                        <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                        <ref role="37wK5l" to="btn2:~ProjectUtil.isDirectoryBased(com.intellij.openapi.project.Project):boolean" resolve="isDirectoryBased" />
+                        <ref role="1Pybhc" to="s1rj:~ProjectKt" resolve="ProjectKt" />
+                        <ref role="37wK5l" to="s1rj:~ProjectKt.isDirectoryBased(com.intellij.openapi.project.Project):boolean" resolve="isDirectoryBased" />
                         <node concept="2YIFZM" id="2cNe_D17JvJ" role="37wK5m">
                           <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                           <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
@@ -6661,8 +6662,8 @@
                   <node concept="3K4zz7" id="71iDQGhgPl4" role="37vLTx">
                     <node concept="3fqX7Q" id="71iDQGhgSi3" role="3K4Cdx">
                       <node concept="2YIFZM" id="71iDQGhgSi5" role="3fr31v">
-                        <ref role="37wK5l" to="btn2:~ProjectUtil.isDirectoryBased(com.intellij.openapi.project.Project):boolean" resolve="isDirectoryBased" />
-                        <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
+                        <ref role="1Pybhc" to="s1rj:~ProjectKt" resolve="ProjectKt" />
+                        <ref role="37wK5l" to="s1rj:~ProjectKt.isDirectoryBased(com.intellij.openapi.project.Project):boolean" resolve="isDirectoryBased" />
                         <node concept="2YIFZM" id="71iDQGhgSi6" role="37wK5m">
                           <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                           <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
