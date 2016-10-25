@@ -646,7 +646,7 @@
   </node>
   <node concept="13h7C7" id="5Dmozv0wdQi">
     <property role="3GE5qa" value="constraints" />
-    <ref role="13h7C2" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+    <ref role="13h7C2" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
     <node concept="13i0hz" id="5jgivonIobQ" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -1134,14 +1134,14 @@
               <node concept="3cpWsn" id="5Dmozv0ziLb" role="3cpWs9">
                 <property role="TrG5h" value="constraint" />
                 <node concept="3Tqbb2" id="5Dmozv0ziL6" role="1tU5fm">
-                  <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                  <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                 </node>
                 <node concept="2OqwBi" id="5Dmozv0ziLc" role="33vP2m">
                   <node concept="13iPFW" id="5Dmozv0ziLd" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="5Dmozv0ziLe" role="2OqNvi">
                     <node concept="1xMEDy" id="5Dmozv0ziLf" role="1xVPHs">
                       <node concept="chp4Y" id="5Dmozv0ziLg" role="ri$Ld">
-                        <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                        <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                       </node>
                     </node>
                   </node>
@@ -1380,7 +1380,7 @@
   </node>
   <node concept="13h7C7" id="14BIdL0mZxB">
     <property role="3GE5qa" value="content" />
-    <ref role="13h7C2" to="55iy:1ERTnBTfavv" resolve="GPattern" />
+    <ref role="13h7C2" to="55iy:1ERTnBTfavv" resolve="GraphPattern" />
     <node concept="13hLZK" id="14BIdL0mZxC" role="13h7CW">
       <node concept="3clFbS" id="14BIdL0mZxD" role="2VODD2">
         <node concept="3clFbF" id="5xy6TexsQp0" role="3cqZAp">
@@ -1395,7 +1395,7 @@
               <node concept="2ShNRf" id="5xy6TexsTAg" role="25WWJ7">
                 <node concept="3zrR0B" id="5xy6TexsTKQ" role="2ShVmc">
                   <node concept="3Tqbb2" id="5xy6TexsTKS" role="3zrR0E">
-                    <ref role="ehGHo" to="55iy:1ERTnBTmryq" resolve="GPatternBody" />
+                    <ref role="ehGHo" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
                   </node>
                 </node>
               </node>
@@ -1485,9 +1485,29 @@
   </node>
   <node concept="13h7C7" id="5xy6TexsTTu">
     <property role="3GE5qa" value="content" />
-    <ref role="13h7C2" to="55iy:1ERTnBTmryq" resolve="GPatternBody" />
+    <ref role="13h7C2" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="13hLZK" id="5xy6TexsTTv" role="13h7CW">
-      <node concept="3clFbS" id="5xy6TexsTTw" role="2VODD2" />
+      <node concept="3clFbS" id="5xy6TexsTTw" role="2VODD2">
+        <node concept="3clFbF" id="nrkjVh6cTC" role="3cqZAp">
+          <node concept="2OqwBi" id="nrkjVh6ea7" role="3clFbG">
+            <node concept="2OqwBi" id="nrkjVh6d04" role="2Oq$k0">
+              <node concept="13iPFW" id="nrkjVh6cTB" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="nrkjVh6d8N" role="2OqNvi">
+                <ref role="3TtcxE" to="hqsm:3VwoHXNC_4v" resolve="contents" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="nrkjVh6f9x" role="2OqNvi">
+              <node concept="2ShNRf" id="nrkjVh6fkp" role="25WWJ7">
+                <node concept="3zrR0B" id="nrkjVh6ho7" role="2ShVmc">
+                  <node concept="3Tqbb2" id="nrkjVh6ho9" role="3zrR0E">
+                    <ref role="ehGHo" to="55iy:5luHlsCq9Sp" resolve="EmptyGraphPatternContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

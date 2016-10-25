@@ -153,7 +153,7 @@
                     <node concept="37vLTI" id="5xy6TexsedP" role="3clFbG">
                       <node concept="2OqwBi" id="5xy6Texsf4k" role="37vLTx">
                         <node concept="1PxgMI" id="5xy6TexseCj" role="2Oq$k0">
-                          <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                          <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                           <node concept="2rP1CM" id="5xy6TexseqF" role="1m5AlR" />
                         </node>
                         <node concept="3TrEf2" id="5xy6Texsfqn" role="2OqNvi">
@@ -170,7 +170,7 @@
                   <node concept="2rP1CM" id="5xy6TexsuNt" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="5xy6Texsvs_" role="2OqNvi">
                     <node concept="chp4Y" id="5xy6TexsvHm" role="cj9EA">
-                      <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                      <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                     </node>
                   </node>
                 </node>
@@ -231,24 +231,17 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="2J6v22V8zyV">
-    <property role="3GE5qa" value="constraints" />
-    <ref role="1M2myG" to="55iy:5Dmozv0zaht" resolve="GConceptConstraint" />
-  </node>
   <node concept="1M2fIO" id="5luHlsCpmwZ">
     <property role="3GE5qa" value="content" />
-    <ref role="1M2myG" to="55iy:1ERTnBTmryq" resolve="GPatternBody" />
+    <ref role="1M2myG" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="osYL8" id="5luHlsCpmx0" role="1MLXOK">
       <node concept="3clFbS" id="5luHlsCpmx1" role="2VODD2">
         <node concept="3cpWs6" id="5luHlsCrJDB" role="3cqZAp">
           <node concept="2OqwBi" id="5luHlsCrJDC" role="3cqZAk">
-            <node concept="2OqwBi" id="5luHlsCrJDD" role="2Oq$k0">
-              <node concept="otxO1" id="5luHlsCrJDE" role="2Oq$k0" />
-              <node concept="1rGIog" id="5luHlsCrJDF" role="2OqNvi" />
-            </node>
+            <node concept="otxO1" id="5luHlsCrJDE" role="2Oq$k0" />
             <node concept="2Zo12i" id="5luHlsCrJDG" role="2OqNvi">
               <node concept="chp4Y" id="5luHlsCrJKP" role="2Zo12j">
-                <ref role="cht4Q" to="55iy:5luHlsCpmwA" resolve="IGPatternBodyContent" />
+                <ref role="cht4Q" to="55iy:5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
               </node>
             </node>
           </node>
@@ -257,7 +250,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5luHlsCrwij">
-    <ref role="1M2myG" to="55iy:1ERTnBTfasH" resolve="GPatternModel" />
+    <ref role="1M2myG" to="55iy:1ERTnBTfasH" resolve="GraphPatternModel" />
     <node concept="osYL8" id="5luHlsCrwim" role="1MLXOK">
       <node concept="3clFbS" id="5luHlsCrwin" role="2VODD2">
         <node concept="3cpWs6" id="5luHlsCrwnh" role="3cqZAp">
@@ -268,7 +261,7 @@
             </node>
             <node concept="2Zo12i" id="5luHlsCrJku" role="2OqNvi">
               <node concept="chp4Y" id="5luHlsCrJqH" role="2Zo12j">
-                <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGPatternModelContent" />
+                <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModelContent" />
               </node>
             </node>
           </node>
@@ -278,7 +271,7 @@
   </node>
   <node concept="1M2fIO" id="4IZiQsKumsS">
     <property role="3GE5qa" value="content" />
-    <ref role="1M2myG" to="55iy:4IZiQsKumsO" resolve="GParameter" />
+    <ref role="1M2myG" to="55iy:4IZiQsKumsO" resolve="GraphPatternParameter" />
     <node concept="nKS2y" id="4IZiQsKumsT" role="1MLUbF">
       <node concept="3clFbS" id="4IZiQsKumsU" role="2VODD2">
         <node concept="3cpWs6" id="4IZiQsKumu0" role="3cqZAp">
@@ -289,7 +282,7 @@
               <node concept="2Xjw5R" id="4IZiQsKum_Q" role="2OqNvi">
                 <node concept="1xMEDy" id="4IZiQsKum_S" role="1xVPHs">
                   <node concept="chp4Y" id="4IZiQsKumBm" role="ri$Ld">
-                    <ref role="cht4Q" to="55iy:1ERTnBTfavv" resolve="GPattern" />
+                    <ref role="cht4Q" to="55iy:1ERTnBTfavv" resolve="GraphPattern" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="4IZiQsKumFl" role="1xVPHs" />

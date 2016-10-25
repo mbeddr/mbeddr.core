@@ -50,6 +50,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
@@ -134,7 +135,6 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
-      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -1259,7 +1259,7 @@
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
-              <node concept="3eOVzh" id="39KhnTIfEfc" role="1Dwp0S">
+              <node concept="2dkUwp" id="1aUlWw6W7qg" role="1Dwp0S">
                 <node concept="37vLTw" id="39KhnTIfEfd" role="3uHU7B">
                   <ref role="3cqZAo" node="39KhnTIfEf9" resolve="i" />
                 </node>
@@ -2518,7 +2518,7 @@
   </node>
   <node concept="13h7C7" id="6trdyn5bUwU">
     <property role="3GE5qa" value="usage.matcher" />
-    <ref role="13h7C2" to="hqsm:6trdyn5bRIt" resolve="MPSIncQueryMatcherOperation" />
+    <ref role="13h7C2" to="hqsm:6trdyn5bRIt" resolve="IncaEvaluatorOperation" />
     <node concept="13i0hz" id="6trdyn5gNKy" role="13h7CS">
       <property role="TrG5h" value="getPattern" />
       <node concept="3Tm1VV" id="6trdyn5gNKz" role="1B3o_S" />

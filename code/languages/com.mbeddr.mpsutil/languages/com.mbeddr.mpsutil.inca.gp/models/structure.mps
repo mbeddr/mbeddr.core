@@ -123,8 +123,7 @@
   </node>
   <node concept="1TIwiD" id="RjyNapTDgY">
     <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="GPathExpressionConstraint" />
-    <property role="34LRSv" value="path" />
+    <property role="TrG5h" value="GraphPatternPathExpressionConstraint" />
     <property role="R4oN_" value="Path Expression Constraint" />
     <property role="EcuMT" value="996292992025662526" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -162,9 +161,12 @@
     <node concept="PrWs8" id="5luHlsCpmwL" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
+    <node concept="PrWs8" id="nrkjVh51fX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPkSs">
-    <property role="TrG5h" value="GPatternCompositionConstraint" />
+    <property role="TrG5h" value="GraphPatternCompositionConstraint" />
     <property role="3GE5qa" value="constraints" />
     <property role="R4oN_" value="Pattern Composition Constraint" />
     <property role="34LRSv" value="find" />
@@ -230,7 +232,7 @@
   </node>
   <node concept="1TIwiD" id="5luHlsCpmwW">
     <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="GCheckConstraint" />
+    <property role="TrG5h" value="GraphPatternCheckConstraint" />
     <property role="34LRSv" value="check" />
     <property role="R4oN_" value="Check Constraint" />
     <property role="EcuMT" value="6151553526979192892" />
@@ -256,7 +258,7 @@
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Ss">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="GComment" />
+    <property role="TrG5h" value="GraphPatternComment" />
     <property role="34LRSv" value="//" />
     <property role="R4oN_" value="Comment" />
     <property role="EcuMT" value="6151553526979403292" />

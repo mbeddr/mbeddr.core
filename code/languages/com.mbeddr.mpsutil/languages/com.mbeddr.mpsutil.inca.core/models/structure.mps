@@ -652,7 +652,6 @@
     <property role="3GE5qa" value="constraints" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="check" />
     <property role="R4oN_" value="Check Constraint" />
     <property role="EcuMT" value="996292992024530426" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

@@ -140,7 +140,7 @@
     </language>
   </registry>
   <node concept="1YbPZF" id="wYNqCIp9hL">
-    <property role="TrG5h" value="typeof_GPathExpressionConstraint" />
+    <property role="TrG5h" value="typeof_GraphPatternPathExpressionConstraint" />
     <property role="3GE5qa" value="constraints" />
     <node concept="3clFbS" id="wYNqCIp9hM" role="18ibNy">
       <node concept="3clFbJ" id="4m2T58r5$2L" role="3cqZAp">
@@ -453,7 +453,7 @@
     </node>
     <node concept="1YaCAy" id="wYNqCIp9hO" role="1YuTPh">
       <property role="TrG5h" value="expression" />
-      <ref role="1YaFvo" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+      <ref role="1YaFvo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
     </node>
   </node>
   <node concept="1YbPZF" id="6w1fNJZu46d">

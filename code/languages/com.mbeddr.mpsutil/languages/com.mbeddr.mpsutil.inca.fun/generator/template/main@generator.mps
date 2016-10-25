@@ -16,7 +16,6 @@
     <import index="coho" ref="r:ad5b8223-9439-4270-8687-d790b5c09c3f(com.mbeddr.mpsutil.inca.fun.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="t4sj" ref="r:fc920dcd-3130-40cb-9a1b-95b7ec234932(com.mbeddr.mpsutil.inca.fun.runtime.plugin)" />
-    <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
     <import index="55iy" ref="r:6bb35df6-a651-4174-a533-ca7006eccec8(com.mbeddr.mpsutil.inca.gp.structure)" implicit="true" />
   </imports>
   <registry>
@@ -308,40 +307,15 @@
       <node concept="b5Tf3" id="39KhnTI9dsE" role="1lVwrX" />
     </node>
     <node concept="1puMqW" id="3d69XTNdj_V" role="1puA0r">
-      <ref role="1puQsG" node="3d69XTNcpvE" resolve="translate" />
+      <ref role="1puQsG" node="3d69XTNcpvE" resolve="rewrite_PatternFunctions" />
     </node>
   </node>
   <node concept="1pmfR0" id="3d69XTNcpvE">
     <property role="1v3f2W" value="pre_processing" />
     <property role="1v3jST" value="true" />
-    <property role="TrG5h" value="translate" />
+    <property role="TrG5h" value="rewrite_PatternFunctions" />
     <node concept="1pplIY" id="3d69XTNcpvF" role="1pqMTA">
       <node concept="3clFbS" id="3d69XTNcpvG" role="2VODD2">
-        <node concept="2Gpval" id="5te8vJ2H0O8" role="3cqZAp">
-          <node concept="2GrKxI" id="5te8vJ2H0Oa" role="2Gsz3X">
-            <property role="TrG5h" value="reference" />
-          </node>
-          <node concept="3clFbS" id="5te8vJ2H0Oc" role="2LFqv$">
-            <node concept="3clFbF" id="5te8vJ2J_B_" role="3cqZAp">
-              <node concept="2YIFZM" id="5te8vJ2J_Ql" role="3clFbG">
-                <ref role="37wK5l" to="zt8v:5te8vJ2Jmh9" resolve="putUserObjectType" />
-                <ref role="1Pybhc" to="t4sj:7nEPFn_$Jbi" resolve="CodeGenerationHelper" />
-                <node concept="2GrUjf" id="5te8vJ2J_R4" role="37wK5m">
-                  <ref role="2Gs0qQ" node="5te8vJ2H0Oa" resolve="reference" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5te8vJ2H1Du" role="2GsD0m">
-            <node concept="1Q6Npb" id="5te8vJ2H1zw" role="2Oq$k0" />
-            <node concept="2SmgA7" id="5te8vJ2H1PA" role="2OqNvi">
-              <node concept="chp4Y" id="5te8vJ2H1Q0" role="1dBWTz">
-                <ref role="cht4Q" to="hqsm:39KhnTIfy1V" resolve="BaseVariableReference" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5te8vJ2H0Cd" role="3cqZAp" />
         <node concept="3cpWs8" id="3e1iAvwiBZz" role="3cqZAp">
           <node concept="3cpWsn" id="3e1iAvwiBZD" role="3cpWs9">
             <property role="TrG5h" value="functionMap" />
@@ -506,7 +480,7 @@
                           </node>
                           <node concept="1mIQ4w" id="3d69XTNdiv8" role="2OqNvi">
                             <node concept="chp4Y" id="3d69XTNdjfe" role="cj9EA">
-                              <ref role="cht4Q" to="55iy:1ERTnBTmryq" resolve="GPatternBody" />
+                              <ref role="cht4Q" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
                             </node>
                           </node>
                         </node>
@@ -533,7 +507,7 @@
                         <node concept="2qgKlT" id="3d69XTNdejk" role="2OqNvi">
                           <ref role="37wK5l" to="coho:6$RZwFUruG4" resolve="transform" />
                           <node concept="1PxgMI" id="3d69XTNdfSQ" role="37wK5m">
-                            <ref role="1m5ApE" to="55iy:1ERTnBTmryq" resolve="GPatternBody" />
+                            <ref role="1m5ApE" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
                             <node concept="2GrUjf" id="3d69XTNdel3" role="1m5AlR">
                               <ref role="2Gs0qQ" node="3d69XTNd4vE" resolve="body" />
                             </node>

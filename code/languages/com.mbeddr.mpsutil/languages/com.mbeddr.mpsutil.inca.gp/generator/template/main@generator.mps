@@ -633,7 +633,7 @@
     </node>
     <node concept="3aamgX" id="6TeNRL8i26S" role="3acgRq">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+      <ref role="30HIoZ" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
       <node concept="1Koe21" id="6TeNRL8i2bk" role="1lVwrX">
         <node concept="3clFb_" id="6TeNRL8i2ev" role="1Koe22">
           <property role="TrG5h" value="genMethod" />
@@ -807,7 +807,7 @@
                         <ref role="37wK5l" to="zt8v:3bXXt3NaVPa" resolve="getProperty" />
                         <node concept="2OqwBi" id="26S5csTolth" role="37wK5m">
                           <node concept="35c_gC" id="26S5csTogzw" role="2Oq$k0">
-                            <ref role="35c_gD" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                            <ref role="35c_gD" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                             <node concept="1ZhdrF" id="26S5csTomdE" role="lGtFl">
                               <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474300074836/2644386474300074837" />
                               <property role="2qtEX8" value="conceptDeclaration" />
@@ -911,7 +911,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="LXEcpppEGs" role="3acgRq">
-      <ref role="30HIoZ" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+      <ref role="30HIoZ" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
       <node concept="1Koe21" id="LXEcpppK$Y" role="1lVwrX">
         <node concept="3clFb_" id="LXEcpppKUB" role="1Koe22">
           <property role="TrG5h" value="genMethod" />
@@ -1081,7 +1081,7 @@
                     <node concept="1pGfFk" id="26S5csTp0UY" role="2ShVmc">
                       <ref role="37wK5l" to="pzen:7TrMLNbStQa" resolve="InterfacePartKey" />
                       <node concept="28GBK8" id="26S5csTp1Lp" role="37wK5m">
-                        <ref role="28GBKb" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                        <ref role="28GBKb" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                         <ref role="28H3Ia" to="55iy:RjyNapTDi0" resolve="src" />
                         <node concept="1ZhdrF" id="26S5csTp1Lq" role="lGtFl">
                           <property role="2qtEX8" value="conceptDeclaration" />
@@ -1175,7 +1175,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="LXEcppt3kz" role="3acgRq">
-      <ref role="30HIoZ" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+      <ref role="30HIoZ" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
       <node concept="1Koe21" id="LXEcppt8Jr" role="1lVwrX">
         <node concept="312cEu" id="LXEcppt9zl" role="1Koe22">
           <property role="2bfB8j" value="true" />
@@ -1486,7 +1486,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="LXEcppxsu5" role="3acgRq">
-      <ref role="30HIoZ" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+      <ref role="30HIoZ" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
       <node concept="1Koe21" id="LXEcppxsu6" role="1lVwrX">
         <node concept="312cEu" id="LXEcppxsu7" role="1Koe22">
           <property role="2bfB8j" value="true" />
@@ -1796,7 +1796,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="wYNqCIovZA" role="3acgRq">
-      <ref role="30HIoZ" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+      <ref role="30HIoZ" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
       <node concept="1Koe21" id="wYNqCIozIs" role="1lVwrX">
         <node concept="312cEu" id="wYNqCIo$6i" role="1Koe22">
           <property role="2bfB8j" value="true" />
@@ -3916,7 +3916,7 @@
                                 </node>
                                 <node concept="1mIQ4w" id="8FTmV8tlFY" role="2OqNvi">
                                   <node concept="chp4Y" id="gySDPO557g" role="cj9EA">
-                                    <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                                    <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                                   </node>
                                 </node>
                               </node>
@@ -3925,10 +3925,10 @@
                                   <node concept="3cpWsn" id="8FTmV8tlG2" role="3cpWs9">
                                     <property role="TrG5h" value="constraint" />
                                     <node concept="3Tqbb2" id="8FTmV8tlG3" role="1tU5fm">
-                                      <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                                      <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                                     </node>
                                     <node concept="1PxgMI" id="8FTmV8tlG4" role="33vP2m">
-                                      <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                                      <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                                       <node concept="2GrUjf" id="8FTmV8tlG5" role="1m5AlR">
                                         <ref role="2Gs0qQ" node="8FTmV8tlE7" resolve="_constraint" />
                                       </node>
@@ -4155,7 +4155,7 @@
                                 </node>
                                 <node concept="1mIQ4w" id="8FTmV8tlHv" role="2OqNvi">
                                   <node concept="chp4Y" id="gySDPO5iEy" role="cj9EA">
-                                    <ref role="cht4Q" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+                                    <ref role="cht4Q" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
                                   </node>
                                 </node>
                               </node>
@@ -4164,10 +4164,10 @@
                                   <node concept="3cpWsn" id="8FTmV8tlHz" role="3cpWs9">
                                     <property role="TrG5h" value="constraint" />
                                     <node concept="3Tqbb2" id="8FTmV8tlH$" role="1tU5fm">
-                                      <ref role="ehGHo" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+                                      <ref role="ehGHo" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
                                     </node>
                                     <node concept="1PxgMI" id="8FTmV8tlH_" role="33vP2m">
-                                      <ref role="1m5ApE" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+                                      <ref role="1m5ApE" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
                                       <node concept="2GrUjf" id="8FTmV8tlHA" role="1m5AlR">
                                         <ref role="2Gs0qQ" node="8FTmV8tlE7" resolve="_constraint" />
                                       </node>
@@ -4555,7 +4555,7 @@
               <node concept="3cpWsn" id="1YBYCQ1aAOP" role="3cpWs9">
                 <property role="TrG5h" value="currentConstraint" />
                 <node concept="3Tqbb2" id="1YBYCQ1aAOK" role="1tU5fm">
-                  <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                  <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                 </node>
                 <node concept="2GrUjf" id="1vlo9S3NGN5" role="33vP2m">
                   <ref role="2Gs0qQ" node="1YBYCQ1acw7" resolve="constraint" />
@@ -5029,7 +5029,7 @@
                           <node concept="2ShNRf" id="2x9xdhRYJlW" role="37vLTx">
                             <node concept="3zrR0B" id="2x9xdhRYJlU" role="2ShVmc">
                               <node concept="3Tqbb2" id="2x9xdhRYJlV" role="3zrR0E">
-                                <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                                <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                               </node>
                             </node>
                           </node>
@@ -5146,7 +5146,7 @@
             <node concept="1Q6Npb" id="1YBYCQ1acmx" role="2Oq$k0" />
             <node concept="2SmgA7" id="1YBYCQ1acv$" role="2OqNvi">
               <node concept="chp4Y" id="14BIdL0mRjt" role="1dBWTz">
-                <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
               </node>
             </node>
           </node>
@@ -6000,6 +6000,31 @@
     <property role="3GE5qa" value="preprocessing" />
     <node concept="1pplIY" id="39KhnTIh5tL" role="1pqMTA">
       <node concept="3clFbS" id="39KhnTIh5tM" role="2VODD2">
+        <node concept="2Gpval" id="5te8vJ2H0O8" role="3cqZAp">
+          <node concept="2GrKxI" id="5te8vJ2H0Oa" role="2Gsz3X">
+            <property role="TrG5h" value="reference" />
+          </node>
+          <node concept="3clFbS" id="5te8vJ2H0Oc" role="2LFqv$">
+            <node concept="3clFbF" id="5te8vJ2J_B_" role="3cqZAp">
+              <node concept="2YIFZM" id="5te8vJ2J_Ql" role="3clFbG">
+                <ref role="37wK5l" to="zt8v:5te8vJ2Jmh9" resolve="putUserObjectType" />
+                <ref role="1Pybhc" to="zt8v:8FTmV8DtfS" resolve="CodeGenerationHelper" />
+                <node concept="2GrUjf" id="5te8vJ2J_R4" role="37wK5m">
+                  <ref role="2Gs0qQ" node="5te8vJ2H0Oa" resolve="reference" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5te8vJ2H1Du" role="2GsD0m">
+            <node concept="1Q6Npb" id="5te8vJ2H1zw" role="2Oq$k0" />
+            <node concept="2SmgA7" id="5te8vJ2H1PA" role="2OqNvi">
+              <node concept="chp4Y" id="5te8vJ2H1Q0" role="1dBWTz">
+                <ref role="cht4Q" to="hqsm:39KhnTIfy1V" resolve="BaseVariableReference" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7VhsvEKg2ND" role="3cqZAp" />
         <node concept="2Gpval" id="39KhnTIh5tN" role="3cqZAp">
           <node concept="2GrKxI" id="39KhnTIh5tO" role="2Gsz3X">
             <property role="TrG5h" value="ref" />

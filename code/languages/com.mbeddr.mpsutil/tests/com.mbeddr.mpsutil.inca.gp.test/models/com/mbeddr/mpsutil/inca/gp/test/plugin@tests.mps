@@ -15,6 +15,7 @@
     <import index="pzen" ref="r:25bfb30f-3676-4451-9448-27a17343be80(com.mbeddr.mpsutil.inca.core.runtime.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -119,15 +120,26 @@
       </concept>
     </language>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
+      <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq">
+        <reference id="996292992028507459" name="pattern" index="2nKBpL" />
+        <child id="996292992028507462" name="arguments" index="2nKBpO" />
+      </concept>
+      <concept id="996292992024530426" name="com.mbeddr.mpsutil.inca.core.structure.CheckConstraint" flags="ng" index="2k1Gr8">
+        <child id="996292992025680416" name="expression" index="2kdl4i" />
+      </concept>
       <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReference" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">
         <reference id="768444928085405086" name="variable" index="XkjO9" />
       </concept>
+      <concept id="7802504792141552484" name="com.mbeddr.mpsutil.inca.core.structure.TemporaryVariable" flags="ng" index="2LEkIw" />
       <concept id="266511528377428275" name="com.mbeddr.mpsutil.inca.core.structure.ParameterCommentTag" flags="ng" index="2MMnZx">
         <property id="266511528377428276" name="text" index="2MMnZA" />
         <reference id="266511528377428278" name="parameter" index="2MMnZ$" />
+      </concept>
+      <concept id="7996518772785670958" name="com.mbeddr.mpsutil.inca.core.structure.DataTypeReference" flags="ng" index="2PmbLq">
+        <reference id="7996518772785671445" name="type" index="2PmbDx" />
       </concept>
       <concept id="7241148409043933760" name="com.mbeddr.mpsutil.inca.core.structure.IncaEvaluatorInstantiation" flags="ng" index="2UzQ1s">
         <reference id="7241148409043933812" name="pattern" index="2UzQ1C" />
@@ -152,18 +164,35 @@
         <child id="1925259677761359694" name="bodies" index="3zVECR" />
       </concept>
       <concept id="5024559837613016203" name="com.mbeddr.mpsutil.inca.core.structure.IPatternComment" flags="ng" index="1k99o6" />
+      <concept id="3634481308605751419" name="com.mbeddr.mpsutil.inca.core.structure.BaseVariableReference" flags="ng" index="1sjAk5">
+        <reference id="3634481308605751420" name="variable" index="1sjAk2" />
+      </concept>
+      <concept id="1925259677761400360" name="com.mbeddr.mpsutil.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
+        <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
+      </concept>
       <concept id="5589093812003084634" name="com.mbeddr.mpsutil.inca.core.structure.ConceptConstraint" flags="ng" index="3XlQDJ">
         <reference id="5589093812003084769" name="type" index="3XlQFk" />
         <child id="5589093812003084950" name="var" index="3XlQAz" />
       </concept>
     </language>
     <language id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp">
+      <concept id="996292992024530460" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternCompositionConstraint" flags="ng" index="2k1GkI">
+        <child id="996292992028393460" name="call" index="2nKVj6" />
+      </concept>
+      <concept id="996292992025662526" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternPathExpressionConstraint" flags="ng" index="2kdhWc">
+        <reference id="996292992025662567" name="type" index="2kdhXl" />
+        <child id="996292992025662592" name="src" index="2kdhYM" />
+        <child id="996292992025662599" name="trg" index="2kdhYP" />
+        <child id="1925259677761394831" name="element" index="3zVzRQ" />
+      </concept>
+      <concept id="6509498303003038373" name="com.mbeddr.mpsutil.inca.gp.structure.GPathElement" flags="ng" index="2qPR2i" />
       <concept id="6509498303003796573" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternConceptConstraint" flags="ng" index="2qQGpE" />
       <concept id="1925259677759481645" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternModel" flags="ng" index="3zyO9k" />
       <concept id="1925259677759481823" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPattern" flags="ng" index="3zyOaA" />
       <concept id="1925259677761386650" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternBody" flags="ng" index="3zV_Rz" />
       <concept id="5458164179963307828" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternParameter" flags="ng" index="1VLyLj" />
       <concept id="6151553526979403289" name="com.mbeddr.mpsutil.inca.gp.structure.EmptyGraphPatternContent" flags="ng" index="1XdyHe" />
+      <concept id="6151553526979192892" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternCheckConstraint" flags="ng" index="1XeXPF" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
@@ -455,6 +484,142 @@
         <node concept="2MMnZx" id="z7YXzAeVAI" role="3nqlJM">
           <property role="2MMnZA" value="variable declaration" />
           <ref role="2MMnZ$" node="z7YXzAa3oH" resolve="var" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="nrkjVh50mL" role="1dubk0" />
+    <node concept="3zyOaA" id="nrkjVh50UX" role="1dubk0">
+      <property role="1aKoCf" value="false" />
+      <property role="TrG5h" value="VariableInitializer" />
+      <node concept="3zV_Rz" id="nrkjVh50UY" role="3zVECR">
+        <node concept="2kdhWc" id="nrkjVh6bdS" role="1dgzf0">
+          <ref role="2kdhXl" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+          <node concept="2qPR2i" id="nrkjVh6beE" role="3zVzRQ">
+            <ref role="3zVwH8" to="tpee:fz3vP1I" resolve="initializer" />
+          </node>
+          <node concept="2vme6Z" id="nrkjVh6bfs" role="2kdhYM">
+            <ref role="XkjO9" node="nrkjVh6bam" resolve="var" />
+          </node>
+          <node concept="2vme6Z" id="nrkjVh6bfF" role="2kdhYP">
+            <ref role="XkjO9" node="nrkjVh6bbQ" resolve="initializer" />
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyLj" id="nrkjVh6bam" role="1dv5OJ">
+        <property role="TrG5h" value="var" />
+        <node concept="2kdjtB" id="nrkjVh6bb4" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+        </node>
+      </node>
+      <node concept="1VLyLj" id="nrkjVh6bbQ" role="1dv5OJ">
+        <property role="TrG5h" value="initializer" />
+        <node concept="2kdjtB" id="nrkjVh6bdc" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz3vP1J" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="1aUlWw6Wfgd" role="1dubk0" />
+    <node concept="3zyOaA" id="1aUlWw6Wfry" role="1dubk0">
+      <property role="1aKoCf" value="false" />
+      <property role="TrG5h" value="VariableInitializerWithTrueInitializer" />
+      <node concept="3zV_Rz" id="1aUlWw6Wfrz" role="3zVECR">
+        <node concept="2kdhWc" id="1aUlWw6Wgwl" role="1dgzf0">
+          <ref role="2kdhXl" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+          <node concept="2qPR2i" id="1aUlWw6WgEi" role="3zVzRQ">
+            <ref role="3zVwH8" to="tpee:fz3vP1I" resolve="initializer" />
+          </node>
+          <node concept="2vme6Z" id="1aUlWw6WgL3" role="2kdhYM">
+            <ref role="XkjO9" node="1aUlWw6WfHk" resolve="var" />
+          </node>
+          <node concept="2LEkIw" id="1aUlWw6WgLl" role="2kdhYP">
+            <property role="TrG5h" value="expression" />
+          </node>
+        </node>
+        <node concept="2k1GkI" id="1aUlWw6Wh3$" role="1dgzf0">
+          <node concept="2k1_uq" id="1aUlWw6Wh4a" role="2nKVj6">
+            <ref role="2nKBpL" node="2CjGPkJUiVl" resolve="Boolean" />
+            <node concept="2vme6Z" id="1aUlWw6Wh4A" role="2nKBpO">
+              <ref role="XkjO9" node="1aUlWw6WgLl" resolve="expression" />
+            </node>
+            <node concept="2vme6Z" id="1aUlWw6Whnk" role="2nKBpO">
+              <ref role="XkjO9" node="1aUlWw6WfUz" resolve="initializer" />
+            </node>
+          </node>
+        </node>
+        <node concept="1XeXPF" id="1aUlWw6Whxl" role="1dgzf0">
+          <node concept="1sjAk5" id="1aUlWw6WhF0" role="2kdl4i">
+            <ref role="1sjAk2" node="1aUlWw6WfUz" resolve="initializer" />
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyLj" id="1aUlWw6WfHk" role="1dv5OJ">
+        <property role="TrG5h" value="var" />
+        <node concept="2kdjtB" id="1aUlWw6WfNS" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+        </node>
+      </node>
+      <node concept="1VLyLj" id="1aUlWw6WfUz" role="1dv5OJ">
+        <property role="TrG5h" value="initializer" />
+        <node concept="2PmbLq" id="1aUlWw6Whea" role="1dukDx">
+          <ref role="2PmbDx" to="tpck:fKAQMTB" resolve="boolean" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="nrkjVh6cxj" role="1dubk0" />
+    <node concept="3zyOaA" id="nrkjVh6c$7" role="1dubk0">
+      <property role="1aKoCf" value="false" />
+      <property role="TrG5h" value="Number" />
+      <node concept="3zV_Rz" id="nrkjVh6c$8" role="3zVECR">
+        <node concept="2qQGpE" id="nrkjVh6cKy" role="1dgzf0">
+          <ref role="3XlQFk" to="tpee:3H1xM9LtL2O" resolve="LongLiteral" />
+          <node concept="2vme6Z" id="nrkjVh6cLC" role="3XlQAz">
+            <ref role="XkjO9" node="nrkjVh6cAM" resolve="expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyLj" id="nrkjVh6cAM" role="1dv5OJ">
+        <property role="TrG5h" value="expression" />
+        <node concept="2kdjtB" id="nrkjVh6cQt" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz3vP1J" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="3zV_Rz" id="nrkjVh6kyc" role="3zVECR">
+        <node concept="2qQGpE" id="nrkjVh6k$d" role="1dgzf0">
+          <ref role="3XlQFk" to="tpee:hanubx6" resolve="IntegerLiteral" />
+          <node concept="2vme6Z" id="nrkjVh6kAl" role="3XlQAz">
+            <ref role="XkjO9" node="nrkjVh6cAM" resolve="expression" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="2CjGPkJUiPP" role="1dubk0" />
+    <node concept="3zyOaA" id="2CjGPkJUiVl" role="1dubk0">
+      <property role="1aKoCf" value="false" />
+      <property role="TrG5h" value="Boolean" />
+      <node concept="1VLyLj" id="2CjGPkJUj4T" role="1dv5OJ">
+        <property role="TrG5h" value="expression" />
+        <node concept="2kdjtB" id="2CjGPkJUjaL" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz3vP1J" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="1VLyLj" id="2CjGPkJUjb2" role="1dv5OJ">
+        <property role="TrG5h" value="value" />
+        <node concept="2PmbLq" id="2CjGPkJUnzq" role="1dukDx">
+          <ref role="2PmbDx" to="tpck:fKAQMTB" resolve="boolean" />
+        </node>
+      </node>
+      <node concept="3zV_Rz" id="2CjGPkJUiVm" role="3zVECR">
+        <node concept="2kdhWc" id="1aUlWw6TJlb" role="1dgzf0">
+          <ref role="2kdhXl" to="tpee:fzclF81" resolve="BooleanConstant" />
+          <node concept="2qPR2i" id="1aUlWw6TJs2" role="3zVzRQ">
+            <ref role="3zVwH8" to="tpee:fzclF82" resolve="value" />
+          </node>
+          <node concept="2vme6Z" id="1aUlWw6SIo$" role="2kdhYM">
+            <ref role="XkjO9" node="2CjGPkJUj4T" resolve="expression" />
+          </node>
+          <node concept="2vme6Z" id="1aUlWw6TJtU" role="2kdhYP">
+            <ref role="XkjO9" node="2CjGPkJUjb2" resolve="value" />
+          </node>
         </node>
       </node>
     </node>
