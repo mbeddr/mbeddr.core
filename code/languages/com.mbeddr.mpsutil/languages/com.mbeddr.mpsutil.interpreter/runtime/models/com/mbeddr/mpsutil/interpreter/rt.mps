@@ -11510,5 +11510,25 @@
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
   </node>
+  <node concept="312cEu" id="78hTg1_i6bP">
+    <property role="TrG5h" value="InterpreterEscapeException" />
+    <property role="3GE5qa" value="exception" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="78hTg1_i6bZ" role="jymVt" />
+    <node concept="3clFbW" id="78hTg1_i6c0" role="jymVt">
+      <node concept="3cqZAl" id="78hTg1_i6c1" role="3clF45" />
+      <node concept="3Tm1VV" id="78hTg1_i6c2" role="1B3o_S" />
+      <node concept="3clFbS" id="78hTg1_i6c3" role="3clF47">
+        <node concept="XkiVB" id="78hTg1_i6c4" role="3cqZAp">
+          <ref role="37wK5l" node="9nJ_zCA_67" resolve="InterpreterBaseException" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="78hTg1_i6cn" role="jymVt" />
+    <node concept="3Tm1VV" id="78hTg1_i6dr" role="1B3o_S" />
+    <node concept="3uibUv" id="78hTg1_i6ds" role="1zkMxy">
+      <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
+    </node>
+  </node>
 </model>
 
