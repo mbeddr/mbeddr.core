@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,8 +54,28 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+        <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -111,9 +132,24 @@
     </node>
     <node concept="3t5Usi" id="2rPTijxl$1X" role="V601i">
       <property role="TrG5h" value="tree-transparent-collection" />
+      <property role="iBDjm" value="false" />
       <node concept="10P_77" id="2rPTijxl$3d" role="3t5Oan" />
       <node concept="3clFbT" id="2rPTijxl$3j" role="3t49C2">
         <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="6Z0IExzTWYb" role="V601i">
+      <property role="TrG5h" value="tree-flatten" />
+      <property role="iBDjm" value="false" />
+      <node concept="10P_77" id="6Z0IExzTWYc" role="3t5Oan" />
+      <node concept="3clFbT" id="6Z0IExzTWYd" role="3t49C2">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="3t5Usi" id="7dj$mdOQ2D$" role="V601i">
+      <property role="TrG5h" value="tree-layout" />
+      <node concept="3uibUv" id="7dj$mdORr6h" role="3t5Oan">
+        <ref role="3uigEE" node="7dj$mdORr5K" resolve="ITreeLayoutType" />
       </node>
     </node>
   </node>
@@ -122,6 +158,17 @@
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="3F0ifn" id="7uOgiTdC3O" role="2wV5jI">
       <property role="3F0ifm" value="the editor descriptor is not generated if the editor aspect contains no concept editors or editor components" />
+    </node>
+  </node>
+  <node concept="3HP615" id="7dj$mdORr5K">
+    <property role="TrG5h" value="ITreeLayoutType" />
+    <node concept="3Tm1VV" id="7dj$mdORr5L" role="1B3o_S" />
+    <node concept="3UR2Jj" id="7dj$mdOT44Q" role="lGtFl">
+      <node concept="TZ5HA" id="7dj$mdOT44R" role="TZ5H$">
+        <node concept="1dT_AC" id="7dj$mdOT44S" role="1dT_Ay">
+          <property role="1dT_AB" value="To fix circular dependency between this module and the runtime" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
