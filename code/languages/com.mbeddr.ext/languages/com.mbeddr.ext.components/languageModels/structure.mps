@@ -291,6 +291,10 @@
       <property role="TrG5h" value="mandatory" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="2cSPe2KM0zi" role="1TKVEl">
+      <property role="TrG5h" value="hidden" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7JjETeGbFPQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="componentRestriction" />

@@ -2236,7 +2236,7 @@
   </node>
   <node concept="2S6QgY" id="36Bkyc4fTMc">
     <property role="3GE5qa" value="comp.ports" />
-    <property role="TrG5h" value="setMandatoryPort" />
+    <property role="TrG5h" value="toggleMandatoryPort" />
     <ref role="2ZfgGC" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
     <node concept="2S6ZIM" id="36Bkyc4fTMd" role="2ZfVej">
       <node concept="3clFbS" id="36Bkyc4fTMe" role="2VODD2">
@@ -2270,6 +2270,45 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="36Bkyc4fTMp" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2cSPe2KPXSK">
+    <property role="3GE5qa" value="comp.ports" />
+    <property role="TrG5h" value="toggleHiddenPort" />
+    <ref role="2ZfgGC" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
+    <node concept="2S6ZIM" id="2cSPe2KPXSL" role="2ZfVej">
+      <node concept="3clFbS" id="2cSPe2KPXSM" role="2VODD2">
+        <node concept="3clFbF" id="2cSPe2KPXSN" role="3cqZAp">
+          <node concept="Xl_RD" id="2cSPe2KPXSO" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Hidden" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2cSPe2KPXSP" role="2ZfgGD">
+      <node concept="3clFbS" id="2cSPe2KPXSQ" role="2VODD2">
+        <node concept="3clFbF" id="2cSPe2KPXSR" role="3cqZAp">
+          <node concept="37vLTI" id="2cSPe2KPXSS" role="3clFbG">
+            <node concept="3fqX7Q" id="2cSPe2KPXST" role="37vLTx">
+              <node concept="2OqwBi" id="2cSPe2KPXSU" role="3fr31v">
+                <node concept="2Sf5sV" id="2cSPe2KPXSV" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2cSPe2KPYTw" role="2OqNvi">
+                  <ref role="3TsBF5" to="v7ag:2cSPe2KM0zi" resolve="hidden" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2cSPe2KPXSX" role="37vLTJ">
+              <node concept="2Sf5sV" id="2cSPe2KPXSY" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2cSPe2KPYsc" role="2OqNvi">
+                <ref role="3TsBF5" to="v7ag:2cSPe2KM0zi" resolve="hidden" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="2cSPe2KPXT0" role="lGtFl">
       <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
