@@ -451,6 +451,9 @@
               <node concept="37vLTw" id="7Rf0$0HT7bj" role="37wK5m">
                 <ref role="3cqZAo" node="7Rf0$0HT72Z" resolve="trail" />
               </node>
+              <node concept="37vLTw" id="71901EGGT94" role="37wK5m">
+                <ref role="3cqZAo" node="71901EGGT2s" resolve="witness" />
+              </node>
               <node concept="37vLTw" id="4kcU3Yrmw8h" role="37wK5m">
                 <ref role="3cqZAo" node="4kcU3Yrmw2b" resolve="err" />
               </node>
@@ -465,6 +468,10 @@
       <node concept="37vLTG" id="7Rf0$0HT72Z" role="3clF46">
         <property role="TrG5h" value="trail" />
         <node concept="17QB3L" id="7Rf0$0HT7b0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="71901EGGT2s" role="3clF46">
+        <property role="TrG5h" value="witness" />
+        <node concept="17QB3L" id="71901EGGT7x" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="3Ymokd9FfxU" role="3clF46">
         <property role="TrG5h" value="res" />
@@ -603,9 +610,6 @@
       <property role="TrG5h" value="appendResult" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7XCY$_raVG_" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3clFbS" id="7F8$WoVMof4" role="3clF47">
         <node concept="3cpWs8" id="7XCY$_raV9f" role="3cqZAp">
           <node concept="3cpWsn" id="7XCY$_raV9g" role="3cpWs9">
@@ -644,6 +648,14 @@
                 </node>
                 <node concept="2OwXpG" id="7Rf0$0HT4xm" role="2OqNvi">
                   <ref role="2Oxat5" to="5do7:7Rf0$0HT2cv" resolve="trailOutput" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="71901EGHXOR" role="2XxRq1">
+                <node concept="37vLTw" id="71901EGHXuQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
+                </node>
+                <node concept="liA8E" id="71901EGI4VH" role="2OqNvi">
+                  <ref role="37wK5l" to="5do7:71901EGHZ_j" resolve="getWhiteness" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1wu5Hv6fFZl" role="2XxRq1">
@@ -690,6 +702,9 @@
       <node concept="2AHcQZ" id="7F8$WoVVmUn" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="NWlO9" id="7XCY$_raVG_" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoW2$45" role="jymVt" />
     <node concept="3clFb_" id="7F8$WoW2$AJ" role="jymVt">
@@ -697,9 +712,6 @@
       <property role="TrG5h" value="presentResults" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7XCY$_raVQ7" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3clFbS" id="7F8$WoW2$AK" role="3clF47">
         <node concept="3clFbJ" id="6izRX53r8Hs" role="3cqZAp">
           <node concept="3clFbS" id="6izRX53r8Ht" role="3clFbx">
@@ -747,6 +759,9 @@
       <node concept="2AHcQZ" id="7F8$WoW2$AU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="NWlO9" id="7XCY$_raVQ7" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvCNHo4" role="jymVt" />
     <node concept="3clFb_" id="2UdJgvCNFe3" role="jymVt">
@@ -754,9 +769,6 @@
       <property role="TrG5h" value="clearResults" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7XCY$_raVZp" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3clFbS" id="2UdJgvCNFe4" role="3clF47">
         <node concept="3clFbF" id="1wu5Hv6fLPL" role="3cqZAp">
           <node concept="2OqwBi" id="1wu5Hv6fLS5" role="3clFbG">
@@ -772,6 +784,9 @@
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="Xl_RD" id="1wu5Hv6fM6R" role="2XxRq1">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="Xl_RD" id="71901EGGTuA" role="2XxRq1">
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="Xl_RD" id="1wu5Hv6fM8h" role="2XxRq1">
@@ -795,6 +810,9 @@
       <node concept="3cqZAl" id="2UdJgvCNFeb" role="3clF45" />
       <node concept="2AHcQZ" id="2UdJgvCNFec" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="7XCY$_raVZp" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvD7wtL" role="jymVt" />

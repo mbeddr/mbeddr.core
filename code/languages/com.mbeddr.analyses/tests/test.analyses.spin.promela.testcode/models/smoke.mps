@@ -181,21 +181,21 @@
   <node concept="2v9HqL" id="GpUw9Sa0vT">
     <node concept="1gr5cj" id="7Rf0$0HJr7F" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="atomic" />
+      <property role="TrG5h" value="pan_atomic" />
       <node concept="2v9HqM" id="7Rf0$0HJrpm" role="2eOfOg">
         <ref role="2v9HqP" node="7_$cGNhSjVT" resolve="atomic" />
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRut" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="alternating_protocol" />
+      <property role="TrG5h" value="pan_alternating_protocol" />
       <node concept="2v9HqM" id="7Rf0$0HKRuJ" role="2eOfOg">
         <ref role="2v9HqP" node="7_$cGNhPY8A" resolve="alternating_protocol" />
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRv4" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="ltl_properties" />
+      <property role="TrG5h" value="pan_ltl_properties" />
       <node concept="2v9HqM" id="7Rf0$0HKXn1" role="2eOfOg">
         <ref role="2v9HqP" node="6rTOrQxaP_1" resolve="ltl_properties" />
       </node>

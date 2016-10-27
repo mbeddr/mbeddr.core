@@ -224,6 +224,20 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7Rf0$0HTclk" role="jymVt" />
+    <node concept="312cEg" id="71901EGG_9p" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="witnessText" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="71901EGG_9q" role="1B3o_S" />
+      <node concept="3uibUv" id="71901EGG_9r" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
+      </node>
+      <node concept="NWlO9" id="71901EGG_9s" role="lGtFl">
+        <property role="NWlVz" value="Text area containing the whiteness (e.g. inputs and outputs of SUT)." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="71901EGG$FD" role="jymVt" />
     <node concept="312cEg" id="4kcU3YrmsGl" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -282,6 +296,22 @@
                 <property role="Xl_RC" value="Trail" />
               </node>
               <node concept="3clFbT" id="3DDJouLFWdk" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="71901EGGA9J" role="3cqZAp">
+          <node concept="37vLTI" id="71901EGGA9K" role="3clFbG">
+            <node concept="37vLTw" id="71901EGGGKf" role="37vLTJ">
+              <ref role="3cqZAo" node="71901EGG_9p" resolve="witnessText" />
+            </node>
+            <node concept="1rXfSq" id="71901EGGA9M" role="37vLTx">
+              <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
+              <node concept="Xl_RD" id="71901EGGA9N" role="37wK5m">
+                <property role="Xl_RC" value="Whiteness" />
+              </node>
+              <node concept="3clFbT" id="71901EGGA9O" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
             </node>
@@ -426,6 +456,27 @@
                                   <node concept="3zACq4" id="3Hm$$iWhTMR" role="3cqZAp" />
                                 </node>
                               </node>
+                              <node concept="3KbdKl" id="71901EGGJnz" role="3KbHQx">
+                                <node concept="3clFbS" id="71901EGGJn_" role="3Kbo56">
+                                  <node concept="3clFbF" id="71901EGGMaF" role="3cqZAp">
+                                    <node concept="2OqwBi" id="71901EGGMaG" role="3clFbG">
+                                      <node concept="37vLTw" id="71901EGGMaH" role="2Oq$k0">
+                                        <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+                                      </node>
+                                      <node concept="liA8E" id="71901EGGMaI" role="2OqNvi">
+                                        <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
+                                        <node concept="37vLTw" id="71901EGGNv_" role="37wK5m">
+                                          <ref role="3cqZAo" node="71901EGG_9p" resolve="witnessText" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="71901EGGMaK" role="3cqZAp" />
+                                </node>
+                                <node concept="3cmrfG" id="71901EGGM56" role="3Kbmr1">
+                                  <property role="3cmrfH" value="2" />
+                                </node>
+                              </node>
                               <node concept="3KbdKl" id="1agNx8KJYVH" role="3KbHQx">
                                 <node concept="3clFbS" id="1agNx8KJYVJ" role="3Kbo56">
                                   <node concept="3clFbF" id="1agNx8KJZiw" role="3cqZAp">
@@ -443,8 +494,8 @@
                                   </node>
                                   <node concept="3zACq4" id="3Hm$$iWi1tc" role="3cqZAp" />
                                 </node>
-                                <node concept="3cmrfG" id="3DDJouLDSiy" role="3Kbmr1">
-                                  <property role="3cmrfH" value="2" />
+                                <node concept="3cmrfG" id="71901EGGKyX" role="3Kbmr1">
+                                  <property role="3cmrfH" value="3" />
                                 </node>
                               </node>
                               <node concept="3KbdKl" id="3Hm$$iWhUoq" role="3KbHQx">
@@ -463,8 +514,8 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3cmrfG" id="3DDJouLDSOP" role="3Kbmr1">
-                                  <property role="3cmrfH" value="3" />
+                                <node concept="3cmrfG" id="71901EGGLhf" role="3Kbmr1">
+                                  <property role="3cmrfH" value="4" />
                                 </node>
                               </node>
                             </node>
@@ -546,6 +597,30 @@
           </node>
         </node>
         <node concept="3clFbH" id="7Rf0$0HTc1x" role="3cqZAp" />
+        <node concept="3clFbF" id="71901EGGP0j" role="3cqZAp">
+          <node concept="2OqwBi" id="71901EGGP0k" role="3clFbG">
+            <node concept="37vLTw" id="71901EGGQAJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="71901EGG_9p" resolve="witnessText" />
+            </node>
+            <node concept="liA8E" id="71901EGGP0m" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <node concept="37vLTw" id="71901EGGR8z" role="37wK5m">
+                <ref role="3cqZAo" node="71901EGGObw" resolve="witness" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="71901EGGP0o" role="3cqZAp">
+          <node concept="2OqwBi" id="71901EGGP0p" role="3clFbG">
+            <node concept="37vLTw" id="71901EGGSE6" role="2Oq$k0">
+              <ref role="3cqZAo" node="71901EGG_9p" resolve="witnessText" />
+            </node>
+            <node concept="liA8E" id="71901EGGP0r" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~JTextComponent.updateUI():void" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="71901EGGOS6" role="3cqZAp" />
         <node concept="3clFbF" id="4kcU3YrmuT9" role="3cqZAp">
           <node concept="2OqwBi" id="4kcU3YrmuTa" role="3clFbG">
             <node concept="37vLTw" id="4kcU3YrmvnC" role="2Oq$k0">
@@ -607,6 +682,10 @@
       <node concept="37vLTG" id="7Rf0$0HTf3T" role="3clF46">
         <property role="TrG5h" value="trail" />
         <node concept="17QB3L" id="7Rf0$0HTfkD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="71901EGGObw" role="3clF46">
+        <property role="TrG5h" value="witness" />
+        <node concept="17QB3L" id="71901EGGOO7" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="4kcU3YrmuEo" role="3clF46">
         <property role="TrG5h" value="err" />
