@@ -80,13 +80,13 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -330,8 +330,8 @@
       <node concept="17QB3L" id="3x0R1LJ06jw" role="3clF45" />
       <node concept="3Tm1VV" id="3x0R1LJ06jx" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ06jy" role="3clF47">
-        <node concept="3cpWs6" id="3x0R1LJ06jz" role="3cqZAp">
-          <node concept="3P9mCS" id="3x0R1LJ06j$" role="3cqZAk">
+        <node concept="3cpWs6" id="2_0vIjrVmyj" role="3cqZAp">
+          <node concept="1rXfSq" id="2_0vIjrVmIi" role="3cqZAk">
             <ref role="37wK5l" node="3x0R1LJ06jf" resolve="getFunctionName" />
           </node>
         </node>
@@ -519,8 +519,8 @@
       <node concept="17QB3L" id="3x0R1LJ06md" role="3clF45" />
       <node concept="3Tm1VV" id="3x0R1LJ06me" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ06mf" role="3clF47">
-        <node concept="3cpWs6" id="3x0R1LJ06mg" role="3cqZAp">
-          <node concept="3P9mCS" id="3x0R1LJ06mh" role="3cqZAk">
+        <node concept="3cpWs6" id="2_0vIjrVlYY" role="3cqZAp">
+          <node concept="1rXfSq" id="2_0vIjrVmaH" role="3cqZAk">
             <ref role="37wK5l" node="3x0R1LJ06lW" resolve="getFunctionName" />
           </node>
         </node>
@@ -639,8 +639,8 @@
       <node concept="3Tm1VV" id="7uiPZBC1oYo" role="1B3o_S" />
       <node concept="17QB3L" id="7uiPZBC1oYp" role="3clF45" />
       <node concept="3clFbS" id="7uiPZBC1oYq" role="3clF47">
-        <node concept="3cpWs6" id="7uiPZBC1oYr" role="3cqZAp">
-          <node concept="3P9mCS" id="7uiPZBC1oYs" role="3cqZAk">
+        <node concept="3cpWs6" id="2_0vIjrVl2Q" role="3cqZAp">
+          <node concept="1rXfSq" id="2_0vIjrVldV" role="3cqZAk">
             <ref role="37wK5l" node="7uiPZBC1oY9" resolve="getVarName" />
           </node>
         </node>
@@ -653,8 +653,8 @@
       <node concept="17QB3L" id="7uiPZBC1oYv" role="3clF45" />
       <node concept="3Tm1VV" id="7uiPZBC1oYw" role="1B3o_S" />
       <node concept="3clFbS" id="7uiPZBC1oYx" role="3clF47">
-        <node concept="3cpWs6" id="7uiPZBC1oYy" role="3cqZAp">
-          <node concept="3P9mCS" id="7uiPZBC1oYz" role="3cqZAk">
+        <node concept="3cpWs6" id="2_0vIjrVltG" role="3cqZAp">
+          <node concept="1rXfSq" id="2_0vIjrVlCL" role="3cqZAk">
             <ref role="37wK5l" node="7uiPZBC1oYg" resolve="getVarValue" />
           </node>
         </node>

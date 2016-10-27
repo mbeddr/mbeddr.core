@@ -4110,22 +4110,22 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2bbAj1H2KXo" role="3cqZAp">
-              <node concept="2YIFZM" id="2bbAj1H2L2G" role="3clFbG">
-                <ref role="1Pybhc" to="i8bi:5IkW5anFfnn" resolve="SPropertyOperations" />
-                <ref role="37wK5l" to="i8bi:5IkW5anFfnt" resolve="set" />
-                <node concept="37vLTw" id="2bbAj1H4bm_" role="37wK5m">
+            <node concept="3clFbF" id="60FTbDhE3F4" role="3cqZAp">
+              <node concept="2YIFZM" id="60FTbDhE3Xr" role="3clFbG">
+                <ref role="1Pybhc" to="mhbf:~SNodeAccessUtil" resolve="SNodeAccessUtil" />
+                <ref role="37wK5l" to="mhbf:~SNodeAccessUtil.setProperty(org.jetbrains.mps.openapi.model.SNode,java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <node concept="37vLTw" id="60FTbDhE3Yw" role="37wK5m">
                   <ref role="3cqZAo" node="2bbAj1H48MF" resolve="aNode" />
                 </node>
-                <node concept="2OqwBi" id="2bbAj1Hnmc4" role="37wK5m">
-                  <node concept="2GrUjf" id="2bbAj1H2RlR" role="2Oq$k0">
+                <node concept="2OqwBi" id="60FTbDhE48G" role="37wK5m">
+                  <node concept="2GrUjf" id="60FTbDhE409" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="2bbAj1H1TET" resolve="pd" />
                   </node>
-                  <node concept="3TrcHB" id="2bbAj1HnnLI" role="2OqNvi">
+                  <node concept="3TrcHB" id="60FTbDhE4u9" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="2bbAj1H7G3q" role="37wK5m">
+                <node concept="37vLTw" id="60FTbDhE4va" role="37wK5m">
                   <ref role="3cqZAo" node="2bbAj1H7F6l" resolve="value" />
                 </node>
               </node>
