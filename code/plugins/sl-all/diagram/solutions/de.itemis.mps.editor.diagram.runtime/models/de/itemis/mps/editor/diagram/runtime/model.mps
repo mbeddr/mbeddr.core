@@ -272,7 +272,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -12786,6 +12786,11 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="6RF5hek6cmT" role="jymVt">
+      <property role="TrG5h" value="mySNode" />
+      <node concept="3Tm6S6" id="6RF5hek6cmU" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6RF5hek6dHO" role="1tU5fm" />
+    </node>
     <node concept="2tJIrI" id="2BjZSlQCuKH" role="jymVt" />
     <node concept="312cEg" id="3FRjz$vnNqv" role="jymVt">
       <property role="TrG5h" value="myRelativeX" />
@@ -13926,6 +13931,41 @@
             <node concept="37vLTw" id="6U8jGBYia5n" role="37vLTJ">
               <ref role="3cqZAo" node="6U8jGBYhL42" resolve="myOrdinal" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6RF5hek6dPG" role="jymVt" />
+    <node concept="3clFb_" id="6RF5hek6fnU" role="jymVt">
+      <property role="TrG5h" value="setSNode" />
+      <node concept="37vLTG" id="6RF5hek6ktM" role="3clF46">
+        <property role="TrG5h" value="snode" />
+        <node concept="3Tqbb2" id="6RF5hek6lvG" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="6RF5hek6fnW" role="3clF45" />
+      <node concept="3Tm1VV" id="6RF5hek6fnX" role="1B3o_S" />
+      <node concept="3clFbS" id="6RF5hek6fnY" role="3clF47">
+        <node concept="3clFbF" id="6RF5hek6mfa" role="3cqZAp">
+          <node concept="37vLTI" id="6RF5hek6mE5" role="3clFbG">
+            <node concept="37vLTw" id="6RF5hek6mWf" role="37vLTx">
+              <ref role="3cqZAo" node="6RF5hek6ktM" resolve="snode" />
+            </node>
+            <node concept="37vLTw" id="6RF5hek6mf9" role="37vLTJ">
+              <ref role="3cqZAo" node="6RF5hek6cmT" resolve="mySNode" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6RF5hek6n06" role="jymVt" />
+    <node concept="3clFb_" id="6RF5hek6o$d" role="jymVt">
+      <property role="TrG5h" value="getSNode" />
+      <node concept="3Tqbb2" id="6RF5hek6t98" role="3clF45" />
+      <node concept="3Tm1VV" id="6RF5hek6o$g" role="1B3o_S" />
+      <node concept="3clFbS" id="6RF5hek6o$h" role="3clF47">
+        <node concept="3clFbF" id="6RF5hek6uD6" role="3cqZAp">
+          <node concept="37vLTw" id="6RF5hek6uD5" role="3clFbG">
+            <ref role="3cqZAo" node="6RF5hek6cmT" resolve="mySNode" />
           </node>
         </node>
       </node>
@@ -18131,7 +18171,6 @@
     <node concept="2tJIrI" id="4teJTSBx7QQ" role="jymVt" />
     <node concept="3clFb_" id="7jhYr4hvr55" role="jymVt">
       <property role="TrG5h" value="toSModel_" />
-      <node concept="3Tmbuc" id="4rMwD1WkcGb" role="1B3o_S" />
       <node concept="37vLTG" id="iiBXaOL53v" role="3clF46">
         <property role="TrG5h" value="diagramECell" />
         <property role="3TUv4t" value="true" />
@@ -18143,6 +18182,7 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7jhYr4hvr57" role="3clF45" />
+      <node concept="3Tmbuc" id="4rMwD1WkcGb" role="1B3o_S" />
       <node concept="3clFbS" id="7jhYr4hvr59" role="3clF47">
         <node concept="3clFbF" id="ywgKCS6xLh" role="3cqZAp">
           <node concept="2OqwBi" id="ywgKCS6zdk" role="3clFbG">

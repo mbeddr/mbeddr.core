@@ -240,18 +240,18 @@
   </node>
   <node concept="13Gd1p" id="6fGXG$6dmgU">
     <property role="13GOwg" value="7" />
-    <property role="13Gz9I" value="1000" />
+    <property role="13Gz9I" value="100" />
     <property role="TrG5h" value="config" />
     <property role="1s6Q3N" value="2" />
     <property role="20wqWe" value="5" />
     <node concept="BaHAS" id="6fGXG$6dmgV" role="1saM0L">
-      <property role="BaHAW" value="res" />
+      <property role="BaHAW" value="com.mbeddr.lantest.testdata.res" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="1emTa" id="6fGXG$6dmjf" role="1emjp" />
     <node concept="3CPef5" id="6fGXG$6dmjk" role="3CPbyU" />
     <node concept="BaHAS" id="6fGXG$6dmgZ" role="1llUH_">
-      <property role="BaHAW" value="tmp" />
+      <property role="BaHAW" value="com.mbeddr.lantest.testdata.temp" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="fhwn3" id="6fGXG$6dmh8" role="fhwmk">
