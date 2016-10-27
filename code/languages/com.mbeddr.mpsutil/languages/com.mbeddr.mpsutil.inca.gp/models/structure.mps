@@ -213,13 +213,15 @@
   </node>
   <node concept="1TIwiD" id="1i65yRAR_fk">
     <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="GCompareConstraint" />
-    <property role="34LRSv" value="compare" />
+    <property role="TrG5h" value="GraphPatternCompareConstraint" />
     <property role="R4oN_" value="Compare Constraint" />
     <property role="EcuMT" value="1478893914040456148" />
     <ref role="1TJDcQ" to="hqsm:RjyNapPkSb" resolve="CompareConstraint" />
     <node concept="PrWs8" id="5luHlsCpmwD" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
+    </node>
+    <node concept="PrWs8" id="62ABz02UgVZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="5luHlsCpmwA">
@@ -285,6 +287,25 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IZiQsKumsP" role="PzmwI">
       <ref role="PrY4T" to="hqsm:4IZiQsKumaj" resolve="IParameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4YtCEG_OXM_">
+    <property role="EcuMT" value="5736920356297628837" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="ValueWrapperConstraint" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4YtCEG_OXNq" role="1TKVEi">
+      <property role="IQ2ns" value="5736920356297628890" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="hqsm:1i65yRAWiCQ" resolve="IValue" />
+    </node>
+    <node concept="PrWs8" id="4YtCEG_OXMA" role="PzmwI">
+      <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
+    </node>
+    <node concept="PrWs8" id="4YtCEG_OXNk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
 </model>

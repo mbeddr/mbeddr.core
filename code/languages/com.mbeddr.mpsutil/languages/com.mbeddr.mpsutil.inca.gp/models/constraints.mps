@@ -12,6 +12,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -65,6 +66,12 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
@@ -236,12 +243,27 @@
     <ref role="1M2myG" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="osYL8" id="5luHlsCpmx0" role="1MLXOK">
       <node concept="3clFbS" id="5luHlsCpmx1" role="2VODD2">
+        <node concept="3SKdUt" id="4YtCEG_OVGj" role="3cqZAp">
+          <node concept="3SKdUq" id="4YtCEG_OVGl" role="3SKWNk">
+            <property role="3SKdUp" value="the second part is required for the compare constraint to be able to wrap" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="5luHlsCrJDB" role="3cqZAp">
-          <node concept="2OqwBi" id="5luHlsCrJDC" role="3cqZAk">
-            <node concept="otxO1" id="5luHlsCrJDE" role="2Oq$k0" />
-            <node concept="2Zo12i" id="5luHlsCrJDG" role="2OqNvi">
-              <node concept="chp4Y" id="5luHlsCrJKP" role="2Zo12j">
-                <ref role="cht4Q" to="55iy:5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
+          <node concept="22lmx$" id="4YtCEG_ORDY" role="3cqZAk">
+            <node concept="2OqwBi" id="4YtCEG_OUKG" role="3uHU7w">
+              <node concept="otxO1" id="4YtCEG_OUzS" role="2Oq$k0" />
+              <node concept="2Zo12i" id="4YtCEG_OVdE" role="2OqNvi">
+                <node concept="chp4Y" id="4YtCEG_OVnB" role="2Zo12j">
+                  <ref role="cht4Q" to="hqsm:1i65yRAWiCQ" resolve="IValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5luHlsCrJDC" role="3uHU7B">
+              <node concept="otxO1" id="5luHlsCrJDE" role="2Oq$k0" />
+              <node concept="2Zo12i" id="5luHlsCrJDG" role="2OqNvi">
+                <node concept="chp4Y" id="5luHlsCrJKP" role="2Zo12j">
+                  <ref role="cht4Q" to="55iy:5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
+                </node>
               </node>
             </node>
           </node>

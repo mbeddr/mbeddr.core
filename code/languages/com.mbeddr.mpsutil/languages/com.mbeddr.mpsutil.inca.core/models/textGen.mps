@@ -75,27 +75,9 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="5GtYjzcawvI">
-    <property role="3GE5qa" value="values" />
-    <ref role="WuzLi" to="hqsm:5HxP2lv3qME" resolve="DoubleValue" />
-    <node concept="11bSqf" id="5GtYjzcawvJ" role="11c4hB">
-      <node concept="3clFbS" id="5GtYjzcawvK" role="2VODD2">
-        <node concept="lc7rE" id="5GtYjzcaww7" role="3cqZAp">
-          <node concept="l9hG8" id="5GtYjzcawwt" role="lcghm">
-            <node concept="2OqwBi" id="5GtYjzcaw$b" role="lb14g">
-              <node concept="117lpO" id="5GtYjzcawxP" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5GtYjzcawUC" role="2OqNvi">
-                <ref role="3TsBF5" to="hqsm:5HxP2lv63n5" resolve="value" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="5GtYjzcawXg">
     <property role="3GE5qa" value="values" />
-    <ref role="WuzLi" to="hqsm:RjyNapPtyP" resolve="IntValue" />
+    <ref role="WuzLi" to="hqsm:RjyNapPtyP" resolve="NumberValue" />
     <node concept="11bSqf" id="5GtYjzcawXh" role="11c4hB">
       <node concept="3clFbS" id="5GtYjzcawXi" role="2VODD2">
         <node concept="lc7rE" id="5GtYjzcawXD" role="3cqZAp">

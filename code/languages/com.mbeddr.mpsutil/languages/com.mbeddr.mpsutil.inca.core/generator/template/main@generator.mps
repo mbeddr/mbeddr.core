@@ -100,9 +100,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -303,7 +300,7 @@
     <property role="TrG5h" value="baselanguage_access" />
     <property role="3GE5qa" value="" />
     <node concept="3aamgX" id="8FTmV8DEwJ" role="3acgRq">
-      <ref role="30HIoZ" to="hqsm:6hXIxNuWHD0" resolve="MPSIncQueryMatcherInstantiation" />
+      <ref role="30HIoZ" to="hqsm:6hXIxNuWHD0" resolve="IncaEvaluatorInstantiation" />
       <node concept="1Koe21" id="8FTmV8DFZ0" role="1lVwrX">
         <node concept="312cEu" id="8FTmV8DG53" role="1Koe22">
           <property role="2bfB8j" value="true" />
@@ -427,7 +424,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="6trdyn5yzd1" role="3acgRq">
-      <ref role="30HIoZ" to="hqsm:7wcU5h3ekti" resolve="MPSIncQueryMatcher" />
+      <ref role="30HIoZ" to="hqsm:7wcU5h3ekti" resolve="IncaEvaluator" />
       <node concept="1Koe21" id="6trdyn5yAvc" role="1lVwrX">
         <node concept="3uibUv" id="6trdyn5yBl6" role="1Koe22">
           <ref role="3uigEE" to="h57a:~ViatraQueryMatcher" resolve="ViatraQueryMatcher" />
@@ -1444,7 +1441,7 @@
     <property role="TrG5h" value="switch_TemporaryVariableInstantiation" />
     <node concept="3aamgX" id="mbIjfCmdCc" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hqsm:RjyNapPtyP" resolve="IntValue" />
+      <ref role="30HIoZ" to="hqsm:RjyNapPtyP" resolve="NumberValue" />
       <node concept="1Koe21" id="mbIjfCmdCg" role="1lVwrX">
         <node concept="3clFb_" id="mbIjfCmdCq" role="1Koe22">
           <property role="TrG5h" value="genMethod" />
@@ -1467,22 +1464,18 @@
                 </node>
                 <node concept="liA8E" id="mbIjfCmfym" role="2OqNvi">
                   <ref role="37wK5l" to="6a0m:~PBody.newConstantVariable(java.lang.Object):org.eclipse.viatra.query.runtime.matchers.psystem.PVariable" resolve="newConstantVariable" />
-                  <node concept="2YIFZM" id="5Kgle5Pg5zo" role="37wK5m">
-                    <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
-                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                    <node concept="3cmrfG" id="mbIjfCmfzm" role="37wK5m">
-                      <property role="3cmrfH" value="10" />
-                      <node concept="17Uvod" id="mbIjfCmfGK" role="lGtFl">
-                        <property role="2qtEX9" value="value" />
-                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
-                        <node concept="3zFVjK" id="mbIjfCmfGL" role="3zH0cK">
-                          <node concept="3clFbS" id="mbIjfCmfGM" role="2VODD2">
-                            <node concept="3clFbF" id="mbIjfCmg6t" role="3cqZAp">
-                              <node concept="2OqwBi" id="mbIjfCmge7" role="3clFbG">
-                                <node concept="30H73N" id="mbIjfCmg6s" role="2Oq$k0" />
-                                <node concept="3TrcHB" id="mbIjfCmgSd" role="2OqNvi">
-                                  <ref role="3TsBF5" to="hqsm:RjyNapPtyQ" resolve="value" />
-                                </node>
+                  <node concept="Xl_RD" id="4YtCEG_UDgF" role="37wK5m">
+                    <property role="Xl_RC" value="value" />
+                    <node concept="17Uvod" id="4YtCEG_UDls" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="4YtCEG_UDlt" role="3zH0cK">
+                        <node concept="3clFbS" id="4YtCEG_UDlu" role="2VODD2">
+                          <node concept="3cpWs6" id="4YtCEG_UDv7" role="3cqZAp">
+                            <node concept="2OqwBi" id="4YtCEG_UDGy" role="3cqZAk">
+                              <node concept="30H73N" id="4YtCEG_UDvl" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="4YtCEG_UDUz" role="2OqNvi">
+                                <ref role="3TsBF5" to="hqsm:RjyNapPtyQ" resolve="value" />
                               </node>
                             </node>
                           </node>
@@ -1525,18 +1518,18 @@
                 <node concept="liA8E" id="mbIjfCmhfi" role="2OqNvi">
                   <ref role="37wK5l" to="6a0m:~PBody.newConstantVariable(java.lang.Object):org.eclipse.viatra.query.runtime.matchers.psystem.PVariable" resolve="newConstantVariable" />
                   <node concept="Xl_RD" id="mbIjfCmi2R" role="37wK5m">
-                    <property role="Xl_RC" value="str" />
+                    <property role="Xl_RC" value="value" />
                     <node concept="17Uvod" id="mbIjfCmi89" role="lGtFl">
                       <property role="2qtEX9" value="value" />
                       <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                       <node concept="3zFVjK" id="mbIjfCmi8c" role="3zH0cK">
                         <node concept="3clFbS" id="mbIjfCmi8d" role="2VODD2">
-                          <node concept="3clFbF" id="mbIjfCmi8j" role="3cqZAp">
-                            <node concept="2OqwBi" id="mbIjfCmi8e" role="3clFbG">
-                              <node concept="3TrcHB" id="mbIjfCmi8h" role="2OqNvi">
+                          <node concept="3cpWs6" id="4YtCEG_UF$F" role="3cqZAp">
+                            <node concept="2OqwBi" id="4YtCEG_UF$G" role="3cqZAk">
+                              <node concept="3TrcHB" id="4YtCEG_UF$H" role="2OqNvi">
                                 <ref role="3TsBF5" to="hqsm:RjyNapPt$B" resolve="value" />
                               </node>
-                              <node concept="30H73N" id="mbIjfCmi8i" role="2Oq$k0" />
+                              <node concept="30H73N" id="4YtCEG_UF$I" role="2Oq$k0" />
                             </node>
                           </node>
                         </node>
@@ -1587,10 +1580,10 @@
                         <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123137/1068580123138" />
                         <node concept="3zFVjK" id="mbIjfCoMtX" role="3zH0cK">
                           <node concept="3clFbS" id="mbIjfCoMtY" role="2VODD2">
-                            <node concept="3clFbF" id="mbIjfCoME5" role="3cqZAp">
-                              <node concept="2OqwBi" id="mbIjfCoMJ3" role="3clFbG">
-                                <node concept="30H73N" id="mbIjfCoME4" role="2Oq$k0" />
-                                <node concept="3TrcHB" id="mbIjfCoNep" role="2OqNvi">
+                            <node concept="3cpWs6" id="4YtCEG_UEQk" role="3cqZAp">
+                              <node concept="2OqwBi" id="4YtCEG_UEQl" role="3cqZAk">
+                                <node concept="30H73N" id="4YtCEG_UEQm" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="4YtCEG_UEQn" role="2OqNvi">
                                   <ref role="3TsBF5" to="hqsm:RjyNapPtG6" resolve="value" />
                                 </node>
                               </node>
@@ -1604,59 +1597,6 @@
                 <node concept="raruj" id="mbIjfCoM8f" role="lGtFl" />
               </node>
               <node concept="15s5l7" id="6$TCdl684IA" role="lGtFl" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3aamgX" id="mbIjfCoNxz" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hqsm:5HxP2lv3qME" resolve="DoubleValue" />
-      <node concept="1Koe21" id="mbIjfCoNz9" role="1lVwrX">
-        <node concept="3clFb_" id="mbIjfCoN$h" role="1Koe22">
-          <property role="TrG5h" value="genMethod" />
-          <node concept="3cqZAl" id="mbIjfCoN$i" role="3clF45" />
-          <node concept="3Tm1VV" id="mbIjfCoN$j" role="1B3o_S" />
-          <node concept="3clFbS" id="mbIjfCoN$k" role="3clF47">
-            <node concept="3cpWs8" id="mbIjfCoN$l" role="3cqZAp">
-              <node concept="3cpWsn" id="mbIjfCoN$m" role="3cpWs9">
-                <property role="TrG5h" value="body" />
-                <node concept="3uibUv" id="6$TCdl5ePzt" role="1tU5fm">
-                  <ref role="3uigEE" to="6a0m:~PBody" resolve="PBody" />
-                </node>
-                <node concept="10Nm6u" id="mbIjfCoN$o" role="33vP2m" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="mbIjfCoN$q" role="3cqZAp">
-              <node concept="2OqwBi" id="mbIjfCoN$r" role="3clFbG">
-                <node concept="37vLTw" id="mbIjfCoN$s" role="2Oq$k0">
-                  <ref role="3cqZAo" node="mbIjfCoN$m" resolve="body" />
-                </node>
-                <node concept="liA8E" id="mbIjfCoN$t" role="2OqNvi">
-                  <ref role="37wK5l" to="6a0m:~PBody.newConstantVariable(java.lang.Object):org.eclipse.viatra.query.runtime.matchers.psystem.PVariable" resolve="newConstantVariable" />
-                  <node concept="Xl_RD" id="mbIjfCoXxU" role="37wK5m">
-                    <property role="Xl_RC" value="value" />
-                    <node concept="17Uvod" id="mbIjfCoXYA" role="lGtFl">
-                      <property role="2qtEX9" value="value" />
-                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                      <node concept="3zFVjK" id="mbIjfCoXYB" role="3zH0cK">
-                        <node concept="3clFbS" id="mbIjfCoXYC" role="2VODD2">
-                          <node concept="3clFbF" id="mbIjfCoYdb" role="3cqZAp">
-                            <node concept="2OqwBi" id="mbIjfCoYhJ" role="3clFbG">
-                              <node concept="30H73N" id="mbIjfCoYda" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="mbIjfCoYxK" role="2OqNvi">
-                                <ref role="3TsBF5" to="hqsm:5HxP2lv63n5" resolve="value" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="raruj" id="mbIjfCoN$A" role="lGtFl" />
-              </node>
-              <node concept="15s5l7" id="6$TCdl684UG" role="lGtFl" />
             </node>
           </node>
         </node>

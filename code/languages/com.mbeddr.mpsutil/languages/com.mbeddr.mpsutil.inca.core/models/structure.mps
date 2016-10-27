@@ -540,7 +540,7 @@
   <node concept="1TIwiD" id="RjyNapPtG5">
     <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="BoolValue" />
-    <property role="R5$K7" value="true" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="996292992024566533" />
     <ref role="1TJDcQ" node="RjyNapPty$" resolve="LiteralValueReference" />
@@ -570,23 +570,11 @@
     <property role="EcuMT" value="996292992024567022" />
     <ref role="1TJDcQ" node="RjyNapPtNq" resolve="AggregatorExpression" />
   </node>
-  <node concept="1TIwiD" id="5HxP2lv3qME">
-    <property role="3GE5qa" value="values" />
-    <property role="TrG5h" value="DoubleValue" />
-    <property role="34LRSv" value="double" />
-    <property role="EcuMT" value="6584777387165985962" />
-    <ref role="1TJDcQ" node="RjyNapPty$" resolve="LiteralValueReference" />
-    <node concept="1TJgyi" id="5HxP2lv63n5" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <property role="IQ2nx" value="6584777387166676421" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4QgsNmKMGGS">
     <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="EnumValue" />
-    <property role="34LRSv" value="enum" />
     <property role="EcuMT" value="5589093812003326776" />
+    <property role="34LRSv" value="&lt;{value}&gt;" />
     <ref role="1TJDcQ" node="RjyNapPty$" resolve="LiteralValueReference" />
     <node concept="1TJgyj" id="4QgsNmKMGIf" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -611,15 +599,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPtyP">
-    <property role="TrG5h" value="IntValue" />
+    <property role="TrG5h" value="NumberValue" />
     <property role="3GE5qa" value="values" />
-    <property role="34LRSv" value="int" />
     <property role="EcuMT" value="996292992024565941" />
     <ref role="1TJDcQ" node="RjyNapPty$" resolve="LiteralValueReference" />
     <node concept="1TJgyi" id="RjyNapPtyQ" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <property role="IQ2nx" value="996292992024565942" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPty$">
@@ -728,6 +715,9 @@
     <node concept="PrWs8" id="3oMuSXRb2g0" role="PzmwI">
       <ref role="PrY4T" node="1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
+    <node concept="PrWs8" id="62ABz02TIMF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="AxPO7" id="RjyNapTFJQ">
     <property role="TrG5h" value="CompareFeature" />
@@ -785,22 +775,6 @@
     <node concept="PrWs8" id="2aI$NQeAYn0" role="PrDN$">
       <ref role="PrY4T" node="1i65yRAWiCQ" resolve="IValue" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="4oNjwzxnONz">
-    <property role="3GE5qa" value="values" />
-    <property role="TrG5h" value="TrueLiteral" />
-    <property role="34LRSv" value="true" />
-    <property role="R4oN_" value="true" />
-    <property role="EcuMT" value="5058472606515023075" />
-    <ref role="1TJDcQ" node="RjyNapPtG5" resolve="BoolValue" />
-  </node>
-  <node concept="1TIwiD" id="4oNjwzxnPcJ">
-    <property role="3GE5qa" value="values" />
-    <property role="TrG5h" value="FalseLiteral" />
-    <property role="34LRSv" value="false" />
-    <property role="R4oN_" value="false" />
-    <property role="EcuMT" value="5058472606515024687" />
-    <ref role="1TJDcQ" node="RjyNapPtG5" resolve="BoolValue" />
   </node>
   <node concept="PlHQZ" id="39KhnTI9ASS">
     <property role="3GE5qa" value="type" />
