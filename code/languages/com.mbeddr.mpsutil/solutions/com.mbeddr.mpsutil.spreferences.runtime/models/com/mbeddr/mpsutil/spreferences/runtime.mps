@@ -277,6 +277,7 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+      <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
@@ -2973,9 +2974,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1QHqEK" id="74j3m$6DJzg" role="3cqZAp">
-                  <node concept="1QHqEC" id="74j3m$6DJzi" role="1QHqEI">
-                    <node concept="3clFbS" id="74j3m$6DJzk" role="1bW5cS">
+                <node concept="1QHqEM" id="x8tpS$SKki" role="3cqZAp">
+                  <node concept="1QHqEC" id="x8tpS$SKkk" role="1QHqEI">
+                    <node concept="3clFbS" id="x8tpS$SKkm" role="1bW5cS">
                       <node concept="3clFbF" id="74j3m$6DKRU" role="3cqZAp">
                         <node concept="2OqwBi" id="74j3m$6DL8y" role="3clFbG">
                           <node concept="37vLTw" id="74j3m$6DKRS" role="2Oq$k0">
