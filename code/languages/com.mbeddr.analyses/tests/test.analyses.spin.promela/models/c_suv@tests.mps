@@ -13,8 +13,6 @@
     <import index="5do0" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="hr5x" ref="r:0f006508-b2f4-4b98-82de-5b32de29d867(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" implicit="true" />
-    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -211,11 +209,11 @@
                 <node concept="3cpWsn" id="HmUOIGCY7e" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGCY7f" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="HmUOIGCY7g" role="33vP2m">
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="HmUOIGCY7h" role="37wK5m">
                       <property role="BaHAW" value="c_suv2" />
                       <property role="BaGAP" value="" />
@@ -244,7 +242,7 @@
                           <ref role="3cqZAo" node="HmUOIGCY7e" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="HmUOIGCY7s" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -259,7 +257,7 @@
                       <ref role="3cqZAo" node="HmUOIGCY7e" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="HmUOIGCY7y" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="HmUOIGCY7z" role="2OqNvi">
@@ -290,11 +288,11 @@
                 <node concept="3cpWsn" id="HmUOIGG1Do" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGG1Dp" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="HmUOIGG1Dq" role="33vP2m">
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="HmUOIGG1Dr" role="37wK5m">
                       <property role="BaHAW" value="c_suv3" />
                       <property role="BaGAP" value="" />
@@ -323,7 +321,7 @@
                           <ref role="3cqZAo" node="HmUOIGG1Do" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="HmUOIGG1DA" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -338,7 +336,7 @@
                       <ref role="3cqZAo" node="HmUOIGG1Do" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="HmUOIGG1DG" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="HmUOIGG1DH" role="2OqNvi">
@@ -369,11 +367,11 @@
                 <node concept="3cpWsn" id="HmUOIGIBDd" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="HmUOIGIBDe" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="HmUOIGIBDf" role="33vP2m">
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="HmUOIGIBDg" role="37wK5m">
                       <property role="BaHAW" value="c_suv4" />
                       <property role="BaGAP" value="" />
@@ -402,7 +400,7 @@
                           <ref role="3cqZAo" node="HmUOIGIBDd" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="HmUOIGIBDr" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -418,7 +416,7 @@
                         <ref role="3cqZAo" node="HmUOIGIBDd" resolve="res" />
                       </node>
                       <node concept="2OwXpG" id="HmUOIGIC1t" role="2OqNvi">
-                        <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                        <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                       </node>
                     </node>
                     <node concept="liA8E" id="HmUOIGIC1u" role="2OqNvi">
@@ -450,11 +448,11 @@
                 <node concept="3cpWsn" id="6rUr$fV19yN" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="6rUr$fV19yO" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="6rUr$fV19yP" role="33vP2m">
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="6rUr$fV19yQ" role="37wK5m">
                       <property role="BaHAW" value="c_suv5" />
                       <property role="BaGAP" value="" />
@@ -483,7 +481,7 @@
                           <ref role="3cqZAo" node="6rUr$fV19yN" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="6rUr$fV19z1" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -498,7 +496,7 @@
                       <ref role="3cqZAo" node="6rUr$fV19yN" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="6rUr$fV19z8" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6rUr$fV19z9" role="2OqNvi">
@@ -529,11 +527,11 @@
                 <node concept="3cpWsn" id="25oSEXyfTJ3" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="25oSEXyfTJ4" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="25oSEXyfTJ5" role="33vP2m">
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="25oSEXyfTJ6" role="37wK5m">
                       <property role="BaHAW" value="c_suv6" />
                       <property role="BaGAP" value="" />
@@ -562,7 +560,7 @@
                           <ref role="3cqZAo" node="25oSEXyfTJ3" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="25oSEXyfTJh" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -577,7 +575,7 @@
                       <ref role="3cqZAo" node="25oSEXyfTJ3" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="25oSEXyiPv_" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="25oSEXyfTJo" role="2OqNvi">
@@ -595,7 +593,7 @@
                       <ref role="3cqZAo" node="25oSEXyfTJ3" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="25oSEXyiPCW" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="25oSEXyiPCX" role="2OqNvi">
@@ -613,7 +611,7 @@
                       <ref role="3cqZAo" node="25oSEXyfTJ3" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="25oSEXyiPL3" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="25oSEXyiPL4" role="2OqNvi">
@@ -631,7 +629,7 @@
                       <ref role="3cqZAo" node="25oSEXyfTJ3" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="25oSEXyiomM" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="25oSEXyiomN" role="2OqNvi">
@@ -662,11 +660,11 @@
                 <node concept="3cpWsn" id="6qQmI_32wjR" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="6qQmI_32wjS" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="6qQmI_32wjT" role="33vP2m">
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="6qQmI_32wjU" role="37wK5m">
                       <property role="BaHAW" value="c_suv7" />
                       <property role="BaGAP" value="" />
@@ -695,7 +693,7 @@
                           <ref role="3cqZAo" node="6qQmI_32wjR" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="6qQmI_32wk5" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -710,7 +708,7 @@
                       <ref role="3cqZAo" node="6qQmI_32wjR" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="6qQmI_32wkp" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6qQmI_32wkq" role="2OqNvi">
@@ -728,7 +726,7 @@
                       <ref role="3cqZAo" node="6qQmI_32wjR" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="6qQmI_32wkw" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6qQmI_32wkx" role="2OqNvi">
@@ -759,11 +757,11 @@
                 <node concept="3cpWsn" id="6qQmI_34UA2" role="3cpWs9">
                   <property role="TrG5h" value="res" />
                   <node concept="3uibUv" id="6qQmI_34UA3" role="1tU5fm">
-                    <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+                    <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
                   </node>
                   <node concept="2YIFZM" id="6qQmI_34UA4" role="33vP2m">
-                    <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
-                    <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                    <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
                     <node concept="BaHAS" id="6qQmI_34UA5" role="37wK5m">
                       <property role="BaHAW" value="c_suv8_external_file" />
                       <property role="BaGAP" value="" />
@@ -792,7 +790,7 @@
                           <ref role="3cqZAo" node="6qQmI_34UA2" resolve="res" />
                         </node>
                         <node concept="2OwXpG" id="6qQmI_34UAg" role="2OqNvi">
-                          <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                          <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                         </node>
                       </node>
                     </node>
@@ -807,7 +805,7 @@
                       <ref role="3cqZAo" node="6qQmI_34UA2" resolve="res" />
                     </node>
                     <node concept="2OwXpG" id="6qQmI_34UAt" role="2OqNvi">
-                      <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                      <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6qQmI_34UAu" role="2OqNvi">
@@ -834,11 +832,11 @@
           <node concept="3cpWsn" id="Y_s0WjAaMj" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="Y_s0WjAaMk" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+              <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
             </node>
             <node concept="2YIFZM" id="Y_s0WjAaMl" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
               <node concept="BaHAS" id="Y_s0WjAaMm" role="37wK5m">
                 <property role="BaHAW" value="c_suv9_nondet_assign" />
                 <property role="BaGAP" value="" />
@@ -857,7 +855,7 @@
                 <ref role="3cqZAo" node="Y_s0WjAaMj" resolve="res" />
               </node>
               <node concept="2OwXpG" id="Y_s0WjAaMI" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
               </node>
             </node>
             <node concept="liA8E" id="Y_s0WjAaMJ" role="2OqNvi">
@@ -878,11 +876,11 @@
           <node concept="3cpWsn" id="Y_s0WjAbKE" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="Y_s0WjAbKF" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+              <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
             </node>
             <node concept="2YIFZM" id="Y_s0WjAbKG" role="33vP2m">
-              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="1Pybhc" to="hr5x:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr5x:4QGaVz5ryAm" resolve="checkModel" />
               <node concept="BaHAS" id="Y_s0WjAbKH" role="37wK5m">
                 <property role="BaHAW" value="c_suv9_nondet_assign" />
                 <property role="BaGAP" value="" />
@@ -901,7 +899,7 @@
                 <ref role="3cqZAo" node="Y_s0WjAbKE" resolve="res" />
               </node>
               <node concept="2OwXpG" id="Y_s0WjAbL5" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                <ref role="2Oxat5" to="5do0:1wu5Hv6fz1d" resolve="spinRawOutput" />
               </node>
             </node>
             <node concept="liA8E" id="Y_s0WjAbL6" role="2OqNvi">
