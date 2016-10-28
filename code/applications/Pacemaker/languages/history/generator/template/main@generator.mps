@@ -37,11 +37,6 @@
     <import index="4gxl" ref="r:f8eec28d-6d5f-454b-ac48-6974f9c47f0b(com.mbeddr.analyses.cbmc.statemachines.experimental.structure)" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
@@ -1096,7 +1091,6 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3TlMh9" id="RRiwRYs_6u" role="1YbSNA">
-            <property role="00000" value="false" />
             <property role="2hmy$m" value="15" />
           </node>
         </node>

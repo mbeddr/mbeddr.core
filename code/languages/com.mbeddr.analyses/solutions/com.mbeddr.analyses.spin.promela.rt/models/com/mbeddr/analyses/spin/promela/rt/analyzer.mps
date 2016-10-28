@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)">
+<model ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
@@ -10,7 +10,6 @@
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
-    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.spin.promela.rt.runner)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
@@ -20,6 +19,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
+    <import index="xm5e" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd291(com.mbeddr.analyses.spin.promela.rt.runner)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
   </imports>
@@ -112,7 +112,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -283,7 +283,7 @@
                   <ref role="3cqZAo" node="1wu5Hv6foRQ" resolve="sba" />
                 </node>
                 <node concept="3TrEf2" id="3lXW7OZ7nQg" role="2OqNvi">
-                  <ref role="3Tt5mk" to="v326:3lXW7OZ694h" />
+                  <ref role="3Tt5mk" to="v326:3lXW7OZ694h" resolve="env" />
                 </node>
               </node>
               <node concept="37vLTw" id="3lXW7OZ7nnr" role="37vLTJ">
@@ -314,10 +314,10 @@
             <node concept="3uibUv" id="4kcU3YrlWCU" role="1tU5fm">
               <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
             </node>
-            <node concept="2YIFZM" id="4kcU3YrlWD0" role="33vP2m">
-              <ref role="37wK5l" to="xm5f:4kcU3YrkduH" resolve="runSpin" />
-              <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-              <node concept="37vLTw" id="3lXW7OZ7ocX" role="37wK5m">
+            <node concept="2YIFZM" id="5OPKfxPYstF" role="33vP2m">
+              <ref role="37wK5l" to="xm5e:4kcU3YrkduH" resolve="runSpin" />
+              <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
+              <node concept="37vLTw" id="5OPKfxPYstG" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
@@ -341,8 +341,8 @@
                   <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
                 </node>
                 <node concept="2YIFZM" id="HmUOIG_b6H" role="33vP2m">
-                  <ref role="37wK5l" to="xm5f:HmUOIG_5a1" resolve="readAndExecuteTrail" />
-                  <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
+                  <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
+                  <ref role="37wK5l" to="xm5e:HmUOIG_5a1" resolve="readAndExecuteTrail" />
                   <node concept="37vLTw" id="3lXW7OZ7qeF" role="37wK5m">
                     <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="config" />
                   </node>
@@ -445,10 +445,10 @@
           <node concept="3cpWsn" id="7Rf0$0HR$uj" role="3cpWs9">
             <property role="TrG5h" value="dir" />
             <node concept="17QB3L" id="7Rf0$0HR$uh" role="1tU5fm" />
-            <node concept="2YIFZM" id="7Rf0$0HR$uk" role="33vP2m">
-              <ref role="37wK5l" to="xm5f:7Rf0$0HRxRC" resolve="verificationDirectory" />
-              <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-              <node concept="37vLTw" id="3lXW7OZ7ovu" role="37wK5m">
+            <node concept="2YIFZM" id="5OPKfxPYsP3" role="33vP2m">
+              <ref role="37wK5l" to="xm5e:7Rf0$0HRxRC" resolve="verificationDirectory" />
+              <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
+              <node concept="37vLTw" id="5OPKfxPYsP4" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
