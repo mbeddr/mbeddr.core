@@ -11,9 +11,6 @@
   <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
-        <child id="4185783222026502647" name="init" index="3XIe9u" />
-      </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
@@ -76,7 +73,9 @@
         <child id="3880167327044694976" name="guard" index="8iALw" />
         <child id="3880167327044694980" name="updates" index="8iAL$" />
       </concept>
-      <concept id="3880167327044626066" name="com.mbeddr.analyses.prism.structure.PrismLocalVar" flags="ng" index="8iR$M" />
+      <concept id="3880167327044626066" name="com.mbeddr.analyses.prism.structure.PrismLocalVar" flags="ng" index="8iR$M">
+        <child id="6520983026762571456" name="init" index="UXZ53" />
+      </concept>
       <concept id="3880167327044846432" name="com.mbeddr.analyses.prism.structure.NextStateAssignment" flags="ng" index="8jdN0">
         <child id="3880167327044846442" name="varRef" index="8jdNa" />
         <child id="3880167327044846446" name="value" index="8jdNe" />
@@ -135,7 +134,7 @@
               <property role="2hmy$m" value="7" />
             </node>
           </node>
-          <node concept="3TlMh9" id="1wu5Hv5WqAU" role="3XIe9u">
+          <node concept="3TlMh9" id="1wu5Hv5WqAU" role="UXZ53">
             <property role="2hmy$m" value="0" />
           </node>
         </node>
@@ -151,7 +150,7 @@
               <property role="2hmy$m" value="6" />
             </node>
           </node>
-          <node concept="3TlMh9" id="1wu5Hv5WqAZ" role="3XIe9u">
+          <node concept="3TlMh9" id="1wu5Hv5WqAZ" role="UXZ53">
             <property role="2hmy$m" value="0" />
           </node>
         </node>
