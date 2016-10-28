@@ -2,7 +2,7 @@
 <model ref="r:676c5ecc-a552-4ea0-8305-36807e8e2649(com.mbeddr.analyses.cpa.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -115,7 +115,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3x0R1LJfFeZ" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3x0R1LJfFf0" role="1sWHZn">
             <node concept="3F0A7n" id="3x0R1LJfFf1" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -170,7 +170,7 @@
           <property role="3F0ifm" value="config:" />
         </node>
         <node concept="3F1sOY" id="4iwsNco_Kx2" role="3EZMnx">
-          <ref role="1NtTu8" to="km6g:3OLe0nF7Hyr" />
+          <ref role="1NtTu8" to="km6g:3OLe0nF7Hyr" resolve="config" />
         </node>
         <node concept="l2Vlx" id="3OLe0nF7J0l" role="2iSdaV" />
       </node>
@@ -198,7 +198,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4fjBjwDqlYc" role="3EZMnx">
-        <ref role="1NtTu8" to="km6g:3lXW7OZ4iBv" />
+        <ref role="1NtTu8" to="km6g:3lXW7OZ4iBv" resolve="exp" />
       </node>
       <node concept="3F0ifn" id="4fjBjwDqlYg" role="3EZMnx">
         <property role="3F0ifm" value=")" />
