@@ -750,6 +750,7 @@ private void configureRepositories() {
         }
     }
     repositories {
+        mavenLocal()
         for (repoUrl in [project.snapshotRepository, project.releaseRepository]) {
             maven {
                 url repoUrl
