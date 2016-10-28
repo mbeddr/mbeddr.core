@@ -15,7 +15,7 @@
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
     <import index="fjup" ref="r:d9560246-a400-4b05-820e-97ff6dddd2fd(com.mbeddr.analyses.prism.rt.utils)" />
-    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.spin.promela.rt.runner)" />
+    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.prism.rt.runner)" />
     <import index="dsgp" ref="r:3f06d04b-0a98-4505-b2ca-4dcc6555fddb(com.mbeddr.analyses.prism.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -194,8 +194,8 @@
               <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
             </node>
             <node concept="2YIFZM" id="ZgHAy9VoAZ" role="33vP2m">
-              <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-              <ref role="37wK5l" to="xm5f:4kcU3YrkduH" resolve="runSpin" />
+              <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="PrismRunner" />
+              <ref role="37wK5l" to="xm5f:4kcU3YrkduH" resolve="runPrism" />
               <node concept="37vLTw" id="ZgHAy9VoB0" role="37wK5m">
                 <ref role="3cqZAo" node="6BM8NjXd_y7" resolve="prismModel" />
               </node>

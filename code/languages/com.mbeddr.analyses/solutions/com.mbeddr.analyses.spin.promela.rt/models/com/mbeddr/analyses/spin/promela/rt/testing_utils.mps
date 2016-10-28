@@ -14,12 +14,12 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="d8ej" ref="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
+    <import index="5do0" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -78,7 +78,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -252,7 +252,7 @@
                 <ref role="3cqZAo" node="3lXW7OZ6VXn" resolve="aa" />
               </node>
               <node concept="3TrEf2" id="3lXW7OZ6WMI" role="2OqNvi">
-                <ref role="3Tt5mk" to="v326:3lXW7OZ694h" />
+                <ref role="3Tt5mk" to="v326:3lXW7OZ694h" resolve="env" />
               </node>
             </node>
           </node>
@@ -261,11 +261,11 @@
           <node concept="3cpWsn" id="HmUOIGAvD9" role="3cpWs9">
             <property role="TrG5h" value="analyzer" />
             <node concept="3uibUv" id="HmUOIGAvDa" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fgIx" resolve="SpinAnalyzer" />
+              <ref role="3uigEE" to="5do0:1wu5Hv6fgIx" resolve="SpinAnalyzer" />
             </node>
             <node concept="2ShNRf" id="HmUOIGAvFJ" role="33vP2m">
               <node concept="1pGfFk" id="HmUOIGA_X7" role="2ShVmc">
-                <ref role="37wK5l" to="5do7:1wu5Hv6fnQg" resolve="SpinAnalyzer" />
+                <ref role="37wK5l" to="5do0:1wu5Hv6fnQg" resolve="SpinAnalyzer" />
                 <node concept="2YIFZM" id="HmUOIGCzH$" role="37wK5m">
                   <ref role="37wK5l" to="d8ej:HmUOIGAXzl" resolve="newInstance" />
                   <ref role="1Pybhc" to="d8ej:HmUOIGARns" resolve="EmptyToolAdapter" />
@@ -286,7 +286,7 @@
           <node concept="3cpWsn" id="HmUOIGC_ZZ" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="HmUOIGC_Zy" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+              <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
             </node>
             <node concept="10Nm6u" id="HmUOIGCA_D" role="33vP2m" />
           </node>
@@ -362,8 +362,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4QGaVz5ryA6" role="1B3o_S" />
-      <node concept="3uibUv" id="HmUOIGCBKS" role="3clF45">
-        <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinResult" />
+      <node concept="3uibUv" id="5OPKfxQ1kt2" role="3clF45">
+        <ref role="3uigEE" to="5do0:1wu5Hv6fnnb" resolve="SpinResult" />
       </node>
     </node>
     <node concept="3Tm1VV" id="4QGaVz5ry$L" role="1B3o_S" />

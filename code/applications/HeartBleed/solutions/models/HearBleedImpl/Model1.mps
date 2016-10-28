@@ -8,11 +8,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
         <child id="6275792049641600984" name="condition" index="c0U16" />
@@ -1289,7 +1284,6 @@
       <ref role="3V$Cn$" node="1nKwQCIU2W7" resolve="verificationFixed" />
     </node>
     <node concept="1nvAUE" id="52Ex71yjAJf" role="3V$2$K">
-      <property role="00000" value="false" />
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="25" />
       <property role="2lUGbD" value="none" />
