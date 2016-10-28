@@ -225,10 +225,7 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -670,7 +667,7 @@
                                 <ref role="3TV0OU" to="87nw:2dWzqxEB$Tx" resolve="Text" />
                               </node>
                               <node concept="3Tsc0h" id="G25GphKdiI" role="2OqNvi">
-                                <ref role="3TtcxE" to="tpce:f_TKVDF" />
+                                <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
                               </node>
                             </node>
                             <node concept="1uHKPH" id="G25GphKdjf" role="2OqNvi" />
@@ -1421,8 +1418,8 @@
               <ref role="ehGHo" to="87nw:2dWzqxEBMSc" resolve="Word" />
             </node>
             <node concept="1PxgMI" id="o1roXC0l$y" role="33vP2m">
-              <ref role="1PxNhF" to="87nw:2dWzqxEBMSc" resolve="Word" />
-              <node concept="2OqwBi" id="o1roXC0jnQ" role="1PxMeX">
+              <ref role="1m5ApE" to="87nw:2dWzqxEBMSc" resolve="Word" />
+              <node concept="2OqwBi" id="o1roXC0jnQ" role="1m5AlR">
                 <node concept="37vLTw" id="o1roXC0jkl" role="2Oq$k0">
                   <ref role="3cqZAo" node="o1roXC0fnJ" resolve="wordCell" />
                 </node>
@@ -1439,8 +1436,8 @@
               <node concept="1pGfFk" id="o1roXC05LI" role="2ShVmc">
                 <ref role="37wK5l" to="6lvu:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
                 <node concept="1PxgMI" id="o1roXC0lR_" role="37wK5m">
-                  <ref role="1PxNhF" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                  <node concept="2OqwBi" id="o1roXC0lG2" role="1PxMeX">
+                  <ref role="1m5ApE" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                  <node concept="2OqwBi" id="o1roXC0lG2" role="1m5AlR">
                     <node concept="37vLTw" id="o1roXC0iTE" role="2Oq$k0">
                       <ref role="3cqZAo" node="o1roXC0iT$" resolve="node" />
                     </node>
@@ -1450,7 +1447,7 @@
                 <node concept="10Nm6u" id="o1roXC0mbA" role="37wK5m" />
                 <node concept="28GBK8" id="o1roXC0lVV" role="37wK5m">
                   <ref role="28GBKb" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                  <ref role="28H3Ia" to="87nw:2dWzqxEBBFI" />
+                  <ref role="28H3Ia" to="87nw:2dWzqxEBBFI" resolve="words" />
                 </node>
                 <node concept="2OqwBi" id="o1roXC0mjY" role="37wK5m">
                   <node concept="37vLTw" id="o1roXC0mf4" role="2Oq$k0">
@@ -2127,8 +2124,8 @@
                 <ref role="ehGHo" to="87nw:2dWzqxEBMSc" resolve="Word" />
               </node>
               <node concept="1PxgMI" id="o1roXC0tzI" role="33vP2m">
-                <ref role="1PxNhF" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                <node concept="2OqwBi" id="o1roXC0pHv" role="1PxMeX">
+                <ref role="1m5ApE" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                <node concept="2OqwBi" id="o1roXC0pHv" role="1m5AlR">
                   <node concept="37vLTw" id="o1roXC0pAk" role="2Oq$k0">
                     <ref role="3cqZAo" node="o1roXC0g1t" resolve="myWordCell" />
                   </node>
@@ -2146,8 +2143,8 @@
                 <ref role="ehGHo" to="87nw:2dWzqxEB$Tx" resolve="Text" />
               </node>
               <node concept="1PxgMI" id="o1roXC11Ox" role="33vP2m">
-                <ref role="1PxNhF" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                <node concept="2OqwBi" id="o1roXC11Oy" role="1PxMeX">
+                <ref role="1m5ApE" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2OqwBi" id="o1roXC11Oy" role="1m5AlR">
                   <node concept="37vLTw" id="o1roXC11Oz" role="2Oq$k0">
                     <ref role="3cqZAo" node="o1roXC0oWA" resolve="wordNode" />
                   </node>
@@ -2187,7 +2184,7 @@
                         <ref role="3cqZAo" node="o1roXC11Ow" resolve="textNode" />
                       </node>
                       <node concept="3Tsc0h" id="o1roXC13kl" role="2OqNvi">
-                        <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+                        <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
                       </node>
                     </node>
                     <node concept="1zesIP" id="o1roXC14LF" role="2OqNvi">
