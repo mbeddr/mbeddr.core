@@ -21,7 +21,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="fjup" ref="r:d9560246-a400-4b05-820e-97ff6dddd2fd(com.mbeddr.analyses.prism.rt.utils)" />
     <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.prism.rt.runner)" />
-    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.prism.rt.ui)" implicit="true" />
+    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.promela.rt.ui)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -377,7 +377,7 @@
       <property role="TrG5h" value="panel" />
       <node concept="3Tm6S6" id="6izRX53yGHC" role="1B3o_S" />
       <node concept="3uibUv" id="4kcU3YrkO1N" role="1tU5fm">
-        <ref role="3uigEE" to="odjd:6izRX53pUdc" resolve="RawOutputUI" />
+        <ref role="3uigEE" to="odjd:6izRX53pUdc" resolve="SpinRawOutputUI" />
       </node>
     </node>
     <node concept="2UmK3q" id="6izRX53qGZc" role="2Um5zG">
@@ -398,7 +398,7 @@
           <node concept="37vLTI" id="6izRX53yHdB" role="3clFbG">
             <node concept="2ShNRf" id="6izRX53z$ZW" role="37vLTx">
               <node concept="1pGfFk" id="6izRX53z_u6" role="2ShVmc">
-                <ref role="37wK5l" to="odjd:6izRX53q9Aq" resolve="RawOutputUI" />
+                <ref role="37wK5l" to="odjd:6izRX53q9Aq" resolve="SpinRawOutputUI" />
               </node>
             </node>
             <node concept="2OqwBi" id="6izRX53yGTC" role="37vLTJ">

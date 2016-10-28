@@ -27,11 +27,12 @@
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
-    <import index="odjc" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81164(com.mbeddr.analyses.spin.promela.rt.ui)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
+    <import index="xm5e" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd291(com.mbeddr.analyses.spin.promela.rt.runner)" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="odjc" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81164(com.mbeddr.analyses.spin.promela.rt.ui)" implicit="true" />
     <import index="5do0" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)" implicit="true" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" implicit="true" />
     <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.promela.rt.ui)" implicit="true" />
@@ -388,8 +389,8 @@
         </node>
         <node concept="3clFbF" id="1wu5Hv6hnxQ" role="3cqZAp">
           <node concept="NRdvd" id="3lXW7OZ6Xr1" role="3clFbG">
-            <ref role="1Pybhc" to="5do0:1wu5Hv6fAKo" resolve="SpinAnalysisUtils" />
-            <ref role="37wK5l" to="5do0:1wu5Hv6hn_r" resolve="performAnalysis" />
+            <ref role="1Pybhc" to="5do7:1wu5Hv6fAKo" resolve="SpinAnalysisUtils" />
+            <ref role="37wK5l" to="5do7:1wu5Hv6hn_r" resolve="performAnalysis" />
             <node concept="2OqwBi" id="3lXW7OZ6Xr2" role="37wK5m">
               <node concept="2WthIp" id="3lXW7OZ6Xr3" role="2Oq$k0" />
               <node concept="1DTwFV" id="3lXW7OZ6Xr4" role="2OqNvi">
@@ -660,7 +661,7 @@
                   <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
                 </node>
                 <node concept="liA8E" id="71901EGI4VH" role="2OqNvi">
-                  <ref role="37wK5l" to="5do7:71901EGHZ_j" resolve="getWhiteness" />
+                  <ref role="37wK5l" to="5do7:71901EGHZ_j" resolve="getWitness" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1wu5Hv6fFZl" role="2XxRq1">
