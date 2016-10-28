@@ -6795,6 +6795,60 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3uJMZ8xBCu8" role="jymVt" />
+    <node concept="3clFb_" id="3uJMZ8xBAgD" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getMaxWidth" />
+      <node concept="10Oyi0" id="3uJMZ8xBIh2" role="3clF45" />
+      <node concept="3Tm1VV" id="3uJMZ8xBAgF" role="1B3o_S" />
+      <node concept="3clFbS" id="3uJMZ8xBAgI" role="3clF47">
+        <node concept="3cpWs8" id="3uJMZ8xCRJV" role="3cqZAp">
+          <node concept="3cpWsn" id="3uJMZ8xCRJW" role="3cpWs9">
+            <property role="TrG5h" value="maxWidth" />
+            <node concept="3uibUv" id="3uJMZ8xCRJK" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+            </node>
+            <node concept="2OqwBi" id="3uJMZ8xCRJX" role="33vP2m">
+              <node concept="2OqwBi" id="3uJMZ8xCRJY" role="2Oq$k0">
+                <node concept="37vLTw" id="3uJMZ8xCRJZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+                </node>
+                <node concept="liA8E" id="3uJMZ8xCRK0" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3uJMZ8xCRK1" role="2OqNvi">
+                <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                <node concept="10M0yZ" id="3uJMZ8xCRK2" role="37wK5m">
+                  <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  <ref role="3cqZAo" to="5ueo:~StyleAttributes.MAX_WIDTH" resolve="MAX_WIDTH" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3uJMZ8xBEL1" role="3cqZAp">
+          <node concept="3K4zz7" id="3uJMZ8xCTDq" role="3clFbG">
+            <node concept="37vLTw" id="3uJMZ8xCTLO" role="3K4E3e">
+              <ref role="3cqZAo" node="3uJMZ8xCRJW" resolve="maxWidth" />
+            </node>
+            <node concept="10M0yZ" id="3uJMZ8xFmPU" role="3K4GZi">
+              <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+              <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
+            </node>
+            <node concept="3y3z36" id="3uJMZ8xCTmC" role="3K4Cdx">
+              <node concept="10Nm6u" id="3uJMZ8xCTyv" role="3uHU7w" />
+              <node concept="37vLTw" id="3uJMZ8xCRK3" role="3uHU7B">
+                <ref role="3cqZAo" node="3uJMZ8xCRJW" resolve="maxWidth" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3uJMZ8xBAgJ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="JPngvNsQE6" role="1B3o_S" />
     <node concept="3uibUv" id="JPngvNsQNf" role="EKbjA">
       <ref role="3uigEE" to="xggr:ZjQ6tpoGLj" resolve="ILayoutable" />

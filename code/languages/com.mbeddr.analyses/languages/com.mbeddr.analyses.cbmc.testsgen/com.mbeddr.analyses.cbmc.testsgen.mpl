@@ -195,6 +195,7 @@
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</extendedLanguage>
+    <extendedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 

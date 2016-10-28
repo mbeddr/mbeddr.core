@@ -30,6 +30,7 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
+    <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
@@ -5492,10 +5493,10 @@
                     </node>
                     <node concept="3cpWs3" id="188YFGsk8md" role="3uHU7B">
                       <node concept="3cpWs3" id="188YFGsk8me" role="3uHU7B">
-                        <node concept="2YIFZM" id="188YFGsk8mf" role="3uHU7B">
-                          <ref role="1Pybhc" to="p8vh:188YFGrF08o" resolve="AnalysesResultsUtils" />
-                          <ref role="37wK5l" to="p8vh:188YFGrF6qX" resolve="getResultMessage" />
-                          <node concept="37vLTw" id="188YFGsk92S" role="37wK5m">
+                        <node concept="2YIFZM" id="TJrbINetbW" role="3uHU7B">
+                          <ref role="37wK5l" to="vbi4:TJrbIN8wsV" resolve="getResultMessage" />
+                          <ref role="1Pybhc" to="vbi4:TJrbIN8wsT" resolve="AnalysesResultsUtils" />
+                          <node concept="37vLTw" id="TJrbINetbX" role="37wK5m">
                             <ref role="3cqZAo" node="188YFGsk1OL" resolve="r" />
                           </node>
                         </node>
@@ -5571,10 +5572,10 @@
                     </node>
                     <node concept="3cpWs3" id="188YFGskc8m" role="3uHU7B">
                       <node concept="3cpWs3" id="188YFGskc8n" role="3uHU7B">
-                        <node concept="2YIFZM" id="188YFGskc8o" role="3uHU7B">
-                          <ref role="37wK5l" to="p8vh:188YFGrF6qX" resolve="getResultMessage" />
-                          <ref role="1Pybhc" to="p8vh:188YFGrF08o" resolve="AnalysesResultsUtils" />
-                          <node concept="37vLTw" id="188YFGskc8p" role="37wK5m">
+                        <node concept="2YIFZM" id="TJrbINet_c" role="3uHU7B">
+                          <ref role="37wK5l" to="vbi4:TJrbIN8wsV" resolve="getResultMessage" />
+                          <ref role="1Pybhc" to="vbi4:TJrbIN8wsT" resolve="AnalysesResultsUtils" />
+                          <node concept="37vLTw" id="TJrbINet_d" role="37wK5m">
                             <ref role="3cqZAo" node="188YFGskc8c" resolve="r" />
                           </node>
                         </node>
@@ -5650,10 +5651,10 @@
                     </node>
                     <node concept="3cpWs3" id="188YFGskhWi" role="3uHU7B">
                       <node concept="3cpWs3" id="188YFGskhWj" role="3uHU7B">
-                        <node concept="2YIFZM" id="188YFGskhWk" role="3uHU7B">
-                          <ref role="37wK5l" to="p8vh:188YFGrF6qX" resolve="getResultMessage" />
-                          <ref role="1Pybhc" to="p8vh:188YFGrF08o" resolve="AnalysesResultsUtils" />
-                          <node concept="37vLTw" id="188YFGskhWl" role="37wK5m">
+                        <node concept="2YIFZM" id="TJrbINetY_" role="3uHU7B">
+                          <ref role="37wK5l" to="vbi4:TJrbIN8wsV" resolve="getResultMessage" />
+                          <ref role="1Pybhc" to="vbi4:TJrbIN8wsT" resolve="AnalysesResultsUtils" />
+                          <node concept="37vLTw" id="TJrbINetYA" role="37wK5m">
                             <ref role="3cqZAo" node="188YFGskhW8" resolve="r" />
                           </node>
                         </node>
@@ -5729,10 +5730,10 @@
                     </node>
                     <node concept="3cpWs3" id="188YFGskpeu" role="3uHU7B">
                       <node concept="3cpWs3" id="188YFGskpev" role="3uHU7B">
-                        <node concept="2YIFZM" id="188YFGskpew" role="3uHU7B">
-                          <ref role="37wK5l" to="p8vh:188YFGrF6qX" resolve="getResultMessage" />
-                          <ref role="1Pybhc" to="p8vh:188YFGrF08o" resolve="AnalysesResultsUtils" />
-                          <node concept="37vLTw" id="188YFGskpex" role="37wK5m">
+                        <node concept="2YIFZM" id="TJrbINeuo7" role="3uHU7B">
+                          <ref role="37wK5l" to="vbi4:TJrbIN8wsV" resolve="getResultMessage" />
+                          <ref role="1Pybhc" to="vbi4:TJrbIN8wsT" resolve="AnalysesResultsUtils" />
+                          <node concept="37vLTw" id="TJrbINeuo8" role="37wK5m">
                             <ref role="3cqZAo" node="188YFGskpek" resolve="r" />
                           </node>
                         </node>
@@ -5808,10 +5809,10 @@
                     </node>
                     <node concept="3cpWs3" id="188YFGskvbj" role="3uHU7B">
                       <node concept="3cpWs3" id="188YFGskvbk" role="3uHU7B">
-                        <node concept="2YIFZM" id="188YFGskvbl" role="3uHU7B">
-                          <ref role="37wK5l" to="p8vh:188YFGrF6qX" resolve="getResultMessage" />
-                          <ref role="1Pybhc" to="p8vh:188YFGrF08o" resolve="AnalysesResultsUtils" />
-                          <node concept="37vLTw" id="188YFGskvbm" role="37wK5m">
+                        <node concept="2YIFZM" id="TJrbINeuLM" role="3uHU7B">
+                          <ref role="37wK5l" to="vbi4:TJrbIN8wsV" resolve="getResultMessage" />
+                          <ref role="1Pybhc" to="vbi4:TJrbIN8wsT" resolve="AnalysesResultsUtils" />
+                          <node concept="37vLTw" id="TJrbINeuLN" role="37wK5m">
                             <ref role="3cqZAo" node="188YFGskvb9" resolve="r" />
                           </node>
                         </node>

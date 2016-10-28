@@ -165,5 +165,12 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1VBrW84FOuD">
+    <property role="EcuMT" value="2226871419850934185" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="VacuityAnalysis" />
+    <property role="34LRSv" value="Vacuity Analysis" />
+    <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+  </node>
 </model>
 

@@ -19,8 +19,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
-    <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -30,7 +28,6 @@
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
@@ -374,7 +371,7 @@
                                     <ref role="3cqZAo" node="4jq$txdSYKr" resolve="pair" />
                                   </node>
                                   <node concept="3TrEf2" id="4jq$txdT1sD" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="q46j:4jq$txdSYPx" />
+                                    <ref role="3Tt5mk" to="q46j:4jq$txdSYPx" resolve="first" />
                                   </node>
                                 </node>
                               </node>
@@ -392,7 +389,7 @@
                                     <ref role="3cqZAo" node="4jq$txdSYKr" resolve="pair" />
                                   </node>
                                   <node concept="3TrEf2" id="4jq$txdT1ts" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="q46j:4jq$txdT1ls" />
+                                    <ref role="3Tt5mk" to="q46j:4jq$txdT1ls" resolve="second" />
                                   </node>
                                 </node>
                               </node>
@@ -1853,7 +1850,7 @@
                         <ref role="1M0zk5" node="5DuZDtppuci" resolve="fc" />
                       </node>
                       <node concept="3TrEf2" id="5DuZDtppvUr" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+                        <ref role="3Tt5mk" to="x27k:5ak6HMA0red" resolve="function" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="5DuZDtpr31A" role="37vLTJ">
