@@ -89,8 +89,11 @@
       <concept id="8257817273846948842" name="com.mbeddr.core.util.structure.ClosureParameter" flags="ng" index="1T8GF_" />
       <concept id="8257817273846948841" name="com.mbeddr.core.util.structure.Closure" flags="ng" index="1T8GFA">
         <child id="8257817273846948844" name="body" index="1T8GFz" />
+        <child id="8257817273846948843" name="parameters" index="1T8GF$" />
       </concept>
-      <concept id="8257817273846948862" name="com.mbeddr.core.util.structure.ClosureParameterRef" flags="ng" index="1T8GFL" />
+      <concept id="8257817273846948862" name="com.mbeddr.core.util.structure.ClosureParameterRef" flags="ng" index="1T8GFL">
+        <reference id="8257817273846948863" name="param" index="1T8GFK" />
+      </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
@@ -157,13 +160,6 @@
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
-      <concept id="8257817273846948841" name="com.mbeddr.core.modules.structure.Closure_old" flags="ng" index="1T8GFB">
-        <child id="8257817273846948844" name="body_old" index="1T8GF$" />
-        <child id="8257817273846948843" name="parameters_old" index="1T8GF_" />
-      </concept>
-      <concept id="8257817273846948862" name="com.mbeddr.core.modules.structure.ClosureParameterRef_old" flags="ng" index="1T8GFM">
-        <reference id="8257817273846948863" name="param_old" index="1T8GFK" />
-      </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
@@ -930,8 +926,10 @@
               <ref role="1S7826" node="36fFjS6Kt4H" resolve="secondGlobalRef" />
             </node>
             <node concept="1T8GFA" id="36fFjS6Kt59" role="3TlMhJ">
-              <node concept="1fH1aK" id="3cUcim$fjHO" role="1T8GFz" />
-              <node concept="1fH1aK" id="36fFjS6Kt5a" role="1T8GF$">
+              <node concept="1T8GF_" id="16$HA_j8J$a" role="1T8GF$">
+                <property role="TrG5h" value="ap" />
+              </node>
+              <node concept="1fH1aK" id="3cUcim$fjHO" role="1T8GFz">
                 <node concept="3XIRlf" id="36fFjS6Kt5b" role="3XIRFZ">
                   <property role="TrG5h" value="a" />
                   <node concept="26Vqph" id="36fFjS6Kt5c" role="2C2TGm">
@@ -939,8 +937,8 @@
                     <property role="2c7vTL" value="false" />
                   </node>
                   <node concept="2BOciq" id="36fFjS6Kt5d" role="3XIe9u">
-                    <node concept="1T8GFL" id="36fFjS6Kt5e" role="3TlMhJ">
-                      <ref role="1T8GFK" node="36fFjS6Kt5o" resolve="ap" />
+                    <node concept="1T8GFL" id="16$HA_j8KV_" role="3TlMhJ">
+                      <ref role="1T8GFK" node="16$HA_j8J$a" resolve="ap" />
                     </node>
                     <node concept="3TlMh9" id="36fFjS6Kt5f" role="3TlMhI">
                       <property role="2hmy$m" value="23" />
@@ -968,9 +966,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="1T8GF_" id="36fFjS6Kt5o" role="1T8GF_">
-                <property role="TrG5h" value="ap" />
               </node>
             </node>
           </node>

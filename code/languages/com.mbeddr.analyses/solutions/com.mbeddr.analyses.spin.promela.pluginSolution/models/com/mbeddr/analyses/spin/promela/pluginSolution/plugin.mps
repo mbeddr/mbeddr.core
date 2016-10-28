@@ -29,6 +29,7 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
+    <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -314,12 +315,12 @@
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
             </node>
             <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
               <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
                 <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+                  <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
                 </node>
               </node>
             </node>

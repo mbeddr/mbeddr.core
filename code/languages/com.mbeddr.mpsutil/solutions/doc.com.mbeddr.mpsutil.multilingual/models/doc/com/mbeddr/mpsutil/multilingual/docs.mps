@@ -855,13 +855,7 @@
       <node concept="1_0LV8" id="aiIotXwrSb" role="1_0VJ0">
         <node concept="19SGf9" id="aiIotXwrSc" role="1_0LWR">
           <node concept="19SUe$" id="aiIotXwrSd" role="19SJt6">
-            <property role="19SUeA" value="The actual default values (also for MultilingualJavaRichString) can only be edited in the  For reference, the ResourceBundle used for the examples of this section are shown in " />
-          </node>
-          <node concept="2Sbdz4" id="aiIotXwsfL" role="19SJt6">
-            <ref role="2SbdyP" node="aiIotXwsd7" />
-          </node>
-          <node concept="19SUe$" id="aiIotXwsfK" role="19SJt6">
-            <property role="19SUeA" value="." />
+            <property role="19SUeA" value="The actual default values (also for MultilingualJavaRichString) can only be edited in the  For reference, the ResourceBundle used for the examples of this section are shown in ...." />
           </node>
         </node>
       </node>

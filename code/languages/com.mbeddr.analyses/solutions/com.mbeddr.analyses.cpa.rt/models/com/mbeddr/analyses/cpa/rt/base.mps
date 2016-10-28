@@ -296,30 +296,6 @@
         <node concept="3kxDZ6" id="3OLe0nF84iM" role="3cqZAp">
           <node concept="9aQIb" id="3OLe0nF84_7" role="3kxCCa">
             <node concept="3clFbS" id="3OLe0nF84_9" role="9aQI4">
-              <node concept="1X3_iC" id="4iwsNco_1E0" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="3OLe0nF80Fp" role="8Wnug">
-                  <node concept="37vLTI" id="3OLe0nF80Fq" role="3clFbG">
-                    <node concept="3EllGN" id="3OLe0nF80Fs" role="37vLTJ">
-                      <node concept="Xl_RD" id="3OLe0nF80Ft" role="3ElVtu">
-                        <property role="Xl_RC" value="CompositeCPA.cpas" />
-                      </node>
-                      <node concept="37vLTw" id="3OLe0nF80Fu" role="3ElQJh">
-                        <ref role="3cqZAo" node="3OLe0nF7fL9" resolve="options" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="3OLe0nF82fg" role="37vLTx">
-                      <node concept="37vLTw" id="3OLe0nF82cn" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3OLe0nF80GB" resolve="analzerConfig" />
-                      </node>
-                      <node concept="2qgKlT" id="3OLe0nF82jl" role="2OqNvi">
-                        <ref role="37wK5l" to="o3dx:3OLe0nF7Jli" resolve="getCPAsString" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="3OLe0nF80F7" role="3cqZAp">
                 <node concept="37vLTI" id="3OLe0nF80F8" role="3clFbG">
                   <node concept="Xl_RD" id="3OLe0nF80F9" role="37vLTx">
