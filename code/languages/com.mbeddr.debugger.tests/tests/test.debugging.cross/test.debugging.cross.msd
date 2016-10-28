@@ -23,6 +23,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)" version="0" />
     <module reference="09415d0e-8820-47a4-a923-f3216224ac46(test.debugging.cross)" version="0" />
   </dependencyVersions>
 </solution>
