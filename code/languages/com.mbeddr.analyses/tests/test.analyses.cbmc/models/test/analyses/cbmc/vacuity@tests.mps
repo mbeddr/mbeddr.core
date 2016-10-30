@@ -117,7 +117,7 @@
     <property role="TrG5h" value="Vacuity" />
     <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3WYFqnsYrLV" role="1SL9yI">
-      <property role="TrG5h" value="testVacuouslyTrue" />
+      <property role="TrG5h" value="testVacuouslyTrue1" />
       <node concept="3cqZAl" id="3WYFqnsYrLW" role="3clF45" />
       <node concept="3clFbS" id="3WYFqnsYrLX" role="3clF47">
         <node concept="3cpWs8" id="3WYFqnsYrLY" role="3cqZAp">
@@ -140,7 +140,7 @@
                 <property role="Xl_RC" value="main" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVi35O" role="37wK5m">
-                <property role="Xl_RC" value="vacuouslyTrue" />
+                <property role="Xl_RC" value="vacuouslyTrue1" />
               </node>
             </node>
           </node>
@@ -187,13 +187,97 @@
         </node>
         <node concept="3vlDli" id="3WYFqnsYrMs" role="3cqZAp">
           <node concept="Xl_RD" id="3WYFqnsYrMt" role="3tpDZB">
-            <property role="Xl_RC" value="Vacuity check for: vacuouslyTrue" />
+            <property role="Xl_RC" value="Vacuity check for: vacuouslyTrue1" />
           </node>
           <node concept="2OqwBi" id="3WYFqnsYrMu" role="3tpDZA">
             <node concept="37vLTw" id="3WYFqnsYrMv" role="2Oq$k0">
               <ref role="3cqZAo" node="3WYFqnsYrMd" resolve="res" />
             </node>
             <node concept="liA8E" id="3WYFqnsYrMw" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6v4KKkMP8y3" role="1SL9yI">
+      <property role="TrG5h" value="testVacuouslyTrue2" />
+      <node concept="3cqZAl" id="6v4KKkMP8y4" role="3clF45" />
+      <node concept="3clFbS" id="6v4KKkMP8y5" role="3clF47">
+        <node concept="3cpWs8" id="6v4KKkMP8y6" role="3cqZAp">
+          <node concept="3cpWsn" id="6v4KKkMP8y7" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="6v4KKkMP8y8" role="1tU5fm">
+              <node concept="3uibUv" id="6v4KKkMP8y9" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="6v4KKkMP8ya" role="33vP2m">
+              <ref role="37wK5l" to="3h46:3WYFqnsYuex" resolve="checkVacuity" />
+              <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <node concept="BaHAS" id="6v4KKkMP8yb" role="37wK5m">
+                <property role="BaHAW" value="vacuity" />
+                <property role="BaGAP" value="" />
+                <property role="BaBD8" value="ass" />
+              </node>
+              <node concept="Xl_RD" id="6v4KKkMP8yc" role="37wK5m">
+                <property role="Xl_RC" value="main" />
+              </node>
+              <node concept="Xl_RD" id="6v4KKkMP8yd" role="37wK5m">
+                <property role="Xl_RC" value="vacuouslyTrue2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6v4KKkMP8ye" role="3cqZAp">
+          <node concept="3cmrfG" id="6v4KKkMP8yf" role="3tpDZB">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="6v4KKkMP8yg" role="3tpDZA">
+            <node concept="37vLTw" id="6v4KKkMP8yh" role="2Oq$k0">
+              <ref role="3cqZAo" node="6v4KKkMP8y7" resolve="results" />
+            </node>
+            <node concept="34oBXx" id="6v4KKkMP8yi" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6v4KKkMP8yj" role="3cqZAp" />
+        <node concept="3cpWs8" id="6v4KKkMP8yk" role="3cqZAp">
+          <node concept="3cpWsn" id="6v4KKkMP8yl" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="6v4KKkMP8ym" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2OqwBi" id="6v4KKkMP8yn" role="33vP2m">
+              <node concept="37vLTw" id="6v4KKkMP8yo" role="2Oq$k0">
+                <ref role="3cqZAo" node="6v4KKkMP8y7" resolve="results" />
+              </node>
+              <node concept="34jXtK" id="6v4KKkMP8yp" role="2OqNvi">
+                <node concept="3cmrfG" id="6v4KKkMP8yq" role="25WWJ7">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="6v4KKkMP8yr" role="3cqZAp">
+          <node concept="2OqwBi" id="6v4KKkMP8ys" role="3vwVQn">
+            <node concept="3cpWsa" id="6v4KKkMP8yt" role="2Oq$k0">
+              <ref role="3cqZAo" node="6v4KKkMP8yl" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6v4KKkMP8yu" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6v4KKkMP8yv" role="3cqZAp">
+          <node concept="Xl_RD" id="6v4KKkMP8yw" role="3tpDZB">
+            <property role="Xl_RC" value="Vacuity check for: vacuouslyTrue2" />
+          </node>
+          <node concept="2OqwBi" id="6v4KKkMP8yx" role="3tpDZA">
+            <node concept="37vLTw" id="6v4KKkMP8yy" role="2Oq$k0">
+              <ref role="3cqZAo" node="6v4KKkMP8yl" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6v4KKkMP8yz" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
             </node>
           </node>
