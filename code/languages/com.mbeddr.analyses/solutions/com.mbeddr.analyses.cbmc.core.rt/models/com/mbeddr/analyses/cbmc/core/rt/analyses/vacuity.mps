@@ -270,7 +270,7 @@
     </node>
     <node concept="2tJIrI" id="3WYFqns_oEr" role="jymVt" />
     <node concept="NWlO9" id="3x0R1LJ5Cpn" role="lGtFl">
-      <property role="NWlVz" value="Analyzer that checks vacuity -- looks for &quot;assert(false)&quot;." />
+      <property role="NWlVz" value="Analyzer that checks vacuity -- looks for &quot;assert(false)&quot; or &quot;__CPROVER_assert(EXP,&quot;vacuity&quot;)&quot;." />
     </node>
     <node concept="3clFb_" id="3x0R1LJ5Cpo" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -440,7 +440,7 @@
           <node concept="3clFbS" id="3WYFqnsvTeQ" role="2LFqv$">
             <node concept="3SKdUt" id="3WYFqnsxIaj" role="3cqZAp">
               <node concept="3SKdUq" id="3WYFqnsxIal" role="3SKWNk">
-                <property role="3SKdUp" value="for CBMC &quot;false&quot; is &quot;0 != 0&quot; until CBMC 5.4 or &quot;FALSE&quot; starting with CBMC 5.5" />
+                <property role="3SKdUp" value="we check either for &quot;assert(false)&quot; or &quot;__CPROVER_assert(false, &quot;vacuity&quot;)&quot;" />
               </node>
             </node>
             <node concept="3clFbJ" id="3WYFqnsxFiF" role="3cqZAp">
@@ -458,36 +458,36 @@
                   </node>
                 </node>
               </node>
-              <node concept="22lmx$" id="4Ie6aj9NQQV" role="3clFbw">
+              <node concept="22lmx$" id="6v4KKkMP3K7" role="3clFbw">
+                <node concept="2OqwBi" id="6v4KKkMPbDL" role="3uHU7w">
+                  <node concept="2OqwBi" id="6v4KKkMPad$" role="2Oq$k0">
+                    <node concept="2GrUjf" id="6v4KKkMPa34" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3WYFqnsvTeO" resolve="c" />
+                    </node>
+                    <node concept="2S8uIT" id="6v4KKkMPb1y" role="2OqNvi">
+                      <ref role="2S8YL0" to="rbq9:mb65_hvOyZ" resolve="description" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6v4KKkMPc97" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="Xl_RD" id="6v4KKkMPd8L" role="37wK5m">
+                      <property role="Xl_RC" value="vacuity" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="3WYFqnsxFBN" role="3uHU7B">
                   <node concept="2OqwBi" id="3WYFqnsxFvW" role="2Oq$k0">
                     <node concept="2GrUjf" id="3WYFqnsxFvm" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="3WYFqnsvTeO" resolve="c" />
                     </node>
-                    <node concept="2S8uIT" id="3WYFqnt7cBo" role="2OqNvi">
-                      <ref role="2S8YL0" to="rbq9:1aqqXyK3GCK" resolve="expression" />
+                    <node concept="2S8uIT" id="6v4KKkMP$MH" role="2OqNvi">
+                      <ref role="2S8YL0" to="rbq9:mb65_hvOyZ" resolve="description" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3WYFqnsxFPp" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="Xl_RD" id="3WYFqnsxG0g" role="37wK5m">
-                      <property role="Xl_RC" value="0 != 0" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4Ie6aj9NQY8" role="3uHU7w">
-                  <node concept="2OqwBi" id="4Ie6aj9NQY9" role="2Oq$k0">
-                    <node concept="2GrUjf" id="4Ie6aj9NQYa" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3WYFqnsvTeO" resolve="c" />
-                    </node>
-                    <node concept="2S8uIT" id="4Ie6aj9NQYb" role="2OqNvi">
-                      <ref role="2S8YL0" to="rbq9:1aqqXyK3GCK" resolve="expression" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4Ie6aj9NQYc" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                    <node concept="Xl_RD" id="4Ie6aj9NQYd" role="37wK5m">
-                      <property role="Xl_RC" value="FALSE" />
+                      <property role="Xl_RC" value="assertion false" />
                     </node>
                   </node>
                 </node>
