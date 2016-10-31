@@ -15,8 +15,8 @@
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -118,7 +118,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -148,7 +147,6 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -583,28 +581,28 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3x0R1LJ5Cq8" role="3cqZAp">
-                <node concept="2OqwBi" id="3x0R1LJ5Cq9" role="3clFbG">
-                  <node concept="3cpWsa" id="3x0R1LJ5Cqa" role="2Oq$k0">
+              <node concept="3clFbF" id="2_0vIjrY46e" role="3cqZAp">
+                <node concept="2OqwBi" id="2_0vIjrY4L2" role="3clFbG">
+                  <node concept="37vLTw" id="2_0vIjrY46c" role="2Oq$k0">
                     <ref role="3cqZAo" node="3x0R1LJ5CpU" resolve="args" />
                   </node>
-                  <node concept="X8dFx" id="3x0R1LJ5Cqb" role="2OqNvi">
-                    <node concept="3P9mCS" id="3x0R1LJ5Cqc" role="25WWJ7">
+                  <node concept="X8dFx" id="2_0vIjrY61G" role="2OqNvi">
+                    <node concept="1rXfSq" id="2_0vIjrY6_l" role="25WWJ7">
                       <ref role="37wK5l" to="tzyt:2UdJgvCXO0f" resolve="computeCommonArguments" />
-                      <node concept="37vLTw" id="3x0R1LJ5Cqd" role="37wK5m">
+                      <node concept="37vLTw" id="2_0vIjrY7bp" role="37wK5m">
                         <ref role="3cqZAo" node="3x0R1LJ5CpQ" resolve="config" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3x0R1LJ5Cqe" role="3cqZAp">
-                <node concept="3P9mCS" id="3x0R1LJ5Cqf" role="3clFbG">
+              <node concept="3clFbF" id="2_0vIjrY8ac" role="3cqZAp">
+                <node concept="1rXfSq" id="2_0vIjrY8aa" role="3clFbG">
                   <ref role="37wK5l" to="tzyt:3L_VuqbmNCC" resolve="addFunctionArgument" />
-                  <node concept="3cpWsa" id="3x0R1LJ5Cqg" role="37wK5m">
+                  <node concept="37vLTw" id="2_0vIjrY8AE" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LJ5CpU" resolve="args" />
                   </node>
-                  <node concept="37vLTw" id="3x0R1LJ5Cqh" role="37wK5m">
+                  <node concept="37vLTw" id="2_0vIjrY9bv" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LJ5CpQ" resolve="config" />
                   </node>
                 </node>
@@ -822,19 +820,37 @@
             <node concept="2jxLKc" id="3WYFqnsxq8d" role="1tU5fm" />
           </node>
           <node concept="3clFbS" id="3WYFqnsxq8f" role="Jncv$">
+            <node concept="3cpWs8" id="5EwdfGVnhf0" role="3cqZAp">
+              <node concept="3cpWsn" id="5EwdfGVnhf1" role="3cpWs9">
+                <property role="TrG5h" value="msg" />
+                <node concept="17QB3L" id="5EwdfGVnheK" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3kxDZ6" id="5EwdfGVnidD" role="3cqZAp">
+              <node concept="3clFbF" id="5EwdfGVnhNI" role="3kxCCa">
+                <node concept="37vLTI" id="5EwdfGVnhNK" role="3clFbG">
+                  <node concept="3cpWs3" id="5EwdfGVnhf2" role="37vLTx">
+                    <node concept="2OqwBi" id="5EwdfGVnhf3" role="3uHU7w">
+                      <node concept="3TrcHB" id="5EwdfGVnhf4" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                      <node concept="Jnkvi" id="5EwdfGVnhf5" role="2Oq$k0">
+                        <ref role="1M0zk5" node="3WYFqnsxq8c" resolve="nc" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5EwdfGVnhf6" role="3uHU7B">
+                      <property role="Xl_RC" value="Vacuity check for: " />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5EwdfGVnhNO" role="37vLTJ">
+                    <ref role="3cqZAo" node="5EwdfGVnhf1" resolve="msg" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="3WYFqnsxhZ8" role="3cqZAp">
-              <node concept="3cpWs3" id="3WYFqnsxjCH" role="3cqZAk">
-                <node concept="2OqwBi" id="3WYFqnsxjUd" role="3uHU7w">
-                  <node concept="3TrcHB" id="3WYFqnsxo16" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                  <node concept="Jnkvi" id="3WYFqnsxtKJ" role="2Oq$k0">
-                    <ref role="1M0zk5" node="3WYFqnsxq8c" resolve="nc" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3WYFqnsxidI" role="3uHU7B">
-                  <property role="Xl_RC" value="Vacuity check for: " />
-                </node>
+              <node concept="37vLTw" id="5EwdfGVnhf7" role="3cqZAk">
+                <ref role="3cqZAo" node="5EwdfGVnhf1" resolve="msg" />
               </node>
             </node>
           </node>
@@ -944,6 +960,55 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6kQ$1ab4Jc4" role="jymVt" />
+  </node>
+  <node concept="312cEu" id="3_HSwtcW_yY">
+    <property role="TrG5h" value="VacuityAnalyzerFactory" />
+    <node concept="3Tm1VV" id="3_HSwtcW_yZ" role="1B3o_S" />
+    <node concept="3uibUv" id="3_HSwtcW_zr" role="1zkMxy">
+      <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+    </node>
+    <node concept="NWlO9" id="3_HSwtcW_zE" role="lGtFl">
+      <property role="NWlVz" value="Factory for creating vacuity analyzers." />
+    </node>
+    <node concept="2tJIrI" id="3_HSwtcW_AE" role="jymVt" />
+    <node concept="3clFb_" id="3_HSwtcW_zS" role="jymVt">
+      <property role="TrG5h" value="createAnalyzer" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="37vLTG" id="5uqRFp941kG" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="5uqRFp941kF" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3_HSwtcW_zT" role="3clF45">
+        <ref role="3uigEE" to="tzyt:2UdJgvCT1yk" resolve="CProverAnalyzerBase" />
+      </node>
+      <node concept="3Tm1VV" id="3_HSwtcW_zU" role="1B3o_S" />
+      <node concept="3clFbS" id="3_HSwtcW_$1" role="3clF47">
+        <node concept="3clFbF" id="3_HSwtcW_EL" role="3cqZAp">
+          <node concept="2ShNRf" id="3_HSwtcW_EJ" role="3clFbG">
+            <node concept="1pGfFk" id="3_HSwtcW_N5" role="2ShVmc">
+              <ref role="37wK5l" node="3WYFqns_p1t" resolve="VacuityAnalyzer" />
+              <node concept="37vLTw" id="3_HSwtcW_RP" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5uqRFp90Tqv" resolve="config" />
+              </node>
+              <node concept="37vLTw" id="5uqRFp941vQ" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5uqRFp90Tu2" resolve="toolAdapter" />
+              </node>
+              <node concept="37vLTw" id="5uqRFp94202" role="37wK5m">
+                <ref role="3cqZAo" node="5uqRFp941kG" resolve="pi" />
+              </node>
+              <node concept="37vLTw" id="5KHBa6l3bcj" role="37wK5m">
+                <ref role="3cqZAo" to="tzyt:5etR5IKp6O9" resolve="modelRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="3_HSwtcW_CN" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
   </node>
 </model>
 

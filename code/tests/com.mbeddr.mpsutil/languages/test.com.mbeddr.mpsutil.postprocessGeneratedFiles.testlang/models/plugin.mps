@@ -2,7 +2,7 @@
 <model ref="r:d423ef6c-a57c-42f7-80c9-637c75cb7586(test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="9ee3d5d2-5388-460b-b1dc-d98f27db499b" name="com.mbeddr.mpsutil.postprocessGeneratedFiles" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />

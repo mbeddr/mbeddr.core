@@ -334,10 +334,7 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -5939,31 +5936,31 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="P$JXv" id="5G6GJ5xe$GR" role="lGtFl">
-        <node concept="x79VA" id="5G6GJ5xe$H0" role="x79VK">
-          <property role="x79VB" value="the resulting intersection" />
+        <node concept="TZ5HA" id="5G6GJ5xe$GS" role="TZ5H$">
+          <node concept="1dT_AC" id="5G6GJ5xe$GT" role="1dT_Ay">
+            <property role="1dT_AB" value="Generic map union between two multi-maps. " />
+          </node>
         </node>
-        <node concept="TUZQ0" id="5G6GJ5xe$GU" role="TUOzN">
+        <node concept="TUZQ0" id="5G6GJ5xe$GU" role="3nqlJM">
           <property role="TUZQ4" value="the first map" />
           <node concept="zr_55" id="5G6GJ5xe$GV" role="zr_5Q">
             <ref role="zr_51" node="5G6GJ5xe$I3" resolve="m1" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5G6GJ5xe$GW" role="TUOzN">
+        <node concept="TUZQ0" id="5G6GJ5xe$GW" role="3nqlJM">
           <property role="TUZQ4" value="the second map" />
           <node concept="zr_55" id="5G6GJ5xe$GX" role="zr_5Q">
             <ref role="zr_51" node="5G6GJ5xe$I8" resolve="m2" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5G6GJ5xe$GY" role="TUOzN">
+        <node concept="TUZQ0" id="5G6GJ5xe$GY" role="3nqlJM">
           <property role="TUZQ4" value="the type parameter of the maps" />
           <node concept="zr_56" id="5G6GJ5xe$GZ" role="zr_5Q">
             <ref role="zr_51" node="5G6GJ5xe$Id" resolve="T" />
           </node>
         </node>
-        <node concept="TZ5HA" id="5G6GJ5xe$GS" role="TZ5H$">
-          <node concept="1dT_AC" id="5G6GJ5xe$GT" role="1dT_Ay">
-            <property role="1dT_AB" value="Generic map union between two multi-maps. " />
-          </node>
+        <node concept="x79VA" id="5G6GJ5xe$H0" role="3nqlJM">
+          <property role="x79VB" value="the resulting intersection" />
         </node>
       </node>
       <node concept="3clFbS" id="5G6GJ5xe$H1" role="3clF47">

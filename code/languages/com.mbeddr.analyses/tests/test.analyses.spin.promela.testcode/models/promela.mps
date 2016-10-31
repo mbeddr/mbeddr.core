@@ -3,6 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />
+    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="0" />
+    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="2" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -78,9 +81,42 @@
         <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
     </language>
+    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
+        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
+        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
+        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
+        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
+        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
+        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
+        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
+        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
+        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
+      </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
+    </language>
+    <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
+      <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
+      <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
+        <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -103,6 +139,11 @@
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
+    </language>
+    <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
+      <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
+        <child id="6472990431939692464" name="analyses" index="3V$2$K" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -232,14 +273,14 @@
   <node concept="2v9HqL" id="7Rf0$0HKRGO">
     <node concept="1gr5cj" id="7Rf0$0HKRGP" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="do_test" />
+      <property role="TrG5h" value="pan_do_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZ_" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRK1" resolve="do_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGR" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="hello" />
+      <property role="TrG5h" value="pan_hello" />
       <node concept="2v9HqM" id="7Rf0$0HKRZI" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRGp" resolve="hello" />
       </node>
@@ -252,14 +293,14 @@
     </node>
     <node concept="1gr5cj" id="7Rf0$0HKRGT" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="if_test" />
+      <property role="TrG5h" value="pan_if_test" />
       <node concept="2v9HqM" id="7Rf0$0HKRZF" role="2eOfOg">
         <ref role="2v9HqP" node="7Rf0$0HKRJt" resolve="if_test" />
       </node>
     </node>
     <node concept="1gr5cj" id="Rd$2EC649N" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="multiple_choice_test" />
+      <property role="TrG5h" value="pan_multiple_choice_test" />
       <node concept="2v9HqM" id="Rd$2EC649Y" role="2eOfOg">
         <ref role="2v9HqP" node="Rd$2EC61sj" resolve="multiple_choice_test" />
       </node>
@@ -268,6 +309,9 @@
       <property role="1gr5cl" value="gcc" />
       <property role="1gr5cm" value="-std=c99 -DSAFETY" />
       <property role="1gr5cn" value="make" />
+    </node>
+    <node concept="2Q9Fgs" id="1TY2kgDXHU0" role="2Q9xDr">
+      <node concept="2Q9FjX" id="1TY2kgDXHU1" role="2Q9FjI" />
     </node>
   </node>
   <node concept="1N3YfO" id="7Rf0$0HKRJt">
@@ -618,6 +662,34 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3uEX16" id="3lXW7OZ6J3p">
+    <property role="2lelRm" value="false" />
+    <property role="2lUGe1" value="true" />
+    <property role="2l50Lc" value="false" />
+    <property role="22uFEx" value="false" />
+    <property role="1Bxwel" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
+    <property role="TrG5h" value="AC" />
+    <node concept="apm28" id="3lXW7OZ7i$9" role="3V$2$K">
+      <ref role="apm5G" node="7Rf0$0HKRK1" resolve="do_test" />
+    </node>
+    <node concept="apm28" id="5yxSA$IR2A6" role="3V$2$K">
+      <ref role="apm5G" node="7Rf0$0HKRGp" resolve="hello" />
+    </node>
+    <node concept="apm28" id="5yxSA$IR2Ad" role="3V$2$K">
+      <ref role="apm5G" node="7Rf0$0HKRJt" resolve="if_test" />
+    </node>
+    <node concept="apm28" id="5yxSA$IR2Am" role="3V$2$K">
+      <ref role="apm5G" node="Rd$2EC61sj" resolve="multiple_choice_test" />
     </node>
   </node>
 </model>

@@ -1,0 +1,57 @@
+<project name="testGenerator" default="test">
+	<property file="..\..\build.properties"/>
+	<property name="target_dir" value="${mbeddr.github.core.home}\tmp\" />
+	
+	<target name="test">
+	    <delete dir="${target_dir}/new" />
+		<delete dir="${target_dir}/old" />
+		<delete dir="${target_dir}/diffreports" />
+		
+		<!-- copy the test whitness --> 			
+		<copy todir="${target_dir}/old" verbose="false">
+			<fileset dir="x_generated_whitness">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+		<!-- copy the newly generated files --> 			
+		<copy todir="${target_dir}/new" verbose="false">
+			<fileset dir=".">
+				<include name="*cbmc*/source_gen/**/*.c" />
+				<include name="*cbmc*/source_gen/**/*.h" />
+				<include name="*cbmc*/source_gen/**/Makefile" />				
+			</fileset>
+		</copy>
+
+		<!-- call deep compare of the old and new folders. results are saved in the 'diffreports' directory. --> 			
+		<java classname="jetbrains.mps.deepcompare.DeepCompare" fork="true" dir="${target_dir}">
+            <arg value="old"/>
+            <arg value="new"/>
+			<classpath>
+				<pathelement location="${mps.home}/lib/guava-17.0.jar"/>
+				<pathelement location="${mps.home}/lib/diffutils-1.2.1.jar"/>
+				<pathelement location="${mbeddr.github.core.home}\tools\deepcompare\deepcompare.jar"/>
+			</classpath>
+        </java>
+
+		<!-- count the total number of lines from the files from the directory containing the differences --> 	
+		<resourcecount property="differences.number">
+			<tokens>
+			  <concat>
+				<filterchain>
+				  <tokenfilter>
+					<linetokenizer/>
+				  </tokenfilter>
+				</filterchain>
+				<fileset dir="${target_dir}/diffreports" includes="**" />
+			  </concat>
+			</tokens>
+		</resourcecount>
+
+		<!-- fail if differences have been found --> 			
+		<condition property="differences_found">
+			<not><equals arg1="0" arg2="${differences.number}"/></not> 
+		</condition>
+		<fail if="differences_found" message="${differences.number} differences between old generated files and newly generated files have been found."/> 
+	</target>
+	
+</project>

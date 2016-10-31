@@ -26,6 +26,7 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language slang="l:3c648e74-bfd0-47ab-a27b-a7ece174dc55:com.mbeddr.analyses.acsl" version="0" />
         <language slang="l:1a857f23-abc6-4154-8fb9-f23dbfc65145:com.mbeddr.analyses.acsl.assertions.gen" version="0" />
         <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />
         <language slang="l:42270baf-e92c-4c32-b263-d617b3fce239:com.mbeddr.analyses.cbmc" version="2" />
@@ -215,6 +216,8 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>3c648e74-bfd0-47ab-a27b-a7ece174dc55(com.mbeddr.analyses.acsl)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

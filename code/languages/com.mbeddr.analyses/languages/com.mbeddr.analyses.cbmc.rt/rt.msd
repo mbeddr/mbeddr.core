@@ -4,13 +4,7 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/swingx-core-1.6.2.jar" />
-    </modelRoot>
   </models>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/swingx-core-1.6.2.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
