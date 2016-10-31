@@ -2,15 +2,14 @@
 <model ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
-    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.spin.promela.rt.runner)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
@@ -23,6 +22,7 @@
     <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="xm5e" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd291(com.mbeddr.analyses.spin.promela.rt.runner)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -373,10 +373,10 @@
       <property role="TrG5h" value="doInBackground" />
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
-      <node concept="3Tmbuc" id="1wu5Hv6fh9i" role="1B3o_S" />
       <node concept="3uibUv" id="7XCY$_raeXg" role="3clF45">
         <ref role="3uigEE" node="7XCY$_raa_8" resolve="SpinLiftedResult" />
       </node>
+      <node concept="3Tmbuc" id="1wu5Hv6fh9i" role="1B3o_S" />
       <node concept="3uibUv" id="1wu5Hv6fh9l" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
@@ -388,8 +388,8 @@
               <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
             </node>
             <node concept="2YIFZM" id="4kcU3YrlWD0" role="33vP2m">
-              <ref role="37wK5l" to="xm5f:4kcU3YrkduH" resolve="runPan" />
-              <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
+              <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
+              <ref role="37wK5l" to="xm5e:4kcU3YrkduH" resolve="runPan" />
               <node concept="37vLTw" id="3lXW7OZ7ocX" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
@@ -420,8 +420,8 @@
                   <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
                 </node>
                 <node concept="2YIFZM" id="HmUOIG_b6H" role="33vP2m">
-                  <ref role="37wK5l" to="xm5f:HmUOIG_5a1" resolve="readAndExecuteTrail" />
-                  <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
+                  <ref role="37wK5l" to="xm5e:HmUOIG_5a1" resolve="readAndExecuteTrail" />
+                  <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
                   <node concept="37vLTw" id="3lXW7OZ7qeF" role="37wK5m">
                     <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="config" />
                   </node>
@@ -538,14 +538,14 @@
         <node concept="3cpWs8" id="7Rf0$0HR$ui" role="3cqZAp">
           <node concept="3cpWsn" id="7Rf0$0HR$uj" role="3cpWs9">
             <property role="TrG5h" value="dir" />
-            <node concept="17QB3L" id="7Rf0$0HR$uh" role="1tU5fm" />
-            <node concept="2YIFZM" id="7Rf0$0HR$uk" role="33vP2m">
-              <ref role="37wK5l" to="xm5f:7Rf0$0HRxRC" resolve="verificationDirectory" />
-              <ref role="1Pybhc" to="xm5f:4kcU3YrkdpN" resolve="SpinRunner" />
-              <node concept="37vLTw" id="3lXW7OZ7ovu" role="37wK5m">
+            <node concept="2YIFZM" id="5OPKfxPYsP3" role="33vP2m">
+              <ref role="37wK5l" to="xm5e:7Rf0$0HRxRC" resolve="verificationDirectory" />
+              <ref role="1Pybhc" to="xm5e:4kcU3YrkdpN" resolve="SpinRunner" />
+              <node concept="37vLTw" id="5OPKfxPYsP4" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ7mRT" resolve="promelaModel" />
               </node>
             </node>
+            <node concept="17QB3L" id="7Rf0$0HR$uh" role="1tU5fm" />
           </node>
         </node>
         <node concept="3cpWs8" id="7Rf0$0HSMpj" role="3cqZAp">
@@ -959,36 +959,6 @@
       <node concept="3Tm1VV" id="1wu5Hv6hnCu" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="1wu5Hv6fAKp" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="7XCY$_r9H8M">
-    <property role="TrG5h" value="SpinCounterexampleState" />
-    <node concept="3Tm1VV" id="7XCY$_r9H8N" role="1B3o_S" />
-    <node concept="3uibUv" id="7XCY$_r9MHT" role="EKbjA">
-      <ref role="3uigEE" to="npwl:1EZfgaQmLrT" resolve="IWhitnessEntry" />
-    </node>
-    <node concept="2tJIrI" id="7XCY$_r9MI4" role="jymVt" />
-    <node concept="3clFb_" id="7XCY$_r9MIs" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isMajor" />
-      <node concept="3Tm1VV" id="7XCY$_r9MIu" role="1B3o_S" />
-      <node concept="10P_77" id="7XCY$_r9MIv" role="3clF45" />
-      <node concept="3clFbS" id="7XCY$_r9MIx" role="3clF47">
-        <node concept="3clFbF" id="7XCY$_r9MI$" role="3cqZAp">
-          <node concept="3clFbT" id="7XCY$_r9MIz" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="7XCY$_r9MIy" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="NWlO9" id="7XCY$_r9MP0" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7XCY$_r9MIg" role="jymVt" />
-    <node concept="NWlO9" id="7XCY$_r9MNP" role="lGtFl">
-      <property role="NWlVz" value="A state in the counterexample of Spin." />
-    </node>
   </node>
   <node concept="312cEu" id="7XCY$_raa_8">
     <property role="TrG5h" value="SpinLiftedResult" />
@@ -1405,6 +1375,64 @@
     </node>
     <node concept="NWlO9" id="7XCY$_rbd9N" role="lGtFl">
       <property role="NWlVz" value="Lifted result of an analysis with Spin." />
+    </node>
+  </node>
+  <node concept="Qs71p" id="7XCY$_rbc8D">
+    <property role="TrG5h" value="SPIN_RESULT_KIND" />
+    <node concept="3Tm1VV" id="7XCY$_rbc8E" role="1B3o_S" />
+    <node concept="QsSxf" id="7XCY$_rbcgh" role="Qtgdg">
+      <property role="TrG5h" value="SUCCESS" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="7XCY$_rbcc8" role="Qtgdg">
+      <property role="TrG5h" value="ASSERTION_VIOLATED" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="7XCY$_rbceS" role="Qtgdg">
+      <property role="TrG5h" value="CANCELED" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="5yxSA$IS4FM" role="Qtgdg">
+      <property role="TrG5h" value="SEARCH_DEPTH_TOO_SMALL" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="7XCY$_rblT0" role="Qtgdg">
+      <property role="TrG5h" value="TIMEOUT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="7XCY$_rblWr" role="Qtgdg">
+      <property role="TrG5h" value="RUNTIME_ERROR" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7XCY$_r9H8M">
+    <property role="TrG5h" value="SpinCounterexampleState" />
+    <node concept="3Tm1VV" id="7XCY$_r9H8N" role="1B3o_S" />
+    <node concept="3uibUv" id="7XCY$_r9MHT" role="EKbjA">
+      <ref role="3uigEE" to="npwl:1EZfgaQmLrT" resolve="IWhitnessEntry" />
+    </node>
+    <node concept="2tJIrI" id="7XCY$_r9MI4" role="jymVt" />
+    <node concept="3clFb_" id="7XCY$_r9MIs" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isMajor" />
+      <node concept="3Tm1VV" id="7XCY$_r9MIu" role="1B3o_S" />
+      <node concept="10P_77" id="7XCY$_r9MIv" role="3clF45" />
+      <node concept="3clFbS" id="7XCY$_r9MIx" role="3clF47">
+        <node concept="3clFbF" id="7XCY$_r9MI$" role="3cqZAp">
+          <node concept="3clFbT" id="7XCY$_r9MIz" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7XCY$_r9MIy" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="7XCY$_r9MP0" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7XCY$_r9MIg" role="jymVt" />
+    <node concept="NWlO9" id="7XCY$_r9MNP" role="lGtFl">
+      <property role="NWlVz" value="A state in the counterexample of Spin." />
     </node>
   </node>
   <node concept="312cEu" id="7XCY$_rajB3">
@@ -2090,34 +2118,6 @@
       <node concept="NWlO9" id="6jYTukVVBlv" role="lGtFl">
         <property role="NWlVz" value="Extracts the text representing the assertion violation expression." />
       </node>
-    </node>
-  </node>
-  <node concept="Qs71p" id="7XCY$_rbc8D">
-    <property role="TrG5h" value="SPIN_RESULT_KIND" />
-    <node concept="3Tm1VV" id="7XCY$_rbc8E" role="1B3o_S" />
-    <node concept="QsSxf" id="7XCY$_rbcgh" role="Qtgdg">
-      <property role="TrG5h" value="SUCCESS" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-    </node>
-    <node concept="QsSxf" id="7XCY$_rbcc8" role="Qtgdg">
-      <property role="TrG5h" value="ASSERTION_VIOLATED" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-    </node>
-    <node concept="QsSxf" id="7XCY$_rbceS" role="Qtgdg">
-      <property role="TrG5h" value="CANCELED" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-    </node>
-    <node concept="QsSxf" id="5yxSA$IS4FM" role="Qtgdg">
-      <property role="TrG5h" value="SEARCH_DEPTH_TOO_SMALL" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-    </node>
-    <node concept="QsSxf" id="7XCY$_rblT0" role="Qtgdg">
-      <property role="TrG5h" value="TIMEOUT" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-    </node>
-    <node concept="QsSxf" id="7XCY$_rblWr" role="Qtgdg">
-      <property role="TrG5h" value="RUNTIME_ERROR" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
   </node>
 </model>

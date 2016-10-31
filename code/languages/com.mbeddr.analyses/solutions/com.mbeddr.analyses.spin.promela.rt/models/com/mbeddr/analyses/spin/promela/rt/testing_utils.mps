@@ -2,12 +2,12 @@
 <model ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -15,12 +15,12 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="d8ej" ref="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -194,12 +194,21 @@
   </registry>
   <node concept="312cEu" id="4QGaVz5ry$K">
     <property role="TrG5h" value="SpinTestingUtils" />
+    <node concept="NWlO9" id="5yxSA$IRHKm" role="lGtFl">
+      <property role="NWlVz" value="Utility for running tests." />
+    </node>
     <node concept="2tJIrI" id="4QGaVz5ry_i" role="jymVt" />
     <node concept="2YIFZL" id="4QGaVz5ryAm" role="jymVt">
       <property role="TrG5h" value="checkModel" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="3uibUv" id="_jsMICpJ4F" role="3clF45">
+        <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+      </node>
+      <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
+        <property role="NWlVz" value="Check and return a lifted result." />
+      </node>
       <node concept="37vLTG" id="6BM8NjXd_zo" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="6BM8NjXd_zp" role="1tU5fm">
@@ -320,12 +329,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4QGaVz5ryA6" role="1B3o_S" />
-      <node concept="3uibUv" id="_jsMICpJ4F" role="3clF45">
-        <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
-      </node>
-      <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
-        <property role="NWlVz" value="Check and return a lifted result." />
-      </node>
     </node>
     <node concept="2tJIrI" id="5yxSA$IRHum" role="jymVt" />
     <node concept="2YIFZL" id="_jsMICrMgd" role="jymVt">
@@ -621,9 +624,6 @@
     <node concept="2tJIrI" id="_jsMICrM7M" role="jymVt" />
     <node concept="2tJIrI" id="_jsMICrMaB" role="jymVt" />
     <node concept="3Tm1VV" id="4QGaVz5ry$L" role="1B3o_S" />
-    <node concept="NWlO9" id="5yxSA$IRHKm" role="lGtFl">
-      <property role="NWlVz" value="Utility for running tests." />
-    </node>
   </node>
 </model>
 

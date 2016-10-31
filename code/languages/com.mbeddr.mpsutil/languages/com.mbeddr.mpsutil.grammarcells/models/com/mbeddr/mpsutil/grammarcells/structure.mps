@@ -67,6 +67,12 @@
       <property role="IQ2ns" value="484443907672828832" />
       <ref role="20lvS9" node="qT5MFmsdDu" resolve="FlagCell_SubstituteCondition" />
     </node>
+    <node concept="1TJgyj" id="yuUZPu3Zn9" role="1TKVEi">
+      <property role="IQ2ns" value="621193272061064649" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sideTransformCondition" />
+      <ref role="20lvS9" node="yuUZPu3Zj$" resolve="FlagCell_SideTransformationCondition" />
+    </node>
     <node concept="1TJgyi" id="6ASs6LmXZfR" role="1TKVEl">
       <property role="TrG5h" value="flagText" />
       <property role="IQ2nx" value="7617962380315063287" />
@@ -972,6 +978,12 @@
     <property role="TrG5h" value="GrammarCellsSubstituteMenuPart" />
     <property role="34LRSv" value="grammarCells" />
     <ref role="1TJDcQ" to="tpc2:n0c53aH5hE" resolve="SubstituteMenuPart" />
+  </node>
+  <node concept="1TIwiD" id="yuUZPu3Zj$">
+    <property role="EcuMT" value="621193272061064420" />
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="FlagCell_SideTransformationCondition" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

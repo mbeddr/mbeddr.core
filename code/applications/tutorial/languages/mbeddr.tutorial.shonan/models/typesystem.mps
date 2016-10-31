@@ -338,13 +338,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -3277,50 +3270,7 @@
   <node concept="18kY7G" id="5f6Hwd7OPzj">
     <property role="TrG5h" value="check_StencilComputation" />
     <property role="3GE5qa" value="stencil.user" />
-    <node concept="3clFbS" id="5f6Hwd7OPzk" role="18ibNy">
-      <node concept="1X3_iC" id="1cvJjDeLnvk" role="lGtFl">
-        <property role="3V$3am" value="statement" />
-        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-        <node concept="3clFbJ" id="5f6Hwd7OPzw" role="8Wnug">
-          <node concept="1Wc70l" id="5f6Hwd7OQ4V" role="3clFbw">
-            <node concept="2OqwBi" id="5f6Hwd7ORnQ" role="3uHU7w">
-              <node concept="2OqwBi" id="5f6Hwd7OQev" role="2Oq$k0">
-                <node concept="1YBJjd" id="5f6Hwd7OQ8d" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5f6Hwd7OPzm" resolve="computation" />
-                </node>
-                <node concept="3Tsc0h" id="5f6Hwd7OQtI" role="2OqNvi">
-                  <ref role="3TtcxE" to="5l2n:5f6Hwd7Nyhe" resolve="intervals" />
-                </node>
-              </node>
-              <node concept="1v1jN8" id="5f6Hwd7OTMh" role="2OqNvi" />
-            </node>
-            <node concept="3clFbC" id="5f6Hwd7OPWE" role="3uHU7B">
-              <node concept="2OqwBi" id="5f6Hwd7OPDD" role="3uHU7B">
-                <node concept="1YBJjd" id="5f6Hwd7OPzJ" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5f6Hwd7OPzm" resolve="computation" />
-                </node>
-                <node concept="2qgKlT" id="5f6Hwd7OPQc" role="2OqNvi">
-                  <ref role="37wK5l" to="vtnj:5f6Hwd7Nyuj" resolve="getInferredDimension" />
-                </node>
-              </node>
-              <node concept="3cmrfG" id="5f6Hwd7OPXh" role="3uHU7w">
-                <property role="3cmrfH" value="-1" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="5f6Hwd7OPzy" role="3clFbx">
-            <node concept="2MkqsV" id="5f6Hwd7OTQ2" role="3cqZAp">
-              <node concept="Xl_RD" id="5f6Hwd7OTQh" role="2MkJ7o">
-                <property role="Xl_RC" value="Must specify dimensions!" />
-              </node>
-              <node concept="1YBJjd" id="5f6Hwd7OTRl" role="2OEOjV">
-                <ref role="1YBMHb" node="5f6Hwd7OPzm" resolve="computation" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
+    <node concept="3clFbS" id="5f6Hwd7OPzk" role="18ibNy" />
     <node concept="1YaCAy" id="5f6Hwd7OPzm" role="1YuTPh">
       <property role="TrG5h" value="computation" />
       <ref role="1YaFvo" to="5l2n:yso5_brSDa" resolve="StencilComputation" />
