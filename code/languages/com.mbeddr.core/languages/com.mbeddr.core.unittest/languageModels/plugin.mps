@@ -2,11 +2,11 @@
 <model ref="r:46817041-e1bc-4759-8f95-11e32b42cd82(com.mbeddr.core.unittest.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -235,6 +235,15 @@
       <node concept="3clFbS" id="77nuVWJ0D8u" role="3clF47">
         <node concept="3cpWs6" id="77nuVWJ0MVO" role="3cqZAp">
           <node concept="1Wc70l" id="77nuVWJ1O_p" role="3cqZAk">
+            <node concept="3clFbC" id="77nuVWJ1P1p" role="3uHU7B">
+              <node concept="3clFbT" id="77nuVWJ1P2y" role="3uHU7w">
+                <property role="3clFbU" value="false" />
+              </node>
+              <node concept="10M0yZ" id="77nuVWJ1OGR" role="3uHU7B">
+                <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+                <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+              </node>
+            </node>
             <node concept="2OqwBi" id="77nuVWJ0MVQ" role="3uHU7w">
               <node concept="2OqwBi" id="77nuVWJ0N7e" role="2Oq$k0">
                 <node concept="2OqwBi" id="77nuVWJ0MVR" role="2Oq$k0">
@@ -263,15 +272,6 @@
                 <node concept="chp4Y" id="77nuVWJ0MW0" role="cj9EA">
                   <ref role="cht4Q" to="yz9a:ILZbnBPQGH" resolve="TestIsolationStrategy" />
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbC" id="77nuVWJ1P1p" role="3uHU7B">
-              <node concept="3clFbT" id="77nuVWJ1P2y" role="3uHU7w">
-                <property role="3clFbU" value="false" />
-              </node>
-              <node concept="10M0yZ" id="77nuVWJ1OGR" role="3uHU7B">
-                <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
-                <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
               </node>
             </node>
           </node>

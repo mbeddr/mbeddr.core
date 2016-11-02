@@ -356,6 +356,9 @@
       <property role="IQ2nx" value="5420368450507972520" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="3tp$LrDIuOx" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fOqJ1">
     <property role="TrG5h" value="ExternalModule" />

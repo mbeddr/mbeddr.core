@@ -11,7 +11,7 @@ subprojects {
 	
     // mps properties
     ext.mpsMajor = "3.4"
-    ext.mpsBuild = "3.4"
+    ext.mpsBuild = "3.4.1"
 }
 
 task wrapper(type: Wrapper) {

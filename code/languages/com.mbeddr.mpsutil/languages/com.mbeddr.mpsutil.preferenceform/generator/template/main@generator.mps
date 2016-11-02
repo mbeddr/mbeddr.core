@@ -2,16 +2,16 @@
 <model ref="7d01d37a-2398-4f30-a95d-7e42e5f56c19/r:234d8e6f-4f91-4920-a623-ee8dfd3ca830(com.mbeddr.mpsutil.preferenceform#145956936283286626/com.mbeddr.mpsutil.preferenceform.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -181,7 +181,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4598,7 +4598,7 @@
       <node concept="3clFbS" id="X7OD3WwKX3" role="3clF47">
         <node concept="3cpWs8" id="1BL2OuqD2Gw" role="3cqZAp">
           <node concept="3cpWsn" id="1BL2OuqD2Gx" role="3cpWs9">
-            <property role="TrG5h" value="dataFromDisk" />
+            <property role="TrG5h" value="diskData" />
             <node concept="3uibUv" id="1BL2OuqD495" role="1tU5fm">
               <ref role="3uigEE" node="X7OD3WwKZp" resolve="MyApplicationPreferenceComponent.MyState" />
             </node>
@@ -4606,6 +4606,17 @@
               <node concept="1pGfFk" id="1BL2OuqDnuy" role="2ShVmc">
                 <ref role="37wK5l" node="X7OD3WwKZ_" resolve="MyApplicationPreferenceComponent.MyState" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="47PvM_B$AMy" role="3cqZAp">
+          <node concept="3cpWsn" id="47PvM_B$AMz" role="3cpWs9">
+            <property role="TrG5h" value="memoryData" />
+            <node concept="3uibUv" id="47PvM_B$AM$" role="1tU5fm">
+              <ref role="3uigEE" node="X7OD3WwKZp" resolve="MyApplicationPreferenceComponent.MyState" />
+            </node>
+            <node concept="37vLTw" id="47PvM_B$Cal" role="33vP2m">
+              <ref role="3cqZAo" node="X7OD3WwKWL" resolve="myState" />
             </node>
           </node>
         </node>
@@ -4620,8 +4631,8 @@
               </node>
               <node concept="liA8E" id="4OZbTlQt72I" role="2OqNvi">
                 <ref role="37wK5l" to="jmi8:~PropertiesComponent.loadFields(java.lang.Object):boolean" resolve="loadFields" />
-                <node concept="37vLTw" id="1BL2OuqD3A$" role="37wK5m">
-                  <ref role="3cqZAo" node="1BL2OuqD2Gx" resolve="dataFromDisk" />
+                <node concept="37vLTw" id="bjX63rHq2t" role="37wK5m">
+                  <ref role="3cqZAo" node="X7OD3WwKWL" resolve="myState" />
                 </node>
               </node>
             </node>
@@ -4659,9 +4670,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4OZbTlQt6Iy" role="3cqZAp" />
-        <node concept="3clFbH" id="1BL2OuqD0Rr" role="3cqZAp" />
-        <node concept="3clFbH" id="1BL2OuqD0mC" role="3cqZAp" />
         <node concept="3clFbF" id="X7OD3WwKXa" role="3cqZAp">
           <node concept="1W57fq" id="X7OD3WwKXb" role="lGtFl">
             <node concept="3IZrLx" id="X7OD3WwKXc" role="3IZSJc">
@@ -4684,11 +4692,11 @@
             <node concept="Xjq3P" id="X7OD3WwKXl" role="2Oq$k0" />
             <node concept="liA8E" id="X7OD3WwKXm" role="2OqNvi">
               <ref role="37wK5l" node="X7OD3WwKYg" resolve="afterRead" />
-              <node concept="37vLTw" id="1BL2OuqD1oP" role="37wK5m">
-                <ref role="3cqZAo" node="X7OD3WwKWL" resolve="myState" />
+              <node concept="37vLTw" id="47PvM_B$Cuv" role="37wK5m">
+                <ref role="3cqZAo" node="47PvM_B$AMz" resolve="memoryData" />
               </node>
               <node concept="37vLTw" id="1BL2OuqD3Wk" role="37wK5m">
-                <ref role="3cqZAo" node="1BL2OuqD2Gx" resolve="dataFromDisk" />
+                <ref role="3cqZAo" node="1BL2OuqD2Gx" resolve="diskData" />
               </node>
             </node>
           </node>
@@ -4730,27 +4738,51 @@
         <node concept="3cpWs8" id="1BL2OuqFEOG" role="3cqZAp">
           <node concept="3cpWsn" id="1BL2OuqFEOH" role="3cpWs9">
             <property role="TrG5h" value="memoryData" />
+            <node concept="37vLTw" id="1IVrkisuDx8" role="33vP2m">
+              <ref role="3cqZAo" node="X7OD3WwKWL" resolve="myState" />
+            </node>
             <node concept="3uibUv" id="1BL2OuqFEOI" role="1tU5fm">
               <ref role="3uigEE" node="X7OD3WwKZp" resolve="MyApplicationPreferenceComponent.MyState" />
             </node>
-            <node concept="2ShNRf" id="1BL2OuqFEOJ" role="33vP2m">
-              <node concept="1pGfFk" id="1BL2OuqFEOK" role="2ShVmc">
+          </node>
+        </node>
+        <node concept="3cpWs8" id="47PvM_BzIbW" role="3cqZAp">
+          <node concept="3cpWsn" id="47PvM_BzIbX" role="3cpWs9">
+            <property role="TrG5h" value="diskData" />
+            <node concept="3uibUv" id="47PvM_BzIbY" role="1tU5fm">
+              <ref role="3uigEE" node="X7OD3WwKZp" resolve="MyApplicationPreferenceComponent.MyState" />
+            </node>
+            <node concept="2ShNRf" id="47PvM_B$4fV" role="33vP2m">
+              <node concept="1pGfFk" id="47PvM_B$$uu" role="2ShVmc">
                 <ref role="37wK5l" node="X7OD3WwKZ_" resolve="MyApplicationPreferenceComponent.MyState" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1BL2OuqFEoL" role="3cqZAp" />
+        <node concept="3clFbF" id="47PvM_BzJdJ" role="3cqZAp">
+          <node concept="2OqwBi" id="47PvM_BzJdL" role="3clFbG">
+            <node concept="2YIFZM" id="47PvM_BzJdM" role="2Oq$k0">
+              <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance():com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="47PvM_BzJdN" role="2OqNvi">
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.loadFields(java.lang.Object):boolean" resolve="loadFields" />
+              <node concept="37vLTw" id="47PvM_B$3CE" role="37wK5m">
+                <ref role="3cqZAo" node="47PvM_BzIbX" resolve="diskData" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="X7OD3WwKXV" role="3cqZAp">
           <node concept="2OqwBi" id="X7OD3WwKXW" role="3clFbG">
             <node concept="Xjq3P" id="X7OD3WwKXX" role="2Oq$k0" />
             <node concept="liA8E" id="X7OD3WwKXY" role="2OqNvi">
               <ref role="37wK5l" node="X7OD3WwKYC" resolve="beforeWrite" />
-              <node concept="37vLTw" id="1BL2OuqFNwG" role="37wK5m">
-                <ref role="3cqZAo" node="X7OD3WwKWL" resolve="myState" />
-              </node>
-              <node concept="37vLTw" id="1BL2OuqHiMh" role="37wK5m">
+              <node concept="37vLTw" id="47PvM_B$3Q9" role="37wK5m">
                 <ref role="3cqZAo" node="1BL2OuqFEOH" resolve="memoryData" />
+              </node>
+              <node concept="37vLTw" id="47PvM_B$49t" role="37wK5m">
+                <ref role="3cqZAo" node="47PvM_BzIbX" resolve="diskData" />
               </node>
             </node>
           </node>
@@ -9063,7 +9095,12 @@
                   </node>
                 </node>
               </node>
-              <node concept="10Nm6u" id="2i1sIFOyL0a" role="37wK5m" />
+              <node concept="2OqwBi" id="3BQnl5aqKVi" role="37wK5m">
+                <node concept="2WthIp" id="3BQnl5aqKVj" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="3BQnl5aqKVk" role="2OqNvi">
+                  <ref role="2WH_rO" node="1DjGUwRg6IU" resolve="component" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
