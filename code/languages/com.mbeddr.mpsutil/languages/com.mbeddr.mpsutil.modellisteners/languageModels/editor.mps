@@ -2,7 +2,7 @@
 <model ref="r:bf8b15b3-3020-491d-8b97-4aa01a650593(com.mbeddr.mpsutil.modellisteners.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -109,7 +109,7 @@
         <property role="3F0ifm" value="model listeners for" />
       </node>
       <node concept="1iCGBv" id="hDM2IlI" role="3EZMnx">
-        <ref role="1NtTu8" to="wlk:hDM2mAQ" />
+        <ref role="1NtTu8" to="wlk:hDM2mAQ" resolve="concept" />
         <node concept="1sVBvm" id="hDM2IlJ" role="1sWHZn">
           <node concept="3F0A7n" id="hDM2IzV" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -137,7 +137,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F2HdR" id="52ZF9D3bsLS" role="3EZMnx">
-          <ref role="1NtTu8" to="wlk:52ZF9D3bsLt" />
+          <ref role="1NtTu8" to="wlk:52ZF9D3bsLt" resolve="listeners" />
           <node concept="l2Vlx" id="52ZF9D3bsLT" role="2czzBx" />
           <node concept="pj6Ft" id="52ZF9D3bsNT" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -185,7 +185,7 @@
       </node>
       <node concept="1iCGBv" id="52ZF9D3aFqU" role="3EZMnx">
         <property role="1$x2rV" value="&lt;all&gt;" />
-        <ref role="1NtTu8" to="wlk:52ZF9D3a$K$" />
+        <ref role="1NtTu8" to="wlk:52ZF9D3a$K$" resolve="role" />
         <node concept="1sVBvm" id="52ZF9D3aFqW" role="1sWHZn">
           <node concept="3F0A7n" id="52ZF9D3aFro" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -230,7 +230,7 @@
       </node>
       <node concept="1iCGBv" id="5iW7uqbPAv9" role="3EZMnx">
         <property role="1$x2rV" value="&lt;all&gt;" />
-        <ref role="1NtTu8" to="wlk:5iW7uqbP_Y8" />
+        <ref role="1NtTu8" to="wlk:5iW7uqbP_Y8" resolve="property" />
         <node concept="1sVBvm" id="5iW7uqbPAvb" role="1sWHZn">
           <node concept="3F0A7n" id="5iW7uqbPABm" role="2wV5jI">
             <property role="1Intyy" value="true" />

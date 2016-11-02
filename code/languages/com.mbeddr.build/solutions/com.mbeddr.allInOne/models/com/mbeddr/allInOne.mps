@@ -137,7 +137,7 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.allInOne" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -313,35 +313,23 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="5qO$P$PtiTz" role="1l3spd">
+    <node concept="398rNT" id="2iaA4fp_I9s" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="4pE1MOiYJe$" role="398pKh">
-        <node concept="2Ry0Ak" id="4pE1MOiYJxG" role="iGT6I">
+      <node concept="55IIr" id="2iaA4fp_I9t" role="398pKh">
+        <node concept="2Ry0Ak" id="2iaA4fp_I9u" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="4pE1MOiYJy1" role="2Ry0An">
+          <node concept="2Ry0Ak" id="2iaA4fp_I9v" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4pE1MOiYJym" role="2Ry0An">
+            <node concept="2Ry0Ak" id="2iaA4fp_I9w" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="4pE1MOiYJyG" role="2Ry0An">
+              <node concept="2Ry0Ak" id="2iaA4fp_I9x" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4pE1MOiYJyN" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4pE1MOiYJyU" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="4pE1MOiYJz1" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="4pE1MOiYJz8" role="2Ry0An">
-                        <property role="2Ry0Am" value=".." />
-                        <node concept="2Ry0Ak" id="4pE1MOiYJzf" role="2Ry0An">
-                          <property role="2Ry0Am" value="Applications" />
-                          <node concept="2Ry0Ak" id="4pE1MOiYJzm" role="2Ry0An">
-                            <property role="2Ry0Am" value="MPS33.app" />
-                            <node concept="2Ry0Ak" id="4pE1MOiYJzt" role="2Ry0An">
-                              <property role="2Ry0Am" value="Contents" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                <node concept="2Ry0Ak" id="2iaA4fp_I9y" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS" />
+                  <node concept="2Ry0Ak" id="2iaA4fp_I9z" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS-3.3-MPS-143.1301.app" />
+                    <node concept="2Ry0Ak" id="2iaA4fp_I9$" role="2Ry0An">
+                      <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
                 </node>
@@ -381,7 +369,7 @@
     <node concept="2sgV4H" id="5qO$P$PtiTC" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5qO$P$PtiTD" role="2JcizS">
-        <ref role="398BVh" node="5qO$P$PtiTz" resolve="mps.home" />
+        <ref role="398BVh" node="2iaA4fp_I9s" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="4i9pOwLbJ99" role="1l3spa">

@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -20,6 +20,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -133,6 +134,7 @@
   </registry>
   <node concept="1lH9Xt" id="7OHQ0Tp2MvP">
     <property role="TrG5h" value="Analysis_Save_Load_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="126LgZ0MXjR" role="1SL9yI">
       <property role="TrG5h" value="testAnalysisConfiguration" />
       <node concept="3cqZAl" id="126LgZ0MXjS" role="3clF45" />
@@ -499,7 +501,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9$Vc" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 0, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9$Vd" role="2OqNvi">
@@ -516,7 +518,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9_cX" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (1,0)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 1, #row: 0)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9_cY" role="2OqNvi">
@@ -533,7 +535,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9_ta" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (1,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 1, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9_tb" role="2OqNvi">
@@ -550,7 +552,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9_ID" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (1,0) - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 1, #row: 0) - (#col: 0, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9_IE" role="2OqNvi">
@@ -567,7 +569,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9A1q" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,1) - (1,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 1) - (#col: 1, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9A1r" role="2OqNvi">
@@ -584,7 +586,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9Alt" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (1,0) - (1,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 1, #row: 0) - (#col: 1, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9Alu" role="2OqNvi">
@@ -602,7 +604,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="6dVgVd3N5K_" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - activation - (0,0)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - activation - (#col: 0, #row: 0)" />
               </node>
             </node>
             <node concept="liA8E" id="6dVgVd3N5KA" role="2OqNvi">
@@ -619,7 +621,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="6dVgVd3N4L3" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - activation - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - activation - (#col: 0, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="6dVgVd3N4L4" role="2OqNvi">
@@ -636,7 +638,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="6dVgVd3N6O4" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - activation - (1,0)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - activation - (#col: 1, #row: 0)" />
               </node>
             </node>
             <node concept="liA8E" id="6dVgVd3N6O5" role="2OqNvi">
@@ -653,7 +655,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="6dVgVd3N7lv" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - activation - (1,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - activation - (#col: 1, #row: 1)" />
               </node>
             </node>
             <node concept="liA8E" id="6dVgVd3N7lw" role="2OqNvi">

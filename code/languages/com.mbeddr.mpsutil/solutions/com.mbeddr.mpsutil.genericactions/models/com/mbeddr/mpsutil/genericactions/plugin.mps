@@ -5,14 +5,14 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="oq9k" ref="r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils.runtime)" />
+    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
@@ -24,9 +24,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -98,6 +97,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -161,7 +163,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -290,13 +292,13 @@
       <node concept="3Tm6S6" id="dt1EHJPaTO" role="1B3o_S" />
       <node concept="10Oyi0" id="dt1EHJPb9v" role="1tU5fm" />
       <node concept="2OqwBi" id="dt1EHJPnZI" role="33vP2m">
+        <node concept="2OwXpG" id="hBPavEb2uF" role="2OqNvi">
+          <ref role="2Oxat5" to="exr9:~EditorSettings$MyState.fontSize" resolve="fontSize" />
+        </node>
         <node concept="2ShNRf" id="dt1EHJPbgK" role="2Oq$k0">
           <node concept="1pGfFk" id="dt1EHJPnYZ" role="2ShVmc">
             <ref role="37wK5l" to="exr9:~EditorSettings$MyState.&lt;init&gt;()" resolve="EditorSettings.MyState" />
           </node>
-        </node>
-        <node concept="liA8E" id="dt1EHJPo1k" role="2OqNvi">
-          <ref role="37wK5l" to="exr9:~EditorSettings$MyState.getFontSize():int" resolve="getFontSize" />
         </node>
       </node>
     </node>
@@ -438,15 +440,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="dt1EHJP9eU" role="3cqZAp">
-          <node concept="2OqwBi" id="dt1EHJP9kZ" role="3clFbG">
-            <node concept="37vLTw" id="dt1EHJP9eS" role="2Oq$k0">
-              <ref role="3cqZAo" node="dt1EHJP92z" resolve="state" />
+        <node concept="3clFbF" id="hBPavEb2Vx" role="3cqZAp">
+          <node concept="37vLTI" id="hBPavEb3V1" role="3clFbG">
+            <node concept="37vLTw" id="hBPavEb4hY" role="37vLTx">
+              <ref role="3cqZAo" node="dt1EHJP8vN" resolve="newFontSize" />
             </node>
-            <node concept="liA8E" id="dt1EHJP9ne" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorSettings$MyState.setFontSize(int):void" resolve="setFontSize" />
-              <node concept="37vLTw" id="dt1EHJP9xu" role="37wK5m">
-                <ref role="3cqZAo" node="dt1EHJP8vN" resolve="newFontSize" />
+            <node concept="2OqwBi" id="hBPavEb369" role="37vLTJ">
+              <node concept="37vLTw" id="hBPavEb2Vv" role="2Oq$k0">
+                <ref role="3cqZAo" node="dt1EHJP92z" resolve="state" />
+              </node>
+              <node concept="2OwXpG" id="hBPavEb3ej" role="2OqNvi">
+                <ref role="2Oxat5" to="exr9:~EditorSettings$MyState.fontSize" resolve="fontSize" />
               </node>
             </node>
           </node>
@@ -753,7 +757,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="67rUwlckK4B" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/folder.png" />
+      <property role="1iqoE4" value="${module}/icons/folder.png" />
     </node>
   </node>
   <node concept="Zd50a" id="6bM7gvq4Vtb">
@@ -790,39 +794,35 @@
         <node concept="3cpWs8" id="7uLL3Mf2DgK" role="3cqZAp">
           <node concept="3cpWsn" id="7uLL3Mf2DgL" role="3cpWs9">
             <property role="TrG5h" value="path" />
-            <node concept="2OqwBi" id="23WougSgwAJ" role="33vP2m">
-              <node concept="2OqwBi" id="23WougSglPq" role="2Oq$k0">
-                <node concept="2YIFZM" id="23WougSglM4" role="2Oq$k0">
-                  <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="23WougSgnCk" role="2OqNvi">
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getBundleHome(jetbrains.mps.vfs.IFile):jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
-                  <node concept="2OqwBi" id="23WougSgs2g" role="37wK5m">
-                    <node concept="1eOMI4" id="23WougSgsXc" role="2Oq$k0">
-                      <node concept="10QFUN" id="23WougSgsXd" role="1eOMHV">
-                        <node concept="2OqwBi" id="23WougSgsX9" role="10QFUP">
-                          <node concept="2WthIp" id="23WougSgsXa" role="2Oq$k0" />
-                          <node concept="1DTwFV" id="23WougSgsXb" role="2OqNvi">
-                            <ref role="2WH_rO" node="7uLL3Mf2_Qy" resolve="module" />
-                          </node>
+            <node concept="17QB3L" id="7uLL3Mf2Eo1" role="1tU5fm" />
+            <node concept="2OqwBi" id="3__qLm0Cvbx" role="33vP2m">
+              <node concept="2OqwBi" id="3__qLm0CuUG" role="2Oq$k0">
+                <node concept="2OqwBi" id="23WougSgs2g" role="2Oq$k0">
+                  <node concept="1eOMI4" id="23WougSgsXc" role="2Oq$k0">
+                    <node concept="10QFUN" id="23WougSgsXd" role="1eOMHV">
+                      <node concept="2OqwBi" id="23WougSgsX9" role="10QFUP">
+                        <node concept="1DTwFV" id="23WougSgsXb" role="2OqNvi">
+                          <ref role="2WH_rO" node="7uLL3Mf2_Qy" resolve="module" />
                         </node>
-                        <node concept="3uibUv" id="23WougSgt9Y" role="10QFUM">
-                          <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
-                        </node>
+                        <node concept="2WthIp" id="23WougSgsXa" role="2Oq$k0" />
+                      </node>
+                      <node concept="3uibUv" id="23WougSgt9Y" role="10QFUM">
+                        <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="23WougSguHy" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~AbstractModule.getDescriptorFile():jetbrains.mps.vfs.IFile" resolve="getDescriptorFile" />
-                    </node>
+                  </node>
+                  <node concept="liA8E" id="23WougSguHy" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getDescriptorFile():jetbrains.mps.vfs.IFile" resolve="getDescriptorFile" />
                   </node>
                 </node>
+                <node concept="liA8E" id="3__qLm0Cv4r" role="2OqNvi">
+                  <ref role="37wK5l" to="3ju5:~IFile.getBundleHome():jetbrains.mps.vfs.IFile" resolve="getBundleHome" />
+                </node>
               </node>
-              <node concept="liA8E" id="23WougSgxs1" role="2OqNvi">
+              <node concept="liA8E" id="3__qLm0Cvs_" role="2OqNvi">
                 <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
               </node>
             </node>
-            <node concept="17QB3L" id="7uLL3Mf2Eo1" role="1tU5fm" />
           </node>
         </node>
         <node concept="SfApY" id="DMIuLunH2A" role="3cqZAp">
@@ -865,7 +865,7 @@
       <node concept="1oajcY" id="7uLL3Mf2_Qz" role="1oa70y" />
     </node>
     <node concept="1QGGSu" id="6wvhQs7nVXo" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/folder.png" />
+      <property role="1iqoE4" value="${module}/icons/folder.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="DMIuLunJDF">

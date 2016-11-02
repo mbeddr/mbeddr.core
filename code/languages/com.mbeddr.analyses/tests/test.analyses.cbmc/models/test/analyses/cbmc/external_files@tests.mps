@@ -7,7 +7,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -26,6 +26,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -144,6 +145,7 @@
   </registry>
   <node concept="1lH9Xt" id="28vOu_uqtWR">
     <property role="TrG5h" value="ExternalFiles_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="28vOu_uqtWS" role="1SL9yI">
       <property role="TrG5h" value="testSingleExternalFilesPicked" />
       <node concept="3cqZAl" id="28vOu_uqtWT" role="3clF45" />
@@ -343,7 +345,6 @@
             <ref role="3cqZAo" node="28vOu_urvbe" resolve="res1" />
           </node>
         </node>
-        <node concept="3clFbH" id="1_cCL2G28VD" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="28vOu_uryPG" role="1SL9yI">
@@ -499,13 +500,13 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="2YIFZM" id="28vOu_ur$un" role="33vP2m">
-              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+            <node concept="NRdvd" id="5EwdfGVh5vw" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
-              <node concept="37vLTw" id="28vOu_ur$uo" role="37wK5m">
+              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="37vLTw" id="5EwdfGVh5vx" role="37wK5m">
                 <ref role="3cqZAo" node="28vOu_ur$ug" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="28vOu_ur$up" role="37wK5m">
+              <node concept="Xl_RD" id="5EwdfGVh5vy" role="37wK5m">
                 <property role="Xl_RC" value="simple_robustness_1" />
               </node>
             </node>

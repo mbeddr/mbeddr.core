@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="0" />
-    <generationPart ref="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
-    <generationPart ref="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
-    <generationPart ref="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-    <generationPart ref="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-    <generationPart ref="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+    <engage id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" />
+    <engage id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" />
+    <engage id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" />
+    <engage id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" />
+    <engage id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" />
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>

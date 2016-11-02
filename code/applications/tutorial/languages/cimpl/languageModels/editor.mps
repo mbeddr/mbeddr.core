@@ -2,7 +2,7 @@
 <model ref="r:03ab3db8-c1da-4467-bf69-3e111c40e168(mbeddr.tutorial.osconfig.cimpl.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -66,7 +66,7 @@
         <property role="3F0ifm" value="task" />
       </node>
       <node concept="1iCGBv" id="4Kv0gUyBmVx" role="3EZMnx">
-        <ref role="1NtTu8" to="7wyt:4Kv0gUyBmVp" />
+        <ref role="1NtTu8" to="7wyt:4Kv0gUyBmVp" resolve="task" />
         <node concept="1sVBvm" id="4Kv0gUyBmVy" role="1sWHZn">
           <node concept="3F0A7n" id="4Kv0gUyBmV$" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -75,7 +75,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4Kv0gUyBmVB" role="3EZMnx">
-        <ref role="1NtTu8" to="7wyt:4Kv0gUyBmVA" />
+        <ref role="1NtTu8" to="7wyt:4Kv0gUyBmVA" resolve="body" />
       </node>
     </node>
   </node>
@@ -90,7 +90,7 @@
         <property role="3F0ifm" value="shared" />
       </node>
       <node concept="3F1sOY" id="7HJwNEvjNbh" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0A7n" id="7HJwNEvjNc6" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -121,7 +121,7 @@
       </node>
       <node concept="3F2HdR" id="7HJwNEvm2pN" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="7wyt:7HJwNEvm2po" />
+        <ref role="1NtTu8" to="7wyt:7HJwNEvm2po" resolve="resources" />
         <node concept="l2Vlx" id="7HJwNEvm2pO" role="2czzBx" />
         <node concept="3F0ifn" id="7HJwNEvpblP" role="2czzBI">
           <property role="3F0ifm" value="" />
@@ -137,14 +137,14 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7HJwNEvkNDI" role="3EZMnx">
-        <ref role="1NtTu8" to="7wyt:7HJwNEvkK97" />
+        <ref role="1NtTu8" to="7wyt:7HJwNEvkK97" resolve="body" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="7HJwNEvkKaP">
     <ref role="1XX52x" to="7wyt:7HJwNEvkKar" resolve="SharedResourceRef" />
     <node concept="1iCGBv" id="7HJwNEvkKaR" role="2wV5jI">
-      <ref role="1NtTu8" to="7wyt:7HJwNEvkKas" />
+      <ref role="1NtTu8" to="7wyt:7HJwNEvkKas" resolve="resource" />
       <node concept="1sVBvm" id="7HJwNEvkKaS" role="1sWHZn">
         <node concept="3F0A7n" id="7HJwNEvkKb3" role="2wV5jI">
           <property role="1Intyy" value="true" />

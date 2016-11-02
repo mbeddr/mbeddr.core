@@ -2,7 +2,7 @@
 <model ref="r:e1949020-a4ee-4f1c-801d-44db588540b4(de.itemis.mps.selection.intentions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -60,7 +60,7 @@
           <property role="3F0ifm" value="" />
         </node>
         <node concept="3F1sOY" id="5rGvd38Dc4l" role="3EZMnx">
-          <ref role="1NtTu8" to="p77b:5d_XfTkoAPO" />
+          <ref role="1NtTu8" to="p77b:5d_XfTkoAPO" resolve="description" />
         </node>
         <node concept="3F0ifn" id="5rGvd38Dc4m" role="3EZMnx">
           <node concept="VPM3Z" id="5rGvd38Dc4n" role="3F10Kt">
@@ -69,7 +69,7 @@
         </node>
         <node concept="3F1sOY" id="5rGvd38Dc4o" role="3EZMnx">
           <property role="1$x2rV" value="&lt;isApplicable = true&gt;" />
-          <ref role="1NtTu8" to="p77b:5d_XfTkoAPR" />
+          <ref role="1NtTu8" to="p77b:5d_XfTkoAPR" resolve="isApplicable" />
         </node>
         <node concept="3F0ifn" id="5rGvd38Dc4p" role="3EZMnx">
           <node concept="VPM3Z" id="5rGvd38Dc4q" role="3F10Kt">
@@ -77,7 +77,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="5rGvd38Dc4r" role="3EZMnx">
-          <ref role="1NtTu8" to="p77b:5d_XfTkoAPV" />
+          <ref role="1NtTu8" to="p77b:5d_XfTkoAPV" resolve="execute" />
         </node>
         <node concept="2iRkQZ" id="5rGvd38Dc4s" role="2iSdaV" />
       </node>
@@ -94,7 +94,7 @@
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
         </node>
         <node concept="3F1sOY" id="5d_XfTkoMe1" role="3EZMnx">
-          <ref role="1NtTu8" to="p77b:5d_XfTkoABw" />
+          <ref role="1NtTu8" to="p77b:5d_XfTkoABw" resolve="selectionType" />
         </node>
         <node concept="VPM3Z" id="5rGvd38Dc4_" role="3F10Kt">
           <property role="VOm3f" value="false" />

@@ -2,14 +2,14 @@
 <model ref="r:b536c1ef-ad5a-4ba9-99fe-f353751ef7fc(com.mbeddr.analyses.spin.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -45,6 +45,8 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -59,6 +61,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -117,7 +120,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3x0R1LJfFeZ" role="3EZMnx">
-          <ref role="1NtTu8" to="v326:3lXW7OZ694h" />
+          <ref role="1NtTu8" to="v326:3lXW7OZ694h" resolve="env" />
           <node concept="1sVBvm" id="3x0R1LJfFf0" role="1sWHZn">
             <node concept="3F0A7n" id="3x0R1LJfFf1" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -145,18 +148,25 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="5yxSA$IRpTT" role="3EZMnx">
+        <node concept="2iRfu4" id="5yxSA$IRpTU" role="2iSdaV" />
+        <node concept="3XFhqQ" id="5yxSA$IRpTV" role="3EZMnx" />
+        <node concept="PMmxH" id="5yxSA$IRu5J" role="3EZMnx">
+          <ref role="PMmxG" node="5yxSA$IRnri" resolve="PanRunSettingsComponent" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="3lXW7OZ6Ih1" role="3EZMnx">
         <node concept="2iRfu4" id="3lXW7OZ6Ih2" role="2iSdaV" />
         <node concept="3XFhqQ" id="3lXW7OZ6IiK" role="3EZMnx" />
         <node concept="PMmxH" id="3lXW7OZ6IiZ" role="3EZMnx">
-          <ref role="PMmxG" node="3lXW7OZ6IbV" resolve="PanSettingsComponent" />
+          <ref role="PMmxG" node="3lXW7OZ6IbV" resolve="TraceReadingSettingsComponent" />
         </node>
       </node>
     </node>
   </node>
   <node concept="PKFIW" id="3lXW7OZ6IbV">
-    <property role="TrG5h" value="PanSettingsComponent" />
-    <ref role="1XX52x" to="v326:3lXW7OZ6IbN" resolve="IPanSettings" />
+    <property role="TrG5h" value="TraceReadingSettingsComponent" />
+    <ref role="1XX52x" to="v326:3lXW7OZ6IbN" resolve="ITraceReadingSettings" />
     <node concept="3EZMnI" id="3lXW7OZ6IbX" role="2wV5jI">
       <node concept="3EZMnI" id="3lXW7OZ6Icg" role="3EZMnx">
         <node concept="2iRfu4" id="3lXW7OZ6Ich" role="2iSdaV" />
@@ -168,6 +178,24 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="3lXW7OZ6Ic0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5yxSA$IRnri">
+    <property role="TrG5h" value="PanRunSettingsComponent" />
+    <ref role="1XX52x" to="v326:5yxSA$IRnr7" resolve="IPanRunSettings" />
+    <node concept="3EZMnI" id="5yxSA$IRnro" role="2wV5jI">
+      <node concept="3EZMnI" id="5yxSA$IRnrp" role="3EZMnx">
+        <node concept="2iRfu4" id="5yxSA$IRnrq" role="2iSdaV" />
+        <node concept="3F0ifn" id="5yxSA$IRnrr" role="3EZMnx">
+          <property role="3F0ifm" value="search depth:" />
+        </node>
+        <node concept="3F1sOY" id="5yxSA$IR$j2" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1$x2rV" value="infinit" />
+          <ref role="1NtTu8" to="v326:5yxSA$IR$iQ" resolve="searchDepth" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="5yxSA$IRnrt" role="2iSdaV" />
     </node>
   </node>
 </model>

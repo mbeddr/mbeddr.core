@@ -2,16 +2,16 @@
 <model ref="120e1c9d-4e27-4478-b2af-b2c3bd3850b0/r:4caa2d61-d9e6-46c9-bcc0-0c94b6efe74d(com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="bbp5" ref="120e1c9d-4e27-4478-b2af-b2c3bd3850b0/r:ea4f2df6-5e5c-49de-8679-6112ec7dd9c3(com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.structure)" />
-    <import index="tpc2" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure)" />
-    <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
-    <import index="tp2q" ref="83888646-71ce-4f1c-9c53-c54016f6ad4f/r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections/jetbrains.mps.baseLanguage.collections.structure)" />
-    <import index="tp25" ref="7866978e-a0f0-4cc7-81bc-4d213d9375e1/r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel/jetbrains.mps.lang.smodel.structure)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -135,7 +135,7 @@
                 <node concept="2OqwBi" id="3jHPIDngQkA" role="2Oq$k0">
                   <node concept="1r4Lsj" id="3jHPIDngQgd" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="3jHPIDngQwY" role="2OqNvi">
-                    <ref role="3TtcxE" to="tpc2:hJF10O6" />
+                    <ref role="3TtcxE" to="tpc2:hJF10O6" resolve="styleItem" />
                   </node>
                 </node>
                 <node concept="2DeJg1" id="3jHPIDngSZH" role="2OqNvi">
@@ -164,31 +164,31 @@
               <node concept="2OqwBi" id="3jHPIDnhdaF" role="37vLTJ">
                 <node concept="1r4Lsj" id="3jHPIDnhd7U" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3jHPIDnhdz1" role="2OqNvi">
-                  <ref role="3Tt5mk" to="bbp5:5oklODae9g3" />
+                  <ref role="3Tt5mk" to="bbp5:5oklODae9g3" resolve="query" />
                 </node>
               </node>
               <node concept="2pJPEk" id="74InMvL0ZNR" role="37vLTx">
                 <node concept="2pJPED" id="74InMvL0ZNF" role="2pJPEn">
                   <ref role="2pJxaS" to="bbp5:5oklODadpyz" resolve="Function_GetElements" />
                   <node concept="2pIpSj" id="74InMvL0ZNQ" role="2pJxcM">
-                    <ref role="2pIpSl" to="tpee:gyVODHa" />
+                    <ref role="2pIpSl" to="tpee:gyVODHa" resolve="body" />
                     <node concept="2pJPED" id="74InMvL0ZNG" role="2pJxcZ">
                       <ref role="2pJxaS" to="tpee:fzclF80" resolve="StatementList" />
                       <node concept="2pIpSj" id="74InMvL0ZNO" role="2pJxcM">
-                        <ref role="2pIpSl" to="tpee:fzcqZ_x" />
+                        <ref role="2pIpSl" to="tpee:fzcqZ_x" resolve="statement" />
                         <node concept="36be1Y" id="74InMvL0ZNP" role="2pJxcZ">
                           <node concept="2pJPED" id="74InMvL0ZNH" role="36be1Z">
                             <ref role="2pJxaS" to="tpee:fzclF8j" resolve="ExpressionStatement" />
                             <node concept="2pIpSj" id="74InMvL0ZNN" role="2pJxcM">
-                              <ref role="2pIpSl" to="tpee:fzclF8k" />
+                              <ref role="2pIpSl" to="tpee:fzclF8k" resolve="expression" />
                               <node concept="2pJPED" id="74InMvL0ZNI" role="2pJxcZ">
                                 <ref role="2pJxaS" to="tpee:gEShNN5" resolve="GenericNewExpression" />
                                 <node concept="2pIpSj" id="74InMvL0ZNM" role="2pJxcM">
-                                  <ref role="2pIpSl" to="tpee:gEShVi6" />
+                                  <ref role="2pIpSl" to="tpee:gEShVi6" resolve="creator" />
                                   <node concept="2pJPED" id="74InMvL0ZNJ" role="2pJxcZ">
                                     <ref role="2pJxaS" to="tp2q:hOkMnGm" resolve="SequenceCreator" />
                                     <node concept="2pIpSj" id="74InMvL0ZNL" role="2pJxcM">
-                                      <ref role="2pIpSl" to="tp2q:hOkMuDu" />
+                                      <ref role="2pIpSl" to="tp2q:hOkMuDu" resolve="elementType" />
                                       <node concept="2pJPED" id="74InMvL0ZNK" role="2pJxcZ">
                                         <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
                                       </node>
@@ -214,7 +214,7 @@
               <node concept="2OqwBi" id="3jHPIDnhplb" role="37vLTJ">
                 <node concept="1r4Lsj" id="3jHPIDnhpeP" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3jHPIDnhpHx" role="2OqNvi">
-                  <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" />
+                  <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" resolve="elementsConcept" />
                 </node>
               </node>
             </node>

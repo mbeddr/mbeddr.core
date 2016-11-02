@@ -2,7 +2,7 @@
 <model ref="r:169bf691-ebfe-4e3f-aa54-227d6c183116(com.mbeddr.mpsutil.jfreechart.sandboxlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -202,7 +202,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7uOgiT9gFG" role="3EZMnx">
-        <ref role="1NtTu8" to="w1se:7uOgiT9fcQ" />
+        <ref role="1NtTu8" to="w1se:7uOgiT9fcQ" resolve="items" />
         <node concept="l2Vlx" id="7uOgiT9gFI" role="2czzBx" />
         <node concept="lj46D" id="7uOgiT9gKN" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -419,7 +419,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7uOgiT9gND" role="3EZMnx">
-        <ref role="1NtTu8" to="w1se:7uOgiT9fi9" />
+        <ref role="1NtTu8" to="w1se:7uOgiT9fi9" resolve="series" />
         <node concept="l2Vlx" id="7uOgiT9gNF" role="2czzBx" />
         <node concept="lj46D" id="7uOgiT9gT5" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -458,7 +458,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7uOgiT9hlH" role="3EZMnx">
-        <ref role="1NtTu8" to="w1se:7uOgiT9g8S" />
+        <ref role="1NtTu8" to="w1se:7uOgiT9g8S" resolve="charts" />
         <node concept="l2Vlx" id="7uOgiT9hlJ" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="7uOgiT9hlD" role="2iSdaV" />

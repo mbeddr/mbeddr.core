@@ -2,7 +2,7 @@
 <model ref="r:49330941-8eaa-442a-baa4-c3b07af7a98a(com.mbeddr.cc.requirements.csv.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -275,7 +275,7 @@
             <property role="3F0ifm" value="Mapper:" />
           </node>
           <node concept="3F1sOY" id="5liZiKqPq4O" role="3EZMnx">
-            <ref role="1NtTu8" to="8fsl:vcqV8fDzb3" />
+            <ref role="1NtTu8" to="8fsl:vcqV8fDzb3" resolve="mapper" />
           </node>
           <node concept="3F0ifn" id="5liZiKqPN1D" role="3EZMnx">
             <property role="3F0ifm" value="clear before import:" />
@@ -799,7 +799,7 @@
                                       <ref role="3cqZAo" node="vcqV8fDyN3" resolve="rm" />
                                     </node>
                                     <node concept="3Tsc0h" id="vcqV8fDyO9" role="2OqNvi">
-                                      <ref role="3TtcxE" to="75wo:7_tU7IQsFfz" />
+                                      <ref role="3TtcxE" to="75wo:7_tU7IQsFfz" resolve="requirements" />
                                     </node>
                                   </node>
                                   <node concept="TSZUe" id="vcqV8fDyOa" role="2OqNvi">
@@ -825,7 +825,7 @@
                                         <ref role="3cqZAo" node="5liZiKqPIVD" resolve="parentReq" />
                                       </node>
                                       <node concept="3Tsc0h" id="5liZiKqPIXd" role="2OqNvi">
-                                        <ref role="3TtcxE" to="75wo:7_tU7IQsF75" />
+                                        <ref role="3TtcxE" to="75wo:7_tU7IQsF75" resolve="details" />
                                       </node>
                                     </node>
                                     <node concept="TSZUe" id="5liZiKqPIXD" role="2OqNvi">

@@ -25,7 +25,7 @@
     <import index="8jfv" ref="r:b49d7b4c-a97a-4226-a59e-b10183eecf00(de.itemis.mps.selection.runtime.plugin)" />
     <import index="4jas" ref="r:b1829bc1-5615-478b-87a3-55032e34acfd(de.itemis.mps.selection.runtime)" />
     <import index="6tp1" ref="r:5c0390a8-12e2-407a-ba93-793107153436(de.itemis.mps.selection.runtime.mouse)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -665,8 +665,8 @@
                       </node>
                       <node concept="25OxAV" id="61ogb3QQrZt" role="2OqNvi" />
                     </node>
-                    <node concept="3TrEf2" id="61ogb3QQrZu" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                    <node concept="3TrEf2" id="4yYSJc$ZzBH" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                     </node>
                   </node>
                   <node concept="1rGIog" id="5VrxeMES1vT" role="2OqNvi" />
@@ -1565,7 +1565,7 @@
                 <ref role="3cqZAo" node="1laD9eY9cE6" resolve="cellInfo" />
               </node>
               <node concept="liA8E" id="2_D0AvWRGDA" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~CellInfo.findCell(jetbrains.mps.nodeEditor.EditorComponent):jetbrains.mps.nodeEditor.cells.EditorCell" resolve="findCell" />
+                <ref role="37wK5l" to="f4zo:~CellInfo.findCell(jetbrains.mps.openapi.editor.EditorComponent):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findCell" />
                 <node concept="1eOMI4" id="6tOcB$JAjo6" role="37wK5m">
                   <node concept="10QFUN" id="6tOcB$JAjo7" role="1eOMHV">
                     <node concept="3cpWs2" id="6tOcB$JAjo5" role="10QFUP">
@@ -2321,10 +2321,10 @@
               <ref role="3cqZAo" node="1laD9eY9cqe" resolve="selectionInfo" />
             </node>
             <node concept="liA8E" id="1laD9eY9cqt" role="2OqNvi">
-              <ref role="37wK5l" to="b8lf:~SelectionInfoImpl.setCellInfo(jetbrains.mps.nodeEditor.cells.CellInfo):void" resolve="setCellInfo" />
+              <ref role="37wK5l" to="b8lf:~SelectionInfoImpl.setCellInfo(jetbrains.mps.openapi.editor.cells.CellInfo):void" resolve="setCellInfo" />
               <node concept="2OqwBi" id="2_D0AvWRGCp" role="37wK5m">
                 <node concept="liA8E" id="2_D0AvWRGCv" role="2OqNvi">
-                  <ref role="37wK5l" to="g51k:~EditorCell.getCellInfo():jetbrains.mps.nodeEditor.cells.CellInfo" resolve="getCellInfo" />
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getCellInfo():jetbrains.mps.openapi.editor.cells.CellInfo" resolve="getCellInfo" />
                 </node>
                 <node concept="1eOMI4" id="4ZiZg53JQIZ" role="2Oq$k0">
                   <node concept="10QFUN" id="4ZiZg53JQfP" role="1eOMHV">

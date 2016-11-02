@@ -185,6 +185,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -198,10 +202,7 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -276,8 +277,8 @@
         <node concept="3clFbF" id="3p1cdQ7_fPW" role="3cqZAp">
           <node concept="2OqwBi" id="3p1cdQ7_guJ" role="3clFbG">
             <node concept="1PxgMI" id="3p1cdQ7_grB" role="2Oq$k0">
-              <ref role="1PxNhF" to="k8go:3p1cdQ7_d$W" resolve="Task" />
-              <node concept="2OqwBi" id="3p1cdQ7_gcK" role="1PxMeX">
+              <ref role="1m5ApE" to="k8go:3p1cdQ7_d$W" resolve="Task" />
+              <node concept="2OqwBi" id="3p1cdQ7_gcK" role="1m5AlR">
                 <node concept="13iPFW" id="3p1cdQ7_fPV" role="2Oq$k0" />
                 <node concept="YBYNd" id="3p1cdQ7_ggq" role="2OqNvi" />
               </node>

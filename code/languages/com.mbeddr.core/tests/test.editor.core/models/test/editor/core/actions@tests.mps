@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="-1" />
@@ -142,7 +142,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -176,9 +176,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -518,6 +515,11 @@
           <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
         </node>
       </node>
+      <node concept="2HxZob" id="36CzSVYH_zE" role="3cqZAp">
+        <node concept="1iFQzN" id="36CzSVYH_zF" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
+        </node>
+      </node>
       <node concept="3clFbF" id="73exJLGFI5Z" role="3cqZAp">
         <node concept="2OqwBi" id="73exJLGFI60" role="3clFbG">
           <node concept="369mXd" id="73exJLGFI61" role="2Oq$k0" />
@@ -577,6 +579,11 @@
       </node>
       <node concept="2HxZob" id="5fUKYjENj4o" role="3cqZAp">
         <node concept="1iFQzN" id="5fUKYjENj4p" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
+        </node>
+      </node>
+      <node concept="2HxZob" id="36CzSVYHDkr" role="3cqZAp">
+        <node concept="1iFQzN" id="36CzSVYHDks" role="3iKnsn">
           <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
         </node>
       </node>
@@ -2362,13 +2369,7 @@
         <node concept="3XIRFW" id="6rhOS_xtLam" role="c0U17" />
         <node concept="3TlMhK" id="6rhOS_xtLao" role="c0U16" />
         <node concept="1ly_i6" id="6rhOS_xtLct" role="ggAap">
-          <node concept="3XIRFW" id="6rhOS_xtLcu" role="1ly_ph">
-            <node concept="1KehLL" id="6rhOS_xtNlL" role="lGtFl">
-              <property role="1K8rM7" value="Constant_u338ov_d0" />
-              <property role="1K8rD$" value="default_RTransform" />
-              <property role="1Kfyot" value="right" />
-            </node>
-          </node>
+          <node concept="3XIRFW" id="6rhOS_xtLcu" role="1ly_ph" />
         </node>
       </node>
     </node>
@@ -3233,26 +3234,6 @@
       <node concept="2TK7Tu" id="7K_2cV$Jn1O" role="3cqZAp">
         <property role="2TTd_B" value="exported" />
       </node>
-      <node concept="3SKdUt" id="5pzVkrqdM2i" role="3cqZAp">
-        <node concept="3SKdUq" id="5pzVkrqdM2j" role="3SKWNk">
-          <property role="3SKdUp" value="check does not work on the build server" />
-        </node>
-      </node>
-      <node concept="3SKdUt" id="5pzVkrqdKAE" role="3cqZAp">
-        <node concept="3SKWN0" id="5pzVkrqdKAF" role="3SKWNk">
-          <node concept="3clFbF" id="7K_2cV$Jn1P" role="3SKWNf">
-            <node concept="2OqwBi" id="7K_2cV$Jn1Q" role="3clFbG">
-              <node concept="369mXd" id="7K_2cV$Jn1R" role="2Oq$k0" />
-              <node concept="AQDAd" id="7K_2cV$Jn1S" role="2OqNvi">
-                <ref role="37wK5l" node="73exJLGFf2n" resolve="checkCaret" />
-                <node concept="Xl_RD" id="7K_2cV$Jn1T" role="37wK5m">
-                  <property role="Xl_RC" value="exported" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="LiM7Y" id="7K_2cV$Jn6J">
@@ -3295,26 +3276,6 @@
     <node concept="3clFbS" id="7K_2cV$Jn6U" role="LjaKd">
       <node concept="2TK7Tu" id="7K_2cV$Jn6V" role="3cqZAp">
         <property role="2TTd_B" value="extern" />
-      </node>
-      <node concept="3SKdUt" id="5pzVkrqdKRD" role="3cqZAp">
-        <node concept="3SKdUq" id="5pzVkrqdKUU" role="3SKWNk">
-          <property role="3SKdUp" value="check does not work on the build server" />
-        </node>
-      </node>
-      <node concept="3SKdUt" id="5pzVkrqdKH7" role="3cqZAp">
-        <node concept="3SKWN0" id="5pzVkrqdKH8" role="3SKWNk">
-          <node concept="3clFbF" id="7K_2cV$Jn6W" role="3SKWNf">
-            <node concept="2OqwBi" id="7K_2cV$Jn6X" role="3clFbG">
-              <node concept="369mXd" id="7K_2cV$Jn6Y" role="2Oq$k0" />
-              <node concept="AQDAd" id="7K_2cV$Jn6Z" role="2OqNvi">
-                <ref role="37wK5l" node="73exJLGFf2n" resolve="checkCaret" />
-                <node concept="Xl_RD" id="7K_2cV$Jn70" role="37wK5m">
-                  <property role="Xl_RC" value="extern" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

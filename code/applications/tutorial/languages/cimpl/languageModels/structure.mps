@@ -2,7 +2,8 @@
 <model ref="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,8 +16,8 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -30,6 +31,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -42,18 +44,20 @@
   <node concept="1TIwiD" id="4Kv0gUyBmVn">
     <property role="TrG5h" value="TaskImpl" />
     <property role="34LRSv" value="task" />
-    <property role="1pbfSe" value="289640475" />
+    <property role="EcuMT" value="5485104033529949911" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4Kv0gUyBmVA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5485104033529949926" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="1TJgyj" id="4Kv0gUyBmVp" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="task" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5485104033529949913" />
       <ref role="20lvS9" to="rzjx:6URxCt9pDCD" resolve="TaskDef" />
     </node>
     <node concept="PrWs8" id="4Kv0gUyBmVo" role="PzmwI">
@@ -63,7 +67,7 @@
   <node concept="1TIwiD" id="7HJwNEvjDMB">
     <property role="TrG5h" value="SharedResource" />
     <property role="34LRSv" value="shared" />
-    <property role="1pbfSe" value="448667617" />
+    <property role="EcuMT" value="8894472076884090023" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7HJwNEvjK_l" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -75,18 +79,20 @@
   <node concept="1TIwiD" id="7HJwNEvkK8j">
     <property role="TrG5h" value="CriticalSection" />
     <property role="34LRSv" value="critical" />
-    <property role="1pbfSe" value="448955725" />
+    <property role="EcuMT" value="8894472076884378131" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="7HJwNEvm2po" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resources" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="8894472076884715096" />
       <ref role="20lvS9" node="7HJwNEvkKar" resolve="SharedResourceRef" />
     </node>
     <node concept="1TJgyj" id="7HJwNEvkK97" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8894472076884378183" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="PrWs8" id="7HJwNEv$Iwn" role="PzmwI">
@@ -95,12 +101,13 @@
   </node>
   <node concept="1TIwiD" id="7HJwNEvkKar">
     <property role="TrG5h" value="SharedResourceRef" />
-    <property role="1pbfSe" value="448955861" />
+    <property role="EcuMT" value="8894472076884378267" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7HJwNEvkKas" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resource" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="8894472076884378268" />
       <ref role="20lvS9" node="7HJwNEvjDMB" resolve="SharedResource" />
     </node>
   </node>

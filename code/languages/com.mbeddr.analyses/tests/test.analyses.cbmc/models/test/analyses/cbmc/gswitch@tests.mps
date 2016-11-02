@@ -6,10 +6,10 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -31,6 +31,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -106,6 +107,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -123,6 +125,7 @@
   </registry>
   <node concept="1lH9Xt" id="7yN$Xh8olBh">
     <property role="TrG5h" value="GSwitchExpression" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7yN$Xh8olDJ" role="1SL9yI">
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="7yN$Xh8olDK" role="3clF45" />
@@ -440,6 +443,17 @@
       <property role="TrG5h" value="testUnreachable" />
       <node concept="3cqZAl" id="7SLmAEO8smS" role="3clF45" />
       <node concept="3clFbS" id="7SLmAEO8smT" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVh6TK" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVh6TL" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVh6TJ" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVh6TM" role="33vP2m">
+              <property role="BaHAW" value="gswitch" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="gsw" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7SLmAEO8smU" role="3cqZAp">
           <node concept="3cpWsn" id="7SLmAEO8smV" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -451,10 +465,8 @@
             <node concept="NRdvd" id="7SLmAEO8smY" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
-              <node concept="BaHAS" id="7SLmAEO8smZ" role="37wK5m">
-                <property role="BaHAW" value="gswitch" />
-                <property role="BaGAP" value="" />
-                <property role="BaBD8" value="gsw" />
+              <node concept="37vLTw" id="5EwdfGVh6TN" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVh6TL" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7SLmAEO8sn0" role="37wK5m">
                 <property role="Xl_RC" value="entry_does_not_reach_gswitch" />

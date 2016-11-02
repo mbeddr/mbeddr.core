@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.contextactions/com.mbeddr.mpsutil.contextactions.mpl" folder="" />
+      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.contextactions.runtime/com.mbeddr.mpsutil.contextactions.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/diagram/devkits/de.itemis.mps.editor.diagram.devkit.devkit" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.collapsible/de.itemis.mps.editor.collapsible.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/diagram/languages/de.itemis.mps.editor.diagram.demo.activity/de.itemis.mps.editor.diagram.demo.activity.mpl" folder="diagram" />
@@ -24,7 +26,6 @@
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.editor.layout.sandbox/de.itemis.mps.editor.layout.sandbox.msd" folder="layout.mig" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/de.itemis.mps.mouselistener.runtime/de.itemis.mps.mouselistener.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/diagram/solutions/test.de.itemis.mps.editor.diagram.solution/test.de.itemis.mps.editor.diagram.solution.msd" folder="diagram" />
-      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.mpl" folder="layout.topdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.mpl" folder="layout.topdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.celllayout.sandboxlang/de.itemis.mps.editor.celllayout.sandboxlang.mpl" folder="layout.topdown.sandbox" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.celllayout/de.itemis.mps.editor.celllayout.mpl" folder="layout.topdown" />
@@ -47,12 +48,10 @@
       <modulePath path="$PROJECT_DIR$/mps-conditional-editor/solutions/de.slisson.mps.conditionalEditor.runtime/de.slisson.mps.conditionalEditor.runtime.msd" folder="conditionalEditor" />
       <modulePath path="$PROJECT_DIR$/mps-conditional-editor/solutions/de.slisson.mps.conditionalEditor.sandbox/de.slisson.mps.conditionalEditor.sandbox.msd" folder="conditionalEditor" />
       <modulePath path="$PROJECT_DIR$/mps-hacks/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.mpl" folder="hacks.nativelibs" />
-      <modulePath path="$PROJECT_DIR$/mps-hacks/languages/de.slisson.mps.dynsmodel/de.slisson.mps.dynsmodel.mpl" folder="hacks" />
       <modulePath path="$PROJECT_DIR$/mps-hacks/languages/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="hacks.reflection" />
       <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.itemis.mps.nativelibs.loader/de.itemis.mps.nativelibs.loader.msd" folder="hacks.nativelibs" />
       <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="hacks" />
       <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="hacks.reflection" />
-      <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.slisson.mps.reflection.sandbox/de.slisson.mps.reflection.sandbox.msd" folder="hacks.reflection" />
       <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math.demolang/de.itemis.mps.editor.math.demolang.mpl" folder="math" />
       <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math.java/de.itemis.mps.editor.math.java.mpl" folder="math" />
       <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math.notations/de.itemis.mps.editor.math.notations.mpl" folder="math" />

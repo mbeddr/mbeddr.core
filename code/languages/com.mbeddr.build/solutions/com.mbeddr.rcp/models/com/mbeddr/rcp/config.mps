@@ -17,6 +17,28 @@
     <import index="xsd6" ref="r:ca2b582e-fdcb-4767-9d74-cf61b47911f2(com.mbeddr.allInOne)" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
+        <child id="6666499814681515201" name="document" index="2pMbU3" />
+      </concept>
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
+      <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
+        <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
+      </concept>
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
@@ -164,6 +186,9 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
+        <reference id="6592112598314586626" name="group" index="m$f5T" />
+      </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
@@ -331,7 +356,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9GlD" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -1144,7 +1169,7 @@
     </node>
     <node concept="2_Ic$z" id="16IL9jC9Gly" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9Glz" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -1217,21 +1242,6 @@
     <node concept="1zClus" id="5msqZjqQCeD" role="3989C9">
       <property role="2OjLBL" value="0" />
       <property role="2OjLBK" value="1" />
-      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
-        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
-          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
-        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
-          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
-        </node>
-      </node>
-      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
-        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
-          <property role="3MwjfP" value="http://www.mbeddr.com" />
-        </node>
-      </node>
       <node concept="1zDKOm" id="2TPq_95o$4f" role="2Etnp4">
         <node concept="3_J27D" id="2TPq_95o$cq" role="2EtnoL">
           <node concept="3Mxwew" id="2TPq_95oAM8" role="3MwsjC">
@@ -1356,6 +1366,21 @@
           </node>
         </node>
       </node>
+      <node concept="NbPM2" id="4aQvnniFA$u" role="3$Ir1d">
+        <node concept="3Mxwew" id="4aQvnniFA$$" role="3MwsjC">
+          <property role="3MwjfP" value="http://www.mbeddr.com" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$E" role="3$HL_E">
+        <node concept="3Mxwew" id="4aQvnniFA$K" role="3MwsjC">
+          <property role="3MwjfP" value="mailto:mbeddr@itemis.de" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="4aQvnniFA$Q" role="IuMTc">
+        <node concept="3Mxwew" id="4aQvnniFA$W" role="3MwsjC">
+          <property role="3MwjfP" value="http://mbeddr.com/blog/" />
+        </node>
+      </node>
     </node>
     <node concept="55IIr" id="505a8HIkc0H" role="auvoZ" />
     <node concept="1l3spV" id="505a8HIkc0I" role="1l3spN">
@@ -1388,7 +1413,7 @@
     </node>
     <node concept="2_Ic$z" id="AyMfzoGqLn" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="AyMfzoGqLo" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -3031,6 +3056,12 @@
     <property role="TrG5h" value="mpsMbeddrBranding" />
     <property role="turDy" value="mps.xml" />
     <property role="3GE5qa" value="ide" />
+    <node concept="2sgV4H" id="3k50AsZVzcL" role="1l3spa">
+      <ref role="1l3spb" to="xsd6:5qO$P$PtiTw" resolve="com.mbeddr.allInOne" />
+      <node concept="398BVA" id="3k50AsZVzcM" role="2JcizS">
+        <ref role="398BVh" node="3k50AsZVz9y" resolve="artifacts.allInOne" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="5FIs3IeSkEA" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5FIs3IeSkFX" role="2JcizS">
@@ -3244,7 +3275,28 @@
         </node>
       </node>
     </node>
-    <node concept="2G$12M" id="7836$RyXwJm" role="3989C9">
+    <node concept="m$_wf" id="4LNFdiVWIZJ" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.rcp.actions" />
+      <node concept="3_J27D" id="4LNFdiVWIZL" role="m$_yQ">
+        <node concept="3Mxwew" id="4LNFdiVWJdU" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.rcp.actions" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="4LNFdiVWIZN" role="m_cZH">
+        <node concept="3Mxwew" id="4LNFdiVWKee" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr.rcp.actions" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="4LNFdiVWIZP" role="m$_w8">
+        <node concept="3Mxwew" id="4LNFdiVWKMe" role="3MwsjC">
+          <property role="3MwjfP" value="1.0" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="4LNFdiVWL2b" role="m$_yh">
+        <ref role="m$f5T" node="7836$RyXwJm" resolve="rcp.actions" />
+      </node>
+    </node>
+    <node concept="2G$12M" id="4LNFdiVWKTs" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.tutorialActions" />
       <node concept="1E1JtA" id="7836$RyXzVl" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3286,6 +3338,36 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="7836$RyXwJm" role="3989C9">
+      <property role="TrG5h" value="rcp.actions" />
+      <node concept="1E1JtA" id="DKNFG6nCg8" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.rcp.actions" />
+        <property role="3LESm3" value="062f3b10-3aa8-4ab3-a588-37ba2141428e" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="DKNFG6nChb" role="3LF7KH">
+          <ref role="398BVh" node="1BPeV_LjXqH" resolve="mbeddr.github.core.home" />
+          <node concept="2Ry0Ak" id="DKNFG6nChp" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="DKNFG6nCh$" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="DKNFG6nChJ" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.rcp" />
+                <node concept="2Ry0Ak" id="DKNFG6nChU" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="DKNFG6nCi5" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.rcp.actions" />
+                    <node concept="2Ry0Ak" id="DKNFG6nCig" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.rcp.actions.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1wNqPr" id="2B1T7v1mQt2" role="3989C9">
       <property role="1wNuhc" value="true" />
       <property role="1wNuhe" value="true" />
@@ -3296,7 +3378,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="2sgV4H" id="1BPeV_LjXr_" role="1l3spa">
       <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
@@ -3429,6 +3511,15 @@
         <ref role="398BVh" node="1BPeV_LjXqH" resolve="mbeddr.github.core.home" />
         <node concept="2Ry0Ak" id="1BPeV_LjXqN" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3k50AsZVz9y" role="1l3spd">
+      <property role="TrG5h" value="artifacts.allInOne" />
+      <node concept="398BVA" id="3k50AsZVzbP" role="398pKh">
+        <ref role="398BVh" node="1BPeV_LjXqL" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="3k50AsZVzca" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.allInOne" />
         </node>
       </node>
     </node>
@@ -3697,6 +3788,9 @@
         </node>
       </node>
       <node concept="398223" id="1BPeV_LjXvG" role="39821P">
+        <node concept="m$_wl" id="4LNFdiVWL4L" role="39821P">
+          <ref role="m_rDy" node="4LNFdiVWIZJ" resolve="com.mbeddr.rcp.actions" />
+        </node>
         <node concept="3ygNvl" id="32YXDrSql99" role="39821P">
           <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />
           <node concept="3LWZYq" id="32YXDrSqjt0" role="1juEy9">
@@ -3866,6 +3960,414 @@
     </node>
     <node concept="3b7kt6" id="5FIs3IeHQ8X" role="10PD9s" />
     <node concept="10PD9b" id="5FIs3IeHQ9g" role="10PD9s" />
+  </node>
+  <node concept="2pMbU2" id="2jBgaIG8VnE">
+    <property role="3GE5qa" value="ide" />
+    <property role="TrG5h" value="patchMPS" />
+    <node concept="3rIKKV" id="2jBgaIG8VnF" role="2pMbU3">
+      <node concept="2pNNFK" id="2jBgaIG8VoM" role="2pNm8H">
+        <property role="2pNNFO" value="project" />
+        <node concept="2pNUuL" id="2jBgaIG8VoX" role="2pNNFR">
+          <property role="2pNUuO" value="name" />
+          <node concept="2pMdtt" id="2jBgaIG8VoZ" role="2pMdts">
+            <property role="2pMdty" value="Patch MPS" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="2jBgaIG8Vp3" role="2pNNFR">
+          <property role="2pNUuO" value="default" />
+          <node concept="2pMdtt" id="2jBgaIG8Vp7" role="2pMdts">
+            <property role="2pMdty" value="default" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="2jBgaIG8Vpf" role="2pNNFR">
+          <property role="2pNUuO" value="basedir" />
+          <node concept="2pMdtt" id="2jBgaIG8Vpl" role="2pMdts">
+            <property role="2pMdty" value="." />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2jBgaIG8Vs1" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2jBgaIG8Vs2" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8Vs3" role="2pMdts">
+              <property role="2pMdty" value="artifacts.root" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8Vs4" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2jBgaIG8VqW" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2jBgaIG8Vrl" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8Vrs" role="2pMdts">
+              <property role="2pMdty" value="mps.home" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8Vrp" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="2jBgaIG8VtS" role="2pMdts">
+              <property role="2pMdty" value="${artifacts.root}/mps/MPS33" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2jBgaIG8Vzo" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2jBgaIG8Vzp" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8Vzq" role="2pMdts">
+              <property role="2pMdty" value="workbench.folder" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8Vzr" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="2jBgaIG8Vzs" role="2pMdts">
+              <property role="2pMdty" value="${mps.home}/lib/mps-workbench" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2jBgaIG8V$F" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2jBgaIG8V$G" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8V$H" role="2pMdts">
+              <property role="2pMdty" value="resources.folder" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8V$I" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="2jBgaIG8V$J" role="2pMdts">
+              <property role="2pMdty" value="${mps.home}/lib/resources" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2f1LmDBaAuR" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2f1LmDBaAuS" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2f1LmDBaAuT" role="2pMdts">
+              <property role="2pMdty" value="workbench.jar" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2f1LmDBaAuU" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="2f1LmDBaAuV" role="2pMdts">
+              <property role="2pMdty" value="${mps.home}/lib/mps-workbench.jar" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2f1LmDBaAuW" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2f1LmDBaAuX" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2f1LmDBaAuY" role="2pMdts">
+              <property role="2pMdty" value="resources.jar" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2f1LmDBaAuZ" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="2f1LmDBaAv0" role="2pMdts">
+              <property role="2pMdty" value="${mps.home}/lib/resources.jar" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="2jBgaIG8VBu" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2jBgaIG8VBv" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8VBw" role="2pMdts">
+              <property role="2pMdty" value="MPSPlatformExtensions.filtered.file" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8VBx" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="2jBgaIG8VBy" role="2pMdts">
+              <property role="2pMdty" value="${workbench.folder}/META-INF/MPSPlatformExtensions.filtered.xml" />
+            </node>
+          </node>
+        </node>
+        <node concept="2pNNFK" id="5qeLVaCk3MS" role="3o6s8t">
+          <property role="2pNNFO" value="property" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="5qeLVaCk3MT" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="5qeLVaCk3MU" role="2pMdts">
+              <property role="2pMdty" value="MPSPlatformExtensions.file" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="5qeLVaCk3MV" role="2pNNFR">
+            <property role="2pNUuO" value="value" />
+            <node concept="2pMdtt" id="5qeLVaCk3MW" role="2pMdts">
+              <property role="2pMdty" value="${workbench.folder}/META-INF/MPSPlatformExtensions.xml" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="2jBgaIG8VD2" role="3o6s8t" />
+        <node concept="2pNNFK" id="2jBgaIG8Vpr" role="3o6s8t">
+          <property role="2pNNFO" value="target" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="2jBgaIG8VpW" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8VpY" role="2pMdts">
+              <property role="2pMdty" value="patchMPS" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8Vq2" role="2pNNFR">
+            <property role="2pNUuO" value="depends" />
+            <node concept="2pMdtt" id="2jBgaIG8Vq6" role="2pMdts">
+              <property role="2pMdty" value="removeTipOfTheDay,patchMPSPlatformExtensions" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="2jBgaIG8VwW" role="3o6s8t" />
+        <node concept="2pNNFK" id="2jBgaIG8VpF" role="3o6s8t">
+          <property role="2pNNFO" value="target" />
+          <node concept="2pNUuL" id="2jBgaIG8Vqd" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8Vqj" role="2pMdts">
+              <property role="2pMdty" value="removeTipOfTheDay" />
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2jBgaIG8VqI" role="3o6s8t">
+            <property role="2pNNFO" value="unzip" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="2jBgaIG8VqJ" role="2pNNFR">
+              <property role="2pNUuO" value="src" />
+              <node concept="2pMdtt" id="2jBgaIG8VqK" role="2pMdts">
+                <property role="2pMdty" value="${resources.jar}" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8VqL" role="2pNNFR">
+              <property role="2pNUuO" value="dest" />
+              <node concept="2pMdtt" id="2jBgaIG8VqU" role="2pMdts">
+                <property role="2pMdty" value="${resources.folder}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2f1LmDBaB16" role="3o6s8t">
+            <property role="2pNNFO" value="delete" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="2f1LmDBaB17" role="2pNNFR">
+              <property role="2pNUuO" value="file" />
+              <node concept="2pMdtt" id="2f1LmDBaB18" role="2pMdts">
+                <property role="2pMdty" value="${resources.jar}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2jBgaIG8Vqq" role="3o6s8t">
+            <property role="2pNNFO" value="jar" />
+            <node concept="2pNNFK" id="2jBgaIG8Vub" role="3o6s8t">
+              <property role="2pNNFO" value="fileset" />
+              <node concept="2pNNFK" id="2jBgaIG8Vun" role="3o6s8t">
+                <property role="2pNNFO" value="include" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="2jBgaIG8Vur" role="2pNNFR">
+                  <property role="2pNUuO" value="name" />
+                  <node concept="2pMdtt" id="2jBgaIG8Vut" role="2pMdts">
+                    <property role="2pMdty" value="**/*.*" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="2jBgaIG8VuF" role="3o6s8t">
+                <property role="2pNNFO" value="exclude" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="2jBgaIG8VuG" role="2pNNFR">
+                  <property role="2pNUuO" value="name" />
+                  <node concept="2pMdtt" id="2jBgaIG8VuH" role="2pMdts">
+                    <property role="2pMdty" value="META-INF/IdeTipsAndTricks.xml" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNUuL" id="2jBgaIG8Vuh" role="2pNNFR">
+                <property role="2pNUuO" value="dir" />
+                <node concept="2pMdtt" id="2jBgaIG8Vuj" role="2pMdts">
+                  <property role="2pMdty" value="${resources.folder}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8Vqv" role="2pNNFR">
+              <property role="2pNUuO" value="destfile" />
+              <node concept="2pMdtt" id="2jBgaIG8VqA" role="2pMdts">
+                <property role="2pMdty" value="${resources.jar}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2jBgaIG8VuV" role="3o6s8t">
+            <property role="2pNNFO" value="delete" />
+            <node concept="2pNNFK" id="2jBgaIG8Vvm" role="3o6s8t">
+              <property role="2pNNFO" value="fileset" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="2jBgaIG8Vvq" role="2pNNFR">
+                <property role="2pNUuO" value="dir" />
+                <node concept="2pMdtt" id="2jBgaIG8Vvs" role="2pMdts">
+                  <property role="2pMdty" value="${resources.folder}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8Vvg" role="2pNNFR">
+              <property role="2pNUuO" value="includeEmptyDirs" />
+              <node concept="2pMdtt" id="2jBgaIG8Vvi" role="2pMdts">
+                <property role="2pMdty" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="2jBgaIG8Vvv" role="3o6s8t" />
+        <node concept="2pNNFK" id="2jBgaIG8VpM" role="3o6s8t">
+          <property role="2pNNFO" value="target" />
+          <node concept="2pNNFK" id="2jBgaIG8VxG" role="3o6s8t">
+            <property role="2pNNFO" value="unzip" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="2jBgaIG8VxH" role="2pNNFR">
+              <property role="2pNUuO" value="src" />
+              <node concept="2pMdtt" id="2jBgaIG8VxI" role="2pMdts">
+                <property role="2pMdty" value="${workbench.jar}" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8VxJ" role="2pNNFR">
+              <property role="2pNUuO" value="dest" />
+              <node concept="2pMdtt" id="2jBgaIG8VxK" role="2pMdts">
+                <property role="2pMdty" value="${workbench.folder}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2f1LmDBaAMu" role="3o6s8t">
+            <property role="2pNNFO" value="delete" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="2f1LmDBaAMv" role="2pNNFR">
+              <property role="2pNUuO" value="file" />
+              <node concept="2pMdtt" id="2f1LmDBaAMw" role="2pMdts">
+                <property role="2pMdty" value="${workbench.jar}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2jBgaIG8VyP" role="3o6s8t">
+            <property role="2pNNFO" value="copy" />
+            <node concept="2pNNFK" id="2jBgaIG8VA8" role="3o6s8t">
+              <property role="2pNNFO" value="filterchain" />
+              <node concept="2pNNFK" id="2jBgaIG8VAd" role="3o6s8t">
+                <property role="2pNNFO" value="linecontains" />
+                <node concept="2pNNFK" id="2jBgaIG8VAn" role="3o6s8t">
+                  <property role="2pNNFO" value="contains" />
+                  <property role="qg3DV" value="true" />
+                  <node concept="2pNUuL" id="2jBgaIG8VAr" role="2pNNFR">
+                    <property role="2pNUuO" value="value" />
+                    <node concept="2pMdtt" id="2jBgaIG8VAt" role="2pMdts">
+                      <property role="2pMdty" value="ProductivityFeaturesRegistry" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="2jBgaIG8VAh" role="2pNNFR">
+                  <property role="2pNUuO" value="negate" />
+                  <node concept="2pMdtt" id="2jBgaIG8VAj" role="2pMdts">
+                    <property role="2pMdty" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8Vze" role="2pNNFR">
+              <property role="2pNUuO" value="tofile" />
+              <node concept="2pMdtt" id="2jBgaIG8Vzg" role="2pMdts">
+                <property role="2pMdty" value="${MPSPlatformExtensions.filtered.file}" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8Vzi" role="2pNNFR">
+              <property role="2pNUuO" value="file" />
+              <node concept="2pMdtt" id="2jBgaIG8Vzj" role="2pMdts">
+                <property role="2pMdty" value="${MPSPlatformExtensions.file}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="5qeLVaCk3T8" role="3o6s8t">
+            <property role="2pNNFO" value="delete" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="5qeLVaCk3T9" role="2pNNFR">
+              <property role="2pNUuO" value="file" />
+              <node concept="2pMdtt" id="5qeLVaCk3Ta" role="2pMdts">
+                <property role="2pMdty" value="${MPSPlatformExtensions.file}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="5qeLVaCk3Up" role="3o6s8t">
+            <property role="2pNNFO" value="move" />
+            <property role="qg3DV" value="true" />
+            <node concept="2pNUuL" id="5qeLVaCk3Uq" role="2pNNFR">
+              <property role="2pNUuO" value="file" />
+              <node concept="2pMdtt" id="5qeLVaCk3Ur" role="2pMdts">
+                <property role="2pMdty" value="${MPSPlatformExtensions.filtered.file}" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="5qeLVaCk3VN" role="2pNNFR">
+              <property role="2pNUuO" value="tofile" />
+              <node concept="2pMdtt" id="5qeLVaCk3VU" role="2pMdts">
+                <property role="2pMdty" value="${MPSPlatformExtensions.file}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2jBgaIG8Vy5" role="3o6s8t">
+            <property role="2pNNFO" value="jar" />
+            <node concept="2pNNFK" id="2jBgaIG8Vy6" role="3o6s8t">
+              <property role="2pNNFO" value="fileset" />
+              <node concept="2pNNFK" id="2jBgaIG8Vy7" role="3o6s8t">
+                <property role="2pNNFO" value="include" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="2jBgaIG8Vy8" role="2pNNFR">
+                  <property role="2pNUuO" value="name" />
+                  <node concept="2pMdtt" id="2jBgaIG8Vy9" role="2pMdts">
+                    <property role="2pMdty" value="**/*.*" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNUuL" id="2jBgaIG8Vyd" role="2pNNFR">
+                <property role="2pNUuO" value="dir" />
+                <node concept="2pMdtt" id="2jBgaIG8Vye" role="2pMdts">
+                  <property role="2pMdty" value="${workbench.folder}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8Vyf" role="2pNNFR">
+              <property role="2pNUuO" value="destfile" />
+              <node concept="2pMdtt" id="2jBgaIG8Vyg" role="2pMdts">
+                <property role="2pMdty" value="${workbench.jar}" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="2jBgaIG8Vyh" role="3o6s8t">
+            <property role="2pNNFO" value="delete" />
+            <node concept="2pNNFK" id="2jBgaIG8Vyi" role="3o6s8t">
+              <property role="2pNNFO" value="fileset" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="2jBgaIG8Vyj" role="2pNNFR">
+                <property role="2pNUuO" value="dir" />
+                <node concept="2pMdtt" id="2jBgaIG8Vyk" role="2pMdts">
+                  <property role="2pMdty" value="${workbench.folder}" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="2jBgaIG8Vyl" role="2pNNFR">
+              <property role="2pNUuO" value="includeEmptyDirs" />
+              <node concept="2pMdtt" id="2jBgaIG8Vym" role="2pMdts">
+                <property role="2pMdty" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNUuL" id="2jBgaIG8Vqh" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="2jBgaIG8Vql" role="2pMdts">
+              <property role="2pMdty" value="patchMPSPlatformExtensions" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

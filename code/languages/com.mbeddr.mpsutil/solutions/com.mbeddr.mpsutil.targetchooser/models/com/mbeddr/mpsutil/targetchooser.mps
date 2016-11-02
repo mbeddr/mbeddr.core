@@ -47,6 +47,7 @@
     <import index="fyhl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps(MPS.Core/)" />
     <import index="z1c5" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="2sud" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.treeStructure(MPS.IDEA/)" implicit="true" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
@@ -11520,44 +11521,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="66R$0mlYEp7" role="3cqZAp" />
-        <node concept="3cpWs8" id="66R$0mlZAqh" role="3cqZAp">
-          <node concept="3cpWsn" id="66R$0mlZAqi" role="3cpWs9">
-            <property role="TrG5h" value="actionList" />
-            <node concept="3uibUv" id="66R$0mlZBkf" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="66R$0mlZBOs" role="11_B2D">
-                <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
+        <node concept="3clFbH" id="1cepGE53n73" role="3cqZAp" />
+        <node concept="3clFbF" id="1cepGE53nmP" role="3cqZAp">
+          <node concept="2OqwBi" id="2tN72OE9uqE" role="3clFbG">
+            <node concept="2YIFZM" id="2tN72OE9thM" role="2Oq$k0">
+              <ref role="37wK5l" to="g1qu:~UIUtil.getClientProperty(java.lang.Object,com.intellij.openapi.util.Key):java.lang.Object" resolve="getClientProperty" />
+              <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
+              <node concept="37vLTw" id="2tN72OE9tx5" role="37wK5m">
+                <ref role="3cqZAo" node="66R$0mlS$kT" resolve="component" />
+              </node>
+              <node concept="10M0yZ" id="2tN72OE9tIZ" role="37wK5m">
+                <ref role="1PxDUh" to="qkt:~AnAction" resolve="AnAction" />
+                <ref role="3cqZAo" to="qkt:~AnAction.ACTIONS_KEY" resolve="ACTIONS_KEY" />
               </node>
             </node>
-            <node concept="10QFUN" id="66R$0mlZBXP" role="33vP2m">
-              <node concept="3uibUv" id="66R$0mlZC1_" role="10QFUM">
-                <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                <node concept="3uibUv" id="66R$0mlZC8S" role="11_B2D">
-                  <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="66R$0mlZAqj" role="10QFUP">
-                <node concept="37vLTw" id="66R$0mlZAqk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="66R$0mlS$kT" resolve="component" />
-                </node>
-                <node concept="liA8E" id="66R$0mlZAql" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
-                  <node concept="10M0yZ" id="66R$0mlZAqm" role="37wK5m">
-                    <ref role="1PxDUh" to="qkt:~AnAction" resolve="AnAction" />
-                    <ref role="3cqZAo" to="qkt:~AnAction.ourClientProperty" resolve="ourClientProperty" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="66R$0mlZyFC" role="3cqZAp">
-          <node concept="2OqwBi" id="66R$0mlZCAo" role="3clFbG">
-            <node concept="37vLTw" id="66R$0mlZAqn" role="2Oq$k0">
-              <ref role="3cqZAo" node="66R$0mlZAqi" resolve="actionList" />
-            </node>
-            <node concept="liA8E" id="66R$0mlZEuh" role="2OqNvi">
+            <node concept="liA8E" id="2tN72OE9vtX" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~List.clear():void" resolve="clear" />
             </node>
           </node>

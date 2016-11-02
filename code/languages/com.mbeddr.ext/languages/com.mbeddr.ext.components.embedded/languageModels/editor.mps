@@ -2,7 +2,7 @@
 <model ref="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -64,7 +64,7 @@
       </node>
       <node concept="l2Vlx" id="7X9xw2qH9MG" role="2iSdaV" />
       <node concept="1iCGBv" id="7X9xw2qH9MH" role="3EZMnx">
-        <ref role="1NtTu8" to="bs45:7X9xw2qH9LO" />
+        <ref role="1NtTu8" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
         <node concept="1sVBvm" id="7X9xw2qH9MI" role="1sWHZn">
           <node concept="3F0A7n" id="7X9xw2qH9MJ" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -77,7 +77,7 @@
         <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
       </node>
       <node concept="1iCGBv" id="7X9xw2qH9ML" role="3EZMnx">
-        <ref role="1NtTu8" to="bs45:7X9xw2qH9LP" />
+        <ref role="1NtTu8" to="bs45:7X9xw2qH9LP" resolve="instance" />
         <node concept="1sVBvm" id="7X9xw2qH9MM" role="1sWHZn">
           <node concept="3F0A7n" id="7X9xw2qH9MN" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -96,7 +96,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="7X9xw2qH9MR" role="3EZMnx">
-        <ref role="1NtTu8" to="bs45:7X9xw2qH9LQ" />
+        <ref role="1NtTu8" to="bs45:7X9xw2qH9LQ" resolve="runnable" />
         <node concept="1sVBvm" id="7X9xw2qH9MS" role="1sWHZn">
           <node concept="3F0A7n" id="7X9xw2qH9MT" role="2wV5jI">
             <property role="1Intyy" value="true" />

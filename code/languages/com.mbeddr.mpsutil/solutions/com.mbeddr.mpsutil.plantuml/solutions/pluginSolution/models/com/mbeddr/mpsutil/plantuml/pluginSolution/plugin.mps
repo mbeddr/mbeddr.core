@@ -2,19 +2,19 @@
 <model ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/r:e053bdde-b82f-4d5b-a735-e0af382d4ef2(com.mbeddr.mpsutil.plantuml.pluginSolution/com.mbeddr.mpsutil.plantuml.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="ekwn" ref="5b1f863d-65a0-41a6-a801-33896be24202/r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor/jetbrains.mps.ide.editor.actions)" />
+    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
@@ -34,21 +34,20 @@
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="dnq3" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.dom.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ughz" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.w3c.dom.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="4anb" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="gzvg" ref="c2788093-51e8-4cfe-943b-eefd5ff309ff/r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.plugin)" />
+    <import index="gzvg" ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" />
     <import index="er5d" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="ugom" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.bridge(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="e373" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
+    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -429,16 +428,17 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -2004,7 +2004,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1QGGTI" value="${module}/icons/vis.png" />
+      <property role="1iqoE4" value="${module}/icons/vis.png" />
     </node>
   </node>
   <node concept="312cEu" id="1X6acCMyThI">
@@ -2541,7 +2541,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="5BkFC2yhAJ4" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/zoomInIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/zoomInIcon.png" />
     </node>
     <node concept="1DS2jV" id="18ZQ$P85cQE" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -2679,7 +2679,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0FbBQs" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/vis.png" />
+      <property role="1iqoE4" value="${module}/icons/vis.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
@@ -2762,7 +2762,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2sPLpCfQjiP" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/zoomOutIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/zoomOutIcon.png" />
     </node>
     <node concept="1DS2jV" id="2sPLpCfQjiQ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -2968,7 +2968,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2sPLpCfQjj9" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/saveIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/saveIcon.png" />
     </node>
     <node concept="1DS2jV" id="2sPLpCfQjja" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -4333,7 +4333,7 @@
                       <node concept="3cpWsn" id="2sPLpCfQE4Y" role="3cpWs9">
                         <property role="TrG5h" value="svgDocument" />
                         <property role="3TUv4t" value="false" />
-                        <node concept="3uibUv" id="2sPLpCfQE5S" role="1tU5fm">
+                        <node concept="3uibUv" id="11w71XmgU7V" role="1tU5fm">
                           <ref role="3uigEE" to="ughz:~SVGDocument" resolve="SVGDocument" />
                         </node>
                         <node concept="10QFUN" id="2sPLpCfQE50" role="33vP2m">
@@ -4701,7 +4701,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rGUY" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/resetIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/resetIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rGUZ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -4737,7 +4737,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rIRb" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/backIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/backIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRc" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -4795,7 +4795,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rIRh" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/fwdIcon.png" />
+      <property role="1iqoE4" value="${module}/icons/fwdIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRi" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -5606,7 +5606,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="6IuaPRfaRiy" role="3Uehp1">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/puml.png" />
+      <property role="1iqoE4" value="${module}/icons/puml.png" />
     </node>
     <node concept="1DS2jV" id="6IuaPRfaRiz" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -5694,7 +5694,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="bhVSeGf3t4" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/vis.png" />
+      <property role="1iqoE4" value="${module}/icons/vis.png" />
     </node>
     <node concept="2ScWuX" id="bhVSeGf5_Y" role="tmbBb">
       <node concept="3clFbS" id="bhVSeGf5_Z" role="2VODD2">
@@ -5804,8 +5804,8 @@
                   </node>
                   <node concept="2OqwBi" id="bhVSeGfQdl" role="33vP2m">
                     <node concept="1PxgMI" id="bhVSeGfQdm" role="2Oq$k0">
-                      <ref role="1PxNhF" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
-                      <node concept="37vLTw" id="bhVSeGfQdn" role="1PxMeX">
+                      <ref role="1m5ApE" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+                      <node concept="37vLTw" id="bhVSeGfQdn" role="1m5AlR">
                         <ref role="3cqZAo" node="4vCqlNf_Czc" resolve="node" />
                       </node>
                     </node>

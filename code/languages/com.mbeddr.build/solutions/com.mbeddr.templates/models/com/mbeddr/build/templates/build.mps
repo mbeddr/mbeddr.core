@@ -2,7 +2,7 @@
 <model ref="r:5524d5d3-b0a6-45d1-8003-a1549b3f7cc3(com.mbeddr.build.templates.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
@@ -162,7 +162,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="m$_wf" id="1YLj_r8S1Mc" role="3989C9">
       <property role="m$_wk" value="yourplugin" />
@@ -285,7 +285,7 @@
     </node>
     <node concept="2_Ic$z" id="4RmjYKtSlyz" role="3989C9">
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1qmcz" role="3989C9">
@@ -478,7 +478,7 @@
     </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -552,7 +552,7 @@
     </node>
     <node concept="2_Ic$z" id="3$3J06Wfv8v" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="3$3J06Wfv8w" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />

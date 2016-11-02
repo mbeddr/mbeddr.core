@@ -2,7 +2,7 @@
 <model ref="r:ccc912a6-16e8-466b-b48a-0e82310c4cc7(de.itemis.mps.tooltips.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,12 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
       </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -47,12 +53,17 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="7XU1fOGp86R">
     <ref role="1XX52x" to="bhcn:7XU1fOGp7Jz" resolve="CellModel_Tooltip" />
     <node concept="3EZMnI" id="7XU1fOGp87G" role="2wV5jI">
       <node concept="3F1sOY" id="7XU1fOGp87T" role="3EZMnx">
-        <ref role="1NtTu8" to="bhcn:7XU1fOGp86t" />
+        <ref role="1NtTu8" to="bhcn:7XU1fOGp86t" resolve="anchor" />
       </node>
       <node concept="3F0ifn" id="7XU1fOGp87N" role="3EZMnx">
         <property role="3F0ifm" value="with tooltip" />
@@ -61,7 +72,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7XU1fOGp880" role="3EZMnx">
-        <ref role="1NtTu8" to="bhcn:7XU1fOGp86r" />
+        <ref role="1NtTu8" to="bhcn:7XU1fOGp86r" resolve="tooltip" />
       </node>
       <node concept="2iRkQZ" id="7XU1fOGp89I" role="2iSdaV" />
       <node concept="VPXOz" id="7XU1fOGp89G" role="3F10Kt">
@@ -70,6 +81,13 @@
     </node>
     <node concept="PMmxH" id="hF4Bju4" role="6VMZX">
       <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="6s2UZ$e67wc">
+    <property role="TrG5h" value="tooltip" />
+    <node concept="2BsEeg" id="6s2UZ$e67wd" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="tooltipHint" />
     </node>
   </node>
 </model>

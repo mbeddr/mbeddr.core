@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -453,11 +453,11 @@
                                 <ref role="3cqZAo" node="3D8Uf619EmG" resolve="tp" />
                               </node>
                               <node concept="3TrEf2" id="3D8Uf61aNWS" role="2OqNvi">
-                                <ref role="3Tt5mk" to="2c95:2TZO3DbvcWd" />
+                                <ref role="3Tt5mk" to="2c95:2TZO3DbvcWd" resolve="text" />
                               </node>
                             </node>
                             <node concept="3Tsc0h" id="3D8Uf61aPHR" role="2OqNvi">
-                              <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+                              <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
                             </node>
                           </node>
                           <node concept="1uHKPH" id="3D8Uf61b02e" role="2OqNvi" />
@@ -1329,7 +1329,7 @@
                                               </node>
                                             </node>
                                             <node concept="3TrEf2" id="50PTLlumwE0" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="2c95:4vQSg$Ar0eC" />
+                                              <ref role="3Tt5mk" to="2c95:4vQSg$Ar0eC" resolve="header" />
                                             </node>
                                           </node>
                                           <node concept="zfrQC" id="50PTLlumwE1" role="2OqNvi" />
@@ -1669,7 +1669,7 @@
                 <ref role="3cqZAo" node="627_yy3isYa" resolve="w" />
               </node>
               <node concept="3TrEf2" id="627_yy3it$E" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:627_yy34G1n" />
+                <ref role="3Tt5mk" to="2c95:627_yy34G1n" resolve="modelContentPtr" />
               </node>
             </node>
             <node concept="2qgKlT" id="627_yy3jaAl" role="2OqNvi">
@@ -1787,7 +1787,7 @@
                 <ref role="3cqZAo" node="4KbglN$U7c8" resolve="w" />
               </node>
               <node concept="3TrEf2" id="4KbglN$U7ch" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:627_yy34G16" />
+                <ref role="3Tt5mk" to="2c95:627_yy34G16" resolve="codeptr" />
               </node>
             </node>
             <node concept="2qgKlT" id="4KbglN$U7ci" role="2OqNvi">
@@ -1983,7 +1983,7 @@
                 <ref role="3cqZAo" node="4KbglN$W6re" resolve="w" />
               </node>
               <node concept="3TrEf2" id="4KbglN$WwT1" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:627_yy34G1h" />
+                <ref role="3Tt5mk" to="2c95:627_yy34G1h" resolve="sizeSpec" />
               </node>
             </node>
           </node>
@@ -1995,7 +1995,7 @@
                 <ref role="3cqZAo" node="4KbglN$W6re" resolve="w" />
               </node>
               <node concept="3TrEf2" id="4KbglN$WKlH" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:627_yy34G16" />
+                <ref role="3Tt5mk" to="2c95:627_yy34G16" resolve="codeptr" />
               </node>
             </node>
             <node concept="zfrQC" id="4KbglN$WLsR" role="2OqNvi" />
@@ -2008,7 +2008,7 @@
                 <ref role="3cqZAo" node="4KbglN$W6re" resolve="w" />
               </node>
               <node concept="3TrEf2" id="4KbglN$W6rn" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:627_yy34G16" />
+                <ref role="3Tt5mk" to="2c95:627_yy34G16" resolve="codeptr" />
               </node>
             </node>
             <node concept="2qgKlT" id="4KbglN$W6ro" role="2OqNvi">
@@ -2207,7 +2207,7 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCV34F" role="2pJxcM">
-                  <ref role="2pIpSl" to="2c95:519ky_SprCS" />
+                  <ref role="2pIpSl" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
                   <node concept="2pJPED" id="3$GaJTCV35h" role="2pJxcZ">
                     <ref role="2pJxaS" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
                     <node concept="2pJxcG" id="3$GaJTCV35I" role="2pJxcM">
@@ -2217,7 +2217,7 @@
                       </node>
                     </node>
                     <node concept="2pIpSj" id="3$GaJTCV37r" role="2pJxcM">
-                      <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" />
+                      <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
                       <node concept="2pJPED" id="3$GaJTCV387" role="2pJxcZ">
                         <ref role="2pJxaS" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
                         <node concept="2pJxcG" id="3$GaJTCV3m_" role="2pJxcM">
@@ -2264,11 +2264,11 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCV9LC" role="2pJxcM">
-                  <ref role="2pIpSl" to="2c95:5gTlpaky6t1" />
+                  <ref role="2pIpSl" to="2c95:5gTlpaky6t1" resolve="root" />
                   <node concept="2pJPED" id="3$GaJTCV9XM" role="2pJxcZ">
                     <ref role="2pJxaS" to="2c95:2TZO3DbvI5D" resolve="DocumentRef" />
                     <node concept="2pIpSj" id="3$GaJTCV9Yf" role="2pJxcM">
-                      <ref role="2pIpSl" to="2c95:2TZO3DbvI5E" />
+                      <ref role="2pIpSl" to="2c95:2TZO3DbvI5E" resolve="doc" />
                       <node concept="36biLy" id="3$GaJTCV9YJ" role="2pJxcZ">
                         <node concept="2OqwBi" id="3$GaJTCWQMB" role="36biLW">
                           <node concept="2WthIp" id="3$GaJTCWQME" role="2Oq$k0" />
@@ -2281,24 +2281,24 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCV9PE" role="2pJxcM">
-                  <ref role="2pIpSl" to="2c95:5gTlpaky6sZ" />
+                  <ref role="2pIpSl" to="2c95:5gTlpaky6sZ" resolve="renderer" />
                   <node concept="2pJPED" id="3$GaJTCV9Rx" role="2pJxcZ">
                     <ref role="2pJxaS" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCVb5M" role="2pJxcM">
-                  <ref role="2pIpSl" to="2c95:5gTlpaky6t2" />
+                  <ref role="2pIpSl" to="2c95:5gTlpaky6t2" resolve="mappings" />
                   <node concept="2pJPED" id="3$GaJTCVb6z" role="2pJxcZ">
                     <ref role="2pJxaS" to="2c95:5yxqZJwzW1O" resolve="PathMapping" />
                     <node concept="2pIpSj" id="3$GaJTCVb8h" role="2pJxcM">
-                      <ref role="2pIpSl" to="2c95:5yxqZJwzW1P" />
+                      <ref role="2pIpSl" to="2c95:5yxqZJwzW1P" resolve="pathDef" />
                       <node concept="36biLy" id="3$GaJTCVb8O" role="2pJxcZ">
                         <node concept="2OqwBi" id="3$GaJTCVbe8" role="36biLW">
                           <node concept="37vLTw" id="3$GaJTCVb9h" role="2Oq$k0">
                             <ref role="3cqZAo" node="3$GaJTCUFmg" resolve="dc" />
                           </node>
                           <node concept="3TrEf2" id="3$GaJTCVbB6" role="2OqNvi">
-                            <ref role="3Tt5mk" to="2c95:519ky_SprCS" />
+                            <ref role="3Tt5mk" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
                           </node>
                         </node>
                       </node>

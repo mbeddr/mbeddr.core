@@ -2,7 +2,8 @@
 <model ref="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,10 +14,10 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -24,12 +25,14 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -46,32 +49,33 @@
     <property role="TrG5h" value="ContextAccessExpr" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1725839709" />
+    <property role="EcuMT" value="5966716731426615324" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="5be2k4k45ao">
     <property role="TrG5h" value="ContextTargetNodeName" />
     <property role="34LRSv" value="ctx-target-name" />
-    <property role="1pbfSe" value="1725848537" />
+    <property role="EcuMT" value="5966716731426624152" />
     <ref role="1TJDcQ" node="5be2k4k430s" resolve="ContextAccessExpr" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfboEI">
     <property role="TrG5h" value="FunctionMatcher" />
     <property role="34LRSv" value="functions" />
     <property role="3GE5qa" value="functions" />
-    <property role="1pbfSe" value="1458434895" />
+    <property role="EcuMT" value="6477445114790513326" />
     <ref role="1TJDcQ" to="11rw:3YyHFqO5xVX" resolve="MatchStrategy" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfbp1c">
     <property role="TrG5h" value="FunctionStatementMerger" />
     <property role="3GE5qa" value="functions" />
     <property role="34LRSv" value="merge-statements" />
-    <property role="1pbfSe" value="1458433457" />
+    <property role="EcuMT" value="6477445114790514764" />
     <ref role="1TJDcQ" to="11rw:3YyHFqO6ljB" resolve="CompositionStrategy" />
     <node concept="1TJgyj" id="5B$wwdfbsik" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="op" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6477445114790528148" />
       <ref role="20lvS9" node="5B$wwdfbp1d" resolve="FunctionStmMergeOp" />
     </node>
   </node>
@@ -80,38 +84,39 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="functions" />
-    <property role="1pbfSe" value="1458433456" />
+    <property role="EcuMT" value="6477445114790514765" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfbp1e">
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="PrependOp" />
     <property role="34LRSv" value="prepend" />
-    <property role="1pbfSe" value="1458433455" />
+    <property role="EcuMT" value="6477445114790514766" />
     <ref role="1TJDcQ" node="5B$wwdfbp1d" resolve="FunctionStmMergeOp" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfbp1F">
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="AppendOp" />
     <property role="34LRSv" value="append" />
-    <property role="1pbfSe" value="1458433426" />
+    <property role="EcuMT" value="6477445114790514795" />
     <ref role="1TJDcQ" node="5B$wwdfbp1d" resolve="FunctionStmMergeOp" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfbp28">
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="ReplaceOp" />
     <property role="34LRSv" value="replace" />
-    <property role="1pbfSe" value="1458433397" />
+    <property role="EcuMT" value="6477445114790514824" />
     <ref role="1TJDcQ" node="5B$wwdfbp1d" resolve="FunctionStmMergeOp" />
   </node>
   <node concept="1TIwiD" id="5B$wwdfjpRz">
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="ReplaceHookOp" />
     <property role="34LRSv" value="replace-hook" />
-    <property role="1pbfSe" value="1456332826" />
+    <property role="EcuMT" value="6477445114792615395" />
     <ref role="1TJDcQ" node="5B$wwdfbp1d" resolve="FunctionStmMergeOp" />
     <node concept="1TJgyi" id="5B$wwdfk7mc" role="1TKVEl">
       <property role="TrG5h" value="hookName" />
+      <property role="IQ2nx" value="6477445114792801676" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

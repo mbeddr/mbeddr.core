@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -126,7 +126,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -452,43 +451,43 @@
         <node concept="3kxDZ6" id="40ZXlOnGB7B" role="3cqZAp">
           <node concept="9aQIb" id="40ZXlOnGB7C" role="3kxCCa">
             <node concept="3clFbS" id="3x0R1LJ5H5i" role="9aQI4">
-              <node concept="3clFbF" id="3x0R1LJ5H5j" role="3cqZAp">
-                <node concept="2OqwBi" id="3x0R1LJ5H5k" role="3clFbG">
-                  <node concept="3cpWsa" id="3x0R1LJ5H5l" role="2Oq$k0">
+              <node concept="3clFbF" id="2_0vIjrXHH6" role="3cqZAp">
+                <node concept="2OqwBi" id="2_0vIjrXIo3" role="3clFbG">
+                  <node concept="37vLTw" id="2_0vIjrXHH4" role="2Oq$k0">
                     <ref role="3cqZAo" node="3x0R1LJ5H5a" resolve="args" />
                   </node>
-                  <node concept="TSZUe" id="3x0R1LJ5H5m" role="2OqNvi">
-                    <node concept="3P9mCS" id="3x0R1LJ5H5n" role="25WWJ7">
+                  <node concept="TSZUe" id="2_0vIjrXJEN" role="2OqNvi">
+                    <node concept="1rXfSq" id="2_0vIjrXJXj" role="25WWJ7">
                       <ref role="37wK5l" to="tzyt:3L_VuqblMrt" resolve="collectAdditionalPaths" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3x0R1LJ5H5o" role="3cqZAp">
-                <node concept="2OqwBi" id="3x0R1LJ5H5p" role="3clFbG">
-                  <node concept="3cpWsa" id="3x0R1LJ5H5q" role="2Oq$k0">
+              <node concept="3clFbF" id="2_0vIjrXKIP" role="3cqZAp">
+                <node concept="2OqwBi" id="2_0vIjrXLnl" role="3clFbG">
+                  <node concept="37vLTw" id="2_0vIjrXKIN" role="2Oq$k0">
                     <ref role="3cqZAo" node="3x0R1LJ5H5a" resolve="args" />
                   </node>
-                  <node concept="X8dFx" id="3x0R1LJ5H5r" role="2OqNvi">
-                    <node concept="3P9mCS" id="3x0R1LJ5H5s" role="25WWJ7">
+                  <node concept="X8dFx" id="2_0vIjrXMF$" role="2OqNvi">
+                    <node concept="1rXfSq" id="2_0vIjrXMZJ" role="25WWJ7">
                       <ref role="37wK5l" node="3x0R1LJ5H5H" resolve="computeCommonArgumentsForLabelReachibility" />
-                      <node concept="37vLTw" id="3x0R1LJ5H5t" role="37wK5m">
+                      <node concept="37vLTw" id="2_0vIjrXNvf" role="37wK5m">
                         <ref role="3cqZAo" node="3x0R1LJ5H4k" resolve="label" />
                       </node>
-                      <node concept="37vLTw" id="3x0R1LJ5H5u" role="37wK5m">
+                      <node concept="37vLTw" id="2_0vIjrXO7b" role="37wK5m">
                         <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3x0R1LJ5H5v" role="3cqZAp">
-                <node concept="3P9mCS" id="3x0R1LJ5H5w" role="3clFbG">
+              <node concept="3clFbF" id="2_0vIjrXP7Y" role="3cqZAp">
+                <node concept="1rXfSq" id="2_0vIjrXP7W" role="3clFbG">
                   <ref role="37wK5l" to="tzyt:3L_VuqbmNCC" resolve="addFunctionArgument" />
-                  <node concept="3cpWsa" id="3x0R1LJ5H5x" role="37wK5m">
+                  <node concept="37vLTw" id="2_0vIjrXP$L" role="37wK5m">
                     <ref role="3cqZAo" node="3x0R1LJ5H5a" resolve="args" />
                   </node>
-                  <node concept="37vLTw" id="3x0R1LJ5H5y" role="37wK5m">
+                  <node concept="37vLTw" id="2_0vIjrXPVG" role="37wK5m">
                     <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
                   </node>
                 </node>
@@ -563,9 +562,9 @@
               <ref role="3cqZAo" node="3x0R1LJ5H5N" resolve="args" />
             </node>
             <node concept="X8dFx" id="3x0R1LJ5H5W" role="2OqNvi">
-              <node concept="3P9mCS" id="3x0R1LJ5H5X" role="25WWJ7">
+              <node concept="1rXfSq" id="2_0vIjrXQUh" role="25WWJ7">
                 <ref role="37wK5l" to="tzyt:2UdJgvCXO0f" resolve="computeCommonArguments" />
-                <node concept="3cpWs2" id="3x0R1LJ5H5Y" role="37wK5m">
+                <node concept="37vLTw" id="2_0vIjrXRpr" role="37wK5m">
                   <ref role="3cqZAo" node="3x0R1LJ5H6d" resolve="configuration" />
                 </node>
               </node>
