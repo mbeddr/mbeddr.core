@@ -673,7 +673,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="2J6v22V8BuS">
-    <property role="TrG5h" value="typeof_SPattern" />
+    <property role="TrG5h" value="typeof_PatternFunction" />
     <property role="3GE5qa" value="misc" />
     <node concept="3clFbS" id="2J6v22V8BuT" role="18ibNy">
       <node concept="3cpWs8" id="2J6v22V8Ccd" role="3cqZAp">
@@ -681,14 +681,14 @@
           <property role="TrG5h" value="params" />
           <property role="3TUv4t" value="true" />
           <node concept="2I9FWS" id="2J6v22V8Ccf" role="1tU5fm">
-            <ref role="2I9WkF" to="ebqt:5xy6TexD5fE" resolve="SAnonymousParameter" />
+            <ref role="2I9WkF" to="ebqt:5xy6TexD5fE" resolve="PatternFunctionAnonymousParameter" />
           </node>
           <node concept="2OqwBi" id="2J6v22V8Ccg" role="33vP2m">
             <node concept="3Tsc0h" id="2J6v22V8Ccn" role="2OqNvi">
               <ref role="3TtcxE" to="ebqt:5xy6TexD6_X" resolve="outParameters" />
             </node>
             <node concept="1YBJjd" id="2J6v22V8DBc" role="2Oq$k0">
-              <ref role="1YBMHb" node="2J6v22V8BuV" resolve="pattern" />
+              <ref role="1YBMHb" node="2J6v22V8BuV" resolve="function" />
             </node>
           </node>
         </node>
@@ -808,7 +808,7 @@
         <node concept="mw_s8" id="2tV8qO6O5$c" role="1ZfhK$">
           <node concept="1Z2H0r" id="2tV8qO6O5k5" role="mwGJk">
             <node concept="1YBJjd" id="2tV8qO6O5y3" role="1Z2MuG">
-              <ref role="1YBMHb" node="2J6v22V8BuV" resolve="pattern" />
+              <ref role="1YBMHb" node="2J6v22V8BuV" resolve="function" />
             </node>
           </node>
         </node>
@@ -836,7 +836,7 @@
         </node>
         <node concept="2OqwBi" id="2tV8qO6O6nE" role="2GsD0m">
           <node concept="1YBJjd" id="2tV8qO6O6j$" role="2Oq$k0">
-            <ref role="1YBMHb" node="2J6v22V8BuV" resolve="pattern" />
+            <ref role="1YBMHb" node="2J6v22V8BuV" resolve="function" />
           </node>
           <node concept="3Tsc0h" id="2tV8qO6O6K_" role="2OqNvi">
             <ref role="3TtcxE" to="hqsm:1ERTnBTmkXe" resolve="bodies" />
@@ -845,8 +845,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="2J6v22V8BuV" role="1YuTPh">
-      <property role="TrG5h" value="pattern" />
-      <ref role="1YaFvo" to="ebqt:1ERTnBTfavv" resolve="SPattern" />
+      <property role="TrG5h" value="function" />
+      <ref role="1YaFvo" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
     </node>
   </node>
   <node concept="1YbPZF" id="2J6v22V8Whw">
@@ -877,7 +877,7 @@
                             </node>
                             <node concept="1mIQ4w" id="39KhnTIlTQt" role="2OqNvi">
                               <node concept="chp4Y" id="39KhnTIlTQu" role="cj9EA">
-                                <ref role="cht4Q" to="ebqt:5luHlsCq9Ss" resolve="SComment" />
+                                <ref role="cht4Q" to="ebqt:5luHlsCq9Ss" resolve="PatternFunctionComment" />
                               </node>
                             </node>
                           </node>
@@ -889,7 +889,7 @@
                             </node>
                             <node concept="1mIQ4w" id="39KhnTIlTQy" role="2OqNvi">
                               <node concept="chp4Y" id="39KhnTIlTQz" role="cj9EA">
-                                <ref role="cht4Q" to="ebqt:5luHlsCq9Sp" resolve="SEmptyContent" />
+                                <ref role="cht4Q" to="ebqt:5luHlsCq9Sp" resolve="PatternFunctionEmptyContent" />
                               </node>
                             </node>
                           </node>
@@ -917,7 +917,7 @@
     </node>
     <node concept="1YaCAy" id="2J6v22V8Whz" role="1YuTPh">
       <property role="TrG5h" value="body" />
-      <ref role="1YaFvo" to="ebqt:1ERTnBTmryq" resolve="SPatternBody" />
+      <ref role="1YaFvo" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
     </node>
   </node>
   <node concept="1YbPZF" id="Tz5AFeFYWy">
@@ -1098,7 +1098,7 @@
     </node>
     <node concept="1YaCAy" id="FElv_yiipA" role="1YuTPh">
       <property role="TrG5h" value="parameter" />
-      <ref role="1YaFvo" to="ebqt:5xy6TexD5fE" resolve="SAnonymousParameter" />
+      <ref role="1YaFvo" to="ebqt:5xy6TexD5fE" resolve="PatternFunctionAnonymousParameter" />
     </node>
     <node concept="bXqS6" id="FElv_yitN2" role="bX4a1">
       <node concept="3clFbS" id="FElv_yitN3" role="2VODD2">
@@ -1182,7 +1182,7 @@
     </node>
     <node concept="1YaCAy" id="4IZiQsKunDF" role="1YuTPh">
       <property role="TrG5h" value="parameter" />
-      <ref role="1YaFvo" to="ebqt:4IZiQsKumNF" resolve="SParameter" />
+      <ref role="1YaFvo" to="ebqt:4IZiQsKumNF" resolve="PatternFunctionParameter" />
     </node>
   </node>
   <node concept="18kY7G" id="6Be3XpkDIsh">
@@ -1212,7 +1212,7 @@
           <node concept="3fqX7Q" id="52HBLukUIOk" role="3uHU7B">
             <node concept="2OqwBi" id="52HBLukUIwo" role="3fr31v">
               <node concept="1PxgMI" id="52HBLukUIor" role="2Oq$k0">
-                <ref role="1m5ApE" to="ebqt:1ERTnBTfavv" resolve="SPattern" />
+                <ref role="1m5ApE" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
                 <node concept="2OqwBi" id="52HBLukUI9F" role="1m5AlR">
                   <node concept="1YBJjd" id="52HBLukUI6_" role="2Oq$k0">
                     <ref role="1YBMHb" node="6Be3XpkDIsk" resolve="body" />
@@ -1303,7 +1303,7 @@
           <node concept="1Wc70l" id="52HBLukUUVD" role="3eO9$A">
             <node concept="2OqwBi" id="52HBLukUURi" role="3uHU7B">
               <node concept="1PxgMI" id="52HBLukUURj" role="2Oq$k0">
-                <ref role="1m5ApE" to="ebqt:1ERTnBTfavv" resolve="SPattern" />
+                <ref role="1m5ApE" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
                 <node concept="2OqwBi" id="52HBLukUURk" role="1m5AlR">
                   <node concept="1YBJjd" id="52HBLukUURl" role="2Oq$k0">
                     <ref role="1YBMHb" node="6Be3XpkDIsk" resolve="body" />
@@ -1353,7 +1353,7 @@
     </node>
     <node concept="1YaCAy" id="6Be3XpkDIsk" role="1YuTPh">
       <property role="TrG5h" value="body" />
-      <ref role="1YaFvo" to="ebqt:1ERTnBTmryq" resolve="SPatternBody" />
+      <ref role="1YaFvo" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
     </node>
   </node>
   <node concept="1YbPZF" id="52HBLukReAQ">

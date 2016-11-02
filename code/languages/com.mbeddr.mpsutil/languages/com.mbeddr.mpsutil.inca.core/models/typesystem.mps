@@ -17,7 +17,6 @@
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
-    <import index="h57a" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="gyfg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.base(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -200,7 +199,6 @@
       <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
-      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -867,7 +865,7 @@
         <node concept="mw_s8" id="6trdyn59NuQ" role="1ZfhKB">
           <node concept="2pJPEk" id="6trdyn5jhMY" role="mwGJk">
             <node concept="2pJPED" id="6trdyn5jhSe" role="2pJPEn">
-              <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+              <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
               <node concept="2pIpSj" id="6trdyn5jhVi" role="2pJxcM">
                 <ref role="2pIpSl" to="hqsm:6trdyn59Glc" resolve="pattern" />
                 <node concept="36biLy" id="6trdyn5jhZC" role="2pJxcZ">
@@ -895,7 +893,7 @@
     </node>
     <node concept="1YaCAy" id="6trdyn59Nbc" role="1YuTPh">
       <property role="TrG5h" value="match" />
-      <ref role="1YaFvo" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+      <ref role="1YaFvo" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
     </node>
   </node>
   <node concept="1YbPZF" id="6trdyn5sSIw">
@@ -935,29 +933,6 @@
     <node concept="1YaCAy" id="6trdyn5sSIz" role="1YuTPh">
       <property role="TrG5h" value="operation" />
       <ref role="1YaFvo" to="hqsm:6trdyn5sMcA" resolve="GetParameterOperation" />
-    </node>
-  </node>
-  <node concept="2sgARr" id="4BWlfm2OCze">
-    <property role="3GE5qa" value="usage.match" />
-    <property role="TrG5h" value="supertypes_MPSIncQueryMatch" />
-    <node concept="3clFbS" id="4BWlfm2OCzf" role="2sgrp5">
-      <node concept="3cpWs6" id="4BWlfm2OC$X" role="3cqZAp">
-        <node concept="2pJPEk" id="4BWlfm2OC_d" role="3cqZAk">
-          <node concept="2pJPED" id="4BWlfm2OC_z" role="2pJPEn">
-            <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
-            <node concept="2pIpSj" id="4BWlfm2OC_P" role="2pJxcM">
-              <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
-              <node concept="36bGnv" id="2Pc1eSRCrXb" role="2pJxcZ">
-                <ref role="36bGnp" to="h57a:~IPatternMatch" resolve="IPatternMatch" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4BWlfm2OCzh" role="1YuTPh">
-      <property role="TrG5h" value="match" />
-      <ref role="1YaFvo" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
     </node>
   </node>
   <node concept="1YbPZF" id="6hXIxNuZgRS">
@@ -1314,7 +1289,7 @@
               </node>
               <node concept="2pJPEk" id="6trdyn5_eDo" role="3JuZjQ">
                 <node concept="2pJPED" id="6trdyn5_eDp" role="2pJPEn">
-                  <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+                  <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
                   <node concept="2pIpSj" id="6trdyn5_eDq" role="2pJxcM">
                     <ref role="2pIpSl" to="hqsm:6trdyn59Glc" resolve="pattern" />
                     <node concept="36biLy" id="6trdyn5_eDr" role="2pJxcZ">
@@ -1387,7 +1362,7 @@
               </node>
               <node concept="2pJPEk" id="6trdyn5oJ7V" role="3JuZjQ">
                 <node concept="2pJPED" id="6trdyn5oJ7W" role="2pJPEn">
-                  <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+                  <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
                   <node concept="2pIpSj" id="6trdyn5oJ7X" role="2pJxcM">
                     <ref role="2pIpSl" to="hqsm:6trdyn59Glc" resolve="pattern" />
                     <node concept="36biLy" id="6trdyn5oJ7Y" role="2pJxcZ">
@@ -1421,11 +1396,11 @@
         <node concept="3cpWsn" id="56sNkn8obaj" role="3cpWs9">
           <property role="TrG5h" value="matchType" />
           <node concept="3Tqbb2" id="56sNkn8obah" role="1tU5fm">
-            <ref role="ehGHo" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+            <ref role="ehGHo" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
           </node>
           <node concept="2pJPEk" id="56sNkn8obak" role="33vP2m">
             <node concept="2pJPED" id="56sNkn8obal" role="2pJPEn">
-              <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+              <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
               <node concept="2pIpSj" id="56sNkn8obam" role="2pJxcM">
                 <ref role="2pIpSl" to="hqsm:6trdyn59Glc" resolve="pattern" />
                 <node concept="36biLy" id="56sNkn8oban" role="2pJxcZ">
@@ -1524,7 +1499,7 @@
               <node concept="2pIpSj" id="6trdyn5bK_h" role="2pJxcM">
                 <ref role="2pIpSl" to="tp2q:4VG9JMUYces" resolve="elementType" />
                 <node concept="2pJPED" id="6trdyn5bP0H" role="2pJxcZ">
-                  <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+                  <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
                   <node concept="2pIpSj" id="6trdyn5bPr1" role="2pJxcM">
                     <ref role="2pIpSl" to="hqsm:6trdyn59Glc" resolve="pattern" />
                     <node concept="36biLy" id="6trdyn5bPvz" role="2pJxcZ">
@@ -1617,7 +1592,7 @@
         <node concept="mw_s8" id="6trdyn51nxZ" role="1ZfhKB">
           <node concept="2pJPEk" id="6trdyn5ofw3" role="mwGJk">
             <node concept="2pJPED" id="6trdyn5ofAN" role="2pJPEn">
-              <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+              <ref role="2pJxaS" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
               <node concept="2pIpSj" id="6trdyn5ofEn" role="2pJxcM">
                 <ref role="2pIpSl" to="hqsm:6trdyn59Glc" resolve="pattern" />
                 <node concept="36biLy" id="6trdyn5ofHl" role="2pJxcZ">

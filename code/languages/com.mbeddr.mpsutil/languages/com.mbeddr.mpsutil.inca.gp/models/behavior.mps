@@ -276,7 +276,7 @@
   </registry>
   <node concept="13h7C7" id="5Dmozv0wdru">
     <property role="3GE5qa" value="constraints" />
-    <ref role="13h7C2" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+    <ref role="13h7C2" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
     <node concept="13i0hz" id="2pbQ6LkKO26" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -1488,25 +1488,7 @@
     <ref role="13h7C2" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="13hLZK" id="5xy6TexsTTv" role="13h7CW">
       <node concept="3clFbS" id="5xy6TexsTTw" role="2VODD2">
-        <node concept="3clFbF" id="nrkjVh6cTC" role="3cqZAp">
-          <node concept="2OqwBi" id="nrkjVh6ea7" role="3clFbG">
-            <node concept="2OqwBi" id="nrkjVh6d04" role="2Oq$k0">
-              <node concept="13iPFW" id="nrkjVh6cTB" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="nrkjVh6d8N" role="2OqNvi">
-                <ref role="3TtcxE" to="hqsm:3VwoHXNC_4v" resolve="contents" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="nrkjVh6f9x" role="2OqNvi">
-              <node concept="2ShNRf" id="nrkjVh6fkp" role="25WWJ7">
-                <node concept="3zrR0B" id="nrkjVh6ho7" role="2ShVmc">
-                  <node concept="3Tqbb2" id="nrkjVh6ho9" role="3zrR0E">
-                    <ref role="ehGHo" to="55iy:5luHlsCq9Sp" resolve="EmptyGraphPatternContent" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="7lNkc6MCgD2" role="3cqZAp" />
       </node>
     </node>
   </node>

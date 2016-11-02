@@ -65,20 +65,20 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="5xy6TexCYF1">
-    <property role="TrG5h" value="SPatternModel" />
+    <property role="TrG5h" value="PatternFunctionModule" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="Module" />
-    <property role="R4oN_" value="module" />
+    <property role="34LRSv" value="Pattern Function Module" />
+    <property role="R4oN_" value="Pattern Function Module" />
     <property role="3GE5qa" value="misc" />
     <property role="EcuMT" value="6368683143941319361" />
-    <ref role="1TJDcQ" to="55iy:1ERTnBTfasH" resolve="GPatternModel" />
+    <ref role="1TJDcQ" to="55iy:1ERTnBTfasH" resolve="GraphPatternModule" />
     <node concept="PrWs8" id="5xy6TexCYF2" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ERTnBTfavv">
-    <property role="TrG5h" value="SPattern" />
-    <property role="R4oN_" value="Query Definition" />
+    <property role="TrG5h" value="PatternFunction" />
+    <property role="R4oN_" value="Pattern Function" />
     <property role="34LRSv" value="def" />
     <property role="3GE5qa" value="misc" />
     <property role="EcuMT" value="1925259677759481823" />
@@ -88,29 +88,29 @@
       <property role="20kJfa" value="outParameters" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="6368683143941351805" />
-      <ref role="20lvS9" node="5xy6TexD5fE" resolve="SAnonymousParameter" />
+      <ref role="20lvS9" node="5xy6TexD5fE" resolve="PatternFunctionAnonymousParameter" />
     </node>
     <node concept="PrWs8" id="5luHlsCrxeF" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrxe_" resolve="ISPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
     </node>
     <node concept="PrWs8" id="Tz5AFeM0d8" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ERTnBTmryq">
-    <property role="TrG5h" value="SPatternBody" />
+    <property role="TrG5h" value="PatternFunctionBody" />
     <property role="3GE5qa" value="misc" />
     <property role="EcuMT" value="1925259677761386650" />
-    <ref role="1TJDcQ" to="55iy:1ERTnBTmryq" resolve="GPatternBody" />
+    <ref role="1TJDcQ" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="PrWs8" id="1ERTnBTmryr" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />
     </node>
   </node>
   <node concept="1TIwiD" id="5xy6TexD5fE">
     <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="SAnonymousParameter" />
+    <property role="TrG5h" value="PatternFunctionAnonymousParameter" />
     <property role="EcuMT" value="6368683143941346282" />
-    <ref role="1TJDcQ" node="4IZiQsKumNF" resolve="SParameter" />
+    <ref role="1TJDcQ" node="4IZiQsKumNF" resolve="PatternFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="5Dmozv0wha_">
     <property role="3GE5qa" value="expression" />
@@ -275,7 +275,7 @@
     <property role="34LRSv" value="assert" />
     <property role="R4oN_" value="assert(expression)" />
     <property role="EcuMT" value="6151553526979391516" />
-    <ref role="1TJDcQ" to="55iy:5luHlsCpmwW" resolve="GCheckConstraint" />
+    <ref role="1TJDcQ" to="55iy:5luHlsCpmwW" resolve="GraphPatternCheckConstraint" />
     <node concept="PrWs8" id="5luHlsCq70t" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCq70i" resolve="IStatement" />
     </node>
@@ -286,28 +286,28 @@
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Ss">
     <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="SComment" />
+    <property role="TrG5h" value="PatternFunctionComment" />
     <property role="34LRSv" value="//" />
     <property role="R4oN_" value="comment" />
     <property role="EcuMT" value="6151553526979403292" />
-    <ref role="1TJDcQ" to="55iy:5luHlsCq9Ss" resolve="GComment" />
+    <ref role="1TJDcQ" to="55iy:5luHlsCq9Ss" resolve="GraphPatternComment" />
     <node concept="PrWs8" id="5luHlsCqd8y" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCq70i" resolve="IStatement" />
     </node>
     <node concept="PrWs8" id="5luHlsCrxeM" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrxe_" resolve="ISPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Sp">
     <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="SEmptyContent" />
+    <property role="TrG5h" value="PatternFunctionEmptyContent" />
     <property role="EcuMT" value="6151553526979403289" />
-    <ref role="1TJDcQ" to="55iy:5luHlsCq9Sp" resolve="GEmptyContent" />
+    <ref role="1TJDcQ" to="55iy:5luHlsCq9Sp" resolve="EmptyGraphPatternContent" />
     <node concept="PrWs8" id="5luHlsCqd8_" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCq70i" resolve="IStatement" />
     </node>
     <node concept="PrWs8" id="5luHlsCrxeU" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrxe_" resolve="ISPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrvGI" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -315,10 +315,10 @@
   </node>
   <node concept="PlHQZ" id="5luHlsCrxe_">
     <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="ISPatternModelContent" />
+    <property role="TrG5h" value="IPatternFunctionModuleContent" />
     <property role="EcuMT" value="6151553526979761061" />
     <node concept="PrWs8" id="5luHlsCrxeA" role="PrDN$">
-      <ref role="PrY4T" to="hqsm:3VwoHXNAdvu" resolve="IPatternModelContent" />
+      <ref role="PrY4T" to="hqsm:3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="Tz5AFeCUC5">
@@ -457,9 +457,9 @@
   </node>
   <node concept="1TIwiD" id="4IZiQsKumNF">
     <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="SParameter" />
+    <property role="TrG5h" value="PatternFunctionParameter" />
     <property role="EcuMT" value="5458164179963309291" />
-    <ref role="1TJDcQ" to="55iy:4IZiQsKumsO" resolve="GParameter" />
+    <ref role="1TJDcQ" to="55iy:4IZiQsKumsO" resolve="GraphPatternParameter" />
   </node>
   <node concept="PlHQZ" id="52HBLukNkpc">
     <property role="TrG5h" value="ICondition" />

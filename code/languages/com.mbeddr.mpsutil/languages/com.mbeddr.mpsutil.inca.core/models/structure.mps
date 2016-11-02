@@ -102,7 +102,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="3VwoHXNAdvA" role="PrDN$">
-      <ref role="PrY4T" node="3VwoHXNAdvu" resolve="IPatternModelContent" />
+      <ref role="PrY4T" node="3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
     <node concept="PrWs8" id="1ERTnBTfaED" role="PrDN$">
       <ref role="PrY4T" node="1YBYCQ13COO" resolve="IGenNameProvider" />
@@ -141,7 +141,7 @@
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4530729936991344607" />
-      <ref role="20lvS9" node="3VwoHXNAdvu" resolve="IPatternModelContent" />
+      <ref role="20lvS9" node="3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
     <node concept="PrWs8" id="3VwoHXNAdvx" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -177,7 +177,7 @@
   </node>
   <node concept="PlHQZ" id="3VwoHXNAdvu">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="IPatternModelContent" />
+    <property role="TrG5h" value="IPatternModuleContent" />
     <property role="EcuMT" value="4530729936991344606" />
   </node>
   <node concept="1TIwiD" id="3VwoHXNAdvE">
@@ -198,7 +198,7 @@
       <ref role="PrY4T" node="3VwoHXNAdvs" resolve="IPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="3VwoHXNAdvK" role="PzmwI">
-      <ref role="PrY4T" node="3VwoHXNAdvu" resolve="IPatternModelContent" />
+      <ref role="PrY4T" node="3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="6L84cjtSlH$">
@@ -258,7 +258,7 @@
     <property role="EcuMT" value="3770201403572950169" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3VwoHXNC1YA" role="PzmwI">
-      <ref role="PrY4T" node="3VwoHXNAdvu" resolve="IPatternModelContent" />
+      <ref role="PrY4T" node="3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
     <node concept="PrWs8" id="1ERTnBTdjey" role="PzmwI">
       <ref role="PrY4T" node="3VwoHXNAdvs" resolve="IPatternBodyContent" />
@@ -291,7 +291,7 @@
     <property role="34LRSv" value="get" />
     <property role="R4oN_" value="Get Value Of Parameter" />
     <property role="EcuMT" value="7447605944641594150" />
-    <ref role="1TJDcQ" node="6trdyn5pjvN" resolve="MPSIncQueryMatchOperation" />
+    <ref role="1TJDcQ" node="6trdyn5pjvN" resolve="IncaMatchOperation" />
     <node concept="1TJgyj" id="6trdyn5sNjA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="parameter" />
@@ -302,7 +302,7 @@
   </node>
   <node concept="1TIwiD" id="6trdyn59F4M">
     <property role="3GE5qa" value="usage.match" />
-    <property role="TrG5h" value="MPSIncQueryMatch" />
+    <property role="TrG5h" value="IncaMatch" />
     <property role="34LRSv" value="Match" />
     <property role="EcuMT" value="7447605944636584242" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
@@ -313,13 +313,10 @@
       <property role="IQ2ns" value="7447605944636589388" />
       <ref role="20lvS9" node="3VwoHXNAdmh" resolve="IPattern" />
     </node>
-    <node concept="PrWs8" id="6trdyn59FXR" role="PzmwI">
-      <ref role="PrY4T" to="tpee:6r77ob2URXY" resolve="IClassifierType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6trdyn5pjvN">
     <property role="3GE5qa" value="usage.match" />
-    <property role="TrG5h" value="MPSIncQueryMatchOperation" />
+    <property role="TrG5h" value="IncaMatchOperation" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="7447605944640681971" />

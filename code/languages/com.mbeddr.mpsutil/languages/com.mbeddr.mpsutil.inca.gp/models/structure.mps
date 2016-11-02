@@ -71,9 +71,9 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="1ERTnBTfasH">
-    <property role="TrG5h" value="GraphPatternModel" />
-    <property role="34LRSv" value="Graph Pattern Model" />
-    <property role="R4oN_" value="Graph Pattern Model" />
+    <property role="TrG5h" value="GraphPatternModule" />
+    <property role="34LRSv" value="Graph Pattern Module" />
+    <property role="R4oN_" value="Graph Pattern Module" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="1925259677759481645" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -109,7 +109,7 @@
       <ref role="PrY4T" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
     </node>
     <node concept="PrWs8" id="5luHlsCrwOP" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ERTnBTmryq">
@@ -252,7 +252,7 @@
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrwOB" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModuleContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrxf3" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -269,15 +269,15 @@
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="5luHlsCrwOI" role="PzmwI">
-      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModelContent" />
+      <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModuleContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="5luHlsCrwig">
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="IGraphPatternModelContent" />
+    <property role="TrG5h" value="IGraphPatternModuleContent" />
     <property role="EcuMT" value="6151553526979757200" />
     <node concept="PrWs8" id="5luHlsCrwih" role="PrDN$">
-      <ref role="PrY4T" to="hqsm:3VwoHXNAdvu" resolve="IPatternModelContent" />
+      <ref role="PrY4T" to="hqsm:3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="4IZiQsKumsO">
