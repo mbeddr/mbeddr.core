@@ -7269,7 +7269,7 @@
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <node concept="Xl_RD" id="1$baREjTGL0" role="37wK5m">
-                <property role="Xl_RC" value="\\\\x(\\D|$)" />
+                <property role="Xl_RC" value="[^\\\\]\\\\x(\\D|$)" />
               </node>
             </node>
             <node concept="liA8E" id="1$baREjTGQ3" role="2OqNvi">

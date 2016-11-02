@@ -14872,7 +14872,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="PhEJO" id="1qdWvqeuOJh" role="1cecVj">
-            <property role="PhEJT" value="c:\\temp\\subdir" />
+            <property role="PhEJT" value="c:\\temp\\subdir1\\x\\subdir2" />
           </node>
         </node>
         <node concept="1S7NMz" id="1$baREjTFbE" role="N3F5h">
