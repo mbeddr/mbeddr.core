@@ -22,6 +22,9 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -287,7 +290,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="M6L5HuGGxg" role="3cqZAp" />
+        <node concept="3cpWs8" id="2nzO3M_R0Dh" role="3cqZAp">
+          <node concept="3cpWsn" id="2nzO3M_R0Di" role="3cpWs9">
+            <property role="TrG5h" value="coverage" />
+            <node concept="3uibUv" id="2nzO3M_R0Df" role="1tU5fm">
+              <ref role="3uigEE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+            </node>
+            <node concept="2ShNRf" id="2nzO3M_R0Dj" role="33vP2m">
+              <node concept="HV5vD" id="2nzO3M_R0Dk" role="2ShVmc">
+                <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="SfApY" id="5rU7RIwxCAg" role="3cqZAp">
           <node concept="3clFbS" id="5rU7RIwxCAh" role="SfCbr">
             <node concept="3cpWs6" id="M6L5HuGIug" role="3cqZAp">
@@ -305,6 +320,9 @@
                   </node>
                   <node concept="37vLTw" id="M6L5HuGIuo" role="37wK5m">
                     <ref role="3cqZAo" node="M6L5HuGF$a" resolve="context" />
+                  </node>
+                  <node concept="37vLTw" id="2nzO3M_R1h5" role="37wK5m">
+                    <ref role="3cqZAo" node="2nzO3M_R0Di" resolve="coverage" />
                   </node>
                 </node>
               </node>
