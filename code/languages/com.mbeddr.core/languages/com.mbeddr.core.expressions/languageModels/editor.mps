@@ -4579,5 +4579,32 @@
   <node concept="3p36aQ" id="2cvVnUv6F2g">
     <ref role="aqKnT" to="mj1l:3MUk0N5szEJ" resolve="PreIncrementExpression" />
   </node>
+  <node concept="24kQdi" id="7$nPHWGQQS$">
+    <property role="3GE5qa" value="literals" />
+    <ref role="1XX52x" to="mj1l:68dbbc7rHp$" resolve="UnsignedIntegerLiteral" />
+    <node concept="1WcQYu" id="7$nPHWGQQWL" role="2wV5jI">
+      <node concept="2ElW$n" id="7$nPHWGQQWM" role="2El2Yn">
+        <node concept="2OqwBi" id="7$nPHWGQQWN" role="2EmURo">
+          <node concept="2EmZKS" id="7$nPHWGQQWO" role="2Oq$k0" />
+          <node concept="2qgKlT" id="7$nPHWGQQWP" role="2OqNvi">
+            <ref role="37wK5l" to="ywuz:5HxjapwgqKu" resolve="getPriolevel" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7$nPHWGQQWQ" role="1LiK7o">
+        <node concept="1kIj98" id="7$nPHWGQQWR" role="3EZMnx">
+          <node concept="2lNzut" id="7$nPHWGQQWS" role="1kIj9b">
+            <ref role="1NtTu8" to="mj1l:1UQ4qqfV3yK" resolve="value" />
+            <ref role="1k5W1q" to="r4b4:2CEi94dgUHC" resolve="Number" />
+            <node concept="bYqod" id="7$nPHWGQQWT" role="2lD6_D" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7$nPHWGQQWU" role="2iSdaV" />
+      </node>
+    </node>
+    <node concept="PMmxH" id="7$nPHWGQR1i" role="6VMZX">
+      <ref role="PMmxG" node="5CDgsyZbE9V" resolve="staticValueComponent" />
+    </node>
+  </node>
 </model>
 
