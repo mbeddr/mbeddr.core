@@ -2645,6 +2645,38 @@
         <node concept="3Tqbb2" id="6SzVr$NUC1H" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="3p0ky8LHgQd" role="jymVt" />
+    <node concept="2YIFZL" id="3p0ky8LHgJw" role="jymVt">
+      <property role="TrG5h" value="visibleEnumDataTypeDeclarations" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3p0ky8LHgJx" role="3clF47">
+        <node concept="3cpWs6" id="3p0ky8LHgJy" role="3cqZAp">
+          <node concept="2OqwBi" id="3p0ky8LHgJz" role="3cqZAk">
+            <node concept="2OqwBi" id="3p0ky8LHgJ$" role="2Oq$k0">
+              <node concept="37vLTw" id="3p0ky8LHgJ_" role="2Oq$k0">
+                <ref role="3cqZAo" node="3p0ky8LHgJF" resolve="context" />
+              </node>
+              <node concept="I4A8Y" id="3p0ky8LHgJA" role="2OqNvi" />
+            </node>
+            <node concept="1j9C0f" id="3p0ky8LHgJB" role="2OqNvi">
+              <ref role="1j9C0d" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3p0ky8LHgJC" role="1B3o_S" />
+      <node concept="_YKpA" id="3p0ky8LHgJD" role="3clF45">
+        <node concept="3Tqbb2" id="3p0ky8LHgJE" role="_ZDj9">
+          <ref role="ehGHo" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3p0ky8LHgJF" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3Tqbb2" id="3p0ky8LHgJG" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6SzVr$NUD5y" role="jymVt" />
     <node concept="2YIFZL" id="6SzVr$NUCZx" role="jymVt">
       <property role="TrG5h" value="visibleDataTypeDeclarations" />

@@ -1818,7 +1818,7 @@
                   </node>
                   <node concept="1mIQ4w" id="2ATu8MxKjnS" role="2OqNvi">
                     <node concept="chp4Y" id="49V02wiYNCM" role="cj9EA">
-                      <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                      <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                     </node>
                   </node>
                 </node>
@@ -1831,7 +1831,7 @@
                       <node concept="1rXfSq" id="5lmC1XhqiRV" role="37vLTx">
                         <ref role="37wK5l" node="3sUe9pq91ae" resolve="getConcept_PathExpressionConstraint" />
                         <node concept="1PxgMI" id="5lmC1XhqiRW" role="37wK5m">
-                          <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+                          <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
                           <node concept="2GrUjf" id="5lmC1XhqiRX" role="1m5AlR">
                             <ref role="2Gs0qQ" node="2ATu8MxK2ft" resolve="constraint" />
                           </node>
@@ -1854,7 +1854,7 @@
                   </node>
                   <node concept="1mIQ4w" id="2ATu8MxKknq" role="2OqNvi">
                     <node concept="chp4Y" id="49V02wiYNCP" role="cj9EA">
-                      <ref role="cht4Q" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+                      <ref role="cht4Q" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
                     </node>
                   </node>
                 </node>
@@ -1867,7 +1867,7 @@
                       <node concept="1rXfSq" id="5lmC1XhpiLO" role="37vLTx">
                         <ref role="37wK5l" node="3sUe9pq9npj" resolve="getConcept_PatternCompositionConstraint" />
                         <node concept="1PxgMI" id="5lmC1XhpiLP" role="37wK5m">
-                          <ref role="1m5ApE" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+                          <ref role="1m5ApE" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
                           <node concept="2GrUjf" id="5lmC1XhpiLQ" role="1m5AlR">
                             <ref role="2Gs0qQ" node="2ATu8MxK2ft" resolve="constraint" />
                           </node>
@@ -2314,24 +2314,98 @@
             <property role="TrG5h" value="element" />
           </node>
           <node concept="3clFbS" id="59fzZVN4Sd1" role="2LFqv$">
-            <node concept="3clFbF" id="59fzZVN4Yqr" role="3cqZAp">
-              <node concept="2OqwBi" id="59fzZVN4Znq" role="3clFbG">
-                <node concept="2OqwBi" id="59fzZVN4YPW" role="2Oq$k0">
-                  <node concept="37vLTw" id="59fzZVN4Yqp" role="2Oq$k0">
-                    <ref role="3cqZAo" node="59fzZVN4Naf" resolve="hints" />
-                  </node>
-                  <node concept="2OwXpG" id="59fzZVN4Z3M" role="2OqNvi">
-                    <ref role="2Oxat5" node="59fzZVN3t5r" resolve="interfaceParts" />
+            <node concept="3clFbJ" id="1suAdVkLX_d" role="3cqZAp">
+              <node concept="3clFbS" id="1suAdVkLX_f" role="3clFbx">
+                <node concept="3clFbF" id="59fzZVN4Yqr" role="3cqZAp">
+                  <node concept="2OqwBi" id="59fzZVN4Znq" role="3clFbG">
+                    <node concept="2OqwBi" id="59fzZVN4YPW" role="2Oq$k0">
+                      <node concept="37vLTw" id="59fzZVN4Yqp" role="2Oq$k0">
+                        <ref role="3cqZAo" node="59fzZVN4Naf" resolve="hints" />
+                      </node>
+                      <node concept="2OwXpG" id="59fzZVN4Z3M" role="2OqNvi">
+                        <ref role="2Oxat5" node="59fzZVN3t5r" resolve="interfaceParts" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="59fzZVN50q9" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="2OqwBi" id="59fzZVN50$C" role="37wK5m">
+                        <node concept="2GrUjf" id="59fzZVN50v0" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="59fzZVN4ScZ" resolve="element" />
+                        </node>
+                        <node concept="3TrEf2" id="59fzZVN51fw" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hqsm:1ERTnBTmuSL" resolve="interfacePart" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="59fzZVN50q9" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="59fzZVN50$C" role="37wK5m">
-                    <node concept="2GrUjf" id="59fzZVN50v0" role="2Oq$k0">
+              </node>
+              <node concept="2OqwBi" id="1suAdVkLZLW" role="3clFbw">
+                <node concept="2OqwBi" id="1suAdVkLYeV" role="2Oq$k0">
+                  <node concept="2GrUjf" id="1suAdVkLXZC" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="59fzZVN4ScZ" resolve="element" />
+                  </node>
+                  <node concept="3TrEf2" id="1suAdVkLZsl" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hqsm:1ERTnBTmuSL" resolve="interfacePart" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="1suAdVkM105" role="2OqNvi">
+                  <node concept="chp4Y" id="1suAdVkM18s" role="cj9EA">
+                    <ref role="cht4Q" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3eNFk2" id="1suAdVkM48O" role="3eNLev">
+                <node concept="2OqwBi" id="1suAdVkM6XK" role="3eO9$A">
+                  <node concept="2OqwBi" id="1suAdVkM5qm" role="2Oq$k0">
+                    <node concept="2GrUjf" id="1suAdVkM5b3" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="59fzZVN4ScZ" resolve="element" />
                     </node>
-                    <node concept="3TrEf2" id="59fzZVN51fw" role="2OqNvi">
+                    <node concept="3TrEf2" id="1suAdVkM6C9" role="2OqNvi">
                       <ref role="3Tt5mk" to="hqsm:1ERTnBTmuSL" resolve="interfacePart" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="1suAdVkM8ci" role="2OqNvi">
+                    <node concept="chp4Y" id="1suAdVkM8kD" role="cj9EA">
+                      <ref role="cht4Q" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="1suAdVkM48Q" role="3eOfB_">
+                  <node concept="3SKdUt" id="1suAdVkMeZu" role="3cqZAp">
+                    <node concept="3SKdUq" id="1suAdVkMeZw" role="3SKWNk">
+                      <property role="3SKdUp" value="always add the genuine link because MPS uses that one also for specialized links" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1suAdVkM8Qm" role="3cqZAp">
+                    <node concept="2OqwBi" id="1suAdVkM8Qn" role="3clFbG">
+                      <node concept="2OqwBi" id="1suAdVkM8Qo" role="2Oq$k0">
+                        <node concept="37vLTw" id="1suAdVkM8Qp" role="2Oq$k0">
+                          <ref role="3cqZAo" node="59fzZVN4Naf" resolve="hints" />
+                        </node>
+                        <node concept="2OwXpG" id="1suAdVkM8Qq" role="2OqNvi">
+                          <ref role="2Oxat5" node="59fzZVN3t5r" resolve="interfaceParts" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1suAdVkM8Qr" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                        <node concept="2OqwBi" id="1suAdVkMc5Z" role="37wK5m">
+                          <node concept="1PxgMI" id="1suAdVkM9VY" role="2Oq$k0">
+                            <ref role="1m5ApE" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+                            <node concept="2OqwBi" id="1suAdVkM8Qs" role="1m5AlR">
+                              <node concept="2GrUjf" id="1suAdVkM8Qt" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="59fzZVN4ScZ" resolve="element" />
+                              </node>
+                              <node concept="3TrEf2" id="1suAdVkM8Qu" role="2OqNvi">
+                                <ref role="3Tt5mk" to="hqsm:1ERTnBTmuSL" resolve="interfacePart" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="1suAdVkMe8p" role="2OqNvi">
+                            <ref role="37wK5l" to="tpcn:hEwIf_V" resolve="getGenuineLink" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2594,7 +2668,7 @@
       <node concept="37vLTG" id="3sUe9pq91az" role="3clF46">
         <property role="TrG5h" value="constraint" />
         <node concept="3Tqbb2" id="3sUe9pq91a$" role="1tU5fm">
-          <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GPathExpressionConstraint" />
+          <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
         </node>
       </node>
       <node concept="37vLTG" id="3sUe9pq91a_" role="3clF46">
@@ -2922,7 +2996,7 @@
       <node concept="37vLTG" id="3sUe9pq9nqR" role="3clF46">
         <property role="TrG5h" value="constraint" />
         <node concept="3Tqbb2" id="3sUe9pq9nqS" role="1tU5fm">
-          <ref role="ehGHo" to="55iy:RjyNapPkSs" resolve="GPatternCompositionConstraint" />
+          <ref role="ehGHo" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
         </node>
       </node>
       <node concept="37vLTG" id="3sUe9pq9nqT" role="3clF46">

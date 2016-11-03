@@ -436,7 +436,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="6trdyn5yBLd" role="3acgRq">
-      <ref role="30HIoZ" to="hqsm:6trdyn59F4M" resolve="MPSIncQueryMatch" />
+      <ref role="30HIoZ" to="hqsm:6trdyn59F4M" resolve="IncaMatch" />
       <node concept="1Koe21" id="6trdyn5yEAg" role="1lVwrX">
         <node concept="3uibUv" id="6trdyn5yF4z" role="1Koe22">
           <ref role="3uigEE" to="h57a:~IPatternMatch" resolve="IPatternMatch" />
@@ -1604,7 +1604,7 @@
     </node>
     <node concept="3aamgX" id="EE49sRRzKx" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hqsm:4QgsNmKMGGS" resolve="EnumValue" />
+      <ref role="30HIoZ" to="hqsm:4QgsNmKMGGS" resolve="EnumMemberValue" />
       <node concept="1Koe21" id="EE49sRR$7B" role="1lVwrX">
         <node concept="3clFb_" id="EE49sRR$9f" role="1Koe22">
           <property role="TrG5h" value="genMethod" />
@@ -1633,8 +1633,8 @@
                         <node concept="3clFbS" id="EE49sRR_14" role="2VODD2">
                           <node concept="3cpWs6" id="6JEY8lShNaI" role="3cqZAp">
                             <node concept="2OqwBi" id="6JEY8lShNaJ" role="3cqZAk">
-                              <node concept="3TrEf2" id="6JEY8lShNaK" role="2OqNvi">
-                                <ref role="3Tt5mk" to="hqsm:4QgsNmKMGIf" resolve="value" />
+                              <node concept="3TrEf2" id="3p0ky8LKmDY" role="2OqNvi">
+                                <ref role="3Tt5mk" to="hqsm:637Y3IJQx5C" resolve="member" />
                               </node>
                               <node concept="30H73N" id="6JEY8lShNaL" role="2Oq$k0" />
                             </node>

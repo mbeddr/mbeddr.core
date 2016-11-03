@@ -123,8 +123,8 @@
   </node>
   <node concept="1TIwiD" id="RjyNapTDgY">
     <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="GraphPatternPathExpressionConstraint" />
-    <property role="R4oN_" value="Path Expression Constraint" />
+    <property role="TrG5h" value="PathExpressionConstraint" />
+    <property role="R4oN_" value="path expression constraint" />
     <property role="EcuMT" value="996292992025662526" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="RjyNapTDi0" role="1TKVEi">
@@ -146,7 +146,7 @@
       <property role="20kJfa" value="element" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1925259677761394831" />
-      <ref role="20lvS9" node="5Dmozv0wha_" resolve="GPathElement" />
+      <ref role="20lvS9" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
     </node>
     <node concept="1TJgyj" id="RjyNapTDhB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -164,11 +164,14 @@
     <node concept="PrWs8" id="nrkjVh51fX" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="3p0ky8LiJhh" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:3p0ky8Li8px" resolve="IPathElementScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPkSs">
-    <property role="TrG5h" value="GraphPatternCompositionConstraint" />
+    <property role="TrG5h" value="PatternCompositionConstraint" />
     <property role="3GE5qa" value="constraints" />
-    <property role="R4oN_" value="Pattern Composition Constraint" />
+    <property role="R4oN_" value="pattern composition constraint" />
     <property role="34LRSv" value="find" />
     <property role="EcuMT" value="996292992024530460" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -189,15 +192,6 @@
     </node>
     <node concept="PrWs8" id="1i65yRAVs5u" role="PzmwI">
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5Dmozv0wha_">
-    <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="GPathElement" />
-    <property role="EcuMT" value="6509498303003038373" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5Dmozv0whaA" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Dmozv0zaht">

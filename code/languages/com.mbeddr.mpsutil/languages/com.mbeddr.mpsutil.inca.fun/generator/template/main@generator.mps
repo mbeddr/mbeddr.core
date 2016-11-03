@@ -71,6 +71,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -136,7 +139,7 @@
       </concept>
     </language>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
-      <concept id="996292992024565924" name="com.mbeddr.mpsutil.inca.core.structure.LiteralValueReference" flags="ng" index="2k1_em" />
+      <concept id="996292992024566533" name="com.mbeddr.mpsutil.inca.core.structure.BoolValue" flags="ng" index="2k1_0R" />
       <concept id="996292992024567127" name="com.mbeddr.mpsutil.inca.core.structure.ExpressionEvaluationValue" flags="ng" index="2k1_p_">
         <child id="996292992024567128" name="expression" index="2k1_pE" />
       </concept>
@@ -282,18 +285,18 @@
       </node>
     </node>
     <node concept="3aamgX" id="3oMuSXR7Je8" role="3acgRq">
-      <ref role="30HIoZ" to="ebqt:4oNjwzxnlUy" resolve="SLiteralValue" />
+      <ref role="30HIoZ" to="ebqt:4oNjwzxnlUy" resolve="LiteralValue" />
       <node concept="gft3U" id="3oMuSXR7Jen" role="1lVwrX">
-        <node concept="2k1_em" id="3oMuSXR7Jet" role="gfFT$">
-          <node concept="29HgVG" id="3oMuSXR7Jex" role="lGtFl">
-            <node concept="3NFfHV" id="3oMuSXR7Jey" role="3NFExx">
-              <node concept="3clFbS" id="3oMuSXR7Jez" role="2VODD2">
-                <node concept="3clFbF" id="3oMuSXR7JeD" role="3cqZAp">
-                  <node concept="2OqwBi" id="3oMuSXR7Je$" role="3clFbG">
-                    <node concept="3TrEf2" id="3oMuSXR7JeB" role="2OqNvi">
+        <node concept="2k1_0R" id="3p0ky8LCDoN" role="gfFT$">
+          <node concept="29HgVG" id="3p0ky8LCDoZ" role="lGtFl">
+            <node concept="3NFfHV" id="3p0ky8LCDp6" role="3NFExx">
+              <node concept="3clFbS" id="3p0ky8LCDp7" role="2VODD2">
+                <node concept="3cpWs6" id="3p0ky8LCDD2" role="3cqZAp">
+                  <node concept="2OqwBi" id="3p0ky8LCDD3" role="3cqZAk">
+                    <node concept="3TrEf2" id="3p0ky8LCDD4" role="2OqNvi">
                       <ref role="3Tt5mk" to="ebqt:4oNjwzxnlUJ" resolve="value" />
                     </node>
-                    <node concept="30H73N" id="3oMuSXR7JeC" role="2Oq$k0" />
+                    <node concept="30H73N" id="3p0ky8LCDD5" role="2Oq$k0" />
                   </node>
                 </node>
               </node>
@@ -303,7 +306,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="39KhnTI9drU" role="3acgRq">
-      <ref role="30HIoZ" to="ebqt:5luHlsCq9Sp" resolve="SEmptyContent" />
+      <ref role="30HIoZ" to="ebqt:5luHlsCq9Sp" resolve="PatternFunctionEmptyContent" />
       <node concept="b5Tf3" id="39KhnTI9dsE" role="1lVwrX" />
     </node>
     <node concept="1puMqW" id="3d69XTNdj_V" role="1puA0r">
@@ -321,7 +324,7 @@
             <property role="TrG5h" value="functionMap" />
             <node concept="3rvAFt" id="3e1iAvwiBZF" role="1tU5fm">
               <node concept="3Tqbb2" id="3e1iAvwiCd6" role="3rvSg0">
-                <ref role="ehGHo" to="ebqt:1ERTnBTfavv" resolve="SPattern" />
+                <ref role="ehGHo" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
               </node>
               <node concept="17QB3L" id="3e1iAvwiCcU" role="3rvQeY" />
             </node>
@@ -329,7 +332,7 @@
               <node concept="3rGOSV" id="3e1iAvwiCeU" role="2ShVmc">
                 <node concept="17QB3L" id="3e1iAvwiCeV" role="3rHrn6" />
                 <node concept="3Tqbb2" id="3e1iAvwiCeW" role="3rHtpV">
-                  <ref role="ehGHo" to="ebqt:1ERTnBTfavv" resolve="SPattern" />
+                  <ref role="ehGHo" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
                 </node>
               </node>
             </node>
@@ -566,7 +569,7 @@
             <node concept="1Q6Npb" id="3d69XTNcqe5" role="2Oq$k0" />
             <node concept="2SmgA7" id="3d69XTNcqe6" role="2OqNvi">
               <node concept="chp4Y" id="3d69XTNcqe7" role="1dBWTz">
-                <ref role="cht4Q" to="ebqt:1ERTnBTfavv" resolve="SPattern" />
+                <ref role="cht4Q" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
               </node>
             </node>
           </node>
@@ -752,7 +755,7 @@
                       <node concept="3cpWsn" id="W0eiDpnh3S" role="3cpWs9">
                         <property role="TrG5h" value="variable" />
                         <node concept="3Tqbb2" id="W0eiDpnh3O" role="1tU5fm">
-                          <ref role="ehGHo" to="ebqt:Tz5AFeCUC5" resolve="STemporaryVariable" />
+                          <ref role="ehGHo" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
                         </node>
                         <node concept="2OqwBi" id="W0eiDpnh3T" role="33vP2m">
                           <node concept="35c_gC" id="W0eiDpnh3U" role="2Oq$k0">

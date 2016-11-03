@@ -334,12 +334,12 @@
           <node concept="3cpWsn" id="7nEPFn_$UqJ" role="3cpWs9">
             <property role="TrG5h" value="element" />
             <node concept="3Tqbb2" id="7nEPFn_$UqE" role="1tU5fm">
-              <ref role="ehGHo" to="ebqt:5Dmozv0wha_" resolve="SPathElement" />
+              <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
             </node>
             <node concept="2ShNRf" id="7nEPFn_$Wx_" role="33vP2m">
               <node concept="3zrR0B" id="7nEPFn_$Wxz" role="2ShVmc">
                 <node concept="3Tqbb2" id="7nEPFn_$Wx$" role="3zrR0E">
-                  <ref role="ehGHo" to="ebqt:5Dmozv0wha_" resolve="SPathElement" />
+                  <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
                 </node>
               </node>
             </node>
@@ -481,12 +481,12 @@
                   <node concept="3cpWsn" id="7nEPFn__0nF" role="3cpWs9">
                     <property role="TrG5h" value="tmp" />
                     <node concept="3Tqbb2" id="7nEPFn__0nA" role="1tU5fm">
-                      <ref role="ehGHo" to="ebqt:5Dmozv0wha_" resolve="SPathElement" />
+                      <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
                     </node>
                     <node concept="2ShNRf" id="7nEPFn__0yO" role="33vP2m">
                       <node concept="3zrR0B" id="7nEPFn__0wg" role="2ShVmc">
                         <node concept="3Tqbb2" id="7nEPFn__0wh" role="3zrR0E">
-                          <ref role="ehGHo" to="ebqt:5Dmozv0wha_" resolve="SPathElement" />
+                          <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
                         </node>
                       </node>
                     </node>
@@ -569,12 +569,12 @@
           <node concept="3cpWsn" id="7nEPFn_CUUU" role="3cpWs9">
             <property role="TrG5h" value="path" />
             <node concept="3Tqbb2" id="7nEPFn_CUUP" role="1tU5fm">
-              <ref role="ehGHo" to="ebqt:RjyNapTDgY" resolve="SPathExpression" />
+              <ref role="ehGHo" to="ebqt:RjyNapTDgY" resolve="PathExpression" />
             </node>
             <node concept="2ShNRf" id="7nEPFn_CV0R" role="33vP2m">
               <node concept="3zrR0B" id="7nEPFn_CV0G" role="2ShVmc">
                 <node concept="3Tqbb2" id="7nEPFn_CV0H" role="3zrR0E">
-                  <ref role="ehGHo" to="ebqt:RjyNapTDgY" resolve="SPathExpression" />
+                  <ref role="ehGHo" to="ebqt:RjyNapTDgY" resolve="PathExpression" />
                 </node>
               </node>
             </node>
@@ -584,7 +584,7 @@
           <node concept="37vLTI" id="7nEPFn_CVSz" role="3clFbG">
             <node concept="2pJPEk" id="7nEPFn_DS23" role="37vLTx">
               <node concept="2pJPED" id="7nEPFn_DS3P" role="2pJPEn">
-                <ref role="2pJxaS" to="ebqt:Tz5AFeF__S" resolve="SVariableReference" />
+                <ref role="2pJxaS" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
                 <node concept="2pIpSj" id="7nEPFn_DS5W" role="2pJxcM">
                   <ref role="2pIpSl" to="hqsm:EE49sRYMQu" resolve="variable" />
                   <node concept="36biLy" id="7nEPFn_DS83" role="2pJxcZ">
@@ -636,7 +636,7 @@
       </node>
       <node concept="3Tm1VV" id="7nEPFn_$U8q" role="1B3o_S" />
       <node concept="3Tqbb2" id="7nEPFn_$UgW" role="3clF45">
-        <ref role="ehGHo" to="ebqt:RjyNapTDgY" resolve="SPathExpression" />
+        <ref role="ehGHo" to="ebqt:RjyNapTDgY" resolve="PathExpression" />
       </node>
       <node concept="37vLTG" id="7nEPFn_$UpD" role="3clF46">
         <property role="TrG5h" value="expression" />
