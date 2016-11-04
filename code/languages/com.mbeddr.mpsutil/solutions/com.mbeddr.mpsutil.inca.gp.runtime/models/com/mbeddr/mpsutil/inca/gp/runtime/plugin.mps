@@ -1818,7 +1818,7 @@
                   </node>
                   <node concept="1mIQ4w" id="2ATu8MxKjnS" role="2OqNvi">
                     <node concept="chp4Y" id="49V02wiYNCM" role="cj9EA">
-                      <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+                      <ref role="cht4Q" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
                     </node>
                   </node>
                 </node>
@@ -1831,7 +1831,7 @@
                       <node concept="1rXfSq" id="5lmC1XhqiRV" role="37vLTx">
                         <ref role="37wK5l" node="3sUe9pq91ae" resolve="getConcept_PathExpressionConstraint" />
                         <node concept="1PxgMI" id="5lmC1XhqiRW" role="37wK5m">
-                          <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+                          <ref role="1m5ApE" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
                           <node concept="2GrUjf" id="5lmC1XhqiRX" role="1m5AlR">
                             <ref role="2Gs0qQ" node="2ATu8MxK2ft" resolve="constraint" />
                           </node>
@@ -1854,7 +1854,7 @@
                   </node>
                   <node concept="1mIQ4w" id="2ATu8MxKknq" role="2OqNvi">
                     <node concept="chp4Y" id="49V02wiYNCP" role="cj9EA">
-                      <ref role="cht4Q" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
+                      <ref role="cht4Q" to="55iy:RjyNapPkSs" resolve="PatternCompositionConstraint" />
                     </node>
                   </node>
                 </node>
@@ -1867,7 +1867,7 @@
                       <node concept="1rXfSq" id="5lmC1XhpiLO" role="37vLTx">
                         <ref role="37wK5l" node="3sUe9pq9npj" resolve="getConcept_PatternCompositionConstraint" />
                         <node concept="1PxgMI" id="5lmC1XhpiLP" role="37wK5m">
-                          <ref role="1m5ApE" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
+                          <ref role="1m5ApE" to="55iy:RjyNapPkSs" resolve="PatternCompositionConstraint" />
                           <node concept="2GrUjf" id="5lmC1XhpiLQ" role="1m5AlR">
                             <ref role="2Gs0qQ" node="2ATu8MxK2ft" resolve="constraint" />
                           </node>
@@ -2613,6 +2613,28 @@
                   </node>
                 </node>
               </node>
+              <node concept="3SKdUt" id="5Os6JboHaxS" role="3cqZAp">
+                <node concept="3SKdUq" id="5Os6JboHaxU" role="3SKWNk">
+                  <property role="3SKdUp" value="context pointers should not introduce overly over-approximating constraint (i.e. BaseConcept)" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="5Os6JboH7XJ" role="3cqZAp">
+                <node concept="3cpWsn" id="5Os6JboH7XM" role="3cpWs9">
+                  <property role="TrG5h" value="c4" />
+                  <node concept="10P_77" id="5Os6JboH7XH" role="1tU5fm" />
+                  <node concept="2OqwBi" id="5Os6JboMCn_" role="33vP2m">
+                    <node concept="35c_gC" id="5Os6JboMBWa" role="2Oq$k0">
+                      <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+                    </node>
+                    <node concept="2qgKlT" id="5Os6JboMCCB" role="2OqNvi">
+                      <ref role="37wK5l" to="gcg1:5Os6JboMsaW" resolve="isNotContextLink" />
+                      <node concept="37vLTw" id="5Os6JboMCRh" role="37wK5m">
+                        <ref role="3cqZAo" node="3sUe9pq9kxY" resolve="interfacePart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbH" id="3sUe9pq9jqo" role="3cqZAp" />
               <node concept="3clFbJ" id="3sUe9pq9jAt" role="3cqZAp">
                 <node concept="3clFbS" id="3sUe9pq9jAv" role="3clFbx">
@@ -2645,8 +2667,13 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="37vLTw" id="3sUe9pq9jJv" role="3uHU7B">
-                    <ref role="3cqZAo" node="3sUe9pq9c4r" resolve="c1" />
+                  <node concept="1Wc70l" id="5Os6JboHdL$" role="3uHU7B">
+                    <node concept="37vLTw" id="5Os6JboHdVe" role="3uHU7w">
+                      <ref role="3cqZAo" node="5Os6JboH7XM" resolve="c4" />
+                    </node>
+                    <node concept="37vLTw" id="3sUe9pq9jJv" role="3uHU7B">
+                      <ref role="3cqZAo" node="3sUe9pq9c4r" resolve="c1" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2668,7 +2695,7 @@
       <node concept="37vLTG" id="3sUe9pq91az" role="3clF46">
         <property role="TrG5h" value="constraint" />
         <node concept="3Tqbb2" id="3sUe9pq91a$" role="1tU5fm">
-          <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+          <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
         </node>
       </node>
       <node concept="37vLTG" id="3sUe9pq91a_" role="3clF46">
@@ -2996,7 +3023,7 @@
       <node concept="37vLTG" id="3sUe9pq9nqR" role="3clF46">
         <property role="TrG5h" value="constraint" />
         <node concept="3Tqbb2" id="3sUe9pq9nqS" role="1tU5fm">
-          <ref role="ehGHo" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
+          <ref role="ehGHo" to="55iy:RjyNapPkSs" resolve="PatternCompositionConstraint" />
         </node>
       </node>
       <node concept="37vLTG" id="3sUe9pq9nqT" role="3clF46">

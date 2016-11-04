@@ -925,5 +925,46 @@
       <ref role="20lvS9" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7A0HCuGr2aH">
+    <property role="EcuMT" value="8755198369437852333" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="ParentPathElement" />
+    <property role="34LRSv" value="parent" />
+    <property role="R4oN_" value="parent reference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7A0HCuGr2aI" role="PzmwI">
+      <ref role="PrY4T" node="1ERTnBTmuSC" resolve="IPathElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7A0HCuGr2fn">
+    <property role="EcuMT" value="8755198369437852631" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="NextPathElement" />
+    <property role="34LRSv" value="next" />
+    <property role="R4oN_" value="next reference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7A0HCuGr2fo" role="PzmwI">
+      <ref role="PrY4T" node="1ERTnBTmuSC" resolve="IPathElement" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7A0HCuGt5rY">
+    <property role="EcuMT" value="8755198369438390014" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="ContextPointer" />
+    <node concept="1TJgyj" id="7A0HCuGt5rZ" role="1TKVEi">
+      <property role="IQ2ns" value="8755198369438390015" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="parent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="7A0HCuGt5s2" role="1TKVEi">
+      <property role="IQ2ns" value="8755198369438390018" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="next" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
 </model>
 

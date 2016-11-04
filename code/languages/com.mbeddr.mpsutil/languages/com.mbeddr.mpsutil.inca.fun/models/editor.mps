@@ -1264,5 +1264,13 @@
     <property role="3GE5qa" value="condition" />
     <ref role="aqKnT" to="ebqt:52HBLukNmct" resolve="Inequality" />
   </node>
+  <node concept="3p36aQ" id="GLUT1$c3Ah">
+    <property role="3GE5qa" value="condition" />
+    <ref role="aqKnT" to="ebqt:52HBLukNnHX" resolve="InstanceOf" />
+  </node>
+  <node concept="3p36aQ" id="GLUT1$c3AH">
+    <property role="3GE5qa" value="condition" />
+    <ref role="aqKnT" to="ebqt:InJBIGIqot" resolve="NotInstanceOf" />
+  </node>
 </model>
 

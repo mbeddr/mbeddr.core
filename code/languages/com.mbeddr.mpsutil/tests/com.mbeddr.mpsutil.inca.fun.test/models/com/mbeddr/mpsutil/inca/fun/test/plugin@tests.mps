@@ -14,10 +14,15 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="oubp" ref="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/r:7cc2086d-c7d0-49c7-811c-ebbaf40d9195(jetbrains.mps.lang.classLike/jetbrains.mps.baseLanguage.lightweightdsl.structure)" />
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun">
+      <concept id="5746856838774042406" name="com.mbeddr.mpsutil.inca.fun.structure.Def" flags="ng" index="2dT$3Y">
+        <child id="5746856838774042549" name="expression" index="2dT$1H" />
+      </concept>
       <concept id="996292992024530460" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionCall" flags="ng" index="2k1GkI">
         <property id="3905319682992782434" name="count" index="114$vH" />
         <child id="996292992028393460" name="call" index="2nKVj6" />
@@ -34,6 +39,9 @@
         <child id="1036696987215326979" name="expression" index="30Nf_D" />
       </concept>
       <concept id="1036696987215223160" name="com.mbeddr.mpsutil.inca.fun.structure.FunVariableReference" flags="ng" index="30NkWi" />
+      <concept id="3905319682992589237" name="com.mbeddr.mpsutil.inca.fun.structure.EvalValue" flags="ng" index="11bN8U">
+        <child id="3905319682992589247" name="expression" index="11bN8K" />
+      </concept>
       <concept id="5813477617634727824" name="com.mbeddr.mpsutil.inca.fun.structure.AssertStatement" flags="ng" index="34ocy7">
         <child id="5813477617634727967" name="condition" index="34ocs8" />
       </concept>
@@ -47,6 +55,9 @@
         <child id="5813477617634737164" name="expression" index="34oecr" />
       </concept>
       <concept id="5813477617634730413" name="com.mbeddr.mpsutil.inca.fun.structure.Equality" flags="ng" index="34ofUU" />
+      <concept id="5813477617635831949" name="com.mbeddr.mpsutil.inca.fun.structure.Undef" flags="ng" index="34sUYq">
+        <child id="5813477617635832092" name="expression" index="34sUSb" />
+      </concept>
       <concept id="1925259677759481823" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunction" flags="ng" index="3zyOaA">
         <child id="6368683143941351805" name="outParameters" index="3TLBbI" />
       </concept>
@@ -56,6 +67,23 @@
       <concept id="5458164179963309291" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionParameter" flags="ng" index="1VLyuc" />
       <concept id="6151553526979403292" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionComment" flags="ng" index="1XdyHb" />
       <concept id="6151553526979403289" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionEmptyContent" flags="ng" index="1XdyHe" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
@@ -82,6 +110,9 @@
       </concept>
       <concept id="996292992024565941" name="com.mbeddr.mpsutil.inca.core.structure.NumberValue" flags="ng" index="2k1_e7">
         <property id="996292992024565942" name="value" index="2k1_e4" />
+      </concept>
+      <concept id="996292992024567127" name="com.mbeddr.mpsutil.inca.core.structure.ExpressionEvaluationValue" flags="ng" index="2k1_p_">
+        <child id="996292992024567128" name="expression" index="2k1_pE" />
       </concept>
       <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq">
         <reference id="996292992028507459" name="pattern" index="2nKBpL" />
@@ -115,8 +146,19 @@
         <child id="1925259677761359694" name="bodies" index="3zVECR" />
       </concept>
       <concept id="5024559837613016203" name="com.mbeddr.mpsutil.inca.core.structure.IPatternComment" flags="ng" index="1k99o6" />
+      <concept id="3634481308605751419" name="com.mbeddr.mpsutil.inca.core.structure.BaseVariableReference" flags="ng" index="1sjAk5">
+        <reference id="3634481308605751420" name="variable" index="1sjAk2" />
+      </concept>
       <concept id="1925259677761400360" name="com.mbeddr.mpsutil.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
         <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -169,16 +211,6 @@
           <node concept="34oehE" id="3C7pxOrrOt7" role="34ocs8">
             <ref role="34o0ic" to="tpee:fz12cDC" resolve="FieldDeclaration" />
             <node concept="30NkWi" id="3C7pxOrrOsf" role="34oecr">
-              <ref role="XkjO9" node="3p0ky8LLxQl" resolve="member" />
-            </node>
-          </node>
-        </node>
-        <node concept="34ocy7" id="1suAdVkVanV" role="1dgzf0">
-          <node concept="2kdhWc" id="1suAdVkVaCT" role="34ocs8">
-            <node concept="727y6" id="1suAdVkVaT5" role="3zVzRQ">
-              <ref role="3zVwH8" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
-            </node>
-            <node concept="30NkWi" id="1suAdVkVa_$" role="2kdhYM">
               <ref role="XkjO9" node="3p0ky8LLxQl" resolve="member" />
             </node>
           </node>
@@ -378,12 +410,391 @@
       </node>
     </node>
     <node concept="1XdyHe" id="3p0ky8LTa5l" role="1dubk0" />
+    <node concept="3zyOaA" id="GLUT1$bNYQ" role="1dubk0">
+      <property role="1aKoCf" value="false" />
+      <property role="TrG5h" value="CO_SELF_NO_OBJECT" />
+      <node concept="3zV_Rz" id="GLUT1$bNYR" role="3zVECR">
+        <node concept="1XdyHb" id="GLUT1$bOYK" role="1dgzf0">
+          <property role="1dubkF" value="check that the class implements the Comparable interface" />
+        </node>
+        <node concept="34ocy7" id="GLUT1$bPrC" role="1dgzf0">
+          <node concept="2dT$3Y" id="GLUT1$bP_6" role="34ocs8">
+            <node concept="2k1GkI" id="GLUT1$bP_8" role="2dT$1H">
+              <node concept="2k1_uq" id="GLUT1$c14H" role="2nKVj6">
+                <ref role="2nKBpL" node="GLUT1$bQ6m" resolve="comparables" />
+                <node concept="30NkWi" id="GLUT1$c160" role="2nKBpO">
+                  <ref role="XkjO9" node="GLUT1$bOk7" resolve="class" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XdyHe" id="GLUT1$c1eq" role="1dgzf0" />
+        <node concept="34odk1" id="GLUT1$c1Fy" role="1dgzf0">
+          <node concept="2kdhWc" id="GLUT1$c25K" role="34ocZk">
+            <node concept="727y6" id="GLUT1$c26t" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:4EqhHTp4Mw3" resolve="member" />
+            </node>
+            <node concept="30NkWi" id="GLUT1$c25D" role="2kdhYM">
+              <ref role="XkjO9" node="GLUT1$bOk7" resolve="class" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="GLUT1$c1fe" role="34ocZn">
+            <property role="TrG5h" value="method" />
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$c27$" role="1dgzf0">
+          <node concept="34oehE" id="GLUT1$c2ae" role="34ocs8">
+            <ref role="34o0ic" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
+            <node concept="30NkWi" id="GLUT1$c29n" role="34oecr">
+              <ref role="XkjO9" node="GLUT1$c1fe" resolve="method" />
+            </node>
+          </node>
+        </node>
+        <node concept="1XdyHe" id="GLUT1$c2AS" role="1dgzf0" />
+        <node concept="1XdyHb" id="GLUT1$dqt6" role="1dgzf0">
+          <property role="1dubkF" value="check method name and return type" />
+        </node>
+        <node concept="34odk1" id="GLUT1$dr7P" role="1dgzf0">
+          <node concept="2kdhWc" id="GLUT1$dr_E" role="34ocZk">
+            <node concept="727y6" id="GLUT1$drDI" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="30NkWi" id="GLUT1$drxE" role="2kdhYM">
+              <ref role="XkjO9" node="GLUT1$c1fe" resolve="method" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="GLUT1$dr3u" role="34ocZn">
+            <property role="TrG5h" value="name" />
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dsb8" role="1dgzf0">
+          <node concept="34oehE" id="GLUT1$dtkN" role="34ocs8">
+            <ref role="34o0ic" to="tpee:f_0OyhT" resolve="IntegerType" />
+            <node concept="2kdhWc" id="GLUT1$dsEF" role="34oecr">
+              <node concept="727y6" id="GLUT1$dt8G" role="3zVzRQ">
+                <ref role="3zVwH8" to="tpee:fzclF7X" resolve="returnType" />
+              </node>
+              <node concept="30NkWi" id="GLUT1$dsE$" role="2kdhYM">
+                <ref role="XkjO9" node="GLUT1$c1fe" resolve="method" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dumT" role="1dgzf0">
+          <node concept="34ofUU" id="GLUT1$duVd" role="34ocs8">
+            <node concept="2Brx2E" id="GLUT1$dvqg" role="34ocZk">
+              <node concept="2k1_8k" id="GLUT1$dvqe" role="2Brx2B">
+                <property role="2k1_8l" value="compareTo" />
+              </node>
+            </node>
+            <node concept="30NkWi" id="GLUT1$duSA" role="34ocZn">
+              <ref role="XkjO9" node="GLUT1$dr3u" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="1XdyHe" id="GLUT1$dwuP" role="1dgzf0" />
+        <node concept="1XdyHb" id="GLUT1$dxBM" role="1dgzf0">
+          <property role="1dubkF" value="assert that the method has only one parameter" />
+        </node>
+        <node concept="34ocy7" id="GLUT1$dxBN" role="1dgzf0">
+          <node concept="34ofUU" id="GLUT1$dxBO" role="34ocs8">
+            <node concept="2Brx2E" id="GLUT1$dxBP" role="34ocZk">
+              <node concept="2k1_e7" id="GLUT1$dxBQ" role="2Brx2B">
+                <property role="2k1_e4" value="1" />
+              </node>
+            </node>
+            <node concept="2k1GkI" id="GLUT1$dxBR" role="34ocZn">
+              <property role="114$vH" value="true" />
+              <node concept="2k1_uq" id="GLUT1$dxBS" role="2nKVj6">
+                <ref role="2nKBpL" node="1suAdVkH3wY" resolve="getParameters" />
+                <node concept="30NkWi" id="GLUT1$dxBT" role="2nKBpO">
+                  <ref role="XkjO9" node="GLUT1$c1fe" resolve="method" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XdyHe" id="GLUT1$dxBU" role="1dgzf0" />
+        <node concept="1XdyHb" id="GLUT1$dxBV" role="1dgzf0">
+          <property role="1dubkF" value="and check that the parameter's type is not Object" />
+        </node>
+        <node concept="34odk1" id="GLUT1$dxBW" role="1dgzf0">
+          <node concept="30KbLJ" id="GLUT1$dxBX" role="34ocZn">
+            <property role="TrG5h" value="parameter" />
+          </node>
+          <node concept="2k1GkI" id="GLUT1$dxBY" role="34ocZk">
+            <node concept="2k1_uq" id="GLUT1$dxBZ" role="2nKVj6">
+              <ref role="2nKBpL" node="1suAdVkH3wY" resolve="getParameters" />
+              <node concept="30NkWi" id="GLUT1$dxC0" role="2nKBpO">
+                <ref role="XkjO9" node="GLUT1$c1fe" resolve="method" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34odk1" id="GLUT1$dxC1" role="1dgzf0">
+          <node concept="2kdhWc" id="GLUT1$dxC2" role="34ocZk">
+            <node concept="727y6" id="GLUT1$dxC3" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:4VkOLwjf83e" resolve="type" />
+            </node>
+            <node concept="30NkWi" id="GLUT1$dxC4" role="2kdhYM">
+              <ref role="XkjO9" node="GLUT1$dxBX" resolve="parameter" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="GLUT1$dxC5" role="34ocZn">
+            <property role="TrG5h" value="parameterType" />
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dxC6" role="1dgzf0">
+          <node concept="34oehE" id="GLUT1$dxC7" role="34ocs8">
+            <ref role="34o0ic" to="tpee:g7uibYu" resolve="ClassifierType" />
+            <node concept="30NkWi" id="GLUT1$dxC8" role="34oecr">
+              <ref role="XkjO9" node="GLUT1$dxC5" resolve="parameterType" />
+            </node>
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dxC9" role="1dgzf0">
+          <node concept="11bN8U" id="GLUT1$dzfZ" role="34ocs8">
+            <node concept="2k1_p_" id="GLUT1$dzg0" role="11bN8K">
+              <node concept="3fqX7Q" id="GLUT1$dzTv" role="2k1_pE">
+                <node concept="2OqwBi" id="GLUT1$dCdA" role="3fr31v">
+                  <node concept="2OqwBi" id="GLUT1$dAdQ" role="2Oq$k0">
+                    <node concept="2OqwBi" id="GLUT1$d$vR" role="2Oq$k0">
+                      <node concept="1sjAk5" id="GLUT1$d$kt" role="2Oq$k0">
+                        <ref role="1sjAk2" node="GLUT1$dxC5" resolve="parameterType" />
+                      </node>
+                      <node concept="3TrEf2" id="GLUT1$d_xQ" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="GLUT1$dBhk" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="GLUT1$dDxK" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="2OqwBi" id="GLUT1$dFd1" role="37wK5m">
+                      <node concept="3VsKOn" id="GLUT1$dEHJ" role="2Oq$k0">
+                        <ref role="3VsUkX" to="wyt6:~Object" resolve="Object" />
+                      </node>
+                      <node concept="liA8E" id="GLUT1$dHoc" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyuc" id="GLUT1$bOk7" role="1dv5OJ">
+        <property role="TrG5h" value="class" />
+        <node concept="2kdjtB" id="GLUT1$bOHe" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="GLUT1$bNDZ" role="1dubk0" />
+    <node concept="3zyOaA" id="GLUT1$dPrE" role="1dubk0">
+      <property role="1aKoCf" value="false" />
+      <property role="TrG5h" value="SE_NO_SUITABLE_CONSTRUCTOR" />
+      <node concept="3zV_Rz" id="GLUT1$dPrF" role="3zVECR">
+        <node concept="34odk1" id="GLUT1$dSp9" role="1dgzf0">
+          <node concept="2kdhWc" id="GLUT1$dTsG" role="34ocZk">
+            <node concept="727y6" id="GLUT1$dTXj" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:g7uigIF" resolve="classifier" />
+            </node>
+            <node concept="2kdhWc" id="GLUT1$dSpZ" role="2kdhYM">
+              <node concept="727y6" id="GLUT1$dSUg" role="3zVzRQ">
+                <ref role="3zVwH8" to="tpee:gXzkM_H" resolve="superclass" />
+              </node>
+              <node concept="30NkWi" id="GLUT1$dSpS" role="2kdhYM">
+                <ref role="XkjO9" node="GLUT1$dQSb" resolve="class" />
+              </node>
+            </node>
+          </node>
+          <node concept="30KbLJ" id="GLUT1$dRT7" role="34ocZn">
+            <property role="TrG5h" value="superClass" />
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dUsL" role="1dgzf0">
+          <node concept="2dT$3Y" id="GLUT1$dUtY" role="34ocs8">
+            <node concept="2k1GkI" id="GLUT1$dUu0" role="2dT$1H">
+              <node concept="2k1_uq" id="GLUT1$dV21" role="2nKVj6">
+                <ref role="2nKBpL" node="GLUT1$dIii" resolve="serializables" />
+                <node concept="30NkWi" id="GLUT1$dV3N" role="2nKBpO">
+                  <ref role="XkjO9" node="GLUT1$dQSb" resolve="class" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dVHv" role="1dgzf0">
+          <node concept="34sUYq" id="GLUT1$dZw9" role="34ocs8">
+            <node concept="2k1GkI" id="GLUT1$dZwb" role="34sUSb">
+              <node concept="2k1_uq" id="GLUT1$dWNX" role="2nKVj6">
+                <ref role="2nKBpL" node="GLUT1$dIii" resolve="serializables" />
+                <node concept="30NkWi" id="GLUT1$dWQd" role="2nKBpO">
+                  <ref role="XkjO9" node="GLUT1$dRT7" resolve="superClass" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyuc" id="GLUT1$dQSb" role="1dv5OJ">
+        <property role="TrG5h" value="class" />
+        <node concept="2kdjtB" id="GLUT1$dRo1" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="GLUT1$dOX8" role="1dubk0" />
     <node concept="1XdyHb" id="1suAdVkLbJR" role="1dubk0">
       <property role="1dubkF" value="HELPER FUNCTIONS BELOW" />
     </node>
     <node concept="1XdyHe" id="1suAdVkLb$R" role="1dubk0" />
+    <node concept="3zyOaA" id="GLUT1$bQ6m" role="1dubk0">
+      <property role="1aKoCf" value="true" />
+      <property role="TrG5h" value="comparables" />
+      <node concept="3zV_Rz" id="GLUT1$bQ6n" role="3zVECR">
+        <node concept="34odk1" id="GLUT1$bSWU" role="1dgzf0">
+          <node concept="2kdhWc" id="GLUT1$bTcv" role="34ocZk">
+            <node concept="727y6" id="GLUT1$bTcT" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:fWEKbgp" resolve="implementedInterface" />
+            </node>
+            <node concept="30NkWi" id="GLUT1$bTco" role="2kdhYM">
+              <ref role="XkjO9" node="GLUT1$bRWq" resolve="class" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="GLUT1$bSES" role="34ocZn">
+            <property role="TrG5h" value="interface" />
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$bTsK" role="1dgzf0">
+          <node concept="11bN8U" id="GLUT1$bTI4" role="34ocs8">
+            <node concept="2k1_p_" id="GLUT1$bTI5" role="11bN8K">
+              <node concept="2OqwBi" id="GLUT1$bWCs" role="2k1_pE">
+                <node concept="2OqwBi" id="GLUT1$bVhx" role="2Oq$k0">
+                  <node concept="2OqwBi" id="GLUT1$bU8Q" role="2Oq$k0">
+                    <node concept="1sjAk5" id="GLUT1$bU0H" role="2Oq$k0">
+                      <ref role="1sjAk2" node="GLUT1$bSES" resolve="interface" />
+                    </node>
+                    <node concept="3TrEf2" id="GLUT1$bURh" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="GLUT1$bW1o" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GLUT1$bXDJ" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="GLUT1$bYn7" role="37wK5m">
+                    <node concept="3VsKOn" id="GLUT1$bY6s" role="2Oq$k0">
+                      <ref role="3VsUkX" to="wyt6:~Comparable" resolve="Comparable" />
+                    </node>
+                    <node concept="liA8E" id="GLUT1$bZi5" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyuc" id="GLUT1$bRWq" role="1dv5OJ">
+        <property role="TrG5h" value="class" />
+        <node concept="2kdjtB" id="GLUT1$bSsf" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
+      <node concept="1k99o6" id="GLUT1$bZMw" role="lGtFl">
+        <node concept="TZ5HA" id="GLUT1$bZMx" role="TZ5H$">
+          <node concept="1dT_AC" id="GLUT1$bZMy" role="1dT_Ay">
+            <property role="1dT_AB" value="Enumerates the classes that implement the Comparable interface." />
+          </node>
+        </node>
+        <node concept="2MMnZx" id="GLUT1$bZMz" role="3nqlJM">
+          <property role="2MMnZA" value="the class" />
+          <ref role="2MMnZ$" node="GLUT1$bRWq" resolve="class" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="GLUT1$dKKV" role="1dubk0" />
+    <node concept="3zyOaA" id="GLUT1$dIii" role="1dubk0">
+      <property role="1aKoCf" value="true" />
+      <property role="TrG5h" value="serializables" />
+      <node concept="3zV_Rz" id="GLUT1$dIij" role="3zVECR">
+        <node concept="34odk1" id="GLUT1$dIik" role="1dgzf0">
+          <node concept="2kdhWc" id="GLUT1$dIil" role="34ocZk">
+            <node concept="727y6" id="GLUT1$dIim" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:fWEKbgp" resolve="implementedInterface" />
+            </node>
+            <node concept="30NkWi" id="GLUT1$dIin" role="2kdhYM">
+              <ref role="XkjO9" node="GLUT1$dIiA" resolve="class" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="GLUT1$dIio" role="34ocZn">
+            <property role="TrG5h" value="interface" />
+          </node>
+        </node>
+        <node concept="34ocy7" id="GLUT1$dIip" role="1dgzf0">
+          <node concept="11bN8U" id="GLUT1$dIiq" role="34ocs8">
+            <node concept="2k1_p_" id="GLUT1$dIir" role="11bN8K">
+              <node concept="2OqwBi" id="GLUT1$dIis" role="2k1_pE">
+                <node concept="2OqwBi" id="GLUT1$dIit" role="2Oq$k0">
+                  <node concept="2OqwBi" id="GLUT1$dIiu" role="2Oq$k0">
+                    <node concept="1sjAk5" id="GLUT1$dIiv" role="2Oq$k0">
+                      <ref role="1sjAk2" node="GLUT1$dIio" resolve="interface" />
+                    </node>
+                    <node concept="3TrEf2" id="GLUT1$dIiw" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="GLUT1$dIix" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GLUT1$dIiy" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="GLUT1$dIiz" role="37wK5m">
+                    <node concept="3VsKOn" id="GLUT1$dIi$" role="2Oq$k0">
+                      <ref role="3VsUkX" to="guwi:~Serializable" resolve="Serializable" />
+                    </node>
+                    <node concept="liA8E" id="GLUT1$dIi_" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1VLyuc" id="GLUT1$dIiA" role="1dv5OJ">
+        <property role="TrG5h" value="class" />
+        <node concept="2kdjtB" id="GLUT1$dIiB" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
+      <node concept="1k99o6" id="GLUT1$dIiC" role="lGtFl">
+        <node concept="TZ5HA" id="GLUT1$dIiD" role="TZ5H$">
+          <node concept="1dT_AC" id="GLUT1$dIiE" role="1dT_Ay">
+            <property role="1dT_AB" value="Enumerates the classes that implement the Serializable interface." />
+          </node>
+        </node>
+        <node concept="2MMnZx" id="GLUT1$dIiF" role="3nqlJM">
+          <property role="2MMnZA" value="the class" />
+          <ref role="2MMnZ$" node="GLUT1$dIiA" resolve="class" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="GLUT1$bPPT" role="1dubk0" />
     <node concept="3zyOaA" id="1suAdVkH3wY" role="1dubk0">
-      <property role="1aKoCf" value="false" />
+      <property role="1aKoCf" value="true" />
       <property role="TrG5h" value="getParameters" />
       <node concept="3zV_Rz" id="1suAdVkH3wZ" role="3zVECR">
         <node concept="30Nfyg" id="1suAdVkH49I" role="1dgzf0">

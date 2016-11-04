@@ -18,7 +18,6 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -115,7 +114,6 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -206,9 +204,6 @@
       <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
         <child id="1224414456414" name="elementType" index="kMuH3" />
       </concept>
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -234,7 +229,7 @@
   </registry>
   <node concept="13h7C7" id="5Dmozv0wdru">
     <property role="3GE5qa" value="constraints" />
-    <ref role="13h7C2" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
+    <ref role="13h7C2" to="55iy:RjyNapPkSs" resolve="PatternCompositionConstraint" />
     <node concept="13i0hz" id="2pbQ6LkKO26" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -604,7 +599,7 @@
   </node>
   <node concept="13h7C7" id="5Dmozv0wdQi">
     <property role="3GE5qa" value="constraints" />
-    <ref role="13h7C2" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+    <ref role="13h7C2" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
     <node concept="13i0hz" id="5jgivonIobQ" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -983,29 +978,24 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="3p0ky8LiL4p" role="13h7CS">
-      <property role="13i0it" value="false" />
+    <node concept="13i0hz" id="5Os6JboGy_5" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="TrG5h" value="getScope" />
-      <ref role="13i0hy" to="gcg1:3p0ky8LikqH" resolve="getScope" />
-      <node concept="3Tm1VV" id="3p0ky8LiL4q" role="1B3o_S" />
-      <node concept="3clFbS" id="3p0ky8LiL4w" role="3clF47">
-        <node concept="3cpWs6" id="3p0ky8LiYYs" role="3cqZAp">
-          <node concept="BsUDl" id="3p0ky8LiZFd" role="3cqZAk">
-            <ref role="37wK5l" to="gcg1:3p0ky8LiPbT" resolve="getInterfaceParts" />
-            <node concept="2OqwBi" id="3p0ky8Lj0c3" role="37wK5m">
-              <node concept="13iPFW" id="3p0ky8LiZTN" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3p0ky8Lj0ub" role="2OqNvi">
-                <ref role="3Tt5mk" to="55iy:RjyNapTDhB" resolve="type" />
-              </node>
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScopeProviderConcept" />
+      <ref role="13i0hy" to="gcg1:5Os6JboGgK9" resolve="getScopeProviderConcept" />
+      <node concept="3Tm1VV" id="5Os6JboGy_6" role="1B3o_S" />
+      <node concept="3clFbS" id="5Os6JboGy_b" role="3clF47">
+        <node concept="3cpWs6" id="5Os6JboGzwp" role="3cqZAp">
+          <node concept="2OqwBi" id="5Os6JboGzww" role="3cqZAk">
+            <node concept="13iPFW" id="5Os6JboGzwx" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5Os6JboGzwy" role="2OqNvi">
+              <ref role="3Tt5mk" to="55iy:RjyNapTDhB" resolve="type" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="_YKpA" id="3p0ky8LiL4x" role="3clF45">
-        <node concept="3Tqbb2" id="3p0ky8LiL4y" role="_ZDj9">
-          <ref role="ehGHo" to="tpck:19gBtYEAf4C" resolve="InterfacePart" />
-        </node>
+      <node concept="3Tqbb2" id="5Os6JboGy_c" role="3clF45">
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
       </node>
     </node>
   </node>
