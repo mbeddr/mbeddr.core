@@ -543,5 +543,13 @@
     <property role="EcuMT" value="4807167597261199962" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="4_qY3E6qVbq">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="TrG5h" value="CoverageExpression" />
+    <property role="34LRSv" value="coverage" />
+    <property role="R4oN_" value="coverage analyzer context" />
+    <property role="EcuMT" value="5285810042919695066" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

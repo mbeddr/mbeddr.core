@@ -26,6 +26,9 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -482,6 +485,11 @@
               </node>
               <node concept="1rXfSq" id="4N5UlZSnX2G" role="37wK5m">
                 <ref role="37wK5l" node="EWig$gy6ok" resolve="getContext" />
+              </node>
+              <node concept="2ShNRf" id="2nzO3M_Rms5" role="37wK5m">
+                <node concept="HV5vD" id="2nzO3M_RmMJ" role="2ShVmc">
+                  <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                </node>
               </node>
             </node>
           </node>

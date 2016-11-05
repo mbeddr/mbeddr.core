@@ -22001,6 +22001,11 @@
               <node concept="37vLTw" id="7xtsKqWmbm0" role="37wK5m">
                 <ref role="3cqZAo" node="7xtsKqWl$YQ" resolve="interpreterContext" />
               </node>
+              <node concept="2ShNRf" id="2nzO3M_Rms5" role="37wK5m">
+                <node concept="HV5vD" id="2nzO3M_RmMJ" role="2ShVmc">
+                  <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
