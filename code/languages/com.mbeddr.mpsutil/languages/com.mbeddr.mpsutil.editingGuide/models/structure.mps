@@ -65,6 +65,11 @@
       <property role="IQ2nx" value="3909459679554886008" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="62Mww1ZUmzQ" role="1TKVEl">
+      <property role="IQ2nx" value="6967774512153192694" />
+      <property role="TrG5h" value="resultMessage" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="3p1cdQ7_d$Z" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="description" />
