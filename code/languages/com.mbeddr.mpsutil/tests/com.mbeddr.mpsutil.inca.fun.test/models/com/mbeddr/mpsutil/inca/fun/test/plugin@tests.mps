@@ -114,10 +114,7 @@
       <concept id="996292992024567127" name="com.mbeddr.mpsutil.inca.core.structure.ExpressionEvaluationValue" flags="ng" index="2k1_p_">
         <child id="996292992024567128" name="expression" index="2k1_pE" />
       </concept>
-      <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq">
-        <reference id="996292992028507459" name="pattern" index="2nKBpL" />
-        <child id="996292992028507462" name="arguments" index="2nKBpO" />
-      </concept>
+      <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq" />
       <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReference" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
@@ -127,6 +124,10 @@
       <concept id="266511528377428275" name="com.mbeddr.mpsutil.inca.core.structure.ParameterCommentTag" flags="ng" index="2MMnZx">
         <property id="266511528377428276" name="text" index="2MMnZA" />
         <reference id="266511528377428278" name="parameter" index="2MMnZ$" />
+      </concept>
+      <concept id="4074503452633891989" name="com.mbeddr.mpsutil.inca.core.structure.IPatternCall" flags="ng" index="1aOKZo">
+        <reference id="996292992028507459" name="pattern" index="2nKBpL" />
+        <child id="996292992028507462" name="arguments" index="2nKBpO" />
       </concept>
       <concept id="4530729936991344605" name="com.mbeddr.mpsutil.inca.core.structure.IPatternBody" flags="ng" index="1dubk2">
         <child id="4530729936991965471" name="contents" index="1dgzf0" />
@@ -337,7 +338,19 @@
             </node>
           </node>
         </node>
-        <node concept="1XdyHe" id="1suAdVkL5Md" role="1dgzf0" />
+        <node concept="34ocy7" id="3ybyOPMlXAs" role="1dgzf0">
+          <node concept="34sUYq" id="3ybyOPMlXYB" role="34ocs8">
+            <node concept="2k1GkI" id="3ybyOPMlXYD" role="34sUSb">
+              <node concept="2k1_uq" id="3ybyOPMlYNT" role="2nKVj6">
+                <ref role="2nKBpL" node="1suAdVkH3wY" resolve="getParameters" />
+                <node concept="30NkWi" id="3ybyOPMlZb1" role="2nKBpO">
+                  <ref role="XkjO9" node="1suAdVkGX3T" resolve="method" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1XdyHe" id="3ybyOPMlWKo" role="1dgzf0" />
         <node concept="1XdyHb" id="1suAdVkL63M" role="1dgzf0">
           <property role="1dubkF" value="and check that the parameter's type is the same as the class" />
         </node>

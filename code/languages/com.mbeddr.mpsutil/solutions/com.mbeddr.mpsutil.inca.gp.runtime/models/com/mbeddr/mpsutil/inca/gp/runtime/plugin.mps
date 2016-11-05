@@ -685,7 +685,7 @@
           <node concept="3cpWsn" id="5a8aBn447cS" role="3cpWs9">
             <property role="TrG5h" value="calls" />
             <node concept="2I9FWS" id="5a8aBn447cP" role="1tU5fm">
-              <ref role="2I9WkF" to="hqsm:RjyNapPtMC" resolve="PatternCall" />
+              <ref role="2I9WkF" to="hqsm:3ybyOPMm8il" resolve="IPatternCall" />
             </node>
             <node concept="2OqwBi" id="5a8aBn447cT" role="33vP2m">
               <node concept="37vLTw" id="5a8aBn447cU" role="2Oq$k0">
@@ -693,8 +693,8 @@
               </node>
               <node concept="2Rf3mk" id="5a8aBn447cV" role="2OqNvi">
                 <node concept="1xMEDy" id="5a8aBn447cW" role="1xVPHs">
-                  <node concept="chp4Y" id="5a8aBn447cX" role="ri$Ld">
-                    <ref role="cht4Q" to="hqsm:RjyNapPtMC" resolve="PatternCall" />
+                  <node concept="chp4Y" id="3ybyOPMmLI9" role="ri$Ld">
+                    <ref role="cht4Q" to="hqsm:3ybyOPMm8il" resolve="IPatternCall" />
                   </node>
                 </node>
               </node>
@@ -2728,7 +2728,7 @@
           <node concept="3cpWsn" id="3sUe9pq9wui" role="3cpWs9">
             <property role="TrG5h" value="patternCall" />
             <node concept="3Tqbb2" id="3sUe9pq9wuf" role="1tU5fm">
-              <ref role="ehGHo" to="hqsm:RjyNapPtMC" resolve="PatternCall" />
+              <ref role="ehGHo" to="hqsm:3ybyOPMm8il" resolve="IPatternCall" />
             </node>
             <node concept="2OqwBi" id="3sUe9pq9wuj" role="33vP2m">
               <node concept="37vLTw" id="3sUe9pq9wuk" role="2Oq$k0">

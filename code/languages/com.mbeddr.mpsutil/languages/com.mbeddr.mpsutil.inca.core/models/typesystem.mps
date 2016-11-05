@@ -1938,7 +1938,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="6WpUQi6Qn1g">
-    <property role="TrG5h" value="check_PatternCall" />
+    <property role="TrG5h" value="check_IPatternCall" />
     <property role="3GE5qa" value="constraints" />
     <node concept="3clFbS" id="6WpUQi6Qn6K" role="18ibNy">
       <node concept="3clFbJ" id="6WpUQi6QpJb" role="3cqZAp">
@@ -2006,7 +2006,7 @@
     </node>
     <node concept="1YaCAy" id="6WpUQi6Qn6M" role="1YuTPh">
       <property role="TrG5h" value="call" />
-      <ref role="1YaFvo" to="hqsm:RjyNapPtMC" resolve="PatternCall" />
+      <ref role="1YaFvo" to="hqsm:3ybyOPMm8il" resolve="IPatternCall" />
     </node>
   </node>
   <node concept="1YbPZF" id="6WpUQi6RlKm">
@@ -3056,7 +3056,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="1vNxmjr3L3z">
-    <property role="TrG5h" value="typeof_PatternCall" />
+    <property role="TrG5h" value="typeof_IPatternCall" />
     <property role="3GE5qa" value="constraints" />
     <node concept="3clFbS" id="1vNxmjr3L3$" role="18ibNy">
       <node concept="1Z5TYs" id="1vNxmjr3Mnx" role="3cqZAp">
@@ -3083,7 +3083,7 @@
     </node>
     <node concept="1YaCAy" id="1vNxmjr3L3A" role="1YuTPh">
       <property role="TrG5h" value="call" />
-      <ref role="1YaFvo" to="hqsm:RjyNapPtMC" resolve="PatternCall" />
+      <ref role="1YaFvo" to="hqsm:3ybyOPMm8il" resolve="IPatternCall" />
     </node>
   </node>
   <node concept="1YbPZF" id="3p0ky8Lj0Uf">

@@ -155,11 +155,6 @@
     <property role="3GE5qa" value="expression" />
     <property role="EcuMT" value="996292992024530460" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6fymoI4HZ4Q" role="1TKVEl">
-      <property role="TrG5h" value="undef" />
-      <property role="IQ2nx" value="7197413610253447478" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyi" id="3oMuSXR83Ly" role="1TKVEl">
       <property role="TrG5h" value="count" />
       <property role="IQ2nx" value="3905319682992782434" />
@@ -170,7 +165,7 @@
       <property role="20kJfa" value="call" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="996292992028393460" />
-      <ref role="20lvS9" to="hqsm:RjyNapPtMC" resolve="PatternCall" />
+      <ref role="20lvS9" to="hqsm:3ybyOPMm8il" resolve="IPatternCall" />
     </node>
     <node concept="PrWs8" id="1i65yRAQ7kN" role="PzmwI">
       <ref role="PrY4T" node="1i65yRAQ7jk" resolve="IExpression" />

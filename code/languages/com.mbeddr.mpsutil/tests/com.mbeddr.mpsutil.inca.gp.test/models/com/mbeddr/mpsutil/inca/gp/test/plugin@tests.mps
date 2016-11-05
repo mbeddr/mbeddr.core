@@ -180,11 +180,7 @@
       <concept id="996292992024566533" name="com.mbeddr.mpsutil.inca.core.structure.BoolValue" flags="ng" index="2k1_0R">
         <property id="996292992024566534" name="value" index="2k1_0O" />
       </concept>
-      <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq">
-        <property id="996292992028507456" name="transitive" index="2nKBpM" />
-        <reference id="996292992028507459" name="pattern" index="2nKBpL" />
-        <child id="996292992028507462" name="arguments" index="2nKBpO" />
-      </concept>
+      <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq" />
       <concept id="996292992024530443" name="com.mbeddr.mpsutil.inca.core.structure.CompareConstraint" flags="ng" index="2k1GkT">
         <property id="8396102296983865703" name="feature" index="2957JE" />
         <child id="8396102296983865629" name="right" index="2957Ig" />
@@ -218,6 +214,11 @@
         <reference id="8650544432874609807" name="pattern" index="Vdrjr" />
       </concept>
       <concept id="8650544432877557562" name="com.mbeddr.mpsutil.inca.core.structure.CountMatchesOperation" flags="ng" index="VqFXI" />
+      <concept id="4074503452633891989" name="com.mbeddr.mpsutil.inca.core.structure.null" flags="ng" index="1aOKZo">
+        <property id="996292992028507456" name="" index="2nKBpM" />
+        <reference id="996292992028507459" name="" index="2nKBpL" />
+        <child id="996292992028507462" name="" index="2nKBpO" />
+      </concept>
       <concept id="4530729936991344605" name="com.mbeddr.mpsutil.inca.core.structure.IPatternBody" flags="ng" index="1dubk2">
         <child id="4530729936991965471" name="contents" index="1dgzf0" />
       </concept>
