@@ -433,6 +433,14 @@
       <ref role="3uigEE" to="wyt6:~CharSequence" resolve="CharSequence" />
     </node>
   </node>
+  <node concept="Zd50a" id="1DVNPtFPBO5">
+    <property role="TrG5h" value="Default_OSX" />
+    <property role="Zd52Q" value="Mac OS X" />
+  </node>
+  <node concept="Zd50a" id="7A0HCuGlZXj">
+    <property role="TrG5h" value="Default_KDE" />
+    <property role="Zd52Q" value="Default for KDE" />
+  </node>
   <node concept="312cEu" id="62ABz02Sw2G">
     <property role="TrG5h" value="Recursion" />
     <node concept="2tJIrI" id="62ABz02Sw36" role="jymVt" />
@@ -492,16 +500,16 @@
           <node concept="3clFbS" id="5Os6JboLTGO" role="3clFbx">
             <node concept="2$JKZl" id="5Os6JboLWvE" role="3cqZAp">
               <node concept="3clFbS" id="5Os6JboLWvG" role="2LFqv$">
-                <node concept="3clFbF" id="5Os6JboLWzI" role="3cqZAp">
-                  <node concept="2OqwBi" id="5Os6JboLWzF" role="3clFbG">
-                    <node concept="10M0yZ" id="5Os6JboLWzG" role="2Oq$k0">
+                <node concept="3clFbF" id="5bWtNn1ncxE" role="3cqZAp">
+                  <node concept="2OqwBi" id="5bWtNn1ncxB" role="3clFbG">
+                    <node concept="10M0yZ" id="5bWtNn1ncxC" role="2Oq$k0">
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                       <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
-                    <node concept="liA8E" id="5Os6JboLWzH" role="2OqNvi">
+                    <node concept="liA8E" id="5bWtNn1ncxD" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="Xl_RD" id="5Os6JboLW$R" role="37wK5m">
-                        <property role="Xl_RC" value="Looping" />
+                      <node concept="Xl_RD" id="5bWtNn1ncyJ" role="37wK5m">
+                        <property role="Xl_RC" value="Logging" />
                       </node>
                     </node>
                   </node>
@@ -527,14 +535,6 @@
     </node>
     <node concept="2tJIrI" id="62ABz02Sw3e" role="jymVt" />
     <node concept="3Tm1VV" id="62ABz02Sw2H" role="1B3o_S" />
-  </node>
-  <node concept="Zd50a" id="1DVNPtFPBO5">
-    <property role="TrG5h" value="Default_OSX" />
-    <property role="Zd52Q" value="Mac OS X" />
-  </node>
-  <node concept="Zd50a" id="7A0HCuGlZXj">
-    <property role="TrG5h" value="Default_KDE" />
-    <property role="Zd52Q" value="Default for KDE" />
   </node>
 </model>
 

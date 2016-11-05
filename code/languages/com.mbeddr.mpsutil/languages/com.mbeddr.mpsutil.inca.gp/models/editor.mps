@@ -18,7 +18,6 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
@@ -58,14 +57,6 @@
       <concept id="1216308599511" name="jetbrains.mps.lang.editor.structure.PositionStyleClassItem" flags="ln" index="LD5Jc">
         <property id="1216308761668" name="position" index="LDHlv" />
       </concept>
-      <concept id="1136916919141" name="jetbrains.mps.lang.editor.structure.CellKeyMapItem" flags="lg" index="2PxR9H">
-        <child id="1136916998332" name="keystroke" index="2PyaAO" />
-        <child id="1136920925604" name="executeFunction" index="2PL9iG" />
-      </concept>
-      <concept id="1136916976737" name="jetbrains.mps.lang.editor.structure.CellKeyMapKeystroke" flags="ng" index="2Py5lD">
-        <property id="1136923970224" name="keycode" index="2PWKIS" />
-      </concept>
-      <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
       <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -77,10 +68,6 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
-      <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
-        <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
-        <child id="1136930944870" name="item" index="2QnnpI" />
-      </concept>
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
@@ -242,9 +229,6 @@
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
-      <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
-        <child id="1143224066849" name="insertedNode" index="HtI8F" />
-      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -335,34 +319,6 @@
       </node>
     </node>
   </node>
-  <node concept="325Ffw" id="3hiszdZGiGQ">
-    <property role="TrG5h" value="GPatternBody_AddPatternBody" />
-    <property role="3GE5qa" value="content" />
-    <ref role="1chiOs" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
-    <node concept="2PxR9H" id="3hiszdZGiGR" role="2QnnpI">
-      <node concept="2Py5lD" id="3hiszdZGiGS" role="2PyaAO">
-        <property role="2PWKIS" value="VK_ENTER" />
-      </node>
-      <node concept="2PzhpH" id="3hiszdZGiGT" role="2PL9iG">
-        <node concept="3clFbS" id="3hiszdZGiGU" role="2VODD2">
-          <node concept="3clFbF" id="8FTmV8m4kz" role="3cqZAp">
-            <node concept="2OqwBi" id="8FTmV8m4m1" role="3clFbG">
-              <node concept="0GJ7k" id="8FTmV8m4ky" role="2Oq$k0" />
-              <node concept="HtI8k" id="8FTmV8meoZ" role="2OqNvi">
-                <node concept="2ShNRf" id="8FTmV8mepZ" role="HtI8F">
-                  <node concept="3zrR0B" id="8FTmV8mz6P" role="2ShVmc">
-                    <node concept="3Tqbb2" id="8FTmV8mz6R" role="3zrR0E">
-                      <ref role="ehGHo" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1ERTnBTmrDp">
     <property role="3GE5qa" value="content" />
     <ref role="1XX52x" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
@@ -437,7 +393,7 @@
   </node>
   <node concept="24kQdi" id="RjyNapTDm0">
     <property role="3GE5qa" value="constraints" />
-    <ref role="1XX52x" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+    <ref role="1XX52x" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
     <node concept="3EZMnI" id="RjyNapTDm2" role="2wV5jI">
       <node concept="1iCGBv" id="RjyNapTDmc" role="3EZMnx">
         <ref role="1NtTu8" to="55iy:RjyNapTDhB" resolve="type" />
@@ -538,7 +494,7 @@
   </node>
   <node concept="24kQdi" id="RjyNaq440e">
     <property role="3GE5qa" value="constraints" />
-    <ref role="1XX52x" to="55iy:RjyNapPkSs" resolve="GraphPatternCompositionConstraint" />
+    <ref role="1XX52x" to="55iy:RjyNapPkSs" resolve="PatternCompositionConstraint" />
     <node concept="3EZMnI" id="RjyNaq440g" role="2wV5jI">
       <node concept="1kHk_G" id="nrkjVh6kOK" role="3EZMnx">
         <ref role="1NtTu8" to="55iy:RjyNaq43ZL" resolve="neg" />
@@ -701,12 +657,12 @@
               <node concept="3cpWsn" id="nrkjVh52o_" role="3cpWs9">
                 <property role="TrG5h" value="constraint" />
                 <node concept="3Tqbb2" id="nrkjVh52ox" role="1tU5fm">
-                  <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+                  <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
                 </node>
                 <node concept="2ShNRf" id="nrkjVh52p$" role="33vP2m">
                   <node concept="3zrR0B" id="nrkjVh52pj" role="2ShVmc">
                     <node concept="3Tqbb2" id="nrkjVh52pk" role="3zrR0E">
-                      <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+                      <ref role="ehGHo" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
                     </node>
                   </node>
                 </node>
@@ -771,7 +727,7 @@
   <node concept="1h_SRR" id="nrkjVh5NSl">
     <property role="3GE5qa" value="constraints" />
     <property role="TrG5h" value="GraphPatternPathExpressionConstraint_ActionMap" />
-    <ref role="1h_SK9" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+    <ref role="1h_SK9" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
     <node concept="1hA7zw" id="nrkjVh5NSm" role="1h_SK8">
       <property role="1hAc7j" value="backspace_action_id" />
       <node concept="1hAIg9" id="nrkjVh5NSn" role="1hA7z_">
@@ -1232,7 +1188,7 @@
   </node>
   <node concept="3p36aQ" id="3p0ky8L$q1m">
     <property role="3GE5qa" value="constraints" />
-    <ref role="aqKnT" to="55iy:RjyNapTDgY" resolve="GraphPatternPathExpressionConstraint" />
+    <ref role="aqKnT" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
   </node>
   <node concept="3p36aQ" id="3p0ky8LDqUd">
     <property role="3GE5qa" value="constraints" />

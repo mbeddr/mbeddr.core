@@ -144,7 +144,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.fun.runtime/com.mbeddr.mpsutil.inca.fun.runtime.msd" folder="inca.core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.gp.runtime/com.mbeddr.mpsutil.inca.gp.runtime.msd" folder="inca.core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.ui/com.mbeddr.mpsutil.inca.ui.msd" folder="inca.ui" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.wb/com.mbeddr.mpsutil.inca.wb.msd" folder="inca.core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.intentions.runtime/com.mbeddr.mpsutil.intentions.runtime.msd" folder="stable.intentions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter.richstring/com.mbeddr.mpsutil.javainterpreter.richstring.msd" folder="rest.richstring" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter/com.mbeddr.mpsutil.javainterpreter.msd" folder="staging.javainterpreter" />
