@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)</dependency>
         <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
+        <dependency reexport="false">1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -49,6 +50,8 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)" version="0" />
+        <module reference="1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)" version="0" />
+        <module reference="7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)" version="0" />
         <module reference="bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)" version="0" />
         <module reference="8c9a2720-9d21-4370-a226-819eb3e76e1e(com.mbeddr.mpsutil.inca.fun)" version="0" />
         <module reference="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)" version="0" />

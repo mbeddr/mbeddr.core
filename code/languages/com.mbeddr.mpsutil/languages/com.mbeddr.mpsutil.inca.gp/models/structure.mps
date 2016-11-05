@@ -164,8 +164,8 @@
     <node concept="PrWs8" id="nrkjVh51fX" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
-    <node concept="PrWs8" id="3p0ky8LiJhh" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:3p0ky8Li8px" resolve="IPathElementScopeProvider" />
+    <node concept="PrWs8" id="3ybyOPMBcB3" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:3ybyOPMBaDy" resolve="IPathExpressionLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPkSs">

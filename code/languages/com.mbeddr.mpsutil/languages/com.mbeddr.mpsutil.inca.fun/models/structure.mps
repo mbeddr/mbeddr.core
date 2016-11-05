@@ -126,8 +126,8 @@
     <node concept="PrWs8" id="3e1iAvwrDJc" role="PzmwI">
       <ref role="PrY4T" to="hqsm:1i65yRAWiCQ" resolve="IValue" />
     </node>
-    <node concept="PrWs8" id="3p0ky8Lj1n1" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:3p0ky8Li8px" resolve="IPathElementScopeProvider" />
+    <node concept="PrWs8" id="3ybyOPMBaGJ" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:3ybyOPMBaDy" resolve="IPathExpressionLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPtyj">
@@ -202,7 +202,7 @@
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
     <node concept="PrWs8" id="6$RZwFUrF6O" role="PrDN$">
-      <ref role="PrY4T" node="6$RZwFUruBE" resolve="ITransformable" />
+      <ref role="PrY4T" to="hqsm:6$RZwFUruBE" resolve="ITransformable" />
     </node>
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Ss">
@@ -337,7 +337,7 @@
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
     <node concept="PrWs8" id="6$RZwFUsv7u" role="PrDN$">
-      <ref role="PrY4T" node="6$RZwFUruBE" resolve="ITransformable" />
+      <ref role="PrY4T" to="hqsm:6$RZwFUruBE" resolve="ITransformable" />
     </node>
   </node>
   <node concept="1TIwiD" id="52HBLukNkCm">
@@ -492,11 +492,6 @@
     <node concept="PrWs8" id="4Z0VXz29EYM" role="PzmwI">
       <ref role="PrY4T" node="52HBLukNkpc" resolve="ICondition" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="6$RZwFUruBE">
-    <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="ITransformable" />
-    <property role="EcuMT" value="7581807820806154730" />
   </node>
   <node concept="1TIwiD" id="InJBIGIqot">
     <property role="3GE5qa" value="condition" />

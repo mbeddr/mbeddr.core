@@ -743,6 +743,9 @@
     <node concept="PrWs8" id="3p0ky8Likrm" role="PrDN$">
       <ref role="PrY4T" node="3p0ky8Li8px" resolve="IPathElementScopeProvider" />
     </node>
+    <node concept="PrWs8" id="3ybyOPMxNfb" role="PrDN$">
+      <ref role="PrY4T" node="6$RZwFUruBE" resolve="ITransformable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1i65yRATv5I">
     <property role="TrG5h" value="ITypeConstraintProvider" />
@@ -972,6 +975,19 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="996292992028507459" />
       <ref role="20lvS9" node="3VwoHXNAdmh" resolve="IPattern" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6$RZwFUruBE">
+    <property role="3GE5qa" value="misc" />
+    <property role="TrG5h" value="ITransformable" />
+    <property role="EcuMT" value="7581807820806154730" />
+  </node>
+  <node concept="PlHQZ" id="3ybyOPMBaDy">
+    <property role="EcuMT" value="4074503452638358114" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="IPathExpressionLike" />
+    <node concept="PrWs8" id="3ybyOPMBph8" role="PrDN$">
+      <ref role="PrY4T" node="3p0ky8Li8px" resolve="IPathElementScopeProvider" />
     </node>
   </node>
 </model>

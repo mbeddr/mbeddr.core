@@ -2827,6 +2827,20 @@
                       </node>
                       <node concept="9aQIb" id="6XVu9nz_rpD" role="9aQIa">
                         <node concept="3clFbS" id="6XVu9nz_rpE" role="9aQI4">
+                          <node concept="3cpWs8" id="3ybyOPMNRlK" role="3cqZAp">
+                            <node concept="3cpWsn" id="3ybyOPMNRlN" role="3cpWs9">
+                              <property role="TrG5h" value="message" />
+                              <node concept="17QB3L" id="3ybyOPMNRlI" role="1tU5fm" />
+                              <node concept="3cpWs3" id="3ybyOPMNRnq" role="33vP2m">
+                                <node concept="37vLTw" id="3ybyOPMNRnr" role="3uHU7w">
+                                  <ref role="3cqZAo" node="1ThF9Cw0X20" resolve="wrappedConstraints" />
+                                </node>
+                                <node concept="Xl_RD" id="3ybyOPMNRns" role="3uHU7B">
+                                  <property role="Xl_RC" value="Unsatisfiable constraints " />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="1Z5TYs" id="6XVu9nz_rGP" role="3cqZAp">
                             <node concept="mw_s8" id="6XVu9nz_rIH" role="1ZfhKB">
                               <node concept="2pJPEk" id="6XVu9nz_rID" role="mwGJk">
@@ -2834,8 +2848,8 @@
                                   <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
                                   <node concept="2pJxcG" id="6XVu9nz_wmP" role="2pJxcM">
                                     <ref role="2pJxcJ" to="tpd4:hfSilrU" resolve="errorText" />
-                                    <node concept="Xl_RD" id="6XVu9nz_woG" role="2pJxcZ">
-                                      <property role="Xl_RC" value="Unsatisfiable constraints" />
+                                    <node concept="37vLTw" id="3ybyOPMNRtB" role="2pJxcZ">
+                                      <ref role="3cqZAo" node="3ybyOPMNRlN" resolve="message" />
                                     </node>
                                   </node>
                                 </node>
