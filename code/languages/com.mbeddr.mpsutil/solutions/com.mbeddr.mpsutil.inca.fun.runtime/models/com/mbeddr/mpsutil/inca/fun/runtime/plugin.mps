@@ -12,6 +12,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
+    <import index="55iy" ref="r:6bb35df6-a651-4174-a533-ca7006eccec8(com.mbeddr.mpsutil.inca.gp.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -334,12 +335,12 @@
           <node concept="3cpWsn" id="7nEPFn_$UqJ" role="3cpWs9">
             <property role="TrG5h" value="element" />
             <node concept="3Tqbb2" id="7nEPFn_$UqE" role="1tU5fm">
-              <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
+              <ref role="ehGHo" to="55iy:3p0ky8Li2E$" resolve="PathElement" />
             </node>
             <node concept="2ShNRf" id="7nEPFn_$Wx_" role="33vP2m">
               <node concept="3zrR0B" id="7nEPFn_$Wxz" role="2ShVmc">
                 <node concept="3Tqbb2" id="7nEPFn_$Wx$" role="3zrR0E">
-                  <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
+                  <ref role="ehGHo" to="55iy:3p0ky8Li2E$" resolve="PathElement" />
                 </node>
               </node>
             </node>
@@ -481,12 +482,12 @@
                   <node concept="3cpWsn" id="7nEPFn__0nF" role="3cpWs9">
                     <property role="TrG5h" value="tmp" />
                     <node concept="3Tqbb2" id="7nEPFn__0nA" role="1tU5fm">
-                      <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
+                      <ref role="ehGHo" to="55iy:3p0ky8Li2E$" resolve="PathElement" />
                     </node>
                     <node concept="2ShNRf" id="7nEPFn__0yO" role="33vP2m">
                       <node concept="3zrR0B" id="7nEPFn__0wg" role="2ShVmc">
                         <node concept="3Tqbb2" id="7nEPFn__0wh" role="3zrR0E">
-                          <ref role="ehGHo" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
+                          <ref role="ehGHo" to="55iy:3p0ky8Li2E$" resolve="PathElement" />
                         </node>
                       </node>
                     </node>

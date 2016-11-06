@@ -15,10 +15,10 @@
     <import index="ebqt" ref="r:17207093-9cf4-4f01-9c48-e6e0146d6087(com.mbeddr.mpsutil.inca.fun.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="t4sj" ref="r:fc920dcd-3130-40cb-9a1b-95b7ec234932(com.mbeddr.mpsutil.inca.fun.runtime.plugin)" />
-    <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" />
     <import index="cj1d" ref="r:dadf47ad-7e8d-4c91-82b3-0e585f24ae05(com.mbeddr.mpsutil.inca.core.generator.template.main@generator)" />
     <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
-    <import index="55iy" ref="r:6bb35df6-a651-4174-a533-ca7006eccec8(com.mbeddr.mpsutil.inca.gp.structure)" implicit="true" />
+    <import index="55iy" ref="r:6bb35df6-a651-4174-a533-ca7006eccec8(com.mbeddr.mpsutil.inca.gp.structure)" />
+    <import index="km7o" ref="r:bc65b41d-9fbe-4fcb-85d9-7844799c6ae6(com.mbeddr.mpsutil.inca.gp.behavior)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -533,7 +533,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3d69XTNdejk" role="2OqNvi">
-                          <ref role="37wK5l" to="gcg1:6$RZwFUruG4" resolve="transform" />
+                          <ref role="37wK5l" to="km7o:6$RZwFUruG4" resolve="transform" />
                           <node concept="1PxgMI" id="3d69XTNdfSQ" role="37wK5m">
                             <ref role="1m5ApE" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
                             <node concept="2GrUjf" id="3d69XTNdel3" role="1m5AlR">
@@ -785,11 +785,10 @@
                         </node>
                         <node concept="2OqwBi" id="W0eiDpnh3T" role="33vP2m">
                           <node concept="35c_gC" id="W0eiDpnh3U" role="2Oq$k0">
-                            <ref role="35c_gD" to="hqsm:6$RZwFUruBE" resolve="ITransformable" />
+                            <ref role="35c_gD" to="55iy:6$RZwFUruBE" resolve="ITransformable" />
                           </node>
                           <node concept="2qgKlT" id="W0eiDpnh3V" role="2OqNvi">
-                            <ref role="37wK5l" to="gcg1:6$RZwFUrH3O" resolve="newTemporaryVariable" />
-                            <node concept="10Nm6u" id="W0eiDpnh3W" role="37wK5m" />
+                            <ref role="37wK5l" to="km7o:6$RZwFUrH3O" resolve="newTemporaryVariable" />
                           </node>
                         </node>
                       </node>
@@ -864,10 +863,10 @@
                         </node>
                         <node concept="2OqwBi" id="W0eiDpnlUO" role="33vP2m">
                           <node concept="35c_gC" id="W0eiDpnlUP" role="2Oq$k0">
-                            <ref role="35c_gD" to="hqsm:6$RZwFUruBE" resolve="ITransformable" />
+                            <ref role="35c_gD" to="55iy:6$RZwFUruBE" resolve="ITransformable" />
                           </node>
                           <node concept="2qgKlT" id="W0eiDpnlUQ" role="2OqNvi">
-                            <ref role="37wK5l" to="gcg1:5te8vJ2IvxO" resolve="newVariableReference" />
+                            <ref role="37wK5l" to="km7o:5te8vJ2IvxO" resolve="newVariableReference" />
                             <node concept="37vLTw" id="W0eiDpnlUR" role="37wK5m">
                               <ref role="3cqZAo" node="W0eiDpnh3S" resolve="variable" />
                             </node>

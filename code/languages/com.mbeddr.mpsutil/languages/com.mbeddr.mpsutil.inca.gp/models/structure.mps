@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -301,6 +301,23 @@
     <node concept="PrWs8" id="4YtCEG_OXNk" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3p0ky8Li2E$">
+    <property role="EcuMT" value="3909214783366769316" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="PathElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3p0ky8Li2E_" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
+    </node>
+    <node concept="PrWs8" id="4hcq8yM_HjZ" role="PzmwI">
+      <ref role="PrY4T" node="6$RZwFUruBE" resolve="ITransformable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6$RZwFUruBE">
+    <property role="3GE5qa" value="misc" />
+    <property role="TrG5h" value="ITransformable" />
+    <property role="EcuMT" value="7581807820806154730" />
   </node>
 </model>
 

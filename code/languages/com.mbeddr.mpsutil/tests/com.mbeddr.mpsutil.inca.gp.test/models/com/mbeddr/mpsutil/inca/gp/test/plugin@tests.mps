@@ -173,7 +173,6 @@
       </concept>
     </language>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
-      <concept id="3909214783366769316" name="com.mbeddr.mpsutil.inca.core.structure.PathElement" flags="ng" index="727y6" />
       <concept id="3909214783373897140" name="com.mbeddr.mpsutil.inca.core.structure.EnumValue" flags="ng" index="7XbYm">
         <reference id="6973815483243564601" name="enum" index="3f7vo2" />
       </concept>
@@ -214,10 +213,10 @@
         <reference id="8650544432874609807" name="pattern" index="Vdrjr" />
       </concept>
       <concept id="8650544432877557562" name="com.mbeddr.mpsutil.inca.core.structure.CountMatchesOperation" flags="ng" index="VqFXI" />
-      <concept id="4074503452633891989" name="com.mbeddr.mpsutil.inca.core.structure.null" flags="ng" index="1aOKZo">
-        <property id="996292992028507456" name="" index="2nKBpM" />
-        <reference id="996292992028507459" name="" index="2nKBpL" />
-        <child id="996292992028507462" name="" index="2nKBpO" />
+      <concept id="4074503452633891989" name="com.mbeddr.mpsutil.inca.core.structure.IPatternCall" flags="ng" index="1aOKZo">
+        <property id="996292992028507456" name="transitive" index="2nKBpM" />
+        <reference id="996292992028507459" name="pattern" index="2nKBpL" />
+        <child id="996292992028507462" name="arguments" index="2nKBpO" />
       </concept>
       <concept id="4530729936991344605" name="com.mbeddr.mpsutil.inca.core.structure.IPatternBody" flags="ng" index="1dubk2">
         <child id="4530729936991965471" name="contents" index="1dgzf0" />
@@ -259,6 +258,7 @@
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
     </language>
     <language id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp">
+      <concept id="3909214783366769316" name="" flags="ng" index="727y6" />
       <concept id="996292992024530460" name="com.mbeddr.mpsutil.inca.gp.structure.PatternCompositionConstraint" flags="ng" index="2k1GkI">
         <child id="996292992028393460" name="call" index="2nKVj6" />
       </concept>

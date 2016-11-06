@@ -8,6 +8,7 @@
   <imports>
     <import index="ebqt" ref="r:17207093-9cf4-4f01-9c48-e6e0146d6087(com.mbeddr.mpsutil.inca.fun.structure)" />
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="55iy" ref="r:6bb35df6-a651-4174-a533-ca7006eccec8(com.mbeddr.mpsutil.inca.gp.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -394,7 +395,7 @@
                   <node concept="otxO1" id="3oMuSXR8wWD" role="2Oq$k0" />
                   <node concept="3O6GUB" id="3oMuSXR8xfu" role="2OqNvi">
                     <node concept="chp4Y" id="3p0ky8Lnq2D" role="3QVz_e">
-                      <ref role="cht4Q" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
+                      <ref role="cht4Q" to="55iy:3p0ky8Li2E$" resolve="PathElement" />
                     </node>
                   </node>
                 </node>

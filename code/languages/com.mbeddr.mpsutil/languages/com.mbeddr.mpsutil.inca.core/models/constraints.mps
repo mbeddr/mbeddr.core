@@ -193,9 +193,6 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -2158,50 +2155,6 @@
                 <node concept="3cpWsa" id="4YtCEG_ReEt" role="3uHU7w">
                   <ref role="3cqZAo" node="2pPw_DEkt0t" resolve="simpleNumber" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3p0ky8LilHB">
-    <property role="3GE5qa" value="constraints" />
-    <ref role="1M2myG" to="hqsm:3p0ky8Li2E$" resolve="PathElement" />
-    <node concept="1N5Pfh" id="3p0ky8LilHC" role="1Mr941">
-      <ref role="1N5Vy1" to="hqsm:1ERTnBTmuSL" resolve="interfacePart" />
-      <node concept="1MUpDS" id="3p0ky8LilHI" role="1N6uqs">
-        <node concept="3clFbS" id="3p0ky8LilHK" role="2VODD2">
-          <node concept="3cpWs6" id="3p0ky8Litbw" role="3cqZAp">
-            <node concept="2OqwBi" id="3p0ky8LiAXZ" role="3cqZAk">
-              <node concept="2OqwBi" id="3p0ky8Liv1S" role="2Oq$k0">
-                <node concept="21POm0" id="3p0ky8LitdD" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="3p0ky8LiwSH" role="2OqNvi">
-                  <node concept="1xMEDy" id="3p0ky8LiwSJ" role="1xVPHs">
-                    <node concept="chp4Y" id="3p0ky8LiyQj" role="ri$Ld">
-                      <ref role="cht4Q" to="hqsm:3p0ky8Li8px" resolve="IPathElementScopeProvider" />
-                    </node>
-                  </node>
-                  <node concept="1xIGOp" id="3p0ky8Li$QP" role="1xVPHs" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="3p0ky8LiCM9" role="2OqNvi">
-                <ref role="37wK5l" to="gcg1:3p0ky8LikqH" resolve="getScope" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="Bn3R3" id="3p0ky8LiFsf" role="Bn3R6">
-        <node concept="3clFbS" id="3p0ky8LiFsg" role="2VODD2">
-          <node concept="3cpWs6" id="1ERTnBTmv5v" role="3cqZAp">
-            <node concept="2OqwBi" id="1ERTnBTmv5w" role="3cqZAk">
-              <node concept="35c_gC" id="1ERTnBTmv5x" role="2Oq$k0">
-                <ref role="35c_gD" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
-              </node>
-              <node concept="2qgKlT" id="1ERTnBTmv5y" role="2OqNvi">
-                <ref role="37wK5l" to="gcg1:1ERTnBTmyer" resolve="getInterfacePartName" />
-                <node concept="Bn53e" id="3C7pxOr4s4H" role="37wK5m" />
               </node>
             </node>
           </node>
