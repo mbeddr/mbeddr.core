@@ -1456,18 +1456,22 @@
                 </node>
                 <node concept="liA8E" id="mbIjfCmfym" role="2OqNvi">
                   <ref role="37wK5l" to="6a0m:~PBody.newConstantVariable(java.lang.Object):org.eclipse.viatra.query.runtime.matchers.psystem.PVariable" resolve="newConstantVariable" />
-                  <node concept="Xl_RD" id="4YtCEG_UDgF" role="37wK5m">
-                    <property role="Xl_RC" value="value" />
-                    <node concept="17Uvod" id="4YtCEG_UDls" role="lGtFl">
-                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                      <property role="2qtEX9" value="value" />
-                      <node concept="3zFVjK" id="4YtCEG_UDlt" role="3zH0cK">
-                        <node concept="3clFbS" id="4YtCEG_UDlu" role="2VODD2">
-                          <node concept="3cpWs6" id="4YtCEG_UDv7" role="3cqZAp">
-                            <node concept="2OqwBi" id="4YtCEG_UDGy" role="3cqZAk">
-                              <node concept="30H73N" id="4YtCEG_UDvl" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="4YtCEG_UDUz" role="2OqNvi">
-                                <ref role="3TsBF5" to="hqsm:RjyNapPtyQ" resolve="value" />
+                  <node concept="2YIFZM" id="6AFedOH$Xnc" role="37wK5m">
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <node concept="Xl_RD" id="6AFedOH$Xuy" role="37wK5m">
+                      <property role="Xl_RC" value="value" />
+                      <node concept="17Uvod" id="6AFedOH$XHx" role="lGtFl">
+                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                        <property role="2qtEX9" value="value" />
+                        <node concept="3zFVjK" id="6AFedOH$XHy" role="3zH0cK">
+                          <node concept="3clFbS" id="6AFedOH$XHz" role="2VODD2">
+                            <node concept="3cpWs6" id="6AFedOH$XWQ" role="3cqZAp">
+                              <node concept="2OqwBi" id="6AFedOH$Ycf" role="3cqZAk">
+                                <node concept="30H73N" id="6AFedOH$XX4" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="6AFedOH$Yqg" role="2OqNvi">
+                                  <ref role="3TsBF5" to="hqsm:RjyNapPtyQ" resolve="value" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1479,6 +1483,83 @@
                 <node concept="raruj" id="mbIjfCmfC6" role="lGtFl" />
               </node>
               <node concept="15s5l7" id="6$TCdl684bo" role="lGtFl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="6AFedOH$Wec" role="30HLyM">
+        <node concept="3clFbS" id="6AFedOH$Wed" role="2VODD2">
+          <node concept="3cpWs6" id="6AFedOH$Wwe" role="3cqZAp">
+            <node concept="2OqwBi" id="6AFedOH$WIZ" role="3cqZAk">
+              <node concept="30H73N" id="6AFedOH$Wws" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6AFedOH$X9q" role="2OqNvi">
+                <ref role="37wK5l" to="gcg1:4YtCEG_U$Ut" resolve="isInteger" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="6AFedOHBaDW" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hqsm:RjyNapPtyP" resolve="NumberValue" />
+      <node concept="1Koe21" id="6AFedOHBaDX" role="1lVwrX">
+        <node concept="3clFb_" id="6AFedOHBaDY" role="1Koe22">
+          <property role="TrG5h" value="genMethod" />
+          <node concept="3cqZAl" id="6AFedOHBaDZ" role="3clF45" />
+          <node concept="3Tm1VV" id="6AFedOHBaE0" role="1B3o_S" />
+          <node concept="3clFbS" id="6AFedOHBaE1" role="3clF47">
+            <node concept="3cpWs8" id="6AFedOHBaE2" role="3cqZAp">
+              <node concept="3cpWsn" id="6AFedOHBaE3" role="3cpWs9">
+                <property role="TrG5h" value="body" />
+                <node concept="3uibUv" id="6AFedOHBaE4" role="1tU5fm">
+                  <ref role="3uigEE" to="6a0m:~PBody" resolve="PBody" />
+                </node>
+                <node concept="10Nm6u" id="6AFedOHBaE5" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6AFedOHBaE6" role="3cqZAp">
+              <node concept="2OqwBi" id="6AFedOHBaE7" role="3clFbG">
+                <node concept="37vLTw" id="6AFedOHBaE8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6AFedOHBaE3" resolve="body" />
+                </node>
+                <node concept="liA8E" id="6AFedOHBaE9" role="2OqNvi">
+                  <ref role="37wK5l" to="6a0m:~PBody.newConstantVariable(java.lang.Object):org.eclipse.viatra.query.runtime.matchers.psystem.PVariable" resolve="newConstantVariable" />
+                  <node concept="Xl_RD" id="6AFedOHBaEb" role="37wK5m">
+                    <property role="Xl_RC" value="value" />
+                    <node concept="17Uvod" id="6AFedOHBaEc" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="6AFedOHBaEd" role="3zH0cK">
+                        <node concept="3clFbS" id="6AFedOHBaEe" role="2VODD2">
+                          <node concept="3cpWs6" id="6AFedOHBaEf" role="3cqZAp">
+                            <node concept="2OqwBi" id="6AFedOHBaEg" role="3cqZAk">
+                              <node concept="30H73N" id="6AFedOHBaEh" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="6AFedOHBaEi" role="2OqNvi">
+                                <ref role="3TsBF5" to="hqsm:RjyNapPtyQ" resolve="value" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="raruj" id="6AFedOHBaEj" role="lGtFl" />
+              </node>
+              <node concept="15s5l7" id="6AFedOHBaEk" role="lGtFl" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="6AFedOHBaEl" role="30HLyM">
+        <node concept="3clFbS" id="6AFedOHBaEm" role="2VODD2">
+          <node concept="3cpWs6" id="6AFedOHBaEn" role="3cqZAp">
+            <node concept="2OqwBi" id="6AFedOHBaEo" role="3cqZAk">
+              <node concept="30H73N" id="6AFedOHBaEp" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6AFedOHBbpR" role="2OqNvi">
+                <ref role="37wK5l" to="gcg1:4YtCEG_Uymr" resolve="isDouble" />
+              </node>
             </node>
           </node>
         </node>
@@ -1562,22 +1643,18 @@
                 </node>
                 <node concept="liA8E" id="mbIjfCoM86" role="2OqNvi">
                   <ref role="37wK5l" to="6a0m:~PBody.newConstantVariable(java.lang.Object):org.eclipse.viatra.query.runtime.matchers.psystem.PVariable" resolve="newConstantVariable" />
-                  <node concept="2YIFZM" id="5Kgle5Pg5M6" role="37wK5m">
-                    <ref role="37wK5l" to="wyt6:~Boolean.toString(boolean):java.lang.String" resolve="toString" />
-                    <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
-                    <node concept="3clFbT" id="mbIjfCoMs6" role="37wK5m">
-                      <property role="3clFbU" value="false" />
-                      <node concept="17Uvod" id="mbIjfCoMtW" role="lGtFl">
-                        <property role="2qtEX9" value="value" />
-                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123137/1068580123138" />
-                        <node concept="3zFVjK" id="mbIjfCoMtX" role="3zH0cK">
-                          <node concept="3clFbS" id="mbIjfCoMtY" role="2VODD2">
-                            <node concept="3cpWs6" id="4YtCEG_UEQk" role="3cqZAp">
-                              <node concept="2OqwBi" id="4YtCEG_UEQl" role="3cqZAk">
-                                <node concept="30H73N" id="4YtCEG_UEQm" role="2Oq$k0" />
-                                <node concept="3TrcHB" id="4YtCEG_UEQn" role="2OqNvi">
-                                  <ref role="3TsBF5" to="hqsm:RjyNapPtG6" resolve="value" />
-                                </node>
+                  <node concept="3clFbT" id="mbIjfCoMs6" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                    <node concept="17Uvod" id="mbIjfCoMtW" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123137/1068580123138" />
+                      <node concept="3zFVjK" id="mbIjfCoMtX" role="3zH0cK">
+                        <node concept="3clFbS" id="mbIjfCoMtY" role="2VODD2">
+                          <node concept="3cpWs6" id="4YtCEG_UEQk" role="3cqZAp">
+                            <node concept="2OqwBi" id="4YtCEG_UEQl" role="3cqZAk">
+                              <node concept="30H73N" id="4YtCEG_UEQm" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="4YtCEG_UEQn" role="2OqNvi">
+                                <ref role="3TsBF5" to="hqsm:RjyNapPtG6" resolve="value" />
                               </node>
                             </node>
                           </node>

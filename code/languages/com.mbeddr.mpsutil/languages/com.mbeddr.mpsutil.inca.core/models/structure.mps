@@ -80,7 +80,7 @@
     <property role="3GE5qa" value="content" />
     <property role="EcuMT" value="4530729936991344017" />
     <node concept="1TJgyi" id="3VwoHXO8uzg" role="1TKVEl">
-      <property role="TrG5h" value="private" />
+      <property role="TrG5h" value="helper" />
       <property role="IQ2nx" value="4530729937000327376" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
@@ -866,6 +866,8 @@
     <property role="3GE5qa" value="comment" />
     <property role="TrG5h" value="ParameterCommentTag" />
     <property role="EcuMT" value="266511528377428275" />
+    <property role="34LRSv" value="@param" />
+    <property role="R4oN_" value="parameter reference" />
     <ref role="1TJDcQ" to="m373:4CW56HZFI4X" resolve="BaseBlockDocTag" />
     <node concept="1TJgyj" id="eMPHaLuU$Q" role="1TKVEi">
       <property role="20lmBu" value="reference" />

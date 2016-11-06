@@ -352,7 +352,7 @@
     <ref role="1XX52x" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
     <node concept="3EZMnI" id="RjyNapPkO9" role="2wV5jI">
       <node concept="1kHk_G" id="7lNkc6MvDXt" role="3EZMnx">
-        <ref role="1NtTu8" to="hqsm:3VwoHXO8uzg" resolve="private" />
+        <ref role="1NtTu8" to="hqsm:3VwoHXO8uzg" resolve="helper" />
       </node>
       <node concept="3F0ifn" id="RjyNapPkOg" role="3EZMnx">
         <property role="3F0ifm" value="def" />
@@ -843,6 +843,7 @@
         <property role="3F0ifm" value="instanceOf" />
       </node>
       <node concept="1iCGBv" id="52HBLukNpLi" role="3EZMnx">
+        <property role="1cu_pB" value="2" />
         <ref role="1NtTu8" to="ebqt:52HBLukNpIr" resolve="type" />
         <node concept="1sVBvm" id="52HBLukNpLk" role="1sWHZn">
           <node concept="3F0A7n" id="52HBLukNpLy" role="2wV5jI">

@@ -12,24 +12,16 @@
       <sourceRoot location="lib/org.eclipse.emf.ecore_2.12.0.v20160420-0247.jar" />
       <sourceRoot location="lib/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar" />
       <sourceRoot location="lib/org.eclipse.osgi_3.10.102.v20160118-1700.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm.source_1.5.0.201610211039.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.5.0.201610211039.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.5.0.201611061830.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.5.0.201611061830.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -40,24 +32,16 @@
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore_2.12.0.v20160420-0247.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.osgi_3.10.102.v20160118-1700.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm.source_1.5.0.201610211039.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.5.0.201610211039.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.5.0.201611061830.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.5.0.201611061830.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
