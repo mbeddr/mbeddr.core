@@ -596,10 +596,22 @@
         <ref role="2v9HqP" node="2jAdSzWmtui" resolve="_070_c_level_statemachine_harness" />
       </node>
       <node concept="2v9HqM" id="ogNGNPr4pi" role="2eOfOg">
-        <ref role="2v9HqP" node="ogNGNPpGEb" resolve="_080_avl_external_c_code_harness" />
+        <ref role="2v9HqP" node="ogNGNPpGEb" resolve="_081_avl_external_c_code_harness" />
       </node>
       <node concept="2v9HqM" id="ogNGNPr4q5" role="2eOfOg">
-        <ref role="2v9HqP" node="ogNGNPpGFR" resolve="_080_avl_tree" />
+        <ref role="2v9HqP" node="ogNGNPpGFR" resolve="_081_avl_tree" />
+      </node>
+      <node concept="2v9HqM" id="3RK4Y9HGmqp" role="2eOfOg">
+        <ref role="2v9HqP" node="ogNGNPXMnh" resolve="_080_avl_tree" />
+      </node>
+      <node concept="2v9HqM" id="3RK4Y9HGmm_" role="2eOfOg">
+        <ref role="2v9HqP" node="3RK4Y9HGgt7" resolve="_080_avl_harness" />
+      </node>
+      <node concept="2v9HqM" id="3RK4Y9HHsJ1" role="2eOfOg">
+        <ref role="2v9HqP" node="3RK4Y9HHl6T" resolve="_080_malloc_stubs" />
+      </node>
+      <node concept="2v9HqM" id="3RK4Y9HHsJ2" role="2eOfOg">
+        <ref role="2v9HqP" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
       </node>
       <node concept="2v9HqM" id="7zW9XauG92E" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
@@ -1315,8 +1327,11 @@
     <node concept="3GEVxB" id="2jAdSzWmvxF" role="3W6d8T">
       <ref role="3GEb4d" node="2jAdSzWmtui" resolve="_070_c_level_statemachine_harness" />
     </node>
+    <node concept="3GEVxB" id="3RK4Y9HGmm5" role="3W6d8T">
+      <ref role="3GEb4d" node="3RK4Y9HGgt7" resolve="_080_avl_harness" />
+    </node>
     <node concept="3GEVxB" id="ogNGNPr4oY" role="3W6d8T">
-      <ref role="3GEb4d" node="ogNGNPpGEb" resolve="_080_avl_external_c_code_harness" />
+      <ref role="3GEb4d" node="ogNGNPpGEb" resolve="_081_avl_external_c_code_harness" />
     </node>
     <node concept="1nvAUE" id="1yZWpD4x5Ed" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
@@ -1492,6 +1507,21 @@
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="2jAdSzWmtuP" resolve="_070_c_level_statemachine_harness" />
     </node>
+    <node concept="1nvAUJ" id="3RK4Y9HGmwr" role="3V$2$K">
+      <property role="2lelRm" value="true" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2lUHrg" value="5" />
+      <ref role="3V$Cn$" node="3RK4Y9HGgtn" resolve="_080_avlVerificationCase" />
+    </node>
     <node concept="1nvAUJ" id="ogNGNPr4sy" role="3V$2$K">
       <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="true" />
@@ -1505,7 +1535,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2lUHrg" value="4" />
-      <ref role="3V$Cn$" node="ogNGNPpGEU" resolve="_080_avlVerificationCase" />
+      <ref role="3V$Cn$" node="ogNGNPpGEU" resolve="_081_avlVerificationCase" />
       <node concept="3NXOOs" id="ogNGNPs8um" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
@@ -8869,7 +8899,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="ogNGNPpGEb">
-    <property role="TrG5h" value="_080_avl_external_c_code_harness" />
+    <property role="TrG5h" value="_081_avl_external_c_code_harness" />
     <node concept="1S7NMz" id="ogNGNPqPUk" role="N3F5h">
       <property role="TrG5h" value="insertedKeys" />
       <node concept="3J0A42" id="ogNGNPqQgm" role="2C2TGm">
@@ -8903,7 +8933,7 @@
       <property role="TrG5h" value="empty_1478380837800_34" />
     </node>
     <node concept="N3Fnx" id="ogNGNPpGEU" role="N3F5h">
-      <property role="TrG5h" value="_080_avlVerificationCase" />
+      <property role="TrG5h" value="_081_avlVerificationCase" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="ogNGNPpGEW" role="3XIRFX">
         <node concept="3XIRlf" id="ogNGNPqDXs" role="3XIRFZ">
@@ -9001,6 +9031,12 @@
                   </node>
                   <node concept="3XIRlf" id="ogNGNPqRW9" role="3XIRFZ">
                     <property role="TrG5h" value="root" />
+                    <node concept="3O_q_g" id="ogNGNPqS06" role="3XIe9u">
+                      <ref role="3O_q_h" node="ogNGNPqAkl" resolve="avl_tree_root_node" />
+                      <node concept="3ZVu4v" id="ogNGNPqS07" role="3O_q_j">
+                        <ref role="3ZVs_2" node="ogNGNPqDXs" resolve="myTree" />
+                      </node>
+                    </node>
                     <node concept="3wxxNl" id="ogNGNPqS04" role="2C2TGm">
                       <property role="2caQfQ" value="false" />
                       <property role="2c7vTL" value="false" />
@@ -9008,12 +9044,6 @@
                         <property role="2caQfQ" value="false" />
                         <property role="2c7vTL" value="false" />
                         <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
-                      </node>
-                    </node>
-                    <node concept="3O_q_g" id="ogNGNPqS06" role="3XIe9u">
-                      <ref role="3O_q_h" node="ogNGNPqAkl" resolve="avl_tree_root_node" />
-                      <node concept="3ZVu4v" id="ogNGNPqS07" role="3O_q_j">
-                        <ref role="3ZVs_2" node="ogNGNPqDXs" resolve="myTree" />
                       </node>
                     </node>
                   </node>
@@ -9042,15 +9072,15 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3XIRlf" id="ogNGNPqUnN" role="3XIRFZ">
+                  <node concept="3XIRlf" id="3RK4Y9I4o5C" role="3XIRFZ">
                     <property role="TrG5h" value="leftHight" />
-                    <node concept="26Vqph" id="ogNGNPqUxx" role="2C2TGm">
+                    <node concept="26Vqph" id="3RK4Y9I4o5G" role="2C2TGm">
                       <property role="2caQfQ" value="false" />
                       <property role="2c7vTL" value="false" />
                     </node>
-                    <node concept="3O_q_g" id="ogNGNPqUxy" role="3XIe9u">
+                    <node concept="3O_q_g" id="3RK4Y9I4o5E" role="3XIe9u">
                       <ref role="3O_q_h" node="ogNGNPqAl2" resolve="avl_tree_subtree_height" />
-                      <node concept="3ZVu4v" id="ogNGNPu$K0" role="3O_q_j">
+                      <node concept="3ZVu4v" id="3RK4Y9I4o5I" role="3O_q_j">
                         <ref role="3ZVs_2" node="ogNGNPu$AL" resolve="leftSubTree" />
                       </node>
                     </node>
@@ -9082,15 +9112,15 @@
                   </node>
                   <node concept="3XIRlf" id="ogNGNPqVnv" role="3XIRFZ">
                     <property role="TrG5h" value="rightHight" />
-                    <node concept="26Vqph" id="ogNGNPqVnw" role="2C2TGm">
-                      <property role="2caQfQ" value="false" />
-                      <property role="2c7vTL" value="false" />
-                    </node>
                     <node concept="3O_q_g" id="ogNGNPqVnx" role="3XIe9u">
                       <ref role="3O_q_h" node="ogNGNPqAl2" resolve="avl_tree_subtree_height" />
                       <node concept="3ZVu4v" id="ogNGNPu_6g" role="3O_q_j">
                         <ref role="3ZVs_2" node="ogNGNPu$X1" resolve="rightSubTree" />
                       </node>
+                    </node>
+                    <node concept="26Vqph" id="ogNGNPqVnw" role="2C2TGm">
+                      <property role="2caQfQ" value="false" />
+                      <property role="2c7vTL" value="false" />
                     </node>
                   </node>
                   <node concept="Y9XUq" id="ogNGNPqWq1" role="3XIRFZ">
@@ -9101,7 +9131,7 @@
                       <node concept="2zI4tQ" id="ogNGNPr0XR" role="3TlMhI">
                         <node concept="2BOcil" id="ogNGNPqYMx" role="2zI4uq">
                           <node concept="3ZVu4v" id="ogNGNPqWra" role="3TlMhI">
-                            <ref role="3ZVs_2" node="ogNGNPqUnN" resolve="leftHight" />
+                            <ref role="3ZVs_2" node="3RK4Y9I4o5C" resolve="leftHight" />
                           </node>
                           <node concept="3ZVu4v" id="ogNGNPqWSU" role="3TlMhJ">
                             <ref role="3ZVs_2" node="ogNGNPqVnv" resolve="rightHight" />
@@ -9247,14 +9277,14 @@
       </node>
     </node>
     <node concept="3GEVxB" id="ogNGNPqDXn" role="2OODSX">
-      <ref role="3GEb4d" node="ogNGNPpGFR" resolve="_080_avl_tree" />
+      <ref role="3GEb4d" node="ogNGNPpGFR" resolve="_081_avl_tree" />
     </node>
     <node concept="3GEVxB" id="ogNGNPqZT3" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" resolve="math" />
     </node>
   </node>
   <node concept="rcWEw" id="ogNGNPpGFR">
-    <property role="TrG5h" value="_080_avl_tree" />
+    <property role="TrG5h" value="_081_avl_tree" />
     <node concept="rcWE1" id="ogNGNPpGFS" role="rcWEr">
       <property role="rcWEL" value="&quot;..\..\..\..\..\external_c_files\avl-tree.h&quot;" />
     </node>
@@ -9870,6 +9900,4617 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="ogNGNPXMnh">
+    <property role="TrG5h" value="_080_avl_tree" />
+    <node concept="3GEVxB" id="ogNGNPXMYZ" role="2OODSX">
+      <property role="3GEa6x" value="false" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
+    </node>
+    <node concept="3GEVxB" id="3RK4Y9HHmGw" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
+    </node>
+    <node concept="3GEVxB" id="3RK4Y9HHmwf" role="2OODSX">
+      <ref role="3GEb4d" node="3RK4Y9HHl6T" resolve="_080_malloc_stubs" />
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HGdSQ" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436608568_1" />
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HGeYT" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436610375_2" />
+    </node>
+    <node concept="2DPCBB" id="ogNGNPXRkj" role="N3F5h">
+      <property role="TrG5h" value="AVL_TREE_NULL" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2BPB98" id="ogNGNPXMol" role="2DQcEM">
+        <node concept="1S8S4T" id="ogNGNPXMop" role="1_9fRO">
+          <node concept="3wxxNl" id="ogNGNPXMon" role="1S8S4N">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="19Rifw" id="ogNGNPXMom" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="ogNGNPXMoo" role="1S8S4V">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHk0h" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446289963_5" />
+    </node>
+    <node concept="1AkAjs" id="ogNGNPXMo$" role="N3F5h">
+      <property role="TrG5h" value="a_AVLTreeNodeSide" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1AkAjq" id="ogNGNPXMo_" role="1AkAjA">
+        <property role="TrG5h" value="AVL_TREE_NODE_LEFT" />
+        <node concept="3TlMh9" id="ogNGNPXMoA" role="1AkAjB">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="ogNGNPXMoB" role="1AkAjA">
+        <property role="TrG5h" value="AVL_TREE_NODE_RIGHT" />
+        <node concept="3TlMh9" id="ogNGNPXMoC" role="1AkAjB">
+          <property role="2hmy$m" value="1" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRpK" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRpL" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRpM" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRpN" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * An @ref AVLTreeNode can have left and right children. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHiU5" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446283748_4" />
+    </node>
+    <node concept="rcJHK" id="ogNGNPXMoO" role="N3F5h">
+      <property role="TrG5h" value="AVLTreeNodeSide" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1AkAi2" id="ogNGNPXMoD" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1AkAi1" node="ogNGNPXMo$" resolve="a_AVLTreeNodeSide" />
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMrk" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_new" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="ogNGNPXMrq" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMru" role="3XIRFZ">
+          <property role="TrG5h" value="new_tree" />
+          <node concept="3wxxNl" id="ogNGNPXMrv" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXMZu" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmx" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMr$" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMrJ" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXMZv" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
+            </node>
+            <node concept="1S8S4T" id="ogNGNPXMrH" role="3TlMhJ">
+              <node concept="3wxxNl" id="ogNGNPXMrB" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <node concept="rcJHQ" id="ogNGNPXMZw" role="2umbIo">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+                </node>
+              </node>
+              <node concept="3O_q_g" id="ogNGNPXMZy" role="1S8S4V">
+                <ref role="3O_q_h" node="3RK4Y9HHlax" resolve="malloc_tree" />
+                <node concept="3wxvTy" id="ogNGNPXN5$" role="3O_q_j">
+                  <node concept="rcJHQ" id="ogNGNPXN5z" role="3wxvTG">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                    <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmL" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMrN" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMrS" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXMZz" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXMZ$" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMrT" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMrU" role="3XIRFZ">
+              <node concept="Ea8Gl" id="ogNGNPXMZ_" role="2BFjQA" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRn9" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMs4" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMs9" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMs6" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXMZA" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNdc" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXMZB" role="3TlMhJ" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMsd" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMsi" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMsf" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXMZC" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNln" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="ogNGNPXMsh" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnU" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMsl" role="3XIRFZ">
+          <node concept="3ZVu4v" id="ogNGNPXMZD" role="2BFjQA">
+            <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMrp" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXMZE" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRpP" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRpQ" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRpR" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRpS" role="19SJt6">
+              <property role="19SUeA" value=" AVL Tree (balanced binary search tree) &#10; *&#10; * Create a new AVL tree.&#10; * @return                A new AVL tree, or NULL if it was not possible&#10; *                        to allocate the memory. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHhNT" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446270700_3" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMsA" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_free_subtree" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMsF" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMsH" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXMZF" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMsI" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMsK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXMZG" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMsL" role="3XIRFX">
+        <node concept="c0U19" id="ogNGNPXMsM" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMsR" role="c0U16">
+            <node concept="3ZUYvv" id="ogNGNPXMZH" role="3TlMhI">
+              <ref role="3ZUYvu" node="ogNGNPXMsI" resolve="node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXMZI" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMsS" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMsT" role="3XIRFZ" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmh" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMt1" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXMZK" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMsA" resolve="avl_tree_free_subtree" />
+            <node concept="3ZUYvv" id="ogNGNPXN5_" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMsF" resolve="tree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMt8" role="3O_q_j">
+              <node concept="2qmXGp" id="ogNGNPXMt6" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN5A" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMsI" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNbQ" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN5B" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMtd" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXMZM" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMsA" resolve="avl_tree_free_subtree" />
+            <node concept="3ZUYvv" id="ogNGNPXN5C" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMsF" resolve="tree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMtk" role="3O_q_j">
+              <node concept="2qmXGp" id="ogNGNPXMti" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN5D" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMsI" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNkv" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN5E" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRn8" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMZP" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN5G" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:1fAuj8Twc4C" resolve="free" />
+            <node concept="3ZUYvv" id="ogNGNPXN6S" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMsI" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ogNGNPXMsE" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMtF" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_free" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMtK" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMtM" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXMZT" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMtN" role="3XIRFX">
+        <node concept="3XISUE" id="ogNGNPXRm4" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMtO" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXMZV" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMsA" resolve="avl_tree_free_subtree" />
+            <node concept="3ZUYvv" id="ogNGNPXN5H" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMtK" resolve="tree" />
+            </node>
+            <node concept="2qmXGp" id="ogNGNPXMtT" role="3O_q_j">
+              <node concept="3ZUYvv" id="ogNGNPXN5I" role="1_9fRO">
+                <ref role="3ZUYvu" node="ogNGNPXMtK" resolve="tree" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNx_" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRm5" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRm6" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRm7" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRm8" role="19SJt6">
+                  <property role="19SUeA" value=" Destroy all nodes " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmy" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmz" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMZY" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN5K" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:1fAuj8Twc4C" resolve="free" />
+            <node concept="3ZUYvv" id="ogNGNPXN6T" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMtK" resolve="tree" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRm$" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRm_" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRmA" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmB" role="19SJt6">
+                  <property role="19SUeA" value=" Free back the main tree data structure " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ogNGNPXMtJ" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRpU" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRpV" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRpW" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRpX" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Destroy an AVL tree.&#10; *&#10; * @param tree            The tree to destroy.&#10; " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMuq" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_subtree_height" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMuv" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMux" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN05" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMuy" role="3XIRFX">
+        <node concept="c0U19" id="ogNGNPXMuz" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMuC" role="c0U16">
+            <node concept="3ZUYvv" id="ogNGNPXN06" role="3TlMhI">
+              <ref role="3ZUYvu" node="ogNGNPXMuv" resolve="node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN07" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMuD" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMuE" role="3XIRFZ">
+              <node concept="3TlMh9" id="ogNGNPXMuF" role="2BFjQA">
+                <property role="2hmy$m" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMuK" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMuM" role="1ly_ph">
+              <node concept="2BFjQ_" id="ogNGNPXMuN" role="3XIRFZ">
+                <node concept="2qmXGp" id="ogNGNPXMuP" role="2BFjQA">
+                  <node concept="3ZUYvv" id="ogNGNPXN08" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMuv" resolve="node" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNrf" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqph" id="ogNGNPXMuu" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRpZ" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRq0" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRq1" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRq2" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Find the height of a subtree.&#10; *&#10; * @param node            The root node of the subtree.&#10; * @return                The height of the subtree.&#10; " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMv4" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_update_height" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMv9" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMvb" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN09" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMvc" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMvg" role="3XIRFZ">
+          <property role="TrG5h" value="left_subtree" />
+          <node concept="3wxxNl" id="ogNGNPXMvh" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN0a" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMvp" role="3XIRFZ">
+          <property role="TrG5h" value="right_subtree" />
+          <node concept="3wxxNl" id="ogNGNPXMvq" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN0b" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMvy" role="3XIRFZ">
+          <property role="TrG5h" value="left_height" />
+          <node concept="26Vqph" id="ogNGNPXMvx" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMvA" role="3XIRFZ">
+          <property role="TrG5h" value="right_height" />
+          <node concept="26Vqph" id="ogNGNPXMv_" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnD" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMvF" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMvM" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN0c" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMvg" resolve="left_subtree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMvK" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMvI" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN0d" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNgl" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN0e" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMvQ" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMvX" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN0f" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMvp" resolve="right_subtree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMvV" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMvT" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN0g" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNNk" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN0h" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMw0" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMw5" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN0i" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMvy" resolve="left_height" />
+            </node>
+            <node concept="3O_q_g" id="ogNGNPXN0k" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+              <node concept="3ZVu4v" id="ogNGNPXN5L" role="3O_q_j">
+                <ref role="3ZVs_2" node="ogNGNPXMvg" resolve="left_subtree" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMw8" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMwd" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN0l" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMvA" resolve="right_height" />
+            </node>
+            <node concept="3O_q_g" id="ogNGNPXN0n" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+              <node concept="3ZVu4v" id="ogNGNPXN5M" role="3O_q_j">
+                <ref role="3ZVs_2" node="ogNGNPXMvp" resolve="right_subtree" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoE" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMwg" role="3XIRFZ">
+          <node concept="3Tl9Jr" id="ogNGNPXMwl" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXN0o" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMvy" resolve="left_height" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN0p" role="3TlMhJ">
+              <ref role="3ZVs_2" node="ogNGNPXMvA" resolve="right_height" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMwm" role="c0U17">
+            <node concept="1_9egQ" id="ogNGNPXMwn" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMwu" role="1_9egR">
+                <node concept="2qmXGp" id="ogNGNPXMwp" role="3TlMhI">
+                  <node concept="3ZUYvv" id="ogNGNPXN0q" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNMs" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+                  </node>
+                </node>
+                <node concept="2BOciq" id="ogNGNPXMwt" role="3TlMhJ">
+                  <node concept="3ZVu4v" id="ogNGNPXN0r" role="3TlMhI">
+                    <ref role="3ZVs_2" node="ogNGNPXMvy" resolve="left_height" />
+                  </node>
+                  <node concept="3TlMh9" id="ogNGNPXMws" role="3TlMhJ">
+                    <property role="2hmy$m" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMwz" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMw_" role="1ly_ph">
+              <node concept="1_9egQ" id="ogNGNPXMwA" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMwH" role="1_9egR">
+                  <node concept="2qmXGp" id="ogNGNPXMwC" role="3TlMhI">
+                    <node concept="3ZUYvv" id="ogNGNPXN0s" role="1_9fRO">
+                      <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNJO" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+                    </node>
+                  </node>
+                  <node concept="2BOciq" id="ogNGNPXMwG" role="3TlMhJ">
+                    <node concept="3ZVu4v" id="ogNGNPXN0t" role="3TlMhI">
+                      <ref role="3ZVs_2" node="ogNGNPXMvA" resolve="right_height" />
+                    </node>
+                    <node concept="3TlMh9" id="ogNGNPXMwF" role="3TlMhJ">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ogNGNPXMv8" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRq4" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRq5" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRq6" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRq7" role="19SJt6">
+              <property role="19SUeA" value=" Update the &quot;height&quot; variable of a node, from the heights of its&#10; * children.  This does not update the height variable of any parent&#10; * nodes. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMwZ" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_parent_side" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMx4" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMx6" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN0u" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMx7" role="3XIRFX">
+        <node concept="c0U19" id="ogNGNPXMx8" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMxj" role="c0U16">
+            <node concept="2wJmCr" id="ogNGNPXMxg" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXMxe" role="1_9fRO">
+                <node concept="2qmXGp" id="ogNGNPXMxc" role="1_9fRO">
+                  <node concept="3ZUYvv" id="ogNGNPXN0v" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMx4" resolve="node" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNa6" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                  </node>
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNfx" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN0w" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+            <node concept="3ZUYvv" id="ogNGNPXN0x" role="3TlMhJ">
+              <ref role="3ZUYvu" node="ogNGNPXMx4" resolve="node" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMxk" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMxl" role="3XIRFZ">
+              <node concept="1AkAhK" id="ogNGNPXN0y" role="2BFjQA">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMxr" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMxt" role="1ly_ph">
+              <node concept="2BFjQ_" id="ogNGNPXMxu" role="3XIRFZ">
+                <node concept="1AkAhK" id="ogNGNPXN0z" role="2BFjQA">
+                  <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="rcJHQ" id="ogNGNPXN0$" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="rcJHT" node="ogNGNPXMoO" resolve="AVLTreeNodeSide" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRq9" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqa" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqb" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqc" role="19SJt6">
+              <property role="19SUeA" value=" Find what side a node is relative to its parent " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMxK" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_replace" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMxP" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMxR" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN0_" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMxS" role="1UOdpc">
+        <property role="TrG5h" value="node1" />
+        <node concept="3wxxNl" id="ogNGNPXMxU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN0A" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMxV" role="1UOdpc">
+        <property role="TrG5h" value="node2" />
+        <node concept="3wxxNl" id="ogNGNPXMxX" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN0B" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMxY" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMy2" role="3XIRFZ">
+          <property role="TrG5h" value="side" />
+          <node concept="26Vqph" id="ogNGNPXMy1" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRma" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmb" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMy7" role="3XIRFZ">
+          <node concept="25Bbzn" id="ogNGNPXMyc" role="c0U16">
+            <node concept="3ZUYvv" id="ogNGNPXN0C" role="3TlMhI">
+              <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN0D" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMyd" role="c0U17">
+            <node concept="1_9egQ" id="ogNGNPXMye" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMyl" role="1_9egR">
+                <node concept="2qmXGp" id="ogNGNPXMyg" role="3TlMhI">
+                  <node concept="3ZUYvv" id="ogNGNPXN0E" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNe4" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                  </node>
+                </node>
+                <node concept="2qmXGp" id="ogNGNPXMyj" role="3TlMhJ">
+                  <node concept="3ZUYvv" id="ogNGNPXN0F" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNxb" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRmc" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRmd" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRme" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmf" role="19SJt6">
+                  <property role="19SUeA" value=" Set the node's parent pointer. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmU" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmV" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMyx" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMyC" role="c0U16">
+            <node concept="2qmXGp" id="ogNGNPXMy_" role="3TlMhI">
+              <node concept="3ZUYvv" id="ogNGNPXN0G" role="1_9fRO">
+                <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNwn" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN0H" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMyD" role="c0U17">
+            <node concept="1_9egQ" id="ogNGNPXMyE" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMyJ" role="1_9egR">
+                <node concept="2qmXGp" id="ogNGNPXMyG" role="3TlMhI">
+                  <node concept="3ZUYvv" id="ogNGNPXN0I" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMxP" resolve="tree" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNvz" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                  </node>
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN0J" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMyO" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMyQ" role="1ly_ph">
+              <node concept="1_9egQ" id="ogNGNPXMyR" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMyW" role="1_9egR">
+                  <node concept="3ZVu4v" id="ogNGNPXN0K" role="3TlMhI">
+                    <ref role="3ZVs_2" node="ogNGNPXMy2" resolve="side" />
+                  </node>
+                  <node concept="3O_q_g" id="ogNGNPXN0M" role="3TlMhJ">
+                    <ref role="3O_q_h" node="ogNGNPXMwZ" resolve="avl_tree_node_parent_side" />
+                    <node concept="3ZUYvv" id="ogNGNPXN5N" role="3O_q_j">
+                      <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1_9egQ" id="ogNGNPXMyZ" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMz8" role="1_9egR">
+                  <node concept="2wJmCr" id="ogNGNPXMz5" role="3TlMhI">
+                    <node concept="2qmXGp" id="ogNGNPXMz3" role="1_9fRO">
+                      <node concept="2qmXGp" id="ogNGNPXMz1" role="1_9fRO">
+                        <node concept="3ZUYvv" id="ogNGNPXN0N" role="1_9fRO">
+                          <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
+                        </node>
+                        <node concept="1E4Tgc" id="ogNGNPXNrD" role="1ESnxz">
+                          <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                        </node>
+                      </node>
+                      <node concept="1E4Tgc" id="ogNGNPXNSO" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                      </node>
+                    </node>
+                    <node concept="3ZVu4v" id="ogNGNPXN0O" role="2wJmCp">
+                      <ref role="3ZVs_2" node="ogNGNPXMy2" resolve="side" />
+                    </node>
+                  </node>
+                  <node concept="3ZUYvv" id="ogNGNPXN0P" role="3TlMhJ">
+                    <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="ogNGNPXRl0" role="3XIRFZ" />
+              <node concept="1_9egQ" id="ogNGNPXMzb" role="3XIRFZ">
+                <node concept="3O_q_g" id="ogNGNPXN0R" role="1_9egR">
+                  <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
+                  <node concept="2qmXGp" id="ogNGNPXMzf" role="3O_q_j">
+                    <node concept="3ZUYvv" id="ogNGNPXN5O" role="1_9fRO">
+                      <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNfV" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRmW" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRmX" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRmY" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmZ" role="19SJt6">
+                  <property role="19SUeA" value=" The root node? " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ogNGNPXMxO" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqe" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqf" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqg" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqh" role="19SJt6">
+              <property role="19SUeA" value=" Replace node1 with node2 at its parent. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMzC" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_rotate" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMzI" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMzK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN0S" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMzL" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMzN" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN0T" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMzO" role="1UOdpc">
+        <property role="TrG5h" value="direction" />
+        <node concept="rcJHQ" id="ogNGNPXN0U" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMoO" resolve="AVLTreeNodeSide" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMzQ" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMzU" role="3XIRFZ">
+          <property role="TrG5h" value="new_root" />
+          <node concept="3wxxNl" id="ogNGNPXMzV" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN0V" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmq" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmr" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXM$0" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXM$9" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN0W" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXM$5" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXM$3" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN0X" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNHc" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="2BOcil" id="ogNGNPXM$8" role="2wJmCp">
+                <node concept="3TlMh9" id="ogNGNPXM$6" role="3TlMhI">
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN0Y" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRms" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRmt" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRmu" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmv" role="19SJt6">
+                  <property role="19SUeA" value=" The child of this node will take its place:&#10;&#9;   for a left rotation, it is the right child, and vice versa. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmM" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmN" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXM$g" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN10" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMxK" resolve="avl_tree_node_replace" />
+            <node concept="3ZUYvv" id="ogNGNPXN5P" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMzI" resolve="tree" />
+            </node>
+            <node concept="3ZUYvv" id="ogNGNPXN5Q" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN5R" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRmO" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRmP" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRmQ" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmR" role="19SJt6">
+                  <property role="19SUeA" value=" Make new_root the root, update parent pointers. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRna" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRnb" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXM$s" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXM$D" role="1_9egR">
+            <node concept="2wJmCr" id="ogNGNPXM$w" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXM$u" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN11" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNib" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="2BOcil" id="ogNGNPXM$z" role="2wJmCp">
+                <node concept="3TlMh9" id="ogNGNPXM$x" role="3TlMhI">
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN12" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
+                </node>
+              </node>
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXM$B" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXM$_" role="1_9fRO">
+                <node concept="3ZVu4v" id="ogNGNPXN13" role="1_9fRO">
+                  <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNa$" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="3ZUYvv" id="ogNGNPXN14" role="2wJmCp">
+                <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRnc" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRnd" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRne" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRnf" role="19SJt6">
+                  <property role="19SUeA" value=" Rearrange pointers " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXM$K" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXM$R" role="1_9egR">
+            <node concept="2wJmCr" id="ogNGNPXM$O" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXM$M" role="1_9fRO">
+                <node concept="3ZVu4v" id="ogNGNPXN15" role="1_9fRO">
+                  <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNuF" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="3ZUYvv" id="ogNGNPXN16" role="2wJmCp">
+                <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
+              </node>
+            </node>
+            <node concept="3ZUYvv" id="ogNGNPXN17" role="3TlMhJ">
+              <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnF" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRnG" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXM$U" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXM$Z" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXM$W" role="3TlMhI">
+              <node concept="3ZUYvv" id="ogNGNPXN18" role="1_9fRO">
+                <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNwL" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN19" role="3TlMhJ">
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRnH" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRnI" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRnJ" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRnK" role="19SJt6">
+                  <property role="19SUeA" value=" Update parent references " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnV" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXM_6" role="3XIRFZ">
+          <node concept="25Bbzn" id="ogNGNPXM_h" role="c0U16">
+            <node concept="2wJmCr" id="ogNGNPXM_c" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXM_a" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN1a" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNcI" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="2BOcil" id="ogNGNPXM_f" role="2wJmCp">
+                <node concept="3TlMh9" id="ogNGNPXM_d" role="3TlMhI">
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN1b" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
+                </node>
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN1c" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXM_i" role="c0U17">
+            <node concept="1_9egQ" id="ogNGNPXM_j" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXM_u" role="1_9egR">
+                <node concept="2qmXGp" id="ogNGNPXM_r" role="3TlMhI">
+                  <node concept="2wJmCr" id="ogNGNPXM_n" role="1_9fRO">
+                    <node concept="2qmXGp" id="ogNGNPXM_l" role="1_9fRO">
+                      <node concept="3ZUYvv" id="ogNGNPXN1d" role="1_9fRO">
+                        <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+                      </node>
+                      <node concept="1E4Tgc" id="ogNGNPXNbs" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                      </node>
+                    </node>
+                    <node concept="2BOcil" id="ogNGNPXM_q" role="2wJmCp">
+                      <node concept="3TlMh9" id="ogNGNPXM_o" role="3TlMhI">
+                        <property role="2hmy$m" value="1" />
+                      </node>
+                      <node concept="3ZUYvv" id="ogNGNPXN1e" role="3TlMhJ">
+                        <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNGk" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                  </node>
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN1f" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoi" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRoj" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXN1i" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN5T" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
+            <node concept="3ZVu4v" id="ogNGNPXN6U" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRok" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRol" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRom" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRon" role="19SJt6">
+                  <property role="19SUeA" value=" Update heights of the affected nodes " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXN1r" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN5V" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
+            <node concept="3ZUYvv" id="ogNGNPXN6V" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoN" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMA4" role="3XIRFZ">
+          <node concept="3ZVu4v" id="ogNGNPXN1u" role="2BFjQA">
+            <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMzH" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN1v" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqj" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqk" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRql" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqm" role="19SJt6">
+              <property role="19SUeA" value=" Rotate a section of the tree.  'node' is the node at the top&#10; * of the section to be rotated.  'direction' is the direction in&#10; * which to rotate the tree: left or right, as shown in the following&#10; * diagram:&#10; *&#10; * Left rotation:              Right rotation:&#10; *&#10; *      B                             D&#10; *     / \                           /  *    A   D                         B   E&#10;&#10; *       / \                       /  *      C   E                     A   C&#10;&#10;&#10; * is rotated to:              is rotated to:&#10; *&#10; *        D                           B&#10; *       / \                         /  *      B   E                       A   D&#10;&#10; *     / \                             /  *    A   C                           C   E&#10;&#10; " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMAn" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_balance" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMAt" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMAv" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN1w" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMAw" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMAy" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN1x" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMAz" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMAB" role="3XIRFZ">
+          <property role="TrG5h" value="left_subtree" />
+          <node concept="3wxxNl" id="ogNGNPXMAC" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN1y" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMAK" role="3XIRFZ">
+          <property role="TrG5h" value="right_subtree" />
+          <node concept="3wxxNl" id="ogNGNPXMAL" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN1z" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMAT" role="3XIRFZ">
+          <property role="TrG5h" value="child" />
+          <node concept="3wxxNl" id="ogNGNPXMAU" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN1$" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMB2" role="3XIRFZ">
+          <property role="TrG5h" value="diff" />
+          <node concept="26Vqph" id="ogNGNPXMB1" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnx" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMB7" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMBe" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN1_" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMAB" resolve="left_subtree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMBc" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMBa" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN1A" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNtJ" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN1B" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMBi" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMBp" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN1C" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMBn" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMBl" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN1D" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNI4" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN1E" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoa" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRob" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMBs" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMB_" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN1F" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMB2" resolve="diff" />
+            </node>
+            <node concept="2BOcil" id="ogNGNPXMB$" role="3TlMhJ">
+              <node concept="3O_q_g" id="ogNGNPXN1H" role="3TlMhI">
+                <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                <node concept="3ZVu4v" id="ogNGNPXN5W" role="3O_q_j">
+                  <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
+                </node>
+              </node>
+              <node concept="3O_q_g" id="ogNGNPXN1J" role="3TlMhJ">
+                <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                <node concept="3ZVu4v" id="ogNGNPXN5X" role="3O_q_j">
+                  <ref role="3ZVs_2" node="ogNGNPXMAB" resolve="left_subtree" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRoc" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRod" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRoe" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRof" role="19SJt6">
+                  <property role="19SUeA" value=" Check the heights of the child trees.  If there is an unbalance&#10;&#9; * (difference between left and right &gt; 2), then rotate nodes&#10;&#9; * around to fix it " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoh" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMBG" role="3XIRFZ">
+          <node concept="3Tl9Jp" id="ogNGNPXMBL" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXN1K" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMB2" resolve="diff" />
+            </node>
+            <node concept="3TlMh9" id="ogNGNPXMBK" role="3TlMhJ">
+              <property role="2hmy$m" value="2" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMBM" role="c0U17">
+            <node concept="3XISUE" id="ogNGNPXRlf" role="3XIRFZ" />
+            <node concept="3XISUE" id="ogNGNPXRlg" role="3XIRFZ" />
+            <node concept="1_9egQ" id="ogNGNPXMBN" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMBQ" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN1L" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
+                </node>
+                <node concept="3ZVu4v" id="ogNGNPXN1M" role="3TlMhJ">
+                  <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
+                </node>
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlh" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRli" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRlj" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRlk" role="19SJt6">
+                      <property role="19SUeA" value=" Biased toward the right side too much. " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="ogNGNPXRlO" role="3XIRFZ" />
+            <node concept="c0U19" id="ogNGNPXMBX" role="3XIRFZ">
+              <node concept="3Tl9Jn" id="ogNGNPXMCe" role="c0U16">
+                <node concept="3O_q_g" id="ogNGNPXN1O" role="3TlMhI">
+                  <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                  <node concept="2wJmCr" id="ogNGNPXMC5" role="3O_q_j">
+                    <node concept="2qmXGp" id="ogNGNPXMC3" role="1_9fRO">
+                      <node concept="3ZVu4v" id="ogNGNPXN5Y" role="1_9fRO">
+                        <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
+                      </node>
+                      <node concept="1E4Tgc" id="ogNGNPXNqP" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                      </node>
+                    </node>
+                    <node concept="1AkAhK" id="ogNGNPXN5Z" role="2wJmCp">
+                      <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3O_q_g" id="ogNGNPXN1Q" role="3TlMhJ">
+                  <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                  <node concept="2wJmCr" id="ogNGNPXMCc" role="3O_q_j">
+                    <node concept="2qmXGp" id="ogNGNPXMCa" role="1_9fRO">
+                      <node concept="3ZVu4v" id="ogNGNPXN60" role="1_9fRO">
+                        <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
+                      </node>
+                      <node concept="1E4Tgc" id="ogNGNPXN8S" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                      </node>
+                    </node>
+                    <node concept="1AkAhK" id="ogNGNPXN61" role="2wJmCp">
+                      <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XIRFW" id="ogNGNPXMCf" role="c0U17">
+                <node concept="3XISUE" id="ogNGNPXRks" role="3XIRFZ" />
+                <node concept="3XISUE" id="ogNGNPXRkt" role="3XIRFZ" />
+                <node concept="1_9egQ" id="ogNGNPXMCg" role="3XIRFZ">
+                  <node concept="3O_q_g" id="ogNGNPXN1S" role="1_9egR">
+                    <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
+                    <node concept="3ZUYvv" id="ogNGNPXN62" role="3O_q_j">
+                      <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
+                    </node>
+                    <node concept="3ZVu4v" id="ogNGNPXN63" role="3O_q_j">
+                      <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
+                    </node>
+                    <node concept="1AkAhK" id="ogNGNPXN64" role="3O_q_j">
+                      <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                    </node>
+                  </node>
+                  <node concept="1z9TsT" id="ogNGNPXRku" role="lGtFl">
+                    <node concept="OjmMv" id="ogNGNPXRkv" role="1w35rA">
+                      <node concept="19SGf9" id="ogNGNPXRkw" role="OjmMu">
+                        <node concept="19SUe$" id="ogNGNPXRkx" role="19SJt6">
+                          <property role="19SUeA" value=" If the right child is biased toward the left&#10;&#9;&#9;&#9; * side, it must be rotated right first (double&#10;&#9;&#9;&#9; * rotation) " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="ogNGNPXRlX" role="3XIRFZ" />
+            <node concept="3XISUE" id="ogNGNPXRlY" role="3XIRFZ" />
+            <node concept="1_9egQ" id="ogNGNPXMCz" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMCE" role="1_9egR">
+                <node concept="3ZUYvv" id="ogNGNPXN1T" role="3TlMhI">
+                  <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                </node>
+                <node concept="3O_q_g" id="ogNGNPXN1V" role="3TlMhJ">
+                  <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
+                  <node concept="3ZUYvv" id="ogNGNPXN65" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
+                  </node>
+                  <node concept="3ZUYvv" id="ogNGNPXN66" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                  </node>
+                  <node concept="1AkAhK" id="ogNGNPXN67" role="3O_q_j">
+                    <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlZ" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRm0" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRm1" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRm2" role="19SJt6">
+                      <property role="19SUeA" value=" Perform a left rotation.  After this, the right child will&#10;&#9;&#9; * take the place of this node.  Update the node pointer. " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="gg_gk" id="ogNGNPXMCO" role="gg_kh">
+            <node concept="3Tl9Jl" id="ogNGNPXMCT" role="gg_gt">
+              <node concept="3ZVu4v" id="ogNGNPXN1W" role="3TlMhI">
+                <ref role="3ZVs_2" node="ogNGNPXMB2" resolve="diff" />
+              </node>
+              <node concept="1FllXc" id="ogNGNPXMCR" role="3TlMhJ">
+                <node concept="3TlMh9" id="ogNGNPXMCS" role="1_9fRO">
+                  <property role="2hmy$m" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XIRFW" id="ogNGNPXMCU" role="gg_gl">
+              <node concept="3XISUE" id="ogNGNPXRkK" role="3XIRFZ" />
+              <node concept="3XISUE" id="ogNGNPXRkL" role="3XIRFZ" />
+              <node concept="1_9egQ" id="ogNGNPXMCV" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMD2" role="1_9egR">
+                  <node concept="3ZVu4v" id="ogNGNPXN1X" role="3TlMhI">
+                    <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
+                  </node>
+                  <node concept="2wJmCr" id="ogNGNPXMD0" role="3TlMhJ">
+                    <node concept="2qmXGp" id="ogNGNPXMCY" role="1_9fRO">
+                      <node concept="3ZUYvv" id="ogNGNPXN1Y" role="1_9fRO">
+                        <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                      </node>
+                      <node concept="1E4Tgc" id="ogNGNPXNtl" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                      </node>
+                    </node>
+                    <node concept="1AkAhK" id="ogNGNPXN1Z" role="2wJmCp">
+                      <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1z9TsT" id="ogNGNPXRkM" role="lGtFl">
+                  <node concept="OjmMv" id="ogNGNPXRkN" role="1w35rA">
+                    <node concept="19SGf9" id="ogNGNPXRkO" role="OjmMu">
+                      <node concept="19SUe$" id="ogNGNPXRkP" role="19SJt6">
+                        <property role="19SUeA" value=" Biased toward the left side too much. " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="ogNGNPXRkR" role="3XIRFZ" />
+              <node concept="c0U19" id="ogNGNPXMD9" role="3XIRFZ">
+                <node concept="3Tl9Jn" id="ogNGNPXMDq" role="c0U16">
+                  <node concept="3O_q_g" id="ogNGNPXN21" role="3TlMhI">
+                    <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                    <node concept="2wJmCr" id="ogNGNPXMDh" role="3O_q_j">
+                      <node concept="2qmXGp" id="ogNGNPXMDf" role="1_9fRO">
+                        <node concept="3ZVu4v" id="ogNGNPXN68" role="1_9fRO">
+                          <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
+                        </node>
+                        <node concept="1E4Tgc" id="ogNGNPXNb2" role="1ESnxz">
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                        </node>
+                      </node>
+                      <node concept="1AkAhK" id="ogNGNPXN69" role="2wJmCp">
+                        <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3O_q_g" id="ogNGNPXN23" role="3TlMhJ">
+                    <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                    <node concept="2wJmCr" id="ogNGNPXMDo" role="3O_q_j">
+                      <node concept="2qmXGp" id="ogNGNPXMDm" role="1_9fRO">
+                        <node concept="3ZVu4v" id="ogNGNPXN6a" role="1_9fRO">
+                          <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
+                        </node>
+                        <node concept="1E4Tgc" id="ogNGNPXNiD" role="1ESnxz">
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                        </node>
+                      </node>
+                      <node concept="1AkAhK" id="ogNGNPXN6b" role="2wJmCp">
+                        <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3XIRFW" id="ogNGNPXMDr" role="c0U17">
+                  <node concept="3XISUE" id="ogNGNPXRkk" role="3XIRFZ" />
+                  <node concept="3XISUE" id="ogNGNPXRkl" role="3XIRFZ" />
+                  <node concept="1_9egQ" id="ogNGNPXMDs" role="3XIRFZ">
+                    <node concept="3O_q_g" id="ogNGNPXN25" role="1_9egR">
+                      <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
+                      <node concept="3ZUYvv" id="ogNGNPXN6c" role="3O_q_j">
+                        <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
+                      </node>
+                      <node concept="3ZVu4v" id="ogNGNPXN6d" role="3O_q_j">
+                        <ref role="3ZVs_2" node="ogNGNPXMAB" resolve="left_subtree" />
+                      </node>
+                      <node concept="1AkAhK" id="ogNGNPXN6e" role="3O_q_j">
+                        <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                      </node>
+                    </node>
+                    <node concept="1z9TsT" id="ogNGNPXRkm" role="lGtFl">
+                      <node concept="OjmMv" id="ogNGNPXRkn" role="1w35rA">
+                        <node concept="19SGf9" id="ogNGNPXRko" role="OjmMu">
+                          <node concept="19SUe$" id="ogNGNPXRkp" role="19SJt6">
+                            <property role="19SUeA" value=" If the left child is biased toward the right&#10;&#9;&#9;&#9; * side, it must be rotated right left (double&#10;&#9;&#9;&#9; * rotation) " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="ogNGNPXRl1" role="3XIRFZ" />
+              <node concept="3XISUE" id="ogNGNPXRl2" role="3XIRFZ" />
+              <node concept="1_9egQ" id="ogNGNPXMDJ" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMDQ" role="1_9egR">
+                  <node concept="3ZUYvv" id="ogNGNPXN26" role="3TlMhI">
+                    <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                  </node>
+                  <node concept="3O_q_g" id="ogNGNPXN28" role="3TlMhJ">
+                    <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
+                    <node concept="3ZUYvv" id="ogNGNPXN6f" role="3O_q_j">
+                      <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
+                    </node>
+                    <node concept="3ZUYvv" id="ogNGNPXN6g" role="3O_q_j">
+                      <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+                    </node>
+                    <node concept="1AkAhK" id="ogNGNPXN6h" role="3O_q_j">
+                      <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1z9TsT" id="ogNGNPXRl3" role="lGtFl">
+                  <node concept="OjmMv" id="ogNGNPXRl4" role="1w35rA">
+                    <node concept="19SGf9" id="ogNGNPXRl5" role="OjmMu">
+                      <node concept="19SUe$" id="ogNGNPXRl6" role="19SJt6">
+                        <property role="19SUeA" value=" Perform a right rotation.  After this, the left child will&#10;&#9;&#9; * take the place of this node.  Update the node pointer. " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoz" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRo$" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXN2b" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN6j" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
+            <node concept="3ZUYvv" id="ogNGNPXN6W" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRo_" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRoA" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRoB" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRoC" role="19SJt6">
+                  <property role="19SUeA" value=" Update the height of this node " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoM" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMEr" role="3XIRFZ">
+          <node concept="3ZUYvv" id="ogNGNPXN2i" role="2BFjQA">
+            <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMAs" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN2j" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqo" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqp" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqq" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqr" role="19SJt6">
+              <property role="19SUeA" value=" Balance a particular tree node.&#10; *&#10; * Returns the root node of the new subtree which is replacing the&#10; * old one. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMEM" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_balance_to_root" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMER" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMET" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN2k" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMEU" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMEW" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN2l" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMEX" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMF1" role="3XIRFZ">
+          <property role="TrG5h" value="rover" />
+          <node concept="3wxxNl" id="ogNGNPXMF2" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN2m" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmp" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMF7" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMFa" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN2n" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
+            </node>
+            <node concept="3ZUYvv" id="ogNGNPXN2o" role="3TlMhJ">
+              <ref role="3ZUYvu" node="ogNGNPXMEU" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmT" role="3XIRFZ" />
+        <node concept="27v$Wf" id="ogNGNPXMFe" role="3XIRFZ">
+          <node concept="25Bbzn" id="ogNGNPXMFj" role="27v$We">
+            <node concept="3ZVu4v" id="ogNGNPXN2p" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN2q" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMFk" role="27v$W9">
+            <node concept="3XISUE" id="ogNGNPXRlm" role="3XIRFZ" />
+            <node concept="1_9egQ" id="ogNGNPXMFl" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMFr" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN2r" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
+                </node>
+                <node concept="3O_q_g" id="ogNGNPXN2t" role="3TlMhJ">
+                  <ref role="3O_q_h" node="ogNGNPXMAn" resolve="avl_tree_node_balance" />
+                  <node concept="3ZUYvv" id="ogNGNPXN6k" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMER" resolve="tree" />
+                  </node>
+                  <node concept="3ZVu4v" id="ogNGNPXN6l" role="3O_q_j">
+                    <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlo" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRlp" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRlq" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRlr" role="19SJt6">
+                      <property role="19SUeA" value=" Balance this node if necessary " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="ogNGNPXRlQ" role="3XIRFZ" />
+            <node concept="1_9egQ" id="ogNGNPXMFy" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMFB" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN2u" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
+                </node>
+                <node concept="2qmXGp" id="ogNGNPXMF_" role="3TlMhJ">
+                  <node concept="3ZVu4v" id="ogNGNPXN2v" role="1_9fRO">
+                    <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXNL$" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlS" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRlT" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRlU" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRlV" role="19SJt6">
+                      <property role="19SUeA" value=" Go to this node's parent " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ogNGNPXMEQ" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqt" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqu" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqv" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqw" role="19SJt6">
+              <property role="19SUeA" value=" Walk up the tree from the given node, performing any needed rotations " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPYafS" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436143970_56" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMG1" role="N3F5h">
+      <property role="TrG5h" value="compare_func" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMG6" role="1UOdpc">
+        <property role="TrG5h" value="a" />
+        <node concept="rcJHQ" id="ogNGNPXN2w" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMG8" role="1UOdpc">
+        <property role="TrG5h" value="b" />
+        <node concept="rcJHQ" id="ogNGNPXN2x" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMGa" role="3XIRFX">
+        <node concept="c0U19" id="ogNGNPXMGb" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMGg" role="c0U16">
+            <node concept="3ZUYvv" id="ogNGNPXN2y" role="3TlMhI">
+              <ref role="3ZUYvu" node="ogNGNPXMG6" resolve="a" />
+            </node>
+            <node concept="3ZUYvv" id="ogNGNPXN2z" role="3TlMhJ">
+              <ref role="3ZUYvu" node="ogNGNPXMG8" resolve="b" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMGh" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMGi" role="3XIRFZ">
+              <node concept="3TlMh9" id="ogNGNPXMGj" role="2BFjQA">
+                <property role="2hmy$m" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2BFjQ_" id="ogNGNPXMGr" role="3XIRFZ">
+          <node concept="n5E$d" id="ogNGNPXMGs" role="2BFjQA">
+            <node concept="2BPB98" id="ogNGNPXMGv" role="n5E$c">
+              <node concept="3Tl9Jn" id="ogNGNPXMGy" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN2$" role="3TlMhI">
+                  <ref role="3ZUYvu" node="ogNGNPXMG6" resolve="a" />
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN2_" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="ogNGNPXMG8" resolve="b" />
+                </node>
+              </node>
+            </node>
+            <node concept="2BPB98" id="ogNGNPXMGz" role="n5E$j">
+              <node concept="3TlMh9" id="ogNGNPXMG$" role="1_9fRO">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
+            <node concept="2BPB98" id="ogNGNPXMG_" role="n5E$i">
+              <node concept="1FllXc" id="ogNGNPXMGA" role="1_9fRO">
+                <node concept="3TlMh9" id="ogNGNPXMGB" role="1_9fRO">
+                  <property role="2hmy$m" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqph" id="ogNGNPXMG5" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY99P" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436141020_55" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMGK" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_insert" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMGQ" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMGS" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN2A" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMGT" role="1UOdpc">
+        <property role="TrG5h" value="key" />
+        <node concept="rcJHQ" id="ogNGNPXN2B" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMGV" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMGZ" role="3XIRFZ">
+          <property role="TrG5h" value="rover" />
+          <node concept="3wxxNl" id="ogNGNPXMH1" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="3wxxNl" id="ogNGNPXMH0" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="rcJHQ" id="ogNGNPXN2C" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMH9" role="3XIRFZ">
+          <property role="TrG5h" value="new_node" />
+          <node concept="3wxxNl" id="ogNGNPXMHa" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN2D" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMHi" role="3XIRFZ">
+          <property role="TrG5h" value="previous_node" />
+          <node concept="3wxxNl" id="ogNGNPXMHj" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN2E" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRni" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMHo" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMHu" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN2F" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+            </node>
+            <node concept="YInwV" id="ogNGNPXN2G" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMHs" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN6m" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMGQ" resolve="tree" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNeu" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRnk" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRnl" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRnm" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRnn" role="19SJt6">
+                  <property role="19SUeA" value=" Walk down the tree until we reach a NULL pointer " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMH_" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMHC" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN2H" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN2I" role="3TlMhJ" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnT" role="3XIRFZ" />
+        <node concept="27v$Wf" id="ogNGNPXMHF" role="3XIRFZ">
+          <node concept="25Bbzn" id="ogNGNPXMHL" role="27v$We">
+            <node concept="3wxyx2" id="ogNGNPXMHI" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXN2J" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN2K" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMHM" role="27v$W9">
+            <node concept="1_9egQ" id="ogNGNPXMHN" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMHR" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN2L" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
+                </node>
+                <node concept="3wxyx2" id="ogNGNPXMHP" role="3TlMhJ">
+                  <node concept="3ZVu4v" id="ogNGNPXN2M" role="1_9fRO">
+                    <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="c0U19" id="ogNGNPXMHU" role="3XIRFZ">
+              <node concept="3Tl9Jn" id="ogNGNPXMI6" role="c0U16">
+                <node concept="3O_q_g" id="ogNGNPXN2O" role="3TlMhI">
+                  <ref role="3O_q_h" node="ogNGNPXMG1" resolve="compare_func" />
+                  <node concept="3ZUYvv" id="ogNGNPXN6n" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMGT" resolve="key" />
+                  </node>
+                  <node concept="2qmXGp" id="ogNGNPXMI3" role="3O_q_j">
+                    <node concept="2BPB98" id="ogNGNPXMI0" role="1_9fRO">
+                      <node concept="3wxyx2" id="ogNGNPXMI1" role="1_9fRO">
+                        <node concept="3ZVu4v" id="ogNGNPXN6o" role="1_9fRO">
+                          <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNhL" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TlMh9" id="ogNGNPXMI5" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+              </node>
+              <node concept="3XIRFW" id="ogNGNPXMI7" role="c0U17">
+                <node concept="1_9egQ" id="ogNGNPXMI8" role="3XIRFZ">
+                  <node concept="3pqW6w" id="ogNGNPXMIj" role="1_9egR">
+                    <node concept="3ZVu4v" id="ogNGNPXN2P" role="3TlMhI">
+                      <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+                    </node>
+                    <node concept="YInwV" id="ogNGNPXN2Q" role="3TlMhJ">
+                      <node concept="2BPB98" id="ogNGNPXMIb" role="1_9fRO">
+                        <node concept="2wJmCr" id="ogNGNPXMIh" role="1_9fRO">
+                          <node concept="2qmXGp" id="ogNGNPXMIf" role="1_9fRO">
+                            <node concept="2BPB98" id="ogNGNPXMIc" role="1_9fRO">
+                              <node concept="3wxyx2" id="ogNGNPXMId" role="1_9fRO">
+                                <node concept="3ZVu4v" id="ogNGNPXN6p" role="1_9fRO">
+                                  <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1E4Tgc" id="ogNGNPXNoF" role="1ESnxz">
+                              <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                            </node>
+                          </node>
+                          <node concept="1AkAhK" id="ogNGNPXN6q" role="2wJmCp">
+                            <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1ly_i6" id="ogNGNPXMIo" role="ggAap">
+                <node concept="3XIRFW" id="ogNGNPXMIq" role="1ly_ph">
+                  <node concept="1_9egQ" id="ogNGNPXMIr" role="3XIRFZ">
+                    <node concept="3pqW6w" id="ogNGNPXMIA" role="1_9egR">
+                      <node concept="3ZVu4v" id="ogNGNPXN2R" role="3TlMhI">
+                        <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+                      </node>
+                      <node concept="YInwV" id="ogNGNPXN2S" role="3TlMhJ">
+                        <node concept="2BPB98" id="ogNGNPXMIu" role="1_9fRO">
+                          <node concept="2wJmCr" id="ogNGNPXMI$" role="1_9fRO">
+                            <node concept="2qmXGp" id="ogNGNPXMIy" role="1_9fRO">
+                              <node concept="2BPB98" id="ogNGNPXMIv" role="1_9fRO">
+                                <node concept="3wxyx2" id="ogNGNPXMIw" role="1_9fRO">
+                                  <node concept="3ZVu4v" id="ogNGNPXN6r" role="1_9fRO">
+                                    <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="1E4Tgc" id="ogNGNPXNk5" role="1ESnxz">
+                                <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                              </node>
+                            </node>
+                            <node concept="1AkAhK" id="ogNGNPXN6s" role="2wJmCp">
+                              <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRo3" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRo4" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMIO" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMIZ" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN2T" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+            </node>
+            <node concept="1S8S4T" id="ogNGNPXMIX" role="3TlMhJ">
+              <node concept="3wxxNl" id="ogNGNPXMIR" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <node concept="rcJHQ" id="ogNGNPXN2U" role="2umbIo">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+                </node>
+              </node>
+              <node concept="3O_q_g" id="ogNGNPXN2W" role="1S8S4V">
+                <ref role="3O_q_h" node="3RK4Y9HHljd" resolve="malloc_node" />
+                <node concept="3wxvTy" id="ogNGNPXN6u" role="3O_q_j">
+                  <node concept="rcJHQ" id="ogNGNPXN6t" role="3wxvTG">
+                    <property role="2caQfQ" value="false" />
+                    <property role="2c7vTL" value="false" />
+                    <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRo5" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRo6" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRo7" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRo8" role="19SJt6">
+                  <property role="19SUeA" value=" Create a new node.  Use the last node visited as the parent link. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRow" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMJ6" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMJb" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXN2X" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN2Y" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMJc" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMJd" role="3XIRFZ">
+              <node concept="Ea8Gl" id="ogNGNPXN2Z" role="2BFjQA" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoy" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMJn" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMJu" role="1_9egR">
+            <node concept="2wJmCr" id="ogNGNPXMJr" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXMJp" role="1_9fRO">
+                <node concept="3ZVu4v" id="ogNGNPXN30" role="1_9fRO">
+                  <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNv9" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN31" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN32" role="3TlMhJ" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMJy" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMJD" role="1_9egR">
+            <node concept="2wJmCr" id="ogNGNPXMJA" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXMJ$" role="1_9fRO">
+                <node concept="3ZVu4v" id="ogNGNPXN33" role="1_9fRO">
+                  <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNOA" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN34" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN35" role="3TlMhJ" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMJG" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMJL" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMJI" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXN36" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNJ0" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN37" role="3TlMhJ">
+              <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMJO" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMJT" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMJQ" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXN38" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNmL" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+              </node>
+            </node>
+            <node concept="3ZUYvv" id="ogNGNPXN39" role="3TlMhJ">
+              <ref role="3ZUYvu" node="ogNGNPXMGT" resolve="key" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMJW" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMK1" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMJY" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXN3a" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNGM" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="ogNGNPXMK0" role="3TlMhJ">
+              <property role="2hmy$m" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoW" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMK4" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMK8" role="1_9egR">
+            <node concept="3wxyx2" id="ogNGNPXMK5" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXN3b" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN3c" role="3TlMhJ">
+              <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRoY" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRoZ" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRp0" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRp1" role="19SJt6">
+                  <property role="19SUeA" value=" Insert at the NULL pointer that was reached " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRpb" role="3XIRFZ" />
+        <node concept="1_9egQ" id="3RK4Y9I13hR" role="3XIRFZ">
+          <node concept="3O_q_g" id="3RK4Y9I13hP" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMEM" resolve="avl_tree_balance_to_root" />
+            <node concept="3ZUYvv" id="3RK4Y9I13nb" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMGQ" resolve="tree" />
+            </node>
+            <node concept="3ZVu4v" id="3RK4Y9I13nU" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMKf" role="3XIRFZ">
+          <node concept="3TM6Ez" id="ogNGNPXMKg" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMKi" role="1_9fRO">
+              <node concept="3ZUYvv" id="ogNGNPXN3d" role="1_9fRO">
+                <ref role="3ZUYvu" node="ogNGNPXMGQ" resolve="tree" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNO8" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRpg" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRph" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRpi" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRpj" role="19SJt6">
+                  <property role="19SUeA" value=" Rebalance the tree, starting from the previous node. &#10;avl_tree_balance_to_root(tree, previous_node);&#10; Keep track of the number of entries " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRpt" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMKw" role="3XIRFZ">
+          <node concept="3ZVu4v" id="ogNGNPXN3e" role="2BFjQA">
+            <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMGP" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN3f" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqy" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqz" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRq$" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRq_" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Insert a new key-value pair into an AVL tree.&#10; *&#10; * @param tree            The tree.&#10; * @param key             The key to insert.&#10; * @param value           The value to insert.&#10; * @return                The newly created tree node containing the&#10; *                        key and value, or NULL if it was not possible&#10; *                        to allocate the new memory. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY7ev" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436115704_54" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMKL" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_get_replacement" />
+      <property role="2OOxQR" value="false" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMKR" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMKT" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN3g" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMKU" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMKW" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN3h" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMKX" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXML1" role="3XIRFZ">
+          <property role="TrG5h" value="left_subtree" />
+          <node concept="3wxxNl" id="ogNGNPXML2" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN3i" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMLa" role="3XIRFZ">
+          <property role="TrG5h" value="right_subtree" />
+          <node concept="3wxxNl" id="ogNGNPXMLb" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN3j" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMLj" role="3XIRFZ">
+          <property role="TrG5h" value="result" />
+          <node concept="3wxxNl" id="ogNGNPXMLk" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN3k" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMLs" role="3XIRFZ">
+          <property role="TrG5h" value="child" />
+          <node concept="3wxxNl" id="ogNGNPXMLt" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN3l" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXML_" role="3XIRFZ">
+          <property role="TrG5h" value="left_height" />
+          <node concept="26Vqph" id="ogNGNPXML$" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMLD" role="3XIRFZ">
+          <property role="TrG5h" value="right_height" />
+          <node concept="26Vqph" id="ogNGNPXMLC" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMLL" role="3XIRFZ">
+          <property role="TrG5h" value="side" />
+          <node concept="26Vqph" id="ogNGNPXMLK" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRox" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMLQ" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMLX" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN3m" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXML1" resolve="left_subtree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMLV" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMLT" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN3n" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMKU" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNL6" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN3o" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMM1" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMM8" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN3p" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMLa" resolve="right_subtree" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMM6" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMM4" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN3q" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMKU" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNkT" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN3r" role="2wJmCp">
+                <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoF" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMMb" role="3XIRFZ">
+          <node concept="2EHzL6" id="ogNGNPXMMk" role="c0U16">
+            <node concept="3TlM44" id="ogNGNPXMMg" role="3TlMhI">
+              <node concept="3ZVu4v" id="ogNGNPXN3s" role="3TlMhI">
+                <ref role="3ZVs_2" node="ogNGNPXML1" resolve="left_subtree" />
+              </node>
+              <node concept="Ea8Gl" id="ogNGNPXN3t" role="3TlMhJ" />
+            </node>
+            <node concept="3TlM44" id="ogNGNPXMMj" role="3TlMhJ">
+              <node concept="3ZVu4v" id="ogNGNPXN3u" role="3TlMhI">
+                <ref role="3ZVs_2" node="ogNGNPXMLa" resolve="right_subtree" />
+              </node>
+              <node concept="Ea8Gl" id="ogNGNPXN3v" role="3TlMhJ" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMMl" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMMm" role="3XIRFZ">
+              <node concept="Ea8Gl" id="ogNGNPXN3w" role="2BFjQA" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRoH" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRoI" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRoJ" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRoK" role="19SJt6">
+                  <property role="19SUeA" value=" No children? " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoO" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMMz" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMMC" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN3x" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXML_" resolve="left_height" />
+            </node>
+            <node concept="3O_q_g" id="ogNGNPXN3z" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+              <node concept="3ZVu4v" id="ogNGNPXN6v" role="3O_q_j">
+                <ref role="3ZVs_2" node="ogNGNPXML1" resolve="left_subtree" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRoQ" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRoR" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRoS" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRoT" role="19SJt6">
+                  <property role="19SUeA" value=" Pick a node from whichever subtree is taller.  This helps to&#10;&#9; * keep the tree balanced. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMMJ" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMMO" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN3$" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMLD" resolve="right_height" />
+            </node>
+            <node concept="3O_q_g" id="ogNGNPXN3A" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+              <node concept="3ZVu4v" id="ogNGNPXN6w" role="3O_q_j">
+                <ref role="3ZVs_2" node="ogNGNPXMLa" resolve="right_subtree" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRoV" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMMR" role="3XIRFZ">
+          <node concept="3Tl9Jn" id="ogNGNPXMMW" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXN3B" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXML_" resolve="left_height" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN3C" role="3TlMhJ">
+              <ref role="3ZVs_2" node="ogNGNPXMLD" resolve="right_height" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMMX" role="c0U17">
+            <node concept="1_9egQ" id="ogNGNPXMMY" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMN1" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN3D" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMLL" resolve="side" />
+                </node>
+                <node concept="1AkAhK" id="ogNGNPXN3E" role="3TlMhJ">
+                  <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMN6" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMN8" role="1ly_ph">
+              <node concept="1_9egQ" id="ogNGNPXMN9" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMNc" role="1_9egR">
+                  <node concept="3ZVu4v" id="ogNGNPXN3F" role="3TlMhI">
+                    <ref role="3ZVs_2" node="ogNGNPXMLL" resolve="side" />
+                  </node>
+                  <node concept="1AkAhK" id="ogNGNPXN3G" role="3TlMhJ">
+                    <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRp3" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMNl" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMNs" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN3H" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMNq" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMNo" role="1_9fRO">
+                <node concept="3ZUYvv" id="ogNGNPXN3I" role="1_9fRO">
+                  <ref role="3ZUYvu" node="ogNGNPXMKU" resolve="node" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNpT" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="3ZVu4v" id="ogNGNPXN3J" role="2wJmCp">
+                <ref role="3ZVs_2" node="ogNGNPXMLL" resolve="side" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRp5" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRp6" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRp7" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRp8" role="19SJt6">
+                  <property role="19SUeA" value=" Search down the tree, back towards the center. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRpl" role="3XIRFZ" />
+        <node concept="27v$Wf" id="ogNGNPXMNz" role="3XIRFZ">
+          <node concept="25Bbzn" id="ogNGNPXMNI" role="27v$We">
+            <node concept="2wJmCr" id="ogNGNPXMND" role="3TlMhI">
+              <node concept="2qmXGp" id="ogNGNPXMNB" role="1_9fRO">
+                <node concept="3ZVu4v" id="ogNGNPXN3K" role="1_9fRO">
+                  <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNnf" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="2BOcil" id="ogNGNPXMNG" role="2wJmCp">
+                <node concept="3TlMh9" id="ogNGNPXMNE" role="3TlMhI">
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="3ZVu4v" id="ogNGNPXN3L" role="3TlMhJ">
+                  <ref role="3ZVs_2" node="ogNGNPXMLL" resolve="side" />
+                </node>
+              </node>
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN3M" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMNJ" role="27v$W9">
+            <node concept="1_9egQ" id="ogNGNPXMNK" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMNT" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN3N" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+                </node>
+                <node concept="2wJmCr" id="ogNGNPXMNP" role="3TlMhJ">
+                  <node concept="2qmXGp" id="ogNGNPXMNN" role="1_9fRO">
+                    <node concept="3ZVu4v" id="ogNGNPXN3O" role="1_9fRO">
+                      <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNqn" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                    </node>
+                  </node>
+                  <node concept="2BOcil" id="ogNGNPXMNS" role="2wJmCp">
+                    <node concept="3TlMh9" id="ogNGNPXMNQ" role="3TlMhI">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                    <node concept="3ZVu4v" id="ogNGNPXN3P" role="3TlMhJ">
+                      <ref role="3ZVs_2" node="ogNGNPXMLL" resolve="side" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRpm" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMO2" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMO9" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN3Q" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMLs" resolve="child" />
+            </node>
+            <node concept="2wJmCr" id="ogNGNPXMO7" role="3TlMhJ">
+              <node concept="2qmXGp" id="ogNGNPXMO5" role="1_9fRO">
+                <node concept="3ZVu4v" id="ogNGNPXN3R" role="1_9fRO">
+                  <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+                </node>
+                <node concept="1E4Tgc" id="ogNGNPXNck" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+              </node>
+              <node concept="3ZVu4v" id="ogNGNPXN3S" role="2wJmCp">
+                <ref role="3ZVs_2" node="ogNGNPXMLL" resolve="side" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRpo" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRpp" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRpq" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRpr" role="19SJt6">
+                  <property role="19SUeA" value=" Unlink the result node, and hook in its remaining child&#10;&#9; * (if it has one) to replace it. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="ogNGNPXMOg" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN3U" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMxK" resolve="avl_tree_node_replace" />
+            <node concept="3ZUYvv" id="ogNGNPXN6x" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMKR" resolve="tree" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN6y" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN6z" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMLs" resolve="child" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRpv" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMOo" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN3W" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
+            <node concept="2qmXGp" id="ogNGNPXMOs" role="3O_q_j">
+              <node concept="3ZVu4v" id="ogNGNPXN6$" role="1_9fRO">
+                <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNMU" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRpw" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRpx" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRpy" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRpz" role="19SJt6">
+                  <property role="19SUeA" value=" Update the subtree height for the result node's old parent. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRp_" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMO$" role="3XIRFZ">
+          <node concept="3ZVu4v" id="ogNGNPXN3X" role="2BFjQA">
+            <ref role="3ZVs_2" node="ogNGNPXMLj" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMKQ" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN3Y" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqB" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqC" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqD" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqE" role="19SJt6">
+              <property role="19SUeA" value=" Find the nearest node to the given node, to replace it.&#10; * The node returned is unlinked from the tree.&#10; * Returns NULL if the node has no children. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY5$m" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436097381_53" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMOR" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_remove_node" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMOW" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMOY" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN3Z" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMOZ" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMP1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN40" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMP2" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMP6" role="3XIRFZ">
+          <property role="TrG5h" value="swap_node" />
+          <node concept="3wxxNl" id="ogNGNPXMP7" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN41" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMPf" role="3XIRFZ">
+          <property role="TrG5h" value="balance_startpoint" />
+          <node concept="3wxxNl" id="ogNGNPXMPg" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN42" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMPo" role="3XIRFZ">
+          <property role="TrG5h" value="i" />
+          <node concept="26Vqph" id="ogNGNPXMPn" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnp" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMPt" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMPz" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN43" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+            </node>
+            <node concept="3O_q_g" id="ogNGNPXN45" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMKL" resolve="avl_tree_node_get_replacement" />
+              <node concept="3ZUYvv" id="ogNGNPXN6_" role="3O_q_j">
+                <ref role="3ZUYvu" node="ogNGNPXMOW" resolve="tree" />
+              </node>
+              <node concept="3ZUYvv" id="ogNGNPXN6A" role="3O_q_j">
+                <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRnr" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRns" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRnt" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRnu" role="19SJt6">
+                  <property role="19SUeA" value=" The node to be removed must be swapped with an &quot;adjacent&quot;&#10;&#9; * node, ie. one which has the closest key to this one. Find&#10;&#9; * a node to swap with. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnw" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMPE" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMPJ" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXN46" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN47" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMPK" role="c0U17">
+            <node concept="1_9egQ" id="ogNGNPXMPL" role="3XIRFZ">
+              <node concept="3O_q_g" id="ogNGNPXN49" role="1_9egR">
+                <ref role="3O_q_h" node="ogNGNPXMxK" resolve="avl_tree_node_replace" />
+                <node concept="3ZUYvv" id="ogNGNPXN6B" role="3O_q_j">
+                  <ref role="3ZUYvu" node="ogNGNPXMOW" resolve="tree" />
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN6C" role="3O_q_j">
+                  <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+                </node>
+                <node concept="Ea8Gl" id="ogNGNPXN6D" role="3O_q_j" />
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlx" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRly" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRlz" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRl$" role="19SJt6">
+                      <property role="19SUeA" value=" This is a leaf node and has no children, therefore&#10;&#9;&#9; * it can be immediately removed. &#10; Unlink this node from its parent. " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="ogNGNPXRlH" role="3XIRFZ" />
+            <node concept="1_9egQ" id="ogNGNPXMQ0" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMQ5" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN4a" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMPf" resolve="balance_startpoint" />
+                </node>
+                <node concept="2qmXGp" id="ogNGNPXMQ3" role="3TlMhJ">
+                  <node concept="3ZUYvv" id="ogNGNPXN4b" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXN9i" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlJ" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRlK" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRlL" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRlM" role="19SJt6">
+                      <property role="19SUeA" value=" Start rebalancing from the parent of the original node " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMQf" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMQh" role="1ly_ph">
+              <node concept="c0U19" id="ogNGNPXMQi" role="3XIRFZ">
+                <node concept="3TlM44" id="ogNGNPXMQp" role="c0U16">
+                  <node concept="2qmXGp" id="ogNGNPXMQm" role="3TlMhI">
+                    <node concept="3ZVu4v" id="ogNGNPXN4c" role="1_9fRO">
+                      <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNHE" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                    </node>
+                  </node>
+                  <node concept="3ZUYvv" id="ogNGNPXN4d" role="3TlMhJ">
+                    <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+                  </node>
+                </node>
+                <node concept="3XIRFW" id="ogNGNPXMQq" role="c0U17">
+                  <node concept="1_9egQ" id="ogNGNPXMQr" role="3XIRFZ">
+                    <node concept="3pqW6w" id="ogNGNPXMQu" role="1_9egR">
+                      <node concept="3ZVu4v" id="ogNGNPXN4e" role="3TlMhI">
+                        <ref role="3ZVs_2" node="ogNGNPXMPf" resolve="balance_startpoint" />
+                      </node>
+                      <node concept="3ZVu4v" id="ogNGNPXN4f" role="3TlMhJ">
+                        <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1ly_i6" id="ogNGNPXMQz" role="ggAap">
+                  <node concept="3XIRFW" id="ogNGNPXMQ_" role="1ly_ph">
+                    <node concept="1_9egQ" id="ogNGNPXMQA" role="3XIRFZ">
+                      <node concept="3pqW6w" id="ogNGNPXMQF" role="1_9egR">
+                        <node concept="3ZVu4v" id="ogNGNPXN4g" role="3TlMhI">
+                          <ref role="3ZVs_2" node="ogNGNPXMPf" resolve="balance_startpoint" />
+                        </node>
+                        <node concept="2qmXGp" id="ogNGNPXMQD" role="3TlMhJ">
+                          <node concept="3ZVu4v" id="ogNGNPXN4h" role="1_9fRO">
+                            <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                          </node>
+                          <node concept="1E4Tgc" id="ogNGNPXNsV" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1z9TsT" id="ogNGNPXRkF" role="lGtFl">
+                  <node concept="OjmMv" id="ogNGNPXRkG" role="1w35rA">
+                    <node concept="19SGf9" id="ogNGNPXRkH" role="OjmMu">
+                      <node concept="19SUe$" id="ogNGNPXRkI" role="19SJt6">
+                        <property role="19SUeA" value=" We will start rebalancing from the old parent of the&#10;&#9;&#9; * swap node.  Sometimes, the old parent is the node we&#10;&#9;&#9; * are removing, in which case we must start rebalancing&#10;&#9;&#9; * from the swap node. " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="ogNGNPXRkT" role="3XIRFZ" />
+              <node concept="1_a8vi" id="ogNGNPXMQQ" role="3XIRFZ">
+                <node concept="uSsIJ" id="ogNGNPXN4i" role="1_amZ$">
+                  <node concept="3TlMh9" id="ogNGNPXMQT" role="uSsIC">
+                    <property role="2hmy$m" value="0" />
+                  </node>
+                  <node concept="3ZVu4v" id="ogNGNPXN6E" role="uS$WA">
+                    <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                  </node>
+                </node>
+                <node concept="3Tl9Jn" id="ogNGNPXMQY" role="1_amZB">
+                  <node concept="3ZVu4v" id="ogNGNPXN4j" role="3TlMhI">
+                    <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                  </node>
+                  <node concept="3TlMh9" id="ogNGNPXMQX" role="3TlMhJ">
+                    <property role="2hmy$m" value="2" />
+                  </node>
+                </node>
+                <node concept="3TM6Ez" id="ogNGNPXMQZ" role="1_amZy">
+                  <node concept="3ZVu4v" id="ogNGNPXN4k" role="1_9fRO">
+                    <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                  </node>
+                </node>
+                <node concept="3XIRFW" id="ogNGNPXMR1" role="1_amYn">
+                  <node concept="1_9egQ" id="ogNGNPXMR2" role="3XIRFZ">
+                    <node concept="3pqW6w" id="ogNGNPXMRd" role="1_9egR">
+                      <node concept="2wJmCr" id="ogNGNPXMR6" role="3TlMhI">
+                        <node concept="2qmXGp" id="ogNGNPXMR4" role="1_9fRO">
+                          <node concept="3ZVu4v" id="ogNGNPXN4l" role="1_9fRO">
+                            <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                          </node>
+                          <node concept="1E4Tgc" id="ogNGNPXNKi" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                          </node>
+                        </node>
+                        <node concept="3ZVu4v" id="ogNGNPXN4m" role="2wJmCp">
+                          <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                        </node>
+                      </node>
+                      <node concept="2wJmCr" id="ogNGNPXMRb" role="3TlMhJ">
+                        <node concept="2qmXGp" id="ogNGNPXMR9" role="1_9fRO">
+                          <node concept="3ZUYvv" id="ogNGNPXN4n" role="1_9fRO">
+                            <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+                          </node>
+                          <node concept="1E4Tgc" id="ogNGNPXNs3" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                          </node>
+                        </node>
+                        <node concept="3ZVu4v" id="ogNGNPXN4o" role="2wJmCp">
+                          <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3XISUE" id="ogNGNPXRkr" role="3XIRFZ" />
+                  <node concept="c0U19" id="ogNGNPXMRg" role="3XIRFZ">
+                    <node concept="25Bbzn" id="ogNGNPXMRp" role="c0U16">
+                      <node concept="2wJmCr" id="ogNGNPXMRm" role="3TlMhI">
+                        <node concept="2qmXGp" id="ogNGNPXMRk" role="1_9fRO">
+                          <node concept="3ZVu4v" id="ogNGNPXN4p" role="1_9fRO">
+                            <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                          </node>
+                          <node concept="1E4Tgc" id="ogNGNPXNmj" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                          </node>
+                        </node>
+                        <node concept="3ZVu4v" id="ogNGNPXN4q" role="2wJmCp">
+                          <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                        </node>
+                      </node>
+                      <node concept="Ea8Gl" id="ogNGNPXN4r" role="3TlMhJ" />
+                    </node>
+                    <node concept="3XIRFW" id="ogNGNPXMRq" role="c0U17">
+                      <node concept="1_9egQ" id="ogNGNPXMRr" role="3XIRFZ">
+                        <node concept="3pqW6w" id="ogNGNPXMR$" role="1_9egR">
+                          <node concept="2qmXGp" id="ogNGNPXMRx" role="3TlMhI">
+                            <node concept="2wJmCr" id="ogNGNPXMRv" role="1_9fRO">
+                              <node concept="2qmXGp" id="ogNGNPXMRt" role="1_9fRO">
+                                <node concept="3ZVu4v" id="ogNGNPXN4s" role="1_9fRO">
+                                  <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                                </node>
+                                <node concept="1E4Tgc" id="ogNGNPXNIy" role="1ESnxz">
+                                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                                </node>
+                              </node>
+                              <node concept="3ZVu4v" id="ogNGNPXN4t" role="2wJmCp">
+                                <ref role="3ZVs_2" node="ogNGNPXMPo" resolve="i" />
+                              </node>
+                            </node>
+                            <node concept="1E4Tgc" id="ogNGNPXNRL" role="1ESnxz">
+                              <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+                            </node>
+                          </node>
+                          <node concept="3ZVu4v" id="ogNGNPXN4u" role="3TlMhJ">
+                            <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1z9TsT" id="ogNGNPXRkU" role="lGtFl">
+                  <node concept="OjmMv" id="ogNGNPXRkV" role="1w35rA">
+                    <node concept="19SGf9" id="ogNGNPXRkW" role="OjmMu">
+                      <node concept="19SUe$" id="ogNGNPXRkX" role="19SJt6">
+                        <property role="19SUeA" value=" Copy references in the node into the swap node " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="ogNGNPXRkZ" role="3XIRFZ" />
+              <node concept="1_9egQ" id="ogNGNPXMRQ" role="3XIRFZ">
+                <node concept="3pqW6w" id="ogNGNPXMRX" role="1_9egR">
+                  <node concept="2qmXGp" id="ogNGNPXMRS" role="3TlMhI">
+                    <node concept="3ZVu4v" id="ogNGNPXN4v" role="1_9fRO">
+                      <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXN8q" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+                    </node>
+                  </node>
+                  <node concept="2qmXGp" id="ogNGNPXMRV" role="3TlMhJ">
+                    <node concept="3ZUYvv" id="ogNGNPXN4w" role="1_9fRO">
+                      <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNpv" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="ogNGNPXRl8" role="3XIRFZ" />
+              <node concept="1_9egQ" id="ogNGNPXMS1" role="3XIRFZ">
+                <node concept="3O_q_g" id="ogNGNPXN4y" role="1_9egR">
+                  <ref role="3O_q_h" node="ogNGNPXMxK" resolve="avl_tree_node_replace" />
+                  <node concept="3ZUYvv" id="ogNGNPXN6F" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMOW" resolve="tree" />
+                  </node>
+                  <node concept="3ZUYvv" id="ogNGNPXN6G" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+                  </node>
+                  <node concept="3ZVu4v" id="ogNGNPXN6H" role="3O_q_j">
+                    <ref role="3ZVs_2" node="ogNGNPXMP6" resolve="swap_node" />
+                  </node>
+                </node>
+                <node concept="1z9TsT" id="ogNGNPXRla" role="lGtFl">
+                  <node concept="OjmMv" id="ogNGNPXRlb" role="1w35rA">
+                    <node concept="19SGf9" id="ogNGNPXRlc" role="OjmMu">
+                      <node concept="19SUe$" id="ogNGNPXRld" role="19SJt6">
+                        <property role="19SUeA" value=" Link the parent's reference to this node " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnM" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXN4_" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN6J" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:1fAuj8Twc4C" resolve="free" />
+            <node concept="3ZUYvv" id="ogNGNPXN6X" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMOZ" resolve="node" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRnO" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRnP" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRnQ" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRnR" role="19SJt6">
+                  <property role="19SUeA" value=" Destroy the node " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnX" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMSF" role="3XIRFZ">
+          <node concept="1FldXs" id="ogNGNPXMSG" role="1_9egR">
+            <node concept="2qmXGp" id="ogNGNPXMSI" role="1_9fRO">
+              <node concept="3ZUYvv" id="ogNGNPXN4G" role="1_9fRO">
+                <ref role="3ZUYvu" node="ogNGNPXMOW" resolve="tree" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNst" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRnY" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRnZ" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRo0" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRo1" role="19SJt6">
+                  <property role="19SUeA" value=" Keep track of the number of nodes " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRop" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMSQ" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN4I" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMEM" resolve="avl_tree_balance_to_root" />
+            <node concept="3ZUYvv" id="ogNGNPXN6K" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMOW" resolve="tree" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN6L" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMPf" resolve="balance_startpoint" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRor" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRos" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRot" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRou" role="19SJt6">
+                  <property role="19SUeA" value=" Rebalance the tree " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ogNGNPXMOV" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqG" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqH" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqI" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqJ" role="19SJt6">
+              <property role="19SUeA" value=" Remove a node from a tree &#10;*&#10; * Remove a node from a tree.&#10; *&#10; * @param tree            The tree.&#10; * @param node            The node to remove " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY3EY" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436061164_52" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMTk" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_remove" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMTp" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMTr" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN4J" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMTs" role="1UOdpc">
+        <property role="TrG5h" value="key" />
+        <node concept="rcJHQ" id="ogNGNPXN4K" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMTu" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMTy" role="3XIRFZ">
+          <property role="TrG5h" value="node" />
+          <node concept="3wxxNl" id="ogNGNPXMTz" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN4L" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmi" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmj" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMTC" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMTI" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN4M" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMTy" resolve="node" />
+            </node>
+            <node concept="3O_q_g" id="ogNGNPXN4O" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMUA" resolve="avl_tree_lookup_node" />
+              <node concept="3ZUYvv" id="ogNGNPXN6M" role="3O_q_j">
+                <ref role="3ZUYvu" node="ogNGNPXMTp" resolve="tree" />
+              </node>
+              <node concept="3ZUYvv" id="ogNGNPXN6N" role="3O_q_j">
+                <ref role="3ZUYvu" node="ogNGNPXMTs" resolve="key" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRmk" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRml" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRmm" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmn" role="19SJt6">
+                  <property role="19SUeA" value=" Find the node to remove " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmK" role="3XIRFZ" />
+        <node concept="c0U19" id="ogNGNPXMTP" role="3XIRFZ">
+          <node concept="3TlM44" id="ogNGNPXMTU" role="c0U16">
+            <node concept="3ZVu4v" id="ogNGNPXN4P" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMTy" resolve="node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN4Q" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMTV" role="c0U17">
+            <node concept="3XISUE" id="ogNGNPXRlB" role="3XIRFZ" />
+            <node concept="2BFjQ_" id="ogNGNPXMTW" role="3XIRFZ">
+              <node concept="3TlMh9" id="ogNGNPXMTX" role="2BFjQA">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="1z9TsT" id="ogNGNPXRlC" role="lGtFl">
+                <node concept="OjmMv" id="ogNGNPXRlD" role="1w35rA">
+                  <node concept="19SGf9" id="ogNGNPXRlE" role="OjmMu">
+                    <node concept="19SUe$" id="ogNGNPXRlF" role="19SJt6">
+                      <property role="19SUeA" value=" Not found in tree " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRn2" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMUa" role="3XIRFZ">
+          <node concept="3O_q_g" id="ogNGNPXN4S" role="1_9egR">
+            <ref role="3O_q_h" node="ogNGNPXMOR" resolve="avl_tree_remove_node" />
+            <node concept="3ZUYvv" id="ogNGNPXN6O" role="3O_q_j">
+              <ref role="3ZUYvu" node="ogNGNPXMTp" resolve="tree" />
+            </node>
+            <node concept="3ZVu4v" id="ogNGNPXN6P" role="3O_q_j">
+              <ref role="3ZVs_2" node="ogNGNPXMTy" resolve="node" />
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRn3" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRn4" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRn5" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRn6" role="19SJt6">
+                  <property role="19SUeA" value=" Remove the node " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnE" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMUl" role="3XIRFZ">
+          <node concept="3TlMh9" id="ogNGNPXMUm" role="2BFjQA">
+            <property role="2hmy$m" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqph" id="ogNGNPXMTo" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqL" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqM" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqN" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqO" role="19SJt6">
+              <property role="19SUeA" value=" Remove a node by key &#10;*&#10; * Remove an entry from a tree, specifying the key of the node to&#10; * remove.&#10; *&#10; * @param tree            The tree.&#10; * @param key             The key of the node to remove.&#10; * @return                Zero (false) if no node with the specified key was&#10; *                        found in the tree, non-zero (true) if a node with&#10; *                        the specified key was removed. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY2xM" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436047836_51" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMUA" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_lookup_node" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMUG" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMUI" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN4T" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMUJ" role="1UOdpc">
+        <property role="TrG5h" value="key" />
+        <node concept="rcJHQ" id="ogNGNPXN4U" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMUL" role="3XIRFX">
+        <node concept="3XIRlf" id="ogNGNPXMUP" role="3XIRFZ">
+          <property role="TrG5h" value="node" />
+          <node concept="3wxxNl" id="ogNGNPXMUQ" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="ogNGNPXN4V" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="ogNGNPXMUY" role="3XIRFZ">
+          <property role="TrG5h" value="diff" />
+          <node concept="26Vqph" id="ogNGNPXMUX" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRmD" role="3XIRFZ" />
+        <node concept="3XISUE" id="ogNGNPXRmE" role="3XIRFZ" />
+        <node concept="1_9egQ" id="ogNGNPXMV3" role="3XIRFZ">
+          <node concept="3pqW6w" id="ogNGNPXMV8" role="1_9egR">
+            <node concept="3ZVu4v" id="ogNGNPXN4W" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+            </node>
+            <node concept="2qmXGp" id="ogNGNPXMV6" role="3TlMhJ">
+              <node concept="3ZUYvv" id="ogNGNPXN4X" role="1_9fRO">
+                <ref role="3ZUYvu" node="ogNGNPXMUG" resolve="tree" />
+              </node>
+              <node concept="1E4Tgc" id="ogNGNPXNNI" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+              </node>
+            </node>
+          </node>
+          <node concept="1z9TsT" id="ogNGNPXRmF" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRmG" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRmH" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRmI" role="19SJt6">
+                  <property role="19SUeA" value=" Search down the tree and attempt to find the node which&#10;&#9; * has the specified key " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnh" role="3XIRFZ" />
+        <node concept="27v$Wf" id="ogNGNPXMVf" role="3XIRFZ">
+          <node concept="25Bbzn" id="ogNGNPXMVk" role="27v$We">
+            <node concept="3ZVu4v" id="ogNGNPXN4Y" role="3TlMhI">
+              <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+            </node>
+            <node concept="Ea8Gl" id="ogNGNPXN4Z" role="3TlMhJ" />
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMVl" role="27v$W9">
+            <node concept="3XISUE" id="ogNGNPXRlA" role="3XIRFZ" />
+            <node concept="1_9egQ" id="ogNGNPXMVm" role="3XIRFZ">
+              <node concept="3pqW6w" id="ogNGNPXMVu" role="1_9egR">
+                <node concept="3ZVu4v" id="ogNGNPXN50" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMUY" resolve="diff" />
+                </node>
+                <node concept="3O_q_g" id="ogNGNPXN52" role="3TlMhJ">
+                  <ref role="3O_q_h" node="ogNGNPXMG1" resolve="compare_func" />
+                  <node concept="3ZUYvv" id="ogNGNPXN6Q" role="3O_q_j">
+                    <ref role="3ZUYvu" node="ogNGNPXMUJ" resolve="key" />
+                  </node>
+                  <node concept="2qmXGp" id="ogNGNPXMVs" role="3O_q_j">
+                    <node concept="3ZVu4v" id="ogNGNPXN6R" role="1_9fRO">
+                      <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+                    </node>
+                    <node concept="1E4Tgc" id="ogNGNPXNlP" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="ogNGNPXRlP" role="3XIRFZ" />
+            <node concept="c0U19" id="ogNGNPXMVy" role="3XIRFZ">
+              <node concept="3TlM44" id="ogNGNPXMVB" role="c0U16">
+                <node concept="3ZVu4v" id="ogNGNPXN53" role="3TlMhI">
+                  <ref role="3ZVs_2" node="ogNGNPXMUY" resolve="diff" />
+                </node>
+                <node concept="3TlMh9" id="ogNGNPXMVA" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+              </node>
+              <node concept="3XIRFW" id="ogNGNPXMVC" role="c0U17">
+                <node concept="3XISUE" id="ogNGNPXRkz" role="3XIRFZ" />
+                <node concept="3XISUE" id="ogNGNPXRk$" role="3XIRFZ" />
+                <node concept="2BFjQ_" id="ogNGNPXMVD" role="3XIRFZ">
+                  <node concept="3ZVu4v" id="ogNGNPXN54" role="2BFjQA">
+                    <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+                  </node>
+                  <node concept="1z9TsT" id="ogNGNPXRk_" role="lGtFl">
+                    <node concept="OjmMv" id="ogNGNPXRkA" role="1w35rA">
+                      <node concept="19SGf9" id="ogNGNPXRkB" role="OjmMu">
+                        <node concept="19SUe$" id="ogNGNPXRkC" role="19SJt6">
+                          <property role="19SUeA" value=" Keys are equal: return this node " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="gg_gk" id="ogNGNPXMVO" role="gg_kh">
+                <node concept="3Tl9Jn" id="ogNGNPXMVS" role="gg_gt">
+                  <node concept="3ZVu4v" id="ogNGNPXN55" role="3TlMhI">
+                    <ref role="3ZVs_2" node="ogNGNPXMUY" resolve="diff" />
+                  </node>
+                  <node concept="3TlMh9" id="ogNGNPXMVR" role="3TlMhJ">
+                    <property role="2hmy$m" value="0" />
+                  </node>
+                </node>
+                <node concept="3XIRFW" id="ogNGNPXMVT" role="gg_gl">
+                  <node concept="1_9egQ" id="ogNGNPXMVU" role="3XIRFZ">
+                    <node concept="3pqW6w" id="ogNGNPXMW1" role="1_9egR">
+                      <node concept="3ZVu4v" id="ogNGNPXN56" role="3TlMhI">
+                        <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+                      </node>
+                      <node concept="2wJmCr" id="ogNGNPXMVZ" role="3TlMhJ">
+                        <node concept="2qmXGp" id="ogNGNPXMVX" role="1_9fRO">
+                          <node concept="3ZVu4v" id="ogNGNPXN57" role="1_9fRO">
+                            <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+                          </node>
+                          <node concept="1E4Tgc" id="ogNGNPXNud" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                          </node>
+                        </node>
+                        <node concept="1AkAhK" id="ogNGNPXN58" role="2wJmCp">
+                          <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1ly_i6" id="ogNGNPXMW6" role="ggAap">
+                <node concept="3XIRFW" id="ogNGNPXMW8" role="1ly_ph">
+                  <node concept="1_9egQ" id="ogNGNPXMW9" role="3XIRFZ">
+                    <node concept="3pqW6w" id="ogNGNPXMWg" role="1_9egR">
+                      <node concept="3ZVu4v" id="ogNGNPXN59" role="3TlMhI">
+                        <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+                      </node>
+                      <node concept="2wJmCr" id="ogNGNPXMWe" role="3TlMhJ">
+                        <node concept="2qmXGp" id="ogNGNPXMWc" role="1_9fRO">
+                          <node concept="3ZVu4v" id="ogNGNPXN5a" role="1_9fRO">
+                            <ref role="3ZVs_2" node="ogNGNPXMUP" resolve="node" />
+                          </node>
+                          <node concept="1E4Tgc" id="ogNGNPXNM2" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                          </node>
+                        </node>
+                        <node concept="1AkAhK" id="ogNGNPXN5b" role="2wJmCp">
+                          <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ogNGNPXRnz" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="ogNGNPXMWx" role="3XIRFZ">
+          <node concept="Ea8Gl" id="ogNGNPXN5c" role="2BFjQA" />
+          <node concept="1z9TsT" id="ogNGNPXRn$" role="lGtFl">
+            <node concept="OjmMv" id="ogNGNPXRn_" role="1w35rA">
+              <node concept="19SGf9" id="ogNGNPXRnA" role="OjmMu">
+                <node concept="19SUe$" id="ogNGNPXRnB" role="19SJt6">
+                  <property role="19SUeA" value=" Not found " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMUF" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN5d" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqQ" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqR" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqS" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqT" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Search an AVL tree for a node with a particular key.  This uses&#10; * the tree as a mapping.&#10; *&#10; * @param tree            The AVL tree to search.&#10; * @param key             The key to search for.&#10; * @return                The tree node containing the given key, or NULL&#10; *                        if no entry with the given key is found. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY1n6" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436037237_50" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMWM" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_root_node" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMWS" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMWU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN5e" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMWV" role="3XIRFX">
+        <node concept="2BFjQ_" id="ogNGNPXMWW" role="3XIRFZ">
+          <node concept="2qmXGp" id="ogNGNPXMWY" role="2BFjQA">
+            <node concept="3ZUYvv" id="ogNGNPXN5f" role="1_9fRO">
+              <ref role="3ZUYvu" node="ogNGNPXMWS" resolve="tree" />
+            </node>
+            <node concept="1E4Tgc" id="ogNGNPXNp5" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMWR" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN5g" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRqV" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRqW" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRqX" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRqY" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Find the root node of a tree.&#10; *&#10; * @param tree            The tree.&#10; * @return                The root node of the tree, or NULL if the tree is&#10; *                        empty. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPY0g7" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436031653_49" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMX8" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_key" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMXd" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMXf" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN5h" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMXg" role="3XIRFX">
+        <node concept="2BFjQ_" id="ogNGNPXMXh" role="3XIRFZ">
+          <node concept="2qmXGp" id="ogNGNPXMXj" role="2BFjQA">
+            <node concept="3ZUYvv" id="ogNGNPXN5i" role="1_9fRO">
+              <ref role="3ZUYvu" node="ogNGNPXMXd" resolve="node" />
+            </node>
+            <node concept="1E4Tgc" id="ogNGNPXNvX" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="rcJHQ" id="ogNGNPXN5j" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRr0" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRr1" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRr2" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRr3" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Retrieve the key for a given tree node.&#10; *&#10; * @param node            The tree node.&#10; * @return                The key to the given node. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPXZ9b" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436027899_48" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMXt" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_child" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMXz" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMX_" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN5k" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="ogNGNPXMXA" role="1UOdpc">
+        <property role="TrG5h" value="side" />
+        <node concept="rcJHQ" id="ogNGNPXN5l" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMoO" resolve="AVLTreeNodeSide" />
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMXC" role="3XIRFX">
+        <node concept="c0U19" id="ogNGNPXMXD" role="3XIRFZ">
+          <node concept="2EHzL4" id="ogNGNPXMXM" role="c0U16">
+            <node concept="3TlM44" id="ogNGNPXMXI" role="3TlMhI">
+              <node concept="3ZUYvv" id="ogNGNPXN5m" role="3TlMhI">
+                <ref role="3ZUYvu" node="ogNGNPXMXA" resolve="side" />
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN5n" role="3TlMhJ">
+                <ref role="1AkAhZ" node="ogNGNPXMo_" resolve="AVL_TREE_NODE_LEFT" />
+              </node>
+            </node>
+            <node concept="3TlM44" id="ogNGNPXMXL" role="3TlMhJ">
+              <node concept="3ZUYvv" id="ogNGNPXN5o" role="3TlMhI">
+                <ref role="3ZUYvu" node="ogNGNPXMXA" resolve="side" />
+              </node>
+              <node concept="1AkAhK" id="ogNGNPXN5p" role="3TlMhJ">
+                <ref role="1AkAhZ" node="ogNGNPXMoB" resolve="AVL_TREE_NODE_RIGHT" />
+              </node>
+            </node>
+          </node>
+          <node concept="3XIRFW" id="ogNGNPXMXN" role="c0U17">
+            <node concept="2BFjQ_" id="ogNGNPXMXO" role="3XIRFZ">
+              <node concept="2wJmCr" id="ogNGNPXMXS" role="2BFjQA">
+                <node concept="2qmXGp" id="ogNGNPXMXQ" role="1_9fRO">
+                  <node concept="3ZUYvv" id="ogNGNPXN5q" role="1_9fRO">
+                    <ref role="3ZUYvu" node="ogNGNPXMXz" resolve="node" />
+                  </node>
+                  <node concept="1E4Tgc" id="ogNGNPXN9G" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                  </node>
+                </node>
+                <node concept="3ZUYvv" id="ogNGNPXN5r" role="2wJmCp">
+                  <ref role="3ZUYvu" node="ogNGNPXMXA" resolve="side" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ly_i6" id="ogNGNPXMXY" role="ggAap">
+            <node concept="3XIRFW" id="ogNGNPXMY0" role="1ly_ph">
+              <node concept="2BFjQ_" id="ogNGNPXMY1" role="3XIRFZ">
+                <node concept="Ea8Gl" id="ogNGNPXN5s" role="2BFjQA" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMXy" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN5t" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRr5" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRr6" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRr7" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRr8" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Find the child of a given tree node.&#10; *&#10; * @param node            The tree node.&#10; * @param side            Which child node to get (left or right)&#10; * @return                The child of the tree node, or NULL if the&#10; *                        node has no child on the given side. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPXY2i" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436022449_47" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMYg" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_node_parent" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMYm" role="1UOdpc">
+        <property role="TrG5h" value="node" />
+        <node concept="3wxxNl" id="ogNGNPXMYo" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN5u" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMYp" role="3XIRFX">
+        <node concept="2BFjQ_" id="ogNGNPXMYq" role="3XIRFZ">
+          <node concept="2qmXGp" id="ogNGNPXMYs" role="2BFjQA">
+            <node concept="3ZUYvv" id="ogNGNPXN5v" role="1_9fRO">
+              <ref role="3ZUYvu" node="ogNGNPXMYm" resolve="node" />
+            </node>
+            <node concept="1E4Tgc" id="ogNGNPXNKG" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="ogNGNPXMYl" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="ogNGNPXN5w" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRra" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRrb" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRrc" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRrd" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Find the parent node of a given tree node.&#10; *&#10; * @param node            The tree node.&#10; * @return                The parent node of the tree node, or NULL if&#10; *                        this is the root node. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ogNGNPXWVs" role="N3F5h">
+      <property role="TrG5h" value="empty_1478436018244_46" />
+    </node>
+    <node concept="N3Fnx" id="ogNGNPXMYA" role="N3F5h">
+      <property role="TrG5h" value="avl_tree_num_entries" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19RgSI" id="ogNGNPXMYF" role="1UOdpc">
+        <property role="TrG5h" value="tree" />
+        <node concept="3wxxNl" id="ogNGNPXMYH" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXN5x" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XIRFW" id="ogNGNPXMYI" role="3XIRFX">
+        <node concept="2BFjQ_" id="ogNGNPXMYJ" role="3XIRFZ">
+          <node concept="2qmXGp" id="ogNGNPXMYL" role="2BFjQA">
+            <node concept="3ZUYvv" id="ogNGNPXN5y" role="1_9fRO">
+              <ref role="3ZUYvu" node="ogNGNPXMYF" resolve="tree" />
+            </node>
+            <node concept="1E4Tgc" id="ogNGNPXNJq" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqpb" id="ogNGNPXMYE" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRrf" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRrg" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRrh" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRri" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * Retrieve the number of entries in the tree.&#10; *&#10; * @param tree            The tree.&#10; * @return                The number of key-value pairs stored in the tree. " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="3RK4Y9HGgt7">
+    <property role="TrG5h" value="_080_avl_harness" />
+    <node concept="1S7NMz" id="3RK4Y9HGgt8" role="N3F5h">
+      <property role="TrG5h" value="insertedKeys" />
+      <node concept="3J0A42" id="3RK4Y9HGgt9" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="26Vqqz" id="3RK4Y9HGgta" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HGgtb" role="1YbSNA">
+          <property role="2hmy$m" value="10" />
+        </node>
+      </node>
+      <node concept="3o3WLD" id="3RK4Y9HGgtc" role="1cecVj">
+        <node concept="3TlMh9" id="3RK4Y9HGgtd" role="3o3WLE">
+          <property role="2hmy$m" value="0" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HGgte" role="3o3WLE">
+          <property role="2hmy$m" value="1" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HGgtf" role="3o3WLE">
+          <property role="2hmy$m" value="2" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HGgtg" role="3o3WLE">
+          <property role="2hmy$m" value="3" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HGgth" role="3o3WLE">
+          <property role="2hmy$m" value="4" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HGgti" role="3o3WLE">
+          <property role="2hmy$m" value="5" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HKKpI" role="3o3WLE">
+          <property role="2hmy$m" value="6" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HKKvA" role="3o3WLE">
+          <property role="2hmy$m" value="7" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HKK_G" role="3o3WLE">
+          <property role="2hmy$m" value="8" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HKKL3" role="3o3WLE">
+          <property role="2hmy$m" value="9" />
+        </node>
+      </node>
+    </node>
+    <node concept="1S7NMz" id="3RK4Y9HGgtj" role="N3F5h">
+      <property role="TrG5h" value="insertedValues" />
+      <node concept="26Vqqz" id="3RK4Y9HGgtk" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="3RK4Y9HGgtl" role="1cecVj">
+        <property role="2hmy$m" value="42" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HGgtm" role="N3F5h">
+      <property role="TrG5h" value="empty_1478380837800_34" />
+    </node>
+    <node concept="N3Fnx" id="3RK4Y9HGgtn" role="N3F5h">
+      <property role="TrG5h" value="_080_avlVerificationCase" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="3RK4Y9HGgto" role="3XIRFX">
+        <node concept="3XIRlf" id="3RK4Y9HGgtp" role="3XIRFZ">
+          <property role="TrG5h" value="myTree" />
+          <node concept="3wxxNl" id="3RK4Y9HGgtq" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="rcJHQ" id="3RK4Y9HGgtr" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+            </node>
+          </node>
+          <node concept="3O_q_g" id="3RK4Y9HGgts" role="3XIe9u">
+            <ref role="3O_q_h" node="ogNGNPXMrk" resolve="avl_tree_new" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="3RK4Y9HGgug" role="3XIRFZ">
+          <property role="TrG5h" value="leftHight" />
+          <node concept="26Vqph" id="3RK4Y9HGguh" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="3RK4Y9HGgui" role="3XIe9u">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="3RK4Y9HGgut" role="3XIRFZ">
+          <property role="TrG5h" value="rightHight" />
+          <node concept="26Vqph" id="3RK4Y9HGguu" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="3RK4Y9HGguv" role="3XIe9u">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="3RK4Y9HGgtt" role="3XIRFZ" />
+        <node concept="n2Vfv" id="3RK4Y9HGgtu" role="3XIRFZ">
+          <property role="TrG5h" value="i" />
+          <node concept="1vV05I" id="3RK4Y9HGgtv" role="n2wFf">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="3RK4Y9HGgtw" role="1vV05J">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3TlMh9" id="3RK4Y9HGgtx" role="1vV05C">
+              <property role="2hmy$m" value="3" />
+            </node>
+          </node>
+          <node concept="3XIRFW" id="3RK4Y9HGgty" role="n2wFg">
+            <node concept="2c3wGG" id="3RK4Y9HGgtz" role="3XIRFZ">
+              <node concept="1_9egQ" id="3RK4Y9HGgt$" role="3XIRFZ">
+                <node concept="3O_q_g" id="3RK4Y9HGgt_" role="1_9egR">
+                  <ref role="3O_q_h" node="ogNGNPXMGK" resolve="avl_tree_insert" />
+                  <node concept="3ZVu4v" id="3RK4Y9HGgtA" role="3O_q_j">
+                    <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                  </node>
+                  <node concept="2wJmCr" id="3RK4Y9HGgtB" role="3O_q_j">
+                    <node concept="1f68ZN" id="3RK4Y9HGgtC" role="2wJmCp">
+                      <ref role="1f68ZM" node="3RK4Y9HGgtu" resolve="i" />
+                    </node>
+                    <node concept="1S7827" id="3RK4Y9HGgtD" role="1_9fRO">
+                      <ref role="1S7826" node="3RK4Y9HGgt8" resolve="insertedKeys" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="3RK4Y9HGgtE" role="3XIRFZ" />
+              <node concept="c0U19" id="3RK4Y9HGgtF" role="3XIRFZ">
+                <node concept="3XIRFW" id="3RK4Y9HGgtG" role="c0U17">
+                  <node concept="1QiMYF" id="3RK4Y9HGgtH" role="3XIRFZ">
+                    <node concept="OjmMv" id="3RK4Y9HGgtI" role="3SJzmv">
+                      <node concept="19SGf9" id="3RK4Y9HGgtJ" role="OjmMu">
+                        <node concept="19SUe$" id="3RK4Y9HGgtK" role="19SJt6">
+                          <property role="19SUeA" value="if more than 3 elements are inserted" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3XIRlf" id="3RK4Y9HGgtL" role="3XIRFZ">
+                    <property role="TrG5h" value="root" />
+                    <node concept="3wxxNl" id="3RK4Y9HGgtM" role="2C2TGm">
+                      <property role="2caQfQ" value="false" />
+                      <property role="2c7vTL" value="false" />
+                      <node concept="rcJHQ" id="3RK4Y9HGgtN" role="2umbIo">
+                        <property role="2caQfQ" value="false" />
+                        <property role="2c7vTL" value="false" />
+                        <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+                      </node>
+                    </node>
+                    <node concept="2qmXGp" id="3RK4Y9HGgtO" role="3XIe9u">
+                      <node concept="1E4Tgc" id="3RK4Y9HGgtP" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                      </node>
+                      <node concept="3ZVu4v" id="3RK4Y9HGgtQ" role="1_9fRO">
+                        <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3XIRlf" id="3RK4Y9HGgtR" role="3XIRFZ">
+                    <property role="TrG5h" value="leftSubTree" />
+                    <node concept="3wxxNl" id="3RK4Y9HGgtS" role="2C2TGm">
+                      <property role="2caQfQ" value="false" />
+                      <property role="2c7vTL" value="false" />
+                      <node concept="rcJHQ" id="3RK4Y9HGgtT" role="2umbIo">
+                        <property role="2caQfQ" value="false" />
+                        <property role="2c7vTL" value="false" />
+                        <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+                      </node>
+                    </node>
+                    <node concept="2wJmCr" id="3RK4Y9HGgtU" role="3XIe9u">
+                      <node concept="3TlMh9" id="3RK4Y9HGgtV" role="2wJmCp">
+                        <property role="2hmy$m" value="0" />
+                      </node>
+                      <node concept="2qmXGp" id="3RK4Y9HGgtW" role="1_9fRO">
+                        <node concept="1E4Tgc" id="3RK4Y9HGgtX" role="1ESnxz">
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                        </node>
+                        <node concept="3ZVu4v" id="3RK4Y9HGgtY" role="1_9fRO">
+                          <ref role="3ZVs_2" node="3RK4Y9HGgtL" resolve="root" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3XIRlf" id="3RK4Y9HGgtZ" role="3XIRFZ">
+                    <property role="TrG5h" value="rightSubTree" />
+                    <node concept="3wxxNl" id="3RK4Y9HGgu0" role="2C2TGm">
+                      <property role="2caQfQ" value="false" />
+                      <property role="2c7vTL" value="false" />
+                      <node concept="rcJHQ" id="3RK4Y9HGgu1" role="2umbIo">
+                        <property role="2caQfQ" value="false" />
+                        <property role="2c7vTL" value="false" />
+                        <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+                      </node>
+                    </node>
+                    <node concept="2wJmCr" id="3RK4Y9HGgu2" role="3XIe9u">
+                      <node concept="3TlMh9" id="3RK4Y9HGgu3" role="2wJmCp">
+                        <property role="2hmy$m" value="1" />
+                      </node>
+                      <node concept="2qmXGp" id="3RK4Y9HGgu4" role="1_9fRO">
+                        <node concept="1E4Tgc" id="3RK4Y9HGgu5" role="1ESnxz">
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                        </node>
+                        <node concept="3ZVu4v" id="3RK4Y9HGgu6" role="1_9fRO">
+                          <ref role="3ZVs_2" node="3RK4Y9HGgtL" resolve="root" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Y9XUq" id="3RK4Y9HGgu7" role="3XIRFZ">
+                    <node concept="2EHzL4" id="3RK4Y9HGgu8" role="Y9XUp">
+                      <node concept="25Bbzn" id="3RK4Y9HGgu9" role="3TlMhI">
+                        <node concept="3ZVu4v" id="3RK4Y9HGgua" role="3TlMhI">
+                          <ref role="3ZVs_2" node="3RK4Y9HGgtZ" resolve="rightSubTree" />
+                        </node>
+                        <node concept="Ea8Gl" id="3RK4Y9HGgub" role="3TlMhJ" />
+                      </node>
+                      <node concept="25Bbzn" id="3RK4Y9HGguc" role="3TlMhJ">
+                        <node concept="Ea8Gl" id="3RK4Y9HGgud" role="3TlMhJ" />
+                        <node concept="3ZVu4v" id="3RK4Y9HGgue" role="3TlMhI">
+                          <ref role="3ZVs_2" node="3RK4Y9HGgtR" resolve="leftSubTree" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3XISUE" id="3RK4Y9HGguf" role="3XIRFZ" />
+                  <node concept="c0U19" id="3RK4Y9HGguj" role="3XIRFZ">
+                    <node concept="3XIRFW" id="3RK4Y9HGguk" role="c0U17">
+                      <node concept="1_9egQ" id="3RK4Y9HGgul" role="3XIRFZ">
+                        <node concept="3pqW6w" id="3RK4Y9HGgum" role="1_9egR">
+                          <node concept="3ZVu4v" id="3RK4Y9HGgun" role="3TlMhI">
+                            <ref role="3ZVs_2" node="3RK4Y9HGgug" resolve="leftHight" />
+                          </node>
+                          <node concept="3O_q_g" id="3RK4Y9HGguo" role="3TlMhJ">
+                            <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                            <node concept="3ZVu4v" id="3RK4Y9HGgup" role="3O_q_j">
+                              <ref role="3ZVs_2" node="3RK4Y9HGgtR" resolve="leftSubTree" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="25Bbzn" id="3RK4Y9HGguq" role="c0U16">
+                      <node concept="Ea8Gl" id="3RK4Y9HGgur" role="3TlMhJ" />
+                      <node concept="3ZVu4v" id="3RK4Y9HGgus" role="3TlMhI">
+                        <ref role="3ZVs_2" node="3RK4Y9HGgtR" resolve="leftSubTree" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="c0U19" id="3RK4Y9HGguw" role="3XIRFZ">
+                    <node concept="3XIRFW" id="3RK4Y9HGgux" role="c0U17">
+                      <node concept="1_9egQ" id="3RK4Y9HGguy" role="3XIRFZ">
+                        <node concept="3pqW6w" id="3RK4Y9HGguz" role="1_9egR">
+                          <node concept="3ZVu4v" id="3RK4Y9HGgu$" role="3TlMhI">
+                            <ref role="3ZVs_2" node="3RK4Y9HGgut" resolve="rightHight" />
+                          </node>
+                          <node concept="3O_q_g" id="3RK4Y9HGgu_" role="3TlMhJ">
+                            <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+                            <node concept="3ZVu4v" id="3RK4Y9HGguA" role="3O_q_j">
+                              <ref role="3ZVs_2" node="3RK4Y9HGgtZ" resolve="rightSubTree" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="25Bbzn" id="3RK4Y9HGguB" role="c0U16">
+                      <node concept="Ea8Gl" id="3RK4Y9HGguC" role="3TlMhJ" />
+                      <node concept="3ZVu4v" id="3RK4Y9HGguD" role="3TlMhI">
+                        <ref role="3ZVs_2" node="3RK4Y9HGgtZ" resolve="rightSubTree" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Y9XUq" id="3RK4Y9HGguE" role="3XIRFZ">
+                    <node concept="3Tl9Jl" id="3RK4Y9HGguF" role="Y9XUp">
+                      <node concept="3TlMh9" id="3RK4Y9HGguG" role="3TlMhJ">
+                        <property role="2hmy$m" value="1" />
+                      </node>
+                      <node concept="2zI4tQ" id="3RK4Y9HGguH" role="3TlMhI">
+                        <node concept="2BOcil" id="3RK4Y9HGguI" role="2zI4uq">
+                          <node concept="3ZVu4v" id="3RK4Y9HGguJ" role="3TlMhI">
+                            <ref role="3ZVs_2" node="3RK4Y9HGgug" resolve="leftHight" />
+                          </node>
+                          <node concept="3ZVu4v" id="3RK4Y9HGguK" role="3TlMhJ">
+                            <ref role="3ZVs_2" node="3RK4Y9HGgut" resolve="rightHight" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tl9Jr" id="3RK4Y9HGguL" role="c0U16">
+                  <node concept="3TlMh9" id="3RK4Y9HGguM" role="3TlMhJ">
+                    <property role="2hmy$m" value="3" />
+                  </node>
+                  <node concept="1f68ZN" id="3RK4Y9HGguN" role="3TlMhI">
+                    <ref role="1f68ZM" node="3RK4Y9HGgtu" resolve="i" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="39X$Ry" id="3RK4Y9HGguO" role="lGtFl">
+            <property role="39X$RV" value="_080_avl_external_c_code_harness__080_avlVerificationCase.0" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="3RK4Y9HXOKt" role="3XIRFZ" />
+        <node concept="3XIRlf" id="3RK4Y9HWKE3" role="3XIRFZ">
+          <property role="TrG5h" value="h_root" />
+          <node concept="26Vqph" id="3RK4Y9HXPcC" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2qmXGp" id="3RK4Y9HWKOZ" role="3XIe9u">
+            <node concept="1E4Tgc" id="3RK4Y9HWL6R" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
+            </node>
+            <node concept="2qmXGp" id="3RK4Y9HWKI1" role="1_9fRO">
+              <node concept="1E4Tgc" id="3RK4Y9HWKI2" role="1ESnxz">
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+              </node>
+              <node concept="3ZVu4v" id="3RK4Y9HWKI3" role="1_9fRO">
+                <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="3RK4Y9HWLeM" role="3XIRFZ">
+          <property role="TrG5h" value="key_left" />
+          <node concept="26Vqph" id="3RK4Y9HWLeK" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2qmXGp" id="3RK4Y9HWLvM" role="3XIe9u">
+            <node concept="1E4Tgc" id="3RK4Y9HWLOe" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+            </node>
+            <node concept="2wJmCr" id="3RK4Y9HWLjc" role="1_9fRO">
+              <node concept="3TlMh9" id="3RK4Y9HWLjd" role="2wJmCp">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="2qmXGp" id="3RK4Y9HWLje" role="1_9fRO">
+                <node concept="1E4Tgc" id="3RK4Y9HWLjf" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+                <node concept="2qmXGp" id="3RK4Y9HWLjg" role="1_9fRO">
+                  <node concept="1E4Tgc" id="3RK4Y9HWLjh" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                  </node>
+                  <node concept="3ZVu4v" id="3RK4Y9HWLji" role="1_9fRO">
+                    <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="3RK4Y9HYPf1" role="3XIRFZ">
+          <property role="TrG5h" value="key_left_left" />
+          <node concept="26Vqph" id="3RK4Y9HYPf2" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2qmXGp" id="3RK4Y9HYT3v" role="3XIe9u">
+            <node concept="1E4Tgc" id="3RK4Y9HYTvW" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+            </node>
+            <node concept="2wJmCr" id="3RK4Y9HYS5Y" role="1_9fRO">
+              <node concept="3TlMh9" id="3RK4Y9HYSze" role="2wJmCp">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="2qmXGp" id="3RK4Y9HYREP" role="1_9fRO">
+                <node concept="1E4Tgc" id="3RK4Y9HYS4Y" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+                <node concept="2wJmCr" id="3RK4Y9HYPf5" role="1_9fRO">
+                  <node concept="3TlMh9" id="3RK4Y9HYPf6" role="2wJmCp">
+                    <property role="2hmy$m" value="0" />
+                  </node>
+                  <node concept="2qmXGp" id="3RK4Y9HYPf7" role="1_9fRO">
+                    <node concept="1E4Tgc" id="3RK4Y9HYPf8" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                    </node>
+                    <node concept="2qmXGp" id="3RK4Y9HYPf9" role="1_9fRO">
+                      <node concept="1E4Tgc" id="3RK4Y9HYPfa" role="1ESnxz">
+                        <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                      </node>
+                      <node concept="3ZVu4v" id="3RK4Y9HYPfb" role="1_9fRO">
+                        <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XIRlf" id="3RK4Y9HZUP4" role="3XIRFZ">
+          <property role="TrG5h" value="key_left_left_left" />
+          <node concept="26Vqph" id="3RK4Y9HZUP5" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2qmXGp" id="3RK4Y9HZYrR" role="3XIe9u">
+            <node concept="1E4Tgc" id="3RK4Y9HZYZm" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+            </node>
+            <node concept="2wJmCr" id="3RK4Y9HZXhr" role="1_9fRO">
+              <node concept="3TlMh9" id="3RK4Y9HZXPH" role="2wJmCp">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="2qmXGp" id="3RK4Y9HZUP6" role="1_9fRO">
+                <node concept="1E4Tgc" id="3RK4Y9HZWKZ" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+                <node concept="2wJmCr" id="3RK4Y9HZUP8" role="1_9fRO">
+                  <node concept="3TlMh9" id="3RK4Y9HZUP9" role="2wJmCp">
+                    <property role="2hmy$m" value="0" />
+                  </node>
+                  <node concept="2qmXGp" id="3RK4Y9HZUPa" role="1_9fRO">
+                    <node concept="1E4Tgc" id="3RK4Y9HZUPb" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                    </node>
+                    <node concept="2wJmCr" id="3RK4Y9HZUPc" role="1_9fRO">
+                      <node concept="3TlMh9" id="3RK4Y9HZUPd" role="2wJmCp">
+                        <property role="2hmy$m" value="0" />
+                      </node>
+                      <node concept="2qmXGp" id="3RK4Y9HZUPe" role="1_9fRO">
+                        <node concept="1E4Tgc" id="3RK4Y9HZUPf" role="1ESnxz">
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                        </node>
+                        <node concept="2qmXGp" id="3RK4Y9HZUPg" role="1_9fRO">
+                          <node concept="1E4Tgc" id="3RK4Y9HZUPh" role="1ESnxz">
+                            <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                          </node>
+                          <node concept="3ZVu4v" id="3RK4Y9HZUPi" role="1_9fRO">
+                            <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3RK4Y9HYPac" role="3XIRFZ" />
+        <node concept="3XIRlf" id="3RK4Y9HWMsR" role="3XIRFZ">
+          <property role="TrG5h" value="key_right" />
+          <node concept="26Vqph" id="3RK4Y9HWMsS" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2qmXGp" id="3RK4Y9HWMsT" role="3XIe9u">
+            <node concept="1E4Tgc" id="3RK4Y9HWMsU" role="1ESnxz">
+              <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
+            </node>
+            <node concept="2wJmCr" id="3RK4Y9HWMsV" role="1_9fRO">
+              <node concept="3TlMh9" id="3RK4Y9HWMsW" role="2wJmCp">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="2qmXGp" id="3RK4Y9HWMsX" role="1_9fRO">
+                <node concept="1E4Tgc" id="3RK4Y9HWMsY" role="1ESnxz">
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                </node>
+                <node concept="2qmXGp" id="3RK4Y9HWMsZ" role="1_9fRO">
+                  <node concept="1E4Tgc" id="3RK4Y9HWMt0" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                  </node>
+                  <node concept="3ZVu4v" id="3RK4Y9HWMt1" role="1_9fRO">
+                    <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3RK4Y9HWLaN" role="3XIRFZ" />
+        <node concept="1_9egQ" id="3RK4Y9HLJ9f" role="3XIRFZ">
+          <node concept="3pqW6w" id="3RK4Y9HLJ9g" role="1_9egR">
+            <node concept="3ZVu4v" id="3RK4Y9HLJ9h" role="3TlMhI">
+              <ref role="3ZVs_2" node="3RK4Y9HGgug" resolve="leftHight" />
+            </node>
+            <node concept="3O_q_g" id="3RK4Y9HLJ9i" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+              <node concept="2wJmCr" id="3RK4Y9HLNLT" role="3O_q_j">
+                <node concept="3TlMh9" id="3RK4Y9HLO5F" role="2wJmCp">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="2qmXGp" id="3RK4Y9HLNuS" role="1_9fRO">
+                  <node concept="1E4Tgc" id="3RK4Y9HLNKS" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                  </node>
+                  <node concept="2qmXGp" id="3RK4Y9HLN98" role="1_9fRO">
+                    <node concept="1E4Tgc" id="3RK4Y9HLNq$" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                    </node>
+                    <node concept="3ZVu4v" id="3RK4Y9HLM53" role="1_9fRO">
+                      <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="3RK4Y9HLOpb" role="3XIRFZ">
+          <node concept="3pqW6w" id="3RK4Y9HLOpc" role="1_9egR">
+            <node concept="3ZVu4v" id="3RK4Y9HLO_E" role="3TlMhI">
+              <ref role="3ZVs_2" node="3RK4Y9HGgut" resolve="rightHight" />
+            </node>
+            <node concept="3O_q_g" id="3RK4Y9HLOpe" role="3TlMhJ">
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
+              <node concept="2wJmCr" id="3RK4Y9HLOpf" role="3O_q_j">
+                <node concept="3TlMh9" id="3RK4Y9HLOpg" role="2wJmCp">
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="2qmXGp" id="3RK4Y9HLOph" role="1_9fRO">
+                  <node concept="1E4Tgc" id="3RK4Y9HLOpi" role="1ESnxz">
+                    <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
+                  </node>
+                  <node concept="2qmXGp" id="3RK4Y9HLOpj" role="1_9fRO">
+                    <node concept="1E4Tgc" id="3RK4Y9HLOpk" role="1ESnxz">
+                      <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
+                    </node>
+                    <node concept="3ZVu4v" id="3RK4Y9HLOpl" role="1_9fRO">
+                      <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="3RK4Y9HJOph" role="3XIRFZ">
+          <node concept="3TlM44" id="3RK4Y9HJODh" role="Y9XUp">
+            <node concept="3TlMh9" id="3RK4Y9HJOEQ" role="3TlMhJ">
+              <property role="2hmy$m" value="2" />
+            </node>
+            <node concept="3ZVu4v" id="3RK4Y9HJOsT" role="3TlMhI">
+              <ref role="3ZVs_2" node="3RK4Y9HGgug" resolve="leftHight" />
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="3RK4Y9HJOKj" role="3XIRFZ">
+          <node concept="3TlM44" id="3RK4Y9HJOKk" role="Y9XUp">
+            <node concept="3TlMh9" id="3RK4Y9HJOKl" role="3TlMhJ">
+              <property role="2hmy$m" value="2" />
+            </node>
+            <node concept="3ZVu4v" id="3RK4Y9HJOT4" role="3TlMhI">
+              <ref role="3ZVs_2" node="3RK4Y9HGgut" resolve="rightHight" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="3RK4Y9HGguP" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="3RK4Y9HGguQ" role="2OODSX">
+      <ref role="3GEb4d" node="ogNGNPXMnh" resolve="_080_avl_tree" />
+    </node>
+    <node concept="3GEVxB" id="3RK4Y9HGguR" role="2OODSX">
+      <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" resolve="math" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="3RK4Y9HHl6T">
+    <property role="TrG5h" value="_080_malloc_stubs" />
+    <node concept="1S7NMz" id="3RK4Y9HHl74" role="N3F5h">
+      <property role="TrG5h" value="myTree" />
+      <node concept="rcJHQ" id="3RK4Y9HHl72" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHl7Y" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446391351_9" />
+    </node>
+    <node concept="N3Fnx" id="3RK4Y9HHlax" role="N3F5h">
+      <property role="TrG5h" value="malloc_tree" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="3RK4Y9HHlaz" role="3XIRFX">
+        <node concept="2BFjQ_" id="3RK4Y9HHlcN" role="3XIRFZ">
+          <node concept="YInwV" id="3RK4Y9HHldx" role="2BFjQA">
+            <node concept="1S7827" id="3RK4Y9HHlen" role="1_9fRO">
+              <ref role="1S7826" node="3RK4Y9HHl74" resolve="myTree" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="3RK4Y9HHlbK" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="3RK4Y9HHl8l" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="3RK4Y9HHlbf" role="1UOdpc">
+        <property role="TrG5h" value="s" />
+        <node concept="26Vqpb" id="3RK4Y9HHmCz" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHlgf" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446444107_11" />
+    </node>
+    <node concept="1S7NMz" id="3RK4Y9HHl_$" role="N3F5h">
+      <property role="TrG5h" value="myNodes" />
+      <node concept="3J0A42" id="3RK4Y9HHlEa" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="3RK4Y9HHl_y" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+        <node concept="3TlMh9" id="3RK4Y9HHlER" role="1YbSNA">
+          <property role="2hmy$m" value="10" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHlQ8" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446502073_15" />
+    </node>
+    <node concept="1S7NMz" id="3RK4Y9HHlsK" role="N3F5h">
+      <property role="TrG5h" value="cnt" />
+      <node concept="26Vqp4" id="3RK4Y9HHlsI" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="3RK4Y9HHm9D" role="1cecVj">
+        <property role="2hmy$m" value="0" />
+      </node>
+    </node>
+    <node concept="N3Fnx" id="3RK4Y9HHljd" role="N3F5h">
+      <property role="TrG5h" value="malloc_node" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="3RK4Y9HHlje" role="3XIRFX">
+        <node concept="2BFjQ_" id="3RK4Y9HHljf" role="3XIRFZ">
+          <node concept="YInwV" id="3RK4Y9HHljg" role="2BFjQA">
+            <node concept="2wJmCr" id="3RK4Y9HHmj2" role="1_9fRO">
+              <node concept="3TM6Ey" id="3RK4Y9HHmrZ" role="2wJmCp">
+                <node concept="1S7827" id="3RK4Y9HHmme" role="1_9fRO">
+                  <ref role="1S7826" node="3RK4Y9HHlsK" resolve="cnt" />
+                </node>
+              </node>
+              <node concept="1S7827" id="3RK4Y9HHmaz" role="1_9fRO">
+                <ref role="1S7826" node="3RK4Y9HHl_$" resolve="myNodes" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3wxxNl" id="3RK4Y9HHlji" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <node concept="rcJHQ" id="3RK4Y9HHlmm" role="2umbIo">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="3RK4Y9HHljk" role="1UOdpc">
+        <property role="TrG5h" value="s" />
+        <node concept="26Vqpb" id="3RK4Y9HHmCH" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RK4Y9HHlhy" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446444440_13" />
+    </node>
+    <node concept="3GEVxB" id="3RK4Y9HHl6Y" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="3RK4Y9HHmDd">
+    <property role="TrG5h" value="_080_avl_base" />
+    <node concept="2NXPZ9" id="3RK4Y9HHmDe" role="N3F5h">
+      <property role="TrG5h" value="empty_1478446630360_18" />
+    </node>
+    <node concept="1sgJKc" id="ogNGNPXMnq" role="N3F5h">
+      <property role="TrG5h" value="_AVLTreeNode" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="ogNGNPXMnu" role="HszBJ">
+        <property role="TrG5h" value="children" />
+        <node concept="3J0A42" id="ogNGNPXMnw" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="3wxxNl" id="ogNGNPXMnv" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <node concept="1sgJKr" id="ogNGNPXMZ3" role="2umbIo">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="1sgJKq" node="ogNGNPXMnq" resolve="_AVLTreeNode" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="ogNGNPXMnx" role="1YbSNA">
+            <property role="2hmy$m" value="2" />
+          </node>
+        </node>
+      </node>
+      <node concept="1dpRTG" id="ogNGNPXMnB" role="HszBJ">
+        <property role="TrG5h" value="parent" />
+        <node concept="3wxxNl" id="ogNGNPXMnC" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="1sgJKr" id="ogNGNPXMZ4" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1sgJKq" node="ogNGNPXMnq" resolve="_AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="1dpRTG" id="ogNGNPXMnH" role="HszBJ">
+        <property role="TrG5h" value="key" />
+        <node concept="rcJHQ" id="ogNGNPXMZ5" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="ogNGNPXMnM" role="HszBJ">
+        <property role="TrG5h" value="height" />
+        <node concept="26Vqph" id="ogNGNPXMnL" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRpA" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRpB" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRpC" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRpD" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * A node in an AVL tree.&#10; *&#10; * @see avl_tree_node_left_child&#10; * @see avl_tree_node_right_child&#10; * @see avl_tree_node_parent&#10; * @see avl_tree_node_key&#10; * @see avl_tree_node_value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="rcJHK" id="ogNGNPXMnp" role="N3F5h">
+      <property role="TrG5h" value="AVLTreeKey" />
+      <property role="2OOxQR" value="true" />
+      <node concept="biTqx" id="ogNGNPXMnl" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="rcJHK" id="ogNGNPXMnY" role="N3F5h">
+      <property role="TrG5h" value="AVLTreeNode" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1sgJKr" id="ogNGNPXMnP" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1sgJKq" node="ogNGNPXMnq" resolve="_AVLTreeNode" />
+      </node>
+    </node>
+    <node concept="1sgJKc" id="ogNGNPXMnZ" role="N3F5h">
+      <property role="TrG5h" value="_AVLTree" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="ogNGNPXMo2" role="HszBJ">
+        <property role="TrG5h" value="root_node" />
+        <node concept="3wxxNl" id="ogNGNPXMo3" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="rcJHQ" id="ogNGNPXMZ6" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="1dpRTG" id="ogNGNPXMo8" role="HszBJ">
+        <property role="TrG5h" value="num_nodes" />
+        <node concept="26Vqpb" id="ogNGNPXMo7" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="ogNGNPXRpF" role="lGtFl">
+        <node concept="OjmMv" id="ogNGNPXRpG" role="1w35rA">
+          <node concept="19SGf9" id="ogNGNPXRpH" role="OjmMu">
+            <node concept="19SUe$" id="ogNGNPXRpI" role="19SJt6">
+              <property role="19SUeA" value="*&#10; * An AVL tree balanced binary tree.&#10; *&#10; * @see avl_tree_new " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="rcJHK" id="ogNGNPXMok" role="N3F5h">
+      <property role="TrG5h" value="AVLTree" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1sgJKr" id="ogNGNPXMob" role="rcJHR">
+        <property role="2c7vTL" value="false" />
+        <property role="2caQfQ" value="false" />
+        <ref role="1sgJKq" node="ogNGNPXMnZ" resolve="_AVLTree" />
       </node>
     </node>
   </node>
