@@ -79,11 +79,6 @@
     <property role="TrG5h" value="IPattern" />
     <property role="3GE5qa" value="content" />
     <property role="EcuMT" value="4530729936991344017" />
-    <node concept="1TJgyi" id="3VwoHXO8uzg" role="1TKVEl">
-      <property role="TrG5h" value="helper" />
-      <property role="IQ2nx" value="4530729937000327376" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="3VwoHXNB3ZK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
@@ -97,6 +92,12 @@
       <property role="20lbJX" value="1..n" />
       <property role="IQ2ns" value="1925259677761359694" />
       <ref role="20lvS9" node="3VwoHXNAdvt" resolve="IPatternBody" />
+    </node>
+    <node concept="1TJgyj" id="SSjGGIHUFA" role="1TKVEi">
+      <property role="IQ2ns" value="1024655549795904230" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="visibility" />
+      <ref role="20lvS9" node="SSjGGIHU5T" resolve="IPatternVisibility" />
     </node>
     <node concept="PrWs8" id="3VwoHXNAdmw" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -134,7 +135,7 @@
     <property role="EcuMT" value="7996518772785671581" />
   </node>
   <node concept="PlHQZ" id="3VwoHXNAdmj">
-    <property role="TrG5h" value="IPatternModel" />
+    <property role="TrG5h" value="IPatternModule" />
     <property role="EcuMT" value="4530729936991344019" />
     <node concept="1TJgyj" id="3VwoHXNAdvv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -142,6 +143,13 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4530729936991344607" />
       <ref role="20lvS9" node="3VwoHXNAdvu" resolve="IPatternModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="72CZAphwyW3" role="1TKVEi">
+      <property role="IQ2ns" value="8118018043742924547" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="SSjGGIi3iQ" resolve="IPatternModuleImport" />
     </node>
     <node concept="PrWs8" id="3VwoHXNAdvx" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -973,6 +981,63 @@
     <property role="TrG5h" value="IPathExpressionLike" />
     <node concept="PrWs8" id="3ybyOPMBph8" role="PrDN$">
       <ref role="PrY4T" node="3p0ky8Li8px" resolve="IPathElementScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="SSjGGIi3iP">
+    <property role="EcuMT" value="1024655549788599477" />
+    <property role="TrG5h" value="AbstractPatternModuleImport" />
+    <property role="34LRSv" value="&lt;{patternModule}&gt;" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="SSjGGIi3iU" role="PzmwI">
+      <ref role="PrY4T" node="SSjGGIi3iQ" resolve="IPatternModuleImport" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="SSjGGIi3iQ">
+    <property role="EcuMT" value="1024655549788599478" />
+    <property role="TrG5h" value="IPatternModuleImport" />
+    <node concept="1TJgyj" id="SSjGGIi3iR" role="1TKVEi">
+      <property role="IQ2ns" value="1024655549788599479" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="patternModule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3VwoHXNAdmj" resolve="IPatternModule" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="SSjGGIHU5T">
+    <property role="EcuMT" value="1024655549795901817" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="IPatternVisibility" />
+  </node>
+  <node concept="1TIwiD" id="SSjGGIHU5U">
+    <property role="EcuMT" value="1024655549795901818" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="PrivateVisibility" />
+    <property role="34LRSv" value="private" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="SSjGGIHU5V" role="PzmwI">
+      <ref role="PrY4T" node="SSjGGIHU5T" resolve="IPatternVisibility" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="SSjGGIHUEy">
+    <property role="EcuMT" value="1024655549795904162" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="ProtectedVisibility" />
+    <property role="34LRSv" value="protected" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="SSjGGIHUEz" role="PzmwI">
+      <ref role="PrY4T" node="SSjGGIHU5T" resolve="IPatternVisibility" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="SSjGGIHUEO">
+    <property role="EcuMT" value="1024655549795904180" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="PublicVisibility" />
+    <property role="34LRSv" value="public" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="SSjGGIHUEP" role="PzmwI">
+      <ref role="PrY4T" node="SSjGGIHU5T" resolve="IPatternVisibility" />
     </node>
   </node>
 </model>

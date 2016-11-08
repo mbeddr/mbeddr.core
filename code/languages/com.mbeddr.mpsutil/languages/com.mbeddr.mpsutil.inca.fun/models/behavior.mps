@@ -5497,15 +5497,19 @@
             </node>
             <node concept="3clFbF" id="InJBIGINCY" role="3cqZAp">
               <node concept="37vLTI" id="InJBIGIOCI" role="3clFbG">
-                <node concept="3clFbT" id="InJBIGIOKT" role="37vLTx">
-                  <property role="3clFbU" value="true" />
+                <node concept="2ShNRf" id="2FsPteOLrtw" role="37vLTx">
+                  <node concept="3zrR0B" id="2FsPteOLrtu" role="2ShVmc">
+                    <node concept="3Tqbb2" id="2FsPteOLrtv" role="3zrR0E">
+                      <ref role="ehGHo" to="hqsm:SSjGGIHU5U" resolve="PrivateVisibility" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="InJBIGINV4" role="37vLTJ">
                   <node concept="37vLTw" id="InJBIGINCW" role="2Oq$k0">
                     <ref role="3cqZAo" node="InJBIGIMg8" resolve="helper" />
                   </node>
-                  <node concept="3TrcHB" id="InJBIGIOiz" role="2OqNvi">
-                    <ref role="3TsBF5" to="hqsm:3VwoHXO8uzg" resolve="private" />
+                  <node concept="3TrEf2" id="2FsPteOLrld" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hqsm:SSjGGIHUFA" resolve="visibility" />
                   </node>
                 </node>
               </node>
@@ -5602,7 +5606,7 @@
                     <node concept="2Xjw5R" id="InJBIGJ7ea" role="2OqNvi">
                       <node concept="1xMEDy" id="InJBIGJ7ec" role="1xVPHs">
                         <node concept="chp4Y" id="InJBIGJ7iS" role="ri$Ld">
-                          <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+                          <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                         </node>
                       </node>
                     </node>

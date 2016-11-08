@@ -55,7 +55,6 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="2wn0" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.platform.dialogs.choosers(MPS.Platform/)" />
-    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="la48" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api.impl(com.mbeddr.mpsutil.inca.core.runtime/)" implicit="true" />
@@ -5136,7 +5135,7 @@
                             <node concept="liA8E" id="7VT_7g2uEW2" role="2OqNvi">
                               <ref role="37wK5l" node="7aUOHOT7vWh" resolve="registerPatternModel" />
                               <node concept="1PxgMI" id="7VT_7g2uEW3" role="37wK5m">
-                                <ref role="1m5ApE" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+                                <ref role="1m5ApE" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                                 <node concept="37vLTw" id="7VT_7g2uFXG" role="1m5AlR">
                                   <ref role="3cqZAo" node="4dLFELwoxWv" resolve="activeRoot" />
                                 </node>
@@ -5209,7 +5208,7 @@
                       </node>
                       <node concept="1mIQ4w" id="7VT_7g2uAjI" role="2OqNvi">
                         <node concept="chp4Y" id="7sEY90uXCRn" role="cj9EA">
-                          <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+                          <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                         </node>
                       </node>
                     </node>
@@ -5853,7 +5852,7 @@
       <node concept="37vLTG" id="7aUOHOT7xRm" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3Tqbb2" id="7aUOHOT7xRl" role="1tU5fm">
-          <ref role="ehGHo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+          <ref role="ehGHo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
         </node>
       </node>
     </node>
@@ -9413,7 +9412,7 @@
                     <node concept="2Xjw5R" id="4prsFNe7QqD" role="2OqNvi">
                       <node concept="1xMEDy" id="4prsFNe7QqF" role="1xVPHs">
                         <node concept="chp4Y" id="4prsFNe7QuP" role="ri$Ld">
-                          <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+                          <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                         </node>
                       </node>
                     </node>
@@ -9567,7 +9566,7 @@
               <node concept="2Xjw5R" id="7LwNs$eL_tk" role="2OqNvi">
                 <node concept="1xMEDy" id="7LwNs$eL_tl" role="1xVPHs">
                   <node concept="chp4Y" id="4prsFNe7wSv" role="ri$Ld">
-                    <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+                    <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="7LwNs$eL_tn" role="1xVPHs" />

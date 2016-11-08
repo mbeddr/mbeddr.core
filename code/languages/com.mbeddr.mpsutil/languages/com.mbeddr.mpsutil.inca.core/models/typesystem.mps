@@ -2295,10 +2295,52 @@
           <ref role="3cqZAo" node="39KhnTI7R09" resolve="nodes" />
         </node>
       </node>
+      <node concept="3clFbH" id="SSjGGIuVLp" role="3cqZAp" />
+      <node concept="3cpWs8" id="SSjGGIuWwL" role="3cqZAp">
+        <node concept="3cpWsn" id="SSjGGIuWwM" role="3cpWs9">
+          <property role="TrG5h" value="imported" />
+          <node concept="2hMVRd" id="SSjGGIuWwB" role="1tU5fm">
+            <node concept="3Tqbb2" id="SSjGGIuWwE" role="2hN53Y">
+              <ref role="ehGHo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="SSjGGIuWwN" role="33vP2m">
+            <node concept="1YBJjd" id="SSjGGIuWwO" role="2Oq$k0">
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+            </node>
+            <node concept="2qgKlT" id="SSjGGIuWwP" role="2OqNvi">
+              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedPatternModules" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="SSjGGIuWOi" role="3cqZAp" />
+      <node concept="3clFbJ" id="SSjGGIuXba" role="3cqZAp">
+        <node concept="3clFbS" id="SSjGGIuXbc" role="3clFbx">
+          <node concept="2MkqsV" id="SSjGGIuZd4" role="3cqZAp">
+            <node concept="Xl_RD" id="SSjGGIuZdm" role="2MkJ7o">
+              <property role="Xl_RC" value="The pattern module is part of a cyclic dependency chain!" />
+            </node>
+            <node concept="1YBJjd" id="SSjGGIuZeq" role="2OEOjV">
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="SSjGGIuYbf" role="3clFbw">
+          <node concept="37vLTw" id="SSjGGIuXcb" role="2Oq$k0">
+            <ref role="3cqZAo" node="SSjGGIuWwM" resolve="imported" />
+          </node>
+          <node concept="3JPx81" id="SSjGGIuZ8D" role="2OqNvi">
+            <node concept="1YBJjd" id="SSjGGIuZaP" role="25WWJ7">
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="39KhnTI7QZJ" role="1YuTPh">
       <property role="TrG5h" value="patternModel" />
-      <ref role="1YaFvo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+      <ref role="1YaFvo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
     </node>
   </node>
   <node concept="35pCF_" id="39KhnTI9ELZ">

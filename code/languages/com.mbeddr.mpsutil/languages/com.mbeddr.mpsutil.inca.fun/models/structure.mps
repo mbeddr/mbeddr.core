@@ -82,7 +82,7 @@
     <property role="EcuMT" value="6368683143941319361" />
     <ref role="1TJDcQ" to="55iy:1ERTnBTfasH" resolve="GraphPatternModule" />
     <node concept="PrWs8" id="5xy6TexCYF2" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+      <ref role="PrY4T" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
     </node>
     <node concept="1irR5M" id="6IScWK1VKCJ" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -567,6 +567,12 @@
     <node concept="PrWs8" id="7kKLU_Qtyue" role="PzmwI">
       <ref role="PrY4T" node="52HBLukNl0O" resolve="IBinary" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="SSjGGIxddQ">
+    <property role="EcuMT" value="1024655549792572278" />
+    <property role="TrG5h" value="PatternFunctionModuleImport" />
+    <property role="34LRSv" value="&lt;{patternModule}&gt;" />
+    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractPatternModuleImport" />
   </node>
 </model>
 

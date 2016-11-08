@@ -233,14 +233,13 @@
       <concept id="4530729936991344605" name="com.mbeddr.mpsutil.inca.core.structure.IPatternBody" flags="ng" index="1dubk2">
         <child id="4530729936991965471" name="contents" index="1dgzf0" />
       </concept>
-      <concept id="4530729936991344019" name="com.mbeddr.mpsutil.inca.core.structure.IPatternModel" flags="ng" index="1dubtc">
+      <concept id="4530729936991344019" name="com.mbeddr.mpsutil.inca.core.structure.IPatternModule" flags="ng" index="1dubtc">
         <child id="4530729936991344607" name="contents" index="1dubk0" />
       </concept>
       <concept id="4530729936991344018" name="com.mbeddr.mpsutil.inca.core.structure.IVariable" flags="ng" index="1dubtd">
         <child id="4530729936991365310" name="type" index="1dukDx" />
       </concept>
       <concept id="4530729936991344017" name="com.mbeddr.mpsutil.inca.core.structure.IPattern" flags="ng" index="1dubte">
-        <property id="4530729937000327376" name="helper" index="1aKoCf" />
         <child id="4530729936991567856" name="parameters" index="1dv5OJ" />
         <child id="1925259677761359694" name="bodies" index="3zVECR" />
       </concept>
@@ -308,6 +307,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -557,9 +557,8 @@
   </node>
   <node concept="3zyO9k" id="4gUX5LzYJ4Q">
     <property role="TrG5h" value="TestPatterns" />
-    <node concept="1XdyHe" id="6SzVr$NPzGd" role="1dubk0" />
+    <property role="3GE5qa" value="" />
     <node concept="3zyOaA" id="6SzVr$NSuXj" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="JavaClass" />
       <node concept="3zV_Rz" id="6SzVr$NSuXk" role="3zVECR">
         <node concept="2qQGpE" id="z7YXzA8bp_" role="1dgzf0">
@@ -578,7 +577,6 @@
     </node>
     <node concept="1XdyHe" id="z7YXzAa3nw" role="1dubk0" />
     <node concept="3zyOaA" id="z7YXzAa3oc" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="VariableDeclaration" />
       <node concept="1VLyLj" id="z7YXzAa3oH" role="1dv5OJ">
         <property role="TrG5h" value="var" />
@@ -608,7 +606,6 @@
     </node>
     <node concept="1XdyHe" id="nrkjVh50mL" role="1dubk0" />
     <node concept="3zyOaA" id="nrkjVh50UX" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="VariableInitializer" />
       <node concept="3zV_Rz" id="nrkjVh50UY" role="3zVECR">
         <node concept="2kdhWc" id="3p0ky8L$SJ5" role="1dgzf0">
@@ -639,7 +636,6 @@
     </node>
     <node concept="1XdyHe" id="1aUlWw6Wfgd" role="1dubk0" />
     <node concept="3zyOaA" id="1aUlWw6Wfry" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="VariableInitializerWithFalseInitializer" />
       <node concept="3zV_Rz" id="1aUlWw6Wfrz" role="3zVECR">
         <node concept="2kdhWc" id="3p0ky8L$TiP" role="1dgzf0">
@@ -688,7 +684,6 @@
     </node>
     <node concept="1XdyHe" id="4YtCEGA0r4y" role="1dubk0" />
     <node concept="3zyOaA" id="4YtCEGA0qXM" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="VariableInitializerWithFalseInitializerEquality" />
       <node concept="3zV_Rz" id="4YtCEGA0qXN" role="3zVECR">
         <node concept="2kdhWc" id="3p0ky8L$TV1" role="1dgzf0">
@@ -737,7 +732,6 @@
     </node>
     <node concept="1XdyHe" id="7lNkc6MIktP" role="1dubk0" />
     <node concept="3zyOaA" id="4YtCEGA0wjU" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="VariableInitializerWithFalseInitializerInequality" />
       <node concept="3zV_Rz" id="4YtCEGA0wjV" role="3zVECR">
         <node concept="2kdhWc" id="3p0ky8L$U7g" role="1dgzf0">
@@ -788,7 +782,6 @@
     </node>
     <node concept="1XdyHe" id="nrkjVh6cxj" role="1dubk0" />
     <node concept="3zyOaA" id="nrkjVh6c$7" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="Number" />
       <node concept="3zV_Rz" id="nrkjVh6c$8" role="3zVECR">
         <node concept="2qQGpE" id="nrkjVh6cKy" role="1dgzf0">
@@ -815,7 +808,6 @@
     </node>
     <node concept="1XdyHe" id="2CjGPkJUiPP" role="1dubk0" />
     <node concept="3zyOaA" id="2CjGPkJUiVl" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="Boolean" />
       <node concept="1VLyLj" id="2CjGPkJUj4T" role="1dv5OJ">
         <property role="TrG5h" value="expression" />
@@ -846,7 +838,6 @@
     </node>
     <node concept="1XdyHe" id="6SzVr$NSeXj" role="1dubk0" />
     <node concept="3zyOaA" id="62ABz02SwiO" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="CallRelationship" />
       <node concept="1VLyLj" id="62ABz02SzsQ" role="1dv5OJ">
         <property role="TrG5h" value="m1" />
@@ -886,7 +877,6 @@
     </node>
     <node concept="1XdyHe" id="62ABz02SwuC" role="1dubk0" />
     <node concept="3zyOaA" id="62ABz02SwDW" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="DirectCall" />
       <node concept="1VLyLj" id="62ABz02SwXm" role="1dv5OJ">
         <property role="TrG5h" value="m1" />
@@ -953,7 +943,6 @@
     </node>
     <node concept="1XdyHe" id="7A0HCuGfpM_" role="1dubk0" />
     <node concept="3zyOaA" id="7A0HCuGfFxc" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="PrimeNumbers" />
       <node concept="3zV_Rz" id="7A0HCuGfFxd" role="3zVECR">
         <node concept="2kdhWc" id="7A0HCuGnhDW" role="1dgzf0">
@@ -1117,7 +1106,6 @@
     </node>
     <node concept="1XdyHe" id="7A0HCuGmjEZ" role="1dubk0" />
     <node concept="3zyOaA" id="7A0HCuGmkBo" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="KeyMapEnum" />
       <node concept="1VLyLj" id="7A0HCuGmmVN" role="1dv5OJ">
         <property role="TrG5h" value="keyMap" />
@@ -1160,7 +1148,6 @@
     </node>
     <node concept="1XdyHe" id="7A0HCuGwrdn" role="1dubk0" />
     <node concept="3zyOaA" id="7A0HCuGws9W" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="Parents" />
       <node concept="1VLyLj" id="7A0HCuGwtBd" role="1dv5OJ">
         <property role="TrG5h" value="child" />
@@ -1217,7 +1204,6 @@
     </node>
     <node concept="1XdyHe" id="7A0HCuGwxgw" role="1dubk0" />
     <node concept="3zyOaA" id="7A0HCuGwwpV" role="1dubk0">
-      <property role="1aKoCf" value="false" />
       <property role="TrG5h" value="NextSiblings" />
       <node concept="1VLyLj" id="7A0HCuGwwpW" role="1dv5OJ">
         <property role="TrG5h" value="prev" />

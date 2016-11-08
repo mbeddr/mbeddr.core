@@ -78,7 +78,7 @@
     <property role="EcuMT" value="1925259677759481645" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1ERTnBTfasI" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:3VwoHXNAdmj" resolve="IPatternModel" />
+      <ref role="PrY4T" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
     </node>
     <node concept="1irR5M" id="4gUX5LzYKBH" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -318,6 +318,12 @@
     <property role="3GE5qa" value="misc" />
     <property role="TrG5h" value="ITransformable" />
     <property role="EcuMT" value="7581807820806154730" />
+  </node>
+  <node concept="1TIwiD" id="SSjGGIxddQ">
+    <property role="EcuMT" value="1024655549792572278" />
+    <property role="TrG5h" value="GraphPatternModuleImport" />
+    <property role="34LRSv" value="&lt;{patternModule}&gt;" />
+    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractPatternModuleImport" />
   </node>
 </model>
 
