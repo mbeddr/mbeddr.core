@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +27,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1106270637846" name="jetbrains.mps.lang.editor.structure.CellLayout_Flow" flags="nn" index="2iR$Sn" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="7651593722933768974" name="jetbrains.mps.lang.editor.structure.MaxWidthStyleClassItem" flags="ln" index="nf9zX">
         <property id="7651593722933768975" name="value" index="nf9zW" />
@@ -80,6 +82,11 @@
       <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
         <reference id="1227861587090" name="link" index="3ygfmf" />
       </concept>
+      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
+        <property id="1215007802031" name="value" index="3$6WeP" />
+      </concept>
+      <concept id="1215007883204" name="jetbrains.mps.lang.editor.structure.PaddingLeftStyleClassItem" flags="ln" index="3$7fVu" />
+      <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -153,6 +160,11 @@
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1091,10 +1103,56 @@
     </node>
   </node>
   <node concept="24kQdi" id="4_qY3E6qVbQ">
-    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
     <ref role="1XX52x" to="3673:4_qY3E6qVbq" resolve="CoverageExpression" />
     <node concept="3F0ifn" id="4_qY3E6qVbS" role="2wV5jI">
       <property role="3F0ifm" value="coverage" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6SpoPQgetV4">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1XX52x" to="3673:6SpoPQgetTO" resolve="BranchID" />
+    <node concept="1kIj98" id="6SpoPQgeulv" role="2wV5jI">
+      <node concept="3F0A7n" id="6SpoPQgeulB" role="1kIj9b">
+        <ref role="1NtTu8" to="3673:6SpoPQgetUA" resolve="id" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6SpoPQgeum$">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1XX52x" to="3673:6SpoPQgetS$" resolve="RegisterBranchesExpressions" />
+    <node concept="3EZMnI" id="6SpoPQgeunr" role="2wV5jI">
+      <node concept="2iR$Sn" id="6SpoPQgeuns" role="2iSdaV" />
+      <node concept="3F0ifn" id="6SpoPQgeunt" role="3EZMnx">
+        <property role="3F0ifm" value="register" />
+      </node>
+      <node concept="3F0ifn" id="6SpoPQgeunw" role="3EZMnx">
+        <property role="3F0ifm" value="branches" />
+        <node concept="3$7fVu" id="6SpoPQgeunx" role="3F10Kt">
+          <property role="3$6WeP" value="0.5" />
+        </node>
+        <node concept="3$7jql" id="6SpoPQgeuny" role="3F10Kt">
+          <property role="3$6WeP" value="0.5" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6SpoPQgeuoe" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="3673:6SpoPQgeulF" resolve="branches" />
+        <node concept="2iR$Sn" id="6SpoPQgeuog" role="2czzBx" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6SpoPQggwcB">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1XX52x" to="3673:6SpoPQggwbm" resolve="VisitBranchStatement" />
+    <node concept="3EZMnI" id="6SpoPQggwdt" role="2wV5jI">
+      <node concept="2iR$Sn" id="6SpoPQggwdu" role="2iSdaV" />
+      <node concept="3F0ifn" id="6SpoPQggwdw" role="3EZMnx">
+        <property role="3F0ifm" value="branch " />
+      </node>
+      <node concept="3F1sOY" id="6SpoPQggwee" role="3EZMnx">
+        <ref role="1NtTu8" to="3673:6SpoPQggwbn" resolve="branch" />
+      </node>
     </node>
   </node>
 </model>

@@ -3312,7 +3312,7 @@
   </node>
   <node concept="1YbPZF" id="4_qY3E6qVnr">
     <property role="TrG5h" value="typeof_CoverageExpression" />
-    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
     <node concept="3clFbS" id="4_qY3E6qVns" role="18ibNy">
       <node concept="3cpWs8" id="4_qY3E6qVny" role="3cqZAp">
         <node concept="3cpWsn" id="4_qY3E6qVnz" role="3cpWs9">
