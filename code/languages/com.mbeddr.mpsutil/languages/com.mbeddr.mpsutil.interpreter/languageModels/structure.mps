@@ -544,12 +544,51 @@
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="4_qY3E6qVbq">
-    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
     <property role="TrG5h" value="CoverageExpression" />
     <property role="34LRSv" value="coverage" />
     <property role="R4oN_" value="coverage analyzer context" />
     <property role="EcuMT" value="5285810042919695066" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6SpoPQgetS$">
+    <property role="EcuMT" value="7933481472092659236" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="RegisterBranchesExpressions" />
+    <property role="34LRSv" value="register branches" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="6SpoPQgeulF" role="1TKVEi">
+      <property role="IQ2ns" value="7933481472092661099" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="branches" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6SpoPQgetTO" resolve="BranchID" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6SpoPQgetTO">
+    <property role="EcuMT" value="7933481472092659316" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="BranchID" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6SpoPQgetUA" role="1TKVEl">
+      <property role="IQ2nx" value="7933481472092659366" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6SpoPQggwbm">
+    <property role="EcuMT" value="7933481472093192918" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="VisitBranchStatement" />
+    <property role="34LRSv" value="branch" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="6SpoPQggwbn" role="1TKVEi">
+      <property role="IQ2ns" value="7933481472092661099" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="branch" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6SpoPQgetTO" resolve="BranchID" />
+    </node>
   </node>
 </model>
 
