@@ -2226,5 +2226,53 @@
       <property role="1SWRpm" value="DEPRECATION" />
     </node>
   </node>
+  <node concept="2S6QgY" id="3_DFadN9jkF">
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="clearResults" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment" />
+    <node concept="2S6ZIM" id="3_DFadN9jkG" role="2ZfVej">
+      <node concept="3clFbS" id="3_DFadN9jkH" role="2VODD2">
+        <node concept="3clFbF" id="3_DFadN9jwS" role="3cqZAp">
+          <node concept="Xl_RD" id="3_DFadN9jwR" role="3clFbG">
+            <property role="Xl_RC" value="Clear all Results" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3_DFadN9jkI" role="2ZfgGD">
+      <node concept="3clFbS" id="3_DFadN9jkJ" role="2VODD2">
+        <node concept="3clFbF" id="3_DFadN9p2L" role="3cqZAp">
+          <node concept="2OqwBi" id="3_DFadN9qO5" role="3clFbG">
+            <node concept="2OqwBi" id="3_DFadN9paj" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3_DFadN9p2K" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3_DFadN9p$L" role="2OqNvi">
+                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="3_DFadN9sfD" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="3_DFadN9jLZ" role="2ZfVeh">
+      <node concept="3clFbS" id="3_DFadN9jM0" role="2VODD2">
+        <node concept="3clFbF" id="3_DFadN9jTe" role="3cqZAp">
+          <node concept="2OqwBi" id="3_DFadN9lXS" role="3clFbG">
+            <node concept="2OqwBi" id="3_DFadN9k6r" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3_DFadN9jTd" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3_DFadN9kqU" role="2OqNvi">
+                <ref role="3TtcxE" to="vs0r:K292flwDNv" resolve="results" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="3_DFadN9oSz" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="3_DFadN9CB$" role="lGtFl">
+      <property role="1SWRpm" value="ASSESSMENTS" />
+    </node>
+  </node>
 </model>
 
