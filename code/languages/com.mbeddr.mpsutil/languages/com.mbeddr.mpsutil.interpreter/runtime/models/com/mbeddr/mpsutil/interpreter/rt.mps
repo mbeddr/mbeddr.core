@@ -112,6 +112,9 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -11784,6 +11787,54 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="6SpoPQg8VsF" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visitedConcept" />
+      <node concept="3clFbS" id="6SpoPQg8VsG" role="3clF47" />
+      <node concept="3Tm1VV" id="6SpoPQg8VsH" role="1B3o_S" />
+      <node concept="3cqZAl" id="6SpoPQg8VsI" role="3clF45" />
+      <node concept="37vLTG" id="6SpoPQg8VsJ" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6SpoPQg8Xxm" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6SpoPQg9lbu" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visitedConceptBranch" />
+      <node concept="3clFbS" id="6SpoPQg9lbv" role="3clF47" />
+      <node concept="3Tm1VV" id="6SpoPQg9lbw" role="1B3o_S" />
+      <node concept="3cqZAl" id="6SpoPQg9lbx" role="3clF45" />
+      <node concept="37vLTG" id="6SpoPQg9lby" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6SpoPQg9lbz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6SpoPQg9ljn" role="3clF46">
+        <property role="TrG5h" value="branchID" />
+        <node concept="17QB3L" id="6SpoPQg9lkT" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6SpoPQg9kPC" role="jymVt">
+      <property role="TrG5h" value="registerBranches" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="37vLTG" id="6SpoPQg9kYi" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6SpoPQg9kYj" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6SpoPQg9l0H" role="3clF46">
+        <property role="TrG5h" value="branchIDs" />
+        <node concept="10Q1$e" id="6SpoPQg9l65" role="1tU5fm">
+          <node concept="17QB3L" id="6SpoPQg9l0T" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6SpoPQg9kPE" role="3clF47" />
+      <node concept="3cqZAl" id="6SpoPQg9kPG" role="3clF45" />
+      <node concept="3Tm1VV" id="6SpoPQg9kPI" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="4_qY3E5iSgn" role="jymVt" />
     <node concept="3Tm1VV" id="4_qY3E5ifTi" role="1B3o_S" />
   </node>
@@ -11842,6 +11893,63 @@
       </node>
       <node concept="3clFbS" id="4_qY3E6qZKz" role="3clF47" />
       <node concept="2AHcQZ" id="4_qY3E6qZK$" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6SpoPQg9emy" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visitedConcept" />
+      <node concept="3Tm1VV" id="6SpoPQg9em$" role="1B3o_S" />
+      <node concept="3cqZAl" id="6SpoPQg9em_" role="3clF45" />
+      <node concept="37vLTG" id="6SpoPQg9emA" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6SpoPQg9emB" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6SpoPQg9emC" role="3clF47" />
+      <node concept="2AHcQZ" id="6SpoPQg9emD" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6SpoPQg9lpp" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visitedConceptBranch" />
+      <node concept="3Tm1VV" id="6SpoPQg9lpr" role="1B3o_S" />
+      <node concept="3cqZAl" id="6SpoPQg9lps" role="3clF45" />
+      <node concept="37vLTG" id="6SpoPQg9lpt" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6SpoPQg9lpu" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6SpoPQg9lpv" role="3clF46">
+        <property role="TrG5h" value="branchID" />
+        <node concept="17QB3L" id="6SpoPQg9lpw" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6SpoPQg9lpx" role="3clF47" />
+      <node concept="2AHcQZ" id="6SpoPQg9lpy" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6SpoPQg9lpz" role="jymVt">
+      <property role="TrG5h" value="registerBranches" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="37vLTG" id="6SpoPQg9lp$" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="6SpoPQg9lp_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6SpoPQg9lpA" role="3clF46">
+        <property role="TrG5h" value="branchIDs" />
+        <node concept="10Q1$e" id="6SpoPQg9lpB" role="1tU5fm">
+          <node concept="17QB3L" id="6SpoPQg9lpC" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6SpoPQg9lpE" role="3clF45" />
+      <node concept="3Tm1VV" id="6SpoPQg9lpF" role="1B3o_S" />
+      <node concept="3clFbS" id="6SpoPQg9lpG" role="3clF47" />
+      <node concept="2AHcQZ" id="6SpoPQg9lpH" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>

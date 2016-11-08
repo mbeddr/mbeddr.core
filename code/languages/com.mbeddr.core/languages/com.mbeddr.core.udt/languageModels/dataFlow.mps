@@ -90,6 +90,12 @@
       </concept>
       <concept id="1206442659665" name="jetbrains.mps.lang.dataFlow.structure.BuilderBlock" flags="in" index="3__wT9" />
       <concept id="1206442747519" name="jetbrains.mps.lang.dataFlow.structure.NodeParameter" flags="nn" index="3__QtB" />
+      <concept id="1206444349662" name="jetbrains.mps.lang.dataFlow.structure.EmitWriteStatement" flags="nn" index="3_FXB6">
+        <child id="1230468250683" name="value" index="1XBRO_" />
+      </concept>
+      <concept id="1206444622344" name="jetbrains.mps.lang.dataFlow.structure.BaseEmitVariableStatement" flags="nn" index="3_H0cg">
+        <child id="1206444629799" name="variable" index="3_H1SZ" />
+      </concept>
       <concept id="1206454052847" name="jetbrains.mps.lang.dataFlow.structure.EmitCodeForStatement" flags="nn" index="3AgYrR">
         <child id="1206454079161" name="codeFor" index="3Ah4Yx" />
       </concept>
@@ -238,7 +244,7 @@
           <node concept="2OqwBi" id="25K78YYrmrm" role="3Ah4Yx">
             <node concept="3__QtB" id="25K78YYrmo4" role="2Oq$k0" />
             <node concept="3TrEf2" id="25K78YYrm$s" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:5aaBiRoxDVo" />
+              <ref role="3Tt5mk" to="clbe:5aaBiRoxDVo" resolve="expr" />
             </node>
           </node>
         </node>
@@ -254,7 +260,7 @@
           <node concept="2OqwBi" id="25K78YYrlOW" role="3Ah4Yx">
             <node concept="3__QtB" id="25K78YYrlLG" role="2Oq$k0" />
             <node concept="3TrEf2" id="25K78YYrm6x" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:1frRXyHUCOf" />
+              <ref role="3Tt5mk" to="clbe:1frRXyHUCOf" resolve="targetType" />
             </node>
           </node>
         </node>
@@ -262,7 +268,36 @@
           <node concept="2OqwBi" id="25K78YYrmdb" role="3Ah4Yx">
             <node concept="3__QtB" id="25K78YYrm9T" role="2Oq$k0" />
             <node concept="3TrEf2" id="25K78YYrmmh" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:1frRXyHUCFC" />
+              <ref role="3Tt5mk" to="clbe:1frRXyHUCFC" resolve="expr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="YPlzSrjsb8">
+    <ref role="3_znuS" to="clbe:3DiW6qrFL9V" resolve="MemberInitExpression" />
+    <node concept="3__wT9" id="YPlzSrjsb9" role="3_A6iZ">
+      <node concept="3clFbS" id="YPlzSrjsba" role="2VODD2">
+        <node concept="3AgYrR" id="YPlzSrjsm8" role="3cqZAp">
+          <node concept="2OqwBi" id="YPlzSrjszW" role="3Ah4Yx">
+            <node concept="3__QtB" id="YPlzSrjsmA" role="2Oq$k0" />
+            <node concept="3TrEf2" id="YPlzSrjthB" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:3DiW6qrFQZA" resolve="value" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_FXB6" id="YPlzSrjtpF" role="3cqZAp">
+          <node concept="2OqwBi" id="YPlzSrjtG5" role="3_H1SZ">
+            <node concept="3__QtB" id="YPlzSrjttU" role="2Oq$k0" />
+            <node concept="3TrEf2" id="YPlzSrjupK" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:3DiW6qrFRdx" resolve="element" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="YPlzSrjuGs" role="1XBRO_">
+            <node concept="3__QtB" id="YPlzSrjuup" role="2Oq$k0" />
+            <node concept="3TrEf2" id="YPlzSrjv4x" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:3DiW6qrFQZA" resolve="value" />
             </node>
           </node>
         </node>
