@@ -203,6 +203,7 @@
         <reference id="1024655549788599479" name="patternModule" index="ws7DW" />
       </concept>
       <concept id="1024655549795904162" name="com.mbeddr.mpsutil.inca.core.structure.ProtectedVisibility" flags="ng" index="wzYhD" />
+      <concept id="1024655549795901818" name="com.mbeddr.mpsutil.inca.core.structure.PrivateVisibility" flags="ng" index="wzYYL" />
       <concept id="266511528377428275" name="com.mbeddr.mpsutil.inca.core.structure.ParameterCommentTag" flags="ng" index="2MMnZx">
         <property id="266511528377428276" name="text" index="2MMnZA" />
         <reference id="266511528377428278" name="parameter" index="2MMnZ$" />
@@ -1665,6 +1666,7 @@
           <ref role="2MMnZ$" node="6IScWK1TvfS" resolve="op" />
         </node>
       </node>
+      <node concept="wzYYL" id="2FsPtePnZH4" role="wzYgH" />
     </node>
     <node concept="1XdyHe" id="1suAdVkLb$R" role="1dubk0" />
     <node concept="wJ9QX" id="2FsPteOYGXJ" role="xaH5_">

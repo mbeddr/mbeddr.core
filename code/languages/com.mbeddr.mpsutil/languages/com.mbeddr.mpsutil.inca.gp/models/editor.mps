@@ -296,12 +296,14 @@
       </node>
       <node concept="3F0ifn" id="RjyNapPkOg" role="3EZMnx">
         <property role="3F0ifm" value="pattern" />
+        <ref role="1k5W1q" to="xokz:2CEi94dgHKA" resolve="KeyWord" />
       </node>
       <node concept="3F0A7n" id="RjyNapPkOm" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="RjyNapPkOt" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="xokz:2CEi94dh36z" resolve="Parenthesis" />
         <node concept="11LMrY" id="RjyNaq0NrQ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -318,6 +320,7 @@
       <node concept="l2Vlx" id="7lNkc6MCUlU" role="2iSdaV" />
       <node concept="3F0ifn" id="RjyNapPkOH" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="xokz:2CEi94dh36z" resolve="Parenthesis" />
         <node concept="11L4FC" id="7i4WCRXyqhA" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -366,6 +369,7 @@
         </node>
         <node concept="3F0ifn" id="RjyNaq0wD3" role="3EZMnx">
           <property role="3F0ifm" value="or" />
+          <ref role="1k5W1q" to="xokz:2CEi94dgHKA" resolve="KeyWord" />
           <node concept="pkWqt" id="7lNkc6MDtCJ" role="pqm2j">
             <node concept="3clFbS" id="7lNkc6MDtCK" role="2VODD2">
               <node concept="3cpWs6" id="7lNkc6MDtJU" role="3cqZAp">
@@ -384,6 +388,7 @@
         </node>
         <node concept="3F0ifn" id="RjyNaq0wDi" role="3EZMnx">
           <property role="3F0ifm" value="{" />
+          <ref role="1k5W1q" to="xokz:2CEi94dh36z" resolve="Parenthesis" />
         </node>
         <node concept="l2Vlx" id="7lNkc6MDtbn" role="2iSdaV" />
       </node>
@@ -417,6 +422,7 @@
       </node>
       <node concept="3F0ifn" id="7lNkc6MDsZb" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="xokz:2CEi94dh36z" resolve="Parenthesis" />
       </node>
       <node concept="l2Vlx" id="i0uR7HG" role="2iSdaV" />
     </node>
@@ -531,6 +537,7 @@
       </node>
       <node concept="3F0ifn" id="7O543ZBah0D" role="3EZMnx">
         <property role="3F0ifm" value="find" />
+        <ref role="1k5W1q" to="xokz:2CEi94dgHKA" resolve="KeyWord" />
       </node>
       <node concept="3F1sOY" id="RjyNaq440D" role="3EZMnx">
         <ref role="1NtTu8" to="55iy:RjyNaq43ZO" resolve="call" />
