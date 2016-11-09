@@ -239,7 +239,7 @@
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
     <node concept="PrWs8" id="6$RZwFUrF6O" role="PrDN$">
-      <ref role="PrY4T" to="55iy:6$RZwFUruBE" resolve="ITransformable" />
+      <ref role="PrY4T" to="hqsm:6$RZwFUruBE" resolve="ITransformable" />
     </node>
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Ss">
@@ -374,7 +374,7 @@
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
     <node concept="PrWs8" id="6$RZwFUsv7u" role="PrDN$">
-      <ref role="PrY4T" to="55iy:6$RZwFUruBE" resolve="ITransformable" />
+      <ref role="PrY4T" to="hqsm:6$RZwFUruBE" resolve="ITransformable" />
     </node>
   </node>
   <node concept="1TIwiD" id="52HBLukNkCm">

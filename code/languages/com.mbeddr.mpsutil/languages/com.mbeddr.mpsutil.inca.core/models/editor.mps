@@ -1795,22 +1795,6 @@
     <property role="3GE5qa" value="values" />
     <ref role="aqKnT" to="hqsm:4QgsNmKMGGS" resolve="EnumMemberValue" />
   </node>
-  <node concept="24kQdi" id="7A0HCuGr2aT">
-    <property role="3GE5qa" value="constraints" />
-    <ref role="1XX52x" to="hqsm:7A0HCuGr2aH" resolve="ParentPathElement" />
-    <node concept="3F0ifn" id="7A0HCuGtYLR" role="2wV5jI">
-      <property role="3F0ifm" value="parent" />
-      <node concept="Vb9p2" id="7A0HCuGtYQ7" role="3F10Kt" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7A0HCuGr2fz">
-    <property role="3GE5qa" value="constraints" />
-    <ref role="1XX52x" to="hqsm:7A0HCuGr2fn" resolve="NextPathElement" />
-    <node concept="3F0ifn" id="7A0HCuGtYU$" role="2wV5jI">
-      <property role="3F0ifm" value="next" />
-      <node concept="Vb9p2" id="7A0HCuGtYUC" role="3F10Kt" />
-    </node>
-  </node>
   <node concept="24kQdi" id="SSjGGIiajw">
     <ref role="1XX52x" to="hqsm:SSjGGIi3iP" resolve="AbstractPatternModuleImport" />
     <node concept="3EZMnI" id="2FsPteOVXOq" role="2wV5jI">

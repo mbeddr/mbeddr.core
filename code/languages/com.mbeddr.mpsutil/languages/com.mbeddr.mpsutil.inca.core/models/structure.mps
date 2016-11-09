@@ -751,6 +751,9 @@
     <node concept="PrWs8" id="3p0ky8Likrm" role="PrDN$">
       <ref role="PrY4T" node="3p0ky8Li8px" resolve="IPathElementScopeProvider" />
     </node>
+    <node concept="PrWs8" id="2K9A72IyShR" role="PrDN$">
+      <ref role="PrY4T" node="6$RZwFUruBE" resolve="ITransformable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1i65yRATv5I">
     <property role="TrG5h" value="ITypeConstraintProvider" />
@@ -910,28 +913,6 @@
       <ref role="20lvS9" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7A0HCuGr2aH">
-    <property role="EcuMT" value="8755198369437852333" />
-    <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="ParentPathElement" />
-    <property role="34LRSv" value="parent" />
-    <property role="R4oN_" value="parent reference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7A0HCuGr2aI" role="PzmwI">
-      <ref role="PrY4T" node="1ERTnBTmuSC" resolve="IPathElement" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7A0HCuGr2fn">
-    <property role="EcuMT" value="8755198369437852631" />
-    <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="NextPathElement" />
-    <property role="34LRSv" value="next" />
-    <property role="R4oN_" value="next reference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7A0HCuGr2fo" role="PzmwI">
-      <ref role="PrY4T" node="1ERTnBTmuSC" resolve="IPathElement" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="7A0HCuGt5rY">
     <property role="EcuMT" value="8755198369438390014" />
     <property role="3GE5qa" value="constraints" />
@@ -1039,6 +1020,11 @@
     <node concept="PrWs8" id="SSjGGIHUEP" role="PzmwI">
       <ref role="PrY4T" node="SSjGGIHU5T" resolve="IPatternVisibility" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6$RZwFUruBE">
+    <property role="3GE5qa" value="misc" />
+    <property role="TrG5h" value="ITransformable" />
+    <property role="EcuMT" value="7581807820806154730" />
   </node>
 </model>
 

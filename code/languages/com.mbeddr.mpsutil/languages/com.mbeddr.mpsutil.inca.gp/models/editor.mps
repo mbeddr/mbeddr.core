@@ -62,6 +62,7 @@
       <concept id="1216308599511" name="jetbrains.mps.lang.editor.structure.PositionStyleClassItem" flags="ln" index="LD5Jc">
         <property id="1216308761668" name="position" index="LDHlv" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -1468,6 +1469,22 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3p0ky8Li2F7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7A0HCuGr2fz">
+    <property role="3GE5qa" value="constraints" />
+    <ref role="1XX52x" to="55iy:7A0HCuGr2fn" resolve="NextPathElement" />
+    <node concept="3F0ifn" id="7A0HCuGtYU$" role="2wV5jI">
+      <property role="3F0ifm" value="next" />
+      <node concept="Vb9p2" id="7A0HCuGtYUC" role="3F10Kt" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7A0HCuGr2aT">
+    <property role="3GE5qa" value="constraints" />
+    <ref role="1XX52x" to="55iy:7A0HCuGr2aH" resolve="ParentPathElement" />
+    <node concept="3F0ifn" id="7A0HCuGtYLR" role="2wV5jI">
+      <property role="3F0ifm" value="parent" />
+      <node concept="Vb9p2" id="7A0HCuGtYQ7" role="3F10Kt" />
     </node>
   </node>
 </model>
