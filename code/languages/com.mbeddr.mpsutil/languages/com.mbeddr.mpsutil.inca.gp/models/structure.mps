@@ -33,6 +33,8 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -306,24 +308,40 @@
     <property role="EcuMT" value="3909214783366769316" />
     <property role="3GE5qa" value="constraints" />
     <property role="TrG5h" value="PathElement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3p0ky8Li2E_" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
-    </node>
-    <node concept="PrWs8" id="4hcq8yM_HjZ" role="PzmwI">
-      <ref role="PrY4T" node="6$RZwFUruBE" resolve="ITransformable" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="6$RZwFUruBE">
-    <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="ITransformable" />
-    <property role="EcuMT" value="7581807820806154730" />
+    <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
   </node>
   <node concept="1TIwiD" id="SSjGGIxddQ">
     <property role="EcuMT" value="1024655549792572278" />
     <property role="TrG5h" value="GraphPatternModuleImport" />
     <property role="34LRSv" value="&lt;{patternModule}&gt;" />
     <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractPatternModuleImport" />
+  </node>
+  <node concept="1TIwiD" id="7A0HCuGr2fn">
+    <property role="EcuMT" value="8755198369437852631" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="NextPathElement" />
+    <property role="34LRSv" value="next" />
+    <property role="R4oN_" value="next reference" />
+    <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
+  </node>
+  <node concept="1TIwiD" id="7A0HCuGr2aH">
+    <property role="EcuMT" value="8755198369437852333" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="ParentPathElement" />
+    <property role="34LRSv" value="parent" />
+    <property role="R4oN_" value="parent reference" />
+    <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
+  </node>
+  <node concept="1TIwiD" id="2K9A72IyXjN">
+    <property role="EcuMT" value="3173235022191383795" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="AbstractPathElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2K9A72IyXjO" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
+    </node>
   </node>
 </model>
 

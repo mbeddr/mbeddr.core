@@ -244,8 +244,6 @@
         <child id="1925259677761359694" name="bodies" index="3zVECR" />
       </concept>
       <concept id="5024559837613016203" name="com.mbeddr.mpsutil.inca.core.structure.IPatternComment" flags="ng" index="1k99o6" />
-      <concept id="8755198369437852333" name="com.mbeddr.mpsutil.inca.core.structure.ParentPathElement" flags="ng" index="3lV9gE" />
-      <concept id="8755198369437852631" name="com.mbeddr.mpsutil.inca.core.structure.NextPathElement" flags="ng" index="3lV9lg" />
       <concept id="3634481308605751419" name="com.mbeddr.mpsutil.inca.core.structure.BaseVariableReference" flags="ng" index="1sjAk5">
         <reference id="3634481308605751420" name="variable" index="1sjAk2" />
       </concept>
@@ -280,6 +278,8 @@
         <child id="1925259677761394831" name="element" index="3zVzRQ" />
       </concept>
       <concept id="6509498303003796573" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternConceptConstraint" flags="ng" index="2qQGpE" />
+      <concept id="8755198369437852333" name="com.mbeddr.mpsutil.inca.gp.structure.ParentPathElement" flags="ng" index="3lV9gE" />
+      <concept id="8755198369437852631" name="com.mbeddr.mpsutil.inca.gp.structure.NextPathElement" flags="ng" index="3lV9lg" />
       <concept id="1925259677759481645" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternModule" flags="ng" index="3zyO9k" />
       <concept id="1925259677759481823" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPattern" flags="ng" index="3zyOaA" />
       <concept id="1925259677761386650" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternBody" flags="ng" index="3zV_Rz" />
