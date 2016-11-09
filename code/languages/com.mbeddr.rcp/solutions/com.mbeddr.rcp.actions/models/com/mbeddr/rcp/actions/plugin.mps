@@ -33,7 +33,6 @@
   <node concept="2flHaf" id="6XvT233D$xo">
     <property role="TrG5h" value="EndUserActions" />
     <property role="3GE5qa" value="actionsfilter" />
-    <property role="CHIup" value="true" />
     <node concept="2flH9Z" id="4p6n9HQttzz" role="2flH9W">
       <property role="2flH96" value="ShowTips" />
     </node>
@@ -770,9 +769,7 @@
   <node concept="2flHaf" id="5re6bl11R$A">
     <property role="TrG5h" value="EverythingActions" />
     <property role="3GE5qa" value="actionsfilter" />
-    <node concept="2flH9Z" id="4p6n9HQtsnk" role="2flH9W">
-      <property role="2flH96" value="ShowTips" />
-    </node>
+    <property role="CHIup" value="true" />
   </node>
 </model>
 
