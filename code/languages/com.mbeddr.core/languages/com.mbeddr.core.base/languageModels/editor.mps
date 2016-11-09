@@ -15,6 +15,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -596,7 +597,11 @@
       </concept>
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="1059142979230420839" name="de.itemis.mps.editor.celllayout.structure.GridLayoutColumnSpanStyle" flags="lg" index="2tOxIa" />
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
+      <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
+        <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
       <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
@@ -3829,8 +3834,14 @@
             </node>
           </node>
         </node>
+        <node concept="2tOxIa" id="54pTGl8nVgp" role="3F10Kt">
+          <property role="1lJzqX" value="-1" />
+        </node>
       </node>
       <node concept="3EZMnI" id="26F1SwiaaQ5" role="3EZMnx">
+        <node concept="2tOxIa" id="54pTGl8nW8z" role="3F10Kt">
+          <property role="1lJzqX" value="-1" />
+        </node>
         <node concept="l2Vlx" id="26F1SwiaaQ6" role="2iSdaV" />
         <node concept="1HlG4h" id="26F1SwiaaQm" role="3EZMnx">
           <node concept="1HfYo3" id="26F1SwiaaQn" role="1HlULh">
@@ -3889,6 +3900,9 @@
         </node>
       </node>
       <node concept="3EZMnI" id="2ka6MWOuJWU" role="3EZMnx">
+        <node concept="2tOxIa" id="54pTGl8nWFm" role="3F10Kt">
+          <property role="1lJzqX" value="-1" />
+        </node>
         <node concept="l2Vlx" id="2ka6MWOuJWV" role="2iSdaV" />
         <node concept="pkWqt" id="2ka6MWOuJXh" role="pqm2j">
           <node concept="3clFbS" id="2ka6MWOuJXi" role="2VODD2">
