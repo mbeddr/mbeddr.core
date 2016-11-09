@@ -139,6 +139,24 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709614739" name="jetbrains.mps.lang.quotation.structure.NodeBuilderRef" flags="nn" index="36bGnv">
+        <reference id="8182547171709614741" name="target" index="36bGnp" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
         <child id="1207055552304" name="warningText" index="a7wSD" />
@@ -3492,6 +3510,63 @@
     <node concept="1YaCAy" id="18$bUx5OAwc" role="1YuTPh">
       <property role="TrG5h" value="rbs" />
       <ref role="1YaFvo" to="3673:6SpoPQgetS$" resolve="RegisterBranchesStatement" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3oV0py8TYV7">
+    <property role="TrG5h" value="check_DeclareListCoverage" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <node concept="3clFbS" id="3oV0py8TYV8" role="18ibNy" />
+    <node concept="1YaCAy" id="3oV0py8TYVa" role="1YuTPh">
+      <property role="TrG5h" value="dlc" />
+      <ref role="1YaFvo" to="3673:3oV0py8Ta7P" resolve="DeclareListCoverage" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3oV0py9lO6P">
+    <property role="TrG5h" value="typeof_DeclareListCoverage" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <node concept="3clFbS" id="3oV0py9lO6Q" role="18ibNy">
+      <node concept="3cpWs8" id="3oV0py9lOiq" role="3cqZAp">
+        <node concept="3cpWsn" id="3oV0py9lOir" role="3cpWs9">
+          <property role="TrG5h" value="tt" />
+          <node concept="3Tqbb2" id="3oV0py9lOio" role="1tU5fm">
+            <ref role="ehGHo" to="tpee:g7uibYu" resolve="ClassifierType" />
+          </node>
+          <node concept="2pJPEk" id="3oV0py9lOis" role="33vP2m">
+            <node concept="2pJPED" id="3oV0py9lOit" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
+              <node concept="2pIpSj" id="3oV0py9lOiu" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
+                <node concept="36bGnv" id="3oV0py9lOiv" role="2pJxcZ">
+                  <ref role="36bGnp" to="33ny:~Collection" resolve="Collection" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="3oV0py9lOS2" role="3cqZAp">
+        <node concept="mw_s8" id="3oV0py9lOSM" role="1ZfhKB">
+          <node concept="37vLTw" id="3oV0py9lOSK" role="mwGJk">
+            <ref role="3cqZAo" node="3oV0py9lOir" resolve="tt" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3oV0py9lOS5" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3oV0py9lOji" role="mwGJk">
+            <node concept="2OqwBi" id="3oV0py9lOtG" role="1Z2MuG">
+              <node concept="1YBJjd" id="3oV0py9lOln" role="2Oq$k0">
+                <ref role="1YBMHb" node="3oV0py9lO6S" resolve="declareListCoverage" />
+              </node>
+              <node concept="3TrEf2" id="3oV0py9lOEd" role="2OqNvi">
+                <ref role="3Tt5mk" to="3673:3oV0py8Taaa" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3oV0py9lO6S" role="1YuTPh">
+      <property role="TrG5h" value="declareListCoverage" />
+      <ref role="1YaFvo" to="3673:3oV0py8Ta7P" resolve="DeclareListCoverage" />
     </node>
   </node>
 </model>

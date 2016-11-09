@@ -101,6 +101,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="fb7be218-610c-4e16-af95-15257cfc0899(com.mbeddr.mpsutil.interpreter#8615074351687299716)" />
+            <external-mapping>
+              <mapping-node modelUID="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="3907718856318994916" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="fb7be218-610c-4e16-af95-15257cfc0899(com.mbeddr.mpsutil.interpreter#8615074351687299716)" />
+            <external-mapping>
+              <mapping-node modelUID="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="8615074351687299717" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
