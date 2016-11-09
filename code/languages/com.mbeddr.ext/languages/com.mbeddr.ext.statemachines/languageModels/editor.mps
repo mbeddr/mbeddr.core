@@ -6773,5 +6773,13 @@
   <node concept="3p36aQ" id="2mvFNoTupay">
     <ref role="aqKnT" to="clqz:65XyadYNfLA" resolve="CommentedStatemachineContent" />
   </node>
+  <node concept="3p36aQ" id="143iErn7gW7">
+    <property role="3GE5qa" value="machine.states" />
+    <ref role="aqKnT" to="clqz:47Sr75PnHar" resolve="EmptyStateContents" />
+  </node>
+  <node concept="3p36aQ" id="143iErn7gXO">
+    <property role="3GE5qa" value="machine" />
+    <ref role="aqKnT" to="clqz:7J_m0rEZ4_4" resolve="EmptyStatemachineContent" />
+  </node>
 </model>
 
