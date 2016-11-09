@@ -100,9 +100,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -195,7 +192,6 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1766949807893567867" name="jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction" flags="ig" index="bXqS6" />
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -222,7 +218,6 @@
         <child id="3592071576955708909" name="isApplicableClause" index="1xSnZW" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
-        <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -3245,88 +3240,6 @@
     <node concept="1YaCAy" id="7A0HCuGmTwp" role="1YuTPh">
       <property role="TrG5h" value="value" />
       <ref role="1YaFvo" to="hqsm:4QgsNmKMGGS" resolve="EnumMemberValue" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="7A0HCuGr2jZ">
-    <property role="TrG5h" value="typeof_NextPathElement" />
-    <property role="3GE5qa" value="constraints" />
-    <node concept="3clFbS" id="7A0HCuGr2k0" role="18ibNy">
-      <node concept="1Z5TYs" id="7A0HCuGr2yO" role="3cqZAp">
-        <node concept="mw_s8" id="7A0HCuGr2zg" role="1ZfhKB">
-          <node concept="2pJPEk" id="7A0HCuGr2zc" role="mwGJk">
-            <node concept="2pJPED" id="7A0HCuGr2zu" role="2pJPEn">
-              <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
-              <node concept="2pIpSj" id="5Os6JboGFPJ" role="2pJxcM">
-                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
-                <node concept="36bGnv" id="5Os6JboH19i" role="2pJxcZ">
-                  <ref role="36bGnp" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7A0HCuGr2yR" role="1ZfhK$">
-          <node concept="1Z2H0r" id="7A0HCuGr2k9" role="mwGJk">
-            <node concept="1YBJjd" id="7A0HCuGr2lW" role="1Z2MuG">
-              <ref role="1YBMHb" node="7A0HCuGr2k2" resolve="element" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7A0HCuGr2k2" role="1YuTPh">
-      <property role="TrG5h" value="element" />
-      <ref role="1YaFvo" to="hqsm:7A0HCuGr2fn" resolve="NextPathElement" />
-    </node>
-    <node concept="bXqS6" id="7A0HCuGuHv_" role="bX4a1">
-      <node concept="3clFbS" id="7A0HCuGuHvA" role="2VODD2">
-        <node concept="3cpWs6" id="7A0HCuGuHBM" role="3cqZAp">
-          <node concept="3clFbT" id="7A0HCuGuHJ0" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1YbPZF" id="7A0HCuGr2$8">
-    <property role="TrG5h" value="typeof_ParentPathElement" />
-    <property role="3GE5qa" value="constraints" />
-    <node concept="3clFbS" id="7A0HCuGr2$9" role="18ibNy">
-      <node concept="1Z5TYs" id="7A0HCuGr2$f" role="3cqZAp">
-        <node concept="mw_s8" id="7A0HCuGr2$g" role="1ZfhKB">
-          <node concept="2pJPEk" id="7A0HCuGr2$h" role="mwGJk">
-            <node concept="2pJPED" id="7A0HCuGr2$i" role="2pJPEn">
-              <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
-              <node concept="2pIpSj" id="5Os6JboGFYH" role="2pJxcM">
-                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
-                <node concept="36bGnv" id="5Os6JboH15B" role="2pJxcZ">
-                  <ref role="36bGnp" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7A0HCuGr2$j" role="1ZfhK$">
-          <node concept="1Z2H0r" id="7A0HCuGr2$k" role="mwGJk">
-            <node concept="1YBJjd" id="7A0HCuGr2$l" role="1Z2MuG">
-              <ref role="1YBMHb" node="7A0HCuGr2$b" resolve="element" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7A0HCuGr2$b" role="1YuTPh">
-      <property role="TrG5h" value="element" />
-      <ref role="1YaFvo" to="hqsm:7A0HCuGr2aH" resolve="ParentPathElement" />
-    </node>
-    <node concept="bXqS6" id="7A0HCuGuHQj" role="bX4a1">
-      <node concept="3clFbS" id="7A0HCuGuHQk" role="2VODD2">
-        <node concept="3cpWs6" id="7A0HCuGuHYw" role="3cqZAp">
-          <node concept="3clFbT" id="7A0HCuGuHYx" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>
