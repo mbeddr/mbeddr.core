@@ -229,6 +229,7 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -315,6 +316,7 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -3363,6 +3365,133 @@
     <node concept="1YaCAy" id="4_qY3E6qVnu" role="1YuTPh">
       <property role="TrG5h" value="coverageExpression" />
       <ref role="1YaFvo" to="3673:4_qY3E6qVbq" resolve="CoverageExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="18$bUx5OAw9">
+    <property role="TrG5h" value="check_RegisterBranchesExpressions" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <node concept="3clFbS" id="18$bUx5OAwa" role="18ibNy">
+      <node concept="3cpWs8" id="18$bUx5PZFV" role="3cqZAp">
+        <node concept="3cpWsn" id="18$bUx5PZFW" role="3cpWs9">
+          <property role="TrG5h" value="expectedStatementList" />
+          <node concept="3Tqbb2" id="18$bUx5PZEp" role="1tU5fm" />
+          <node concept="2OqwBi" id="18$bUx5PZFX" role="33vP2m">
+            <node concept="1YBJjd" id="18$bUx5PZFY" role="2Oq$k0">
+              <ref role="1YBMHb" node="18$bUx5OAwc" resolve="rbs" />
+            </node>
+            <node concept="1mfA1w" id="18$bUx5PZFZ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="18$bUx5Q12I" role="3cqZAp">
+        <node concept="3cpWsn" id="18$bUx5Q12J" role="3cpWs9">
+          <property role="TrG5h" value="expectedBlockStatement" />
+          <node concept="3Tqbb2" id="18$bUx5Q12K" role="1tU5fm" />
+          <node concept="2OqwBi" id="18$bUx5Q12L" role="33vP2m">
+            <node concept="37vLTw" id="18$bUx5Q1jU" role="2Oq$k0">
+              <ref role="3cqZAo" node="18$bUx5PZFW" resolve="expectedStatementList" />
+            </node>
+            <node concept="1mfA1w" id="18$bUx5Q12N" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="18$bUx5Q1k7" role="3cqZAp">
+        <node concept="3cpWsn" id="18$bUx5Q1k8" role="3cpWs9">
+          <property role="TrG5h" value="expectedEvaluator" />
+          <node concept="3Tqbb2" id="18$bUx5Q1k9" role="1tU5fm" />
+          <node concept="2OqwBi" id="18$bUx5Q1ka" role="33vP2m">
+            <node concept="37vLTw" id="18$bUx5Q1lL" role="2Oq$k0">
+              <ref role="3cqZAo" node="18$bUx5Q12J" resolve="expectedBlockStatement" />
+            </node>
+            <node concept="1mfA1w" id="18$bUx5Q1kc" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="18$bUx5Q1oy" role="3cqZAp">
+        <node concept="3clFbS" id="18$bUx5Q1o$" role="3clFbx">
+          <node concept="3clFbJ" id="18$bUx5Q634" role="3cqZAp">
+            <node concept="3clFbS" id="18$bUx5Q636" role="3clFbx">
+              <node concept="2MkqsV" id="18$bUx5QaU3" role="3cqZAp">
+                <node concept="Xl_RD" id="18$bUx5QaU4" role="2MkJ7o">
+                  <property role="Xl_RC" value="must be used as the first statement in an evaluator" />
+                </node>
+                <node concept="1YBJjd" id="18$bUx5QaU5" role="2OEOjV">
+                  <ref role="1YBMHb" node="18$bUx5OAwc" resolve="rbs" />
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="18$bUx5QaHr" role="3clFbw">
+              <node concept="1YBJjd" id="18$bUx5QaNy" role="3uHU7w">
+                <ref role="1YBMHb" node="18$bUx5OAwc" resolve="rbs" />
+              </node>
+              <node concept="2OqwBi" id="18$bUx5Q8P7" role="3uHU7B">
+                <node concept="2OqwBi" id="18$bUx5Q6os" role="2Oq$k0">
+                  <node concept="1PxgMI" id="18$bUx5Q69H" role="2Oq$k0">
+                    <ref role="1m5ApE" to="tpee:fzclF80" resolve="StatementList" />
+                    <node concept="37vLTw" id="18$bUx5Q63n" role="1m5AlR">
+                      <ref role="3cqZAo" node="18$bUx5PZFW" resolve="expectedStatementList" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="18$bUx5Q6CW" role="2OqNvi">
+                    <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="18$bUx5Qazt" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="18$bUx5Q2U9" role="3clFbw">
+          <node concept="2OqwBi" id="18$bUx5Q3hY" role="3uHU7w">
+            <node concept="37vLTw" id="18$bUx5Q33m" role="2Oq$k0">
+              <ref role="3cqZAo" node="18$bUx5Q1k8" resolve="expectedEvaluator" />
+            </node>
+            <node concept="1mIQ4w" id="18$bUx5Q4q3" role="2OqNvi">
+              <node concept="chp4Y" id="18$bUx5QYuP" role="cj9EA">
+                <ref role="cht4Q" to="3673:4X7QcQ2Rofu" resolve="ConceptEvaluatorBody" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="18$bUx5Q1Yp" role="3uHU7B">
+            <node concept="2OqwBi" id="18$bUx5Q1wp" role="3uHU7B">
+              <node concept="37vLTw" id="18$bUx5Q1q5" role="2Oq$k0">
+                <ref role="3cqZAo" node="18$bUx5PZFW" resolve="expectedStatementList" />
+              </node>
+              <node concept="1mIQ4w" id="18$bUx5Q1DC" role="2OqNvi">
+                <node concept="chp4Y" id="18$bUx5Q1Ft" role="cj9EA">
+                  <ref role="cht4Q" to="tpee:fzclF80" resolve="StatementList" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="18$bUx5Q2fS" role="3uHU7w">
+              <node concept="37vLTw" id="18$bUx5Q24d" role="2Oq$k0">
+                <ref role="3cqZAo" node="18$bUx5Q12J" resolve="expectedBlockStatement" />
+              </node>
+              <node concept="1mIQ4w" id="18$bUx5Q2uu" role="2OqNvi">
+                <node concept="chp4Y" id="18$bUx5Q2$e" role="cj9EA">
+                  <ref role="cht4Q" to="tpee:fK9aQHR" resolve="BlockStatement" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="9aQIb" id="18$bUx5Q4HW" role="9aQIa">
+          <node concept="3clFbS" id="18$bUx5Q4HX" role="9aQI4">
+            <node concept="2MkqsV" id="18$bUx5OL$a" role="3cqZAp">
+              <node concept="Xl_RD" id="18$bUx5OL$m" role="2MkJ7o">
+                <property role="Xl_RC" value="must be used as the first statement in an evaluator" />
+              </node>
+              <node concept="1YBJjd" id="18$bUx5OL_q" role="2OEOjV">
+                <ref role="1YBMHb" node="18$bUx5OAwc" resolve="rbs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="18$bUx5OAwc" role="1YuTPh">
+      <property role="TrG5h" value="rbs" />
+      <ref role="1YaFvo" to="3673:6SpoPQgetS$" resolve="RegisterBranchesStatement" />
     </node>
   </node>
 </model>
