@@ -277,6 +277,7 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+      <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
@@ -2973,9 +2974,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1QHqEK" id="74j3m$6DJzg" role="3cqZAp">
-                  <node concept="1QHqEC" id="74j3m$6DJzi" role="1QHqEI">
-                    <node concept="3clFbS" id="74j3m$6DJzk" role="1bW5cS">
+                <node concept="1QHqEM" id="7Z9HjZ68JTl" role="3cqZAp">
+                  <node concept="1QHqEC" id="7Z9HjZ68JTn" role="1QHqEI">
+                    <node concept="3clFbS" id="7Z9HjZ68JTp" role="1bW5cS">
                       <node concept="3clFbF" id="74j3m$6DKRU" role="3cqZAp">
                         <node concept="2OqwBi" id="74j3m$6DL8y" role="3clFbG">
                           <node concept="37vLTw" id="74j3m$6DKRS" role="2Oq$k0">
@@ -3100,23 +3101,29 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="MCpgxYaIJy" role="3cqZAp">
-          <node concept="37vLTI" id="MCpgxYaJi$" role="3clFbG">
-            <node concept="37vLTw" id="MCpgxYaIJw" role="37vLTJ">
-              <ref role="3cqZAo" node="MCpgxY92_X" resolve="solution" />
-            </node>
-            <node concept="10QFUN" id="MCpgxYaGVm" role="37vLTx">
-              <node concept="3uibUv" id="MCpgxYaGVn" role="10QFUM">
-                <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-              </node>
-              <node concept="2YIFZM" id="MCpgxYaGVo" role="10QFUP">
-                <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.createModule(jetbrains.mps.library.ModulesMiner$ModuleHandle,jetbrains.mps.smodel.MPSModuleOwner):org.jetbrains.mps.openapi.module.SModule" resolve="createModule" />
-                <ref role="1Pybhc" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
-                <node concept="37vLTw" id="MCpgxYaGVp" role="37wK5m">
-                  <ref role="3cqZAo" node="MCpgxYaGa0" resolve="moduleHandle" />
-                </node>
-                <node concept="37vLTw" id="MCpgxYaGVq" role="37wK5m">
-                  <ref role="3cqZAo" node="YmESZL4$O" resolve="moduleOwner" />
+        <node concept="1QHqEM" id="7Z9HjZ69dK_" role="3cqZAp">
+          <node concept="1QHqEC" id="7Z9HjZ69dKB" role="1QHqEI">
+            <node concept="3clFbS" id="7Z9HjZ69dKD" role="1bW5cS">
+              <node concept="3clFbF" id="MCpgxYaIJy" role="3cqZAp">
+                <node concept="37vLTI" id="MCpgxYaJi$" role="3clFbG">
+                  <node concept="37vLTw" id="MCpgxYaIJw" role="37vLTJ">
+                    <ref role="3cqZAo" node="MCpgxY92_X" resolve="solution" />
+                  </node>
+                  <node concept="10QFUN" id="MCpgxYaGVm" role="37vLTx">
+                    <node concept="3uibUv" id="MCpgxYaGVn" role="10QFUM">
+                      <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+                    </node>
+                    <node concept="2YIFZM" id="MCpgxYaGVo" role="10QFUP">
+                      <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.createModule(jetbrains.mps.library.ModulesMiner$ModuleHandle,jetbrains.mps.smodel.MPSModuleOwner):org.jetbrains.mps.openapi.module.SModule" resolve="createModule" />
+                      <ref role="1Pybhc" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
+                      <node concept="37vLTw" id="MCpgxYaGVp" role="37wK5m">
+                        <ref role="3cqZAo" node="MCpgxYaGa0" resolve="moduleHandle" />
+                      </node>
+                      <node concept="37vLTw" id="MCpgxYaGVq" role="37wK5m">
+                        <ref role="3cqZAo" node="YmESZL4$O" resolve="moduleOwner" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
