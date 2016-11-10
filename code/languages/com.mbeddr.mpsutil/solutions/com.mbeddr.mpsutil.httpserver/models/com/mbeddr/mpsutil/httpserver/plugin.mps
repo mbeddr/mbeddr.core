@@ -20,6 +20,7 @@
     <import index="m2xw" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:org.eclipse.jetty.server(com.mbeddr.mpsutil.httpsupport.rt/)" />
     <import index="r85u" ref="r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt.plugin)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="6sky" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:org.eclipse.jetty.util.component(com.mbeddr.mpsutil.httpsupport.rt/)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
@@ -36,10 +37,14 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -151,6 +156,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
@@ -181,6 +187,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -342,15 +349,293 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="7GB4siXi_Lj" role="3clF47">
+        <node concept="3cpWs8" id="_jqqJb0kxC" role="3cqZAp">
+          <node concept="3cpWsn" id="_jqqJb0kxD" role="3cpWs9">
+            <property role="TrG5h" value="port" />
+            <node concept="10Oyi0" id="_jqqJb0kxB" role="1tU5fm" />
+            <node concept="2OqwBi" id="_jqqJb0kxE" role="33vP2m">
+              <node concept="2YIFZM" id="_jqqJb0kxF" role="2Oq$k0">
+                <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
+                <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
+              </node>
+              <node concept="liA8E" id="_jqqJb0kxG" role="2OqNvi">
+                <ref role="37wK5l" to="r85u:3vXSZsAPOM5" resolve="getPort" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="_jqqJb0g2V" role="3cqZAp">
+          <node concept="3clFbS" id="_jqqJb0g2X" role="3clFbx">
+            <node concept="34ab3g" id="_jqqJb0$WI" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="Xl_RD" id="_jqqJb0$WK" role="34bqiv">
+                <property role="Xl_RC" value="unit test mode detected. looking for alternate port" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="_jqqJb0p$2" role="3cqZAp">
+              <node concept="3cpWsn" id="_jqqJb0p$3" role="3cpWs9">
+                <property role="TrG5h" value="env" />
+                <node concept="17QB3L" id="_jqqJb0pC9" role="1tU5fm" />
+                <node concept="2YIFZM" id="_jqqJb0p$4" role="33vP2m">
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                  <node concept="Xl_RD" id="_jqqJb0p$5" role="37wK5m">
+                    <property role="Xl_RC" value="MBEDDR_TEST_HTTP_PORT" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="_jqqJb0pJy" role="3cqZAp">
+              <node concept="3clFbS" id="_jqqJb0pJ$" role="3clFbx">
+                <node concept="34ab3g" id="_jqqJb0x3b" role="3cqZAp">
+                  <property role="35gtTG" value="info" />
+                  <node concept="3cpWs3" id="_jqqJb0xsy" role="34bqiv">
+                    <node concept="37vLTw" id="_jqqJb0xtR" role="3uHU7w">
+                      <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                    </node>
+                    <node concept="Xl_RD" id="_jqqJb0x3d" role="3uHU7B">
+                      <property role="Xl_RC" value="found http server port in env: " />
+                    </node>
+                  </node>
+                </node>
+                <node concept="SfApY" id="_jqqJb0q1i" role="3cqZAp">
+                  <node concept="3clFbS" id="_jqqJb0q1j" role="SfCbr">
+                    <node concept="3cpWs8" id="_jqqJb0pWP" role="3cqZAp">
+                      <node concept="3cpWsn" id="_jqqJb0pWQ" role="3cpWs9">
+                        <property role="TrG5h" value="parseInt" />
+                        <node concept="10Oyi0" id="_jqqJb0pWN" role="1tU5fm" />
+                        <node concept="2YIFZM" id="_jqqJb0pWR" role="33vP2m">
+                          <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                          <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                          <node concept="37vLTw" id="_jqqJb0pWS" role="37wK5m">
+                            <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="_jqqJb0q8_" role="3cqZAp">
+                      <node concept="3clFbS" id="_jqqJb0q8B" role="3clFbx">
+                        <node concept="3cpWs6" id="_jqqJb0rdH" role="3cqZAp">
+                          <node concept="37vLTw" id="_jqqJb0rr2" role="3cqZAk">
+                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Wc70l" id="_jqqJb0quu" role="3clFbw">
+                        <node concept="2dkUwp" id="_jqqJb0qRY" role="3uHU7w">
+                          <node concept="37vLTw" id="_jqqJb0qBN" role="3uHU7B">
+                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                          </node>
+                          <node concept="3cmrfG" id="_jqqJb0qU6" role="3uHU7w">
+                            <property role="3cmrfH" value="65535" />
+                          </node>
+                        </node>
+                        <node concept="3eOSWO" id="_jqqJb0qlN" role="3uHU7B">
+                          <node concept="37vLTw" id="_jqqJb0q9O" role="3uHU7B">
+                            <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                          </node>
+                          <node concept="3cmrfG" id="_jqqJb0qmC" role="3uHU7w">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="9aQIb" id="_jqqJb0thn" role="9aQIa">
+                        <node concept="3clFbS" id="_jqqJb0tho" role="9aQI4">
+                          <node concept="34ab3g" id="_jqqJb0wkc" role="3cqZAp">
+                            <property role="35gtTG" value="error" />
+                            <node concept="3cpWs3" id="_jqqJb0wui" role="34bqiv">
+                              <node concept="37vLTw" id="_jqqJb0wvw" role="3uHU7w">
+                                <ref role="3cqZAo" node="_jqqJb0pWQ" resolve="parseInt" />
+                              </node>
+                              <node concept="Xl_RD" id="_jqqJb0wke" role="3uHU7B">
+                                <property role="Xl_RC" value="port in env var is not a valid TCP port: " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="TDmWw" id="_jqqJb0q1p" role="TEbGg">
+                    <node concept="3clFbS" id="_jqqJb0q1s" role="TDEfX">
+                      <node concept="34ab3g" id="_jqqJb0s4t" role="3cqZAp">
+                        <property role="35gtTG" value="warn" />
+                        <property role="34fQS0" value="true" />
+                        <node concept="3cpWs3" id="_jqqJb0ske" role="34bqiv">
+                          <node concept="Xl_RD" id="_jqqJb0sm7" role="3uHU7w">
+                            <property role="Xl_RC" value=" to integer" />
+                          </node>
+                          <node concept="3cpWs3" id="_jqqJb0sd5" role="3uHU7B">
+                            <node concept="Xl_RD" id="_jqqJb0s4v" role="3uHU7B">
+                              <property role="Xl_RC" value="can't parse " />
+                            </node>
+                            <node concept="37vLTw" id="_jqqJb0seg" role="3uHU7w">
+                              <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="_jqqJb0s4x" role="34bMjA">
+                          <ref role="3cqZAo" node="_jqqJb0q1t" resolve="e" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWsn" id="_jqqJb0q1t" role="TDEfY">
+                      <property role="TrG5h" value="e" />
+                      <node concept="3uibUv" id="_jqqJb0q1o" role="1tU5fm">
+                        <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="_jqqJb0pPo" role="3clFbw">
+                <node concept="37vLTw" id="_jqqJb0pKG" role="3uHU7B">
+                  <ref role="3cqZAo" node="_jqqJb0p$3" resolve="env" />
+                </node>
+                <node concept="10Nm6u" id="_jqqJb0pPP" role="3uHU7w" />
+              </node>
+              <node concept="9aQIb" id="_jqqJb0ssj" role="9aQIa">
+                <node concept="3clFbS" id="_jqqJb0ssk" role="9aQI4">
+                  <node concept="3cpWs8" id="_jqqJb0sNL" role="3cqZAp">
+                    <node concept="3cpWsn" id="_jqqJb0sNM" role="3cpWs9">
+                      <property role="TrG5h" value="property" />
+                      <node concept="17QB3L" id="_jqqJb0sSt" role="1tU5fm" />
+                      <node concept="2YIFZM" id="_jqqJb0sNN" role="33vP2m">
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                        <node concept="Xl_RD" id="_jqqJb0sNO" role="37wK5m">
+                          <property role="Xl_RC" value="mbeddr.test.http.port" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="_jqqJb0sYt" role="3cqZAp">
+                    <node concept="3clFbS" id="_jqqJb0sYx" role="3clFbx">
+                      <node concept="34ab3g" id="_jqqJb0xzn" role="3cqZAp">
+                        <property role="35gtTG" value="info" />
+                        <node concept="3cpWs3" id="_jqqJb0xG5" role="34bqiv">
+                          <node concept="37vLTw" id="_jqqJb0xIe" role="3uHU7w">
+                            <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
+                          </node>
+                          <node concept="Xl_RD" id="_jqqJb0xzp" role="3uHU7B">
+                            <property role="Xl_RC" value="found http server port in property: " />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="SfApY" id="_jqqJb0xW3" role="3cqZAp">
+                        <node concept="3clFbS" id="_jqqJb0xW4" role="SfCbr">
+                          <node concept="3cpWs8" id="_jqqJb0xUI" role="3cqZAp">
+                            <node concept="3cpWsn" id="_jqqJb0xUJ" role="3cpWs9">
+                              <property role="TrG5h" value="parseInt" />
+                              <node concept="10Oyi0" id="_jqqJb0xUF" role="1tU5fm" />
+                              <node concept="2YIFZM" id="_jqqJb0xUK" role="33vP2m">
+                                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                                <node concept="37vLTw" id="_jqqJb0xUL" role="37wK5m">
+                                  <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="_jqqJb0y3X" role="3cqZAp">
+                            <node concept="3clFbS" id="_jqqJb0y3Z" role="3clFbx">
+                              <node concept="3cpWs6" id="_jqqJb0z32" role="3cqZAp">
+                                <node concept="37vLTw" id="_jqqJb0z4F" role="3cqZAk">
+                                  <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1Wc70l" id="_jqqJb0y$0" role="3clFbw">
+                              <node concept="2dkUwp" id="_jqqJb0yJ_" role="3uHU7w">
+                                <node concept="3cmrfG" id="_jqqJb0yMh" role="3uHU7w">
+                                  <property role="3cmrfH" value="65535" />
+                                </node>
+                                <node concept="37vLTw" id="_jqqJb0yAN" role="3uHU7B">
+                                  <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
+                                </node>
+                              </node>
+                              <node concept="3eOSWO" id="_jqqJb0ynv" role="3uHU7B">
+                                <node concept="37vLTw" id="_jqqJb0y5K" role="3uHU7B">
+                                  <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
+                                </node>
+                                <node concept="3cmrfG" id="_jqqJb0ynK" role="3uHU7w">
+                                  <property role="3cmrfH" value="0" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="9aQIb" id="_jqqJb0yVl" role="9aQIa">
+                              <node concept="3clFbS" id="_jqqJb0yVm" role="9aQI4">
+                                <node concept="34ab3g" id="_jqqJb0yXV" role="3cqZAp">
+                                  <property role="35gtTG" value="error" />
+                                  <node concept="3cpWs3" id="_jqqJb0yXW" role="34bqiv">
+                                    <node concept="37vLTw" id="_jqqJb0yXX" role="3uHU7w">
+                                      <ref role="3cqZAo" node="_jqqJb0xUJ" resolve="parseInt" />
+                                    </node>
+                                    <node concept="Xl_RD" id="_jqqJb0yXY" role="3uHU7B">
+                                      <property role="Xl_RC" value="port in env var is not a valid TCP port: " />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="TDmWw" id="_jqqJb0xWa" role="TEbGg">
+                          <node concept="3clFbS" id="_jqqJb0xWd" role="TDEfX">
+                            <node concept="34ab3g" id="_jqqJb0zkN" role="3cqZAp">
+                              <property role="35gtTG" value="warn" />
+                              <property role="34fQS0" value="true" />
+                              <node concept="3cpWs3" id="_jqqJb0zkO" role="34bqiv">
+                                <node concept="Xl_RD" id="_jqqJb0zkP" role="3uHU7w">
+                                  <property role="Xl_RC" value=" to integer" />
+                                </node>
+                                <node concept="3cpWs3" id="_jqqJb0zkQ" role="3uHU7B">
+                                  <node concept="Xl_RD" id="_jqqJb0zkR" role="3uHU7B">
+                                    <property role="Xl_RC" value="can't parse " />
+                                  </node>
+                                  <node concept="37vLTw" id="_jqqJb0znM" role="3uHU7w">
+                                    <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="_jqqJb0zkT" role="34bMjA">
+                                <ref role="3cqZAo" node="_jqqJb0xWe" resolve="e" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3cpWsn" id="_jqqJb0xWe" role="TDEfY">
+                            <property role="TrG5h" value="e" />
+                            <node concept="3uibUv" id="_jqqJb0xW9" role="1tU5fm">
+                              <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="_jqqJb0t2p" role="3clFbw">
+                      <node concept="10Nm6u" id="_jqqJb0t2S" role="3uHU7w" />
+                      <node concept="37vLTw" id="_jqqJb0sNP" role="3uHU7B">
+                        <ref role="3cqZAo" node="_jqqJb0sNM" resolve="property" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="_jqqJb0jQj" role="3clFbw">
+            <node concept="2YIFZM" id="_jqqJb0jLc" role="2Oq$k0">
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+            </node>
+            <node concept="liA8E" id="_jqqJb0knP" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.isUnitTestMode():boolean" resolve="isUnitTestMode" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7GB4siXiAif" role="3cqZAp">
-          <node concept="2OqwBi" id="24HfET2siOp" role="3clFbG">
-            <node concept="2YIFZM" id="24HfET2siNr" role="2Oq$k0">
-              <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
-              <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
-            </node>
-            <node concept="liA8E" id="24HfET2sjp4" role="2OqNvi">
-              <ref role="37wK5l" to="r85u:3vXSZsAPOM5" resolve="getPort" />
-            </node>
+          <node concept="37vLTw" id="_jqqJb0kxH" role="3clFbG">
+            <ref role="3cqZAo" node="_jqqJb0kxD" resolve="port" />
           </node>
         </node>
       </node>
@@ -419,14 +704,8 @@
                                     <node concept="3cpWsn" id="3zAWwLKh7X_" role="3cpWs9">
                                       <property role="TrG5h" value="port" />
                                       <node concept="10Oyi0" id="3zAWwLKh7Xw" role="1tU5fm" />
-                                      <node concept="2OqwBi" id="3zAWwLKh87U" role="33vP2m">
-                                        <node concept="2YIFZM" id="3zAWwLKh854" role="2Oq$k0">
-                                          <ref role="37wK5l" to="r85u:24HfET2rY9t" resolve="getCurrentConfig" />
-                                          <ref role="1Pybhc" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
-                                        </node>
-                                        <node concept="liA8E" id="3zAWwLKh8zt" role="2OqNvi">
-                                          <ref role="37wK5l" to="r85u:3vXSZsAPOM5" resolve="getPort" />
-                                        </node>
+                                      <node concept="1rXfSq" id="_jqqJb0kHh" role="33vP2m">
+                                        <ref role="37wK5l" node="7GB4siXi_Lg" resolve="getPort" />
                                       </node>
                                     </node>
                                   </node>

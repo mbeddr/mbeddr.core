@@ -1,17 +1,15 @@
-import org.apache.tools.ant.taskdefs.condition.Os
-
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
+ext.mpsMajor = "3.4"
+ext.mpsBuild = "3.4.1"
+
+ext.artifactsDir = new File(rootDir, 'artifacts')
+
 subprojects {
     // required plugins
-    // Although we don't build Java files directly, the java plugin provides useful defaults for the Zip task
-    apply plugin: "java"
+    apply plugin: "base"
     apply plugin: "maven-publish"
-	
-    // mps properties
-    ext.mpsMajor = "3.4"
-    ext.mpsBuild = "3.4.1"
 }
 
 task wrapper(type: Wrapper) {

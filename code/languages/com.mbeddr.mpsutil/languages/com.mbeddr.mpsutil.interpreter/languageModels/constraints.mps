@@ -13,6 +13,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -116,6 +117,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -125,6 +129,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -977,7 +984,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4_qY3E6qVcw">
-    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
     <ref role="1M2myG" to="3673:4_qY3E6qVbq" resolve="CoverageExpression" />
     <node concept="nKS2y" id="4_qY3E6qVc$" role="1MLUbF">
       <node concept="3clFbS" id="4_qY3E6qVc_" role="2VODD2">
@@ -994,6 +1001,102 @@
               </node>
             </node>
             <node concept="3x8VRR" id="4_qY3E6qVcH" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6SpoPQgeup5">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1M2myG" to="3673:6SpoPQgetS$" resolve="RegisterBranchesStatement" />
+    <node concept="nKS2y" id="6SpoPQgeupU" role="1MLUbF">
+      <node concept="3clFbS" id="6SpoPQgeupV" role="2VODD2">
+        <node concept="3clFbF" id="6SpoPQgeupW" role="3cqZAp">
+          <node concept="2OqwBi" id="6SpoPQgeupX" role="3clFbG">
+            <node concept="2OqwBi" id="6SpoPQgeupY" role="2Oq$k0">
+              <node concept="nLn13" id="6SpoPQgeupZ" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6SpoPQgeuq0" role="2OqNvi">
+                <node concept="1xMEDy" id="6SpoPQgeuq1" role="1xVPHs">
+                  <node concept="chp4Y" id="6SpoPQgeuq2" role="ri$Ld">
+                    <ref role="cht4Q" to="3673:7ueT7DHTB$V" resolve="ConceptEvaluator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6SpoPQgeuq3" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6SpoPQgg7rb">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1M2myG" to="3673:6SpoPQgetTO" resolve="BranchID" />
+  </node>
+  <node concept="1M2fIO" id="6SpoPQggweW">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1M2myG" to="3673:6SpoPQggwbm" resolve="VisitBranchStatement" />
+    <node concept="1N5Pfh" id="18$bUx5RiGB" role="1Mr941">
+      <ref role="1N5Vy1" to="3673:18$bUx5RiG8" resolve="branch" />
+      <node concept="1MUpDS" id="18$bUx5RiQU" role="1N6uqs">
+        <node concept="3clFbS" id="18$bUx5RiQV" role="2VODD2">
+          <node concept="3clFbF" id="3oV0py9oGHX" role="3cqZAp">
+            <node concept="2OqwBi" id="3oV0py9oMH7" role="3clFbG">
+              <node concept="2OqwBi" id="3oV0py9oJiC" role="2Oq$k0">
+                <node concept="2OqwBi" id="18$bUx5Rpll" role="2Oq$k0">
+                  <node concept="2OqwBi" id="18$bUx5Rplm" role="2Oq$k0">
+                    <node concept="2OqwBi" id="18$bUx5Rpln" role="2Oq$k0">
+                      <node concept="2OqwBi" id="18$bUx5Rplo" role="2Oq$k0">
+                        <node concept="21POm0" id="18$bUx5Rplp" role="2Oq$k0" />
+                        <node concept="2Xjw5R" id="18$bUx5Rplq" role="2OqNvi">
+                          <node concept="1xMEDy" id="18$bUx5Rplr" role="1xVPHs">
+                            <node concept="chp4Y" id="18$bUx5Rpls" role="ri$Ld">
+                              <ref role="cht4Q" to="3673:4X7QcQ2Rofu" resolve="ConceptEvaluatorBody" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="18$bUx5Rplt" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3673:59qdqedqPtO" resolve="body" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="18$bUx5Rplu" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpee:fK9aQHS" resolve="statements" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="18$bUx5Rplv" role="2OqNvi">
+                    <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="3oV0py9oL$q" role="2OqNvi">
+                  <node concept="chp4Y" id="3oV0py9oM2B" role="v3oSu">
+                    <ref role="cht4Q" to="3673:6SpoPQgetS$" resolve="RegisterBranchesStatement" />
+                  </node>
+                </node>
+              </node>
+              <node concept="13MTOL" id="3oV0py9oNs9" role="2OqNvi">
+                <ref role="13MTZf" to="3673:6SpoPQgeulF" resolve="branches" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="6SpoPQggwfO" role="1MLUbF">
+      <node concept="3clFbS" id="6SpoPQggwfP" role="2VODD2">
+        <node concept="3clFbF" id="6SpoPQggwfQ" role="3cqZAp">
+          <node concept="2OqwBi" id="6SpoPQggwfR" role="3clFbG">
+            <node concept="2OqwBi" id="6SpoPQggwfS" role="2Oq$k0">
+              <node concept="nLn13" id="6SpoPQggwfT" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6SpoPQggwfU" role="2OqNvi">
+                <node concept="1xMEDy" id="6SpoPQggwfV" role="1xVPHs">
+                  <node concept="chp4Y" id="6SpoPQggwfW" role="ri$Ld">
+                    <ref role="cht4Q" to="3673:7ueT7DHTB$V" resolve="ConceptEvaluator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6SpoPQggwfX" role="2OqNvi" />
           </node>
         </node>
       </node>
