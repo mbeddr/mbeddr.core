@@ -1350,10 +1350,9 @@
       <property role="2l50Km" value="none" />
       <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="10" />
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
+      <property role="2l50Mm" value="true" />
       <property role="1nvAU_" value="true" />
       <property role="1nvAUF" value="true" />
       <property role="1nvAUw" value="true" />
@@ -1361,6 +1360,7 @@
       <property role="1nvAUA" value="true" />
       <property role="1nvAUB" value="true" />
       <property role="2o64iB" value="true" />
+      <property role="2lUHrg" value="9" />
       <ref role="3V$Cn$" node="370Vv3VyM9Y" resolve="heapsort_verificationCase" />
     </node>
     <node concept="1nvAUJ" id="3akkoAPfLcY" role="3V$2$K">
