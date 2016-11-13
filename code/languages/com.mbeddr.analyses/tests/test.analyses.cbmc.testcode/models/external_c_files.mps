@@ -458,7 +458,12 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="3u2WvC" value="true" />
       <ref role="3V$Cn$" node="28vOu_upFAy" resolve="simple_assertion_2" />
+      <node concept="3u2USL" id="5YWfxoAy1Td" role="3u2XS$">
+        <property role="TrG5h" value="_A_" />
+        <property role="3u2T6H" value="2" />
+      </node>
       <node concept="9PVaO" id="28vOu_upGdA" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
@@ -486,7 +491,12 @@
       <property role="1nvAUA" value="true" />
       <property role="1nvAUB" value="true" />
       <property role="2o64iB" value="true" />
+      <property role="3u2WvC" value="true" />
       <ref role="3V$Cn$" node="28vOu_upHgG" resolve="simple_robustness_1" />
+      <node concept="3u2USL" id="5YWfxoAy1Tf" role="3u2XS$">
+        <property role="TrG5h" value="_A_" />
+        <property role="3u2T6H" value="2" />
+      </node>
       <node concept="9PVaO" id="28vOu_uqtPG" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
