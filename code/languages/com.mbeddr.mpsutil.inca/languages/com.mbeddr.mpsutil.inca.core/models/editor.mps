@@ -327,13 +327,12 @@
     <ref role="1XX52x" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
     <node concept="1iCGBv" id="6hXIxNuN5yp" role="2wV5jI">
       <ref role="1NtTu8" to="hqsm:6hXIxNuN5nr" resolve="concept" />
+      <ref role="1k5W1q" to="3sc9:7tOfV2_EoPv" resolve="Type" />
       <node concept="1sVBvm" id="6hXIxNuN5yq" role="1sWHZn">
         <node concept="3F0A7n" id="6hXIxNuN5yI" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          <node concept="VechU" id="5rUQZrcGcMH" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
-          </node>
+          <ref role="1k5W1q" to="3sc9:7tOfV2_EoPv" resolve="Type" />
         </node>
       </node>
     </node>
@@ -348,9 +347,7 @@
           <node concept="3F0A7n" id="6VTlRjrD5V5" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <node concept="VechU" id="5rUQZrcGcMP" role="3F10Kt">
-              <property role="Vb096" value="DARK_GREEN" />
-            </node>
+            <ref role="1k5W1q" to="3sc9:7tOfV2_EoPv" resolve="Type" />
           </node>
         </node>
       </node>

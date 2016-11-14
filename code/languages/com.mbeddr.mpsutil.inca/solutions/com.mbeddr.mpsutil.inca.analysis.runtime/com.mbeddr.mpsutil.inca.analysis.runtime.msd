@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</dependency>
     <dependency reexport="false">cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)</dependency>
+    <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
