@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.analysis.runtime/com.mbeddr.mpsutil.inca.analysis.runtime.msd" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.core.runtime/com.mbeddr.mpsutil.inca.core.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.core.util/com.mbeddr.mpsutil.inca.core.util.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.data.runtime/com.mbeddr.mpsutil.inca.data.runtime.msd" folder="data" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.fun.runtime/com.mbeddr.mpsutil.inca.fun.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.gp.runtime/com.mbeddr.mpsutil.inca.gp.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.ui/com.mbeddr.mpsutil.inca.ui.msd" folder="ui" />

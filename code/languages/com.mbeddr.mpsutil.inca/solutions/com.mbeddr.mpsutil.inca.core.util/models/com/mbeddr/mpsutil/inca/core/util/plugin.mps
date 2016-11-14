@@ -7,6 +7,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -24,6 +25,7 @@
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
   </imports>
@@ -227,6 +229,14 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -2665,7 +2675,7 @@
   </node>
   <node concept="312cEu" id="7Bq0by3nmpu">
     <property role="TrG5h" value="TypesHelper" />
-    <node concept="2tJIrI" id="7Bq0by3nmpC" role="jymVt" />
+    <node concept="2tJIrI" id="2XlXuxNOnod" role="jymVt" />
     <node concept="2YIFZL" id="7Bq0by3nmAA" role="jymVt">
       <property role="TrG5h" value="getMostSpecificType" />
       <property role="od$2w" value="false" />
@@ -2798,8 +2808,8 @@
           </node>
           <node concept="9aQIb" id="7Bq0by3nvkP" role="9aQIa">
             <node concept="3clFbS" id="7Bq0by3nvkQ" role="9aQI4">
-              <node concept="3cpWs6" id="7Bq0by3nvt_" role="3cqZAp">
-                <node concept="10Nm6u" id="7Bq0by3nvuq" role="3cqZAk" />
+              <node concept="3cpWs6" id="5cA60_3crZY" role="3cqZAp">
+                <node concept="10Nm6u" id="5cA60_3czsB" role="3cqZAk" />
               </node>
             </node>
           </node>
@@ -2963,7 +2973,11 @@
           <node concept="9aQIb" id="2wCkFY4ttIS" role="9aQIa">
             <node concept="3clFbS" id="2wCkFY4ttIT" role="9aQI4">
               <node concept="3cpWs6" id="2wCkFY4ttIU" role="3cqZAp">
-                <node concept="10Nm6u" id="2wCkFY4ttIV" role="3cqZAk" />
+                <node concept="2pJPEk" id="5cA60_3crJb" role="3cqZAk">
+                  <node concept="2pJPED" id="5cA60_3crOo" role="2pJPEn">
+                    <ref role="2pJxaS" to="tpd4:hfSilrT" resolve="RuntimeErrorType" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
