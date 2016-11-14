@@ -340,13 +340,7 @@
                         <node concept="3clFbS" id="7szUFELQdxD" role="3clF47">
                           <node concept="3clFbF" id="7szUFELQIz9" role="3cqZAp">
                             <node concept="1rXfSq" id="7szUFELQIz7" role="3clFbG">
-                              <ref role="37wK5l" node="g_CeiMb" resolve="_cell_factory_method_" />
-                              <node concept="37vLTw" id="7szUFELQI$G" role="37wK5m">
-                                <ref role="3cqZAo" node="7szUFELQdxy" resolve="editorContext" />
-                              </node>
-                              <node concept="37vLTw" id="7szUFELQIC3" role="37wK5m">
-                                <ref role="3cqZAo" node="7szUFELQdx$" resolve="node" />
-                              </node>
+                              <ref role="37wK5l" node="5KDKp$lLLko" resolve="newFactoryMethod" />
                               <node concept="1ZhdrF" id="7szUFELQIIw" role="lGtFl">
                                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
                                 <property role="2qtEX8" value="baseMethodDeclaration" />
@@ -356,7 +350,7 @@
                                       <node concept="2OqwBi" id="hT7x1rh" role="3clFbG">
                                         <node concept="1iwH7S" id="hT7x1ri" role="2Oq$k0" />
                                         <node concept="1iwH70" id="hT7x1rj" role="2OqNvi">
-                                          <ref role="1iwH77" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
+                                          <ref role="1iwH77" to="tpc3:2dNBF9rpTiT" resolve="cellFactory.factoryMethod" />
                                           <node concept="2OqwBi" id="7szUFELQIQQ" role="1iwH7V">
                                             <node concept="30H73N" id="7szUFELQIMF" role="2Oq$k0" />
                                             <node concept="3TrEf2" id="7szUFELQJtR" role="2OqNvi">

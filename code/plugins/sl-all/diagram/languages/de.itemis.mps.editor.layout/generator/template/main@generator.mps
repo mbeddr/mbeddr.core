@@ -422,10 +422,7 @@
                   <node concept="2OqwBi" id="h_XJ8aj" role="33vP2m">
                     <node concept="Xjq3P" id="gXIFKMQ" role="2Oq$k0" />
                     <node concept="liA8E" id="h_XJ8ak" role="2OqNvi">
-                      <ref role="37wK5l" node="fXlmLYq" resolve="_cell_factory_method_" />
-                      <node concept="37vLTw" id="2BHiRxgman9" role="37wK5m">
-                        <ref role="3cqZAo" node="fXln3od" resolve="editorContext" />
-                      </node>
+                      <ref role="37wK5l" node="5KDKp$lLLkg" resolve="newFactoryMethod" />
                       <node concept="1ZhdrF" id="gXIFKMT" role="lGtFl">
                         <property role="2qtEX8" value="baseMethodDeclaration" />
                         <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
@@ -435,7 +432,7 @@
                               <node concept="2OqwBi" id="hT7x1rh" role="3clFbG">
                                 <node concept="1iwH7S" id="hT7x1ri" role="2Oq$k0" />
                                 <node concept="1iwH70" id="hT7x1rj" role="2OqNvi">
-                                  <ref role="1iwH77" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
+                                  <ref role="1iwH77" to="tpc3:2dNBF9rpTiT" resolve="cellFactory.factoryMethod" />
                                   <node concept="2OqwBi" id="2lyMrCuIFTY" role="1iwH7V">
                                     <node concept="30H73N" id="hT7x1rk" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="2lyMrCuIHhF" role="2OqNvi">
@@ -447,9 +444,6 @@
                             </node>
                           </node>
                         </node>
-                      </node>
-                      <node concept="37vLTw" id="2BHiRxglY5g" role="37wK5m">
-                        <ref role="3cqZAo" node="fXln5Dh" resolve="node" />
                       </node>
                     </node>
                   </node>

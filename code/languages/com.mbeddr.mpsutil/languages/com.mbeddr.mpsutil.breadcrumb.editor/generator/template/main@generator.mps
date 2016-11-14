@@ -275,12 +275,6 @@
               </node>
               <node concept="1rXfSq" id="3JErwPFIF3D" role="33vP2m">
                 <ref role="37wK5l" node="3JErwPFIF98" resolve="createChildCell" />
-                <node concept="37vLTw" id="3JErwPFIF3E" role="37wK5m">
-                  <ref role="3cqZAo" node="3JErwPFIF8V" resolve="editorContext" />
-                </node>
-                <node concept="37vLTw" id="3JErwPFIF3F" role="37wK5m">
-                  <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
-                </node>
                 <node concept="1ZhdrF" id="3JErwPFIF3G" role="lGtFl">
                   <property role="2qtEX8" value="baseMethodDeclaration" />
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
@@ -290,7 +284,7 @@
                         <node concept="2OqwBi" id="3JErwPFIF3K" role="3clFbG">
                           <node concept="1iwH7S" id="3JErwPFIF3L" role="2Oq$k0" />
                           <node concept="1iwH70" id="3JErwPFIF3M" role="2OqNvi">
-                            <ref role="1iwH77" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
+                            <ref role="1iwH77" to="tpc3:2dNBF9rpTiT" resolve="cellFactory.factoryMethod" />
                             <node concept="2OqwBi" id="3JErwPFIF3N" role="1iwH7V">
                               <node concept="30H73N" id="3JErwPFIF3O" role="2Oq$k0" />
                               <node concept="3TrEf2" id="3JErwPFIF3P" role="2OqNvi">
@@ -1174,16 +1168,6 @@
       </node>
       <node concept="3clFb_" id="3JErwPFIF98" role="jymVt">
         <property role="TrG5h" value="createChildCell" />
-        <node concept="37vLTG" id="3JErwPFIF99" role="3clF46">
-          <property role="TrG5h" value="editorContext" />
-          <node concept="3uibUv" id="3JErwPFIF9a" role="1tU5fm">
-            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
-          </node>
-        </node>
-        <node concept="37vLTG" id="3JErwPFIF9b" role="3clF46">
-          <property role="TrG5h" value="node" />
-          <node concept="3Tqbb2" id="3JErwPFIF9c" role="1tU5fm" />
-        </node>
         <node concept="3uibUv" id="3JErwPFIF9d" role="3clF45">
           <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
