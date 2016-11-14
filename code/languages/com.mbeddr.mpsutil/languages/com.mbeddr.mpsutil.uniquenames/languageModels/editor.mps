@@ -3683,7 +3683,7 @@
   <node concept="PKFIW" id="7G3D8btrxf">
     <property role="3GE5qa" value="style" />
     <property role="TrG5h" value="StyleDistinguisher" />
-    <ref role="1XX52x" to="tpc2:2VNGR_E2Sa7" resolve="IStyleSheetMember" />
+    <ref role="1XX52x" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
     <node concept="3ZSo5i" id="7G3D8bttR5" role="2wV5jI">
       <ref role="1k5W1q" node="7qMLXK8KVIr" resolve="Distinguisher" />
       <node concept="1HlG4h" id="7G3D8bttR6" role="3EZMny">

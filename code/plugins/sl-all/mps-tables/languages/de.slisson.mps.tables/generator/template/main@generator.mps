@@ -270,7 +270,9 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
+        <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
+      </concept>
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
@@ -6465,9 +6467,6 @@
                   <node concept="3cpWs8" id="3olMEllIEWQ" role="3cqZAp">
                     <node concept="3cpWsn" id="3olMEllIEWR" role="3cpWs9">
                       <property role="TrG5h" value="substituteInfo" />
-                      <node concept="3uibUv" id="3olMEllIEWS" role="1tU5fm">
-                        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
-                      </node>
                       <node concept="2YIFZM" id="6rHj_ILToOR" role="33vP2m">
                         <ref role="1Pybhc" to="kvq8:6rHj_ILSB4y" resolve="SubstituteUtil" />
                         <ref role="37wK5l" to="kvq8:6rHj_ILSBVd" resolve="forChild" />
@@ -6586,6 +6585,9 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                      <node concept="3uibUv" id="3olMEllIEWS" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~SubstituteInfo" resolve="SubstituteInfo" />
                       </node>
                     </node>
                   </node>
@@ -9604,90 +9606,22 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="4v1iCryNEKG" role="3cqZAp">
-                        <node concept="1niqFM" id="4v1iCryNEKI" role="3clFbG">
-                          <property role="1npUBZ" value="className" />
-                          <property role="1npL6y" value="methodName" />
-                          <node concept="37vLTw" id="1cQomrtsJU9" role="2U24H$">
-                            <ref role="3cqZAo" node="5ryePYcPKvq" resolve="style" />
-                          </node>
-                          <node concept="3cqZAl" id="1cQomrtsDd$" role="32Mpfj" />
-                          <node concept="10Nm6u" id="4cCuRQiZ1gr" role="2U24H$" />
-                          <node concept="17Uvod" id="4v1iCryNEKL" role="lGtFl">
-                            <property role="2qtEX9" value="fqClassName" />
-                            <property role="P4ACc" value="df345b11-b8c7-4213-ac66-48d2a9b75d88/1173990517731/1173992483054" />
-                            <node concept="3zFVjK" id="4v1iCryNEKM" role="3zH0cK">
-                              <node concept="3clFbS" id="4v1iCryNEKN" role="2VODD2">
-                                <node concept="3clFbF" id="4v1iCryNEKO" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4v1iCryNEKP" role="3clFbG">
-                                    <node concept="2qgKlT" id="4v1iCryNEKV" role="2OqNvi">
-                                      <ref role="37wK5l" to="tpcb:hEwJfl1" resolve="getClassFqName" />
-                                    </node>
-                                    <node concept="2OqwBi" id="4v1iCryNEKQ" role="2Oq$k0">
-                                      <node concept="2qgKlT" id="4v1iCryNEKU" role="2OqNvi">
-                                        <ref role="37wK5l" to="tpcb:hEwIh5$" resolve="getStyleSheet" />
-                                      </node>
-                                      <node concept="2OqwBi" id="4v1iCryNEKR" role="2Oq$k0">
-                                        <node concept="2OqwBi" id="4cCuRQiN4dG" role="2Oq$k0">
-                                          <node concept="30H73N" id="4v1iCryNEKS" role="2Oq$k0" />
-                                          <node concept="3TrEf2" id="4cCuRQiN4K1" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="bnk3:4UkcdCuFJuu" resolve="style" />
-                                          </node>
-                                        </node>
-                                        <node concept="3TrEf2" id="4cCuRQiN5t_" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="bnk3:hgVmB5M" resolve="styleClass" />
-                                        </node>
-                                      </node>
+                      <node concept="3clFbH" id="3AWl2CAbf1t" role="3cqZAp">
+                        <node concept="5jKBG" id="3AWl2CAbf1v" role="lGtFl">
+                          <ref role="v9R2y" to="tpc3:3AWl2CAaKMU" resolve="applyStyleClass" />
+                          <node concept="3NFfHV" id="3AWl2CAbf1w" role="5jGum">
+                            <node concept="3clFbS" id="3AWl2CAbf1x" role="2VODD2">
+                              <node concept="3clFbF" id="5KDKp$lLxpD" role="3cqZAp">
+                                <node concept="2OqwBi" id="5KDKp$lLxpG" role="3clFbG">
+                                  <node concept="2OqwBi" id="5KDKp$lLxpH" role="2Oq$k0">
+                                    <node concept="30H73N" id="5KDKp$lLxpI" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="5KDKp$lLxpJ" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="bnk3:4UkcdCuFJuu" resolve="style" />
                                     </node>
                                   </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="17Uvod" id="4v1iCryNEKW" role="lGtFl">
-                            <property role="2qtEX9" value="methodName" />
-                            <property role="P4ACc" value="df345b11-b8c7-4213-ac66-48d2a9b75d88/1173990517731/1173992444083" />
-                            <node concept="3zFVjK" id="4v1iCryNEKX" role="3zH0cK">
-                              <node concept="3clFbS" id="4v1iCryNEKY" role="2VODD2">
-                                <node concept="3clFbF" id="4v1iCryNEKZ" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4v1iCryNEL0" role="3clFbG">
-                                    <node concept="2qgKlT" id="1cQomrtsHhq" role="2OqNvi">
-                                      <ref role="37wK5l" to="tpcb:2_EwsUMDaw2" resolve="getApplyMethodName" />
-                                    </node>
-                                    <node concept="2OqwBi" id="4v1iCryNEL1" role="2Oq$k0">
-                                      <node concept="3TrEf2" id="4cCuRQiN6Xr" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="bnk3:hgVmB5M" resolve="styleClass" />
-                                      </node>
-                                      <node concept="2OqwBi" id="4cCuRQiN5Ki" role="2Oq$k0">
-                                        <node concept="30H73N" id="4v1iCryNEL2" role="2Oq$k0" />
-                                        <node concept="3TrEf2" id="4cCuRQiN6hf" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="bnk3:4UkcdCuFJuu" resolve="style" />
-                                        </node>
-                                      </node>
-                                    </node>
+                                  <node concept="3TrEf2" id="5KDKp$lLxpK" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="bnk3:hgVmB5M" resolve="styleClass" />
                                   </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1W57fq" id="4v1iCryNEL7" role="lGtFl">
-                          <node concept="3IZrLx" id="4v1iCryNEL8" role="3IZSJc">
-                            <node concept="3clFbS" id="4v1iCryNEL9" role="2VODD2">
-                              <node concept="3clFbF" id="4v1iCryNELa" role="3cqZAp">
-                                <node concept="2OqwBi" id="4v1iCryNELb" role="3clFbG">
-                                  <node concept="2OqwBi" id="4v1iCryNELc" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="4cCuRQiN2L3" role="2Oq$k0">
-                                      <node concept="30H73N" id="4v1iCryNELd" role="2Oq$k0" />
-                                      <node concept="3TrEf2" id="4cCuRQiN3hq" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="bnk3:4UkcdCuFJuu" resolve="style" />
-                                      </node>
-                                    </node>
-                                    <node concept="3TrEf2" id="4cCuRQiN3WZ" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="bnk3:hgVmB5M" resolve="styleClass" />
-                                    </node>
-                                  </node>
-                                  <node concept="3x8VRR" id="4v1iCryNELf" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
@@ -9726,6 +9660,9 @@
                         </node>
                         <node concept="1sPUBX" id="1cEk0X7u93F" role="lGtFl">
                           <ref role="v9R2y" to="tpc3:44T5AkO0UKd" resolve="StyleClassItem" />
+                          <node concept="3cmrfG" id="5KDKp$lLyST" role="v9R3O">
+                            <property role="3cmrfH" value="0" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="6OcqZnLuvmD" role="3cqZAp">
@@ -9761,6 +9698,9 @@
                         </node>
                         <node concept="1sPUBX" id="6OcqZnLuvmS" role="lGtFl">
                           <ref role="v9R2y" to="tpc3:44T5AkO0UKd" resolve="StyleClassItem" />
+                          <node concept="3cmrfG" id="5KDKp$lLzL6" role="v9R3O">
+                            <property role="3cmrfH" value="0" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3cpWs6" id="5ryePYcPREo" role="3cqZAp">

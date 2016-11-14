@@ -1791,7 +1791,7 @@
       <node concept="37vLTG" id="7G3D8btjUx" role="3clF46">
         <property role="TrG5h" value="style" />
         <node concept="3Tqbb2" id="7G3D8btjUy" role="1tU5fm">
-          <ref role="ehGHo" to="tpc2:2VNGR_E2Sa7" resolve="IStyleSheetMember" />
+          <ref role="ehGHo" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
         </node>
       </node>
     </node>
