@@ -1156,6 +1156,22 @@
           </node>
         </node>
       </node>
+      <node concept="3clFb_" id="4Hw51cn4ePZ" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="4Hw51cn4eQ0" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="4Hw51cn4eQ1" role="3clF47">
+          <node concept="3cpWs6" id="4Hw51cn4eQ2" role="3cqZAp">
+            <node concept="10Nm6u" id="4Hw51cn4eQ3" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="4Hw51cn4eQ4" role="lGtFl" />
+        <node concept="5jKBG" id="4Hw51cn4eQ5" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="4Hw51cn4eQ6" role="1B3o_S" />
+      </node>
       <node concept="3clFb_" id="3JErwPFIF98" role="jymVt">
         <property role="TrG5h" value="createChildCell" />
         <node concept="37vLTG" id="3JErwPFIF99" role="3clF46">

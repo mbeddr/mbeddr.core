@@ -1663,6 +1663,22 @@
         </node>
         <node concept="3Tm6S6" id="1y7DiaVv2W2" role="1B3o_S" />
       </node>
+      <node concept="3clFb_" id="5KDKp$lLLj0" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLj1" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLj2" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLj3" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLj4" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLj5" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLj6" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLj7" role="1B3o_S" />
+      </node>
       <node concept="3Tm1VV" id="h9B3Lmg" role="1B3o_S" />
     </node>
   </node>

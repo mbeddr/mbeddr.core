@@ -178,7 +178,7 @@
                     <node concept="3clFbF" id="3_TG3j97UGB" role="3cqZAp">
                       <node concept="2OqwBi" id="3_TG3j97UGy" role="3clFbG">
                         <node concept="3TrEf2" id="3_TG3j97UG_" role="2OqNvi">
-                          <ref role="3Tt5mk" to="9b3t:_i_acSf75m" />
+                          <ref role="3Tt5mk" to="9b3t:_i_acSf75m" resolve="labelCell" />
                         </node>
                         <node concept="30H73N" id="3_TG3j97UGA" role="2Oq$k0" />
                       </node>
@@ -235,7 +235,7 @@
                             <node concept="2OqwBi" id="3_TG3j97U1f" role="3clFbG">
                               <node concept="30H73N" id="3_TG3j97TY4" role="2Oq$k0" />
                               <node concept="3TrEf2" id="3_TG3j97UDX" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9b3t:_i_acSf75m" />
+                                <ref role="3Tt5mk" to="9b3t:_i_acSf75m" resolve="labelCell" />
                               </node>
                             </node>
                           </node>
@@ -290,6 +290,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLhS" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLhT" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLhU" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLhV" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLhW" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLhX" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLhY" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLhZ" role="1B3o_S" />
       </node>
       <node concept="3Tm1VV" id="h9B3LuZ" role="1B3o_S" />
     </node>

@@ -2,11 +2,11 @@
 <model ref="r:b2a269fc-16e8-4926-b622-720f52369a9c(de.itemis.mps.tooltips.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -614,6 +614,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLjo" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLjp" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLjq" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLjr" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLjs" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLjt" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLju" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLjv" role="1B3o_S" />
       </node>
       <node concept="3clFb_" id="7XU1fOGpj1R" role="jymVt">
         <property role="TrG5h" value="cellFactory" />

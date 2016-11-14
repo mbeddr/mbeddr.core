@@ -216,12 +216,12 @@
                       <node concept="2OqwBi" id="2lyMrCuJ8bh" role="3clFbG">
                         <node concept="2OqwBi" id="2lyMrCuJ7jF" role="2Oq$k0">
                           <node concept="3Tsc0h" id="2lyMrCuJ7jI" role="2OqNvi">
-                            <ref role="3TtcxE" to="fu06:2lyMrCuEiqU" />
+                            <ref role="3TtcxE" to="fu06:2lyMrCuEiqU" resolve="childCells" />
                           </node>
                           <node concept="30H73N" id="2lyMrCuJ7jJ" role="2Oq$k0" />
                         </node>
                         <node concept="13MTOL" id="2lyMrCuJa$n" role="2OqNvi">
-                          <ref role="13MTZf" to="fu06:2lyMrCuEi$L" />
+                          <ref role="13MTZf" to="fu06:2lyMrCuEi$L" resolve="cell" />
                         </node>
                       </node>
                     </node>
@@ -439,7 +439,7 @@
                                   <node concept="2OqwBi" id="2lyMrCuIFTY" role="1iwH7V">
                                     <node concept="30H73N" id="hT7x1rk" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="2lyMrCuIHhF" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="fu06:2lyMrCuEi$L" />
+                                      <ref role="3Tt5mk" to="fu06:2lyMrCuEi$L" resolve="cell" />
                                     </node>
                                   </node>
                                 </node>
@@ -529,7 +529,7 @@
                   <node concept="3clFbF" id="2lyMrCuIFcL" role="3cqZAp">
                     <node concept="2OqwBi" id="2lyMrCuIFcG" role="3clFbG">
                       <node concept="3Tsc0h" id="2lyMrCuIFcJ" role="2OqNvi">
-                        <ref role="3TtcxE" to="fu06:2lyMrCuEiqU" />
+                        <ref role="3TtcxE" to="fu06:2lyMrCuEiqU" resolve="childCells" />
                       </node>
                       <node concept="30H73N" id="2lyMrCuIFcK" role="2Oq$k0" />
                     </node>
@@ -576,6 +576,22 @@
           </node>
         </node>
         <node concept="3Tm6S6" id="1y7DiaVv2W2" role="1B3o_S" />
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLkg" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLkh" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLki" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLkj" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLkk" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLkl" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLkm" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLkn" role="1B3o_S" />
       </node>
       <node concept="2YIFZL" id="gEZ7Jpo" role="jymVt">
         <property role="TrG5h" value="_condition_" />

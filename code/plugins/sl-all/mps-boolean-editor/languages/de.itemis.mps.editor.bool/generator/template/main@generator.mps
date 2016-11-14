@@ -2,10 +2,10 @@
 <model ref="r:c3558903-fb0c-4dbd-bd22-48039c413ad9(de.itemis.mps.editor.bool.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -938,6 +938,22 @@
           </node>
         </node>
       </node>
+      <node concept="3clFb_" id="5KDKp$lLLjS" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLjT" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLjU" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLjV" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLjW" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLjX" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLjY" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLjZ" role="1B3o_S" />
+      </node>
       <node concept="312cEu" id="55my_QKZCYm" role="jymVt">
         <property role="TrG5h" value="CellProviderWithRoleImpl" />
         <property role="2bfB8j" value="true" />
@@ -1615,6 +1631,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLk0" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLk1" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLk2" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLk3" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLk4" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLk5" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLk6" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLk7" role="1B3o_S" />
       </node>
       <node concept="312cEu" id="6bmIkNC6Og7" role="jymVt">
         <property role="TrG5h" value="CellProviderWithRoleImpl" />

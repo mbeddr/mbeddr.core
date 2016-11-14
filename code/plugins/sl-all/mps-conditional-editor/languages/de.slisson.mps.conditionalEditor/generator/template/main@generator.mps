@@ -196,6 +196,7 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
@@ -1045,6 +1046,22 @@
           </node>
         </node>
       </node>
+      <node concept="3clFb_" id="5KDKp$lLLj8" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLj9" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLja" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLjb" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLjc" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLjd" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLje" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLjf" role="1B3o_S" />
+      </node>
       <node concept="3clFb_" id="59YMGDNQpLq" role="jymVt">
         <property role="TrG5h" value="getPriority" />
         <node concept="10Oyi0" id="59YMGDNQqh1" role="3clF45" />
@@ -1359,6 +1376,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLjg" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLjh" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLji" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLjj" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLjk" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLjl" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLjm" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLjn" role="1B3o_S" />
       </node>
       <node concept="3clFb_" id="1CDgnklFh$Q" role="jymVt">
         <property role="TrG5h" value="child" />

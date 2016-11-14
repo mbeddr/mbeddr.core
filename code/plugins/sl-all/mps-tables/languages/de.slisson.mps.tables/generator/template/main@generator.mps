@@ -1503,6 +1503,22 @@
           </node>
         </node>
       </node>
+      <node concept="3clFb_" id="5KDKp$lLLjC" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLjD" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLjE" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLjF" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLjG" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLjH" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLjI" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLjJ" role="1B3o_S" />
+      </node>
       <node concept="3clFb_" id="1dAqnm8ZqaK" role="jymVt">
         <property role="TrG5h" value="headerNodeFactory" />
         <node concept="3uibUv" id="3olMEllu6HD" role="3clF45">
@@ -2209,6 +2225,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLjK" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLjL" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLjM" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLjN" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLjO" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLjP" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLjQ" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLjR" role="1B3o_S" />
       </node>
       <node concept="3clFb_" id="1dAqnm8Ckh6" role="jymVt">
         <property role="TrG5h" value="headerNodeFactory" />

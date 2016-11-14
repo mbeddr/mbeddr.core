@@ -1788,6 +1788,22 @@
         </node>
         <node concept="3Tm6S6" id="1y7DiaVv2W2" role="1B3o_S" />
       </node>
+      <node concept="3clFb_" id="4Hw51cn4eR7" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="4Hw51cn4eR8" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="4Hw51cn4eR9" role="3clF47">
+          <node concept="3cpWs6" id="4Hw51cn4eRa" role="3cqZAp">
+            <node concept="10Nm6u" id="4Hw51cn4eRb" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="4Hw51cn4eRc" role="lGtFl" />
+        <node concept="5jKBG" id="4Hw51cn4eRd" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="4Hw51cn4eRe" role="1B3o_S" />
+      </node>
       <node concept="2tJIrI" id="7uOgiTc7BV" role="jymVt">
         <node concept="raruj" id="7uOgiTc7SF" role="lGtFl" />
         <node concept="29HgVG" id="7uOgiTc7SN" role="lGtFl">
