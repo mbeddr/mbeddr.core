@@ -1,5 +1,6 @@
 include ":build:com.jetbrains.mps",
         ":build:com.mbeddr",
         ":build:com.mbeddr:platform",
+        ":build:com.mbeddr:languages",
         ":build:com.mbeddr:everythingElse"
 rootProject.name = 'mbeddr.core'

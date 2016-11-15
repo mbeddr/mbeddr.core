@@ -1,9 +1,27 @@
+
+
+configurations {
+    allScripts
+}
+
+dependencies {
+    allScripts "com.mbeddr:allScriptsXml:$mbeddrBuildNumber"
+}
+
 task resolve_mps(type: Copy) {
     dependsOn configurations.mps
     from {
         configurations.mps.resolve().collect { zipTree(it) }
     }
     into mpsHomeDir
+}
+
+task resolve_allScripts(type: Copy) {
+    dependsOn configurations.allScripts
+    from {
+        configurations.allScripts.resolve().collect { zipTree(it) }
+    }
+    into "$rootDir/scripts/"
 }
 
 task build_allScripts(type: BuildLanguages, dependsOn: resolve_mps) {
@@ -23,7 +41,13 @@ task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
     include "com.mbeddr.allScripts.build/**"
 }
 
-task build_sl_all(type: BuildLanguages, dependsOn: copy_allScripts) {
+task publish_allScriptsXml(type: Zip, dependsOn: copy_allScripts) {
+    archiveName 'com.mbeddr.allScripts.build.xml.zip'
+    from "$rootDir/scripts"
+    include "**"
+}
+
+task build_sl_all(type: BuildLanguages, dependsOn: resolve_allScripts) {
     script scriptFile('sl-all/build.xml')
 }
 
@@ -69,6 +93,12 @@ publishing {
             artifactId 'allScripts'
             version mbeddrBuildNumber
             artifact publish_allScripts
+        }
+        mbeddrAllScriptsXml(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'allScriptsXml'
+            version mbeddrBuildNumber
+            artifact publish_allScriptsXml
         }
         mbeddrPlatform(MavenPublication) {
             groupId 'com.mbeddr'

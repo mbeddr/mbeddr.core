@@ -1,6 +1,33 @@
 // :build:com.mbeddr.build
 def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
 
+ant.taskdef(name: "makeTests",
+        classname: "com.mbeddr.tools.ant.MakeTestsTask",
+        classpath: file(rootProject.projectDir.absolutePath + "/tools/ant/tasks/TeamcityMakeTests.jar")
+)
+
+// Ant <junit> task support
+repositories {
+    mavenCentral()
+}
+configurations {
+    junitAnt
+}
+dependencies {
+    junitAnt 'junit:junit:4.12'
+    junitAnt('org.apache.ant:ant-junit:1.9.7') {
+        transitive = false
+    }
+    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
+        transitive = false
+    }
+}
+ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
+        classpath: configurations.junitAnt.asPath)
+ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+        classpath: configurations.junitAnt.asPath)
+
+
 task build_mbeddr(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:build_platform') {
     script script_build_mbeddr
 }
@@ -20,17 +47,17 @@ def script_test_mbeddrExtTs = new File(scriptsBasePath + "/com.mbeddr.ext/" + "b
 def script_test_mbeddrExtEx = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ex-tests.xml")
 
 
-task test_mbeddr_tutorial(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrTutorial
 }
 
-task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrAnalysisEx
 }
 
 
 
-task test_mbeddr_performance(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
 }
 
@@ -38,19 +65,19 @@ task test_mbeddr_platform(type: TestLanguages, dependsOn: ':build:com.mbeddr:pla
     script script_test_mbeddrPlatform
 }
 
-task test_mbeddr_debugger(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_debugger(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrDebugger
 }
 
-task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreEx
 }
 
-task build_mbeddr_core_ex_library(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task build_mbeddr_core_ex_library(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreExLibrary
 }
 
-task test_mbeddr_core_ts(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_core_ts(type: TestLanguages) {
     script script_test_mbeddrCoreTs
 }
 
@@ -73,18 +100,18 @@ task test_mbeddr_cc_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
 }
 
-task build_mbeddr_cc_ex(type: RunMbeddrAntScript, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task build_mbeddr_cc_ex(type: RunMbeddrAntScript, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcEx
     targets 'clean', 'generate'
 }
 
-task test_mbeddr_cc_ts(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_cc_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcTs
 }
 
 task test_mbeddr_cc(dependsOn: [build_mbeddr_cc_ex, test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
 
-task build_mbeddr_ext_ex(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task build_mbeddr_ext_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrExtEx
 }
 
@@ -92,11 +119,11 @@ task test_mbeddr_ext_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
 }
 
-task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrExtTs
 }
 
-task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrAnalysisTs
 }
 task test_mbeddr_analysis_ex << {
