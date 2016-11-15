@@ -357,12 +357,6 @@
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -4789,14 +4783,22 @@
                               <property role="3SKdUp" value="--unwinding-assertions and --partial-loops are not allowed together" />
                             </node>
                           </node>
-                          <node concept="34ab3g" id="4GS7ZDPmLzb" role="3cqZAp">
-                            <property role="35gtTG" value="warn" />
-                            <node concept="3cpWs3" id="4GS7ZDPmLZS" role="34bqiv">
-                              <node concept="Xl_RD" id="4GS7ZDPmMc_" role="3uHU7w">
-                                <property role="Xl_RC" value="CBMC does not accept both these options to be given together." />
+                          <node concept="3clFbF" id="4GS7ZDPF5ls" role="3cqZAp">
+                            <node concept="2OqwBi" id="4GS7ZDPF5lp" role="3clFbG">
+                              <node concept="10M0yZ" id="4GS7ZDPF5lq" role="2Oq$k0">
+                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                               </node>
-                              <node concept="Xl_RD" id="4GS7ZDPmLzd" role="3uHU7B">
-                                <property role="Xl_RC" value="Ignoring \&quot;--partial-loops\&quot; because \&quot;--unwinding-assertions\&quot; is also active. " />
+                              <node concept="liA8E" id="4GS7ZDPF5lr" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                <node concept="3cpWs3" id="4GS7ZDPF66l" role="37wK5m">
+                                  <node concept="Xl_RD" id="4GS7ZDPF5zk" role="3uHU7B">
+                                    <property role="Xl_RC" value="WARNING: Ignoring \&quot;--partial-loops\&quot; because \&quot;--unwinding-assertions\&quot; " />
+                                  </node>
+                                  <node concept="Xl_RD" id="4GS7ZDPF6k_" role="3uHU7w">
+                                    <property role="Xl_RC" value="is also active. CBMC does not accept both these options to be given together." />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
