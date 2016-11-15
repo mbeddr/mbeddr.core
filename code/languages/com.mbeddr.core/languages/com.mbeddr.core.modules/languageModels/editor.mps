@@ -602,7 +602,6 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
-      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -1754,6 +1753,7 @@
         <ref role="1NtTu8" to="x27k:5ak6HMA0ref" resolve="actuals" />
         <node concept="l2Vlx" id="5ak6HMA0reA" role="2czzBx" />
         <node concept="1HlG4h" id="5ak6HMA0sGi" role="2czzBI">
+          <property role="1cu_pB" value="0" />
           <node concept="1HfYo3" id="5ak6HMA0sGj" role="1HlULh">
             <node concept="3TQlhw" id="5ak6HMA0sGk" role="1Hhtcw">
               <node concept="3clFbS" id="5ak6HMA0sGl" role="2VODD2">
@@ -1761,21 +1761,6 @@
                   <node concept="Xl_RD" id="5ak6HMA0sGn" role="3clFbG">
                     <property role="Xl_RC" value="" />
                   </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="pkWqt" id="5so5TTr6CxL" role="cStSX">
-            <node concept="3clFbS" id="5so5TTr6CxM" role="2VODD2">
-              <node concept="3clFbF" id="5so5TTr6CxN" role="3cqZAp">
-                <node concept="2OqwBi" id="5so5TTr6CxU" role="3clFbG">
-                  <node concept="2OqwBi" id="5so5TTr6CxP" role="2Oq$k0">
-                    <node concept="pncrf" id="5so5TTr6CxO" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="5so5TTr6CxT" role="2OqNvi">
-                      <ref role="3TtcxE" to="x27k:5ak6HMA0ref" resolve="actuals" />
-                    </node>
-                  </node>
-                  <node concept="1v1jN8" id="5so5TTr6CxY" role="2OqNvi" />
                 </node>
               </node>
             </node>
