@@ -112,6 +112,10 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
+        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
+        <property id="1240249534625" name="isVolatile" index="34CwA1" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -1690,6 +1694,14 @@
       <property role="TrG5h" value="_context_" />
       <node concept="312cEu" id="heOoiGW" role="jymVt">
         <property role="TrG5h" value="class_CellModel_RefNodeList_ListHandler" />
+        <node concept="312cEg" id="1AuRJ4GJjYK" role="jymVt">
+          <property role="34CwA1" value="false" />
+          <property role="eg7rD" value="false" />
+          <property role="TrG5h" value="myNode" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3Tm6S6" id="1AuRJ4GJhfx" role="1B3o_S" />
+          <node concept="3Tqbb2" id="1AuRJ4GJmI7" role="1tU5fm" />
+        </node>
         <node concept="3Tm6S6" id="1y7DiaVv336" role="1B3o_S" />
         <node concept="17Uvod" id="heOoiMo" role="lGtFl">
           <property role="2qtEX9" value="name" />
@@ -1733,6 +1745,16 @@
               </node>
               <node concept="37vLTw" id="2BHiRxgmFoX" role="37wK5m">
                 <ref role="3cqZAo" node="heOoiMh" resolve="ownerNode" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1AuRJ4GJnll" role="3cqZAp">
+              <node concept="37vLTI" id="1AuRJ4GJnKw" role="3clFbG">
+                <node concept="37vLTw" id="1AuRJ4GJo7w" role="37vLTx">
+                  <ref role="3cqZAo" node="heOoiMh" resolve="ownerNode" />
+                </node>
+                <node concept="37vLTw" id="1AuRJ4GJnlj" role="37vLTJ">
+                  <ref role="3cqZAo" node="1AuRJ4GJjYK" resolve="myNode" />
+                </node>
               </node>
             </node>
           </node>

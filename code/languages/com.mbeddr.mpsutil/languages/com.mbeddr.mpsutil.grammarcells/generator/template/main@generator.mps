@@ -66,6 +66,7 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
+    <import index="qvne" ref="r:8ff33705-85bf-4855-805c-06d68fbe233c(jetbrains.mps.editor.runtime.descriptor)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -23441,44 +23442,38 @@
     <ref role="phYkn" to="tpc3:55my_QKXKCI" resolve="CellProviderWithRoleInitializer" />
     <node concept="3aamgX" id="55my_QKYhdM" role="3aUrZf">
       <ref role="30HIoZ" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
-      <node concept="1Koe21" id="55my_QL0_Mb" role="1lVwrX">
-        <node concept="3clFb_" id="55my_QL0_Mc" role="1Koe22">
-          <property role="TrG5h" value="factoryMethod" />
-          <node concept="37vLTG" id="55my_QL0_Md" role="3clF46">
-            <property role="TrG5h" value="editorContext" />
-            <node concept="3uibUv" id="55my_QL0_Me" role="1tU5fm">
-              <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
-            </node>
-          </node>
-          <node concept="37vLTG" id="55my_QL0_Mf" role="3clF46">
-            <property role="TrG5h" value="node" />
-            <node concept="3Tqbb2" id="55my_QL0_Mg" role="1tU5fm" />
-          </node>
-          <node concept="3cqZAl" id="55my_QL0_Mh" role="3clF45" />
-          <node concept="3Tm1VV" id="55my_QL0_Mi" role="1B3o_S" />
-          <node concept="3clFbS" id="55my_QL0_Mj" role="3clF47">
-            <node concept="3cpWs8" id="55my_QL0_Mk" role="3cqZAp">
-              <node concept="3cpWsn" id="55my_QL0_Ml" role="3cpWs9">
-                <property role="TrG5h" value="provider" />
-                <node concept="2ShNRf" id="55my_QL0EPJ" role="33vP2m">
-                  <node concept="1pGfFk" id="55my_QL0FzR" role="2ShVmc">
-                    <ref role="37wK5l" to="czm:3pFNVizDMqj" resolve="SplittablePropertyCellProvider" />
-                    <node concept="37vLTw" id="55my_QL0F$F" role="37wK5m">
-                      <ref role="3cqZAo" node="55my_QL0_Mf" resolve="node" />
-                    </node>
-                    <node concept="37vLTw" id="55my_QL0FBL" role="37wK5m">
-                      <ref role="3cqZAo" node="55my_QL0_Md" resolve="editorContext" />
-                    </node>
-                    <node concept="10Nm6u" id="3pFNVizOrnh" role="37wK5m">
-                      <node concept="1sPUBX" id="3pFNVizOrpF" role="lGtFl">
-                        <ref role="v9R2y" node="3pFNVizOpuI" resolve="switch_tokenizer" />
-                        <node concept="3NFfHV" id="3pFNVizOrqP" role="1sPUBK">
-                          <node concept="3clFbS" id="3pFNVizOrqQ" role="2VODD2">
-                            <node concept="3clFbF" id="3pFNVizOrs7" role="3cqZAp">
-                              <node concept="2OqwBi" id="3pFNVizOr_h" role="3clFbG">
-                                <node concept="30H73N" id="3pFNVizOrs6" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="3pFNVizOs4$" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="teg0:3pFNVizNUrt" resolve="tokenizer" />
+      <node concept="1Koe21" id="A8YgUZCWSi" role="1lVwrX">
+        <node concept="312cEu" id="7VRiLsft1vp" role="1Koe22">
+          <property role="TrG5h" value="container" />
+          <property role="1sVAO0" value="true" />
+          <node concept="3clFb_" id="A8YgUZCWSj" role="jymVt">
+            <property role="TrG5h" value="factoryMethod" />
+            <node concept="3cqZAl" id="A8YgUZCWSk" role="3clF45" />
+            <node concept="3Tm1VV" id="A8YgUZCWSl" role="1B3o_S" />
+            <node concept="3clFbS" id="A8YgUZCWSm" role="3clF47">
+              <node concept="3cpWs8" id="A8YgUZCXho" role="3cqZAp">
+                <node concept="3cpWsn" id="A8YgUZCXhp" role="3cpWs9">
+                  <property role="TrG5h" value="provider" />
+                  <node concept="2ShNRf" id="A8YgUZCXhq" role="33vP2m">
+                    <node concept="1pGfFk" id="A8YgUZCXhr" role="2ShVmc">
+                      <ref role="37wK5l" to="czm:3pFNVizDMqj" resolve="SplittablePropertyCellProvider" />
+                      <node concept="37vLTw" id="A8YgUZCXEz" role="37wK5m">
+                        <ref role="3cqZAo" to="tpc3:7GOmDNDA2zg" resolve="myNode" />
+                      </node>
+                      <node concept="1rXfSq" id="A8YgUZCXOz" role="37wK5m">
+                        <ref role="37wK5l" to="qvne:6OQfiPCHBdf" resolve="getEditorContext" />
+                      </node>
+                      <node concept="10Nm6u" id="A8YgUZCXhu" role="37wK5m">
+                        <node concept="1sPUBX" id="A8YgUZCXhv" role="lGtFl">
+                          <ref role="v9R2y" node="3pFNVizOpuI" resolve="switch_tokenizer" />
+                          <node concept="3NFfHV" id="A8YgUZCXhw" role="1sPUBK">
+                            <node concept="3clFbS" id="A8YgUZCXhx" role="2VODD2">
+                              <node concept="3clFbF" id="A8YgUZCXhy" role="3cqZAp">
+                                <node concept="2OqwBi" id="A8YgUZCXhz" role="3clFbG">
+                                  <node concept="30H73N" id="A8YgUZCXh$" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="A8YgUZCXh_" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="teg0:3pFNVizNUrt" resolve="tokenizer" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -23486,14 +23481,18 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="raruj" id="A8YgUZCXhA" role="lGtFl" />
                   </node>
-                  <node concept="raruj" id="55my_QL0FDL" role="lGtFl" />
-                </node>
-                <node concept="3uibUv" id="55my_QL0_Mr" role="1tU5fm">
-                  <ref role="3uigEE" to="emqf:~CellProviderWithRole" resolve="CellProviderWithRole" />
+                  <node concept="3uibUv" id="A8YgUZCXhB" role="1tU5fm">
+                    <ref role="3uigEE" to="emqf:~CellProviderWithRole" resolve="CellProviderWithRole" />
+                  </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="3Tm1VV" id="7VRiLsft1vq" role="1B3o_S" />
+          <node concept="3uibUv" id="A8YgUZCXc_" role="1zkMxy">
+            <ref role="3uigEE" to="tpc3:7GOmDNDyRby" resolve="CellFactoryContextClass" />
           </node>
         </node>
       </node>
