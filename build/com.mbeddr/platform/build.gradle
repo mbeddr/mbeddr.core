@@ -1,12 +1,5 @@
 
-
-configurations {
-    allScripts
-}
-
-dependencies {
-    allScripts "com.mbeddr:allScriptsXml:$mbeddrBuildNumber"
-}
+def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 
 task resolve_mps(type: Copy) {
     dependsOn configurations.mps
@@ -16,13 +9,6 @@ task resolve_mps(type: Copy) {
     into mpsHomeDir
 }
 
-task resolve_allScripts(type: Copy) {
-    dependsOn configurations.allScripts
-    from {
-        configurations.allScripts.resolve().collect { zipTree(it) }
-    }
-    into "$rootDir/scripts/"
-}
 
 task build_allScripts(type: BuildLanguages, dependsOn: resolve_mps) {
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')
@@ -41,13 +27,8 @@ task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
     include "com.mbeddr.allScripts.build/**"
 }
 
-task publish_allScriptsXml(type: Zip, dependsOn: copy_allScripts) {
-    archiveName 'com.mbeddr.allScripts.build.xml.zip'
-    from "$rootDir/scripts"
-    include "**"
-}
 
-task build_sl_all(type: BuildLanguages, dependsOn: resolve_allScripts) {
+task build_sl_all(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('sl-all/build.xml')
 }
 
@@ -70,7 +51,11 @@ task build_platform(type: BuildLanguages, dependsOn: copy_spawner) {
     script scriptFile('com.mbeddr.platform/build.xml')
 }
 
-task build_platform_distribution(type: BuildLanguages, dependsOn: build_platform) {
+task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
+    script script_test_mbeddrPlatform
+}
+
+task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
 
     // Support incremental build
@@ -93,12 +78,6 @@ publishing {
             artifactId 'allScripts'
             version mbeddrBuildNumber
             artifact publish_allScripts
-        }
-        mbeddrAllScriptsXml(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'allScriptsXml'
-            version mbeddrBuildNumber
-            artifact publish_allScriptsXml
         }
         mbeddrPlatform(MavenPublication) {
             groupId 'com.mbeddr'

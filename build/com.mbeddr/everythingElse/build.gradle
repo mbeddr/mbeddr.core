@@ -122,7 +122,7 @@ publishing {
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
-task build_all_in_one(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+    task build_all_in_one(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
     script script_build_mbeddrAllInOne
 }
 
@@ -359,18 +359,7 @@ publishing {
     }
 }
 
-def script_build_tutorialLanguages = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
-def script_build_tutorialSolutions = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
 
-task build_tutorial_languages(type: BuildLanguages) {
-    script script_build_tutorialLanguages
-}
-
-task build_tutorial_solutions(type: BuildLanguages, dependsOn: build_tutorial_languages) {
-    script script_build_tutorialSolutions
-}
-
-task build_tutorial(dependsOn: build_tutorial_solutions) { }
 
 task package_tutorial(type: Zip) {
     from rootProject.projectDir.absolutePath + "/code/applications/tutorial"

@@ -36,7 +36,6 @@ def script_test_mbeddrTutorial = new File(scriptsBasePath + "/com.mbeddr.tutoria
 def script_test_mbeddrAnalysisTs = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ts-tests.xml")
 def script_test_mbeddrAnalysisEx = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ex-tests.xml")
 def script_test_mbeddrPerformance = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-performance-tests.xml")
-def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 def script_test_mbeddrDebugger = new File(scriptsBasePath + "/com.mbeddr.debugger/" + "build-tests.xml")
 def script_test_mbeddrCoreEx = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ex-tests.xml")
 def script_test_mbeddrCoreExLibrary = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-aLibrary.xml")
@@ -47,7 +46,21 @@ def script_test_mbeddrExtTs = new File(scriptsBasePath + "/com.mbeddr.ext/" + "b
 def script_test_mbeddrExtEx = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ex-tests.xml")
 
 
-task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_mbeddr) {
+def script_build_tutorialLanguages = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
+def script_build_tutorialSolutions = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
+
+task build_tutorial_languages(type: BuildLanguages, dependsOn: build_mbeddr) {
+    script script_build_tutorialLanguages
+}
+
+task build_tutorial_solutions(type: BuildLanguages, dependsOn: build_tutorial_languages) {
+    script script_build_tutorialSolutions
+}
+
+task build_tutorial(dependsOn: build_tutorial_solutions) { }
+
+
+task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_tutorial) {
     script script_test_mbeddrTutorial
 }
 
@@ -55,14 +68,8 @@ task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrAnalysisEx
 }
 
-
-
 task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
-}
-
-task test_mbeddr_platform(type: TestLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
-    script script_test_mbeddrPlatform
 }
 
 task test_mbeddr_debugger(type: TestLanguages, dependsOn: build_mbeddr) {
@@ -77,7 +84,7 @@ task build_mbeddr_core_ex_library(type: BuildLanguages, dependsOn: build_mbeddr)
     script script_test_mbeddrCoreExLibrary
 }
 
-task test_mbeddr_core_ts(type: TestLanguages) {
+task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreTs
 }
 
@@ -89,7 +96,7 @@ task test_mbeddr_core_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
 }
 
-task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {
+task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts, test_mbeddr_core_ex_library]) {
 
 }
 test_mbeddr_core_ex_library.dependsOn build_mbeddr_core_ex
@@ -135,6 +142,7 @@ task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_anal
 
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
-task test_mbeddr(dependsOn: [test_mbeddr_debugger, test_mbeddr_platform, test_mbeddr_core, test_mbeddr_performance, test_mbeddr_tutorial, test_mbeddr_cc, test_mbeddr_ext]) {}
+
+task test_mbeddr(dependsOn: [test_mbeddr_debugger, ':build:com.mbeddr:platform:test_mbeddr_platform', test_mbeddr_core, test_mbeddr_performance, test_mbeddr_tutorial, test_mbeddr_cc, test_mbeddr_ext]) {}
 
 check.dependsOn test_mbeddr
