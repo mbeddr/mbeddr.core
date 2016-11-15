@@ -8,7 +8,8 @@
       <runner id="RUNNER_28" name="" type="gradle-runner">
         <parameters>
           <param name="teamcity.step.mode" value="default" />
-          <param name="ui.gradleRunner.gradle.tasks.names" value="clean build" />
+          <param name="ui.gradleRunner.additional.gradle.cmd.params" value="--parallel" />
+          <param name="ui.gradleRunner.gradle.tasks.names" value="test_mbeddr" />
           <param name="ui.gradleRunner.gradle.wrapper.useWrapper" value="true" />
         </parameters>
       </runner>
