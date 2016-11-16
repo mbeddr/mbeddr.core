@@ -226,6 +226,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -3860,22 +3861,38 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="HwyTuzZJiC" role="3clFbw">
-                <node concept="2OqwBi" id="HwyTuzZJiD" role="2Oq$k0">
-                  <node concept="2OqwBi" id="HwyTuzZJiE" role="2Oq$k0">
-                    <node concept="13iPFW" id="HwyTuzZJiF" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="HwyTu$0cEn" role="2OqNvi">
-                      <ref role="3Tt5mk" to="51wr:BSUXCECS57" />
+              <node concept="1Wc70l" id="6wnGIeNinF9" role="3clFbw">
+                <node concept="3y3z36" id="6wnGIeNiorm" role="3uHU7B">
+                  <node concept="10Nm6u" id="6wnGIeNiot4" role="3uHU7w" />
+                  <node concept="2OqwBi" id="6wnGIeNio1L" role="3uHU7B">
+                    <node concept="2OqwBi" id="6wnGIeNinM7" role="2Oq$k0">
+                      <node concept="13iPFW" id="6wnGIeNinJA" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="6wnGIeNinU1" role="2OqNvi">
+                        <ref role="3Tt5mk" to="51wr:BSUXCECS57" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="6wnGIeNiogA" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpee:f$Xl_Oh" resolve="value" />
                     </node>
                   </node>
-                  <node concept="3TrcHB" id="HwyTuzZJiH" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpee:f$Xl_Oh" resolve="value" />
-                  </node>
                 </node>
-                <node concept="liA8E" id="HwyTuzZJiI" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="37vLTw" id="HwyTuzZJiJ" role="37wK5m">
-                    <ref role="3cqZAo" node="HwyTuzZJib" resolve="fullName" />
+                <node concept="2OqwBi" id="HwyTuzZJiC" role="3uHU7w">
+                  <node concept="2OqwBi" id="HwyTuzZJiD" role="2Oq$k0">
+                    <node concept="2OqwBi" id="HwyTuzZJiE" role="2Oq$k0">
+                      <node concept="13iPFW" id="HwyTuzZJiF" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="HwyTu$0cEn" role="2OqNvi">
+                        <ref role="3Tt5mk" to="51wr:BSUXCECS57" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="HwyTuzZJiH" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpee:f$Xl_Oh" resolve="value" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="HwyTuzZJiI" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="37vLTw" id="HwyTuzZJiJ" role="37wK5m">
+                      <ref role="3cqZAo" node="HwyTuzZJib" resolve="fullName" />
+                    </node>
                   </node>
                 </node>
               </node>
