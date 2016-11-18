@@ -645,32 +645,6 @@
                         </node>
                       </node>
                       <node concept="3clFbH" id="G25GphKdjR" role="3cqZAp" />
-                      <node concept="3clFbJ" id="G25GphKcUg" role="3cqZAp">
-                        <property role="TyiWK" value="true" />
-                        <property role="TyiWL" value="false" />
-                        <node concept="3clFbS" id="G25GphKcUh" role="3clFbx">
-                          <node concept="3cpWs6" id="G25GphKdht" role="3cqZAp">
-                            <node concept="3clFbT" id="G25GphKdhv" role="3cqZAk">
-                              <property role="3clFbU" value="false" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3fqX7Q" id="G25GphKdhz" role="3clFbw">
-                          <node concept="2YIFZM" id="5zEbkDPb_As" role="3fr31v">
-                            <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                            <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
-                            <node concept="37vLTw" id="5zEbkDPbADP" role="37wK5m">
-                              <ref role="3cqZAo" node="G25GphKd60" resolve="parent" />
-                            </node>
-                            <node concept="10Nm6u" id="5zEbkDPbNHO" role="37wK5m" />
-                            <node concept="37vLTw" id="5zEbkDPbBfD" role="37wK5m">
-                              <ref role="3cqZAo" node="G25GphKcTl" resolve="conceptNode" />
-                            </node>
-                            <node concept="10Nm6u" id="5zEbkDPbOMT" role="37wK5m" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbH" id="G25GphKdjQ" role="3cqZAp" />
                       <node concept="3cpWs8" id="G25GphKdih" role="3cqZAp">
                         <node concept="3cpWsn" id="G25GphKdii" role="3cpWs9">
                           <property role="TrG5h" value="linkDeclaration" />
@@ -688,6 +662,36 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="17pH$TAGO2M" role="3cqZAp" />
+                      <node concept="3clFbJ" id="G25GphKcUg" role="3cqZAp">
+                        <property role="TyiWK" value="true" />
+                        <property role="TyiWL" value="false" />
+                        <node concept="3clFbS" id="G25GphKcUh" role="3clFbx">
+                          <node concept="3cpWs6" id="G25GphKdht" role="3cqZAp">
+                            <node concept="3clFbT" id="G25GphKdhv" role="3cqZAk">
+                              <property role="3clFbU" value="false" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3fqX7Q" id="G25GphKdhz" role="3clFbw">
+                          <node concept="2YIFZM" id="5zEbkDPb_As" role="3fr31v">
+                            <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                            <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                            <node concept="37vLTw" id="5zEbkDPbADP" role="37wK5m">
+                              <ref role="3cqZAo" node="G25GphKd60" resolve="parent" />
+                            </node>
+                            <node concept="10Nm6u" id="5zEbkDPbNHO" role="37wK5m" />
+                            <node concept="37vLTw" id="5zEbkDPbBfD" role="37wK5m">
+                              <ref role="3cqZAo" node="G25GphKcTl" resolve="conceptNode" />
+                            </node>
+                            <node concept="37vLTw" id="17pH$TAGOfS" role="37wK5m">
+                              <ref role="3cqZAo" node="G25GphKdii" resolve="linkDeclaration" />
+                            </node>
+                            <node concept="10Nm6u" id="5zEbkDPbOMT" role="37wK5m" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="G25GphKdjQ" role="3cqZAp" />
                       <node concept="3clFbJ" id="G25GphKdjh" role="3cqZAp">
                         <property role="TyiWK" value="true" />
                         <property role="TyiWL" value="false" />

@@ -17165,7 +17165,7 @@
                       <node concept="3vZ8ra" id="ifzjJo5yaY" role="3clFbG">
                         <node concept="2YIFZM" id="ifzjJo5yaZ" role="37vLTx">
                           <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                          <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                          <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                           <node concept="2OqwBi" id="ifzjJo5Cre" role="37wK5m">
                             <node concept="37vLTw" id="ifzjJo5Cph" role="2Oq$k0">
                               <ref role="3cqZAo" node="4qdNcH$47TU" resolve="_context" />
@@ -17180,6 +17180,12 @@
                               <ref role="3cqZAo" node="19dgrWh_gjE" resolve="subconcept" />
                             </node>
                             <node concept="FGMqu" id="ifzjJo5yb6" role="2OqNvi" />
+                          </node>
+                          <node concept="2OqwBi" id="17pH$TAMbYm" role="37wK5m">
+                            <node concept="37vLTw" id="17pH$TAMbYn" role="2Oq$k0">
+                              <ref role="3cqZAo" node="ifzjJo5_Qs" resolve="sourceNode" />
+                            </node>
+                            <node concept="25OxAV" id="17pH$TAMbYo" role="2OqNvi" />
                           </node>
                           <node concept="10Nm6u" id="ifzjJo5yb7" role="37wK5m" />
                         </node>
@@ -19186,8 +19192,8 @@
                                           <node concept="3clFbF" id="1MG9P_Yg8e0" role="3cqZAp">
                                             <node concept="3vZ8ra" id="1MG9P_Yg9_E" role="3clFbG">
                                               <node concept="2YIFZM" id="1MG9P_Yg9HP" role="37vLTx">
-                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                                                 <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                                                 <node concept="2OqwBi" id="1MG9P_YglJW" role="37wK5m">
                                                   <node concept="37vLTw" id="1MG9P_YglEk" role="2Oq$k0">
                                                     <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
@@ -19200,6 +19206,12 @@
                                                     <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
                                                   </node>
                                                   <node concept="FGMqu" id="1MG9P_YgmiU" role="2OqNvi" />
+                                                </node>
+                                                <node concept="2OqwBi" id="17pH$TAMipx" role="37wK5m">
+                                                  <node concept="37vLTw" id="17pH$TAMipy" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                  </node>
+                                                  <node concept="25OxAV" id="17pH$TAMipz" role="2OqNvi" />
                                                 </node>
                                                 <node concept="10Nm6u" id="1MG9P_Ygmwe" role="37wK5m" />
                                               </node>

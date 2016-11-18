@@ -7861,13 +7861,19 @@
               <node concept="3fqX7Q" id="1wu5Hv5Pn$M" role="3clFbw">
                 <node concept="2YIFZM" id="1wu5Hv5MaHw" role="3fr31v">
                   <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                   <node concept="2GrUjf" id="1wu5Hv5SllR" role="37wK5m">
                     <ref role="2Gs0qQ" node="1wu5Hv5SkyI" resolve="currentAncestor" />
                   </node>
                   <node concept="10Nm6u" id="1wu5Hv5MaT4" role="37wK5m" />
                   <node concept="37vLTw" id="1wu5Hv5MaPc" role="37wK5m">
                     <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
+                  </node>
+                  <node concept="2OqwBi" id="17pH$TAMFMb" role="37wK5m">
+                    <node concept="37vLTw" id="17pH$TAMFMc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
+                    </node>
+                    <node concept="25OxAV" id="17pH$TAMFMd" role="2OqNvi" />
                   </node>
                   <node concept="10Nm6u" id="1wu5Hv5MaHC" role="37wK5m" />
                 </node>
