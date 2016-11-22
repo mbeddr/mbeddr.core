@@ -2,7 +2,7 @@
 <model ref="r:851420a8-4c6f-4b29-a2e6-353fa69bdb4e(de.itemis.mps.editor.collapsible.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -84,7 +84,7 @@
               <property role="3F0ifm" value="collapsed" />
             </node>
             <node concept="3F1sOY" id="48DYfEtbZrj" role="3EZMnx">
-              <ref role="1NtTu8" to="o1st:48DYfEtbX_p" />
+              <ref role="1NtTu8" to="o1st:48DYfEtbX_p" resolve="collapsedCell" />
               <node concept="VPXOz" id="48DYfEtjv0C" role="3F10Kt">
                 <property role="VOm3f" value="true" />
               </node>
@@ -102,7 +102,7 @@
               <property role="3F0ifm" value="expanded" />
             </node>
             <node concept="3F1sOY" id="48DYfEtfdGq" role="3EZMnx">
-              <ref role="1NtTu8" to="o1st:48DYfEt2oMe" />
+              <ref role="1NtTu8" to="o1st:48DYfEt2oMe" resolve="expandedCell" />
               <node concept="VPXOz" id="48DYfEtjv0y" role="3F10Kt">
                 <property role="VOm3f" value="true" />
               </node>

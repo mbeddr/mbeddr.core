@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f099628a-ed42-4871-97ee-dff92cb3f9a9" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f099628a-ed42-4871-97ee-dff92cb3f9a9" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>Linux</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -28,7 +28,7 @@ tar -zcvf %teamcity.build.checkoutDir%/cbmc-linux.tar.gz -C %teamcity.build.chec
       <vcs-entry-ref root-id="Mbeddr2_Mbeddr_Utilities_Cbmc_Cbmc" />
     </vcs-settings>
     <requirements>
-      <contains name="teamcity.agent.jvm.os.name" value="Linux" />
+      <contains id="RQ_5" name="teamcity.agent.jvm.os.name" value="Linux" />
     </requirements>
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">

@@ -2,18 +2,18 @@
 <model ref="r:a8e17eef-50cb-447b-93f0-a59a30152787(test.ts.core.performance.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
   </languages>
   <imports>
     <import index="hga8" ref="r:ce31edff-fe3a-46fd-b60b-2e8d9dc7243f(com.mbeddr.core.cinterpreter.plugin)" />
@@ -52,6 +52,9 @@
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -506,6 +509,11 @@
                       <node concept="37vLTw" id="4QsoB8VJJvI" role="37wK5m">
                         <ref role="3cqZAo" node="4QsoB8VJJvp" resolve="context" />
                       </node>
+                      <node concept="2ShNRf" id="2nzO3M_Rms5" role="37wK5m">
+                        <node concept="HV5vD" id="2nzO3M_RmMJ" role="2ShVmc">
+                          <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -586,6 +594,11 @@
                       <node concept="37vLTw" id="4QsoB8VJJwe" role="37wK5m">
                         <ref role="3cqZAo" node="4QsoB8VJJvT" resolve="context" />
                       </node>
+                      <node concept="2ShNRf" id="2nzO3M_Ryl$" role="37wK5m">
+                        <node concept="HV5vD" id="2nzO3M_Ryl_" role="2ShVmc">
+                          <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -664,6 +677,11 @@
                       </node>
                       <node concept="37vLTw" id="3YR_2qPI29H" role="37wK5m">
                         <ref role="3cqZAo" node="3YR_2qPI21z" resolve="context" />
+                      </node>
+                      <node concept="2ShNRf" id="2nzO3M_RyrT" role="37wK5m">
+                        <node concept="HV5vD" id="2nzO3M_RyrU" role="2ShVmc">
+                          <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -744,6 +762,11 @@
                       <node concept="37vLTw" id="3YR_2qPI2LU" role="37wK5m">
                         <ref role="3cqZAo" node="3YR_2qPI2u6" resolve="context" />
                       </node>
+                      <node concept="2ShNRf" id="2nzO3M_RyyI" role="37wK5m">
+                        <node concept="HV5vD" id="2nzO3M_RyyJ" role="2ShVmc">
+                          <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -822,6 +845,11 @@
                       </node>
                       <node concept="37vLTw" id="LQ9d6zvvrq" role="37wK5m">
                         <ref role="3cqZAo" node="LQ9d6zvvra" resolve="context" />
+                      </node>
+                      <node concept="2ShNRf" id="2nzO3M_RyCD" role="37wK5m">
+                        <node concept="HV5vD" id="2nzO3M_RyCE" role="2ShVmc">
+                          <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+                        </node>
                       </node>
                     </node>
                   </node>

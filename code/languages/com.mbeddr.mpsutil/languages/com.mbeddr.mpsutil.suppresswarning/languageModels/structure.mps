@@ -2,7 +2,8 @@
 <model ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,11 +19,11 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -32,6 +33,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -50,7 +52,7 @@
     <property role="TrG5h" value="SuppressAllWarnings" />
     <property role="34LRSv" value="all" />
     <property role="R4oN_" value="suppress all warnings" />
-    <property role="1pbfSe" value="1243101205" />
+    <property role="EcuMT" value="9116320848000879251" />
     <ref role="1TJDcQ" node="7U3Fobb_8Ek" resolve="SuppressWarningKind" />
   </node>
   <node concept="1TIwiD" id="7U3Fobb_8Ek">
@@ -59,18 +61,19 @@
     <property role="TrG5h" value="SuppressWarningKind" />
     <property role="R4oN_" value="kind of warning that can be suppressed" />
     <property role="3GE5qa" value="" />
-    <property role="1pbfSe" value="1243101206" />
+    <property role="EcuMT" value="9116320848000879252" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7U3Fobb_8El">
     <property role="TrG5h" value="SuppressWarnings" />
     <property role="3GE5qa" value="" />
-    <property role="1pbfSe" value="1243101207" />
+    <property role="EcuMT" value="9116320848000879253" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="7U3Fobb_8Em" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kinds" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="9116320848000879254" />
       <ref role="20lvS9" node="7U3Fobb_8Ek" resolve="SuppressWarningKind" />
     </node>
     <node concept="M6xJ_" id="7U3Fobb_8En" role="lGtFl">

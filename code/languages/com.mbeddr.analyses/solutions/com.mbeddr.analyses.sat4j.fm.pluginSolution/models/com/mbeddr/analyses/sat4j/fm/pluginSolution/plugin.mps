@@ -2,14 +2,14 @@
 <model ref="r:a455f040-2209-4834-8f4b-708bfbd294b7(com.mbeddr.analyses.sat4j.fm.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -32,9 +32,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -69,22 +68,26 @@
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
+      <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
       <concept id="1205679047295" name="jetbrains.mps.lang.plugin.structure.ActionParameterDeclaration" flags="ig" index="2S4$dB" />
       <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="1214307303872" name="jetbrains.mps.lang.plugin.structure.GetComponentBlock" flags="in" index="2UmK3q" />
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
-        <property id="6547237850567462701" name="number" index="2XNb$f" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+        <child id="471625927503648174" name="shortcut" index="15cTzA" />
       </concept>
       <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
         <child id="1562714432501166206" name="keystroke" index="Zd501" />
       </concept>
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
+      <concept id="471625927503601927" name="jetbrains.mps.lang.plugin.structure.NumberToolShortcut" flags="ng" index="15feLf">
+        <property id="471625927503601955" name="number" index="15feLF" />
       </concept>
       <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
@@ -203,7 +206,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -474,7 +476,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3XWIBckGdON" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="tSjOfAjuLF">
@@ -647,7 +649,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3XWIBckHuFm" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="44j14BH2NQ4">
@@ -722,24 +724,6 @@
                   </node>
                   <node concept="LR4U6" id="44j14BH2NQF" role="2OqNvi">
                     <ref role="LR4U5" node="44j14BHeQV4" resolve="VariabilityConsistencyTool" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="44j14BHj1U8" role="3cqZAp">
-              <node concept="37vLTI" id="44j14BHj2l3" role="3clFbG">
-                <node concept="2OqwBi" id="44j14BHja5n" role="37vLTx">
-                  <node concept="2WthIp" id="44j14BHj2na" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="44j14BHjaJx" role="2OqNvi">
-                    <ref role="2WH_rO" node="44j14BH2NQ5" resolve="project" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="44j14BHj21m" role="37vLTJ">
-                  <node concept="37vLTw" id="44j14BHj1U7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="44j14BH2NQ_" resolve="moduleConsistencyTool" />
-                  </node>
-                  <node concept="2BZ7hE" id="44j14BHj2aN" role="2OqNvi">
-                    <ref role="2WH_rO" node="44j14BHiVD1" resolve="project" />
                   </node>
                 </node>
               </node>
@@ -876,13 +860,12 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3XWIBckHvn1" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="sEfby" id="44j14BHeQV4">
     <property role="TrG5h" value="VariabilityConsistencyTool" />
     <property role="2XNbzY" value="Variabiity Consistency Verification" />
-    <property role="2XNb$f" value="0" />
     <property role="2bmUCM" value="RIGHT" />
     <node concept="2XrIbr" id="44j14BHeQV5" role="2XNbBy">
       <property role="TrG5h" value="setResults" />
@@ -912,25 +895,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="44j14BHiOVZ" role="3cqZAp">
-          <node concept="2OqwBi" id="44j14BHiPsH" role="3clFbG">
-            <node concept="2OqwBi" id="44j14BHiOZ5" role="2Oq$k0">
-              <node concept="2WthIp" id="44j14BHiOVX" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="44j14BHiP97" role="2OqNvi">
-                <ref role="2WH_rO" node="44j14BHfjDH" resolve="resultsPanel" />
-              </node>
-            </node>
-            <node concept="liA8E" id="44j14BHiV0U" role="2OqNvi">
-              <ref role="37wK5l" to="hkrp:4_pSipqVBn_" resolve="setCurrentProject" />
-              <node concept="2OqwBi" id="44j14BHiWbB" role="37wK5m">
-                <node concept="2WthIp" id="44j14BHiWbE" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="44j14BHiWbG" role="2OqNvi">
-                  <ref role="2WH_rO" node="44j14BHiVD1" resolve="project" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2BZ0e9" id="44j14BHfjDH" role="2XNbBz">
@@ -938,13 +902,6 @@
       <node concept="3Tm6S6" id="44j14BHfjDI" role="1B3o_S" />
       <node concept="3uibUv" id="44j14BHiqQP" role="1tU5fm">
         <ref role="3uigEE" to="hkrp:4_pSipqUB$z" resolve="ModuleConsistencyResultsUI" />
-      </node>
-    </node>
-    <node concept="2BZ0e9" id="44j14BHiVD1" role="2XNbBz">
-      <property role="TrG5h" value="project" />
-      <node concept="3Tm1VV" id="44j14BHiWbt" role="1B3o_S" />
-      <node concept="3uibUv" id="44j14BHiZGZ" role="1tU5fm">
-        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
       </node>
     </node>
     <node concept="2UmK3q" id="44j14BHeQVy" role="2Um5zG">
@@ -976,7 +933,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5rxb3FrNGIx" role="3cqZAp">
+          <node concept="2OqwBi" id="5rxb3FrNGTR" role="3clFbG">
+            <node concept="2OqwBi" id="5rxb3FrNGKf" role="2Oq$k0">
+              <node concept="2WthIp" id="5rxb3FrNGIv" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="5rxb3FrNGOx" role="2OqNvi">
+                <ref role="2WH_rO" node="44j14BHfjDH" resolve="resultsPanel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5rxb3FrNHpF" role="2OqNvi">
+              <ref role="37wK5l" to="hkrp:4_pSipqVBn_" resolve="setCurrentProject" />
+              <node concept="2xqhHp" id="5rxb3FrNHyr" role="37wK5m" />
+            </node>
+          </node>
+        </node>
       </node>
+    </node>
+    <node concept="15feLf" id="5OPKfxQ3lYU" role="15cTzA">
+      <property role="15feLF" value="0" />
     </node>
   </node>
   <node concept="sE7Ow" id="1X8myJOEqbR">
@@ -1049,24 +1023,6 @@
                   </node>
                   <node concept="LR4U6" id="1X8myJOEqcL" role="2OqNvi">
                     <ref role="LR4U5" node="44j14BHeQV4" resolve="VariabilityConsistencyTool" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1X8myJOEqcM" role="3cqZAp">
-              <node concept="37vLTI" id="1X8myJOEqcN" role="3clFbG">
-                <node concept="2OqwBi" id="1X8myJOEqcO" role="37vLTx">
-                  <node concept="2WthIp" id="1X8myJOEqcP" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="1X8myJOEqcQ" role="2OqNvi">
-                    <ref role="2WH_rO" node="1X8myJOEqbS" resolve="project" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1X8myJOEqcR" role="37vLTJ">
-                  <node concept="37vLTw" id="1X8myJOEqcS" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1X8myJOEqcF" resolve="moduleConsistencyTool" />
-                  </node>
-                  <node concept="2BZ7hE" id="1X8myJOEqcT" role="2OqNvi">
-                    <ref role="2WH_rO" node="44j14BHiVD1" resolve="project" />
                   </node>
                 </node>
               </node>
@@ -1187,7 +1143,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="1X8myJOEqdg" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="1X8myJOEtq_">
@@ -1275,24 +1231,6 @@
                   </node>
                   <node concept="LR4U6" id="1X8myJOL9pW" role="2OqNvi">
                     <ref role="LR4U5" node="44j14BHeQV4" resolve="VariabilityConsistencyTool" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1X8myJOL9pX" role="3cqZAp">
-              <node concept="37vLTI" id="1X8myJOL9pY" role="3clFbG">
-                <node concept="2OqwBi" id="1X8myJOL9pZ" role="37vLTx">
-                  <node concept="2WthIp" id="1X8myJOL9q0" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="1X8myJOL9q1" role="2OqNvi">
-                    <ref role="2WH_rO" node="1X8myJOL9pv" resolve="project" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1X8myJOL9q2" role="37vLTJ">
-                  <node concept="37vLTw" id="1X8myJOL9q3" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1X8myJOL9pQ" resolve="moduleConsistencyTool" />
-                  </node>
-                  <node concept="2BZ7hE" id="1X8myJOL9q4" role="2OqNvi">
-                    <ref role="2WH_rO" node="44j14BHiVD1" resolve="project" />
                   </node>
                 </node>
               </node>
@@ -1451,7 +1389,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="1X8myJOL9qj" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="1X8myJOLvHq">
@@ -1536,24 +1474,6 @@
                   </node>
                   <node concept="LR4U6" id="1X8myJOV2p4" role="2OqNvi">
                     <ref role="LR4U5" node="44j14BHeQV4" resolve="VariabilityConsistencyTool" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1X8myJOV2p5" role="3cqZAp">
-              <node concept="37vLTI" id="1X8myJOV2p6" role="3clFbG">
-                <node concept="2OqwBi" id="1X8myJOV2p7" role="37vLTx">
-                  <node concept="2WthIp" id="1X8myJOV2p8" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="1X8myJOV2p9" role="2OqNvi">
-                    <ref role="2WH_rO" node="1X8myJOV2oB" resolve="project" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1X8myJOV2pa" role="37vLTJ">
-                  <node concept="37vLTw" id="1X8myJOV2pb" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1X8myJOV2oY" resolve="moduleConsistencyTool" />
-                  </node>
-                  <node concept="2BZ7hE" id="1X8myJOV2pc" role="2OqNvi">
-                    <ref role="2WH_rO" node="44j14BHiVD1" resolve="project" />
                   </node>
                 </node>
               </node>
@@ -1643,7 +1563,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="1X8myJOV2px" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="Zd50a" id="6$rx9V1UOzM">

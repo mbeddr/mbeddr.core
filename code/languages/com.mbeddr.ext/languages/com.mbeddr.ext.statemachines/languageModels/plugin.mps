@@ -2,7 +2,7 @@
 <model ref="r:28395f16-bca2-4bbe-b124-41d67af318af(com.mbeddr.ext.statemachines.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -45,7 +45,7 @@
       <ref role="Yj2fD" to="lkz5:23_jb1uTAN" resolve="Module Content" />
       <node concept="Yjy0c" id="7uF2w19W2i7" role="YgRdx">
         <property role="YhZL1" value="true" />
-        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" />
+        <ref role="YhJ93" to="x27k:5_l8w1EmTdh" resolve="contents" />
         <ref role="YhZWO" to="x27k:5_l8w1EmTcX" resolve="Module" />
         <ref role="Yjy5k" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
       </node>

@@ -2,7 +2,7 @@
 <model ref="r:71832b82-d87a-4966-ac3d-65fac49d19ae(com.mbeddr.mpsutil.suppresswarning.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -138,7 +138,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="4Wyno57pjxf" role="3EZMnx">
-          <ref role="1NtTu8" to="szok:4Wyno57pjqq" />
+          <ref role="1NtTu8" to="szok:4Wyno57pjqq" resolve="kind" />
         </node>
       </node>
       <node concept="2SsqMj" id="7U3FobbAYoZ" role="3EZMnx" />
@@ -184,7 +184,7 @@
                     <node concept="2OqwBi" id="79g_UwJZ$PK" role="2Oq$k0">
                       <node concept="pncrf" id="79g_UwJZ$PL" role="2Oq$k0" />
                       <node concept="3TrEf2" id="79g_UwJZ$PM" role="2OqNvi">
-                        <ref role="3Tt5mk" to="szok:7U3FobbBed_" />
+                        <ref role="3Tt5mk" to="szok:7U3FobbBed_" resolve="kind" />
                       </node>
                     </node>
                     <node concept="1rGIog" id="79g_UwJZ$PN" role="2OqNvi" />

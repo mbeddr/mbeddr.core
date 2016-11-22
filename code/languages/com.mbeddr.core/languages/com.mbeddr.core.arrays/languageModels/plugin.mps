@@ -2,7 +2,7 @@
 <model ref="r:62fa0cc1-0a94-41cf-95db-5a63aba38f91(com.mbeddr.core.pointers.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -134,7 +134,7 @@
             <node concept="2OqwBi" id="3VM1o5wbz9x" role="2Oq$k0">
               <node concept="oxGPV" id="3VM1o5wbz9y" role="2Oq$k0" />
               <node concept="3TrEf2" id="3VM1o5wbz9z" role="2OqNvi">
-                <ref role="3Tt5mk" to="yq40:fwMInzpji9" />
+                <ref role="3Tt5mk" to="yq40:fwMInzpji9" resolve="type2Calculate" />
               </node>
             </node>
             <node concept="2qgKlT" id="3VM1o5wbz9$" role="2OqNvi">

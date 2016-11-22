@@ -1,0 +1,89 @@
+
+def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
+
+task resolve_mps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into mpsHomeDir
+}
+
+
+task build_allScripts(type: BuildLanguages, dependsOn: resolve_mps) {
+    script rootProject.file('build/com.mbeddr.allScripts/build.xml')
+}
+
+task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
+    from "$rootDir/build"
+    from "$rootDir/code/plugins"
+    into "$rootDir/scripts"
+    include "*/*.xml"
+}
+
+task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
+    archiveName 'com.mbeddr.allScripts.build.zip'
+    from artifactsDir
+    include "com.mbeddr.allScripts.build/**"
+}
+
+
+task build_sl_all(type: BuildLanguages, dependsOn: copy_allScripts) {
+    script scriptFile('sl-all/build.xml')
+}
+
+task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
+    from rootProject.zipTree("artifacts/mps-sl-all/mps-sl-all.zip")
+    include "de.itemis.mps.nativelibs.loader/"
+    into "$mpsHomeDir/plugins"
+}
+
+task build_spawner(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
+    script scriptFile('com.mbeddr.build/spawner.xml')
+}
+
+task copy_spawner(type: Copy, dependsOn: build_spawner) {
+    from rootProject.zipTree("artifacts/spawner/com.mbeddr.spawner.zip")
+    into "$mpsHomeDir/plugins"
+}
+
+task build_platform(type: BuildLanguages, dependsOn: copy_spawner) {
+    script scriptFile('com.mbeddr.platform/build.xml')
+}
+
+task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
+    script script_test_mbeddrPlatform
+}
+
+task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
+    script scriptFile('com.mbeddr.platform/build-distribution.xml')
+
+    // Support incremental build
+    inputs.file(script)
+    inputs.dir("$rootDir/artifacts/mps-sl-all")
+    inputs.dir("$rootDir/artifacts/com.mbeddr.platform")
+    outputs.dir("$rootDir/artifacts/com.mbeddr.platform.distribution")
+}
+
+task publish_mbeddrPlatform(type: Zip, dependsOn: build_platform_distribution) {
+    archiveName 'com.mbeddr.platform.distribution.zip'
+    from artifactsDir
+    include "com.mbeddr.platform.distribution/**"
+}
+
+publishing {
+    publications {
+        mbeddrAllScripts(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'allScripts'
+            version mbeddrBuildNumber
+            artifact publish_allScripts
+        }
+        mbeddrPlatform(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'platform'
+            version mbeddrBuildNumber
+            artifact publish_mbeddrPlatform
+        }
+    }
+}

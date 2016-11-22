@@ -112,6 +112,10 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
@@ -133,10 +137,7 @@
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -337,8 +338,8 @@
                                     <node concept="36biLy" id="54z9_KDP3ow" role="2pJxcZ">
                                       <node concept="2OqwBi" id="54z9_KDP3N6" role="36biLW">
                                         <node concept="1PxgMI" id="54z9_KDP3HE" role="2Oq$k0">
-                                          <ref role="1PxNhF" to="tpee:fzclF8j" resolve="ExpressionStatement" />
-                                          <node concept="37vLTw" id="54z9_KDP3oF" role="1PxMeX">
+                                          <ref role="1m5ApE" to="tpee:fzclF8j" resolve="ExpressionStatement" />
+                                          <node concept="37vLTw" id="54z9_KDP3oF" role="1m5AlR">
                                             <ref role="3cqZAo" node="54z9_KDP1VI" resolve="l" />
                                           </node>
                                         </node>

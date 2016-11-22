@@ -2,9 +2,9 @@
 <model ref="r:c6046c4f-0234-4750-a1af-b5fc6021371a(com.mbeddr.analyses.cbmc.core.editor)">
   <persistence version="9" />
   <languages>
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -125,7 +125,7 @@
     <node concept="3EZMnI" id="3x0R1LJfFez" role="2wV5jI">
       <node concept="3EZMnI" id="3x0R1LJfFe$" role="3EZMnx">
         <node concept="PMmxH" id="3LhOsKAGPtf" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="VPM3Z" id="3x0R1LJfFe_" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -138,7 +138,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3x0R1LJfFeZ" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3x0R1LJfFf0" role="1sWHZn">
             <node concept="3F0A7n" id="3x0R1LJfFf1" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -209,7 +209,7 @@
         </node>
         <node concept="l2Vlx" id="3x0R1LJfFfu" role="2iSdaV" />
         <node concept="PMmxH" id="3LhOsKAH2f9" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="3F0ifn" id="3x0R1LJfFfv" role="3EZMnx">
           <property role="3F0ifm" value="Decision Table Analysis" />
@@ -218,7 +218,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3x0R1LJfFfO" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3x0R1LJfFfP" role="1sWHZn">
             <node concept="3F0A7n" id="3x0R1LJfFfQ" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -260,7 +260,7 @@
             <property role="3F0ifm" value="DecTab container" />
           </node>
           <node concept="1iCGBv" id="3x0R1LJfFf_" role="3EZMnx">
-            <ref role="1NtTu8" to="hj5x:3x0R1LJfFaP" />
+            <ref role="1NtTu8" to="hj5x:3x0R1LJfFaP" resolve="decTabContainer" />
             <node concept="1sVBvm" id="3x0R1LJfFfA" role="1sWHZn">
               <node concept="3F0A7n" id="3x0R1LJfFfB" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -333,7 +333,7 @@
         </node>
         <node concept="l2Vlx" id="3x0R1LJfFgc" role="2iSdaV" />
         <node concept="PMmxH" id="3LhOsKAH2Uz" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="3F0ifn" id="3x0R1LJfFgd" role="3EZMnx">
           <property role="3F0ifm" value="Robustness Analysis" />
@@ -342,7 +342,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="2hmLFg9JaTr" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="2hmLFg9JaTs" role="1sWHZn">
             <node concept="3F0A7n" id="2hmLFg9JaTt" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -630,7 +630,7 @@
         </node>
         <node concept="l2Vlx" id="7yN$Xh8qhCd" role="2iSdaV" />
         <node concept="PMmxH" id="7yN$Xh8qhCe" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="3F0ifn" id="7yN$Xh8qhCf" role="3EZMnx">
           <property role="3F0ifm" value="GSwitchExpression Analysis" />
@@ -639,7 +639,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="7yN$Xh8qhCh" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="7yN$Xh8qhCi" role="1sWHZn">
             <node concept="3F0A7n" id="7yN$Xh8qhCj" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -681,7 +681,7 @@
             <property role="3F0ifm" value="GSwitch container" />
           </node>
           <node concept="1iCGBv" id="7yN$Xh8qhCz" role="3EZMnx">
-            <ref role="1NtTu8" to="hj5x:7yN$Xh8qhuZ" />
+            <ref role="1NtTu8" to="hj5x:7yN$Xh8qhuZ" resolve="gswitchContainer" />
             <node concept="1sVBvm" id="7yN$Xh8qhC$" role="1sWHZn">
               <node concept="3F0A7n" id="7yN$Xh8qhC_" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -736,7 +736,7 @@
     <node concept="3EZMnI" id="3AX70SQiMax" role="2wV5jI">
       <node concept="3EZMnI" id="3AX70SQiMay" role="3EZMnx">
         <node concept="PMmxH" id="3AX70SQiMaz" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="VPM3Z" id="3AX70SQiMa$" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -749,7 +749,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="3AX70SQiMaC" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="3AX70SQiMaD" role="1sWHZn">
             <node concept="3F0A7n" id="3AX70SQiMaE" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -817,6 +817,85 @@
       </node>
       <node concept="3F0ifn" id="3AX70SQiMR$" role="3EZMnx" />
       <node concept="PMmxH" id="3AX70SQiMR_" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1VBrW84FOuE">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="1XX52x" to="hj5x:1VBrW84FOuD" resolve="VacuityAnalysis" />
+    <node concept="3EZMnI" id="1VBrW84FOuG" role="2wV5jI">
+      <node concept="3EZMnI" id="1VBrW84FOuH" role="3EZMnx">
+        <node concept="PMmxH" id="1VBrW84FOuI" role="3EZMnx">
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+        </node>
+        <node concept="VPM3Z" id="1VBrW84FOuJ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="1VBrW84FOuK" role="2iSdaV" />
+        <node concept="3F0ifn" id="1VBrW84FOuL" role="3EZMnx">
+          <property role="3F0ifm" value="Vacuity Analysis" />
+        </node>
+        <node concept="3F0ifn" id="1VBrW84FOuM" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt;" />
+        </node>
+        <node concept="1iCGBv" id="1VBrW84FOuN" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
+          <node concept="1sVBvm" id="1VBrW84FOuO" role="1sWHZn">
+            <node concept="3F0A7n" id="1VBrW84FOuP" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="1VBrW84FOuQ" role="2iSdaV" />
+      <node concept="gc7cB" id="1VBrW84FOuR" role="3EZMnx">
+        <node concept="3VJUX4" id="1VBrW84FOuS" role="3YsKMw">
+          <node concept="3clFbS" id="1VBrW84FOuT" role="2VODD2">
+            <node concept="3clFbF" id="1VBrW84FOuU" role="3cqZAp">
+              <node concept="2ShNRf" id="1VBrW84FOuV" role="3clFbG">
+                <node concept="1pGfFk" id="1VBrW84FOuW" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                  <node concept="pncrf" id="1VBrW84FOuX" role="37wK5m" />
+                  <node concept="10M0yZ" id="1VBrW84FOuY" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1VBrW84FOuZ" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="PMmxH" id="1VBrW84FOv0" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
+        </node>
+        <node concept="VPM3Z" id="1VBrW84FOv1" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="2iRkQZ" id="1VBrW84FOv2" role="2iSdaV" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="1VBrW84FOFD" role="6VMZX">
+      <node concept="2iRkQZ" id="1VBrW84FOFE" role="2iSdaV" />
+      <node concept="3EZMnI" id="1VBrW84FOFF" role="3EZMnx">
+        <node concept="VPM3Z" id="1VBrW84FOFG" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="1VBrW84FOFH" role="3EZMnx">
+          <property role="3F0ifm" value="Summary:" />
+        </node>
+        <node concept="3F0ifn" id="1VBrW84FOFI" role="3EZMnx">
+          <property role="3F0ifm" value="check the 'assert(false)' reachable from the entry-point." />
+          <node concept="Vb9p2" id="1VBrW84FOFJ" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="1VBrW84FOFK" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1VBrW84FOFL" role="3EZMnx" />
+      <node concept="PMmxH" id="1VBrW84FOFM" role="3EZMnx">
         <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>

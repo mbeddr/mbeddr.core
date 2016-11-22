@@ -7,7 +7,7 @@
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
@@ -242,6 +242,9 @@
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXFj" role="lIfQt">
         <ref role="3cM6IK" node="5IYyAOzCwFD" resolve="testglobalvar" />
+        <node concept="3cQ7KT" id="3cUcim$fhos" role="lGtFl">
+          <property role="TrG5h" value="mainFunction" />
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="bKKma6Gwu5" role="N3F5h">
@@ -431,7 +434,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lWw" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lWx" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lWy" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6Gwu6" resolve="mainFunction" />
+          <ref role="3sa5fj" node="3cUcim$fhos" resolve="mainFunction" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lWz" role="3savwP" />

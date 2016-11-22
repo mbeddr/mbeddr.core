@@ -2,7 +2,7 @@
 <model ref="r:c3969769-35f3-47e6-8cd9-08ace4a1ebf7(com.mbeddr.analyses.cbmc.verification_case.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -154,10 +154,10 @@
           <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         </node>
         <node concept="3F1sOY" id="4By$TDgYIvV" role="3EZMnx">
-          <ref role="1NtTu8" to="48a0:4By$TDgYyKN" />
+          <ref role="1NtTu8" to="48a0:4By$TDgYyKN" resolve="suv" />
         </node>
         <node concept="3F1sOY" id="2L0t9wIYin2" role="3EZMnx">
-          <ref role="1NtTu8" to="x27k:3CmSUB7Fp_k" />
+          <ref role="1NtTu8" to="x27k:3CmSUB7Fp_k" resolve="body" />
         </node>
         <node concept="l2Vlx" id="2L0t9wIYsGe" role="2iSdaV" />
         <node concept="3EZMnI" id="4hj596uNacg" role="AHCbl">
@@ -197,7 +197,7 @@
           <property role="3F0ifm" value="function stubs:" />
         </node>
         <node concept="3F1sOY" id="4By$TDh1sC5" role="3EZMnx">
-          <ref role="1NtTu8" to="48a0:4By$TDh1s_L" />
+          <ref role="1NtTu8" to="48a0:4By$TDh1s_L" resolve="funsStubs" />
         </node>
         <node concept="pkWqt" id="2L0t9wIXH6J" role="pqm2j">
           <node concept="3clFbS" id="2L0t9wIXH6K" role="2VODD2">
@@ -353,7 +353,7 @@
           <property role="3F0ifm" value=":" />
         </node>
         <node concept="3F1sOY" id="2L0t9wJ1GaN" role="3EZMnx">
-          <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+          <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
         </node>
         <node concept="3F0ifn" id="2L0t9wIZplu" role="3EZMnx">
           <property role="3F0ifm" value="-&gt;" />
@@ -362,7 +362,7 @@
           </node>
         </node>
         <node concept="1iCGBv" id="HiHa_$iCV4" role="3EZMnx">
-          <ref role="1NtTu8" to="48a0:2L0t9wJ0hAO" />
+          <ref role="1NtTu8" to="48a0:2L0t9wJ0hAO" resolve="varRef" />
           <node concept="1sVBvm" id="HiHa_$iCV6" role="1sWHZn">
             <node concept="3F0A7n" id="HiHa_$iCVm" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -392,7 +392,7 @@
                             <node concept="2OqwBi" id="HiHa_$iIqj" role="2Oq$k0">
                               <node concept="pncrf" id="HiHa_$iIcP" role="2Oq$k0" />
                               <node concept="3TrEf2" id="HiHa_$iMEu" role="2OqNvi">
-                                <ref role="3Tt5mk" to="48a0:2L0t9wJ0hAO" />
+                                <ref role="3Tt5mk" to="48a0:2L0t9wJ0hAO" resolve="varRef" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="HiHa_$iO0k" role="2OqNvi">
@@ -416,7 +416,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="1E$o3HVImq1" role="3EZMnx">
-          <ref role="1NtTu8" to="48a0:2L0t9wJsu$3" />
+          <ref role="1NtTu8" to="48a0:2L0t9wJsu$3" resolve="constraint" />
         </node>
         <node concept="3F0ifn" id="2L0t9wJjW1Z" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -436,7 +436,7 @@
         <property role="3F0ifm" value="function environment:" />
       </node>
       <node concept="1iCGBv" id="2L0t9wJlJoj" role="3EZMnx">
-        <ref role="1NtTu8" to="48a0:2L0t9wJlIYH" />
+        <ref role="1NtTu8" to="48a0:2L0t9wJlIYH" resolve="origFunRef" />
         <node concept="1sVBvm" id="2L0t9wJlJol" role="1sWHZn">
           <node concept="3F0A7n" id="2L0t9wJlJpp" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -451,7 +451,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2L0t9wJlJrU" role="3EZMnx">
-        <ref role="1NtTu8" to="48a0:2L0t9wJlIYT" />
+        <ref role="1NtTu8" to="48a0:2L0t9wJlIYT" resolve="newFunRef" />
         <node concept="1sVBvm" id="2L0t9wJlJrW" role="1sWHZn">
           <node concept="3F0A7n" id="2L0t9wJlJsm" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -478,7 +478,7 @@
           <property role="3F0ifm" value="initial state:" />
         </node>
         <node concept="3F1sOY" id="HiHa_$jb$v" role="3EZMnx">
-          <ref role="1NtTu8" to="48a0:HiHa_$jbln" />
+          <ref role="1NtTu8" to="48a0:HiHa_$jbln" resolve="body" />
         </node>
         <node concept="l2Vlx" id="HiHa_$jBfu" role="2iSdaV" />
         <node concept="VPM3Z" id="HiHa_$jBfv" role="3F10Kt">
@@ -542,7 +542,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="HiHa_$mmfz" role="3EZMnx">
-          <ref role="1NtTu8" to="48a0:HiHa_$mmeI" />
+          <ref role="1NtTu8" to="48a0:HiHa_$mmeI" resolve="body" />
         </node>
         <node concept="l2Vlx" id="HiHa_$mmf$" role="2iSdaV" />
         <node concept="VPM3Z" id="HiHa_$mmf_" role="3F10Kt">
@@ -556,7 +556,7 @@
     <ref role="1XX52x" to="48a0:7Kh7qAAalBv" resolve="FunctionsSUV" />
     <node concept="3F2HdR" id="HiHa_$ohf4" role="2wV5jI">
       <property role="2czwfO" value="," />
-      <ref role="1NtTu8" to="48a0:HiHa_$mPN4" />
+      <ref role="1NtTu8" to="48a0:HiHa_$mPN4" resolve="funRefs" />
       <node concept="2iRfu4" id="HiHa_$ohf6" role="2czzBx" />
     </node>
   </node>
@@ -578,7 +578,7 @@
       </node>
       <node concept="l2Vlx" id="XYEPTieypy" role="2iSdaV" />
       <node concept="3F1sOY" id="XYEPTiqOYN" role="3EZMnx">
-        <ref role="1NtTu8" to="48a0:XYEPTiep_x" />
+        <ref role="1NtTu8" to="48a0:XYEPTiep_x" resolve="varRef" />
         <node concept="11L4FC" id="XYEPTirpNS" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -593,7 +593,7 @@
         <property role="3F0ifm" value="every" />
       </node>
       <node concept="3F1sOY" id="XYEPTiqOZc" role="3EZMnx">
-        <ref role="1NtTu8" to="48a0:XYEPTignne" />
+        <ref role="1NtTu8" to="48a0:XYEPTignne" resolve="range" />
       </node>
       <node concept="3F0ifn" id="XYEPTisaZK" role="3EZMnx">
         <property role="3F0ifm" value="steps" />

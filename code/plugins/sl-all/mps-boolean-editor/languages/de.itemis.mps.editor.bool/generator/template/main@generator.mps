@@ -27,6 +27,7 @@
     <import index="njmu" ref="r:1b386250-86de-4ea6-8d77-819aebd33e4a(de.itemis.mps.editor.bool.behavior)" implicit="true" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
+    <import index="p9jd" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.lang.editor.cellProviders(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -722,7 +723,7 @@
                             <node concept="2OqwBi" id="2csR5Duk0Dd" role="3uHU7B">
                               <node concept="30H73N" id="2csR5Duk0De" role="2Oq$k0" />
                               <node concept="3TrEf2" id="2csR5Duk0Df" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tpc2:gWP5bHW" />
+                                <ref role="3Tt5mk" to="tpc2:gWP5bHW" resolve="menuDescriptor" />
                               </node>
                             </node>
                           </node>
@@ -766,12 +767,12 @@
                                   <node concept="2OqwBi" id="2csR5Duk0CI" role="3clFbG">
                                     <node concept="2OqwBi" id="2csR5Duk0CJ" role="2Oq$k0">
                                       <node concept="3TrEf2" id="2csR5Duk0CL" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="tpc2:gWP5bHW" />
+                                        <ref role="3Tt5mk" to="tpc2:gWP5bHW" resolve="menuDescriptor" />
                                       </node>
                                       <node concept="30H73N" id="2csR5Duk0CK" role="2Oq$k0" />
                                     </node>
                                     <node concept="3Tsc0h" id="2csR5Duk0CM" role="2OqNvi">
-                                      <ref role="3TtcxE" to="tpc2:gWOY2$g" />
+                                      <ref role="3TtcxE" to="tpc2:gWOY2$g" resolve="cellMenuPart" />
                                     </node>
                                   </node>
                                 </node>
@@ -1161,7 +1162,7 @@
                 <ref role="3cqZAo" node="6bmIkNC6OcO" resolve="provider" />
               </node>
               <node concept="liA8E" id="6bmIkNC6OcX" role="2OqNvi">
-                <ref role="37wK5l" to="hdil:6bmIkNC7z2u" resolve="setRole" />
+                <ref role="37wK5l" to="p9jd:~PropertyCellProvider.setRole(java.lang.Object):void" resolve="setRole" />
                 <node concept="Xl_RD" id="6bmIkNC6OcY" role="37wK5m">
                   <property role="Xl_RC" value="role" />
                   <node concept="17Uvod" id="6bmIkNC6OcZ" role="lGtFl">
@@ -1400,7 +1401,7 @@
                             <node concept="2OqwBi" id="6bmIkNC6OeD" role="3uHU7B">
                               <node concept="30H73N" id="6bmIkNC6OeE" role="2Oq$k0" />
                               <node concept="3TrEf2" id="6bmIkNC6OeF" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tpc2:gWP5bHW" />
+                                <ref role="3Tt5mk" to="tpc2:gWP5bHW" resolve="menuDescriptor" />
                               </node>
                             </node>
                           </node>
@@ -1428,7 +1429,7 @@
                         <ref role="3cqZAo" node="6bmIkNC6OcO" resolve="provider" />
                       </node>
                       <node concept="liA8E" id="6bmIkNC6OeO" role="2OqNvi">
-                        <ref role="37wK5l" to="hdil:6bmIkNC7z5i" resolve="getCellContext" />
+                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getCellContext():jetbrains.mps.nodeEditor.cellMenu.CellContext" resolve="getCellContext" />
                       </node>
                     </node>
                     <node concept="2ShNRf" id="6bmIkNC6OeP" role="37wK5m">
@@ -1444,12 +1445,12 @@
                                   <node concept="2OqwBi" id="6bmIkNC6OeX" role="3clFbG">
                                     <node concept="2OqwBi" id="6bmIkNC6OeY" role="2Oq$k0">
                                       <node concept="3TrEf2" id="6bmIkNC6OeZ" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="tpc2:gWP5bHW" />
+                                        <ref role="3Tt5mk" to="tpc2:gWP5bHW" resolve="menuDescriptor" />
                                       </node>
                                       <node concept="30H73N" id="6bmIkNC6Of0" role="2Oq$k0" />
                                     </node>
                                     <node concept="3Tsc0h" id="6bmIkNC6Of1" role="2OqNvi">
-                                      <ref role="3TtcxE" to="tpc2:gWOY2$g" />
+                                      <ref role="3TtcxE" to="tpc2:gWOY2$g" resolve="cellMenuPart" />
                                     </node>
                                   </node>
                                 </node>
@@ -1528,7 +1529,7 @@
               </node>
               <node concept="2OqwBi" id="6bmIkNC6Oft" role="33vP2m">
                 <node concept="liA8E" id="6bmIkNC6Ofu" role="2OqNvi">
-                  <ref role="37wK5l" to="hdil:6bmIkNC7z4m" resolve="getRoleAttributeClass" />
+                  <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getRoleAttributeClass():java.lang.Class" resolve="getRoleAttributeClass" />
                 </node>
                 <node concept="37vLTw" id="6bmIkNC6Ofv" role="2Oq$k0">
                   <ref role="3cqZAo" node="6bmIkNC6OcO" resolve="provider" />

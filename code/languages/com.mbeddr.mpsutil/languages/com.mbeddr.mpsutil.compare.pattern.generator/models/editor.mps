@@ -2,7 +2,7 @@
 <model ref="r:930f7a56-0216-43c9-8eca-6469d8ad4a88(com.mbeddr.mpsutil.compare.pattern.generator.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -70,7 +70,7 @@
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="3F1sOY" id="gCHu3Ol" role="3EZMnx">
-        <ref role="1NtTu8" to="h6ds:1xH_Y2TxGO8" />
+        <ref role="1NtTu8" to="h6ds:1xH_Y2TxGO8" resolve="expression" />
       </node>
       <node concept="3F0ifn" id="hzCfy4Q" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -90,7 +90,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="6ClmpmugGkR" role="3EZMnx">
-        <ref role="1NtTu8" to="h6ds:6ClmpmugGhq" />
+        <ref role="1NtTu8" to="h6ds:6ClmpmugGhq" resolve="member" />
         <node concept="1sVBvm" id="6ClmpmugGkT" role="1sWHZn">
           <node concept="3F0A7n" id="6ClmpmugGl5" role="2wV5jI">
             <property role="1Intyy" value="true" />

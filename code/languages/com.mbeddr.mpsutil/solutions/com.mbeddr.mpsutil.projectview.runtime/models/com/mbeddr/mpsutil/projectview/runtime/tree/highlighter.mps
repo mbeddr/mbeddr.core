@@ -41,6 +41,7 @@
     <import index="paf" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane.logicalview(MPS.Workbench/)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2672,21 +2673,6 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6B7erwvED6N" role="3clF47">
-        <node concept="3clFbJ" id="6B7erwvED6O" role="3cqZAp">
-          <node concept="3fqX7Q" id="6B7erwvED6P" role="3clFbw">
-            <node concept="2YIFZM" id="6B7erwvEIul" role="3fr31v">
-              <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
-              <ref role="37wK5l" to="rvbb:~ProjectPane.isShowGenStatus():boolean" resolve="isShowGenStatus" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6B7erwvED6T" role="3clFbx">
-            <node concept="3cpWs6" id="6B7erwvED6R" role="3cqZAp">
-              <node concept="3clFbT" id="6B7erwvED6S" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="6B7erwvED6U" role="3cqZAp">
           <node concept="2YIFZM" id="6B7erwvEIG3" role="3clFbw">
             <ref role="1Pybhc" to="vqh0:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
@@ -2722,7 +2708,7 @@
                     <ref role="3cqZAo" node="6B7erwvED6Z" resolve="application" />
                   </node>
                   <node concept="liA8E" id="6B7erwvEJaA" role="2OqNvi">
-                    <ref role="37wK5l" to="bd8o:~Application.isDisposed():boolean" resolve="isDisposed" />
+                    <ref role="37wK5l" to="1m72:~ComponentManager.isDisposed():boolean" resolve="isDisposed" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="6B7erwvEJaE" role="3uHU7w">
@@ -6573,17 +6559,6 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="6B7erwvEDua" role="3clF47">
-        <node concept="3clFbJ" id="6B7erwvEDub" role="3cqZAp">
-          <node concept="3fqX7Q" id="6B7erwvEDuc" role="3clFbw">
-            <node concept="2YIFZM" id="6B7erwvEJGW" role="3fr31v">
-              <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
-              <ref role="37wK5l" to="rvbb:~ProjectPane.isShowGenStatus():boolean" resolve="isShowGenStatus" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6B7erwvEDuf" role="3clFbx">
-            <node concept="3cpWs6" id="6B7erwvEDue" role="3cqZAp" />
-          </node>
-        </node>
         <node concept="3clFbF" id="6B7erwvEDug" role="3cqZAp">
           <node concept="1rXfSq" id="6B7erwvEDuh" role="3clFbG">
             <ref role="37wK5l" node="6B7erwvEDum" resolve="dispatchForHierarchy" />

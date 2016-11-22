@@ -119,14 +119,15 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -384,14 +385,14 @@
         </node>
         <node concept="3cpWs6" id="4hMIGYxkfri" role="3cqZAp">
           <node concept="1PxgMI" id="4hMIGYxkfrk" role="3cqZAk">
-            <ref role="1PxNhF" to="oevp:2dxXn_mziAn" resolve="PThreadsStrategy" />
-            <node concept="2OqwBi" id="4hMIGYxkfrl" role="1PxMeX">
+            <ref role="1m5ApE" to="oevp:2dxXn_mziAn" resolve="PThreadsStrategy" />
+            <node concept="2OqwBi" id="4hMIGYxkfrl" role="1m5AlR">
               <node concept="3TrEf2" id="4hMIGYxkfrm" role="2OqNvi">
                 <ref role="3Tt5mk" to="5wll:12_KeTzXJV4" />
               </node>
               <node concept="1PxgMI" id="4hMIGYxkfrn" role="2Oq$k0">
-                <ref role="1PxNhF" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
-                <node concept="37vLTw" id="4hMIGYxkfro" role="1PxMeX">
+                <ref role="1m5ApE" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                <node concept="37vLTw" id="4hMIGYxkfro" role="1m5AlR">
                   <ref role="3cqZAo" node="4hMIGYxkfr2" resolve="rc" />
                 </node>
               </node>

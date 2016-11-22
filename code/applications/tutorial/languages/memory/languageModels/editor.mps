@@ -2,8 +2,7 @@
 <model ref="r:a9635415-b279-4143-b36f-2d96216d01d2(mbeddr.tutotial.osconfig.memory.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="wlut" ref="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" />
@@ -63,7 +62,7 @@
         <property role="3F0ifm" value="memory layout {" />
       </node>
       <node concept="3F2HdR" id="4Kv0gUyBAgv" role="3EZMnx">
-        <ref role="1NtTu8" to="wlut:4Kv0gUyBAgo" />
+        <ref role="1NtTu8" to="wlut:4Kv0gUyBAgo" resolve="regions" />
         <node concept="2EHx9g" id="5rgUaxOr4DB" role="2czzBx" />
         <node concept="pVoyu" id="4Kv0gUyBAgx" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -107,7 +106,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4Kv0gUyBAgn" role="3EZMnx">
-        <ref role="1NtTu8" to="wlut:4Kv0gUyBAga" />
+        <ref role="1NtTu8" to="wlut:4Kv0gUyBAga" resolve="startsAt" />
       </node>
       <node concept="3F0ifn" id="4Kv0gUyBAza" role="3EZMnx">
         <property role="3F0ifm" value=" .. " />
@@ -119,7 +118,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4Kv0gUyBAzc" role="3EZMnx">
-        <ref role="1NtTu8" to="wlut:4Kv0gUyBAz1" />
+        <ref role="1NtTu8" to="wlut:4Kv0gUyBAz1" resolve="endsAt" />
       </node>
     </node>
   </node>
@@ -134,7 +133,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4Kv0gUyBAQh" role="3EZMnx">
-        <ref role="1NtTu8" to="wlut:4Kv0gUyBJzo" />
+        <ref role="1NtTu8" to="wlut:4Kv0gUyBJzo" resolve="region" />
         <node concept="1sVBvm" id="4Kv0gUyBAQi" role="1sWHZn">
           <node concept="3F0A7n" id="4Kv0gUyBAQk" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -161,7 +160,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4Kv0gUyBFie" role="3EZMnx">
-        <ref role="1NtTu8" to="wlut:4Kv0gUyBJzo" />
+        <ref role="1NtTu8" to="wlut:4Kv0gUyBJzo" resolve="region" />
         <node concept="1sVBvm" id="4Kv0gUyBFif" role="1sWHZn">
           <node concept="3F0A7n" id="4Kv0gUyBFig" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -188,7 +187,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4Kv0gUyBFiF" role="3EZMnx">
-        <ref role="1NtTu8" to="wlut:4Kv0gUyBJzo" />
+        <ref role="1NtTu8" to="wlut:4Kv0gUyBJzo" resolve="region" />
         <node concept="1sVBvm" id="4Kv0gUyBFiG" role="1sWHZn">
           <node concept="3F0A7n" id="4Kv0gUyBFiH" role="2wV5jI">
             <property role="1Intyy" value="true" />

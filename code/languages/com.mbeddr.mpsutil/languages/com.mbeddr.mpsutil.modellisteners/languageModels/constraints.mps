@@ -107,6 +107,10 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -114,8 +118,6 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -278,12 +280,12 @@
           <node concept="2OqwBi" id="5iW7uqbVidr" role="3clFbG">
             <node concept="1PxgMI" id="5iW7uqbVmWI" role="2Oq$k0">
               <property role="1BlNFB" value="true" />
-              <ref role="1PxNhF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-              <node concept="2OqwBi" id="5iW7uqbVg$Z" role="1PxMeX">
+              <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+              <node concept="2OqwBi" id="5iW7uqbVg$Z" role="1m5AlR">
                 <node concept="1PxgMI" id="5iW7uqbX69s" role="2Oq$k0">
                   <property role="1BlNFB" value="true" />
-                  <ref role="1PxNhF" to="wlk:52ZF9D39XYf" resolve="ConceptModelListeners" />
-                  <node concept="nLn13" id="5iW7uqbX60K" role="1PxMeX" />
+                  <ref role="1m5ApE" to="wlk:52ZF9D39XYf" resolve="ConceptModelListeners" />
+                  <node concept="nLn13" id="5iW7uqbX60K" role="1m5AlR" />
                 </node>
                 <node concept="3TrEf2" id="5iW7uqbX6DX" role="2OqNvi">
                   <ref role="3Tt5mk" to="wlk:hDM2mAQ" />

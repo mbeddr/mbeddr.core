@@ -2,7 +2,8 @@
 <model ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -20,11 +21,11 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -41,6 +42,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -56,7 +58,7 @@
   </registry>
   <node concept="1TIwiD" id="opE5jFg8Hy">
     <property role="TrG5h" value="TraceAnnotation" />
-    <property role="1pbfSe" value="245746762" />
+    <property role="EcuMT" value="439567521322928994" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="3Y7ywckFIr1" role="PzmwI">
       <ref role="PrY4T" node="3Y7ywckFIr0" resolve="ITrace" />
@@ -75,32 +77,33 @@
     <property role="TrG5h" value="TraceKind" />
     <property role="3GE5qa" value="tracekind" />
     <property role="R5$K7" value="true" />
-    <property role="1pbfSe" value="245746757" />
+    <property role="EcuMT" value="439567521322928999" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="opE5jFg8HD">
     <property role="3GE5qa" value="tracekind" />
     <property role="TrG5h" value="TestsTraceKind" />
     <property role="34LRSv" value="test" />
-    <property role="1pbfSe" value="245746755" />
+    <property role="EcuMT" value="439567521322929001" />
     <ref role="1TJDcQ" node="opE5jFg8HB" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="opE5jFg8HF">
     <property role="3GE5qa" value="tracekind" />
     <property role="TrG5h" value="ImplementsTraceKind" />
     <property role="34LRSv" value="implements" />
-    <property role="1pbfSe" value="245746753" />
+    <property role="EcuMT" value="439567521322929003" />
     <ref role="1TJDcQ" node="opE5jFg8HB" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="opE5jFg8MN">
     <property role="TrG5h" value="TraceTargetRef" />
     <property role="R5$K7" value="true" />
-    <property role="1pbfSe" value="245746425" />
+    <property role="EcuMT" value="439567521322929331" />
     <ref role="1TJDcQ" node="GKLijSDr01" resolve="GenericTraceTarget" />
     <node concept="1TJgyj" id="opE5jFgg97" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="439567521322959431" />
       <ref role="20lvS9" node="opE5jFg8Ph" resolve="ITraceTarget" />
     </node>
     <node concept="PrWs8" id="7t39SXUO2ry" role="PzmwI">
@@ -109,42 +112,45 @@
   </node>
   <node concept="PlHQZ" id="opE5jFg8Ph">
     <property role="TrG5h" value="ITraceTarget" />
-    <property role="1pbfSe" value="245746267" />
+    <property role="EcuMT" value="439567521322929489" />
     <node concept="PrWs8" id="opE5jFg8Qu" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="opE5jFgfm$">
     <property role="TrG5h" value="ITraceTargetProvider" />
-    <property role="1pbfSe" value="245719560" />
+    <property role="EcuMT" value="439567521322956196" />
     <node concept="PrWs8" id="opE5jFgfm_" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="opE5jFgg8Y">
     <property role="TrG5h" value="TraceTargetProviderRef" />
-    <property role="1pbfSe" value="245716334" />
+    <property role="EcuMT" value="439567521322959422" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="opE5jFgg8Z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="provider" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="439567521322959423" />
       <ref role="20lvS9" node="opE5jFgfm$" resolve="ITraceTargetProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="3Y7ywckFIr0">
     <property role="TrG5h" value="ITrace" />
-    <property role="1pbfSe" value="1412853955" />
+    <property role="EcuMT" value="4577779292081940160" />
     <node concept="1TJgyj" id="3Y7ywckFJXc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tracekind" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4577779292081946444" />
       <ref role="20lvS9" node="opE5jFg8HB" resolve="TraceKind" />
     </node>
     <node concept="1TJgyj" id="3Y7ywckFJXd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="refs" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="4577779292081946445" />
       <ref role="20lvS9" node="GKLijSDr01" resolve="GenericTraceTarget" />
     </node>
   </node>
@@ -152,7 +158,7 @@
     <property role="TrG5h" value="TraceWord" />
     <property role="R4oN_" value="trace to a requirements (or other traceable)" />
     <property role="34LRSv" value="@trace" />
-    <property role="1pbfSe" value="1412860241" />
+    <property role="EcuMT" value="4577779292081946446" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Y7ywckFLcp" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -165,14 +171,14 @@
     <property role="3GE5qa" value="tracekind" />
     <property role="TrG5h" value="ExemplifiesTraceKind" />
     <property role="34LRSv" value="exemplifies" />
-    <property role="1pbfSe" value="1502516546" />
+    <property role="EcuMT" value="2668975618728950291" />
     <ref role="1TJDcQ" node="opE5jFg8HB" resolve="TraceKind" />
   </node>
   <node concept="1TIwiD" id="7uQ0U6v8oLq">
     <property role="TrG5h" value="TracingConfigItem" />
     <property role="34LRSv" value="tracing" />
     <property role="R4oN_" value="use requirements tracing" />
-    <property role="1pbfSe" value="383225851" />
+    <property role="EcuMT" value="8626086128969157722" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7uQ0U6v8rc3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -182,7 +188,7 @@
     <property role="TrG5h" value="GenericTraceTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="64386341" />
+    <property role="EcuMT" value="806361095880421377" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

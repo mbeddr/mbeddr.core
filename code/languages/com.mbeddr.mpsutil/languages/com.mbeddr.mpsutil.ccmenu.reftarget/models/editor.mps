@@ -2,7 +2,7 @@
 <model ref="r:e45f6099-5b21-476b-a281-cd008fdfeeca(com.mbeddr.mpsutil.ccmenu.reftarget.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -125,7 +125,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3efHud92cPo" role="3EZMnx">
-        <ref role="1NtTu8" to="gx98:3efHud92cPi" />
+        <ref role="1NtTu8" to="gx98:3efHud92cPi" resolve="extensions" />
         <node concept="l2Vlx" id="3efHud92cPq" role="2czzBx" />
         <node concept="lj46D" id="3efHud92cUU" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -151,7 +151,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="1iCGBv" id="2PH7Shh7NsQ" role="3EZMnx">
-        <ref role="1NtTu8" to="gx98:2PH7Shh7N42" />
+        <ref role="1NtTu8" to="gx98:2PH7Shh7N42" resolve="linkToRemove" />
         <node concept="1sVBvm" id="2PH7Shh7NsS" role="1sWHZn">
           <node concept="1HlG4h" id="2PH7Shh7Nt0" role="2wV5jI">
             <node concept="1HfYo3" id="2PH7Shh7Nt2" role="1HlULh">
@@ -211,7 +211,7 @@
       </node>
       <node concept="3F2HdR" id="2PH7Shh7OXB" role="3EZMnx">
         <property role="2czwfO" value="or" />
-        <ref role="1NtTu8" to="gx98:2PH7Shh7Meo" />
+        <ref role="1NtTu8" to="gx98:2PH7Shh7Meo" resolve="selectors" />
         <node concept="l2Vlx" id="2PH7Shh7OXD" role="2czzBx" />
         <node concept="tppnM" id="2PH7Shh7Un7" role="sWeuL">
           <node concept="pVoyu" id="2PH7Shh7Unb" role="3F10Kt">
@@ -229,7 +229,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2PH7Shh7OXI" role="3EZMnx">
-        <ref role="1NtTu8" to="gx98:2PH7Shh7O8x" />
+        <ref role="1NtTu8" to="gx98:2PH7Shh7O8x" resolve="modifications" />
         <node concept="l2Vlx" id="2PH7Shh7OXK" role="2czzBx" />
         <node concept="pVoyu" id="2PH7Shh7P8g" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -260,7 +260,7 @@
         <property role="3F0ifm" value="for concept" />
       </node>
       <node concept="1iCGBv" id="3n7Foehsuhy" role="3EZMnx">
-        <ref role="1NtTu8" to="gx98:3n7Foehsp$5" />
+        <ref role="1NtTu8" to="gx98:3n7Foehsp$5" resolve="applicableConcept" />
         <node concept="1sVBvm" id="3n7Foehsuh$" role="1sWHZn">
           <node concept="3F0A7n" id="3n7FoehsuhK" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -269,7 +269,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3n7FoehsuhZ" role="3EZMnx">
-        <ref role="1NtTu8" to="gx98:3n7Foehsp$9" />
+        <ref role="1NtTu8" to="gx98:3n7Foehsp$9" resolve="function" />
       </node>
       <node concept="l2Vlx" id="3n7FoehsugN" role="2iSdaV" />
     </node>

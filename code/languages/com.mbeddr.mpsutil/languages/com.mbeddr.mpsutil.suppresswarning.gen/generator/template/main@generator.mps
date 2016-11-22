@@ -15,8 +15,6 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="szok" ref="r:66daf7bf-1a21-494f-a67b-89edb7cdf1b9(com.mbeddr.mpsutil.suppresswarning.gen.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
-    <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -105,9 +103,7 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
-        <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
-      </concept>
+      <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -215,7 +211,6 @@
                     <node concept="2qgKlT" id="4Wyno57oTA4" role="2OqNvi">
                       <ref role="37wK5l" to="dqn8:7U3Fobb_8EV" resolve="isSuppressed" />
                       <node concept="1YBJjd" id="4Wyno57oTA5" role="37wK5m">
-                        <ref role="1YBMHb" to="p3tm:7U3FobbB2zZ" resolve="statements" />
                         <node concept="2c44tb" id="4Wyno57oTA6" role="lGtFl">
                           <property role="P3scX" value="7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652/1174650432090" />
                           <property role="2qtEX8" value="applicableNode" />
@@ -225,13 +220,12 @@
                               <ref role="2Gs0qQ" node="7U3FobbA4PU" resolve="rule" />
                             </node>
                             <node concept="3TrEf2" id="4Wyno57oTA9" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpd4:h5YuTL0" />
+                              <ref role="3Tt5mk" to="tpd4:h5YuTL0" resolve="applicableNode" />
                             </node>
                           </node>
                         </node>
                       </node>
                       <node concept="35c_gC" id="4Wyno57oTAa" role="37wK5m">
-                        <ref role="35c_gD" to="x27k:5Sez0xTFbz7" resolve="SuppressDataFlowWarning" />
                         <node concept="2c44tb" id="4Wyno57oTAb" role="lGtFl">
                           <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474300074836/2644386474300074837" />
                           <property role="2qtEX8" value="conceptDeclaration" />
@@ -241,11 +235,11 @@
                                 <ref role="3cqZAo" node="1vun1LWm6sR" resolve="annotation" />
                               </node>
                               <node concept="3TrEf2" id="4Wyno57plW3" role="2OqNvi">
-                                <ref role="3Tt5mk" to="szok:4Wyno57pjqq" />
+                                <ref role="3Tt5mk" to="szok:4Wyno57pjqq" resolve="kind" />
                               </node>
                             </node>
                             <node concept="3TrEf2" id="4Wyno57pmfI" role="2OqNvi">
-                              <ref role="3Tt5mk" to="szok:7U3FobbBed_" />
+                              <ref role="3Tt5mk" to="szok:7U3FobbBed_" resolve="kind" />
                             </node>
                           </node>
                         </node>
@@ -266,11 +260,11 @@
                       <ref role="2Gs0qQ" node="7U3FobbA4PU" resolve="rule" />
                     </node>
                     <node concept="3TrEf2" id="7U3FobbA7dw" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpd4:hp8ibRO" />
+                      <ref role="3Tt5mk" to="tpd4:hp8ibRO" resolve="body" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="7U3FobbA9Jr" role="2OqNvi">
-                    <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                    <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                   </node>
                 </node>
                 <node concept="2Ke4WJ" id="7U3FobbAeec" role="2OqNvi">

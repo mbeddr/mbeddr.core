@@ -2,9 +2,9 @@
 <model ref="r:2f0637ea-d91b-4fb2-af58-666974e8debb(com.mbeddr.rcp.actions.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="c38abce1-4c09-44cb-9ebf-2a764e824bb5" name="com.mbeddr.mpsutil.actionsfilter" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="c38abce1-4c09-44cb-9ebf-2a764e824bb5" name="com.mbeddr.mpsutil.actionsfilter" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -33,7 +33,9 @@
   <node concept="2flHaf" id="6XvT233D$xo">
     <property role="TrG5h" value="EndUserActions" />
     <property role="3GE5qa" value="actionsfilter" />
-    <property role="CHIup" value="true" />
+    <node concept="2flH9Z" id="4p6n9HQttzz" role="2flH9W">
+      <property role="2flH96" value="ShowTips" />
+    </node>
     <node concept="2flH9Z" id="6XvT233DKzF" role="2flH9W">
       <property role="2flH96" value="FileOtherSettingsGroup" />
     </node>
@@ -418,9 +420,6 @@
     <node concept="2flH9Z" id="6XvT233Io_u" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.lang.script.pluginSolution.plugin.ScriptsGlobally_ActionGroup" />
     </node>
-    <node concept="2flH9Z" id="6XvT233IoD_" role="2flH9W">
-      <property role="2flH96" value="ProductivityGude" />
-    </node>
     <node concept="2flH9Z" id="6XvT233IoFE" role="2flH9W">
       <property role="2flH96" value="MPSHelp" />
     </node>
@@ -766,13 +765,11 @@
     <node concept="2flH9Z" id="2zyvt0HGdvd" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroup" />
     </node>
-    <node concept="2flH9Z" id="DKNFG6nCb3" role="2flH9W">
-      <property role="2flH96" value="ShowTips" />
-    </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">
     <property role="TrG5h" value="EverythingActions" />
     <property role="3GE5qa" value="actionsfilter" />
+    <property role="CHIup" value="true" />
   </node>
 </model>
 

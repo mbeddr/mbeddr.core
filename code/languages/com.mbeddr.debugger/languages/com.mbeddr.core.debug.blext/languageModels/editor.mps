@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -181,7 +181,7 @@
       </node>
       <node concept="l2Vlx" id="7mVHCj34c5L" role="2iSdaV" />
       <node concept="3F1sOY" id="7mVHCj34c5O" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:7mVHCj34c5G" />
+        <ref role="1NtTu8" to="talm:7mVHCj34c5G" resolve="varName" />
       </node>
       <node concept="3F0ifn" id="5kJvn7$3zlE" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -209,7 +209,7 @@
           <property role="3F0ifm" value="variables list (def. unmappedVariables):" />
         </node>
         <node concept="3F1sOY" id="1dTx1UKi0_o" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:1dTx1UKi0mI" />
+          <ref role="1NtTu8" to="talm:1dTx1UKi0mI" resolve="variablesList" />
         </node>
         <node concept="2iRfu4" id="1dTx1UKi0_5" role="2iSdaV" />
       </node>
@@ -221,13 +221,13 @@
         <property role="3F0ifm" value="map by name" />
       </node>
       <node concept="3F1sOY" id="7mVHCj34jtb" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:7mVHCj34jsZ" />
+        <ref role="1NtTu8" to="talm:7mVHCj34jsZ" resolve="unmappedName" />
       </node>
       <node concept="3F0ifn" id="7mVHCj34jtd" role="3EZMnx">
         <property role="3F0ifm" value="to" />
       </node>
       <node concept="3F1sOY" id="7mVHCj34jtf" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:7mVHCj34jt1" />
+        <ref role="1NtTu8" to="talm:7mVHCj34jt1" resolve="mappedName" />
       </node>
       <node concept="3EZMnI" id="7mVHCj34jtk" role="3EZMnx">
         <node concept="pVoyu" id="7mVHCj34jti" role="3F10Kt">
@@ -241,7 +241,7 @@
           <property role="3F0ifm" value="type mapper:" />
         </node>
         <node concept="3F1sOY" id="7mVHCj34jth" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:7mVHCj34jt0" />
+          <ref role="1NtTu8" to="talm:7mVHCj34jt0" resolve="typeExpr" />
         </node>
         <node concept="ljvvj" id="79czkGCIr_S" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -259,7 +259,7 @@
           <property role="3F0ifm" value="icon provider:" />
         </node>
         <node concept="3F1sOY" id="79czkGCIuE3" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:79czkGCIuDJ" />
+          <ref role="1NtTu8" to="talm:79czkGCIuDJ" resolve="iconProvider" />
         </node>
         <node concept="ljvvj" id="79czkGCIuE0" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -278,7 +278,7 @@
         </node>
         <node concept="3F2HdR" id="7ekR8t0bz3r" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="talm:7ekR8t0bmac" />
+          <ref role="1NtTu8" to="talm:7ekR8t0bmac" resolve="variableKinds" />
           <node concept="l2Vlx" id="7ekR8t0bz3t" role="2czzBx" />
         </node>
         <node concept="ljvvj" id="79czkGCIrA0" role="3F10Kt">
@@ -297,7 +297,7 @@
           <property role="3F0ifm" value="category name:" />
         </node>
         <node concept="3F1sOY" id="7oVAz7YCaKt" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:79czkGCIr_v" />
+          <ref role="1NtTu8" to="talm:79czkGCIr_v" resolve="categoryName" />
         </node>
       </node>
       <node concept="3EZMnI" id="7mVHCj34jtD" role="3EZMnx">
@@ -312,7 +312,7 @@
           <property role="3F0ifm" value="highlighted node:" />
         </node>
         <node concept="3F1sOY" id="7mVHCj34jtI" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:7mVHCj34jt4" />
+          <ref role="1NtTu8" to="talm:7mVHCj34jt4" resolve="highlightedNode" />
         </node>
         <node concept="ljvvj" id="79czkGCIr_K" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -343,7 +343,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F1sOY" id="6_yU7sVVukh" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:1JD0ifcGwJC" />
+          <ref role="1NtTu8" to="talm:1JD0ifcGwJC" resolve="typeMapper" />
         </node>
       </node>
       <node concept="3EZMnI" id="1JD0ifcGwKs" role="3EZMnx">
@@ -358,7 +358,7 @@
           <property role="3F0ifm" value="highlighted node:" />
         </node>
         <node concept="3F1sOY" id="1JD0ifcGwKY" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:1JD0ifcGwK2" />
+          <ref role="1NtTu8" to="talm:1JD0ifcGwK2" resolve="highlightedNode" />
         </node>
         <node concept="ljvvj" id="1JD0ifcGwKy" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -408,7 +408,7 @@
           </node>
           <node concept="3XFhqQ" id="6BOHQEQLA$R" role="3EZMnx" />
           <node concept="3F2HdR" id="6BOHQEQLA$T" role="3EZMnx">
-            <ref role="1NtTu8" to="talm:4ln$YqgQn2v" />
+            <ref role="1NtTu8" to="talm:4ln$YqgQn2v" resolve="rules" />
             <node concept="2iRkQZ" id="6BOHQEQLA$Y" role="2czzBx" />
             <node concept="pj6Ft" id="6BOHQEQLA$V" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -425,7 +425,7 @@
           </node>
           <node concept="3XFhqQ" id="6BOHQEQNDJT" role="3EZMnx" />
           <node concept="3F1sOY" id="6BOHQEQNDJZ" role="3EZMnx">
-            <ref role="1NtTu8" to="talm:6BOHQEQNDJO" />
+            <ref role="1NtTu8" to="talm:6BOHQEQNDJO" resolve="defaultRule" />
           </node>
           <node concept="2iRfu4" id="6BOHQEQNDJY" role="2iSdaV" />
         </node>
@@ -522,7 +522,7 @@
           <property role="3F0ifm" value="=" />
         </node>
         <node concept="3F1sOY" id="4ln$YqgQn3g" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:4ln$YqgQn37" />
+          <ref role="1NtTu8" to="talm:4ln$YqgQn37" resolve="condition" />
         </node>
         <node concept="3F0ifn" id="4ln$YqgQn3i" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -544,7 +544,7 @@
           <property role="3F0ifm" value="=" />
         </node>
         <node concept="3F1sOY" id="4ln$YqgQn3n" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:4ln$YqgQn38" />
+          <ref role="1NtTu8" to="talm:4ln$YqgQn38" resolve="value" />
         </node>
         <node concept="3F0ifn" id="4ln$YqgQn3m" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -614,7 +614,7 @@
           <property role="3F0ifm" value="=" />
         </node>
         <node concept="3F1sOY" id="6BOHQEQNDJH" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:4ln$YqgQn38" />
+          <ref role="1NtTu8" to="talm:4ln$YqgQn38" resolve="value" />
         </node>
         <node concept="3F0ifn" id="6BOHQEQNDJI" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -663,7 +663,7 @@
         </node>
         <node concept="3XFhqQ" id="6_yU7sVVZNZ" role="3EZMnx" />
         <node concept="3F1sOY" id="6_yU7sVVZO1" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:6_yU7sVVs4s" />
+          <ref role="1NtTu8" to="talm:6_yU7sVVs4s" resolve="typeMapper" />
         </node>
         <node concept="2iRfu4" id="6_yU7sVVZNV" role="2iSdaV" />
       </node>
@@ -673,7 +673,7 @@
         </node>
         <node concept="3XFhqQ" id="6_yU7sVVZOk" role="3EZMnx" />
         <node concept="3F1sOY" id="6_yU7sVVZOm" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:6_yU7sVVZOj" />
+          <ref role="1NtTu8" to="talm:6_yU7sVVZOj" resolve="namePattern" />
         </node>
         <node concept="2iRfu4" id="6_yU7sVVZOe" role="2iSdaV" />
       </node>
@@ -715,7 +715,7 @@
         </node>
         <node concept="3XFhqQ" id="6_yU7sVVuk7" role="3EZMnx" />
         <node concept="3F2HdR" id="6_yU7sVVuk9" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:6_yU7sVVs4w" />
+          <ref role="1NtTu8" to="talm:6_yU7sVVs4w" resolve="statements" />
           <node concept="pj6Ft" id="6_yU7sVVukb" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -741,14 +741,14 @@
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F1sOY" id="6_yU7sVVKvf" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:6_yU7sVVKv9" />
+        <ref role="1NtTu8" to="talm:6_yU7sVVKv9" resolve="newType" />
       </node>
       <node concept="3F0ifn" id="6_yU7sVVZOo" role="3EZMnx">
         <property role="3F0ifm" value="and name" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F1sOY" id="6_yU7sVVZOr" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:6_yU7sVVZNA" />
+        <ref role="1NtTu8" to="talm:6_yU7sVVZNA" resolve="namePattern" />
       </node>
       <node concept="3F0ifn" id="6_yU7sVVKvh" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -778,7 +778,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4SaNiyQv8X" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:4SaNiyQv7K" />
+        <ref role="1NtTu8" to="talm:4SaNiyQv7K" resolve="subtree" />
       </node>
       <node concept="3F0ifn" id="4SaNiyNHoI" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -797,7 +797,7 @@
         <property role="3F0ifm" value="break on 1st suspendable:" />
       </node>
       <node concept="3F1sOY" id="7kGecLJAHIn" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:7kGecLJAHIj" />
+        <ref role="1NtTu8" to="talm:7kGecLJAHIj" resolve="statementList" />
       </node>
       <node concept="3F0ifn" id="7kGecLJAHIo" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -836,7 +836,7 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="1d7Vth$ti4F" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:1d7Vth$thBR" />
+        <ref role="1NtTu8" to="talm:1d7Vth$thBR" resolve="dropsFrame" />
       </node>
       <node concept="3F0ifn" id="1MwzSDdaZ97" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -864,7 +864,7 @@
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F1sOY" id="1d7VthAjA65" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:1d7VthAj_Xw" />
+        <ref role="1NtTu8" to="talm:1d7VthAj_Xw" resolve="nodeToBreak" />
       </node>
       <node concept="3F0ifn" id="1d7VthAjA6h" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -884,7 +884,7 @@
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F1sOY" id="1d7VthAkVzS" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:1d7VthAkSRa" />
+        <ref role="1NtTu8" to="talm:1d7VthAkSRa" resolve="nodesToBreak" />
       </node>
       <node concept="3F0ifn" id="1d7VthAkV$4" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -940,7 +940,7 @@
           <property role="3F0ifm" value="current:" />
         </node>
         <node concept="3F1sOY" id="1d7VthBX_En" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:1d7VthBX_mh" />
+          <ref role="1NtTu8" to="talm:1d7VthBX_mh" resolve="currentSteppable" />
         </node>
         <node concept="l2Vlx" id="1d7VthBX_mS" role="2iSdaV" />
       </node>
@@ -958,7 +958,7 @@
           <property role="3F0ifm" value="steppables:" />
         </node>
         <node concept="3F1sOY" id="1d7VthBX_Ev" role="3EZMnx">
-          <ref role="1NtTu8" to="talm:1d7VthBX_mD" />
+          <ref role="1NtTu8" to="talm:1d7VthBX_mD" resolve="steppables" />
         </node>
         <node concept="l2Vlx" id="1d7VthBX_vO" role="2iSdaV" />
       </node>
@@ -985,7 +985,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="$YquQ$An_F" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:$YquQ$Abqm" />
+        <ref role="1NtTu8" to="talm:$YquQ$Abqm" resolve="node" />
       </node>
       <node concept="3F0ifn" id="$YquQ$An_V" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1064,7 +1064,7 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="1iCGBv" id="1brT1dAJ5Ty" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:1brT1dAJ5Ra" />
+        <ref role="1NtTu8" to="talm:1brT1dAJ5Ra" resolve="concept" />
         <node concept="1sVBvm" id="1brT1dAJ5Tz" role="1sWHZn">
           <node concept="3F0A7n" id="1brT1dAJ5TK" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -1090,7 +1090,7 @@
         <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
       </node>
       <node concept="3F1sOY" id="1brT1dC7$wV" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:1brT1dC7$wS" />
+        <ref role="1NtTu8" to="talm:1brT1dC7$wS" resolve="mappStackFrame" />
       </node>
       <node concept="3F0ifn" id="1brT1dC5CyI" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -1103,7 +1103,7 @@
                   <node concept="2OqwBi" id="6xcreYbRx8O" role="2Oq$k0">
                     <node concept="pncrf" id="6xcreYbRx8P" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="6xcreYbRx8Q" role="2OqNvi">
-                      <ref role="3TtcxE" to="talm:6xcreYbKLry" />
+                      <ref role="3TtcxE" to="talm:6xcreYbKLry" resolve="mappings" />
                     </node>
                   </node>
                   <node concept="3GX2aA" id="6xcreYbRx8R" role="2OqNvi" />
@@ -1114,7 +1114,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="6xcreYbMM7Z" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:6xcreYbKLry" />
+        <ref role="1NtTu8" to="talm:6xcreYbKLry" resolve="mappings" />
         <node concept="2iRkQZ" id="6w4ttwTa59j" role="2czzBx" />
         <node concept="lj46D" id="6xcreYbOGWd" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1128,7 +1128,7 @@
                   <node concept="2OqwBi" id="6xcreYbOHeL" role="2Oq$k0">
                     <node concept="pncrf" id="6xcreYbOH9l" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="6xcreYbOHQI" role="2OqNvi">
-                      <ref role="3TtcxE" to="talm:6xcreYbKLry" />
+                      <ref role="3TtcxE" to="talm:6xcreYbKLry" resolve="mappings" />
                     </node>
                   </node>
                   <node concept="3GX2aA" id="6xcreYbQyzK" role="2OqNvi" />
@@ -1175,7 +1175,7 @@
       </node>
       <node concept="3F2HdR" id="2H$DUA8BJQi" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="talm:2H$DUA8qzL9" />
+        <ref role="1NtTu8" to="talm:2H$DUA8qzL9" resolve="parts" />
         <node concept="l2Vlx" id="2H$DUA8BJQj" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="3eo4myoRNlr" role="3EZMnx">
@@ -1204,7 +1204,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="EAFuLF3fU_" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:EAFuLF3fNh" />
+        <ref role="1NtTu8" to="talm:EAFuLF3fNh" resolve="watchableProvider" />
       </node>
       <node concept="3F0ifn" id="EAFuLF3fUI" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1239,7 +1239,7 @@
       </node>
       <node concept="3F2HdR" id="EAFuLFd_Ef" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="talm:EAFuLFd_E5" />
+        <ref role="1NtTu8" to="talm:EAFuLFd_E5" resolve="filters" />
         <node concept="l2Vlx" id="EAFuLFd_Eg" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="EAFuLFckJq" role="3EZMnx">
@@ -1372,7 +1372,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="EAFuLFdgzg" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:EAFuLFdgyM" />
+        <ref role="1NtTu8" to="talm:EAFuLFdgyM" resolve="name" />
       </node>
       <node concept="l2Vlx" id="EAFuLFdgyY" role="2iSdaV" />
     </node>
@@ -1394,7 +1394,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3aTeyG2K$NT" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3aTeyG2Hpya" />
+        <ref role="1NtTu8" to="talm:3aTeyG2Hpya" resolve="names" />
       </node>
       <node concept="l2Vlx" id="3aTeyG2Hpym" role="2iSdaV" />
     </node>
@@ -1420,7 +1420,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3BC$6wjgJaL" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjgiXr" />
+        <ref role="1NtTu8" to="talm:3BC$6wjgiXr" resolve="highlightedNode" />
         <node concept="ljvvj" id="3BC$6wjgJaM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1432,7 +1432,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3BC$6wjgJ73" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjgjWY" />
+        <ref role="1NtTu8" to="talm:3BC$6wjgjWY" resolve="identifier" />
         <node concept="ljvvj" id="3BC$6wjgJao" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1444,7 +1444,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3BC$6wjgJbz" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjgjx5" />
+        <ref role="1NtTu8" to="talm:3BC$6wjgjx5" resolve="value" />
         <node concept="ljvvj" id="3BC$6wjgJb$" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1456,7 +1456,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3BC$6wjgJc4" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjgjJ1" />
+        <ref role="1NtTu8" to="talm:3BC$6wjgjJ1" resolve="category" />
         <node concept="ljvvj" id="3BC$6wjgJc5" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1468,7 +1468,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3BC$6wjgJcD" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjgjja" />
+        <ref role="1NtTu8" to="talm:3BC$6wjgjja" resolve="icon" />
         <node concept="ljvvj" id="3BC$6wjgJcE" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1487,7 +1487,7 @@
         <property role="3F0ifm" value="map" />
       </node>
       <node concept="1iCGBv" id="3BC$6wkg761" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:h3TV0KE" />
+        <ref role="1NtTu8" to="talm:h3TV0KE" resolve="conceptDeclaration" />
         <node concept="1sVBvm" id="3BC$6wkg762" role="1sWHZn">
           <node concept="3F0A7n" id="3BC$6wkg76g" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -1499,7 +1499,7 @@
         <property role="3F0ifm" value="from" />
       </node>
       <node concept="3F1sOY" id="3BC$6wkds02" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjAnJq" />
+        <ref role="1NtTu8" to="talm:3BC$6wjAnJq" resolve="type" />
       </node>
       <node concept="l2Vlx" id="3BC$6wjAJAY" role="2iSdaV" />
     </node>
@@ -1512,13 +1512,13 @@
         <property role="3F0ifm" value="map" />
       </node>
       <node concept="3F1sOY" id="3BC$6wkdG6s" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wjAnJq" />
+        <ref role="1NtTu8" to="talm:3BC$6wjAnJq" resolve="type" />
       </node>
       <node concept="3F0ifn" id="3BC$6wkdG6t" role="3EZMnx">
         <property role="3F0ifm" value="from" />
       </node>
       <node concept="3F1sOY" id="3BC$6wkdGfW" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:3BC$6wkdFdc" />
+        <ref role="1NtTu8" to="talm:3BC$6wkdFdc" resolve="node" />
       </node>
       <node concept="l2Vlx" id="3BC$6wkdG6v" role="2iSdaV" />
     </node>
@@ -1556,7 +1556,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="38XGACGsRtW" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:38XGACG$o4Y" />
+        <ref role="1NtTu8" to="talm:38XGACG$o4Y" resolve="children" />
       </node>
       <node concept="3F0ifn" id="38XGACG_Q4U" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -1580,7 +1580,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="38XGACG$o60" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:38XGACG$o59" />
+        <ref role="1NtTu8" to="talm:38XGACG$o59" resolve="rootValue" />
       </node>
       <node concept="3F0ifn" id="38XGACG_Q4u" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1621,7 +1621,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="38XGACGB$bR" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:38XGACGBtjn" />
+        <ref role="1NtTu8" to="talm:38XGACGBtjn" resolve="variable" />
       </node>
       <node concept="3F0ifn" id="38XGACGB$cg" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -1642,7 +1642,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="38XGACGB$cG" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:38XGACGBtjl" />
+        <ref role="1NtTu8" to="talm:38XGACGBtjl" resolve="rootValue" />
       </node>
       <node concept="3F0ifn" id="38XGACGB$10" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1670,7 +1670,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6xcreYbtkDm" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:6xcreYbtkzT" />
+        <ref role="1NtTu8" to="talm:6xcreYbtkzT" resolve="name" />
       </node>
       <node concept="l2Vlx" id="6xcreYbtkDn" role="2iSdaV" />
     </node>
@@ -1693,7 +1693,7 @@
       </node>
       <node concept="3F2HdR" id="6xcreYbvkvk" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="talm:6xcreYbvktF" />
+        <ref role="1NtTu8" to="talm:6xcreYbvktF" resolve="filters" />
         <node concept="l2Vlx" id="6xcreYbvkvl" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="6xcreYbvkvm" role="3EZMnx">
@@ -1716,7 +1716,7 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="6xcreYbKZZT" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:6xcreYbKZZR" />
+        <ref role="1NtTu8" to="talm:6xcreYbKZZR" resolve="element" />
       </node>
       <node concept="l2Vlx" id="6xcreYbKZZo" role="2iSdaV" />
     </node>
@@ -1783,13 +1783,13 @@
         <property role="3F0ifm" value="parse number from" />
       </node>
       <node concept="3F1sOY" id="5nt$m6oDym3" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:5nt$m6oDuK1" />
+        <ref role="1NtTu8" to="talm:5nt$m6oDuK1" resolve="variable" />
       </node>
       <node concept="3F0ifn" id="5nt$m6oDymY" role="3EZMnx">
         <property role="3F0ifm" value="of type" />
       </node>
       <node concept="3F1sOY" id="5nt$m6oDylQ" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:5nt$m6oDuJS" />
+        <ref role="1NtTu8" to="talm:5nt$m6oDuJS" resolve="type" />
       </node>
       <node concept="l2Vlx" id="5nt$m6oDylA" role="2iSdaV" />
     </node>

@@ -101,6 +101,7 @@
 	<!-- mbeddr.platform -->
 	<property name="com.mbeddr.platform.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.platform" />    
 	<property name="com.mbeddr.platform.build-file.name" value="build.xml" /> 
+	<property name="com.mbeddr.platform.distribution-build-file.name" value="build-distribution.xml" />
 	<property name="com.mbeddr.platform.test-build-file.name" value="build-ts-tests.xml" /> 
 	<property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
 
@@ -115,6 +116,13 @@
 		<antcall target="clean" />		
 		<antcall target="build-languages" />	
 	</target>
+	
+	<target name="clean-and-build-platform" >
+		<antcall target="build-allScripts" />
+		<antcall target="clean-platform-languages" />		
+		<antcall target="build-sl-all-and-platform" />	
+	</target>
+	
 
 	<target name="clean">
 		<antcall target="clean-languages" />
@@ -172,15 +180,22 @@
 	</target>	  
 
 	<target name="clean-languages">
+		<antcall target="clean-platform-languages" />
+
+		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
+	</target>
+	
+	<target name="clean-platform-languages">
 		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${clean-generated-code.task}" />
 
 		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />   
 
-		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
-		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
-	</target>    
+		<ant antfile="${com.mbeddr.platform.distribution-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
+		<!-- distribution build file has no ${clean-generated-code.task} (= cleanSources) -->
+	</target>   
 
 	<target name="build-allScripts">
 		<ant antfile="${com.mbeddr.allScripts.build-file.name}" dir="${com.mbeddr.allScripts.build-file.location}" target="${generate-code.task}" />
@@ -210,6 +225,10 @@
 		<antcall target="build-spawner" />
 	</target>  
 
+	<target name="build-platform-distribution">
+		<ant antfile="${com.mbeddr.platform.distribution-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.platform.distribution-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />
+	</target>
 
 	<target name="build-mbeddr">
 		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
@@ -228,6 +247,12 @@
 		<ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
 	</target>	
 
+	<target name="build-sl-all-and-platform" >
+		<antcall target="build-sl-all" />
+		<antcall target="build-platform" />
+		<antcall target="build-platform-distribution" />
+	</target> 
+	
 	<target name="build-languages" >
 		<antcall target="build-sl-all" />
 		<antcall target="build-platform-and-mbeddr" />
@@ -235,6 +260,7 @@
 
 	<target name="build-platform-and-mbeddr" >
 		<antcall target="build-platform" />
+		<antcall target="build-platform-distribution" />
 		<antcall target="build-mbeddr" />
 	</target>
 

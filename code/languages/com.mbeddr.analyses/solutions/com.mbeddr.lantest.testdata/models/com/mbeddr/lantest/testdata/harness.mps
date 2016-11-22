@@ -125,9 +125,7 @@
         <child id="3262406899569270462" name="seedChooser" index="1$QBHO" />
         <child id="3516382903881173796" name="langSpecificConfig" index="3CPbyU" />
       </concept>
-      <concept id="7200401247512655992" name="com.mbeddr.mpsutil.lantest.structure.RandomDescendantSeedFromLanguages" flags="ng" index="1_EoUL">
-        <child id="7200401247512655993" name="langs" index="1_EoUK" />
-      </concept>
+      <concept id="3262406899569270472" name="com.mbeddr.mpsutil.lantest.structure.RandomDescendantSeed" flags="ng" index="1$QBG2" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
@@ -242,18 +240,18 @@
   </node>
   <node concept="13Gd1p" id="6fGXG$6dmgU">
     <property role="13GOwg" value="7" />
-    <property role="13Gz9I" value="1000" />
+    <property role="13Gz9I" value="100" />
     <property role="TrG5h" value="config" />
     <property role="1s6Q3N" value="2" />
     <property role="20wqWe" value="5" />
     <node concept="BaHAS" id="6fGXG$6dmgV" role="1saM0L">
-      <property role="BaHAW" value="res" />
+      <property role="BaHAW" value="com.mbeddr.lantest.testdata.res" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="1emTa" id="6fGXG$6dmjf" role="1emjp" />
     <node concept="3CPef5" id="6fGXG$6dmjk" role="3CPbyU" />
     <node concept="BaHAS" id="6fGXG$6dmgZ" role="1llUH_">
-      <property role="BaHAW" value="tmp" />
+      <property role="BaHAW" value="com.mbeddr.lantest.testdata.temp" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="fhwn3" id="6fGXG$6dmh8" role="fhwmk">
@@ -265,11 +263,7 @@
     <node concept="cHURJ" id="6fGXG$6dmjn" role="cGTU6">
       <property role="cHUK8" value="com.mbeddr.core.*" />
     </node>
-    <node concept="1_EoUL" id="6fGXG$6hKOE" role="1$QBHO">
-      <node concept="cHURJ" id="6fGXG$6hKOG" role="1_EoUK">
-        <property role="cHUK8" value="com.mbeddr.ext.statemachines" />
-      </node>
-    </node>
+    <node concept="1$QBG2" id="3cUcim$dilZ" role="1$QBHO" />
   </node>
 </model>
 

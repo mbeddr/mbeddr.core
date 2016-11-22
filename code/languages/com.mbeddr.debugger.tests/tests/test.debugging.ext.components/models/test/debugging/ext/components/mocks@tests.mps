@@ -7,13 +7,13 @@
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
     <use id="36a565f1-3fa0-42d6-baac-f87e209c9789" name="com.mbeddr.ext.components.mock" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="0" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -73,6 +73,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -199,6 +200,9 @@
       <concept id="466603768608442377" name="com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" flags="ng" index="30IBQI" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
+        <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
       <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
@@ -353,6 +357,14 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="5u1lOcHSNt3" role="c0Qz3">
+        <node concept="3t9XKO" id="3cUcim$fiWO" role="3XIRFZ">
+          <ref role="3t9XKR" node="5u1lOcHSy9a" resolve="instances" />
+        </node>
+        <node concept="3XISUE" id="3cUcim$fiWU" role="3XIRFZ">
+          <node concept="3cQ7KT" id="3cUcim$fj7t" role="lGtFl">
+            <property role="TrG5h" value="afterComponentInit" />
+          </node>
+        </node>
         <node concept="1_9egQ" id="5u1lOcHSNt4" role="3XIRFZ">
           <node concept="1AmG6P" id="5u1lOcHSNt5" role="1_9egR">
             <ref role="2YB7zn" node="5u1lOcHSy91" resolve="doSomething" />
@@ -791,7 +803,7 @@
       <node concept="3clFbS" id="5u1lOcHSPzu" role="3clF47" />
       <node concept="3sdZbQ" id="5u1lOcHSPzK" role="3scror">
         <node concept="3sdZbA" id="3NJ7rfn0eIW" role="3sdZbB">
-          <ref role="3sa5fj" node="3NJ7rfn0eIQ" resolve="afterComponentInit" />
+          <ref role="3sa5fj" node="3cUcim$fj7t" resolve="afterComponentInit" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5u1lOcHT2ka" role="3F5AM1">

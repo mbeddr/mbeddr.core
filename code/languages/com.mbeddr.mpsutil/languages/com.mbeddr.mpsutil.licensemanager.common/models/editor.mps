@@ -2,7 +2,7 @@
 <model ref="r:bc145e93-c03d-4a07-8073-c1ff6ef2fc90(com.mbeddr.mpsutil.licensemanager.common.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -126,10 +126,10 @@
     <node concept="3EZMnI" id="4w7It07pbN3" role="2wV5jI">
       <node concept="l2Vlx" id="4w7It07pbN4" role="2iSdaV" />
       <node concept="1iCGBv" id="4w7It07pbMB" role="3EZMnx">
-        <ref role="1NtTu8" to="lq3a:4w7It07pbHt" />
+        <ref role="1NtTu8" to="lq3a:4w7It07pbHt" resolve="editor" />
         <node concept="1sVBvm" id="4w7It07pbMD" role="1sWHZn">
           <node concept="1iCGBv" id="4w7It07pbMN" role="2wV5jI">
-            <ref role="1NtTu8" to="tpc2:gXXX56I" />
+            <ref role="1NtTu8" to="tpc2:gXXX56I" resolve="conceptDeclaration" />
             <node concept="1sVBvm" id="4w7It07pbMP" role="1sWHZn">
               <node concept="3F0A7n" id="4w7It07pbMZ" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -148,7 +148,7 @@
                 <node concept="2OqwBi" id="1K5OvKut9m9" role="3cqZAk">
                   <node concept="pncrf" id="1K5OvKut9jU" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6c5_CJDbGhO" role="2OqNvi">
-                    <ref role="3Tt5mk" to="lq3a:4w7It07pbHt" />
+                    <ref role="3Tt5mk" to="lq3a:4w7It07pbHt" resolve="editor" />
                   </node>
                 </node>
               </node>
@@ -163,7 +163,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4w7It07pbNE" role="3EZMnx">
-        <ref role="1NtTu8" to="lq3a:4w7It07pbMt" />
+        <ref role="1NtTu8" to="lq3a:4w7It07pbMt" resolve="feature" />
       </node>
     </node>
   </node>
@@ -173,7 +173,7 @@
     <node concept="3EZMnI" id="4w7It07pjES" role="2wV5jI">
       <node concept="l2Vlx" id="4w7It07pjET" role="2iSdaV" />
       <node concept="1iCGBv" id="4w7It07pjEU" role="3EZMnx">
-        <ref role="1NtTu8" to="lq3a:4w7It07pjcA" />
+        <ref role="1NtTu8" to="lq3a:4w7It07pjcA" resolve="intention" />
         <node concept="1sVBvm" id="4w7It07pjEV" role="1sWHZn">
           <node concept="3F0A7n" id="4w7It07pkN$" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -182,7 +182,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4w7It07pjEZ" role="3EZMnx">
-        <ref role="1NtTu8" to="lq3a:4w7It07pbMt" />
+        <ref role="1NtTu8" to="lq3a:4w7It07pbMt" resolve="feature" />
       </node>
     </node>
   </node>
@@ -329,7 +329,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="4w7It07pdxz" role="3EZMnx">
-        <ref role="1NtTu8" to="lq3a:4w7It07pbAN" />
+        <ref role="1NtTu8" to="lq3a:4w7It07pbAN" resolve="elements" />
         <node concept="2iRkQZ" id="4w7It07pdx_" role="2czzBx" />
       </node>
     </node>

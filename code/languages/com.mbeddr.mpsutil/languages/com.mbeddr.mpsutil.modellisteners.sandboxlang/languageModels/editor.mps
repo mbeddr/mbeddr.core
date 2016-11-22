@@ -2,7 +2,7 @@
 <model ref="r:0873c8cc-058c-434d-a138-33cb24019394(com.mbeddr.mpsutil.modellisteners.sandboxlang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -93,7 +93,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="5iW7uqbJNry" role="3EZMnx">
-          <ref role="1NtTu8" to="64jm:52ZF9D3bos4" />
+          <ref role="1NtTu8" to="64jm:52ZF9D3bos4" resolve="original" />
           <node concept="l2Vlx" id="5iW7uqbJNrz" role="2czzBx" />
           <node concept="pj6Ft" id="5iW7uqbJNr$" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -123,7 +123,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="5iW7uqbJNrH" role="3EZMnx">
-          <ref role="1NtTu8" to="64jm:52ZF9D3bosa" />
+          <ref role="1NtTu8" to="64jm:52ZF9D3bosa" resolve="mirror" />
           <node concept="l2Vlx" id="5iW7uqbJNrI" role="2czzBx" />
           <node concept="pj6Ft" id="5iW7uqbJNrJ" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -151,7 +151,7 @@
             </node>
           </node>
           <node concept="1iCGBv" id="5iW7uqbJNA4" role="3EZMnx">
-            <ref role="1NtTu8" to="64jm:5iW7uqbJsoP" />
+            <ref role="1NtTu8" to="64jm:5iW7uqbJsoP" resolve="reference1" />
             <node concept="1sVBvm" id="5iW7uqbJNA6" role="1sWHZn">
               <node concept="3F0A7n" id="5iW7uqbJNGj" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -178,7 +178,7 @@
             </node>
           </node>
           <node concept="1iCGBv" id="5iW7uqbJNOT" role="3EZMnx">
-            <ref role="1NtTu8" to="64jm:5iW7uqbJsrh" />
+            <ref role="1NtTu8" to="64jm:5iW7uqbJsrh" resolve="reference2" />
             <node concept="1sVBvm" id="5iW7uqbJNOU" role="1sWHZn">
               <node concept="3F0A7n" id="5iW7uqbJNOV" role="2wV5jI">
                 <property role="1Intyy" value="true" />

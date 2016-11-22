@@ -2,13 +2,13 @@
 <model ref="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9/r:fadae3c8-e073-4d5a-a008-cc0a4e7d5c79(com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="s4al" ref="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9/r:193e03e1-dca4-4048-aad0-de84622e3490(com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.structure)" />
-    <import index="tpen" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.editor)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -100,7 +100,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4PqLM5kY3Pp" role="3EZMnx">
-        <ref role="1NtTu8" to="s4al:4PqLM5kY3nG" />
+        <ref role="1NtTu8" to="s4al:4PqLM5kY3nG" resolve="canHandleFunction" />
         <node concept="pVoyu" id="4PqLM5kY3TY" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -115,7 +115,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4PqLM5kY3PH" role="3EZMnx">
-        <ref role="1NtTu8" to="s4al:4PqLM5kY3nJ" />
+        <ref role="1NtTu8" to="s4al:4PqLM5kY3nJ" resolve="handleFunction" />
         <node concept="pVoyu" id="4PqLM5kY3XD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -143,7 +143,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2VC4eVY78hD" role="3EZMnx">
-        <ref role="1NtTu8" to="s4al:2VC4eVY78gf" />
+        <ref role="1NtTu8" to="s4al:2VC4eVY78gf" resolve="requestHandler" />
         <node concept="1sVBvm" id="2VC4eVY78hE" role="1sWHZn">
           <node concept="3F0A7n" id="2VC4eVY78hK" role="2wV5jI">
             <property role="1Intyy" value="true" />
