@@ -59223,16 +59223,19 @@
                 <node concept="3cmrfG" id="lbcyKTfcsf" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
-                <node concept="3cpWsd" id="lbcyKTfgb1" role="37wK5m">
-                  <node concept="3cmrfG" id="lbcyKTfgbc" role="3uHU7w">
-                    <property role="3cmrfH" value="2" />
+                <node concept="3cpWsd" id="4pGEa_15yAa" role="37wK5m">
+                  <node concept="3cmrfG" id="4pGEa_15yGI" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
                   </node>
-                  <node concept="2OqwBi" id="lbcyKTfdtC" role="3uHU7B">
-                    <node concept="37vLTw" id="lbcyKTfd1k" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4pGEa_15wDH" role="3uHU7B">
+                    <node concept="37vLTw" id="4pGEa_15vW2" role="2Oq$k0">
                       <ref role="3cqZAo" node="lbcyKTeKlv" resolve="fileName" />
                     </node>
-                    <node concept="liA8E" id="lbcyKTffbS" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                    <node concept="liA8E" id="4pGEa_15xl6" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
+                      <node concept="Xl_RD" id="4pGEa_15xB8" role="37wK5m">
+                        <property role="Xl_RC" value="." />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -59240,7 +59243,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2He37rdIBTB" role="3cqZAp" />
         <node concept="3cpWs8" id="lbcyKTj9_B" role="3cqZAp">
           <node concept="3cpWsn" id="lbcyKTj9_E" role="3cpWs9">
             <property role="TrG5h" value="unitNameWithModelPrefix" />
