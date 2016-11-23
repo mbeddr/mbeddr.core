@@ -5684,6 +5684,41 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="5HNOmcCfykC" role="3cqZAp">
+          <node concept="3SKdUq" id="5HNOmcCfykE" role="3SKWNk">
+            <property role="3SKdUp" value="FIXME any idea about the context to take proper repository from? Global repo instance is a workaround here to get rid of deprecated API use" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5HNOmcCfsCG" role="3cqZAp">
+          <node concept="3cpWsn" id="5HNOmcCfsCH" role="3cpWs9">
+            <property role="TrG5h" value="locationNode" />
+            <node concept="3uibUv" id="5HNOmcCfsCC" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="2OqwBi" id="5HNOmcCfueL" role="33vP2m">
+              <node concept="2OqwBi" id="5HNOmcCfsCI" role="2Oq$k0">
+                <node concept="2OqwBi" id="5HNOmcCfsCJ" role="2Oq$k0">
+                  <node concept="3cpWs2" id="5HNOmcCfsCK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6HGoZgQ1ksA" resolve="mpsBreakpoint" />
+                  </node>
+                  <node concept="liA8E" id="5HNOmcCfsCL" role="2OqNvi">
+                    <ref role="37wK5l" node="2Zy_zYsMkH5" resolve="getLocationWhereToBreak" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5HNOmcCfsCM" role="2OqNvi">
+                  <ref role="37wK5l" to="rw00:3SnNvqCaJWi" resolve="getNodePointer" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5HNOmcCfv6Z" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                <node concept="2YIFZM" id="5HNOmcCfwFz" role="37wK5m">
+                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                  <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2cOIosl6kLn" role="3cqZAp">
           <node concept="3cpWsn" id="2cOIosl6kLo" role="3cpWs9">
             <property role="TrG5h" value="rootNode" />
@@ -5696,18 +5731,8 @@
               </node>
               <node concept="liA8E" id="2cOIosl6t1B" role="2OqNvi">
                 <ref role="37wK5l" node="2cOIosl6t0z" resolve="getRoot" />
-                <node concept="2OqwBi" id="2cOIosl6t11" role="37wK5m">
-                  <node concept="2OqwBi" id="2cOIosl6kLr" role="2Oq$k0">
-                    <node concept="3cpWs2" id="2cOIosl6kLs" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6HGoZgQ1ksA" resolve="mpsBreakpoint" />
-                    </node>
-                    <node concept="liA8E" id="2cOIosl6kLt" role="2OqNvi">
-                      <ref role="37wK5l" node="2Zy_zYsMkH5" resolve="getLocationWhereToBreak" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="2cOIosl6t16" role="2OqNvi">
-                    <ref role="37wK5l" to="rw00:3SnNvqCaJWo" resolve="getSNode" />
-                  </node>
+                <node concept="37vLTw" id="5HNOmcCfsCN" role="37wK5m">
+                  <ref role="3cqZAo" node="5HNOmcCfsCH" resolve="locationNode" />
                 </node>
               </node>
             </node>
@@ -5748,18 +5773,8 @@
                 <node concept="2ShNRf" id="2cOIosl6t1T" role="37wK5m">
                   <node concept="1pGfFk" id="2cOIosl6t1X" role="2ShVmc">
                     <ref role="37wK5l" node="57r6BQpGnfH" resolve="TNodeProxy" />
-                    <node concept="2OqwBi" id="2cOIosl6kNS" role="37wK5m">
-                      <node concept="2OqwBi" id="2cOIosl6kNi" role="2Oq$k0">
-                        <node concept="3cpWs2" id="2cOIosl6kMX" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6HGoZgQ1ksA" resolve="mpsBreakpoint" />
-                        </node>
-                        <node concept="liA8E" id="2cOIosl6kNo" role="2OqNvi">
-                          <ref role="37wK5l" node="2Zy_zYsMkH5" resolve="getLocationWhereToBreak" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="2cOIosl6kNX" role="2OqNvi">
-                        <ref role="37wK5l" to="rw00:3SnNvqCaJWo" resolve="getSNode" />
-                      </node>
+                    <node concept="37vLTw" id="5HNOmcCfsCO" role="37wK5m">
+                      <ref role="3cqZAo" node="5HNOmcCfsCH" resolve="locationNode" />
                     </node>
                   </node>
                 </node>
@@ -58102,19 +58117,15 @@
             <node concept="3cpWs8" id="3dTvrlqEnu9" role="3cqZAp">
               <node concept="3cpWsn" id="3dTvrlqEnua" role="3cpWs9">
                 <property role="TrG5h" value="sTraceConcept" />
-                <node concept="3uibUv" id="3dTvrlqEntq" role="1tU5fm">
-                  <ref role="3uigEE" to="c17a:~SConcept" resolve="SConcept" />
+                <node concept="3uibUv" id="5HNOmcCfgAS" role="1tU5fm">
+                  <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
                 </node>
-                <node concept="2YIFZM" id="3dTvrlqEnub" role="33vP2m">
-                  <ref role="37wK5l" to="2k9e:~MetaAdapterFactoryByName.getConcept(java.lang.String):org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
-                  <ref role="1Pybhc" to="2k9e:~MetaAdapterFactoryByName" resolve="MetaAdapterFactoryByName" />
-                  <node concept="2OqwBi" id="3dTvrlqEnuc" role="37wK5m">
-                    <node concept="2GrUjf" id="3dTvrlqEnud" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="6peY0n894Yi" resolve="trace" />
-                    </node>
-                    <node concept="liA8E" id="3dTvrlqEnue" role="2OqNvi">
-                      <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
-                    </node>
+                <node concept="2OqwBi" id="3dTvrlqEnuc" role="33vP2m">
+                  <node concept="2GrUjf" id="3dTvrlqEnud" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="6peY0n894Yi" resolve="trace" />
+                  </node>
+                  <node concept="liA8E" id="3dTvrlqEnue" role="2OqNvi">
+                    <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
                   </node>
                 </node>
               </node>

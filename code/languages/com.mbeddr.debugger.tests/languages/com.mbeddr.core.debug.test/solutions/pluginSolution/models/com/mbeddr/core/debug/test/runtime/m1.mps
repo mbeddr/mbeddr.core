@@ -34,6 +34,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1154,12 +1155,24 @@
         <node concept="3clFbF" id="30gDo8BIkHD" role="3cqZAp">
           <node concept="1PxgMI" id="30gDo8BIkHE" role="3clFbG">
             <ref role="1m5ApE" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-            <node concept="2OqwBi" id="30gDo8BIkHG" role="1m5AlR">
-              <node concept="37vLTw" id="4WqJ5ShBNP5" role="2Oq$k0">
-                <ref role="3cqZAo" node="30gDo8BIaOI" resolve="myLocation" />
+            <node concept="2OqwBi" id="5DiazfwmEps" role="1m5AlR">
+              <node concept="2OqwBi" id="30gDo8BIkHG" role="2Oq$k0">
+                <node concept="37vLTw" id="4WqJ5ShBNP5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="30gDo8BIaOI" resolve="myLocation" />
+                </node>
+                <node concept="liA8E" id="30gDo8BIkHI" role="2OqNvi">
+                  <ref role="37wK5l" to="rw00:3SnNvqCaJWi" resolve="getNodePointer" />
+                </node>
               </node>
-              <node concept="liA8E" id="30gDo8BIkHI" role="2OqNvi">
-                <ref role="37wK5l" to="rw00:3SnNvqCaJWo" resolve="getSNode" />
+              <node concept="liA8E" id="5DiazfwmEVj" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                <node concept="2YIFZM" id="5DiazfwmDxh" role="37wK5m">
+                  <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.getProjectRepository(com.intellij.openapi.project.Project):org.jetbrains.mps.openapi.module.SRepository" resolve="getProjectRepository" />
+                  <node concept="1rXfSq" id="5DiazfwmD_g" role="37wK5m">
+                    <ref role="37wK5l" to="rw00:3SnNvqCaK2f" resolve="getProject" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
