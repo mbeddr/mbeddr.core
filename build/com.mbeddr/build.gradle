@@ -1,5 +1,3 @@
-import org.apache.tools.ant.taskdefs.condition.Os
-
 // setting mbeddrMajor
 if (project.hasProperty('mbeddrMajor')) {
     ext.mbeddrMajor = project.getProperty('mbeddrMajor')
@@ -14,18 +12,14 @@ if (project.hasProperty('mbeddrMinor')) {
     ext.mbeddrMinor = "0"
 }
 
-ext.mbeddrBuildNumber = "${mbeddrMajor}.${mbeddrMinor}.${getGitCommitCount()}.g${getGitShortCommitHash()}"
-
 // setting mbeddrBuild
 if (project.hasProperty('mbeddrBuild')) {
     ext.mbeddrBuild = project.getProperty('mbeddrBuild')
 } else {
-    ext.mbeddrBuild = getGitBranch()
+    ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
 }
 
-if (ext.mbeddrBuild != 'master') {
-    ext.mbeddrBuildNumber = "${mbeddrBuild}.${mbeddrBuildNumber}"
-}
+ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
 
 // path variables
 ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
@@ -68,37 +62,6 @@ subprojects {
     }
 }
 
-private static getGitShortCommitHash() {
-    return getCommandOutput('git rev-parse --short HEAD')
-}
-
-private static int getGitCommitCount() {
-    return getCommandOutput('git rev-list --count HEAD').toInteger()
-}
-
-/**
- * Gets the current Git branch from Git or from an environment variable (in the future) with slashes ('/') replaced by
- * dashes ('-'). If the branch name cannot be determined, throws GradleException. Never empty, never null.
- *
- * @return the current branch name with slashes ('/') replaced by dashes ('-')
- * @throws GradleException if the branch name cannot be determined
- */
-private static String getGitBranch() throws GradleException {
-    String gitBranch = getCommandOutput('git rev-parse --abbrev-ref HEAD').replace("/", "-")
-
-    if (gitBranch == null || gitBranch.empty) {
-        throw new GradleException('Could not determine Git branch name')
-    }
-
-    return gitBranch
-}
-
-private static String getCommandOutput(String command) {
-    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        command = 'cmd /c ' + command
-    }
-    return command.execute().in.text.trim()
-}
 
 File scriptFile(String relativePath) {
     new File("$rootDir/scripts/$relativePath")

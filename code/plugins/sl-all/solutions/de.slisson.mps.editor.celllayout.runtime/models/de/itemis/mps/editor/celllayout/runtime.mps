@@ -6849,6 +6849,37 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="70aAUsa8DYS" role="jymVt" />
+    <node concept="3clFb_" id="70aAUsa8IKR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isBaseLineCell" />
+      <node concept="10P_77" id="70aAUsa8IKS" role="3clF45" />
+      <node concept="3Tm1VV" id="70aAUsa8IKT" role="1B3o_S" />
+      <node concept="2AHcQZ" id="70aAUsa8IKX" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="70aAUsa8IKY" role="3clF47">
+        <node concept="3clFbF" id="70aAUsa8QC3" role="3cqZAp">
+          <node concept="2OqwBi" id="70aAUsa8S_V" role="3clFbG">
+            <node concept="2OqwBi" id="70aAUsa8RrN" role="2Oq$k0">
+              <node concept="37vLTw" id="70aAUsa8QC2" role="2Oq$k0">
+                <ref role="3cqZAo" node="JPngvNsRBQ" resolve="myCell" />
+              </node>
+              <node concept="liA8E" id="70aAUsa8ShD" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="70aAUsa8U7C" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="10M0yZ" id="70aAUsa8Ut_" role="37wK5m">
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.BASE_LINE_CELL" resolve="BASE_LINE_CELL" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="JPngvNsQE6" role="1B3o_S" />
     <node concept="3uibUv" id="JPngvNsQNf" role="EKbjA">
       <ref role="3uigEE" to="xggr:ZjQ6tpoGLj" resolve="ILayoutable" />
