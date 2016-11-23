@@ -47,9 +47,9 @@
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
         <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
         <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
-        <property id="1229194968596" name="caretPosition" index="LIFWa" />
         <property id="1229194968595" name="cellId" index="LIFWd" />
         <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
+        <property id="1229432188737" name="isLastPosition" index="ZRATv" />
       </concept>
       <concept id="1227182079811" name="jetbrains.mps.lang.test.structure.TypeKeyStatement" flags="nn" index="2TK7Tu">
         <property id="1227184461946" name="keys" index="2TTd_B" />
@@ -190,14 +190,14 @@
                 <ref role="3ZUYvu" node="5YWfxoA$vxx" resolve="y" />
               </node>
             </node>
-            <node concept="3TlMh9" id="5YWfxoA$wMQ" role="eGNQ_">
+            <node concept="3TlMh9" id="7pDJl$PXJ1C" role="eGNQ_">
               <property role="2hmy$m" value="42" />
-              <node concept="LIFWc" id="5YWfxoA$yCB" role="lGtFl">
-                <property role="LIFWa" value="1" />
+              <node concept="LIFWc" id="7pDJl$PXJDy" role="lGtFl">
+                <property role="ZRATv" value="true" />
                 <property role="OXtK3" value="true" />
                 <property role="p6zMq" value="0" />
                 <property role="p6zMs" value="2" />
-                <property role="LIFWd" value="property_value" />
+                <property role="LIFWd" value="fourty_two" />
               </node>
             </node>
             <node concept="3TlMh9" id="7pDJl$PTBJ9" role="eGNQ_">
