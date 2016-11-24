@@ -11080,6 +11080,75 @@
         <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
       </node>
     </node>
+    <node concept="3clFb_" id="14DmiwrcwYd" role="jymVt">
+      <property role="TrG5h" value="evaluateWithContextAndCoverage" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="14DmiwrcwYe" role="3clF47">
+        <node concept="3clFbF" id="14DmiwrcwYk" role="3cqZAp">
+          <node concept="2OqwBi" id="14DmiwrcwYl" role="3clFbG">
+            <node concept="37vLTw" id="14DmiwrcwYm" role="2Oq$k0">
+              <ref role="3cqZAo" node="14DmiwrcwYz" resolve="ctx" />
+            </node>
+            <node concept="liA8E" id="14DmiwrcwYn" role="2OqNvi">
+              <ref role="37wK5l" node="2ALJBcrt6T5" resolve="setRootInterpreter" />
+              <node concept="37vLTw" id="14DmiwrcwYo" role="37wK5m">
+                <ref role="3cqZAo" node="14Dmiwrcxtb" resolve="interpreter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="14DmiwrcwYp" role="3cqZAp">
+          <node concept="2OqwBi" id="14DmiwrcwYq" role="3clFbG">
+            <node concept="37vLTw" id="14DmiwrcwYr" role="2Oq$k0">
+              <ref role="3cqZAo" node="14Dmiwrcxtb" resolve="interpreter" />
+            </node>
+            <node concept="liA8E" id="14DmiwrcwYs" role="2OqNvi">
+              <ref role="37wK5l" node="2X4$XGmegKw" resolve="evaluate" />
+              <node concept="37vLTw" id="14DmiwrcwYt" role="37wK5m">
+                <ref role="3cqZAo" node="14DmiwrcwYx" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="14DmiwrcwYu" role="37wK5m">
+                <ref role="3cqZAo" node="14DmiwrcwYz" resolve="ctx" />
+              </node>
+              <node concept="37vLTw" id="14DmiwrcwYv" role="37wK5m">
+                <ref role="3cqZAo" node="14DmiwrcwY_" resolve="coverage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="14DmiwrcwYw" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="14DmiwrcwYx" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="14DmiwrcwYy" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="14Dmiwrcxtb" role="3clF46">
+        <property role="TrG5h" value="interpreter" />
+        <node concept="3uibUv" id="14DmiwrcxMK" role="1tU5fm">
+          <ref role="3uigEE" node="4X7QcQ36WR7" resolve="IInterpreter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="14DmiwrcwYz" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="14DmiwrcwY$" role="1tU5fm">
+          <ref role="3uigEE" node="4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="14DmiwrcwY_" role="3clF46">
+        <property role="TrG5h" value="coverage" />
+        <node concept="3uibUv" id="14DmiwrcwYA" role="1tU5fm">
+          <ref role="3uigEE" node="4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="14DmiwrcwYB" role="1B3o_S" />
+      <node concept="3uibUv" id="14DmiwrcwYC" role="Sfmx6">
+        <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="50LzNoSxKmN" role="jymVt" />
     <node concept="3clFb_" id="50LzNoSxKy5" role="jymVt">
       <property role="1EzhhJ" value="false" />
