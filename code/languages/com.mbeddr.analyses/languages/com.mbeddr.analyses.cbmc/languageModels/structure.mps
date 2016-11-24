@@ -422,6 +422,13 @@
       <property role="IQ2ns" value="1815718413093267384" />
       <ref role="20lvS9" node="1$MI$rgzQnB" resolve="SingleLoopUnwinding" />
     </node>
+    <node concept="1TJgyj" id="7kPcpiFfIYK" role="1TKVEi">
+      <property role="IQ2ns" value="8445711190801182640" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="preprocessorMacros" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7kPcpiFfDY_" resolve="PreprocessorMacro" />
+    </node>
     <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
       <property role="TrG5h" value="hasLocalCbmcSettings" />
       <property role="IQ2nx" value="8327535879613056020" />
@@ -480,6 +487,11 @@
     <node concept="1TJgyi" id="2OfxaHayosY" role="1TKVEl">
       <property role="TrG5h" value="hasExternalFilesSettings" />
       <property role="IQ2nx" value="3246959727582218046" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7kPcpiFfJpW" role="1TKVEl">
+      <property role="IQ2nx" value="8445711190801184380" />
+      <property role="TrG5h" value="hasPreprocessorMacroSettings" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="jmYEA6F408" role="1TKVEl">
@@ -767,6 +779,21 @@
     <property role="34LRSv" value="__CPROVER_isinff" />
     <property role="EcuMT" value="6642137243243214613" />
     <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="7kPcpiFfDY_">
+    <property role="EcuMT" value="8445711190801162149" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="PreprocessorMacro" />
+    <property role="34LRSv" value="#define" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7kPcpiFfE0T" role="1TKVEl">
+      <property role="IQ2nx" value="8445711190801162297" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7kPcpiFfE0Q" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

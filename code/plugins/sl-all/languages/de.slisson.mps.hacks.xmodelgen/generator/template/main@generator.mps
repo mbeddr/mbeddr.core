@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:8f6d87bf-4654-418c-9c68-7759a9e9328a(de.slisson.mps.hacks.xmodelgen.generator.template.main@generator)">
+  <persistence version="9" />
+  <languages>
+    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="-1" />
+    <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="bUwia" id="Pogn2S64N_">
+    <property role="TrG5h" value="main" />
+  </node>
+</model>
+

@@ -204,7 +204,7 @@
                 <node concept="2OqwBi" id="2h3YlM50CF_" role="37vLTJ">
                   <node concept="2Sf5sV" id="2h3YlM50CFg" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2h3YlM50CFF" role="2OqNvi">
-                    <ref role="3Tt5mk" to="q5q6:7MOa6vKJe1Q" />
+                    <ref role="3Tt5mk" to="q5q6:7MOa6vKJe1Q" resolve="guard" />
                   </node>
                 </node>
               </node>
@@ -270,7 +270,7 @@
                 <node concept="2OqwBi" id="2h3YlM50UxP" role="2Oq$k0">
                   <node concept="2Sf5sV" id="2h3YlM50Uxw" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="2h3YlM50UxV" role="2OqNvi">
-                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" />
+                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" resolve="constraints" />
                   </node>
                 </node>
                 <node concept="2Kehj3" id="2h3YlM50Uyn" role="2OqNvi" />
@@ -898,7 +898,7 @@
                 <node concept="2OqwBi" id="5tDzxi6R7Wi" role="2Oq$k0">
                   <node concept="2Sf5sV" id="5tDzxi6R7Va" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5tDzxi6R87o" role="2OqNvi">
-                    <ref role="3TtcxE" to="q5q6:2OfxaHaxQ5e" />
+                    <ref role="3TtcxE" to="q5q6:2OfxaHaxQ5e" resolve="externalFiles" />
                   </node>
                 </node>
                 <node concept="2Kehj3" id="5tDzxi6RaT_" role="2OqNvi" />
@@ -919,6 +919,108 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="2OfxaHayqj9" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7kPcpiFfKKP">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="toggleHasPreprocessorMacrosSettings" />
+    <ref role="2ZfgGC" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="2S6ZIM" id="7kPcpiFfKKQ" role="2ZfVej">
+      <node concept="3clFbS" id="7kPcpiFfKKR" role="2VODD2">
+        <node concept="3cpWs8" id="7kPcpiFfKKS" role="3cqZAp">
+          <node concept="3cpWsn" id="7kPcpiFfKKT" role="3cpWs9">
+            <property role="TrG5h" value="whatToShowHide" />
+            <node concept="17QB3L" id="7kPcpiFfKKU" role="1tU5fm" />
+            <node concept="Xl_RD" id="7kPcpiFfKKV" role="33vP2m">
+              <property role="Xl_RC" value="Preprocessor Macros" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7kPcpiFfKKW" role="3cqZAp">
+          <node concept="3clFbS" id="7kPcpiFfKKX" role="3clFbx">
+            <node concept="3cpWs6" id="7kPcpiFfKKY" role="3cqZAp">
+              <node concept="3cpWs3" id="7kPcpiFfKKZ" role="3cqZAk">
+                <node concept="37vLTw" id="7kPcpiFfKL0" role="3uHU7w">
+                  <ref role="3cqZAo" node="7kPcpiFfKKT" resolve="whatToShowHide" />
+                </node>
+                <node concept="Xl_RD" id="7kPcpiFfKL1" role="3uHU7B">
+                  <property role="Xl_RC" value="Delete  " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7kPcpiFfKL2" role="3clFbw">
+            <node concept="2Sf5sV" id="7kPcpiFfKL3" role="2Oq$k0" />
+            <node concept="3TrcHB" id="7kPcpiFgkQK" role="2OqNvi">
+              <ref role="3TsBF5" to="q5q6:7kPcpiFfJpW" resolve="hasPreprocessorMacroSettings" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="7kPcpiFfKL5" role="9aQIa">
+            <node concept="3clFbS" id="7kPcpiFfKL6" role="9aQI4">
+              <node concept="3cpWs6" id="7kPcpiFfKL7" role="3cqZAp">
+                <node concept="3cpWs3" id="7kPcpiFfKL8" role="3cqZAk">
+                  <node concept="37vLTw" id="7kPcpiFfKL9" role="3uHU7w">
+                    <ref role="3cqZAo" node="7kPcpiFfKKT" resolve="whatToShowHide" />
+                  </node>
+                  <node concept="Xl_RD" id="7kPcpiFfKLa" role="3uHU7B">
+                    <property role="Xl_RC" value="Add " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7kPcpiFfKLb" role="2ZfgGD">
+      <node concept="3clFbS" id="7kPcpiFfKLc" role="2VODD2">
+        <node concept="3clFbF" id="7kPcpiFfKLd" role="3cqZAp">
+          <node concept="37vLTI" id="7kPcpiFfKLe" role="3clFbG">
+            <node concept="3fqX7Q" id="7kPcpiFfKLf" role="37vLTx">
+              <node concept="2OqwBi" id="7kPcpiFfKLg" role="3fr31v">
+                <node concept="2Sf5sV" id="7kPcpiFfKLh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7kPcpiFglth" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:7kPcpiFfJpW" resolve="hasPreprocessorMacroSettings" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7kPcpiFfKLj" role="37vLTJ">
+              <node concept="2Sf5sV" id="7kPcpiFfKLk" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7kPcpiFgley" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7kPcpiFfJpW" resolve="hasPreprocessorMacroSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7kPcpiFfKLm" role="3cqZAp">
+          <node concept="3clFbS" id="7kPcpiFfKLn" role="3clFbx">
+            <node concept="3clFbF" id="7kPcpiFfKLo" role="3cqZAp">
+              <node concept="2OqwBi" id="7kPcpiFfKLp" role="3clFbG">
+                <node concept="2OqwBi" id="7kPcpiFfKLq" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="7kPcpiFfKLr" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7kPcpiFglP2" role="2OqNvi">
+                    <ref role="3TtcxE" to="q5q6:7kPcpiFfIYK" resolve="preprocessorMacros" />
+                  </node>
+                </node>
+                <node concept="2Kehj3" id="7kPcpiFfKLt" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7kPcpiFfKLu" role="3clFbw">
+            <node concept="1eOMI4" id="7kPcpiFfKLv" role="3fr31v">
+              <node concept="2OqwBi" id="7kPcpiFfKLw" role="1eOMHV">
+                <node concept="2Sf5sV" id="7kPcpiFfKLx" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7kPcpiFgl_d" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:7kPcpiFfJpW" resolve="hasPreprocessorMacroSettings" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="7kPcpiFfKLz" role="lGtFl">
       <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>

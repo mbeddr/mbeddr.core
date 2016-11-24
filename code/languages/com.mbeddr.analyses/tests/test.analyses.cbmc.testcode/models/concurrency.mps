@@ -85,6 +85,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="8445711190801184380" name="hasPreprocessorMacroSettings" index="3u2WvC" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2551560715014439919" name="com.mbeddr.analyses.cbmc.structure.CPROVERasync1" flags="ng" index="2UbZks">
@@ -1099,6 +1100,26 @@
     <property role="2lUGcN" value="false" />
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="ac" />
+    <node concept="3GEVxB" id="5YWfxoAxXkp" role="3W6d8T">
+      <ref role="3GEb4d" node="i5tJSHdbxn" resolve="assert_seq1" />
+    </node>
+    <node concept="1nvAUJ" id="5YWfxoAxXkD" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="i5tJSHdhsl" resolve="test1" />
+    </node>
     <node concept="1nvAUJ" id="1GDKzvUoweT" role="3V$2$K">
       <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="false" />
@@ -1115,8 +1136,28 @@
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="77fajPdk$ps" resolve="test2" />
     </node>
+    <node concept="1nvAUJ" id="5YWfxoAxXkL" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="77fajPdkD9O" resolve="test3" />
+    </node>
     <node concept="3GEVxB" id="1GDKzvUoweV" role="3W6d8T">
       <ref role="3GEb4d" node="77fajPdk$ml" resolve="assert_seq2" />
+    </node>
+    <node concept="3GEVxB" id="5YWfxoAxXkx" role="3W6d8T">
+      <ref role="3GEb4d" node="77fajPdkD7s" resolve="assert_seq3" />
     </node>
   </node>
 </model>
