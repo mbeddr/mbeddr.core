@@ -91,9 +91,6 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
-        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -142,30 +139,20 @@
     <node concept="osYL8" id="5luHlsCrwim" role="1MLXOK">
       <node concept="3clFbS" id="5luHlsCrwin" role="2VODD2">
         <node concept="3cpWs6" id="5luHlsCrwnh" role="3cqZAp">
-          <node concept="22lmx$" id="SSjGGIxgIy" role="3cqZAk">
-            <node concept="2OqwBi" id="SSjGGIxha6" role="3uHU7w">
-              <node concept="otxO1" id="SSjGGIxgUW" role="2Oq$k0" />
-              <node concept="3O6GUB" id="SSjGGIxhxw" role="2OqNvi">
-                <node concept="chp4Y" id="SSjGGIxhFE" role="3QVz_e">
-                  <ref role="cht4Q" to="55iy:SSjGGIxddQ" resolve="GraphPatternModuleImport" />
+          <node concept="22lmx$" id="SSjGGIudb_" role="3cqZAk">
+            <node concept="2OqwBi" id="5luHlsCrww6" role="3uHU7B">
+              <node concept="otxO1" id="5luHlsCrIKJ" role="2Oq$k0" />
+              <node concept="2Zo12i" id="5luHlsCrJku" role="2OqNvi">
+                <node concept="chp4Y" id="5luHlsCrJqH" role="2Zo12j">
+                  <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
                 </node>
               </node>
             </node>
-            <node concept="22lmx$" id="SSjGGIudb_" role="3uHU7B">
-              <node concept="2OqwBi" id="5luHlsCrww6" role="3uHU7B">
-                <node concept="otxO1" id="5luHlsCrIKJ" role="2Oq$k0" />
-                <node concept="2Zo12i" id="5luHlsCrJku" role="2OqNvi">
-                  <node concept="chp4Y" id="5luHlsCrJqH" role="2Zo12j">
-                    <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="SSjGGIudFf" role="3uHU7w">
-                <node concept="otxO1" id="SSjGGIudmv" role="2Oq$k0" />
-                <node concept="3O6GUB" id="SSjGGIxfS1" role="2OqNvi">
-                  <node concept="chp4Y" id="SSjGGIxgiW" role="3QVz_e">
-                    <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IPatternModuleImport" />
-                  </node>
+            <node concept="2OqwBi" id="SSjGGIudFf" role="3uHU7w">
+              <node concept="otxO1" id="SSjGGIudmv" role="2Oq$k0" />
+              <node concept="2Zo12i" id="37SozOpTbA7" role="2OqNvi">
+                <node concept="chp4Y" id="37SozOpTbKd" role="2Zo12j">
+                  <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
                 </node>
               </node>
             </node>
@@ -245,7 +232,7 @@
   <node concept="1M2fIO" id="SSjGGIxeHQ">
     <ref role="1M2myG" to="55iy:SSjGGIxddQ" resolve="GraphPatternModuleImport" />
     <node concept="1N5Pfh" id="SSjGGIi3iY" role="1Mr941">
-      <ref role="1N5Vy1" to="hqsm:SSjGGIi3iR" resolve="patternModule" />
+      <ref role="1N5Vy1" to="hqsm:SSjGGIi3iR" resolve="module" />
       <node concept="1MUpDS" id="SSjGGIi3j4" role="1N6uqs">
         <node concept="3clFbS" id="SSjGGIi3j6" role="2VODD2">
           <node concept="3cpWs6" id="SSjGGIi3jT" role="3cqZAp">

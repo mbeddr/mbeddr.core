@@ -193,14 +193,14 @@
         <child id="996292992024567128" name="expression" index="2k1_pE" />
       </concept>
       <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq" />
-      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReference" flags="ng" index="2kdjtB">
+      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">
         <reference id="768444928085405086" name="variable" index="XkjO9" />
       </concept>
-      <concept id="1024655549788599478" name="com.mbeddr.mpsutil.inca.core.structure.IPatternModuleImport" flags="ng" index="ws7DX">
-        <reference id="1024655549788599479" name="patternModule" index="ws7DW" />
+      <concept id="1024655549788599478" name="com.mbeddr.mpsutil.inca.core.structure.IIncaModuleImport" flags="ng" index="ws7DX">
+        <reference id="1024655549788599479" name="module" index="ws7DW" />
       </concept>
       <concept id="1024655549795904162" name="com.mbeddr.mpsutil.inca.core.structure.ProtectedVisibility" flags="ng" index="wzYhD" />
       <concept id="1024655549795901818" name="com.mbeddr.mpsutil.inca.core.structure.PrivateVisibility" flags="ng" index="wzYYL" />
@@ -229,7 +229,6 @@
         <property id="4530729936991344628" name="text" index="1dubkF" />
       </concept>
       <concept id="4530729936991344019" name="com.mbeddr.mpsutil.inca.core.structure.IPatternModule" flags="ng" index="1dubtc">
-        <child id="8118018043742924547" name="imports" index="xaH5_" />
         <child id="4530729936991344607" name="contents" index="1dubk0" />
       </concept>
       <concept id="4530729936991344018" name="com.mbeddr.mpsutil.inca.core.structure.IVariable" flags="ng" index="1dubtd">
@@ -246,6 +245,9 @@
       </concept>
       <concept id="1925259677761400360" name="com.mbeddr.mpsutil.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
         <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
+      </concept>
+      <concept id="1118899187025157789" name="com.mbeddr.mpsutil.inca.core.structure.IIncaModule" flags="ng" index="3DBbTW">
+        <child id="8118018043742924547" name="imports" index="xaH5_" />
       </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
@@ -1669,7 +1671,7 @@
       <node concept="wzYYL" id="2FsPtePnZH4" role="wzYgH" />
     </node>
     <node concept="1XdyHe" id="1suAdVkLb$R" role="1dubk0" />
-    <node concept="wJ9QX" id="2FsPteOYGXJ" role="xaH5_">
+    <node concept="wJ9QX" id="37SozOpSLLT" role="xaH5_">
       <ref role="ws7DW" node="SSjGGIE94_" resolve="FindBugsHelper" />
     </node>
   </node>

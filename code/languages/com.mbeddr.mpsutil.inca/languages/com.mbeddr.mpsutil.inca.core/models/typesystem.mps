@@ -2247,7 +2247,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="39KhnTI7QZG">
-    <property role="TrG5h" value="check_IPatternModel" />
+    <property role="TrG5h" value="check_IPatternModule" />
     <node concept="3clFbS" id="39KhnTI7QZH" role="18ibNy">
       <node concept="3cpWs8" id="39KhnTI7R08" role="3cqZAp">
         <node concept="3cpWsn" id="39KhnTI7R09" role="3cpWs9">
@@ -2262,7 +2262,7 @@
             <ref role="1Pybhc" to="zt8v:5lmC1XhmXON" resolve="ValidationHelper" />
             <node concept="2OqwBi" id="39KhnTI7Sau" role="37wK5m">
               <node concept="1YBJjd" id="39KhnTI7S4E" role="2Oq$k0">
-                <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+                <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
               </node>
               <node concept="2qgKlT" id="39KhnTI7Sm_" role="2OqNvi">
                 <ref role="37wK5l" to="gcg1:3VwoHXNBzsE" resolve="getPatterns" />
@@ -2296,15 +2296,15 @@
           <property role="TrG5h" value="imported" />
           <node concept="2hMVRd" id="SSjGGIuWwB" role="1tU5fm">
             <node concept="3Tqbb2" id="SSjGGIuWwE" role="2hN53Y">
-              <ref role="ehGHo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+              <ref role="ehGHo" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
             </node>
           </node>
           <node concept="2OqwBi" id="SSjGGIuWwN" role="33vP2m">
             <node concept="1YBJjd" id="SSjGGIuWwO" role="2Oq$k0">
-              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
             </node>
             <node concept="2qgKlT" id="SSjGGIuWwP" role="2OqNvi">
-              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedPatternModules" />
+              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedModules" />
             </node>
           </node>
         </node>
@@ -2317,7 +2317,7 @@
               <property role="Xl_RC" value="The pattern module is part of a cyclic dependency chain!" />
             </node>
             <node concept="1YBJjd" id="SSjGGIuZeq" role="2OEOjV">
-              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
             </node>
           </node>
         </node>
@@ -2327,14 +2327,14 @@
           </node>
           <node concept="3JPx81" id="SSjGGIuZ8D" role="2OqNvi">
             <node concept="1YBJjd" id="SSjGGIuZaP" role="25WWJ7">
-              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="39KhnTI7QZJ" role="1YuTPh">
-      <property role="TrG5h" value="patternModel" />
+      <property role="TrG5h" value="module" />
       <ref role="1YaFvo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
     </node>
   </node>
@@ -2795,7 +2795,7 @@
                           <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
                         </node>
                         <node concept="2YIFZM" id="7Bq0by3nycn" role="33vP2m">
-                          <ref role="37wK5l" to="zt8v:7Bq0by3nmAA" resolve="compute" />
+                          <ref role="37wK5l" to="zt8v:7Bq0by3nmAA" resolve="getMostSpecificType" />
                           <ref role="1Pybhc" to="zt8v:7Bq0by3nmpu" resolve="TypesHelper" />
                           <node concept="37vLTw" id="7Bq0by3nyco" role="37wK5m">
                             <ref role="3cqZAo" node="1ThF9Cw0X20" resolve="wrappedConstraints" />

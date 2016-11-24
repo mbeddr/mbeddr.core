@@ -571,8 +571,8 @@
   <node concept="1TIwiD" id="SSjGGIxddQ">
     <property role="EcuMT" value="1024655549792572278" />
     <property role="TrG5h" value="PatternFunctionModuleImport" />
-    <property role="34LRSv" value="&lt;{patternModule}&gt;" />
-    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractPatternModuleImport" />
+    <property role="34LRSv" value="&lt;{module}&gt;" />
+    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractIncaModuleImport" />
   </node>
 </model>
 

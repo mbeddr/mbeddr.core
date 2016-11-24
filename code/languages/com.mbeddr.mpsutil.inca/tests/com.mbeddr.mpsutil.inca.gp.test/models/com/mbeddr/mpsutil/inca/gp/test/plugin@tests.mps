@@ -184,6 +184,11 @@
         <property id="996292992024566534" name="value" index="2k1_0O" />
       </concept>
       <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq" />
+      <concept id="996292992024566935" name="com.mbeddr.mpsutil.inca.core.structure.AggregatedValue" flags="ng" index="2k1_u_">
+        <child id="996292992024567003" name="call" index="2k1_vD" />
+        <child id="996292992024566984" name="aggregator" index="2k1_vU" />
+      </concept>
+      <concept id="996292992024567022" name="com.mbeddr.mpsutil.inca.core.structure.CountAggregator" flags="ng" index="2k1_vs" />
       <concept id="996292992024530443" name="com.mbeddr.mpsutil.inca.core.structure.CompareConstraint" flags="ng" index="2k1GkT">
         <property id="8396102296983865703" name="feature" index="2957JE" />
         <child id="8396102296983865629" name="right" index="2957Ig" />
@@ -192,7 +197,7 @@
       <concept id="996292992024530426" name="com.mbeddr.mpsutil.inca.core.structure.CheckConstraint" flags="ng" index="2k1Gr8">
         <child id="996292992025680416" name="expression" index="2kdl4i" />
       </concept>
-      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReference" flags="ng" index="2kdjtB">
+      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">
@@ -868,6 +873,24 @@
           </node>
           <node concept="2vme6Z" id="4YtCEGA0qDW" role="2957Ig">
             <ref role="XkjO9" node="62ABz02SzsQ" resolve="m1" />
+          </node>
+        </node>
+        <node concept="3Mm4nT" id="3xDKE$EJfZk" role="1dgzf0">
+          <property role="2957JE" value="equality" />
+          <node concept="2vme6Z" id="3xDKE$EJfYi" role="2957In">
+            <ref role="XkjO9" node="62ABz02SzsQ" resolve="m1" />
+          </node>
+          <node concept="2k1_u_" id="3xDKE$EJgUv" role="2957Ig">
+            <node concept="2k1_uq" id="3xDKE$EJiee" role="2k1_vD">
+              <ref role="2nKBpL" node="62ABz02SwiO" resolve="CallRelationship" />
+              <node concept="2vme6Z" id="3xDKE$EJirM" role="2nKBpO">
+                <ref role="XkjO9" node="62ABz02SzsQ" resolve="m1" />
+              </node>
+              <node concept="2vme6Z" id="3xDKE$EJiQa" role="2nKBpO">
+                <ref role="XkjO9" node="62ABz02SzH4" resolve="m2" />
+              </node>
+            </node>
+            <node concept="2k1_vs" id="3xDKE$EJm0j" role="2k1_vU" />
           </node>
         </node>
       </node>
