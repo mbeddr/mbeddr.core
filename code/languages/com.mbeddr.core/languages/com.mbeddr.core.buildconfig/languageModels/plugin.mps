@@ -19,6 +19,7 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
+    <import index="yo81" ref="r:4ea5a78b-cb8a-4831-b227-f7860a22491d(jetbrains.mps.make.resources)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -305,7 +306,7 @@
       </node>
       <node concept="15KeVb" id="2obGnlRnCAI" role="15LFui">
         <property role="3HPxAp" value="AFTER" />
-        <ref role="15KeV8" to="sjfu:bq6A3e6cTK" resolve="collectPathes" />
+        <ref role="15KeV8" to="sjfu:bq6A3e6cTK" resolve="collectPaths" />
       </node>
       <node concept="15KeVb" id="2obGnlRg4re" role="15LFui">
         <property role="3HPxAp" value="AFTER" />

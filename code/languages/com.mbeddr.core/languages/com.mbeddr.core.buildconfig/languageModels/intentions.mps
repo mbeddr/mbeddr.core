@@ -179,6 +179,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -279,25 +280,45 @@
       <node concept="3clFbS" id="2MbfxrZI1Kh" role="2VODD2">
         <node concept="3cpWs8" id="6PYNGEt2jyP" role="3cqZAp">
           <node concept="3cpWsn" id="6PYNGEt2jyQ" role="3cpWs9">
-            <property role="TrG5h" value="n" />
+            <property role="TrG5h" value="library" />
             <node concept="3Tqbb2" id="6PYNGEt2jyK" role="1tU5fm">
-              <ref role="ehGHo" to="51wr:4aYGoLbxbUW" resolve="Linkable" />
+              <ref role="ehGHo" to="51wr:6e6sfG55Eq6" resolve="ExternalLibrary" />
             </node>
             <node concept="2OqwBi" id="6PYNGEt2jyR" role="33vP2m">
               <node concept="2OqwBi" id="6PYNGEt2jyS" role="2Oq$k0">
                 <node concept="2Sf5sV" id="6PYNGEt2jyT" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="6PYNGEt2jyU" role="2OqNvi">
-                  <ref role="3TtcxE" to="51wr:4aYGoLbxbV6" />
+                <node concept="3TrEf2" id="6e6sfG55EVg" role="2OqNvi">
+                  <ref role="3Tt5mk" to="51wr:4aYGoLbxbV6" />
                 </node>
               </node>
-              <node concept="WFELt" id="6PYNGEt2jyV" role="2OqNvi" />
+              <node concept="zfrQC" id="6e6sfG55F8v" role="2OqNvi" />
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6e6sfG55FcU" role="3cqZAp">
+          <node concept="3cpWsn" id="6e6sfG55FcV" role="3cpWs9">
+            <property role="TrG5h" value="linkable" />
+            <node concept="3Tqbb2" id="6e6sfG55FcW" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:6e6sfG55EnQ" resolve="ExternalLibLinkable" />
+            </node>
+            <node concept="2OqwBi" id="6e6sfG55FvD" role="33vP2m">
+              <node concept="2OqwBi" id="6e6sfG55Fnf" role="2Oq$k0">
+                <node concept="37vLTw" id="6e6sfG55Flt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6PYNGEt2jyQ" resolve="library" />
+                </node>
+                <node concept="3TrEf2" id="6e6sfG55FqL" role="2OqNvi">
+                  <ref role="3Tt5mk" to="51wr:6e6sfG55Eqa" />
+                </node>
+              </node>
+              <node concept="zfrQC" id="6e6sfG55FB3" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6e6sfG55Fav" role="3cqZAp" />
         <node concept="3clFbF" id="2MbfxrZI1Kk" role="3cqZAp">
           <node concept="2OqwBi" id="6PYNGEt2jUO" role="3clFbG">
             <node concept="37vLTw" id="6PYNGEt2jyW" role="2Oq$k0">
-              <ref role="3cqZAo" node="6PYNGEt2jyQ" resolve="n" />
+              <ref role="3cqZAo" node="6PYNGEt2jyQ" resolve="library" />
             </node>
             <node concept="1OKiuA" id="6PYNGEt2mdt" role="2OqNvi">
               <node concept="1XNTG" id="6PYNGEt2mem" role="lBI5i" />
@@ -1187,6 +1208,57 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="7FzSIra3eox" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6e6sfG581ki">
+    <property role="3GE5qa" value="binary" />
+    <property role="TrG5h" value="addExternalLibPath" />
+    <ref role="2ZfgGC" to="51wr:6e6sfG55Eq6" resolve="ExternalLibrary" />
+    <node concept="2S6ZIM" id="6e6sfG581kj" role="2ZfVej">
+      <node concept="3clFbS" id="6e6sfG581kk" role="2VODD2">
+        <node concept="3clFbF" id="6e6sfG581kl" role="3cqZAp">
+          <node concept="Xl_RD" id="6e6sfG581km" role="3clFbG">
+            <property role="Xl_RC" value="Add Library Path" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6e6sfG581kn" role="2ZfgGD">
+      <node concept="3clFbS" id="6e6sfG581ko" role="2VODD2">
+        <node concept="3cpWs8" id="6e6sfG581kp" role="3cqZAp">
+          <node concept="3cpWsn" id="6e6sfG581kq" role="3cpWs9">
+            <property role="TrG5h" value="n" />
+            <node concept="3Tqbb2" id="6e6sfG581kr" role="1tU5fm">
+              <ref role="ehGHo" to="51wr:4aYGoLbxbUW" resolve="ExternalLibPath" />
+            </node>
+            <node concept="2OqwBi" id="6e6sfG581ks" role="33vP2m">
+              <node concept="2OqwBi" id="6e6sfG581kt" role="2Oq$k0">
+                <node concept="2Sf5sV" id="6e6sfG581ku" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6e6sfG581L$" role="2OqNvi">
+                  <ref role="3TtcxE" to="51wr:6e6sfG55Eq9" />
+                </node>
+              </node>
+              <node concept="WFELt" id="6e6sfG581kw" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6e6sfG581kx" role="3cqZAp">
+          <node concept="2OqwBi" id="6e6sfG581ky" role="3clFbG">
+            <node concept="37vLTw" id="6e6sfG581kz" role="2Oq$k0">
+              <ref role="3cqZAo" node="6e6sfG581kq" resolve="n" />
+            </node>
+            <node concept="1OKiuA" id="6e6sfG581k$" role="2OqNvi">
+              <node concept="1XNTG" id="6e6sfG581k_" role="lBI5i" />
+              <node concept="2B6iha" id="6e6sfG581kA" role="lGT1i">
+                <property role="1lyBwo" value="lastEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="6e6sfG581kB" role="lGtFl">
       <property role="1SWRpm" value="BUILD" />
     </node>
   </node>
