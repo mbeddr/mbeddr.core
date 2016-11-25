@@ -189,7 +189,11 @@
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1153,6 +1157,26 @@
   <node concept="13h7C7" id="7A0HCuGt6Bo">
     <property role="3GE5qa" value="constraints" />
     <ref role="13h7C2" to="55iy:7A0HCuGr2fn" resolve="NextPathElement" />
+    <node concept="13i0hz" id="3k78NV$pWte" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScopeProviderConcept" />
+      <ref role="13i0hy" to="gcg1:5Os6JboGgK9" resolve="getScopeProviderConcept" />
+      <node concept="3Tm1VV" id="3k78NV$pWtf" role="1B3o_S" />
+      <node concept="3clFbS" id="3k78NV$pWtg" role="3clF47">
+        <node concept="3cpWs6" id="3k78NV$pWth" role="3cqZAp">
+          <node concept="2OqwBi" id="3k78NV$pWti" role="3cqZAk">
+            <node concept="35c_gC" id="3k78NV$pWtj" role="2Oq$k0">
+              <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+            </node>
+            <node concept="FGMqu" id="3k78NV$pWtk" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3k78NV$pWtl" role="3clF45">
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      </node>
+    </node>
     <node concept="13hLZK" id="7A0HCuGt6Bp" role="13h7CW">
       <node concept="3clFbS" id="7A0HCuGt6Bq" role="2VODD2">
         <node concept="3clFbF" id="7A0HCuGt6Bz" role="3cqZAp">
@@ -1191,6 +1215,26 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3k78NV$pVSO" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScopeProviderConcept" />
+      <ref role="13i0hy" to="gcg1:5Os6JboGgK9" resolve="getScopeProviderConcept" />
+      <node concept="3Tm1VV" id="3k78NV$pVSP" role="1B3o_S" />
+      <node concept="3clFbS" id="3k78NV$pVSU" role="3clF47">
+        <node concept="3cpWs6" id="3k78NV$pW0G" role="3cqZAp">
+          <node concept="2OqwBi" id="3k78NV$pWdN" role="3cqZAk">
+            <node concept="35c_gC" id="3k78NV$pW15" role="2Oq$k0">
+              <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+            </node>
+            <node concept="FGMqu" id="3k78NV$pWmr" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3k78NV$pVSV" role="3clF45">
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
       </node>
     </node>
   </node>

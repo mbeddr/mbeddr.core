@@ -245,6 +245,7 @@
       </concept>
       <concept id="1925259677761400360" name="com.mbeddr.mpsutil.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
         <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
+        <child id="1925259677761400367" name="next" index="3zVwHm" />
       </concept>
       <concept id="1118899187025157789" name="com.mbeddr.mpsutil.inca.core.structure.IIncaModule" flags="ng" index="3DBbTW">
         <child id="8118018043742924547" name="imports" index="xaH5_" />
@@ -772,17 +773,15 @@
       <property role="TrG5h" value="SE_NO_SUITABLE_CONSTRUCTOR" />
       <node concept="3zV_Rz" id="GLUT1$dPrF" role="3zVECR">
         <node concept="34odk1" id="GLUT1$dSp9" role="1dgzf0">
-          <node concept="2kdhWc" id="GLUT1$dTsG" role="34ocZk">
-            <node concept="727y6" id="GLUT1$dTXj" role="3zVzRQ">
-              <ref role="3zVwH8" to="tpee:g7uigIF" resolve="classifier" />
+          <node concept="2kdhWc" id="GLUT1$dSpZ" role="34ocZk">
+            <node concept="727y6" id="GLUT1$dSUg" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:gXzkM_H" resolve="superclass" />
+              <node concept="727y6" id="771X_ErIxQw" role="3zVwHm">
+                <ref role="3zVwH8" to="tpee:g7uigIF" resolve="classifier" />
+              </node>
             </node>
-            <node concept="2kdhWc" id="GLUT1$dSpZ" role="2kdhYM">
-              <node concept="727y6" id="GLUT1$dSUg" role="3zVzRQ">
-                <ref role="3zVwH8" to="tpee:gXzkM_H" resolve="superclass" />
-              </node>
-              <node concept="30NkWi" id="GLUT1$dSpS" role="2kdhYM">
-                <ref role="XkjO9" node="GLUT1$dQSb" resolve="class" />
-              </node>
+            <node concept="30NkWi" id="GLUT1$dSpS" role="2kdhYM">
+              <ref role="XkjO9" node="GLUT1$dQSb" resolve="class" />
             </node>
           </node>
           <node concept="30KbLJ" id="GLUT1$dRT7" role="34ocZn">
@@ -857,17 +856,15 @@
           </node>
         </node>
         <node concept="34odk1" id="4hcq8yMWtJF" role="1dgzf0">
-          <node concept="2kdhWc" id="4hcq8yMWvws" role="34ocZk">
-            <node concept="727y6" id="4hcq8yMWvxg" role="3zVzRQ">
-              <ref role="3zVwH8" to="tpee:4VkOLwjf83e" resolve="type" />
+          <node concept="2kdhWc" id="4hcq8yMWuCg" role="34ocZk">
+            <node concept="727y6" id="4hcq8yMWvvV" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:gWTDEbL" resolve="throwable" />
+              <node concept="727y6" id="771X_ErIzGZ" role="3zVwHm">
+                <ref role="3zVwH8" to="tpee:4VkOLwjf83e" resolve="type" />
+              </node>
             </node>
-            <node concept="2kdhWc" id="4hcq8yMWuCg" role="2kdhYM">
-              <node concept="727y6" id="4hcq8yMWvvV" role="3zVzRQ">
-                <ref role="3zVwH8" to="tpee:gWTDEbL" resolve="throwable" />
-              </node>
-              <node concept="30NkWi" id="4hcq8yMWuBP" role="2kdhYM">
-                <ref role="XkjO9" node="4hcq8yMWqaa" resolve="catchClause" />
-              </node>
+            <node concept="30NkWi" id="4hcq8yMWuBP" role="2kdhYM">
+              <ref role="XkjO9" node="4hcq8yMWqaa" resolve="catchClause" />
             </node>
           </node>
           <node concept="30KbLJ" id="4hcq8yMWtJ8" role="34ocZn">
@@ -3490,17 +3487,15 @@
       <property role="TrG5h" value="getSuperClass" />
       <node concept="3zV_Rz" id="4hcq8yMMJq5" role="3zVECR">
         <node concept="34odk1" id="4hcq8yMMQ7$" role="1dgzf0">
-          <node concept="2kdhWc" id="4hcq8yMOfVc" role="34ocZk">
-            <node concept="727y6" id="4hcq8yMOgEd" role="3zVzRQ">
-              <ref role="3zVwH8" to="tpee:g7uigIF" resolve="classifier" />
+          <node concept="2kdhWc" id="4hcq8yMMQNs" role="34ocZk">
+            <node concept="727y6" id="4hcq8yMMQNY" role="3zVzRQ">
+              <ref role="3zVwH8" to="tpee:gXzkM_H" resolve="superclass" />
+              <node concept="727y6" id="771X_ErIsYN" role="3zVwHm">
+                <ref role="3zVwH8" to="tpee:g7uigIF" resolve="classifier" />
+              </node>
             </node>
-            <node concept="2kdhWc" id="4hcq8yMMQNs" role="2kdhYM">
-              <node concept="727y6" id="4hcq8yMMQNY" role="3zVzRQ">
-                <ref role="3zVwH8" to="tpee:gXzkM_H" resolve="superclass" />
-              </node>
-              <node concept="30NkWi" id="4hcq8yMMQNl" role="2kdhYM">
-                <ref role="XkjO9" node="4hcq8yMMLFj" resolve="class" />
-              </node>
+            <node concept="30NkWi" id="4hcq8yMMQNl" role="2kdhYM">
+              <ref role="XkjO9" node="4hcq8yMMLFj" resolve="class" />
             </node>
           </node>
           <node concept="30KbLJ" id="4hcq8yMMPoT" role="34ocZn">

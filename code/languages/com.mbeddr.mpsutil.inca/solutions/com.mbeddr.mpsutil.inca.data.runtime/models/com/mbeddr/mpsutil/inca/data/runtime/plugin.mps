@@ -66,6 +66,7 @@
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -1001,13 +1002,7 @@
               <node concept="10Nm6u" id="2zB$jxpzbyv" role="3cqZAk" />
             </node>
           </node>
-          <node concept="3clFbC" id="2zB$jxpzba_" role="3clFbw">
-            <node concept="2OqwBi" id="2zB$jxpzbaA" role="3uHU7w">
-              <node concept="37vLTw" id="2zB$jxpzbaB" role="2Oq$k0">
-                <ref role="3cqZAo" node="2zB$jxpz1XH" resolve="value" />
-              </node>
-              <node concept="1Rwk04" id="2zB$jxpzbaC" role="2OqNvi" />
-            </node>
+          <node concept="3y3z36" id="6UZv67Bh$ER" role="3clFbw">
             <node concept="2OqwBi" id="2zB$jxpzbaD" role="3uHU7B">
               <node concept="2OqwBi" id="2zB$jxpzbaE" role="2Oq$k0">
                 <node concept="Xjq3P" id="2zB$jxpzbaF" role="2Oq$k0" />
@@ -1018,6 +1013,12 @@
               <node concept="liA8E" id="2zB$jxpzbaH" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
               </node>
+            </node>
+            <node concept="2OqwBi" id="2zB$jxpzbaA" role="3uHU7w">
+              <node concept="37vLTw" id="2zB$jxpzbaB" role="2Oq$k0">
+                <ref role="3cqZAo" node="2zB$jxpz1XH" resolve="value" />
+              </node>
+              <node concept="1Rwk04" id="2zB$jxpzbaC" role="2OqNvi" />
             </node>
           </node>
           <node concept="9aQIb" id="2zB$jxpzb$a" role="9aQIa">
@@ -1330,6 +1331,45 @@
     </node>
     <node concept="16euLQ" id="3xDKE$ECYEH" role="16eVyc">
       <property role="TrG5h" value="T" />
+    </node>
+  </node>
+  <node concept="312cEu" id="6UZv67BfIGn">
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="PatternMatcherException" />
+    <node concept="2tJIrI" id="6UZv67BfIH_" role="jymVt" />
+    <node concept="3clFbW" id="6UZv67BfIIA" role="jymVt">
+      <node concept="3cqZAl" id="6UZv67BfIIB" role="3clF45" />
+      <node concept="3clFbS" id="6UZv67BfIID" role="3clF47">
+        <node concept="XkiVB" id="6UZv67BfIL3" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
+          <node concept="37vLTw" id="6UZv67BfIMt" role="37wK5m">
+            <ref role="3cqZAo" node="6UZv67BfIJ5" resolve="message" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6UZv67BfII9" role="1B3o_S" />
+      <node concept="37vLTG" id="6UZv67BfIJ5" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="6UZv67BfIJ4" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6UZv67BfIOX" role="jymVt" />
+    <node concept="3clFbW" id="6UZv67BfINH" role="jymVt">
+      <node concept="3cqZAl" id="6UZv67BfINI" role="3clF45" />
+      <node concept="3clFbS" id="6UZv67BfINJ" role="3clF47">
+        <node concept="XkiVB" id="6UZv67BfINK" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
+          <node concept="Xl_RD" id="6UZv67BfISC" role="37wK5m">
+            <property role="Xl_RC" value="Inexhaustive pattern matching construct!" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6UZv67BfINM" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="6UZv67BfIHE" role="jymVt" />
+    <node concept="3Tm1VV" id="6UZv67BfIGo" role="1B3o_S" />
+    <node concept="3uibUv" id="6UZv67BfPFd" role="1zkMxy">
+      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
   </node>
 </model>

@@ -184,11 +184,6 @@
         <property id="996292992024566534" name="value" index="2k1_0O" />
       </concept>
       <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq" />
-      <concept id="996292992024566935" name="com.mbeddr.mpsutil.inca.core.structure.AggregatedValue" flags="ng" index="2k1_u_">
-        <child id="996292992024567003" name="call" index="2k1_vD" />
-        <child id="996292992024566984" name="aggregator" index="2k1_vU" />
-      </concept>
-      <concept id="996292992024567022" name="com.mbeddr.mpsutil.inca.core.structure.CountAggregator" flags="ng" index="2k1_vs" />
       <concept id="996292992024530443" name="com.mbeddr.mpsutil.inca.core.structure.CompareConstraint" flags="ng" index="2k1GkT">
         <property id="8396102296983865703" name="feature" index="2957JE" />
         <child id="8396102296983865629" name="right" index="2957Ig" />
@@ -254,6 +249,7 @@
       </concept>
       <concept id="1925259677761400360" name="com.mbeddr.mpsutil.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
         <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
+        <child id="1925259677761400367" name="next" index="3zVwHm" />
       </concept>
       <concept id="5589093812003084634" name="com.mbeddr.mpsutil.inca.core.structure.ConceptConstraint" flags="ng" index="3XlQDJ">
         <reference id="5589093812003084769" name="type" index="3XlQFk" />
@@ -875,24 +871,6 @@
             <ref role="XkjO9" node="62ABz02SzsQ" resolve="m1" />
           </node>
         </node>
-        <node concept="3Mm4nT" id="3xDKE$EJfZk" role="1dgzf0">
-          <property role="2957JE" value="equality" />
-          <node concept="2vme6Z" id="3xDKE$EJfYi" role="2957In">
-            <ref role="XkjO9" node="62ABz02SzsQ" resolve="m1" />
-          </node>
-          <node concept="2k1_u_" id="3xDKE$EJgUv" role="2957Ig">
-            <node concept="2k1_uq" id="3xDKE$EJiee" role="2k1_vD">
-              <ref role="2nKBpL" node="62ABz02SwiO" resolve="CallRelationship" />
-              <node concept="2vme6Z" id="3xDKE$EJirM" role="2nKBpO">
-                <ref role="XkjO9" node="62ABz02SzsQ" resolve="m1" />
-              </node>
-              <node concept="2vme6Z" id="3xDKE$EJiQa" role="2nKBpO">
-                <ref role="XkjO9" node="62ABz02SzH4" resolve="m2" />
-              </node>
-            </node>
-            <node concept="2k1_vs" id="3xDKE$EJm0j" role="2k1_vU" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="1XdyHe" id="62ABz02SwuC" role="1dubk0" />
@@ -918,27 +896,18 @@
           </node>
           <node concept="727y6" id="3p0ky8L$VLg" role="3zVzRQ">
             <ref role="3zVwH8" to="tpee:fzclF7Z" resolve="body" />
+            <node concept="727y6" id="771X_ErHX3n" role="3zVwHm">
+              <ref role="3zVwH8" to="tpee:fzcqZ_x" resolve="statement" />
+            </node>
           </node>
           <node concept="2LEkIw" id="3p0ky8L$VY0" role="2kdhYP">
-            <property role="TrG5h" value="list" />
-          </node>
-        </node>
-        <node concept="2kdhWc" id="3p0ky8LCIag" role="1dgzf0">
-          <ref role="2kdhXl" to="tpee:fzclF80" resolve="StatementList" />
-          <node concept="2vme6Z" id="3p0ky8LCIOW" role="2kdhYM">
-            <ref role="XkjO9" node="3p0ky8L$VY0" resolve="list" />
-          </node>
-          <node concept="727y6" id="3p0ky8LCIoH" role="3zVzRQ">
-            <ref role="3zVwH8" to="tpee:fzcqZ_x" resolve="statement" />
-          </node>
-          <node concept="2LEkIw" id="3p0ky8LCJ3g" role="2kdhYP">
             <property role="TrG5h" value="statement" />
           </node>
         </node>
         <node concept="2kdhWc" id="3p0ky8L$WQq" role="1dgzf0">
           <ref role="2kdhXl" to="tpee:fzclF8j" resolve="ExpressionStatement" />
           <node concept="2vme6Z" id="3p0ky8LCK9v" role="2kdhYM">
-            <ref role="XkjO9" node="3p0ky8LCJ3g" resolve="statement" />
+            <ref role="XkjO9" node="3p0ky8L$VY0" resolve="statement" />
           </node>
           <node concept="727y6" id="3p0ky8L$WWQ" role="3zVzRQ">
             <ref role="3zVwH8" to="tpee:fzclF8k" resolve="expression" />

@@ -364,6 +364,9 @@
       </concept>
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -15252,6 +15255,25 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="6UZv67BdYjX" role="3cqZAp">
+              <node concept="3SKdUq" id="6UZv67BdYjZ" role="3SKWNk">
+                <property role="3SKdUp" value="special handling of the ContextPointer concept" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6UZv67Be_Be" role="3cqZAp">
+              <node concept="2OqwBi" id="6UZv67BeAzL" role="3clFbG">
+                <node concept="37vLTw" id="6UZv67Be_Bc" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5VMWdq5MeGI" resolve="superConcepts" />
+                </node>
+                <node concept="liA8E" id="6UZv67BeBSI" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                  <node concept="10M0yZ" id="6UZv67BeCbN" role="37wK5m">
+                    <ref role="1PxDUh" node="5VMWdq5xR_h" resolve="MPSNavigationHelperImpl" />
+                    <ref role="3cqZAo" node="6UZv67Becu_" resolve="contextPointerConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="5VMWdq5MmE4" role="3cqZAp">
               <node concept="2OqwBi" id="5VMWdq5MnDr" role="3clFbG">
                 <node concept="37vLTw" id="5VMWdq5MmE2" role="2Oq$k0">
@@ -17047,6 +17069,23 @@
         <ref role="28H3Ia" to="hqsm:7A0HCuGt5s2" resolve="next" />
       </node>
     </node>
+    <node concept="Wx3nA" id="6UZv67Becu_" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="contextPointerConcept" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tmbuc" id="6UZv67BecuA" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6UZv67BecuB" role="1tU5fm">
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      </node>
+      <node concept="2OqwBi" id="6UZv67Bet68" role="33vP2m">
+        <node concept="35c_gC" id="6UZv67Berck" role="2Oq$k0">
+          <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+        </node>
+        <node concept="FGMqu" id="6UZv67Beue$" role="2OqNvi" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6UZv67Be1zK" role="jymVt" />
     <node concept="2tJIrI" id="5VMWdq5xRAm" role="jymVt" />
     <node concept="3clFbW" id="5VMWdq5xRAn" role="jymVt">
       <node concept="3cqZAl" id="5VMWdq5xRAo" role="3clF45" />
